@@ -10,6 +10,50 @@ campaign engine. Encompasses everything learned in the July 18-19, 2026
 INVOKE:
     python3 dual_starlight_express.py [--test] [--batch BATCH-XX] [--live]
 
+AUTH MODES (Phase 1):
+    The script supports three client IDs via the CSM_CLIENT_ID env variable.
+    Tenant can be set via CSM_TENANT (default: 'common').
+
+    Client ID 1 (default): 14d82eec-...  — Microsoft Graph Command Line Tools (public)
+        Built into many tenants. Works with consumer + org accounts.
+        CCAC STATUS: ❌ Admin consent required
+
+    Client ID 2 (env override): 14b2d65b-... — MS365 MCP default (public, multi-tenant)
+        Testing indicates this client is tenant-restricted (HTTP 400 on /common).
+        CCAC STATUS: ❌ HTTP 400 on non-consented tenants
+
+    Client ID 3 (env override): 084a3e9f-... — @softeria/ms-365-mcp-server built-in
+        This is the MCP server's own app registration. Multi-tenant.
+        CCAC STATUS: ❌ Admin consent required (same as #1)
+
+    Summary: All three public multi-tenant apps hit CCAC admin consent gate.
+    This is by design — Entra ID requires admin approval for delegated
+    Mail.Send / Mail.ReadWrite permissions on managed school/organization
+    tenants. There is no programmatic bypass. ROPC (password grant) is
+    deprecated, blocked by MFA, and dropped in OAuth 2.1.
+
+    For school/restricted-tenant accounts, options are:
+    A) Admin consent URL (one click by CCAC IT admin):
+       https://login.microsoftonline.com/ccac.edu/adminconsent?client_id=084a3e9f-a9f4-43f7-89f9-d229cf97853e
+       After admin approves, all CCAC users can use this app.
+    B) Register a dedicated app in the CCAC Azure AD tenant
+    C) Use the already-authenticated zirconia@aegisc.space account instead
+    D) Use jasonbrodsky@hotmail.com (personal account — no admin consent needed)
+
+    For consumer/Outlook accounts (e.g. jasonbrodsky@hotmail.com):
+        Any of the above client IDs work fine via device code flow.
+        No admin consent needed for personal Microsoft accounts.
+
+    Usage examples:
+        # Default client (Graph PowerShell), multi-tenant
+        python3 dual_starlight_express.py --live --account zirconia@aegisc.space
+
+        # MCP server client, CCAC tenant (fails due to admin consent)
+        CSM_CLIENT_ID=084a3e9f-a9f4-43f7-89f9-d229cf97853e CSM_TENANT=ccac.edu python3 dual_starlight_express.py --live --account jason.brodsky@ccac.edu
+
+        # Hotmail personal account (works — no admin consent needed)
+        python3 dual_starlight_express.py --live --account jasonbrodsky@hotmail.com
+
 WHAT THIS SCRIPT DOES:
   Phase 0: SOPP Initialization — Williams, Baker Street, Zirconia loaded
   Phase 1: Auth — Device code flow for any Microsoft account
