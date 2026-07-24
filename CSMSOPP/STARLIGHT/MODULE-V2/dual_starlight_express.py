@@ -47,7 +47,8 @@ import urllib.request, urllib.parse
 CONFIG = {
     'workspace': os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
     'scratch': '/tmp/kilo',
-    'client_id': '14d82eec-204b-4c2f-b7e8-296a70dab67e',  # Graph PowerShell public client
+    'client_id': os.environ.get('CSM_CLIENT_ID', '14d82eec-204b-4c2f-b7e8-296a70dab67e'),  # Default: Graph PowerShell; override via CSM_CLIENT_ID env
+    'tenant': os.environ.get('CSM_TENANT', None),  # Set for school/org accounts (e.g. 'ccac.edu')
     'graph_base': 'https://graph.microsoft.com/v1.0',
     'sender_hotmail': 'jasonbrodsky@hotmail.com',
     'sender_zirconia': 'zirconia@aegisc.space',
@@ -134,10 +135,11 @@ def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
     print(f'\n🔑 AUTHENTICATING: {account_name}')
     print(f'   Requesting device code...')
     
+    tenant_path = CONFIG.get('tenant') or 'common'
     params = {'client_id': CONFIG['client_id'], 'scope': scopes}
     data = urllib.parse.urlencode(params).encode()
     req = urllib.request.Request(
-        'https://login.microsoftonline.com/common/oauth2/v2.0/devicecode',
+        f'https://login.microsoftonline.com/{tenant_path}/oauth2/v2.0/devicecode',
         data=data
     )
     req.add_header('Content-Type', 'application/x-www-form-urlencoded')
@@ -174,7 +176,7 @@ def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
         }
         data = urllib.parse.urlencode(td).encode()
         req = urllib.request.Request(
-            'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+            f'https://login.microsoftonline.com/{tenant_path}/oauth2/v2.0/token',
             data=data
         )
         req.add_header('Content-Type', 'application/x-www-form-urlencoded')
