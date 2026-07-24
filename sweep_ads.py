@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, urllib.request, urllib.parse, re, time, sys
+import json, urllib.request, urllib.parse, re, time, sys, argparse
 sys.stdout.reconfigure(line_buffering=True) if hasattr(sys.stdout, 'reconfigure') else None
 
 TK = '/tmp/kilo/hotmail_token.json'
@@ -107,7 +107,16 @@ if not FID:
 total = 0
 bs = 100
 skip = 0
-print(f'START SWEEP at {time.strftime("%H:%M:%S")}', flush=True)
+cumulative = 0
+
+import argparse
+ap = argparse.ArgumentParser()
+ap.add_argument('--skip', type=int, default=5100)
+ap.add_argument('--cumulative', type=int, default=4095)
+args = ap.parse_args()
+skip = args.skip
+cumulative = args.cumulative
+print(f'START SWEEP at {time.strftime("%H:%M:%S")} from skip={skip} cumulative={cumulative}', flush=True)
 
 for pg in range(500):
     q = urllib.parse.quote(
@@ -125,8 +134,8 @@ for pg in range(500):
             mv += 1
     total += mv
     pct = len(tm) / len(vs) * 100
-    print(f'p{pg+1:>3}|{skip}-{skip+len(vs)}|{mv:>3}m({pct:.0f}%)|S{total}', flush=True)
+    print(f'p{pg+1:>3}|{skip}-{skip+len(vs)}|{mv:>3}m({pct:.0f}%)|+{total}|T{cumulative+total}', flush=True)
     skip += bs
     time.sleep(0.3)
 
-print(f'DONE: {total} total moved', flush=True)
+print(f'DONE: +{total} this run | total folder: {cumulative+total}', flush=True)
