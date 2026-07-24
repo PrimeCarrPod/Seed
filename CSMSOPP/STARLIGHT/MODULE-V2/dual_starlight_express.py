@@ -46,7 +46,7 @@ import urllib.request, urllib.parse
 # ─── CONFIG ────────────────────────────────────────────
 CONFIG = {
     'workspace': os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-    'scratch': f'/tmp/agent_{os.environ.get("AGENT_ID", "default")}',
+    'scratch': '/tmp/kilo',
     'client_id': '14d82eec-204b-4c2f-b7e8-296a70dab67e',  # Graph PowerShell public client
     'graph_base': 'https://graph.microsoft.com/v1.0',
     'sender_hotmail': 'jasonbrodsky@hotmail.com',
@@ -102,6 +102,21 @@ def sopp_init():
     return True
 
 # ─── AUTH ──────────────────────────────────────────────
+def load_cached_token(account_name):
+    """Try to load a cached token from disk."""
+    token_file = os.path.join(CONFIG['scratch'], 'csm_token.json')
+    if 'hotmail' in account_name.lower() or 'jason' in account_name.lower():
+        token_file = os.path.join(CONFIG['scratch'], 'hotmail_token.json')
+    if os.path.exists(token_file):
+        with open(token_file) as f:
+            try:
+                t = json.load(f)
+                if t.get('expires_on', 0) > time.time() + 60:
+                    return t
+            except:
+                pass
+    return None
+
 def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
     """
     Phase 1: Authenticate via device code flow.
@@ -109,6 +124,12 @@ def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
     """
     if scopes is None:
         scopes = 'https://graph.microsoft.com/Mail.ReadWrite https://graph.microsoft.com/Mail.Send offline_access'
+    
+    cached = load_cached_token(account_name)
+    if cached:
+        print(f'\n🔑 USING CACHED TOKEN: {account_name} (expires in {int(cached["expires_on"] - time.time())}s)')
+        CONFIG['token_cache'][account_name] = cached
+        return cached
     
     print(f'\n🔑 AUTHENTICATING: {account_name}')
     print(f'   Requesting device code...')
