@@ -38,6 +38,9 @@ RULES:
    - Never remove personalized greeting (P1) or close/signature (last 2)
    - UNIQUE HEADERS: No two subject lines shall be identical
    - FORMAT ENFORCEMENT: Verify P1-P14 structure exists
+   - VARIATION SYSTEM (v3.2): Each draft in a batch gets unique phrasing.
+     No two drafts shall have identical Williams openings, beef rotations,
+     or closing summaries. Rotation system ensures diversity across batches.
 
 CAMPAIGN RULES:
    RULE #1 — NEVER AUTO-SEND: All drafts stay in Drafts for Jason approval.
