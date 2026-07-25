@@ -10,6 +10,50 @@ campaign engine. Encompasses everything learned in the July 18-19, 2026
 INVOKE:
     python3 dual_starlight_express.py [--test] [--batch BATCH-XX] [--live]
 
+AUTH MODES (Phase 1):
+    The script supports three client IDs via the CSM_CLIENT_ID env variable.
+    Tenant can be set via CSM_TENANT (default: 'common').
+
+    Client ID 1 (default): 14d82eec-...  — Microsoft Graph Command Line Tools (public)
+        Built into many tenants. Works with consumer + org accounts.
+        CCAC STATUS: ❌ Admin consent required
+
+    Client ID 2 (env override): 14b2d65b-... — MS365 MCP default (public, multi-tenant)
+        Testing indicates this client is tenant-restricted (HTTP 400 on /common).
+        CCAC STATUS: ❌ HTTP 400 on non-consented tenants
+
+    Client ID 3 (env override): 084a3e9f-... — @softeria/ms-365-mcp-server built-in
+        This is the MCP server's own app registration. Multi-tenant.
+        CCAC STATUS: ❌ Admin consent required (same as #1)
+
+    Summary: All three public multi-tenant apps hit CCAC admin consent gate.
+    This is by design — Entra ID requires admin approval for delegated
+    Mail.Send / Mail.ReadWrite permissions on managed school/organization
+    tenants. There is no programmatic bypass. ROPC (password grant) is
+    deprecated, blocked by MFA, and dropped in OAuth 2.1.
+
+    For school/restricted-tenant accounts, options are:
+    A) Admin consent URL (one click by CCAC IT admin):
+       https://login.microsoftonline.com/ccac.edu/adminconsent?client_id=084a3e9f-a9f4-43f7-89f9-d229cf97853e
+       After admin approves, all CCAC users can use this app.
+    B) Register a dedicated app in the CCAC Azure AD tenant
+    C) Use the already-authenticated zirconia@aegisc.space account instead
+    D) Use jasonbrodsky@hotmail.com (personal account — no admin consent needed)
+
+    For consumer/Outlook accounts (e.g. jasonbrodsky@hotmail.com):
+        Any of the above client IDs work fine via device code flow.
+        No admin consent needed for personal Microsoft accounts.
+
+    Usage examples:
+        # Default client (Graph PowerShell), multi-tenant
+        python3 dual_starlight_express.py --live --account zirconia@aegisc.space
+
+        # MCP server client, CCAC tenant (fails due to admin consent)
+        CSM_CLIENT_ID=084a3e9f-a9f4-43f7-89f9-d229cf97853e CSM_TENANT=ccac.edu python3 dual_starlight_express.py --live --account jason.brodsky@ccac.edu
+
+        # Hotmail personal account (works — no admin consent needed)
+        python3 dual_starlight_express.py --live --account jasonbrodsky@hotmail.com
+
 WHAT THIS SCRIPT DOES:
   Phase 0: SOPP Initialization — Williams, Baker Street, Zirconia loaded
   Phase 1: Auth — Device code flow for any Microsoft account
@@ -36,7 +80,28 @@ LESSONS LEARNED (built into this script):
   L12: CC zirconia@aegisc.space on EVERY send for master record
   L13: Post-campaign: clean inbox to dated archive folder
   L14: Session handoff files enable seamless agent transitions
-  L15: Three independent GitHub verifications before declaring "done"
+   L15: Three independent GitHub verifications before declaring "done"
+
+CAMPAIGN RULES (Session July 24, 2026):
+   ═══════════════════════════════════════════════
+   RULE #1 — NEVER AUTO-SEND:
+   ═══════════════════════════════════════════════
+   Under no circumstances shall any email be sent
+   without explicit Jason Brodsky approval. All
+   drafts shall remain in the Drafts folder until
+   reviewed, approved, and explicitly dispatched by
+   Jason. This rule is encoded at every layer —
+   the send function requires affirmative consent.
+   Auto-send is a campaign integrity violation.
+
+   RULE #2 — DRAFTS ONLY:
+   All prepared emails are left in the Drafts folder
+   for Jason to inspect before sending. No email
+   shall bypass the Drafts approval gate.
+
+   RULE #3 — BOUNCE TRACKING:
+   Every send must be preceded by a bounce-list check.
+   No address shall receive duplicate campaign mail.
 ═══════════════════════════════════════════════════════════════════════════════
 """
 
@@ -46,8 +111,9 @@ import urllib.request, urllib.parse
 # ─── CONFIG ────────────────────────────────────────────
 CONFIG = {
     'workspace': os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
-    'scratch': f'/tmp/agent_{os.environ.get("AGENT_ID", "default")}',
-    'client_id': '14d82eec-204b-4c2f-b7e8-296a70dab67e',  # Graph PowerShell public client
+    'scratch': '/tmp/kilo',
+    'client_id': os.environ.get('CSM_CLIENT_ID', '14d82eec-204b-4c2f-b7e8-296a70dab67e'),  # Default: Graph PowerShell; override via CSM_CLIENT_ID env
+    'tenant': os.environ.get('CSM_TENANT', None),  # Set for school/org accounts (e.g. 'ccac.edu')
     'graph_base': 'https://graph.microsoft.com/v1.0',
     'sender_hotmail': 'jasonbrodsky@hotmail.com',
     'sender_zirconia': 'zirconia@aegisc.space',
@@ -102,6 +168,21 @@ def sopp_init():
     return True
 
 # ─── AUTH ──────────────────────────────────────────────
+def load_cached_token(account_name):
+    """Try to load a cached token from disk."""
+    token_file = os.path.join(CONFIG['scratch'], 'csm_token.json')
+    if 'hotmail' in account_name.lower() or 'jason' in account_name.lower():
+        token_file = os.path.join(CONFIG['scratch'], 'hotmail_token.json')
+    if os.path.exists(token_file):
+        with open(token_file) as f:
+            try:
+                t = json.load(f)
+                if t.get('expires_on', 0) > time.time() + 60:
+                    return t
+            except:
+                pass
+    return None
+
 def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
     """
     Phase 1: Authenticate via device code flow.
@@ -110,13 +191,20 @@ def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
     if scopes is None:
         scopes = 'https://graph.microsoft.com/Mail.ReadWrite https://graph.microsoft.com/Mail.Send offline_access'
     
+    cached = load_cached_token(account_name)
+    if cached:
+        print(f'\n🔑 USING CACHED TOKEN: {account_name} (expires in {int(cached["expires_on"] - time.time())}s)')
+        CONFIG['token_cache'][account_name] = cached
+        return cached
+    
     print(f'\n🔑 AUTHENTICATING: {account_name}')
     print(f'   Requesting device code...')
     
+    tenant_path = CONFIG.get('tenant') or 'common'
     params = {'client_id': CONFIG['client_id'], 'scope': scopes}
     data = urllib.parse.urlencode(params).encode()
     req = urllib.request.Request(
-        'https://login.microsoftonline.com/common/oauth2/v2.0/devicecode',
+        f'https://login.microsoftonline.com/{tenant_path}/oauth2/v2.0/devicecode',
         data=data
     )
     req.add_header('Content-Type', 'application/x-www-form-urlencoded')
@@ -153,7 +241,7 @@ def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
         }
         data = urllib.parse.urlencode(td).encode()
         req = urllib.request.Request(
-            'https://login.microsoftonline.com/common/oauth2/v2.0/token',
+            f'https://login.microsoftonline.com/{tenant_path}/oauth2/v2.0/token',
             data=data
         )
         req.add_header('Content-Type', 'application/x-www-form-urlencoded')
