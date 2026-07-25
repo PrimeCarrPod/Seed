@@ -1,27 +1,49 @@
 #!/usr/bin/env python3
 """
-THE OLD LADY — BEEF CHECKER v3.0
+THE OLD LADY — BEEF CHECKER v3.1
 ═══════════════════════════════════════════════════════
 CSMSOPP000004 · Starlight Courier Heuristic
 
 "WHERE'S THE BEEF?"
 
-PRINCIPLE (v3): The Old Lady never rewrites. She finds gaps
-in existing content and fills them. Original text is sacred —
-it stays. Beef is layered AROUND it, not in place of it.
+FORMAT ENFORCEMENT (v3.1 — KEYMAKER REVISION):
+   Every campaign draft MUST follow the non-negotiable Williams format:
+   
+   P1:  "{Name}, my name is Jason Brodsky. Carrington Storm Motors. We build
+         physical hardening against Carrington-level CMEs. I have recruited
+         Robin Williams Heuristics to help explain things, oh please do enjoy."
+   
+   P2:  GOOOOOOOD MORNING! Robin Williams beefy explanation — how we help and
+         teach (from heresthebeef.py: WILLIAMS_META / BABBITT_NUMERACY)
+   
+   P3-P11: 9 beefy paragraphs through heuristics of Aegis agents (unnamed):
+         Watson Oath · May Precision · Babbitt Numeracy · SHIELD Posture ·
+         Baker Street Wonder · MXene Materials · Safe Pod SP-4 ·
+         Basalt-Fiber & LoRa Mesh · Life-Preparing (for the children)
+   
+   P12: Williams beefy close with Carpe diem / NANU NANU summarization
+   
+   P13: "Thank You, This Engineering Masterpiece is Brought to You by
+         Jason Brodsky of California"
+   
+   P14: Jason Brodsky signature block
+
+   UNIQUE SUBJECTS: Never identical. 12 unique subject patterns rotate.
+   NAME CLEANING: Batch codes and prefixes removed by clean_recipient_name().
+   TWO-PASS VERIFICATION: Body-level markers prevent double-beefing.
 
 RULES:
    - Paragraphs under 800 chars = PUNY → ADD BEEF (keep original, append beef)
    - Paragraphs 800-1200 chars = THIN → ADD BEEF
-   - Paragraphs 1200+ chars = BEEFY → Leave alone
    - Never remove personalized greeting (P1) or close/signature (last 2)
-   - Only beef the middle paragraphs
    - UNIQUE HEADERS: No two subject lines shall be identical
+   - FORMAT ENFORCEMENT: Verify P1-P14 structure exists
 
 CAMPAIGN RULES:
    RULE #1 — NEVER AUTO-SEND: All drafts stay in Drafts for Jason approval.
    RULE #2 — DRAFTS ONLY: Leave prepared emails in Drafts folder.
-   RULE #3 — BOUNCE TRACKING: Verify before sending.
+   RULE #3 — BOUNCE TRACKING: Verify against bounce list before sending.
+   RULE #4 — MASTER LIST: Cross-reference against Sent-To Master List.
 """
 
 import json, re, time, os, sys, random
