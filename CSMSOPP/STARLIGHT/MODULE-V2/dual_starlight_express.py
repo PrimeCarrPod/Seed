@@ -80,7 +80,28 @@ LESSONS LEARNED (built into this script):
   L12: CC zirconia@aegisc.space on EVERY send for master record
   L13: Post-campaign: clean inbox to dated archive folder
   L14: Session handoff files enable seamless agent transitions
-  L15: Three independent GitHub verifications before declaring "done"
+   L15: Three independent GitHub verifications before declaring "done"
+
+CAMPAIGN RULES (Session July 24, 2026):
+   ═══════════════════════════════════════════════
+   RULE #1 — NEVER AUTO-SEND:
+   ═══════════════════════════════════════════════
+   Under no circumstances shall any email be sent
+   without explicit Jason Brodsky approval. All
+   drafts shall remain in the Drafts folder until
+   reviewed, approved, and explicitly dispatched by
+   Jason. This rule is encoded at every layer —
+   the send function requires affirmative consent.
+   Auto-send is a campaign integrity violation.
+
+   RULE #2 — DRAFTS ONLY:
+   All prepared emails are left in the Drafts folder
+   for Jason to inspect before sending. No email
+   shall bypass the Drafts approval gate.
+
+   RULE #3 — BOUNCE TRACKING:
+   Every send must be preceded by a bounce-list check.
+   No address shall receive duplicate campaign mail.
 ═══════════════════════════════════════════════════════════════════════════════
 """
 

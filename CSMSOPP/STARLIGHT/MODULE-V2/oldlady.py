@@ -15,11 +15,18 @@ muscle-bound informational segments, and happy Carrington Storm
 Motors intention — without changing the rest of the draft.
 
 RULES:
-  - Paragraphs under 800 chars = PUNY → BEEF IT
-  - Paragraphs 800-1200 chars = THIN → BEEF IT
-  - Paragraphs 1200+ chars = BEEFY → Leave alone
-  - Never change personalized P1 (greeting) or P10 (close)
-  - Only beef the specs sections (middle paragraphs)
+   - Paragraphs under 800 chars = PUNY → BEEF IT
+   - Paragraphs 800-1200 chars = THIN → BEEF IT
+   - Paragraphs 1200+ chars = BEEFY → Leave alone
+   - Never change personalized P1 (greeting) or P10 (close)
+   - Only beef the specs sections (middle paragraphs)
+
+CAMPAIGN RULES:
+   RULE #1 — NEVER AUTO-SEND: Under no circumstances shall any email
+     be sent without explicit Jason Brodsky approval. All drafts shall
+     remain in the Drafts folder until reviewed and explicitly dispatched.
+   RULE #2 — DRAFTS ONLY: Leave all prepared emails in Drafts folder.
+   RULE #3 — BOUNCE TRACKING: Verify against bounce list before sending.
 """
 
 import json, re, time, os
