@@ -107,18 +107,36 @@ BEEF_MAP = {
 }
 
 # ─── HEADER VARIATIONS ─────────────────────────────────
-# Each recipient gets a unique subject from their industry context.
+# Each recipient gets a unique subject from their context.
+# NAME CLEANING: removes batch codes, standardizes formatting.
 
 SUBJECT_PATTERNS = [
-    "Infrastructure Resilience — Aegis-C Shielding Data for {company}",
-    "The Hardening Layer Your {sector} Risk Model Is Missing — {company}",
-    "Solar Cycle 25 Infrastructure Data — {company} — Carrington Storm Motors",
-    "Electromagnetic Resilience for {sector} Operations — {company}",
-    "What Your {sector} BCP Needs: Physical-Layer CME Hardening — {company}",
-    "The Materials That Protect {sector} Infrastructure — {company} Data Package",
-    "Aegis-C Shielding Effectiveness Data for {company}",
-    "{sector} Infrastructure — The Mitigation Layer Nobody Has Modeled — {company}",
+    "Aegis-C Shielding Data for {name} — Carrington Storm Motors",
+    "The Reinsurance Mitigation Layer — {name} — Carrington Storm Motors",
+    "Systemic Space-Weather Risk Data for {name} — Carrington Storm Motors",
+    "Infrastructure Resilience Data — {name} — Carrington Storm Motors",
+    "What Your Risk Model Is Missing — Physical-Layer CME Data for {name}",
+    "The Mitigation Column — Aegis-C Shielding for {name}",
+    "Solar Cycle 25 Infrastructure Data — {name} — Carrington Storm Motors",
+    "Electromagnetic Resilience Engineering Data — {name}",
+    "The Hardening Layer Underneath Your Systemic Risk Model — {name}",
+    "Carrington Storm Motors — Shielding Effectiveness Data for {name}",
+    "From Warning to Hardening — CME Resilience Data for {name}",
+    "The Materials That Protect Infrastructure — {name} Data Package",
 ]
+
+def clean_recipient_name(raw_name):
+    """Remove batch codes and standardize recipient names."""
+    import re
+    n = raw_name
+    for pat in [r'BATCH-\d+\s*#\d+\s*[-\u2013\u2014]\s*',
+                r'B\d+-E\d+\s*', r'B\d+\s*']:
+        n = re.sub(pat, '', n).strip()
+    n = re.sub(r'\s*[-\u2013\u2014]\s*', ', ', n)
+    n = re.sub(r'\s+/', ' & ', n)
+    if 'jason' in n.lower() or 'brodsky' in n.lower():
+        n = 'Jason'
+    return n if n else 'Team'
 
 def unique_subject(company, sector, index):
     pattern = SUBJECT_PATTERNS[index % len(SUBJECT_PATTERNS)]
@@ -224,22 +242,10 @@ def process_all_drafts(token_path='/tmp/kilo/hotmail_token.json'):
             continue  # Already processed by a previous pass
         subj = m.get('subject', '')
         to_name = m.get('toRecipients', [{}])[0].get('emailAddress', {}).get('name', 'Team')
-        if 'Mitigation Layer' in subj or 'EMP Resilience' in subj:
-            # Vary by company
-            company = to_name.split('—')[0].strip().split(',')[0].strip()
-            sector = 'Critical Infrastructure'
-            if any(w in company.lower() for w in ['nvidia', 'intel', 'ibm', 'samsung']): sector = 'Semiconductor & Computing'
-            elif any(w in company.lower() for w in ['boeing', 'rocket']): sector = 'Aerospace & Aviation'
-            elif any(w in company.lower() for w in ['comcast', 'cisco']): sector = 'Telecom & Networking'
-            elif any(w in company.lower() for w in ['carnival', 'maersk']): sector = 'Maritime & Logistics'
-            elif any(w in company.lower() for w in ['tesla', 'gm', 'bmw', 'vw']): sector = 'Electric Vehicle & Automotive'
-            elif any(w in company.lower() for w in ['bechtel', 'tylin']): sector = 'Engineering & Construction'
-            elif any(w in company.lower() for w in ['panasonic', '3m']): sector = 'Advanced Materials & Electronics'
-            new_subj = unique_subject(company, sector, i)
-            patch = {'body': {'contentType': 'HTML', 'content': new_body},
-                     'subject': new_subj}
-        else:
-            patch = {'body': {'contentType': 'HTML', 'content': new_body}}
+        company = clean_recipient_name(to_name)
+        new_subj = unique_subject(company, '', i)
+        patch = {'body': {'contentType': 'HTML', 'content': new_body},
+                 'subject': new_subj}
 
         mid = m['id']
         result = g(f'/me/messages/{mid}', patch, method='PATCH')
