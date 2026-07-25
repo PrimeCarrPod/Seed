@@ -14,6 +14,9 @@ version: 1.0.0
 tags: [correspondence, comedy, SOP, memo, letter, crisis, empathy, williams, documents]
 ---
 
+# WILLIAMS HEURISTIC V1 — CSMSOPP000001 | LOAD: LIGHT/STANDARD/EXTREME
+# Default: STANDARD | LIGHT: Basic bifurcation, ROUTINE only | EXTREME: Full V2 capabilities (upgrade to V2 or V3 recommended)
+
 # THE WILLIAMS HEURISTIC — LLM COMMUNICATION MODULE
 ## CSMSOPP000001 | Operational Persona Module | Version 1.0
 
