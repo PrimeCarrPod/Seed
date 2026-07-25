@@ -17,6 +17,11 @@ version: 2.0.0
 tags: [correspondence, comedy, SOP, memo, letter, crisis, empathy, williams, vocal, melodics, amygdala, documents, v2]
 ---
 
+# WILLIAMS HEURISTIC V2 — CSMSOPP000001 | LOAD: LIGHT/STANDARD/EXTREME
+# Default: STANDARD (full vocal architecture, amygdala triggers, reality anchors) 
+# LIGHT: Basic bifurcation, ROUTINE only | EXTREME: All cadence modes, all triggers, all anchors, full severity matrix
+# NOTE: V3 available at CSMSOPP/WILLIAMS-V3/MODULE/SKILL.md with Universal Injection Protocol
+
 # THE WILLIAMS HEURISTIC — LLM COMMUNICATION MODULE V2
 ## CSMSOPP000001 | Advanced Persona Module | Version 2.0
 
