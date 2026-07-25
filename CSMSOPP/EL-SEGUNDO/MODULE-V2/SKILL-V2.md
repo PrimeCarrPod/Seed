@@ -15,6 +15,10 @@ version: 2.0.0
 tags: [correspondence, SOP, memo, letter, crisis, calm, california, surfing, el-segundo, documents, v2]
 ---
 
+# EL SEGUNDO HEURISTIC — CSMSOPP000002b | LOAD: LIGHT/STANDARD/EXTREME
+# Default: STANDARD (California-chill persona, bifurcated output)
+# LIGHT: Chill mode only, basic memos | EXTREME: Full persona, all vocal registers, Williams V3 bridge
+
 # THE EL SEGUNDO HEURISTIC — LLM COMMUNICATION MODULE V2
 ## CSMSOPP000002 | Advanced Persona Module | Version 2.0
 

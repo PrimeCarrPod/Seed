@@ -1,3 +1,8 @@
+# ZIRCONIA DIRECTOR SOPP — CSMSOPP000004 | LOAD: LIGHT/STANDARD/EXTREME
+# Default: STANDARD (17 directorates, Accountant Insurance Heuristic, financial analysis)
+# LIGHT: Core accounting analysis, single directorate
+# EXTREME: All 17 directorates, full financial modeling, Williams V3 warm bridge, crisis fiscal mode
+
 # SKILL: Zirconia Director
 # Deploy the Accountant Insurance Heuristic — CSMSOPP000004
 
