@@ -1,0 +1,13 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "network": {
+      "allowedHosts": [
+        "www.microsoft.com",
+        "login.microsoftonline.com",
+        "registry.npmjs.org",
+        "api.github.com"
+      ]
+    }
+  }
+}
