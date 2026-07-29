@@ -30,4 +30,5 @@
     <color name="group_info">#74B9FF</color>
     <color name="transparent">#00000000</color>
     <color name="scrim">#CC000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>

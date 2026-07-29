@@ -40,10 +40,12 @@ public final class R {
     public static final int terminal_selection=0x7f01001c;
     public static final int transparent=0x7f01001d;
     public static final int warning=0x7f01001e;
+    public static final int white=0x7f01001f;
   }
   public static final class drawable {
     public static final int ic_resize_handle=0x7f020000;
     public static final int ic_vertebrae_foreground=0x7f020001;
+    public static final int ic_vertebrae_foreground_white=0x7f020002;
   }
   public static final class id {
     public static final int action_buttons=0x7f030000;
