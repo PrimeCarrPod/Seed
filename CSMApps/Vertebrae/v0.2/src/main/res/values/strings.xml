@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vertebrae</string>
+    <string name="dialog_new_session_title">New kilo.ai Session</string>
+    <string name="dialog_new_session_hint">Enter session ID (ses_xxxxxxx)</string>
+    <string name="session_connect">Connect</string>
+    <string name="action_new_group">New Group</string>
+    <string name="dialog_new_group_title">New Session Group</string>
+    <string name="dialog_new_group_hint">Group name</string>
+    <string name="empty_state_title">No sessions yet</string>
+    <string name="empty_state_desc">Tap + to add a kilo.ai session</string>
+    <string name="session_selected">Opened session: %s</string>
+</resources>
