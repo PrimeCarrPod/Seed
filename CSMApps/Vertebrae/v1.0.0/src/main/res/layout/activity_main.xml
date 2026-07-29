@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/surface"
+        android:elevation="4dp" />
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Session Groups -->
+            <TextView
+                android:id="@+id/tv_groups_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Session Groups"
+                android:textColor="@color/on_surface"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="120dp" />
+
+            <!-- Active Sessions -->
+            <TextView
+                android:id="@+id/tv_sessions_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active Sessions"
+                android:textColor="@color/on_surface"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_sessions"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="300dp" />
+
+            <!-- Empty state -->
+            <LinearLayout
+                android:id="@+id/empty_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="32dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_vertebrae_foreground"
+                    android:alpha="0.3" />
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="No active sessions"
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_empty_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add a kilo.ai session to get started"
+                    android:textColor="@color/on_surface_variant"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="Add Session"
+        android:src="@android:drawable/ic_input_add" />
+
+</LinearLayout>
