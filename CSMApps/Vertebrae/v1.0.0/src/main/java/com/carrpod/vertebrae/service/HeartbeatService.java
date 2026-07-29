@@ -12,8 +12,6 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
 
-import androidx.core.app.NotificationCompat;
-
 import com.carrpod.vertebrae.R;
 import com.carrpod.vertebrae.model.KilosSession;
 import com.carrpod.vertebrae.network.WebSocketManager;
@@ -22,7 +20,7 @@ import com.carrpod.vertebrae.storage.SessionStorageManager;
 public class HeartbeatService extends Service {
 
     private static final String TAG = "HeartbeatService";
-    private static final long HEARTBEAT_INTERVAL = 15000L; // 15 seconds
+    private static final long HEARTBEAT_INTERVAL = 15000L;
 
     private SessionStorageManager storage;
     private WebSocketManager wsManager;
@@ -53,13 +51,13 @@ public class HeartbeatService extends Service {
     }
 
     private void startForegroundService() {
-        Notification notification = new NotificationCompat.Builder(this, "vertebrae_heartbeat")
+        Notification notification = new Notification.Builder(this, "vertebrae_heartbeat")
                 .setContentTitle(getString(R.string.heartbeat_service_title))
                 .setContentText(getString(R.string.heartbeat_service_running))
                 .setSmallIcon(R.drawable.ic_vertebrae_foreground)
                 .setOngoing(true)
-                .setPriority(NotificationCompat.PRIORITY_MIN)
-                .setCategory(NotificationCompat.CATEGORY_SERVICE)
+                .setPriority(Notification.PRIORITY_MIN)
+                .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
 
         startForeground(1002, notification);
@@ -87,23 +85,15 @@ public class HeartbeatService extends Service {
             if (session.getStatus() == KilosSession.SessionStatus.CONNECTED ||
                 session.getStatus() == KilosSession.SessionStatus.HEARTBEAT_ACTIVE) {
 
-                wsManager.sendHeartbeat(session.getId(), success -> {
-                    KilosSession updated;
-                    if (success) {
-                        updated = session.copyWith(
-                                KilosSession.SessionStatus.HEARTBEAT_ACTIVE,
-                                null,
-                                System.currentTimeMillis(),
-                                null, null, null, null, null, null, null
-                        );
-                    } else {
-                        updated = session.copyWith(
-                                KilosSession.SessionStatus.HEARTBEAT_FAILED,
-                                null, null, null, null, null, null, null, null, null
-                        );
-                    }
-                    storage.saveSession(updated);
-                });
+                wsManager.sendHeartbeat(session.getId());
+
+                KilosSession updated = session.copyWith(
+                    KilosSession.SessionStatus.HEARTBEAT_ACTIVE,
+                    null,
+                    System.currentTimeMillis(),
+                    null, null, null, null, null, null, null
+                );
+                storage.saveSession(updated);
             }
         }
     }
@@ -111,23 +101,7 @@ public class HeartbeatService extends Service {
     public void forceHeartbeat(String sessionId) {
         KilosSession session = storage.loadSession(sessionId);
         if (session != null) {
-            wsManager.sendHeartbeat(session.getId(), success -> {
-                KilosSession updated;
-                if (success) {
-                    updated = session.copyWith(
-                            KilosSession.SessionStatus.HEARTBEAT_ACTIVE,
-                            null,
-                            System.currentTimeMillis(),
-                            null, null, null, null, null, null, null
-                    );
-                } else {
-                    updated = session.copyWith(
-                            KilosSession.SessionStatus.HEARTBEAT_FAILED,
-                            null, null, null, null, null, null, null, null, null
-                    );
-                }
-                storage.saveSession(updated);
-            });
+            wsManager.sendHeartbeat(session.getId());
         }
     }
 

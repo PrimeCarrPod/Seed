@@ -5,8 +5,9 @@ import android.util.Log;
 
 import com.carrpod.vertebrae.model.KilosSession;
 import com.carrpod.vertebrae.model.SessionGroup;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,7 +26,6 @@ public class SessionStorageManager {
     private static final String TAG = "SessionStorageManager";
     private static SessionStorageManager instance;
     private final Context context;
-    private final Gson gson = new Gson();
 
     private final File baseDir;
     private final File sessionsFile;
@@ -51,7 +51,7 @@ public class SessionStorageManager {
 
     public static SessionStorageManager getInstance() {
         if (instance == null) {
-            throw new IllegalStateException("SessionStorageManager not initialized. Call initialize() first.");
+            throw new IllegalStateException("SessionStorageManager not initialized");
         }
         return instance;
     }
@@ -59,26 +59,23 @@ public class SessionStorageManager {
     private void loadCache() {
         try {
             if (sessionsFile.exists()) {
-                Type listType = new TypeToken<ArrayList<KilosSession>>() {}.getType();
-                List<KilosSession> sessions = gson.fromJson(readFile(sessionsFile), listType);
-                if (sessions != null) {
-                    for (KilosSession session : sessions) {
-                        sessionsCache.put(session.getId(), session);
-                    }
+                String json = readFile(sessionsFile);
+                JSONArray array = new JSONArray(json);
+                for (int i = 0; i < array.length(); i++) {
+                    KilosSession session = KilosSession.fromJson(array.getJSONObject(i));
+                    sessionsCache.put(session.getId(), session);
                 }
             }
 
             if (groupsFile.exists()) {
-                Type listType = new TypeToken<ArrayList<SessionGroup>>() {}.getType();
-                List<SessionGroup> groups = gson.fromJson(readFile(groupsFile), listType);
-                if (groups != null) {
-                    for (SessionGroup group : groups) {
-                        groupsCache.put(group.getId(), group);
-                    }
+                String json = readFile(groupsFile);
+                JSONArray array = new JSONArray(json);
+                for (int i = 0; i < array.length(); i++) {
+                    SessionGroup group = SessionGroup.fromJson(array.getJSONObject(i));
+                    groupsCache.put(group.getId(), group);
                 }
             }
 
-            // Ensure default group exists
             if (!groupsCache.containsKey("default")) {
                 SessionGroup defaultGroup = new SessionGroup("default", "Default Group", 0xFF74B9FF);
                 groupsCache.put("default", defaultGroup);
@@ -89,27 +86,18 @@ public class SessionStorageManager {
         }
     }
 
-    private String readFile(File file) {
-        try {
-            FileInputStream fis = new FileInputStream(file);
-            byte[] data = new byte[(int) file.length()];
-            fis.read(data);
-            fis.close();
-            return new String(data, "UTF-8");
-        } catch (Exception e) {
-            Log.e(TAG, "Error reading file: " + file.getName(), e);
-            return "";
-        }
+    private String readFile(File file) throws Exception {
+        FileInputStream fis = new FileInputStream(file);
+        byte[] data = new byte[(int) file.length()];
+        fis.read(data);
+        fis.close();
+        return new String(data, "UTF-8");
     }
 
-    private void writeFile(File file, String content) {
-        try {
-            FileOutputStream fos = new FileOutputStream(file);
-            fos.write(content.getBytes("UTF-8"));
-            fos.close();
-        } catch (Exception e) {
-            Log.e(TAG, "Error writing file: " + file.getName(), e);
-        }
+    private void writeFile(File file, String content) throws Exception {
+        FileOutputStream fos = new FileOutputStream(file);
+        fos.write(content.getBytes("UTF-8"));
+        fos.close();
     }
 
     // Session methods
@@ -143,8 +131,11 @@ public class SessionStorageManager {
 
     private void saveSessions() {
         try {
-            String json = gson.toJson(new ArrayList<>(sessionsCache.values()));
-            writeFile(sessionsFile, json);
+            JSONArray array = new JSONArray();
+            for (KilosSession session : sessionsCache.values()) {
+                array.put(session.toJson());
+            }
+            writeFile(sessionsFile, array.toString());
         } catch (Exception e) {
             Log.e(TAG, "Error saving sessions", e);
         }
@@ -167,11 +158,9 @@ public class SessionStorageManager {
     public void deleteGroup(String id) {
         if (!"default".equals(id)) {
             groupsCache.remove(id);
-            // Move sessions to default group
             for (KilosSession session : sessionsCache.values()) {
                 if (id.equals(session.getGroupId())) {
-                    KilosSession updated = session.copyWith(null, null, null, null, null, null, null, null, null, null);
-                    updated.setGroupId("default");
+                    KilosSession updated = session.copyWithGroupId("default");
                     sessionsCache.put(session.getId(), updated);
                 }
             }
@@ -182,14 +171,17 @@ public class SessionStorageManager {
 
     private void saveGroups() {
         try {
-            String json = gson.toJson(new ArrayList<>(groupsCache.values()));
-            writeFile(groupsFile, json);
+            JSONArray array = new JSONArray();
+            for (SessionGroup group : groupsCache.values()) {
+                array.put(group.toJson());
+            }
+            writeFile(groupsFile, array.toString());
         } catch (Exception e) {
             Log.e(TAG, "Error saving groups", e);
         }
     }
 
-    // File storage for inter-session transfers
+    // File storage
     public File getSessionStorageDir(String sessionId) {
         File dir = new File(baseDir, "session_" + sessionId);
         dir.mkdirs();
@@ -226,7 +218,7 @@ public class SessionStorageManager {
     public List<File> listFiles(String groupId) {
         File dir = getGroupStorageDir(groupId);
         File[] files = dir.listFiles();
-        return files != null ? new ArrayList<>(List.of(files)) : new ArrayList<>();
+        return files != null ? new ArrayList<>(java.util.Arrays.asList(files)) : new ArrayList<>();
     }
 
     // Settings
@@ -242,12 +234,36 @@ public class SessionStorageManager {
     private final File settingsFile = new File(baseDir, "settings.json");
 
     public void saveSettings(Settings settings) {
-        writeFile(settingsFile, gson.toJson(settings));
+        try {
+            JSONObject json = new JSONObject();
+            json.put("heartbeatIntervalSeconds", settings.heartbeatIntervalSeconds);
+            json.put("interSessionPort", settings.interSessionPort);
+            json.put("autoReconnect", settings.autoReconnect);
+            json.put("keepScreenOn", settings.keepScreenOn);
+            json.put("showNotifications", settings.showNotifications);
+            json.put("storagePath", settings.storagePath);
+            writeFile(settingsFile, json.toString());
+        } catch (Exception e) {
+            Log.e(TAG, "Error saving settings", e);
+        }
     }
 
     public Settings loadSettings() {
         if (settingsFile.exists()) {
-            return gson.fromJson(readFile(settingsFile), Settings.class);
+            try {
+                String json = readFile(settingsFile);
+                JSONObject obj = new JSONObject(json);
+                Settings s = new Settings();
+                s.heartbeatIntervalSeconds = obj.optInt("heartbeatIntervalSeconds", 30);
+                s.interSessionPort = obj.optInt("interSessionPort", 8888);
+                s.autoReconnect = obj.optBoolean("autoReconnect", true);
+                s.keepScreenOn = obj.optBoolean("keepScreenOn", true);
+                s.showNotifications = obj.optBoolean("showNotifications", true);
+                s.storagePath = obj.optString("storagePath", "");
+                return s;
+            } catch (Exception e) {
+                Log.e(TAG, "Error loading settings", e);
+            }
         }
         return new Settings();
     }

@@ -12,8 +12,6 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
 
-import androidx.core.app.NotificationCompat;
-
 import com.carrpod.vertebrae.R;
 import com.carrpod.vertebrae.model.KilosSession;
 import com.carrpod.vertebrae.network.WebSocketManager;
@@ -52,13 +50,13 @@ public class SessionManagerService extends Service {
     }
 
     private void startForegroundService() {
-        Notification notification = new NotificationCompat.Builder(this, "vertebrae_sessions")
+        Notification notification = new Notification.Builder(this, "vertebrae_sessions")
                 .setContentTitle(getString(R.string.app_name))
                 .setContentText(getString(R.string.service_running))
                 .setSmallIcon(R.drawable.ic_vertebrae_foreground)
                 .setOngoing(true)
-                .setPriority(NotificationCompat.PRIORITY_LOW)
-                .setCategory(NotificationCompat.CATEGORY_SERVICE)
+                .setPriority(Notification.PRIORITY_LOW)
+                .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
 
         startForeground(1001, notification);
@@ -77,12 +75,11 @@ public class SessionManagerService extends Service {
             }
         }
 
-        // Periodic check
         reconnectRunnable = new Runnable() {
             @Override
             public void run() {
                 checkSessions();
-                handler.postDelayed(this, 30000); // 30 seconds
+                handler.postDelayed(this, 30000);
             }
         };
         handler.post(reconnectRunnable);
@@ -93,7 +90,6 @@ public class SessionManagerService extends Service {
             switch (session.getStatus()) {
                 case CONNECTED:
                 case HEARTBEAT_ACTIVE:
-                    // Check if heartbeat is stale
                     if (System.currentTimeMillis() - session.getLastHeartbeatAt() > session.getHeartbeatIntervalSeconds() * 2000L) {
                         wsManager.disconnectSession(session.getId());
                         reconnectSession(session);
@@ -111,8 +107,8 @@ public class SessionManagerService extends Service {
 
     private void reconnectSession(KilosSession session) {
         KilosSession updated = session.copyWith(
-                KilosSession.SessionStatus.RECONNECTING,
-                null, null, null, null, null, null, null, null, null
+            KilosSession.SessionStatus.RECONNECTING,
+            null, null, null, null, null, null, null, null, null
         );
         storage.saveSession(updated);
         wsManager.connectSession(updated);

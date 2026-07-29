@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 # build.sh — No-Gradle APK Build for Vertebrae v1
-# Pipeline: aapt2 compile → aapt2 link → kotlinc → d8 → zipalign → apksigner
+# Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
 # ============================================================
 set -e
 
@@ -37,7 +37,7 @@ ZIPALIGN="$BUILD_TOOLS/zipalign"
 APKSIGNER="$BUILD_TOOLS/apksigner"
 
 echo "============================================================"
-echo "  Vertebrae v1 — No-Gradle aapt2 + Kotlin Build"
+echo "  Vertebrae v1 — No-Gradle aapt2 + Java Build"
 echo "  Package: $PACKAGE  |  Version: $VERSION_NAME"
 echo "  JDK: $JAVA_HOME"
 echo "============================================================"
@@ -49,10 +49,10 @@ if [ ! -f "$D8" ]; then echo "ERROR: d8 not found"; exit 1; fi
 rm -rf "$GEN_DIR" "$OBJ_DIR"
 mkdir -p "$GEN_DIR" "$OBJ_DIR" "$OUT_DIR"
 
-echo "[1/8] aapt2 compile resources..."
+echo "[1/6] aapt2 compile resources..."
 "$AAPT2" compile --dir "$SRC_DIR/res" -o "$OBJ_DIR/resources.zip" 2>/dev/null
 
-echo "[2/8] aapt2 link..."
+echo "[2/6] aapt2 link..."
 "$AAPT2" link -o "$OUT_DIR/$APP_NAME-base.apk" -I "$ANDROID_JAR" \
     --manifest "$SRC_DIR/AndroidManifest.xml" --java "$GEN_DIR" \
     --min-sdk-version $MIN_SDK --target-sdk-version $TARGET_SDK \
@@ -67,51 +67,28 @@ if [ -d "$SRC_DIR/assets" ]; then
     mv "$ATMP/base.apk" "$OUT_DIR/$APP_NAME-base.apk"; rm -rf "$ATMP"
 fi
 
-echo "[3/8] kotlinc compile..."
-KOTLIN_VERSION="1.9.22"
-KOTLIN_JAR="$HOME/.m2/repository/org/jetbrains/kotlin/kotlin-compiler-embeddable/$KOTLIN_VERSION/kotlin-compiler-embeddable-$KOTLIN_VERSION.jar"
-KOTLIN_STDLIB="$HOME/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/$KOTLIN_VERSION/kotlin-stdlib-$KOTLIN_VERSION.jar"
-KOTLIN_REFLECT="$HOME/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/$KOTLIN_VERSION/kotlin-reflect-$KOTLIN_VERSION.jar"
-
-if [ ! -f "$KOTLIN_JAR" ]; then
-    echo "  Downloading Kotlin compiler..."
-    mkdir -p "$(dirname "$KOTLIN_JAR")"
-    curl -sL "https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/$KOTLIN_VERSION/kotlin-compiler-embeddable-$KOTLIN_VERSION.jar" -o "$KOTLIN_JAR"
-    curl -sL "https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/$KOTLIN_VERSION/kotlin-stdlib-$KOTLIN_VERSION.jar" -o "$KOTLIN_STDLIB"
-    curl -sL "https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-reflect/$KOTLIN_VERSION/kotlin-reflect-$KOTLIN_VERSION.jar" -o "$KOTLIN_REFLECT"
-fi
-
-ALL_SOURCES=$(find "$SRC_DIR/java" "$SRC_DIR/kotlin" "$GEN_DIR" -name "*.kt" -o -name "*.java" 2>/dev/null | tr '\n' ' ')
-java -cp "$KOTLIN_JAR:$KOTLIN_STDLIB:$KOTLIN_REFLECT:$ANDROID_JAR" \
-    org.jetbrains.kotlin.cli.jvm.K2JVMCompiler \
-    -cp "$ANDROID_JAR" \
-    -d "$OBJ_DIR" \
-    -language-version 1.9 \
-    -api-version 1.9 \
-    -jvm-target 11 \
-    $ALL_SOURCES 2>&1 | grep -v "warning:" || true
-
-echo "[4/8] javac for any Java sources..."
+echo "[3/6] javac compile..."
 JAVA_SOURCES=$(find "$SRC_DIR/java" "$GEN_DIR" -name "*.java" 2>/dev/null)
 if [ -n "$JAVA_SOURCES" ]; then
-    javac -source 11 -target 11 -classpath "$ANDROID_JAR:$KOTLIN_STDLIB" -d "$OBJ_DIR" \
+    javac -source 11 -target 11 -classpath "$ANDROID_JAR" -d "$OBJ_DIR" \
         -sourcepath "$SRC_DIR/java:$GEN_DIR" $JAVA_SOURCES 2>&1 | grep -v "warning:" || true
+else
+    echo "  No Java sources found"
 fi
 
-echo "[5/8] d8 dexing..."
+echo "[4/6] d8 dexing..."
 "$D8" --lib "$ANDROID_JAR" --min-api $MIN_SDK --output "$OBJ_DIR" \
     $(find "$OBJ_DIR" -name "*.class") 2>&1 | tail -1 || \
     find "$OBJ_DIR" -name "*.class" | xargs "$D8" --lib "$ANDROID_JAR" --min-api $MIN_SDK --output "$OBJ_DIR"
 
-echo "[6/8] Dex inject..."
+echo "[5/6] Dex inject..."
 cp "$OUT_DIR/$APP_NAME-base.apk" "$OUT_DIR/$APP_NAME-dexed.apk"
 cp "$OBJ_DIR/classes.dex" /tmp/classes.dex
 (cd /tmp && zip -q "$OUT_DIR/$APP_NAME-dexed.apk" classes.dex); rm -f /tmp/classes.dex
 
-echo "[7/8] zipalign..."
+echo "[6/6] zipalign + apksigner..."
 "$ZIPALIGN" -p -f 4 "$OUT_DIR/$APP_NAME-dexed.apk" "$OUT_DIR/$APP_NAME-aligned.apk"
 
-echo "[8/8] apksigner..."
 KEYSTORE="$PROJECT_DIR/debug.keystore"
 if [ ! -f "$KEYSTORE" ]; then
     keytool -genkey -v -keystore "$KEYSTORE" -alias androiddebugkey -keyalg RSA \

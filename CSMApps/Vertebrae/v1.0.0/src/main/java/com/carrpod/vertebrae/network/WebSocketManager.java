@@ -122,7 +122,7 @@ public class WebSocketManager {
         executor.execute(() -> {
             KilosSession session = storage.loadSession(sessionId);
             if (session != null) {
-                KilosSession updated = session.copyWith(status, null, null, null, null, null, null, null, null, null);
+                KilosSession updated = session.copyWithStatus(status);
                 storage.saveSession(updated);
             }
         });
