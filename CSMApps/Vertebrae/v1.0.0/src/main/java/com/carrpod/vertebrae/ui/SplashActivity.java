@@ -15,6 +15,14 @@ public class SplashActivity extends Activity {
 
     private static final int OVERLAY_PERMISSION_REQUEST = 1001;
     private boolean permissionRequested = false;
+    private int serviceStartIndex = 0;
+    private final String[] serviceNames = {
+        "com.carrpod.vertebrae.service.SessionManagerService",
+        "com.carrpod.vertebrae.service.HeartbeatService",
+        "com.carrpod.vertebrae.service.FloatingWindowService",
+        "com.carrpod.vertebrae.comm.InterSessionServer"
+    };
+    private final Handler handler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +32,11 @@ public class SplashActivity extends Activity {
         TextView tvStatus = findViewById(R.id.tv_splash_status);
         tvStatus.setText("Initializing Vertebrae...");
 
-        new Handler(Looper.getMainLooper()).postDelayed(this::checkAndProceed, 500);
+        // First, check permission
+        handler.postDelayed(this::checkOverlayPermission, 300);
     }
 
-    private void checkAndProceed() {
-        // Check overlay permission
+    private void checkOverlayPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
             if (!permissionRequested) {
                 permissionRequested = true;
@@ -41,9 +49,9 @@ public class SplashActivity extends Activity {
                 return;
             }
         }
-
-        // Start core services from MainActivity context
-        startServicesThenMain();
+        
+        // Permission granted or not needed, start services sequentially
+        startNextService();
     }
 
     @Override
@@ -52,12 +60,12 @@ public class SplashActivity extends Activity {
         if (requestCode == OVERLAY_PERMISSION_REQUEST) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && Settings.canDrawOverlays(this)) {
                 TextView tvStatus = findViewById(R.id.tv_splash_status);
-                tvStatus.setText("Permission granted. Starting...");
-                new Handler(Looper.getMainLooper()).postDelayed(this::startServicesThenMain, 500);
+                tvStatus.setText("Permission granted. Starting services...");
+                handler.postDelayed(this::startNextService, 500);
             } else {
                 TextView tvStatus = findViewById(R.id.tv_splash_status);
-                tvStatus.setText("Overlay permission required. Retrying...");
-                new Handler(Looper.getMainLooper()).postDelayed(this::checkAndProceed, 1000);
+                tvStatus.setText("Overlay permission required. Retrying in 2s...");
+                handler.postDelayed(this::checkOverlayPermission, 2000);
             }
         }
     }
@@ -66,31 +74,51 @@ public class SplashActivity extends Activity {
     protected void onResume() {
         super.onResume();
         if (!permissionRequested) {
-            checkAndProceed();
+            handler.postDelayed(this::checkOverlayPermission, 300);
         }
     }
 
-    private void startServicesThenMain() {
-        // Start services
-        Intent[] services = {
-            new Intent(this, com.carrpod.vertebrae.service.SessionManagerService.class),
-            new Intent(this, com.carrpod.vertebrae.service.HeartbeatService.class),
-            new Intent(this, com.carrpod.vertebrae.service.FloatingWindowService.class),
-            new Intent(this, com.carrpod.vertebrae.comm.InterSessionServer.class)
-        };
-
-        for (Intent service : services) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                startForegroundService(service);
-            } else {
-                startService(service);
+    private void startNextService() {
+        if (serviceStartIndex < serviceNames.length) {
+            String className = serviceNames[serviceStartIndex];
+            TextView tvStatus = findViewById(R.id.tv_splash_status);
+            String simpleName = className.substring(className.lastIndexOf('.') + 1);
+            tvStatus.setText("Starting " + simpleName + "...");
+            
+            try {
+                Class<?> clazz = Class.forName(className);
+                Intent serviceIntent = new Intent(this, clazz);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    startForegroundService(serviceIntent);
+                } else {
+                    startService(serviceIntent);
+                }
+            } catch (Exception e) {
+                // Log but continue
+                e.printStackTrace();
             }
+            
+            serviceStartIndex++;
+            // Next service after delay
+            handler.postDelayed(this::startNextService, 300);
+        } else {
+            // All services started, launch MainActivity
+            handler.postDelayed(this::launchMainActivity, 500);
         }
+    }
 
-        // Launch MainActivity
-        Intent mainIntent = new Intent(this, MainActivity.class);
-        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(mainIntent);
-        finish();
+    private void launchMainActivity() {
+        TextView tvStatus = findViewById(R.id.tv_splash_status);
+        tvStatus.setText("Launching MainActivity...");
+        
+        try {
+            Intent mainIntent = new Intent(this, MainActivity.class);
+            mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(mainIntent);
+            finish();
+        } catch (Exception e) {
+            e.printStackTrace();
+            tvStatus.setText("Error: " + e.getMessage());
+        }
     }
 }

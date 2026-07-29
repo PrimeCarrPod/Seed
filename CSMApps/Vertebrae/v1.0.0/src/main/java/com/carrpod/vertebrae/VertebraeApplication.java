@@ -1,14 +1,7 @@
 package com.carrpod.vertebrae;
 
 import android.app.Application;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Build;
 
-import com.carrpod.vertebrae.service.SessionManagerService;
-import com.carrpod.vertebrae.service.HeartbeatService;
-import com.carrpod.vertebrae.service.FloatingWindowService;
-import com.carrpod.vertebrae.comm.InterSessionServer;
 import com.carrpod.vertebrae.storage.SessionStorageManager;
 import com.carrpod.vertebrae.network.WebSocketManager;
 import com.carrpod.vertebrae.comm.SessionCommunicator;
@@ -26,10 +19,10 @@ public class VertebraeApplication extends Application {
         super.onCreate();
         instance = this;
 
+        // Initialize managers only - DO NOT start services here
+        // Services are started from SplashActivity after permissions granted
         SessionStorageManager.initialize(this);
         WebSocketManager.initialize(this);
         SessionCommunicator.initialize(this);
-        
-        // Services started from SplashActivity after permissions
     }
 }
