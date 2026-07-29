@@ -75,16 +75,20 @@ public final class R {
     public static final int tv_session_id=0x7f030018;
     public static final int tv_session_name=0x7f030019;
     public static final int tv_sessions_header=0x7f03001a;
-    public static final int webview_container=0x7f03001b;
-    public static final int window_border=0x7f03001c;
-    public static final int window_header=0x7f03001d;
-    public static final int window_title=0x7f03001e;
+    public static final int tv_splash_status=0x7f03001b;
+    public static final int tv_splash_subtitle=0x7f03001c;
+    public static final int tv_splash_title=0x7f03001d;
+    public static final int webview_container=0x7f03001e;
+    public static final int window_border=0x7f03001f;
+    public static final int window_header=0x7f030020;
+    public static final int window_title=0x7f030021;
   }
   public static final class layout {
     public static final int activity_main=0x7f040000;
-    public static final int floating_window=0x7f040001;
-    public static final int item_group_chip=0x7f040002;
-    public static final int item_session=0x7f040003;
+    public static final int activity_splash=0x7f040001;
+    public static final int floating_window=0x7f040002;
+    public static final int item_group_chip=0x7f040003;
+    public static final int item_session=0x7f040004;
   }
   public static final class menu {
     public static final int main_menu=0x7f050000;

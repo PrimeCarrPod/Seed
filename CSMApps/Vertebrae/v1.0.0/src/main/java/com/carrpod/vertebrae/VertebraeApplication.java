@@ -29,37 +29,7 @@ public class VertebraeApplication extends Application {
         SessionStorageManager.initialize(this);
         WebSocketManager.initialize(this);
         SessionCommunicator.initialize(this);
-
-        startCoreServices();
-    }
-
-    private void startCoreServices() {
-        Intent sessionManagerIntent = new Intent(this, SessionManagerService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startForegroundService(sessionManagerIntent);
-        } else {
-            startService(sessionManagerIntent);
-        }
-
-        Intent heartbeatIntent = new Intent(this, HeartbeatService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startForegroundService(heartbeatIntent);
-        } else {
-            startService(heartbeatIntent);
-        }
-
-        Intent floatingIntent = new Intent(this, FloatingWindowService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startForegroundService(floatingIntent);
-        } else {
-            startService(floatingIntent);
-        }
-
-        Intent interSessionIntent = new Intent(this, InterSessionServer.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            startForegroundService(interSessionIntent);
-        } else {
-            startService(interSessionIntent);
-        }
+        
+        // Services started from SplashActivity after permissions
     }
 }
