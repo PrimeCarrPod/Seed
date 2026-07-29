@@ -30,7 +30,8 @@
             android:textStyle="bold"
             android:textColor="@color/on_surface" />
 
-    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
 
     <TextView
         android:id="@+id/tv_session_id"
