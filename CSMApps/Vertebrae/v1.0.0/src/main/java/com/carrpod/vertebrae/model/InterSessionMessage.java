@@ -3,6 +3,8 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -147,6 +149,21 @@ public class InterSessionMessage implements Parcelable, Serializable {
             }
         };
 
+        // JSON serialization
+        public JSONObject toJson() {
+            JSONObject json = new JSONObject();
+            try {
+                json.put("name", name);
+                json.put("path", path);
+                json.put("size", size);
+                json.put("mimeType", mimeType);
+                json.put("hash", hash);
+            } catch (Exception e) {
+                // Ignore
+            }
+            return json;
+        }
+
         public String getName() { return name; }
         public void setName(String name) { this.name = name; }
         public String getPath() { return path; }
@@ -192,5 +209,42 @@ public class InterSessionMessage implements Parcelable, Serializable {
 
     public boolean isForSession(String sessionId) {
         return toSessionId == null || toSessionId.equals(sessionId);
+    }
+
+    // JSON serialization
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("id", id);
+            json.put("fromSessionId", fromSessionId);
+            json.put("toSessionId", toSessionId);
+            json.put("groupId", groupId);
+            json.put("type", type.name());
+            json.put("payload", payload);
+            json.put("timestamp", timestamp);
+            json.put("requiresAck", requiresAck);
+            json.put("ackId", ackId);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return json;
+    }
+
+    public static InterSessionMessage fromJson(JSONObject json) {
+        InterSessionMessage msg = new InterSessionMessage();
+        try {
+            msg.id = json.optString("id", UUID.randomUUID().toString());
+            msg.fromSessionId = json.optString("fromSessionId", "");
+            msg.toSessionId = json.optString("toSessionId", null);
+            msg.groupId = json.optString("groupId", "default");
+            msg.type = MessageType.valueOf(json.optString("type", "TEXT"));
+            msg.payload = json.optString("payload", "");
+            msg.timestamp = json.optLong("timestamp", System.currentTimeMillis());
+            msg.requiresAck = json.optBoolean("requiresAck", false);
+            msg.ackId = json.optString("ackId", null);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return msg;
     }
 }

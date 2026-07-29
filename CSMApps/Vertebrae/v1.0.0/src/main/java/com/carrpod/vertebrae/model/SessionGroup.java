@@ -3,6 +3,9 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -156,4 +159,60 @@ public class SessionGroup implements Parcelable, Serializable {
 
     public int getSortOrder() { return sortOrder; }
     public void setSortOrder(int sortOrder) { this.sortOrder = sortOrder; updatedAt = System.currentTimeMillis(); }
+
+    // JSON serialization
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("id", id);
+            json.put("name", name);
+            json.put("description", description);
+            json.put("color", color);
+            json.put("createdAt", createdAt);
+            json.put("updatedAt", updatedAt);
+            json.put("storagePath", storagePath);
+            json.put("expanded", expanded);
+            json.put("sortOrder", sortOrder);
+            JSONArray sessionIdsArray = new JSONArray();
+            for (String s : sessionIds) sessionIdsArray.put(s);
+            json.put("sessionIds", sessionIdsArray);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return json;
+    }
+
+    public static SessionGroup fromJson(JSONObject json) {
+        SessionGroup group = new SessionGroup();
+        try {
+            group.id = json.optString("id", UUID.randomUUID().toString());
+            group.name = json.optString("name", "Default Group");
+            group.description = json.optString("description", "");
+            group.color = json.optInt("color", 0xFF74B9FF);
+            group.createdAt = json.optLong("createdAt", System.currentTimeMillis());
+            group.updatedAt = json.optLong("updatedAt", System.currentTimeMillis());
+            group.storagePath = json.optString("storagePath", "");
+            group.expanded = json.optBoolean("expanded", true);
+            group.sortOrder = json.optInt("sortOrder", 0);
+            JSONArray sessionIdsArray = json.optJSONArray("sessionIds");
+            if (sessionIdsArray != null) {
+                group.sessionIds = new ArrayList<>();
+                for (int i = 0; i < sessionIdsArray.length(); i++) {
+                    group.sessionIds.add(sessionIdsArray.getString(i));
+                }
+            }
+        } catch (Exception e) {
+            // Ignore
+        }
+        return group;
+    }
+
+    // Convenience copy methods
+    public SessionGroup copyWithName(String name) {
+        return copyWith(name, null, null, null, null, null, null);
+    }
+
+    public SessionGroup copyWithColor(int color) {
+        return copyWith(null, null, color, null, null, null, null);
+    }
 }

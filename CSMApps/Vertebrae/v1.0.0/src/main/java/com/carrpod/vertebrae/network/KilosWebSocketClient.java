@@ -41,9 +41,8 @@ public class KilosWebSocketClient {
 
         String wsUrl = "wss://app.kilo.ai/cloud/chat?sessionId=" + sessionId;
         
-        httpClient.newWebSocketBuilder()
+httpClient.newWebSocketBuilder()
                 .buildAsync(URI.create(wsUrl), new WebSocket.Listener() {
-                    @Override
                     public void onOpen(WebSocket webSocket) {
                         KilosWebSocketClient.this.webSocket = webSocket;
                         isConnecting = false;
@@ -52,28 +51,24 @@ public class KilosWebSocketClient {
                         webSocket.request(1);
                     }
 
-                    @Override
                     public CompletionStage<?> onText(WebSocket webSocket, CharSequence data, boolean last) {
                         listener.onMessage(sessionId, data.toString());
                         webSocket.request(1);
                         return null;
                     }
 
-                    @Override
                     public CompletionStage<?> onBinary(WebSocket webSocket, byte[] data, boolean last) {
                         listener.onBinaryMessage(sessionId, data);
                         webSocket.request(1);
                         return null;
                     }
 
-                    @Override
                     public void onError(WebSocket webSocket, Throwable error) {
                         isConnecting = false;
                         Log.e(TAG, "Error: " + sessionId, error);
                         listener.onError(sessionId, error.getMessage() != null ? error.getMessage() : "Connection failed");
                     }
 
-                    @Override
                     public CompletionStage<?> onClose(WebSocket webSocket, int statusCode, String reason) {
                         KilosWebSocketClient.this.webSocket = null;
                         listener.onClosed(sessionId, statusCode, reason);

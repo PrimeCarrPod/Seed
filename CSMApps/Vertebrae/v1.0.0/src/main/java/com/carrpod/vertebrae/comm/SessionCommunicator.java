@@ -7,13 +7,17 @@ import android.util.Log;
 
 import com.carrpod.vertebrae.model.InterSessionMessage;
 import com.carrpod.vertebrae.model.KilosSession;
+import com.carrpod.vertebrae.model.WindowState;
 import com.carrpod.vertebrae.storage.SessionStorageManager;
-import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -27,7 +31,6 @@ public class SessionCommunicator {
 
     private final Context context;
     private final SessionStorageManager storage;
-    private final Gson gson = new Gson();
     private final ExecutorService executor = Executors.newSingleThreadExecutor();
     private final String localSessionId = "vertebrae_" + System.currentTimeMillis();
     private LocalSocket socket;
@@ -93,7 +96,7 @@ public class SessionCommunicator {
                     if (line.isEmpty()) continue;
 
                     try {
-                        InterSessionMessage message = gson.fromJson(line, InterSessionMessage.class);
+                        InterSessionMessage message = InterSessionMessage.fromJson(new JSONObject(line));
                         if (message != null && message.isForSession(localSessionId)) {
                             notifyMessage(message);
                         }
@@ -123,7 +126,7 @@ public class SessionCommunicator {
 
         executor.execute(() -> {
             try {
-                writer.write(gson.toJson(message));
+                writer.write(message.toJson().toString());
                 writer.newLine();
                 writer.flush();
             } catch (Exception e) {
@@ -148,14 +151,21 @@ public class SessionCommunicator {
         msg.setToSessionId(toSessionId);
         msg.setGroupId(groupId);
         msg.setType(InterSessionMessage.MessageType.COMMAND);
-        msg.setPayload(gson.toJson(new CommandPayload(command, params)));
+        try {
+            JSONObject payload = new JSONObject();
+            payload.put("command", command);
+            payload.put("params", new JSONObject(params));
+            msg.setPayload(payload.toString());
+        } catch (Exception e) {
+            Log.e(TAG, "Command payload error", e);
+        }
         send(msg);
     }
 
     public void sendFile(String groupId, java.io.File file, String toSessionId) {
         executor.execute(() -> {
             try {
-                java.security.MessageDigest digest = java.security.MessageDigest.getInstance("SHA-256");
+                MessageDigest digest = MessageDigest.getInstance("SHA-256");
                 byte[] hashBytes = digest.digest(java.nio.file.Files.readAllBytes(file.toPath()));
                 StringBuilder hash = new StringBuilder();
                 for (byte b : hashBytes) {
@@ -176,7 +186,7 @@ public class SessionCommunicator {
                 msg.setToSessionId(toSessionId);
                 msg.setGroupId(groupId);
                 msg.setType(InterSessionMessage.MessageType.FILE_TRANSFER);
-                msg.setPayload(gson.toJson(attachment));
+                msg.setPayload(attachment.toJson().toString());
                 msg.setFileAttachment(attachment);
                 send(msg);
             } catch (Exception e) {
@@ -201,7 +211,15 @@ public class SessionCommunicator {
         msg.setToSessionId(null);
         msg.setGroupId(groupId);
         msg.setType(InterSessionMessage.MessageType.HEARTBEAT);
-        msg.setPayload(gson.toJson(new SessionHeartbeatPayload(session.getId(), session.getStatus(), session.isFocused())));
+        try {
+            JSONObject payload = new JSONObject();
+            payload.put("sessionId", session.getId());
+            payload.put("status", session.getStatus().name());
+            payload.put("isFocused", session.isFocused());
+            msg.setPayload(payload.toString());
+        } catch (Exception e) {
+            Log.e(TAG, "Heartbeat payload error", e);
+        }
         send(msg);
     }
 
@@ -211,7 +229,11 @@ public class SessionCommunicator {
         msg.setToSessionId(null);
         msg.setGroupId(groupId);
         msg.setType(InterSessionMessage.MessageType.FOCUS_CHANGE);
-        msg.setPayload(gson.toJson(new FocusPayload(isFocused)));
+        try {
+            JSONObject payload = new JSONObject();
+            payload.put("focused", isFocused);
+            msg.setPayload(payload.toString());
+        } catch (Exception e) {}
         send(msg);
     }
 
@@ -221,67 +243,36 @@ public class SessionCommunicator {
         msg.setToSessionId(null);
         msg.setGroupId(groupId);
         msg.setType(InterSessionMessage.MessageType.WINDOW_STATE);
-        msg.setPayload(gson.toJson(state));
+        msg.setPayload(state.toJson().toString());
         send(msg);
     }
 
     private void notifyConnected() {
-        for (MessageListener listener : listeners) {
-            try { listener.onConnected(); } catch (Exception e) {}
+        for (MessageListener l : listeners) {
+            try { l.onConnected(); } catch (Exception e) {}
         }
     }
 
     private void notifyDisconnected() {
-        for (MessageListener listener : listeners) {
-            try { listener.onDisconnected(); } catch (Exception e) {}
+        for (MessageListener l : listeners) {
+            try { l.onDisconnected(); } catch (Exception e) {}
         }
     }
 
     private void notifyMessage(InterSessionMessage message) {
-        for (MessageListener listener : listeners) {
-            try { listener.onMessage(message); } catch (Exception e) {}
+        for (MessageListener l : listeners) {
+            try { l.onMessage(message); } catch (Exception e) {}
         }
     }
 
     private void notifyError(String error) {
-        for (MessageListener listener : listeners) {
-            try { listener.onError(error); } catch (Exception e) {}
+        for (MessageListener l : listeners) {
+            try { l.onError(error); } catch (Exception e) {}
         }
     }
 
     public void destroy() {
         disconnect();
         executor.shutdown();
-    }
-
-    // Payload classes
-    private static class CommandPayload {
-        public String command;
-        public java.util.Map<String, String> params;
-
-        CommandPayload(String command, java.util.Map<String, String> params) {
-            this.command = command;
-            this.params = params;
-        }
-    }
-
-    private static class SessionHeartbeatPayload {
-        public String sessionId;
-        public KilosSession.SessionStatus status;
-        public boolean isFocused;
-
-        SessionHeartbeatPayload(String sessionId, KilosSession.SessionStatus status, boolean isFocused) {
-            this.sessionId = sessionId;
-            this.status = status;
-            this.isFocused = isFocused;
-        }
-    }
-
-    private static class FocusPayload {
-        public boolean focused;
-
-        FocusPayload(boolean focused) {
-            this.focused = focused;
-        }
     }
 }

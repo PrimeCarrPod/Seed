@@ -39,6 +39,7 @@ public class SessionStorageManager {
         this.baseDir = new File(context.getExternalFilesDir(null), "Vertebrae/Sessions");
         this.sessionsFile = new File(baseDir, "sessions.json");
         this.groupsFile = new File(baseDir, "groups.json");
+        this.settingsFile = new File(baseDir, "settings.json");
         baseDir.mkdirs();
         loadCache();
     }
@@ -222,7 +223,7 @@ public class SessionStorageManager {
     }
 
     // Settings
-    public static class Settings {
+public static class Settings {
         public int heartbeatIntervalSeconds = 30;
         public int interSessionPort = 8888;
         public boolean autoReconnect = true;
@@ -231,7 +232,7 @@ public class SessionStorageManager {
         public String storagePath = "";
     }
 
-    private final File settingsFile = new File(baseDir, "settings.json");
+    private final File settingsFile;
 
     public void saveSettings(Settings settings) {
         try {

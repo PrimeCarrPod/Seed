@@ -12,10 +12,13 @@ import android.util.Log;
 import com.carrpod.vertebrae.model.InterSessionMessage;
 import com.carrpod.vertebrae.model.KilosSession;
 import com.carrpod.vertebrae.storage.SessionStorageManager;
-import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Map;
@@ -29,7 +32,6 @@ public class InterSessionServer extends Service {
     public static final String SOCKET_NAME = "vertebrae_intersession";
 
     private final SessionStorageManager storage = SessionStorageManager.getInstance();
-    private final Gson gson = new Gson();
     private final Map<String, LocalSocket> clientSockets = new ConcurrentHashMap<>();
     private LocalServerSocket serverSocket;
     private final ExecutorService executor = Executors.newCachedThreadPool();
@@ -91,9 +93,13 @@ public class InterSessionServer extends Service {
                     }
 
                     if (sessionId != null) {
-                        InterSessionMessage message = gson.fromJson(line, InterSessionMessage.class);
-                        if (message != null) {
-                            deliverMessage(message, writer);
+                        try {
+                            InterSessionMessage message = InterSessionMessage.fromJson(new JSONObject(line));
+                            if (message != null) {
+                                deliverMessage(message);
+                            }
+                        } catch (Exception e) {
+                            Log.e(TAG, "Parse error", e);
                         }
                     }
                 }
@@ -108,11 +114,11 @@ public class InterSessionServer extends Service {
         });
     }
 
-    private void deliverMessage(InterSessionMessage message, BufferedWriter senderWriter) {
+    private void deliverMessage(InterSessionMessage message) {
         executor.execute(() -> {
             // Store for offline delivery
-            storage.saveReceivedFile(message.getGroupId(), message.getId() + ".json", 
-                new java.io.ByteArrayInputStream(gson.toJson(message).getBytes()));
+            storage.saveReceivedFile(message.getGroupId(), message.getId() + ".json",
+                    new ByteArrayInputStream(message.toJson().toString().getBytes()));
 
             // Try immediate delivery
             if (message.getToSessionId() != null) {
@@ -120,7 +126,7 @@ public class InterSessionServer extends Service {
                 if (target != null) {
                     try {
                         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(target.getOutputStream()));
-                        out.write(gson.toJson(message));
+                        out.write(message.toJson().toString());
                         out.newLine();
                         out.flush();
                     } catch (Exception e) {
@@ -133,7 +139,7 @@ public class InterSessionServer extends Service {
                     if (!entry.getKey().equals(message.getFromSessionId())) {
                         try {
                             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(entry.getValue().getOutputStream()));
-                            out.write(gson.toJson(message));
+                            out.write(message.toJson().toString());
                             out.newLine();
                             out.flush();
                         } catch (Exception e) {
@@ -150,8 +156,19 @@ public class InterSessionServer extends Service {
             try {
                 KilosSession session = storage.loadSession(sessionId);
                 if (session != null) {
-                    // Load messages since last heartbeat
-                    // This is simplified - in production you'd track per-session last read
+                    // Send welcome message
+                    InterSessionMessage welcome = new InterSessionMessage();
+                    welcome.setFromSessionId("system");
+                    welcome.setToSessionId(sessionId);
+                    welcome.setGroupId(session.getGroupId());
+                    welcome.setType(InterSessionMessage.MessageType.SESSION_STATUS);
+                    JSONObject payload = new JSONObject();
+                    payload.put("status", "connected");
+                    payload.put("isFocused", true);
+                    welcome.setPayload(payload.toString());
+                    writer.write(welcome.toJson().toString());
+                    writer.newLine();
+                    writer.flush();
                 }
             } catch (Exception e) {
                 Log.e(TAG, "Send pending error", e);
@@ -160,7 +177,7 @@ public class InterSessionServer extends Service {
     }
 
     public void sendMessage(InterSessionMessage message) {
-        deliverMessage(message, null);
+        deliverMessage(message);
     }
 
     @Override

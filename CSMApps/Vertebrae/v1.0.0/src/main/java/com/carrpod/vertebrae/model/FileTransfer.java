@@ -3,6 +3,8 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -128,4 +130,25 @@ public class FileTransfer implements Parcelable, Serializable {
 
     public long getCompletedAt() { return completedAt; }
     public void setCompletedAt(long completedAt) { this.completedAt = completedAt; }
+
+    // JSON serialization
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("id", id);
+            json.put("fromSessionId", fromSessionId);
+            json.put("toSessionId", toSessionId);
+            json.put("fileName", fileName);
+            json.put("filePath", filePath);
+            json.put("fileSize", fileSize);
+            json.put("mimeType", mimeType);
+            json.put("status", status.name());
+            json.put("progress", progress);
+            json.put("startedAt", startedAt);
+            json.put("completedAt", completedAt);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return json;
+    }
 }

@@ -5,6 +5,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
+import com.carrpod.vertebrae.service.SessionManagerService;
+import com.carrpod.vertebrae.service.HeartbeatService;
+import com.carrpod.vertebrae.service.FloatingWindowService;
+import com.carrpod.vertebrae.comm.InterSessionServer;
+import com.carrpod.vertebrae.storage.SessionStorageManager;
+import com.carrpod.vertebrae.network.WebSocketManager;
+import com.carrpod.vertebrae.comm.SessionCommunicator;
+
 public class VertebraeApplication extends Application {
 
     private static VertebraeApplication instance;
@@ -18,7 +26,10 @@ public class VertebraeApplication extends Application {
         super.onCreate();
         instance = this;
 
-        // Initialize core services
+        SessionStorageManager.initialize(this);
+        WebSocketManager.initialize(this);
+        SessionCommunicator.initialize(this);
+
         startCoreServices();
     }
 

@@ -3,6 +3,8 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -252,4 +254,76 @@ public class KilosSession implements Parcelable, Serializable {
 
     public Map<String, String> getHeaders() { return headers; }
     public void setHeaders(Map<String, String> headers) { this.headers = headers; }
+
+    // JSON serialization
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("id", id);
+            json.put("sessionId", sessionId);
+            json.put("displayName", displayName);
+            json.put("groupId", groupId);
+            json.put("url", url);
+            json.put("status", status.name());
+            json.put("createdAt", createdAt);
+            json.put("lastConnectedAt", lastConnectedAt);
+            json.put("lastHeartbeatAt", lastHeartbeatAt);
+            json.put("heartbeatIntervalSeconds", heartbeatIntervalSeconds);
+            json.put("isAutoReconnect", isAutoReconnect);
+            json.put("isFocused", isFocused);
+            json.put("windowX", windowX);
+            json.put("windowY", windowY);
+            json.put("windowWidth", windowWidth);
+            json.put("windowHeight", windowHeight);
+            json.put("isFloating", isFloating);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return json;
+    }
+
+    public static KilosSession fromJson(JSONObject json) {
+        KilosSession session = new KilosSession();
+        try {
+            session.id = json.optString("id", UUID.randomUUID().toString());
+            session.sessionId = json.optString("sessionId", "");
+            session.displayName = json.optString("displayName", "");
+            session.groupId = json.optString("groupId", "default");
+            session.url = json.optString("url", "https://app.kilo.ai/cloud/chat?sessionId=");
+            session.status = SessionStatus.valueOf(json.optString("status", "DISCONNECTED"));
+            session.createdAt = json.optLong("createdAt", System.currentTimeMillis());
+            session.lastConnectedAt = json.optLong("lastConnectedAt", 0);
+            session.lastHeartbeatAt = json.optLong("lastHeartbeatAt", 0);
+            session.heartbeatIntervalSeconds = json.optInt("heartbeatIntervalSeconds", 30);
+            session.isAutoReconnect = json.optBoolean("isAutoReconnect", true);
+            session.isFocused = json.optBoolean("isFocused", false);
+            session.windowX = (float) json.optDouble("windowX", 0);
+            session.windowY = (float) json.optDouble("windowY", 0);
+            session.windowWidth = json.optInt("windowWidth", 800);
+            session.windowHeight = json.optInt("windowHeight", 600);
+            session.isFloating = json.optBoolean("isFloating", true);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return session;
+    }
+
+    // Convenience copy methods
+    public KilosSession copyWithStatus(SessionStatus status) {
+        return copyWith(status, null, null, null, null, null, null, null, null, null);
+    }
+
+    public KilosSession copyWithFocused(boolean focused) {
+        return copyWith(null, focused, null, null, null, null, null, null, null, null);
+    }
+
+    public KilosSession copyWithGroupId(String groupId) {
+        KilosSession copy = copy();
+        copy.groupId = groupId;
+        return copy;
+    }
+
+    public KilosSession copy() {
+        return copyWith(null, null, null, null, null, null, null, null, null, null);
+    }
 }

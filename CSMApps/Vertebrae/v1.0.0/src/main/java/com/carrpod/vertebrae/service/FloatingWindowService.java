@@ -8,9 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Build;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Looper;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -18,24 +16,24 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.core.app.NotificationCompat;
-
 import com.carrpod.vertebrae.R;
 import com.carrpod.vertebrae.model.KilosSession;
 import com.carrpod.vertebrae.storage.SessionStorageManager;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class FloatingWindowService extends Service {
 
     private static final String TAG = "FloatingWindowService";
     private SessionStorageManager storage;
     private WindowManager windowManager;
-    private final Map<String, FloatingWindow> windows = new ConcurrentHashMap<>();
+    private final Map<String, FloatingWindow> windows = new HashMap<>();
 
     @Override
     public void onCreate() {
@@ -61,20 +59,23 @@ public class FloatingWindowService extends Service {
     }
 
     private void startForegroundService() {
-        Notification notification = new NotificationCompat.Builder(this, "vertebrae_floating")
+        Notification notification = new Notification.Builder(this, "vertebrae_floating")
                 .setContentTitle(getString(R.string.app_name))
                 .setContentText(getString(R.string.floating_windows_active))
                 .setSmallIcon(R.drawable.ic_vertebrae_foreground)
                 .setOngoing(true)
-                .setPriority(NotificationCompat.PRIORITY_LOW)
-                .setCategory(NotificationCompat.CATEGORY_SERVICE)
+                .setPriority(Notification.PRIORITY_LOW)
+                .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
+
         startForeground(1003, notification);
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent == null) return START_STICKY;
+        if (intent == null || intent.getAction() == null) {
+            return START_STICKY;
+        }
 
         String action = intent.getAction();
         String sessionId = intent.getStringExtra("session_id");
@@ -101,81 +102,81 @@ public class FloatingWindowService extends Service {
     private void createWindow(String sessionId) {
         if (windows.containsKey(sessionId)) return;
 
-        storage.loadSession(sessionId).await(session -> {
-            if (session == null) return;
+        final KilosSession session = storage.loadSession(sessionId);
+        if (session == null) return;
 
-            LinearLayout rootView = new LinearLayout(this);
-            rootView.setOrientation(LinearLayout.VERTICAL);
-            rootView.setBackgroundColor(getColor(R.color.surface));
-            rootView.setLayoutParams(new FrameLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        LinearLayout rootView = new LinearLayout(this);
+        rootView.setOrientation(LinearLayout.VERTICAL);
+        rootView.setBackgroundColor(getColor(R.color.surface));
+        rootView.setLayoutParams(new FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-            // Header
-            LinearLayout header = new LinearLayout(this);
-            header.setId(View.generateViewId());
-            header.setBackgroundColor(getColor(R.color.surface_elevated));
-            header.setPadding(12, 0, 12, 0);
-            header.setGravity(Gravity.CENTER_VERTICAL);
-            header.setLayoutParams(new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, 40));
+        // Header
+        LinearLayout header = new LinearLayout(this);
+        header.setId(R.id.window_header);
+        header.setBackgroundColor(getColor(R.color.surface_elevated));
+        header.setPadding(12, 0, 12, 0);
+        header.setGravity(Gravity.CENTER_VERTICAL);
+        header.setLayoutParams(new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, 40));
 
-            TextView title = new TextView(this);
-            title.setText(session.getDisplayName());
-            title.setTextColor(getColor(R.color.on_surface));
-            title.setTextSize(14);
-            title.setTypeface(null, android.graphics.Typeface.BOLD);
-            title.setEllipsize(TextUtils.TruncateAt.END);
-            title.setMaxLines(1);
-            title.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
-            header.addView(title);
+        TextView title = new TextView(this);
+        title.setId(R.id.window_title);
+        title.setText(session.getDisplayName());
+        title.setTextColor(getColor(R.color.on_surface));
+        title.setTextSize(14);
+        title.setTypeface(null, android.graphics.Typeface.BOLD);
+        title.setEllipsize(android.text.TextUtils.TruncateAt.END);
+        title.setMaxLines(1);
+        title.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
+        header.addView(title);
 
-            addWindowButton(header, "−", "Minimize", v -> minimizeWindow(sessionId));
-            addWindowButton(header, "□", "Maximize", v -> maximizeWindow(sessionId));
-            addWindowButton(header, "×", "Close", v -> closeWindow(sessionId));
+        addWindowButton(header, "−", "Minimize", v -> minimizeWindow(sessionId));
+        addWindowButton(header, "□", "Maximize", v -> maximizeWindow(sessionId));
+        addWindowButton(header, "×", "Close", v -> closeWindow(sessionId));
 
-            rootView.addView(header);
+        rootView.addView(header);
 
-            // WebView container
-            FrameLayout webViewContainer = new FrameLayout(this);
-            webViewContainer.setId(R.id.webview_container);
-            webViewContainer.setLayoutParams(new LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f));
-            rootView.addView(webViewContainer);
+        // WebView container
+        FrameLayout webViewContainer = new FrameLayout(this);
+        webViewContainer.setId(R.id.webview_container);
+        webViewContainer.setLayoutParams(new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f));
+        rootView.addView(webViewContainer);
 
-            // Resize handle
-            ImageView resizeHandle = new ImageView(this);
-            resizeHandle.setId(R.id.resize_handle);
-            resizeHandle.setImageResource(R.drawable.ic_resize_handle);
-            resizeHandle.setAlpha(0.3f);
-            resizeHandle.setLayoutParams(new LinearLayout.LayoutParams(
-                    24, 24, Gravity.END | Gravity.BOTTOM));
-            resizeHandle.setPadding(4, 4, 4, 4);
-            rootView.addView(resizeHandle);
+        // Resize handle
+        ImageView resizeHandle = new ImageView(this);
+        resizeHandle.setId(R.id.resize_handle);
+        resizeHandle.setImageResource(R.drawable.ic_resize_handle);
+        resizeHandle.setAlpha(0.3f);
+        resizeHandle.setLayoutParams(new LinearLayout.LayoutParams(
+                24, 24, Gravity.END | Gravity.BOTTOM));
+        resizeHandle.setPadding(4, 4, 4, 4);
+        rootView.addView(resizeHandle);
 
-            WindowManager.LayoutParams params = new WindowManager.LayoutParams(
-                    session.getWindowWidth(),
-                    session.getWindowHeight(),
-                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
-                            ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
-                            : WindowManager.LayoutParams.TYPE_PHONE,
-                    WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
-                            | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
-                            | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
-                    PixelFormat.TRANSLUCENT
-            );
-            params.gravity = Gravity.TOP | Gravity.START;
-            params.x = (int) session.getWindowX();
-            params.y = (int) session.getWindowY();
+        WindowManager.LayoutParams params = new WindowManager.LayoutParams(
+                session.getWindowWidth(),
+                session.getWindowHeight(),
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
+                        ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
+                        : WindowManager.LayoutParams.TYPE_PHONE,
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+                        | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
+                        | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
+                PixelFormat.TRANSLUCENT
+        );
+        params.gravity = Gravity.TOP | Gravity.START;
+        params.x = (int) session.getWindowX();
+        params.y = (int) session.getWindowY();
 
-            windowManager.addView(rootView, params);
+        windowManager.addView(rootView, params);
 
-            FloatingWindow window = new FloatingWindow(session, rootView, params, header, webViewContainer);
-            windows.put(sessionId, window);
-        });
+        FloatingWindow window = new FloatingWindow(session, rootView, params, header, webViewContainer);
+        windows.put(sessionId, window);
     }
 
     private void addWindowButton(LinearLayout parent, String text, String desc, View.OnClickListener listener) {
-        Button btn = new Button(this);
+        android.widget.Button btn = new android.widget.Button(this);
         btn.setText(text);
         btn.setTextSize(14);
         btn.setTextColor(getColor(R.color.on_surface));

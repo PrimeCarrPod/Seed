@@ -8,9 +8,16 @@
     <string name="heartbeat_channel_id">vertebrae_heartbeat</string>
     <string name="heartbeat_channel_name">Heartbeat Service</string>
     <string name="heartbeat_channel_desc">Keeps kilo.ai sessions alive</string>
+    <string name="heartbeat_service_title">Heartbeat Service</string>
+    <string name="heartbeat_service_running">Sending heartbeats to kilo.ai</string>
     <string name="intersession_channel_id">vertebrae_intersession</string>
     <string name="intersession_channel_name">Inter-Session Comms</string>
     <string name="intersession_channel_desc">Local session communication</string>
+    <string name="floating_channel_id">vertebrae_floating</string>
+    <string name="floating_channel_name">Floating Windows</string>
+    <string name="floating_channel_desc">Manages floating terminal windows</string>
+    <string name="floating_windows_active">Floating windows active</string>
+    <string name="service_running">Managing sessions</string>
     <string name="perm_draw_overlays">Draw over other apps</string>
     <string name="perm_draw_overlays_desc">Required for floating session windows</string>
     <string name="session_group_default">Default Group</string>

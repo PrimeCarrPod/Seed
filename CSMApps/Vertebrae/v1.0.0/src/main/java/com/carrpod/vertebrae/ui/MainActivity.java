@@ -1,41 +1,31 @@
 package com.carrpod.vertebrae.ui;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.carrpod.vertebrae.R;
 import com.carrpod.vertebrae.comm.SessionCommunicator;
@@ -50,8 +40,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MainActivity extends AppCompatActivity implements
-        SessionCommunicator.MessageListener {
+public class MainActivity extends Activity implements SessionCommunicator.MessageListener {
 
     private static final int OVERLAY_PERMISSION_REQUEST = 1001;
     private static final String TAG = "MainActivity";
@@ -60,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements
     private SessionCommunicator communicator;
     private Set<String> expandedGroups = new HashSet<>();
 
-    private RecyclerView rvGroups;
-    private RecyclerView rvSessions;
+    private ListView lvGroups;
+    private ListView lvSessions;
     private View emptyState;
     private GroupsAdapter groupsAdapter;
     private SessionsAdapter sessionsAdapter;
@@ -76,20 +65,37 @@ public class MainActivity extends AppCompatActivity implements
         communicator = SessionCommunicator.getInstance();
         communicator.addListener(this);
 
-        setupToolbar();
-        setupRecyclerViews();
-        setupFab();
+        setupViews();
         checkOverlayPermission();
         loadData();
         communicator.connect();
     }
 
-    private void setupToolbar() {
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayShowTitleEnabled(true);
-        }
+    private void setupViews() {
+        // Toolbar
+        android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.app_name);
+        toolbar.setSubtitle("Kilo.ai Session Manager");
+        setActionBar(toolbar);
+
+        // Groups ListView
+        lvGroups = findViewById(R.id.lv_groups);
+        groupsAdapter = new GroupsAdapter();
+        lvGroups.setAdapter(groupsAdapter);
+        lvGroups.setOnItemClickListener(this::onGroupClick);
+        lvGroups.setOnItemLongClickListener(this::onGroupLongClick);
+
+        // Sessions ListView
+        lvSessions = findViewById(R.id.lv_sessions);
+        sessionsAdapter = new SessionsAdapter();
+        lvSessions.setAdapter(sessionsAdapter);
+        lvSessions.setOnItemClickListener(this::onSessionClick);
+        lvSessions.setOnItemLongClickListener(this::onSessionLongClick);
+
+        emptyState = findViewById(R.id.empty_state);
+
+        // FAB
+        findViewById(R.id.fab_add_session).setOnClickListener(v -> showNewSessionDialog());
     }
 
     @Override
@@ -99,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_new_group) {
             showNewGroupDialog();
@@ -117,31 +123,9 @@ public class MainActivity extends AppCompatActivity implements
         return super.onOptionsItemSelected(item);
     }
 
-    private void setupRecyclerViews() {
-        rvGroups = findViewById(R.id.rv_groups);
-        rvGroups.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        groupsAdapter = new GroupsAdapter(this::onGroupClick, this::onGroupLongClick, expandedGroups);
-        rvGroups.setAdapter(groupsAdapter);
-
-        rvSessions = findViewById(R.id.rv_sessions);
-        rvSessions.setLayoutManager(new LinearLayoutManager(this));
-        sessionsAdapter = new SessionsAdapter(
-                this::onSessionClick,
-                this::onSessionLongClick,
-                this::onSessionFocusChange
-        );
-        rvSessions.setAdapter(sessionsAdapter);
-
-        emptyState = findViewById(R.id.empty_state);
-    }
-
-    private void setupFab() {
-        findViewById(R.id.fab_add_session).setOnClickListener(v -> showNewSessionDialog());
-    }
-
     private void loadData() {
         List<SessionGroup> groups = storage.loadAllGroups();
-        groupsAdapter.submitList(groups);
+        groupsAdapter.setGroups(groups);
 
         List<KilosSession> sessions;
         if (currentGroupFilter != null) {
@@ -149,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements
         } else {
             sessions = storage.loadAllSessions();
         }
-        sessionsAdapter.submitList(sessions);
+        sessionsAdapter.setSessions(sessions);
         updateEmptyState(sessions.isEmpty());
     }
 
@@ -157,41 +141,42 @@ public class MainActivity extends AppCompatActivity implements
         if (emptyState != null) {
             emptyState.setVisibility(isEmpty ? View.VISIBLE : View.GONE);
         }
-        rvSessions.setVisibility(isEmpty ? View.GONE : View.VISIBLE);
+        lvSessions.setVisibility(isEmpty ? View.GONE : View.VISIBLE);
     }
 
-    private void onGroupClick(String groupId) {
-        if (expandedGroups.contains(groupId)) {
-            expandedGroups.remove(groupId);
+    private void onGroupClick(AdapterView<?> parent, View view, int position, long id) {
+        SessionGroup group = groupsAdapter.getItem(position);
+        if (expandedGroups.contains(group.getId())) {
+            expandedGroups.remove(group.getId());
         } else {
-            expandedGroups.add(groupId);
+            expandedGroups.add(group.getId());
         }
         groupsAdapter.notifyDataSetChanged();
     }
 
-    private void onGroupLongClick(SessionGroup group) {
+    private boolean onGroupLongClick(AdapterView<?> parent, View view, int position, long id) {
+        SessionGroup group = groupsAdapter.getItem(position);
         showGroupOptions(group);
+        return true;
     }
 
-    private void onSessionClick(KilosSession session) {
-        openFloatingWindow(session);
+    private void onSessionClick(AdapterView<?> parent, View view, int position, long id) {
+        KilosSession session = sessionsAdapter.getItem(position);
+        if (session != null) {
+            openFloatingWindow(session);
+        }
     }
 
-    private void onSessionLongClick(KilosSession session) {
-        showSessionOptions(session);
-    }
-
-    private void onSessionFocusChange(KilosSession session, boolean focused) {
-        KilosSession updated = session.copyWith(
-                null, focused, null, null, null, null, null, null, null, null
-        );
-        storage.saveSession(updated);
-        // Notify other windows
-        communicator.sendFocusChange(session.getGroupId(), session.getId(), focused);
+    private boolean onSessionLongClick(AdapterView<?> parent, View view, int position, long id) {
+        KilosSession session = sessionsAdapter.getItem(position);
+        if (session != null) {
+            showSessionOptions(session);
+        }
+        return true;
     }
 
     private void showNewSessionDialog() {
-        EditText input = new EditText(this);
+        final EditText input = new EditText(this);
         input.setHint(getString(R.string.dialog_new_session_hint));
         input.setInputType(android.text.InputType.TYPE_CLASS_TEXT);
 
@@ -247,9 +232,7 @@ public class MainActivity extends AppCompatActivity implements
 
     private void disconnectSession(KilosSession session) {
         FloatingWindowService.closeWindow(this, session.getId());
-        KilosSession updated = session.copyWith(
-                KilosSession.SessionStatus.DISCONNECTED, null, null, null, null, null, null, null, null, null
-        );
+        KilosSession updated = session.copyWithStatus(KilosSession.SessionStatus.DISCONNECTED);
         storage.saveSession(updated);
         loadData();
     }
@@ -275,15 +258,13 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void renameGroup(SessionGroup group) {
-        EditText input = new EditText(this);
+        final EditText input = new EditText(this);
         input.setText(group.getName());
         new AlertDialog.Builder(this)
                 .setTitle("Rename Group")
                 .setView(input)
                 .setPositiveButton(android.R.string.ok, (dialog, which) -> {
-                    SessionGroup updated = group.copyWith(
-                            input.getText().toString(), null, null, null, null, null, null
-                    );
+                    SessionGroup updated = group.copyWithName(input.getText().toString());
                     storage.saveGroup(updated);
                     loadData();
                 })
@@ -298,7 +279,7 @@ public class MainActivity extends AppCompatActivity implements
         new AlertDialog.Builder(this)
                 .setTitle("Group Color")
                 .setSingleChoiceItems(colorNames, 0, (dialog, which) -> {
-                    SessionGroup updated = group.copyWith(null, null, colors[which], null, null, null, null);
+                    SessionGroup updated = group.copyWithColor(colors[which]);
                     storage.saveGroup(updated);
                     loadData();
                     dialog.dismiss();
@@ -322,7 +303,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void showNewGroupDialog() {
-        EditText input = new EditText(this);
+        final EditText input = new EditText(this);
         input.setHint(getString(R.string.dialog_new_group_hint));
         new AlertDialog.Builder(this)
                 .setTitle(R.string.dialog_new_group_title)
@@ -340,17 +321,14 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void showImportSessionDialog() {
-        // TODO: Implement session import from file
         toast("Import not yet implemented");
     }
 
     private void exportSessions() {
-        // TODO: Implement session export to file
         toast("Export not yet implemented");
     }
 
     private void showSettingsDialog() {
-        // TODO: Implement settings
         toast("Settings not yet implemented");
     }
 
@@ -407,102 +385,74 @@ public class MainActivity extends AppCompatActivity implements
         runOnUiThread(() -> Log.e(TAG, "Comm error: " + error));
     }
 
-    // Adapters
-    private static class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.ViewHolder> {
-        private final java.util.function.Consumer<String> onClick;
-        private final java.util.function.Consumer<SessionGroup> onLongClick;
-        private final Set<String> expandedGroups;
-        private List<SessionGroup> groups = new ArrayList<>();
+    private void onSessionFocusChange(KilosSession session, boolean focused) {
+        KilosSession updated = session.copyWithFocused(focused);
+        storage.saveSession(updated);
+        communicator.sendFocusChange(session.getGroupId(), session.getId(), focused);
+    }
 
-        GroupsAdapter(java.util.function.Consumer<String> onClick,
-                      java.util.function.Consumer<SessionGroup> onLongClick,
-                      Set<String> expandedGroups) {
-            this.onClick = onClick;
-            this.onLongClick = onLongClick;
-            this.expandedGroups = expandedGroups;
+    // Adapters
+    private class GroupsAdapter extends ArrayAdapter<SessionGroup> {
+        GroupsAdapter() {
+            super(MainActivity.this, 0, new ArrayList<>());
         }
 
-        void submitList(List<SessionGroup> newGroups) {
-            groups.clear();
-            groups.addAll(newGroups);
+        void setGroups(List<SessionGroup> groups) {
+            clear();
+            addAll(groups);
             notifyDataSetChanged();
         }
 
-        @NonNull
         @Override
-        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.item_group_chip, parent, false);
-            return new ViewHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-            SessionGroup group = groups.get(position);
+        public View getView(int position, View convertView, ViewGroup parent) {
+            SessionGroup group = getItem(position);
             boolean isExpanded = expandedGroups.contains(group.getId());
 
-            holder.tvName.setText(group.getName());
-            holder.tvName.setTextColor(group.getColor());
-            holder.indicator.setBackgroundColor(group.getColor());
-
-            holder.itemView.setOnClickListener(v -> onClick.accept(group.getId()));
-            holder.itemView.setOnLongClickListener(v -> { onLongClick.accept(group); return true; });
-        }
-
-        @Override
-        public int getItemCount() {
-            return groups.size();
-        }
-
-        static class ViewHolder extends RecyclerView.ViewHolder {
-            TextView tvName;
-            View indicator;
-
-            ViewHolder(View itemView) {
-                super(itemView);
-                tvName = itemView.findViewById(R.id.tv_group_name);
-                indicator = itemView.findViewById(R.id.group_indicator);
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_group_chip, parent, false);
             }
+
+            TextView tvName = convertView.findViewById(R.id.tv_group_name);
+            View indicator = convertView.findViewById(R.id.group_indicator);
+
+            tvName.setText(group.getName());
+            tvName.setTextColor(group.getColor());
+            indicator.setBackgroundColor(group.getColor());
+
+            return convertView;
         }
     }
 
-    private static class SessionsAdapter extends RecyclerView.Adapter<SessionsAdapter.ViewHolder> {
-        private final java.util.function.Consumer<KilosSession> onClick;
-        private final java.util.function.Consumer<KilosSession> onLongClick;
-        private final java.util.function.BiConsumer<KilosSession, Boolean> onFocusChange;
-        private List<KilosSession> sessions = new ArrayList<>();
-
-        SessionsAdapter(java.util.function.Consumer<KilosSession> onClick,
-                        java.util.function.Consumer<KilosSession> onLongClick,
-                        java.util.function.BiConsumer<KilosSession, Boolean> onFocusChange) {
-            this.onClick = onClick;
-            this.onLongClick = onLongClick;
-            this.onFocusChange = onFocusChange;
+    private class SessionsAdapter extends ArrayAdapter<KilosSession> {
+        SessionsAdapter() {
+            super(MainActivity.this, 0, new ArrayList<>());
         }
 
-        void submitList(List<KilosSession> newSessions) {
-            sessions.clear();
-            sessions.addAll(newSessions);
+        void setSessions(List<KilosSession> sessions) {
+            clear();
+            addAll(sessions);
             notifyDataSetChanged();
         }
 
-        @NonNull
         @Override
-        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.item_session, parent, false);
-            return new ViewHolder(view);
-        }
+        public View getView(int position, View convertView, ViewGroup parent) {
+            KilosSession session = getItem(position);
 
-        @Override
-        public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-            KilosSession session = sessions.get(position);
+            if (convertView == null) {
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_session, parent, false);
+            }
 
-            holder.tvName.setText(session.getDisplayName());
-            holder.tvSessionId.setText("ses_" + (session.getSessionId().length() > 8 ?
-                    session.getSessionId().substring(0, 8) : session.getSessionId()));
-            holder.tvGroup.setText(session.getGroupId());
-            holder.tvStatus.setText(session.getStatus().name());
+            TextView tvName = convertView.findViewById(R.id.tv_session_name);
+            TextView tvSessionId = convertView.findViewById(R.id.tv_session_id);
+            TextView tvGroup = convertView.findViewById(R.id.tv_group_name);
+            View statusIndicator = convertView.findViewById(R.id.status_indicator);
+            android.widget.ImageButton btnFocus = convertView.findViewById(R.id.btn_focus);
+
+            tvName.setText(session.getDisplayName());
+            String shortId = session.getSessionId();
+            if (shortId.length() > 8) shortId = shortId.substring(0, 8);
+            tvSessionId.setText("ses_" + shortId);
+            tvGroup.setText(session.getGroupId());
 
             int statusColor;
             switch (session.getStatus()) {
@@ -518,41 +468,12 @@ public class MainActivity extends AppCompatActivity implements
                 default:
                     statusColor = 0xFF8B949E;
             }
-            holder.statusIndicator.setBackgroundColor(statusColor);
+            statusIndicator.setBackgroundColor(statusColor);
 
-            holder.btnFocus.setImageResource(
-                    session.isFocused() ? android.R.drawable.star_on : android.R.drawable.star_off
-            );
-            holder.btnFocus.setOnClickListener(v ->
-                    onFocusChange.accept(session, !session.isFocused())
-            );
+            btnFocus.setImageResource(session.isFocused() ? android.R.drawable.star_on : android.R.drawable.star_off);
+            btnFocus.setOnClickListener(v -> onSessionFocusChange(session, !session.isFocused()));
 
-            holder.itemView.setOnClickListener(v -> onClick.accept(session));
-            holder.itemView.setOnLongClickListener(v -> { onLongClick.accept(session); return true; });
-        }
-
-        @Override
-        public int getItemCount() {
-            return sessions.size();
-        }
-
-        static class ViewHolder extends RecyclerView.ViewHolder {
-            TextView tvName;
-            TextView tvSessionId;
-            TextView tvGroup;
-            TextView tvStatus;
-            ImageButton btnFocus;
-            View statusIndicator;
-
-            ViewHolder(View itemView) {
-                super(itemView);
-                tvName = itemView.findViewById(R.id.tv_session_name);
-                tvSessionId = itemView.findViewById(R.id.tv_session_id);
-                tvGroup = itemView.findViewById(R.id.tv_group_name);
-                tvStatus = itemView.findViewById(R.id.tv_session_status);
-                btnFocus = itemView.findViewById(R.id.btn_focus);
-                statusIndicator = itemView.findViewById(R.id.status_indicator);
-            }
+            return convertView;
         }
     }
 }

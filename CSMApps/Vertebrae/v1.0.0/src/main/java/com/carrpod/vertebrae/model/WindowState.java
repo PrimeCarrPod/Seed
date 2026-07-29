@@ -3,6 +3,8 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONObject;
+
 import java.io.Serializable;
 
 public class WindowState implements Parcelable, Serializable {
@@ -93,4 +95,36 @@ public class WindowState implements Parcelable, Serializable {
 
     public int getZOrder() { return zOrder; }
     public void setZOrder(int zOrder) { this.zOrder = zOrder; }
+
+    // JSON deserialization
+    public static WindowState fromJson(JSONObject json) {
+        WindowState ws = new WindowState();
+        try {
+            ws.x = (float) json.optDouble("x", 0);
+            ws.y = (float) json.optDouble("y", 0);
+            ws.width = json.optInt("width", 800);
+            ws.height = json.optInt("height", 600);
+            ws.isVisible = json.optBoolean("isVisible", true);
+            ws.isFocused = json.optBoolean("isFocused", false);
+            ws.zOrder = json.optInt("zOrder", 0);
+        } catch (Exception e) {}
+        return ws;
+    }
+
+    // JSON serialization
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("x", x);
+            json.put("y", y);
+            json.put("width", width);
+            json.put("height", height);
+            json.put("isVisible", isVisible);
+            json.put("isFocused", isFocused);
+            json.put("zOrder", zOrder);
+        } catch (Exception e) {
+            // Ignore
+        }
+        return json;
+    }
 }

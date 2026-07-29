@@ -3,6 +3,8 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -77,4 +79,27 @@ public class SessionHeartbeat implements Parcelable, Serializable {
 
     public WindowState getWindowState() { return windowState; }
     public void setWindowState(WindowState windowState) { this.windowState = windowState; }
+
+    // JSON methods
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("sessionId", sessionId);
+            json.put("timestamp", timestamp);
+            json.put("status", status.name());
+            json.put("isFocused", isFocused);
+        } catch (Exception e) {}
+        return json;
+    }
+
+    public static SessionHeartbeat fromJson(JSONObject json) {
+        SessionHeartbeat hb = new SessionHeartbeat();
+        try {
+            hb.sessionId = json.optString("sessionId", "");
+            hb.timestamp = json.optLong("timestamp", System.currentTimeMillis());
+            hb.status = KilosSession.SessionStatus.valueOf(json.optString("status", "DISCONNECTED"));
+            hb.isFocused = json.optBoolean("isFocused", false);
+        } catch (Exception e) {}
+        return hb;
+    }
 }
