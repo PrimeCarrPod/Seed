@@ -1,14 +1,14 @@
 #!/bin/bash
 # ============================================================
-# build.sh — No-Gradle APK Build for Vertebrae v1
+# build.sh — No-Gradle APK Build for Vertebrae v0.3
 # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
 # ============================================================
 set -e
 
 PACKAGE="com.carrpod.vertebrae"
 APP_NAME="Vertebrae"
-VERSION_CODE=100
-VERSION_NAME="1.0.0"
+VERSION_CODE=30
+VERSION_NAME="0.3.0"
 COMPILE_SDK=33
 TARGET_SDK=33
 MIN_SDK=26
@@ -25,7 +25,6 @@ BUILD_TOOLS="$SDK_DIR/build-tools/$BUILD_TOOLS_VERSION/android-13"
 PLATFORM="$SDK_DIR/platforms/android-$COMPILE_SDK"
 ANDROID_JAR="$PLATFORM/android.jar"
 
-# JDK detection
 if [ -d "/usr/lib/jvm/java-17-openjdk-amd64" ]; then
     export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
     export PATH="$JAVA_HOME/bin:$PATH"
@@ -37,7 +36,7 @@ ZIPALIGN="$BUILD_TOOLS/zipalign"
 APKSIGNER="$BUILD_TOOLS/apksigner"
 
 echo "============================================================"
-echo "  Vertebrae v1 — No-Gradle aapt2 + Java Build"
+echo "  Vertebrae v0.3 — No-Gradle aapt2 + Java Build"
 echo "  Package: $PACKAGE  |  Version: $VERSION_NAME"
 echo "  JDK: $JAVA_HOME"
 echo "============================================================"
@@ -49,10 +48,10 @@ if [ ! -f "$D8" ]; then echo "ERROR: d8 not found"; exit 1; fi
 rm -rf "$GEN_DIR" "$OBJ_DIR"
 mkdir -p "$GEN_DIR" "$OBJ_DIR" "$OUT_DIR"
 
-echo "[1/6] aapt2 compile resources..."
+echo "[1/5] aapt2 compile resources..."
 "$AAPT2" compile --dir "$SRC_DIR/res" -o "$OBJ_DIR/resources.zip" 2>/dev/null
 
-echo "[2/6] aapt2 link..."
+echo "[2/5] aapt2 link..."
 "$AAPT2" link -o "$OUT_DIR/$APP_NAME-base.apk" -I "$ANDROID_JAR" \
     --manifest "$SRC_DIR/AndroidManifest.xml" --java "$GEN_DIR" \
     --min-sdk-version $MIN_SDK --target-sdk-version $TARGET_SDK \
@@ -67,26 +66,25 @@ if [ -d "$SRC_DIR/assets" ]; then
     mv "$ATMP/base.apk" "$OUT_DIR/$APP_NAME-base.apk"; rm -rf "$ATMP"
 fi
 
-echo "[3/6] javac compile..."
+echo "[3/5] javac compile..."
 JAVA_SOURCES=$(find "$SRC_DIR/java" "$GEN_DIR" -name "*.java" 2>/dev/null)
 if [ -n "$JAVA_SOURCES" ]; then
     javac -source 11 -target 11 -classpath "$ANDROID_JAR" -d "$OBJ_DIR" \
-        -sourcepath "$SRC_DIR/java:$GEN_DIR" $JAVA_SOURCES 2>&1 | grep -v "warning:" || true
+        -sourcepath "$SRC_DIR/java:$GEN_DIR" $JAVA_SOURCES 2>&1 | grep -v "warning:"
 else
     echo "  No Java sources found"
 fi
 
-echo "[4/6] d8 dexing..."
+echo "[4/5] d8 dexing..."
 "$D8" --lib "$ANDROID_JAR" --min-api $MIN_SDK --output "$OBJ_DIR" \
     $(find "$OBJ_DIR" -name "*.class") 2>&1 | tail -1 || \
     find "$OBJ_DIR" -name "*.class" | xargs "$D8" --lib "$ANDROID_JAR" --min-api $MIN_SDK --output "$OBJ_DIR"
 
-echo "[5/6] Dex inject..."
+echo "[5/5] Dex inject + zipalign + apksigner..."
 cp "$OUT_DIR/$APP_NAME-base.apk" "$OUT_DIR/$APP_NAME-dexed.apk"
 cp "$OBJ_DIR/classes.dex" /tmp/classes.dex
 (cd /tmp && zip -q "$OUT_DIR/$APP_NAME-dexed.apk" classes.dex); rm -f /tmp/classes.dex
 
-echo "[6/6] zipalign + apksigner..."
 "$ZIPALIGN" -p -f 4 "$OUT_DIR/$APP_NAME-dexed.apk" "$OUT_DIR/$APP_NAME-aligned.apk"
 
 KEYSTORE="$PROJECT_DIR/debug.keystore"
@@ -100,13 +98,11 @@ fi
 
 SIZE=$(stat --printf="%s" "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null || echo 0)
 echo ""
-echo "═══════════════════════════════════════════════════════════"
+echo "════════════════════════════════════════════════════════════"
 echo "  BUILD COMPLETE — $APP_NAME v$VERSION_NAME"
 echo "  APK: $OUT_DIR/$APP_NAME-v$VERSION_NAME.apk"
 echo "  Size: $SIZE bytes ($(echo "scale=1; $SIZE/1024" | bc 2>/dev/null || echo "?") KB)"
-echo "═══════════════════════════════════════════════════════════"
+echo "════════════════════════════════════════════════════════════"
 
 "$AAPT2" dump badging "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null | head -5 || true
-cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../../../../CSMDropBox/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  CSMDropBox copy OK" || true
-cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../../../../$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  Repo root copy OK" || true
 exit 0

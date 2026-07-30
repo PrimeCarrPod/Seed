@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -16,17 +17,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.carrpod.vertebrae.R;
+import com.carrpod.vertebrae.comm.SessionCommunicator;
+import com.carrpod.vertebrae.model.InterSessionMessage;
 import com.carrpod.vertebrae.model.KilosSession;
 import com.carrpod.vertebrae.model.SessionGroup;
+import com.carrpod.vertebrae.service.FloatingWindowService;
 import com.carrpod.vertebrae.storage.SessionStorageManager;
 
 import java.util.ArrayList;
@@ -34,12 +40,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements SessionCommunicator.MessageListener {
 
     private static final int OVERLAY_PERMISSION_REQUEST = 1001;
     private static final String TAG = "MainActivity";
 
     private SessionStorageManager storage;
+    private SessionCommunicator communicator;
     private Set<String> expandedGroups = new HashSet<>();
 
     private ListView lvGroups;
@@ -55,27 +62,35 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         storage = SessionStorageManager.getInstance();
+        communicator = SessionCommunicator.getInstance();
+        communicator.addListener(this);
 
         setupViews();
         checkOverlayPermission();
         loadData();
+        communicator.connect();
     }
 
     private void setupViews() {
+        // Toolbar
+        android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.app_name);
+        toolbar.setSubtitle("Kilo.ai Session Manager");
+        setActionBar(toolbar);
+
         // Groups ListView
         lvGroups = findViewById(R.id.lv_groups);
-        groupsAdapter = new GroupsAdapter(
-                this::onGroupClick,
-                this::onGroupLongClick,
-                expandedGroups);
+        groupsAdapter = new GroupsAdapter();
         lvGroups.setAdapter(groupsAdapter);
+        lvGroups.setOnItemClickListener(this::onGroupClick);
+        lvGroups.setOnItemLongClickListener(this::onGroupLongClick);
 
         // Sessions ListView
         lvSessions = findViewById(R.id.lv_sessions);
-        sessionsAdapter = new SessionsAdapter(
-                this::onSessionClick,
-                this::onSessionLongClick);
+        sessionsAdapter = new SessionsAdapter();
         lvSessions.setAdapter(sessionsAdapter);
+        lvSessions.setOnItemClickListener(this::onSessionClick);
+        lvSessions.setOnItemLongClickListener(this::onSessionLongClick);
 
         emptyState = findViewById(R.id.empty_state);
 
@@ -95,13 +110,22 @@ public class MainActivity extends Activity {
         if (id == R.id.action_new_group) {
             showNewGroupDialog();
             return true;
+        } else if (id == R.id.action_import_session) {
+            showImportSessionDialog();
+            return true;
+        } else if (id == R.id.action_export_session) {
+            exportSessions();
+            return true;
+        } else if (id == R.id.action_settings) {
+            showSettingsDialog();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void loadData() {
         List<SessionGroup> groups = storage.loadAllGroups();
-        groupsAdapter.submitList(groups);
+        groupsAdapter.setGroups(groups);
 
         List<KilosSession> sessions;
         if (currentGroupFilter != null) {
@@ -109,7 +133,7 @@ public class MainActivity extends Activity {
         } else {
             sessions = storage.loadAllSessions();
         }
-        sessionsAdapter.submitList(sessions);
+        sessionsAdapter.setSessions(sessions);
         updateEmptyState(sessions.isEmpty());
     }
 
@@ -120,29 +144,35 @@ public class MainActivity extends Activity {
         lvSessions.setVisibility(isEmpty ? View.GONE : View.VISIBLE);
     }
 
-    private void onGroupClick(String groupId) {
-        if (expandedGroups.contains(groupId)) {
-            expandedGroups.remove(groupId);
+    private void onGroupClick(AdapterView<?> parent, View view, int position, long id) {
+        SessionGroup group = groupsAdapter.getItem(position);
+        if (expandedGroups.contains(group.getId())) {
+            expandedGroups.remove(group.getId());
         } else {
-            expandedGroups.add(groupId);
+            expandedGroups.add(group.getId());
         }
         groupsAdapter.notifyDataSetChanged();
     }
 
-    private void onGroupLongClick(SessionGroup group) {
+    private boolean onGroupLongClick(AdapterView<?> parent, View view, int position, long id) {
+        SessionGroup group = groupsAdapter.getItem(position);
         showGroupOptions(group);
+        return true;
     }
 
-    private void onSessionClick(KilosSession session) {
-        Toast.makeText(this, getString(R.string.session_selected, session.getDisplayName()), Toast.LENGTH_SHORT).show();
+    private void onSessionClick(AdapterView<?> parent, View view, int position, long id) {
+        KilosSession session = sessionsAdapter.getItem(position);
+        if (session != null) {
+            openFloatingWindow(session);
+        }
     }
 
-    private void onSessionLongClick(KilosSession session) {
-        showSessionOptions(session);
-    }
-
-    private void setupFab() {
-        findViewById(R.id.fab_add_session).setOnClickListener(v -> showNewSessionDialog());
+    private boolean onSessionLongClick(AdapterView<?> parent, View view, int position, long id) {
+        KilosSession session = sessionsAdapter.getItem(position);
+        if (session != null) {
+            showSessionOptions(session);
+        }
+        return true;
     }
 
     private void showNewSessionDialog() {
@@ -171,17 +201,28 @@ public class MainActivity extends Activity {
         storage.saveSession(session);
         loadData();
 
-        Toast.makeText(this, "Session created: " + name, Toast.LENGTH_SHORT).show();
+        // Auto-open floating window
+        openFloatingWindow(session);
+    }
+
+    private void openFloatingWindow(KilosSession session) {
+        if (!Settings.canDrawOverlays(this)) {
+            requestOverlayPermission();
+            return;
+        }
+
+        FloatingWindowService.createWindow(this, session.getId());
+        Toast.makeText(this, "Opening floating window...", Toast.LENGTH_SHORT).show();
     }
 
     private void showSessionOptions(KilosSession session) {
-        String[] options = {"Open (v0.3)", "Focus", "Disconnect", "Delete"};
+        String[] options = {"Open Window", "Focus", "Disconnect", "Delete"};
         new AlertDialog.Builder(this)
                 .setTitle(session.getDisplayName())
                 .setItems(options, (dialog, which) -> {
                     switch (which) {
-                        case 0: onSessionClick(session); break;
-                        case 1: Toast.makeText(this, "Focus: " + session.getDisplayName(), Toast.LENGTH_SHORT).show(); break;
+                        case 0: openFloatingWindow(session); break;
+                        case 1: onSessionFocusChange(session, true); break;
                         case 2: disconnectSession(session); break;
                         case 3: deleteSession(session); break;
                     }
@@ -190,12 +231,14 @@ public class MainActivity extends Activity {
     }
 
     private void disconnectSession(KilosSession session) {
+        FloatingWindowService.closeWindow(this, session.getId());
         KilosSession updated = session.copyWithStatus(KilosSession.SessionStatus.DISCONNECTED);
         storage.saveSession(updated);
         loadData();
     }
 
     private void deleteSession(KilosSession session) {
+        FloatingWindowService.closeWindow(this, session.getId());
         storage.deleteSession(session.getId());
         loadData();
     }
@@ -221,12 +264,9 @@ public class MainActivity extends Activity {
                 .setTitle("Rename Group")
                 .setView(input)
                 .setPositiveButton(android.R.string.ok, (dialog, which) -> {
-                    String newName = input.getText().toString().trim();
-                    if (!TextUtils.isEmpty(newName)) {
-                        SessionGroup updated = group.copyWithName(newName);
-                        storage.saveGroup(updated);
-                        loadData();
-                    }
+                    SessionGroup updated = group.copyWithName(input.getText().toString());
+                    storage.saveGroup(updated);
+                    loadData();
                 })
                 .setNegativeButton(android.R.string.cancel, null)
                 .show();
@@ -249,7 +289,7 @@ public class MainActivity extends Activity {
 
     private void deleteGroup(SessionGroup group) {
         if ("default".equals(group.getId())) {
-            Toast.makeText(this, "Cannot delete default group", Toast.LENGTH_SHORT).show();
+            toast("Cannot delete default group");
             return;
         }
         new AlertDialog.Builder(this)
@@ -280,14 +320,27 @@ public class MainActivity extends Activity {
                 .show();
     }
 
+    private void showImportSessionDialog() {
+        toast("Import not yet implemented");
+    }
+
+    private void exportSessions() {
+        toast("Export not yet implemented");
+    }
+
+    private void showSettingsDialog() {
+        toast("Settings not yet implemented");
+    }
+
     private void checkOverlayPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
-            Toast.makeText(this, "Overlay permission needed for floating windows (v0.3)", Toast.LENGTH_LONG).show();
+            toast(getString(R.string.toast_overlay_permission));
         }
     }
 
     private void requestOverlayPermission() {
-        Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, android.net.Uri.parse("package:" + getPackageName()));
+        Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                android.net.Uri.parse("package:" + getPackageName()));
         startActivityForResult(intent, OVERLAY_PERMISSION_REQUEST);
     }
 
@@ -296,7 +349,7 @@ public class MainActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == OVERLAY_PERMISSION_REQUEST) {
             if (Settings.canDrawOverlays(this)) {
-                Toast.makeText(this, "Overlay permission granted", Toast.LENGTH_SHORT).show();
+                toast("Overlay permission granted");
             }
         }
     }
@@ -308,42 +361,46 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        communicator.removeListener(this);
+    }
+
+    // SessionCommunicator.MessageListener
+    @Override
+    public void onMessage(InterSessionMessage message) {
+        // Handle inter-session messages
+    }
+
+    @Override
+    public void onConnected() {
+        runOnUiThread(() -> toast("Inter-session comms connected"));
+    }
+
+    @Override
+    public void onDisconnected() {
+        runOnUiThread(() -> toast("Inter-session comms disconnected"));
+    }
+
+    @Override
+    public void onError(String error) {
+        runOnUiThread(() -> Log.e(TAG, "Comm error: " + error));
+    }
+
+    private void onSessionFocusChange(KilosSession session, boolean focused) {
+        KilosSession updated = session.copyWithFocused(focused);
+        storage.saveSession(updated);
+        communicator.sendFocusChange(session.getGroupId(), session.getId(), focused);
     }
 
     // Adapters
-    private static class GroupsAdapter extends BaseAdapter {
-        private final java.util.function.Consumer<String> onClick;
-        private final java.util.function.Consumer<SessionGroup> onLongClick;
-        private final Set<String> expandedGroups;
-        private List<SessionGroup> groups = new ArrayList<>();
-
-        GroupsAdapter(java.util.function.Consumer<String> onClick,
-                      java.util.function.Consumer<SessionGroup> onLongClick,
-                      Set<String> expandedGroups) {
-            this.onClick = onClick;
-            this.onLongClick = onLongClick;
-            this.expandedGroups = expandedGroups;
+    private class GroupsAdapter extends ArrayAdapter<SessionGroup> {
+        GroupsAdapter() {
+            super(MainActivity.this, 0, new ArrayList<>());
         }
 
-        void submitList(List<SessionGroup> newGroups) {
-            groups.clear();
-            groups.addAll(newGroups);
+        void setGroups(List<SessionGroup> groups) {
+            clear();
+            addAll(groups);
             notifyDataSetChanged();
-        }
-
-        @Override
-        public int getCount() {
-            return groups.size();
-        }
-
-        @Override
-        public SessionGroup getItem(int position) {
-            return groups.get(position);
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return position;
         }
 
         @Override
@@ -352,7 +409,7 @@ public class MainActivity extends Activity {
             boolean isExpanded = expandedGroups.contains(group.getId());
 
             if (convertView == null) {
-                convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_group_chip, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_group_chip, parent, false);
             }
 
             TextView tvName = convertView.findViewById(R.id.tv_group_name);
@@ -362,43 +419,19 @@ public class MainActivity extends Activity {
             tvName.setTextColor(group.getColor());
             indicator.setBackgroundColor(group.getColor());
 
-            convertView.setOnClickListener(v -> onClick.accept(group.getId()));
-            convertView.setOnLongClickListener(v -> { onLongClick.accept(group); return true; });
-
             return convertView;
         }
     }
 
-    private static class SessionsAdapter extends BaseAdapter {
-        private final java.util.function.Consumer<KilosSession> onClick;
-        private final java.util.function.Consumer<KilosSession> onLongClick;
-        private List<KilosSession> sessions = new ArrayList<>();
-
-        SessionsAdapter(java.util.function.Consumer<KilosSession> onClick,
-                        java.util.function.Consumer<KilosSession> onLongClick) {
-            this.onClick = onClick;
-            this.onLongClick = onLongClick;
+    private class SessionsAdapter extends ArrayAdapter<KilosSession> {
+        SessionsAdapter() {
+            super(MainActivity.this, 0, new ArrayList<>());
         }
 
-        void submitList(List<KilosSession> newSessions) {
-            sessions.clear();
-            sessions.addAll(newSessions);
+        void setSessions(List<KilosSession> sessions) {
+            clear();
+            addAll(sessions);
             notifyDataSetChanged();
-        }
-
-        @Override
-        public int getCount() {
-            return sessions.size();
-        }
-
-        @Override
-        public KilosSession getItem(int position) {
-            return sessions.get(position);
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return position;
         }
 
         @Override
@@ -406,22 +439,20 @@ public class MainActivity extends Activity {
             KilosSession session = getItem(position);
 
             if (convertView == null) {
-                convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_session, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_session, parent, false);
             }
 
             TextView tvName = convertView.findViewById(R.id.tv_session_name);
             TextView tvSessionId = convertView.findViewById(R.id.tv_session_id);
             TextView tvGroup = convertView.findViewById(R.id.tv_group_name);
-            TextView tvStatus = convertView.findViewById(R.id.tv_session_status);
             View statusIndicator = convertView.findViewById(R.id.status_indicator);
-            Button btnOpen = convertView.findViewById(R.id.btn_open);
+            android.widget.ImageButton btnFocus = convertView.findViewById(R.id.btn_focus);
 
             tvName.setText(session.getDisplayName());
             String shortId = session.getSessionId();
             if (shortId.length() > 8) shortId = shortId.substring(0, 8);
             tvSessionId.setText("ses_" + shortId);
             tvGroup.setText(session.getGroupId());
-            tvStatus.setText(session.getStatus().name());
 
             int statusColor;
             switch (session.getStatus()) {
@@ -439,10 +470,8 @@ public class MainActivity extends Activity {
             }
             statusIndicator.setBackgroundColor(statusColor);
 
-            btnOpen.setOnClickListener(v -> { if (onClick != null) onClick.accept(session); });
-
-            convertView.setOnClickListener(v -> { if (onClick != null) onClick.accept(session); });
-            convertView.setOnLongClickListener(v -> { if (onLongClick != null) onLongClick.accept(session); return true; });
+            btnFocus.setImageResource(session.isFocused() ? android.R.drawable.star_on : android.R.drawable.star_off);
+            btnFocus.setOnClickListener(v -> onSessionFocusChange(session, !session.isFocused()));
 
             return convertView;
         }
