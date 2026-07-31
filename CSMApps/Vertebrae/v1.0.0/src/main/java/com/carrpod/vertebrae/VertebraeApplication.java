@@ -3,8 +3,6 @@ package com.carrpod.vertebrae;
 import android.app.Application;
 
 import com.carrpod.vertebrae.storage.SessionStorageManager;
-import com.carrpod.vertebrae.network.WebSocketManager;
-import com.carrpod.vertebrae.comm.SessionCommunicator;
 
 public class VertebraeApplication extends Application {
 
@@ -19,10 +17,7 @@ public class VertebraeApplication extends Application {
         super.onCreate();
         instance = this;
 
-        // Initialize managers only - DO NOT start services here
-        // Services are started from SplashActivity after permissions granted
+        // Initialize storage manager only
         SessionStorageManager.initialize(this);
-        WebSocketManager.initialize(this);
-        SessionCommunicator.initialize(this);
     }
 }

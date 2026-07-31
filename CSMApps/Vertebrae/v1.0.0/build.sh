@@ -21,7 +21,7 @@ OBJ_DIR="$PROJECT_DIR/obj"
 OUT_DIR="$PROJECT_DIR/out"
 
 SDK_DIR="${ANDROID_HOME:-/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5c7dbc6e-6f98-4432-ad3d-a23934805977/.sdk/android-sdk}"
-BUILD_TOOLS="$SDK_DIR/build-tools/$BUILD_TOOLS_VERSION/android-13"
+BUILD_TOOLS="$SDK_DIR/build-tools/$BUILD_TOOLS_VERSION"
 PLATFORM="$SDK_DIR/platforms/android-$COMPILE_SDK"
 ANDROID_JAR="$PLATFORM/android.jar"
 

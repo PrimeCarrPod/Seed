@@ -93,30 +93,6 @@ public class SessionGroup implements Parcelable, Serializable {
         }
     };
 
-    // Copy with modifications
-    public SessionGroup copyWith(
-            String name,
-            String description,
-            Integer color,
-            List<String> sessionIds,
-            String storagePath,
-            Boolean expanded,
-            Integer sortOrder
-    ) {
-        SessionGroup copy = new SessionGroup();
-        copy.id = this.id;
-        copy.name = name != null ? name : this.name;
-        copy.description = description != null ? description : this.description;
-        copy.color = color != null ? color : this.color;
-        copy.createdAt = this.createdAt;
-        copy.updatedAt = System.currentTimeMillis();
-        copy.sessionIds = sessionIds != null ? new ArrayList<>(sessionIds) : new ArrayList<>(this.sessionIds);
-        copy.storagePath = storagePath != null ? storagePath : this.storagePath;
-        copy.expanded = expanded != null ? expanded : this.expanded;
-        copy.sortOrder = sortOrder != null ? sortOrder : this.sortOrder;
-        return copy;
-    }
-
     public void addSessionId(String sessionId) {
         if (!sessionIds.contains(sessionId)) {
             sessionIds.add(sessionId);
@@ -128,37 +104,6 @@ public class SessionGroup implements Parcelable, Serializable {
         sessionIds.remove(sessionId);
         updatedAt = System.currentTimeMillis();
     }
-
-    // Getters and setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; updatedAt = System.currentTimeMillis(); }
-
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; updatedAt = System.currentTimeMillis(); }
-
-    public int getColor() { return color; }
-    public void setColor(int color) { this.color = color; updatedAt = System.currentTimeMillis(); }
-
-    public long getCreatedAt() { return createdAt; }
-    public void setCreatedAt(long createdAt) { this.createdAt = createdAt; }
-
-    public long getUpdatedAt() { return updatedAt; }
-    public void setUpdatedAt(long updatedAt) { this.updatedAt = updatedAt; }
-
-    public List<String> getSessionIds() { return sessionIds; }
-    public void setSessionIds(List<String> sessionIds) { this.sessionIds = sessionIds; updatedAt = System.currentTimeMillis(); }
-
-    public String getStoragePath() { return storagePath; }
-    public void setStoragePath(String storagePath) { this.storagePath = storagePath; updatedAt = System.currentTimeMillis(); }
-
-    public boolean isExpanded() { return expanded; }
-    public void setExpanded(boolean expanded) { this.expanded = expanded; updatedAt = System.currentTimeMillis(); }
-
-    public int getSortOrder() { return sortOrder; }
-    public void setSortOrder(int sortOrder) { this.sortOrder = sortOrder; updatedAt = System.currentTimeMillis(); }
 
     // JSON serialization
     public JSONObject toJson() {
@@ -209,10 +154,63 @@ public class SessionGroup implements Parcelable, Serializable {
 
     // Convenience copy methods
     public SessionGroup copyWithName(String name) {
-        return copyWith(name, null, null, null, null, null, null);
+        SessionGroup copy = new SessionGroup();
+        copy.id = this.id;
+        copy.name = name;
+        copy.description = this.description;
+        copy.color = this.color;
+        copy.createdAt = this.createdAt;
+        copy.updatedAt = System.currentTimeMillis();
+        copy.sessionIds = new ArrayList<>(this.sessionIds);
+        copy.storagePath = this.storagePath;
+        copy.expanded = this.expanded;
+        copy.sortOrder = this.sortOrder;
+        return copy;
     }
 
     public SessionGroup copyWithColor(int color) {
-        return copyWith(null, null, color, null, null, null, null);
+        SessionGroup copy = new SessionGroup();
+        copy.id = this.id;
+        copy.name = this.name;
+        copy.description = this.description;
+        copy.color = color;
+        copy.createdAt = this.createdAt;
+        copy.updatedAt = System.currentTimeMillis();
+        copy.sessionIds = new ArrayList<>(this.sessionIds);
+        copy.storagePath = this.storagePath;
+        copy.expanded = this.expanded;
+        copy.sortOrder = this.sortOrder;
+        return copy;
     }
+
+    // Getters and setters
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; updatedAt = System.currentTimeMillis(); }
+
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; updatedAt = System.currentTimeMillis(); }
+
+    public int getColor() { return color; }
+    public void setColor(int color) { this.color = color; updatedAt = System.currentTimeMillis(); }
+
+    public long getCreatedAt() { return createdAt; }
+    public void setCreatedAt(long createdAt) { this.createdAt = createdAt; }
+
+    public long getUpdatedAt() { return updatedAt; }
+    public void setUpdatedAt(long updatedAt) { this.updatedAt = updatedAt; }
+
+    public List<String> getSessionIds() { return sessionIds; }
+    public void setSessionIds(List<String> sessionIds) { this.sessionIds = sessionIds; updatedAt = System.currentTimeMillis(); }
+
+    public String getStoragePath() { return storagePath; }
+    public void setStoragePath(String storagePath) { this.storagePath = storagePath; updatedAt = System.currentTimeMillis(); }
+
+    public boolean isExpanded() { return expanded; }
+    public void setExpanded(boolean expanded) { this.expanded = expanded; updatedAt = System.currentTimeMillis(); }
+
+    public int getSortOrder() { return sortOrder; }
+    public void setSortOrder(int sortOrder) { this.sortOrder = sortOrder; updatedAt = System.currentTimeMillis(); }
 }

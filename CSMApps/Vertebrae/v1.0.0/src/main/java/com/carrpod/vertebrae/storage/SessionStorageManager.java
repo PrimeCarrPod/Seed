@@ -13,7 +13,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -26,21 +25,11 @@ public class SessionStorageManager {
     private static final String TAG = "SessionStorageManager";
     private static SessionStorageManager instance;
     private final Context context;
-
-    private final File baseDir;
-    private final File sessionsFile;
-    private final File groupsFile;
-
     private final Map<String, KilosSession> sessionsCache = new ConcurrentHashMap<>();
     private final Map<String, SessionGroup> groupsCache = new ConcurrentHashMap<>();
 
     private SessionStorageManager(Context context) {
         this.context = context.getApplicationContext();
-        this.baseDir = new File(context.getExternalFilesDir(null), "Vertebrae/Sessions");
-        this.sessionsFile = new File(baseDir, "sessions.json");
-        this.groupsFile = new File(baseDir, "groups.json");
-        this.settingsFile = new File(baseDir, "settings.json");
-        baseDir.mkdirs();
         loadCache();
     }
 
@@ -58,53 +47,15 @@ public class SessionStorageManager {
     }
 
     private void loadCache() {
-        try {
-            if (sessionsFile.exists()) {
-                String json = readFile(sessionsFile);
-                JSONArray array = new JSONArray(json);
-                for (int i = 0; i < array.length(); i++) {
-                    KilosSession session = KilosSession.fromJson(array.getJSONObject(i));
-                    sessionsCache.put(session.getId(), session);
-                }
-            }
-
-            if (groupsFile.exists()) {
-                String json = readFile(groupsFile);
-                JSONArray array = new JSONArray(json);
-                for (int i = 0; i < array.length(); i++) {
-                    SessionGroup group = SessionGroup.fromJson(array.getJSONObject(i));
-                    groupsCache.put(group.getId(), group);
-                }
-            }
-
-            if (!groupsCache.containsKey("default")) {
-                SessionGroup defaultGroup = new SessionGroup("default", "Default Group", 0xFF74B9FF);
-                groupsCache.put("default", defaultGroup);
-                saveGroups();
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "Error loading cache", e);
+        // Ensure default group exists
+        if (!groupsCache.containsKey("default")) {
+            SessionGroup defaultGroup = new SessionGroup("default", "Default Group", 0xFF74B9FF);
+            groupsCache.put("default", defaultGroup);
         }
     }
 
-    private String readFile(File file) throws Exception {
-        FileInputStream fis = new FileInputStream(file);
-        byte[] data = new byte[(int) file.length()];
-        fis.read(data);
-        fis.close();
-        return new String(data, "UTF-8");
-    }
-
-    private void writeFile(File file, String content) throws Exception {
-        FileOutputStream fos = new FileOutputStream(file);
-        fos.write(content.getBytes("UTF-8"));
-        fos.close();
-    }
-
-    // Session methods
     public void saveSession(KilosSession session) {
         sessionsCache.put(session.getId(), session);
-        saveSessions();
     }
 
     public KilosSession loadSession(String id) {
@@ -127,25 +78,10 @@ public class SessionStorageManager {
 
     public void deleteSession(String id) {
         sessionsCache.remove(id);
-        saveSessions();
     }
 
-    private void saveSessions() {
-        try {
-            JSONArray array = new JSONArray();
-            for (KilosSession session : sessionsCache.values()) {
-                array.put(session.toJson());
-            }
-            writeFile(sessionsFile, array.toString());
-        } catch (Exception e) {
-            Log.e(TAG, "Error saving sessions", e);
-        }
-    }
-
-    // Group methods
     public void saveGroup(SessionGroup group) {
         groupsCache.put(group.getId(), group);
-        saveGroups();
     }
 
     public SessionGroup loadGroup(String id) {
@@ -159,52 +95,36 @@ public class SessionStorageManager {
     public void deleteGroup(String id) {
         if (!"default".equals(id)) {
             groupsCache.remove(id);
+            // Move sessions to default group
             for (KilosSession session : sessionsCache.values()) {
                 if (id.equals(session.getGroupId())) {
                     KilosSession updated = session.copyWithGroupId("default");
                     sessionsCache.put(session.getId(), updated);
                 }
             }
-            saveGroups();
-            saveSessions();
         }
     }
 
-    private void saveGroups() {
-        try {
-            JSONArray array = new JSONArray();
-            for (SessionGroup group : groupsCache.values()) {
-                array.put(group.toJson());
-            }
-            writeFile(groupsFile, array.toString());
-        } catch (Exception e) {
-            Log.e(TAG, "Error saving groups", e);
-        }
-    }
-
-    // File storage
     public File getSessionStorageDir(String sessionId) {
-        File dir = new File(baseDir, "session_" + sessionId);
+        File dir = new File(context.getExternalFilesDir(null), "Vertebrae/Sessions/session_" + sessionId);
         dir.mkdirs();
         return dir;
     }
 
     public File getGroupStorageDir(String groupId) {
-        File dir = new File(baseDir, "group_" + groupId);
+        File dir = new File(context.getExternalFilesDir(null), "Vertebrae/Sessions/group_" + groupId);
         dir.mkdirs();
         return dir;
     }
 
     public File saveReceivedFile(String groupId, String fileName, InputStream inputStream) {
         File targetFile = new File(getGroupStorageDir(groupId), fileName);
-        try {
-            FileOutputStream fos = new FileOutputStream(targetFile);
+        try (FileOutputStream fos = new FileOutputStream(targetFile)) {
             byte[] buffer = new byte[8192];
             int len;
             while ((len = inputStream.read(buffer)) > 0) {
                 fos.write(buffer, 0, len);
             }
-            fos.close();
         } catch (Exception e) {
             Log.e(TAG, "Error saving file", e);
         }
@@ -219,53 +139,6 @@ public class SessionStorageManager {
     public List<File> listFiles(String groupId) {
         File dir = getGroupStorageDir(groupId);
         File[] files = dir.listFiles();
-        return files != null ? new ArrayList<>(java.util.Arrays.asList(files)) : new ArrayList<>();
-    }
-
-    // Settings
-public static class Settings {
-        public int heartbeatIntervalSeconds = 30;
-        public int interSessionPort = 8888;
-        public boolean autoReconnect = true;
-        public boolean keepScreenOn = true;
-        public boolean showNotifications = true;
-        public String storagePath = "";
-    }
-
-    private final File settingsFile;
-
-    public void saveSettings(Settings settings) {
-        try {
-            JSONObject json = new JSONObject();
-            json.put("heartbeatIntervalSeconds", settings.heartbeatIntervalSeconds);
-            json.put("interSessionPort", settings.interSessionPort);
-            json.put("autoReconnect", settings.autoReconnect);
-            json.put("keepScreenOn", settings.keepScreenOn);
-            json.put("showNotifications", settings.showNotifications);
-            json.put("storagePath", settings.storagePath);
-            writeFile(settingsFile, json.toString());
-        } catch (Exception e) {
-            Log.e(TAG, "Error saving settings", e);
-        }
-    }
-
-    public Settings loadSettings() {
-        if (settingsFile.exists()) {
-            try {
-                String json = readFile(settingsFile);
-                JSONObject obj = new JSONObject(json);
-                Settings s = new Settings();
-                s.heartbeatIntervalSeconds = obj.optInt("heartbeatIntervalSeconds", 30);
-                s.interSessionPort = obj.optInt("interSessionPort", 8888);
-                s.autoReconnect = obj.optBoolean("autoReconnect", true);
-                s.keepScreenOn = obj.optBoolean("keepScreenOn", true);
-                s.showNotifications = obj.optBoolean("showNotifications", true);
-                s.storagePath = obj.optString("storagePath", "");
-                return s;
-            } catch (Exception e) {
-                Log.e(TAG, "Error loading settings", e);
-            }
-        }
-        return new Settings();
+        return files != null ? new ArrayList<>(List.of(files)) : new ArrayList<>();
     }
 }

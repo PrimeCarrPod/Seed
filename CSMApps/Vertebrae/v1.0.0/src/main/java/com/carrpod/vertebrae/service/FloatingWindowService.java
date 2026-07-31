@@ -16,6 +16,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.webkit.JavascriptInterface;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -31,6 +36,7 @@ import java.util.Map;
 public class FloatingWindowService extends Service {
 
     private static final String TAG = "FloatingWindowService";
+
     private SessionStorageManager storage;
     private WindowManager windowManager;
     private final Map<String, FloatingWindow> windows = new HashMap<>();
@@ -82,25 +88,31 @@ public class FloatingWindowService extends Service {
 
         if (sessionId == null) return START_STICKY;
 
-        if ("CREATE_WINDOW".equals(action)) {
-            createWindow(sessionId);
-        } else if ("CLOSE_WINDOW".equals(action)) {
-            closeWindow(sessionId);
-        } else if ("UPDATE_WINDOW".equals(action)) {
-            int width = intent.getIntExtra("width", -1);
-            int height = intent.getIntExtra("height", -1);
-            if (width > 0 && height > 0) {
-                FloatingWindow window = windows.get(sessionId);
-                if (window != null) {
-                    window.updateSize(width, height);
+        switch (action) {
+            case "CREATE_WINDOW":
+                createWindow(sessionId);
+                break;
+            case "CLOSE_WINDOW":
+                closeWindow(sessionId);
+                break;
+            case "UPDATE_WINDOW":
+                int width = intent.getIntExtra("width", -1);
+                int height = intent.getIntExtra("height", -1);
+                if (width > 0 && height > 0) {
+                    FloatingWindow window = windows.get(sessionId);
+                    if (window != null) {
+                        window.updateSize(width, height);
+                    }
                 }
-            }
+                break;
         }
         return START_STICKY;
     }
 
     private void createWindow(String sessionId) {
-        if (windows.containsKey(sessionId)) return;
+        if (windows.containsKey(sessionId)) {
+            return;
+        }
 
         final KilosSession session = storage.loadSession(sessionId);
         if (session == null) return;
@@ -114,11 +126,13 @@ public class FloatingWindowService extends Service {
         // Header
         LinearLayout header = new LinearLayout(this);
         header.setId(R.id.window_header);
+        header.setOrientation(LinearLayout.HORIZONTAL);
+        header.setGravity(Gravity.CENTER_VERTICAL);
         header.setBackgroundColor(getColor(R.color.surface_elevated));
         header.setPadding(12, 0, 12, 0);
-        header.setGravity(Gravity.CENTER_VERTICAL);
-        header.setLayoutParams(new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, 40));
+        LinearLayout.LayoutParams headerParams = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, 40);
+        header.setLayoutParams(headerParams);
 
         TextView title = new TextView(this);
         title.setId(R.id.window_title);
@@ -128,7 +142,9 @@ public class FloatingWindowService extends Service {
         title.setTypeface(null, android.graphics.Typeface.BOLD);
         title.setEllipsize(android.text.TextUtils.TruncateAt.END);
         title.setMaxLines(1);
-        title.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f));
+        LinearLayout.LayoutParams titleParams = new LinearLayout.LayoutParams(
+                0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f);
+        title.setLayoutParams(titleParams);
         header.addView(title);
 
         addWindowButton(header, "−", "Minimize", v -> minimizeWindow(sessionId));
@@ -149,30 +165,61 @@ public class FloatingWindowService extends Service {
         resizeHandle.setId(R.id.resize_handle);
         resizeHandle.setImageResource(R.drawable.ic_resize_handle);
         resizeHandle.setAlpha(0.3f);
-        resizeHandle.setLayoutParams(new LinearLayout.LayoutParams(
-                24, 24, Gravity.END | Gravity.BOTTOM));
         resizeHandle.setPadding(4, 4, 4, 4);
+        LinearLayout.LayoutParams handleParams = new LinearLayout.LayoutParams(24, 24);
+        handleParams.gravity = Gravity.BOTTOM | Gravity.END;
+        handleParams.setMargins(0, 0, 4, 4);
+        resizeHandle.setLayoutParams(handleParams);
         rootView.addView(resizeHandle);
 
+        // Create WebView
+        WebView webView = new WebView(this);
+        webView.setLayoutParams(new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.MATCH_PARENT,
+                FrameLayout.LayoutParams.MATCH_PARENT));
+        WebSettings settings = webView.getSettings();
+        settings.setJavaScriptEnabled(true);
+        settings.setDomStorageEnabled(true);
+        settings.setAllowFileAccess(true);
+        settings.setAllowFileAccessFromFileURLs(true);
+        settings.setAllowUniversalAccessFromFileURLs(true);
+        settings.setUserAgentString("Mozilla/5.0 (Linux; Android 13) Vertebrae/0.3 KiloAI-Client");
+
+        // Add JavaScript interface for native communication
+        webView.addJavascriptInterface(new VertebraeBridge(session.getId()), "VertebraeBridge");
+
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
+        webView.setWebChromeClient(new WebChromeClient());
+        webView.loadUrl("file:///android_asset/html/terminal.html?sessionId=" + session.getSessionId());
+
+        // Window parameters
         WindowManager.LayoutParams params = new WindowManager.LayoutParams(
-                session.getWindowWidth(),
-                session.getWindowHeight(),
+                session.getWindowWidth() > 0 ? session.getWindowWidth() : 800,
+                session.getWindowHeight() > 0 ? session.getWindowHeight() : 600,
                 Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
                         ? WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
                         : WindowManager.LayoutParams.TYPE_PHONE,
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
                         | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
                         | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
-                PixelFormat.TRANSLUCENT
-        );
+                PixelFormat.TRANSLUCENT);
         params.gravity = Gravity.TOP | Gravity.START;
         params.x = (int) session.getWindowX();
         params.y = (int) session.getWindowY();
 
         windowManager.addView(rootView, params);
 
-        FloatingWindow window = new FloatingWindow(session, rootView, params, header, webViewContainer);
-        windows.put(sessionId, window);
+        FloatingWindow window = new FloatingWindow(session, rootView, params, webViewContainer);
+        windows.put(session.getId(), window);
+
+        // Setup drag and resize
+        window.setupTouchListeners();
+        window.setupResizeListener();
     }
 
     private void addWindowButton(LinearLayout parent, String text, String desc, View.OnClickListener listener) {
@@ -217,21 +264,19 @@ public class FloatingWindowService extends Service {
     }
 
     // FloatingWindow inner class
-    private class FloatingWindow {
-        private final KilosSession session;
-        private final View rootView;
-        private final WindowManager.LayoutParams params;
-        private final View header;
-        private final View webViewContainer;
-        private int initialX, initialY;
-        private float initialTouchX, initialTouchY;
+private class FloatingWindow {
+        final KilosSession session;
+        final View rootView;
+        final WindowManager.LayoutParams params;
+        final View webViewContainer;
+        int initialX, initialY;
+        float initialTouchX, initialTouchY;
+        int initialWidth, initialHeight;
 
-        FloatingWindow(KilosSession session, View rootView, WindowManager.LayoutParams params,
-                       View header, View webViewContainer) {
+        FloatingWindow(KilosSession session, View rootView, WindowManager.LayoutParams params, View webViewContainer) {
             this.session = session;
             this.rootView = rootView;
             this.params = params;
-            this.header = header;
             this.webViewContainer = webViewContainer;
 
             setupTouchListeners();
@@ -239,6 +284,7 @@ public class FloatingWindowService extends Service {
         }
 
         private void setupTouchListeners() {
+            View header = rootView.findViewById(R.id.window_header);
             header.setOnTouchListener((v, event) -> {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
@@ -251,28 +297,6 @@ public class FloatingWindowService extends Service {
                     case MotionEvent.ACTION_MOVE:
                         params.x = initialX + (int) (event.getRawX() - initialTouchX);
                         params.y = initialY + (int) (event.getRawY() - initialTouchY);
-                        windowManager.updateViewLayout(rootView, params);
-                        return true;
-                    case MotionEvent.ACTION_UP:
-                        savePosition();
-                        return true;
-                }
-                return false;
-            });
-        }
-
-        private void setupResizeListener() {
-            rootView.findViewById(R.id.resize_handle).setOnTouchListener((v, event) -> {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        initialX = params.width;
-                        initialY = params.height;
-                        initialTouchX = event.getRawX();
-                        initialTouchY = event.getRawY();
-                        return true;
-                    case MotionEvent.ACTION_MOVE:
-                        params.width = Math.max(300, initialX + (int) (event.getRawX() - initialTouchX));
-                        params.height = Math.max(200, initialY + (int) (event.getRawY() - initialTouchY));
                         windowManager.updateViewLayout(rootView, params);
                         return true;
                     case MotionEvent.ACTION_UP:
@@ -306,6 +330,7 @@ public class FloatingWindowService extends Service {
         }
 
         void minimize() {
+            View webViewContainer = rootView.findViewById(R.id.webview_container);
             webViewContainer.setVisibility(View.GONE);
         }
 
@@ -326,6 +351,60 @@ public class FloatingWindowService extends Service {
             } catch (Exception e) {
                 Log.e(TAG, "Close error", e);
             }
+        }
+
+        private void setupResizeListener() {
+            View resizeHandle = rootView.findViewById(R.id.resize_handle);
+            if (resizeHandle != null) {
+                resizeHandle.setOnTouchListener((v, event) -> {
+                    switch (event.getAction()) {
+                        case MotionEvent.ACTION_DOWN:
+                            initialWidth = params.width;
+                            initialHeight = params.height;
+                            initialTouchX = event.getRawX();
+                            initialTouchY = event.getRawY();
+                            return true;
+                        case MotionEvent.ACTION_MOVE:
+                            params.width = Math.max(300, initialWidth + (int) (event.getRawX() - initialTouchX));
+                            params.height = Math.max(200, initialHeight + (int) (event.getRawY() - initialTouchY));
+                            windowManager.updateViewLayout(rootView, params);
+                            return true;
+                        case MotionEvent.ACTION_UP:
+                            savePosition();
+                            return true;
+                    }
+                    return false;
+                });
+            }
+        }
+    }
+
+    // JavaScript interface for WebView <-> Native communication
+    private class VertebraeBridge {
+        private final String sessionId;
+
+        VertebraeBridge(String sessionId) {
+            this.sessionId = sessionId;
+        }
+
+        @JavascriptInterface
+        public void postMessage(String message) {
+            Log.d(TAG, "JS Message: " + message);
+        }
+
+        @JavascriptInterface
+        public void onTerminalReady(String sessionId) {
+            Log.d(TAG, "Terminal ready for session: " + sessionId);
+        }
+
+        @JavascriptInterface
+        public void sendInput(String data) {
+            Log.d(TAG, "Input for session " + sessionId + ": " + data);
+        }
+
+        @JavascriptInterface
+        public void sendControlChar(char c) {
+            Log.d(TAG, "Control char for session " + sessionId + ": " + c);
         }
     }
 

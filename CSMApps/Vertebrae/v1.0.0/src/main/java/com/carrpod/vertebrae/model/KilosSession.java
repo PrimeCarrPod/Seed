@@ -3,6 +3,7 @@ package com.carrpod.vertebrae.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.Serializable;
@@ -13,13 +14,7 @@ import java.util.UUID;
 public class KilosSession implements Parcelable, Serializable {
 
     public enum SessionStatus {
-        DISCONNECTED,
-        CONNECTING,
-        CONNECTED,
-        HEARTBEAT_ACTIVE,
-        HEARTBEAT_FAILED,
-        ERROR,
-        RECONNECTING
+        DISCONNECTED, CONNECTING, CONNECTED, HEARTBEAT_ACTIVE, HEARTBEAT_FAILED, ERROR, RECONNECTING
     }
 
     private String id;
@@ -150,7 +145,35 @@ public class KilosSession implements Parcelable, Serializable {
         }
     };
 
-    // Copy with modifications
+    // Convenience methods
+    public KilosSession copyWithStatus(SessionStatus status) {
+        KilosSession copy = copy();
+        copy.status = status;
+        return copy;
+    }
+
+    public KilosSession copyWithGroupId(String groupId) {
+        KilosSession copy = copy();
+        copy.groupId = groupId;
+        return copy;
+    }
+
+    public KilosSession copyWithDisplayName(String name) {
+        KilosSession copy = copy();
+        copy.displayName = name;
+        return copy;
+    }
+
+    public KilosSession copyWithWindow(float windowX, float windowY, int windowWidth, int windowHeight) {
+        KilosSession copy = copy();
+        copy.windowX = windowX;
+        copy.windowY = windowY;
+        copy.windowWidth = windowWidth;
+        copy.windowHeight = windowHeight;
+        return copy;
+    }
+
+    // Comprehensive copyWith for all fields (used by services)
     public KilosSession copyWith(
             SessionStatus status,
             Boolean isFocused,
@@ -163,26 +186,47 @@ public class KilosSession implements Parcelable, Serializable {
             Map<String, String> cookies,
             Map<String, String> headers
     ) {
+        KilosSession copy = copy();
+        if (status != null) copy.status = status;
+        if (isFocused != null) copy.isFocused = isFocused;
+        if (lastHeartbeatAt != null) copy.lastHeartbeatAt = lastHeartbeatAt;
+        if (lastConnectedAt != null) copy.lastConnectedAt = lastConnectedAt;
+        if (windowX != null) copy.windowX = windowX;
+        if (windowY != null) copy.windowY = windowY;
+        if (windowWidth != null) copy.windowWidth = windowWidth;
+        if (windowHeight != null) copy.windowHeight = windowHeight;
+        if (cookies != null) copy.cookies = cookies;
+        if (headers != null) copy.headers = headers;
+        return copy;
+    }
+
+    public KilosSession copyWithFocused(boolean focused) {
+        KilosSession copy = copy();
+        copy.isFocused = focused;
+        return copy;
+    }
+
+    public KilosSession copy() {
         KilosSession copy = new KilosSession();
         copy.id = this.id;
         copy.sessionId = this.sessionId;
         copy.displayName = this.displayName;
         copy.groupId = this.groupId;
         copy.url = this.url;
-        copy.status = status != null ? status : this.status;
+        copy.status = this.status;
         copy.createdAt = this.createdAt;
-        copy.lastConnectedAt = lastConnectedAt != null ? lastConnectedAt : this.lastConnectedAt;
-        copy.lastHeartbeatAt = lastHeartbeatAt != null ? lastHeartbeatAt : this.lastHeartbeatAt;
+        copy.lastConnectedAt = this.lastConnectedAt;
+        copy.lastHeartbeatAt = this.lastHeartbeatAt;
         copy.heartbeatIntervalSeconds = this.heartbeatIntervalSeconds;
         copy.isAutoReconnect = this.isAutoReconnect;
-        copy.isFocused = isFocused != null ? isFocused : this.isFocused;
-        copy.windowX = windowX != null ? windowX : this.windowX;
-        copy.windowY = windowY != null ? windowY : this.windowY;
-        copy.windowWidth = windowWidth != null ? windowWidth : this.windowWidth;
-        copy.windowHeight = windowHeight != null ? windowHeight : this.windowHeight;
+        copy.isFocused = this.isFocused;
+        copy.windowX = this.windowX;
+        copy.windowY = this.windowY;
+        copy.windowWidth = this.windowWidth;
+        copy.windowHeight = this.windowHeight;
         copy.isFloating = this.isFloating;
-        copy.cookies = cookies != null ? cookies : this.cookies;
-        copy.headers = headers != null ? headers : this.headers;
+        copy.cookies = new HashMap<>(this.cookies);
+        copy.headers = new HashMap<>(this.headers);
         return copy;
     }
 
@@ -193,67 +237,6 @@ public class KilosSession implements Parcelable, Serializable {
         }
         return wsUrl + "websocket";
     }
-
-    // Getters and setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-
-    public String getSessionId() { return sessionId; }
-    public void setSessionId(String sessionId) {
-        this.sessionId = sessionId;
-        this.url = "https://app.kilo.ai/cloud/chat?sessionId=" + sessionId;
-    }
-
-    public String getDisplayName() { return displayName; }
-    public void setDisplayName(String displayName) { this.displayName = displayName; }
-
-    public String getGroupId() { return groupId; }
-    public void setGroupId(String groupId) { this.groupId = groupId; }
-
-    public String getUrl() { return url; }
-    public void setUrl(String url) { this.url = url; }
-
-    public SessionStatus getStatus() { return status; }
-    public void setStatus(SessionStatus status) { this.status = status; }
-
-    public long getCreatedAt() { return createdAt; }
-    public void setCreatedAt(long createdAt) { this.createdAt = createdAt; }
-
-    public long getLastConnectedAt() { return lastConnectedAt; }
-    public void setLastConnectedAt(long lastConnectedAt) { this.lastConnectedAt = lastConnectedAt; }
-
-    public long getLastHeartbeatAt() { return lastHeartbeatAt; }
-    public void setLastHeartbeatAt(long lastHeartbeatAt) { this.lastHeartbeatAt = lastHeartbeatAt; }
-
-    public int getHeartbeatIntervalSeconds() { return heartbeatIntervalSeconds; }
-    public void setHeartbeatIntervalSeconds(int heartbeatIntervalSeconds) { this.heartbeatIntervalSeconds = heartbeatIntervalSeconds; }
-
-    public boolean isAutoReconnect() { return isAutoReconnect; }
-    public void setAutoReconnect(boolean autoReconnect) { isAutoReconnect = autoReconnect; }
-
-    public boolean isFocused() { return isFocused; }
-    public void setFocused(boolean focused) { isFocused = focused; }
-
-    public float getWindowX() { return windowX; }
-    public void setWindowX(float windowX) { this.windowX = windowX; }
-
-    public float getWindowY() { return windowY; }
-    public void setWindowY(float windowY) { this.windowY = windowY; }
-
-    public int getWindowWidth() { return windowWidth; }
-    public void setWindowWidth(int windowWidth) { this.windowWidth = windowWidth; }
-
-    public int getWindowHeight() { return windowHeight; }
-    public void setWindowHeight(int windowHeight) { this.windowHeight = windowHeight; }
-
-    public boolean isFloating() { return isFloating; }
-    public void setFloating(boolean floating) { isFloating = floating; }
-
-    public Map<String, String> getCookies() { return cookies; }
-    public void setCookies(Map<String, String> cookies) { this.cookies = cookies; }
-
-    public Map<String, String> getHeaders() { return headers; }
-    public void setHeaders(Map<String, String> headers) { this.headers = headers; }
 
     // JSON serialization
     public JSONObject toJson() {
@@ -308,22 +291,61 @@ public class KilosSession implements Parcelable, Serializable {
         return session;
     }
 
-    // Convenience copy methods
-    public KilosSession copyWithStatus(SessionStatus status) {
-        return copyWith(status, null, null, null, null, null, null, null, null, null);
-    }
+    // Getters and setters
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
 
-    public KilosSession copyWithFocused(boolean focused) {
-        return copyWith(null, focused, null, null, null, null, null, null, null, null);
-    }
+    public String getSessionId() { return sessionId; }
+    public void setSessionId(String sessionId) { this.sessionId = sessionId; }
 
-    public KilosSession copyWithGroupId(String groupId) {
-        KilosSession copy = copy();
-        copy.groupId = groupId;
-        return copy;
-    }
+    public String getDisplayName() { return displayName; }
+    public void setDisplayName(String displayName) { this.displayName = displayName; }
 
-    public KilosSession copy() {
-        return copyWith(null, null, null, null, null, null, null, null, null, null);
-    }
+    public String getGroupId() { return groupId; }
+    public void setGroupId(String groupId) { this.groupId = groupId; }
+
+    public String getUrl() { return url; }
+    public void setUrl(String url) { this.url = url; }
+
+    public SessionStatus getStatus() { return status; }
+    public void setStatus(SessionStatus status) { this.status = status; }
+
+    public long getCreatedAt() { return createdAt; }
+    public void setCreatedAt(long createdAt) { this.createdAt = createdAt; }
+
+    public long getLastConnectedAt() { return lastConnectedAt; }
+    public void setLastConnectedAt(long lastConnectedAt) { this.lastConnectedAt = lastConnectedAt; }
+
+    public long getLastHeartbeatAt() { return lastHeartbeatAt; }
+    public void setLastHeartbeatAt(long lastHeartbeatAt) { this.lastHeartbeatAt = lastHeartbeatAt; }
+
+    public int getHeartbeatIntervalSeconds() { return heartbeatIntervalSeconds; }
+    public void setHeartbeatIntervalSeconds(int heartbeatIntervalSeconds) { this.heartbeatIntervalSeconds = heartbeatIntervalSeconds; }
+
+    public boolean isAutoReconnect() { return isAutoReconnect; }
+    public void setAutoReconnect(boolean autoReconnect) { isAutoReconnect = autoReconnect; }
+
+    public boolean isFocused() { return isFocused; }
+    public void setFocused(boolean focused) { isFocused = focused; }
+
+    public float getWindowX() { return windowX; }
+    public void setWindowX(float windowX) { this.windowX = windowX; }
+
+    public float getWindowY() { return windowY; }
+    public void setWindowY(float windowY) { this.windowY = windowY; }
+
+    public int getWindowWidth() { return windowWidth; }
+    public void setWindowWidth(int windowWidth) { this.windowWidth = windowWidth; }
+
+    public int getWindowHeight() { return windowHeight; }
+    public void setWindowHeight(int windowHeight) { this.windowHeight = windowHeight; }
+
+    public boolean isFloating() { return isFloating; }
+    public void setFloating(boolean floating) { isFloating = floating; }
+
+    public Map<String, String> getCookies() { return cookies; }
+    public void setCookies(Map<String, String> cookies) { this.cookies = cookies; }
+
+    public Map<String, String> getHeaders() { return headers; }
+    public void setHeaders(Map<String, String> headers) { this.headers = headers; }
 }
