@@ -156,7 +156,15 @@ function colorToHex(cl){var c={White:'#F0F0F0',Black:'#222222',Silver:'#C0C0C0',
 
 // ═══════════════════════════════════════════
 const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,_povOffset:0,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,
-  init(){
+  _getSignalBars(rssi){
+    // Convert RSSI to signal bars (0-4)
+    // RSSI ranges: -30 to -50 (excellent), -50 to -60 (good), -60 to -70 (fair), -70 to -80 (weak), -80 to -100 (poor)
+    if (rssi >= -50) return '▂▄▆█';       // Excellent: 4 bars
+    if (rssi >= -60) return '▂▄▆ ';       // Good: 3 bars
+    if (rssi >= -70) return '▂▄  ';       // Fair: 2 bars
+    if (rssi >= -80) return '▂   ';       // Weak: 1 bar
+    return '    ';                          // Poor: 0 bars
+  },
     var c=document.getElementById('canvas-container');
     this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);
     this.camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
