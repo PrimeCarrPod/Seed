@@ -860,6 +860,8 @@ public class MainActivity extends Activity {
     private WebView buildWebView() {
         WebView wv = new WebView(this);
         wv.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        // Enable hardware acceleration for WebGL/Three.js rendering
+        wv.setLayerType(View.LAYER_TYPE_HARDWARE, null);
         WebSettings s = wv.getSettings();
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);
