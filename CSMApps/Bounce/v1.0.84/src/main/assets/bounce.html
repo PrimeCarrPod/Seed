@@ -165,7 +165,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     if (rssi >= -80) return '▂   ';       // Weak: 1 bar
     return '    ';                          // Poor: 0 bars
   },
-    var c=document.getElementById('canvas-container');
+  init(){
     this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);
     this.camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
     this.camera.position.set(0,18,30);
