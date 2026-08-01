@@ -1,6 +1,6 @@
 # CSM — Carrington Storm Motors & Safe Pod Engineering
 
-> **Project AEGIS Master Repository — Brought to you by Mork, Chester, and Zirconia**
+> **Project AEGIS Master Repository — Brought to you by Mork, Chester, and Zirconia** Care of Jason Brodsky of California.
 
 ---
 
