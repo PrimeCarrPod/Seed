@@ -296,6 +296,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     
     // Update or create spatial device
     if(!this.bt3dSpatial[r.addr]){
+      console.log('NEW 3D DEVICE:', r.addr, 'pos:', r.x, r.y, r.z, 'brightness:', r.brightness);
       this.bt3dSpatial[r.addr]={addr:r.addr,name:r.name,x:0,y:0,z:0,brightness:0.3,active:true,trajectory:[],lastSeen:Date.now()};
       // Create 3D visualization
       if(this.scene){
@@ -323,6 +324,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     
     var device=this.bt3dSpatial[r.addr];
     device.x=r.x;device.y=r.y;device.z=r.z;
+    if(device.group) console.log('UPDATE 3D DEVICE:', r.addr, 'pos:', r.x, r.y, r.z);
     device.rssi=r.rssi;device.dist=r.dist;
     device.brightness=r.brightness;
     device.active=r.active;

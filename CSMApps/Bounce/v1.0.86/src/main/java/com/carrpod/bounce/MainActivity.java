@@ -113,9 +113,9 @@ public class MainActivity extends Activity {
     private final Map<String, BtDevice3D> btDevices = new HashMap<>();
     private final Map<String, KalmanState> btKalmanStates = new HashMap<>();
     private final Map<String, List<BtPositionSample>> btTrajectories = new HashMap<>();
-    private float phoneAzimuth = 0f;
-    private float phonePitch = 0f;
-    private float phoneRoll = 0f;
+    private volatile float phoneAzimuth = 0f;
+    private volatile float phonePitch = 0f;
+    private volatile float phoneRoll = 0f;
     private boolean theoryMode = false;
     private Handler btCleanupHandler = new Handler(Looper.getMainLooper());
     private Runnable btCleanupRunnable;
@@ -456,6 +456,7 @@ public class MainActivity extends Activity {
             if (device == null) {
                 device = new BtDevice3D(addr, name);
                 btDevices.put(addr, device);
+                android.util.Log.d("BounceBT", "NEW DEVICE: " + addr + " name=" + name + " dist=" + distance + " az=" + phoneAzimuth + " pitch=" + phonePitch);
             }
             
             // Update device state
