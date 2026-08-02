@@ -498,7 +498,8 @@ public class MainActivity extends Activity {
             final float fpitch = phonePitch;
 
             webView.post(() -> {
-                String json = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
+                // Call both handlers for compatibility: onBtResult for UI list, onBtResult3D for 3D
+                String json3D = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
                     + "\",\"rssi\":" + rawRssi + ",\"filtRssi\":" + String.format("%.1f", filteredRssi)
                     + "\",\"dist\":" + String.format("%.1f", distance)
                     + "\",\"x\":" + String.format("%.2f", fx)
@@ -509,7 +510,11 @@ public class MainActivity extends Activity {
                     + "\",\"persist\":" + fpersist
                     + "\",\"azimuth\":" + String.format("%.1f", fazimuth)
                     + "\",\"pitch\":" + String.format("%.1f", fpitch) + "}";
-                injectJs("Bounce.onBtResult3D(" + json + ")");
+                injectJs("Bounce.onBtResult3D(" + json3D + ")");
+                
+                String jsonUI = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
+                    + "\",\"rssi\":" + rawRssi + ",\"dist\":" + String.format("%.1f", distance) + "}";
+                injectJs("Bounce.onBtResult(" + jsonUI + ")");
             });
         }
         public void onScanFailed(int errorCode) {
