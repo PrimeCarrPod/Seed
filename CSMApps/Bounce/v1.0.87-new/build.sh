@@ -13,7 +13,7 @@ VERSION_NAME="1.0.87"
 COMPILE_SDK=33
 TARGET_SDK=33
 MIN_SDK=24
-BUILD_TOOLS_VERSION="34.0.0"
+BUILD_TOOLS_VERSION="33.0.1"
 
 PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SRC_DIR="$PROJECT_DIR/src/main"
@@ -21,7 +21,7 @@ GEN_DIR="$PROJECT_DIR/gen"
 OBJ_DIR="$PROJECT_DIR/obj"
 OUT_DIR="$PROJECT_DIR/out"
 
-SDK_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5c7dbc6e-6f98-4432-ad3d-a23934805977/.sdk/android-sdk"
+SDK_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ffc7f702-948b-4a00-b2ed-956874e356c8/.sdk/android-sdk"
 BUILD_TOOLS="$SDK_DIR/build-tools/$BUILD_TOOLS_VERSION"
 PLATFORM="$SDK_DIR/platforms/android-$COMPILE_SDK"
 ANDROID_JAR="$PLATFORM/android.jar"
@@ -31,8 +31,8 @@ if [ -d "$PROJECT_DIR/../../../../.sdk/jdk17" ]; then
     export JAVA_HOME="$PROJECT_DIR/../../../../.sdk/jdk17"
     export PATH="$JAVA_HOME/bin:$PATH"
 fi
-if [ -d "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02/.sdk/jdk17" ]; then
-    export JAVA_HOME="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02/.sdk/jdk17"
+if [ -d "/usr/lib/jvm/java-17-openjdk-amd64" ]; then
+    export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
     export PATH="$JAVA_HOME/bin:$PATH"
 fi
 
