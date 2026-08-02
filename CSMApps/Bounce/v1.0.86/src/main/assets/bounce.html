@@ -276,6 +276,20 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     var now=Date.now();
     for(var i=this.btNodes.length-1;i>=0;i--){if(now-this.btNodes[i].lastSeen>60000)this.btNodes.splice(i,1)}
   },
+  onBtStatus(jsonStr){
+    var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
+    var el=document.getElementById('bt-status');
+    if(!el){
+      el=document.createElement('div');
+      el.id='bt-status';
+      el.style.cssText='font-size:9px;color:#4488FF;padding:4px;background:rgba(68,136,255,.1);border-radius:4px;margin:4px 0';
+      var btList=document.getElementById('bt-list');
+      if(btList && btList.parentNode) btList.parentNode.insertBefore(el, btList);
+    }
+    var status=r.status||'unknown';
+    var msg={'scanning':'🔵 Scanning...','bt_disabled':'🔴 Bluetooth OFF','no_le_scanner':'🔴 No LE Scanner','no_permission':'🔴 Need Permission'}[status] || status;
+    el.textContent='BT: '+msg;
+  },
   onBtResult3D(jsonStr){
     var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
     if(!this.bt3dSpatial)this.bt3dSpatial={};
