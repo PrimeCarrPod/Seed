@@ -410,11 +410,13 @@ public class MainActivity extends Activity {
             .build();
         bleScanner.startScan(null, settings, btCallback);
         injectJs("Bounce.onBtStatus({status:'scanning'})");
+        android.util.Log.d("BounceBT", "BT scan started successfully");
     }
 
     private final ScanCallback btCallback = new ScanCallback() {
         public void onScanResult(int callbackType, android.bluetooth.le.ScanResult result) {
             if (result == null || webView == null) return;
+            android.util.Log.d("BounceBT", "onScanResult: " + result.getDevice().getAddress() + " rssi=" + result.getRssi());
             BluetoothDevice dev = result.getDevice();
             int rawRssi = result.getRssi();
             String addr = dev.getAddress();
