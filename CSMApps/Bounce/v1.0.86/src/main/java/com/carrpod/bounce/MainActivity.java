@@ -411,6 +411,22 @@ public class MainActivity extends Activity {
         bleScanner.startScan(null, settings, btCallback);
         injectJs("Bounce.onBtStatus({status:'scanning'})");
         android.util.Log.d("BounceBT", "BT scan started successfully");
+        
+        // Restart scan periodically like Wi-Fi to ensure continuous scanning
+        scanHandler.postDelayed(new Runnable() {
+            public void run() {
+                if (btScanning && bleScanner != null && bluetoothAdapter != null && bluetoothAdapter.isEnabled()) {
+                    try {
+                        bleScanner.stopScan(btCallback);
+                    } catch (Exception ignored) {}
+                    bleScanner.startScan(null, settings, btCallback);
+                    android.util.Log.d("BounceBT", "BT scan restarted");
+                }
+                if (btScanning) {
+                    scanHandler.postDelayed(this, 50000); // Restart every 5 seconds
+                }
+            }
+        }, 5000);
     }
 
     private final ScanCallback btCallback = new ScanCallback() {
