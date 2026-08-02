@@ -55,11 +55,13 @@ import com.carrpod.bounce.wifi.PositionEKF;
 import com.carrpod.bounce.wifi.ParticleFilter;
 import com.carrpod.bounce.wifi.ZoneHMM;
 import com.carrpod.bounce.wifi.WifiRttRanging;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import android.util.Log;
 
 public class MainActivity extends Activity {
 
@@ -299,17 +301,17 @@ public class MainActivity extends Activity {
                         final String addr = entry.getKey();
                         final long a = age;
                         webView.post(() -> {
-                            String json = "{"addr":"" + addr
-                                + "","name":"" + escapeJson(d.name) + """
-                                + "","rssi":" + (int)d.rssi
-                                + "","dist":" + String.format("%.1f", d.distance)
-                                + "","x":" + String.format("%.2f", d.x)
-                                + "","y":" + String.format("%.2f", d.y)
-                                + "","z":" + String.format("%.2f", d.z)
-                                + "","brightness":" + String.format("%.2f", d.brightness)
-                                + "","active":" + d.active
-                                + "","persist":" + ((now - d.firstSeen) / 1000)
-                                + "","age":" + (a / 1000) + "}";
+                            String json = "{\"addr\":\"" + addr
+                                + "\",\"name\":\"" + escapeJson(d.name) + "\""
+                                + "\",\"rssi\":" + (int)d.rssi
+                                + "\",\"dist\":" + String.format("%.1f", d.distance)
+                                + "\",\"x\":" + String.format("%.2f", d.x)
+                                + "\",\"y\":" + String.format("%.2f", d.y)
+                                + "\",\"z\":" + String.format("%.2f", d.z)
+                                + "\",\"brightness\":" + String.format("%.2f", d.brightness)
+                                + "\",\"active\":" + d.active
+                                + "\",\"persist\":" + ((now - d.firstSeen) / 1000)
+                                + "\",\"age\":" + (a / 1000) + "}";
                             injectJs("Bounce.onBtResult3D(" + json + ")");
                         });
                     }
@@ -387,29 +389,133 @@ public class MainActivity extends Activity {
 
     private void startBtScanning() {
         if (Build.VERSION.SDK_INT >= 31) {
-            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) return;
+            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                injectJs("Bounce.onBtStatus({status:'no_permission'})");
+                return;
+            }
         }
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) return;
+        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) {
+            injectJs("Bounce.onBtStatus({status:'bt_disabled'})");
+            return;
+        }
         bleScanner = bluetoothAdapter.getBluetoothLeScanner();
-        if (bleScanner == null) return;
+        if (bleScanner == null) {
+            injectJs("Bounce.onBtStatus({status:'no_le_scanner'})");
+            return;
+        }
         btScanning = true;
         ScanSettings settings = new ScanSettings.Builder()
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
             .build();
         bleScanner.startScan(null, settings, btCallback);
+        injectJs("Bounce.onBtStatus({status:'scanning'})");
+        android.util.Log.d("BounceBT", "BT scan started successfully");
+        
+        // Restart scan periodically like Wi-Fi to ensure continuous scanning
+        scanHandler.postDelayed(new Runnable() {
+            public void run() {
+                if (btScanning && bleScanner != null && bluetoothAdapter != null && bluetoothAdapter.isEnabled()) {
+                    try {
+                        bleScanner.stopScan(btCallback);
+                    } catch (Exception ignored) {}
+                    bleScanner.startScan(null, settings, btCallback);
+                    android.util.Log.d("BounceBT", "BT scan restarted");
+                }
+                if (btScanning) {
+                    scanHandler.postDelayed(this, 50000); // Restart every 5 seconds
+                }
+            }
+        }, 5000);
     }
 
     private final ScanCallback btCallback = new ScanCallback() {
         public void onScanResult(int callbackType, android.bluetooth.le.ScanResult result) {
             if (result == null || webView == null) return;
+            android.util.Log.d("BounceBT", "onScanResult: " + result.getDevice().getAddress() + " rssi=" + result.getRssi());
             BluetoothDevice dev = result.getDevice();
-            int rssi = result.getRssi();
-            float dist = (float) Math.pow(10, (-40 - rssi) / 20.0);
+            int rawRssi = result.getRssi();
+            String addr = dev.getAddress();
+            String name = dev.getName() != null ? dev.getName() : "Unknown";
+            long now = System.currentTimeMillis();
+
+            // Kalman filter for RSSI smoothing
+            KalmanState ks = btKalmanStates.get(addr);
+            if (ks == null) { ks = new KalmanState(); ks.x = rawRssi; btKalmanStates.put(addr, ks); }
+            ks.p += 0.01f;
+            float k = ks.p / (ks.p + 20f);
+            ks.x += k * (rawRssi - ks.x);
+            ks.p *= (1f - k);
+            float filteredRssi = ks.x;
+
+            // Distance estimation using filtered RSSI
+            float distance = (float) Math.pow(10, (BT_RSSI_1M - filteredRssi) / (10f * BT_PATH_LOSS_EXPONENT));
+
+            // Get or create 3D device
+            BtDevice3D device = btDevices.get(addr);
+            if (device == null) {
+                device = new BtDevice3D(addr, name);
+                btDevices.put(addr, device);
+                android.util.Log.d("BounceBT", "NEW DEVICE: " + addr + " name=" + name + " dist=" + distance + " az=" + phoneAzimuth + " pitch=" + phonePitch);
+            }
+            
+            // Update device state
+            device.rssi = rawRssi;
+            device.filteredRssi = filteredRssi;
+            device.distance = distance;
+            device.lastSeen = now;
+            device.active = true;
+            
+            // RE-ENERGIZE BRIGHTNESS on signal catch
+            device.brightness = Math.min(1.0f, device.brightness * BRIGHTNESS_BOOST);
+            
+            // Calculate 3D position relative to phone using phone orientation
+            float relAzimuth = phoneAzimuth;
+            float relPitch = phonePitch;
+            
+            // Convert to 3D coordinates (phone at origin, facing azimuth, tilted pitch)
+            float horizontalDist = distance * (float) Math.cos(Math.toRadians(relPitch));
+            device.x = horizontalDist * (float) Math.sin(Math.toRadians(relAzimuth));
+            device.y = horizontalDist * (float) Math.cos(Math.toRadians(relAzimuth));
+            device.z = distance * (float) Math.sin(Math.toRadians(relPitch)); // Positive = above, negative = below
+            
+            // Add to trajectory
+            device.trajectory.add(new BtPositionSample(now, device.x, device.y, device.z, filteredRssi, distance, phoneAzimuth, phonePitch));
+            if (device.trajectory.size() > 50) device.trajectory.remove(0);
+            
+            // Also store in global trajectory map for theory view
+            List<BtPositionSample> traj = btTrajectories.get(addr);
+            if (traj == null) { traj = new ArrayList<>(); btTrajectories.put(addr, traj); }
+            traj.add(new BtPositionSample(now, device.x, device.y, device.z, filteredRssi, distance, phoneAzimuth, phonePitch));
+            if (traj.size() > 100) traj.remove(0);
+
+            // Capture values for lambda (must be final or effectively final)
+            final float fx = device.x;
+            final float fy = device.y;
+            final float fz = device.z;
+            final float fbrightness = device.brightness;
+            final long fpersist = (now - device.firstSeen) / 1000;
+            final float fazimuth = phoneAzimuth;
+            final float fpitch = phonePitch;
+
             webView.post(() -> {
-                String json = "{\"name\":\"" + escapeJson(dev.getName()) + "\",\"addr\":\"" + dev.getAddress()
-                    + "\",\"rssi\":" + rssi + ",\"dist\":" + String.format("%.1f", dist) + "}";
-                injectJs("Bounce.onBtResult(" + json + ")");
+                // Call both handlers for compatibility: onBtResult for UI list, onBtResult3D for 3D
+                String json3D = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
+                    + "\",\"rssi\":" + rawRssi + ",\"filtRssi\":" + String.format("%.1f", filteredRssi)
+                    + "\",\"dist\":" + String.format("%.1f", distance)
+                    + "\",\"x\":" + String.format("%.2f", fx)
+                    + "\",\"y\":" + String.format("%.2f", fy)
+                    + "\",\"z\":" + String.format("%.2f", fz)
+                    + "\",\"brightness\":" + String.format("%.2f", fbrightness)
+                    + "\",\"active\":true"
+                    + "\",\"persist\":" + fpersist
+                    + "\",\"azimuth\":" + String.format("%.1f", fazimuth)
+                    + "\",\"pitch\":" + String.format("%.1f", fpitch) + "}";
+                injectJs("Bounce.onBtResult3D(" + json3D + ")");
+                
+                String jsonUI = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
+                    + "\",\"rssi\":" + rawRssi + ",\"dist\":" + String.format("%.1f", distance) + "}";
+                injectJs("Bounce.onBtResult(" + jsonUI + ")");
             });
         }
         public void onScanFailed(int errorCode) {
@@ -1006,6 +1112,8 @@ public class MainActivity extends Activity {
     private WebView buildWebView() {
         WebView wv = new WebView(this);
         wv.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        // Enable hardware acceleration for WebGL/Three.js rendering
+        wv.setLayerType(View.LAYER_TYPE_HARDWARE, null);
         WebSettings s = wv.getSettings();
         s.setJavaScriptEnabled(true);
         s.setDomStorageEnabled(true);
@@ -1131,7 +1239,7 @@ public class MainActivity extends Activity {
     public class JsBridge {
         @JavascriptInterface
         public void onReady(String j) {
-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.79 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.87 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
         }
 
         @JavascriptInterface
@@ -1152,6 +1260,60 @@ public class MainActivity extends Activity {
             runOnUiThread(() -> {
                 if (tagTextView != null) tagTextView.setText(text);
             });
+        }
+        
+        @JavascriptInterface
+        public void setTheoryMode(boolean enabled) {
+            theoryMode = enabled;
+            runOnUiThread(() -> {
+                String mode = enabled ? "THEORY" : "LIVE";
+                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.87 · " + mode);
+                Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
+            });
+        }
+        
+        @JavascriptInterface
+        public String getTrajectory(String addr) {
+            List<BtPositionSample> traj = btTrajectories.get(addr);
+            if (traj == null || traj.isEmpty()) return "[]";
+            StringBuilder json = new StringBuilder("[");
+            for (int i = 0; i < traj.size(); i++) {
+                BtPositionSample s = traj.get(i);
+                if (i > 0) json.append(",");
+                json.append("{\"t\":").append(s.timestamp)
+                    .append(",\"x\":" + String.format("%.2f", s.x))
+                    .append(",\"y\":" + String.format("%.2f", s.y))
+                    .append(",\"z\":" + String.format("%.2f", s.z))
+                    .append(",\"rssi\":" + (int)s.rssi)
+                    .append(",\"dist\":" + String.format("%.1f", s.distance))
+                    .append(",\"azimuth\":" + String.format("%.1f", s.azimuth))
+                    .append(",\"pitch\":" + String.format("%.1f", s.pitch) + "}");
+            }
+            json.append("]");
+            return json.toString();
+        }
+        
+        @JavascriptInterface
+        public String getAllDevices() {
+            StringBuilder json = new StringBuilder("[");
+            boolean first = true;
+            for (Map.Entry<String, BtDevice3D> entry : btDevices.entrySet()) {
+                BtDevice3D d = entry.getValue();
+                if (!first) json.append(",");
+                first = false;
+                json.append("{\"addr\":\"" + entry.getKey() + "\"")
+                    .append(",\"name\":\"" + escapeJson(d.name) + "\"")
+                    .append(",\"rssi\":" + (int)d.rssi)
+                    .append(",\"dist\":" + String.format("%.1f", d.distance))
+                    .append(",\"x\":" + String.format("%.2f", d.x))
+                    .append(",\"y\":" + String.format("%.2f", d.y))
+                    .append(",\"z\":" + String.format("%.2f", d.z))
+                    .append(",\"brightness\":" + String.format("%.2f", d.brightness))
+                    .append(",\"active\":" + d.active)
+                    .append(",\"persist\":" + ((System.currentTimeMillis() - d.firstSeen) / 1000) + "}");
+            }
+            json.append("]");
+            return json.toString();
         }
     }
 }
