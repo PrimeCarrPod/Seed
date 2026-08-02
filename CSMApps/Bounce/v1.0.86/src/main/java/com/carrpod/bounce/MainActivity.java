@@ -104,6 +104,12 @@ public class MainActivity extends Activity {
     private static final float BT_RSSI_1M = -55f;
     private static final float BRIGHTNESS_BOOST = 1.5f;
     private static final float BRIGHTNESS_DECAY = 0.98f;
+    // Sensor smoothing (low-pass filter alpha = 0.15 for ~85% smoothing)
+    private static final float SENSOR_ALPHA = 0.15f;
+    private float smoothAzimuth = 0f;
+    private float smoothPitch = 0f;
+    private float smoothRoll = 0f;
+    private boolean firstSensorUpdate = true;
     private final Map<String, BtDevice3D> btDevices = new HashMap<>();
     private final Map<String, KalmanState> btKalmanStates = new HashMap<>();
     private final Map<String, List<BtPositionSample>> btTrajectories = new HashMap<>();
@@ -383,17 +389,27 @@ public class MainActivity extends Activity {
 
     private void startBtScanning() {
         if (Build.VERSION.SDK_INT >= 31) {
-            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) return;
+            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                injectJs("Bounce.onBtStatus({status:'no_permission'})");
+                return;
+            }
         }
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) return;
+        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) {
+            injectJs("Bounce.onBtStatus({status:'bt_disabled'})");
+            return;
+        }
         bleScanner = bluetoothAdapter.getBluetoothLeScanner();
-        if (bleScanner == null) return;
+        if (bleScanner == null) {
+            injectJs("Bounce.onBtStatus({status:'no_le_scanner'})");
+            return;
+        }
         btScanning = true;
         ScanSettings settings = new ScanSettings.Builder()
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
             .build();
         bleScanner.startScan(null, settings, btCallback);
+        injectJs("Bounce.onBtStatus({status:'scanning'})");
     }
 
     private final ScanCallback btCallback = new ScanCallback() {
@@ -534,10 +550,27 @@ public class MainActivity extends Activity {
                     float roll = (float) Math.toDegrees(orientation[2]);
                     String orn = Math.abs(pitch) < 20 ? "flat" : Math.abs(pitch) > 60 ? "upright" : "tilted";
 
-                    // Store phone orientation for Bluetooth 3D positioning
-                    phoneAzimuth = azimuth;
-                    phonePitch = pitch;
-                    phoneRoll = roll;
+                    // Store phone orientation for Bluetooth 3D positioning with low-pass filter
+                    if (firstSensorUpdate) {
+                        smoothAzimuth = azimuth;
+                        smoothPitch = pitch;
+                        smoothRoll = roll;
+                        firstSensorUpdate = false;
+                    } else {
+                        // Handle azimuth wrap-around (0/360 boundary)
+                        float azDiff = azimuth - smoothAzimuth;
+                        if (azDiff > 180) azDiff -= 360;
+                        else if (azDiff < -180) azDiff += 360;
+                        smoothAzimuth += SENSOR_ALPHA * azDiff;
+                        if (smoothAzimuth >= 360) smoothAzimuth -= 360;
+                        else if (smoothAzimuth < 0) smoothAzimuth += 360;
+                        
+                        smoothPitch += SENSOR_ALPHA * (pitch - smoothPitch);
+                        smoothRoll += SENSOR_ALPHA * (roll - smoothRoll);
+                    }
+                    phoneAzimuth = smoothAzimuth;
+                    phonePitch = smoothPitch;
+                    phoneRoll = smoothRoll;
 
                     final float az = azimuth;
                     final float pt = pitch;
