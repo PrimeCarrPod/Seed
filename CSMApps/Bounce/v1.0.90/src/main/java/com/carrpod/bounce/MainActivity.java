@@ -2,8 +2,6 @@ package com.carrpod.bounce;
 
 import android.Manifest;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -48,12 +46,10 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.text.InputType;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import com.carrpod.bounce.wifi.RssiKalmanFilter;
@@ -298,7 +294,7 @@ public class MainActivity extends Activity {
             runOnUiThread(() -> {
                 if (latest != null && isNewerVersion(latest, "1.0.90")) {
                     latestVersion = latest;
-                    showUpdateDialog();
+                    injectJs("UI.showUpdateMenu('" + latestVersion + "')");
                 }
             });
         }).start();
@@ -343,55 +339,6 @@ public class MainActivity extends Activity {
         } catch (Exception e) {
             return false;
         }
-    }
-
-    private void showUpdateDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("A New Bounce is Available");
-        builder.setMessage("A newer version (" + latestVersion + ") is available.\n\nCurrent version: 1.0.90");
-
-        final EditText ignoreInput = new EditText(this);
-        ignoreInput.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
-        ignoreInput.setHint("10");
-        ignoreInput.setText("10");
-
-        LinearLayout layout = new LinearLayout(this);
-        layout.setOrientation(LinearLayout.VERTICAL);
-        layout.setPadding(dp(24), dp(8), dp(24), dp(8));
-        layout.addView(ignoreInput);
-
-        builder.setView(layout);
-
-        builder.setPositiveButton("Yes Please Update", (dialog, which) -> {
-            launchUpdate();
-        });
-
-        builder.setNegativeButton("Please Only Download New APK", (dialog, which) -> {
-            downloadApkOnly();
-        });
-
-        builder.setNeutralButton("Please Ignore", (dialog, which) -> {
-            String val = ignoreInput.getText().toString().trim();
-            int count = 10;
-            try {
-                count = Integer.parseInt(val);
-            } catch (Exception e) {}
-            count = Math.max(0, Math.min(999000, count));
-            prefs.edit().putInt("ignoreCount", count).apply();
-        });
-
-        builder.setCancelable(false);
-        builder.show();
-    }
-
-    private void launchUpdate() {
-        Toast.makeText(this, "Updating to v" + latestVersion + "...", Toast.LENGTH_LONG).show();
-        prefs.edit().putInt("ignoreCount", 0).apply();
-    }
-
-    private void downloadApkOnly() {
-        Toast.makeText(this, "Downloading Bounce v" + latestVersion + ".apk...", Toast.LENGTH_LONG).show();
-        prefs.edit().putInt("ignoreCount", 0).apply();
     }
 
     private void startBtCleanupTask() {
@@ -1439,6 +1386,22 @@ public class MainActivity extends Activity {
             }
             json.append("]");
             return json.toString();
+        }
+
+        @JavascriptInterface
+        public void onUpdateSelected(String action) {
+            runOnUiThread(() -> {
+                if ("update".equals(action)) {
+                    Toast.makeText(MainActivity.this, "Updating to v" + latestVersion + "...", Toast.LENGTH_SHORT).show();
+                    prefs.edit().putInt("ignoreCount", 0).apply();
+                } else if ("download".equals(action)) {
+                    Toast.makeText(MainActivity.this, "Downloading Bounce v" + latestVersion + ".apk...", Toast.LENGTH_SHORT).show();
+                    prefs.edit().putInt("ignoreCount", 0).apply();
+                } else if ("ignore".equals(action)) {
+                    prefs.edit().putInt("ignoreCount", 10).apply();
+                    Toast.makeText(MainActivity.this, "Ignoring updates for 10 checks", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }
