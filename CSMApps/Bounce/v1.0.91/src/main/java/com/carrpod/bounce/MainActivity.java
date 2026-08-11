@@ -1221,7 +1221,7 @@ public class MainActivity extends Activity {
         logo.setGravity(Gravity.CENTER);
 
         TextView tag = new TextView(this);
-        tag.setText("RSSI Kalman · v1.0.79");
+        tag.setText("RSSI Kalman · v1.0.91");
         tag.setTextSize(11f);
         tag.setTextColor(Color.parseColor("#E8E8F0"));
         tag.setGravity(Gravity.CENTER);
@@ -1394,6 +1394,22 @@ public class MainActivity extends Activity {
             runOnUiThread(() -> {
                 latestVersion = ver;
                 MainActivity.this.startUpdate();
+            });
+        }
+
+        @JavascriptInterface
+        public void onUpdateSelected(String action) {
+            runOnUiThread(() -> {
+                if ("update".equals(action)) {
+                    Toast.makeText(MainActivity.this, "Updating to v" + latestVersion + "...", Toast.LENGTH_SHORT).show();
+                    prefs.edit().putInt("ignoreCount", 0).apply();
+                } else if ("download".equals(action)) {
+                    Toast.makeText(MainActivity.this, "Downloading Bounce v" + latestVersion + ".apk...", Toast.LENGTH_SHORT).show();
+                    prefs.edit().putInt("ignoreCount", 0).apply();
+                } else if ("ignore".equals(action)) {
+                    prefs.edit().putInt("ignoreCount", 10).apply();
+                    Toast.makeText(MainActivity.this, "Ignoring updates for 10 checks", Toast.LENGTH_SHORT).show();
+                }
             });
         }
     }

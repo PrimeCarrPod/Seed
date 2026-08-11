@@ -30,6 +30,7 @@
     #hdr{position:fixed;top:0;left:0;right:0;padding:40px 16px 10px 16px;z-index:20;pointer-events:none;display:flex;justify-content:space-between;align-items:flex-start;background:linear-gradient(to bottom,rgba(0,0,0,.95),rgba(0,0,0,.4) 85%,transparent)}
     #hud-left{bottom:10px;left:10px;width:280px;transform:translateX(0)}
     #hud-right{bottom:10px;right:10px;width:280px;transform:translateX(0)}
+    #hud-update{bottom:340px;right:10px;width:280px;transform:translateX(0)}
     .flex{display:flex}.gap-1{gap:4px}.gap-2{gap:.5rem}.flex-wrap{flex-wrap:wrap}.justify-between{justify-content:space-between}
     .pointer-events-auto{pointer-events:auto}.pointer-events-none{pointer-events:none}
     .text-xs{font-size:.68rem}.font-bold{font-weight:700}.font-mono{font-family:monospace}.uppercase{text-transform:uppercase}
@@ -63,6 +64,7 @@
     <button id="btn-theory" class="btn btn-p" onclick="Bounce.toggleTheoryMode()">THEORY</button>
     <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>
     <button id="btn-lock" class="btn btn-o" onclick="LockScreen.enable()">LOCK</button>
+    <button id="btn-check-update" class="btn btn-o" onclick="Bounce.checkUpdate()" style="opacity:0.6;font-size:9px;padding:4px 8px">CHECK UPDATE</button>
   </div>
 </div>
 
@@ -102,6 +104,19 @@
   <div class="hud p-2 pointer-events-auto scroll">
     <h3 class="text-blue text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(68,136,255,.3)">◇ Scanner · <span id="beacon-count" class="text-blue font-mono">0</span> signals</h3>
     <ul id="beacon-list"></ul>
+  </div>
+</div>
+
+<div id="hud-update" class="pg" style="gap:4px;bottom:340px">
+  <div class="tab tab-r" onclick="UI.toggleUpdate()">U<br>P<br>D<br>A<br>T<br>E</div>
+  <div class="hud pointer-events-auto scroll" style="padding:5px;max-width:280px">
+    <h3 class="text-yellow text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(255,204,0,.3)">◇ Update</h3>
+    <div id="update-status" class="text-xs text-gray mb-1">Checking...</div>
+    <div id="update-buttons" style="display:none">
+      <button onclick="Bounce.updateNow()" class="btn btn-g" style="font-size:8px;padding:4px 6px;margin:2px">Yes Please Update</button>
+      <button onclick="Bounce.downloadOnly()" class="btn btn-b" style="font-size:8px;padding:4px 6px;margin:2px">Download APK</button>
+      <button onclick="Bounce.ignoreUpdate()" class="btn btn-o" style="font-size:8px;padding:4px 6px;margin:2px">Ignore</button>
+    </div>
   </div>
 </div>
 
@@ -555,11 +570,12 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText(hdr);
   },
   toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
-  checkUpdate(){var btn=document.getElementById('btn-check-update');if(btn){btn.textContent='CHECKING...';btn.style.opacity='0.7';btn.style.pointerEvents='none'}if(typeof BounceBridge!=='undefined'&&BounceBridge.checkUpdate)BounceBridge.checkUpdate()},
-  handleUpdateClick(){var btn=document.getElementById('btn-check-update');if(!btn)return;var isUpdateMode=btn.classList.contains('btn-g');if(isUpdateMode){Bounce.startUpdate()}else{Bounce.checkUpdate()}},
-  onUpdateAvailable(ver){var btn=document.getElementById('btn-check-update');if(btn){btn.textContent='UPDATE v'+ver;btn.className='btn btn-g';btn.style.opacity='1';btn.style.pointerEvents='auto';btn.setAttribute('data-version',ver)}},
-  onUpdateNotAvailable(){var btn=document.getElementById('btn-check-update');if(btn){btn.textContent='NO UPDATE';btn.className='btn btn-o';btn.style.opacity='1';btn.style.pointerEvents='auto'}},
-  startUpdate(){var btn=document.getElementById('btn-check-update');if(btn){var ver=btn.getAttribute('data-version')||'latest';if(typeof BounceBridge!=='undefined'&&BounceBridge.startUpdate)BounceBridge.startUpdate(ver)}},
+  checkUpdate(){if(typeof BounceBridge!=='undefined'&&BounceBridge.checkUpdate)BounceBridge.checkUpdate()},
+  onUpdateAvailable(ver){UI.showUpdateMenu(ver)},
+  onUpdateNotAvailable(){UI.hideUpdateMenu()},
+  updateNow(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('update');UI.toggleUpdate()},
+  downloadOnly(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('download');UI.toggleUpdate()},
+  ignoreUpdate(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('ignore');UI.hideUpdateMenu()},
   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin-h').textContent=this.spin?'SPIN ON':'SPIN'},
   onCompass(azimuth,pitch,roll,orn){
     if(!this.gps||this.gps.bearing<=0){this.myHeading=azimuth;document.getElementById('my-heading').textContent=azimuth.toFixed(0)+'°'}
@@ -700,11 +716,14 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
 const UI2={t:false,toggle(){this.t=!this.t;document.getElementById('hud-left2').style.transform=this.t?'translateX(calc(-100% + 22px))':'translateX(0)'}};
 const UI3={t:false,toggle(){this.t=!this.t;document.getElementById('hud-bt').style.transform=this.t?'translateX(calc(-100% + 16px))':'translateX(0)'}};
 
-const UI={hidden:false,lT:false,rT:false,tA:false,
+const UI={hidden:false,lT:false,rT:false,uT:false,tA:false,
   setInsets(sb,nb){document.getElementById('hdr').style.paddingTop=(parseInt(sb,10)+10)+'px'},
   toggleLeft(){this.lT=!this.lT;document.getElementById('hud-left').style.transform=this.lT?'translateX(calc(-100% + 28px))':'translateX(0)'},
   toggleRight(){this.rT=!this.rT;document.getElementById('hud-right').style.transform=this.rT?'translateX(calc(100% - 28px))':'translateX(0)'},
-  tuckToggle(){this.tA=!this.tA;var l=document.getElementById('hud-left'),r=document.getElementById('hud-right');if(this.tA){this.lT=true;this.rT=true;l.style.transform='translateX(calc(-100% + 28px))';r.style.transform='translateX(calc(100% - 28px))';document.getElementById('btn-tuck').textContent='UNTUCK'}else{this.lT=false;this.rT=false;l.style.transform='translateX(0)';r.style.transform='translateX(0)';document.getElementById('btn-tuck').textContent='TUCK'}}
+  toggleUpdate(){this.uT=!this.uT;document.getElementById('hud-update').style.transform=this.uT?'translateX(calc(100% - 28px))':'translateX(0)'},
+  showUpdateMenu(ver){var s=document.getElementById('update-status');var b=document.getElementById('update-buttons');if(s)s.innerHTML='New version: <span style="color:#FFCC00;font-weight:700">v'+ver+'</span>';if(b)b.style.display='block';this.uT=true;document.getElementById('hud-update').style.transform='translateX(calc(100% - 28px))'},
+  hideUpdateMenu(){var s=document.getElementById('update-status');var b=document.getElementById('update-buttons');if(s)s.innerHTML='No updates';if(b)b.style.display='none';this.uT=false;document.getElementById('hud-update').style.transform='translateX(0)'},
+  tuckToggle(){this.tA=!this.tA;var l=document.getElementById('hud-left'),r=document.getElementById('hud-right'),u=document.getElementById('hud-update');if(this.tA){this.lT=true;this.rT=true;this.uT=true;l.style.transform='translateX(calc(-100% + 28px))';r.style.transform='translateX(calc(100% - 28px))';u.style.transform='translateX(calc(100% - 28px))';document.getElementById('btn-tuck').textContent='UNTUCK'}else{this.lT=false;this.rT=false;this.uT=false;l.style.transform='translateX(0)';r.style.transform='translateX(0)';u.style.transform='translateX(0)';document.getElementById('btn-tuck').textContent='TUCK'}}
 };
 window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
 setTimeout(function(){
