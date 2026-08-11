@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Bounce v1.0.79 — Kalman Distance | CarrPod</title>
+    <title>Bounce v1.0.91 — Kalman Distance | CarrPod</title>
   <script src="js/three.min.js"></script>
   <script src="js/OrbitControls.js"></script>
   <script src="js/EffectComposer.js"></script>
@@ -53,7 +53,7 @@
 <div id="hdr">
   <div class="pointer-events-auto">
     <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
-    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.87</span></p>
+    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.91</span></p>
   </div>
   <div class="pointer-events-auto flex gap-2 items-start">
     <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
@@ -126,7 +126,7 @@
       <span style="color:#FF6600">●You</span> <span style="color:#00FF88">●Bounce</span> <span style="color:#4488FF">●Vehicle</span> <span style="color:#a855f7">●Static</span> <span style="color:#FF4466">●Hazard</span>
       <br><span style="font-size:7px;color:#6b7280">FAA METAR: RA rain SN snow FG fog TS storm BR mist HZ haze FZ ice</span>
       <br><span style="font-size:7px;color:#6b7280">Wind: 09010KT Vis: 5SM Sky: FEW BKN OVC CLR</span>
-      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.87</span> · CarrPod · Bluetooth 3D Spatial</div>
+      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.91</span> · CarrPod · Bluetooth 3D Spatial</div>
   </div>
   <div class="hud pointer-events-auto scroll" style="padding:5px">
     <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Wi-Fi Scanner</h3>
@@ -555,6 +555,11 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText(hdr);
   },
   toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
+  checkUpdate(){var btn=document.getElementById('btn-check-update');if(btn){btn.textContent='CHECKING...';btn.style.opacity='0.7';btn.style.pointerEvents='none'}if(typeof BounceBridge!=='undefined'&&BounceBridge.checkUpdate)BounceBridge.checkUpdate()},
+  handleUpdateClick(){var btn=document.getElementById('btn-check-update');if(!btn)return;var isUpdateMode=btn.classList.contains('btn-g');if(isUpdateMode){Bounce.startUpdate()}else{Bounce.checkUpdate()}},
+  onUpdateAvailable(ver){var btn=document.getElementById('btn-check-update');if(btn){btn.textContent='UPDATE v'+ver;btn.className='btn btn-g';btn.style.opacity='1';btn.style.pointerEvents='auto';btn.setAttribute('data-version',ver)}},
+  onUpdateNotAvailable(){var btn=document.getElementById('btn-check-update');if(btn){btn.textContent='NO UPDATE';btn.className='btn btn-o';btn.style.opacity='1';btn.style.pointerEvents='auto'}},
+  startUpdate(){var btn=document.getElementById('btn-check-update');if(btn){var ver=btn.getAttribute('data-version')||'latest';if(typeof BounceBridge!=='undefined'&&BounceBridge.startUpdate)BounceBridge.startUpdate(ver)}},
   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin-h').textContent=this.spin?'SPIN ON':'SPIN'},
   onCompass(azimuth,pitch,roll,orn){
     if(!this.gps||this.gps.bearing<=0){this.myHeading=azimuth;document.getElementById('my-heading').textContent=azimuth.toFixed(0)+'°'}

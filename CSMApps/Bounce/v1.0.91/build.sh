@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 # build.sh — No-Gradle APK Build for Bounce v1.0.91
-# Bluetooth 3D Spatial RSSI Tracking — Versioned Releases
+# Bluetooth 3D Spatial RSSI Tracking — Manual Update Button
 # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
 # ============================================================
 set -e
@@ -25,10 +25,6 @@ SDK_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5744dc84
 BUILD_TOOLS="$SDK_DIR/build-tools/33.0.1"
 PLATFORM="$SDK_DIR/platforms/android-33"
 ANDROID_JAR="$PLATFORM/android.jar"
-
-REPO_ROOT="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5744dc84-1fbd-4568-abf3-5c49c84e9c4b"
-RELEASES_DIR="$REPO_ROOT/CSMApps/Releases"
-PAST_RELEASES_DIR="$REPO_ROOT/CSMApps/PastReleases/Bounce"
 
 # JDK detection
 if [ -d "/usr/lib/jvm/java-17-openjdk-amd64" ]; then
@@ -108,30 +104,6 @@ echo "  Size: $SIZE bytes ($(echo "scale=1; $SIZE/1024" | bc 2>/dev/null || echo
 echo "═══════════════════════════════════════════════════════════"
 
 "$AAPT2" dump badging "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null | head -5 || true
-cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../..//$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  CSMApps copy OK" || true
-
-mkdir -p "$RELEASES_DIR" "$PAST_RELEASES_DIR"
-
-echo "[8/7] Versioned releases management..."
-for f in "$REPO_ROOT"/CSMApps/Bounce-v*.apk; do
-    [ -f "$f" ] || continue
-    base=$(basename "$f")
-    if [[ "$base" == "Bounce-v$VERSION_NAME.apk" ]]; then
-        cp "$f" "$RELEASES_DIR/$base"
-        echo "  → Releases/$base"
-    else
-        mv "$f" "$PAST_RELEASES_DIR/$base"
-        echo "  → PastReleases/Bounce/$base"
-    fi
-done
-
-for f in "$REPO_ROOT"/CSMApps/Bounce-v*.apk; do
-    [ -f "$f" ] || continue
-    base=$(basename "$f")
-    if [[ "$base" != "Bounce-v$VERSION_NAME.apk" ]]; then
-        if [ -f "$RELEASES_DIR/$base" ]; then rm -f "$RELEASES_DIR/$base"; fi
-        mv "$f" "$PAST_RELEASES_DIR/$base"
-    fi
-done
-
+cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../../../../CSMDropBox/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  CSMDropBox copy OK" || true
+cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../../../../$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  Repo root copy OK" || true
 exit 0
