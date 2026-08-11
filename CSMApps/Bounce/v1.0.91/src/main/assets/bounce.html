@@ -113,9 +113,7 @@
     <h3 class="text-yellow text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(255,204,0,.3)">◇ Update</h3>
     <div id="update-status" class="text-xs text-gray mb-1">Checking...</div>
     <div id="update-buttons" style="display:none">
-      <button onclick="Bounce.updateNow()" class="btn btn-g" style="font-size:8px;padding:4px 6px;margin:2px">Yes Please Update</button>
-      <button onclick="Bounce.downloadOnly()" class="btn btn-b" style="font-size:8px;padding:4px 6px;margin:2px">Download APK</button>
-      <button onclick="Bounce.ignoreUpdate()" class="btn btn-o" style="font-size:8px;padding:4px 6px;margin:2px">Ignore</button>
+      <button onclick="Bounce.updateNow()" class="btn btn-g" style="font-size:8px;padding:4px 6px;margin:2px">Update</button>
     </div>
   </div>
 </div>
@@ -574,8 +572,6 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
   onUpdateAvailable(ver){UI.showUpdateMenu(ver)},
   onUpdateNotAvailable(){UI.hideUpdateMenu()},
   updateNow(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('update');UI.toggleUpdate()},
-  downloadOnly(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('download');UI.toggleUpdate()},
-  ignoreUpdate(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('ignore');UI.hideUpdateMenu()},
   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin-h').textContent=this.spin?'SPIN ON':'SPIN'},
   onCompass(azimuth,pitch,roll,orn){
     if(!this.gps||this.gps.bearing<=0){this.myHeading=azimuth;document.getElementById('my-heading').textContent=azimuth.toFixed(0)+'°'}
