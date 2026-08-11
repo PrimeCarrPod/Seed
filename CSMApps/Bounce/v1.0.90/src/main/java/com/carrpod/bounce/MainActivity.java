@@ -2,8 +2,8 @@ package com.carrpod.bounce;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.SharedPreferences;
 import android.bluetooth.BluetoothAdapter;
+import android.content.SharedPreferences;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
@@ -50,8 +50,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import com.carrpod.bounce.wifi.RssiKalmanFilter;
 import com.carrpod.bounce.wifi.Trilateration;
 import com.carrpod.bounce.wifi.PositionEKF;
@@ -65,6 +63,8 @@ import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import android.util.Log;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class MainActivity extends Activity {
 
@@ -185,7 +185,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        prefs = getSharedPreferences("BounceUpdate", MODE_PRIVATE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             getWindow().setDecorFitsSystemWindows(false);
         } else {
@@ -216,11 +215,7 @@ public class MainActivity extends Activity {
         root.addView(buildControlBar());
         setContentView(root);
 
-        int ignoreCount = prefs.getInt("ignoreCount", 0);
-        if (ignoreCount > 0) {
-            prefs.edit().putInt("ignoreCount", ignoreCount - 1).apply();
-        }
-
+        prefs = getSharedPreferences("BounceUpdate", MODE_PRIVATE);
         checkForUpdates();
 
         PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
@@ -283,12 +278,6 @@ public class MainActivity extends Activity {
     }
 
     private void checkForUpdates() {
-        int ignoreCount = prefs.getInt("ignoreCount", 0);
-        if (ignoreCount > 0) {
-            prefs.edit().putInt("ignoreCount", ignoreCount - 1).apply();
-            return;
-        }
-
         new Thread(() -> {
             String latest = fetchLatestVersion();
             runOnUiThread(() -> {
@@ -1311,7 +1300,7 @@ public class MainActivity extends Activity {
     public class JsBridge {
         @JavascriptInterface
         public void onReady(String j) {
-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.87 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.90 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
         }
 
         @JavascriptInterface
@@ -1339,7 +1328,7 @@ public class MainActivity extends Activity {
             theoryMode = enabled;
             runOnUiThread(() -> {
                 String mode = enabled ? "THEORY" : "LIVE";
-                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.87 · " + mode);
+                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.90 · " + mode);
                 Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
             });
         }

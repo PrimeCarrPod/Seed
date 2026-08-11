@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 # build.sh — No-Gradle APK Build for Bounce v1.0.90
-# Bluetooth 3D Spatial RSSI Tracking — Update Checker Popup
+# Bluetooth 3D Spatial RSSI Tracking — Update Pullout Menu
 # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
 # ============================================================
 set -e
