@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TGPU v2.0 | Subatomic Worldline Evolution | Monistic Architecture</title>
+  <title>TGPU v3.0 | Glueball-Integrated Worldline Evolution | Monistic Architecture</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -286,11 +286,11 @@
   </div>
 
   <script>
-  // ════════════════════════════════════════════════════════════════════
-  // TGPU v2.0 — Subatomic Worldline Engine
-  // V2.0 additions: 18-particle-type system, HUD collapse, Random Flight
-  // Physics updates: 2022-2026 experimental data integrated
-  // ════════════════════════════════════════════════════════════════════
+--     V3.0 additions: Glueball worldlines integrated, Swarm mechanics overlay
+    --     Glueball mass spectrum: 0++ at 1.7 GeV, 2++ at 2.6 GeV
+    --     Swarm coherence parameter: ρ = 0.89 (V3.0 update)
+    --     Physics updates: 2022-2026 experimental data integrated
+    --   ===========================================================================
 
   // ─── PARTICLE CATALOG ─────────────────────────────────────────────
   // All 18 particle types with V2.0 physics data
@@ -302,6 +302,8 @@
     axion:      { color:0x10b981, size:0.3,  mass:1e-5,     lifetime:Infinity, spin:0,   charge:0,  ratio:0.09, data:{ "Mass":"~10⁻⁵ eV (QCD axion)","BEC":"Coherence length ξ = ℏ/(m_a·v)","V2 update":"HAYSTAC 15.1 dB below SQL; FDM m_a > 10⁻²¹ eV (JWST)" }},
     neutralino: { color:0xa855f7, size:0.9,  mass:1000,     lifetime:Infinity, spin:0.5, charge:0,  ratio:0.05, data:{ "Mass":"> 1 TeV (Run 3 2024)","Type":"Majorana fermion","V2 update":"m_χ̃ < 900 GeV excluded by LHC Run 3 + LZ 2024" }},
     gluon:      { color:0xf97316, size:0.4,  mass:0,        lifetime:0,        spin:1,   charge:0,  ratio:0.07, data:{ "Colors":"8 (SU(3) octet)","Self-coupling":"Triple gluon vertex","V2 update":"Gluon OAM L_g~0.2ℏ (sPHENIX 2024); glueball X(2370) confirmed" }},
+    glueball:   { color:0xf97316, size:1.5,  mass:1700,     lifetime:Infinity,spin:0,   charge:0,  ratio:0.03, data:{ "Mass":"1700 MeV","J^PC":"0++","Confinement":"σ = 0.18 GeV²","V3 update":"Glueball worldlines integrated; m = 1.7 GeV/c²" }},
+    swarm_mode: { color:0x8b5cf6, size:0.7,  mass:0.001,    lifetime:Infinity,spin:0.5, charge:0,  ratio:0.04, data:{ "Type":"Swarm Collective","Coherence":"ρ = 0.89","Dynamics":"Reynolds flocking","V3 update":"Swarm mechanics overlay activated" }},
     higgs:      { color:0xec4899, size:1.2,  mass:125200,   lifetime:1.6e-22,  spin:0,   charge:0,  ratio:0.02, data:{ "Mass":"125.20±0.11 GeV","VEV":"246 GeV","V2 update":"HH→bbγγ 3.4σ (2024); H→Zγ confirmed (2023)" }},
     neutrino:   { color:0x67e8f9, size:0.25, mass:0.00045,  lifetime:Infinity, spin:0.5, charge:0,  ratio:0.08, data:{ "Mass":"< 0.45 eV (KATRIN 2024)","Mixing":"δ_CP = −135°","V2 update":"KATRIN 2024 final; IceCube τ-neutrino 2023; NH preferred 3.5σ" }},
     up_quark:   { color:0xfbbf24, size:0.5,  mass:2.16,     lifetime:0,        spin:0.5, charge:2/3,ratio:0.04, data:{ "Mass":"2.16 MeV","Charge":"+2/3 e","Color":"R,G,B","V2 update":"m_u from FLAG 2024 lattice QCD precision" }},
@@ -319,7 +321,7 @@
   const CFG = {
     baseLoop: 5000,
     loopInc:  5000,
-    particleCount: 1500,
+    particleCount: 1800,
     flightWaypoints: 12,
     flightDuration:  18000, // ms per path
     bloomStrength: 1.3,
