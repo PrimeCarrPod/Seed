@@ -28,7 +28,7 @@ cd lol
 git sparse-checkout set css js
 ```
 Create new files → `git add` → `git push`.
-Token: Kilo-provided `ghs_kBeN0IjoFdHOOe3ZW2en3M3LMFJop52Z8Y5F` (jsnb1976 has collaborator access to landolil/lol).
+Token: Kilo-provid(jsnb1976 has collaborator access to landolil/lol).
 Fallback: GitHub REST API `PUT /repos/landolil/lol/contents/{path}` if token scope doesn't cover landolil.
 
 ### LOL File Map (new/changed files only)
