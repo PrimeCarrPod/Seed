@@ -1,0 +1,15 @@
+python3 dual_starlight_express.py [--test | --live]
+
+jason.brodsky@ccac.edu.  Microsoft Graph Command Line Tools NOT OK
+
+jasonbrodsky@hotmail.com.   Microsoft Graph Command Line Tools. OK
+
+zirconia@aegisc.space. Microsoft Graph Command Line Tools OK
+
+
+https://login.microsoftonline.com/common/oauth2/deviceauth
+
+
+
+SDK STARTUP SCRIPT
+bash CSMScripts/SDKForge.sh && eval "$(bash CSMScripts/SDKForge.sh --export-env)"
