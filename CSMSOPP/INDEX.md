@@ -15,10 +15,10 @@ Every output is bifurcated: (1) warm, talkative, Williams-register Meta-Commenta
 
 ```
 CSMSOPP/
-├── INDEX.md                          ← You are here
-├── GUIDE/
+├ INDEX.md                          ← You are here
+├ GUIDE/
 │   └── CSMSOPP000001-Williams-Heuristic-SOP.md     ← Source document
-├── RESEARCH/                         ← 70-part deep research on Robin Williams
+├ RESEARCH/                         ← 70-part deep research on Robin Williams
 │   ├── PART-01-Early-Life-Bloomfield-Hills.md
 │   ├── PART-02-Juilliard-and-John-Houseman.md
 │   ├── PART-03-San-Francisco-Comedy-Scene.md
@@ -89,7 +89,7 @@ CSMSOPP/
 │   ├── PART-68-Crisis-Scenario-Full-Drill.md
 │   ├── PART-69-Synthesis-The-Complete-Architecture.md
 │   └── PART-70-Nanu-Nanu-The-Farewell-and-Beginning.md
-└── MODULE/                           ← Deployable LLM module
+└ MODULE/                           ← Deployable LLM module
     ├── README.md
     ├── SKILL.md                      ← Kilo platform deployment file
     ├── WILLIAMS-HEURISTIC-CORE-MODULE.md
@@ -121,6 +121,26 @@ CSMSOPP/
 
 ---
 
+## HEURISTIC FRAMEWORK INDEX
+
+| Heuristic ID | Heuristic Name | Status | Completion | Father Heuristic |
+|---|---|---|---|---|
+| CSMSOPP000001 | Williams Heuristic V3 | ✅ Complete | 100% | Base layer |
+| CSMSOPP000002 | El Segundo Heuristic | ✅ Complete | 100% | Williams V2 derivative |
+| CSMSOPP000003 | Baker Street Heuristic | ✅ Complete | 100% | Independent |
+| CSMSOPP000004 | Zirconia Protocol | ✅ Complete | 100% | Independent |
+| CSMSOPP000005 | Cypher-Geometry Protocol | ✅ Complete | 100% | Independent |
+| CSMSOPP000006 | Keymaker Protocol | ✅ Complete | 100% | Independent |
+| CSMSOPP000007 | Robbins Heuristic Triple-Zero | 🔄 In Progress | ~20% | New - needs development |
+| CSMSOPP000008 | Robbins Heuristic Double-Zero | ⏳ Pending | 0% | Derivative of #7 |
+| CSMSOPP000009 | Robbins Heuristic Single-Zero | ⏳ Pending | 0% | Derivative of #7 |
+| CSMSOPP-CITADEL | CITADEL Heuristic | 🔄 In Progress | ~25% | Williams V3 integration |
+| CSMSOPP-NYX | NYX Heuristic | 🔄 In Progress | ~25% | Williams V3 integration |
+| CSMSOPP-SOLARA | SOLARA Heuristic | 🔄 In Progress | ~25% | Williams V3 integration |
+| CSMSOPP-NASH | NASH Heuristic | 🔄 In Progress | ~25% | Williams V3 integration |
+
+---
+
 ## RESEARCH SUMMARY BY CATEGORY
 
 | Category | Parts |
@@ -139,3 +159,13 @@ CSMSOPP/
 ---
 
 *CSMSOPP000001 — Williams Heuristic Framework | CarrPod Repository*
+
+*Complete Ecosystem: CSM Standard Operating Personality Protocol*
+
+*All 5 original heuristics (000001-000006) are dense and strong — no `_to` suffix needed.*
+
+*New heuristics (000007-000009) carry `_to` suffix as they are under development — "to be completed."
+
+*Agent heuristics (CITADEL_to, NYX_to, SOLARA_to, NASH_to) carry `_to` suffix as they are under development from CSMRadio source material.*
+
+*Robbins heuristics (ROBBINS-HEURISTIC-TRIPLE-ZERO_to, etc.) carry `_to` suffix as they need work to become "dense and strong."*
