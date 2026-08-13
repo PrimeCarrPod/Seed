@@ -1,0 +1,148 @@
+# Tardigradia 2.0 — Master Implementation Plan
+# ADDENDUM: LOL Repository Deployment (Phase 2)
+
+---
+
+## LOL REPOSITORY PLAN (landolil/lol)
+
+### Target Repo
+`https://github.com/landolil/lol` — the live GitHub Pages deployment of the Tardigradia site.
+jsnb1976 has collaborator access. **Only this repo is modified in Phase 2.**
+All files placed with `v2` suffix beside originals; no existing files deleted or overwritten.
+
+### LOL Repo Current State
+- `index.html` — identical to Study/LOL2go v1 (confirmed by raw fetch)
+- `css/styles.css` — identical to Study/LOL2go v1
+- `js/games2024/g0001/bubbles/bubbles.js`:
+  - Creates 250 SVG bubbles (`images/detailed_bubble.svg`) with `moveUp / sway / sizeChange` CSS animations
+  - Applies random `hue-rotate` filter — genuinely multi-coloured
+  - Bubbles rise over 5–450s, reposition on `animationiteration`
+- `js/games2024/g0001/init/data_bubbles.js` — minimal data file
+- All images live in `images/` folder (~4GB) — NEVER clone blobs
+
+### Access Strategy
+Use **shallow sparse clone** (no image blobs):
+```bash
+git clone --depth=1 --filter=blob:none --sparse https://github.com/landolil/lol.git lol
+cd lol
+git sparse-checkout set css js
+```
+Create new files → `git add` → `git push`.
+Token: Kilo-provided `ghs_kBeN0IjoFdHOOe3ZW2en3M3LMFJop52Z8Y5F` (jsnb1976 has collaborator access to landolil/lol).
+Fallback: GitHub REST API `PUT /repos/landolil/lol/contents/{path}` if token scope doesn't cover landolil.
+
+### LOL File Map (new/changed files only)
+```
+landolil/lol/
+├── index_v2.html                [NEW — V2 entry; loads v1 JS/data + all v2 modules]
+├── V2_UPDATE_REPORT.md          [NEW — full changelog]
+├── css/
+│   ├── styles_v2.css            [NEW — extends styles.css; dark bg; z-index stack]
+│   └── v2/
+│       ├── biome.css            [NEW — canvas layers, sparks, toast, tube border]
+│       └── ui.css               [NEW — HUD panels, opening screen, Orbitron font]
+└── js/
+    └── v2/
+        ├── config/
+        │   └── species_data.js  [same as Study v2 — no changes needed]
+        ├── core/
+        │   ├── physics.js       [UPGRADED — glass ellipse boundary, bubble coupling]
+        │   ├── creature.js      [UPGRADED — bubble riding/burst behaviour]
+        │   ├── ecosystem.js     [same as Study v2]
+        │   └── biome_engine.js  [UPGRADED — glass tube draw, BubbleSystem, convection]
+        └── ui/
+            ├── opening_screen.js [same as Study v2]
+            ├── hud.js            [UPGRADED — Tube Environment section]
+            ├── pov_camera.js     [UPGRADED — microscope eyepiece vignette in POV]
+            ├── save_load.js      [same as Study v2]
+            └── screensaver.js    [same as Study v2]
+```
+
+### Key Upgrades Over Study Version
+
+#### 1. Glass Test Tube / Droplet World (User choice: YES)
+- `biome_engine.js` draws a **visible glass ellipse** on the canvas each frame:
+  - Outer glow: `rgba(56,189,248,0.12)` radial gradient
+  - Glass rim: `rgba(56,189,248,0.3)` 2px stroke along the ellipse
+  - Subtle refraction shimmer: 3-point arc segments slightly brighter at random positions
+- Physics boundary in `physics.js`:
+  ```javascript
+  function glassBoundary(c, rx, ry, cx, cy) {
+    const nx = (c.x - cx) / rx;
+    const ny = (c.y - cy) / ry;
+    if (nx*nx + ny*ny >= 1) {
+      // reflect velocity across ellipse normal
+      const dot = c.vx*nx + c.vy*ny;
+      c.vx -= 2 * dot * nx;
+      c.vy -= 2 * dot * ny;
+      // push back inside
+      const scale = 0.98 / Math.sqrt(nx*nx + ny*ny);
+      c.x = cx + nx * rx * scale;
+      c.y = cy + ny * ry * scale;
+    }
+  }
+  ```
+- World is no longer wrapping — `wrapBoundary()` replaced by `glassBoundary()` for all species except `photon`/`neutrino`/`graviton` which still streak across
+
+#### 2. Living Bubbles — Physics Coupled (User choice: YES)
+- New `BubbleSystem` class inside `biome_engine.js`:
+  - Reads positions of all `.bubble` DOM elements via `getBoundingClientRect()` per frame (capped at 30 tracked bubbles for perf)
+  - Converts screen positions → world coords
+  - Tracks each bubble's estimated Y velocity (from CSS `moveUp` animation progress)
+- **Buoyancy drift field**: each bubble contributes an upward force `{vx:0, vy:-25}` to creatures within 60 world-units (falls off with distance)
+- **Boarding**: when a light/fast creature (photon, pion, kaon species) is within 15 world-units of a bubble:
+  - `creature._boardedBubble = bubble` — creature velocity matches the bubble's rise
+  - Creature renders slightly offset on bubble's edge (visual riders)
+- **Burst**: when 3+ creatures board the same bubble:
+  - DOM bubble element: `bubble.style.opacity = '0'` (fade-out)
+  - Riders: scatter with velocity kick `{vx: random×60, vy: random×60}`
+  - Spark visual at burst position
+  - After 8s, bubble element returns to normal opacity
+- **Net effect**: watching creatures hitch rides upward, cluster, burst, and scatter down feels genuinely alive
+
+#### 3. Enhanced Convection Flow Field
+- `curlNoise()` gains a `convection` overlay term:
+  ```javascript
+  // Warm bottom, cool top → natural convection loop in a test tube
+  const convY = -((cy - y) / worldH) * 12;  // stronger upward force at bottom
+  const convX = Math.sin((x / worldW) * Math.PI) * 5; // slight circular return flow
+  ```
+- Result: at the bottom of the tube, the fluid pushes upward (heated); at the top it cools and flows back down the sides. Creatures naturally circulate.
+
+#### 4. POV Microscope Eyepiece Vignette
+- In `pov_camera.js`, during POV mode, `drawPovOverlay()` renders:
+  - Circular black mask (everything outside a centered circle is darkened)
+  - Chromatic aberration rings at the edge (thin cyan ring inside, thin red ring outside)
+  - Cross-hair markings at screen centre (faint, like a real microscope reticle)
+  - Corner information overlay: magnification "40× → 320×" (scales with zoom)
+
+#### 5. HUD: Tube Environment Panel
+- New HUD section (within right panel): "TUBE ENVIRONMENT"
+  - `pH`: displays `7.4` ± small drift (randomised if G-toggle active)
+  - `Temp °C`: displays `37` ± small drift
+  - `Bubble Count`: live count of boarding bubbles
+  - `Convection`: UP ↑ / DOWN ↓ / SWIRL ↻ indicator based on dominant flow direction
+
+#### 6. `index_v2.html` Structure
+- Loads ALL v1 data scripts (data_creatures.js, data_bubbles.js, etc.) so creature icons and bubble images are available
+- Loads all v2 modules in correct order
+- Adds `<canvas id="trail-canvas">` and `<canvas id="biome-canvas">` with z-index between bubbles and UI
+- `setRandomBackground()` still called — background random image still set
+- Opening screen `OpeningScreen.init()` called at DOMContentLoaded
+
+### LOL Implementation Phases
+| Phase | Action |
+|---|---|
+| 0 | Verify token access to landolil/lol via shallow sparse clone |
+| 1 | Port species_data.js, opening_screen.js, save_load.js, screensaver.js (unchanged from Study) |
+| 2 | Write upgraded physics.js (glass boundary + bubble coupling) |
+| 3 | Write upgraded creature.js (bubble boarding) |
+| 4 | Write upgraded biome_engine.js (glass draw + BubbleSystem + convection + tube env) |
+| 5 | Write upgraded hud.js (tube environment section) |
+| 6 | Write upgraded pov_camera.js (eyepiece vignette) |
+| 7 | Write css/v2/biome.css (tube border CSS), css/v2/ui.css, css/styles_v2.css |
+| 8 | Write index_v2.html |
+| 9 | Write V2_UPDATE_REPORT.md |
+| 10 | Commit and push to landolil/lol main |
+
+---
