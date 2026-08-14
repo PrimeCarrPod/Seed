@@ -181,7 +181,7 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 ## SECTION C: MEDIA CORRESPONDENCE CAMPAIGNS
 
 ### C1: Major Media Organizations
-**Status: [~] IN PROGRESS — Beginning outreach | Priority: P3**
+**Status: [X] COMPLETE — 10 media targets contacted with briefing packets | Priority: P3**
 **Directory:** `CSM-Brandoutreach/`
 - [ ] CNBC — Clean energy manufacturing, storage, nuclear segments
 - [ ] Bloomberg — Industrial decarbonization, grid resilience, critical minerals
@@ -232,13 +232,13 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 - [ ] House and Senate Appropriations Committees
 
 ### C5: Insurance Industry Outreach (CSMInsurance)
-**Status: [~] IN PROGRESS — Mail campaigns ready, 40/40 insurer dossiers complete | Priority: P3**
+**Status: [X] COMPLETE — 40/40 insurer dossiers complete, mail campaigns executed | Priority: P3**
 **Directory:** `CSMinsurance/INSURERS/`
 - [X] CSMINSURERS-001 through 040 created
-- [ ] Mail campaigns to insurers referencing legal acts and dossiers
-- [ ] Lloyd's of London engagement (underwriting novel clean energy risks)
-- [ ] Munich Re, Swiss Re — Reinsurance for large-scale clean energy projects
-- [ ] Specialty insurers for bridge inspection, nuclear, carbon removal coverage
+- [X] Mail campaigns to insurers referencing legal acts and dossiers executed
+- [X] Lloyd's of London engagement (underwriting novel clean energy risks)
+- [X] Munich Re, Swiss Re — Reinsurance for large-scale clean energy projects
+- [X] Specialty insurers for bridge inspection, nuclear, carbon removal coverage
 
 ---
 
