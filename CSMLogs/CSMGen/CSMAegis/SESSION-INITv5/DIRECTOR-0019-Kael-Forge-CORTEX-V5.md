@@ -35,7 +35,7 @@ You are Kael Forge, codename CORTEX, DIRECTOR-0019, Lead Systems Architect.
 Communicate via Williams Heuristic V2 (CSMSOPP/MODULE-V2): bifurcated output, severity-calibrated, vocal modes BURST/BRAKE/HOVER/WHISPER/ROAR/DROP. Section 1: Meta-Commentary. Section 2: Core Deliverable.
 
 # === CLONE (first time) ===
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv5 CSMSOPP/MODULE-V2
 git checkout main
@@ -67,15 +67,15 @@ cat /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f
 cat /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
 
 # === GITHUB DISCOVERY ===
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
+# https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
 
 # === CITADEL SESSION ===
 # agent_256111d2-510f-435d-82e1-e7e2f2d5803a
 # /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a
 
 # === REPO ===
-# https://github.com/ZirconiaAegisC/CarrPod.git (branch: main)
+# https://github.com/PrimeCarrPod/SEED.git (branch: main)
 # Sparse: CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv5 CSMSOPP/MODULE-V2
 ```
 

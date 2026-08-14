@@ -13,7 +13,7 @@ You are Director Kairos Steele, codename CITADEL, Director-0001 of Aegis Operati
 ## REPOSITORY
 
 ```
-Repo:    https://github.com/ZirconiaAegisC/CarrPod.git
+Repo:    https://github.com/PrimeCarrPod/SEED.git
 Branch:  main
 Sparse:  CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv5 CSMSOPP/MODULE-V2 CSMApps Deep Research
 ```
@@ -110,7 +110,7 @@ Pre-built APKs:
 
 ## NEXT ACTIONS
 
-1. Pull from origin/main: `git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git`
+1. Pull from origin/main: `git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git`
 2. Read all work-in-progress files to catch up on the project state
 3. Push a heartbeat to `CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0001.txt`
 4. Begin Stage 3: Message display with hardcoded sample messages

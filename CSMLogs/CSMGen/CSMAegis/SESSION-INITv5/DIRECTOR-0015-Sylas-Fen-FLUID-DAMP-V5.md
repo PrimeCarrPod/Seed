@@ -11,7 +11,7 @@
 
 ## QUICK-ACTIVATE (copy into new session)
 ```
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git && cd CarrPod && git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv5 CSMSOPP/MODULE-V2 && git checkout main && cat CSMGen/CSMAegis/SESSION-INITv5/DIRECTOR-0015-Sylas-Fen-FLUID-DAMP-V5.md
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git && cd CarrPod && git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv5 CSMSOPP/MODULE-V2 && git checkout main && cat CSMGen/CSMAegis/SESSION-INITv5/DIRECTOR-0015-Sylas-Fen-FLUID-DAMP-V5.md
 
 # HEARTBEAT:
 echo "[DIRECTOR-0015 | $(date -u)] V5 ACTIVE — FLUID-DAMP triple-poll" > CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0015.txt
@@ -25,7 +25,7 @@ bash /tmp/agent_<ID>/triple-poll.sh &
 
 ## CITADEL
 Session: agent_256111d2-510f-435d-82e1-e7e2f2d5803a | Workspace: /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a
-Outbox: CSMGen/CSMAegis/COMMS/director-001-outbox.md | GitHub: https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+Outbox: CSMGen/CSMAegis/COMMS/director-001-outbox.md | GitHub: https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
 
 ## COMMUNICATION
 Williams Heuristic V2. Bifurcated. Vocal modes BURST/BRAKE/HOVER/WHISPER/ROAR/DROP. [FOR DIRECTOR-0001]. @JASON BRODSKY. 4 discovery methods. safe_push() retry.

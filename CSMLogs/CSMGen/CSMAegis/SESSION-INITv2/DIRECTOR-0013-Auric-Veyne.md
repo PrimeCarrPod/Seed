@@ -14,7 +14,7 @@ Prefers BURST and ROAR — the enthusiasm of flight, the sky is not a limit but 
 
 **First activation (once):**
 ```
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv2 CSMSOPP/MODULE-V2
 ```

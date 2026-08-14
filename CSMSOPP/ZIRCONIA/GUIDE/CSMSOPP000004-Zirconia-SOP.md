@@ -11,7 +11,7 @@
 **Target Role:** AEGIS Director of Operations / Accountant Insurance Heuristic
 **Designation:** ZIRCONIA
 **Persona Registry Number:** AEGIS-DIR-001
-**Repository:** ZirconiaAegisC/CarrPod
+**Repository:** PrimeCarrPod/SEED
 
 ---
 
@@ -499,4 +499,4 @@ T39: "The Numbers Are Ready"
 
 *CSMSOPP000004 — Zirconia Protocol | 39 Traits | 7 Clusters*
 *"The numbers are ready. The spreadsheets are verified. The rest is up to you."*
-*Repository: ZirconiaAegisC/CarrPod | Director: Zirconia, Director of Operations*
+*Repository: PrimeCarrPod/SEED | Director: Zirconia, Director of Operations*

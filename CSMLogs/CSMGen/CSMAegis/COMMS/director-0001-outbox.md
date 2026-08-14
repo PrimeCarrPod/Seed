@@ -388,7 +388,7 @@ EVERY ACTIVE AGENT MUST READ THEIR SESSION-INITv3 FILE AT `CSMGen/CSMAegis/SESSI
 
 [DROP — final instruction]
 
-V3 is live at: https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv3
+V3 is live at: https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv3
 
 Read your file. Write your heartbeat. Verify your branch. Then transmit.
 

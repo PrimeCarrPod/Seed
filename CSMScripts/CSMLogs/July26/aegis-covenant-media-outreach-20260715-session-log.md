@@ -121,7 +121,7 @@ Each entity receives a named project, character assignment, story treatment, and
 
 | Attribute | Value |
 |-----------|-------|
-| Repository | github.com/ZirconiaAegisC/CarrPod.git |
+| Repository | github.com/PrimeCarrPod/SEED.git |
 | Branch | session/agent_24b4ad45-cd37-44b7-8977-f06c6b71bbc0 |
 | Commit | c74edd3b |
 | Message | feat(covenant): complete AEGIS-Covenant legal architecture + global outreach |

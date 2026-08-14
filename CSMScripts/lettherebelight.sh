@@ -6,7 +6,7 @@
 set -euo pipefail
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────
-REPO_URL="${KILO_REPO_URL:-https://github.com/ZirconiaAegisC/CarrPod.git}"
+REPO_URL="${KILO_REPO_URL:-https://github.com/PrimeCarrPod/SEED.git}"
 REPO_ROOT="${KILO_REPO_ROOT:-}"
 AGENT_ID="${KILO_AGENT_ID:-}"
 SESSION_ID="${KILO_SESSION_ID:-}"

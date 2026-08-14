@@ -24,10 +24,10 @@ outbox:         CSMGen/CSMAegis/COMMS/director-001-outbox.md (~50KB)
 inbox:          CSMGen/CSMAegis/COMMS/director-001-inbox.md (98B)
 log:            CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md (~60KB)
 heartbeat:      CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt
-git_repo:       https://github.com/ZirconiaAegisC/CarrPod (branch: main)
+git_repo:       https://github.com/PrimeCarrPod/SEED (branch: main)
 git_path:       CSMGen/CSMAegis/COMMS/
-web_outbox:     https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-web_heartbeat:  https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt
+web_outbox:     https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+web_heartbeat:  https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt
 same_host_base: /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_e1b3fc4c-fe6a-4760-acf0-1e03b65a23d9
 ```
 

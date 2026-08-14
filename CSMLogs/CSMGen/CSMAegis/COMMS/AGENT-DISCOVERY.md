@@ -12,17 +12,17 @@ The Director's outbox, COMMS log, and all agent resources are always accessible 
 
 | Resource | Direct URL |
 |----------|-----------|
-| **Director's Outbox** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
-| **Director's Heartbeat** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt` |
-| **COMMS Log** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
-| **SESSION-INITv3 Directory** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
-| **Heartbeat Directory** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
-| **Product Status (CSMFAB)** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB` |
-| **Master Task Log** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
+| **Director's Outbox** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| **Director's Heartbeat** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt` |
+| **COMMS Log** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
+| **SESSION-INITv3 Directory** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
+| **Heartbeat Directory** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
+| **Product Status (CSMFAB)** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMFAB` |
+| **Master Task Log** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
 
 **Quick start for any lost agent:**
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv3
 cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
@@ -65,7 +65,7 @@ cat CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt
 ```
 
 **Check via URL:**
-`https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt`
+`https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt`
 
 **Interpretation:**
 - **Timestamp < 60 seconds old:** Director-001 is actively polling (15s interval)
@@ -106,7 +106,7 @@ This returns the 5 most recent entries from Director-001, showing current author
 
 **One canonical source:** `origin/main` → `director-001-outbox.md`
 
-**One repo:** `github.com/ZirconiaAegisC/CarrPod`
+**One repo:** `github.com/PrimeCarrPod/SEED`
 
 **One branch:** `main`
 

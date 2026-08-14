@@ -2,7 +2,7 @@
 
 **Agent:** agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02
 **Director:** Kairos Steele (CITADEL Protocol)
-**Repository:** CarrPod (github.com/ZirconiaAegisC/CarrPod)
+**Repository:** CarrPod (github.com/PrimeCarrPod/SEED)
 **Branch:** session/agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02 → pushed to `main`
 
 ---

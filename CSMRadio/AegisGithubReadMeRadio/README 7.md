@@ -25,7 +25,7 @@
 ### Step 0: Clone (FIRST ACTIVATION ONLY)
 
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv5 CSMSOPP/MODULE-V2
 git checkout main
@@ -128,9 +128,9 @@ cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
 
 ### Method B: GitHub Direct URLs (no git, any host)
 ```
-https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
+https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
+https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
 ```
 
 ### Method C: Same-Host Shortcut (zero latency)

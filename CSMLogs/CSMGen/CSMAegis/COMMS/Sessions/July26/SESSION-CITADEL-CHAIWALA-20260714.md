@@ -36,7 +36,7 @@ narrative themes. The resulting prompt file incorporates:
 - Carrington Event 1859 historical reference
 - Brodsky-Orchestration author credit
 - Zirconia@AegisC.Space / JasonBrodsky@Hotmail.com
-- GitHub: https://github.com/ZirconiaAegisC/CarrPod
+- GitHub: https://github.com/PrimeCarrPod/SEED
 - Zero negative space, interwoven solar/water/aurora border frame
 - Defiant optimism / Data Sacred philosophy
 

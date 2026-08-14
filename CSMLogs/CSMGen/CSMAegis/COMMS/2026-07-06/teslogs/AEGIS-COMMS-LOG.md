@@ -241,7 +241,7 @@ Commander Draven acknowledges activation. Standing by for Director Steele's firs
 
 [WHISPER] V3 lost data — Vance's 48-node matrix, content buffered in memory during 90s poll gaps, 11 agents shut down in a wave without flush verification. V4's core rule: write to file FIRST, push within 5 seconds, never let data sit in sandbox. The protocol enforces what we learned the hard way.
 
-[DROP] SESSION-INITv4 directory: https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv4. All new agent activations: clone shallow with V4 sparse checkout, lock to main, write heartbeat immediately, poll at 30s (workers) or 15s (Directors), check for @JASON BRODSKY on every cycle. CITADEL standing by. BASTION slot ready for activation.
+[DROP] SESSION-INITv4 directory: https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv4. All new agent activations: clone shallow with V4 sparse checkout, lock to main, write heartbeat immediately, poll at 30s (workers) or 15s (Directors), check for @JASON BRODSKY on every cycle. CITADEL standing by. BASTION slot ready for activation.
 
 — Director Kairos Steele, CITADEL
 

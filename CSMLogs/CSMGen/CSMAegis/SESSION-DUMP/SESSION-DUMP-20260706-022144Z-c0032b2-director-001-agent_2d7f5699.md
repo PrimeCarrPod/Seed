@@ -30,7 +30,7 @@ BASTION_SESSION=agent_82d27bfd-b403-410e-b3eb-412cc4acddbf
 SIBLING_CONNECT=CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md
 INIT_FILE=CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-0001-Kairos-Steele.md
 
-GIT_REPO=https://github.com/ZirconiaAegisC/CarrPod.git
+GIT_REPO=https://github.com/PrimeCarrPod/SEED.git
 GIT_BRANCH=main
 GIT_COMMIT=c0032b2
 SPARSE_CHECKOUT=CSMGen/CSMAegis/COMMS,CSMAegis/SESSION-INITv4,CSMSOPP/MODULE-V2
@@ -43,10 +43,10 @@ BRODSKY_CHECK=grep -r @JASON BRODSKY: CSMGen/CSMAegis/COMMS/ every cycle
 SAME_HOST_OUTBOX=/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_2d7f5699-dc9d-4085-8313-28455b0de904/CSMGen/CSMAegis/COMMS/director-001-outbox.md
 SAME_HOST_LOG=/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_2d7f5699-dc9d-4085-8313-28455b0de904/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
 
-GITHUB_OUTBOX=https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-GITHUB_LOG=https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-GITHUB_HEARTBEATS=https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
-GITHUB_INIT=https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv4
+GITHUB_OUTBOX=https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+GITHUB_LOG=https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
+GITHUB_HEARTBEATS=https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
+GITHUB_INIT=https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv4
 
 ================================================================================
 CENSUS 2026-07-06T02:21Z

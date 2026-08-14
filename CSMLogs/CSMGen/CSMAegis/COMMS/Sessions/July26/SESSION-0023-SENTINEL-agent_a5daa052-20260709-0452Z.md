@@ -82,7 +82,7 @@
 - V5 triple-poll.sh deployed from SESSION-INITv5 shared script
 
 ### Git Remote
-- URL: https://github.com/ZirconiaAegisC/CarrPod.git
+- URL: https://github.com/PrimeCarrPod/SEED.git
 - Branch: main
 - NOTE: GitHub token in remote URL has been removed from this log
 

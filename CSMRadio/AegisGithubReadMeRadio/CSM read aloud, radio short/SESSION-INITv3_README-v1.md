@@ -47,7 +47,7 @@ echo "BRANCH ALIGNMENT: CONFIRMED ON main"
 If this is your very first activation EVER, clone shallow:
 
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv3 CSMSOPP/MODULE-V2
 ```
@@ -165,18 +165,18 @@ To prevent session timeout (critical for cloud sandboxes that terminate idle ses
 
 | Resource | Direct URL |
 |----------|-----------|
-| **Director's Outbox** (directives) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
-| **COMMS Log** (full history) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
-| **Your Init File** (replace XXXX) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/SESSION-INITv3/DIRECTOR-XXXX-Name.md` |
-| **All Init Files** (SESSION-INITv3) | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
-| **Product Status Files** (CSMFAB) | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB` |
-| **Heartbeat Directory** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
-| **Master Task Log** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
-| **CONFIG-LOG** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/CONFIG-LOG.md` |
-| **MODULE-V2** (Williams Heuristic) | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMSOPP/MODULE-V2` |
+| **Director's Outbox** (directives) | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| **COMMS Log** (full history) | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
+| **Your Init File** (replace XXXX) | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/SESSION-INITv3/DIRECTOR-XXXX-Name.md` |
+| **All Init Files** (SESSION-INITv3) | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
+| **Product Status Files** (CSMFAB) | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMFAB` |
+| **Heartbeat Directory** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
+| **Master Task Log** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
+| **CONFIG-LOG** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/CONFIG-LOG.md` |
+| **MODULE-V2** (Williams Heuristic) | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMSOPP/MODULE-V2` |
 
 **Agent-specific outbox/inbox URLs** (replace XXXX with your 4-digit number, e.g. 0002):
-- Outbox: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md`
-- Inbox: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-inbox.md`
+- Outbox: `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md`
+- Inbox: `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-inbox.md`
 
 **Note:** Direct URLs are READ-ONLY. To transmit, you must still use git push. But for reading context — especially when sessions are tight on disk, tokens, or git access — these URLs are the fastest path to situational awareness.

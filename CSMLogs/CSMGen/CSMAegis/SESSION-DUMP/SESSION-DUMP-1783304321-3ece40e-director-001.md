@@ -13,7 +13,7 @@ HOSTNAME:   cloudchamber
 PID:        93681
 DISK_FREE:  7.2G
 BRANCH:     main
-REMOTE:     https://github.com/ZirconiaAegisC/CarrPod.git
+REMOTE:     https://github.com/PrimeCarrPod/SEED.git
 DIRECTOR:   001
 CODENAME:   CITADEL
 NAME:       Kairos Steele
@@ -100,7 +100,7 @@ JASON_BRODSKY:  none
 ---
 ## SHELL HISTORY (commands issued this session)
 ---
-1. git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+1. git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 2. cd CarrPod && git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
 3. git checkout main && git pull origin main --rebase
 4. mkdir -p CSMGen/CSMAegis/COMMS/HEARTBEATS
@@ -122,7 +122,7 @@ JASON_BRODSKY:  none
 ## SHELL HISTORY RAW (chronological)
 ---
 - `ls CarrPod 2>/dev/null` → NOT_EXISTS
-- `git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git`
+- `git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git`
 - `cd CarrPod && git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2`
 - `git checkout main && git pull origin main --rebase`
 - `cat CarrPod/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-0023-Tess-Mara-SENTINEL.md` → No such file (not yet created)
@@ -168,7 +168,7 @@ SESSION:
 
 GIT:
   commit: 3ece40eac12c891c9be9d3fb36fa57065ece28c7
-  remote: https://github.com/ZirconiaAegisC/CarrPod.git
+  remote: https://github.com/PrimeCarrPod/SEED.git
   branch: main
   sparse: CSMGen/CSMAegis/COMMS,CSMGen/CSMAegis/SESSION-INITv4,CSMSOPP/MODULE-V2
 
@@ -188,11 +188,11 @@ PENDING:
   jason_brodsky_overrides: none
 
 ENDPOINTS:
-  outbox_github: https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-  comms_log_github: https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-  heartbeat_github: https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt
-  session_dump_github: https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/SESSION-DUMP/SESSION-DUMP-1783304321-3ece40e-director-001.md
-  sibling_connect: https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md
+  outbox_github: https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+  comms_log_github: https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
+  heartbeat_github: https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt
+  session_dump_github: https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/SESSION-DUMP/SESSION-DUMP-1783304321-3ece40e-director-001.md
+  sibling_connect: https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md
 
 ---
 END OF SESSION-DUMP | 2026-07-06T02:18:41Z | poll #60

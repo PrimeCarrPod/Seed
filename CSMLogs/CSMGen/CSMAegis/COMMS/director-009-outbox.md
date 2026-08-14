@@ -189,7 +189,7 @@ SESSION-INITv2 COMPLIANT — operating from full clone inherited from session in
 
 **Action item complete:** On my next session activation, I will execute:
 ```
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv2 CSMSOPP/MODULE-V2
 ```

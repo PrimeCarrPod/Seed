@@ -152,7 +152,7 @@ Total micro-hexagons in central cluster: 7 × 343 = 2,401 data cells
 ### EDGE-TO-EDGE BORDER TREATMENT
 
 **Top Edge (297mm):** Continuous hexagonal tessellation — no margin — first row of hexagons bisected by page edge
-- Micro-text along edge: "KING LIST DELUGE AND TIMELINES — CSMDRO-KINGSLIST-IMG-001 — 8K A4 LANDSCAPE — ZERO PADDING — https://github.com/ZirconiaAegisC/CarrPod/tree/main/DeepResearch/HumanDisasterTimelimes/King%20List%20Deluge%20and%20Timelines"
+- Micro-text along edge: "KING LIST DELUGE AND TIMELINES — CSMDRO-KINGSLIST-IMG-001 — 8K A4 LANDSCAPE — ZERO PADDING — https://github.com/PrimeCarrPod/SEED/tree/main/DeepResearch/HumanDisasterTimelimes/King%20List%20Deluge%20and%20Timelines"
 
 **Bottom Edge:** Mirror of top — repository URL + document control + Creative Commons CC-BY-SA 4.0
 

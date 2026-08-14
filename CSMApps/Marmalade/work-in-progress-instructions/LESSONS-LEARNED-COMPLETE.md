@@ -177,7 +177,7 @@ METHOD A: Git pull
   cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
 
 METHOD B: GitHub URL (no git, any device)
-  https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+  https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
 
 METHOD C: Same-host workspace (zero latency)
   cat /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2/CSMGen/CSMAegis/COMMS/director-001-outbox.md

@@ -31,7 +31,7 @@
 #   - Google extracts platform 33 as 'android-13' → rename
 #   - Some build-tools URLs return 404 — fallback chain built in
 #
-# Project: CarrPod (github.com/ZirconiaAegisC/CarrPod)
+# Project: CarrPod (github.com/PrimeCarrPod/SEED)
 # Session: 2026-07-25
 # ============================================================
 set -e

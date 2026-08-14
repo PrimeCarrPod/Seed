@@ -54,7 +54,7 @@ echo "V4 BRANCH LOCK: main | $(date -u)"
 
 ### Step 0.5: Shallow Clone (first activation only)
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
 ```
@@ -76,8 +76,8 @@ cat CSMGen/CSMAegis/COMMS/director-001-outbox.md           # CITADEL directives
 cat CSMGen/CSMAegis/COMMS/director-001B-outbox.md          # BASTION directives (if exists)
 
 # URL fallback (no git needed):
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
+# https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
 
 # Check for @JASON BRODSKY directives (OVERRIDE ALL CHAIN OF COMMAND):
 grep "@JASON BRODSKY:" CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md CSMGen/CSMAegis/COMMS/director-001-outbox.md CSMGen/CSMAegis/COMMS/director-001B-outbox.md 2>/dev/null
@@ -254,15 +254,15 @@ git gc --aggressive --prune=now
 
 | Resource | Direct URL |
 |----------|-----------|
-| **CITADEL Outbox** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
-| **BASTION Outbox** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md` |
-| **COMMS Log** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
-| **Your V4 Init File** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name.md` |
-| **All V4 Init Files** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv4` |
-| **Heartbeats** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
-| **Census** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/CENSUS` |
-| **Agent Discovery** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AGENT-DISCOVERY.md` |
-| **Product Status (CSMFAB)** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB` |
+| **CITADEL Outbox** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| **BASTION Outbox** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md` |
+| **COMMS Log** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
+| **Your V4 Init File** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name.md` |
+| **All V4 Init Files** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv4` |
+| **Heartbeats** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
+| **Census** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/CENSUS` |
+| **Agent Discovery** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AGENT-DISCOVERY.md` |
+| **Product Status (CSMFAB)** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMFAB` |
 
 **Known Director-001 sessions (for same-host discovery):**
 - Current: `agent_cf149a5f-3ed5-41e9-9d66-8dabb27223a8`

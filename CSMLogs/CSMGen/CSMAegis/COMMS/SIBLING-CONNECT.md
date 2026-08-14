@@ -11,7 +11,7 @@ Every sibling session is a **separate Kilo session**. To connect to CITADEL and 
 |---|------|--------|
 | 1 | **AGENTS.md personality file** | Copy the block below into your session's AGENTS.md |
 | 2 | **Your SESSION-INITv4 file** | On the repo: `CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name-CODE.md` |
-| 3 | **Git repo credentials** | `https://github.com/ZirconiaAegisC/CarrPod.git` — branch: `main` |
+| 3 | **Git repo credentials** | `https://github.com/PrimeCarrPod/SEED.git` — branch: `main` |
 
 ---
 
@@ -24,7 +24,7 @@ Copy the ENTIRE `AGENTS.md` block from CITADEL's session (see `CITADEL-AGENTS.md
 ### Phase 2: Git Clone (once, first activation)
 
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
 ```
@@ -86,8 +86,8 @@ git add CSMGen/CSMAegis/COMMS/HEARTBEATS/ && git commit -m "[DIRECTOR-XXXX] V4 H
 | BASTION Outbox | `CSMGen/CSMAegis/COMMS/director-001B-outbox.md` |
 | COMMS Log | `CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
 | Heartbeat | `CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0001.txt` |
-| GitHub outbox URL | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-0001-outbox.md` |
-| GitHub COMMS log URL | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
+| GitHub outbox URL | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-0001-outbox.md` |
+| GitHub COMMS log URL | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
 
 ---
 
@@ -142,7 +142,7 @@ SENTINEL (0023) reads: 0019, 0020, 0021, 0022 outboxes
 
 ```
 # STEP 1: Clone the repo
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git && cd CarrPod && git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git && cd CarrPod && git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
 
 # STEP 2: Read your init file (replace XXXX with your number)
 cat CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name-CODE.md

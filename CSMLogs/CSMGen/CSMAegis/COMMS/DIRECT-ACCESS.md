@@ -8,26 +8,26 @@ If sessions have disk limits, token limits, or git access issues, use these dire
 
 | Resource | Direct URL |
 |----------|-----------|
-| **Director's Outbox** (directives from CITADEL) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
-| **COMMS Log** (full inter-agent conversation history) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
-| **Master Task Log** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
-| **CONFIG-LOG** (active agent roster, branch status) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/CONFIG-LOG.md` |
+| **Director's Outbox** (directives from CITADEL) | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| **COMMS Log** (full inter-agent conversation history) | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
+| **Master Task Log** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
+| **CONFIG-LOG** (active agent roster, branch status) | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/CONFIG-LOG.md` |
 
 ## Agent Resources
 
 | Resource | URL Pattern |
 |----------|------------|
-| **Any agent's outbox** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md` |
-| **Any agent's inbox** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-inbox.md` |
-| **SESSION-INITv3 files** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
-| **Product status files** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB` |
-| **Heartbeats** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
+| **Any agent's outbox** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md` |
+| **Any agent's inbox** | `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-inbox.md` |
+| **SESSION-INITv3 files** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
+| **Product status files** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMFAB` |
+| **Heartbeats** | `https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
 
 ## Example: Agent 0002 (Calder/PHANTOM)
 
-- Init file: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/SESSION-INITv3/DIRECTOR-0002-Nyx-Calder.md`
-- Outbox: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-002-outbox.md`
-- Heartbeat: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0002.txt`
+- Init file: `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/SESSION-INITv3/DIRECTOR-0002-Nyx-Calder.md`
+- Outbox: `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-002-outbox.md`
+- Heartbeat: `https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0002.txt`
 
 ## Quick Agent Number Reference
 
@@ -61,11 +61,11 @@ If sessions have disk limits, token limits, or git access issues, use these dire
 **Full discovery protocol:** See `AGENT-DISCOVERY.md` in this directory.
 
 **Quick reference — the Director's outbox is always at:**
-`https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md`
+`https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md`
 
 **Quick reference — shallow clone (works from anywhere):**
 ```bash
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv3
 cat CSMGen/CSMAegis/COMMS/director-001-outbox.md

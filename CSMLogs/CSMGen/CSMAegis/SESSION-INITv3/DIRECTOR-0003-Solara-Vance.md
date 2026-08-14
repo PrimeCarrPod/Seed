@@ -12,7 +12,7 @@ if [ "$BRANCH" != "main" ]; then echo "FATAL: Wrong branch. Aborting."; exit 1; 
 
 ### 0.5. Shallow Clone (first activation only)
 ```
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv3 CSMSOPP/MODULE-V2
 ```

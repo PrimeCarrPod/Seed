@@ -14,8 +14,8 @@ The session should auto-load from the workspace at:
 
 OR clone fresh if the workspace doesn't persist:
 ```
-git clone https://github.com/ZirconiaAegisC/CarrPod.git
-cd CarrPod
+git clone https://github.com/PrimeCarrPod/SEED.git
+cd SEED
 ```
 
 ### 2. Tell the AI Agent EXACTLY this:

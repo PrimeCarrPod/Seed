@@ -316,7 +316,7 @@ All parts: Williams Heuristic Communication Standard (CSMSOPP000001, MODULE-V2).
 ---
 ## Links & Contact
 
-**Compendium:** https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGeneralOutreach/CSMGeneralOutreach-COMPILED-Compendium.md
+**Compendium:** https://github.com/PrimeCarrPod/SEED/blob/main/CSMGeneralOutreach/CSMGeneralOutreach-COMPILED-Compendium.md
 
 **Web:** www.CarrPod.Net
 **Email:** Zirconia@AegisC.Space | JasonBrodsky@Hotmail.com

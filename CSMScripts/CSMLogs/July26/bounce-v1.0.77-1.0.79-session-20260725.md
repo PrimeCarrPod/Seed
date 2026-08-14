@@ -1,7 +1,7 @@
 # Bounce v1.0.77–v1.0.79 Build Session — 2026-07-25
 
 **Agent:** agent_15100628-51e7-4e1a-941b-c4840ece6773
-**Repository:** CarrPod (github.com/ZirconiaAegisC/CarrPod)
+**Repository:** CarrPod (github.com/PrimeCarrPod/SEED)
 **Branch:** session/agent_15100628-51e7-4e1a-941b-c4840ece6773 → merged to `main`
 
 ---

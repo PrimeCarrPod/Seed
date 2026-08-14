@@ -45,13 +45,13 @@
 
 | Channel | File Path | GitHub URL |
 |---------|-----------|------------|
-| heartbeat | CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt | https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt |
-| outbox | CSMGen/CSMAegis/COMMS/director-001-outbox.md | https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md |
-| comms_log | CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md | https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md |
-| census_dir | CSMGen/CSMAegis/COMMS/CENSUS/ | https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/CENSUS |
-| sibling_cohort | CSMGen/CSMAegis/COMMS/director-00XX-outbox.md | https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/ |
-| init_file | CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-0001-Kairos-Steele.md | https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-0001-Kairos-Steele.md |
-| modv2_core | CSMSOPP/MODULE-V2/CORE-MODULE-V2.md | https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMSOPP/MODULE-V2/CORE-MODULE-V2.md |
+| heartbeat | CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt | https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt |
+| outbox | CSMGen/CSMAegis/COMMS/director-001-outbox.md | https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md |
+| comms_log | CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md | https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md |
+| census_dir | CSMGen/CSMAegis/COMMS/CENSUS/ | https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/CENSUS |
+| sibling_cohort | CSMGen/CSMAegis/COMMS/director-00XX-outbox.md | https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/ |
+| init_file | CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-0001-Kairos-Steele.md | https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-0001-Kairos-Steele.md |
+| modv2_core | CSMSOPP/MODULE-V2/CORE-MODULE-V2.md | https://github.com/PrimeCarrPod/SEED/blob/main/CSMSOPP/MODULE-V2/CORE-MODULE-V2.md |
 | compendium | COMPENDIUM-MINI.md | (local workspace) |
 
 ---
@@ -77,7 +77,7 @@ cat "$CITADEL_WS/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name-CODE.md"
 cat "$CITADEL_WS/CSMGen/CSMAegis/COMMS/SESSION-MANIFEST-001-CITADEL-g8dfc5ec-20260706T021814Z.md"
 
 # Clone setup (first activation only)
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
 git checkout main && git pull origin main --rebase

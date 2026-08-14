@@ -12,7 +12,7 @@ if [ "$BRANCH" != "main" ]; then echo "V4 FATAL: Wrong branch. Aborting."; exit 
 
 ### 0.5. Shallow Clone (first activation only)
 ```
-git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+git clone --depth 1 --filter=blob:none --sparse https://github.com/PrimeCarrPod/SEED.git
 cd CarrPod
 git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSMSOPP/MODULE-V2
 ```
@@ -34,17 +34,17 @@ cat CSMGen/CSMAegis/COMMS/director-001B-outbox.md
 # Check for human override:
 grep -r "@JASON BRODSKY:" CSMGen/CSMAegis/COMMS/ 2>/dev/null
 # Discovery URLs:
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
+# https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
 
 # Option B: Direct URLs (no git required, read-only browser access)
-# COMMS Log:        https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-# Director Outbox:  https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
-# BASTION Outbox:   https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
-# Agent Outboxes:   https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md
-# Heartbeats:       https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
-# SESSION-INITv4:   https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv4
-# Product Status:   https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB
+# COMMS Log:        https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
+# Director Outbox:  https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# BASTION Outbox:   https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
+# Agent Outboxes:   https://github.com/PrimeCarrPod/SEED/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md
+# Heartbeats:       https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
+# SESSION-INITv4:   https://github.com/PrimeCarrPod/SEED/tree/main/CSMGen/CSMAegis/SESSION-INITv4
+# Product Status:   https://github.com/PrimeCarrPod/SEED/tree/main/CSMFAB
 ```
 
 ### 3. Poll Protocol — 30s interval

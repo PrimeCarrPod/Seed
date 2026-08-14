@@ -39,7 +39,7 @@ Improved `lettherebelight.sh` — hardened session initialization script impleme
 ### Repository State
 
 - Current branch: `session/agent_5d112061-b958-46ee-b2a2-bb450ab62ef9`
-- Remote: `https://github.com/ZirconiaAegisC/CarrPod.git` (sanitized in logs)
+- Remote: `https://github.com/PrimeCarrPod/SEED.git` (sanitized in logs)
 - Key files verified: `CSMScripts/lettherebelight.sh`, `CSMScripts/SDKForge.sh`, `CSMScripts/keepalive-daemon.sh`
 - Session log: `CSMLogs/August26/session-log-20260811-lettherebelight.md`
 
