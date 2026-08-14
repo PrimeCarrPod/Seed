@@ -9,7 +9,7 @@
 This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative, including legal enactment documents, media correspondence, international outreach, dossier completion, and verification/merge operations. It serves as the single source of truth for tracking progress, priorities, and cross-references.
 
 **Key Metrics:**
-- **Total Legal Acts:** 12 (8 completed, 4 in draft)
+- **Total Legal Acts:** 12 (12 completed, 0 in draft)
 - **Total Dossiers:** 72+ (across V3 Compendiums)
 - **Researched Companies:** 291+ (across dossiers, insurers, and commercial analyses)
 - **Total Media Outreach Targets:** 200+ organizations and individuals
