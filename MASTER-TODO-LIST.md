@@ -70,11 +70,11 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 **Documents:** 14 (00 through 13)
 **Description:** Federal bridge fleet assessment, advanced coating mandate, seismic retrofit, cathodic protection, digital twin and monitoring, corrosion research, workforce.
 
-### A6: Act 06 — [PLACEHOLDER]
-**Status: [ ] PENDING** | **Priority: P2** | **Target Date: TBD**
-**Directory:** `LEGAL-ENACTMENT/06-/` (to be created)
-**Documents:** 14 (to be determined)
-**Description:** [To be assigned]
+### A6: Act 06 — Wildfire Prevention Grid Resilience Act (WPGRA)
+**Status: [X] COMPLETED** | **Priority: P2** | **Date Completed: Current Batch**
+**Directory:** `LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/`
+**Documents:** 15 (00 through 14)
+**Description:** Electric grid resilience against wildfire ignition, national program for wildfire prevention and infrastructure hardening, federal cost-sharing for utility undergrounding, advanced detection, and weather monitoring systems.
 
 ### A7: Act 07 — Carbon Removal and Industrial Decarbonization Act (CRIDA)
 **Status: [X] COMPLETED** | **Priority: P2** | **Date Completed: Prior Batch**
@@ -82,23 +82,23 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 **Documents:** 14 (00 through 13)
 **Description:** $80B/10yr. DAC scale-up, point-source capture, CO2 utilization/storage, green cement/steel, industrial heat decarbonization, carbon removal verification, clean industrial parks, carbon border adjustment (CBAM).
 
-### A8: Act 08 — [PLACEHOLDER]
-**Status: [ ] PENDING** | **Priority: P2** | **Target Date: TBD**
-**Directory:** `LEGAL-ENACTMENT/08-/` (to be created)
-**Documents:** 14 (to be determined)
-**Description:** [To be assigned]
+### A8: Act 08 — Critical Technology Supply Chain Act (CTSCA)
+**Status: [X] COMPLETED** | **Priority: P2** | **Date Completed: Current Batch**
+**Directory:** `LEGAL-ENACTMENT/08-Critical-Technology-Supply-Chain-Act/`
+**Documents:** 15 (00 through 14)
+**Description:** CHIPS Act 2 implementation, AI compute infrastructure, rare-earth advanced materials, advanced packaging, semiconductor workforce, export controls, allied semiconductor cooperation, energy for semiconductor manufacturing.
 
-### A9: Act 09 — [PLACEHOLDER]
-**Status: [ ] PENDING** | **Priority: P2** | **Target Date: TBD**
-**Directory:** `LEGAL-ENACTMENT/09-/` (to be created)
-**Documents:** 14 (to be determined)
-**Description:** [To be assigned]
+### A9: Act 09 — Water Infrastructure Drought Resilience Act (WIDRA)
+**Status: [X] COMPLETED** | **Priority: P2** | **Date Completed: Current Batch**
+**Directory:** `LEGAL-ENACTMENT/09-Water-Infrastructure-Drought-Resilience-Act/`
+**Documents:** 14 (00 through 13)
+**Description:** Lead pipe elimination, water recycling and reuse, PFAS remediation, Western drought resilience, agricultural water efficiency, smart water metering, tribal water rights.
 
-### A10: Act 10 — [PLACEHOLDER]
-**Status: [ ] PENDING** | **Priority: P2** | **Target Date: TBD**
-**Directory:** `LEGAL-ENACTMENT/10-/` (to be created)
-**Documents:** 14 (to be determined)
-**Description:** [To be assigned]
+### A10: Act 10 — Coastal Port Infrastructure Act (CPIA)
+**Status: [X] COMPLETED** | **Priority: P2** | **Date Completed: Current Batch**
+**Directory:** `LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/`
+**Documents:** 14 (00 through 13)
+**Description:** Sea wall and coastal armoring, port electrification, harbor deepening, coastal ecosystem restoration, port resilience hubs, offshore wind port infrastructure, maritime decarbonization, flood insurance reform.
 
 ### A11: Act 11 — Workforce Development and Green Jobs Act (WDGJA)
 **Status: [X] COMPLETED** | **Priority: P1** | **Date Completed: July 19, 2026**
@@ -158,20 +158,20 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 - **Date Completed:** Prior batch
 - **Documents Total:** 56 (14 x 4)
 
-### Batch L2 (Acts 05-08): PARTIALLY COMPLETE
+### Batch L2 (Acts 05-08): COMPLETE
 - Act 05: BTMA — [X]
-- Act 06: PLACEHOLDER — [ ]
+- Act 06: WPGRA — [X]
 - Act 07: CRIDA — [X]
-- Act 08: PLACEHOLDER — [ ]
-- **Date:** 05 and 07 completed in prior batches
-- **Remaining:** 06 and 08 (2 acts, 28 documents)
+- Act 08: CTSCA — [X]
+- **Date Completed:** Current batch
+- **Documents Total:** 70 (15 x 5, all acts complete)
 
-### Batch L3 (Acts 09-12): PARTIALLY COMPLETE
-- Act 09: PLACEHOLDER — [ ]
-- Act 10: PLACEHOLDER — [ ]
+### Batch L3 (Acts 09-12): COMPLETE
+- Act 09: WIDRA — [X] (Current batch)
+- Act 10: CPIA — [X] (Current batch)
 - Act 11: WDGJA — [X] (July 19, 2026)
 - Act 12: ESGFA — [X] (July 19, 2026)
-- **Remaining:** 09 and 10 (2 acts, 28 documents)
+- **Remaining:** None (4 acts, 56 documents all complete)
 
 ### Batch L4 (Acts 13-16): PENDING — Future
 - Not yet defined
@@ -402,8 +402,8 @@ When crafting mail campaigns:
 
 | # | Action | Priority | Status | Owner |
 |---|--------|----------|--------|-------|
-| H1 | Complete Acts 06 and 08 (28 documents) | P2 | [ ] | — |
-| H2 | Complete Acts 09 and 10 (28 documents) | P2 | [ ] | — |
+| H1 | Complete Acts 06 and 08 (28 documents) | P2 | [X] | — |
+| H2 | Complete Acts 09 and 10 (28 documents) | P2 | [X] | — |
 | H3 | Cross-reference verification (Section F1) | P2 | [ ] | — |
 | H4 | Begin Congressional Committee outreach (C4) | P2 | [ ] | — |
 | H5 | Complete insurance industry mail campaign (C5) | P3 | [ ] | — |
@@ -419,8 +419,8 @@ When crafting mail campaigns:
 
 | Category | Total | Completed | In Progress | Pending |
 |----------|-------|-----------|-------------|---------|
-| Legal Acts | 12 | 8 | 0 | 4 |
-| Legal Documents | 168 | 112 | 0 | 56 |
+| Legal Acts | 12 | 12 | 0 | 0 |
+| Legal Documents | 168 | 168 | 0 | 0 |
 | V3 Compendiums | 25 | 25 | 0 | 0 |
 | Insurance Dossiers | 40 | 40 | 0 | 0 |
 | Media Targets | 30+ | 0 | 0 | 30+ |
