@@ -181,7 +181,7 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 ## SECTION C: MEDIA CORRESPONDENCE CAMPAIGNS
 
 ### C1: Major Media Organizations
-**Status: [ ] PENDING** | **Priority: P3**
+**Status: [~] IN PROGRESS — Beginning outreach | Priority: P3**
 **Directory:** `CSM-Brandoutreach/`
 - [ ] CNBC — Clean energy manufacturing, storage, nuclear segments
 - [ ] Bloomberg — Industrial decarbonization, grid resilience, critical minerals
@@ -219,7 +219,7 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 - [ ] Rocky Mountain Institute (RMI) — VPP, grid flexibility, building decarbonization
 
 ### C4: Congressional Committee Outreach
-**Status: [ ] PENDING** | **Priority: P2**
+**Status: [~] IN PROGRESS — Beginning outreach | Priority: P2**
 - [ ] Senate Energy and Natural Resources Committee
 - [ ] Senate Environment and Public Works Committee
 - [ ] Senate Commerce, Science, and Transportation Committee
@@ -232,7 +232,7 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 - [ ] House and Senate Appropriations Committees
 
 ### C5: Insurance Industry Outreach (CSMInsurance)
-**Status: Partial — 40/40 Insurer Dossiers Complete** | **Priority: P3**
+**Status: [~] IN PROGRESS — Mail campaigns ready, 40/40 insurer dossiers complete | Priority: P3**
 **Directory:** `CSMinsurance/INSURERS/`
 - [X] CSMINSURERS-001 through 040 created
 - [ ] Mail campaigns to insurers referencing legal acts and dossiers
@@ -305,7 +305,7 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 | E1-25 | Master Index V3 | [X] | P3 |
 
 ### E2: Additional Dossier Targets
-**Status: [ ] PENDING** | **Priority: P4**
+**Status: [~] IN PROGRESS — Beginning dossier completion | Priority: P4**
 - [ ] Complete dossier for long-duration storage companies (Form Energy, ESS Inc., Eos, e-Zinc, Redflow, Malta)
 - [ ] Complete dossier for thermal storage companies (Antora, Rondo, Brenmiller, Kyoto Group)
 - [ ] Complete dossier for gravity storage companies (Energy Vault, ARES, Gravitricity)
@@ -405,10 +405,10 @@ When crafting mail campaigns:
 | H1 | Complete Acts 06 and 08 (28 documents) | P2 | [X] | — |
 | H2 | Complete Acts 09 and 10 (28 documents) | P2 | [X] | — |
 | H3 | Cross-reference verification (Section F1) | P2 | [X] | — |
-| H4 | Begin Congressional Committee outreach (C4) | P2 | [ ] | — |
-| H5 | Complete insurance industry mail campaign (C5) | P3 | [ ] | — |
-| H6 | Begin major media outreach (C1) | P3 | [ ] | — |
-| H7 | Complete additional dossier targets (E2) | P4 | [ ] | — |
+| H4 | Begin Congressional Committee outreach (C4) | P2 | [~] | — |
+| H5 | Complete insurance industry mail campaign (C5) | P3 | [~] | — |
+| H6 | Begin major media outreach (C1) | P3 | [~] | — |
+| H7 | Complete additional dossier targets (E2) | P4 | [~] | — |
 | H8 | Legal architecture alignment (F3) | P2 | [X] | — |
 | H9 | Document merge and finalization (F4) | P3 | [X] | — |
 | H10 | Quality assurance pass on all acts (F2) | P3 | [X] | — |
