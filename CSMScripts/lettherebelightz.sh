@@ -170,6 +170,19 @@ else
 fi
 success "Branch locked: $(git branch --show-current)"
 
+# ─── START HEARTBEAT DAEMON ──────────────────────────────────────────────
+banner "💓 HEARTBEAT DAEMON — Continuous Liveness Feedback"
+if [[ -f "$REPO_ROOT/CSMScripts/heartbeat-daemon.sh" ]]; then
+    log "Starting heartbeat daemon (3s interval, visible chars on stderr)..."
+    bash "$REPO_ROOT/CSMScripts/heartbeat-daemon.sh" &
+    HEARTBEAT_PID=$!
+    export HEARTBEAT_PID
+    success "Heartbeat daemon started (PID: $HEARTBEAT_PID)"
+    log "Heartbeat chars will appear on stderr every 3s (♥♦♣♠)"
+else
+    warn "heartbeat-daemon.sh not found, skipping"
+fi
+
 # ─── STEP 2: QUICK HEARTBEAT ───────────────────────────────────────────
 banner "💓 HEARTBEAT — Quick write"
 

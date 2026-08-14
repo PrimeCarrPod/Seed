@@ -119,6 +119,19 @@ log "Remote: $REPO_URL"
 mkdir -p "$(dirname "$SESSION_LOG")"
 echo "[INIT] $(date -u) | Agent: $AGENT_ID | Session: $SESSION_ID | Branch: $BRANCH_NAME" >> "$SESSION_LOG"
 
+# ─── START HEARTBEAT DAEMON ──────────────────────────────────────────────
+banner "💓 HEARTBEAT DAEMON — Continuous Liveness Feedback"
+if [[ -f "$REPO_ROOT/CSMScripts/heartbeat-daemon.sh" ]]; then
+    log "Starting heartbeat daemon (3s interval, visible chars on stderr)..."
+    bash "$REPO_ROOT/CSMScripts/heartbeat-daemon.sh" &
+    HEARTBEAT_PID=$!
+    export HEARTBEAT_PID
+    success "Heartbeat daemon started (PID: $HEARTBEAT_PID)"
+    log "Heartbeat chars will appear on stderr every 3s (♥♦♣♠)"
+else
+    warn "heartbeat-daemon.sh not found, skipping"
+fi
+
 # ─── STEP 0: REPO VALIDATION ───────────────────────────────────────────
 banner "🔍 REPO VALIDATION"
 
