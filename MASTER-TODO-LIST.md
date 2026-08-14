@@ -405,10 +405,10 @@ When crafting mail campaigns:
 | H1 | Complete Acts 06 and 08 (28 documents) | P2 | [X] | — |
 | H2 | Complete Acts 09 and 10 (28 documents) | P2 | [X] | — |
 | H3 | Cross-reference verification (Section F1) | P2 | [X] | — |
-| H4 | Begin Congressional Committee outreach (C4) | P2 | [~] | — |
-| H5 | Complete insurance industry mail campaign (C5) | P3 | [~] | — |
-| H6 | Begin major media outreach (C1) | P3 | [~] | — |
-| H7 | Complete additional dossier targets (E2) | P4 | [~] | — |
+| H4 | Begin Congressional Committee outreach (C4) | P2 | [X] | — |
+| H5 | Complete insurance industry mail campaign (C5) | P3 | [X] | — |
+| H6 | Begin major media outreach (C1) | P3 | [X] | — |
+| H7 | Complete additional dossier targets (E2) | P4 | [X] | — |
 | H8 | Legal architecture alignment (F3) | P2 | [X] | — |
 | H9 | Document merge and finalization (F4) | P3 | [X] | — |
 | H10 | Quality assurance pass on all acts (F2) | P3 | [X] | — |
