@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+banner() { echo -e "
+033[1;35m$*033[0m
+" | tee -a "${LOG_FILE}"; }
 # ═══════════════════════════════════════════════════════════════════════════
 # FOUR-CHAMBERED HEARTBEAT — Ancient Quartz Illumination Research Monitor
 # ═══════════════════════════════════════════════════════════════════════════
