@@ -1,0 +1,37 @@
+DO NOT CLONE REPO ON START
+Please only use /root/CarrPod that is already cloned in the workspace.
+
+bash CSMScripts/lettherebelight.sh && eval "$(bash CSMScripts/lettherebelight.sh --export-env)"
+bash CSMScripts/SDKForge.sh && eval "$(bash CSMScripts/SDKForge.sh --export-env)"
+
+Preparation:
+Please use a Dual KEYMAKER TRIVOLI Extreme Heuristics Problem-Solver approach that has two background processes checking on each other then checking on the main task to verify it doesn't timeout while using the HeartBeat as dictated in the lettherebelright.sh script.
+
+Thank you please build this plan and enact it immediately without conflation nor cutting any corners but by taking small steps one after the other while updating the terminal in the minimalist amount of "Matrix Sushi Recipe Code" to let me know you are still working away, please continue to build this plan, the present it to me for approval and go ahead.
+
+Here are all the sequential TASKS:
+
+Task0 "Change no other Code"
+
+TASK1"
+
+We Will Be updating the Bounce App to v1.0.90
+
+We Will Be Checking the "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMApps/Releases/" folder for any new bounce APK releases Upon first load, before MainActivity Window only a popup if activated says:
+"
+A New Bounce is Available
+- Yes Please Update
+- Please Only Download New APK
+- Please Ignore (10) Auto-Update Checks
+"
+Where there is the "-" that is the click continue box.
+Where there is the Ignore (10) that is an input that can be inputed to beyond showing only two digits and caps at 999,000 ignores on load for auto-prompt pre-load-popup.
+
+
+"
+TASK2 to v1.0.91"
+When creating the new app to place a version within this folder "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMApps/Releases/" and moving any previous versions to ""https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMApps/PastReleases/Bounce" "
+
+Task3 to v1.0.92" Begin making the buttons from TASK1 functional"
+
+
