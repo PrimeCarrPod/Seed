@@ -83,10 +83,13 @@
 - `CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_C_1930s.md` (~1,500 lines)
 - `CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_D_1920s.md` (~1,600 lines)
 - Updated: `CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md`
+- **NEW: `CSMScripts/StartScriptCommands/SESSION_START_COMPENDIUM.md`** — 5 startup options, heartbeat reference, verification commands, emergency restart
+- **NEW: `CSMScripts/StartScriptCommands/` directory** — Session start command compendium folder
 
 ---
 
 *Session log created: 2026-08-15T23:43:17Z*  
+*Updated: 2026-08-15T23:51:34Z (compendium added)*  
 *All changes committed and pushed to GitHub. Ready for Document E (1910s) upon authorization.*
 
 ---
