@@ -4,9 +4,9 @@
 
 ---
 
-## OVERALL PROGRESS: 9/23 DOCUMENTS COMPLETED (39%)
+## OVERALL PROGRESS: 10/23 DOCUMENTS COMPLETED (43%)
 
-### COMPLETED DOCUMENTS (9/23):
+### COMPLETED DOCUMENTS (10/23):
 
 | # | Document ID | Title | Era/Vernacular | Status | Lines |
 |---|-------------|-------|----------------|--------|-------|
@@ -19,16 +19,17 @@
 | 7 | CSM_GEN_IMAGE_06 | Underwater/DSV | 2010s SLS/Artemis | ✅ Complete | ~1,800 |
 | 8 | CSM_GEN_IMAGE_A | 1950s ICBM/Space Race | 1950s Atlas/Redstone | ✅ Complete | ~1,500 |
 | 9 | CSM_GEN_IMAGE_B | 1940s V-2/Wartime | 1940s Peenemünde | ✅ Complete | ~1,500 |
+| 10 | CSM_GEN_IMAGE_C | 1930s Goddard/Zeppelins/Art Deco | 1930s Streamline Moderne | ✅ Complete | ~1,500 |
 
-**Total Completed Lines: ~13,800+**
+**Total Completed Lines: ~15,300+**
 
 ---
 
-### PENDING DOCUMENTS (14/23):
+### PENDING DOCUMENTS (13/23):
 
 | # | Document ID | Title | Era/Vernacular | Status |
 |---|-------------|-------|----------------|--------|
-| 10 | CSM_GEN_IMAGE_C | 1930s Goddard/Zeppelins/Art Deco | 1930s | ⏳ Pending |
+| 11 | CSM_GEN_IMAGE_D | 1920s Barnstorming/Roaring Twenties | 1920s | ⏳ Pending |
 | 11 | CSM_GEN_IMAGE_D | 1920s Barnstorming/Roaring Twenties | 1920s | ⏳ Pending |
 | 12 | CSM_GEN_IMAGE_E | 1910s Wright Era/WWI Aviation | 1910s | ⏳ Pending |
 | 13 | CSM_GEN_IMAGE_F | 1900s Wright Flyer/Edwardian | 1900s | ⏳ Pending |
