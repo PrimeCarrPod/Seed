@@ -14,7 +14,7 @@ set -euo pipefail
 
 BASE_DIR="${BASE_DIR:-CSMScripts}"
 LOG_FILE="${BASE_DIR}/earthbeat.log"
-DATA_DIR="${BASE_DIR}/earthbeat-data"
+DATA_DIR="${BASE_DIR}/earthbeatv2-data"
 SCHUMANN_LOG="${DATA_DIR}/schumann.log"
 GEOMAG_LOG="${DATA_DIR}/geomag.log"
 SOLAR_LOG="${DATA_DIR}/solar.log"
@@ -115,7 +115,7 @@ calculate_schumann_coupling() {
 }
 
 # ─── Token Ring Communication ───────────────────────────────────────────────
-TOKEN_DIR="${BASE_DIR}/.tokenring"
+TOKEN_DIR="${BASE_DIR}/.tokenringv2"
 init_token_ring() {
     local count=$1
     mkdir -p "$TOKEN_DIR"
@@ -147,8 +147,8 @@ run_instance() {
     local count=$2
     local mode=$3
     local interval=${4:-6}
-    local instance_log="${BASE_DIR}/earthbeat-instance-${id}.log"
-    local pid_file="${BASE_DIR}/earthbeat-${id}.pid"
+    local instance_log="${BASE_DIR}/earthbeatv2-instance-${id}.log"
+    local pid_file="${BASE_DIR}/earthbeatv2-${id}.pid"
     
     echo $$ > "$pid_file"
     echo "[EARTHBEAT-$id] Started at $(date -u) | PID: $$ | Mode: $mode" >> "$instance_log"
