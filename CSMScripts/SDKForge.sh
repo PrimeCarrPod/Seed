@@ -8,7 +8,7 @@
 # Or use the wrapper:
 #   bash CSMScripts/SESSION-START.sh
 # ============================================================
-# Usage:  bash SDKForge.sh [--verify-only]
+# Usage:  bash SDKForge.sh [--verify-only] [--export-env] [--build-tools VERSION] [--platform API] [--timeout SECONDS] [--quiet] [--help]
 #
 # This script bootstraps a complete Android APK build toolchain
 # in a cloud sandbox environment with NO Gradle, NO AndroidX,
@@ -36,10 +36,42 @@
 # ============================================================
 set -e
 
-# ─── Configuration ───────────────────────────────────
-SDK_BASE="${ANDROID_HOME:-$(pwd)/.sdk/android-sdk}"
+# ─── Parse arguments ─────────────────────────────────
 BUILD_TOOLS_VERSION="33.0.1"
 COMPILE_SDK="33"
+TIMEOUT_SECONDS=300
+QUIET=false
+VERIFY_ONLY=false
+EXPORT_ENV=false
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --verify-only) VERIFY_ONLY=true; shift ;;
+        --export-env) EXPORT_ENV=true; shift ;;
+        --build-tools) BUILD_TOOLS_VERSION="$2"; shift 2 ;;
+        --platform) COMPILE_SDK="$2"; shift 2 ;;
+        --timeout) TIMEOUT_SECONDS="$2"; shift 2 ;;
+        --quiet) QUIET=true; shift ;;
+        --help|-h)
+            echo "SDKForge.sh — CarrPod Cloud Android Toolchain"
+            echo "Usage: bash SDKForge.sh [options]"
+            echo ""
+            echo "Options:"
+            echo "  --verify-only             Verify existing toolchain only"
+            echo "  --export-env              Print export commands only"
+            echo "  --build-tools VERSION     Build tools version (default: 33.0.1)"
+            echo "  --platform API            Compile SDK API level (default: 33)"
+            echo "  --timeout SECONDS         Download timeout (default: 300)"
+            echo "  --quiet                   Suppress progress output"
+            echo "  --help, -h                Show this help"
+            exit 0
+            ;;
+        *) echo "Unknown option: $1"; exit 1 ;;
+    esac
+done
+
+# ─── Configuration ───────────────────────────────────
+SDK_BASE="${ANDROID_HOME:-$(pwd)/.sdk/android-sdk}"
 CMDTOOLS_URL="https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip"
 PLATFORM_URL="https://dl.google.com/android/repository/platform-${COMPILE_SDK}_r02.zip"
 BT_URL="https://dl.google.com/android/repository/build-tools_r${BUILD_TOOLS_VERSION}-linux.zip"
@@ -47,11 +79,12 @@ BT_FALLBACK_URL="https://dl.google.com/android/repository/build-tools_r34.0.0-li
 
 # ─── Colors ──────────────────────────────────────────
 RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; CYAN='\033[0;36m'; NC='\033[0m'
-msg()  { echo -e "${GREEN}[SDKForge]${NC} $1"; }
-warn() { echo -e "${YELLOW}[SDKForge]${NC} $1"; }
-err()  { echo -e "${RED}[SDKForge]${NC} $1"; }
+msg()  { [[ "$QUIET" != "true" ]] && echo -e "${GREEN}[SDKForge]${NC} $1" || true; }
+warn() { [[ "$QUIET" != "true" ]] && echo -e "${YELLOW}[SDKForge]${NC} $1" || true; }
+err()  { [[ "$QUIET" != "true" ]] && echo -e "${RED}[SDKForge]${NC} $1" || true; }
 
 # ─── Banner ──────────────────────────────────────────
+[[ "$QUIET" != "true" ]] && {
 echo ""
 echo -e "${CYAN}╔══════════════════════════════════════════════════════╗${NC}"
 echo -e "${CYAN}║${NC}          ${GREEN}SDKForge — CarrPod Cloud Toolchain${NC}          ${CYAN}║${NC}"
@@ -59,9 +92,10 @@ echo -e "${CYAN}║${NC}  Build Tools: ${YELLOW}${BUILD_TOOLS_VERSION}${NC}  |  
 echo -e "${CYAN}║${NC}  Target: ${CYAN}${SDK_BASE}${NC}  ${CYAN}║${NC}"
 echo -e "${CYAN}╚══════════════════════════════════════════════════════╝${NC}"
 echo ""
+} || true
 
 # ─── Export-env mode (skip install, just print env vars) ───
-if [ "$1" = "--export-env" ]; then
+if [[ "$EXPORT_ENV" == "true" ]]; then
     BT_DIR="$SDK_BASE/build-tools/$BUILD_TOOLS_VERSION"
     echo "export ANDROID_HOME=${SDK_BASE}"
     echo "export BUILD_TOOLS_VERSION=${BUILD_TOOLS_VERSION}"
@@ -71,7 +105,7 @@ if [ "$1" = "--export-env" ]; then
 fi
 
 # ─── Verify-only mode ────────────────────────────────
-if [ "$1" = "--verify-only" ]; then
+if [[ "$VERIFY_ONLY" == "true" ]]; then
     msg "Running in verify-only mode..."
     BT_DIR="$SDK_BASE/build-tools/$BUILD_TOOLS_VERSION"
     PLATFORM_DIR="$SDK_BASE/platforms/android-$COMPILE_SDK"
