@@ -10,17 +10,27 @@ set -euo pipefail
 # ─── MODULE LOADER ──────────────────────────────────────────────────────────
 MODULE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/freenemo_modules"
 MODULES=(
-    "00_core_config.sh"        # Core config, colors, logging, env vars
-    "01_nemotron_payload.sh"   # Nemotron 3 Ultra API payload optimization
-    "02_transport_hardening.sh" # TCP/BBR, SSH multiplexing, curl timeouts
-    "03_github_handler.sh"     # Multi-strategy GitHub operations
-    "04_earthbeat_chambers.sh" # 4-chamber planetary heartbeat monitor
-    "05_sdk_forge.sh"          # Android build toolchain bootstrap
-    "06_session_init.sh"       # lettherebelight session initialization
-    "07_vllm_config.sh"        # vLLM engine flags for NVFP4/Mamba/MTP
-    "08_logging_session.sh"    # CSMLogs/Sessions/Session_Date-Time/ structure
-    "09_error_recovery.sh"     # Repo load failure correction, retries
-    "10_main_orchestrator.sh"  # Main entry: parallel/tokenring execution
+    "00_core_config.sh"              # Core config, colors, logging, env vars
+    "01a_nemotron_payload_core.sh"   # Nemotron API payload - core functions
+    "01b_nemotron_payload_advanced.sh" # Nemotron API payload - advanced functions
+    "02_transport_hardening.sh"      # TCP/BBR, SSH multiplexing, curl timeouts
+    "03a_github_handler_core.sh"     # GitHub handler - config, difficulty, logging
+    "03b_github_handler_strategies.sh" # GitHub handler - strategies & save function
+    "04a_earthbeat_chambers_core.sh" # Earthbeat - generators & chamber runners
+    "04b_earthbeat_chambers_modes.sh" # Earthbeat - token ring & parallel modes
+    "05a_sdk_forge_core.sh"          # SDK Forge - config, helpers, verify
+    "05b_sdk_forge_install.sh"       # SDK Forge - install & entry point
+    "06a_session_init_repo.sh"       # Session init - repo, heartbeat, validation
+    "06b_session_init_heartbeat.sh"  # Session init - census, state, SDK
+    "06c_session_init_persona.sh"    # Session init - persona, paths, banner
+    "07_vllm_config.sh"              # vLLM engine flags for NVFP4/Mamba/MTP
+    "08a_logging_session_core.sh"    # Logging - core functions
+    "08b_logging_session_printer.sh" # Logging - periodic printer & summary
+    "09a_error_recovery_repo.sh"     # Error recovery - repo & git conflicts
+    "09b_error_recovery_api.sh"      # Error recovery - API & parser
+    "09c_error_recovery_health.sh"   # Error recovery - health check
+    "10a_main_orchestrator_setup.sh" # Orchestrator - setup, preflight, init
+    "10b_main_orchestrator_loop.sh"  # Orchestrator - nemotron loop, main entry
 )
 
 load_module() {
