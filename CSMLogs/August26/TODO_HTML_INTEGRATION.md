@@ -5,12 +5,15 @@
 
 ---
 
-## 📋 Phase 3: LOL_v4_staging (PENDING)
+## 📋 Phase 3: LOL_v4_staging (IN PROGRESS)
 **Target:** `CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/LOL_v4_staging/index_v4.html`
 
-- [ ] **3.1** Create directory structure: `LOL_v4_staging/js/`, `LOL_v4_staging/css/`
-- [ ] **3.2** Read source: `DeepResearch/SubParticlesV1/Tardigradia/LOL_v3_staging/index_v3.html` (34 particles, glueball worldlines, swarm, flight controller)
-- [ ] **3.3** Read source: `CSMApps/landolil/v7b/src/main/assets/tardigradia.html` (18 microbe icons, camera follow, motion sensor, Android bridge)
+- [x] **3.1** Create directory structure: `LOL_v4_staging/js/`, `LOL_v4_staging/css/`
+- [x] **3.2** Read source: `DeepResearch/SubParticlesV1/Tardigradia/LOL_v3_staging/index_v3.html` (34 particles, glueball worldlines, swarm, flight controller)
+- [x] **3.3** Read source: `CSMApps/landolil/v7b/src/main/assets/tardigradia.html` (18 microbe icons, camera follow, motion sensor, Android bridge)
+- [x] **3.5** Copy local JS/CSS dependencies to `js/`, `css/`
+  - [x] Downloaded Three.js r128, Chart.js, OrbitControls, EffectComposer, UnrealBloomPass, etc.
+  - [x] Copied v2 CSS/JS from LOL_v2_staging
 - [ ] **3.4** Merge → `LOL_v4_staging/index_v4.html` with:
   - [ ] 34 particle species (all V4.0)
   - [ ] Microbe icons for all 34 (extended from 18)
@@ -20,7 +23,6 @@
   - [ ] Android bridge (`LandOLil` interface) preserved
   - [ ] Local Three.js/Chart.js/shaders (no CDN)
   - [ ] Particle count configurable (200-3000 default, up to 150k)
-- [ ] **3.5** Copy local JS/CSS dependencies to `js/`, `css/`
 - [ ] **3.6** Test in browser/WebView
 
 ---
