@@ -14,15 +14,15 @@
 - [x] **3.5** Copy local JS/CSS dependencies to `js/`, `css/`
   - [x] Downloaded Three.js r128, Chart.js, OrbitControls, EffectComposer, UnrealBloomPass, etc.
   - [x] Copied v2 CSS/JS from LOL_v2_staging
-- [ ] **3.4** Merge → `LOL_v4_staging/index_v4.html` with:
-  - [ ] 34 particle species (all V4.0)
-  - [ ] Microbe icons for all 34 (extended from 18)
-  - [ ] Camera Follow (5s hold, smooth lerp)
-  - [ ] Motion Sensor (accelerometer/gyro via Android bridge)
-  - [ ] Click raycast → detail panel
-  - [ ] Android bridge (`LandOLil` interface) preserved
-  - [ ] Local Three.js/Chart.js/shaders (no CDN)
-  - [ ] Particle count configurable (200-3000 default, up to 150k)
+- [x] **3.4** Merge → `LOL_v4_staging/index_v4.html` with:
+  - [x] 34 particle species (all V4.0)
+  - [x] Microbe icons for all 34 (extended from 18)
+  - [x] Camera Follow (5s hold, smooth lerp)
+  - [x] Motion Sensor (accelerometer/gyro via Android bridge)
+  - [x] Click raycast → detail panel
+  - [x] Android bridge (`LandOLil` interface) preserved
+  - [x] Local Three.js/Chart.js/shaders (no CDN)
+  - [x] Particle count configurable (200-3000 default, up to 150k)
 - [ ] **3.6** Test in browser/WebView
 
 ---
