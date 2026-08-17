@@ -7,7 +7,7 @@
 set -euo pipefail
 
 # ─── CONFIGURATION ────────────────────────────────────────
-REPO_ROOT="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1474395b-daea-4849-ad09-b4ee4163c318"
+REPO_ROOT="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_cdd37b35-0db7-463f-a90e-dec91eee7e3c"
 SUBPARTICLES_DIR="$REPO_ROOT/DeepResearch/SubParticlesV4"
 LOGS_DIR="$REPO_ROOT/CSMLogs/Final"
 SCRIPTS_DIR="$REPO_ROOT/CSMScripts"
