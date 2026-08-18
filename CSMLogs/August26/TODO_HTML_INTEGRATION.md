@@ -1,6 +1,6 @@
 # CSMLogs/August26 — HTML Integration Todo List
 
-**Updated:** 2026-08-17  
+**Updated:** 2026-08-18  
 **Source:** CSM_WORK_IN_PROGRESS/README.md + INSTRUCTIONS.md + Session Logs
 
 ---
@@ -91,7 +91,7 @@
 | Phase 1 (Glueball V4.0 Parts 11-14) | ✅ Complete | — |
 | Phase 2A (33 V2.0→V4.0 upgrades) | ✅ Complete | — |
 | Phase 2B (4 PDFs→V4.0) | ✅ Complete | — |
-| **Phase 3 (LOL_v4_staging)** | ⏳ **READY TO START** | **Awaiting your approval to begin 3.1** |
+| **Phase 3 (LOL_v4_staging)** | ✅ **COMPLETE** | **Phase 3.6: Test in browser/WebView** |
 | Phase 4 (TGPU004.htm) | ⏳ Pending | Awaits Phase 3 |
 | Phase 5 (index_v4.html) | ⏳ Pending | Awaits Phase 4 |
 | Phase 6 (CREDITS.md) | ⏳ Pending | Awaits Phase 5 |
@@ -100,6 +100,6 @@
 
 ---
 
-**Next Step:** Ready to begin **Phase 3.1** — create `LOL_v4_staging/js/`, `LOL_v4_staging/css/` directory structure. Awaiting your approval to proceed.
+**Next Step:** **Phase 3.6** — Test `LOL_v4_staging/index_v4.html` in browser/WebView. All merge requirements satisfied.
 
 *V5 Particle series (Electron, Gluon, Graviton, Higgs, Neutrino, Photon, WZ) all complete — this HTML integration is the final SubParticlesV4 deliverable.*
