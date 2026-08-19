@@ -34,6 +34,13 @@
       "success": true,
       "difficulty": "easy",
       "timestamp": "2026-08-19T16:43:20Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:39:50Z"
     }
   ]
 }
