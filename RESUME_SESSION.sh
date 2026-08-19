@@ -66,7 +66,8 @@ files=(
     "CSMScripts/heartbeat-guardian.sh"
     "CSMScripts/keepalive-daemon.sh"
     "CSMScripts/earthbeatv3.sh"
-    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_I_1870s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_K_1850s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md"
 )
 
@@ -133,18 +134,18 @@ echo "Branch: $(git branch --show-current)"
 echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
-echo "Documents completed: 17/23"
-echo "  Latest: CSM_GEN_IMAGE_J_1860s.md (1860s Civil War Balloons)"
-echo "  Next:   CSM_GEN_IMAGE_K_1850s.md (1850s Crystal Palace)"
+echo "Documents completed: 18/23"
+echo "  Latest: CSM_GEN_IMAGE_K_1850s.md (1850s Crystal Palace Exhibition)"
+echo "  Next:   CSM_GEN_IMAGE_L_1840s.md (1840s Early Ballooning/Airships)"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
 echo ""
 echo "Android SDK: $ANDROID_HOME"
 echo ""
-echo "To continue Document J (1860s):"
+echo "To continue Document L (1840s):"
 echo "  cd $(pwd)"
-echo "  # Create CSM_GEN_IMAGE_J_1860s.md"
+echo "  # Create CSM_GEN_IMAGE_L_1840s.md"
 echo ""
 
 # ─── STEP 7: SAVE RESUME STATE ─────────────────────────────
@@ -154,8 +155,8 @@ RESUME_SESSION.sh executed at $(date -u)
 Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
-Documents: 17/23 complete
-Next: Document K (1850s Crystal Palace)
+Documents: 18/23 complete
+Next: Document L (1840s Early Ballooning/Airships)
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
 RESUMEEOF
