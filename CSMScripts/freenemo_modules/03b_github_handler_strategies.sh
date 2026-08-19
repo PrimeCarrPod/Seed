@@ -4,7 +4,31 @@
 # Multi-strategy save with auto-split for large files, merge queue processor
 # ════════════════════════════════════════════════════════════════════════════
 
-# ─── STRATEGIES (1-13) ──────────────────────────────────────────────────────
+# ─── CONFIG ──────────────────────────────────────────────────────────────────
+GH_LOG_DIR="${REPO_ROOT}/.github_handler"
+GH_DIFFICULTY_LOG_DIR="${GH_LOG_DIR}/difficulty_logs"
+GH_METHODS_LOG_DIR="${GH_LOG_DIR}/methods_logs"
+GH_MERGE_QUEUE="${GH_LOG_DIR}/merge_queue.json"
+GH_SPLIT_DIR="${GH_LOG_DIR}/splits"
+
+EASY_THRESHOLD=100
+MEDIUM_THRESHOLD=500
+HARD_THRESHOLD=2000
+EXTREME_THRESHOLD=5000
+
+EASY_STRATS=3
+MEDIUM_STRATS=6
+HARD_STRATS=9
+EXTREME_STRATS=13
+
+# Unique session/process identifier for log file serialization
+GH_SESSION_ID="${GH_SESSION_ID:-$(date +%s%N)_$$_${RANDOM}}"
+
+# ─── INIT ────────────────────────────────────────────────────────────────────
+gh_init() {
+    mkdir -p "${GH_LOG_DIR}" "${GH_SPLIT_DIR}" "${GH_DIFFICULTY_LOG_DIR}" "${GH_METHODS_LOG_DIR}"
+    [[ -f "${GH_MERGE_QUEUE}" ]] || echo '{"queue":[]}' > "${GH_MERGE_QUEUE}"
+}
 gh_strat_1_direct() { local f="$1" m="$2" b="$3"; cd "$REPO_ROOT"; git add "$f"; git commit -m "$m"; git -c http.sslVerify=false push origin "$b"; }
 gh_strat_2_staged() { local f="$1" m="$2" b="$3"; cd "$REPO_ROOT"; git add -A; git commit -m "$m"; git -c http.sslVerify=false push origin "$b"; }
 gh_strat_3_force()  { local f="$1" m="$2" b="$3"; cd "$REPO_ROOT"; git add "$f"; git commit -m "$m"; git -c http.sslVerify=false push --force-with-lease origin "$b"; }
@@ -48,8 +72,10 @@ gh_save_file() {
         if $strat "$file" "$msg" "$branch"; then
             freenemo_success "$strat succeeded"
             gh_log_method "$file" "$strat" "true" "$diff"
-            local entry=$(jq -n --arg f "$file" --arg d "$diff" --arg l "$lines" --arg s "$count" --arg t "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --arg m "$strat" "{file:\$f,difficulty:\$d,lines:(\$l|tonumber),strategies:(\$s|tonumber),timestamp:\$t,success_method:\$m}")
-            jq --argjson e "$entry" ".files[\$f]=\$e" "${GH_DIFFICULTY_LOG}" > "${GH_DIFFICULTY_LOG}.tmp" && mv "${GH_DIFFICULTY_LOG}.tmp" "${GH_DIFFICULTY_LOG}"
+            # Log success to difficulty log (separate file per session)
+            local entry=$(jq -n --arg f "$file" --arg d "$diff" --arg l "$lines" --arg s "$count" --arg t "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --arg m "$strat" '{file:$f,difficulty:$d,lines:($l|tonumber),strategies:($s|tonumber),timestamp:$t,success_method:$m}')
+            local log_file="${GH_DIFFICULTY_LOG_DIR}/difficulty_${GH_SESSION_ID}.json"
+            echo "$entry" > "$log_file"
             return 0
         else
             freenemo_warn "$strat failed"
