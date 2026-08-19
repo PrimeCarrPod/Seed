@@ -4,9 +4,9 @@
 
 ---
 
-## OVERALL PROGRESS: 16/23 DOCUMENTS COMPLETED (70%)
+## OVERALL PROGRESS: 17/23 DOCUMENTS COMPLETED (74%)
 
-### COMPLETED DOCUMENTS (16/23):
+### COMPLETED DOCUMENTS (17/23):
 
 | # | Document ID | Title | Era/Vernacular | Status | Lines |
 |---|-------------|-------|----------------|--------|-------|
@@ -26,16 +26,16 @@
 | 14 | CSM_GEN_IMAGE_G | 1890s Lilienthal/Victorian | 1890s Engineering Journal | ✅ Complete | ~190 |
 | 15 | CSM_GEN_IMAGE_H | 1880s Ballooning/Meteorology | 1880s Meteorological Bulletin | ✅ Complete | ~190 |
 | 16 | CSM_GEN_IMAGE_I | 1870s Ballooning/Jules Verne | 1870s Literary-Scientific | ✅ Complete | ~190 |
+| 17 | CSM_GEN_IMAGE_J | 1860s Civil War Balloons | 1860s Telegraphic/Brady | ✅ Complete | ~197 |
 
-**Total Completed Lines: ~3,100+**
+**Total Completed Lines: ~3,300+**
 
 ---
 
-### PENDING DOCUMENTS (7/23):
+### PENDING DOCUMENTS (6/23):
 
 | # | Document ID | Title | Era/Vernacular | Status |
 |---|-------------|-------|----------------|--------|
-| 17 | CSM_GEN_IMAGE_J | 1860s Civil War Balloons | 1860s | ⏳ Pending |
 | 18 | CSM_GEN_IMAGE_K | 1850s Ballooning/Crystal Palace | 1850s | ⏳ Pending |
 | 19 | CSM_GEN_IMAGE_L | 1840s Early Ballooning/Airships | 1840s | ⏳ Pending |
 | 20 | CSM_GEN_IMAGE_M | 1830s Ballooning/Charles Green | 1830s | ⏳ Pending |
@@ -43,7 +43,7 @@
 | 22 | CSM_GEN_IMAGE_O | 1810s Napoleonic Balloon Corps | 1810s | ⏳ Pending |
 | 23 | CSM_GEN_IMAGE_P | 1800s Montgolfier/Enlightenment | 1800s | ⏳ Pending |
 
-**Estimated Remaining Lines: ~1,200+**
+**Estimated Remaining Lines: ~1,000+**
 
 ---
 
@@ -80,8 +80,8 @@
 
 ### NEXT ACTIONS:
 
-1. **Await user permission** to continue with Document J (1860s)
-2. **Create Documents J-P** (7 remaining historical decades)
+1. **Await user permission** to continue with Document K (1850s)
+2. **Create Documents K-P** (6 remaining historical decades)
 3. **Final git commit** of all 23 documents
 4. **Verify cross-references** across complete suite
 
@@ -96,5 +96,5 @@
 
 ---
 
-*Progress logged at 2026-08-16T03:28:45Z*  
-*Ready for user authorization to proceed with Document J (1860s)*
+*Progress logged at 2026-08-19T15:15:00Z*  
+*Document J (1860s Civil War Balloons) complete — Ready for Document K (1850s)*
