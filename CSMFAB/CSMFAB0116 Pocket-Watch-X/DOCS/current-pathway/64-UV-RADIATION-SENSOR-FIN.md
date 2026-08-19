@@ -1,1 +1,0 @@
-# CSMFAB0116-64 — UV SENSOR FIN: Vishay VEML6075 UVA/UVB sensor. Measure 0-120 klx equivalent. UV Index 0-15+. Burn time estimation based on skin type. Cumulative sun exposure tracking. Melanoma prevention applications.
