@@ -10,14 +10,14 @@
 
 set -euo pipefail
 
-REPO_ROOT="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_9cc12187-b561-4eba-b2d4-d5580eb8d2b3"
+REPO_ROOT="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_68a6309c-661d-4cb5-ad90-96661422cf37"
 cd "$REPO_ROOT"
 
 echo "================================================================"
 echo "  SubParticleReturnToWork.sh — Session Resume"
 echo "================================================================"
 echo "Repository: PrimeCarrPod/Seed"
-echo "Branch: session/agent_9cc12187-b561-4eba-b2d4-d5580eb8d2b3 (tracking origin/main)"
+echo "Branch: session/agent_68a6309c-661d-4cb5-ad90-96661422cf37 (tracking origin/main)"
 echo "Date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 echo ""
 
@@ -231,10 +231,44 @@ echo "   ✅ SubParticleReturnToWork.sh updated"
 echo "   ✅ Session log pushed to csmlogs/august26/"
 
 # -----------------------------------------------------------------
-# 9. NEXT STEPS — Phase 4 (TGPU004.htm / LandOLil_v4)
+# 9. RECENT WORK COMPLETED — TGPU v3h (COMPLETE)
 # -----------------------------------------------------------------
 echo ""
-echo "🎯 9. NEXT STEP — PHASE 4: TGPU004.htm / LandOLil_v4 (READY TO EXECUTE)"
+echo "📋 9. RECENT WORK COMPLETED — TGPU v3h (COMPLETE)"
+echo "   --------------------"
+echo "   ✅ Created index_v3h.html — Prime Electron Worldline v3h"
+echo "   ✅ TUCKABLE MENUS from bounce.html integrated:"
+echo "      - Left/right side panels slide off-screen with smooth CSS transitions"
+echo "      - TUCK/UNTUCK button at bottom center toggles both panels"
+echo "      - Panel state preserved via UI.tuckToggle()"
+echo "   ✅ SUBATOMIC PARTICLE ICONS (34 species, NO MICROBES - removed per preference):"
+echo "      - electron (e⁻), proton (p⁺), neutron (n⁰), photon (γ), axion (a)"
+echo "      - neutralino (χ), gluon (g), higgs (H⁰), neutrino (ν), up_quark (u)"
+echo "      - down_quark (d), muon (μ), pion (π), kaon (K), demon (👻)"
+echo "      - graviton (G), w_boson (W), z_boson (Z), glueball (🔗), swarm_mode (🌪)"
+echo "   ✅ FIXED HEADER BUTTONS: Removed pointer-events-none from #hud-header"
+echo "      - All 11 header buttons now functional"
+echo "   ✅ PROPER OPENING SCREEN TRANSITION:"
+echo "      - 'BEGIN WORLDLINE' button correctly launches 3D particle simulation"
+echo "      - Opening screen hidden via classList.add('hidden')"
+echo "      - sim.init() called with opening parameters"
+echo "   ✅ CAMERA FOLLOW: 5s hold per particle, smooth lerp transition, HUD panel"
+echo "   ✅ MOTION SENSOR: Accelerometer/gyro via Android bridge"
+echo "   ✅ CLICK-TO-DETAIL: Raycast → detail panel with physics data"
+echo "   ✅ PRIME GAP VIEW / RIEMANN ZERO VIEW / HILBERT 256 VIEW / TRAILS VIEW"
+echo "   ✅ OPENING SCREEN: Resolution selection + 8 physics seed parameters + randomize buttons"
+echo "   ✅ ANDROID BRIDGE: LandOLil interface preserved for native deployment"
+echo "   ✅ LOCAL LIBRARIES: All Three.js/Chart.js/shaders local (no CDN)"
+echo "   ✅ Created TGPU_v3h_package.zip with proper structure (index_v3h.html + js/)"
+echo "   ✅ index_v3h.html and TGPU_v3h_package.zip pushed to GitHub"
+echo "   ✅ SubParticleReturnToWork.sh updated"
+echo "   ✅ Session log pushed to csmlogs/august26/"
+
+# -----------------------------------------------------------------
+# 10. NEXT STEPS — Phase 4 (TGPU004.htm / LandOLil_v4)
+# -----------------------------------------------------------------
+echo ""
+echo "🎯 10. NEXT STEP — PHASE 4: TGPU004.htm / LandOLil_v4 (READY TO EXECUTE)"
 echo "   --------------------"
 echo "   Task: Build V4.0 physics integration — Land 'O' Lil v4"
 echo ""
@@ -250,13 +284,13 @@ echo "     - Camera follow, motion sensor, click detail, flight controller"
 echo "     - Android bridge for native deployment"
 echo "     - Local Three.js/Chart.js (offline capable)"
 echo ""
-echo "   Status: v3g complete with liquid flow + tuckable menus. Ready for V4.0 integration."
+echo "   Status: v3h complete with tuckable menus + subatomic icons + fixed buttons. Ready for V4.0 integration."
 
 # -----------------------------------------------------------------
-# 8. GIT STATUS
+# 11. GIT STATUS
 # -----------------------------------------------------------------
 echo ""
-echo "📋 8. GIT STATUS"
+echo "📋 11. GIT STATUS"
 echo "   --------------------"
 git status --short
 echo ""
@@ -264,10 +298,10 @@ echo "   Branch: $(git branch --show-current)"
 echo "   Remote: $(git remote get-url origin)"
 
 # -----------------------------------------------------------------
-# 10. QUICK COMMANDS FOR NEXT SESSION
+# 12. QUICK COMMANDS FOR NEXT SESSION
 # -----------------------------------------------------------------
 echo ""
-echo "🎯 10. QUICK COMMANDS FOR NEXT SESSION"
+echo "🎯 12. QUICK COMMANDS FOR NEXT SESSION"
 echo "   --------------------"
 echo "   # Resume work:"
 echo "   bash CSMWipScripts/SubParticleReturnToWork.sh"
@@ -278,14 +312,14 @@ echo ""
 echo "   # Phase 4: TGPU004.htm / LandOLil_v4:"
 echo "   # 1. Read TGPU evolution files"
 echo "   # 2. Build V4.0 physics integration with liquid flow"
-echo "   # 3. Integrate tuckable menus from v3g"
+echo "   # 3. Integrate tuckable menus from v3h"
 echo ""
 echo "   # Continue V4.0 series (Gluon Parts 11-14, then 17 more series):"
 echo "   # ./MASTER-RESUME.sh new-v4 <ParticleName>"
 echo ""
 
 # -----------------------------------------------------------------
-# 10. AGENT GUIDELINES
+# 13. AGENT GUIDELINES
 # -----------------------------------------------------------------
 echo ""
 echo "📋 10. AGENT GUIDELINES (CRITICAL)"
