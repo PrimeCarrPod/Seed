@@ -68,6 +68,8 @@ files=(
     "CSMScripts/earthbeatv3.sh"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_K_1850s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_L_1840s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_M_1830s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md"
 )
 
@@ -134,9 +136,9 @@ echo "Branch: $(git branch --show-current)"
 echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
-echo "Documents completed: 19/23"
-echo "  Latest: CSM_GEN_IMAGE_L_1840s.md (1840s Early Ballooning/Airships / Henson Aerial Steam Carriage)"
-echo "  Next:   CSM_GEN_IMAGE_M_1830s.md (1830s Ballooning/Charles Green)"
+echo "Documents completed: 20/23"
+echo "  Latest: CSM_GEN_IMAGE_M_1830s.md (1830s Ballooning/Charles Green / Royal Nassau / Professional Aeronaut)"
+echo "  Next:   CSM_GEN_IMAGE_N_1820s.md (1820s Hydrogen Balloons)"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
@@ -155,8 +157,8 @@ RESUME_SESSION.sh executed at $(date -u)
 Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
-Documents: 19/23 complete
-Next: Document M (1830s Ballooning/Charles Green)
+Documents: 20/23 complete
+Next: Document N (1820s Hydrogen Balloons)
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
 RESUMEEOF
@@ -164,9 +166,9 @@ success "Resume state saved to RESUME_STATE.txt"
 
 banner "✅ SESSION FULLY RESTORED — READY TO CONTINUE"
 echo ""
-echo "To continue Document M (1830s):"
+echo "To continue Document N (1820s):"
 echo "  cd $(pwd)"
-echo "  # Create CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_M_1830s.md"
+echo "  # Create CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_N_1820s.md"
 echo ""
 
 # Keep script alive to show heartbeats
