@@ -79,7 +79,8 @@ files=(
     "CSMScripts/heartbeat-guardian.sh"
     "CSMScripts/keepalive-daemon.sh"
     "CSMScripts/earthbeatv3.sh"
-    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_I_1870s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_K_1850s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md"
 )
 
@@ -146,9 +147,9 @@ echo "Branch: $(git branch --show-current)"
 echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
-echo "Documents completed: 16/23"
-echo "  Latest: CSM_GEN_IMAGE_I_1870s.md (1870s Jules Verne / Nadar)"
-echo "  Next:   CSM_GEN_IMAGE_J_1860s.md (1860s Civil War Balloons / Lowe / Thaddeus)"
+echo "Documents completed: 18/23"
+echo "  Latest: CSM_GEN_IMAGE_K_1850s.md (1850s Crystal Palace Exhibition)"
+echo "  Next:   CSM_GEN_IMAGE_L_1840s.md (1840s Early Ballooning/Airships)"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
@@ -164,8 +165,8 @@ Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
 Session: August Iron Man Graphic Generator (Aegis Iron Man)
-Documents: 16/23 complete
-Next: Document J (1860s Civil War Balloons — Thaddeus Lowe, Union Army Balloon Corps)
+Documents: 18/23 complete
+Next: Document L (1840s Early Ballooning/Airships)
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
 RESUMEEOF
@@ -173,9 +174,9 @@ success "Resume state saved to RESUME_STATE.txt"
 
 banner "✅ AUGUST IRON MAN GRAPHICS SESSION FULLY RESTORED — READY TO CONTINUE"
 echo ""
-echo "To continue Document J (1860s Civil War Balloons):"
+echo "To continue Document L (1840s Early Ballooning/Airships):"
 echo "  cd $(pwd)"
-echo "  # Create CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
+echo "  # Create CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_L_1840s.md"
 echo ""
 
 # Keep script alive to show heartbeats
