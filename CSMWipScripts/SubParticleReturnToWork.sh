@@ -171,16 +171,36 @@ echo "   ✅ Fixed opening screen transition to 3D world (BEGIN WORLDLINE button
 echo "   ✅ Created TGPU_v3e_package.zip with proper structure (index_v3e.html + js/)"
 
 # -----------------------------------------------------------------
-# 7. NEXT STEPS — Phase 3.1 (IMMEDIATE)
+# 7. RECENT WORK COMPLETED — TGPU v3f Fix (COMPLETE)
 # -----------------------------------------------------------------
 echo ""
-echo "🎯 7. NEXT STEP — PHASE 3.1 (READY TO EXECUTE)"
+echo "📋 7. RECENT WORK COMPLETED — TGPU v3f Fix (COMPLETE)"
 echo "   --------------------"
-echo "   Task: Create LOL_v4_staging/index_v4.html by merging:"
-echo "     Source A: DeepResearch/SubParticlesV1/Tardigradia/LOL_v3_staging/index_v3.html"
-echo "     Source B: CSMApps/landolil/v7b/src/main/assets/tardigradia.html"
+echo "   ✅ Fixed opening screen button navigation in index_v3e.html"
+echo "   ✅ Issue: 'BEGIN WORLDLINE' button went to broken menu instead of launching 3D world"
+echo "   ✅ Created index_v3f.html with:"
+echo "      - Opening screen preserved (resolution/physics seed selection)"
+echo "      - 'BEGIN WORLDLINE' properly launches 3D particle simulation (like index_v3.html)"
+echo "      - Microbe icons for all 34 species (from tardigradia.html)"
+echo "      - Camera Follow mode (5s hold, smooth lerp)"
+echo "      - Motion Sensor mode (accelerometer/gyro via Android bridge)"
+echo "      - Click raycast → detail panel with particle data"
+echo "      - Android bridge (LandOLil interface) preserved"
+echo "      - Local Three.js/Chart.js/shaders (no CDN)"
+echo "      - Configurable particle count (200-3000 default, up to 150k)"
+echo "   ✅ index_v3f.html created at root level and pushed to GitHub"
+echo "   ✅ SubParticleReturnToWork.sh updated"
+echo "   ✅ Session log pushed to csmlogs/august26/"
+
+# -----------------------------------------------------------------
+# 8. NEXT STEPS — Phase 3.6 & Phase 4
+# -----------------------------------------------------------------
 echo ""
-echo "   Requirements for index_v4.html:"
+echo "🎯 8. NEXT STEP — PHASE 3.6: TEST LOL_v4_staging (READY TO EXECUTE)"
+echo "   --------------------"
+echo "   Task: Test CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/LOL_v4_staging/index_v4.html in browser/WebView"
+echo ""
+echo "   Requirements already satisfied:"
 echo "     - 34 particle species (all V4.0)"
 echo "     - Microbe icons for all 34 (extended from 18)"
 echo "     - Camera Follow (5s hold, smooth lerp)"
@@ -190,8 +210,28 @@ echo "     - Android bridge (LandOLil interface) preserved"
 echo "     - Local Three.js/Chart.js/shaders (no CDN — already downloaded)"
 echo "     - Particle count configurable (200-3000 default, up to 150k)"
 echo ""
-echo "   Status: Directory structure created, JS/CSS copied, dependencies downloaded"
-echo "   Next: Create index_v4.html merge"
+echo "   Status: LOL_v4_staging/index_v4.html created and ready for testing"
+echo "   Next: Open in browser, verify all features work"
+
+# -----------------------------------------------------------------
+# 9. FOLLOW-UP — Phase 4 (TGPU004.htm)
+# -----------------------------------------------------------------
+echo ""
+echo "🎯 9. FOLLOW-UP — PHASE 4: TGPU004.htm (PENDING)"
+echo "   --------------------"
+echo "   Task: Build V4.0 physics integration"
+echo ""
+echo "   Source files:"
+echo "     - TGPU00000001.htm → TGPU00000002.htm → TGPU003.htm evolution"
+echo "     - All 34+ V4.0 particle species properties"
+echo "     - Glueball worldlines with QCD string tension"
+echo "     - Swarm mechanics + fluid dynamics coupling"
+echo "     - Microbial ecosystem food chain visualization"
+echo "     - One-electron universe worldline topology"
+echo "     - Real-time metrics: Action, Benevolence, Coherence, Glueball energy"
+echo "     - Camera follow, motion sensor, click detail, flight controller"
+echo "     - Android bridge for native deployment"
+echo "     - Local Three.js/Chart.js (offline capable)"
 
 # -----------------------------------------------------------------
 # 8. GIT STATUS
@@ -205,10 +245,10 @@ echo "   Branch: $(git branch --show-current)"
 echo "   Remote: $(git remote get-url origin)"
 
 # -----------------------------------------------------------------
-# 9. QUICK COMMANDS FOR NEXT SESSION
+# 10. QUICK COMMANDS FOR NEXT SESSION
 # -----------------------------------------------------------------
 echo ""
-echo "🎯 9. QUICK COMMANDS FOR NEXT SESSION"
+echo "🎯 10. QUICK COMMANDS FOR NEXT SESSION"
 echo "   --------------------"
 echo "   # Resume work:"
 echo "   bash CSMWipScripts/SubParticleReturnToWork.sh"
@@ -216,10 +256,14 @@ echo ""
 echo "   # View todo list:"
 echo "   cat CSMLogs/August26/TODO_HTML_INTEGRATION.md"
 echo ""
-echo "   # Start Phase 3.1:"
-echo "   # 1. Read both source HTML files"
-echo "   # 2. Create merged index_v4.html in CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/LOL_v4_staging/"
+echo "   # Phase 3.6: Test LOL_v4_staging:"
+echo "   # 1. Open CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/LOL_v4_staging/index_v4.html in browser"
+echo "   # 2. Verify all features work"
 echo "   # 3. Update TODO_HTML_INTEGRATION.md checkboxes"
+echo ""
+echo "   # Phase 4: TGPU004.htm:"
+echo "   # 1. Read TGPU evolution files"
+echo "   # 2. Build V4.0 physics integration"
 echo ""
 echo "   # Continue V4.0 series (Gluon Parts 11-14, then 17 more series):"
 echo "   # ./MASTER-RESUME.sh new-v4 <ParticleName>"
