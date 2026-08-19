@@ -28,18 +28,18 @@
 ## 📋 Phase 3b: TGPU v3f Fix (NEW - IMMEDIATE)
 **Target:** `index_v3f.html` (root level) — Fix opening screen button navigation to properly launch 3D world
 
-- [ ] **3b.1** Fix "BEGIN WORLDLINE" button in index_v3e.html to properly initialize and launch the 3D particle simulation (not go to broken menu)
-- [ ] **3b.2** Integrate microbe icons for all 34 species (from tardigradia.html)
-- [ ] **3b.3** Add Camera Follow mode (5s hold, smooth lerp)
-- [ ] **3b.4** Add Motion Sensor mode (accelerometer/gyro via Android bridge)
-- [ ] **3b.5** Add Click raycast → detail panel
-- [ ] **3b.6** Preserve Android bridge (LandOLil interface)
-- [ ] **3b.7** Use local Three.js/Chart.js/shaders (no CDN)
-- [ ] **3b.8** Configurable particle count (200-3000 default, up to 150k)
-- [ ] **3b.9** Create index_v3f.html with all fixes
-- [ ] **3b.10** Push index_v3f.html to GitHub (root level)
-- [ ] **3b.11** Update SubParticleReturnToWork.sh with progress
-- [ ] **3b.12** Push session log to csmlogs/august26/
+- [x] **3b.1** Fix "BEGIN WORLDLINE" button in index_v3e.html to properly initialize and launch the 3D particle simulation (not go to broken menu)
+- [x] **3b.2** Integrate microbe icons for all 34 species (from tardigradia.html)
+- [x] **3b.3** Add Camera Follow mode (5s hold, smooth lerp)
+- [x] **3b.4** Add Motion Sensor mode (accelerometer/gyro via Android bridge)
+- [x] **3b.5** Add Click raycast → detail panel
+- [x] **3b.6** Preserve Android bridge (LandOLil interface)
+- [x] **3b.7** Use local Three.js/Chart.js/shaders (no CDN)
+- [x] **3b.8** Configurable particle count (200-3000 default, up to 150k)
+- [x] **3b.9** Create index_v3f.html with all fixes
+- [x] **3b.10** Push index_v3f.html to GitHub (root level)
+- [x] **3b.11** Update SubParticleReturnToWork.sh with progress
+- [x] **3b.12** Push session log to csmlogs/august26/
 
 ---
 
@@ -108,8 +108,8 @@
 | Phase 2A (33 V2.0→V4.0 upgrades) | ✅ Complete | — |
 | Phase 2B (4 PDFs→V4.0) | ✅ Complete | — |
 | **Phase 3 (LOL_v4_staging)** | ✅ **COMPLETE** | **Phase 3.6: Test in browser/WebView** |
-| **Phase 3b (TGPU v3f Fix)** | 🔄 **IN PROGRESS** | **Fix opening screen button navigation** |
-| Phase 4 (TGPU004.htm) | ⏳ Pending | Awaits Phase 3b |
+| **Phase 3b (TGPU v3f Fix)** | ✅ **COMPLETE** | **Phase 3.6: Test LOL_v4_staging** |
+| Phase 4 (TGPU004.htm) | ⏳ Pending | Awaits Phase 3.6 |
 | Phase 5 (index_v4.html) | ⏳ Pending | Awaits Phase 4 |
 | Phase 6 (CREDITS.md) | ⏳ Pending | Awaits Phase 5 |
 | Phase 7 (Git Push) | ⏳ Pending | Awaits Phase 6 |
@@ -117,6 +117,6 @@
 
 ---
 
-**Next Step:** **Phase 3b** — Fix TGPU v3f opening screen button navigation to properly launch 3D world with microbe icons, camera follow, motion sensor, and click detail. Then proceed to Phase 3.6 (test LOL_v4_staging) and Phase 4 (TGPU004.htm).
+**Next Step:** **Phase 3.6** — Test `LOL_v4_staging/index_v4.html` in browser/WebView. All merge requirements satisfied. Then Phase 4: Build TGPU004.htm with V4.0 physics integration.
 
 *V5 Particle series (Electron, Gluon, Graviton, Higgs, Neutrino, Photon, WZ) all complete — this HTML integration is the final SubParticlesV4 deliverable.*
