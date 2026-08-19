@@ -133,9 +133,9 @@ echo "Branch: $(git branch --show-current)"
 echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
-echo "Documents completed: 16/23"
-echo "  Latest: CSM_GEN_IMAGE_I_1870s.md (1870s Jules Verne)"
-echo "  Next:   CSM_GEN_IMAGE_J_1860s.md (1860s Civil War Balloons)"
+echo "Documents completed: 17/23"
+echo "  Latest: CSM_GEN_IMAGE_J_1860s.md (1860s Civil War Balloons)"
+echo "  Next:   CSM_GEN_IMAGE_K_1850s.md (1850s Crystal Palace)"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
@@ -154,8 +154,8 @@ RESUME_SESSION.sh executed at $(date -u)
 Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
-Documents: 16/23 complete
-Next: Document J (1860s Civil War Balloons)
+Documents: 17/23 complete
+Next: Document K (1850s Crystal Palace)
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
 RESUMEEOF
