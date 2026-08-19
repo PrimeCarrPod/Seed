@@ -1,0 +1,50 @@
+{
+  "session": "glueball-single-electron-synthesis-17x900",
+  "created": "2026-08-19T17:52:33Z",
+  "documents": {
+    "1": {
+      "name": "Foundational_Ontology",
+      "lines": 901,
+      "completed": "2026-08-19T22:20:17Z",
+      "status": "done"
+    },
+    "2": {
+      "name": "Lattice_QCD_Spectroscopy",
+      "lines": 910,
+      "completed": "2026-08-19T22:23:51Z",
+      "status": "done"
+    },
+    "3": {
+      "name": "BESIII_X2370_Discovery",
+      "lines": 966,
+      "completed": "2026-08-19T22:29:21Z",
+      "status": "done"
+    },
+    "4": {
+      "name": "Flavor_Singlet_Constraints",
+      "lines": 900,
+      "completed": "2026-08-19T22:34:41Z",
+      "status": "done"
+    },
+    "5": {
+      "name": "Worldline_Formalism",
+      "lines": 952,
+      "completed": "2026-08-19T22:37:34Z",
+      "status": "done"
+    },
+    "6": {
+      "name": "Topological_Knot_Theory",
+      "lines": 941,
+      "completed": "2026-08-19T22:40:01Z",
+      "status": "done"
+    },
+    "7": {
+      "name": "Algebrodynamic_Topology",
+      "lines": 976,
+      "completed": "2026-08-19T22:47:08Z",
+      "status": "done"
+    }
+  },
+  "current_doc": 8,
+  "status": "in_progress"
+}
