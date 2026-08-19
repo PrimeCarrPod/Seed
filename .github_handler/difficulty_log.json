@@ -34,6 +34,13 @@
       "lines": 45,
       "strategies": 3,
       "timestamp": "2026-08-19T16:43:19Z"
+    },
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b7f3a96-cced-4358-b814-60a678a4683b/RESUME_SESSION_CANINE_HUMAN_NEUROARCHAEO_17DOC_900LINE.sh": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b7f3a96-cced-4358-b814-60a678a4683b/RESUME_SESSION_CANINE_HUMAN_NEUROARCHAEO_17DOC_900LINE.sh",
+      "difficulty": "medium",
+      "lines": 126,
+      "strategies": 6,
+      "timestamp": "2026-08-19T17:53:56Z"
     }
   }
 }

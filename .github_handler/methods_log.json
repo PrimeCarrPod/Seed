@@ -22,13 +22,6 @@
       "timestamp": "2026-08-19T16:42:02Z"
     },
     {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_9fc18521-1005-4be7-99fe-d099f431b490/CSM_WORK_IN_PROGRESS/AegisIronMan/RESUME_AUGUST_IRONMAN_GRAPHICS.sh",
-      "method": "strategy_1_direct_commit",
-      "success": true,
-      "difficulty": "medium",
-      "timestamp": "2026-08-19T16:42:12Z"
-    },
-    {
       "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_9fc18521-1005-4be7-99fe-d099f431b490/CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/K_1850s_PIECES.zip",
       "method": "strategy_1_direct_commit",
       "success": true,
@@ -62,6 +55,13 @@
       "success": true,
       "difficulty": "easy",
       "timestamp": "2026-08-19T22:59:55Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b7f3a96-cced-4358-b814-60a678a4683b/RESUME_SESSION_CANINE_HUMAN_NEUROARCHAEO_17DOC_900LINE.sh",
+      "method": "strategy_1_direct_commit",
+      "success": true,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T17:54:01Z"
     }
   ]
 }
