@@ -1,0 +1,10 @@
+# PIECE 4: Section II Part C (THE SUBJECT — Five Toxic Elements)
+
+**Five Toxic Elements (1840s Early Airships):**
+1. **Steam Boiler Explosion / High-Pressure Failure** (boiler 150 psi, rivets fail, 300 lb iron fragments, 50 m/s, carriage 10 ft below, navigator 3 sec) — Channel 0/14 thermal/pressure, MXene dome catalytically vents steam, Citadel Ground shunts overpressure.
+2. **Hydrogen Fire / Envelope Ignition from Steam Exhaust** (envelope tear, 100,000 ft³ H₂, steam exhaust 300°C, 2,000 m/s flame front, carriage 30 ft below, navigator 3 sec) — Channel 0/14 fire/chem, MXene dome catalytically recombines H₂, Citadel Ground shunts thermal.
+3. **Rudder/Control Surface Failure / Uncontrolled Drift** (control wire snaps, propeller torque rolls carriage, no elevator authority, spin 360°/s, 1,000 ft → 0 in 20 s) — Channel 9/10 structural, auxetic cladding absorbs spin shock, MR fluid stiffens at 10 kPa.
+4. **Ballast/Coal/Water Exhaustion / Forced Landing on Hostile Terrain** (fuel depleted, 50 kg coal → 0, water 100 L → 0, descent 5 m/s, impact 20 m/s, rough ground, no rescue) — Channel 11 inertial, PVDF-TrFE distributed vestibular holds attitude, airship horizon projects glide vector.
+5. **Psychological Burden / First to Steer the Sky with Fire** (first powered flight, 1 navigator, 30 min, world watches, Society of Arts records, Patent Office examines, history judges) — Channel 15 bio-acoustic, MR counter-rhythm at 0.1 Hz, health index HI=0.95.
+
+Each toxin renders as **geometric intrusion** from background — stopped, managed, *narrated* at the suit boundary. The steam throttle (gripped) shows **real-time navigation criteria** in an expose window — "THRUST 1.8 HP / RPM 2400 / ALT 1000 FT / SPEED 45 MPH / FUEL 15 MIN / CONDENSER 80%". The instruments (recorded) show **zero anomaly** — MXene dome pressure contour at 1.0 G. The Aerial Steam Carriage **climbs on steam and hydrogen**. The navigator **commands the sky**. The Citadel Ground **floats on the piston rhythm**.
