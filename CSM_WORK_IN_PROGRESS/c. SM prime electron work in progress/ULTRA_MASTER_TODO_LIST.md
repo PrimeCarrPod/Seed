@@ -53,7 +53,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | ✅ Done |
 | A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | ✅ Done |
 | A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | ✅ Done |
-| A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ⏳ |
+| A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ✅ Done |
 | A1-17 | Worldline_Hamiltonian.md | H = ℏ/κ Σ d_n⁻¹ | ⏳ |
 | A1-18 | Worldline_Path_Integral.md | ∫ D[x] exp(iS/ℏ) | ⏳ |
 | A1-19 | Worldline_Instanton_Solutions.md | Tunneling between gap classes | ⏳ |
