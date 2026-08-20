@@ -112,6 +112,12 @@
 - Zipped: article1_A1-15_pieces.zip
 - All committed and pushed (commit 2cd79c4f)
 
+### 2026-08-20T21:05:00Z — Article 1 A1-16 Complete
+- Created 12 pieces for A1-16: Worldline_Action_Principle
+- Concatenated: 422 lines (≥350 target)
+- Zipped: article1_A1-16_pieces.zip
+- All committed and pushed
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -359,6 +365,20 @@
 | 239 | article1_A1-15_piece_12.md | 71 | ✅ Committed | 2cd79c4f |
 | 240 | A1-15_Worldline_Geodesic_Equation.md | 510 | ✅ Committed | 2cd79c4f |
 | 241 | article1_A1-15_pieces.zip | — | ✅ Committed | 2cd79c4f |
+| 242 | article1_A1-16_piece_01.md | 52 | ✅ Committed | (pending) |
+| 243 | article1_A1-16_piece_02.md | 55 | ✅ Committed | (pending) |
+| 244 | article1_A1-16_piece_03.md | 54 | ✅ Committed | (pending) |
+| 245 | article1_A1-16_piece_04.md | 48 | ✅ Committed | (pending) |
+| 246 | article1_A1-16_piece_05.md | 58 | ✅ Committed | (pending) |
+| 247 | article1_A1-16_piece_06.md | 61 | ✅ Committed | (pending) |
+| 248 | article1_A1-16_piece_07.md | 58 | ✅ Committed | (pending) |
+| 249 | article1_A1-16_piece_08.md | 67 | ✅ Committed | (pending) |
+| 250 | article1_A1-16_piece_09.md | 66 | ✅ Committed | (pending) |
+| 251 | article1_A1-16_piece_10.md | 69 | ✅ Committed | (pending) |
+| 252 | article1_A1-16_piece_11.md | 62 | ✅ Committed | (pending) |
+| 253 | article1_A1-16_piece_12.md | 106 | ✅ Committed | (pending) |
+| 254 | A1-16_Worldline_Action_Principle.md | 422 | ✅ Committed | (pending) |
+| 255 | article1_A1-16_pieces.zip | — | ✅ Committed | (pending) |
 
 ---
 
