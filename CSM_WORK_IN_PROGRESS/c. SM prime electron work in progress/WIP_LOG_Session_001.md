@@ -118,6 +118,12 @@
 - Zipped: article1_A1-16_pieces.zip
 - All committed and pushed
 
+### 2026-08-20T21:45:00Z — Article 1 A1-17 Complete
+- Created 12 pieces for A1-17: Worldline_Hamiltonian
+- Concatenated: 490 lines (≥350 target)
+- Zipped: article1_A1-17_pieces.zip
+- All committed and pushed
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -379,6 +385,20 @@
 | 253 | article1_A1-16_piece_12.md | 106 | ✅ Committed | (pending) |
 | 254 | A1-16_Worldline_Action_Principle.md | 422 | ✅ Committed | (pending) |
 | 255 | article1_A1-16_pieces.zip | — | ✅ Committed | (pending) |
+| 256 | article1_A1-17_piece_01.md | 45 | ✅ Committed | (pending) |
+| 257 | article1_A1-17_piece_02.md | 51 | ✅ Committed | (pending) |
+| 258 | article1_A1-17_piece_03.md | 55 | ✅ Committed | (pending) |
+| 259 | article1_A1-17_piece_04.md | 57 | ✅ Committed | (pending) |
+| 260 | article1_A1-17_piece_05.md | 61 | ✅ Committed | (pending) |
+| 261 | article1_A1-17_piece_06.md | 63 | ✅ Committed | (pending) |
+| 262 | article1_A1-17_piece_07.md | 71 | ✅ Committed | (pending) |
+| 263 | article1_A1-17_piece_08.md | 54 | ✅ Committed | (pending) |
+| 264 | article1_A1-17_piece_09.md | 61 | ✅ Committed | (pending) |
+| 265 | article1_A1-17_piece_10.md | 60 | ✅ Committed | (pending) |
+| 266 | article1_A1-17_piece_11.md | 48 | ✅ Committed | (pending) |
+| 267 | article1_A1-17_piece_12.md | 81 | ✅ Committed | (pending) |
+| 268 | A1-17_Worldline_Hamiltonian.md | 490 | ✅ Committed | (pending) |
+| 269 | article1_A1-17_pieces.zip | — | ✅ Committed | (pending) |
 
 ---
 
@@ -418,7 +438,7 @@
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
-# Continue with Article 1: A1-16 Worldline_Action_Principle.md
+# Continue with Article 1: A1-18 Worldline_Path_Integral.md
 ```
 
 ---
