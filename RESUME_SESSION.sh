@@ -69,7 +69,7 @@ files=(
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_K_1850s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_L_1840s.md"
-    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_N_1820s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_M_1830s.md"
     "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md"
 )
 
@@ -137,8 +137,8 @@ echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
 echo "Documents completed: 20/23"
-echo "  Latest: CSM_GEN_IMAGE_N_1820s.md (1820s Hydrogen Balloons / Charles & Robert / Gay-Lussac)"
-echo "  Next:   CSM_GEN_IMAGE_M_1830s.md (1830s Ballooning/Charles Green)"
+echo "  Latest: CSM_GEN_IMAGE_M_1830s.md (1830s Ballooning/Charles Green / Royal Nassau / Great Balloon of Nassau)"
+echo "  Next:   CSM_GEN_IMAGE_N_1820s.md (1820s Hydrogen Balloons / Gay-Lussac / Biot)"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
@@ -154,7 +154,7 @@ Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
 Documents: 20/23 complete
-Next: Document M (1830s Ballooning/Charles Green)
+Next: Document N (1820s Hydrogen Balloons / Gay-Lussac / Biot)
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
 Session ID: agent_3b2f0112-6503-4f30-9483-47f75c71e4aa
@@ -165,15 +165,9 @@ success "Resume state saved to RESUME_STATE.txt"
 # ─── STEP 8: FINAL INSTRUCTIONS ────────────────────────────
 banner "✅ SESSION FULLY RESTORED — READY TO CONTINUE"
 echo ""
-echo "Run this to continue Document 17 synthesis:"
+echo "To continue Document N (1820s):"
 echo "  cd $(pwd)"
-echo "  # Continue with: Push to GitHub, zip, verify, log"
-echo ""
-echo "To push to GitHub:"
-echo "  bash CSMScripts/Github_Handler.sh save DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md \"Complete 17-document clay synthesis\" main"
-echo ""
-echo "To verify all files:"
-echo "  bash verify_all.sh  # (create this script)"
+echo "  # Create CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_N_1820s.md"
 echo ""
 
 # ─── STEP 9: KEEP ALIVE ────────────────────────────────────
