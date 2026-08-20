@@ -100,6 +100,12 @@
 - Zipped: article1_A1-13_pieces.zip
 - All committed and pushed (commit da59f5cf)
 
+### 2026-08-20T20:30:00Z — Article 1 A1-14 Complete
+- Created 12 pieces for A1-14: Worldline_Metric_From_Gaps
+- Concatenated: 737 lines (≥350 target)
+- Zipped: article1_A1-14_pieces.zip
+- All committed and pushed (commit 65973dc0)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -319,6 +325,20 @@
 | 211 | article1_A1-13_piece_12.md | 43 | ✅ Committed | da59f5cf |
 | 212 | A1-13_Worldline_Causal_Structure.md | 1353 | ✅ Committed | da59f5cf |
 | 213 | article1_A1-13_pieces.zip | — | ✅ Committed | da59f5cf |
+| 214 | article1_A1-14_piece_01.md | 63 | ✅ Committed | 65973dc0 |
+| 215 | article1_A1-14_piece_02.md | 64 | ✅ Committed | 65973dc0 |
+| 216 | article1_A1-14_piece_03.md | 65 | ✅ Committed | 65973dc0 |
+| 217 | article1_A1-14_piece_04.md | 64 | ✅ Committed | 65973dc0 |
+| 218 | article1_A1-14_piece_05.md | 64 | ✅ Committed | 65973dc0 |
+| 219 | article1_A1-14_piece_06.md | 63 | ✅ Committed | 65973dc0 |
+| 220 | article1_A1-14_piece_07.md | 64 | ✅ Committed | 65973dc0 |
+| 221 | article1_A1-14_piece_08.md | 64 | ✅ Committed | 65973dc0 |
+| 222 | article1_A1-14_piece_09.md | 64 | ✅ Committed | 65973dc0 |
+| 223 | article1_A1-14_piece_10.md | 65 | ✅ Committed | 65973dc0 |
+| 224 | article1_A1-14_piece_11.md | 64 | ✅ Committed | 65973dc0 |
+| 225 | article1_A1-14_piece_12.md | 66 | ✅ Committed | 65973dc0 |
+| 226 | A1-14_Worldline_Metric_From_Gaps.md | 737 | ✅ Committed | 65973dc0 |
+| 227 | article1_A1-14_pieces.zip | — | ✅ Committed | 65973dc0 |
 
 ---
 

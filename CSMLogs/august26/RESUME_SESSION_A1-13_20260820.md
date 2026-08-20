@@ -18,7 +18,7 @@ Continue Article 1 (Prime Electron Worldline Topology) with files A1-13 through 
 | File | Title | Focus | Priority | Status |
 |------|-------|-------|----------|--------|
 | A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | HIGH | ✅ 12/12 pieces done |
-| A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | HIGH | ⏳ |
+| A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | HIGH | ✅ 12/12 pieces done |
 | A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | HIGH | ⏳ |
 | A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | HIGH | ⏳ |
 | A1-17 | Worldline_Hamiltonian.md | H = ℏ/κ Σ d_n⁻¹ | HIGH | ⏳ |
@@ -65,28 +65,28 @@ Continue Article 1 (Prime Electron Worldline Topology) with files A1-13 through 
 
 ---
 
-## CURRENT PROGRESS ON A1-13
+## CURRENT PROGRESS ON A1-14
 
 ### Pieces Completed (12 of 12) ✅ COMPLETE
-- **Piece 01**: Introduction, proper time ordering, light cones from gap statistics, self-intersections and causality, 3500-book causal structure, Compton scale, pair creation
-- **Piece 02**: Light cone geometry, causal diamonds, self-intersections on light cone, book causal structure, Compton scale causal coarse-graining, fine-structure constant as causal density, pair creation causal arrows, fluctuation spectrum, Riemann zeros as causal poles, stability, anomaly
-- **Piece 03**: Supersymmetry causal structure, BPS states as causal extremals, wall crossing as causal topology change, decoupling, emergent spacetime, holography, information paradox, logbook synthesis, directory hierarchy, experimental predictions, computational verification, cosmology
-- **Piece 04**: Causal structure and the metric (A1-14 preview)
-- **Piece 05**: Causal structure and the geodesic equation (A1-15 preview)
-- **Piece 06**: Causal structure and the action principle (A1-16 preview)
-- **Piece 07**: Causal structure and the Hamiltonian (A1-17 preview)
-- **Piece 08**: Causal structure and the path integral (A1-18 preview)
-- **Piece 09**: Causal structure and instantons (A1-19 preview)
-- **Piece 10**: Causal structure and topological charge (A1-20 preview)
-- **Piece 11**: Causal structure experimental predictions and verification
-- **Piece 12**: Synthesis and conclusion
+- **Piece 01**: Introduction, proper time as worldline parameter, gap sequence as fundamental data, conformal metric from gap correlations
+- **Piece 02**: Gap correlation function and conformal factor, discrete metric components, proper time component, spatial components
+- **Piece 03**: Proper time line element, continuous approximation, proper time as cosmological time, emergent spatial coordinates from self-intersections, spatial metric components, determinant and volume element
+- **Piece 04**: Self-intersections as spatial points, graph distance as spatial distance, metric from graph Laplacian, local anisotropy from gap values, anisotropic metric correction
+- **Piece 05**: Light cone equation, correct light cone condition, fluctuating light cone, causal diamond volume, diamond entropy
+- **Piece 06**: RG flow of the metric, directory flow as RG flow, metric scaling, beta function for conformal factor, metric at different energy scales, running of physical constants
+- **Piece 07**: Christoffel symbols, Riemann tensor, Ricci scalar, curvature fluctuations
+- **Piece 08**: Einstein equations from gap sequence, effective stress-energy from gaps, gap-induced stress-energy, cosmological constant from UV boundary, Einstein equations as gap statistics identity
+- **Piece 09**: IR behavior (directory 0.0), UV behavior (directory 3.0), UV completeness, UV/IR duality, holographic duality, self-similarity
+- **Piece 10**: Book boundaries as metric junctions, continuity of metric, jump in derivatives, Israel junction conditions, boundary energy density, book interiors as causal domains
+- **Piece 11**: Algorithm for metric extraction from PrimeBookOne, expected metric results, verification checks (conformal flatness, light cone angle, Einstein equation)
+- **Piece 12**: Synthesis: complete metric summary, connections to other articles, theoretical consistency checks, open questions, conclusion
 
-### Concatenated Article: 1353 lines (≥350 target) ✅
-### Zip: article1_A1-13_pieces.zip ✅
-### Committed: da59f5cf ✅
+### Concatenated Article: 737 lines (≥350 target) ✅
+### Zip: article1_A1-14_pieces.zip ✅
+### Committed: 65973dc0 ✅
 ### Pushed: origin/session/prime-electron-research-360 ✅
 
-### Next: A1-14 Worldline_Metric_From_Gaps.md
+### Next: A1-15 Worldline_Geodesic_Equation.md
 
 ---
 
@@ -98,7 +98,7 @@ git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/ULTRA_MASTER_TODO_LIST.md
 cat CSMLogs/august26/RESUME_SESSION_A1-13_20260820.md
-# Continue with A1-14: Worldline_Metric_From_Gaps.md
+# Continue with A1-15: Worldline_Geodesic_Equation.md
 ```
 
 ---
@@ -156,7 +156,7 @@ If this session hits token limits, the next session should:
 3. Read updated ULTRA_MASTER_TODO_LIST.md
 4. Continue with whichever A1-XX file is next in sequence
 
-**A1-13 Complete — Next: A1-14 Worldline_Metric_From_Gaps.md**
+**A1-13 Complete — A1-14 Complete — Next: A1-15 Worldline_Geodesic_Equation.md**
 
 **Session Log Location:** `CSMLogs/august26/RESUME_SESSION_A1-13_20260820.md`
 

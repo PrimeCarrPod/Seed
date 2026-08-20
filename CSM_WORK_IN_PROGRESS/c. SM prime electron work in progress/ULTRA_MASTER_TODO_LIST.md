@@ -51,7 +51,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-11 | Worldline_Self_Intersection.md | γ(τ_n) = γ(τ_m) topology | ✅ Done |
 | A1-12 | Proper_Time_Operator.md | τ operator in prime basis | ✅ Done |
 | A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | ✅ Done |
-| A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | ⏳ |
+| A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | ✅ Done |
 | A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | ⏳ |
 | A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ⏳ |
 | A1-17 | Worldline_Hamiltonian.md | H = ℏ/κ Σ d_n⁻¹ | ⏳ |
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-13 COMPLETE
+## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-14 COMPLETE
 
-**Next Action:** Create Article 1 file A1-14: Worldline_Metric_From_Gaps.md, 350+ lines
+**Next Action:** Create Article 1 file A1-15: Worldline_Geodesic_Equation.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-14 Worldline_Metric_From_Gaps.md
+# Continue with Article 1: A1-15 Worldline_Geodesic_Equation.md
 ```
 
 ---
