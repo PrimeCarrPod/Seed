@@ -55,8 +55,8 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | ✅ Done |
 | A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ✅ Done |
 | A1-17 | Worldline_Hamiltonian.md | H = ℏ/κ Σ d_n⁻¹ | ✅ Done |
-| A1-18 | Worldline_Path_Integral.md | ∫ D[x] exp(iS/ℏ) | ⏳ |
-| A1-19 | Worldline_Instanton_Solutions.md | Tunneling between gap classes | ⏳ |
+| A1-18 | Worldline_Path_Integral.md | ∫ D[x] exp(iS/ℏ) | ✅ Done |
+| A1-19 | Worldline_Instanton_Solutions.md | Tunneling between gap classes | ✅ Done |
 | A1-20 | Worldline_Topological_Charge.md | Q = (1/2π)∮ dτ ... | ⏳ |
 | A1-21 | Worldline_Winding_Sectors.md | Sector decomposition by gap | ⏳ |
 | A1-22 | Worldline_Boundary_Conditions.md | UV/IR boundary from 0.0/3.0 | ⏳ |
