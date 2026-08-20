@@ -55,24 +55,22 @@ success "Repository cloned and checked out"
 banner "🔍 VERIFYING KEY FILES"
 
 files=(
-    "PLAN_17_Documents_Global_Clay_Mapping.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC01_Thermodynamic_Foundations_Clay_Genesis.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC02_Oxalic_Weathering_Pathway_Deep_Dive.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC03_Anaerobic_Dissolution_Iron_Reducing_Pathways.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC04_Cairns_Smith_Clay_Hypothesis_Origin_Life.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC05_Global_Spatial_Distribution_Methodology.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC06_Central_America_Equatorial_Margin_Stratigraphy.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC07_Yucatan_Peninsula_Karst_Clay_Systems.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC08_North_America_Georgia_Kaolin_Deposits.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC09_North_America_Leda_Clay_Glaciomarine.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC10_South_America_Colombian_Andes_Lacustrine_Paleosols.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC11_South_America_Amazon_Capim_River_Kaolin.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC12_Europe_London_Clay_Deep_Filled_Hollows.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC13_Africa_Saharan_Biological_Soil_Crusts.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC14_Cryosphere_Antarctic_McMurdo_Sound_Sediments.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC15_Cryosphere_Seymour_Island_La_Meseta_Formation.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC16_Clay_Devoid_Regions_Thermodynamic_Limitations.md"
-    "DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md"
+    "MASTER-TODO-LIST.md"
+    "CSMScripts/SESSION-START.sh"
+    "CSMScripts/SDKForge.sh"
+    "CSMScripts/HEARTBEAT-MANAGE.sh"
+    "CSMScripts/lettherebelight.sh"
+    "CSMScripts/lettherebelightz.sh"
+    "CSMScripts/heartbeat-daemon.sh"
+    "CSMScripts/heartbeat-chamber.sh"
+    "CSMScripts/heartbeat-guardian.sh"
+    "CSMScripts/keepalive-daemon.sh"
+    "CSMScripts/earthbeatv3.sh"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_K_1850s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_L_1840s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_N_1820s.md"
+    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md"
 )
 
 missing=0
@@ -138,9 +136,9 @@ echo "Branch: $(git branch --show-current)"
 echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
-echo "Documents completed: 17/17"
-echo "  Latest: DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md"
-echo "  Next: Push to GitHub, zip, verify, log"
+echo "Documents completed: 20/23"
+echo "  Latest: CSM_GEN_IMAGE_N_1820s.md (1820s Hydrogen Balloons / Charles & Robert / Gay-Lussac)"
+echo "  Next:   CSM_GEN_IMAGE_M_1830s.md (1830s Ballooning/Charles Green)"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
@@ -155,8 +153,8 @@ RESUME_SESSION.sh executed at $(date -u)
 Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
-Documents: 17/17 complete
-Next: Push to GitHub, zip, verify, log
+Documents: 20/23 complete
+Next: Document M (1830s Ballooning/Charles Green)
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
 Session ID: agent_3b2f0112-6503-4f30-9483-47f75c71e4aa
