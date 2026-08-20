@@ -49,8 +49,8 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-09 | Compton_Scale_From_Prime_Count.md | 3.67B steps → Compton time | ✅ Done |
 | A1-10 | Worldline_Segment_Books.md | 3500 books = 3500 segments | ✅ Done |
 | A1-11 | Worldline_Self_Intersection.md | γ(τ_n) = γ(τ_m) topology | ✅ Done |
-| A1-12 | Proper_Time_Operator.md | τ operator in prime basis | 🟡 Next |
-| A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | ⏳ |
+| A1-12 | Proper_Time_Operator.md | τ operator in prime basis | ✅ Done |
+| A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | 🟡 Next |
 | A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | ⏳ |
 | A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | ⏳ |
 | A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ⏳ |
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-11 COMPLETE
+## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-12 COMPLETE
 
-**Next Action:** Create Article 1 file A1-12: Proper_Time_Operator.md, 350+ lines
+**Next Action:** Create Article 1 file A1-13: Worldline_Causal_Structure.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-12 Proper_Time_Operator.md
+# Continue with Article 1: A1-13 Worldline_Causal_Structure.md
 ```
 
 ---

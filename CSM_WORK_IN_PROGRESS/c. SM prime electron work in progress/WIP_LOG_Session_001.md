@@ -87,6 +87,12 @@
 - Zipped: article1_A1-11_pieces.zip
 - All committed and pushed (commit 253584c7)
 
+### 2026-08-20T19:45:00Z — Article 1 A1-12 Complete
+- Created 12 pieces for A1-12: Proper_Time_Operator
+- Concatenated: 4453 lines (≥350 target)
+- Zipped: article1_A1-12_pieces.zip
+- All committed and pushed (commit 19a11f7f)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -278,6 +284,20 @@
 | 183 | article1_A1-11_piece_12.md | 75 | ✅ Committed | 253584c7 |
 | 184 | A1-11_Worldline_Self_Intersection.md | 2112 | ✅ Committed | 253584c7 |
 | 185 | article1_A1-11_pieces.zip | — | ✅ Committed | 253584c7 |
+| 186 | article1_A1-12_piece_01.md | 52 | ✅ Committed | 19a11f7f |
+| 187 | article1_A1-12_piece_02.md | 58 | ✅ Committed | 19a11f7f |
+| 188 | article1_A1-12_piece_03.md | 52 | ✅ Committed | 19a11f7f |
+| 189 | article1_A1-12_piece_04.md | 54 | ✅ Committed | 19a11f7f |
+| 190 | article1_A1-12_piece_05.md | 49 | ✅ Committed | 19a11f7f |
+| 191 | article1_A1-12_piece_06.md | 49 | ✅ Committed | 19a11f7f |
+| 192 | article1_A1-12_piece_07.md | 60 | ✅ Committed | 19a11f7f |
+| 193 | article1_A1-12_piece_08.md | 72 | ✅ Committed | 19a11f7f |
+| 194 | article1_A1-12_piece_09.md | 68 | ✅ Committed | 19a11f7f |
+| 195 | article1_A1-12_piece_10.md | 56 | ✅ Committed | 19a11f7f |
+| 196 | article1_A1-12_piece_11.md | 65 | ✅ Committed | 19a11f7f |
+| 197 | article1_A1-12_piece_12.md | 75 | ✅ Committed | 19a11f7f |
+| 198 | A1-12_Proper_Time_Operator.md | 4453 | ✅ Committed | 19a11f7f |
+| 199 | article1_A1-12_pieces.zip | — | ✅ Committed | 19a11f7f |
 
 ---
 
@@ -317,7 +337,7 @@
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
-# Continue with A1-12: Proper_Time_Operator.md
+# Continue with A1-13: Worldline_Causal_Structure.md
 ```
 
 ---
