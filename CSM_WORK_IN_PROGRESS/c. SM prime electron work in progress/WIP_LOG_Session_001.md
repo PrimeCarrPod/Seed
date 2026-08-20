@@ -7,7 +7,7 @@
 
 ---
 
-## SESSION 001 — Foundation & Infrastructure + Article 1 (A1-01 through A1-08)
+## SESSION 001 — Foundation & Infrastructure + Article 1 (A1-01 through A1-09)
 
 ### 2026-08-20T09:03:00Z — Session Initialized
 - Created branch `session/prime-electron-research-360` from `session/agent_ef62717f-189d-4a92-aa5e-bdc223842847`
@@ -67,6 +67,12 @@
 - Created 12 pieces for A1-08: Proper_Time_Fluctuation_Spectrum
 - Concatenated: 1366 lines (≥350 target)
 - Zipped: article1_A1-08_pieces.zip
+- All committed and pushed
+
+### 2026-08-20T18:40:00Z — Article 1 A1-09 Complete
+- Created 12 pieces for A1-09: Compton_Scale_From_Prime_Count
+- Concatenated: 1523 lines (≥350 target)
+- Zipped: article1_A1-09_pieces.zip
 - All committed and pushed
 
 ---
@@ -218,6 +224,20 @@
 | 141 | article1_A1-08_piece_12.md | 75 | ✅ Committed | 1078655c |
 | 142 | A1-08_Proper_Time_Fluctuation_Spectrum.md | 1366 | ✅ Committed | 1078655c |
 | 143 | article1_A1-08_pieces.zip | — | ✅ Committed | 1078655c |
+| 144 | article1_A1-09_piece_01.md | 52 | ✅ Committed | bb88c213 |
+| 145 | article1_A1-09_piece_02.md | 58 | ✅ Committed | bb88c213 |
+| 146 | article1_A1-09_piece_03.md | 52 | ✅ Committed | bb88c213 |
+| 147 | article1_A1-09_piece_04.md | 54 | ✅ Committed | bb88c213 |
+| 148 | article1_A1-09_piece_05.md | 49 | ✅ Committed | bb88c213 |
+| 149 | article1_A1-09_piece_06.md | 49 | ✅ Committed | bb88c213 |
+| 150 | article1_A1-09_piece_07.md | 60 | ✅ Committed | bb88c213 |
+| 151 | article1_A1-09_piece_08.md | 72 | ✅ Committed | bb88c213 |
+| 152 | article1_A1-09_piece_09.md | 68 | ✅ Committed | bb88c213 |
+| 153 | article1_A1-09_piece_10.md | 56 | ✅ Committed | bb88c213 |
+| 154 | article1_A1-09_piece_11.md | 65 | ✅ Committed | bb88c213 |
+| 155 | article1_A1-09_piece_12.md | 75 | ✅ Committed | bb88c213 |
+| 156 | A1-09_Compton_Scale_From_Prime_Count.md | 1523 | ✅ Committed | bb88c213 |
+| 157 | article1_A1-09_pieces.zip | — | ✅ Committed | bb88c213 |
 
 ---
 
@@ -257,7 +277,7 @@
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
-# Continue with A1-09: Compton_Scale_From_Prime_Count.md
+# Continue with A1-10: Worldline_Segment_Books.md
 ```
 
 ---
