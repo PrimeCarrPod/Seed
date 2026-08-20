@@ -35,12 +35,26 @@
       "strategies": 3,
       "timestamp": "2026-08-19T16:43:19Z"
     },
-    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b7f3a96-cced-4358-b814-60a678a4683b/RESUME_SESSION_CANINE_HUMAN_NEUROARCHAEO_17DOC_900LINE.sh": {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b7f3a96-cced-4358-b814-60a678a4683b/RESUME_SESSION_CANINE_HUMAN_NEUROARCHAEO_17DOC_900LINE.sh",
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
       "difficulty": "medium",
-      "lines": 126,
+      "lines": 445,
       "strategies": 6,
-      "timestamp": "2026-08-19T17:53:56Z"
+      "timestamp": "2026-08-19T23:39:49Z"
+    },
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/DeepResearch/Artificial Hemoglobin Survival Research/ContentFiles/RESUME_STATE_20260819-220823.txt": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/DeepResearch/Artificial Hemoglobin Survival Research/ContentFiles/RESUME_STATE_20260819-220823.txt",
+      "difficulty": "easy",
+      "lines": 12,
+      "strategies": 3,
+      "timestamp": "2026-08-19T22:08:23Z"
+    },
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
+      "difficulty": "medium",
+      "lines": 180,
+      "strategies": 6,
+      "timestamp": "2026-08-19T23:51:52Z"
     }
   }
 }

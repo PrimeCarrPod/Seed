@@ -29,39 +29,95 @@
       "timestamp": "2026-08-19T16:43:20Z"
     },
     {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b303798-8bd7-47cb-8d40-155668a14b4a/CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_M_1830s.md",
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
       "method": "strategy_1_direct_commit",
-      "success": true,
+      "success": false,
       "difficulty": "medium",
-      "timestamp": "2026-08-19T22:59:40Z"
+      "timestamp": "2026-08-19T23:39:50Z"
     },
     {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b303798-8bd7-47cb-8d40-155668a14b4a/CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md",
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
+      "method": "strategy_2_staged_commit",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:39:51Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
+      "method": "strategy_3_force_push",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:39:51Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
+      "method": "strategy_4_new_branch_pr",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:39:51Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
+      "method": "strategy_5_rebase_merge",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:39:51Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa/DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md",
+      "method": "strategy_6_merge_strategy_ours",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:39:53Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/DeepResearch/Artificial Hemoglobin Survival Research/ContentFiles/RESUME_STATE_20260819-220823.txt",
       "method": "strategy_1_direct_commit",
       "success": true,
       "difficulty": "easy",
-      "timestamp": "2026-08-19T22:59:45Z"
+      "timestamp": "2026-08-19T22:08:24Z"
     },
     {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b303798-8bd7-47cb-8d40-155668a14b4a/RESUME_SESSION.sh",
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
       "method": "strategy_1_direct_commit",
-      "success": true,
+      "success": false,
       "difficulty": "medium",
-      "timestamp": "2026-08-19T22:59:50Z"
+      "timestamp": "2026-08-19T23:51:53Z"
     },
     {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b303798-8bd7-47cb-8d40-155668a14b4a/CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/M_1830s_PIECES.zip",
-      "method": "strategy_1_direct_commit",
-      "success": true,
-      "difficulty": "easy",
-      "timestamp": "2026-08-19T22:59:55Z"
-    },
-    {
-      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_0b7f3a96-cced-4358-b814-60a678a4683b/RESUME_SESSION_CANINE_HUMAN_NEUROARCHAEO_17DOC_900LINE.sh",
-      "method": "strategy_1_direct_commit",
-      "success": true,
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
+      "method": "strategy_2_staged_commit",
+      "success": false,
       "difficulty": "medium",
-      "timestamp": "2026-08-19T17:54:01Z"
+      "timestamp": "2026-08-19T23:51:54Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
+      "method": "strategy_3_force_push",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:51:54Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
+      "method": "strategy_4_new_branch_pr",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:51:54Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
+      "method": "strategy_5_rebase_merge",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:51:55Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_1672620d-2402-4fde-bdfe-46e3a514b0b3/RESUME_SESSION_ARTIFICIAL_HEMOGLOBIN_RESEARCH.sh",
+      "method": "strategy_6_merge_strategy_ours",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-08-19T23:51:56Z"
     }
   ]
 }
