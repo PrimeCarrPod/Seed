@@ -93,6 +93,13 @@
 - Zipped: article1_A1-12_pieces.zip
 - All committed and pushed (commit 19a11f7f)
 
+### 2026-08-20T20:15:00Z — Article 1 A1-13 Complete
+- Created 12 pieces for A1-13: Worldline_Causal_Structure
+- Pieces 01-03 existed from previous session, pieces 04-12 created this session
+- Concatenated: 1353 lines (≥350 target)
+- Zipped: article1_A1-13_pieces.zip
+- All committed and pushed (commit da59f5cf)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -298,6 +305,20 @@
 | 197 | article1_A1-12_piece_12.md | 75 | ✅ Committed | 19a11f7f |
 | 198 | A1-12_Proper_Time_Operator.md | 4453 | ✅ Committed | 19a11f7f |
 | 199 | article1_A1-12_pieces.zip | — | ✅ Committed | 19a11f7f |
+| 200 | article1_A1-13_piece_01.md | 311 | ✅ Committed | (previous) |
+| 201 | article1_A1-13_piece_02.md | 354 | ✅ Committed | (previous) |
+| 202 | article1_A1-13_piece_03.md | 369 | ✅ Committed | (previous) |
+| 203 | article1_A1-13_piece_04.md | 45 | ✅ Committed | da59f5cf |
+| 204 | article1_A1-13_piece_05.md | 42 | ✅ Committed | da59f5cf |
+| 205 | article1_A1-13_piece_06.md | 42 | ✅ Committed | da59f5cf |
+| 206 | article1_A1-13_piece_07.md | 43 | ✅ Committed | da59f5cf |
+| 207 | article1_A1-13_piece_08.md | 42 | ✅ Committed | da59f5cf |
+| 208 | article1_A1-13_piece_09.md | 42 | ✅ Committed | da59f5cf |
+| 209 | article1_A1-13_piece_10.md | 42 | ✅ Committed | da59f5cf |
+| 210 | article1_A1-13_piece_11.md | 42 | ✅ Committed | da59f5cf |
+| 211 | article1_A1-13_piece_12.md | 43 | ✅ Committed | da59f5cf |
+| 212 | A1-13_Worldline_Causal_Structure.md | 1353 | ✅ Committed | da59f5cf |
+| 213 | article1_A1-13_pieces.zip | — | ✅ Committed | da59f5cf |
 
 ---
 

@@ -17,7 +17,7 @@ Continue Article 1 (Prime Electron Worldline Topology) with files A1-13 through 
 
 | File | Title | Focus | Priority | Status |
 |------|-------|-------|----------|--------|
-| A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | HIGH | 🟡 3/12 pieces done |
+| A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | HIGH | ✅ 12/12 pieces done |
 | A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | HIGH | ⏳ |
 | A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | HIGH | ⏳ |
 | A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | HIGH | ⏳ |
@@ -67,12 +67,10 @@ Continue Article 1 (Prime Electron Worldline Topology) with files A1-13 through 
 
 ## CURRENT PROGRESS ON A1-13
 
-### Pieces Completed (3 of 12)
+### Pieces Completed (12 of 12) ✅ COMPLETE
 - **Piece 01**: Introduction, proper time ordering, light cones from gap statistics, self-intersections and causality, 3500-book causal structure, Compton scale, pair creation
 - **Piece 02**: Light cone geometry, causal diamonds, self-intersections on light cone, book causal structure, Compton scale causal coarse-graining, fine-structure constant as causal density, pair creation causal arrows, fluctuation spectrum, Riemann zeros as causal poles, stability, anomaly
 - **Piece 03**: Supersymmetry causal structure, BPS states as causal extremals, wall crossing as causal topology change, decoupling, emergent spacetime, holography, information paradox, logbook synthesis, directory hierarchy, experimental predictions, computational verification, cosmology
-
-### Pieces Remaining (9 of 12)
 - **Piece 04**: Causal structure and the metric (A1-14 preview)
 - **Piece 05**: Causal structure and the geodesic equation (A1-15 preview)
 - **Piece 06**: Causal structure and the action principle (A1-16 preview)
@@ -82,6 +80,13 @@ Continue Article 1 (Prime Electron Worldline Topology) with files A1-13 through 
 - **Piece 10**: Causal structure and topological charge (A1-20 preview)
 - **Piece 11**: Causal structure experimental predictions and verification
 - **Piece 12**: Synthesis and conclusion
+
+### Concatenated Article: 1353 lines (≥350 target) ✅
+### Zip: article1_A1-13_pieces.zip ✅
+### Committed: da59f5cf ✅
+### Pushed: origin/session/prime-electron-research-360 ✅
+
+### Next: A1-14 Worldline_Metric_From_Gaps.md
 
 ---
 
@@ -93,7 +98,7 @@ git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/ULTRA_MASTER_TODO_LIST.md
 cat CSMLogs/august26/RESUME_SESSION_A1-13_20260820.md
-# Continue with A1-13: Worldline_Causal_Structure.md (piece 04)
+# Continue with A1-14: Worldline_Metric_From_Gaps.md
 ```
 
 ---
@@ -150,6 +155,8 @@ If this session hits token limits, the next session should:
 2. Read updated WIP_LOG_Session_001.md
 3. Read updated ULTRA_MASTER_TODO_LIST.md
 4. Continue with whichever A1-XX file is next in sequence
+
+**A1-13 Complete — Next: A1-14 Worldline_Metric_From_Gaps.md**
 
 **Session Log Location:** `CSMLogs/august26/RESUME_SESSION_A1-13_20260820.md`
 
