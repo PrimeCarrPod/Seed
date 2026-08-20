@@ -41,7 +41,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-01 | Worldline_Proper_Time_Quantization.md | Δτ_n = d_n mapping | 🟡 Next |
 | A1-02 | Topological_Winding_Numbers.md | Instanton charge from prime gaps | ⏳ |
 | A1-03 | Double_Cover_SU2_Spin.md | "Multiply by two" = spin-1/2 | ⏳ |
-| A1-04 | Riemann_Zeros_Resonance_Frequencies.md | γ as worldline frequencies | ⏳ |
+| A1-04 | Riemann_Zeros_Resonance_Frequencies.md | γ as worldline frequencies | ✅ Done |
 | A1-05 | Worldline_Stability_RH.md | RH ↔ worldline stability | ⏳ |
 | A1-06 | Vertex_Interaction_Points.md | p_n as interaction vertices | ⏳ |
 | A1-07 | Pair_Creation_Annihilation.md | Forward/backward time = e⁻/e⁺ | ⏳ |
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — STARTING ARTICLE 1
+## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-04 COMPLETE
 
-**Next Action:** Create Article 1 files (A1-01 through A1-40), 350+ lines each
+**Next Action:** Create Article 1 file A1-05: Worldline_Stability_RH.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-01 Worldline_Proper_Time_Quantization.md
+# Continue with Article 1: A1-05 Worldline_Stability_RH.md
 ```
 
 ---
