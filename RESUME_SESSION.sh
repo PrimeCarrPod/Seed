@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================
-# RESUME_SESSION.sh — Instant Session Restore for CarrPod/SEED
+# RESUME_SESSION.sh — Instant Session Restore for Global Clay Deep Research
 # Run this in a FRESH workspace to pick up exactly where we left off
 # ============================================================
 # Usage: bash RESUME_SESSION.sh
@@ -11,8 +11,8 @@ set -euo pipefail
 
 # ─── CONFIGURATION ─────────────────────────────────────────
 REPO_URL="https://github.com/PrimeCarrPod/SEED.git"
-TARGET_BRANCH="session/agent_3d28a8e3-d56f-4af3-a7a3-d6aa3a94ae63"
-WORK_DIR="$(pwd)/aegis-iron-man-session"
+TARGET_BRANCH="session/agent_3b2f0112-6503-4f30-9483-47f75c71e4aa"
+WORK_DIR="$(pwd)/clay-deep-research"
 TIMESTAMP=$(date -u +%Y%m%d-%H%M%S)
 
 # ─── COLORS ────────────────────────────────────────────────
@@ -55,20 +55,24 @@ success "Repository cloned and checked out"
 banner "🔍 VERIFYING KEY FILES"
 
 files=(
-    "MASTER-TODO-LIST.md"
-    "CSMScripts/SESSION-START.sh"
-    "CSMScripts/SDKForge.sh"
-    "CSMScripts/HEARTBEAT-MANAGE.sh"
-    "CSMScripts/lettherebelight.sh"
-    "CSMScripts/lettherebelightz.sh"
-    "CSMScripts/heartbeat-daemon.sh"
-    "CSMScripts/heartbeat-chamber.sh"
-    "CSMScripts/heartbeat-guardian.sh"
-    "CSMScripts/keepalive-daemon.sh"
-    "CSMScripts/earthbeatv3.sh"
-    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_J_1860s.md"
-    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_K_1850s.md"
-    "CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/PROGRESS_LOG.md"
+    "PLAN_17_Documents_Global_Clay_Mapping.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC01_Thermodynamic_Foundations_Clay_Genesis.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC02_Oxalic_Weathering_Pathway_Deep_Dive.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC03_Anaerobic_Dissolution_Iron_Reducing_Pathways.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC04_Cairns_Smith_Clay_Hypothesis_Origin_Life.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC05_Global_Spatial_Distribution_Methodology.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC06_Central_America_Equatorial_Margin_Stratigraphy.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC07_Yucatan_Peninsula_Karst_Clay_Systems.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC08_North_America_Georgia_Kaolin_Deposits.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC09_North_America_Leda_Clay_Glaciomarine.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC10_South_America_Colombian_Andes_Lacustrine_Paleosols.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC11_South_America_Amazon_Capim_River_Kaolin.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC12_Europe_London_Clay_Deep_Filled_Hollows.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC13_Africa_Saharan_Biological_Soil_Crusts.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC14_Cryosphere_Antarctic_McMurdo_Sound_Sediments.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC15_Cryosphere_Seymour_Island_La_Meseta_Formation.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC16_Clay_Devoid_Regions_Thermodynamic_Limitations.md"
+    "DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md"
 )
 
 missing=0
@@ -89,7 +93,7 @@ success "All key files verified"
 
 # ─── STEP 3: MAKE SCRIPTS EXECUTABLE ───────────────────────
 banner "🔧 MAKING SCRIPTS EXECUTABLE"
-chmod +x CSMScripts/*.sh
+chmod +x CSMScripts/*.sh 2>/dev/null || true
 success "Scripts executable"
 
 # ─── STEP 4: START HEARTBEAT INFRASTRUCTURE ────────────────
@@ -117,7 +121,7 @@ bash CSMScripts/earthbeatv3.sh tokenring 8 &
 log "Earthbeat tokenring mode started"
 
 # Visual heartbeat
-bash -c 'chars="♥♦♣♠◉◎●○◐◑◒◓⟐⟑⟒⟓"; i=0; while true; do echo -ne "\r${chars:i%16:1}  [Aegis Iron Man: RESUMED]  ${chars:(i+8)%16:1}"; sleep 0.5; i=$((i+1)); done' &
+bash -c 'chars="♥♦♣♠◉◎●○◐◑◒◓⟐⟑⟒⟓"; i=0; while true; do echo -ne "\r${chars:i%16:1}  [Clay Deep Research: RESUMED]  ${chars:(i+8)%16:1}"; sleep 0.5; i=$((i+1)); done' &
 log "Visual heartbeat started"
 
 success "All heartbeat processes running"
@@ -134,18 +138,14 @@ echo "Branch: $(git branch --show-current)"
 echo "Commit: $(git log --oneline -1)"
 echo "Work dir: $(pwd)"
 echo ""
-echo "Documents completed: 19/23"
-echo "  Latest: CSM_GEN_IMAGE_L_1840s.md (1840s Early Ballooning/Airships / Henson Aerial Steam Carriage)"
-echo "  Next:   CSM_GEN_IMAGE_M_1830s.md (1830s Ballooning/Charles Green)"
+echo "Documents completed: 17/17"
+echo "  Latest: DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md"
+echo "  Next: Push to GitHub, zip, verify, log"
 echo ""
 echo "Heartbeat PIDs:"
 ps aux | grep -E "heartbeat|earthbeat" | grep -v grep | awk '{print "  PID " $2 ": " $11 " " $12 " " $13}'
 echo ""
 echo "Android SDK: $ANDROID_HOME"
-echo ""
-echo "To continue Document L (1840s):"
-echo "  cd $(pwd)"
-echo "  # Create CSM_GEN_IMAGE_L_1840s.md"
 echo ""
 
 # ─── STEP 7: SAVE RESUME STATE ─────────────────────────────
@@ -155,20 +155,29 @@ RESUME_SESSION.sh executed at $(date -u)
 Branch: $(git branch --show-current)
 Commit: $(git rev-parse HEAD)
 Work dir: $(pwd)
-Documents: 19/23 complete
-Next: Document M (1830s Ballooning/Charles Green)
+Documents: 17/17 complete
+Next: Push to GitHub, zip, verify, log
 Heartbeat: Running (daemon + 4 chambers + 3 earthbeat modes + visual)
 Android SDK: $ANDROID_HOME
+Session ID: agent_3b2f0112-6503-4f30-9483-47f75c71e4aa
+Timestamp: $(date -u +%Y%m%d-%H%M%S)
 RESUMEEOF
 success "Resume state saved to RESUME_STATE.txt"
 
+# ─── STEP 8: FINAL INSTRUCTIONS ────────────────────────────
 banner "✅ SESSION FULLY RESTORED — READY TO CONTINUE"
 echo ""
-echo "To continue Document M (1830s):"
+echo "Run this to continue Document 17 synthesis:"
 echo "  cd $(pwd)"
-echo "  # Create CSM_WORK_IN_PROGRESS/AegisIronMan/CSM_GEN_IMAGE_PROMPTS/CSM_GEN_IMAGE_M_1830s.md"
+echo "  # Continue with: Push to GitHub, zip, verify, log"
+echo ""
+echo "To push to GitHub:"
+echo "  bash CSMScripts/Github_Handler.sh save DeepResearch/CONTENT.PDF/ContentFiles/DOC17_Synthesis_Global_Argillaceous_Dynamics_Future.md \"Complete 17-document clay synthesis\" main"
+echo ""
+echo "To verify all files:"
+echo "  bash verify_all.sh  # (create this script)"
 echo ""
 
-# Keep script alive to show heartbeats
+# ─── STEP 9: KEEP ALIVE ────────────────────────────────────
 log "Press Ctrl+C to stop heartbeats and exit"
 wait
