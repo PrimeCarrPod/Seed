@@ -72,12 +72,12 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-32 | Worldline_Renyi_Entropies.md | S_n = (1/(1-n))log Tr(ρ^n) | ✅ Done |
 | A1-33 | Worldline_Modular_Hamiltonian.md | K = -log ρ from gaps | ✅ Done |
 | A1-34 | Worldline_Relative_Entropy.md | S(ρ||σ) from gap ratios | ✅ Done |
-| A1-35 | Worldline_Quantum_Error_Correction.md | Twin primes = [[256,1,3]] code | ⏳ |
-| A1-36 | Worldline_Decoupling_Limits.md | Heavy gaps decouple = EFT | ⏳ |
-| A1-37 | Worldline_Emergent_Spacetime.md | Spacetime from gap network | ⏳ |
-| A1-38 | Worldline_Holography.md | AdS/CFT from prime books | ⏳ |
-| A1-39 | Worldline_Information_Paradox.md | Information = gap preservation | ⏳ |
-| A1-40 | Synthesis_Worldline_Logbook.md | Prime Book = worldline log | ⏳ |
+| A1-35 | Worldline_Quantum_Error_Correction.md | Twin primes = [[256,1,3]] code | ✅ Done |
+| A1-36 | Worldline_Decoupling_Limits.md | Heavy gaps decouple = EFT | ✅ Done |
+| A1-37 | Worldline_Emergent_Spacetime.md | Spacetime from gap network | ✅ Done |
+| A1-38 | Worldline_Holography.md | AdS/CFT from prime books | ✅ Done |
+| A1-39 | Worldline_Information_Paradox.md | Information = gap preservation | ✅ Done |
+| A1-40 | Synthesis_Worldline_Logbook.md | Prime Book = worldline log | ✅ Done |
 
 ### Article 2: Prime Electron Mass Spectrum & Generations (40 files)
 **Core Thesis:** Lepton mass hierarchy from prime gap records
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-34 COMPLETE
+## CURRENT STATUS: ARTICLE 1 COMPLETE (A1-01 through A1-40) — READY FOR ARTICLE 2
 
-**Next Action:** Create Article 1 file A1-35: Worldline_Quantum_Error_Correction.md, 350+ lines
+**Next Action:** Create Article 2 file A2-01: Gap_To_Energy_Mapping.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3fd48397-7da0-413f-8f78-aebc17d72a18
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-35 Worldline_Quantum_Error_Correction.md
+# Continue with Article 2: A2-01 Gap_To_Energy_Mapping.md
 ```
 
 ---

@@ -631,6 +631,90 @@
 | 421 | article1_A1-34_piece_12.md | 57 | ✅ Committed | 985add88 |
 | 422 | A1-34_Worldline_Relative_Entropy.md | 416 | ✅ Committed | 985add88 |
 | 423 | article1_A1-34_pieces.zip | — | ✅ Committed | 985add88 |
+| 424 | article1_A1-35_piece_01.md | 35 | ✅ Committed | c8c39605 |
+| 425 | article1_A1-35_piece_02.md | 38 | ✅ Committed | c8c39605 |
+| 426 | article1_A1-35_piece_03.md | 34 | ✅ Committed | c8c39605 |
+| 427 | article1_A1-35_piece_04.md | 33 | ✅ Committed | c8c39605 |
+| 428 | article1_A1-35_piece_05.md | 32 | ✅ Committed | c8c39605 |
+| 429 | article1_A1-35_piece_06.md | 34 | ✅ Committed | c8c39605 |
+| 430 | article1_A1-35_piece_07.md | 35 | ✅ Committed | c8c39605 |
+| 431 | article1_A1-35_piece_08.md | 32 | ✅ Committed | c8c39605 |
+| 432 | article1_A1-35_piece_09.md | 34 | ✅ Committed | c8c39605 |
+| 433 | article1_A1-35_piece_10.md | 33 | ✅ Committed | c8c39605 |
+| 434 | article1_A1-35_piece_11.md | 32 | ✅ Committed | c8c39605 |
+| 435 | article1_A1-35_piece_12.md | 50 | ✅ Committed | c8c39605 |
+| 436 | A1-35_Worldline_Quantum_Error_Correction.md | 357 | ✅ Committed | c8c39605 |
+| 437 | article1_A1-35_pieces.zip | — | ✅ Committed | c8c39605 |
+| 438 | article1_A1-36_piece_01.md | 34 | ✅ Committed | cfee579f |
+| 439 | article1_A1-36_piece_02.md | 36 | ✅ Committed | cfee579f |
+| 440 | article1_A1-36_piece_03.md | 33 | ✅ Committed | cfee579f |
+| 441 | article1_A1-36_piece_04.md | 35 | ✅ Committed | cfee579f |
+| 442 | article1_A1-36_piece_05.md | 32 | ✅ Committed | cfee579f |
+| 443 | article1_A1-36_piece_06.md | 34 | ✅ Committed | cfee579f |
+| 444 | article1_A1-36_piece_07.md | 35 | ✅ Committed | cfee579f |
+| 445 | article1_A1-36_piece_08.md | 33 | ✅ Committed | cfee579f |
+| 446 | article1_A1-36_piece_09.md | 34 | ✅ Committed | cfee579f |
+| 447 | article1_A1-36_piece_10.md | 33 | ✅ Committed | cfee579f |
+| 448 | article1_A1-36_piece_11.md | 32 | ✅ Committed | cfee579f |
+| 449 | article1_A1-36_piece_12.md | 51 | ✅ Committed | cfee579f |
+| 450 | A1-36_Worldline_Decoupling_Limits.md | 385 | ✅ Committed | cfee579f |
+| 451 | article1_A1-36_pieces.zip | — | ✅ Committed | cfee579f |
+| 452 | article1_A1-37_piece_01.md | 33 | ✅ Committed | 0e9c3f58 |
+| 453 | article1_A1-37_piece_02.md | 35 | ✅ Committed | 0e9c3f58 |
+| 454 | article1_A1-37_piece_03.md | 34 | ✅ Committed | 0e9c3f58 |
+| 455 | article1_A1-37_piece_04.md | 36 | ✅ Committed | 0e9c3f58 |
+| 456 | article1_A1-37_piece_05.md | 33 | ✅ Committed | 0e9c3f58 |
+| 457 | article1_A1-37_piece_06.md | 35 | ✅ Committed | 0e9c3f58 |
+| 458 | article1_A1-37_piece_07.md | 34 | ✅ Committed | 0e9c3f58 |
+| 459 | article1_A1-37_piece_08.md | 35 | ✅ Committed | 0e9c3f58 |
+| 460 | article1_A1-37_piece_09.md | 33 | ✅ Committed | 0e9c3f58 |
+| 461 | article1_A1-37_piece_10.md | 34 | ✅ Committed | 0e9c3f58 |
+| 462 | article1_A1-37_piece_11.md | 32 | ✅ Committed | 0e9c3f58 |
+| 463 | article1_A1-37_piece_12.md | 52 | ✅ Committed | 0e9c3f58 |
+| 464 | A1-37_Worldline_Emergent_Spacetime.md | 380 | ✅ Committed | 0e9c3f58 |
+| 465 | article1_A1-37_pieces.zip | — | ✅ Committed | 0e9c3f58 |
+| 466 | article1_A1-38_piece_01.md | 35 | ✅ Committed | 9cc8a26e |
+| 467 | article1_A1-38_piece_02.md | 35 | ✅ Committed | 9cc8a26e |
+| 468 | article1_A1-38_piece_03.md | 35 | ✅ Committed | 9cc8a26e |
+| 469 | article1_A1-38_piece_04.md | 34 | ✅ Committed | 9cc8a26e |
+| 470 | article1_A1-38_piece_05.md | 33 | ✅ Committed | 9cc8a26e |
+| 471 | article1_A1-38_piece_06.md | 33 | ✅ Committed | 9cc8a26e |
+| 472 | article1_A1-38_piece_07.md | 32 | ✅ Committed | 9cc8a26e |
+| 473 | article1_A1-38_piece_08.md | 32 | ✅ Committed | 9cc8a26e |
+| 474 | article1_A1-38_piece_09.md | 32 | ✅ Committed | 9cc8a26e |
+| 475 | article1_A1-38_piece_10.md | 33 | ✅ Committed | 9cc8a26e |
+| 476 | article1_A1-38_piece_11.md | 34 | ✅ Committed | 9cc8a26e |
+| 477 | article1_A1-38_piece_12.md | 50 | ✅ Committed | 9cc8a26e |
+| 478 | A1-38_Worldline_Holography.md | 432 | ✅ Committed | 9cc8a26e |
+| 479 | article1_A1-38_pieces.zip | — | ✅ Committed | 9cc8a26e |
+| 480 | article1_A1-39_piece_01.md | 35 | ✅ Committed | 86a68d3a |
+| 481 | article1_A1-39_piece_02.md | 35 | ✅ Committed | 86a68d3a |
+| 482 | article1_A1-39_piece_03.md | 35 | ✅ Committed | 86a68d3a |
+| 483 | article1_A1-39_piece_04.md | 34 | ✅ Committed | 86a68d3a |
+| 484 | article1_A1-39_piece_05.md | 33 | ✅ Committed | 86a68d3a |
+| 485 | article1_A1-39_piece_06.md | 33 | ✅ Committed | 86a68d3a |
+| 486 | article1_A1-39_piece_07.md | 32 | ✅ Committed | 86a68d3a |
+| 487 | article1_A1-39_piece_08.md | 32 | ✅ Committed | 86a68d3a |
+| 488 | article1_A1-39_piece_09.md | 32 | ✅ Committed | 86a68d3a |
+| 489 | article1_A1-39_piece_10.md | 33 | ✅ Committed | 86a68d3a |
+| 490 | article1_A1-39_piece_11.md | 34 | ✅ Committed | 86a68d3a |
+| 491 | article1_A1-39_piece_12.md | 50 | ✅ Committed | 86a68d3a |
+| 492 | A1-39_Worldline_Information_Preservation.md | 423 | ✅ Committed | 86a68d3a |
+| 493 | article1_A1-39_pieces.zip | — | ✅ Committed | 86a68d3a |
+| 494 | article1_A1-40_piece_01.md | 35 | ✅ Committed | 05115144 |
+| 495 | article1_A1-40_piece_02.md | 35 | ✅ Committed | 05115144 |
+| 496 | article1_A1-40_piece_03.md | 35 | ✅ Committed | 05115144 |
+| 497 | article1_A1-40_piece_04.md | 35 | ✅ Committed | 05115144 |
+| 498 | article1_A1-40_piece_05.md | 35 | ✅ Committed | 05115144 |
+| 499 | article1_A1-40_piece_06.md | 35 | ✅ Committed | 05115144 |
+| 500 | article1_A1-40_piece_07.md | 35 | ✅ Committed | 05115144 |
+| 501 | article1_A1-40_piece_08.md | 35 | ✅ Committed | 05115144 |
+| 502 | article1_A1-40_piece_09.md | 35 | ✅ Committed | 05115144 |
+| 503 | article1_A1-40_piece_10.md | 35 | ✅ Committed | 05115144 |
+| 504 | article1_A1-40_piece_11.md | 35 | ✅ Committed | 05115144 |
+| 505 | article1_A1-40_piece_12.md | 50 | ✅ Committed | 05115144 |
+| 506 | A1-40_Synthesis_Worldline_Logbook.md | 448 | ✅ Committed | 05115144 |
+| 507 | article1_A1-40_pieces.zip | — | ✅ Committed | 05115144 |
 
 ---
 
@@ -667,12 +751,12 @@
 ## NEXT SESSION RESUMPTION COMMANDS
 
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3fd48397-7da0-413f-8f78-aebc17d72a18
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A1-27_20260821.md
-# Continue with Article 1: A1-28 Worldline_BPS_States.md
+cat CSMLogs/august26/RESUME_SESSION_A1-40_20260821.md
+# Continue with Article 2: A2-01 Gap_To_Energy_Mapping.md
 ```
 
 ---
