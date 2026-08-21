@@ -178,6 +178,12 @@
 - Zipped: article1_A1-30_pieces.zip
 - All committed and pushed (commit e10f0ea1)
 
+### 2026-08-21T01:40:00Z — Article 1 A1-31 Complete
+- Created 12 pieces for A1-31: Worldline_Entanglement_Entropy
+- Concatenated: 533 lines (≥350 target)
+- Zipped: article1_A1-31_pieces.zip
+- All committed and pushed (commit ed7aca35)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -551,6 +557,20 @@
 | 365 | article1_A1-30_piece_12.md | 84 | ✅ Committed | e10f0ea1 |
 | 366 | A1-30_Worldline_Stability_Conditions.md | 482 | ✅ Committed | e10f0ea1 |
 | 367 | article1_A1-30_pieces.zip | — | ✅ Committed | e10f0ea1 |
+| 368 | article1_A1-31_piece_01.md | 55 | ✅ Committed | ed7aca35 |
+| 369 | article1_A1-31_piece_02.md | 54 | ✅ Committed | ed7aca35 |
+| 370 | article1_A1-31_piece_03.md | 53 | ✅ Committed | ed7aca35 |
+| 371 | article1_A1-31_piece_04.md | 54 | ✅ Committed | ed7aca35 |
+| 372 | article1_A1-31_piece_05.md | 55 | ✅ Committed | ed7aca35 |
+| 373 | article1_A1-31_piece_06.md | 52 | ✅ Committed | ed7aca35 |
+| 374 | article1_A1-31_piece_07.md | 53 | ✅ Committed | ed7aca35 |
+| 375 | article1_A1-31_piece_08.md | 53 | ✅ Committed | ed7aca35 |
+| 376 | article1_A1-31_piece_09.md | 53 | ✅ Committed | ed7aca35 |
+| 377 | article1_A1-31_piece_10.md | 53 | ✅ Committed | ed7aca35 |
+| 378 | article1_A1-31_piece_11.md | 53 | ✅ Committed | ed7aca35 |
+| 379 | article1_A1-31_piece_12.md | 91 | ✅ Committed | ed7aca35 |
+| 380 | A1-31_Worldline_Entanglement_Entropy.md | 533 | ✅ Committed | ed7aca35 |
+| 381 | article1_A1-31_pieces.zip | — | ✅ Committed | ed7aca35 |
 
 ---
 

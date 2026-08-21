@@ -68,7 +68,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-28 | Worldline_BPS_States.md | BPS = record gap states | ✅ Done |
 | A1-29 | Worldline_Wall_Crossing.md | Gap transitions = wall crossing | ✅ Done |
 | A1-30 | Worldline_Stability_Conditions.md | Stability = RH + gap bounds | ✅ Done |
-| A1-31 | Worldline_Entanglement_Entropy.md | S = -Tr(ρ log ρ) from gaps | ⏳ |
+| A1-31 | Worldline_Entanglement_Entropy.md | S = -Tr(ρ log ρ) from gaps | ✅ Done |
 | A1-32 | Worldline_Renyi_Entropies.md | S_n = (1/(1-n))log Tr(ρ^n) | ⏳ |
 | A1-33 | Worldline_Modular_Hamiltonian.md | K = -log ρ from gaps | ⏳ |
 | A1-34 | Worldline_Relative_Entropy.md | S(ρ||σ) from gap ratios | ⏳ |
