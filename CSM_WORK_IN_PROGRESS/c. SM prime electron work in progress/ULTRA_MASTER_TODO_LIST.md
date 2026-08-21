@@ -61,8 +61,8 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-21 | Worldline_Winding_Sectors.md | Sector decomposition by gap | ⏳ |
 | A1-22 | Worldline_Boundary_Conditions.md | UV/IR boundary from 0.0/3.0 | ⏳ |
 | A1-23 | Worldline_Anomaly_Inflow.md | Anomaly = gap index theorem | ⏳ |
-| A1-24 | Worldline_Index_Theorem.md | Index = Σ sign(d_n) | ⏳ |
-| A1-25 | Worldline_Supersymmetry.md | N=1 SUSY from gap pairs | ⏳ |
+| A1-24 | Worldline_Index_Theorem.md | Index = Σ sign(d_n) | ✅ Done |
+| A1-25 | Worldline_Supersymmetry.md | N=1 SUSY from gap pairs | ✅ Done |
 | A1-26 | Worldline_Supercharges.md | Q = Σ ψ_n d_n | ⏳ |
 | A1-27 | Worldline_Superalgebra.md | {Q,Q} = H + Z | ⏳ |
 | A1-28 | Worldline_BPS_States.md | BPS = record gap states | ⏳ |
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-15 COMPLETE
+## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-25 COMPLETE
 
-**Next Action:** Create Article 1 file A1-16: Worldline_Action_Principle.md, 350+ lines
+**Next Action:** Create Article 1 file A1-26: Worldline_Supercharges.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-16 Worldline_Action_Principle.md
+# Continue with Article 1: A1-26 Worldline_Supercharges.md
 ```
 
 ---
