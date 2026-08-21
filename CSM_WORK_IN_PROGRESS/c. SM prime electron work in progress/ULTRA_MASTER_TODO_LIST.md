@@ -86,7 +86,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 |------|-------|-------|--------|
 | A2-01 | Gap_To_Energy_Mapping.md | E_n = ℏ/(κ·d_n) | ✅ Done |
 | A2-02 | Twin_Prime_Electron_Mass.md | d=2 → 0.511 MeV derivation | ✅ Done |
-| A2-03 | Record_Gaps_Lepton_Hierarchy.md | Gap records → e, μ, τ masses | ⏳ |
+| A2-03 | Record_Gaps_Lepton_Hierarchy.md | Gap records → e, μ, τ masses | ✅ Done |
 | A2-04 | Muon_Excitation_Gap_4.md | First record gap = μ mass | ⏳ |
 | A2-05 | Tau_Excitation_Gap_6.md | Second record gap = τ mass | ⏳ |
 | A2-06 | Higher_Excitations_Gaps_8_10_14.md | Gap 8,10,14 → BSM leptons | ⏳ |
@@ -257,9 +257,9 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 A2-01, A2-02 COMPLETE
+## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 A2-01, A2-02, A2-03 COMPLETE
 
-**Next Action:** Create Article 2 file A2-03: Record_Gaps_Lepton_Hierarchy.md, 350+ lines
+**Next Action:** Create Article 2 file A2-04: Muon_Excitation_Gap_4.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
@@ -267,8 +267,8 @@ cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_3fd48397-7da0-
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
-# Continue with Article 2: A2-03 Record_Gaps_Lepton_Hierarchy.md
+cat CSMLogs/august26/RESUME_SESSION_A2-03_20260821.md
+# Continue with Article 2: A2-04 Muon_Excitation_Gap_4.md
 ```
 
 ---
