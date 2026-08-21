@@ -184,6 +184,12 @@
 - Zipped: article1_A1-31_pieces.zip
 - All committed and pushed (commit ed7aca35)
 
+### 2026-08-21T01:50:00Z — Article 1 A1-32 Complete
+- Created 12 pieces for A1-32: Worldline_Renyi_Entropies
+- Concatenated: 368 lines (≥350 target)
+- Zipped: article1_A1-32_pieces.zip
+- All committed and pushed (commit e57970e8)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -571,6 +577,20 @@
 | 379 | article1_A1-31_piece_12.md | 91 | ✅ Committed | ed7aca35 |
 | 380 | A1-31_Worldline_Entanglement_Entropy.md | 533 | ✅ Committed | ed7aca35 |
 | 381 | article1_A1-31_pieces.zip | — | ✅ Committed | ed7aca35 |
+| 382 | article1_A1-32_piece_01.md | 35 | ✅ Committed | e57970e8 |
+| 383 | article1_A1-32_piece_02.md | 43 | ✅ Committed | e57970e8 |
+| 384 | article1_A1-32_piece_03.md | 39 | ✅ Committed | e57970e8 |
+| 385 | article1_A1-32_piece_04.md | 40 | ✅ Committed | e57970e8 |
+| 386 | article1_A1-32_piece_05.md | 36 | ✅ Committed | e57970e8 |
+| 387 | article1_A1-32_piece_06.md | 45 | ✅ Committed | e57970e8 |
+| 388 | article1_A1-32_piece_07.md | 38 | ✅ Committed | e57970e8 |
+| 389 | article1_A1-32_piece_08.md | 38 | ✅ Committed | e57970e8 |
+| 390 | article1_A1-32_piece_09.md | 33 | ✅ Committed | e57970e8 |
+| 391 | article1_A1-32_piece_10.md | 38 | ✅ Committed | e57970e8 |
+| 392 | article1_A1-32_piece_11.md | 34 | ✅ Committed | e57970e8 |
+| 393 | article1_A1-32_piece_12.md | 47 | ✅ Committed | e57970e8 |
+| 394 | A1-32_Worldline_Renyi_Entropies.md | 368 | ✅ Committed | e57970e8 |
+| 395 | article1_A1-32_pieces.zip | — | ✅ Committed | e57970e8 |
 
 ---
 
