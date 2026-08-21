@@ -38,40 +38,40 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 | File | Title | Focus | Status |
 |------|-------|-------|--------|
-| A1-01 | Worldline_Proper_Time_Quantization.md | Δτ_n = d_n mapping | 🟡 Next |
-| A1-02 | Topological_Winding_Numbers.md | Instanton charge from prime gaps | ⏳ |
-| A1-03 | Double_Cover_SU2_Spin.md | "Multiply by two" = spin-1/2 | ⏳ |
-| A1-04 | Riemann_Zeros_Resonance_Frequencies.md | γ as worldline frequencies | ⏳ |
-| A1-05 | Worldline_Stability_RH.md | RH ↔ worldline stability | ⏳ |
-| A1-06 | Vertex_Interaction_Points.md | p_n as interaction vertices | ⏳ |
-| A1-07 | Pair_Creation_Annihilation.md | Forward/backward time = e⁻/e⁺ | ⏳ |
-| A1-08 | Proper_Time_Fluctuation_Spectrum.md | Gap distribution → Δτ spectrum | ⏳ |
-| A1-09 | Compton_Scale_From_Prime_Count.md | 3.67B steps → Compton time | ⏳ |
-| A1-10 | Worldline_Segment_Books.md | 3500 books = 3500 segments | ⏳ |
-| A1-11 | Worldline_Self_Intersection.md | γ(τ_n) = γ(τ_m) topology | ⏳ |
-| A1-12 | Proper_Time_Operator.md | τ operator in prime basis | ⏳ |
-| A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | ⏳ |
-| A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | ⏳ |
-| A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | ⏳ |
-| A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ⏳ |
-| A1-17 | Worldline_Hamiltonian.md | H = ℏ/κ Σ d_n⁻¹ | ⏳ |
-| A1-18 | Worldline_Path_Integral.md | ∫ D[x] exp(iS/ℏ) | ⏳ |
-| A1-19 | Worldline_Instanton_Solutions.md | Tunneling between gap classes | ⏳ |
+| A1-01 | Worldline_Proper_Time_Quantization.md | Δτ_n = d_n mapping | ✅ Done |
+| A1-02 | Topological_Winding_Numbers.md | Instanton charge from prime gaps | ✅ Done |
+| A1-03 | Double_Cover_SU2_Spin.md | "Multiply by two" = spin-1/2 | ✅ Done |
+| A1-04 | Riemann_Zeros_Resonance_Frequencies.md | γ as worldline frequencies | ✅ Done |
+| A1-05 | Worldline_Stability_RH.md | RH ↔ worldline stability | ✅ Done |
+| A1-06 | Vertex_Interaction_Points.md | p_n as interaction vertices | ✅ Done |
+| A1-07 | Pair_Creation_Annihilation.md | Forward/backward time = e⁻/e⁺ | ✅ Done |
+| A1-08 | Proper_Time_Fluctuation_Spectrum.md | Gap distribution → Δτ spectrum | ✅ Done |
+| A1-09 | Compton_Scale_From_Prime_Count.md | 3.67B steps → Compton time | ✅ Done |
+| A1-10 | Worldline_Segment_Books.md | 3500 books = 3500 segments | ✅ Done |
+| A1-11 | Worldline_Self_Intersection.md | γ(τ_n) = γ(τ_m) topology | ✅ Done |
+| A1-12 | Proper_Time_Operator.md | τ operator in prime basis | ✅ Done |
+| A1-13 | Worldline_Causal_Structure.md | Light cones from gap sequence | ✅ Done |
+| A1-14 | Worldline_Metric_From_Gaps.md | g_μν from prime statistics | ✅ Done |
+| A1-15 | Worldline_Geodesic_Equation.md | d²x/dτ² = f(d_n) | ✅ Done |
+| A1-16 | Worldline_Action_Principle.md | S = Σ d_n L(d_n) | ✅ Done |
+| A1-17 | Worldline_Hamiltonian.md | H = ℏ/κ Σ d_n⁻¹ | ✅ Done |
+| A1-18 | Worldline_Path_Integral.md | ∫ D[x] exp(iS/ℏ) | ✅ Done |
+| A1-19 | Worldline_Instanton_Solutions.md | Tunneling between gap classes | ✅ Done |
 | A1-20 | Worldline_Topological_Charge.md | Q = (1/2π)∮ dτ ... | ⏳ |
 | A1-21 | Worldline_Winding_Sectors.md | Sector decomposition by gap | ⏳ |
 | A1-22 | Worldline_Boundary_Conditions.md | UV/IR boundary from 0.0/3.0 | ⏳ |
 | A1-23 | Worldline_Anomaly_Inflow.md | Anomaly = gap index theorem | ⏳ |
-| A1-24 | Worldline_Index_Theorem.md | Index = Σ sign(d_n) | ⏳ |
-| A1-25 | Worldline_Supersymmetry.md | N=1 SUSY from gap pairs | ⏳ |
-| A1-26 | Worldline_Supercharges.md | Q = Σ ψ_n d_n | ⏳ |
-| A1-27 | Worldline_Superalgebra.md | {Q,Q} = H + Z | ⏳ |
-| A1-28 | Worldline_BPS_States.md | BPS = record gap states | ⏳ |
-| A1-29 | Worldline_Wall_Crossing.md | Gap transitions = wall crossing | ⏳ |
-| A1-30 | Worldline_Stability_Conditions.md | Stability = RH + gap bounds | ⏳ |
-| A1-31 | Worldline_Entanglement_Entropy.md | S = -Tr(ρ log ρ) from gaps | ⏳ |
-| A1-32 | Worldline_Renyi_Entropies.md | S_n = (1/(1-n))log Tr(ρ^n) | ⏳ |
-| A1-33 | Worldline_Modular_Hamiltonian.md | K = -log ρ from gaps | ⏳ |
-| A1-34 | Worldline_Relative_Entropy.md | S(ρ||σ) from gap ratios | ⏳ |
+| A1-24 | Worldline_Index_Theorem.md | Index = Σ sign(d_n) | ✅ Done |
+| A1-25 | Worldline_Supersymmetry.md | N=1 SUSY from gap pairs | ✅ Done |
+| A1-26 | Worldline_Supercharges.md | Q = Σ ψ_n √(d_n d_{n+1}) | ✅ Done |
+| A1-27 | Worldline_Superalgebra.md | {Q,Q} = H + Z | ✅ Done |
+| A1-28 | Worldline_BPS_States.md | BPS = record gap states | ✅ Done |
+| A1-29 | Worldline_Wall_Crossing.md | Gap transitions = wall crossing | ✅ Done |
+| A1-30 | Worldline_Stability_Conditions.md | Stability = RH + gap bounds | ✅ Done |
+| A1-31 | Worldline_Entanglement_Entropy.md | S = -Tr(ρ log ρ) from gaps | ✅ Done |
+| A1-32 | Worldline_Renyi_Entropies.md | S_n = (1/(1-n))log Tr(ρ^n) | ✅ Done |
+| A1-33 | Worldline_Modular_Hamiltonian.md | K = -log ρ from gaps | ✅ Done |
+| A1-34 | Worldline_Relative_Entropy.md | S(ρ||σ) from gap ratios | ✅ Done |
 | A1-35 | Worldline_Quantum_Error_Correction.md | Twin primes = [[256,1,3]] code | ⏳ |
 | A1-36 | Worldline_Decoupling_Limits.md | Heavy gaps decouple = EFT | ⏳ |
 | A1-37 | Worldline_Emergent_Spacetime.md | Spacetime from gap network | ⏳ |
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — STARTING ARTICLE 1
+## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-34 COMPLETE
 
-**Next Action:** Create Article 1 files (A1-01 through A1-40), 350+ lines each
+**Next Action:** Create Article 1 file A1-35: Worldline_Quantum_Error_Correction.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ef62717f-189d-4a92-aa5e-bdc223842847
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-01 Worldline_Proper_Time_Quantization.md
+# Continue with Article 1: A1-35 Worldline_Quantum_Error_Correction.md
 ```
 
 ---
