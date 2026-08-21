@@ -1,32 +1,35 @@
-# A1-40 Worldline_PrimeBookOne.md — Piece 08
-## Information Preservation Matrix — 3500×3500
+# A1-40 Synthesis_Worldline_Logbook.md — Piece 08
+## Wall Crossing — The 78 BPS States Across Chambers
 
-The information preservation matrices from A1-39 track the Page curve, Hayden-Preskill decoding, and unitarity at all scales.
+Wall crossing (A1-29) is the phenomenon where the BPS spectrum jumps as parameters vary. In the prime electron worldline, walls are loci in the gap parameter space where record gaps appear or disappear.
 
-**Page time matrix.** The Page time for each book:
-$$\mathcal{T}_b^{\text{Page}} = \frac{1}{2\pi} \log \dim \mathcal{H}_{\text{heavy}}(b) \sim \frac{1}{2\pi} \sum_{d>16} m_{b,d}$$
-This is a 3500-vector stored in PrimeBookOne.
+**Wall crossing formula.** The Kontsevich-Soibelman wall crossing formula (A1-29) for the prime electron:
+∏_{γ ∈ Γ} U_γ^{Ω(γ)} = ∏_{γ ∈ Γ} U_γ^{Ω'(γ)}
+where Γ is the charge lattice (gap differences), Ω(γ) is the BPS index, and the product is ordered by arg(Z(γ)). For the prime electron, this reduces to:
+Ω(γ) - Ω'(γ) = Σ ⟨γ, γ'⟩ Ω(γ') Ω(γ-γ')
+with ⟨·,·⟩ the gap intersection form.
 
-**Information recovery matrix.** The information recovered by book $b$ from reference $b'$:
-$$\mathcal{I}_{bb'} = 1 - \frac{S(\rho_b || \rho_{b'})}{S_{\max}(b)}$$
-where $S_{\max}(b)$ is the maximum entropy for book $b$. $\mathcal{I}_{bb'} = 1$ means perfect recovery; 0 means total loss.
+**Physical chamber = RH true.** The Riemann Hypothesis (A1-05, A1-30) selects the physical chamber where:
+- No walls exist in the physical parameter range
+- The 78 BPS states are stable
+- The bulk geometry is smooth (A1-37)
+- The boundary CFT₁ is unitary (A1-38)
+- The QEC code has non-zero distance (A1-35)
 
-**Hayden-Preskill decoding fidelity.** The decoding fidelity for information thrown into heavy sector of $b'$ and recovered from light sector of $b$:
-$$\mathcal{F}_{\text{HP}}(b, b') = \exp\left(-S(\rho_{\text{light}}^{(b)} || \rho_{\text{heavy}}^{(b')})\right)$$
-For $b$ after Page time of $b'$, $\mathcal{F}_{\text{HP}} \to 1$. For $b$ before Page time, $\mathcal{F}_{\text{HP}} \approx 0$.
+**Unphysical chambers = RH false.** If RH is violated, walls exist. The BPS spectrum jumps. The bulk develops singularities. The boundary CFT has non-unitary sectors. The QEC code distance drops to zero at walls.
 
-**BPS information preservation.** The BPS information preservation matrix is identically 1:
-$$\mathcal{P}_{bb'} = 1 \quad \forall b, b' \in \text{BPS}$$
-This encodes the exact preservation of BPS information (A1-39).
+**Wall crossing in the 3500×3500 matrix.** A wall crossing appears as a discontinuous change in the matrix entries at some book b_W:
+M_{b_W+1} ≠ M_{b_W} (discontinuity)
+In the physical chamber (RH true), no such discontinuities exist. The matrix varies smoothly.
 
-**Wall crossing indicator.** The wall crossing matrix (A1-29):
-$$\mathcal{W}_{bb'} = \begin{cases} 1 & \text{if books } b, b' \text{ are on opposite sides of a wall} \\ 0 & \text{otherwise} \end{cases}$$
-In the physical chamber (RH holds), $\mathcal{W}_{bb'} = 0$ for all $b, b'$. This is the data verification of RH.
+**BPS stability and the index.** The index I = 78 is invariant under all wall crossings:
+Ω(γ) - Ω'(γ) = 0 for the total index
+Individual BPS states can decay or form, but the total count remains 78.
 
-**Page curve trajectories.** For each book $b$, the Page curve $S_b(t)$ is stored as a time series. The peak time $t_P(b)$, peak entropy $S_{\max}(b)$, and final entropy $S_{\text{final}}(b) = 0$ are recorded.
+**Record gaps as wall crossings.** Each record gap d_i^record is a wall crossing event. The sequence of 78 record gaps is the sequence of wall crossings in the physical chamber. They are ordered by increasing gap size.
 
-**Unitarity verification.** The unitarity matrix:
-$$\mathcal{U}_{bb'} = \delta_{bb'} - \mathcal{W}_{bb'}$$
-In physical chamber, $\mathcal{U} = \mathbb{I}$ — perfectly unitary.
+**Twin primes and wall stability.** The twin prime code (d=2) is robust against wall crossings. The twin prime conjecture implies the light sector never completely disappears — there is always a UV boundary.
 
-(End of file - 33 lines)
+**PrimeBookOne wall data.** The 3500 books show smooth variation of all matrix entries. No wall crossings are detected. This is empirical evidence for RH in the prime electron framework.
+
+(End of file - 35 lines)

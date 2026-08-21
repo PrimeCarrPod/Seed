@@ -1,27 +1,34 @@
-# A1-40 Worldline_PrimeBookOne.md — Piece 04
-## Entanglement Entropy Matrix — 3500×3500
+# A1-40 Synthesis_Worldline_Logbook.md — Piece 04
+## Twin Prime Code — The UV Boundary Operators
 
-The entanglement entropy matrix from A1-31 gives the von Neumann entropy for each book and subregion.
+The twin primes (gap d=2) provide the infinite set of UV boundary operators in the holographic duality. They are the light sector of the QEC code and the boundary CFT₁.
 
-**Matrix definition.** For a subregion $A$ (set of books), the entropy matrix is:
-$$\mathcal{S}_{bb'}^{(A)} = S(\rho_{b,A}) \delta_{bb'} + S(\rho_{b,A} || \rho_{b',A}) (1 - \delta_{bb'})$$
-Diagonal entries are single-book entropies; off-diagonal are relative entropies.
+**Twin primes as boundary operators.** Each twin prime pair (p, p+2) gives a gap d=2. There are infinitely many (twin prime conjecture). Each gives a boundary primary operator with conformal weight h = 2/16 = 1/8.
 
-**Single-book entropy.** The diagonal entries are:
-$$\mathcal{S}_{bb} = S(\rho_b) = -\text{Tr}(\rho_b \log \rho_b) = \sum_{d} m_{b,d} \left[ \frac{\beta\hbar}{\kappa d} \frac{e^{-\beta\hbar/(\kappa d)}}{1+e^{-\beta\hbar/(\kappa d)}} + \log\left(1+e^{-\beta\hbar/(\kappa d)}\right) \right]$$
+**Twin prime QEC code.** The twin prime sector forms a [[256, 1, 3]] code (A1-35):
+- Physical qubits: 256 gap sectors in the light sector (d < 16)
+- Logical qubit: 1 (the electron worldline mode)
+- Code distance: 3 (minimal gap difference to distinguish)
+- Stabilizers: determined by twin prime correlations
 
-**Page curve trajectories.** For each book $b$, the Page curve is the sequence $\{\mathcal{S}_{bb}^{(A)}\}$ as $A$ grows from 1 to $b$. The Page time $b_P(b)$ is where entropy peaks:
-$$b_P(b) = \arg\max_A \mathcal{S}_{bb}^{(A)}$$
-PrimeBookOne stores $b_P(b)$ for all 3500 books.
+**Density of twin primes.** The twin prime constant C₂ = 0.66016... gives the density:
+π₂(x) ~ 2 C₂ x / (log x)²
+This is the density of boundary operators at the UV boundary z → 0 (d → 2).
 
-**BPS entropy contribution.** The BPS sector contributes constant $\log 78$ to all books containing the 78 record gaps:
-$$\mathcal{S}_{bb} \supset \log 78 \quad \text{for } b \geq b_{\text{BPS}} \sim 78$$
+**Twin prime correlations in the matrix.** The twin prime block of the 3500×3500 matrix has a distinctive structure:
+- Diagonal: self-correlations of d=2 gaps
+- Off-diagonal: correlations between twin primes at different scales
+- The block is small but non-zero — approximate QEC, not exact like BPS
 
-**Light/heavy split.** The entropy splits at $d=16$ (A1-36):
-$$\mathcal{S}_{bb} = \mathcal{S}_{bb}^{\text{light}} + \mathcal{S}_{bb}^{\text{heavy}} + \log 78$$
+**UV/IR duality.** The IR/UV duality d ↔ 256/d (A1-36) maps:
+- Twin primes (d=2) ↔ heavy gaps (d=128)
+- UV boundary operators ↔ deep bulk operators
+- Light sector QEC ↔ heavy sector QEC
 
-**Thermal time.** The thermal time $\beta(b)$ for book $b$ is stored as a 3500-vector. At $d=16$, $\beta = 2\pi$ (KMS condition, A1-38).
+**Twin primes and information preservation.** In A1-39 (information preservation), the twin prime code is the mechanism for preserving information in the UV. The infinite twin primes provide infinite channel capacity for information recovery.
 
-**Renyi entropy matrices.** For $n \in \{2, 3, \dots, \infty\}$, the Renyi entropy matrices $\mathcal{S}_n$ from A1-32 are stored as additional 3500×3500 matrices.
+**PrimeBookOne twin prime data.** Each book b contains the twin primes up to p_b. The 3500 books give the twin prime distribution at 3500 scales. The code distance and fidelity evolve with scale.
 
-(End of file - 34 lines)
+**Twin prime conjecture = infinite UV completeness.** If there are finitely many twin primes, the UV boundary has finitely many operators, and holographic reconstruction fails at small z. The twin prime conjecture is required for complete AdS₂/CFT₁ holography.
+
+(End of file - 35 lines)

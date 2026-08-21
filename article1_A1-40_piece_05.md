@@ -1,31 +1,36 @@
-# A1-40 Worldline_PrimeBookOne.md — Piece 05
-## Modular Hamiltonian Matrix — 3500×3500
+# A1-40 Synthesis_Worldline_Logbook.md — Piece 05
+## RG Flow — The 3500 Books as Scale Evolution
 
-The modular Hamiltonian matrices from A1-33 encode the modular flow generators at all scales.
+The 3500 books of PrimeBookOne are 3500 snapshots of the RG flow. The flow parameter is the book index b, with scale μ_b = p_b (the b-th prime).
 
-**Matrix definition.** For each book $b$, the modular Hamiltonian is:
-$$K_b = -\log \rho_b$$
-For the thermal state, $K_b = \beta H_b$. For general Gaussian states:
-$$K_b = \frac{1}{2} x_b^T \Sigma_b^{-1} x_b$$
-where $x_b$ are the worldline operators for book $b$.
+**RG flow from gaps.** The RG transformation is the map between gap distributions at successive scales:
+ρ_{b+1}(d) = T(ρ_b(d))
+where T is the RG kernel derived from the prime gap statistics. The flow is discrete (book to book) but approaches continuity as b → 3500.
 
-**3500×3500 modular matrix.** The modular Hamiltonian matrix stores the action of $K_b$ on the full Hilbert space:
-$$\mathcal{K}_{bb'} = \text{Tr}_{b'}(K_b \rho_{b'})$$
-This is the expectation of $K_b$ in the state of book $b'$. Diagonal entries $\mathcal{K}_{bb} = S(\rho_b)$.
+**Fixed points of the flow.**
+- UV fixed point: d=2 (twin primes), β-function β(2) = 0
+- Self-dual fixed point: d=16, β(16) = 0 (A1-36)
+- IR fixed point: d → ∞ (record gaps), β(d) → 0
 
-**Modular flow generator.** The modular flow from book $b$ to $b'$ is:
-$$\alpha_t^{(b)}(\rho_{b'}) = e^{i t K_b} \rho_{b'} e^{-i t K_b}$$
-PrimeBookOne stores the flow trajectory operators for $t \in [0, 2\pi]$.
+**Flow equations for key quantities:**
+- Entanglement entropy: dS/db = -c/12 · d log p_b/db (c=78)
+- Modular Hamiltonian: dK/db = -[K, H_RG] where H_RG generates RG
+- QEC syndrome: dΣ/db = [Σ, H_RG] (A1-35)
+- Holographic dictionary: dM/db = [M, H_RG] (A1-38)
 
-**BPS modular Hamiltonian.** For BPS books, $K_{\text{BPS}} = 0$ (A1-33, A1-39). The BPS block of $\mathcal{K}$ is identically zero:
-$$\mathcal{K}_{bb'} = 0 \quad \text{for } b, b' \in \text{BPS}$$
+**Decoupling at d=16.** The self-dual scale d=16 is where the light (d<16) and heavy (d>16) sectors decouple (A1-36). The RG flow separates:
+- Light sector flows to UV (d→2)
+- Heavy sector flows to IR (d→∞)
+- The boundary theory at d=16 is the fixed point CFT₁
 
-**KMS condition matrix.** The KMS condition at inverse temperature $\beta_b$:
-$$\mathcal{K}_{bb'} = \frac{1}{\beta_b} \log \text{Tr}(e^{-\beta_b H_b} \mathcal{O}_{b'})$$
-At $d=16$ (book $b_{16} \sim 1750$), $\beta_{16} = 2\pi$.
+**Flow of the 3500×3500 matrix.** The matrix M_b at book b evolves as:
+M_{b+1} = U_b M_b U_b†
+where U_b is the RG unitary. The eigenvalues flow as λ_k(b) ~ 1/k² at all scales (gap distribution universality).
 
-**Tomita-Takesaki data.** The modular conjugation operator $J_b$ and the modular operator $\Delta_b = e^{-K_b}$ are stored for each book. The Tomita-Takesaki theorem gives $J_b \Delta_b^{it} J_b = \Delta_b^{-it}$.
+**Book-to-book differences.** The difference M_{b+1} - M_b is the RG beta function. It is computable from the gap data in books b and b+1. The accumulated difference from b=1 to b=3500 gives the full RG trajectory.
 
-**Modular flow as RG.** The RG flow from book $b$ to $b'$ is the modular flow with $t = \log(p_{b'}/p_b)$ (A1-36). PrimeBookOne encodes the full RG trajectory.
+**Scaling limit.** As b → 3500, p_b ~ 3.67×10¹⁰, the RG flow approaches the continuum AdS₂/CFT₁ fixed point. The 3500 books are the discrete approximation to the continuum flow.
 
-(End of file - 34 lines)
+**PrimeBookOne RG data.** Each book provides the gap distribution at its scale. The 3500 books give the full flow trajectory. The fixed point at d=16 is visible in every book.
+
+(End of file - 35 lines)

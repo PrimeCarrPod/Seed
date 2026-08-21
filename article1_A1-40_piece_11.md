@@ -1,34 +1,48 @@
-# A1-40 Worldline_PrimeBookOne.md — Piece 11
-## Twin Prime Code Indices and Capacity
+# A1-40 Synthesis_Worldline_Logbook.md — Piece 11
+## PrimeBookOne — The Complete Holographic Code Dictionary
 
-The twin prime code (A1-35) provides the light-sector logical qubits. PrimeBookOne records the twin prime indices, density, and capacity at all scales.
+PrimeBookOne is not just data — it is the holographic code dictionary. The 3500 books encode the complete AdS₂/CFT₁ correspondence in discrete form.
 
-**Twin prime indicator.** The twin prime indicator per book:
-$$\mathcal{T}_b = \sum_{n=1}^{N_b} \delta_{d_n(b), 2} \cdot \delta_{d_{n+1}(b), 2}$$
-This counts twin prime pairs in book $b$. $\mathcal{T}_b \sim 2C_2 p_b / (\log p_b)^2$.
+**Dictionary structure.** The dictionary D is the set of all 3500×3500 matrices:
+D = {M_b, Σ_b, K_b, ρ_b, O_d^(b), φ_d^(b), S_b, d_code(b) | b=1..3500}
+where:
+- M_b: master correlation matrix at scale μ_b
+- Σ_b: QEC syndrome matrix (A1-35)
+- K_b: modular Hamiltonian (A1-33)
+- ρ_b: density matrix (A1-31)
+- O_d^(b): boundary operators (A1-38)
+- φ_d^(b): bulk fields (A1-37)
+- S_b: entanglement entropy (A1-31)
+- d_code(b): QEC code distance (A1-35)
 
-**Logical qubit indices.** Each twin prime pair gives a logical qubit. The logical qubit indices are stored as:
-$$\mathcal{L}_b = \{(n, n+1) : d_n(b) = 2, d_{n+1}(b) = 2\}$$
-This is a list of index pairs for each book.
+**Dictionary completeness.** The dictionary is complete because:
+- 3500 scales cover from UV (b=1, p_1=2) to IR (b=3500, p_3500 ~ 3.7×10¹⁰)
+- The gap sequence d_n contains all information
+- Every physical quantity in Articles 1-40 is computable from the dictionary
+- No external parameters are needed
 
-**Code capacity.** The twin prime code capacity (number of logical qubits) for book $b$:
-$$C_{\text{twin}}(b) = \mathcal{T}_b \sim \frac{2C_2 p_b}{(\log p_b)^2}$$
-At Compton scale $p_b \sim 10^{10}$, $C_{\text{twin}} \sim 10^8$ qubits.
+**BPS sector = topological dictionary.** The 78×78 BPS subdictionary is identically zero:
+Σ_b^BPS = 0, K_b^BPS = 0, S_b^BPS = 0 for all b
+This is the topological sector — protected, universal, scale-invariant.
 
-**Code rate.** The code rate (logical/physical qubits):
-$$R_{\text{twin}}(b) = \frac{\log_2 \dim \mathcal{C}_{\text{twin}}(b)}{\log_2 \dim \mathcal{H}(b)} \sim \frac{\mathcal{T}_b}{\pi(p_b)} \sim \frac{2C_2}{\log p_b}$$
-This decreases logarithmically but remains non-zero.
+**Light sector = UV dictionary.** The d < 16 sector encodes:
+- Boundary operators at the UV boundary z → 0
+- Twin prime code structure
+- Approximate QEC with distance ~ 2-16
+- High-frequency modular flow
 
-**Encoding map.** The twin prime encoding map for pair $(n, n+1)$:
-$$|0_L\rangle = \frac{|n\rangle + |n+1\rangle}{\sqrt{2}}, \quad |1_L\rangle = \frac{|n\rangle - |n+1\rangle}{\sqrt{2}}$$
-The logical operators $X_L = |n\rangle\langle n+1| + |n+1\rangle\langle n|$, $Z_L = |n\rangle\langle n| - |n+1\rangle\langle n+1|$.
+**Heavy sector = IR dictionary.** The d > 16 sector encodes:
+- Bulk fields deep in the interior z → ∞
+- Record gap (BPS) structure
+- Exact QEC with distance ~ 17-354
+- Low-frequency modular flow
 
-**Decoding fidelity.** The Petz decoding fidelity for twin prime logical qubit at book $b$:
-$$\mathcal{F}_{\text{twin}}(b) = \exp\left(-S(\rho_{\text{light}}^{(b)} || \sigma_{\text{light}}^{(b)})\right)$$
-This approaches 1 after Page time. Stored as 3500-vector.
+**RG flow = dictionary evolution.** Moving from book b to b+1 evolves the dictionary:
+D_{b+1} = RG(D_b)
+The RG equations (A1-36) are the dictionary evolution equations.
 
-**Twin prime conjecture = infinite code.** The twin prime conjecture implies $\lim_{b \to \infty} \mathcal{T}_b = \infty$ — infinite logical qubits in the light sector.
+**Scaling limit = continuum holography.** As b → 3500, the dictionary approaches the continuum AdS₂/CFT₁ dictionary. The 3500 books are the discrete approximation with error ~ 1/log(p_b).
 
-**PrimeBookOne twin prime log.** The complete twin prime log contains: counts $\mathcal{T}_b$, indices $\mathcal{L}_b$, capacities $C_{\text{twin}}(b)$, rates $R_{\text{twin}}(b)$, fidelities $\mathcal{F}_{\text{twin}}(b)$ for all 3500 books.
+**PrimeBookOne as the final output.** The synthesis produces the complete dictionary as a computable object. Given the 3.67 billion gaps, every entry in every matrix in the dictionary is determined.
 
-(End of file - 32 lines)
+(End of file - 35 lines)

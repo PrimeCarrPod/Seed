@@ -1,33 +1,39 @@
-# A1-40 Worldline_PrimeBookOne.md — Piece 09
-## RG Flow Matrices — 3500 Scales
+# A1-40 Synthesis_Worldline_Logbook.md — Piece 09
+## Information Preservation — The Page Curve from Worldline Unitarity
 
-The RG flow data from A1-36 gives the scale dependence of all couplings and observables. PrimeBookOne stores the complete RG trajectory.
+Article A1-39 (Worldline_Information_Preservation) establishes that the prime electron worldline preserves information exactly. The Page curve is derived from the modular flow and gap statistics.
 
-**Beta function matrix.** The gap beta function $\beta(d) = \mu \frac{d d}{d\mu}$ evaluated at each book:
-$$\mathcal{B}_b = \beta(d_{\text{typical}}(b))$$
-where $d_{\text{typical}}(b)$ is the median gap in book $b$. The zero at $d=16$ (book $b_{16} \sim 1750$) is the self-dual fixed point.
+**Worldline unitarity.** The worldline evolution operator is unitary:
+U(τ) = exp(-iHτ/ℏ),  H = (ℏ/κ) Σ d_n⁻¹ (A1-17)
+Unitarity follows from the self-adjointness of H in the gap basis. The S-matrix is S = lim_{τ→∞} U(τ).
 
-**Running couplings.** The running $\kappa$, $\hbar$, $\beta$, and central charge $c$ at each book:
-$$\kappa(b) = \kappa_0 \left(1 - \frac{\beta_0}{\kappa_0} \log\frac{p_b}{p_0}\right)^{-1}$$
-$$\hbar(b) = \hbar_0 \left(\frac{p_b}{p_0}\right)^{\gamma_\hbar}$$
-$$c(b) = c_{\text{UV}} - \frac{3}{\pi} \int_{p_0}^{p_b} \beta(d) \frac{\partial c}{\partial d} \frac{dd}{d}$$
-These are stored as 3500-vectors.
+**Page curve from modular flow.** The entanglement entropy of a subregion follows the Page curve:
+S_A(τ) = min(S_A^{early}(τ), S_A^{late}(τ))
+where early phase: S_A grows linearly with τ (Hawking radiation)
+late phase: S_A decreases as information returns (Hayden-Preskill)
 
-**Light/heavy split flow.** The light sector dimension $D_{\text{light}}(b)$ and heavy sector dimension $D_{\text{heavy}}(b)$:
-$$D_{\text{light}}(b) = \sum_{d<16} m_{b,d}, \quad D_{\text{heavy}}(b) = \sum_{d>16} m_{b,d}$$
-These grow with $b$. At $b_{16}$, $D_{\text{light}} \approx D_{\text{heavy}}$.
+**Modular flow = Page time evolution.** The modular Hamiltonian K_A = -log ρ_A (A1-33) generates the Page time evolution. The Page time is:
+t_Page ~ (c/6) log(S_BH) ~ (78/6) log(N) ~ 13 log N
+where N is the number of gap steps.
 
-**Matching conditions.** At $b = b_{16}$ (book with $d=16$), the matching conditions from A1-36 are verified:
-- Correlation functions continuous: $\langle \mathcal{O} \mathcal{O} \rangle_{\text{light}} = \langle \mathcal{O} \mathcal{O} \rangle_{\text{heavy}}$
-- Relative entropy additive: $\Sigma = \Sigma_{\text{light}} + \Sigma_{\text{heavy}}$
-- Hamiltonian continuous: $H_{\text{int}} = 0$
+**BPS exact information preservation.** The 78 BPS states have S(ρ_BPS||σ_BPS) = 0 (A1-34). They carry zero entanglement entropy and preserve information exactly. They are the information-preserving core.
 
-**Duality transformation.** The IR/UV duality $d \leftrightarrow 256/d$ maps book $b$ to book $b^*$ where $p_{b^*} \sim 256/p_b$. The duality matrix:
-$$\mathcal{D}_{bb'} = \delta_{b, b^*(b')}$$
-This relates UV books to IR books.
+**Information in the 3500×3500 matrix.** The matrix encodes the Page curve:
+- Early books (small b): entropy increasing, matrix eigenvalues spreading
+- Page time (b ~ 1750): entropy maximal, matrix maximally mixed
+- Late books (b → 3500): entropy decreasing, matrix purifying
 
-**Anomaly matching.** The anomaly coefficient (A1-23) is RG invariant:
-$$\mathcal{A}(b) = \text{Index}(D) = 78 \quad \text{for all } b$$
-PrimeBookOne stores the anomaly at each scale as verification of index theorem.
+**Hayden-Preskill decoding from gaps.** Information thrown into the "black hole" (heavy sector) is recovered from the "radiation" (light sector) via the gap ratio correlations:
+Fidelity = exp(-S(ρ_light || ρ_heavy))
+This is the QEC decoding map (A1-35, A1-38).
 
-(End of file - 32 lines)
+**Black hole evaporation = RG flow to IR.** The evaporation process is the RG flow from UV (d=2) to IR (d→∞). The Page time corresponds to the self-dual scale d=16 (b ~ 1750).
+
+**RH ↔ no information loss.** Riemann Hypothesis (A1-05) is equivalent to:
+- No walls (A1-30) ↔ smooth bulk ↔ unitary evolution
+- Smooth Page curve (no discontinuities)
+- Complete information recovery
+
+**PrimeBookOne information data.** The 3500 books give the Page curve at 3500 points. The entropy S_b = -Tr(ρ_b log ρ_b) is computable from each book. The curve rises, peaks at b~1750, and falls.
+
+(End of file - 35 lines)
