@@ -66,7 +66,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-26 | Worldline_Supercharges.md | Q = Σ ψ_n √(d_n d_{n+1}) | ✅ Done |
 | A1-27 | Worldline_Superalgebra.md | {Q,Q} = H + Z | ✅ Done |
 | A1-28 | Worldline_BPS_States.md | BPS = record gap states | ✅ Done |
-| A1-29 | Worldline_Wall_Crossing.md | Gap transitions = wall crossing | ⏳ |
+| A1-29 | Worldline_Wall_Crossing.md | Gap transitions = wall crossing | ✅ Done |
 | A1-30 | Worldline_Stability_Conditions.md | Stability = RH + gap bounds | ⏳ |
 | A1-31 | Worldline_Entanglement_Entropy.md | S = -Tr(ρ log ρ) from gaps | ⏳ |
 | A1-32 | Worldline_Renyi_Entropies.md | S_n = (1/(1-n))log Tr(ρ^n) | ⏳ |

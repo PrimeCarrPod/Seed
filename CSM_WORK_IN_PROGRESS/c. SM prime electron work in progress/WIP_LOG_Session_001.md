@@ -166,6 +166,12 @@
 - Zipped: article1_A1-28_pieces.zip
 - All committed and pushed (commit bbe7e299)
 
+### 2026-08-21T01:25:00Z — Article 1 A1-29 Complete
+- Created 12 pieces for A1-29: Worldline_Wall_Crossing
+- Concatenated: 411 lines (≥350 target)
+- Zipped: article1_A1-29_pieces.zip
+- All committed and pushed (commit 1ed02041)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -511,6 +517,20 @@
 | 337 | article1_A1-28_piece_12.md | 82 | ✅ Committed | bbe7e299 |
 | 338 | A1-28_Worldline_BPS_States.md | 367 | ✅ Committed | bbe7e299 |
 | 339 | article1_A1-28_pieces.zip | — | ✅ Committed | bbe7e299 |
+| 340 | article1_A1-29_piece_01.md | 54 | ✅ Committed | 1ed02041 |
+| 341 | article1_A1-29_piece_02.md | 56 | ✅ Committed | 1ed02041 |
+| 342 | article1_A1-29_piece_03.md | 53 | ✅ Committed | 1ed02041 |
+| 343 | article1_A1-29_piece_04.md | 54 | ✅ Committed | 1ed02041 |
+| 344 | article1_A1-29_piece_05.md | 55 | ✅ Committed | 1ed02041 |
+| 345 | article1_A1-29_piece_06.md | 57 | ✅ Committed | 1ed02041 |
+| 346 | article1_A1-29_piece_07.md | 55 | ✅ Committed | 1ed02041 |
+| 347 | article1_A1-29_piece_08.md | 54 | ✅ Committed | 1ed02041 |
+| 348 | article1_A1-29_piece_09.md | 55 | ✅ Committed | 1ed02041 |
+| 349 | article1_A1-29_piece_10.md | 54 | ✅ Committed | 1ed02041 |
+| 350 | article1_A1-29_piece_11.md | 54 | ✅ Committed | 1ed02041 |
+| 351 | article1_A1-29_piece_12.md | 83 | ✅ Committed | 1ed02041 |
+| 352 | A1-29_Worldline_Wall_Crossing.md | 411 | ✅ Committed | 1ed02041 |
+| 353 | article1_A1-29_pieces.zip | — | ✅ Committed | 1ed02041 |
 
 ---
 
