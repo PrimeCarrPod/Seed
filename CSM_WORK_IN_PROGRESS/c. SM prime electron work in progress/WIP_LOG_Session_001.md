@@ -160,6 +160,12 @@
 - Zipped: article1_A1-27_pieces.zip
 - All committed and pushed (commit 8377b5a3)
 
+### 2026-08-21T01:10:00Z — Article 1 A1-28 Complete
+- Created 12 pieces for A1-28: Worldline_BPS_States
+- Concatenated: 367 lines (≥350 target)
+- Zipped: article1_A1-28_pieces.zip
+- All committed and pushed (commit bbe7e299)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -491,6 +497,20 @@
 | 323 | article1_A1-27_piece_12.md | 99 | ✅ Committed | 8377b5a3 |
 | 324 | A1-27_Worldline_Superalgebra.md | 502 | ✅ Committed | 8377b5a3 |
 | 325 | article1_A1-27_pieces.zip | — | ✅ Committed | 8377b5a3 |
+| 326 | article1_A1-28_piece_01.md | 52 | ✅ Committed | bbe7e299 |
+| 327 | article1_A1-28_piece_02.md | 54 | ✅ Committed | bbe7e299 |
+| 328 | article1_A1-28_piece_03.md | 48 | ✅ Committed | bbe7e299 |
+| 329 | article1_A1-28_piece_04.md | 53 | ✅ Committed | bbe7e299 |
+| 330 | article1_A1-28_piece_05.md | 54 | ✅ Committed | bbe7e299 |
+| 331 | article1_A1-28_piece_06.md | 48 | ✅ Committed | bbe7e299 |
+| 332 | article1_A1-28_piece_07.md | 54 | ✅ Committed | bbe7e299 |
+| 333 | article1_A1-28_piece_08.md | 55 | ✅ Committed | bbe7e299 |
+| 334 | article1_A1-28_piece_09.md | 48 | ✅ Committed | bbe7e299 |
+| 335 | article1_A1-28_piece_10.md | 55 | ✅ Committed | bbe7e299 |
+| 336 | article1_A1-28_piece_11.md | 56 | ✅ Committed | bbe7e299 |
+| 337 | article1_A1-28_piece_12.md | 82 | ✅ Committed | bbe7e299 |
+| 338 | A1-28_Worldline_BPS_States.md | 367 | ✅ Committed | bbe7e299 |
+| 339 | article1_A1-28_pieces.zip | — | ✅ Committed | bbe7e299 |
 
 ---
 
