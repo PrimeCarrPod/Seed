@@ -190,6 +190,18 @@
 - Zipped: article1_A1-32_pieces.zip
 - All committed and pushed (commit e57970e8)
 
+### 2026-08-21T02:05:00Z — Article 1 A1-33 Complete
+- Created 12 pieces for A1-33: Worldline_Modular_Hamiltonian
+- Concatenated: 351 lines (≥350 target)
+- Zipped: article1_A1-33_pieces.zip
+- All committed and pushed (commit 8f63eafa)
+
+### 2026-08-21T02:25:00Z — Article 1 A1-34 Complete
+- Created 12 pieces for A1-34: Worldline_Relative_Entropy
+- Concatenated: 416 lines (≥350 target)
+- Zipped: article1_A1-34_pieces.zip
+- All committed and pushed (commit 985add88)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -591,6 +603,34 @@
 | 393 | article1_A1-32_piece_12.md | 47 | ✅ Committed | e57970e8 |
 | 394 | A1-32_Worldline_Renyi_Entropies.md | 368 | ✅ Committed | e57970e8 |
 | 395 | article1_A1-32_pieces.zip | — | ✅ Committed | e57970e8 |
+| 396 | article1_A1-33_piece_01.md | 31 | ✅ Committed | 8f63eafa |
+| 397 | article1_A1-33_piece_02.md | 44 | ✅ Committed | 8f63eafa |
+| 398 | article1_A1-33_piece_03.md | 39 | ✅ Committed | 8f63eafa |
+| 399 | article1_A1-33_piece_04.md | 35 | ✅ Committed | 8f63eafa |
+| 400 | article1_A1-33_piece_05.md | 34 | ✅ Committed | 8f63eafa |
+| 401 | article1_A1-33_piece_06.md | 38 | ✅ Committed | 8f63eafa |
+| 402 | article1_A1-33_piece_07.md | 35 | ✅ Committed | 8f63eafa |
+| 403 | article1_A1-33_piece_08.md | 38 | ✅ Committed | 8f63eafa |
+| 404 | article1_A1-33_piece_09.md | 33 | ✅ Committed | 8f63eafa |
+| 405 | article1_A1-33_piece_10.md | 33 | ✅ Committed | 8f63eafa |
+| 406 | article1_A1-33_piece_11.md | 30 | ✅ Committed | 8f63eafa |
+| 407 | article1_A1-33_piece_12.md | 51 | ✅ Committed | 8f63eafa |
+| 408 | A1-33_Worldline_Modular_Hamiltonian.md | 351 | ✅ Committed | 8f63eafa |
+| 409 | article1_A1-33_pieces.zip | — | ✅ Committed | 8f63eafa |
+| 410 | article1_A1-34_piece_01.md | 38 | ✅ Committed | 985add88 |
+| 411 | article1_A1-34_piece_02.md | 40 | ✅ Committed | 985add88 |
+| 412 | article1_A1-34_piece_03.md | 38 | ✅ Committed | 985add88 |
+| 413 | article1_A1-34_piece_04.md | 39 | ✅ Committed | 985add88 |
+| 414 | article1_A1-34_piece_05.md | 34 | ✅ Committed | 985add88 |
+| 415 | article1_A1-34_piece_06.md | 33 | ✅ Committed | 985add88 |
+| 416 | article1_A1-34_piece_07.md | 32 | ✅ Committed | 985add88 |
+| 417 | article1_A1-34_piece_08.md | 33 | ✅ Committed | 985add88 |
+| 418 | article1_A1-34_piece_09.md | 33 | ✅ Committed | 985add88 |
+| 419 | article1_A1-34_piece_10.md | 34 | ✅ Committed | 985add88 |
+| 420 | article1_A1-34_piece_11.md | 35 | ✅ Committed | 985add88 |
+| 421 | article1_A1-34_piece_12.md | 57 | ✅ Committed | 985add88 |
+| 422 | A1-34_Worldline_Relative_Entropy.md | 416 | ✅ Committed | 985add88 |
+| 423 | article1_A1-34_pieces.zip | — | ✅ Committed | 985add88 |
 
 ---
 

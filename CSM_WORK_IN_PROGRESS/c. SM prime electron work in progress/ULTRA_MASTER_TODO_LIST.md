@@ -70,8 +70,8 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A1-30 | Worldline_Stability_Conditions.md | Stability = RH + gap bounds | ✅ Done |
 | A1-31 | Worldline_Entanglement_Entropy.md | S = -Tr(ρ log ρ) from gaps | ✅ Done |
 | A1-32 | Worldline_Renyi_Entropies.md | S_n = (1/(1-n))log Tr(ρ^n) | ✅ Done |
-| A1-33 | Worldline_Modular_Hamiltonian.md | K = -log ρ from gaps | ⏳ |
-| A1-34 | Worldline_Relative_Entropy.md | S(ρ||σ) from gap ratios | ⏳ |
+| A1-33 | Worldline_Modular_Hamiltonian.md | K = -log ρ from gaps | ✅ Done |
+| A1-34 | Worldline_Relative_Entropy.md | S(ρ||σ) from gap ratios | ✅ Done |
 | A1-35 | Worldline_Quantum_Error_Correction.md | Twin primes = [[256,1,3]] code | ⏳ |
 | A1-36 | Worldline_Decoupling_Limits.md | Heavy gaps decouple = EFT | ⏳ |
 | A1-37 | Worldline_Emergent_Spacetime.md | Spacetime from gap network | ⏳ |
@@ -257,15 +257,15 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-32 COMPLETE
+## CURRENT STATUS: PHASE 0 COMPLETE — ARTICLE 1 A1-34 COMPLETE
 
-**Next Action:** Create Article 1 file A1-33: Worldline_Modular_Hamiltonian.md, 350+ lines
+**Next Action:** Create Article 1 file A1-35: Worldline_Quantum_Error_Correction.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913
 git checkout session/prime-electron-research-360
-# Continue with Article 1: A1-33 Worldline_Modular_Hamiltonian.md
+# Continue with Article 1: A1-35 Worldline_Quantum_Error_Correction.md
 ```
 
 ---
