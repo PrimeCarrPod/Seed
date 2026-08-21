@@ -1,0 +1,23 @@
+# Piece 01: Introduction — Supercharge Operators from Prime Gap Pairs
+
+The N=1 supersymmetry algebra established in A1-25 rests on the geometric mean structure of adjacent prime gaps. From A1-25 Piece 02, the supercharge takes the form
+
+$$
+Q = \sum_{n=1}^{N-1} \psi_n \sqrt{d_n d_{n+1}}, \qquad Q^\dagger = \sum_{n=1}^{N-1} \psi_n^\dagger \sqrt{d_n d_{n+1}}
+$$
+
+where $\psi_n, \psi_n^\dagger$ are fermionic creation/annihilation operators satisfying the Clifford algebra $\{\psi_n, \psi_m^\dagger\} = \delta_{nm}$, $\{\psi_n, \psi_m\} = \{\psi_n^\dagger, \psi_m^\dagger\} = 0$, and $d_n = p_{n+1} - p_n$ are the prime gaps from PrimeBookOne Tile 0.0.
+
+The geometric mean $\sqrt{d_n d_{n+1}}$ emerges naturally from the index theorem of A1-24: the central charge $Z = \text{Index}(D_\tau) = \sum_n \text{sign}(d_n - \langle d \rangle) = 78$ counts record gaps, and the supercharge must pair adjacent gaps to preserve this topological invariant. The weight $\sqrt{d_n d_{n+1}}$ ensures the SUSY algebra $\{Q, Q^\dagger\} = 2H + Z$ closes with Hamiltonian $H = \frac{1}{2}\sum_n d_n d_{n+1}$ (A1-25 Piece 03) and central charge $Z=78$.
+
+Two supercharges exist: $Q$ (charge +1, lowers fermion number) and $Q^\dagger$ (charge -1, raises fermion number). They map between the 128|128 chiral sectors of the 8-bit Hilbert space (A1-25 Piece 05). The grading operator $(-1)^F = \prod_n (1 - 2\psi_n^\dagger \psi_n)$ satisfies $(-1)^F Q (-1)^F = -Q$, confirming $Q$ is odd.
+
+From A1-03, the double cover SU(2) spin structure arises from the "multiply by two" map on gap pairs: each gap pair $(d_n, d_{n+1})$ contributes spin-1/2. The supercharge $Q$ flips chirality and time direction (A1-25 Piece 08), identifying electron/positron as superpartners: $Q|e^-\rangle = |e^+\rangle$. This piece sets up the explicit computation of the SUSY algebra in Piece 04.
+
+**Mathematical foundation from previous articles:**
+
+The supercharge construction draws on the entire mathematical framework of Article 1. From A1-01, proper time quantization $\Delta\tau_n = \kappa d_n$ maps gaps to time intervals. From A1-02, topological winding numbers $Q = \frac{1}{2\pi}\sum \Delta\theta_n$ give the instanton charge. From A1-03, the double cover SU(2) gives spin-1/2 from gap pair structure. From A1-04, Riemann zeros $\gamma_n$ appear as worldline resonance frequencies. From A1-05, the Riemann Hypothesis is equivalent to worldline stability. From A1-06, prime numbers $p_n$ are vertex interaction points. From A1-07, forward/backward time orientation gives $e^-/e^+$. From A1-08, the proper time fluctuation spectrum derives from gap distribution. From A1-09, Compton scale emerges from 3.67B prime steps. From A1-10, 3500 PrimeBookOne books correspond to 3500 worldline segments. From A1-11, self-intersection topology $\gamma(\tau_n) = \gamma(\tau_m)$ is encoded in gap coincidences. From A1-12, the proper time operator $\hat{\tau}$ has spectral asymmetry equal to the index. From A1-13, causal structure light cones come from gap sequence ordering. From A1-14, the metric $g_{\mu\nu}$ derives from prime gap statistics. From A1-15, the geodesic equation $d^2x/d\tau^2 = f(d_n)$ governs worldline evolution. From A1-16, the action principle $S = \sum d_n L(d_n)$ generates equations of motion. From A1-17, the Hamiltonian $H = \hbar/\kappa \sum d_n^{-1}$ governs proper time evolution. From A1-18, the path integral $\int \mathcal{D}[x] e^{iS/\hbar}$ quantizes the worldline. From A1-19, instanton solutions tunnel between gap classes. From A1-20, topological charge $Q = \frac{1}{2\pi}\oint d\tau \text{Tr}(F \wedge F)$. From A1-21, winding sectors decompose by gap sequences. From A1-22, UV/IR boundary conditions come from directory 0.0 and 3.0. From A1-23, anomaly inflow equals the gap index theorem with coefficient 16896. From A1-24, the index theorem gives $\text{Index}(D_\tau) = 78$ via four independent proofs. From A1-25, N=1 SUSY algebra $\{Q, Q^\dagger\} = 2H + Z$ with $Z=78$, 128|128 chiral split, IR/UV duality, and Goldstino from bit-7 chirality.
+
+**PrimeBookOne data grounding:**
+
+PrimeBookOne Tile 0.0 contains 94,500 prime gaps from the first 189 tiles × 500 differences. The gaps range from $d=2$ (twin primes) to $d=86$ (maximum in 0.0 directory). The local mean $\langle d \rangle_n \approx \log p_n$ varies slowly. The 14 record gaps in directory 0.0 occur at $d = 2, 4, 6, 8, 14, 18, 20, 22, 34, 36, 44, 52, 72, 86$. The geometric mean weights $w_n = \sqrt{d_n d_{n+1}}$ for these record gap pairs range from $\sqrt{2\cdot2}=2$ to $\sqrt{72\cdot86}\approx 78.7$. The supercharge matrix elements are therefore completely determined by the prime gap data with no free parameters.
