@@ -160,6 +160,30 @@
 - Zipped: article1_A1-27_pieces.zip
 - All committed and pushed (commit 8377b5a3)
 
+### 2026-08-21T01:10:00Z — Article 1 A1-28 Complete
+- Created 12 pieces for A1-28: Worldline_BPS_States
+- Concatenated: 367 lines (≥350 target)
+- Zipped: article1_A1-28_pieces.zip
+- All committed and pushed (commit bbe7e299)
+
+### 2026-08-21T01:25:00Z — Article 1 A1-29 Complete
+- Created 12 pieces for A1-29: Worldline_Wall_Crossing
+- Concatenated: 411 lines (≥350 target)
+- Zipped: article1_A1-29_pieces.zip
+- All committed and pushed (commit 1ed02041)
+
+### 2026-08-21T01:35:00Z — Article 1 A1-30 Complete
+- Created 12 pieces for A1-30: Worldline_Stability_Conditions
+- Concatenated: 482 lines (≥350 target)
+- Zipped: article1_A1-30_pieces.zip
+- All committed and pushed (commit e10f0ea1)
+
+### 2026-08-21T01:40:00Z — Article 1 A1-31 Complete
+- Created 12 pieces for A1-31: Worldline_Entanglement_Entropy
+- Concatenated: 533 lines (≥350 target)
+- Zipped: article1_A1-31_pieces.zip
+- All committed and pushed (commit ed7aca35)
+
 ---
 
 ## FILE CREATION LOG (This Session)
@@ -491,6 +515,62 @@
 | 323 | article1_A1-27_piece_12.md | 99 | ✅ Committed | 8377b5a3 |
 | 324 | A1-27_Worldline_Superalgebra.md | 502 | ✅ Committed | 8377b5a3 |
 | 325 | article1_A1-27_pieces.zip | — | ✅ Committed | 8377b5a3 |
+| 326 | article1_A1-28_piece_01.md | 52 | ✅ Committed | bbe7e299 |
+| 327 | article1_A1-28_piece_02.md | 54 | ✅ Committed | bbe7e299 |
+| 328 | article1_A1-28_piece_03.md | 48 | ✅ Committed | bbe7e299 |
+| 329 | article1_A1-28_piece_04.md | 53 | ✅ Committed | bbe7e299 |
+| 330 | article1_A1-28_piece_05.md | 54 | ✅ Committed | bbe7e299 |
+| 331 | article1_A1-28_piece_06.md | 48 | ✅ Committed | bbe7e299 |
+| 332 | article1_A1-28_piece_07.md | 54 | ✅ Committed | bbe7e299 |
+| 333 | article1_A1-28_piece_08.md | 55 | ✅ Committed | bbe7e299 |
+| 334 | article1_A1-28_piece_09.md | 48 | ✅ Committed | bbe7e299 |
+| 335 | article1_A1-28_piece_10.md | 55 | ✅ Committed | bbe7e299 |
+| 336 | article1_A1-28_piece_11.md | 56 | ✅ Committed | bbe7e299 |
+| 337 | article1_A1-28_piece_12.md | 82 | ✅ Committed | bbe7e299 |
+| 338 | A1-28_Worldline_BPS_States.md | 367 | ✅ Committed | bbe7e299 |
+| 339 | article1_A1-28_pieces.zip | — | ✅ Committed | bbe7e299 |
+| 340 | article1_A1-29_piece_01.md | 54 | ✅ Committed | 1ed02041 |
+| 341 | article1_A1-29_piece_02.md | 56 | ✅ Committed | 1ed02041 |
+| 342 | article1_A1-29_piece_03.md | 53 | ✅ Committed | 1ed02041 |
+| 343 | article1_A1-29_piece_04.md | 54 | ✅ Committed | 1ed02041 |
+| 344 | article1_A1-29_piece_05.md | 55 | ✅ Committed | 1ed02041 |
+| 345 | article1_A1-29_piece_06.md | 57 | ✅ Committed | 1ed02041 |
+| 346 | article1_A1-29_piece_07.md | 55 | ✅ Committed | 1ed02041 |
+| 347 | article1_A1-29_piece_08.md | 54 | ✅ Committed | 1ed02041 |
+| 348 | article1_A1-29_piece_09.md | 55 | ✅ Committed | 1ed02041 |
+| 349 | article1_A1-29_piece_10.md | 54 | ✅ Committed | 1ed02041 |
+| 350 | article1_A1-29_piece_11.md | 54 | ✅ Committed | 1ed02041 |
+| 351 | article1_A1-29_piece_12.md | 83 | ✅ Committed | 1ed02041 |
+| 352 | A1-29_Worldline_Wall_Crossing.md | 411 | ✅ Committed | 1ed02041 |
+| 353 | article1_A1-29_pieces.zip | — | ✅ Committed | 1ed02041 |
+| 354 | article1_A1-30_piece_01.md | 54 | ✅ Committed | e10f0ea1 |
+| 355 | article1_A1-30_piece_02.md | 54 | ✅ Committed | e10f0ea1 |
+| 356 | article1_A1-30_piece_03.md | 52 | ✅ Committed | e10f0ea1 |
+| 357 | article1_A1-30_piece_04.md | 55 | ✅ Committed | e10f0ea1 |
+| 358 | article1_A1-30_piece_05.md | 56 | ✅ Committed | e10f0ea1 |
+| 359 | article1_A1-30_piece_06.md | 55 | ✅ Committed | e10f0ea1 |
+| 360 | article1_A1-30_piece_07.md | 54 | ✅ Committed | e10f0ea1 |
+| 361 | article1_A1-30_piece_08.md | 55 | ✅ Committed | e10f0ea1 |
+| 362 | article1_A1-30_piece_09.md | 54 | ✅ Committed | e10f0ea1 |
+| 363 | article1_A1-30_piece_10.md | 55 | ✅ Committed | e10f0ea1 |
+| 364 | article1_A1-30_piece_11.md | 54 | ✅ Committed | e10f0ea1 |
+| 365 | article1_A1-30_piece_12.md | 84 | ✅ Committed | e10f0ea1 |
+| 366 | A1-30_Worldline_Stability_Conditions.md | 482 | ✅ Committed | e10f0ea1 |
+| 367 | article1_A1-30_pieces.zip | — | ✅ Committed | e10f0ea1 |
+| 368 | article1_A1-31_piece_01.md | 55 | ✅ Committed | ed7aca35 |
+| 369 | article1_A1-31_piece_02.md | 54 | ✅ Committed | ed7aca35 |
+| 370 | article1_A1-31_piece_03.md | 53 | ✅ Committed | ed7aca35 |
+| 371 | article1_A1-31_piece_04.md | 54 | ✅ Committed | ed7aca35 |
+| 372 | article1_A1-31_piece_05.md | 55 | ✅ Committed | ed7aca35 |
+| 373 | article1_A1-31_piece_06.md | 52 | ✅ Committed | ed7aca35 |
+| 374 | article1_A1-31_piece_07.md | 53 | ✅ Committed | ed7aca35 |
+| 375 | article1_A1-31_piece_08.md | 53 | ✅ Committed | ed7aca35 |
+| 376 | article1_A1-31_piece_09.md | 53 | ✅ Committed | ed7aca35 |
+| 377 | article1_A1-31_piece_10.md | 53 | ✅ Committed | ed7aca35 |
+| 378 | article1_A1-31_piece_11.md | 53 | ✅ Committed | ed7aca35 |
+| 379 | article1_A1-31_piece_12.md | 91 | ✅ Committed | ed7aca35 |
+| 380 | A1-31_Worldline_Entanglement_Entropy.md | 533 | ✅ Committed | ed7aca35 |
+| 381 | article1_A1-31_pieces.zip | — | ✅ Committed | ed7aca35 |
 
 ---
 
