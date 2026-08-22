@@ -1,21 +1,21 @@
 #!/bin/bash
 # ============================================================
-# build.sh — No-Gradle APK Build for Bounce v1.0.91
-# Bluetooth 3D Spatial RSSI Tracking — Manual Update Button
+# build.sh — No-Gradle APK Build for Bounce v1.0.92
+# Bluetooth 3D Spatial RSSI Tracking — EKF Bug Fix (vy init)
 # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
 # ============================================================
 set -e
 
 PACKAGE="com.carrpod.bounce"
 APP_NAME="Bounce"
-VERSION_CODE=191
-VERSION_NAME="1.0.91"
+VERSION_CODE=192
+VERSION_NAME="1.0.92"
 COMPILE_SDK=33
 TARGET_SDK=33
 MIN_SDK=24
 BUILD_TOOLS_VERSION="33.0.1"
 
-PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5744dc84-1fbd-4568-abf3-5c49c84e9c4b/CSMApps/Bounce/v1.0.91"
+PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_2a545c22-26f2-47df-941f-046e37538a32/CSM_WORK_IN_PROGRESS/BOUNCE.WIP/v1.0.91"
 SRC_DIR="$PROJECT_DIR/src/main"
 GEN_DIR="$PROJECT_DIR/gen"
 OBJ_DIR="$PROJECT_DIR/obj"

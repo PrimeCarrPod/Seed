@@ -1,5 +1,5 @@
 # BOUNCE ULTRA MASTER FEATURE LIST
-**Version:** 1.0.91 (Current Working Version)  
+**Version:** 1.0.92 (Current Working Version)  
 **Date:** 2026-08-22  
 **Source:** PrimeCarrPod/Seed → CSMApps/Bounce/  
 **Branch:** session/bounce-versioning-august-2026
@@ -196,7 +196,7 @@
 ### P0 — Critical Fixes
 | ID | Enhancement | Description | Effort | Module |
 |----|-------------|-------------|--------|--------|
-| P0-01 | Fix EKF Velocity Bug | Line 38: `x[2] = 0; x[2] = 0;` → `x[3] = 0` for vy | Low | PositionEKF.java:38 |
+| P0-01 | Fix EKF Velocity Bug | Line 38: `x[2] = 0; x[2] = 0;` → `x[3] = 0` for vy | ✅ **DONE** | PositionEKF.java:38 |
 | P0-02 | Complete RTT Ranging | Implement WifiRttManager API for 802.11mc FTM | High | WifiRttRanging.java |
 | P0-03 | AP Position Self-Calibration | Learn AP positions from trilateration + movement | High | MainActivity.java, Trilateration.java |
 
@@ -270,7 +270,8 @@
 | 1.0.63 | — | Wake lock background |
 | 1.0.64 | — | FAA METAR + Slot 3 |
 | 1.0.87 | — | BT 3D Spatial + Theory Mode |
-| **1.0.91** | **2026-08** | **Current: BT 3D Spatial RSSI + Manual Update** |
+| 1.0.91 | 2026-08 | Current: BT 3D Spatial RSSI + Manual Update |
+| **1.0.92** | **2026-08** | **EKF Bug Fix: vy initialization (P0-01)** |
 
 ---
 
@@ -278,7 +279,7 @@
 
 ```
 v1.0.91/
-├── build.sh                      (109 lines — build pipeline)
+├── build.sh                      (109 lines — build pipeline, updated for v1.0.92)
 ├── src/main/
 │   ├── AndroidManifest.xml       (43 lines — 15 permissions)
 │   ├── java/com/carrpod/bounce/
@@ -286,7 +287,7 @@ v1.0.91/
 │   │   └── wifi/
 │   │       ├── RssiKalmanFilter.java    (64 lines)
 │   │       ├── Trilateration.java       (257 lines)
-│   │       ├── PositionEKF.java         (302 lines)
+│   │       ├── PositionEKF.java         (302 lines) ← **FIXED: line 38**
 │   │       ├── ParticleFilter.java      (322 lines)
 │   │       ├── ZoneHMM.java             (287 lines)
 │   │       └── WifiRttRanging.java      (119 lines)
@@ -297,7 +298,7 @@ v1.0.91/
 ├── gen/                          (generated R.java)
 ├── obj/                          (compiled .class, resources.zip, classes.dex)
 └── out/
-    └── Bounce-v1.0.91.apk        (~201 KB signed)
+    └── Bounce-v1.0.92.apk        (~201 KB signed) ← **Next build target**
 ```
 
 ---
@@ -315,7 +316,7 @@ cd CSM_WORK_IN_PROGRESS/BOUNCE.WIP/v1.0.91
 bash build.sh
 
 # 4. Install APK
-adb install out/Bounce-v1.0.91.apk
+adb install out/Bounce-v1.0.92.apk
 
 # 5. Or examine source
 cat src/main/java/com/carrpod/bounce/MainActivity.java

@@ -35,7 +35,7 @@ public class PositionEKF {
         x[0] = 0;  // x
         x[1] = 0;  // y
         x[2] = 0;  // vx
-        x[2] = 0;  // vy (wait, this should be x[3])
+        x[3] = 0;  // vy
         
         // Initialize covariance - high uncertainty initially
         for (int i = 0; i < 4; i++) {
