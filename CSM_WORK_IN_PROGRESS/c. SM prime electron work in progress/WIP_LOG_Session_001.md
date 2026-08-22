@@ -1295,5 +1295,34 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 | 870 | A3-04_Unitarity_From_Prime_Distribution.md | 1317 | ✅ Committed | 000d99c0 |
 | 871 | article3_A3-04_pieces.zip | — | ✅ Committed | 000d99c0 |
 
+### 2026-08-22T15:22:00Z — Article 3 A3-05 Complete
+- Created 12 pieces for A3-05: Entanglement_From_Gap_Correlations
+- Concatenated: 1112 lines (≥350 target)
+- Zipped: article3_A3-05_pieces.zip
+- All committed and pushed (commit da1083b2)
+| 872 | article3_A3-05_piece_01.md | 102 | ✅ Committed | da1083b2 |
+| 873 | article3_A3-05_piece_02.md | 135 | ✅ Committed | da1083b2 |
+| 874 | article3_A3-05_piece_03.md | 122 | ✅ Committed | da1083b2 |
+| 875 | article3_A3-05_piece_04.md | 110 | ✅ Committed | da1083b2 |
+| 876 | article3_A3-05_piece_05.md | 142 | ✅ Committed | da1083b2 |
+| 877 | article3_A3-05_piece_06.md | 105 | ✅ Committed | da1083b2 |
+| 878 | article3_A3-05_piece_07.md | 148 | ✅ Committed | da1083b2 |
+| 879 | article3_A3-05_piece_08.md | 131 | ✅ Committed | da1083b2 |
+| 880 | article3_A3-05_piece_09.md | 115 | ✅ Committed | da1083b2 |
+| 881 | article3_A3-05_piece_10.md | 118 | ✅ Committed | da1083b2 |
+| 882 | article3_A3-05_piece_11.md | 132 | ✅ Committed | da1083b2 |
+| 883 | article3_A3-05_piece_12.md | 248 | ✅ Committed | da1083b2 |
+| 884 | A3-05_Entanglement_From_Gap_Correlations.md | 1112 | ✅ Committed | da1083b2 |
+| 885 | article3_A3-05_pieces.zip | — | ✅ Committed | da1083b2 |
+
+---
+
+### Article 3 Running Total: 5 files, ~6086 lines
+- A3-01: Hilbert_Space_Dimension_256.md (1117 lines) ✅
+- A3-02: Time_Evolution_Operator.md (1156 lines) ✅
+- A3-03: Prime_Difference_Basis.md (1384 lines) ✅
+- A3-04: Unitarity_From_Prime_Distribution.md (1317 lines) ✅
+- A3-05: Entanglement_From_Gap_Correlations.md (1112 lines) ✅ **NEW**
+
 ---
 
