@@ -1115,3 +1115,43 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 | 744 | A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling.md | 558 | ✅ Committed | b382dd3d |
 | 745 | article2_A2-17_pieces.zip | — | ✅ Committed | b382dd3d |
 
+### 2026-08-22T02:30:00Z — Article 2 A2-18 Complete
+- Created 12 pieces for A2-18: Flavor_Violating_Baryon_Decays
+- Concatenated: 667 lines (≥350 target)
+- Zipped: article2_A2-18_pieces.zip
+- All committed and pushed (commit 1df4617b)
+| 746 | article2_A2-18_piece_01.md | 35 | ✅ Committed | 1df4617b |
+| 747 | article2_A2-18_piece_02.md | 35 | ✅ Committed | 1df4617b |
+| 748 | article2_A2-18_piece_03.md | 35 | ✅ Committed | 1df4617b |
+| 749 | article2_A2-18_piece_04.md | 35 | ✅ Committed | 1df4617b |
+| 750 | article2_A2-18_piece_05.md | 35 | ✅ Committed | 1df4617b |
+| 751 | article2_A2-18_piece_06.md | 35 | ✅ Committed | 1df4617b |
+| 752 | article2_A2-18_piece_07.md | 35 | ✅ Committed | 1df4617b |
+| 753 | article2_A2-18_piece_08.md | 35 | ✅ Committed | 1df4617b |
+| 754 | article2_A2-18_piece_09.md | 35 | ✅ Committed | 1df4617b |
+| 755 | article2_A2-18_piece_10.md | 35 | ✅ Committed | 1df4617b |
+| 756 | article2_A2-18_piece_11.md | 35 | ✅ Committed | 1df4617b |
+| 757 | article2_A2-18_piece_12.md | 35 | ✅ Committed | 1df4617b |
+| 758 | A2-18_Flavor_Violating_Baryon_Decays.md | 667 | ✅ Committed | 1df4617b |
+| 759 | article2_A2-18_pieces.zip | — | ✅ Committed | 1df4617b |
+
+### 2026-08-22T02:35:00Z — Article 2 A2-19 Complete
+- Created 12 pieces for A2-19: Baryon_Number_Violation_In_Collisions
+- Concatenated: 1049 lines (≥350 target)
+- Zipped: article2_A2-19_pieces.zip
+- All committed and pushed (commit 12c31022)
+| 760 | article2_A2-19_piece_01.md | 35 | ✅ Committed | 12c31022 |
+| 761 | article2_A2-19_piece_02.md | 35 | ✅ Committed | 12c31022 |
+| 762 | article2_A2-19_piece_03.md | 35 | ✅ Committed | 12c31022 |
+| 763 | article2_A2-19_piece_04.md | 35 | ✅ Committed | 12c31022 |
+| 764 | article2_A2-19_piece_05.md | 35 | ✅ Committed | 12c31022 |
+| 765 | article2_A2-19_piece_06.md | 35 | ✅ Committed | 12c31022 |
+| 766 | article2_A2-19_piece_07.md | 35 | ✅ Committed | 12c31022 |
+| 767 | article2_A2-19_piece_08.md | 35 | ✅ Committed | 12c31022 |
+| 768 | article2_A2-19_piece_09.md | 35 | ✅ Committed | 12c31022 |
+| 769 | article2_A2-19_piece_10.md | 35 | ✅ Committed | 12c31022 |
+| 770 | article2_A2-19_piece_11.md | 35 | ✅ Committed | 12c31022 |
+| 771 | article2_A2-19_piece_12.md | 35 | ✅ Committed | 12c31022 |
+| 772 | A2-19_Baryon_Number_Violation_In_Collisions.md | 1049 | ✅ Committed | 12c31022 |
+| 773 | article2_A2-19_pieces.zip | — | ✅ Committed | 12c31022 |
+
