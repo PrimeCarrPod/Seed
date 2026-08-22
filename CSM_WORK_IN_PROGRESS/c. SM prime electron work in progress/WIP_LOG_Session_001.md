@@ -1115,3 +1115,63 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 | 744 | A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling.md | 558 | ✅ Committed | b382dd3d |
 | 745 | article2_A2-17_pieces.zip | — | ✅ Committed | b382dd3d |
 
+### 2026-08-22T02:30:00Z — Article 2 A2-18 Complete
+- Created 12 pieces for A2-18: Flavor_Violating_Baryon_Decays
+- Concatenated: 663 lines (≥350 target)
+- Zipped: article2_A2-18_pieces.zip
+- All committed and pushed (commit f10fe3ee)
+| 746 | article2_A2-18_piece_01.md | 35 | ✅ Committed | f10fe3ee |
+| 747 | article2_A2-18_piece_02.md | 35 | ✅ Committed | f10fe3ee |
+| 748 | article2_A2-18_piece_03.md | 35 | ✅ Committed | f10fe3ee |
+| 749 | article2_A2-18_piece_04.md | 35 | ✅ Committed | f10fe3ee |
+| 750 | article2_A2-18_piece_05.md | 35 | ✅ Committed | f10fe3ee |
+| 751 | article2_A2-18_piece_06.md | 35 | ✅ Committed | f10fe3ee |
+| 752 | article2_A2-18_piece_07.md | 35 | ✅ Committed | f10fe3ee |
+| 753 | article2_A2-18_piece_08.md | 35 | ✅ Committed | f10fe3ee |
+| 754 | article2_A2-18_piece_09.md | 35 | ✅ Committed | f10fe3ee |
+| 755 | article2_A2-18_piece_10.md | 35 | ✅ Committed | f10fe3ee |
+| 756 | article2_A2-18_piece_11.md | 35 | ✅ Committed | f10fe3ee |
+| 757 | article2_A2-18_piece_12.md | 35 | ✅ Committed | f10fe3ee |
+| 758 | A2-18_Flavor_Violating_Baryon_Decays.md | 663 | ✅ Committed | f10fe3ee |
+| 759 | article2_A2-18_pieces.zip | — | ✅ Committed | f10fe3ee |
+
+### 2026-08-22T02:45:00Z — Article 2 A2-19 Complete
+- Created 12 pieces for A2-19: Baryon_Number_Violation_In_Collisions
+- Concatenated: 617 lines (≥350 target)
+- Zipped: article2_A2-19_pieces.zip
+- All committed and pushed (commit 6b214ebc)
+| 760 | article2_A2-19_piece_01.md | 35 | ✅ Committed | 6b214ebc |
+| 761 | article2_A2-19_piece_02.md | 35 | ✅ Committed | 6b214ebc |
+| 762 | article2_A2-19_piece_03.md | 35 | ✅ Committed | 6b214ebc |
+| 763 | article2_A2-19_piece_04.md | 35 | ✅ Committed | 6b214ebc |
+| 764 | article2_A2-19_piece_05.md | 35 | ✅ Committed | 6b214ebc |
+| 765 | article2_A2-19_piece_06.md | 35 | ✅ Committed | 6b214ebc |
+| 766 | article2_A2-19_piece_07.md | 35 | ✅ Committed | 6b214ebc |
+| 767 | article2_A2-19_piece_08.md | 35 | ✅ Committed | 6b214ebc |
+| 768 | article2_A2-19_piece_09.md | 35 | ✅ Committed | 6b214ebc |
+| 769 | article2_A2-19_piece_10.md | 35 | ✅ Committed | 6b214ebc |
+| 770 | article2_A2-19_piece_11.md | 35 | ✅ Committed | 6b214ebc |
+| 771 | article2_A2-19_piece_12.md | 35 | ✅ Committed | 6b214ebc |
+| 772 | A2-19_Baryon_Number_Violation_In_Collisions.md | 617 | ✅ Committed | 6b214ebc |
+| 773 | article2_A2-19_pieces.zip | — | ✅ Committed | 6b214ebc |
+
+### 2026-08-22T03:00:00Z — Article 2 A2-20 Complete
+- Created 12 pieces for A2-20: Sterile_Neutrino_From_Missing_Gaps
+- Concatenated: 802 lines (≥350 target)
+- Zipped: article2_A2-20_pieces.zip
+- All committed and pushed (commit 0a92f062)
+| 774 | article2_A2-20_piece_01.md | 35 | ✅ Committed | 0a92f062 |
+| 775 | article2_A2-20_piece_02.md | 35 | ✅ Committed | 0a92f062 |
+| 776 | article2_A2-20_piece_03.md | 35 | ✅ Committed | 0a92f062 |
+| 777 | article2_A2-20_piece_04.md | 35 | ✅ Committed | 0a92f062 |
+| 778 | article2_A2-20_piece_05.md | 35 | ✅ Committed | 0a92f062 |
+| 779 | article2_A2-20_piece_06.md | 35 | ✅ Committed | 0a92f062 |
+| 780 | article2_A2-20_piece_07.md | 35 | ✅ Committed | 0a92f062 |
+| 781 | article2_A2-20_piece_08.md | 35 | ✅ Committed | 0a92f062 |
+| 782 | article2_A2-20_piece_09.md | 35 | ✅ Committed | 0a92f062 |
+| 783 | article2_A2-20_piece_10.md | 35 | ✅ Committed | 0a92f062 |
+| 784 | article2_A2-20_piece_11.md | 35 | ✅ Committed | 0a92f062 |
+| 785 | article2_A2-20_piece_12.md | 35 | ✅ Committed | 0a92f062 |
+| 786 | A2-20_Sterile_Neutrino_From_Missing_Gaps.md | 802 | ✅ Committed | 0a92f062 |
+| 787 | article2_A2-20_pieces.zip | — | ✅ Committed | 0a92f062 |
+
