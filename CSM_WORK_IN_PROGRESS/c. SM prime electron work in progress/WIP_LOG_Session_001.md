@@ -1075,3 +1075,43 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 | 716 | A2-15_Dark_Matter_From_Missing_Gaps.md | 429 | ✅ Committed | 12e7db23 |
 | 717 | article2_A2-15_pieces.zip | — | ✅ Committed | 12e7db23 |
 
+### 2026-08-22T01:30:00Z — Article 2 A2-16 Complete
+- Created 12 pieces for A2-16: Baryon_Asymmetry_From_Worldline_Orientation
+- Concatenated: 356 lines (≥350 target)
+- Zipped: article2_A2-16_pieces.zip
+- All committed and pushed (commit 5890d7b3)
+| 718 | article2_A2-16_piece_01.md | 35 | ✅ Committed | 5890d7b3 |
+| 719 | article2_A2-16_piece_02.md | 35 | ✅ Committed | 5890d7b3 |
+| 720 | article2_A2-16_piece_03.md | 35 | ✅ Committed | 5890d7b3 |
+| 721 | article2_A2-16_piece_04.md | 35 | ✅ Committed | 5890d7b3 |
+| 722 | article2_A2-16_piece_05.md | 35 | ✅ Committed | 5890d7b3 |
+| 723 | article2_A2-16_piece_06.md | 35 | ✅ Committed | 5890d7b3 |
+| 724 | article2_A2-16_piece_07.md | 35 | ✅ Committed | 5890d7b3 |
+| 725 | article2_A2-16_piece_08.md | 35 | ✅ Committed | 5890d7b3 |
+| 726 | article2_A2-16_piece_09.md | 35 | ✅ Committed | 5890d7b3 |
+| 727 | article2_A2-16_piece_10.md | 35 | ✅ Committed | 5890d7b3 |
+| 728 | article2_A2-16_piece_11.md | 35 | ✅ Committed | 5890d7b3 |
+| 729 | article2_A2-16_piece_12.md | 35 | ✅ Committed | 5890d7b3 |
+| 730 | A2-16_Baryon_Asymmetry_From_Worldline_Orientation.md | 356 | ✅ Committed | 5890d7b3 |
+| 731 | article2_A2-16_pieces.zip | — | ✅ Committed | 5890d7b3 |
+
+### 2026-08-22T02:00:00Z — Article 2 A2-17 Complete
+- Created 12 pieces for A2-17: Neutron_Antineutron_Oscillation_From_Gap_Tunneling
+- Concatenated: 558 lines (≥350 target)
+- Zipped: article2_A2-17_pieces.zip
+- All committed and pushed (commit b382dd3d)
+| 732 | article2_A2-17_piece_01.md | 35 | ✅ Committed | b382dd3d |
+| 733 | article2_A2-17_piece_02.md | 35 | ✅ Committed | b382dd3d |
+| 734 | article2_A2-17_piece_03.md | 35 | ✅ Committed | b382dd3d |
+| 735 | article2_A2-17_piece_04.md | 35 | ✅ Committed | b382dd3d |
+| 736 | article2_A2-17_piece_05.md | 35 | ✅ Committed | b382dd3d |
+| 737 | article2_A2-17_piece_06.md | 35 | ✅ Committed | b382dd3d |
+| 738 | article2_A2-17_piece_07.md | 35 | ✅ Committed | b382dd3d |
+| 739 | article2_A2-17_piece_08.md | 35 | ✅ Committed | b382dd3d |
+| 740 | article2_A2-17_piece_09.md | 35 | ✅ Committed | b382dd3d |
+| 741 | article2_A2-17_piece_10.md | 35 | ✅ Committed | b382dd3d |
+| 742 | article2_A2-17_piece_11.md | 35 | ✅ Committed | b382dd3d |
+| 743 | article2_A2-17_piece_12.md | 35 | ✅ Committed | b382dd3d |
+| 744 | A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling.md | 558 | ✅ Committed | b382dd3d |
+| 745 | article2_A2-17_pieces.zip | — | ✅ Committed | b382dd3d |
+
