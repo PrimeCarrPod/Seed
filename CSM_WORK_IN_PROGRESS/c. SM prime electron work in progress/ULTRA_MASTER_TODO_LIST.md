@@ -102,6 +102,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A2-16 | Baryon_Asymmetry_From_Worldline_Orientation.md | η = forward/backward bias | ✅ Done |
 | A2-17 | Neutron_Antineutron_Oscillation_From_Gap_Tunneling.md | n-n̄ from missing gap d=12 | ✅ Done |
 | A2-18 | Flavor_Violating_Baryon_Decays.md | Λ→nπ⁰, Ξ→Λπ from gap d=18 | ✅ Done |
+| A2-19 | Baryon_Number_Violation_In_Collisions.md | ΔB=2,3 from fold intersections | ✅ Done |
 | A2-40 | Synthesis_Mass_Spectrum.md | Complete mass derivation | ⏳ |
 
 ### Article 3: 8-Bit Hilbert Space & Quantum Evolution (40 files)
@@ -264,9 +265,9 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 A2-01 THROUGH A2-18 COMPLETE
+## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 A2-01 THROUGH A2-19 COMPLETE
 
-**Next Action:** Create Article 2 file A2-19: Baryon_Number_Violation_In_Collisions.md, 350+ lines
+**Next Action:** Create Article 2 file A2-20: Sterile_Neutrino_From_Missing_Gaps.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
@@ -274,8 +275,8 @@ cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_798c5e1f-0afd-
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A2-18_20260822.md
-# Continue with Article 2: A2-19
+cat CSMLogs/august26/RESUME_SESSION_A2-19_20260822.md
+# Continue with Article 2: A2-20
 ```
 
 ---
