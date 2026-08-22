@@ -262,18 +262,18 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 A2-01 THROUGH A2-16 COMPLETE
+## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 A2-01 THROUGH A2-17 COMPLETE
 
-**Next Action:** Create Article 2 file A2-17: Neutron_Antineutron_Oscillation_From_Gap_Tunneling.md, 350+ lines
+**Next Action:** Create Article 2 file A2-18: Flavor_Violating_Baryon_Decays.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ff9ea9f8-4470-40bc-816c-44599dc37c58
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_d52caead-4e9f-4818-b1da-9d6c57257383
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/c.\ SM\ prime\ electron\ work\ in\ progress/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A2-16_20260822.md
-# Continue with Article 2: A2-17
+cat CSMLogs/august26/RESUME_SESSION_A2-17_20260822.md
+# Continue with Article 2: A2-18
 ```
 
 ---
