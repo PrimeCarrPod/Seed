@@ -276,7 +276,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_2d42f956-21c0-42e8-a11e-c51596926788
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_91fa7730-4ad5-4cc3-a1b3-5c7347e744f0
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
