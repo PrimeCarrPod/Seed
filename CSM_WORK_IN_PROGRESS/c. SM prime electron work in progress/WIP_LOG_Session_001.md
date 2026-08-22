@@ -1295,5 +1295,76 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 | 870 | A3-04_Unitarity_From_Prime_Distribution.md | 1317 | ✅ Committed | 000d99c0 |
 | 871 | article3_A3-04_pieces.zip | — | ✅ Committed | 000d99c0 |
 
+### 2026-08-22T15:22:00Z — Article 3 A3-05 Complete
+- Created 12 pieces for A3-05: Entanglement_From_Gap_Correlations
+- Concatenated: 1112 lines (≥350 target)
+- Zipped: article3_A3-05_pieces.zip
+- All committed and pushed (commit da1083b2)
+| 872 | article3_A3-05_piece_01.md | 102 | ✅ Committed | da1083b2 |
+| 873 | article3_A3-05_piece_02.md | 135 | ✅ Committed | da1083b2 |
+| 874 | article3_A3-05_piece_03.md | 122 | ✅ Committed | da1083b2 |
+| 875 | article3_A3-05_piece_04.md | 110 | ✅ Committed | da1083b2 |
+| 876 | article3_A3-05_piece_05.md | 142 | ✅ Committed | da1083b2 |
+| 877 | article3_A3-05_piece_06.md | 105 | ✅ Committed | da1083b2 |
+| 878 | article3_A3-05_piece_07.md | 148 | ✅ Committed | da1083b2 |
+| 879 | article3_A3-05_piece_08.md | 131 | ✅ Committed | da1083b2 |
+| 880 | article3_A3-05_piece_09.md | 115 | ✅ Committed | da1083b2 |
+| 881 | article3_A3-05_piece_10.md | 118 | ✅ Committed | da1083b2 |
+| 882 | article3_A3-05_piece_11.md | 132 | ✅ Committed | da1083b2 |
+| 883 | article3_A3-05_piece_12.md | 248 | ✅ Committed | da1083b2 |
+| 884 | A3-05_Entanglement_From_Gap_Correlations.md | 1112 | ✅ Committed | da1083b2 |
+| 885 | article3_A3-05_pieces.zip | — | ✅ Committed | da1083b2 |
+
+### 2026-08-22T16:10:00Z — Article 3 A3-06 Complete
+- Created 12 pieces for A3-06: Decoherence_From_Gap_Randomness
+- Concatenated: 1275 lines (≥350 target)
+- Zipped: article3_A3-06_pieces.zip
+- All committed and pushed (commit e7395c1d)
+| 886 | article3_A3-06_piece_01.md | 92 | ✅ Committed | e7395c1d |
+| 887 | article3_A3-06_piece_02.md | 138 | ✅ Committed | e7395c1d |
+| 888 | article3_A3-06_piece_03.md | 102 | ✅ Committed | e7395c1d |
+| 889 | article3_A3-06_piece_04.md | 115 | ✅ Committed | e7395c1d |
+| 890 | article3_A3-06_piece_05.md | 145 | ✅ Committed | e7395c1d |
+| 891 | article3_A3-06_piece_06.md | 112 | ✅ Committed | e7395c1d |
+| 892 | article3_A3-06_piece_07.md | 152 | ✅ Committed | e7395c1d |
+| 893 | article3_A3-06_piece_08.md | 118 | ✅ Committed | e7395c1d |
+| 894 | article3_A3-06_piece_09.md | 128 | ✅ Committed | e7395c1d |
+| 895 | article3_A3-06_piece_10.md | 108 | ✅ Committed | e7395c1d |
+| 896 | article3_A3-06_piece_11.md | 105 | ✅ Committed | e7395c1d |
+| 897 | article3_A3-06_piece_12.md | 258 | ✅ Committed | e7395c1d |
+| 898 | A3-06_Decoherence_From_Gap_Randomness.md | 1275 | ✅ Committed | e7395c1d |
+| 899 | article3_A3-06_pieces.zip | — | ✅ Committed | e7395c1d |
+
+### 2026-08-22T17:05:00Z — Article 3 A3-07 Complete
+- Created 12 pieces for A3-07: Quantum_Information_Prime_Book
+- Concatenated: 1186 lines (≥350 target)
+- Zipped: article3_A3-07_pieces.zip
+- All committed and pushed (commit 8580d8e5)
+| 900 | article3_A3-07_piece_01.md | 82 | ✅ Committed | 8580d8e5 |
+| 901 | article3_A3-07_piece_02.md | 112 | ✅ Committed | 8580d8e5 |
+| 902 | article3_A3-07_piece_03.md | 105 | ✅ Committed | 8580d8e5 |
+| 903 | article3_A3-07_piece_04.md | 118 | ✅ Committed | 8580d8e5 |
+| 904 | article3_A3-07_piece_05.md | 122 | ✅ Committed | 8580d8e5 |
+| 905 | article3_A3-07_piece_06.md | 115 | ✅ Committed | 8580d8e5 |
+| 906 | article3_A3-07_piece_07.md | 128 | ✅ Committed | 8580d8e5 |
+| 907 | article3_A3-07_piece_08.md | 112 | ✅ Committed | 8580d8e5 |
+| 908 | article3_A3-07_piece_09.md | 135 | ✅ Committed | 8580d8e5 |
+| 909 | article3_A3-07_piece_10.md | 118 | ✅ Committed | 8580d8e5 |
+| 910 | article3_A3-07_piece_11.md | 108 | ✅ Committed | 8580d8e5 |
+| 911 | article3_A3-07_piece_12.md | 242 | ✅ Committed | 8580d8e5 |
+| 912 | A3-07_Quantum_Information_Prime_Book.md | 1186 | ✅ Committed | 8580d8e5 |
+| 913 | article3_A3-07_pieces.zip | — | ✅ Committed | 8580d8e5 |
+
+---
+
+### Article 3 Running Total: 7 files, ~8547 lines
+- A3-01: Hilbert_Space_Dimension_256.md (1117 lines) ✅
+- A3-02: Time_Evolution_Operator.md (1156 lines) ✅
+- A3-03: Prime_Difference_Basis.md (1384 lines) ✅
+- A3-04: Unitarity_From_Prime_Distribution.md (1317 lines) ✅
+- A3-05: Entanglement_From_Gap_Correlations.md (1112 lines) ✅
+- A3-06: Decoherence_From_Gap_Randomness.md (1275 lines) ✅
+- A3-07: Quantum_Information_Prime_Book.md (1186 lines) ✅ **NEW**
+
 ---
 
