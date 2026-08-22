@@ -1055,3 +1055,23 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 | 702 | A2-14_Proton_Decay_From_Gap_Stability.md | 490 | ✅ Committed | c90bbf4c |
 | 703 | article2_A2-14_pieces.zip | — | ✅ Committed | c90bbf4c |
 
+### 2026-08-22T00:30:00Z — Article 2 A2-15 Complete
+- Created 12 pieces for A2-15: Dark_Matter_From_Missing_Gaps
+- Concatenated: 429 lines (≥350 target)
+- Zipped: article2_A2-15_pieces.zip
+- All committed and pushed (commit 12e7db23)
+| 704 | article2_A2-15_piece_01.md | 35 | ✅ Committed | 12e7db23 |
+| 705 | article2_A2-15_piece_02.md | 35 | ✅ Committed | 12e7db23 |
+| 706 | article2_A2-15_piece_03.md | 35 | ✅ Committed | 12e7db23 |
+| 707 | article2_A2-15_piece_04.md | 35 | ✅ Committed | 12e7db23 |
+| 708 | article2_A2-15_piece_05.md | 35 | ✅ Committed | 12e7db23 |
+| 709 | article2_A2-15_piece_06.md | 35 | ✅ Committed | 12e7db23 |
+| 710 | article2_A2-15_piece_07.md | 35 | ✅ Committed | 12e7db23 |
+| 711 | article2_A2-15_piece_08.md | 35 | ✅ Committed | 12e7db23 |
+| 712 | article2_A2-15_piece_09.md | 35 | ✅ Committed | 12e7db23 |
+| 713 | article2_A2-15_piece_10.md | 35 | ✅ Committed | 12e7db23 |
+| 714 | article2_A2-15_piece_11.md | 35 | ✅ Committed | 12e7db23 |
+| 715 | article2_A2-15_piece_12.md | 35 | ✅ Committed | 12e7db23 |
+| 716 | A2-15_Dark_Matter_From_Missing_Gaps.md | 429 | ✅ Committed | 12e7db23 |
+| 717 | article2_A2-15_pieces.zip | — | ✅ Committed | 12e7db23 |
+
