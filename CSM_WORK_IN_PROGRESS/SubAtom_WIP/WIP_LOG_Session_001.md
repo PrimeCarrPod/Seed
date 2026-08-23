@@ -1865,3 +1865,49 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 
 **Next Action:** Begin Article 3: A3-19 Quantum_Networks_Prime_Gaps.md, 350+ lines
 
+
+### 2026-08-23T00:35:00Z — Article 3 A3-17 Complete
+- Created 12 pieces for A3-17: Quantum_Sensing_Prime_Gaps
+- Concatenated: 353 lines (≥350 target)
+- Zipped: article3_A3-17_pieces.zip
+- All committed and pushed (commit 75e24ad3)
+
+| 1054 | article3_A3-17_piece_01.md | 21 | ✅ Committed | 75e24ad3 |
+| 1055 | article3_A3-17_piece_02.md | 27 | ✅ Committed | 75e24ad3 |
+| 1056 | article3_A3-17_piece_03.md | 25 | ✅ Committed | 75e24ad3 |
+| 1057 | article3_A3-17_piece_04.md | 23 | ✅ Committed | 75e24ad3 |
+| 1058 | article3_A3-17_piece_05.md | 23 | ✅ Committed | 75e24ad3 |
+| 1059 | article3_A3-17_piece_06.md | 25 | ✅ Committed | 75e24ad3 |
+| 1060 | article3_A3-17_piece_07.md | 21 | ✅ Committed | 75e24ad3 |
+| 1061 | article3_A3-17_piece_08.md | 25 | ✅ Committed | 75e24ad3 |
+| 1062 | article3_A3-17_piece_09.md | 32 | ✅ Committed | 75e24ad3 |
+| 1063 | article3_A3-17_piece_10.md | 37 | ✅ Committed | 75e24ad3 |
+| 1064 | article3_A3-17_piece_11.md | 31 | ✅ Committed | 75e24ad3 |
+| 1065 | article3_A3-17_piece_12.md | 63 | ✅ Committed | 75e24ad3 |
+| 1066 | A3-17_Quantum_Sensing_Prime_Gaps.md | 353 | ✅ Committed | 75e24ad3 |
+| 1067 | article3_A3-17_pieces.zip | — | ✅ Committed | 75e24ad3 |
+
+---
+
+## Article 3 Running Total: 18 files, ~16,682 lines
+- A3-01: Hilbert_Space_Dimension_256.md (1117 lines) ✅
+- A3-02: Time_Evolution_Operator.md (1156 lines) ✅
+- A3-03: Prime_Difference_Basis.md (1384 lines) ✅
+- A3-04: Unitarity_From_Prime_Distribution.md (1317 lines) ✅
+- A3-05: Entanglement_From_Gap_Correlations.md (1112 lines) ✅
+- A3-06: Decoherence_From_Gap_Randomness.md (1275 lines) ✅
+- A3-07: Quantum_Information_Prime_Book.md (1186 lines) ✅
+- A3-08: Error_Correction_Twin_Primes.md (1284 lines) ✅
+- A3-09: Bell_Inequalities_Prime_Gaps.md (2893 lines) ✅
+- A3-10: Quantum_Computing_Prime_Algorithm.md (389 lines) ✅
+- A3-11: Quantum_Error_Correction_Prime_Gaps.md (475 lines) ✅
+- A3-12: Quantum_Simulation_Prime_Gaps.md (467 lines) ✅
+- A3-13: Quantum_Machine_Learning_Prime_Gaps.md (351 lines) ✅
+- A3-14: Quantum_Metrology_Prime_Gaps.md (526 lines) ✅
+- A3-15: Quantum_Thermodynamics_Prime_Gaps.md (520 lines) ✅
+- A3-16: Quantum_Control_Prime_Gaps.md (526 lines) ✅
+- A3-17: Quantum_Sensing_Prime_Gaps.md (353 lines) ✅ **NEW**
+- A3-19: Quantum_Networks_Prime_Gaps.md (351 lines) ✅
+
+**Next Action:** Begin Article 3: A3-18 Quantum_Communication_Prime_Gaps.md, 350+ lines
+
