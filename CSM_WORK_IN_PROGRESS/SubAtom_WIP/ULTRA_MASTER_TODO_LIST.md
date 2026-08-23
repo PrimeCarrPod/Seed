@@ -128,6 +128,10 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A3-14 | Quantum_Metrology_Prime_Gaps.md | Prime gaps = metrology platform | ✅ Done |
 | A3-15 | Quantum_Thermodynamics_Prime_Gaps.md | Prime gaps = thermodynamics platform | ✅ Done |
 | A3-16 | Quantum_Control_Prime_Gaps.md | Prime gaps = control platform | ✅ Done |
+| A3-17 | Quantum_Sensing_Prime_Gaps.md | Prime gaps = sensing platform | ⏳ |
+| A3-18 | Quantum_Communication_Prime_Gaps.md | Prime gaps = comm platform | ⏳ |
+| A3-19 | Quantum_Networks_Prime_Gaps.md | Prime gaps = network platform | ✅ Done |
+| A3-20 | Quantum_Internet_Prime_Gaps.md | Prime gaps = internet platform | ⏳ |
 | ... | ... | ... | ⏳ |
 | A3-40 | Synthesis_Hilbert_Space.md | Complete QM from primes | ⏳ |
 
@@ -273,17 +277,17 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 COMPLETE (A2-01 through A2-21, A2-40), ARTICLE 3 (A3-01 through A3-16 complete, 24 remaining)
+## CURRENT STATUS: ARTICLE 1 COMPLETE, ARTICLE 2 COMPLETE (A2-01 through A2-21, A2-40), ARTICLE 3 (A3-01 through A3-16, A3-19 complete, 22 remaining)
 
 **Next Action:** Begin Article 3: A3-17 Quantum_Sensing_Prime_Gaps.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_91fa7730-4ad5-4cc3-a1b3-5c7347e744f0
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_414bb230-9c08-45e0-9e32-3baeabf3d5cb
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3-16_20260822.md
+cat CSMLogs/august26/RESUME_SESSION_A3-19_20260823.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/REPOSITORY_ORGANIZATION_MANIFEST.md
 # Continue with Article 3: A3-17 Quantum_Sensing_Prime_Gaps.md
 ```
@@ -376,17 +380,17 @@ C_Article3_HilbertSpace/       (11 articles completed)
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (22/40), ARTICLE 2 (16/40), ARTICLE 3 (11/40) — REPOSITORY CLEANUP COMPLETE
+## CURRENT STATUS: ARTICLE 1 (22/40), ARTICLE 2 (16/40), ARTICLE 3 (12/40) — REPOSITORY CLEANUP COMPLETE
 
-**Next Action:** Begin Article 3: A3-12 Quantum_Simulation_Prime_Gaps.md, 350+ lines
+**Next Action:** Begin Article 3: A3-17 Quantum_Sensing_Prime_Gaps.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_a31b7278-9087-4825-a3cb-cbb0a0dfb582
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_414bb230-9c08-45e0-9e32-3baeabf3d5cb
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3-09_20260822.md
+cat CSMLogs/august26/RESUME_SESSION_A3-19_20260823.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/REPOSITORY_ORGANIZATION_MANIFEST.md
-# Continue with Article 3: A3-13 Quantum_Machine_Learning_Prime_Gaps.md
+# Continue with Article 3: A3-17 Quantum_Sensing_Prime_Gaps.md
 ```
