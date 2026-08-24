@@ -21,6 +21,9 @@ COMMANDS:
   verify <article_num>                    Verify piece count, concat lines, zip contents
   organize <article_num>                  Copy concat+zip to organized folders
   full-cycle <article_num> <title>        Complete cycle: create, concat, zip, organize, commit
+  commit-push <article_num> <msg>         Commit all files and push to session branch
+  push-session                            Push session branch to origin
+  merge-to-main                           Merge session branch to main (reset + fast-forward)
   list                                    List all article pieces in root
   clean-pieces <article_num>              Remove loose pieces from root (after verify)
 
@@ -30,6 +33,9 @@ EXAMPLES:
   ./GitHub_handler.sh zip-pieces 20
   ./GitHub_handler.sh verify 20
   ./GitHub_handler.sh organize 20
+  ./GitHub_handler.sh commit-push 20 "Add A3-20: Quantum_Internet_Prime_Gaps"
+  ./GitHub_handler.sh push-session
+  ./GitHub_handler.sh merge-to-main
   ./GitHub_handler.sh full-cycle 20 "Quantum_Internet_Prime_Gaps"
 
 EOF
@@ -286,6 +292,53 @@ clean_pieces() {
     echo "Clean complete. Kept: concat file and zip file."
 }
 
+commit_and_push() {
+    local article_num="$1"
+    local msg="$2"
+    if [[ -z "$article_num" || -z "$msg" ]]; then
+        echo "Usage: commit-push <article_num> <message>"
+        exit 1
+    fi
+    local prefix="${ARTICLE_PREFIX}_A3-$(printf "%02d" "$article_num")"
+    
+    echo "Committing A3-$(printf "%02d" "$article_num")..."
+    git add -A
+    git commit -m "$msg"
+    echo "Pushing to session branch..."
+    git push origin session/prime-electron-research-360
+}
+
+push_session() {
+    echo "Pushing session branch to origin..."
+    git push origin session/prime-electron-research-360
+}
+
+merge_to_main() {
+    echo "=== Merging session branch to main ==="
+    
+    # Ensure we're on session branch
+    git checkout session/prime-electron-research-360
+    
+    # Push latest session branch
+    echo "Pushing session branch..."
+    git push origin session/prime-electron-research-360
+    
+    # Switch to main and pull latest
+    echo "Switching to main and pulling latest..."
+    git checkout main
+    git pull origin main
+    
+    # Merge session branch (should be fast-forward if session was reset to main first)
+    echo "Merging session/prime-electron-research-360 into main..."
+    git merge session/prime-electron-research-360 --no-edit
+    
+    # Push to main
+    echo "Pushing to main..."
+    git push origin main
+    
+    echo "=== Merge complete ==="
+}
+
 # Main command dispatch
 case "${1:-help}" in
     create-pieces) create_pieces "$2" "$3" ;;
@@ -301,7 +354,11 @@ case "${1:-help}" in
         echo ">>> ./GitHub_handler.sh zip-pieces $2"
         echo ">>> ./GitHub_handler.sh verify $2"
         echo ">>> ./GitHub_handler.sh organize $2"
+        echo ">>> ./GitHub_handler.sh commit-push $2 \"Add A3-$(printf "%02d" "$2"): $3 - 12 pieces, concat, zip\""
         ;;
+    commit-push) commit_and_push "$2" "$3" ;;
+    push-session) push_session ;;
+    merge-to-main) merge_to_main ;;
     list) list_articles ;;
     clean-pieces) clean_pieces "$2" ;;
     help|*) show_help ;;
