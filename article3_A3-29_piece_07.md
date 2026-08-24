@@ -1,123 +1,90 @@
 # Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 07/12
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 03:17:59 UTC
+**Piece:** 07 of 12
+**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
-# 6. Implementation Roadmap
+### 7.1 Tenant Topology Reconstruction (TTR): From Gap-Range to Tenant State
 
-## 6.1 Phase 1: Foundation (Months 1-12)
+While GCH reconstructs quantum states at individual gap-indices, **Tenant Topology Reconstruction (TTR)** reconstructs the *complete tenant topology*—the mapping from gap-indices to tenant resources (quantum, classical, network, ML, security). TTR is the bridge between gap-level recovery and tenant-level recovery.
 
-### 6.1.1 Standards Development
-- **QIR (Quantum Intermediate Representation) Extension**: Disaster recovery metadata
-- **OpenQASM 4.0**: Syndrome extraction and recovery directives
-- **QCSchema**: Quantum checkpoint/restart serialization format
-- **QFDRA (Quantum Federation Disaster Recovery API)**: REST/gRPC interfaces
+### 7.2 Tenant Topology as Gap-Indexed Resource Map
 
-### 6.1.2 Reference Implementation: QFDR-Core
+A tenant's topology is a structured map:
+Topol_T = { (n, R_n^T) : n in R_T }
+
+Where R_n^T is the **resource descriptor** at gap-index n:
+- R_n^T.quantum: Logical qubits, QEC patches, quantum tasks (A3-28)
+- R_n^T.classical: CPU, memory, storage, network config
+- R_n^T.ml: ML models, training state, feature stores (A3-28)
+- R_n^T.security: Keys, attestations, policies (A3-28)
+- R_n^T.economics: Budget, pricing, market positions (A3-28)
+
+### 7.3 TTR Algorithm: Gap-Parallel Resource Reconstruction
+
 ```
-QFDR-Core Components:
-├── qfdr-topology: Quantum topology manager (G1)
-├── qfdr-flq: Federated logical qubit abstraction (G2)
-├── qfdr-continuity: State continuity verification (G3)
-├── qfdr-consensus: QBFT consensus prototype (G4)
-├── qfdr-transfer: CG-QST protocol implementation (G5)
-├── qfdr-syndrome: FSP syndrome federation (G6)
-├── qfdr-network: QNFP network failover (G7)
-├── qfdr-translate: CMTL translation layer (G8)
-├── qfdr-checkpoint: QCR checkpoint/restart (G9)
-├── qfdr-resource: RAQRM resource manager (G10)
-├── qfdr-test: QDRVF testing framework (G11)
-└── qfdr-governance: QFRG policy engine (G12)
+Input: Surviving GABPs {GABP_n^T}_{n in S}, tenant TRP
+Output: Reconstructed topology {R_m^T}_{m in R_T}
+
+1. RECONSTRUCT QUANTUM STATE: Run GCH (Piece 04) to get {rho_m^T}_{m in R_T}
+2. RECONSTRUCT CLASSICAL METADATA: Merkle interpolation for {M_m^T}
+3. RECONSTRUCT RESOURCE DESCRIPTORS:
+   For each m in R_T in parallel:
+     a. quantum_m = DecodeQuantum(rho_m^T, M_m^T.qec_config)
+     b. classical_m = DecodeClassical(M_m^T.classical)
+     c. ml_m = DecodeML(M_m^T.ml_models, M_m^T.training_state)
+     d. security_m = DecodeSecurity(M_m^T.keys, M_m^T.attestations)
+     e. economics_m = DecodeEconomics(M_m^T.budget, M_m^T.market_state)
+     f. R_m^T = {quantum_m, classical_m, ml_m, security_m, economics_m}
+4. VERIFY TOPOLOGICAL CONSISTENCY:
+   a. Gap-continuity: For all m, R_m^T exists
+   b. Correlation-consistency: For correlated (m,m'), R_m^T ~ R_m'^T
+   c. Tenant-isolation: R_m^T disjoint from other tenants
+   d. TRP-constraints: All C_i satisfied
+5. RETURN {R_m^T}
 ```
 
-### 6.1.3 Testbed Deployment
-- 3-site federation: Superconducting + Trapped-ion + Photonic
-- Quantum network links with entanglement distribution
-- Classical control plane with recovery orchestration
-- Automated DR test harness
+### 7.4 Quantum Resource Decoding
 
-### 6.1.4 Deliverables
-- Gap analysis validation report
-- Interim mitigation deployment guide
-- Standards proposals submitted to IEEE/ETSI/QED-C
-- Open-source QFDR-Core v0.1 release
+Quantum state rho_m^T encodes the tenant's logical quantum resources via the **gap-QEC embedding** (A3-11):
 
----
+- Each logical qubit corresponds to a **gap-correlated subspace** of H_256
+- QEC patches map to contiguous gap-index blocks
+- Quantum tasks (A3-28 GAQS) map to gap-index intervals with specific unitaries
 
-## 6.2 Phase 2: Integration (Months 13-24)
+Decoding: Given rho_m^T and the tenant's QEC config, extract:
+- Logical qubit states via syndrome measurement
+- QEC patch health via stabilizer expectations
+- Task completion via overlap with task unitary
 
-### 6.2.1 Cross-Modality Integration
-- Deploy microwave-optical transduction hardware
-- Implement logical code conversion (surface ↔ color codes)
-- Validate gate set compilation across modalities
-- Measure translation fidelity vs. coherence budget
+### 7.5 ML Model Reconstruction (A3-28 Integration)
 
-### 6.2.2 Consensus and State Transfer Hardening
-- QBFT consensus with weak measurement voting
-- CG-QST with adaptive mode selection
-- Entanglement reservation system
-- Classical feedforward optimization
+Tenant ML models are stored in TGSV as **gap-sharded parameters**:
+- Model weights W split across gap-indices via gap-correlation sharding
+- Each shard W_n stored at gap-index n with GABP_n^T
+- Reconstruction: GCH interpolates missing shards from correlated neighbors
+- Federated learning state (A3-28 FL): Global model reconstructed from tenant shards via gap-weighted aggregation
 
-### 6.2.3 Resource Manager and Checkpointing
-- RAQRM with recovery reservations
-- QCR with non-destructive logical qubit checkpointing
-- Syndrome stream checkpointing
-- Calibration-aware restart
+### 7.6 Security State Reconstruction
 
-### 6.2.4 Deliverables
-- QFDR-Core v1.0 with cross-modality support
-- Integration test results across 5+ modalities
-- Recovery SLA measurements (RTO, RPO, fidelity)
-- Vendor integration guides
+Security state (keys, attestations, policies) requires **bit-exact recovery**:
+- Keys: Reconstructed from gap-attested key hierarchy (A3-24 GKI)
+- Attestations: Re-verified via GCH on attestation chain
+- Policies: Merkle-interpolated from TGSV (immutable, deterministic)
 
----
+**Critical**: Security state reconstruction is *not* approximate—it must be cryptographically identical to pre-disaster state. GCH provides this via Merkle DAG verification (Piece 04, Section 4.6).
 
-## 6.3 Phase 3: Production Hardening (Months 25-36)
+### 7.7 TTR Verification: The Tenant Topology Attestation (TTA)
 
-### 6.3.1 Scale Testing
-- 10+ site federation
-- 1000+ logical qubits under management
-- Concurrent recovery scenarios
-- Chaos engineering campaigns
+After TTR completes, the federation issues a **Tenant Topology Attestation**:
 
-### 6.3.2 Governance and Compliance
-- QFRG policy engine deployment
-- Audit trail implementation
-- Compliance certification process
-- Insurance framework engagement
+TTA_T = Sign_{GK}( T, R_T, {R_m^T}_{m in R_T}, MerkleRoot({R_m^T}), timestamp_n )
 
-### 6.3.3 Operational Maturity
-- 24/7 recovery operations center
-- Automated DR orchestration
-- Predictive failure analytics
-- Continuous validation pipeline
+This attestation proves:
+1. Tenant T's topology is fully reconstructed on gap-range R_T
+2. All resources are consistent with gap-correlations
+3. All TRP constraints satisfied
+4. No cross-tenant contamination
 
-### 6.3.4 Deliverables
-- QFDR-Core v2.0 production-ready
-- Certified recovery SLAs
-- Governance framework operational
-- Commercial support model
-
----
-
-## 6.4 Phase 4: Evolution (Months 37+)
-
-### 6.4.1 Quantum Internet Integration
-- Entanglement-as-a-service
-- Quantum repeater integration
-- Network-layer failover
-- End-to-end quantum SLA
-
-### 6.4.2 Self-Healing Federation
-- ML-based failure prediction
-- Autonomous recovery orchestration
-- Continuous optimization
-- Zero-touch operations
-
-### 6.4.3 Ecosystem Expansion
-- Application-level recovery frameworks
-- Quantum algorithm checkpointing libraries
-- Industry-specific compliance modules
-- Global federation interconnection
+TTA_T is the **recovery completion certificate**—tenants resume operations only after receiving valid TTA.

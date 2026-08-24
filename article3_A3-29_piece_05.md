@@ -1,121 +1,74 @@
 # Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 05/12
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 03:17:59 UTC
+**Piece:** 05 of 12
+**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
-## 3.12 Gap 11: No Quantum Disaster Recovery Testing and Validation Framework
+### 5.1 Gap-Range Remapping (GRR): Tenant Failover via Gap-Topology
 
-**Category:** Operational  
-**Severity:** High  
-**Impact:** Recovery procedures untested; unknown reliability
+When a tenant's gap-range R_T suffers catastrophic failure (contiguous outage exceeding GRTO), the **Gap-Range Remapping (GRR)** protocol relocates the tenant to a healthy gap-range R_T' on the federation fabric. Unlike traditional failover (which moves workloads), GRR moves the *gap-index assignment*—the tenant's logical gap-range is reassigned, and their state is reconstructed via GCH onto the new range.
 
-### Description
-Classical DR testing includes:
-- Failover drills (scheduled, unscheduled)
-- Recovery time measurement
-- Data integrity verification
-- Runbook validation
+### 5.2 GRR Protocol
 
-Quantum DR testing requires:
-- Quantum state fidelity verification without destruction
-- Entanglement preservation measurement
-- Coherence budget compliance testing
-- Logical error rate validation post-recovery
-- Cross-modality recovery validation
-
-No framework exists for:
-- Non-destructive recovery validation
-- Automated DR test orchestration
-- Quantum chaos engineering
-- Recovery SLA measurement
-- Regression testing of recovery procedures
-
-### Consequences
-- Recovery procedures never validated until real disaster
-- Unknown RTO/RPO achievability
-- Silent corruption of recovered quantum states
-- No confidence in federation SLAs
-- Regulatory/compliance gaps
-
-### Required Capability
-**Quantum DR Validation Framework (QDRVF):**
 ```
-QDRVF = {
-  test_types: {
-    fidelity_verification: quantum_state_tomography_sampling,
-    entanglement_verification: Bell_test_CHSH_sampling,
-    logical_verification: logical_operator_expectation_values,
-    coherence_budget: end_to_end_timing_measurement,
-    cross_modality: translation_fidelity_benchmark
-  },
-  test_orchestration: {
-    schedule: {periodic, on_demand, chaos_engineering},
-    isolation: test_environment_separation_from_production,
-    automation: CI/CD_integration_for_recovery_procedures
-  },
-  metrics: {
-    RTO_achieved: measured_recovery_time,
-    RPO_achieved: fidelity_loss_measured,
-    logical_error_rate_post_recovery: measured,
-    entanglement_fidelity_retained: measured
-  },
-  reporting: {compliance_evidence, trend_analysis, regression_detection}
-}
+Input: Tenant T, failed range R_T, federation gap-map G
+Output: New range R_T', reconstructed state on R_T'
+
+1. Identify candidate ranges: C = {R in G | R healthy, |R| >= |R_T|, R disjoint from other tenants}
+2. Score candidates: score(R) = alpha * gap-quality(R) + beta * proximity(R, R_T) + gamma * cost(R)
+   - gap-quality(R): density of record gaps, twin primes in R (higher = better reconstruction anchors)
+   - proximity(R, R_T): gap-distance to original range (lower = faster GRTO)
+   - cost(R): economic cost per A3-28 economics
+3. Select R_T' = argmax_{R in C} score(R)
+4. Allocate R_T' to T (update tenant gap-range registry, A3-28)
+5. Trigger GCH reconstruction on R_T' using surviving GABPs from R_T and global survivors
+6. Verify post-recovery constraints C (TRP Section 3.4)
+7. Update TGSV: write new GABPs on R_T', mark R_T as quarantined
+8. Notify tenant: gap-range changed, workloads resumed on R_T'
 ```
 
----
+### 5.3 Gap-Quality Metric
 
-## 3.13 Gap 12: Missing Quantum Federation Recovery Governance and Policy Framework
+The **gap-quality** of a range R = [a, b] is:
 
-**Category:** Operational  
-**Severity:** Medium  
-**Impact:** Legal, compliance, and multi-party coordination failures during recovery
+Q(R) = sum_{n in R} q(n) / |R|
 
-### Description
-Quantum federation involves multiple organizations with:
-- Different legal jurisdictions
-- Different compliance requirements (ITAR, GDPR, export controls)
-- Different security classifications
-- Different operational procedures
-- Competitive relationships
+Where q(n) is the **gap-anchor score**:
+- q(n) = 100 if n is a record-gap index (A2-03)
+- q(n) = 50 if d_n = 2 (twin prime)
+- q(n) = 20 if d_n = 4 (cousin prime)
+- q(n) = 10 if d_n = 6 (sexy prime)
+- q(n) = 1 otherwise
 
-No governance framework addresses:
-- Data sovereignty for quantum states
-- Cross-border entanglement legal status
-- Liability for recovery failures
-- Recovery cost allocation
-- Information sharing during incidents
-- Audit trails for quantum operations
+Ranges rich in record gaps and twin primes provide more reconstruction anchors, yielding faster GRTO.
 
-### Consequences
-- Legal barriers to cross-border recovery
-- Unclear responsibility for quantum data loss
-- Compliance violations during emergency recovery
-- No framework for multi-party recovery coordination
-- Insurance/reinsurance gaps for quantum workloads
+### 5.4 Zero-Downtime GRR via Gap-Unitary Replay (GUR)
 
-### Required Capability
-**Quantum Federation Recovery Governance (QFRG):**
-```
-QFRG = {
-  legal_framework: {
-    data_sovereignty: quantum_state_jurisdiction_rules,
-    entanglement_legal_status: cross_border_entanglement_treaty,
-    liability_model: shared_responsibility_matrix,
-    export_controls: quantum_technology_transfer_rules
-  },
-  operational_agreements: {
-    recovery_SLAs: {RTO, RPO, fidelity, availability},
-    cost_sharing: recovery_resource_cost_allocation,
-    information_sharing: incident_communication_protocols,
-    audit_requirements: quantum_operation_logging_standards
-  },
-  compliance: {
-    standards: {ISO_27001_quantum, NIST_quantum, industry_specific},
-    certification: quantum_recovery_readiness_certification,
-    audit: third_party_recovery_audit_procedures
-  }
-}
-```
+For Platinum-tier tenants (GRTO < 100 gaps), GRR uses **Gap-Unitary Replay** to achieve zero-downtime failover:
+
+1. **Shadow Reconstruction**: While tenant runs on R_T, continuously reconstruct shadow state on R_T' via GUR:
+   rho_m'(tau) = U_{m'<-m}(tau) rho_m(tau) U_{m'<-m}^dagger(tau)
+   Where U_{m'<-m} is the gap-unitary mapping indices m -> m' (derived from gap-sequence isomorphism)
+
+2. **Cutover**: At cutover gap-index n_cut, atomically switch tenant's active range R_T -> R_T'
+   - No state transfer needed (shadow already synchronized)
+   - TGSV writes GABP_{n_cut} on both ranges for audit
+
+3. **Verification**: Post-cutover, run GCH validation on R_T' for [n_cut - L, n_cut + L]
+
+### 5.5 Gap-Range Excision (GRE): Controlled Degradation
+
+When GRR is unavailable (no healthy ranges of sufficient size), **Gap-Range Excision (GRE)** reduces the tenant's gap-range by excising the failed segment:
+
+R_T' = R_T \ F  (where F is the failed gap-interval)
+
+The tenant continues on the remaining (possibly disconnected) gap-ranges. Workloads are **gap-scheduled** (GAQS) to run only on healthy sub-ranges. Quantum workloads spanning excised gaps are **gap-decomposed** (A3-03) into sub-circuits on surviving ranges.
+
+### 5.6 Gap-Subspace Projection (GSP): Isolation Recovery
+
+For security incidents (A3-24 attestation break), **Gap-Subspace Projection** isolates the tenant into a disjoint Hilbert subspace:
+
+H_iso = span{ |n> : n in R_T and n not in compromised-set }
+
+The projection operator P_iso = sum_{n in R_T'} |n><n| isolates the tenant from compromised gap-indices. Reconstruction proceeds within H_iso via GCH. The compromised gap-indices are quarantined and subjected to **Gap-Attestation Forensics (GAF)**.

@@ -1,143 +1,75 @@
 # Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 11/12
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 03:17:59 UTC
+**Piece:** 11 of 12
+**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
-# 10. Economic Analysis and Business Case
+### 11.1 Economics of Disaster Recovery: Gap-Priced Resilience
 
-## 10.1 Cost of Quantum Downtime
+Disaster recovery in the Quantum Federation is not a cost center—it is a **gap-priced service** integrated with the federation's economics layer (A3-28). Every recovery primitive has a gap-derived price; every tenant pays for their resilience tier via gap-markets.
 
-| Workload Class | Hourly Cost | Annual Risk (No DR) | DR Investment Justified |
-|----------------|-------------|---------------------|------------------------|
-| Quantum ML Training | $50,000 | $4.38M | $2M |
-| Quantum Simulation (Pharma) | $200,000 | $17.5M | $8M |
-| Financial Risk Modeling | $100,000 | $8.76M | $4M |
-| Cryptographic Key Generation | $25,000 | $2.19M | $1M |
-| Quantum Network Services | $10,000 | $876K | $500K |
-| **Federation Total** | **$385,000** | **$33.7M** | **$15.5M** |
+### 11.2 Gap-Pricing of Recovery Primitives
 
-## 10.2 Investment Requirements
+| Primitive | Gap-Price Formula | Price Determinants |
+|-----------|-------------------|-------------------|
+| **GABP Write** | p_write(n) = alpha * d_n + beta * q(n) | Gap value d_n, anchor score q(n) |
+| **TGSV Storage** | p_store(n, tau) = gamma * d_n * tau | Gap value, retention duration tau |
+| **GCH Reconstruction** | p_gch(m) = sum_{n in S} w_{m,n} * p_compute(n) | Correlation weights, compute cost |
+| **GRR Failover** | p_grr = delta * |R_T| * gap-quality(R_T')^{-1} | Tenant range size, target range quality |
+| **RGFP Firebreak** | p_rgfp = epsilon * B * max_blast_radius | Buffer size, containment radius |
+| **TTR Topology Rebuild** | p_ttr = zeta * |R_T| * resource_complexity(T) | Range size, resource diversity |
+| **GAF Forensics** | p_gaf = eta * |BlastRadius| * log(gap-complexity) | Blast radius, analysis depth |
 
-### 10.2.1 Phase 1 (Foundation): $3.2M
-- Standards development: $500K
-- QFDR-Core development: $1.5M
-- Testbed deployment: $800K
-- Personnel (12 FTE): $400K
+Where d_n is the prime gap value, q(n) is the gap-anchor score (Piece 05), and coefficients (alpha, beta, gamma, ...) are set by **federation governance** (A3-28 Piece 11) via gap-weighted voting.
 
-### 10.2.2 Phase 2 (Integration): $5.8M
-- Cross-modality hardware: $2.0M
-- Consensus/transfer hardening: $1.5M
-- Resource manager/checkpointing: $1.2M
-- Personnel (18 FTE): $1.1M
+### 11.3 Tenant Recovery Insurance: Gap-Risk Policies
 
-### 10.2.3 Phase 3 (Production): $6.5M
-- Scale testing: $1.5M
-- Governance/compliance: $1.0M
-- Operations center: $2.0M
-- Personnel (25 FTE): $2.0M
+Tenants purchase **Gap-Risk Insurance (GRI)** policies that cover recovery costs:
 
-### 10.2.4 Total 3-Year Investment: $15.5M
-**ROI**: 2.18x (risk reduction / investment)
-**Payback**: 14 months (based on avoided downtime)
+GRI_T = (tier, coverage_limit, deductible_gaps, premium_rate)
 
----
+- **Tier**: Platinum/Gold/Silver/Bronze (maps to GRTO targets, Piece 03)
+- **Coverage Limit**: Max gap-price covered per incident
+- **Deductible**: Gap-units tenant absorbs before insurance triggers
+- **Premium**: Paid per gap-index (continuous, gap-streaming)
 
-## 10.3 Risk Reduction Quantification
+**Insurance Payout Trigger**: When TRP activates (failure mode detected), insurance automatically funds recovery primitives up to coverage limit. Payout is **gap-instant**—no claims adjustment, just gap-attestation verification.
 
-| Scenario | Probability (Annual) | Impact (No DR) | Impact (With DR) | Risk Reduction |
-|----------|---------------------|----------------|------------------|----------------|
-| Single QPU failure | 0.8 | $2.4M | $120K | 95% |
-| Regional outage | 0.15 | $12M | $600K | 95% |
-| Network partition | 0.3 | $4.5M | $225K | 95% |
-| Systematic error | 0.05 | $8M | $400K | 95% |
-| Cyber incident | 0.1 | $6.8M | $340K | 95% |
-| **Weighted Annual Loss** | | **$5.2M** | **$260K** | **95%** |
+### 11.4 Gap-Market for Recovery Capacity
 
----
+The federation operates a **Recovery Capacity Market (RCM)** where nodes bid gap-compute capacity for recovery workloads:
 
-# 11. Security Considerations
+- **Supply**: Nodes offer (gap-range, compute-capacity, price_per_gap-unit)
+- **Demand**: TRP-activated recovery workloads (GCH, GRR, TTR, GAF)
+- **Matching**: GAQS (A3-28) matches supply to demand by gap-proximity and price
+- **Settlement**: Gap-streaming payments via A3-28 billing
 
-## 11.1 Threat Model
+This ensures recovery capacity is **always available at market-clearing price**—no centralized capacity planning needed.
 
-### 11.1.1 Adversarial Threats
-- **State Injection**: Malicious quantum states during recovery
-- **Entanglement Hijacking**: Redirecting Bell pairs to adversary
-- **Syndrome Manipulation**: Inducing logical errors via fake syndromes
-- **Consensus Subversion**: Byzantine nodes controlling recovery decisions
-- **Side-Channel Leakage**: Recovery timing revealing quantum state info
+### 11.5 Cost Allocation: Gap-Attributed Recovery Accounting
 
-### 11.1.2 Mitigations
-- **Authentication**: Quantum-resistant signatures on all recovery messages
-- **Authorization**: Capability-based access to recovery APIs
-- **Integrity**: Quantum authentication codes (QAC) for state transfer
-- **Confidentiality**: Encrypted classical channels; quantum states inherently private
-- **Audit**: Immutable recovery logs with quantum timestamping
+Every recovery action is **gap-attributed** for precise cost allocation:
 
-## 11.2 Compliance Mapping
+Cost(T, incident) = Sum_{n in BlastRadius intersect R_T} cost_primitive(n) * attribution_factor(T, n)
 
-| Regulation | QFDR Requirement | Implementation |
-|------------|------------------|----------------|
-| GDPR | Quantum data portability/erasure | Logical qubit migration + secure deletion |
-| ITAR | Export control on quantum tech | Modality-aware geofencing |
-| NIS2 | Critical infrastructure resilience | RTO/RPO reporting; incident notification |
-| CMMC | Defense contractor cyber maturity | Recovery testing evidence; supply chain |
-| Quantum-Specific (Emerging) | NIST PQC + Quantum DR | Hybrid classical/quantum recovery |
+Where attribution_factor(T, n) = 1 if n in R_T, else proportional to cross-tenant correlation.
 
----
+This produces **bit-exact, gap-auditable recovery invoices**—tenants see exactly which gap-indices incurred which costs.
 
-# 12. Conclusion
+### 11.6 Economic Incentives for Resilience
 
-## 12.1 Summary of Prime Gaps
+The gap-pricing creates natural incentives:
+- **High gap-quality ranges** (rich in record gaps, twin primes) have lower GRR prices -> tenants prefer them
+- **Proactive GDCE validation** reduces insurance premiums (proven lower risk)
+- **TRP compliance** reduces deductible (well-prepared tenants pay less)
+- **Cross-tenant correlation** increases shared recovery costs -> incentivizes isolation
 
-We have identified **12 prime gaps** preventing robust disaster recovery in quantum federations:
+### 11.7 Economics Integration with A3-28
 
-| # | Gap | Category | Severity | Key Blocker |
-|---|-----|----------|----------|-------------|
-| 1 | Quantum Topology Management | Architectural | Critical | No coherence-aware federation view |
-| 2 | Logical Qubit Federation Abstraction | Architectural | Critical | Vendor-specific logical qubits |
-| 3 | Quantum State Continuity Model | Architectural | High | No formal recovery definition |
-| 4 | Federated Quantum Consensus | Protocol | Critical | Classical consensus incompatible |
-| 5 | Coherence-Guaranteed State Transfer | Protocol | Critical | No fidelity/coherence SLA protocol |
-| 6 | Federated Syndrome Processing | Protocol | High | Proprietary syndrome formats |
-| 7 | Quantum Network Failover | Protocol | High | Entanglement as consumable resource |
-| 8 | Cross-Modality Translation | Implementation | Critical | Transduction efficiency < 1% |
-| 9 | Quantum Checkpoint/Restart | Implementation | High | No-cloning prevents classical C/R |
-| 10 | Recovery-Aware Resource Manager | Implementation | High | No quantum state awareness |
-| 11 | DR Testing Framework | Operational | High | Non-destructive validation hard |
-| 12 | Recovery Governance | Operational | Medium | Multi-party legal complexity |
-
-## 12.2 Critical Path to Resolution
-
-**Immediate (0-6 months):**
-1. Define Quantum State Continuity Specification (QSCS) — enables all else
-2. Standardize syndrome format in OpenQASM 4.0 — unblocks G6, G9
-3. Deploy classical topology manager with quantum metadata — mitigates G1, G10
-4. Establish federation MOUs for recovery cooperation — addresses G12
-
-**Near-Term (6-18 months):**
-5. Implement QBFT consensus prototype — solves G4
-6. Build CG-QST with pre-shared entanglement — solves G5, G7
-7. Develop FLQ abstraction layer — solves G2, G3
-8. Create QDRVF testing framework — solves G11
-
-**Medium-Term (18-36 months):**
-9. Deploy cross-modality transduction hardware — solves G8
-10. Implement QCR with logical qubit checkpointing — solves G9
-11. Harden RAQRM with recovery reservations — solves G10
-12. Achieve standards ratification — enables ecosystem adoption
-
-## 12.3 Final Recommendation
-
-The quantum federation disaster recovery problem is **solvable but requires coordinated investment across the quantum ecosystem**. No single vendor can solve these gaps alone—they require:
-
-1. **Standards-first approach**: IEEE/ETSI/ISO standards before proprietary solutions
-2. **Open reference implementation**: QFDR-Core as community-owned foundation
-3. **Shared testbed infrastructure**: QFT for continuous validation
-4. **Governance framework**: Legal/operational agreements enabling cross-border recovery
-5. **Economic alignment**: Shared risk/reward models for recovery capacity investment
-
-The 12 prime gaps form a **coherent dependency structure**—addressing the architectural gaps (G1-G3) and consensus/transfer protocols (G4-G5) unlocks solutions for implementation and operational gaps. A phased approach with clear milestones, measurable acceptance criteria, and continuous validation can deliver production-ready quantum federation disaster recovery within 3 years.
-
-**The cost of inaction**—quantified at $33.7M/year in expected downtime losses for a typical federation—far exceeds the $15.5M investment required. The quantum computing industry must treat disaster recovery as a **foundational capability**, not an afterthought, to achieve the reliability required for commercial and critical infrastructure adoption.
+The DR economics layer plugs directly into A3-28:
+- **Gap-Billing API** (A3-28 Piece 07): Streams recovery costs per gap-index
+- **Gap-Markets** (A3-28 Piece 07): RCM is a specialized gap-market
+- **Cost Allocation** (A3-28 Piece 07): Gap-attributed invoicing
+- **Tenant Budgets** (A3-28 Piece 07): GRI premiums deducted from budgets
+- **Governance** (A3-28 Piece 11): Gap-weighted voting sets pricing coefficients

@@ -1,122 +1,74 @@
 # Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 02/12
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
 **Piece:** 02 of 12  
-**Generated:** 2026-08-24 03:17:59 UTC
+**Generated:** 2026-08-24 05:22:11 UTC
+
+---
+# Tenant Gap-Snapshot Vault (TGSV): Immutable Backup Architecture
+
+## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
+
+**Piece:** 02 of 12  
+**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
-# 3. Prime Gap Taxonomy
+### 2.1 TGSV Architecture Overview
 
-## 3.1 Gap Categories
+The **Tenant Gap-Snapshot Vault (TGSV)** is the federation's immutable backup substrate. Unlike conventional backups that store *data*, TGSV stores *gap-attested topological states*. Each tenant $T$ maintains a TGSV instance spanning their allocated gap-index range $[n_{\min}^T, n_{\max}^T]$ (from A3-28 multi-tenancy).
 
-We classify the 12 prime gaps into four categories:
+$$	ext{TGSV}_T = igcup_{n \in \mathcal{R}_T} 	ext{GABP}_n^T1675
 
-### Category A: Architectural Gaps (Gaps 1-3)
-Fundamental structural deficiencies in federation design that impede disaster recovery.
+Where $\mathcal{R}_T = \{n : n_{\min}^T \leq n \leq n_{\max}^T\}$ is the tenant's gap-range, and $	ext{GABP}_n^T$ is the tenant-scoped GABP containing only tenant $T$'s state at index $n$.
 
-### Category B: Protocol Gaps (Gaps 4-7)
-Missing or inadequate protocols for coordination, consensus, and state transfer during recovery.
+### 2.2 Gap-Indexed Snapshot Cadence
 
-### Category C: Implementation Gaps (Gaps 8-10)
-Deficiencies in current software/hardware implementations that prevent robust recovery.
+Snapshots are not taken at fixed wall-clock intervals—they are taken at **gap-index milestones** determined by the prime gap sequence:
 
-### Category D: Operational Gaps (Gaps 11-12)
-Process, policy, and human-factor gaps affecting recovery readiness.
+| Snapshot Tier | Gap-Index Trigger | Retention | Purpose |
+|---------------|-------------------|-----------|---------|
+| **Micro** | Every gap index $n$ | 1,024 gaps (rolling) | Fine-grained reconstruction |
+| **Milli** | Every record gap $d_n > d_{n-1}$ | 10,000 gaps | Topological anchors |
+| **Macro** | Every directory boundary (0.0, 1.0, 2.0, 3.0) | Permanent | Cross-directory recovery |
+| **Tenant-Custom** | Per-tenant policy (A3-28 economics) | Configurable | Compliance/SLA |
 
----
+The **record gaps** (A2-03) serve as natural topological anchors—their rarity (gap 2, 4, 6, 8, 10, 14, ...) makes them ideal recovery waypoints.
 
-## 3.2 Gap 1: Absence of Quantum-Aware Federation Topology Management
+### 2.3 GABP Structure for Tenant Scope
 
-**Category:** Architectural  
-**Severity:** Critical  
-**Impact:** Prevents optimal recovery path selection; causes cascading failures
+$$	ext{GABP}_n^T = 	ext{Sign}_{	ext{TK}_n^T}\Big( n, d_n, ho_n^T, \mathcal{M}_n^T, \mathcal{S}_n^T, 	ext{MR}_n^T \Big)1675
 
-### Description
-Current federation managers treat quantum nodes as classical compute resources with static connectivity graphs. They lack:
-- Real-time coherence-aware topology views
-- Dynamic entanglement link quality metrics
-- Qubit modality compatibility matrices
-- Decoherence-time-weighted path costs
+Where:
+- $	ext{TK}_n^T$: Tenant-specific gap-key (derived from master GK via A3-24 key hierarchy)
+- $ho_n^T$: Tenant's reduced density matrix at $n$ (quantum state)
+- $\mathcal{M}_n^T$: Tenant's classical metadata (config, networking, ML models)
+- $\mathcal{S}_n^T$: Tenant's security attestation (TLGA, TBGA from A3-28)
+- $	ext{MR}_n^T$: Merkle root of tenant's neighborhood $\mathcal{N}_n^T$
 
-### Consequences
-- Recovery routing may select paths exceeding T₁/T₂ budgets
-- Entanglement swapping failures cascade across federation
-- Modality mismatches cause state transfer failures
-- No automatic failover to coherence-compatible backup nodes
+### 2.4 Cross-Tenant Deduplication via Gap-Correlation
 
-### Required Capability
-A **Quantum Topology Manager (QTM)** maintaining:
-```
-QTM_State = {
-  nodes: {node_id: {modality, T1, T2, fidelity, location, load}},
-  links: {link_id: {entanglement_rate, fidelity, latency, modality_pair}},
-  coherence_budget: {path_id: remaining_coherence_time},
-  modality_compatibility: {modality_a, modality_b: translation_fidelity}
-}
-```
+Since all tenants share the same prime gap backbone, TGSV achieves massive deduplication:
 
----
+- **Gap values $d_n$**: Stored once globally (immutable from PrimeBookOne)
+- **Prime indices $p_n$**: Stored once globally
+- **Attestation signatures**: Tenant-specific but verifiable against same GK root
+- **Merkle trees**: Shared internal nodes for common gap-ranges
 
-## 3.3 Gap 2: No Logical Qubit Federation Abstraction
+Deduplication ratio: $pprox rac{\sum_T |\mathcal{R}_T|}{|igcup_T \mathcal{R}_T|} 	o N_{	ext{tenants}}$ for overlapping ranges.
 
-**Category:** Architectural  
-**Severity:** Critical  
-**Impact:** Recovery operates at physical qubit level; logical state continuity lost
+### 2.5 TGSV Storage Topology: The Gap-Attestation Merkle DAG
 
-### Description
-Federation interfaces expose physical qubits or vendor-specific logical qubit abstractions. No unified logical qubit abstraction exists that:
-- Spans multiple physical modalities
-- Provides error-corrected logical qubit view
-- Supports transparent migration during recovery
-- Maintains logical identity across federation boundaries
+TGSV organizes GABPs into a **Merkle Directed Acyclic Graph (DAG)** keyed by gap-index:
 
-### Consequences
-- Logical qubit state cannot be preserved during node failure
-- Error correction syndromes not federated
-- Logical-to-physical mapping lost on failover
-- Application-level checkpointing impossible
+$$	ext{Node}_n = 	ext{Hash}ig( n \parallel d_n \parallel 	ext{GABP}_n^T \parallel 	ext{Node}_{n-1} \parallel 	ext{Node}_{n+1} \parallel 	ext{Node}_{n-\delta} \parallel 	ext{Node}_{n+\delta} ig)1675
 
-### Required Capability
-**Federated Logical Qubit (FLQ) Abstraction Layer:**
-```
-FLQ = {
-  logical_id: UUID,
-  physical_distribution: {node_id: [physical_qubit_ids]},
-  code: [[n, k, d]]_modality,
-  syndrome_stream: federated_syndrome_channel,
-  recovery_policy: {RTO, RPO, priority, target_modalities}
-}
-```
+Where $\delta$ are correlation offsets (twin primes $\delta=2$, cousin primes $\delta=4$, sexy primes $\delta=6$). This creates a **gap-correlation-authenticated DAG** where any node's integrity implies the integrity of its gap-correlated neighbors.
 
----
+### 2.6 Immutable Write-Once Semantics
 
-## 3.4 Gap 3: Missing Quantum State Continuity Model
+TGSV enforces **write-once, read-many (WORM)** semantics at the gap-index level:
 
-**Category:** Architectural  
-**Severity:** High  
-**Impact:** No formal definition of "recovery" for quantum states
-
-### Description
-Classical disaster recovery has clear state continuity: bit-for-bit restoration. Quantum federation lacks:
-- Formal definition of quantum state equivalence post-recovery
-- Fidelity thresholds for "successful" recovery
-- Treatment of entanglement with external parties
-- Handling of measurement outcomes during failure
-
-### Consequences
-- Ambiguous success criteria for recovery testing
-- Cannot compose recovery from multiple providers
-- Legal/compliance ambiguity for quantum workloads
-- No basis for quantum recovery SLAs
-
-### Required Capability
-**Quantum State Continuity Specification (QSCS):**
-```
-QSCS = {
-  fidelity_threshold: F_min (e.g., 0.99 for logical qubits),
-  entanglement_preservation: {partner_id: required_fidelity},
-  measurement_record: {basis, outcome, timestamp}_retained,
-  logical_equivalence: U_recovery † U_ideal ≈ I (diamond norm < ε),
-  coherence_budget_consumed: Δt < T₂/10
-}
-```
+- A GABP at index $n$ can be written **exactly once** (when the federation state at $n$ is finalized)
+- Subsequent attempts to write at $n$ are rejected (gap-index is immutable)
+- This prevents ransomware, insider tampering, and state-rollback attacks
+- The prime gap sequence itself is the **write-once clock**—no centralized timestamp authority needed

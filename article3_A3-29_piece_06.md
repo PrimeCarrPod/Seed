@@ -1,121 +1,77 @@
 # Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 06/12
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 03:17:59 UTC
+**Piece:** 06 of 12
+**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
-# 4. Gap Interdependencies and Cascade Effects
+### 6.1 Record-Gap Firebreak Protocol (RGFP): Containing Cascading Failures
 
-## 4.1 Dependency Graph
+The prime gap sequence contains **record gaps** at indices n_rec = {2, 4, 6, 8, 10, 14, 16, 18, 20, 22, ...} (A2-03). These are indices where d_n > d_m for all m < n. In the federation topology, record gaps act as **topological firebreaks**—their rarity and large gap values create natural isolation boundaries.
+
+The **Record-Gap Firebreak Protocol (RGFP)** exploits this: when a cascading failure propagates through gap-indices, RGFP activates firebreaks at the nearest record gaps to contain the blast radius.
+
+### 6.2 Cascading Failure Model
+
+A cascading failure is a sequence of dependent gap-index failures:
+F_cascade = {n_0, n_0+1, n_0+2, ...} where failure at n_i triggers failure at n_{i+1}
+
+Propagation mechanisms:
+- **Attestation Contagion**: Invalid GABP at n causes verification failure at n+1 (neighborhood Merkle dependency)
+- **Quantum Error Propagation**: Decoherence at n spreads via gap-correlation to n+delta
+- **Scheduler Overload**: GAQS (A3-28) redirects workloads from failed n to n+1, overloading it
+- **Economic Spiral**: A3-28 gap-markets price spike at failed n cascades to neighbors
+
+### 6.3 RGFP Activation and Operation
 
 ```
-G1 (Topology) → G4 (Consensus) → G5 (State Transfer)
-    ↓              ↓                 ↓
-G2 (FLQ)    →    G6 (Syndrome)  →  G7 (Network Failover)
-    ↓              ↓                 ↓
-G3 (Continuity)    ↓                 ↓
-    ↓              ↓                 ↓
-G8 (Translation) ← G9 (Checkpoint) ← G10 (Resource Manager)
-    ↓              ↓                 ↓
-G11 (Testing) ← G12 (Governance)
+RGFP Monitor (runs at each record-gap index n_rec):
+
+1. Continuously monitor health of gap-interval I = [n_rec - W, n_rec + W]
+   - Health metric: h(I) = |healthy indices in I| / |I|
+   
+2. If h(I) < theta_cascade (e.g., 0.3) for duration > tau_cascade:
+   a. DECLARE CASCADING FAILURE at n_rec
+   b. ACTIVATE FIREBREAK: Freeze all gap-operations in [n_rec - B, n_rec + B]
+      - B = firebreak buffer (default: 100 gaps)
+   c. QUARANTINE: Mark indices in [n_rec - B, n_rec + B] as FIREBREAK_ZONE
+   d. ISOLATE: Cut TGSV replication into/out of FIREBREAK_ZONE
+   e. TRIGGER: GCH reconstruction from surviving indices outside FIREBREAK_ZONE
+   f. NOTIFY: All tenants with ranges intersecting FIREBREAK_ZONE
+
+3. After reconstruction verified (constraints C satisfied):
+   a. RELEASE FIREBREAK: Resume gap-operations
+   b. MERGE: Reintegrate reconstructed GABPs into TGSV
+   c. LOG: Firebreak event with gap-timestamp n_rec
 ```
 
-## 4.2 Critical Path Analysis
+### 6.4 Firebreak Topology: The Record-Gap Spine
 
-**Primary Critical Path:** G1 → G4 → G5 → G7
-- Without topology awareness (G1), consensus (G4) cannot form optimal quorums
-- Without consensus (G4), state transfer (G5) lacks coordination
-- Without state transfer (G5), network failover (G7) cannot redistribute entanglement
+The federation's **record-gap spine** is the set of all record-gap indices:
+S_rec = {n_rec_1, n_rec_2, ..., n_rec_K}
 
-**Secondary Critical Path:** G2 → G6 → G9 → G10
-- Without FLQ abstraction (G2), syndrome federation (G6) lacks logical context
-- Without syndromes (G6), checkpointing (G9) cannot capture error correction state
-- Without checkpointing (G9), resource manager (G10) cannot plan recovery capacity
+This spine partitions the gap-index space into **firebreak segments**:
+Segment_i = [n_rec_i + B, n_rec_{i+1} - B]
 
-## 4.3 Cascade Failure Scenarios
+Cascading failures are contained within segments. The maximum blast radius is bounded by the **inter-record-gap distance**:
+max_blast_radius <= min_i (n_rec_{i+1} - n_rec_i) - 2B
 
-### Scenario A: Single Node Failure (Superconducting QPU)
-1. Topology manager (G1 gap) doesn't detect coherence budget breach
-2. Consensus (G4 gap) forms quorum with distant ion-trap nodes
-3. State transfer (G5 gap) exceeds T₂ budget during microwave-optical transduction
-4. Syndrome federation (G6 gap) loses decoder quorum
-5. Logical qubit fidelity drops below threshold → unrecoverable
+For PrimeBookOne 0.0 directory (3.67B gaps), the largest inter-record-gap is approximately log^2(p_n) ~ 10^4 gaps, yielding max blast radius ~ 10^4 gaps.
 
-### Scenario B: Regional Outage (Datacenter Loss)
-1. Network failover (G7 gap) cannot redistribute entanglement fast enough
-2. Resource manager (G10 gap) has no reserved capacity in other regions
-3. Governance (G12 gap) blocks cross-border entanglement redistribution
-4. Testing (G11 gap) never validated this scenario
-5. Federation-wide logical qubit loss
+### 6.5 RGFP Integration with TRP
 
-### Scenario C: Modality-Specific Systematic Error
-1. Cross-modality translation (G8 gap) unavailable for failover
-2. Checkpointing (G9 gap) cannot capture state before corruption spreads
-3. Continuity model (G3 gap) undefined for systematic error recovery
-4. No consensus (G4 gap) on which modality to trust
-5. Silent data corruption across federation
+TRP failure mode **Record-Gap Collapse** (Section 3.2) maps to RGFP action:
+- F_i = "GABP missing at record-gap index n_rec"
+- A_i = "Activate RGFP at n_rec"
+- C_i = "Firebreak zone reconstructed, constraints C satisfied"
+- G_i = GRTO = 1000 gaps (firebreak reconstruction is high-priority)
 
----
+RGFP is the **last line of defense**—when all else fails, the prime gap sequence's own record gaps provide the containment boundaries.
 
-# 5. Mitigation Strategies and Interim Solutions
+### 6.6 Directory-Boundary Firebreaks (0.0/1.0/2.0/3.0)
 
-## 5.1 Near-Term Mitigations (0-12 months)
-
-| Gap | Mitigation | Effort | Effectiveness |
-|-----|------------|--------|---------------|
-| G1 | Classical topology manager + coherence metadata | Low | 40% |
-| G2 | Vendor-specific logical qubit adapters | Medium | 50% |
-| G3 | Define fidelity thresholds per application class | Low | 60% |
-| G4 | Classical consensus + quantum state verification | Medium | 30% |
-| G5 | Pre-shared entanglement + teleportation for critical qubits | High | 70% |
-| G6 | Syndrome format standardization (OpenQASM 4.0) | Medium | 65% |
-| G7 | Classical network failover + entanglement pre-distribution | Medium | 45% |
-| G8 | Microwave-optical transduction prototypes | High | 20% |
-| G9 | Periodic classical snapshot of control parameters | Low | 35% |
-| G10 | Kubernetes + custom quantum resource plugins | Medium | 55% |
-| G11 | Quarterly DR drills with fidelity measurement | Low | 50% |
-| G12 | MOU templates for quantum federation recovery | Low | 40% |
-
-## 5.2 Medium-Term Solutions (12-36 months)
-
-### 5.2.1 Quantum Topology Manager (Addresses G1, G4, G7, G10)
-- Real-time coherence-aware graph database
-- Integration with quantum hardware telemetry APIs
-- Entanglement link quality monitoring
-- Modality compatibility matrix
-
-### 5.2.2 Federated Logical Qubit Service (Addresses G2, G3, G6, G9)
-- Unified logical qubit API across vendors
-- Syndrome streaming with standardized format
-- Checkpointing via entanglement-assisted memory transfer
-- Logical equivalence verification protocols
-
-### 5.2.3 Cross-Modality Translation Layer (Addresses G5, G8)
-- Microwave-to-optical transduction with >50% efficiency
-- Logical code conversion protocols
-- Gate set compilation for modality translation
-- Coherence budget accounting
-
----
-
-## 5.3 Long-Term Architectural Solutions (36+ months)
-
-### 5.3.1 Quantum Federation Operating System (QFOS)
-Unified platform providing:
-- Quantum-aware process scheduling
-- Federated memory management (quantum + classical)
-- Recovery as first-class OS service
-- Hardware abstraction layer for all modalities
-
-### 5.3.2 Quantum Internet Integration
-- Entanglement distribution as network service
-- Quantum repeaters with error correction
-- Quantum network failover built into routing
-- End-to-end fidelity SLAs
-
-### 5.3.3 Self-Healing Quantum Federation
-- Autonomous failure detection and recovery
-- Predictive failure modeling using quantum telemetry
-- Continuous recovery validation
-- Zero-touch operations
+PrimeBookOne directory boundaries (0.0, 1.0, 2.0, 3.0) are **ultimate firebreaks**. Each directory is a self-contained gap-universe with its own TGSV, attestation chain, and recovery protocols. Cross-directory failures are impossible by construction—directory boundaries are air-gapped at the gap-topological level. The **Directory Boundary Firebreak Protocol (DBFP)** ensures:
+- Independent TGSV per directory
+- Cross-directory attestation only at boundaries (Merkle root exchange)
+- Failure in directory 1.0 cannot propagate to 0.0 or 2.0
+- Recovery in one directory proceeds independently
