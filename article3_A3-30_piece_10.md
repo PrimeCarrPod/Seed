@@ -1,213 +1,116 @@
-# Quantum_Federation_Interoperability_Prime_Gaps — Piece 10/12
-## Article 3: A3-30 — Quantum Federation Interoperability Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 03:31:00 UTC
+# Quantum_Federation_Compliance_Prime_Gaps — Piece 10/12
+## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
+**Piece:** 10 of 12
+**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
-# 9. Testing and Validation Methodology
+### 10.1 Compliance Testing: Gap-Driven Validation of Controls
 
-## 9.1 Test Categories
+Compliance controls must be **continuously validated**—not just implemented. The federation extends A3-29 GDCE (Gap-Driven Chaos Engineering) to **Compliance-Driven Chaos Engineering (CDCE)**: injecting compliance violations at mathematically significant gap-indices to validate detection, remediation, and evidence generation.
 
-### 9.1.1 Unit Tests (Per-Gap)
-Each gap mitigation validated in isolation:
-- **G1**: QHAL adapter correctness vs. vendor hardware specs
-- **G2**: QISA instruction semantics preservation across backends
-- **G3**: QSIF round-trip fidelity for all state representations
-- **G4**: QFCP RPC correctness, streaming reliability, QoS adherence
-- **G5**: QRDR discovery accuracy, reservation atomicity, preemption
-- **G6**: FQEC syndrome format, decoder interface, logical gate equivalence
-- **G7**: QNIP link/network/transport layer protocol compliance
-- **G8**: CMQC compilation equivalence across 5+ targets
-- **G9**: FQCE calibration exchange accuracy + drift prediction
-- **G10**: QFO metric completeness, trace causality, log correlation
-- **G11**: QFIT conformance detection rate for injected non-conformance
-- **G12**: QFGG policy enforcement across jurisdiction boundaries
+### 10.2 CDCE Failure Injection Catalog for Compliance
 
-### 9.1.2 Integration Tests (Cross-Gap)
-- **QHAL + QISA + CMQC**: End-to-end compilation for multi-target deployment
-- **QFCP + QRDR + QNIP**: Resource discovery → reservation → execution → entanglement
-- **QSIF + FQEC + QFCP**: Syndrome streaming → distributed decoding → correction
-- **QHAL + FQCE + QFO**: Calibration change → metric update → alert → recompile
-- **QFGG + All**: Policy enforcement across all federation operations
+| Injection Type | Gap-Target | Control Validated | Primitive Tested |
+|----------------|------------|-------------------|------------------|
+| **Config Drift** | Random $n \in \mathcal{R}_T$ | CM-2, CM-6, CM-8 | Config drift detection, CGA verdict flip |
+| **Access Violation** | Random $n$ | AC-2, AC-3, AC-6 | TLGA/TBGA enforcement, VGE generation |
+| **Encryption Gap** | $n$ with TLS cert expiry | SC-8, SC-13, IA-5 | Cert rotation, GKI algorithm agility |
+| **Audit Gap** | Contiguous block in $\mathcal{R}_T$ | AU-2, AU-3, AU-12 | CGA continuity, neighborhood Merkle |
+| **QEC Failure** | Twin-prime indices | SI-7, SI-12, SC-28 | GQST syndrome extraction, correction |
+| **Entanglement Leak** | Boundary $n \in \partial \mathcal{R}_T$ | SC-7, SC-23, EI (Piece 07) | Cross-tenant isolation, GQST |
+| **Data Localization** | $n$ in sovereign range | PT-2, PT-5, GIRO (Piece 05) | GRP routing, network enforcement |
+| **Retention Violation** | $n = n_{\text{expire}}$ | MP-6, AU-11 | TGSV excision, DGA generation |
+| **Supply Chain** | Deployment at $n$ | SA-3, SA-4, SA-11, SR-1 | CDGA, SBOM, vendor attestation |
+| **Incident Response** | VGE at $n$ | IR-2, IR-3, IR-4, IR-5 | GAF, GIR, RGA closed-loop |
+| **Training Lapse** | Random $n$ | AT-2, AT-3, PS-3 | Training attestation expiry in CGA |
+| **Physical Breach** | Edge indices (A3-27) | PE-2, PE-3, PE-6 | Edge security attestation gap |
 
-### 9.1.3 System Tests (Full Federation)
-- **Multi-Vendor VQE**: Ansatz on SC, optimizer on TI, measurement on photonic
-- **Distributed QEC**: Surface code across 3 vendors with lattice surgery
-- **Quantum Network App**: QKD key gen + encrypted quantum computation
-- **Hybrid Workload**: Classical HPC + quantum federation + quantum network
-- **Failover + Interop**: DR (A3-29) + interop during recovery
-
-### 9.1.4 Performance Benchmarks
-| Metric | Target | Measurement Method |
-|--------|--------|-------------------|
-| Cross-federation gate latency | < 10 μs | Hardware timestamp (TSC) |
-| State transfer latency | < 100 μs | End-to-end timestamps |
-| Compilation time (1000 gates) | < 1 s | Wall-clock |
-| Syndrome streaming latency | < 1 μs | gRPC stream timestamps |
-| Entanglement distribution rate | > 10 Hz | Bell pair counter |
-| Calibration exchange latency | < 100 ms | Stream timestamps |
-| Observability overhead | < 1% gate time | Cycle accounting |
-| Conformance test suite time | < 30 min | CI pipeline |
-
----
-
-## 9.2 Test Infrastructure
-
-### 9.2.1 Quantum Federation Interop Testbed (QFIT-Bed)
-```
-QFIT-Bed Sites:
-├── Site A (US-East): IBM Quantum System Two (127 qubits)
-├── Site B (US-West): IonQ Aria 2 (64 qubits, all-to-all)
-├── Site C (EU-Central): Xanadu Aurora (photonic, 12 modes)
-├── Site D (APAC): QuEra Aquila (256 qubits, neutral atom)
-├── Site E (Cloud): AWS Braket (simulators + multi-vendor access)
-└── Site F (Lab): Quantum network testbed (entanglement links)
-
-Quantum Links:
-├── A↔B: 50km fiber, 10 Hz Bell pairs, F>0.9
-├── B↔C: 100km + repeater prototype, 5 Hz
-├── C↔D: Satellite link (Micius-class), 1 Hz
-├── D↔A: Classical only (simulated entanglement)
-
-Classical Infrastructure:
-├── Kubernetes federation (Karmada) across all sites
-├── QFI-Core deployed as DaemonSet on each site
-├── Prometheus/Grafana/Jaeger/ELK for observability
-├── QFIT test runner as CronJob + on-demand Jobs
-├── Chaos Mesh for failure injection
-└── GitLab CI for continuous conformance testing
-```
-
-### 9.2.2 Simulation Environment
-- **NetSquid**: Full quantum network simulation with hardware noise models
-- **Qiskit/Stim/Cirq**: Circuit-level simulation with per-vendor noise
-- **Custom coherence models**: Per-modality T₁/T₂ distributions from hardware
-- **Failure injectors**: Decoherence, crosstalk, calibration drift, network partition
-- **Digital twin**: Real-time simulation mirroring hardware testbed
-
----
-
-## 9.3 Validation Metrics and Acceptance Criteria
-
-### 9.3.1 Per-Gap Acceptance Criteria
-
-| Gap | Metric | Threshold | Method |
-|-----|--------|-----------|--------|
-| G1 | QHAL topology accuracy | > 99% vs hardware | Automated comparison |
-| G1 | Calibration schema coverage | 100% parameters | Schema validation |
-| G2 | QISA semantic preservation | Diamond norm < 10⁻⁴ | Equivalence checking |
-| G2 | Binary portability | 100% across backends | Cross-vendor execution |
-| G3 | QSIF statevector roundtrip | Fidelity > 0.9999 | Tomography verification |
-| G3 | QSIF compression ratio | > 10x for MPS | Size comparison |
-| G4 | QFCP RPC success rate | > 99.99% | Load test (10k RPM) |
-| G4 | QoS deadline meet rate | > 99.9% | Timestamp analysis |
-| G5 | QRDR discovery freshness | < 1 s staleness | Timestamp comparison |
-| G5 | Reservation atomicity | 0 partial failures | Chaos injection |
-| G6 | FQEC syndrome format | 100% decoder compatibility | Cross-vendor decode |
-| G6 | Distributed decoder latency | < 10 μs | End-to-end timing |
-| G7 | QNIP link layer fidelity | > 0.95 Bell pairs | Tomography sampling |
-| G7 | Network layer routing | Optimal path selection | Simulation comparison |
-| G8 | CMQC equivalence | Diamond norm < 10⁻³ | Formal + random |
-| G8 | Compilation time | < 1s / 1000 gates | Benchmark suite |
-| G9 | FQCE calibration accuracy | < 0.1% parameter error | RB comparison |
-| G9 | Drift prediction lead time | > 1 hour | Historical validation |
-| G10 | QFO metric completeness | 100% SemCon coverage | Conformance test |
-| G10 | Trace causality accuracy | > 99% links correct | Known-good workloads |
-| G11 | QFIT detection rate | > 95% injected faults | Mutation testing |
-| G11 | Interop matrix coverage | 100% vendor pairs | Test matrix |
-| G12 | QFGG policy enforcement | 100% violations caught | Audit log review |
-
-### 9.3.2 Continuous Validation Pipeline
-```yaml
-ci_cd_pipeline:
-  on_commit:
-    - unit_tests: all_12_gaps
-    - static_analysis: security, correctness, quantum_semantics
-    - simulation: 1000 Monte Carlo runs per gap
-    - equivalence_checking: QISA binaries across backends
-  
-  nightly:
-    - integration_tests: 15 cross-gap scenarios
-    - performance_benchmarks: regression detection (<5% threshold)
-    - chaos_experiments: 20 random failure scenarios
-    - calibration_exchange: live test with 3 vendors
-  
-  weekly:
-    - system_tests: 5 full federation scenarios
-    - hardware_tests: on QFIT-Bed (4+ vendors)
-    - interop_matrix: all vendor-pair combinations
-    - compliance_audit: QFGG policy validation
-  
-  release:
-    - full_validation_suite: all_above
-    - third_party_audit: security, correctness, standards
-    - certification: L1/L2/L3 for participating vendors
-    - documentation: updated API refs, migration guides
-```
-
----
-
-## 9.4 Conformance Test Suite Architecture
+### 10.3 CDCE Execution Model
 
 ```
-QFIT-Conformance/
-├── qhal/
-│   ├── test_capabilities.py
-│   ├── test_topology.py
-│   ├── test_error_model.py
-│   ├── test_calibration.py
-│   └── test_gate_translation.py
-├── qisa/
-│   ├── test_instruction_semantics.py
-│   ├── test_module_format.py
-│   ├── test_linking.py
-│   └── test_calling_convention.py
-├── qsif/
-│   ├── test_statevector_roundtrip.py
-│   ├── test_density_matrix_roundtrip.py
-│   ├── test_mps_compression.py
-│   ├── test_integrity_verification.py
-│   └── test_provenance_tracking.py
-├── qfcp/
-│   ├── test_execute_rpc.py
-│   ├── test_streaming.py
-│   ├── test_qos_deadlines.py
-│   ├── test_security.py
-│   └── test_entanglement_manager.py
-├── qrdr/
-│   ├── test_discovery.py
-│   ├── test_reservation.py
-│   ├── test_preemption.py
-│   └── test_marketplace.py
-├── fqec/
-│   ├── test_syndrome_format.py
-│   ├── test_decoder_interface.py
-│   ├── test_logical_gates.py
-│   └── test_cross_vendor.py
-├── qnip/
-│   ├── test_link_layer.py
-│   ├── test_network_layer.py
-│   ├── test_transport_layer.py
-│   └── test_management.py
-├── cmqc/
-│   ├── test_equivalence.py
-│   ├── test_optimization_passes.py
-│   └── test_multi_target.py
-├── fqce/
-│   ├── test_exchange_protocol.py
-│   ├── test_translation.py
-│   └── test_drift_prediction.py
-├── qfo/
-│   ├── test_metrics.py
-│   ├── test_tracing.py
-│   └── test_logging.py
-├── qfit/
-│   ├── test_conformance_runner.py
-│   ├── test_interop_matrix.py
-│   └── test_chaos.py
-└── qfgg/
-    ├── test_policy_enforcement.py
-    ├── test_data_sovereignty.py
-    └── test_audit_trail.py
+CDCE Experiment = (violation_spec, target_gap_range, duration, safety_bounds, compliance_scope)
+
+Safety Bounds (stricter than GDCE):
+- Max control violations: <= 3 per experiment
+- Max gap-indices affected: <= 100
+- Max duration: <= 1000 gap-indices
+- Auto-rollback: Immediate on any unverified remediation
+- Auditor notification: Pre-experiment briefing; post-experiment report
+
+Execution:
+1. SCHEDULE: GAQS schedules CDCE as compliance workload (priority = regulatory criticality)
+2. INJECT: At target gap-indices, inject violation via controlled mutation:
+   - Config: Modify tenant classical state in GABP
+   - Access: Modify TLGA/TBGA
+   - Encryption: Expire cert in GKI
+   - QEC: Inject syndrome error
+   - Network: Modify GRP policy
+3. DETECT: GCO evaluates CGA at injected indices; expects verdict = false
+4. REMEDIATE: Remediator triggers automated correction
+5. VERIFY: Post-remediation CGA must be all true; RGA generated
+6. EVIDENCE: All steps gap-attested in TGSV
+7. REPORT: CDCE Report generated with metrics
 ```
+
+### 10.4 CDCE Metrics: Compliance Validation Effectiveness
+
+| Metric | Definition | Target |
+|--------|------------|--------|
+| **DetectionRate** | $\frac{|\text{Injected violations detected}|}{|\text{Injected violations}|}$ | 1.0 (100%) |
+| **RemediationRate** | $\frac{|\text{Violations auto-remediated}|}{|\text{Detected violations}|}$ | 1.0 |
+| **RemediationLatency** | Median gap-indices from detection to RGA | $\leq \text{GRTO}_{\text{Gold}}$ |
+| **EvidenceCompleteness** | $\frac{|\text{Required CDCE evidence present}|}{|\text{Required CDCE evidence}|}$ | 1.0 |
+| **FalsePositiveRate** | $\frac{|\text{Non-injected violations reported}|}{|\text{Total violations reported}|}$ | 0 |
+| **ControlCoverage** | $\frac{|\text{Controls tested by CDCE}|}{|\text{Total controls in TCP}|}$ | $\geq 0.95$ |
+
+### 10.5 PrimeBookOne as Compliance Test Oracle
+
+PrimeBookOne's 3.67B gap sequence provides **deterministic test oracle**:
+
+- **Ground truth**: Gap-values $d_n$ immutable $\to$ expected CGA verdicts computable
+- **Reproducibility**: Same gap-sequence $\to$ identical CDCE results
+- **Coverage**: All gap-indices testable; record gaps as high-value test points
+- **Statistical power**: Twin/cousin/sexy primes as correlation test vectors
+
+### 10.6 Continuous Compliance Validation: The Compliance Validation Operator (CVO)
+
+The **Compliance Validation Operator (CVO)** runs continuous CDCE:
+
+- **Schedule**: Every 10,000 gap-indices (aligned with micro-snapshot cadence)
+- **Scope Rotation**: Cycle through all violation types across all tenants
+- **Reporting**: CDCE metrics to A3-28 observability; compliance dashboard
+- **Remediation**: Failed validations $\to$ TCP patches, RME updates, control enhancements
+- **Audit Trail**: Every CDCE experiment $\to$ Gap-Attested CDCE Report (CCDR) in TGSV
+
+### 10.7 Compliance Penetration Testing: Gap-Topological Red Team
+
+Beyond CDCE (automated), the federation supports **Gap-Topological Red Team (GTRT)** exercises:
+
+- **Scope**: Full tenant gap-range $\mathcal{R}_T$ or federation-wide
+- **Adversary Model**: Gap-aware attacker (knows gap-topology, GKI, TGSV)
+- **TTPs**: Gap-index enumeration, attestation forgery attempts, TGSV exfiltration, GKI key extraction, quantum side-channels
+- **Validation**: Can adversary create valid CGA without detection? Can they violate constraints without VGE?
+- **Reporting**: GTRT Report $\to$ Gap-attested; feeds TCP hardening
+
+### 10.8 Compliance Regression Testing
+
+Every RME update, TCP version change, or regulatory change triggers **Compliance Regression Testing (CRT)**:
+
+```
+CRT(Change = {ΔTCP, ΔRME, ΔRegulation}):
+
+1. IDENTIFY: Affected gap-ranges, constraints, tenants
+2. REPLAY: Re-evaluate CGA for last 100,000 gap-indices with new logic
+3. COMPARE: Old verdicts vs. new verdicts
+4. CLASSIFY:
+   - No change: Verdicts identical
+   - Improvement: False -> True (remediation of false negative)
+   - Regression: True -> False (new false negative - CRITICAL)
+   - Expected: False -> False (known gap, now correctly detected)
+5. REPORT: CRT Report with regression count, affected tenants
+6. BLOCK: If Regression > 0, block deployment; require fix
+7. DEPLOY: If clean, deploy new logic at next gap-index
+```
+
+CRT ensures **compliance logic changes never introduce silent failures**.

@@ -1,126 +1,116 @@
-# Quantum_Federation_Interoperability_Prime_Gaps — Piece 06/12
-## Article 3: A3-30 — Quantum Federation Interoperability Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 03:31:00 UTC
+# Quantum_Federation_Compliance_Prime_Gaps — Piece 06/12
+## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
+**Piece:** 06 of 12
+**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
-# 4. Gap Interdependencies and Cascade Effects
+### 6.1 Audit Framework: Gap-Attested Audit Evidence
 
-## 4.1 Dependency Graph
+Traditional audits rely on sampling, screenshots, and narratives. The federation provides **Gap-Attested Audit Evidence (GAE)**—cryptographically verifiable, complete, point-in-time compliance proof for any gap-index or gap-window.
+
+### 6.2 Audit Evidence Package (AEP)
+
+An **Audit Evidence Package** for tenant $T$, gap-window $W = [n_s, n_e]$, regulation set $\mathcal{R}$:
+
+$$\text{AEP}(T, W, \mathcal{R}) = \Big\{ \text{CGA}_n^T, \mathcal{E}_n^T, \text{RGA}_n^T, \text{VGE}_n^T, \text{TCP}_T^{(v(n))} \Big\}_{n \in W \cap \mathcal{R}_T^{\mathcal{R}}}$$
+
+Where $\mathcal{R}_T^{\mathcal{R}}$ is the gap-range subject to regulations $\mathcal{R}$, and $v(n)$ is the TCP version active at $n$.
+
+### 6.3 AEP Verification: Auditor Workflow
+
+Auditor verifies AEP without federation trust:
 
 ```
-G1 (QHAL) → G2 (QISA) → G8 (CMQC)
-    ↓           ↓            ↓
-G3 (QSIF) ← G4 (QFCP) ← G5 (QRDR)
-    ↓           ↓            ↓
-G6 (FQEC) ← G7 (QNIP) ← G9 (FQCE)
-    ↓           ↓            ↓
-G10 (QFO) ← G11 (QFIT) ← G12 (QFGG)
+VerifyAEP(AEP, AuditorPK, FederationRootPK):
+
+1. VERIFY FEDERATION ROOT: Check FederationRootPK against known trust anchor
+2. FOR EACH n in W:
+   a. VERIFY CGA SIGNATURE: Verify_CK_T(CGA_n^T) using tenant's compliance key
+      - CK_T certified by FederationRootPK (A3-24 GKI hierarchy)
+   b. VERIFY GABP INCLUSION: Check CGA_n^T.merkle includes GABP_n^T
+      - Proves CGA evaluates actual runtime state
+   c. VERIFY EVIDENCE INCLUSION: Check CGA_n^T.merkle includes required evidence
+      - Proves evidence existed at n
+   d. EVALUATE CONSTRAINTS: Re-run C.predicate(GABP_n^T) for each C in TCP_T
+      - Auditor can independently verify verdicts
+   e. CHECK CONTINUITY: Verify neighborhood Merkle links (n-1, n, n+1)
+      - Proves no gap-indices skipped
+   f. VERIFY REMEDIATION: If VGE_n^T exists, check corresponding RGA exists
+      - Proves closed-loop remediation
+3. AGGREGATE: Compute compliance rate, violation count, remediation metrics
+4. ISSUE AUDIT ATTESTATION: Sign_AuditorPK(AEP, verdict, metrics, timestamp)
 ```
 
-## 4.2 Critical Path Analysis
+### 6.4 Point-in-Time Audit: Any Gap-Index, Any Time
 
-**Primary Critical Path:** G1 → G2 → G4 → G5 → G7
-- Without QHAL (G1), no common hardware model for QISA (G2)
-- Without QISA (G2), QFCP (G4) has no instruction semantics
-- Without QFCP (G4), QRDR (G5) cannot express resource operations
-- Without QRDR (G5), QNIP (G7) cannot reserve network resources
+Auditors can request AEP for **any historical gap-index**:
 
-**Secondary Critical Path:** G3 → G6 → G8 → G10
-- QSIF (G3) enables state interchange for FQEC (G6) syndromes
-- FQEC (G6) requires CMQC (G8) for cross-vendor logical gates
-- CMQC (G8) needs QFO (G10) for optimization feedback
+- **Current compliance**: $W = [n_{\text{now}} - 1000, n_{\text{now}}]$
+- **Quarterly review**: $W = [n_{\text{quarter_start}}, n_{\text{quarter_end}}]$
+- **Incident investigation**: $W = [n_{\text{incident}} - 10000, n_{\text{incident}} + 10000]$
+- **Full history**: $W = \mathcal{R}_T$ (entire tenant gap-range)
 
-**Tertiary Path:** G9 → G10 → G11 → G12
-- FQCE (G9) feeds QFO (G10) calibration metrics
-- QFO (G10) provides data for QFIT (G11) validation
-- QFIT (Q11) evidence supports QFGG (G12) certification
+All equally verifiable—no data reconstruction, no sampling bias.
 
-## 4.3 Cascade Failure Scenarios
+### 6.5 Standardized Audit Formats: OSCAL Gap-Profile
 
-### Scenario A: Cross-Modality VQE Optimization
-1. Application submits VQE circuit (requires G1, G2, G8)
-2. Federation scheduler places ansatz on superconducting, optimizer on ion trap (requires G4, G5)
-3. Parameter updates require state transfer between modalities (requires G3, G7)
-4. Mid-circuit measurement feedforward crosses modality boundary (requires G4, G8)
-5. **Failure point**: No cross-modality state transfer (G3, G7) → optimization stalls
+The federation exports AEP in **OSCAL (Open Security Controls Assessment Language)** with gap-extensions:
 
-### Scenario B: Distributed Quantum Error Correction
-1. Logical qubit spans 3 vendors (requires G1, G6)
-2. Syndrome extraction on each vendor (requires G4, G8)
-3. Syndromes streamed to distributed decoder (requires G4, G9)
-4. Correction operations applied across vendors (requires G2, G7)
-5. **Failure point**: No federated decoder interface (G6) or cross-vendor logical gates (G8)
+```xml
+<oscal-gap-profile>
+  <metadata>
+    <title>Quantum Federation Compliance Assessment</title>
+    <gap-index-base>1</gap-index-base>
+    <gap-index-last>3670000000</gap-index-last>
+    <federation-root-pk>...</federation-root-pk>
+  </metadata>
+  <tenant>
+    <tenant-id>T</tenant-id>
+    <gap-range>...</gap-range>
+    <tcp-versions>...</tcp-versions>
+  </tenant>
+  <assessment-results>
+    <gap-window start="n_s" end="n_e">
+      <compliance-rate>0.9997</compliance-rate>
+      <violations>
+        <violation gap-index="n_v" constraint="C_x" verdict="false">
+          <evidence-ref>...</evidence-ref>
+          <remediation>
+            <rga-gap-index>n_r</rga-gap-index>
+            <verified>true</verified>
+          </remediation>
+        </violation>
+      </violations>
+    </gap-window>
+  </assessment-results>
+</oscal-gap-profile>
+```
 
-### Scenario C: Quantum Network Application (QKD + Computing)
-1. QKD keys generated via quantum network (requires G7)
-2. Keys used for quantum-secure classical communication (requires G4)
-3. Quantum computation uses keys for encrypted input/output (requires G1, G2)
-4. **Failure point**: QNIP (G7) not interoperable with QFCP (G4) → key management broken
+### 6.6 Continuous Audit: Real-Time Auditor Access
 
----
+Auditors don't wait for reports—they **stream compliance**:
 
-# 5. Mitigation Strategies and Interim Solutions
+- **Read-only TGSV access**: Auditor gets gap-scoped read credentials (A3-24)
+- **Live CGA stream**: Subscribe to CGA_n^T via gap-pub/sub (A3-28 networking)
+- **Dashboard API**: Real-time compliance metrics via A3-28 observability
+- **Alert webhook**: VGE/RGA events pushed to auditor SIEM
 
-## 5.1 Near-Term Mitigations (0-12 months)
+### 6.7 Audit Evidence Retention and Disposal
 
-| Gap | Mitigation | Effort | Effectiveness |
-|-----|------------|--------|---------------|
-| G1 | Vendor-specific QHAL adapters + common subset | Medium | 50% |
-| G2 | QIR as de facto IR; per-vendor backends | Low | 60% |
-| G3 | QCSchema extension for federation state | Medium | 40% |
-| G4 | gRPC + Protobuf with quantum extensions | Medium | 55% |
-| G5 | Kubernetes CRDs for quantum resources | Low | 45% |
-| G6 | Standard syndrome format (OpenQASM 4.0) | Medium | 50% |
-| G7 | ETSI QKD 004 + IETF QIRG draft adoption | High | 30% |
-| G8 | TKET/Qiskit/Cirq adapter pattern | Medium | 55% |
-| G9 | Calibration metadata in QSIF | Low | 40% |
-| G10 | OpenTelemetry + custom quantum metrics | Medium | 50% |
-| G11 | Weekly integration test matrix (3 vendors) | Medium | 45% |
-| G12 | MOU templates + shared liability framework | Low | 35% |
+AEP retention follows regulatory requirements (Piece 03), but **audit attestations** (AuditorPK signatures) are retained permanently in **Audit Gap-Attestation Vault (AGAV)**—a federation-level, auditor-controlled TGSV partition.
 
-## 5.2 Medium-Term Solutions (12-36 months)
+### 6.8 Third-Party Attestation: FedRAMP, ISO, SOC2
 
-### 5.2.1 Quantum Federation Runtime (QFR)
-Unified runtime providing:
-- QHAL implementation with modality plugins
-- QISA binary format with JIT compilation
-- QFCP client/server libraries
-- QRDR scheduler integration
-- Built-in observability (QFO)
+For formal certifications (FedRAMP ATO, ISO 27001, SOC2 Type 2):
 
-### 5.2.2 Cross-Modality Compilation Service
-- QIR-based multi-target compiler
-- Verified semantics preservation
-- Error-aware optimization with fidelity models
-- Federation placement optimization
+1. **3PAO/Assessor** gets federated auditor credentials
+2. **Assessment gap-window** defined (e.g., 90 days = ~7.7M gaps in 0.0)
+3. **AEP generated** for full assessment window
+4. **Assessor verifies** using VerifyAEP (Section 6.3)
+5. **Attestation issued** as Gap-Attested Certification (GAC):
 
-### 5.2.3 Federated Error Correction Service
-- Standard syndrome format (Apache Arrow + quantum schema)
-- Decoder federation with consensus
-- Cross-vendor logical qubit support
-- Real-time correction feedforward
+$$\text{GAC} = \text{Sign}_{\text{AssessorPK}}\big( \text{Standard}, T, W, \text{AEP hash}, \text{Verdict}, \text{Expiry}_n \big)$$
 
----
-
-## 5.3 Long-Term Architectural Solutions (36+ months)
-
-### 5.3.1 Quantum Operating System (QOS)
-- Quantum process management
-- Quantum memory virtualization
-- Quantum device drivers (standardized)
-- Quantum network stack (QNIP native)
-- Quantum security subsystem (QRA native)
-
-### 5.3.2 Quantum Internet Protocol Suite
-- Quantum link layer (entanglement generation)
-- Quantum network layer (routing, swapping)
-- Quantum transport layer (reliable qubit delivery)
-- Quantum application layer (distributed computing, QKD, sensing)
-
-### 5.3.3 Self-Optimizing Federation
-- ML-based workload placement
-- Predictive calibration management
-- Autonomous error correction adaptation
-- Economic optimization (cost/fidelity/latency)
+6. **GAC stored** in tenant's TGSV and federation certification registry
+7. **Continuous monitoring**: GCO keeps CGA stream active; assessor re-verifies periodically
