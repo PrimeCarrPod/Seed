@@ -149,7 +149,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A3-35 | Quantum_Federation_Observability_Prime_Gaps.md | Gap telemetry as first-class observable | ✅ Done |
 | A3-36 | Quantum_Federation_Automation_Prime_Gaps.md | Gap-driven operators, self-healing | ✅ Done |
 | A3-37 | Quantum_Federation_Standards_Prime_Gaps.md | Gap-native APIs, interoperability | ✅ Done |
-| A3-38 | Quantum_Federation_Benchmarks_Prime_Gaps.md | Gap-derived benchmarks | ⏳ |
+| A3-38 | Quantum_Federation_Benchmarks_Prime_Gaps.md | Gap-derived benchmarks, performance standards | ✅ Done |
 | A3-39 | Quantum_Federation_Roadmap_Prime_Gaps.md | 4.0, 5.0 directory extensions | ⏳ |
 | A3-40 | Synthesis_Hilbert_Space.md | Complete QM from primes | ⏳ |
 
@@ -294,23 +294,23 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 - [ ] Tag release `v1.0-prime-electron-360`
 
 ---
-
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (35/40) — A3-35, A3-36, A3-37 COMPLETE
-
-**Next Action:** Begin Article 3: A3-38 Quantum_Federation_Benchmarks_Prime_Gaps.md, 350+ lines
-
+ 
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (36/40) — A3-35, A3-36, A3-37, A3-38 COMPLETE
+ 
+**Next Action:** Begin Article 3: A3-39 Quantum_Federation_Roadmap_Prime_Gaps.md, 350+ lines
+ 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_6571ed1f-0e5d-4f41-88fd-9d8549124183
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3_37_QUANTUM_FEDERATION_STANDARDS_20260824.md
-# Continue with Article 3: A3-38 Quantum_Federation_Benchmarks_Prime_Gaps.md
+cat CSMLogs/august26/RESUME_SESSION_A3_38_QUANTUM_FEDERATION_BENCHMARKS_20260824.md
+# Continue with Article 3: A3-39 Quantum_Federation_Roadmap_Prime_Gaps.md
 ```
-
+ 
 ---
-
+ 
 *This todo list grows and evolves with research. Each file creation updates this list.*
 ---
 
@@ -396,17 +396,17 @@ C_Article3_HilbertSpace/       (11 articles completed)
 - [x] `REPOSITORY_ORGANIZATION_MANIFEST.md` — Complete file inventory (to be created)
 
 ---
-
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (35/40) — A3-35, A3-36, A3-37 COMPLETE
-
-**Next Action:** Begin Article 3: A3-38 Quantum_Federation_Benchmarks_Prime_Gaps.md, 350+ lines
-
+ 
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (36/40) — A3-35, A3-36, A3-37, A3-38 COMPLETE
+ 
+**Next Action:** Begin Article 3: A3-39 Quantum_Federation_Roadmap_Prime_Gaps.md, 350+ lines
+ 
 **Commands to Resume:**
 ```bash
 cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_6571ed1f-0e5d-4f41-88fd-9d8549124183
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3_37_QUANTUM_FEDERATION_STANDARDS_20260824.md
-# Continue with Article 3: A3-38 Quantum_Federation_Benchmarks_Prime_Gaps.md
+cat CSMLogs/august26/RESUME_SESSION_A3_38_QUANTUM_FEDERATION_BENCHMARKS_20260824.md
+# Continue with Article 3: A3-39 Quantum_Federation_Roadmap_Prime_Gaps.md
 ```
