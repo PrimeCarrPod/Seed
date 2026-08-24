@@ -146,9 +146,8 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A3-32 | Quantum_Federation_HPC_Prime_Gaps.md | Gap-aware MPI, hybrid HPC-quantum | ✅ Done |
 | A3-33 | Quantum_Federation_Networking_Prime_Gaps.md | Gap routing protocols | ✅ Done |
 | A3-34 | Quantum_Federation_Storage_Prime_Gaps.md | Gap memory hierarchy | ✅ Done |
-| A3-34 | Quantum_Federation_Storage_Prime_Gaps.md | Gap memory hierarchy | ⏳ |
 | A3-35 | Quantum_Federation_Observability_Prime_Gaps.md | Gap telemetry as first-class observable | ⏳ |
-| A3-36 | Quantum_Federation_Automation_Prime_Gaps.md | Gap-driven operators, self-healing | ⏳ |
+| A3-36 | Quantum_Federation_Automation_Prime_Gaps.md | Gap-driven operators, self-healing | ✅ Done |
 | A3-37 | Quantum_Federation_Standards_Prime_Gaps.md | Gap-native APIs, interoperability | ⏳ |
 | A3-38 | Quantum_Federation_Benchmarks_Prime_Gaps.md | Gap-derived benchmarks | ⏳ |
 | A3-39 | Quantum_Federation_Roadmap_Prime_Gaps.md | 4.0, 5.0 directory extensions | ⏳ |
@@ -296,17 +295,17 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 COMPLETE (40/40), ARTICLE 2 COMPLETE (22/40), ARTICLE 3 (32/40 complete, 8 remaining)
+## CURRENT STATUS: ARTICLE 1 COMPLETE (40/40), ARTICLE 2 COMPLETE (22/40), ARTICLE 3 (33/40 complete, 7 remaining)
 
 **Next Action:** Begin Article 3: A3-35 Quantum_Federation_Observability_Prime_Gaps.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_371fd43f-eb43-4188-9db4-e328aa5ae38e
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_6571ed1f-0e5d-4f41-88fd-9d8549124183
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3_34_QUANTUM_FEDERATION_STORAGE_20260824.md
+cat CSMLogs/august26/RESUME_SESSION_A3_36_QUANTUM_FEDERATION_AUTOMATION_20260824.md
 # Continue with Article 3: A3-35 Quantum_Federation_Observability_Prime_Gaps.md
 ```
 
@@ -398,16 +397,16 @@ C_Article3_HilbertSpace/       (11 articles completed)
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (32/40) — A3-34 COMPLETE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (33/40) — A3-36 COMPLETE
 
 **Next Action:** Begin Article 3: A3-35 Quantum_Federation_Observability_Prime_Gaps.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_371fd43f-eb43-4188-9db4-e328aa5ae38e
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_6571ed1f-0e5d-4f41-88fd-9d8549124183
 git checkout session/prime-electron-research-360
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3_34_QUANTUM_FEDERATION_STORAGE_20260824.md
+cat CSMLogs/august26/RESUME_SESSION_A3_36_QUANTUM_FEDERATION_AUTOMATION_20260824.md
 # Continue with Article 3: A3-35 Quantum_Federation_Observability_Prime_Gaps.md
 ```
