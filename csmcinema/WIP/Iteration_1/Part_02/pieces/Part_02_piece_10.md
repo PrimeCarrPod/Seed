@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 10/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 10 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 10: THE DEPARTURE — THE CUT EXECUTED, THE PROMISES BROKEN
 
 ## WILLIAMS VOICE — MORK MORNING REGISTER (THE MORNING AFTER THE END)
@@ -68,7 +56,7 @@ So* *they* *leave*.
 > 
 > **MISINTERPRETATION CASCADE:** *"The* *AI* *initially* *scored* *Jason* *as* *villain*. *Correction*: *Jason* *is* *tragic* *hero*. *The* *flaw* *(hamartia)* *is* *not* *weakness* *but* *excess* *of* *destiny*. *He* *is* *too* *much* *hero* *for* *one* *life*. *Lemnos* *was* *the* *life* *he* *could* *have* *had*. *He* *rejects* *it* *to* *become* *the* *hero* *history* *requires*. *The* *promises* *broken* *are* *the* *price* *of* *the* *legend*."
 > 
-> **IRONY FLAG:** *"The* *most* *honest* *moment* *in* *the* *Argonautica* — *Jason* *admitting* *he* *leaves* *because* *he* *must* *be* *the* *hero* — *is* *the* *moment* *he* *becomes* *truly* *human*. *The* *AI* *detects*: *Vulnerability* *index* *spikes* *to* *0.98*. *The* *hero* *cracks*. *The* *man* *emerges*. *The* *man* *is* *more* *dangerous* *than* *the* *hero*."
+> **IRONY FLAG:** *"The* *most* *honest* *moment* *in* *the* *Argonautica* — *Jason* *admitting* *he* *leaves* *because* *he* *must* *be* *the* *hero* — *is* *the* *moment* *he* *becomes* *truly* *human*. *The* *AI* *detects*: *Vulnerability* *index* *spikes* *to* *0.98*. *The* *hero* *cracks*. *The* *man* *emerges*. *The* *man* *is* *more* *dangerous* *than* *the* *hero*."*
 
 ## GREEK FATES PARALLEL — THE CUT'S REVERBERATION
 
