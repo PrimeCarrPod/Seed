@@ -2854,4 +2854,49 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 - A4-02: Strong_Coupling_Gap_Records.md (1492 lines) ✅
 - A4-03: Weak_Coupling_Gap_Modulo_Classes.md (1542 lines) ✅ **NEW**
 
-**Next Action:** Begin Article 4: A4-04 Running_Couplings_RG_Flow.md, 350+ lines
+---
+
+### 2026-08-25T01:50:00Z — Article 4 A4-04 Complete
+- Created 12 pieces for A4-04: Running_Couplings_RG_Flow
+- Concatenated: 1780 lines (≥350 target)
+- Zipped: article4_A4-04_pieces.zip (74,749 bytes)
+- Organized: D_Article4_Couplings/full/ + /zip/
+- All committed and pushed
+
+| File | Lines | Status |
+|------|-------|--------|
+| A4-04_Running_Couplings_RG_Flow.md | 1780 | ✅ Committed |
+| article4_A4-04_pieces.zip | — | ✅ Committed |
+
+---
+
+## Article 4 Running Total: 4 files, 6026 lines
+- A4-01: Fine_Structure_Constant_Prime_Gaps.md (1212 lines) ✅
+- A4-02: Strong_Coupling_Gap_Records.md (1492 lines) ✅
+- A4-03: Weak_Coupling_Gap_Modulo_Classes.md (1542 lines) ✅
+- A4-04: Running_Couplings_RG_Flow.md (1780 lines) ✅ **NEW**
+
+---
+
+### 2026-08-25T02:10:00Z — Article 4 A4-05 Complete
+- Created 12 pieces for A4-05: Unification_Scale_Gap_Convergence
+- Concatenated: 1486 lines (≥350 target)
+- Zipped: article4_A4-05_pieces.zip (60,687 bytes)
+- Organized: D_Article4_Couplings/full/ + /zip/
+- All committed and pushed
+
+| File | Lines | Status |
+|------|-------|--------|
+| A4-05_Unification_Scale_Gap_Convergence.md | 1486 | ✅ Committed |
+| article4_A4-05_pieces.zip | — | ✅ Committed |
+
+---
+
+## Article 4 Running Total: 5 files, 7512 lines
+- A4-01: Fine_Structure_Constant_Prime_Gaps.md (1212 lines) ✅
+- A4-02: Strong_Coupling_Gap_Records.md (1492 lines) ✅
+- A4-03: Weak_Coupling_Gap_Modulo_Classes.md (1542 lines) ✅
+- A4-04: Running_Couplings_RG_Flow.md (1780 lines) ✅
+- A4-05: Unification_Scale_Gap_Convergence.md (1486 lines) ✅ **NEW**
+
+**Next Action:** Begin Article 4: A4-06 Electron_g_Factor_Prime_Series.md, 350+ lines
