@@ -158,8 +158,8 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 | File | Title | Focus | Status |
 |------|-------|-------|--------|
-| A4-01 | Fine_Structure_Constant_Prime_Gaps.md | α from twin prime density | ⏳ |
-| A4-02 | Strong_Coupling_Gap_Records.md | α_s from maximal gaps | ⏳ |
+| A4-01 | Fine_Structure_Constant_Prime_Gaps.md | α from twin prime density | ✅ Done |
+| A4-02 | Strong_Coupling_Gap_Records.md | α_s from maximal gaps | ✅ Done |
 | A4-03 | Weak_Coupling_Gap_Modulo_Classes.md | α_w from gap mod 6 classes | ⏳ |
 | A4-04 | Running_Couplings_RG_Flow.md | RG flow = directory version flow | ⏳ |
 | A4-05 | Unification_Scale_Gap_Convergence.md | GUT scale = UV directory 3.0 | ⏳ |
@@ -397,16 +397,16 @@ C_Article3_HilbertSpace/       (11 articles completed)
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (2/40) — A4-01, A4-02 DONE
 
-**Next Action:** Begin Article 4: A4-01 Fine_Structure_Constant_Prime_Gaps.md, 350+ lines
+**Next Action:** Begin Article 4: A4-03 Weak_Coupling_Gap_Modulo_Classes.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_b526dc84-5ca2-4390-8330-399cb7a8b1ab
-git checkout main
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_e8a9bcb4-c428-4cba-852a-1d6b1787a320
+git checkout session/agent_e8a9bcb4-c428-4cba-852a-1d6b1787a320
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A3_40_SYNTHESIS_HILBERT_SPACE_20260825.md
-# Continue with Article 4: A4-01 Fine_Structure_Constant_Prime_Gaps.md
+cat CSMLogs/august26/RESUME_SESSION_A4_02_STRONG_COUPLING_20260825.md
+# Continue with Article 4: A4-03 Weak_Coupling_Gap_Modulo_Classes.md
 ```

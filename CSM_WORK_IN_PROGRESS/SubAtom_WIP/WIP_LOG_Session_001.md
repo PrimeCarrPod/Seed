@@ -2705,3 +2705,45 @@ cat CSMLogs/august26/RESUME_SESSION_A2-02_20260821.md
 ## Article 3 Running Total: 40 files, ~60,579 lines
 
 **Next Action:** Begin Article 4: A4-01 Fine_Structure_Constant_Prime_Gaps.md, 350+ lines
+
+---
+
+### 2026-08-25T01:15:00Z — Article 4 A4-01 Complete
+- Created 12 pieces for A4-01: Fine_Structure_Constant_Prime_Gaps
+- Concatenated: 1212 lines (≥350 target)
+- Zipped: article4_A4-01_pieces.zip (30,554 bytes)
+- Organized: D_Article4_Couplings/full/ + /zip/
+- All committed and pushed (commit cec64f3f)
+
+| File | Lines | Status | Commit |
+|------|-------|--------|--------|
+| A4-01_Fine_Structure_Constant_Prime_Gaps.md | 1212 | ✅ Committed | cec64f3f |
+| article4_A4-01_pieces.zip | — | ✅ Committed | cec64f3f |
+| CSMLogs/august26/RESUME_SESSION_A4_01_FINE_STRUCTURE_CONSTANT_20260825.md | 88 | ✅ Committed | cec64f3f |
+
+---
+
+## Article 4 Running Total: 1 file, 1212 lines
+- A4-01: Fine_Structure_Constant_Prime_Gaps.md (1212 lines) ✅ **NEW**
+
+---
+
+### 2026-08-25T01:20:00Z — Article 4 A4-02 Complete
+- Created 12 pieces for A4-02: Strong_Coupling_Gap_Records
+- Concatenated: 1492 lines (≥350 target)
+- Zipped: article4_A4-02_pieces.zip (69,506 bytes)
+- Organized: D_Article4_Couplings/full/ + /zip/
+- All committed and pushed
+
+| File | Lines | Status |
+|------|-------|--------|
+| A4-02_Strong_Coupling_Gap_Records.md | 1492 | ✅ Committed |
+| article4_A4-02_pieces.zip | — | ✅ Committed |
+
+---
+
+## Article 4 Running Total: 2 files, 2704 lines
+- A4-01: Fine_Structure_Constant_Prime_Gaps.md (1212 lines) ✅
+- A4-02: Strong_Coupling_Gap_Records.md (1492 lines) ✅ **NEW**
+
+**Next Action:** Begin Article 4: A4-03 Weak_Coupling_Gap_Modulo_Classes.md, 350+ lines
