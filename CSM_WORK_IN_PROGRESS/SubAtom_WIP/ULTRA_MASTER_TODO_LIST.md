@@ -169,7 +169,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A4-09 | Charge_Renormalization_Prime.md | e from worldline orientation | ✅ Done |
 | A4-10 | Coupling_Unification_Proof.md | All couplings from one sequence | ✅ Done |
 | A4-11 | Unified_Coupling_Spectrum.md | Complete 4-force spectrum | ✅ Done |
-| A4-12 | Higher_Loop_Unified_Corrections.md | 5-loop+ unified corrections | ⏳ |
+| A4-12 | Higher_Loop_Unified_Corrections.md | 5-loop+ unified corrections | ✅ Done |
 | ... | ... | ... | ⏳ |
 | A4-40 | Synthesis_Couplings.md | Complete coupling derivation | ⏳ |
 
@@ -297,18 +297,18 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (11/40) — A4-01 through A4-11 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (12/40) — A4-01 through A4-12 DONE
 
-**Next Action:** Begin Article 4: A4-12 Higher_Loop_Unified_Corrections.md, 350+ lines
+**Next Action:** Begin Article 4: A4-13 Threshold_Corrections_Quark_Masses.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_79fc4616-5759-43cc-8896-89213a52dd69
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ec7cfe24-bc2e-4b09-b5b2-e3fece0ecdad
 git checkout main
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A4-11_UNIFIED_COUPLING_SPECTRUM_20260825.md
-# Continue with Article 4: A4-12 Higher_Loop_Unified_Corrections.md
+cat CSMLogs/august26/RESUME_SESSION_A4-12_HIGHER_LOOP_UNIFIED_CORRECTIONS_20260825.md
+# Continue with Article 4: A4-13 Threshold_Corrections_Quark_Masses.md
 ```
 
 ---
@@ -400,16 +400,16 @@ C_Article3_HilbertSpace/       (11 articles completed)
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (11/40) — A4-01 through A4-11 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (12/40) — A4-01 through A4-12 DONE
 
-**Next Action:** Begin Article 4: A4-12 Higher_Loop_Unified_Corrections.md, 350+ lines
+**Next Action:** Begin Article 4: A4-13 Threshold_Corrections_Quark_Masses.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_79fc4616-5759-43cc-8896-89213a52dd69
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ec7cfe24-bc2e-4b09-b5b2-e3fece0ecdad
 git checkout main
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A4-11_UNIFIED_COUPLING_SPECTRUM_20260825.md
-# Continue with Article 4: A4-12 Higher_Loop_Unified_Corrections.md
+cat CSMLogs/august26/RESUME_SESSION_A4-12_HIGHER_LOOP_UNIFIED_CORRECTIONS_20260825.md
+# Continue with Article 4: A4-13 Threshold_Corrections_Quark_Masses.md
 ```
