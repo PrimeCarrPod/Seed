@@ -170,6 +170,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A4-10 | Coupling_Unification_Proof.md | All couplings from one sequence | ✅ Done |
 | A4-11 | Unified_Coupling_Spectrum.md | Complete 4-force spectrum | ✅ Done |
 | A4-12 | Higher_Loop_Unified_Corrections.md | 5-loop+ unified corrections | ✅ Done |
+| A4-13 | Threshold_Corrections_Quark_Masses.md | Quark thresholds from record gaps | ✅ Done |
 | ... | ... | ... | ⏳ |
 | A4-40 | Synthesis_Couplings.md | Complete coupling derivation | ⏳ |
 
@@ -297,9 +298,9 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (12/40) — A4-01 through A4-12 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (13/40) — A4-01 through A4-13 DONE
 
-**Next Action:** Begin Article 4: A4-13 Threshold_Corrections_Quark_Masses.md, 350+ lines
+**Next Action:** Begin Article 4: A4-14 Neutrino_Mass_Thresholds_Seesaw.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
@@ -400,9 +401,9 @@ C_Article3_HilbertSpace/       (11 articles completed)
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (12/40) — A4-01 through A4-12 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (13/40) — A4-01 through A4-13 DONE
 
-**Next Action:** Begin Article 4: A4-13 Threshold_Corrections_Quark_Masses.md, 350+ lines
+**Next Action:** Begin Article 4: A4-14 Neutrino_Mass_Thresholds_Seesaw.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
