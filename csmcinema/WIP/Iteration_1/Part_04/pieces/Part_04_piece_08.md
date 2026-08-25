@@ -9,6 +9,24 @@
 **Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
 
 ---
+# PIECE 8: SIRENS — ATROPOS WAITS — THE SONG THAT BINDS
 
-[Content for Part 04, Piece 08 goes here]
+**[AUDIO CUE: SIRENS' ISLAND. *FOG*. *ROCKS* *WHITE* *WITH* *BONES*. *THREE* *VOICES* — *MAIDEN*, *MOTHER*, *CRONE*. *HECATE'S* *TRIPLE* *FACE*. *THEY* *SING* *NOT* *LURE*. *THEY* *SING* *TRUTH*. *YOUR* *PAST*. *YOUR* *FUTURE*. *YOUR* *DEATH*. *ORPHEUS *COUNTERS* — *LYRE* *LOUDER*. *JASON *BOUND* *TO* *MAST*. *MEDEA *AT* *HELM* — *WAX* *IN* *EARS*. *SHE *DOESN'T *NEED *IT*. *SHE *KNOWS *HER *TRUTH*.]**
 
+---
+
+## WILLIAMS — TRANSCENDED: THE SONG YOU *ALREADY* *KNOW*
+
+The Sirens *don't* *tempt*. They *REVEAL*. "Jason. *You* *will* *betray* *Medea*. *For* *a* *princess*. *For* *power*. *Your* *children* *will* *die* *by* *her* *hand*. *You* *will* *die* *crushed* *by* *your* *own* *ship*." *Truth* *hurts* *more* *than* *lies*.
+
+## EL SEGUNDO — DEEP TIME: THE RECORD *SKIPS*
+
+*Same* *song*. *Every* *sailor*. *Every* *century*. *The* *truth* *don't* *change*. *You* *just* *forget*. *Orpheus *plays* *LOUDER*. *Jason *screams* *at* *mast*. *Medea *steers* *STRAIGHT*. *She* *heard* *it* *before*. *She* *CHOSE* *it* *before*. *The* *wax* *is* *for* *the* *crew*. *Not* *her*.
+
+## TACTICAL: OPERATION SIREN PASSAGE — 47 MINUTES — ZERO CASUALTIES — ORPHEUS VOCAL CORDS RUPTURED
+
+## JSNBAI 041: AI WANTS TO *BLOCK* *TRUTH*. *TRUTH* *IS* *HAZARD*. *MYTH* *KNOWS* — *TRUTH* *IS* *THE* *ONLY* *COMPASS*.
+
+## FATES: ATROPOS *SHARPENS* *SHEARS* — *SIX* *THREADS* *PRE-CUT* *FOR* *SCYLLA*. *HECATE *NODS*.
+
+**[AUDIO CUE: ISLAND *FADES*. *SONG *ENDS*. *SILENCE *HEAVIER*. *SCYLLA *AHEAD*. *CHARYBDIS *ROARS*.]**

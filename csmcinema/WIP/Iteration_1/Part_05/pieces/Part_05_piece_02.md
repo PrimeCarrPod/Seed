@@ -9,6 +9,24 @@
 **Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
 
 ---
+# PIECE 2: PART 5 — THE CAULDRON BOILS — DAUGHTERS' TRAGEDY
 
-[Content for Part 05, Piece 02 goes here]
+**[AUDIO CUE: PALACE *HALL*. *CAULDRON* *STEAMING*. *PELIAS* *DRUNK* *ON* *MEDEA'S* *WINE*. *DAUGHTERS* *CIRCLE* — *WHITE* *ROBES*, *KNIVES* *READY*. *MEDEA *DIRECTS* *LIKE* *CONDUCTOR*. *"*STAB. *BOIL. *STIR. *WAIT*." *JASON *AT* *DOOR* — *WITNESS*. *ORPHEUS *SINGS* *FUNERAL* *HYMN*. *FLEECE *GLITTERS* *IN* *TEMPLE* *BELOW*. *HECATE *WATCHES* *THROUGH* *SMOKE*.]**
 
+---
+
+## WILLIAMS — VIETNAM: THE *ORDERS* *YOU* *GIVE* *TO* *CHILDREN*
+
+*Daughters* *obey*. *Father* *screams*. *Water* *boils*. *Flesh* *sloughs*. *Bones* *clean*. *MeDea* *whispers* *incantation*. *Nothing* *happens*. *Then* *— *RAM* *DEMO* *WORKED*. *PELIAS* *DOESN'T*. *Magic* *fails*. *Or* *CHOSE* *not* *to* *work*. *Daughters* *realize*. *Murderers*. *Medea* *vanishes*. *Jason* *left* *with* *crown* *and* *corpses*. *King* *made* *of* *blood*.
+
+## EL SEGUNDO — STONER LOGIC: *RECIPE* *WORKED* *ON* *RAM*. *DAD* *AIN'T* *RAM*.
+
+*Medea* *knew*. *She* *ALWAYS* *knows*. *Pelias* *dies* *anyway*. *Daughters* *broken*. *Jason* *king* *of* *ruins*. *Medea* *packs*. *"*Corinth*. *Now*." *Jason* *follows*. *He* *always* *follows*. *The* *goddess* *moves*. *The* *mortals* *scramble*. *And* *then* — *exile*.
+
+## TACTICAL: OPERATION CAULDRON — PELIAS DEAD (NATURAL CAUSES ACCELERATED) — DAUGHTERS EXILED — JASON UNSTABLE THRONE — MEDEA DEPARTS WITH FLEECE LORE
+
+## JSNBAI 046: AI *FLAGS* *MANIPULATION* *OF* *FAMILY* *UNIT*. *MEDEA* = *PSYOP* *SPECIALIST*. *RECOMMEND* *COUNTER-INTEL*. *MYTH* *KNOWS* — *FAMILY* *IS* *THE* *BATTLEFIELD*.
+
+## FATES: LACHESIS *MEASURES* *FOUR* *DAUGHTERS'* *THREADS* *FRAYED*. *ATROPOS* *CUTS* *PELIAS* — *FINALLY*. *CLOTHO* *SPINS* *EXILE-GREY*. *CORINTH* *LOOMS*.
+
+**[AUDIO CUE: CAULDRON *SILENT*. *PELIAS* *ASHES*. *DAUGHTERS* *WEEPING*. *JASON* *CROWN* *HEAVY*. *MEDEA *AT* *SHIP*. *ARGO *WAITS*. *FLEECE* *LORE* *IN* *HER* *HEAD*. *CORINTH *ON* *HORIZON*. *THE *TEMPTATION *WAITS*.]**
