@@ -31,8 +31,8 @@ get_article_config() {
             article_letter="D"
             article_name="Couplings"
         fi
-        organized_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter}_Article${article_letter#?}_${article_name}/full"
-        organized_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter}_Article${article_letter#?}_${article_name}/zip"
+        organized_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter}_Article${article_num}_${article_name}/full"
+        organized_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter}_Article${article_num}_${article_name}/zip"
     else
         echo "Error: Article number must be 1-40"
         exit 1
@@ -257,8 +257,8 @@ verify_article() {
     if [[ "$prefix" == "article2" ]]; then article_name="MassSpectrum"; article_letter_dir="B"; fi
     if [[ "$prefix" == "article3" ]]; then article_name="HilbertSpace"; article_letter_dir="C"; fi
     if [[ "$prefix" == "article4" ]]; then article_name="Couplings"; article_letter_dir="D"; fi
-    local org_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_letter_dir}_${article_name}/full"
-    local org_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_letter_dir}_${article_name}/zip"
+    local org_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/full"
+    local org_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/zip"
     
     echo "=== Verification for ${article_letter}-$(printf "%02d" "$article_num") ==="
     
@@ -330,8 +330,8 @@ organize_article() {
     if [[ "$prefix" == "article2" ]]; then article_name="MassSpectrum"; article_letter_dir="B"; fi
     if [[ "$prefix" == "article3" ]]; then article_name="HilbertSpace"; article_letter_dir="C"; fi
     if [[ "$prefix" == "article4" ]]; then article_name="Couplings"; article_letter_dir="D"; fi
-    local org_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_letter_dir}_${article_name}/full"
-    local org_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_letter_dir}_${article_name}/zip"
+    local org_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/full"
+    local org_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/zip"
     
     mkdir -p "$org_full" "$org_zip"
     
