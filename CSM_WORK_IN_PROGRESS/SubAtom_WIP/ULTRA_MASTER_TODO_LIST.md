@@ -180,7 +180,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A4-20 | Flavor_Changing_Neutral_Currents.md | FCNC from gap tunneling | ✅ Done |
 | A4-21 | Rare_Decays_Prime_Predictions.md | μ→eγ, B→Kνν, K→πνν from gaps | ✅ Done |
 | A4-22 | Electric_Dipole_Moments_Gaps.md | eEDM, nEDM, μEDM from worldline CP | ✅ Done |
-| A4-23 | Gravitational_Coupling_Gaps.md | α_G from gap 254, quantum gravity | ⏳ |
+| A4-23 | Gravitational_Coupling_Gaps.md | α_G from gap 254, quantum gravity | ✅ Done |
 | A4-24 | Black_Hole_Entropy_Gaps.md | BH entropy = gap count, Page curve | ⏳ |
 | A4-25 | Cosmological_Constant_Gaps.md | Λ from vacuum gap energy | ⏳ |
 | A4-26 | Inflation_Prime_Gaps.md | Inflation from gap expansion era | ⏳ |
@@ -427,9 +427,9 @@ C_Article3_HilbertSpace/       (11 articles completed)
 
 ---
 
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (22/40) — A4-01 through A4-22 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (23/40) — A4-01 through A4-23 DONE
 
-**Next Action:** Begin Article 4: A4-23 Gravitational_Coupling_Gaps.md, 350+ lines
+**Next Action:** Begin Article 4: A4-24 Black_Hole_Entropy_Gaps.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
@@ -437,6 +437,6 @@ cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_69518265-2eae-
 git checkout main
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A4-22_ELECTRIC_DIPOLE_MOMENTS_GAPS_20260825.md
-# Continue with Article 4: A4-23 Gravitational_Coupling_Gaps.md
+cat CSMLogs/august26/RESUME_SESSION_A4-23_GRAVITATIONAL_COUPLING_GAPS_20260825.md
+# Continue with Article 4: A4-24 Black_Hole_Entropy_Gaps.md
 ```
