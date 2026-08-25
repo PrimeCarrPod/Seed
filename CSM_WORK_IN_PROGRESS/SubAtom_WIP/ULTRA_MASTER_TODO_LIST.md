@@ -173,7 +173,7 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 | A4-13 | Threshold_Corrections_Quark_Masses.md | Quark thresholds from record gaps | ✅ Done |
 | A4-14 | Neutrino_Mass_Thresholds_Seesaw.md | Neutrino masses from missing gaps | ✅ Done |
 | A4-15 | Higgs_Vacuum_Stability_Gaps.md | Higgs potential from gap statistics | ✅ Done |
-| A4-16 | Top_Yukawa_Prime_Gaps.md | Top quark Yukawa from record gap 14 | ⏳ |
+| A4-16 | Top_Yukawa_Prime_Gaps.md | Top quark Yukawa from record gap 14 | ✅ Done |
 | A4-17 | Bottom_Tau_Unification_Gaps.md | b-τ unification from gap clusters | ⏳ |
 | A4-18 | Yukawa_Unification_Proof.md | All Yukawas from single gap sequence | ⏳ |
 | A4-19 | CKM_CP_Violation_Gaps.md | δ_CP, Jarlskog from gap phases | ⏳ |
@@ -324,9 +324,9 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
  
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (15/40) — A4-01 through A4-15 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (16/40) — A4-01 through A4-16 DONE
 
-**Next Action:** Begin Article 4: A4-16 Top_Yukawa_Prime_Gaps.md, 350+ lines
+**Next Action:** Begin Article 4: A4-17 Bottom_Tau_Unification_Gaps.md, 350+ lines
  
 **Commands to Resume:**
 ```bash
