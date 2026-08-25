@@ -21,9 +21,9 @@ COMMANDS:
   verify <article_num>                    Verify piece count, concat lines, zip contents
   organize <article_num>                  Copy concat+zip to organized folders
   full-cycle <article_num> <title>        Complete cycle: create, concat, zip, organize, commit
-  commit-push <article_num> <msg>         Commit all files and push to session branch
-  push-session                            Push session branch to origin
-  merge-to-main                           Merge session branch to main (reset + fast-forward)
+  commit-push <article_num> <msg>         Commit all files and push DIRECTLY TO MAIN
+  push-main                               Push current branch directly to main
+  merge-session                           Merge session branch to main (legacy)
   list                                    List all article pieces in root
   clean-pieces <article_num>              Remove loose pieces from root (after verify)
 
@@ -34,8 +34,8 @@ EXAMPLES:
   ./GitHub_handler.sh verify 20
   ./GitHub_handler.sh organize 20
   ./GitHub_handler.sh commit-push 20 "Add A3-20: Quantum_Internet_Prime_Gaps"
-  ./GitHub_handler.sh push-session
-  ./GitHub_handler.sh merge-to-main
+  ./GitHub_handler.sh push-main
+  ./GitHub_handler.sh merge-session
   ./GitHub_handler.sh full-cycle 20 "Quantum_Internet_Prime_Gaps"
 
 EOF
@@ -304,16 +304,16 @@ commit_and_push() {
     echo "Committing A3-$(printf "%02d" "$article_num")..."
     git add -A
     git commit -m "$msg"
-    echo "Pushing to session branch..."
-    git push origin session/prime-electron-research-360
+    echo "Pushing directly to main..."
+    git push origin main
 }
 
-push_session() {
-    echo "Pushing session branch to origin..."
-    git push origin session/prime-electron-research-360
+push_main() {
+    echo "Pushing to main..."
+    git push origin main
 }
 
-merge_to_main() {
+merge_session_to_main() {
     echo "=== Merging session branch to main ==="
     
     # Ensure we're on session branch
@@ -357,8 +357,8 @@ case "${1:-help}" in
         echo ">>> ./GitHub_handler.sh commit-push $2 \"Add A3-$(printf "%02d" "$2"): $3 - 12 pieces, concat, zip\""
         ;;
     commit-push) commit_and_push "$2" "$3" ;;
-    push-session) push_session ;;
-    merge-to-main) merge_to_main ;;
+    push-main) push_main ;;
+    merge-session) merge_session_to_main ;;
     list) list_articles ;;
     clean-pieces) clean_pieces "$2" ;;
     help|*) show_help ;;
