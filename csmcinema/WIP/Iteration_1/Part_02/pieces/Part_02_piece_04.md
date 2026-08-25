@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 04/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 04 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 04: HERACLES — THE ONE WHO SAID NO
 
 ## WILLIAMS VOICE — VIETNAM REGISTER
@@ -74,7 +62,7 @@ He *waves them off*. "Not today, ladies. Got work to do."
 > 
 > **MISINTERPRETATION CASCADE:** *"The AI notes: Heracles on the Argo is *not* 'staying pure.' He's *containing a nuclear reaction*. His libido = *destructive potential*. The Nemean Lion skin isn't armor. It's a *warning*. 'I killed the unkillable. I *am* the unkillable. *Don't touch me*.' The Lemnian women *understand this*. They *feel* the radiation. They *stay away* from the ship."*
 > 
-> **IRONY FLAG:** *"The *only* person Heracles *talks to* on Lemnos is *Hylas*. The *boy*. The *beautiful boy*. The *vulnerable* one. Heracles *protects* Hylas from the women. *From himself*. The AI detects: *Projective identification efficiency: 94%*. Heracles *sees* his own lost innocence in Hylas. He *guards* it. *Fiercely*.*
+> **IRONY FLAG:** *"The *only* person Heracles *talks to* on Lemnos is *Hylas*. The *boy*. The *beautiful boy*. The *vulnerable* one. Heracles *protects* Hylas from the women. *From himself*. The AI detects: *Projective identification efficiency: 94%*. Heracles *sees* his own lost innocence in Hylas. He *guards* it. *Fiercely*."*
 
 ## GREEK FATES PARALLEL — ATROPOS WHISPERS TO HERACLES
 

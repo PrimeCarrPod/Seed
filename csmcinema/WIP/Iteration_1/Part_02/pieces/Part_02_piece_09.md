@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 09/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 09 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 09: ATROPOS WAITS — THE SHEARS ABOVE THE THREAD
 
 ## WILLIAMS VOICE — VIETNAM REGISTER (THE INEVITABLE)
@@ -21,7 +9,7 @@ Atropos.
 
 **Williams Register — Awakenings Clarity (Terminal):** *Nanu nanu, Atropos.*
 
-She *doesn't* *visit* *Lemnos*. She *is* *Lemnos*. The *volcano* *is* *her* *shears*. *Dormant*. *Waiting*. *The* *magma* *chamber* *is* *her* *hand*. *Pressurized*. *Patient*. *The* *eruption* = *the* *cut*. *Not* *if*. *When*.
+She *doesn't* *visit* *Lemnos*. She *is* *Lemnos*. The *volcano* *is* *her* *shears*. *Dormant*. *Waiting*. The *magma* *chamber* *is* *her* *hand*. *Pressurized*. *Patient*. The *eruption* = *the* *cut*. *Not* *if*. *When*.
 
 *[AUDIO CUE: Deep* *earth* *rumble*. *Infrasound*. *Below* *hearing*. *Felt* *in* *the* *bones*. *The* *volcano* *dreams* *of* *eruption*.]*
 
@@ -72,7 +60,7 @@ On* *Lemnos*, *she's* *been* *waiting* *743* *days*. *Her* *shears* *have* *neve
 > 
 > **MISINTERPRETATION CASCADE:** *"The* *AI* *initially* *read* *Atropos* *as* *oppressor*. *Correction*: *Atropos* *is* *liberator*. *The* *delay* *is* *the* *prison*. *The* *thread* *stretching* *infinitely* *is* *torment*. *The* *cut* *releases* *the* *tension*. *Jason* *becomes* *free* *to* *be* *Jason* *again* (flawed, oath-breaking, *human*). *Hypsipyle* *becomes* *free* *to* *be* *Queen* *alone* (sovereign, *uncompromised*). *Heracles* *becomes* *free* *to* *be* *Heracles* (labor-completing, *god-becoming*).*
 > 
-> **IRONY FLAG:** *"The* *most* *deterministic* *force* *in* *the* *mythos* *enables* *the* *most* *existential* *freedom*. *Atropos* *cuts* *so* *they* *can* *choose*. *The* *cut* *is* *the* *condition* *of* *agency*. *The* *AI* *notes*: *This* *paradox* *recurs* *in* *every* *culture's* *death* *goddess*. *Kali*. *Hel*. *Morrigan*. *Santa* *Muerte*. *The* *ender* *is* *the* *enabler*."
+> **IRONY FLAG:** *"The* *most* *deterministic* *force* *in* *the* *mythos* *enables* *the* *most* *existential* *freedom*. *Atropos* *cuts* *so* *they* *can* *choose*. *The* *cut* *is* *the* *condition* *of* *agency*. *The* *AI* *notes*: *This* *paradox* *recurs* *in* *every* *culture's* *death* *goddess*. *Kali*. *Hel*. *Morrigan*. *Santa* *Muerte*. *The* *ender* *is* *the* *enabler*."*
 
 ## GREEK FATES PARALLEL — ATROPOS'S GLOBAL SISTERS CUTTING
 
@@ -105,7 +93,7 @@ On* *Lemnos*, *she's* *been* *waiting* *743* *days*. *Her* *shears* *have* *neve
 > **Hypsipyle:** "And *Euneus? *Thoas?"
 > **Jason:** "They *are* *Lemnian. *They *will* *rule* *here. *I* *will* *send* *ships. *Gold. *Tribute. *My* *sword* *if* *ever* *needed."
 > **Hypsipyle:** "And *me?"
-> **Jason:** *Long* *silence*. *The* *longest* *of* *his* *life*. *Then*: *"You* *are* *the* *only* *woman* *I* *ever* *loved* *who* *didn't* *need* *saving*. *That's* *why* *I* *must* *leave* *you*. *To* *prove* *you* *didn't* *need* *me*."*
+> **Jason:** *Long* *silence*. *The* *longest* *of* *his* *life*. *Then*: *"You* *are* *the* *only* *woman* *I* *ever* *loved* *who* *didn't* *need* *saving*. *That's* *why* *I* *must* *leave* *you*. *To* *prove* *you* *didn't* *need* *me*."
 > **Hypsipyle:** *Smiles*. *First* *real* *smile* *in* *months*. *"Go,* *Jason. *Heal* *your* *father's* *throne. *I* *will* *heal* *my* *island. *We* *heal* *in* *parallel. *The* *wave* *connects* *us."*
 
 *[AUDIO CUE: A* *kiss*. *Not* *passionate*. *Sealing*. *A* *contract* *signed* *in* *breath*. *The* *sound* *of* *two* *sovereigns* *acknowledging* *the* *cut*.]*

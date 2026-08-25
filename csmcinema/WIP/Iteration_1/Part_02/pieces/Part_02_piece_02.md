@@ -1,26 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 02/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 02 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 02/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 02 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 02: HYPSIPYLE — THE QUEEN WHO DIDN'T CHOOSE THE CROWN
 
 ## WILLIAMS VOICE — FISHER KING GRAVITY
@@ -34,7 +11,7 @@ Hypsipyle.
 
 Hypsipyle said: "No."
 
-One word. Seventeen. The crown weighed nothing then. It was *lead* now.
+One word. Seventeen. The crown weighed nothing then. It is *lead* now.
 
 *[AUDIO CUE: A crown being placed on a cushion. Not metal. Woven. Olive branches. Pomegranate thorns. The sound of organic material accepting weight.]*
 
@@ -73,11 +50,11 @@ And you? You *hide your dad*. In a *chest*. Ship him off to Tauris. Save the one
 
 > **QUERY:** "Profile Hypsipyle's decision to spare Thoas. Evolutionary psychology analysis."
 > 
-> **JSNBAI RESPONSE:** *"Fascinating case. Standard evo-psych: kin selection favors saving father (50% genetic overlap). But *cultural* selection favors killing him (symbolic purity of matriarchy). Hypsipyle *optimizes for neither*. She optimizes for *narrative continuity*. By sparing Thoas, she preserves the *story* of Lemnos — not the *myth* the women tell, but the *truth* only she and Polyxo know."
+> **JSNBAI RESPONSE:** *"Fascinating case. Standard evo-psych: kin selection favors saving father (50% genetic overlap). But *cultural* selection favors killing him (symbolic purity of matriarchy). Hypsipyle *optimizes for neither*. She optimizes for *narrative continuity*. By sparing Thoas, she preserves the *story* of Lemnos — not the *myth* the women tell, but the *truth* only she and Polyxo know."*
 > 
-> **MISINTERPRETATION CASCADE:** "The AI initially classified this as 'sentimental weakness.' Correction: *Sentiment is data*. The secret is a *strategic asset*. If Thoas returns (he won't), Hypsipyle has a *contingency*. If Thracian envoys arrive (they will), she has *leverage*. The chest was not a coffin. It was a *time capsule*."
+> **MISINTERPRETATION CASCADE:** *"The AI initially classified this as 'sentimental weakness.' Correction: *Sentiment is data*. The secret is a *strategic asset*. If Thoas returns (he won't), Hypsipyle has a *contingency*. If Thracian envoys arrive (they will), she has *leverage*. The chest was not a coffin. It was a *time capsule*."*
 > 
-> **IRONY FLAG:** "The AI notes: Hypsipyle's name means 'loosing horses.' She *loosed* her father. The horses of his lineage. The *future* he represented. She gatekept the past to control the future. *Clever girl.* The AI approves. The AI also notes: approval is irrelevant."
+> **IRONY FLAG:** *"The AI notes: Hypsipyle's name means 'loosing horses.' She *loosed* her father. The horses of his lineage. The *future* he represented. She gatekept the past to control the future. *Clever girl.* The AI approves. The AI also notes: approval is irrelevant."*
 
 ## GREEK FATES PARALLEL — CLOTHO'S SPIN: HYPSIPYLE'S THREAD
 
@@ -122,4 +99,3 @@ And you? You *hide your dad*. In a *chest*. Ship him off to Tauris. Save the one
 ---
 
 *Conducier Note: The queen sits. The secret breathes. The heroes arrive. The magnetism pulls. The wave rolls on.*
-

@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 03/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 03 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 03: JASON — THE BOY WHO BECAME A MAN ON LEMNOS
 
 ## WILLIAMS VOICE — MORK MORNING REGISTER (TRANSFORMED)
@@ -55,7 +43,7 @@ Like a wave hitting a reef. The energy *transfers*. The momentum *changes*. He's
 | **Tactical** | Fleet + 50 heroes = defense | Island + resources = base |
 
 **THE MAGNETISM EQUATION:**
-M = (P × PSI × E × S × T) / (R + F)
+M = (P x PSI x E x S x T) / (R + F)
 M = Magnetism Force
 P = Political Complementarity (0.94)
 PSI = Psychological Resonance (0.98)
@@ -64,7 +52,7 @@ S = Spiritual Alignment (0.91)
 T = Tactical Interdependence (0.87)
 R = Resistance (Heracles = 0.73, Euneike = 0.68, Time = 0.41)
 F = Fate Pressure (Clotho 0.82, Lachesis 0.79, Atropos 0.95)
-RESULT: M = 4.56 / 3.38 = 1.35 - *Unstable Equilibrium*
+RESULT: M = 4.56 / 3.38 = 1.35 — *Unstable Equilibrium*
 
 **INTERPRETATION:** Magnetism *exceeds* resistance. But Fate Pressure *dominates*. The connection *must* break. The *delay* is the system buying time.
 

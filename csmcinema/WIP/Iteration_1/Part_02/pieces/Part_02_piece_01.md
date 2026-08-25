@@ -1,26 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 01/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 01 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 01/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 01 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 01: LEMNOS ARRIVAL — THE ISLAND THAT KILLED ITS MEN
 
 ## WILLIAMS VOICE — MORK MORNING REGISTER
@@ -118,4 +95,3 @@ So the Argo pulls up. Fifty guys. One boat. Island of women. Classic setup, righ
 ---
 
 *Conducier Note: The spindle turns. The black sand holds footprints. Fifty heroes step ashore. The women watch. The delay begins. The wave rolls on.*
-

@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 05/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 05 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 05: THE DELAY — TIME AS A WEAPON, TIME AS A WOMB
 
 ## WILLIAMS VOICE — FISHER KING GRAVITY (SLOW TIME)
@@ -89,7 +77,7 @@ Every hero who *stays* fails the *outer* quest. Every hero who *stays* *passes* 
 > 
 > **MISINTERPRETATION CASCADE:** *"The AI initially classified this as 'procrastination.' Correction: *This is *gestation*. The delay *births* the *mature heroes* required for Colchis. The boys who *left* Iolcus *cannot* face the Symplegades, the Harpies, the Dragon. The *men* who *leave* Lemnos *can*. The delay is the *chrysalis*. The caterpillar *dissolves*. The butterfly *forms*.*
 > 
-> **IRONY FLAG:** *"The *most* 'wasted' time in the epic is the *most* *necessary*. The AI calculates: *Quest success probability without delay: 12%*. *Quest success probability with delay: 73%*. The delay *quintuples* success odds. *Heracles knows this*. He *enforces* the delay's *end* — not its *prevention*. He's the *midwife*."
+> **IRONY FLAG:** *"The *most* 'wasted' time in the epic is the *most* *necessary*. The AI calculates: *Quest success probability without delay: 12%*. *Quest success probability with delay: 73%*. The delay *quintuples* success odds. *Heracles knows this*. He *enforces* the delay's *end* — not its *prevention*. He's the *midwife*."*
 
 ## GREEK FATES PARALLEL — THE SEASONS AS FATE'S LOOM
 

@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 06/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 06 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 06: INTEGRATION — THE ARGONAUTS BECOME LEMNIANS
 
 ## WILLIAMS VOICE — MORK MORNING REGISTER (DOMESTIC TRANSFORMED)
@@ -73,7 +61,7 @@ The *exchange* isn't *transactional*. It's *alchemical*. Base metals *become* go
 > 
 > **MISINTERPRETATION CASCADE:** *"The AI initially attributed success to 'sexual access.' Correction: *Sex is the *gateway*, not the *engine*. The engine is *necessity*. The Argonauts *need* a home. The Lemnians *need* defenders/fathers. The *children* are the *contract*. The *governance* is the *institution*. The *culture* is the *emergent property*.*
 > 
-> **IRONY FLAG:** *"The *most* 'heroic' Argonauts (Heracles, Idas, Lynceus) integrate *least*. The *least* 'heroic' (Argus, Tiphys, Nauplius) integrate *most*. *Heroism* = *resistance to integration*. *Competence* = *capacity for integration*. The AI notes: *This inverts the heroic paradigm*."
+> **IRONY FLAG:** *"The *most* 'heroic' Argonauts (Heracles, Idas, Lynceus) integrate *least*. The *least* 'heroic' (Argus, Tiphys, Nauplius) integrate *most*. *Heroism* = *resistance to integration*. *Competence* = *capacity for integration*. The AI notes: *This inverts the heroic paradigm*."*
 
 ## GREEK FATES PARALLEL — CLOTHO'S NEW SPINNING: THE HYBRID THREADS
 

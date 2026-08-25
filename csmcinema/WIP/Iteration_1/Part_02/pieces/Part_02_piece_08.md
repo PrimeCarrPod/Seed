@@ -1,15 +1,3 @@
-# The Assembly Of Heroes First Draft Williams ElSegundo Extreme — Part 02/11 — Piece 08/11
-## Iteration 1 | CSM Cinema | Jason Isaac Brodsky (California 1976)
-**Iteration:** 1 of 7  
-**Part:** 02 of 11  
-**Piece:** 08 of 11  
-**Generated:** 2026-08-25 04:45:32 UTC  
-**Target Read Time:** ~180 minutes per part (cumulative across pieces)  
-**Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
-
----
-
 # PIECE 08: LACHESIS MEASURES — THE COST OF SEVEN HUNDRED FORTY-THREE DAYS
 
 ## WILLIAMS VOICE — FISHER KING GRAVITY (THE MEASURE OF LOSS)
@@ -82,7 +70,7 @@ So Lachesis measures.
 > 
 > **MISINTERPRETATION CASCADE:** *"The AI initially scored this 'ethically justified.' Correction: *Justice requires *consent*. The Argonauts *did not consent* to the delay. *Jason* consented (weakly). *Heracles* *refused*. *The others* *drifted*. *Consent gradient*: Jason (0.6) → Crew (0.3) → Heracles (0.0). *The delay is *imposed* on the *unwilling*. *That is the *cost* Lachesis *cannot measure*. *The *violation* *of* *agency*.*
 > 
-> **IRONY FLAG:** *"The *only* one who *exercised full agency* — Heracles — *bears the *greatest cost* (isolation, betrayal perception). The *ones who *surrendered agency* — the crew — *reap the *greatest benefits* (maturity, fatherhood, skills). *Agency* ≠ *Outcome*. *The *unfairness* *is* *the* *point*."
+> **IRONY FLAG:** *"The *only* one who *exercised full agency* — Heracles — *bears the *greatest cost* (isolation, betrayal perception). The *ones who *surrendered agency* — the crew — *reap the *greatest benefits* (maturity, fatherhood, skills). *Agency* ≠ *Outcome*. *The *unfairness* *is* *the* *point*."*
 
 ## GREEK FATES PARALLEL — LACHESIS'S GLOBAL SCALES
 
