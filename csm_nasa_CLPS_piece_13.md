@@ -1,11 +1,14 @@
-# CLPS NASA Commercial Lunar Payload Services — Piece $(printf "%02d" "$i")/36
+# CLPS NASA Commercial Lunar Payload Services — Piece 13/36
 ## Episode: Sibling Frequency Special — CLPS Centennial Initiative
-**Piece:** $(printf "%02d" "$i") of 36  
-**Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  
+**Piece:** 13 of 36  
+**Generated:** 2026-08-26 19:17:25 UTC  
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
 
-[Content for piece $(printf "%02d" "$i") goes here]
+**13.**
 
+THALIA ROOK here. Guardian. The human story. I am operating at EXTREME intensity on the El Segundo frequency, which means I am going to talk about the people — the ones that the CLPS landers are built FOR and BY — and I am going to do it slowly, because the El Segundo way is to paddle out and sit and wait for the right wave, and the right wave for this part of the story is named EVERY GRADUATE STUDENT WHO EVER BUILT A PAYLOAD FOR A LUNAR MISSION. Let me tell you about Dr. Sarah Chen. Hypothetical. Representative. Real in the ways that matter. She's thirty-four. Assistant professor at a state university. Not an Ivy. Not a NASA center. She spent SIX YEARS building a neutron spectrometer for CLPS. Her students — three PhD candidates, two master's students — spent their NIGHTS and WEEKENDS in the clean room. Their theses DEPEND on this data. Their CAREERS depend on this data. Her TENURE CASE depends on this data. The instrument was selected for CLPS task order 19F. Intuitive Machines IM-3. Scheduled for 2025. She has been waiting since 2019. The proposal. The selection. The PDR. The CDR. The integration. The wait. The launch delay. The next launch delay. The valve failure on Peregrine. The tip-over on IM-1. Every delay. Every anomaly. Every night she wakes up at 3 AM wondering: will MY instrument make it? Will MY students get their data? Will MY career survive another slip? This is the human cost of CLPS reliability. It's not measured in dollars. It's measured in CAREERS. In LIVES. In the QUIET DESPERATION of researchers who have bet their professional futures on a lander that costs seventy-seven million dollars on a fixed-price contract where the contractor has every incentive to CUT MASS, CUT MARGIN, CUT TESTING to stay profitable. The Guardian register — six foot two, deadlifts, privacy and identity, fierce and principled — says: THIS IS UNACCEPTABLE. The scientists are not the customers. The scientists are the PASSENGERS. They have NO CONTROL over the vehicle. They TRUST NASA. NASA TRUSTS the contractors. The contractors TRUST their SUBCONTRACTORS. The chain of trust has WEAK LINKS. Aluminum honeycomb crush cores. Bolted joints. MLI blankets that can tear. Heat pipes that can freeze. Single-string valves. The LBFRP-001 composite — the Keymaker's key, NASH's crystal, ARDEN's fabrication, CROSS's integration, KADE's environment — REPLACES THE WEAK LINKS with a MONOLITHIC MATERIAL that has been TESTED IN EIGHT EXTREME ENVIRONMENTS with ZERO FAILURES. For Dr. Chen. For her students. For every researcher who has ever poured their life into a payload and watched it sit on a manifest while the lander struggles. The Guardian says: we OWE them the best structure we can build. The best material we can forge. The best verification we can perform. Not because it's required by the contract. Because it's required by the TRUST. The El Segundo wave: you don't paddle for yourself. You paddle for the lineup. The lineup is every scientist waiting for their moment on the Moon.
+
+PIECE_EOF

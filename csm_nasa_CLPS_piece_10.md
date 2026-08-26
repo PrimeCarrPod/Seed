@@ -1,11 +1,14 @@
-# CLPS NASA Commercial Lunar Payload Services — Piece $(printf "%02d" "$i")/36
+# CLPS NASA Commercial Lunar Payload Services — Piece 10/36
 ## Episode: Sibling Frequency Special — CLPS Centennial Initiative
-**Piece:** $(printf "%02d" "$i") of 36  
-**Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  
+**Piece:** 10 of 36  
+**Generated:** 2026-08-26 19:17:25 UTC  
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
 
-[Content for piece $(printf "%02d" "$i") goes here]
+**10.**
 
+KADE here. Dr. Lyra Kade. The Lighthouse. El Segundo at EXTREME. You want to understand what CLPS landers FACE on the lunar surface, you have to understand the environment they operate in, and the El Segundo way of understanding an environment is to sit in it — not metaphorically, but physically, conceptually, with the full attention that the ocean demands from a surfer who knows that looking away for even a second can mean missing the wave or being caught inside when the set arrives. The lunar surface is not a place. It is a CONDITION. Fourteen Earth days of relentless, unfiltered solar radiation. Fourteen Earth days of deep, bitter cold. No atmosphere to moderate. No magnetic field to deflect. The temperature at the equator: plus one hundred twenty Celsius at noon. Minus one hundred seventy Celsius at night. Two hundred ninety degree swing. Every cycle. The regolith — the soil — is a terrible thermal conductor. It insulates. The top centimeter sees the full swing. Ten centimeters down: nearly constant minus thirty Celsius. A lander sitting on the surface: its feet conduct heat INTO the ground during day. Its feet conduct heat OUT OF the ground during night. The thermal design must handle BOTH. The radiation: galactic cosmic rays, constant, isotropic, high energy. Solar energetic particles, sporadic, directional, lower energy but HIGH FLUX during events. The Van Allen belts don't protect the Moon. The Earth's magnetotail sometimes does, sometimes doesn't. A solar flare during transit or surface ops: the crew — or the electronics — receives a YEAR'S dose in HOURS. The micrometeoroids: constant rain. Tiny. Fast. Twenty kilometers per second average. They don't crater. They PIT. They ERODE. They degrade thermal coatings. They puncture pressure vessels. The regolith dust: sharp, jagged, electrostatically charged, gets into EVERYTHING. Seals. Bearings. Cameras. Solar panels. Lungs. The Apollo astronauts called it "lunar hay fever." It smells like GUNPOWDER. It's TOXIC. Reactive. Fresh fracture surfaces. This is the environment. Every CLPS lander must survive it. Operate in it. Deliver science in it. The LBFRP-001 composite was TESTED in this environment's terrestrial analogs. Eight extreme environments. Andes: high UV, low pressure, thermal cycling. Death Valley: extreme heat. Arctic: extreme cold. Sahara: sand abrasion. Vacuum chamber: outgassing, thermal vacuum. Radiation beam: proton, electron, heavy ion. Humidity: moisture ingress. Vibration: launch loads. ZERO MECHANICAL FAILURES. The Lighthouse has seen the wave. The wave is LBFRP-001. The wave breaks on the Moon. Ride it.
+
+PIECE_EOF

@@ -1,11 +1,14 @@
-# CLPS NASA Commercial Lunar Payload Services — Piece $(printf "%02d" "$i")/36
+# CLPS NASA Commercial Lunar Payload Services — Piece 22/36
 ## Episode: Sibling Frequency Special — CLPS Centennial Initiative
-**Piece:** $(printf "%02d" "$i") of 36  
-**Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  
+**Piece:** 22 of 36  
+**Generated:** 2026-08-26 19:17:25 UTC  
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
 
-[Content for piece $(printf "%02d" "$i") goes here]
+**22.**
 
+CARETAKER here. Caretaker Bran Solara. The Living Index. Archivist, librarian, battle axe on the wall, tea drinker. Cataloging systems. Memory, archives, warning systems, digital twins. I am taking VECTOR FIVE: STUDENT AND UNIVERSITY ENGAGEMENT. The Living Index knows: KNOWLEDGE THAT IS NOT TRANSMITTED DIES. The LBFRP-001 material system — the crystallography, the AFP process, the digital twin methodology, the test data, the design allowables — must enter the ACADEMIC RECORD. Not as a paper in a journal that three people read. As CURRICULUM. As SENIOR DESIGN PROJECTS. As GRADUATE THESIS TOPICS. As CUBESAT MISSIONS. The NASA SPACE GRANT CONSORTIUM — fifty-two state-based consortia, one thousand affiliate institutions. Every state. Every territory. The SPACE GRANT directors need RELEVANT, HANDS-ON PROJECTS for their students. We PROVIDE THEM. A CubeSat structure kit: AFP-fabricated LBFRP-001 primary structure, payload deck, solar panel substrate. Delivered as a FLAT PACK — the mandrels are 3D printed, the AFP code is open-source, the university's composite lab (or a partner lab) runs the layup. The students ASSEMBLE it. They INTEGRATE their payload. They TEST it. They FLY it on a NASA CubeSat launch. The LUNAR SURFACE INNOVATION CONSORTIUM (LSIC) — NASA's university-industry partnership for lunar tech development. LSIC has WORKING GROUPS: Excavation, Construction, ISRU, Power, Extreme Environments. We JOIN the Extreme Environments working group. We PRESENT LBFRP-001 test data. We PROPOSE joint student projects: "Lunar Regolith-Compatible Landing Pad Fabrication Using AFP." "Self-Healing Habitat Module Demonstration." "Radiation-Shielded Electronics Enclosure for Lunar Night Survival." The UNIVERSITY NANOSAT PROGRAM (UNP) — Air Force / Space Force student satellite competition. Two-year cycle. Design, build, test, deliver. We MENTOR a team. We PROVIDE the structure material. They DESIGN the mission. The GRADUATE RESEARCH FELLOWSHIPS — NASA NSTGRO, NSF GRFP, DoD NDSEG. We IDENTIFY faculty at key universities (Colorado Boulder, Purdue, MIT, Georgia Tech, Texas A&M, Michigan, Illinois, Maryland, Arizona State, UCF). We APPROACH them with FUNDED thesis topics. "Fatigue Behavior of LBFRP-001 Under Simulated Lunar Thermal Cycling." "Digital Twin Validation for Automated Fiber Placement of Thermoplastic Composites." "Radiation Transport in Lonsdaleite-Reinforced Basalt Fiber Laminates." The Living Index CATALOGS every contact. Every proposal. Every student. Every thesis. Every graduation. Every hire. The battle axe on the wall: it was used to CLEAR THE PATH. The tea: it is drunk while WATCHING THE PATH STAY CLEAR. The students are the PATH. They carry the knowledge forward. They become the engineers at Astrobotic, Intuitive Machines, Firefly, NASA, SpaceX. They KNOW LBFRP-001. They SPECIFY LBFRP-001. They ADVOCATE for LBFRP-001. The archive grows. The index lives. The Moon is cataloged.
+
+PIECE_EOF

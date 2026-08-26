@@ -1,11 +1,14 @@
-# CLPS NASA Commercial Lunar Payload Services — Piece $(printf "%02d" "$i")/36
+# CLPS NASA Commercial Lunar Payload Services — Piece 25/36
 ## Episode: Sibling Frequency Special — CLPS Centennial Initiative
-**Piece:** $(printf "%02d" "$i") of 36  
-**Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  
+**Piece:** 25 of 36  
+**Generated:** 2026-08-26 19:17:25 UTC  
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
 
-[Content for piece $(printf "%02d" "$i") goes here]
+**25.**
 
+SOLARA here! Agent Solara Vance! The Sunshine CEO! Solar physicist! Boundless enthusiasm! CAPS LOCKS AND EXCLAMATION POINTS! JOYFUL, BOUNCY, SCIENTIFICALLY PRECISE UNDERNEATH THE ENTHUSIASM! I am taking the VISIBILITY VECTOR: how we TELL THE WORLD about LBFRP-001 and CLPS and the LUNAR FUTURE we are BUILDING TOGETHER! The Williams Paradise Man Heuristic at EXTREME INTENSITY means: EVERY TRUTH DESERVES EXCLAMATION POINTS! The fact that we can BUILD LUNAR LANDERS OUT OF VOLCANIC ROCK AND NANODIAMONDS THAT HEAL THEMSELVES is NOT A QUIET FACT! It is a SCREAMING, DANCING, CARTWHEELING THROUGH THE LAB FACT! The COMMUNICATION STRATEGY: ONE: TECHNICAL PAPERS at AIAA ASCEND 2025, Space Symposium 2025, Lunar Surface Innovation Consortium Annual Meeting, International Astronautical Congress 2025. NOT marketing papers. DATA papers. "LBFRP-001 Mechanical Properties After Eight-Environment Exposure." "Digital Twin Validation for AFP of Thermoplastic Nanocomposites." "Mass and Cost Reduction in CLPS Lander Structures Using Monolithic Lonsdaleite-Reinforced Basalt Fiber." TWO: DEMONSTRATION VIDEOS. Not rendered animations. REAL FOOTAGE. The AFP robot LAYING UP a lander leg. The STATIC TEST where the leg takes TWICE the design load and DOESN'T FAIL. The THERMAL CYCLE where the structure goes from -170°C to +120°C and the PYROLYTIC GRAPHITE SUBSTRATES spread the heat like MAGIC. The RADIATION BEAM where the proton flux HITS the panel and the DOSIMETER BEHIND IT reads NEAR BACKGROUND. THREE: OPEN DATA. The test data. The AFP code. The digital twin schema. The material property database. POSTED on GitHub. Under APACHE 2.0. The Torvalds register APPROVES. The WORLD downloads. The WORLD verifies. The WORLD builds. FOUR: STUDENT COMPETITIONS. "Design a Lunar Habitat Module Using LBFRP-001." Sponsored by Carrington Storm Motors. Judged by NASA, ESA, JAXA, industry. Prize: the winning design gets FABRICATED and TESTED. FIVE: MEDIA ENGAGEMENT. NOT press releases. TECHNICAL BRIEFINGS for journalists who UNDERSTAND ENGINEERING. Ars Technica. IEEE Spectrum. Aviation Week. SpaceNews. The Verge science desk. NYTimes climate desk (lunar ISRU = climate tech). The Sunshine CEO says: the SUN does not HIDE its light. The MATERIAL does not HIDE its properties. The DATA does not HIDE in a drawer. We SHINE. We MEASURE. We PUBLISH. The Moon sees us coming. The Moon is READY.
+
+PIECE_EOF
