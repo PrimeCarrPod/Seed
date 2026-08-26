@@ -159,6 +159,7 @@
 
 ---
 
+<<<<<<< ours
 ### 2026-08-25T19:30:00Z — Article 4 A4-19 Complete
 - Created 12 pieces for A4-19: CKM_CP_Violation_Gaps
 - Concatenated: 1262 lines (≥350 target)
@@ -311,5 +312,7 @@
 
 ---
 
+=======
+>>>>>>> theirs
 *Log updated after each file creation. Serialized for merge safety.*
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
