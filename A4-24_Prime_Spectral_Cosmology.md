@@ -1,11 +1,17 @@
 # Prime Spectral Cosmology — Complete Article
 ## Article A4: A4-24 — Prime Spectral Cosmology
-**Generated:** 2026-08-26 14:28:14 UTC  
+**Generated:** 2026-08-26 19:17:02 UTC  
 **Structure:** 12 pieces concatenated  
 **Target:** ≥350 lines
 
 ---
 
+# Prime_Spectral_Cosmology — Piece 01/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 01 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 01/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 01 of 12  
@@ -47,6 +53,14 @@ The electron mass mₑ = 0.511 MeV anchors all cosmic scales:
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 02/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 02 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 02/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 02 of 12  
@@ -97,6 +111,14 @@ Consistent with Planck limit |f_NL| < 5.
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 03/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 03 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 03/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 03 of 12  
@@ -144,6 +166,14 @@ Thermalization completes at T ~ 10⁸ GeV, before EWPT.
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 04/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 04 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 04/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 04 of 12  
@@ -193,6 +223,14 @@ The prime gap sum Σ gₖ exp(-pₖ/Λ) naturally produces ρ_Λ ~ mₑ⁴ (mₑ
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 05/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 05 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 05/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 05 of 12  
@@ -246,6 +284,14 @@ For gₖ ≈ 100 at pₖ ≈ 10⁴: M_PBH ~ 10 M_⊙, f_PBH ~ 10⁻³ — LIGO/V
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 06/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 06 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 06/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 06 of 12  
@@ -297,6 +343,14 @@ Prime gap phases in A_φ generate baryon number. Prediction: η_B = 10⁻¹⁰ (
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 07/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 07 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 07/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 07 of 12  
@@ -346,6 +400,14 @@ Prime peaks (gₖ > 2σ) correspond to rare halos. The prime correlation functio
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 08/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 08 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 08/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 08 of 12  
@@ -392,6 +454,14 @@ with prime matter distribution. Lensing amplitude A_L = 1.01 ± 0.02.
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 09/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 09 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 09/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 09 of 12  
@@ -443,6 +513,14 @@ Sum of all sources gives a rich spectrum spanning 20 decades in frequency:
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 10/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 10 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 10/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 10 of 12  
@@ -487,6 +565,14 @@ Prime spectral prediction: ν_e capture rate on β-decaying nuclei:
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 11/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 11 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 11/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 11 of 12  
@@ -541,6 +627,14 @@ Prime spectral prediction: ν_e capture rate on β-decaying nuclei:
 
 ---
 
+---
+
+# Prime_Spectral_Cosmology — Piece 12/12
+## Article A4: A4-24 — Prime Spectral Cosmology
+**Piece:** 12 of 12  
+**Generated:** 2026-08-26 19:16:12 UTC
+
+---
 # Prime_Spectral_Cosmology — Piece 12/12
 ## Article A4: A4-24 — Prime Spectral Cosmology
 **Piece:** 12 of 12  
@@ -617,6 +711,8 @@ This completes the prime spectral cosmology.
 **Total pieces: 12**  
 **Author: Jason Isaac Brodsky (California, 1976)**  
 **Generated: 2026-08-26 14:27:56 UTC
+
+---
 
 ---
 
