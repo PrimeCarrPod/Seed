@@ -324,9 +324,9 @@ Each article = 40 files × 350+ lines = 1,400+ lines per article
 
 ---
  
-## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (19/40) — A4-01 through A4-19 DONE
+## CURRENT STATUS: ARTICLE 1 (40/40), ARTICLE 2 (22/40), ARTICLE 3 (40/40) — COMPLETE ✅, ARTICLE 4 (20/40) — A4-01 through A4-20 DONE
 
-**Next Action:** Begin Article 4: A4-20 Flavor_Changing_Neutral_Currents.md, 350+ lines
+**Next Action:** Begin Article 4: A4-21 Rare_Decays_Prime_Predictions.md, 350+ lines
 
 **Commands to Resume:**
 ```bash
@@ -334,8 +334,8 @@ cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_80e228a6-d289-
 git checkout main
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/WIP_LOG_Session_001.md
 cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
-cat CSMLogs/august26/RESUME_SESSION_A4-19_CKM_CP_VIOLATION_GAPS_20260826.md
-# Continue with Article 4: A4-20 Flavor_Changing_Neutral_Currents.md
+cat CSMLogs/august26/RESUME_SESSION_A4-20_FLAVOR_CHANGING_NEUTRAL_CURRENTS_20260826.md
+# Continue with Article 4: A4-21 Rare_Decays_Prime_Predictions.md
 ```
  
 ---
