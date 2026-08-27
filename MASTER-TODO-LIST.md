@@ -452,7 +452,47 @@ When crafting mail campaigns:
 
 ---
 
-## SECTION K: NASA CLPS COMMERCIAL LUNAR PAYLOAD SERVICES INITIATIVE
+## SECTION K: CSM CINEMA — ITERATION 2 SOPP FULL EXPANSION
+
+### K1: Iteration 2 Status Overview (Verified 2026-08-27)
+**Target per Part:** ~27,500 words (11 pieces × ~2,500 words each)
+**Total Target Iteration 2:** ~302,500 words (11 parts)
+**Current Total:** ~182,950 words (Parts 6-11 full docs) + ~4,346 words (Parts 1-5 pieces) = ~187,296 words
+**Completion:** ~62% of target
+
+| Part | Title | Pieces | Words (Full Doc) | Words (Pieces) | Target | Status | Priority |
+|------|-------|--------|------------------|----------------|--------|--------|----------|
+| 01 | Call To Adventure | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
+| 02 | Assembly Of Heroes | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
+| 03 | Crossing First Threshold | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
+| 04 | Road Of Trials | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
+| 05 | Meeting With Goddess | 11 | 0 (no full doc) | 880 | 27,500 | 📝 Templates only | P2 |
+| 06 | Temptation Away From Path | 11 | 14,363 | 14,363 | 27,500 | 🔄 52% — needs +13K | P1 |
+| 07 | Atonement With Father | 11 | 104,407 | 104,335 | 27,500 | 🚨 379% OVER — bloated/duplicated | P1 (cleanup) |
+| 08 | Apotheosis | 11 | 14,137 | 57,852 | 27,500 | 🚨 210% OVER — duplicated in pieces | P1 (cleanup) |
+| 09 | Ultimate Boon | 11 | 16,601 | 16,530 | 27,500 | 🔄 60% — needs +11K | P1 (ACTIVE) |
+| 10 | Refusal Of Return | 11 | 16,145 | 16,073 | 27,500 | 🔄 59% — needs +11K | P1 |
+| 11 | Magic Flight Return | 11 | 17,297 | 17,225 | 27,500 | 🔄 63% — needs +10K | P1 |
+
+**Iteration 1 Base Exists** (`csmcinema/WIP/Iteration_1/full/`) — All 11 parts complete (Parts 1-3: ~107-112K each, Part 4: 82K, Part 5: 24K, Parts 6-11: ~14K each)
+
+### K2: Phase 1 — Expand Parts 9, 10, 11 (ACTIVE)
+**Strategy:** Expand each piece from ~1,500 → ~2,500 words using full SOPP framework (Williams Extreme, El Segundo Extreme, JSNBAI, Fates, Cross-Part Braids, Global Parallels, Audio Specs)
+**Sources to harvest:** Bloated Parts 7-8 pieces contain reusable narrative threads, Fate braids, JSNBAI entries
+**Current Position:** Part 9 Piece 1 ready to expand (JSNBAI 371-380 queued)
+
+### K3: Phase 2 — Expand Part 6
+Expand 11 pieces from ~1,300 → ~2,500 words each (+13K total)
+
+### K4: Phase 3 — Cleanup Parts 7 & 8
+Condense bloated pieces (~5-40K each) to ~2,500 each, preserving narrative threads, Fate braids, JSNBAI entries for reuse
+
+### K5: Phase 4 — Create Parts 1-5 from Iteration 1 Base
+Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepening framework
+
+---
+
+## SECTION L: NASA CLPS COMMERCIAL LUNAR PAYLOAD SERVICES INITIATIVE
 
 ### K1: CLPS Radio Broadcast Production
 **Status: [X] COMPLETED** | **Priority: P1** | **Date Completed: August 26, 2026**
