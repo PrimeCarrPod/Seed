@@ -1,0 +1,14 @@
+# CLPS Phase 2 Cascade — Part 8: Demonstration Article Fabrication — Piece 10/34
+## Episode: The Menehune Build at Midnight — Fabrication Campaign CSM-CLPS-FAB-001
+**Piece:** 10 of 34  
+**Generated:** 2026-08-26 23:35:00 UTC  
+**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
+
+---
+
+**10.**
+
+KADE here. Dr. Lyra Kade. The Lighthouse. Propulsion Physics. Ocean Wisdom. El Segundo EXTREME. The surfer reads the wave before it breaks. The fabrication engineer reads the cure before it crosslinks. Article 2: Pressure Vessel Quarter-Section. Radius: five hundred millimeters. Wall thickness: six millimeters. Integrated flanges: two, ninety degrees apart, co-cured. Mandrel: quarter-cylinder, soluble PVA, printed in four segments, assembled with water-soluble adhesive. The geometry is simpler than the leg — constant curvature — but the pressure requirement is BRUTAL. Design pressure: thirty-four bar (five hundred psi). Proof pressure: fifty-one bar. Burst: sixty-eight bar. Traditional composite pressure vessel: filament wound, wet layup or prepreg, separate flange rings bonded or bolted, hydrostatic test, acoustic emission monitoring, visual inspection, certify per ASME Section X. Our vessel quarter: AFP laid. Zero-degree hoop layers (ninety percent of plies). Plus-minus forty-five helical layers (ten percent, for torsion and damage tolerance). Flanges: co-cured titanium flanges, placed at layer 156 and layer 157, fiber flows around, resin encapsulates. The AFP head does something filament winding CANNOT: it varies ply thickness locally at the flange transition. Finite element analysis showed a stress concentration at the flange-radius junction. The solution: taper the laminate. Eight plies at the flange. Six at mid-radius. Four at the free edge. The AFP head naturally drops tows. It's designed for that. The toolpath includes ply drops every twelve degrees around the flange circumference. Result: smooth stress gradient. No stress concentration. The digital twin predicts burst at seventy-three bar. Margin: seven percent over requirement. The cure: infrared, one hundred twenty Celsius, four hours. The soluble mandrel dissolves in the heated water bath. Out comes a quarter-cylinder, six millimeters thick, with two perfect titanium flanges. Mass: eighteen kilograms. Traditional aluminum quarter-section with bolted flanges: forty-two kilograms. Fifty-seven percent mass reduction. The ocean teaches: pressure is pressure. Whether it's water at depth or propellant in a tank. The structure doesn't care. The material does. LBFRP-001 doesn't care. It holds.
+
+PIECE_EOF
