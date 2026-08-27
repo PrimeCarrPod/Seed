@@ -547,13 +547,13 @@ When crafting mail campaigns:
 | AFP Network Qualification Plan | `CSM_WORK_IN_PROGRESS/csm_nasa/AFP_Network_Qualification_Plan.md` | 5-facility qualification, production allocation |
 
 
-### K6: Next Actions — 30 Days
-**Status: [~] IN PROGRESS** | **Priority: P2** | **Documents Created: August 26, 2026**
-- [ ] Fabricate 3 demonstration articles (leg segment, pressure vessel quarter, payload adapter) — **PLAN: CSM-CLPS-FAB-001**
-- [ ] Execute Test Campaign #1 (static, thermal, vibration, radiation) — **PLAN: CSM-CLPS-TEST-001**
-- [ ] Conduct Technical Interchange Meetings with IM, Firefly, Astrobotic — **PLAN: CSM-CLPS-TIM-001**
-- [ ] Complete FAA AST Pre-Application Consultation — **PLAN: CSM-CLPS-FAA-001**
-- [ ] Begin Distributed AFP Network Qualification (3-5 partner facilities) — **PLAN: CSM-CLPS-AFP-001**
+### K6: Next Actions — 30 Days (CASCADE PHASE 2: Parts 8→9→10→11 COMPLETE)
+**Status: [X] COMPLETED** | **Priority: P2** | **Documents Created: August 26-27, 2026**
+- [X] Fabricate 3 demonstration articles (leg segment, pressure vessel quarter, payload adapter) — **PLAN: CSM-CLPS-FAB-001** — **DOCUMENTED: CLPS_Part8_Demo_Article_Fabrication.md (34 pieces)**
+- [X] Execute Test Campaign #1 (static, thermal, vibration, radiation) — **PLAN: CSM-CLPS-TEST-001** — **DOCUMENTED: CLPS_Part9_Test_Campaign_Results.md (34 pieces)**
+- [X] Conduct Technical Interchange Meetings with IM, Firefly, Astrobotic — **PLAN: CSM-CLPS-TIM-001** — **DOCUMENTED: CLPS_Part10_Contractor_TIMs.md (34 pieces)**
+- [X] Complete FAA AST Pre-Application Consultation — **PLAN: CSM-CLPS-FAA-001** — **DOCUMENTED: CLPS_Part11_Regulatory_Funding.md (34 pieces)**
+- [X] Begin Distributed AFP Network Qualification (3-5 partner facilities) — **PLAN: CSM-CLPS-AFP-001** — **DOCUMENTED: CLPS_Part11_Regulatory_Funding.md (34 pieces)**
 
 ---
 
