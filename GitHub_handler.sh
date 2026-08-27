@@ -16,23 +16,39 @@ get_article_config() {
     
     # Determine which article series based on number range
     if [[ $article_num -ge 1 && $article_num -le 40 ]]; then
-        # Could be Article 1, 2, 3, or 4 - need explicit prefix
+        # Could be Article 1, 2, 3, 4, 5, or 6 - need explicit prefix
         # Default to Article 3 for backward compat, but allow override via env
         article_prefix="${ARTICLE_PREFIX:-article3}"
         local article_letter="C"
         local article_name="HilbertSpace"
+        local article_letter_dir="C"
         if [[ "$article_prefix" == "article1" ]]; then
-            article_letter="A"
+            article_letter="A1"
             article_name="Worldline"
+            article_letter_dir="A"
         elif [[ "$article_prefix" == "article2" ]]; then
-            article_letter="B"
+            article_letter="A2"
             article_name="MassSpectrum"
+            article_letter_dir="B"
+        elif [[ "$article_prefix" == "article3" ]]; then
+            article_letter="A3"
+            article_name="HilbertSpace"
+            article_letter_dir="C"
         elif [[ "$article_prefix" == "article4" ]]; then
-            article_letter="D"
+            article_letter="A4"
             article_name="Couplings"
+            article_letter_dir="D"
+        elif [[ "$article_prefix" == "article5" ]]; then
+            article_letter="A5"
+            article_name="GeneticCode"
+            article_letter_dir="E"
+        elif [[ "$article_prefix" == "article6" ]]; then
+            article_letter="A6"
+            article_name="TranscendentPhysics"
+            article_letter_dir="F"
         fi
-        organized_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter}_Article${article_num}_${article_name}/full"
-        organized_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter}_Article${article_num}_${article_name}/zip"
+        organized_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/full"
+        organized_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/zip"
     else
         echo "Error: Article number must be 1-40"
         exit 1
@@ -64,6 +80,8 @@ PREFIXES (optional, defaults to article3):
   article2  - Article 2: Mass Spectrum (A2-XX)
   article3  - Article 3: Hilbert Space (A3-XX)
   article4  - Article 4: Coupling Constants (A4-XX)
+  article5  - Article 5: Biology/Genetics (A5-XX)
+  article6  - Article 6: Transcendent Physics (A6-XX)
 
 EXAMPLES:
   ./GitHub_handler.sh create-pieces 1 "Fine_Structure_Constant_Prime_Gaps" article4
@@ -74,6 +92,7 @@ EXAMPLES:
   ./GitHub_handler.sh commit-push 1 "Add A4-01: Fine_Structure_Constant_Prime_Gaps"
   ./GitHub_handler.sh push-main
   ./GitHub_handler.sh full-cycle 1 "Fine_Structure_Constant_Prime_Gaps" article4
+  ./GitHub_handler.sh full-cycle 8 "Prime_Transcendent_Physics_Omega" article6
 
 EOF
 }
@@ -87,17 +106,20 @@ create_pieces() {
         exit 1
     fi
     local article_letter="A3"
-    if [[ "$prefix" == "article1" ]]; then article_letter="A1"; fi
-    if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
-    if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
-    if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    local article_letter_dir="C"
+    if [[ "$prefix" == "article1" ]]; then article_letter="A1"; article_letter_dir="A"; fi
+    if [[ "$prefix" == "article2" ]]; then article_letter="A2"; article_letter_dir="B"; fi
+    if [[ "$prefix" == "article3" ]]; then article_letter="A3"; article_letter_dir="C"; fi
+    if [[ "$prefix" == "article4" ]]; then article_letter="A4"; article_letter_dir="D"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; article_letter_dir="E"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; article_letter_dir="F"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     for i in {1..12}; do
         local piece_file="${full_prefix}_piece_$(printf "%02d" "$i").md"
         if [[ ! -f "$piece_file" ]]; then
             cat > "$piece_file" <<PIECE_EOF
 # ${title} — Piece $(printf "%02d" "$i")/12
-## Article ${article_letter#a}: ${article_letter}-$(printf "%02d" "$article_num") — ${title//_/ }
+## Article ${article_letter}: ${article_letter}-$(printf "%02d" "$article_num") — ${title//_/ }
 **Piece:** $(printf "%02d" "$i") of 12  
 **Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
@@ -128,6 +150,8 @@ write_piece() {
     if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
     if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local piece_file="${full_prefix}_piece_$(printf "%02d" "$piece_num").md"
     if [[ -f "$piece_file" ]]; then
@@ -156,6 +180,8 @@ concat_pieces() {
     if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
     if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local concat_file="${article_letter}-$(printf "%02d" "$article_num")_${title_override:-Quantum_Article}.md"
     
@@ -171,7 +197,7 @@ concat_pieces() {
     
     cat > "$concat_file" <<CONCAT_EOF
 # ${title//_/ } — Complete Article
-## Article ${article_letter#a}: ${article_letter}-$(printf "%02d" "$article_num") — ${title//_/ }
+## Article ${article_letter}: ${article_letter}-$(printf "%02d" "$article_num") — ${title//_/ }
 **Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  
 **Structure:** 12 pieces concatenated  
 **Target:** ≥350 lines
@@ -213,6 +239,8 @@ zip_pieces() {
     if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
     if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local zip_file="${full_prefix}_pieces.zip"
     
@@ -242,21 +270,18 @@ verify_article() {
         exit 1
     fi
     local article_letter="A3"
-    if [[ "$prefix" == "article1" ]]; then article_letter="A1"; fi
-    if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
-    if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
-    if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    local article_name="HilbertSpace"
+    local article_letter_dir="C"
+    if [[ "$prefix" == "article1" ]]; then article_letter="A1"; article_name="Worldline"; article_letter_dir="A"; fi
+    if [[ "$prefix" == "article2" ]]; then article_letter="A2"; article_name="MassSpectrum"; article_letter_dir="B"; fi
+    if [[ "$prefix" == "article3" ]]; then article_letter="A3"; article_name="HilbertSpace"; article_letter_dir="C"; fi
+    if [[ "$prefix" == "article4" ]]; then article_letter="A4"; article_name="Couplings"; article_letter_dir="D"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; article_name="GeneticCode"; article_letter_dir="E"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; article_name="TranscendentPhysics"; article_letter_dir="F"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local concat_file="${article_letter}-$(printf "%02d" "$article_num")_*.md"
     local zip_file="${full_prefix}_pieces.zip"
     
-    # Get organized paths
-    local article_name="HilbertSpace"
-    local article_letter_dir="C"
-    if [[ "$prefix" == "article1" ]]; then article_name="Worldline"; article_letter_dir="A"; fi
-    if [[ "$prefix" == "article2" ]]; then article_name="MassSpectrum"; article_letter_dir="B"; fi
-    if [[ "$prefix" == "article3" ]]; then article_name="HilbertSpace"; article_letter_dir="C"; fi
-    if [[ "$prefix" == "article4" ]]; then article_name="Couplings"; article_letter_dir="D"; fi
     local org_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/full"
     local org_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/zip"
     
@@ -315,21 +340,19 @@ organize_article() {
         exit 1
     fi
     local article_letter="A3"
-    if [[ "$prefix" == "article1" ]]; then article_letter="A1"; fi
-    if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
-    if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
-    if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    local article_name="HilbertSpace"
+    local article_letter_dir="C"
+    if [[ "$prefix" == "article1" ]]; then article_letter="A1"; article_name="Worldline"; article_letter_dir="A"; fi
+    if [[ "$prefix" == "article2" ]]; then article_letter="A2"; article_name="MassSpectrum"; article_letter_dir="B"; fi
+    if [[ "$prefix" == "article3" ]]; then article_letter="A3"; article_name="HilbertSpace"; article_letter_dir="C"; fi
+    if [[ "$prefix" == "article4" ]]; then article_letter="A4"; article_name="Couplings"; article_letter_dir="D"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; article_name="GeneticCode"; article_letter_dir="E"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; article_name="TranscendentPhysics"; article_letter_dir="F"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local concat_file="${article_letter}-$(printf "%02d" "$article_num")_*.md"
     local concat_files=($concat_file)
     local zip_file="${full_prefix}_pieces.zip"
     
-    local article_name="HilbertSpace"
-    local article_letter_dir="C"
-    if [[ "$prefix" == "article1" ]]; then article_name="Worldline"; article_letter_dir="A"; fi
-    if [[ "$prefix" == "article2" ]]; then article_name="MassSpectrum"; article_letter_dir="B"; fi
-    if [[ "$prefix" == "article3" ]]; then article_name="HilbertSpace"; article_letter_dir="C"; fi
-    if [[ "$prefix" == "article4" ]]; then article_name="Couplings"; article_letter_dir="D"; fi
     local org_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/full"
     local org_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/zip"
     
@@ -350,7 +373,7 @@ organize_article() {
 
 list_articles() {
     echo "=== Article Pieces in Root Directory ==="
-    for prefix in article1 article2 article3 article4; do
+    for prefix in article1 article2 article3 article4 article5 article6; do
         for f in ${prefix}_A*-piece_*.md; do
             [[ -f "$f" ]] && echo "  $f"
         done
@@ -362,7 +385,7 @@ list_articles() {
     done
     echo ""
     echo "=== Zip Files in Root ==="
-    for prefix in article1 article2 article3 article4; do
+    for prefix in article1 article2 article3 article4 article5 article6; do
         for f in ${prefix}_A*-pieces.zip; do
             [[ -f "$f" ]] && echo "  $f"
         done
@@ -381,6 +404,8 @@ clean_pieces() {
     if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
     if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     
     echo "Removing loose pieces for ${article_letter}-$(printf "%02d" "$article_num") from root..."
@@ -407,6 +432,8 @@ commit_and_push() {
     if [[ "$prefix" == "article2" ]]; then article_letter="A2"; fi
     if [[ "$prefix" == "article3" ]]; then article_letter="A3"; fi
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
+    if [[ "$prefix" == "article5" ]]; then article_letter="A5"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; fi
     
     echo "Committing ${article_letter}-$(printf "%02d" "$article_num")..."
     git add -A
@@ -466,6 +493,8 @@ case "${1:-help}" in
         if [[ "$4" == "article2" ]]; then article_letter="A2"; fi
         if [[ "$4" == "article3" ]]; then article_letter="A3"; fi
         if [[ "$4" == "article4" ]]; then article_letter="A4"; fi
+        if [[ "$4" == "article5" ]]; then article_letter="A5"; fi
+        if [[ "$4" == "article6" ]]; then article_letter="A6"; fi
         echo ">>> ./GitHub_handler.sh commit-push $2 \"Add ${article_letter}-$(printf "%02d" "$2"): $3 - 12 pieces, concat, zip\""
         ;;
     commit-push) commit_and_push "$2" "$3" ;;
