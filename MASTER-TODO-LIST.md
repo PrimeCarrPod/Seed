@@ -44,7 +44,7 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 ### K2: Phase 1 — Expand Parts 9, 10, 11 (ACTIVE)
 **Strategy:** Expand each piece from ~1,500 → ~2,500+ words using full SOPP framework (Williams Extreme, El Segundo Extreme, JSNBAI, Fates, Cross-Part Braids, Global Parallels, Audio Specs)
 **Sources to harvest:** Bloated Parts 7-8 pieces contain reusable narrative threads, Fate braids, JSNBAI entries
-**Current Position:** Part 9 Piece 9 complete (JSNBAI 371-460 deployed)
+**Current Position:** Part 9 Piece 10 complete (JSNBAI 371-470 deployed)
 
 | Part 9 Piece | Status | Words | JSNBAI Range | Target |
 |--------------|--------|-------|--------------|--------|
@@ -57,11 +57,11 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 | Piece 7 | ✅ COMPLETE | 6,234 | 431-440 | ~2,500+ |
 | Piece 8 | ✅ COMPLETE | 6,293 | 441-450 | ~2,500+ |
 | Piece 9 | ✅ COMPLETE | 6,079 | 451-460 | ~2,500+ |
-| Piece 10 | 🔄 NEXT | ~1,500 | 461-470 | ~2,500+ |
-| Piece 11 | 🔄 PENDING | ~1,500 | 471-480 | ~2,500+ |
+| Piece 10 | ✅ COMPLETE | 5,979 | 461-470 | ~2,500+ |
+| Piece 11 | 🔄 NEXT | ~1,500 | 471-480 | ~2,500+ |
 
-**Part 9 Progress:** 9/11 pieces expanded (82%) — ~53,168 words added
-**Next:** Piece 10 (Boon as Unity Completion — JSNBAI 461-470)
+**Part 9 Progress:** 10/11 pieces expanded (91%) — ~59,147 words added
+**Next:** Piece 11 (Boon as Eternal Return — JSNBAI 471-480)
 
 ### K3: Phase 2 — Expand Part 6
 Expand 11 pieces from ~1,300 → ~2,500 words each (+13K total)
