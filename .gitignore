@@ -1,0 +1,23 @@
+# Binary archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Agent and session logs
+*.log
+heartbeat_*.log
+session_*.log
+agent_*.log
+
+# Build artifacts
+build/
+dist/
+*.o
+*.class
