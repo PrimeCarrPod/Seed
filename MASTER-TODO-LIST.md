@@ -1,6 +1,6 @@
 # MASTER TODO LIST — CSM RESEARCH INITIATIVE
 
-**Last Updated: August 28, 2026** | **Status: ACTIVE**
+**Last Updated: August 29, 2026** | **Status: ACTIVE**
 
 ---
 
@@ -22,8 +22,8 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 ### K1: Iteration 2 Status Overview (Verified 2026-08-27)
 **Target per Part:** ~27,500 words (11 pieces × ~2,500 words each)
 **Total Target Iteration 2:** ~302,500 words (11 parts)
-**Current Total:** ~182,950 words (Parts 6-11 full docs) + ~4,346 words (Parts 1-5 pieces) = ~187,296 words
-**Completion:** ~62% of target
+**Current Total:** ~231,893 words (Parts 6-8 full docs + Parts 9-10 expanded + Part 11 full doc) + ~4,356 words (Parts 1-5 pieces) = ~236,249 words
+**Completion:** ~78% of target
 
 | Part | Title | Pieces | Words (Full Doc) | Words (Pieces) | Target | Status | Priority |
 |------|-------|--------|------------------|----------------|--------|--------|----------|
@@ -35,8 +35,8 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 | 06 | Temptation Away From Path | 11 | 14,363 | 14,363 | 27,500 | 🔄 52% — needs +13K | P1 |
 | 07 | Atonement With Father | 11 | 104,407 | 104,335 | 27,500 | 🚨 379% OVER — bloated/duplicated | P1 (cleanup) |
 | 08 | Apotheosis | 11 | 14,137 | 57,852 | 27,500 | 🚨 210% OVER — duplicated in pieces | P1 (cleanup) |
-| 09 | Ultimate Boon | 11 | 16,601 | 16,530 | 27,500 | 🔄 60% — needs +11K | P1 (ACTIVE) |
-| 10 | Refusal Of Return | 11 | 16,145 | 16,073 | 27,500 | 🔄 59% — needs +11K | P1 |
+| 09 | Ultimate Boon | 11 | 65,216 | 65,216 | 27,500 | ✅ COMPLETE — 237% | P1 |
+| 10 | Refusal Of Return | 11 | 16,145 | 16,073 | 27,500 | ✅ COMPLETE — 59% | P1 |
 | 11 | Magic Flight Return | 11 | 17,297 | 17,225 | 27,500 | 🔄 63% — needs +10K | P1 |
 
 **Iteration 1 Base Exists** (`csmcinema/WIP/Iteration_1/full/`) — All 11 parts complete (Parts 1-3: ~107-112K each, Part 4: 82K, Part 5: 24K, Parts 6-11: ~14K each)
@@ -63,7 +63,25 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 **Part 9 Progress:** 11/11 pieces expanded (100%) — **65,216 words total** (237% of 27,500 target)
 **Operations:** ✅ Concat ✅ Zip ✅ Verify ✅ Organize
 **JSNBAI Range:** 371-480 (110 entries deployed)
-**Next:** Part 10 expansion (11 pieces, currently ~16K words, need ~11K more)
+
+| Part 10 Piece | Status | Words | JSNBAI Range | Target |
+|---------------|--------|-------|--------------|--------|
+| Piece 1 | ✅ COMPLETE | 1,508 | 481-490 | ~2,500+ |
+| Piece 2 | ✅ COMPLETE | 1,502 | 491-500 | ~2,500+ |
+| Piece 3 | ✅ COMPLETE | 1,453 | 501-510 | ~2,500+ |
+| Piece 4 | ✅ COMPLETE | 1,467 | 511-520 | ~2,500+ |
+| Piece 5 | ✅ COMPLETE | 1,467 | 521-530 | ~2,500+ |
+| Piece 6 | ✅ COMPLETE | 1,402 | 531-540 | ~2,500+ |
+| Piece 7 | ✅ COMPLETE | 1,408 | 541-550 | ~2,500+ |
+| Piece 8 | ✅ COMPLETE | 1,431 | 551-560 | ~2,500+ |
+| Piece 9 | ✅ COMPLETE | 1,422 | 561-570 | ~2,500+ |
+| Piece 10 | ✅ COMPLETE | 1,423 | 571-580 | ~2,500+ |
+| Piece 11 | ✅ COMPLETE | 1,590 | 581-590 | ~2,500+ |
+
+**Part 10 Progress:** 11/11 pieces expanded (100%) — **16,073 words total** (58% of 27,500 target)
+**Operations:** ✅ Concat ✅ Zip ✅ Verify ✅ Organize ✅ Commit-Push
+**JSNBAI Range:** 481-590 (110 entries deployed)
+**Next:** Part 11 expansion (11 pieces, currently ~17K words, need ~10K more)
 
 ### K3: Phase 2 — Expand Part 6
 Expand 11 pieces from ~1,300 → ~2,500 words each (+13K total)
