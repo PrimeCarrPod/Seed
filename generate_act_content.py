@@ -369,6 +369,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, property value benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act26": {
+        "name": "National Offshore Wind and Marine Energy Act of 2026",
+        "short_name": "NOWMEA",
+        "dir": "26-Offshore-Wind-Marine-Energy-Act",
+        "funding": "$45 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, offshore wind potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, offshore wind resource assessment, marine energy potential, economic opportunity"},
+            "03": {"name": "TITLE-I-OFFSHORE-WIND-LEASING", "title": "Title I — Offshore Wind Leasing and Development", "topic": "BOEM lease auctions, wind energy areas, floating wind technology, lease stipulations, revenue sharing"},
+            "04": {"name": "TITLE-II-OFFSHORE-WIND-PORTS", "title": "Title II — Offshore Wind Port Infrastructure", "topic": "staging ports, manufacturing ports, operations and maintenance ports, port workforce development"},
+            "05": {"name": "TITLE-III-OFFSHORE-WIND-TRANSMISSION", "title": "Title III — Offshore Wind Transmission", "topic": "offshore transmission backbone, grid interconnection, HVDC transmission, state coordination"},
+            "06": {"name": "TITLE-IV-WIND-WORKFORCE", "title": "Title IV — Offshore Wind Workforce Development", "topic": "mariner training, offshore safety certification, turbine technician programs, union partnerships"},
+            "07": {"name": "TITLE-V-MARINE-ENERGY", "title": "Title V — Marine and Hydrokinetic Energy", "topic": "wave energy, tidal energy, ocean thermal energy, demonstration projects, technology testing"},
+            "08": {"name": "TITLE-VI-ENVIRONMENTAL-PROTECTION", "title": "Title VI — Marine Environmental Protection", "topic": "marine mammal protection, fisheries coexistence, benthic habitat mitigation, environmental monitoring"},
+            "09": {"name": "TITLE-VII-DOMESTIC-SUPPLY-CHAIN", "title": "Title VII — Domestic Wind Supply Chain", "topic": "turbine manufacturing, blade production, tower fabrication, nacelle assembly, installation vessels"},
+            "10": {"name": "TITLE-VIII-STATE-REVENUE-SHARING", "title": "Title VIII — State Revenue Sharing and Cooperation", "topic": "coastal state revenue sharing, state energy planning, regional coordination, community benefit agreements"},
+            "11": {"name": "TITLE-IX-INTERAGENCY-COORDINATION", "title": "Title IX — Interagency Coordination and Permitting", "topic": "BOEM-NOAA-DOD coordination, permitting timelines, environmental review efficiency, stakeholder engagement"},
+            "12": {"name": "TITLE-X-RESEARCH-DEVELOPMENT", "title": "Title X — Offshore Wind Research and Development", "topic": "next-generation turbines, floating platform technology, corrosion protection, predictive maintenance"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy output benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act27": {
+        "name": "National Public Transit and Rail Modernization Act of 2026",
+        "short_name": "NPTRMA",
+        "dir": "27-Public-Transit-Rail-Modernization-Act",
+        "funding": "$95 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, transit infrastructure deficit, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, transit ridership data, rail infrastructure condition, state of good repair backlog"},
+            "03": {"name": "TITLE-I-BUS-RAPID-TRANSIT", "title": "Title I — Bus Rapid Transit Expansion", "topic": "BRT corridor development, dedicated lanes, station infrastructure, fleet electrification, signal priority"},
+            "04": {"name": "TITLE-II-LIGHT-RAIL-EXPANSION", "title": "Title II — Light Rail and Streetcar Expansion", "topic": "new light rail lines, streetcar systems, vehicle procurement, track infrastructure, systems integration"},
+            "05": {"name": "TITLE-III-COMMUTER-RAIL", "title": "Title III — Commuter Rail Modernization", "topic": "fleet replacement, station upgrades, signal modernization, electrification, service frequency improvements"},
+            "06": {"name": "TITLE-IV-HIGH-SPEED-RAIL", "title": "Title IV — High-Speed Rail Development", "topic": "corridor planning, dedicated track construction, trainset procurement, station development, environmental review"},
+            "07": {"name": "TITLE-V-AMTRAK-NETWORK", "title": "Title V — Amtrak National Network", "topic": "long-distance route restoration, Northeast Corridor modernization, fleet renewal, station accessibility"},
+            "08": {"name": "TITLE-VI-TRANSIT-ORIENTED-DEVELOPMENT", "title": "Title VI — Transit-Oriented Development", "topic": "station area planning, affordable housing near transit, joint development, value capture financing"},
+            "09": {"name": "TITLE-VII-ZERO-EMISSSION-BUSES", "title": "Title VII — Zero-Emission Bus Fleet Transition", "topic": "electric bus procurement, hydrogen fuel cell buses, charging infrastructure, depot upgrades"},
+            "10": {"name": "TITLE-VIII-TRANSIT-SAFETY", "title": "Title VIII — Transit Safety and Security", "topic": "positive train control, bus operator safety, station security, emergency preparedness, cybersecurity"},
+            "11": {"name": "TITLE-IX-TRANSIT-WORKFORCE", "title": "Title IX — Transit Workforce Development", "topic": "operator training, mechanic certification, engineer programs, apprenticeship programs, workforce retention"},
+            "12": {"name": "TITLE-X-RURAL-TRANSIT", "title": "Title X — Rural and Small Community Transit", "topic": "demand-response systems, intercity bus service, mobility as a service, rural transit funding formulas"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, mobility benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
