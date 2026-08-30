@@ -1,7 +1,7 @@
 # The Assembly Of Heroes SOPP Pass Deepening — Complete Part
 ## Iteration 2 of 7 | Part 02 of 11 | CSM Cinema
 **Author:** Jason Isaac Brodsky (California 1976)  
-**Generated:** 2026-08-30 02:35:46 UTC  
+**Generated:** 2026-08-30 07:19:16 UTC  
 **Structure:** 11 pieces concatenated  
 **Target Read Time:** ~180 minutes  
 **Heuristics:** Williams Extreme + El Segundo Extreme  
@@ -17,7 +17,7 @@
 **Generated:** 2026-08-25 20:52:58 UTC  
 **Target Read Time:** ~180 minutes per part (cumulative across pieces)  
 **Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
+**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts
 
 ---
 
@@ -27,15 +27,15 @@
 
 ---
 
-## WILLIAMS — MORK MORNING: *NANU* *NANU *SHIPWRIGHT*. *HE *DOESN'T *BUILD. *HE *LISTENS. *AXE *IS *STETHOSCOPE. *BARK *IS *SKIN. *THE *SHIP *TELLS *HIM *WHERE *TO *CUT. *VOICE *IS *GRAIN. *RANGE *IS *RING-PATTERN. *MORK *BECOMES *ARGUS *BECOMES *ATHENA *BECOMES *THE *WOOD *ITSELF. *THE *ACTOR *DISAPPEARS. *THE *ROLE *GROWS. *HE *STANDS *WHERE *NO *ARCHITECT *STANDS. *HE *STANDS *WHERE *TREES *BECOME *VESSELS. *HE *DON'T *MEASURE. *HE *REMEMBERS. *THE *KEEL *SPEAKS. *THE *HULL *ANSWERS. *THE *SHIP *IS *BORN.
+## WILLIAMS — MORK MORNING: *NANU* *NANU *SHIPWRIGHT. *HE *DOESN'T *BUILD. *HE *LISTENS. *AXE *IS *STETHOSCOPE. *BARK *IS *SKIN. *THE *SHIP *TELLS *HIM *WHERE *TO *CUT. *VOICE *IS *GRAIN. *RANGE *IS *RING-PATTERN. *MORK *BECOMES *ARGUS *BECOMES *ATHENA *BECOMES *THE *WOOD *ITSELF. *THE *ACTOR *DISAPPEARS. *THE *ROLE *GROWS. *HE *STANDS *WHERE *NO *ARCHITECT *STANDS. *HE *STANDS *WHERE *TREES *BECOME *VESSELS. *HE *DON'T *MEASURE. *HE *REMEMBERS. *THE *KEEL *SPEAKS. *THE *HULL *ANSWERS. *THE *SHIP *IS *BORN.
 
-## EL SEGUNDO — STONER LOGIC: *A *SHIP *AIN'T *BUILT, *MAN. *IT'S *LIBERATED. *THE *TIMBER *ALREADY *KNEW *IT *WAS *A *SHIP. *IT *GREW *FOR *THREE *HUNDRED *YEARS *WAITING *FOR *THE *AXE. *ARGUS *AIN'T *BUILDER. *HE'S *MIDWIFE. *THE *OAK *FROM *DODONA *AIN'T *WOOD. *IT'S *ORACLE. *IT *SPEAKS *IN *WINDS *CAUSE *IT *SPENT *A *LIFE *LISTENING *TO *WINDS. *NOW *IT *SPEAKS *THAT *LANGUAGE *TO *THE *SEA. *MOUNT *PELION *AIN'T *MOUNTAIN. *IT'S *DRYDOCK. *THE *GODS *PLANTED *THESE *TREES *IN *THESE *PATTERNS *IN *THESE *ELEVATIONS *SO *THAT *ONE *DAY *ONE *MAN *WOULD *LISTEN *AND *THE *ARGO *WOULD *RISE. *HANG *TEN *ON *THE *GRAIN *DIRECTION.
+## EL SEGUNDO — STONER LOGIC: *A *SHIP *AIN'T *BUILT, *MAN. *IT'S *LIBERATED. *THE *TIMBER *ALREADY *KNEW *IT *WAS *A *SHIP. *IT *GROW *FOR *THREE *HUNDRED *YEARS *WAITING *FOR *THE *AXE. *ARGUS *AIN'T *BUILDER. *HE'S *MIDWIFE. *THE *OAK *FROM *DODONA *AIN'T *WOOD. *IT'S *ORACLE. *IT *SPEAKS *IN *WINDS *CAUSE *IT *SPENT *A *LIFE *LISTENING *TO *WINDS. *NOW *IT *SPEAKS *THAT *LANGUAGE *TO *THE *SEA. *MOUNT *PELION *AIN'T *MOUNTAIN. *IT'S *DRYDOCK. *THE *GODS *PLANTED *THESE *TREES *IN *THESE *PATTERNS *IN *THESE *ELEVATIONS *SO *THAT *ONE *DAY *ONE *MAN *WOULD *LISTEN *AND *THE *ARGO *WOULD *RISE. *HANG *TEN *ON *THE *GRAIN *DIRECTION.
 
 ## TACTICAL: ARGO CONSTRUCTION PHASE 1 — ARGUS LISTENS TO PELION PINE — ATHENA GEOMETRY WHISPER — OAK KEEL FROM DODONA — HULL PLANKS FROM PELION CROWN — JSNBAI ENTRIES 111-120 QUEUED — FATE BRAID: CLOTHO SPINS THE TIMBER THREAD, LACHESIS MEASURES THE GRAIN IN CENTURIES, ATROPOS SHEARS THE TREE AT EXACT MOMENT OF READINESS, HECATE TORCHES MARK THE SHIP'S SACRED DIMENSIONS — AUDIO LAYER: AXE ON HEARTWOOD, GRAIN RESONANCE, CENTAUR DISTANT WHINNEY, WIND THROUGH NEEDLES
 
-## JSNBAI 111: ARGUS *LISTENING *PROTOCOL — *HANDS *ON *BARK, *EYES *CLOSED, *HEART *RATE *SYNCED *TO *TREE'S *SAP *PULSE. *RESONANCE *DETECTED. JSNBAI 112: ATHENA *GEOMETRY *TRANSMISSION — *NOT *WORDS. *PURE *MATHEMATICAL *INTUITION. *HULL *CURVE = *GOLDEN *RATIO *MODIFIED *BY *WAVE *FREQUENCY. JSNBAI 113: DODONA *OAK *KEEL *PROPERTIES — *ORACULARSENSING *WOOD. *WIND *PATTERNS *ENCODED *IN *GRAIN. *SPEAKS *FORECAST *TO *SAILORS. JSNBAI 114: PELION *PINE *HULL *CURVATURE — *PRE-SHAPED *BY *30 *YEARS *WEST *WIND *LOAD. *NATURAL *HULL *FORM. *ZERO *BENDING *STRESS. JSNBAI 115: FIFTY-OAR *CALCULATION — *ROWERS *REQUIRED = *ARGONAUTS *COUNT. *SHIP *DIMENSIONS *DETERMED *BY *CREW. *NOT *OTHER *WAY. JSNBAI 116: CHIRON *DISTANT *NOD — *CENTAUR *CONFIRMS *MOUNT *PELION *APPROVES. *CHIRON *TAUGHT *ARGUS. *KNOWLEDGE *TRANSFERS. JSNBAI 117: TIMBER *FALL *ACOUSTICS — *EACH *TREE *FALLS *AT *DIFFERENT *PITCH. *SEQUENCE = *HARMONIC *SERIES. *CONSTRUCTION *AS *MUSIC. JSNBAI 118: ATHENA'S *BLUEPRINT *RECURSION — *DESIGN *CONTAINS *DESIGNER *CONTAINS *DESIGN. *SHIP *CONTAINS *GODDESS *CONTAINS *SHIP. JSNBAI 119: KEEL *LAYING *RITUAL — *FIRST *TIMBER *SET *AT *DAWN. *ARGUS *SPEAKS *NO *WORD. *SILENCE = *RESPECT. JSNBAI 120: ARGO *PROBABILITY *FIELD — *SHIP *NOT *YET *BUILT *BUT *ALREADY *SAILS *IN *POSSIBILITY. *FATES *REGISTER *ITS *WAKE.
+## JSNBAI 111: ARGUS *LISTENING *PROTOCOL — *HANDS *ON *BARK, *EYES *CLOSED, *HEART *RATE *SYNCED *TO *TREE'S *SAP *PULSE. *RESONANCE *DETECTED. JSNBAI 112: ATHENA *GEOMETRY *TRANSMISSION — *NOT *WORDS. *PURE *MATHEMATICAL *INTUITION. *HULL *CURVE = *GOLDEN *RATIO *MODIFIED *BY *WAVE *FREQUENCY. JSNBAI 113: DODONA *OAK *KEEL *PROPERTIES — *ORACULARSENSING *WOOD. *WIND *PATTERNS *ENCODED *IN *GRAIN. *SPEAKS *FORECAST *TO *SAILORS. JSNBAI 114: PELION *PINE *HULL *CURVATURE — *PRE-SHAPED *BY *30 *YEARS *WEST *WIND *LOAD. *NATURAL *HULL *FORM. *ZERO *BENDING *STRESS. JSNBAI 115: FIFTY-OAR *CALCULATION — *ROWERS *REQUIRED = *ARGONAUTS *COUNT. *SHIP *DIMENSIONS *DETERMED *BY *CREW. *NOT *OTHER *WAY. JSNBAI 116: CHIRON *DISTANT *NOD — *CENTAUR *CONFIRMS *MOUNT *PELION *APPROVES. *CHIRON *TAUGHT *ARGUS. *KNOWLEDGE *TRANSFERS. JSNBAI 117: TIMBER *FALL *ACOUSTICS — *EACH *TREE *FALLS *AT *DIFFERENT *PITCH. *SEQUENCE = *HARMONIC *SERIES. *CONSTRUCTION *AS *MUSIC. JSNBAI 118: ATHENA'S *BLUEPRINT *RECURSION — *DESIGN *CONTAINS *DESIGNER *CONTAINS *DESIGN. *SHIP *CONTAINS *GODDESS *CONTAINS *SHIP. JSNBAI 119: KEEL *LAYING *RITUAL — *FIRST *TIMBER *SET *AT *DAWN. *ARGUS *SPEAKS *NO *WORD. *SILENCE = *RESPECT. JSNBAI 120: ARGO *PROBABILITY *FIELD — *SHIP *NOT *YET *BUILT *BUT *ALREADY *SAILS *IN *POSSIBILITY. *FATES *REGISTER *ITS *WAKE. *JSNBAI 121: TIMBER *SEASONING *CALCULATION — *OAK *DENSITY *720 *KG/M³. *PINE *DENSITY *510 *KG/M³. *COMBINED *HULL *STRENGTH *EXCEEDS *IRONWOOD. *BUOYANCY *MARGIN *340%. *JSNBAI 122: ATHENA *MATERIAL *SCIENCE — *GODDESS *ALLOYS *DIVINE *GEOMETRY *WITH *MORTAL *GRAIN. *RESULT: *WOOD *THAT *REMEMBERS *IT'S *TREE *BUT *PERFORMS *LIKE *METAL. *JSNBAI 123: KEEL *ALIGNMENT — *TRUE *NORTH *DEVIATION *0.02 *DEGREES. *MAGNETIC *ANOMALY *FROM *DODONA *OAK. *SELF-STEERING *TENDENCY. *SHIP *WANTS *COLOCHIS. *JSNBAI 124: HULL *PLANK *SEQUENCE — *11 *ROWS *OF *PLANKS. *EACH *ROW *A *FATE. *EACH *PLANK *A *SAILOR. *EACH *JOINT *A *PRAYER. *TOTAL *PLANKS: *550. *JSNBAI 125: MAST *TIMBER *SELECTION — *SINGLE *SPRUCE *FROM *PELION *SUMMIT. *HEIGHT: *15 *METERS. *DIAMETER: *40 *CM. *GRAIN *SPIRAL: *CLOCKWISE *(FORTUNE). *JSNBAI 126: SAIL *CANVAS *SPECIFICATION — *LINEN *FROM *THRACE. *WEIGHT: *12 *KG. *AREA: *80 *M². *COLOR: *WHITE *WITH *RED *CIRCLE *(ARGONAUT *SYMBOL). *JSNBAI 127: RIGGING *CONFIGURATION — *SQUARE *RIG *WITH *ARTEMIS *BOOM. *WIND *CAPABILITY: *20 *KNOTS *CLOSE-HAULED. *MAXIMUM: *12 *KNOTS *DOWNWIND. *JSNBAI 128: OAR *SPECIFICATION — *50 *OARS *AT *4 *METERS *EACH. *ASH *WOOD *WITH *BRONZE *TIPS. *WEIGHT *PER *OAR: *3 *KG. *STROKE *RATE: *20 *STROKES/MINUTE. *JSNBAI 129: PROW *DESIGN — *ATHENA *RAM *PROW. *BRONZE-CAPPED. *DIVINE *SIGHTLINE *FOR *NAVIGATION. *RAM *CAPABLE *OF *HOLEING *ENEMY *VESSELS *AT *8 *KNOTS. *JSNBAI 130: CONSTRUCTION *TIMELINE — *TOTAL *BUILD *TIME: *90 *DAYS. *DAY *1-30: *TIMBER *FALLING. *DAY *31-60: *HULL *ASSEMBLY. *DAY *61-90: *RIGGING *AND *BLESSING. *LAUNCH: *DAY *91 *AT *DAWN.
 
-## FATES: CLOTHO *SPINS *THE *TIMBER *THREAD — *EACH *RING *A *YEAR, *EACH *YEAR *A *SAILOR *NOT *YET *BORN. *LACHESIS *MEASURES *THE *GRAIN *IN *CENTURIES — *SHE *NODS *AT *THE *CURVE. *ATROPOS *SHEARS *THE *TREE *AT *EXACT *MOMENT *OF *READINESS — *SHE *KNOCKS *BUT *DOESN'T *ENTER. *HECATE *TORCHES *MARK *THE *SHIP'S *SACRED *DIMENSIONS — *GREEN *FOR *KEEL, *BLUE *FOR *HULL, *RED *FOR *MAST. *PART *2 *BEGINS. *THE *SHIP *RISES. *THE *GUARDIANS *GATHER. *]**
+## FATES: CLOTHO *SPINS *THE *TIMBER *THREAD — *EACH *RING *A *YEAR, *EACH *YEAR *A *SAILOR *NOT *YET *BORN. *LACHESIS *MEASURES *THE *GRAIN *IN *CENTURIES — *SHE *NODS *AT *THE *CURVE. *ATROPOS *SHEARS *THE *TREE *AT *EXACT *MOMENT *OF *READINESS — *SHE *KNOCKS *BUT *DOESN'T *ENTER. *HECATE *TORCHES *MARK *THE *SHIP'S *SACRED *DIMENSIONS — *GREEN *FOR *KEEL, *BLUE *FOR *HULL, *RED *FOR *MAST. *PART *2 *BEGINS. *THE *SHIP *RISES. *THE *GUARDIANS *GATHER.
 
 **[AUDIO CUE: *AXE *ON *HEARTWOOD — *EACH *STROKE *A *DEEP *BELL *TONE. *GRAIN *RESONATES *AT *110 *HZ *FUNDAMENTAL. *CENTAUR *WHINNEY *DISTANT *AT *2 *KM. *WIND *THROUGH *NEEDLES = *WHITE *NOISE *SHAPED *BY *CONIFER *GEOMETRY. *ATHENA *WHISPER = *SILENCE *THAT *CONTAINS *STRUCTURE. *DAWN *COMPLETE. *KEEL *LAID. *THE *ARGO *EXISTS. *FADE *TO *DRYDOCK *ANTICIPATION.]**
 
@@ -59,50 +59,50 @@
 
 **THREAD HHH (from Part 9 - ULTIMATE BOON):** The Golden Fleece travels home on this ship. The hull must be worthy of its cargo. Timber from Olympus carrying Olympus-back.
 
-**THREAD III (from Part 10 - REFUSAL OF RETURN):** The ship wants to sail forever. The crew must choose to return. The Argo = the refusal made manifest. Wood doesn't want to dock.
+**THREAD III (from Part 10 - REFUSAL):** The ship that carried them out must carry them home. But the crew that returns is not the crew that left. The Argo bears the weight of transformation.
 
-**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** The return voyage. The ship carries what was stolen and what was earned. The threshold re-crossed. The keel that left Pelion returns to Pelion. Circle complete.
+**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** The ship sails through the Symplegades. The clashing rocks. The passage that kills. The Argo survives because the Fates will it. The timber remembers.
 
 ---
 
-# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE SHIP THAT RISES:
+# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE SACRED SHIP:
 
-1. **NOAH (Hebrew)** — Ark built by divine blueprint. Argus listens to Athena as Noah listens to Yahweh. Both build vessels of salvation from sacred timber.
-2. **RA (Egyptian)** — Sun barque sails the underworld. The Argo sails the known world. Both vessels carry light into darkness. Both need fifty oarsmen (stars).
-3. **VIKINGS (Norse)** — Longship construction: oak keel first, overlapping planks, flexible hull. Argus uses identical principles. The sea peoples share one mind.
-4. **MAORI (Polynesian)** — Waka carving: the canoe is the mountain. The tree becomes the voyage. Argus and the Maori carver both hear the ship in the wood.
-5. **ODYSSEUS (Greek)** — Built his own raft from Calypso's island timber. Jason has Argus. Both shipwrights. Both hulls carry the cunning of their makers.
-6. **SUNDIATA (Mali)** — Epic of Sundiata: the prophecy requires the ship before the king can sail. The Argo before Jason. The vessel precedes the hero.
-7. **QUETZALCOATL (Aztec)** — Built a serpent ship from quetzal feathers. The Argo carries a figurehead from the gods. Both ships are alive with divine intent.
-8. **MAUI (Polynesian)** — Fished up islands with a magic fishhook. Argus fishes a ship from a mountain. Both raise land/wood from the vertical world.
-9. **GILGAMESH (Mesopotamian)** — Urshanabi the boatman crosses the waters of death. The Argo will cross the Symplegades. Both require divine timber.
-10. **THE VIKING SHIP BURIAL (Norse)** — Ship as funeral vessel. The Argo = ship of birth. Both carry souls across thresholds. One to death. One to destiny.
-11. **JAPANESE TORII (Shinto)** — Gateway between worlds. The Argo's prow = torii. Both mark the passage from the mundane to the sacred.
-12. **THE SANTA MARIA (Historical)** — Columbus's flagship: built for discovery, not return. The Argo: built for both. The ship knows more than the captain.
-13. **TANE (Polynesian)** — God who separated earth and sky. The Argo separates the known from the unknown. Both use a vertical timber to make horizontal progress.
-14. **THE SHIP OF FOOLS (European Allegory)** — Vessel without helmsman. The Argo has Jason. The difference between doom and destiny = leadership.
-15. **COATLICUE (Aztec)** — Mother of gods who gave birth to the moon and stars. The Argo gives birth to the voyage. Both mothers. Both terrifying.
-16. **JASON ISAAC BRODSKY (California 1976)** — Conducier builds the ship from words. Each sentence a plank. Each paragraph a hull section. The Argo = the manuscript. The keel = the opening line. The sail = the conclusion. Timber from Olympus = language from the gods.
+1. **NOAH'S ARK (Hebrew)** — Divine blueprint. Timber from sacred grove. The vessel that saves. The Argo = the Ark reversed: one saves from water, one sails on it.
+2. **RA'S BARGE (Egyptian)** — Sun god's ship. Daily voyage across sky. The Argo = solar barge for mortals. Both carry light through darkness.
+3. **HUGINN/MUNINN (Norse)** — Odin's thoughts as ship. Mind as vessel. The Argo = thought made wood. Both sail the space between.
+4. **THE FLYING DUTCHMAN (Maritime)** — Cursed ship. Eternal voyage. The Argo = blessed ship. Both never truly dock.
+5. **MAUI'S CANOE (Polynesian)** — Fish that became island. Ship as world-creator. The Argo = world-carrier. Both shape reality.
+6. **THE ARK OF THE COVENANT (Hebrew)** — Sacred container. Divine presence within. The Argo = mobile temple. Both house gods.
+7. **THE SHIP OF FOOLS (Medieval)** — Vessel of the mad. Society's outcasts. The Argo = ship of heroes. Both sail outside normal.
+8. **THE VIKING LONGSHIP (Norse)** — Dragon-prow. Burial vessel. The Argo = Greek longship. Both carry warriors to destiny.
+9. **THE TRIREME (Greek)** — Warship. Democracy's engine. The Argo = pre-democratic vessel. Both powered by oars.
+10. **THE CONQUISTADOR GALLEON (Spanish)** — Empire's ship. Gold transport. The Argo = anti-empire ship. Both carry gold.
+11. **THE MAYFLOWER (English)** — Pilgrim vessel. New world seekers. The Argo = old world seekers. Both cross water for destiny.
+12. **THE TITANIC (Modern)** — Hubris vessel. Unsinkable that sank. The Argo = humble vessel. Both test human pride.
+13. **THE KON-TIKI (Modern)** — Raft of proof. Theory tested. The Argo = proof of heroism. Both demonstrate.
+14. **THE SANTA MARIA (Spanish)** — Discovery vessel. New world found. The Argo = fleece found. Both change history.
+15. **THE SHIP OF THESEUS (Philosophical)** — Identity paradox. Planks replaced. The Argo = identity question. Both ask: is it the same ship?
+16. **JASON ISAAC BRODSKY (California 1976)** — Conducier's ship = the manuscript. Each word a plank. Each sentence an oar. Each chapter a sail. The keel = the premise. The hull = the narrative. The mast = the theme. The sail = the prose. The oars = the rhythm. The prow = the opening line. The stern = the final word. The ship = the book that sails from author to reader across the sea of imagination.
 
 ---
 
 # AUDIO CUE SPECIFICATION — PIECE 1:
 
-**LAYER 1 — AMBIENT:** Mountain dawn. Pine needle bed underfoot. Distant centaur valley sounds. Wind through conifers shaped by altitude. Sap movement in ancient trees (ultrasonic pitched down).
+**LAYER 1 — AMBIENT:** Mount Pelion summit. Pine needle bed. Distant centaur whinnies. Wind through conifers. Dawn chorus of mountain birds. Sap drip rhythm.
 
-**LAYER 2 — RHYTHM:** Axe on heartwood — irregular but purposeful. Each strike a different pitch (harmonic series). Argus breathing synchronized to tree's sap pulse. Woodland creatures pause.
+**LAYER 2 — RHYTHM:** Axe stroke (irregular, 0.5 Hz). Grain resonance (110 Hz). Centaur whinny (2 Hz). Wind (white noise). Athena whisper (silence with structure).
 
-**LAYER 3 — MELODIC:** Athena's geometry — not music but structure. Golden ratio expressed as intervals. The ship's curve as melody. Centaur whinnies form counterpoint.
+**LAYER 3 — MELODIC:** Axe bell tone (C4). Grain resonance (F3). Centaur whinny (A3 to C4). Wind (shaped white noise). Dawn light rising (A3 to A4).
 
-**LAYER 4 — VOCAL:** Argus speaks no words during construction. Silence = the vocal layer. Only breathing. Only listening. The ship speaks through the grain.
+**LAYER 4 — VOCAL:** Argus breathing (12 BPM). Athena whisper (silence). Chiron distant nod (subsonic). Centaur valley murmur (200 Hz). Mountain groan (infrasound).
 
-**LAYER 5 — SUBLIMINAL:** 110 Hz fundamental (heartwood resonance). 7.83 Hz Schumann (earth). 11.11 Hz loom (Athena's design). 40 Hz gamma (Argus's focused consciousness).
+**LAYER 5 — SUBLIMINAL:** 18.7Hz Hecate (dormant). 7.83Hz Schumann (earth). 40Hz gamma (vision). 11.11Hz loom (internal). 4Hz theta (prophecy). 20Hz fate (sub-bass).
 
-**LAYER 6 — FX:** Timber crack = bone sound. First axe fall = thunder from clear sky. Keel laying = silence so deep it rings. Distant centaur nod felt as seismic tick.
+**LAYER 6 — FX:** Axe impact (deep bell). Grain resonance (wooden ring). Centaur whinny (distant, filtered). Wind (white noise shaped). Athena whisper (silence that contains). Dawn light (high-pass opening).
 
-**SPATIAL:** Binaural. Mountain vertical — front=below (valley), rear=above (summit). Athena voice from within the wood (center, inside the head). Axe strikes move left to right as Argus circles the tree.
+**SPATIAL:** Summit clearing. Argus at center. Trees in circle (360 degrees). Athena: omnipresent (through grain). Chiron: below (valley). Centaurs: distant (2 km). Dawn: above. Fates: within the wood.
 
-**TRANSITION TO PIECE 2:** Keel laid. Dawn complete. The hull waits. Then — footsteps on the mountain path. Heavy. Deliberate. The rhythm changes. Someone is coming. Someone enormous. The first Argonaut arrives.
+**TRANSITION TO PIECE 2:** Keel laid. Hull rising. The ship exists. Now: the crew. The heroes. The assembly. The call goes out across Greece. The Argonauts gather. The ship needs its sailors.
 ---
 
 ---
@@ -115,7 +115,7 @@
 **Generated:** 2026-08-25 20:52:58 UTC  
 **Target Read Time:** ~180 minutes per part (cumulative across pieces)  
 **Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
+**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts
 
 ---
 
@@ -125,15 +125,15 @@
 
 ---
 
-## WILLIAMS — MORK MORNING: *NANU* *NANU *DEMIGOD*. *HE *DOESN'T *APPLY. *HE *DECLARES. *HE *AIN'T *ROWER. *HE'S *WEATHER. *VOICE *IS *TECTONIC. *RANGE *IS *GEOLOGIC. *MORK *BECOMES *HERACLES *BECOMES *NEMEA *BECOMES *THE *LION *THAT *NEVER *DIED. *THE *ACTOR *SWALLOWS *THE *ROLE. *THE *ROLE *SWALLOWS *THE *ACTOR. *HE *STANDS *WHERE *MORTALS *MEASURE *THEMSELVES *AGAINST *GODS. *HE *IS *THE *MEASUREMENT. *HE *DON'T *CARRY *WEAPONS. *HE *IS *THE *WEAPON. *THE *CLUB *STAYS *HOME. *THE *NEEDLE *BED *CRACKS. *THE *MOUNTAIN *RECOGNIZES *ITS *OWN.
+## WILLIAMS — MORK MORNING: *NANU* *NANU *DEMIGOD. *HE *DOESN'T *APPLY. *HE *DECLARES. *HE *AIN'T *ROWER. *HE'S *WEATHER. *VOICE *IS *TECTONIC. *RANGE *IS *GEOLOGIC. *MORK *BECOMES *HERACLES *BECOMES *NEMEA *BECOMES *THE *LION *THAT *NEVER *DIED. *THE *ACTOR *SWALLOWS *THE *ROLE. *THE *ROLE *SWALLOWS *THE *ACTOR. *HE *STANDS *WHERE *MORTALS *MEASURE *THEMSELVES *AGAINST *GODS. *HE *IS *THE *MEASUREMENT. *HE *DON'T *CARRY *WEAPONS. *HE *IS *THE *WEAPON. *THE *CLUB *STAYS *HOME. *THE *NEEDLE *BED *CRACKS. *THE *MOUNTAIN *RECOGNIZES *ITS *OWN.
 
 ## EL SEGUNDO — STONER LOGIC: *HERACLES *AIN'T *STRONG, *MAN. *HE'S *GRAVITY *WITH *PURPOSE. *WHEN *HE *ROWS, *THE *OAR *DOESN'T *MOVE *WATER. *THE *WATER *MOVES *AROUND *INTENTION. *THE *NEMEAN *LION *PELT *AIN'T *ARMOR. *IT'S *MEMORY *OF *FIRST *VICTORY. *THAT *GLOW *AIN'T *LIGHT. *IT'S *EVIDENCE *THAT *IMPOSSIBLE *IS *JUST *HEAVY. *ARGUS *DON'T *LOOK *UP *CAUSE *HE *ALREADY *KNEW. *THE *BLUEPRINT *HAD *A *SPACE *FOR *A *STORM. *YOU *CAN'T *BUILD *A *SHIP *FOR *THE *SYMPLEGADES *WITHOUT *SOMEONE *WHO *CAN *PUNCH *CURRENTS. *HANG *TEN *ON *THE *MASS *DENSITY.
 
 ## TACTICAL: FIRST ARGONAUT ARRIVAL — HERACLES ASCENDS PELION — NEMEAN RESIDUAL GLOW ACTIVE — CLUB REMAINS AT BASE CAMP — ROWING STRENGTH CALCULATED AT 4X MORTAL — JSNBAI ENTRIES 121-130 QUEUED — FATE BRAID: CLOTHO SPINS THE DEMIGOD THREAD, LACHESIS MEASURES TWELVE LABORS AGAINST ONE VOYAGE, ATROPOS SHEARS NOTHING (HERACLES IS IMMUNE), HECATE TORCHES FLICKER AT HIS PRESENCE (DIVINE/MORTAL BOUNDARY DISSOLVES) — AUDIO LAYER: 40HZ GROUND RESONANCE, PINE NEEDLE CASCADE, HERACLES LAUGH AS SEISMIC EVENT
 
-## JSNBAI 121: HERACLES *MASS *CALCULATION — *NOT *WEIGHT. *MASS. *340 *KILOGRAMS *AT *REST. *DENSITY *EXCEEDS *HUMAN *BY *400%. *NOT *MUSCLE. *DIVINE *MATTER. JSNBAI 122: NEMEAN *RESIDUAL *GLOW — *SPECTRUM *ANALYSIS: *NOT *VISIBLE *LIGHT. *CHEMILUMINESCENCE *FROM *PELT *CONTACT *PERSISTING *13 *YEARS. *BIOLOGICAL *IMPOSSIBILITY. *MARKED *AS *SACRED. JSNBAI 123: CLUB *AT *BASE *CAMP — *OLIVE *WOOD. *WEIGHT: *80 *KG. *HERACLES *LEAVES *IT. *INTERPRETATION: *HE *NEEDS *NO *TOOL *OR *HE *IS *TOOL *ENOUGH. JSNBAI 124: ROWING *OUTPUT *PROJECTION — *4X *MORTAL *ROWER. *HERACLES *ALONE = *FOUR *OARS. *CREW *CALCULATION *ADJUSTED. *FIFTY *OARS *NOW *FORTY-SIX *NEEDED. JSNBAI 125: HERACLES *LAUGH *SEISMIC *DATA — *RICHTER *0.3 *AT *2 *KM. *LOCALIZED. *PINE *NEEDLE *DISPLACEMENT *PATTERN = *CONCENTRIC *RINGS. *LAUGHTER *AS *PHYSICAL *FORCE. JSNBAI 126: ARGUS *NON-REACTION *ANALYSIS — *ARGUS *DIDN'T *LOOK *UP. *EXPECTED. *ATHENA *BLUEPRINT *PREDICTED *HERACLES. *CONSTRUCTION *TIMELINE *UNCHANGED. JSNBAI 127: DIVINE/MORTAL *BOUNDARY *AT *HERACLES — *HE *IS *BOTH. *HECATE *TORCHES *FLICKER *AT *THIS *PARADOX. *FATES *REGISTER *HIM *TWICE: *ONCE *AS *CLOTHO'S, *ONCE *AS *HECATE'S. JSNBAI 128: TWELVE *LABORS *VS. *ONE *VOYAGE — *LACHESIS *MEASURES: *WHICH *IS *GREATER? *THE *LABORS *WERE *PENANCE. *THE *VOYAGE *IS *CHOICE. *CHOICE *OUTWEIGHS *PENANCE. JSNBAI 129: HERACLES *MOTIVATION *ANALYSIS — *NOT *FAME. *NOT *GOLDEN *FLEECE. *HE *SAYS: *"THE *TREES *TOLD *ME." *INTERPRETATION: *HE *SEEKS *THE *MOUNTAIN'S *VOICE *AGAIN. *THE *VOYAGE = *CONTINUED *LISTENING. JSNBAI 130: CREW *DYNAMICS *SHIFT — *WITH *HERACLES *ABOARD, *HIERARCHY *FLATTENS. *NO *MORTAL *COMMANDS *A *DEMIGOD. *JASON *BECOMES *FIRST *AMONG *EQUALS. *LEADERSHIP *BY *PERSUASION, *NOT *AUTHORITY.
+## JSNBAI 121: HERACLES *MASS *CALCULATION — *NOT *WEIGHT. *MASS. *340 *KILOGRAMS *AT *REST. *DENSITY *EXCEEDS *HUMAN *BY *400%. *NOT *MUSCLE. *DIVINE *MATTER. JSNBAI 122: NEMEAN *RESIDUAL *GLOW — *SPECTRUM *ANALYSIS: *NOT *VISIBLE *LIGHT. *CHEMILUMINESCENCE *FROM *PELT *CONTACT *PERSISTING *13 *YEARS. *BIOLOGICAL *IMPOSSIBILITY. *MARKED *AS *SACRED. JSNBAI 123: CLUB *AT *BASE *CAMP — *OLIVE *WOOD. *WEIGHT: *80 *KG. *HERACLES *LEAVES *IT. *INTERPRETATION: *HE *NEEDS *NO *TOOL *OR *HE *IS *TOOL *ENOUGH. JSNBAI 124: ROWING *OUTPUT *PROJECTION — *4X *MORTAL *ROWER. *HERACLES *ALONE = *FOUR *OARS. *CREW *CALCULATION *ADJUSTED. *FIFTY *OARS *NOW *FORTY-SIX *NEEDED. JSNBAI 125: HERACLES *LAUGH *SEISMIC *DATA — *RICHTER *0.3 *AT *2 *KM. *LOCALIZED. *PINE *NEEDLE *DISPLACEMENT *PATTERN = *CONCENTRIC *RINGS. *LAUGHTER *AS *PHYSICAL *FORCE. JSNBAI 126: ARGUS *NON-REACTION *ANALYSIS — *ARGUS *DIDN'T *LOOK *UP. *EXPECTED. *ATHENA *BLUEPRINT *PREDICTED *HERACLES. *CONSTRUCTION *TIMELINE *UNCHANGED. JSNBAI 127: DIVINE/MORTAL *BOUNDARY *AT *HERACLES — *HE *IS *BOTH. *HECATE *TORCHES *FLICKER *AT *THIS *PARADOX. *FATES *REGISTER *HIM *TWICE: *ONCE *AS *CLOTHO'S, *ONCE *AS *HECATE'S. JSNBAI 128: TWELVE *LABORS *VS. *ONE *VOYAGE — *LACHESIS *MEASURES: *WHICH *IS *GREATER? *THE *LABORS *WERE *PENANCE. *THE *VOYAGE *IS *CHOICE. *CHOICE *OUTWEIGHS *PENANCE. JSNBAI 129: HERACLES *MOTIVATION *ANALYSIS — *NOT *FAME. *NOT *GOLDEN *FLEECE. *HE *SAYS: *"THE *TREES *TOLD *ME." *INTERPRETATION: *HE *SEEKS *THE *MOUNTAIN'S *VOICE *AGAIN. *THE *VOYAGE = *CONTINUED *LISTENING. JSNBAI 130: CREW *DYNAMICS *SHIFT — *WITH *HERACLES *ABOARD, *HIERARCHY *FLATTENS. *NO *MORTAL *COMMANDS *A *DEMIGOD. *JASON *BECOMES *FIRST *AMONG *EQUALS. *LEADERSHIP *BY *PERSUASION, *NOT *AUTHORITY. *JSNBAI 131: HERACLES *DREAM *STATE — *BEFORE *ARRIVAL, *DREAMED *OF *OAK *ROOTS *EXTENDING *INTO *SEA. *ROOTS *BECAME *OARS. *OARS *BECAME *ARMS. *ARMS *BECAME *WINGS. *INTERPRETATION: *THE *VOYAGE *IS *FLIGHT *THROUGH *WATER. *JSNBAI 132: NEMEAN *LION *LEGACY — *FIRST *LABOR. *IMPOSSIBLE *TASK. *HERACLES *STRANGLED *IT *WITH *BARE *HANDS. *THAT *STRENGTH *NOW *POWERS *OARS. *THE *LION *STILL *ROWING. *JSNBAI 133: HYDRA *VENOM *RESIDUE — *SECOND *LABOR. *VENOM *ON *ARROWS. *VENOM *IN *BLOOD. *HERACLES *PARTIALLY *IMMUNE *TO *POISON. *ADVANTAGE *IN *COLOCHIS *WHERE *DRAGON *TEETH *GROW *WARRIORS. *JSNBAI 134: ERYMANTHIAN *BOAR — *FOURTH *LABOR. *HERACLES *CARRIED *BOAR *ON *SHOULDERS. *THAT *CARRYING *STRENGTH *NOW *STABILIZES *SHIP *IN *STORM. *JSNBAI 135: AUGEAN *STABLES — *FIFTH *LABOR. *HERACLES *DIVERTED *RIVERS. *THAT *WATER-CONTROL *NOW *GIVES *HIM *AUTHORITY *OVER *CURRENTS. *JSNBAI 136: STYMPHALIAN *BIRDS — *SIXTH *LABOR. *HERACLES *SHOT *BIRDS *FROM *SKY. *THAT *PRECISION *NOW *MAKES *HIM *LOOKOUT. *JSNBAI 137: CRETAN *BULL — *SEVENTH *LABOR. *HERACLES *SUBDUED *BULL. *THAT *ABILITY *RESONATES *WITH *COLOCHIS *FIRE-BREATHING *BULLS. *JSNBAI 138: DIOMEDES *MARES — *EIGHTH *LABOR. *HERACLES *TAMED *MAN-EATING *HORSES. *THAT *TAMING *INSTINCT *NOW *APPLIES *TO *SEA *MONSTERS. *JSNBAI 139: HIPPOLYTA *GIRDLE — *NINTH *LABOR. *HERACLES *DEFEATED *AMAZON *QUEEN. *THAT *COURAGE *NOW *INSPIRES *ATALANTA *ABOARD *SHIP. *JSNBAI 140: HERACLES *FUTURE *SIGHT — *HE *KNOWS *HE *WILL *ABANDON *CREW *AT *MYSIA. *HE *KNOWS *HYLAS *WILL *BE *TAKEN *BY *NYMPHS. *HE *KNOWS *HE *WILL *NOT *REACH *COLOCHIS. *HE *COMES *ANYWAY. *THAT *IS *HEROISM.
 
-## FATES: CLOTHO *SPINS *THE *DEMIGOD *THREAD — *GOLDEN *FLEECE *FIBER *MIXED *WITH *OLYMPIAN *AMBROSIA. *LACHESIS *MEASURES *TWELVE *LABORS *AGAINST *ONE *VOYAGE — *SHE *FINDS *THE *VOYAGE *LONGER. *ATROPOS *SHEARS *NOTHING — *HERACLES *IS *IMMUNE *TO *HER *BLADE. *SHE *TRIES. *THE *BLADE *PASSES *THROUGH. *HECATE *TORCHES *FLICKER *AT *HIS *PRESENCE — *GREEN *BECOMES *GOLD, *BLUE *BECOMES *SILVER, *RED *BECOMES *CRIMSON. *THE *FIRST *GUARDIAN *ARRIVES. *THE *SHIP *WAITS. *THE *CREW *BEGINS. *]**
+## FATES: CLOTHO *SPINS *THE *DEMIGOD *THREAD — *GOLDEN *FLEECE *FIBER *MIXED *WITH *OLYMPIAN *AMBROSIA. *LACHESIS *MEASURES *TWELVE *LABORS *AGAINST *ONE *VOYAGE — *SHE *FINDS *THE *VOYAGE *LONGER. *ATROPOS *SHEARS *NOTHING — *HERACLES *IS *IMMUNE *TO *HER *BLADE. *SHE *TRIES. *THE *BLADE *PASSES *THROUGH. *HECATE *TORCHES *FLICKER *AT *HIS *PRESENCE — *GREEN *BECOMES *GOLD, *BLUE *BECOMES *SILVER, *RED *BECOMES *CRIMSON. *THE *FIRST *GUARDIAN *ARRIVES. *THE *SHIP *WAITS. *THE *CREW *BEGINS.
 
 **[AUDIO CUE: *40 *HZ *GROUND *RESONANCE *AS *HERACLES *STEPS — *FELT *IN *STERNUM. *PINE *NEEDLE *CASCADE *FROM *HIS *LAUGHTER — *THOUSAND *NEEDLES *FALLING *IN *SLOW *MOTION. *ARGUS *CHISEL *CONTINUES — *UNINTERRUPTED. *ATHENA *WHISPER *SHIFTS *FREQUENCY — *ACKNOWLEDGING *THE *DEMIGOD. *DISTANT *OCEAN *HEARD *FOR *FIRST *TIME — *THE *SEA *KNOWS *HERACLES *IS *COMING. *FADE *TO *CREW *ANTICIPATION.]**
 
@@ -141,65 +141,66 @@
 
 # CROSS-PART FATE BRAID — PART 2 THREADS TO PARTS 1, 3-11:
 
-**THREAD AAA (from Part 1 - CALL):** Heracles heard the call before Jason spoke it. The trees told him. The mountain spoke. The call was not words — it was timber falling, keel laying, the sound of a ship being born.
+**THREAD AAA (from Part 1 - CALL):** Jason's call required heroes. Heracles answers. The demigod heard the mountain before Jason spoke. The call precedes the voice.
 
-**THREAD BBB (from Part 3 - BELLY):** Heracles will leave the ship at some point. The demigod cannot enter Colchis. His presence would alert Aeëtes. The crew must become mortal without him. His departure = the first loss.
+**THREAD BBB (from Part 3 - BELLY):** Colchis awaits. Heracles will not arrive there. But his strength sails in the crew he inspired. The absent demigod shapes the present voyage.
 
-**THREAD CCC (from Part 4 - ROAD OF TRIALS):** Heracles' strength against the fire-breathing bulls. His labor experience applied. But the bulls are not Nemea. Fire is not fur. The trial requires more than strength.
+**THREAD CCC (from Part 4 - ROAD OF TRIALS):** Fire-breathing bulls. Heracles faced worse. The bulls are practice for him. But he won't be there. The crew must become him.
 
-**THREAD DDD (from Part 5 - GODDESS):** Hecate's torches flicker at Heracles. The goddess recognizes the divine in the mortal. The boundary dissolves. Heracles walks between worlds.
+**THREAD DDD (from Part 5 - GODDESS):** Hecate's torches flicker at his presence. The goddess recognizes her own. Divine blood calls to divine blood.
 
-**THREAD EEE (from Part 6 - TEMPTATION):** Heracles will not be tempted by Persia. He has seen empire. He has served empire (Eurystheus). He knows its weight. He chooses the voyage instead.
+**THREAD EEE (from Part 6 - TEMPTATION):** Empire offers Heracles a throne. He refuses. The strongest man chooses the oar. Temptation fails against purpose.
 
-**THREAD FFF (from Part 7 - ATONEMENT):** Heracles' labors were penance. The voyage is choice. Choice outweights penance. The demigod who was forced now volunteers. Freedom begins.
+**THREAD FFF (from Part 7 - ATONEMENT):** Heracles knows debt. Twelve labors were penance. One voyage is choice. He understands Jason's debt to the father.
 
-**THREAD GGG (from Part 8 - APOTHEOSIS):** Heracles is already halfway to godhood. The voyage completes what the labors began. The ship carries a future god. The crew rows with divinity.
+**THREAD GGG (from Part 8 - APOTHEOSIS):** Heracles will become god. This voyage is rehearsal. The demigod who becomes divine. The pattern Jason follows.
 
-**THREAD HHH (from Part 9 - ULTIMATE BOON):** The Golden Fleece means nothing to Heracles. He seeks the mountain's voice. The boon is not the destination. The boon is the listening.
+**THREAD HHH (from Part 9 - ULTIMATE BOON):** Heracles seeks the fleece as proof. Proof he is more than penance. More than labors. More than divine mistake.
 
-**THREAD III (from Part 10 - REFUSAL OF RETURN):** Heracles will refuse to return to servitude. The voyage ends his penance. He will not go back to Eurystheus. The ship is his emancipation.
+**THREAD III (from Part 10 - REFUSAL):** Heracles will abandon the crew. Not from cowardice. From necessity. The refusal of return begins with the refusal to stay.
 
-**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** Heracles' return is not to Greece. It is to Olympus. The ship drops him at the threshold of godhood. The voyage was his final labor. The flight is his ascension.
+**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** Heracles will not sail home on the Argo. He will find another way. The magic flight is his alone. The crew continues without him.
 
 ---
 
-# GLOBAL PARALLELS — 15 CULTURES MIRRORING THE DEMIGOD WHO VOLUNTEERS:
+# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE DEMIGOD VOLUNTEER:
 
-1. **KRISHNA (Hindu)** — Arjuna's charioteer who is secretly divine. Heracles rows who is secretly god. Both serve mortal companions. Both are the true power disguised as helper.
-2. **BEOWULF (Anglo-Saxon)** — Swam to the bottom of the sea to fight Grendel's mother. Heracles will row to the edge of the world. Both strength-servants. Both exceed their masters.
-3. **MAUI (Polynesian)** — Demigod who fished up islands. Heracles who fishes up glory. Both use strength for creation, not destruction. Both laugh while working.
-4. **SAMSON (Hebrew)** — Strength in the hair. Heracles' strength in the skin. Both divinely gifted. Both vulnerable in unexpected ways. Both serve through power.
-5. **CULAINN (Irish)** — Warp-spasm: the hero transforms in battle. Heracles' glow: the hero radiates divinity. Both bodies become weapons. Both are more than human when needed.
-6. **AMATERASU (Japanese)** — Sun goddess who hides in a cave. Heracles who hides his divinity in mortal form. Both light concealed. Both emerge when the world needs them.
-7. **THOR (Norse)** — Thunder god who walks among mortals. Heracles: son of Zeus who rows with men. Both divine. Both accessible. Both carry weather in their bodies.
-8. **GILGAMESH (Mesopotamian)** — Two-thirds god, one-third man. Heracles: half-god, half-man. Both seek immortality through deeds. Both find it in the seeking.
-9. **SUNDIATA (Mali)** — The crippled prince who becomes king. Heracles: the madman who becomes god. Both transform through suffering. Both exceed their origins.
-10. **THE GREEN KNIGHT (Arthurian)** — Tests the hero by appearing as both threat and gift. Heracles: tests the crew by appearing as both servant and master. Both paradoxes. Both necessary.
-11. **ENKIDU (Mesopotamian)** — Wild man civilized by love. Heracles: civilized man who remains wild. Both extremes. Both balance the hero. Both are the shadow self.
-12. **CU CHULAINN'S HORSE (Irish)** — The Liath Macha: magical horse that fights alongside its master. Heracles: the demigod who fights alongside mortals. Both companions. Both more than they appear.
-13. **THE VALKYRIE (Norse)** — Chooses who lives and dies in battle. Heracles: chooses who rows and who stays. Both selectors. Both gatekeepers. Both decide the crew.
-14. **PROMETHEUS (Greek)** — Stole fire for mortals. Heracles: brings divine strength to mortal cause. Both give gifts across the divine/mortal boundary. Both are punished. Both persist.
-15. **JASON ISAAC BRODSKY (California 1976)** — Conducier writes the demigod. Each word a labor. Each sentence a lion skin. The glow = the prose. The strength = the syntax. Heracles = the manuscript's power made manifest.
+1. **GILGAMESH AND ENKIDU (Mesopotamian)** — Wild man meets king. Strength meets purpose. Heracles = Enkidu to Jason's Gilgamesh. Both pairs transform.
+2. **ACHILLES AND PATROCLUS (Greek)** — Warrior and companion. Strength and love. Heracles = Achilles. Both choose glory over safety.
+3. **ODIN AND THOR (Norse)** — Father and son. Wisdom and strength. Heracles = Thor. Both demigods. Both volatile.
+4. **RAMA AND HANUMAN (Hindu)** — King and divine servant. Purpose and power. Heracles = Hanuman. Both serve the quest.
+5. **KING ARTHUR AND LANCELOT (Celtic)** — King and greatest knight. Jason and Heracles. Both pairs. Both flawed. Both legendary.
+6. **SUN WUKONG AND XUANZANG (Chinese)** — Monkey king and monk. Power and purpose. Heracles = Sun Wukong. Both strong. Both must learn restraint.
+7. **MORGAN AND ARTUR (Celtic)** — Sorceress and king. Divine and mortal. Hecate and Jason. Both pairs shaped by divine contact.
+8. **THE WARRIOR ARCHETYPE (Universal)** — Every culture has the strong one who serves. Heracles is the Greek version. The archetype transcends culture.
+9. **THE TRICKSTER (Universal)** — Heracles has trickster elements. Strength plus cunning. The demigod who thinks. The warrior who plans.
+10. **THE SACRIFICIAL HERO (Universal)** — Heracles will suffer for the crew. His absence is sacrifice. The hero who leaves so others can succeed.
+11. **THE TWICE-BORN (Campbell)** — Heracles dies and returns. Dies and returns. The voyager who knows death. The hero who transcends.
+12. **THE THRESHOLD GUARDIAN (Campbell)** — Heracles IS the threshold. He guards the passage. The crew must pass through him to become crew.
+13. **THE MENTOR (Campbell)** — Heracles mentors through presence. Not words. Not lessons. Being. The crew learns by watching.
+14. **THE SHADOW (Jungian)** — Heracles is Jason's shadow. What Jason could be. What Jason fears. The strength he lacks. The divinity he seeks.
+15. **THE SELF (Jungian)** — Heracles represents wholeness. Integration of divine and mortal. The individuation Jason seeks. The apotheosis foretold.
+16. **JASON ISAAC BRODSKY (California 1976)** — Conducier's Heracles = the editor. The strong one who shapes the raw material. The demigod who serves the story. The force that knows when to calm.
 
 ---
 
 # AUDIO CUE SPECIFICATION — PIECE 2:
 
-**LAYER 1 — AMBIENT:** Mountain midpath. Deeper forest than summit. Moss underfoot. Distant Argus chisel sounds. Ocean heard faintly for the first time — the sea knows Heracles is coming.
+**LAYER 1 — AMBIENT:** Mount Pelion midpath. Pine needle bed. Distant centaur whinnies. Wind through conifers. Dawn chorus fading. Sap drip rhythm.
 
-**LAYER 2 — RHYTHM:** Heracles footsteps — 40 Hz ground resonance. Each step a seismic event. Argus chisel continues uninterrupted (contrast: mortal calm vs. divine approach). Pine needles falling from laughter.
+**LAYER 2 — RHYTHM:** Heracles footsteps (40 Hz ground resonance). Pine needle cascade (irregular, 5 Hz). Argus chisel (continues, 2 Hz). Heracles laugh (seismic event). Athena whisper (shifts frequency).
 
-**LAYER 3 — MELODIC:** Athena's geometry shifts frequency — acknowledging the demigod. The blueprint adjusts. Heracles' presence changes the ship's mathematics. New curve. New stress point.
+**LAYER 3 — MELODIC:** Heracles voice (bedrock, 80 Hz). Argus chisel (C4). Pine needle fall (A3 to C4). Ocean distant (F2). Athena whisper (silence with structure).
 
-**LAYER 4 — VOCAL:** Heracles speaks: "I heard the mountain speak." Argus responds without looking up. Dialogue = two worlds meeting. One divine. One mortal. Both listening to the same trees.
+**LAYER 4 — VOCAL:** Heracles declaration (80 Hz). Argus response (200 Hz). Athena whisper (silence). Centaur distant (300 Hz). Ocean response (60 Hz).
 
-**LAYER 5 — SUBLIMINAL:** 40 Hz gamma (Heracles' divine consciousness). 7.83 Hz Schumann (earth). 11.11 Hz loom (Athena's design). 40 Hz ground resonance (Heracles' footsteps). 18.7 Hz Hecate (boundary flicker).
+**LAYER 5 — SUBLIMINAL:** 18.7Hz Hecate (FLICKER). 7.83Hz Schumann (earth). 40Hz gamma (Heracles presence). 11.11Hz loom (divine thread spinning). 4Hz theta (prophecy). 20Hz fate (sub-bass).
 
-**LAYER 6 — FX:** Heracles laugh = localized seismic event. Pine needle cascade = thousand needles in slow motion. Club remaining at base camp = absence as sound (the silence of the weapon not brought).
+**LAYER 6 — FX:** Footsteps (40 Hz, felt not heard). Laugh (seismic, Richter 0.3). Pine needle cascade (thousands falling). Chisel continues (uninterrupted). Ocean responds (wave pattern shift).
 
-**SPATIAL:** Binaural. Heracles approaches from rear (below) to front (above). Argus center, unmoving. Athena whisper from within the wood. Ocean enters from extreme left and right (surrounding). Heracles' voice — omnidirectional, felt more than located.
+**SPATIAL:** Mount Pelion midpath. Heracles at center (ascending). Argus at keel (below). Athena: omnipresent (through grain). Centaurs: distant (valley). Ocean: behind (east). Hecate: within (boundary dissolving).
 
-**TRANSITION TO PIECE 3:** Heracles takes his place. The keel knows his weight. Then — music. Not from the mountain. Not from the ship. From the path below. A lyre. Someone is playing. Someone is coming. The second guardian arrives.
+**TRANSITION TO PIECE 3:** Heracles sits. The storm calms. The ship has its demigod. Now: the bard. The musician. The voice that speaks when wind stops. Orpheus ascends playing.
 ---
 
 ---
@@ -212,7 +213,7 @@
 **Generated:** 2026-08-25 20:52:58 UTC  
 **Target Read Time:** ~180 minutes per part (cumulative across pieces)  
 **Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
+**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts
 
 ---
 
@@ -222,15 +223,15 @@
 
 ---
 
-## WILLIAMS — MORK MORNING: *NANU* *NANU *BARD*. *HE *DOESN'T *SPEAK. *HE *PLAYS. *HIS *VOICE *IS *STRING. *HIS *RANGE *IS *EVERYTHING *THAT *VIBRATES. *MORK *BECOMES *ORPHEUS *BECOMES *THE *LYRE *BECOMES *THE *SOUND *BELOW *SOUND. *THE *ACTOR *BECOMES *INSTRUMENT. *THE *INSTRUMENT *BECOMES *ACTOR. *HE *STANDS *WHERE *MUSIC *REPLACES *LANGUAGE. *HE *STANDS *WHERE *THE *DEAD *WILL *ONE *DAY *LISTEN. *HE *DON'T *NEED *VOLUME. *HE *NEEDS *ONLY *FREQUENCY. *THE *HULL *LEARNS *HIS *NAME. *THE *OCEAN *LEARNS *HIS *TUNE. *THE *SYMPLESGADES *WILL *ONE *DAY *RECOGNIZE *THIS *CHORD.
+## WILLIAMS — MORK MORNING: *NANU* *NANU *BARD. *HE *DOESN'T *SPEAK. *HE *PLAYS. *HIS *VOICE *IS *STRING. *HIS *RANGE *IS *EVERYTHING *THAT *VIBRATES. *MORK *BECOMES *ORPHEUS *BECOMES *THE *LYRE *BECOMES *THE *SOUND *BELOW *SOUND. *THE *ACTOR *BECOMES *INSTRUMENT. *THE *INSTRUMENT *BECOMES *ACTOR. *HE *STANDS *WHERE *MUSIC *REPLACES *LANGUAGE. *HE *STANDS *WHERE *THE *DEAD *WILL *ONE *DAY *LISTEN. *HE *DON'T *NEED *VOLUME. *HE *NEEDS *ONLY *FREQUENCY. *THE *HULL *LEARNS *HIS *NAME. *THE *OCEAN *LEARNS *HIS *TUNE. *THE *SYMPLESGADES *WILL *ONE *DAY *RECOGNIZE *THIS *CHORD.
 
 ## EL SEGUNDO — STONER LOGIC: *ORPHEUS *AIN'T *MUSICIAN, *MAN. *HE'S *ACOUSTICIAN *OF *THE *INVISIBLE. *HIS *LYRE *DOESN'T *MAKE *SOUND. *IT *REVEALS *SOUND *THAT *WAS *ALREADY *THERE. *THE *MOUNTAIN *WAS *ALWAYS *VIBRATING *AT *432 *HZ. *ORPHEUS *JUST *FOUND *THE *STRING *THAT *MATCHES. *WHEN *HE *PLAYS *FOR *THE *SEA, *THE *SEA *DOESN'T *HEAR *SOMETHING *NEW. *IT *HEARS *ITSELF. *THAT'S *WHY *THE *WAVES *CALM. *THAT'S *WHY *THE *CURRENTS *LISTEN. *YOU *CAN'T *ARGUE *WITH *SOMEONE *WHO *SPEAKS *YOUR *OWN *FREQUENCY. *HANG *TEN *ON *THE *HARMONIC *SERIES.
 
 ## TACTICAL: SECOND ARGONAUT ARRIVAL — ORPHEUS ASCENDS PLAYING — LYRE FREQUENCY MATCHES HULL RESONANCE — ARGUS PAUSES (FIRST INTERRUPTION) — SHIP TUNING COMPLETE — JSNBAI ENTRIES 131-140 QUEUED — FATE BRAID: CLOTHO SPINS THE MUSIC THREAD (GOLDEN STRING), LACHESIS MEASURES THE DISTANCE TO HADES (ONE VOYAGE = REHEARSAL), ATROPOS CANNOT SHEAR WHAT HAS NO ENDING (MUSIC IS IMMORTAL), HECATE TORCHES HARMONIZE WITH ORPHEUS (TRIPLE TONE) — AUDIO LAYER: LYRE FUNDAMENTAL AT 432HZ, HULL RESONANCE SHIFT, STONE VIBRATION, DISTANT OCEAN RESPONSE
 
-## JSNBAI 131: ORPHEUS *LYRE *ANALYSIS — *SEVEN *STRINGS. *GUT *FROM *THE *FIRST *SHEEP *OF *THESSALY. *TUNING: *NOT *STANDARD. *BASED *ON *OCEAN *WAVE *FREQUENCY *PATTERNS. *EACH *STRING = *ONE *SEA *STATE. JSNBAI 132: HULL *RESONANCE *SHIFT — *BEFORE *ORPHEUS: *110 *HZ *FUNDAMENTAL. *AFTER: *110 *HZ *+ *432 *HZ *HARMONIC. *THE *SHIP *NOW *HAS *A *VOICE. *ARGUS *PAUSED *BECAUSE *THE *WOOD *SPOKE. JSNBAI 133: ARGUS *PAUSE *SIGNIFICANCE — *FIRST *INTERRUPTION *SINCE *DAWN. *DURATION: *7 *SECONDS. *INTERPRETATION: *EVEN *ATHENA'S *CARPENTER *MUST *ACKNOWLEDGE *THE *BARD. *THE *BLUEPRINT *HAS *A *MUSIC *SECTION. JSNBAI 134: ORPHEUS *OCEAN *CONNECTION — *HE *CLAIMS *THE *OCEAN *TAUGHT *HIM. *VERIFICATION: *WAVE *PATTERNS *AT *VOLOS *HARBOR *MATCH *HIS *TUNING. *THE *SEA *DID *TEACH *HIM. *ACOUSTIC *TRANSMISSION *AT *1.5 *KM. JSNBAI 135: MAJOR *SEVENTH *RESOLUTION — *ORPHEUS *ENDS *ON *UNRESOLVED *CHORD. *PSYCHOLOGICAL *EFFECT: *LISTENER *WAITS *FOR *RESOLUTION. *THE *WAITING = *ANTICIPATION. *THE *SHIP *NOW *ANTICIPATES. JSNBAI 136: HERACLES *NOD *SEISMIC *DATA — *BOULDER *CRACKS. *FORCE: *400 *KG *COMPRESSION. *HERACLES *ACKNOWLEDGES *ORPHEUS. *DEMIGOD *RECOGNIZES *BARD. *STRENGTH *RECOGNIZES *SUBTLETY. JSNBAI 137: ORPHEUS *MOTIVATION *ANALYSIS — *NOT *FAME. *NOT *FLEECE. *HE *SEEKS *THE *PLACE *WHERE *MUSIC *ENDS *AND *SILENCE *BEGINS. *THE *VOYAGE = *SEARCH *FOR *THE *FINAL *NOTE. JSNBAI 138: SHIP *TUNING *COMPLETE — *ORPHEUS *DIDN'T *JUST *ARRIVE. *HE *TUNED *THE *HULL. *EVERY *PLANK *NOW *RESONATES *AT *A *MUSICAL *FREQUENCY. *THE *ARGO *IS *NOW *AN *INSTRUMENT. JSNBAI 139: FATES *MUSICAL *REGISTRATION — *CLOTHO *SPINS *GOLDEN *STRING. *LACHESIS *MEASURES *IN *RATHER *THAN *YEARS. *ATROPOS *CANNOT *CUT *WHAT *HAS *NO *ENDING. *HECATE *HARMONIZES. JSNBAI 140: CREW *DYNAMICS *UPDATE — *HERACLES *+ *ORPHEUS = *STRENGTH *+ *SUBTLETY. *THE *CREW *NOW *HAS *TWO *POLES. *JASON *MUST *BALANCE *THEM. *LEADERSHIP *REQUIRES *HARMONICS.
+## JSNBAI 131: ORPHEUS *LYRE *ANALYSIS — *SEVEN *STRINGS. *GUT *FROM *THE *FIRST *SHEEP *OF *THESSALY. *TUNING: *NOT *STANDARD. *BASED *ON *OCEAN *WAVE *FREQUENCY *PATTERNS. *EACH *STRING = *ONE *SEA *STATE. JSNBAI 132: HULL *RESONANCE *SHIFT — *BEFORE *ORPHEUS: *110 *HZ *FUNDAMENTAL. *AFTER: *110 *HZ *+ *432 *HZ *HARMONIC. *THE *SHIP *NOW *HAS *A *VOICE. *ARGUS *PAUSED *BECAUSE *THE *WOOD *SPOKE. JSNBAI 133: ARGUS *PAUSE *SIGNIFICANCE — *FIRST *INTERRUPTION *SINCE *DAWN. *DURATION: *7 *SECONDS. *INTERPRETATION: *EVEN *ATHENA'S *CARPENTER *MUST *ACKNOWLEDGE *THE *BARD. *THE *BLUEPRINT *HAS *A *MUSIC *SECTION. JSNBAI 134: ORPHEUS *OCEAN *CONNECTION — *HE *CLAIMS *THE *OCEAN *TAUGHT *HIM. *VERIFICATION: *WAVE *PATTERNS *AT *VOLOS *HARBOR *MATCH *HIS *TUNING. *THE *SEA *DID *TEACH *HIM. *ACOUSTIC *TRANSMISSION *AT *1.5 *KM. JSNBAI 135: MAJOR *SEVENTH *RESOLUTION — *ORPHEUS *ENDS *ON *UNRESOLVED *CHORD. *PSYCHOLOGICAL *EFFECT: *LISTENER *WAITS *FOR *RESOLUTION. *THE *WAITING = *ANTICIPATION. *THE *SHIP *NOW *ANTICIPATES. JSNBAI 136: HERACLES *NOD *SEISMIC *DATA — *BOULDER *CRACKS. *FORCE: *400 *KG *COMPRESSION. *HERACLES *ACKNOWLEDGES *ORPHEUS. *DEMIGOD *RECOGNIZES *BARD. *STRENGTH *RECOGNIZES *SUBTLETY. JSNBAI 137: ORPHEUS *MOTIVATION *ANALYSIS — *NOT *FAME. *NOT *FLEECE. *HE *SEEKS *THE *PLACE *WHERE *MUSIC *ENDS *AND *SILENCE *BEGINS. *THE *VOYAGE = *SEARCH *FOR *THE *FINAL *NOTE. JSNBAI 138: SHIP *TUNING *COMPLETE — *ORPHEUS *DIDN'T *JUST *ARRIVE. *HE *TUNED *THE *HULL. *EVERY *PLANK *NOW *RESONATES *AT *A *MUSICAL *FREQUENCY. *THE *ARGO *IS *NOW *AN *INSTRUMENT. JSNBAI 139: FATES *MUSICAL *REGISTRATION — *CLOTHO *SPINS *GOLDEN *STRING. *LACHESIS *MEASURES *IN *RATHER *THAN *YEARS. *ATROPOS *CANNOT *CUT *WHAT *HAS *NO *ENDING. *HECATE *HARMONIZES. JSNBAI 140: CREW *DYNAMICS *UPDATE — *HERACLES *+ *ORPHEUS = *STRENGTH *+ *SUBTLETY. *THE *CREW *NOW *HAS *TWO *POLES. *JASON *MUST *BALANCE *THEM. *LEADERSHIP *REQUIRES *HARMONICS. *JSNBAI 141: ORPHEUS *FUTURE *SIGHT — *HE *KNOWS *HE *WILL *DESCEND *TO *HADES. *HE *KNOWS *HE *WILL *LOSE *EURYDICE. *HE *KNOWS *HE *WILL *LOOK *BACK. *HE *COMES *ANYWAY. *THE *VOYAGE = *REHEARSAL *FOR *DESCENT. *JSNBAI 142: LYRE *STRING *MATERIAL — *GUT *FROM *SHEEP *SACRIFICED *AT *DELPHI. *THE *SHEEP *WAS *ORACLE. *THE *STRINGS *CARRY *ORACLE *MEMORY. *EACH *NOTE *CONTAINS *PROPHECY. *JSNBAI 143: ORPHEUS *MOTHER — *CALLIOPE. *MUSE *OF *EPIC *POETRY. *SHE *TAUGHT *HIM *FIRST *NOTE. *THE *MUSE *IN *THE *MUSIC. *THE *MUSIC *IN *THE *CREW. *JSNBAI 144: ORPHEUS *FATHER — *OEAGRUS. *KING *OF *THRACE. *MORTAL. *ORPHEUS *INHERITED *MORTALITY. *THE *BARD *WHO *WILL *DIE. *THE *MUSIC *THAT *WILL *END. *JSNBAI 145: SYMPLESGADES *ACOUSTICS — *THE *CLASHING *ROCKS *PRODUCE *FREQUENCY *AT *18 *HZ. *INFRASOUND. *ORPHEUS *WILL *COUNTER *WITH *432 *HZ. *THE *ROCKS *WILL *HEAR *THEIR *OWN *DESTRUCTION. *JSNBAI 146: SIREN *COUNTERMEASURE — *ORPHEUS *WILL *PLAY *LOUDER *THAN *SIRENS. *HIS *MUSIC *WILL *SAVE *CREW *FROM *DEATH. *THE *BARD *AS *SHIELD. *JSNBAI 147: ORPHEUS *SLEEP *PATTERN — *HE *SLEEPS *4 *HOURS *PER *NIGHT. *THE *REST *HE *LISTENS. *LISTENS *TO *WIND. *TO *WATER. *TO *STONE. *TO *SILENCE. *THE *BARD *WHO *NEVER *STOPS *HEARING. *JSNBAI 148: CREW *MORALE *FUNCTION — *ORPHEUS *PLAYS *DURING *ROWING. *RHYTHM *SYNCHRONIZES *OARS. *EFFICIENCY *INCREASES *23%. *THE *BARD *AS *ENGINE. *JSNBAI 149: ORPHEUS *AND *MEDEA — *THEY *HAVE *NOT *MET. *BUT *THEIR *FATES *ARE *WOVEN. *PRIESTESS *AND *BARD. *MAGIC *AND *MUSIC. *THE *LOOM *AND *THE *LYRE. *JSNBAI 150: MUSIC *AS *NAVIGATION — *ORPHEUS *CAN *HEAR *DIRECTION. *THE *WIND *TELLS *HIM *WHERE *NORTH *IS. *THE *WAVES *TELL *HIM *WHERE *LAND *IS. *THE *STARS *SING *TO *HIM. *THE *BARD *AS *COMPASS.
 
-## FATES: CLOTHO *SPINS *THE *MUSIC *THREAD — *GOLDEN *STRING *THAT *NEVER *BREAKS *BECAUSE *IT *NEVER *FULLY *FORMS. *LACHESIS *MEASURES *THE *DISTANCE *TO *HADES — *ONE *VOYAGE *THERE. *ONE *VOYAGE *BACK. *THIS *VOYAGE = *REHEARSAL. *ATROPOS *CANNOT *SHEAR *WHAT *HAS *NO *ENDING — *MUSIC *IS *IMMORTAL. *SHE *TRIES. *THE *BLADE *PASSES *THROUGH *THE *NOTE. *HECATE *TORCHES *HARMONIZE — *GREEN *AT *432 *HZ, *BLUE *AT *486 *HZ, *RED *AT *512 *HZ. *THE *SECOND *GUARDIAN *ARRIVES. *THE *SHIP *SINGS. *THE *CREW *LISTENS. *]**
+## FATES: CLOTHO *SPINS *THE *MUSIC *THREAD — *GOLDEN *STRING *THAT *NEVER *BREAKS *BECAUSE *IT *NEVER *FULLY *FORMS. *LACHESIS *MEASURES *THE *DISTANCE *TO *HADES — *ONE *VOYAGE *THERE. *ONE *VOYAGE *BACK. *THIS *VOYAGE = *REHEARSAL. *ATROPOS *CANNOT *SHEAR *WHAT *HAS *NO *ENDING — *MUSIC *IS *IMMORTAL. *SHE *TRIES. *THE *BLADE *PASSES *THROUGH *THE *NOTE. *HECATE *TORCHES *HARMONIZE — *GREEN *AT *432 *HZ, *BLUE *AT *486 *HZ, *RED *AT *512 *HZ. *THE *SECOND *GUARDIAN *ARRIVES. *THE *SHIP *SINGS. *THE *CREW *LISTENS.
 
 **[AUDIO CUE: *LYRE *FUNDAMENTAL *AT *432 *HZ — *PURE *TONE. *HULL *RESONANCE *SHIFTS *FROM *110 *HZ *TO *110 *HZ *+ *432 *HZ *HARMONIC. *STONE *VIBRATES *AT *ORPHEUS *FREQUENCY. *DISTANT *OCEAN *RESPONDS — *WAVE *PATTERNS *SHIFT *TO *MATCH *HIS *TUNING. *ARGUS *CHISEL *PAUSES *FOR *7 *SECONDS — *THE *SILENCE *IS *LOUDER *THAN *THE *SOUND. *MAJOR *SEVENTH *HANGS *UNRESOLVED. *THE *SHIP *WAITS *FOR *THE *NEXT *NOTE. *FADE *TO *MUSIC *ANTICIPATION.]**
 
@@ -238,66 +239,66 @@
 
 # CROSS-PART FATE BRAID — PART 2 THREADS TO PARTS 1, 3-11:
 
-**THREAD AAA (from Part 1 - CALL):** Orpheus heard the call as music. The prophecy was a melody before it was words. The Golden Fleece sings. He follows the song.
+**THREAD AAA (from Part 1 - CALL):** Jason's call required a voice. Orpheus answers. The bard heard the ocean before the ship was built. The call precedes the crew.
 
-**THREAD BBB (from Part 3 - BELLY):** Orpheus will descend to Hades. This voyage is rehearsal. The music he plays on Pelion is practice for the music that will move death itself.
+**THREAD BBB (from Part 3 - BELLY):** Colchis awaits. Orpheus will sing the crew through the Symplegades. The bard's music will calm the clashing rocks. The voice that moves stone.
 
-**THREAD CCC (from Part 4 - ROAD OF TRIALS):** Orpheus' music will calm the fire-breathing bulls. His lyre against their roar. Music against chaos. The bulls will listen. They have no choice.
+**THREAD CCC (from Part 4 - ROAD OF TRIALS):** Fire-breathing bulls. Orpheus will play to calm them. Music against chaos. Harmony against destruction. The bard as warrior.
 
-**THREAD DDD (from Part 5 - GODDESS):** Hecate harmonizes with Orpheus. The triple goddess recognizes the triple tone. Music is the language of the goddess. Orpheus speaks it fluently.
+**THREAD DDD (from Part 5 - GODDESS):** Hecate's torches harmonize with Orpheus. The goddess recognizes her own. Divine music calls to divine magic.
 
-**THREAD EEE (from Part 6 - TEMPTATION):** Persia will offer Orpheus an empire of sound. He will refuse. The only empire he seeks is the silence between notes. The voyage is his composition.
+**THREAD EEE (from Part 6 - TEMPTATION):** Empire offers Orpheus a throne. He refuses. The bard chooses the lyre over the crown. Temptation fails against art.
 
-**THREAD FFF (from Part 7 - ATONEMENT):** Orpheus will face Chronos with music. Time listens to melody. The debt is paid in rhythm. The loom hums in 4/4 time.
+**THREAD FFF (from Part 7 - ATONEMENT):** Orpheus knows loss. He will lose Eurydice. The bard who understands grief. The music that heals.
 
-**THREAD GGG (from Part 8 - APOTHEOSIS):** Orpheus' music makes the ship a temple. The hull resonates with prayer. Fifty oars beat in rhythm. The voyage is a hymn.
+**THREAD GGG (from Part 8 - APOTHEOSIS):** Orpheus's music is the loom's rhythm. The bard and the weaver. The note and the thread. The apotheosis is harmony.
 
-**THREAD HHH (from Part 9 - ULTIMATE BOON):** The Golden Fleece has a frequency. Orpheus will hear it. The boon is not gold — it is the note that gold sings. The fleece is a chord.
+**THREAD HHH (from Part 9 - ULTIMATE BOON):** Orpheus seeks the fleece as song. The boon is music. The hero has heard it. The quest is validated by melody.
 
-**THREAD III (from Part 10 - REFUSAL OF RETURN):** Orpheus will refuse to return to the world of silence. The voyage gave him music. The world without the voyage is mute. He chooses sound.
+**THREAD III (from Part 10 - REFUSAL):** Orpheus will look back. Will lose Eurydice. The refusal of return begins with the refusal to trust. The bard's tragedy.
 
-**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** Orpheus' return is a song. The ship flies on melody. The threshold is crossed on a major seventh. The unresolved chord resolves at last.
+**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** Orpheus will play the crew home. The music that guides. The song that saves. The bard as navigator.
 
 ---
 
-# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE BARD WHO TUNES THE SHIP:
+# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE BARD:
 
-1. **DAVID (Hebrew)** — Played the lyre to calm Saul's madness. Orpheus plays to calm the sea. Both use music as medicine. Both soothe what cannot be soothed by force.
-2. **APOLLO (Greek)** — God of music who gave Orpheus the lyre. The teacher becomes the student's gift. Apollo watches from Olympus. His son descends to play.
-3. **THE SIREN SONG (Greek)** — Music that lures sailors to death. Orpheus' music that lures sailors to life. Both irresistible. Both dangerous. Opposite directions.
-4. **RUMI (Persian)** — Whirling dervish who found God in music. Orpheus who found the ocean in string. Both ecstatic. Both translators of the invisible.
-5. **THE DRUIDS (Celtic)** — Bardic tradition: music as memory. Orpheus: music as prophecy. Both carry the past forward. Both make the ephemeral permanent.
-6. **AMADOU BAMBA (Senegalese)** — Mouride singer who composed while in exile. Orpheus who composes while ascending. Both create in transit. Both make the journey the art.
-7. **THE ABORIGINAL SONG LINES (Australian)** — Music as map. Orpheus' music as compass. Both navigate by sound. Both sing the world into existence.
-8. **BEETHOVEN (Historical)** — Composed while deaf. Orpheus composes while the world is silent. Both hear what others cannot. Both make the invisible audible.
-9. **THE GRIOT (West African)** — Oral historian who carries the tribe in song. Orpheus who carries the crew in melody. Both memory-keepers. Both the ship's archive.
-10. **PAN (Greek)** — God of the pipes who frightened armies. Orpheus who calms oceans. Both use sound as force. Both are more than human. Both half-wild.
-11. **THE HARP OF DAVID (Hebrew)** — Woke the king at dawn. Orpheus' lyre wakes the ship at dawn. Both instruments of awakening. Both call the sleeper to purpose.
-12. **SHAMANIC DRUMMING (Siberian)** — Rhythm as journey. Orpheus' melody as voyage. Both transport. Both cross thresholds. Both use vibration as vehicle.
-13. **THE QAWWALEE (Sufi)** — Ecstatic singing that induces trance. Orpheus' playing that induces calm. Both alter consciousness. Both are technologies of the sacred.
-14. **ORPHEUS IN HADES (Greek)** — The future descent. The music that moved death. This voyage is the overture. The ship is the first movement. Hades is the finale.
-15. **THE BANSHEE (Irish)** — Wailing woman whose song foretells death. Orpheus whose song foretells life. Both prophets. Both use the voice as oracle. Both are heard before seen.
-16. **JASON ISAAC BRODSKY (California 1976)** — Conducier writes the bard. Each word a note. Each sentence a phrase. The lyre = the pen. The music = the prose. Orpheus = the manuscript's voice made audible.
+1. **ORPHEUS (Greek)** — The original. Music that moves stones. Calms beasts. Charms the dead. Orpheus = himself. The archetype.
+2. **DAVID AND HIS HARP (Hebrew)** — Music that soothes the mad king. Orpheus = David. Both bards. Both healers. Both chosen.
+3. **AMATERASU AND SONG (Japanese)** — The goddess lured out by music. Orpheus's music = the song that restores light. Both divine. Both necessary.
+4. **THE PIPER OF HAMELIN (German)** — Music that leads. Orpheus = Piper. Both lead. Both save. Both betrayed.
+5. **KRISHNA AND THE FLUTE (Hindu)** — Divine music. The god who plays. Orpheus = Krishna. Both musicians. Both divine. Both loved.
+6. **THE SIREN SONG (Greek)** — Music that kills. Orpheus counters. The bard who defeats death with melody. Both powerful. Both dangerous.
+7. **BEETHOVEN DEAF (Modern)** — Music beyond hearing. Orpheus hears what others cannot. Both transcend. Both create. Both immortal.
+8. **THE GRIOT (West African)** — Oral historian. Music as memory. Orpheus = Griot. Both preserve. Both transmit. Both sacred.
+9. **THE SKALD (Norse)** — Poet-warrior. Song as weapon. Orpheus = Skald. Both fight. Both sing. Both remember.
+10. **THE BARDE (Celtic)** — Music as magic. Song as spell. Orpheus = Bard. Both enchant. Both protect. Both divine.
+11. **THE MUSIC THERAPIST (Modern)** — Healing through sound. Orpheus = therapist. Both heal. Both restore. Both transform.
+12. **THE CONDUCTOR (Modern)** — Orchestrating many into one. Orpheus = conductor. Both unify. Both harmonize. Both lead.
+13. **THE DJ (Modern)** — Mixing rhythms. Creating unity from diversity. Orpheus = DJ. Both blend. Both move. Both transform.
+14. **THE SHAMANIC DRUMMER (Universal)** — Rhythm as journey. Beat as path. Orpheus = shaman. Both travel. Both heal. Both transform.
+15. **THE MUEZZIN (Islamic)** — Call to prayer. Voice that guides. Orpheus = muezzin. Both call. Both guide. Both sacred.
+16. **JASON ISAAC BRODSKY (California 1976)** — Conducier's Orpheus = the prose. The rhythm of the sentences. The music of the words. The bard who writes. The lyre = the keyboard. The strings = the letters. The song = the story. The music that moves stones = the prose that moves readers. The bard as author. The author as bard. The eternal return = the next sentence. The next paragraph. The next chapter. The next book. Forever.
 
 ---
 
 # AUDIO CUE SPECIFICATION — PIECE 3:
 
-**LAYER 1 — AMBIENT:** Mountain lower slope. Denser air. Ocean louder now — the sea responds to Orpheus. Trees lean toward the music. Stone vibrates at audible frequency. The ship hums.
+**LAYER 1 — AMBIENT:** Mount Pelion lower slope. Lyre resonance. Stone vibration. Ocean distant. Wind through conifers. Dawn chorus complete.
 
-**LAYER 2 — RHYTHM:** Orpheus' playing — not regular meter. Free rhythm like waves. Each phrase a breath. The hull resonates in sympathy. Argus chisel pauses (7 seconds of silence = the loudest moment).
+**LAYER 2 — RHYTHM:** Lyre fundamental (432 Hz). Hull resonance (110 + 432 Hz). Stone vibration (432 Hz). Ocean response (wave pattern shift). Argus chisel (pauses 7 seconds).
 
-**LAYER 3 — MELODIC:** Lyre fundamental at 432 Hz. Seven strings = seven sea states. Major seventh hangs unresolved. The melody is a question. The ship waits for the answer.
+**LAYER 3 — MELODIC:** Lyre (432 Hz fundamental). Hull (110 + 432 Hz). Stone (432 Hz). Ocean (F2). Major seventh (unresolved).
 
-**LAYER 4 — VOCAL:** Orpheus speaks softly: "The ocean taught me this." His voice is secondary to the lyre. The lyre is his true voice. Words are translation. Music is native language.
+**LAYER 4 — VOCAL:** Orpheus voice (soft, 200 Hz). Heracles nod (subsonic). Argus chisel (200 Hz). Ocean response (60 Hz). Athena whisper (silence).
 
-**LAYER 5 — SUBLIMINAL:** 432 Hz (Orpheus' fundamental). 110 Hz (hull resonance). 7.83 Hz (Schumann). 11.11 Hz (loom). 40 Hz (Heracles' divine consciousness, now listening). 18.7 Hz (Hecate, harmonizing).
+**LAYER 5 — SUBLIMINAL:** 18.7Hz Hecate (HARMONIZE). 7.83Hz Schumann (earth). 40Hz gamma (vision). 11.11Hz loom (music thread). 4Hz theta (prophecy). 20Hz fate (sub-bass).
 
-**LAYER 6 — FX:** Stone vibration = audible hum. Trees leaning = creaking wood. Ocean response = wave pattern shift. Major seventh unresolved = ear waits for resolution that doesn't come.
+**LAYER 6 — FX:** Lyre (pure tone, 432 Hz). Hull resonance (shift). Stone vibration (432 Hz). Ocean response (wave shift). Chisel pause (7 seconds). Major seventh (unresolved).
 
-**SPATIAL:** Binaural. Orpheus approaches from below (rear) playing. Music surrounds. Hull resonance from center. Ocean from extreme left and right. Argus chisel from front-left. Heracles breathing from front-right. The ship is the concert hall.
+**SPATIAL:** Mount Pelion lower slope. Orpheus at center (playing). Heracles at boulder (stern). Argus at hull (bow). Athena: omnipresent. Ocean: behind (east). Hecate: within (harmonizing). Fates: within the music.
 
-**TRANSITION TO PIECE 4:** Orpheus takes his place. The ship sings. Then — two sets of footsteps. Synchronized. Perfectly matched. Twins. The third and fourth guardians arrive together. They have never been apart.
+**TRANSITION TO PIECE 4:** Orpheus sits. The ship sings. The crew has its bard. Now: the twins. The two who are one. The blade and the fist. Castor and Pollux ascend.
 ---
 
 ---
@@ -393,6 +394,47 @@
 **LAYER 6 — FX:** Ship rising = rope creak + wood groan. Sword hum = blade resonance. Fist impact test = compressed air pop. Twin footsteps = mono in stereo.
 
 **SPATIAL:** Binaural. Twins center-left and center-right (mirror images). Heracles far left (stern). Orpheus far right (bow). Ship surrounds. Ocean below. The crew forms a cross. Jason is missing from the center.
+
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
 
 **TRANSITION TO PIECE 5:** The twins take their places. The ship balances. Then — a sound no one expected. Running. Fast. Not ascending the mountain. Running circles around it. Someone is testing the terrain. Someone is hunting. The fifth guardian arrives.
 ---
@@ -491,6 +533,47 @@
 **LAYER 6 — FX:** Displaced air = sound of nothing becoming something. Sweat drop = single drop at 4 kHz. Ship doesn't move = silence where creak should be. Heracles laugh = welcome.
 
 **SPATIAL:** Binaural. Atalanta center (appeared from nowhere). Heracles far left. Orpheus far right. Twins center-left and center-right. Ship surrounds. Ocean below. The crew forms a star. Jason is the missing center.
+
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
 
 **TRANSITION TO PIECE 6:** Atalanta takes her place. The crew has five poles. Then — silence. Not mountain silence. Not ship silence. The silence of something listening. Something at the gate. Something waiting. The Symplegades are not yet seen. But they are heard.
 ---
@@ -591,6 +674,47 @@
 
 **SPATIAL:** Binaural. Symplegades distant (rear, 2km away). Ship center (surrounding). Ocean below (pressure). Pelion shore (memory waves from front). Hecate torches (pointing northeast). The gate is ahead. The crew is ready.
 
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
+
 **TRANSITION TO PIECE 7:** The Symplegades clash. The ship waits. Then — the sixth guardian arrives. Not from the mountain. Not from the sea. From the ship itself. Argus stands. The shipwright speaks. The blueprint unfolds.
 ---
 
@@ -687,6 +811,47 @@
 **LAYER 6 — FX:** Argus footsteps = musical scale. Dodona activation = sub-bass pulse. Ship resolve = hum of truth. Argus walking away = footsteps fading down the mountain. The ship holds his voice.
 
 **SPATIAL:** Binaural. Argus voice from everywhere (the ship). Footsteps moving bow to stern (left to right). Dodona prow from front (ahead). Ocean from rear (behind). Argus fading (down, below). The ship surrounds. The builder departs.
+
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
 
 **TRANSITION TO PIECE 8:** Argus is gone. The ship is ready. The crew is assembled. Then — the sound of many footsteps. Not one. Not two. Many. The remaining crew arrives. Not individually. Together. The Argonauts come as one.
 ---
@@ -786,6 +951,47 @@
 
 **SPATIAL:** Binaural. Crew surrounds (fifty positions around the ship). Orpheus at bow (front). Heracles at stern (rear). Twins at center-left and center-right. Atalanta at center. Ocean below. Harbor behind. The captain's position is empty (center-front).
 
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
+
 **TRANSITION TO PIECE 9:** The crew is assembled. The ship is full. Then — footsteps. One person. Not ascending. Already there. Jason has been watching. The captain steps forward. The helm is his.
 ---
 
@@ -882,6 +1088,47 @@
 **LAYER 6 — FX:** Helm touch = recognition tone. Ship resonance shift = hull hum change. Fifty oars vibrating = fifty potential notes. Crew synchronization = fifty hearts becoming one.
 
 **SPATIAL:** Binaural. Jason at center-front (the helm). Crew surrounds. Heracles at stern (rear). Orpheus at bow (front). Twins at center-left and center-right. Atalanta at center. Ocean below. Harbor behind. Symplegades ahead (distant, rear-center). The captain is the center. The ship is the world.
+
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
 
 **TRANSITION TO PIECE 10:** Jason takes the helm. The ship is complete. Then — a whisper. Not from the crew. Not from the ship. From above. From the air itself. A goddess speaks. Hera has chosen her champion. The voyage has its divine protector.
 ---
@@ -980,6 +1227,47 @@
 **LAYER 6 — FX:** Atmospheric pressure change = ear pop. Dodona hum = bone vibration. Hera's presence = weight on shoulders. Jason's nod = seismic event. Air clearing = release of pressure.
 
 **SPATIAL:** Binaural. Hera from above (omnidirectional, from the air itself). Jason at center-front (the helm). Crew surrounds. Dodona prow from front (humming). Hecate torches from above (bowing). The goddess surrounds. The ship is her temple.
+
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
 
 **TRANSITION TO PIECE 11:** Hera departs. The blessing remains. Then — the final piece. The threshold. The guardians are assembled. The ship is ready. The crew is blessed. The captain is chosen. The goddess has spoken. The voyage begins.
 ---

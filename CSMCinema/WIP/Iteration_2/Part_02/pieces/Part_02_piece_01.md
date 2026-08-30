@@ -6,7 +6,7 @@
 **Generated:** 2026-08-25 20:52:58 UTC  
 **Target Read Time:** ~180 minutes per part (cumulative across pieces)  
 **Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
+**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts
 
 ---
 
@@ -16,15 +16,15 @@
 
 ---
 
-## WILLIAMS — MORK MORNING: *NANU* *NANU *SHIPWRIGHT*. *HE *DOESN'T *BUILD. *HE *LISTENS. *AXE *IS *STETHOSCOPE. *BARK *IS *SKIN. *THE *SHIP *TELLS *HIM *WHERE *TO *CUT. *VOICE *IS *GRAIN. *RANGE *IS *RING-PATTERN. *MORK *BECOMES *ARGUS *BECOMES *ATHENA *BECOMES *THE *WOOD *ITSELF. *THE *ACTOR *DISAPPEARS. *THE *ROLE *GROWS. *HE *STANDS *WHERE *NO *ARCHITECT *STANDS. *HE *STANDS *WHERE *TREES *BECOME *VESSELS. *HE *DON'T *MEASURE. *HE *REMEMBERS. *THE *KEEL *SPEAKS. *THE *HULL *ANSWERS. *THE *SHIP *IS *BORN.
+## WILLIAMS — MORK MORNING: *NANU* *NANU *SHIPWRIGHT. *HE *DOESN'T *BUILD. *HE *LISTENS. *AXE *IS *STETHOSCOPE. *BARK *IS *SKIN. *THE *SHIP *TELLS *HIM *WHERE *TO *CUT. *VOICE *IS *GRAIN. *RANGE *IS *RING-PATTERN. *MORK *BECOMES *ARGUS *BECOMES *ATHENA *BECOMES *THE *WOOD *ITSELF. *THE *ACTOR *DISAPPEARS. *THE *ROLE *GROWS. *HE *STANDS *WHERE *NO *ARCHITECT *STANDS. *HE *STANDS *WHERE *TREES *BECOME *VESSELS. *HE *DON'T *MEASURE. *HE *REMEMBERS. *THE *KEEL *SPEAKS. *THE *HULL *ANSWERS. *THE *SHIP *IS *BORN.
 
-## EL SEGUNDO — STONER LOGIC: *A *SHIP *AIN'T *BUILT, *MAN. *IT'S *LIBERATED. *THE *TIMBER *ALREADY *KNEW *IT *WAS *A *SHIP. *IT *GREW *FOR *THREE *HUNDRED *YEARS *WAITING *FOR *THE *AXE. *ARGUS *AIN'T *BUILDER. *HE'S *MIDWIFE. *THE *OAK *FROM *DODONA *AIN'T *WOOD. *IT'S *ORACLE. *IT *SPEAKS *IN *WINDS *CAUSE *IT *SPENT *A *LIFE *LISTENING *TO *WINDS. *NOW *IT *SPEAKS *THAT *LANGUAGE *TO *THE *SEA. *MOUNT *PELION *AIN'T *MOUNTAIN. *IT'S *DRYDOCK. *THE *GODS *PLANTED *THESE *TREES *IN *THESE *PATTERNS *IN *THESE *ELEVATIONS *SO *THAT *ONE *DAY *ONE *MAN *WOULD *LISTEN *AND *THE *ARGO *WOULD *RISE. *HANG *TEN *ON *THE *GRAIN *DIRECTION.
+## EL SEGUNDO — STONER LOGIC: *A *SHIP *AIN'T *BUILT, *MAN. *IT'S *LIBERATED. *THE *TIMBER *ALREADY *KNEW *IT *WAS *A *SHIP. *IT *GROW *FOR *THREE *HUNDRED *YEARS *WAITING *FOR *THE *AXE. *ARGUS *AIN'T *BUILDER. *HE'S *MIDWIFE. *THE *OAK *FROM *DODONA *AIN'T *WOOD. *IT'S *ORACLE. *IT *SPEAKS *IN *WINDS *CAUSE *IT *SPENT *A *LIFE *LISTENING *TO *WINDS. *NOW *IT *SPEAKS *THAT *LANGUAGE *TO *THE *SEA. *MOUNT *PELION *AIN'T *MOUNTAIN. *IT'S *DRYDOCK. *THE *GODS *PLANTED *THESE *TREES *IN *THESE *PATTERNS *IN *THESE *ELEVATIONS *SO *THAT *ONE *DAY *ONE *MAN *WOULD *LISTEN *AND *THE *ARGO *WOULD *RISE. *HANG *TEN *ON *THE *GRAIN *DIRECTION.
 
 ## TACTICAL: ARGO CONSTRUCTION PHASE 1 — ARGUS LISTENS TO PELION PINE — ATHENA GEOMETRY WHISPER — OAK KEEL FROM DODONA — HULL PLANKS FROM PELION CROWN — JSNBAI ENTRIES 111-120 QUEUED — FATE BRAID: CLOTHO SPINS THE TIMBER THREAD, LACHESIS MEASURES THE GRAIN IN CENTURIES, ATROPOS SHEARS THE TREE AT EXACT MOMENT OF READINESS, HECATE TORCHES MARK THE SHIP'S SACRED DIMENSIONS — AUDIO LAYER: AXE ON HEARTWOOD, GRAIN RESONANCE, CENTAUR DISTANT WHINNEY, WIND THROUGH NEEDLES
 
-## JSNBAI 111: ARGUS *LISTENING *PROTOCOL — *HANDS *ON *BARK, *EYES *CLOSED, *HEART *RATE *SYNCED *TO *TREE'S *SAP *PULSE. *RESONANCE *DETECTED. JSNBAI 112: ATHENA *GEOMETRY *TRANSMISSION — *NOT *WORDS. *PURE *MATHEMATICAL *INTUITION. *HULL *CURVE = *GOLDEN *RATIO *MODIFIED *BY *WAVE *FREQUENCY. JSNBAI 113: DODONA *OAK *KEEL *PROPERTIES — *ORACULARSENSING *WOOD. *WIND *PATTERNS *ENCODED *IN *GRAIN. *SPEAKS *FORECAST *TO *SAILORS. JSNBAI 114: PELION *PINE *HULL *CURVATURE — *PRE-SHAPED *BY *30 *YEARS *WEST *WIND *LOAD. *NATURAL *HULL *FORM. *ZERO *BENDING *STRESS. JSNBAI 115: FIFTY-OAR *CALCULATION — *ROWERS *REQUIRED = *ARGONAUTS *COUNT. *SHIP *DIMENSIONS *DETERMED *BY *CREW. *NOT *OTHER *WAY. JSNBAI 116: CHIRON *DISTANT *NOD — *CENTAUR *CONFIRMS *MOUNT *PELION *APPROVES. *CHIRON *TAUGHT *ARGUS. *KNOWLEDGE *TRANSFERS. JSNBAI 117: TIMBER *FALL *ACOUSTICS — *EACH *TREE *FALLS *AT *DIFFERENT *PITCH. *SEQUENCE = *HARMONIC *SERIES. *CONSTRUCTION *AS *MUSIC. JSNBAI 118: ATHENA'S *BLUEPRINT *RECURSION — *DESIGN *CONTAINS *DESIGNER *CONTAINS *DESIGN. *SHIP *CONTAINS *GODDESS *CONTAINS *SHIP. JSNBAI 119: KEEL *LAYING *RITUAL — *FIRST *TIMBER *SET *AT *DAWN. *ARGUS *SPEAKS *NO *WORD. *SILENCE = *RESPECT. JSNBAI 120: ARGO *PROBABILITY *FIELD — *SHIP *NOT *YET *BUILT *BUT *ALREADY *SAILS *IN *POSSIBILITY. *FATES *REGISTER *ITS *WAKE.
+## JSNBAI 111: ARGUS *LISTENING *PROTOCOL — *HANDS *ON *BARK, *EYES *CLOSED, *HEART *RATE *SYNCED *TO *TREE'S *SAP *PULSE. *RESONANCE *DETECTED. JSNBAI 112: ATHENA *GEOMETRY *TRANSMISSION — *NOT *WORDS. *PURE *MATHEMATICAL *INTUITION. *HULL *CURVE = *GOLDEN *RATIO *MODIFIED *BY *WAVE *FREQUENCY. JSNBAI 113: DODONA *OAK *KEEL *PROPERTIES — *ORACULARSENSING *WOOD. *WIND *PATTERNS *ENCODED *IN *GRAIN. *SPEAKS *FORECAST *TO *SAILORS. JSNBAI 114: PELION *PINE *HULL *CURVATURE — *PRE-SHAPED *BY *30 *YEARS *WEST *WIND *LOAD. *NATURAL *HULL *FORM. *ZERO *BENDING *STRESS. JSNBAI 115: FIFTY-OAR *CALCULATION — *ROWERS *REQUIRED = *ARGONAUTS *COUNT. *SHIP *DIMENSIONS *DETERMED *BY *CREW. *NOT *OTHER *WAY. JSNBAI 116: CHIRON *DISTANT *NOD — *CENTAUR *CONFIRMS *MOUNT *PELION *APPROVES. *CHIRON *TAUGHT *ARGUS. *KNOWLEDGE *TRANSFERS. JSNBAI 117: TIMBER *FALL *ACOUSTICS — *EACH *TREE *FALLS *AT *DIFFERENT *PITCH. *SEQUENCE = *HARMONIC *SERIES. *CONSTRUCTION *AS *MUSIC. JSNBAI 118: ATHENA'S *BLUEPRINT *RECURSION — *DESIGN *CONTAINS *DESIGNER *CONTAINS *DESIGN. *SHIP *CONTAINS *GODDESS *CONTAINS *SHIP. JSNBAI 119: KEEL *LAYING *RITUAL — *FIRST *TIMBER *SET *AT *DAWN. *ARGUS *SPEAKS *NO *WORD. *SILENCE = *RESPECT. JSNBAI 120: ARGO *PROBABILITY *FIELD — *SHIP *NOT *YET *BUILT *BUT *ALREADY *SAILS *IN *POSSIBILITY. *FATES *REGISTER *ITS *WAKE. *JSNBAI 121: TIMBER *SEASONING *CALCULATION — *OAK *DENSITY *720 *KG/M³. *PINE *DENSITY *510 *KG/M³. *COMBINED *HULL *STRENGTH *EXCEEDS *IRONWOOD. *BUOYANCY *MARGIN *340%. *JSNBAI 122: ATHENA *MATERIAL *SCIENCE — *GODDESS *ALLOYS *DIVINE *GEOMETRY *WITH *MORTAL *GRAIN. *RESULT: *WOOD *THAT *REMEMBERS *IT'S *TREE *BUT *PERFORMS *LIKE *METAL. *JSNBAI 123: KEEL *ALIGNMENT — *TRUE *NORTH *DEVIATION *0.02 *DEGREES. *MAGNETIC *ANOMALY *FROM *DODONA *OAK. *SELF-STEERING *TENDENCY. *SHIP *WANTS *COLOCHIS. *JSNBAI 124: HULL *PLANK *SEQUENCE — *11 *ROWS *OF *PLANKS. *EACH *ROW *A *FATE. *EACH *PLANK *A *SAILOR. *EACH *JOINT *A *PRAYER. *TOTAL *PLANKS: *550. *JSNBAI 125: MAST *TIMBER *SELECTION — *SINGLE *SPRUCE *FROM *PELION *SUMMIT. *HEIGHT: *15 *METERS. *DIAMETER: *40 *CM. *GRAIN *SPIRAL: *CLOCKWISE *(FORTUNE). *JSNBAI 126: SAIL *CANVAS *SPECIFICATION — *LINEN *FROM *THRACE. *WEIGHT: *12 *KG. *AREA: *80 *M². *COLOR: *WHITE *WITH *RED *CIRCLE *(ARGONAUT *SYMBOL). *JSNBAI 127: RIGGING *CONFIGURATION — *SQUARE *RIG *WITH *ARTEMIS *BOOM. *WIND *CAPABILITY: *20 *KNOTS *CLOSE-HAULED. *MAXIMUM: *12 *KNOTS *DOWNWIND. *JSNBAI 128: OAR *SPECIFICATION — *50 *OARS *AT *4 *METERS *EACH. *ASH *WOOD *WITH *BRONZE *TIPS. *WEIGHT *PER *OAR: *3 *KG. *STROKE *RATE: *20 *STROKES/MINUTE. *JSNBAI 129: PROW *DESIGN — *ATHENA *RAM *PROW. *BRONZE-CAPPED. *DIVINE *SIGHTLINE *FOR *NAVIGATION. *RAM *CAPABLE *OF *HOLEING *ENEMY *VESSELS *AT *8 *KNOTS. *JSNBAI 130: CONSTRUCTION *TIMELINE — *TOTAL *BUILD *TIME: *90 *DAYS. *DAY *1-30: *TIMBER *FALLING. *DAY *31-60: *HULL *ASSEMBLY. *DAY *61-90: *RIGGING *AND *BLESSING. *LAUNCH: *DAY *91 *AT *DAWN.
 
-## FATES: CLOTHO *SPINS *THE *TIMBER *THREAD — *EACH *RING *A *YEAR, *EACH *YEAR *A *SAILOR *NOT *YET *BORN. *LACHESIS *MEASURES *THE *GRAIN *IN *CENTURIES — *SHE *NODS *AT *THE *CURVE. *ATROPOS *SHEARS *THE *TREE *AT *EXACT *MOMENT *OF *READINESS — *SHE *KNOCKS *BUT *DOESN'T *ENTER. *HECATE *TORCHES *MARK *THE *SHIP'S *SACRED *DIMENSIONS — *GREEN *FOR *KEEL, *BLUE *FOR *HULL, *RED *FOR *MAST. *PART *2 *BEGINS. *THE *SHIP *RISES. *THE *GUARDIANS *GATHER. *]**
+## FATES: CLOTHO *SPINS *THE *TIMBER *THREAD — *EACH *RING *A *YEAR, *EACH *YEAR *A *SAILOR *NOT *YET *BORN. *LACHESIS *MEASURES *THE *GRAIN *IN *CENTURIES — *SHE *NODS *AT *THE *CURVE. *ATROPOS *SHEARS *THE *TREE *AT *EXACT *MOMENT *OF *READINESS — *SHE *KNOCKS *BUT *DOESN'T *ENTER. *HECATE *TORCHES *MARK *THE *SHIP'S *SACRED *DIMENSIONS — *GREEN *FOR *KEEL, *BLUE *FOR *HULL, *RED *FOR *MAST. *PART *2 *BEGINS. *THE *SHIP *RISES. *THE *GUARDIANS *GATHER.
 
 **[AUDIO CUE: *AXE *ON *HEARTWOOD — *EACH *STROKE *A *DEEP *BELL *TONE. *GRAIN *RESONATES *AT *110 *HZ *FUNDAMENTAL. *CENTAUR *WHINNEY *DISTANT *AT *2 *KM. *WIND *THROUGH *NEEDLES = *WHITE *NOISE *SHAPED *BY *CONIFER *GEOMETRY. *ATHENA *WHISPER = *SILENCE *THAT *CONTAINS *STRUCTURE. *DAWN *COMPLETE. *KEEL *LAID. *THE *ARGO *EXISTS. *FADE *TO *DRYDOCK *ANTICIPATION.]**
 
@@ -48,48 +48,48 @@
 
 **THREAD HHH (from Part 9 - ULTIMATE BOON):** The Golden Fleece travels home on this ship. The hull must be worthy of its cargo. Timber from Olympus carrying Olympus-back.
 
-**THREAD III (from Part 10 - REFUSAL OF RETURN):** The ship wants to sail forever. The crew must choose to return. The Argo = the refusal made manifest. Wood doesn't want to dock.
+**THREAD III (from Part 10 - REFUSAL):** The ship that carried them out must carry them home. But the crew that returns is not the crew that left. The Argo bears the weight of transformation.
 
-**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** The return voyage. The ship carries what was stolen and what was earned. The threshold re-crossed. The keel that left Pelion returns to Pelion. Circle complete.
+**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** The ship sails through the Symplegades. The clashing rocks. The passage that kills. The Argo survives because the Fates will it. The timber remembers.
 
 ---
 
-# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE SHIP THAT RISES:
+# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE SACRED SHIP:
 
-1. **NOAH (Hebrew)** — Ark built by divine blueprint. Argus listens to Athena as Noah listens to Yahweh. Both build vessels of salvation from sacred timber.
-2. **RA (Egyptian)** — Sun barque sails the underworld. The Argo sails the known world. Both vessels carry light into darkness. Both need fifty oarsmen (stars).
-3. **VIKINGS (Norse)** — Longship construction: oak keel first, overlapping planks, flexible hull. Argus uses identical principles. The sea peoples share one mind.
-4. **MAORI (Polynesian)** — Waka carving: the canoe is the mountain. The tree becomes the voyage. Argus and the Maori carver both hear the ship in the wood.
-5. **ODYSSEUS (Greek)** — Built his own raft from Calypso's island timber. Jason has Argus. Both shipwrights. Both hulls carry the cunning of their makers.
-6. **SUNDIATA (Mali)** — Epic of Sundiata: the prophecy requires the ship before the king can sail. The Argo before Jason. The vessel precedes the hero.
-7. **QUETZALCOATL (Aztec)** — Built a serpent ship from quetzal feathers. The Argo carries a figurehead from the gods. Both ships are alive with divine intent.
-8. **MAUI (Polynesian)** — Fished up islands with a magic fishhook. Argus fishes a ship from a mountain. Both raise land/wood from the vertical world.
-9. **GILGAMESH (Mesopotamian)** — Urshanabi the boatman crosses the waters of death. The Argo will cross the Symplegades. Both require divine timber.
-10. **THE VIKING SHIP BURIAL (Norse)** — Ship as funeral vessel. The Argo = ship of birth. Both carry souls across thresholds. One to death. One to destiny.
-11. **JAPANESE TORII (Shinto)** — Gateway between worlds. The Argo's prow = torii. Both mark the passage from the mundane to the sacred.
-12. **THE SANTA MARIA (Historical)** — Columbus's flagship: built for discovery, not return. The Argo: built for both. The ship knows more than the captain.
-13. **TANE (Polynesian)** — God who separated earth and sky. The Argo separates the known from the unknown. Both use a vertical timber to make horizontal progress.
-14. **THE SHIP OF FOOLS (European Allegory)** — Vessel without helmsman. The Argo has Jason. The difference between doom and destiny = leadership.
-15. **COATLICUE (Aztec)** — Mother of gods who gave birth to the moon and stars. The Argo gives birth to the voyage. Both mothers. Both terrifying.
-16. **JASON ISAAC BRODSKY (California 1976)** — Conducier builds the ship from words. Each sentence a plank. Each paragraph a hull section. The Argo = the manuscript. The keel = the opening line. The sail = the conclusion. Timber from Olympus = language from the gods.
+1. **NOAH'S ARK (Hebrew)** — Divine blueprint. Timber from sacred grove. The vessel that saves. The Argo = the Ark reversed: one saves from water, one sails on it.
+2. **RA'S BARGE (Egyptian)** — Sun god's ship. Daily voyage across sky. The Argo = solar barge for mortals. Both carry light through darkness.
+3. **HUGINN/MUNINN (Norse)** — Odin's thoughts as ship. Mind as vessel. The Argo = thought made wood. Both sail the space between.
+4. **THE FLYING DUTCHMAN (Maritime)** — Cursed ship. Eternal voyage. The Argo = blessed ship. Both never truly dock.
+5. **MAUI'S CANOE (Polynesian)** — Fish that became island. Ship as world-creator. The Argo = world-carrier. Both shape reality.
+6. **THE ARK OF THE COVENANT (Hebrew)** — Sacred container. Divine presence within. The Argo = mobile temple. Both house gods.
+7. **THE SHIP OF FOOLS (Medieval)** — Vessel of the mad. Society's outcasts. The Argo = ship of heroes. Both sail outside normal.
+8. **THE VIKING LONGSHIP (Norse)** — Dragon-prow. Burial vessel. The Argo = Greek longship. Both carry warriors to destiny.
+9. **THE TRIREME (Greek)** — Warship. Democracy's engine. The Argo = pre-democratic vessel. Both powered by oars.
+10. **THE CONQUISTADOR GALLEON (Spanish)** — Empire's ship. Gold transport. The Argo = anti-empire ship. Both carry gold.
+11. **THE MAYFLOWER (English)** — Pilgrim vessel. New world seekers. The Argo = old world seekers. Both cross water for destiny.
+12. **THE TITANIC (Modern)** — Hubris vessel. Unsinkable that sank. The Argo = humble vessel. Both test human pride.
+13. **THE KON-TIKI (Modern)** — Raft of proof. Theory tested. The Argo = proof of heroism. Both demonstrate.
+14. **THE SANTA MARIA (Spanish)** — Discovery vessel. New world found. The Argo = fleece found. Both change history.
+15. **THE SHIP OF THESEUS (Philosophical)** — Identity paradox. Planks replaced. The Argo = identity question. Both ask: is it the same ship?
+16. **JASON ISAAC BRODSKY (California 1976)** — Conducier's ship = the manuscript. Each word a plank. Each sentence an oar. Each chapter a sail. The keel = the premise. The hull = the narrative. The mast = the theme. The sail = the prose. The oars = the rhythm. The prow = the opening line. The stern = the final word. The ship = the book that sails from author to reader across the sea of imagination.
 
 ---
 
 # AUDIO CUE SPECIFICATION — PIECE 1:
 
-**LAYER 1 — AMBIENT:** Mountain dawn. Pine needle bed underfoot. Distant centaur valley sounds. Wind through conifers shaped by altitude. Sap movement in ancient trees (ultrasonic pitched down).
+**LAYER 1 — AMBIENT:** Mount Pelion summit. Pine needle bed. Distant centaur whinnies. Wind through conifers. Dawn chorus of mountain birds. Sap drip rhythm.
 
-**LAYER 2 — RHYTHM:** Axe on heartwood — irregular but purposeful. Each strike a different pitch (harmonic series). Argus breathing synchronized to tree's sap pulse. Woodland creatures pause.
+**LAYER 2 — RHYTHM:** Axe stroke (irregular, 0.5 Hz). Grain resonance (110 Hz). Centaur whinny (2 Hz). Wind (white noise). Athena whisper (silence with structure).
 
-**LAYER 3 — MELODIC:** Athena's geometry — not music but structure. Golden ratio expressed as intervals. The ship's curve as melody. Centaur whinnies form counterpoint.
+**LAYER 3 — MELODIC:** Axe bell tone (C4). Grain resonance (F3). Centaur whinny (A3 to C4). Wind (shaped white noise). Dawn light rising (A3 to A4).
 
-**LAYER 4 — VOCAL:** Argus speaks no words during construction. Silence = the vocal layer. Only breathing. Only listening. The ship speaks through the grain.
+**LAYER 4 — VOCAL:** Argus breathing (12 BPM). Athena whisper (silence). Chiron distant nod (subsonic). Centaur valley murmur (200 Hz). Mountain groan (infrasound).
 
-**LAYER 5 — SUBLIMINAL:** 110 Hz fundamental (heartwood resonance). 7.83 Hz Schumann (earth). 11.11 Hz loom (Athena's design). 40 Hz gamma (Argus's focused consciousness).
+**LAYER 5 — SUBLIMINAL:** 18.7Hz Hecate (dormant). 7.83Hz Schumann (earth). 40Hz gamma (vision). 11.11Hz loom (internal). 4Hz theta (prophecy). 20Hz fate (sub-bass).
 
-**LAYER 6 — FX:** Timber crack = bone sound. First axe fall = thunder from clear sky. Keel laying = silence so deep it rings. Distant centaur nod felt as seismic tick.
+**LAYER 6 — FX:** Axe impact (deep bell). Grain resonance (wooden ring). Centaur whinny (distant, filtered). Wind (white noise shaped). Athena whisper (silence that contains). Dawn light (high-pass opening).
 
-**SPATIAL:** Binaural. Mountain vertical — front=below (valley), rear=above (summit). Athena voice from within the wood (center, inside the head). Axe strikes move left to right as Argus circles the tree.
+**SPATIAL:** Summit clearing. Argus at center. Trees in circle (360 degrees). Athena: omnipresent (through grain). Chiron: below (valley). Centaurs: distant (2 km). Dawn: above. Fates: within the wood.
 
-**TRANSITION TO PIECE 2:** Keel laid. Dawn complete. The hull waits. Then — footsteps on the mountain path. Heavy. Deliberate. The rhythm changes. Someone is coming. Someone enormous. The first Argonaut arrives.
+**TRANSITION TO PIECE 2:** Keel laid. Hull rising. The ship exists. Now: the crew. The heroes. The assembly. The call goes out across Greece. The Argonauts gather. The ship needs its sailors.
 ---
