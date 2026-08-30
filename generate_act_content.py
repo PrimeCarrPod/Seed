@@ -81,6 +81,30 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, program evaluation metrics, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, national security benefits, domestic content requirements, references and authorities, cost-benefit analysis"}
         }
+    },
+    "act14": {
+        "name": "National Cybersecurity and Digital Infrastructure Protection Act of 2026",
+        "short_name": "NCDIPA",
+        "dir": "14-Cybersecurity-Digital-Infrastructure-Act",
+        "funding": "$65 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, threat landscape analysis, program architecture, key provisions, economic projections, implementation timeline"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, national security imperatives, cyber threat data, critical digital infrastructure vulnerabilities"},
+            "03": {"name": "TITLE-I-CRITICAL-INFRASTRUCTURE-CYBERSECURITY", "title": "Title I — Critical Infrastructure Cybersecurity", "topic": "energy sector cybersecurity, water system protection, transportation network defense, healthcare infrastructure security, financial system resilience"},
+            "04": {"name": "TITLE-II-ZERO-TRUST-ARCHITECTURE-MANDATE", "title": "Title II — Zero Trust Architecture Mandate", "topic": "federal zero trust implementation, continuous verification protocols, micro-segmentation standards, identity and access management, device trust verification"},
+            "05": {"name": "TITLE-III-SUPPLY-CHAIN-CYBERSECURITY", "title": "Title III — Supply Chain Cybersecurity", "topic": "software bill of materials requirements, hardware provenance verification, third-party risk management, vendor security assessments, open source security"},
+            "06": {"name": "TITLE-IV-NATIONAL-CYBERSECURITY-WORKFORCE", "title": "Title IV — National Cybersecurity Workforce", "topic": "cybersecurity education grants, workforce training programs, certification standards, community college cyber programs, veteran transition programs"},
+            "07": {"name": "TITLE-V-THREAT-INTELLIGENCE-SHARING", "title": "Title V — Threat Intelligence Sharing", "topic": "ISAC expansion, public-private threat sharing, automated indicator sharing, classified threat briefing programs, international cyber threat cooperation"},
+            "08": {"name": "TITLE-VI-QUANTUM-RESISTANT-CRYPTOGRAPHY", "title": "Title VI — Quantum Resistant Cryptography", "topic": "post-quantum cryptography migration, NIST algorithm implementation, quantum key distribution, cryptographic inventory requirements, transition timeline"},
+            "09": {"name": "TITLE-VII-AI-CYBERSECURITY-DEFENSE", "title": "Title VII — AI-Powered Cybersecurity Defense", "topic": "AI threat detection systems, automated incident response, machine learning for anomaly detection, adversarial AI defense, AI security standards"},
+            "10": {"name": "TITLE-VIII-INCIDENT-RESPONSE-REQUIREMENTS", "title": "Title VIII — Incident Response and Reporting Requirements", "topic": "mandatory incident reporting, CIRCIA implementation, critical incident response teams, forensic investigation standards, recovery requirements"},
+            "11": {"name": "TITLE-IX-CYBER-INSURANCE-INCENTIVES", "title": "Title IX — Cyber Insurance and Risk Management Incentives", "topic": "cyber insurance tax incentives, risk assessment frameworks, security control premium reductions, small business cyber insurance, federal backstop program"},
+            "12": {"name": "TITLE-X-INTERNATIONAL-CYBER-DIPLOMACY", "title": "Title X — International Cyber Diplomacy and Norms", "topic": "cyber norms development, attribution frameworks, capacity building programs, cyber sanctions authorities, international cooperation agreements"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, program evaluation metrics, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, cybersecurity benefits quantification, domestic content requirements, references and authorities, cost-benefit analysis"}
+        }
     }
 }
 
@@ -800,7 +824,7 @@ def main():
     """Main entry point."""
     if len(sys.argv) < 3:
         print("Usage: python3 generate_act_content.py <act_key> <section_key>")
-        print("  act_key: act11, act12, or act13")
+        print("  act_key: act11, act12, act13, or act14")
         print("  section_key: 00, 01, 02, ..., 14")
         sys.exit(1)
     
