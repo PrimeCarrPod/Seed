@@ -321,6 +321,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, reliability benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act24": {
+        "name": "National Advanced Manufacturing and Industrial Innovation Act of 2026",
+        "short_name": "NAMIIA",
+        "dir": "24-Advanced-Manufacturing-Industrial-Innovation-Act",
+        "funding": "$85 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, manufacturing competitiveness challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, manufacturing job loss data, innovation gap, global competition analysis"},
+            "03": {"name": "TITLE-I-MANUFACTURING-USA-HUBS", "title": "Title I — Manufacturing USA Innovation Hubs", "topic": "regional manufacturing hubs, industry-university partnerships, technology transition, collaborative R&D facilities"},
+            "04": {"name": "TITLE-II-ADVANCED-INDUSTRIAL-EQUIPMENT", "title": "Title II — Advanced Industrial Equipment Program", "topic": "smart factory deployment, industrial robotics, digital twin manufacturing, AI-driven process optimization"},
+            "05": {"name": "TITLE-III-SUPPLY-CHAIN-RESILIENCE", "title": "Title III — Manufacturing Supply Chain Resilience", "topic": "critical supply chain mapping, domestic sourcing incentives, supplier diversification, reshoring programs"},
+            "06": {"name": "TITLE-IV-INDUSTRIAL-ENERGY-EFFICIENCY", "title": "Title IV — Industrial Energy Efficiency Program", "topic": "waste heat recovery, industrial electrification, process optimization, energy management systems, CHP deployment"},
+            "07": {"name": "TITLE-V-MANUFACTURING-WORKFORCE", "title": "Title V — Advanced Manufacturing Workforce", "topic": "industrial technician training, CNC operator certification, mechatronics programs, digital manufacturing skills"},
+            "08": {"name": "TITLE-VI-ADDITIVE-MANUFACTURING", "title": "Title VI — Additive Manufacturing Initiative", "topic": "3D printing standards, metal additive manufacturing, aerospace applications, medical device printing, materials development"},
+            "09": {"name": "TITLE-VII-BIOMANUFACTURING", "title": "Title VII — Biomanufacturing and Bioeconomy", "topic": "biopharmaceutical manufacturing, synthetic biology, bio-based chemicals, fermentation scale-up, bioprocessing workforce"},
+            "10": {"name": "TITLE-VIII-SEMICONDUCTOR-MANUFACTURING", "title": "Title VIII — Semiconductor Manufacturing Expansion", "topic": "CHIPS Act implementation, fabrication facility construction, packaging and testing, equipment manufacturing, materials supply"},
+            "11": {"name": "TITLE-IX-INDUSTRIAL-CYBERSECURITY", "title": "Title IX — Industrial Control Systems Cybersecurity", "topic": "ICS security standards, manufacturing system protection, threat intelligence sharing, incident response, supply chain security"},
+            "12": {"name": "TITLE-X-SMALL-MANUFACTURER-TECH", "title": "Title X — Small Manufacturer Technology Extension", "topic": "MEP center expansion, technology adoption assistance, lean manufacturing consulting, digital transformation support"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, manufacturing output benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act25": {
+        "name": "National Environmental Remediation and Brownfield Redevelopment Act of 2026",
+        "short_name": "NERBRA",
+        "dir": "25-Environmental-Remediation-Brownfield-Redevelopment-Act",
+        "funding": "$50 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, contamination challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, superfund site data, brownfield inventory, environmental justice implications"},
+            "03": {"name": "TITLE-I-SUPERFUND-ACCELERATION", "title": "Title I — Superfund Site Cleanup Acceleration", "topic": "site remediation technology, responsible party enforcement, orphan share funding, cleanup standards modernization"},
+            "04": {"name": "TITLE-II-BROWNFIELD-REDEVELOPMENT", "title": "Title II — Brownfield Assessment and Redevelopment", "topic": "site assessment grants, cleanup revolving loan fund, redevelopment planning, liability protections, area-wide planning"},
+            "05": {"name": "TITLE-III-ABANDONED-MINE-RECLAMATION", "title": "Title III — Abandoned Mine Land Reclamation", "topic": "mine reclamation technology, acid mine drainage treatment, land restoration, community economic transition"},
+            "06": {"name": "TITLE-IV-PETROLEUM-BROWNFIELDS", "title": "Title IV — Petroleum Brownfield Cleanup", "topic": "underground storage tank sites, gas station redevelopment, petroleum contamination remediation, state cost-share programs"},
+            "07": {"name": "TITLE-V-HEAVY-METALS-REMEDIATION", "title": "Title V — Heavy Metals and Emerging Contaminants", "topic": "lead contamination cleanup, PFAS remediation, mercury contamination, emerging contaminant research, health monitoring"},
+            "08": {"name": "TITLE-VI-REMEDIATION-TECHNOLOGY", "title": "Title VI — Remediation Technology Development", "topic": "in-situ remediation, bioremediation, phytoremediation, nanoremediation, long-term monitoring technologies"},
+            "09": {"name": "TITLE-VII-ENVIRONMENTAL-JUSTICE", "title": "Title VII — Environmental Justice Community Remediation", "topic": "overburdened community prioritization, cumulative impact assessment, community engagement, health-protective standards"},
+            "10": {"name": "TITLE-VIII-REMEDIATION-WORKFORCE", "title": "Title VIII — Environmental Remediation Workforce", "topic": "remediation technician training, environmental scientist programs, community worker development, certification standards"},
+            "11": {"name": "TITLE-IX-REDEVELOPMENT-FINANCE", "title": "Title IX — Redevelopment Finance and Incentives", "topic": "tax increment financing, new markets tax credits, opportunity zones, green infrastructure incentives, public-private partnerships"},
+            "12": {"name": "TITLE-X-LAND-REUSE-STANDARDS", "title": "Title X — Land Reuse and Institutional Controls", "topic": "revitalization standards, institutional controls, long-term stewardship, beneficial reuse of remediated land"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, property value benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
