@@ -273,6 +273,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, avoided damage benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act22": {
+        "name": "National Sustainable Buildings and Green Construction Act of 2026",
+        "short_name": "NSBGCA",
+        "dir": "22-Sustainable-Buildings-Green-Construction-Act",
+        "funding": "$75 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, building emissions challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, building sector emissions data, energy efficiency potential, green construction opportunity"},
+            "03": {"name": "TITLE-I-BUILDING-ENERGY-CODES", "title": "Title I — National Building Energy Codes", "topic": "model energy code updates, net-zero ready buildings, code adoption incentives, building performance standards"},
+            "04": {"name": "TITLE-II-EXISTING-BUILDING-RETROFIT", "title": "Title II — Existing Building Deep Retrofit Program", "topic": "residential retrofits, commercial building upgrades, heat pump deployment, workforce training for retrofits"},
+            "05": {"name": "TITLE-III-FEDERAL-BUILDINGS", "title": "Title III — Federal Building Decarbonization", "topic": "federal building emissions targets, GSA net-zero portfolio, military installation efficiency, federal procurement standards"},
+            "06": {"name": "TITLE-IV-GREEN-PUBLIC-HOUSING", "title": "Title IV — Green Public Housing Transformation", "topic": "PHA deep retrofits, affordable housing electrification, community solar for housing authorities, healthy homes standards"},
+            "07": {"name": "TITLE-V-SCHOOL-BUILDINGS", "title": "Title V — Healthy Green Schools Program", "topic": "HVAC upgrades, indoor air quality, net-zero schools, student environmental health, school infrastructure funding"},
+            "08": {"name": "TITLE-VI-SUSTAINABLE-MATERIALS", "title": "Title VI — Sustainable Construction Materials", "topic": "low-carbon concrete, mass timber construction, recycled content requirements, embodied carbon standards, Buy Clean procurement"},
+            "09": {"name": "TITLE-VII-BUILDING-WORKFORCE", "title": "Title VII — Green Building Workforce Development", "topic": "energy auditor certification, heat pump installer training, building operator programs, construction skills upgrading"},
+            "10": {"name": "TITLE-VIII-BUILDING-ELECTRIFICATION", "title": "Title VIII — Building Electrification Program", "topic": "all-electric new construction, gas system transition, electric-ready requirements, appliance efficiency standards"},
+            "11": {"name": "TITLE-IX-SMART-BUILDINGS", "title": "Title IX — Smart Building and Grid Integration", "topic": "building automation, demand response, thermal energy storage, smart grid integration, building-to-grid services"},
+            "12": {"name": "TITLE-X-ENVIRONMENTAL-JUSTICE", "title": "Title X — Environmental Justice and Healthy Communities", "topic": "lead paint abatement, asbestos removal, healthy housing standards, community health improvements, environmental justice mapping"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy savings benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act23": {
+        "name": "National Grid Modernization and Resilience Act of 2026",
+        "short_name": "NGMRA",
+        "dir": "23-Grid-Modernization-Resilience-Act",
+        "funding": "$100 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, grid infrastructure challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, grid reliability data, aging infrastructure, renewable integration requirements"},
+            "03": {"name": "TITLE-I-TRANSMISSION-EXPANSION", "title": "Title I — National Transmission Expansion Program", "topic": "interregional transmission lines, transmission planning, rights-of-way, national interest electric transmission corridors"},
+            "04": {"name": "TITLE-II-SMART-GRID-DEPLOYMENT", "title": "Title II — Smart Grid Technology Deployment", "topic": "advanced metering infrastructure, distribution automation, grid sensors, digital substations, grid management software"},
+            "05": {"name": "TITLE-III-GRID-HARDENING", "title": "Title III — Grid Hardening and Weatherization", "topic": "wildfire mitigation, storm hardening, undergrounding, vegetation management, flood protection"},
+            "06": {"name": "TITLE-IV-MICROGRIDS-ISLANDED-SYSTEMS", "title": "Title IV — Microgrid and Islanded Systems Program", "topic": "community microgrids, campus microgrids, critical facility resilience, tribal microgrids, military microgrids"},
+            "07": {"name": "TITLE-V-GRID-INVERTER-STANDARDS", "title": "Title V — Grid Inverter and Interconnection Standards", "topic": "smart inverter requirements, interconnection reform, distributed energy resource integration, grid support functions"},
+            "08": {"name": "TITLE-VI-DISTRIBUTION-GRID-MODERNIZATION", "title": "Title VI — Distribution Grid Modernization", "topic": "distribution system upgrades, voltage optimization, power quality, outage management, fault detection"},
+            "09": {"name": "TITLE-VII-GRID-CYBERSECURITY", "title": "Title VII — Grid Cybersecurity and Physical Security", "topic": "SCADA security, supply chain security, physical security standards, incident response, security operations centers"},
+            "10": {"name": "TITLE-VIII-GRID-WORKFORCE", "title": "Title VIII — Grid Workforce Development", "topic": "lineworker training, substation technician certification, grid engineer programs, cybersecurity workforce, apprenticeship programs"},
+            "11": {"name": "TITLE-IX-RENEWABLE-INTEGRATION", "title": "Title IX — Renewable Energy Grid Integration", "topic": "variable generation management, curtailment reduction, forecasting systems, grid-forming inverters, renewable zones"},
+            "12": {"name": "TITLE-X-GRID-FINANCE-INNOVATION", "title": "Title X — Grid Finance and Cost Allocation Reform", "topic": "transmission cost allocation, benefit-cost analysis frameworks, grid investment recovery, innovative rate design"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, reliability benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
