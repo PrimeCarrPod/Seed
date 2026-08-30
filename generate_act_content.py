@@ -177,6 +177,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, water security benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act18": {
+        "name": "National Broadband and Digital Equity Act of 2026",
+        "short_name": "NBDEA",
+        "dir": "18-Broadband-Digital-Equity-Act",
+        "funding": "$60 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, digital divide data, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, broadband access gaps, digital equity imperatives, economic impact of connectivity"},
+            "03": {"name": "TITLE-I-BROADBAND-DEPLOYMENT", "title": "Title I — Universal Broadband Deployment", "topic": "fiber optic expansion, rural broadband, 5G fixed wireless, satellite broadband subsidies, middle mile infrastructure"},
+            "04": {"name": "TITLE-II-DIGITAL-EQUITY-PROGRAMS", "title": "Title II — Digital Equity and Literacy Programs", "topic": "device subsidies, digital skills training, community technology centers, multilingual digital literacy, senior digital inclusion"},
+            "05": {"name": "TITLE-III-TRIBAL-BROADBAND", "title": "Title III — Tribal Broadband Connectivity", "topic": "tribal broadband deployment, spectrum for tribal nations, tribal digital sovereignty, Indigenous data governance"},
+            "06": {"name": "TITLE-IV-AFFORDABILITY-PROGRAMS", "title": "Title IV — Broadband Affordability Programs", "topic": "affordable connectivity program expansion, low-cost broadband plans, lifeline broadband, affordability benchmarks"},
+            "07": {"name": "TITLE-V-PUBLIC-SAFETY-COMMUNICATIONS", "title": "Title V — Public Safety Communications Infrastructure", "topic": "FirstNet expansion, emergency communications, interoperable radio systems, disaster-resilient networks"},
+            "08": {"name": "TITLE-VI-OPEN-INTERNET-STANDARDS", "title": "Title VI — Open Internet and Net Neutrality Standards", "topic": "net neutrality protections, transparency requirements, anti-throttling rules, paid prioritization ban, edge provider access"},
+            "09": {"name": "TITLE-VII-BROADBAND-WORKFORCE", "title": "Title VII — Telecommunications Workforce Development", "topic": "fiber technician training, tower technician certification, engineering scholarships, apprenticeship programs"},
+            "10": {"name": "TITLE-VIII-SMART-COMMUNITIES", "title": "Title VIII — Smart Communities and IoT Deployment", "topic": "smart city infrastructure, IoT sensor networks, intelligent transportation systems, connected healthcare systems"},
+            "11": {"name": "TITLE-IX-SPECTRUM-MANAGEMENT", "title": "Title IX — Spectrum Management and Innovation", "topic": "spectrum auction reform, shared spectrum frameworks, 6G research, millimeter wave deployment, spectrum repurposing"},
+            "12": {"name": "TITLE-X-CYBERSECURITY-BROADBAND", "title": "Title X — Broadband Network Cybersecurity Standards", "topic": "network security requirements, encryption standards, critical infrastructure protection, supply chain security"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, connectivity benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act19": {
+        "name": "Carbon Capture and Sequestration Deployment Act of 2026",
+        "short_name": "CCSDA",
+        "dir": "19-Carbon-Capture-Sequestration-Act",
+        "funding": "$70 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, climate mitigation challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, atmospheric CO2 data, carbon removal imperatives, climate targets"},
+            "03": {"name": "TITLE-I-DIRECT-AIR-CAPTURE", "title": "Title I — Direct Air Capture Hubs", "topic": "DAC facility deployment, hub program, sorbent technology, renewable energy integration, cost reduction targets"},
+            "04": {"name": "TITLE-II-POINT-SOURCE-CAPTURE", "title": "Title II — Point Source Carbon Capture", "topic": "industrial capture systems, cement plant capture, steel mill capture, refinery capture, power plant retrofit"},
+            "05": {"name": "TITLE-III-CARBON-TRANSPORT-INFRASTRUCTURE", "title": "Title III — Carbon Transport Infrastructure", "topic": "CO2 pipeline networks, rail transport, ship transport, pipeline safety standards, hub interconnection"},
+            "06": {"name": "TITLE-IV-GEOLOGICAL-STORAGE", "title": "Title IV — Geological Storage and Sequestration", "topic": "saline formation storage, depleted oil field storage, Class VI well program, monitoring requirements, liability framework"},
+            "07": {"name": "TITLE-V-CARBON-UTILIZATION", "title": "Title V — Carbon Utilization and Products", "topic": "CO2-to-concrete, synthetic fuels, chemical feedstocks, mineralization, carbon product standards"},
+            "08": {"name": "TITLE-VI-NATURE-BASED-SOLUTIONS", "title": "Title VI — Nature-Based Carbon Removal", "topic": "reforestation programs, soil carbon sequestration, blue carbon ecosystems, coastal wetland restoration, biochar"},
+            "09": {"name": "TITLE-VII-OCEAN-CARBON-REMOVAL", "title": "Title VII — Ocean-Based Carbon Removal", "topic": "ocean alkalinity enhancement, seaweed cultivation, ocean fertilization research, marine carbon monitoring"},
+            "10": {"name": "TITLE-VIII-CARBON-ACCOUNTING", "title": "Title VIII — Carbon Accounting and Verification", "topic": "MRV protocols, lifecycle analysis, carbon credit standards, registry systems, third-party verification"},
+            "11": {"name": "TITLE-IX-ENVIRONMENTAL-JUSTICE", "title": "Title IX — Environmental Justice and Community Benefits", "topic": "community benefit agreements, environmental monitoring, just transition for workers, tribal consultation"},
+            "12": {"name": "TITLE-X-CARBON-CAPTURE-WORKFORCE", "title": "Title X — Carbon Capture Workforce Development", "topic": "engineering scholarships, technician certification, geologist training, community college programs"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, climate benefits quantification, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
