@@ -3,12 +3,107 @@
 **Iteration:** 2 of 7  
 **Part:** 01 of 11  
 **Piece:** 09 of 11  
-**Generated:** 2026-08-25 20:52:58 UTC  
+**Generated:** 2026-08-30 02:13:00 UTC  
 **Target Read Time:** ~180 minutes per part (cumulative across pieces)  
 **Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
 **Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
 
 ---
+# PIECE 9: PART 1 — CALL TO ADVENTURE — THE ORACLE SPEAKS — DOOM AND GLORY
 
-[Content for Part 01, Piece 09 goes here]
+**[AUDIO CUE: *DELPHI. *THE *OMPHALOS. *THE *NAVEL *OF *THE *WORLD. *THE *PYTHIA *ON *HER *TRIPOD. *ETHENE *VAPORS *RISING *FROM *THE *CHASM. *SHE *SHAKES. *SHE *SPEAKS. *NOT *HER *VOICE. *APOLLO'S. *THE *GOD *OF *TRUTH *AND *PLAGUE. *THE *GOD *WHO *SEES *ALL *AND *TELLS *ALL *AND *CURES *NOTHING. *JASON *STANDS *BEFORE *HER. *NOT *YET. *NOT *NOW. *THE *ORACLE *SPEAKS *TO *THE *EMPTY *AIR. *TO *THE *FUTURE. *TO *THE *MAN *WHO *WILL *COME. *"HE *WHO *COMES *WITH *ONE *SANDAL *SHALL *SEE *THE *FLEECE. *HE *WHO *COMES *WITH *ONE *SANDAL *SHALL *LOSE *THE *FLEECE. *HE *WHO *COMES *WITH *ONE *SANDAL *SHALL *GAIN *A *KINGDOM *AND *LOSE *A *KINGDOM. *HE *WHO *COMES *WITH *ONE *SANDAL *SHALL *LOVE *A *GODDESS *AND *BE *DESTROYED *BY *HER. *HE *WHO *COMES *WITH *ONE *SANDAL *SHALL *RETURN *WITH *GLORY *AND *DIE *ALONE. *THIS *IS *THE *WAY. *THIS *IS *THE *PRICE. *THIS *IS *THE *PROPHECY *THAT *FULFILLS *ITSELF." *THE *PYTHIA *COLLAPSES. *THE *PRIESTS *CATCH *HER. *THE *VAPORS *RISE. *THE *CHASM *CLOSES. *BUT *THE *WORDS *REMAIN. *HANGING *IN *THE *AIR. *HANGING *IN *THE *WORLD. *HANGING *IN *THE *FATE *OF *THE *BOY *WITH *ONE *SANDAL. *THE *ORACLE *HAS *SPOKEN. *THE *PROPHECY *IS *SET. *JASON *WILL *COME. *JASON *WILL *SEE. *JASON *WILL *LOSE. *JASON *WILL *GAIN. *JASON *WILL *LOVE. *JASON *WILL *BE *DESTROYED. *JASON *WILL *RETURN. *JASON *WILL *DIE. *ALL *IN *ONE *SENTENCE. *ALL *IN *ONE *PROPHECY. *ALL *IN *THE *WORDS *OF *A *WOMAN *SHAKING *ON *A *TRIPOD *OVER *A *CHASM *THAT *LEADS *TO *THE *UNDERWORLD.]**
 
+---
+
+## WILLIAMS — MORK MORNING: *YOU *EVER *HEAR *SOMETHING *THAT *TELLS *YOU *EVERYTHING *AND *NOTHING? *THAT'S *THE *ORACLE. *THAT'S *THE *PYTHIA *SHAKING *ON *HER *TRIPOD *SPEAKING *THE *TRUTH *THAT *IS *ALSO *A *LIE *BECAUSE *YOU *CAN'T *UNDERSTAND *IT *UNTIL *IT'S *TOO *LATE. *VOICE *IS *APOLLO. *RANGE *IS *FOREVER. *MORK *BECOMES *THE *PYTHIA *BECOMES *EVERY *PROPHET *WHO *EVER *SAW *THE *END *AT *THE *BEGINNING. *THE *ACTOR *SPEAKS. *THE *ROLE *PROPHECIES. *THE *VAPORS *RISE. *THE *CHASM *OPENS. *THE *WORDS *COME. *NOT *NICE *WORDS. *NOT *KIND *WORDS. *TRUE *WORDS. *THE *WORDS *THAT *SAY: *YOU *WILL *WIN. *YOU *WILL *LOSE. *YOU *WILL *LOVE. *YOU *WILL *DIE. *ALL *AT *ONCE. *ALL *IN *ONE *LIFE. *ALL *IN *THE *TIME *IT *TAKES *TO *LOSE *A *SANDAL *IN *A *RIVER.]
+
+## EL SEGUNDO — STONER LOGIC: *THE *ORACLE *AIN'T *WARNING, *MAN. *IT'S *MAPPING. *SHE *DON'T *SAY *"DON'T *GO." *SHE *SAYS *"HERE'S *WHAT *HAPPENS *WHEN *YOU *GO." *THE *FLEECE. *THE *LOSS. *THE *KINGDOM. *THE *LOVE. *THE *DESTRUCTION. *THE *RETURN. *THE *DEATH. *ALL *TRUE. *ALL *SIMULTANEOUS. *THAT'S *THE *PROPHECY. *THAT'S *THE *ORACLE. *NOT *EITHER/OR. *BOTH/AND. *HANG *TEN *ON *THE *BOTH/AND. *THAT'S *THE *WAVE. *THAT'S *THE *DROP. *THAT'S *THE *MOMENT *WHERE *EVERYTHING *IS *TRUE *AT *ONCE.]
+
+## TACTICAL: ORACLE SEQUENCE — DELPHI PYTHIA ON TRIPOD — APOLLO SPEAKS — PROPHECY ISSUED — JASON WILL COME/WILL SEE/WILL LOSE/WILL GAIN/WILL LOVE/WILL BE DESTROYED/WILL RETURN/WILL DIE — JSNBAI ENTRIES 081-090 QUEUED — FATE BRAID: CLOTHO SPINS ORACLE THREAD (GOLDEN-BLACK, TRUTH-DOOM), LACHESIS MEASURES PROPHECY (ALL ELEVEN PARTS), ATROPOS SHEARS IGNORANCE (JASON WILL KNOW AND STILL GO), HECATE TORCHES ALIGN (ORACLE AND GODDESS AGREE) — AUDIO LAYER: ETHENE VAPORS, TRIPOD HUM, PYTHIA SHAKE, APOLLO VOICE, CHASM DEPTH
+
+## JSNBAI 081: DELPHI *BIOMETRICS — *LOCATION: *OMPHALOS *(NAVEL). *ALTITUDE: *2,000 *FEET. *ETHENE *VAPORS: *ACTIVE. *TRIPOD: *THREE-LEGGED. *PYTHIA *STATE: *TRANCE. *JSNBAI 082: PROPHECY *STRUCTURE — *8 *CLAUSES. *4 *POSITIVE *(SEE, *GAIN, *LOVE, *RETURN). *4 *NEGATIVE *(LOSE, *BE *DESTROYED, *DIE *ALONE). *STRUCTURE: *TRUE/FALSE *SIMULTANEOUS. *JSNBAI 083: JASON *WILL *COME — *CONFIRMED *BY *ONE-SANDAL *SIGN. *DISTANCE *TO *DELPHI *FROM *IOLCUS: *60 *MILES. *TIMING: *AFTER *THRONE *ROOM. *JSNBAI 084: JASON *WILL *SEE *THE *FLEECE — *VISION *PREVIOUSLY *GRANTED *BY *HECATE. *ORACLE *CONFIRMS. *THE *FLEECE *IS *REAL. *THE *QUEST *IS *POSSIBLE. *JSNBAI 085: JASON *WILL *LOSE *THE *FLEECE — *NOT *PHYSICALLY. *SPIRITUALLY. *THE *FLEECE *CHANGES. *THE *HERO *CHANGES. *WHAT *IS *GAINED *IS *NOT *WHAT *IS *SOUGHT. *JSNBAI 086: JASON *WILL *GAIN *A *KINGDOM — *IOLCUS. *THE *THRONE. *BUT *THE *KINGDOM *WILL *COST *MORE *THAN *IT *YIELDS. *JSNBAI 087: JASON *WILL *LOVE *A *GODDESS — *MEDEA. *PRIESTESS *OF *HECATE. *DIVINE *AND *MORTAL. *THE *LOVE *THAT *DESTROYS. *JSNBAI 088: JASON *WILL *BE *DESTROYED — *BY *THE *LOVE. *BY *THE *FLEECE. *BY *THE *PROPHECY *ITSELF. *SELF-FULFILLING. *JSNBAI 089: JASON *WILL *RETURN — *WITH *GLORY. *WITH *FLEECE. *WITH *MEDIA. *BUT *THE *RETURN *IS *NOT *THE *END. *JSNBAI 090: JASON *WILL *DIE *ALONE — *UNDER *THE *ARGO'S *ROTTED *PROW. *A *FALLEN *BEAM. *NO *FANFARE. *NO *HEROES. *ALONE. *THE *END *OF *THE *ONE-SANDAL *PROPHECY.
+
+## FATES: CLOTHO *SPINS *THE *ORACLE — *GOLDEN *THREAD *(TRUTH). *BLACK *THREAD *(DOOM). *BOTH *SPUN *TOGETHER. *INDISTINGUISHABLE. *LACHESIS *MEASURES *THE *PROPHECY — *ALL *ELEVEN *PARTS. *ALL *TWENTY-TWO *CHAPTERS. *THE *WHOLE *STORY *IN *ONE *SENTENCE. *ATROPOS *SHEARS *IGNORANCE — *CUT. *JASON *WILL *KNOW. *AND *GO *ANYWAY. *THAT'S *THE *HERO. *THAT'S *THE *TRAGEDY. *HECATE *AGREES — *THE *ORACLE *AND *THE *GODDESS *ARE *ONE. *THE *PROPHECY *IS *THE *QUEST. *THE *QUEST *IS *THE *PROPHECY. *PART *1 *DEEPENS. *THE *ORACLE *HAS *SPOKEN. *THE *PROPHECY *IS *SET. *JASON *WILL *COME. *JASON *WILL *SEE. *JASON *WILL *LOSE. *JASON *WILL *GAIN. *JASON *WILL *LOVE. *JASON *WILL *BE *DESTROYED. *JASON *WILL *RETURN. *JASON *WILL *DIE. *ALL *TRUE. *ALL *WAITING. *ALL *IN *THE *ONE *SANDAL *HE *LOST *AT *THE *RIVER.]**
+
+**[AUDIO CUE: *ETHENE *VAPORS: *HIGH-FREQUENCY *HISS *(10 *KHZ). *TRIPOD *HUM: *BRONZE *RESONANCE *(220 *HZ, *A3). *PYTHIA *SHAKE: *RATTLE *(IRREGULAR, *3-7 *HZ). *APOLLO *VOICE: *DEEP *(80 *HZ, *ANDROGYNOUS). *CHASM *DEPTH: *SUB-BASS *(10 *HZ, *FELT *AS *DREAD). *PROPHECY *WORDS: *EACH *CLAUSE *A *CHIME *(G5, *CLEAR). *PYTHIA *COLLAPSE: *BODY *ON *MARBLE. *VAPORS *RISE: *VISUAL. *CHASM *CLOSES: *LOW *RUMBLE. *WORDS *REMAIN: *REVERB *(10 *SECONDS). *CALL *CONFIRMED: *SUB-BASS *(20 *HZ, *FATE *SEALED). *FADE *TO *HEROES *MOVING.]**
+
+---
+
+# CROSS-PART FATE BRAID — PART 1 THREADS TO PARTS 2-11:
+
+**THREAD AAA (to Part 2 - ASSEMBLY):** The oracle speaks. The heroes hear. Not through messengers. Through fate. They move toward Jason because the prophecy moves them.
+
+**THREAD BBB (to Part 3 - THRESHOLD):** "He shall see the fleece." But first: the threshold. The Symplegades. The dove flies. Jason follows. The oracle confirms the path.
+
+**THREAD CCC (to Part 4 - TRIALS):** "He shall gain a kingdom and lose a kingdom." The trials give and take. The bulls: gain. The dragon's teeth: lose. The fleece: both.
+
+**THREAD DDD (to Part 5 - GODDESS):** "He shall love a goddess." Hecate's priestess. The oracle names what the goddess commands. Medea. Always Medea.
+
+**THREAD EEE (to Part 6 - TEMPTATION):** "He shall be destroyed by her." Persia offers escape from love. But the oracle says: destruction comes through love. The temptation is the oracle's truth.
+
+**THREAD FFF (to Part 7 - ATONEMENT):** "He shall return with glory." The atonement is complete. The throne is restored. But the glory is ash. The oracle knows.
+
+**THREAD GGG (to Part 8 - APOTHEOSIS):** "He shall die alone." Apotheosis is not immortality. It is transformation. The hero dies. The story lives. The oracle's final word.
+
+**THREAD HHH (to Part 9 - ULTIMATE BOON):** "He shall see the fleece." The boon is real. The boon is temporary. The oracle: the boon is the seeing. Not the having.
+
+**THREAD III (to Part 10 - REFUSAL):** "He shall lose the fleece." The refusal of return begins with the oracle's knowledge. The fleece is lost. Why return? The oracle: because the prophecy demands it.
+
+**THREAD JJJ (to Part 11 - MAGIC FLIGHT):** "He shall return." The magic flight is the return. The oracle's final promise. The hero comes home. The hero dies. The oracle is never wrong.
+
+---
+
+# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE ORACLE SPEAKS:
+
+1. **THE WRITING ON THE WALL (Hebrew)** — Daniel 5. Belshazzar's feast. "Mene, mene, tekel, upharsin." The oracle speaks. The king falls. The Pythia speaks. Jason rises. Both oracles. Both fates.
+
+2. **CALCHAS (Greek)** — The seer who knows. "The war lasts ten years." The oracle speaks. The war happens. The Pythia speaks. The quest happens. Both confirmations. Both dooms.
+
+3. **TEIRESIAS (Greek)** — The blind seer. Sees what the sighted cannot. The Pythia is blind to the present. Sees only the future. Both blind. Both true.
+
+4. **THE CASSANDRA COMPLEX (Modern)** — True prophecy. No one believes. The oracle speaks. Jason believes. The difference: the hero listens.
+
+5. **THE MAYAN CALENDAR (Mesoamerican)** — The end predicted. The world continues. The oracle's timeline is longer than the listener's. The Pythia's prophecy spans eleven parts.
+
+6. **THE NOSTRADAMUS QUATRAIN (Renaissance)** — Vague. Retrofitted. The Pythia's prophecy is specific. Retrofitted by fate itself. The hero makes it true.
+
+7. **THE I CHING (Chinese)** — Hexagrams. The oracle speaks in patterns. The Pythia speaks in clauses. Both systems. Both truths. Both warnings.
+
+8. **THE BIBLE CODE (Modern)** — Hidden text. The future in the past. The Pythia's prophecy is code. Jason is the decoder. The quest is the key.
+
+9. **THE DREAM (Freudian)** — The unconscious speaks. The Pythia = the unconscious of Greece. The oracle = the dream of the nation. Jason = the dreamer.
+
+10. **THE PROPHET (Islamic)** — Muhammad receives. The angel speaks. The Pythia receives. Apollo speaks. Both vessels. Both messages. Both irrevocable.
+
+11. **THE SIBYLLINE BOOKS (Roman)** — Buy the books. The king refuses. The woman burns them. The price rises. The oracle speaks. The price of not listening rises. Jason listens. The price is still paid.
+
+12. **THE MAGIC 8 BALL (Modern Toy)** — "Reply hazy, try again." The Pythia: "Outlook not so good." The oracle: "Signs point to yes." All oracles. All true. All misunderstood.
+
+13. **THE DEATH CARD (Tarot)** — Not death. Transformation. The Pythia's "die alone" = transformation. Not ending. The oracle speaks in symbols.
+
+14. **THE FATES THEMSELVES (Greek)** — Clotho, Lachesis, Atropos. The oracle speaks their words. The Pythia = the fourth fate. The one who speaks. The one who is heard.
+
+15. **THE WORD (Quantum)** — Observation creates reality. The oracle observes. The prophecy creates the quest. The Pythia speaks. The hero becomes. The word is the deed.
+
+16. **JASON ISAAC BRODSKY (California 1976)** — Conducier's oracle = the outline. The prophecy = the plan. The clauses = the chapters. The chime = the deadline. The vapors = the coffee. The chasm = the blank page. The tripod = the chair. The shake = the doubt. The words = the first draft. The collapse = the final period. The prophecy = the manuscript.
+
+---
+
+# AUDIO CUE SPECIFICATION — PIECE 9:
+
+**LAYER 1 — AMBIENT:** Delphi omphalos. Altitude 2,000 feet. Wind thin. Ethene vapors hiss. Tripod hum. Marble underfoot. Chasm depth (sub-bass). Priest murmur (background).
+
+**LAYER 2 — RHYTHM:** Pythia shake (irregular, 3-7 Hz). Tripod resonance (220 Hz, constant). Apollo voice (80 Hz, steady). Prophecy clauses (each a chime, 1 Hz spacing). Chasm rumble (10 Hz, sub-bass).
+
+**LAYER 3 — MELODIC:** Tripod hum (A3, 220 Hz). Oracle drone (D2, 73 Hz). Prophecy chime (G5, clear per clause). Chasm depth (10 Hz, sub-bass). Call confirmation (20 Hz).
+
+**LAYER 4 — VOCAL:** Apollo voice (deep, androgynous, 80 Hz). Pythia shake (vowel sounds, 400-800 Hz). Priest murmur (background, 200 Hz). Prophecy words (clear, 432 Hz, each clause). Chasm rumble (10 Hz, non-vocal).
+
+**LAYER 5 — SUBLIMINAL:** 18.7Hz Hecate (ORACLE ALIGNS). 7.83Hz Schumann (earth). 40Hz gamma (prophecy state). 11.11Hz loom (oracle thread). 4Hz theta (trance). 20Hz fate (sub-bass).
+
+**LAYER 6 — FX:** Ethene hiss (10 kHz). Tripod hum (220 Hz). Pythia shake (rattle, 3-7 Hz). Apollo voice (80 Hz, androgynous). Prophecy chime (G5, clear per clause). Pythia collapse (body on marble). Vapors rise (visual, 10 kHz hiss). Chasm closes (low rumble, 10 Hz). Words remain (reverb, 10 seconds). Call confirmation (20 Hz, 3 seconds).
+
+**SPATIAL:** Delphi vertical. Pythia center (tripod). Apollo above (omnidirectional). Chasm below (sub-bass). Priests around (360 degrees). Prophecy words: omnidirectional. Jason: not yet present (future). Call: from below (earth) and above (Olympus).
+
+**TRANSITION TO PIECE 10:** The oracle collapses. The words remain. Jason will come. Jason will see. Jason will lose. Jason will gain. Jason will love. Jason will be destroyed. Jason will return. Jason will die. The heroes begin to move. The assembly responds to the prophecy. The call is answered by fate itself.
+---
