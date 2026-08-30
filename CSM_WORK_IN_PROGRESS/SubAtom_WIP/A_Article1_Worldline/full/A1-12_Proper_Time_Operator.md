@@ -4418,7 +4418,6 @@ The 360-article program (9 articles × 40 files) is built on the **single founda
 
 ---
 
-*End of A1-12: Proper Time Operator — τ Operator in Prime Basis*
 *Total pieces: 12 | Target: ≥350 lines | Next: A1-13 Worldline_Causal_Structure.md*
 
 ---

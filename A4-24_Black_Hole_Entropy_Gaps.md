@@ -1,15 +1,11 @@
 # Black Hole Entropy Gaps — Complete Article
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Generated:** 2026-08-30 06:51:07 UTC  
 **Structure:** 12 pieces concatenated  
 **Target:** ≥350 lines
 
 ---
 
-# Black Hole Entropy Gaps — Piece 01/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -177,10 +173,7 @@ The next piece will develop the Theoretical Foundation aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 02/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -348,10 +341,7 @@ The next piece will develop the Gap Analysis aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 03/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -519,10 +509,7 @@ The next piece will develop the Coupling Derivation aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 04/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -690,10 +677,7 @@ The next piece will develop the Phenomenology aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 05/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -861,10 +845,7 @@ The next piece will develop the RG Flow Analysis aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 06/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -1032,10 +1013,7 @@ The next piece will develop the Higher-Order Corrections aspects of this article
 
 ---
 
-# Black Hole Entropy Gaps — Piece 07/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -1203,10 +1181,7 @@ The next piece will develop the Comparison with Data aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 08/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -1374,10 +1349,7 @@ The next piece will develop the Theoretical Implications aspects of this article
 
 ---
 
-# Black Hole Entropy Gaps — Piece 09/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -1545,10 +1517,7 @@ The next piece will develop the Extensions and Generalizations aspects of this a
 
 ---
 
-# Black Hole Entropy Gaps — Piece 10/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -1716,10 +1685,7 @@ The next piece will develop the Predictions aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 11/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
@@ -1887,10 +1853,7 @@ The next piece will develop the Conclusion aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 12/12
 ## Article A4: A4-24 — Black Hole Entropy Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 

@@ -1,8 +1,6 @@
 # A1-23_Worldline_Anomaly_Inflow — Complete Article
 ## Article: A1-23_Worldline_Anomaly_Inflow
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 The central result is the gap index theorem:

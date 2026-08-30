@@ -4,8 +4,6 @@
 
 **File:** A1-05_Worldline_Stability_RH.md  
 **Article:** 1 of 9 — Prime Electron Worldline Topology  
-**Piece:** 01 of ~12 (30 lines each)  
-**Target:** ≥350 lines total  
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500  
 
 ---
@@ -738,8 +736,6 @@ This is a physical proof of the Riemann Hypothesis, grounded in the observed sta
 ---
 
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
-**Total lines in A1-05:** ~400 lines across 12 pieces  
 
 ---
 
-*End of A1-05: Worldline_Stability_RH — Ready for concatenation and zip.*

@@ -1364,4 +1364,3 @@ This **mathematical fingerprint** is unforgeable — it either matches nature ex
 
 ---
 
-*End of A1-08: Proper_Time_Fluctuation_Spectrum.md — 12 pieces, ~400+ lines each piece, ~4800+ lines total*

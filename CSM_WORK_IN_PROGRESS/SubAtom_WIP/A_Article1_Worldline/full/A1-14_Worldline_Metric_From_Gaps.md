@@ -1,8 +1,6 @@
 # A1-14_Worldline_Metric_From_Gaps — Complete Article
 ## Article: A1-14_Worldline_Metric_From_Gaps
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 ### 1.1 Proper Time as Worldline Parameter

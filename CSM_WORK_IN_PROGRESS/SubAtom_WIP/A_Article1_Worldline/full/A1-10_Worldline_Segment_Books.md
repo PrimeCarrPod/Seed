@@ -1,8 +1,6 @@
 # A1-10_Worldline_Segment_Books — Complete Article
 ## Article: A1-10_Worldline_Segment_Books
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 The total dataset:
@@ -827,7 +825,6 @@ The **3500 books = 3500 segments** identification is the **cornerstone** of the 
 *Note: Values are asymptotic estimates. Exact values require PrimeBookOne data access.*
 
 
-*End of A1-10: Worldline Segment Books — 3500 Books = 3500 Segments*
 *Total pieces: 12 | Target: ≥350 lines | Next: A1-11 Worldline Self-Intersection*
 
 ---

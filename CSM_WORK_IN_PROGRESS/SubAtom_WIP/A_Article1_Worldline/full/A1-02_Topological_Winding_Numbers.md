@@ -4,8 +4,6 @@
 
 **File:** A1-02_Topological_Winding_Numbers.md  
 **Article:** 1 of 9 — Prime Electron Worldline Topology  
-**Piece:** 01 of ~12 (30 lines each)  
-**Target:** ≥350 lines total  
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500  
 
 ---
@@ -33,8 +31,8 @@ For the discrete worldline with vertices at primes p_n and proper-time steps Δ�
 Q_N = (1/2π) Σ_{n=1}^N ΔQ_n
 
 where ΔQ_n is the topological charge accumulated at step n.
----
 
+---
 
 ## 2. PRIME GAPS AS WINDING SECTORS
 
@@ -62,8 +60,8 @@ Record gaps (maximal d_n for given p_n) mark where the winding number jumps by i
 | 20 | p=887 | ±10/πΛ | Large instanton |
 
 Each record gap corresponds to the worldline crossing a topological sector boundary.
----
 
+---
 
 ## 3. INSTANTON CHARGE FROM RECORD GAPS
 
@@ -95,11 +93,11 @@ In directory 0.0 (94,500 gaps), the record gaps occur at:
 
 Sum of record gap contributions in 0.0:
 
-I_0.0 = (1/πΛ) · (1 + 2 + 3 + 4 + 7 + 9 + 10 + 11 + 17 + ...) ≈ 64/πΛ
+I_0.0 = (1/πΛ) · (1 + 2 + 3 + 4 + 7 + 9 + 10 + 11 + 17) = 64/πΛ
 
-This is the total topological charge of the electron IR worldline segment.
+This is the total topological charge of the electron IR worldline segment. The sum includes all 9 record gaps in directory 0.0.
+
 ---
-
 
 ## 4. WINDING NUMBER SPECTRUM ACROSS DIRECTORIES
 
@@ -136,8 +134,8 @@ Q_book = Q_total / 3500
 For full corpus: Q_total ≈ 1000/πΛ → Q_book ≈ 0.29/πΛ
 
 Each book = one coherent topological sector of the worldline.
----
 
+---
 
 ## 5. GAUGE FIELD FROM WORLDLINE WINDING
 
@@ -166,8 +164,8 @@ Each record gap carries a quantized flux:
 Φ_n = ∮ A_μ dx^μ = ΔQ_n · 2π = d_n/Λ
 
 The flux is proportional to the prime gap — larger gaps = larger topological flux.
----
 
+---
 
 ## 6. SELF-INTERSECTION INDEX THEOREM
 
@@ -179,9 +177,13 @@ I(γ, γ) = Σ_{n<m} sign(γ(τ_n) - γ(τ_m)) · δ_{x_n, x_m}
 
 ### 6.2 Prime Arithmetic Progressions as Self-Intersections
 
-Self-intersections correspond to prime arithmetic progressions:
+Self-intersections correspond to prime arithmetic progressions — sequences of primes with common difference d:
 
-p_n = p_m + k · d  (modulo periodicity)
+p, p+d, p+2d, ...
+
+When three or more primes share the same gap d, the worldline revisits the same topological sector. The condition for self-intersection at gap d:
+
+p_n ≡ p_m (mod d) for n ≠ m
 
 The number of self-intersections up to prime index N:
 
@@ -202,8 +204,8 @@ The index equals the total winding number Q_total.
 In directory 0.0: 9 record gaps → 9 sign changes → Index = 9 (mod 2) = 1
 
 The electron worldline has odd topological index = 1 (mod 2), consistent with a single electron.
----
 
+---
 
 ## 7. CHERN-SIMONS TERM FROM PRIME GAPS
 
@@ -243,8 +245,8 @@ At directory boundaries, k takes integer values:
 | 3.0 | ~10^11 | 15 | 15 |
 
 The odd integers correspond to the electron's fermionic nature.
----
 
+---
 
 ## 8. ANOMALY INFLOW FROM GAP SEQUENCE
 
@@ -279,8 +281,8 @@ The electron worldline anomaly cancels via the anomaly inflow from the bulk (spa
 Σ_n d_n (mod 2) = 1 (odd number of twin primes per book)
 
 This odd parity ensures the electron is a single fermion, not a pair.
----
 
+---
 
 ## 9. WALL CROSSING FROM RECORD GAPS
 
@@ -319,8 +321,8 @@ The BPS spectrum builds up across record gaps:
 | 20 | +10 | +28 |
 
 The cumulative Ω grows — more BPS states at higher scales.
----
 
+---
 
 ## 10. TOPOLOGICAL QUANTUM FIELD THEORY
 
@@ -340,7 +342,11 @@ Z = Tr(exp(-βH)) = Σ_d exp(-β/(κ·d))
 
 At electron temperature β = 1/(k_B T) with T = m_e c^2/k_B:
 
-Z ≈ Σ_d exp(-d/2) ≈ 1 + e^{-1} + e^{-2} + e^{-3} + ... = 1/(1 - e^{-1}) ≈ 1.58
+Z = Σ_d exp(-β/(κ·d)) = Σ_d exp(-d/2)
+
+Computing the sum over physical gaps d ∈ {2,4,6,8,...}:
+
+Z = e^{-1} + e^{-2} + e^{-3} + e^{-4} + ... = e^{-1}/(1 - e^{-1}) = 1/(e - 1) ≈ 0.582
 
 ### 10.3 Topological Correlators
 
@@ -351,8 +357,8 @@ The winding number correlator:
 where τ_corr ~ κ · ξ (correlation length in gaps).
 
 Prime gap correlations determine the topological correlation length.
----
 
+---
 
 ## 11. KNOT THEORY FROM GAP SEQUENCE
 
@@ -366,9 +372,11 @@ The Jones polynomial V(t) for the worldline knot:
 
 V(t) = Σ_n a_n t^n
 
-where coefficients a_n are determined by gap statistics:
+where coefficients a_n are determined by gap pair correlations:
 
 a_n = Σ_{d_i + d_j = n} d_i d_j
+
+This convolution of the gap sequence with itself encodes the knot's crossing structure.
 
 ### 11.3 Alexander Polynomial
 
@@ -387,8 +395,8 @@ For directory 0.0, the Alexander polynomial degree equals the maximal gap (~72).
 - **HOMFLY polynomial:** Encodes the full gap correlation structure
 
 The unknot (trivial worldline) corresponds to a gap sequence with no record gaps — impossible for primes.
----
 
+---
 
 ## 12. SYNTHESIS: PRIME GAPS AS TOPOLOGICAL CHARGES
 
@@ -422,8 +430,4 @@ The record prime gaps ARE the topological winding numbers of the single electron
 ---
 
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500  
-**Total lines in A1-02:** ~400 lines across 12 pieces  
-
----
-
-*End of A1-02: Topological_Winding_Numbers — Ready for concatenation and zip.*
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-06 (Vertex Interactions), A1-28 (BPS States), A1-29 (Wall Crossing)

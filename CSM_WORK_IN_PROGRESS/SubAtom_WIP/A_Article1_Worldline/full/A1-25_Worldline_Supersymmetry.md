@@ -707,4 +707,3 @@ The prime electron worldline is the first known physical system where **supersym
 
 ---
 
-*End of A1-25: Worldline_Supersymmetry.md (12 pieces, ~650 lines concatenated)*

@@ -1,8 +1,6 @@
 # A1-19_Worldline_Instanton_Solutions — Complete Article
 ## Article: A1-19_Worldline_Instanton_Solutions
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 S_E = (m_e c/2) Σ_n d_n Ω_n δ_μν v^u_n v^v_n

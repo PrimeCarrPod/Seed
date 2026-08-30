@@ -476,4 +476,3 @@ The prime electron worldline is not a metaphor — it is a mathematically rigoro
 
 ---
 
-*End of A1-24: Worldline_Index_Theorem.md (12 pieces, ~650 lines concatenated)*

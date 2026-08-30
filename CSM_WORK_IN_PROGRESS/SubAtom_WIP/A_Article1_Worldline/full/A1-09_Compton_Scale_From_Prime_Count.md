@@ -1382,7 +1382,6 @@ The **next articles** (A1-10 to A1-40) develop the detailed mapping from gap sta
 
 ---
 
-*End of A1-09: Compton_Scale_From_Prime_Count.md — 12 pieces, ~400+ lines each piece, ~4800+ lines total*## 13. Synthesis: Compton Scale as the Prime Count Rosetta Stone
 
 ### 13.1 The Central Identity
 
@@ -1521,4 +1520,3 @@ The **Compton scale** $\kappa$ is the **Rosetta Stone** that translates the **ar
 
 ---
 
-*End of A1-09: Compton_Scale_From_Prime_Count.md*

@@ -1,8 +1,6 @@
 # A1-18_Worldline_Path_Integral — Complete Article
 ## Article: A1-18_Worldline_Path_Integral
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 

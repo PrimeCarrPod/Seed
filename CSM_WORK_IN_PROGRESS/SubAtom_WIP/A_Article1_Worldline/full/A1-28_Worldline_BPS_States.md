@@ -1,8 +1,6 @@
 # A1-28_Worldline_BPS_States — Complete Article
 ## Article: A1-28_Worldline_BPS_States
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 

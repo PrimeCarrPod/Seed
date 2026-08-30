@@ -1,8 +1,6 @@
 # A1-32_Worldline_Renyi_Entropies — Complete Article
 ## Article: A1-32_Worldline_Renyi_Entropies
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 

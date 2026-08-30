@@ -1,8 +1,6 @@
 # A1-17_Worldline_Hamiltonian — Complete Article
 ## Article: A1-17_Worldline_Hamiltonian
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 H = Σₙ Hₙ = −(mₑc³/2) Σₙ dₙ Ωₙ
