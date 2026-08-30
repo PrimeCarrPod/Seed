@@ -105,6 +105,30 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, program evaluation metrics, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, cybersecurity benefits quantification, domestic content requirements, references and authorities, cost-benefit analysis"}
         }
+    },
+    "act15": {
+        "name": "Clean Hydrogen Economy and Industrial Decarbonization Act of 2026",
+        "short_name": "CHEDIA",
+        "dir": "15-Clean-Hydrogen-Economy-Act",
+        "funding": "$55 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, hydrogen economy potential, program architecture, key provisions, economic projections, implementation timeline"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, hydrogen as industrial feedstock, decarbonization imperatives, global hydrogen competition"},
+            "03": {"name": "TITLE-I-HYDROGEN-PRODUCTION-HUBS", "title": "Title I — Hydrogen Production Hubs", "topic": "regional hydrogen hubs, electrolyzer deployment, green hydrogen production, blue hydrogen with carbon capture, hydrogen production tax credits"},
+            "04": {"name": "TITLE-II-HYDROGEN-INFRASTRUCTURE", "title": "Title II — Hydrogen Infrastructure and Distribution", "topic": "hydrogen pipeline network, storage facilities, liquefaction plants, transport corridors, port hydrogen terminals"},
+            "05": {"name": "TITLE-III-INDUSTRIAL-HYDROGEN-APPLICATIONS", "title": "Title III — Industrial Hydrogen Applications", "topic": "steel industry hydrogen direct reduction, ammonia production, petroleum refining, chemical manufacturing, cement industry hydrogen firing"},
+            "06": {"name": "TITLE-IV-HYDROGEN-TRANSPORTATION", "title": "Title IV — Hydrogen Transportation and Mobility", "topic": "fuel cell electric vehicles, hydrogen refueling stations, heavy-duty trucking, rail applications, maritime hydrogen fuel"},
+            "07": {"name": "TITLE-V-HYDROGEN-WORKFORCE", "title": "Title V — Hydrogen Workforce Development", "topic": "hydrogen safety training, technician certification, engineering programs, community college partnerships, apprenticeship programs"},
+            "08": {"name": "TITLE-VI-HYDROGEN-EXPORT-STRATEGY", "title": "Title VI — Hydrogen Export and International Markets", "topic": "hydrogen export terminals, international partnerships, ammonia as hydrogen carrier, global hydrogen trading framework"},
+            "09": {"name": "TITLE-VII-HYDROGEN-SAFETY-STANDARDS", "title": "Title VII — Hydrogen Safety and Standards Development", "topic": "hydrogen safety codes, leakage detection, materials compatibility, fire protection standards, regulatory harmonization"},
+            "10": {"name": "TITLE-VIII-HYDROGEN-RESEARCH", "title": "Title VIII — Hydrogen Research and Development", "topic": "advanced electrolysis, hydrogen storage materials, fuel cell durability, hydrogen embrittlement, next-generation production technologies"},
+            "11": {"name": "TITLE-IX-HYDROGEN-ENVIRONMENTAL", "title": "Title IX — Hydrogen Environmental and Siting Requirements", "topic": "water use for electrolysis, land use for production hubs, environmental justice considerations, lifecycle analysis, sustainability certification"},
+            "12": {"name": "TITLE-X-HYDROGEN-FINANCE", "title": "Title X — Hydrogen Finance and Risk Mitigation", "topic": "loan guarantee programs, hydrogen price insurance, offtake agreement frameworks, green hydrogen certification, market development"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, program evaluation metrics, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, hydrogen market projections, domestic content requirements, references and authorities, cost-benefit analysis"}
+        }
     }
 }
 
