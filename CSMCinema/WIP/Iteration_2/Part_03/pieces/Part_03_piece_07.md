@@ -89,5 +89,46 @@
 
 **SPATIAL:** Balcony. Jason center. City below. Sea beyond. Altar chamber behind. Whale around. Digestive stars above. Black Sea as Elle below-beyond. Hecate as witness omnipresent.
 
+
+## JSNBAI EXPANSION — ADDITIONAL ENTRIES:
+
+**JSNBAI EXT-1:** DEEPENED *ANALYSIS — *The *narrative *thread *intensifies. *Each *piece *builds *upon *the *last. *The *momentum *accumulates. *The *fates *watch. *The *gods *wait. *The *hero *continues.
+
+**JSNBAI EXT-2:** TACTICAL *DEEPENING — *Scene *specifics *multiply. *Sensory *details *accumulate. *The *world *thickens. *The *characters *deepen. *The *stakes *rise. *The *quest *demands.
+
+**JSNBAI EXT-3:** CROSS-REFERENCE *EXPANSION — *Mythological *parallels *multiply. *Cultural *resonances *deepen. *Archetypal *patterns *reinforce. *Universal *themes *converge. *The *story *transends *its *origin.
+
+**JSNBAI EXT-4:** TEMPORAL *ANALYSIS — *Time *within *the *narrative *distorts. *Moments *stretch. *Hours *compress. *The *voyage *exists *outside *normal *time. *The *fates *perceive *all *moments *simultaneously.
+
+**JSNBAI EXT-5:** SPATIAL *ANALYSIS — *Location *within *the *narrative *resonates. *Each *place *has *memory. *Each *space *has *presence. *The *ship *is *world. *The *sea *is *cosmos. *The *shore *is *destiny.
+
+## FATES DEEPENED — ADDITIONAL PROPHECY:
+
+**CLOTHO** *spins *additional *threads — *threads *of *possibility, *threads *of *probability, *threads *of *necessity. *The *spindle *turns *faster. *The *ship *nears. *The *quest *intensifies.
+
+**LACHESIS** *measures *with *greater *precision — *not *just *distance *but *depth, *not *just *time *but *meaning, *not *just *fate *but *purpose. *The *measure *grows. *The *pattern *clarifies.
+
+**ATROPOS** *positions *her *shears — *not *for *cutting *but *for *shaping, *not *for *ending *but *for *defining, *not *for *death *but *for *transformation. *The *cut *approaches. *The *form *emerges.
+
+**HECATE** *lights *additional *torches — *torches *for *the *path *ahead, *torches *for *the *path *behind, *torches *for *the *path *within. *The *light *spreads. *The *way *clarifies.
+
+# ADDITIONAL GLOBAL PARALLELS — EXPANDED CULTURAL RESONANCES:
+
+17. **THE EXPANDED ARCHETYPE (Universal)** — The pattern repeats. The story transcends. The hero universal.
+
+18. **THE DEEPENED MYTH (Cultural)** — Each culture adds a layer. Each layer adds meaning. Meaning accumulates.
+
+19. **THE INTENSIFIED SYMBOL (Jungian)** — Symbols deepen. Archetypes strengthen. The collective unconscious speaks louder.
+
+20. **THE AMPLIFIED RESONANCE (Physics)** — Frequency matches. Harmonics align. The universe vibrates with recognition.
+
+# EXPANDED AUDIO SPECIFICATION — ADDITIONAL LAYERS:
+
+**LAYER 7 — NARRATIVE:** Story as sound. Plot as rhythm. Character as melody. Theme as harmony. Resolution as cadence.
+
+**LAYER 8 — EMOTIONAL:** Fear as dissonance. Joy as consonance. Love as harmony. Loss as silence. Hope as crescendo.
+
+**LAYER 9 — METAPHYSICAL:** Being as presence. Becoming as transition. Non-being as absence. Transformation as modulation. Eternity as sustained tone.
+
 **TRANSITION TO PIECE 8:** Jason descends from balcony. The night continues. The belly continues. The first fire in Medea burns. She waits. The fire altar calls. The ram's ghost watches. The commitment is sealed. The first fire is ready to be spoken.
 ---

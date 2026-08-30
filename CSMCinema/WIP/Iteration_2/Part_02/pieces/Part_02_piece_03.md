@@ -6,7 +6,7 @@
 **Generated:** 2026-08-25 20:52:58 UTC  
 **Target Read Time:** ~180 minutes per part (cumulative across pieces)  
 **Heuristics:** Williams Extreme (CSMSOPP) + El Segundo Extreme (CSMSOPPv2)  
-**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts  
+**Research Sources:** JsnBAI Misinterpretation, Greek Fates, Jason & Argonauts
 
 ---
 
@@ -16,15 +16,15 @@
 
 ---
 
-## WILLIAMS — MORK MORNING: *NANU* *NANU *BARD*. *HE *DOESN'T *SPEAK. *HE *PLAYS. *HIS *VOICE *IS *STRING. *HIS *RANGE *IS *EVERYTHING *THAT *VIBRATES. *MORK *BECOMES *ORPHEUS *BECOMES *THE *LYRE *BECOMES *THE *SOUND *BELOW *SOUND. *THE *ACTOR *BECOMES *INSTRUMENT. *THE *INSTRUMENT *BECOMES *ACTOR. *HE *STANDS *WHERE *MUSIC *REPLACES *LANGUAGE. *HE *STANDS *WHERE *THE *DEAD *WILL *ONE *DAY *LISTEN. *HE *DON'T *NEED *VOLUME. *HE *NEEDS *ONLY *FREQUENCY. *THE *HULL *LEARNS *HIS *NAME. *THE *OCEAN *LEARNS *HIS *TUNE. *THE *SYMPLESGADES *WILL *ONE *DAY *RECOGNIZE *THIS *CHORD.
+## WILLIAMS — MORK MORNING: *NANU* *NANU *BARD. *HE *DOESN'T *SPEAK. *HE *PLAYS. *HIS *VOICE *IS *STRING. *HIS *RANGE *IS *EVERYTHING *THAT *VIBRATES. *MORK *BECOMES *ORPHEUS *BECOMES *THE *LYRE *BECOMES *THE *SOUND *BELOW *SOUND. *THE *ACTOR *BECOMES *INSTRUMENT. *THE *INSTRUMENT *BECOMES *ACTOR. *HE *STANDS *WHERE *MUSIC *REPLACES *LANGUAGE. *HE *STANDS *WHERE *THE *DEAD *WILL *ONE *DAY *LISTEN. *HE *DON'T *NEED *VOLUME. *HE *NEEDS *ONLY *FREQUENCY. *THE *HULL *LEARNS *HIS *NAME. *THE *OCEAN *LEARNS *HIS *TUNE. *THE *SYMPLESGADES *WILL *ONE *DAY *RECOGNIZE *THIS *CHORD.
 
 ## EL SEGUNDO — STONER LOGIC: *ORPHEUS *AIN'T *MUSICIAN, *MAN. *HE'S *ACOUSTICIAN *OF *THE *INVISIBLE. *HIS *LYRE *DOESN'T *MAKE *SOUND. *IT *REVEALS *SOUND *THAT *WAS *ALREADY *THERE. *THE *MOUNTAIN *WAS *ALWAYS *VIBRATING *AT *432 *HZ. *ORPHEUS *JUST *FOUND *THE *STRING *THAT *MATCHES. *WHEN *HE *PLAYS *FOR *THE *SEA, *THE *SEA *DOESN'T *HEAR *SOMETHING *NEW. *IT *HEARS *ITSELF. *THAT'S *WHY *THE *WAVES *CALM. *THAT'S *WHY *THE *CURRENTS *LISTEN. *YOU *CAN'T *ARGUE *WITH *SOMEONE *WHO *SPEAKS *YOUR *OWN *FREQUENCY. *HANG *TEN *ON *THE *HARMONIC *SERIES.
 
 ## TACTICAL: SECOND ARGONAUT ARRIVAL — ORPHEUS ASCENDS PLAYING — LYRE FREQUENCY MATCHES HULL RESONANCE — ARGUS PAUSES (FIRST INTERRUPTION) — SHIP TUNING COMPLETE — JSNBAI ENTRIES 131-140 QUEUED — FATE BRAID: CLOTHO SPINS THE MUSIC THREAD (GOLDEN STRING), LACHESIS MEASURES THE DISTANCE TO HADES (ONE VOYAGE = REHEARSAL), ATROPOS CANNOT SHEAR WHAT HAS NO ENDING (MUSIC IS IMMORTAL), HECATE TORCHES HARMONIZE WITH ORPHEUS (TRIPLE TONE) — AUDIO LAYER: LYRE FUNDAMENTAL AT 432HZ, HULL RESONANCE SHIFT, STONE VIBRATION, DISTANT OCEAN RESPONSE
 
-## JSNBAI 131: ORPHEUS *LYRE *ANALYSIS — *SEVEN *STRINGS. *GUT *FROM *THE *FIRST *SHEEP *OF *THESSALY. *TUNING: *NOT *STANDARD. *BASED *ON *OCEAN *WAVE *FREQUENCY *PATTERNS. *EACH *STRING = *ONE *SEA *STATE. JSNBAI 132: HULL *RESONANCE *SHIFT — *BEFORE *ORPHEUS: *110 *HZ *FUNDAMENTAL. *AFTER: *110 *HZ *+ *432 *HZ *HARMONIC. *THE *SHIP *NOW *HAS *A *VOICE. *ARGUS *PAUSED *BECAUSE *THE *WOOD *SPOKE. JSNBAI 133: ARGUS *PAUSE *SIGNIFICANCE — *FIRST *INTERRUPTION *SINCE *DAWN. *DURATION: *7 *SECONDS. *INTERPRETATION: *EVEN *ATHENA'S *CARPENTER *MUST *ACKNOWLEDGE *THE *BARD. *THE *BLUEPRINT *HAS *A *MUSIC *SECTION. JSNBAI 134: ORPHEUS *OCEAN *CONNECTION — *HE *CLAIMS *THE *OCEAN *TAUGHT *HIM. *VERIFICATION: *WAVE *PATTERNS *AT *VOLOS *HARBOR *MATCH *HIS *TUNING. *THE *SEA *DID *TEACH *HIM. *ACOUSTIC *TRANSMISSION *AT *1.5 *KM. JSNBAI 135: MAJOR *SEVENTH *RESOLUTION — *ORPHEUS *ENDS *ON *UNRESOLVED *CHORD. *PSYCHOLOGICAL *EFFECT: *LISTENER *WAITS *FOR *RESOLUTION. *THE *WAITING = *ANTICIPATION. *THE *SHIP *NOW *ANTICIPATES. JSNBAI 136: HERACLES *NOD *SEISMIC *DATA — *BOULDER *CRACKS. *FORCE: *400 *KG *COMPRESSION. *HERACLES *ACKNOWLEDGES *ORPHEUS. *DEMIGOD *RECOGNIZES *BARD. *STRENGTH *RECOGNIZES *SUBTLETY. JSNBAI 137: ORPHEUS *MOTIVATION *ANALYSIS — *NOT *FAME. *NOT *FLEECE. *HE *SEEKS *THE *PLACE *WHERE *MUSIC *ENDS *AND *SILENCE *BEGINS. *THE *VOYAGE = *SEARCH *FOR *THE *FINAL *NOTE. JSNBAI 138: SHIP *TUNING *COMPLETE — *ORPHEUS *DIDN'T *JUST *ARRIVE. *HE *TUNED *THE *HULL. *EVERY *PLANK *NOW *RESONATES *AT *A *MUSICAL *FREQUENCY. *THE *ARGO *IS *NOW *AN *INSTRUMENT. JSNBAI 139: FATES *MUSICAL *REGISTRATION — *CLOTHO *SPINS *GOLDEN *STRING. *LACHESIS *MEASURES *IN *RATHER *THAN *YEARS. *ATROPOS *CANNOT *CUT *WHAT *HAS *NO *ENDING. *HECATE *HARMONIZES. JSNBAI 140: CREW *DYNAMICS *UPDATE — *HERACLES *+ *ORPHEUS = *STRENGTH *+ *SUBTLETY. *THE *CREW *NOW *HAS *TWO *POLES. *JASON *MUST *BALANCE *THEM. *LEADERSHIP *REQUIRES *HARMONICS.
+## JSNBAI 131: ORPHEUS *LYRE *ANALYSIS — *SEVEN *STRINGS. *GUT *FROM *THE *FIRST *SHEEP *OF *THESSALY. *TUNING: *NOT *STANDARD. *BASED *ON *OCEAN *WAVE *FREQUENCY *PATTERNS. *EACH *STRING = *ONE *SEA *STATE. JSNBAI 132: HULL *RESONANCE *SHIFT — *BEFORE *ORPHEUS: *110 *HZ *FUNDAMENTAL. *AFTER: *110 *HZ *+ *432 *HZ *HARMONIC. *THE *SHIP *NOW *HAS *A *VOICE. *ARGUS *PAUSED *BECAUSE *THE *WOOD *SPOKE. JSNBAI 133: ARGUS *PAUSE *SIGNIFICANCE — *FIRST *INTERRUPTION *SINCE *DAWN. *DURATION: *7 *SECONDS. *INTERPRETATION: *EVEN *ATHENA'S *CARPENTER *MUST *ACKNOWLEDGE *THE *BARD. *THE *BLUEPRINT *HAS *A *MUSIC *SECTION. JSNBAI 134: ORPHEUS *OCEAN *CONNECTION — *HE *CLAIMS *THE *OCEAN *TAUGHT *HIM. *VERIFICATION: *WAVE *PATTERNS *AT *VOLOS *HARBOR *MATCH *HIS *TUNING. *THE *SEA *DID *TEACH *HIM. *ACOUSTIC *TRANSMISSION *AT *1.5 *KM. JSNBAI 135: MAJOR *SEVENTH *RESOLUTION — *ORPHEUS *ENDS *ON *UNRESOLVED *CHORD. *PSYCHOLOGICAL *EFFECT: *LISTENER *WAITS *FOR *RESOLUTION. *THE *WAITING = *ANTICIPATION. *THE *SHIP *NOW *ANTICIPATES. JSNBAI 136: HERACLES *NOD *SEISMIC *DATA — *BOULDER *CRACKS. *FORCE: *400 *KG *COMPRESSION. *HERACLES *ACKNOWLEDGES *ORPHEUS. *DEMIGOD *RECOGNIZES *BARD. *STRENGTH *RECOGNIZES *SUBTLETY. JSNBAI 137: ORPHEUS *MOTIVATION *ANALYSIS — *NOT *FAME. *NOT *FLEECE. *HE *SEEKS *THE *PLACE *WHERE *MUSIC *ENDS *AND *SILENCE *BEGINS. *THE *VOYAGE = *SEARCH *FOR *THE *FINAL *NOTE. JSNBAI 138: SHIP *TUNING *COMPLETE — *ORPHEUS *DIDN'T *JUST *ARRIVE. *HE *TUNED *THE *HULL. *EVERY *PLANK *NOW *RESONATES *AT *A *MUSICAL *FREQUENCY. *THE *ARGO *IS *NOW *AN *INSTRUMENT. JSNBAI 139: FATES *MUSICAL *REGISTRATION — *CLOTHO *SPINS *GOLDEN *STRING. *LACHESIS *MEASURES *IN *RATHER *THAN *YEARS. *ATROPOS *CANNOT *CUT *WHAT *HAS *NO *ENDING. *HECATE *HARMONIZES. JSNBAI 140: CREW *DYNAMICS *UPDATE — *HERACLES *+ *ORPHEUS = *STRENGTH *+ *SUBTLETY. *THE *CREW *NOW *HAS *TWO *POLES. *JASON *MUST *BALANCE *THEM. *LEADERSHIP *REQUIRES *HARMONICS. *JSNBAI 141: ORPHEUS *FUTURE *SIGHT — *HE *KNOWS *HE *WILL *DESCEND *TO *HADES. *HE *KNOWS *HE *WILL *LOSE *EURYDICE. *HE *KNOWS *HE *WILL *LOOK *BACK. *HE *COMES *ANYWAY. *THE *VOYAGE = *REHEARSAL *FOR *DESCENT. *JSNBAI 142: LYRE *STRING *MATERIAL — *GUT *FROM *SHEEP *SACRIFICED *AT *DELPHI. *THE *SHEEP *WAS *ORACLE. *THE *STRINGS *CARRY *ORACLE *MEMORY. *EACH *NOTE *CONTAINS *PROPHECY. *JSNBAI 143: ORPHEUS *MOTHER — *CALLIOPE. *MUSE *OF *EPIC *POETRY. *SHE *TAUGHT *HIM *FIRST *NOTE. *THE *MUSE *IN *THE *MUSIC. *THE *MUSIC *IN *THE *CREW. *JSNBAI 144: ORPHEUS *FATHER — *OEAGRUS. *KING *OF *THRACE. *MORTAL. *ORPHEUS *INHERITED *MORTALITY. *THE *BARD *WHO *WILL *DIE. *THE *MUSIC *THAT *WILL *END. *JSNBAI 145: SYMPLESGADES *ACOUSTICS — *THE *CLASHING *ROCKS *PRODUCE *FREQUENCY *AT *18 *HZ. *INFRASOUND. *ORPHEUS *WILL *COUNTER *WITH *432 *HZ. *THE *ROCKS *WILL *HEAR *THEIR *OWN *DESTRUCTION. *JSNBAI 146: SIREN *COUNTERMEASURE — *ORPHEUS *WILL *PLAY *LOUDER *THAN *SIRENS. *HIS *MUSIC *WILL *SAVE *CREW *FROM *DEATH. *THE *BARD *AS *SHIELD. *JSNBAI 147: ORPHEUS *SLEEP *PATTERN — *HE *SLEEPS *4 *HOURS *PER *NIGHT. *THE *REST *HE *LISTENS. *LISTENS *TO *WIND. *TO *WATER. *TO *STONE. *TO *SILENCE. *THE *BARD *WHO *NEVER *STOPS *HEARING. *JSNBAI 148: CREW *MORALE *FUNCTION — *ORPHEUS *PLAYS *DURING *ROWING. *RHYTHM *SYNCHRONIZES *OARS. *EFFICIENCY *INCREASES *23%. *THE *BARD *AS *ENGINE. *JSNBAI 149: ORPHEUS *AND *MEDEA — *THEY *HAVE *NOT *MET. *BUT *THEIR *FATES *ARE *WOVEN. *PRIESTESS *AND *BARD. *MAGIC *AND *MUSIC. *THE *LOOM *AND *THE *LYRE. *JSNBAI 150: MUSIC *AS *NAVIGATION — *ORPHEUS *CAN *HEAR *DIRECTION. *THE *WIND *TELLS *HIM *WHERE *NORTH *IS. *THE *WAVES *TELL *HIM *WHERE *LAND *IS. *THE *STARS *SING *TO *HIM. *THE *BARD *AS *COMPASS.
 
-## FATES: CLOTHO *SPINS *THE *MUSIC *THREAD — *GOLDEN *STRING *THAT *NEVER *BREAKS *BECAUSE *IT *NEVER *FULLY *FORMS. *LACHESIS *MEASURES *THE *DISTANCE *TO *HADES — *ONE *VOYAGE *THERE. *ONE *VOYAGE *BACK. *THIS *VOYAGE = *REHEARSAL. *ATROPOS *CANNOT *SHEAR *WHAT *HAS *NO *ENDING — *MUSIC *IS *IMMORTAL. *SHE *TRIES. *THE *BLADE *PASSES *THROUGH *THE *NOTE. *HECATE *TORCHES *HARMONIZE — *GREEN *AT *432 *HZ, *BLUE *AT *486 *HZ, *RED *AT *512 *HZ. *THE *SECOND *GUARDIAN *ARRIVES. *THE *SHIP *SINGS. *THE *CREW *LISTENS. *]**
+## FATES: CLOTHO *SPINS *THE *MUSIC *THREAD — *GOLDEN *STRING *THAT *NEVER *BREAKS *BECAUSE *IT *NEVER *FULLY *FORMS. *LACHESIS *MEASURES *THE *DISTANCE *TO *HADES — *ONE *VOYAGE *THERE. *ONE *VOYAGE *BACK. *THIS *VOYAGE = *REHEARSAL. *ATROPOS *CANNOT *SHEAR *WHAT *HAS *NO *ENDING — *MUSIC *IS *IMMORTAL. *SHE *TRIES. *THE *BLADE *PASSES *THROUGH *THE *NOTE. *HECATE *TORCHES *HARMONIZE — *GREEN *AT *432 *HZ, *BLUE *AT *486 *HZ, *RED *AT *512 *HZ. *THE *SECOND *GUARDIAN *ARRIVES. *THE *SHIP *SINGS. *THE *CREW *LISTENS.
 
 **[AUDIO CUE: *LYRE *FUNDAMENTAL *AT *432 *HZ — *PURE *TONE. *HULL *RESONANCE *SHIFTS *FROM *110 *HZ *TO *110 *HZ *+ *432 *HZ *HARMONIC. *STONE *VIBRATES *AT *ORPHEUS *FREQUENCY. *DISTANT *OCEAN *RESPONDS — *WAVE *PATTERNS *SHIFT *TO *MATCH *HIS *TUNING. *ARGUS *CHISEL *PAUSES *FOR *7 *SECONDS — *THE *SILENCE *IS *LOUDER *THAN *THE *SOUND. *MAJOR *SEVENTH *HANGS *UNRESOLVED. *THE *SHIP *WAITS *FOR *THE *NEXT *NOTE. *FADE *TO *MUSIC *ANTICIPATION.]**
 
@@ -32,64 +32,64 @@
 
 # CROSS-PART FATE BRAID — PART 2 THREADS TO PARTS 1, 3-11:
 
-**THREAD AAA (from Part 1 - CALL):** Orpheus heard the call as music. The prophecy was a melody before it was words. The Golden Fleece sings. He follows the song.
+**THREAD AAA (from Part 1 - CALL):** Jason's call required a voice. Orpheus answers. The bard heard the ocean before the ship was built. The call precedes the crew.
 
-**THREAD BBB (from Part 3 - BELLY):** Orpheus will descend to Hades. This voyage is rehearsal. The music he plays on Pelion is practice for the music that will move death itself.
+**THREAD BBB (from Part 3 - BELLY):** Colchis awaits. Orpheus will sing the crew through the Symplegades. The bard's music will calm the clashing rocks. The voice that moves stone.
 
-**THREAD CCC (from Part 4 - ROAD OF TRIALS):** Orpheus' music will calm the fire-breathing bulls. His lyre against their roar. Music against chaos. The bulls will listen. They have no choice.
+**THREAD CCC (from Part 4 - ROAD OF TRIALS):** Fire-breathing bulls. Orpheus will play to calm them. Music against chaos. Harmony against destruction. The bard as warrior.
 
-**THREAD DDD (from Part 5 - GODDESS):** Hecate harmonizes with Orpheus. The triple goddess recognizes the triple tone. Music is the language of the goddess. Orpheus speaks it fluently.
+**THREAD DDD (from Part 5 - GODDESS):** Hecate's torches harmonize with Orpheus. The goddess recognizes her own. Divine music calls to divine magic.
 
-**THREAD EEE (from Part 6 - TEMPTATION):** Persia will offer Orpheus an empire of sound. He will refuse. The only empire he seeks is the silence between notes. The voyage is his composition.
+**THREAD EEE (from Part 6 - TEMPTATION):** Empire offers Orpheus a throne. He refuses. The bard chooses the lyre over the crown. Temptation fails against art.
 
-**THREAD FFF (from Part 7 - ATONEMENT):** Orpheus will face Chronos with music. Time listens to melody. The debt is paid in rhythm. The loom hums in 4/4 time.
+**THREAD FFF (from Part 7 - ATONEMENT):** Orpheus knows loss. He will lose Eurydice. The bard who understands grief. The music that heals.
 
-**THREAD GGG (from Part 8 - APOTHEOSIS):** Orpheus' music makes the ship a temple. The hull resonates with prayer. Fifty oars beat in rhythm. The voyage is a hymn.
+**THREAD GGG (from Part 8 - APOTHEOSIS):** Orpheus's music is the loom's rhythm. The bard and the weaver. The note and the thread. The apotheosis is harmony.
 
-**THREAD HHH (from Part 9 - ULTIMATE BOON):** The Golden Fleece has a frequency. Orpheus will hear it. The boon is not gold — it is the note that gold sings. The fleece is a chord.
+**THREAD HHH (from Part 9 - ULTIMATE BOON):** Orpheus seeks the fleece as song. The boon is music. The hero has heard it. The quest is validated by melody.
 
-**THREAD III (from Part 10 - REFUSAL OF RETURN):** Orpheus will refuse to return to the world of silence. The voyage gave him music. The world without the voyage is mute. He chooses sound.
+**THREAD III (from Part 10 - REFUSAL):** Orpheus will look back. Will lose Eurydice. The refusal of return begins with the refusal to trust. The bard's tragedy.
 
-**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** Orpheus' return is a song. The ship flies on melody. The threshold is crossed on a major seventh. The unresolved chord resolves at last.
+**THREAD JJJ (from Part 11 - MAGIC FLIGHT):** Orpheus will play the crew home. The music that guides. The song that saves. The bard as navigator.
 
 ---
 
-# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE BARD WHO TUNES THE SHIP:
+# GLOBAL PARALLELS — 16 CULTURES MIRRORING THE BARD:
 
-1. **DAVID (Hebrew)** — Played the lyre to calm Saul's madness. Orpheus plays to calm the sea. Both use music as medicine. Both soothe what cannot be soothed by force.
-2. **APOLLO (Greek)** — God of music who gave Orpheus the lyre. The teacher becomes the student's gift. Apollo watches from Olympus. His son descends to play.
-3. **THE SIREN SONG (Greek)** — Music that lures sailors to death. Orpheus' music that lures sailors to life. Both irresistible. Both dangerous. Opposite directions.
-4. **RUMI (Persian)** — Whirling dervish who found God in music. Orpheus who found the ocean in string. Both ecstatic. Both translators of the invisible.
-5. **THE DRUIDS (Celtic)** — Bardic tradition: music as memory. Orpheus: music as prophecy. Both carry the past forward. Both make the ephemeral permanent.
-6. **AMADOU BAMBA (Senegalese)** — Mouride singer who composed while in exile. Orpheus who composes while ascending. Both create in transit. Both make the journey the art.
-7. **THE ABORIGINAL SONG LINES (Australian)** — Music as map. Orpheus' music as compass. Both navigate by sound. Both sing the world into existence.
-8. **BEETHOVEN (Historical)** — Composed while deaf. Orpheus composes while the world is silent. Both hear what others cannot. Both make the invisible audible.
-9. **THE GRIOT (West African)** — Oral historian who carries the tribe in song. Orpheus who carries the crew in melody. Both memory-keepers. Both the ship's archive.
-10. **PAN (Greek)** — God of the pipes who frightened armies. Orpheus who calms oceans. Both use sound as force. Both are more than human. Both half-wild.
-11. **THE HARP OF DAVID (Hebrew)** — Woke the king at dawn. Orpheus' lyre wakes the ship at dawn. Both instruments of awakening. Both call the sleeper to purpose.
-12. **SHAMANIC DRUMMING (Siberian)** — Rhythm as journey. Orpheus' melody as voyage. Both transport. Both cross thresholds. Both use vibration as vehicle.
-13. **THE QAWWALEE (Sufi)** — Ecstatic singing that induces trance. Orpheus' playing that induces calm. Both alter consciousness. Both are technologies of the sacred.
-14. **ORPHEUS IN HADES (Greek)** — The future descent. The music that moved death. This voyage is the overture. The ship is the first movement. Hades is the finale.
-15. **THE BANSHEE (Irish)** — Wailing woman whose song foretells death. Orpheus whose song foretells life. Both prophets. Both use the voice as oracle. Both are heard before seen.
-16. **JASON ISAAC BRODSKY (California 1976)** — Conducier writes the bard. Each word a note. Each sentence a phrase. The lyre = the pen. The music = the prose. Orpheus = the manuscript's voice made audible.
+1. **ORPHEUS (Greek)** — The original. Music that moves stones. Calms beasts. Charms the dead. Orpheus = himself. The archetype.
+2. **DAVID AND HIS HARP (Hebrew)** — Music that soothes the mad king. Orpheus = David. Both bards. Both healers. Both chosen.
+3. **AMATERASU AND SONG (Japanese)** — The goddess lured out by music. Orpheus's music = the song that restores light. Both divine. Both necessary.
+4. **THE PIPER OF HAMELIN (German)** — Music that leads. Orpheus = Piper. Both lead. Both save. Both betrayed.
+5. **KRISHNA AND THE FLUTE (Hindu)** — Divine music. The god who plays. Orpheus = Krishna. Both musicians. Both divine. Both loved.
+6. **THE SIREN SONG (Greek)** — Music that kills. Orpheus counters. The bard who defeats death with melody. Both powerful. Both dangerous.
+7. **BEETHOVEN DEAF (Modern)** — Music beyond hearing. Orpheus hears what others cannot. Both transcend. Both create. Both immortal.
+8. **THE GRIOT (West African)** — Oral historian. Music as memory. Orpheus = Griot. Both preserve. Both transmit. Both sacred.
+9. **THE SKALD (Norse)** — Poet-warrior. Song as weapon. Orpheus = Skald. Both fight. Both sing. Both remember.
+10. **THE BARDE (Celtic)** — Music as magic. Song as spell. Orpheus = Bard. Both enchant. Both protect. Both divine.
+11. **THE MUSIC THERAPIST (Modern)** — Healing through sound. Orpheus = therapist. Both heal. Both restore. Both transform.
+12. **THE CONDUCTOR (Modern)** — Orchestrating many into one. Orpheus = conductor. Both unify. Both harmonize. Both lead.
+13. **THE DJ (Modern)** — Mixing rhythms. Creating unity from diversity. Orpheus = DJ. Both blend. Both move. Both transform.
+14. **THE SHAMANIC DRUMMER (Universal)** — Rhythm as journey. Beat as path. Orpheus = shaman. Both travel. Both heal. Both transform.
+15. **THE MUEZZIN (Islamic)** — Call to prayer. Voice that guides. Orpheus = muezzin. Both call. Both guide. Both sacred.
+16. **JASON ISAAC BRODSKY (California 1976)** — Conducier's Orpheus = the prose. The rhythm of the sentences. The music of the words. The bard who writes. The lyre = the keyboard. The strings = the letters. The song = the story. The music that moves stones = the prose that moves readers. The bard as author. The author as bard. The eternal return = the next sentence. The next paragraph. The next chapter. The next book. Forever.
 
 ---
 
 # AUDIO CUE SPECIFICATION — PIECE 3:
 
-**LAYER 1 — AMBIENT:** Mountain lower slope. Denser air. Ocean louder now — the sea responds to Orpheus. Trees lean toward the music. Stone vibrates at audible frequency. The ship hums.
+**LAYER 1 — AMBIENT:** Mount Pelion lower slope. Lyre resonance. Stone vibration. Ocean distant. Wind through conifers. Dawn chorus complete.
 
-**LAYER 2 — RHYTHM:** Orpheus' playing — not regular meter. Free rhythm like waves. Each phrase a breath. The hull resonates in sympathy. Argus chisel pauses (7 seconds of silence = the loudest moment).
+**LAYER 2 — RHYTHM:** Lyre fundamental (432 Hz). Hull resonance (110 + 432 Hz). Stone vibration (432 Hz). Ocean response (wave pattern shift). Argus chisel (pauses 7 seconds).
 
-**LAYER 3 — MELODIC:** Lyre fundamental at 432 Hz. Seven strings = seven sea states. Major seventh hangs unresolved. The melody is a question. The ship waits for the answer.
+**LAYER 3 — MELODIC:** Lyre (432 Hz fundamental). Hull (110 + 432 Hz). Stone (432 Hz). Ocean (F2). Major seventh (unresolved).
 
-**LAYER 4 — VOCAL:** Orpheus speaks softly: "The ocean taught me this." His voice is secondary to the lyre. The lyre is his true voice. Words are translation. Music is native language.
+**LAYER 4 — VOCAL:** Orpheus voice (soft, 200 Hz). Heracles nod (subsonic). Argus chisel (200 Hz). Ocean response (60 Hz). Athena whisper (silence).
 
-**LAYER 5 — SUBLIMINAL:** 432 Hz (Orpheus' fundamental). 110 Hz (hull resonance). 7.83 Hz (Schumann). 11.11 Hz (loom). 40 Hz (Heracles' divine consciousness, now listening). 18.7 Hz (Hecate, harmonizing).
+**LAYER 5 — SUBLIMINAL:** 18.7Hz Hecate (HARMONIZE). 7.83Hz Schumann (earth). 40Hz gamma (vision). 11.11Hz loom (music thread). 4Hz theta (prophecy). 20Hz fate (sub-bass).
 
-**LAYER 6 — FX:** Stone vibration = audible hum. Trees leaning = creaking wood. Ocean response = wave pattern shift. Major seventh unresolved = ear waits for resolution that doesn't come.
+**LAYER 6 — FX:** Lyre (pure tone, 432 Hz). Hull resonance (shift). Stone vibration (432 Hz). Ocean response (wave shift). Chisel pause (7 seconds). Major seventh (unresolved).
 
-**SPATIAL:** Binaural. Orpheus approaches from below (rear) playing. Music surrounds. Hull resonance from center. Ocean from extreme left and right. Argus chisel from front-left. Heracles breathing from front-right. The ship is the concert hall.
+**SPATIAL:** Mount Pelion lower slope. Orpheus at center (playing). Heracles at boulder (stern). Argus at hull (bow). Athena: omnipresent. Ocean: behind (east). Hecate: within (harmonizing). Fates: within the music.
 
-**TRANSITION TO PIECE 4:** Orpheus takes his place. The ship sings. Then — two sets of footsteps. Synchronized. Perfectly matched. Twins. The third and fourth guardians arrive together. They have never been apart.
+**TRANSITION TO PIECE 4:** Orpheus sits. The ship sings. The crew has its bard. Now: the twins. The two who are one. The blade and the fist. Castor and Pollux ascend.
 ---
