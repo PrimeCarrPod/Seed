@@ -2937,7 +2937,7 @@ $$
 \tau_{\text{twin},\alpha} = \kappa \cdot 2 \cdot \alpha \text{ (for the $\alpha$-th twin prime)}
 $$
 
-Actually, the proper time of the $\alpha$-th twin prime is the cumulative sum up to that step.
+Note: the proper time of the $\alpha$-th twin prime is the cumulative sum up to that step.
 
 ### 91.2 Code Distance in Proper Time
 

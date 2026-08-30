@@ -498,7 +498,7 @@ Experiment: φ_s = (-0.4 ± 0.2)° ✅
 ΔΓ_s / Δm_s = (f_Bs² B_Bs / f_Bd² B_Bd) · (|V_ts|² / |V_td|²) · (m_s / m_d) · (phase space)
 ```
 
-From gaps: |V_ts|²/|V_td|² = ρ(16)/ρ(14) · (ρ(14)/ρ(8)) = 1/3 · 3/1 = 1? Wait.
+From gaps: |V_ts|²/|V_td|² = ρ(16)/ρ(14) · (ρ(14)/ρ(8)) = 1/3 · 3/1 = 1? Note: the
 
 |V_ts| = √(ρ(16)/ρ(14)) = √(1/3) = 0.577 (relative)
 |V_td| = √(ρ(8)/ρ(14))? No.

@@ -223,7 +223,7 @@ $$
 \tan \theta_{\text{LC}} = \frac{dx}{d\tau} = \frac{1}{\sqrt{\langle d_n \rangle}} \sim \frac{1}{\sqrt{\ln n}}
 $$
 
-Wait — this gives angle $\to 0$ as $n \to \infty$. Let's reconsider.
+Note: this gives angle $\to 0$ as $n \to \infty$. Let's reconsider.
 
 ### 9.2 Correct Light Cone Condition
 

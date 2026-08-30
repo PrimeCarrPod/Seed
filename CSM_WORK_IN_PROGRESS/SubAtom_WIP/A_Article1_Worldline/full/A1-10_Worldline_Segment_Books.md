@@ -432,7 +432,7 @@ Over 3500 books, the proper time step grows by factor:
 $$
 \frac{\bar{d}_{3500}}{\bar{d}_1} \approx \frac{\ln 3500}{\ln 1} \to \infty \text{ (formally)}
 $$
-Actually $\bar{d}_1 \sim \ln(2^{20}) \approx 13.8$, $\bar{d}_{3500} \sim \ln(3500 \times 2^{20}) \approx 22.1$ — **factor of ~1.6 growth**.
+Note: $\bar{d}_1 \sim \ln(2^{20}) \approx 13.8$, $\bar{d}_{3500} \sim \ln(3500 \times 2^{20}) \approx 22.1$ — **factor of ~1.6 growth**.
 
 This **60% increase in proper time step** over the 3500 segments is the **primordial expansion** from IR to UV.
 
