@@ -1,4 +1,3 @@
-# A1-31 Worldline_Entanglement_Entropy.md — Piece 01
 ## Introduction — Entanglement from Prime Gaps
 
 The entanglement entropy of the prime electron worldline quantifies the quantum correlations between proper-time segments. The 3500 books of PrimeBookOne (A1-10) correspond to 3500 worldline segments, each with its own gap sequence. The entanglement between these segments is determined by the prime gap correlations (A1-08).
@@ -31,7 +30,10 @@ $$S = \frac{1}{2} \log \det(2\pi e \Sigma_A)$$
 
 where $\Sigma_A$ is the restriction of $\Sigma$ to region A.
 
-**PrimeBookOne as entanglement data.** The 3.67 billion gap differences in PrimeBookOne provide the exact correlation functions $\langle d_n d_m \rangle$ for all scales. The 3500 books give 3500 entanglement entropy values $S(b)$ for partitions at book boundaries.# A1-31 Worldline_Entanglement_Entropy.md — Piece 02
+**PrimeBookOne as entanglement data.** The 3.67 billion gap differences in PrimeBookOne provide the exact correlation functions $\langle d_n d_m \rangle$ for all scales. The 3500 books give 3500 entanglement entropy values $S(b)$ for partitions at book boundaries
+
+---
+
 ## BPS Sector Entanglement Entropy S = log 78
 
 The BPS sector of the prime electron worldline consists of 78 singlet states $|\text{BPS}_k\rangle$ (A1-28). The entanglement entropy of this sector is a topological invariant.
@@ -67,7 +69,10 @@ The BPS reduced density matrix is $\rho_{\text{BPS}} = \text{Tr}_{\text{non-BPS}
 2. The number 78 is the Witten index $\Delta = 78$ (A1-24, A1-28)
 3. $\Delta$ is invariant under all continuous deformations (A1-30)
 
-Thus $S_{\text{BPS}} = \log 78$ is constant in the physical chamber and cannot change without a phase transition (wall crossing, A1-29).# A1-31 Worldline_Entanglement_Entropy.md — Piece 03
+Thus $S_{\text{BPS}} = \log 78$ is constant in the physical chamber and cannot change without a phase transition (wall crossing, A1-29)
+
+---
+
 ## Covariance Matrix from Gap Correlations (A1-08)
 
 The proper-time fluctuation spectrum (A1-08) provides the two-point correlation function of prime gaps, which determines the covariance matrix for the Gaussian state entanglement.
@@ -110,7 +115,10 @@ $$S(b) \sim 2^{20} \cdot \frac{1}{2} \log \log p_b$$
 
 This is a slow logarithmic growth of entanglement with prime index.
 
-**PrimeBookOne verification.** The 3.67 billion gap differences provide the exact correlation matrix $C_{nm}$. The determinant $\det \Sigma$ can be computed numerically and matches the theoretical formula to within statistical fluctuations.# A1-31 Worldline_Entanglement_Entropy.md — Piece 04
+**PrimeBookOne verification.** The 3.67 billion gap differences provide the exact correlation matrix $C_{nm}$. The determinant $\det \Sigma$ can be computed numerically and matches the theoretical formula to within statistical fluctuations
+
+---
+
 ## Gaussian State Entanglement Formula
 
 The worldline state constructed from prime gaps is approximately Gaussian because the gap fluctuations are sums of many independent contributions (Central Limit Theorem). The exact entanglement formula for Gaussian states gives the entanglement entropy in terms of the covariance matrix.
@@ -147,7 +155,10 @@ The BPS sector corresponds to the zero modes $\omega_k = 0$, giving $\nu = \inft
 
 $$S = \int_0^\Lambda \frac{d\omega}{2\pi} \rho(\omega) \left[ \left(\nu(\omega) + \frac{1}{2}\right) \log\left(\nu(\omega) + \frac{1}{2}\right) - \left(\nu(\omega) - \frac{1}{2}\right) \log\left(\nu(\omega) - \frac{1}{2}\right) \right]$$
 
-where $\rho(\omega)$ is the density of states, which is related to the prime gap distribution.# A1-31 Worldline_Entanglement_Entropy.md — Piece 05
+where $\rho(\omega)$ is the density of states, which is related to the prime gap distribution
+
+---
+
 ## Entanglement Phase Transitions at Walls (A1-29)
 
 The entanglement entropy of the worldline undergoes phase transitions at walls of marginal stability (A1-29). These transitions correspond to changes in the BPS spectrum.
@@ -194,7 +205,10 @@ This smoothness is equivalent to the Riemann Hypothesis (A1-30). If RH is violat
 
 $$S(b) = \log 78 + \delta S(b)$$
 
-where $\delta S(b)$ are small fluctuations from gap correlations. The PrimeBookOne data shows $\delta S(b) \ll 1$ for all $b$, confirming the absence of phase transitions.# A1-31 Worldline_Entanglement_Entropy.md — Piece 06
+where $\delta S(b)$ are small fluctuations from gap correlations. The PrimeBookOne data shows $\delta S(b) \ll 1$ for all $b$, confirming the absence of phase transitions
+
+---
+
 ## Renyi Entropies S_n from Gap Ratios (A1-32)
 
 The Renyi entropies $S_n = \frac{1}{1-n} \log \text{Tr}(\rho^n)$ provide a one-parameter family of entanglement measures. For the prime electron worldline, the Renyi entropies are determined by the prime gap ratios.
@@ -239,7 +253,10 @@ The non-BPS states have $E > 39$, so their contribution is suppressed at low tem
 
 These statistics determine the Renyi spectrum $S_n$.
 
-**Connection to A1-32.** The Renyi entropies are the subject of A1-32. They provide a finer probe of the entanglement structure than the von Neumann entropy alone.# A1-31 Worldline_Entanglement_Entropy.md — Piece 07
+**Connection to A1-32.** The Renyi entropies are the subject of A1-32. They provide a finer probe of the entanglement structure than the von Neumann entropy alone
+
+---
+
 ## Modular Hamiltonian K = -log ρ (A1-33)
 
 The modular Hamiltonian $K = -\log \rho$ generates the modular flow on the worldline Hilbert space. Its spectrum and flow are directly related to the entanglement entropy and RG flow.
@@ -296,7 +313,10 @@ $$\langle K \rangle = \beta \left( \frac{\hbar}{2\kappa} \sum_n \langle d_n d_{n
 
 The gap correlations $\langle d_n d_{n+1} \rangle$ (A1-08) determine the modular energy. The RH bound ensures $\langle K \rangle$ is well-behaved.
 
-**Connection to A1-33.** The modular Hamiltonian is the subject of A1-33. Its flow is the RG flow, and its spectrum encodes the entanglement structure.# A1-31 Worldline_Entanglement_Entropy.md — Piece 08
+**Connection to A1-33.** The modular Hamiltonian is the subject of A1-33. Its flow is the RG flow, and its spectrum encodes the entanglement structure
+
+---
+
 ## Relative Entropy and Stability (A1-34)
 
 The relative entropy $S(\rho||\sigma) = \text{Tr}(\rho \log \rho - \rho \log \sigma)$ measures the distinguishability between the physical state $\rho$ and a reference state $\sigma$. For the prime electron worldline, the relative entropy quantifies the distance to instability.
@@ -345,7 +365,10 @@ $$S(b) < 10^{-6} \quad \text{for all } b = 1,\dots,3500$$
 
 confirming the physical state is extremely close to the stable reference state.
 
-**Connection to A1-34.** The relative entropy is the subject of A1-34. It provides a quantitative measure of stability.# A1-31 Worldline_Entanglement_Entropy.md — Piece 09
+**Connection to A1-34.** The relative entropy is the subject of A1-34. It provides a quantitative measure of stability
+
+---
+
 ## QEC Entanglement and Twin Primes (A1-35)
 
 The quantum error correcting code structure (A1-35) on the 256-dim Hilbert space has entanglement properties determined by the twin prime gaps. The BPS states form the logical qubit subspace.
@@ -390,7 +413,10 @@ $$\frac{d}{dt} S_{\text{QEC}} \sim m_{3/2} \sim 10^{-8} \frac{m_e c^2}{\hbar}$$
 
 The entanglement decays on a timescale $T_2 \sim 10^{-4} \text{ s}$, which is long on the proper-time scale $\kappa \sim 10^{-21} \text{ s}$.
 
-**Connection to A1-35.** The QEC entanglement is the subject of A1-35. The twin prime gaps are the stabilizers, and the BPS states are the logical states.# A1-31 Worldline_Entanglement_Entropy.md — Piece 10
+**Connection to A1-35.** The QEC entanglement is the subject of A1-35. The twin prime gaps are the stabilizers, and the BPS states are the logical states
+
+---
+
 ## Entanglement in Decoupling Limits (A1-36)
 
 The heavy BPS states (large record gaps) decouple in the IR limit as an effective field theory (A1-36). The entanglement entropy splits into light and heavy sector contributions.
@@ -433,7 +459,10 @@ $$S(b) = \log(\text{number of active BPS states at book } b)$$
 
 which grows as more record gaps are included.
 
-**Connection to A1-36.** The decoupling limits and EFT matching are the subject of A1-36. The entanglement entropy tracks the number of active degrees of freedom.# A1-31 Worldline_Entanglement_Entropy.md — Piece 11
+**Connection to A1-36.** The decoupling limits and EFT matching are the subject of A1-36. The entanglement entropy tracks the number of active degrees of freedom
+
+---
+
 ## Holographic Entanglement and AdS_2 (A1-38)
 
 The prime electron worldline has a holographic dual: an AdS$_2$ gravity theory with CFT$_1$ boundary (A1-38). The entanglement entropy is computed by the Ryu-Takayanagi formula in the bulk.
@@ -478,7 +507,10 @@ Matching to the BPS entropy $\log 78$ fixes the Newton constant $G_N$.
 
 **PrimeBookOne as boundary data.** The 3.67 billion gap differences provide the boundary stress tensor $\langle T_{\tau\tau} \rangle$ which determines the bulk geometry. The 3500 books correspond to 3500 boundary time steps.
 
-**Connection to A1-38.** The holographic entanglement is the subject of A1-38. The 78 BPS states are the 78 boundary operators, and the RT formula computes their entanglement entropy from the bulk geometry.# A1-31 Worldline_Entanglement_Entropy.md — Piece 12
+**Connection to A1-38.** The holographic entanglement is the subject of A1-38. The 78 BPS states are the 78 boundary operators, and the RT formula computes their entanglement entropy from the bulk geometry
+
+---
+
 ## Synthesis — Complete Entanglement & A1-32 through A1-40 Connections
 
 The entanglement structure of the prime electron worldline is now completely determined. We have established:

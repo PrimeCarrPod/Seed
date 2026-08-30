@@ -1,4 +1,3 @@
-# A1-36 Worldline_Decoupling_Limits.md — Piece 01
 ## Introduction — Wilsonian RG from Prime Gap Scales
 
 The Wilsonian renormalization group finds a rigorous realization in the prime electron worldline through the natural scale hierarchy of prime gaps. The gap $d_n = p_{n+1} - p_n$ acts as the RG scale parameter.
@@ -21,7 +20,6 @@ $$H_{\text{heavy}} = \frac{\hbar}{\kappa} \sum_{d>16} \frac{1}{d} \sum_{n: d_n=d
 
 **No free parameters.** All couplings ($\kappa$, $\hbar$, gap multiplicities) are fixed by prime gap statistics. The RG flow is uniquely determined.
 
-(End of file - 35 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 02
 ## Light Sector Effective Theory — UV Gaps (d < 16)
 
 The light sector contains the seven small even gaps $d \in \{2, 4, 6, 8, 10, 12, 14\}$. This is the UV regime with high gap multiplicities.
@@ -53,7 +51,6 @@ This dominates the total entropy for high temperatures (UV).
 $$S_{\text{eff,light}}[d_n] = \sum_{d<16} \frac{m_d}{2} \log\left(\frac{d}{\Lambda}\right) + \text{interactions}$$
 where $\Lambda = 16$ is the RG cutoff.
 
-(End of file - 35 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 03
 ## Heavy Sector Effective Theory — IR Gaps (d > 16)
 
 The heavy sector contains all gaps $d > 16$, including the record gaps that define the 78 BPS states. This is the IR regime with topological protection.
@@ -86,7 +83,6 @@ The $\log 78$ term is the topological BPS contribution.
 $$S_{\text{eff,heavy}}[d_n] = S_{\text{BPS}} + \sum_{d>16} \frac{m_d}{2} \log\left(\frac{\Lambda}{d}\right) + \text{interactions}$$
 The BPS term is RG invariant.
 
-(End of file - 35 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 04
 ## Matching at the Self-Dual Point d = 16
 
 The self-dual point $d=16$ (A1-35, Piece 10) is where light and heavy sectors meet. Matching conditions ensure continuity of physics across the RG boundary.
@@ -113,7 +109,6 @@ At $d=16$, $S_{\text{int}} = 0$ by decoupling (A1-34). The entropies match conti
 
 **PrimeBookOne matching.** The 3500×3500 syndrome matrix (A1-35, Piece 11) block-diagonalizes at book index corresponding to $d=16$. The matching condition is that off-diagonal blocks are zero.
 
-(End of file - 34 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 05
 ## RG Flow Equations — Beta Functions for Gap Scales
 
 The RG flow of gap scales is governed by beta functions derived from the gap distribution statistics. The flow describes how effective gap values change with the RG scale $\mu$.
@@ -151,7 +146,6 @@ Small gaps have large anomalous dimensions (UV dominant); large gaps have small 
 
 **PrimeBookOne flow data.** The 3500 books give discrete RG scales $\mu_b = p_b$. The flow of observables across books maps out the RG trajectory.
 
-(End of file - 35 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 06
 ## BPS Zero as RG Invariant — Protected Sector
 
 The BPS sector's zero relative entropy (A1-34, A1-35) is an RG invariant, protected by the index theorem and topological charge.
@@ -181,7 +175,6 @@ $$\beta_{S_{\text{BPS}}} = \mu \frac{d}{d\mu} S(\rho_{\text{BPS}}||\sigma_{\text
 
 **PrimeBookOne BPS blocks.** The 3500×3500 syndrome matrix (A1-35, Piece 11) has BPS blocks that are exactly zero for all books. Under RG (book index flow), these blocks remain zero.
 
-(End of file - 32 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 07
 ## PrimeBookOne RG Flow — 3500 Books Under Scale
 
 The 3500 books of PrimeBookOne provide a discrete set of RG scales. The RG flow across books reveals the scale dependence of all worldline observables.
@@ -208,7 +201,6 @@ Under RG flow $b \to b+1$, the light block shrinks, heavy block grows. At the tr
 
 **Scaling collapse.** Plotting $\mathcal{S}_{bb'}$ vs $|b-b'|/b$ shows scaling collapse, confirming the RG fixed point at $d=16$.
 
-(End of file - 35 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 08
 ## Decoupling and Operator Product Expansion
 
 The operator product expansion (OPE) for gap operators realizes the light/heavy decoupling algebraically. The OPE coefficients are determined by gap statistics.
@@ -243,7 +235,6 @@ The ratio operator is marginal at $d=16$ (ratio $\to 1$ for adjacent gaps of sim
 
 **PrimeBookOne OPE data.** The 3500 books give the OPE coefficients $C_{dd'}^k(r)$ empirically. The vanishing of light-heavy coefficients is verified in the data.
 
-(End of file - 33 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 09
 ## Effective Action and Running Couplings
 
 The Wilsonian effective action for the prime electron worldline captures the running of couplings under gap scale RG flow.
@@ -276,7 +267,6 @@ At $\mu=16$, $c(16) = 78$ (the BPS count, A1-24). The UV value $c_{\text{UV}} \s
 
 **PrimeBookOne coupling data.** The 3500 books give the running couplings $\kappa(b)$, $\hbar(b)$, $\beta(b)$ as functions of book index. The data shows scaling collapse at $b \sim b_{16}$ (book where $d=16$ appears).
 
-(End of file - 32 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 10
 ## RG and Wall Crossing — Flow Across Chambers
 
 Wall crossing (A1-29) represents boundaries in the space of stability conditions. The RG flow behaves differently in different chambers.
@@ -303,7 +293,6 @@ The RG flow cannot cross a wall; it terminates or reflects.
 
 **Duality and walls.** The IR/UV duality (A1-26, A1-35) maps walls to walls. A wall at $d_W$ in UV maps to a wall at $256/d_W$ in IR. The self-dual wall is at $d=16$ (which is not a physical wall).
 
-(End of file - 33 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 11
 ## Decoupling and QEC — Code Concatenation RG
 
 The light/heavy code concatenation from A1-35 (Piece 09) has a natural RG interpretation: the RG flow generates the code hierarchy.
@@ -336,7 +325,6 @@ The IR code (BPS) has zero rate in the infinite volume limit, but finite distanc
 
 **PrimeBookOne QEC RG.** The 3500 books give the discrete RG trajectory of the QEC code. The syndrome matrix at each book index is the code at that scale.
 
-(End of file - 32 lines)# A1-36 Worldline_Decoupling_Limits.md — Piece 12
 ## Synthesis — Complete Decoupling & A1-37 through A1-40
 
 This piece synthesizes the decoupling limits framework and previews the remaining articles A1-37 through A1-40.
@@ -383,4 +371,4 @@ This identifies $d=16$ with the Planck scale in the emergent spacetime picture.
 - Experimental: prime gap simulator as quantum RG machine
 - Extension to higher SUSY from gap tuples
 
-(End of file - 50 lines)
+

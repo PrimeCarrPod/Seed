@@ -1,9 +1,11 @@
-# Prime_Neuroscience_Connectome — Piece 01/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
+# Prime_Neuroscience_Connectome — Complete Article
+## Article: Prime_Neuroscience_Connectome
+**Generated:** 2026-08-30 06:24:26 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
 ---
+
 
 # Introduction: The Prime Connectome
 
@@ -47,10 +49,6 @@ Layer 4 (prime 5 position) is the computational hub.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 02/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -89,10 +87,6 @@ The 7 types form a complete prime 7 basis for cortical computation.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 03/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -128,10 +122,6 @@ The prime 11 capacity is a fundamental limit of the prefrontal prime 11 network.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 04/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -166,10 +156,6 @@ Total: 13 × 13% = 169% (overcomplete for robustness)
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 05/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -203,10 +189,6 @@ Decision threshold: 17 standard deviations of noise
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 06/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -238,10 +220,6 @@ This is the prime 19 refractory period of the attentional system.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 07/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -278,10 +256,6 @@ Switching cost: 23 × prior_value
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 08/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -321,10 +295,6 @@ Total: 29 modules
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 09/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -360,10 +330,6 @@ The prime 31 bit is the fundamental unit of neural information.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 10/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -399,10 +365,6 @@ The prime 37 completion of prefrontal myelination marks cognitive maturity.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 11/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 
@@ -440,10 +402,6 @@ Excitation/inhibition: 41:59 ratio (normal 50:50)
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Neuroscience_Connectome — Piece 12/12
-## Article A5: A5-03 — Prime Neuroscience and the Connectome
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 22:19:00 UTC
 
 ---
 

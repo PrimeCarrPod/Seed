@@ -6,10 +6,6 @@
 
 ---
 
-# Synthesis_Hilbert_Space — Piece 01/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 00:35:12 UTC
 
 ---
 
@@ -46,12 +42,7 @@ $$E_{m,n} = \sqrt{\frac{d_m d_n}{d_m + d_n}} (|m\rangle\langle n| + |n\rangle\la
 These operators form a complete $C^*$-algebra isomorphic to $M_{256}(\mathbb{C})^{\oplus M}$.
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 02/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 00:35:18 UTC
 
 ---
 
@@ -90,12 +81,7 @@ $$\text{Tr}(\Pi_{g_1,g_2}(r) \rho) = \frac{C(g_1,g_2) x}{(\log x)^2} \cdot f(r)$
 where $f(r)$ is the gap correlation function decaying as $r^{-1}$ for correlated gaps.
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 03/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 00:35:24 UTC
 
 ---
 
@@ -132,12 +118,7 @@ where tangle $\tau_{X|Y} = \max\{0, \lambda_1 - \lambda_2 - \lambda_3 - \lambda_
 Prime gap parity constraints ($d_n$ even for $n>1$) enforce monogamy automatically.
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 04/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 00:35:30 UTC
 
 ---
 
@@ -175,12 +156,7 @@ $$p_L \sim \left(\frac{p}{p_{\text{th}}}\right)^{(d+1)/2} = \left(\frac{p}{p_{\t
 This provides a fundamental limit on quantum computation derived from prime distribution.
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 05/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 00:35:36 UTC
 
 ---
 
@@ -214,12 +190,7 @@ Gap-native neural networks (A3-31):
 Training uses gap-scaled Adam: $\alpha_t = \alpha_0 / \sqrt{d_t}$.
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 06/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 00:35:42 UTC
 
 ---
 
@@ -256,12 +227,7 @@ $$\text{Cost}(i \to j) = -\log C(d_i, d_j)$$
 $$\text{Attest}(\text{job}) = \text{Hash}(\{d_n\}_{\text{job}}) \cdot \text{Sign}_{\text{PKI}}(d_{\text{root}})$$
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 07/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 00:35:48 UTC
 
 ---
 
@@ -298,12 +264,7 @@ $$\frac{\delta J}{\delta u_n(t)} = -\frac{2}{\kappa} \text{Im}\langle \chi(t) | 
 Gap-constrained control landscape has no traps due to convexity of $1/d^2$ for $d \in [2,254]$.
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 08/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 00:35:54 UTC
 
 ---
 
@@ -347,12 +308,7 @@ Observability (A3-35): Gap telemetry as first-class observable:
 $$\text{Metric}(t) = \frac{1}{N} \sum_n f(d_n(t)) \quad \text{for any } f: \mathbb{N} \to \mathbb{R}$$
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 09/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 00:36:00 UTC
 
 ---
 
@@ -394,12 +350,7 @@ Scaling laws (A3-38):
 $$\text{Performance}(N) \sim N^{\alpha} (\log N)^{-\beta}, \quad \alpha = \frac{\log 256}{\log \langle d \rangle}, \quad \beta = 2$$
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 10/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 00:36:06 UTC
 
 ---
 
@@ -446,12 +397,7 @@ with $G = \kappa^2 / \hbar$ and $T_{\mu\nu}$ from gap stress-energy.
 | Directory 4.0 deployment | 2029-Q1 | 16-bit gaps operational |
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 11/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 00:36:12 UTC
 
 ---
 
@@ -494,12 +440,7 @@ $$\text{Gap Class } \mathcal{C}_g \leftrightarrow \text{Particle } P_g$$
 **Proof:** By construction across A3-23 through A3-39. Each layer provides polynomial overhead. $\square$
 
 ---
----
 
-# Synthesis_Hilbert_Space — Piece 12/12
-## Article 3: A3-40 — Synthesis_Hilbert_Space
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 00:36:18 UTC
 
 ---
 

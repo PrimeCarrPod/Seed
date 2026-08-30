@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 01/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -36,10 +32,6 @@ The **Gap-Indexed Compute Graph (GICG)** represents an entire HPC application as
 **Federation Integration:** The GICG plugs into A3-23's Federation Topology (gap-indexed node placement), A3-24's Security (gap-attested execution), A3-25's Economics (gap-priced compute), A3-26's ML (gap-feature scheduling), A3-27's Edge (3.0 directory as edge tier), A3-28's Multi-Tenant (gap-index ranges as isolation), A3-29's DR (gap-attested checkpoint), A3-30's Compliance (gap-constraint audit), A3-31's AI (gap-native workloads).
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 02/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -80,10 +72,6 @@ Tenant isolation enforced via disjoint gap-index ranges. Cross-tenant communicat
 **Theorem 32.2 (GA-MPI Deadlock Freedom):** GA-MPI collectives on gap-difference MST are deadlock-free for any connected gap-index subgraph.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 03/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -136,10 +124,6 @@ GOS integrates with:
 **Theorem 32.3 (GPLS Optimality):** For series-parallel GATGs, GPLS achieves makespan within (2 - 1/m) of optimal where m = number of gap-index strata (m=3 for CPU/GPU/QPU).
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 04/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -186,10 +170,6 @@ Sparsity pattern from record gap indices: row i has nonzeros at columns i ± d_r
 **Theorem 32.4 (GapMark Completeness):** The GapMark Suite spans the computational basis of the 8-bit Hilbert space: any linear operator on ℂ²⁵⁶ can be expressed as a linear combination of GapMark kernel matrices.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 05/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -240,10 +220,6 @@ The prime gap sequence induces a 2D lattice via modulo-6 classes (d_n mod 6 ∈ 
 **Theorem 32.5 (Gap-TN Contraction Completeness):** Any tensor network contraction on ≤ 256 bond dimension has an equivalent Gap-TN contraction with ≤ 2× FLOP overhead and exact gap-attestation preservation.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 06/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -304,10 +280,6 @@ DVFS policy: target frequency f_target = f_max × (d_min / d_current) where d_mi
 - **A3-31 AI:** Gap-native AI accelerator scheduling
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 07/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -368,10 +340,6 @@ SpMV, SpMM, SpGEMM with sparsity pattern from gap-difference graph (Piece 02). G
 **Theorem 32.7 (Gap-Numerics Reproducibility):** For any input, GapBLAS/GapLAPACK/GapFFT produce bitwise-identical results across all IEEE-754 compliant hardware, with gap-attestation proof.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 08/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -431,10 +399,6 @@ Gap-normalized metrics: metric_gap = metric_raw / π(n) where π(n) = local prim
 **Theorem 32.8 (GapProf Overhead Bound):** Gap-indexed sampling at record-gap intervals adds ≤ 1% runtime overhead, with statistical error O(1/√(π(x)·T)) where T = total gap-index range sampled.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 09/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -498,10 +462,6 @@ For QPU faults: **Gap-QEC Repair** uses A3-11 quantum error correction with gap-
 **Theorem 32.9 (Gap-CR Optimality):** For fault rate λ failures/gap-index, Gap-CR with L1-L4 levels achieves minimum expected recovery time E[T_recovery] = O(λ⁻¹ log λ⁻¹) among all multi-level checkpointing schemes with gap-attestation.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 10/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -617,10 +577,6 @@ q.submit([&](handler& h) {
 **Theorem 32.10 (Gap-Language Completeness):** Any program expressible in C/C++/Fortran/Python + MPI + OpenMP + CUDA/HIP + SYCL + OpenQASM has a semantically equivalent Gap-Language representation with gap-attestation preservation.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 11/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 
@@ -692,10 +648,6 @@ Premiums priced by **gap-actuarial tables** derived from PrimeBookOne gap statis
 **Theorem 32.11 (Gap-Economic Equilibrium):** The GCM/GSM/GNM markets clear at equilibrium prices p* where p*_resource ∝ d_n / κ × (1 + scarcity_factor), with scarcity_factor derived from real-time gap-index demand vs. supply.
 ---
 
-# Quantum_Federation_HPC_Prime_Gaps — Piece 12/12
-## Article 3: A3-32 — Quantum Federation HPC Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-24 17:24:32 UTC
 
 ---
 

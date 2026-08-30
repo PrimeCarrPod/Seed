@@ -6,10 +6,6 @@
 
 ---
 
-# Strong_Coupling_Gap_Records — Piece 01/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -87,12 +83,7 @@ The diagonal gaps (R→R, G→G, B→B) correspond to the two Cartan gluons (λ�
 The density of each channel is ρ_c/8. The total color gap density is the sum over all eight channels, giving the factor of 8 in the gluon contribution to the beta function.
 
 ---
----
 
-# Strong_Coupling_Gap_Records — Piece 02/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -218,10 +209,6 @@ where V_d(r) = (σ_d/π) r for large r, and the string tension σ = Σ_d σ_d ρ
 The string tension σ is determined by the color gap density at the confinement scale: σ ~ κ² ρ_c(Λ_QCD) ~ (200 MeV)². □
 ---
 
-# Strong_Coupling_Gap_Records — Piece 03/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -340,12 +327,7 @@ V(r) = −C_F α_s/r + σ r + V_0
 with C_F = 4/3, σ = (440 MeV)², and α_s from the color gap density.
 
 ---
----
 
-# Strong_Coupling_Gap_Records — Piece 04/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -478,10 +460,6 @@ where V, W are two-body and three-body color gap potentials.
 **Proof.** The hadron is a bound state of quarks with color gaps. The mass is the sum of constituent masses (κ d_i) plus binding energies from color gap correlations. The two-body potential V comes from the two-point color gap correlation. The three-body potential W comes from the three-point correlation (gluon exchange). □
 ---
 
-# Strong_Coupling_Gap_Records — Piece 05/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -595,10 +573,6 @@ where f is a thermal occupation function.
 **Proof.** The finite-temperature path integral on the PrimeBookOne grid is a sum over color gap configurations with Boltzmann weight exp(−E/T). The energy of a color gap d is E = κ d. The sum gives the pressure. □
 ---
 
-# Strong_Coupling_Gap_Records — Piece 06/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -733,10 +707,6 @@ where θ is the color gap phase and C_{EDM} is a hadronic matrix element from co
 All predictions match experiment within uncertainties.
 ---
 
-# Strong_Coupling_Gap_Records — Piece 07/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -868,10 +838,6 @@ giving α₁ = α₂ = α₃ = α_GUT.
 where R_{GUT} is the record gap where the three gap densities coincide. Numerically, R_{GUT} ~ 10¹⁶ in Planck units, giving μ_GUT ~ 2×10¹⁶ GeV.
 ---
 
-# Strong_Coupling_Gap_Records — Piece 08/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -1027,10 +993,6 @@ Article A4-02 derives the strong coupling constant α_s entirely from the statis
 **Next:** A4-03 Weak_Coupling_Gap_Modulo_Classes.md derives the weak coupling α_w and mixing angle from the gap modulo 6 classes d ≡ 2, 4 (mod 6).
 ---
 
-# Strong_Coupling_Gap_Records — Piece 09/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -1154,10 +1116,6 @@ where x_P is the Pomeron momentum fraction.
 All advanced QCD phenomena are derived from the color gap statistics.
 ---
 
-# Strong_Coupling_Gap_Records — Piece 10/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -1258,10 +1216,6 @@ The next article, A4-03 Weak_Coupling_Gap_Modulo_Classes.md, derives the weak co
 The electroweak gaps correspond to the SU(2)_L × U(1)_Y gauge bosons (W, Z, γ). The modulo 6 structure of prime gaps gives the chiral structure of the electroweak interaction.
 ---
 
-# Strong_Coupling_Gap_Records — Piece 11/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 
@@ -1367,10 +1321,6 @@ Article A4-02 provides a complete derivation of the strong coupling constant α_
 **Next:** A4-03 Weak_Coupling_Gap_Modulo_Classes.md derives the weak coupling and electroweak mixing from the electroweak gaps (d ≡ 2, 4 mod 6).
 ---
 
-# Strong_Coupling_Gap_Records — Piece 12/12
-## Article A4: A4-02 — Strong Coupling Gap Records
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 01:20:00 UTC
 
 ---
 

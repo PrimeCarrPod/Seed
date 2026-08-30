@@ -34,7 +34,9 @@ Vertex index n labels the interaction sequence:
 - n = 3: p_3 = 5, τ_3 = κ · 3
 - n = 4: p_4 = 7, τ_4 = κ · 5
 
-Proper time between vertices: Δτ_n = τ_{n+1} - τ_n = κ · d_n# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 02)
+Proper time between vertices: Δτ_n = τ_{n+1} - τ_n = κ · d_n
+---
+
 
 ## 1.3 Vertex Charge and Orientation
 
@@ -124,7 +126,9 @@ Example: 5, 11, 17 (d=6) → vertices 3, 5, 7 self-intersect
 
 Green-Tao (2004): Primes contain arbitrarily long arithmetic progressions.
 Therefore the worldline has infinitely many self-intersections.
-Each progression = a closed loop in the worldline.# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 03)
+Each progression = a closed loop in the worldline.
+---
+
 
 ## 4.4 Self-Intersection Index
 
@@ -196,7 +200,9 @@ Matches CODATA: 137.035999084(21) ✓
 As x increases (RG flow), vertex density changes:
 α^{-1}(x) = (ln x)^2/(2C_2) · f_geo(x)
 
-The geometric factor f_geo(x) encodes zero-phase correlations.# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 04)
+The geometric factor f_geo(x) encodes zero-phase correlations.
+---
+
 
 ---
 
@@ -337,7 +343,9 @@ From prime gaps: Z_1 = Z_2 = 1 + O(α ln x)
 The effective vertex at scale x:
 Γ^μ(x) = γ^μ F_1(q^2) + (iσ^μν q_ν/2m) F_2(q^2)
 
-F_1 from vertex density, F_2 from zero modes (A1-04).# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 05)
+F_1 from vertex density, F_2 from zero modes (A1-04).
+---
+
 
 ---
 
@@ -447,7 +455,9 @@ In directory 0.0: d_max ≈ 72, d_min = 2 → Λ_UV ~ 36 m_e c^2
 
 From gaps: ln(Λ^2/m^2) = ln(d_max^2/d_min^2) = ln(36^2) ≈ 7.2
 
-Matches QED: ln(Λ^2/m^2) with Λ ~ 10^2 m_e.# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 06)
+Matches QED: ln(Λ^2/m^2) with Λ ~ 10^2 m_e.
+---
+
 
 ---
 
@@ -606,7 +616,9 @@ a_e = (α/2π) - 0.328(α/π)^2 + Σ_γ c_γ
 ## 24.3 LHC Signatures
 
 High-energy vertices → new physics
-Contact interactions from d_max at UV scale# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 07)
+Contact interactions from d_max at UV scale
+---
+
 
 ---
 
@@ -751,7 +763,9 @@ From gaps: m*/m_e = 1 + O(α ln x)
 
 Shubnikov-de Haas: oscillations in vertex density
 Frequency: F = (ℏ/2π e) A_FS
-Area from vertex density: A_FS ~ (p_max κ)^2# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 08)
+Area from vertex density: A_FS ~ (p_max κ)^2
+---
+
 
 ---
 
@@ -928,7 +942,9 @@ PrimeBookOne records 3.67B vertices — the complete interaction history of the 
 
 ---
 
-*End of A1-06: Vertex_Interaction_Points — Ready for concatenation and zip.*# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 09)
+*End of A1-06: Vertex_Interaction_Points — Ready for concatenation and zip.*
+---
+
 
 ---
 
@@ -1088,7 +1104,9 @@ From this, all particle physics is derivable.
 
 ## 49.3 Next: Pair Creation/Annihilation (A1-07)
 
-How forward/backward vertices create particles.# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 10)
+How forward/backward vertices create particles.
+---
+
 
 ---
 
@@ -1407,7 +1425,9 @@ Gravitational: gap sums (spin-2)
 
 No interaction without a vertex.
 No vertex without a prime.
-Primes = interaction events.# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 11)
+Primes = interaction events.
+---
+
 
 ---
 
@@ -1898,7 +1918,9 @@ T_μν = Σ_n Q_n ẋ^μ_n ẋ^ν_n δ(x - x_n)
 ## 96.3 Quantum Gravity = Vertex Statistics
 
 Full quantum gravity = statistics of 3.67B vertices.
-All quantum gravity effects encoded in gaps.# ARTICLE 1: Prime Electron Worldline Topology — A1-06 (Piece 12)
+All quantum gravity effects encoded in gaps.
+---
+
 
 ---
 

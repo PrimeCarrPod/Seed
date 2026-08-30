@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Storage_Prime_Gaps — Piece 01/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -70,13 +66,6 @@ GapStore completes the Federation Tetrad with A3-23 (Core), A3-24 (Security), A3
 
 ---
 
-*End of Piece 01*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 02/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -186,13 +175,6 @@ The gap-tier function maps gap rarity (1/log p_k) to storage cost. Twin primes (
 
 ---
 
-*End of Piece 02*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 03/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -315,13 +297,6 @@ Any node can verify placement correctness by recomputing Gap-CH/Gap-RH from publ
 
 ---
 
-*End of Piece 03*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 04/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -495,13 +470,6 @@ The consistency level is **derived from tier** which is derived from GSID — fu
 
 ---
 
-*End of Piece 04*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 05/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -678,13 +646,6 @@ Gap-Regenerate(failed_shard, helper_nodes):
 
 ---
 
-*End of Piece 05*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 06/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -868,13 +829,6 @@ Directory is **gap-sharded** — each Gap-CC-Directory shard manages a GSID rang
 
 ---
 
-*End of Piece 06*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 07/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -1099,13 +1053,6 @@ Gap-Clone(snapshot_GSID, clone_GSID):
 
 ---
 
-*End of Piece 07*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 08/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-24 18:27:00 UTC
 
 ---
 
@@ -1297,13 +1244,6 @@ Gap-Vault-Audit():
 
 ---
 
-*End of Piece 08*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 09/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-24 18:52:00 UTC
 
 ---
 
@@ -1463,13 +1403,6 @@ Gap-Claim(trigger_event):
 
 ---
 
-*End of Piece 09*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 10/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 18:52:00 UTC
 
 ---
 
@@ -1700,13 +1633,6 @@ Gap-Compliance-Report = {
 
 ---
 
-*End of Piece 10*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 11/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 18:52:00 UTC
 
 ---
 
@@ -1924,13 +1850,6 @@ All CLI commands require `--attestation` flag for Gap-PKI signing.
 
 ---
 
-*End of Piece 11*
----
-
-# Quantum_Federation_Storage_Prime_Gaps — Piece 12/12
-## Article 3: A3-34 — Quantum_Federation_Storage_Prime_Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-24 18:52:00 UTC
 
 ---
 
@@ -2104,7 +2023,6 @@ This is **storage as mathematics**. The storage system *is* the prime gap sequen
 
 *12 pieces, ~4000+ lines concatenated, covering tiering, placement, replication, erasure coding, caching, compaction, backup/DR, economics, security, and management — all from prime gaps.*
 
-*End of Piece 12*
 *End of Article 3: A3-34*
 ---
 

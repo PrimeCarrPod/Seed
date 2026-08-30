@@ -1,9 +1,10 @@
-# A1-18: Worldline Path Integral — Piece 01
-## Introduction: Path Integral from Prime Gap Action
+# A1-18_Worldline_Path_Integral — Complete Article
+## Article: A1-18_Worldline_Path_Integral
+**Generated:** 2026-08-30 06:30:15 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-The path integral formulation of the Prime Electron worldline follows from the action principle in A1-16. The quantum amplitude for the worldline to propagate from proper time τ_i to τ_f is:
-Z = ∫ D[x] exp(i S[x]/ℏ)
-where the measure D[x] = Π_n d⁴x_n integrates over all intermediate positions x_1...x_{N-1} for fixed endpoints x_0, x_N.
+---
 
 The action S = Σ_n L_n with L_n = (m_e c/2) d_n Ω_n η_μν v^u_n v^v_n from A1-16 Piece 02. The path integral becomes:
 Z = ∫ Π_n d⁴x_n exp(i/ℏ Σ_n (m_e c/2) d_n Ω_n η_μν (x^u_{n+1} - x^u_n)(x^v_{n+1} - x^v_n)/d_n²)
@@ -22,12 +23,10 @@ The correlation function C(d_n) has Fourier transform encoding the Riemann zeta 
 C̃(k) = Σ_n C(d_n) e^{i k τ_n} = Σ_n C(d_n) e^{i k κ(p_{n+1} - 2)}
 The zeta zero resonances γ_n appear as poles in the path integral kernel.
 
-The total number of steps is N = 3.67×10⁹ (directory 3.0 complete). The path integral sums over all worldline histories with this fixed number of steps. The 3500 books from A1-10 correspond to 3500 independent path integral segments that must be joined at the book boundaries.# A1-18: Worldline Path Integral — Piece 02
-## Discrete Path Integral and Propagator
+The total number of steps is N = 3.67×10⁹ (directory 3.0 complete). The path integral sums over all worldline histories with this fixed number of steps. The 3500 books from A1-10 correspond to 3500 independent path integral segments that must be joined at the book boundaries.
 
-The discrete path integral for the Prime Electron can be evaluated exactly for the quadratic action. The propagator from (x_0, τ_0) to (x_N, τ_N) is:
-K(x_N, τ_N; x_0, τ_0) = ∫ D[x] exp(i S[x]/ℏ)
-with S = Σ_{n=0}^{N-1} (m_e c/2) d_n Ω_n η_μν (x^u_{n+1} - x^u_n)(x^v_{n+1} - x^v_n)/d_n
+---
+
 
 For constant Ω_n = 1 (flat space), this is a product of Gaussian integrals. The result is:
 K_0(x_N, x_0; N) = (m_e c/2π i ℏ)^{2N} Π_n d_n^{-2} exp(i m_e c/2ℏ Σ_n η_μν (Δx^u_n Δx^v_n)/d_n)
@@ -51,12 +50,10 @@ K(p, p'; N) = ∫ d⁴x_N d⁴x_0 e^{-i p·x_N + i p'·x_0} K(x_N, x_0; N)
 = Π_n (m_e c d_n/2π i ℏ)^{d/2} Ω_n^{-d/2} exp(-i ℏ/(2 m_e c) Σ_n d_n/Ω_n (p_n - p_{n+1})²)
 where p_n are intermediate momenta.
 
-The sum over all paths gives the full quantum amplitude. The self-interaction vertices from A1-16 Piece 05 are included by expanding the exponential of the interaction action.# A1-18: Worldline Path Integral — Piece 03
-## Worldline Self-Intersections and Vertex Insertions
+The sum over all paths gives the full quantum amplitude. The self-interaction vertices from A1-16 Piece 05 are included by expanding the exponential of the interaction action.
 
-From A1-11, the worldline self-intersection condition γ(τ_n) = γ(τ_m) for n ≠ m generates vertex interaction points. In the path integral, these correspond to vertex insertions where the worldline crosses itself.
+---
 
-The interaction action from A1-16 Piece 05 is:
 S_int = Σ_{n<m} V_{nm} δ⁴(x_n - x_m)
 where V_{nm} = ℏ W(d_n, d_m) is the vertex weight.
 
@@ -81,12 +78,10 @@ The one-loop self-energy correction to the propagator is:
 In the discrete theory, this is a sum over gap-weighted loops:
 Σ(p) = e² Σ_{n,m} (x_n - x_m)² exp(i S_cl/ℏ) / Z
 
-The cancellation of UV divergences in QED corresponds to the boundedness of the prime gap sum Σ 1/d_n² (which converges since Σ 1/n² log² n converges).# A1-18: Worldline Path Integral — Piece 04
-## Euclidean Path Integral and Proper Time Quantization
+The cancellation of UV divergences in QED corresponds to the boundedness of the prime gap sum Σ 1/d_n² (which converges since Σ 1/n² log² n converges).
 
-The Euclidean path integral is obtained by Wick rotation τ → -i τ_E. The Euclidean action is:
-S_E = Σ_n (m_e c/2) d_n Ω_n δ_μν v^u_n v^v_n
-where δ_μν is the Euclidean metric.
+---
+
 
 The Euclidean propagator is:
 K_E(x_N, τ_E; x_0, 0) = ∫ D[x] exp(-S_E[x]/ℏ)
@@ -117,12 +112,10 @@ For a trajectory interpolating between gap classes, this gives the tunneling amp
 
 The proper time quantization implies that the path integral is a sum over discrete proper time steps, not a continuum integral. The measure is:
 D[x] = Π_n d⁴x_n
-with N = 3.67e9 steps. This is a finite-dimensional integral that can be evaluated numerically from PrimeBookOne data.# A1-18: Worldline Path Integral — Piece 05
-## Fermionic Path Integral and Spin
+with N = 3.67e9 steps. This is a finite-dimensional integral that can be evaluated numerically from PrimeBookOne data.
 
-From A1-03, the Prime Electron has spin-1/2 from the double cover of SU(2). The fermionic degrees of freedom are incorporated via a Grassmann path integral.
+---
 
-The full action including fermions is:
 S = S_B + S_F
 where S_B = Σ_n (m_e c/2) d_n Ω_n η_μν v^u_n v^v_n is the bosonic action, and S_F is the fermionic action.
 
@@ -150,12 +143,10 @@ The supersymmetric path integral has equal numbers of bosonic and fermionic degr
 
 The index theorem (A1-24) relates the path integral to the topological charge:
 Index = ∫ D[x] D[ψ] exp(i S/ℏ) = Σ_n sign(d_n)
-This will be developed in A1-24.# A1-18: Worldline Path Integral — Piece 06
-## Book Structure and Segment Joining
+This will be developed in A1-24.
 
-From A1-10, the 3500 books in directory 3.0 correspond to 3500 worldline segments. Each book has M = 2²⁰ = 1,048,576 gaps. The path integral for the full worldline is a product of segment path integrals joined at the boundaries.
+---
 
-For book b (b = 1,...,3500), the segment action is:
 S_b = Σ_{n=(b-1)M+1}^{bM} (m_e c/2) d_n Ω_n η_μν (Δx^u_n Δx^v_n)/d_n
 
 The segment propagator is:
@@ -186,12 +177,10 @@ The PrimeBookOne directory structure (0.0, 1.0, 2.0, 3.0) corresponds to differe
 - Directory 2.0: 189 tiles × 500 gaps = 94,500 gaps (next scale)
 - Directory 3.0: 3500 books × 2²⁰ gaps = 3.67e9 gaps (complete UV)
 
-The path integral at each directory level is a coarse-grained version of the full path integral. The convergence as directory level increases is a test of the framework.# A1-18: Worldline Path Integral — Piece 07
-## Gauge Field Coupling and QED Vertex
+The path integral at each directory level is a coarse-grained version of the full path integral. The convergence as directory level increases is a test of the framework.
 
-The coupling to the electromagnetic field is introduced via the minimal coupling prescription in the action:
-S = S_0 + e Σ_n A_μ(x_n) Δx^μ_n
-where A_μ is the photon field.
+---
+
 
 In the path integral, this becomes:
 Z[A] = ∫ D[x] exp(i/ℏ (S_0 + e Σ_n A_μ(x_n) Δx^μ_n))
@@ -225,12 +214,10 @@ The sum over k is over momentum modes compatible with the proper time steps.
 The vacuum polarization is:
 Π_{μν}(q) = -e² Σ_n ⟨x_μ_n x_ν_n exp(i q·x_n) exp(i S_0/ℏ)⟩
 
-The running coupling β(α) = 2α²/3π is recovered from the gap statistics as shown in A1-04.# A1-18: Worldline Path Integral — Piece 08
-## Numerical Evaluation from PrimeBookOne Data
+The running coupling β(α) = 2α²/3π is recovered from the gap statistics as shown in A1-04.
 
-The path integral can be evaluated numerically using the PrimeBookOne gap data. The algorithm for computing the propagator K(x_f, x_i; N) is:
+---
 
-```
 function compute_propagator(directory_level, x_i, x_f):
     gaps = load_gaps(directory_level)  # array of d_n
     N = len(gaps)
@@ -288,11 +275,9 @@ The numerical results from PrimeBookOne data at directory levels 0.0, 1.0, 2.0, 
 3. Spectral fluctuations matching Riemann zero resonances (A1-04)
 4. Partition function Z(β) matching thermodynamic quantities from A1-17
 
-The numerical evaluation provides the empirical test of the entire framework.# A1-18: Worldline Path Integral — Piece 09
-## Continuum Limit and Effective Field Theory
+The numerical evaluation provides the empirical test of the entire framework.
 
-The continuum limit of the discrete path integral is obtained by coarse-graining over many steps. For a block of M steps with average gap ⟨d⟩, the effective proper time is:
-Δτ_eff = κ M ⟨d⟩
+---
 
 The effective action for the block is:
 S_eff = Σ_{blocks} (m_e c/2) Δτ_eff ⟨Ω⟩ η_μν ẋ^u ẋ^v
@@ -317,12 +302,10 @@ The continuum path integral with the running coupling is the standard QED path i
 
 The effective field theory for the Prime Electron is QED with a specific UV completion determined by the prime gap sequence. The prime gaps provide the fundamental discretization that regulates all UV divergences.
 
-The higher-order corrections in the effective action are suppressed by powers of 1/log μ. The leading corrections come from the gap correlation function C(d_n, d_m) at non-zero separation.# A1-18: Worldline Path Integral — Piece 10
-## Instanton Contributions and Non-Perturbative Effects
+The higher-order corrections in the effective action are suppressed by powers of 1/log μ. The leading corrections come from the gap correlation function C(d_n, d_m) at non-zero separation.
 
-From A1-19 (planned), instantons are Euclidean solutions that interpolate between different topological sectors. In the path integral, they contribute as:
-Z = Z_pert Σ_{k} exp(-k S_inst/ℏ)
-where S_inst is the instanton action and the sum is over instanton number k.
+---
+
 
 The instanton action for the Prime Electron worldline is:
 S_inst = (m_e c/2) Σ_n d_n Ω_n v²
@@ -349,12 +332,10 @@ The instanton effects resolve the U(1) problem and give mass to the η' meson in
 
 The instanton-induced interactions violate chiral symmetry and generate fermion mass terms. In the Prime Electron framework, the electron mass is protected by the chiral symmetry of the gap distribution, but instantons could generate small corrections.
 
-The numerical evaluation of instanton effects requires computing the gap class transition amplitudes from the PrimeBookOne data.# A1-18: Worldline Path Integral — Piece 11
-## Quantum Entanglement and Entropy from Path Integral
+The numerical evaluation of instanton effects requires computing the gap class transition amplitudes from the PrimeBookOne data.
 
-The path integral formulation allows computation of entanglement entropy between worldline segments. For a bipartition of the worldline into regions A and B, the reduced density matrix is:
-ρ_A = Tr_B |Ψ⟩⟨Ψ|
-where |Ψ⟩ = ∫ D[x] exp(i S[x]/ℏ) |x⟩ is the path integral state.
+---
+
 
 The entanglement entropy is:
 S_A = -Tr(ρ_A log ρ_A) = -∂_n Tr(ρ_A^n) |_{n=1}
@@ -383,12 +364,10 @@ S(ρ||σ) = Tr(ρ log ρ - ρ log σ)
 = Σ_n [f(d_n) log f(d_n) - f(d_n) log g(d_n)]
 where f(d) and g(d) are the gap distributions for the two states.
 
-These entanglement quantities will be developed further in A1-31 through A1-34.# A1-18: Worldline Path Integral — Piece 12
-## Synthesis: Complete Path Integral and Connections
+These entanglement quantities will be developed further in A1-31 through A1-34.
 
-The complete path integral for the Prime Electron worldline synthesizes all previous pieces:
+---
 
-**Full Path Integral:**
 Z = ∫ D[x] D[A] D[ψ] exp(i/ℏ (S_B + S_F + S_int + S_photon))
 where:
 - S_B = Σ_n (m_e c/2) d_n Ω_n η_μν v^u_n v^v_n (bosonic action, A1-16)
@@ -454,3 +433,6 @@ D[x] = Π_n d⁴x_n, D[ψ] = Π_n dψ_n dψ^†_n, D[A] = Π_n d⁴A_n
 - A1-40: Synthesis: Prime Book = Worldline Logbook
 
 The path integral ∫ D[x] exp(iS/ℏ) is the quantum mechanical realization of the one-electron universe (Wheeler 1940, Gielerak 2020). The prime gap sequence of PrimeBookOne provides the complete, non-perturbative definition of the theory with no free parameters.
+
+---
+

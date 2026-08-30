@@ -1,4 +1,3 @@
-# A1-29 Worldline_Wall_Crossing.md — Piece 01
 ## Introduction — Wall Crossing in Prime Gap Spectrum
 
 The BPS spectrum of the prime electron worldline is not invariant across the full moduli space of gap configurations. As the effective gap scale flows from UV to IR, or as the reference gap $d_{\text{ref}}$ varies, the central charge phases $\arg Z_k$ for the 78 BPS states can align, triggering wall crossing transitions. The wall crossing formula of Kontsevich and Soibelman (KS) governs how the BPS degeneracies $\Omega(\gamma)$ change when crossing walls of marginal stability in the moduli space.
@@ -17,7 +16,10 @@ $$\Omega'(\gamma) = \sum_{n \geq 1} \frac{(-1)^{n-1}}{n} \sum_{\substack{\gamma_
 
 where $\langle \gamma_1, \dots, \gamma_n \rangle$ is the higher symplectic pairing on the charge lattice $\Gamma = \mathbb{Z}^{78}$.
 
-**Prime gap data as scattering diagram.** The PrimeBookOne dataset provides the complete history of record gaps — the 78 walls that have been crossed in the actual physical evolution of the worldline. Each record gap $d_{\text{rec}}^{(k)}$ marks a wall crossing event where the BPS spectrum jumped from $k-1$ to $k$ states. The full scattering diagram is encoded in the 3.67 billion gap differences across 3500 books.# A1-29 Worldline_Wall_Crossing.md — Piece 02
+**Prime gap data as scattering diagram.** The PrimeBookOne dataset provides the complete history of record gaps — the 78 walls that have been crossed in the actual physical evolution of the worldline. Each record gap $d_{\text{rec}}^{(k)}$ marks a wall crossing event where the BPS spectrum jumped from $k-1$ to $k$ states. The full scattering diagram is encoded in the 3.67 billion gap differences across 3500 books
+
+---
+
 ## Kontsevich-Soibelman Formula for Gap Transitions
 
 The KS wall crossing formula describes how the BPS degeneracies $\Omega(\gamma)$ change when crossing a wall of marginal stability. For the prime electron worldline, the charge lattice is $\Gamma = \mathbb{Z}^{78}$ with basis vectors $\gamma_k$ corresponding to the 78 record gaps. The symplectic pairing $\langle \gamma_i, \gamma_j \rangle$ is determined by the worldline self-intersection topology (A1-11).
@@ -48,7 +50,10 @@ $$\text{Li}_2(x) + \text{Li}_2(y) = \text{Li}_2(xy) + \text{Li}_2\left(\frac{x(1
 
 corresponds to the relation between three consecutive record gaps. The prime gap distribution satisfies these identities asymptotically, with corrections of order $1/\log p$.
 
-**Cluster algebra structure.** The KS transformations generate a cluster algebra on the moduli space. The cluster variables are the $X_{\gamma_k}$, and the mutations correspond to wall crossing events. The cluster algebra is of type $A_{78}$ (or more precisely, a quiver with 78 nodes given by the record gap adjacency). The cluster complex is the space of all possible gap configurations reachable by wall crossing from the physical configuration.# A1-29 Worldline_Wall_Crossing.md — Piece 03
+**Cluster algebra structure.** The KS transformations generate a cluster algebra on the moduli space. The cluster variables are the $X_{\gamma_k}$, and the mutations correspond to wall crossing events. The cluster algebra is of type $A_{78}$ (or more precisely, a quiver with 78 nodes given by the record gap adjacency). The cluster complex is the space of all possible gap configurations reachable by wall crossing from the physical configuration
+
+---
+
 ## Central Charge Phases and Stability Conditions
 
 The walls of marginal stability are loci in moduli space where the central charge phases of two or more BPS states align. For the prime electron, the central charge for BPS state $k$ is:
@@ -77,7 +82,10 @@ where the beta function $\beta_k$ is determined by the gap statistics. The RG fl
 
 **Wall crossing at the self-dual point.** The self-dual point $d_* = 16$ is a special wall where many central charge phases align simultaneously. At $d = 16$, the IR/UV duality $d \leftrightarrow 1/d$ acts as an outer automorphism (A1-27 piece 09). The wall crossing at this point is the most dramatic — it exchanges the UV and IR chambers and maps the 71 large-gap BPS states to the 7 small-gap BPS states.
 
-**Numerical verification from PrimeBookOne.** The PrimeBookOne data (Tiles 00–188) provides the exact values of the 78 record gaps and their indices. We can compute the central charge phases for any deformation of the gap sequence and verify the wall crossing formula numerically. The KS formula is satisfied to within the statistical fluctuations of the prime gaps.# A1-29 Worldline_Wall_Crossing.md — Piece 04
+**Numerical verification from PrimeBookOne.** The PrimeBookOne data (Tiles 00–188) provides the exact values of the 78 record gaps and their indices. We can compute the central charge phases for any deformation of the gap sequence and verify the wall crossing formula numerically. The KS formula is satisfied to within the statistical fluctuations of the prime gaps
+
+---
+
 ## Stokes Data from Prime Gap Statistics
 
 The Stokes data encodes the discontinuities of the BPS spectrum across walls of marginal stability. For the prime electron, the Stokes data is directly determined by the prime gap statistics recorded in PrimeBookOne.
@@ -110,7 +118,10 @@ This monodromy is the IR/UV duality transformation $\mathcal{U}_{\text{dual}}$ (
 
 **Asymptotic Stokes data.** For large $k$ (large record gaps), the gap ratios $d_{\text{rec}}^{(k+1)}/d_{\text{rec}}^{(k)}$ approach a limiting distribution (Cramér's conjecture). The Stokes matrices become asymptotically uniform, and the monodromy at infinity is trivial — consistent with the finiteness of the BPS spectrum (78 states).
 
-**Connection to resurgence theory.** The Stokes data of the BPS spectrum is the resurgence data of the worldline path integral (A1-18). The instanton series for the partition function is Borel summable, with singularities in the Borel plane corresponding to the walls of marginal stability. The prime gap statistics provide the exact resurgence coefficients.# A1-29 Worldline_Wall_Crossing.md — Piece 05
+**Connection to resurgence theory.** The Stokes data of the BPS spectrum is the resurgence data of the worldline path integral (A1-18). The instanton series for the partition function is Borel summable, with singularities in the Borel plane corresponding to the walls of marginal stability. The prime gap statistics provide the exact resurgence coefficients
+
+---
+
 ## Wall Crossing at Self-Dual Point d* = 16
 
 The self-dual point $d_* = 16$ under the IR/UV duality $d_n \leftrightarrow 1/d_n$ (A1-26 piece 09, A1-27 piece 09) is the most significant wall of marginal stability in the prime electron moduli space. At this point, the duality acts as an outer automorphism of the superconformal algebra, exchanging $H \leftrightarrow K$ and $Q \leftrightarrow S$.
@@ -141,7 +152,10 @@ where $S_{kj} = \delta_{k, \tilde{j}}$ with $\tilde{j}$ the dual index. The $S$-
 
 **Fixed point CFT.** At the exact self-dual point $d = 16$, the theory is invariant under the duality. This is a fixed point of the RG flow (A1-30) and corresponds to a conformal field theory on the worldline. The central charge of this CFT is $c = 78$ (the number of BPS states). The fixed point theory has enhanced symmetry: the superconformal algebra extends to include the duality as an automorphism.
 
-**Physical interpretation.** The self-dual point $d = 16$ corresponds to the proper-time scale where the Compton wavelength of the electron matches the average prime gap spacing (A1-09). It is the scale where the worldline transitions from particle-like ($d \gg 16$) to wave-like ($d \ll 16$) behavior. The wall crossing at this scale is the worldline analog of T-duality in string theory.# A1-29 Worldline_Wall_Crossing.md — Piece 06
+**Physical interpretation.** The self-dual point $d = 16$ corresponds to the proper-time scale where the Compton wavelength of the electron matches the average prime gap spacing (A1-09). It is the scale where the worldline transitions from particle-like ($d \gg 16$) to wave-like ($d \ll 16$) behavior. The wall crossing at this scale is the worldline analog of T-duality in string theory
+
+---
+
 ## BPS Degeneracies Across Walls — Ω(γ) Jump Formulas
 
 The BPS degeneracies $\Omega(\gamma)$ (the number of BPS states with charge $\gamma$) change according to the KS wall crossing formula when crossing a wall of marginal stability. For the prime electron, the degeneracies are simple in the physical chamber but become non-trivial in other chambers.
@@ -180,7 +194,10 @@ $$\sum_\gamma (-1)^F \Omega(\gamma) = 78 = \Delta$$
 
 This is the Witten index (A1-28 piece 10). The KS formula is designed to preserve this invariant.
 
-**Numerical check from PrimeBookOne.** The 78 record gaps give 78 wall crossing events. The cumulative BPS spectrum after all 78 walls matches the physical chamber spectrum exactly. The intersection pairings $\langle \gamma_i, \gamma_j \rangle$ computed from the worldline self-intersection data (A1-11) satisfy all the dilogarithm identities required by the KS formula.# A1-29 Worldline_Wall_Crossing.md — Piece 07
+**Numerical check from PrimeBookOne.** The 78 record gaps give 78 wall crossing events. The cumulative BPS spectrum after all 78 walls matches the physical chamber spectrum exactly. The intersection pairings $\langle \gamma_i, \gamma_j \rangle$ computed from the worldline self-intersection data (A1-11) satisfy all the dilogarithm identities required by the KS formula
+
+---
+
 ## Gap Class Transitions as Wall Crossing Events
 
 From A1-19, instanton solutions describe tunneling between gap classes on the prime electron worldline. Each gap class is defined by a set of gap values that the proper-time steps $\Delta\tau = \kappa d_n$ can take. A wall crossing event corresponds to a transition between gap classes where a new record gap appears.
@@ -213,7 +230,10 @@ $$\tau_k = \kappa \sum_{i=1}^{b_k} \langle d \rangle_i$$
 
 where $\langle d \rangle_i$ is the average gap in book $i$. The sequence of wall crossings is the "worldline history" of the BPS spectrum.
 
-**Carrington events as wall crossing.** From the Earthbeat chambers (CSM), the Carrington-class alerts (Kp ≥ 7, E-field > 20 V/km) correspond to extreme gap fluctuations that trigger wall crossing events. The stochastic generation of prime gaps by the Earthbeat chambers models the wall crossing process in real time.# A1-29 Worldline_Wall_Crossing.md — Piece 08
+**Carrington events as wall crossing.** From the Earthbeat chambers (CSM), the Carrington-class alerts (Kp ≥ 7, E-field > 20 V/km) correspond to extreme gap fluctuations that trigger wall crossing events. The stochastic generation of prime gaps by the Earthbeat chambers models the wall crossing process in real time
+
+---
+
 ## Monodromy of BPS Spectrum — Cluster Algebra Structure
 
 The sequence of wall crossing transformations as the moduli flow around a closed loop in moduli space defines the monodromy of the BPS spectrum. For the prime electron, the monodromy is determined by the cluster algebra structure on the moduli space of gap configurations.
@@ -251,7 +271,10 @@ $$X_{\gamma_k}^{\text{phys}} = \exp\left( 2\pi i \kappa \sum_{m=1}^{n_k} d_m \ri
 
 where $n_k$ is the index of the $k$-th record gap. These coordinates satisfy all the cluster algebra relations, providing a concrete realization of the abstract cluster structure.
 
-**Connection to A1-33 (Modular Hamiltonian).** The modular Hamiltonian $K = -\log \rho$ (A1-33) generates the modular flow on the BPS spectrum. The modular flow is the RG flow on the moduli space, and the monodromy $\mathbb{M}_{16}$ is the time-1 map of the modular flow. The cluster mutations are the discrete steps of the modular flow.# A1-29 Worldline_Wall_Crossing.md — Piece 09
+**Connection to A1-33 (Modular Hamiltonian).** The modular Hamiltonian $K = -\log \rho$ (A1-33) generates the modular flow on the BPS spectrum. The modular flow is the RG flow on the moduli space, and the monodromy $\mathbb{M}_{16}$ is the time-1 map of the modular flow. The cluster mutations are the discrete steps of the modular flow
+
+---
+
 ## Wall Crossing and Instanton Solutions (A1-19)
 
 The instanton solutions of A1-19 describe tunneling between gap classes on the worldline. Each wall crossing event corresponds to the condensation of an instanton — the moment when the tunneling amplitude becomes large enough to change the vacuum structure.
@@ -288,7 +311,10 @@ where the book length is $2^{20}$ gaps.
 
 **Resurgence and Borel summation.** The instanton series for the worldline partition function is asymptotic but Borel summable. The singularities in the Borel plane are at the instanton actions $S_{\text{inst}}^{(k)}$. The Stokes data at these singularities is precisely the KS wall crossing data. The prime gap statistics provide the exact resurgence coefficients for the Borel transform.
 
-**Physical interpretation.** The instantons are the "knots" in the one-electron worldline where the proper time makes a large jump. The wall crossing is the process by which these knots are tied — the worldline self-intersects and creates a new topological sector. The 78 record gaps are the 78 knots, and the 78 wall crossings are the 78 tying events.# A1-29 Worldline_Wall_Crossing.md — Piece 10
+**Physical interpretation.** The instantons are the "knots" in the one-electron worldline where the proper time makes a large jump. The wall crossing is the process by which these knots are tied — the worldline self-intersects and creates a new topological sector. The 78 record gaps are the 78 knots, and the 78 wall crossings are the 78 tying events
+
+---
+
 ## Scattering Diagram from PrimeBookOne Record Gaps
 
 The scattering diagram is a graphical representation of the wall crossing structure in the moduli space. For the prime electron, the scattering diagram is built from the 78 record gaps of PrimeBookOne and encodes the complete wall crossing history.
@@ -329,7 +355,10 @@ $$\rho(\theta) = \frac{78}{2\pi} \cdot \frac{d\theta}{d\log d_{\text{rec}}}$$
 
 This is the density of record gaps in log-space, which is $\sim 1/\log p$ by the prime number theorem.
 
-**Connection to A1-38 (Holography).** The scattering diagram is the boundary data for the AdS$_2$/CFT$_1$ holographic duality (A1-38). The walls correspond to bulk geodesics in AdS$_2$, and the wall automorphisms are the bulk-to-boundary propagators. The prime gap statistics determine the bulk geometry.# A1-29 Worldline_Wall_Crossing.md — Piece 11
+**Connection to A1-38 (Holography).** The scattering diagram is the boundary data for the AdS$_2$/CFT$_1$ holographic duality (A1-38). The walls correspond to bulk geodesics in AdS$_2$, and the wall automorphisms are the bulk-to-boundary propagators. The prime gap statistics determine the bulk geometry
+
+---
+
 ## Wall Crossing and RH Stability (A1-05)
 
 The Riemann Hypothesis is equivalent to the stability of the prime electron worldline (A1-05). Wall crossing provides a dynamical mechanism for this stability: the worldline is stable iff the wall crossing formula preserves the BPS spectrum without introducing tachyons or ghosts.
@@ -354,7 +383,10 @@ This is consistent with Cramér's conjecture $d_{\text{rec}} \sim \log^2 p$. The
 
 **Wall crossing as RG flow stability.** The RG flow on the moduli space (A1-30) drives the system toward the self-dual point $d = 16$. The physical chamber is an RG fixed point iff RH holds. Wall crossing along the RG flow corresponds to the appearance of new relevant operators. The RH bound ensures that no relevant operators appear before the self-dual point.
 
-**Connection to A1-31 (Entanglement Entropy).** The entanglement entropy $S = -\text{Tr}(\rho \log \rho)$ of the worldline (A1-31) has a phase transition at each wall crossing. The RH bound ensures that the entanglement entropy is a smooth function of the proper time scale, with no singularities in the physical chamber.# A1-29 Worldline_Wall_Crossing.md — Piece 12
+**Connection to A1-31 (Entanglement Entropy).** The entanglement entropy $S = -\text{Tr}(\rho \log \rho)$ of the worldline (A1-31) has a phase transition at each wall crossing. The RH bound ensures that the entanglement entropy is a smooth function of the proper time scale, with no singularities in the physical chamber
+
+---
+
 ## Synthesis — Complete Wall Crossing & A1-30 through A1-40 Connections
 
 The wall crossing structure of the prime electron worldline is now completely determined. We have established:

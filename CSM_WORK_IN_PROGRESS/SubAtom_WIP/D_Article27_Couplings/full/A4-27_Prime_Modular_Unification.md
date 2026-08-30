@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Modular_Unification — Piece 01/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -50,10 +46,6 @@ The prime factors in √30 ensure the correct group theory factors 5/3, 1, 1 for
 
 ---
 
-# Prime_Modular_Unification — Piece 02/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -96,10 +88,6 @@ where the product runs over primes p ≤ μ/Λ_QCD. This reproduces the A4-25 th
 
 ---
 
-# Prime_Modular_Unification — Piece 03/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -142,10 +130,6 @@ matching experiment.
 
 ---
 
-# Prime_Modular_Unification — Piece 04/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -194,10 +178,6 @@ consistent with data.
 
 ---
 
-# Prime_Modular_Unification — Piece 05/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -235,10 +215,6 @@ with η(τ) the Dedekind eta function. Δ(i√2) = 2⁻²⁴ gives v ≈ 246 GeV
 
 ---
 
-# Prime_Modular_Unification — Piece 06/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -275,10 +251,6 @@ At τ = i√3, Im(τ) = √3, giving d_n < 10⁻³¹ e·cm.
 
 ---
 
-# Prime_Modular_Unification — Piece 07/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -315,10 +287,6 @@ This predicts σ_SI ≈ 2×10⁻⁴⁷ cm², within XENONnT reach.
 
 ---
 
-# Prime_Modular_Unification — Piece 08/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -356,10 +324,6 @@ Consistent with Planck bounds.
 
 ---
 
-# Prime_Modular_Unification — Piece 09/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -396,10 +360,6 @@ The latent heat and bubble nucleation rate are determined by the modular free en
 
 ---
 
-# Prime_Modular_Unification — Piece 10/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -436,10 +396,6 @@ These are suppressed by the modular selection rule f_{30,2}(i√30) = 0, natural
 
 ---
 
-# Prime_Modular_Unification — Piece 11/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -477,10 +433,6 @@ where Δ is the Laplacian on the modular curve. This gives ρ_Λ ≈ (2.3 meV)�
 
 ---
 
-# Prime_Modular_Unification — Piece 12/12
-## Article A4: A4-27 — Prime Modular Unification
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

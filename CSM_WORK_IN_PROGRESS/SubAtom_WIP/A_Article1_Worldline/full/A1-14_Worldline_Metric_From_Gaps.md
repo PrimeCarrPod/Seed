@@ -1,9 +1,10 @@
-# A1-14: Worldline Metric From Gaps — g_μν from Prime Statistics (Piece 01)
+# A1-14_Worldline_Metric_From_Gaps — Complete Article
+## Article: A1-14_Worldline_Metric_From_Gaps
+**Generated:** 2026-08-30 06:30:15 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-## 1. Introduction: The Metric from Prime Gaps
-
-From A1-13, the causal structure of the prime electron worldline is determined by the gap sequence $d_n = p_{n+1} - p_n$. The **spacetime metric** $g_{\mu\nu}$ emerges from this causal structure via Malament's theorem: the causal structure determines the conformal metric. The gap statistics provide the conformal factor.
-
+---
 ### 1.1 Proper Time as Worldline Parameter
 
 From A1-01 and A1-12, the discrete proper time is:
@@ -20,7 +21,6 @@ $$
 
 The entire metric is built from the single sequence $\{d_n\}_{n=1}^{N}$ where $N = 3500 \times 2^{20} \approx 3.67 \times 10^9$. No free parameters — everything derives from prime gaps.
 
----
 
 ## 2. Conformal Metric from Gap Correlations
 
@@ -52,13 +52,9 @@ $$
 g_{00} = 1, \quad g_{0i} = 0, \quad g_{ij} = \frac{\delta_{ij}}{C(n,n+|i|)}
 $$
 
+
+
 ---
-
-*End of Piece 01 — Continues in Piece 02: Conformal Metric from Gap Correlations (Detailed)*# A1-14: Worldline Metric From Gaps — Piece 02: Conformal Metric from Gap Correlations (Detailed)
-
-## 3. Gap Correlation Function and Conformal Factor
-
-### 3.1 Exact Two-Point Function
 
 The connected gap correlator from A1-08:
 $$
@@ -90,7 +86,6 @@ $$
 
 is conformally related to flat space. The causal structure (light cones) is identical to Minkowski — only the conformal factor varies.
 
----
 
 ## 4. Discrete Metric Components
 
@@ -117,13 +112,9 @@ $$
 g_{ij}(n) = \Omega^2(n) \delta_{ij} = \langle d_n \rangle \delta_{ij} \sim \ln n \, \delta_{ij}
 $$
 
+
+
 ---
-
-*End of Piece 02 — Continues in Piece 03: Proper Time Metric Components*# A1-14: Worldline Metric From Gaps — Piece 03: Proper Time Metric Components
-
-## 5. Proper Time Line Element
-
-### 5.1 Discrete Line Element
 
 The proper time line element between adjacent vertices:
 $$
@@ -145,7 +136,6 @@ where $\langle d \rangle(\tau) \sim \ln(\tau/\kappa)$.
 
 The proper time $\tau$ acts as a **cosmological time** — it increases monotonically from IR ($\tau \sim \kappa$) to UV ($\tau \sim \kappa N \sim 0.1$ ns). The conformal factor $\Omega^2(\tau) \sim \ln(\tau/\kappa)$ grows logarithmically — the universe "expands" in proper time.
 
----
 
 ## 6. Metric in Emergent Spatial Coordinates
 
@@ -177,13 +167,9 @@ $$
 dV = \sqrt{-g} \, d\tau \, d^3x = \ln^2 n \, d\tau \, d^3x
 $$
 
+
+
 ---
-
-*End of Piece 03 — Continues in Piece 04: Spatial Metric from Self-Intersections*# A1-14: Worldline Metric From Gaps — Piece 04: Spatial Metric from Self-Intersections
-
-## 7. Spatial Geometry from Self-Intersection Network
-
-### 7.1 Self-Intersections as Spatial Points
 
 From A1-11, a self-intersection $(n,m)$ with $d_n = d_m$ means the worldline returns to the same gap environment. The set of all self-intersections forms a **graph** where vertices are gap values and edges are proper time segments between recurrences.
 
@@ -205,7 +191,6 @@ $$
 
 where $\Delta_{\text{graph}}$ is the Laplacian on the self-intersection graph. At large scales, this reproduces $g_{ij} \sim \ln n \, \delta_{ij}$.
 
----
 
 ## 8. Self-Intersection Induced Anisotropy
 
@@ -226,13 +211,9 @@ $$
 
 where $P^{(d)}_{ij}$ are projectors onto gap-class subspaces, and $\epsilon_d(n) \sim 1/\ln n$ are small.
 
+
+
 ---
-
-*End of Piece 04 — Continues in Piece 05: Emergent Light Cone Structure*# A1-14: Worldline Metric From Gaps — Piece 05: Emergent Light Cone Structure
-
-## 9. Light Cone from Metric
-
-### 9.1 Light Cone Equation
 
 The light cone at vertex $n$ is given by $ds^2 = 0$:
 $$
@@ -264,7 +245,6 @@ $$
 
 The light cone has **quantum fuzziness** of order 1 — a fundamental property from gap randomness.
 
----
 
 ## 10. Causal Diamond Geometry
 
@@ -284,13 +264,9 @@ $$
 
 This logarithmic growth is characteristic of 1+1D CFT — the worldline causal diamonds behave like a 1+1D conformal system.
 
+
+
 ---
-
-*End of Piece 05 — Continues in Piece 06: Metric Evolution Along Worldline*# A1-14: Worldline Metric From Gaps — Piece 06: Metric Evolution Along Worldline
-
-## 11. RG Flow of the Metric
-
-### 11.1 Directory Flow as RG Flow
 
 The PrimeBookOne directory hierarchy (0.0 → 1.0 → 2.0 → 3.0) is an RG flow in the metric. Each directory is a **coarse-graining** of the previous:
 - Directory 0.0: 189 tiles × 500 steps (IR)
@@ -314,7 +290,6 @@ $$
 
 Solution: $\Omega^2(n) = \ln n + C$. This is the **logarithmic running** of the metric — asymptotic freedom in the UV.
 
----
 
 ## 12. Metric at Different Energy Scales
 
@@ -336,13 +311,9 @@ $$
 
 Matching A1-10: $\beta(\alpha) = -\alpha^2$ from $\frac{d}{d\ln b} \ln b = 1$.
 
+
+
 ---
-
-*End of Piece 06 — Continues in Piece 07: Curvature from Gap Fluctuations*# A1-14: Worldline Metric From Gaps — Piece 07: Curvature from Gap Fluctuations
-
-## 13. Curvature Tensor from Gap Statistics
-
-### 13.1 Christoffel Symbols
 
 For the conformal metric $g_{\mu\nu} = \Omega^2(\tau) \eta_{\mu\nu}$ with $\Omega^2 = \langle d \rangle \sim \ln(\tau/\kappa)$:
 
@@ -373,7 +344,6 @@ $$
 
 The curvature is **small** — the worldline is nearly flat, with curvature decreasing in the UV.
 
----
 
 ## 14. Curvature Fluctuations
 
@@ -393,13 +363,9 @@ $$
 
 This is **quantum curvature noise** from gap randomness — a fundamental spacetime foam at the Compton scale.
 
+
+
 ---
-
-*End of Piece 07 — Continues in Piece 08: Einstein Equations from Gap Statistics*# A1-14: Worldline Metric From Gaps — Piece 08: Einstein Equations from Gap Statistics
-
-## 15. Einstein Equations from Gap Sequence
-
-### 15.1 Effective Stress-Energy from Gaps
 
 The gap fluctuations act as an effective stress-energy tensor. The Einstein tensor for the conformal metric:
 $$
@@ -428,7 +394,6 @@ $$
 
 In Planck units: $\Lambda \sim 10^{-120} \ell_P^{-2}$ — the observed value!
 
----
 
 ## 16. Einstein Equations as Gap Statistics Identity
 
@@ -445,13 +410,9 @@ The gap sequence extremizes the discrete Einstein-Hilbert action.
 
 The "matter" stress-energy is entirely generated by the gap sequence itself — the prime electron worldline **is** the source of its own geometry.
 
+
+
 ---
-
-*End of Piece 08 — Continues in Piece 09: UV/IR Metric Behavior*# A1-14: Worldline Metric From Gaps — Piece 09: UV/IR Metric Behavior
-
-## 17. IR Behavior (Directory 0.0)
-
-### 17.1 Coarse Metric at Large Scales
 
 At the IR (directory 0.0, 189 tiles × 500 steps):
 - Proper time resolution: $\Delta\tau \sim 500 \kappa \langle d \rangle \sim 10^{-18}$ s
@@ -466,7 +427,6 @@ The IR metric describes:
 - Compton scattering
 - Anomalous magnetic moment
 
----
 
 ## 18. UV Behavior (Directory 3.0)
 
@@ -484,7 +444,6 @@ $$
 R_{\text{UV}} \sim \frac{1}{\tau_{\text{UV}}^2 \ln^2 \tau_{\text{UV}}} \sim 10^{26} \text{ s}^{-2}
 $$
 
----
 
 ## 19. UV/IR Duality
 
@@ -504,13 +463,9 @@ $$
 
 This reflects the symmetry of the prime gap distribution under scale inversion.
 
+
+
 ---
-
-*End of Piece 09 — Continues in Piece 10: Metric at Book Boundaries*# A1-14: Worldline Metric From Gaps — Piece 10: Metric at Book Boundaries
-
-## 20. Book Boundaries as Metric Junctions
-
-### 20.1 Boundary Conditions at Book Edges
 
 Each book $b$ covers proper time $[\tau_{(b-1)M}, \tau_{bM}]$ with $M = 2^{20}$. At the boundary $n = bM$, the metric must satisfy matching conditions.
 
@@ -532,7 +487,6 @@ $$
 
 This is small ($\sim 10^{-6}$) — the metric is nearly $C^1$ across boundaries.
 
----
 
 ## 21. Boundary Stress-Energy
 
@@ -552,7 +506,6 @@ $$
 
 This is the **energy cost** of the book segmentation — negligible at low energy, but contributes to the UV cosmological constant.
 
----
 
 ## 22. Book Interiors as Causal Domains
 
@@ -567,13 +520,9 @@ Book $b$ is a causal diamond with:
 
 Within a book, the metric is smooth. The causal structure is Minkowski-like with conformal factor $\Omega^2 \sim \ln(bM)$. The book boundaries are **spacelike surfaces** — no causal influence flows between adjacent books except through the proper time evolution.
 
+
+
 ---
-
-*End of Piece 10 — Continues in Piece 11: Computational Verification*# A1-14: Worldline Metric From Gaps — Piece 11: Computational Verification
-
-## 23. Algorithm for Metric Extraction from PrimeBookOne
-
-### 23.1 Metric Computation Pipeline
 
 ```python
 def compute_metric_from_gaps(tile_paths, book_idx):
@@ -617,7 +566,6 @@ def compute_metric_from_gaps(tile_paths, book_idx):
 | 1000     | ~6.9                 | ~0.02               | ~0.007              |
 | 3500     | ~8.1                 | ~0.01               | ~0.002              |
 
----
 
 ## 24. Verification Checks
 
@@ -654,13 +602,9 @@ def test_einstein(metric):
     return np.allclose(G, 8*np.pi*G_newton * T, rtol=0.1)
 ```
 
+
+
 ---
-
-*End of Piece 11 — Continues in Piece 12: Synthesis and Conclusion*# A1-14: Worldline Metric From Gaps — Piece 12: Synthesis and Conclusion
-
-## 25. Synthesis: The Metric from Prime Gaps
-
-### 25.1 Complete Metric Summary
 
 The emergent spacetime metric of the prime electron worldline is:
 
@@ -681,7 +625,6 @@ where:
 4. **Self-generated**: No external matter — gaps source their own geometry
 5. **Holographic**: UV/IR duality under $b \leftrightarrow 3500/b$
 
----
 
 ## 26. Connections to Other Articles
 
@@ -705,7 +648,6 @@ where:
 - Full emergent 4D metric from 1D worldline
 - Self-intersections provide 3 spatial dimensions
 
----
 
 ## 27. Theoretical Consistency
 
@@ -725,7 +667,6 @@ where:
 3. **Quantum corrections** to metric from path integral (A1-18)
 4. **Multi-electron metric** — beyond one-electron universe
 
----
 
 ## 28. Conclusion
 
@@ -733,6 +674,7 @@ The spacetime metric $g_{\mu\nu}$ is **not fundamental** — it emerges entirely
 
 **The metric is the gap sequence. The gap sequence is the metric.**
 
+
+
 ---
 
-*End of Piece 12 — A1-14 Worldline Metric From Gaps Complete*

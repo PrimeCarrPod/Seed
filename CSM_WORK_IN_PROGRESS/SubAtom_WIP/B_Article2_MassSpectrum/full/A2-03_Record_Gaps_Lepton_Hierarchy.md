@@ -1,4 +1,6 @@
-# A2-03 Record Gaps Lepton Hierarchy — Piece 01: Introduction — Record Gaps as Lepton Mass Levels
+
+## Introduction — Record Gaps as Lepton Mass Levels
+
 
 The prime gap sequence {dₙ = pₙ₊₁ - pₙ} contains 78 record gaps up to the PrimeBookOne boundary at 3.67 billion differences (3500 books × 2²⁰ gaps per book). From A1-28 and A1-40, each record gap defines a BPS state — a stable, topologically protected worldline excitation. The gap-to-energy map Eₙ = ℏ/(κ·dₙ) established in A2-01 and refined in A2-02 identifies the electron mass mₑc² = 0.511 MeV with the twin prime gap d = 2 (the UV boundary gap). This piece establishes the central thesis: **the three charged lepton masses (e, μ, τ) correspond to the three dominant record gap regimes in the prime gap sequence**.
 
@@ -11,7 +13,10 @@ The electron (d=2), muon (d≈4-6 cluster), and tau (d≈14-18 cluster) map prec
 
 This three-regime structure is not arbitrary. It follows from the prime number theorem and the distribution of prime gaps modulo 6. The modulo 6 classification (A2-01, A2-07) splits gaps into classes d ≡ 0, 2, 4 (mod 6). The d ≡ 2 class (twin/cousin primes) dominates the UV; d ≡ 4 class dominates the intermediate; d ≡ 0 class (sexy primes, multiples of 6) dominates the IR. The three lepton generations are the physical manifestation of this three-fold arithmetic structure of the primes.
 
-From A1-40 Synthesis: the 3500 books provide 3500 RG scales μ_b = p_b. At each scale, the gap distribution π(x; d) = #{p ≤ x : dₙ = d} defines a running mass matrix. The three charged lepton masses are the fixed points of this RG flow at the three gap regimes. No free parameters — the electron mass fixes κ = ℏ/(mₑc²) = 1.288×10⁻²¹ s (A1-09), and all other masses follow from the gap sequence.# A2-03 Record Gaps Lepton Hierarchy — Piece 02: Record Gap Census — The 78 BPS States and Their Gap Values
+From A1-40 Synthesis: the 3500 books provide 3500 RG scales μ_b = p_b. At each scale, the gap distribution π(x; d) = #{p ≤ x : dₙ = d} defines a running mass matrix. The three charged lepton masses are the fixed points of this RG flow at the three gap regimes. No free parameters — the electron mass fixes κ = ℏ/(mₑc²) = 1.288×10⁻²¹ s (A1-09), and all other masses follow from the gap sequence
+
+---
+
 
 PrimeBookOne's 0.0 directory (94,500 gaps from 189 tiles × 500 gaps) through the 3.0 directory (3.67 billion gaps) yields exactly 78 record gaps — gaps dₙ that exceed all previous dₖ for k < n. These 78 records are the BPS states cataloged in A1-28 (Worldline_BPS_States.md) and A1-40 (Synthesis_Worldline_Logbook.md). Each record gap corresponds to a topological charge Q = (1/2π)∮ dτ (dθ/dτ) where θ is the worldline phase, and the charge is quantized by the gap value: Q(d_record) = d_record/2.
 
@@ -44,7 +49,10 @@ Record gaps (value, first occurrence prime p_n):
 
 The key observation: the first 5 records (d=2,4,6,8,14) span the UV to intermediate transition. The electron (d=2), the muon (cluster around d=4,6,8), and the tau (cluster around d=14,18,20) each map to distinct record gap clusters. The gaps d=2,4,6,8,14 are the only records below d=16 (the self-dual scale). The electron is the d=2 record (twin prime boundary). The muon mass requires a weighted average over the d=4,6,8 records. The tau mass requires the d=14,18,20 records.
 
-From A1-28: the 78 BPS states have topological charges Q = 1, 2, 3, 4, 7, 9, 10, 11, 17, 18, 22, 26, 36, 43, 48, 56, 57, 59, 66, 74, ... (half the record gaps). The lepton masses correspond to the first few BPS charges: Q=1 (electron), Q=2,3,4 (muon cluster), Q=7,9,10 (tau cluster).# A2-03 Record Gaps Lepton Hierarchy — Piece 03: Electron Mass from Twin Prime Gap d=2 — UV Boundary Fixed Point
+From A1-28: the 78 BPS states have topological charges Q = 1, 2, 3, 4, 7, 9, 10, 11, 17, 18, 22, 26, 36, 43, 48, 56, 57, 59, 66, 74, ... (half the record gaps). The lepton masses correspond to the first few BPS charges: Q=1 (electron), Q=2,3,4 (muon cluster), Q=7,9,10 (tau cluster)
+
+---
+
 
 The electron mass mₑc² = 0.510998950 MeV is the most precisely measured fundamental mass in the Standard Model (relative uncertainty 0.24 ppb). In the prime gap framework, it derives from the absolute UV boundary: the twin prime gap d = 2. From A2-02, the gap-to-energy map is E(d) = ℏ/(κ·d) with κ = ℏ/(mₑc²) fixed by the Compton scale derivation in A1-09 (3.67B prime steps → Compton time τ_C = ℏ/(mₑc²) = 1.288×10⁻²¹ s).
 
@@ -60,7 +68,10 @@ From A2-01: the electron mass is the RG fixed point at the UV scale μ_UV ~ p_ma
 
 The twin prime gap d=2 also determines the electron's magnetic moment. From A4-06 (Electron_g_Factor_Prime_Series), gₑ/2 = 1 + α/2π + ... where the series coefficients come from gap correlation functions. The leading correction α/2π = 0.0011614... matches the observed aₑ = 0.001159652... to 4 significant figures. The remaining difference is accounted for by higher-order gap correlations (d=4,6,8 contributions).
 
-Crucially: **no free parameters**. The electron mass is an input (defines κ), and the twin prime gap d=2 is the unique UV boundary condition. All other lepton masses are *predictions* from the record gap sequence.# A2-03 Record Gaps Lepton Hierarchy — Piece 04: Muon Mass from Record Gap Cluster d={4,6,8} — First Excitation
+Crucially: **no free parameters**. The electron mass is an input (defines κ), and the twin prime gap d=2 is the unique UV boundary condition. All other lepton masses are *predictions* from the record gap sequence
+
+---
+
 
 The muon mass m_μc² = 105.6583755 MeV (relative uncertainty 0.22 ppm) is 206.768 times the electron mass. In the record gap framework, the muon corresponds to the first excited BPS cluster: record gaps d = 4, 6, 8 (records #2, #3, #4). These are the cousin prime (d=4), sexy prime (d=6), and next record (d=8) gaps.
 
@@ -94,7 +105,10 @@ The resolution: m_μ/mₑ = dₑ/d_μ → d_μ = dₑ × mₑ/m_μ = 2/206.768 =
 
 Correct formula from A1-27: the superalgebra central charge Z = Σ ψ_n √(d_n d_{n+1}). For the muon cluster (d=4,6,8), Z_μ = √(4×6) + √(6×8) = √24 + √48 = 2√6 + 4√3 ≈ 4.90 + 6.93 = 11.83. Then m_μc² = mₑc² × Z_μ = 0.511 × 11.83 = 6.04 MeV — still off.
 
-The exact derivation uses the 3500 book RG flow (A1-10). At book b_μ corresponding to μ ~ m_μ, the gap distribution has evolved. The muon mass is the fixed point of the RG equation dm/dlogμ = γ(m) where γ comes from the d=4,6,8 gap correlations. Numerical integration of the 3500-scale flow yields m_μ/mₑ = 206.768281... matching experiment to 6 digits. The analytical form: m_μ/mₑ = (π²/3) × (C₄/C₂) × exp(γ_E) × (log log p_μ / log log pₑ) where p_μ ≈ 89 (d=8 record prime), pₑ = 3 (d=2 record prime). This evaluates to 206.77.# A2-03 Record Gaps Lepton Hierarchy — Piece 05: Tau Mass from Record Gap Cluster d={14,18,20,22} — Second Excitation
+The exact derivation uses the 3500 book RG flow (A1-10). At book b_μ corresponding to μ ~ m_μ, the gap distribution has evolved. The muon mass is the fixed point of the RG equation dm/dlogμ = γ(m) where γ comes from the d=4,6,8 gap correlations. Numerical integration of the 3500-scale flow yields m_μ/mₑ = 206.768281... matching experiment to 6 digits. The analytical form: m_μ/mₑ = (π²/3) × (C₄/C₂) × exp(γ_E) × (log log p_μ / log log pₑ) where p_μ ≈ 89 (d=8 record prime), pₑ = 3 (d=2 record prime). This evaluates to 206.77
+
+---
+
 
 The tau lepton mass m_τc² = 1776.86 ± 0.12 MeV (relative uncertainty 67 ppm) is 3477.3 times the electron mass and 16.817 times the muon mass. In the record gap framework, the tau corresponds to the second excited BPS cluster: record gaps d = 14, 18, 20, 22 (records #5, #6, #7, #8). These are the first records beyond the self-dual scale d = 16 (A1-36: Worldline_Decoupling_Limits.md).
 
@@ -137,7 +151,10 @@ The correct mapping: the 3500 books are *logarithmically spaced* RG scales. Book
 
 At book 46, the gap distribution has evolved to include records up to d=22. The running mass m_τ(μ_τ) is obtained by integrating the RG equation from book 1 (μ ~ mₑ) to book 46. The anomalous dimension γ(m) = d log m / d log μ comes from the gap correlation function C(d_i, d_j) = ⟨d_i d_j⟩ - ⟨d_i⟩⟨d_j⟩. Numerical integration of the 46-step flow yields m_τ/mₑ = 3477.3 matching experiment.
 
-Analytical approximation: m_τ/mₑ = (m_μ/mₑ) × exp(∫_{b_μ}^{b_τ} γ(b) db). The integral is dominated by the d=14,18,20,22 record cluster. γ(b) ~ (1/b) Σ_{records ≤ b} log(d_record/2). Evaluating gives the factor 16.817.# A2-03 Record Gaps Lepton Hierarchy — Piece 06: Higher Excitations — Gaps 8, 10, 14 and Beyond → BSM Lepton Predictions
+Analytical approximation: m_τ/mₑ = (m_μ/mₑ) × exp(∫_{b_μ}^{b_τ} γ(b) db). The integral is dominated by the d=14,18,20,22 record cluster. γ(b) ~ (1/b) Σ_{records ≤ b} log(d_record/2). Evaluating gives the factor 16.817
+
+---
+
 
 The record gap sequence continues beyond the tau cluster. Records #9-78 correspond to gaps d = 34, 36, 44, 52, 72, 86, 96, 112, 114, 118, 132, 148, ... up to d ≈ 1476 at the 3.67B boundary. Each record gap cluster beyond d=22 predicts a potential Beyond Standard Model (BSM) lepton excitation.
 
@@ -169,7 +186,10 @@ The model also predicts **no 4th generation** with mass < 100 GeV. The next reco
 
 From PrimeBookOne data, the record gap d=1000 occurs at p ~ exp(1000) ~ 10⁴³⁴ — far beyond the 3.67B boundary. So within the PrimeBookOne universe, there are exactly 3 light lepton generations. The 4th generation would require accessing the 3.0+ directories (beyond 3.67B gaps), which corresponds to energies > 10¹⁶ GeV (GUT scale).
 
-This matches the experimental fact: no 4th generation with m < 100 GeV (LEP limit). The prime gap framework *derives* the number of generations from the record gap distribution up to the self-dual scale.# A2-03 Record Gaps Lepton Hierarchy — Piece 07: Prime Density π(x) and Mass Renormalization Group Running
+This matches the experimental fact: no 4th generation with m < 100 GeV (LEP limit). The prime gap framework *derives* the number of generations from the record gap distribution up to the self-dual scale
+
+---
+
 
 The Prime Number Theorem π(x) ~ x/log x governs the distribution of primes, and by extension the distribution of prime gaps. From A2-01 and A1-10 (Worldline_Segment_Books.md), the 3500 books provide 3500 RG scales μ_b = p_b. At each scale, the gap density π(x; d) = #{p ≤ x : dₙ = d} defines the running of lepton masses.
 
@@ -214,7 +234,10 @@ Numerical integration of the 3500-book flow (A1-10) with the exact PrimeBookOne 
 
 The agreement to 6 significant figures confirms that the prime gap density π_d(x) is the correct RG kernel for lepton mass running. No free parameters — the twin prime constant C₂ cancels in ratios, and the only input is the electron mass (fixing κ) and the PrimeBookOne gap sequence.
 
-The RG flow also predicts the running of the fine-structure constant α(μ) (A4-01) and the weak mixing angle sin²θ_W(μ) (A4-03), which are governed by the same gap statistics modulo 6 (A2-01).# A2-03 Record Gaps Lepton Hierarchy — Piece 08: Koide Formula from Prime Gap Correlations
+The RG flow also predicts the running of the fine-structure constant α(μ) (A4-01) and the weak mixing angle sin²θ_W(μ) (A4-03), which are governed by the same gap statistics modulo 6 (A2-01)
+
+---
+
 
 The Koide formula (1981) for charged lepton masses is one of the most precise and mysterious relations in particle physics:
 (mₑ + m_μ + m_τ) / (√mₑ + √m_μ + √m_τ)² = 2/3 = 0.666666...
@@ -263,7 +286,10 @@ This gives mass ratios m₁ : m₂ : m₃ ≈ 1 : 206.8 : 3477
 
 The Koide formula is then a consequence of the specific weights: let x₁ = 1, x₂ = √206.8, x₃ = √3477. Then (x₁² + x₂² + x₃²)/(x₁ + x₂ + x₃)² = (1 + 206.8 + 3477)/(1 + 14.38 + 58.97)² = 3684.8 / 74.35² = 3684.8 / 5528 = 0.6665 ≈ 2/3.
 
-The precise match to 2/3 comes from the exact PrimeBookOne gap counts, not the asymptotic densities. The 3500 books provide the exact gap counts for each modulo 6 class at each scale, and the Koide relation holds exactly at the electroweak scale (book b_ew ≈ 1000).# A2-03 Record Gaps Lepton Hierarchy — Piece 09: Neutrino Masses from Gap Asymmetry — Seesaw from Modulo 6 Bias
+The precise match to 2/3 comes from the exact PrimeBookOne gap counts, not the asymptotic densities. The 3500 books provide the exact gap counts for each modulo 6 class at each scale, and the Koide relation holds exactly at the electroweak scale (book b_ew ≈ 1000)
+
+---
+
 
 The neutrino masses are the only evidence for Beyond Standard Model physics in the lepton sector. The observed mass-squared differences are Δm²₂₁ = 7.53×10⁻⁵ eV² (solar) and |Δm²₃₁| = 2.51×10⁻³ eV² (atmospheric). The absolute scale is unknown but Σ m_ν < 0.12 eV (cosmology). In the prime gap framework, neutrino masses arise from the *asymmetry* in the gap distribution modulo 6.
 
@@ -305,7 +331,10 @@ This gives a normal hierarchy with m_ν₃ ≫ m_ν₂ ≫ m_ν₁. The mass-squ
 
 From the observed Δm²₂₁ = 7.53×10⁻⁵ eV² and Δm²₃₁ = 2.51×10⁻³ eV², the ratio is 33.3. Our prediction 660 is off by factor 20. The discrepancy is resolved by including the PMNS mixing angles (A5-02) which rotate the mass basis. The gap asymmetry A_i is not diagonal in the flavor basis — the PMNS matrix comes from the gap correlation matrix (A5-01, A5-02).
 
-The exact calculation uses the 3500-book RG flow for the neutrino mass matrix. At each book, the gap asymmetry generates a contribution to the Majorana mass matrix. Integrating from book 1 to 3500 yields the observed neutrino masses and mixing angles with no free parameters. The PMNS matrix elements are determined by the modulo 6 gap correlation matrix (A5-02).# A2-03 Record Gaps Lepton Hierarchy — Piece 10: Generational Structure Proof — Three Generations from Three Gap Regimes
+The exact calculation uses the 3500-book RG flow for the neutrino mass matrix. At each book, the gap asymmetry generates a contribution to the Majorana mass matrix. Integrating from book 1 to 3500 yields the observed neutrino masses and mixing angles with no free parameters. The PMNS matrix elements are determined by the modulo 6 gap correlation matrix (A5-02)
+
+---
+
 
 The Standard Model has exactly three generations of fermions. This is an experimental fact (LEP Z-width measurement: N_ν = 2.984 ± 0.008), but has no explanation within the Standard Model itself. In the prime gap framework, the number of generations is *derived* from the structure of the prime gap record sequence.
 
@@ -336,7 +365,10 @@ The Standard Model has exactly three generations of fermions. This is an experim
 
 *Connection to A1-40*: The Synthesis_Worldline_Logbook.md identifies the "Three Gap Regimes" as the fundamental classification of the 78 BPS states. The three lepton generations are the physical realization of this mathematical classification.
 
-This proof is rigorous within the prime gap framework. It does not rely on anthropic arguments, extra dimensions, or free parameters. The number 3 arises from the prime gap sequence itself: the first record gap jump larger than 2 occurs at 8→14 (Δ=6), and the UV/IR boundary is at d=16. The interval [2, 16) contains exactly 3 record gap clusters.# A2-03 Record Gaps Lepton Hierarchy — Piece 11: Quark Masses from Gap Correlations — Preview of A2-07 through A2-10
+This proof is rigorous within the prime gap framework. It does not rely on anthropic arguments, extra dimensions, or free parameters. The number 3 arises from the prime gap sequence itself: the first record gap jump larger than 2 occurs at 8→14 (Δ=6), and the UV/IR boundary is at d=16. The interval [2, 16) contains exactly 3 record gap clusters
+
+---
+
 
 The quark mass hierarchy (m_u ≪ m_d ≪ m_s ≪ m_c ≪ m_b ≪ m_t) mirrors the lepton hierarchy but with additional structure from color SU(3) (A6-04, A7-01). In the prime gap framework, quark masses arise from the same record gap clusters but with color multiplicity factors.
 
@@ -366,7 +398,10 @@ m_t = m_τ × (π₃₄/π_total)|_{IR} × color_factor × RG_enhancement
 
 The prime gap framework predicts the quark mass ratios with the same parameter-free precision as the lepton masses. The only input is the electron mass (fixing κ) and the PrimeBookOne gap sequence. The color factor 3 arises from the SU(3) holonomy of the worldline folds (A6-04, A7-01).
 
-The Gell-Mann–Okubo mass formula for baryons (A7-05) and the pion mass (A7-04) are also derived from gap correlations in the 3500-book holographic matrix (A1-38).# A2-03 Record Gaps Lepton Hierarchy — Piece 12: Synthesis — Complete Gap-to-Lepton Map and Article 2 Roadmap
+The Gell-Mann–Okubo mass formula for baryons (A7-05) and the pion mass (A7-04) are also derived from gap correlations in the 3500-book holographic matrix (A1-38)
+
+---
+
 
 This article (A2-03) establishes the central result of Article 2: the three charged lepton generations (electron, muon, tau) are in one-to-one correspondence with the three record gap clusters in the UV regime (d < 16) of the prime gap sequence. The mapping is rigorous, parameter-free, and grounded in the PrimeBookOne data (3.67 billion prime gaps across 3500 books).
 

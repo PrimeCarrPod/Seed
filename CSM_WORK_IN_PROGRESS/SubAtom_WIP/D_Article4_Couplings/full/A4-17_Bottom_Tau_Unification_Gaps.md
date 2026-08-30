@@ -6,10 +6,6 @@
 
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 01/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -65,10 +61,6 @@ The Prime Electron worldline (Article 1) traverses 3.67 billion prime gaps. The 
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 02/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -136,10 +128,6 @@ This is the boundary condition for RG evolution downward. The individual low-ene
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 03/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -203,10 +191,6 @@ The difference $\eta_b / \eta_\tau = 1.018$ encodes the QCD-induced splitting du
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 04/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -269,10 +253,6 @@ This is included in the RG evolution factor $\eta_b$.
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 05/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -330,10 +310,6 @@ This uses the gravitational gap 254 ($M_{\text{Pl}}$ scale) and the electroweak 
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 06/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -422,10 +398,6 @@ $$\left(\frac{y_b}{y_\tau}\right)_{\text{pre-modulo}} = 1.0033 \times 1.0358 = 1
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 07/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -517,10 +489,6 @@ The modulo contribution is subdominant ($<0.1\%$ of total splitting) but provide
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 08/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -585,10 +553,6 @@ becomes comparable to the gauge contributions at $M_{\text{Pl}}$, creating an in
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 09/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -670,10 +634,6 @@ The splitting is dominated by SUSY thresholds ($3.58\%$), with smaller contribut
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 10/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -737,10 +697,6 @@ This creates a predicted correlation between $\alpha_s$ and the $b$-$\tau$ split
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 11/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 
@@ -803,10 +759,6 @@ The three third-generation Yukawas ($y_t, y_b, y_\tau$) all originate from the s
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Bottom_Tau_Unification_Gaps — Piece 12/12
-## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 17:27:40 UTC
 
 ---
 

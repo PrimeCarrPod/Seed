@@ -6,10 +6,6 @@
 
 ---
 
-# CKM_CP_Violation_Gaps — Piece 01/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -87,10 +83,6 @@ where ρ(d) is the gap density at value d.
 **Author:** Jason Isaac Brodsky (California, 1976), Conducier
 ---
 
-# CKM_CP_Violation_Gaps — Piece 02/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -274,10 +266,6 @@ Let me formalize this properly.
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 03/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -555,10 +543,6 @@ Let me formulate this properly.
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 04/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -796,10 +780,6 @@ The remaining difference comes from higher-order corrections (two-loop RG, thres
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 05/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1008,10 +988,6 @@ These match experiment: |V_cb| = 0.0410 ± 0.0014, |V_ts| = 0.0405 ± 0.0010.
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 06/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1141,10 +1117,6 @@ The key point: **Gap 18 is the unique color-carrying gap shared by both t and b 
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 07/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1268,10 +1240,6 @@ Solving numerically with experimental magnitudes gives δ_CP ≈ 68.7°.
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 08/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1370,10 +1338,6 @@ J = 2 × Area = 2.94 × 10⁻⁵ ≈ 3.08 × 10⁻⁵ ✅
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 09/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1518,10 +1482,6 @@ The angle α closes the triangle:
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 10/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1596,10 +1556,6 @@ The prediction BR(μ→eγ) = 1.2 × 10⁻¹³ is below current limit (4.2×10�
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 11/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 
@@ -1691,10 +1647,6 @@ The exact unitarity V†V = 1 follows from the completeness of the gap cluster d
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# CKM_CP_Violation_Gaps — Piece 12/12
-## Article A4: A4-19 — CKM CP Violation Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 11:48:26 UTC
 
 ---
 

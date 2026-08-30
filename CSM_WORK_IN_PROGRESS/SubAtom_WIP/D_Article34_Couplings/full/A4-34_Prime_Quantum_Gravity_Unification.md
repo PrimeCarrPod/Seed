@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 01/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -36,10 +32,6 @@ The renormalization group flow of Newton's constant G(k) = G_0 / (1 + ω G_0 k²
 PIECE 01 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 02/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -66,10 +58,6 @@ The black hole horizon entropy S_BH = A/4ℓ_Pl² is derived by counting spin fo
 PIECE 02 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 03/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -96,10 +84,6 @@ M-theory on T^d has U-duality group E_{d(d)}(ℤ). The prime-adelic U-duality is
 PIECE 03 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 04/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -126,10 +110,6 @@ The KO-theory of the prime-adelic point is KO_𝔸(pt) = ∏_p KO_p(pt) × KO_�
 PIECE 04 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 05/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -156,10 +136,6 @@ The MERA tensor network for the CFT ground state maps to a prime Bruhat-Tits bui
 PIECE 05 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 06/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -186,10 +162,6 @@ The out-of-time-order correlator ⟨W(t)V(0)W(t)V(0)⟩ ∼ 1 - (1/N) e^{λ_L t}
 PIECE 06 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 07/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -216,10 +188,6 @@ Reheating occurs when the inflaton φ decays to Standard Model particles. The pr
 PIECE 07 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 08/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -246,10 +214,6 @@ The TCC requires that no mode exits the Hubble radius and re-enters with λ < �
 PIECE 08 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 09/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -276,10 +240,6 @@ Proton decay p → e⁺ π⁰ from dimension-6 operators has rate Γ_p = α_U² 
 PIECE 09 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 10/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -314,10 +274,6 @@ PIECE 09 COMPLETE — 48 lines, ~2,800 words
 PIECE 10 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 11/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 
@@ -404,10 +360,6 @@ The prime number p labels the generation and the zero γ_k labels the mass hiera
 PIECE 11 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Quantum_Gravity_Unification — Piece 12/12
-## Article A4: A4-34 — Prime Quantum Gravity Unification
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 21:44:28 UTC
 
 ---
 

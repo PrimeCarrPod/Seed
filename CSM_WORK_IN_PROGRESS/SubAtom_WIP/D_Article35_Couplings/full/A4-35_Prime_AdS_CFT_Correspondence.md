@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 01/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -36,10 +32,6 @@ The holographic RG flow is governed by the **adelic Hamilton-Jacobi equation**: 
 PIECE 01 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 02/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -66,10 +58,6 @@ The modular invariance condition Z_𝔸(-1/τ) = Z_𝔸(τ) implies the **prime 
 PIECE 02 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 03/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -96,10 +84,6 @@ The entanglement wedge W_E(A) of a boundary region A is the bulk region bounded 
 PIECE 03 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 04/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -126,10 +110,6 @@ The black hole microstates are counted by the prime-adelic partition function Z_
 PIECE 04 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 05/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -156,10 +136,6 @@ The BFSS matrix model for M-theory has action S = ∫ dt Tr(½(D_t X^i)² + ¼[X
 PIECE 05 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 06/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -186,10 +162,6 @@ The eigenstate thermalization hypothesis (ETH) states that matrix elements of ob
 PIECE 06 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 07/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -216,10 +188,6 @@ The late-time universe is the IR region of the dS bulk. The prime-adelic dark en
 PIECE 07 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 08/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -246,10 +214,6 @@ The TCC requires no mode exits the Hubble radius and re-enters with λ < ℓ_Pl.
 PIECE 08 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 09/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -276,10 +240,6 @@ The 21-cm brightness temperature δT_b(z) = 27 x_HI (1+δ) (1 - T_γ/T_s) √((1
 PIECE 09 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 10/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -314,10 +274,6 @@ PIECE 09 COMPLETE — 48 lines, ~2,800 words
 PIECE 10 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 11/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 
@@ -385,10 +341,6 @@ The zeta-regularized sum ∑_p c_p = ζ(-1) = -1/12 is universal. The real centr
 PIECE 11 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_AdS_CFT_Correspondence — Piece 12/12
-## Article A4: A4-35 — Prime AdS/CFT Correspondence
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 21:59:00 UTC
 
 ---
 

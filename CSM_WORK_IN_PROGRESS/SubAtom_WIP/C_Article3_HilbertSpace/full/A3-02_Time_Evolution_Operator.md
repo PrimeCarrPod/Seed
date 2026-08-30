@@ -1,9 +1,10 @@
-# A3-02 Time Evolution Operator — Piece 01: Overview and Hamiltonian Construction
+# A3-02_Time_Evolution_Operator — Complete Article
+## Article: A3-02_Time_Evolution_Operator
+**Generated:** 2026-08-30 06:30:34 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-## Abstract
-
-The time evolution operator U(t) = exp(-iĤt/ℏ) governs the quantum dynamics of the prime electron in the 256-dimensional Hilbert space ℋ = ℂ²⁵⁶. The Hamiltonian Ĥ is diagonal in the prime gap residue basis {|k⟩} with eigenvalues E(k) = ℏ/(κ·k) for k > 0 (and E(0) = ∞). This follows from the energy-gap relation of Article 2 (A2-01) and the proper time quantization of Article 1 (A1-01). The time evolution operator is therefore:
-
+---
 ```
 U(t) = Σ_{k=1}^{255} exp(-i t / (κ·k)) |k⟩⟨k| + |0⟩⟨0|
 ```
@@ -63,11 +64,9 @@ This is File 2 of 40 in Article 3. It builds on:
 And sets up:
 - A3-03: Prime difference basis and modular Hamiltonian
 - A3-04: Unitarity from prime distribution
-- A3-05: Entanglement from gap correlations in time evolution# A3-02 Time Evolution Operator — Piece 02: Spectral Properties and Quasi-Periodicity
+- A3-05: Entanglement from gap correlations in time evolution
 
-## 2.1 Spectrum of the Hamiltonian
-
-The Hamiltonian Ĥ = Σ_{k=1}^{255} (ℏ/(κ·k)) |k⟩⟨k| has eigenvalues:
+---
 
 ```
 E_k = ℏ/(κ·k)  for k = 1, 2, ..., 255
@@ -133,11 +132,9 @@ The frequencies ω_k = 1/(κ·k) are intimately connected to the harmonic series
 Σ_{k=1}^∞ ω_k^s = (1/κ^s) ζ(s)
 ```
 
-The truncated sums for k ≤ 255 approximate the zeta function values. The energy levels E_k = ℏω_k are the "prime gap energy spectrum" — a number-theoretic spectrum with deep connections to analytic number theory.# A3-02 Time Evolution Operator — Piece 03: Time Evolution in the Qubit Basis
+The truncated sums for k ≤ 255 approximate the zeta function values. The energy levels E_k = ℏω_k are the "prime gap energy spectrum" — a number-theoretic spectrum with deep connections to analytic number theory.
 
-## 3.1 Hamiltonian in the 8-Qubit Tensor Product
-
-From A3-01, ℋ ≅ (ℂ²)⊗⁸ with basis |k⟩ = |b₇b₆b₅b₄b₃b₂b₁b₀⟩ where k = Σ b_i 2^i. The Hamiltonian is diagonal in the computational basis:
+---
 
 ```
 Ĥ = Σ_{b∈{0,1}⁸} E(b) |b⟩⟨b|
@@ -209,11 +206,9 @@ The phase accumulated by qubit i over time t is not independent — it's entangl
 φ(b) = -t/(κ·k(b))
 ```
 
-This means the "energy" of a computational basis state is determined by the integer value of its bits. This is a concrete realization of the idea that **quantum mechanics emerges from arithmetic**: the prime gap residue k determines the energy, and the binary expansion of k determines the qubit state.# A3-02 Time Evolution Operator — Piece 04: Connection to Worldline Path Integral (A1-18)
+This means the "energy" of a computational basis state is determined by the integer value of its bits. This is a concrete realization of the idea that **quantum mechanics emerges from arithmetic**: the prime gap residue k determines the energy, and the binary expansion of k determines the qubit state.
 
-## 4.1 Worldline Path Integral Recap
-
-Article 1 (A1-18) formulated the worldline path integral:
+---
 
 ```
 Z = ∫ D[x(τ)] exp(i S[x]/ℏ)
@@ -308,11 +303,9 @@ where S_inst is the instanton action. For the prime gap system, instantons are r
 | Vertices = interactions | V = off-diagonal transitions |
 | Instantons = tunneling | V_inst = missing gap transitions |
 
-The 256-dimensional time evolution operator is the **Hamiltonian formulation** of the worldline path integral, with the prime gap sequence providing the discrete time steps.# A3-02 Time Evolution Operator — Piece 05: Energy Scale Dependence and RG Flow
+The 256-dimensional time evolution operator is the **Hamiltonian formulation** of the worldline path integral, with the prime gap sequence providing the discrete time steps.
 
-## 5.1 Effective Hamiltonian at Scale E
-
-The full 256-dimensional Hamiltonian is:
+---
 
 ```
 Ĥ = Σ_{k=1}^{255} E(k) |k⟩⟨k| + E(0)|0⟩⟨0|
@@ -401,11 +394,9 @@ For muon scale: U_μ(t) = e^{-i E_e t/ℏ}|2⟩⟨2| + e^{-i E_μ t/ℏ}|4⟩⟨
 For tau scale: U_τ(t) includes |6⟩ phase factor
 For GUT scale: U_GUT(t) = Σ_{k=1}^{255} e^{-i E(k)t/ℏ} |k⟩⟨k|
 
-The complexity of time evolution **grows with energy** — more frequencies, more quasi-periodic structure.# A3-02 Time Evolution Operator — Piece 06: Vertex Operators and Interactions
+The complexity of time evolution **grows with energy** — more frequencies, more quasi-periodic structure.
 
-## 6.1 Need for Off-Diagonal Evolution
-
-The free time evolution U_0(t) = exp(-iĤt/ℏ) is diagonal — it preserves the residue quantum number k. Physical processes (pair creation, scattering, decays) require transitions between different k. These are mediated by **vertex operators** V.
+---
 
 ## 6.2 Vertex Operators from Article 1
 
@@ -507,11 +498,9 @@ This is the microscopic origin of:
 - Sterile neutrino mass suppression (A2-20)
 - Dark matter stability (A2-15)
 
-The missing gap d=12 is a **selection rule** in the 256-dimensional Hilbert space.# A3-02 Time Evolution Operator — Piece 07: Modular Flow and Thermal Time
+The missing gap d=12 is a **selection rule** in the 256-dimensional Hilbert space.
 
-## 7.1 Modular Hamiltonian from Gap Distribution
-
-Article 1 (A1-33) defined the modular Hamiltonian K = -log ρ for the worldline state. In the 256-dimensional space, the density matrix for the prime gap state is:
+---
 
 ```
 ρ = Σ_{k=0}^{255} p_k |k⟩⟨k|
@@ -610,11 +599,9 @@ The modular Hamiltonian K = -Σ log(p_k)|k⟩⟨k| has eigenvalues:
 
 The UV states (large k, high energy) have larger K_k (higher "modular energy"). The IR states (small k) have smaller K_k. The modular flow thus mixes UV and IR — a characteristic feature of non-commutative geometry and quantum gravity.
 
-This UV/IR mixing in modular flow is the 256-dimensional analog of the **holographic renormalization** in AdS/CFT.# A3-02 Time Evolution Operator — Piece 08: Symmetry Transformations and Conserved Quantities
+This UV/IR mixing in modular flow is the 256-dimensional analog of the **holographic renormalization** in AdS/CFT.
 
-## 8.1 Symmetries of the Time Evolution
-
-The free time evolution U_0(t) = exp(-iĤt/ℏ) commutes with Ĥ by construction. The symmetries of U_0(t) are the symmetries of Ĥ.
+---
 
 From A3-01 (Piece 06), the Hamiltonian Ĥ = Σ E(k)|k⟩⟨k| has symmetry group:
 - **U(1) phases**: e^{iθ_k} for each k (255 independent phases)
@@ -720,11 +707,9 @@ Article 6 (A6-01 through A6-40) will show that the residual U(1) symmetries corr
 - SU(2)_L: acts on qubits 1-2 (twin/cousin subspace)
 - SU(3)_c: acts on qubits 3-5 (color subspace)
 
-The symmetry breaking by vertices gives masses to gauge bosons via the Higgs mechanism (A6-06). The 256-dimensional time evolution encodes the full gauge symmetry structure.# A3-02 Time Evolution Operator — Piece 09: Spectral Form Factor and Quantum Chaos
+The symmetry breaking by vertices gives masses to gauge bosons via the Higgs mechanism (A6-06). The 256-dimensional time evolution encodes the full gauge symmetry structure.
 
-## 9.1 Spectral Form Factor
-
-The spectral form factor (SFF) is a diagnostic of quantum chaos:
+---
 
 ```
 g(t) = |Tr(U(t))|² / (Tr(I))² = |Σ_{k=1}^{255} e^{-iω_k t}|² / 255²
@@ -826,11 +811,9 @@ The prime gap framework **realizes ETH** through the vertex-induced mixing. The 
 | ETH | Trivial for diagonal ops | Non-trivial |
 | Integrability | Integrable (diagonal) | Non-integrable |
 
-The prime electron system is **integrable at the free level** but **chaotic with interactions** — a hallmark of quantum gravity where the free theory is simple but interactions (vertices, instantons) generate complexity.# A3-02 Time Evolution Operator — Piece 10: Decoherence and Open System Dynamics
+The prime electron system is **integrable at the free level** but **chaotic with interactions** — a hallmark of quantum gravity where the free theory is simple but interactions (vertices, instantons) generate complexity.
 
-## 10.1 Decoherence from Gap Randomness
-
-Article 3 (A3-06) will derive decoherence from the randomness of prime gaps. Here we preview the connection to time evolution.
+---
 
 The prime gap sequence is deterministic but pseudorandom (passes all statistical tests). When the electron interacts with the "environment" of unobserved gaps, its 256-dimensional state decoheres.
 
@@ -922,11 +905,9 @@ A decoherence-free subspace (DFS) is a subspace where dephasing is absent. For d
 
 More interestingly, the **symmetry-protected subspaces** from the U(1)^{255} symmetry (Piece 08) are decoherence-free. The total charge Q_total = I is conserved, giving a 1-dimensional DFS (the identity).
 
-With vertex-induced transitions, the DFS structure becomes more complex and will be analyzed in A3-06.# A3-02 Time Evolution Operator — Piece 11: Experimental Signatures
+With vertex-induced transitions, the DFS structure becomes more complex and will be analyzed in A3-06.
 
-## 11.1 Time Evolution Signatures in Precision Measurements
-
-The time evolution operator U(t) = exp(-iĤt/ℏ) with Ĥ = Σ E(k)|k⟩⟨k| has experimental consequences in precision measurements.
+---
 
 ## 11.2 Electron g-Factor and Anomalous Magnetic Moment
 
@@ -1040,11 +1021,9 @@ with Δm ~ exp(-S_inst) giving τ_nn̄ ~ 10⁸ s (A2-17).
 | n-n̄ oscillation | τ = 2.7×10⁸ s | ESS/ILL future |
 | BSM leptons | L₄~2.37, L₅~2.96, L₆~4.15 GeV | LHC searches |
 
-All predictions are parameter-free — derived entirely from the prime gap sequence.# A3-02 Time Evolution Operator — Piece 12: Final Synthesis and Article 3 Roadmap Update
+All predictions are parameter-free — derived entirely from the prime gap sequence.
 
-## 12.1 Summary: The Time Evolution Operator is Determined
-
-We have established that the time evolution operator U(t) = exp(-iĤt/ℏ) for the prime electron is completely determined by:
+---
 
 1. **Hilbert space**: ℋ = ℂ²⁵⁶ from 8-bit prime gaps (A3-01)
 2. **Hamiltonian**: Ĥ = Σ_{k=1}^{255} (ℏ/(κ·k)) |k⟩⟨k| from energy-gap relation (A2-01)
@@ -1150,8 +1129,10 @@ The prime electron framework provides a **first-principles derivation of quantum
 
 > "The prime electron ticks in prime gaps. Its time evolution is the dance of 256 phases, choreographed by the primes. Vertices are the steps where the dance changes partners. The music is the Riemann zeta function. The audience is the universe."
 
----
 
 **Article 3, File 2 of 40: A3-02 Time_Evolution_Operator.md — COMPLETE**
 
 *12 pieces, ≥350 lines concatenated. Ready for zip, commit, and push.*
+
+---
+

@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 01/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -74,14 +70,8 @@ GapStd completes the Federation Pentad with A3-23 (Core), A3-24 (Security), A3-2
 
 ---
 
-*End of Piece 01*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 02/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -272,14 +262,8 @@ Gap-semantic versioning ties version increments to gap-class: MAJOR changes requ
 
 ---
 
-*End of Piece 02*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 03/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -495,14 +479,8 @@ Each control mapping reduces to a set of GCS constraints. By Theorem 36.4, GCS s
 
 ---
 
-*End of Piece 03*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 04/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -706,14 +684,8 @@ Gap-compatibility rules are derived from gap-class hierarchy. Within a gap-class
 
 ---
 
-*End of Piece 04*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 05/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -982,14 +954,8 @@ Test cases are generated from the standard's schema (GASL) and gap-constraints (
 
 ---
 
-*End of Piece 05*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 06/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -1247,14 +1213,8 @@ Gap-Protocol Standards specify exact wire formats, state machines, and attestati
 
 ---
 
-*End of Piece 06*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 07/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -1489,14 +1449,8 @@ Certification attestation is signed by Gap-Certification-Authority (Gap-PKI root
 
 ---
 
-*End of Piece 07*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 08/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -1795,14 +1749,8 @@ Council representation is weighted by gap-density, which by the Prime Number The
 
 ---
 
-*End of Piece 08*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 09/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -2092,14 +2040,8 @@ Gap-range assignment is bijective. Customizations are scoped to tenant's gap-ran
 
 ---
 
-*End of Piece 09*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 10/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -2427,14 +2369,8 @@ Gap-royalty-free for CORE/PLATFORM ensures critical infrastructure accessibility
 
 ---
 
-*End of Piece 10*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 11/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -2827,14 +2763,8 @@ Gap-Cryptographic Profiles specify algorithm suites per gap-class with clear mig
 
 ---
 
-*End of Piece 11*
----
 ---
 
-# Quantum_Federation_Standards_Prime_Gaps — Piece 12/12
-## Article 3: A3-37 — Quantum Federation Standards Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-24 22:28:09 UTC
 
 ---
 
@@ -3105,9 +3035,6 @@ The Prime Gap Standardization Principle is the standardization analog of the One
 
 ---
 
-*End of Piece 12*
----
 *End of Article 3: A3-37 — Quantum Federation Standards Prime Gaps*
----
 ---
 

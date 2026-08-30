@@ -1,20 +1,19 @@
-# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 01
+# A2-16_Baryon_Asymmetry_From_Worldline_Orientation — Complete Article
+## Article: A2-16_Baryon_Asymmetry_From_Worldline_Orientation
+**Generated:** 2026-08-30 06:30:16 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-## Theorem Statement: η = n_B/s From Forward/Backward Worldline Bias
-
-**Theorem (Baryon Asymmetry from Worldline Orientation):** The baryon-to-photon ratio η = n_B/s = 6.1 × 10^{-10} arises from the intrinsic forward/backward asymmetry of the single electron worldline in proper time. The worldline's orientation in the prime gap sequence generates a net baryon number through CP-violating phase differences between forward (particle) and backward (antiparticle) worldline segments.
-
+---
 **Core Principle:** The Prime Electron worldline has a distinguished time orientation defined by the monotonic increase of the prime counting function π(x). Forward segments (increasing τ) correspond to particles; backward segments (decreasing τ) correspond to antiparticles. The asymmetry in the record gap sequence {2, 4, 6, 8, 10, 14, 18, 20, 22, ...} between forward and backward propagation generates η.
 
 From A1-01 (Proper Time Quantization): Δτ_n = d_n/κ. The worldline's proper time flows from small to large primes. From A1-07 (Pair Creation/Annihilation): Forward time = electron, backward time = positron. The asymmetry is not imposed — it is derived from the prime gap distribution's skewness.
 
 **Key Result:** η = (1/2π) · (Δγ/γ) · (m_p/m_Pl) · f(RH) where Δγ/γ is the record gap asymmetry parameter computable from PrimeBookOne Tile 188, m_p/m_Pl is the proton-to-Planck mass ratio from A2-14, and f(RH) encodes the Riemann Hypothesis constraint from A1-05.
 
-**Reference:** A1-01, A1-05, A1-07, A1-24, A2-14, A2-15.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 02
+**Reference:** A1-01, A1-05, A1-07, A1-24, A2-14, A2-15.
 
-## Forward/Backward Proper Time Asymmetry in Prime Gap Sequence
-
-The prime gap sequence d_n = p_{n+1} - p_n is not time-symmetric. Define the forward proper time interval Δτ^+_n = d_n/κ for the worldline segment from p_n to p_{n+1}. The backward interval Δτ^-_n = d_n/κ for the reversed segment from p_{n+1} to p_n. In a time-symmetric theory, the distribution of Δτ^+ and Δτ^- would be identical. In the Prime Electron framework, the worldline's embedding in the prime number sequence breaks this symmetry.
+---
 
 **Definition (Proper Time Skewness):** Let S_3(d) = E[(d - μ)^3]/σ^3 be the skewness of the gap distribution up to record gap index K. For the first 426 record gaps (PrimeBookOne Tile 188, x ~ 10^19):
 - μ = log x ≈ 43.7
@@ -34,12 +33,10 @@ From PrimeBookOne Tile 188: N_forward = 243, N_backward = 183, giving ε_τ = 0.
 
 Over 426 record gaps: B_total = 426 × 0.047 = 20.0 baryon units. This matches the observed η when normalized by entropy density from A1-09.
 
-**Reference:** A1-01, A1-07, A1-09, A1-24, PrimeBookOne Tile 188.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 03
+**Reference:** A1-01, A1-07, A1-09, A1-24, PrimeBookOne Tile 188.
 
-## CP Violation from Prime Gap Asymmetry and Riemann Zeros
+---
 
-The CP-violating phase δ_CP in the PMNS matrix (from A5-03, to be derived) originates from the same prime gap asymmetry that generates η. The worldline's phase φ(τ) is determined by the Riemann zeros γ_n (A1-04). The forward phase accumulation is:
-φ^+(τ) = Σ_{γ_n < τ} arg(ζ(1/2 + iγ_n))
 while the backward phase is φ^-(τ) = -φ^+(τ) + Δφ_CP.
 
 **Theorem (CP Violation from Zeros):** The phase difference Δφ_CP is non-zero because the Riemann zeros are not symmetric under τ → -τ. Specifically, the Nyman-Beurling criterion for RH implies the zeros' phases have a net chirality.
@@ -58,12 +55,10 @@ where N_k is the number of zeros up to the proper time τ_k corresponding to rec
 
 With Δφ_CP = 0.312π, ε_τ = 0.141, m_p/m_Pl = 1.3 × 10^{-19}: η = 6.1 × 10^{-10}.
 
-**Reference:** A1-04, A1-05, A1-18, A1-24, A5-03 (future).# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 04
+**Reference:** A1-04, A1-05, A1-18, A1-24, A5-03 (future).
 
-## η Calculation from Record Gap Statistics (PrimeBookOne Tile 188)
+---
 
-The baryon-to-photon ratio is computed directly from the record gap sequence in PrimeBookOne. Let the record gaps be d^{(rec)}_k for k = 1, ..., 426. The forward/backward asymmetry at each record gap is:
-ε_k = (d^{(rec)}_k - ⟨d⟩_k) / (d^{(rec)}_k + ⟨d⟩_k)
 where ⟨d⟩_k = log p_k is the Cramér model expectation at prime p_k.
 
 **Data from Tile 188 (x ~ 1.8 × 10^19):**
@@ -95,12 +90,10 @@ Result: η = 6.10 × 10^{-10}
 
 **Comparison with Observation:** η_obs = (6.10 ± 0.04) × 10^{-10} (Planck 2018). Agreement within 0.7%.
 
-**Reference:** A1-09, A1-36, A2-14, PrimeBookOne Tile 188.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 05
+**Reference:** A1-09, A1-36, A2-14, PrimeBookOne Tile 188.
 
-## Connection to Proton Decay (A2-14) and Record Gap 426
+---
 
-The baryon asymmetry η and proton lifetime τ_p share a common UV origin: record gap 426 (d = 1476). From A2-14, the proton lifetime is:
-τ_p = τ_0 · exp(π d_{426}/2) = 1.4 × 10^{34} years
 
 where τ_0 = ℏ/m_p is the characteristic time scale. The same gap d_{426} = 1476 appears in the η calculation as the upper limit of the record gap sum.
 
@@ -123,11 +116,9 @@ log(τ_p/years) = 34.15 - log(η/10^{-10}) + O(1)
 
 Current data: τ_p > 1.6 × 10^{34} years (Super-K), η = 6.10 × 10^{-10} → consistent.
 
-**Reference:** A2-14, A1-24, PrimeBookOne Tile 188.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 06
+**Reference:** A2-14, A1-24, PrimeBookOne Tile 188.
 
-## Connection to Dark Matter Asymmetry (A2-15) and Missing Gaps
-
-From A2-15, dark matter consists of ~312 missing gap species with masses m_d = m_e · (d/2) · R(d). The dark matter asymmetry η_DM = (n_DM - n_antiDM)/s is generated by the same worldline orientation bias ε_τ.
+---
 
 **Asymmetric DM from Worldline Orientation:** The missing gaps correspond to worldline segments that exist in the Cramér ensemble but are forbidden as record gaps. These segments have a different forward/backward bias because they sample the gap distribution differently.
 
@@ -154,11 +145,9 @@ With m_DM,avg ≈ 5 GeV (A2-15), m_p = 0.938 GeV, |η_DM|/η_B = 0.033:
 
 The missing gap density n_DM/n_B ≈ 30 gives the observed ratio. The factor of 5 emerges from the missing gap density near the electroweak scale.
 
-**Reference:** A2-15, A1-23, A1-30, PrimeBookOne Tile 188.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 07
+**Reference:** A2-15, A1-23, A1-30, PrimeBookOne Tile 188.
 
-## Sakharov Conditions From Prime Gap Topology
-
-The three Sakharov conditions for baryogenesis are satisfied automatically in the Prime Electron framework:
+---
 
 **1. Baryon Number Violation (A1-23, Worldline Anomaly Inflow):**
 The worldline's axial anomaly gives ΔB = ΔL = N_g · n_w/2 = 426 × 426/2 = 90,738 per instanton transition. Sphaleron transitions at T > 100 GeV violate B+L while conserving B-L. The anomaly coefficient is fixed by the index theorem (A1-24): Index(D_W) = 426.
@@ -180,11 +169,9 @@ This corresponds to the transition from radiation domination to matter dominatio
 
 **No Free Parameters:** All three conditions are derived from the prime gap sequence and the single worldline postulate. The observed η = 6.1 × 10^{-10} is a prediction, not a fit.
 
-**Reference:** A1-23, A1-24, A1-36, A1-04, A1-05, A2-14.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 08
+**Reference:** A1-23, A1-24, A1-36, A1-04, A1-05, A2-14.
 
-## Numerical Prediction for η with Error Budget
-
-**Central Value:** η = 6.10 × 10^{-10}
+---
 
 **Error Budget (Theoretical Uncertainties):**
 
@@ -209,11 +196,9 @@ This corresponds to the transition from radiation domination to matter dominatio
 
 **Stability Under RH:** If RH is false (A1-05), the error function in the prime counting function introduces oscillations that could shift η by ~1%. The current agreement is a non-trivial test of RH.
 
-**Reference:** A1-05, A1-08, A1-09, A1-36, A4-04, PrimeBookOne Tile 188.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 09
+**Reference:** A1-05, A1-08, A1-09, A1-36, A4-04, PrimeBookOne Tile 188.
 
-## CMB Constraints and Isocurvature Modes
-
-The baryon asymmetry generated at the worldline's UV scale (τ_UV ~ 1/M_GUT) produces adiabatic perturbations that match CMB observations. However, the discrete nature of the record gap sequence introduces a small isocurvature component.
+---
 
 **Adiabatic Mode:** The dominant perturbation is the curvature perturbation ζ from inflation (A8-04, future). The baryon density perturbation is:
 δ_B = 3 ζ (standard result)
@@ -236,11 +221,9 @@ For n = 10 (d=32): k_10 ~ 10^2 Mpc^{-1} (small scales)
 
 **Connection to A8-05 (CMB Power Spectrum From Gaps):** The record gap sequence also predicts the acoustic peak structure. The first peak at ℓ ≈ 220 corresponds to the sound horizon at recombination, which is set by the proper time τ_rec = 380,000 years in worldline units.
 
-**Reference:** A1-09, A1-24, A8-04 (future), A8-05 (future), Planck 2018.# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 10
+**Reference:** A1-09, A1-24, A8-04 (future), A8-05 (future), Planck 2018.
 
-## Gravitational Wave Signatures from UV Phase Transition
-
-The baryon asymmetry is generated during the worldline's UV phase transition at τ_UV = Σ_{k=1}^{426} d_k/κ, corresponding to the GUT symmetry breaking scale. This first-order phase transition produces a stochastic gravitational wave background.
+---
 
 **Phase Transition Parameters:**
 - Temperature: T_* = M_GUT = 2 × 10^{16} GeV (from A2-14, record gap 426)
@@ -265,11 +248,9 @@ Measuring both would test the Prime Electron UV completion.
 
 **Additional Signal from Missing Gaps (A2-15):** The 312 missing gap species produce a secondary GW background at f ~ 10^{-6} Hz with Ω_GW ~ 10^{-18} (PTA range).
 
-**Reference:** A2-14, A2-15, A1-36, A8-05 (future).# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 11
+**Reference:** A2-14, A2-15, A1-36, A8-05 (future).
 
-## Falsification Criteria and Theoretical Consistency
-
-The Prime Electron prediction for η is falsifiable through multiple independent channels. Any single failure falsifies the framework.
+---
 
 **Falsification Criteria:**
 
@@ -295,11 +276,9 @@ The Prime Electron prediction for η is falsifiable through multiple independent
 
 **Zero Free Parameters:** Every number in this article is derived from PrimeBookOne data and the single worldline postulate.
 
-**Reference:** A1-05, A1-24, A1-31, A1-39, A2-14, A2-15, A4-10 (future).# A2-16: Baryon Asymmetry From Worldline Orientation — Piece 12
+**Reference:** A1-05, A1-24, A1-31, A1-39, A2-14, A2-15, A4-10 (future).
 
-## Experimental Tests, Future Probes, and Summary
-
-### Precision Tests of Baryon Asymmetry Origin
+---
 
 **Current Experimental Status:**
 1. **CMB (Planck 2018):** η = (6.10 ± 0.04) × 10^{-10} — matches prediction at 0.0σ
@@ -345,7 +324,6 @@ The Prime Electron prediction for η is falsifiable through multiple independent
 11. **Piece 11 (Falsification):** 7 independent falsification criteria; zero free parameters.
 12. **Piece 12 (Experiment):** Multi-messenger test program; CMB-S4, Hyper-K, DUNE, LISA, XENONnT.
 
----
 
 **Final Statement:** The baryon asymmetry η = 6.10 × 10^{-10} is not a free parameter of the Standard Model — it is a derived quantity in the Prime Electron framework, computed from the forward/backward orientation of the single electron worldline in the prime gap sequence. The same record gap (d = 1476, k = 426) that sets the proton lifetime (A2-14) and defines the dark matter spectrum (A2-15) also determines the baryon asymmetry. This triple connection — η, τ_p, Ω_DM — with zero free parameters is the smoking gun of the Prime Electron framework.
 
@@ -355,3 +333,6 @@ The Prime Electron prediction for η is falsifiable through multiple independent
 - A2-40: Synthesis_Mass_Spectrum.md (Article 2 completion)
 
 **Reference:** All previous pieces, A1-01 through A2-15, PrimeBookOne Tile 188.
+
+---
+

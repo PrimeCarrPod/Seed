@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 01/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -55,10 +51,6 @@ where H = Σ_p H_p is the sum of prime Hamiltonians. Each prime contributes a la
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 02/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -98,10 +90,6 @@ Central charge c = 1 - 6/(p(p+1)).
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 03/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -143,10 +131,6 @@ S(A) = (Area(γ_A)/4G) × (1 + Σ_p c_p log(p))
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 04/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -191,10 +175,6 @@ Optimized over prime parameters θ_p.
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 05/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -237,10 +217,6 @@ for ε = 1/poly(p). This relates to the spectral gap problem in p-adic CFTs.
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 06/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -278,10 +254,6 @@ where U_p ∈ SU(3)_{ℚ_p}. The sign problem is absent for p ≡ 3 (mod 4) due 
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 07/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -323,10 +295,6 @@ Entanglement swapping at each prime node. The rate scales as R ~ exp(-L/L_att) �
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 08/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -370,10 +338,6 @@ This bounds the prime computational power of the universe.
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 09/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -422,10 +386,6 @@ D_KL(P||Q) = Σ_p D_KL(P_p||Q_p)
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 10/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -462,10 +422,6 @@ The p-adic mode functions f_{p,k} are eigenfunctions of the p-adic Laplacian. Li
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 11/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -509,10 +465,6 @@ The prime information I_p is the p-adic mutual information. The total work is bo
 
 ---
 
-# Prime_Topological_Quantum_Computing — Piece 12/12
-## Article A4: A4-29 — Prime Topological Quantum Computing
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

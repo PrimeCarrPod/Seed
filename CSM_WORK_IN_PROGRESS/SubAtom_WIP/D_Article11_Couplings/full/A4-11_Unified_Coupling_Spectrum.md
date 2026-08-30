@@ -6,16 +6,8 @@
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 01/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 01/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 21:01:21 UTC
 
 ---
 
@@ -41,16 +33,8 @@ The electron, as the lightest charged lepton, serves as the fundamental probe of
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 02/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 02/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 21:01:43 UTC
 
 ---
 
@@ -91,16 +75,8 @@ where K_i are kernel functions derived from the electron's self-energy diagrams.
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 03/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 03/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 21:01:58 UTC
 
 ---
 
@@ -145,16 +121,8 @@ where F(x) = (1/2π) ∫₀¹ du u(1-u)/(1+u²x²) encodes the Schwinger integra
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 04/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 04/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 21:02:11 UTC
 
 ---
 
@@ -190,16 +158,8 @@ The prime density ρ(p) ~ 1/ln p combined with gap weights reproduces G_F = 1.16
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 05/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 05/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 21:02:22 UTC
 
 ---
 
@@ -241,16 +201,8 @@ The top quark mass m_t = 172.76 GeV corresponds to the largest prime gap contrib
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 06/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 06/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 21:03:06 UTC
 
 ---
 
@@ -284,16 +236,8 @@ The prime gap quartic sum naturally produces the observed dark energy scale.
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 07/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 07/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 21:03:21 UTC
 
 ---
 
@@ -329,16 +273,8 @@ This is testable in next-generation detectors (Hyper-Kamiokande, DUNE).
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 08/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 08/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 21:03:35 UTC
 
 ---
 
@@ -374,16 +310,8 @@ The prime vacuum polarization Π(q²) = (α/3π) Σₖ gₖ ln(q²/pₖ²) for q
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 09/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 09/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 21:04:32 UTC
 
 ---
 
@@ -422,16 +350,8 @@ The baryon asymmetry η_B = n_B/n_γ = 6.1×10⁻¹⁰ arises from CP-violating 
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 10/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 10/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 21:04:51 UTC
 
 ---
 
@@ -469,16 +389,8 @@ The observed O(10) M_⊙ PBH candidates correspond to gaps gₖ ≈ 100 at pₖ 
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 11/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 11/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 21:05:05 UTC
 
 ---
 
@@ -524,16 +436,8 @@ Peak at f_* ≈ 10⁻⁹ Hz (LISA) from electroweak prime transition.
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 12/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 21:00:45 UTC
 
 ---
-# Unified Coupling Spectrum — Piece 12/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 21:05:37 UTC
 
 ---
 

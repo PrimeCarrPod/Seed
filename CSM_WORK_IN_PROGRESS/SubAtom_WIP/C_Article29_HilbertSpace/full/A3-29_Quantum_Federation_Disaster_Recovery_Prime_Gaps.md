@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 01/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 # Disaster Recovery from Prime Gap Topology: Gap-Attestation Backup and Topology Reconstruction
@@ -76,10 +72,6 @@ The **gap-distance** to the nearest surviving attestation. The **Gap-Recovery Ti
 
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 02/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 # Tenant Gap-Snapshot Vault (TGSV): Immutable Backup Architecture
@@ -153,10 +145,6 @@ TGSV enforces **write-once, read-many (WORM)** semantics at the gap-index level:
 
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 03/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 # Tenant Recovery Policy (TRP): Declarative Disaster Recovery from Gap Constraints
@@ -239,10 +227,6 @@ Inheritance: $	ext{TRP}_{	ext{effective}} = 	ext{TRP}_{	ext{fed}} \oplus 	ext{TR
 
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 04/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 04 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -315,10 +299,6 @@ Classical metadata M_m (network config, ML models, security policies) is reconst
 - This ensures **bit-exact recovery** of classical state, not just approximate
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 05/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 05 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -391,10 +371,6 @@ H_iso = span{ |n> : n in R_T and n not in compromised-set }
 The projection operator P_iso = sum_{n in R_T'} |n><n| isolates the tenant from compromised gap-indices. Reconstruction proceeds within H_iso via GCH. The compromised gap-indices are quarantined and subjected to **Gap-Attestation Forensics (GAF)**.
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 06/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 06 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -470,10 +446,6 @@ PrimeBookOne directory boundaries (0.0, 1.0, 2.0, 3.0) are **ultimate firebreaks
 - Recovery in one directory proceeds independently
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 07/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 07 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -562,10 +534,6 @@ This attestation proves:
 TTA_T is the **recovery completion certificate**—tenants resume operations only after receiving valid TTA.
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 08/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 08 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -642,10 +610,6 @@ Every GDCE experiment produces an **audit trail** in the TGSV:
 This provides **regulatory-grade evidence** of continuous recovery validation—auditors can verify at any gap-index that the federation's DR capabilities meet stated SLAs.
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 09/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 09 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -737,10 +701,6 @@ PrimeBookOne's **4.0 directory** (and beyond) extends the UV completion of the p
 **Theorem (Directory Recovery Completeness)**: For any K directories, the federation can tolerate K-1 simultaneous directory failures and fully recover all tenant topologies from the single surviving directory, provided the surviving directory's TGSV has >= 50% gap-density (satisfied by construction).
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 10/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 10 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -841,10 +801,6 @@ GIR = {
 GIR is **gap-signed** and stored in TGSV at the incident's gap-timestamp. It becomes part of the federation's immutable incident history—auditable, reproducible, and gap-topologically grounded.
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 11/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 11 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -918,10 +874,6 @@ The DR economics layer plugs directly into A3-28:
 - **Governance** (A3-28 Piece 11): Gap-weighted voting sets pricing coefficients
 ---
 
-# Quantum_Federation_Disaster_Recovery_Prime_Gaps — Piece 12/12
-## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Piece:** 12 of 12
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 

@@ -6,17 +6,8 @@
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 01/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 01/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 04:11:56 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -72,17 +63,8 @@ The function N(μ) = max{n : μ(n) ≤ μ} gives the prime index cutoff for a gi
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 02/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 02/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 04:12:35 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -148,17 +130,8 @@ where the instanton action S_d(μ) = (2π/C₂) · d · ln(N(μ)) and the sum ru
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 03/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 03/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 04:13:22 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -229,17 +202,8 @@ This is verified numerically using PrimeBookOne data up to Tile 188.
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 04/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 04/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 04:13:48 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -308,17 +272,8 @@ M_Z = 91.1876 ± 0.0021 GeV (experiment: 91.1876 ± 0.0021 GeV)
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 05/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 05/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 04:14:15 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -377,17 +332,8 @@ This provides a **dynamical explanation** for the hierarchy problem: gravity is 
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 06/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 06/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 04:14:37 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -444,17 +390,8 @@ These three conditions uniquely determine the flow to the UV fixed point. No add
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 07/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 07/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 04:14:54 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -514,17 +451,8 @@ At N_EW = 1.8×10¹²: S_stiff = 2.3×10¹⁴ → v = 246.2 GeV (matches 246.22 
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 08/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 08/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 04:15:16 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -582,17 +510,8 @@ Experiment (FNAL 2023): a_μ = 116592055(23) × 10⁻¹¹
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 09/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 09/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 04:15:45 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -648,17 +567,8 @@ m_DM = 1.2 TeV, σ_SI = 2.3 × 10⁻⁴⁷ cm²
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 10/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 10/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 04:16:07 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -705,17 +615,8 @@ SF(Σ) = Σ_i (α_i⁻¹(Λ_GUT) - α_i⁻¹(m_e)) / (C₂/2π)
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 11/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 11/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 04:16:20 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 
@@ -765,17 +666,8 @@ There exists a unique, parameter-free unified coupling spectrum Σ: ℕ → ℝ�
 
 ---
 
-# Unified_Coupling_Spectrum — Piece 12/12
-## Article A4: A4-11 — Unified Coupling Spectrum
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 04:09:34 UTC
 
 ---
-# A4-11 Unified Coupling Spectrum — Piece 12/12
-## Article 4: A4-11 — Unified Coupling Spectrum
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 04:18:10 UTC
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
 
 ---
 

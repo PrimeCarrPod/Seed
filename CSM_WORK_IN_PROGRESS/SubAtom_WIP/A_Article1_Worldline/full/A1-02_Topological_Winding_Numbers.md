@@ -32,7 +32,9 @@ For the discrete worldline with vertices at primes p_n and proper-time steps Δ�
 
 Q_N = (1/2π) Σ_{n=1}^N ΔQ_n
 
-where ΔQ_n is the topological charge accumulated at step n.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 02)
+where ΔQ_n is the topological charge accumulated at step n.
+---
+
 
 ## 2. PRIME GAPS AS WINDING SECTORS
 
@@ -59,7 +61,9 @@ Record gaps (maximal d_n for given p_n) mark where the winding number jumps by i
 | 18 | p=523 | ±9/πΛ | Large instanton |
 | 20 | p=887 | ±10/πΛ | Large instanton |
 
-Each record gap corresponds to the worldline crossing a topological sector boundary.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 03)
+Each record gap corresponds to the worldline crossing a topological sector boundary.
+---
+
 
 ## 3. INSTANTON CHARGE FROM RECORD GAPS
 
@@ -93,7 +97,9 @@ Sum of record gap contributions in 0.0:
 
 I_0.0 = (1/πΛ) · (1 + 2 + 3 + 4 + 7 + 9 + 10 + 11 + 17 + ...) ≈ 64/πΛ
 
-This is the total topological charge of the electron IR worldline segment.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 04)
+This is the total topological charge of the electron IR worldline segment.
+---
+
 
 ## 4. WINDING NUMBER SPECTRUM ACROSS DIRECTORIES
 
@@ -129,7 +135,9 @@ Q_book = Q_total / 3500
 
 For full corpus: Q_total ≈ 1000/πΛ → Q_book ≈ 0.29/πΛ
 
-Each book = one coherent topological sector of the worldline.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 05)
+Each book = one coherent topological sector of the worldline.
+---
+
 
 ## 5. GAUGE FIELD FROM WORLDLINE WINDING
 
@@ -157,7 +165,9 @@ Each record gap carries a quantized flux:
 
 Φ_n = ∮ A_μ dx^μ = ΔQ_n · 2π = d_n/Λ
 
-The flux is proportional to the prime gap — larger gaps = larger topological flux.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 06)
+The flux is proportional to the prime gap — larger gaps = larger topological flux.
+---
+
 
 ## 6. SELF-INTERSECTION INDEX THEOREM
 
@@ -191,7 +201,9 @@ The index equals the total winding number Q_total.
 
 In directory 0.0: 9 record gaps → 9 sign changes → Index = 9 (mod 2) = 1
 
-The electron worldline has odd topological index = 1 (mod 2), consistent with a single electron.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 07)
+The electron worldline has odd topological index = 1 (mod 2), consistent with a single electron.
+---
+
 
 ## 7. CHERN-SIMONS TERM FROM PRIME GAPS
 
@@ -230,7 +242,9 @@ At directory boundaries, k takes integer values:
 | 2.1 | ~10^10 | 13 | 13 |
 | 3.0 | ~10^11 | 15 | 15 |
 
-The odd integers correspond to the electron's fermionic nature.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 08)
+The odd integers correspond to the electron's fermionic nature.
+---
+
 
 ## 8. ANOMALY INFLOW FROM GAP SEQUENCE
 
@@ -264,7 +278,9 @@ The electron worldline anomaly cancels via the anomaly inflow from the bulk (spa
 
 Σ_n d_n (mod 2) = 1 (odd number of twin primes per book)
 
-This odd parity ensures the electron is a single fermion, not a pair.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 09)
+This odd parity ensures the electron is a single fermion, not a pair.
+---
+
 
 ## 9. WALL CROSSING FROM RECORD GAPS
 
@@ -302,7 +318,9 @@ The BPS spectrum builds up across record gaps:
 | 18 | +9 | +18 |
 | 20 | +10 | +28 |
 
-The cumulative Ω grows — more BPS states at higher scales.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 10)
+The cumulative Ω grows — more BPS states at higher scales.
+---
+
 
 ## 10. TOPOLOGICAL QUANTUM FIELD THEORY
 
@@ -332,7 +350,9 @@ The winding number correlator:
 
 where τ_corr ~ κ · ξ (correlation length in gaps).
 
-Prime gap correlations determine the topological correlation length.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 11)
+Prime gap correlations determine the topological correlation length.
+---
+
 
 ## 11. KNOT THEORY FROM GAP SEQUENCE
 
@@ -366,7 +386,9 @@ For directory 0.0, the Alexander polynomial degree equals the maximal gap (~72).
 - **Alexander polynomial at t = 1:** Gives the instanton number I
 - **HOMFLY polynomial:** Encodes the full gap correlation structure
 
-The unknot (trivial worldline) corresponds to a gap sequence with no record gaps — impossible for primes.# ARTICLE 1: Prime Electron Worldline Topology — A1-02 (Piece 12)
+The unknot (trivial worldline) corresponds to a gap sequence with no record gaps — impossible for primes.
+---
+
 
 ## 12. SYNTHESIS: PRIME GAPS AS TOPOLOGICAL CHARGES
 

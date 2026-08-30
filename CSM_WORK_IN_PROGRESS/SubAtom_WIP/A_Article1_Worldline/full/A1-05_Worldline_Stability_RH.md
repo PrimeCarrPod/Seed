@@ -31,7 +31,9 @@ where Δτ(x) = κ · (ψ(x) - x) is the proper-time fluctuation at prime index 
 Stability means the worldline does not deviate exponentially from its average path. An unstable worldline would imply:
 - Electron mass not fixed (runaway self-energy)
 - Charge not conserved (anomalous Ward identities)
-- No stable quantum states (breakdown of QFT)# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 02)
+- No stable quantum states (breakdown of QFT)
+---
+
 
 ## 1.3 Explicit Formula Connection
 
@@ -79,7 +81,9 @@ The worldline deviation grows as x^θ. For θ > 1/2:
 - If θ = 0.75: factor 10^{1.5} = 31.6
 - If θ = 0.9: factor 10^{2.4} = 251
 
-The electron worldline would spiral out of control.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 03)
+The electron worldline would spiral out of control.
+---
+
 
 ## 2.3 Physical Consequences of Instability
 
@@ -142,7 +146,9 @@ Max |z_n| in 94,500 samples: ~10.7 (corresponds to gap 72)
 GUE prediction for N = 94,500: max ~ √(2 ln N) ≈ 3.5
 
 The observed max is larger but consistent with known gap distribution tails.
-No exponential tail → no θ > 1/2.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 04)
+No exponential tail → no θ > 1/2.
+---
+
 
 ## 4.3 Gap Variance Scaling
 
@@ -205,7 +211,9 @@ Consistent with RH, no excess growth.
 If RH holds, β = 1/2 for all zeros. Then:
 |Δτ(x)| = |κ Σ_ρ x^ρ/ρ| ≤ κ x^{1/2} Σ_γ 1/|ρ| = O(x^{1/2} ln x)
 
-This is O(x^{1/2+ε}) for any ε > 0.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 05)
+This is O(x^{1/2+ε}) for any ε > 0.
+---
+
 
 ## 6.3 Proof: (2) ⇒ (1)
 
@@ -249,7 +257,9 @@ No decay e⁻ → ν_e γ observed.
 This constrains possible RH violation.
 
 If RH false with θ > 1/2, electron would decay via worldline instability.
-Lifetime bound gives: θ < 1/2 + δ with δ extremely small.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 06)
+Lifetime bound gives: θ < 1/2 + δ with δ extremely small.
+---
+
 
 ## 7.4 Precision Test from g-2
 
@@ -309,7 +319,9 @@ T_max ~ 3×10^5 from 3.67B gaps.
 If RH holds: Σ_γ 1/|γ| diverges logarithmically, but
 Σ_γ x^{iγ}/(1/2+iγ) converges by oscillation (Riemann-Lebesgue).
 
-The physical worldline has a natural UV cutoff → finite sum → well-defined.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 07)
+The physical worldline has a natural UV cutoff → finite sum → well-defined.
+---
+
 
 ---
 
@@ -386,7 +398,9 @@ If RH fails, the index fluctuates wildly:
 δIndex ~ x^θ / Λ
 
 For stable particle, index must be topological invariant (integer).
-RH ensures index is stable (O(x^{1/2}) fluctuations average to integer).# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 08)
+RH ensures index is stable (O(x^{1/2}) fluctuations average to integer).
+---
+
 
 ---
 
@@ -436,7 +450,9 @@ Scattering amplitudes involve sums over worldline paths:
 M ~ Σ_paths exp(i S[path]/ℏ)
 
 If RH false, some paths have exponentially growing weight → unitarity violation.
-RH ensures all paths have bounded weight → unitary S-matrix.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 09)
+RH ensures all paths have bounded weight → unitary S-matrix.
+---
+
 
 ---
 
@@ -509,7 +525,9 @@ No such oscillations → θ = 1/2 to high precision.
 ## 17.4 Lamb Shift
 
 ΔE(2S-2P) agreement at 10^{-6} eV.
-Zero-mode contributions stable only if RH holds.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 10)
+Zero-mode contributions stable only if RH holds.
+---
+
 
 ---
 
@@ -585,7 +603,9 @@ Simulate worldline on quantum computer:
 ## 20.3 Cosmological Signatures
 
 RH violation would imprint on CMB, large-scale structure.
-Future surveys (Euclid, LSST) could detect RH-violation signatures.# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 11)
+Future surveys (Euclid, LSST) could detect RH-violation signatures.
+---
+
 
 ---
 
@@ -662,7 +682,9 @@ All measurements confirm RH.
 
 ---
 
-### 24. CONCLUSION# ARTICLE 1: Prime Electron Worldline Topology — A1-05 (Piece 12)
+### 24. CONCLUSION
+---
+
 
 ## 24.1 Final Statement
 

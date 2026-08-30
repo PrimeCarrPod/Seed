@@ -308,7 +308,6 @@ is the **Euclidean causal distance** between the gap classes.
 
 ---
 
-*End of Piece 01 — Continues in Piece 02: Light Cone Structure from Gap Correlations*# A1-13: Worldline Causal Structure — Light Cones from Gap Sequence (Piece 02)
 
 ## 13. Light Cone Geometry from Gap Sequence Correlations
 
@@ -661,7 +660,6 @@ As we move along the worldline (increasing $b$), the eigenvalues of $D$ flow. Th
 
 ---
 
-*End of Piece 02 — Continues in Piece 03: Causal Structure and Supersymmetry*# A1-13: Worldline Causal Structure — Light Cones from Gap Sequence (Piece 03)
 
 ## 25. Causal Structure and Supersymmetry (A1-25, A1-26 Connection)
 
@@ -1029,7 +1027,6 @@ From A8-03, the baryon asymmetry $\eta \sim 10^{-10}$ comes from the **causal ch
 
 ---
 
-*End of Piece 03 — Continues in Piece 04: Causal Structure and the Metric*# A1-13: Worldline Causal Structure — Piece 04: Causal Structure and the Metric
 
 ## 38. Metric from Gap Correlations (A1-14 Preview)
 
@@ -1075,7 +1072,6 @@ So the metric is conformal to Minkowski: $g_{\mu\nu} = \Omega^2(n) \eta_{\mu\nu}
 
 ---
 
-*End of Piece 04 — Continues in Piece 05: Causal Structure and the Geodesic Equation*# A1-13: Worldline Causal Structure — Piece 05: Causal Structure and the Geodesic Equation
 
 ## 39. Geodesic Equation from Gap Sequence (A1-15 Preview)
 
@@ -1115,7 +1111,6 @@ The spatial motion is the deviation from this — self-intersections are geodesi
 
 ---
 
-*End of Piece 05 — Continues in Piece 06: Causal Structure and the Action Principle*# A1-13: Worldline Causal Structure — Piece 06: Causal Structure and the Action Principle
 
 ## 40. Action Principle from Causal Structure (A1-16 Preview)
 
@@ -1149,7 +1144,6 @@ Varying the action with respect to the worldline path gives the causal equations
 
 ---
 
-*End of Piece 06 — Continues in Piece 07: Causal Structure and the Hamiltonian*# A1-13: Worldline Causal Structure — Piece 07: Causal Structure and the Hamiltonian
 
 ## 41. Hamiltonian from Causal Structure (A1-17 Preview)
 
@@ -1183,7 +1177,6 @@ Energy eigenstates are labeled by gap values. The causal structure of an energy 
 
 ---
 
-*End of Piece 07 — Continues in Piece 08: Causal Structure and the Path Integral*# A1-13: Worldline Causal Structure — Piece 08: Causal Structure and the Path Integral
 
 ## 42. Path Integral from Causal Structure (A1-18 Preview)
 
@@ -1217,7 +1210,6 @@ For $m > n$, this is the retarded propagator. For $m < n$, it vanishes — causa
 
 ---
 
-*End of Piece 08 — Continues in Piece 09: Causal Structure and Instantons*# A1-13: Worldline Causal Structure — Piece 09: Causal Structure and Instantons
 
 ## 43. Instantons as Causal Tunneling (A1-19 Preview)
 
@@ -1249,7 +1241,6 @@ determines the rate of causal topology change.
 
 ---
 
-*End of Piece 09 — Continues in Piece 10: Causal Structure and Topological Charge*# A1-13: Worldline Causal Structure — Piece 10: Causal Structure and Topological Charge
 
 ## 44. Topological Charge from Causal Structure (A1-20 Preview)
 
@@ -1283,7 +1274,6 @@ This follows from the fact that self-intersections are created/annihilated in pa
 
 ---
 
-*End of Piece 10 — Continues in Piece 11: Causal Structure Experimental Predictions*# A1-13: Worldline Causal Structure — Piece 11: Causal Structure Experimental Predictions
 
 ## 45. Experimental Predictions from Causal Structure
 
@@ -1313,7 +1303,6 @@ Stochastic GW background from causal collisions in early worldline (directories 
 
 ---
 
-*End of Piece 11 — Continues in Piece 12: Synthesis and Conclusion*# A1-13: Worldline Causal Structure — Piece 12: Synthesis and Conclusion
 
 ## 46. Synthesis: Causal Structure as the Foundation
 
@@ -1351,4 +1340,3 @@ The worldline IS its causal structure — the prime gaps ARE the causal links.
 
 ---
 
-*End of Piece 12 — A1-13 Worldline Causal Structure Complete*

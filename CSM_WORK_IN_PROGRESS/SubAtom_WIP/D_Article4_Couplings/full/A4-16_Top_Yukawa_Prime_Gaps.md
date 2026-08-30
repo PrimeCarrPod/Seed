@@ -6,10 +6,6 @@
 
 ---
 
-# Top_Yukawa_Prime_Gaps — Piece 01/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -57,12 +53,7 @@ The threshold factors are computed in Pieces 04-09. ∎
 | 12 | Summary; A4-17 through A4-40 roadmap | — |
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 02/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -111,12 +102,7 @@ $$y_t^* = \sqrt{\frac{16\pi^2}{9} \left( 8 g_3^{*2} + \frac{9}{4} g_2^{*2} + \fr
 This is consistent with the discrete flow reaching a stable fixed point at the Planck scale, with no Landau pole for $y_t$ — the prime gap statistics provide a natural UV completion.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 03/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -168,12 +154,7 @@ This corresponds to a $+4.7\%$ correction to $y_t$, or $\Delta y_t = +0.044$. �
 The cluster of record gaps 14-20 provides a stable determination of $\alpha_s$ at the electroweak scale with theoretical uncertainty $\pm 0.0009$ (dominated by the gap 14 statistics, consistent with A4-15 Theorem 4.293).
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 04/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -228,12 +209,7 @@ Thus $\delta_{\text{EW}} = +1.28\%$. ∎
 The matched top mass $m_t = 173.1$ GeV agrees with the experimental world average $172.76 \pm 0.30$ GeV at the $1.1\sigma$ level.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 05/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -290,12 +266,7 @@ With $g_3^* = g_2^* = g_1^* = \sqrt{4\pi/254} \approx 0.22$ (unified at gap 254)
 The gravitational correction at the electroweak scale is tiny ($\delta_{\text{grav}} \approx 0.03\%$) but provides the crucial UV boundary condition that ensures the RG flow reaches the fixed point without a Landau pole.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 06/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -362,12 +333,7 @@ where $\sigma_{d_{14}} \approx 0.8$ is the statistical fluctuation of record gap
 The theoretical uncertainty $\pm 0.16$ GeV is smaller than the experimental uncertainty $\pm 0.30$ GeV, making this a genuine parameter-free prediction with precision exceeding experiment.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 07/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -432,12 +398,7 @@ $$\Delta m_h = m_h - m_h^{\text{crit}}(m_t) = -4.1 \text{ GeV}$$
 which is the $3.4\sigma$ metastability from A4-15.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 08/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -504,12 +465,7 @@ The correlations are small because they originate from independent gap statistic
 The dominant uncertainty in $m_h^{\text{crit}}$ and $\mu_{\text{inst}}$ comes from the top Yukawa uncertainty, confirming that the top Yukawa is indeed the gatekeeper of vacuum stability.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 09/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -586,12 +542,7 @@ The Prime Electron correlations predict specific patterns in future measurements
 The triple correlation provides an overconstrained test: any two measurements predict the third with precision better than experiment.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 10/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -666,12 +617,7 @@ $$\Gamma_t = 1.322 \pm 0.003 \text{ GeV}$$
 The lifetime $\tau_t = 1/\Gamma_t = 4.99 \times 10^{-25}$ s is the shortest of all quarks, consistent with no hadronization. The Prime Electron prediction has $\pm 0.2\%$ uncertainty, dominated by $m_t$.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 11/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -756,12 +702,7 @@ The predictions $\kappa_t = 1.000 \pm 0.001$, $\sigma(t\bar{t}H) = 0.507 \pm 0.0
 The complete derivation is internally consistent, parameter-free, and experimentally testable.
 
 ---
----
 
-# Top_Yukawa_Prime_Gaps — Piece 12/12
-## Article 4: A4-16 — Top Yukawa From Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 13:09:45 UTC
 
 ---
 
@@ -868,6 +809,5 @@ cat CSMLogs/august26/RESUME_SESSION_A4-16_TOP_YUKAWA_PRIME_GAPS_20260825.md
 *Article 4: A4-16 Top Yukawa Prime Gaps completed.*
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 
----
 ---
 

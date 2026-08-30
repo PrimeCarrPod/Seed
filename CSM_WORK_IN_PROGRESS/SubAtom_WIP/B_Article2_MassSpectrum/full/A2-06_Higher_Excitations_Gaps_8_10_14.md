@@ -9,7 +9,11 @@ log(m_n/mₑ) = Σ_{block n} log(p_i/p_{i-1}) + log(d_i/d_{i-1}) + RG correction
 
 The RG flow from A1-10 provides the exact integration. The superalgebra central charge from A1-27 gives the bare mass: Z_n = Σ_{i<j in block} √(d_i d_j). The instanton chain from A1-19 has Q=4 steps per generation.
 
-These higher excitations are BSM particles. Their properties are fully predicted: masses, lifetimes, couplings, g-2, production thresholds. Experimental searches at FCC-hh (100 TeV), muon colliders (10-30 TeV), and cosmic ray observatories can test these predictions.# A2-06: Record Gaps for Higher Excitations — PrimeBookOne Data
+These higher excitations are BSM particles. Their properties are fully predicted: masses, lifetimes, couplings, g-2, production thresholds. Experimental searches at FCC-hh (100 TeV), muon colliders (10-30 TeV), and cosmic ray observatories can test these predictions
+
+---
+
+# A2-06: Record Gaps for Higher Excitations — PrimeBookOne Data
 
 Record gaps #7 through #18 from PrimeBookOne Tiles 05-12 (0.0 directory):
 
@@ -49,7 +53,11 @@ Generation blocks (4 records each):
 - Gen 5 (L5): {40, 44, 48, 52} — records #11-14, w=4
 - Gen 6 (L6): {72, 112, 114, 118} — records #15-18, w=4
 
-The block size stabilizes at 4 from generation 3 onward. This is a topological property: the worldline winding number w=4 for all higher generations.# A2-06: Worldline Quantization — Higher Generations as Quadruple-Winding States
+The block size stabilizes at 4 from generation 3 onward. This is a topological property: the worldline winding number w=4 for all higher generations
+
+---
+
+# A2-06: Worldline Quantization — Higher Generations as Quadruple-Winding States
 
 From A1-01, A1-11: each generation beyond the electron is a winding state on the worldline. The winding number w equals the number of record gaps in the generation's cluster. For generations 4, 5, 6: w=4 (four record gaps per block).
 
@@ -103,7 +111,11 @@ m_L4/m_τ ≈ 40.2
 m_L5/m_L4 ≈ 34.6
 m_L6/m_L5 ≈ 77.2
 
-These are absolute predictions with no free parameters. The exponential hierarchy comes from the record prime growth in PrimeBookOne. The 426-book RG flow is the same for all generations — the difference is which record gaps are included in the block sum.# A2-06: Superalgebra Central Charge — Z_n for Higher Generations
+These are absolute predictions with no free parameters. The exponential hierarchy comes from the record prime growth in PrimeBookOne. The 426-book RG flow is the same for all generations — the difference is which record gaps are included in the block sum
+
+---
+
+# A2-06: Superalgebra Central Charge — Z_n for Higher Generations
 
 From A1-27, A2-05: the N=1 superalgebra central charge Z = Σ_{i<j} √(d_i d_j) for the generation's gap cluster.
 
@@ -132,7 +144,11 @@ R_L4 = 139842 / 164.364 = 850.8
 R_L5 = 4832000 / 275.147 = 17561
 R_L6 = 3.73×10⁸ / 616.527 = 6.05×10⁵
 
-The dressing factor grows rapidly because higher generations span more directory levels in the 426-book flow. The superalgebra provides the bare scale; RG flow provides the dominant hierarchy.# A2-06: Instanton Solutions — Higher Generation Tunneling Chains
+The dressing factor grows rapidly because higher generations span more directory levels in the 426-book flow. The superalgebra provides the bare scale; RG flow provides the dominant hierarchy
+
+---
+
+# A2-06: Instanton Solutions — Higher Generation Tunneling Chains
 
 From A1-19, A2-05: instantons are tunneling solutions between gap sectors. Each generation has a 4-step instanton chain (w=4 steps).
 
@@ -168,7 +184,11 @@ A_L4 ∼ exp(-238/κℏ)
 A_L5 ∼ exp(-746/κℏ)
 A_L6 ∼ exp(-3260/κℏ)
 
-The exponential suppression increases dramatically with generation. This explains the hierarchy: higher generations are exponentially suppressed tunneling states. The topological charge Q=4 is universal for all generations beyond the muon (Q=3). The instanton action is the semiclassical realization of the worldline winding.# A2-06: g-2 Anomalies for Higher Generations — Prime Gap Predictions
+The exponential suppression increases dramatically with generation. This explains the hierarchy: higher generations are exponentially suppressed tunneling states. The topological charge Q=4 is universal for all generations beyond the muon (Q=3). The instanton action is the semiclassical realization of the worldline winding
+
+---
+
+# A2-06: g-2 Anomalies for Higher Generations — Prime Gap Predictions
 
 The anomalous magnetic moment a_n = (g_n-2)/2 for generation n receives contributions from all record gaps with d < 2m_n/mₑ. From A4-06 (planned): the g-2 formula from prime gap correlations:
 
@@ -191,7 +211,11 @@ a_L6(prime) = 0.00117721(8)
 
 All higher generations have a_n extremely close to the SM universal value because the dominant contribution comes from the lowest-order Schwinger term α/(2π) = 0.0011614, and the prime gap corrections are suppressed by (m_e/m_n)². The record gap d=112 (record #16) gave Δa_μ = 249×10⁻¹¹ for the muon. For L4, the same record gives Δa_L4 ≈ Δa_μ · (m_μ/m_L4)² ≈ 249×10⁻¹¹ · (105.7/71460)² ≈ 5×10⁻¹⁶ — completely negligible.
 
-The prime gap framework predicts a_n = 0.00117721... for all charged leptons, with tiny generation-dependent corrections that are experimentally inaccessible for n≥4.# A2-06: Lifetimes and Weak Decays — Gap 20, 40, 72 as Charged Current Vertices
+The prime gap framework predicts a_n = 0.00117721... for all charged leptons, with tiny generation-dependent corrections that are experimentally inaccessible for n≥4
+
+---
+
+# A2-06: Lifetimes and Weak Decays — Gap 20, 40, 72 as Charged Current Vertices
 
 From A4-03, A5-02, A6-02: weak decays are mediated by the smallest record gap in each generation's cluster. For muon: d=4 (record #2). For tau: d=6 (record #3). For L4: d=20 (record #7). For L5: d=40 (record #11). For L6: d=72 (record #15).
 
@@ -225,7 +249,11 @@ Scaling from tau (τ_τ = 2.903×10⁻¹³ s, p_min=23, m_τ=1.777 GeV):
 ≈ 2.903×10⁻¹³ · 2.1×10¹⁵ · 6.9×10⁻²⁶
 ≈ 4.2×10⁻²³ s
 
-The lifetimes decrease rapidly with generation due to the m⁵ scaling dominating over p_min⁴. All higher generations decay promptly at collider detectors.# A2-06: Nuclear Physics and Exotic Atoms — Higher Generation Probes
+The lifetimes decrease rapidly with generation due to the m⁵ scaling dominating over p_min⁴. All higher generations decay promptly at collider detectors
+
+---
+
+# A2-06: Nuclear Physics and Exotic Atoms — Higher Generation Probes
 
 Higher generation leptons can form exotic atoms when captured by nuclei. The Bohr radius scales as a_n = a₀·(m_e/m_n).
 
@@ -253,7 +281,11 @@ a_L6 = 5.29×10⁻¹¹ / 3.73×10⁸ = 1.4×10⁻¹⁹ m = 1.4×10⁻⁴ fm
 E_1 (Pb) = -190.6 TeV · (1/137)² · 82² / 2 = -3.3 PeV
 r_p(L6) = 0.84087 fm · (1 - 0.35) = 0.55 fm
 
-These exotic atoms can be produced in heavy-ion collisions at LHC (L4) and future FCC-hh (L5, L6). The nuclear overlap provides a unique probe of the proton's internal structure at sub-fm scales.# A2-06: Collider Signatures — Production Thresholds for Higher Generations
+These exotic atoms can be produced in heavy-ion collisions at LHC (L4) and future FCC-hh (L5, L6). The nuclear overlap provides a unique probe of the proton's internal structure at sub-fm scales
+
+---
+
+# A2-06: Collider Signatures — Production Thresholds for Higher Generations
 
 Pair production threshold for generation n: √s = 2m_n.
 
@@ -280,7 +312,11 @@ At √s = 150 GeV (just above L4 threshold): σ ≈ 0.5 pb
 At √s = 10 TeV (above L5 threshold): σ ≈ 0.02 pb
 At √s = 100 TeV (above L6 threshold): σ ≈ 10⁻⁴ pb
 
-Prime gap signature: differential cross section dσ/dp_T shows log-periodic oscillations with period set by record prime ratios. At FCC-hh, L4 pair production at high p_T probes the d=112 record (record #16) which also appears in muon g-2 (A2-04) and tau g-2 (A2-05).# A2-06: Cosmology — Higher Generations in Early Universe
+Prime gap signature: differential cross section dσ/dp_T shows log-periodic oscillations with period set by record prime ratios. At FCC-hh, L4 pair production at high p_T probes the d=112 record (record #16) which also appears in muon g-2 (A2-04) and tau g-2 (A2-05)
+
+---
+
+# A2-06: Cosmology — Higher Generations in Early Universe
 
 The threshold temperature for generation n is T_n = m_n. At T > T_n, the generation is in thermal equilibrium; at T < T_n, it annihilates/decays.
 
@@ -315,7 +351,11 @@ g*(T) steps:
 - T = m_L5 = 2.47 TeV: L5⁺L5⁻ annihilation
 - T = m_L6 = 190.6 TeV: L6⁺L6⁻ annihilation
 
-Each step adds Δg* = 7/8 × 4 = 3.5 to g*. The prime gap sequence determines the step locations exactly.# A2-06: Synthesis — Complete Higher Generation Predictions and Article 2 Roadmap
+Each step adds Δg* = 7/8 × 4 = 3.5 to g*. The prime gap sequence determines the step locations exactly
+
+---
+
+# A2-06: Synthesis — Complete Higher Generation Predictions and Article 2 Roadmap
 
 ## Higher Generation Summary Table
 

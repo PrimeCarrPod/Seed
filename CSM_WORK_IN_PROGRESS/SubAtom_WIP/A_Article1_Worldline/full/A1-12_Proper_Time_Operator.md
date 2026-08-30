@@ -320,7 +320,6 @@ $$
 
 ---
 
-*End of Piece 01 — Continues in Piece 02: Proper Time Operator Spectrum and Eigenstates*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 02)
 
 ## 9. Spectrum of the Proper Time Operator
 
@@ -558,7 +557,6 @@ Its index is the number of zero modes — steps where $d_n = 0$. But all prime g
 
 ---
 
-*End of Piece 02 — Continues in Piece 03: Proper Time Operator and Supersymmetry (A1-25, A1-26 Connection)*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 03)
 
 ## 17. Proper Time Operator and Supersymmetry (A1-25, A1-26 Connection)
 
@@ -854,7 +852,6 @@ The **book index $b$** is essentially the **coarse-grained proper time** on the 
 
 ---
 
-*End of Piece 03 — Continues in Piece 04: Proper Time Operator in the Momentum Basis and Spectral Analysis*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 04)
 
 ## 28. Proper Time Operator in Momentum Basis — Spectral Analysis
 
@@ -1176,7 +1173,6 @@ The proper time operator $\hat{\tau}$ provides the integration parameter.
 
 ---
 
-*End of Piece 04 — Continues in Piece 05: Proper Time Operator Matrix Elements and Numerical Estimates*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 05)
 
 ## 38. Matrix Elements of the Proper Time Operator
 
@@ -1530,7 +1526,6 @@ For $b=3500$: $\Delta\tau_{3500} \approx 2.3 \times 10^{-14}$ s
 
 ---
 
-*End of Piece 05 — Continues in Piece 06: Proper Time Operator and Causal Structure*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 06)
 
 ## 49. Proper Time Operator and Causal Structure (A1-13 Connection)
 
@@ -2206,7 +2201,6 @@ The worldline "reads" its own log by evolving in proper time.
 
 ---
 
-*End of Piece 06 — Continues in Piece 07: Proper Time Operator in the Momentum Basis — Advanced Analysis*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 07)
 
 ## 72. Advanced Momentum Space Analysis of Proper Time Operator
 
@@ -2574,7 +2568,6 @@ where $\beta = 2\pi \Delta\tau_b$. The proper time operator satisfies the KMS co
 
 ---
 
-*End of Piece 07 — Continues in Piece 08: Proper Time Operator Numerical Computation and PrimeBookOne Census*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 08)
 
 ## 81. Proper Time Operator Census in PrimeBookOne Data
 
@@ -2999,7 +2992,6 @@ This is the **holographic proper time coordinate**.
 
 ---
 
-*End of Piece 08 — Continues in Piece 09: Proper Time Operator Experimental Predictions*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 09)
 
 ## 94. Experimental Predictions from Proper Time Operator
 
@@ -3346,7 +3338,6 @@ matching the observed $\ell_1 \approx 220$, $\ell_2 \approx 540$, $\ell_3 \appro
 
 ---
 
-*End of Piece 09 — Continues in Piece 10: Proper Time Operator and the Mathematical Structure*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 10)
 
 ## 106. Mathematical Structure of the Proper Time Operator
 
@@ -3723,7 +3714,6 @@ where $\Lambda \sim \langle d \rangle \approx 22$ is the cutoff.
 
 ---
 
-*End of Piece 10 — Continues in Piece 11: Proper Time Operator and the Holographic Principle*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 11)
 
 ## 121. Proper Time Operator and the Holographic Principle (A1-38 Deep Connection)
 
@@ -4214,7 +4204,6 @@ If there are multiple PrimeBookOne datasets, do they correspond to different vac
 
 ---
 
-*End of Piece 11 — Continues in Piece 12: Synthesis and Conclusion*# A1-12: Proper Time Operator — τ Operator in Prime Basis (Piece 12)
 
 ## 137. Synthesis: The Proper Time Operator as the Worldline Clock
 

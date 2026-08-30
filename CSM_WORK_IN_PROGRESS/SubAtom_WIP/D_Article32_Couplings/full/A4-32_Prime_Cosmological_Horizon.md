@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Cosmological_Horizon — Piece 01/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -36,10 +32,6 @@ The adelic horizon measure dμ_H = ∏_p dμ_p × dμ_∞ combines p-adic horizo
 PIECE 01 COMPLETE — 47 lines, ~2,800 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 02/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -66,10 +58,6 @@ The late-time ISW effect from dark energy domination receives a prime-horizon co
 PIECE 02 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 03/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -96,10 +84,6 @@ The tensor power spectrum P_h(k) = (2/π²) (H/M_Pl)² receives a prime-horizon 
 PIECE 03 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 04/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -126,10 +110,6 @@ The CMB lensing potential φ(θ) = -2 ∫_0^{χ_*} dχ (χ_*-χ)/(χ_*χ) Φ(χ�
 PIECE 04 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 05/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -156,10 +136,6 @@ The black hole information paradox resolves through prime-adelic horizon complem
 PIECE 05 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 06/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -186,10 +162,6 @@ The MERA tensor network for the CFT ground state maps to a prime Bruhat-Tits tre
 PIECE 06 COMPLETE — 48 lines, ~2,800 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 07/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -216,10 +188,6 @@ The decoherence functional D[h, h'] = Tr(ρ_env U[h] U†[h']) for the cosmologi
 PIECE 07 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 08/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -246,10 +214,6 @@ The trans-Planckian censorship conjecture (TCC) requires that no mode ever exits
 PIECE 08 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 09/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -276,10 +240,6 @@ The 21-cm brightness temperature δT_b(z) = 27 x_HI (1+δ) (1 - T_γ/T_s) √((1
 PIECE 09 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 10/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -306,10 +266,6 @@ Proton decay p → e⁺ π⁰ from dimension-6 operators O_6 = (qqql)/M_U² has 
 PIECE 10 COMPLETE — 48 lines, ~2,850 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 11/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 
@@ -346,10 +302,6 @@ PIECE 10 COMPLETE — 48 lines, ~2,850 words
 PIECE 11 COMPLETE — 48 lines, ~2,900 words
 ---
 
-# Prime_Cosmological_Horizon — Piece 12/12
-## Article A4: A4-32 — Prime Cosmological Horizon
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 21:26:39 UTC
 
 ---
 

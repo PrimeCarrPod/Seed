@@ -32,7 +32,9 @@ The critical instruction: **"multiply the difference number by two before adding
 
 This means the recurrence is: d_{k+1} = d_k + 2·a_k where a_k is the sequential array element.
 
-The factor of 2 is not arbitrary — it is the spin-1/2 double cover factor.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 02)
+The factor of 2 is not arbitrary — it is the spin-1/2 double cover factor.
+---
+
 
 ## 2. SU(2) DOUBLE COVER OF SO(3)
 
@@ -63,7 +65,9 @@ The recurrence d_{k+1} = d_k + 2·a_k implements the covering map:
 
 In proper time: Δτ_{k+1} = Δτ_k + 2κ·a_k
 
-The factor 2κ = τ_C (Compton time) — the electron's intrinsic time scale.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 03)
+The factor 2κ = τ_C (Compton time) — the electron's intrinsic time scale.
+---
+
 
 ## 3. SPINOR STRUCTURE FROM PRIME GAPS
 
@@ -104,7 +108,9 @@ The readme algorithm doesn't exactly generate prime gaps — it describes the sp
 
 The "multiply by two" = the spinor rotation requires 4π to return to identity.
 
-In the 8-bit array (256 states), the spinor has 2 components × 128 phases = 256.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 04)
+In the 8-bit array (256 states), the spinor has 2 components × 128 phases = 256.
+---
+
 
 ## 4. 8-BIT ARRAY AS SPINOR HILBERT SPACE
 
@@ -139,7 +145,9 @@ Expectation value in state |d⟩:
 Even gaps (d=2,4,6...): spin up (+ℏ/2)
 Odd gaps (d=1,3,5...): spin down (-ℏ/2)
 
-In directory 0.0, most gaps are even → predominantly spin-up states.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 05)
+In directory 0.0, most gaps are even → predominantly spin-up states.
+---
+
 
 ## 5. G-FACTOR FROM PRIME GAP RECURRENCE
 
@@ -180,7 +188,9 @@ From directory 0.0 statistics: ⟨d⟩ ≈ 13.5, Var(d) ≈ 45
 
 a_e ≈ (1/2) × 45/182 × (1/137) × (1/2π) ≈ 0.00116
 
-Matches CODATA: a_e = 0.001159652181643(764) ✓# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 06)
+Matches CODATA: a_e = 0.001159652181643(764) ✓
+---
+
 
 ## 6. SPIN-STATISTICS FROM GAP PARITY
 
@@ -212,7 +222,9 @@ The 8-bit array has 256 states. The two spinor components correspond to:
 
 The antisymmetry comes from the spinor structure: ψ_α → -ψ_α under 2π rotation.
 
-The exchange of two electrons picks up a minus sign from the spinor wavefunction.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 07)
+The exchange of two electrons picks up a minus sign from the spinor wavefunction.
+---
+
 
 ## 7. ZITTERBEWEGUNG FROM GAP OSCILLATIONS
 
@@ -251,7 +263,9 @@ Zitterbewegung amplitude: r_Z = ℏ/(2m_e c) = λ_C/2
 
 In prime units: r_Z = κ·c/2 = (ℏ/(2m_e c^2))·c/2 = ℏ/(4m_e c) = λ_C/4
 
-The amplitude is set by the minimal gap d=2.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 08)
+The amplitude is set by the minimal gap d=2.
+---
+
 
 ## 8. SPIN-ORBIT COUPLING FROM GAP CORRELATIONS
 
@@ -288,7 +302,9 @@ Gaps modulo 4: d ≡ 0, 2 (mod 4) for even gaps.
 d ≡ 2 (mod 4): twin primes, 6, 10, 14...
 d ≡ 0 (mod 4): 4, 8, 12, 16...
 
-The modulo 4 class determines the spin-orbit splitting sign.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 09)
+The modulo 4 class determines the spin-orbit splitting sign.
+---
+
 
 ## 9. QUANTUM ENTANGLEMENT FROM GAP PAIRS
 
@@ -328,7 +344,9 @@ In directory 0.0: twin prime density ~0.19
 
 Entanglement entropy per gap: S ~ -0.19 log 0.19 ≈ 0.33 bits
 
-Total entanglement in 94,500 gaps: ~31,000 bits.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 10)
+Total entanglement in 94,500 gaps: ~31,000 bits.
+---
+
 
 ## 10. SPIN FLUCTUATIONS AND DECOHERENCE
 
@@ -367,7 +385,9 @@ Longitudinal relaxation from record gap transitions:
 
 T_1^{-1} = (record gap density) / τ_C ≈ (1/1000) / τ_C
 
-T_1 ~ 1000 τ_C ≈ 1.3×10^{-18} s# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 11)
+T_1 ~ 1000 τ_C ≈ 1.3×10^{-18} s
+---
+
 
 ## 11. HIGHER SPIN STATES FROM RECORD GAPS
 
@@ -404,7 +424,9 @@ The graviton (spin-2) from four twin primes: 2+2+2+2=8.
 | Gluon | 1 | 4 | 2+2 (colored) |
 | Graviton | 2 | 8 | 2+2+2+2 |
 
-The factor of 2 in each gap sum gives the integer spin.# ARTICLE 1: Prime Electron Worldline Topology — A1-03 (Piece 12)
+The factor of 2 in each gap sum gives the integer spin.
+---
+
 
 ## 12. SYNTHESIS: FACTOR OF 2 = SPIN-1/2 DOUBLE COVER
 

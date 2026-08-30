@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Holographic_Entropy — Piece 01/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -48,10 +44,6 @@ where G_p = G × p^{-v_p(ℏ)}. The minimal surface γ_A^{(p)} lives in the p-ad
 
 ---
 
-# Prime_Holographic_Entropy — Piece 02/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -94,10 +86,6 @@ The prime modular temperature is β_p = 2π log(p). The density of states:
 
 ---
 
-# Prime_Holographic_Entropy — Piece 03/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -142,10 +130,6 @@ This gives the -½ log A correction with a prime-dependent prefactor.
 
 ---
 
-# Prime_Holographic_Entropy — Piece 04/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -189,10 +173,6 @@ The prime 2 code has the smallest distance, making it the most vulnerable to err
 
 ---
 
-# Prime_Holographic_Entropy — Piece 05/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -233,10 +213,6 @@ where Λ_s is the boost with rapidity s. The prime Unruh temperature is T_p = 1/
 
 ---
 
-# Prime_Holographic_Entropy — Piece 06/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -281,10 +257,6 @@ The adelic QNEC sums over all primes. The prime 2 term dominates, giving the str
 
 ---
 
-# Prime_Holographic_Entropy — Piece 07/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -330,10 +302,6 @@ The adelic bulk is the intersection of all prime wedges.
 
 ---
 
-# Prime_Holographic_Entropy — Piece 08/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -378,10 +346,6 @@ Summing over p gives ρ_Λ = N/(2πV) where N is the number of primes. With the 
 
 ---
 
-# Prime_Holographic_Entropy — Piece 09/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -425,10 +389,6 @@ The prime 2 curve dominates the late-time behavior. The curve saturates at S_BH^
 
 ---
 
-# Prime_Holographic_Entropy — Piece 10/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -469,10 +429,6 @@ The effective Planck constant is reduced by the prime sum, increasing the comput
 
 ---
 
-# Prime_Holographic_Entropy — Piece 11/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -514,10 +470,6 @@ The prime 2 transition is at the highest coupling, making it the last to undergo
 
 ---
 
-# Prime_Holographic_Entropy — Piece 12/12
-## Article A4: A4-32 — Prime Holographic Entropy
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

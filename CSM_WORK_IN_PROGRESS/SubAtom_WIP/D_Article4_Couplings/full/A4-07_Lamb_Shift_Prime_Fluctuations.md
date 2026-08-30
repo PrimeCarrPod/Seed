@@ -6,10 +6,6 @@
 
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 01/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -42,10 +38,6 @@ for k ≠ 0, with a zero-mode removed by the constraint Σ_d δρ(d) = 0.
 The gap fluctuations δρ(d) act as a stochastic vacuum with spectral density S(k). The electron worldline couples to this vacuum through the proper-time integral, producing the self-energy correction that manifests as the Lamb shift.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 02/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -82,10 +74,6 @@ where V_ℓ is the vacuum polarization kernel and w_{lmn} is the gap triple corr
 The vacuum polarization contribution from gap triples is numerically smaller than the self-energy but essential for the complete 1057.844 MHz prediction. The record gaps R_n = {4, 6, 8, 10, 14, ...} corresponding to the hadronic mass spectrum provide the dominant contribution to the triple sum through the hadronic vacuum polarization sub-loop.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 03/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -122,10 +110,6 @@ where L_k is the k-loop Lamb kernel and w is the (k+2)-point gap correlation.
 The two-loop Lamb shift coefficient A₂ = −0.328478(44) receives contributions from gap 4-tuples (two virtual photons, three proper-time intervals). The three-loop coefficient A₃ ≈ 1.181(12) comes from gap 5-tuples. These are sub-dominant to the one-loop Bethe logarithm but essential for the 0.001 MHz precision of the modern Lamb shift measurement.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 04/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -158,10 +142,6 @@ where R_ℓ is the recoil kernel depending on the nuclear record gap R_N.
 Numerically, d₂/R_N = 2/426 = 0.0047 for the proton record gap R_N = 426 (Article 2: A2-14). The recoil correction is 0.054 MHz, matching the QED prediction. The muonic hydrogen recoil is enhanced by m_μ/m_e = 207, making it sensitive to the proton structure at the gap level.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 05/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -194,10 +174,6 @@ where T is the TPE kernel.
 The TPE contribution is 0.033 MHz in hydrogen and is the dominant theoretical uncertainty in the proton radius extraction from muonic hydrogen. In the Prime framework, the TPE uncertainty maps to the uncertainty in the 3.0 directory gap distribution for nuclear gaps.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 06/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -230,10 +206,6 @@ where δρ_Z(d) = ρ_Z(d) − ρ(d) is the Coulomb-induced gap density shift.
 The bound g−2 in highly charged ions (e.g., H-like Si¹³⁺) tests the Coulomb-modified gap density at Zα ~ 0.3, where the shift is ~1% of a_e.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 07/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -280,10 +252,6 @@ where ζ_gap(s) = Σ_d d^{-s} δρ(d) is the gap zeta function and L is the Lamb
 This connects the Lamb shift convergence to the Riemann Hypothesis, just as for g−2 (Theorem 4.78).
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 08/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -337,10 +305,6 @@ where C_k = Σ_d δρ_Z^{(k)}(d) K_L(d) and δρ_Z^{(k)} is the k-th order Coulo
 HCI Lamb shift measurements provide the most stringent test of the Coulomb-modified gap density ρ_Z(d) and the strong-field QED regime in the Prime framework.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 09/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -383,10 +347,6 @@ The Riemann Hypothesis (RH) is equivalent to the convergence properties of the L
 This provides a physical argument for RH: the Lamb shift is measurable and finite, therefore the gap series must converge, therefore RH is true.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 10/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -436,10 +396,6 @@ The Lamb shift measurement serves as a certificate of prime gap completeness up 
 The Lamb shift is the most sensitive probe of prime gap completeness in the 0.0 and 3.0 directories, surpassing even direct prime counting.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 11/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 
@@ -488,10 +444,6 @@ Future Lamb shift measurements will probe the 3.0 directory gap density at the 1
 These future measurements will either confirm the 3.0 directory gap structure or reveal new missing gap classes at the 10⁻¹⁴ level, providing the most sensitive probe of BSM physics through prime gap statistics.
 ---
 
-# Lamb_Shift_Prime_Fluctuations — Piece 12/12
-## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 02:40:05 UTC
 
 ---
 

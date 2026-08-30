@@ -6,16 +6,8 @@
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 01/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 01/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 11:49:32 UTC
 
 ---
 
@@ -43,16 +35,8 @@ The electron Compton wavelength λₑ = 1/mₑ sets the fundamental scale. At T 
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 02/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 02/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 11:49:56 UTC
 
 ---
 
@@ -91,16 +75,8 @@ The cubic term -Mₖ³T drives the first-order transition when gauge bosons domi
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 03/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 03/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 11:50:11 UTC
 
 ---
 
@@ -136,16 +112,8 @@ This satisfies the strong first-order condition φ_c/T_c > 1 for baryogenesis.
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 04/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 04/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 11:50:34 UTC
 
 ---
 
@@ -189,16 +157,8 @@ Wall velocity v_w = 0.85 (runaway) or v_w = 0.65 (with plasma friction).
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 05/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 05/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 11:50:54 UTC
 
 ---
 
@@ -238,16 +198,8 @@ Peak amplitudes: Ω_φh² ~ 10⁻¹², Ω_swh² ~ 10⁻¹¹, Ω_turbh² ~ 10⁻�
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 06/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 06/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 11:51:05 UTC
 
 ---
 
@@ -287,16 +239,8 @@ Matches observed η_B = 8.7 × 10⁻¹¹ within uncertainties.
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 07/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 07/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 11:51:28 UTC
 
 ---
 
@@ -336,16 +280,8 @@ Predicted: d_n = 2.5 × 10⁻²⁷ e·cm (within nEDM reach).
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 08/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 08/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 11:52:01 UTC
 
 ---
 
@@ -382,16 +318,8 @@ Deviation: -3.2% at 14 TeV (testable with 3 ab⁻¹).
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 09/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 09/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 11:53:13 UTC
 
 ---
 
@@ -431,16 +359,8 @@ Prediction: σ_SI = 3.2 × 10⁻⁴⁷ cm² (within XENONnT/LZ reach).
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 10/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 10/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 11:54:04 UTC
 
 ---
 
@@ -487,16 +407,8 @@ Testable in LEGEND-1000, nEXO, KamLAND-Zen.
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 11/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 11/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 11:54:25 UTC
 
 ---
 
@@ -541,16 +453,8 @@ m_ββ = 1.8 meV (LEGEND-1000: 10 meV, nEXO: 5 meV)
 
 ---
 
-# Electroweak_Phase_Transition_Prime — Piece 12/12
-## Article A4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 11:49:16 UTC
 
 ---
-# Electroweak Phase Transition from Prime Gaps — Piece 12/12
-## Article 4: A4-15 — Electroweak Phase Transition Prime
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 11:54:50 UTC
 
 ---
 

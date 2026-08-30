@@ -6,10 +6,6 @@
 
 ---
 
-# Rare_Decays_Prime_Predictions — Piece 01/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -39,12 +35,7 @@ Each channel receives contributions from worldline fold intersections connecting
 - Top quark: gap 14 (same sector as bottom, different excitation)
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 02/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -89,12 +80,7 @@ BR(τ → μee) ≈ 3.1 × 10⁻¹⁰
 These predictions are testable at Belle II with 50 ab⁻¹.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 03/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -135,12 +121,7 @@ CR(μ-e, Ti) ≈ 2.1 × 10⁻¹⁷
 These are within reach of COMET (sensitivity ~10⁻¹⁷) and Mu2e (sensitivity ~10⁻¹⁷). The ratio CR(Al)/CR(Ti) ≈ 1.8 is a distinctive prediction of the gap tunneling mechanism.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 04/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -181,12 +162,7 @@ P(n→n̄) ≈ 10⁻²⁶ per year
 This is constrained by the Super-Kamiokande bound (τ > 4.7 × 10⁸ s) and testable at future neutron experiments (ESS, DUNE).
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 05/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -238,12 +214,7 @@ T_{1/2}^{0ν} = (G_{0ν} |M_{0ν}|² m_ββ²)⁻¹ ≈ 2.1 × 10²⁶ years
 This is within reach of LEGEND-1000 (sensitivity ~10²⁸ years) and nEXO.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 06/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -288,12 +259,7 @@ The full set of angular observables in B → K*μμ (P₁-P₈, A_FB, F_L) recei
 These correlated shifts across multiple observables are a smoking gun for the prime gap origin.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 07/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -333,12 +299,7 @@ The gap corrections to K⁰-K̄⁰ mixing (A4-20, Section 6) must be consistent 
 These are correlated with the K → πνν̄ corrections through the common A_{6,4}^{Z} and A_{6,4}^{color} gap correlations.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 08/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -377,12 +338,7 @@ Cross section at 14 TeV:
 These are within reach of HL-LHC with 3 ab⁻¹.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 09/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -427,12 +383,7 @@ BR(h→μe) = 3.2 × 10⁻⁷ (heavily suppressed by μ-e gap hierarchy)
 These are testable at FCC-ee and future Higgs factories.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 10/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -472,12 +423,7 @@ BR(τ→μν_τν̄_μ) / BR(τ→μν_τν̄_τ) ≈ 10⁻⁵
 This is from the gap asymmetry in the neutrino sector.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 11/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -518,12 +464,7 @@ BR(τ→μγ) via Z' ≈ 10⁻¹⁰
 These are subdominant to the prime gap tunneling contributions.
 
 ---
----
 
-# Rare_Decays_Prime_Predictions — Piece 12/12
-## Article A4: A4-21 — Rare Decays Prime Predictions
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 20:00:00 UTC
 
 ---
 
@@ -584,6 +525,5 @@ These are subdominant to the prime gap tunneling contributions.
 **Prime Electron Research 360 — Article 4: Coupling Constants From Prime Statistics**  
 **A4-21: Rare Decays Prime Predictions — Complete (12 pieces)**
 
----
 ---
 

@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Cosmological_Constant — Piece 01/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -50,10 +46,6 @@ where ρ_p are the non-trivial zeros of the prime zeta function P(s) = Σ_p p⁻
 
 ---
 
-# Prime_Cosmological_Constant — Piece 02/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -100,10 +92,6 @@ The prime 2 term dominates, giving ρ_Λ ≈ (2.3 meV)⁴.
 
 ---
 
-# Prime_Cosmological_Constant — Piece 03/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -147,10 +135,6 @@ This occurs at z ≈ 0.3, consistent with observations. The crossing is due to t
 
 ---
 
-# Prime_Cosmological_Constant — Piece 04/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -190,10 +174,6 @@ The bubble nucleation produces the baryon asymmetry through prime 13 CP violatio
 
 ---
 
-# Prime_Cosmological_Constant — Piece 05/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -238,10 +218,6 @@ The prime transfer functions Θ_l^{(p)} have logarithmic oscillations from the p
 
 ---
 
-# Prime_Cosmological_Constant — Piece 06/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -282,10 +258,6 @@ where S_p is the prime instanton action. The memory is a sum of p-adic step func
 
 ---
 
-# Prime_Cosmological_Constant — Piece 07/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -322,10 +294,6 @@ The Page curve is modified: S_rad = S_BH × (1 - exp(-t/τ_p)) with τ_p = M³ l
 
 ---
 
-# Prime_Cosmological_Constant — Piece 08/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -367,10 +335,6 @@ The prime 2 top Yukawa y_t^{(2)} is the dominant contribution. The stability bou
 
 ---
 
-# Prime_Cosmological_Constant — Piece 09/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -411,10 +375,6 @@ The prime 5 coupling β₅ ≈ 0.01 gives a small interaction, consistent with s
 
 ---
 
-# Prime_Cosmological_Constant — Piece 10/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -451,10 +411,6 @@ where r_inj is the injectivity radius. The prime 2 circle radius θ₂ ≈ 12° 
 
 ---
 
-# Prime_Cosmological_Constant — Piece 11/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -491,10 +447,6 @@ The prime 2 oscillation period Δz ≈ 0.3 is visible in DESI/LSST data.
 
 ---
 
-# Prime_Cosmological_Constant — Piece 12/12
-## Article A4: A4-31 — Prime Cosmological Constant
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

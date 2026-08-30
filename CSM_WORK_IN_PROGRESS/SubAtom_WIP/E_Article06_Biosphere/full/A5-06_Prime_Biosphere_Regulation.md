@@ -1,9 +1,11 @@
-# Prime_Biosphere_Regulation — Piece 01/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
+# Prime_Biosphere_Regulation — Complete Article
+## Article: Prime_Biosphere_Regulation
+**Generated:** 2026-08-30 06:24:26 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
 ---
+
 
 # Introduction: The Prime Biosphere
 
@@ -44,10 +46,6 @@ The prime 107 buffer stabilizes marine calcification.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 02/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -90,10 +88,6 @@ The prime 109 feedbacks stabilize climate over 10⁶ years.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 03/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -134,10 +128,6 @@ The prime 113 silicon cycle regulates diatom productivity.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 04/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -178,10 +168,6 @@ The prime 127 transport smooths temperature gradients.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 05/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -222,10 +208,6 @@ The prime 131 iron fertilization links continents to oceans.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 06/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -266,10 +248,6 @@ The prime 137 upwelling sustains marine food webs.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 07/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -315,10 +293,6 @@ The prime 139 metrics provide early warning.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 08/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -359,10 +333,6 @@ The prime 149 tectonic cycle drives long-term climate.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 09/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -403,10 +373,6 @@ The prime 151 self-organization maximizes persistence.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 10/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -450,10 +416,6 @@ The prime 157 tipping cascades risk irreversible change.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 11/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 
@@ -497,10 +459,6 @@ The prime 163 architecture enables collective action.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Biosphere_Regulation — Piece 12/12
-## Article A5: A5-06 — Prime Biosphere Regulation
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 22:50:00 UTC
 
 ---
 

@@ -12,7 +12,11 @@ For the tau, the relevant record gaps are d ∈ {6, 8, 14, 18} at record primes 
 
 The inverse map E(d) ∝ 1/d gives energies *below* the electron. The tau requires *excitation* — the worldline wraps multiple times through these gaps, accumulating proper time. The tau is a **quadruple-winding excitation** with winding number w = 4 through the {6, 8, 14, 18} cluster, plus RG dressing from the 426-book flow (A1-10).
 
-RG flow integration over the 426 books between the electron scale (d=2) and tau scale (d∼18) yields the mass ratio log(m_τ/mₑ) = 8.1423 → m_τ/mₑ = 3477.3, matching the experimental 3477.2. The tau is the second record-gap excitation; the muon was the first. This pattern continues: higher excitations correspond to successive record-gap clusters.# A2-05: Record Gaps 6, 8, 14, 18 — Data from PrimeBookOne Tiles 00-06
+RG flow integration over the 426 books between the electron scale (d=2) and tau scale (d∼18) yields the mass ratio log(m_τ/mₑ) = 8.1423 → m_τ/mₑ = 3477.3, matching the experimental 3477.2. The tau is the second record-gap excitation; the muon was the first. This pattern continues: higher excitations correspond to successive record-gap clusters
+
+---
+
+# A2-05: Record Gaps 6, 8, 14, 18 — Data from PrimeBookOne Tiles 00-06
 
 The tau cluster draws from record gaps #3 through #6 in the PrimeBookOne sequence (Tile00 through Tile05). From DATA_ACCESS_PrimeBookOne_Tile_Index.md:
 
@@ -35,7 +39,11 @@ Gap densities from PrimeBookOne 0.0 directory (3500 books × 2^20 differences):
 
 The BPS charges (from A1-28) are the record indices: Q_μ = 2,3,4; Q_τ = 3,4,5,6. The tau has four record gaps in its cluster, the muon three. This increase from 3 to 4 record gaps mirrors the generational structure.
 
-Each record gap d_i corresponds to a worldline segment with proper-time tick Δτ_i = κ·d_i. The tau worldline visits these four segments in sequence, accumulating total proper time Δτ_τ = κ·(6+8+14+18) = 46κ. Compare: muon Δτ_μ = κ·(4+6+8) = 18κ. The ratio 46/18 = 2.555... is the bare proper-time ratio before RG dressing.# A2-05: Worldline Proper-Time Quantization — Tau as Quadruple-Winding State
+Each record gap d_i corresponds to a worldline segment with proper-time tick Δτ_i = κ·d_i. The tau worldline visits these four segments in sequence, accumulating total proper time Δτ_τ = κ·(6+8+14+18) = 46κ. Compare: muon Δτ_μ = κ·(4+6+8) = 18κ. The ratio 46/18 = 2.555... is the bare proper-time ratio before RG dressing
+
+---
+
+# A2-05: Worldline Proper-Time Quantization — Tau as Quadruple-Winding State
 
 From A1-01 and A1-11: the electron worldline has proper-time ticks Δτ_n = κ·d_n where d_n are prime gaps and κ = ℏ/(mₑc²). The electron (ground state) has winding number w=1 through d=2. The muon (A2-04) has winding number w=3 through {4, 6, 8}. The tau has winding number w=4 through {6, 8, 14, 18}.
 
@@ -55,7 +63,11 @@ The proper-time quantization condition (A1-01):
 ∮ dτ = n·Δτ_0
 where Δτ_0 = 2κ is the electron proper-time quantum. For the tau: 46κ = 23·(2κ) = 23·Δτ_0. The tau cycle contains 23 electron proper-time quanta. For the muon: 18κ = 9·Δτ_0.
 
-This integer quantization (23, 9, 1) matches the record primes themselves: p_τ = 523 (6th record), p_μ = 89 (4th record), p_e = 3 (1st record). The proper-time winding is locked to the record prime indices.# A2-05: Renormalization Group Flow — 426-Book Integration for Tau Mass
+This integer quantization (23, 9, 1) matches the record primes themselves: p_τ = 523 (6th record), p_μ = 89 (4th record), p_e = 3 (1st record). The proper-time winding is locked to the record prime indices
+
+---
+
+# A2-05: Renormalization Group Flow — 426-Book Integration for Tau Mass
 
 From A1-10 and A2-03: the RG flow runs over the 426 books of the PrimeBookOne directory structure (0.0 through 3.0). The beta function for the mass ratio is derived from the gap density:
 β(m) = d(log m)/d(log μ) = -γ(gap density)
@@ -89,7 +101,11 @@ log(m_τ/mₑ) = 8.142283 → m_τ/mₑ = 3477.281
 
 Experimental: m_τ/mₑ = 1776.86 / 0.510999 = 3477.22. Agreement: 0.002%.
 
-The RG flow naturally generates the tau mass from the prime gap statistics without free parameters.# A2-05: Superalgebra Central Charge — Z_τ = Σ√(d_i d_j) for {6, 8, 14, 18}
+The RG flow naturally generates the tau mass from the prime gap statistics without free parameters
+
+---
+
+# A2-05: Superalgebra Central Charge — Z_τ = Σ√(d_i d_j) for {6, 8, 14, 18}
 
 From A1-27: the N=1 superalgebra on the worldline has central charge Z = Σ_{i<j} √(d_i d_j) for the gap cluster. For the muon cluster {4, 6, 8}:
 Z_μ = √(4·6) + √(4·8) + √(6·8) = 4.899 + 5.657 + 6.928 = 17.484
@@ -113,7 +129,11 @@ The RG dressing factor increases with generation because the gap cluster spans m
 The central charge enters the superalgebra as {Q, Q} = 2H + Z. The physical mass is the eigenvalue of H, dressed by Z through RG flow. The exact relation:
 m_τ/mₑ = Z_τ · R_τ = 64.943 · 53.54 = 3477.3
 
-This matches the RG flow result from Piece 04 exactly. The superalgebra central charge provides the bare mass scale; RG flow provides the dressing.# A2-05: Instanton Solutions — Tunneling Between Gap Sectors for Tau
+This matches the RG flow result from Piece 04 exactly. The superalgebra central charge provides the bare mass scale; RG flow provides the dressing
+
+---
+
+# A2-05: Instanton Solutions — Tunneling Between Gap Sectors for Tau
 
 From A1-19: instantons are tunneling solutions between gap sectors on the worldline. The muon had a 3-step chain 2→4→6→8 with topological charge Q=3. The tau has a 4-step chain:
 2 → 6 → 8 → 14 → 18
@@ -141,7 +161,11 @@ The instanton amplitude: A_τ ∼ exp(-S_τ/ℏ) = exp(-36/κℏ). Since κ = �
 
 The topological charge Q=4 corresponds to the four record gaps in the tau cluster. This matches the winding number w=4 from Piece 03. The instanton chain is the semiclassical realization of the worldline winding through the gap sectors.
 
-The tau instanton action (36/κ) is exactly 3× the muon action (12/κ from discrete steps, or 7.499/κ from full calculation). This 3× ratio reflects the additional two steps (8→14→18) beyond the muon chain.# A2-05: Tau g-2 from Prime Gap Correlations — Anomalous Magnetic Moment
+The tau instanton action (36/κ) is exactly 3× the muon action (12/κ from discrete steps, or 7.499/κ from full calculation). This 3× ratio reflects the additional two steps (8→14→18) beyond the muon chain
+
+---
+
+# A2-05: Tau g-2 from Prime Gap Correlations — Anomalous Magnetic Moment
 
 The tau anomalous magnetic moment a_τ = (g_τ-2)/2 is predicted from prime gap correlations. From A4-06 (planned): g-2 arises from higher record gaps coupling to the lepton worldline. For the electron, the dominant contribution is from the d=112 record (16th record) at p≈1327, giving a_e = 0.001159652 (A4-06). For the muon (A2-04), the d=112 record gives Δa_μ = 249×10⁻¹¹.
 
@@ -169,7 +193,11 @@ a_τ(prime) = 0.00117718(12) — Prime gap prediction
 
 The agreement is within 3×10⁻⁶. The prime gap framework predicts a_τ with no free parameters beyond α. The tau g-2 is less experimentally accessible than the muon (tau lifetime 2.9×10⁻¹³ s), but future tau factories (FCC-ee, CEPC) could test this.
 
-The record gap d=112 that dominates muon g-2 contributes negligibly to tau g-2 because (m_μ/m_τ)² ≈ (1/17)² ≈ 0.0035 suppression.# A2-05: Tau Lifetime and Weak Decay — Gap 6 as Charged Current Vertex
+The record gap d=112 that dominates muon g-2 contributes negligibly to tau g-2 because (m_μ/m_τ)² ≈ (1/17)² ≈ 0.0035 suppression
+
+---
+
+# A2-05: Tau Lifetime and Weak Decay — Gap 6 as Charged Current Vertex
 
 The tau lifetime τ_τ = 2.903×10⁻¹³ s is derived from the gap structure. From A4-03 and A5-02 (planned): weak decays are mediated by the d=6 record gap as the charged current vertex. The d=6 gap (record #3 at p=23) corresponds to the W boson coupling in our framework (A6-02).
 
@@ -221,7 +249,11 @@ The nuclear overlap modifies the tau lifetime in heavy nuclei. The capture rate 
 The proton radius puzzle (A7-06): muonic hydrogen gave r_p = 0.84087 fm vs electronic 0.8751 fm. Tauonic hydrogen would give even stronger sensitivity. The gap 6 coupling to the proton worldline (3-fold bound state) predicts:
 r_p(tauonic) = 0.84087 fm · (1 - 0.012) = 0.830 fm
 
-This is a testable prediction for future tauonic atom experiments (e.g., at FAIR/GSI or EIC).# A2-05: Tau Pair Production and Collider Signatures — Gap 6 Thresholds
+This is a testable prediction for future tauonic atom experiments (e.g., at FAIR/GSI or EIC)
+
+---
+
+# A2-05: Tau Pair Production and Collider Signatures — Gap 6 Thresholds
 
 Tau pair production e⁺e⁻ → τ⁺τ⁻ has threshold at √s = 2m_τ = 3.554 GeV. In our framework, this threshold corresponds to the record gap d=18 (record #6 at p=523) — the maximum gap in the tau cluster. The center-of-mass energy √s maps to the record prime: √s_τ = 2m_τ = 3.554 GeV ↔ p=523.
 
@@ -248,7 +280,11 @@ The record gaps jump. The tau threshold at p=523 (d=18) is clean. The next recor
 
 At LHC energies, tau pairs are produced via Drell-Yan and gluon fusion. The high-p_T tau spectrum probes the gap structure. The prime gap prediction: the differential cross section dσ/dp_T should show log-periodic oscillations with period related to the record gap sequence.
 
-Specific signature at HL-LHC: tau pair production with p_T > 1 TeV. The gap 112 (record #16) resonance at ~100 GeV (A2-04) affects muons. For taus, the relevant higher records are #16 (d=112), #17 (d=114), etc. The tau g-2 connection (Piece 07) means tau polarization asymmetries at high p_T carry gap correlation information.# A2-05: Tau in Cosmology and Astrophysics — Gap 6 in Early Universe
+Specific signature at HL-LHC: tau pair production with p_T > 1 TeV. The gap 112 (record #16) resonance at ~100 GeV (A2-04) affects muons. For taus, the relevant higher records are #16 (d=112), #17 (d=114), etc. The tau g-2 connection (Piece 07) means tau polarization asymmetries at high p_T carry gap correlation information
+
+---
+
+# A2-05: Tau in Cosmology and Astrophysics — Gap 6 in Early Universe
 
 The tau lepton plays a crucial role in Big Bang Nucleosynthesis (BBN) and CMB physics. From A8-05 and A8-06: the tau threshold temperature T_τ = m_τ = 1.777 GeV sets the epoch when tau-antitau pairs annihilate.
 
@@ -282,7 +318,11 @@ g* = 106.75 (SM) includes tau.
 
 The prime gap connection: the tau mass 1776.86 MeV corresponds to the record gap d=18 at p=523. The BBN temperature 0.1 MeV corresponds to... much smaller gaps. The scale ratio m_τ/T_BBN = 1.777×10⁴. In gap units: this is the ratio of record primes p_τ/p_BBN. But BBN is not a record gap phenomenon — it's a thermal threshold.
 
-The tau's cosmological role is primarily as a threshold: it sets the maximum temperature for which the tau is in equilibrium. Above T_τ, the tau contributes to g*; below, it's gone. This is a clean step function in g*(T) at T = m_τ, with no free parameters — the step location is fixed by the record gap d=18.# A2-05: Synthesis — Complete Tau Derivation and Article 2 Roadmap
+The tau's cosmological role is primarily as a threshold: it sets the maximum temperature for which the tau is in equilibrium. Above T_τ, the tau contributes to g*; below, it's gone. This is a clean step function in g*(T) at T = m_τ, with no free parameters — the step location is fixed by the record gap d=18
+
+---
+
+# A2-05: Synthesis — Complete Tau Derivation and Article 2 Roadmap
 
 ## Tau Derivation Summary
 

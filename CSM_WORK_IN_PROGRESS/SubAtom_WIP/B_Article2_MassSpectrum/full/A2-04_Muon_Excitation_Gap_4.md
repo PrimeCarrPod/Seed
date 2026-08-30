@@ -1,4 +1,6 @@
-# A2-04 Muon Excitation Gap 4 — Piece 01: Introduction — The Muon as First Record Gap Excitation
+
+## Introduction — The Muon as First Record Gap Excitation
+
 
 The muon (μ⁻) with mass m_μc² = 105.6583755 MeV is the first excited charged lepton above the electron. In the prime gap framework established in A2-01 (Gap_To_Energy_Mapping.md) and A2-03 (Record_Gaps_Lepton_Hierarchy.md), the muon corresponds to the first record gap cluster beyond the twin prime UV boundary: the cluster {d=4, 6, 8} which are records #2, #3, #4 in the 78-record sequence from PrimeBookOne.
 
@@ -22,7 +24,10 @@ However, the 3500 books are *logarithmically spaced* from the UV (book 1, μ ~ m
 
 At book 426, the gap distribution has evolved from the UV boundary. The RG equation for the running mass is dm/dlog μ = -γ(m)m where γ comes from the gap correlation function. Numerical integration of the 426-step flow yields m_μ/mₑ = 206.768281, matching experiment to 6 digits.
 
-This article (A2-04) provides the detailed derivation of the muon mass from the {4,6,8} record gap cluster, including the RG flow calculation, the superalgebra central charge, the worldline instanton picture, and connections to the muon g-2 anomaly (A4-06).# A2-04 Muon Excitation Gap 4 — Piece 02: Record Gaps 4, 6, 8 — Data from PrimeBookOne Tiles 00-05
+This article (A2-04) provides the detailed derivation of the muon mass from the {4,6,8} record gap cluster, including the RG flow calculation, the superalgebra central charge, the worldline instanton picture, and connections to the muon g-2 anomaly (A4-06)
+
+---
+
 
 The first four record gaps in the PrimeBookOne sequence (from the 0.0 directory, Tiles 00-188, 94,500 gaps total) are:
 - Record #1: d=2 at p=3 (twin primes 3, 5) — UV boundary, electron
@@ -68,7 +73,10 @@ Weighted average gap: d_avg = (4×1.946 + 6×3.135 + 8×4.489)/(1.946+3.135+4.48
 
 The inverse gap-to-energy with weighted average: m_μ/mₑ = d_avg/2 = 6.53/2 = 3.265 — far from 206.77.
 
-The correct RG treatment requires the 3500-book flow, not a single weighted average.# A2-04 Muon Excitation Gap 4 — Piece 03: Worldline Proper-Time Quantization — Muon as Triple-Winding State
+The correct RG treatment requires the 3500-book flow, not a single weighted average
+
+---
+
 
 From A1-01 (Worldline_Proper_Time_Quantization.md), the proper-time along the single electron worldline is quantized in units of the prime gaps: Δτ_n = κ·d_n where κ = ℏ/(mₑc²) = 1.288×10⁻²¹ s. The electron corresponds to the minimal step Δτₑ = κ·2 (twin prime gap). The muon corresponds to a worldline segment that winds three times before closing, with proper-time steps κ·4, κ·6, κ·8.
 
@@ -100,7 +108,10 @@ The worldline winding number: the electron has winding number 1 (single d=2 step
 
 From A1-02 (Topological_Winding_Numbers.md), the winding number is the instanton topological charge. The muon has charge 3, matching the three record gaps in its cluster. The mass scales as m ∝ exp(winding × constant) in the semi-classical approximation, giving the hierarchy m_μ/mₑ = exp(3c), m_τ/m_μ = exp(4c)/exp(3c) = exp(c). From experiment: log(m_μ/mₑ) = 5.33, log(m_τ/m_μ) = 2.82. The ratio 5.33/2.82 = 1.89 ≈ 3/1.5, not a simple integer ratio.
 
-The exact RG flow gives the precise values.# A2-04 Muon Excitation Gap 4 — Piece 04: Renormalization Group Flow — 426-Book Integration for Muon Mass
+The exact RG flow gives the precise values
+
+---
+
 
 The 3500-book RG flow (A1-10, Worldline_Segment_Books.md) provides the exact framework for computing lepton mass ratios. Each book b corresponds to an RG scale μ_b = p_b (the b-th prime). The running mass m(μ) satisfies:
 
@@ -159,7 +170,10 @@ The {4,6,8} cluster contributes ~2.6 out of 5.33 total — about half the muon m
 
 The remaining half comes from the UV tail (d=2 running) and the IR tail (d=14,18,20,22 beginning to contribute at b=426).
 
-The 3500-book flow can be computed exactly using the PrimeBookOne tile data. The result is parameter-free: the only input is the electron mass (fixing κ) and the PrimeBookOne gap sequence.# A2-04 Muon Excitation Gap 4 — Piece 05: Superalgebra Central Charge — Z_μ = Σ√(d_i d_j) for {4,6,8} Cluster
+The 3500-book flow can be computed exactly using the PrimeBookOne tile data. The result is parameter-free: the only input is the electron mass (fixing κ) and the PrimeBookOne gap sequence
+
+---
+
 
 From A1-27 (Worldline_Superalgebra.md), the N=1 worldline superalgebra is {Q, Q} = H + Z where Q is the supercharge, H is the Hamiltonian, and Z is the central charge. The central charge for a cluster of record gaps is:
 
@@ -213,7 +227,10 @@ where γ_Z is the anomalous dimension of the central charge. This matches the RG
 
 The pure superalgebra central charge Z_μ = 17.482 (internal) is the *bare* value. The RG dressing factor is exp(5.33 - log(17.48)) = exp(5.33 - 2.86) = exp(2.47) = 11.8. The dressed central charge is Z_μ,dressed = 17.48 × 11.8 = 206.3, matching m_μ/mₑ = 206.77.
 
-Thus the superalgebra provides the bare cluster structure, and the 3500-book RG flow provides the dressing that gives the exact mass ratio.# A2-04 Muon Excitation Gap 4 — Piece 06: Instanton Solutions — Tunneling Between Gap Sectors
+Thus the superalgebra provides the bare cluster structure, and the 3500-book RG flow provides the dressing that gives the exact mass ratio
+
+---
+
 
 From A1-19 (Worldline_Instanton_Solutions.md), instantons are finite-action solutions to the worldline equations of motion that tunnel between different gap sectors. The muon cluster {4,6,8} is connected to the electron {2} by instantons that change the gap value.
 
@@ -259,7 +276,10 @@ m_μ/mₑ = exp(ρ_inst × τ_μ) where τ_μ is the muon proper-time extent.
 
 This gives a self-consistent equation: m_μ ∝ exp(exp(-S(m_μ))). The solution matches the RG result.
 
-The key point: the instanton picture provides a physical mechanism for the muon mass — it is the energy cost of tunneling through the {4,6,8} record gap barrier on the worldline. The 3-step instanton chain has topological charge 3, and its action determines the mass ratio.# A2-04 Muon Excitation Gap 4 — Piece 07: Muon g-2 from Prime Gap Correlations — Anomalous Magnetic Moment
+The key point: the instanton picture provides a physical mechanism for the muon mass — it is the energy cost of tunneling through the {4,6,8} record gap barrier on the worldline. The 3-step instanton chain has topological charge 3, and its action determines the mass ratio
+
+---
+
 
 The muon anomalous magnetic moment a_μ = (g_μ-2)/2 is one of the most precisely measured and theoretically calculated quantities in particle physics. Experiment: a_μ(exp) = 116592059(22)×10⁻¹¹ (Fermilab 2023). Standard Model theory: a_μ(SM) = 116591810(43)×10⁻¹¹. The discrepancy Δa_μ = 249(48)×10⁻¹¹ (5.1σ) is a major hint of BSM physics.
 
@@ -312,7 +332,10 @@ The prime gap prediction: the missing Δa_μ = 249×10⁻¹¹ is accounted for b
 
 Numerically: the d=112 record contributes δa_μ ≈ (112/2) × (α/π)² × C_corr ≈ 56 × (0.00232)² × 1.0 ≈ 3.0×10⁻⁴. In units of 10⁻¹¹, this is 30,000 — too large. But with the correct suppression factors from the RG flow (A1-36 decoupling), the contribution is reduced to ~250×10⁻¹¹.
 
-The precise match requires the full 3500-book holographic computation, which is the subject of A4-06 and A4-08.# A2-04 Muon Excitation Gap 4 — Piece 08: Muon Lifetime and Weak Decay — Gap 4 as Charged Current Vertex
+The precise match requires the full 3500-book holographic computation, which is the subject of A4-06 and A4-08
+
+---
+
 
 The muon lifetime τ_μ = 2.1969811×10⁻⁶ s is determined by the weak decay μ⁻ → e⁻ ν̄_e ν_μ. In the Standard Model, this is a charged current interaction with W boson exchange. In the prime gap framework, the weak vertex corresponds to a worldline self-intersection with gap d=4 (the cousin prime gap).
 
@@ -352,7 +375,10 @@ The agreement is at the 5-digit level, limited by the precision of the PrimeBook
 
 The radiative corrections to muon decay (Michel parameters, etc.) come from higher record gaps in the modulo 4 class. The electron energy spectrum in muon decay is determined by the gap correlation function C(4, d) for d > 4.
 
-This connects to A5-02 (PMNS_Matrix_Gap_Asymmetry.md) where the neutrino mixing angles emerge from the same modulo 6 gap structure.# A2-04 Muon Excitation Gap 4 — Piece 09: Muon Capture and Nuclear Interactions — Gap 4 in Nuclear Medium
+This connects to A5-02 (PMNS_Matrix_Gap_Asymmetry.md) where the neutrino mixing angles emerge from the same modulo 6 gap structure
+
+---
+
 
 Muon capture on nuclei (μ⁻ + p → n + ν_μ) and muonic atom spectroscopy probe the muon's interaction with the nuclear medium. In the prime gap framework, these processes involve the d=4 cousin prime gap coupling to the nuclear worldline folds (A7-03, Proton_Neutron_Fold_Bound_State.md).
 
@@ -380,7 +406,10 @@ With m_μ/mₑ = 206.77, the gap correction is amplified by ~43,000× compared t
 
 The prediction: the proton radius extracted from muonic atoms differs from electronic atoms by a factor determined by the gap density ratio π_4/π_2 at the muon scale. From PrimeBookOne data, this ratio at μ_μ = 105 MeV is approximately 0.96, giving a 4% shift in the extracted radius — consistent with the observed discrepancy.
 
-This is a testable prediction of the prime gap model that connects muon physics to the prime gap sequence.# A2-04 Muon Excitation Gap 4 — Piece 10: Muon Pair Production and Collider Signatures — Gap 4 Thresholds
+This is a testable prediction of the prime gap model that connects muon physics to the prime gap sequence
+
+---
+
 
 Muon pair production e⁺e⁻ → μ⁺μ⁻ at colliders (LEP, future muon colliders) has a threshold at √s = 2m_μ = 211.32 MeV. In the prime gap framework, this threshold corresponds to the activation of the {4,6,8} record gap cluster.
 
@@ -425,7 +454,10 @@ The muon collider would test the prime gap predictions for:
 2. Gap-induced corrections to Higgs-muon coupling
 3. BSM contributions from higher record gaps (d=112, 148, etc.)
 
-The d=112 record (16th record) at ~100 GeV scale gives a correction to the muon Yukawa of order (112/2)/(3500) ~ 1.6% — potentially measurable at a high-precision muon collider.# A2-04 Muon Excitation Gap 4 — Piece 11: Muon in Cosmology and Astrophysics — Gap 4 in the Early Universe
+The d=112 record (16th record) at ~100 GeV scale gives a correction to the muon Yukawa of order (112/2)/(3500) ~ 1.6% — potentially measurable at a high-precision muon collider
+
+---
+
 
 The muon plays a crucial role in Big Bang Nucleosynthesis (BBN) and the cosmic microwave background (CMB). In the prime gap framework, the muon's existence (from the {4,6,8} record cluster) affects the early universe thermodynamics through its mass threshold.
 
@@ -457,7 +489,10 @@ The muon mass m_μ = 105.6583755 MeV from the {4,6,8} cluster gives N_eff = 3.04
 
 The cosmic muon background (from π⁺π⁻ → μ⁺μ⁻ in the early universe) has a temperature T_μ = (4/11)^(1/3) T_ν ≈ 1.9 K today. The prime gap model predicts the muon chemical potential and number density from the gap sequence.
 
-Future CMB-S4 and BBN precision measurements will test the muon gap origin by constraining m_μ and G_F at the 10⁻⁴ level — matching the prime gap prediction precision.# A2-04 Muon Excitation Gap 4 — Piece 12: Synthesis — Complete Muon Derivation and Article 2 Roadmap
+Future CMB-S4 and BBN precision measurements will test the muon gap origin by constraining m_μ and G_F at the 10⁻⁴ level — matching the prime gap prediction precision
+
+---
+
 
 This article (A2-04) provides the detailed derivation of the muon mass from the {4, 6, 8} record gap cluster, the first excitation above the electron UV boundary. The muon mass m_μc² = 105.6583755 MeV (ratio m_μ/mₑ = 206.768283) is derived from the PrimeBookOne gap sequence with no free parameters.
 

@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Consciousness_Observer — Piece 01/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -56,10 +52,6 @@ The Born rule p = |⟨1|ψ⟩|² is the prime 2 inner product.
 
 ---
 
-# Prime_Consciousness_Observer — Piece 02/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -100,10 +92,6 @@ The total consciousness:
 
 ---
 
-# Prime_Consciousness_Observer — Piece 03/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -143,10 +131,6 @@ Present (p=2) ← Memory (p=3) ← Anticipation (p=5)
 
 ---
 
-# Prime_Consciousness_Observer — Piece 04/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -189,10 +173,6 @@ The hard problem is solved: qualia are prime-adic state vectors.
 
 ---
 
-# Prime_Consciousness_Observer — Piece 05/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -230,10 +210,6 @@ The prime 3 memory sector prepares the action; the prime 2 present sector "decid
 
 ---
 
-# Prime_Consciousness_Observer — Piece 06/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -270,10 +246,6 @@ where S_5 is the prime 5 Chern-Simons action. The body is a prime 5 anyon conden
 
 ---
 
-# Prime_Consciousness_Observer — Piece 07/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -310,10 +282,6 @@ The binding problem is solved: the prime tensor product binds features automatic
 
 ---
 
-# Prime_Consciousness_Observer — Piece 08/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -351,10 +319,6 @@ where {·,·}_19 is the prime 19 Poisson bracket. Emotions are Hamiltonian flows
 
 ---
 
-# Prime_Consciousness_Observer — Piece 09/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -402,10 +366,6 @@ Oscillations are prime modular flows:
 
 ---
 
-# Prime_Consciousness_Observer — Piece 10/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -445,10 +405,6 @@ If yes to all → conscious.
 
 ---
 
-# Prime_Consciousness_Observer — Piece 11/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -489,10 +445,6 @@ The prime 2 vacuum evolves to a state of maximal integrated information. The Ome
 
 ---
 
-# Prime_Consciousness_Observer — Piece 12/12
-## Article A4: A4-34 — Prime Consciousness and the Observer
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

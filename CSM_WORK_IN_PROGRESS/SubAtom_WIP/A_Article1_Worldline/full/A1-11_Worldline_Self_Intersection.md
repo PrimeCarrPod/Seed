@@ -205,7 +205,6 @@ To find self-intersections in PrimeBookOne data:
 
 ---
 
-*End of Piece 01 — Continues in Piece 02: Self-Intersection Topology and Feynman Diagrams*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 02)
 
 ## 8. Self-Intersection as Feynman Diagrams
 
@@ -380,7 +379,6 @@ This **exactly reproduces the QED beta function** (from A1-10, Section 10). The 
 
 ---
 
-*End of Piece 02 — Continues in Piece 03: Self-Intersection and the Electron's Internal Structure*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 03)
 
 ## 12. Electron Internal Structure from Self-Intersections
 
@@ -570,7 +568,6 @@ The mutual information $I(b:b') \sim N_{\text{inter}}(b,b') \ln 2$ — **self-in
 
 ---
 
-*End of Piece 03 — Continues in Piece 04: Self-Intersection and the Worldline Path Integral*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 04)
 
 ## 16. Self-Intersection in the Worldline Path Integral
 
@@ -716,7 +713,6 @@ More self-intersections = better error correction = less decoherence. The IR seg
 
 ---
 
-*End of Piece 04 — Continues in Piece 05: Self-Intersection and the Electron's Spin Structure*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 05)
 
 ## 20. Self-Intersection and the Electron's Spin Structure (A1-03 Connection)
 
@@ -863,7 +859,6 @@ The **product is over all self-intersection types** — the total self-intersect
 
 ---
 
-*End of Piece 05 — Continues in Piece 06: Self-Intersection in Curved Spacetime and Gravity*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 06)
 
 ## 24. Self-Intersection in Curved Spacetime and Emergent Gravity (A1-37, A1-38 Connection)
 
@@ -1044,7 +1039,6 @@ This is a **falsifiable prediction** of the Prime Electron model.
 
 ---
 
-*End of Piece 06 — Continues in Piece 07: Self-Intersection and the Worldline Action Principle*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 07)
 
 ## 28. Self-Intersection and the Worldline Action Principle (A1-16 Connection)
 
@@ -1206,7 +1200,6 @@ This entropy is carried by the **boundary self-intersections** — the inter-boo
 
 ---
 
-*End of Piece 07 — Continues in Piece 08: Self-Intersection and the Renormalization Group*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 08)
 
 ## 32. Self-Intersection and the Renormalization Group (A1-10 Section 10 Connection)
 
@@ -1343,7 +1336,6 @@ The "firewall" would be a region where self-interactions are **abnormally dense*
 
 ---
 
-*End of Piece 08 — Continues in Piece 09: Self-Intersection and the Worldline Stability (A1-05, A1-30 Connection)*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 09)
 
 ## 36. Self-Intersection and Worldline Stability (A1-05, A1-30 Connection)
 
@@ -1497,7 +1489,6 @@ If directories 4.0, 5.0, ... exist but are not published, they contain **additio
 
 ---
 
-*End of Piece 09 — Continues in Piece 10: Self-Intersection and the Worldline Path Integral Formulation*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 10)
 
 ## 40. Self-Intersection and the Worldline Path Integral Formulation (A1-18 Connection)
 
@@ -1691,7 +1682,6 @@ This equals the **change in the BPS index** — the number of self-intersection 
 
 ---
 
-*End of Piece 10 — Continues in Piece 11: Self-Intersection Summary and Experimental Predictions*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 11)
 
 ## 45. Experimental Predictions from Self-Intersection Structure
 
@@ -1886,7 +1876,6 @@ The self-intersection network is a **discrete quantum gravity model** — spacet
 
 ---
 
-*End of Piece 11 — Continues in Piece 12: Synthesis and Conclusion*# A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology (Piece 12)
 
 ## 51. Synthesis: The Self-Intersecting Worldline
 

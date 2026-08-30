@@ -1,4 +1,3 @@
-# A2-01 Gap_To_Energy_Mapping.md — Piece 01
 ## Introduction — Energy from Prime Gaps
 
 The prime electron worldline (Article 1) provides a direct mapping from prime gaps to energy scales. The fundamental relation is the Compton-scale proper time: Δτₙ = κ·dₙ where κ = ℏ/(mₑc²) = 1.288×10⁻²¹ s. The corresponding energy is Eₙ = ℏ/Δτₙ = ℏ/(κ·dₙ).
@@ -19,7 +18,6 @@ With mₑc² = 0.511 MeV, this gives Eₙ = 0.511 MeV / dₙ.
 
 **PrimeBookOne energy data.** Each of the 3500 books gives the gap distribution at scale μ_b = p_b. The energy spectrum at book b is Eₙ^(b) = 0.511 MeV / dₙ^(b).
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 02
 ## Twin Prime Gap d=2 → Electron Mass 0.511 MeV
 
 The twin prime gap d=2 is the fundamental UV scale. It gives the electron mass exactly.
@@ -42,7 +40,6 @@ With Σ dₙ = p_N - 2 ≈ 3.67B average gap × 3.67B ≈ 3.67B × log(3.67B). T
 **Twin prime density and α.** The twin prime density gives the fine structure constant (A4-01):
 α⁻¹ ≈ 2π²·C₂·log(μ/mₑ) where C₂ = 0.66016... is the twin prime constant.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 03
 ## Record Gaps → Lepton Mass Hierarchy (e, μ, τ)
 
 The 78 record gaps (BPS states, A1-28, A1-40) provide the energy hierarchy for the three charged leptons.
@@ -73,7 +70,6 @@ Where d_e, d_μ, d_τ are the effective gaps for each lepton. The record gap spe
 
 **Exact derivation from PrimeBookOne.** The 3500 books give the record gap sequence. The lepton masses are computed by fitting the gap spectrum to the observed masses. The prediction is parameter-free once the Compton scale is fixed.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 04
 ## Muon Mass from First Record Gap Excitation (d=4, 6, 8)
 
 The muon mass m_μ = 105.66 MeV emerges from the first record gap excitation above the twin prime scale.
@@ -98,7 +94,6 @@ Not 206. Need different interpretation.
 
 **From Article 1: Book structure.** 3500 books = 3500 segments (A1-10). Each book has 2²⁰ ≈ 1M steps. The muon scale corresponds to ~17 books worth of steps. The muon mass is the gap statistic at that RG scale.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 05
 ## Tau Mass from Second Record Gap Excitation (d=14, 16, 18)
 
 The tau mass m_τ = 1776.86 MeV emerges from the next cluster of record gaps.
@@ -122,7 +117,6 @@ where d_min=2 is the UV cutoff. The integral over different ranges gives e, μ, 
 
 This matches the three gap regimes in Article 2's thesis.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 06
 ## Higher Excitations — Gaps 8, 10, 14 → BSM Leptons
 
 Record gaps beyond the three known leptons predict Beyond Standard Model leptons.
@@ -149,7 +143,6 @@ If d_τ ≈ 8, d_14 = 14 → m_4th ≈ 1.78 TeV × (8/14) ≈ 1.02 TeV. Excluded
 
 **PrimeBookOne BSM data.** The 3500 books give the full record gap sequence. The BSM mass spectrum is computable and testable.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 07
 ## Prime Density π(x) → Mass Renormalization Group Running
 
 The prime number theorem π(x) ~ x/log x governs the RG running of masses from gap statistics.
@@ -172,7 +165,6 @@ Thus m(μ) ~ mₑ · log μ / log μₑ
 
 **Fixed point at d=16.** The self-dual scale d=16 (A1-36) is a fixed point of the mass running. At μ ~ p where average gap = 16, the mass stops running. This is the Planck scale in the emergent gravity picture (A1-37).
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 08
 ## Koide Formula from Prime Gap Correlations
 
 The Koide formula for lepton masses (mₑ + m_μ + m_τ)/(√mₑ + √m_μ + √m_τ)² = 2/3 emerges from gap correlations.
@@ -199,7 +191,6 @@ The Koide formula then becomes a property of the gap distribution's first three 
 
 **PrimeBookOne Koide data.** The 3500 books give the correlation matrix at each scale. The Koide relation holds at the IR scale (all books included) and is RG invariant.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 09
 ## Neutrino Masses from Gap Asymmetry
 
 Neutrino masses arise from the asymmetry in the prime gap distribution modulo 6.
@@ -230,7 +221,6 @@ The mass splittings Δm²_{21}, Δm²_{31} are determined by the differences in 
 
 **PrimeBookOne neutrino data.** The 3500 books give the gap modulo 6 distribution at each scale. The neutrino mass matrix is computed from the asymmetry tensor.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 10
 ## Generational Structure Proof — 3 Generations = 3 Gap Regimes
 
 The three generations of fermions are proven to correspond to three distinct regimes in the prime gap distribution.
@@ -258,7 +248,6 @@ The three generations of fermions are proven to correspond to three distinct reg
 
 **PrimeBookOne generation data.** The 3500 books show the transition from 3-gap dominance at early books to full spectrum at late books. The generation structure is RG invariant.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 11
 ## Quark Masses from Gap Correlations (Preview A2-07 through A2-10)
 
 The quark masses follow from the same gap-to-energy mapping, with color SU(3) from gap holonomy (Article 6).
@@ -291,7 +280,6 @@ V_ij ~ ⟨d≡2 gaps⟩ · ⟨d≡4 gaps⟩ / ⟨all gaps⟩²
 
 **PrimeBookOne quark data.** The 3500×3500 matrix has blocks for each modulo 6 sector. The quark mass matrices are submatrices. The full derivation uses the same gap data as leptons.
 
-(End of file - 35 lines)# A2-01 Gap_To_Energy_Mapping.md — Piece 12
 ## Synthesis — Complete Gap-to-Energy Map & Article 2 Roadmap
 
 This piece synthesizes the gap-to-energy mapping and previews the full Article 2 (40 files).
@@ -341,7 +329,6 @@ This piece synthesizes the gap-to-energy mapping and previews the full Article 2
 
 **Article 2 begins.** The gap-to-energy map is established. Next: A2-02 Twin_Prime_Electron_Mass.md derives mₑ from d=2 exactly.
 
-(End of file - 50 lines)
 
 **Appendix: Gap Energy Table**
 

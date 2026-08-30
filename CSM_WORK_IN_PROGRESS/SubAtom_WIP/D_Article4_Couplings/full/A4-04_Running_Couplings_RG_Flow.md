@@ -6,10 +6,6 @@
 
 ---
 
-# Running_Couplings_RG_Flow — Piece 01/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -98,10 +94,6 @@ The directory transitions are the major RG thresholds where the gap spectrum qua
 **Proof.** The 0.0 directory has primes up to ~10⁶. The maximal gaps are ~30. The 1.0 directory has primes up to ~10⁹, maximal gaps ~100. The 2.0 directory up to ~10¹², maximal gaps ~300. The 3.0 directory has all gaps. These transitions correspond to the major physical thresholds. □
 ---
 
-# Running_Couplings_RG_Flow — Piece 02/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -192,10 +184,6 @@ where y_t is the top Yukawa coupling (from electroweak record gap R_{ew}=14), an
 **Proof.** The quartic coupling λ is the four-Higgs gap correlation. The RG equation is the sum of all gap correlation diagrams with four external Higgs legs. The terms are: Higgs self-interaction (24λ²), top quark loop (−6y_t⁴), gauge boson loops (g₁², g₂²). □
 ---
 
-# Running_Couplings_RG_Flow — Piece 03/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -296,10 +284,6 @@ where S_I = 1, 2, 3, ... are the instanton actions (record gaps), and σ_I are t
 **Proof.** The gap instantons are the tunneling configurations between gap classes. The instanton action is S_I = κ R_I (record gap). The trans-series parameters σ_I are the gap instanton densities. The resurgence relations connect the large-order perturbative coefficients to the instanton data. □
 ---
 
-# Running_Couplings_RG_Flow — Piece 04/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -492,10 +476,6 @@ All 30 theorems (4.168–4.197) are proven from the gap statistics in PrimeBookO
 The next article, A4-05 Unification_Scale_Gap_Convergence.md, details the GUT scale unification from the convergence of the three gap densities at the record gap R_{GUT}.
 ---
 
-# Running_Couplings_RG_Flow — Piece 05/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -647,10 +627,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_04_RUNNING_COUPLINGS_20260825.md
 *Article A4-04 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Running_Couplings_RG_Flow — Piece 06/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -827,10 +803,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_04_RUNNING_COUPLINGS_20260825.md
 *Article A4-04 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Running_Couplings_RG_Flow — Piece 07/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -984,10 +956,6 @@ The RG flow of all Standard Model couplings (and beyond) is completely determine
 All 51 theorems (4.168–4.217) are proven from gap statistics.
 ---
 
-# Running_Couplings_RG_Flow — Piece 08/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -1125,10 +1093,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_04_RUNNING_COUPLINGS_20260825.md
 *Article A4-04 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Running_Couplings_RG_Flow — Piece 09/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -1310,10 +1274,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_04_RUNNING_COUPLINGS_20260825.md
 *Article A4-04 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Running_Couplings_RG_Flow — Piece 10/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -1442,10 +1402,6 @@ where:
 The 3.0 directory data gives δα/α ~ 0.1% at M_Z.
 ---
 
-# Running_Couplings_RG_Flow — Piece 11/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 
@@ -1608,10 +1564,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_04_RUNNING_COUPLINGS_20260825.md
 *Article A4-04 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Running_Couplings_RG_Flow — Piece 12/12
-## Article A4: A4-04 — Running Couplings RG Flow
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 01:50:00 UTC
 
 ---
 

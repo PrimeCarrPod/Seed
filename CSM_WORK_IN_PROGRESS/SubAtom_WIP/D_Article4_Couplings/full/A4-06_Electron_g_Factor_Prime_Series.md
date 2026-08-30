@@ -6,10 +6,6 @@
 
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 01/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -44,10 +40,6 @@ a_e^(2) = (1/2π) Σ_{k=1}^∞ C₂(k) (2/2+k)² = α/2π + O(1/log² p)
 **Proof.** For twin primes d_m = d_n = 2, the form factor f(2,2) = 4/16 = 1/4. The sum over k of C₂(k) gives the twin prime pair density. The Hardy-Littlewood conjecture for prime pairs with spacing 2 gives C₂(k) ~ (2C₂/log² p)² for large k, with corrections for small k from the prime k-tuple constants. The sum Σ_k C₂(k) converges to the twin prime pair correlation integral, yielding exactly the Schwinger coefficient when the proper-time measure is normalized by the Compton time. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 02/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -96,10 +88,6 @@ where g(R) = R⁻² exp(−R/R₀) is the record gap weight with cutoff R₀ ~ 1
 **Proof.** Record gaps R_n correspond to excited lepton masses m_n = κ R_n (Article 2: A2-03). The HVP diagram involves a virtual hadronic loop with mass M_h. In the Prime framework, the hadronic spectrum is discrete: M_h = κ R_n for record gaps R_n. The electron-hadron vertex couples through the worldline intersection with gap R_n. The (m_e/M_h)² suppression factor arises from the proper-time ratio. Summing over record gaps with the Cramér weight g(R) yields the HVP contribution. The leading record gaps R=4 (muon), R=6 (tau) dominate. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 03/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -140,10 +128,6 @@ has singularities at t = 2π/ρ_{max} where ρ_{max} is the maximum gap density.
 **Proof.** The factorial growth C_k ~ k! (from the k-loop form factor integral) implies zero radius of convergence. The Borel singularities correspond to instanton-like configurations on the worldline — the record gaps. The leading singularity at t = 2π/ρ₂ gives the Landau pole. The Borel sum ∫_0^∞ e^(−t/(α/π)) B(t) dt reproduces the non-perturbative a_e. Padé approximants [N/N] of the series converge exponentially to the exact value. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 04/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -184,10 +168,6 @@ where ρ₄ is the 4-point gap correlation function, and f_{LbL} is the light-by
 **Proof.** The HLbL diagram has four vertices connected in a box topology. On the worldline, this corresponds to four self-intersections with prime gaps d₁, d₂, d₃, d₄ forming a closed loop. The proper-time integral over the four ordered intervals gives f_{LbL} = (d₁ d₂ d₃ d₄) / [Π_{cyclic} (d_i + d_{i+1}) (Σ d_i)²]. The 4-point correlation ρ₄ factorizes into products of 2-point functions for the dominant twin prime configurations, with connected 4-point corrections from cousin/sexy prime correlations. The sum yields the known HLbL coefficient when evaluated with the PrimeBookOne gap data. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 05/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -228,10 +208,6 @@ where G(s) is the Mellin transform of the vertex form factor.
 **Proof.** The Mellin transform of f(d_m, d_n) = (d_m d_n)/(d_m + d_n)² with respect to d_m, d_n gives a product of gap zeta functions. The sum over m, n becomes the product ζ_{gap}(s)ζ_{gap}(s+1). The inverse Mellin transform recovers the series. The gap zeta function has poles at s=1 (from ⟨d⟩ ~ log n) and at s=ρ (from the Riemann zeros via the explicit formula for prime gaps). The pole at s=1 gives the leading log divergence which cancels in the renormalized a_e. The Riemann zero poles give oscillatory corrections of order exp(−√log p), matching the known non-perturbative structure. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 06/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -282,10 +258,6 @@ where Γ^μ(D̂) is the vertex function as an operator function of D̂.
 **Proof.** The Hilbert space dimension 256 = 2⁸ comes from the 8-bit prime difference array (Article 3: A3-01). The basis states |n⟩ correspond to gap indices. The operator D̂ has eigenvalues d_n (the prime gaps). The vertex function Γ^μ is a rational function of D̂: Γ^μ = (1/2π) (D̂/(D̂+m_e))² + higher loops. The matrix element ⟨0|Γ^μ(D̂)|0⟩ sums over all gap paths from the vacuum, reproducing the series Σ_k C_k (α/π)^k. This formulation makes the RG flow manifest: directory versions correspond to truncations of D̂ to its first N eigenvalues. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 07/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -326,10 +298,6 @@ where w_{mn}^{CP} = ⟨d_m d_n⟩_{CP} is the CP-violating part of the gap corre
 **Proof.** The EDM operator is i(d_e/2) ψ̄ σ^{μν} γ⁵ ψ F_{μν}. In the worldline formalism, this requires a phase in the path integral that is odd under time reversal. The prime gap sequence is real and positive, so CP violation must come from complex correlations in the UV completion. The 3.0 directory (Article 4: A4-05) contains complex gap structures from the F-theory GUT construction (Theorem 4.275). The imaginary part of the gap correlation function is suppressed by the GUT scale: Im w^{CP} ~ exp(−R_{GUT}) ~ 10⁻⁴³⁴, giving d_e far below experimental sensitivity. Any observable d_e would require intermediate-scale CP violation from missing gap classes. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 08/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -370,10 +338,6 @@ where δ_{gap} = (1/2π) Σ_d (ρ_Z(d) − ρ_0(d)) f(d) and ρ_Z(d) is the gap 
 **Proof.** The Coulomb potential V(r) = −Zα/r modifies the electron worldline proper-time measure. In the Prime framework, this appears as a Z-dependent distortion of the gap density: ρ_Z(d) = ρ_0(d) exp(−Zα d / d₂). The distortion is small for Zα ≪ 1. For hydrogen (Z=1), the correction is (α)² δ_{gap} ~ 10⁻⁵ relative to a_e. For high-Z ions (Z=82, lead), (αZ)² ~ 0.3 and the bound g−2 correction is measurable. The gap density modification ρ_Z(d) can be extracted from the PrimeBookOne 3.0 directory by analyzing the Z-dependent gap statistics. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 09/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -414,10 +378,6 @@ where ρ_N(d_N) is the nuclear gap density, and f_{mix} is the mixed form factor
 **Proof.** Radiative recoil diagrams have one photon loop and one nuclear recoil insertion. On the worldline, this is a self-intersection with an electron gap d_e and a nuclear gap d_N. The nuclear gap density ρ_N(d_N) is concentrated at the nuclear record gaps R_N, R_{N+1}, ... (Article 7). The mixed form factor f_{mix} = (d_e d_N)/(d_e + d_N)² interpolates between the electron and nuclear scales. The leading term uses the proton record gap R_N = 1836, giving Δa_e^{rad-recoil} ~ (α/π)(1/918) × 0.5 ~ 10⁻⁶ relative to a_e, matching the known radiative recoil contribution. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 10/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -460,10 +420,6 @@ where the sum is over non-trivial Riemann zeros ρ = 1/2 + iγ. This induces osc
 **Proof.** The explicit formula for the prime counting function π(x) = li(x) − Σ_ρ li(x^ρ) + ... induces oscillations in the gap density ρ(d; x) when differentiated. The vertex integral for a_e involves the gap density at scale μ ~ m_e. The Riemann zero sum introduces oscillations in a_e with frequencies log(μ) ∼ γ. The amplitude of the γ-th oscillation is (α/π)^γ ~ exp(−γ log(π/α)) ~ 10⁻⁶⁰ for the first zero γ₁ = 14.13. These oscillations are far below experimental sensitivity but provide a theoretical link between the Riemann hypothesis and the finiteness of a_e: if RH is false (some ρ with Re(ρ) > 1/2), the oscillations would grow as power laws rather than decay exponentially, making a_e ill-defined. Thus RH is equivalent to the convergence of the prime gap g−2 series. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 11/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 
@@ -510,10 +466,6 @@ which would appear in the 3.0 directory as a record gap R = 12 with density enha
 **Proof.** The muon g−2 anomaly Δa_μ = 2.5×10⁻⁹ requires a BSM contribution with effective coupling g_{BSM}²/(16π²) ~ 10⁻⁹. In the Prime framework, this is a missing gap class that contributes to the muon worldline (which uses record gap R₄=4 as its base scale) but not to the electron worldline (base scale d₂=2). The ratio of sensitivities is (R₄/d₂)² = 4, so a missing gap with density ρ_{missing} ~ 10⁻¹⁰ gives Δa_μ ~ 4 × 10⁻⁹, matching the anomaly. The candidate gap d=12 is the first even gap that is not a record gap and does not occur as a twin/cousin/sexy prime pair. Its absence in the 0.0 directory and presence in 3.0 with enhanced density would generate the anomaly. □
 ---
 
-# Electron_g_Factor_Prime_Series — Piece 12/12
-## Article A4: A4-06 — Electron g-Factor Prime Series
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 02:20:00 UTC
 
 ---
 

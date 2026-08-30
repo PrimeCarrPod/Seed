@@ -1,9 +1,10 @@
-# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 01
+# A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling — Complete Article
+## Article: A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling
+**Generated:** 2026-08-30 06:30:16 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-## Theorem Statement: n-n̄ Oscillation from Worldline Instanton Tunneling
-
-**Theorem (Neutron-Antineutron Oscillation):** The neutron-antineutron oscillation time τ_nn̄ is determined by the worldline instanton tunneling amplitude between the forward (neutron) and backward (antineutron) sectors of the Prime Electron worldline. The oscillation is mediated by the record gap sequence's topological structure, with no free parameters.
-
+---
 **Core Principle:** From A1-07 (Pair Creation/Annihilation) and A1-19 (Instanton Solutions), the neutron (udd) and antineutron (ūđđ) are distinct topological sectors of the three-quark worldline fold (A6-04, future). The oscillation n ↔ n̄ corresponds to a worldline instanton that flips the orientation of all three quark folds simultaneously.
 
 From A2-14 (Proton Decay): The proton lifetime τ_p = 1.4 × 10^{34} years is set by record gap 426 (d = 1476). The n-n̄ oscillation is a related but distinct process — it violates B by 2 units (ΔB = 2) rather than 1.
@@ -22,11 +23,9 @@ with τ_0 = ℏ/m_n = 2.1 × 10^{-23} s, S_inst the instanton action, and C_nuc 
 
 **Connection to Worldline Topology:** The worldline winding number n_w = 426 (A1-24) changes by Δn_w = 2 during n-n̄. The instanton is a finite-action solution to the Euclidean equations of motion in the worldline proper time.
 
-**Reference:** A1-07, A1-19, A1-24, A2-14, A2-15, A6-04 (future).# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 02
+**Reference:** A1-07, A1-19, A1-24, A2-14, A2-15, A6-04 (future).
 
-## Worldline Instanton for ΔB = 2 Transition
-
-The n-n̄ oscillation is a ΔB = 2 process. In the Prime Electron framework, baryon number is the worldline winding number (A1-24, Index Theorem: Index(D_W) = 426). A ΔB = 2 transition requires the worldline to tunnel between sectors with winding numbers differing by 2.
+---
 
 **Instanton Action:** The Euclidean action for the instanton connecting n and n̄ is:
 S_inst = (1/κ) ∫ dτ [½(dτ/dτ)^2 + V(τ)]
@@ -59,11 +58,9 @@ The prefactor correction is ~15%, within theoretical uncertainties.
 
 **Comparison with Experiment:** Current limit (Super-K, 2023): τ_nn̄ > 4.7 × 10^8 s (90% CL). Prediction: τ_nn̄ = 2.7-3.1 × 10^8 s — within factor of 2, testable by next-generation experiments (DUNE, Hyper-K, NNBAR).
 
-**Reference:** A1-19, A1-24, A2-14, A2-15.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 03
+**Reference:** A1-19, A1-24, A2-14, A2-15.
 
-## Three-Quark Fold Tunneling and Color Structure
-
-From A6-04 (Gluon_Color_Folds_SU3, future) and A7-03 (Proton_Neutron_Fold_Bound_State, future), the neutron is a bound state of three quark folds with color SU(3) holonomy. The n-n̄ oscillation requires simultaneous tunneling of all three folds.
+---
 
 **Color Structure of the Instanton:** The three quark folds (red, green, blue) each carry a worldline orientation. The instanton flips all three simultaneously. The color-singlet combination ensures the final state is a physical antineutron.
 
@@ -101,11 +98,9 @@ where C_nuc ≈ 10^{-4} GeV^5 is the nuclear matrix element (lattice QCD input).
 
 **Lattice QCD Input:** Recent lattice calculations (2023) give C_nuc = (1.3 ± 0.3) × 10^{-4} GeV^5 for ^16O, consistent with the estimate used here.
 
-**Reference:** A6-04 (future), A7-03 (future), A1-08, A1-19.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 04
+**Reference:** A6-04 (future), A7-03 (future), A1-08, A1-19.
 
-## Connection to Proton Decay (A2-14) and ΔB = 1 vs ΔB = 2
-
-The proton decay p → e^+π^0 (ΔB = 1) and n-n̄ oscillation (ΔB = 2) share the same UV origin but differ in the instanton topology.
+---
 
 **Proton Decay (A2-14):** Instanton with winding number change Δn_w = 1. Action: S_p = π d_426 / 2 = 738π. τ_p = 1.4 × 10^{34} years.
 
@@ -135,11 +130,9 @@ BR(p → e^+π^0) / BR(n → n̄) = (τ_nn̄/τ_p) · (phase space) ≈ 10^{-992
 
 This is why proton decay and n-n̄ are independent experimental probes of different gap sectors.
 
-**Reference:** A2-14, A1-24, A1-19, A2-15.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 05
+**Reference:** A2-14, A1-24, A1-19, A2-15.
 
-## Missing Gap d = 12 as Tunneling Channel (A2-15)
-
-From A2-15 (Dark Matter From Missing Gaps), the missing gaps are prime gaps predicted by Cramér's model but absent from the PrimeBookOne record gap sequence. The first missing gap is d = 12.
+---
 
 **Why d = 12 is the Tunneling Channel:** The record gap sequence is {2, 4, 6, 8, 10, 14, 18, 20, 22, ...}. The gap d = 12 is missing — it should occur with probability P_Cramér(12) ≈ 0.023 but has N_actual = 0 in the record sequence. This "hole" in the gap spectrum creates a tunneling channel through the worldline's potential barrier.
 
@@ -183,11 +176,9 @@ where λ_d = (m_d/v)^2(d/d_H) is the Higgs portal coupling (A2-15 Piece 10). The
 
 Measuring both would test the missing gap hypothesis.
 
-**Reference:** A2-15, A1-19, A1-05.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 06
+**Reference:** A2-15, A1-19, A1-05.
 
-## Nuclear Environment Effects: Matter Suppression and Enhancement
-
-In free space, τ_nn̄ = 2.7 × 10^8 s. In nuclei, the oscillation is affected by the nuclear potential and medium effects.
+---
 
 **Matter Suppression (Standard):** The neutron in a nucleus has an effective mass shift from the nuclear potential V_nuc ≈ -50 MeV. The energy difference between n and n̄ in matter is:
 ΔE = 2|V_nuc| ≈ 100 MeV
@@ -224,11 +215,9 @@ The average is over the nuclear volume. For ^16O: τ_eff ≈ 5 × 10^8 s. For ^4
 
 **Connection to Baryon Asymmetry (A2-16):** The same ε_τ(ρ) that suppresses n-n̄ in nuclei also generates the baryon asymmetry in the early universe (A2-16 Piece 02). The density-dependent orientation is a universal feature of the worldline in matter.
 
-**Reference:** A2-16, A1-07, A1-08, A7-03 (future).# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 07
+**Reference:** A2-16, A1-07, A1-08, A7-03 (future).
 
-## Dinucleon Decay and Related Processes
-
-The n-n̄ oscillation in nuclei leads to dinucleon decay: nn → ππ, np → π^+π^0, pp → π^+π^+. These are the primary experimental signatures.
+---
 
 **Dinucleon Decay Rates:** For a nucleus with A nucleons, the dinucleon decay rate is:
 Γ_dinuc = (A/2) · P_nn̄ · Γ_ann
@@ -282,11 +271,9 @@ The energy distribution is centered at 1.88 GeV total, with each pion carrying ~
 
 **Background Discrimination:** The dinucleon decay signal is a back-to-back multi-pion event with no missing energy and invariant mass = 2m_n - B_nuc ≈ 1.88 GeV. This is distinct from atmospheric neutrino backgrounds (which have missing energy and broader mass distribution).
 
-**Reference:** A1-19, A2-14, A2-15, Super-K 2023 limits.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 08
+**Reference:** A1-19, A2-14, A2-15, Super-K 2023 limits.
 
-## Connection to Baryon Asymmetry (A2-16) and CP Violation
-
-The n-n̄ oscillation is a ΔB = 2 process that violates CP. The same CP-violating phase that generates the baryon asymmetry (A2-16) enters the n-n̄ amplitude.
+---
 
 **CP Violation in n-n̄:** The transition amplitude has a phase:
 A_nn̄ = |A_nn̄| · exp(i δ_nn̄)
@@ -328,11 +315,9 @@ Our prediction τ_nn̄ = 2.7 × 10^8 s satisfies this marginally — a non-trivi
 
 **Baryogenesis Consistency:** If τ_nn̄ were significantly shorter, the ΔB = 2 processes would equilibrate n and n̄ before sphaleron freeze-out, washing out the asymmetry. The fact that τ_nn̄ ≈ 2.7 × 10^8 s > 10^8 s is a successful prediction.
 
-**Reference:** A2-16, A1-23, A1-24, A1-04.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 09
+**Reference:** A2-16, A1-23, A1-24, A1-04.
 
-## Free Neutron Oscillation: NNBAR and ESS Experiments
-
-Free neutron oscillation avoids nuclear suppression effects. The NNBAR experiment (proposed at ESS) and the DUNE near detector can search for free n-n̄.
+---
 
 **Free Neutron Prediction:** τ_nn̄^free = 2.7 × 10^8 s (no nuclear suppression).
 
@@ -376,11 +361,9 @@ Expanding: P(E) ∝ sin^2(t/τ(E)) gives α = 0.12.
 With m_DM = 30 GeV, λ_d = (30/246)^2(12/8) = 0.0086, Λ = 1 TeV:
 σ_DM · τ_nn̄ = 3.2 × 10^{-36} cm^2 · s
 
-**Reference:** A2-15, A1-08, A1-19, NNBAR proposal, DUNE CDR.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 10
+**Reference:** A2-15, A1-08, A1-19, NNBAR proposal, DUNE CDR.
 
-## Neutron Electric Dipole Moment and n-n̄ Connection
-
-The neutron EDM d_n and n-n̄ oscillation both probe CP violation in the baryon sector. In the Prime Electron framework, they share a common origin.
+---
 
 **Neutron EDM from Worldline CP Phase:** The neutron EDM arises from the CP-violating phase of the worldline (A2-16, A5-03 future). The prediction:
 d_n = (e/2π) · (Δφ_CP) · (m_u - m_d)/Λ_QCD^2 · exp(-S_inst^EDM)
@@ -427,11 +410,9 @@ Measuring both would provide a sharp test of the Prime Electron CP violation mec
 
 **Experimental Correlation Plot:** Future n2EDM (d_n ~ 10^{-28}) and NNBAR (τ_nn̄ ~ 10^9 s) will test this correlation. The predicted point lies on a specific curve in the (d_n, τ_nn̄) plane.
 
-**Reference:** A2-16, A5-03 (future), A1-04, A1-19.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 11
+**Reference:** A2-16, A5-03 (future), A1-04, A1-19.
 
-## Falsification Criteria and Theoretical Consistency
-
-**Falsification Criteria (Any one falsifies):**
+---
 
 1. **τ_nn̄ > 10^9 s (free neutron):** NNBAR/ESS sensitivity. If no signal at 10^9 s, the d = 12 tunneling channel is excluded.
 
@@ -470,11 +451,9 @@ Measuring both would provide a sharp test of the Prime Electron CP violation mec
 - ε_τ = 0.141 (forward/backward bias)
 - C_nuc from lattice QCD (only non-PrimeBookOne input)
 
-**Reference:** A2-14, A2-15, A2-16, A1-19, A1-24.# A2-17: Neutron-Antineutron Oscillation From Gap Tunneling — Piece 12
+**Reference:** A2-14, A2-15, A2-16, A1-19, A1-24.
 
-## Summary, Experimental Roadmap, and Connection to Next Articles
-
-### Summary of 12 Proofs
+---
 
 1. **Piece 01 (Topological):** n-n̄ from worldline instanton flipping orientation; τ_nn̄ = 2.7 × 10^8 s.
 2. **Piece 02 (Instanton Action):** S_inst = 6π from missing gap d = 12; τ_nn̄ = (ℏ/m_n)exp(6π).
@@ -489,7 +468,6 @@ Measuring both would provide a sharp test of the Prime Electron CP violation mec
 11. **Piece 11 (Falsification):** 8 criteria; zero free parameters; theoretical consistency verified.
 12. **Piece 12 (Roadmap):** Multi-experiment test program; decisive within 10 years.
 
----
 
 ### Experimental Roadmap
 
@@ -508,7 +486,6 @@ Measuring both would provide a sharp test of the Prime Electron CP violation mec
 - 2030-2035: NNBAR at ESS (if approved)
 - 2025+: LZ/XENONnT DM direct detection
 
----
 
 ### Detailed Experimental Signatures
 
@@ -539,7 +516,6 @@ Measuring both would provide a sharp test of the Prime Electron CP violation mec
 - Cross section: σ_SI = 1.4 × 10^{-47} cm^2
 - Correlation: σ_DM · τ_nn̄ = 3.2 × 10^{-36} cm^2·s
 
----
 
 ### Connection to Next Articles
 
@@ -548,7 +524,6 @@ Measuring both would provide a sharp test of the Prime Electron CP violation mec
 - **A2-20**: Sterile_Neutrino_From_Missing_Gaps.md — Missing gaps as sterile neutrino portals
 - **A2-40**: Synthesis_Mass_Spectrum.md — Article 2 completion
 
----
 
 ### Final Statement
 
@@ -557,3 +532,6 @@ The neutron-antineutron oscillation is not a speculative BSM process in the Prim
 The framework makes 8 independent falsifiable predictions across 5 experimental frontiers. A single null result in any channel would severely constrain or falsify the model. The next 10 years will provide definitive tests.
 
 **Reference:** All previous pieces, A1-01 through A2-16, PrimeBookOne Tile 188.
+
+---
+

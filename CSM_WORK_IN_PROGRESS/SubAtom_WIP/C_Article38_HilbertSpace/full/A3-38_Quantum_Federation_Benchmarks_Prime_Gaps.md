@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 01/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -74,14 +70,8 @@ GapBench completes the Federation Triad with A3-23 (Core), A3-24 (Security), A3-
 
 ---
 
-*End of Piece 01*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 02/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -327,14 +317,8 @@ Quantum workloads span BQP with gap-parameterized circuit complexity. HPC worklo
 
 ---
 
-*End of Piece 02*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 03/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -602,14 +586,8 @@ Baselines are derived from gap-statistics (gap-density, gap-class, gap-rank) whi
 
 ---
 
-*End of Piece 03*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 04/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -902,14 +880,8 @@ Each stage of execution produces a gap-attestation signed by the executing entit
 
 ---
 
-*End of Piece 04*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 05/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -1231,14 +1203,8 @@ Gap-scaling laws incorporate gap-class parameters that capture the asymptotic co
 
 ---
 
-*End of Piece 05*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 06/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -1575,14 +1541,8 @@ CORE gap-class (twin primes) has zero chaos budget - no experiments allowed. Oth
 
 ---
 
-*End of Piece 06*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 07/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -1895,14 +1855,8 @@ Statistical tests (trend analysis, baseline comparison) have well-defined false 
 
 ---
 
-*End of Piece 07*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 08/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -2222,14 +2176,8 @@ Gap-Vickrey auctions for resources are strategy-proof. Result pricing uses gap-i
 
 ---
 
-*End of Piece 08*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 09/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -2553,14 +2501,8 @@ Gap-range assignment is bijective. Benchmark execution uses tenant-isolated name
 
 ---
 
-*End of Piece 09*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 10/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -2872,14 +2814,8 @@ Gap-features include gap-density (1/log p_k) capturing asymptotic prime distribu
 
 ---
 
-*End of Piece 10*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 11/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -3261,14 +3197,8 @@ Each stage of the benchmark lifecycle produces a gap-attestation signed by the r
 
 ---
 
-*End of Piece 11*
----
 ---
 
-# Quantum_Federation_Benchmarks_Prime_Gaps — Piece 12/12
-## Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-24 22:42:09 UTC
 
 ---
 
@@ -3549,9 +3479,6 @@ The Prime Gap Benchmarking Principle is the benchmarking analog of the One-Elect
 
 ---
 
-*End of Piece 12*
----
 *End of Article 3: A3-38 — Quantum Federation Benchmarks Prime Gaps*
----
 ---
 

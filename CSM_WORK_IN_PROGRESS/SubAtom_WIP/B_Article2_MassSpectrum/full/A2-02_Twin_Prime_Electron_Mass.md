@@ -1,4 +1,3 @@
-# A2-02 Twin_Prime_Electron_Mass.md — Piece 01
 ## Introduction — Electron Mass from Twin Prime Gap d=2
 
 The electron mass mₑ = 0.511 MeV is derived exactly from the twin prime gap d=2. The Compton scale κ = ℏ/(mₑc²) (A1-09) fixes the mass scale, and the twin prime gap provides the UV boundary condition that determines κ uniquely.
@@ -14,7 +13,6 @@ The electron mass mₑ = 0.511 MeV is derived exactly from the twin prime gap d=
 
 **No free parameters.** Once the gap sequence dₙ is given, κ is determined by the requirement that the worldline has a minimum step d=2. The value mₑ = 0.511 MeV is then a prediction of the prime gap distribution.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 02
 ## Compton Scale κ = ℏ/(mₑc²) from 3.67B Steps
 
 The Compton scale κ is determined by the total proper time of the worldline (A1-09).
@@ -38,7 +36,6 @@ With τ_C = 1.288×10⁻²¹ s: mₑc² = 0.511 MeV ✓
 
 **PrimeBookOne verification.** Each book b gives the minimum gap d_min(b). The running Compton scale is κ_b = Δτ_min(b)/2. As b → 3500, κ_b → κ = 1.288×10⁻²¹ s.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 03
 ## Twin Prime Density C₂ → Fine Structure Constant α
 
 The twin prime density determines the electromagnetic coupling α (A4-01 preview).
@@ -66,7 +63,6 @@ The twin prime gaps are the UV boundary operators in AdS₂/CFT₁. Their densit
 
 **A4-01 full derivation.** Article 4 will derive α = 1/137.036 exactly from the twin prime gap correlations in the 3500×3500 matrix.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 04
 ## Gap d=2 → Worldline UV Completion
 
 The twin prime gap d=2 provides the UV completion of the worldline theory.
@@ -85,7 +81,6 @@ The twin prime gap d=2 provides the UV completion of the worldline theory.
 
 **PrimeBookOne UV data.** Each book b gives the twin primes up to p_b. The 3500 books show the twin prime density converging to the Hardy-Littlewood prediction. The QEC code parameters are computable at each scale.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 05
 ## Electron Mass as Worldline Ground State Energy
 
 The electron mass is the ground state energy of the worldline Hamiltonian (A1-17).
@@ -112,7 +107,6 @@ Actually energies decrease with increasing d. The ground state is d=∞? No.
 
 **Zero-point energy.** The worldline zero-point energy is E₀ = (1/2) Σ ω_d where ω_d = 1/(κd). The sum is regularized by the BPS sector (78 zero modes). The finite part gives mₑc².
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 06
 ## Positron Mass from Backward Time (A1-07)
 
 The positron mass equals the electron mass by CPT symmetry (A1-07).
@@ -132,7 +126,6 @@ The twin prime gap d=2 gives the same Compton scale for both orientations.
 
 **PrimeBookOne pair data.** Each book gives the gap sequence. The time-reversed sequence is identical. The pair creation rate from the gap statistics matches the Schwinger formula with twin prime enhancement.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 07
 ## Twin Prime Conjecture ↔ Electron Stability
 
 The stability of the electron is equivalent to the twin prime conjecture.
@@ -151,7 +144,6 @@ The stability of the electron is equivalent to the twin prime conjecture.
 
 **Connection to A1-39.** Information preservation (A1-39) requires the Page curve to be smooth. Electron decay would cause information loss. The smooth Page curve implies stable electron implies infinite twin primes.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 08
 ## g-Factor from Twin Prime Gap Expansion
 
 The electron g-factor receives corrections from the twin prime gap distribution (A4-06 preview).
@@ -178,7 +170,6 @@ from the prime gap statistics. The twin prime sector gives the dominant UV contr
 
 **Twin prime conjecture → exact g-2.** If twin primes are finite, the UV completion fails and g-2 cannot be computed to arbitrary precision. The observed precision of g-2 is evidence for infinite twin primes.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 09
 ## Lamb Shift from Twin Prime Fluctuations
 
 The Lamb shift (A4-07 preview) arises from the twin prime gap fluctuations in the worldline vacuum.
@@ -205,7 +196,6 @@ where ρ(d) is the gap density. The twin prime density ρ(2) ~ C₂/log²x sets 
 
 **Twin prime conjecture → exact Lamb shift.** The infinite twin primes provide the infinite UV modes needed for the logarithmic divergence. If twin primes are finite, the sum is cut off and the Lamb shift prediction fails at high precision.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 10
 ## Charge Renormalization from Worldline Orientation (A4-09)
 
 The electric charge e is renormalized by the worldline orientation distribution (A1-07, A4-09 preview).
@@ -230,7 +220,6 @@ where f₂(μ) is the twin prime fraction at scale μ.
 
 **Charge quantization.** The gap sequence gives a natural charge quantization: all charges are multiples of e/3 (quark charges from gap modulo 3, A2-11 preview). The electron charge is the fundamental unit.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 11
 ## Twin Prime Code Indices in PrimeBookOne (A1-35, A1-40)
 
 The twin prime QEC code indices are explicitly computable from PrimeBookOne.
@@ -265,7 +254,6 @@ The single logical qubit is the index-1 mode.
 
 **Article 2 connection.** The electron mass mₑ = 0.511 MeV is the energy of the logical qubit of the twin prime code. The code Hamiltonian gives the mass spectrum.
 
-(End of file - 35 lines)# A2-02 Twin_Prime_Electron_Mass.md — Piece 12
 ## Synthesis — Electron Mass from d=2 & Article 2 Preview
 
 **Electron mass derivation summary.**
@@ -313,7 +301,6 @@ The single logical qubit is the index-1 mode.
 
 **Next: A2-03 Record_Gaps_Lepton_Hierarchy.md** derives the muon and tau masses from the first and second record gap clusters (d=4,6 and d=14,16,18).
 
-(End of file - 50 lines)
 
 **Appendix: Twin Prime Gap Energy Table**
 

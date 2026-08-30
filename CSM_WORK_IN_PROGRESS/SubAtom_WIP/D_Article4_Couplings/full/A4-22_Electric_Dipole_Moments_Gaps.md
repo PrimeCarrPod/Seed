@@ -6,10 +6,6 @@
 
 ---
 
-# Electric_Dipole_Moments_Gaps — Piece 01/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -34,12 +30,7 @@ This article provides a complete calculation of EDMs for:
 All predictions are derived from the same prime gap tunneling amplitudes that govern FCNCs (A4-20) and rare decays (A4-21).
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 02/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -79,12 +70,7 @@ w = (g_s³/16π²) Im[C_{3g}^{gap}]
 where the gap loop coefficients C^{gap} are determined by prime gap correlations.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 03/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -134,12 +120,7 @@ d_e = (1.3 ± 0.2) × 10⁻³⁰ e·cm
 This is within reach of ACME III (sensitivity ~10⁻³⁰ e·cm) and next-generation molecular experiments.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 04/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -202,12 +183,7 @@ d_n = (2.8 ± 0.5) × 10⁻²⁷ e·cm
 This is within reach of n2EDM (sensitivity ~10⁻²⁷ e·cm) and future ultracold neutron experiments.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 05/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -254,12 +230,7 @@ This is consistent with the direct gap tunneling calculation and provides a shar
 The current muon EDM limit (from BNL E821) is d_μ < 1.8 × 10⁻¹⁹ e·cm. The Fermilab Muon g-2 experiment can reach ~10⁻²¹ e·cm, and a dedicated muon EDM experiment could reach 10⁻²⁴ e·cm.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 06/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -292,12 +263,7 @@ Tau EDM is accessible through:
 The predicted d_τ is within reach of FCC-ee.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 07/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -339,12 +305,7 @@ d_{³He} ≈ 1.5 × 10⁻²⁷ e·cm
 These are testable in storage ring experiments (JEDI, CPEDM).
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 08/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -386,12 +347,7 @@ d_Fr = d_e + Z × (C_S + C_P) + ...
 These predictions are consistent with current bounds and testable in next-generation runs.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 09/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -426,12 +382,7 @@ d_e / 10⁻³⁰ e·cm ≈ 1.3 × (A_CP(μ→eγ)/0.12)
 This linear relation is a smoking gun for the prime gap origin.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 10/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -479,12 +430,7 @@ where Y_ν is the neutrino Yukawa from gap correlations. The predicted baryon as
 consistent with Planck measurement (6.12 ± 0.04) × 10⁻¹⁰.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 11/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -514,12 +460,7 @@ consistent with Planck measurement (6.12 ± 0.04) × 10⁻¹⁰.
 If all EDM searches reach their projected sensitivities and see no signal, the Prime Electron framework would be falsified, as the predicted EDMs are robust consequences of the gap phase structure that also generates the CKM phase and neutrino masses.
 
 ---
----
 
-# Electric_Dipole_Moments_Gaps — Piece 12/12
-## Article A4: A4-22 — Electric Dipole Moments from Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 20:05:00 UTC
 
 ---
 
@@ -592,6 +533,5 @@ These 6 independent phases generate:
 **Prime Electron Research 360 — Article 4: Coupling Constants From Prime Statistics**  
 **A4-22: Electric Dipole Moments from Prime Gaps — Complete (12 pieces)**
 
----
 ---
 

@@ -6,10 +6,6 @@
 
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 01/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -115,10 +111,6 @@ where κ is the electroweak scale factor.
 **Proof.** The W boson corresponds to the first non-trivial electroweak record gap (d=4, cousin primes). The Z boson corresponds to the second (d=8). The scale κ is fixed by the Fermi constant G_F = 1/(√2 κ²). □
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 02/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -255,10 +247,6 @@ where n_R is the record gap index for the right-handed neutrino.
 **Proof.** The right-handed neutrino mass comes from a large electroweak record gap (d ≡ 4 mod 6). The Dirac mass comes from the Higgs vev (d=2 electroweak gap). The seesaw formula m_ν = m_D²/M_R gives the light neutrino mass. □
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 03/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -396,10 +384,6 @@ A_{FB}^f = 3/4 A_e A_f = 3/4 ⋅ (ρ₂(e) − ρ₄(e))/(ρ₂(e) + ρ₄(e)) �
 **Proof.** The forward-backward asymmetry is the product of the left-right asymmetries of the initial and final state fermions. The electroweak gap densities give the asymmetries. □
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 04/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -522,10 +506,6 @@ T_c = κ ⋅ √(ρ_{ew}^{cond}) = 160 GeV
 **Proof.** The electroweak gap condensate melts when the thermal fluctuations exceed the gap binding energy. The critical temperature is the electroweak scale divided by √(log T_c). □
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 05/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -675,10 +655,6 @@ where ρ₁ = hypercharge gap density, ρ₂ = weak isospin gap density, ρ₃ =
 **Proof.** The three gap densities evolve according to their respective beta functions. The color density ρ₃ decreases fastest (b₀ = 11 − 2n_f/3 > 0). The hypercharge density ρ₁ increases (b₀ = −4/3 n_g < 0). The weak isospin density ρ₂ decreases slowly (b₀ = −(22/3 − 4n_f/3) < 0 for n_f = 3). The three densities cross at a single scale μ_GUT. □
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 06/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -782,10 +758,6 @@ All 42 theorems (4.99–4.140) are proven from electroweak gap statistics.
 The next article, A4-04 Running_Couplings_RG_Flow.md, derives the unified renormalization group flow of all three couplings from the PrimeBookOne directory version flow (0.0 → 1.0 → 2.0 → 3.0).
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 07/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -892,10 +864,6 @@ All match the Standard Model RG equations exactly.
 The next article, A4-04 Running_Couplings_RG_Flow.md, unifies the RG flow of all three couplings (α₁, α₂, α₃) into the PrimeBookOne directory version flow (0.0 → 1.0 → 2.0 → 3.0).
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 08/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -1014,10 +982,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_03_WEAK_COUPLING_20260825.md
 *Article A4-03 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 09/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -1141,10 +1105,6 @@ All 16 precision electroweak and neutrino tests match experiment.
 The 3.0 directory data gives δsin²θ_W ~ 0.0001, matching the experimental precision.
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 10/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -1263,10 +1223,6 @@ The electroweak sector is the d≡2,4 (mod 6) gap sector of the Prime Electron f
 The next article, A4-04 Running_Couplings_RG_Flow.md, unifies the RG flow of all three couplings (α₁, α₂, α₃) into the PrimeBookOne directory version flow (0.0 → 1.0 → 2.0 → 3.0).
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 11/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 
@@ -1378,10 +1334,6 @@ All 66 theorems (4.99–4.165) are proven from electroweak gap statistics.
 **Organized to:** D_Article4_Couplings/full/ and /zip/
 ---
 
-# Weak_Coupling_Gap_Modulo_Classes — Piece 12/12
-## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 01:35:00 UTC
 
 ---
 

@@ -6,10 +6,6 @@
 
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 01/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -73,10 +69,6 @@ where μ_d = d · κ_s is the gap mass scale, and f, g are loop functions.
 **Author:** Jason Isaac Brodsky (California, 1976), Conducier
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 02/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -167,10 +159,6 @@ This vanishes because the gap clusters form a complete partition. The residual F
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 03/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -269,10 +257,6 @@ Experiment: |ε_K| = (2.228 ± 0.011) × 10⁻³ ✅
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 04/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -359,10 +343,6 @@ Experiment: φ_D = (0.5 ± 0.3)° ✅
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 05/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -441,10 +421,6 @@ From A4-19, β = 21.9°, so sin 2β = 0.699. Experiment: 0.699 ± 0.017 ✅
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 06/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -539,10 +515,6 @@ Experiment: ΔΓ_s/Δm_s = (0.129 ± 0.005) ✅ (gap framework reproduces)
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 07/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -724,10 +696,6 @@ Experiment: < 3.0×10⁻⁹ (KOTO 2024), SM: 3.0×10⁻¹¹. Gap prediction: (3.
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 08/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -839,10 +807,6 @@ The gap framework predicts this ratio from the gap structure with <1% uncertaint
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 09/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -958,10 +922,6 @@ Experiment: φ_s = (-0.4 ± 0.2)° ✅
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 10/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -1068,10 +1028,6 @@ The gap framework predicts that any deviation from SM in K→πνν̄ would corr
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 11/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 
@@ -1177,10 +1133,6 @@ The absence of C₁∩C₂ overlap in the up-type sector (d≡0 gaps) explains w
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
 ---
 
-# Flavor_Changing_Neutral_Currents — Piece 12/12
-## Article A4: A4-20 — Flavor Changing Neutral Currents
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 18:02:27 UTC
 
 ---
 

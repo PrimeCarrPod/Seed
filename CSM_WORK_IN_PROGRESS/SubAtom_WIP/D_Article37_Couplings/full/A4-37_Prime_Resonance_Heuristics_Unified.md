@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 01/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -146,10 +142,6 @@ The adelic product formula is the **breath** that makes the sound real.
 PIECE 01 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 02/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -308,10 +300,6 @@ The adelic product formula ensures the music is **self-consistent** — the real
 PIECE 02 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 03/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -453,10 +441,6 @@ The p-adic sectors provide the **hidden strings** that make the real chords poss
 PIECE 03 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 04/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -586,10 +570,6 @@ The primes are the **atoms of space**. The zeta zeros are the **vibrational mode
 PIECE 04 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 05/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -719,10 +699,6 @@ The universe computes itself through prime-adelic quantum error correction.
 PIECE 05 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 06/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -852,10 +828,6 @@ The information paradox is resolved by the **adelic structure** of the resonance
 PIECE 06 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 07/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -993,10 +965,6 @@ We live inside the sound.
 PIECE 07 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 08/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -1106,10 +1074,6 @@ Our universe lives in the landscape because **γ₁ keeps the resonance stable**
 PIECE 08 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 09/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -1247,10 +1211,6 @@ The theorems are the resonance ensuring it can exist.
 PIECE 09 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 10/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -1356,10 +1316,6 @@ That's the difference between a fit and a theory.
 PIECE 10 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 11/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 
@@ -1506,10 +1462,6 @@ Everything else is **inflection**.
 PIECE 11 COMPLETE — ~300 lines, ~18,000 words equivalent density
 ---
 
-# Prime_Resonance_Heuristics_Unified — Piece 12/12
-## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 22:52:00 UTC
 
 ---
 

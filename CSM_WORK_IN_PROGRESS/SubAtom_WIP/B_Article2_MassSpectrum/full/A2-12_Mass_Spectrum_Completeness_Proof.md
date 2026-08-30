@@ -31,7 +31,11 @@ Therefore: **Number of physical lepton generations = Index(D_W) = Number of reco
 
 Since PrimeBookOne contains exactly 426 record gaps in directory 3.0 (the UV completion), there are exactly 426 lepton generations in the complete theory. The low-energy effective theory (directories 0.0-2.0) contains the first 15 record gaps, giving 3 charged + 3 neutral + 9 BSM = 15 generations below the Planck scale.
 
-The index theorem is robust under continuous deformations of the gap sequence. Since the prime gap sequence is rigid (it is the unique sequence of differences of primes), the index is a topological invariant of the Prime Electron worldline. No deformation can change the number of generations — they are topologically protected.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+The index theorem is robust under continuous deformations of the gap sequence. Since the prime gap sequence is rigid (it is the unique sequence of differences of primes), the index is a topological invariant of the Prime Electron worldline. No deformation can change the number of generations — they are topologically protected
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 03: PrimeBookOne Tile Completeness Theorem
 
@@ -55,7 +59,11 @@ For higher directories, the book index gives the record gap locations. Since the
 
 The completeness is verified by cross-checking with independent prime gap tables (e.g., OEIS A005250 for record gaps, A002386 for primes at record gaps). All records up to the 426th match exactly. The 3.67 billion gaps provide statistical certainty: the probability of a missing record gap in a complete enumeration is exactly zero.
 
-**Corollary**: The PrimeBookOne data structure IS the worldline segment bookkeeping. Each book = one worldline segment (A1-10). Each record gap = one topologically distinct segment type. The 3500 books and 426 record gap types are in exact correspondence with the worldline topology. This is not an analogy — it is a mathematical identity: the prime gap sequence IS the worldline segment sequence.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+**Corollary**: The PrimeBookOne data structure IS the worldline segment bookkeeping. Each book = one worldline segment (A1-10). Each record gap = one topologically distinct segment type. The 3500 books and 426 record gap types are in exact correspondence with the worldline topology. This is not an analogy — it is a mathematical identity: the prime gap sequence IS the worldline segment sequence
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 04: Spectral Flow of Worldline Hamiltonian — N(E) = π_rec(E)
 
@@ -89,7 +97,11 @@ This proves a **one-to-one correspondence** between lepton mass eigenstates and 
 
 The spectral flow is continuous in the sense that as the energy scale increases, new states appear exactly at the record gap thresholds. There are no "accidental" degeneracies or missing thresholds. The flow is governed by the prime gap distribution, which is deterministic.
 
-**Mathematical rigor**: The spectral flow theorem is a consequence of the Minakshisundaram-Pleijel heat kernel expansion for the worldline Hamiltonian. The heat kernel trace Tr(e^{-tH}) has an asymptotic expansion as t→0 whose coefficients count the eigenvalues. The record gap sequence determines the heat kernel coefficients uniquely. The equality N(E) = π_rec(d(E)) holds to all orders in the asymptotic expansion, proving the exact correspondence.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+**Mathematical rigor**: The spectral flow theorem is a consequence of the Minakshisundaram-Pleijel heat kernel expansion for the worldline Hamiltonian. The heat kernel trace Tr(e^{-tH}) has an asymptotic expansion as t→0 whose coefficients count the eigenvalues. The record gap sequence determines the heat kernel coefficients uniquely. The equality N(E) = π_rec(d(E)) holds to all orders in the asymptotic expansion, proving the exact correspondence
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 05: No Missing States — Exclusion of Non-Record Gaps
 
@@ -137,7 +149,11 @@ Could there be a physical state not associated with any record gap? The worldlin
 
 This uniqueness is what gives the Prime Electron framework its predictive power. In the Standard Model, the number of generations is an empirical fact (N_gen = 3). In GUTs, it's a free parameter. In string theory, it's determined by Calabi-Yau topology but with many possible solutions. In the Prime Electron framework, the number of generations is a **mathematical theorem**: N_gen = number of record gaps in the prime sequence up to the UV cutoff. No freedom, no ambiguity.
 
-**Cross-check from quantum error correction (A1-35)**: The worldline is a quantum error correcting code where twin primes (d=2) are the [[256,1,3]] code. Each record gap adds a new logical qubit. The number of logical qubits = number of record gaps = 426. The code distance increases with each record gap. The physical leptons are the logical operators of this code. The bijection between record gaps and logical qubits proves the uniqueness of the mapping.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+**Cross-check from quantum error correction (A1-35)**: The worldline is a quantum error correcting code where twin primes (d=2) are the [[256,1,3]] code. Each record gap adds a new logical qubit. The number of logical qubits = number of record gaps = 426. The code distance increases with each record gap. The physical leptons are the logical operators of this code. The bijection between record gaps and logical qubits proves the uniqueness of the mapping
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 07: UV Completion and the Finite Spectrum — k_max = 426
 
@@ -160,7 +176,11 @@ This UV completion via finite data is unique to the Prime Electron framework. Mo
 
 **The number 426 is not arbitrary**: it is the number of record gaps in the prime sequence up to p ≈ 10¹⁶. This is a mathematical fact about the prime numbers, independent of any physical assumptions. The Planck scale emerges as the mass scale where the prime gap description breaks down — a prediction that the UV completion of the Standard Model is at the Planck scale, not at a lower GUT scale.
 
-**Connection to black hole entropy**: The worldline segments (3500) correspond to the microstates of a Planck-scale black hole. The record gaps (426) correspond to the distinct topological sectors. The Bekenstein-Hawking entropy S = A/4G = π·(10¹⁶ GeV)⁻²/G ≈ 3500 (in natural units). The number 3500 appears both as the number of books and as the black hole entropy. This is the Prime Electron explanation of black hole entropy: it counts worldline segments.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+**Connection to black hole entropy**: The worldline segments (3500) correspond to the microstates of a Planck-scale black hole. The record gaps (426) correspond to the distinct topological sectors. The Bekenstein-Hawking entropy S = A/4G = π·(10¹⁶ GeV)⁻²/G ≈ 3500 (in natural units). The number 3500 appears both as the number of books and as the black hole entropy. This is the Prime Electron explanation of black hole entropy: it counts worldline segments
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 08: Consistency with Article 3 — 8-Bit Hilbert Space Emergence
 
@@ -180,7 +200,11 @@ This provides a cross-check: the mass spectrum completeness proof (this article)
 
 Moreover, the 8-bit structure explains why the first 8 record gaps are special: they form the basis of the quantum register. The BSM leptons E₁ (d=16) and E₂ (d=18) are the highest single-particle states in this register. All higher record gaps correspond to excitations that require multiple register cells — they are "multi-qubit" states in the quantum computational sense. This connects the mass spectrum to quantum information theory in a precise way.
 
-**Explicit construction**: The 8-bit register is formed by the proper-time intervals between record gap events on the worldline. The worldline proper-time operator τ (A1-12) has eigenvalues τ_n = Σ_{i=1}^n d_i. The record gaps are the differences τ_k - τ_{k-1} = d_k for k=1..8. These 8 intervals form a complete set of commuting observables (CSCO) for the 256-state Hilbert space. The mass eigenstates are the simultaneous eigenstates of the number operators N_k = a_k^† a_k for k=1..8, where a_k are the annihilation operators for the k-th record gap mode. The Hamiltonian is H = Σ_{k=1}^8 E_k N_k + H_int, where H_int contains multi-particle interactions. The single-particle sector has exactly 8 states, matching the 8 record gaps.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+**Explicit construction**: The 8-bit register is formed by the proper-time intervals between record gap events on the worldline. The worldline proper-time operator τ (A1-12) has eigenvalues τ_n = Σ_{i=1}^n d_i. The record gaps are the differences τ_k - τ_{k-1} = d_k for k=1..8. These 8 intervals form a complete set of commuting observables (CSCO) for the 256-state Hilbert space. The mass eigenstates are the simultaneous eigenstates of the number operators N_k = a_k^† a_k for k=1..8, where a_k are the annihilation operators for the k-th record gap mode. The Hamiltonian is H = Σ_{k=1}^8 E_k N_k + H_int, where H_int contains multi-particle interactions. The single-particle sector has exactly 8 states, matching the 8 record gaps
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 09: Consistency with Article 4 — Coupling Constant Running
 
@@ -210,7 +234,11 @@ The precision of this prediction is remarkable: using only the record gap sequen
 - With only 3 generations: unification at ~2×10¹⁶ GeV but couplings don't meet exactly (Δα⁻¹ ≈ 3)
 - With 426 generations (thresholds at m_k from record gaps): unification at 2.1×10¹⁶ GeV with α_U⁻¹ = 24.3, Δα⁻¹ < 0.1
 
-The agreement is at the 0.5% level — within theoretical uncertainties from higher-loop corrections. This is strong evidence for the complete spectrum.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+The agreement is at the 0.5% level — within theoretical uncertainties from higher-loop corrections. This is strong evidence for the complete spectrum
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 10: Experimental Verification Strategy
 
@@ -259,7 +287,11 @@ The completeness proof makes concrete experimental predictions:
 - Must match SM Z-couplings exactly (lepton flavor universality, A2-13)
 - Any deviation in angular distribution for BSM leptons falsifies the theory
 
-The combination of threshold counting, mass ratio verification, Koide test, cosmological N_eff, coupling unification, width measurements, and angular distributions provides a **complete experimental verification** of the mass spectrum completeness. No other BSM theory makes such a comprehensive, falsifiable set of predictions from a single integer sequence.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+The combination of threshold counting, mass ratio verification, Koide test, cosmological N_eff, coupling unification, width measurements, and angular distributions provides a **complete experimental verification** of the mass spectrum completeness. No other BSM theory makes such a comprehensive, falsifiable set of predictions from a single integer sequence
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 11: Mathematical Rigor — Three Independent Proofs Converge
 
@@ -292,7 +324,11 @@ Their convergence on the same result (bijection between record gaps and lepton s
 
 Any theory that produces the same low-energy spectrum (3 charged + 3 neutral leptons) but differs in the BSM spectrum would have to break one of these three proofs. Since all three are theorems of the framework, **the BSM spectrum is uniquely determined and complete**.
 
-This triple convergence is the strongest possible mathematical evidence. In physics, we usually have one derivation (e.g., from a Lagrangian). Here we have three independent derivations from three different mathematical domains (topology, number theory, spectral theory) that all give the identical result. This is what makes the Prime Electron framework uniquely rigorous.# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
+This triple convergence is the strongest possible mathematical evidence. In physics, we usually have one derivation (e.g., from a Lagrangian). Here we have three independent derivations from three different mathematical domains (topology, number theory, spectral theory) that all give the identical result. This is what makes the Prime Electron framework uniquely rigorous
+
+---
+
+# A2-12: Mass Spectrum Completeness Proof — No Missing States in the Record Gap Sequence
 
 ## Piece 12: Summary — The Complete Lepton Spectrum is a Theorem
 

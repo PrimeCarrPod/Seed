@@ -1,4 +1,6 @@
-# A3-01 Hilbert Space Dimension 256 — Piece 01: Overview
+
+## Overview
+
 
 ## Abstract
 
@@ -53,7 +55,10 @@ Article 3 develops the quantum mechanical structure of ℋ = ℂ²⁵⁶:
 | ... | ... | ... |
 | A3-40 | Synthesis_Hilbert_Space.md | Complete QM from primes |
 
-Each file ≥350 lines, 12 pieces each, following the Prime Electron Research 360 protocol.# A3-01 Hilbert Space Dimension 256 — Piece 02: Mathematical Construction of ℋ = ℂ²⁵⁶
+Each file ≥350 lines, 12 pieces each, following the Prime Electron Research 360 protocol
+
+---
+
 
 ## 2.1 The 8-Bit Prime Difference Array as Hilbert Space Generator
 
@@ -126,7 +131,10 @@ The qubit decomposition:
 |k⟩ = |b₇⟩ ⊗ |b₆⟩ ⊗ |b₅⟩ ⊗ |b₄⟩ ⊗ |b₃⟩ ⊗ |b₂⟩ ⊗ |b₁⟩ ⊗ |b₀⟩
 ```
 
-where b_i ∈ {0, 1} is the i-th bit of k. The prime gap sequence thus generates a natural 8-qubit quantum computer, with the gap values as computational basis states. This connects directly to Article 1's worldline path integral (A1-18) and the 256-state quantum error correction code from twin primes (A1-35).# A3-01 Hilbert Space Dimension 256 — Piece 03: Prime Gap Statistics and Basis Orthogonality
+where b_i ∈ {0, 1} is the i-th bit of k. The prime gap sequence thus generates a natural 8-qubit quantum computer, with the gap values as computational basis states. This connects directly to Article 1's worldline path integral (A1-18) and the 256-state quantum error correction code from twin primes (A1-35)
+
+---
+
 
 ## 3.1 Empirical Verification from PrimeBookOne 0.0 Directory
 
@@ -208,7 +216,10 @@ In Article 1 (A1-12), we defined the proper time operator τ̂ with eigenvalues 
 
 where "block=m" indicates the m-th block of 256 in the gap value. The dominant term is the 8-bit projection. The higher blocks contribute corrections of order (Λ/256)⁻¹ for energy scale Λ.
 
-This decomposition shows that the 256-dimensional Hilbert space captures the *low-energy* (infrared) physics of the worldline, while the ultraviolet completion requires the full infinite-dimensional proper time space. The 8-bit truncation is the natural effective theory at scales below the 256-gap threshold.# A3-01 Hilbert Space Dimension 256 — Piece 04: Tensor Product Structure and Entanglement
+This decomposition shows that the 256-dimensional Hilbert space captures the *low-energy* (infrared) physics of the worldline, while the ultraviolet completion requires the full infinite-dimensional proper time space. The 8-bit truncation is the natural effective theory at scales below the 256-gap threshold
+
+---
+
 
 ## 4.1 8-Qubit Tensor Factorization
 
@@ -293,7 +304,10 @@ P(k) = |⟨k|ψ⟩|² = lim_{N→∞} (1/N) Σ_{n=1}^N δ_{d_n mod 256, k}
 
 This is the *Born rule derived from prime gap frequencies*. The quantum state |ψ⟩ is the asymptotic frequency vector of the prime gap residues. The Born rule is not postulated — it is the law of large numbers for the prime gap sequence.
 
-This connects to the frequentist interpretation of quantum mechanics and provides a concrete realization of the "primitive ontology" program: the prime gap sequence *is* the ontology, and quantum probabilities are its asymptotic frequencies.# A3-01 Hilbert Space Dimension 256 — Piece 05: Energy Scale and Hilbert Space Dimension Growth
+This connects to the frequentist interpretation of quantum mechanics and provides a concrete realization of the "primitive ontology" program: the prime gap sequence *is* the ontology, and quantum probabilities are its asymptotic frequencies
+
+---
+
 
 ## 5.1 Energy-Dependent Dimension D(E)
 
@@ -358,7 +372,10 @@ This provides a concrete realization of the 't Hooft dimensional reduction idea:
 
 At the UV scale (PrimeBookOne directory 3.0, gaps up to 1476), D = 256 exactly. The full 256-dimensional Hilbert space is realized. This is the maximal dimension — no higher dimension exists because the 8-bit encoding is complete. The UV completion of the prime electron theory is a 256-dimensional quantum system, not an infinite-dimensional one. This is a key prediction: *quantum gravity cuts off at 256 dimensions*.
 
-The UV fixed point has central charge c = 256 (in a suitable 2D CFT description), matching the bosonic string critical dimension. This is not a coincidence — the 256 dimensions of the prime gap Hilbert space correspond to the 256 states of the first excited level of the bosonic string (16 left × 16 right = 256). The prime gap sequence provides a number-theoretic realization of string theory's critical dimension.# A3-01 Hilbert Space Dimension 256 — Piece 06: Symmetry Structure and Group Actions
+The UV fixed point has central charge c = 256 (in a suitable 2D CFT description), matching the bosonic string critical dimension. This is not a coincidence — the 256 dimensions of the prime gap Hilbert space correspond to the 256 states of the first excited level of the bosonic string (16 left × 16 right = 256). The prime gap sequence provides a number-theoretic realization of string theory's critical dimension
+
+---
+
 
 ## 6.1 The Symmetry Group of the 256-Dimensional Space
 
@@ -428,7 +445,10 @@ The anomaly inflow mechanism of Article 1 (A1-23) relates to the index of the Di
 Index = Σ_{k=0}^{255} sign(d_k) = (number of odd residues) - (number of even residues with sign) = 128 - 128 = 0
 ```
 
-for the full space. However, the physical subspace has nonzero index, matching the chiral fermion content of the Standard Model. This is the prime gap realization of the Atiyah-Singer index theorem.# A3-01 Hilbert Space Dimension 256 — Piece 07: Modular Structure and Number Theoretic Properties
+for the full space. However, the physical subspace has nonzero index, matching the chiral fermion content of the Standard Model. This is the prime gap realization of the Atiyah-Singer index theorem
+
+---
+
 
 ## 7.1 The Ring Structure ℤ/256ℤ
 
@@ -509,7 +529,10 @@ Define the prime gap zeta function:
 
 This converges for Re(s) > 1 and has a meromorphic continuation. The values at integers relate to the moments of the gap distribution. The dimension 256 appears as the order of the pole at s = 1 in the 2-adic zeta function.
 
-The prime gap zeta function is the prime analog of the Riemann zeta function — it encodes the spectrum of the proper time operator τ̂ = κ·d̂ (A1-12).# A3-01 Hilbert Space Dimension 256 — Piece 08: Connection to Worldline Proper Time (Article 1)
+The prime gap zeta function is the prime analog of the Riemann zeta function — it encodes the spectrum of the proper time operator τ̂ = κ·d̂ (A1-12)
+
+---
+
 
 ## 8.1 From Gaps to Proper Time
 
@@ -627,7 +650,10 @@ This is a 256-state discrete path integral. The classical limit (stationary phas
 | Geodesic equation | Time evolution in ℋ |
 | Action principle | 256-state path integral |
 
-The 256-dimensional Hilbert space is the *quantum completion* of the classical worldline geometry of Article 1.# A3-01 Hilbert Space Dimension 256 — Piece 09: Connection to Mass Spectrum (Article 2)
+The 256-dimensional Hilbert space is the *quantum completion* of the classical worldline geometry of Article 1
+
+---
+
 
 ## 9.1 From Gaps to Energies
 
@@ -783,7 +809,10 @@ The gauge bosons act as operators on ℋ that preserve the residue index (or shi
 | Missing gaps (d=12) | Absent basis states |
 | Flavor universality | Diagonal gauge vertices in ℋ |
 
-The 256-dimensional Hilbert space *contains* the entire Article 2 mass spectrum as its low-energy eigenvalue structure.# A3-01 Hilbert Space Dimension 256 — Piece 10: Quantum Information Structure
+The 256-dimensional Hilbert space *contains* the entire Article 2 mass spectrum as its low-energy eigenvalue structure
+
+---
+
 
 ## 10.1 The 256-Dimensional Space as a Quantum Register
 
@@ -911,7 +940,10 @@ Article 3 (A3-04) will define the relative entropy S(ρ||σ) between two gap dis
 S(ρ||σ) = Σ_k p_k(E) log(p_k(E)/p_k(E'))
 ```
 
-This measures the information loss when coarse-graining from scale E' to E. It is the quantum analog of the RG flow entropy production.# A3-01 Hilbert Space Dimension 256 — Piece 11: Experimental Predictions and Falsifiability
+This measures the information loss when coarse-graining from scale E' to E. It is the quantum analog of the RG flow entropy production
+
+---
+
 
 ## 11.1 Predictions Unique to the 256-Dimensional Framework
 
@@ -1009,7 +1041,10 @@ The 256-dimensional space must satisfy:
 - ✅ Anomaly freedom: Index = 0 (A1-24)
 - ✅ UV completeness: D = 256 at UV fixed point (Piece 05)
 
-All checks pass. The framework is mathematically consistent.# A3-01 Hilbert Space Dimension 256 — Piece 12: Final Synthesis and Article 3 Roadmap
+All checks pass. The framework is mathematically consistent
+
+---
+
 
 ## 12.1 Summary: The 256-Dimensional Hilbert Space is Necessary
 

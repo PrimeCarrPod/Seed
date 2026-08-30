@@ -15,7 +15,11 @@ The running mass m(μ) is a step function that jumps at each record prime thresh
 The exact RG equation:
 d(log m)/d(log μ) = -γ(μ) = -1/π(μ) · dπ/d(log μ) + corrections
 
-This piece derives the continuous running from the discrete record gap data, showing how π(x) controls the mass hierarchy.# A2-07: Prime Density π(x) and Gap Statistics
+This piece derives the continuous running from the discrete record gap data, showing how π(x) controls the mass hierarchy
+
+---
+
+# A2-07: Prime Density π(x) and Gap Statistics
 
 The prime counting function π(x) gives the number of primes ≤ x. The prime gap distribution is derived from π(x):
 - Average gap at scale x: ⟨d⟩ = x/π(x) ~ log x
@@ -77,7 +81,11 @@ More precisely, using the exact record gap sequence:
 The continuous RG flow integrates this:
 log r(μ) = Σ_{p_n ≤ μ} log(p_n/p_{n-1}) + log(d_n/d_{n-1}) + C
 
-This matches the exact mass ratio formula from A2-03 Piece 07.# A2-07: Continuous RG Flow — Running Mass Function
+This matches the exact mass ratio formula from A2-03 Piece 07
+
+---
+
+# A2-07: Continuous RG Flow — Running Mass Function
 
 The running mass m(μ) interpolates between the discrete generation masses. Define the continuous running mass ratio:
 
@@ -117,7 +125,11 @@ r(m_L4) = r(p_10) = 139,842 (at p=9551, d=36)
 r(m_L5) = r(p_14) = 4,832,000 (at p=31543, d=52)
 r(m_L6) = r(p_18) = 3.73×10⁸ (at p=1349533, d=118)
 
-The running mass function r(μ) is a step function with steps at record primes. The step heights are determined by the gap ratios and prime ratios. This is the prime gap origin of the mass hierarchy.# A2-07: Prime Density and Anomalous Dimension
+The running mass function r(μ) is a step function with steps at record primes. The step heights are determined by the gap ratios and prime ratios. This is the prime gap origin of the mass hierarchy
+
+---
+
+# A2-07: Prime Density and Anomalous Dimension
 
 The anomalous dimension γ(μ) = -β(r) = -d(log r)/d(log μ) measures the deviation from classical scaling. In our framework, γ(μ) is determined by the prime gap statistics.
 
@@ -144,7 +156,11 @@ The anomalous dimension fluctuates but averages around -1.5 to -2. The negative 
 
 In the continuous limit, γ(μ) = -2/(log μ)² from the prime density. This matches the asymptotic behavior of the exact discrete γ_n.
 
-The anomalous dimension is universal — it depends only on the prime gap statistics, not on the specific lepton generation. All generations share the same RG flow; they just start at different initial conditions (different record gap blocks).# A2-07: 426-Book Integration and Directory Version Flow
+The anomalous dimension is universal — it depends only on the prime gap statistics, not on the specific lepton generation. All generations share the same RG flow; they just start at different initial conditions (different record gap blocks)
+
+---
+
+# A2-07: 426-Book Integration and Directory Version Flow
 
 From A1-10: the PrimeBookOne directory structure has 426 books (versions) from 0.0 to 3.0. Each book corresponds to a range of proper-time scales. The RG flow traverses these books sequentially.
 
@@ -175,7 +191,11 @@ m_UV = mₑ · exp(Σ_{n=1}^{426} [log(p_n/p_{n-1}) + log(d_n/d_{n-1})])
 Numerically, using the full PrimeBookOne record gap sequence (3.67 billion differences):
 m_UV ≈ 10¹⁹ GeV (Planck scale)
 
-This is a remarkable prediction: the prime gap RG flow naturally runs from the electron mass to the Planck scale over 426 books. The number 426 is not arbitrary — it's the number of record gaps in the full PrimeBookOne dataset.# A2-07: Mass Ratios from Prime Density — Exact Formula
+This is a remarkable prediction: the prime gap RG flow naturally runs from the electron mass to the Planck scale over 426 books. The number 426 is not arbitrary — it's the number of record gaps in the full PrimeBookOne dataset
+
+---
+
+# A2-07: Mass Ratios from Prime Density — Exact Formula
 
 The exact mass ratio for any scale μ is given by the sum over record gaps up to that scale:
 
@@ -229,7 +249,11 @@ m_L4/mₑ = 139,842 (exact)
 m_L5/mₑ = 4,832,000 (exact)
 m_L6/mₑ = 3.73×10⁸ (exact)
 
-These are the fixed points of the RG flow at the record prime thresholds.# A2-07: Running Couplings from Prime Density
+These are the fixed points of the RG flow at the record prime thresholds
+
+---
+
+# A2-07: Running Couplings from Prime Density
 
 The prime density π(x) also controls the running of gauge couplings. From A4-01, A4-04 (planned): the fine structure constant α(μ) runs according to:
 
@@ -254,7 +278,11 @@ The prime gap framework predicts the running of α with no free parameters. The 
 
 For the strong coupling α_s, the running is controlled by the maximal gaps (A4-02). For the weak coupling α_w, by gap modulo classes (A4-03).
 
-The unification scale is where all three couplings meet. From the prime density, this occurs at the UV completion of the 426-book flow (directory 3.0), at scale μ_UV ~ 10¹⁹ GeV.# A2-07: Prime Density and Neutrino Masses
+The unification scale is where all three couplings meet. From the prime density, this occurs at the UV completion of the 426-book flow (directory 3.0), at scale μ_UV ~ 10¹⁹ GeV
+
+---
+
+# A2-07: Prime Density and Neutrino Masses
 
 From A2-09 (planned): neutrino masses arise from the asymmetry in the prime gap distribution. The prime gap sequence has a slight asymmetry between gaps of the form 6k±1. This asymmetry generates the neutrino mass matrix.
 
@@ -287,7 +315,11 @@ This gives a normal hierarchy with m_ν1 ≈ 3.7×10⁻⁶ eV, m_ν2 ≈ 6.3×10
 Δm²_21 = m_ν2² - m_ν1² ≈ 7.5×10⁻⁵ eV² (matches solar)
 Δm²_31 = m_ν3² - m_ν1² ≈ 2.5×10⁻³ eV² (matches atmospheric)
 
-The prime density controls the heavy masses, which control the neutrino masses through the seesaw. The gap asymmetry controls the mixing angles.# A2-07: Cosmological Running — g*(T) from Prime Density
+The prime density controls the heavy masses, which control the neutrino masses through the seesaw. The gap asymmetry controls the mixing angles
+
+---
+
+# A2-07: Cosmological Running — g*(T) from Prime Density
 
 The effective number of relativistic degrees of freedom g*(T) in the early universe is determined by the particle masses. In our framework, g*(T) steps at each lepton mass threshold T = m_n.
 
@@ -321,7 +353,11 @@ The prime gap sequence predicts the exact step locations. The standard model has
 The Hubble parameter during radiation domination:
 H(T) = √(8π³g*(T)/90) · T²/M_Pl
 
-The prime density π(x) controls g*(T) through the mass spectrum. This is a testable prediction: the CMB power spectrum depends on g*(T) at recombination, which is affected by the early-universe g*(T) through the sound horizon.# A2-07: UV Completion — 426 Books to Planck Scale
+The prime density π(x) controls g*(T) through the mass spectrum. This is a testable prediction: the CMB power spectrum depends on g*(T) at recombination, which is affected by the early-universe g*(T) through the sound horizon
+
+---
+
+# A2-07: UV Completion — 426 Books to Planck Scale
 
 The 426-book directory structure (0.0 to 3.0) represents the full RG flow from IR to UV. The UV completion is at book 426 (directory 3.0), corresponding to the Planck scale.
 
@@ -347,7 +383,11 @@ For n = 426, this gives p_426 ~ 10¹⁹ in Planck units.
 
 The UV completion of the prime electron framework is quantum gravity at the Planck scale. The 426 books represent the discretization of the worldline proper time from the electron scale to the Planck scale.
 
-The number 426 is not arbitrary — it's the number of record gaps in the prime gap sequence up to the UV cutoff. This is a finite, computable number from PrimeBookOne.# A2-07: Synthesis — Prime Density, Mass Running, and Article 2 Roadmap
+The number 426 is not arbitrary — it's the number of record gaps in the prime gap sequence up to the UV cutoff. This is a finite, computable number from PrimeBookOne
+
+---
+
+# A2-07: Synthesis — Prime Density, Mass Running, and Article 2 Roadmap
 
 ## Prime Density → Mass Running: Complete Picture
 
