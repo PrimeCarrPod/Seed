@@ -1,8 +1,6 @@
 # Prime Geometric Langlands — Complete Article
 ## Article A4: A4-28 — Prime Geometric Langlands
-**Generated:** 2026-08-26 20:31:02 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

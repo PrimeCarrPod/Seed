@@ -1,8 +1,6 @@
 # Prime Adelic String Theory — Complete Article
 ## Article A4: A4-26 — Prime Adelic String Theory
-**Generated:** 2026-08-26 19:46:24 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

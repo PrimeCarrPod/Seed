@@ -1,8 +1,6 @@
 # Prime Resonance Heuristics Unified — Complete Article
 ## Article A4: A4-37 — Prime Resonance Heuristics Unified
-**Generated:** 2026-08-26 22:59:42 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
