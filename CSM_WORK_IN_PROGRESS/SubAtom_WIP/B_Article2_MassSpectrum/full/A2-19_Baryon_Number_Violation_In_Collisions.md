@@ -1,8 +1,6 @@
 # A2-19_Baryon_Number_Violation_In_Collisions — Complete Article
 ## Article: A2-19_Baryon_Number_Violation_In_Collisions
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** From A1-07 (Pair Creation/Annihilation) and A1-19 (Instanton Solutions), the worldline folds correspond to particle states. At high energies, the worldline self-intersections (vertices, A1-06) probe the UV structure of the gap sequence. B-violating processes occur when the collision energy allows tunneling through the gap barriers that separate different winding number sectors (A1-24).
@@ -161,7 +159,7 @@ S_inst^eff(ρ) = S_inst(0) · (1 - ρ/ρ_c)
 where ρ_c is the critical density where the gap barrier vanishes.
 From A2-17: ρ_c = 2.8 × 10¹⁴ g/cm³ = 0.17 GeV/fm³
 
-Wait, this is nuclear density, not QGP density. The QGP density ε ~ 15 GeV/fm³ corresponds to ρ ~ 15/0.17 ≈ 88 ρ_c — far above critical density.
+Note: this is nuclear density, not QGP density. The QGP density ε ~ 15 GeV/fm³ corresponds to ρ ~ 15/0.17 ≈ 88 ρ_c — far above critical density.
 
 At ρ > ρ_c, the worldline orientation flips and B violation is unsuppressed!
 

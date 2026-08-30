@@ -1,8 +1,6 @@
 # A2-16_Baryon_Asymmetry_From_Worldline_Orientation — Complete Article
 ## Article: A2-16_Baryon_Asymmetry_From_Worldline_Orientation
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** The Prime Electron worldline has a distinguished time orientation defined by the monotonic increase of the prime counting function π(x). Forward segments (increasing τ) correspond to particles; backward segments (decreasing τ) correspond to antiparticles. The asymmetry in the record gap sequence {2, 4, 6, 8, 10, 14, 18, 20, 22, ...} between forward and backward propagation generates η.

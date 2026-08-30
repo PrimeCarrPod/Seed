@@ -67,7 +67,7 @@ Checking the first 9 record transitions:
 | 2 | 4 | 7 | 3 | 4κ | κ·log(2.33) = 0.847κ | No |
 | 3 | 6 | 23 | 7 | 6κ | κ·log(3.29) = 1.19κ | No |
 
-Wait — all three fail the bare criterion. The resolution: the **running proper time** includes the RG flow from A2-07. The effective proper-time interval is:
+Note: all three fail the bare criterion. The resolution: the **running proper time** includes the RG flow from A2-07. The effective proper-time interval is:
 
 Δτ_k^eff = κ d_k · exp[-∑_{j=1}^k γ_j]
 

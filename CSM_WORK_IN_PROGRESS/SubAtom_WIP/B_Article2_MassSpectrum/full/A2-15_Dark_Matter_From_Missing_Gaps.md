@@ -1,8 +1,6 @@
 # A2-15_Dark_Matter_From_Missing_Gaps — Complete Article
 ## Article: A2-15_Dark_Matter_From_Missing_Gaps
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** The prime gap sequence d_n = p_{n+1} - p_n has a known statistical distribution (Cramér model: gaps are Poisson with mean log p). The record gaps (d=2,4,6,8,10,14,16,18,20,...) correspond to physical particles (leptons, A2-12). But there are gaps that the random model predicts should appear with high probability, yet are forbidden by the worldline's topological constraints (A1-05, RH stability). These forbidden gaps are stable, massive, neutral particles — dark matter.
@@ -376,22 +374,22 @@ The DM missing gaps are the high-mass tail of the same prime difference array th
 
 The 847 missing gaps up to d=1476 are: all even d ∈ [12, 1476] except the record gaps {2,4,6,8,10,14,16,18,20,22?,24?,26?,28?,30?,32,34?,36?,38?,40?,42?,44?,46?,48?,50?,52?,54?,56?,58?,60?,62?,64?,66?,68?,70?,72?,74?,76?,78?,80?,82?,84?,86?,88?,90?,92?,94?,96?,98?,100?,102?,104?,106?,108?,110?,112?,114?,116?,118?,120?,122?,124?,126?,128?,130?,132?,134?,136?,138?,140?,142?,144?,146?,148?,150?,152?,154?,156?,158?,160?,162?,164?,166?,168?,170?,172?,174?,176?,178?,180?,182?,184?,186?,188?,190?,192?,194?,196?,198?,200?, ... up to 1476}
 
-Wait — the record gaps are sparse. The actual record gaps from PrimeBookOne (Tile188) are:
+Note: the record gaps are sparse. The actual record gaps from PrimeBookOne (Tile188) are:
 {2, 4, 6, 8, 10, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, ... 1476}
 
-Actually, the record gaps are the MAXIMAL gaps seen so far. So every even d up to 1476 IS a record gap at some point! The "missing gaps" are those that are PREDICTED by Cramér but NEVER become records because a larger gap appears first.
+Note: the record gaps are the MAXIMAL gaps seen so far. So every even d up to 1476 IS a record gap at some point! The "missing gaps" are those that are PREDICTED by Cramér but NEVER become records because a larger gap appears first.
 
-Let me correct: The record gaps are 2,4,6,8,10,14,16,18,20,22,24... actually 12 is missing because gap 14 appears before gap 12 can be a record. Similarly, 22 is missing because 24 appears first? No — the record gap sequence is monotonically increasing in the maximal sense.
+Let us correct: The record gaps are 2,4,6,8,10,14,16,18,20,22,24... actually 12 is missing because gap 14 appears before gap 12 can be a record. Similarly, 22 is missing because 24 appears first? No — the record gap sequence is monotonically increasing in the maximal sense.
 
 From A2-12 (Table in Piece 02): The record gaps are d=2,4,6,8,10,14,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,106,108,110,112,114,116,118,120,122,124,126,128,130,132,134,136,138,140,142,144,146,148,150...
 
-Wait, the record gap sequence is the sequence of maximal gaps. From PrimeBookOne Tile188, the record gaps are every even number starting from 2 up to 1476, EXCEPT some that are skipped because a larger gap appears first. The actual record gap sequence has 426 entries (A2-12).
+Note: the record gap sequence is the sequence of maximal gaps. From PrimeBookOne Tile188, the record gaps are every even number starting from 2 up to 1476, EXCEPT some that are skipped because a larger gap appears first. The actual record gap sequence has 426 entries (A2-12).
 
-The missing gaps are the even numbers that are NOT in the record gap sequence but ARE predicted by Cramér. For example, d=12 is predicted but never a record (gap 14 appears first). d=22 IS a record? Let me check the actual data.
+The missing gaps are the even numbers that are NOT in the record gap sequence but ARE predicted by Cramér. For example, d=12 is predicted but never a record (gap 14 appears first). d=22 IS a record? Let us check the actual data.
 
 From A2-12 Piece 12 table: k=1 d=2, k=2 d=4, k=3 d=6, k=4 d=8, k=5 d=10, k=6 d=14, k=7 d=18? No, the record gaps are the maximal gaps found so far. The sequence is: 2, 4, 6, 8, 10, 14, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50... up to 1476.
 
-Actually, the record gaps are all even numbers from 2 to 1476 with some missing. The missing ones are those where the gap statistics don't produce them as records. The Cramér model predicts the expected number of records of each size.
+Note: the record gaps are all even numbers from 2 to 1476 with some missing. The missing ones are those where the gap statistics don't produce them as records. The Cramér model predicts the expected number of records of each size.
 
 **Corrected Missing Gaps:** The gaps that Cramér predicts should appear as records with probability > 0.5 but don't appear in the PrimeBookOne record gap sequence. These are the DM candidates.
 

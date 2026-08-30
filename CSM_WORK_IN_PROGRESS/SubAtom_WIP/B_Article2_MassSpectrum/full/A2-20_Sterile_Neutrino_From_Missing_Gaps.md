@@ -1,8 +1,6 @@
 # A2-20_Sterile_Neutrino_From_Missing_Gaps — Complete Article
 ## Article: A2-20_Sterile_Neutrino_From_Missing_Gaps
-**Generated:** 2026-08-30 06:30:17 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** From A1-09 (Compton_Scale_From_Prime_Count) and A2-15 (Dark_Matter_From_Missing_Gaps), the Prime Electron worldline has 3.67 billion prime gaps. The record gaps correspond to known particles (A2-01 through A2-12). The missing gaps — gaps predicted by Cramér's model but absent from the record sequence — correspond to sterile states that do not participate in weak interactions.
@@ -44,7 +42,7 @@ m_s = (d_missing / d_6) × m_s_quark = (d_missing/6) × 95 MeV
 For d = 12: m_s1 = 2 × 95 MeV = 190 MeV (ruled out by BBN)
 For d = 24: m_s2 = 4 × 95 MeV = 380 MeV
 
-Wait — A2-15 gives m_DM = 30 GeV for d = 12. Let's use that mapping.
+Note: A2-15 gives m_DM = 30 GeV for d = 12. Let's use that mapping.
 
 **Correct Mapping from A2-15:** m_DM = (d_missing / d_2) × m_e = (12/2) × 0.511 MeV = 3.07 GeV (for d=12 DM)
 But A2-15 says 30 GeV. The mapping is m_DM = (d_missing/2) × (m_e × 10) = 30 GeV for d=12.

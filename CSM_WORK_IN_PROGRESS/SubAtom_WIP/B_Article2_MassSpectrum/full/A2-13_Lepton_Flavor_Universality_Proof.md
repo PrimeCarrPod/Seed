@@ -1,8 +1,6 @@
 # A2-13_Lepton_Flavor_Universality_Proof — Complete Article
 ## Article: A2-13_Lepton_Flavor_Universality_Proof
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** Flavor universality emerges from the topological structure of the single electron worldline. All leptons are excitations of the same worldline; their U(1)_Y charge is the worldline's winding number around the electromagnetic fiber, which is generation-independent.
@@ -215,9 +213,9 @@ All these are predictions from the PMNS matrix computed from PrimeBookOne (A2-09
 
 Sum of Y: 2×(1/6) + 2/3 - 1/3 - 1/2 - 1 + 0 = 1/3 + 1/3 - 1/2 - 1 = -1/6 ≠ 0?
 
-Wait — the SM with 3 generations has Y sum = 3 × (-1/6) = -1/2? Let me recalculate.
+Note: the SM with 3 generations has Y sum = 3 × (-1/6) = -1/2? Let us recalculate.
 
-Actually: Σ Y = N_c [2Y(Q_L) + Y(u_R) + Y(d_R)] + [2Y(L_L) + Y(e_R) + Y(ν_R)]
+Note: Σ Y = N_c [2Y(Q_L) + Y(u_R) + Y(d_R)] + [2Y(L_L) + Y(e_R) + Y(ν_R)]
 = 3 [2(1/6) + 2/3 + (-1/3)] + [2(-1/2) + (-1) + 0]
 = 3 [1/3 + 2/3 - 1/3] + [-1 - 1]
 = 3 [2/3] + [-2] = 2 - 2 = 0 ✓

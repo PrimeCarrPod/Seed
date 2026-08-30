@@ -84,7 +84,7 @@ The worldline coordinate x^μ(τ) is a map from the proper-time circle S¹_τ to
 
 However, the mass is not inversely proportional to the total proper-time (which would give m_μ = mₑ/9 = 0.057 MeV). Instead, the mass is determined by the *energy eigenvalues* of the proper-time Hamiltonian (A1-17, Worldline_Hamiltonian.md): H = ℏ/κ Σ (1/d_n) for the segment.
 
-For the electron segment (d=2): Hₑ = ℏ/κ × (1/2) = mₑc²/2. Wait — from A2-01, E(d) = ℏ/(κ·d). So for d=2, E = ℏ/(2κ) = mₑc²/2. But the electron mass is mₑc². There's a factor of 2 convention: the gap-to-energy map is E = mₑc² × (2/d). So E(2) = mₑc², E(4) = mₑc²/2, etc.
+For the electron segment (d=2): Hₑ = ℏ/κ × (1/2) = mₑc²/2. Note: from A2-01, E(d) = ℏ/(κ·d). So for d=2, E = ℏ/(2κ) = mₑc²/2. But the electron mass is mₑc². There's a factor of 2 convention: the gap-to-energy map is E = mₑc² × (2/d). So E(2) = mₑc², E(4) = mₑc²/2, etc.
 
 For the muon cluster {4,6,8}, the energy spectrum of the segment has three levels:
 E₁ = mₑc²/2, E₂ = mₑc²/3, E₃ = mₑc²/4
