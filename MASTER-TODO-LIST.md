@@ -229,4 +229,39 @@ Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepen
 
 ---
 
+## SECTION L: CSM CINEMA — ITERATION 3 SCREENPLAY FORMAT (ACTIVE)
+
+### L1: Iteration 3 Overview
+**Started:** 2026-08-30  
+**Format:** Proper screenplay (scene headings, dialogue, action lines)  
+**Structure:** 11 Parts × 11 Pieces = 121 Scenes  
+**Goal:** Build on Iteration 2's narrative foundation in industry-standard screenplay format that others can read and build upon
+
+### L2: Iteration 3 Status
+
+| Part | Title | Status | Words |
+|------|-------|--------|-------|
+| 01 | Call To Adventure | 🔄 IN PROGRESS | — |
+| 02 | Assembly Of Heroes | ⏳ PENDING | — |
+| 03 | Crossing First Threshold | ⏳ PENDING | — |
+| 04 | Road Of Trials | ⏳ PENDING | — |
+| 05 | Meeting With Goddess | ⏳ PENDING | — |
+| 06 | Temptation Away From Path | ⏳ PENDING | — |
+| 07 | Atonement With Father | ⏳ PENDING | — |
+| 08 | Apotheosis | ⏳ PENDING | — |
+| 09 | Ultimate Boon | ⏳ PENDING | — |
+| 10 | Refusal Of Return | ⏳ PENDING | — |
+| 11 | Magic Flight Return | ⏳ PENDING | — |
+
+**Iteration 3 Format Standard:**
+- Scene headings: INT/EXT. LOCATION - TIME
+- Character names: CENTERED in caps above dialogue
+- Dialogue: Standard screenplay format
+- Action lines: Present tense, minimal description
+- Parentheticals: For tone/direction when needed
+- Each Part = one complete "act" or "sequence"
+- Each Piece = one scene within that sequence
+
+---
+
 *End of MASTER TODO LIST. Update frequency: After each batch completion.*
