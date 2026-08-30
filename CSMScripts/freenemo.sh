@@ -29,9 +29,10 @@ MODULES=(
     "09a_error_recovery_repo.sh"     # Error recovery - repo & git conflicts
     "09b_error_recovery_api.sh"      # Error recovery - API & parser
     "09c_error_recovery_health.sh"   # Error recovery - health check
-    "10a_main_orchestrator_setup.sh" # Orchestrator - setup, preflight, init
-    "10b_main_orchestrator_loop.sh"  # Orchestrator - nemotron loop, main entry
-)
+     "11_voice_recognition_validator.sh" # Voice command validation (anti-garble)
+     "10a_main_orchestrator_setup.sh" # Orchestrator - setup, preflight, init
+     "10b_main_orchestrator_loop.sh"  # Orchestrator - nemotron loop, main entry
+ )
 
 load_module() {
     local module="$1"
