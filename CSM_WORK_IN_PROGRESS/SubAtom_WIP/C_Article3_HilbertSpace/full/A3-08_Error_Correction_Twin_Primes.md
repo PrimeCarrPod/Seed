@@ -1,8 +1,6 @@
 # A3-08_Error_Correction_Twin_Primes — Complete Article
 ## Article: A3-08_Error_Correction_Twin_Primes
-**Generated:** 2026-08-30 06:30:35 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 These properties converge to a single conclusion: **the twin prime sector is the logical qubit of the prime electron quantum computer**. The physical Hilbert space ℋ₂₅₆ supports a quantum error correcting code where:
@@ -174,7 +172,7 @@ The physical error rate per proper time step:
 ```
 ε = 1 - p(2→2) = 1 - μ₈(2) = 0.5
 ```
-Wait — this is large! But the **effective error rate** for the logical qubit is not ε. The logical qubit is protected by:
+Note: this is large! But the **effective error rate** for the logical qubit is not ε. The logical qubit is protected by:
 - The DFS property (A3-06): |2⟩ does not decohere
 - The modular selection rules: transitions 2→6, 2→4 suppressed by factor ~10⁻⁴
 - The spectral gap: E₂ is separated from continuum by factor 2
@@ -431,7 +429,7 @@ The **concatenated logical error rate**:
 ε_total ~ (ε_inner)^(3/2) · (ε_mod) · (ε_outer)^(1750/2)
 ```
 
-Wait — the outer code is a repetition code of length 3500. Its distance is 3500 (can correct up to 1749 book errors). But the effective error rate per book is ε_outer ~ 5×10⁻⁴. The probability of >1749 book errors is:
+Note: the outer code is a repetition code of length 3500. Its distance is 3500 (can correct up to 1749 book errors). But the effective error rate per book is ε_outer ~ 5×10⁻⁴. The probability of >1749 book errors is:
 ```
 P(>1749) = Σ_{k=1750}^{3500} C(3500,k) ε_outer^k (1-ε_outer)^{3500-k}
 ```
@@ -831,7 +829,7 @@ Total error probability:
 ```
 P_error = N × ε_logical ~ 3.67×10⁹ × 7×10⁻⁵ ~ 2.6×10⁵
 ```
-Wait — this is >1! But this counts raw inner+modular errors. The outer code corrects these. After outer correction:
+Note: this is >1! But this counts raw inner+modular errors. The outer code corrects these. After outer correction:
 ```
 P_total_error ~ N × ε_3 ~ 3.67×10⁹ × 10⁻¹⁰⁵⁰ ~ 0
 ```

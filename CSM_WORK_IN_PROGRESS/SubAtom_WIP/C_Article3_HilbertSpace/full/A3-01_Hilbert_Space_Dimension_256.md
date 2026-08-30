@@ -243,11 +243,11 @@ Each qubit corresponds to a power-of-2 component of the prime gap:
 
 - **Qubit 0 (2⁰ = 1)**: Parity bit. Always 0 for prime gaps > 2 (all gaps even except d_1=1). |0⟩₀ is the dominant state. |1⟩₀ occurs only for the first gap d_1 = 1 (2 → 3). This qubit is effectively frozen in the ground state for all physical gaps.
 
-- **Qubit 1 (2¹ = 2)**: Twin prime bit. |1⟩₁ indicates gap ≡ 2 (mod 4), i.e., twin prime gaps (d = 2, 6, 10, 14, ... but actually d ≡ 2 mod 4 means d = 2, 6, 10, 14... wait: 2 mod 4 = 2, 6, 10, 14, 18...). Actually: d ≡ 2 (mod 4) means the gap is 2 times an odd number. Twin primes have d = 2 ≡ 2 (mod 4). This qubit is |1⟩ for all gaps of form 2(2m+1).
+- **Qubit 1 (2¹ = 2)**: Twin prime bit. |1⟩₁ indicates gap ≡ 2 (mod 4), i.e., twin prime gaps (d = 2, 6, 10, 14, ... but actually d ≡ 2 mod 4 means d = 2, 6, 10, 14... wait: 2 mod 4 = 2, 6, 10, 14, 18...). Note: d ≡ 2 (mod 4) means the gap is 2 times an odd number. Twin primes have d = 2 ≡ 2 (mod 4). This qubit is |1⟩ for all gaps of form 2(2m+1).
 
 - **Qubit 2 (2² = 4)**: Cousin prime bit. |1⟩₂ indicates gap ≡ 4 (mod 8). Cousin primes have d = 4 ≡ 4 (mod 8).
 
-- **Qubit 3 (2³ = 8)**: Sexy prime bit (d = 6 ≡ 6 mod 8, so this is more subtle). Actually d = 6 = 2 + 4, so bits 1 and 2 are both 1. The qubit 3 (value 8) activates for gaps ≥ 8.
+- **Qubit 3 (2³ = 8)**: Sexy prime bit (d = 6 ≡ 6 mod 8, so this is more subtle). Note: d = 6 = 2 + 4, so bits 1 and 2 are both 1. The qubit 3 (value 8) activates for gaps ≥ 8.
 
 - **Qubit 4 (2⁴ = 16)**: Activates for gaps ≥ 16.
 
@@ -842,7 +842,7 @@ Article 1 (A1-35) identified twin primes (gap = 2) as a [[256, 1, 3]] quantum er
 C = span{|ψ⟩ : |ψ⟩ = α|0⟩ + β|2⟩}
 ```
 
-Wait — the code uses the *entire* 256-dimensional space. The twin prime code encodes 1 logical qubit in 256 physical qubits (the 256 basis states). The distance is 3 because any single-gap error (changing d_n by ±2) is detectable.
+Note: the code uses the *entire* 256-dimensional space. The twin prime code encodes 1 logical qubit in 256 physical qubits (the 256 basis states). The distance is 3 because any single-gap error (changing d_n by ±2) is detectable.
 
 The stabilizer generators are:
 
@@ -966,7 +966,7 @@ The effective Hilbert space dimension grows with energy as D(E) (Piece 05). At L
 
 ### Prediction 3: Missing Gap d = 12
 
-The gap d = 12 (residue 12 mod 256) is *absent* from the prime gap sequence (no prime pair differs by 12? Actually, 12 is not a record gap but it does occur — wait, let me check: 197 - 185 = 12? No, 185 is not prime. Let me verify: gaps of 12 occur, e.g., 199-187? No. Actually, 12 is a possible gap. The missing gap in the *record gap* sequence is d=12 — it's not a record gap. The missing gap that matters is d=12 as a *record gap*.)
+The gap d = 12 (residue 12 mod 256) is *absent* from the prime gap sequence (no prime pair differs by 12? Note: 12 is not a record gap but it does occur — wait, let me check: 197 - 185 = 12? No, 185 is not prime. Let us verify: gaps of 12 occur, e.g., 199-187? No. Note: 12 is a possible gap. The missing gap in the *record gap* sequence is d=12 — it's not a record gap. The missing gap that matters is d=12 as a *record gap*.)
 
 Correction: The missing *record* gap is d=12. The gap 12 occurs but never as a record gap. This missing record gap predicts:
 - Sterile neutrino at 7.1 keV (A2-20)

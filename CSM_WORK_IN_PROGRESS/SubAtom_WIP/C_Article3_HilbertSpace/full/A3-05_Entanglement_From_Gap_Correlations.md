@@ -1,8 +1,6 @@
 # A3-05_Entanglement_From_Gap_Correlations — Complete Article
 ## Article: A3-05_Entanglement_From_Gap_Correlations
-**Generated:** 2026-08-30 06:30:35 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 ```
@@ -339,7 +337,7 @@ In the continuum limit (b → ∞), the system is a c=1 CFT (A3-04, Piece 11). T
 ```
 c = 6 lim_{b→∞} S(b) / log(2^b) = 6 lim S(b)/b = 6 × 0.4 = 2.4
 ```
-Wait — c=1 from A3-04, Piece 11. The discrepancy arises because the **bit depth RG flow is not the same as the spatial RG flow**. The correct identification:
+Note: c=1 from A3-04, Piece 11. The discrepancy arises because the **bit depth RG flow is not the same as the spatial RG flow**. The correct identification:
 ```
 c = 6 lim_{L→∞} S(L) / log L
 ```

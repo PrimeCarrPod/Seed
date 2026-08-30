@@ -1,8 +1,6 @@
 # A3-06_Decoherence_From_Gap_Randomness — Complete Article
 ## Article: A3-06_Decoherence_From_Gap_Randomness
-**Generated:** 2026-08-30 06:30:35 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 ## 1.2 Two Sources of Gap Randomness

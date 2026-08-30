@@ -1,8 +1,6 @@
 # A3-13_Quantum_Machine_Learning_Prime_Gaps — Complete Article
 ## Article: A3-13_Quantum_Machine_Learning_Prime_Gaps
-**Generated:** 2026-08-30 06:30:35 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 

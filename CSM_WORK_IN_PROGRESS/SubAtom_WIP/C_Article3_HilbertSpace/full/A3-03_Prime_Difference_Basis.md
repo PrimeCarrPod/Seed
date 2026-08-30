@@ -1,8 +1,6 @@
 # A3-03_Prime_Difference_Basis — Complete Article
 ## Article: A3-03_Prime_Difference_Basis
-**Generated:** 2026-08-30 06:30:34 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 The fundamental object is the **prime difference array**:

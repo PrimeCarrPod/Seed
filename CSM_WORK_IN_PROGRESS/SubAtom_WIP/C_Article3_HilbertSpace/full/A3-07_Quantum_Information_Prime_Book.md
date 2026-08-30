@@ -1,8 +1,6 @@
 # A3-07_Quantum_Information_Prime_Book — Complete Article
 ## Article: A3-07_Quantum_Information_Prime_Book
-**Generated:** 2026-08-30 06:30:35 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 From Article 1, the electron worldline has proper time ticks τₙ = Σ_{k=1}^n d_k. Each difference dₙ is a **gate operation** on the 256-dimensional Hilbert space ℋ₂₅₆. A book of 2²⁰ differences is a quantum circuit of depth 1,048,576 gates.
@@ -344,7 +342,7 @@ The circuit complexity:
 ```
 C(U_b) ~ O(log N)  (for the rational phases)
 ```
-where N = 256. Actually, the 1/d structure can be implemented using a **recursive phase gradient** circuit of depth O(log 256) = 8.
+where N = 256. Note: the 1/d structure can be implemented using a **recursive phase gradient** circuit of depth O(log 256) = 8.
 
 ## 5.2 Complexity of the Book Ensemble
 
@@ -747,7 +745,7 @@ This is trivial for the twin prime input (always outputs d=2). For other inputs,
 ```
 p_b(d) = (1/256) |Σ_{d'} e^{-iθ_{d'}^{(b)}} ⟨d|d'⟩|² = 1/256
 ```
-Wait — U_b is diagonal, so p_b(d) = δ_{d,2} for |ψ_0⟩ = |2⟩.
+Note: U_b is diagonal, so p_b(d) = δ_{d,2} for |ψ_0⟩ = |2⟩.
 
 For a superposition input |ψ⟩ = Σ α_d |d⟩:
 ```

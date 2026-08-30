@@ -1,8 +1,6 @@
 # Quantum Internet Prime Gaps — Complete Article
 ## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Generated:** 2026-08-23 20:18:12 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

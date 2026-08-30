@@ -1,8 +1,6 @@
 # A3-16_Quantum_Control_Prime_Gaps — Complete Article
 ## Article: A3-16_Quantum_Control_Prime_Gaps
-**Generated:** 2026-08-30 06:30:36 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 
