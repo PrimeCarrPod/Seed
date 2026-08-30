@@ -225,6 +225,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, climate benefits quantification, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act20": {
+        "name": "National Electric Vehicle Charging Infrastructure Act of 2026",
+        "short_name": "NEVCIA",
+        "dir": "20-EV-Charging-Infrastructure-Act",
+        "funding": "$30 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, EV adoption challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, transportation emissions data, EV market growth, charging infrastructure gap"},
+            "03": {"name": "TITLE-I-NATIONAL-CHARGING-NETWORK", "title": "Title I — National EV Charging Network", "topic": "highway charging corridors, urban charging hubs, rural charging deployment, fast charging standards"},
+            "04": {"name": "TITLE-II-RESIDENTIAL-CHARGING", "title": "Title II — Residential and Multi-Unit Dwelling Charging", "topic": "home charging incentives, apartment charging solutions, workplace charging, retrofit requirements"},
+            "05": {"name": "TITLE-III-FLEET-ELECTRIFICATION", "title": "Title III — Fleet Electrification Program", "topic": "federal fleet electrification, postal service EVs, transit bus electrification, school bus electrification, delivery fleet conversion"},
+            "06": {"name": "TITLE-IV-HEAVY-DUTY-EV-CHARGING", "title": "Title IV — Heavy-Duty and Commercial EV Charging", "topic": "truck stop charging, megawatt charging system, freight corridor infrastructure, depot charging systems"},
+            "07": {"name": "TITLE-V-GRID-INTEGRATION", "title": "Title V — Grid Integration and Smart Charging", "topic": "V2G technology, smart charging standards, grid load management, renewable energy integration"},
+            "08": {"name": "TITLE-VI-EV-WORKFORCE", "title": "Title VI — EV Infrastructure Workforce Development", "topic": "electrician training, charging station maintenance, EV technician certification, engineering programs"},
+            "09": {"name": "TITLE-VII-EQUITY-ACCESS", "title": "Title VII — EV Equity and Access Programs", "topic": "disadvantaged community charging, used EV incentives, EV carshare programs, rural EV access"},
+            "10": {"name": "TITLE-VIII-DOMESTIC-MANUFACTURING", "title": "Title VIII — Domestic Charger Manufacturing", "topic": "charger manufacturing incentives, Buy American requirements, supply chain resilience, export promotion"},
+            "11": {"name": "TITLE-IX-STANDARDS-INTEROPERABILITY", "title": "Title IX — Charging Standards and Interoperability", "topic": "connector standards, payment system interoperability, open access requirements, reliability standards"},
+            "12": {"name": "TITLE-X-ENVIRONMENTAL-ASSESSMENT", "title": "Title X — Environmental Review and Siting", "topic": "NEPA streamlining for charging stations, brownfish redevelopment, utility coordination, permitting efficiency"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, EV market projections, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act21": {
+        "name": "National Climate Resilience and Adaptation Act of 2026",
+        "short_name": "NCRAA",
+        "dir": "21-Climate-Resilience-Adaptation-Act",
+        "funding": "$90 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, climate risk assessment, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, climate disaster data, resilience gap analysis, future risk projections"},
+            "03": {"name": "TITLE-I-COMMUNITY-RESILIENCE-GRANTS", "title": "Title I — Community Resilience Grants", "topic": "local resilience planning, community resilience centers, vulnerable population protection, heat mitigation"},
+            "04": {"name": "TITLE-II-FLOOD-RESILIENCE", "title": "Title II — Flood Resilience and Stormwater Management", "topic": "flood control infrastructure, stormwater systems, levees and dams, floodplain restoration"},
+            "05": {"name": "TITLE-III-WILDFIRE-RESILIENCE", "title": "Title III — Wildfire Resilience and Management", "topic": "forest management, defensible space programs, fire-resistant construction, early detection systems"},
+            "06": {"name": "TITLE-IV-COMMUNITY-RELOCATION", "title": "Title IV — Managed Retreat and Community Relocation", "topic": "voluntary buyout programs, community relocation assistance, land use planning, displacement prevention"},
+            "07": {"name": "TITLE-V-AGRICULTURE-RESILIENCE", "title": "Title V — Agricultural Climate Resilience", "topic": "drought-resistant farming, soil health programs, water-efficient agriculture, crop insurance reform"},
+            "08": {"name": "TITLE-VI-HEAT-RESILIENCE", "title": "Title VI — Extreme Heat Resilience", "topic": "cooling centers, urban heat island mitigation, heat health warning systems, cool roof programs"},
+            "09": {"name": "TITLE-VII-CLIMATE-DATA-SYSTEMS", "title": "Title VII — Climate Data and Prediction Systems", "topic": "national climate monitoring, predictive modeling, early warning systems, data sharing platforms"},
+            "10": {"name": "TITLE-VIII-TRIBAL-RESILIENCE", "title": "Title VIII — Tribal Climate Resilience", "topic": "tribal relocation assistance, traditional ecological knowledge, tribal resilience planning, cultural site protection"},
+            "11": {"name": "TITLE-IX-RESILIENCE-FINANCE", "title": "Title IX — Resilience Finance and Insurance", "topic": "resilience bonds, catastrophe reserves, insurance incentives, risk transfer mechanisms"},
+            "12": {"name": "TITLE-X-CLIMATE-REFUGEE-PROGRAMS", "title": "Title X — Climate Displacement and Refugee Programs", "topic": "internal displacement assistance, climate refugee framework, cross-border cooperation, resettlement support"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, avoided damage benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
