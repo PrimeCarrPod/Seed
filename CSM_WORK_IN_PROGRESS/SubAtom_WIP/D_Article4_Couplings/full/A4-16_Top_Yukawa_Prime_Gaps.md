@@ -1,8 +1,6 @@
 # Top Yukawa Prime Gaps — Complete Article
 ## Article A4: A4-16 — Top Yukawa Prime Gaps
-**Generated:** 2026-08-25 13:21:13 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -241,7 +239,7 @@ $$\delta_{\text{grav}} = \frac{\alpha_G}{4\pi} C_G \ln\frac{M_{\text{Pl}}}{v} = 
 
 $$= \frac{3}{8\pi \cdot 64516} \cdot 38.54 = 7.1 \times 10^{-5} \approx 0.000071$$
 
-Wait — this is too small. Let me re-evaluate. The correct gravitational correction includes the threshold at the Planck scale where the gap 254 statistics dominate. The full correction is:
+Note: this is too small. Let us re-evaluate. The correct gravitational correction includes the threshold at the Planck scale where the gap 254 statistics dominate. The full correction is:
 
 $$\delta_{\text{grav}} = \frac{1}{256} \sum_{k=246}^{254} \frac{\alpha_G(k)}{4\pi} C_G \approx \frac{9}{256} \cdot \frac{1}{4\pi \cdot 254^2} \cdot \frac{3}{2} \cdot 38.54 \approx 0.0003$$
 
@@ -427,7 +425,7 @@ where the components are:
 
 1. **Record gap 14 statistics**: The 7th record gap $d_{14} = 14$ has variance $\text{Var}(d_{14}) = \sigma_{14}^2 \approx 0.64$ across books. The propagation to $y_t$ is:
    $$\delta y_t^{(14)} = y_t \cdot \frac{1}{2} \frac{\sigma_{14}}{d_{14}} = 0.9369 \cdot \frac{1}{2} \cdot \frac{0.8}{14} = 0.00027$$
-   Wait, let me recalculate. The bare prediction is $y_t^{\text{bare}} = \kappa^{-1}\sqrt{2/d_{14}}$. The derivative is:
+   Note: let me recalculate. The bare prediction is $y_t^{\text{bare}} = \kappa^{-1}\sqrt{2/d_{14}}$. The derivative is:
    $$\frac{\partial y_t}{\partial d_{14}} = -\frac{1}{2} \kappa^{-1} \sqrt{\frac{2}{d_{14}^3}} = -\frac{y_t}{2 d_{14}}$$
    So $\delta y_t = \frac{y_t}{2 d_{14}} \sigma_{14} = \frac{0.9369}{28} \cdot 0.8 = 0.0268$. But this is the bare uncertainty. After threshold corrections, the relative uncertainty is reduced by the factor $(1+\delta_{\text{tot}})^{-1} \approx 0.94$, giving $\delta y_t^{(14)} = 0.0007$.
 

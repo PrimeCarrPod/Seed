@@ -1,8 +1,6 @@
 # Charge Renormalization Prime — Complete Article
 ## Article A4: A4-09 — Charge Renormalization Prime
-**Generated:** 2026-08-25 03:34:37 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

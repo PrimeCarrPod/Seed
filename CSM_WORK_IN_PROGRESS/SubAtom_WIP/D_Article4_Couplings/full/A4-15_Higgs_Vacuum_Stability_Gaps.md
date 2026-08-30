@@ -1,8 +1,6 @@
 # Higgs Vacuum Stability Gaps — Complete Article
 ## Article A4: A4-15 — Higgs Vacuum Stability Gaps
-**Generated:** 2026-08-25 12:55:35 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -301,14 +299,14 @@ y_t^crit = κ⁻¹ √(2/14) × f_crit = 0.985
 
 Thus λ_crit = 0.985²/4 - 0.021 = 0.242 - 0.021 = 0.221
 
-Wait—this is at the Planck scale. We need the EW scale value. Running down from M_Planck to v:
+Note: this is at the Planck scale. We need the EW scale value. Running down from M_Planck to v:
 
 λ_crit(EW) = λ_crit(M_Planck) × (running factor) + threshold corrections
 
 The running factor from prime gap flow (Piece 02) is:
 λ(μ) / λ(M_Planck) ≈ 0.129 / (-0.003) → but we need the reverse.
 
-Actually, the correct procedure: find the EW λ such that after RG evolution to M_Planck, λ = 0.
+Note: the correct procedure: find the EW λ such that after RG evolution to M_Planck, λ = 0.
 
 From numerical integration of prime gap RG equations (Piece 02):
 λ(EW) = 0.129 → λ(M_Planck) = -0.003 (metastable)

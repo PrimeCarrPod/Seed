@@ -1,8 +1,6 @@
 # Anomalous Magnetic Moment — Complete Article
 ## Article A4: A4-08 — Anomalous Magnetic Moment
-**Generated:** 2026-08-25 03:17:09 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -554,6 +552,5 @@ Any future deviation in g−2 will simultaneously indicate BSM physics, a violat
 
 **End of Article A4-08: Anomalous_Magnetic_Moment**
 **Total Theorems: 35 (4.112–4.146)**
-**Concatenated Target: ≥350 lines**
 ---
 

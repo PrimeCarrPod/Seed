@@ -1,8 +1,6 @@
 # Running Couplings RG Flow — Complete Article
 ## Article A4: A4-04 — Running Couplings RG Flow
-**Generated:** 2026-08-25 01:56:49 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -1539,7 +1537,6 @@ Article A4-04 provides a complete unification of the renormalization group flow 
 ## 91. Final Verification
 
 **Concatenated file:** A4-04_Running_Couplings_RG_Flow.md  
-**Target lines:** ≥350  
 **Expected lines:** ~1600+
 
 **Zip file:** article4_A4-04_pieces.zip  

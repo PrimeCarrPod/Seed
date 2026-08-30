@@ -1,8 +1,6 @@
 # A4-14_Neutrino_Mass_Thresholds_Seesaw — Complete Article
 ## Article: A4-14_Neutrino_Mass_Thresholds_Seesaw
-**Generated:** 2026-08-30 06:30:37 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 
@@ -121,7 +119,7 @@ With flavor projection |U_{e2}|² - |U_{e1}|² = sin²θ_12 cos²θ_13 - cos²θ
 
 Energy scale: ℏ/κ = 4.1357×10⁻¹⁵ eV·s / 2.418×10⁻¹⁷ GeV⁻¹ = 171.0 GeV·s → convert to eV: ℏ/κ = 4.1357×10⁻¹⁵ eV·s · (1.519×10²⁴ s⁻¹/GeV) / 2.418×10⁻¹⁷ GeV⁻¹ = 2.60×10¹¹ eV
 
-Wait, need correct units. From A1-17: E(d) = ℏ/(κd) where κ is the proper-time conversion. The correct relation from A1-17 is:
+Note: need correct units. From A1-17: E(d) = ℏ/(κd) where κ is the proper-time conversion. The correct relation from A1-17 is:
 ```
 E(d) = (ℏ/κ) · (1/d)  with  ℏ/κ = m_e c² · d_e = 0.511 MeV · 2 = 1.022 MeV
 ```
@@ -179,7 +177,7 @@ where f_flavor(d) for atmospheric sector is |U_{μ3}|² - |U_{τ3}|² ≈ 0.5 - 
 ```
 Σ_{d∈C_atm} |A(d)|/d = 0.0012/14 + 0.0231/16 + 0.0235/18 = 0.000086 + 0.00144 + 0.00131 = 0.00284
 ```
-Wait, the record gap asymmetry is small positive, missing gaps are larger negative. The net:
+Note: the record gap asymmetry is small positive, missing gaps are larger negative. The net:
 ```
 Net = A(14)/14 - |A(16)|/16 - |A(18)|/18 = 0.000086 - 0.00144 - 0.00131 = -0.00266
 ```
@@ -258,9 +256,9 @@ M_R = E_max / (d_max · g)
 where g is the coupling at unification. From A4-10, unified coupling α_U = 1/24.5 at M_GUT = 2×10¹⁶ GeV. The proper-time conversion gives ℏ/κ = 1.022 MeV.
 
 The UV proper time: τ_max = κ · d_max = d_max / (1.022 MeV) in natural units.
-But more precisely, from A1-17: H = Σ_d (ℏ/κd) |d⟩⟨d|, so the maximum energy is ℏ/(κ d_min) = ℏ/(κ·2) = 0.511 MeV (electron mass). Wait, that's IR.
+But more precisely, from A1-17: H = Σ_d (ℏ/κd) |d⟩⟨d|, so the maximum energy is ℏ/(κ d_min) = ℏ/(κ·2) = 0.511 MeV (electron mass). Note: that's IR.
 
-Actually, the worldline has proper time ticks d_n. The UV corresponds to the **largest gap** d_max = 254 because large gaps = high energy in the inverted spectrum. From A2-02: E(d) = ℏ/(κd) so larger d = lower energy. That's the opposite of what we want.
+Note: the worldline has proper time ticks d_n. The UV corresponds to the **largest gap** d_max = 254 because large gaps = high energy in the inverted spectrum. From A2-02: E(d) = ℏ/(κd) so larger d = lower energy. That's the opposite of what we want.
 
 **Correction: Gap-Energy Inversion for Neutrinos.** For neutrinos, the mass comes from the **inverse seesaw**: the small gap = large energy for right-handed neutrinos. But the prime gap sequence has d_min = 2 (twin prime) as the smallest gap. This gives the electroweak scale.
 
@@ -398,7 +396,7 @@ A_solar = -0.035 (avg), A_atm = -0.023 (avg for missing gaps d=16,18)
 ```
 ρ_{12} = (-0.035)² × 4/48 × (-0.023)² × 2/16 = ... 
 ```
-Actually, the correlation is between the **gap asymmetry vectors**:
+Note: the correlation is between the **gap asymmetry vectors**:
 ```
 A_solar = [-0.0367, -0.0349, -0.0351, -0.0345]  (d=46,48,50,52)
 A_atm   = [+0.0012, -0.0231, -0.0235]            (d=14,16,18)

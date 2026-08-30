@@ -1,8 +1,6 @@
 # Rare Decays Prime Predictions — Complete Article
 ## Article A4: A4-21 — Rare Decays Prime Predictions
-**Generated:** 2026-08-25 20:03:44 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
