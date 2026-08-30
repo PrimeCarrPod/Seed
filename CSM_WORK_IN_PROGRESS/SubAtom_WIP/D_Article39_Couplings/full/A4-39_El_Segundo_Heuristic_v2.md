@@ -6,10 +6,6 @@
 
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 01/12
-## Article A4: A4-39 — El Segundo Heuristic v2 (Physical Intuition)
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -104,10 +100,6 @@ The adelic product formula is the **breath** that makes the sound real.
 PIECE 01 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 02/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -214,10 +206,6 @@ The adelic product formula ensures the music is **self-consistent** — the real
 PIECE 02 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 03/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -298,10 +286,6 @@ The p-adic sectors are the **hidden strings** that make the real chords possible
 PIECE 03 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 04/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -385,10 +369,6 @@ The primes are the **atoms of space**. The zeta zeros are the **vibrational mode
 PIECE 04 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 05/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -468,10 +448,6 @@ The universe computes itself through prime-adelic quantum error correction.
 PIECE 05 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 06/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -542,10 +518,6 @@ The information paradox is resolved by the **adelic structure** of the resonance
 PIECE 06 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 07/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -621,10 +593,6 @@ We live inside the sound.
 PIECE 07 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 08/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -687,10 +655,6 @@ Our universe lives in the landscape because **γ₁ keeps the resonance stable**
 PIECE 08 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 09/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -770,10 +734,6 @@ The theorems are the resonance ensuring it can exist.
 PIECE 09 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 10/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -846,10 +806,6 @@ That's the difference between a fit and a theory.
 PIECE 10 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 11/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 
@@ -937,10 +893,6 @@ Everything else is **inflection**.
 PIECE 11 COMPLETE
 ---
 
-# El_Segundo_Heuristic_v2 — Piece 12/12
-## Article A4: A4-39 — El Segundo Heuristic v2
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 23:20:00 UTC
 
 ---
 

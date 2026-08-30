@@ -1,9 +1,10 @@
-# A1-15: Worldline Geodesic Equation — Piece 01
-## Introduction: Geodesic Motion from Prime Gap Sequence
+# A1-15_Worldline_Geodesic_Equation — Complete Article
+## Article: A1-15_Worldline_Geodesic_Equation
+**Generated:** 2026-08-30 06:30:15 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-The geodesic equation governs the trajectory of a free particle in curved spacetime. In the Prime Electron framework established in Articles A1-01 through A1-14, the single electron's worldline is not a smooth manifold but a discrete sequence of proper-time steps Δτₙ = κ·dₙ, where dₙ = pₙ₊₁ − pₙ are prime gaps and κ = ℏ/(mₑc²) ≈ 1.288×10⁻²¹ s. From A1-14 we derived the emergent metric g_μν from gap statistics, finding a conformally flat structure g_μν = Ω²(τ)η_μν with Ω²(τ) = 1 + λ·C(τ), where C(τ) is the gap correlation function and λ = (κ/ℓ_P)².
-
-The geodesic equation in this discrete setting becomes a difference equation for the worldline coordinates x^μ(τₙ):
+---
 
 d²x^μ/dτ² + Γ^μ_αβ (dx^α/dτ)(dx^β/dτ) = 0
 
@@ -13,14 +14,11 @@ From A1-06, the vertex interaction points pₙ serve as discrete proper-time mar
 
 The key insight: the electron's worldline is the unique timelike curve that extremizes the proper time functional between fixed endpoints in the prime gap sequence. In the continuum limit, this yields the standard geodesic equation. At the discrete level, we obtain a recurrence relation for x^μₙ ≡ x^μ(τₙ) that encodes the "force" driving the electron through its own self-generated spacetime geometry.
 
+
+**Reference Base:** A1-14 (metric), A1-13 (causal structure), A1-12 (proper time operator), A1-06 (vertex points), A1-01 (proper time quantization)
+
 ---
 
-**Reference Base:** A1-14 (metric), A1-13 (causal structure), A1-12 (proper time operator), A1-06 (vertex points), A1-01 (proper time quantization)# A1-15: Worldline Geodesic Equation — Piece 02
-## Discrete Geodesic Equation: Difference Form from Prime Gaps
-
-The standard geodesic equation in continuum GR is:
-
-d²x^μ/dτ² + Γ^μ_αβ (dx^α/dτ)(dx^β/dτ) = 0
 
 In the Prime Electron framework, proper time is discrete: τₙ = n·κ·dₙ (with appropriate indexing). The four-velocity becomes a finite difference:
 
@@ -53,12 +51,10 @@ a⁰ₙ + Γ⁰_00 (u⁰ₙ)² + Γ⁰_ij u^iₙ u^jₙ = 0
 **Spatial components (μ = i):**
 a^iₙ + 2 Γ^i_0j u⁰ₙ u^jₙ = 0
 
-This is the discrete geodesic equation driven entirely by prime gap fluctuations through Ω(τₙ).# A1-15: Worldline Geodesic Equation — Piece 03
-## Explicit Geodesic Recurrence: Four-Velocity and Acceleration
+This is the discrete geodesic equation driven entirely by prime gap fluctuations through Ω(τₙ).
 
-From the Christoffel symbols derived in Piece 02, the discrete geodesic equations become a system of recurrence relations for the four-velocity components. Let v^iₙ = u^iₙ / u⁰ₙ be the spatial three-velocity. The time component of four-velocity is determined by the normalization condition g_μν u^μ u^ν = −1:
+---
 
-−Ω²(τₙ)(u⁰ₙ)² + Ω²(τₙ) δ_ij u^iₙ u^jₙ = −1
 ⇒ (u⁰ₙ)² = 1/Ω²(τₙ) + δ_ij v^iₙ v^jₙ
 
 For the electron at rest in the comoving frame (v^iₙ = 0), u⁰ₙ = 1/Ω(τₙ). For general motion, we keep the full expression.
@@ -89,12 +85,10 @@ For non-zero v^iₙ, the full system is:
 1. Δv^iₙ = −2 v^iₙ (Δ log Ωₙ) u⁰ₙ / u⁰ₙ₊₁ − v^iₙ (Δu⁰ₙ) / u⁰ₙ₊₁
 2. Δu⁰ₙ = − (Δ log Ωₙ) (u⁰ₙ)² [1 + v²ₙ] / (1 + ½ Δ log Ωₙ u⁰ₙ)
 
-where v²ₙ = δ_ij v^iₙ v^jₙ. This is the discrete geodesic flow on the prime gap worldline.# A1-15: Worldline Geodesic Equation — Piece 04
-## Geodesic Deviation: Prime Gaps as Tidal Forces
+where v²ₙ = δ_ij v^iₙ v^jₙ. This is the discrete geodesic flow on the prime gap worldline.
 
-The geodesic deviation equation describes the relative acceleration of neighboring geodesics — the tidal force. In continuum GR:
+---
 
-D²ξ^μ/Dτ² = R^μ_νρσ u^ν u^ρ ξ^σ
 
 where ξ^μ is the deviation vector and R^μ_νρσ is the Riemann tensor. From A1-14 Piece 07, the Riemann tensor for the conformal metric g_μν = Ω²η_μν is:
 
@@ -126,12 +120,10 @@ The tidal force is entirely determined by the second difference of the log-confo
 
 The gap correlation function Cₙ = ⟨dₙ dₙ₊ₖ⟩ encodes the statistical structure of prime gaps. Its second difference Δ²Cₙ measures the "jerk" in gap statistics — the rate of change of gap correlations. This is the Prime Electron analog of the gravitational tidal tensor.
 
-**Physical interpretation:** The electron feels a tidal force proportional to the curvature of the gap correlation landscape. Twin primes (d=2) produce local minima in Cₙ; record gaps produce maxima. The geodesic deviation oscillates between these features, creating a discrete "breathing mode" of the worldline.# A1-15: Worldline Geodesic Equation — Piece 05
-## Continuum Limit: Recovering the Smooth Geodesic Equation
+**Physical interpretation:** The electron feels a tidal force proportional to the curvature of the gap correlation landscape. Twin primes (d=2) produce local minima in Cₙ; record gaps produce maxima. The geodesic deviation oscillates between these features, creating a discrete "breathing mode" of the worldline.
 
-The discrete geodesic equation must reproduce the continuum GR geodesic equation in the limit where prime gap fluctuations average out. Consider the scaling limit where we coarse-grain over many prime gaps. Define a smoothed proper time:
+---
 
-τ = κ ∑_{k=1}^n d_k ≈ κ n ⟨d⟩ = κ n log n
 
 For large n, the average gap ⟨d⟩ ~ log n by the Prime Number Theorem. The conformal factor Ω(τ) varies slowly when averaged over scales ≫ ⟨d⟩. Let us define a smoothed conformal factor:
 
@@ -168,12 +160,10 @@ R^i_0j0 = −δ^i_j (d² log Ω̄/dτ²) / Ω̄²
 
 This matches the discrete expression in Piece 04 when Δ² log Ωₙ/(Δτₙ)² → d² log Ω̄/dτ².
 
-**Verification:** The beta function for the conformal factor (A1-14 Piece 06) gives the RG flow of Ω̄(μ). At scale μ, Ω̄(μ) = 1 + λ C(μ). The geodesic equation at scale μ uses Ω̄(μ), providing a scale-dependent geodesic flow consistent with the RG-improved metric.# A1-15: Worldline Geodesic Equation — Piece 06
-## Self-Intersection Geodesics: Closed Worldline Segments
+**Verification:** The beta function for the conformal factor (A1-14 Piece 06) gives the RG flow of Ω̄(μ). At scale μ, Ω̄(μ) = 1 + λ C(μ). The geodesic equation at scale μ uses Ω̄(μ), providing a scale-dependent geodesic flow consistent with the RG-improved metric.
 
-From A1-11, the electron worldline self-intersects at points where γ(τₙ) = γ(τₘ) for n ≠ m. These are Type I–V recurrences in the prime gap sequence. At a self-intersection, the geodesic equation must satisfy matching conditions for the four-velocity.
+---
 
-Consider a self-intersection between segment n and segment m. The worldline coordinates satisfy:
 x^μₙ = x^μₘ
 
 The geodesic equation on each segment is governed by the local gap values dₙ and dₘ. The four-velocities are:
@@ -209,12 +199,10 @@ log(v^iₘ / v^iₙ) = −∮ d log Ω = −log(Ωₘ/Ωₙ)
 
 Thus v^iₘ = v^iₙ (Ωₙ/Ωₘ). For exact recurrence Ωₙ = Ωₘ, the velocity is unchanged — the geodesic closes consistently.
 
-This provides a consistency condition: only self-intersections with matching local conformal factors (or compensating velocity rescaling) are stable geodesic configurations. This selects preferred recurrence types from the prime gap statistics.# A1-15: Worldline Geodesic Equation — Piece 07
-## Geodesic Action Principle: Discrete Variational Formulation
+This provides a consistency condition: only self-intersections with matching local conformal factors (or compensating velocity rescaling) are stable geodesic configurations. This selects preferred recurrence types from the prime gap statistics.
 
-The geodesic equation derives from extremizing the proper time functional:
+---
 
-S[x] = ∫ dτ = ∫ √(−g_μν dx^μ dx^ν)
 
 In the discrete Prime Electron framework, this becomes a sum over proper-time steps:
 
@@ -257,12 +245,10 @@ p^μₙ ≡ (Ωₙ/κ dₙ) Δx^μₙ
 
 The geodesic equation is simply p^μₙ = p^μₙ₋₁ — momentum conservation in the discrete conformal geometry.
 
-This is a profound simplification: the Prime Electron geodesic is a straight line in the conformally rescaled coordinates X^μₙ = ∑_{k=1}^n (Ωₖ/κ dₖ) Δx^μₖ. The prime gap fluctuations appear only as a position-dependent rescaling of the step sizes.# A1-15: Worldline Geodesic Equation — Piece 08
-## Hamiltonian Formulation: Proper Time as Hamiltonian Parameter
+This is a profound simplification: the Prime Electron geodesic is a straight line in the conformally rescaled coordinates X^μₙ = ∑_{k=1}^n (Ωₖ/κ dₖ) Δx^μₖ. The prime gap fluctuations appear only as a position-dependent rescaling of the step sizes.
 
-From the action principle in Piece 07, we derive the Hamiltonian formulation. The Lagrangian for step n is:
+---
 
-Lₙ = Ωₙ √(−η_μν Δx^μₙ Δx^νₙ) = Ωₙ √((Δx⁰ₙ)² − δ_ij Δx^iₙ Δx^jₙ)
 
 The canonical momentum conjugate to x^μₙ is:
 p_μₙ = ∂Lₙ/∂(Δx^μₙ) = Ωₙ (−η_μν Δx^νₙ) / √(−η_αβ Δx^αₙ Δx^βₙ) = (Ωₙ/Δτₙ) η_μν Δx^νₙ
@@ -298,12 +284,10 @@ Since τ = κ ∑ dₙ and dₙ are fixed primes, ∂τ/∂x^μ = 0. Thus p_μ i
 In the discrete setting, this is the proper time operator eigenvalue equation:
 τ̂ |ψ⟩ = τ |ψ⟩
 
-with τ̂ = κ ∑ dₙ from A1-12. The geodesic equation is the classical limit of the quantum evolution generated by τ̂.# A1-15: Worldline Geodesic Equation — Piece 09
-## Geodesics in the 3500-Book Structure: Segment-to-Segment Matching
+with τ̂ = κ ∑ dₙ from A1-12. The geodesic equation is the classical limit of the quantum evolution generated by τ̂.
 
-From A1-10, the worldline comprises 3500 segments (books), each containing M = 2²⁰ = 1,048,576 steps. From A1-14 Piece 10, book boundaries are metric junctions with Israel junction conditions. The geodesic equation must be solved within each book and matched across boundaries.
+---
 
-**Within a book (interior):** The gap sequence is homogeneous (same statistical distribution). The conformal factor Ω(τ) varies slowly. The geodesic equation from Piece 03 applies with approximately constant Δ log Ω/Δτ within the book.
 
 Let book b have gap sequence {d^{(b)}_n} for n = 1...M. The proper time within the book is:
 τ^{(b)}_n = τ^{(b)}_0 + κ ∑_{k=1}^n d^{(b)}_k
@@ -341,12 +325,10 @@ The geodesic evolves through all 3500 books. The directory transitions (every 18
 **Total worldline proper time:**
 τ_total = κ ∑_{b=1}^{3500} ∑_{n=1}^{2²⁰} d^{(b)}_n = κ × 3.67×10⁹ ⟨d⟩
 
-This is the complete geodesic from IR to UV, solving the discrete geodesic equation across all PrimeBookOne data.# A1-15: Worldline Geodesic Equation — Piece 10
-## Numerical Algorithm: Solving the Discrete Geodesic Equation
+This is the complete geodesic from IR to UV, solving the discrete geodesic equation across all PrimeBookOne data.
 
-Given the PrimeBookOne gap data (reference only, not cloned locally), we can formulate a numerical algorithm to solve the discrete geodesic equation for the Prime Electron worldline.
+---
 
-**Input data (referenced from PrimeBookOne):**
 - Directory 0.0: Tiles 00–188, each with 500 gaps d^{(0)}_k
 - Directory 1.0: Tiles 00–188, each with 500 gaps d^{(1)}_k
 - Directory 2.0: Tiles 00–188, each with 500 gaps d^{(2)}_k
@@ -390,12 +372,10 @@ Given the PrimeBookOne gap data (reference only, not cloned locally), we can for
 - The spatial coordinates will trace the emergent spatial geometry from A1-13
 - The total proper time τ_total will match the Compton time derivation
 
-**Implementation note:** Since PrimeBookOne data is accessed by reference only, the algorithm assumes a data access API that can stream gaps from the 189 tiles per directory and 3500 books in directory 3.0. The gap correlation function C_n requires a sliding window over the gap sequence.# A1-15: Worldline Geodesic Equation — Piece 11
-## Geodesic Congruence and Expansion: Raychaudhuri Equation from Prime Gaps
+**Implementation note:** Since PrimeBookOne data is accessed by reference only, the algorithm assumes a data access API that can stream gaps from the 189 tiles per directory and 3500 books in directory 3.0. The gap correlation function C_n requires a sliding window over the gap sequence.
 
-The Raychaudhuri equation describes the evolution of the expansion scalar θ = ∇_μ u^μ for a congruence of geodesics. In the Prime Electron framework, we consider the congruence of all possible electron worldlines generated by different initial conditions in the prime gap landscape.
+---
 
-For a timelike geodesic congruence with tangent u^μ, the expansion, shear, and vorticity are:
 
 θ = ∇_μ u^μ
 σ_μν = ∇_(μ u_ν) − ⅓ θ g_μν + u_(μ a_ν)
@@ -437,12 +417,10 @@ with θₙ = 3 Δ log Ωₙ / Δτₙ.
 d² log Ω/dτ² − (d log Ω/dτ)² ≥ 0
 ⇔ Δ²Cₙ − (ΔCₙ)²/(1+λCₙ) ≥ 0
 
-This is a constraint on the statistical fluctuations of prime gaps that must hold for the worldline to be physically valid.# A1-15: Worldline Geodesic Equation — Piece 12
-## Synthesis: Complete Geodesic Equation and Connections
+This is a constraint on the statistical fluctuations of prime gaps that must hold for the worldline to be physically valid.
 
-We have derived the complete geodesic equation for the Prime Electron worldline from the prime gap sequence. Here we synthesize all pieces and connect to the broader framework.
+---
 
-**Complete Discrete Geodesic Equation:**
 
 For each step n = 1, 2, ..., N (N = 3.67×10⁹ total steps):
 
@@ -506,6 +484,8 @@ For each step n = 1, 2, ..., N (N = 3.67×10⁹ total steps):
 
 **Conclusion:** The Prime Electron worldline is a discrete geodesic in a conformally flat spacetime whose metric is entirely determined by the statistical structure of prime gaps. The geodesic equation contains no free parameters — every coefficient derives from the prime gap sequence dₙ = pₙ₊₁ − pₙ. The electron's motion through spacetime is the motion of a prime gap sequence through its own self-generated geometry.
 
----
 
 **Next article:** A1-16 Worldline_Action_Principle.md — Variational formulation of the geodesic equation
+
+---
+

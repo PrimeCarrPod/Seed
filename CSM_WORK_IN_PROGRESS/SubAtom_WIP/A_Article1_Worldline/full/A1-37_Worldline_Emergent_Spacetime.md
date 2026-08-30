@@ -1,4 +1,3 @@
-# A1-37 Worldline_Emergent_Spacetime.md — Piece 01
 ## Introduction — Emergent Spacetime from Worldline Entanglement
 
 The prime electron worldline's entanglement structure generates an emergent bulk spacetime. The entanglement wedge of a boundary subregion is the bulk region reconstructible from that subregion's data.
@@ -23,7 +22,6 @@ with $z \in [d_{\min}, d_{\max}]$ and boundary at $z \to 0$ (small gaps).
 
 **No free parameters.** All geometric data ($z$, $ds^2$, $h_i$, $K_A$) are derived from the prime gap sequence $d_n$.
 
-(End of file - 35 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 02
 ## Entanglement Wedge and Relative Entropy — JLMS from Gaps
 
 The JLMS formula is realized exactly in the prime electron worldline through the gap-relative entropy correspondence.
@@ -55,7 +53,6 @@ where $\beta(z) = 2\pi z$ is the local inverse temperature. This is the bulk tim
 
 **PrimeBookOne wedge data.** The 3500×3500 relative entropy matrix (A1-34) contains all $S(\rho_A || \sigma_A)$ for all subregions $A$. The entanglement wedge for each $A$ is determined by which gaps have matching relative entropy.
 
-(End of file - 35 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 03
 ## Bulk Metric from Gap Ratios — AdS2 Geometry
 
 The gap ratio distribution generates the AdS$_2$ bulk metric. The radial coordinate is the gap scale, and the metric emerges from the statistics of $d_{n+1}/d_n$.
@@ -88,7 +85,6 @@ The dilaton profile is $\Phi(z) = 1/z$, matching the gap density $\rho(d) \sim 1
 
 **PrimeBookOne metric data.** The 3500 books give the discrete metric components $g_{zz}(b)$, $g_{tt}(b)$ at each scale $\mu_b$. The data shows AdS$_2$ scaling collapse.
 
-(End of file - 35 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 04
 ## Einstein Equations from Relative Entropy Variation
 
 The Einstein equations emerge from the first law of entanglement entropy, which is the variation of relative entropy with respect to the metric.
@@ -124,7 +120,6 @@ From A1-09, $\kappa$ is fixed by the Compton scale, giving $G \sim 10^{-38}$ in 
 
 **PrimeBookOne Einstein data.** The 3500 books give the discrete Einstein tensor components. The variation of relative entropy across books matches the left-hand side of the Einstein equations.
 
-(End of file - 34 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 05
 ## The Planck Scale d = 16 — UV/IR Meeting Point
 
 The self-dual gap $d=16$ (A1-36) is the Planck scale where UV and IR physics meet. It is the horizon of the emergent AdS$_2$ bulk.
@@ -151,7 +146,6 @@ The Bekenstein-Hawking entropy is $S_{\text{BH}} = \mathcal{A}/(4G) = \log 78$ (
 
 **PrimeBookOne Planck data.** The book containing gap $d=16$ (approximately book 1750, halfway) is the Planck-scale book. The syndrome matrix (A1-35) shows maximal code distance at this book.
 
-(End of file - 33 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 06
 ## BPS States as Boundary CFT — 78 Boundary Operators
 
 The 78 BPS states (A1-28) form the boundary CFT$_1$ dual to the AdS$_2$ bulk. Their properties are determined by the record gap spectrum.
@@ -183,7 +177,6 @@ $$\langle \phi(z,t) \mathcal{O}_d(0) \rangle \sim z^{h} e^{-t^2/z^2}$$
 
 **PrimeBookOne boundary data.** The 3500 books give the boundary correlation functions $\langle \mathcal{O}_i \mathcal{O}_j \rangle_b$ at scale $\mu_b$. The BPS block (78×78) is constant (zero relative entropy).
 
-(End of file - 34 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 07
 ## Bulk Reconstruction from QEC — Logical Operators
 
 The quantum error correction framework (A1-35) provides the bulk reconstruction map. Bulk operators are logical operators of the QEC code.
@@ -212,7 +205,6 @@ This is the bulk time evolution = radial evolution in AdS$_2$.
 
 **PrimeBookOne reconstruction.** The 3500×3500 syndrome matrix (A1-35, Piece 11) gives the reconstruction fidelity for each bulk operator at each book scale.
 
-(End of file - 33 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 08
 ## Modular Flow as Bulk Time Evolution
 
 The modular Hamiltonian (A1-33) generates the modular flow, which is the bulk time evolution in the entanglement wedge.
@@ -243,7 +235,6 @@ This is the integral of the squared difference of modular flows.
 
 **PrimeBookOne modular flow.** The 3500 books give the modular flow at each scale. The flow trajectory from book $b$ to $b'$ is the RG flow from scale $\mu_b$ to $\mu_{b'}$.
 
-(End of file - 32 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 09
 ## Entanglement Wedge Nesting and Gap Inclusion
 
 The nesting of entanglement wedges corresponds to the inclusion of gap sectors. Larger gaps correspond to deeper bulk regions.
@@ -272,7 +263,6 @@ This is the data processing inequality. In gap language, adding larger gaps incr
 
 **Modular Hamiltonian inclusion.** The modular Hamiltonian for book $b$ is $K_b = -\log \rho_b$. For $b < b'$, $K_b \leq K_{b'}$ (as operators on the full Hilbert space, with $\rho_b$ extended by identity).
 
-(End of file - 32 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 10
 ## Wall Crossing as Bulk Singularity — RH = Smoothness
 
 Wall crossing (A1-29) introduces singularities in the bulk geometry. The Riemann Hypothesis is equivalent to the absence of such singularities in the physical chamber.
@@ -301,7 +291,6 @@ In the bulk, this is the divergence of the entanglement entropy across the singu
 
 **Unphysical chambers.** In unphysical chambers (RH violated), walls exist. The bulk geometry has singularities. The RG flow is obstructed. The boundary CFT has non-unitary sectors.
 
-(End of file - 33 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 11
 ## PrimeBookOne Bulk Geometry — 3500 Bulk Snapshots
 
 Each of the 3500 books in PrimeBookOne provides a snapshot of the bulk geometry at a different RG scale. The collection forms a discrete bulk spacetime.
@@ -328,7 +317,6 @@ where $\beta_{\mu\nu}$ is the metric beta function.
 
 **Scaling limit.** As $b \to 3500$, $\mu_b \to \infty$, the discrete bulk approaches the continuum AdS$_2$ with smooth metric $ds^2 = (dz^2 + dt^2)/z^2$. The 3500 books are the discrete approximation to the continuum bulk.
 
-(End of file - 34 lines)# A1-37 Worldline_Emergent_Spacetime.md — Piece 12
 ## Synthesis — Complete Emergent Spacetime & A1-38 through A1-40
 
 This piece synthesizes the emergent spacetime framework and previews the remaining articles A1-38 through A1-40.
@@ -378,4 +366,4 @@ The prime electron is a renormalizable quantum error correcting code of emergent
 - Experimental: prime gap simulator as AdS$_2$ quantum gravity analog
 - Extension to higher SUSY from gap tuples
 
-(End of file - 50 lines)
+

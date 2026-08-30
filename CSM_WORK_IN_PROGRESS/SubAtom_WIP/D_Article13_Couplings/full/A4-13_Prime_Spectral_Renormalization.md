@@ -6,16 +6,8 @@
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 01/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 01/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 21:08:36 UTC
 
 ---
 
@@ -43,16 +35,8 @@ The electron mass mₑ = 0.511 MeV sets the IR boundary condition. All couplings
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 02/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 02/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 21:08:55 UTC
 
 ---
 
@@ -93,16 +77,8 @@ The mass counterterm δm = Σ(mₑ) is finite and prime-determined:
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 03/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 03/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 21:09:05 UTC
 
 ---
 
@@ -142,16 +118,8 @@ The prime sums yield S = 0.02, T = 0.03, U = 0.01 consistent with global fits.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 04/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 04/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 21:09:20 UTC
 
 ---
 
@@ -190,16 +158,8 @@ with γ_m = 2αₛ/π + O(αₛ²) from prime gluon exchange.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 05/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 05/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 21:09:35 UTC
 
 ---
 
@@ -234,16 +194,8 @@ This predicts m_t = 172.76 ± 0.30 GeV in agreement with measurement.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 06/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 06/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 21:09:47 UTC
 
 ---
 
@@ -279,16 +231,8 @@ c₁(μ) = (1/16π²) Σₖ gₖ Φ_G'(pₖ/μ) — all finite and predictive.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 07/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 07/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 21:09:57 UTC
 
 ---
 
@@ -326,16 +270,8 @@ BR(μ → eγ) = (α/π) |Σₖ gₖ V_μk V_ek* F(pₖ/Λ_U)|² = 4.2 × 10⁻�
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 08/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 08/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 21:10:38 UTC
 
 ---
 
@@ -373,16 +309,8 @@ The prime gaps at the GUT scale determine the splitting.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 09/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 09/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 21:10:47 UTC
 
 ---
 
@@ -418,16 +346,8 @@ Predicts m_h = 125.1 ± 0.5 GeV — in perfect agreement with LHC measurement.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 10/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 10/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 21:10:57 UTC
 
 ---
 
@@ -464,16 +384,8 @@ The prime spectral corrections resolve the long-standing discrepancy.
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 11/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 11/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 21:11:06 UTC
 
 ---
 
@@ -509,16 +421,8 @@ The prime sum in the exponent gives τ_tunnel > 10¹⁰⁰ years — stable on c
 
 ---
 
-# Prime_Spectral_Renormalization — Piece 12/12
-## Article A4: A4-13 — Prime Spectral Renormalization
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 21:08:29 UTC
 
 ---
-# Prime Spectral Renormalization — Piece 12/12
-## Article 4: A4-13 — Prime Spectral Renormalization
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 21:11:16 UTC
 
 ---
 

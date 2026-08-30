@@ -1,9 +1,10 @@
-# A1-17: Worldline Hamiltonian — Piece 01
-## Introduction: Hamiltonian from Proper Time Operator
+# A1-17_Worldline_Hamiltonian — Complete Article
+## Article: A1-17_Worldline_Hamiltonian
+**Generated:** 2026-08-30 06:30:15 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-The Hamiltonian for the Prime Electron worldline emerges from the proper time operator τ̂ established in A1-12. The proper time eigenvalues are τₙ = κ(pₙ₊₁ − 2) with κ = ℏ/(mₑc²) ≈ 1.288×10⁻²¹ s. The conjugate momentum to proper time is the energy operator, and the Hamiltonian generates translations in proper time.
-
-From the action principle in A1-16, the canonical Hamiltonian is:
+---
 H = Σₙ Hₙ = −(mₑc³/2) Σₙ dₙ Ωₙ
 where dₙ = pₙ₊₁ − pₙ are prime gaps and Ωₙ = √(1 + λ C(dₙ)) is the conformal factor.
 
@@ -18,11 +19,9 @@ H = Σ_{n=1}^{3.67×10⁹} ℏ/(κ dₙ) = (mₑc²) Σₙ 1/dₙ
 
 This is the central result: the Prime Electron Hamiltonian is a sum over inverse prime gaps, weighted by the electron rest energy mₑc².
 
-The spectrum of H is discrete and unbounded above. The ground state corresponds to the maximum gap (which is infinite in the limit, but practically bounded by the UV cutoff at directory 3.0). The low-lying excitations correspond to small gaps: twin primes (d=2) give the largest energy contributions ℏ/(2κ) = mₑc²/2.# A1-17: Worldline Hamiltonian — Piece 02
-## Spectral Decomposition and Gap Statistics
+The spectrum of H is discrete and unbounded above. The ground state corresponds to the maximum gap (which is infinite in the limit, but practically bounded by the UV cutoff at directory 3.0). The low-lying excitations correspond to small gaps: twin primes (d=2) give the largest energy contributions ℏ/(2κ) = mₑc²/2.
 
-The Hamiltonian H = (m_e c^2) Sum_n 1/d_n has a spectrum determined entirely by the prime gap distribution. The eigenvalues are sums of inverse gaps. For a worldline segment of M steps from n=a to n=a+M-1:
-E(a, M) = m_e c^2 Sum_{k=a}^{a+M-1} 1/d_k
+---
 
 The density of states rho(E) is the distribution of these sums over all starting positions a and lengths M. This is a combinatorial problem on the prime gap sequence.
 
@@ -46,12 +45,10 @@ For a proper time step Delta tau = kappa d_m, U(kappa d_m) = exp(-i d_m/d_n) |n>
 
 The return amplitude (propagator) from n to m is:
 <m|U(tau)|n> = delta_{mn} exp(-i tau/(kappa d_n))
-This shows that each proper time eigenstate evolves with its own frequency omega_n = 1/(kappa d_n).# A1-17: Worldline Hamiltonian — Piece 03
-## Connection to A1-16 Action Principle
+This shows that each proper time eigenstate evolves with its own frequency omega_n = 1/(kappa d_n).
 
-The Hamiltonian derived here must be consistent with the Hamiltonian formulation of A1-16. From A1-16 Piece 04, the classical Hamiltonian for step n is:
-H_n = -(m_e c^3/2) d_n Omega_n
-with Omega_n = sqrt(1 + lambda C(d_n)).
+---
+
 
 In the limit lambda -> 0 (flat metric), Omega_n = 1, and:
 H_n = -(m_e c^3/2) d_n
@@ -84,11 +81,9 @@ This matches the classical proper energy E_proper = m_e c^2/d_n (since dtau = ka
 
 The sum over all steps gives the total proper energy:
 E_total = Sum_n m_e c^2/d_n
-which is the same as the quantum Hamiltonian eigenvalue for the full worldline state.# A1-17: Worldline Hamiltonian — Piece 04
-## Hamiltonian in Momentum Space and Prime Zeta Function
+which is the same as the quantum Hamiltonian eigenvalue for the full worldline state.
 
-The Hamiltonian can be expressed in terms of the prime zeta function. The prime zeta function is:
-P(s) = Sum_{p prime} p^{-s}
+---
 
 Our Hamiltonian involves sums over inverse gaps d_n = p_{n+1} - p_n, not inverse primes. However, the gap distribution is related to the prime distribution. The sum over inverse gaps can be expressed as:
 Sum_n d_n^{-1} = Sum_n (p_{n+1} - p_n)^{-1}
@@ -124,12 +119,10 @@ The Riemann zeta function zeros gamma_n appear as poles in the spectral zeta fun
 zeta_H(s) = (kappa/hbar)^s Sum_n d_n^s = (kappa/hbar)^s * (1/2) Sum_{rho} Gamma(rho) * ... 
 where the sum is over Riemann zeros rho = 1/2 + i gamma_n.
 
-This will be developed further in A1-18 (Path Integral) and A1-19 (Instantons).# A1-17: Worldline Hamiltonian — Piece 05
-## Self-Adjointness and Domain of the Hamiltonian
+This will be developed further in A1-18 (Path Integral) and A1-19 (Instantons).
 
-The Hamiltonian H = hbar/kappa Sum_n d_n^{-1} |n><n| is a diagonal operator in the proper time basis. Its self-adjointness is determined by the behavior of the eigenvalues at the boundaries of the spectrum.
+---
 
-The eigenvalues are E_n = hbar/(kappa d_n) = m_e c^2/d_n. Since d_n >= 2 (minimum gap is 2 for twin primes), the eigenvalues are bounded above by:
 E_max = m_e c^2/2 = 0.2555 MeV
 
 As d_n grows, E_n -> 0. The maximum gap in the UV-complete directory 3.0 is finite (bounded by the prime number theorem: d_n < p_n^0.525 for large n). The maximum gap in 3.67 billion gaps is approximately d_max ~ log^2 p_N ~ 25^2 ~ 625. So:
@@ -153,12 +146,10 @@ The boundedness of H has physical implications. The proper energy of the electro
 
 The UV cutoff at directory 3.0 (3500 books * 2^20 gaps) provides a natural IR cutoff on the proper energy (minimum energy ~ 0.82 keV). The full theory would require the infinite gap sequence, where d_n can be arbitrarily large (though with decreasing frequency), giving E_n -> 0.
 
-The self-adjoint extension problem is trivial here since H is bounded. However, if we consider the inverse Hamiltonian H^{-1} = kappa/hbar Sum_n d_n |n><n|, this is unbounded (d_n grows without bound). The inverse Hamiltonian generates evolution in the conjugate variable to proper time (which is related to the phase of the worldline wavefunction).# A1-17: Worldline Hamiltonian — Piece 06
-## Hamiltonian Flow and Symplectic Structure
+The self-adjoint extension problem is trivial here since H is bounded. However, if we consider the inverse Hamiltonian H^{-1} = kappa/hbar Sum_n d_n |n><n|, this is unbounded (d_n grows without bound). The inverse Hamiltonian generates evolution in the conjugate variable to proper time (which is related to the phase of the worldline wavefunction).
 
-The Hamiltonian generates a flow on the phase space of the worldline. The phase space is the cotangent bundle T*Gamma where Gamma is the worldline manifold. In the discrete setting, the phase space at step n is T*_{x_n} M with coordinates (x^u_n, p_{u n}).
+---
 
-The symplectic form is:
 omega = Sum_n d p_{u n} wedge d x^{u n}
 
 The Hamiltonian vector field X_H is defined by i_{X_H} omega = dH. In components:
@@ -204,12 +195,10 @@ H = Sum_n p_{u n} (x^{u}_{n+1} - x^{u}_n) - S_n
 = Sum_n (m_e c/2) d_n Omega_n eta_{mu nu} v^{u n} v^{v n}
 matching A1-16.
 
-The flow generated by H in the extended phase space (including tau) gives the worldline evolution. The proper time tau is the parameter along the flow.# A1-17: Worldline Hamiltonian — Piece 07
-## Lepton Mass Spectrum from Hamiltonian Eigenvalues
+The flow generated by H in the extended phase space (including tau) gives the worldline evolution. The proper time tau is the parameter along the flow.
 
-The eigenvalues of the Hamiltonian H = m_e c^2 Sum_n 1/d_n are sums of inverse gaps. Different worldline segments (books in the PrimeBookOne structure) have different gap sequences and thus different energy spectra.
+---
 
-From A1-10, the 3500 books in directory 3.0 correspond to 3500 worldline segments. Each book has 2^20 = 1,048,576 gaps. The energy of book b is:
 E_b = m_e c^2 Sum_{n in book b} 1/d_n
 
 The distribution of E_b across the 3500 books gives the mass spectrum of leptonic excitations. The ground state (electron) corresponds to the book with the highest density of small gaps (twin primes). The excited states (muon, tau) correspond to books with larger average gaps.
@@ -237,12 +226,10 @@ The record gaps give large contributions to this sum. A record gap d_max contrib
 
 The correct formula from the Hamiltonian perspective is that the mass eigenvalues are the eigenvalues of the Hamiltonian restricted to a worldline segment with appropriate boundary conditions. The boundary conditions select the segment length and the gap statistics.
 
-This will be fully developed in Article 2 (Mass Spectrum). Here we establish that the Hamiltonian eigenvalues are the fundamental quantities from which masses emerge.# A1-17: Worldline Hamiltonian — Piece 08
-## Partition Function and Thermodynamics
+This will be fully developed in Article 2 (Mass Spectrum). Here we establish that the Hamiltonian eigenvalues are the fundamental quantities from which masses emerge.
 
-The partition function for the Prime Electron worldline at proper temperature beta = 1/(k_B T) is:
-Z(beta) = Tr(exp(-beta H)) = Sum_n exp(-beta E_n)
-= Sum_n exp(-beta m_e c^2/d_n)
+---
+
 
 For the full UV sequence with N = 3.67e9 gaps:
 Z(beta) = Sum_{n=1}^{N} exp(-beta m_e c^2/d_n)
@@ -288,12 +275,10 @@ T_c ~ 0.255 MeV ~ 3e9 K
 
 This is the temperature scale where twin prime gaps become dominant. It coincides with the electron mass scale.
 
-The thermodynamics of the Prime Electron worldline thus has a phase transition at the electron mass scale, driven by the twin prime distribution.# A1-17: Worldline Hamiltonian — Piece 09
-## Hamiltonian in the 8-Bit Hilbert Space (A3 Connection)
+The thermodynamics of the Prime Electron worldline thus has a phase transition at the electron mass scale, driven by the twin prime distribution.
 
-From Article 3 (planned), the Prime Electron has an 8-bit Hilbert space with 256 states (2^8). This arises from the 8-bit prime difference array in PrimeBookOne. The Hamiltonian must be representable as a 256x256 matrix in this basis.
+---
 
-The 8-bit basis states |s> correspond to the 256 possible values of the 8-bit prime difference. The prime gaps d_n = p_{n+1} - p_n are differences of consecutive primes. In the 8-bit representation, we consider d_n mod 256.
 
 The Hamiltonian matrix elements in the 8-bit basis are:
 H_{s s'} = <s|H|s'> = Sum_{n: d_n mod 256 = s, d_{n+1} mod 256 = s'} m_e c^2/d_n
@@ -320,12 +305,10 @@ The 8-bit structure imposes a UV cutoff on the gap size: d_max = 254 (even numbe
 
 The Hamiltonian in the 8-bit basis can be diagonalized numerically. The spectrum shows bands corresponding to the gap values. The band widths are determined by the gap correlations.
 
-This connects to the quantum computing perspective in A3-10: the Prime Electron worldline is a quantum circuit where each step applies a phase exp(-i m_e c^2 t/(hbar d_n)) to the 8-bit register.# A1-17: Worldline Hamiltonian — Piece 10
-## Numerical Evaluation from PrimeBookOne Data
+This connects to the quantum computing perspective in A3-10: the Prime Electron worldline is a quantum circuit where each step applies a phase exp(-i m_e c^2 t/(hbar d_n)) to the 8-bit register.
 
-The Hamiltonian eigenvalues E_n = m_e c^2/d_n can be computed directly from the PrimeBookOne gap data. For each directory level:
+---
 
-Algorithm:
 1. Load tile T_{k} from directory D
 2. Extract gaps d_i
 3. Compute eigenvalues E_i = m_e c^2/d_i
@@ -382,12 +365,10 @@ function analyze_spectrum(eigenvalues):
     return hist, moments, Z
 ```
 
-The spectral analysis provides the empirical foundation for the theoretical framework.# A1-17: Worldline Hamiltonian — Piece 11
-## Supersymmetric Extension and Supercharges
+The spectral analysis provides the empirical foundation for the theoretical framework.
 
-From A1-25 (planned), the Prime Electron worldline has N=1 supersymmetry. The supersymmetric Hamiltonian is:
-H_SUSY = {Q, Q^dagger} = H_B + H_F
-where Q is the supercharge and H_B, H_F are the bosonic and fermionic Hamiltonians.
+---
+
 
 The supercharge is constructed from the proper time operator and the gap sequence:
 Q = Sum_n psi_n d_n
@@ -416,12 +397,10 @@ where z(d) is the topological charge of a gap.
 
 The BPS bound H >= |Z| implies that states with H = |Z| are protected. These correspond to record gap states where the gap distribution is extremal.
 
-The supersymmetric extension will be fully developed in Article 1 files A1-25 through A1-29. Here we note that the Hamiltonian H = Sum m_e c^2/d_n is the bosonic part of a supersymmetric Hamiltonian, and the supercharges are built from the gap sequence operators.# A1-17: Worldline Hamiltonian — Piece 12
-## Synthesis: Complete Hamiltonian and Connections
+The supersymmetric extension will be fully developed in Article 1 files A1-25 through A1-29. Here we note that the Hamiltonian H = Sum m_e c^2/d_n is the bosonic part of a supersymmetric Hamiltonian, and the supercharges are built from the gap sequence operators.
 
-The complete Hamiltonian for the Prime Electron worldline is the synthesis of all previous pieces:
+---
 
-**Fundamental Hamiltonian:**
 H = hbar/kappa Sum_{n=1}^{N} d_n^{-1} |n><n| = m_e c^2 Sum_n 1/d_n
 where kappa = hbar/(m_e c^2), d_n = p_{n+1} - p_n are prime gaps, N = 3.67e9 (directory 3.0).
 
@@ -489,3 +468,6 @@ PrimeBookOne data at directory levels 0.0, 1.0, 2.0, 3.0 provides empirical test
 - Extract Riemann zero resonances from spectral fluctuations
 
 The Hamiltonian H = m_e c^2 Sum 1/d_n is the cornerstone of the Prime Electron dynamics. It demonstrates that the one-electron universe (Wheeler 1940, Gielerak 2020) finds its quantum mechanical generator in the inverse prime gap sequence of PrimeBookOne.
+
+---
+

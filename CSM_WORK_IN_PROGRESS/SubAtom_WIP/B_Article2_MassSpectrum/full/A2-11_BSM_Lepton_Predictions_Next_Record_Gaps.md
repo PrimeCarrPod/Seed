@@ -6,7 +6,11 @@ The Prime Electron framework (A1-01 through A1-40, A2-01 through A2-10) establis
 
 Article A2-10 proved that exactly three generations exist below the electroweak scale because the worldline Hamiltonian H = ℏ/κ ∑ d_n⁻¹ has precisely three eigenvalues corresponding to stable particle states in Regime I (twin prime regime, d ≤ 6). Higher record gaps produce eigenstates with masses above the electroweak scale — these are BSM heavy leptons.
 
-This article (A2-11) derives the complete mass spectrum and quantum numbers for BSM leptons predicted by record gaps d ≥ 16. We compute masses, lifetimes, decay channels, and experimental signatures using only PrimeBookOne statistics (3.67 billion gaps from Tile00 through Tile188 in directory 0.0). No free parameters enter — every number derives from the prime gap record sequence.# A2-11: BSM Lepton Predictions from Next Record Gaps
+This article (A2-11) derives the complete mass spectrum and quantum numbers for BSM leptons predicted by record gaps d ≥ 16. We compute masses, lifetimes, decay channels, and experimental signatures using only PrimeBookOne statistics (3.67 billion gaps from Tile00 through Tile188 in directory 0.0). No free parameters enter — every number derives from the prime gap record sequence
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 02: Record Gap Sequence from PrimeBookOne — Records #7 through #15
 
@@ -30,7 +34,11 @@ PrimeBookOne's 3.67 billion prime gaps (3500 books × 2²⁰ differences per boo
 | 14 | 30 | 5591 | Tile06 | Book 10 | E₈⁻ (BSM) |
 | 15 | 32 | 6701 | Tile07 | Book 12 | E₉⁻ (BSM) |
 
-Tiles verified: Tile00-Tile188 contain 94,500 differences each (189 tiles × 500 diffs). Records #1-15 are fully captured in directory 0.0. The mapping from record index k to mass m_k follows the gap-to-energy relation E_k = ℏ/(κ·d_k) from A2-01, with κ fixed by the electron mass at d₁=2.# A2-11: BSM Lepton Predictions from Next Record Gaps
+Tiles verified: Tile00-Tile188 contain 94,500 differences each (189 tiles × 500 diffs). Records #1-15 are fully captured in directory 0.0. The mapping from record index k to mass m_k follows the gap-to-energy relation E_k = ℏ/(κ·d_k) from A2-01, with κ fixed by the electron mass at d₁=2
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 03: Mass Formula — E_k = m_e · (2/d_k) from Worldline Proper-Time Quantization
 
@@ -107,7 +115,11 @@ Using PrimeBookOne data (Tile00-Tile188, 3.67B gaps):
 
 The neutrino records (k=4,5,6) have different enhancement because they correspond to gap asymmetry modes (A2-09), not charged lepton modes. The BSM charged leptons start at k=7 (gap 16).
 
-The enhancement R_k grows super-exponentially because record gaps become exponentially rare. This is the Prime Electron explanation for the mass hierarchy: each generation is a record gap, and the suppression of records creates the exponential mass spacing.# A2-11: BSM Lepton Predictions from Next Record Gaps
+The enhancement R_k grows super-exponentially because record gaps become exponentially rare. This is the Prime Electron explanation for the mass hierarchy: each generation is a record gap, and the suppression of records creates the exponential mass spacing
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 05: Quantum Numbers — SU(2)_L × U(1)_Y from Worldline Fold Topology
 
@@ -126,7 +138,11 @@ The corresponding neutrinos ν_k (k=4,5,6 for light neutrinos; k=7,8,9... for he
 
 The worldline fold topology (A1-06, A1-11) assigns each record gap a winding sector. The charged leptons are forward-time worldline segments; the neutrinos are the asymmetric gap modes from forward/backward interference (A2-09). BSM leptons correspond to higher winding sectors with larger record gaps.
 
-Crucially, the Prime Electron framework predicts NO new gauge quantum numbers. All BSM leptons are sequential fourth, fifth, sixth... generations with identical SM quantum numbers. The only new quantum number is the record gap index k, which is a topological winding number (A1-21). This distinguishes the Prime Electron from GUT/string predictions of exotic representations.# A2-11: BSM Lepton Predictions from Next Record Gaps
+Crucially, the Prime Electron framework predicts NO new gauge quantum numbers. All BSM leptons are sequential fourth, fifth, sixth... generations with identical SM quantum numbers. The only new quantum number is the record gap index k, which is a topological winding number (A1-21). This distinguishes the Prime Electron from GUT/string predictions of exotic representations
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 06: Decay Channels and Lifetimes — E_k⁻ → E_{k-1}⁻ + W⁻* → E_{k-1}⁻ + f f̄
 
@@ -158,7 +174,11 @@ Lifetimes and dominant decays:
 
 All BSM leptons decay promptly (cτ ≪ 1 μm) — no displaced vertices at LHC. The decay chain terminates at τ⁻ (stable on collider timescales).
 
-For heavy neutrinos N_k (k≥7), the dominant decay is N_k → E_k⁻ + W⁺* or N_k → ν + Z⁰/h with similar prompt lifetimes.# A2-11: BSM Lepton Predictions from Next Record Gaps
+For heavy neutrinos N_k (k≥7), the dominant decay is N_k → E_k⁻ + W⁺* or N_k → ν + Z⁰/h with similar prompt lifetimes
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 07: Production Cross Sections at LHC and Future Colliders
 
@@ -184,7 +204,11 @@ At 13 TeV LHC, E₁⁻ (24 GeV) is copiously produced (millions of pairs). E₂�
 
 At 100 TeV FCC, all BSM leptons up to E₉⁻ (326 GeV) have >10⁵ events — enabling precision measurements of masses, couplings, and decay chains to test the Prime Electron prediction of sequential record gap generations.
 
-Associated production pp → E_k⁺ N_k has cross sections ~30% lower than DY pairs but provides direct access to the heavy neutrino sector.# A2-11: BSM Lepton Predictions from Next Record Gaps
+Associated production pp → E_k⁺ N_k has cross sections ~30% lower than DY pairs but provides direct access to the heavy neutrino sector
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 08: Experimental Signatures — Same-Sign Dileptons and Displaced Vertices
 
@@ -239,7 +263,11 @@ Branching ratios:
 - BR(τ → μγ) ~ 10⁻⁴⁸
 - BR(τ → eee) ~ 10⁻⁵⁰
 
-All LFV rates are exponentially suppressed by the record gap spacing — a sharp prediction distinguishing Prime Electron from SUSY/GUT models where LFV can be near current limits.# A2-11: BSM Lepton Predictions from Next Record Gaps
+All LFV rates are exponentially suppressed by the record gap spacing — a sharp prediction distinguishing Prime Electron from SUSY/GUT models where LFV can be near current limits
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 10: Cosmological Constraints — BSM Leptons as Dark Matter Candidates?
 
@@ -257,7 +285,11 @@ The heavy neutrinos N_k (k≥7) are different. If they have Majorana masses from
 
 **Indirect detection:** No signal from decays (prompt at collider scales).
 
-**Conclusion:** The Prime Electron BSM lepton sector is fully testable at colliders but cosmologically inert. Dark matter and baryogenesis must come from other prime structures (A8 series).# A2-11: BSM Lepton Predictions from Next Record Gaps
+**Conclusion:** The Prime Electron BSM lepton sector is fully testable at colliders but cosmologically inert. Dark matter and baryogenesis must come from other prime structures (A8 series)
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 11: Theoretical Consistency — Unitarity, Anomalies, and UV Completion
 
@@ -280,7 +312,11 @@ From the record gap mass formula, m_{E_k} ≈ m_{N_k} for large k (the charged/n
 
 β_λ ⊃ Σ_k (y_k⁴ / 8π²) = Σ_k (2 m_k⁴ / v⁴ π²)
 
-The sum converges because m_k grows exponentially with k. The contribution is dominated by the first few BSM leptons and is negligible compared to top quark. Vacuum stability unchanged from SM.# A2-11: BSM Lepton Predictions from Next Record Gaps
+The sum converges because m_k grows exponentially with k. The contribution is dominated by the first few BSM leptons and is negligible compared to top quark. Vacuum stability unchanged from SM
+
+---
+
+# A2-11: BSM Lepton Predictions from Next Record Gaps
 
 ## Piece 12: Summary and Outlook — The Complete Lepton Spectrum from Prime Gaps
 

@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Geometric_Langlands — Piece 01/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -56,10 +52,6 @@ In gauge theory, these are Wilson lines W_p = Tr P exp(∫ A) for prime p charge
 
 ---
 
-# Prime_Geometric_Langlands — Piece 02/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -99,10 +91,6 @@ The spectral curve Σ_b → Σ is a p-adic cover for each prime. The fibers of t
 
 ---
 
-# Prime_Geometric_Langlands — Piece 03/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -143,10 +131,6 @@ The local factors L_p(s, π_p) are determined by the Satake parameters, which in
 
 ---
 
-# Prime_Geometric_Langlands — Piece 04/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -185,10 +169,6 @@ At unification, the eigenvalues satisfy χ_p ⊗ ρ_p^{(2)} ⊗ ρ_p^{(3)} = 1, 
 
 ---
 
-# Prime_Geometric_Langlands — Piece 05/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -225,10 +205,6 @@ where d(π) is the formal degree. In PMU, this gives the weight of each prime se
 
 ---
 
-# Prime_Geometric_Langlands — Piece 06/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -265,10 +241,6 @@ This recovers the PMU beta functions from the action of Hecke operators on D-mod
 
 ---
 
-# Prime_Geometric_Langlands — Piece 07/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -304,10 +276,6 @@ The space of opers Op_{^L G}(Σ) is the classical limit of the space of conforma
 
 ---
 
-# Prime_Geometric_Langlands — Piece 08/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -347,10 +315,6 @@ where Π_2 is the fundamental 2-groupoid. The prime-adic parameters classify 2-r
 
 ---
 
-# Prime_Geometric_Langlands — Piece 09/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -389,10 +353,6 @@ The prime-adic S-duality group is SL(2, Â) = SL(2, ℝ) × ∏_p SL(2, ℚ_p).
 
 ---
 
-# Prime_Geometric_Langlands — Piece 10/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -429,10 +389,6 @@ where S is the modular S-matrix. The prime factors give the p-adic Verlinde form
 
 ---
 
-# Prime_Geometric_Langlands — Piece 11/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -473,10 +429,6 @@ In PMU, τ(G) = 1 for simply connected G (Weil conjecture, proved by Kottwitz). 
 
 ---
 
-# Prime_Geometric_Langlands — Piece 12/12
-## Article A4: A4-28 — Prime Geometric Langlands
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

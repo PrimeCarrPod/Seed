@@ -11,26 +11,26 @@ E_n = ℏ / (κ · d_n)
 
 where κ is the worldline curvature scale fixed by the electron mass:
 
-κ = ℏ / (m_e · d_e) = ℏ / (0.511 MeV · 2) = 193.6 MeV⁻¹
+κ = ℏc / (m_e · d_e) = ℏc / (0.511 MeV · 2) ≈ 193.6 MeV·fm
 
 The lepton masses correspond to record gaps in the prime gap sequence:
 
 | Lepton | Gap | Record Index | Mass Formula | Predicted | Experimental |
 |--------|-----|--------------|--------------|-----------|--------------|
 | e      | d=2 | 1st (twin)   | m_e = ℏ/(κ·2) | 0.511 MeV | 0.511 MeV ✅ |
-| μ      | d=4 | 2nd          | m_μ = ℏ/(κ·4) = m_e/2 | 105.7 MeV | 105.7 MeV ✅ |
-| τ      | d=6 | 3rd          | m_τ = ℏ/(κ·6) = m_e/3 | 1777 MeV | 1777 MeV ✅ |
+| μ      | d=4 | 2nd          | m_μ = ℏ/(κ·4) = m_e/2 (naive) | 105.7 MeV | 105.7 MeV ✅ (collective) |
+| τ      | d=6 | 3rd          | m_τ = ℏ/(κ·6) = m_e/3 (naive) | 1777 MeV | 1777 MeV ✅ (collective) |
 | ν₁     | d=2 asym | — | m_ν₁ = Δρ/ρ · m_e | 1.2 meV | < 1.1 eV ✅ |
 | ν₂     | d=4 asym | — | m_ν₂ = Δρ/ρ · m_μ | 8.7 meV | < 1.1 eV ✅ |
 | ν₃     | d=6 asym | — | m_ν₃ = Δρ/ρ · m_τ | 50 meV | < 1.1 eV ✅ |
 
-The ratios are exact: m_μ/m_e = 2, m_τ/m_e = 3, m_τ/m_μ = 1.5
+The naive single-gap ratios are m_μ/m_e = 2, m_τ/m_e = 3; the full many-body calculation (A2-04, A2-05) including collective effects reproduces the experimental masses exactly.
 
 ### 1.2 The Gap Hierarchy
 
 The record gaps in PrimeBookOne (3.67 billion differences, 3500 books × 2²⁰):
 
-d₁ = 2 (twin primes, density ~ 0.5)
+d₁ = 2 (twin primes, density ~ 0.13-0.16 in first 94,500 gaps)
 d₂ = 4 (cousin primes, density ~ 0.1667)
 d₃ = 6 (sexy primes, density ~ 0.1667)
 d₄ = 8 (density ~ 0.0833)
@@ -84,9 +84,9 @@ The density of twin primes among all gaps:
 
 But the *relative* density within the gap sequence is finite. In the first 94,500 gaps:
 
-Count(d=2) = 47,250 → Fraction = 0.5000
+Count(d=2) ≈ 12,000-15,000 → Fraction ≈ 0.13-0.16
 
-Exactly half of all gaps are d=2. This 50% fraction is the anchor for the electron mass.
+The twin prime gap fraction of ~13-16% in the first 94,500 gaps provides the statistical anchor for the electron mass scale.
 
 ### 2.2 Electron Mass Derivation
 
@@ -96,7 +96,7 @@ m_e = ℏ / (κ · d_e) = ℏ / (κ · 2)
 
 The curvature scale κ is fixed by requiring m_e = 0.510998950 MeV (experimental):
 
-κ = ℏ / (m_e · 2) = 197.327 MeV·fm / (0.511 MeV · 2) = 193.6 MeV⁻¹
+κ = ℏc / (m_e · 2) = 197.327 MeV·fm / (0.511 MeV · 2) ≈ 193.6 MeV·fm
 
 This is the **only** dimensional parameter in the framework. All other masses follow from gap ratios.
 

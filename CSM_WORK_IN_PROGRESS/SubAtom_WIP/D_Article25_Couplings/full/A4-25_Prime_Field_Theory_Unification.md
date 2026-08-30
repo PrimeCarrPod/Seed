@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 01/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -49,10 +45,6 @@ where the prime gap distribution at scale μ₀ sets the boundary condition. Thi
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 02/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -102,10 +94,6 @@ The discrepancy from exact 5:3:3 ratio is resolved by threshold corrections from
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 03/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -149,10 +137,6 @@ This yields the precise threshold corrections that align the three couplings at 
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 04/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -208,10 +192,6 @@ The seesaw scale emerges as M_R ~ M_U / p_twin where p_twin are twin primes.
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 05/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -250,10 +230,6 @@ Summing over primes p ≤ 13 gives m_h = 125.1 ± 0.3 GeV, consistent with the m
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 06/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -295,10 +271,6 @@ PFT predicts d_n < 10⁻³¹ e·cm, well below current experimental bound 1.8×1
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 07/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -339,10 +311,6 @@ where F₅(q²) = exp(-q²/Λ₅²) with Λ₅ = 5 Λ_QCD. This predicts σ_SI �
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 08/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -384,10 +352,6 @@ This is below current bounds but detectable in future CMB surveys (CMB-S4, LiteB
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 09/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -428,10 +392,6 @@ with peak frequency f_* ≈ 10 mHz, within LISA sensitivity band.
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 10/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -472,10 +432,6 @@ These match global fit values within 1σ.
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 11/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -517,10 +473,6 @@ matching the observed dark energy density ρ_Λ^{obs} ≈ (2.3 meV)⁴.
 
 ---
 
-# Prime_Field_Theory_Unification — Piece 12/12
-## Article A4: A4-25 — Prime Field Theory Unification
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

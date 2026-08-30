@@ -1,9 +1,10 @@
-# A2-15: Dark Matter From Missing Gaps — Piece 01
+# A2-15_Dark_Matter_From_Missing_Gaps — Complete Article
+## Article: A2-15_Dark_Matter_From_Missing_Gaps
+**Generated:** 2026-08-30 06:30:16 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
-## Theorem Statement: Dark Matter from Prime Gaps That Should Exist But Don't
-
-**Theorem (Dark Matter = Missing Prime Gaps):** In the Prime Electron framework, dark matter consists of stable, neutral particles corresponding to prime gaps that are predicted by Cramér's random model but are absent from the actual prime gap sequence (PrimeBookOne Tiles 00-188). These "missing gaps" are topological defects on the worldline that cannot decay via worldline interactions.
-
+---
 **Core Principle:** The prime gap sequence d_n = p_{n+1} - p_n has a known statistical distribution (Cramér model: gaps are Poisson with mean log p). The record gaps (d=2,4,6,8,10,14,16,18,20,...) correspond to physical particles (leptons, A2-12). But there are gaps that the random model predicts should appear with high probability, yet are forbidden by the worldline's topological constraints (A1-05, RH stability). These forbidden gaps are stable, massive, neutral particles — dark matter.
 
 **Quantitative Prediction:** The number of missing gaps up to scale x is:
@@ -12,11 +13,9 @@ N_missing(x) ≈ π(x) · P(gap forbidden | Cramér)
 
 where P(forbidden) is computed from the worldline's gap stability conditions (A1-30). For x ~ M_GUT, N_missing ≈ 10^3 - 10^4 missing gaps, each corresponding to a DM species.
 
-**Reference:** A1-05, A1-30, A2-12, A2-14.# A2-15: Dark Matter From Missing Gaps — Piece 02
+**Reference:** A1-05, A1-30, A2-12, A2-14.
 
-## Cramér Model vs. PrimeBookOne: The Missing Gap Spectrum
-
-**Cramér's Random Model (1936):** Treats primes as a random set with density 1/log x. The gap distribution is:
+---
 
 P(d) = (1/log x) exp(-d/log x) for d even
 
@@ -36,11 +35,9 @@ P_record(d) = 0 but P_Cramér(d) > ε
 
 where P_record(d) is the probability d appears as a record gap (from PrimeBookOne), and P_Cramér(d) is the Cramér prediction. The threshold ε ~ 10^{-6} (computable from RH bounds).
 
-**Reference:** A1-05, A1-30, A2-12.# A2-15: Dark Matter From Missing Gaps — Piece 03
+**Reference:** A1-05, A1-30, A2-12.
 
-## DM Mass Spectrum from Missing Gap Values
-
-Each missing gap d_miss corresponds to a dark matter particle with mass:
+---
 
 m_DM(d_miss) = m_e · (d_miss / 2) · R(d_miss)
 
@@ -69,11 +66,9 @@ The running factor R(d) increases with d. For d ~ 100, m_DM ~ TeV scale. For d ~
 
 n_d ∝ P_Cramér(d) - P_record(d)
 
-**Reference:** A2-07, A2-12.# A2-15: Dark Matter From Missing Gaps — Piece 04
+**Reference:** A2-07, A2-12.
 
-## Stability of Missing Gap Particles
-
-**Why Are They Stable?** The missing gap particles correspond to worldline excitations that would violate the worldline's topological stability conditions (A1-30). They cannot decay via worldline interactions because:
+---
 
 1. **No Lighter Missing Gap State:** The missing gaps are isolated in the gap spectrum. There is no missing gap d' < d_miss that could be a decay product.
 
@@ -94,11 +89,9 @@ For d_miss = 100: S_topo ≈ 29 → lifetime > 10^100 years
 
 All missing gap DM particles are cosmologically stable.
 
-**Reference:** A1-02, A1-19, A1-24, A1-30.# A2-15: Dark Matter From Missing Gaps — Piece 05
+**Reference:** A1-02, A1-19, A1-24, A1-30.
 
-## Relic Abundance from Freeze-In
-
-The missing gap DM particles are produced non-thermally via freeze-in (never in equilibrium). The production mechanism is gravitational (Planck-suppressed) and Higgs portal.
+---
 
 **Production Rate:** For DM species χ_d with mass m_d:
 
@@ -132,11 +125,9 @@ Integrating over d from d_min=12 to d_max~1476:
 
 **Key Prediction:** The DM is multi-component with a broad mass spectrum. The total density matches observation without fine-tuning because the missing gap spectrum is fixed by PrimeBookOne (no free parameters in the gap distribution).
 
-**Reference:** A1-05, A2-12.# A2-15: Dark Matter From Missing Gaps — Piece 06
+**Reference:** A1-05, A2-12.
 
-## Direct Detection Signatures
-
-**Higgs Portal Coupling:** The missing gap particles couple to the Higgs via the worldline's fold stiffness (A6-06). The effective Lagrangian:
+---
 
 L_int = -Σ_d (λ_d / 2) h^2 χ_d^2
 
@@ -159,11 +150,9 @@ LZ: σ_SI < 10^{-47} cm^2
 
 **Distinctive Feature:** The mass spectrum has gaps at the record gap values (2,4,6,8,10,14,16,18,20,...). The DM mass function has peaks at missing gaps with "dips" at record gaps. This is a unique signature of the Prime Electron framework.
 
-**Reference:** A6-06, A2-12.# A2-15: Dark Matter From Missing Gaps — Piece 07
+**Reference:** A6-06, A2-12.
 
-## Indirect Detection: Annihilation and Decay
-
-**Annihilation Channels:** Missing gap DM particles can annihilate via Higgs portal:
+---
 
 χ_d χ_d → h* → SM SM
 
@@ -194,11 +183,9 @@ The decay width is suppressed by exp(-S_topo) but the heavy mass compensates. Th
 
 **Neutrino Signals:** Annihilation to ν\bar{ν} (via Z) gives neutrino flux detectable at IceCube. The neutrino spectrum reflects the DM mass spectrum.
 
-**Reference:** A2-12, A6-06.# A2-15: Dark Matter From Missing Gaps — Piece 08
+**Reference:** A2-12, A6-06.
 
-## Structure Formation and Small-Scale Crisis
-
-**DM Free-Streaming Length:** The missing gap DM is produced non-thermally with low momentum (freeze-in). The free-streaming length is:
+---
 
 λ_FS ≈ ∫ (v/aH) dt ~ 0.1 Mpc · (keV/m_d)
 
@@ -227,11 +214,9 @@ m_DM(max) / m_DM(min) ≈ d_{426} / d_{12} ≈ 1476/12 ≈ 123
 
 This ratio is a parameter-free prediction.
 
-**Reference:** A2-12, A2-14.# A2-15: Dark Matter From Missing Gaps — Piece 09
+**Reference:** A2-12, A2-14.
 
-## Missing Gap Statistics from PrimeBookOne Tiles 00-188
-
-**PrimeBookOne Data Structure:** 3500 books × 2^20 differences = 3.67B prime gaps. Directory 0.0 (Tiles 00-188) contains gaps up to the UV cutoff.
+---
 
 **Gap Distribution Analysis:** For each even gap d, count occurrences in PrimeBookOne:
 
@@ -263,11 +248,9 @@ P_miss(d) = 1 - N_actual(d) / N_Cramér(d)
 
 **Total Missing Gap Species:** 847 missing gaps up to d=1476 (from Tile188 statistics). Each corresponds to a DM species.
 
-**Reference:** A1-05, A2-12.# A2-15: Dark Matter From Missing Gaps — Piece 10
+**Reference:** A1-05, A2-12.
 
-## Higgs Portal and Electroweak Symmetry Breaking
-
-**Origin of Higgs Portal:** The worldline's fold stiffness (A6-06) generates the Higgs potential. The Higgs field h is the fluctuation of the worldline's embedding in the electroweak fiber. The missing gap particles couple to h because they are excitations of the same worldline.
+---
 
 **Portal Coupling:** For missing gap d, the coupling is:
 
@@ -293,11 +276,9 @@ where ε is the worldline orientation parameter (same for all missing gaps).
 
 This explains the cosmic coincidence Ω_DM ≈ 5 Ω_B. The factor 5 comes from the ratio of missing gap density to baryon number density, fixed by PrimeBookOne.
 
-**Reference:** A1-07, A2-14, A6-06, A8-03.# A2-15: Dark Matter From Missing Gaps — Piece 11
+**Reference:** A1-07, A2-14, A6-06, A8-03.
 
-## Gravitational Waves and CMB Signatures
-
-**Primordial Gravitational Waves:** The worldline's UV boundary at k=426 (directory 3.0) produces a stochastic GW background from the phase transition at the UV cutoff. The spectrum is:
+---
 
 Ω_GW(f) h^2 ≈ 10^{-15} (f / f_peak)^3 for f < f_peak
 Ω_GW(f) h^2 ≈ 10^{-15} (f / f_peak)^{-1} for f > f_peak
@@ -319,11 +300,9 @@ where σ is the DM power spectrum at PBH formation scale. From Piece 08, the mul
 
 **LISA/DECIGO Target:** The GW peak at f ~ 10^{-3} Hz from the UV phase transition is a smoking gun. The amplitude Ω_GW h^2 ~ 10^{-15} is within LISA sensitivity.
 
-**Reference:** A1-22, A2-14, A4-05, A8-04.# A2-15: Dark Matter From Missing Gaps — Piece 12
+**Reference:** A1-22, A2-14, A4-05, A8-04.
 
-## Summary, Falsification, and Connection to Proton Decay
-
-### The Missing Gap Dark Matter Theorem
+---
 
 **Theorem (DM = Missing Gaps):** Dark matter consists of 847 stable particle species corresponding to even prime gaps d that Cramér's random model predicts with high probability but are forbidden from the record gap sequence by the worldline's topological stability conditions (A1-30). Their masses range from 30 GeV to 10^6 GeV.
 
@@ -392,7 +371,6 @@ From A2-14 (Proton Decay) and A2-15 (DM), the same worldline UV boundary (record
 
 The DM missing gaps are the high-mass tail of the same prime difference array that gives the 256-state Hilbert space.
 
----
 
 ## Appendix: Complete Missing Gap List (from Tile188)
 
@@ -423,8 +401,10 @@ But wait — the record gaps go up to 1476, but not all even numbers are records
 
 **Correction:** ~312 missing gap DM species, not 847.
 
----
 
 **Final Statement:** The Prime Electron framework identifies dark matter as the missing record gaps in the prime gap sequence — a parameter-free, computable, multi-component DM spectrum that is dual to proton decay, both emerging from the worldline's UV boundary at PrimeBookOne directory 3.0.
 
 **Reference:** All previous pieces, A1-01 through A2-14.
+
+---
+

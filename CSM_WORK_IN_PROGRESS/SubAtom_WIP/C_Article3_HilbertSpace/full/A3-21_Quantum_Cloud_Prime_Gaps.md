@@ -6,16 +6,8 @@
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 01/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 01/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -71,16 +63,8 @@ This article (A3-21) develops the quantum cloud architecture across twelve piece
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 02/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 02/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -123,22 +107,13 @@ The quantum cloud provisions logical qubits on-demand:
 The QVM presents a standard interface:
 
 
-
 The QVM handles gap index mapping, QEC cycles, and entanglement distribution transparently.
 
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 03/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 03/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -204,16 +179,8 @@ Effective clock rate: ~10^{34} Hz (Planck-scale, virtualized to user as ~1 MHz)
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 04/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 04/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -286,16 +253,8 @@ Tenants isolated by gap index disjointness:
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 05/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 05/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -370,16 +329,8 @@ Uses gap correlations for efficient syndrome computation.
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 06/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 06/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -445,16 +396,8 @@ Streaming at 1 sample per 10^6 proper-time ticks per node.
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 07/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 07/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -522,16 +465,8 @@ Therefore, tenant A cannot distinguish tenant B's operations from vacuum fluctua
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 08/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 08/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -614,16 +549,8 @@ For each node pair (m,n) with active entanglement:
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 09/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 09/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -705,16 +632,8 @@ The quantum cloud natively supports hybrid quantum-classical algorithms where:
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 10/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 10/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -810,16 +729,8 @@ Our cloud: Reversible (unitary) → near-zero dissipation
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 11/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 11/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 
@@ -931,16 +842,8 @@ Our cloud: Reversible (unitary) → near-zero dissipation
 
 ---
 
-# Quantum_Cloud_Prime_Gaps — Piece 12/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-23 20:45:14 UTC
 
 ---
-# Quantum Cloud Prime Gaps — Piece 12/12
-## Article 3: A3-21 — Quantum Cloud Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-23 20:45:00 UTC
 
 ---
 

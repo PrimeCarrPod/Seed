@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Networking_Prime_Gaps — Piece 01/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -67,13 +63,6 @@ GapNet completes the Federation Tetrad with A3-23 (Core), A3-24 (Security), A3-2
 
 ---
 
-*End of Piece 01*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 02/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -189,13 +178,6 @@ policy tenant_isolation {
 
 ---
 
-*End of Piece 02*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 03/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -347,13 +329,6 @@ GFSP messages are routed via GARP (Piece 02) using the `flow_GNID` as destinatio
 
 ---
 
-*End of Piece 03*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 04/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -541,13 +516,6 @@ where `gap_latency_budget(d_k)` is derived from the gap-economics SLA (A3-25) an
 
 ---
 
-*End of Piece 04*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 05/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -722,13 +690,6 @@ The combiner includes `gap_shared_secret(d_k)` from the GNID's prime properties,
 
 ---
 
-*End of Piece 05*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 06/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -943,13 +904,6 @@ Verification uses **Gap-Model-Checking** over the GING (Piece 01) with gap-tempo
 
 ---
 
-*End of Piece 06*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 07/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -1171,13 +1125,6 @@ Migration uses **Gap-Sequence Synchronization** — packets with gap_sequence < 
 
 ---
 
-*End of Piece 07*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 08/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -1396,13 +1343,6 @@ Gap-Quantum-MIB = {
 
 ---
 
-*End of Piece 08*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 09/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -1567,13 +1507,6 @@ Gap-SFC = {
 
 ---
 
-*End of Piece 09*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 10/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -1750,13 +1683,6 @@ Thresholds are gap-adaptive: `threshold(d_k) = base_threshold · gap_density_fac
 
 ---
 
-*End of Piece 10*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 11/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -2051,13 +1977,6 @@ GapNet aligns with standards bodies via gap-native mappings.
 
 ---
 
-*End of Piece 11*
----
-
-# Quantum_Federation_Networking_Prime_Gaps — Piece 12/12
-## Article 3: A3-33 — Quantum_Federation_Networking_Prime_Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-24 17:55:00 UTC
 
 ---
 
@@ -2226,7 +2145,6 @@ This is **networking as mathematics**. The network *is* the prime gap sequence, 
 
 *12 pieces, ~4000+ lines concatenated, covering routing, switching, transport, security, management, virtualization, quantum, economics, resilience, and standards — all from prime gaps.*
 
-*End of Piece 12*
 *End of Article 3: A3-33*
 ---
 

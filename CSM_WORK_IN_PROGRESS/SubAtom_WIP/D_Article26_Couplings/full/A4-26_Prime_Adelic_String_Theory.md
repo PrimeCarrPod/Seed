@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 01/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -53,10 +49,6 @@ where cₚ = 1 - 1/p² are prime-adic central charges. The total c = 26 + π²/6
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 02/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -97,10 +89,6 @@ ensures quantization.
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 03/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -137,10 +125,6 @@ where I_{ab}^{(p)} are p-adic intersection numbers. This reproduces the chiral f
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 04/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -177,10 +161,6 @@ Adelic crossing symmetry A(s,t) = A(t,u) = A(u,s) holds due to the functional eq
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 05/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -220,10 +200,6 @@ Modular invariance requires the prime central charges to satisfy c = c̃ = 26 + 
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 06/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -260,10 +236,6 @@ The p-adic holonomy selects the SM subgroup at each prime.
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 07/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -300,10 +272,6 @@ The 11-adic gauge group U(N)_{ℚ₁₁} provides the non-perturbative definitio
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 08/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -343,10 +311,6 @@ Prime-adic bulk fields φₚ correspond to irrelevant operators in the CFT.
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 09/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -386,10 +350,6 @@ The product gives ζ(2)⁻¹ = 6/π² ≈ 0.608 efficiency factor.
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 10/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -429,10 +389,6 @@ The full adelic Hilbert space preserves information. The Page curve is modified 
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 11/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -472,10 +428,6 @@ where t_p are p-adic Kähler parameters. This is a p-adic analog of the S-dualit
 
 ---
 
-# Prime_Adelic_String_Theory — Piece 12/12
-## Article A4: A4-26 — Prime Adelic String Theory
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

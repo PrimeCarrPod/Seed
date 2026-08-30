@@ -40,7 +40,9 @@ using the telescoping sum Σ d_n = p_{N+1} - p_1 = p_{N+1} - 2.
 
 #### 1.3 PrimeBookOne Data Mapping
 
-Directory 0.0 (Tile00–Tile188) contains gaps #1–94,500 corresponding to primes p_1 through p_94,501. This covers the electron's IR ground-state worldline segment.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 02)
+Directory 0.0 (Tile00–Tile188) contains gaps #1–94,500 corresponding to primes p_1 through p_94,501. This covers the electron's IR ground-state worldline segment.
+---
+
 
 ## 2. FUNDAMENTAL CONSTANT κ DETERMINATION
 
@@ -72,7 +74,9 @@ This is the fundamental time unit: one prime gap unit = 6.44×10^{-22} s.
 
 ### 2.4 Verification with PrimeBookOne Data
 
-In directory 0.0 (electron IR regime), the twin prime density is ~15-20%. With 94,500 gaps, we expect ~14,000-19,000 occurrences of d=2. Each corresponds to the fundamental time step Δτ_min.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 03)
+In directory 0.0 (electron IR regime), the twin prime density is ~15-20%. With 94,500 gaps, we expect ~14,000-19,000 occurrences of d=2. Each corresponds to the fundamental time step Δτ_min.
+---
+
 
 ## 3. PROPER-TIME OPERATOR IN PRIME BASIS
 
@@ -108,7 +112,9 @@ where the Hamiltonian Ĥ = ℏ/κ · D̂^{-1} (for d > 0). This gives:
 
 Û(Δτ) = Σ_d exp(-i Δτ/(κ·d)) |d⟩⟨d|
 
-Each prime gap sector evolves with its own frequency ω_d = 1/(κ·d).# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 04)
+Each prime gap sector evolves with its own frequency ω_d = 1/(κ·d).
+---
+
 
 ## 4. PRIME COUNTING FUNCTION AS WORLDLINE LENGTH
 
@@ -143,7 +149,9 @@ The directory structure (0.0, 0.1, 1.0, 2.0, 2.1, 3.0) maps to RG flow:
 | 2.1 | p_378,001–p_472,501 | ~94,500 | ~6.0×10^6 | Higgs |
 | 3.0 | p_472,501–p_567,001 | ~94,500 | ~7.2×10^6 | UV/GUT |
 
-Each directory adds ~94,500 proper-time steps = one "RG step" in the worldline evolution.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 05)
+Each directory adds ~94,500 proper-time steps = one "RG step" in the worldline evolution.
+---
+
 
 ## 5. GAP DISTRIBUTION AS PROPER-TIME SPECTRUM
 
@@ -179,7 +187,9 @@ The spectral density of worldline fluctuations:
 
 ρ(ω) = Σ_n δ(ω - 1/(κ·d_n))
 
-This is a discrete spectrum with peaks at frequencies ω_d = 1/(κ·d). The twin prime peak at ω_2 = m_e c^2/ℏ ≈ 7.76×10^{20} Hz dominates.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 06)
+This is a discrete spectrum with peaks at frequencies ω_d = 1/(κ·d). The twin prime peak at ω_2 = m_e c^2/ℏ ≈ 7.76×10^{20} Hz dominates.
+---
+
 
 ## 6. RIEMANN ZEROS AS WORLDLINE RESONANCES
 
@@ -212,7 +222,9 @@ T_γ = 2π/γ · (ℏ/(m_e c^2)) ~ 10^{-21} s
 
 Riemann Hypothesis (all Re(ρ) = 1/2) ⇔ all resonances lie on the critical line ⇔ bounded proper-time fluctuations ⇔ worldline stability.
 
-If RH fails (Re(ρ) ≠ 1/2), fluctuations grow as x^{Re(ρ)} causing worldline instability — the electron would not be a stable particle.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 07)
+If RH fails (Re(ρ) ≠ 1/2), fluctuations grow as x^{Re(ρ)} causing worldline instability — the electron would not be a stable particle.
+---
+
 
 ## 7. VERTEX INTERACTION POINTS
 
@@ -241,7 +253,9 @@ The self-interaction condition in terms of primes:
 
 p_n - 2 = p_m - 2 + k·T  (modulo periodicity T)
 
-where T is the worldline period. This leads to prime arithmetic progressions.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 08)
+where T is the worldline period. This leads to prime arithmetic progressions.
+---
+
 
 ## 8. PAIR CREATION/ANNIHILATION FROM GAP SEQUENCE
 
@@ -274,7 +288,9 @@ The pair production rate per unit proper time:
 
 Γ = (density of record gaps) · (turning probability)
 
-From PrimeBookOne 0.0 data: record gap density ~ 1/1000 gaps. With ⟨Δτ⟩ ~ 8.7×10^{-21} s, this gives Γ ~ 10^{17} s^{-1} — consistent with QED virtual pair rate.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 09)
+From PrimeBookOne 0.0 data: record gap density ~ 1/1000 gaps. With ⟨Δτ⟩ ~ 8.7×10^{-21} s, this gives Γ ~ 10^{17} s^{-1} — consistent with QED virtual pair rate.
+---
+
 
 ## 9. COMPTON SCALE FROM PRIME COUNT
 
@@ -319,7 +335,9 @@ This means the published PrimeBookOne corpus covers ~2 billion Compton times —
 The 3.67 billion gaps represent the electron's worldline log over ~2×10^{-12} s. This is the timescale for:
 - Electron self-interaction cascade
 - QED radiative correction accumulation
-- Worldline segment (book) boundaries# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 10)
+- Worldline segment (book) boundaries
+---
+
 
 ## 10. WORLDLINE SEGMENTS AS PRIMEBOOKONE BOOKS
 
@@ -360,7 +378,9 @@ Record gaps per segment: ~1000
 | 2.1 | ~583 | Higgs | EWSB scale |
 | 3.0 | ~583 | UV/GUT | UV fixed point |
 
-Each directory = 583 segments = one RG trajectory step.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 11)
+Each directory = 583 segments = one RG trajectory step.
+---
+
 
 ## 11. PROPER-TIME METRIC FROM GAP STATISTICS
 
@@ -396,7 +416,9 @@ R = - (1/√g) ∂_τ ( ∂_τ √g / √g )
 
 In discrete form: R_n ≈ - (Δd_n^2 - Δd_{n-1}^2) / (κ^2 d_n^4)
 
-Regions with large gap variations (record gaps) have high curvature — topological turning points.# ARTICLE 1: Prime Electron Worldline Topology — A1-01 (Piece 12)
+Regions with large gap variations (record gaps) have high curvature — topological turning points.
+---
+
 
 ## 12. SYNTHESIS: PRIME GAPS AS WORLDLINE CLOCK
 

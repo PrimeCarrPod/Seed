@@ -6,16 +6,8 @@
 
 ---
 
-# Yukawa_Unification_Proof — Piece 01/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 01/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -81,16 +73,8 @@ where d_rec(f) is the record gap associated with fermion f, and Π_corrections i
 
 ---
 
-# Yukawa_Unification_Proof — Piece 02/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 02/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -191,16 +175,8 @@ The record indices {1, 4, 9, 24, 30, 99} themselves follow a pattern: approximat
 
 ---
 
-# Yukawa_Unification_Proof — Piece 03/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 03/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -313,16 +289,8 @@ The modulo-8 bias δ₈ = P(d≡0) - P(d≡4) = 0.0008 at x ~ 10⁴ generates th
 
 ---
 
-# Yukawa_Unification_Proof — Piece 04/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 04/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -444,16 +412,8 @@ Full CKM derivation in A4-19.
 
 ---
 
-# Yukawa_Unification_Proof — Piece 05/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 05/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -609,16 +569,8 @@ where δ_threshold is computed from the partner gaps (Piece 06, 07, 08).
 
 ---
 
-# Yukawa_Unification_Proof — Piece 06/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 06/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -747,16 +699,8 @@ These contribute at the 0.1% level and are included in the uncertainty budget (P
 
 ---
 
-# Yukawa_Unification_Proof — Piece 07/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 07/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -899,16 +843,8 @@ where the Higgs self-coupling λ is determined by the gap 246 cluster {240, 242,
 
 ---
 
-# Yukawa_Unification_Proof — Piece 08/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 08/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -1087,16 +1023,8 @@ The muon threshold (15.6%) is physical and contributes to the muon g-2 anomaly p
 
 ---
 
-# Yukawa_Unification_Proof — Piece 09/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 18:52:09 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 09/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -1227,16 +1155,8 @@ A4-14 derived neutrino masses from the "missing gap" cluster {250, 252, 254}. Th
 
 ---
 
-# Yukawa_Unification_Proof — Piece 10/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 18:52:10 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 10/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -1369,16 +1289,8 @@ The three-body correlations are non-negligible:
 
 ---
 
-# Yukawa_Unification_Proof — Piece 11/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 18:52:10 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 11/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 
@@ -1531,16 +1443,8 @@ The framework satisfies all consistency conditions:
 
 ---
 
-# Yukawa_Unification_Proof — Piece 12/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 18:52:10 UTC
 
 ---
-# Yukawa_Unification_Proof — Piece 12/12
-## Article A4: A4-18 — Yukawa Unification Proof
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 18:46:03 UTC
 
 ---
 

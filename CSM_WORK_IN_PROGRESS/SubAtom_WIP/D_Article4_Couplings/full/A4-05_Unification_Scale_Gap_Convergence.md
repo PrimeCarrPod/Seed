@@ -6,10 +6,6 @@
 
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 01/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -99,10 +95,6 @@ where b_{GUT} is the GUT beta function coefficient, and b_{SM} is the SM beta fu
 **Proof.** At the GUT scale, the three gauge couplings unify into a single GUT coupling. The threshold correction is the matching condition between the SM and GUT beta functions. The GUT scale record gaps give the X, Y boson masses. □
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 02/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -183,10 +175,6 @@ where n_{X,Y} is the X, Y boson density at the GUT scale, and ε_{CP}^{X,Y} is t
 **Proof.** The X, Y gauge bosons (unification gaps) can decay with CP violation. The out-of-equilibrium condition is the GUT phase transition. The baryon asymmetry is generated directly. □
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 03/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -266,10 +254,6 @@ The next simplest is SO(10) if there are additional gaps for the right-handed ne
 **Proof.** The gap modulo 6 classes naturally give SU(5) = SU(3)_c × SU(2)_L × U(1)_Y. The extra gap for the right-handed neutrino extends to SO(10). The gap structure determines the gauge group. □
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 04/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -380,10 +364,6 @@ is tested by KATRIN, neutrinoless double beta decay, and cosmology.
 **Proof.** The neutrino mass scale is the electroweak gap squared divided by the GUT gap. The observed atmospheric mass splitting Δm² ~ 2.5 × 10^{-3} eV² gives m_ν ~ 0.05 eV, consistent with the gap prediction. □
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 05/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -489,10 +469,6 @@ The flipped SU(5) model has a different gap structure.
 All GUT-scale phenomena are derived from the GUT-scale gap structure.
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 06/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -642,10 +618,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_05_UNIFICATION_20260825.md
 *Article A4-05 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 07/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -779,10 +751,6 @@ where:
 The GUT scale prediction μ_GUT = 2×10^{16} GeV has ~10% theoretical uncertainty.
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 08/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -925,10 +893,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_05_UNIFICATION_20260825.md
 *Article A4-05 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 09/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -1069,10 +1033,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_05_UNIFICATION_20260825.md
 *Article A4-05 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 10/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -1196,10 +1156,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_05_UNIFICATION_20260825.md
 *Article A4-05 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 11/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 
@@ -1364,10 +1320,6 @@ cat CSMLogs/august26/RESUME_SESSION_A4_05_UNIFICATION_20260825.md
 *Article A4-05 Complete. 12 pieces, ≥350 lines concatenated. Ready for zip, organize, commit, push.*
 ---
 
-# Unification_Scale_Gap_Convergence — Piece 12/12
-## Article A4: A4-05 — Unification Scale Gap Convergence
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 02:10:00 UTC
 
 ---
 

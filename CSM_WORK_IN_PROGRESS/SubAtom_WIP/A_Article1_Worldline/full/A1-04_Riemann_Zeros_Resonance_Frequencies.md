@@ -26,7 +26,9 @@ The Chebyshev function ψ(x) = Σ_{n≤x} Λ(n) where Λ is the von Mangoldt fun
 
 where the sum runs over non-trivial zeta zeros ρ = 1/2 + iγ.
 
-The prime gap fluctuation at scale x is Δψ(x) = ψ(x) - x = -Σ_ρ x^ρ/ρ + ...# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 02)
+The prime gap fluctuation at scale x is Δψ(x) = ψ(x) - x = -Σ_ρ x^ρ/ρ + ...
+---
+
 
 ## 1.2 Proper-Time Fluctuation Spectrum
 
@@ -58,7 +60,9 @@ T_γ = 2π/γ · (ℏ/(m_e c^2)) ~ 10^{-21} s
 
 ---
 
-### 2. RIEMANN HYPOTHESIS AS WORLDLINE STABILITY# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 03)
+### 2. RIEMANN HYPOTHESIS AS WORLDLINE STABILITY
+---
+
 
 ## 2.1 RH and Bounded Fluctuations
 
@@ -102,7 +106,9 @@ The mode sum gives the full fluctuation spectrum.
 
 ---
 
-### 4. FIRST ZERO γ_1 = 14.1347... AS FUNDAMENTAL MODE# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 04)
+### 4. FIRST ZERO γ_1 = 14.1347... AS FUNDAMENTAL MODE
+---
+
 
 ## 4.1 Fundamental Resonance
 
@@ -151,7 +157,9 @@ This oscillatory correlation structure implies discrete resonance frequencies �
 
 ---
 
-### 6. HIGHER ZEROS AS OVERTONE MODES# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 05)
+### 6. HIGHER ZEROS AS OVERTONE MODES
+---
+
 
 ## 6.1 Overtone Series
 
@@ -216,7 +224,9 @@ PrimeBookOne data provides gaps → zeros can be reconstructed.
 
 ---
 
-### 9. CARRINGTON EVENT = ZERO CROSSING?# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 06)
+### 9. CARRINGTON EVENT = ZERO CROSSING?
+---
+
 
 ## 9.1 Large Fluctuations as Zero Alignments
 
@@ -273,7 +283,9 @@ The peaks in |D(ω)| occur at frequencies related to γ:
 
 ---
 
-### 12. ZERO DENSITY AS WORLDLINE ENTROPY# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 07)
+### 12. ZERO DENSITY AS WORLDLINE ENTROPY
+---
+
 
 ## 12.1 Entropy from Zero Counting
 
@@ -343,7 +355,9 @@ This matches CODATA α^{-1} = 137.035999084(21).
 
 ---
 
-### 15. ZERO FLUCTUATIONS AS QED RADIATIVE CORRECTIONS# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 08)
+### 15. ZERO FLUCTUATIONS AS QED RADIATIVE CORRECTIONS
+---
+
 
 ## 15.1 Radiative Corrections from Zero Modes
 
@@ -413,7 +427,9 @@ Current published data: up to directory 3.0 = 3.67B gaps.
 
 ---
 
-### 18. ZERO REPULSION AND GAP STATISTICS# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 09)
+### 18. ZERO REPULSION AND GAP STATISTICS
+---
+
 
 ## 18.1 Zero Repulsion
 
@@ -471,7 +487,9 @@ Each instanton corresponds to a worldline tunneling event between topological se
 
 ---
 
-### 21. ZETA FUNCTION AS WORLDLINE PARTITION FUNCTION# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 10)
+### 21. ZETA FUNCTION AS WORLDLINE PARTITION FUNCTION
+---
+
 
 ## 21.1 Partition Function
 
@@ -524,7 +542,9 @@ d_n ~ Re[ n^{-1/2} e^{-iγ ln n} ] summed over zeros.
 
 ---
 
-### 24. EXPERIMENTAL SIGNATURES OF ZERO MODES# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 11)
+### 24. EXPERIMENTAL SIGNATURES OF ZERO MODES
+---
+
 
 ## 24.1 Spectral Lines in g-2
 
@@ -575,7 +595,9 @@ Result: ρ_Λ ~ m_e c^2 · (γ_max)^2 ~ 10^{-123} ρ_Planck (matches observation
 
 ---
 
-### 26. SUMMARY: ZERO MODES AS WORLDLINE DNA# ARTICLE 1: Prime Electron Worldline Topology — A1-04 (Piece 12)
+### 26. SUMMARY: ZERO MODES AS WORLDLINE DNA
+---
+
 
 ## 26.1 Complete Mapping Dictionary
 

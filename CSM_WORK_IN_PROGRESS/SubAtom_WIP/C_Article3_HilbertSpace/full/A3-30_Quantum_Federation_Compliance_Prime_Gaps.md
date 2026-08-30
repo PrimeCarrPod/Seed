@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 01/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 01 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -90,10 +86,6 @@ The prime gap sequence provides **compliance invariants** that no regulation can
 6. **Economics**: Gap-priced compliance (A3-29) ensures sustainable evidence generation
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 02/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 02 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -195,10 +187,6 @@ RME respects tenant isolation (A3-28):
 - Gap-weighted voting (A3-28 Piece 11) governs RME ontology updates
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 03/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 03 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -288,10 +276,6 @@ The receiving federation verifies:
 4. Policy compatibility (jurisdiction mapping)
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 04/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 04 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -397,10 +381,6 @@ Where $\text{VGE}_{n'}$ is the triggering violation at gap-index $n' \leq n$. RG
 | **A3-29 DR** | CGA/TGSV as compliance backup; GDCE as compliance testing; GAF as compliance forensics |
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 05/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 05 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -502,10 +482,6 @@ Each version $v$ is active over a gap-index interval $[n_{\text{start}}^{(v)}, n
 5. **Audit trail**: Full history of TCP versions in TGSV
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 06/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 06 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -620,10 +596,6 @@ $$\text{GAC} = \text{Sign}_{\text{AssessorPK}}\big( \text{Standard}, T, W, \text
 7. **Continuous monitoring**: GCO keeps CGA stream active; assessor re-verifies periodically
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 07/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 07 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -728,10 +700,6 @@ $$\text{QMLExplain}_n^T = \text{QuantumSHAP}(\text{Model}_n^T, \text{Features}_n
 Where gap-correlations (A3-05) provide the **causal structure** for SHAP values. Evidence: QuantumSHAP values gap-attested at each inference gap-index.
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 08/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 08 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -833,10 +801,6 @@ This per-gap fine price feeds back into:
 - Tenant governance (gap-weighted voting weight adjustment)
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 09/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 09 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -957,10 +921,6 @@ ISO 27001:2022 Annex A controls (93 controls in 4 themes) map to gap-primitives:
 | **Crypto Agility Mandates** (NSM-10, EU PQC) | GKI algorithm agility; Gap-plan phased migration (Piece 07) |
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 10/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 10 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -1075,10 +1035,6 @@ CRT(Change = {ΔTCP, ΔRME, ΔRegulation}):
 CRT ensures **compliance logic changes never introduce silent failures**.
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 11/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 11 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 
@@ -1166,10 +1122,6 @@ Regulators interact with federation via **Regulator Gap-Portal**:
 - **Transparency**: Federation publishes compliance metrics, CDCE results, CRT reports to regulator portal
 ---
 
-# Quantum_Federation_Compliance_Prime_Gaps — Piece 12/12
-## Article 3: A3-30 — Quantum Federation Compliance Prime Gaps
-**Piece:** 12 of 12
-**Generated:** 2026-08-24 05:46:00 UTC
 
 ---
 

@@ -1,9 +1,11 @@
-# Prime_Evolution_Fitness_Landscape — Piece 01/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
+# Prime_Evolution_Fitness_Landscape — Complete Article
+## Article: Prime_Evolution_Fitness_Landscape
+**Generated:** 2026-08-30 06:24:26 UTC
+**Structure:** 12 pieces concatenated
+**Target:** ≥350 lines
 
 ---
+
 
 # Introduction: The Prime Fitness Landscape
 
@@ -42,10 +44,6 @@ The geometric mean (multiplicative) is the correct measure because fitness compo
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 02/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -79,10 +77,6 @@ The prime 7 structure means most walks reach a local peak in 3-4 steps.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 03/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -117,10 +111,6 @@ where N_e is the effective population size. For N_e = 10^4, s_critical = 11/10^4
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 04/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -157,10 +147,6 @@ where A is island area.
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 05/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -209,10 +195,6 @@ High evolvability lineages survive mass extinctions (prime 13 events).
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 06/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -249,10 +231,6 @@ Phase shift: 19/360 of cycle between species
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 07/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -288,10 +266,6 @@ Convergence probability: 23% for similar ecologies
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 08/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -326,10 +300,6 @@ Bayes factor threshold: 29:1 for strong evidence
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 09/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -364,10 +334,6 @@ Lysogeny frequency: 31% of infections
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 10/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -402,10 +368,6 @@ Peak diversity: 37 Myr after extinction
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 11/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 
@@ -440,10 +402,6 @@ Peak movement: 41% of peaks shift per 41 generations
 
 ---
 
-*Author: Jason Isaac Brodsky (California, 1976)*# Prime_Evolution_Fitness_Landscape — Piece 12/12
-## Article A5: A5-04 — Prime Evolution and the Fitness Landscape
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 22:31:00 UTC
 
 ---
 

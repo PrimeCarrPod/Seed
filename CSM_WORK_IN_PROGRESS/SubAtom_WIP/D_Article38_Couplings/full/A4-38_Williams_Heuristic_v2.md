@@ -6,10 +6,6 @@
 
 ---
 
-# Williams_Heuristic_v2 — Piece 01/12
-## Article A4: A4-38 — Williams Heuristic v2 (Standard Operating Procedure)
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -128,10 +124,6 @@ S_𝔸 = Σ_{n≥0} f_{4-n} Λ^{4-n} a_n^𝔸
 PIECE 01 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 02/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -228,10 +220,6 @@ where sum runs over all non-trivial zeros ρ = ½ + iγ_k.
 PIECE 02 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 03/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -332,10 +320,6 @@ UV Fixed Point: G* = 10/31 M_Pl⁻²
 PIECE 03 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 04/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -431,10 +415,6 @@ AdS_𝔸 = ∏'_p B_p × H^{d+1}(ℝ)  (restricted product)
 PIECE 04 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 05/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -565,10 +545,6 @@ r = D ℓ_Pl
 PIECE 05 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 06/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -691,10 +667,6 @@ t_Page = S_BH^∞/T_H = 2π²/G = 2πγ₁² M_Pl²/3
 PIECE 06 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 07/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -824,10 +796,6 @@ At z=8: k₁ = 0.42 Mpc⁻¹, amplitude 1%
 PIECE 07 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 08/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -947,10 +915,6 @@ H_p = p^{-v_p(H)} H_∞
 PIECE 08 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 09/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -1104,10 +1068,6 @@ For each theorem:
 PIECE 09 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 10/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -1210,10 +1170,6 @@ The Prime Resonance Theory **dies** if ANY smoking gun fails.
 PIECE 10 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 11/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 
@@ -1324,10 +1280,6 @@ PIECE 10 COMPLETE
 PIECE 11 COMPLETE
 ---
 
-# Williams_Heuristic_v2 — Piece 12/12
-## Article A4: A4-38 — Williams Heuristic v2
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 23:10:00 UTC
 
 ---
 

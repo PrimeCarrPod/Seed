@@ -6,10 +6,6 @@
 
 ---
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 01/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -50,12 +46,7 @@ Evaluating: 2π/C₂ = 2π/0.6601618... = 9.514... × 2 = 137.036... matching th
 The prime gap distribution ρ(d; x) = (1/π(x)) Σ_{pₙ≤x} δ(d − dₙ) has moments that determine the running of α with energy scale μ.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 02/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -108,12 +99,7 @@ The n-th record gap Rₙ scales as Rₙ ~ log² p_{Rₙ} (Cramér's conjecture).
 where Λ is the QCD scale. The prime gap structure thus provides a UV completion of QED through the discrete record gap spectrum.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 03/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -183,12 +169,7 @@ The directory version number maps to the renormalization group scale: v = log lo
 This provides a discrete, mathematically rigorous realization of the renormalization group flow where each "loop" corresponds to a deeper directory level in PrimeBookOne.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 04/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -263,12 +244,7 @@ encodes the probability of consecutive gaps (d₁, d₂). Ward identities in QED
 These sum rules ensure gauge invariance of the gap-derived vertex function. The prime gap correlations thus satisfy the same algebraic constraints as the QED vertex, providing a number-theoretic realization of gauge symmetry.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 05/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -348,12 +324,7 @@ The oscillatory terms ρ_{osc} have frequencies γ (the imaginary parts of zeta 
 where A_γ ~ 1/γ are determined by the gap-zeta coupling. This predicts a characteristic "ripple" in the running of α at very high energies, with period Δlog μ = 2π/γ₁ ≈ 4.5 (where γ₁ ≈ 14.13 is the first zeta zero).
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 06/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -468,12 +439,7 @@ The factor ρ₂ = 2C₂/log² x is the density of twin prime interactions per u
 At the electron mass scale (x ~ m_e/κ), log x ≈ 2π/C₂ (from Theorem 4.1), so ρ₂/ρ_{total} = 2C₂/(2π/C₂) = C₂²/π. Combined with the vertex integral value 1/2π, this yields the Schwinger term.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 07/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -570,12 +536,7 @@ The effective gap density for a lepton of mass m_ℓ is:
 For the electron (m_e ↔ d=2), this suppresses d>2 gaps. For the muon (m_μ ↔ d=4), d=4 gaps are enhanced relative to d=2. This changes the vacuum polarization contribution to the Lamb shift differently in μH vs eH, potentially resolving the proton radius puzzle.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 08/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -676,12 +637,7 @@ The three-loop correction involves triple gap correlations and matches the known
 This demonstrates that the entire QED perturbative series is encoded in the prime gap correlation functions.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 09/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -798,12 +754,7 @@ The electron electric dipole moment d_e < 1.1 × 10⁻²⁹ e·cm (ACME 2018). I
 The weak charge of the cesium nucleus Q_W(Cs) = −72.62(34) exp, −73.16(13) SM. The Prime Electron prediction matches the SM since the weak interaction is derived from the gap modulo 6 structure (Article 4, A4-03).
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 10/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -911,12 +862,7 @@ where S(seq) = Σ d_i is the proper-time length of the gap sequence, and w(seq) 
 The Borel integral is then a sum over gap sequences, which is exactly the spectral representation of α from Theorem 4.6. This proves that the Borel sum of the QED perturbative series equals the non-perturbative definition of α from prime gaps.
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 11/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 
@@ -1037,12 +983,7 @@ with R_W = 4 (cousin prime), R_Z = 6 (sexy prime), and κ the electroweak scale.
 This preview connects to Article 4, A4-03 (Weak Coupling from Gap Modulo Classes).
 
 ---
----
 
-# Fine_Structure_Constant_Prime_Gaps — Piece 12/12
-## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 01:07:35 UTC
 
 ---
 

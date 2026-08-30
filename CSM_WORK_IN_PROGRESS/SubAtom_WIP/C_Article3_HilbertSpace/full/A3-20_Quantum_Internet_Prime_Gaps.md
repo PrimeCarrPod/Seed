@@ -6,16 +6,8 @@
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 01/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 01/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -53,16 +45,8 @@ This article (A3-20) develops the quantum internet architecture across twelve pi
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 02/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 02/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -111,16 +95,8 @@ where allowed gaps are even residues coprime to small primes. This yields 256 pa
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 03/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 03/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -180,16 +156,8 @@ Each layer operates with independent quantum memory and swapping protocols, enab
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 04/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 04/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -254,16 +222,8 @@ The threshold ρ_threshold is set by the Cramér model: ρ_threshold = ln x + O(
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 05/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 05/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -316,16 +276,8 @@ where d is the code distance (here d=3 for the full code, d=2 for twin prime sub
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 06/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 06/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -393,16 +345,8 @@ with SNR = (modulation variance)/(shot noise + excess noise). The excess noise i
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 07/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 07/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -476,16 +420,8 @@ This dynamic reconfiguration is provably optimal under the prime k-tuple conject
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 08/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 08/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -544,16 +480,8 @@ The convergence time is O(log(1/ε)) rounds where ε is the gap density fluctuat
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 09/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 09/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -616,16 +544,8 @@ These APIs abstract the prime gap physics, presenting standard quantum network i
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 10/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 10/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -689,16 +609,8 @@ The prime gap quantum internet achieves the theoretical maximum for a given spac
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 11/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 11/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 
@@ -773,16 +685,8 @@ At the ultimate scale, the prime gap quantum internet predicts:
 
 ---
 
-# Quantum_Internet_Prime_Gaps — Piece 12/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
-# Quantum Internet Prime Gaps — Piece 12/12
-## Article 3: A3-20 — Quantum Internet Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-23 20:13:41 UTC
 
 ---
 

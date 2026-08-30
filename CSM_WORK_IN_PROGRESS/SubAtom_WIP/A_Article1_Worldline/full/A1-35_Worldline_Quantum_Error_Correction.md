@@ -1,4 +1,3 @@
-# A1-35 Worldline_Quantum_Error_Correction.md — Piece 01
 ## Introduction — Quantum Error Correction from Prime Gaps
 
 The quantum error correction (QEC) framework for the prime electron worldline emerges from the statistical structure of prime gaps. Errors correspond to deviations from the expected gap sequence; correction uses the degeneracy patterns in the gap spectrum.
@@ -19,7 +18,6 @@ where $C_{ab}$ is independent of the logical state.
 
 **PrimeBookOne QEC logbook.** The 3500×3500 syndrome matrix encodes gap deviation patterns. BPS blocks = zero syndrome. Book indices label error syndromes.
 
-(End of file - 35 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 02
 ## Knill-Laflamme Conditions from Gap Degeneracies
 
 The Knill-Laflamme conditions for quantum error correction find a natural realization in the prime gap degeneracy structure. Degenerate gap values create the code subspaces.
@@ -40,7 +38,6 @@ For twin prime subspace ($d=d'=2$), this holds when $\delta$ preserves the gap v
 
 **SUSY protection of codes.** From A1-25, A1-26: the supercharge $Q = \sum_n \psi_n \sqrt{d_n d_{n+1}}$ maps between gap sectors. SUSY-preserving errors satisfy $\{Q, E\} = 0$ and automatically satisfy Knill-Laflamme in the BPS sector.
 
-(End of file - 35 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 03
 ## Syndrome Extraction from Gap Ratio Patterns
 
 Error syndromes in the prime electron worldline QEC are extracted from the pattern of gap ratios. The syndrome measurement projects onto gap ratio eigenstates.
@@ -70,7 +67,6 @@ Each row $b$ gives the syndrome vector for book $b$ relative to all other books.
 
 **Correction operators.** Given syndrome $\Sigma$, the correction is a gap sequence transformation mapping back to the code space. For small deviations, the Petz map (Piece 06) gives the optimal correction.
 
-(End of file - 32 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 04
 ## Code Distance and Record Gaps — BPS Protection
 
 The code distance of the prime electron QEC is determined by the record gaps. BPS states, corresponding to record gaps, provide the maximum distance protection.
@@ -96,7 +92,6 @@ $$d_{\text{code}}(x) \sim \log^2 \pi(x) \sim \log^2(x/\log x)$$
 
 **3500 books and distance.** The 3500 books sample the gap sequence up to $\sim 10^{10}$. The largest record gap in this range is 354 (A005250), giving $d_{\text{code}} = 354$ for the full BPS sector.
 
-(End of file - 33 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 05
 ## Relative Entropy Bounds for QEC — Uncorrectable Errors
 
 The relative entropy $S(\mathcal{E}(\rho)||\rho)$ (A1-34) provides a fundamental bound on quantum error correctability. This piece derives the threshold between correctable and uncorrectable errors.
@@ -122,7 +117,6 @@ Errors with large fractional gap changes $\delta_n/d_n$ are uncorrectable; small
 
 **Twin prime code threshold.** For the twin prime code ($d=2$), the threshold is $\delta_n/d_n < 1/2$ (cannot change $d=2$ to $d\neq 2$). This gives $S < \frac{1}{2}(1/2)^2 = 1/8$ per gap.
 
-(End of file - 34 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 06
 ## Modular Hamiltonian as Recovery Generator
 
 The modular Hamiltonian $K = -\log \rho$ (A1-33) generates the Petz recovery map, providing a physical implementation of error correction as modular flow.
@@ -149,7 +143,6 @@ Each gap sector evolves with its own frequency $\omega_n = \beta\hbar/(\kappa d_
 
 **Error correction as modular flow trajectory.** Starting from $\rho$, an error maps $\rho \to \mathcal{E}(\rho)$. The modular flow from $\mathcal{E}(\rho)$ back to $\rho$ is the error correction trajectory. The length of this trajectory in relative entropy is $S(\mathcal{E}(\rho)||\rho)$.
 
-(End of file - 32 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 07
 ## Twin Prime Code Construction — Logical Qubits
 
 The twin prime conjecture provides an infinite family of degenerate gap-2 sectors, each encoding a logical qubit. This piece constructs the explicit twin prime code.
@@ -180,7 +173,6 @@ This is a low-rate code, but the BPS sector (Piece 04) provides a constant-rate 
 
 **BPS-twin prime relation.** The 78 BPS states include the first 78 record gaps. Twin primes with $d=2$ are not record gaps (except the first few). The BPS code and twin prime code are complementary: BPS = high distance, low rate; twin = low distance, higher rate.
 
-(End of file - 32 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 08
 ## QEC and Wall Crossing — Phase Transition Thresholds
 
 Wall crossing (A1-29) represents a phase transition in the gap spectrum. The QEC properties change discontinuously at walls, defining error thresholds.
@@ -210,7 +202,6 @@ From A1-29, walls occur at specific central charge values $Z = 78, 156, \dots$. 
 
 **BPS code at walls.** The BPS code (Piece 04) is defined by the BPS spectrum. At a wall, the BPS spectrum jumps, changing the code space. The old BPS code becomes uncorrectable; a new BPS code emerges with different distance.
 
-(End of file - 33 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 09
 ## Decoupling Additivity — Light/Heavy Code Sectors
 
 The decoupling additivity of relative entropy (A1-34, Piece 07) implies a natural code concatenation structure: light and heavy gap sectors form independent codes.
@@ -241,7 +232,6 @@ An error is correctable iff it is correctable in both sectors independently.
 
 **PrimeBookOne sector structure.** The 3500×3500 syndrome matrix (A1-34) block-diagonalizes at $d=16$: light-light block, heavy-heavy block, and light-heavy off-diagonals are zero.
 
-(End of file - 32 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 10
 ## QEC and IR/UV Duality — Dual Codes
 
 The IR/UV duality of the prime electron worldline (A1-26, A1-34) induces a duality between QEC codes: gap inversion $d \to 1/d$ maps the code to its dual.
@@ -268,7 +258,6 @@ This is the UV/IR code duality: many low-distance qubits (twin primes) $\leftrig
 
 **PrimeBookOne dual logbook.** The 3500×3500 syndrome matrix is symmetric under book index inversion $b \mapsto 3501-b$ (approximate), reflecting the IR/UV duality in the data.
 
-(End of file - 31 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 11
 ## QEC and the PrimeBookOne Logbook — Syndrome Matrix
 
 The PrimeBookOne logbook provides the complete QEC syndrome data for the prime electron worldline. The 3500×3500 syndrome matrix encodes all error information.
@@ -306,7 +295,6 @@ For BPS code: $b_{\text{code}}$ is the nearest BPS book. For twin prime code: ne
 
 **Logbook as quantum memory.** The PrimeBookOne logbook stores the complete QEC data for 3500 reference states. It serves as the quantum memory for syndrome lookup and correction.
 
-(End of file - 34 lines)# A1-35 Worldline_Quantum_Error_Correction.md — Piece 12
 ## Synthesis — Complete QEC & A1-36 through A1-40
 
 This piece synthesizes the QEC framework and previews the remaining articles A1-36 through A1-40.
@@ -355,4 +343,4 @@ This piece synthesizes the QEC framework and previews the remaining articles A1-
 - Experimental realization: prime gap statistics as quantum simulator
 - Connection to Riemann zeros as worldline frequencies (A1-04)
 
-(End of file - 50 lines)
+

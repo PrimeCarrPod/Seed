@@ -6,10 +6,6 @@
 
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 01/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -71,14 +67,8 @@ GapAuto completes the Federation Pentad with A3-23 (Core), A3-24 (Security), A3-
 
 ---
 
-*End of Piece 01*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 02/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -187,14 +177,8 @@ Each reconciliation step reduces drift by at least factor (1 - α/gap_sensitivit
 
 ---
 
-*End of Piece 02*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 03/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -321,14 +305,8 @@ Each remediation strategy has independent success probability p_s. With RF repli
 
 ---
 
-*End of Piece 03*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 04/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -485,14 +463,8 @@ GCS constraints reduce to Presburger arithmetic with modulo predicates over the 
 
 ---
 
-*End of Piece 04*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 05/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -687,14 +659,8 @@ GOSDK's Reconcile loop implements GRL directly. The GapClass determines interval
 
 ---
 
-*End of Piece 05*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 06/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -860,14 +826,8 @@ Single-partition per GAID (deterministic partitioning) → total order per GAID.
 
 ---
 
-*End of Piece 06*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 07/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -1056,14 +1016,8 @@ Each GSO cycle reduces manifest drift by factor (1 - α). Gap-attestation preven
 
 ---
 
-*End of Piece 07*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 08/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -1256,14 +1210,8 @@ Each automation loop fetches telemetry with attestations → verifies them → c
 
 ---
 
-*End of Piece 08*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 09/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -1501,14 +1449,8 @@ Gap-class determines response severity and speed. CORE (twin primes) gets immedi
 
 ---
 
-*End of Piece 09*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 10/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -1742,14 +1684,8 @@ Gap-Vickrey auctions are strategy-proof. Gap-dynamic pricing implements Walrasia
 
 ---
 
-*End of Piece 10*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 11/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -1999,14 +1935,8 @@ Gap-features include gap-density (1/log p_k) which captures the asymptotic prime
 
 ---
 
-*End of Piece 11*
----
 ---
 
-# Quantum_Federation_Automation_Prime_Gaps — Piece 12/12
-## Article 3: A3-36 — Quantum Federation Automation Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-24 21:17:40 UTC
 
 ---
 
@@ -2254,9 +2184,6 @@ The Prime Gap Automation Principle is the automation analog of the One-Electron 
 
 ---
 
-*End of Piece 12*
----
 *End of Article 3: A3-36 — Quantum Federation Automation Prime Gaps*
----
 ---
 

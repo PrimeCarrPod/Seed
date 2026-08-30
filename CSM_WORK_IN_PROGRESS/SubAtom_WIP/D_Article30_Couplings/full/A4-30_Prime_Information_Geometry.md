@@ -6,10 +6,6 @@
 
 ---
 
-# Prime_Information_Geometry — Piece 01/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -52,10 +48,6 @@ The ±1 connections are dually flat. The 0-connection is the Levi-Civita connect
 
 ---
 
-# Prime_Information_Geometry — Piece 02/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -100,10 +92,6 @@ The unification condition is the flatness of the η-manifold at the unification 
 
 ---
 
-# Prime_Information_Geometry — Piece 03/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -149,10 +137,6 @@ In the limit α→1, this gives KL. For α = 1/2, it gives the Hellinger distanc
 
 ---
 
-# Prime_Information_Geometry — Piece 04/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -199,10 +183,6 @@ The heat capacity is negative, as expected. The prime Page curve is the entropy 
 
 ---
 
-# Prime_Information_Geometry — Piece 05/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -243,10 +223,6 @@ Real part: Fubini-Study metric. Imaginary part: Berry curvature. The prime Berry
 
 ---
 
-# Prime_Information_Geometry — Piece 06/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -287,10 +263,6 @@ The network geometry is the p-adic Bruhat-Tits tree. The distance on the tree gi
 
 ---
 
-# Prime_Information_Geometry — Piece 07/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -330,10 +302,6 @@ The prime light cone is the set of primes with non-zero transfer entropy. The ad
 
 ---
 
-# Prime_Information_Geometry — Piece 08/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -374,10 +342,6 @@ The instanton number k_p is the winding of the prime connection. The prime insta
 
 ---
 
-# Prime_Information_Geometry — Piece 09/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -421,10 +385,6 @@ The prime vacuum entropy S_p = log(dim ℋ_p) = log(p). The sum gives the observ
 
 ---
 
-# Prime_Information_Geometry — Piece 10/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -461,10 +421,6 @@ The prior P(θ) is the Haar measure on the prime group. The likelihood P(D|θ) i
 
 ---
 
-# Prime_Information_Geometry — Piece 11/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 
@@ -505,10 +461,6 @@ where E(y) is the set of objects explained by y. The laws of physics are the sop
 
 ---
 
-# Prime_Information_Geometry — Piece 12/12
-## Article A4: A4-30 — Prime Information Geometry
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:26:58 UTC
 
 ---
 

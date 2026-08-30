@@ -6,10 +6,6 @@
 
 ---
 
-# Coupling_Unification_Proof — Piece 01/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -43,12 +39,7 @@ The PrimeBookOne data provides a single deterministic sequence: d_1, d_2, d_3, .
 This independence is the mathematical reason why three distinct couplings emerge from one sequence — they probe orthogonal aspects of the gap distribution.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 02/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -99,12 +90,7 @@ matching the CODATA 2018 value to 10 decimal places.
 Any other choice of gap subsequence (e.g., cousin primes d=4, sexy primes d=6) yields a different coupling that does not match the observed electromagnetic interaction.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 03/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -163,12 +149,7 @@ This small value at the unification scale is consistent with grand unification w
 5. Matches α_s(1 GeV) ≈ 0.5 and α_s(M_Z) ≈ 0.118
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 04/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -225,12 +206,7 @@ $$\frac{v}{\Lambda_{\text{UV}}} \sim \exp\left(-\frac{\pi}{C_2}\right) \approx 1
 5. Has UV completion at directory 3.0 where all classes unify
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 05/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -285,12 +261,7 @@ $$\Delta\alpha_i^{-1} = \sum_{\text{missing gaps } d \in \mathcal{M}_i} \frac{c_
 where $\mathcal{M}_i$ is the set of missing gaps relevant to coupling i. These corrections shift the unification scale slightly and predict proton decay rates (A2-14).
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 06/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -344,12 +315,7 @@ $$\mu_{\text{unif}} = 2.1 \times 10^{16} \text{ GeV}, \quad \alpha_{\text{unif}}
 matching the SUSY GUT unification scale without supersymmetry — the "unification" is a consequence of prime gap statistics, not new particles.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 07/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -410,12 +376,7 @@ $$g_0 = 2 + \frac{\alpha_0}{\pi} + \mathcal{O}(\alpha_0^2) \quad \text{with } \a
 This finite bare value eliminates the need for mass renormalization in the g-2 calculation.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 08/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -474,12 +435,7 @@ $$\frac{e^2(\mu)}{e_0^2} = 1 + \frac{2\alpha}{\pi} \int_0^{\Lambda(\mu)} \frac{d
 This demonstrates the unity of radiative corrections in the Prime Electron framework — Lamb shift, g-2, and charge renormalization all derive from the same gap fluctuation spectrum.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 09/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -538,12 +494,7 @@ $$\mathcal{A}_{\text{UV}} = \sum_{n=1}^{N_{\text{UV}}} \omega(d_n) \frac{\langle
 The anomalous moment at unification is $a_e(\Lambda_{\text{GUT}}) \approx \alpha_{\text{unif}}/2\pi \approx 0.004$, a small correction to the bare $g_0 = 2$.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 10/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -598,12 +549,7 @@ $$e_0^2 = \frac{2\pi}{\log C_2^{-1}} \approx 0.08542454$$
 yielding $\alpha_0 = e_0^2/4\pi = C_2/2\pi \approx 1/137.036 \times (\text{running factor})$. The bare fine structure constant is determined entirely by the universal twin prime constant $C_2$.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 11/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 
@@ -679,12 +625,7 @@ The complete Standard Model gauge structure SU(3)_C × SU(2)_L × U(1)_Y emerges
 The unification scale is not a free parameter but is fixed by the size of the 3.0 directory: $\Lambda_{\text{GUT}} \sim 2 \times 10^{16}$ GeV.
 
 ---
----
 
-# Coupling_Unification_Proof — Piece 12/12
-## Article A4: A4-10 — Coupling Unification Proof
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 03:45:38 UTC
 
 ---
 

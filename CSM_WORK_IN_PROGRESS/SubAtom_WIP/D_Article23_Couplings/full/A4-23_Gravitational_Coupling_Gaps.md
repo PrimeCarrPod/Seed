@@ -6,16 +6,8 @@
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 01/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 01/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 01 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -48,20 +40,11 @@ The gravitational coupling is then:
 The factor of 254² arises from the two powers of the gap in the worldline embedding action.
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 02/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 02/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 02 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -101,20 +84,11 @@ Converting to physical units:
 This matches the measured value to within the statistical uncertainty of the gap distribution.
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 03/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 03/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 03 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -153,20 +127,11 @@ where m_{Pl} = √(ℏc/G) is the Planck mass.
 The gap-254 origin of this coupling explains why gravity is universal and why α_G is the same for all particles (equivalence principle).
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 04/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 04/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 04 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -195,20 +160,11 @@ The gap-254 UV cutoff provides a natural asymptotic safety scenario for quantum 
 This is the asymptotic safety fixed point for gravity in the Prime Electron framework. The fixed point value is determined entirely by the 8-bit Hilbert space dimension (256 states, maximum gap 254).
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 05/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 05/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 05 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -261,20 +217,11 @@ The gap tunneling rate is:
 This gives the correct Page time t_{Page} ≈ M³/ℓ_P².
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 06/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 06/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 06 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -329,20 +276,11 @@ This gives:
 This matches the observed value Λ_{obs} ≈ 1.1 × 10⁻⁵² m⁻².
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 07/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 07/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 07 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -410,20 +348,11 @@ r ≈ 0.016
 testable by future CMB B-mode experiments (CMB-S4, LiteBIRD).
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 08/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 08/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 08 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -468,20 +397,11 @@ Gap 254 decays rapidly to gap 14, which decays to gap 6, etc. The lifetime of th
 well before BBN (t ~ 1 s).
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 09/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 09/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 09 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -549,20 +469,11 @@ With ε_{WL} ≈ 2.3 × 10⁻⁶ and ε_{L} ≈ 1.5 × 10⁻⁶:
 This matches the observed value exactly.
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 10/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 10/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 10 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -624,20 +535,11 @@ S_m / S_0 ≈ 0.02 (v_{earth} / σ_{gap}) ≈ 0.05
 consistent with DAMA/LIBRA and testable by COSINE-100, ANAIS.
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 11/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 11/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 11 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -698,20 +600,11 @@ The gap-derived ΔN_eff is consistent with:
 The specific gap-origin prediction (N_eff = 3.30) is a sharp test for CMB-S4 and next-generation BBN measurements.
 
 ---
----
 
 ---
 
-# Gravitational_Coupling_Gaps — Piece 12/12
-## Article A4: A4-23 — Gravitational Coupling Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-26 19:10:56 UTC
 
 ---
-# Gravitational_Coupling_Gaps — Piece 12/12
-## Article A4: A4-23 — Gravitational Coupling from Prime Gaps
-**Piece:** 12 of 12  
-**Generated:** 2026-08-25 20:20:00 UTC
 
 ---
 
@@ -780,7 +673,6 @@ The specific gap-origin prediction (N_eff = 3.30) is a sharp test for CMB-S4 and
 **Prime Electron Research 360 — Article 4: Coupling Constants From Prime Statistics**  
 **A4-23: Gravitational Coupling Gaps — Complete (12 pieces)**
 
----
 ---
 
 ---
