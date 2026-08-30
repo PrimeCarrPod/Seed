@@ -4,7 +4,7 @@
 
 set -e
 
-CINEMA_ROOT="csmcinema"
+CINEMA_ROOT="CSMCinema"
 PIECES_PER_PART=11
 ITERATIONS=7
 

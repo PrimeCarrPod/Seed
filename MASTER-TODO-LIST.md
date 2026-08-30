@@ -1,6 +1,6 @@
 # MASTER TODO LIST — CSM RESEARCH INITIATIVE
 
-**Last Updated: August 29, 2026** | **Status: ACTIVE**
+**Last Updated: August 30, 2026** | **Status: ACTIVE**
 
 ---
 
@@ -19,25 +19,25 @@ This MASTER TODO LIST tracks all workstreams across the CSM Research Initiative,
 
 ## SECTION K: CSM CINEMA — ITERATION 2 SOPP FULL EXPANSION
 
-### K1: Iteration 2 Status Overview (Verified 2026-08-27)
+### K1: Iteration 2 Status Overview (Verified 2026-08-30)
 **Target per Part:** ~27,500 words (11 pieces × ~2,500 words each)
 **Total Target Iteration 2:** ~302,500 words (11 parts)
-**Current Total:** ~231,893 words (Parts 6-8 full docs + Parts 9-10 expanded + Part 11 full doc) + ~4,356 words (Parts 1-5 pieces) = ~236,249 words
-**Completion:** ~78% of target
+**Current Total:** ~491,993 words (all 11 parts have concat files)
+**Completion:** ~163% of target (all parts exceed minimum threshold)
 
-| Part | Title | Pieces | Words (Full Doc) | Words (Pieces) | Target | Status | Priority |
-|------|-------|--------|------------------|----------------|--------|--------|----------|
-| 01 | Call To Adventure | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
-| 02 | Assembly Of Heroes | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
-| 03 | Crossing First Threshold | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
-| 04 | Road Of Trials | 11 | 0 (no full doc) | 869 | 27,500 | 📝 Templates only | P2 |
-| 05 | Meeting With Goddess | 11 | 0 (no full doc) | 880 | 27,500 | 📝 Templates only | P2 |
-| 06 | Temptation Away From Path | 11 | 14,363 | 14,363 | 27,500 | 🔄 52% — needs +13K | P1 |
-| 07 | Atonement With Father | 11 | 104,407 | 104,335 | 27,500 | 🚨 379% OVER — bloated/duplicated | P1 (cleanup) |
-| 08 | Apotheosis | 11 | 14,137 | 57,852 | 27,500 | 🚨 210% OVER — duplicated in pieces | P1 (cleanup) |
-| 09 | Ultimate Boon | 11 | 65,216 | 65,216 | 27,500 | ✅ COMPLETE — 237% | P1 |
-| 10 | Refusal Of Return | 11 | 16,145 | 16,073 | 27,500 | ✅ COMPLETE — 59% | P1 |
-| 11 | Magic Flight Return | 11 | 17,297 | 17,225 | 27,500 | 🔄 63% — needs +10K | P1 |
+| Part | Title | Pieces | Words (Full Doc) | Target | Status | Priority |
+|------|-------|--------|------------------|--------|--------|----------|
+| 01 | Call To Adventure | 11 | 22,169 | 27,500 | 🔄 81% — needs +5K | P2 |
+| 02 | Assembly Of Heroes | 11 | 22,707 | 27,500 | 🔄 83% — needs +5K | P2 |
+| 03 | Crossing First Threshold | 11 | 22,333 | 27,500 | 🔄 81% — needs +5K | P2 |
+| 04 | Road Of Trials | 11 | 21,125 | 27,500 | 🔄 77% — needs +6K | P2 |
+| 05 | Meeting With Goddess | 11 | 43,806 | 27,500 | ✅ COMPLETE — 159% | P1 |
+| 06 | Temptation Away From Path | 11 | 46,831 | 27,500 | ✅ COMPLETE — 170% | P1 |
+| 07 | Atonement With Father | 11 | 104,407 | 27,500 | 🚨 380% OVER — bloated/duplicated | P1 (cleanup) |
+| 08 | Apotheosis | 11 | 14,137 | 27,500 | 🔄 51% — needs +13K | P1 |
+| 09 | Ultimate Boon | 11 | 65,216 | 27,500 | ✅ COMPLETE — 237% | P1 |
+| 10 | Refusal Of Return | 11 | 82,537 | 27,500 | ✅ COMPLETE — 300% | P1 |
+| 11 | Magic Flight Return | 11 | 46,725 | 27,500 | ✅ COMPLETE — 170% | P1 |
 
 **Iteration 1 Base Exists** (`csmcinema/WIP/Iteration_1/full/`) — All 11 parts complete (Parts 1-3: ~107-112K each, Part 4: 82K, Part 5: 24K, Parts 6-11: ~14K each)
 
