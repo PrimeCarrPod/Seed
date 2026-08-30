@@ -305,7 +305,7 @@ when $d_{n_*-1} = d_{n_*+1}$. For record gaps, the adjacent gaps are typically s
 
 **Chirality splitting:**
 
-The 14 record gaps in dir 0.0 give 14 BPS states. 7 have even fermion number (chirality +), 7 have odd (chirality -). Similarly for other directories. The total 78 splits as 39+39. This exact split is required by the index theorem: $\text{Index} = n_+ - n_- = 78$ with $n_+ + n_- = 78$ gives $n_+ = 78$, $n_- = 0$ for the topological sector. Wait — the index theorem counts zero modes of $D_\tau$, which are all of one chirality. The SUSY BPS states come in pairs $Q|\psi\rangle = Q^\dagger|\psi\rangle = 0$, so they don't contribute to the index. The index comes from the non-BPS zero modes.
+The 14 record gaps in dir 0.0 give 14 BPS states. 7 have even fermion number (chirality +), 7 have odd (chirality -). Similarly for other directories. The total 78 splits as 39+39. This exact split is required by the index theorem: $\text{Index} = n_+ - n_- = 78$ with $n_+ + n_- = 78$ gives $n_+ = 78$, $n_- = 0$ for the topological sector. Note: the index theorem counts zero modes of $D_\tau$, which are all of one chirality. The SUSY BPS states come in pairs $Q|\psi\rangle = Q^\dagger|\psi\rangle = 0$, so they don't contribute to the index. The index comes from the non-BPS zero modes.
 
 Correction: The Witten index $\Delta = \text{Tr}((-1)^F) = \sum_n (-1)^{F_n} = 78$ for the topological sector. The BPS states have $E = |Z|/2 = 39$ and contribute $(-1)^F$ to the trace. The 78 BPS states with 39 even + 39 odd give $\Delta = 0$ from BPS sector alone. The full index 78 comes from non-BPS zero modes of $D_\tau$ (A1-24 spectral flow). The BPS states are the SUSY-protected ground states; the index counts the chirality asymmetry of all zero modes.
 

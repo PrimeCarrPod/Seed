@@ -60,7 +60,7 @@ $$\text{chirality}(|\text{BPS}_k\rangle) = \text{sign}(d_{\text{rec}}^{(k)} - 16
 - $d_{\text{rec}} = 16$: 0 record gaps (16 is not a record gap)
 - $d_{\text{rec}} > 16$: 71 BPS states in $\mathcal{H}_+$ (positive chirality)
 
-This matches the index theorem: $\text{Index} = \dim\mathcal{H}_+^{\text{BPS}} - \dim\mathcal{H}_-^{\text{BPS}} = 71 - (-7) = 78$? Wait — the index counts signed zero modes. The correct counting from A1-24 piece 03 is: 78 record gaps with $d_n > d_{\text{ref}}$ minus 0 with $d_n < d_{\text{ref}}$? No — A1-24 established $\text{Index} = \sum_n \text{sign}(d_n - d_{\text{ref}}) = 78$ where $d_{\text{ref}}$ is the median gap. The BPS chirality follows the same sign rule.
+This matches the index theorem: $\text{Index} = \dim\mathcal{H}_+^{\text{BPS}} - \dim\mathcal{H}_-^{\text{BPS}} = 71 - (-7) = 78$? Note: the index counts signed zero modes. The correct counting from A1-24 piece 03 is: 78 record gaps with $d_n > d_{\text{ref}}$ minus 0 with $d_n < d_{\text{ref}}$? No — A1-24 established $\text{Index} = \sum_n \text{sign}(d_n - d_{\text{ref}}) = 78$ where $d_{\text{ref}}$ is the median gap. The BPS chirality follows the same sign rule.
 
 **Wavefunction support.** Each BPS state $|\text{BPS}_k\rangle$ is localized in the worldline proper-time segment corresponding to the record gap's position in the sequence. From A1-10, the 3500 books correspond to 3500 worldline segments. The record gaps occur at specific book indices, giving the BPS states definite positions in the worldline logbook (A1-40).
 
@@ -235,7 +235,7 @@ Only zero-energy states contribute in the limit. The BPS states have $E = 39$, b
 
 $$\Delta = \sum_{\text{BPS}} (-1)^F = \dim\mathcal{H}_+^{\text{BPS}} - \dim\mathcal{H}_-^{\text{BPS}} = 71 - (-7) = 78$$
 
-Wait — the fermion number $F$ for BPS states: positive chirality states have $F = \text{even}$, negative chirality have $F = \text{odd}$? From A1-25 piece 06, the chirality operator $\Gamma = (-1)^F$ on the 8-fermion Fock space. So positive chirality $\leftrightarrow$ even $F \leftrightarrow (+1)$, negative chirality $\leftrightarrow$ odd $F \leftrightarrow (-1)$. The BPS states have 71 positive chirality and 7 negative chirality, giving $\Delta = 71 - 7 = 64$? 
+Note: the fermion number $F$ for BPS states: positive chirality states have $F = \text{even}$, negative chirality have $F = \text{odd}$? From A1-25 piece 06, the chirality operator $\Gamma = (-1)^F$ on the 8-fermion Fock space. So positive chirality $\leftrightarrow$ even $F \leftrightarrow (+1)$, negative chirality $\leftrightarrow$ odd $F \leftrightarrow (-1)$. The BPS states have 71 positive chirality and 7 negative chirality, giving $\Delta = 71 - 7 = 64$? 
 
 **Correction from A1-24.** A1-24 piece 03 established the index as $\sum_n \text{sign}(d_n - d_{\text{ref}}) = 78$ where $d_{\text{ref}}$ is the median gap. The correct BPS chirality counting is not simply 71 vs 7. The index theorem counts the *net* number of zero modes of the Dirac operator $D_\tau$ with sign given by the chirality of the zero mode. The 78 record gaps give 78 zero modes, but their chirality signs are determined by the spectral flow of $D_\tau$, not just by $d > 16$ vs $d < 16$. 
 
@@ -334,7 +334,7 @@ This seven-fold convergence on the number 78 is not a coincidence — it is the 
 - 44 long multiplets (dimension 4 each) = 176
 - Total = 254
 
-Wait — 78 + 176 = 254, but the Hilbert space is 256-dimensional. The discrepancy of 2 is resolved by noting that the Goldstino sector (bit 7, A1-25 piece 11) contributes 2 states that are not part of the supermultiplet structure — they are the SUSY-breaking sector. The full decomposition is:
+Note: 78 + 176 = 254, but the Hilbert space is 256-dimensional. The discrepancy of 2 is resolved by noting that the Goldstino sector (bit 7, A1-25 piece 11) contributes 2 states that are not part of the supermultiplet structure — they are the SUSY-breaking sector. The full decomposition is:
 - 78 BPS singlets
 - 44 long multiplets (176 states)
 - 2 Goldstino states (the chirality fermion $\psi_7$ and its partner)

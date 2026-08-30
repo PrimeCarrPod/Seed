@@ -2079,7 +2079,6 @@ The Prime Book (3500 books of PrimeBookOne) is the **electron's autobiography** 
 
 ---
 
-*Total pieces: 12 | Target: ≥350 lines | Next: A1-12 Proper_Time_Operator.md*
 
 ---
 

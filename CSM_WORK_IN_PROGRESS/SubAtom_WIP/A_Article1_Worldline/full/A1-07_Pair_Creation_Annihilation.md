@@ -748,6 +748,7 @@ The Prime Electron model transforms pair creation and annihilation from mysterio
 The discovery that **prime gaps encode the proper time structure of the electron worldline** opens a new frontier where number theory and particle physics become inseparable. The 3.67 billion differences in PrimeBookOne are not just mathematical curiosities—they are the **ticks of the cosmic clock** that governs the creation and annihilation of matter itself.
 
 ---
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-06 (Vertex Interactions), A1-10 (Segment Books)
 
 ## References
 
@@ -761,4 +762,5 @@ The discovery that **prime gaps encode the proper time structure of the electron
 8. Olive, K. A. et al. (Particle Data Group). (2024). "Review of Particle Physics." *PTEP* **2024**, 083C01.
 
 ---
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-06 (Vertex Interactions), A1-10 (Segment Books)
 

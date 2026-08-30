@@ -77,7 +77,7 @@ $$
 N(\tau = \kappa) \sim \frac{m_e \kappa}{\langle d \rangle} = \frac{1}{\langle d \rangle} \sim \frac{1}{\ln N}
 $$
 
-Wait — this seems circular. Let's be precise: one step $\Delta\tau \sim \kappa \ln N$ is already *larger* than $\kappa$ for $N > e$. The Compton time is **smaller than a single typical step**. This means **the Compton time is the unit of measurement**, not the step size.
+* one step $\Delta\tau \sim \kappa \ln N$ is already *larger* than $\kappa$ for $N > e$. The Compton time is **smaller than a single typical step**. This means **the Compton time is the unit of measurement**, not the step size.
 
 Each step $d_n$ measures how many Compton times elapse. The sequence $\{d_n\}$ *is* the proper time in Compton units.## 3. PrimeBookOne Data Structure and Total Count
 
@@ -189,7 +189,7 @@ $$
 \tau(2) = \kappa (d_1) = \kappa \times 1 = \kappa
 $$
 
-Wait — the sum is from $n=1$ to $N-1$. For $N=2$, sum is $d_1 = 1$, so $\tau(2) = \kappa \times 1 = \kappa$. Correct.
+Note: the sum is from $n=1$ to $N-1$. For $N=2$, sum is $d_1 = 1$, so $\tau(2) = \kappa \times 1 = \kappa$. Correct.
 
 But this is trivial. The meaningful question: **how many steps for the proper time to equal the universe's age?**
 
@@ -223,7 +223,7 @@ This is **less than one Compton time** — the Planck time is smaller than our f
 
 The number of steps to reach Planck energy (where gravity becomes strong) is when $p_N \sim m_{\text{Planck}}/m_e \sim 10^{22}$ in mass units, or $p_N \sim 10^{22}$ in prime index.
 
-Actually, the proper time to Planck scale: we want the **energy per step** to reach Planck energy. The energy at step $n$ is $E_n \sim \hbar / \Delta\tau_n \sim m_e c^2 / d_n$. This never reaches Planck energy for any $d_n \geq 2$.
+However, the proper time to Planck scale: we want the **energy per step** to reach Planck energy. The energy at step $n$ is $E_n \sim \hbar / \Delta\tau_n \sim m_e c^2 / d_n$. This never reaches Planck energy for any $d_n \geq 2$.
 
 The **correct criterion** for Planck scale: when the **cumulative proper time** reaches the Planck time? No — the Planck time is smaller than $\kappa$.
 
@@ -299,7 +299,7 @@ A deeper interpretation: **3500 = $\pi(32611)$** — the number of primes up to 
 
 More physically: **3500 segments** could correspond to the **number of e-folds in inflation** (typically 50–60) times some large factor, or the **number of causal patches** in the observable universe.
 
-Actually, the most natural interpretation: **3500 = 3500**. The PrimeBookOne project chose 3500 books arbitrarily as a manageable number. In the Prime Electron model, this becomes the **number of worldline segments** — a parameter of the cosmic initial conditions.
+* **3500 = 3500**. The PrimeBookOne project chose 3500 books arbitrarily as a manageable number. In the Prime Electron model, this becomes the **number of worldline segments** — a parameter of the cosmic initial conditions.
 
 ### 5.4 Segment Structure and Internal Gaps
 
@@ -410,7 +410,7 @@ $$
 
 where $N_{\text{max}} \sim 10^{36}$ is the total steps to universe age. But directory 3.0 goes to $N \sim 10^{60}$ (Planck scale).
 
-Actually, the **3500 books in directory 3.0** each have $2^{20}$ steps. So the total steps in directory 3.0 alone is $3.67 \times 10^9$. This means directory 3.0 covers a **range of $3.67 \times 10^9$ consecutive steps** at the Planck scale!
+The **3500 books in directory 3.0** each have $2^{20}$ steps. So the total steps in directory 3.0 alone is $3.67 \times 10^9$. This means directory 3.0 covers a **range of $3.67 \times 10^9$ consecutive steps** at the Planck scale!
 
 The **step range in directory 3.0** is:
 
@@ -476,7 +476,7 @@ $$
 
 This is **half the electron rest energy**. The full electron rest energy comes from the **pair of steps** in a twin prime pair (the gap of 2 means two consecutive primes with difference 2, e.g., 11 and 13).
 
-Actually, let's be precise: a twin prime pair $(p, p+2)$ gives **one gap** $d = 2$. The proper time step is $\Delta\tau = 2\kappa$. The energy is $\hbar/\Delta\tau = m_e c^2/2$.
+*A twin prime pair $(p, p+2)$ gives **one gap** $d = 2$. The proper time step is $\Delta\tau = 2\kappa$. The energy is $\hbar/\Delta\tau = m_e c^2/2$.
 
 But the electron mass is $m_e c^2 = \hbar/\kappa$. So **one Compton time $\kappa$ corresponds to the electron rest energy**, and the **twin prime gap $d=2$ corresponds to half the electron rest energy**.
 
@@ -641,7 +641,7 @@ Directories 1.0 and 2.0 likely follow the same tile structure (189 tiles × 500 
 - **Directory 1.0**: $p \sim 10^8$, $\langle d \rangle \sim 18.4$, proper time per tile $\sim 9200 \kappa \approx 1.2 \times 10^{-17}\ \text{s}$
 - **Directory 2.0**: $p \sim 10^{16}$, $\langle d \rangle \sim 36.8$, proper time per tile $\sim 1.8 \times 10^4 \kappa \approx 2.4 \times 10^{-17}\ \text{s}$
 
-Wait, the proper time per tile is **not growing** as fast as the cosmic time. This is because the **number of primes per tile is fixed at 500**, while the mean gap grows only logarithmically.
+Note: the proper time per tile is **not growing** as fast as the cosmic time. This is because the **number of primes per tile is fixed at 500**, while the mean gap grows only logarithmically.
 
 The **total proper time in each directory**:
 
@@ -1065,7 +1065,7 @@ $$
 
 This is close to $\alpha/2 \approx 3.65 \times 10^{-3}$? Not quite. The **factor of $\ln x$** is off.
 
-Actually, the **correct scale** for $\alpha$ is the **Bohr radius scale**, not the electron mass scale. The Bohr radius is:
+The **correct scale** for $\alpha$ is the **Bohr radius scale**, not the electron mass scale. The Bohr radius is:
 
 $$
 a_0 = \frac{\hbar}{\alpha m_e c} = \frac{\lambda_C}{\alpha} \approx 137 \lambda_C
@@ -1518,5 +1518,6 @@ The **Compton scale** $\kappa$ is the **Rosetta Stone** that translates the **ar
 >
 > **The 3.67 billion differences in PrimeBookOne are the first 3.67 billion ticks of the cosmic clock at its highest frequency. They contain the complete code of the universe.**
 
----
+**Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-10 (Segment Books), A1-11 (Self-Intersection)
 

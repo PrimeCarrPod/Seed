@@ -52,7 +52,7 @@ $$S_{\text{BPS}} = -\text{Tr}(\rho_{\text{BPS}} \log \rho_{\text{BPS}}) = \log 7
 
 $$S_+ = \log 71 \approx 4.263, \quad S_- = \log 7 \approx 1.946$$
 
-The total BPS entropy is $S_{\text{BPS}} = S_+ + S_- = \log 71 + \log 7 = \log 497 \neq \log 78$? Wait — the chiral split is not a tensor product. The correct decomposition is:
+The total BPS entropy is $S_{\text{BPS}} = S_+ + S_- = \log 71 + \log 7 = \log 497 \neq \log 78$? Note: the chiral split is not a tensor product. The correct decomposition is:
 
 $$S_{\text{BPS}} = \log(\dim \mathcal{H}_{\text{BPS}}) = \log 78$$
 

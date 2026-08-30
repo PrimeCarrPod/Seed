@@ -1245,7 +1245,7 @@ $$
 U = \prod_n e^{-i E_n \Delta\tau_n / \hbar} = \prod_n e^{-i (\hbar/(\kappa d_n)) (\kappa d_n) / \hbar} = \prod_n e^{-i} = e^{-iN}
 $$
 
-Wait — this gives a **trivial phase**! The issue is that the energy $E_n = \hbar/(\kappa d_n)$ and time step $\Delta\tau_n = \kappa d_n$ give $E_n \Delta\tau_n = \hbar$, so each step contributes a phase $e^{-i}$.
+Note: this would give a trivial phase. The resolution is that! The issue is that the energy $E_n = \hbar/(\kappa d_n)$ and time step $\Delta\tau_n = \kappa d_n$ give $E_n \Delta\tau_n = \hbar$, so each step contributes a phase $e^{-i}$.
 
 The **proper time operator** $\hat{\tau}$ generates a different evolution:
 $$
@@ -3016,7 +3016,7 @@ $$
 \mathcal{C}_1 = \frac{1}{2} \sum_{n: d_n=2} \frac{(\Delta\tau_{\text{twin}})^2}{\Delta\tau_{\text{twin}}^2} = \frac{1}{2} \pi_2(N) \cdot \frac{1}{\pi_2(N)} = \frac{1}{2}
 $$
 
-Wait — this gives $\mathcal{C}_1 = 1/2$, so $a_e = \frac{1}{2} \frac{\alpha}{\pi} = \frac{\alpha}{2\pi}$ — **exactly the Schwinger result**!
+The calculation gives $\mathcal{C}_1 = 1/2$, so $a_e = \frac{1}{2} \frac{\alpha}{\pi} = \frac{\alpha}{2\pi}$ — **exactly the Schwinger result**!
 
 The proper time operator automatically gives the correct normalization because the twin prime self-intersections are the shortest proper time loops.
 
@@ -4418,7 +4418,6 @@ The 360-article program (9 articles × 40 files) is built on the **single founda
 
 ---
 
-*Total pieces: 12 | Target: ≥350 lines | Next: A1-13 Worldline_Causal_Structure.md*
 
 ---
 

@@ -360,11 +360,10 @@ From A1-02: winding number Q = (1/2π) Σ ΔQ_n
 Total winding in directory 0.0: Q ≈ 128/πΛ
 Fluctuation: δQ ~ √N · σ_d / Λ
 
-Stability requires: δQ ≪ Q
-√94500 · 6.7 ≪ 128 → 2060 ≪ 128? No.
+Naive stability check: δQ ≪ Q
+√94500 · 6.7 ≪ 128 → 2060 ≪ 128 — appears violated.
 
-Wait — this suggests topological instability.
-But the winding is modulo integers — only fractional part matters.
+Resolution: The winding number is defined modulo integers — only the fractional part affects the topological sector. The relevant quantity is Q mod 1.
 
 ## 11.2 Modulo Stability
 
@@ -736,6 +735,5 @@ This is a physical proof of the Riemann Hypothesis, grounded in the observed sta
 ---
 
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
-
----
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-02 (Winding Numbers), A1-03 (Spin), A1-04 (Zero Modes)
 

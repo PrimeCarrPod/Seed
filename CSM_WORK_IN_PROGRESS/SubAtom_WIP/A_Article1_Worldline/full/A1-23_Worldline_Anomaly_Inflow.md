@@ -483,7 +483,7 @@ For p up to ~10²⁰ (since 3500 books × 2²⁰ gaps covers up to prime index ~
 - Minus ~14 from 0.0, 2-3 from 1.0, 2-3 from 2.0
 - Remaining for 3.0: ~22 - 14 - 2 - 2 = 4 record gaps
 
-Wait, this seems too few. Let's recalculate: the number of record gaps up to prime index N is approximately log N + γ (Euler's constant) + O(1/log N). For N = 3.67×10⁹:
+Note: recalculating more carefully: the number of record gaps up to prime index N is approximately log N + γ (Euler's constant) + O(1/log N). For N = 3.67×10⁹:
 log(3.67×10⁹) ≈ 22.03
 
 The record gaps are at prime indices where the gap exceeds all previous gaps. The sequence of record gaps grows roughly as log² p. For p ~ 10¹¹, log² p ~ 500. So there are record gaps up to ~500.

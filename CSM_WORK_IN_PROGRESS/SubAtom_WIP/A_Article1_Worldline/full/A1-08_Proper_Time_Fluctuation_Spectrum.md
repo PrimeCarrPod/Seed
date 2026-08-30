@@ -1350,6 +1350,7 @@ The spectrum exhibits a **unique combination**:
 This **mathematical fingerprint** is unforgeable — it either matches nature exactly, or the Prime Electron hypothesis is false. The experimental program outlined here provides a clear path to verification.
 
 ---
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-06 (Vertex Interactions), A1-10 (Segment Books)
 
 ## References
 
@@ -1363,4 +1364,5 @@ This **mathematical fingerprint** is unforgeable — it either matches nature ex
 8. Giovannetti, V., Lloyd, S. & Maccone, L. (2004). "Quantum-Enhanced Measurements: Beating the Standard Quantum Limit." *Science* **306**, 1330.
 
 ---
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-06 (Vertex Interactions), A1-10 (Segment Books)
 

@@ -2180,9 +2180,6 @@ The remaining 354 files in this research program extract every Standard Model pa
 
 How the forward/backward vertex alternation creates particle/antiparticle pairs. The one-electron universe in action.
 
----
-
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
-
----
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-02 (Winding Numbers), A1-07 (Pair Creation)
 
