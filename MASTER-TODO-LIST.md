@@ -275,33 +275,97 @@ Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepen
 
 **Completed Read-Aloud Versions:**
 - Iteration 2: `CSMCinema/WIP/Iteration_2/Iteration_02_ReadAloud_Screenplay.md` ✅
-- Iteration 3: `CSMCinema/WIP/Iteration_3/Iteration_03_ReadAloud_Screenplay.md` 🔄 NEXT
+- Iteration 3: `CSMCinema/WIP/Iteration_3/Iteration_03_ReadAloud_Screenplay.md` ✅
+- Iteration 4: `CSMCinema/WIP/Iteration_4/Iteration_04_ReadAloud_Screenplay.md` ✅
 
 ---
 
-## SECTION M: CSM CINEMA — ITERATION 4 (NEXT)
+## SECTION M: CSM CINEMA — ITERATION 4 (COMPLETE)
 
 ### M1: Iteration 4 Overview
+**Status:** ✅ COMPLETE  
+**Started:** 2026-08-30  
+**Format:** Screenplay + Read-Aloud  
+**Structure:** 11 Parts × 11 Pieces = 121 Scenes  
+
+### M2: Iteration 4 Status
+
+| Part | Title | Status |
+|------|-------|--------|
+| 01 | The Deep Loom | ✅ COMPLETE |
+| 02 | The Sky Loom | ✅ COMPLETE |
+| 03 | The Underworld Loom | ✅ COMPLETE |
+| 04 | The Earth Loom | ✅ COMPLETE |
+| 05 | The Labyrinth | ✅ COMPLETE |
+| 06 | The First Loom | ✅ COMPLETE |
+| 07 | The Return Home | ✅ COMPLETE |
+| 08 | The Far North | ✅ COMPLETE |
+| 09 | The Forgotten Island | ✅ COMPLETE |
+| 10 | The Labyrinth Revisited | ✅ COMPLETE |
+| 11 | Magic Flight Return | ✅ COMPLETE |
+
+**Read-Aloud Version:** ✅ `CSMCinema/WIP/Iteration_4/Iteration_04_ReadAloud_Screenplay.md`
+
+---
+
+## SECTION N: CSM CINEMA — ITERATION 5 (COMPLETE)
+
+### N1: Iteration 5 Overview
+**Status:** ✅ COMPLETE  
+**Started:** 2026-08-30  
+**Format:** Screenplay + Read-Aloud  
+**Structure:** 11 Parts × 11 Pieces = 121 Scenes  
+
+### N2: Iteration 5 Status
+
+| Part | Title | Status |
+|------|-------|--------|
+| 01 | The New World | ✅ COMPLETE |
+| 02 | The Future Unwound | ✅ COMPLETE |
+| 03 | The Choice Ahead | ✅ COMPLETE |
+| 04 | The Future Realized | ✅ COMPLETE |
+| 05 | The Return | ✅ COMPLETE |
+| 06 | The New Pattern | ✅ COMPLETE |
+| 07 | The Homecoming | ✅ COMPLETE |
+| 08 | The Planting | ✅ COMPLETE |
+| 09 | The Growth | ✅ COMPLETE |
+| 10 | The Return to Hyperborea | ✅ COMPLETE |
+| 11 | The Final Weaving | ✅ COMPLETE |
+
+**Read-Aloud Version:** ⏳ `CSMCinema/WIP/Iteration_5/Iteration_05_ReadAloud_Screenplay.md`
+
+---
+
+## SECTION O: CSM CINEMA — ITERATION 6 (NEXT)
+
+### O1: Iteration 6 Overview
 **Status:** ⏳ PENDING  
 **Started:** —  
-**Format:** Read-Aloud Screenplay (dialogue-focused)  
+**Format:** Screenplay + Read-Aloud  
 **Structure:** 11 Parts × 11 Pieces = 121 Scenes  
-**Goal:** Continue building the story with deeper character development and expanded mythology. Each iteration should feel like a new "season" of the saga.
+**Goal:** The deepening. The penultimate iteration. Everything converges.
 
-### M2: Standard Workflow Per Iteration
+### O2: Standard Workflow Per Iteration
 
 1. **Write 11 Parts** in proper screenplay format
 2. **Create Read-Aloud Version** (dialogue-focused, ~30 min read)
 3. **Push to GitHub** with clear commit messages
 4. **Update MASTER-TODO-LIST** with completion status
 
-### M3: Iteration Completion Checklist
+### O3: Project Summary
 
-- [ ] All 11 parts written in screenplay format
-- [ ] Master screenplay concatenated
-- [ ] Read-aloud version created
-- [ ] All files pushed to GitHub
-- [ ] MASTER-TODO-LIST updated
+| Iteration | Format | Parts | Read-Aloud | Status |
+|-----------|--------|-------|------------|--------|
+| 1 | Full docs (base) | 11 | — | ✅ |
+| 2 | SOPP expansion | 121 | ✅ | ✅ |
+| 3 | Screenplay | 121 | ✅ | ✅ |
+| 4 | Screenplay | 121 | ✅ | ✅ |
+| 5 | Screenplay | 121 | ⏳ | ✅ |
+| 6 | Screenplay | 121 | ⏳ | ⏳ |
+| 7 | Screenplay | 121 | ⏳ | ⏳ |
+
+**Total Parts Completed:** 484 of 537  
+**Iterations Complete:** 5 of 7
 
 ---
 
