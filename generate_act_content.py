@@ -129,6 +129,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, program evaluation metrics, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, hydrogen market projections, domestic content requirements, references and authorities, cost-benefit analysis"}
         }
+    },
+    "act16": {
+        "name": "Sustainable Aviation and Alternative Fuels Act of 2026",
+        "short_name": "SAAFA",
+        "dir": "16-Sustainable-Aviation-Fuels-Act",
+        "funding": "$40 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, aviation emissions challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, aviation sector emissions data, sustainable fuel potential, global competition"},
+            "03": {"name": "TITLE-I-SAF-PRODUCTION-SCALE-UP", "title": "Title I — Sustainable Aviation Fuel Production Scale-Up", "topic": "SAF refinery construction, feedstock development, alcohol-to-jet pathways, power-to-liquid fuels, production tax credits"},
+            "04": {"name": "TITLE-II-AIRPORT-INFRASTRUCTURE", "title": "Title II — Airport Alternative Fuel Infrastructure", "topic": "SAF blending facilities, hydrogen aircraft infrastructure, electric aircraft charging, fuel distribution systems"},
+            "05": {"name": "TITLE-III-AIRCRAFT-ELECTRIFICATION", "title": "Title III — Aircraft Electrification and Hybrid Systems", "topic": "electric regional aircraft, hybrid-electric propulsion, battery technology requirements, certification standards"},
+            "06": {"name": "TITLE-IV-HYDROGEN-AVIATION", "title": "Title IV — Hydrogen-Powered Aviation", "topic": "hydrogen combustion aircraft, fuel cell propulsion, liquid hydrogen storage, airport hydrogen systems"},
+            "07": {"name": "TITLE-V-AVIATION-WORKFORCE", "title": "Title V — Aviation Clean Energy Workforce", "topic": "SAF plant operators, aircraft mechanics retraining, hydrogen handling certification, engineering programs"},
+            "08": {"name": "TITLE-VI-INTERMODAL-CONNECTIVITY", "title": "Title VI — Intermodal Clean Transportation Connectivity", "topic": "airport-rail links, electric ground transport, multimodal freight hubs, last-mile delivery electrification"},
+            "09": {"name": "TITLE-VII-NOISE-COMMUNITY-IMPACT", "title": "Title VII — Noise Reduction and Community Impact", "topic": "quiet aircraft technology, noise abatement procedures, community engagement, environmental justice"},
+            "10": {"name": "TITLE-VIII-INTERNATIONAL-AVIATION-AGREEMENTS", "title": "Title VIII — International Aviation Climate Agreements", "topic": "ICAO CORSIA implementation, bilateral SAF agreements, carbon offset standards, global aviation emissions framework"},
+            "11": {"name": "TITLE-IX-AVIATION-R-AND-D", "title": "Title IX — Aviation Research and Development", "topic": "advanced propulsion research, lightweight materials, aerodynamic efficiency, alternative fuel testing facilities"},
+            "12": {"name": "TITLE-X-AVIATION-FINANCE", "title": "Title X — Aviation Finance and Incentive Programs", "topic": "SAF price support mechanisms, loan guarantees for production facilities, green bonds, insurance products"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, aviation sector transformation, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act17": {
+        "name": "National Water Recycling and Desalination Resilience Act of 2026",
+        "short_name": "NWRDRA",
+        "dir": "17-Water-Recycling-Desalination-Act",
+        "funding": "$35 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, water scarcity challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, drought data, water infrastructure deficit, climate change impacts on water supply"},
+            "03": {"name": "TITLE-I-MUNICIPAL-WATER-RECYCLING", "title": "Title I — Municipal Water Recycling Programs", "topic": "direct potable reuse, greywater systems, industrial water recycling, decentralized treatment, water quality standards"},
+            "04": {"name": "TITLE-II-DESALINATION-DEPLOYMENT", "title": "Title II — Desalination Plant Deployment", "topic": "seawater reverse osmosis, brackish water desalination, renewable-powered desalination, brine management"},
+            "05": {"name": "TITLE-III-WATER-INFRASTRUCTURE-MODERNIZATION", "title": "Title III — Water Infrastructure Modernization", "topic": "pipe replacement, leak detection, smart water meters, stormwater capture, aquifer recharge"},
+            "06": {"name": "TITLE-IV-AGRICULTURAL-WATER-EFFICIENCY", "title": "Title IV — Agricultural Water Efficiency", "topic": "precision irrigation, drought-resistant crops, soil moisture monitoring, agricultural water recycling"},
+            "07": {"name": "TITLE-V-INDUSTRIAL-WATER-REUSE", "title": "Title V — Industrial Water Reuse Requirements", "topic": "cooling water recycling, process water treatment, zero liquid discharge, industrial water intensity standards"},
+            "08": {"name": "TITLE-VI-WATER-WORKFORCE", "title": "Title VI — Water Sector Workforce Development", "topic": "water treatment operator training, desalination technician certification, engineering scholarships, apprenticeship programs"},
+            "09": {"name": "TITLE-VII-WATER-DATA-MANAGEMENT", "title": "Title VII — Water Data and Smart Management Systems", "topic": "national water data platform, satellite monitoring, predictive analytics, drought early warning systems"},
+            "10": {"name": "TITLE-VIII-TRIBAL-WATER-ACCESS", "title": "Title VIII — Tribal Water Access and Sovereignty", "topic": "tribal water rights, reservation water infrastructure, tribal utility authority, cultural water practices"},
+            "11": {"name": "TITLE-IX-WATER-FINANCE-INNOVATION", "title": "Title IX — Water Finance and Innovation Programs", "topic": "water infrastructure bank, green bonds for water, public-private partnerships, water affordability programs"},
+            "12": {"name": "TITLE-X-TRANSBOUNDARY-WATER-AGREEMENTS", "title": "Title X — Transboundary Water Cooperation", "topic": "Colorado River Compact, Great Lakes agreements, international water treaties, groundwater governance"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, water security benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
