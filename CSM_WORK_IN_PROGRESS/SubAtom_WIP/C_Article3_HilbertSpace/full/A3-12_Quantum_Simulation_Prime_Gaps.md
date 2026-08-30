@@ -1,8 +1,6 @@
 # A3-12_Quantum_Simulation_Prime_Gaps — Complete Article
 ## Article: A3-12_Quantum_Simulation_Prime_Gaps
-**Generated:** 2026-08-30 06:30:35 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 
@@ -376,8 +374,6 @@ where θ_d are gap phases from A3-02. The feature map is |Ψ(x)⟩ = Σ_d √P(d
 **Article 3 Status: A3-01 through A3-12 Complete (12 of 40). 28 Remaining.**
 
 
-*End of A3-12: Quantum Simulation from Prime Gaps*
-*12 pieces, concatenated length ≥ 350 lines, zipped as article3_A3-12_pieces.zip*
 *Professional physicist level — dense, technical, industry-standard*
 *All derivations grounded in PrimeBookOne 3.67B gaps, 3500 books × 2²⁰ differences*
 *No free parameters — everything derived from prime gaps*

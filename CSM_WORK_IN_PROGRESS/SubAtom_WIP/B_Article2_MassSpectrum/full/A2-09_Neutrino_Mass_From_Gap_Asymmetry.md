@@ -20,7 +20,7 @@ From PrimeBookOne (Tile01 through Tile02, books 4-6 of 426), the record gaps #4,
 | 5 | 14 | 113 | 0.1239 | 5 |
 | 6 | 18 | 523 | 0.0344 | 6 |
 
-Wait — the record gaps are actually 8, 14, 18, 20, 22, 34... Let me correct. From the PrimeBookOne data (A2-06), the record gap sequence is:
+Note: the record gaps are actually 8, 14, 18, 20, 22, 34... Let us correct. From the PrimeBookOne data (A2-06), the record gap sequence is:
 - Record 1: d=2 at p=3
 - Record 2: d=4 at p=7
 - Record 3: d=6 at p=23
@@ -31,7 +31,7 @@ Wait — the record gaps are actually 8, 14, 18, 20, 22, 34... Let me correct. F
 - Record 8: d=22 at p=1129
 - Record 9: d=34 at p=1327
 
-But A2-06 mentioned gaps 8, 10, 14 for higher excitations. Let me reconcile. The record gaps are 2, 4, 6, 8, 14, 18, 20, 22, 34... There is no record gap of 10. The "gap 10" in A2-06 referred to a local maximum or a specific prime gap value, not a record.
+But A2-06 mentioned gaps 8, 10, 14 for higher excitations. Let us reconcile. The record gaps are 2, 4, 6, 8, 14, 18, 20, 22, 34... There is no record gap of 10. The "gap 10" in A2-06 referred to a local maximum or a specific prime gap value, not a record.
 
 For neutrino masses, we use the actual record gaps #4, #5, #6: d₄=8, d₅=14, d₆=18. The asymmetry is:
 - Δd₄₅ = d₅ - d₄ = 14 - 8 = 6
@@ -44,7 +44,7 @@ The heavy generation masses from A2-06 (using gap-to-energy mapping E = ℏc/κd
 - M₅ (gap 14) ≈ 12 GeV
 - M₆ (gap 18) ≈ 15 GeV (wait, gap 18 > gap 14 so mass should be smaller...)
 
-Actually, mass ∝ 1/d, so larger gap → smaller mass. But these are "heavy" generations in the sense of higher excitation energy. Let me recompute from the running mass formula of A2-07.## Piece 03: Seesaw Mechanism from Gap Record Hierarchy
+Note: mass ∝ 1/d, so larger gap → smaller mass. But these are "heavy" generations in the sense of higher excitation energy. Let us recompute from the running mass formula of A2-07.## Piece 03: Seesaw Mechanism from Gap Record Hierarchy
 
 The seesaw mechanism in the Prime Electron framework arises naturally from the worldline topology. From A1-07, the worldline has forward-time (electron) and backward-time (positron) branches. From A2-07, the RG flow through record gap transitions generates mass scales.
 
@@ -75,7 +75,7 @@ From A2-06, the higher excitations correspond to gap records that would exist if
 - M₅ (gap 14) ~ electroweak scale ≈ 246 GeV  
 - M₆ (gap 18) ~ GUT scale ≈ 10¹⁶ GeV
 
-But this doesn't match either. Let me use the PrimeBookOne directory version flow from A2-07: 426 books → UV scale. The heavy generations correspond to intermediate directory versions.
+But this doesn't match either. Let us use the PrimeBookOne directory version flow from A2-07: 426 books → UV scale. The heavy generations correspond to intermediate directory versions.
 
 The correct approach: the neutrino masses come from the **gap asymmetry** directly, not from a traditional seesaw. The mass-squared differences are:
 

@@ -1,8 +1,6 @@
 # A2-14_Proton_Decay_From_Gap_Stability — Complete Article
 ## Article: A2-14_Proton_Decay_From_Gap_Stability
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 τ_p = (M_UV^4 / m_p^5) · (1/α_GUT^2) · C
@@ -144,9 +142,9 @@ O_5 = (1/M_GUT) (\bar{q}^c q)(\bar{q}^c ℓ)
 
 M_SUSY = m_e · (d_2/d_1) = 0.511 MeV × 2 = 1.022 MeV
 
-Wait — this is too low. Let me reconsider.
+Note: this is too low. Let us reconsider.
 
-Actually, the worldline SUSY is a different structure. The supercharges Q = Σ ψ_n √(d_n d_{n+1}) (A1-26). The SUSY breaking scale is set by the gap hierarchy. The dimension-5 operators are suppressed by:
+Note: the worldline SUSY is a different structure. The supercharges Q = Σ ψ_n √(d_n d_{n+1}) (A1-26). The SUSY breaking scale is set by the gap hierarchy. The dimension-5 operators are suppressed by:
 
 M_5 = M_GUT / (M_GUT/M_SUSY)^{1/2} ≫ M_GUT
 
@@ -239,7 +237,7 @@ where S_inst is the instanton action for the missing gap. For the first missing 
 
 m_DM ≈ 2 × 10^{16} GeV × e^{-426} ≈ 10^{-168} GeV — too light.
 
-Wait, this needs refinement. Actually, the missing gaps are not exponential — they are power-law. The correct relation is:
+Note: this needs refinement. Note: the missing gaps are not exponential — they are power-law. The correct relation is:
 
 m_DM ≈ m_p · (τ_p / t_0)^{1/4} where t_0 ~ 1 second
 
@@ -380,9 +378,9 @@ So BR(p → τ^+ π^0) = 0.
 BR(p → e^+ π^0) = 0.68 / (0.68 + 0.20) = 77%
 BR(p → μ^+ π^0) = 23%
 
-Wait — this contradicts Piece 05. Let me correct.
+Note: this contradicts Piece 05. Let us correct.
 
-Actually, the PMNS matrix for leptons is V_{PMNS} with |V_{e1}|^2 ≈ 0.68. The charged current coupling is g/√2 · V_{αi} where α = e,μ,τ and i = 1,2,3 (light ν). For proton decay p → ℓ^+ π^0, the amplitude involves V_{αi} for the outgoing lepton. Since the proton decay operator creates a positron (e^+), the relevant matrix element is V_{ei}. But the final state is e^+, not e^-.
+Note: the PMNS matrix for leptons is V_{PMNS} with |V_{e1}|^2 ≈ 0.68. The charged current coupling is g/√2 · V_{αi} where α = e,μ,τ and i = 1,2,3 (light ν). For proton decay p → ℓ^+ π^0, the amplitude involves V_{αi} for the outgoing lepton. Since the proton decay operator creates a positron (e^+), the relevant matrix element is V_{ei}. But the final state is e^+, not e^-.
 
 In SU(5) GUT, the X boson couples to (u,d) and (e^+, ν). The decay p → e^+ π^0 comes from the e^+ coupling. The coupling is universal (A2-13). The branching ratios are determined by the phase space and the hadronic matrix elements, not by PMNS (which governs ν mixing).
 

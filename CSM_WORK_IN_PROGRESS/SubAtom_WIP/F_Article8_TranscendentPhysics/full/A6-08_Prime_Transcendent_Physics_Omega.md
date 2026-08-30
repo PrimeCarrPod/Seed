@@ -1,8 +1,6 @@
 # Prime Transcendent Physics Omega — Complete Article
 ## Article A6: A6-08 — Prime Transcendent Physics Omega
-**Generated:** 2026-08-27 06:04:46 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

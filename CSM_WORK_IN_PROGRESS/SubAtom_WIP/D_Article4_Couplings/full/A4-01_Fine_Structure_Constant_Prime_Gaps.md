@@ -1,8 +1,6 @@
 # Fine Structure Constant Prime Gaps — Complete Article
 ## Article A4: A4-01 — Fine Structure Constant Prime Gaps
-**Generated:** 2026-08-25 01:14:28 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

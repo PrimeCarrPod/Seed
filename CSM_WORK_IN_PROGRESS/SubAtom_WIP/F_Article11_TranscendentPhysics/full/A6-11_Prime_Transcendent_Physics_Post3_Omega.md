@@ -1,8 +1,6 @@
 # Prime Transcendent Physics Post3 Omega — Complete Article
 ## Article A6: A6-11 — Prime Transcendent Physics Post3 Omega
-**Generated:** 2026-08-28 09:59:55 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -277,7 +275,7 @@ Prime 1549 = 39² + 28 = 1521 + 28. Its properties:
 - 1549 = 39² + 28, also 1549 = 17² + 30² = 289 + 900 = 1189? No.
 - 1549 = 1549 = 7² + 38² = 49 + 1444 = 1493? No.
 - Actually: 1549 = 10² + 37² = 100 + 1369 = 1469? No.
-- Let me compute: √1549 ≈ 39.36. 39² = 1521, remainder 28. 38² = 1444, remainder 105. 37² = 1369, remainder 180. 36² = 1296, remainder 253. 35² = 1225, remainder 324 = 18².
+- Let us compute: √1549 ≈ 39.36. 39² = 1521, remainder 28. 38² = 1444, remainder 105. 37² = 1369, remainder 180. 36² = 1296, remainder 253. 35² = 1225, remainder 324 = 18².
 - **1549 = 35² + 18² = 1225 + 324 = 1549** ✓
 - Digital root: 1+5+4+9 = 19 → 10 → 1 (unity)
 - 244 = 4 × 61 = 2² × 61 (index has square factor)

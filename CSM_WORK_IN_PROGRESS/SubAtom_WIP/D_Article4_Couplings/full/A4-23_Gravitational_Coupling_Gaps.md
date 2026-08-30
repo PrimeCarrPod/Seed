@@ -1,8 +1,6 @@
 # Gravitational Coupling Gaps — Complete Article
 ## Article A4: A4-23 — Gravitational Coupling Gaps
-**Generated:** 2026-08-25 20:22:15 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

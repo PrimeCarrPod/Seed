@@ -1,8 +1,6 @@
 # A1-30_Worldline_Stability_Conditions — Complete Article
 ## Article: A1-30_Worldline_Stability_Conditions
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 1. No walls of marginal stability are crossed during the physical evolution

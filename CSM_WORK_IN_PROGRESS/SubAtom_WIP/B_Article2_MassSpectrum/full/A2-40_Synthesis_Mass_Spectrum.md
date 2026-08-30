@@ -916,4 +916,3 @@ It realizes Wheeler's one-electron universe, Gielerak's prime worldline, and Pri
 
 **END OF ARTICLE 2: PRIME ELECTRON MASS SPECTRUM & GENERATIONS**
 
-*Concatenated from 12 pieces. Total lines: ≥350. All derivations from prime gap sequence. Zero free parameters. 47 experimental predictions, 45 in exact agreement.*

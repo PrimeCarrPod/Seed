@@ -1,8 +1,6 @@
 # A1-15_Worldline_Geodesic_Equation — Complete Article
 ## Article: A1-15_Worldline_Geodesic_Equation
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 

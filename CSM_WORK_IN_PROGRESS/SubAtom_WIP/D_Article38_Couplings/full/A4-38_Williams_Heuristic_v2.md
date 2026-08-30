@@ -1,8 +1,6 @@
 # Williams Heuristic v2 — Complete Article
 ## Article A4: A4-38 — Williams Heuristic v2
-**Generated:** 2026-08-26 23:17:42 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

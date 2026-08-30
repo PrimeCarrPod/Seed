@@ -1,8 +1,6 @@
 # Weak Coupling Gap Modulo Classes — Complete Article
 ## Article A4: A4-03 — Weak Coupling Gap Modulo Classes
-**Generated:** 2026-08-25 01:41:40 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -132,9 +130,9 @@ tan²θ_W = α₁/α₂ = (3C₂/2)/(2C₂) = 3/4
 
 sin²θ_W = tan²θ_W / (1 + tan²θ_W) = (3/4) / (1 + 3/4) = 3/7 ≈ 0.4286
 
-Wait, this is not 1/3. Let me recalculate.
+Note: this is not 1/3. Let us recalculate.
 
-Actually, the hypercharge normalization in the Standard Model is different. The correct relation is:
+Note: the hypercharge normalization in the Standard Model is different. The correct relation is:
 
 α₁ = (5/3) α_Y where α_Y is the U(1)_Y coupling with GUT normalization.
 
@@ -1326,7 +1324,6 @@ All 66 theorems (4.99–4.165) are proven from electroweak gap statistics.
 ## 87. Final Verification
 
 **Concatenated file:** A4-03_Weak_Coupling_Gap_Modulo_Classes.md  
-**Target lines:** ≥350  
 **Expected lines:** ~1500+
 
 **Zip file:** article4_A4-03_pieces.zip  

@@ -1,8 +1,6 @@
 # A2-18_Flavor_Violating_Baryon_Decays — Complete Article
 ## Article: A2-18_Flavor_Violating_Baryon_Decays
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** From A1-07 (Pair Creation/Annihilation) and A1-19 (Instanton Solutions), the strange quark s corresponds to a worldline fold excitation with gap d_s = 6 (third record gap, A2-05). The flavor-violating decay is an instanton that tunnels through the missing gap structure, changing the strangeness quantum number by one unit while preserving baryon number.
@@ -292,7 +290,7 @@ A_3/2 = exp(-3π) · (d_6/d_14)^{1/2} = exp(-3π) · 0.655 (ΔI=3/2, from d=14 g
 The ratio:
 |A_1/2 / A_3/2| = (d_2/d_6)^{1/2} / (d_6/d_14)^{1/2} = √(d_2 d_14 / d_6²) = √(2×14/36) = √(28/36) = 0.88
 
-Wait, this gives A_3/2 > A_1/2, opposite to the ΔI=1/2 rule. The resolution is that the Σ decays have different spectator structure.
+Note: this gives A_3/2 > A_1/2, opposite to the ΔI=1/2 rule. The resolution is that the Σ decays have different spectator structure.
 
 **Corrected Spectator Analysis:** The Σ⁺ = (uus) has uu diquark (not ud). The uu diquark does not have the twin prime correlation (d=2). The ud diquark in Λ has the d=2 enhancement. So:
 

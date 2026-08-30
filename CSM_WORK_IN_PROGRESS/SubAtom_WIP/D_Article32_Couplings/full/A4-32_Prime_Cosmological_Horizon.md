@@ -1,8 +1,6 @@
 # Prime Cosmological Horizon — Complete Article
 ## Article A4: A4-32 — Prime Cosmological Horizon
-**Generated:** 2026-08-26 21:36:23 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

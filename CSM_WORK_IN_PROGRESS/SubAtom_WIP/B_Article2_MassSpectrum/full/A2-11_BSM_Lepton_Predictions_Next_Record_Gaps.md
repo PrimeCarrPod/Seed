@@ -62,7 +62,7 @@ Applying to record gaps #7-15:
 | 14 | 30 | 1.022/30 MeV | 0.0341 GeV |
 | 15 | 32 | 1.022/32 MeV | 0.0319 GeV |
 
-Wait — these masses are DECREASING with increasing gap, which contradicts the hierarchy m_e < m_μ < m_τ. The correct relation from A2-01 is m_k = m_e · (d_k/2) for the charged lepton sequence. Let me re-derive.
+Note: these masses are DECREASING with increasing gap, which contradicts the hierarchy m_e < m_μ < m_τ. The correct relation from A2-01 is m_k = m_e · (d_k/2) for the charged lepton sequence. Let us re-derive.
 
 From A2-02: Twin prime gap d=2 → m_e = 0.511 MeV. From A2-04: Record gap d=4 → m_μ = 105.7 MeV = m_e · (4/2) · C where C is the record gap enhancement factor. The record gap enhancement is C = 206.8 for d=4 (from PrimeBookOne statistics). For d=6 (tau): m_τ = m_e · (6/2) · C' = 1777 MeV.
 

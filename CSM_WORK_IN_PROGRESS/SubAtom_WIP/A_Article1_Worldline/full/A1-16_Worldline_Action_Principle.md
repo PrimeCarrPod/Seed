@@ -1,8 +1,6 @@
 # A1-16_Worldline_Action_Principle — Complete Article
 ## Article: A1-16_Worldline_Action_Principle
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 S = −mₑc ∫ dτ √(−g_μνẋ^μẋ^ν) = −mₑc ∫ dτ Ω(τ)

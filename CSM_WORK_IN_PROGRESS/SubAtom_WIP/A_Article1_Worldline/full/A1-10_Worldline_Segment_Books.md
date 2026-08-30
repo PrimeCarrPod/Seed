@@ -1,8 +1,6 @@
 # A1-10_Worldline_Segment_Books — Complete Article
 ## Article: A1-10_Worldline_Segment_Books
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 The total dataset:
@@ -434,7 +432,7 @@ Over 3500 books, the proper time step grows by factor:
 $$
 \frac{\bar{d}_{3500}}{\bar{d}_1} \approx \frac{\ln 3500}{\ln 1} \to \infty \text{ (formally)}
 $$
-Actually $\bar{d}_1 \sim \ln(2^{20}) \approx 13.8$, $\bar{d}_{3500} \sim \ln(3500 \times 2^{20}) \approx 22.1$ — **factor of ~1.6 growth**.
+Note: $\bar{d}_1 \sim \ln(2^{20}) \approx 13.8$, $\bar{d}_{3500} \sim \ln(3500 \times 2^{20}) \approx 22.1$ — **factor of ~1.6 growth**.
 
 This **60% increase in proper time step** over the 3500 segments is the **primordial expansion** from IR to UV.
 
@@ -826,9 +824,8 @@ The **3500 books = 3500 segments** identification is the **cornerstone** of the 
 
 *Note: Values are asymptotic estimates. Exact values require PrimeBookOne data access.*
 
-
-*End of A1-10: Worldline Segment Books — 3500 Books = 3500 Segments*
-*Total pieces: 12 | Target: ≥350 lines | Next: A1-11 Worldline Self-Intersection*
+**Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-06 (Vertex Interactions), A1-11 (Self-Intersection)
 
 ---
 

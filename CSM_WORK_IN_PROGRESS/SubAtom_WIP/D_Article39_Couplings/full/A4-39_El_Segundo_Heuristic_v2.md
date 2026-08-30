@@ -1,8 +1,6 @@
 # El Segundo Heuristic v2 — Complete Article
 ## Article A4: A4-39 — El Segundo Heuristic v2
-**Generated:** 2026-08-26 23:25:16 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

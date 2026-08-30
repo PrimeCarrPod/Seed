@@ -1,8 +1,6 @@
 # Bottom Tau Unification Gaps — Complete Article
 ## Article A4: A4-17 — Bottom Tau Unification Gaps
-**Generated:** 2026-08-25 17:45:42 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -596,7 +594,7 @@ Converting to pole masses using QCD corrections for $b$ and QED corrections for 
 
 $$m_b^{\text{pole}} = m_b^{\overline{\text{MS}}}(m_b) \left[ 1 + \frac{4}{3} \frac{\alpha_s(m_b)}{\pi} + \dots \right] = 4.176 \times 1.067 = 4.456 \text{ GeV}$$
 
-Wait — this is the pole mass. The $\overline{\text{MS}}$ mass at $m_b$ is what experiments typically quote. Let me use the standard conversion:
+Note: this is the pole mass. The $\overline{\text{MS}}$ mass at $m_b$ is what experiments typically quote. Let us use the standard conversion:
 
 The experimental value is $m_b^{\overline{\text{MS}}}(m_b) = 4.18 \pm 0.03$ GeV. Our prediction:
 

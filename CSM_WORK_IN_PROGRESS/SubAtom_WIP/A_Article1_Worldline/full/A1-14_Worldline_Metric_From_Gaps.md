@@ -1,8 +1,6 @@
 # A1-14_Worldline_Metric_From_Gaps — Complete Article
 ## Article: A1-14_Worldline_Metric_From_Gaps
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 ### 1.1 Proper Time as Worldline Parameter
@@ -225,7 +223,7 @@ $$
 \tan \theta_{\text{LC}} = \frac{dx}{d\tau} = \frac{1}{\sqrt{\langle d_n \rangle}} \sim \frac{1}{\sqrt{\ln n}}
 $$
 
-Wait — this gives angle $\to 0$ as $n \to \infty$. Let's reconsider.
+Note: this gives angle $\to 0$ as $n \to \infty$. Let's reconsider.
 
 ### 9.2 Correct Light Cone Condition
 

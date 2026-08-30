@@ -1,8 +1,6 @@
 # A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling — Complete Article
 ## Article: A2-17_Neutron_Antineutron_Oscillation_From_Gap_Tunneling
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 **Core Principle:** From A1-07 (Pair Creation/Annihilation) and A1-19 (Instanton Solutions), the neutron (udd) and antineutron (ūđđ) are distinct topological sectors of the three-quark worldline fold (A6-04, future). The oscillation n ↔ n̄ corresponds to a worldline instanton that flips the orientation of all three quark folds simultaneously.

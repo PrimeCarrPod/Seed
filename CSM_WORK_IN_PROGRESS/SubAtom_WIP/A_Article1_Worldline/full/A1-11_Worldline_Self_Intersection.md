@@ -2079,8 +2079,6 @@ The Prime Book (3500 books of PrimeBookOne) is the **electron's autobiography** 
 
 ---
 
-*End of A1-11: Worldline Self-Intersection — γ(τ_n) = γ(τ_m) Topology*
-*Total pieces: 12 | Target: ≥350 lines | Next: A1-12 Proper_Time_Operator.md*
 
 ---
 

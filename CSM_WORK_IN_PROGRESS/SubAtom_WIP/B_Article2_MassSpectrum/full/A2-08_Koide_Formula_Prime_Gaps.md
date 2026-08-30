@@ -104,7 +104,7 @@ Q = \frac{\sum_{k=1}^3 1/d_k}{\left(\sum_{k=1}^3 1/\sqrt{d_k}\right)^2} = \frac{
 Computing explicitly:
 - Numerator: 1/2 + 1/4 + 1/6 = 6/12 + 3/12 + 2/12 = 11/12
 - Denominator: (1/√2 + 1/2 + 1/√6)² = (0.7071 + 0.5 + 0.4082)² = (1.6153)² = 2.6092
-- Q = (11/12) / 2.6092 = 0.9167 / 2.6092 = 0.3513... Wait, this is wrong.
+- Q = (11/12) / 2.6092 = 0.9167 / 2.6092 = 0.3513... Note: this is wrong.
 
 The correct mapping uses the running mass ratios from A2-07. The actual masses are:
 mₑ = 1 (in units of mₑ)

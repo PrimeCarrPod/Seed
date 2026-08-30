@@ -1,8 +1,6 @@
 # A1-34_Worldline_Relative_Entropy — Complete Article
 ## Article: A1-34_Worldline_Relative_Entropy
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 $$S(\rho||\sigma) = \text{Tr}(\rho \log \rho) - \text{Tr}(\rho \log \sigma) = -S(\rho) - \text{Tr}(\rho \log \sigma)$$

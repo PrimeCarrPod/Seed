@@ -1,8 +1,6 @@
 # Strong Coupling Gap Records — Complete Article
 ## Article A4: A4-02 — Strong Coupling Gap Records
-**Generated:** 2026-08-25 01:27:50 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -1415,7 +1413,6 @@ All 79 theorems (4.20–4.98) are proven from the color gap statistics in PrimeB
 ## 91. Final Verification
 
 **Concatenated file:** A4-02_Strong_Coupling_Gap_Records.md  
-**Target lines:** ≥350  
 **Expected lines:** ~1200+
 
 **Zip file:** article4_A4-02_pieces.zip  

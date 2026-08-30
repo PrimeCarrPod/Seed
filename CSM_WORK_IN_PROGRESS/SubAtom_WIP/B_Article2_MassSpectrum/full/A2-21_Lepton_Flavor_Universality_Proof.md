@@ -1418,4 +1418,3 @@ The universe is simpler than we imagined: one electron, one worldline, one prime
 
 **END OF A2-21: LEPTON FLAVOR UNIVERSALITY PROOF**
 
-*Concatenated from 12 pieces. Total lines: ≥350. All derivations from prime gap sequence. Zero free parameters.*

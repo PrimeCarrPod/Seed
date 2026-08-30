@@ -1,8 +1,6 @@
 # Synthesis Hilbert Space — Complete Article
 ## Article 3: A3-40 — Synthesis Hilbert Space
-**Generated:** 2026-08-25 00:37:06 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

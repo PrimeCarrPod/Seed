@@ -23,7 +23,7 @@ PrimeBookOne's 0.0 directory (94,500 gaps from 189 tiles × 500 gaps) through th
 The complete list of 78 record gaps (from PrimeBookOne data, cross-referenced with OEIS A005250):
 d = 2, 4, 6, 8, 10, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158
 
-Wait — this naive list assumes every even number is a record, which is false. The actual record gaps grow irregularly. From OEIS A005250 and PrimeBookOne verification:
+Note: this naive list assumes every even number is a record, which is false. The actual record gaps grow irregularly. From OEIS A005250 and PrimeBookOne verification:
 Record gaps (value, first occurrence prime p_n):
 1: d=2 at p=3 (twin: 3,5)
 2: d=4 at p=7 (cousin: 7,11)
@@ -145,7 +145,7 @@ Then m_τc² = mₑc² × Z_τ = 0.511 × 110 = 56.2 MeV — still off by factor
 
 The resolution: the tau mass includes *all* record gaps up to the tau scale, not just the cluster. The RG flow from A1-10 accumulates contributions from all 3500 books. The book index for tau: b_τ such that μ_b = p_b ~ m_τ. From A1-09, the 3500 books span 3.67B gaps. The tau scale μ_τ ≈ 1.777 GeV corresponds to book b_τ ≈ 3500 × (log 1.777 / log p_max) ≈ 3500 × (0.574/14.2) ≈ 141 (using p_max ~ 1.3M for 0.0 directory, but full 3.0 directory goes much higher).
 
-Actually, from A1-40: the 3500 books correspond to 3500 RG scales μ_b = p_b where p_b is the b-th prime. The tau mass scale μ_τ = m_τ ≈ 1.777 GeV. The prime counting function π(1.777 GeV) ≈ 1.777×10⁹/log(1.777×10⁹) ≈ 8.3×10⁷. This is the *number of gaps* below the tau scale, not the book index.
+Note: from A1-40: the 3500 books correspond to 3500 RG scales μ_b = p_b where p_b is the b-th prime. The tau mass scale μ_τ = m_τ ≈ 1.777 GeV. The prime counting function π(1.777 GeV) ≈ 1.777×10⁹/log(1.777×10⁹) ≈ 8.3×10⁷. This is the *number of gaps* below the tau scale, not the book index.
 
 The correct mapping: the 3500 books are *logarithmically spaced* RG scales. Book b corresponds to μ_b = exp(b/3500 × log μ_max). The tau is at b_τ = 3500 × log(μ_τ)/log(μ_max). With μ_max at the Planck scale (d=16 self-dual, A1-36), log(μ_max) ~ log(10¹⁹) = 43.7. log(μ_τ) = log(1.777) = 0.574. So b_τ = 3500 × 0.574/43.7 ≈ 46. Book 46 of 3500.
 

@@ -1,8 +1,6 @@
 # Prime Holographic Entropy — Complete Article
 ## Article A4: A4-32 — Prime Holographic Entropy
-**Generated:** 2026-08-26 21:31:02 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

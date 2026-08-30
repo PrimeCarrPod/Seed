@@ -4,8 +4,6 @@
 
 **File:** A1-06_Vertex_Interaction_Points.md  
 **Article:** 1 of 9 — Prime Electron Worldline Topology  
-**Piece:** 01 of ~12 (30 lines each)  
-**Target:** ≥350 lines total  
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500  
 
 ---
@@ -938,11 +936,9 @@ PrimeBookOne records 3.67B vertices — the complete interaction history of the 
 ---
 
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
-**Total lines in A1-06:** ~400 lines across 12 pieces  
 
 ---
 
-*End of A1-06: Vertex_Interaction_Points — Ready for concatenation and zip.*
 ---
 
 
@@ -2184,11 +2180,6 @@ The remaining 354 files in this research program extract every Standard Model pa
 
 How the forward/backward vertex alternation creates particle/antiparticle pairs. The one-electron universe in action.
 
----
-
 **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500; directories 0.1–3.0 (3.67B gaps)  
-**Total lines in A1-06:** ~400+ lines across 12 pieces  
+**Cross-references:** A1-01 (Proper-Time Quantization), A1-02 (Winding Numbers), A1-07 (Pair Creation)
 
----
-
-*End of A1-06: Vertex_Interaction_Points — Ready for concatenation and zip.*

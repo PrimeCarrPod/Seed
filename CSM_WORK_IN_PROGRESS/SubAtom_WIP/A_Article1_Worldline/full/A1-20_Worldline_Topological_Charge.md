@@ -1,8 +1,6 @@
 # A1-20_Worldline_Topological_Charge — Complete Article
 ## Article: A1-20_Worldline_Topological_Charge
-**Generated:** 2026-08-30 06:30:15 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 Q = (1/2π) ∮_C dτ Tr(F ∧ F)

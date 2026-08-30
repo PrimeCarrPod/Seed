@@ -170,7 +170,7 @@ All 78 BPS states are isolated singlets — no bound states of multiple record g
 
 $$\Omega_{\text{UV}}(\gamma_k) = \begin{cases} 1 & k = 1,\dots,71 \\ \binom{7}{m} & \text{for bound states of the 7 small-gap BPS} \end{cases}$$
 
-Actually, since the duality is an outer automorphism, the UV chamber BPS spectrum is isomorphic to the IR chamber spectrum. The 7 small-gap BPS states in the UV chamber correspond to the 7 large-gap BPS states in the IR chamber.
+Since the duality is an outer automorphism, the UV chamber BPS spectrum is isomorphic to the IR chamber spectrum. The 7 small-gap BPS states in the UV chamber correspond to the 7 large-gap BPS states in the IR chamber.
 
 **Jump formula at a simple wall.** Consider a wall where two BPS states $\gamma_1$ and $\gamma_2$ become marginally stable. The KS formula gives the jump in degeneracies:
 

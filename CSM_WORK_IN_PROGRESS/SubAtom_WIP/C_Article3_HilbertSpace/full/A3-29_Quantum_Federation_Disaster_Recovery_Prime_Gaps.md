@@ -1,8 +1,6 @@
 # Quantum Federation Disaster Recovery Prime Gaps — Complete Article
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
-**Generated:** 2026-08-24 05:29:22 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 
@@ -12,8 +10,6 @@
 
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
 
-**Piece:** 01 of 12  
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -78,8 +74,6 @@ The **gap-distance** to the nearest surviving attestation. The **Gap-Recovery Ti
 
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
 
-**Piece:** 02 of 12  
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 
@@ -151,8 +145,6 @@ TGSV enforces **write-once, read-many (WORM)** semantics at the gap-index level:
 
 ## Article 3: A3-29 — Quantum Federation Disaster Recovery Prime Gaps
 
-**Piece:** 03 of 12  
-**Generated:** 2026-08-24 05:22:11 UTC
 
 ---
 

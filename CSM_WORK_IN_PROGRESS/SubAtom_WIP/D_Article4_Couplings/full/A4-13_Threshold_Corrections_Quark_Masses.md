@@ -1,8 +1,6 @@
 # A4-13_Threshold_Corrections_Quark_Masses — Complete Article
 ## Article: A4-13_Threshold_Corrections_Quark_Masses
-**Generated:** 2026-08-30 06:30:37 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 

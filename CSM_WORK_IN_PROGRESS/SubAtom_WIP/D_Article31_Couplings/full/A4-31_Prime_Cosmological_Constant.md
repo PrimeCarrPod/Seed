@@ -1,8 +1,6 @@
 # Prime Cosmological Constant — Complete Article
 ## Article A4: A4-31 — Prime Cosmological Constant
-**Generated:** 2026-08-26 20:59:53 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

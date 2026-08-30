@@ -101,7 +101,7 @@ This is the energy of a proper time step of size Δτ_min = 2κ.
 
 **Mass gap.** The mass gap to the first excited state (d=4) is:
 ΔE = E(d=4) - E(d=2) = ℏ/(4κ) - ℏ/(2κ) = -ℏ/(4κ) (negative?)
-Actually energies decrease with increasing d. The ground state is d=∞? No.
+Note: energies decrease with increasing d. The ground state is not d=∞; the physical ground state is d=2 (twin prime).
 
 **Physical interpretation.** The electron is not a single gap state but a coherent superposition of all gap states weighted by the gap distribution. The peak of the distribution at d=2 gives the dominant contribution. The mass mₑ = ℏ/κ is the Compton scale, not a single gap energy.
 

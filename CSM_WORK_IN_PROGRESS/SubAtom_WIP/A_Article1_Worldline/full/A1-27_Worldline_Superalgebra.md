@@ -152,7 +152,7 @@ $$
 [D, Q] = \frac{1}{4} \sum_{m,n} [\log d_m + \log d_{m+1}, \psi_n \sqrt{d_n d_{n+1}}] = \frac{1}{4} \sum_n \psi_n \sqrt{d_n d_{n+1}} (\log d_n + \log d_{n+1} - \log d_n - \log d_{n+1}) = 0
 $$
 
-Wait — $D$ is diagonal in the gap basis, so $[D, Q] = 0$ in this representation. The superconformal algebra requires $[D, Q] = -\frac{1}{2} Q$. This means our $D$ is not the correct dilation generator for the superconformal algebra. The correct $D$ must include a term that counts the scaling dimension of $Q$.
+Note: $D$ is diagonal in the gap basis, so $[D, Q] = 0$ in this representation. The superconformal algebra requires $[D, Q] = -\frac{1}{2} Q$. This means our $D$ is not the correct dilation generator for the superconformal algebra. The correct $D$ must include a term that counts the scaling dimension of $Q$.
 
 The correct dilation generator is $D = \frac{1}{2} \sum_n (d_n \frac{\partial}{\partial d_n} + \frac{1}{2})$. In the gap basis, this acts as $D |d_1 \dots d_N\rangle = \frac{1}{2} \sum_n (\log d_n) |d_1 \dots d_N\rangle$. Then $[D, Q] = -\frac{1}{2} Q$ because $\sqrt{d_n d_{n+1}}$ has scaling dimension 1.
 
@@ -251,7 +251,7 @@ The 78 BPS states split into:
 - 39 chiral primaries: annihilated by $Q$ and $\bar{S}$, with $h = r/2$
 - 39 anti-chiral primaries: annihilated by $Q^\dagger$ and $S$, with $h = -r/2$
 
-Each chiral primary $|\psi\rangle$ satisfies $Q|\psi\rangle = 0$, $\bar{S}|\psi\rangle = 0$. Its superconformal descendants are $Q^\dagger|\psi\rangle$, $S|\psi\rangle$, and $Q^\dagger S|\psi\rangle$. The full short multiplet has 4 states: $\{|\psi\rangle, Q^\dagger|\psi\rangle, S|\psi\rangle, Q^\dagger S|\psi\rangle\}$. But for our BPS states, $Q^\dagger|\text{BPS}\rangle = 0$ and $S|\text{BPS}\rangle = 0$, so the multiplet collapses to just the BPS state itself (dimension 1). Wait — the BPS states are annihilated by both $Q$ and $Q^\dagger$, so they are singlets of the superalgebra.
+Each chiral primary $|\psi\rangle$ satisfies $Q|\psi\rangle = 0$, $\bar{S}|\psi\rangle = 0$. Its superconformal descendants are $Q^\dagger|\psi\rangle$, $S|\psi\rangle$, and $Q^\dagger S|\psi\rangle$. The full short multiplet has 4 states: $\{|\psi\rangle, Q^\dagger|\psi\rangle, S|\psi\rangle, Q^\dagger S|\psi\rangle\}$. But for our BPS states, $Q^\dagger|\text{BPS}\rangle = 0$ and $S|\text{BPS}\rangle = 0$, so the multiplet collapses to just the BPS state itself (dimension 1). Note: the BPS states are annihilated by both $Q$ and $Q^\dagger$, so they are singlets of the superalgebra.
 
 Correction: The BPS states are the ground states of the theory, annihilated by all supercharges. They form 78 singlet supermultiplets. Each is a 1-dim representation with $H=39$, $Z=78$, $R=0$.
 
@@ -293,7 +293,7 @@ $$
 
 This is independent of $\beta$ because non-BPS states come in boson-fermion pairs that cancel in the supertrace. Only the BPS states (with $E = |Z|/2 = 39$) contribute, giving $\Delta = 78 \times e^{-\beta \cdot 39} \times (-1)^{F_{\text{BPS}}}$. But the BPS states have $F=0$ in the topological sector (they are annihilated by $Q$ and $Q^\dagger$), so $(-1)^F = +1$. Thus $\Delta = 78 e^{-\beta \cdot 39}$.
 
-Wait — the Witten index is usually defined as $\Delta = \lim_{\beta \to \infty} \text{Tr}((-1)^F e^{-\beta H})$, which gives the number of bosonic ground states minus fermionic ground states. For our system, the BPS states are all bosonic in the topological sector (they are annihilated by $Q$ and $Q^\dagger$, so they have no fermionic excitations). Thus $\Delta = 78$.
+Note: the Witten index is usually defined as $\Delta = \lim_{\beta \to \infty} \text{Tr}((-1)^F e^{-\beta H})$, which gives the number of bosonic ground states minus fermionic ground states. For our system, the BPS states are all bosonic in the topological sector (they are annihilated by $Q$ and $Q^\dagger$, so they have no fermionic excitations). Thus $\Delta = 78$.
 
 **Index theorem from superalgebra:**
 

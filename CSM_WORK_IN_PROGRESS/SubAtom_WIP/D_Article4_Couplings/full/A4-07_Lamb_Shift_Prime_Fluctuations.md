@@ -1,8 +1,6 @@
 # Lamb Shift Prime Fluctuations — Complete Article
 ## Article A4: A4-07 — Lamb Shift Prime Fluctuations
-**Generated:** 2026-08-25 03:03:31 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

@@ -1,8 +1,6 @@
 # A3-04_Unitarity_From_Prime_Distribution — Complete Article
 ## Article: A3-04_Unitarity_From_Prime_Distribution
-**Generated:** 2026-08-30 06:30:34 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 The core insight: the prime gap sequence defines a probability distribution p(d) on the 256-dimensional Hilbert space ℋ₂₅₆. The time evolution operator U(t) = diag(e^{-iE_d t/ℏ}) from A3-02 is manifestly unitary because it is diagonal with phases of unit modulus. But the deeper question is: **why does the prime gap distribution support a unitary quantum theory at all?**

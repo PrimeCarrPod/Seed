@@ -1,8 +1,6 @@
 # Electric Dipole Moments Gaps — Complete Article
 ## Article A4: A4-22 — Electric Dipole Moments Gaps
-**Generated:** 2026-08-25 20:10:16 UTC  
 **Structure:** 12 pieces concatenated  
-**Target:** ≥350 lines
 
 ---
 

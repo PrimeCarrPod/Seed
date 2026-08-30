@@ -73,7 +73,7 @@ $$= \sum_{n=1}^{N-1} d_n d_{n+1} \psi_n^\dagger \psi_n + \sum_{n \neq m} \sqrt{d
 Using $\{\psi_n, \psi_m^\dagger\} = \delta_{nm}$ and $\psi_n \psi_m^\dagger = \delta_{nm} - \psi_m^\dagger \psi_n$, the diagonal part gives:
 $$\{Q, Q^\dagger\}_{\text{diag}} = \sum_{n=1}^{N-1} d_n d_{n+1} (1 - \psi_n \psi_n^\dagger) + \sum_{n=1}^{N-1} d_n d_{n+1} \psi_n^\dagger \psi_n = \sum_{n=1}^{N-1} d_n d_{n+1} + \sum_{n=1}^{N-1} d_n d_{n+1} [\psi_n^\dagger, \psi_n]$$
 
-Wait — let's be more careful. The fermionic number operator is $n_f = \psi_n^\dagger \psi_n$. Then:
+Note: the fermionic number operator is $n_f = \psi_n^\dagger \psi_n$. Then:
 $$\{\psi_n, \psi_n^\dagger\} = 1 \implies \psi_n \psi_n^\dagger + \psi_n^\dagger \psi_n = 1$$
 $$\psi_n \psi_n^\dagger = 1 - \psi_n^\dagger \psi_n = 1 - n_f$$
 
@@ -225,7 +225,7 @@ The 256 states organize into SUSY multiplets:
 - $(256 - 78)/2 = 89$ **long multiplets** (2 bosonic + 2 fermionic states each, non-BPS)
 - Total: $78 \times 1 + 89 \times 4 = 78 + 356 = 434$... wait, this doesn't add up to 256.
 
-Let me recompute: Each long multiplet in N=1 SQM has 2 states (1 boson + 1 fermion). Each short (BPS) multiplet has 1 state (1 boson). So:
+Recomputing: each long multiplet in N=1 SQM has 2 states (1 boson + 1 fermion). Each short (BPS) multiplet has 1 state (1 boson). So:
 - 78 short multiplets = 78 states (all bosonic, in $\mathcal{H}_+$)
 - Remaining states: $256 - 78 = 178$ states = 89 long multiplets = 89 bosonic + 89 fermionic
 - $\mathcal{H}_+$ total: $78 + 89 = 167$... but $\dim \mathcal{H}_+ = 128$.
@@ -707,4 +707,3 @@ The prime electron worldline is the first known physical system where **supersym
 
 ---
 
-*End of A1-25: Worldline_Supersymmetry.md (12 pieces, ~650 lines concatenated)*

@@ -1,8 +1,6 @@
 # A1-32_Worldline_Renyi_Entropies — Complete Article
 ## Article: A1-32_Worldline_Renyi_Entropies
-**Generated:** 2026-08-30 06:30:16 UTC
 **Structure:** 12 pieces concatenated
-**Target:** ≥350 lines
 
 ---
 
@@ -35,7 +33,7 @@ The symplectic eigenvalues $\{\nu_k\}$ are the positive square roots of the eige
 
 $$S_n = \frac{1}{n-1} \sum_{k=1}^N \log \left[ \frac{(\nu_k + 1/2)^n - (\nu_k - 1/2)^n}{(\nu_k + 1/2)^n + (\nu_k - 1/2)^n} \cdot \frac{2}{2} \right]$$
 
-Wait, correct formula for mixed Gaussian states:
+Correct formula for mixed Gaussian states:
 
 $$S_n = \frac{1}{n-1} \sum_{k=1}^N \log \left[ \frac{(\nu_k + 1/2)^n - (\nu_k - 1/2)^n}{(\nu_k + 1/2)^{n-1} (\nu_k - 1/2)^{n-1}} \right]$$
 

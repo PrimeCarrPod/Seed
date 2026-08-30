@@ -386,4 +386,3 @@ The implications are profound:
 
 The Prime Electron framework is the only theory that derives the complete particle spectrum from a single integer sequence (the prime gaps) with zero free parameters. It is either exactly right or exactly wrong — and the experimental tests are clear and achievable.
 
-*End of A2-12. Next: A2-13 Lepton_Flavor_Universality_Proof.md*
