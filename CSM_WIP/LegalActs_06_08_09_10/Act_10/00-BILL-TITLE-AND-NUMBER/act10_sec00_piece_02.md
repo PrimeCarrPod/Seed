@@ -1,0 +1,32 @@
+# BILL TITLE AND NUMBER — Piece 02/12
+## Act 10: Coastal Port Infrastructure Act — Section 00
+**Piece:** 02 of 12  
+**Generated:** 2026-08-30 00:22:00 UTC
+
+---
+
+## SECTION 1. SHORT TITLE
+
+**SEC. 1.** This Act may be cited as the "Coastal Port Infrastructure Act of 2026."
+
+---
+
+## SECTION 2. TABLE OF CONTENTS
+
+**SEC. 2.** The table of contents for this Act is as follows:
+
+**TITLE I — PORT MODERNIZATION**
+**TITLE II — SUPPLY CHAIN RESILIENCE**
+**TITLE III — MARITIME TRANSPORTATION**
+**TITLE IV — COASTAL RESILIENCE**
+**TITLE V — ENVIRONMENTAL PROTECTION**
+**TITLE VI — FUNDING MECHANISMS**
+**TITLE VII — IMPLEMENTATION SCHEDULE**
+**TITLE VIII — REGULATORY LANGUAGE**
+**TITLE IX — ECONOMIC IMPACT STATEMENT**
+**TITLE X — ENFORCEMENT AND COMPLIANCE**
+**TITLE XI — APPENDIX REFERENCES**
+
+---
+
+*Author: Jason Isaac Brodsky (California 1976) — Conducier*
