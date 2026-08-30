@@ -650,7 +650,7 @@ On the Hamiltonian:
 T Ĥ T⁻¹ = Σ E(k) T|k⟩⟨k|T⁻¹ = Σ E(k) |-k⟩⟨-k| = Σ E(-k) |k⟩⟨k| = Ĥ
 ```
 
-since E(-k) = ℏ/(κ(-k)) = E(k) for k mod 256 (using -k ≡ 256-k mod 256, and E(256-k) = E(k) by symmetry of the spectrum? Note: E(k) = 1/k, so E(256-k) = 1/(256-k) ≠ 1/k. Wait.)
+since E(-k) = ℏ/(κ(-k)) = E(k) for k mod 256 (using -k ≡ 256-k mod 256, and E(256-k) = E(k) by symmetry of the spectrum? Note: E(k) = 1/k, so E(256-k) = 1/(256-k) ≠ 1/k. Note: this breaks the symmetry.
 
 Let us check: E(k) = ℏ/(κ·k) for k = 1,...,255. Time reversal should map k → -k mod 256 = 256-k. But E(256-k) = ℏ/(κ(256-k)) ≠ E(k). So **time reversal is NOT a symmetry of Ĥ**!
 

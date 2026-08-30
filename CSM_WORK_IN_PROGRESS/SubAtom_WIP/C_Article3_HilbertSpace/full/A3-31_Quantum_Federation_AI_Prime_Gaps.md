@@ -677,7 +677,7 @@ RPO = Δg for model weights (periodic checkpointing)
 
 ---
 
-[Content for piece 12 goes here]
+[See A3-40 Synthesis for complete summary]
 
 
 ---
