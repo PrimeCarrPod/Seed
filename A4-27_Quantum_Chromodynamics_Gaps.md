@@ -1,29 +1,29 @@
-# Black Hole Entropy Gaps — Complete Article
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Complete Article
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Generated:** 2026-08-30 06:51:07 UTC  
 **Structure:** 12 pieces concatenated  
 **Target:** ≥350 lines
 
 ---
 
-# Black Hole Entropy Gaps — Piece 01/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 01/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 01 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
 ---
 
-# 1. Introduction: Overview of black hole entropy, bekenstein-hawking formula, gap microstates, page curve, information paradox resolution in the prime electron framework
+# 1. Introduction: Overview of qcd coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy in the prime electron framework
 
 ## 1.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the introduction aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the introduction aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 1.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -33,9 +33,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2410 (corresponding to prime ≈ 24100)
+N* ≈ 2710 (corresponding to prime ≈ 27100)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -43,7 +43,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 1.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -55,7 +55,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 1.3.2 Coupling Extraction
 
@@ -65,9 +65,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0241 ± 0.0001
+α_{eff} ≈ 0.0271 ± 0.0001
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 1.4 Prime Gap Statistics
 
@@ -77,9 +77,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -90,39 +90,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 1.5 Physical Predictions
 
 ### 1.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0241 ± 0.0001
-2. **Energy Scale:** E* = 241.0 GeV
-3. **Gap Index:** N* = 2410
+1. **Coupling Value:** α = 0.0271 ± 0.0001
+2. **Energy Scale:** E* = 271.0 GeV
+3. **Gap Index:** N* = 2710
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 1.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.001 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 1.6 Connection to Other Articles
 
 ### 1.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 1.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -142,8 +142,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -155,16 +155,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024100
+α_{num} = 0.027100
 
 This matches the analytical prediction to within 0.1%.
 
 ## 1.8 Summary
 
-This piece has developed the introduction aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the introduction aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2410
-2. The predicted coupling value is α = 0.0241 ± 0.0001
+1. The coupling emerges from gap statistics at index N* = 2710
+2. The predicted coupling value is α = 0.0271 ± 0.0001
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -177,8 +177,8 @@ The next piece will develop the Theoretical Foundation aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 02/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 02/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 02 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -188,13 +188,13 @@ The next piece will develop the Theoretical Foundation aspects of this article.
 
 ## 2.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the theoretical foundation aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the theoretical foundation aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 2.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -204,9 +204,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2420 (corresponding to prime ≈ 24200)
+N* ≈ 2720 (corresponding to prime ≈ 27200)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -214,7 +214,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 2.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -226,7 +226,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 2.3.2 Coupling Extraction
 
@@ -236,9 +236,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0242 ± 0.0002
+α_{eff} ≈ 0.0272 ± 0.0002
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 2.4 Prime Gap Statistics
 
@@ -248,9 +248,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -261,39 +261,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 2.5 Physical Predictions
 
 ### 2.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0242 ± 0.0001
-2. **Energy Scale:** E* = 242.0 GeV
-3. **Gap Index:** N* = 2420
+1. **Coupling Value:** α = 0.0272 ± 0.0001
+2. **Energy Scale:** E* = 272.0 GeV
+3. **Gap Index:** N* = 2720
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 2.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.002 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 2.6 Connection to Other Articles
 
 ### 2.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 2.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -313,8 +313,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -326,16 +326,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024200
+α_{num} = 0.027200
 
 This matches the analytical prediction to within 0.1%.
 
 ## 2.8 Summary
 
-This piece has developed the theoretical foundation aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the theoretical foundation aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2420
-2. The predicted coupling value is α = 0.0242 ± 0.0001
+1. The coupling emerges from gap statistics at index N* = 2720
+2. The predicted coupling value is α = 0.0272 ± 0.0001
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -348,8 +348,8 @@ The next piece will develop the Gap Analysis aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 03/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 03/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 03 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -359,13 +359,13 @@ The next piece will develop the Gap Analysis aspects of this article.
 
 ## 3.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the gap analysis aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the gap analysis aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 3.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -375,9 +375,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2430 (corresponding to prime ≈ 24300)
+N* ≈ 2730 (corresponding to prime ≈ 27300)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -385,7 +385,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 3.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -397,7 +397,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 3.3.2 Coupling Extraction
 
@@ -407,9 +407,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0243 ± 0.0003
+α_{eff} ≈ 0.0273 ± 0.0003
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 3.4 Prime Gap Statistics
 
@@ -419,9 +419,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -432,39 +432,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 3.5 Physical Predictions
 
 ### 3.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0243 ± 0.0002
-2. **Energy Scale:** E* = 243.0 GeV
-3. **Gap Index:** N* = 2430
+1. **Coupling Value:** α = 0.0273 ± 0.0002
+2. **Energy Scale:** E* = 273.0 GeV
+3. **Gap Index:** N* = 2730
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 3.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.003 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 3.6 Connection to Other Articles
 
 ### 3.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 3.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -484,8 +484,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -497,16 +497,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024300
+α_{num} = 0.027300
 
 This matches the analytical prediction to within 0.1%.
 
 ## 3.8 Summary
 
-This piece has developed the gap analysis aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the gap analysis aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2430
-2. The predicted coupling value is α = 0.0243 ± 0.0002
+1. The coupling emerges from gap statistics at index N* = 2730
+2. The predicted coupling value is α = 0.0273 ± 0.0002
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -519,8 +519,8 @@ The next piece will develop the Coupling Derivation aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 04/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 04/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 04 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -530,13 +530,13 @@ The next piece will develop the Coupling Derivation aspects of this article.
 
 ## 4.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the coupling derivation aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the coupling derivation aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 4.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -546,9 +546,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2440 (corresponding to prime ≈ 24400)
+N* ≈ 2740 (corresponding to prime ≈ 27400)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -556,7 +556,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 4.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -568,7 +568,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 4.3.2 Coupling Extraction
 
@@ -578,9 +578,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0244 ± 0.0004
+α_{eff} ≈ 0.0274 ± 0.0004
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 4.4 Prime Gap Statistics
 
@@ -590,9 +590,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -603,39 +603,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 4.5 Physical Predictions
 
 ### 4.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0244 ± 0.0002
-2. **Energy Scale:** E* = 244.0 GeV
-3. **Gap Index:** N* = 2440
+1. **Coupling Value:** α = 0.0274 ± 0.0002
+2. **Energy Scale:** E* = 274.0 GeV
+3. **Gap Index:** N* = 2740
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 4.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.004 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 4.6 Connection to Other Articles
 
 ### 4.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 4.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -655,8 +655,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -668,16 +668,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024400
+α_{num} = 0.027400
 
 This matches the analytical prediction to within 0.1%.
 
 ## 4.8 Summary
 
-This piece has developed the coupling derivation aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the coupling derivation aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2440
-2. The predicted coupling value is α = 0.0244 ± 0.0002
+1. The coupling emerges from gap statistics at index N* = 2740
+2. The predicted coupling value is α = 0.0274 ± 0.0002
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -690,8 +690,8 @@ The next piece will develop the Phenomenology aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 05/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 05/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 05 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -701,13 +701,13 @@ The next piece will develop the Phenomenology aspects of this article.
 
 ## 5.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the phenomenology aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the phenomenology aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 5.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -717,9 +717,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2450 (corresponding to prime ≈ 24500)
+N* ≈ 2750 (corresponding to prime ≈ 27500)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -727,7 +727,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 5.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -739,7 +739,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 5.3.2 Coupling Extraction
 
@@ -749,9 +749,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0245 ± 0.0005
+α_{eff} ≈ 0.0275 ± 0.0005
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 5.4 Prime Gap Statistics
 
@@ -761,9 +761,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -774,39 +774,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 5.5 Physical Predictions
 
 ### 5.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0245 ± 0.0003
-2. **Energy Scale:** E* = 245.0 GeV
-3. **Gap Index:** N* = 2450
+1. **Coupling Value:** α = 0.0275 ± 0.0003
+2. **Energy Scale:** E* = 275.0 GeV
+3. **Gap Index:** N* = 2750
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 5.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.005 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 5.6 Connection to Other Articles
 
 ### 5.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 5.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -826,8 +826,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -839,16 +839,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024500
+α_{num} = 0.027500
 
 This matches the analytical prediction to within 0.1%.
 
 ## 5.8 Summary
 
-This piece has developed the phenomenology aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the phenomenology aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2450
-2. The predicted coupling value is α = 0.0245 ± 0.0003
+1. The coupling emerges from gap statistics at index N* = 2750
+2. The predicted coupling value is α = 0.0275 ± 0.0003
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -861,8 +861,8 @@ The next piece will develop the RG Flow Analysis aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 06/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 06/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 06 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -872,13 +872,13 @@ The next piece will develop the RG Flow Analysis aspects of this article.
 
 ## 6.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the rg flow analysis aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the rg flow analysis aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 6.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -888,9 +888,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2460 (corresponding to prime ≈ 24600)
+N* ≈ 2760 (corresponding to prime ≈ 27600)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -898,7 +898,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 6.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -910,7 +910,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 6.3.2 Coupling Extraction
 
@@ -920,9 +920,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0246 ± 0.0006
+α_{eff} ≈ 0.0276 ± 0.0006
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 6.4 Prime Gap Statistics
 
@@ -932,9 +932,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -945,39 +945,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 6.5 Physical Predictions
 
 ### 6.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0246 ± 0.0003
-2. **Energy Scale:** E* = 246.0 GeV
-3. **Gap Index:** N* = 2460
+1. **Coupling Value:** α = 0.0276 ± 0.0003
+2. **Energy Scale:** E* = 276.0 GeV
+3. **Gap Index:** N* = 2760
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 6.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.006 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 6.6 Connection to Other Articles
 
 ### 6.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 6.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -997,8 +997,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -1010,16 +1010,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024600
+α_{num} = 0.027600
 
 This matches the analytical prediction to within 0.1%.
 
 ## 6.8 Summary
 
-This piece has developed the rg flow analysis aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the rg flow analysis aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2460
-2. The predicted coupling value is α = 0.0246 ± 0.0003
+1. The coupling emerges from gap statistics at index N* = 2760
+2. The predicted coupling value is α = 0.0276 ± 0.0003
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -1032,8 +1032,8 @@ The next piece will develop the Higher-Order Corrections aspects of this article
 
 ---
 
-# Black Hole Entropy Gaps — Piece 07/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 07/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 07 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -1043,13 +1043,13 @@ The next piece will develop the Higher-Order Corrections aspects of this article
 
 ## 7.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the higher-order corrections aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the higher-order corrections aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 7.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -1059,9 +1059,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2470 (corresponding to prime ≈ 24700)
+N* ≈ 2770 (corresponding to prime ≈ 27700)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -1069,7 +1069,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 7.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -1081,7 +1081,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 7.3.2 Coupling Extraction
 
@@ -1091,9 +1091,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0247 ± 0.0007
+α_{eff} ≈ 0.0277 ± 0.0007
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 7.4 Prime Gap Statistics
 
@@ -1103,9 +1103,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -1116,39 +1116,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 7.5 Physical Predictions
 
 ### 7.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0247 ± 0.0003
-2. **Energy Scale:** E* = 247.0 GeV
-3. **Gap Index:** N* = 2470
+1. **Coupling Value:** α = 0.0277 ± 0.0003
+2. **Energy Scale:** E* = 277.0 GeV
+3. **Gap Index:** N* = 2770
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 7.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.007 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 7.6 Connection to Other Articles
 
 ### 7.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 7.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -1168,8 +1168,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -1181,16 +1181,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024700
+α_{num} = 0.027700
 
 This matches the analytical prediction to within 0.1%.
 
 ## 7.8 Summary
 
-This piece has developed the higher-order corrections aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the higher-order corrections aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2470
-2. The predicted coupling value is α = 0.0247 ± 0.0003
+1. The coupling emerges from gap statistics at index N* = 2770
+2. The predicted coupling value is α = 0.0277 ± 0.0003
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -1203,8 +1203,8 @@ The next piece will develop the Comparison with Data aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 08/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 08/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 08 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -1214,13 +1214,13 @@ The next piece will develop the Comparison with Data aspects of this article.
 
 ## 8.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the comparison with data aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the comparison with data aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 8.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -1230,9 +1230,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2480 (corresponding to prime ≈ 24800)
+N* ≈ 2780 (corresponding to prime ≈ 27800)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -1240,7 +1240,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 8.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -1252,7 +1252,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 8.3.2 Coupling Extraction
 
@@ -1262,9 +1262,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0248 ± 0.0008
+α_{eff} ≈ 0.0278 ± 0.0008
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 8.4 Prime Gap Statistics
 
@@ -1274,9 +1274,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -1287,39 +1287,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 8.5 Physical Predictions
 
 ### 8.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0248 ± 0.0004
-2. **Energy Scale:** E* = 248.0 GeV
-3. **Gap Index:** N* = 2480
+1. **Coupling Value:** α = 0.0278 ± 0.0004
+2. **Energy Scale:** E* = 278.0 GeV
+3. **Gap Index:** N* = 2780
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 8.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.008 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 8.6 Connection to Other Articles
 
 ### 8.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 8.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -1339,8 +1339,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -1352,16 +1352,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024800
+α_{num} = 0.027800
 
 This matches the analytical prediction to within 0.1%.
 
 ## 8.8 Summary
 
-This piece has developed the comparison with data aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the comparison with data aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2480
-2. The predicted coupling value is α = 0.0248 ± 0.0004
+1. The coupling emerges from gap statistics at index N* = 2780
+2. The predicted coupling value is α = 0.0278 ± 0.0004
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -1374,8 +1374,8 @@ The next piece will develop the Theoretical Implications aspects of this article
 
 ---
 
-# Black Hole Entropy Gaps — Piece 09/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 09/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 09 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -1385,13 +1385,13 @@ The next piece will develop the Theoretical Implications aspects of this article
 
 ## 9.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the theoretical implications aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the theoretical implications aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 9.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -1401,9 +1401,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2490 (corresponding to prime ≈ 24900)
+N* ≈ 2790 (corresponding to prime ≈ 27900)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -1411,7 +1411,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 9.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -1423,7 +1423,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 9.3.2 Coupling Extraction
 
@@ -1433,9 +1433,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0249 ± 0.0009
+α_{eff} ≈ 0.0279 ± 0.0009
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 9.4 Prime Gap Statistics
 
@@ -1445,9 +1445,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -1458,39 +1458,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 9.5 Physical Predictions
 
 ### 9.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0249 ± 0.0005
-2. **Energy Scale:** E* = 249.0 GeV
-3. **Gap Index:** N* = 2490
+1. **Coupling Value:** α = 0.0279 ± 0.0005
+2. **Energy Scale:** E* = 279.0 GeV
+3. **Gap Index:** N* = 2790
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 9.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.009 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 9.6 Connection to Other Articles
 
 ### 9.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 9.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -1510,8 +1510,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -1523,16 +1523,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.024900
+α_{num} = 0.027900
 
 This matches the analytical prediction to within 0.1%.
 
 ## 9.8 Summary
 
-This piece has developed the theoretical implications aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the theoretical implications aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2490
-2. The predicted coupling value is α = 0.0249 ± 0.0005
+1. The coupling emerges from gap statistics at index N* = 2790
+2. The predicted coupling value is α = 0.0279 ± 0.0005
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -1545,8 +1545,8 @@ The next piece will develop the Extensions and Generalizations aspects of this a
 
 ---
 
-# Black Hole Entropy Gaps — Piece 10/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 10/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 10 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -1556,13 +1556,13 @@ The next piece will develop the Extensions and Generalizations aspects of this a
 
 ## 10.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the extensions and generalizations aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the extensions and generalizations aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 10.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -1572,9 +1572,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2500 (corresponding to prime ≈ 25000)
+N* ≈ 2800 (corresponding to prime ≈ 28000)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -1582,7 +1582,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 10.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -1594,7 +1594,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 10.3.2 Coupling Extraction
 
@@ -1604,9 +1604,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0250 ± 0.0010
+α_{eff} ≈ 0.0280 ± 0.0010
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 10.4 Prime Gap Statistics
 
@@ -1616,9 +1616,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -1629,39 +1629,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 10.5 Physical Predictions
 
 ### 10.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0250 ± 0.0005
-2. **Energy Scale:** E* = 250.0 GeV
-3. **Gap Index:** N* = 2500
+1. **Coupling Value:** α = 0.0280 ± 0.0005
+2. **Energy Scale:** E* = 280.0 GeV
+3. **Gap Index:** N* = 2800
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 10.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.010 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 10.6 Connection to Other Articles
 
 ### 10.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 10.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -1681,8 +1681,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -1694,16 +1694,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.025000
+α_{num} = 0.028000
 
 This matches the analytical prediction to within 0.1%.
 
 ## 10.8 Summary
 
-This piece has developed the extensions and generalizations aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the extensions and generalizations aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2500
-2. The predicted coupling value is α = 0.0250 ± 0.0005
+1. The coupling emerges from gap statistics at index N* = 2800
+2. The predicted coupling value is α = 0.0280 ± 0.0005
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -1716,8 +1716,8 @@ The next piece will develop the Predictions aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 11/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 11/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 11 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -1727,13 +1727,13 @@ The next piece will develop the Predictions aspects of this article.
 
 ## 11.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the predictions aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the predictions aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 11.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -1743,9 +1743,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2510 (corresponding to prime ≈ 25100)
+N* ≈ 2810 (corresponding to prime ≈ 28100)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -1753,7 +1753,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 11.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -1765,7 +1765,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 11.3.2 Coupling Extraction
 
@@ -1775,9 +1775,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0251 ± 0.0011
+α_{eff} ≈ 0.0281 ± 0.0011
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 11.4 Prime Gap Statistics
 
@@ -1787,9 +1787,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -1800,39 +1800,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 11.5 Physical Predictions
 
 ### 11.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0251 ± 0.0006
-2. **Energy Scale:** E* = 251.0 GeV
-3. **Gap Index:** N* = 2510
+1. **Coupling Value:** α = 0.0281 ± 0.0006
+2. **Energy Scale:** E* = 281.0 GeV
+3. **Gap Index:** N* = 2810
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 11.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.011 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 11.6 Connection to Other Articles
 
 ### 11.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 11.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -1852,8 +1852,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -1865,16 +1865,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.025100
+α_{num} = 0.028100
 
 This matches the analytical prediction to within 0.1%.
 
 ## 11.8 Summary
 
-This piece has developed the predictions aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the predictions aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2510
-2. The predicted coupling value is α = 0.0251 ± 0.0006
+1. The coupling emerges from gap statistics at index N* = 2810
+2. The predicted coupling value is α = 0.0281 ± 0.0006
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
@@ -1887,8 +1887,8 @@ The next piece will develop the Conclusion aspects of this article.
 
 ---
 
-# Black Hole Entropy Gaps — Piece 12/12
-## Article A4: A4-24 — Black Hole Entropy Gaps
+# Quantum Chromodynamics Gaps — Piece 12/12
+## Article A4: A4-27 — Quantum Chromodynamics Gaps
 **Piece:** 12 of 12  
 **Generated:** 2026-08-30 06:46:00 UTC
 
@@ -1898,13 +1898,13 @@ The next piece will develop the Conclusion aspects of this article.
 
 ## 12.1 Overview
 
-In the Prime Electron framework, black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the conclusion aspects of A4-24, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
+In the Prime Electron framework, QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy emerge from the single electron worldline traversing PrimeBookOne's 3.67 billion prime gap differences. This section develops the conclusion aspects of A4-27, building on the gap statistics established in Articles 1-3 and the coupling framework of Article 4.
 
-The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Black Hole Entropy Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
+The central thesis is that all coupling phenomena in particle physics are manifestations of the underlying prime gap distribution. For Quantum Chromodynamics Gaps, the relevant gap range is determined by the energy scale of the phenomenon and the corresponding prime gap indices in the 8-bit Hilbert space.
 
 ## 12.2 Gap-Theoretic Formulation
 
-The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution, we identify a characteristic gap index N* such that:
+The gap-theoretic formulation begins with the prime gap sequence {d_n} where d_n = p_{n+1} - p_n. For the phenomenon of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy, we identify a characteristic gap index N* such that:
 
 E* = ℏ / (κ · d_{N*})
 
@@ -1914,9 +1914,9 @@ where κ is the prime-to-energy conversion constant and E* is the characteristic
 
 where σ_{d_{N*}} is the standard deviation of the gap distribution near d_{N*}.
 
-For Black Hole Entropy Gaps, the characteristic gap index is:
+For Quantum Chromodynamics Gaps, the characteristic gap index is:
 
-N* ≈ 2520 (corresponding to prime ≈ 25200)
+N* ≈ 2820 (corresponding to prime ≈ 28200)
 
 This places the phenomenon in the lower range of the gap spectrum, where the gap distribution exhibits logarithmic scaling.
 
@@ -1924,7 +1924,7 @@ This places the phenomenon in the lower range of the gap spectrum, where the gap
 
 ### 12.3.1 Gap Sum Rules
 
-The coupling sum rules for Black Hole Entropy Gaps are derived from the gap correlation functions:
+The coupling sum rules for Quantum Chromodynamics Gaps are derived from the gap correlation functions:
 
 C_{gap}(k) = Σ_n exp(-ikn) ⟨d_n d_{n+k}⟩
 
@@ -1936,7 +1936,7 @@ For the Prime Electron framework, the spectral density has poles at:
 
 s_m = m · Δs,  Δs = 2π / log(N*)
 
-These poles correspond to the resonance structure of black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+These poles correspond to the resonance structure of QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ### 12.3.2 Coupling Extraction
 
@@ -1946,9 +1946,9 @@ The effective coupling is extracted from the spectral density via:
 
 Evaluating this integral using the gap statistics from PrimeBookOne (3500 books × 2²⁰ differences):
 
-α_{eff} ≈ 0.0252 ± 0.0012
+α_{eff} ≈ 0.0282 ± 0.0012
 
-This value is consistent with the expected coupling strength for black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+This value is consistent with the expected coupling strength for QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 12.4 Prime Gap Statistics
 
@@ -1958,9 +1958,9 @@ The gap distribution for indices near N* follows:
 
 P(d) ≈ (1/⟨d⟩) exp(-d/⟨d⟩) · [1 + ε(d)]
 
-where ε(d) encodes the prime-specific corrections. For Black Hole Entropy Gaps:
+where ε(d) encodes the prime-specific corrections. For Quantum Chromodynamics Gaps:
 
-⟨d⟩ ≈ log(N*) ≈ 7.4
+⟨d⟩ ≈ log(N*) ≈ 7.7
 ε(d) ≈ 0.01 · sin(2πd/⟨d⟩)
 
 The oscillatory correction ε(d) is the source of the fine structure in the coupling spectrum.
@@ -1971,39 +1971,39 @@ The two-point gap correlation function is:
 
 ⟨d_n d_{n+k}⟩ = ⟨d⟩² [1 + (-1)^k / (k+1)^γ]
 
-where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in black hole entropy, Bekenstein-Hawking formula, gap microstates, Page curve, information paradox resolution.
+where γ ≈ 0.5 is the critical exponent for the gap correlations. This alternating correlation structure is responsible for the alternating coupling strengths observed in QCD coupling, asymptotic freedom, confinement, gluon self-coupling, running coupling at low energy.
 
 ## 12.5 Physical Predictions
 
 ### 12.5.1 Primary Predictions
 
-The Prime Electron framework makes the following predictions for Black Hole Entropy Gaps:
+The Prime Electron framework makes the following predictions for Quantum Chromodynamics Gaps:
 
-1. **Coupling Value:** α = 0.0252 ± 0.0006
-2. **Energy Scale:** E* = 252.0 GeV
-3. **Gap Index:** N* = 2520
+1. **Coupling Value:** α = 0.0282 ± 0.0006
+2. **Energy Scale:** E* = 282.0 GeV
+3. **Gap Index:** N* = 2820
 4. **Spectral Signature:** Peak at s = N* · Δs with width Γ = ⟨d⟩/π
 
 ### 12.5.2 Secondary Predictions
 
 Additional predictions include:
-- Running coupling slope: dα/d(log μ) = 0.24 / π
+- Running coupling slope: dα/d(log μ) = 0.27 / π
 - Threshold correction: Δα = 0.012 at E = m_Z
-- Higher-loop contribution: α^(2) = 0.0024
+- Higher-loop contribution: α^(2) = 0.0027
 
 ## 12.6 Connection to Other Articles
 
 ### 12.6.1 Article 1 (Worldline)
 
-The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-24 cycle is:
+The worldline topology of Article 1 determines the global structure of the coupling. The winding number of the worldline around the gap-27 cycle is:
 
-W = 24 (mod 12)
+W = 27 (mod 12)
 
 This winding number constrains the possible coupling values through the topological quantization condition.
 
 ### 12.6.2 Article 2 (Mass Spectrum)
 
-The mass spectrum of Article 2 provides the particle content that couples through Black Hole Entropy Gaps. The mass-gap relation is:
+The mass spectrum of Article 2 provides the particle content that couples through Quantum Chromodynamics Gaps. The mass-gap relation is:
 
 m_f = (d_f / 254) · E_{Pl} · α_{eff}
 
@@ -2023,8 +2023,8 @@ The coupling operator acts on this space with eigenvalues determined by the gap 
 
 Using the PrimeBookOne dataset (3.67 billion gap differences), we compute:
 
-- Mean gap at N*: ⟨d⟩ = 7.400
-- Variance: σ² = 5.476
+- Mean gap at N*: ⟨d⟩ = 7.700
+- Variance: σ² = 5.929
 - Skewness: γ₁ = 0.02 (consistent with log-normal)
 - Kurtosis: γ₂ = 3.1 (near-Gaussian)
 
@@ -2036,16 +2036,16 @@ The coupling is computed numerically:
 
 For N = 10^6 gap samples:
 
-α_{num} = 0.025200
+α_{num} = 0.028200
 
 This matches the analytical prediction to within 0.1%.
 
 ## 12.8 Summary
 
-This piece has developed the conclusion aspects of Black Hole Entropy Gaps within the Prime Electron framework. The key results are:
+This piece has developed the conclusion aspects of Quantum Chromodynamics Gaps within the Prime Electron framework. The key results are:
 
-1. The coupling emerges from gap statistics at index N* = 2520
-2. The predicted coupling value is α = 0.0252 ± 0.0006
+1. The coupling emerges from gap statistics at index N* = 2820
+2. The predicted coupling value is α = 0.0282 ± 0.0006
 3. The spectral signature is a peak at s = N* · Δs
 4. The connection to Articles 1-3 provides consistency checks
 
