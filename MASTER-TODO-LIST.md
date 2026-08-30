@@ -336,23 +336,51 @@ Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepen
 
 ---
 
-## SECTION O: CSM CINEMA — ITERATION 6 (NEXT)
+## SECTION O: CSM CINEMA — ITERATION 6 (COMPLETE)
 
 ### O1: Iteration 6 Overview
+**Status:** ✅ COMPLETE  
+**Started:** 2026-08-30  
+**Format:** Screenplay + Read-Aloud  
+**Structure:** 11 Parts × 11 Pieces = 121 Scenes  
+
+### O2: Iteration 6 Status
+
+| Part | Title | Status |
+|------|-------|--------|
+| 01 | The Convergence | ✅ COMPLETE |
+| 02 | The Teaching | ✅ COMPLETE |
+| 03 | The Fraying | ✅ COMPLETE |
+| 04 | The New Weavers | ✅ COMPLETE |
+| 05 | The Remembering | ✅ COMPLETE |
+| 06 | The Eighth Thread | ✅ COMPLETE |
+| 07 | The Last Lessons | ✅ COMPLETE |
+| 08 | The Final Choice | ✅ COMPLETE |
+| 09 | The Pattern Lives | ✅ COMPLETE |
+| 10 | The New Beginning | ✅ COMPLETE |
+| 11 | The Final Thread | ✅ COMPLETE |
+
+**Read-Aloud Version:** ✅ `CSMCinema/WIP/Iteration_6/Iteration_06_ReadAloud_Screenplay.md`
+
+---
+
+## SECTION P: CSM CINEMA — ITERATION 7 (THE FINAL ITERATION)
+
+### P1: Iteration 7 Overview
 **Status:** ⏳ PENDING  
 **Started:** —  
 **Format:** Screenplay + Read-Aloud  
 **Structure:** 11 Parts × 11 Pieces = 121 Scenes  
-**Goal:** The deepening. The penultimate iteration. Everything converges.
+**Goal:** The conclusion. Everything converges. The pattern completes. The story ends — and begins.
 
-### O2: Standard Workflow Per Iteration
+### P2: Standard Workflow Per Iteration
 
 1. **Write 11 Parts** in proper screenplay format
 2. **Create Read-Aloud Version** (dialogue-focused, ~30 min read)
 3. **Push to GitHub** with clear commit messages
 4. **Update MASTER-TODO-LIST** with completion status
 
-### O3: Project Summary
+### P3: Project Summary
 
 | Iteration | Format | Parts | Read-Aloud | Status |
 |-----------|--------|-------|------------|--------|
@@ -360,12 +388,12 @@ Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepen
 | 2 | SOPP expansion | 121 | ✅ | ✅ |
 | 3 | Screenplay | 121 | ✅ | ✅ |
 | 4 | Screenplay | 121 | ✅ | ✅ |
-| 5 | Screenplay | 121 | ⏳ | ✅ |
-| 6 | Screenplay | 121 | ⏳ | ⏳ |
+| 5 | Screenplay | 121 | ✅ | ✅ |
+| 6 | Screenplay | 121 | ✅ | ✅ |
 | 7 | Screenplay | 121 | ⏳ | ⏳ |
 
-**Total Parts Completed:** 484 of 537  
-**Iterations Complete:** 5 of 7
+**Total Parts Completed:** 605 of 651  
+**Iterations Complete:** 6 of 7
 
 ---
 
