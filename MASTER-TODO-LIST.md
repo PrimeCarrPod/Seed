@@ -237,21 +237,21 @@ Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepen
 **Structure:** 11 Parts × 11 Pieces = 121 Scenes  
 **Goal:** Build on Iteration 2's narrative foundation in industry-standard screenplay format that others can read and build upon
 
-### L2: Iteration 3 Status
+### L2: Iteration 3 Status (COMPLETE)
 
 | Part | Title | Status | Words |
 |------|-------|--------|-------|
-| 01 | Call To Adventure | 🔄 IN PROGRESS | — |
-| 02 | Assembly Of Heroes | ⏳ PENDING | — |
-| 03 | Crossing First Threshold | ⏳ PENDING | — |
-| 04 | Road Of Trials | ⏳ PENDING | — |
-| 05 | Meeting With Goddess | ⏳ PENDING | — |
-| 06 | Temptation Away From Path | ⏳ PENDING | — |
-| 07 | Atonement With Father | ⏳ PENDING | — |
-| 08 | Apotheosis | ⏳ PENDING | — |
-| 09 | Ultimate Boon | ⏳ PENDING | — |
-| 10 | Refusal Of Return | ⏳ PENDING | — |
-| 11 | Magic Flight Return | ⏳ PENDING | — |
+| 01 | Call To Adventure | ✅ COMPLETE | — |
+| 02 | Assembly Of Heroes | ✅ COMPLETE | — |
+| 03 | Crossing First Threshold | ✅ COMPLETE | — |
+| 04 | Road Of Trials | ✅ COMPLETE | — |
+| 05 | Meeting With Goddess | ✅ COMPLETE | — |
+| 06 | Temptation Away From Path | ✅ COMPLETE | — |
+| 07 | Atonement With Father | ✅ COMPLETE | — |
+| 08 | Apotheosis | ✅ COMPLETE | — |
+| 09 | Ultimate Boon | ✅ COMPLETE | — |
+| 10 | Refusal Of Return | ✅ COMPLETE | — |
+| 11 | Magic Flight Return | ✅ COMPLETE | — |
 
 **Iteration 3 Format Standard:**
 - Scene headings: INT/EXT. LOCATION - TIME
@@ -261,6 +261,47 @@ Build 55 new pieces using Iteration 1 full docs as foundation + full SOPP deepen
 - Parentheticals: For tone/direction when needed
 - Each Part = one complete "act" or "sequence"
 - Each Piece = one scene within that sequence
+
+### L3: Read-Aloud Version (STANDARD DELIVERABLE)
+
+**Requirement:** Each completed iteration must include a read-aloud version.
+
+**Format:**
+- Dialogue-focused screenplay
+- Actual conversations between all characters
+- Not overly detailed — captures essence not minutiae
+- Readable aloud in single sitting (~30 min for feature length)
+- Proper screenplay formatting (scene headings, character names, dialogue)
+
+**Completed Read-Aloud Versions:**
+- Iteration 2: `CSMCinema/WIP/Iteration_2/Iteration_02_ReadAloud_Screenplay.md` ✅
+- Iteration 3: `CSMCinema/WIP/Iteration_3/Iteration_03_ReadAloud_Screenplay.md` 🔄 NEXT
+
+---
+
+## SECTION M: CSM CINEMA — ITERATION 4 (NEXT)
+
+### M1: Iteration 4 Overview
+**Status:** ⏳ PENDING  
+**Started:** —  
+**Format:** Read-Aloud Screenplay (dialogue-focused)  
+**Structure:** 11 Parts × 11 Pieces = 121 Scenes  
+**Goal:** Continue building the story with deeper character development and expanded mythology. Each iteration should feel like a new "season" of the saga.
+
+### M2: Standard Workflow Per Iteration
+
+1. **Write 11 Parts** in proper screenplay format
+2. **Create Read-Aloud Version** (dialogue-focused, ~30 min read)
+3. **Push to GitHub** with clear commit messages
+4. **Update MASTER-TODO-LIST** with completion status
+
+### M3: Iteration Completion Checklist
+
+- [ ] All 11 parts written in screenplay format
+- [ ] Master screenplay concatenated
+- [ ] Read-aloud version created
+- [ ] All files pushed to GitHub
+- [ ] MASTER-TODO-LIST updated
 
 ---
 
