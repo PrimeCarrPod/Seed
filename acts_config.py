@@ -742,5 +742,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, housing affordability benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act42": {
+        "name": "National Long Duration Energy Storage and Grid Stability Act of 2026",
+        "short_name": "NLDESGSA",
+        "dir": "42-Long-Duration-Energy-Storage-Grid-Stability-Act",
+        "funding": "$65 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, grid stability challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, grid reliability data, renewable integration needs, storage deployment gap"},
+            "03": {"name": "TITLE-I-LONG-DURATION-STORAGE-DEPLOYMENT", "title": "Title I — Long-Duration Storage Deployment", "topic": "100+ hour storage systems, seasonal storage, grid-scale deployment, technology-neutral procurement"},
+            "04": {"name": "TITLE-II-GRID-STABILITY-SERVICES", "title": "Title II — Grid Stability and Ancillary Services", "topic": "frequency regulation, voltage support, black start capability, inertia provision, grid forming inverters"},
+            "05": {"name": "TITLE-III-STORAGE-MANUFACTURING", "title": "Title III — Domestic Storage Manufacturing", "topic": "battery cell production, electrolyte manufacturing, system integration, supply chain development"},
+            "06": {"name": "TITLE-IV-STORAGE-WORKFORCE", "title": "Title IV — Energy Storage Workforce", "topic": "storage technician training, battery engineer programs, installation certification, safety training"},
+            "07": {"name": "TITLE-V-GRID-MODERNIZATION-STORAGE", "title": "Title V — Grid Modernization for Storage Integration", "topic": "transmission upgrades, distribution system enhancements, smart inverters, grid management systems"},
+            "08": {"name": "TITLE-VI-RENEWABLE-STORAGE-COLOCATION", "title": "Title VI — Renewable-Storage Co-Location", "topic": "solar-plus-storage, wind-plus-storage, hybrid plants, shared transmission, economic optimization"},
+            "09": {"name": "TITLE-VII-STORAGE-SAFETY", "title": "Title VII — Energy Storage Safety Standards", "topic": "fire safety, thermal runaway prevention, emergency response, decommissioning, recycling"},
+            "10": {"name": "TITLE-VIII-STORAGE-RESEARCH", "title": "Title VIII — Next-Generation Storage Research", "topic": "solid-state batteries, flow batteries, compressed air, gravity storage, hydrogen storage"},
+            "11": {"name": "TITLE-IX-MICROGRID-STORAGE", "title": "Title IX — Microgrid and Islanded System Storage", "topic": "community microgrids, campus microgrids, remote power systems, military microgrids"},
+            "12": {"name": "TITLE-X-STORAGE-FINANCE", "title": "Title X — Storage Finance and Market Design", "topic": "storage-as-transmission, capacity markets, ancillary service markets, tax incentives, loan programs"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, grid reliability savings, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act43": {
+        "name": "National Childcare and Early Education Infrastructure Act of 2026",
+        "short_name": "NCEIA",
+        "dir": "43-Childcare-Early-Education-Infrastructure-Act",
+        "funding": "$40 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, childcare crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, childcare access data, early education benefits, workforce participation impact"},
+            "03": {"name": "TITLE-I-CHILDCARE-FACILITY-CONSTRUCTION", "title": "Title I — Childcare Facility Construction", "topic": "new facility construction, facility renovation, modular construction, rural childcare, urban childcare deserts"},
+            "04": {"name": "TITLE-II-EARLY-EDUCATION-PROGRAMS", "title": "Title II — Early Education Program Expansion", "topic": "universal pre-K, Head Start expansion, early intervention, special needs programs, dual-language programs"},
+            "05": {"name": "TITLE-III-CHILDCARE-WORKFORCE", "title": "Title III — Childcare Workforce Development", "topic": "early childhood educator training, teacher certification, compensation reform, career pathways"},
+            "06": {"name": "TITLE-IV-CHILDCARE-FINANCE", "title": "Title IV — Childcare Affordability Programs", "topic": "subsidies, sliding fee scales, employer-provided childcare, tax credits, public-private partnerships"},
+            "07": {"name": "TITLE-V-CHILDCARE-STANDARDS", "title": "Title V — Childcare Quality and Safety Standards", "topic": "licensing requirements, health and safety standards, staff-child ratios, curriculum standards"},
+            "08": {"name": "TITLE-VI-EMPLOYER-CHILDCARE", "title": "Title VI — Employer-Supported Childcare", "topic": "on-site childcare, employer tax incentives, flexible spending accounts, backup childcare"},
+            "09": {"name": "TITLE-VII-RURAL-CHILDCARE", "title": "Title VII — Rural Childcare Access", "topic": "mobile childcare, family childcare networks, telehealth for childcare, rural provider support"},
+            "10": {"name": "TITLE-VIII-TRIBAL-CHILDCARE", "title": "Title VIII — Tribal Childcare and Early Education", "topic": "tribal childcare programs, cultural curriculum, tribal facility construction, language preservation"},
+            "11": {"name": "TITLE-IX-CHILDCARE-DATA", "title": "Title IX — Childcare Data and Research", "topic": "childcare supply mapping, quality metrics, workforce data, outcomes research, best practices"},
+            "12": {"name": "TITLE-X-DISABILITY-CHILDCARE", "title": "Title X — Inclusive Childcare for Children with Disabilities", "topic": "accessibility standards, specialized training, inclusive programs, early intervention services"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, workforce participation benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
