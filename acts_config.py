@@ -1030,5 +1030,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, housing affordability benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act54": {
+        "name": "National Geothermal Energy and Heat Pump Deployment Act of 2026",
+        "short_name": "NGPAHPA",
+        "dir": "54-Geothermal-Energy-Heat-Pump-Deployment-Act",
+        "funding": "$40 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, geothermal potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, geothermal resource data, heat pump potential, decarbonization opportunity"},
+            "03": {"name": "TITLE-I-ENHANCED-GEOTHERMAL", "title": "Title I — Enhanced Geothermal Systems", "topic": "EGS demonstration, deep drilling, reservoir engineering, induced seismicity management, resource assessment"},
+            "04": {"name": "TITLE-II-GEOTHERMAL-DIRECT-USE", "title": "Title II — Geothermal Direct Use Applications", "topic": "district heating, industrial process heat, agriculture, aquaculture, greenhouse heating"},
+            "05": {"name": "TITLE-III-HEAT-PUMP-DEPLOYMENT", "title": "Title III — Heat Pump Deployment Program", "topic": "air-source heat pumps, ground-source heat pumps, commercial heat pumps, cold-climate heat pumps"},
+            "06": {"name": "TITLE-IV-GEOTHERMAL-WORKFORCE", "title": "Title IV — Geothermal and Heat Pump Workforce", "topic": "driller training, heat pump installer certification, geothermal engineer programs, safety training"},
+            "07": {"name": "TITLE-V-GEOTHERMAL-MANUFACTURING", "title": "Title V — Domestic Heat Pump Manufacturing", "topic": "heat pump production, compressor manufacturing, heat exchanger production, refrigerant transition"},
+            "08": {"name": "TITLE-VI-GEOTHERMAL-LEASING", "title": "Title VI — Federal Geothermal Leasing", "topic": "leasing reform, competitive leasing, royalty rates, permitting efficiency, tribal consultation"},
+            "09": {"name": "TITLE-VII-GEOTHERMAL-RESEARCH", "title": "Title VII — Geothermal Research and Development", "topic": "supercritical geothermal, closed-loop systems, advanced drilling, reservoir characterization"},
+            "10": {"name": "TITLE-VIII-GEOTHERMAL-FINANCE", "title": "Title VIII — Geothermal Finance Programs", "topic": "loan guarantees, risk mitigation, production tax credits, investment tax credits, grants"},
+            "11": {"name": "TITLE-IX-GEOTHERMAL-UTILITIES", "title": "Title IX — Utility Geothermal Programs", "topic": "utility geothermal mandates, geothermal tariffs, utility business models, regulatory frameworks"},
+            "12": {"name": "TITLE-X-GEOTHERMAL-ENVIRONMENTAL", "title": "Title X — Geothermal Environmental Standards", "topic": "water use management, induced seismicity protocols, air emissions, surface disturbance, reclamation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy cost savings, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act55": {
+        "name": "National Public Health Infrastructure and Disease Prevention Act of 2026",
+        "short_name": "NPHIDPA",
+        "dir": "55-Public-Health-Infrastructure-Disease-Prevention-Act",
+        "funding": "$70 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, public health infrastructure gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, public health data, disease prevention gaps, health equity needs"},
+            "03": {"name": "TITLE-I-PUBLIC-HEALTH-WORKFORCE", "title": "Title I — Public Health Workforce", "topic": "epidemiologist training, public health nurse programs, laboratory scientist education, community health workers"},
+            "04": {"name": "TITLE-II-PUBLIC-HEALTH-LABS", "title": "Title II — Public Health Laboratory Infrastructure", "topic": "lab modernization, molecular surveillance, sequencing capacity, biocontainment, rural labs"},
+            "05": {"name": "TITLE-III-DISEASE-SURVEILLANCE", "title": "Title III — Disease Surveillance Systems", "topic": "syndromic surveillance, genomic surveillance, wastewater surveillance, data integration, early warning"},
+            "06": {"name": "TITLE-IV-CHRONIC-DISEASE-PREVENTION", "title": "Title IV — Chronic Disease Prevention", "topic": "diabetes prevention, heart disease prevention, cancer screening, obesity prevention, tobacco control"},
+            "07": {"name": "TITLE-V-HEALTH-EQUITY", "title": "Title V — Health Equity and Disparities", "topic": "health disparities reduction, social determinants, community health, cultural competency, data disaggregation"},
+            "08": {"name": "TITLE-VI-PANDEMIC-PREPAREDNESS", "title": "Title VI — Pandemic Preparedness", "topic": "strategic national stockpile, medical countermeasures, manufacturing surge, distribution systems"},
+            "09": {"name": "TITLE-VII-ENVIRONMENTAL-HEALTH", "title": "Title VII — Environmental Health", "topic": "air quality monitoring, water quality, lead abatement, climate health, environmental justice"},
+            "10": {"name": "TITLE-VIII-DIGITAL-HEALTH", "title": "Title VIII — Digital Health Infrastructure", "topic": "health IT, telehealth, health data exchange, AI health applications, cybersecurity"},
+            "11": {"name": "TITLE-IX-TRIBAL-HEALTH", "title": "Title IX — Tribal Public Health", "topic": "IHS modernization, tribal epidemiology, tribal health workforce, cultural practices"},
+            "12": {"name": "TITLE-X-HEALTH-FINANCE", "title": "Title X — Public Health Finance", "topic": "prevention funding, block grants, workforce loan repayment, research funding, emergency funding"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, health outcome benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
