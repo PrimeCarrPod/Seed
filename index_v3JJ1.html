@@ -50,7 +50,12 @@
         .scrollable::-webkit-scrollbar{width:4px;}
         .scrollable::-webkit-scrollbar-track{background:rgba(0,0,0,0.3);}
         .scrollable::-webkit-scrollbar-thumb{background:rgba(56,189,248,0.5);border-radius:2px;}
-        .equation-display{font-family:'Courier New',monospace;font-size:10px;color:#38bdf8;background:rgba(0,0,0,0.6);padding:2px 4px;border-radius:3px;margin:1px 0;}
+        .equation-display{font-family:'Courier New',monospace;font-size:10px;color:#38bdf8;background:rgba(0,0,0,0.6);padding:2px 4px;border-radius:3px;margin:1px 0;transition:all 0.5s ease;opacity:0.8;}
+    .equation-display:hover{opacity:1;background:rgba(56,189,248,0.2);}
+    .equation-new{animation:eqPulse 3s ease-in-out;}
+    @keyframes eqPulse{0%{opacity:0;transform:translateX(-10px);}20%{opacity:1;transform:translateX(0);}80%{opacity:1;}100%{opacity:0.6;}}
+    .btn-active{background:rgba(56,189,248,0.5)!important;box-shadow:0 0 8px rgba(56,189,248,0.6);}
+    .hud{transition:opacity 0.3s ease,transform 0.3s ease;}
     </style>
 </head>
 <body class="w-full h-screen relative">
@@ -140,7 +145,10 @@
         </div>
 
         <div class="hud p-3 pointer-events-auto">
-            <h3 class="text-cyan-400 text-xs orbitron uppercase tracking-wider border-b border-cyan-900/50 pb-1 mb-2">Active Equations</h3>
+            <div class="flex justify-between items-center mb-1">
+                <h3 class="text-cyan-400 text-xs orbitron uppercase tracking-wider">Active Equations</h3>
+                <button onclick="toggleEquationDisplay()" class="btn btn-cyan text-[9px] px-2 py-0">Toggle</button>
+            </div>
             <div id="equation-display" class="text-xs font-mono text-cyan-300 max-h-24 overflow-y-auto scrollable"></div>
         </div>
     </div>
@@ -268,12 +276,20 @@
         chart.update('none');
     }
 
-    // Equation display
+    // Equation display with smooth pulse
+    let lastEquationTime = 0;
+    const EQUATION_COOLDOWN = 2000; // minimum ms between equation changes
     function showEquation(eq) {
+        const now = Date.now();
+        if (now - lastEquationTime < EQUATION_COOLDOWN) return;
+        lastEquationTime = now;
         currentEquations.push(eq);
-        if (currentEquations.length > 8) currentEquations.shift();
+        if (currentEquations.length > 6) currentEquations.shift();
         const disp = document.getElementById('equation-display');
-        disp.innerHTML = currentEquations.map(e => `<div class="equation-display">${e}</div>`).join('');
+        disp.innerHTML = currentEquations.map((e,i) => {
+            const isNew = i === currentEquations.length - 1;
+            return `<div class="equation-display ${isNew ? 'equation-new' : ''}">${e}</div>`;
+        }).join('');
         disp.scrollTop = disp.scrollHeight;
     }
     // ===================================================================
@@ -514,7 +530,7 @@
                         dz=Math.sin(t*p.freq+p.phase)*0.8;
                         p.berryPhase += 0.01*(dx+dz);
                         action += dx*dx+dy*dy+dz*dz;
-                        if (Math.random()<0.0001) showEquation(`e⁻: B·v = (eℏ/m)E×Ω [anomalous velocity]`);
+                        if (Math.random()<0.00001) showEquation(`e⁻: B·v = (eℏ/m)E×Ω [anomalous velocity]`);
                         break;
                     case 'muon':
                         dx=Math.sin(p.a*p.y+t*1.1)*1.2;
@@ -538,7 +554,7 @@
                         p.x+=dx*dt; p.y+=dy*dt; p.z+=dz*dt;
                         if(Math.abs(p.z)>60){p.z=-60;p.x=(Math.random()-0.5)*25;}
                         coherence+=0.5;
-                        if(Math.random()<0.0001) showEquation(`ν: Δm²₂₁ = 7.5×10⁻⁵ eV² [oscillation]`);
+                        if(Math.random()<0.00001) showEquation(`ν: Δm²₂₁ = 7.5×10⁻⁵ eV² [oscillation]`);
                         break;
 
                     // ===================== QUARKS =====================
@@ -551,7 +567,7 @@
                         dz=Math.sin(t*2+p.phase)*0.6*conf;
                         p.x+=dx; p.y+=dy; p.z+=dz*dt*0.1;
                         action += (dx*dx+dy*dy)*0.8;
-                        if(Math.random()<0.00005) showEquation(`q: F^a_{μν} = ∂_μA^a_ν - ∂_νA^a_μ + gf^{abc}A^b_μA^c_ν [QCD field strength]`);
+                        if(Math.random()<0.000005) showEquation(`q: F^a_{μν} = ∂_μA^a_ν - ∂_νA^a_μ + gf^{abc}A^b_μA^c_ν [QCD field strength]`);
                         break;
 
                     // ===================== GAUGE BOSONS =====================
@@ -562,7 +578,7 @@
                         p.x+=dx*dt; p.y+=dy*dt; p.z+=dz*dt;
                         if(Math.abs(p.z)>60){p.z=-60;p.x=(Math.random()-0.5)*25;}
                         action += 0.5;
-                        if(Math.random()<0.0001) showEquation(`γ: ∂_μF^{μν} = j^ν [Maxwell]`);
+                        if(Math.random()<0.00001) showEquation(`γ: ∂_μF^{μν} = j^ν [Maxwell]`);
                         break;
                     case 'gluon':
                         const colorIdx = i % 8; // 8 gluon colors
@@ -571,28 +587,28 @@
                         dz=Math.sin(t*p.freq*1.5+p.phase+colorIdx);
                         action+=(dx*dx+dy*dy)*0.7;
                         glueballEnergy += 0.3;
-                        if(Math.random()<0.00005) showEquation(`g: β(g) = -(11-2n_f/3)g³/(16π²) [QCD beta function]`);
+                        if(Math.random()<0.000005) showEquation(`g: β(g) = -(11-2n_f/3)g³/(16π²) [QCD beta function]`);
                         break;
                     case 'w_boson':
                         dx=Math.sin(t*2+p.phase)*3;
                         dy=Math.cos(t*2+p.phase)*3;
                         dz=Math.sin(t+p.phase)*2;
                         action += 2.0;
-                        if(Math.random()<0.0001) showEquation(`W: M_W = 80.36 GeV [electroweak]`);
+                        if(Math.random()<0.00001) showEquation(`W: M_W = 80.36 GeV [electroweak]`);
                         break;
                     case 'z_boson':
                         dx=Math.sin(t*1.8+p.phase)*2.5;
                         dy=Math.cos(t*1.8+p.phase)*2.5;
                         dz=Math.sin(t*0.9+p.phase)*2;
                         action += 1.8;
-                        if(Math.random()<0.0001) showEquation(`Z: M_Z = 91.19 GeV [neutral current]`);
+                        if(Math.random()<0.00001) showEquation(`Z: M_Z = 91.19 GeV [neutral current]`);
                         break;
                     case 'graviton':
                         dx=Math.sin(t*0.1+p.phase)*0.5;
                         dy=Math.cos(t*0.1+p.phase)*0.5;
                         dz=Math.sin(t*0.05+p.phase)*0.3;
                         coherence += 0.2;
-                        if(Math.random()<0.0001) showEquation(`h: G_μν = 8πG T_μν [Einstein equations]`);
+                        if(Math.random()<0.00001) showEquation(`h: G_μν = 8πG T_μν [Einstein equations]`);
                         break;
                     // ===================== SCALAR BOSONS =====================
                     case 'higgs':
@@ -600,7 +616,7 @@
                         dy=(-p.y*0.002+Math.cos(t*0.3+p.phase)*0.6)*1.2;
                         dz=Math.sin(t*0.2+p.phase)*dt*0.4;
                         benevolence+=2.5;
-                        if(Math.random()<0.0001) showEquation(`H: V(φ) = μ²|φ|² + λ|φ|⁴ [Higgs potential]`);
+                        if(Math.random()<0.00001) showEquation(`H: V(φ) = μ²|φ|² + λ|φ|⁴ [Higgs potential]`);
                         break;
 
                     // ===================== HADRONS =====================
@@ -609,7 +625,7 @@
                         dy=Math.cos(t+p.phase)*dt*0.7;
                         dz=Math.sin(t*0.4+p.phase)*dt*0.5;
                         benevolence+=1.5;
-                        if(Math.random()<0.0001) showEquation(`p: m_p = 938.3 MeV [uud bound state]`);
+                        if(Math.random()<0.00001) showEquation(`p: m_p = 938.3 MeV [uud bound state]`);
                         break;
                     case 'neutron':
                         dx=Math.sin(t+p.phase+1)*dt*0.7;
@@ -622,7 +638,7 @@
                         dy=Math.cos(t*1.5+p.phase)*dt*1.8;
                         dz=Math.sin(t+p.phase)*dt*1.0;
                         action+=0.8;
-                        if(Math.random()<0.0001) showEquation(`π: m_π = 139.6 MeV [Goldstone boson]`);
+                        if(Math.random()<0.00001) showEquation(`π: m_π = 139.6 MeV [Goldstone boson]`);
                         break;
                     case 'kaon_plus': case 'kaon_minus':
                         dx=Math.sin(t*1.3+p.phase)*dt*1.6;
@@ -637,7 +653,7 @@
                         dy=Math.cos(t*0.15+p.phase)*dt*0.5;
                         dz=Math.sin(t*0.1+p.phase)*dt*0.4;
                         coherence+=0.9;
-                        if(Math.random()<0.0001) showEquation(`a: L = (α/8πf_a)aF_{μν}F̃^{μν} [axion-photon coupling]`);
+                        if(Math.random()<0.00001) showEquation(`a: L = (α/8πf_a)aF_{μν}F̃^{μν} [axion-photon coupling]`);
                         break;
                     case 'neutralino':
                         dx=Math.sin(t*0.05+p.phase)*dt*0.9;
@@ -656,14 +672,14 @@
                         dy=Math.cos(p.phase+t*0.387)*dt*2.5;
                         dz=Math.sin(t*0.387*p.freq)*dt;
                         coherence+=1.8;
-                        if(Math.random()<0.0001) showEquation(`Demon: ω = √(n_e e²/ε₀m*) [acoustic plasmon]`);
+                        if(Math.random()<0.00001) showEquation(`Demon: ω = √(n_e e²/ε₀m*) [acoustic plasmon]`);
                         break;
                     case 'glueball':
                         dx=Math.sin(t*0.1+p.binding)*dt*0.4;
                         dy=Math.cos(t*0.07+p.binding)*dt*0.4;
                         dz=Math.sin(t*0.2+p.binding)*dt*0.3;
                         glueballEnergy+=p.binding;
-                        if(Math.random()<0.0001) showEquation(`G: m_G = 1.7 GeV [gg bound state, J^PC=0^++]`);
+                        if(Math.random()<0.00001) showEquation(`G: m_G = 1.7 GeV [gg bound state, J^PC=0^++]`);
                         break;
                     case 'tardigrade':
                         dx=Math.sin(t*0.3+p.phase)*dt*0.6;
@@ -677,7 +693,7 @@
                         dy=Math.cos(t*0.03+p.phase)*dt*0.3;
                         dz=Math.sin(t*0.02+p.phase)*dt*0.2;
                         benevolence+=0.4;
-                        if(Math.random()<0.0001) showEquation(`DM: Ω_DM h² = 0.12 [Planck 2018]`);
+                        if(Math.random()<0.00001) showEquation(`DM: Ω_DM h² = 0.12 [Planck 2018]`);
                         break;
                     case 'prime_particle':
                         const pIdx = i % PRIMES.length;
@@ -686,7 +702,7 @@
                         dy=Math.cos(t*pVal*0.01)*dt*0.5;
                         dz=Math.sin(t*pVal*0.005+p.phase)*dt*0.3;
                         coherence+=0.6;
-                        if(Math.random()<0.0001) showEquation(`p_${pVal}: d_${pVal} = ${gap} [prime gap]`);
+                        if(Math.random()<0.00001) showEquation(`p_${pVal}: d_${pVal} = ${gap} [prime gap]`);
                         break;
                     case 'holographic':
                         const holoR = 30 + Math.sin(t*0.1)*5;
@@ -696,7 +712,7 @@
                         p.y = holoR * Math.sin(holoPhi) * Math.sin(holoTheta);
                         p.z = holoR * Math.cos(holoPhi);
                         coherence+=1.0;
-                        if(Math.random()<0.0001) showEquation(`H: S = A/(4G) [Bekenstein-Hawking entropy]`);
+                        if(Math.random()<0.00001) showEquation(`H: S = A/(4G) [Bekenstein-Hawking entropy]`);
                         break;
                     case 'swarm_mode':
                         const cohesion = PARTICLES.swarm_mode.cohesion;
@@ -808,9 +824,10 @@
             const bloom=this.composer.passes[1];bloom.strength=3.0;setTimeout(()=>bloom.strength=CFG.bloomStrength,400);
             logEvent('[PERTURB] Field entropy spike');
             showEquation('ΔS > 0 [second law]');
+            flashButton('Perturb');
         },
 
-        toggleTrails() {this.trailDecay=!this.trailDecay;logEvent('[TRAILS] '+ (this.trailDecay?'ON':'OFF'));},
+        toggleTrails() {this.trailDecay=!this.trailDecay;logEvent('[TRAILS] '+ (this.trailDecay?'ON':'OFF'));flashButton('Trails');},
 
         spawnDemon() {
             let count=0;
@@ -826,6 +843,7 @@
             const bloom=this.composer.passes[1];bloom.strength=4.5;setTimeout(()=>bloom.strength=CFG.bloomStrength,800);
             logEvent('[DEMON] Pines Demon spawned: '+count+' electrons');
             showEquation('ω_D = √(n_e e²/ε₀m*) [Demon frequency]');
+            flashButton('Demon');
         },
 
         triggerFusion() {
@@ -834,6 +852,7 @@
             const bloom=this.composer.passes[1];bloom.strength=6.0;setTimeout(()=>bloom.strength=CFG.bloomStrength,1000);
             logEvent('[FUSION] NIF-style ignition! Q > 1');
             showEquation('D + T → ⁴He + n + 17.6 MeV [fusion]');
+            flashButton('Fusion');
         },
 
         spawnGlueball() {
@@ -841,12 +860,15 @@
             logEvent('[GLUEBALL] Formed: m = 1.7 GeV, J^PC = 0^++');
             showEquation('G: ⟨0|F^a_{μν}F^{aμν}|G⟩ [glueball operator]');
             this.glueballActive=true;
+            flashButton('Glueball');
         },
 
         toggleSwarmMode() {
             swarmModeActive=!swarmModeActive;
             logEvent('[SWARM] '+(swarmModeActive?'ACTIVATED':'DEACTIVATED'));
             showEquation('v_i = v_i + αΣ(v_j - v_i) + β∇U [swarm dynamics]');
+            flashButton('Swarm');
+            document.getElementById('btn-swarm').classList.toggle('btn-active', swarmModeActive);
         },
 
         togglePrimeMode() {
@@ -854,6 +876,7 @@
             logEvent('[PRIME] Gap holography '+(primeModeActive?'ON':'OFF'));
             if(this.primeField){this.primeField.visible=primeModeActive;}
             showEquation('π(x) = li(x) - Σ_ρ li(x^ρ) [explicit formula]');
+            flashButton('Prime');
         },
 
         cycleMetaDepth() {
@@ -861,29 +884,55 @@
             document.getElementById('meta-depth-value').textContent = 'ω+' + metaDepth;
             logEvent('[META] Depth: ω+' + metaDepth);
             showEquation(`π⁽${metaDepth}⁾(n) = π(π(...π(n)...)) [Meta-Depth iteration]`);
+            flashButton('Meta-Depth');
         },
 
         triggerQCD() {
             const bloom=this.composer.passes[1];bloom.strength=4.0;setTimeout(()=>bloom.strength=CFG.bloomStrength,700);
             logEvent('[QCD] Strong force interaction triggered');
             showEquation('L_QCD = Σ_f ψ̄_f(iγ^μD_μ - m_f)ψ_f - ¼G^a_{μν}G^{aμν}');
+            flashButton('QCD');
         },
 
         triggerEW() {
             const bloom=this.composer.passes[1];bloom.strength=3.5;setTimeout(()=>bloom.strength=CFG.bloomStrength,600);
             logEvent('[EW] Electroweak symmetry breaking');
             showEquation('L_EW = L_gauge + L_Higgs + L_Yukawa + L_fermion');
+            flashButton('Electroweak');
         },
 
         triggerGravity() {
             const bloom=this.composer.passes[1];bloom.strength=5.0;setTimeout(()=>bloom.strength=CFG.bloomStrength,900);
             logEvent('[GRAVITY] Curvature interaction');
             showEquation('G_μν + Λg_μν = (8πG/c⁴)T_μν [Einstein field equations]');
+            flashButton('Gravity');
         },
 
         setSpeed(v) {this.speed=parseFloat(v);document.getElementById('speed-val').textContent=parseFloat(v).toFixed(1)+'×';},
         setDensity(v) {document.getElementById('dens-val').textContent=v;logEvent('[CONFIG] Density target: '+v);}
     };
+
+    // Button flash feedback
+    function flashButton(name) {
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(btn => {
+            if(btn.textContent.includes(name)) {
+                btn.classList.add('btn-active');
+                setTimeout(() => btn.classList.remove('btn-active'), 600);
+            }
+        });
+    }
+
+    // Toggle equation display
+    let equationDisplayVisible = true;
+    function toggleEquationDisplay() {
+        equationDisplayVisible = !equationDisplayVisible;
+        const disp = document.getElementById('equation-display');
+        if (disp) {
+            disp.style.opacity = equationDisplayVisible ? '1' : '0.3';
+            disp.style.maxHeight = equationDisplayVisible ? '96px' : '24px';
+        }
+    }
     // ===================================================================
     // FLIGHT CONTROLLER
     // ===================================================================
