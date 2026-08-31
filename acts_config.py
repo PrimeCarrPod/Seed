@@ -1318,5 +1318,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, coastal resilience benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act66": {
+        "name": "National Advanced Solar Manufacturing and Deployment Act of 2026",
+        "short_name": "NASMDA",
+        "dir": "66-Advanced-Solar-Manufacturing-Deployment-Act",
+        "funding": "$50 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, solar manufacturing gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, solar deployment data, manufacturing dependency, energy security"},
+            "03": {"name": "TITLE-I-SOLAR-MANUFACTURING", "title": "Title I — Domestic Solar Manufacturing", "topic": "polysilicon production, wafer manufacturing, cell production, module assembly, supply chain"},
+            "04": {"name": "TITLE-II-ADVANCED-SOLAR-TECH", "title": "Title II — Advanced Solar Technologies", "topic": "perovskite cells, tandem cells, thin film, concentrated solar, building-integrated solar"},
+            "05": {"name": "TITLE-III-SOLAR-DEPLOYMENT", "title": "Title III — Solar Deployment Programs", "topic": "utility-scale solar, distributed solar, community solar, low-income solar, agrivoltaics"},
+            "06": {"name": "TITLE-IV-SOLAR-WORKFORCE", "title": "Title IV — Solar Industry Workforce", "topic": "solar installer training, electrician certification, engineer education, apprenticeship programs"},
+            "07": {"name": "TITLE-V-SOLAR-RECYCLING", "title": "Title V — Solar Panel Recycling", "topic": "panel recycling infrastructure, material recovery, extended producer responsibility, circular economy"},
+            "08": {"name": "TITLE-VI-SOLAR-RESEARCH", "title": "Title VI — Solar Research and Development", "topic": "next-gen solar cells, efficiency improvements, storage integration, grid integration"},
+            "09": {"name": "TITLE-VII-SOLAR-FINANCE", "title": "Title VII — Solar Finance Programs", "topic": "investment tax credits, production tax credits, loan guarantees, grants, green banks"},
+            "10": {"name": "TITLE-VIII-SOLAR-EXPORTS", "title": "Title VIII — Solar Export Promotion", "topic": "export financing, trade promotion, international partnerships, market development"},
+            "11": {"name": "TITLE-IX-SOLAR-STANDARDS", "title": "Title IX — Solar Standards and Interoperability", "topic": "safety standards, performance standards, interoperability, grid codes, certification"},
+            "12": {"name": "TITLE-X-SOLAR-ENVIRONMENTAL", "title": "Title X — Solar Environmental Review", "topic": "NEPA streamlining, categorical exclusions, wildlife considerations, land use, recycling"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy cost savings, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act67": {
+        "name": "National Long-Duration Energy Storage and Grid Flexibility Act of 2026",
+        "short_name": "NLDESGFA",
+        "dir": "67-Long-Duration-Energy-Storage-Grid-Flexibility-Act",
+        "funding": "$75 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, storage gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, storage deployment data, grid flexibility needs, renewable integration"},
+            "03": {"name": "TITLE-I-LONG-DURATION-STORAGE", "title": "Title I — Long-Duration Energy Storage", "topic": "10+ hour storage, iron-air batteries, flow batteries, compressed air, gravity storage, hydrogen"},
+            "04": {"name": "TITLE-II-STORAGE-MANUFACTURING", "title": "Title II — Domestic Storage Manufacturing", "topic": "battery cell production, electrolyte manufacturing, system integration, supply chain development"},
+            "05": {"name": "TITLE-III-GRID-FLEXIBILITY", "title": "Title III — Grid Flexibility Services", "topic": "demand response, virtual power plants, DER aggregation, time-of-use pricing, market design"},
+            "06": {"name": "TITLE-IV-STORAGE-WORKFORCE", "title": "Title IV — Storage Workforce", "topic": "storage technician training, battery engineer programs, installation certification, safety training"},
+            "07": {"name": "TITLE-V-STORAGE-RESEARCH", "title": "Title V — Storage Research and Development", "topic": "next-gen batteries, solid-state batteries, novel chemistries, safety, recycling"},
+            "08": {"name": "TITLE-VI-STORAGE-FINANCE", "title": "Title VI — Storage Finance Programs", "topic": "investment tax credits, production tax credits, loan guarantees, grants, green banks"},
+            "09": {"name": "TITLE-VII-STORAGE-SITING", "title": "Title VII — Storage Siting and Permitting", "topic": "NEPA streamlining, safety standards, fire codes, environmental review, state coordination"},
+            "10": {"name": "TITLE-VIII-STORAGE-GRID-INTEGRATION", "title": "Title VIII — Storage Grid Integration", "topic": "interconnection standards, grid-forming inverters, smart inverters, IEEE 1547, UL 9540"},
+            "11": {"name": "TITLE-IX-STORAGE-RECYCLING", "title": "Title IX — Battery Recycling and End-of-Life", "topic": "battery recycling, material recovery, second-life applications, recycling standards, circular economy"},
+            "12": {"name": "TITLE-X-STORAGE-EXPORTS", "title": "Title X — Storage Export Promotion", "topic": "export financing, trade promotion, international partnerships, market development"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, grid reliability savings, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
