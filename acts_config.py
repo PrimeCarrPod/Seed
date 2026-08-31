@@ -982,5 +982,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, student outcome benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act52": {
+        "name": "National Advanced Nuclear Energy and Small Modular Reactor Deployment Act of 2026",
+        "short_name": "NANESMRA",
+        "dir": "52-Advanced-Nuclear-Energy-Small-Modular-Reactor-Act",
+        "funding": "$60 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, nuclear energy potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, nuclear energy data, SMR technology readiness, decarbonization role"},
+            "03": {"name": "TITLE-I-SMR-DEPLOYMENT", "title": "Title I — Small Modular Reactor Deployment", "topic": "first-of-a-kind deployment, commercial SMR projects, demonstration projects, cost reduction, supply chain"},
+            "04": {"name": "TITLE-II-ADVANCED-RESEARCH-REACTORS", "title": "Title II — Advanced Research Reactors", "topic": "university reactor upgrades, research reactor network, isotope production, workforce training"},
+            "05": {"name": "TITLE-III-NUCLEAR-FUEL-CYCLE", "title": "Title III — Domestic Nuclear Fuel Cycle", "topic": "HALEU production, uranium enrichment, fuel fabrication, spent fuel management, fuel security"},
+            "06": {"name": "TITLE-IV-NUCLEAR-WORKFORCE", "title": "Title IV — Nuclear Energy Workforce", "topic": "nuclear engineer training, reactor operator programs, technician certification, construction workforce"},
+            "07": {"name": "TITLE-V-NUCLEAR-SAFETY", "title": "Title V — Nuclear Safety and Licensing Reform", "topic": "NRC licensing reform, risk-informed regulation, Part 53 framework, advanced reactor licensing"},
+            "08": {"name": "TITLE-VI-NUCLEAR-WASTE-MANAGEMENT", "title": "Title VI — Nuclear Waste Management", "topic": "consent-based siting, interim storage, deep geological repository, fuel recycling research"},
+            "09": {"name": "TITLE-VII-NUCLEAR-HYDROGEN", "title": "Title VII — Nuclear Hydrogen Production", "topic": "high-temperature electrolysis, thermochemical hydrogen, hydrogen co-production, industrial applications"},
+            "10": {"name": "TITLE-VIII-NUCLEAR-EXPORTS", "title": "Title VIII — Nuclear Energy Exports", "topic": "nuclear export financing, international partnerships, non-proliferation, technology transfer"},
+            "11": {"name": "TITLE-IX-NUCLEAR-RESEARCH", "title": "Title IX — Advanced Nuclear Research", "topic": "Generation IV reactors, fusion energy research, materials science, computational modeling"},
+            "12": {"name": "TITLE-X-NUCLEAR-ENVIRONMENTAL", "title": "Title X — Nuclear Environmental Review", "topic": "NEPA streamlining, categorical exclusions, environmental justice, tribal consultation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, clean energy benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act53": {
+        "name": "National Affordable Housing Construction and Rehabilitation Act of 2026",
+        "short_name": "NAHCRA",
+        "dir": "53-Affordable-Housing-Construction-Rehabilitation-Act",
+        "funding": "$110 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, housing affordability crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, housing cost data, supply shortage, homelessness data, economic impacts"},
+            "03": {"name": "TITLE-I-AFFORDABLE-HOUSING-CONSTRUCTION", "title": "Title I — Affordable Housing Construction", "topic": "new construction, LIHTC expansion, multifamily housing, mixed-income development, supportive housing"},
+            "04": {"name": "TITLE-II-HOUSING-REHABILITATION", "title": "Title II — Housing Rehabilitation and Preservation", "topic": "rehabilitation grants, preservation programs, code compliance, energy efficiency, lead abatement"},
+            "05": {"name": "TITLE-III-FIRST-TIME-HOMEBUYER", "title": "Title III — First-Time Homebuyer Assistance", "topic": "down payment assistance, mortgage credit certificates, homebuyer education, closing cost assistance"},
+            "06": {"name": "TITLE-IV-HOUSING-TRUST-FUND", "title": "Title IV — National Housing Trust Fund", "topic": "trust fund capitalization, formula grants, acquisition funds, extremely low-income housing"},
+            "07": {"name": "TITLE-V-HOUSING-WORKFORCE", "title": "Title V — Construction Workforce Development", "topic": "construction skills training, apprenticeship programs, minority contractor development, safety training"},
+            "08": {"name": "TITLE-VI-HOUSING-INNOVATION", "title": "Title VI — Housing Innovation and Technology", "topic": "modular construction, 3D printing, building codes, zoning reform, manufactured housing"},
+            "09": {"name": "TITLE-VII-RURAL-HOUSING", "title": "Title VII — Rural Housing Programs", "topic": "rural housing preservation, farmworker housing, rural homeownership, community facilities"},
+            "10": {"name": "TITLE-VIII-TRIBAL-HOUSING", "title": "Title VIII — Tribal Housing Programs", "topic": "tribal housing construction, NAHASDA reauthorization, tribal housing infrastructure, cultural design"},
+            "11": {"name": "TITLE-IX-HOUSING-FINANCE", "title": "Title IX — Housing Finance Reform", "topic": "FHA modernization, GSE reform, mortgage markets, affordable housing preservation"},
+            "12": {"name": "TITLE-X-HOUSING-ENVIRONMENTAL", "title": "Title X — Housing Development Environmental Review", "topic": "NEPA streamlining, categorical exclusions, affordable housing exemptions, state delegation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, housing affordability benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
