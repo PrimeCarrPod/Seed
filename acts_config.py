@@ -694,5 +694,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, fraud reduction benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act40": {
+        "name": "National Supply Chain Resilience and Domestic Production Act of 2026",
+        "short_name": "NSCRDPA",
+        "dir": "40-Supply-Chain-Resilience-Domestic-Production-Act",
+        "funding": "$70 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, supply chain vulnerabilities, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, supply chain disruption data, foreign dependency risks, domestic production gaps"},
+            "03": {"name": "TITLE-I-CRITICAL-SUPPLY-CHAIN-MAPPING", "title": "Title I — Critical Supply Chain Mapping", "topic": "supply chain risk assessment, dependency analysis, vulnerability identification, mapping methodology"},
+            "04": {"name": "TITLE-II-DOMESTIC-PRODUCTION-INCENTIVES", "title": "Title II — Domestic Production Incentives", "topic": "reshoring tax credits, domestic manufacturing grants, loan guarantees, investment incentives"},
+            "05": {"name": "TITLE-III-STRATEGIC-STOCKPILES", "title": "Title III — Strategic Stockpile Expansion", "topic": "critical goods reserves, rotation protocols, storage facilities, international coordination"},
+            "06": {"name": "TITLE-IV-SUPPLY-CHAIN-WORKFORCE", "title": "Title IV — Supply Chain Workforce Development", "topic": "logistics training, procurement specialist programs, supply chain analyst education"},
+            "07": {"name": "TITLE-V-TRANSPORTATION-LOGISTICS", "title": "Title V — Transportation and Logistics Resilience", "topic": "freight infrastructure, port modernization, last-mile delivery, intermodal connectivity"},
+            "08": {"name": "TITLE-VI-DIGITAL-SUPPLY-CHAIN", "title": "Title VI — Digital Supply Chain Security", "topic": "blockchain traceability, supply chain visibility, cybersecurity standards, data sharing"},
+            "09": {"name": "TITLE-VII-SMALL-MANUFACTURER-SUPPORT", "title": "Title VII — Small Manufacturer Supply Chain Integration", "topic": "supplier development, technical assistance, certification support, market access"},
+            "10": {"name": "TITLE-VIII-ALLIED-SUPPLY-CHAIN", "title": "Title VIII — Allied Supply Chain Partnerships", "topic": "friend-shoring agreements, allied production sharing, trade facilitation, standards harmonization"},
+            "11": {"name": "TITLE-IX-EMERGENCY-SUPPLY-CHAIN", "title": "Title IX — Emergency Supply Chain Response", "topic": "emergency production capacity, surge manufacturing, strategic reserve release, distribution networks"},
+            "12": {"name": "TITLE-X-AGRICULTURAL-SUPPLY-CHAIN", "title": "Title X — Agricultural Supply Chain Resilience", "topic": "food supply chain security, fertilizer independence, agricultural inputs, distribution resilience"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, supply chain security benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act41": {
+        "name": "National Clean Energy Workforce Housing and Infrastructure Act of 2026",
+        "short_name": "NCEWHIA",
+        "dir": "41-Clean-Energy-Workforce-Housing-Infrastructure-Act",
+        "funding": "$45 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, workforce housing crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, housing affordability data, clean energy worker needs, infrastructure gaps"},
+            "03": {"name": "TITLE-I-WORKFORCE-HOUSING-CONSTRUCTION", "title": "Title I — Workforce Housing Construction", "topic": "affordable housing development, modular construction, employer-assisted housing, community land trusts"},
+            "04": {"name": "TITLE-II-CLEAN-ENERGY-PARKS", "title": "Title II — Clean Energy Industrial Parks", "topic": "industrial park development, shared infrastructure, utility access, transportation links"},
+            "05": {"name": "TITLE-III-TRANSIT-ORIENTED-DEVELOPMENT", "title": "Title III — Transit-Oriented Workforce Development", "topic": "transit-accessible housing, commuter rail links, bus rapid transit, bike infrastructure"},
+            "06": {"name": "TITLE-IV-RURAL-WORKFORCE-HOUSING", "title": "Title IV — Rural Clean Energy Workforce Housing", "topic": "rural housing rehabilitation, manufactured housing, remote work infrastructure, rural broadband"},
+            "07": {"name": "TITLE-V-HOUSING-WORKFORCE-TRAINING", "title": "Title V — Construction Workforce Training", "topic": "construction skills training, apprenticeship programs, building trades education, safety certification"},
+            "08": {"name": "TITLE-VI-INFRASTRUCTURE-MODERNIZATION", "title": "Title VI — Community Infrastructure Modernization", "topic": "water systems, sewer upgrades, broadband deployment, road improvements, utility modernization"},
+            "09": {"name": "TITLE-VII-DISASTER-RESILIENT-HOUSING", "title": "Title VII — Disaster-Resilient Housing Standards", "topic": "building codes, fire-resistant construction, flood protection, wind resistance, insurance incentives"},
+            "10": {"name": "TITLE-VIII-TRIBAL-HOUSING", "title": "Title VIII — Tribal Housing and Infrastructure", "topic": "tribal housing programs, reservation infrastructure, tribal utility authority, cultural considerations"},
+            "11": {"name": "TITLE-IX-HOUSING-FINANCE", "title": "Title IX — Workforce Housing Finance", "topic": "low-interest loans, down payment assistance, rental assistance, housing trust funds"},
+            "12": {"name": "TITLE-X-ENVIRONMENTAL-REVIEW-HOUSING", "title": "Title X — Housing Development Environmental Review", "topic": "NEPA streamlining for housing, categorical exclusions, affordable housing exemptions, state delegation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, housing affordability benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
