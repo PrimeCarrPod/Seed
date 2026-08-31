@@ -149,8 +149,8 @@
     let lastTime = 0;
 
     // Universe phase: 'bigbang', 'expansion', 'contraction'
-    let universePhase = 'bigbang';
-    let universeScale = 0.001;
+    let universePhase = 'expansion';
+    let universeScale = 1.0;
     let universeTime = 0;
     let particlesVisible = true;
 
@@ -208,19 +208,19 @@
 
         for (let i = 0; i <= segments; i++) {
             const t = (i / segments) * Math.PI * 2;
-            const baseR = (3 + Math.log(prime + 1) * 0.5) * scale;
+            const baseR = (5 + Math.log(prime + 1) * 2) * scale;
             const twistAngle = twists * t * 0.5;
             const foldFactor = Math.sin(foldStage * Math.PI);
 
-            const r = baseR * (1 + 0.3 * Math.cos(twistAngle));
-            const x = r * Math.cos(t) + foldFactor * baseR * 0.5 * Math.cos(2*t);
+            const r = baseR * (1 + 0.5 * Math.cos(twistAngle));
+            const x = r * Math.cos(t) + foldFactor * baseR * 0.8 * Math.cos(2*t);
             const y = r * Math.sin(t) * Math.cos(twistAngle * 0.5);
-            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.5);
+            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.3);
 
             points.push(new THREE.Vector3(x, y, z));
 
             const hue = (Math.log(prime) % 1) + foldStage * 0.3;
-            color.setHSL(hue, 0.8, 0.6);
+            color.setHSL(hue, 0.9, 0.7);
             colors.push(color.r, color.g, color.b);
         }
 
@@ -240,16 +240,16 @@
         for (let i = 0; i < count; i++) {
             // Position along fold path
             const t = (i / count) * Math.PI * 2;
-            const baseR = (2 + gap * 0.3) * scale;
+            const baseR = (4 + gap * 0.5) * scale;
             const twistAngle = twistCount * t * 0.5;
             const foldFactor = Math.sin(foldStage * Math.PI);
 
-            const r = baseR * (1 + 0.2 * Math.cos(twistAngle));
-            const spread = (Math.random() - 0.5) * scale * 2;
+            const r = baseR * (1 + 0.3 * Math.cos(twistAngle));
+            const spread = (Math.random() - 0.5) * scale * 5;
 
-            positions[i*3] = r * Math.cos(t) + foldFactor * baseR * 0.3 * Math.cos(2*t) + spread;
+            positions[i*3] = r * Math.cos(t) + foldFactor * baseR * 0.5 * Math.cos(2*t) + spread;
             positions[i*3+1] = r * Math.sin(t) * Math.cos(twistAngle * 0.5) + spread;
-            positions[i*3+2] = r * Math.sin(twistAngle) * (1 - foldFactor * 0.5) + spread;
+            positions[i*3+2] = r * Math.sin(twistAngle) * (1 - foldFactor * 0.3) + spread;
 
             // Color by species
             const sp = species[i % species.length];
@@ -272,7 +272,7 @@
             scene.fog = new THREE.FogExp2(0x020205, 0.005);
 
             camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 5000);
-            camera.position.set(0, 30, 60);
+            camera.position.set(0, 20, 50);
 
             renderer = new THREE.WebGLRenderer({antialias:true});
             renderer.setSize(innerWidth, innerHeight);
@@ -316,14 +316,14 @@
 
             // Fold spine
             const geo = createFoldGeometry(prime, twistCount, foldProgress, universeScale);
-            const mat = new THREE.LineBasicMaterial({vertexColors:true, linewidth:2, transparent:true, opacity:0.8});
+            const mat = new THREE.LineBasicMaterial({vertexColors:true, linewidth:3, transparent:true, opacity:0.95});
             const line = new THREE.Line(geo, mat);
             scene.add(line);
             foldMeshes.push(line);
 
             // Particles following fold
             const pGeo = createFoldParticles(prime, foldProgress, gap, universeScale);
-            const pMat = new THREE.PointsMaterial({size:0.2, vertexColors:true, transparent:true, opacity:0.8, blending:THREE.AdditiveBlending});
+            const pMat = new THREE.PointsMaterial({size:0.5, vertexColors:true, transparent:true, opacity:0.9, blending:THREE.AdditiveBlending});
             const pPoints = new THREE.Points(pGeo, pMat);
             pPoints.visible = particlesVisible;
             scene.add(pPoints);
@@ -408,7 +408,7 @@
 
         bigBang() {
             universePhase = 'bigbang';
-            universeScale = 0.001;
+            universeScale = 0.5;
             currentPrimeIdx = 0;
             twistCount = 1;
             foldCount = 0;
@@ -416,14 +416,14 @@
             foldProgress = 0;
             speed = 2;
             logEvent('[BIG BANG] Universe reset — infinite cycle begins!');
-            showEquation('a(t) &rarr; 0, &rho; &rarr; &infin; [singularity]');
+            showEquation('ds&sup2; = -(1-2GM/r)dt&sup2; + (1-2GM/r)&supminus;1dr&sup2; + r&sup2;d&Omega;&sup2; [Schwarzschild]');
             this.createInitialFold();
             this.updateDisplay();
         },
 
         reset() {
-            universePhase = 'bigbang';
-            universeScale = 0.001;
+            universePhase = 'expansion';
+            universeScale = 1.0;
             currentPrimeIdx = 0;
             twistCount = 1;
             foldCount = 0;
