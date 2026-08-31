@@ -886,5 +886,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, veteran economic integration benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act48": {
+        "name": "National Domestic Semiconductor Packaging and Advanced Chiplet Act of 2026",
+        "short_name": "NDSPCA",
+        "dir": "48-Domestic-Semiconductor-Packaging-Chiplet-Act",
+        "funding": "$55 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, chip packaging gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, semiconductor dependency data, advanced packaging needs, supply chain risks"},
+            "03": {"name": "TITLE-I-ADVANCED-PACKAGING-FACILITIES", "title": "Title I — Advanced Packaging Facility Construction", "topic": "OSAT facilities, 2.5D/3D packaging, wafer-level packaging, system-in-package, heterogeneous integration"},
+            "04": {"name": "TITLE-II-CHIPLET-STANDARDS", "title": "Title II — Chiplet Architecture Standards", "topic": "UCIe standard, chiplet interfaces, design tools, testing protocols, interoperability certification"},
+            "05": {"name": "TITLE-III-PACKAGING-WORKFORCE", "title": "Title III — Semiconductor Packaging Workforce", "topic": "packaging engineer training, technician certification, process engineer education, metrology specialist programs"},
+            "06": {"name": "TITLE-IV-SUBSTRATE-MANUFACTURING", "title": "Title IV — IC Substrate Manufacturing", "topic": "organic substrates, ceramic substrates, embedded die substrates, fine-line manufacturing, test sockets"},
+            "07": {"name": "TITLE-V-PACKAGING-RESEARCH", "title": "Title V — Advanced Packaging Research", "topic": "thermal management, signal integrity, power delivery, test methodologies, design automation"},
+            "08": {"name": "TITLE-VI-EQUIPMENT-MATERIALS", "title": "Title VI — Packaging Equipment and Materials", "topic": "bonding equipment, lithography tools, thin wafer handling, underfill materials, solder bumping"},
+            "09": {"name": "TITLE-VII-AEROSPACE-DEFENSE-PACKAGING", "title": "Title VII — Aerospace and Defense Packaging", "topic": "radiation-hardened packaging, high-reliability packaging, hermetic packaging, defense qualification"},
+            "10": {"name": "TITLE-VIII-PACKAGING-EXPORT-CONTROLS", "title": "Title VIII — Packaging Technology Export Controls", "topic": "export license requirements, deemed exports, foreign researcher screening, multilateral coordination"},
+            "11": {"name": "TITLE-IX-PACKAGING-CLUSTER", "title": "Title IX — Regional Packaging Clusters", "topic": "regional packaging hubs, industry-university partnerships, shared facilities, supply chain ecosystems"},
+            "12": {"name": "TITLE-X-PACKAGING-FINANCE", "title": "Title X — Packaging Finance and Incentives", "topic": "investment tax credits, loan guarantees, grants, public-private partnerships, demand aggregation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, chip supply chain security, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act49": {
+        "name": "National Paid Family and Medical Leave Insurance Act of 2026",
+        "short_name": "NPFMLA",
+        "dir": "49-Paid-Family-Medical-Leave-Insurance-Act",
+        "funding": "$200 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, paid leave gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, paid leave data, economic security impacts, health outcomes"},
+            "03": {"name": "TITLE-I-FAMILY-LEAVE-PROGRAM", "title": "Title I — Federal Family and Medical Leave Program", "topic": "leave duration, benefit levels, wage replacement, job protection, eligibility requirements"},
+            "04": {"name": "TITLE-II-PAID-LEAVE-FINANCING", "title": "Title II — Program Financing", "topic": "payroll contributions, trust fund, benefit payments, administrative costs, solvency requirements"},
+            "05": {"name": "TITLE-III-SMALL-BUSINESS-SUPPORT", "title": "Title III — Small Business Support", "topic": "small business grants, administrative simplification, compliance assistance, temporary worker replacement"},
+            "06": {"name": "TITLE-IV-STATE-LEAVE-PROGRAMS", "title": "Title IV — State Leave Program Coordination", "topic": "state program coordination, federal minimum standards, state waivers, supplemental benefits"},
+            "07": {"name": "TITLE-V-SELF-EMPLOYED-LEAVE", "title": "Title V — Self-Employed and Gig Worker Coverage", "topic": "voluntary coverage, benefit calculation, contribution mechanisms, portability"},
+            "08": {"name": "TITLE-VI-PAID-LEAVE-ANTI-RETALIATION", "title": "Title VI — Anti-Retaliation and Enforcement", "topic": "retaliation protections, complaint procedures, penalties, private right of action, DOL enforcement"},
+            "09": {"name": "TITLE-VII-PAID-LEAVE-OUTREACH", "title": "Title VII — Program Outreach and Education", "topic": "public awareness, employer education, multilingual outreach, community partnerships"},
+            "10": {"name": "TITLE-VIII-MEDICAL-LEAVE-DEFINITION", "title": "Title VIII — Medical Leave Definitions and Coverage", "topic": "serious health condition, family member definition, intermittent leave, fitness-for-duty certification"},
+            "11": {"name": "TITLE-IX-PAID-LEAVE-DATA", "title": "Title IX — Data Collection and Program Evaluation", "topic": "program data, utilization analysis, economic impact studies, program evaluation, annual reporting"},
+            "12": {"name": "TITLE-X-PAID-LEAVE-COVID-PREP", "title": "Title X — Pandemic and Emergency Leave Preparedness", "topic": "emergency leave authority, pandemic preparedness, public health emergency leave, future readiness"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, economic security benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
