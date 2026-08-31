@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Fold v1 | Infinite Prime Gap Worldline Folding Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap');
+        *{box-sizing:border-box;}
+        body{font-family:'Rajdhani',sans-serif;background:#000;color:#e2e8f0;overflow:hidden;margin:0;}
+        h1,h2,h3,.orbitron{font-family:'Orbitron',sans-serif;}
+        #canvas-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+        .hud{background:rgba(5,8,20,0.85);backdrop-filter:blur(12px);border:1px solid rgba(56,189,248,0.3);border-radius:8px;z-index:10;}
+        .btn{padding:6px 12px;border-radius:5px;cursor:pointer;font-size:11px;font-family:'Orbitron',sans-serif;text-transform:uppercase;letter-spacing:0.05em;border:1px solid;transition:all 0.2s;}
+        .btn-cyan{background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.5);color:#38bdf8;}
+        .btn-cyan:hover{background:rgba(56,189,248,0.4);}
+        .btn-purple{background:rgba(168,85,247,0.15);border-color:rgba(168,85,247,0.5);color:#a855f7;}
+        .btn-purple:hover{background:rgba(168,85,247,0.4);}
+        .btn-green{background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.5);color:#10b981;}
+        .btn-green:hover{background:rgba(16,185,129,0.4);}
+        .btn-red{background:rgba(244,63,94,0.15);border-color:rgba(244,63,94,0.5);color:#f43f5e;}
+        .btn-red:hover{background:rgba(244,63,94,0.4);}
+        .btn-yellow{background:rgba(254,240,138,0.15);border-color:rgba(254,240,138,0.5);color:#fef08a;}
+        .btn-yellow:hover{background:rgba(254,240,138,0.4);}
+        .btn-glue{background:rgba(249,115,22,0.15);border-color:rgba(249,115,22,0.5);color:#f97316;}
+        .btn-glue:hover{background:rgba(249,115,22,0.4);}
+        .btn-active{background:rgba(56,189,248,0.6)!important;box-shadow:0 0 12px rgba(56,189,248,0.8);}
+        .fold-info{font-family:'Courier New',monospace;font-size:10px;color:#38bdf8;background:rgba(0,0,0,0.7);padding:4px 8px;border-radius:4px;}
+        .prime-display{color:#fef08a;font-weight:bold;}
+        .twist-display{color:#a855f7;font-weight:bold;}
+        .fold-display{color:#10b981;font-weight:bold;}
+    </style>
+</head>
+<body class="w-full h-screen relative">
+    <div id="canvas-container"></div>
+
+    <!-- Header -->
+    <div class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none bg-gradient-to-b from-black/90 to-transparent">
+        <div class="flex justify-between items-start">
+            <div class="pointer-events-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+                    PRIME FOLD v1 — INFINITE PRIME GAP WORLDLINE ENGINE
+                </h1>
+                <p class="text-xs text-cyan-300 mt-1">Prime gaps as worldline steps · Mirror fold iterations · Base-π counting system</p>
+            </div>
+            <div class="pointer-events-auto flex items-center gap-2">
+                <button id="btn-toggle-hud" class="btn btn-cyan" onclick="document.getElementById('hud-left').classList.toggle('hidden')">☰</button>
+                <button id="btn-play" class="btn btn-green" onclick="FoldEngine.togglePlay()">▶ Play</button>
+                <button id="btn-reset" class="btn btn-red" onclick="FoldEngine.reset()">↺ Reset</button>
+                <div class="text-green-400 text-xs orbitron font-bold animate-pulse">● LIVE</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left Panel -->
+    <div id="hud-left" class="absolute bottom-4 left-4 z-20 w-80 flex flex-col gap-2 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-cyan-400 text-xs orbitron uppercase tracking-wider mb-2">Fold State</h3>
+            <div class="space-y-1 text-xs">
+                <div>Current Prime: <span id="current-prime" class="prime-display">2</span></div>
+                <div>Twists: <span id="current-twists" class="twist-display">1</span></div>
+                <div>Folds: <span id="current-folds" class="fold-display">0</span></div>
+                <div>Sub-Particles: <span id="sub-count" class="text-white">1</span></div>
+                <div>Iteration: <span id="iter-count" class="text-purple-300">0</span></div>
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-purple-400 text-xs orbitron uppercase tracking-wider mb-2">Prime Gap Steps</h3>
+            <div id="gap-display" class="text-xs font-mono text-cyan-300"></div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-yellow-400 text-xs orbitron uppercase tracking-wider mb-2">Base-π Counting</h3>
+            <div id="basepi-display" class="text-xs font-mono text-yellow-300"></div>
+        </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="absolute bottom-4 right-4 z-20 w-72 flex flex-col gap-2 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-green-400 text-xs orbitron uppercase tracking-wider mb-2">Controls</h3>
+            <div class="grid grid-cols-2 gap-1.5 text-xs mb-2">
+                <button onclick="FoldEngine.stepForward()" class="btn btn-cyan">Step +</button>
+                <button onclick="FoldEngine.stepBack()" class="btn btn-cyan">Step -</button>
+                <button onclick="FoldEngine.faster()" class="btn btn-green">Faster</button>
+                <button onclick="FoldEngine.slower()" class="btn btn-green">Slower</button>
+                <button onclick="FoldEngine.toggleAuto()" class="btn btn-purple">Auto</button>
+                <button onclick="FoldEngine.bigBang()" class="btn btn-yellow">Big Bang!</button>
+            </div>
+            <div class="space-y-1">
+                <div class="flex justify-between text-xs text-gray-400"><span>Speed</span><span id="speed-val">1.0x</span></div>
+                <input type="range" min="0.1" max="5" step="0.1" value="1" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="FoldEngine.setSpeed(this.value)">
+                <div class="flex justify-between text-xs text-gray-400"><span>Complexity</span><span id="complex-val">1</span></div>
+                <input type="range" min="1" max="20" step="1" value="5" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="FoldEngine.setComplexity(this.value)">
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto max-h-32 overflow-y-auto">
+            <h3 class="text-pink-400 text-xs orbitron uppercase tracking-wider mb-2">Event Log</h3>
+            <ul id="event-log" class="text-xs space-y-0.5 font-mono"></ul>
+        </div>
+    </div>
+
+    <!-- Center Info -->
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none text-center" id="center-info">
+        <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600 orbitron" id="center-prime">2</div>
+        <div class="text-sm text-cyan-300 mt-2" id="center-status">Initializing fold...</div>
+    </div>
+
+    <script>
+    // ===================================================================
+    // PRIME FOLD ENGINE v1
+    // Infinite prime gap worldline folding through base-pi counting
+    // ===================================================================
+
+    const PRIMES = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97];
+    const PRIME_GAPS = PRIMES.slice(1).map((p,i) => p - PRIMES[i]);
+
+    let scene, camera, renderer, composer;
+    let foldMeshes = [], particleSystems = [];
+    let currentPrimeIdx = 0;
+    let twistCount = 1;
+    let foldCount = 0;
+    let iteration = 0;
+    let playing = true;
+    let speed = 1.0;
+    let complexity = 5;
+    let foldProgress = 0;
+    let lastTime = 0;
+
+    function logEvent(msg) {
+        const log = document.getElementById('event-log');
+        const li = document.createElement('li');
+        li.className = 'text-cyan-300 border-l-2 border-cyan-900 pl-1';
+        li.textContent = '[' + new Date().toTimeString().slice(0,8) + '] ' + msg;
+        log.prepend(li);
+        while(log.children.length > 15) log.lastChild.remove();
+    }
+
+    // Create a Möbius-like fold geometry for a given prime
+    function createFoldGeometry(prime, twists, foldStage) {
+        const points = [];
+        const colors = [];
+        const segments = 200 * complexity;
+        const color = new THREE.Color();
+
+        for (let i = 0; i <= segments; i++) {
+            const t = (i / segments) * Math.PI * 2;
+
+            // Base circle with prime-scaled radius
+            const baseR = 3 + prime * 0.3;
+
+            // Twist factor: number of half-twists = prime
+            const twistAngle = twists * t * 0.5;
+
+            // Fold stage: 0=circle, 0.5=figure-8, 1=collapse
+            const foldFactor = Math.sin(foldStage * Math.PI);
+
+            // Möbius strip parametric equations with prime twists
+            const r = baseR * (1 + 0.3 * Math.cos(twistAngle));
+            const x = r * Math.cos(t) + foldFactor * baseR * 0.5 * Math.cos(2*t);
+            const y = r * Math.sin(t) * Math.cos(twistAngle * 0.5);
+            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.5);
+
+            points.push(new THREE.Vector3(x, y, z));
+
+            // Color based on position in fold
+            const hue = (prime % 10) / 10 + foldStage * 0.3;
+            color.setHSL(hue, 0.8, 0.6);
+            colors.push(color.r, color.g, color.b);
+        }
+
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        return geometry;
+    }
+
+    // Create sub-particle system for a fold
+    function createSubParticles(prime, foldStage) {
+        const count = Math.min(prime * 20, 500);
+        const positions = new Float32Array(count * 3);
+        const colors = new Float32Array(count * 3);
+        const color = new THREE.Color();
+
+        for (let i = 0; i < count; i++) {
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            const r = (2 + prime * 0.2) * (0.5 + foldStage * 0.5);
+
+            positions[i*3] = r * Math.sin(phi) * Math.cos(theta);
+            positions[i*3+1] = r * Math.sin(phi) * Math.sin(theta);
+            positions[i*3+2] = r * Math.cos(phi);
+
+            const hue = (prime % 7) / 7;
+            color.setHSL(hue, 0.9, 0.7);
+            colors[i*3] = color.r;
+            colors[i*3+1] = color.g;
+            colors[i*3+2] = color.b;
+        }
+
+        const geo = new THREE.BufferGeometry();
+        geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+        geo.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        return geo;
+    }
+
+    const FoldEngine = {
+        init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x050510);
+            scene.fog = new THREE.FogExp2(0x050510, 0.008);
+
+            camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 2000);
+            camera.position.set(0, 15, 35);
+
+            renderer = new THREE.WebGLRenderer({antialias:true});
+            renderer.setSize(innerWidth, innerHeight);
+            renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = 0.5;
+
+            const rp = new THREE.RenderPass(scene, camera);
+            const bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 1.2, 0.4, 0.85);
+            composer = new THREE.EffectComposer(renderer);
+            composer.addPass(rp);
+            composer.addPass(bloom);
+
+            scene.add(new THREE.AmbientLight(0x404080));
+            const pt = new THREE.PointLight(0xffffff, 2, 200);
+            pt.position.set(20, 30, 40);
+            scene.add(pt);
+
+            this.createInitialFold();
+            this.updateDisplay();
+            this.animate();
+
+            logEvent('[PRIME FOLD v1] Engine initialized');
+            logEvent('[PRIME FOLD v1] Prime 2: 1 twist, circle → figure-8');
+        },
+
+        createInitialFold() {
+            // Clear existing
+            foldMeshes.forEach(m => scene.remove(m));
+            particleSystems.forEach(p => scene.remove(p));
+            foldMeshes = [];
+            particleSystems = [];
+
+            const prime = PRIMES[currentPrimeIdx];
+            const geo = createFoldGeometry(prime, twistCount, foldProgress);
+            const mat = new THREE.LineBasicMaterial({vertexColors:true, linewidth:2, transparent:true, opacity:0.9});
+            const line = new THREE.Line(geo, mat);
+            scene.add(line);
+            foldMeshes.push(line);
+
+            // Add sub-particles
+            const subGeo = createSubParticles(prime, foldProgress);
+            const subMat = new THREE.PointsMaterial({size:0.15, vertexColors:true, transparent:true, opacity:0.7, blending:THREE.AdditiveBlending});
+            const subPoints = new THREE.Points(subGeo, subMat);
+            scene.add(subPoints);
+            particleSystems.push(subPoints);
+        },
+
+        updateFold() {
+            const prime = PRIMES[currentPrimeIdx];
+
+            // Update fold geometry
+            foldMeshes.forEach((mesh, idx) => {
+                const geo = createFoldGeometry(prime, twistCount, foldProgress);
+                mesh.geometry.dispose();
+                mesh.geometry = geo;
+            });
+
+            // Update sub-particles
+            particleSystems.forEach(mesh => {
+                const geo = createSubParticles(prime, foldProgress);
+                mesh.geometry.dispose();
+                mesh.geometry = geo;
+            });
+
+            // Rotate based on fold progress
+            foldMeshes.forEach(mesh => {
+                mesh.rotation.x = foldProgress * Math.PI * twistCount;
+                mesh.rotation.y = foldProgress * Math.PI * 0.5;
+            });
+        },
+
+        updateDisplay() {
+            const prime = PRIMES[currentPrimeIdx];
+            document.getElementById('current-prime').textContent = prime;
+            document.getElementById('current-twists').textContent = twistCount;
+            document.getElementById('current-folds').textContent = foldCount;
+            document.getElementById('sub-count').textContent = Math.min(prime * 20, 500);
+            document.getElementById('iter-count').textContent = iteration;
+            document.getElementById('center-prime').textContent = prime;
+
+            // Gap display
+            const gaps = PRIME_GAPS.slice(0, currentPrimeIdx).join(', ');
+            document.getElementById('gap-display').innerHTML = gaps || '—';
+
+            // Base-pi display
+            const basePi = (prime / Math.PI).toFixed(6);
+            document.getElementById('basepi-display').innerHTML = `${prime} / π = ${basePi}<br>π × ${prime} = ${(Math.PI * prime).toFixed(6)}`;
+
+            // Status
+            let status = 'Circle';
+            if(foldProgress > 0.3) status = 'Figure-8';
+            if(foldProgress > 0.6) status = 'Teardrop';
+            if(foldProgress > 0.9) status = 'Collapse!';
+            document.getElementById('center-status').textContent = status;
+        },
+
+        stepForward() {
+            const prime = PRIMES[currentPrimeIdx];
+            foldProgress += 0.1 * speed;
+            if(foldProgress >= 1) {
+                foldProgress = 0;
+                foldCount++;
+                twistCount = prime;
+                currentPrimeIdx = (currentPrimeIdx + 1) % PRIMES.length;
+                iteration++;
+                logEvent(`[FOLD] Prime ${PRIMES[currentPrimeIdx]}: ${twistCount} twists, fold ${foldCount}`);
+            }
+            this.updateFold();
+            this.updateDisplay();
+        },
+
+        stepBack() {
+            foldProgress -= 0.1 * speed;
+            if(foldProgress < 0) {
+                foldProgress = 0.9;
+                currentPrimeIdx = (currentPrimeIdx - 1 + PRIMES.length) % PRIMES.length;
+                twistCount = PRIMES[currentPrimeIdx];
+                foldCount = Math.max(0, foldCount - 1);
+            }
+            this.updateFold();
+            this.updateDisplay();
+        },
+
+        faster() { speed = Math.min(speed + 0.5, 5); document.getElementById('speed-val').textContent = speed.toFixed(1) + 'x'; },
+        slower() { speed = Math.max(speed - 0.5, 0.1); document.getElementById('speed-val').textContent = speed.toFixed(1) + 'x'; },
+        setSpeed(v) { speed = parseFloat(v); document.getElementById('speed-val').textContent = parseFloat(v).toFixed(1) + 'x'; },
+        setComplexity(v) { complexity = parseInt(v); document.getElementById('complex-val').textContent = v; this.createInitialFold(); },
+        togglePlay() { playing = !playing; document.getElementById('btn-play').textContent = playing ? '▶ Play' : '⏸ Pause'; },
+        toggleAuto() { playing = !playing; document.getElementById('btn-play').textContent = playing ? '▶ Play' : '⏸ Pause'; },
+
+        bigBang() {
+            currentPrimeIdx = 0;
+            twistCount = 1;
+            foldCount = 0;
+            iteration = 0;
+            foldProgress = 0;
+            speed = 3;
+            logEvent('[BIG BANG] Universe reset — infinite fold begins!');
+            this.createInitialFold();
+            this.updateDisplay();
+        },
+
+        reset() {
+            currentPrimeIdx = 0;
+            twistCount = 1;
+            foldCount = 0;
+            iteration = 0;
+            foldProgress = 0;
+            speed = 1;
+            playing = true;
+            logEvent('[RESET] Fold engine reset');
+            this.createInitialFold();
+            this.updateDisplay();
+        },
+
+        animate() {
+            requestAnimationFrame(() => this.animate());
+            const now = Date.now();
+            const dt = (now - lastTime) / 1000;
+            lastTime = now;
+
+            if(playing) {
+                foldProgress += 0.005 * speed * dt * 60;
+                if(foldProgress >= 1) {
+                    foldProgress = 0;
+                    foldCount++;
+                    const prime = PRIMES[currentPrimeIdx];
+                    twistCount = prime;
+                    currentPrimeIdx = (currentPrimeIdx + 1) % PRIMES.length;
+                    iteration++;
+                    if(foldCount % 5 === 0) logEvent(`[AUTO] Iteration ${iteration}: prime ${PRIMES[currentPrimeIdx]}, ${twistCount} twists`);
+                }
+                this.updateFold();
+                this.updateDisplay();
+            }
+
+            // Rotate particle systems
+            particleSystems.forEach((ps, i) => {
+                ps.rotation.y += 0.002 * (i + 1);
+                ps.rotation.x += 0.001;
+            });
+
+            renderer.render(scene, camera);
+        }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => FoldEngine.init());
+    </script>
+</body>
+</html>
