@@ -417,6 +417,54 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, mobility benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act28": {
+        "name": "National Solar Energy and Distributed Generation Act of 2026",
+        "short_name": "NSEDGA",
+        "dir": "28-Solar-Energy-Distributed-Generation-Act",
+        "funding": "$55 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, solar energy potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, solar resource data, distributed generation benefits, cost reduction trajectory"},
+            "03": {"name": "TITLE-I-UTILITY-SCALE-SOLAR", "title": "Title I — Utility-Scale Solar Deployment", "topic": "large-scale solar farms, solar energy zones, transmission access, power purchase agreements, permitting reform"},
+            "04": {"name": "TITLE-II-RESIDENTIAL-SOLAR", "title": "Title II — Residential and Community Solar", "topic": "rooftop solar incentives, community solar gardens, low-income solar, solarize campaigns, net metering standards"},
+            "05": {"name": "TITLE-III-SOLAR-MANUFACTURING", "title": "Title III — Domestic Solar Manufacturing", "topic": "solar cell production, module assembly, inverter manufacturing, polysilicon production, supply chain resilience"},
+            "06": {"name": "TITLE-IV-SOLAR-WORKFORCE", "title": "Title IV — Solar Energy Workforce Development", "topic": "solar installer certification, electrician training, engineering programs, apprenticeship standards"},
+            "07": {"name": "TITLE-V-SOLAR-RECYCLING", "title": "Title V — Solar Panel Recycling and End-of-Life", "topic": "panel recycling requirements, material recovery, extended producer responsibility, recycling infrastructure"},
+            "08": {"name": "TITLE-VI-AGRIVOLTAICS", "title": "Title VI — Agrivoltaics and Land Use", "topic": "dual-use solar farming, grazing compatibility, crop production under panels, land use planning"},
+            "09": {"name": "TITLE-VII-SOLAR-GRID-INTEGRATION", "title": "Title VII — Solar Grid Integration and Forecasting", "topic": "solar forecasting systems, grid flexibility, curtailment reduction, inverter standards, ride-through requirements"},
+            "10": {"name": "TITLE-VIII-FLOATING-SOLAR", "title": "Title VIII — Floating and Novel Solar Applications", "topic": "floatovoltaics, building-integrated solar, solar canopies, space-based solar research"},
+            "11": {"name": "TITLE-IX-SOLAR-RESEARCH", "title": "Title IX — Next-Generation Solar Research", "topic": "perovskite cells, tandem cells, concentrated solar power, solar fuels, efficiency records"},
+            "12": {"name": "TITLE-X-ENVIRONMENTAL-REVIEW", "title": "Title X — Solar Permitting and Environmental Review", "topic": "NEPA categorical exclusions, environmental review timelines, wildlife considerations, desert solar guidelines"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy cost savings, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act29": {
+        "name": "National Nuclear Waste Management and Advanced Reactor Fuel Act of 2026",
+        "short_name": "NNWMA",
+        "dir": "29-Nuclear-Waste-Advanced-Reactor-Fuel-Act",
+        "funding": "$40 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, nuclear waste challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressorial findings, spent fuel inventory, repository program status, advanced fuel cycle potential"},
+            "03": {"name": "TITLE-I-CONSENT-BASED-SITING", "title": "Title I — Consent-Based Siting for Waste Facilities", "topic": "community engagement, consent agreements, economic incentives, tribal consultation, siting process"},
+            "04": {"name": "TITLE-II-INTERIM-STORAGE", "title": "Title II — Interim Storage Facilities", "topic": "consolidated interim storage, transportation requirements, security standards, emergency preparedness"},
+            "05": {"name": "TITLE-III-PERMANENT-REPOSITORY", "title": "Title III — Permanent Geological Repository", "topic": "Yucca Mountain alternative, deep geological disposal, waste package design, closure planning"},
+            "06": {"name": "TITLE-IV-ADVANCED-FUEL-CYCLE", "title": "Title IV — Advanced Fuel Cycle and Recycling", "topic": "spent fuel reprocessing, fast reactor fuel, closed fuel cycle, transmutation research, waste reduction"},
+            "07": {"name": "TITLE-V-TRANSPORTATION-SAFETY", "title": "Title V — Nuclear Waste Transportation Safety", "topic": "transport cask standards, route planning, emergency response, security requirements, NRC certification"},
+            "08": {"name": "TITLE-VI-WASTE-WORKFORCE", "title": "Title VI — Nuclear Waste Management Workforce", "topic": "radiological technician training, transportation specialists, repository engineers, health physics programs"},
+            "09": {"name": "TITLE-VII-ENVIRONMENTAL-REMEDIATION", "title": "Title VII — Legacy Site Environmental Remediation", "topic": "Manhattan Project sites, uranium mill tailings, groundwater remediation, long-term stewardship"},
+            "10": {"name": "TITLE-VIII-ADVANCED-REACTOR-FUEL", "title": "Title VIII — Advanced Reactor Fuel Development", "topic": "HALEU production, TRISO fuel, accident tolerant fuels, fuel qualification, enrichment capability"},
+            "11": {"name": "TITLE-IX-INTERNATIONAL-COOPERATION", "title": "Title IX — International Nuclear Waste Cooperation", "topic": "bilateral agreements, technology exchange, non-proliferation, international repository concepts"},
+            "12": {"name": "TITLE-X-PUBLIC-ENGAGEMENT", "title": "Title X — Public Engagement and Stakeholder Involvement", "topic": "public comment processes, advisory committees, tribal nations engagement, environmental justice"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, waste management benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
 
