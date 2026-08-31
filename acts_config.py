@@ -1126,5 +1126,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, connectivity benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act58": {
+        "name": "National Hydrogen Hub and Clean Fuels Infrastructure Act of 2026",
+        "short_name": "NHHCFCIA",
+        "dir": "58-Hydrogen-Hub-Clean-Fuels-Infrastructure-Act",
+        "funding": "$55 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, hydrogen economy potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, hydrogen production data, clean fuels potential, decarbonization opportunity"},
+            "03": {"name": "TITLE-I-HYDROGEN-HUBS", "title": "Title I — Regional Hydrogen Hubs", "topic": "hub designation, production facilities, infrastructure, end-use applications, regional coordination"},
+            "04": {"name": "TITLE-II-GREEN-HYDROGEN", "title": "Title II — Green Hydrogen Production", "topic": "electrolyzer deployment, renewable hydrogen, production tax credit, cost reduction, scaling manufacturing"},
+            "05": {"name": "TITLE-III-HYDROGEN-INFRASTRUCTURE", "title": "Title III — Hydrogen Infrastructure", "topic": "pipeline development, storage facilities, liquefaction plants, transport corridors, port terminals"},
+            "06": {"name": "TITLE-IV-HYDROGEN-WORKFORCE", "title": "Title IV — Hydrogen Industry Workforce", "topic": "hydrogen safety training, technician certification, engineer education, construction workforce"},
+            "07": {"name": "TITLE-V-HYDROGEN-END-USE", "title": "Title V — Hydrogen End-Use Applications", "topic": "fuel cell vehicles, industrial hydrogen, power generation, heating applications, maritime fuel"},
+            "08": {"name": "TITLE-VI-HYDROGEN-RESEARCH", "title": "Title VI — Hydrogen Research and Development", "topic": "advanced electrolysis, hydrogen storage materials, fuel cell durability, next-gen production"},
+            "09": {"name": "TITLE-VII-HYDROGEN-EXPORTS", "title": "Title VII — Hydrogen Export Infrastructure", "topic": "export terminals, ammonia as carrier, international partnerships, shipping infrastructure"},
+            "10": {"name": "TITLE-VIII-HYDROGEN-FINANCE", "title": "Title VIII — Hydrogen Finance Programs", "topic": "loan guarantees, tax incentives, public-private partnerships, hydrogen purchase commitments"},
+            "11": {"name": "TITLE-IX-HYDROGEN-STANDARDS", "title": "Title IX — Hydrogen Safety and Standards", "topic": "safety codes, leakage detection, materials compatibility, fire protection, regulatory harmonization"},
+            "12": {"name": "TITLE-X-HYDROGEN-ENVIRONMENTAL", "title": "Title X — Hydrogen Environmental Review", "topic": "NEPA streamlining, environmental review, water use, lifecycle analysis, sustainability certification"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy security benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act59": {
+        "name": "National Cybersecurity Workforce and Critical Infrastructure Protection Act of 2026",
+        "short_name": "NCWCIPA",
+        "dir": "59-Cybersecurity-Workforce-Critical-Infrastructure-Protection-Act",
+        "funding": "$45 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, cybersecurity workforce gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, cybersecurity workforce data, critical infrastructure threats, economic risks"},
+            "03": {"name": "TITLE-I-CYBERSECURITY-WORKFORCE", "title": "Title I — Cybersecurity Workforce Development", "topic": "cybersecurity education, workforce training, certification programs, apprenticeship programs, career pathways"},
+            "04": {"name": "TITLE-II-CRITICAL-INFRASTRUCTURE", "title": "Title II — Critical Infrastructure Cybersecurity", "topic": "energy sector security, water system protection, transportation security, financial system resilience"},
+            "05": {"name": "TITLE-III-ZERO-TRUST-MANDATE", "title": "Title III — Zero Trust Architecture Mandate", "topic": "federal zero trust implementation, continuous verification, micro-segmentation, identity management"},
+            "06": {"name": "TITLE-IV-CYBERSECURITY-RESEARCH", "title": "Title IV — Cybersecurity Research", "topic": "AI security, quantum-resistant cryptography, threat intelligence, vulnerability research, security tools"},
+            "07": {"name": "TITLE-V-SUPPLY-CHAIN-SECURITY", "title": "Title V — Supply Chain Cybersecurity", "topic": "software bill of materials, hardware provenance, third-party risk, vendor security assessments"},
+            "08": {"name": "TITLE-VI-CYBERSECURITY-STANDARDS", "title": "Title VI — Cybersecurity Standards", "topic": "NIST standards, critical infrastructure security, reporting requirements, incident response"},
+            "09": {"name": "TITLE-VII-LOCAL-GOVERNMENT-CYBER", "title": "Title VII — Local Government Cybersecurity", "topic": "local government support, election security, state cybersecurity, rural cybersecurity, grants"},
+            "10": {"name": "TITLE-VIII-TRIBAL-CYBERSECURITY", "title": "Title VIII — Tribal Cybersecurity", "topic": "tribal cybersecurity programs, tribal critical infrastructure, technical assistance, grants"},
+            "11": {"name": "TITLE-IX-CYBERSECURITY-FINANCE", "title": "Title IX — Cybersecurity Finance", "topic": "cybersecurity grants, loan programs, insurance incentives, public-private partnerships"},
+            "12": {"name": "TITLE-X-CYBERSECURITY-INTERNATIONAL", "title": "Title X — International Cybersecurity Cooperation", "topic": "international norms, capacity building, threat sharing, cyber sanctions, diplomatic frameworks"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, security benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
