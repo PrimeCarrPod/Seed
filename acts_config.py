@@ -1270,5 +1270,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, industrial decarbonization benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act64": {
+        "name": "National Forest Carbon Sequestration and Wildfire Resilience Act of 2020",
+        "short_name": "NFCSWRA",
+        "dir": "64-Forest-Carbon-Sequestration-Wildfire-Resilience-Act",
+        "funding": "$40 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, forest carbon potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, forest carbon data, wildfire risk, climate mitigation potential"},
+            "03": {"name": "TITLE-I-FOREST-CARBON", "title": "Title I — Forest Carbon Sequestration", "topic": "reforestation, afforestation, forest management, carbon accounting, monitoring systems"},
+            "04": {"name": "TITLE-II-WILDFIRE-RESILIENCE", "title": "Title II — Wildfire Resilience", "topic": "fuel reduction, prescribed fire, fire breaks, community protection, early detection"},
+            "05": {"name": "TITLE-III-URBAN-FORESTS", "title": "Title III — Urban and Community Forests", "topic": "urban tree planting, green infrastructure, heat island mitigation, air quality, community access"},
+            "06": {"name": "TITLE-IV-FOREST-WORKFORCE", "title": "Title IV — Forest and Fire Workforce", "topic": "forester training, firefighter programs, timber worker transition, youth corps"},
+            "07": {"name": "TITLE-V-FOREST-PRODUCTS", "title": "Title V — Sustainable Forest Products", "topic": "mass timber, wood innovation, biochar, forest product markets, carbon storage"},
+            "08": {"name": "TITLE-VI-FOREST-RESEARCH", "title": "Title VI — Forest Research", "topic": "carbon sequestration science, fire ecology, climate adaptation, forest health, biodiversity"},
+            "09": {"name": "TITLE-VII-PRIVATE-FORESTS", "title": "Title VII — Private Forestland Incentives", "topic": "conservation easements, carbon markets, technical assistance, small landowner programs"},
+            "10": {"name": "TITLE-VIII-TRIBAL-FORESTS", "title": "Title VIII — Tribal Forest Management", "topic": "tribal forestry, cultural burning, forest management, co-management, economic development"},
+            "11": {"name": "TITLE-IX-FOREST-FINANCE", "title": "Title IX — Forest Finance Programs", "topic": "carbon credits, forest bonds, green banks, public-private partnerships, grants"},
+            "12": {"name": "TITLE-X-FOREST-MONITORING", "title": "Title X — Forest Carbon Monitoring", "topic": "remote sensing, ground truthing, verification, reporting, transparency, data systems"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, carbon sequestration benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act65": {
+        "name": "National Ocean Carbon Capture and Blue Carbon Ecosystems Act of 2026",
+        "short_name": "NOCCBCEA",
+        "dir": "65-Ocean-Carbon-Capture-Blue-Carbon-Ecosystems-Act",
+        "funding": "$30 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, blue carbon potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, ocean carbon data, coastal ecosystem health, climate mitigation potential"},
+            "03": {"name": "TITLE-I-BLUE-CARBON", "title": "Title I — Blue Carbon Ecosystem Restoration", "topic": "mangrove restoration, seagrass meadows, salt marshes, kelp forests, carbon accounting"},
+            "04": {"name": "TITLE-II-OCEAN-CARBON-REMOVAL", "title": "Title II — Ocean Carbon Dioxide Removal", "topic": "ocean alkalinity enhancement, electrochemical methods, seaweed cultivation, carbon monitoring"},
+            "05": {"name": "TITLE-III-COASTAL-RESILIENCE", "title": "Title III — Coastal Resilience", "topic": "living shorelines, coral reef restoration, coastal erosion, storm surge protection, adaptation"},
+            "06": {"name": "TITLE-IV-MARINE-WORKFORCE", "title": "Title IV — Marine and Coastal Workforce", "topic": "marine biologist training, restoration technician programs, coastal engineer education"},
+            "07": {"name": "TITLE-V-MARINE-RESEARCH", "title": "Title V — Marine Carbon Research", "topic": "ocean carbon monitoring, ecosystem research, removal technologies, environmental impacts"},
+            "08": {"name": "TITLE-VI-FISHERIES-CARBON", "title": "Title VI — Sustainable Fisheries and Carbon", "topic": "sustainable fisheries, marine protected areas, ecosystem-based management, carbon co-benefits"},
+            "09": {"name": "TITLE-VII-TRIBAL-COASTAL", "title": "Title VII — Tribal Coastal Management", "topic": "tribal coastal management, traditional knowledge, tribal restoration, cultural sites"},
+            "10": {"name": "TITLE-VIII-OCEAN-CARBON-FINANCE", "title": "Title VIII — Ocean Carbon Finance", "topic": "blue carbon credits, carbon markets, green bonds, public-private partnerships, grants"},
+            "11": {"name": "TITLE-IX-OCEAN-CARBON-STANDARDS", "title": "Title IX — Ocean Carbon Standards", "topic": "carbon accounting, verification, monitoring, reporting, additionality, permanence"},
+            "12": {"name": "TITLE-X-OCEAN-CARBON-ENVIRONMENTAL", "title": "Title X — Ocean Carbon Environmental Review", "topic": "environmental impact assessment, marine protected areas, biodiversity, monitoring, adaptive management"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, coastal resilience benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
