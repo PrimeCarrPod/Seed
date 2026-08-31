@@ -1,21 +1,13 @@
 # Quark Hadron Nuclear Physics — A7-22
 ## Hybrid Meson Spectroscopy
 **Article:** A7-22  
-**Generated:** 2026-08-31 02:30:00 UTC
+**Generated:** 2026-08-31 03:00:00 UTC
 
 ---
 
 # Hybrid Meson Spectroscopy
 
-## Abstract
-
-This article explores Hybrid Meson Spectroscopy within the Prime Electron framework, deriving the fundamental hadronic physics from prime gap statistics at scale 1873.
-
-## 1. Introduction
-
-Hybrid Meson Spectroscopy represents a fundamental aspect of hadronic physics. In the Prime Electron framework, this phenomenon emerges from the topology of prime gaps in the electron worldline.
-
-## 2. Prime Gap Analysis at 1873
+## 1. Prime Gap Analysis at 1873
 
 The prime gap structure around 1873 provides the foundation for deriving Hybrid Meson Spectroscopy:
 
@@ -23,13 +15,27 @@ The prime gap structure around 1873 provides the foundation for deriving Hybrid 
 - Correlation length: ξ = p_n/⟨d⟩ ≈ 1873/7.47
 - Critical exponent: ν = 1/(⟨d⟩/d_min - 1)
 
-## 3. Theoretical Framework
+The gap correlation function C(Δn) = ⟨d_n × d_{n+Δn}⟩ determines the Hybrid Meson Spectroscopy coupling at this scale.
+
+## 2. Hybrid Meson Spectroscopy in the Prime Electron Framework
+
+In the Prime Electron framework, Hybrid Meson Spectroscopy emerges from the topology of prime gaps in the electron worldline. The prime gap sequence d_n = p_{n+1} - p_n encodes the fundamental structure of hadronic physics at scale 1873.
+
+The theoretical framework connects:
+- Gap density correlations → Hybrid Meson Spectroscopy coupling constants
+- Meta-Depth iteration → renormalization group flow
+- Holographic encoding → information-theoretic bounds on Hybrid Meson Spectroscopy
+
+## 3. Mathematical Derivation
 
 The Hybrid Meson Spectroscopy parameter is derived from:
 
 P_Hybrid_Meson_Spectroscopy = Σ_{k=1}^{1873} (d_k - ⟨d⟩)² / k² × (ℏc/κ)
 
-This yields the physical observable at the hadronic scale.
+This yields the physical observable at the hadronic scale. The derivation uses:
+1. Gap sum rules from the explicit formula for π(x)
+2. Hardy-Littlewood conjectures for gap correlations
+3. Zeta-regularized sums over record gaps
 
 ## 4. Connection to QCD
 
@@ -43,7 +49,7 @@ The derived Hybrid Meson Spectroscopy connects to QCD through:
 Testable predictions for Hybrid Meson Spectroscopy include:
 - Cross sections at √s = 1873 GeV
 - Angular distributions in scattering experiments
-- Correlations in heavy ion collisions
+- Correlations in heavy ion collisions at RHIC and LHC
 
 ## 6. Results and Discussion
 

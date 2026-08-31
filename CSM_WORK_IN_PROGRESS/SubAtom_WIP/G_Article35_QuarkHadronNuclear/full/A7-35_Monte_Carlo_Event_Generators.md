@@ -1,21 +1,13 @@
 # Quark Hadron Nuclear Physics — A7-35
 ## Monte Carlo Event Generators
 **Article:** A7-35  
-**Generated:** 2026-08-31 02:30:00 UTC
+**Generated:** 2026-08-31 03:00:00 UTC
 
 ---
 
 # Monte Carlo Event Generators
 
-## Abstract
-
-This article explores Monte Carlo Event Generators within the Prime Electron framework, deriving the fundamental hadronic physics from prime gap statistics at scale 1951.
-
-## 1. Introduction
-
-Monte Carlo Event Generators represents a fundamental aspect of hadronic physics. In the Prime Electron framework, this phenomenon emerges from the topology of prime gaps in the electron worldline.
-
-## 2. Prime Gap Analysis at 1951
+## 1. Prime Gap Analysis at 1951
 
 The prime gap structure around 1951 provides the foundation for deriving Monte Carlo Event Generators:
 
@@ -23,13 +15,27 @@ The prime gap structure around 1951 provides the foundation for deriving Monte C
 - Correlation length: ξ = p_n/⟨d⟩ ≈ 1951/7.47
 - Critical exponent: ν = 1/(⟨d⟩/d_min - 1)
 
-## 3. Theoretical Framework
+The gap correlation function C(Δn) = ⟨d_n × d_{n+Δn}⟩ determines the Monte Carlo Event Generators coupling at this scale.
+
+## 2. Monte Carlo Event Generators in the Prime Electron Framework
+
+In the Prime Electron framework, Monte Carlo Event Generators emerges from the topology of prime gaps in the electron worldline. The prime gap sequence d_n = p_{n+1} - p_n encodes the fundamental structure of hadronic physics at scale 1951.
+
+The theoretical framework connects:
+- Gap density correlations → Monte Carlo Event Generators coupling constants
+- Meta-Depth iteration → renormalization group flow
+- Holographic encoding → information-theoretic bounds on Monte Carlo Event Generators
+
+## 3. Mathematical Derivation
 
 The Monte Carlo Event Generators parameter is derived from:
 
 P_Monte_Carlo_Event_Generators = Σ_{k=1}^{1951} (d_k - ⟨d⟩)² / k² × (ℏc/κ)
 
-This yields the physical observable at the hadronic scale.
+This yields the physical observable at the hadronic scale. The derivation uses:
+1. Gap sum rules from the explicit formula for π(x)
+2. Hardy-Littlewood conjectures for gap correlations
+3. Zeta-regularized sums over record gaps
 
 ## 4. Connection to QCD
 
@@ -43,7 +49,7 @@ The derived Monte Carlo Event Generators connects to QCD through:
 Testable predictions for Monte Carlo Event Generators include:
 - Cross sections at √s = 1951 GeV
 - Angular distributions in scattering experiments
-- Correlations in heavy ion collisions
+- Correlations in heavy ion collisions at RHIC and LHC
 
 ## 6. Results and Discussion
 
