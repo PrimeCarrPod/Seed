@@ -1174,5 +1174,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, security benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act60": {
+        "name": "National Carbon Border Adjustment and Clean Trade Act of 2026",
+        "short_name": "NCBCTA",
+        "dir": "60-Carbon-Border-Adjustment-Clean-Trade-Act",
+        "funding": "$25 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, carbon leakage risk, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, carbon intensity data, trade exposure, competitiveness concerns"},
+            "03": {"name": "TITLE-I-CARBON-BORDER-ADJUSTMENT", "title": "Title I — Carbon Border Adjustment Mechanism", "topic": "CBAM implementation, covered sectors, carbon price calculation, exemption thresholds, WTO compliance"},
+            "04": {"name": "TITLE-II-EMISSIONS-INTENSITY", "title": "Title II — Emissions Intensity Measurement", "topic": "carbon accounting, lifecycle analysis, emissions verification, benchmarking, data collection"},
+            "05": {"name": "TITLE-III-TRADE-EXPOSED-INDUSTRIES", "title": "Title III — Trade-Exposed Industry Support", "topic": "output-based rebates, transition assistance, competitiveness programs, small manufacturer support"},
+            "06": {"name": "TITLE-IV-CLEAN-TRADE-PARTNERSHIPS", "title": "Title IV — Clean Trade Partnerships", "topic": "bilateral agreements, climate clubs, mutual recognition, technology transfer, capacity building"},
+            "07": {"name": "TITLE-V-CBAM-REVENUE", "title": "Title V — CBAM Revenue Use", "topic": "revenue allocation, climate finance, developing country support, domestic transition, administration"},
+            "08": {"name": "TITLE-VI-ANTI-CIRCUMVENTION", "title": "Title VI — Anti-Circumvention Measures", "topic": "transshipment prevention, resource shifting, country-of-origin rules, enforcement, penalties"},
+            "09": {"name": "TITLE-VII-WTO-COMPLIANCE", "title": "Title VII — WTO Compliance Framework", "topic": "GATT justification, non-discrimination, necessity test, dispute settlement, trade law analysis"},
+            "10": {"name": "TITLE-VIII-DEVELOPING-COUNTRY", "title": "Title VIII — Developing Country Provisions", "topic": "special treatment, capacity building, technology transfer, exemption periods, climate finance"},
+            "11": {"name": "TITLE-IX-CBAM-ADMINISTRATION", "title": "Title IX — CBAM Administration", "topic": "customs coordination, importer obligations, verification systems, reporting requirements, enforcement"},
+            "12": {"name": "TITLE-X-CBAM-REVIEW", "title": "Title X — CBAM Review and Adjustment", "topic": "periodic review, sector expansion, price adjustment, effectiveness assessment, stakeholder input"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, trade benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act61": {
+        "name": "National Disaster Insurance and Community Resilience Act of 2026",
+        "short_name": "NDICRA",
+        "dir": "61-Disaster-Insurance-Community-Resilience-Act",
+        "funding": "$60 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, disaster insurance gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, disaster loss data, insurance gaps, community resilience needs"},
+            "03": {"name": "TITLE-I-NATIONAL-FLOOD-INSURANCE", "title": "Title I — National Flood Insurance Reform", "topic": "NFIP reauthorization, risk rating, affordability, flood mapping, community rating system"},
+            "04": {"name": "TITLE-II-WILDFIRE-INSURANCE", "title": "Title II — Wildfire Insurance Program", "topic": "wildfire risk assessment, insurance availability, mitigation requirements, community protection"},
+            "05": {"name": "TITLE-III-HURRICANE-INSURANCE", "title": "Title III — Hurricane and Windstorm Insurance", "topic": "windstorm coverage, coastal insurance, mitigation credits, state programs, reinsurance"},
+            "06": {"name": "TITLE-IV-EARTHQUAKE-INSURANCE", "title": "Title IV — Earthquake Insurance", "topic": "earthquake coverage, risk modeling, mitigation incentives, state programs, catastrophic bonds"},
+            "07": {"name": "TITLE-V-DISASTER-MITIGATION", "title": "Title V — Disaster Mitigation Grants", "topic": "mitigation grants, building codes, infrastructure hardening, nature-based solutions, elevation"},
+            "08": {"name": "TITLE-VI-COMMUNITY-RESILIENCE", "title": "Title VI — Community Resilience Program", "topic": "resilience planning, community resilience centers, vulnerable populations, economic resilience"},
+            "09": {"name": "TITLE-VII-DISASTER-REINSURANCE", "title": "Title VII — Federal Disaster Reinsurance", "topic": "reinsurance program, catastrophic bonds, risk transfer, capital markets, state partnerships"},
+            "10": {"name": "TITLE-VIII-DISASTER-RESPONSE", "title": "Title VIII — Disaster Response and Recovery", "topic": "FEMA modernization, individual assistance, public assistance, hazard mitigation, recovery planning"},
+            "11": {"name": "TITLE-IX-INSURANCE-REGULATION", "title": "Title IX — Insurance Market Regulation", "topic": "state insurance regulation, rate review, consumer protection, market stability, solvency"},
+            "12": {"name": "TITLE-X-TRIBAL-DISASTER", "title": "Title X — Tribal Disaster Programs", "topic": "tribal disaster declarations, tribal mitigation, tribal insurance, cultural resources, consultation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, resilience benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
