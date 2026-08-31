@@ -550,5 +550,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, health security benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act34": {
+        "name": "National Space Exploration and Commercial Space Act of 2026",
+        "short_name": "NSECSA",
+        "dir": "34-Space-Exploration-Commercial-Space-Act",
+        "funding": "$75 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, space exploration goals, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, space leadership challenge, commercial space potential, national security space needs"},
+            "03": {"name": "TITLE-I-DEEP-Space-EXPLORATION", "title": "Title I — Deep Space Exploration Program", "topic": "Artemis program continuation, Mars mission planning, lunar base development, deep space habitats"},
+            "04": {"name": "TITLE-II-COMMERCIAL-SPACE-STATIONS", "title": "Title II — Commercial Space Stations", "topic": "LEO commercial stations, private space platforms, NASA transition strategy, commercial crew expansion"},
+            "05": {"name": "TITLE-III-SPACE-LAUNCH-INFRASTRUCTURE", "title": "Title III — Space Launch Infrastructure", "topic": "launch facility modernization, spaceport development, reusable rockets, launch range upgrades"},
+            "06": {"name": "TITLE-IV-SPACE-WORKFORCE", "title": "Title IV — Space Workforce Development", "topic": "astronaut training, aerospace engineer programs, mission specialist education, technician certification"},
+            "07": {"name": "TITLE-V-SPACE-RESOURCES", "title": "Title V — Space Resource Utilization", "topic": "lunar mining, asteroid mining, in-situ resource utilization, space manufacturing"},
+            "08": {"name": "TITLE-VI-SPACE-SITUATIONAL-AWARENESS", "title": "Title VI — Space Situational Awareness", "topic": "space debris tracking, collision avoidance, space traffic management, orbital monitoring"},
+            "09": {"name": "TITLE-VII-SPACE-CYBERSECURITY", "title": "Title VII — Space Systems Cybersecurity", "topic": "satellite security, ground system protection, space asset defense, cyber threat monitoring"},
+            "10": {"name": "TITLE-VIII-SPACE-EXPORT-CONTROLS", "title": "Title VIII — Space Technology Export Controls", "topic": "ITAR reform, commercial space licensing, international cooperation, technology transfer"},
+            "11": {"name": "TITLE-IX-SPACE-RESEARCH", "title": "Title IX — Space Science and Research", "topic": "NASA science missions, space telescopes, planetary science, astrophysics research"},
+            "12": {"name": "TITLE-X-TRIBAL-SPACE-EDUCATION", "title": "Title X — Tribal Space Education and Outreach", "topic": "tribal STEM programs, space education grants, indigenous astronomer partnerships, outreach programs"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, space economy benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act35": {
+        "name": "National Artificial Intelligence Safety and Innovation Act of 2026",
+        "short_name": "NAISIA",
+        "dir": "35-Artificial-Intelligence-Safety-Innovation-Act",
+        "funding": "$50 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, AI governance challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, AI capability trends, safety concerns, economic transformation potential"},
+            "03": {"name": "TITLE-I-AI-SAFETY-STANDARDS", "title": "Title I — AI Safety and Evaluation Standards", "topic": "AI model evaluation, red teaming requirements, capability benchmarks, safety testing protocols"},
+            "04": {"name": "TITLE-II-AI-RESEARCH-INFRASTRUCTURE", "title": "Title II — National AI Research Infrastructure", "topic": "AI supercomputing access, national AI research cloud, academic computing grants, data infrastructure"},
+            "05": {"name": "TITLE-III-AI-WORKFORCE", "title": "Title III — AI Workforce Development", "topic": "AI engineer training, machine learning programs, AI ethics education, reskilling programs"},
+            "06": {"name": "TITLE-IV-AI-REGULATION-FRAMEWORK", "title": "Title IV — AI Risk-Based Regulatory Framework", "topic": "high-risk AI requirements, transparency obligations, algorithmic accountability, sectoral regulations"},
+            "07": {"name": "TITLE-V-AI-INNOVATION-HUBS", "title": "Title V — Regional AI Innovation Hubs", "topic": "regional AI centers, industry-academia partnerships, startup support, technology transfer"},
+            "08": {"name": "TITLE-VI-AI-NATIONAL-SECURITY", "title": "Title VI — AI for National Security", "topic": "defense AI applications, intelligence community AI, cybersecurity AI, autonomous systems"},
+            "09": {"name": "TITLE-VII-AI-HEALTHCARE", "title": "Title VII — AI in Healthcare and Drug Discovery", "topic": "AI diagnostics, drug discovery AI, clinical decision support, health data AI"},
+            "10": {"name": "TITLE-VIII-AI-CLIMATE", "title": "Title VIII — AI for Climate and Energy", "topic": "climate modeling AI, energy grid optimization, emissions monitoring, disaster prediction"},
+            "11": {"name": "TITLE-IX-AI-EXPORT-CONTROLS", "title": "Title IX — AI Technology Export Controls", "topic": "semiconductor controls, AI chip restrictions, cloud computing limits, multilateral coordination"},
+            "12": {"name": "TITLE-X-AI-ETHICS-RIGHTS", "title": "Title X — AI Ethics and Civil Rights", "topic": "bias prevention, privacy protection, due process, non-discrimination, AI bill of rights"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, AI productivity benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
