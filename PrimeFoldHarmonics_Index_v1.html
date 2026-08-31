@@ -203,24 +203,26 @@
     function createFoldGeometry(prime, twists, foldStage, scale) {
         const points = [];
         const colors = [];
-        const segments = 100 * quality;
-        const color = new THREE.Color();
+        const segments = 50 * quality;
 
         for (let i = 0; i <= segments; i++) {
             const t = (i / segments) * Math.PI * 2;
-            const baseR = (5 + Math.log(prime + 1) * 2) * scale;
+            const baseR = (8 + prime * 0.5) * scale;
             const twistAngle = twists * t * 0.5;
             const foldFactor = Math.sin(foldStage * Math.PI);
 
-            const r = baseR * (1 + 0.5 * Math.cos(twistAngle));
-            const x = r * Math.cos(t) + foldFactor * baseR * 0.8 * Math.cos(2*t);
-            const y = r * Math.sin(t) * Math.cos(twistAngle * 0.5);
-            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.3);
+            // Möbius-like fold with prime twists
+            const r = baseR * (1 + 0.4 * Math.cos(twistAngle));
+            const x = r * Math.cos(t) + foldFactor * baseR * 0.6 * Math.cos(2*t);
+            const y = r * Math.sin(t) * Math.cos(twistAngle * 0.5) * 1.5;
+            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.4) * 2;
 
             points.push(new THREE.Vector3(x, y, z));
 
-            const hue = (Math.log(prime) % 1) + foldStage * 0.3;
-            color.setHSL(hue, 0.9, 0.7);
+            // Bright colors
+            const hue = (prime % 7) / 7 + foldStage * 0.2;
+            const color = new THREE.Color();
+            color.setHSL(hue, 1.0, 0.6);
             colors.push(color.r, color.g, color.b);
         }
 
@@ -234,24 +236,21 @@
         const count = particleCount;
         const positions = new Float32Array(count * 3);
         const colors = new Float32Array(count * 3);
-        const color = new THREE.Color();
         const species = Object.keys(PARTICLES);
 
         for (let i = 0; i < count; i++) {
-            // Position along fold path
             const t = (i / count) * Math.PI * 2;
-            const baseR = (4 + gap * 0.5) * scale;
+            const baseR = (6 + gap) * scale;
             const twistAngle = twistCount * t * 0.5;
             const foldFactor = Math.sin(foldStage * Math.PI);
 
-            const r = baseR * (1 + 0.3 * Math.cos(twistAngle));
-            const spread = (Math.random() - 0.5) * scale * 5;
+            const r = baseR * (1 + 0.5 * Math.cos(twistAngle));
+            const spread = (Math.random() - 0.5) * scale * 8;
 
             positions[i*3] = r * Math.cos(t) + foldFactor * baseR * 0.5 * Math.cos(2*t) + spread;
-            positions[i*3+1] = r * Math.sin(t) * Math.cos(twistAngle * 0.5) + spread;
-            positions[i*3+2] = r * Math.sin(twistAngle) * (1 - foldFactor * 0.3) + spread;
+            positions[i*3+1] = r * Math.sin(t) * Math.cos(twistAngle * 0.5) * 1.5 + spread;
+            positions[i*3+2] = r * Math.sin(twistAngle) * 2 + spread;
 
-            // Color by species
             const sp = species[i % species.length];
             const c = new THREE.Color(PARTICLES[sp].color);
             colors[i*3] = c.r;
@@ -286,7 +285,7 @@
             controls.autoRotateSpeed = 0.3;
 
             const rp = new THREE.RenderPass(scene, camera);
-            const bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 1.5, 0.4, 0.85);
+            const bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 2.0, 0.3, 0.8);
             composer = new THREE.EffectComposer(renderer);
             composer.addPass(rp);
             composer.addPass(bloom);
@@ -301,7 +300,7 @@
             this.animate();
 
             logEvent('[PRIME FOLD HARMONICS v1] Initialized');
-            logEvent('[PHASE] Big Bang — universe scale: 0.001');
+            logEvent('[PHASE] Expansion — universe scale: 1.0');
             showEquation('ds&sup2; = -(1-2GM/r)dt&sup2; + (1-2GM/r)&supminus;1dr&sup2; + r&sup2;d&Omega;&sup2; [Schwarzschild]');
         },
 
@@ -323,7 +322,7 @@
 
             // Particles following fold
             const pGeo = createFoldParticles(prime, foldProgress, gap, universeScale);
-            const pMat = new THREE.PointsMaterial({size:0.5, vertexColors:true, transparent:true, opacity:0.9, blending:THREE.AdditiveBlending});
+            const pMat = new THREE.PointsMaterial({size:0.8, vertexColors:true, transparent:true, opacity:1.0, blending:THREE.AdditiveBlending});
             const pPoints = new THREE.Points(pGeo, pMat);
             pPoints.visible = particlesVisible;
             scene.add(pPoints);
