@@ -646,5 +646,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, health outcomes benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act38": {
+        "name": "National Wildland Fire Management and Forest Restoration Act of 2026",
+        "short_name": "NWFMRA",
+        "dir": "38-Wildland-Fire-Forest-Restoration-Act",
+        "funding": "$55 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, wildfire crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, wildfire data, forest health crisis, climate change impacts"},
+            "03": {"name": "TITLE-I-FIREFIGHTER-WORKFORCE", "title": "Title I — Wildland Firefighter Workforce", "topic": "firefighter recruitment, training standards, equipment modernization, mental health support, compensation reform"},
+            "04": {"name": "TITLE-II-FUELS-REDUCTION", "title": "Title II — Hazardous Fuels Reduction", "topic": "prescribed fire programs, mechanical thinning, fuel break creation, community protection zones"},
+            "05": {"name": "TITLE-III-FOREST-RESTORATION", "title": "Title III — Forest Restoration and Resilience", "topic": "reforestation, watershed restoration, invasive species management, climate-adaptive forestry"},
+            "06": {"name": "TITLE-IV-FIRE-DETECTION", "title": "Title IV — Fire Detection and Monitoring", "topic": "early detection systems, satellite monitoring, AI fire prediction, camera networks, drone surveillance"},
+            "07": {"name": "TITLE-V-COMMUNITY-PROTECTION", "title": "Title V — Wildland-Urban Interface Protection", "topic": "building codes, defensible space, evacuation planning, insurance reform, land use planning"},
+            "08": {"name": "TITLE-VI-AERIAL-FIREFIGHTING", "title": "Title VI — Aerial Firefighting Capacity", "topic": "air tanker fleet, helicopter programs, next-gen aircraft, water scooping, night operations"},
+            "09": {"name": "TITLE-VII-POST-FIRE-RECOVERY", "title": "Title VII — Post-Fire Recovery and Rehabilitation", "topic": "erosion control, debris flow prevention, watershed rehabilitation, habitat restoration"},
+            "10": {"name": "TITLE-VIII-TRIBAL-FIRE-MGMT", "title": "Title VIII — Tribal Fire Management", "topic": "tribal burning programs, cultural fire practices, tribal forestry, co-management agreements"},
+            "11": {"name": "TITLE-IX-FIRE-RESEARCH", "title": "Title IX — Wildland Fire Research", "topic": "fire behavior research, fire ecology, smoke management, fire weather prediction"},
+            "12": {"name": "TITLE-X-INTERNATIONAL-FIRE-COOP", "title": "Title X — International Fire Cooperation", "topic": "firefighter exchange, resource sharing, bilateral agreements, global fire monitoring"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, fire suppression savings, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act39": {
+        "name": "National Digital Identity and Cybersecurity Consumer Protection Act of 2026",
+        "short_name": "NDICCPA",
+        "dir": "39-Digital-Identity-Cybersecurity-Consumer-Protection-Act",
+        "funding": "$30 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, identity theft crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, identity fraud data, consumer harm, digital economy risks"},
+            "03": {"name": "TITLE-I-NATIONAL-DIGITAL-ID", "title": "Title I — National Digital Identity Framework", "topic": "voluntary digital ID, identity verification standards, privacy protections, interoperability, accessibility"},
+            "04": {"name": "TITLE-II-IDENTITY-THEFT-PREVENTION", "title": "Title II — Identity Theft Prevention", "topic": "credit freeze rights, fraud alerts, data breach notification, identity monitoring, recovery services"},
+            "05": {"name": "TITLE-III-CONSUMER-DATA-PROTECTION", "title": "Title III — Consumer Data Protection", "topic": "data minimization, consent requirements, right to deletion, data portability, algorithmic transparency"},
+            "06": {"name": "TITLE-IV-CYBERSECURITY-STANDARDS", "title": "Title IV — Consumer Device Cybersecurity", "topic": "IoT security standards, software updates, vulnerability disclosure, labeling requirements"},
+            "07": {"name": "TITLE-V-CHILDREN-ONLINE-SAFETY", "title": "Title V — Children's Online Safety", "topic": "age verification, parental controls, harmful content restrictions, design safety, education programs"},
+            "08": {"name": "TITLE-VI-DIGITAL-ID-WORKFORCE", "title": "Title VI — Digital Identity Workforce", "topic": "identity professional training, cybersecurity technician programs, privacy engineer education"},
+            "09": {"name": "TITLE-VII-GOVERNMENT-DIGITAL-SERVICES", "title": "Title VII — Government Digital Services Modernization", "topic": "digital government access, single sign-on, mobile-first services, accessibility compliance"},
+            "10": {"name": "TITLE-VIII-FINANCIAL-INCLUSION", "title": "Title VIII — Digital Identity and Financial Inclusion", "topic": "unbanked access, alternative verification, rural connectivity, disability access"},
+            "11": {"name": "TITLE-IX-INTERNATIONAL-ID-STANDARDS", "title": "Title IX — International Digital Identity Standards", "topic": "cross-border recognition, standards harmonization, mutual recognition agreements"},
+            "12": {"name": "TITLE-X-ENFORCEMENT-PENALTIES", "title": "Title X — Enforcement and Penalties", "topic": "FTC enforcement, state attorney general actions, private right of action, criminal penalties"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, fraud reduction benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
