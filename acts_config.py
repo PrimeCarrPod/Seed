@@ -838,5 +838,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, public health benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act46": {
+        "name": "National Electric Grid Interconnector and Transmission Planning Act of 2026",
+        "short_name": "NEGITPA",
+        "dir": "46-Electric-Grid-Interconnector-Transmission-Planning-Act",
+        "funding": "$90 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, transmission bottleneck crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, transmission capacity data, interconnection queue backlog, renewable curtailment"},
+            "03": {"name": "TITLE-I-INTERREGIONAL-TRANSMISSION", "title": "Title I — Interregionial Transmission Lines", "topic": "high-voltage transmission, interregional corridors, national transmission grid, capacity expansion"},
+            "04": {"name": "TITLE-II-INTERCONNECTION-REFORM", "title": "Title II — Interconnection Queue Reform", "topic": "queue management, cluster studies, readiness requirements, withdrawal penalties, transmission provider obligations"},
+            "05": {"name": "TITLE-III-FEDERAL-TRANSMISSION-PLANNING", "title": "Title III — Federal Transmission Planning", "topic": "national transmission planning, regional planning, benefit-cost analysis, stakeholder engagement"},
+            "06": {"name": "TITLE-IV-TRANSMISSION-WORKFORCE", "title": "Title IV — Transmission Line Workforce", "topic": "lineworker training, substation technician programs, transmission engineer education, safety certification"},
+            "07": {"name": "TITLE-V-TRANSMISSION-FINANCE", "title": "Title V — Transmission Finance and Cost Allocation", "topic": "federal financing, cost allocation, public-private partnerships, loan guarantees, rate recovery"},
+            "08": {"name": "TITLE-VI-SITING-PERMITTING", "title": "Title VI — Transmission Siting and Permitting", "topic": "federal siting authority, state coordination, environmental review, tribal consultation, eminent domain"},
+            "09": {"name": "TITLE-VII-GRID-TECHNOLOGY", "title": "Title VII — Advanced Grid Technology", "topic": "HVDC transmission, grid-enhancing technologies, dynamic line rating, energy storage integration"},
+            "10": {"name": "TITLE-VIII-MICROGRID-INTEGRATION", "title": "Title VIII — Microgrid and Distributed Resource Integration", "topic": "microgrid standards, distributed energy resources, islanding capability, grid services"},
+            "11": {"name": "TITLE-IX-TRANSMISSION-RESEARCH", "title": "Title IX — Transmission Research and Development", "topic": "superconducting cables, advanced conductors, grid optimization, next-gen transmission"},
+            "12": {"name": "TITLE-X-TRIBAL-TRANSMISSION", "title": "Title X — Tribal Transmission Access", "topic": "tribal grid access, tribal transmission authority, consultation requirements, economic development"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, grid reliability savings, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act47": {
+        "name": "National Veteran Employment and Economic Opportunity Act of 2026",
+        "short_name": "NVEEOA",
+        "dir": "47-Veteran-Employment-Economic-Opportunity-Act",
+        "funding": "$35 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, veteran employment challenges, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, veteran unemployment data, economic opportunity gaps, service-connected disability employment"},
+            "03": {"name": "TITLE-I-VETERAN-EMPLOYMENT-SERVICES", "title": "Title I — Veteran Employment Services", "topic": "job placement programs, career counseling, skills translation, employer engagement, hiring incentives"},
+            "04": {"name": "TITLE-II-VETERAN-ENTREPRENEURSHIP", "title": "Title II — Veteran Entrepreneurship Programs", "topic": "veteran business development, startup funding, mentorship programs, government contracting preferences"},
+            "05": {"name": "TITLE-III-VETERAN-EDUCATION-TRAINING", "title": "Title III — Veteran Education and Skills Training", "topic": "GI Bill expansion, technical training, certification programs, apprenticeship opportunities"},
+            "06": {"name": "TITLE-IV-VETERAN-HOUSING", "title": "Title IV — Veteran Housing Stability", "topic": "homelessness prevention, supportive housing, homeownership assistance, rental support"},
+            "07": {"name": "TITLE-V-VETERAN-HEALTHCARE-EMPLOYMENT", "title": "Title V — Veteran Healthcare and Employment", "topic": "VA healthcare access, mental health services, telehealth, rural veteran healthcare"},
+            "08": {"name": "TITLE-VI-DISABLED-VETERAN-EMPLOYMENT", "title": "Title VI — Disabled Veteran Employment", "topic": "vocational rehabilitation, workplace accommodations, supported employment, self-employment"},
+            "09": {"name": "TITLE-VII-WOMEN-VETERAN-PROGRAMS", "title": "Title VII — Women Veteran Programs", "topic": "women veteran services, childcare support, healthcare, employment programs, peer support"},
+            "10": {"name": "TITLE-VIII-VETERAN-FAMILY-SUPPORT", "title": "Title VIII — Veteran Family Support Services", "topic": "spouse employment, family counseling, childcare, financial literacy, transition support"},
+            "11": {"name": "TITLE-IX-VETERAN-JUSTICE", "title": "Title IX — Veteran Justice and Reentry", "topic": "veteran treatment courts, diversion programs, reentry services, record expungement"},
+            "12": {"name": "TITLE-X-VETERAN-DIGITAL-ACCESS", "title": "Title X — Veteran Digital Access and Benefits Modernization", "topic": "VA digital services, benefits access, telehealth expansion, rural connectivity"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, veteran economic integration benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
