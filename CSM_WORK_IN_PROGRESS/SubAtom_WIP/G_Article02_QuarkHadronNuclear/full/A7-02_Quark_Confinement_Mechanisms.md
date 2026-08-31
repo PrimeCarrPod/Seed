@@ -1,21 +1,13 @@
 # Quark Hadron Nuclear Physics — A7-02
 ## Quark Confinement Mechanisms
 **Article:** A7-02  
-**Generated:** 2026-08-31 02:30:00 UTC
+**Generated:** 2026-08-31 03:00:00 UTC
 
 ---
 
 # Quark Confinement Mechanisms
 
-## Abstract
-
-This article explores Quark Confinement Mechanisms within the Prime Electron framework, deriving the fundamental hadronic physics from prime gap statistics at scale 1753.
-
-## 1. Introduction
-
-Quark Confinement Mechanisms represents a fundamental aspect of hadronic physics. In the Prime Electron framework, this phenomenon emerges from the topology of prime gaps in the electron worldline.
-
-## 2. Prime Gap Analysis at 1753
+## 1. Prime Gap Analysis at 1753
 
 The prime gap structure around 1753 provides the foundation for deriving Quark Confinement Mechanisms:
 
@@ -23,13 +15,27 @@ The prime gap structure around 1753 provides the foundation for deriving Quark C
 - Correlation length: ξ = p_n/⟨d⟩ ≈ 1753/7.47
 - Critical exponent: ν = 1/(⟨d⟩/d_min - 1)
 
-## 3. Theoretical Framework
+The gap correlation function C(Δn) = ⟨d_n × d_{n+Δn}⟩ determines the Quark Confinement Mechanisms coupling at this scale.
+
+## 2. Quark Confinement Mechanisms in the Prime Electron Framework
+
+In the Prime Electron framework, Quark Confinement Mechanisms emerges from the topology of prime gaps in the electron worldline. The prime gap sequence d_n = p_{n+1} - p_n encodes the fundamental structure of hadronic physics at scale 1753.
+
+The theoretical framework connects:
+- Gap density correlations → Quark Confinement Mechanisms coupling constants
+- Meta-Depth iteration → renormalization group flow
+- Holographic encoding → information-theoretic bounds on Quark Confinement Mechanisms
+
+## 3. Mathematical Derivation
 
 The Quark Confinement Mechanisms parameter is derived from:
 
 P_Quark_Confinement_Mechanisms = Σ_{k=1}^{1753} (d_k - ⟨d⟩)² / k² × (ℏc/κ)
 
-This yields the physical observable at the hadronic scale.
+This yields the physical observable at the hadronic scale. The derivation uses:
+1. Gap sum rules from the explicit formula for π(x)
+2. Hardy-Littlewood conjectures for gap correlations
+3. Zeta-regularized sums over record gaps
 
 ## 4. Connection to QCD
 
@@ -43,7 +49,7 @@ The derived Quark Confinement Mechanisms connects to QCD through:
 Testable predictions for Quark Confinement Mechanisms include:
 - Cross sections at √s = 1753 GeV
 - Angular distributions in scattering experiments
-- Correlations in heavy ion collisions
+- Correlations in heavy ion collisions at RHIC and LHC
 
 ## 6. Results and Discussion
 

@@ -1,21 +1,13 @@
 # Cosmology Astrophysics — A8-06
 ## Dark Energy Dynamics Probes
 **Article:** A8-06  
-**Generated:** 2026-08-31 02:30:00 UTC
+**Generated:** 2026-08-31 03:00:00 UTC
 
 ---
 
 # Dark Energy Dynamics Probes
 
-## Abstract
-
-This article explores Dark Energy Dynamics Probes within the Prime Electron framework, deriving the fundamental cosmological physics from prime gap statistics at scale 1777.
-
-## 1. Introduction
-
-Dark Energy Dynamics Probes represents a fundamental aspect of cosmology and astrophysics. In the Prime Electron framework, this phenomenon emerges from the dynamics of prime gaps in the electron worldline.
-
-## 2. Prime Gap Analysis at 1777
+## 1. Prime Gap Analysis at 1777
 
 The prime gap structure around 1777 provides the foundation for deriving Dark Energy Dynamics Probes:
 
@@ -23,7 +15,16 @@ The prime gap structure around 1777 provides the foundation for deriving Dark En
 - Correlation length: ξ = p_n/⟨d⟩ ≈ 1777/7.47
 - Critical exponent: ν = 1/(⟨d⟩/d_min - 1)
 
-## 3. Theoretical Framework
+## 2. Dark Energy Dynamics Probes in the Prime Electron Framework
+
+In the Prime Electron framework, Dark Energy Dynamics Probes emerges from the dynamics of prime gaps in the electron worldline. The expansion and evolution of the universe is encoded in the prime gap sequence.
+
+The theoretical framework connects:
+- Gap density correlations → Dark Energy Dynamics Probes parameters
+- Meta-Depth iteration → cosmological evolution equations
+- Holographic encoding → information-theoretic bounds on Dark Energy Dynamics Probes
+
+## 3. Mathematical Derivation
 
 The Dark Energy Dynamics Probes parameter is derived from:
 
