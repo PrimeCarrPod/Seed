@@ -1222,5 +1222,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, resilience benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act62": {
+        "name": "National Advanced Geothermal and Deep Drilling Technology Act of 2026",
+        "short_name": "NAGDDTA",
+        "dir": "62-Advanced-Geothermal-Deep-Drilling-Technology-Act",
+        "funding": "$45 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, deep geothermal potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, geothermal resource data, deep drilling technology readiness, baseload power potential"},
+            "03": {"name": "TITLE-I-ENHANCED-GEOTHERMAL-SYSTEMS", "title": "Title I — Enhanced Geothermal Systems Deployment", "topic": "EGS demonstration projects, reservoir engineering, hydraulic stimulation, induced seismicity management"},
+            "04": {"name": "TITLE-II-SUPERCRITICAL-GEOTHERMAL", "title": "Title II — Supercritical Geothermal Systems", "topic": "supercritical conditions, ultra-deep drilling, high-temperature materials, energy density, pilot projects"},
+            "05": {"name": "TITLE-III-ADVANCED-DRILLING", "title": "Title III — Advanced Drilling Technology", "topic": "plasma drilling, laser drilling, millimeter wave, drilling automation, rate of penetration"},
+            "06": {"name": "TITLE-IV-GEOTHERMAL-WORKFORCE", "title": "Title IV — Geothermal and Drilling Workforce", "topic": "driller training, geothermal engineer programs, rig technician certification, safety training"},
+            "07": {"name": "TITLE-V-GEOTHERMAL-MANUFACTURING", "title": "Title V — Domestic Geothermal Equipment Manufacturing", "topic": "turbine production, heat exchanger manufacturing, drilling equipment, downhole tools"},
+            "08": {"name": "TITLE-VI-GEOTHERMAL-RESEARCH", "title": "Title VI — Geothermal Research and Development", "topic": "reservoir characterization, advanced materials, closed-loop systems, heat extraction optimization"},
+            "09": {"name": "TITLE-VII-GEOTHERMAL-FINANCE", "title": "Title VII — Geothermal Finance Programs", "topic": "loan guarantees, risk mitigation, production tax credits, investment tax credits, grants"},
+            "10": {"name": "TITLE-VIII-GEOTHERMAL-SITING", "title": "Title VIII — Geothermal Siting and Permitting", "topic": "federal land access, NEPA streamlining, state coordination, tribal consultation, environmental review"},
+            "11": {"name": "TITLE-IX-GEOTHERMAL-DIRECT-USE", "title": "Title IX — Geothermal Direct Use Applications", "topic": "district heating, industrial process heat, agriculture, aquaculture, greenhouse heating"},
+            "12": {"name": "TITLE-X-GEOTHERMAL-ENVIRONMENTAL", "title": "Title X — Geothermal Environmental Standards", "topic": "water use management, induced seismicity protocols, air emissions, surface disturbance, reclamation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, energy security benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act63": {
+        "name": "National Clean Hydrogen Production and Industrial Applications Act of 2026",
+        "short_name": "NCHPIAA",
+        "dir": "63-Clean-Hydrogen-Industrial-Applications-Act",
+        "funding": "$65 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, hydrogen industrial potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, industrial hydrogen demand, decarbonization opportunity, global competition"},
+            "03": {"name": "TITLE-I-GREEN-HYDROGEN-PRODUCTION", "title": "Title I — Green Hydrogen Production", "topic": "electrolyzer deployment, renewable hydrogen, production tax credit, cost reduction, scaling manufacturing"},
+            "04": {"name": "TITLE-II-BLUE-HYDROGEN", "title": "Title II — Blue Hydrogen with Carbon Capture", "topic": "natural gas reforming, carbon capture integration, blue hydrogen standards, emissions reduction"},
+            "05": {"name": "TITLE-III-HYDROGEN-INDUSTRIAL", "title": "Title III — Industrial Hydrogen Applications", "topic": "steel industry hydrogen, ammonia production, petroleum refining, chemical manufacturing, cement industry"},
+            "06": {"name": "TITLE-IV-HYDROGEN-WORKFORCE", "title": "Title IV — Hydrogen Industry Workforce", "topic": "hydrogen safety training, technician certification, engineer education, construction workforce"},
+            "07": {"name": "TITLE-V-HYDROGEN-INFRASTRUCTURE", "title": "Title V — Hydrogen Infrastructure", "topic": "pipeline development, storage facilities, liquefaction plants, transport corridors, port terminals"},
+            "08": {"name": "TITLE-VI-HYDROGEN-RESEARCH", "title": "Title VI — Hydrogen Research and Development", "topic": "advanced electrolysis, hydrogen storage materials, fuel cell durability, next-gen production"},
+            "09": {"name": "TITLE-VII-HYDROGEN-FINANCE", "title": "Title VII — Hydrogen Finance Programs", "topic": "loan guarantees, tax incentives, public-private partnerships, hydrogen purchase commitments"},
+            "10": {"name": "TITLE-VIII-HYDROGEN-STANDARDS", "title": "Title VIII — Hydrogen Safety and Standards", "topic": "safety codes, leakage detection, materials compatibility, fire protection, regulatory harmonization"},
+            "11": {"name": "TITLE-IX-HYDROGEN-EXPORTS", "title": "Title IX — Hydrogen Export Infrastructure", "topic": "export terminals, ammonia as carrier, international partnerships, shipping infrastructure"},
+            "12": {"name": "TITLE-X-HYDROGEN-ENVIRONMENTAL", "title": "Title X — Hydrogen Environmental Review", "topic": "NEPA streamlining, environmental review, water use, lifecycle analysis, sustainability certification"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, industrial decarbonization benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
