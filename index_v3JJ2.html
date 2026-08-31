@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TGPU v3.0 JJ1 | Prime Electron Holographic Universe | Complete Physics</title>
+    <title>TGPU v3.0 JJ2 | Prime Electron Holographic Universe | Infinite Flight</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -65,20 +65,21 @@
     <div id="hud-header" class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none flex justify-between items-start bg-gradient-to-b from-black/90 to-transparent">
         <div class="pointer-events-auto">
             <h1 class="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 drop-shadow-[0_0_12px_rgba(34,211,238,0.9)]">
-                PRIME ELECTRON HOLOGRAPHIC UNIVERSE v3.0 JJ1
+                PRIME ELECTRON HOLOGRAPHIC UNIVERSE v3.0 JJ2
             </h1>
             <p class="text-xs text-cyan-300 mt-1 opacity-80">
-                <span class="font-bold text-white">Monistic Engine v3.0 JJ1</span> — Complete Physics: QCD + Electroweak + Gravitational + Prime Gap Holography
+                <span class="font-bold text-white">Monistic Engine v3.0 JJ2</span> — Infinite Flight Screensaver · Particle Jump Mode
                 <span class="text-gray-500 ml-2">52-particle species · 150,000 particles · Meta-Depth ω+3 · Base-π Encoding</span>
             </p>
         </div>
         <div class="pointer-events-auto flex items-center gap-2 mt-1 flex-wrap">
             <button id="btn-toggle-hud" class="btn btn-cyan" onclick="UI.toggleHUD()">☰ Hide</button>
             <button id="btn-flight" class="btn btn-purple" onclick="Flight.start()">✈ Flight</button>
+            <button id="btn-flight-lock" class="btn btn-green" onclick="Flight.toggleLock()">🔒 Lock</button>
             <button id="btn-glueball" class="btn btn-glue" onclick="sim.spawnGlueball()">Glueball</button>
             <button id="btn-prime" class="btn btn-prime" onclick="sim.togglePrimeMode()">Prime</button>
             <button id="btn-meta" class="btn btn-meta" onclick="sim.cycleMetaDepth()">Meta-Depth</button>
-            <div id="live-badge" class="text-green-400 text-xs orbitron font-bold animate-pulse ml-3 hidden md:block">● LIVE JJ1</div>
+            <div id="live-badge" class="text-green-400 text-xs orbitron font-bold animate-pulse ml-3 hidden md:block">● LIVE JJ2</div>
         </div>
     </div>
 
@@ -934,11 +935,11 @@
         }
     }
     // ===================================================================
-    // FLIGHT CONTROLLER
+    // FLIGHT CONTROLLER — With Infinite Lock Mode (screensaver)
     // ===================================================================
 
     const Flight = {
-        active:false, paused:false, waypoints:[], progress:0, startTime:0, animFrame:null,
+        active:false, paused:false, locked:false, waypoints:[], progress:0, startTime:0, animFrame:null,
         camera:null, controls:null,
 
         init(camera, controls) {this.camera=camera; this.controls=controls;},
@@ -957,9 +958,26 @@
             this.waypoints=this.generateWaypoints();
             this.progress=0; this.paused=false; this.active=true; this.startTime=performance.now();
             document.getElementById('btn-flight').textContent='✈ Flying…';
+            document.getElementById('btn-flight-lock').disabled=false;
             this.controls.enabled=false;
             logEvent('[FLIGHT] Random path generated');
             this._tick();
+        },
+
+        toggleLock() {
+            this.locked=!this.locked;
+            const btn=document.getElementById('btn-flight-lock');
+            if(this.locked) {
+                btn.textContent='🔓 Unlock';
+                btn.classList.add('btn-active');
+                logEvent('[FLIGHT] LOCKED: Infinite flight screensaver mode activated');
+                showEquation('Flight Lock: continuous particle jump mode [screensaver]');
+            } else {
+                btn.textContent='🔒 Lock';
+                btn.classList.remove('btn-active');
+                logEvent('[FLIGHT] UNLOCKED: Flight will end at path completion');
+            }
+            flashButton('Lock');
         },
 
         togglePause() {
@@ -968,10 +986,21 @@
         },
 
         stop() {
+            if(this.locked) {
+                // In lock mode, regenerate waypoints and continue forever
+                this.waypoints=this.generateWaypoints();
+                this.progress=0; this.startTime=performance.now();
+                logEvent('[FLIGHT] Lock mode: new path generated, continuing…');
+                showEquation(`Lock: jumping to new particle cluster [${Math.floor(Math.random()*50000)+1000} particles]`);
+                this._tick();
+                return;
+            }
             this.active=false;
             if(this.animFrame) cancelAnimationFrame(this.animFrame);
             this.controls.enabled=true;
             document.getElementById('btn-flight').textContent='✈ Flight';
+            document.getElementById('btn-flight-lock').textContent='🔒 Lock';
+            document.getElementById('btn-flight-lock').classList.remove('btn-active');
             document.getElementById('flight-progress').style.width='0%';
             logEvent('[FLIGHT] Path complete');
         },
@@ -1028,10 +1057,10 @@
     window.addEventListener('DOMContentLoaded',()=>{
         sim.init();
         document.getElementById('live-badge').style.display='block';
-        logEvent('[BOOT] Prime Electron Holographic Universe v3.0 JJ1');
+        logEvent('[BOOT] Prime Electron Holographic Universe v3.0 JJ2');
         logEvent('[BOOT] 52-particle species · 150,000 particles');
         logEvent('[BOOT] Meta-Depth: ω+3 · Prime Gap Holography');
-        logEvent('[BOOT] All physics interactions active');
+        logEvent('[BOOT] JJ2: Infinite Flight Lock mode available');
         showEquation('ℒ = ℒ_QED + ℒ_QCD + ℒ_EW + ℒ_Higgs + ℒ_Yukawa [Standard Model Lagrangian]');
     });
     </script>
