@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Fold v2 | PrimeBookOne Data Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap');
+        *{box-sizing:border-box;}
+        body{font-family:'Rajdhani',sans-serif;background:#000;color:#e2e8f0;overflow:hidden;margin:0;}
+        h1,h2,h3,.orbitron{font-family:'Orbitron',sans-serif;}
+        #canvas-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+        .hud{background:rgba(5,8,20,0.85);backdrop-filter:blur(12px);border:1px solid rgba(56,189,248,0.3);border-radius:8px;z-index:10;}
+        .btn{padding:6px 12px;border-radius:5px;cursor:pointer;font-size:11px;font-family:'Orbitron',sans-serif;text-transform:uppercase;letter-spacing:0.05em;border:1px solid;transition:all 0.2s;}
+        .btn-cyan{background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.5);color:#38bdf8;}
+        .btn-cyan:hover{background:rgba(56,189,248,0.4);}
+        .btn-purple{background:rgba(168,85,247,0.15);border-color:rgba(168,85,247,0.5);color:#a855f7;}
+        .btn-purple:hover{background:rgba(168,85,247,0.4);}
+        .btn-green{background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.5);color:#10b981;}
+        .btn-green:hover{background:rgba(16,185,129,0.4);}
+        .btn-red{background:rgba(244,63,94,0.15);border-color:rgba(244,63,94,0.5);color:#f43f5e;}
+        .btn-red:hover{background:rgba(244,63,94,0.4);}
+        .btn-yellow{background:rgba(254,240,138,0.15);border-color:rgba(254,240,138,0.5);color:#fef08a;}
+        .btn-yellow:hover{background:rgba(254,240,138,0.4);}
+        .btn-glue{background:rgba(249,115,22,0.15);border-color:rgba(249,115,22,0.5);color:#f97316;}
+        .btn-glue:hover{background:rgba(249,115,22,0.4);}
+        .btn-active{background:rgba(56,189,248,0.6)!important;box-shadow:0 0 12px rgba(56,189,248,0.8);}
+        .fold-info{font-family:'Courier New',monospace;font-size:10px;color:#38bdf8;background:rgba(0,0,0,0.7);padding:4px 8px;border-radius:4px;}
+        .prime-display{color:#fef08a;font-weight:bold;}
+        .twist-display{color:#a855f7;font-weight:bold;}
+        .fold-display{color:#10b981;font-weight:bold;}
+        .data-display{color:#f97316;font-weight:bold;}
+    </style>
+</head>
+<body class="w-full h-screen relative">
+    <div id="canvas-container"></div>
+
+    <!-- Header -->
+    <div class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none bg-gradient-to-b from-black/90 to-transparent">
+        <div class="flex justify-between items-start">
+            <div class="pointer-events-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+                    PRIME FOLD v2 — PRIMEBOOKONE DATA INTEGRATION
+                </h1>
+                <p class="text-xs text-cyan-300 mt-1">Live prime gap data from PrimeBookOne · Buffer system · Base-π counting</p>
+            </div>
+            <div class="pointer-events-auto flex items-center gap-2">
+                <button id="btn-toggle-hud" class="btn btn-cyan" onclick="document.getElementById('hud-left').classList.toggle('hidden')">☰</button>
+                <button id="btn-play" class="btn btn-green" onclick="FoldEngine.togglePlay()">▶ Play</button>
+                <button id="btn-reset" class="btn btn-red" onclick="FoldEngine.reset()">↺ Reset</button>
+                <div class="text-green-400 text-xs orbitron font-bold animate-pulse">● LIVE v2</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left Panel -->
+    <div id="hud-left" class="absolute bottom-4 left-4 z-20 w-80 flex flex-col gap-2 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-cyan-400 text-xs orbitron uppercase tracking-wider mb-2">Fold State</h3>
+            <div class="space-y-1 text-xs">
+                <div>Current Prime: <span id="current-prime" class="prime-display">2</span></div>
+                <div>Prime Index: <span id="prime-index" class="text-white">0</span> / <span id="total-primes">~1M</span></div>
+                <div>Twists: <span id="current-twists" class="twist-display">1</span></div>
+                <div>Folds: <span id="current-folds" class="fold-display">0</span></div>
+                <div>Sub-Particles: <span id="sub-count" class="text-white">1</span></div>
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-orange-400 text-xs orbitron uppercase tracking-wider mb-2">PrimeBookOne Data</h3>
+            <div class="space-y-1 text-xs">
+                <div>Buffer: <span id="buffer-status" class="data-display">Loading...</span></div>
+                <div>Tile: <span id="current-tile" class="data-display">Tile00</span></div>
+                <div>Gaps Loaded: <span id="gaps-loaded" class="data-display">0</span></div>
+                <div>Current Gap: <span id="current-gap" class="data-display">1</span></div>
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-yellow-400 text-xs orbitron uppercase tracking-wider mb-2">Base-π Counting</h3>
+            <div id="basepi-display" class="text-xs font-mono text-yellow-300"></div>
+        </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="absolute bottom-4 right-4 z-20 w-72 flex flex-col gap-2 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-green-400 text-xs orbitron uppercase tracking-wider mb-2">Controls</h3>
+            <div class="grid grid-cols-2 gap-1.5 text-xs mb-2">
+                <button onclick="FoldEngine.stepForward()" class="btn btn-cyan">Step +</button>
+                <button onclick="FoldEngine.stepBack()" class="btn btn-cyan">Step -</button>
+                <button onclick="FoldEngine.faster()" class="btn btn-green">Faster</button>
+                <button onclick="FoldEngine.slower()" class="btn btn-green">Slower</button>
+                <button onclick="FoldEngine.loadNextTile()" class="btn btn-purple">Next Tile</button>
+                <button onclick="FoldEngine.bigBang()" class="btn btn-yellow">Big Bang!</button>
+            </div>
+            <div class="space-y-1">
+                <div class="flex justify-between text-xs text-gray-400"><span>Speed</span><span id="speed-val">1.0x</span></div>
+                <input type="range" min="0.1" max="5" step="0.1" value="1" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="FoldEngine.setSpeed(this.value)">
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto max-h-28 overflow-y-auto">
+            <h3 class="text-pink-400 text-xs orbitron uppercase tracking-wider mb-2">Event Log</h3>
+            <ul id="event-log" class="text-xs space-y-0.5 font-mono"></ul>
+        </div>
+    </div>
+
+    <!-- Center Info -->
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none text-center" id="center-info">
+        <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600 orbitron" id="center-prime">2</div>
+        <div class="text-sm text-cyan-300 mt-2" id="center-status">Loading PrimeBookOne data...</div>
+    </div>
+
+    <script>
+    // ===================================================================
+    // PRIME FOLD ENGINE v2
+    // PrimeBookOne data integration with buffer system
+    // ===================================================================
+
+    // PrimeBookOne tile URLs (0.0 directory has tiles 00-18)
+    const PRIMEBOOK_BASE = 'https://github.com/PrimeBookOne/PrimeBookOne.github.io/raw/refs/heads/main/primebookone/0.0/';
+    const TILE_NAMES = Array.from({length: 19}, (_, i) => `Tile${String(i).padStart(2, '0')}.zip`);
+
+    // Buffer system: one tile always in buffer, load others as needed
+    let primeBuffer = {
+        currentTile: 0,
+        gaps: [],        // Current gap data
+        primes: [],      // Computed primes from gaps
+        loading: false,
+        cache: {}        // Cached tiles
+    };
+
+    let scene, camera, renderer, composer;
+    let foldMeshes = [], particleSystems = [];
+    let currentPrimeIdx = 0;
+    let twistCount = 1;
+    let foldCount = 0;
+    let iteration = 0;
+    let playing = true;
+    let speed = 1.0;
+    let foldProgress = 0;
+    let lastTime = 0;
+
+    function logEvent(msg) {
+        const log = document.getElementById('event-log');
+        const li = document.createElement('li');
+        li.className = 'text-cyan-300 border-l-2 border-cyan-900 pl-1';
+        li.textContent = '[' + new Date().toTimeString().slice(0,8) + '] ' + msg;
+        log.prepend(li);
+        while(log.children.length > 12) log.lastChild.remove();
+    }
+
+    // ===================================================================
+    // PRIME DATA LOADER — Fetches and parses PrimeBookOne binary data
+    // ===================================================================
+
+    const PrimeLoader = {
+        async loadTile(tileIdx) {
+            if (primeBuffer.cache[tileIdx]) {
+                return primeBuffer.cache[tileIdx];
+            }
+            primeBuffer.loading = true;
+            document.getElementById('buffer-status').textContent = `Loading Tile${String(tileIdx).padStart(2,'0')}...`;
+
+            try {
+                const url = PRIMEBOOK_BASE + TILE_NAMES[tileIdx];
+                const response = await fetch(url);
+                const compressed = await response.arrayBuffer();
+
+                // Decompress gzip
+                const ds = new DecompressionStream('gzip');
+                const decompressed = new Response(new Blob([compressed]).streamThrough(ds));
+                const data = await decompressed.arrayBuffer();
+
+                // Parse binary gap data (1 byte per gap)
+                const gaps = new Uint8Array(data);
+                primeBuffer.cache[tileIdx] = gaps;
+                primeBuffer.loading = false;
+                return gaps;
+            } catch (e) {
+                logEvent(`[ERROR] Failed to load tile ${tileIdx}: ${e.message}`);
+                primeBuffer.loading = false;
+                return null;
+            }
+        },
+
+        async init() {
+            // Load first tile into buffer
+            const gaps = await this.loadTile(0);
+            if (gaps) {
+                primeBuffer.gaps = Array.from(gaps);
+                primeBuffer.currentTile = 0;
+                this.computePrimes();
+                document.getElementById('buffer-status').textContent = 'Tile00 Ready';
+                document.getElementById('gaps-loaded').textContent = primeBuffer.gaps.length;
+                logEvent(`[DATA] Tile00 loaded: ${primeBuffer.gaps.length} prime gaps`);
+                return true;
+            }
+            return false;
+        },
+
+        computePrimes() {
+            // Reconstruct primes from gaps
+            primeBuffer.primes = [2];
+            let p = 2;
+            for (const gap of primeBuffer.gaps) {
+                p += gap;
+                primeBuffer.primes.push(p);
+            }
+        },
+
+        getPrime(idx) {
+            if (idx < primeBuffer.primes.length) {
+                return primeBuffer.primes[idx];
+            }
+            return null;
+        },
+
+        getGap(idx) {
+            if (idx < primeBuffer.gaps.length) {
+                return primeBuffer.gaps[idx];
+            }
+            return null;
+        },
+
+        async ensureBuffer(idx) {
+            // Check if we need to load next tile
+            const tileSize = 100000; // ~1M gaps per tile
+            const neededTile = Math.floor(idx / tileSize);
+            if (neededTile !== primeBuffer.currentTile && neededTile < TILE_NAMES.length) {
+                const gaps = await this.loadTile(neededTile);
+                if (gaps) {
+                    primeBuffer.gaps = Array.from(gaps);
+                    primeBuffer.currentTile = neededTile;
+                    this.computePrimes();
+                    document.getElementById('current-tile').textContent = `Tile${String(neededTile).padStart(2,'0')}`;
+                    document.getElementById('gaps-loaded').textContent = primeBuffer.gaps.length;
+                    logEvent(`[BUFFER] Loaded Tile${String(neededTile).padStart(2,'0')}: ${primeBuffer.gaps.length} gaps`);
+                }
+            }
+        }
+    };
+
+    // ===================================================================
+    // 3D FOLD VISUALIZATION
+    // ===================================================================
+
+    function createFoldGeometry(prime, twists, foldStage) {
+        const points = [];
+        const colors = [];
+        const segments = 200;
+        const color = new THREE.Color();
+
+        for (let i = 0; i <= segments; i++) {
+            const t = (i / segments) * Math.PI * 2;
+            const baseR = 3 + Math.log(prime + 1) * 0.5;
+            const twistAngle = twists * t * 0.5;
+            const foldFactor = Math.sin(foldStage * Math.PI);
+
+            const r = baseR * (1 + 0.3 * Math.cos(twistAngle));
+            const x = r * Math.cos(t) + foldFactor * baseR * 0.5 * Math.cos(2*t);
+            const y = r * Math.sin(t) * Math.cos(twistAngle * 0.5);
+            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.5);
+
+            points.push(new THREE.Vector3(x, y, z));
+
+            const hue = (Math.log(prime) % 1) + foldStage * 0.3;
+            color.setHSL(hue, 0.8, 0.6);
+            colors.push(color.r, color.g, color.b);
+        }
+
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        return geometry;
+    }
+
+    function createSubParticles(prime, foldStage, gap) {
+        const count = Math.min(prime * 10, 1000);
+        const positions = new Float32Array(count * 3);
+        const colors = new Float32Array(count * 3);
+        const color = new THREE.Color();
+
+        for (let i = 0; i < count; i++) {
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            const r = (2 + gap * 0.3) * (0.5 + foldStage * 0.5);
+
+            positions[i*3] = r * Math.sin(phi) * Math.cos(theta);
+            positions[i*3+1] = r * Math.sin(phi) * Math.sin(theta);
+            positions[i*3+2] = r * Math.cos(phi);
+
+            const hue = (gap % 6) / 6;
+            color.setHSL(hue, 0.9, 0.7);
+            colors[i*3] = color.r;
+            colors[i*3+1] = color.g;
+            colors[i*3+2] = color.b;
+        }
+
+        const geo = new THREE.BufferGeometry();
+        geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+        geo.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        return geo;
+    }
+
+    const FoldEngine = {
+        async init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x050510);
+            scene.fog = new THREE.FogExp2(0x050510, 0.008);
+
+            camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 2000);
+            camera.position.set(0, 15, 35);
+
+            renderer = new THREE.WebGLRenderer({antialias:true});
+            renderer.setSize(innerWidth, innerHeight);
+            renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = 0.5;
+
+            const rp = new THREE.RenderPass(scene, camera);
+            const bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 1.2, 0.4, 0.85);
+            composer = new THREE.EffectComposer(renderer);
+            composer.addPass(rp);
+            composer.addPass(bloom);
+
+            scene.add(new THREE.AmbientLight(0x404080));
+            const pt = new THREE.PointLight(0xffffff, 2, 200);
+            pt.position.set(20, 30, 40);
+            scene.add(pt);
+
+            // Load PrimeBookOne data
+            logEvent('[INIT] Loading PrimeBookOne data...');
+            const loaded = await PrimeLoader.init();
+            if (loaded) {
+                this.createInitialFold();
+                this.updateDisplay();
+                logEvent('[INIT] Prime Fold v2 ready');
+            } else {
+                // Fallback to computed primes
+                logEvent('[INIT] Using fallback prime data');
+                primeBuffer.gaps = [1,2,2,4,2,4,2,4,6,2,6,4,2,4,6,6,2,6,4,2,6,4,6,8,4,2,4,2,4,14,4,6,2,10,2,6,6,4,6,6,2,10,2,4,2,12,12,4,2,4,6,2,10,6,6,6,2,6,4,2,10,14,4,2,4,14,6,10,2,4,6,8,6,6,4,6,8,4,8,10,2,10,2,6,4,6,8,4,2,4,12,8,4,8,4,6,12];
+                PrimeLoader.computePrimes();
+                this.createInitialFold();
+                this.updateDisplay();
+            }
+
+            this.animate();
+        },
+
+        createInitialFold() {
+            foldMeshes.forEach(m => scene.remove(m));
+            particleSystems.forEach(p => scene.remove(p));
+            foldMeshes = [];
+            particleSystems = [];
+
+            const prime = PrimeLoader.getPrime(currentPrimeIdx) || 2;
+            const gap = PrimeLoader.getGap(currentPrimeIdx) || 1;
+
+            const geo = createFoldGeometry(prime, twistCount, foldProgress);
+            const mat = new THREE.LineBasicMaterial({vertexColors:true, linewidth:2, transparent:true, opacity:0.9});
+            const line = new THREE.Line(geo, mat);
+            scene.add(line);
+            foldMeshes.push(line);
+
+            const subGeo = createSubParticles(prime, foldProgress, gap);
+            const subMat = new THREE.PointsMaterial({size:0.15, vertexColors:true, transparent:true, opacity:0.7, blending:THREE.AdditiveBlending});
+            const subPoints = new THREE.Points(subGeo, subMat);
+            scene.add(subPoints);
+            particleSystems.push(subPoints);
+        },
+
+        updateFold() {
+            const prime = PrimeLoader.getPrime(currentPrimeIdx) || 2;
+            const gap = PrimeLoader.getGap(currentPrimeIdx) || 1;
+
+            foldMeshes.forEach(mesh => {
+                const geo = createFoldGeometry(prime, twistCount, foldProgress);
+                mesh.geometry.dispose();
+                mesh.geometry = geo;
+            });
+
+            particleSystems.forEach(mesh => {
+                const geo = createSubParticles(prime, foldProgress, gap);
+                mesh.geometry.dispose();
+                mesh.geometry = geo;
+            });
+
+            foldMeshes.forEach(mesh => {
+                mesh.rotation.x = foldProgress * Math.PI * twistCount;
+                mesh.rotation.y = foldProgress * Math.PI * 0.5;
+            });
+        },
+
+        updateDisplay() {
+            const prime = PrimeLoader.getPrime(currentPrimeIdx) || 2;
+            const gap = PrimeLoader.getGap(currentPrimeIdx) || 1;
+
+            document.getElementById('current-prime').textContent = prime;
+            document.getElementById('prime-index').textContent = currentPrimeIdx;
+            document.getElementById('current-twists').textContent = twistCount;
+            document.getElementById('current-folds').textContent = foldCount;
+            document.getElementById('sub-count').textContent = Math.min(prime * 10, 1000);
+            document.getElementById('current-gap').textContent = gap;
+            document.getElementById('center-prime').textContent = prime;
+
+            const basePi = (prime / Math.PI).toFixed(6);
+            document.getElementById('basepi-display').innerHTML = `${prime} / π = ${basePi}<br>π × ${prime} = ${(Math.PI * prime).toFixed(6)}<br>Gap: ${gap}`;
+
+            let status = 'Circle';
+            if(foldProgress > 0.3) status = 'Figure-8';
+            if(foldProgress > 0.6) status = 'Teardrop';
+            if(foldProgress > 0.9) status = 'Collapse!';
+            document.getElementById('center-status').textContent = status;
+        },
+
+        async stepForward() {
+            const prime = PrimeLoader.getPrime(currentPrimeIdx) || 2;
+            foldProgress += 0.1 * speed;
+            if(foldProgress >= 1) {
+                foldProgress = 0;
+                foldCount++;
+                twistCount = prime;
+                currentPrimeIdx++;
+                iteration++;
+                await PrimeLoader.ensureBuffer(currentPrimeIdx);
+                logEvent(`[FOLD] Prime ${PrimeLoader.getPrime(currentPrimeIdx) || '?'}: ${twistCount} twists`);
+            }
+            this.updateFold();
+            this.updateDisplay();
+        },
+
+        stepBack() {
+            foldProgress -= 0.1 * speed;
+            if(foldProgress < 0) {
+                foldProgress = 0.9;
+                currentPrimeIdx = Math.max(0, currentPrimeIdx - 1);
+                twistCount = PrimeLoader.getPrime(currentPrimeIdx) || 1;
+                foldCount = Math.max(0, foldCount - 1);
+            }
+            this.updateFold();
+            this.updateDisplay();
+        },
+
+        faster() { speed = Math.min(speed + 0.5, 5); document.getElementById('speed-val').textContent = speed.toFixed(1) + 'x'; },
+        slower() { speed = Math.max(speed - 0.5, 0.1); document.getElementById('speed-val').textContent = speed.toFixed(1) + 'x'; },
+        setSpeed(v) { speed = parseFloat(v); document.getElementById('speed-val').textContent = parseFloat(v).toFixed(1) + 'x'; },
+        togglePlay() { playing = !playing; document.getElementById('btn-play').textContent = playing ? '▶ Play' : '⏸ Pause'; },
+
+        async loadNextTile() {
+            await PrimeLoader.ensureBuffer(primeBuffer.gaps.length + 1000);
+            logEvent(`[TILE] Loaded next tile`);
+        },
+
+        bigBang() {
+            currentPrimeIdx = 0;
+            twistCount = 1;
+            foldCount = 0;
+            iteration = 0;
+            foldProgress = 0;
+            speed = 3;
+            logEvent('[BIG BANG] Universe reset!');
+            this.createInitialFold();
+            this.updateDisplay();
+        },
+
+        reset() {
+            currentPrimeIdx = 0;
+            twistCount = 1;
+            foldCount = 0;
+            iteration = 0;
+            foldProgress = 0;
+            speed = 1;
+            playing = true;
+            logEvent('[RESET] Fold engine reset');
+            this.createInitialFold();
+            this.updateDisplay();
+        },
+
+        animate() {
+            requestAnimationFrame(() => this.animate());
+            const now = Date.now();
+            const dt = (now - lastTime) / 1000;
+            lastTime = now;
+
+            if(playing) {
+                foldProgress += 0.005 * speed * dt * 60;
+                if(foldProgress >= 1) {
+                    foldProgress = 0;
+                    foldCount++;
+                    const prime = PrimeLoader.getPrime(currentPrimeIdx) || 2;
+                    twistCount = prime;
+                    currentPrimeIdx++;
+                    iteration++;
+                    if(foldCount % 10 === 0) logEvent(`[AUTO] Iteration ${iteration}`);
+                }
+                this.updateFold();
+                this.updateDisplay();
+            }
+
+            particleSystems.forEach((ps, i) => {
+                ps.rotation.y += 0.002 * (i + 1);
+                ps.rotation.x += 0.001;
+            });
+
+            renderer.render(scene, camera);
+        }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => FoldEngine.init());
+    </script>
+</body>
+</html>
