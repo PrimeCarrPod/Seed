@@ -502,5 +502,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, blue economy benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act32": {
+        "name": "National Quantum Computing and Advanced Computing Act of 2026",
+        "short_name": "NQACA",
+        "dir": "32-Quantum-Computing-Advanced-Computing-Act",
+        "funding": "$55 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, quantum computing potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, quantum technology race, national security implications, economic competitiveness"},
+            "03": {"name": "TITLE-I-QUANTUM-COMPUTING-HARDWARE", "title": "Title I — Quantum Computing Hardware Development", "topic": "superconducting qubits, trapped ion systems, photonic quantum computers, quantum error correction, cryogenic systems"},
+            "04": {"name": "TITLE-II-QUANTUM-SOFTWARE-ALGORITHMS", "title": "Title II — Quantum Software and Algorithm Development", "topic": "quantum programming languages, quantum algorithms, quantum simulation, quantum machine learning, software stacks"},
+            "05": {"name": "TITLE-III-QUANTUM-NETWORKING", "title": "Title III — Quantum Networking and Communications", "topic": "quantum key distribution, quantum internet, quantum repeaters, entanglement distribution, secure communications"},
+            "06": {"name": "TITLE-IV-QUANTUM-WORKFORCE", "title": "Title IV — Quantum Information Science Workforce", "topic": "quantum physicist training, quantum engineer programs, quantum software developer education, interdisciplinary programs"},
+            "07": {"name": "TITLE-V-QUANTUM-APPLICATIONS", "title": "Title V — Quantum Computing Applications", "topic": "drug discovery, materials science, financial modeling, climate simulation, cryptography, optimization problems"},
+            "08": {"name": "TITLE-VI-QUANTUM-STANDARDS", "title": "Title VI — Quantum Technology Standards and Metrics", "topic": "quantum performance metrics, benchmarking protocols, interoperability standards, NIST quantum standards"},
+            "09": {"name": "TITLE-VII-QUANTUM-SECURITY", "title": "Title VII — Post-Quantum Cryptography Transition", "topic": "cryptographic inventory, migration planning, quantum-resistant algorithms, critical infrastructure protection"},
+            "10": {"name": "TITLE-VIII-QUANTUM-RESEARCH-CENTERS", "title": "Title VIII — National Quantum Research Centers", "topic": "DOE quantum centers, university quantum labs, industry partnerships, international collaboration"},
+            "11": {"name": "TITLE-IX-ADVANCED-COMPUTING", "title": "Title IX — Exascale and Beyond Computing", "topic": "exascale computing, neuromorphic computing, high-performance computing infrastructure, AI accelerators"},
+            "12": {"name": "TITLE-X-QUANTUM-EXPORT-CONTROLS", "title": "Title X — Quantum Technology Export Controls", "topic": "export license requirements, deemed exports, foreign researcher screening, multilateral coordination"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, quantum advantage benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act33": {
+        "name": "National Biomedical Research and Pandemic Preparedness Act of 2026",
+        "short_name": "NBRPPA",
+        "dir": "33-Biomedical-Research-Pandemic-Preparedness-Act",
+        "funding": "$65 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, pandemic preparedness gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, infectious disease threat data, biomedical research capacity, vaccine development needs"},
+            "03": {"name": "TITLE-I-VACCINE-DEVELOPMENT", "title": "Title I — Vaccine Research and Development", "topic": "mRNA technology, universal vaccines, rapid response platforms, adjuvant research, clinical trial networks"},
+            "04": {"name": "TITLE-II-ANTIVIRAL-THERAPEUTICS", "title": "Title II — Antiviral Drug Development", "topic": "broad-spectrum antivirals, monoclonal antibodies, drug repurposing, resistance monitoring, manufacturing capacity"},
+            "05": {"name": "TITLE-III-PATHOGEN-SURVEILLANCE", "title": "Title III — Pathogen Surveillance and Genomics", "topic": "genomic sequencing networks, wastewater surveillance, zoonotic disease monitoring, early warning systems"},
+            "06": {"name": "TITLE-IV-BIOMEDICAL-WORKFORCE", "title": "Title IV — Biomedical Research Workforce", "topic": "virologist training, epidemiologist programs, laboratory technician certification, public health workforce"},
+            "07": {"title": "Title V — Medical Countermeasure Manufacturing", "name": "TITLE-V-MEDICAL-COUNTERMEASURES", "topic": "domestic manufacturing capacity, supply chain resilience, stockpile maintenance, distributed manufacturing"},
+            "08": {"name": "TITLE-VI-BIOSAFETY-LABORATORIES", "title": "Title VI — Biosafety Laboratory Infrastructure", "topic": "BSL-4 laboratory network, biocontainment standards, research safety protocols, international biosafety cooperation"},
+            "09": {"name": "TITLE-VII-PANDEMIC-RESPONSE-SYSTEMS", "title": "Title VII — Pandemic Response and Coordination Systems", "topic": "federal response framework, state coordination, data sharing platforms, emergency use authorization"},
+            "10": {"name": "TITLE-VIII-GLOBAL-HEALTH-SECURITY", "title": "Title VIII — Global Health Security Cooperation", "topic": "international surveillance, capacity building, technology transfer, WHO coordination, outbreak response"},
+            "11": {"name": "TITLE-IX-BIOMEDICAL-RESEARCH-FUNDING", "title": "Title IX — NIH and Biomedical Research Funding", "topic": "NIH institute funding, investigator-initiated research, high-risk high-reward programs, early career support"},
+            "12": {"name": "TITLE-X-HEALTH-DATA-INFRASTRUCTURE", "title": "Title X — Health Data and Research Infrastructure", "topic": "biobanks, clinical data networks, AI-driven drug discovery, precision medicine databases"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, health security benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
