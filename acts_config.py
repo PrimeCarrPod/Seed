@@ -790,5 +790,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, workforce participation benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act44": {
+        "name": "National High Speed Rail and Intercity Passenger Rail Act of 2026",
+        "short_name": "NHSRIPRA",
+        "dir": "44-High-Speed-Rail-Intercity-Passenger-Rail-Act",
+        "funding": "$120 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, rail infrastructure gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, rail ridership data, economic benefits, environmental advantages"},
+            "03": {"name": "TITLE-I-HIGH-SPEED-RAIL-CORRIDORS", "title": "Title I — High-Speed Rail Corridor Development", "topic": "dedicated track construction, corridor planning, environmental review, station development, trainset procurement"},
+            "04": {"name": "TITLE-II-INTERCITY-RAIL-EXPANSION", "title": "Title II — Intercity Passenger Rail Expansion", "topic": "Amtrak expansion, state-supported routes, frequency improvements, new route development"},
+            "05": {"name": "TITLE-III-RAIL-STATION-MODERNIZATION", "title": "Title III — Rail Station Modernization", "topic": "station upgrades, accessibility improvements, transit-oriented development, multimodal connectivity"},
+            "06": {"name": "TITLE-IV-RAIL-WORKFORCE", "title": "Title IV — Rail Industry Workforce Development", "topic": "engineer training, conductor programs, technician certification, apprenticeship programs"},
+            "07": {"name": "TITLE-V-RAIL-SAFETY", "title": "Title V — Rail Safety and Grade Crossing Elimination", "topic": "positive train control, grade crossing elimination, trespasser prevention, safety technology"},
+            "08": {"name": "TITLE-VI-RAIL-MANUFACTURING", "title": "Title VI — Domestic Rail Manufacturing", "topic": "rolling stock production, rail manufacturing, signal equipment, maintenance facilities"},
+            "09": {"name": "TITLE-VII-RAIL-FINANCE", "title": "Title VII — Rail Finance and Public-Private Partnerships", "topic": "capital investment grants, loan programs, P3 frameworks, value capture, ridership bonds"},
+            "10": {"name": "TITLE-VIII-RAIL-ENVIRONMENT", "title": "Title VIII — Rail Environmental Review and Permitting", "topic": "NEPA streamlining, categorical exclusions, environmental mitigation, state delegation"},
+            "11": {"name": "TITLE-IX-FREIGHT-RAIL-COORDINATION", "title": "Title IX — Freight Rail Coordination", "topic": "shared corridor use, freight capacity, dispatching priority, infrastructure sharing"},
+            "12": {"name": "TITLE-X-TRIBAL-RAIL-ACCESS", "title": "Title X — Tribal Rail Access and Consultation", "topic": "tribal station access, cultural resource protection, tribal consultation, economic development"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, mobility benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act45": {
+        "name": "National Drinking Water and Wastewater Infrastructure Act of 2026",
+        "short_name": "NDWWIA",
+        "dir": "45-Drinking-Water-Wastewater-Infrastructure-Act",
+        "funding": "$80 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, water infrastructure crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, water system data, lead contamination, infrastructure investment gap"},
+            "03": {"name": "TITLE-I-LEAD-SERVICE-LINE-REPLACEMENT", "title": "Title I — Lead Service Line Replacement", "topic": "inventory requirements, replacement programs, customer notification, workforce training, mapping"},
+            "04": {"name": "TITLE-II-WATER-SYSTEM-MODERNIZATION", "title": "Title II — Drinking Water System Modernization", "topic": "treatment plant upgrades, distribution system replacement, meter modernization, SCADA systems"},
+            "05": {"name": "TITLE-III-WASTEWATER-INFRASTRUCTURE", "title": "Title III — Wastewater Infrastructure", "topic": "treatment plant upgrades, combined sewer overflow reduction, stormwater management, nutrient removal"},
+            "06": {"name": "TITLE-IV-WATER-WORKFORCE", "title": "Title IV — Water Sector Workforce Development", "topic": "operator certification, engineer programs, technician training, apprenticeship programs"},
+            "07": {"name": "TITLE-V-WATER-INFRASTRUCTURE-FINANCE", "title": "Title V — Water Infrastructure Finance", "topic": "state revolving funds, WIFIA expansion, rural water grants, affordability programs"},
+            "08": {"name": "TITLE-VI-EMERGING-CONTAMINANTS", "title": "Title VI — Emerging Contaminants and PFAS", "topic": "PFAS treatment, contamination monitoring, health standards, remediation programs"},
+            "09": {"name": "TITLE-VII-WATER-RESILIENCE", "title": "Title VII — Water System Climate Resilience", "topic": "drought preparedness, flood protection, seismic resilience, climate adaptation"},
+            "10": {"name": "TITLE-VIII-SMALL-SYSTEM-TECHNICAL", "title": "Title VIII — Small System Technical Assistance", "topic": "small system support, regionalization, capacity development, operator training"},
+            "11": {"name": "TITLE-IX-TRIBAL-WATER", "title": "Title IX — Tribal Water Infrastructure", "topic": "tribal water systems, tribal wastewater, technical assistance, infrastructure grants"},
+            "12": {"name": "TITLE-X-WATER-REUSE", "title": "Title X — Water Reuse and Conservation", "topic": "potable reuse, greywater systems, conservation programs, efficiency standards"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, public health benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
