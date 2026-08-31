@@ -598,5 +598,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, AI productivity benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act36": {
+        "name": "National Advanced Materials and Manufacturing Process Act of 2026",
+        "short_name": "NAMMPA",
+        "dir": "36-Advanced-Materials-Manufacturing-Process-Act",
+        "funding": "$45 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, advanced materials need, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, materials science gap, manufacturing process innovation, global competition"},
+            "03": {"name": "TITLE-I-ADVANCED-MATERIALS-RESEARCH", "title": "Title I — Advanced Materials Research", "topic": "metamaterials, nanomaterials, biomaterials, smart materials, computational materials science"},
+            "04": {"name": "TITLE-II-ADDITIVE-MANUFACTURING", "title": "Title II — Advanced Additive Manufacturing", "topic": "metal 3D printing, multi-material printing, large-scale additive, quality certification, digital inventory"},
+            "05": {"name": "TITLE-III-SEMICONDUCTOR-MATERIALS", "title": "Title III — Semiconductor Materials and Substrates", "topic": "silicon carbide, gallium nitride, diamond substrates, wide bandgap materials, packaging materials"},
+            "06": {"name": "TITLE-IV-MATERIALS-WORKFORCE", "title": "Title IV — Materials Science Workforce", "topic": "materials engineer training, metallurgist programs, composites technician certification, quality inspector training"},
+            "07": {"name": "TITLE-V-MANUFACTURING-PROCESS-INNOVATION", "title": "Title V — Manufacturing Process Innovation", "topic": "continuous processing, process intensification, digital twins, lean manufacturing, six sigma advanced"},
+            "08": {"name": "TITLE-VI-MATERIALS-RECYCLING", "title": "Title VI — Critical Materials Recycling and Circular Economy", "topic": "urban mining, materials recovery, recycling process innovation, circular supply chains, waste reduction"},
+            "09": {"name": "TITLE-VII-MATERIALS-STANDARDS", "title": "Title VII — Advanced Materials Standards and Testing", "topic": "ASTM standards, materials characterization, non-destructive testing, quality assurance, certification protocols"},
+            "10": {"name": "TITLE-VIII-DEFENSE-MATERIALS", "title": "Title VIII — Defense Critical Materials", "topic": "armor materials, aerospace alloys, energetic materials, stealth materials, defense supply chain"},
+            "11": {"name": "TITLE-IX-MATERIALS-DATA", "title": "Title IX — Materials Data Infrastructure", "topic": "materials genome initiative, computational databases, AI materials discovery, open data platforms"},
+            "12": {"name": "TITLE-X-MANUSTRY-CLUSTER-PROGRAMS", "title": "Title X — Regional Manufacturing Innovation Clusters", "topic": "regional manufacturing hubs, industry-university partnerships, technology extension, supply chain ecosystems"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, manufacturing competitiveness benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act37": {
+        "name": "National Mental Health and Substance Abuse Recovery Act of 2026",
+        "short_name": "NMHSARA",
+        "dir": "37-Mental-Health-Substance-Abuse-Recovery-Act",
+        "funding": "$60 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, mental health crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, mental health data, substance abuse trends, treatment gap, workforce shortage"},
+            "03": {"name": "TITLE-I-MENTAL-HEALTH-SERVICES", "title": "Title I — Community Mental Health Services", "topic": "community mental health centers, crisis intervention, early intervention programs, school-based services"},
+            "04": {"name": "TITLE-II-SUBSTANCE-ABUSE-TREATMENT", "title": "Title II — Substance Use Disorder Treatment", "topic": "medication-assisted treatment, residential treatment, outpatient services, harm reduction, recovery support"},
+            "05": {"name": "TITLE-III-BEHAVIORAL-HEALTH-WORKFORCE", "title": "Title III — Behavioral Health Workforce", "topic": "psychiatrist training, psychologist programs, social worker education, peer counselor certification"},
+            "06": {"name": "TITLE-IV-TELEHEALTH-MENTAL-HEALTH", "title": "Title IV — Telehealth and Digital Mental Health", "topic": "telepsychiatry, digital therapeutics, AI-assisted therapy, remote monitoring, crisis text lines"},
+            "07": {"name": "TITLE-V-OPIOID-CRISIS-RESPONSE", "title": "Title V — Opioid Crisis Response", "topic": "naloxone distribution, fentanyl interdiction, prescription monitoring, treatment access, first responder training"},
+            "08": {"name": "TITLE-VI-YOUTH-MENTAL-HEALTH", "title": "Title VI — Youth Mental Health and Suicide Prevention", "topic": "youth suicide prevention, school counselors, pediatric mental health, family support, early childhood intervention"},
+            "09": {"name": "TITLE-VII-MENTAL-HEALTH-RESEARCH", "title": "Title VII — Mental Health Research", "topic": "NIH mental health research, clinical trials, brain research initiative, precision psychiatry, treatment innovation"},
+            "10": {"name": "TITLE-VIII-HOUSING-SUPPORT-SERVICES", "title": "Title VIII — Supportive Housing and Recovery Services", "topic": "permanent supportive housing, transitional housing, homeless services, recovery housing, housing first programs"},
+            "11": {"name": "TITLE-IX-CRIMINAL-JUSTICE-DIVERSION", "title": "Title IX — Criminal Justice Diversion and Reentry", "topic": "mental health courts, diversion programs, reentry services, correctional mental health, community supervision"},
+            "12": {"name": "TITLE-X-INSURANCE-PARITY", "title": "Title X — Insurance Parity and Access", "topic": "mental health parity enforcement, Medicaid expansion, Medicare coverage, network adequacy, cost-sharing reduction"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, health outcomes benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
