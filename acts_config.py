@@ -934,5 +934,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, economic security benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act50": {
+        "name": "National Clean Energy Manufacturing Tax Credit and Industrial Decarbonization Act of 2026",
+        "short_name": "NCEMTCIDA",
+        "dir": "50-Clean-Energy-Manufacturing-Tax-Credit-Industrial-Decarbonization-Act",
+        "funding": "$150 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, clean energy manufacturing opportunity, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, manufacturing emissions data, industrial decarbonization potential, global competition"},
+            "03": {"name": "TITLE-I-ADVANCED-MANUFACTURING-PRODUCTION-CREDIT", "title": "Title I — Advanced Manufacturing Production Tax Credit", "topic": "Section 45X expansion, battery cell credit, solar component credit, wind component credit, critical mineral credit"},
+            "04": {"name": "TITLE-II-CLEAN-ENERGY-MANUFACTURING-INVESTMENT-CREDIT", "title": "Title II — Clean Energy Manufacturing Investment Tax Credit", "topic": "Section 48C expansion, facility construction, equipment investment, small manufacturer incentives"},
+            "05": {"name": "TITLE-III-INDUSTRIAL-DECARBONIZATION", "title": "Title III — Industrial Decarbonization Program", "topic": "CCUS for industry, process electrification, hydrogen in industry, waste heat recovery, efficiency standards"},
+            "06": {"name": "TITLE-IV-MANUFACTURING-WORKFORCE", "title": "Title IV — Clean Energy Manufacturing Workforce", "topic": "manufacturing skills training, technician certification, engineer education, apprenticeship expansion"},
+            "07": {"name": "TITLE-V-MANUFACTURING-CLUSTER", "title": "Title V — Clean Energy Manufacturing Clusters", "topic": "regional manufacturing hubs, supply chain development, industry partnerships, shared infrastructure"},
+            "08": {"name": "TITLE-VI-MANUFACTURED-PRODUCT-STANDARDS", "title": "Title VI — Manufactured Product Standards and Buy Clean", "topic": "Buy Clean procurement, embodied carbon standards, environmental product declarations, federal purchasing"},
+            "09": {"name": "TITLE-VII-MANUFACTURING-EXPORTS", "title": "Title VII — Clean Energy Manufacturing Exports", "topic": "export promotion, trade finance, market development, international partnerships"},
+            "10": {"name": "TITLE-VIII-MANUFACTURING-RESEARCH", "title": "Title VIII — Manufacturing Research and Innovation", "topic": "process innovation, advanced manufacturing, digital manufacturing, materials development"},
+            "11": {"name": "TITLE-IX-MANUFACTURING-FINANCE", "title": "Title IX — Manufacturing Finance Programs", "topic": "loan guarantees, direct loans, tax-exempt bonds, state programs, green banks"},
+            "12": {"name": "TITLE-X-MANUFACTURING-ENVIRONMENTAL", "title": "Title X — Manufacturing Environmental Compliance", "topic": "environmental permits, NEPA streamlining, pollution prevention, environmental justice"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, manufacturing competitiveness benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act51": {
+        "name": "National Public School Infrastructure and Modernization Act of 2026",
+        "short_name": "NPSIMA",
+        "dir": "51-Public-School-Infrastructure-Modernization-Act",
+        "funding": "$100 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, school infrastructure crisis, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, school facility data, modernization needs, environmental health concerns"},
+            "03": {"name": "TITLE-I-SCHOOL-CONSTRUCTION", "title": "Title I — School Construction and Renovation", "topic": "new school construction, major renovation, modular construction, capacity expansion, replacement schools"},
+            "04": {"name": "TITLE-II-SCHOOL-HVAC", "title": "Title II — School HVAC and Indoor Air Quality", "topic": "HVAC replacement, ventilation improvements, air filtration, humidity control, energy efficiency"},
+            "05": {"name": "TITLE-III-SCHOOL-TECHNOLOGY", "title": "Title III — School Technology Infrastructure", "topic": "broadband access, classroom technology, 1:1 device programs, cybersecurity, smart classrooms"},
+            "06": {"name": "TITLE-IV-SCHOOL-HEALTH", "title": "Title IV — School Health and Safety", "topic": "lead abatement, asbestos removal, ADA compliance, security upgrades, mental health spaces"},
+            "07": {"name": "TITLE-V-SCHOOL-ENERGY", "title": "Title V — School Clean Energy and Efficiency", "topic": "rooftop solar, battery storage, geothermal HVAC, net-zero schools, energy efficiency retrofits"},
+            "08": {"name": "TITLE-VI-SCHOOL-WORKFORCE", "title": "Title VI — Education Workforce Development", "topic": "teacher recruitment, teacher retention, counselor staffing, principal training, support staff"},
+            "09": {"name": "TITLE-VII-RURAL-SCHOOLS", "title": "Title VII — Rural School Infrastructure", "topic": "rural school modernization, broadband access, transportation, distance learning, community schools"},
+            "10": {"name": "TITLE-VIII-TRIBAL-SCHOOLS", "title": "Title VIII — Tribal School Infrastructure", "topic": "BIA school construction, tribal school modernization, cultural facilities, language preservation spaces"},
+            "11": {"name": "TITLE-IX-SCHOOL-FINANCE", "title": "Title IX — School Infrastructure Finance", "topic": "federal grants, state matching, school bonds, tax-exempt financing, public-private partnerships"},
+            "12": {"name": "TITLE-X-SCHOOL-ENVIRONMENTAL-REVIEW", "title": "Title X — School Construction Environmental Review", "topic": "NEPA streamlining, categorical exclusions, environmental mitigation, state delegation"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, student outcome benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
