@@ -454,5 +454,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, waste management benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act30": {
+        "name": "National Precision Agriculture and Food Security Act of 2026",
+        "short_name": "NPAFSA",
+        "dir": "30-Precision-Agriculture-Food-Security-Act",
+        "funding": "$35 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, food security challenge, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, agricultural productivity data, food supply chain vulnerabilities, climate impacts on agriculture"},
+            "03": {"name": "TITLE-I-PRECISION-AGRICULTURE-TECHNOLOGY", "title": "Title I — Precision Agriculture Technology Deployment", "topic": "GPS-guided equipment, drone crop monitoring, variable rate technology, soil sensors, automated irrigation systems"},
+            "04": {"name": "TITLE-II-VERTICAL-FARMING", "title": "Title II — Vertical and Controlled Environment Agriculture", "topic": "indoor farming facilities, hydroponics, aeroponics, aquaponics, urban food production, energy-efficient lighting"},
+            "05": {"name": "TITLE-III-AGRICULTURAL-BIOTECHNOLOGY", "title": "Title III — Agricultural Biotechnology and Crop Science", "topic": "drought-resistant crops, gene editing, soil microbiome research, pest-resistant varieties, yield optimization"},
+            "06": {"name": "TITLE-IV-FOOD-PROCESSING-TECHNOLOGY", "title": "Title IV — Food Processing and Reduction Technology", "topic": "food waste reduction, cold chain logistics, processing automation, packaging innovation, shelf-life extension"},
+            "07": {"name": "TITLE-V-RURAL-BROADBAND-AGRICULTURE", "title": "Title V — Rural Broadband for Agricultural Applications", "topic": "farm connectivity, IoT livestock monitoring, telemedicine for rural areas, agricultural data platforms"},
+            "08": {"name": "TITLE-VI-AGRICULTURAL-WORKFORCE", "title": "Title VI — Agricultural Technology Workforce", "topic": "precision ag technician training, drone operator certification, agricultural data scientists, farm management software specialists"},
+            "09": {"name": "TITLE-VII-FOOD-SECURITY-RESILIENCE", "title": "Title VII — Domestic Food Supply Chain Resilience", "topic": "strategic food reserves, domestic production capacity, supply chain mapping, emergency food distribution"},
+            "10": {"name": "TITLE-VIII-INTERNATIONAL-AGRICULTURAL-TRADE", "title": "Title VIII — International Agricultural Trade and Standards", "topic": "export promotion, sanitary standards, trade agreement compliance, foreign market development"},
+            "11": {"name": "TITLE-IX-AGRICULTURAL-RESEARCH", "title": "Title IX — Agricultural Research and Development", "topic": "USDA research stations, university partnerships, climate adaptation research, crop breeding programs"},
+            "12": {"name": "TITLE-X-TRIBAL-AGRICULTURE", "title": "Title X — Tribal Agriculture and Food Sovereignty", "topic": "tribal farming programs, traditional food systems, reservation food access, tribal agricultural research"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, food security benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act31": {
+        "name": "National Ocean Resources and Marine Economy Act of 2026",
+        "short_name": "NOMEA",
+        "dir": "31-Ocean-Resources-Marine-Economy-Act",
+        "funding": "$40 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, blue economy potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, ocean resource data, marine economy potential, coastal community needs"},
+            "03": {"name": "TITLE-I-MARINE-RENEWABLE-ENERGY", "title": "Title I — Marine Renewable Energy Development", "topic": "tidal energy, wave energy, ocean current power, offshore solar, marine energy testing facilities"},
+            "04": {"name": "TITLE-II-SUSTAINABLE-FISHERIES", "title": "Title II — Sustainable Fisheries and Aquaculture", "topic": "fish stock restoration, sustainable aquaculture, fishing gear innovation, marine habitat protection"},
+            "05": {"name": "TITLE-III-MARINE-BIOTECHNOLOGY", "title": "Title III — Marine Biotechnology and Pharmaceuticals", "topic": "marine-derived pharmaceuticals, ocean biomaterials, marine organism research, blue biotechnology"},
+            "06": {"name": "TITLE-IV-OCEAN-MINING-RESOURCES", "title": "Title IV — Deep Sea Mineral Resources", "topic": "polymetallic nodules, seafloor massive sulfides, cobalt-rich crusts, environmental safeguards, international seabed authority"},
+            "07": {"name": "TITLE-V-COASTAL-INFRASTRUCTURE", "title": "Title V — Coastal Resilience Infrastructure", "topic": "living shorelines, coral reef restoration, coastal erosion protection, storm surge barriers"},
+            "08": {"name": "TITLE-VI-MARINE-WORKFORCE", "title": "Title VI — Marine Industry Workforce Development", "topic": "maritime training, offshore safety certification, marine biologist programs, ocean engineering education"},
+            "09": {"name": "TITLE-VII-OCEAN-DATA-SYSTEMS", "title": "Title VII — Ocean Observation and Data Systems", "topic": "ocean monitoring networks, satellite oceanography, data sharing platforms, predictive modeling"},
+            "10": {"name": "TITLE-VIII-MARITIME-TRANSPORTATION", "title": "Title VIII — Sustainable Maritime Transportation", "topic": "green shipping, port electrification, alternative marine fuels, vessel efficiency standards"},
+            "11": {"name": "TITLE-IX-OCEAN-CONSERVATION", "title": "Title IX — Marine Conservation and Protected Areas", "topic": "marine protected areas, habitat restoration, species protection, ocean acidification mitigation"},
+            "12": {"name": "TITLE-X-TRIBAL-MARINE-RESOURCES", "title": "Title X — Tribal Marine Resource Rights", "topic": "tribal fishing rights, coastal tribal access, traditional marine knowledge, tribal conservation areas"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, blue economy benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
