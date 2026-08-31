@@ -2,7 +2,7 @@
 
 ## Jason Isaac Brodsky (California 1976) — Conducier
 **Part:** 08 of 11
-**Setting:** Hades' palace, throne of bone, River Styx, Cerberus
+**Setting:** Hades' palace, throne of bone, River Styx, Cerberus, the dead
 **Target:** ~1,100 lines of comprehensive visual description
 
 ---
@@ -23,7 +23,7 @@
 
 ---
 
-## LOCATION 08.1: PRIMARY SETTING — HADES' PALACE
+## LOCATION 08.1: PRIMARY SETTING
 
 ### Overview
 [Comprehensive description of the primary setting for Part 08]
@@ -42,18 +42,6 @@
 
 ---
 
-## LOCATION 08.2: SECONDARY SETTING
-
-### Overview
-[Description of secondary location]
-
-### Physical Layout
-- **Dimensions:** [size]
-- **Ground:** [surface]
-- **Special Features:** [unique elements]
-
----
-
 # 2. CHARACTER DESCRIPTIONS
 
 ---
@@ -63,8 +51,8 @@
 ### Physical Attributes
 - **Age:** 20
 - **Height:** 1.80m
-- **Build:** Lean, muscular, more weathered than Part 01
-- **Changes:** [describe changes from previous part]
+- **Build:** Lean, muscular, more weathered
+- **Changes:** [describe changes from previous parts]
 
 ### Head and Face
 - **Hair:** Golden (#D4A017), [changes in style]
@@ -226,15 +214,8 @@
 
 ---
 
-## NOTES FOR EXPANSION
+## USAGE INSTRUCTIONS
 
-This file should be expanded to ~1,100 lines with:
-- Detailed location descriptions (all locations in part)
-- Full character descriptions (all characters in part)
-- Complete object/prop descriptions
-- Comprehensive lighting notes for every scene
-- Atmospheric details for every mood
-- Camera compositions for key moments
-- Texture references for all materials
+To generate an image for any moment in Part 08, use the following prompt structure:
 
-When expanded, this file serves as a complete visual bible that image generators can reference by moment number. For example: "Please depict moment 08.1 using all the details from the accompanying details file" would produce a perfectly accurate image of that specific moment.
+"Please depict moment [X.Y] from Part 08 of CSM Cinema using all the details from the accompanying scene details file. Include: [specific moment details], [character descriptions], [lighting], [composition], [textures], and [atmosphere]."
