@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Fold Harmonics v1 | Big Bang → Expansion → Contraction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap');
+        *{box-sizing:border-box;}
+        body{font-family:'Rajdhani',sans-serif;background:#000;color:#e2e8f0;overflow:hidden;margin:0;}
+        h1,h2,h3,.orbitron{font-family:'Orbitron',sans-serif;}
+        #canvas-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+        .hud{background:rgba(5,8,20,0.85);backdrop-filter:blur(12px);border:1px solid rgba(56,189,248,0.3);border-radius:8px;z-index:10;}
+        .btn{padding:6px 12px;border-radius:5px;cursor:pointer;font-size:11px;font-family:'Orbitron',sans-serif;text-transform:uppercase;letter-spacing:0.05em;border:1px solid;transition:all 0.2s;}
+        .btn-cyan{background:rgba(56,189,248,0.15);border-color:rgba(56,189,248,0.5);color:#38bdf8;}
+        .btn-cyan:hover{background:rgba(56,189,248,0.4);}
+        .btn-purple{background:rgba(168,85,247,0.15);border-color:rgba(168,85,247,0.5);color:#a855f7;}
+        .btn-purple:hover{background:rgba(168,85,247,0.4);}
+        .btn-green{background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.5);color:#10b981;}
+        .btn-green:hover{background:rgba(16,185,129,0.4);}
+        .btn-red{background:rgba(244,63,94,0.15);border-color:rgba(244,63,94,0.5);color:#f43f5e;}
+        .btn-red:hover{background:rgba(244,63,94,0.4);}
+        .btn-yellow{background:rgba(254,240,138,0.15);border-color:rgba(254,240,138,0.5);color:#fef08a;}
+        .btn-yellow:hover{background:rgba(254,240,138,0.4);}
+        .btn-glue{background:rgba(249,115,22,0.15);border-color:rgba(249,115,22,0.5);color:#f97316;}
+        .btn-glue:hover{background:rgba(249,115,22,0.4);}
+        .btn-active{background:rgba(56,189,248,0.6)!important;box-shadow:0 0 12px rgba(56,189,248,0.8);}
+        .prime-display{color:#fef08a;font-weight:bold;}
+        .twist-display{color:#a855f7;font-weight:bold;}
+        .fold-display{color:#10b981;font-weight:bold;}
+        .data-display{color:#f97316;font-weight:bold;}
+        .phase-display{color:#ec4899;font-weight:bold;}
+        .equation-display{font-family:'Courier New',monospace;font-size:10px;color:#38bdf8;background:rgba(0,0,0,0.6);padding:2px 4px;border-radius:3px;margin:1px 0;transition:all 0.5s ease;}
+        .equation-new{animation:eqPulse 3s ease-in-out;}
+        @keyframes eqPulse{0%{opacity:0;transform:translateX(-10px);}20%{opacity:1;transform:translateX(0);}80%{opacity:1;}100%{opacity:0.7;}}
+    </style>
+</head>
+<body class="w-full h-screen relative">
+    <div id="canvas-container"></div>
+
+    <!-- Header -->
+    <div class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none bg-gradient-to-b from-black/90 to-transparent">
+        <div class="flex justify-between items-start">
+            <div class="pointer-events-auto">
+                <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+                    PRIME FOLD HARMONICS v1
+                </h1>
+                <p class="text-xs text-cyan-300 mt-1">Big Bang &rarr; Expansion &rarr; Contraction &middot; Particles follow prime gap folds</p>
+            </div>
+            <div class="pointer-events-auto flex items-center gap-2">
+                <button id="btn-toggle-hud" class="btn btn-cyan" onclick="document.getElementById('hud-left').classList.toggle('hidden');document.getElementById('hud-right').classList.toggle('hidden')">&equiv;</button>
+                <button id="btn-play" class="btn btn-green" onclick="Harmonics.togglePlay()">&#9654; Play</button>
+                <button id="btn-reset" class="btn btn-red" onclick="Harmonics.reset()">&#8634; Reset</button>
+                <div class="text-green-400 text-xs orbitron font-bold animate-pulse">&#9679; LIVE</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left Panel -->
+    <div id="hud-left" class="absolute bottom-4 left-4 z-20 w-80 flex flex-col gap-2 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-cyan-400 text-xs orbitron uppercase tracking-wider mb-2">Universe State</h3>
+            <div class="space-y-1 text-xs">
+                <div>Phase: <span id="universe-phase" class="phase-display">Big Bang</span></div>
+                <div>Scale: <span id="universe-scale" class="text-white">0.001</span></div>
+                <div>Current Prime: <span id="current-prime" class="prime-display">2</span></div>
+                <div>Twists: <span id="current-twists" class="twist-display">1</span></div>
+                <div>Folds: <span id="current-folds" class="fold-display">0</span></div>
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-orange-400 text-xs orbitron uppercase tracking-wider mb-2">Prime Gap Data</h3>
+            <div class="space-y-1 text-xs">
+                <div>Gaps Loaded: <span id="gaps-loaded" class="data-display">2,097,152</span></div>
+                <div>Current Gap: <span id="current-gap" class="data-display">1</span></div>
+                <div>Prime Index: <span id="prime-index" class="data-display">0</span></div>
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-yellow-400 text-xs orbitron uppercase tracking-wider mb-2">Active Equations</h3>
+            <div id="equation-display" class="text-xs font-mono text-cyan-300 max-h-16 overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div id="hud-right" class="absolute bottom-4 right-4 z-20 w-72 flex flex-col gap-2 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-green-400 text-xs orbitron uppercase tracking-wider mb-2">Controls</h3>
+            <div class="grid grid-cols-2 gap-1.5 text-xs mb-2">
+                <button onclick="Harmonics.stepForward()" class="btn btn-cyan">Step +</button>
+                <button onclick="Harmonics.stepBack()" class="btn btn-cyan">Step -</button>
+                <button onclick="Harmonics.faster()" class="btn btn-green">Faster</button>
+                <button onclick="Harmonics.slower()" class="btn btn-green">Slower</button>
+                <button onclick="Harmonics.bigBang()" class="btn btn-yellow">Big Bang!</button>
+                <button onclick="Harmonics.toggleParticles()" class="btn btn-purple">Particles</button>
+            </div>
+            <div class="space-y-1">
+                <div class="flex justify-between text-xs text-gray-400"><span>Speed</span><span id="speed-val">1.0x</span></div>
+                <input type="range" min="0.1" max="5" step="0.1" value="1" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="Harmonics.setSpeed(this.value)">
+                <div class="flex justify-between text-xs text-gray-400"><span>Quality</span><span id="quality-val">5</span></div>
+                <input type="range" min="1" max="20" step="1" value="5" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="Harmonics.setQuality(this.value)">
+                <div class="flex justify-between text-xs text-gray-400"><span>Particles</span><span id="particle-val">5000</span></div>
+                <input type="range" min="1000" max="50000" step="1000" value="5000" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="Harmonics.setParticleCount(this.value)">
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto max-h-24 overflow-y-auto">
+            <h3 class="text-pink-400 text-xs orbitron uppercase tracking-wider mb-2">Event Log</h3>
+            <ul id="event-log" class="text-xs space-y-0.5 font-mono"></ul>
+        </div>
+    </div>
+
+    <!-- Center Info -->
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none text-center" id="center-info">
+        <div class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600 orbitron" id="center-prime">2</div>
+        <div class="text-sm text-cyan-300 mt-2" id="center-status">Big Bang Initiated</div>
+    </div>
+
+    <script>
+    // ===================================================================
+    // PRIME FOLD HARMONICS v1
+    // Big Bang → Expansion → Contraction cycle
+    // Particles follow prime gap fold paths
+    // ===================================================================
+
+    const PRIMES = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97];
+    const PRIME_GAPS = PRIMES.slice(1).map((p,i) => p - PRIMES[i]);
+
+    let scene, camera, renderer, composer;
+    let foldMeshes = [], particleSystems = [];
+    let currentPrimeIdx = 0;
+    let twistCount = 1;
+    let foldCount = 0;
+    let iteration = 0;
+    let playing = true;
+    let speed = 1.0;
+    let quality = 5;
+    let particleCount = 5000;
+    let foldProgress = 0;
+    let lastTime = 0;
+
+    // Universe phase: 'bigbang', 'expansion', 'contraction'
+    let universePhase = 'bigbang';
+    let universeScale = 0.001;
+    let universeTime = 0;
+    let particlesVisible = true;
+
+    // Particle species definitions (from JJ4)
+    const PARTICLES = {
+        electron:   {color:0x38bdf8, size:0.35, mass:0.511},
+        proton:     {color:0xf43f5e, size:0.8,  mass:938.3},
+        neutron:    {color:0x94a3b8, size:0.75, mass:939.6},
+        photon:     {color:0xfef08a, size:0.45, mass:0},
+        axion:      {color:0x10b981, size:0.3,  mass:1e-5},
+        neutralino: {color:0xa855f7, size:0.9,  mass:1000},
+        gluon:      {color:0xf97316, size:0.4,  mass:0},
+        higgs:      {color:0xec4899, size:1.2,  mass:125200},
+        neutrino:   {color:0x67e8f9, size:0.25, mass:0.00045},
+        up_quark:   {color:0xfbbf24, size:0.5,  mass:2.16},
+        down_quark: {color:0x60a5fa, size:0.5,  mass:4.67},
+        muon:       {color:0xe879f9, size:0.6,  mass:105.66},
+        pion:       {color:0x86efac, size:0.55, mass:139.6},
+        kaon:       {color:0xfcd34d, size:0.6,  mass:493.7},
+        demon:      {color:0x4c1d95, size:0.35, mass:0},
+        graviton:   {color:0xd1fae5, size:0.3,  mass:0},
+        w_boson:    {color:0xfb7185, size:1.0,  mass:80360},
+        z_boson:    {color:0xa78bfa, size:1.0,  mass:91188},
+        glueball:   {color:0xf97316, size:1.4,  mass:1700},
+        tardigrade: {color:0x22d3ee, size:1.5,  mass:1e-6},
+        dark_matter:{color:0x1e1b4b, size:1.0,  mass:100}
+    };
+
+    function logEvent(msg) {
+        const log = document.getElementById('event-log');
+        const li = document.createElement('li');
+        li.className = 'text-cyan-300 border-l-2 border-cyan-900 pl-1';
+        li.textContent = '[' + new Date().toTimeString().slice(0,8) + '] ' + msg;
+        log.prepend(li);
+        while(log.children.length > 10) log.lastChild.remove();
+    }
+
+    function showEquation(eq) {
+        const now = Date.now();
+        if (now - lastEquationTime < 2500) return;
+        lastEquationTime = now;
+        currentEquations.push(eq);
+        if (currentEquations.length > 4) currentEquations.shift();
+        const disp = document.getElementById('equation-display');
+        disp.innerHTML = currentEquations.map((e,i) => `<div class="equation-display${i===currentEquations.length-1?' equation-new':''}">${e}</div>`).join('');
+        disp.scrollTop = disp.scrollHeight;
+    }
+
+    // Create fold geometry that particles follow
+    function createFoldGeometry(prime, twists, foldStage, scale) {
+        const points = [];
+        const colors = [];
+        const segments = 100 * quality;
+        const color = new THREE.Color();
+
+        for (let i = 0; i <= segments; i++) {
+            const t = (i / segments) * Math.PI * 2;
+            const baseR = (3 + Math.log(prime + 1) * 0.5) * scale;
+            const twistAngle = twists * t * 0.5;
+            const foldFactor = Math.sin(foldStage * Math.PI);
+
+            const r = baseR * (1 + 0.3 * Math.cos(twistAngle));
+            const x = r * Math.cos(t) + foldFactor * baseR * 0.5 * Math.cos(2*t);
+            const y = r * Math.sin(t) * Math.cos(twistAngle * 0.5);
+            const z = r * Math.sin(twistAngle) * (1 - foldFactor * 0.5);
+
+            points.push(new THREE.Vector3(x, y, z));
+
+            const hue = (Math.log(prime) % 1) + foldStage * 0.3;
+            color.setHSL(hue, 0.8, 0.6);
+            colors.push(color.r, color.g, color.b);
+        }
+
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        return geometry;
+    }
+
+    // Create particles that follow the fold path
+    function createFoldParticles(prime, foldStage, gap, scale) {
+        const count = particleCount;
+        const positions = new Float32Array(count * 3);
+        const colors = new Float32Array(count * 3);
+        const color = new THREE.Color();
+        const species = Object.keys(PARTICLES);
+
+        for (let i = 0; i < count; i++) {
+            // Position along fold path
+            const t = (i / count) * Math.PI * 2;
+            const baseR = (2 + gap * 0.3) * scale;
+            const twistAngle = twistCount * t * 0.5;
+            const foldFactor = Math.sin(foldStage * Math.PI);
+
+            const r = baseR * (1 + 0.2 * Math.cos(twistAngle));
+            const spread = (Math.random() - 0.5) * scale * 2;
+
+            positions[i*3] = r * Math.cos(t) + foldFactor * baseR * 0.3 * Math.cos(2*t) + spread;
+            positions[i*3+1] = r * Math.sin(t) * Math.cos(twistAngle * 0.5) + spread;
+            positions[i*3+2] = r * Math.sin(twistAngle) * (1 - foldFactor * 0.5) + spread;
+
+            // Color by species
+            const sp = species[i % species.length];
+            const c = new THREE.Color(PARTICLES[sp].color);
+            colors[i*3] = c.r;
+            colors[i*3+1] = c.g;
+            colors[i*3+2] = c.b;
+        }
+
+        const geo = new THREE.BufferGeometry();
+        geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+        geo.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        return geo;
+    }
+
+    const Harmonics = {
+        init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x020205);
+            scene.fog = new THREE.FogExp2(0x020205, 0.005);
+
+            camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 5000);
+            camera.position.set(0, 30, 60);
+
+            renderer = new THREE.WebGLRenderer({antialias:true});
+            renderer.setSize(innerWidth, innerHeight);
+            renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = 0.3;
+
+            const rp = new THREE.RenderPass(scene, camera);
+            const bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 1.5, 0.4, 0.85);
+            composer = new THREE.EffectComposer(renderer);
+            composer.addPass(rp);
+            composer.addPass(bloom);
+
+            scene.add(new THREE.AmbientLight(0x404080));
+            const pt = new THREE.PointLight(0xffffff, 3, 500);
+            pt.position.set(30, 50, 60);
+            scene.add(pt);
+
+            this.createInitialFold();
+            this.updateDisplay();
+            this.animate();
+
+            logEvent('[PRIME FOLD HARMONICS v1] Initialized');
+            logEvent('[PHASE] Big Bang — universe scale: 0.001');
+            showEquation('ds&sup2; = -(1-2GM/r)dt&sup2; + (1-2GM/r)&supminus;1dr&sup2; + r&sup2;d&Omega;&sup2; [Schwarzschild]');
+        },
+
+        createInitialFold() {
+            foldMeshes.forEach(m => scene.remove(m));
+            particleSystems.forEach(p => scene.remove(p));
+            foldMeshes = [];
+            particleSystems = [];
+
+            const prime = PRIMES[currentPrimeIdx];
+            const gap = PRIME_GAPS[currentPrimeIdx] || 1;
+
+            // Fold spine
+            const geo = createFoldGeometry(prime, twistCount, foldProgress, universeScale);
+            const mat = new THREE.LineBasicMaterial({vertexColors:true, linewidth:2, transparent:true, opacity:0.8});
+            const line = new THREE.Line(geo, mat);
+            scene.add(line);
+            foldMeshes.push(line);
+
+            // Particles following fold
+            const pGeo = createFoldParticles(prime, foldProgress, gap, universeScale);
+            const pMat = new THREE.PointsMaterial({size:0.2, vertexColors:true, transparent:true, opacity:0.8, blending:THREE.AdditiveBlending});
+            const pPoints = new THREE.Points(pGeo, pMat);
+            pPoints.visible = particlesVisible;
+            scene.add(pPoints);
+            particleSystems.push(pPoints);
+        },
+
+        updateFold() {
+            const prime = PRIMES[currentPrimeIdx];
+            const gap = PRIME_GAPS[currentPrimeIdx] || 1;
+
+            foldMeshes.forEach(mesh => {
+                const geo = createFoldGeometry(prime, twistCount, foldProgress, universeScale);
+                mesh.geometry.dispose();
+                mesh.geometry = geo;
+            });
+
+            particleSystems.forEach(mesh => {
+                const geo = createFoldParticles(prime, foldProgress, gap, universeScale);
+                mesh.geometry.dispose();
+                mesh.geometry = geo;
+                mesh.visible = particlesVisible;
+            });
+
+            foldMeshes.forEach(mesh => {
+                mesh.rotation.x = foldProgress * Math.PI * twistCount * universeScale;
+                mesh.rotation.y = universeTime * 0.1;
+            });
+        },
+
+        updateDisplay() {
+            const prime = PRIMES[currentPrimeIdx];
+            document.getElementById('current-prime').textContent = prime;
+            document.getElementById('current-twists').textContent = twistCount;
+            document.getElementById('current-folds').textContent = foldCount;
+            document.getElementById('current-gap').textContent = PRIME_GAPS[currentPrimeIdx] || 1;
+            document.getElementById('prime-index').textContent = currentPrimeIdx;
+            document.getElementById('universe-scale').textContent = universeScale.toFixed(4);
+            document.getElementById('universe-phase').textContent = universePhase;
+
+            let status = 'Big Bang';
+            if(universePhase === 'expansion') status = 'Expanding';
+            if(universePhase === 'contraction') status = 'Contracting';
+            document.getElementById('center-prime').textContent = prime;
+            document.getElementById('center-status').textContent = status;
+        },
+
+        stepForward() {
+            const prime = PRIMES[currentPrimeIdx];
+            foldProgress += 0.05 * speed;
+            if(foldProgress >= 1) {
+                foldProgress = 0;
+                foldCount++;
+                let cumulativeTwist = 0;
+                for(let i = 0; i <= currentPrimeIdx; i++) cumulativeTwist += PRIME_GAPS[i] || 1;
+                twistCount = cumulativeTwist;
+                currentPrimeIdx = (currentPrimeIdx + 1) % PRIMES.length;
+                iteration++;
+            }
+            this.updateFold();
+            this.updateDisplay();
+        },
+
+        stepBack() {
+            foldProgress -= 0.05 * speed;
+            if(foldProgress < 0) {
+                foldProgress = 0.95;
+                currentPrimeIdx = (currentPrimeIdx - 1 + PRIMES.length) % PRIMES.length;
+                twistCount = PRIMES[currentPrimeIdx];
+                foldCount = Math.max(0, foldCount - 1);
+            }
+            this.updateFold();
+            this.updateDisplay();
+        },
+
+        faster() { speed = Math.min(speed + 0.5, 5); document.getElementById('speed-val').textContent = speed.toFixed(1) + 'x'; },
+        slower() { speed = Math.max(speed - 0.5, 0.1); document.getElementById('speed-val').textContent = speed.toFixed(1) + 'x'; },
+        setSpeed(v) { speed = parseFloat(v); document.getElementById('speed-val').textContent = parseFloat(v).toFixed(1) + 'x'; },
+        setQuality(v) { quality = parseInt(v); document.getElementById('quality-val').textContent = v; this.createInitialFold(); },
+        setParticleCount(v) { particleCount = parseInt(v); document.getElementById('particle-val').textContent = v; this.createInitialFold(); },
+        togglePlay() { playing = !playing; document.getElementById('btn-play').innerHTML = playing ? '&#9654; Play' : '&#9646; Pause'; },
+        toggleParticles() { particlesVisible = !particlesVisible; particleSystems.forEach(p => p.visible = particlesVisible); logEvent('[PARTICLES] ' + (particlesVisible ? 'ON' : 'OFF')); },
+
+        bigBang() {
+            universePhase = 'bigbang';
+            universeScale = 0.001;
+            currentPrimeIdx = 0;
+            twistCount = 1;
+            foldCount = 0;
+            iteration = 0;
+            foldProgress = 0;
+            speed = 2;
+            logEvent('[BIG BANG] Universe reset — infinite cycle begins!');
+            showEquation('a(t) &rarr; 0, &rho; &rarr; &infin; [singularity]');
+            this.createInitialFold();
+            this.updateDisplay();
+        },
+
+        reset() {
+            universePhase = 'bigbang';
+            universeScale = 0.001;
+            currentPrimeIdx = 0;
+            twistCount = 1;
+            foldCount = 0;
+            iteration = 0;
+            foldProgress = 0;
+            speed = 1;
+            playing = true;
+            logEvent('[RESET] Harmonics engine reset');
+            this.createInitialFold();
+            this.updateDisplay();
+        },
+
+        animate() {
+            requestAnimationFrame(() => this.animate());
+            const now = Date.now();
+            const dt = (now - lastTime) / 1000;
+            lastTime = now;
+            universeTime += dt * speed;
+
+            if(playing) {
+                // Universe phase cycle
+                if(universePhase === 'bigbang') {
+                    universeScale += 0.002 * speed * dt * 60;
+                    if(universeScale > 1) {
+                        universePhase = 'expansion';
+                        logEvent('[PHASE] Expansion begins');
+                        showEquation('H&sup2; = (8&pi;G/3)&rho; - k/a&sup2; + &Lambda;/3 [Friedmann]');
+                    }
+                } else if(universePhase === 'expansion') {
+                    universeScale += 0.001 * speed * dt * 60;
+                    foldProgress += 0.003 * speed * dt * 60;
+                    if(universeScale > 5) {
+                        universePhase = 'contraction';
+                        logEvent('[PHASE] Contraction begins');
+                        showEquation('a(t) &rarr; 0 [Big Crunch]');
+                    }
+                } else if(universePhase === 'contraction') {
+                    universeScale -= 0.002 * speed * dt * 60;
+                    foldProgress += 0.005 * speed * dt * 60;
+                    if(universeScale <= 0.001) {
+                        universePhase = 'bigbang';
+                        currentPrimeIdx = 0;
+                        twistCount = 1;
+                        foldCount = 0;
+                        iteration++;
+                        logEvent('[PHASE] New Big Bang! Iteration ' + iteration);
+                        showEquation('a(t) &rarr; 0 &rarr; &infin; [cyclic universe]');
+                    }
+                }
+
+                // Prime fold progression
+                if(foldProgress >= 1) {
+                    foldProgress = 0;
+                    foldCount++;
+                    let cumulativeTwist = 0;
+                    for(let i = 0; i <= currentPrimeIdx; i++) cumulativeTwist += PRIME_GAPS[i] || 1;
+                    twistCount = cumulativeTwist;
+                    currentPrimeIdx = (currentPrimeIdx + 1) % PRIMES.length;
+                    if(foldCount % 10 === 0) logEvent(`[FOLD] ${twistCount} twists, scale ${universeScale.toFixed(3)}`);
+                }
+
+                this.updateFold();
+                this.updateDisplay();
+            }
+
+            // Rotate particles
+            particleSystems.forEach((ps, i) => {
+                if(ps.visible) {
+                    ps.rotation.y += 0.003 * (i + 1) * speed;
+                    ps.rotation.x += 0.001 * speed;
+                }
+            });
+
+            renderer.render(scene, camera);
+        }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => Harmonics.init());
+    </script>
+</body>
+</html>
