@@ -1078,5 +1078,53 @@ ACTS_CONFIG = {
             "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
             "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, health outcome benefits, domestic content requirements, cost-benefit analysis"}
         }
+    },
+    "act56": {
+        "name": "National Offshore Critical Minerals and Marine Resources Security Act of 2026",
+        "short_name": "NOCMMRSA",
+        "dir": "56-Offshore-Critical-Minerals-Marine-Resources-Security-Act",
+        "funding": "$35 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, offshore mineral potential, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, seabed mineral data, supply chain security, environmental considerations"},
+            "03": {"name": "TITLE-I-POLYMETALLIC-NODULE-EXPLORATION", "title": "Title I — Polymetallic Nodule Exploration", "topic": "nodule resource assessment, mining technology development, environmental baseline studies, extraction systems"},
+            "04": {"name": "TITLE-II-SEAFLOOR-MASSIVE-SULFIDES", "title": "Title II — Seafloor Massive Sulfide Resources", "topic": "SMS exploration, hydrothermal vent deposits, mining systems, environmental protection"},
+            "05": {"name": "TITLE-III-COBALT-RICH-CRUSTS", "title": "Title III — Cobalt-Rich Ferromanganese Crusts", "topic": "crust resource assessment, seamount deposits, mining technology, processing methods"},
+            "06": {"name": "TITLE-IV-MARINE-MINERALS-WORKFORCE", "title": "Title IV — Marine Minerals Workforce", "topic": "marine geologist training, ocean engineer programs, mining technician certification, environmental scientist education"},
+            "07": {"name": "TITLE-V-INTERNATIONAL-SEABED-AUTHORITY", "title": "Title V — International Seabed Authority Engagement", "topic": "ISA negotiations, mining code development, environmental standards, revenue sharing, flag state responsibilities"},
+            "08": {"name": "TITLE-VI-MARINE-MINERALS-ENVIRONMENTAL", "title": "Title VI — Marine Minerals Environmental Protection", "topic": "environmental impact assessment, mitigation measures, marine protected areas, biodiversity conservation"},
+            "09": {"name": "TITLE-VII-MARINE-MINERALS-RESEARCH", "title": "Title VII — Marine Minerals Research", "topic": "ocean mining technology, environmental monitoring, resource assessment, processing innovation"},
+            "10": {"name": "TITLE-VIII-MARINE-MINERALS-FINANCE", "title": "Title VIII — Marine Minerals Finance", "topic": "loan guarantees, risk mitigation, public-private partnerships, strategic reserve, royalty frameworks"},
+            "11": {"name": "TITLE-IX-MARINE-MINERALS-PROCESSING", "title": "Title IX — Domestic Marine Mineral Processing", "topic": "processing facility construction, refining technology, supply chain integration, workforce development"},
+            "12": {"name": "TITLE-X-MARINE-MINERALS-EXPORT-CONTROLS", "title": "Title X — Marine Minerals Export Controls", "topic": "export license requirements, deemed exports, foreign researcher screening, multilateral coordination"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, resource security benefits, domestic content requirements, cost-benefit analysis"}
+        }
+    },
+    "act57": {
+        "name": "National Rural Broadband and Digital Equity Expansion Act of 2026",
+        "short_name": "NRBDEA",
+        "dir": "57-Rural-Broadband-Digital-Equity-Expansion-Act",
+        "funding": "$50 billion",
+        "funding_period": "Fiscal Years 2027-2036",
+        "sections": {
+            "00": {"name": "BILL-TITLE-AND-NUMBER", "title": "Bill Title and Number", "topic": "legislative identification, short title, table of contents, congressional session details"},
+            "01": {"name": "EXECUTIVE-SUMMARY", "title": "Executive Summary", "topic": "overview, rural broadband gap, program architecture, key provisions, economic projections"},
+            "02": {"name": "FINDINGS-AND-DECLARATIONS", "title": "Findings and Declarations", "topic": "congressional findings, broadband access data, digital divide impacts, economic opportunity costs"},
+            "03": {"name": "TITLE-I-RURAL-BROADBAND-DEPLOYMENT", "title": "Title I — Rural Broadband Deployment", "topic": "fiber deployment, fixed wireless, satellite broadband, middle mile infrastructure, last mile connectivity"},
+            "04": {"name": "TITLE-II-BROADBAND-TECHNOLOGY-NEUTRAL", "title": "Title II — Technology-Neutral Broadband Programs", "topic": "technology-neutral funding, performance standards, speed requirements, latency standards, scalability"},
+            "05": {"name": "TITLE-III-DIGITAL-LITERACY", "title": "Title III — Digital Literacy and Skills Training", "topic": "digital skills programs, senior digital inclusion, workforce retraining, multilingual training, accessibility"},
+            "06": {"name": "TITLE-IV-BROADBAND-AFFORDABILITY", "title": "Title IV — Broadband Affordability Programs", "topic": "ACP expansion, low-cost plans, subsidy programs, provider participation, eligibility requirements"},
+            "07": {"name": "TITLE-V-BROADBAND-WORKFORCE", "title": "Title V — Broadband Workforce Development", "topic": "fiber technician training, tower climber certification, network engineer programs, safety training"},
+            "08": {"name": "TITLE-VI-TRIBAL-BROADBAND", "title": "Title VI — Tribal Broadband Connectivity", "topic": "tribal broadband programs, spectrum for tribal nations, tribal digital sovereignty, 2.5 GHz spectrum"},
+            "09": {"name": "TITLE-VII-PRECISION-AGRICULTURE", "title": "Title VII — Precision Agriculture Connectivity", "topic": "farm connectivity, IoT livestock monitoring, precision irrigation, agricultural data platforms, rural innovation"},
+            "10": {"name": "TITLE-VIII-RURAL-HEALTH-TELECOM", "title": "Title VIII — Rural Health Telecommunications", "topic": "rural telehealth, hospital connectivity, remote patient monitoring, mental health access, emergency communications"},
+            "11": {"name": "TITLE-IX-BROADBAND-MAPPING", "title": "Title IX — Broadband Mapping and Data", "topic": "broadband mapping, data collection, challenge process, fabric data, availability verification"},
+            "12": {"name": "TITLE-X-BROADBAND-FINANCE", "title": "Title X — Broadband Finance Programs", "topic": "ReConnect Program, Community Connect, loan guarantees, state broadband programs, digital equity funding"},
+            "13": {"name": "FUNDING-AND-IMPLEMENTATION", "title": "Title XI — Funding and Implementation", "topic": "Authorization of appropriations, allocation among programs, oversight and GAO audit, implementation schedule"},
+            "14": {"name": "ECONOMIC-IMPACT-AND-REFERENCES", "title": "Title XII — Economic Impact and References", "topic": "Economic impact projections, connectivity benefits, domestic content requirements, cost-benefit analysis"}
+        }
     }
 }
