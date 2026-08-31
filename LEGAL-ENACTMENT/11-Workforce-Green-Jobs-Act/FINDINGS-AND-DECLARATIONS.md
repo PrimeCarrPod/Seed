@@ -1,15 +1,15 @@
 # Findings and Declarations
 ## Workforce Development and Green Jobs Act of 2026 — Section 02
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Structure:** 12 pieces + supplementary analysis
 
 ---
 
 # Findings and Declarations — Piece 01/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 01 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -22,7 +22,7 @@
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -34,7 +34,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -44,31 +44,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -90,7 +65,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -450,11 +425,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -478,9 +453,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 02/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 02 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -493,7 +468,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -505,7 +480,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -521,25 +496,26 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 For purposes of this Findings and Declarations:
 
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
+(1) **"Clean Energy Occupation".** — employment in the design, construction, manufacturing, installation, operation, maintenance, or decommissioning of technologies and infrastructure for renewable energy generation, energy storage, grid modernization, nuclear energy, carbon management, clean manufacturing, electric transportation, and sustainable buildings.
 
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
+(2) **"Registered Apprenticeship".** — an apprenticeship program registered with the Department of Labor under the National Apprenticeship Act (29 U.S.C. 50 et seq.) or a State Apprenticeship Agency recognized by the Department of Labor.
 
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
+(3) **"Energy Transition Community".** — a county, parish, census tract, or Tribal area in which employment in coal mining, coal-fired power generation, oil and gas extraction, or petroleum refining accounted for not less than 1 percent of total employment as of January 1, 2020.
 
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
+(4) **"Qualified Veteran".** — an individual who served on active duty in the Armed Forces and was discharged or released under conditions other than dishonorable.
 
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
+(5) **"Clean Energy Corps".** — the national service program established under Title VIII of this Act, modeled on the Civilian Conservation Corps of 1933 through 1942.
 
 ### (B) Rules of Construction
 
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
+(1) Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
 
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
+(2) References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
 
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
+(3) Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
 
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
+(4) Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
+
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -561,7 +537,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -921,11 +897,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -949,9 +925,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 03/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 03 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -964,7 +940,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -976,7 +952,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -986,31 +962,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -1032,7 +983,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -1392,11 +1343,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -1420,9 +1371,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 04/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 04 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -1435,7 +1386,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -1447,7 +1398,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -1457,31 +1408,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -1503,7 +1429,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -1863,11 +1789,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -1891,9 +1817,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 05/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 05 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -1906,7 +1832,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -1918,7 +1844,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -1928,31 +1854,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -1974,7 +1875,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -2334,11 +2235,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -2362,9 +2263,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 06/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 06 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -2377,7 +2278,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -2389,7 +2290,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -2399,31 +2300,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -2445,7 +2321,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -2805,11 +2681,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -2833,9 +2709,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 07/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 07 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -2848,7 +2724,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -2860,7 +2736,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -2870,31 +2746,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -2916,7 +2767,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -3276,11 +3127,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -3304,9 +3155,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 08/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 08 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -3319,7 +3170,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -3331,7 +3182,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -3341,31 +3192,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -3387,7 +3213,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -3747,11 +3573,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -3775,9 +3601,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 09/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 09 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -3790,7 +3616,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -3802,7 +3628,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -3812,31 +3638,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -3858,7 +3659,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -4218,11 +4019,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -4246,9 +4047,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 10/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 10 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -4261,7 +4062,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -4273,7 +4074,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -4283,31 +4084,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -4329,7 +4105,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -4689,11 +4465,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -4717,9 +4493,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 11/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 11 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -4732,7 +4508,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -4744,7 +4520,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -4754,31 +4530,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -4800,7 +4551,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -5160,11 +4911,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -5188,9 +4939,9 @@ Nothing in this section shall be construed to:
 ---
 
 # Findings and Declarations — Piece 12/12
-## Act 13: Workforce Development and Green Jobs Act of 2026 — Section 02
+## Act 11: Workforce Development and Green Jobs Act of 2026 — Section 02
 **Piece:** 12 of 12  
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
@@ -5203,7 +4954,7 @@ Nothing in this section shall be construed to:
 
 The purpose of this Findings and Declarations within the Workforce Development and Green Jobs Act of 2026 (hereinafter referred to as the "WDGJA") is to establish comprehensive statutory authority for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives. This provision represents a critical component of the nation's broader strategy to achieve energy security, economic competitiveness, and environmental sustainability through coordinated federal investment of $50 billion over the Fiscal Years 2027-2036 period.
 
-The WDGJA recognizes that the United States faces unprecedented challenges in securing the mineral resources, manufacturing capacity, and technological innovation necessary to maintain global economic leadership and national security. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
+The WDGJA recognizes that the United States faces unprecedented challenges in congressional findings. This Findings and Declarations addresses these challenges through a multi-faceted approach that combines direct federal investment, regulatory modernization, workforce development, and international partnership.
 
 ### (B) Scope of Authority
 
@@ -5215,7 +4966,7 @@ The provisions of this section shall be construed broadly to effectuate the purp
 
 Congress hereby declares that the intent of this Findings and Declarations is to:
 
-(1) Establish a permanent federal framework for congressional findings, national interest declarations, workforce crisis data, clean energy transition imperatives that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
+(1) Establish a permanent federal framework for congressional findings that transcends annual appropriations cycles and provides long-term certainty for investors, employers, and workers;
 
 (2) Leverage federal investment to mobilize private sector capital at a ratio of not less than 3:1 (private:public), ensuring that taxpayer dollars generate maximum economic impact;
 
@@ -5225,31 +4976,6 @@ Congress hereby declares that the intent of this Findings and Declarations is to
 
 (5) Establish rigorous accountability mechanisms, including regular GAO audits, program evaluations, and public reporting requirements, to ensure that authorized funds are expended effectively and efficiently.
 
-## II. DEFINITIONS AND INTERPRETATION
-
-### (A) Key Definitions
-
-For purposes of this Findings and Declarations:
-
-**(1) "Critical Mineral."** The term "critical mineral" means any mineral, element, substance, or material designated as critical by the Secretary of the Interior pursuant to Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606), including but not limited to lithium, cobalt, nickel, graphite, manganese, rare earth elements, uranium, copper, silicon, gallium, germanium, platinum group metals, and any other material determined to be essential to national security, economic stability, or energy transition.
-
-**(2) "Domestic Supply Chain."** The term "domestic supply chain" means the complete sequence of activities involved in the production of critical minerals and derived products, from geological exploration and mining through processing, refining, manufacturing, and recycling, where not less than 75 percent of the value of each stage is added within the United States or its territories.
-
-**(3) "Energy Transition Community."** The term "energy transition community" means a county, parish, census tract, or Tribal area that has experienced or is projected to experience significant economic disruption due to the decline of fossil fuel industries or the transition to clean energy technologies, as determined by the Secretary of Energy in consultation with the Secretary of Labor.
-
-**(4) "Qualified Recycling Facility."** The term "qualified recycling facility" means a facility that recovers critical minerals from end-of-life products, manufacturing scrap, or other waste streams, and that meets all applicable environmental, safety, and labor standards established under this section and other applicable law.
-
-**(5) "Strategic Mineral Reserve."** The term "strategic mineral reserve" means a stockpile of critical minerals maintained by the federal government for the purpose of ensuring national security, economic stability, and supply chain resilience during periods of market disruption or geopolitical crisis.
-
-### (B) Rules of Construction
-
-**(1)** Unless otherwise specified, references to "the Secretary" mean the Secretary of Energy, or such other officer as the President may designate for purposes of this section.
-
-**(2)** References to specific sections of the United States Code are to those sections as amended from time to time, including any successor provisions.
-
-**(3)** Headings and captions are provided for convenience only and shall not be used to construe the meaning of any provision.
-
-**(4)** Where this section requires an action within a specified number of days, calendar days are intended unless otherwise stated.
 
 ## III. AUTHORIZATION OF APPROPRIATIONS
 
@@ -5271,7 +4997,7 @@ There is authorized to be appropriated for the implementation of this Findings a
 
 Funds authorized under this section shall be appropriated annually through the regular appropriations process and shall be available for obligation for a period of two fiscal years following the fiscal year of appropriation. Unobligated funds shall be carried forward and remain available for obligation in subsequent fiscal years, subject to the following conditions:
 
-(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the Critical Minerals Investment Fund established under this Act;
+(1) Funds that remain unobligated for more than three fiscal years shall be transferred to the WDGJA Investment Fund established under this Act;
 
 (2) The Secretary shall provide quarterly reports to Congress on the status of fund obligations, expenditures, and projected needs;
 
@@ -5631,11 +5357,11 @@ If any provision of this Findings and Declarations, or the application thereof t
 
 The following provisions of law are amended to conform to the requirements of this section:
 
-(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to critical minerals designations;
+(1) Section 7002 of the Energy Act of 2020 (30 U.S.C. 1606) is amended by inserting after subsection (a) a new subsection (b) relating to congressional findings;
 
-(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to critical minerals research;
+(2) Section 601 of the Energy Policy Act of 2005 (42 U.S.C. 16291) is amended by adding at the end a new subsection relating to congressional findings;
 
-(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to supply chain resilience.
+(3) Section 103 of the National Materials and Minerals Policy, Research and Development Act of 1980 (30 U.S.C. 1602) is amended by inserting a new paragraph relating to congressional findings.
 
 ### (E) Savings Clause
 
@@ -5660,7 +5386,7 @@ Nothing in this section shall be construed to:
 
 # SUPPLEMENTARY ANALYSIS — Findings and Declarations
 ## Workforce Development and Green Jobs Act of 2026 — Section 02
-**Generated:** 2026-08-30 08:22:49 UTC
+**Generated:** 2026-08-31 03:40:21 UTC
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 
 ---
