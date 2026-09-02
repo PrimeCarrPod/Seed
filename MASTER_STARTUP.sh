@@ -10,7 +10,7 @@
 set -euo pipefail
 
 # ─── CONFIGURATION ────────────────────────────────────────────────────────
-REPO_ROOT="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_14f31ed0-c180-47d8-931e-0488ae73ae29"
+REPO_ROOT="$(pwd)"
 SUBATOM_WIP="$REPO_ROOT/CSM_WORK_IN_PROGRESS/SubAtom_WIP"
 CSM_LOGS="$REPO_ROOT/CSMLogs"
 CSM_PIECES="$REPO_ROOT/csmpieces"
