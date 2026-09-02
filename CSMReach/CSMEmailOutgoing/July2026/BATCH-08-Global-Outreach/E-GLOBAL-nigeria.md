@@ -5,6 +5,7 @@
 **TO:** Nigeria — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
 **FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
 **REPLY-TO:** zirconia@aegisc.space
+**CC:** landolil@hotmail.com
 **SUBJECT:** Solar Cycle 25 is peaking — the Carrington-level hardening data your country's infrastructure needs
 
 ---
