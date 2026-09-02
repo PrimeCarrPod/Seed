@@ -3,4 +3,4 @@
 
 | UTC Time | ID | Recipient | Address | Status |
 |----------|----|-----------|---------|--------|
-| 2026-07-18T22:54:32Z | E042 | cbrown@uptimeinstitute.com | jasonbrodsky@hotmail.com | SENT ✅ |
+| 2026-09-02T17:53:46Z | E047 | Tom Stroup, tstroup@sia.org, President,  | Tom Stroup, tstroup@sia.org, President, Satellite  | SENT ✅ |
