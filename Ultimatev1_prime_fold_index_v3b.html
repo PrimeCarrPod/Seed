@@ -49,6 +49,7 @@
 </head>
 <body class="w-full h-screen relative">
     <div id="canvas-container"></div>
+    <div id="flight-progress" style="width:0%;display:none"></div>
 
     <!-- Header -->
     <div class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none bg-gradient-to-b from-black/90 to-transparent">
@@ -63,6 +64,7 @@
                 <button id="btn-toggle-hud" class="btn btn-cyan" onclick="document.getElementById('hud-left').classList.toggle('hidden');document.getElementById('hud-right').classList.toggle('hidden')">☰</button>
                 <button id="btn-play" class="btn btn-green" onclick="FoldEngine.togglePlay()">▶ Play</button>
                 <button id="btn-reset" class="btn btn-red" onclick="FoldEngine.reset()">↺ Reset</button>
+                <button id="btn-flight" class="btn btn-purple" onclick="Flight.toggle()">✈ Flight <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"> Lock</label></button>
                 <div class="text-green-400 text-xs orbitron font-bold animate-pulse">● LIVE v3b ULTIMATEv1</div>
             </div>
         </div>
@@ -653,7 +655,80 @@
         }
     };
 
-    window.addEventListener('DOMContentLoaded', () => FoldEngine.init());
+    // Flight Controller (v2 - checkbox outside button)
+    const Flight = {
+        active: false, paused: false, lock: false, waypoints: [], progress: 0, startTime: 0, animFrame: null,
+        camera: null, controls: null,
+        init(camera, controls) { this.camera = camera; this.controls = controls; },
+        generateWaypoints() {
+            const pts = [];
+            for (let i = 0; i < 12; i++) {
+                pts.push(new THREE.Vector3((Math.random() - 0.5) * 60, (Math.random() - 0.5) * 30, (Math.random() - 0.5) * 60));
+            }
+            pts.push(pts[0].clone());
+            return pts;
+        },
+        toggle() { if (this.active) this.stop(); else this.start(); },
+        start() {
+            this.waypoints = this.generateWaypoints();
+            this.progress = 0; this.paused = false; this.active = true; this.startTime = performance.now();
+            const btn = document.getElementById('btn-flight');
+            btn.innerHTML = '✈ Flying <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"' + (this.lock ? ' checked' : '') + '> Lock</label>';
+            this.controls.enabled = false;
+            logEvent('[FLIGHT] Started' + (this.lock ? ' [LOCKED]' : ''));
+            this._tick();
+        },
+        stop() {
+            if (this.lock) {
+                this.waypoints = this.generateWaypoints();
+                this.progress = 0;
+                this.startTime = performance.now();
+                logEvent('[FLIGHT] Lock: new path, continuing...');
+                this._tick();
+                return;
+            }
+            this.active = false;
+            if (this.animFrame) cancelAnimationFrame(this.animFrame);
+            this.controls.enabled = true;
+            document.getElementById('btn-flight').innerHTML = '✈ Flight <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"> Lock</label>';
+            document.getElementById('flight-progress').style.width = '0%';
+            logEvent('[FLIGHT] Stopped');
+        },
+        _tick() {
+            if (!this.active || this.paused) return;
+            const now = performance.now();
+            this.progress = Math.min((now - this.startTime) / 18000, 1);
+            const t = this.progress * (this.waypoints.length - 1);
+            const i = Math.floor(t);
+            const f = t - i;
+            const p0 = this.waypoints[Math.max(0, i - 1)];
+            const p1 = this.waypoints[i];
+            const p2 = this.waypoints[Math.min(this.waypoints.length - 1, i + 1)];
+            const p3 = this.waypoints[Math.min(this.waypoints.length - 1, i + 2)];
+            const pos = this._catmullRom(p0, p1, p2, p3, f);
+            const lookAhead = this._catmullRom(p0, p1, p2, p3, Math.min(f + 0.05, 1));
+            this.camera.position.lerp(pos, 0.06);
+            const target = new THREE.Vector3().lerpVectors(this.controls.target, lookAhead, 0.04);
+            this.controls.target.copy(target);
+            document.getElementById('flight-progress').style.width = (this.progress * 100) + '%';
+            if (this.progress >= 1) { this.stop(); return; }
+            this.animFrame = requestAnimationFrame(() => this._tick());
+        },
+        _catmullRom(p0, p1, p2, p3, t) {
+            const t2 = t * t, t3 = t2 * t;
+            return new THREE.Vector3(
+                0.5 * ((2 * p1.x) + (-p0.x + p2.x) * t + (2 * p0.x - 5 * p1.x + 4 * p2.x - p3.x) * t2 + (-p0.x + 3 * p1.x - 3 * p2.x + p3.x) * t3),
+                0.5 * ((2 * p1.y) + (-p0.y + p2.y) * t + (2 * p0.y - 5 * p1.y + 4 * p2.y - p3.y) * t2 + (-p0.y + 3 * p1.y - 3 * p2.y + p3.y) * t3),
+                0.5 * ((2 * p1.z) + (-p0.z + p2.z) * t + (2 * p0.z - 5 * p1.z + 4 * p2.z - p3.z) * t2 + (-p0.z + 3 * p1.z - 3 * p2.z + p3.z) * t3)
+            );
+        }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+        FoldEngine.init();
+        Flight.init(camera, new THREE.OrbitControls(camera, renderer.domElement));
+        document.getElementById('flight-progress').style.display = 'block';
+    });
     </script>
 </body>
 </html>
