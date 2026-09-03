@@ -1,6 +1,10 @@
 TO: [FUNDER_EMAIL]
 FROM: Lead Researcher, Carrington Storm Motors | Safe Pod Engineering Company
+<<<<<<< ours
 REPLY-TO: contact@arithmeticphysics.org
+=======
+REPLY-TO: jasonbrodsky@hotmail.com
+>>>>>>> theirs
 SUBJECT: First derivation of α from prime numbers — 10 significant figures, 0.0019% precision, testable BSM predictions
 
 ATTACHMENTS:
@@ -46,6 +50,10 @@ Poof — here's the complete framework, the verification code, the 360-article r
 — Lead Researcher
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
+<<<<<<< ours
   contact@arithmeticphysics.org | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+=======
+  jasonbrodsky@hotmail.com | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+>>>>>>> theirs
 
 This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by the Lead Researcher of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), Keymaker Four-Pillar (CSMSOPP000004), El Segundo Surfer (CSMSOPP000005), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; the Lead Researcher delivers the promise. | September 2026 — 9 paragraphs, 8 proposals, 1 bijection, ∞ possibilities
