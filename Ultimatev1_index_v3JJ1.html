@@ -1011,7 +1011,7 @@
     // ===================================================================
 
     const Flight = {
-        active:false, paused:false, waypoints:[], progress:0, startTime:0, animFrame:null,
+        active:false, paused:false, lock:false, waypoints:[], progress:0, startTime:0, animFrame:null,
         camera:null, controls:null,
 
         init(camera, controls) {this.camera=camera; this.controls=controls;},
@@ -1025,28 +1025,32 @@
             return pts;
         },
 
+        toggle() { if(this.active) this.stop(); else this.start(); },
+
         start() {
-            if(this.active) this.stop();
             this.waypoints=this.generateWaypoints();
             this.progress=0; this.paused=false; this.active=true; this.startTime=performance.now();
-            document.getElementById('btn-flight').textContent='✈ Flying…';
+            const btn = document.getElementById('btn-flight');
+            btn.innerHTML = '✈ Flying <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"' + (this.lock ? ' checked' : '') + '> Lock</label>';
             this.controls.enabled=false;
-            logEvent('[FLIGHT] Random path generated');
+            logEvent('[FLIGHT] Started' + (this.lock ? ' [LOCKED]' : ''));
             this._tick();
         },
 
-        togglePause() {
-            this.paused=!this.paused;
-            if(!this.paused) this.startTime=performance.now()-this.progress*CFG.flightDuration;
-        },
-
         stop() {
+            if(this.lock) {
+                this.waypoints=this.generateWaypoints();
+                this.progress=0; this.startTime=performance.now();
+                logEvent('[FLIGHT] Lock: new path, continuing...');
+                this._tick();
+                return;
+            }
             this.active=false;
             if(this.animFrame) cancelAnimationFrame(this.animFrame);
             this.controls.enabled=true;
-            document.getElementById('btn-flight').textContent='✈ Flight';
+            document.getElementById('btn-flight').innerHTML = '✈ Flight <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"> Lock</label>';
             document.getElementById('flight-progress').style.width='0%';
-            logEvent('[FLIGHT] Path complete');
+            logEvent('[FLIGHT] Stopped');
         },
 
         _tick() {
