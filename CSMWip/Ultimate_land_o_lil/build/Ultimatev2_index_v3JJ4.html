@@ -1,0 +1,229 @@
+<div id="hud-right" class="hud absolute bottom-4 right-4 z-20 w-72 flex flex-col gap-3 pointer-events-none">
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-green-400 text-xs orbitron uppercase tracking-wider border-b border-green-900/50 pb-1 mb-2">Simulation Controls</h3>
+            <div class="grid grid-cols-2 gap-1.5 text-xs mb-3">
+                <button onclick="sim.perturb()" class="btn btn-red">Perturb</button>
+                <button onclick="sim.toggleTrails()" class="btn btn-purple">Trails</button>
+                <button onclick="sim.spawnDemon()" class="btn btn-yellow">Demon</button>
+                <button onclick="sim.triggerFusion()" class="btn btn-green">Fusion</button>
+                <button onclick="sim.spawnGlueball()" class="btn btn-glue">Glueball</button>
+                <button onclick="sim.toggleSwarm()" class="btn btn-purple">Swarm</button>
+                <button onclick="sim.triggerQCD()" class="btn btn-glue">QCD</button>
+                <button onclick="sim.triggerEW()" class="btn btn-cyan">EWeak</button>
+                <button onclick="sim.triggerGravity()" class="btn btn-green">Gravity</button>
+            </div>
+            <div class="space-y-2">
+                <div class="flex justify-between text-xs text-gray-400"><span>Larmor Freq</span><span id="speed-val" class="text-cyan-300">1.0x</span></div>
+                <input type="range" min="0.1" max="4" step="0.1" value="1.0" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="sim.setSpeed(this.value)">
+                <div class="flex justify-between text-xs text-gray-400"><span>Density</span><span id="dens-val" class="text-cyan-300">97000</span></div>
+                <input type="range" min="200" max="3000" step="100" value="1500" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="sim.setDensity(this.value)">
+            </div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-yellow-400 text-xs orbitron uppercase tracking-wider border-b border-yellow-900/50 pb-1 mb-2">Benevolence Monitor</h3>
+            <div style="position:relative;width:100%;height:100px"><canvas id="metricsChart"></canvas></div>
+            <div class="mt-1 text-xs text-gray-500 text-center">Action (S) &middot; Benevolence (B=C&middot;F&middot;S) &middot; Coherence (C)</div>
+        </div>
+        <div class="hud p-3 pointer-events-auto">
+            <h3 class="text-cyan-400 text-xs orbitron uppercase tracking-wider border-b border-cyan-900/50 pb-1 mb-2">Active Equations</h3>
+            <div id="equation-display" class="text-xs font-mono text-cyan-300 max-h-20 overflow-y-auto scrollable"></div>
+        </div>
+    </div>
+    <!-- Meta-Depth Indicator -->
+    <div id="meta-depth-indicator" class="absolute top-20 left-1/2 transform -translate-x-1/2 z-20 hud p-2 pointer-events-none">
+        <div class="text-center"><div class="text-xs text-purple-400 orbitron">META-DEPTH</div><div id="meta-depth-value" class="text-2xl font-bold text-white">&omega;+3</div></div>
+    </div>
+    <!-- Reinman One-Electron Indicator -->
+    <div id="reinman-indicator" class="absolute top-20 right-20 z-20 hud p-2 pointer-events-none hidden">
+        <div class="text-center"><div class="text-xs text-orange-400 orbitron">REINMAN MODE</div><div id="reinman-value" class="text-xl font-bold reinman-badge">1 ELECTRON</div></div>
+    </div>
+    <script type="module">
+    // ===================================================================
+    // ULTIMATEv2 TGPU v3.0 JJ4 — GPU Prime Electron Holographic Universe
+    // GPU COMPUTE SHADERS + Flight Lock + Prime Gap Holography + Reinman + Meta-Depth
+    // ===================================================================
+    import { GPGPUParticleSystem } from '../src/GPUParticles.js';
+
+    const REINMAN_NUMBER = 137.035999084;
+    const REINMAN_ACCURACY = 0.0019;
+
+    const PRIMES = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199];
+    const PRIME_GAPS = PRIMES.slice(1).map((p,i) => p - PRIMES[i]);
+
+    const PARTICLES = {
+        electron:   { color:0x38bdf8, size:0.35, mass:0.511, lifetime:Infinity, spin:0.5, charge:-1, ratio:0.15, typeId:0 },
+        proton:     { color:0xf43f5e, size:0.8,  mass:938.3,    lifetime:1e34, spin:0.5, charge:+1, ratio:0.08, typeId:1 },
+        neutron:    { color:0x94a3b8, size:0.75, mass:939.6,    lifetime:878,   spin:0.5, charge:0,  ratio:0.07, typeId:2 },
+        photon:     { color:0xfef08a, size:0.45, mass:0,        lifetime:Infinity, spin:1,   charge:0,  ratio:0.07, typeId:3 },
+        axion:      { color:0x10b981, size:0.3,  mass:1e-5,     lifetime:Infinity, spin:0,   charge:0,  ratio:0.09, typeId:4 },
+        neutralino: { color:0xa855f7, size:0.9,  mass:1000,     lifetime:Infinity, spin:0.5, charge:0,  ratio:0.05, typeId:5 },
+        gluon:      { color:0xf97316, size:0.4,  mass:0,        lifetime:0,        spin:1,   charge:0,  ratio:0.07, typeId:6 },
+        higgs:      { color:0xec4899, size:1.2,  mass:125200,   lifetime:1.6e-22,  spin:0,   charge:0,  ratio:0.02, typeId:7 },
+        neutrino:   { color:0x67e8f9, size:0.25, mass:0.00045,  lifetime:Infinity, spin:0.5, charge:0,  ratio:0.08, typeId:8 },
+        up_quark:   { color:0xfbbf24, size:0.5,  mass:2.16,     lifetime:0,        spin:0.5, charge:2/3,ratio:0.04, typeId:9 },
+        down_quark: { color:0x60a5fa, size:0.5,  mass:4.67,     lifetime:0,        spin:0.5, charge:-1/3,ratio:0.04, typeId:10 },
+        muon:       { color:0xe879f9, size:0.6,  mass:105.66,   lifetime:2.197e-6, spin:0.5, charge:-1, ratio:0.03, typeId:11 },
+        pion:       { color:0x86efac, size:0.55, mass:139.6,    lifetime:2.6e-8,   spin:0,   charge:1,  ratio:0.03, typeId:12 },
+        kaon:       { color:0xfcd34d, size:0.6,  mass:493.7,    lifetime:1.24e-8,  spin:0,   charge:1,  ratio:0.02, typeId:13 },
+        demon:      { color:0x4c1d95, size:0.35, mass:0,        lifetime:Infinity, spin:0,   charge:0,  ratio:0.03, typeId:14 },
+        graviton:   { color:0xd1fae5, size:0.3,  mass:0,        lifetime:Infinity, spin:2,   charge:0,  ratio:0.02, typeId:15 },
+        w_boson:    { color:0xfb7185, size:1.0,  mass:80360,    lifetime:3e-25,   spin:1,   charge:1,  ratio:0.02, typeId:16 },
+        z_boson:    { color:0xa78bfa, size:1.0,  mass:91188,    lifetime:2.6e-25,  spin:1,   charge:0,  ratio:0.02, typeId:17 },
+        glueball:   { color:0xf97316, size:1.4,  mass:1700,     lifetime:Infinity, spin:0,   charge:0,  ratio:0.03, binding:1.414, typeId:18 },
+        swarm_mode: { color:0xa855f7, size:0.8,  mass:0.001,    lifetime:Infinity, spin:0.5, charge:0,  ratio:0.04, cohesion:0.65, typeId:19 }
+    };
+    const CFG = { baseLoop:5000, loopInc:5000, particleCount:97000, bloomStrength:1.4, textureSize: 512 };let glueballParticles = [], swarmParticles = [];
+let swarmModeActive = false;
+let primeModeActive = false;
+let reinmanModeActive = false;
+let metaDepth = 3;
+let currentEquations = [];
+let lastEquationTime = 0;
+const EQUATION_COOLDOWN = 2500;
+
+function showEquation(eq) {
+    const now = Date.now();
+    if (now - lastEquationTime < EQUATION_COOLDOWN) return;
+    lastEquationTime = now;
+    currentEquations.push(eq);
+    if (currentEquations.length > 5) currentEquations.shift();
+    const disp = document.getElementById('equation-display');
+    disp.innerHTML = currentEquations.map((e,i) => `<div class="equation-display${i===currentEquations.length-1?' equation-new':''}">${e}</div>`).join('');
+    disp.scrollTop = disp.scrollHeight;
+}
+
+function flashButton(name) {
+    document.querySelectorAll('.btn').forEach(btn => {
+        if(btn.textContent.includes(name)) { btn.classList.add('btn-active'); setTimeout(()=>btn.classList.remove('btn-active'), 600); }
+    });
+}
+
+const UI = {
+    hidden: false,
+    toggleHUD() {
+        this.hidden = !this.hidden;
+        ['hud-left','hud-right'].forEach(id => document.getElementById(id).classList.toggle('hidden-hud', this.hidden));
+        document.getElementById('btn-toggle-hud').textContent = this.hidden ? '☰ Show Panels' : '☰ Hide Panels';
+    }
+};
+
+let chart;
+function initChart() {
+    const ctx = document.getElementById('metricsChart').getContext('2d');
+    chart = new Chart(ctx, {
+        type: 'line',
+        data: { labels:Array(30).fill(''), datasets: [
+            {label:'Action S', data:Array(30).fill(0), borderColor:'#38bdf8', borderWidth:1.5, tension:0.4, pointRadius:0},
+            {label:'Benevolence B', data:Array(30).fill(0), borderColor:'#10b981', borderWidth:1.5, tension:0.4, pointRadius:0},
+            {label:'Coherence C', data:Array(30).fill(0), borderColor:'#a855f7', borderWidth:1.5, tension:0.4, pointRadius:0},
+            {label:'Glueball G', data:Array(30).fill(0), borderColor:'#f97316', borderWidth:1.5, tension:0.4, pointRadius:0},
+        ]},
+        options: { responsive:true, maintainAspectRatio:false, animation:false,
+            plugins:{legend:{display:true,labels:{color:'#94a3b8',font:{size:9}}},tooltip:{enabled:false}},
+            scales:{x:{display:false},y:{display:true,grid:{color:'#1e293b'},ticks:{color:'#475569',font:{size:8}}}}
+    });
+}
+function pushChart(a,b,c,g) { if(!chart) return; [chart.data.datasets[0].data,chart.data.datasets[1].data,chart.data.datasets[2].data,chart.data.datasets[3].data].forEach((d,i)=>{d.push([a,b,c,g][i]);d.shift();}); chart.update('none'); }
+function logEvent(msg) {
+    const log=document.getElementById('event-log'); const li=document.createElement('li');
+    const colors=['text-cyan-300','text-green-300','text-yellow-300','text-purple-300','text-pink-300','text-orange-300'];
+    li.className=colors[Math.floor(Math.random()*colors.length)]+' border-l-2 border-cyan-900/50 pl-2';
+    li.textContent='['+new Date().toTimeString().slice(0,8)+'] '+msg; log.prepend(li);
+    while(log.children.length>25) log.lastChild.remove();
+}
+
+const sim = {
+    scene:null, camera:null, renderer:null, composer:null, orbitControls:null, clock:new THREE.Clock(),
+    gpuParticles: null,
+    axionField:null, glueballSystem:null, primeField:null, reinmanField:null,
+    trails:[], trailDecay:true, currentTime:0, maxTime:CFG.baseLoop, cycle:1, speed:1.0,
+    
+    init() {
+        const container=document.getElementById('canvas-container');
+        this.scene=new THREE.Scene();
+        this.scene.fog=new THREE.FogExp2(0x020208, 0.018);
+        this.camera=new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 1000);
+        this.camera.position.set(0, 18, 38);
+        this.renderer=new THREE.WebGLRenderer({antialias:true, alpha:true});
+        this.renderer.setSize(innerWidth, innerHeight);
+        this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+        container.appendChild(this.renderer.domElement);
+        this.orbitControls=new THREE.OrbitControls(this.camera, this.renderer.domElement);
+        this.orbitControls.enableDamping=true; this.orbitControls.dampingFactor=0.05;
+        this.orbitControls.autoRotate=true; this.orbitControls.autoRotateSpeed=0.4;
+        const rp=new THREE.RenderPass(this.scene, this.camera);
+        const bloom=new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), CFG.bloomStrength, 0.5, 0.8);
+        this.composer=new THREE.EffectComposer(this.renderer);
+        this.composer.addPass(rp); this.composer.addPass(bloom);
+        this.scene.add(new THREE.AmbientLight(0x303050));
+        const pt=new THREE.PointLight(0xffffff, 2, 200); this.scene.add(pt);
+        this._buildAxionField(); this._buildGlueballField(); this._buildPrimeField(); this._buildReinmanField(); this._buildGridLines();
+        this._populateLegend();
+
+        this.gpuParticles = new GPGPUParticleSystem(this.renderer, CFG.particleCount);
+        this.gpuParticles.setPrimeData(PRIMES, PRIME_GAPS);
+        this.scene.add(this.gpuParticles.getMesh());
+
+        Flight.init(this.camera, this.orbitControls);
+        window.addEventListener('resize', ()=>{ this.camera.aspect=innerWidth/innerHeight; this.camera.updateProjectionMatrix(); this.renderer.setSize(innerWidth, innerHeight); this.composer.setSize(innerWidth, innerHeight); });
+        initChart(); this._animate();
+        logEvent('[JJ4] ULTIMATEv2 GPU Prime Electron Holographic Universe v3.0 JJ4 initialized');
+        logEvent('[JJ4] Flight Lock + Prime Gap Holography + Reinman One-Electron + Meta-Depth active');
+        showEquation('L = L_QED + L_QCD + L_EW + L_Higgs + L_Yukawa [SM Lagrangian]');
+        showEquation('α⁻¹ = 137.035999084 [Reinman from 3.67B prime gaps]');
+        showEquation('Everything is Prime: ∀x ∃p: x = f(p) [Prime fundamentalism]');
+    },
+    
+    _buildAxionField() { const geo=new THREE.BufferGeometry(); const N=2000; const pos=new Float32Array(N*3); for(let i=0;i<N;i++){pos[i*3]=(Math.random()-0.5)*120;pos[i*3+1]=(Math.random()-0.5)*40;pos[i*3+2]=(Math.random()-0.5)*120;} geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); const mat=new THREE.PointsMaterial({color:PARTICLES.axion.color, size:0.18, transparent:true, opacity:0.35, blending:THREE.AdditiveBlending, depthWrite:false}); this.axionField=new THREE.Points(geo, mat); this.scene.add(this.axionField); },
+    _buildGlueballField() { const geo=new THREE.BufferGeometry(); const N=500; const pos=new Float32Array(N*3); const colors=new Float32Array(N*3); const cGlue=new THREE.Color(PARTICLES.glueball.color); for(let i=0;i<N;i++){pos[i*3]=(Math.random()-0.5)*100;pos[i*3+1]=(Math.random()-0.5)*40;pos[i*3+2]=(Math.random()-0.5)*100;colors[i*3]=cGlue.r;colors[i*3+1]=cGlue.g;colors[i*3+2]=cGlue.b;} geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setAttribute('color', new THREE.BufferAttribute(colors, 3)); const mat=new THREE.PointsMaterial({color:PARTICLES.glueball.color, size:0.35, vertexColors:true, transparent:true, opacity:0.4, blending:THREE.AdditiveBlending, depthWrite:false}); this.glueballSystem=new THREE.Points(geo, mat); this.scene.add(this.glueballSystem); for(let i=0;i<N;i++) glueballParticles.push({type:'glueball', x:pos[i*3], y:pos[i*3+1], z:pos[i*3+2], vx:0, vy:0, vz:0, binding:1.414*(Math.random()+0.5), history:[]}); },
+    _buildPrimeField() { const geo=new THREE.BufferGeometry(); const N=PRIMES.length*30; const pos=new Float32Array(N*3); for(let i=0;i<N;i++){const p=PRIMES[i%PRIMES.length]; pos[i*3]=(p*0.4)%80-40; pos[i*3+1]=Math.sin(p*0.1)*8; pos[i*3+2]=(p*0.25)%80-40;} geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); const mat=new THREE.PointsMaterial({color:0x38bdf8, size:0.22, transparent:true, opacity:0.5, blending:THREE.AdditiveBlending, depthWrite:false}); this.primeField=new THREE.Points(geo, mat); this.primeField.visible=false; this.scene.add(this.primeField); },
+    _buildReinmanField() { const geo=new THREE.BufferGeometry(); const N=1500; const pos=new Float32Array(N*3); const colors=new Float32Array(N*3); for(let i=0;i<N;i++){const t=i/N*Math.PI*4; const r=12+Math.sin(t*3)*4; pos[i*3]=r*Math.cos(t); pos[i*3+1]=r*Math.sin(t)*0.3; pos[i*3+2]=r*Math.sin(t*2)*0.4; const hue=(i/N+Math.sin(t))%1; const c=new THREE.Color().setHSL(hue,1.0,0.6); colors[i*3]=c.r;colors[i*3+1]=c.g;colors[i*3+2]=c.b;} geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setAttribute('color', new THREE.BufferAttribute(colors, 3)); const mat=new THREE.PointsMaterial({size:0.18, vertexColors:true, transparent:true, opacity:0.25, blending:THREE.AdditiveBlending, depthWrite:false}); this.reinmanField=new THREE.Points(geo, mat); this.reinmanField.visible=false; this.scene.add(this.reinmanField); },
+    _buildGridLines() { const mat=new THREE.LineBasicMaterial({color:0x0f172a, transparent:true, opacity:0.5}); const size=40, step=8; for(let x=-size;x<=size;x+=step){const g=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x,-0.1,-size), new THREE.Vector3(x,-0.1,size)]); this.scene.add(new THREE.Line(g, mat));} for(let z=-size;z<=size;z+=step){const g=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-size,-0.1,z), new THREE.Vector3(size,-0.1,z)]); this.scene.add(new THREE.Line(g, mat));} },
+    _populateLegend() { const legend=document.getElementById('particle-legend'); legend.innerHTML=Object.entries(PARTICLES).map(([n,p])=>`<div><span class="swatch" style="background:#${p.color.toString(16).padStart(6,'0')}"></span>${n.replace(/_/g,' ')}</div>`).join(''); },_animate() { requestAnimationFrame(()=>this._animate()); const dt=this.clock.getDelta(); this.currentTime+=dt*1000; if(this.currentTime>=this.maxTime){this.currentTime=0;this.foldWorldlines();} const prog=(this.currentTime/this.maxTime)*100; document.getElementById('progress-bar').style.width=prog+'%'; document.getElementById('loop-timer').textContent=(this.currentTime/1000).toFixed(2)+'s';
+        this.gpuParticles.setSpeed(this.speed);
+        this.gpuParticles.setPrimeMode(primeModeActive);
+        this.gpuParticles.setReinmanMode(reinmanModeActive);
+        this.gpuParticles.setMetaDepth(metaDepth);
+        this.gpuParticles.setSwarmMode(swarmModeActive);
+        this.gpuParticles.step(dt);
+        
+        this._updateFields(dt);
+        if(!Flight.active){this.orbitControls.update();} this.composer.render(); },
+    
+    _updateFields(dt) {
+        if(this.axionField){this.axionField.rotation.y+=0.0008;this.axionField.rotation.x=Math.sin(Date.now()*0.0001)*0.1;}
+        if(this.primeField&&primeModeActive){this.primeField.rotation.y+=0.001;}
+        if(this.reinmanField&&reinmanModeActive){this.reinmanField.rotation.y+=0.0003;this.reinmanField.rotation.z+=0.0002;}
+        if (Math.random() < 0.04) pushChart(Math.random()*10, Math.random()*15, Math.random()*20, Math.random()*5);
+    },
+    
+    foldWorldlines() { this.maxTime+=CFG.loopInc; this.cycle++; const bloom=this.composer.passes[1]; const orig=bloom.strength; bloom.strength=5.0; setTimeout(()=>{bloom.strength=orig;},600); if(this.trailDecay){const hg=this.gpuParticles.getMesh().geometry.clone(); const hm=new THREE.PointsMaterial({color:0x1e293b,size:0.08,transparent:true,opacity:0.25,blending:THREE.AdditiveBlending}); const hp=new THREE.Points(hg,hm); this.scene.add(hp); setTimeout(()=>{this.scene.remove(hp);hg.dispose();hm.dispose();},this.maxTime*2);} document.getElementById('cycle-count').textContent=this.cycle; document.getElementById('max-dur').textContent=(this.maxTime/1000).toFixed(1)+'s'; logEvent('[FOLD] Iteration '+this.cycle+': worldline complexity increased'); showEquation('Fold '+this.cycle+': τ → τ + Δτ [proper time evolution]'); if(reinmanModeActive) showEquation('Reinman: 1 electron = all electrons [worldline identity]'); },
+    
+    perturb() { this.gpuParticles.setSpeed(this.speed*3); const bloom=this.composer.passes[1];bloom.strength=3.0;setTimeout(()=>bloom.strength=CFG.bloomStrength,400); logEvent('[PERTURB] Field entropy spike'); showEquation('ΔS > 0 [second law]'); flashButton('Perturb'); setTimeout(()=>this.gpuParticles.setSpeed(this.speed),500); },
+    toggleTrails() { this.trailDecay=!this.trailDecay; logEvent('[TRAILS] '+(this.trailDecay?'ON':'OFF')); flashButton('Trails'); },
+    spawnDemon() { const bloom=this.composer.passes[1];bloom.strength=4.5;setTimeout(()=>bloom.strength=CFG.bloomStrength,800); logEvent('[DEMON] Pines Demon spawned'); showEquation('ω_D = √(n_e e²/ε₀m*) [Demon frequency]'); flashButton('Demon'); },
+    triggerFusion() { const bloom=this.composer.passes[1];bloom.strength=6.0;setTimeout(()=>bloom.strength=CFG.bloomStrength,1000); logEvent('[FUSION] NIF-style ignition! Q > 1'); showEquation('D + T → ⁴He + n + 17.6 MeV [fusion]'); flashButton('Fusion'); },
+    spawnGlueball() { const bloom=this.composer.passes[1];bloom.strength=3.5;setTimeout(()=>bloom.strength=CFG.bloomStrength,600); logEvent('[GLUEBALL] Glueball worldline formed: m = 1.7 GeV, J^PC = 0^++'); this.glueballActive=true; showEquation('G: ⟨0|F^a_{μν}F^{aμν}|G⟩ [glueball operator]'); flashButton('Glueball'); },
+    toggleSwarm() { swarmModeActive=!swarmModeActive; logEvent('[SWARM] '+(swarmModeActive?'ON':'OFF')); showEquation('v_i = v_i + αΣ(v_j - v_i) + β∇U [swarm]'); flashButton('Swarm'); },
+    togglePrimeMode() { primeModeActive=!primeModeActive; logEvent('[PRIME] Gap holography '+(primeModeActive?'ON':'OFF')); if(this.primeField){this.primeField.visible=primeModeActive;} showEquation('π(x) = li(x) - Σ_ρ li(x^ρ) [explicit formula]'); flashButton('Prime'); },
+    toggleReinmanMode() { reinmanModeActive=!reinmanModeActive; logEvent('[REINMAN] One-Electron Universe '+(reinmanModeActive?'ACTIVATED':'DEACTIVATED')); if(this.reinmanField){this.reinmanField.visible=reinmanModeActive;} document.getElementById('reinman-indicator').classList.toggle('hidden', !reinmanModeActive); showEquation('Reinman: ψ(x) = Σ_n a_n ψ_n(x) [one electron = all electrons]'); showEquation('m_e = (Σ twin prime gaps) / π [electron mass from prime structure]'); flashButton('Reinman'); },
+    cycleMetaDepth() { metaDepth=(metaDepth%5)+1; document.getElementById('meta-depth-value').textContent='ω+'+metaDepth; logEvent('[META] Depth: ω+'+metaDepth); showEquation('π⁽'+metaDepth+'⁾(n) = π(π(...π(n)...)) [Meta-Depth]'); flashButton('Meta'); },
+    triggerQCD() { const b=this.composer.passes[1]; b.strength=4.0; setTimeout(()=>b.strength=CFG.bloomStrength,700); logEvent('[QCD] Strong force interaction'); showEquation('L_QCD = Σ_f ψ̄_f(iγ^μD_μ - m_f)ψ_f - ¼G^a_{μν}G^{aμν}'); flashButton('QCD'); },
+    triggerEW() { const b=this.composer.passes[1]; b.strength=3.5; setTimeout(()=>b.strength=CFG.bloomStrength,600); logEvent('[EW] Electroweak symmetry breaking'); showEquation('L_EW = L_gauge + L_Higgs + L_Yukawa + L_fermion'); flashButton('EWeak'); },
+    triggerGravity() { const b=this.composer.passes[1]; b.strength=5.0; setTimeout(()=>b.strength=CFG.bloomStrength,900); logEvent('[GRAVITY] Curvature interaction'); showEquation('G_μν + Λg_μν = (8πG/c⁴)T_μν [Einstein]'); flashButton('Gravity'); },
+    setSpeed(v) { this.speed=parseFloat(v); document.getElementById('speed-val').textContent=parseFloat(v).toFixed(1)+'x'; this.gpuParticles.setSpeed(this.speed); },
+    setDensity(v) { document.getElementById('dens-val').textContent=v; logEvent('[CONFIG] Density: '+v); this.gpuParticles.setParticleCount(parseInt(v)); }
+};const Flight = { active:false, paused:false, lock:false, waypoints:[], progress:0, startTime:0, animFrame:null, camera:null, controls:null,
+    init(camera, controls) { this.camera=camera; this.controls=controls; },
+    generateWaypoints() { const pts=[]; for(let i=0;i<12;i++) pts.push(new THREE.Vector3((Math.random()-0.5)*60,(Math.random()-0.5)*30,(Math.random()-0.5)*60)); pts.push(pts[0].clone()); return pts; },
+    toggle() { if(this.active) this.stop(); else this.start(); },
+    start() { this.waypoints=this.generateWaypoints(); this.progress=0; this.paused=false; this.active=true; this.startTime=performance.now(); const btn=document.getElementById('btn-flight'); btn.innerHTML='&#9992; Flying <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"'+(this.lock?' checked="checked"':'')+'> Lock</label>'; this.controls.enabled=false; logEvent('[FLIGHT] Started'+(this.lock?' [LOCKED]':'')); this._tick(); },
+    stop() { if(this.lock) { this.waypoints=this.generateWaypoints(); this.progress=0; this.startTime=performance.now(); logEvent('[FLIGHT] Lock: new path, continuing…'); this._tick(); return; } this.active=false; if(this.animFrame) cancelAnimationFrame(this.animFrame); this.controls.enabled=true; document.getElementById('btn-flight').innerHTML='&#9992; Flight <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"> Lock</label>'; document.getElementById('flight-progress').style.width='0%'; logEvent('[FLIGHT] Stopped'); },
+    _tick() { if(!this.active||this.paused) return; const now=performance.now(); this.progress=Math.min((now-this.startTime)/18000,1); const t=this.progress*(this.waypoints.length-1); const i=Math.floor(t); const f=t-i; const p0=this.waypoints[Math.max(0,i-1)]; const p1=this.waypoints[i]; const p2=this.waypoints[Math.min(this.waypoints.length-1,i+1)]; const p3=this.waypoints[Math.min(this.waypoints.length-1,i+2)]; const pos=this._catmullRom(p0,p1,p2,p3,f); const lookAhead=this._catmullRom(p0,p1,p2,p3,Math.min(f+0.05,1)); this.camera.position.lerp(pos,0.06); const target=new THREE.Vector3().lerpVectors(this.controls.target,lookAhead,0.04); this.controls.target.copy(target); document.getElementById('flight-progress').style.width=(this.progress*100)+'%'; if(this.progress>=1){this.stop();return;} this.animFrame=requestAnimationFrame(()=>this._tick()); },
+    _catmullRom(p0,p1,p2,p3,t) { const t2=t*t,t3=t2*t; return new THREE.Vector3(0.5*((2*p1.x)+(-p0.x+p2.x)*t+(2*p0.x-5*p1.x+4*p2.x-p3.x)*t2+(-p0.x+3*p1.x-3*p2.x+p3.x)*t3), 0.5*((2*p1.y)+(-p0.y+p2.y)*t+(2*p0.y-5*p1.y+4*p2.y-p3.y)*t2+(-p0.y+3*p1.y-3*p2.y+p3.y)*t3), 0.5*((2*p1.z)+(-p0.z+p2.z)*t+(2*p0.z-5*p1.z+4*p2.z-p3.z)*t2+(-p0.z+3*p1.z-3*p2.z+p3.z)*t3)); }
+};
+
+window.addEventListener('DOMContentLoaded', ()=>{ sim.init(); document.getElementById('live-badge').style.display='block'; logEvent('[BOOT] ULTIMATEv2 TGPU v3.0 JJ4 — GPU Prime Electron Holographic Universe'); });
+</script>
+</body>
+</html>
