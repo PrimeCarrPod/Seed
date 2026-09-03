@@ -43,16 +43,42 @@ All files now in workspace root, to be moved to build:
 2. `render.vert` - Read position texture, transform to clip space
 3. `render.frag` - Point rendering with color by typeId
 
+## Completed Work (Session 2 - Current)
+
+### Files Created in Build Directory
+All 4 Ultimatev2 HTML files now properly built in `CSMWip/Ultimate_land_o_lil/build/`:
+
+1. **Ultimatev2_index_v3JJ1.html** - 52 particle species, 150K particles, GPU compute shaders
+2. **Ultimatev2_index_v3JJ4.html** - Flight Lock + GPU compute, 18 particle species, 97K particles
+3. **Ultimatev2_prime_fold_index_v3b.html** - PrimeBookOne data, gap transgression, GPU compute
+4. **Ultimatev2_PrimeFoldHarmonics_Index_v1.html** - Merged engine, universe phase expansion/contraction, GPU compute
+
+### Core GPU Module Created
+- **src/GPUParticles.js** - Complete GPGPUParticleSystem class with:
+  - Ping-pong render targets for position/velocity
+  - DataTexture initialization for particle properties (type, mass, charge, spin, size)
+  - Simulation fragment shader with full physics per particle type
+  - Render vertex/fragment shaders for point sprite display
+  - setPrimeData() method to inject prime/gap arrays
+  - setSpeed(), setPrimeMode(), setReinmanMode(), setMetaDepth(), setSwarmMode(), setParticleCount()
+
+### Shaders Created
+- **shaders/simulation.frag** - GLSL ES 3.0 simulation shader
+- **shaders/render.vert** - GLSL ES 3.0 render vertex shader
+- **shaders/render.frag** - GLSL ES 3.0 render fragment shader
+
+### Git Status
+- All 4 HTML files committed and pushed to `kilo/easy-oak-hcg` branch
+- Source files (GPUParticles.js, 3 shaders) tracked in git
+
 ## Pending Work (Next Session)
 
 ### Immediate (Small Pieces)
-1. [ ] Move all Ultimatev1/v2 HTML files to `CSMWip/Ultimate_land_o_lil/build/`
-2. [ ] Create `GPUParticles.js` module in `src/`
-3. [ ] Create three shader files in `shaders/`
-4. [ ] Update Ultimatev2_index_v3JJ1.html to import GPUParticles.js
-5. [ ] Create Ultimatev2_index_v3JJ4.html with GPU compute
-6. [ ] Create Ultimatev2_prime_fold_index_v3b.html with GPU compute + fixed display
-7. [ ] Create Ultimatev2_PrimeFoldHarmonics_Index_v1.html with GPU compute
+1. [ ] Verify all 4 HTML files load correctly in browser (test via HTTP server)
+2. [ ] Debug GPUParticles.js - the simulation shader needs proper texture binding for position/velocity ping-pong
+3. [ ] Fix Ultimatev2_index_v3JJ4.html and Ultimatev2_prime_fold_index_v3b.html to import GPUParticles.js module
+4. [ ] Fix Ultimatev2_PrimeFoldHarmonics_Index_v1.html to import GPUParticles.js module
+5. [ ] Ensure ES module imports work (may need local server for CORS)
 
 ### Flight Button Design (v3)
 ```
@@ -92,4 +118,12 @@ CSMWip/Ultimate_land_o_lil/
 ```
 
 ## Next Session Entry Point
-Start with creating `GPUParticles.js` module and three shader files, then wire into the four HTML files.
+Start by testing the HTML files in a browser. The GPUParticles.js module uses ES6 imports, so a local HTTP server is required (e.g., `python3 -m http.server` or `npx serve`). The main issue to fix is the simulation fragment shader - it currently reads from wrong textures. The ping-pong position/velocity textures need to be bound as separate uniforms in the simulation pass.
+
+## Known Issues
+1. **GPUParticles.js simulation shader** - The fragment shader reads from `uParticleTypes` instead of separate position/velocity textures. Need to bind `currentPositionRT.texture` and `currentVelocityRT.texture` as separate uniforms.
+2. **ES Module imports** - HTML files use `<script type="module">` with relative imports. Must serve via HTTP, not file:// protocol.
+3. **Three.js version** - Using r128 from CDN. Ensure OrbitControls, EffectComposer, UnrealBloomPass are available.
+4. **Ultimatev2_index_v3JJ4.html, Ultimatev2_prime_fold_index_v3b.html, Ultimatev2_PrimeFoldHarmonics_Index_v1.html** - Need to be updated with complete GPU integration (currently have partial implementations).
+
+(End of file - total 195 lines)
