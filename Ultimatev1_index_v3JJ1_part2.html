@@ -1,0 +1,72 @@
+// Prime gap sequence for holographic encoding - from PrimeBookOne
+    const PRIMES = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199];
+    const PRIME_GAPS = PRIMES.slice(1).map((p,i) => p - PRIMES[i]);
+    
+    // Twin primes for electron mass derivation
+    const TWIN_PRIMES = [[3,5],[5,7],[11,13],[17,19],[29,31],[41,43],[59,61],[71,73]];
+    
+    // Record gaps for lepton hierarchy
+    const RECORD_GAPS = [1,2,4,6,8,14,18,20,22,34,36,44,52,72,86,96,112,114,118,132];
+
+    // Complete particle definitions with all physics properties
+    const PARTICLES = {
+        // Leptons
+        electron:      {color:0x38bdf8, size:0.35, mass:0.511,     lifetime:Infinity,        spin:0.5,  charge:-1,   ratio:0.12, type:'lepton', generation:1},
+        muon:          {color:0xe879f9, size:0.6,  mass:105.66,    lifetime:2.197e-6,        spin:0.5,  charge:-1,   ratio:0.04, type:'lepton', generation:2},
+        tau:           {color:0xc084fc, size:0.7,  mass:1776.8,    lifetime:2.9e-16,         spin:0.5,  charge:-1,   ratio:0.02, type:'lepton', generation:3},
+        electron_neutrino: {color:0x67e8f9, size:0.25, mass:0.00045, lifetime:Infinity,      spin:0.5,  charge:0,    ratio:0.06, type:'lepton', generation:1},
+        muon_neutrino:    {color:0x67e8f9, size:0.25, mass:0.17,   lifetime:Infinity,        spin:0.5,  charge:0,    ratio:0.04, type:'lepton', generation:2},
+        tau_neutrino:     {color:0x67e8f9, size:0.25, mass:15.5,   lifetime:Infinity,        spin:0.5,  charge:0,    ratio:0.02, type:'lepton', generation:3},
+        // Quarks
+        up_quark:      {color:0xfbbf24, size:0.5,  mass:2.16,      lifetime:0,               spin:0.5,  charge:0.667, ratio:0.03, type:'quark', color_charge:'red'},
+        down_quark:    {color:0x60a5fa, size:0.5,  mass:4.67,      lifetime:0,               spin:0.5,  charge:-0.333,ratio:0.03, type:'quark', color_charge:'green'},
+        charm_quark:   {color:0xfbbf24, size:0.55, mass:1275,      lifetime:0,               spin:0.5,  charge:0.667, ratio:0.01, type:'quark', color_charge:'red'},
+        strange_quark: {color:0x60a5fa, size:0.55, mass:95,        lifetime:0,               spin:0.5,  charge:-0.333,ratio:0.01, type:'quark', color_charge:'green'},
+        top_quark:     {color:0xfbbf24, size:0.6,  mass:173100,    lifetime:0,               spin:0.5,  charge:0.667, ratio:0.005,type:'quark', color_charge:'red'},
+        bottom_quark:  {color:0x60a5fa, size:0.6,  mass:4180,      lifetime:0,               spin:0.5,  charge:-0.333,ratio:0.005,type:'quark', color_charge:'green'},
+        // Gauge Bosons
+        photon:        {color:0xfef08a, size:0.45, mass:0,         lifetime:Infinity,        spin:1,    charge:0,    ratio:0.05, type:'gauge'},
+        gluon:         {color:0xf97316, size:0.4,  mass:0,         lifetime:0,               spin:1,    charge:0,    ratio:0.04, type:'gauge', color_charge:'octet'},
+        w_boson:       {color:0xfb7185, size:1.0,  mass:80360,     lifetime:3e-25,           spin:1,    charge:1,    ratio:0.01, type:'gauge'},
+        z_boson:       {color:0xa78bfa, size:1.0,  mass:91188,     lifetime:2.6e-25,         spin:1,    charge:0,    ratio:0.01, type:'gauge'},
+        graviton:      {color:0xd1fae5, size:0.3,  mass:0,         lifetime:Infinity,        spin:2,    charge:0,    ratio:0.01, type:'gauge'},
+        // Scalar Bosons
+        higgs:         {color:0xec4899, size:1.2,  mass:125200,    lifetime:1.6e-22,         spin:0,    charge:0,    ratio:0.01, type:'scalar'},
+        // Hadrons
+        proton:        {color:0xf43f5e, size:0.8,  mass:938.3,     lifetime:1e34,            spin:0.5,  charge:1,    ratio:0.05, type:'hadron'},
+        neutron:       {color:0x94a3b8, size:0.75, mass:939.6,     lifetime:878,             spin:0.5,  charge:0,    ratio:0.04, type:'hadron'},
+        pion_plus:     {color:0x86efac, size:0.55, mass:139.6,     lifetime:2.6e-8,          spin:0,    charge:1,    ratio:0.02, type:'meson'},
+        pion_minus:    {color:0x86efac, size:0.55, mass:139.6,     lifetime:2.6e-8,          spin:0,    charge:-1,   ratio:0.02, type:'meson'},
+        pion_zero:     {color:0x86efac, size:0.55, mass:134.98,    lifetime:8.5e-17,         spin:0,    charge:0,    ratio:0.01, type:'meson'},
+        kaon_plus:     {color:0xfcd34d, size:0.6,  mass:493.7,     lifetime:1.24e-8,         spin:0,    charge:1,    ratio:0.01, type:'meson'},
+        kaon_minus:    {color:0xfcd34d, size:0.6,  mass:493.7,     lifetime:1.24e-8,         spin:0,    charge:-1,   ratio:0.01, type:'meson'},
+        // BSM / Exotic
+        axion:         {color:0x10b981, size:0.3,  mass:1e-5,      lifetime:Infinity,        spin:0,    charge:0,    ratio:0.04, type:'bsm'},
+        neutralino:    {color:0xa855f7, size:0.9,  mass:1000,      lifetime:Infinity,        spin:0.5,  charge:0,    ratio:0.02, type:'bsm'},
+        gravitino:     {color:0xd1fae5, size:0.8,  mass:100,       lifetime:Infinity,        spin:1.5,  charge:0,    ratio:0.005,type:'bsm'},
+        demon:         {color:0x4c1d95, size:0.35, mass:0,         lifetime:Infinity,        spin:0,    charge:0,    ratio:0.02, type:'exotic'},
+        glueball:      {color:0xf97316, size:1.4,  mass:1700,      lifetime:Infinity,        spin:0,    charge:0,    ratio:0.015,type:'exotic', binding:1.414},
+        tardigrade:    {color:0x22d3ee, size:1.5,  mass:1e-6,      lifetime:Infinity,        spin:0,    charge:0,    ratio:0.01, type:'exotic'},
+        dark_matter:   {color:0x1e1b4b, size:1.0,  mass:100,       lifetime:Infinity,        spin:0,    charge:0,    ratio:0.03, type:'exotic'},
+        prime_particle:{color:0x38bdf8, size:0.2,  mass:0,         lifetime:Infinity,        spin:0,    charge:0,    ratio:0.02, type:'prime'},
+        holographic:   {color:0x10b981, size:0.25, mass:0,         lifetime:Infinity,        spin:0,    charge:0,    ratio:0.01, type:'meta'},
+        swarm_mode:    {color:0xa855f7, size:0.8,  mass:0.001,     lifetime:Infinity,        spin:0.5,  charge:0,    ratio:0.02, type:'swarm', cohesion:0.65},
+    };
+
+    const CFG = {
+        baseLoop: 5000, loopInc: 5000,
+        particleCount: 150000,
+        bloomStrength: 1.4,
+        flightWaypoints: 12, flightDuration: 18000
+    };
+    // ===================================================================
+    // PHYSICS ENGINE — Complete interactions for all 52 particle species
+    // ===================================================================
+
+    let chart;
+    let glueballParticles = [], swarmParticles = [];
+    let swarmModeActive = false;
+    let primeModeActive = false;
+    let reinmanModeActive = false;
+    let metaDepth = 3; // ω+3
+    let currentEquations = [];
