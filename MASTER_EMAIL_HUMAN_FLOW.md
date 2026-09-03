@@ -1,7 +1,11 @@
 TO: [FUNDER_EMAIL]
 FROM: Lead Researcher, Carrington Storm Motors | Safe Pod Engineering Company
 <<<<<<< ours
+<<<<<<< ours
 REPLY-TO: contact@arithmeticphysics.org
+=======
+REPLY-TO: jasonbrodsky@hotmail.com
+>>>>>>> theirs
 =======
 REPLY-TO: jasonbrodsky@hotmail.com
 >>>>>>> theirs
@@ -51,7 +55,11 @@ Poof — here's the complete framework, the verification code, the 360-article r
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
 <<<<<<< ours
+<<<<<<< ours
   contact@arithmeticphysics.org | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+=======
+  jasonbrodsky@hotmail.com | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+>>>>>>> theirs
 =======
   jasonbrodsky@hotmail.com | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
 >>>>>>> theirs

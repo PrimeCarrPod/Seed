@@ -50,7 +50,7 @@ for pattern, replacement in replacements.items():
 
 # Also sanitize the email address and specific contact info
 content = re.sub(r'jasonbrodsky@hotmail\.com', 'lead.researcher@arithmeticphysics.org', content)
-content = re.sub(r'zirconia@aegisc\.space', 'contact@arithmeticphysics.org', content)
+content = re.sub(r'zirconia@aegisc\.space', 'jasonbrodsky@hotmail.com', content)
 
 with open(output_path, 'w') as f:
     f.write(content)
