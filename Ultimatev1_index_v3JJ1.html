@@ -77,7 +77,7 @@
         </div>
         <div class="pointer-events-auto flex items-center gap-2 mt-1 flex-wrap">
             <button id="btn-toggle-hud" class="btn btn-cyan" onclick="UI.toggleHUD()">☰ Hide</button>
-            <button id="btn-flight" class="btn btn-purple" onclick="Flight.start()">✈ Flight</button>
+            <button id="btn-flight" class="btn btn-purple" onclick="Flight.toggle()">✈ Flight <label style="margin-left:8px;cursor:pointer;"><input type="checkbox" id="flight-lock" onchange="Flight.lock=this.checked" title="Infinite flight mode"> Lock</label></button>
             <button id="btn-glueball" class="btn btn-glue" onclick="sim.spawnGlueball()">Glueball</button>
             <button id="btn-prime" class="btn btn-prime" onclick="sim.togglePrimeMode()">Prime Gaps</button>
             <button id="btn-meta" class="btn btn-meta" onclick="sim.cycleMetaDepth()">Meta-Depth</button>
