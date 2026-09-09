@@ -63,6 +63,22 @@
     .gpu-badge{background:linear-gradient(45deg,#00ff88,#00ffff);background-clip:text;-webkit-background-clip:text;color:transparent;font-weight:900;font-size:10px;}
     </style>
     <!-- Embedded Shaders for GPU Compute (WebGL2) -->
+    <script id="simulation-vert" type="x-shader/x-vertex">
+// simulation.vert - GPU Particle Simulation Vertex Shader (WebGL2)
+// Full-screen quad for GPGPU simulation
+
+#version 300 es
+precision highp float;
+
+in vec2 position;
+in vec2 uv;
+out vec2 vUv;
+
+void main() {
+    vUv = uv;
+    gl_Position = vec4(position, 0.0, 1.0);
+}
+    </script>
     <script id="simulation-frag" type="x-shader/x-fragment">
 // simulation.frag - GPU Particle Simulation Shader (WebGL2)
 // Updates particle positions using physics on GPU
@@ -641,11 +657,16 @@ class GPGPUParticleSystem {
             uParticleParams: { value: null }, // mass, charge, spin, etc.
         };
         
-        // Simulation material
+        // Simulation material - use embedded shaders from DOM
+        const simVertSrc = document.getElementById('simulation-vert')?.textContent || this.getSimulationVertexShader();
+        const simFragSrc = document.getElementById('simulation-frag')?.textContent || this.getSimulationFragmentShader();
+        const renderVertSrc = document.getElementById('render-vert')?.textContent || this.getRenderVertexShader();
+        const renderFragSrc = document.getElementById('render-frag')?.textContent || this.getRenderFragmentShader();
+        
         this.simMaterial = new THREE.ShaderMaterial({
             uniforms: this.simUniforms,
-            vertexShader: this.getSimulationVertexShader(),
-            fragmentShader: this.getSimulationFragmentShader(),
+            vertexShader: simVertSrc,
+            fragmentShader: simFragSrc,
         });
         
         // Render material for display
@@ -657,13 +678,14 @@ class GPGPUParticleSystem {
                 uParticleCount: { value: particleCount },
                 uTextureSize: { value: this.textureSize },
                 uPointSize: { value: 1.0 },
+                uBloomStrength: { value: CFG.bloomStrength },
             },
-            vertexShader: this.getRenderVertexShader(),
-            fragmentShader: this.getRenderFragmentShader(),
+            vertexShader: renderVertSrc,
+            fragmentShader: renderFragSrc,
             transparent: true,
             blending: THREE.AdditiveBlending,
             depthWrite: false,
-            vertexColors: true,
+            vertexColors: false,
         });
         
         // Full-screen quad for simulation
