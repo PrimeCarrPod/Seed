@@ -5,6 +5,18 @@
 # Integrates: lettherebelight, earthbeatv3, SDKForge, GitHub_Handler, Nemotron optimizations
 # ════════════════════════════════════════════════════════════════════════════
 
+# ─── DIRECTORY STRUCTURE DOCUMENTATION ──────────────────────────────────────
+# Root of Main is NOT for any temp work.
+# CSMDropBox — delivers individual files (html, apk) while keeping copies in
+#   respective WIP project folders or CSMApps Build Directories.
+# CSMScripts — contains all scripts that are NOT job-specific.
+#   Job-specific scripts are within their respective WIP work-in-progress folders.
+# CSMWip — contains all work-in-progress projects with their own temp directories.
+# CSMPieces — contains all pieces for files as a temp directory for pieces
+#   that are NOT within their own WIP temp directory.
+# __Python_Tools — folder for all Python scripts so they can be reused as necessary.
+# ════════════════════════════════════════════════════════════════════════════
+
 set -euo pipefail
 
 # ─── MODULE LOADER ──────────────────────────────────────────────────────────

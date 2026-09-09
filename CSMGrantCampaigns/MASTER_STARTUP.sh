@@ -16,6 +16,8 @@ CSM_LOGS="$REPO_ROOT/CSMLogs"
 CSM_PIECES="$REPO_ROOT/csmpieces"
 CSM_WIP_TRACKING="$REPO_ROOT/CSMWip"
 SCRIPTS_DIR="$REPO_ROOT/CSMScripts"
+CSM_DROPBOX="$REPO_ROOT/CSMDropBox"
+PYTHON_TOOLS="$REPO_ROOT/__Python_Tools"
 GIT_INCOMING="$REPO_ROOT/_GIT_INCOMING"
 
 # ─── COLORS ───────────────────────────────────────────────────────────────
@@ -90,6 +92,7 @@ echo ""
 log "csmpieces archive counts:"
 echo "  Final articles:  $(ls "$CSM_PIECES/01_final_articles"/*.md 2>/dev/null | wc -l)"
 echo "  Piece archives:  $(ls "$CSM_PIECES/02_piece_archives"/*.zip 2>/dev/null | wc -l)"
+echo "  WIP pieces:      $(ls "$CSM_PIECES/03_wip_pieces"/*.md 2>/dev/null | wc -l)"
 echo "  Logs/docs:       $(ls "$CSM_PIECES/04_logs_docs"/*.md 2>/dev/null | wc -l)"
 echo "  Scripts/tools:   $(ls "$CSM_PIECES/05_scripts_tools"/*.sh 2>/dev/null | wc -l)"
 
@@ -141,6 +144,26 @@ if [[ $LOOSE_COUNT -gt 10 ]]; then
 else
     success "Loose file count OK: $LOOSE_COUNT"
 fi
+
+# ─── ROOT DIRECTORY CHECK ──────────────────────────────────────────────────
+banner "ROOT DIRECTORY CHECK"
+ROOT_LOOSE=$(find "$REPO_ROOT" -maxdepth 1 \( -name "*.md" -o -name "*.sh" -o -name "*.py" -o -name "*.json" -o -name "*.txt" \) ! -name "README*" ! -name "LICENSE*" 2>/dev/null | wc -l)
+if [[ $ROOT_LOOSE -gt 0 ]]; then
+    warn "Found $ROOT_LOOSE loose files in repo root — should be organized"
+    find "$REPO_ROOT" -maxdepth 1 \( -name "*.md" -o -name "*.sh" -o -name "*.py" -o -name "*.json" -o -name "*.txt" \) ! -name "README*" ! -name "LICENSE*" 2>/dev/null
+else
+    success "Root directory clean — no loose files"
+fi
+
+# ─── DIRECTORY STRUCTURE VERIFICATION ──────────────────────────────────────
+banner "DIRECTORY STRUCTURE"
+for dir in "$CSM_DROPBOX" "$PYTHON_TOOLS" "$CSM_PIECES/03_wip_pieces"; do
+    if [[ -d "$dir" ]]; then
+        success "Directory exists: $dir"
+    else
+        warn "Directory missing: $dir"
+    fi
+done
 
 # ─── HEARTBEAT STATUS ─────────────────────────────────────────────────────
 banner "HEARTBEAT STATUS"
