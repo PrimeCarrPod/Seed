@@ -238,5 +238,30 @@
 
 ---
 
-*Log updated after each file creation. Serialized for merge safety.*
+### 2026-09-09T08:08:07Z — Ultimatev2 GPU Engine Upgrade Complete
+- **Base:** `CSMWip/Ultimate_land_o_lil/build/Ultimatev2_index_v3JJ1.html` (64KB, CPU-based)
+- **Upgrade:** Embedded 4 WebGL2 GPGPU shaders + GPGPUParticleSystem class
+- **Shaders:** simulation-vert (quad), simulation-frag (52-species physics), render-vert (52-color palette), render-frag (bloom + radial gradient)
+- **Features:** Ping-pong render targets, prime gap holography, Reinman one-electron (0.0019%), meta-depth ω+3, swarm cohesion
+- **Commits:** 800c96f4 (shaders + engine), f7e02f84 (DOM shader integration fix)
+- **Lines:** 1592 (was ~1225)
+- **Pushed:** main branch ✅
+
+| File | Lines | Status |
+|------|-------|--------|
+| Ultimatev2_index_v3JJ1.html | 1592 | ✅ Committed (main) |
+
+---
+
+### 2026-09-09T08:08:07Z — Ultimatev3 Planning (Next Session)
+- **Base:** `TardigradiaTGPU/landolil/__RELEASES__/Ultimatev1_index_v3JJ1.html` (1119 lines, CPU)
+- **Target:** `TardigradiaTGPU/landolil/__HTMLDROPBOX_/Ultimatev3_index_v3JJ1.html` (NEW FILE, no overwrite)
+- **Method:** Surgical GPU injection — replace CPU `_updateParticles()` with embedded GPGPU system
+- **Preserve:** All HUD, Flight, Controls, Legend, Equations, Chart, Event Log identically
+
+**Ready for next session.**
+
+---
+
+*Log updated after each session. Serialized for merge safety.*
 *Author: Jason Isaac Brodsky (California, 1976), Conducier*
