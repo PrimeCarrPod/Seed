@@ -62,6 +62,352 @@
     .reinman-badge{background:linear-gradient(45deg,#ff6b35,#fef08a);background-clip:text;-webkit-background-clip:text;color:transparent;font-weight:900;}
     .gpu-badge{background:linear-gradient(45deg,#00ff88,#00ffff);background-clip:text;-webkit-background-clip:text;color:transparent;font-weight:900;font-size:10px;}
     </style>
+    <!-- Embedded Shaders for GPU Compute (WebGL2) -->
+    <script id="simulation-frag" type="x-shader/x-fragment">
+// simulation.frag - GPU Particle Simulation Shader (WebGL2)
+// Updates particle positions using physics on GPU
+
+#version 300 es
+precision highp float;
+
+in vec2 vUv;
+out vec4 fragColor;
+
+uniform float uTime;
+uniform float uDeltaTime;
+uniform float uSpeed;
+uniform bool uPrimeMode;
+uniform bool uReinmanMode;
+uniform int uMetaDepth;
+uniform bool uSwarmMode;
+uniform sampler2D uPositionTexture;
+uniform sampler2D uVelocityTexture;
+uniform float uPrimeGaps[256];
+uniform float uPrimes[256];
+uniform float uTwinPrimes[256];
+uniform float uRecordGaps[256];
+uniform float uReinmanNumber;
+
+#define WIDTH 512.0
+#define HEIGHT 512.0
+#define MAX_PARTICLES 150000
+
+// Hash function for pseudo-random
+float hash(vec2 p) {
+    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+}
+
+vec3 hash3(vec2 p) {
+    return vec3(hash(p), hash(p + 1.7), hash(p + 3.3));
+}
+
+// Get particle index from UV
+int getIndex(vec2 uv) {
+    return int(uv.y * WIDTH + uv.x);
+}
+
+// Get UV from particle index
+vec2 getUV(int idx) {
+    return vec2(float(idx % int(WIDTH)), float(idx / int(WIDTH))) + 0.5;
+}
+
+void main() {
+    vec2 uv = vUv;
+    int idx = getIndex(uv);
+    
+    if (idx >= int(MAX_PARTICLES)) {
+        fragColor = vec4(0.0);
+        return;
+    }
+    
+    // Read current position and velocity
+    vec4 posData = texture(uPositionTexture, uv);
+    vec4 velData = texture(uVelocityTexture, uv);
+    
+    vec3 pos = posData.xyz;
+    vec3 vel = velData.xyz;
+    float typeId = posData.w;
+    float life = velData.w;
+    
+    float dt = uDeltaTime * uSpeed;
+    float t = uTime * uSpeed;
+    
+    // Prime gap influence
+    float primeInfluence = 0.0;
+    if (uPrimeMode) {
+        int gapIdx = idx % 256;
+        primeInfluence = uPrimeGaps[gapIdx] * 0.1;
+    }
+    
+    // Reinman one-electron influence
+    float reinmanInfluence = 0.0;
+    if (uReinmanMode) {
+        reinmanInfluence = sin(t * 0.001) * 0.05;
+    }
+    
+    // Meta-depth scaling
+    float metaFactor = 1.0 + float(uMetaDepth) * 0.1;
+    
+    // Physics per particle type (52 types)
+    vec3 accel = vec3(0.0);
+    
+    // Leptons (0-5): electron, muon, tau, e_nu, mu_nu, tau_nu
+    if (typeId < 6.0) {
+        accel.x = sin(pos.y * 0.5 + t + primeInfluence + reinmanInfluence) + cos(pos.x * 0.5 - t * 0.7);
+        accel.y = sin(pos.x * 0.5 - t * 0.8) + cos(pos.y * 0.5 - t);
+        accel.z = sin(t * 0.5 + typeId) * 0.8;
+    }
+    // Quarks (6-11): up, down, charm, strange, top, bottom
+    else if (typeId < 12.0) {
+        float conf = uPrimeMode ? 1.5 : 1.0;
+        accel.x = sin(t * 3.0 + typeId) * 1.2 * conf;
+        accel.y = cos(t * 3.0 + typeId * 0.5) * 1.2 * conf;
+        accel.z = sin(t * 2.0 + typeId) * 0.6 * conf;
+    }
+    // Gauge bosons (12-16): photon, gluon, w, z, graviton
+    else if (typeId < 17.0) {
+        if (typeId == 12.0) { // photon
+            accel = vec3(cos(typeId) * 14.0, sin(typeId) * 7.0, 10.0) * dt;
+        } else if (typeId == 13.0) { // gluon
+            accel.x = sin(pos.y * 2.0 + t * 2.0 + typeId) * 1.5;
+            accel.y = cos(pos.x * 2.0 + t * 2.0 + typeId) * 1.5;
+            accel.z = sin(t * 1.5 + typeId) * 1.0;
+        } else if (typeId == 14.0) { // w_boson
+            accel = vec3(sin(t * 2.0) * 3.0, cos(t * 2.0) * 3.0, sin(t) * 2.0);
+        } else if (typeId == 15.0) { // z_boson
+            accel = vec3(sin(t * 1.8) * 2.5, cos(t * 1.8) * 2.5, sin(t * 0.9) * 2.0);
+        } else { // graviton
+            accel = vec3(sin(t * 0.1) * 0.5, cos(t * 0.1) * 0.5, sin(t * 0.05) * 0.3);
+        }
+    }
+    // Higgs (17)
+    else if (typeId == 17.0) {
+        accel = vec3(-pos.x * 0.002 + sin(t * 0.3) * 0.6, -pos.y * 0.002 + cos(t * 0.3) * 0.6, sin(t * 0.2) * 0.4) * 1.2;
+    }
+    // Hadrons (18-21): proton, neutron, pion, kaon
+    else if (typeId < 22.0) {
+        accel = vec3(sin(t + typeId) * 0.7, cos(t + typeId) * 0.7, sin(t * 0.4 + typeId) * 0.5) * dt;
+    }
+    // BSM/Exotic (22-25): demon, glueball, tardigrade, dark_matter
+    else if (typeId < 26.0) {
+        accel = vec3(sin(t * 0.1 + typeId) * 0.3, cos(t * 0.1 + typeId) * 0.3, sin(t * 0.05 + typeId) * 0.2);
+    }
+    // Meta/Prime/Swarm (26-34)
+    else if (typeId < 35.0) {
+        accel = vec3(sin(t * 0.15 + typeId) * 0.4, cos(t * 0.15 + typeId) * 0.4, sin(t * 0.08 + typeId) * 0.3);
+    }
+    // Extended BSM (35-51)
+    else {
+        accel = vec3(sin(t * 0.08 + typeId) * 0.2, cos(t * 0.08 + typeId) * 0.2, sin(t * 0.04 + typeId) * 0.15);
+    }
+    
+    // Apply meta-depth
+    accel *= metaFactor;
+    
+    // Apply prime gap holographic influence
+    if (uPrimeMode) {
+        accel.x += sin(t * primeInfluence * 10.0) * 0.1;
+        accel.y += cos(t * primeInfluence * 10.0) * 0.1;
+    }
+    
+    // Apply Reinman worldline influence
+    if (uReinmanMode) {
+        float rFactor = 1.0 + sin(t * 0.001) * 0.2;
+        accel *= rFactor;
+    }
+    
+    // Swarm cohesion
+    if (uSwarmMode) {
+        vec3 center = vec3(0.0);
+        accel += (center - pos) * 0.01;
+    }
+    
+    // Velocity integration (semi-implicit Euler)
+    vel += accel * dt;
+    pos += vel * dt * 1.5;
+    
+    // Boundary conditions (soft bounds)
+    pos = clamp(pos, vec3(-60.0), vec3(60.0));
+    if (abs(pos.x) > 55.0) pos.x *= 0.95;
+    if (abs(pos.y) > 55.0) pos.y *= 0.95;
+    if (abs(pos.z) > 55.0) pos.z *= 0.95;
+    
+    // Write new position (keep typeId in alpha)
+    fragColor = vec4(pos, typeId);
+}
+    </script>
+    <script id="render-vert" type="x-shader/x-vertex">
+// render.vert - GPU Particle Render Vertex Shader (WebGL2)
+// Reads position from texture and transforms to clip space
+
+#version 300 es
+precision highp float;
+
+in uint vertexID;
+out vec3 vColor;
+out float vSize;
+out vec3 vPosition;
+
+uniform sampler2D uPositionTexture;
+uniform float uTime;
+uniform float uPointSize;
+
+#define WIDTH 512.0
+#define HEIGHT 512.0
+#define MAX_PARTICLES 150000
+
+// Color palette for 52 particle types
+vec3 colors[52];
+
+void initColors() {
+    colors[0] = vec3(0.22, 0.74, 0.97);   // electron
+    colors[1] = vec3(0.91, 0.47, 0.98);   // muon
+    colors[2] = vec3(0.75, 0.52, 0.99);   // tau
+    colors[3] = vec3(0.40, 0.91, 0.97);   // e_nu
+    colors[4] = vec3(0.40, 0.91, 0.97);   // mu_nu
+    colors[5] = vec3(0.40, 0.91, 0.97);   // tau_nu
+    colors[6] = vec3(0.98, 0.74, 0.14);   // up_quark
+    colors[7] = vec3(0.38, 0.65, 0.98);   // down_quark
+    colors[8] = vec3(0.98, 0.74, 0.14);   // charm_quark
+    colors[9] = vec3(0.38, 0.65, 0.98);   // strange_quark
+    colors[10] = vec3(0.98, 0.74, 0.14);  // top_quark
+    colors[11] = vec3(0.38, 0.65, 0.98);  // bottom_quark
+    colors[12] = vec3(0.99, 0.94, 0.54);  // photon
+    colors[13] = vec3(0.97, 0.45, 0.09);  // gluon
+    colors[14] = vec3(0.98, 0.44, 0.52);  // w_boson
+    colors[15] = vec3(0.65, 0.55, 0.98);  // z_boson
+    colors[16] = vec3(0.82, 0.98, 0.84);  // graviton
+    colors[17] = vec3(0.92, 0.28, 0.60);  // higgs
+    colors[18] = vec3(0.96, 0.25, 0.37);  // proton
+    colors[19] = vec3(0.58, 0.64, 0.72);  // neutron
+    colors[20] = vec3(0.53, 0.94, 0.67);  // pion_plus
+    colors[21] = vec3(0.53, 0.94, 0.67);  // pion_minus
+    colors[22] = vec3(0.53, 0.94, 0.67);  // pion_zero
+    colors[23] = vec3(0.99, 0.83, 0.30);  // kaon_plus
+    colors[24] = vec3(0.99, 0.83, 0.30);  // kaon_minus
+    colors[25] = vec3(0.06, 0.73, 0.51);  // axion
+    colors[26] = vec3(0.66, 0.33, 0.96);  // neutralino
+    colors[27] = vec3(0.82, 0.98, 0.84);  // gravitino
+    colors[28] = vec3(0.30, 0.11, 0.58);  // demon
+    colors[29] = vec3(0.97, 0.45, 0.09);  // glueball
+    colors[30] = vec3(0.13, 0.83, 0.90);  // tardigrade
+    colors[31] = vec3(0.12, 0.11, 0.29);  // dark_matter
+    colors[32] = vec3(0.22, 0.74, 0.97);  // prime_particle
+    colors[33] = vec3(0.06, 0.73, 0.51);  // holographic
+    colors[34] = vec3(0.66, 0.33, 0.96);  // swarm_mode
+    colors[35] = vec3(0.90, 0.50, 0.20);  // exotic_1
+    colors[36] = vec3(0.20, 0.90, 0.50);  // exotic_2
+    colors[37] = vec3(0.50, 0.20, 0.90);  // exotic_3
+    colors[38] = vec3(0.90, 0.20, 0.50);  // exotic_4
+    colors[39] = vec3(0.20, 0.50, 0.90);  // exotic_5
+    colors[40] = vec3(0.50, 0.90, 0.20);  // exotic_6
+    colors[41] = vec3(0.95, 0.95, 0.20);  // exotic_7
+    colors[42] = vec3(0.20, 0.95, 0.95);  // exotic_8
+    colors[43] = vec3(0.95, 0.20, 0.95);  // exotic_9
+    colors[44] = vec3(0.70, 0.70, 0.70);  // exotic_10
+    colors[45] = vec3(0.40, 0.40, 0.40);  // exotic_11
+    colors[46] = vec3(0.80, 0.80, 0.80);  // exotic_12
+    colors[47] = vec3(0.60, 0.60, 0.60);  // exotic_13
+    colors[48] = vec3(0.30, 0.30, 0.30);  // exotic_14
+    colors[49] = vec3(0.90, 0.90, 0.90);  // exotic_15
+    colors[50] = vec3(0.10, 0.10, 0.10);  // exotic_16
+    colors[51] = vec3(0.50, 0.50, 0.50);  // exotic_17
+}
+
+float sizes[52];
+
+void initSizes() {
+    sizes[0] = 0.35; sizes[1] = 0.6; sizes[2] = 0.7; sizes[3] = 0.25; sizes[4] = 0.25; sizes[5] = 0.25;
+    sizes[6] = 0.5; sizes[7] = 0.5; sizes[8] = 0.55; sizes[9] = 0.55; sizes[10] = 0.6; sizes[11] = 0.6;
+    sizes[12] = 0.45; sizes[13] = 0.4; sizes[14] = 1.0; sizes[15] = 1.0; sizes[16] = 0.3;
+    sizes[17] = 1.2; sizes[18] = 0.8; sizes[19] = 0.75; sizes[20] = 0.55; sizes[21] = 0.55; sizes[22] = 0.55;
+    sizes[23] = 0.6; sizes[24] = 0.6; sizes[25] = 0.3; sizes[26] = 0.9; sizes[27] = 0.8; sizes[28] = 0.35;
+    sizes[29] = 1.4; sizes[30] = 1.5; sizes[31] = 1.0; sizes[32] = 0.2; sizes[33] = 0.25; sizes[34] = 0.8;
+    sizes[35] = 0.5; sizes[36] = 0.5; sizes[37] = 0.5; sizes[38] = 0.5; sizes[39] = 0.5; sizes[40] = 0.5;
+    sizes[41] = 0.5; sizes[42] = 0.5; sizes[43] = 0.5; sizes[44] = 0.5; sizes[45] = 0.5; sizes[46] = 0.5;
+    sizes[47] = 0.5; sizes[48] = 0.5; sizes[49] = 0.5; sizes[50] = 0.5; sizes[51] = 0.5;
+}
+
+void main() {
+    initColors();
+    initSizes();
+    
+    uint idx = vertexID;
+    
+    if (idx >= uint(MAX_PARTICLES)) {
+        gl_Position = vec4(0.0);
+        gl_PointSize = 0.0;
+        return;
+    }
+    
+    // Calculate UV from vertex ID
+    float u = float(idx % uint(WIDTH)) / WIDTH + 0.5 / WIDTH;
+    float v = float(idx / uint(WIDTH)) / HEIGHT + 0.5 / HEIGHT;
+    vec2 uv = vec2(u, v);
+    
+    // Read position from texture
+    vec4 posData = texture(uPositionTexture, uv);
+    vec3 pos = posData.xyz;
+    float typeId = posData.w;
+    
+    vPosition = pos;
+    
+    // Get color by type
+    int typeIdx = int(typeId + 0.5);
+    if (typeIdx >= 0 && typeIdx < 52) {
+        vColor = colors[typeIdx];
+        vSize = sizes[typeIdx] * uPointSize;
+    } else {
+        vColor = vec3(0.5);
+        vSize = 0.5 * uPointSize;
+    }
+    
+    // Transform to clip space
+    vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);
+    gl_PointSize = vSize * (300.0 / -mvPosition.z);
+    gl_Position = projectionMatrix * mvPosition;
+}
+    </script>
+    <script id="render-frag" type="x-shader/x-fragment">
+// render.frag - GPU Particle Render Fragment Shader (WebGL2)
+// Renders point sprites with radial gradient and color by type
+
+#version 300 es
+precision highp float;
+
+in vec3 vColor;
+in float vSize;
+in vec3 vPosition;
+
+out vec4 fragColor;
+
+uniform float uTime;
+uniform float uBloomStrength;
+
+void main() {
+    // Radial gradient for point sprite
+    vec2 center = gl_PointCoord - vec2(0.5);
+    float dist = length(center);
+    
+    // Smooth circular falloff
+    float alpha = 1.0 - smoothstep(0.0, 0.5, dist);
+    
+    // Add subtle pulse based on time and position
+    float pulse = 0.8 + 0.2 * sin(uTime * 2.0 + vPosition.x * 0.05 + vPosition.y * 0.03);
+    alpha *= pulse;
+    
+    // Add slight color variation based on position
+    vec3 finalColor = vColor * (0.9 + 0.1 * sin(uTime + vPosition.z * 0.1));
+    
+    // Bloom enhancement for bright particles
+    float brightness = dot(finalColor, vec3(0.299, 0.587, 0.114));
+    if (brightness > 0.7) {
+        finalColor *= uBloomStrength;
+    }
+    
+    fragColor = vec4(finalColor, alpha);
+}
+    </script>
 </head>
 <body class="w-full h-screen relative">
     <div id="canvas-container"></div>
