@@ -278,13 +278,22 @@ public class MainActivity extends Activity {
 
     private void checkUpdate() {
         new Thread(() -> {
-            String latest = fetchLatestVersion();
+            List<ReleaseInfo> releases = fetchAvailableReleases();
             runOnUiThread(() -> {
-                if (latest != null && isNewerVersion(latest, "1.0.91")) {
-                    latestVersion = latest;
-                    injectJs("Bounce.onUpdateAvailable('" + latestVersion + "')");
+                if (releases != null && !releases.isEmpty()) {
+                    StringBuilder json = new StringBuilder("[");
+                    for (int i = 0; i < releases.size(); i++) {
+                        ReleaseInfo r = releases.get(i);
+                        if (i > 0) json.append(",");
+                        json.append("{\"version\":\"").append(r.version)
+                            .append("\",\"filename\":\"").append(r.filename)
+                            .append("\",\"url\":\"").append(r.url)
+                            .append("\",\"newer\":").append(isNewerVersion(r.version, "1.0.92")).append("}");
+                    }
+                    json.append("]");
+                    injectJs("Bounce.onReleasesAvailable(" + json.toString() + ")");
                 } else {
-                    injectJs("Bounce.onUpdateNotAvailable()");
+                    injectJs("Bounce.onReleasesAvailable([])");
                 }
             });
         }).start();
@@ -296,29 +305,93 @@ public class MainActivity extends Activity {
         prefs.edit().putInt("ignoreCount", 0).apply();
     }
 
-    private String fetchLatestVersion() {
+    private static class ReleaseInfo {
+        String version;
+        String filename;
+        String url;
+        ReleaseInfo(String version, String filename, String url) {
+            this.version = version;
+            this.filename = filename;
+            this.url = url;
+        }
+    }
+
+    private List<ReleaseInfo> fetchAvailableReleases() {
+        List<ReleaseInfo> releases = new ArrayList<>();
         HttpURLConnection conn = null;
         try {
-            URL url = new URL("https://raw.githubusercontent.com/ZirconiaAegisC/CarrPod/main/CSMApps/Releases/Bounce-latest.txt");
+            URL url = new URL("https://api.github.com/repos/PrimeCarrPod/Seed/contents/CSMApps/_Current_Releases?ref=main");
             conn = (HttpURLConnection) url.openConnection();
-            conn.setConnectTimeout(5000);
-            conn.setReadTimeout(5000);
+            conn.setConnectTimeout(10000);
+            conn.setReadTimeout(10000);
             conn.setRequestMethod("GET");
+            conn.setRequestProperty("Accept", "application/vnd.github.v3+json");
             int code = conn.getResponseCode();
             if (code == HttpURLConnection.HTTP_OK) {
                 java.io.BufferedReader in = new java.io.BufferedReader(new java.io.InputStreamReader(conn.getInputStream()));
-                String line = in.readLine();
+                StringBuilder response = new StringBuilder();
+                String line;
+                while ((line = in.readLine()) != null) {
+                    response.append(line);
+                }
                 in.close();
-                if (line != null && line.trim().startsWith("Bounce-v")) {
-                    return line.trim().replace("Bounce-v", "").replace(".apk", "").trim();
+                
+                String json = response.toString();
+                // Parse JSON array for files matching Bounce-v*.apk
+                int idx = 0;
+                while (true) {
+                    int nameIdx = json.indexOf("\"name\":\"", idx);
+                    if (nameIdx == -1) break;
+                    nameIdx += 8;
+                    int nameEnd = json.indexOf("\"", nameIdx);
+                    if (nameEnd == -1) break;
+                    String name = json.substring(nameIdx, nameEnd);
+                    
+                    if (name.startsWith("Bounce-v") && name.endsWith(".apk")) {
+                        String version = name.replace("Bounce-v", "").replace(".apk", "");
+                        
+                        // Find download_url for this file
+                        int urlIdx = json.indexOf("\"download_url\":\"", idx);
+                        String downloadUrl = "";
+                        if (urlIdx != -1) {
+                            urlIdx += 16;
+                            int urlEnd = json.indexOf("\"", urlIdx);
+                            if (urlEnd != -1) {
+                                downloadUrl = json.substring(urlIdx, urlEnd);
+                            }
+                        }
+                        
+                        if (!downloadUrl.isEmpty()) {
+                            releases.add(new ReleaseInfo(version, name, downloadUrl));
+                        }
+                    }
+                    idx = nameEnd;
                 }
             }
         } catch (Exception e) {
-            android.util.Log.w("BounceUpdate", "No remote version found: " + e.getMessage());
+            android.util.Log.w("BounceUpdate", "Failed to fetch releases: " + e.getMessage());
         } finally {
             if (conn != null) conn.disconnect();
         }
-        return null;
+        
+        // Sort by version descending (newest first)
+        releases.sort((a, b) -> compareVersions(b.version, a.version));
+        return releases;
+    }
+    
+    private int compareVersions(String v1, String v2) {
+        try {
+            String[] a = v1.split("\\.");
+            String[] b = v2.split("\\.");
+            for (int i = 0; i < Math.max(a.length, b.length); i++) {
+                int av = i < a.length ? Integer.parseInt(a[i]) : 0;
+                int bv = i < b.length ? Integer.parseInt(b[i]) : 0;
+                if (av != bv) return Integer.compare(av, bv);
+            }
+            return 0;
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
     private boolean isNewerVersion(String remote, String current) {
@@ -1221,7 +1294,7 @@ public class MainActivity extends Activity {
         logo.setGravity(Gravity.CENTER);
 
         TextView tag = new TextView(this);
-        tag.setText("RSSI Kalman · v1.0.91");
+        tag.setText("RSSI Kalman · v1.0.92");
         tag.setTextSize(11f);
         tag.setTextColor(Color.parseColor("#E8E8F0"));
         tag.setGravity(Gravity.CENTER);
@@ -1307,7 +1380,7 @@ public class MainActivity extends Activity {
     public class JsBridge {
         @JavascriptInterface
         public void onReady(String j) {
-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.91 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.92 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
         }
 
         @JavascriptInterface
@@ -1335,7 +1408,7 @@ public class MainActivity extends Activity {
             theoryMode = enabled;
             runOnUiThread(() -> {
                 String mode = enabled ? "THEORY" : "LIVE";
-                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.91 · " + mode);
+                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.92 · " + mode);
                 Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
             });
         }
@@ -1390,11 +1463,8 @@ public class MainActivity extends Activity {
         }
 
         @JavascriptInterface
-        public void startUpdate(String ver) {
-            runOnUiThread(() -> {
-                latestVersion = ver;
-                MainActivity.this.startUpdate();
-            });
+        public void downloadRelease(String version, String url, String filename) {
+            runOnUiThread(() -> downloadApk(version, url, filename));
         }
 
         @JavascriptInterface
@@ -1411,6 +1481,50 @@ public class MainActivity extends Activity {
                     Toast.makeText(MainActivity.this, "Ignoring updates for 10 checks", Toast.LENGTH_SHORT).show();
                 }
             });
+        }
+
+        private void downloadApk(String version, String url, String filename) {
+            Toast.makeText(MainActivity.this, "Downloading Bounce v" + version + "...", Toast.LENGTH_LONG).show();
+            new Thread(() -> {
+                HttpURLConnection conn = null;
+                try {
+                    URL downloadUrl = new URL(url);
+                    conn = (HttpURLConnection) downloadUrl.openConnection();
+                    conn.setConnectTimeout(30000);
+                    conn.setReadTimeout(120000);
+                    conn.setRequestMethod("GET");
+                    int code = conn.getResponseCode();
+                    if (code == HttpURLConnection.HTTP_OK) {
+                        java.io.InputStream in = conn.getInputStream();
+                        java.io.File outputDir = getExternalFilesDir(null);
+                        if (outputDir == null) outputDir = getFilesDir();
+                        java.io.File outputFile = new java.io.File(outputDir, filename);
+                        java.io.FileOutputStream out = new java.io.FileOutputStream(outputFile);
+                        byte[] buffer = new byte[8192];
+                        int len;
+                        long total = 0;
+                        while ((len = in.read(buffer)) > 0) {
+                            out.write(buffer, 0, len);
+                            total += len;
+                        }
+                        out.close();
+                        in.close();
+                        final String path = outputFile.getAbsolutePath();
+                        final long totalFinal = total;
+                        runOnUiThread(() -> {
+                            Toast.makeText(MainActivity.this, "Downloaded: " + filename + " (" + (totalFinal/1024) + " KB)\nSaved to: " + path, Toast.LENGTH_LONG).show();
+                            injectJs("Bounce.onDownloadComplete('" + version + "','" + path + "')");
+                        });
+                    } else {
+                        runOnUiThread(() -> Toast.makeText(MainActivity.this, "Download failed: HTTP " + code, Toast.LENGTH_LONG).show());
+                    }
+                } catch (Exception e) {
+                    android.util.Log.e("BounceUpdate", "Download error: " + e.getMessage());
+                    runOnUiThread(() -> Toast.makeText(MainActivity.this, "Download error: " + e.getMessage(), Toast.LENGTH_LONG).show());
+                } finally {
+                    if (conn != null) conn.disconnect();
+                }
+            }).start();
         }
     }
 }

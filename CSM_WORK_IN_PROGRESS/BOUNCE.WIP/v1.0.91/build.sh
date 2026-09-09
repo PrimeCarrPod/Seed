@@ -15,13 +15,13 @@ TARGET_SDK=33
 MIN_SDK=24
 BUILD_TOOLS_VERSION="33.0.1"
 
-PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_2a545c22-26f2-47df-941f-046e37538a32/CSM_WORK_IN_PROGRESS/BOUNCE.WIP/v1.0.91"
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SRC_DIR="$PROJECT_DIR/src/main"
 GEN_DIR="$PROJECT_DIR/gen"
 OBJ_DIR="$PROJECT_DIR/obj"
 OUT_DIR="$PROJECT_DIR/out"
 
-SDK_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5744dc84-1fbd-4568-abf3-5c49c84e9c4b/.sdk/android-sdk"
+SDK_DIR="${ANDROID_HOME:-/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_f0b16629-907e-42f1-85f2-46087d2fb3cb/.sdk/android-sdk}"
 BUILD_TOOLS="$SDK_DIR/build-tools/33.0.1"
 PLATFORM="$SDK_DIR/platforms/android-33"
 ANDROID_JAR="$PLATFORM/android.jar"
