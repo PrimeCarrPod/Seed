@@ -40,8 +40,8 @@
 | 3 | A1-03 | Double_Cover_SU2_Spin | COMPLETE | Foundation/A1-03/ |
 | 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | COMPLETE | Foundation/A1-04/ |
 | 5 | A1-05 | Worldline_Stability_RH | COMPLETE | Foundation/A1-05/ |
-| 6 | A1-06 | Vertex_Interaction_Points | READING | Foundation/A1-06/ |
-| 7 | A1-07 | Pair_Creation_Annihilation | PENDING | Foundation/A1-07/ |
+| 6 | A1-06 | Vertex_Interaction_Points | COMPLETE | Foundation/A1-06/ |
+| 7 | A1-07 | Pair_Creation_Annihilation | READING | Foundation/A1-07/ |
 | 8 | A1-08 | Proper_Time_Fluctuation_Spectrum | PENDING | Foundation/A1-08/ |
 | 9 | A1-09 | Compton_Scale_From_Prime_Count | PENDING | Foundation/A1-09/ |
 | 10 | A1-10 | Worldline_Segment_Books | PENDING | Foundation/A1-10/ |
@@ -130,8 +130,8 @@
 | 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | COMPLETE | ExperimentalSignatures/A9-06/ |
 | 7 | A9-07 | CMB_BMode_BICEP_Arrays | COMPLETE | ExperimentalSignatures/A9-07/ |
 | 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | COMPLETE | ExperimentalSignatures/A9-08/ |
-| 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | WRITING | ExperimentalSignatures/A9-09/ |
-| 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | PENDING | ExperimentalSignatures/A9-10/ |
+| 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | COMPLETE | ExperimentalSignatures/A9-09/ |
+| 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | WRITING | ExperimentalSignatures/A9-10/ |
 | 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | PENDING | ExperimentalSignatures/A9-11/ |
 | 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | PENDING | ExperimentalSignatures/A9-12/ |
 | 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | PENDING | ExperimentalSignatures/A9-13/ |
@@ -179,7 +179,7 @@
 | 8 | Deep Dive_ Tau Neutrino Universe | COMPLETE | Particles/Deep_Dive_Tau_Neutrino_Universe/ |
 | 9 | Deep Dive_ Tau Particle Benevolence | COMPLETE | Particles/Deep_Dive_Tau_Particle_Benevolence/ |
 | 10 | Electron Neutrino Deep Dive | COMPLETE | Particles/Electron_Neutrino_Deep_Dive/ |
-| 11 | Emulating Unique Electron Properties | PENDING | Particles/Emulating_Unique_Electron_Properties/ |
+| 11 | Emulating Unique Electron Properties | COMPLETE | Particles/Emulating_Unique_Electron_Properties/ |
 | 12 | Gauge Boson Deep Dive Request | PENDING | Particles/Gauge_Boson_Deep_Dive_Request/ |
 | 13 | Gluon Deep Dive Emulation Request | PENDING | Particles/Gluon_Deep_Dive_Emulation_Request/ |
 | 14 | Graviton Deep Dive Technical Report | PENDING | Particles/Graviton_Deep_Dive_Technical_Report/ |
