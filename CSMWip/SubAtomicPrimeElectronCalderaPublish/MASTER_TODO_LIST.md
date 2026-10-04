@@ -149,8 +149,8 @@
 | 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | COMPLETE | ExperimentalSignatures/A9-25/ |
 | 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | COMPLETE | ExperimentalSignatures/A9-26/ |
 | 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | COMPLETE | ExperimentalSignatures/A9-27/ |
-| 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | WRITING | ExperimentalSignatures/A9-28/ |
-| 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | PENDING | ExperimentalSignatures/A9-29/ |
+| 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | COMPLETE | ExperimentalSignatures/A9-28/ |
+| 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | WRITING | ExperimentalSignatures/A9-29/ |
 | 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | PENDING | ExperimentalSignatures/A9-30/ |
 | 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | PENDING | ExperimentalSignatures/A9-31/ |
 | 32 | A9-32 | Silicon_Tracker_Performance_Optimization | PENDING | ExperimentalSignatures/A9-32/ |
@@ -209,7 +209,7 @@
 
 | # | Directory | Status | Intro Path |
 |---|-----------|--------|------------|
-| 1 | GlueballTheory | PENDING | CrossCutting/GlueballTheory/ |
+| 1 | GlueballTheory | COMPLETE | CrossCutting/GlueballTheory/ |
 | 2 | LatitudinalGeophysics | PENDING | CrossCutting/LatitudinalGeophysics/ |
 | 3 | MicroToMacro | PENDING | CrossCutting/MicroToMacro/ |
 | 4 | MicrobialEcosystem | PENDING | CrossCutting/MicrobialEcosystem/ |
