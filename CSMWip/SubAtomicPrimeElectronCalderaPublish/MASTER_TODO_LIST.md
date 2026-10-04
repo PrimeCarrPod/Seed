@@ -37,8 +37,8 @@
 |---|----------|-------|--------|------------|
 | 1 | A1-01 | Worldline_Proper_Time_Quantization | COMPLETE | Foundation/A1-01/ |
 | 2 | A1-02 | Topological_Winding_Numbers | COMPLETE | Foundation/A1-02/ |
-| 3 | A1-03 | Double_Cover_SU2_Spin | READING | Foundation/A1-03/ |
-| 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | PENDING | Foundation/A1-04/ |
+| 3 | A1-03 | Double_Cover_SU2_Spin | COMPLETE | Foundation/A1-03/ |
+| 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | READING | Foundation/A1-04/ |
 | 5 | A1-05 | Worldline_Stability_RH | PENDING | Foundation/A1-05/ |
 | 6 | A1-06 | Vertex_Interaction_Points | PENDING | Foundation/A1-06/ |
 | 7 | A1-07 | Pair_Creation_Annihilation | PENDING | Foundation/A1-07/ |
@@ -125,8 +125,8 @@
 | 1 | A9-01 | Experimental_Signatures_&_Future_Tests | COMPLETE | ExperimentalSignatures/A9-01/ |
 | 2 | A9-02 | Electron_g2_Anomalous_Magnetic_Moment | COMPLETE | ExperimentalSignatures/A9-02/ |
 | 3 | A9-03 | Electric_Dipole_Moment_ACME_Searches | COMPLETE | ExperimentalSignatures/A9-03/ |
-| 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | WRITING | ExperimentalSignatures/A9-04/ |
-| 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | PENDING | ExperimentalSignatures/A9-05/ |
+| 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | COMPLETE | ExperimentalSignatures/A9-04/ |
+| 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | WRITING | ExperimentalSignatures/A9-05/ |
 | 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | PENDING | ExperimentalSignatures/A9-06/ |
 | 7 | A9-07 | CMB_BMode_BICEP_Arrays | PENDING | ExperimentalSignatures/A9-07/ |
 | 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | PENDING | ExperimentalSignatures/A9-08/ |
@@ -173,8 +173,8 @@
 | 2 | Baryon Deep Dive_ One-Particle Universe | COMPLETE | Particles/Baryon_Deep_Dive_One-Particle_Universe/ |
 | 3 | Boson Deep Dive Architecture Emulation | COMPLETE | Particles/Boson_Deep_Dive_Architecture_Emulation/ |
 | 4 | Boson Deep Dive_ A Universe | COMPLETE | Particles/Boson_Deep_Dive_A_Universe/ |
-| 5 | Dark Matter Deep Dive Simulation | PENDING | Particles/Dark_Matter_Deep_Dive_Simulation/ |
-| 6 | Deep Dive_ Benevolent Neutralinos | PENDING | Particles/Deep_Dive_Benevolent_Neutralinos/ |
+| 5 | Dark Matter Deep Dive Simulation | COMPLETE | Particles/Dark_Matter_Deep_Dive_Simulation/ |
+| 6 | Deep Dive_ Benevolent Neutralinos | COMPLETE | Particles/Deep_Dive_Benevolent_Neutralinos/ |
 | 7 | Deep Dive_ One-Quark Universe Architecture | PENDING | Particles/Deep_Dive_One-Quark_Universe_Architecture/ |
 | 8 | Deep Dive_ Tau Neutrino Universe | PENDING | Particles/Deep_Dive_Tau_Neutrino_Universe/ |
 | 9 | Deep Dive_ Tau Particle Benevolence | PENDING | Particles/Deep_Dive_Tau_Particle_Benevolence/ |
