@@ -44,7 +44,7 @@
 | 7 | A1-07 | Pair_Creation_Annihilation | COMPLETE | Foundation/A1-07/ |
 | 8 | A1-08 | Proper_Time_Fluctuation_Spectrum | COMPLETE | Foundation/A1-08/ |
 | 9 | A1-09 | Compton_Scale_From_Prime_Count | COMPLETE | Foundation/A1-09/ |
-| 10 | A1-10 | Worldline_Segment_Books | READING | Foundation/A1-10/ |
+| 10 | A1-10 | Worldline_Segment_Books | COMPLETE | Foundation/A1-10/ |
 | 11 | A1-11 | Worldline_Self_Intersection | PENDING | Foundation/A1-11/ |
 | 12 | A1-12 | Proper_Time_Operator | PENDING | Foundation/A1-12/ |
 | 13 | A1-13 | Worldline_Causal_Structure | PENDING | Foundation/A1-13/ |
@@ -136,8 +136,8 @@
 | 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | COMPLETE | ExperimentalSignatures/A9-12/ |
 | 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | COMPLETE | ExperimentalSignatures/A9-13/ |
 | 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | COMPLETE | ExperimentalSignatures/A9-14/ |
-| 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | WRITING | ExperimentalSignatures/A9-15/ |
-| 16 | A9-16 | Kaon_Physics_KOTO_NA62_Experiments | PENDING | ExperimentalSignatures/A9-16/ |
+| 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | COMPLETE | ExperimentalSignatures/A9-15/ |
+| 16 | A9-16 | Kaon_Physics_KOTO_NA62_Experiments | WRITING | ExperimentalSignatures/A9-16/ |
 | 17 | A9-17 | B_Meson_Factories_Belle_BaBar_Results | PENDING | ExperimentalSignatures/A9-17/ |
 | 18 | A9-18 | Top_Quark_Property_Measurements | PENDING | ExperimentalSignatures/A9-18/ |
 | 19 | A9-19 | Higgs_Boson_Coupling_Precision | PENDING | ExperimentalSignatures/A9-19/ |
@@ -186,7 +186,7 @@
 | 15 | Hadrons Deep Dive Request | PENDING | Particles/Hadrons_Deep_Dive_Request/ |
 | 16 | Higgs Boson Deep Dive Emulation | COMPLETE | Particles/Higgs_Boson_Deep_Dive_Emulation/ |
 | 17 | Kaon Deep Dive_ A Computational Model | COMPLETE | Particles/Kaon_Deep_Dive_A_Computational_Model/ |
-| 18 | Lepton Deep Dive_ One-Lepton Universe | PENDING | Particles/Lepton_Deep_Dive_One-Lepton_Universe/ |
+| 18 | Lepton Deep Dive_ One-Lepton Universe | COMPLETE | Particles/Lepton_Deep_Dive_One-Lepton_Universe/ |
 | 19 | Magneton Deep Dive_ Benevolent Monopole | PENDING | Particles/Magneton_Deep_Dive_Benevolent_Monopole/ |
 | 20 | Muon Deep Dive_ One-Particle Universe | PENDING | Particles/Muon_Deep_Dive_One-Particle_Universe/ |
 | 21 | Muon Neutrino Deep Dive Simulation | PENDING | Particles/Muon_Neutrino_Deep_Dive_Simulation/ |
