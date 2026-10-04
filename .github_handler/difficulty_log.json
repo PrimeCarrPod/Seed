@@ -27,6 +27,13 @@
       "lines": 6,
       "strategies": 3,
       "timestamp": "2026-10-04T01:21:03Z"
+    },
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/COMBINED_INTRO.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/COMBINED_INTRO.md",
+      "difficulty": "easy",
+      "lines": 43,
+      "strategies": 3,
+      "timestamp": "2026-10-04T01:21:09Z"
     }
   }
 }
