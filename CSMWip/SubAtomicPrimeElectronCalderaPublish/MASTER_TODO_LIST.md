@@ -150,8 +150,8 @@
 | 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | COMPLETE | ExperimentalSignatures/A9-26/ |
 | 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | COMPLETE | ExperimentalSignatures/A9-27/ |
 | 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | COMPLETE | ExperimentalSignatures/A9-28/ |
-| 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | WRITING | ExperimentalSignatures/A9-29/ |
-| 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | PENDING | ExperimentalSignatures/A9-30/ |
+| 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | COMPLETE | ExperimentalSignatures/A9-29/ |
+| 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | WRITING | ExperimentalSignatures/A9-30/ |
 | 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | PENDING | ExperimentalSignatures/A9-31/ |
 | 32 | A9-32 | Silicon_Tracker_Performance_Optimization | PENDING | ExperimentalSignatures/A9-32/ |
 | 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | PENDING | ExperimentalSignatures/A9-33/ |
@@ -183,7 +183,7 @@
 | 12 | Gauge Boson Deep Dive Request | COMPLETE | Particles/Gauge_Boson_Deep_Dive_Request/ |
 | 13 | Gluon Deep Dive Emulation Request | COMPLETE | Particles/Gluon_Deep_Dive_Emulation_Request/ |
 | 14 | Graviton Deep Dive Technical Report | COMPLETE | Particles/Graviton_Deep_Dive_Technical_Report/ |
-| 15 | Hadrons Deep Dive Request | PENDING | Particles/Hadrons_Deep_Dive_Request/ |
+| 15 | Hadrons Deep Dive Request | COMPLETE | Particles/Hadrons_Deep_Dive_Request/ |
 | 16 | Higgs Boson Deep Dive Emulation | COMPLETE | Particles/Higgs_Boson_Deep_Dive_Emulation/ |
 | 17 | Kaon Deep Dive_ A Computational Model | COMPLETE | Particles/Kaon_Deep_Dive_A_Computational_Model/ |
 | 18 | Lepton Deep Dive_ One-Lepton Universe | COMPLETE | Particles/Lepton_Deep_Dive_One-Lepton_Universe/ |
@@ -210,7 +210,7 @@
 | # | Directory | Status | Intro Path |
 |---|-----------|--------|------------|
 | 1 | GlueballTheory | COMPLETE | CrossCutting/GlueballTheory/ |
-| 2 | LatitudinalGeophysics | PENDING | CrossCutting/LatitudinalGeophysics/ |
+| 2 | LatitudinalGeophysics | COMPLETE | CrossCutting/LatitudinalGeophysics/ |
 | 3 | MicroToMacro | PENDING | CrossCutting/MicroToMacro/ |
 | 4 | MicrobialEcosystem | PENDING | CrossCutting/MicrobialEcosystem/ |
 | 5 | SwarmMechanics | PENDING | CrossCutting/SwarmMechanics/ |
