@@ -143,8 +143,8 @@
 | 19 | A9-19 | Higgs_Boson_Coupling_Precision | COMPLETE | ExperimentalSignatures/A9-19/ |
 | 20 | A9-20 | Vector_Boson_Scattering_Measurements | COMPLETE | ExperimentalSignatures/A9-20/ |
 | 21 | A9-21 | Multi_Boson_Production_Cross_Sections | COMPLETE | ExperimentalSignatures/A9-21/ |
-| 22 | A9-22 | Supersymmetry_Searches_LHC_Run2_3 | WRITING | ExperimentalSignatures/A9-22/ |
-| 23 | A9-23 | Dark_Photon_LDMX_HPS_Searches | PENDING | ExperimentalSignatures/A9-23/ |
+| 22 | A9-22 | Supersymmetry_Searches_LHC_Run2_3 | COMPLETE | ExperimentalSignatures/A9-22/ |
+| 23 | A9-23 | Dark_Photon_LDMX_HPS_Searches | WRITING | ExperimentalSignatures/A9-23/ |
 | 24 | A9-24 | Axion_Like_Particle_CAST_OSQAR_Experiments | PENDING | ExperimentalSignatures/A9-24/ |
 | 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | PENDING | ExperimentalSignatures/A9-25/ |
 | 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | PENDING | ExperimentalSignatures/A9-26/ |
@@ -193,8 +193,8 @@
 | 22 | Neutron Deep Dive_ One-Nucleon Universe | COMPLETE | Particles/Neutron_Deep_Dive_One-Nucleon_Universe/ |
 | 23 | OEU_ Benevolent Particle Overpressure | COMPLETE | Particles/OEU_Benevolent_Particle_Overpressure/ |
 | 24 | Particle Fusion Deep Dive Request | COMPLETE | Particles/Particle_Fusion_Deep_Dive_Request/ |
-| 25 | Photon Deep Dive Request | PENDING | Particles/Photon_Deep_Dive_Request/ |
-| 26 | Pines Demon_ Electron Oscillation Discovery | PENDING | Particles/Pines_Demon_Electron_Oscillation_Discovery/ |
+| 25 | Photon Deep Dive Request | COMPLETE | Particles/Photon_Deep_Dive_Request/ |
+| 26 | Pines Demon_ Electron Oscillation Discovery | COMPLETE | Particles/Pines_Demon_Electron_Oscillation_Discovery/ |
 | 27 | Pion Deep Dive_ One-Pion Universe | PENDING | Particles/Pion_Deep_Dive_One-Pion_Universe/ |
 | 28 | Proton Deep Dive Emulation | PENDING | Particles/Proton_Deep_Dive_Emulation/ |
 | 29 | Scalar Boson Deep Dive Request | PENDING | Particles/Scalar_Boson_Deep_Dive_Request/ |
