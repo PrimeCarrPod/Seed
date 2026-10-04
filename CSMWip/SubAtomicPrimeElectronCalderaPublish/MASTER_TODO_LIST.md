@@ -36,7 +36,7 @@
 | # | Paper ID | Title | Status | Intro Path |
 |---|----------|-------|--------|------------|
 | 1 | A1-01 | Worldline_Proper_Time_Quantization | COMPLETE | Foundation/A1-01/ |
-| 2 | A1-02 | Topological_Winding_Numbers | READING | Foundation/A1-02/ |
+| 2 | A1-02 | Topological_Winding_Numbers | COMPLETE | Foundation/A1-02/ |
 | 3 | A1-03 | Double_Cover_SU2_Spin | PENDING | Foundation/A1-03/ |
 | 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | PENDING | Foundation/A1-04/ |
 | 5 | A1-05 | Worldline_Stability_RH | PENDING | Foundation/A1-05/ |
@@ -75,7 +75,7 @@
 
 | # | Paper ID | Title | Status | Intro Path |
 |---|----------|-------|--------|------------|
-| 1 | A8-01 | Cosmology_&_Astrophysics_From_Prime_Electron | PENDING | CosmologyAstrophysics/A8-01/ |
+| 1 | A8-01 | Cosmology_&_Astrophysics_From_Prime_Electron | COMPLETE | CosmologyAstrophysics/A8-01/ |
 | 2 | A8-02 | Dark_Matter_Direct_Detection_Techniques | PENDING | CosmologyAstrophysics/A8-02/ |
 | 3 | A8-03 | CMB_Polarization_Inflation_Constraints | PENDING | CosmologyAstrophysics/A8-03/ |
 | 4 | A8-04 | Baryon_Acoustic_Oscillation_Measurements | PENDING | CosmologyAstrophysics/A8-04/ |
