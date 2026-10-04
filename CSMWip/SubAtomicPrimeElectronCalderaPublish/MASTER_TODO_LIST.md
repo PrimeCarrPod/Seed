@@ -39,8 +39,8 @@
 | 2 | A1-02 | Topological_Winding_Numbers | COMPLETE | Foundation/A1-02/ |
 | 3 | A1-03 | Double_Cover_SU2_Spin | COMPLETE | Foundation/A1-03/ |
 | 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | COMPLETE | Foundation/A1-04/ |
-| 5 | A1-05 | Worldline_Stability_RH | READING | Foundation/A1-05/ |
-| 6 | A1-06 | Vertex_Interaction_Points | PENDING | Foundation/A1-06/ |
+| 5 | A1-05 | Worldline_Stability_RH | COMPLETE | Foundation/A1-05/ |
+| 6 | A1-06 | Vertex_Interaction_Points | READING | Foundation/A1-06/ |
 | 7 | A1-07 | Pair_Creation_Annihilation | PENDING | Foundation/A1-07/ |
 | 8 | A1-08 | Proper_Time_Fluctuation_Spectrum | PENDING | Foundation/A1-08/ |
 | 9 | A1-09 | Compton_Scale_From_Prime_Count | PENDING | Foundation/A1-09/ |
@@ -79,7 +79,7 @@
 | 2 | A8-02 | Dark_Matter_Direct_Detection_Techniques | COMPLETE | CosmologyAstrophysics/A8-02/ |
 | 3 | A8-03 | CMB_Polarization_Inflation_Constraints | COMPLETE | CosmologyAstrophysics/A8-03/ |
 | 4 | A8-04 | Baryon_Acoustic_Oscillation_Measurements | COMPLETE | CosmologyAstrophysics/A8-04/ |
-| 5 | A8-05 | Neutrino_Cosmology_Mass_Hierarchy_Probes | PENDING | CosmologyAstrophysics/A8-05/ |
+| 5 | A8-05 | Neutrino_Cosmology_Mass_Hierarchy_Probes | COMPLETE | CosmologyAstrophysics/A8-05/ |
 | 6 | A8-06 | Dark_Energy_Dynamics_Probes | PENDING | CosmologyAstrophysics/A8-06/ |
 | 7 | A8-07 | Galaxy_Cluster_Counting_Methods | PENDING | CosmologyAstrophysics/A8-07/ |
 | 8 | A8-08 | Weak_Gravitational_Lensing_Surveys | PENDING | CosmologyAstrophysics/A8-08/ |
@@ -128,8 +128,8 @@
 | 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | COMPLETE | ExperimentalSignatures/A9-04/ |
 | 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | COMPLETE | ExperimentalSignatures/A9-05/ |
 | 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | COMPLETE | ExperimentalSignatures/A9-06/ |
-| 7 | A9-07 | CMB_BMode_BICEP_Arrays | WRITING | ExperimentalSignatures/A9-07/ |
-| 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | PENDING | ExperimentalSignatures/A9-08/ |
+| 7 | A9-07 | CMB_BMode_BICEP_Arrays | COMPLETE | ExperimentalSignatures/A9-07/ |
+| 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | WRITING | ExperimentalSignatures/A9-08/ |
 | 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | PENDING | ExperimentalSignatures/A9-09/ |
 | 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | PENDING | ExperimentalSignatures/A9-10/ |
 | 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | PENDING | ExperimentalSignatures/A9-11/ |
@@ -176,8 +176,8 @@
 | 5 | Dark Matter Deep Dive Simulation | COMPLETE | Particles/Dark_Matter_Deep_Dive_Simulation/ |
 | 6 | Deep Dive_ Benevolent Neutralinos | COMPLETE | Particles/Deep_Dive_Benevolent_Neutralinos/ |
 | 7 | Deep Dive_ One-Quark Universe Architecture | COMPLETE | Particles/Deep_Dive_One-Quark_Universe_Architecture/ |
-| 8 | Deep Dive_ Tau Neutrino Universe | PENDING | Particles/Deep_Dive_Tau_Neutrino_Universe/ |
-| 9 | Deep Dive_ Tau Particle Benevolence | PENDING | Particles/Deep_Dive_Tau_Particle_Benevolence/ |
+| 8 | Deep Dive_ Tau Neutrino Universe | COMPLETE | Particles/Deep_Dive_Tau_Neutrino_Universe/ |
+| 9 | Deep Dive_ Tau Particle Benevolence | COMPLETE | Particles/Deep_Dive_Tau_Particle_Benevolence/ |
 | 10 | Electron Neutrino Deep Dive | PENDING | Particles/Electron_Neutrino_Deep_Dive/ |
 | 11 | Emulating Unique Electron Properties | PENDING | Particles/Emulating_Unique_Electron_Properties/ |
 | 12 | Gauge Boson Deep Dive Request | PENDING | Particles/Gauge_Boson_Deep_Dive_Request/ |
