@@ -147,8 +147,8 @@
 | 23 | A9-23 | Dark_Photon_LDMX_HPS_Searches | COMPLETE | ExperimentalSignatures/A9-23/ |
 | 24 | A9-24 | Axion_Like_Particle_CAST_OSQAR_Experiments | COMPLETE | ExperimentalSignatures/A9-24/ |
 | 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | COMPLETE | ExperimentalSignatures/A9-25/ |
-| 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | WRITING | ExperimentalSignatures/A9-26/ |
-| 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | PENDING | ExperimentalSignatures/A9-27/ |
+| 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | COMPLETE | ExperimentalSignatures/A9-26/ |
+| 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | WRITING | ExperimentalSignatures/A9-27/ |
 | 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | PENDING | ExperimentalSignatures/A9-28/ |
 | 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | PENDING | ExperimentalSignatures/A9-29/ |
 | 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | PENDING | ExperimentalSignatures/A9-30/ |
@@ -198,8 +198,8 @@
 | 27 | Pion Deep Dive_ One-Pion Universe | COMPLETE | Particles/Pion_Deep_Dive_One-Pion_Universe/ |
 | 28 | Proton Deep Dive Emulation | COMPLETE | Particles/Proton_Deep_Dive_Emulation/ |
 | 29 | Scalar Boson Deep Dive Request | COMPLETE | Particles/Scalar_Boson_Deep_Dive_Request/ |
-| 30 | Seven-Dimensional Universe Research Request | PENDING | Particles/Seven-Dimensional_Universe_Research_Request/ |
-| 31 | Strong Force Deep Dive Request | PENDING | Particles/Strong_Force_Deep_Dive_Request/ |
+| 30 | Seven-Dimensional Universe Research Request | COMPLETE | Particles/Seven-Dimensional_Universe_Research_Request/ |
+| 31 | Strong Force Deep Dive Request | COMPLETE | Particles/Strong_Force_Deep_Dive_Request/ |
 | 32 | Vibrational Transference Deep Dive | PENDING | Particles/Vibrational_Transference_Deep_Dive/ |
 | 33 | W Z Boson Deep Dive Simulation | PENDING | Particles/W_Z_Boson_Deep_Dive_Simulation/ |
 
