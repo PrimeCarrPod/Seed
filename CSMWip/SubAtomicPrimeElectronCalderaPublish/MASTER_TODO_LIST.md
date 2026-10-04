@@ -151,8 +151,8 @@
 | 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | COMPLETE | ExperimentalSignatures/A9-27/ |
 | 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | COMPLETE | ExperimentalSignatures/A9-28/ |
 | 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | COMPLETE | ExperimentalSignatures/A9-29/ |
-| 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | WRITING | ExperimentalSignatures/A9-30/ |
-| 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | PENDING | ExperimentalSignatures/A9-31/ |
+| 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | COMPLETE | ExperimentalSignatures/A9-30/ |
+| 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | WRITING | ExperimentalSignatures/A9-31/ |
 | 32 | A9-32 | Silicon_Tracker_Performance_Optimization | PENDING | ExperimentalSignatures/A9-32/ |
 | 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | PENDING | ExperimentalSignatures/A9-33/ |
 | 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | PENDING | ExperimentalSignatures/A9-34/ |
