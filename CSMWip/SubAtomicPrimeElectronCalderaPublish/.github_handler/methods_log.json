@@ -6,6 +6,20 @@
       "success": false,
       "difficulty": "easy",
       "timestamp": "2026-10-04T01:18:30Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_2_staged_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:18:30Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_3_force_push",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:18:30Z"
     }
   ]
 }
