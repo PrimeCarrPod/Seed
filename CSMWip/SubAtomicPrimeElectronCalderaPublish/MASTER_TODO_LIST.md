@@ -49,7 +49,7 @@
 | 12 | A1-12 | Proper_Time_Operator | PENDING | Foundation/A1-12/ |
 | 13 | A1-13 | Worldline_Causal_Structure | PENDING | Foundation/A1-13/ |
 | 14 | A1-14 | Worldline_Metric_From_Gaps | PENDING | Foundation/A1-14/ |
-| 15 | A1-15 | Worldline_Geodesic_Equation | PENDING | Foundation/A1-15/ |
+| 15 | A1-15 | Worldline_Geodesic_Equation | COMPLETE | Foundation/A1-15/ |
 | 16 | A2-13 | Lepton_Flavor_Universality_Proof | PENDING | Foundation/A2-13/ |
 | 17 | A2-14 | Proton_Decay_From_Gap_Stability | PENDING | Foundation/A2-14/ |
 | 18 | A2-15 | Dark_Matter_From_Missing_Gaps | PENDING | Foundation/A2-15/ |
@@ -145,8 +145,8 @@
 | 21 | A9-21 | Multi_Boson_Production_Cross_Sections | COMPLETE | ExperimentalSignatures/A9-21/ |
 | 22 | A9-22 | Supersymmetry_Searches_LHC_Run2_3 | COMPLETE | ExperimentalSignatures/A9-22/ |
 | 23 | A9-23 | Dark_Photon_LDMX_HPS_Searches | COMPLETE | ExperimentalSignatures/A9-23/ |
-| 24 | A9-24 | Axion_Like_Particle_CAST_OSQAR_Experiments | WRITING | ExperimentalSignatures/A9-24/ |
-| 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | PENDING | ExperimentalSignatures/A9-25/ |
+| 24 | A9-24 | Axion_Like_Particle_CAST_OSQAR_Experiments | COMPLETE | ExperimentalSignatures/A9-24/ |
+| 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | WRITING | ExperimentalSignatures/A9-25/ |
 | 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | PENDING | ExperimentalSignatures/A9-26/ |
 | 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | PENDING | ExperimentalSignatures/A9-27/ |
 | 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | PENDING | ExperimentalSignatures/A9-28/ |
@@ -197,7 +197,7 @@
 | 26 | Pines Demon_ Electron Oscillation Discovery | COMPLETE | Particles/Pines_Demon_Electron_Oscillation_Discovery/ |
 | 27 | Pion Deep Dive_ One-Pion Universe | COMPLETE | Particles/Pion_Deep_Dive_One-Pion_Universe/ |
 | 28 | Proton Deep Dive Emulation | COMPLETE | Particles/Proton_Deep_Dive_Emulation/ |
-| 29 | Scalar Boson Deep Dive Request | PENDING | Particles/Scalar_Boson_Deep_Dive_Request/ |
+| 29 | Scalar Boson Deep Dive Request | COMPLETE | Particles/Scalar_Boson_Deep_Dive_Request/ |
 | 30 | Seven-Dimensional Universe Research Request | PENDING | Particles/Seven-Dimensional_Universe_Research_Request/ |
 | 31 | Strong Force Deep Dive Request | PENDING | Particles/Strong_Force_Deep_Dive_Request/ |
 | 32 | Vibrational Transference Deep Dive | PENDING | Particles/Vibrational_Transference_Deep_Dive/ |
