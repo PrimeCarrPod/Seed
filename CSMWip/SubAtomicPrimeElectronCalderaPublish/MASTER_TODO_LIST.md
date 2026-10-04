@@ -50,7 +50,7 @@
 | 13 | A1-13 | Worldline_Causal_Structure | PENDING | Foundation/A1-13/ |
 | 14 | A1-14 | Worldline_Metric_From_Gaps | PENDING | Foundation/A1-14/ |
 | 15 | A1-15 | Worldline_Geodesic_Equation | COMPLETE | Foundation/A1-15/ |
-| 16 | A2-13 | Lepton_Flavor_Universality_Proof | PENDING | Foundation/A2-13/ |
+| 16 | A2-13 | Lepton_Flavor_Universality_Proof | COMPLETE | Foundation/A2-13/ |
 | 17 | A2-14 | Proton_Decay_From_Gap_Stability | PENDING | Foundation/A2-14/ |
 | 18 | A2-15 | Dark_Matter_From_Missing_Gaps | PENDING | Foundation/A2-15/ |
 | 19 | A2-16 | Baryon_Asymmetry_From_Worldline_Orientation | PENDING | Foundation/A2-16/ |
@@ -146,8 +146,8 @@
 | 22 | A9-22 | Supersymmetry_Searches_LHC_Run2_3 | COMPLETE | ExperimentalSignatures/A9-22/ |
 | 23 | A9-23 | Dark_Photon_LDMX_HPS_Searches | COMPLETE | ExperimentalSignatures/A9-23/ |
 | 24 | A9-24 | Axion_Like_Particle_CAST_OSQAR_Experiments | COMPLETE | ExperimentalSignatures/A9-24/ |
-| 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | WRITING | ExperimentalSignatures/A9-25/ |
-| 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | PENDING | ExperimentalSignatures/A9-26/ |
+| 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | COMPLETE | ExperimentalSignatures/A9-25/ |
+| 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | WRITING | ExperimentalSignatures/A9-26/ |
 | 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | PENDING | ExperimentalSignatures/A9-27/ |
 | 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | PENDING | ExperimentalSignatures/A9-28/ |
 | 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | PENDING | ExperimentalSignatures/A9-29/ |
