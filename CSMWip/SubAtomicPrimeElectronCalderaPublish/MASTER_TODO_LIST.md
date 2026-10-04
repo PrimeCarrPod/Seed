@@ -154,8 +154,8 @@
 | 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | COMPLETE | ExperimentalSignatures/A9-30/ |
 | 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | COMPLETE | ExperimentalSignatures/A9-31/ |
 | 32 | A9-32 | Silicon_Tracker_Performance_Optimization | COMPLETE | ExperimentalSignatures/A9-32/ |
-| 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | WRITING | ExperimentalSignatures/A9-33/ |
-| 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | PENDING | ExperimentalSignatures/A9-34/ |
+| 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | COMPLETE | ExperimentalSignatures/A9-33/ |
+| 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | WRITING | ExperimentalSignatures/A9-34/ |
 | 35 | A9-35 | Trigger_System_Rate_Optimizations | PENDING | ExperimentalSignatures/A9-35/ |
 | 36 | A9-36 | Data_Acquisition_Bandwidth_Management | PENDING | ExperimentalSignatures/A9-36/ |
 | 37 | A9-37 | Machine_Learning_Boosted_Decision_Trees | PENDING | ExperimentalSignatures/A9-37/ |
