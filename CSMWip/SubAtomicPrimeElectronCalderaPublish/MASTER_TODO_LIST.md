@@ -80,7 +80,7 @@
 | 3 | A8-03 | CMB_Polarization_Inflation_Constraints | COMPLETE | CosmologyAstrophysics/A8-03/ |
 | 4 | A8-04 | Baryon_Acoustic_Oscillation_Measurements | COMPLETE | CosmologyAstrophysics/A8-04/ |
 | 5 | A8-05 | Neutrino_Cosmology_Mass_Hierarchy_Probes | COMPLETE | CosmologyAstrophysics/A8-05/ |
-| 6 | A8-06 | Dark_Energy_Dynamics_Probes | PENDING | CosmologyAstrophysics/A8-06/ |
+| 6 | A8-06 | Dark_Energy_Dynamics_Probes | COMPLETE | CosmologyAstrophysics/A8-06/ |
 | 7 | A8-07 | Galaxy_Cluster_Counting_Methods | PENDING | CosmologyAstrophysics/A8-07/ |
 | 8 | A8-08 | Weak_Gravitational_Lensing_Surveys | PENDING | CosmologyAstrophysics/A8-08/ |
 | 9 | A8-09 | CMB_Spectral_Distortions_Recombination | PENDING | CosmologyAstrophysics/A8-09/ |
@@ -129,8 +129,8 @@
 | 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | COMPLETE | ExperimentalSignatures/A9-05/ |
 | 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | COMPLETE | ExperimentalSignatures/A9-06/ |
 | 7 | A9-07 | CMB_BMode_BICEP_Arrays | COMPLETE | ExperimentalSignatures/A9-07/ |
-| 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | WRITING | ExperimentalSignatures/A9-08/ |
-| 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | PENDING | ExperimentalSignatures/A9-09/ |
+| 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | COMPLETE | ExperimentalSignatures/A9-08/ |
+| 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | WRITING | ExperimentalSignatures/A9-09/ |
 | 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | PENDING | ExperimentalSignatures/A9-10/ |
 | 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | PENDING | ExperimentalSignatures/A9-11/ |
 | 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | PENDING | ExperimentalSignatures/A9-12/ |
@@ -178,7 +178,7 @@
 | 7 | Deep Dive_ One-Quark Universe Architecture | COMPLETE | Particles/Deep_Dive_One-Quark_Universe_Architecture/ |
 | 8 | Deep Dive_ Tau Neutrino Universe | COMPLETE | Particles/Deep_Dive_Tau_Neutrino_Universe/ |
 | 9 | Deep Dive_ Tau Particle Benevolence | COMPLETE | Particles/Deep_Dive_Tau_Particle_Benevolence/ |
-| 10 | Electron Neutrino Deep Dive | PENDING | Particles/Electron_Neutrino_Deep_Dive/ |
+| 10 | Electron Neutrino Deep Dive | COMPLETE | Particles/Electron_Neutrino_Deep_Dive/ |
 | 11 | Emulating Unique Electron Properties | PENDING | Particles/Emulating_Unique_Electron_Properties/ |
 | 12 | Gauge Boson Deep Dive Request | PENDING | Particles/Gauge_Boson_Deep_Dive_Request/ |
 | 13 | Gluon Deep Dive Emulation Request | PENDING | Particles/Gluon_Deep_Dive_Emulation_Request/ |
