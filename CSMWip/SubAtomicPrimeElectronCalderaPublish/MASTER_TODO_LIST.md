@@ -42,8 +42,8 @@
 | 5 | A1-05 | Worldline_Stability_RH | COMPLETE | Foundation/A1-05/ |
 | 6 | A1-06 | Vertex_Interaction_Points | COMPLETE | Foundation/A1-06/ |
 | 7 | A1-07 | Pair_Creation_Annihilation | COMPLETE | Foundation/A1-07/ |
-| 8 | A1-08 | Proper_Time_Fluctuation_Spectrum | READING | Foundation/A1-08/ |
-| 9 | A1-09 | Compton_Scale_From_Prime_Count | PENDING | Foundation/A1-09/ |
+| 8 | A1-08 | Proper_Time_Fluctuation_Spectrum | COMPLETE | Foundation/A1-08/ |
+| 9 | A1-09 | Compton_Scale_From_Prime_Count | READING | Foundation/A1-09/ |
 | 10 | A1-10 | Worldline_Segment_Books | PENDING | Foundation/A1-10/ |
 | 11 | A1-11 | Worldline_Self_Intersection | PENDING | Foundation/A1-11/ |
 | 12 | A1-12 | Proper_Time_Operator | PENDING | Foundation/A1-12/ |
@@ -133,8 +133,8 @@
 | 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | COMPLETE | ExperimentalSignatures/A9-09/ |
 | 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | COMPLETE | ExperimentalSignatures/A9-10/ |
 | 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | COMPLETE | ExperimentalSignatures/A9-11/ |
-| 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | WRITING | ExperimentalSignatures/A9-12/ |
-| 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | PENDING | ExperimentalSignatures/A9-13/ |
+| 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | COMPLETE | ExperimentalSignatures/A9-12/ |
+| 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | WRITING | ExperimentalSignatures/A9-13/ |
 | 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | PENDING | ExperimentalSignatures/A9-14/ |
 | 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | PENDING | ExperimentalSignatures/A9-15/ |
 | 16 | A9-16 | Kaon_Physics_KOTO_NA62_Experiments | PENDING | ExperimentalSignatures/A9-16/ |
