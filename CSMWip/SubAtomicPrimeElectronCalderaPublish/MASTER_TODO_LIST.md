@@ -157,8 +157,8 @@
 | 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | COMPLETE | ExperimentalSignatures/A9-33/ |
 | 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | COMPLETE | ExperimentalSignatures/A9-34/ |
 | 35 | A9-35 | Trigger_System_Rate_Optimizations | COMPLETE | ExperimentalSignatures/A9-35/ |
-| 36 | A9-36 | Data_Acquisition_Bandwidth_Management | WRITING | ExperimentalSignatures/A9-36/ |
-| 37 | A9-37 | Machine_Learning_Boosted_Decision_Trees | PENDING | ExperimentalSignatures/A9-37/ |
+| 36 | A9-36 | Data_Acquisition_Bandwidth_Management | COMPLETE | ExperimentalSignatures/A9-36/ |
+| 37 | A9-37 | Machine_Learning_Boosted_Decision_Trees | WRITING | ExperimentalSignatures/A9-37/ |
 | 38 | A9-38 | Quantum_Computing_Variational_Algorithms | PENDING | ExperimentalSignatures/A9-38/ |
 | 39 | A9-39 | Future_Circular_Collider_FCC_ee_hh | PENDING | ExperimentalSignatures/A9-39/ |
 | 40 | A9-40 | Muon_Collider_Conceptual_Design | PENDING | ExperimentalSignatures/A9-40/ |
