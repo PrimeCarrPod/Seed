@@ -84,7 +84,7 @@
 | 7 | A8-07 | Galaxy_Cluster_Counting_Methods | COMPLETE | CosmologyAstrophysics/A8-07/ |
 | 8 | A8-08 | Weak_Gravitational_Lensing_Surveys | COMPLETE | CosmologyAstrophysics/A8-08/ |
 | 9 | A8-09 | CMB_Spectral_Distortions_Recombination | COMPLETE | CosmologyAstrophysics/A8-09/ |
-| 10 | A8-10 | Reionization_History_21cm_Signals | PENDING | CosmologyAstrophysics/A8-10/ |
+| 10 | A8-10 | Reionization_History_21cm_Signals | COMPLETE | CosmologyAstrophysics/A8-10/ |
 | 11 | A8-11 | Primordial_Nucleosynthesis_Lithium_Problem | PENDING | CosmologyAstrophysics/A8-11/ |
 | 12 | A8-12 | Large_Scale_Structure_Formation_Simulations | PENDING | CosmologyAstrophysics/A8-12/ |
 | 13 | A8-13 | Redshift_Space_Distortions_RSD | PENDING | CosmologyAstrophysics/A8-13/ |
@@ -135,8 +135,8 @@
 | 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | COMPLETE | ExperimentalSignatures/A9-11/ |
 | 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | COMPLETE | ExperimentalSignatures/A9-12/ |
 | 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | COMPLETE | ExperimentalSignatures/A9-13/ |
-| 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | WRITING | ExperimentalSignatures/A9-14/ |
-| 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | PENDING | ExperimentalSignatures/A9-15/ |
+| 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | COMPLETE | ExperimentalSignatures/A9-14/ |
+| 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | WRITING | ExperimentalSignatures/A9-15/ |
 | 16 | A9-16 | Kaon_Physics_KOTO_NA62_Experiments | PENDING | ExperimentalSignatures/A9-16/ |
 | 17 | A9-17 | B_Meson_Factories_Belle_BaBar_Results | PENDING | ExperimentalSignatures/A9-17/ |
 | 18 | A9-18 | Top_Quark_Property_Measurements | PENDING | ExperimentalSignatures/A9-18/ |
