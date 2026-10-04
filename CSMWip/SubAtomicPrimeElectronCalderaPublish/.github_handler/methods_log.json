@@ -69,6 +69,20 @@
       "success": false,
       "difficulty": "easy",
       "timestamp": "2026-10-04T01:19:23Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/COMBINED_INTRO.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:24Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/content.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-10-04T01:19:28Z"
     }
   ]
 }
