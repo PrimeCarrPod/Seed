@@ -6,6 +6,13 @@
       "lines": 167,
       "strategies": 6,
       "timestamp": "2026-10-04T01:17:08Z"
+    },
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
+      "difficulty": "easy",
+      "lines": 6,
+      "strategies": 3,
+      "timestamp": "2026-10-04T01:20:47Z"
     }
   }
 }
