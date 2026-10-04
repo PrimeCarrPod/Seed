@@ -124,7 +124,7 @@
 |---|----------|-------|--------|------------|
 | 1 | A9-01 | Experimental_Signatures_&_Future_Tests | COMPLETE | ExperimentalSignatures/A9-01/ |
 | 2 | A9-02 | Electron_g2_Anomalous_Magnetic_Moment | COMPLETE | ExperimentalSignatures/A9-02/ |
-| 3 | A9-03 | Electric_Dipole_Moment_ACME_Searches | PENDING | ExperimentalSignatures/A9-03/ |
+| 3 | A9-03 | Electric_Dipole_Moment_ACME_Searches | WRITING | ExperimentalSignatures/A9-03/ |
 | 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | PENDING | ExperimentalSignatures/A9-04/ |
 | 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | PENDING | ExperimentalSignatures/A9-05/ |
 | 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | PENDING | ExperimentalSignatures/A9-06/ |
