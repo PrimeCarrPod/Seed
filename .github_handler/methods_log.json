@@ -69,6 +69,20 @@
       "success": false,
       "difficulty": "easy",
       "timestamp": "2026-10-04T01:20:54Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:20:55Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_keymaker.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:20:59Z"
     }
   ]
 }
