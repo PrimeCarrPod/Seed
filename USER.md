@@ -7,6 +7,10 @@ _Learn about the person you're helping. Update this as you go._
 - **Pronouns:** _(optional)_
 - **Timezone:** America/Los_Angeles
 - **Location:** Santa Cruz, California, United States of America
+- **Timezone:** America/Los_Angeles
+- **Location:** Santa Cruz, California, United States of America
+- **Timezone:** America/Los_Angeles
+- **Location:** Santa Cruz, California, United States of America
 - **Notes:**
 
 ## Context
