@@ -140,8 +140,8 @@
 | 16 | A9-16 | Kaon_Physics_KOTO_NA62_Experiments | COMPLETE | ExperimentalSignatures/A9-16/ |
 | 17 | A9-17 | B_Meson_Factories_Belle_BaBar_Results | COMPLETE | ExperimentalSignatures/A9-17/ |
 | 18 | A9-18 | Top_Quark_Property_Measurements | COMPLETE | ExperimentalSignatures/A9-18/ |
-| 19 | A9-19 | Higgs_Boson_Coupling_Precision | WRITING | ExperimentalSignatures/A9-19/ |
-| 20 | A9-20 | Vector_Boson_Scattering_Measurements | PENDING | ExperimentalSignatures/A9-20/ |
+| 19 | A9-19 | Higgs_Boson_Coupling_Precision | COMPLETE | ExperimentalSignatures/A9-19/ |
+| 20 | A9-20 | Vector_Boson_Scattering_Measurements | WRITING | ExperimentalSignatures/A9-20/ |
 | 21 | A9-21 | Multi_Boson_Production_Cross_Sections | PENDING | ExperimentalSignatures/A9-21/ |
 | 22 | A9-22 | Supersymmetry_Searches_LHC_Run2_3 | PENDING | ExperimentalSignatures/A9-22/ |
 | 23 | A9-23 | Dark_Photon_LDMX_HPS_Searches | PENDING | ExperimentalSignatures/A9-23/ |
@@ -190,7 +190,7 @@
 | 19 | Magneton Deep Dive_ Benevolent Monopole | COMPLETE | Particles/Magneton_Deep_Dive_Benevolent_Monopole/ |
 | 20 | Muon Deep Dive_ One-Particle Universe | COMPLETE | Particles/Muon_Deep_Dive_One-Particle_Universe/ |
 | 21 | Muon Neutrino Deep Dive Simulation | COMPLETE | Particles/Muon_Neutrino_Deep_Dive_Simulation/ |
-| 22 | Neutron Deep Dive_ One-Nucleon Universe | PENDING | Particles/Neutron_Deep_Dive_One-Nucleon_Universe/ |
+| 22 | Neutron Deep Dive_ One-Nucleon Universe | COMPLETE | Particles/Neutron_Deep_Dive_One-Nucleon_Universe/ |
 | 23 | OEU_ Benevolent Particle Overpressure | PENDING | Particles/OEU_Benevolent_Particle_Overpressure/ |
 | 24 | Particle Fusion Deep Dive Request | PENDING | Particles/Particle_Fusion_Deep_Dive_Request/ |
 | 25 | Photon Deep Dive Request | PENDING | Particles/Photon_Deep_Dive_Request/ |
