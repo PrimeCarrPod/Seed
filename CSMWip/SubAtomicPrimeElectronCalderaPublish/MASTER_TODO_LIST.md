@@ -155,8 +155,8 @@
 | 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | COMPLETE | ExperimentalSignatures/A9-31/ |
 | 32 | A9-32 | Silicon_Tracker_Performance_Optimization | COMPLETE | ExperimentalSignatures/A9-32/ |
 | 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | COMPLETE | ExperimentalSignatures/A9-33/ |
-| 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | WRITING | ExperimentalSignatures/A9-34/ |
-| 35 | A9-35 | Trigger_System_Rate_Optimizations | PENDING | ExperimentalSignatures/A9-35/ |
+| 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | COMPLETE | ExperimentalSignatures/A9-34/ |
+| 35 | A9-35 | Trigger_System_Rate_Optimizations | WRITING | ExperimentalSignatures/A9-35/ |
 | 36 | A9-36 | Data_Acquisition_Bandwidth_Management | PENDING | ExperimentalSignatures/A9-36/ |
 | 37 | A9-37 | Machine_Learning_Boosted_Decision_Trees | PENDING | ExperimentalSignatures/A9-37/ |
 | 38 | A9-38 | Quantum_Computing_Variational_Algorithms | PENDING | ExperimentalSignatures/A9-38/ |
@@ -213,7 +213,7 @@
 | 2 | LatitudinalGeophysics | COMPLETE | CrossCutting/LatitudinalGeophysics/ |
 | 3 | MicroToMacro | COMPLETE | CrossCutting/MicroToMacro/ |
 | 4 | MicrobialEcosystem | COMPLETE | CrossCutting/MicrobialEcosystem/ |
-| 5 | SwarmMechanics | PENDING | CrossCutting/SwarmMechanics/ |
+| 5 | SwarmMechanics | COMPLETE | CrossCutting/SwarmMechanics/ |
 
 ---
 
@@ -236,8 +236,8 @@
 | A (Foundation) | 33 | 33 | 0 | 0 | 0 | 0 | 0 | 0 |
 | B (Cosmology) | 40 | 40 | 0 | 0 | 0 | 0 | 0 | 0 |
 | C (Experimental) | 40 | 40 | 0 | 0 | 0 | 0 | 0 | 0 |
-| D (Particles+CC) | ~35 | ~35 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **TOTAL** | **~148** | **~148** | **0** | **0** | **0** | **0** | **0** | **0** |
+| D (Particles+CC) | ~38 | 0 | 0 | 0 | 0 | 0 | 0 | 38 |
+| **TOTAL** | **~148** | **110** | **0** | **0** | **0** | **0** | **0** | **38** |
 
 ---
 
