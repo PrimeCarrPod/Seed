@@ -35,8 +35,8 @@
 
 | # | Paper ID | Title | Status | Intro Path |
 |---|----------|-------|--------|------------|
-| 1 | A1-01 | Worldline_Proper_Time_Quantization | READING | Foundation/A1-01/ |
-| 2 | A1-02 | Topological_Winding_Numbers | PENDING | Foundation/A1-02/ |
+| 1 | A1-01 | Worldline_Proper_Time_Quantization | COMPLETE | Foundation/A1-01/ |
+| 2 | A1-02 | Topological_Winding_Numbers | READING | Foundation/A1-02/ |
 | 3 | A1-03 | Double_Cover_SU2_Spin | PENDING | Foundation/A1-03/ |
 | 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | PENDING | Foundation/A1-04/ |
 | 5 | A1-05 | Worldline_Stability_RH | PENDING | Foundation/A1-05/ |
@@ -170,7 +170,7 @@
 | # | Directory | Status | Intro Path |
 |---|-----------|--------|------------|
 | 1 | Axion Deep Dive Emulation | COMPLETE | Particles/Axion_Deep_Dive_Emulation/ |
-| 2 | Baryon Deep Dive_ One-Particle Universe | PENDING | Particles/Baryon_Deep_Dive_One-Particle_Universe/ |
+| 2 | Baryon Deep Dive_ One-Particle Universe | COMPLETE | Particles/Baryon_Deep_Dive_One-Particle_Universe/ |
 | 3 | Boson Deep Dive Architecture Emulation | PENDING | Particles/Boson_Deep_Dive_Architecture_Emulation/ |
 | 4 | Boson Deep Dive_ A Universe | PENDING | Particles/Boson_Deep_Dive_A_Universe/ |
 | 5 | Dark Matter Deep Dive Simulation | PENDING | Particles/Dark_Matter_Deep_Dive_Simulation/ |
