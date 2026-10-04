@@ -169,7 +169,7 @@
 
 | # | Directory | Status | Intro Path |
 |---|-----------|--------|------------|
-| 1 | Axion Deep Dive Emulation | PENDING | Particles/Axion_Deep_Dive_Emulation/ |
+| 1 | Axion Deep Dive Emulation | COMPLETE | Particles/Axion_Deep_Dive_Emulation/ |
 | 2 | Baryon Deep Dive_ One-Particle Universe | PENDING | Particles/Baryon_Deep_Dive_One-Particle_Universe/ |
 | 3 | Boson Deep Dive Architecture Emulation | PENDING | Particles/Boson_Deep_Dive_Architecture_Emulation/ |
 | 4 | Boson Deep Dive_ A Universe | PENDING | Particles/Boson_Deep_Dive_A_Universe/ |
