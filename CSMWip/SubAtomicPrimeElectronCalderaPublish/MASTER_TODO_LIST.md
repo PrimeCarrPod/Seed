@@ -43,8 +43,8 @@
 | 6 | A1-06 | Vertex_Interaction_Points | COMPLETE | Foundation/A1-06/ |
 | 7 | A1-07 | Pair_Creation_Annihilation | COMPLETE | Foundation/A1-07/ |
 | 8 | A1-08 | Proper_Time_Fluctuation_Spectrum | COMPLETE | Foundation/A1-08/ |
-| 9 | A1-09 | Compton_Scale_From_Prime_Count | READING | Foundation/A1-09/ |
-| 10 | A1-10 | Worldline_Segment_Books | PENDING | Foundation/A1-10/ |
+| 9 | A1-09 | Compton_Scale_From_Prime_Count | COMPLETE | Foundation/A1-09/ |
+| 10 | A1-10 | Worldline_Segment_Books | READING | Foundation/A1-10/ |
 | 11 | A1-11 | Worldline_Self_Intersection | PENDING | Foundation/A1-11/ |
 | 12 | A1-12 | Proper_Time_Operator | PENDING | Foundation/A1-12/ |
 | 13 | A1-13 | Worldline_Causal_Structure | PENDING | Foundation/A1-13/ |
@@ -83,7 +83,7 @@
 | 6 | A8-06 | Dark_Energy_Dynamics_Probes | COMPLETE | CosmologyAstrophysics/A8-06/ |
 | 7 | A8-07 | Galaxy_Cluster_Counting_Methods | COMPLETE | CosmologyAstrophysics/A8-07/ |
 | 8 | A8-08 | Weak_Gravitational_Lensing_Surveys | COMPLETE | CosmologyAstrophysics/A8-08/ |
-| 9 | A8-09 | CMB_Spectral_Distortions_Recombination | PENDING | CosmologyAstrophysics/A8-09/ |
+| 9 | A8-09 | CMB_Spectral_Distortions_Recombination | COMPLETE | CosmologyAstrophysics/A8-09/ |
 | 10 | A8-10 | Reionization_History_21cm_Signals | PENDING | CosmologyAstrophysics/A8-10/ |
 | 11 | A8-11 | Primordial_Nucleosynthesis_Lithium_Problem | PENDING | CosmologyAstrophysics/A8-11/ |
 | 12 | A8-12 | Large_Scale_Structure_Formation_Simulations | PENDING | CosmologyAstrophysics/A8-12/ |
@@ -134,8 +134,8 @@
 | 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | COMPLETE | ExperimentalSignatures/A9-10/ |
 | 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | COMPLETE | ExperimentalSignatures/A9-11/ |
 | 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | COMPLETE | ExperimentalSignatures/A9-12/ |
-| 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | WRITING | ExperimentalSignatures/A9-13/ |
-| 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | PENDING | ExperimentalSignatures/A9-14/ |
+| 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | COMPLETE | ExperimentalSignatures/A9-13/ |
+| 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | WRITING | ExperimentalSignatures/A9-14/ |
 | 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | PENDING | ExperimentalSignatures/A9-15/ |
 | 16 | A9-16 | Kaon_Physics_KOTO_NA62_Experiments | PENDING | ExperimentalSignatures/A9-16/ |
 | 17 | A9-17 | B_Meson_Factories_Belle_BaBar_Results | PENDING | ExperimentalSignatures/A9-17/ |
@@ -184,8 +184,8 @@
 | 13 | Gluon Deep Dive Emulation Request | COMPLETE | Particles/Gluon_Deep_Dive_Emulation_Request/ |
 | 14 | Graviton Deep Dive Technical Report | COMPLETE | Particles/Graviton_Deep_Dive_Technical_Report/ |
 | 15 | Hadrons Deep Dive Request | PENDING | Particles/Hadrons_Deep_Dive_Request/ |
-| 16 | Higgs Boson Deep Dive Emulation | PENDING | Particles/Higgs_Boson_Deep_Dive_Emulation/ |
-| 17 | Kaon Deep Dive_ A Computational Model | PENDING | Particles/Kaon_Deep_Dive_A_Computational_Model/ |
+| 16 | Higgs Boson Deep Dive Emulation | COMPLETE | Particles/Higgs_Boson_Deep_Dive_Emulation/ |
+| 17 | Kaon Deep Dive_ A Computational Model | COMPLETE | Particles/Kaon_Deep_Dive_A_Computational_Model/ |
 | 18 | Lepton Deep Dive_ One-Lepton Universe | PENDING | Particles/Lepton_Deep_Dive_One-Lepton_Universe/ |
 | 19 | Magneton Deep Dive_ Benevolent Monopole | PENDING | Particles/Magneton_Deep_Dive_Benevolent_Monopole/ |
 | 20 | Muon Deep Dive_ One-Particle Universe | PENDING | Particles/Muon_Deep_Dive_One-Particle_Universe/ |
