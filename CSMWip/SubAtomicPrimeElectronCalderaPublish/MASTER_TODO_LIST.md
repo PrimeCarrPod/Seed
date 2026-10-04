@@ -78,7 +78,7 @@
 | 1 | A8-01 | Cosmology_&_Astrophysics_From_Prime_Electron | COMPLETE | CosmologyAstrophysics/A8-01/ |
 | 2 | A8-02 | Dark_Matter_Direct_Detection_Techniques | COMPLETE | CosmologyAstrophysics/A8-02/ |
 | 3 | A8-03 | CMB_Polarization_Inflation_Constraints | COMPLETE | CosmologyAstrophysics/A8-03/ |
-| 4 | A8-04 | Baryon_Acoustic_Oscillation_Measurements | PENDING | CosmologyAstrophysics/A8-04/ |
+| 4 | A8-04 | Baryon_Acoustic_Oscillation_Measurements | COMPLETE | CosmologyAstrophysics/A8-04/ |
 | 5 | A8-05 | Neutrino_Cosmology_Mass_Hierarchy_Probes | PENDING | CosmologyAstrophysics/A8-05/ |
 | 6 | A8-06 | Dark_Energy_Dynamics_Probes | PENDING | CosmologyAstrophysics/A8-06/ |
 | 7 | A8-07 | Galaxy_Cluster_Counting_Methods | PENDING | CosmologyAstrophysics/A8-07/ |
@@ -127,8 +127,8 @@
 | 3 | A9-03 | Electric_Dipole_Moment_ACME_Searches | COMPLETE | ExperimentalSignatures/A9-03/ |
 | 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | COMPLETE | ExperimentalSignatures/A9-04/ |
 | 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | COMPLETE | ExperimentalSignatures/A9-05/ |
-| 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | WRITING | ExperimentalSignatures/A9-06/ |
-| 7 | A9-07 | CMB_BMode_BICEP_Arrays | PENDING | ExperimentalSignatures/A9-07/ |
+| 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | COMPLETE | ExperimentalSignatures/A9-06/ |
+| 7 | A9-07 | CMB_BMode_BICEP_Arrays | WRITING | ExperimentalSignatures/A9-07/ |
 | 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | PENDING | ExperimentalSignatures/A9-08/ |
 | 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | PENDING | ExperimentalSignatures/A9-09/ |
 | 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | PENDING | ExperimentalSignatures/A9-10/ |
@@ -175,7 +175,7 @@
 | 4 | Boson Deep Dive_ A Universe | COMPLETE | Particles/Boson_Deep_Dive_A_Universe/ |
 | 5 | Dark Matter Deep Dive Simulation | COMPLETE | Particles/Dark_Matter_Deep_Dive_Simulation/ |
 | 6 | Deep Dive_ Benevolent Neutralinos | COMPLETE | Particles/Deep_Dive_Benevolent_Neutralinos/ |
-| 7 | Deep Dive_ One-Quark Universe Architecture | PENDING | Particles/Deep_Dive_One-Quark_Universe_Architecture/ |
+| 7 | Deep Dive_ One-Quark Universe Architecture | COMPLETE | Particles/Deep_Dive_One-Quark_Universe_Architecture/ |
 | 8 | Deep Dive_ Tau Neutrino Universe | PENDING | Particles/Deep_Dive_Tau_Neutrino_Universe/ |
 | 9 | Deep Dive_ Tau Particle Benevolence | PENDING | Particles/Deep_Dive_Tau_Particle_Benevolence/ |
 | 10 | Electron Neutrino Deep Dive | PENDING | Particles/Electron_Neutrino_Deep_Dive/ |
