@@ -37,7 +37,7 @@
 |---|----------|-------|--------|------------|
 | 1 | A1-01 | Worldline_Proper_Time_Quantization | COMPLETE | Foundation/A1-01/ |
 | 2 | A1-02 | Topological_Winding_Numbers | COMPLETE | Foundation/A1-02/ |
-| 3 | A1-03 | Double_Cover_SU2_Spin | PENDING | Foundation/A1-03/ |
+| 3 | A1-03 | Double_Cover_SU2_Spin | READING | Foundation/A1-03/ |
 | 4 | A1-04 | Riemann_Zeros_Resonance_Frequencies | PENDING | Foundation/A1-04/ |
 | 5 | A1-05 | Worldline_Stability_RH | PENDING | Foundation/A1-05/ |
 | 6 | A1-06 | Vertex_Interaction_Points | PENDING | Foundation/A1-06/ |
@@ -76,7 +76,7 @@
 | # | Paper ID | Title | Status | Intro Path |
 |---|----------|-------|--------|------------|
 | 1 | A8-01 | Cosmology_&_Astrophysics_From_Prime_Electron | COMPLETE | CosmologyAstrophysics/A8-01/ |
-| 2 | A8-02 | Dark_Matter_Direct_Detection_Techniques | PENDING | CosmologyAstrophysics/A8-02/ |
+| 2 | A8-02 | Dark_Matter_Direct_Detection_Techniques | COMPLETE | CosmologyAstrophysics/A8-02/ |
 | 3 | A8-03 | CMB_Polarization_Inflation_Constraints | PENDING | CosmologyAstrophysics/A8-03/ |
 | 4 | A8-04 | Baryon_Acoustic_Oscillation_Measurements | PENDING | CosmologyAstrophysics/A8-04/ |
 | 5 | A8-05 | Neutrino_Cosmology_Mass_Hierarchy_Probes | PENDING | CosmologyAstrophysics/A8-05/ |
@@ -124,8 +124,8 @@
 |---|----------|-------|--------|------------|
 | 1 | A9-01 | Experimental_Signatures_&_Future_Tests | COMPLETE | ExperimentalSignatures/A9-01/ |
 | 2 | A9-02 | Electron_g2_Anomalous_Magnetic_Moment | COMPLETE | ExperimentalSignatures/A9-02/ |
-| 3 | A9-03 | Electric_Dipole_Moment_ACME_Searches | WRITING | ExperimentalSignatures/A9-03/ |
-| 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | PENDING | ExperimentalSignatures/A9-04/ |
+| 3 | A9-03 | Electric_Dipole_Moment_ACME_Searches | COMPLETE | ExperimentalSignatures/A9-03/ |
+| 4 | A9-04 | Proton_Decay_HyperK_SuperK_Searches | WRITING | ExperimentalSignatures/A9-04/ |
 | 5 | A9-05 | Neutrinoless_Double_Beta_Decay_Searches | PENDING | ExperimentalSignatures/A9-05/ |
 | 6 | A9-06 | Gravitational_Wave_LIGO_Virgo_Detectors | PENDING | ExperimentalSignatures/A9-06/ |
 | 7 | A9-07 | CMB_BMode_BICEP_Arrays | PENDING | ExperimentalSignatures/A9-07/ |
@@ -172,7 +172,7 @@
 | 1 | Axion Deep Dive Emulation | COMPLETE | Particles/Axion_Deep_Dive_Emulation/ |
 | 2 | Baryon Deep Dive_ One-Particle Universe | COMPLETE | Particles/Baryon_Deep_Dive_One-Particle_Universe/ |
 | 3 | Boson Deep Dive Architecture Emulation | COMPLETE | Particles/Boson_Deep_Dive_Architecture_Emulation/ |
-| 4 | Boson Deep Dive_ A Universe | PENDING | Particles/Boson_Deep_Dive_A_Universe/ |
+| 4 | Boson Deep Dive_ A Universe | COMPLETE | Particles/Boson_Deep_Dive_A_Universe/ |
 | 5 | Dark Matter Deep Dive Simulation | PENDING | Particles/Dark_Matter_Deep_Dive_Simulation/ |
 | 6 | Deep Dive_ Benevolent Neutralinos | PENDING | Particles/Deep_Dive_Benevolent_Neutralinos/ |
 | 7 | Deep Dive_ One-Quark Universe Architecture | PENDING | Particles/Deep_Dive_One-Quark_Universe_Architecture/ |
