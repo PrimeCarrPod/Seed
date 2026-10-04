@@ -160,8 +160,8 @@
 | 36 | A9-36 | Data_Acquisition_Bandwidth_Management | COMPLETE | ExperimentalSignatures/A9-36/ |
 | 37 | A9-37 | Machine_Learning_Boosted_Decision_Trees | COMPLETE | ExperimentalSignatures/A9-37/ |
 | 38 | A9-38 | Quantum_Computing_Variational_Algorithms | COMPLETE | ExperimentalSignatures/A9-38/ |
-| 39 | A9-39 | Future_Circular_Collider_FCC_ee_hh | WRITING | ExperimentalSignatures/A9-39/ |
-| 40 | A9-40 | Muon_Collider_Conceptual_Design | PENDING | ExperimentalSignatures/A9-40/ |
+| 39 | A9-39 | Future_Circular_Collider_FCC_ee_hh | COMPLETE | ExperimentalSignatures/A9-39/ |
+| 40 | A9-40 | Muon_Collider_Conceptual_Design | WRITING | ExperimentalSignatures/A9-40/ |
 
 ---
 
