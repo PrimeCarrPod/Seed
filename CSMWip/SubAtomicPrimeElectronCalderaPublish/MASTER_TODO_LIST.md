@@ -171,7 +171,7 @@
 |---|-----------|--------|------------|
 | 1 | Axion Deep Dive Emulation | COMPLETE | Particles/Axion_Deep_Dive_Emulation/ |
 | 2 | Baryon Deep Dive_ One-Particle Universe | COMPLETE | Particles/Baryon_Deep_Dive_One-Particle_Universe/ |
-| 3 | Boson Deep Dive Architecture Emulation | PENDING | Particles/Boson_Deep_Dive_Architecture_Emulation/ |
+| 3 | Boson Deep Dive Architecture Emulation | COMPLETE | Particles/Boson_Deep_Dive_Architecture_Emulation/ |
 | 4 | Boson Deep Dive_ A Universe | PENDING | Particles/Boson_Deep_Dive_A_Universe/ |
 | 5 | Dark Matter Deep Dive Simulation | PENDING | Particles/Dark_Matter_Deep_Dive_Simulation/ |
 | 6 | Deep Dive_ Benevolent Neutralinos | PENDING | Particles/Deep_Dive_Benevolent_Neutralinos/ |
