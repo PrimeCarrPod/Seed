@@ -152,8 +152,8 @@
 | 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | COMPLETE | ExperimentalSignatures/A9-28/ |
 | 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | COMPLETE | ExperimentalSignatures/A9-29/ |
 | 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | COMPLETE | ExperimentalSignatures/A9-30/ |
-| 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | WRITING | ExperimentalSignatures/A9-31/ |
-| 32 | A9-32 | Silicon_Tracker_Performance_Optimization | PENDING | ExperimentalSignatures/A9-32/ |
+| 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | COMPLETE | ExperimentalSignatures/A9-31/ |
+| 32 | A9-32 | Silicon_Tracker_Performance_Optimization | WRITING | ExperimentalSignatures/A9-32/ |
 | 33 | A9-33 | Calorimeter_Energy_Resolution_Studies | PENDING | ExperimentalSignatures/A9-33/ |
 | 34 | A9-34 | Particle_Identification_RICH_dEdx_Methods | PENDING | ExperimentalSignatures/A9-34/ |
 | 35 | A9-35 | Trigger_System_Rate_Optimizations | PENDING | ExperimentalSignatures/A9-35/ |
@@ -211,7 +211,7 @@
 |---|-----------|--------|------------|
 | 1 | GlueballTheory | COMPLETE | CrossCutting/GlueballTheory/ |
 | 2 | LatitudinalGeophysics | COMPLETE | CrossCutting/LatitudinalGeophysics/ |
-| 3 | MicroToMacro | PENDING | CrossCutting/MicroToMacro/ |
+| 3 | MicroToMacro | COMPLETE | CrossCutting/MicroToMacro/ |
 | 4 | MicrobialEcosystem | PENDING | CrossCutting/MicrobialEcosystem/ |
 | 5 | SwarmMechanics | PENDING | CrossCutting/SwarmMechanics/ |
 
