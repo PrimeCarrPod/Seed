@@ -1,4 +1,4 @@
-﻿
+
 bash
 {
   "command": "cat /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_37d0e0d7-09fc-4f58-98af-a271afd290b3/aegis-iron-man-session/CSMScripts/GITHUB_HANDLER.sh",
@@ -436,7 +436,7 @@ show_status() {
 }
 
 # ─── COMMAND DISPATCHER ────────────────────────────────────
-main() {
+master() {
     local action="${1:-}"
     shift || true
     
@@ -474,4 +474,4 @@ main() {
     esac
 }
 
-main "$@"
+master "$@"
