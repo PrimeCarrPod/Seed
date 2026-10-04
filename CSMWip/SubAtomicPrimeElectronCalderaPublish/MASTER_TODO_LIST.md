@@ -51,8 +51,8 @@
 | 14 | A1-14 | Worldline_Metric_From_Gaps | PENDING | Foundation/A1-14/ |
 | 15 | A1-15 | Worldline_Geodesic_Equation | COMPLETE | Foundation/A1-15/ |
 | 16 | A2-13 | Lepton_Flavor_Universality_Proof | COMPLETE | Foundation/A2-13/ |
-| 17 | A2-14 | Proton_Decay_From_Gap_Stability | PENDING | Foundation/A2-14/ |
-| 18 | A2-15 | Dark_Matter_From_Missing_Gaps | PENDING | Foundation/A2-15/ |
+| 17 | A2-14 | Proton_Decay_From_Gap_Stability | COMPLETE | Foundation/A2-14/ |
+| 18 | A2-15 | Dark_Matter_From_Missing_Gaps | COMPLETE | Foundation/A2-15/ |
 | 19 | A2-16 | Baryon_Asymmetry_From_Worldline_Orientation | PENDING | Foundation/A2-16/ |
 | 20 | A2-17 | Neutron_Antineutron_Oscillation_From_Gap_Tunneling | PENDING | Foundation/A2-17/ |
 | 21 | A2-18 | Flavor_Violating_Baryon_Decays | PENDING | Foundation/A2-18/ |
@@ -148,8 +148,8 @@
 | 24 | A9-24 | Axion_Like_Particle_CAST_OSQAR_Experiments | COMPLETE | ExperimentalSignatures/A9-24/ |
 | 25 | A9-25 | Sterile_Neutrino_Searches_Proton_Beams | COMPLETE | ExperimentalSignatures/A9-25/ |
 | 26 | A9-26 | Long_Lived_Particle_MATHUSLA_FASER | COMPLETE | ExperimentalSignatures/A9-26/ |
-| 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | WRITING | ExperimentalSignatures/A9-27/ |
-| 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | PENDING | ExperimentalSignatures/A9-28/ |
+| 27 | A9-27 | Exotic_Atom_Spectroscopy_Muonium_Positronium | COMPLETE | ExperimentalSignatures/A9-27/ |
+| 28 | A9-28 | Precision_QED_Lamb_Shift_Measurements | WRITING | ExperimentalSignatures/A9-28/ |
 | 29 | A9-29 | Hyperfine_Splitting_Hydrogen_Muonium | PENDING | ExperimentalSignatures/A9-29/ |
 | 30 | A9-30 | Recoil_Ion_Momentum_Spectroscopy_COLTRIMS | PENDING | ExperimentalSignatures/A9-30/ |
 | 31 | A9-31 | Time_Projection_Chamber_Technology_Advances | PENDING | ExperimentalSignatures/A9-31/ |
@@ -200,8 +200,8 @@
 | 29 | Scalar Boson Deep Dive Request | COMPLETE | Particles/Scalar_Boson_Deep_Dive_Request/ |
 | 30 | Seven-Dimensional Universe Research Request | COMPLETE | Particles/Seven-Dimensional_Universe_Research_Request/ |
 | 31 | Strong Force Deep Dive Request | COMPLETE | Particles/Strong_Force_Deep_Dive_Request/ |
-| 32 | Vibrational Transference Deep Dive | PENDING | Particles/Vibrational_Transference_Deep_Dive/ |
-| 33 | W Z Boson Deep Dive Simulation | PENDING | Particles/W_Z_Boson_Deep_Dive_Simulation/ |
+| 32 | Vibrational Transference Deep Dive | COMPLETE | Particles/Vibrational_Transference_Deep_Dive/ |
+| 33 | W Z Boson Deep Dive Simulation | COMPLETE | Particles/W_Z_Boson_Deep_Dive_Simulation/ |
 
 ---
 
