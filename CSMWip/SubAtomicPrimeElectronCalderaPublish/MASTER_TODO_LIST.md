@@ -82,7 +82,7 @@
 | 5 | A8-05 | Neutrino_Cosmology_Mass_Hierarchy_Probes | COMPLETE | CosmologyAstrophysics/A8-05/ |
 | 6 | A8-06 | Dark_Energy_Dynamics_Probes | COMPLETE | CosmologyAstrophysics/A8-06/ |
 | 7 | A8-07 | Galaxy_Cluster_Counting_Methods | COMPLETE | CosmologyAstrophysics/A8-07/ |
-| 8 | A8-08 | Weak_Gravitational_Lensing_Surveys | PENDING | CosmologyAstrophysics/A8-08/ |
+| 8 | A8-08 | Weak_Gravitational_Lensing_Surveys | COMPLETE | CosmologyAstrophysics/A8-08/ |
 | 9 | A8-09 | CMB_Spectral_Distortions_Recombination | PENDING | CosmologyAstrophysics/A8-09/ |
 | 10 | A8-10 | Reionization_History_21cm_Signals | PENDING | CosmologyAstrophysics/A8-10/ |
 | 11 | A8-11 | Primordial_Nucleosynthesis_Lithium_Problem | PENDING | CosmologyAstrophysics/A8-11/ |
@@ -132,8 +132,8 @@
 | 8 | A9-08 | Collider_Physics_ATLAS_CMS_Results | COMPLETE | ExperimentalSignatures/A9-08/ |
 | 9 | A9-09 | Precision_Atomic_Spectroscopy_Measurements | COMPLETE | ExperimentalSignatures/A9-09/ |
 | 10 | A9-10 | Dark_Matter_Direct_Detection_LZ_XENON | COMPLETE | ExperimentalSignatures/A9-10/ |
-| 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | WRITING | ExperimentalSignatures/A9-11/ |
-| 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | PENDING | ExperimentalSignatures/A9-12/ |
+| 11 | A9-11 | Dark_Matter_Indirect_Detection_Fermi_ATIC | COMPLETE | ExperimentalSignatures/A9-11/ |
+| 12 | A9-12 | Neutrino_Oscillation_T2K_NOvA_Experiments | WRITING | ExperimentalSignatures/A9-12/ |
 | 13 | A9-13 | Neutrino_Mass_KATRIN_Beta_Decay | PENDING | ExperimentalSignatures/A9-13/ |
 | 14 | A9-14 | Flavor_Changing_Neutral_Current_Searches | PENDING | ExperimentalSignatures/A9-14/ |
 | 15 | A9-15 | Rare_Muon_Decays_Mu3e_Mu2e | PENDING | ExperimentalSignatures/A9-15/ |
@@ -182,7 +182,7 @@
 | 11 | Emulating Unique Electron Properties | COMPLETE | Particles/Emulating_Unique_Electron_Properties/ |
 | 12 | Gauge Boson Deep Dive Request | COMPLETE | Particles/Gauge_Boson_Deep_Dive_Request/ |
 | 13 | Gluon Deep Dive Emulation Request | COMPLETE | Particles/Gluon_Deep_Dive_Emulation_Request/ |
-| 14 | Graviton Deep Dive Technical Report | PENDING | Particles/Graviton_Deep_Dive_Technical_Report/ |
+| 14 | Graviton Deep Dive Technical Report | COMPLETE | Particles/Graviton_Deep_Dive_Technical_Report/ |
 | 15 | Hadrons Deep Dive Request | PENDING | Particles/Hadrons_Deep_Dive_Request/ |
 | 16 | Higgs Boson Deep Dive Emulation | PENDING | Particles/Higgs_Boson_Deep_Dive_Emulation/ |
 | 17 | Kaon Deep Dive_ A Computational Model | PENDING | Particles/Kaon_Deep_Dive_A_Computational_Model/ |
