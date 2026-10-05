@@ -1,0 +1,95 @@
+{
+  "methods": [
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:18:30Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_2_staged_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:18:30Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_3_force_push",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:18:30Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:03Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:05Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_keymaker.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:12Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_keymaker.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:13Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_elsegundo.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:16Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_elsegundo.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:17Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/COMBINED_INTRO.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:23Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/COMBINED_INTRO.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "easy",
+      "timestamp": "2026-10-04T01:19:24Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/content.md",
+      "method": "strategy_1_direct_commit",
+      "success": false,
+      "difficulty": "medium",
+      "timestamp": "2026-10-04T01:19:28Z"
+    },
+    {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/content.md",
+      "method": "strategy_2_staged_commit",
+      "success": true,
+      "difficulty": "medium",
+      "timestamp": "2026-10-04T01:19:29Z"
+    }
+  ]
+}
