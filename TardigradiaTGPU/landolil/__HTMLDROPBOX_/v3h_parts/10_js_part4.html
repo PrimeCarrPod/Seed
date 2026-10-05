@@ -1,0 +1,574 @@
+// MAIN SIMULATION
+  const sim = {
+    scene: null,
+    camera: null,
+    renderer: null,
+    composer: null,
+    bloomPass: null,
+    orbitControls: null,
+    particles: [],
+    particleMeshes: [],
+    trails: [],
+    trailHistory: [],
+    iconMode: false,
+    swarmMode: false,
+    speed: 1.0,
+    density: 1700,
+    loopStartTime: 0,
+    cycleCount: 1,
+    maxLoopDuration: 5000,
+    params: {},
+    randomParams: {},
+    animationId: null,
+    lastTime: 0,
+    foldActive: false,
+    foldIntensity: 1.0,
+    flowViscosity: 0.3,
+    flowSurfaceTension: 0.072,
+    flowVelocity: 1.0,
+    flowTurbulence: 0.15,
+    flowVortex: 0.5,
+    flowCompressibility: 0.1,
+
+    init(openingParams) {
+      this.params = { ...openingParams };
+      this.randomParams = {};
+      Object.keys(this.params).forEach(key => {
+        if (this.params['random_' + key]) this.randomParams[key] = true;
+      });
+
+      // Resolution mapping
+      const resMap = { low: 500, medium: 1700, high: 5000, ultra: 15000, extreme: 50000, insane: 150000 };
+      this.density = resMap[this.params.resolution] || 1700;
+      document.getElementById('dens-val').textContent = this.density;
+
+      // Apply physics params
+      this.speed = this.params.larmorFreq || 1.0;
+      document.getElementById('speed-val').textContent = this.speed.toFixed(1) + '×';
+
+      this.foldIntensity = this.params.foldIntensity || 1.0;
+
+      this.setupThreeJS();
+      this.createParticles();
+      this.buildLegend();
+      initChart();
+      initIconTextures();
+      Flight.init(this.camera, this.orbitControls);
+      this.loopStartTime = performance.now();
+      this.animate();
+      androidBridge('onSimInit', {particles: this.particles.length});
+    },
+
+    setupThreeJS() {
+      this.scene = new THREE.Scene();
+      this.scene.background = new THREE.Color(0x020208);
+
+      this.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+      this.camera.position.set(0, 5, 25);
+
+      this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      this.renderer.toneMappingExposure = 1.2;
+      document.getElementById('canvas-container').appendChild(this.renderer.domElement);
+
+      this.orbitControls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+      this.orbitControls.enableDamping = true;
+      this.orbitControls.dampingFactor = 0.05;
+      this.orbitControls.minDistance = 3;
+      this.orbitControls.maxDistance = 120;
+
+      // Post-processing
+      const renderScene = new THREE.RenderPass(this.scene, this.camera);
+      this.bloomPass = new THREE.UnrealBloomPass(
+        new THREE.Vector2(window.innerWidth, window.innerHeight),
+        CFG.bloomStrength, 0.4, 0.85
+      );
+      this.composer = new THREE.EffectComposer(this.renderer);
+      this.composer.addPass(renderScene);
+      this.composer.addPass(this.bloomPass);
+
+      window.addEventListener('resize', () => this.onResize());
+    },
+
+    onResize() {
+      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      this.composer.setSize(window.innerWidth, window.innerHeight);
+    },
+
+    createParticles() {
+      const types = Object.keys(PARTICLES);
+      const geometry = new THREE.BufferGeometry();
+      const positions = new Float32Array(this.density * 3);
+      const colors = new Float32Array(this.density * 3);
+      const sizes = new Float32Array(this.density);
+      const typeIndices = new Float32Array(this.density);
+      const lifetimes = new Float32Array(this.density);
+      const ages = new Float32Array(this.density);
+      const velocities = new Float32Array(this.density * 3);
+
+      for (let i = 0; i < this.density; i++) {
+        const typeIdx = Math.floor(Math.random() * types.length);
+        const type = types[typeIdx];
+        const p = PARTICLES[type];
+
+        // Position in sphere
+        const r = Math.random() * 20;
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.acos(2 * Math.random() - 1);
+        positions[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+        positions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+        positions[i * 3 + 2] = r * Math.cos(phi);
+
+        const color = new THREE.Color(p.color);
+        colors[i * 3] = color.r;
+        colors[i * 3 + 1] = color.g;
+        colors[i * 3 + 2] = color.b;
+
+        sizes[i] = p.size * (0.5 + Math.random() * 0.5);
+        typeIndices[i] = typeIdx;
+        lifetimes[i] = p.lifetime === Infinity ? 1e10 : p.lifetime * 1000;
+        ages[i] = Math.random() * lifetimes[i] * 0.1;
+
+        // Random velocity
+        velocities[i * 3] = (Math.random() - 0.5) * 0.02;
+        velocities[i * 3 + 1] = (Math.random() - 0.5) * 0.02;
+        velocities[i * 3 + 2] = (Math.random() - 0.5) * 0.02;
+
+        this.particles.push({
+          type: type,
+          typeIdx: typeIdx,
+          x: positions[i * 3],
+          y: positions[i * 3 + 1],
+          z: positions[i * 3 + 2],
+          vx: velocities[i * 3],
+          vy: velocities[i * 3 + 1],
+          vz: velocities[i * 3 + 2],
+          age: ages[i],
+          lifetime: lifetimes[i],
+          size: sizes[i],
+          color: p.color,
+          data: p.data
+        });
+      }
+
+      geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+      geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+      geometry.setAttribute('typeIndex', new THREE.BufferAttribute(typeIndices, 1));
+
+      // Shader material for particles
+      const vertexShader = `
+        attribute float size;
+        attribute float typeIndex;
+        attribute vec3 color;
+        varying vec3 vColor;
+        varying float vTypeIndex;
+        void main() {
+          vColor = color;
+          vTypeIndex = typeIndex;
+          vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+          gl_PointSize = size * (300.0 / -mvPosition.z);
+          gl_Position = projectionMatrix * mvPosition;
+        }
+      `;
+
+      const fragmentShader = `
+        varying vec3 vColor;
+        varying float vTypeIndex;
+        void main() {
+          float dist = length(gl_PointCoord - vec2(0.5));
+          if (dist > 0.5) discard;
+          float alpha = 1.0 - smoothstep(0.0, 0.5, dist);
+          gl_FragColor = vec4(vColor, alpha);
+        }
+      `;
+
+      const material = new THREE.ShaderMaterial({
+        vertexShader,
+        fragmentShader,
+        transparent: true,
+        vertexColors: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      });
+
+      this.particleMeshes = new THREE.Points(geometry, material);
+      this.scene.add(this.particleMeshes);
+
+      // Trail system
+      this.trails = new Array(this.density).fill(null).map(() => []);
+    },
+
+    buildLegend() {
+      const legend = document.getElementById('particle-legend');
+      const types = Object.keys(PARTICLES);
+      let html = '';
+      types.forEach((type, i) => {
+        const p = PARTICLES[type];
+        const color = '#' + new THREE.Color(p.color).getHexString();
+        html += `<div class="flex items-center gap-1"><div class="w-2 h-2 rounded-full" style="background:${color}"></div><span class="text-xs truncate">${type.replace(/_/g,' ')}</span></div>`;
+      });
+      legend.innerHTML = html;
+    },
+
+    animate() {
+      this.animationId = requestAnimationFrame(() => this.animate());
+      const now = performance.now();
+      const dt = (now - this.lastTime) / 1000;
+      this.lastTime = now;
+
+      this.update(dt, now);
+      this.render();
+    },
+
+    update(dt, now) {
+      // Update loop timer
+      const loopElapsed = now - this.loopStartTime;
+      document.getElementById('loop-timer').textContent = (loopElapsed / 1000).toFixed(2) + 's';
+      document.getElementById('progress-bar').style.width = Math.min((loopElapsed / this.maxLoopDuration) * 100, 100) + '%';
+      document.getElementById('cycle-count').textContent = this.cycleCount;
+
+      // Update particles
+      const positions = this.particleMeshes.geometry.attributes.position.array;
+      const sizes = this.particleMeshes.geometry.attributes.size.array;
+
+      for (let i = 0; i < this.particles.length; i++) {
+        const p = this.particles[i];
+        const typeData = PARTICLES[p.type];
+
+        // Age
+        p.age += dt * 1000 * this.speed;
+
+        // Respawn if dead
+        if (p.age > p.lifetime) {
+          this.respawnParticle(i);
+          continue;
+        }
+
+        // Physics update
+        this.updateParticlePhysics(p, dt, typeData);
+
+        // Update position
+        positions[i * 3] = p.x;
+        positions[i * 3 + 1] = p.y;
+        positions[i * 3 + 2] = p.z;
+
+        // Trails
+        if (this.trails[i].length > 50) this.trails[i].shift();
+        this.trails[i].push({ x: p.x, y: p.y, z: p.z, type: p.type, time: now / 1000 });
+      }
+
+      this.particleMeshes.geometry.attributes.position.needsUpdate = true;
+
+      // Swarm mode
+      if (this.swarmMode) this.updateSwarm(dt);
+
+      // Camera follow
+      CameraFollow.update(now);
+
+      // Motion mode
+      MotionMode.apply(dt);
+
+      // Worldline fold check
+      this.checkWorldlineFold(now);
+
+      // Metrics chart
+      this.updateMetrics(now);
+    },
+
+    updateParticlePhysics(p, dt, typeData) {
+      const speed = this.speed * 0.5;
+
+      // Larmor precession for charged particles
+      if (typeData.charge !== 0) {
+        const omega = (this.params.larmorFreq || 1.0) * 2.0;
+        const vx = p.vx, vz = p.vz;
+        p.vx = vx * Math.cos(omega * dt) - vz * Math.sin(omega * dt);
+        p.vz = vx * Math.sin(omega * dt) + vz * Math.cos(omega * dt);
+      }
+
+      // Axion BEC coherence field
+      if (p.type === 'axion' || this.randomParams.axionCoherence) {
+        const coherence = this.params.axionCoherence || 1.0;
+        const centerX = Math.sin(now / 5000) * 10;
+        const centerZ = Math.cos(now / 5000) * 10;
+        const dx = centerX - p.x;
+        const dz = centerZ - p.z;
+        const dist = Math.sqrt(dx * dx + dz * dz);
+        if (dist > 0.1) {
+          p.vx += (dx / dist) * coherence * 0.001 * speed;
+          p.vz += (dz / dist) * coherence * 0.001 * speed;
+        }
+      }
+
+      // Glueball binding
+      if (p.type === 'glueball' || this.randomParams.glueballBinding) {
+        const binding = this.params.glueballBinding || 1.414;
+        // String tension effect
+        p.vy -= binding * 0.0001 * speed;
+      }
+
+      // Prime gap modulation
+      if (this.randomParams.primeScale) {
+        const scale = this.params.primeScale || 1.0;
+        const gapIdx = Math.floor(p.age / 100) % PRIME_GAPS.length;
+        const gap = PRIME_GAPS[gapIdx] * scale;
+        p.vx += Math.sin(gap * now / 10000) * 0.0001 * speed;
+        p.vz += Math.cos(gap * now / 10000) * 0.0001 * speed;
+      }
+
+      // Riemann zero resonance
+      if (this.randomParams.riemannWeight) {
+        const weight = this.params.riemannWeight || 0.5;
+        const gamma = RIEMANN_ZEROS[Math.floor(p.age / 500) % RIEMANN_ZEROS.length];
+        p.vy += Math.sin(gamma * now / 10000) * weight * 0.0001 * speed;
+      }
+
+      // Apply velocity
+      p.x += p.vx * speed * 60 * dt;
+      p.y += p.vy * speed * 60 * dt;
+      p.z += p.vz * speed * 60 * dt;
+
+      // Boundary
+      const maxR = 50;
+      const r = Math.sqrt(p.x * p.x + p.y * p.y + p.z * p.z);
+      if (r > maxR) {
+        const factor = maxR / r;
+        p.x *= factor;
+        p.y *= factor;
+        p.z *= factor;
+        p.vx *= -0.5;
+        p.vy *= -0.5;
+        p.vz *= -0.5;
+      }
+
+      // Trail decay
+      const decay = this.params.trailDecay || 0.5;
+      if (this.trails[this.particles.indexOf(p)]) {
+        // Trail decay handled in render
+      }
+    },
+
+    updateSwarm(dt) {
+      if (!this.swarmMode) return;
+      const cohesion = this.params.swarmCohesion || 0.65;
+      const center = { x: 0, y: 0, z: 0 };
+      this.particles.forEach(p => {
+        center.x += p.x;
+        center.y += p.y;
+        center.z += p.z;
+      });
+      center.x /= this.particles.length;
+      center.y /= this.particles.length;
+      center.z /= this.particles.length;
+
+      this.particles.forEach(p => {
+        const dx = center.x - p.x;
+        const dy = center.y - p.y;
+        const dz = center.z - p.z;
+        const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+        if (dist > 0.1) {
+          p.vx += (dx / dist) * cohesion * 0.001;
+          p.vy += (dy / dist) * cohesion * 0.001;
+          p.vz += (dz / dist) * cohesion * 0.001;
+        }
+      });
+    },
+
+    checkWorldlineFold(now) {
+      // Trigger fold at prime gap records
+      const foldTrigger = this.foldIntensity * 10000;
+      if (now % foldTrigger < 100 && !this.foldActive) {
+        this.foldActive = true;
+        document.getElementById('fold-indicator').classList.add('visible');
+        document.getElementById('fold-text').textContent = 'WORLDLINE FOLD — Prime Gap Resonance';
+        setTimeout(() => {
+          this.foldActive = false;
+          document.getElementById('fold-indicator').classList.remove('visible');
+        }, 3000);
+      }
+    },
+
+    updateMetrics(now) {
+      // Calculate metrics
+      let action = 0, coherence = 0, glueball = 0, prime = 0;
+      this.particles.forEach(p => {
+        action += Math.abs(p.vx) + Math.abs(p.vy) + Math.abs(p.vz);
+        if (p.type === 'axion') coherence += 1;
+        if (p.type === 'glueball') glueball += 1;
+        if (p.type === 'electron') prime += 1;
+      });
+      action = Math.min(action / this.particles.length * 100, 100);
+      coherence = Math.min(coherence / this.particles.length * 100, 100);
+      glueball = Math.min(glueball / this.particles.length * 100, 100);
+      prime = Math.min(prime / this.particles.length * 100, 100);
+      const benevolence = (coherence * glueball * action) / 10000;
+
+      pushChart(action, benevolence, coherence, glueball, prime);
+    },
+
+    respawnParticle(i) {
+      const types = Object.keys(PARTICLES);
+      const typeIdx = Math.floor(Math.random() * types.length);
+      const type = types[typeIdx];
+      const p = PARTICLES[type];
+
+      const r = Math.random() * 20;
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+
+      this.particles[i] = {
+        type: type,
+        typeIdx: typeIdx,
+        x: r * Math.sin(phi) * Math.cos(theta),
+        y: r * Math.sin(phi) * Math.sin(theta),
+        z: r * Math.cos(phi),
+        vx: (Math.random() - 0.5) * 0.02,
+        vy: (Math.random() - 0.5) * 0.02,
+        vz: (Math.random() - 0.5) * 0.02,
+        age: 0,
+        lifetime: p.lifetime === Infinity ? 1e10 : p.lifetime * 1000,
+        size: p.size * (0.5 + Math.random() * 0.5),
+        color: p.color,
+        data: p.data
+      };
+
+      this.trails[i] = [];
+    },
+
+    render() {
+      this.orbitControls.update();
+      this.composer.render();
+    },
+
+    // Control methods
+    setSpeed(val) {
+      this.speed = parseFloat(val);
+      document.getElementById('speed-val').textContent = this.speed.toFixed(1) + '×';
+    },
+
+    setDensity(val) {
+      this.density = parseInt(val);
+      document.getElementById('dens-val').textContent = this.density;
+      // Recreate particles would be needed for actual density change
+    },
+
+    perturb() {
+      this.particles.forEach(p => {
+        p.vx += (Math.random() - 0.5) * 0.1;
+        p.vy += (Math.random() - 0.5) * 0.1;
+        p.vz += (Math.random() - 0.5) * 0.1;
+      });
+      this.logEvent('Perturbation applied');
+    },
+
+    toggleTrails() {
+      // Trail rendering toggle would go here
+      this.logEvent('Trails toggled');
+    },
+
+    spawnDemon() {
+      this.logEvent('Pines Demon spawned!');
+      // Add demon particles
+      for (let i = 0; i < 10; i++) {
+        const idx = Math.floor(Math.random() * this.particles.length);
+        this.particles[idx] = {
+          ...this.particles[idx],
+          type: 'demon',
+          typeIdx: Object.keys(PARTICLES).indexOf('demon'),
+          color: PARTICLES.demon.color,
+          data: PARTICLES.demon.data
+        };
+      }
+    },
+
+    triggerFusion() {
+      this.logEvent('Fusion event triggered!');
+      // Fusion visual effect
+    },
+
+    spawnGlueball() {
+      this.logEvent('Glueball spawned!');
+      for (let i = 0; i < 5; i++) {
+        const idx = Math.floor(Math.random() * this.particles.length);
+        this.particles[idx] = {
+          ...this.particles[idx],
+          type: 'glueball',
+          typeIdx: Object.keys(PARTICLES).indexOf('glueball'),
+          color: PARTICLES.glueball.color,
+          data: PARTICLES.glueball.data
+        };
+      }
+    },
+
+    toggleSwarmMode() {
+      this.swarmMode = !this.swarmMode;
+      document.getElementById('btn-swarm').textContent = this.swarmMode ? '🌪 Swarm ✓' : '🌪 Swarm';
+      this.logEvent(this.swarmMode ? 'Swarm mode ON' : 'Swarm mode OFF');
+    },
+
+    toggleIconMode() {
+      this.iconMode = !this.iconMode;
+      document.getElementById('btn-toggle-icons').textContent = this.iconMode ? '🔬 Icons ✓' : '🔬 Icons';
+      document.getElementById('icon-mode-label').textContent = 'Icon Mode: ' + (this.iconMode ? 'SUBATOMIC' : 'DOTS');
+      this.logEvent(this.iconMode ? 'Icon mode: SUBATOMIC' : 'Icon mode: DOTS');
+    },
+
+    // Liquid Flow Dynamics setters
+    setFlowViscosity(val) {
+      this.flowViscosity = parseFloat(val);
+      document.getElementById('val-flow-viscosity').textContent = parseFloat(val).toFixed(2);
+    },
+    setFlowSurfaceTension(val) {
+      this.flowSurfaceTension = parseFloat(val);
+      document.getElementById('val-flow-surfaceTension').textContent = parseFloat(val).toFixed(3);
+    },
+    setFlowVelocity(val) {
+      this.flowVelocity = parseFloat(val);
+      document.getElementById('val-flow-velocity').textContent = parseFloat(val).toFixed(1);
+    },
+    setFlowTurbulence(val) {
+      this.flowTurbulence = parseFloat(val);
+      document.getElementById('val-flow-turbulence').textContent = parseFloat(val).toFixed(2);
+    },
+    setFlowVortex(val) {
+      this.flowVortex = parseFloat(val);
+      document.getElementById('val-flow-vortex').textContent = parseFloat(val).toFixed(1);
+    },
+    setFlowCompressibility(val) {
+      this.flowCompressibility = parseFloat(val);
+      document.getElementById('val-flow-compressibility').textContent = parseFloat(val).toFixed(2);
+    },
+
+    logEvent(msg) {
+      const log = document.getElementById('event-log');
+      const li = document.createElement('li');
+      li.className = 'text-cyan-300';
+      li.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+      log.insertBefore(li, log.firstChild);
+      if (log.children.length > 20) log.removeChild(log.lastChild);
+    }
+  };
+
+  // Initialize
+  document.addEventListener('DOMContentLoaded', () => {
+    OpeningScreen.init();
+  });
+
+  // Android motion sensor bridge
+  window.addEventListener('deviceorientation', (e) => {
+    MotionMode.updateMotion(e.beta, e.gamma, e.alpha, 0, 0, 0);
+  });
+
+  window.addEventListener('devicemotion', (e) => {
+    if (e.rotationRate) {
+      MotionMode.updateMotion(0, 0, 0, e.rotationRate.beta || 0, e.rotationRate.gamma || 0, e.rotationRate.alpha || 0);
+    }
+  });
+</script>
+</body>
+</html>

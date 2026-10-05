@@ -1,0 +1,81 @@
+python3 dual_starlight_express.py [--test | --live]
+
+
+Please Clone the repo "https://github.com/ZirconiaAegisC/CarrPod" first and Name it: "StarLight" before anything else then:
+"
+bash CSMScripts/lettherebelight.sh && eval "$(bash CSMScripts/lettherebelight.sh --export-env)"
+python3 dual_starlight_express.py --live
+jasonbrodsky@hotmail.com.   Microsoft Graph Command Line Tools. OK
+zirconia@aegisc.space. Microsoft Graph Command Line Tools OK
+Login Token Pass Method on my end: "https://login.microsoftonline.com/common/oauth2/deviceauth"
+Please use a Dual Authorization approach that has two background processes checking on each other then checking on the main task to verify it doesn't timeout.
+First we are going to log in and understand the MasterSend List that is in the drafts folder of the accounts.
+"
+
+
+jason.brodsky@ccac.edu.  Microsoft Graph Command Line Tools NOT OK
+
+
+
+SDK STARTUP SCRIPT
+
+bash CSMScripts/SDKForge.sh && eval "$(bash CSMScripts/SDKForge.sh --export-env)"
+
+Please Clone the repo "https://github.com/ZirconiaAegisC/CarrPod" first and Name it: "StarLight" before anything else then:
+"
+bash CSMScripts/lettherebelight.sh && eval "$(bash CSMScripts/lettherebelight.sh --export-env)"
+bash CSMScripts/lettherebelight.sh
+Bash CSMScripts/SDKForge.sh
+Please use a Dual Boss Worker approach that has two background processes checking on each other then checking on the main task to verify it doesn't timeout.
+
+Our first Task Will to Build the Vertebrae App again as an android extension packaged as an .XPI that is compatible with FireFox Nightly. Please move the existing work in to It's Own Folder Titled Vertebrae.Fox meaning android Firefox extension within the CSMAPPS folder next to the existing Vertebrae App
+
+
+bash CSMScripts/lettherebelight.sh && eval "$(bash CSMScripts/lettherebelight.sh --export-env)"
+"
+
+
+--------------
+
+
+Clone repo if needed:
+  git clone https://github.com/ZirconiaAegisC/CarrPod StarLight
+
+Fix REPO_ROOT in lettherebelight.sh:
+  sed -i 's|agent_0f7d793c.*|agent_7946f29f-0d5e-405c-a173-844619884197/StarLight|' StarLight/CSMScripts/lettherebelight.sh
+
+Run session init:
+  cd StarLight && bash CSMScripts/lettherebelight.sh
+
+SSL fix already applied to dual_starlight_express.py (line 110-111)
+
+Authenticate both accounts (device code flow):
+  export PYTHONHTTPSVERIFY=0
+  python3 StarLight/CSMReach/CSMSOPP/STARLIGHT/MODULE-V2/dual_starlight_express.py --live --account jasonbrodsky@hotmail.com
+  python3 StarLight/CSMReach/CSMSOPP/STARLIGHT/MODULE-V2/dual_starlight_express.py --live --account zirconia@aegisc.space
+
+Then: Set up dual background monitors → Check MasterSend List in Drafts folders of both accounts
+
+
+-------------
+
+
+
+Clone repo if needed:
+  git clone https://github.com/ZirconiaAegisC/CarrPod StarLight
+
+
+#!/bin/bash
+# Restart session to exact current state
+cd /workspace/StarLight
+bash CSMScripts/lettherebelight.sh
+eval "$(bash CSMScripts/SDKForge.sh --export-env)"
+# Verify SDK
+bash CSMScripts/SDKForge.sh --verify-only
+# Build Vertebrae Android app
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5c7dbc6e-6f98-4432-ad3d-a23934805977/CSMApps/Bounce/v1.0.85 && bash build.sh
+# Build Firefox extension XPI
+cd /workspace/StarLight/CSMApps/Vertebrae.Fox && zip -r ../Vertebrae.Fox.xpi manifest.json src/ assets/ icons/
+
+
+------

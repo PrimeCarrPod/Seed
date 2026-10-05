@@ -1,0 +1,1806 @@
+Global Pedostratigraphy and
+Biogeochemical Genesis of Argillaceous
+Deposits
+The Thermodynamic and Biogeochemical Foundations
+of Clay Genesis
+The conceptualization of clay as "evolutionary debris" accumulated over geologic time
+accurately encapsulates the intersection of physical weathering, chemical decomposition, and
+biological mediation that drives pedogenesis across the Earth's surface. Clay minerals do not
+precipitate in a vacuum; they represent the thermodynamic endpoint of primary silicate mineral
+alteration, operating under specific temperature, pressure, and aqueous conditions1. As
+primary igneous and metamorphic rocks are exposed to the atmosphere and hydrosphere,
+they undergo continuous hydrolysis, leaching, oxidation, and dehydration1. The formation of
+clay is inextricably linked to the continuous leaching of mobile cations, such as sodium,
+potassium, calcium, and magnesium, from primary aluminosilicate minerals like feldspar and
+mica, leaving behind residual silica and alumina that recombine to form phyllosilicate, or sheet
+silicate, structures1.
+Depending on the intensity of weathering and the localized geochemical environment, these
+secondary phyllosilicates organize into three primary structural classes. Kandites, including
+kaolinite, dickite, and halloysite, exhibit a 1:1 tetrahedral-to-octahedral layer structure1. These
+kandite minerals form in highly leached, acidic environments and display minimal swelling
+capacity1. Smectites, encompassing minerals such as montmorillonite and nontronite, possess
+a 2:1 structure capable of absorbing free water molecules between their crystalline sheets,
+resulting in highly expansive properties that profoundly dictate local soil mechanics and
+hydrogeology1. Illites represent another 2:1 clay mineral group, structurally analogous to
+muscovite but characteristically potassium-deficient and non-expanding1. The continuous
+creation, transformation, and destruction of these crystalline matrices constitute a global
+biogeochemical engine that dictates the habitability of the terrestrial biosphere.
+
+The "Oxalic" Weathering Pathway and Mineral Dissolution
+The explicit function of oxalic acid (
+) in the weathering of primary minerals and the
+subsequent neoformation of clay represents a profound geobiological mechanism. The
+colloquial reference to "oxalic" clay does not imply that the clay matrix itself is constructed of
+oxalate, but rather that the clay is the residual product of extreme, microbially and vegetatively
+driven organic acid weathering. Oxalic acid is the smallest dicarboxylic acid and represents one
+of the strongest low-molecular-weight organic acids (LMWOAs) found in natural pedological
+environments4. It is exuded in massive quantities by plant roots, particularly as an evolutionary
+
+adaptation to overcome phosphorus-deficient conditions, as well as by saprotrophic fungi and
+soil bacteria5.
+In the pedosphere, oxalic acid operates through two primary and synergistic mechanisms:
+aggressive proton-driven dissolution, which lowers the rhizosphere pH, and powerful
+ligand-exchange chelation7. The carboxyl groups of the oxalate anion possess an exceptionally
+high affinity for polyvalent cations, enabling the acid to effectively chelate aluminum (
+
+),
+
+iron (
+), and calcium (
+)5. This targeted chelation directly disrupts the crystalline
+structure of phosphorus-fixing minerals, such as iron and aluminum oxides, and liberates
+structural components into the soil pore water7.
+Laboratory models analyzing the differential dissolution of specific clay minerals, such as
+trioctahedral vermiculite, in the presence of oxalic acid reveal a highly specific and directional
+etching process8. The acid erosion consistently initiates at the mineral edges, where interlayer
+cations are rapidly replaced by hydronium ions (
+
+)8. Subsequent ligand complexation
+
+dissolves the octahedral sheet, releasing magnesium (
+) at a faster rate than ferrous or
+8
+ferric iron . This relentless organic weathering ultimately produces amorphous silicon dioxide
+and reprecipitates the mobilized calcium as highly insoluble calcium oxalate crystals (
+)6.
+Over evolutionary timescales, the precipitation of calcium oxalate acts as a massive but
+transient sink for carbon and calcium within the soil profile. In tropical and subtropical forest
+soils, specialized oxalotrophic bacteria subsequently metabolize this calcium oxalate, driving
+the local micro-environment toward alkalinity and inducing the precipitation of secondary
+calcium carbonate (
+)—a biogeochemical mechanism formally known as the
+oxalate-carbonate pathway (OCP)5. The interactions between fungi, bacteria, and primary
+bedrock through the medium of oxalic acid effectively digest the solid earth layer by layer,
+generating the heavily leached, stable argillaceous material that blankets the planet10.
+
+Anaerobic Dissolution and Iron-Reducing Microbial Pathways
+While clays represent a stable thermodynamic endpoint under oxidizing conditions, they are
+not immune to subsequent decomposition when subjected to anoxic (anaerobic)
+environments. In submerged environments, subterranean wetlands, and deep soil horizons
+where oxygen is systematically depleted, the natural trajectory of clay alteration shifts violently
+from oxidation to reduction. Specific dissimilatory iron-reducing bacteria, most notably those
+belonging to the genus Shewanella, possess the evolutionary capability to utilize the structural
+ferric iron (
+) bound directly within the octahedral sheets of smectite and illite clays
+as a terminal electron acceptor during their anaerobic respiration11.
+This biologically catalyzed anaerobic reduction alters the fundamental crystal chemistry of the
+
+clay matrix. As the structural
+is reduced to highly soluble ferrous iron (
+),
+the mineral undergoes dehydroxylation, a process that neutralizes the layer charge but
+severely destabilizes the overall crystal lattice11. Once the structural integrity is compromised,
+the clay undergoes rapid abiotic dissolution, exacerbated by the presence of organic ligands in
+the pore water that strip the newly formed
+from the mineral structure11. This coupled
+biotic-abiotic mechanism continuously dissolves surface materials layer by layer in permanently
+saturated, anaerobic bogs, swamps, and marine sediments, returning the constituent silica and
+alumina to the aqueous phase. The inability of certain clays to "decompose properly" often
+stems from a lack of these specific anaerobic conditions or an absence of the necessary
+microbial consortiums to drive the iron-reduction pathway.
+
+Evolutionary Debris: The Cairns-Smith Clay Hypothesis
+The conceptual alignment of clay with "evolutionary debris" mirrors one of the most
+intellectually provocative theories regarding the origin of life: the Cairns-Smith clay hypothesis.
+Proposed by physical chemist A. Graham Cairns-Smith in 1966, the hypothesis posits that the
+earliest self-replicating biological entities on Earth were not complex carbon-based polymers
+like RNA or DNA, but rather complex, polytypic clay crystals12.
+According to this paradigm, clay minerals forming from aqueous silicate solutions acted as the
+planet's first inorganic genetic templates14. The unique microstructure of a clay crystal is
+fraught with irregular patterns, ionic substitutions, and structural defects. As the crystal grows,
+it replicates these specific defects layer by layer, essentially passing on structural "information"
+to its newly formed daughter layers12. Mechanical forces in the primitive environment caused
+these macro-crystals to cleave and fragment, exposing new growth fronts that continued to
+propagate the specific structural pattern—a rudimentary, purely mineralogical form of
+reproduction12.
+Through physical natural selection, certain clay configurations that enhanced their own
+replication potential—for instance, by altering the local viscosity of a stream bed to trap more
+silica, or exhibiting superior electrostatic properties—outcompeted less stable configurations14.
+Furthermore, these complex clay surfaces possessed immense catalytic potential. It is
+theorized that the surfaces of these highly ordered, evolutionary clays adsorbed simple
+organic precursors, potentially atmospheric carbon dioxide fixed by oxalic and other
+dicarboxylic acids, acting as an immobilization scaffold2. The clays catalyzed the polymerization
+of these organic molecules into primitive amino acids and nucleotides16. Eventually, the
+synthesized organic polymers achieved a level of complexity sufficient to undergo a "genetic
+takeover," discarding the inorganic clay scaffold entirely and initiating the era of strictly
+carbon-based biological evolution14. Therefore, modern terrestrial clay deposits represent both
+the literal cradle of biochemical evolution and the physical mineralogical detritus left behind by
+eons of biological and physical weathering.
+
+Global Spatial Distribution and Stratigraphy
+To map the planetary distribution of clay, it is necessary to undertake a systematic
+
+geographical traversal. In accordance with a latitudinal oscillating methodology, this report
+analyzes the global geomorphology starting at the equatorial highly-weathered belt in Central
+America, oscillating north to North America, south to South America, north again to Europe and
+Africa, and finally terminating in the cryosphere of Antarctica. The following stratigraphic
+sections provide an exhaustive, spreadsheet-style documentation of major clay formations,
+recording their density, thickness, depth to bedrock, pedological classification, and associated
+physical parameters.
+
+Central America and the Equatorial Margin
+In the humid, high-temperature environments of Central America, chemical weathering rates
+reach their global maximum. The dominant soil orders in regions such as Costa Rica are Oxisols
+and Ultisols, representing the oldest and most intensely weathered clay soils on the planet18.
+The Oxisols, frequently classified under the suborders Udox and Ustox, alongside the Ultisols of
+the Costa Rican Talamanca piedmont, the San Carlos lowlands, and the mountains of the
+Nicoya Peninsula, are characterized by an extremely high percentage of low-activity clays,
+predominantly kaolinite, and residual sesquioxides of iron and aluminum such as hematite and
+gibbsite18. These soils fundamentally lack weatherable primary minerals within their sand
+fractions, indicating that the original bedrock has been completely dissolved, leached, and
+reconstituted18.
+Because chemical weathering vastly outpaces physical erosion in these stable tropical
+landscapes, the clay layers are astoundingly thick. The argillic horizons often extend several
+meters below the surface. In numerous pedons, researchers observe continuous deep red to
+yellowish-brown clay extending well over 130 cm with no bedrock (R horizon) or unweathered
+parent material (C horizon) accessible within conventional diggable depths19. Bulk densities in
+these highly aggregated, iron-rich tropical clays range from
+to
+,
+varying exponentially based on the concentration of soil organic carbon in the upper
+canopy-influenced layers21.
+Moving north into the Yucatán Peninsula of Mexico, the geomorphology abruptly shifts to a
+low-elevation, uplifted karstic limestone platform22. Here, the dominant pedological features
+are Leptosols, specifically Rendzinas, and highly weathered Terra Rossa22. The macroscopic soil
+cover over the limestone bedrock is remarkably thin, averaging a mere 10 cm to 30 cm in
+continuous depth24. However, the intense, localized dissolution of the limestone by organic
+acids has created deep "soil pockets" or cavities within the bedrock24.
+These dissolution cavities act as subterranean funnels, accumulating highly weathered,
+silicate-rich clays and iron oxides that have washed down from the surface23. While the surface
+topsoil may contain only 17% clay, the soil pockets within the bedrock fissures possess up to
+three times that clay concentration, alongside a 10% reduction in porosity, which drastically
+increases the volumetric water retention for local flora24. The depth to bedrock for these
+clay-filled pockets varies by localized topography, ranging from a shallow 0.38 meters on
+topographic rises to greater than 6.0 meters in lower-elevation wetlands, known locally as Ak'al
+che', which are dominated by sawgrass and seasonal flooding26. The indigenous terminology
+
+for these varying clay deposits is highly specific; for instance, K'an kab lu'um designates soils
+with a red topsoil overlying a yellow subsoil, while Tzek'el lu'um refers to the shallow,
+unproductive Lithic Leptosols on the karst mounds27.
+
+Stratigraphic Data: Central America
+
+Geogr
+aphic
+Region
+
+Specifi
+c
+Locati
+on /
+Forma
+tion
+
+Soil
+Taxon
+omy &
+Domin
+ant
+Minera
+logy
+
+Altitud
+e/
+Elevati
+on
+
+Costa
+Rica
+
+Talama
+nca
+Piedm
+ont,
+Los
+Santos
+
+Oxisols
+(Ustox,
+Udox),
+Ultisols
+/
+Kaolinit
+e,
+Gibbsit
+e,
+Hemati
+te
+
+~370 m
+to
+2,600
+m
+
+Costa
+Rica
+
+BCI /
+Caimit
+o
+Marine
+
+Smecti
+tic /
+Kaolinit
+ic fine
+
+Lowlan
+d
+marine
+
+Thickn
+ess /
+Depth
+to
+Bedro
+ck
+
+1.3
+m to
+several
+meters
+;
+bedroc
+k
+freque
+ntly
+undete
+cted at
+sampli
+ng
+depth
+
+Shallo
+w to
+moder
+ately
+
+Bulk
+Densit
+y
+(g/cm3
+)
+
+Matrix
+Color /
+Munse
+ll Hue
+
+Enviro
+nment
+al /
+Geneti
+c
+Notes
+
+0.44 1.34
+(Oxisol
+/Ultisol
+); 1.41 1.74
+(Alfisol
+)
+
+Red to
+yellowi
+sh
+brown
+(10 YR
+to 2.5
+YR),
+Greyis
+h (2.5
+Y) in
+wetlan
+ds
+
+Intense
+leachin
+g;
+extrem
+e
+accum
+ulation
+of
+low-ac
+tivity
+clays (
+
+Pale
+matrix
+with
+orange
+
+Swellin
+g
+smecti
+tes
+
+Variabl
+e;
+highly
+aggreg
+
+16
+cmol/k
+g
+CEC);
+formed
+over
+intrusiv
+e
+granite
+/rhyolit
+e18.
+
+Facies
+
+loams
+
+facies
+
+deep
+
+ated
+pseud
+o-silt
+
+/red
+mottle
+s;
+distinct
+blue/gr
+een
+tinges
+
+imped
+e
+water
+move
+ment,
+inducin
+g
+transie
+nt
+anaero
+bic
+mottlin
+g and
+localize
+d
+reduci
+ng
+conditi
+ons29.
+
+Mexico
+
+Yucatá
+n
+Penins
+ula
+(Uplan
+ds)
+
+Leptos
+ols
+(Rendzi
+nas),
+Terra
+Rossa /
+Silicate
+clay,
+iron
+oxides
+
+10 m to
+60 m
+above
+sea
+level
+
+0.1 m
+to 0.3
+m
+averag
+e
+contin
+uous
+depth
+
+0.815
+(Surfac
+e
+topsoil)
+
+Dark
+reddis
+h
+brown
+(5 YR
+3/3);
+Yellow
+subsoil
+
+Bedroc
+k is
+highly
+porous
+uplifte
+d
+Cretac
+eous
+limesto
+ne;
+pedog
+enesis
+is
+driven
+by
+carbon
+ate
+dissolu
+tion23.
+
+Mexico
+
+Yucatá
+n
+
+Illuviat
+ed clay
+
+10 m to
+60 m
+
+0.38 m
+
+Higher
+density
+
+Deep
+red
+
+Cavitie
+s
+
+Penins
+ula
+(Karst
+Pocket
+s)
+
+concen
+trates /
+Heavy
+silicate
+clay
+
+above
+sea
+level
+
+to
+6.0 m
+deep
+within
+bedroc
+k
+cavitie
+s
+
+than
+surrou
+nding
+surfac
+e
+horizo
+ns
+
+(Terra
+Rossa)
+to dark
+brown
+
+contain
+3x
+more
+clay
+than
+surfac
+e; acts
+as vital
+hydrol
+ogic
+reserv
+oirs for
+traditio
+nal
+Maya
+"contai
+ner
+garden
+ing"24.
+
+North America (The First Northern Oscillation)
+Transitioning to the North American continent reveals an exceptional diversity of clay deposits,
+ranging from the ancient, highly weathered commercial kaolins of the southeastern United
+States to the geologically young, highly sensitive glaciomarine clays of eastern Canada.
+The upper coastal plain of central Georgia in the United States hosts some of the most
+extensive and commercially valuable sedimentary kaolin deposits on Earth. Situated within
+siliciclastic rocks deposited in near-shore fluvial, deltaic, and tidal-estuarine environments
+during the Cretaceous and Tertiary periods, these clay beds are massive and lenticular,
+occasionally exceeding 10 meters in unbroken thickness30. The depth to the underlying
+bedrock or basal sedimentary formations varies greatly depending on regional faulting and
+topography. In standard open-pit mining operations, the stripping ratio requires removing
+substantial overburden, ranging from 15 feet to over 100 feet in depth, before reaching the
+pure kaolin horizons31.
+The Georgia kaolins are predominantly composed of microscopic, plate-like stacks of the
+mineral kaolinite (
+), which are noted for their exceedingly small particle
+size, typically less than two microns in diameter32. A fascinating biogeochemical variant within
+this region is the "lignitic kaolin," found primarily in the Marion and Jeffersonville Members of
+the regional stratigraphy33. These specific clay deposits contain elevated total organic carbon,
+generally greater than 0.2 wt.%, and manifest as dark brown, fissile, lamellar seams ranging
+from 1 to 2 meters in thickness33. Associated with finely disseminated pyrite and marcasite, the
+lignitic kaolins suggest formation in highly reducing, organically rich paleo-environments33.
+
+Furthermore, the coarse fractions of these kaolins are significant geochemical sinks, acting as
+notable accumulators of light rare-earth elements (LREEs) such as Lanthanum, Cerium, and
+Neodymium, which substitute into the clay lattice or precipitate as secondary phosphate
+minerals during aggressive acidic weathering30. Titanium-bearing phases, including anatase
+and rutile, are also commonly found within the Huber formation of these deposits3.
+In stark contrast to the ancient, chemically weathered profiles of the American South, the St.
+Lawrence Lowlands of eastern Canada harbor the notorious Leda Clay, a highly sensitive
+glaciomarine deposit. This formation originated from the catastrophic retreat of the Laurentide
+Ice Sheet and the subsequent marine inundation of the Champlain Sea approximately 10,000
+to 12,000 years ago35.
+The Leda Clay is not derived from in-situ chemical weathering but is predominantly composed
+of ultra-fine "rock flour"—silt and clay-sized particles of unweathered minerals mechanically
+ground by the immense weight of the glaciers traversing the Precambrian Shield35. This
+sedimentary sequence can reach immense thicknesses, commonly spanning 20 to 25 meters
+above the local Precambrian bedrock35. A striking morphological feature of the deeper Leda
+Clay sequences is the presence of alternating color-banded rhythmites, forming stark visual
+couplets of blue-gray and reddish-gray silty clay35.
+Extensive Mössbauer spectroscopy reveals that this striking color dichotomy is not driven by
+fluctuations in the total iron content of the sediment, which remains uniformly distributed, but
+by extreme redox banding and specific iron mineralogy35. The red layers are heavily oxidized,
+containing crystalline hematite (
+), whereas the blue-gray layers are highly reduced,
+containing only trace amounts of magnetite35. The structural arrangement and bulk density of
+the Leda Clay are heavily dependent on the salinity of the ancient pore water. The bulk density
+increases logarithmically with depth due to the physical expulsion of fluids caused by the
+weight of the overlying sediment column37. However, as fresh groundwater has slowly flushed
+out the marine salts over millennia, the electrostatic bonds holding the clay particles in a highly
+porous "house-of-cards" structure have weakened, rendering the clay highly susceptible to
+catastrophic liquefaction and massive terrestrial slumps, earning it the moniker "quick clay"35.
+
+Stratigraphic Data: North America
+
+Geogr
+aphic
+Region
+
+Specifi
+c
+Locati
+on /
+Forma
+tion
+
+Soil
+Taxon
+omy &
+Domin
+ant
+Minera
+logy
+
+Altitud
+e/
+Elevati
+on
+
+Thickn
+ess /
+Depth
+to
+Bedro
+ck
+
+Bulk
+Densit
+y
+(g/cm3
+)
+
+Matrix
+Color /
+Munse
+ll Hue
+
+Enviro
+nment
+al /
+Geneti
+c
+Notes
+
+USA
+
+Central
+Georgi
+a
+(Coast
+al
+Plain)
+
+Sedim
+entary
+Kaolin /
+Kaolinit
+e,
+Smecti
+te,
+Alunite
+
+Varies;
+Coasta
+l Plain
+topogr
+aphy
+
+10
+m thick
+lenticul
+ar
+beds;
+Overb
+urden
+ranges
+from 4
+m to
+
+~1.25
+(Avera
+ge for
+soft
+kaolin)
+
+White,
+pale
+cream,
+pale
+green,
+blue-gr
+ay
+
+Extensi
+vely
+mined;
+high
+concen
+tration
+of
+LREEs;
+minor
+Ti-bear
+ing
+phases
+like
+rutile
+and
+anatas
+e;
+transp
+orted
+and
+redepo
+sited3.
+
+Low
+due to
+signific
+ant
+organi
+c
+fractio
+n
+
+Dark
+brown,
+lamella
+r
+
+Forme
+d in
+anoxic,
+organi
+c-rich
+swamp
+s;
+contain
+s
+dissem
+inated
+pyrite
+and
+marcas
+ite;
+indicat
+es
+ancient
+reduci
+
+30
+m
+
+USA
+
+Central
+Georgi
+a
+(Mario
+n&
+Jeffers
+onville
+Mbr.)
+
+Lignitic
+Kaolins
+/
+Kaolinit
+e with
+high
+organi
+c
+carbon
+
+Coasta
+l Plain
+
+1 m to
+2m
+thick
+seams
+
+ng
+environ
+ments3
+3
+.
+Canad
+a
+
+St.
+Lawren
+ce
+Platfor
+m/
+Champ
+lain
+Sea
+
+Leda
+Clay
+(Glacio
+marine
+) / Rock
+Flour,
+Illite,
+Chlorit
+e
+
+Near
+sea
+level to
+moder
+ate
+inland
+elevati
+ons
+
+20 m
+to 25
+m thick
+
+Increas
+es
+logarit
+hmicall
+y with
+depth
+due to
+fluid
+expulsi
+on
+
+Alterna
+ting
+blue-gr
+ay and
+reddis
+h-gray
+rhythm
+ites
+
+Extrem
+e
+sensiti
+vity to
+liquefa
+ction
+(quick
+clay);
+color
+driven
+by
+hemati
+te vs.
+magne
+tite
+redox
+bandin
+g;
+deposi
+ted
+during
+glacial
+retreat
+35
+.
+
+South America (The First Southern Oscillation)
+Oscillating south to the interior of the South American continent, two distinct sedimentary clay
+deposits command geological attention: the high-altitude lacustrine paleosols of the
+Colombian Andes, and the vast, deeply weathered kaolin beds of the Brazilian Amazon basin.
+The Sabana de Bogotá in Colombia is a high-altitude plateau, situated approximately 2,550 to
+2,600 meters above sea level, representing the desiccated bed of a massive ancient
+Pleistocene lake38. The underlying bedrock consists of quarzitic Cretaceous sandstone, but it is
+deeply buried beneath an immense sequence of unconsolidated argillaceous sediments
+reaching thicknesses of up to 600 meters38. Throughout the Late Pliocene and Pleistocene
+epochs, the continuous tectonic subsidence of this intramontane basin allowed for the
+uninterrupted accumulation of finely layered clays and silts, interspersed with thick bands of
+organic peat39.
+
+Pedological analyses of the upper sedimentary horizons reveal complex pedocomplexes:
+modern soils sitting atop multiple paleosol units that date back to Marine Isotope Stage 2 (MIS
+2) and earlier38. These paleosols contain distinct illuviation argillic horizons, representing
+periods of intense clay accumulation resulting from redoximorphic and stagnic processes in a
+climate that fluctuated between cold, humid glacial periods and warmer interglacials38. The
+sheer depth of the clay to the underlying sandstone bedrock requires extensive geophysical
+surveying, employing vertical electrical soundings (VES) and magneto-telluric methods, to map
+the subterranean stratigraphy accurately41. Archaeological excavations within these specific
+clay strata, particularly at the Tequendama site (Level 7A), have unearthed dense
+accumulations of human artifacts and bone embedded in the paleosols dating to
+approximately 11,000 radiocarbon years before present, demonstrating the interplay between
+ancient human occupation and argillaceous pedogenesis38. Deeper within the adjacent Middle
+Magdalena Valley Basin, the Cretaceous La Luna Formation contains hard, highly compacted
+black limy shales and claystones reaching 150 meters in thickness and situated at extreme
+depths ranging from 3,000 to over 15,000 feet, representing the deep-time lithification of fine
+marine clays into source rock42.
+Far to the east, in the equatorial heat of the Brazilian Amazon, the Capim River region harbors
+some of the most structurally perfect and commercially sought-after kaolin clay deposits
+globally. Located in the eastern portion of the State of Pará, the soft Capim River kaolin is a
+Cretaceous-age sedimentary deposit43. The kaolin is the ultimate residual product of extreme
+physical and chemical weathering of intermediate to felsic source rocks, specifically the
+regional gneissic complexes and biotite-gneisses, during the Eopaleozoic and Precambrian
+eras43.
+Active geological exploration zones along the Capim River reveal a massive, laterally continuous
+horizon of highly ordered, euhedral kaolinite crystals43. While the upper boundaries of the clay
+are often overlain by roughly 7 meters of unconsolidated Tertiary Barreiras Formation
+sediments and contaminated lateritic layers, the explorable, high-purity white kaolin horizons
+extend significantly at depth, eventually bordered beneath by partially silicified sandstones45.
+Extensive sampling across vertical channels demonstrates that the clay exhibits a modest bulk
+43
+density of
+. The deposit features moderate plasticity and low
+shrinkage, combined with an exceptionally low content of iron and titanium oxides, rendering it
+immensely valuable for global industrial applications in paper coating and advanced ceramics43.
+The structural perfection of the Capim River kaolinite crystals confirms their genesis under
+intense, long-term chemical weathering in anoxic environments, consistent with the stable
+structural framework of the Amazonian basin43.
+
+Stratigraphic Data: South America
+
+Geogr
+aphic
+
+Specifi
+c
+
+Soil
+Taxon
+
+Altitud
+e/
+
+Thickn
+ess /
+
+Bulk
+Densit
+
+Matrix
+Color /
+
+Enviro
+nment
+
+Region
+
+Locati
+on /
+Forma
+tion
+
+omy &
+Domin
+ant
+Minera
+logy
+
+Elevati
+on
+
+Depth
+to
+Bedro
+ck
+
+y
+(g/cm3
+)
+
+Munse
+ll Hue
+
+al /
+Geneti
+c
+Notes
+
+Colom
+bia
+
+Sabana
+de
+Bogotá
+
+Lacustr
+ine
+clays,
+Peat,
+Paleos
+ols
+
+2,550
+m to
+2,600
+m
+
+Up to
+600 m
+thick;
+bedroc
+k is
+Cretac
+eous
+quarziti
+c
+sandst
+one
+
+Highly
+variabl
+e due
+to
+organi
+c peat
+interstr
+atificati
+on
+
+Dark
+brownblack
+to gray
+
+Forme
+d by
+long-te
+rm
+tectoni
+c
+subsid
+ence
+and
+glacial/i
+ntergla
+cial
+cyclic
+deposi
+tion;
+contain
+s
+dense
+archae
+ologica
+l
+horizo
+ns38.
+
+Colom
+bia
+
+Middle
+Magdal
+ena
+Valley
+Basin
+
+La
+Luna
+Format
+ion
+(Shale/
+Clayst
+one)
+
+Subsur
+face
+Basin
+
+3,000
+ft to
+15,000
+ft
+depth
+to top
+of
+formati
+on;
+~150 m
+thick
+(Salada
+
+High
+density
+(highly
+compa
+cted
+and
+lithified
+shale)
+
+Black
+
+Hard,
+highly
+compa
+cted
+marine
+black
+limy
+shales
+with
+high
+organi
+c
+
+Mbr.)
+
+Brazil
+
+Capim
+River,
+Pará
+State
+
+Sedim
+entary
+Kaolin /
+Euhedr
+al
+Kaolinit
+e
+
+Lowlan
+d
+Amazo
+n Basin
+
+~7 m of
+explora
+ble
+high-p
+urity
+kaolin;
+Overb
+urden
+~26 m
+(Barreir
+as Fm.)
+
+carbon
+(3-12%
+TOC)42.
+2.65 2.68
+
+Brilliant
+white
+to pale
+cream
+
+Forme
+d
+under
+anoxic
+conditi
+ons via
+intense
+weathe
+ring of
+felsic
+Preca
+mbrian
+source
+rocks;
+highly
+ordere
+d
+crystal
+structu
+re43.
+
+Europe and Africa (The Trans-Atlantic Ping-Pong)
+Crossing the Atlantic to the Northern Hemisphere, the London Clay Formation provides a
+classic study of massive, homogeneous marine argillaceous deposition. Deposited during the
+Eocene epoch, the London Clay is a stiff, overconsolidated bluish-gray marine clay that
+underlies much of the London Basin and surrounding regions47. From an engineering and
+geological perspective, it is characterized by the localized presence of Deep Filled Hollows
+(DFHs). These DFHs are massive topographical depressions carved directly into the local
+geological bedrock and subsequently infilled with unconsolidated sediment and clay. These
+highly irregular features range from 5 meters to 500 meters in width and can plunge to
+anomalous depths of up to 75 meters below the surrounding bedrock baseline, heavily
+influencing deep urban engineering and subterranean hydrology47.
+Oscillating south to the African continent and its extreme arid environments, such as the
+margins of the Sahara Desert, clay serves not as a massive, continuous subsurface stratum but
+as a critically scarce biological binding agent. In the vast sand seas, or ergs, on the margins of
+the Levant and the global desert belts, aeolian dust containing fine clay minerals settles
+indiscriminately upon the massive quartz sand dunes48. During ephemeral and highly localized
+rain events, these sub-micron clay particles migrate slightly into the immediate subsurface and
+
+hydrate. In conjunction with cyanobacteria, fungi, and mosses, the clay forms biological soil
+crusts (BSCs)48. This thin, intercalated clay layer, though only millimeters to centimeters thick,
+acts as a powerful mechanical fixative. It effectively anchors the loose quartz particles, shifting
+the regional geomorphology from highly active, wind-shifting sand dunes to stable, vegetated
+desert fringes48. Here, the clay acts as a biological shield, mitigating further erosion and
+demonstrating that even in trace amounts, argillaceous minerals govern the physical dynamics
+of the Earth's surface.
+
+Stratigraphic Data: Europe and Africa
+
+Geogr
+aphic
+Region
+
+Specifi
+c
+Locati
+on /
+Forma
+tion
+
+Soil
+Taxon
+omy &
+Domin
+ant
+Minera
+logy
+
+Altitud
+e/
+Elevati
+on
+
+Thickn
+ess /
+Depth
+to
+Bedro
+ck
+
+Bulk
+Densit
+y
+(g/cm3
+)
+
+Matrix
+Color /
+Munse
+ll Hue
+
+Enviro
+nment
+al /
+Geneti
+c
+Notes
+
+UK
+
+Londo
+n Basin
+
+Londo
+n Clay
+(Marin
+e) /
+Illite,
+Smecti
+te
+
+Near
+sea
+level
+
+Depres
+sions
+(DFHs)
+drop
+up to
+75 m
+below
+localize
+d
+bedroc
+k
+
+High
+(stiff,
+overco
+nsolida
+ted
+clay)
+
+Bluishgray
+
+Eocene
+marine
+deposi
+tion;
+infills
+massiv
+e
+sub-su
+rface
+structu
+ral
+hollow
+s that
+presen
+t major
+engine
+ering
+hazard
+s47.
+
+North
+Africa
+
+Sahara
+Desert
+Margin
+
+Aeolian
+dust /
+Mixed
+
+Varies
+by
+dune
+
+Micro-l
+ayers
+within
+
+Low
+(interc
+alated
+
+Yellow
+to pale
+red
+
+Clays
+form
+biocrus
+
+s (Ergs)
+
+clay
+mineral
+s
+
+topogr
+aphy
+
+the
+upper
+few
+centim
+eters
+of the
+dune
+profile
+
+with
+highly
+porous
+quartz
+sand)
+
+ts that
+mecha
+nically
+fix
+dunes
+in
+place,
+preven
+ting
+aeolian
+drift
+and
+stabilizi
+ng the
+desert
+margin
+48
+.
+
+The Cryosphere and Antarctica (The Polar Terminus)
+Moving to the extreme southern latitudes to conclude the geographic oscillation, the presence
+of clay provides a permanent and invaluable stratigraphic record of the Earth's paleoclimatic
+shifts. Off the coast of the Antarctic Peninsula, beneath the frigid waters of McMurdo Sound
+near Cape Roberts, lies a staggering 1,600-meter-thick succession of Cenozoic sedimentary
+rocks50.
+Recovered via unprecedented deep ice-shelf drilling operations, specifically the CRP-1,
+CRP-2/2A, and CRP-3 sedimentary cores, these ancient marine sediments contain distinct clay
+mineral assemblages predominantly composed of smectite, illite, and chlorite50. The relative
+abundance of these minerals fluctuates dramatically throughout the immense depth of the
+core, serving as a direct, quantifiable proxy for the Antarctic paleoclimate over millions of
+years50. High smectite concentrations in the lower, older stratigraphy indicate warmer, more
+humid paleoclimatic periods characterized by intense chemical weathering of the Antarctic
+continental landmass50. Conversely, a sharp upward shift toward illite and chlorite dominance in
+the upper layers documents the severe climatic transition into a cold, dry, permanently
+glaciated environment where physical weathering via ice grinding completely supersedes
+chemical hydrolysis50.
+Furthermore, detailed stratigraphic analysis of the La Meseta formation on Seymour Island,
+Antarctica, reveals fine to very fine-grained argillaceous sandstones exhibiting sharp,
+load-fluted lower bed contacts51. These individual clay-rich beds reach thicknesses ranging
+from 5 cm up to 216 cm, proving conclusively that the Antarctic cryosphere once hosted
+dynamic, fluid-driven sedimentary river and delta systems heavily laden with clay before the
+onset of the permanent continental ice sheet51.
+
+Stratigraphic Data: The Cryospheric Margin
+
+Geogr
+aphic
+Region
+
+Specifi
+c
+Locati
+on /
+Forma
+tion
+
+Soil
+Taxon
+omy &
+Domin
+ant
+Minera
+logy
+
+Altitud
+e/
+Elevati
+on
+
+Thickn
+ess /
+Depth
+to
+Bedro
+ck
+
+Bulk
+Densit
+y
+(g/cm3
+)
+
+Matrix
+Color /
+Munse
+ll Hue
+
+Enviro
+nment
+al /
+Geneti
+c
+Notes
+
+Antarc
+tica
+
+McMur
+do
+Sound
+/ Cape
+Robert
+s
+
+Cenoz
+oic
+marine
+sedime
+nts /
+Smecti
+te,
+Illite,
+Chlorit
+e
+
+Subma
+rine
+
+1,600
+m thick
+contin
+uous
+sedime
+ntary
+succes
+sion
+
+Highly
+compa
+cted
+rock
+density
+
+Dark
+grays
+and
+brown
+s
+
+Clay
+mineral
+ogy
+shifts
+docum
+ent the
+onset
+of
+contin
+ental
+glaciati
+on;
+smecti
+te
+transiti
+on to
+chlorit
+e
+tracks
+the
+death
+of
+chemic
+al
+weathe
+ring50.
+
+Antarc
+tica
+
+Seymo
+ur
+Island
+
+Argillac
+eous
+sandst
+
+Expose
+d
+coastal
+
+Individ
+ual
+beds 5
+
+Lithifie
+d
+
+Gray
+
+Eviden
+ce of
+rapid,
+
+(La
+Meseta
+Fm.)
+
+ones /
+Mixed
+clay
+matric
+es
+
+formati
+ons
+
+cm to
+216 cm
+thick
+
+dynami
+c
+sedime
+ntation
+in a
+pre-gla
+ciated,
+temper
+ate
+Antarc
+tic
+environ
+ment51.
+
+Vast Regions Devoid of Clay Accumulation
+A comprehensive global assessment must also account for environments utterly devoid of clay.
+The absence of argillaceous material is dictated by three primary physical and thermodynamic
+limitations: a lack of weatherable silicate source rock, severe kinetic limitations such as
+insufficient time or liquid water for hydrolysis, or extreme erosional velocity that strips
+weathered material faster than it can accumulate.
+In hyper-arid environments, such as the active core of the Sahara or the Rub' al Khali, vast
+expanses of the lithosphere are covered exclusively by quartz sand, pedologically classified
+within the orders of Arenosols or Psamments18. Because quartz (
+) is the most
+thermodynamically stable mineral at the Earth's surface, it resists chemical weathering almost
+entirely1. Without weatherable primary minerals like feldspars, micas, or volcanic glass to
+hydrolyze, and lacking the necessary aqueous medium to facilitate chemical transport, these
+deserts are fundamentally incapable of precipitating neoformed clays.
+Similarly, in high-alpine environments or recently deglaciated shield terranes, such as the
+exposed Precambrian Shield of northern Canada and Greenland, continuous, unweathered
+bedrock dominates the surface. Here, physical weathering via freeze-thaw cycles mechanically
+shatters the rock into boulders and gravel, but the extremely low temperatures mathematically
+inhibit the activation energy required for chemical hydrolysis and argillic neoformation. Any
+"clay" found in these regions is strictly limited to glacial rock flour—mechanically pulverized
+primary rock—rather than true, chemically precipitated phyllosilicates. In these regions, the
+absence of clay represents a landscape frozen in the earliest stages of the weathering
+continuum.
+
+Synthesis of Global Argillaceous Dynamics
+The global distribution, depth, and mineralogical composition of clay are inextricably linked to
+the complex biogeochemical evolution of the planet. From the heavily leached, deep red
+Oxisols of Costa Rica—where organic acids have driven pedogenesis to its absolute
+
+thermodynamic limit over millions of years—to the highly sensitive, rhythmically banded
+glaciomarine Leda Clays of the Canadian shield, argillaceous materials map the Earth's climatic,
+biological, and tectonic history.
+Biological entities, particularly fungi and plant roots secreting low-molecular-weight organic
+acids such as oxalic acid, are not passive inhabitants of the soil matrix. They actively dismantle
+primary rock structures, chelating metals and precipitating secondary minerals, thus continuing
+the relentless cycle of soil formation. In deep, saturated, anaerobic zones, iron-reducing
+microbial communities further modify these structures, destabilizing the crystalline sheets and
+accelerating structural dissolution. This continuous creation, replication, and destruction of clay
+matrices mirrors the profound theories of early terrestrial evolution, where the structural
+defects and catalytic surfaces of these very clays may have provided the first inorganic
+templates for life itself. The comprehensive geochemical and spatial mapping of these deposits
+remains a critical endeavor for understanding historical paleoclimates, assessing modern
+geological risks, and securing the raw materials necessary to sustain global industry.
+This is for informational purposes only. For medical advice or diagnosis, consult a professional.
+
+Works cited
+1.​ Weathering & Clay Minerals - Tulane University,
+
+https://www2.tulane.edu/~sanelson/eens211/weathering&clayminerals.htm
+2.​ Clay mineral - Wikipedia, https://en.wikipedia.org/wiki/Clay_mineral
+3.​ Global Occurrence, Geology and Characteristics of Hydrothermal-Origin Kaolin
+Deposits, https://www.mdpi.com/2075-163X/14/4/353
+4.​ Natural abiotic formation of oxalic acid in soils: results from aromatic model
+compounds and soil samples - PubMed,
+https://pubmed.ncbi.nlm.nih.gov/23311299/
+5.​ Role of oxalic acid in fungal and bacterial metabolism and its biotechnological
+potential, https://pmc.ncbi.nlm.nih.gov/articles/PMC11045627/
+6.​ Calcium oxalate in soils, its origins and fate – a review - ConnectSci,
+https://connectsci.au/sr/article/56/5/443/46910/Calcium-oxalate-in-soils-its-origin
+s-and-fate-a
+7.​ Oxalic Acid Enhances Soil Microbial Phosphorus Mobilization Under Phosphorus
+Deficiency: Evidence from a Soil Microcosm Experiment - MDPI,
+https://www.mdpi.com/2073-4395/16/4/405
+8.​ Differential dissolution of interlayer, octahedral and tetrahedral cations of
+vermiculite in oxalic acid | Clay Minerals - Cambridge University Press &
+Assessment,
+https://www.cambridge.org/core/journals/clay-minerals/article/differential-dissolu
+tion-of-interlayer-octahedral-and-tetrahedral-cations-of-vermiculite-in-oxalic-a
+cid/1CBF4EC21B9D1B609B115875BFF149D7
+9.​ Vertical trends of oxalate concentration in two soils under Abies alba from
+Tuscany (Italy),
+https://www.researchgate.net/publication/229910965_Vertical_trends_of_oxalate_
+concentration_in_two_soils_under_Abies_alba_from_Tuscany_Italy
+
+10.​Experimental Study of the Activation Effect of Oxalic Acid on the Dissolution of
+
+Rare Earth Elements in the Typical Diagenetic Minerals of Coal Seams - MDPI,
+https://www.mdpi.com/2075-163X/13/4/525
+11.​ Respiration and Dissolution of Iron(III)-Containing Clay Minerals by Bacteria |
+Environmental Science & Technology - ACS Publications,
+https://pubs.acs.org/doi/10.1021/es990021x
+12.​Simple Evolution of Complex Crystal Species - Caltech,
+https://www.dna.caltech.edu/Papers/simple-ca-evolution2010-DNA16.pdf
+13.​Potential misassumptions on the clay hypothesis in origin of life: a geochemical
+perspective,
+https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3
+389/fspas.2025.1678046/full
+14.​Graham Cairns-Smith - Wikipedia,
+https://en.wikipedia.org/wiki/Graham_Cairns-Smith
+15.​Clay hypothesis of the origin of life | Frozen Evolution. Or, that's not the way it is,
+Mr. Darwin. A Farewell to Selfish Gene.,
+https://www.frozenevolution.com/clay-hypothesis-origin-life
+16.​Clays and the Origin of Life - Encyclopedia.pub,
+https://encyclopedia.pub/entry/19903
+17.​It's Clay Time: The Origins of "Silicon-Based" Life - The Curious Wavefunction,
+http://wavefunction.fieldofscience.com/2008/04/its-clay-time-origins-of-siliconbased.html
+18.​Soils of the Tropics (Chapter 4) - Cambridge University Press & Assessment,
+https://www.cambridge.org/core/books/properties-and-management-of-soils-in
+-the-tropics/soils-of-the-tropics/418C3BA2A644E085C10A5447BCB031DB
+19.​Soil orders – Introduction to Soil Science - Iowa State University Digital Press,
+https://iastate.pressbooks.pub/introsoilscience/chapter/soil-orders/
+20.​Morphology and characteristics of eight Oxisols in contrasting landscapes of
+Costa Rica,
+https://www.academia.edu/91820265/Morphology_and_characteristics_of_eight_
+Oxisols_in_contrasting_landscapes_of_Costa_Rica
+21.​Soil characteristics, carbon stores, and nutrient distribution in eight forest types
+along an elevation gradient, eastern Puerto Rico,
+https://research.fs.usda.gov/download/treesearch/47153.pdf
+22.​Soil toposequences, soil erosion, and ancient Maya land use adaptations to
+pedodiversity in the tropical karstic landscapes of southern Mexico - Frontiers,
+https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2023.123
+9301/full
+23.​Soil geneSiS in relAtion to lAndScApe evolution And Ancient SuStAinAble lAnd uSe
+in the northeAStern YucAtAn peninSulA, Mexico,
+http://www.stsn.it/images/pdf/serA112/14%20Sedov.pdf
+24.​Importance of subsurface soil pockets for plant growth in a karst environment IUSS, https://www.old.iuss.org/19th%20WCSS/Symposium/pdf/0007.pdf
+25.​Adaptation Of Maya Homegardens By “Container Gardening” In Limestone
+Bedrock Cavities - BioOne Complete,
+
+https://bioone.org/journals/journal-of-ethnobiology/volume-28/issue-2/0278-0771
+-28.2.290/Adaptation-Of-Maya-Homegardens-By-Container-Gardening-In-Lime
+stone-Bedrock/10.2993/0278-0771-28.2.290.full
+26.​a) The Yucatan Peninsula of southeastern Mexico. Red square indicates... ResearchGate,
+https://www.researchgate.net/figure/a-The-Yucatan-Peninsula-of-southeasternMexico-Red-square-indicates-the-area_fig1_335331671
+27.​Construction of an Yucatec Maya soil classification and comparison with the WRB
+framework - PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC2831876/
+28.​Soil Types and Fundamental Soil Properties of a Costa Rican Tropical Montane
+Cloud Forest - Cloudbridge Nature Reserve,
+https://www.cloudbridge.org/wp-content/uploads/2011/11/soil-types-fundamenta
+l-soil-properties.pdf
+29.​Available and reserve nutrient characterization of the edaphic environment of the
+52 ha Long Term Ecological Research plot in,
+https://striresearch.si.edu/bci-soil-map/wp-content/uploads/sites/7/2019/07/BCI_s
+oil_report_complete.pdf
+30.​Rare-Earth Minerals in Kaolin Ore, Mine Tailings, and Sands – Central Georgia,
+Upper Coastal Plain - Cambridge University Press & Assessment,
+https://www.cambridge.org/core/journals/clays-and-clay-minerals/article/rareeart
+h-minerals-in-kaolin-ore-mine-tailings-and-sands-central-georgia-upper-coasta
+l-plain/192D84D3CA26BF265AE63D1A8F2C31D8
+31.​KGS--Bull. 41, Part 10--Kansas Bentonite: Its Properties and Utilization,
+https://www.kgs.ku.edu/Publications/Bulletins/41_10/index.html
+32.​MARKET AND ECONOMIC CONSIDERATIONS OF KAOLIN CLAY - Minnesota
+Legislative Reference Library,
+https://www.lrl.mn.gov/docs/pre2003/other/890587.pdf
+33.​Oxygenated n -alkyl constituents isolated from the lignitic kaolins. '... | Download
+Scientific Diagram - ResearchGate,
+https://www.researchgate.net/figure/Oxygenated-n-alkyl-constituents-isolated-f
+rom-the-lignitic-kaolins-n-attached-to_fig8_237193727
+34.​Physicochemical characterization and industrial use of Awzet Kaolin deposit in
+Northwestern Ethiopian plateau - PMC,
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12749600/
+35.​Analysis of colour rhythmites in sensitive marine clays (Leda Clay) from eastern
+Canada | Request PDF - ResearchGate,
+https://www.researchgate.net/publication/277689087_Analysis_of_colour_rhythmi
+tes_in_sensitive_marine_clays_Leda_Clay_from_eastern_Canada
+36.​ANALYSIS OF THE FOUR BROTHERS SLUMP, LAKE CHAMPLAIN - Chesapeake
+Technology,
+https://chesapeaketech.com/wp-content/uploads/2016/01/2013_Middlebury_Anal
+ysis_of_the_Four_Brothers_Slump_Lake_Champlain.pdf
+37.​Mineralogical properties of Champlain Sea sediments and their effects on
+borehole geophysical logs, western Quebec,
+https://publications.gc.ca/collections/collection_2025/rncan-nrcan/m183-2/M183-
+
+2-8763-eng.pdf
+38.​Paleosol-sedimentary records of contrasting environmental changes in the
+Sabana de Bogotá, Colombia, during the late Pleistocene -Holocene | Request
+PDF - ResearchGate,
+https://www.researchgate.net/publication/390426807_Paleosol-sedimentary_rec
+ords_of_contrasting_environmental_changes_in_the_Sabana_de_Bogota_Colom
+bia_during_the_late_Pleistocene_-Holocene
+39.​Absolute chronology of the Pliocene-Quaternary sediment sequence of the
+Bogota area, Colombia - UvA DARE, https://dare.uva.nl/document/2/2072
+40.​Thomas van der Hammen Page and acknowledgments Physical description of the
+Regional glaciation de Lagunillas Valley-floor sedim - Naturalis Institutional
+Repository, https://repository.naturalis.nl/pub/505897/LGM1965032001004.pdf
+41.​Geophysical modeling of the middle Bogotá River Basin with support from
+interpretation of electrical resistivity, gravity, seismic and borehole - SciELO
+Colombia,
+http://www.scielo.org.co/pdf/esrj/v28n2/1974-6190-esrj-28-02-139-150.pdf
+42.​IV. NORTHERN SOUTH AMERICA - EIA,
+https://www.eia.gov/analysis/studies/worldshalegas/pdf/chaptersiv_vii.pdf
+43.​Vertical profiles showing sampling depths and lithologic units of the studied
+kaolin deposit. - ResearchGate,
+https://www.researchgate.net/figure/ertical-profiles-showing-sampling-depths-a
+nd-lithologic-units-of-the-studied-kaolin_fig3_325731097
+44.​U–Pb ages of detrital zircons in Cretaceous–Paleogene/Neogene kaolins within
+Eastern Dahomey and Niger Delta Basins (Nigeria) as provenance indicators PMC, https://pmc.ncbi.nlm.nih.gov/articles/PMC8257602/
+45.​KAOLIN EXPLORATION IN THE CAPIM RIVER REGION STATE OF PARÁ,
+https://rigeo.sgb.gov.br/bitstreams/a140c7e1-1a42-4bb5-8cb5-068fce246585/do
+wnload
+46.​Colonisation and early peopling of the Colombian Amazon during the Late
+Pleistocene and the Early Holocene - The LASTJOURNEY - University of Exeter,
+https://lastjourney.exeter.ac.uk/wp-content/uploads/2021/10/Morcote-et-al-2020
+-colonisation-and-early-peopling-of-the-colombian-amazon-during-the-lp-eh-1
+.pdf
+47.​Drift-filled hollows in the London Basin: Characteristics, Origins and Assessment
+of Risk - Brunel University Research Archive,
+https://bura.brunel.ac.uk/bitstream/2438/25375/1/FulltextThesis.pdf
+48.​Mapping Surface Quartz Content in Sand Dunes Covered by Biological Soil Crusts
+Using Airborne Hyperspectral Images in the Longwave Infrared Region - MDPI,
+https://www.mdpi.com/2075-163X/8/8/318
+49.​Aeolian dust accretion outpaces erosion in the... : Earth Surface,
+https://www.ovid.com/journals/espl/fulltext/10.1002/esp.5669~aeolian-dust-accret
+ion-outpaces-erosion-in-the-formation-of
+50.​Clay minerals in Cenozoic sediments off Cape Roberts (McMurdo Sound,
+Antarctica) reveal palaeoclimatic history | Request PDF - ResearchGate,
+https://www.researchgate.net/publication/222673316_Clay_minerals_in_Cenozoic_
+
+sediments_off_Cape_Roberts_McMurdo_Sound_Antarctica_reveal_palaeoclimati
+c_history
+51.​SEDIMENTOLOGY, PALYNOLOGY AND STRUCTURE OF HUMPS ISLAND,
+NORTHERN ANTARCTIC PENINSULA - NERC Open Research Archive,
+https://nora.nerc.ac.uk/id/eprint/521722/1/bulletin80_02.pdf
+52.​Dissolution and formation of quartz in soil environments: a review,
+https://www.soilsa.com/Dissolution-and-formation-of-quartz-in-soil-environmen
+ts-a-review,122398,0,1.html
+
+

@@ -1,0 +1,29 @@
+<!-- Header - FIXED: Removed pointer-events-none -->
+  <div id="hud-header" class="absolute top-0 left-0 w-full p-2 z-20 flex justify-between items-start bg-gradient-to-b from-black/90 to-transparent">
+    <div class="pointer-events-auto">
+      <h1 class="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 drop-shadow-[0_0_12px_rgba(34,211,238,0.9)]">
+        PRIME ELECTRON WORLDLINE v3h
+      </h1>
+      <p class="text-xs text-cyan-300 mt-1 opacity-80">
+        <span class="font-bold text-white">Monistic Engine v3h</span> — PrimeBookOne ∩ One-Electron Universe ∩ 34 Species
+        <span id="icon-mode-label" class="text-orange-300 ml-2">Icon Mode: SUBATOMIC</span>
+      </p>
+    </div>
+    <div class="pointer-events-auto flex items-center gap-1 mt-1 flex-wrap">
+      <button id="btn-follow" class="btn btn-green" onclick="CameraFollow.toggle()" style="font-size:9px;">🎯 Follow</button>
+      <button id="btn-motion" class="btn btn-orange" onclick="MotionMode.toggle()" style="font-size:9px;">📳 Motion</button>
+      <button id="btn-swarm" class="btn btn-purple" onclick="sim.toggleSwarmMode()" style="font-size:9px;">🌪 Swarm</button>
+      <button id="btn-toggle-icons" class="btn btn-orange" onclick="sim.toggleIconMode()">🔬 Icons</button>
+      <button id="btn-prime-view" class="btn btn-prime" onclick="PrimeView.toggle()" style="font-size:9px;">🔢 Prime Gaps</button>
+      <button id="btn-riemann-view" class="btn btn-riemann" onclick="RiemannView.toggle()" style="font-size:9px;">📐 Riemann Zeros</button>
+      <button id="btn-hilbert-view" class="btn btn-purple" onclick="HilbertView.toggle()" style="font-size:9px;">🧮 Hilbert 256</button>
+      <button id="btn-trails-view" class="btn btn-purple" onclick="TrailsView.toggle()" style="font-size:9px;">📜 Trails</button>
+      <button id="btn-toggle-hud" class="btn btn-cyan" onclick="UI.toggleHUD()">☰ Hide Panels</button>
+      <button id="btn-flight" class="btn btn-purple" onclick="Flight.start()">✈ Random Flight</button>
+      <button id="btn-credits" class="btn btn-yellow" onclick="UI.showCredits()" style="font-size:9px;">Credits</button>
+      <div id="live-badge" class="text-green-400 text-xs orbitron font-bold animate-pulse ml-2 hidden md:block">● LIVE v3h</div>
+    </div>
+  </div>
+
+  <!-- TUCK BUTTON -->
+  <button id="btn-tuck" onclick="UI.tuckToggle()">TUCK</button>

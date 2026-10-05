@@ -1,130 +1,32 @@
 {
   "methods": [
     {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913/CSMLogs/august26/RESUME_SESSION_A1-26_20260821.md",
       "method": "strategy_1_direct_commit",
-      "success": false,
-      "difficulty": "medium",
-      "timestamp": "2026-10-04T01:17:08Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
-      "method": "strategy_2_staged_commit",
-      "success": false,
-      "difficulty": "medium",
-      "timestamp": "2026-10-04T01:17:08Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
-      "method": "strategy_3_force_push",
-      "success": false,
-      "difficulty": "medium",
-      "timestamp": "2026-10-04T01:17:08Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
-      "method": "strategy_4_new_branch_pr",
-      "success": false,
-      "difficulty": "medium",
-      "timestamp": "2026-10-04T01:17:08Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
-      "method": "strategy_5_rebase_merge",
-      "success": false,
-      "difficulty": "medium",
-      "timestamp": "2026-10-04T01:17:08Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
-      "method": "strategy_6_merge_strategy_ours",
-      "success": false,
-      "difficulty": "medium",
-      "timestamp": "2026-10-04T01:17:08Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
-      "method": "strategy_1_direct_commit",
-      "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:20:47Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
-      "method": "strategy_2_staged_commit",
-      "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:20:47Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
-      "method": "strategy_3_force_push",
-      "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:20:47Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
-      "method": "strategy_1_direct_commit",
-      "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:20:54Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
-      "method": "strategy_2_staged_commit",
       "success": true,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:20:55Z"
+      "difficulty": "medium",
+      "timestamp": "2026-08-21T00:05:10Z"
     },
     {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_keymaker.md",
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913/CSMLogs/august26/RESUME_SESSION_A1-27_20260821.md",
+      "method": "strategy_1_direct_commit",
+      "success": true,
+      "difficulty": "medium",
+      "timestamp": "2026-08-21T00:51:23Z"
+    },
+    {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_879de20e-ca0e-4954-9e27-fb61e96a6d71/CSMLogs/august26/RESUME_SESSION_A2-10_COMPLETE_20260821.md",
       "method": "strategy_1_direct_commit",
       "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:20:59Z"
+      "difficulty": "medium",
+      "timestamp": "2026-08-21T20:27:58Z"
     },
     {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_keymaker.md",
-      "method": "strategy_2_staged_commit",
-      "success": true,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:21:00Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_elsegundo.md",
-      "method": "strategy_1_direct_commit",
-      "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:21:04Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_elsegundo.md",
-      "method": "strategy_2_staged_commit",
-      "success": true,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:21:05Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/COMBINED_INTRO.md",
-      "method": "strategy_1_direct_commit",
-      "success": false,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:21:09Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/COMBINED_INTRO.md",
-      "method": "strategy_2_staged_commit",
-      "success": true,
-      "difficulty": "easy",
-      "timestamp": "2026-10-04T01:21:10Z"
-    },
-    {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/content.md",
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_e2e4a463-fee9-4b25-b24a-9a9639495bb1/CSMWip/Ultimate_land_o_lil/build/Ultimatev2_index_v3JJ1.html",
       "method": "strategy_1_direct_commit",
       "success": false,
       "difficulty": "hard",
-      "timestamp": "2026-10-04T01:21:14Z"
+      "timestamp": "2026-09-09T07:42:49Z"
     }
   ]
 }

@@ -1,0 +1,27 @@
+custom domain (like aegisc.space), you need correct DNS records (SPF, DKIM, MX, etc.) so other mail systems trust your email and don’t bounce it.
+
+Since you’re browsing Microsoft 365, the best next step is to make sure your domain is added and configured correctly in Microsoft 365, even though it’s registered at GoDaddy:
+
+Add and verify your domain in Microsoft 365
+
+Sign in to the Microsoft 365 admin center.
+Go to Settings > Domains > + Add domain.
+Enter aegisc.space and follow the wizard.
+Because GoDaddy supports Domain Connect, you can sign in to GoDaddy from the wizard and let Microsoft 365 automatically add the required DNS records and verify the domain.
+Detailed steps: Add a custom domain to Microsoft 365.
+If you prefer manual DNS setup at GoDaddy
+
+In the same wizard choose Manual instead of Domain Connect.
+Microsoft 365 will show you TXT/MX (for verification) and the SPF/DKIM/MX records needed.
+Add these records in GoDaddy’s DNS manager, then return to the Microsoft 365 wizard and click Verify.
+Guide to the required records: Connect your domain by adding DNS records.
+Check email authentication (to stop bounces and spam flags)
+
+After DNS is set up, make sure SPF, DKIM, and DMARC are correctly configured for aegisc.space so other servers stop rejecting your mail.
+Microsoft’s troubleshooting guide explains common failure causes and what to fix: Troubleshoot email authentication in Microsoft 365.
+Let DNS changes propagate
+
+DNS updates at GoDaddy can take some time (often up to an hour, sometimes longer).
+Once Microsoft 365 shows the domain as Healthy and verified in Settings > Domains, test sending a few messages again.
+To narrow this down further, can you tell whether you’ve already added aegisc.space as a domain in your Microsoft 365 tenant, or are you sending directly from GoDaddy’s mail only?
+

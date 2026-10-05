@@ -1,46 +1,32 @@
 {
   "files": {
-    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md": {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md",
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913/CSMLogs/august26/RESUME_SESSION_A1-26_20260821.md": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913/CSMLogs/august26/RESUME_SESSION_A1-26_20260821.md",
       "difficulty": "medium",
-      "lines": 167,
+      "lines": 154,
       "strategies": 6,
-      "timestamp": "2026-10-04T01:17:08Z"
+      "timestamp": "2026-08-21T00:05:08Z"
     },
-    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md": {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_williams.md",
-      "difficulty": "easy",
-      "lines": 6,
-      "strategies": 3,
-      "timestamp": "2026-10-04T01:20:54Z"
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913/CSMLogs/august26/RESUME_SESSION_A1-27_20260821.md": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_289e4c1d-dee3-4d5f-8dda-82eb9065e913/CSMLogs/august26/RESUME_SESSION_A1-27_20260821.md",
+      "difficulty": "medium",
+      "lines": 201,
+      "strategies": 6,
+      "timestamp": "2026-08-21T00:51:20Z"
     },
-    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_keymaker.md": {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_keymaker.md",
-      "difficulty": "easy",
-      "lines": 6,
-      "strategies": 3,
-      "timestamp": "2026-10-04T01:20:59Z"
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_879de20e-ca0e-4954-9e27-fb61e96a6d71/CSMLogs/august26/RESUME_SESSION_A2-10_COMPLETE_20260821.md": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_879de20e-ca0e-4954-9e27-fb61e96a6d71/CSMLogs/august26/RESUME_SESSION_A2-10_COMPLETE_20260821.md",
+      "difficulty": "medium",
+      "lines": 248,
+      "strategies": 6,
+      "timestamp": "2026-08-21T20:27:58Z"
     },
-    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_elsegundo.md": {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/intro_elsegundo.md",
-      "difficulty": "easy",
-      "lines": 6,
-      "strategies": 3,
-      "timestamp": "2026-10-04T01:21:03Z"
-    },
-    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/COMBINED_INTRO.md": {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/COMBINED_INTRO.md",
-      "difficulty": "easy",
-      "lines": 43,
-      "strategies": 3,
-      "timestamp": "2026-10-04T01:21:09Z"
-    },
-    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/content.md": {
-      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics/A8-01/content.md",
+    "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_e2e4a463-fee9-4b25-b24a-9a9639495bb1/CSMWip/Ultimate_land_o_lil/build/Ultimatev2_index_v3JJ1.html": {
+      "file": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_e2e4a463-fee9-4b25-b24a-9a9639495bb1/CSMWip/Ultimate_land_o_lil/build/Ultimatev2_index_v3JJ1.html",
       "difficulty": "hard",
-      "lines": 736,
+      "lines": 1570,
       "strategies": 9,
-      "timestamp": "2026-10-04T01:21:14Z"
+      "timestamp": "2026-09-09T07:42:49Z"
     }
   }
 }

@@ -1,0 +1,175 @@
+// Opening Screen Controller - FIXED EVENT BINDING
+  const OpeningScreen = {
+    active: true,
+    params: {},
+    init() {
+      this.bindEvents();
+      this.loadDefaults();
+    },
+    loadDefaults() {
+      this.params = {
+        resolution: 'medium',
+        larmorFreq: 1.0,
+        axionCoherence: 1.0,
+        glueballBinding: 1.414,
+        swarmCohesion: 0.65,
+        primeScale: 1.0,
+        riemannWeight: 0.5,
+        trailDecay: 0.5,
+        foldIntensity: 1.0
+      };
+      this.updateUI();
+    },
+    bindEvents() {
+      const btnDefaults = document.getElementById('btn-defaults');
+      const btnLoadPreset = document.getElementById('btn-load-preset');
+      const btnBegin = document.getElementById('btn-begin');
+      
+      if (btnDefaults) btnDefaults.addEventListener('click', () => this.loadDefaults());
+      if (btnLoadPreset) btnLoadPreset.addEventListener('click', () => this.loadPreset());
+      if (btnBegin) btnBegin.addEventListener('click', () => this.begin());
+      
+      // Resolution options
+      document.querySelectorAll('.res-option').forEach(opt => {
+        opt.addEventListener('click', () => {
+          document.querySelectorAll('.res-option').forEach(o => o.classList.remove('selected'));
+          opt.classList.add('selected');
+          this.params.resolution = opt.dataset.res;
+        });
+      });
+      
+      // Sliders and random buttons
+      ['larmorFreq','axionCoherence','glueballBinding','swarmCohesion','primeScale','riemannWeight','trailDecay','foldIntensity'].forEach(key => {
+        const slider = document.getElementById('slider-' + key);
+        if (slider) {
+          slider.addEventListener('input', (e) => {
+            this.params[key] = parseFloat(e.target.value);
+            const valEl = document.getElementById('val-' + key);
+            if (valEl) {
+              const unit = e.target.dataset.unit || '';
+              valEl.textContent = this.params[key].toFixed(unit === 'σ' ? 3 : unit === '×' ? 1 : 2) + unit;
+            }
+          });
+        }
+        const randBtn = document.getElementById('rand-' + key);
+        if (randBtn) {
+          randBtn.addEventListener('click', () => {
+            randBtn.classList.toggle('active');
+            this.params['random_' + key] = randBtn.classList.contains('active');
+          });
+        }
+      });
+    },
+    updateUI() {
+      document.querySelectorAll('.res-option').forEach(o => {
+        o.classList.toggle('selected', o.dataset.res === this.params.resolution);
+      });
+      Object.keys(this.params).forEach(key => {
+        if (typeof this.params[key] === 'number') {
+          const slider = document.getElementById('slider-' + key);
+          const valEl = document.getElementById('val-' + key);
+          const randBtn = document.getElementById('rand-' + key);
+          if (slider) slider.value = this.params[key];
+          if (valEl) {
+            const unit = slider ? slider.dataset.unit || '' : '';
+            valEl.textContent = this.params[key].toFixed(unit === 'σ' ? 3 : unit === '×' ? 1 : 2) + unit;
+          }
+          if (randBtn) randBtn.classList.toggle('active', this.params['random_' + key]);
+        }
+      });
+    },
+    loadPreset() {
+      // Placeholder for preset loading
+      alert('Preset loading not yet implemented');
+    },
+    begin() {
+      this.active = false;
+      document.getElementById('opening-screen').classList.add('hidden');
+      sim.init(this.params);
+    }
+  };
+
+  // Prime View
+  const PrimeView = {
+    active: false,
+    toggle() {
+      this.active = !this.active;
+      document.getElementById('hud-prime').classList.toggle('visible', this.active);
+      document.getElementById('btn-prime-view').textContent = this.active ? '🔢 Prime Gaps ✓' : '🔢 Prime Gaps';
+      if (this.active) this.render();
+    },
+    render() {
+      const display = document.getElementById('prime-gap-display');
+      let html = '';
+      for (let i = 0; i < Math.min(PRIME_GAPS.length, 200); i++) {
+        const gap = PRIME_GAPS[i] * 2; // spin-1/2 double cover
+        const isTwin = gap === 4; // gap=2 * 2 = 4 for twin primes
+        html += `<div class="prime-gap-bar" style="width:${Math.min(gap * 3, 100)}%; background:${isTwin ? '#facc15' : 'linear-gradient(90deg, #facc15, #f472b6)'}; opacity:${isTwin ? 1 : 0.8}"></div>`;
+      }
+      display.innerHTML = html;
+    }
+  };
+
+  // Riemann View
+  const RiemannView = {
+    active: false,
+    toggle() {
+      this.active = !this.active;
+      document.getElementById('hud-riemann').classList.toggle('visible', this.active);
+      document.getElementById('btn-riemann-view').textContent = this.active ? '📐 Riemann Zeros ✓' : '📐 Riemann Zeros';
+      if (this.active) this.render();
+    },
+    render() {
+      const display = document.getElementById('riemann-zero-display');
+      let html = '';
+      RIEMANN_ZEROS.forEach((gamma, i) => {
+        html += `<div class="riemann-zero" style="width:${Math.min(gamma * 2, 100)}%"></div>`;
+      });
+      display.innerHTML = html;
+    }
+  };
+
+  // Hilbert View
+  const HilbertView = {
+    active: false,
+    toggle() {
+      this.active = !this.active;
+      document.getElementById('hud-hilbert').classList.toggle('visible', this.active);
+      document.getElementById('btn-hilbert-view').textContent = this.active ? '🧮 Hilbert 256 ✓' : '🧮 Hilbert 256';
+      if (this.active) this.render();
+    },
+    render() {
+      const display = document.getElementById('hilbert-display');
+      let html = '';
+      for (let i = 0; i < 256; i++) {
+        const gapIdx = i % PRIME_GAPS.length;
+        const gap = PRIME_GAPS[gapIdx] * 2;
+        const hue = (gap * 15) % 360;
+        html += `<div class="hilbert-cell" style="background:hsl(${hue}, 70%, 50%); width:${Math.min(gap * 2, 100)}%"></div>`;
+      }
+      display.innerHTML = html;
+    }
+  };
+
+  // Trails View
+  const TrailsView = {
+    active: false,
+    toggle() {
+      this.active = !this.active;
+      document.getElementById('hud-trails').classList.toggle('visible', this.active);
+      document.getElementById('btn-trails-view').textContent = this.active ? '📜 Trails ✓' : '📜 Trails';
+      if (this.active) this.render();
+    },
+    render() {
+      const list = document.getElementById('trails-list');
+      if (!sim.trailHistory || !sim.trailHistory.length) {
+        list.innerHTML = '<div class="trail-entry">No trail history yet</div>';
+        return;
+      }
+      let html = '';
+      sim.trailHistory.slice(-20).forEach((entry, i) => {
+        html += `<div class="trail-entry ${entry.active ? 'active' : ''}">${entry.type} @ ${entry.time.toFixed(1)}s</div>`;
+      });
+      list.innerHTML = html;
+    }
+  };

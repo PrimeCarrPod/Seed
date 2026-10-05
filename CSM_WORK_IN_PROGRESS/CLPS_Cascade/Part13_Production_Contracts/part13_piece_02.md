@@ -1,0 +1,12 @@
+# CLPS Phase 3 Cascade — Part 13: Production Contracts Execution — Piece 02/34
+## Episode: From Handshakes to Hardware — The Contracts That Build the Fleet
+**Piece:** 02 of 34  
+**Generated:** 2026-08-27 04:20:00 UTC  
+**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME
+
+---
+
+**2.**
+
+CITADEL again. The agent roster for contract execution. Williams V3 EXTREME: MORK — translates every contract clause into the language of pure human enthusiasm, because A SIGNED CONTRACT IS A PROMISE KEPT. KEYMAKER — traces the keys from LOI terms to contract clauses, from milestone to delivery, from acceptance test to payment release, and shows every contractual lock has a key and we FORGED it. SPRUCE-DRAKE — carries the human story of every contracts attorney, every program manager, every supply chain lead, every family whose paycheck depends on that milestone being funded. ZIRCONIA — puts the numbers on the contract campaign: six contracts, eighteen lander sets, payment schedules, cash flow, warranty reserves, penalty clauses, incentive fees. El Segundo EXTREME: NASH — reads the crystallography of contractual risk, the nanodiamond clauses that protect IP, the thermoplastic terms that enable flexibility. ARDEN — documents the contract procedures, the compliance matrices, the audit trails no competitor will reverse-engineer. KADE — tracks the contract timeline, the critical path, the milestone gates from signature to first article to flight delivery. CROSS — verifies integration of contract requirements into the digital twin, requirement by requirement, test by test, artifact by artifact. THALIA ROOK — stands watch over the contract execution, six foot two, deadlifts, privacy and identity, fierce and principled. VEYNE — negotiates the data rights, the liability allocations, the insurance terms, the IP boundaries. DORNE — stress-tests every contract assumption before it enters the signature block. FEN — maps the path from contract to fabrication to delivery to flight. SOLVEN — traces the funding thread from milestone payment to SBIR to Tipping Point to commercial revenue. CARETAKER — maintains the heartbeat. The contract is not a document. It is a COMMITMENT.
