@@ -1,0 +1,39 @@
+{
+  "files": {
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_williams.md",
+      "difficulty": "easy",
+      "lines": 14,
+      "strategies": 3,
+      "timestamp": "2026-10-04T01:19:03Z"
+    },
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_keymaker.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_keymaker.md",
+      "difficulty": "easy",
+      "lines": 14,
+      "strategies": 3,
+      "timestamp": "2026-10-04T01:19:12Z"
+    },
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_elsegundo.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/intro_elsegundo.md",
+      "difficulty": "easy",
+      "lines": 14,
+      "strategies": 3,
+      "timestamp": "2026-10-04T01:19:16Z"
+    },
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/COMBINED_INTRO.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/COMBINED_INTRO.md",
+      "difficulty": "easy",
+      "lines": 54,
+      "strategies": 3,
+      "timestamp": "2026-10-04T01:19:23Z"
+    },
+    "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/content.md": {
+      "file": "/root/.openclaw/workspace/CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/content.md",
+      "difficulty": "medium",
+      "lines": 437,
+      "strategies": 6,
+      "timestamp": "2026-10-04T01:19:28Z"
+    }
+  }
+}
