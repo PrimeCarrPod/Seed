@@ -41,12 +41,12 @@
 **Status:** ✅ Pushed to prime_pi_electron branch (commit e8de1d1c)
 
 ### Section 02: Discrete Causal Geometry from Prime Gap Sequences
-**Target:** ~76K words, 13 pieces
-- [ ] Piece 01: Causal Set Theory Primer: Order + Number = Geometry
-- [ ] Piece 02: Sprinkling Density & Volume-Element Correspondence
-- [ ] Piece 03: Proper Time as Longest Causal Chain (Geodesic)
-- [ ] Piece 04: Myrheim-Meyer Dimension Estimator on Prime Lattice
-- [ ] Piece 05: Volume-Chain Scaling Enforces d=4
+**Target:** ~76K words, 13 pieces (~5,800 words/piece)
+- [x] Piece 01: Causal Set Theory Primer: Order + Number = Geometry
+- [x] Piece 02: Sprinkling Density & Volume-Element Correspondence
+- [x] Piece 03: Proper Time as Longest Causal Chain (Geodesic)
+- [x] Piece 04: Myrheim-Meyer Dimension Estimator on Prime Lattice
+- [x] Piece 05: Volume-Chain Scaling Enforces d=4
 - [ ] Piece 06: Benincasa-Dowker Action: Discrete Einstein-Hilbert
 - [ ] Piece 07: Link Matrix & Interval Suppression of KR Orders
 - [ ] Piece 08: Destructive Interference in Path Sum for Pathological Orders
@@ -55,6 +55,7 @@
 - [ ] Piece 11: Computational Protocol: CST from π(x) Intervals
 - [ ] Piece 12: Numerical Validation: Dimension Recovery at Scale
 - [ ] Piece 13: Appendix: Causal Set Algorithms & Complexity Bounds
+**Status:** 5/13 pieces drafted, pieces 06-13 pending
 
 ### Section 03: Sorkin-Johnston Vacuum & Quantum Fields on Prime Poset
 **Target:** ~76K words, 13 pieces
@@ -270,7 +271,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 | Section | Pieces Done | Words | Lines | Status |
 |---------|-------------|-------|-------|--------|
 | 01 | 13/13 | ~14,164 | ~2,349 | ✅ Complete |
-| 02 | 0/13 | 0 | 0 | ⏳ Pending |
+| 02 | 5/13 | ~4,200 | ~750 | 🔄 In Progress |
 | 03 | 0/13 | 0 | 0 | ⏳ Pending |
 | 04 | 0/13 | 0 | 0 | ⏳ Pending |
 | 05 | 0/13 | 0 | 0 | ⏳ Pending |
@@ -282,7 +283,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 | 11 | 0/13 | 0 | 0 | ⏳ Pending |
 | 12 | 0/13 | 0 | 0 | ⏳ Pending |
 | 13 | 0/1 | 0 | 0 | ⏳ Pending |
-| **TOTAL** | **13/170** | **~14,164** | **~2,349** | |
+| **TOTAL** | **18/170** | **~18,364** | **~3,099** | |
 
 ---
 
