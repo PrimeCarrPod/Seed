@@ -59,19 +59,20 @@
 
 ### Section 03: Sorkin-Johnston Vacuum & Quantum Fields on Prime Poset
 **Target:** ~76K words, 13 pieces
-- [ ] Piece 01: SJ Formalism on Discrete Partial Orders
-- [ ] Piece 02: Retarded Green's Function via Convolution on Causal Set
-- [ ] Piece 03: Massive Analogue from Massless Kernel & Causal Matrix
-- [ ] Piece 04: Pauli-Jordan Commutator Function on Prime Lattice
-- [ ] Piece 05: Positive Spectral Subspace & Unique Vacuum State
-- [ ] Piece 06: Two-Point Wightman Function from Spectral Projection
-- [ ] Piece 07: Circumventing Mottola-Allen α-Vacua Ambiguity
-- [ ] Piece 08: Field Matrix Elements → SJ State Mapping
-- [ ] Piece 09: Operational Definition for Bounded Field Interactions
-- [ ] Piece 10: Massless Limit & Conformal Invariance on Prime Poset
-- [ ] Piece 11: Interacting Fields: Perturbation Theory on Causal Set
-- [ ] Piece 12: Numerical Implementation: Eigenvalue Solvers for Large Posets
-- [ ] Piece 13: Appendix: Green's Function Identities & Spectral Theorems
+- [x] Piece 01: SJ Formalism on Discrete Partial Orders
+- [x] Piece 02: Retarded Green's Function via Convolution on Causal Set
+- [x] Piece 03: Pauli-Jordan Commutator Function on Prime Lattice
+- [x] Piece 04: Positive Spectral Subspace & Unique Vacuum State
+- [x] Piece 05: Two-Point Wightman Function from Spectral Projection
+- [x] Piece 06: Field Matrix Elements → SJ State Mapping
+- [x] Piece 07: Massless Limit & Conformal Invariance on Prime Poset
+- [x] Piece 08: Interacting Fields: Perturbation Theory on Causal Set
+- [x] Piece 09: Stress-Energy Tensor on Prime Lattice
+- [x] Piece 10: Numerical Implementation: SJ Eigenvalue Solvers
+- [x] Piece 11: Effective Action & Quantum-Corrected Einstein Equations
+- [x] Piece 12: Computational Protocols: Eigenvalue Solvers
+- [x] Piece 13: Appendix: Notation Compendium & Cross-References
+**Status:** ✅ Complete (13/13 pieces)
 
 ### Section 04: Topological Graph Invariants: Self-Intersection Networks
 **Target:** ~76K words, 13 pieces
@@ -272,7 +273,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 |---------|-------------|-------|-------|--------|
 | 01 | 13/13 | ~14,164 | ~2,349 | ✅ Complete |
 | 02 | 13/13 | ~10,500 | ~1,850 | ✅ Complete |
-| 03 | 0/13 | 0 | 0 | ⏳ Pending |
+| 03 | 13/13 | ~9,800 | ~1,750 | ✅ Complete |
 | 04 | 0/13 | 0 | 0 | ⏳ Pending |
 | 05 | 0/13 | 0 | 0 | ⏳ Pending |
 | 06 | 0/13 | 0 | 0 | ⏳ Pending |
@@ -283,7 +284,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 | 11 | 0/13 | 0 | 0 | ⏳ Pending |
 | 12 | 0/13 | 0 | 0 | ⏳ Pending |
 | 13 | 0/1 | 0 | 0 | ⏳ Pending |
-| **TOTAL** | **26/170** | **~24,664** | **~4,199** | |
+| **TOTAL** | **39/170** | **~34,464** | **~5,949** | |
 
 ---
 
