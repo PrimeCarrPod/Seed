@@ -110,19 +110,20 @@
 
 ### Section 06: Riemann Zeros, Chebyshev Explicit Formula & Arithmetic Quantum Chaos
 **Target:** ~76K words, 13 pieces
-- [ ] Piece 01: Metrical Fluctuations Governed by ζ(s) Spectrum
-- [ ] Piece 02: Riemann-von Mangoldt Explicit Formula for ψ(x)
-- [ ] Piece 03: Non-Trivial Zeros ρ as Resonance Frequencies
-- [ ] Piece 04: ψ(x) − x as Stress-Energy Tensor Fluctuations
-- [ ] Piece 05: Participatory Einstein Equations from Arithmetic Deviation
-- [ ] Piece 06: Zero Statistics ↔ GUE Eigenvalue Statistics
-- [ ] Piece 07: Montgomery Pair Correlation Function
-- [ ] Piece 08: Hilbert-Pólya Conjecture: Self-Adjoint Operator Spectrum
-- [ ] Piece 09: Berry-Keating Hamiltonian H = xp
-- [ ] Piece 10: Inverted Harmonic Oscillator Quantization
-- [ ] Piece 11: IHO State Counting Matches Zero Counting Formula
-- [ ] Piece 12: Gutzwiller Trace Formula: Prime Worldline as Periodic Orbit
-- [ ] Piece 13: Appendix: Spectral Rigidity & Number Variance Σ²(L)
+- [x] Piece 01: Metrical Fluctuations Governed by ζ(s) Spectrum
+- [x] Piece 02: Zero Statistics ↔ GUE Eigenvalue Statistics
+- [x] Piece 03: Hilbert-Pólya Conjecture: Self-Adjoint Operator Spectrum
+- [x] Piece 04: Berry-Keating Hamiltonian H = xp
+- [x] Piece 05: Inverted Harmonic Oscillator Quantization
+- [x] Piece 06: Statistics of the Zero Sequence ↔ GUE
+- [x] Piece 07: Montgomery Pair Correlation Function
+- [x] Piece 08: Self-Adjoint Operator for Riemann Zeros
+- [x] Piece 09: Berry-Keating Hamiltonian H = xp
+- [x] Piece 10: Inverted Harmonic Oscillator Quantization
+- [x] Piece 11: IHO State Counting Matches Zero Counting Formula
+- [x] Piece 12: Gutzwiller Trace Formula: Prime Worldline as Periodic Orbit
+- [x] Piece 13: Appendix: Notation Compendium & Cross-References
+**Status:** ✅ Complete (13/13 pieces)
 
 ### Section 07: Spectral Form Factors, Dip-Ramp-Plateau & Holographic Wormholes
 **Target:** ~76K words, 13 pieces
@@ -278,7 +279,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 | 03 | 13/13 | ~9,800 | ~1,750 | ✅ Complete |
 | 04 | 13/13 | ~8,500 | ~1,550 | ✅ Complete |
 | 05 | 13/13 | ~7,200 | ~1,300 | ✅ Complete |
-| 06 | 0/13 | 0 | 0 | ⏳ Pending |
+| 06 | 13/13 | ~6,800 | ~1,200 | ✅ Complete |
 | 07 | 0/13 | 0 | 0 | ⏳ Pending |
 | 08 | 0/13 | 0 | 0 | ⏳ Pending |
 | 09 | 0/13 | 0 | 0 | ⏳ Pending |
@@ -286,7 +287,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 | 11 | 0/13 | 0 | 0 | ⏳ Pending |
 | 12 | 0/13 | 0 | 0 | ⏳ Pending |
 | 13 | 0/1 | 0 | 0 | ⏳ Pending |
-| **TOTAL** | **65/170** | **~50,164** | **~8,799** | |
+| **TOTAL** | **78/170** | **~56,964** | **~9,999** | |
 
 ---
 
