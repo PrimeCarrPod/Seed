@@ -1,0 +1,46 @@
+[CHAMBER-4] Started at Sun Oct  4 01:15:43 UTC 2026 | Focus: INTEGRATION | Interval: 10s
+[CHAMBER-4] Started at Sun Oct  4 01:15:43 UTC 2026 | Focus: INTEGRATION | Interval: 10s
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:15:43 UTC 2026 | Kp=8 | E-field=0.000287236 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:03 UTC 2026 | Kp=8 | E-field=0.000266984 | Risk=LOW
+[CHAMBER-4] Started at Sun Oct  4 01:16:28 UTC 2026 | Focus: INTEGRATION | Interval: 10s
+[CHAMBER-4] Sun Oct  4 01:16:34 UTC 2026 | Cycle: 6 | Kp: 9 | E-field: 0.000380491V/km | Risk: LOW | Coupling: 0.337892,3.96503e-19,0.0551605
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:34 UTC 2026 | Kp=9 | E-field=0.000380491 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:16:34 UTC 2026 | Cycle: 6 | Kp: 7 | E-field: 0.000552876V/km | Risk: LOW | Coupling: 0.25819,3.85875e-19,0.0416704
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:34 UTC 2026 | Kp=7 | E-field=0.000552876 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:38 UTC 2026 | Kp=8 | E-field=0.00118444 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:44 UTC 2026 | Kp=9 | E-field=0.000347638 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:44 UTC 2026 | Kp=8 | E-field=0.000700764 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:16:48 UTC 2026 | Kp=9 | E-field=0.00114606 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:17:09 UTC 2026 | Kp=9 | E-field=6.14632e-05 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:17:19 UTC 2026 | Cycle: 6 | Kp: 8 | E-field: 0.000642766V/km | Risk: LOW | Coupling: 0.813155,1.31937e-19,0.152781
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:17:19 UTC 2026 | Kp=8 | E-field=0.000642766 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:17:29 UTC 2026 | Kp=9 | E-field=0.00074024 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:17:34 UTC 2026 | Cycle: 12 | Kp: 9 | E-field: 0.00102186V/km | Risk: LOW | Coupling: 0.420684,1.8517e-19,0.0728514
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:17:34 UTC 2026 | Kp=9 | E-field=0.00102186 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:17:34 UTC 2026 | Cycle: 12 | Kp: 6 | E-field: 0.000211467V/km | Risk: LOW | Coupling: 0.631794,9.45358e-19,0.101963
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:17:39 UTC 2026 | Kp=9 | E-field=0.0010958 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:17:45 UTC 2026 | Kp=8 | E-field=0.000360323 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:18:05 UTC 2026 | Kp=9 | E-field=0.000841643 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:18:09 UTC 2026 | Kp=8 | E-field=0.000455722 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:18:19 UTC 2026 | Cycle: 12 | Kp: 6 | E-field: 0.000930284V/km | Risk: LOW | Coupling: 0.941606,1.10039e-19,0.18261
+[CHAMBER-4] Sun Oct  4 01:18:35 UTC 2026 | Cycle: 18 | Kp: 6 | E-field: 0.000667267V/km | Risk: LOW | Coupling: 0.484609,1.29371e-19,0.0871808
+[CHAMBER-4] Sun Oct  4 01:18:35 UTC 2026 | Cycle: 18 | Kp: 5 | E-field: 4.46389e-05V/km | Risk: LOW | Coupling: 0.593861,6.49804e-20,0.115939
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:18:55 UTC 2026 | Kp=9 | E-field=0.00115833 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:18:59 UTC 2026 | Kp=9 | E-field=0.00118059 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:19:19 UTC 2026 | Cycle: 18 | Kp: 2 | E-field: 0.000603031V/km | Risk: LOW | Coupling: 0.601347,4.72757e-19,0.100316
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:19:25 UTC 2026 | Kp=9 | E-field=0.00118724 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:19:30 UTC 2026 | Kp=9 | E-field=0.00109692 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:19:35 UTC 2026 | Cycle: 24 | Kp: 5 | E-field: 0.000317014V/km | Risk: LOW | Coupling: 0.568012,1.19643e-19,0.104248
+[CHAMBER-4] Sun Oct  4 01:19:35 UTC 2026 | Cycle: 24 | Kp: 4 | E-field: 0.000595879V/km | Risk: LOW | Coupling: 0.489404,1.34804e-18,0.0771548
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:19:50 UTC 2026 | Kp=7 | E-field=0.00021462 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:05 UTC 2026 | Kp=9 | E-field=0.000624355 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:16 UTC 2026 | Kp=8 | E-field=0.000317278 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:20:20 UTC 2026 | Cycle: 24 | Kp: 9 | E-field: 0.000676003V/km | Risk: LOW | Coupling: 0.458999,2.53227e-19,0.0782703
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:20 UTC 2026 | Kp=9 | E-field=0.000676003 | Risk=LOW
+[CHAMBER-4] Sun Oct  4 01:20:36 UTC 2026 | Cycle: 30 | Kp: 1 | E-field: 0.00060018V/km | Risk: LOW | Coupling: 0.621882,1.262e-18,0.0991011
+[CHAMBER-4] Sun Oct  4 01:20:36 UTC 2026 | Cycle: 30 | Kp: 7 | E-field: 0.000637974V/km | Risk: LOW | Coupling: 0.585278,2.68825e-19,0.101052
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:36 UTC 2026 | Kp=7 | E-field=0.000637974 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:46 UTC 2026 | Kp=7 | E-field=0.00108725 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:50 UTC 2026 | Kp=8 | E-field=0.000781381 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:20:56 UTC 2026 | Kp=7 | E-field=0.000284161 | Risk=LOW
+[CHAMBER-4] ALERT: Carrington-class | Sun Oct  4 01:21:00 UTC 2026 | Kp=9 | E-field=0.00108133 | Risk=LOW
