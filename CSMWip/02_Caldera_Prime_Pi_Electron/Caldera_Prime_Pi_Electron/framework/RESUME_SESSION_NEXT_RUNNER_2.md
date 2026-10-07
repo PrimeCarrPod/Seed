@@ -16,22 +16,21 @@
 # ============================================================
 # 1. NAVIGATE & VERIFY ENVIRONMENT
 # ============================================================
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_1d9b1f69-f512-460a-87fe-7899cb7a5615
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea
 
-# Verify branch and pull latest
-git checkout kilo/mega-acorn-bfu
-git pull origin kilo/mega-acorn-bfu
-git checkout prime_pi_electron
-git pull origin prime_pi_electron
+# Verify on main branch
+git checkout main
+git pull origin main
+git checkout -b caldera-prime-pi-electron-continue
 
 # Verify status
 git status
 git log --oneline -5
 
 # Verify directory structure
-ls -la CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/
-ls -la CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/ | wc -l
-ls -la CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/sections/
+ls -la CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/
+ls -la CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/ | wc -l
+ls -la CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/sections/
 
 # Verify GitHub handler
 ls -la csmpieces/05_scripts_tools/GitHub_handler.sh
@@ -43,13 +42,13 @@ chmod +x csmpieces/05_scripts_tools/GitHub_handler.sh
 # 2. REVIEW CURRENT STATE
 # ============================================================
 # Check Master TODO (shows 10/13 sections complete)
-cat CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md | head -100
+cat CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md | head -100
 
 # Check Project Logs
-cat CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md | head -50
+cat CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md | head -50
 
 # Check Heartbeat
-tail -5 CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
+tail -5 CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
 ```
 
 ```bash
@@ -58,7 +57,7 @@ tail -5 CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Elect
 # ============================================================
 nohup bash -c '
   while true; do
-    echo "$(date -u +"%Y-%m-%d %H:%M:%S UTC") | BRANCH: $(git branch --show-current 2>/dev/null || echo detached) | PIECES: $(ls CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/*.md 2>/dev/null | wc -l) | SECTION: $(grep -A1 "Section 1[0-3]" CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md 2>/dev/null | head -2 | tail -1 | sed "s/.*\[x\] //")" >> CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
+    echo "$(date -u +"%Y-%m-%d %H:%M:%S UTC") | BRANCH: $(git branch --show-current 2>/dev/null || echo detached) | PIECES: $(ls CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/*.md 2>/dev/null | wc -l) | SECTION: $(grep -A1 "Section 1[0-3]" CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md 2>/dev/null | head -2 | tail -1 | sed "s/.*\[x\] //")" >> CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
     sleep 30
   done
 ' &
@@ -120,7 +119,7 @@ done
 
 **Constraints Applied:**
 - ✅ Branch: `prime_pi_electron` (from `published-merge`)
-- ✅ Target: `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/`
+- ✅ Target: `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/`
 - ✅ Author: "Jason Isaac Brodsky (California 1976) — Conducier" on ALL documents
 - ✅ Piece target: ~300 lines, ~5,800 words per piece
 - ✅ 13 sections × 13 pieces = 169 content pieces + 1 final concat
@@ -231,8 +230,8 @@ If `git push origin main` fails, try in order:
 
 ```bash
 # After each major milestone
-SESSION_LOG="csmlogs/aug26/session_$(date -u +%Y%m%d_%H%M%S).md"
-cp CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md "$SESSION_LOG"
+SESSION_LOG="csmlogs/caldera/session_$(date -u +%Y%m%d_%H%M%S).md"
+cp CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md "$SESSION_LOG"
 git add "$SESSION_LOG"
 git commit -m "Add session log: $(basename $SESSION_LOG)"
 git push origin main
@@ -246,13 +245,13 @@ git push origin main
 
 | File | Purpose |
 |------|---------|
-| `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md` | Master tracker (130/170 pieces done) |
-| `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/RESUME_SESSION_NEXT_RUNNER_2.md` | This file (startup instructions v2) |
-| `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md` | Continuous work log |
-| `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log` | 30-second heartbeat |
+| `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md` | Master tracker (130/170 pieces done) |
+| `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/RESUME_SESSION_NEXT_RUNNER_2.md` | This file (startup instructions v2) |
+| `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md` | Continuous work log |
+| `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log` | 30-second heartbeat |
 | `csmpieces/05_scripts_tools/GitHub_handler.sh` | Piece management script |
-| `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/sections/` | 10 concatenated section files |
-| `CSM_WORK_IN_PROGRESS/SubAtom_WIP/*/full/` | Organized section files |
+| `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/sections/` | 10 concatenated section files |
+| `CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/*/full/` | Organized section files |
 | `CSM_WORK_IN_PROGRESS/SubAtom_WIP/*/zip/` | Zipped piece archives |
 
 ---
