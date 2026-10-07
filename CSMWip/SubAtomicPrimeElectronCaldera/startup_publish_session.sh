@@ -18,7 +18,7 @@ NC='\033[0m' # No Color
 
 # Project paths
 WORKSPACE="/root/.openclaw/workspace"
-PROJECT_DIR="$WORKSPACE/CSMWip/SubAtomicPrimeElectronCalderaPublish"
+PROJECT_DIR="$WORKSPACE/CSMWip/SubAtomicPrimeElectronCaldera"
 SOURCE_DIR="$WORKSPACE/CSMWip/SubAtomicPrimeElectronCaldera"
 SCRIPTS_DIR="$WORKSPACE/CSMScripts"
 LOGS_DIR="$WORKSPACE/csmlogs/aug26"

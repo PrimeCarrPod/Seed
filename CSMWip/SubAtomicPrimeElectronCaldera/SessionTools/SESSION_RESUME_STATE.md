@@ -31,9 +31,9 @@ ps aux | grep earthbeatv3
 | GitHub Auth | ✅ PrimeCarrPod | gh auth status |
 | Repo | ✅ PrimeCarrPod/Seed (public) | GitHub API |
 | Scripts | ✅ Github_Handler.sh, earthbeatv3.sh, freenemo.sh, sort_pieces.sh, concat_all.sh | CSMScripts/ |
-| Heuristics Guide | ✅ Created | CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md |
-| Master Todo | ✅ Created | CSMWip/SubAtomicPrimeElectronCalderaPublish/MASTER_TODO_LIST.md |
-| Table of Contents | ✅ Created | CSMWip/SubAtomicPrimeElectronCalderaPublish/TABLE_OF_CONTENTS.md |
+| Heuristics Guide | ✅ Created | CSMWip/SubAtomicPrimeElectronCaldera/INTRO_HEURISTICS_GUIDE.md |
+| Master Todo | ✅ Created | CSMWip/SubAtomicPrimeElectronCaldera/MASTER_TODO_LIST.md |
+| Table of Contents | ✅ Created | CSMWip/SubAtomicPrimeElectronCaldera/TABLE_OF_CONTENTS.md |
 | Session Logs | 📁 Target: csmlogs/aug26/ | (create on first push) |
 | Heartbeat | ⏳ Not started | earthbeatv3.sh chamber mode |
 
@@ -46,7 +46,7 @@ ps aux | grep earthbeatv3
 - **Runtime:** subagent
 - **Context:** isolated
 - **Working Dir:** CSMWip/SubAtomicPrimeElectronCaldera/Foundation
-- **Output Dir:** CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation
+- **Output Dir:** CSMWip/SubAtomicPrimeElectronCaldera/Foundation
 - **Papers:** A1-01 through A2-20 + 8 FLAGSHIP + 5 METHOD
 
 ### Stream B: CosmologyAstrophysics (40 papers)
@@ -54,7 +54,7 @@ ps aux | grep earthbeatv3
 - **Runtime:** subagent
 - **Context:** isolated
 - **Working Dir:** CSMWip/SubAtomicPrimeElectronCaldera/CosmologyAstrophysics
-- **Output Dir:** CSMWip/SubAtomicPrimeElectronCalderaPublish/CosmologyAstrophysics
+- **Output Dir:** CSMWip/SubAtomicPrimeElectronCaldera/CosmologyAstrophysics
 - **Papers:** A8-01 through A8-40
 
 ### Stream C: ExperimentalSignatures (40 papers)
@@ -62,7 +62,7 @@ ps aux | grep earthbeatv3
 - **Runtime:** subagent
 - **Context:** isolated
 - **Working Dir:** CSMWip/SubAtomicPrimeElectronCaldera/ExperimentalSignatures
-- **Output Dir:** CSMWip/SubAtomicPrimeElectronCalderaPublish/ExperimentalSignatures
+- **Output Dir:** CSMWip/SubAtomicPrimeElectronCaldera/ExperimentalSignatures
 - **Papers:** A9-01 through A9-40
 
 ### Stream D: Particles + CrossCutting (~35 papers)
@@ -70,7 +70,7 @@ ps aux | grep earthbeatv3
 - **Runtime:** subagent
 - **Context:** isolated
 - **Working Dir:** CSMWip/SubAtomicPrimeElectronCaldera/Particles + CrossCutting
-- **Output Dir:** CSMWip/SubAtomicPrimeElectronCalderaPublish/Particles + CrossCutting
+- **Output Dir:** CSMWip/SubAtomicPrimeElectronCaldera/Particles + CrossCutting
 - **Papers:** 33 Particles directories + 5 CrossCutting directories
 
 ---
@@ -84,7 +84,7 @@ You are sub-agent [STREAM-LABEL] for the SubAtomicPrimeElectronCalderaPublish pr
 
 **Mission:** Process all papers in [CATEGORY] directory, generating 9-paragraph heuristic introductions for each.
 
-**Heuristics (read first):** CSMWip/SubAtomicPrimeElectronCalderaPublish/INTRO_HEURISTICS_GUIDE.md
+**Heuristics (read first):** CSMWip/SubAtomicPrimeElectronCaldera/INTRO_HEURISTICS_GUIDE.md
 
 **Your Papers:** [LIST FROM MASTER_TODO_LIST.md]
 
@@ -143,7 +143,7 @@ bash CSMScripts/earthbeatv3.sh tokenring "publish-master" 4 &
 ### Save Pieces (from sub-agent)
 ```bash
 # Split content into ~76 line pieces, save each
-bash CSMScripts/Github_Handler.sh save-piece "PrimeCarrPod/Seed" "CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01/piece_01.md" "content" "main" "PrimeCarrPod" "token"
+bash CSMScripts/Github_Handler.sh save-piece "PrimeCarrPod/Seed" "CSMWip/SubAtomicPrimeElectronCaldera/Foundation/A1-01/piece_01.md" "content" "main" "PrimeCarrPod" "token"
 
 # Repeat for piece_02 through piece_13+
 ```
@@ -151,14 +151,14 @@ bash CSMScripts/Github_Handler.sh save-piece "PrimeCarrPod/Seed" "CSMWip/SubAtom
 ### Merge Pieces (pre-final)
 ```bash
 # Concatenate all pieces → zip → git add/commit/push → delete temp
-bash CSMScripts/concat_all.sh "CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01"
-bash CSMScripts/Github_Handler.sh merge-pieces "PrimeCarrPod/Seed" "CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01" "main" "PrimeCarrPod" "token"
+bash CSMScripts/concat_all.sh "CSMWip/SubAtomicPrimeElectronCaldera/Foundation/A1-01"
+bash CSMScripts/Github_Handler.sh merge-pieces "PrimeCarrPod/Seed" "CSMWip/SubAtomicPrimeElectronCaldera/Foundation/A1-01" "main" "PrimeCarrPod" "token"
 ```
 
 ### Verify 17 Fallback Methods (final)
 ```bash
 # Final verification script
-bash CSMScripts/verify_merge.sh "CSMWip/SubAtomicPrimeElectronCalderaPublish/Foundation/A1-01"
+bash CSMScripts/verify_merge.sh "CSMWip/SubAtomicPrimeElectronCaldera/Foundation/A1-01"
 ```
 
 ---
@@ -188,8 +188,8 @@ NEXT SESSION START INSTRUCTIONS:
 1. AUTHENTICATE: gh auth status (should be PrimeCarrPod)
 
 2. CHECK STATUS: 
-   - Read CSMWip/SubAtomicPrimeElectronCalderaPublish/MASTER_TODO_LIST.md
-   - Read CSMWip/SubAtomicPrimeElectronCalderaPublish/SESSION_RESUME_STATE.md
+   - Read CSMWip/SubAtomicPrimeElectronCaldera/MASTER_TODO_LIST.md
+   - Read CSMWip/SubAtomicPrimeElectronCaldera/SESSION_RESUME_STATE.md
    - Check csmlogs/aug26/SESSION_SUMMARY.md
 
 3. RESUME HEARTBEAT:
@@ -242,7 +242,7 @@ gh api repos/PrimeCarrPod/Seed/contents/CSMSOPP/heuristics/keymaker.md
 gh api repos/PrimeCarrPod/Seed/contents/CSMSOPPv2/heuristics/elsegundo.md
 
 # Created publishing structure
-mkdir -p CSMWip/SubAtomicPrimeElectronCalderaPublish/{Foundation,CosmologyAstrophysics,ExperimentalSignatures,Particles,CrossCutting}
+mkdir -p CSMWip/SubAtomicPrimeElectronCaldera/{Foundation,CosmologyAstrophysics,ExperimentalSignatures,Particles,CrossCutting}
 
 # Created core files
 INTRO_HEURISTICS_GUIDE.md
