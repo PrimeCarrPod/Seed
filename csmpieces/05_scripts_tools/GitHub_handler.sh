@@ -74,10 +74,10 @@ show_help() {
 GitHub Handler - Article Piece File Manager
 
 COMMANDS:
-  create-pieces <article_num> <title> [prefix]  Create 12 empty piece files for new article
+  create-pieces <article_num> <title> [prefix]  Create 13 empty piece files for new article
   write-piece <article_num> <piece_num> <content>  Write content to specific piece
-  concat <article_num> [title]                  Concatenate 12 pieces into master file
-  zip-pieces <article_num>                      Zip 12 pieces into archive
+  concat <article_num> [title]                  Concatenate 13 pieces into master file
+  zip-pieces <article_num>                      Zip 13 pieces into archive
   verify <article_num>                          Verify piece count, concat lines, zip contents
   organize <article_num>                        Copy concat+zip to organized folders
   full-cycle <article_num> <title> [prefix]     Complete cycle: create, concat, zip, organize, commit
@@ -129,13 +129,13 @@ create_pieces() {
         if [[ "$prefix" == "article8" ]]; then article_letter="A8"; article_letter_dir="H"; fi
         if [[ "$prefix" == "article9" ]]; then article_letter="A9"; article_letter_dir="I"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
-    for i in {1..12}; do
+    for i in {1..13}; do
         local piece_file="${full_prefix}_piece_$(printf "%02d" "$i").md"
         if [[ ! -f "$piece_file" ]]; then
             cat > "$piece_file" <<PIECE_EOF
-# ${title} — Piece $(printf "%02d" "$i")/12
+# ${title} — Piece $(printf "%02d" "$i")/13
 ## Article ${article_letter}: ${article_letter}-$(printf "%02d" "$article_num") — ${title//_/ }
-**Piece:** $(printf "%02d" "$i") of 12  
+**Piece:** $(printf "%02d" "$i") of 13  
 **Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
 ---
@@ -148,7 +148,7 @@ PIECE_EOF
             echo "Exists: $piece_file (skipping)"
         fi
     done
-    echo "Created 12 piece files for ${article_letter}-$(printf "%02d" "$article_num")"
+    echo "Created 13 piece files for ${article_letter}-$(printf "%02d" "$article_num")"
 }
 
 write_piece() {
@@ -220,14 +220,14 @@ concat_pieces() {
 # ${title//_/ } — Complete Article
 ## Article ${article_letter}: ${article_letter}-$(printf "%02d" "$article_num") — ${title//_/ }
 **Generated:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  
-**Structure:** 12 pieces concatenated  
+**Structure:** 13 pieces concatenated  
 **Target:** ≥350 lines
 
 ---
 
 CONCAT_EOF
     
-    for i in {1..12}; do
+    for i in {1..13}; do
         local piece_file="${full_prefix}_piece_$(printf "%02d" "$i").md"
         if [[ -f "$piece_file" ]]; then
             echo "Adding piece $i..."
@@ -271,7 +271,7 @@ zip_pieces() {
     echo "Zipping pieces for ${article_letter}-$(printf "%02d" "$article_num") -> $zip_file"
     
     local piece_files=()
-    for i in {1..12}; do
+    for i in {1..13}; do
         local piece_file="${full_prefix}_piece_$(printf "%02d" "$i").md"
         if [[ -f "$piece_file" ]]; then
             piece_files+=("$piece_file")
@@ -316,12 +316,12 @@ verify_article() {
     
     # Check pieces
     local piece_count=0
-    for i in {1..12}; do
+    for i in {1..13}; do
         if [[ -f "${full_prefix}_piece_$(printf "%02d" "$i").md" ]]; then
             ((piece_count++))
         fi
     done
-    echo "Pieces in root: $piece_count/12"
+    echo "Pieces in root: $piece_count/13"
     
     # Check concat
     local concat_files=($concat_file)
@@ -337,7 +337,7 @@ verify_article() {
     if [[ -f "$zip_file" ]]; then
         local zip_count=$(unzip -l "$zip_file" | grep -c "\.md$" || echo 0)
         echo "Zip file: $zip_file ($zip_count pieces)"
-        [[ $zip_count -eq 12 ]] && echo "  ✅ Contains 12 pieces" || echo "  ❌ Does not contain 12 pieces"
+        [[ $zip_count -eq 13 ]] && echo "  ✅ Contains 13 pieces" || echo "  ❌ Does not contain 13 pieces"
     else
         echo "Zip file: MISSING"
     fi
@@ -442,7 +442,7 @@ clean_pieces() {
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     
     echo "Removing loose pieces for ${article_letter}-$(printf "%02d" "$article_num") from root..."
-    for i in {1..12}; do
+    for i in {1..13}; do
         local piece_file="${full_prefix}_piece_$(printf "%02d" "$i").md"
         if [[ -f "$piece_file" ]]; then
             rm "$piece_file"
@@ -516,7 +516,7 @@ case "${1:-help}" in
     organize) organize_article "$2" ;;
     full-cycle) 
         create_pieces "$2" "$3" "$4"
-        echo ">>> Please edit the 12 piece files now, then run:"
+        echo ">>> Please edit the 13 piece files now, then run:"
         echo ">>> ./GitHub_handler.sh concat $2"
         echo ">>> ./GitHub_handler.sh zip-pieces $2"
         echo ">>> ./GitHub_handler.sh verify $2"
@@ -531,7 +531,7 @@ case "${1:-help}" in
         if [[ "$4" == "article7" ]]; then article_letter="A7"; fi
         if [[ "$4" == "article8" ]]; then article_letter="A8"; fi
         if [[ "$4" == "article9" ]]; then article_letter="A9"; fi
-        echo ">>> ./GitHub_handler.sh commit-push $2 \"Add ${article_letter}-$(printf "%02d" "$2"): $3 - 12 pieces, concat, zip\""
+        echo ">>> ./GitHub_handler.sh commit-push $2 \"Add ${article_letter}-$(printf "%02d" "$2"): $3 - 13 pieces, concat, zip\""
         ;;
     commit-push) commit_and_push "$2" "$3" ;;
     push-main) push_main ;;
