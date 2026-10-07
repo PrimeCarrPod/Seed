@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ping-Pong Heartbeat Daemon - alternating with main heartbeat
-WORKDIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea/CSM_CONSOLIDATED_WIP/08_DeepResearch_SubParticles/SubParticlesV4"
+WORKDIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea/CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4"
 PING_FILE="$WORKDIR/heartbeat-ping.log"
 PONG_FILE="$WORKDIR/heartbeat-pong.log"
 LOG_FILE="$WORKDIR/pingpong-daemon.log"

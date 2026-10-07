@@ -3,7 +3,7 @@
 # Project: Draft 4 Pending Legal Enactment Acts
 # Author: Jason Isaac Brodsky (California 1976) — Conducier
 # Created: 2026-08-29
-# Location: CSM_WIP/LegalActs_06_08_09_10/scripts/startup.sh
+# Location: CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/startup.sh
 
 set -e
 

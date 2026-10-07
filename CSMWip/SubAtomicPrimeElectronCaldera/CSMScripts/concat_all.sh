@@ -1,7 +1,7 @@
 #!/bin/bash
 # Concatenate all SubAtomic Prime Electron research files
 
-OUTPUT="CSM_WORK_IN_PROGRESS/SubAtom_WIP/PRIME_ELECTRON_COMPLETE_RESEARCH.md"
+OUTPUT="CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/PRIME_ELECTRON_COMPLETE_RESEARCH.md"
 echo "# PRIME ELECTRON RESEARCH — COMPLETE CONCATENATED DOCUMENT" > "$OUTPUT"
 echo "## Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> "$OUTPUT"
 echo "## Author: Jason Isaac Brodsky (California 1976, Author Conducier)" >> "$OUTPUT"
@@ -24,15 +24,15 @@ add_file() {
 }
 
 # Foundation
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md" "ULTRA MASTER TODO LIST"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/REPOSITORY_ORGANIZATION_MANIFEST.md" "REPOSITORY ORGANIZATION MANIFEST"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md" "METHODOLOGY"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/FOUNDATION_Prime_Electron_One_Electron_Universe.md" "FOUNDATION"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md" "ULTRA MASTER TODO LIST"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/REPOSITORY_ORGANIZATION_MANIFEST.md" "REPOSITORY ORGANIZATION MANIFEST"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md" "METHODOLOGY"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/FOUNDATION_Prime_Electron_One_Electron_Universe.md" "FOUNDATION"
 
 # Flagships
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/FLAGSHIP_PrimeElectron_Framework.md" "FLAGSHIP: PRIME ELECTRON FRAMEWORK"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/FLAGSHIP_Alpha_BasePi.md" "FLAGSHIP: BASE-PI"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/FLAGSHIP_Alpha_From_Primes.md" "FLAGSHIP: ALPHA (DEPRECATED)"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/FLAGSHIP_PrimeElectron_Framework.md" "FLAGSHIP: PRIME ELECTRON FRAMEWORK"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/FLAGSHIP_Alpha_BasePi.md" "FLAGSHIP: BASE-PI"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/FLAGSHIP_Alpha_From_Primes.md" "FLAGSHIP: ALPHA (DEPRECATED)"
 
 # Articles 1-9
 for article in A B C D E F G H I; do
@@ -53,15 +53,15 @@ for article in A B C D E F G H I; do
     echo "" >> "$OUTPUT"
     echo "# ARTICLE $article: $name" >> "$OUTPUT"
     
-    for f in CSM_WORK_IN_PROGRESS/SubAtom_WIP/$pattern/full/*.md; do
+    for f in CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/$pattern/full/*.md; do
         add_file "$f" "$(basename "$f" .md)"
     done
 done
 
 # Supporting docs
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/ACTION_PLAN.md" "ACTION PLAN"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/GRANT_APPLICATIONS.md" "GRANT APPLICATIONS"
-add_file "CSM_WORK_IN_PROGRESS/SubAtom_WIP/EMAILS_FOR_OUTREACH.md" "EMAILS"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/ACTION_PLAN.md" "ACTION PLAN"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/GRANT_APPLICATIONS.md" "GRANT APPLICATIONS"
+add_file "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/EMAILS_FOR_OUTREACH.md" "EMAILS"
 
 wc -l "$OUTPUT"
 du -h "$OUTPUT"

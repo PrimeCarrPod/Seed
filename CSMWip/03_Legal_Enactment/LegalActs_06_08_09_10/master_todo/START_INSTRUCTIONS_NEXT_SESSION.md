@@ -186,19 +186,19 @@ For each section:
 
 ```bash
 # Create all pieces for a section
-bash CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh create-section 10 01
+bash CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh create-section 10 01
 
 # Concatenate pieces
-bash CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh concat-section 10 01
+bash CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh concat-section 10 01
 
 # Zip pieces
-bash CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh zip-section 10 01
+bash CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh zip-section 10 01
 
 # Verify section
-bash CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh verify-section 10 01
+bash CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh verify-section 10 01
 
 # Commit and push
-bash CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh commit-push 10 "Add Act 10 Section 01: Executive Summary"
+bash CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh commit-push 10 "Add Act 10 Section 01: Executive Summary"
 ```
 
 ---
@@ -220,10 +220,10 @@ git log --oneline -3
 git status
 
 # 2. Read progress logs
-cat CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/logs/WIP_LOG_20260830-005900.md 2>/dev/null || echo "No WIP log found"
+cat CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/logs/WIP_LOG_20260830-005900.md 2>/dev/null || echo "No WIP log found"
 
 # 3. Begin next section
-mkdir -p CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/Act_10/01-EXECUTIVE-SUMMARY
+mkdir -p CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/Act_10/01-EXECUTIVE-SUMMARY
 
 # 4. Create 12 piece files for Section 01
 # (Follow the pattern from Acts 06, 08, 09)
@@ -242,5 +242,5 @@ mkdir -p CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/Act_10/01
 ---
 
 *Document: START_INSTRUCTIONS_NEXT_SESSION.md*  
-*Location: CSM_WIP/LegalActs_06_08_09_10/master_todo/*  
+*Location: CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/master_todo/*  
 *Author: Jason Isaac Brodsky (California 1976) — Conducier*

@@ -4,7 +4,7 @@
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Created:** 2026-08-29  
 **Status:** ACTIVE — Draft Phase  
-**Location:** `CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10/`
+**Location:** `CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10/`
 
 ---
 

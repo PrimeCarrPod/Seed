@@ -1,7 +1,7 @@
 # MASTER TODO — Caldera Prime Pi Electron
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Branch:** prime_pi_electron  
-**Target:** CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/  
+**Target:** CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/  
 **Source:** published-merge branch (CSMWip/SubAtomicPrimeElectronCaldera/) + Prime Electron Worldline PDF  
 **Word Target:** ~76K+ words per section × 13 sections = ~988K words total  
 **Piece Target:** ~300 lines per piece, 13+ pieces per section  
@@ -10,7 +10,7 @@
 
 ## PHASE 0: SETUP & DISCOVERY ✅
 - [x] Create branch `prime_pi_electron` from `published-merge`
-- [x] Create directory structure: `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/{pieces,logs,framework}`
+- [x] Create directory structure: `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/{pieces,logs,framework}`
 - [x] Read GitHub_handler.sh for piece management protocol
 - [x] Inventory published-merge branch Caldera folders (7,313+ files across 15 domains)
 - [x] Read Prime Electron Worldline PDF (188-page technical document)
@@ -257,7 +257,7 @@ ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-pu
 ```
 
 ### Heartbeat Protocol
-- Background process writing to `CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log`
+- Background process writing to `CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log`
 - Timestamp + status + current piece + word count
 - Visible in terminal every 30 seconds
 

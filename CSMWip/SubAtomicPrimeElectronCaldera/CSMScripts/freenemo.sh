@@ -36,7 +36,7 @@
 #   3. Build an APK (from project directory, e.g., Bounce v1.0.92):
 #      export ANDROID_HOME="${ANDROID_HOME:-$(pwd)/.sdk/android-sdk}"
 #      export PATH="$ANDROID_HOME/build-tools/33.0.1:$PATH"
-#      cd CSM_WORK_IN_PROGRESS/BOUNCE.WIP/v1.0.92
+#      cd CSMWip/05_BOUNCE/BOUNCE.WIP/v1.0.92
 #      bash build.sh
 #
 #   4. build.sh requirements (per project):
@@ -100,7 +100,7 @@ load_module() {
 # Usage: freenemo_build_apk <project_dir> [version_name]
 # Example: freenemo_build_apk CSM_WORK_IN_PROGRESS/BOUNCE.WIP/v1.0.92
 freenemo_build_apk() {
-    local project_dir="${1:-CSM_WORK_IN_PROGRESS/BOUNCE.WIP/v1.0.92}"
+    local project_dir="${1:-CSMWip/05_BOUNCE/BOUNCE.WIP/v1.0.92}"
     local version_name="${2:-1.0.92}"
     
     echo "═══════════════════════════════════════════════════════════════"

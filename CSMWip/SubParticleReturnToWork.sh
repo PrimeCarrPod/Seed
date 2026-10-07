@@ -5,7 +5,7 @@
 # This script loads all context, pointers, and next steps for any
 # agent session to resume work exactly where we left off.
 #
-# Usage: bash CSMWipScripts/SubParticleReturnToWork.sh
+# Usage: bash CSMWip/SubParticleReturnToWork.sh
 # ================================================================
 
 set -euo pipefail
@@ -28,12 +28,12 @@ echo "📋 1. KEY CONTEXT FILES"
 echo "   --------------------"
 
 CONTEXT_FILES=(
-    "CSMLogs/August26/TODO_HTML_INTEGRATION.md"
-    "CSM_WORK_IN_PROGRESS/README.md"
-    "CSM_WORK_IN_PROGRESS/INSTRUCTIONS.md"
-    "CSMLogs/August26/session-v5-prime-electron-build.md"
-    "CSMLogs/August26/session-full-creation-log.md"
-    "CSMLogs/August26/session-subparticles-v3v4-creation.md"
+    "CSMWip/09_Project_Tracking/TODO_HTML_INTEGRATION.md"
+    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/README.md"
+    "CSMWip/09_Project_Tracking/INSTRUCTIONS.md"
+    "CSMWip/09_Project_Tracking/session-v5-prime-electron-build.md"
+    "CSMWip/09_Project_Tracking/session-full-creation-log.md"
+    "CSMWip/09_Project_Tracking/session-subparticles-v3v4-creation.md"
 )
 
 for f in "${CONTEXT_FILES[@]}"; do
@@ -45,10 +45,10 @@ for f in "${CONTEXT_FILES[@]}"; do
 done
 
 # -----------------------------------------------------------------
-# 2. LOG FILES — All session logs in CSMLogs/August26/
+# 2. LOG FILES — All session logs in CSMWip/09_Project_Tracking/
 # -----------------------------------------------------------------
 echo ""
-echo "📋 2. SESSION LOGS (CSMLogs/August26/)"
+echo "📋 2. SESSION LOGS (CSMWip/09_Project_Tracking/)"
 echo "   --------------------"
 
 LOG_FILES=(
@@ -62,10 +62,10 @@ LOG_FILES=(
 )
 
 for f in "${LOG_FILES[@]}"; do
-    if [[ -f "CSMLogs/August26/$f" ]]; then
-        echo "   ✅ CSMLogs/August26/$f"
+    if [[ -f "CSMWip/09_Project_Tracking/$f" ]]; then
+        echo "   ✅ CSMWip/09_Project_Tracking/$f"
     else
-        echo "   ❌ MISSING: CSMLogs/August26/$f"
+        echo "   ❌ MISSING: CSMWip/09_Project_Tracking/$f"
     fi
 done
 
@@ -77,11 +77,11 @@ echo "📋 3. WORK IN PROGRESS — HTML Integration (Phases 3-7)"
 echo "   --------------------"
 
 WIP_PATHS=(
-    "CSM_WORK_IN_PROGRESS/README.md"
-    "CSM_WORK_IN_PROGRESS/INSTRUCTIONS.md"
-    "CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/LOL_v4_staging/"
-    "CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/TGPU004.htm"
-    "CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/index_v4.html"
+    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/README.md"
+    "CSMWip/09_Project_Tracking/INSTRUCTIONS.md"
+    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4/LOL_v4_staging/"
+    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4/TGPU004.htm"
+    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4/index_v4.html"
 )
 
 for p in "${WIP_PATHS[@]}"; do
@@ -307,7 +307,7 @@ echo "   # Resume work:"
 echo "   bash CSMWipScripts/SubParticleReturnToWork.sh"
 echo ""
 echo "   # View todo list:"
-echo "   cat CSMLogs/August26/TODO_HTML_INTEGRATION.md"
+echo "   cat CSMWip/09_Project_Tracking/TODO_HTML_INTEGRATION.md"
 echo ""
 echo "   # Phase 4: TGPU004.htm / LandOLil_v4:"
 echo "   # 1. Read TGPU evolution files"
@@ -329,7 +329,7 @@ echo "   - DO NOT START: New V5 series, other V4 series, other projects"
 echo "   - PARALLEL WORK: Only within assigned phase (one task at a time)"
 echo "   - UPDATE: TODO_HTML_INTEGRATION.md after each task completion"
 echo "   - COMMIT: Incremental commits to csmlogs branch"
-echo "   - LOG: Create session log in CSMLogs/August26/session-<date>-<task>.md"
+echo "   - LOG: Create session log in CSMWip/09_Project_Tracking/session-<date>-<task>.md"
 echo ""
 echo "   Other agents may work in parallel on:"
 echo "   - GasTown: Separate Cloud Kilo.Ai instance"
