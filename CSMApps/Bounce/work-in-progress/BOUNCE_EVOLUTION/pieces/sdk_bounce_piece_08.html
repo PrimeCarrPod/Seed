@@ -1,0 +1,65 @@
+    this.scanMeta=meta;
+    // Scan ripple pulse on screen center
+    var pulse=document.getElementById('scan-pulse');
+    if(!pulse){pulse=document.createElement('div');pulse.id='scan-pulse';pulse.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;pointer-events:none;width:60px;height:60px;border-radius:50%;border:2px solid rgba(0,255,136,.6);opacity:0';document.body.appendChild(pulse)}
+    pulse.style.transition='none';pulse.style.width='60px';pulse.style.height='60px';pulse.style.opacity='1';
+    setTimeout(function(){pulse.style.transition='all 1.5s ease-out';pulse.style.width='300px';pulse.style.height='300px';pulse.style.opacity='0'},20);
+    for(var i=0;i<data.length;i++){
+      var d=data[i];
+      var existing=null;
+      for(var j=0;j<this.realNodes.length;j++){if(this.realNodes[j].bssid===d.bssid){existing=this.realNodes[j];break}}
+      if(existing){
+        existing.prevRssi=existing.rssi;existing.rssi=d.rssi;existing.dist=d.dist;existing.persist=d.persist;existing.reliable=d.reliable;existing.lastSeen=Date.now();
+        // Direction: if RSSI increasing, node is ahead. If decreasing, behind.
+        var delta=existing.rssi-existing.prevRssi;
+        existing.approaching=delta>1;
+      }else{
+        var zc=d.zone==='immediate'?'#FF4466':d.zone==='near'?'#FFCC00':'#4488FF';
+        var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false});
+        var sdot=new THREE.Mesh(sg,sm);
+        var angle=Math.random()*Math.PI*2;var dist2=Math.min(d.dist*2,30);
+        sdot.position.set(Math.cos(angle)*dist2,0,Math.sin(angle)*dist2);
+        if(this.scene)this.scene.add(sdot);
+        this.realNodes.push({dot:sdot,bssid:d.bssid,ssid:d.ssid,rssi:d.rssi,dist:d.dist,zone:d.zone||'far',persist:d.persist,reliable:d.reliable,lastSeen:Date.now(),prevRssi:d.rssi,vx:(Math.random()-.5)*1.5,vz:(Math.random()-.5)*1.5,approaching:false})
+      }
+    }
+    var now2=Date.now();
+    for(var i=this.realNodes.length-1;i>=0;i--){if(now2-this.realNodes[i].lastSeen>120000){if(this.scene)this.scene.remove(this.realNodes[i].dot);this.realNodes.splice(i,1)}}
+    this._refreshUI();
+    }catch(e){}
+  },
+  addSimVehicle(){this._addBeacon({make:MAKES[Math.floor(Math.random()*MAKES.length)],color:COLORS_V[Math.floor(Math.random()*COLORS_V.length)],type:TYPES[Math.floor(Math.random()*TYPES.length)],heading:Math.floor(Math.random()*360),speed:20+Math.floor(Math.random()*70),state:'FL',year:2020+Math.floor(Math.random()*6),fleet:this.fleetMode?'FLT':'CIV',hazard:null,status:'CRUISE',x:(Math.random()-.5)*30,y:0,z:(Math.random()-.5)*30});this._refreshUI()},
+  addRandomFleet(){this.fleetMode=true;for(var i=0;i<3+Math.floor(Math.random()*4);i++)this.addSimVehicle();this.fleetMode=false},
+  scatterBeacons(){this.beacons.forEach(function(b){b.home={x:(Math.random()-.5)*40,y:(Math.random()-.2)*10,z:(Math.random()-.5)*40};b.vx+=(Math.random()-.5)*4;b.vz+=(Math.random()-.5)*4})},
+  resetBeacons(){var self=this;this.beacons.forEach(function(b){b.home={x:(Math.random()-.5)*20,y:0,z:(Math.random()-.5)*20}});setTimeout(function(){var ang=0;self.beacons.forEach(function(b,i){ang+=(Math.PI*2)/self.beacons.length;b.home={x:Math.cos(ang)*(6+Math.random()*10),y:0,z:Math.sin(ang)*(6+Math.random()*10)}})},2000);},
+  toggleBroadcast(){
+    this.broadcast=!this.broadcast;
+    var st=document.getElementById('broadcast-status'),bar=document.getElementById('broadcast-bar'),btn=document.getElementById('btn-broadcast');
+    if(this.broadcast){
+      bar.style.display='block';st.textContent='ON · TX';st.className='text-green font-mono pulse-g';
+      btn.textContent='STOP TX';btn.className='btn btn-o';
+      var self=this;
+      this._doBroadcast();
+      this._broadcastCycle=setInterval(function(){
+        if(!self.broadcast){clearInterval(self._broadcastCycle);return}
+        if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+        bar.style.display='block';st.textContent='PAUSE · OFF';st.className='text-yellow font-mono';
+        setTimeout(function(){
+          if(!self.broadcast)return;
+          self._doBroadcast();
+        },2600);
+      },5100);
+    }else{
+      bar.style.display='none';st.textContent='OFF';st.className='text-red font-mono';
+      btn.textContent='BROADCAST';btn.className='btn btn-g';
+      if(this._broadcastCycle){clearInterval(this._broadcastCycle);this._broadcastCycle=null}
+      if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+      if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText('GPS + Timing Header · v1.0.29');
+    }
+  },
+  _doBroadcast(){
+    this._broadcastSlot=(this._broadcastSlot||0)%4;
+    if(!this.originKey){var s='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';this.originKey=s[Math.floor(Math.random()*s.length)]+s[Math.floor(Math.random()*s.length)]+s[Math.floor(Math.random()*s.length)]}
+    var key=this.originKey,plate=this.licensePlate||'NOID';
+    var base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+    var dyn={heading:this.myHeading,speed:this.mySpeed};

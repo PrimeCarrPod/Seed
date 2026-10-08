@@ -1,0 +1,65 @@
+        
+        var grp=new THREE.Group();
+        grp.add(dot);grp.add(ring);grp.add(line);
+        grp.position.set(r.x,r.y,0); // z handled by line
+        this.scene.add(grp);
+        this.bt3dSpatial[r.addr].dot=dot;
+        this.bt3dSpatial[r.addr].ring=ring;
+        this.bt3dSpatial[r.addr].line=line;
+        this.bt3dSpatial[r.addr].group=grp;
+      }
+    }
+    
+    var device=this.bt3dSpatial[r.addr];
+    device.x=r.x;device.y=r.y;device.z=r.z;
+    if(device.group) console.log('UPDATE 3D DEVICE:', r.addr, 'pos:', r.x, r.y, r.z);
+    device.rssi=r.rssi;device.dist=r.dist;
+    device.brightness=r.brightness;
+    device.active=r.active;
+    device.lastSeen=Date.now();
+    device.persist=r.persist||0;
+    
+    // Add to trajectory
+    device.trajectory.push({x:r.x,y:r.y,z:r.z,t:Date.now(),rssi:r.rssi,dist:r.dist,azimuth:r.azimuth,pitch:r.pitch});
+    if(device.trajectory.length>100)device.trajectory.shift();
+    
+    // Update 3D visualization
+    if(device.group){
+      device.group.position.set(r.x, r.y, 0);
+      // Update elevation line
+      if(device.line){
+        device.line.geometry.dispose();
+        device.line.geometry=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0,0),new THREE.Vector3(0,r.z,0)]);
+        device.line.material.color.setHex(r.z>0?0x00FF88:0xFF4466);
+      }
+      // Update brightness
+      if(device.dot)device.dot.material.opacity=r.brightness;
+      if(device.ring)device.ring.material.opacity=r.brightness*0.6;
+      // Color based on distance zone
+      var zoneColor=r.dist<2?0xFF4466:r.dist<10?0xFFCC00:0x4488FF;
+      if(device.dot)device.dot.material.color.setHex(zoneColor);
+      if(device.ring)device.ring.material.color.setHex(zoneColor);
+    }
+    
+    // Cleanup old devices (but keep in trajectory for theory view)
+    var now=Date.now();
+    for(var addr in this.bt3dSpatial){
+      if(now-this.bt3dSpatial[addr].lastSeen>60000){
+        // Keep trajectory but remove from active display
+        if(this.bt3dSpatial[addr].group){
+          this.scene.remove(this.bt3dSpatial[addr].group);
+        }
+      }
+    }
+  },
+  toggleTheoryMode(){
+    this.theoryMode=!this.theoryMode;
+    console.log('Theory Mode:',this.theoryMode?'ON':'OFF');
+    // In theory mode, show all trajectories
+    if(this.theoryMode){
+      this._renderTheoryTrajectories();
+    }else{
+      this._clearTheoryTrajectories();
+    }
+  },
+  _renderTheoryTrajectories(){

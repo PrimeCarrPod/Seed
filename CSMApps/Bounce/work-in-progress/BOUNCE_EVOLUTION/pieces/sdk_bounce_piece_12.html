@@ -1,0 +1,55 @@
+  setInsets(sb,nb){document.getElementById('hdr').style.paddingTop=(parseInt(sb,10)+10)+'px'},
+  toggleLeft(){this.lT=!this.lT;document.getElementById('hud-left').style.transform=this.lT?'translateX(calc(-100% + 28px))':'translateX(0)'},
+  toggleRight(){this.rT=!this.rT;document.getElementById('hud-right').style.transform=this.rT?'translateX(calc(100% - 28px))':'translateX(0)'},
+  toggleUpdate(){this.uT=!this.uT;document.getElementById('hud-update').style.transform=this.uT?'translateX(calc(100% - 28px))':'translateX(0)'},
+  showUpdateMenu(ver){var s=document.getElementById('update-status');var b=document.getElementById('update-buttons');if(s)s.innerHTML='New version: <span style="color:#FFCC00;font-weight:700">v'+ver+'</span>';if(b)b.style.display='block';this.uT=true;document.getElementById('hud-update').style.transform='translateX(calc(100% - 28px))'},
+  hideUpdateMenu(){var s=document.getElementById('update-status');var b=document.getElementById('update-buttons');if(s)s.innerHTML='No updates';if(b)b.style.display='none';this.uT=false;document.getElementById('hud-update').style.transform='translateX(0)'},
+  tuckToggle(){this.tA=!this.tA;var l=document.getElementById('hud-left'),r=document.getElementById('hud-right'),u=document.getElementById('hud-update');if(this.tA){this.lT=true;this.rT=true;this.uT=true;l.style.transform='translateX(calc(-100% + 28px))';r.style.transform='translateX(calc(100% - 28px))';u.style.transform='translateX(calc(100% - 28px))';document.getElementById('btn-tuck').textContent='UNTUCK'}else{this.lT=false;this.rT=false;this.uT=false;l.style.transform='translateX(0)';r.style.transform='translateX(0)';u.style.transform='translateX(0)';document.getElementById('btn-tuck').textContent='TUCK'}}
+};
+window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
+setTimeout(function(){
+  setInterval(function(){
+    var listR=document.getElementById('wifi-scanner-list');
+    var list2=document.getElementById('scan2-list');
+    if(!Bounce.realNodes)return;
+    var h='';Bounce.realNodes.sort(function(a,b){return a.dist-b.dist});
+    for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var zc=n.zone==='immediate'?'#FF4466':n.zone==='near'?'#FFCC00':'#4488FF';var zd=n.zone==='immediate'?'HOT':n.zone==='near'?'WARM':'COLD';h+='<li style="color:'+zc+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:'+zc+';font-size:7px;margin-left:4px">'+n.dist+'m '+zd+'</span></li>'}
+    if(listR)listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>';
+    if(list2)list2.innerHTML=h||'<li style="color:#FF8800">scanning...</li>';
+    var bl=document.getElementById('bt-list');
+    if(bl&&Bounce.btNodes&&Bounce.btNodes.length>0){
+      var bh='';Bounce.btNodes.sort(function(a,b){return a.dist-b.dist});
+      for(var i=0;i<Math.min(Bounce.btNodes.length,8);i++){var n=Bounce.btNodes[i];bh+='<li style="color:#4488FF;padding:1px 0;display:flex;justify-content:space-between"><span>'+n.name.substring(0,12)+'</span><span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span><span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+      bl.innerHTML=bh;
+    }else if(bl){bl.innerHTML='<li style="color:#6b7280">no BT devices</li>'}
+  },500);
+},3000);
+</script>
+
+
+<style>
+#lock-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:100;background:rgba(0,0,0,0);pointer-events:all;display:none}
+#lock-btn-l{position:fixed;top:10px;left:10px;width:60px;height:60px;border-radius:50%;z-index:101;background:rgba(0,255,136,.2);border:2px solid rgba(0,255,136,.5);color:#00FF88;font-size:10px;font-weight:700;display:none;cursor:pointer;align-items:center;justify-content:center}
+#lock-btn-r{position:fixed;top:10px;right:10px;width:60px;height:60px;border-radius:50%;z-index:101;background:rgba(0,255,136,.2);border:2px solid rgba(0,255,136,.5);color:#00FF88;font-size:10px;font-weight:700;display:none;cursor:pointer;align-items:center;justify-content:center}
+</style>
+<div id="lock-overlay"></div>
+<button id="lock-btn-l">UNLOCK</button>
+<button id="lock-btn-r">UNLOCK</button>
+<script>
+var LockScreen={active:false,lPressed:false,rPressed:false,
+  enable(){this.active=true;document.getElementById('lock-overlay').style.display='block';
+    document.getElementById('lock-btn-l').style.display='flex';document.getElementById('lock-btn-r').style.display='flex';
+    document.getElementById('btn-lock').textContent='LOCKED';this.lPressed=false;this.rPressed=false},
+  tryUnlock(side){
+    if(side==='L')this.lPressed=true;else this.rPressed=true;
+    if(this.lPressed&&this.rPressed){this.active=false;
+      document.getElementById('lock-overlay').style.display='none';
+      document.getElementById('lock-btn-l').style.display='none';document.getElementById('lock-btn-r').style.display='none';
+      document.getElementById('btn-lock').textContent='LOCK';this.lPressed=false;this.rPressed=false}
+    setTimeout(function(){LockScreen.lPressed=false;LockScreen.rPressed=false},500)},
+};
+document.getElementById('lock-btn-l').addEventListener('pointerdown',function(e){e.preventDefault();LockScreen.tryUnlock('L')});
+document.getElementById('lock-btn-r').addEventListener('pointerdown',function(e){e.preventDefault();LockScreen.tryUnlock('R')});
+</script>
+</body>
+</html>
