@@ -1,0 +1,10 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.41_MainActivity.java	2026-10-08 02:33:54.444152443 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.42_MainActivity.java	2026-10-08 02:33:54.465052609 +0000
+@@ -111,6 +111,7 @@
+                 requestPermissions(new String[]{
+                     Manifest.permission.ACCESS_FINE_LOCATION,
+                     Manifest.permission.ACCESS_COARSE_LOCATION,
++                    Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+                     Manifest.permission.ACCESS_WIFI_STATE,
+                     Manifest.permission.CHANGE_WIFI_STATE,
+                     Manifest.permission.NEARBY_WIFI_DEVICES

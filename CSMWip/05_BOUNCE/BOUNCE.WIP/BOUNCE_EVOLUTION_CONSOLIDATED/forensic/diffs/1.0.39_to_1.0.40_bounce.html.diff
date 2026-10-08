@@ -1,0 +1,26 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.39_bounce.html	2026-10-08 02:33:54.401300475 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.40_bounce.html	2026-10-08 02:33:54.425147624 +0000
+@@ -234,7 +234,11 @@
+       ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+     }
+   },
+-  _startScanner(){
++  onScanStatus(result){
++    var r=typeof result==='string'?JSON.parse(result):result;
++    var list=document.getElementById('scan2-list');
++    if(list)list.innerHTML='<li style="color:#6b7280">'+r.status+': '+r.msg+'</li>';
++  },
+     var self=this;
+     setInterval(function(){
+       if(!self._hasGps){
+@@ -470,8 +474,8 @@
+     if(!Bounce.realNodes)return;
+     var h='';Bounce.realNodes.sort(function(a,b){return a.dist-b.dist});
+     for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<li style="color:'+c+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+-    if(list2){list2.innerHTML=h||'<li style="color:#6b7280">scanning...</li>';if(cnt2)cnt2.textContent=Bounce.realNodes.length}
+-    if(listR){listR.innerHTML=h||'<li style="color:#6b7280">scanning...</li>'}
++    if(list2){list2.innerHTML=h||'<li style="color:#FF8800">waiting for scan...</li>';if(cnt2)cnt2.textContent=Bounce.realNodes.length}
++    if(listR){listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>'}
+   },500);
+ },3000);
+ </script>

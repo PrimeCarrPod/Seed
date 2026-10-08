@@ -1,0 +1,42 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.23_bounce.html	2026-10-08 02:33:54.090374907 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.24_bounce.html	2026-10-08 02:33:54.108911354 +0000
+@@ -75,6 +75,7 @@
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Origin Key</span><span id="key-display" class="text-purple font-mono">---</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Speed</span><span id="my-speed" class="text-green font-mono">65 mph</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Altitude</span><span id="my-alt" class="text-blue font-mono">450 ft</span></div>
++    <div class="flex justify-between text-xs text-gray mb-1"><span>GPS Position</span><span id="gps-display" class="text-green font-mono" style="font-size:7px">---</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Fleet Key</span><span id="fleet-ind" class="text-red font-mono">OFF</span></div>
+     <div class="flex justify-between text-xs text-gray"><span>Broadcast</span><span id="broadcast-status" class="text-red font-mono">OFF</span></div>
+     <div id="broadcast-bar" style="display:none;margin-top:4px;padding:3px 5px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.25);border-radius:4px">
+@@ -266,6 +267,9 @@
+     if(loc.bearing>=0){this.myHeading=loc.bearing;document.getElementById('my-heading').textContent=loc.bearing.toFixed(0)+'°'}
+     if(loc.speed>0){this.mySpeed=loc.speed*2.237;document.getElementById('my-speed').textContent=this.mySpeed.toFixed(0)+' mph'}
+     if(loc.alt>0)document.getElementById('my-alt').textContent=(loc.alt*3.281).toFixed(0)+' ft';
++    this.gps={lat:loc.lat||0,lng:loc.lng||0,alt:loc.alt||0,speed:loc.speed||0,bearing:loc.bearing||0,acc:loc.acc||0};
++    var gpsEl=document.getElementById('gps-display');
++    if(gpsEl)gpsEl.textContent=loc.lat.toFixed(5)+', '+loc.lng.toFixed(5);
+     var ov=document.getElementById('gps-overlay');
+     if(!ov){ov=document.createElement('div');ov.id='gps-overlay';ov.style.cssText='position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:15;pointer-events:none;background:rgba(0,0,0,.7);padding:4px 10px;border-radius:6px;border:1px solid rgba(68,136,255,.3);font-size:9px;font-family:monospace;color:#4488FF;text-align:center';document.body.appendChild(ov)}
+     ov.innerHTML='📍 '+loc.lat.toFixed(5)+', '+loc.lng.toFixed(5)+' · '+(loc.speed*2.237).toFixed(0)+'mph · ▲'+(loc.alt*3.281).toFixed(0)+'ft · ±'+(loc.acc||0).toFixed(0)+'m';
+@@ -323,8 +327,8 @@
+         setTimeout(function(){
+           if(!self.broadcast)return;
+           self._doBroadcast();
+-        },1500);
+-      },4000);
++        },2600);
++      },5100);
+     }else{
+       bar.style.display='none';st.textContent='OFF';st.className='text-red font-mono';
+       btn.textContent='BROADCAST';btn.className='btn btn-g';
+@@ -338,7 +342,9 @@
+     var key=this.originKey,plate=this.licensePlate||'NOID';
+     var base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+     var dyn={heading:this.myHeading,speed:this.mySpeed};
+-    var taf=genSSID(base,dyn).replace(/[\/\-\.]/g,'');
++    var gps=this.gps||{lat:0,lng:0};
++    var gpsShort=Math.round(Math.abs(gps.lat%1)*10000)+Math.round(Math.abs(gps.lng%1)*10000);
++    var taf=genSSID(base,dyn).replace(/[\/\-\.]/g,'')+'G'+gpsShort;
+     var human=Math.round(this.mySpeed)+'mph'+(this.myHeading<90?'NE':this.myHeading<180?'SE':this.myHeading<270?'SW':'NW');
+     var code;
+     if(this._broadcastSlot===0)code=key+plate.substring(0,22);

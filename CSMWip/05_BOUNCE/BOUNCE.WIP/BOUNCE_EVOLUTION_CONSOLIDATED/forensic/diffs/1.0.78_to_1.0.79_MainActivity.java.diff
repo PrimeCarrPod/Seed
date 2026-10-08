@@ -1,0 +1,319 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.78_MainActivity.java	2026-10-08 02:33:55.160448167 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.79_MainActivity.java	2026-10-08 02:33:55.182075344 +0000
+@@ -21,6 +21,9 @@
+ import android.location.Location;
+ import android.location.LocationListener;
+ import android.location.LocationManager;
++import android.net.wifi.rtt.WifiRttManager;
++import android.net.wifi.rtt.RangingResult;
++import android.net.wifi.rtt.RangingRequest;
+ import android.net.wifi.ScanResult;
+ import android.net.wifi.WifiManager;
+ import android.net.wifi.p2p.WifiP2pConfig;
+@@ -46,9 +49,17 @@
+ import android.widget.LinearLayout;
+ import android.widget.TextView;
+ import android.widget.Toast;
++import com.carrpod.bounce.wifi.RssiKalmanFilter;
++import com.carrpod.bounce.wifi.Trilateration;
++import com.carrpod.bounce.wifi.PositionEKF;
++import com.carrpod.bounce.wifi.ParticleFilter;
++import com.carrpod.bounce.wifi.ZoneHMM;
++import com.carrpod.bounce.wifi.WifiRttRanging;
+ import java.util.HashMap;
+ import java.util.List;
+ import java.util.Map;
++import java.util.concurrent.Executor;
++import java.util.concurrent.Executors;
+ 
+ public class MainActivity extends Activity {
+ 
+@@ -85,6 +96,23 @@
+     private final Map<String, Long> ssidLog = new HashMap<>();
+     private final Map<String, Float> ssidRssiHistory = new HashMap<>();
+ 
++    // Wi-Fi triangulation modules
++    private RssiKalmanFilter rssiKalmanFilter;
++    private Trilateration trilateration;
++    private PositionEKF positionEKF;
++    private ParticleFilter particleFilter;
++    private ZoneHMM zoneHMM;
++    private WifiRttRanging wifiRttRanging;
++    private Executor executor;
++
++    // AP position tracking for triangulation
++    private final Map<String, Trilateration.Point2D> apPositions = new HashMap<>();
++    private final Map<String, Float> apRssiAt1m = new HashMap<>();
++    private final Map<String, Float> apPathLossExponent = new HashMap<>();
++
++    // Kalman filter states per BSSID
++    private final Map<String, RssiKalmanFilter> kalmanFilters = new HashMap<>();
++
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+@@ -167,12 +195,73 @@
+     }
+ 
+     private void startServices() {
++        // Initialize Wi-Fi triangulation modules
++        initializeTriangulationModules();
++
+         startWifiScanning();
+         startGpsTracking();
+         startSensors();
+         startBtScanning();
+     }
+ 
++    private void initializeTriangulationModules() {
++        // Initialize executor for background tasks
++        executor = Executors.newSingleThreadExecutor();
++
++        // Initialize Kalman filter for RSSI smoothing
++        rssiKalmanFilter = new RssiKalmanFilter();
++
++        // Initialize per-BSSID Kalman filters
++        kalmanFilters.clear();
++
++        // Initialize trilateration
++        trilateration = new Trilateration();
++
++        // Initialize Extended Kalman Filter for 2D position tracking
++        positionEKF = new PositionEKF();
++
++        // Initialize Particle Filter for non-Gaussian RSSI
++        particleFilter = new ParticleFilter(200);  // 200 particles
++
++        // Initialize Zone HMM for zone classification
++        zoneHMM = new ZoneHMM();
++
++        // Initialize Wi-Fi RTT ranging
++        wifiRttRanging = new WifiRttRanging(this, new WifiRttRanging.RttCallback() {
++            @Override
++            public void onRttResults(Map<String, WifiRttRanging.RttMeasurement> results) {
++                handleRttResults(results);
++            }
++
++            @Override
++            public void onRttFailure(int errorCode) {
++                Log.w("Bounce", "RTT ranging failed: " + errorCode);
++            }
++        });
++
++        // Initialize executor for background tasks
++        executor = Executors.newSingleThreadExecutor();
++    }
++
++    private void handleRttResults(Map<String, WifiRttRanging.RttMeasurement> results) {
++        // Send RTT results to JS
++        if (webView != null) {
++            StringBuilder json = new StringBuilder("{");
++            boolean first = true;
++            for (Map.Entry<String, WifiRttRanging.RttMeasurement> entry : results.entrySet()) {
++                if (!first) json.append(",");
++                first = false;
++                WifiRttRanging.RttMeasurement m = entry.getValue();
++                json.append("\"").append(entry.getKey()).append("\":")
++                    .append("{\"dist\":").append(m.distanceMeters)
++                    .append(",\"stdDev\":").append(m.distanceStdDevMeters)
++                    .append(",\"rssi\":").append(m.rssi).append("}");
++            }
++            json.append("}");
++            injectJs("Bounce.onRttResults(" + json.toString() + ")");
++        }
++    }
++
+     private void startBtScanning() {
+         if (Build.VERSION.SDK_INT >= 31) {
+             if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) return;
+@@ -596,8 +685,16 @@
+     private void sendScanResultsToJs(List<android.net.wifi.ScanResult> results, long elapsed) {
+         scanCount++;
+         long now = System.currentTimeMillis();
++
++        // Prepare AP data for triangulation
++        List<Trilateration.AccessPoint> apsForTrilateration = new ArrayList<>();
++        List<Trilateration.AccessPoint> apsForEKF = new ArrayList<>();
++        Map<String, Double> measurementsForEKF = new HashMap<>();
++        Map<String, Double> measurementsForParticleFilter = new HashMap<>();
++
+         StringBuilder json = new StringBuilder("[");
+         boolean first = true;
++
+         for (android.net.wifi.ScanResult r : results) {
+             if (!first) json.append(","); first = false;
+             String ssid = escapeJson(r.SSID);
+@@ -607,16 +704,113 @@
+             long persistence = (now - firstSeen) / 1000;
+             Float prevRssi = ssidRssiHistory.get(bssid);
+             boolean reliable = prevRssi != null && Math.abs(r.level - prevRssi) < 15;
+-            float distance = estimateDistance(r.level, r.frequency);
++
++            // Apply Kalman filter to RSSI
++            float filteredRssi = rssiKalmanFilter.update(r.level);
++            
++            // Update per-BSSID Kalman filter
++            RssiKalmanFilter bssidFilter = kalmanFilters.get(bssid);
++            if (bssidFilter == null) {
++                bssidFilter = new RssiKalmanFilter();
++                kalmanFilters.put(bssid, bssidFilter);
++            }
++            float bssidFilteredRssi = bssidFilter.update(r.level);
++
++            // Calculate distance using filtered RSSI
++            float kDist = (float) Math.pow(10, (RSSI_1M - bssidFilteredRssi) / (10f * PATH_LOSS_EXPONENT));
++            
++            // Use HMM for zone classification
++            ZoneHMM.Zone zone = zoneHMM.step(kDist);
++            String zoneStr = zone.name().toLowerCase();
++
++            // Update AP position estimates if we have GPS
++            updateApPosition(bssid, r.level);
++
++            // Prepare data for trilateration
++            Trilateration.Point2D apPos = apPositions.get(bssid);
++            if (apPos != null) {
++                double weight = reliable ? 1.0 : 0.5;
++                Trilateration.AccessPoint ap = new Trilateration.AccessPoint(
++                    bssid, ssid, apPos, kDist, weight);
++                apsForTrilateration.add(ap);
++                apsForEKF.add(ap);
++                measurementsForEKF.put(bssid, (double) kDist);
++                measurementsForParticleFilter.put(bssid, (double) kDist);
++            }
++
+             ssidRssiHistory.put(bssid, (float) r.level);
++
+             json.append("{\"ssid\":\"").append(ssid).append("\",\"bssid\":\"").append(bssid)
+                 .append("\",\"rssi\":").append(r.level).append(",\"freq\":").append(r.frequency)
+-                .append(",\"dist\":").append(String.format("%.1f", distance))
++                .append(",\"dist\":").append(String.format("%.1f", kDist))
++                .append(",\"zone\":\"").append(zoneStr).append("\"")
+                 .append(",\"persist\":").append(persistence).append(",\"reliable\":").append(reliable).append(",\"caps\":\"\"}");
+         }
+         json.append("]");
++
++        // Perform trilateration if we have 3+ APs with known positions
++        Trilateration.Result trilaterationResult = null;
++        if (apsForTrilateration.size() >= 3) {
++            trilaterationResult = trilateration.trilaterate(apsForTrilateration);
++        }
++
++        // Update EKF with measurements
++        if (!measurementsForEKF.isEmpty()) {
++            positionEKF.processScanResults(apsForEKF, System.currentTimeMillis());
++        }
++
++        // Update Particle Filter
++        if (!measurementsForParticleFilter.isEmpty()) {
++            particleFilter.updateWeights(measurementsForParticleFilter);
++            if (particleFilter.effectiveSampleSize() < 50) {  // Resample threshold
++                particleFilter.resample();
++            }
++        }
++
++        // Perform RTT ranging if available
++        if (wifiRttRanging != null && wifiRttRanging.isRttSupported()) {
++            // Convert scan results to RTT-capable APs
++            List<android.net.wifi.ScanResult> scanResults = new ArrayList<>(results);
++            executor.execute(() -> wifiRttRanging.startRanging(scanResults));
++        }
++
+         String meta = "{\"scanNum\":" + scanCount + ",\"elapsed\":" + elapsed + ",\"total\":" + ssidLog.size() + "}";
+-        injectJs("Bounce.onScanResults(" + json.toString() + "," + meta + ")");
++        
++        // Enhanced meta with triangulation data
++        StringBuilder metaJson = new StringBuilder(meta);
++        if (metaJson.length() > 1) {
++            metaJson.setLength(metaJson.length() - 1); // Remove closing }
++            if (trilaterationResult != null && trilaterationResult.isValid()) {
++                metaJson.append(",\"position\":{\"x\":").append(trilaterationResult.position.x)
++                    .append(",\"y\":").append(trilaterationResult.position.y)
++                    .append(",\"error\":").append(trilaterationResult.error)
++                    .append(",\"gdop\":").append(trilaterationResult.gdop).append("}");
++            } else {
++                metaJson.append("}");
++            }
++        }
++        String metaStr = metaJson.toString();
++
++        // Enhanced JSON output with triangulation data
++        StringBuilder enhancedJson = new StringBuilder();
++        enhancedJson.append("{\"aps\":").append(json).append(",\"meta\":").append(metaStr).append("}");
++        
++        injectJs("Bounce.onScanResults(" + enhancedJson.toString() + ")");
++    }
++
++    private void updateApPosition(String bssid, int rssi) {
++        // Simple position estimation based on RSSI and known AP locations
++        // In a full implementation, this would use trilateration results to refine AP positions
++        Trilateration.Point2D existing = apPositions.get(bssid);
++        if (existing == null) {
++            // Estimate position based on RSSI (rough initial estimate)
++            double distance = Math.pow(10, (RSSI_1M - rssi) / (10.0 * PATH_LOSS_EXPONENT));
++            // Place AP at estimated distance in a random direction (would be refined by trilateration)
++            double angle = Math.random() * 2 * Math.PI;
++            double x = distance * Math.cos(angle);
++            double y = distance * Math.sin(angle);
++            apPositions.put(bssid, new Trilateration.Point2D(x, y));
++        }
+     }
+ 
+     private float estimateDistance(int rssi, int frequency) {
+@@ -624,6 +818,38 @@
+         return (float) Math.pow(10f, exp);
+     }
+ 
++    // Kalman-filtered RSSI state per BSSID for stable distance estimation
++    private final Map<String, KalmanState> kalmanStates = new HashMap<>();
++    private static final float KALMAN_Q = 0.005f;
++    private static final float KALMAN_R = 25f;
++    private static final float PATH_LOSS_EXPONENT = 2.8f;
++    private static final float RSSI_1M = -40f;
++    private static final float ZONE_IMMEDIATE = 2f;
++    private static final float ZONE_NEAR = 10f;
++
++    private static class KalmanState {
++        float x; float p = 1f;
++    }
++
++    private String computeZone(float distance) {
++        if (distance < ZONE_IMMEDIATE) return "immediate";
++        if (distance < ZONE_NEAR) return "near";
++        return "far";
++    }
++
++    private float kalmanDistance(String bssid, int rawRssi) {
++        KalmanState ks = kalmanStates.get(bssid);
++        if (ks == null) { ks = new KalmanState(); ks.x = rawRssi; kalmanStates.put(bssid, ks); }
++
++        ks.p += KALMAN_Q;
++        float k = ks.p / (ks.p + KALMAN_R);
++        ks.x += k * (rawRssi - ks.x);
++        ks.p *= (1f - k);
++
++        float filteredRssi = ks.x;
++        return (float) Math.pow(10, (RSSI_1M - filteredRssi) / (10f * PATH_LOSS_EXPONENT));
++    }
++
+     private String escapeJson(String s) {
+         if (s == null || s.isEmpty()) return "---";
+         return s.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\r", "");
+@@ -671,7 +897,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("ChaseCam · v1.0.78");
++        tag.setText("RSSI Kalman · v1.0.79");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -753,7 +979,7 @@
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.78 · ChaseCam", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.79 · Kalman Distance", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface

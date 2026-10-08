@@ -1,0 +1,52 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.36_bounce.html	2026-10-08 02:33:54.341699623 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.37_bounce.html	2026-10-08 02:33:54.360875459 +0000
+@@ -66,7 +66,7 @@
+   </div>
+ </div>
+ 
+-<div id="hud-left" class="pg">
++<div id="hud-left" class="pg" style="gap:4px">
+   <div class="tab tab-l" onclick="UI.toggleLeft()">B<br>E<br>A<br>C<br>O<br>N<br>S</div>
+   <div class="hud p-2 pointer-events-auto">
+     <h3 class="text-orange text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(255,102,0,.3)">◇ My Trajectory</h3>
+@@ -89,9 +89,9 @@
+   </div>
+ </div>
+ 
+-<div id="hud-right" class="pg">
++<div id="hud-right" class="pg" style="gap:4px">
+   <div class="tab tab-r" onclick="UI.toggleRight()">F<br>O<br>R<br>G<br>E</div>
+-  <div class="hud p-2 pointer-events-auto">
++  <div class="hud pointer-events-auto" style="padding:5px">
+     <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Controls</h3>
+     <div class="flex gap-1 flex-wrap">
+       <button onclick="Bounce.showPlateInput()" class="btn btn-o">+VEHICLE</button>
+@@ -100,22 +100,15 @@
+       <button id="btn-broadcast" onclick="Bounce.toggleBroadcast()" class="btn btn-g">BROADCAST</button>
+     </div>
+   </div>
+-  <div class="hud p-2 pointer-events-auto">
++  <div class="hud pointer-events-auto" style="padding:5px">
+     <h3 class="text-yellow text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(255,204,0,.3)">◇ Legend</h3>
+-    <div class="text-xs text-gray" style="line-height:1.6">
+-      <p><span style="color:#FF6600">●</span> Tardigrade (You)</p>
+-      <p><span style="color:#00FF88">●</span> Bounce-Compatible</p>
+-      <p><span style="color:#4488FF">●</span> Civilian Vehicle</p>
+-      <p><span style="color:#a855f7">●</span> Static RF Source</p>
+-      <p><span style="color:#FF4466">●</span> Hazard Beacon</p>
+-      <p class="mt-1" style="font-size:7px;color:#6b7280">Broadcast: Wi-Fi Direct Bonjour</p>
+-      <p style="font-size:7px;color:#6b7280">Scan + TX coexist · P2P does not interrupt WLAN scan</p>
+-      <p class="mt-1"><span class="text-orange font-bold">Bounce v1.0.6</span> · CarrPod</p>
+-    </div>
++    <div style="font-size:8px;color:#9ca3af;line-height:1.4">
++      <span style="color:#FF6600">●You</span> <span style="color:#00FF88">●Bounce</span> <span style="color:#4488FF">●Vehicle</span> <span style="color:#a855f7">●Static</span> <span style="color:#FF4466">●Hazard</span>
++      <br><span style="color:#FF6600;font-weight:700">Bounce v1.0.37</span> · CarrPod</div>
+   </div>
+-  <div class="hud p-2 pointer-events-auto scroll">
++  <div class="hud pointer-events-auto scroll" style="padding:5px">
+     <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Wi-Fi Scanner</h3>
+-    <ul id="wifi-scanner-list" style="font-size:8px;max-height:160px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
++    <ul id="wifi-scanner-list" style="font-size:8px;max-height:100px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
+   </div>
+ </div>
+ 

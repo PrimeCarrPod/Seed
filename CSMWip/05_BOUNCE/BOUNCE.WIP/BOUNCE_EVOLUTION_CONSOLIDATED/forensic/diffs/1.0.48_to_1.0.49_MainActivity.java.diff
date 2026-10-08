@@ -1,0 +1,11 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.48_MainActivity.java	2026-10-08 02:33:54.586807415 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.49_MainActivity.java	2026-10-08 02:33:54.607243994 +0000
+@@ -611,7 +611,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Direct GetScan · v1.0.32");
++        tag.setText("Trail + BT 3D · v1.0.49");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);

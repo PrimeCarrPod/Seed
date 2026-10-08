@@ -1,0 +1,21 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.76_build.sh	2026-10-08 02:33:55.127533456 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.77_build.sh	2026-10-08 02:33:55.144051593 +0000
+@@ -1,14 +1,15 @@
+ #!/bin/bash
+ # ============================================================
+-# build.sh — No-Gradle APK Build for Bounce v1
++# build.sh — No-Gradle APK Build for Bounce v1.0.77
++# Adds spatial awareness: gyroscope, step detector, altitude, Wi-Fi triangulation
+ # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
+ # ============================================================
+ set -e
+ 
+ PACKAGE="com.carrpod.bounce"
+ APP_NAME="Bounce"
+-VERSION_CODE=176
+-VERSION_NAME="1.0.76"
++VERSION_CODE=177
++VERSION_NAME="1.0.77"
+ COMPILE_SDK=33
+ TARGET_SDK=33
+ MIN_SDK=24

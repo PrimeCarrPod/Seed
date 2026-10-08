@@ -1,0 +1,31 @@
+Connection_ID,Direction,Android_Method,HTML_Function,Data_Format,Trigger,First_Version,Last_Version,Reliability,Notes,Issues_Fixed,Fix_Version
+C001,Android→HTML,onWifiResult(scanResults),UI.updateWifiList(data),JSON array: SSID,BSSID,RSSI,freq,distance,zone,persistence,reliability,Wi-Fi scan complete,1.0.3,1.0.91,High,Primary scanner feed,HTML catch wrapper,1.0.52
+C002,Android→HTML,onBtResult(devices),UI.updateBtList(data),JSON array: name,address,rssi,distance,Bluetooth LE scan,1.0.48,1.0.91,High,Legacy 2D list,HTML catch wrapper,1.0.52
+C003,Android→HTML,onBtResult3D(devices),UI.updateBt3D(data),JSON array: address,x,y,z,brightness,trajectory,Bluetooth 3D scan,1.0.86,1.0.91,High,3D spatial tracking,None,
+C004,Android→HTML,onLocationResult(loc),UI.updateLocation(data),JSON: lat,lng,altitude,heading,speed,mph,timestamp,GPS update (1s),1.0.4,1.0.91,High,Real GPS data,Speed threshold for trail,1.0.27
+C005,Android→HTML,onOrientationResult(orient),UI.updateOrientation(data),JSON: azimuth,pitch,roll,Sensor fusion update,1.0.25,1.0.91,High,Low-pass filtered,Azimuth wrap fix,1.0.25
+C006,Android→HTML,onBroadcastStatus(status),UI.updateBroadcastStatus(data),JSON: slot,ssid,active,SSID broadcast change,1.0.20,1.0.91,Medium,4-slot rotation,Slot timing drift,1.0.20
+C007,Android→HTML,onUpdateAvailable(version),UI.showUpdateMenu(version),JSON: version,url,Update check complete,1.0.91,1.0.91,High,Manual update UI,Auto-check removed,1.0.93
+C008,HTML→Android,Bounce.setVehicleData(data),MainActivity.setVehicleData(),JSON: plate,originKey,fleet,make,color,+VEHICLE button,1.0.21,1.0.91,High,Vehicle config,None,
+C009,HTML→Android,Bounce.setFleetMode(data),MainActivity.setFleetMode(),JSON: enabled,key,+FLEET button,1.0.22,1.0.91,High,Fleet toggle,None,
+C010,HTML→Android,Bounce.setCameraMode(mode),MainActivity.setCameraMode(),String: orbit|fly|pov,Camera mode buttons,1.0.8,1.0.91,High,Three modes,None,
+C011,HTML→Android,Bounce.setPovOffset(delta),MainActivity.setPovOffset(),Integer: ±10,POV zoom buttons,1.0.55,1.0.91,High,Chase distance,None,
+C012,HTML→Android,Bounce.setAutoSpin(enabled),MainActivity.setAutoSpin(),Boolean,SPIN button,1.0.0,1.0.91,High,Auto-rotate toggle,None,
+C013,HTML→Android,Bounce.scatterBeacons(),MainActivity.scatterBeacons(),Void,SCATTER button,1.0.20,1.0.91,High,Randomize positions,None,
+C014,HTML→Android,Bounce.resetBeacons(),MainActivity.resetBeacons(),Void,Circle formation,1.0.20,1.0.91,High,Delayed circle,2s delay,
+C015,HTML→Android,Bounce.toggleBroadcast(),MainActivity.toggleBroadcast(),Boolean,BROADCAST button,1.0.1,1.0.91,Medium,Start/stop P2P,Multi-method fallback,1.0.14
+C016,HTML→Android,Bounce.toggleTrail(),MainActivity.toggleTrail(),Boolean,TRAIL button,1.0.49,1.0.91,High,Record GPS trail,Wake lock management,1.0.63
+C017,HTML→Android,Bounce.saveTrail(),MainActivity.saveTrail(),Void,SAVE button,1.0.49,1.0.91,High,Blob download,None,
+C018,HTML→Android,Bounce.setTheoryMode(enabled),MainActivity.setTheoryMode(),Boolean,THEORY button,1.0.86,1.0.91,High,Ghost trajectories,None,
+C019,HTML→Android,Bounce.getTrajectory(addr),MainActivity.getTrajectory(),JSON array: trajectory points,JS call,1.0.86,1.0.91,High,Per-device history,None,
+C020,HTML→Android,Bounce.getAllDevices(),MainActivity.getAllDevices(),JSON array: all BT devices,JS call,1.0.86,1.0.91,High,All active devices,None,
+C021,HTML→Android,Bounce.downloadUpdate(),MainActivity.downloadUpdate(),Void,Download APK button,1.0.93,1.0.93,High,Direct APK download,Restored in v1.0.93,1.0.93
+C022,HTML→Android,Bounce.ignoreUpdate(),MainActivity.ignoreUpdate(),Void,Ignore button,1.0.93,1.0.93,High,Dismiss update,Restored in v1.0.93,1.0.93
+C023,Android→HTML,onPermissionResult(granted),UI.handlePermissionResult(),Boolean array,Permission request callback,1.0.3,1.0.91,High,Runtime perms,Proven v1.0.3 pattern,1.0.45
+C024,Android→HTML,onError(error),UI.showError(error),String: error message,Error callback,1.0.52,1.0.91,Medium,Error display,HTML try/catch wrapper,1.0.52
+C025,Bidirectional,WebView.evaluateJavascript(),Bounce.* callbacks,JS string evaluation,Continuous,1.0.0,1.0.91,High,Core bridge,addJavascriptInterface,1.0.0
+C026,Android→HTML,onTrailUpdate(points),UI.updateTrail(data),JSON array: trail points,Trail recording,1.0.62,1.0.91,High,CatmullRom rebuild,GPU-safe disposal,1.0.54
+C027,Android→HTML,onApPositionUpdate(aps),UI.updateApPositions(data),JSON array: AP positions,Trilateration/EKF,1.0.90,1.0.91,Medium,Position algorithms,AP position learning,-
+C028,Android→HTML,onZoneUpdate(zone),UI.updateZoneDisplay(data),JSON: zone classification,Zone HMM update,1.0.90,1.0.91,Medium,IMMEDIATE/NEAR/FAR,Hysteresis prevents flutter,1.0.90
+C029,HTML→Android,Bounce.refreshBroadcastSSID(),MainActivity.refreshBroadcastSSID(),Void,Live re-code SSID,1.0.90,1.0.91,High,Dynamic SSID,None,
+C030,Bidirectional,WebView.loadUrl(),HTML loads,file:///android_asset/bounce.html,App startup,1.0.0,1.0.91,High,Initial load,Asset injection in build.sh,1.0.0

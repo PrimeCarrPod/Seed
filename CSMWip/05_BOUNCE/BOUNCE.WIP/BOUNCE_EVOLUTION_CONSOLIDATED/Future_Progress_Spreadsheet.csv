@@ -1,0 +1,31 @@
+Future_Item_ID,Category,Title,Description,Priority,Estimated_Effort,Dependencies,Target_Version,Status,Success_Criteria,Blockers,Notes
+FP001,Positioning,RTT Ranging Implementation (802.11mc),Complete WifiRttManager API for FTM ranging,P0,High,API28+ device,1.0.93,Planned,Sub-meter accuracy indoors,Requires hardware support,P0-02 from master list
+FP002,Positioning,AP Position Self-Calibration,Learn AP positions from trilateration + movement,P0,High,3+ APs with known positions,1.0.93,Planned,AP positions converge to <5m error,Chicken-egg problem,P0-03 from master list
+FP003,Positioning,Particle Filter Parameter Learning,Adaptive RSSI mean/variance/pathloss per AP,P1,High,ParticleFilter.java,1.0.94,Planned,Params adapt to environment,Requires scan history,P1-01 from master list
+FP004,Architecture,Unit Test Suite (JUnit),Tests for all 6 positioning algorithms,P1,High,New test/ directory,1.0.94,Planned,>80% coverage,Time investment,P1-02 from master list
+FP005,Architecture,Multi-Activity Architecture,Separate ScanningService, BroadcastService, UI,P1,High,New Services,1.0.95,Planned,No God class,Major refactor,P1-03 from master list
+FP006,Architecture,Background Scanning Service,Foreground Service for continuous scanning,P1,Medium,Service + Notification,1.0.95,Planned,Scans survive background,Notification UX,P1-04 from master list
+FP007,Network,Mesh Network Protocol,Vehicle-to-vehicle relay (TTL, hop count),P1,High,New Protocol,1.0.96,Planned,Multi-hop delivery,Protocol design,P1-05 from master list
+FP008,Visualization,Offline Map Caching,Cache Mapbox/OSM tiles for offline use,P2,Medium,New Module,1.0.96,Planned,Works without internet,Storage limits,P2-01 from master list
+FP009,Visualization,Hazard Reporting (NOTAM),User-reported hazards with TTL,P2,Medium,New Module,1.0.96,Planned,Community hazards,Moderation needed,P2-02 from master list
+FP010,Visualization,Voice Announcements,TTS for "Hazard ahead", "Vehicle approaching",P2,Low,TextToSpeech,1.0.95,Planned,Hands-free alerts,Voice quality,P2-03 from master list
+FP011,Visualization,Night/Day Theme Toggle,CSS variable swap for lighting conditions,P2,Low,bounce.html CSS,1.0.94,Planned,Auto-switch by time,Color design,P2-04 from master list
+FP012,Visualization,Export Trail as GPX/KML,Standard formats for mapping tools,P2,Low,Trail save dialog,1.0.94,Planned,Compatible with GIS tools,Format spec,P2-05 from master list
+FP013,Network,Bluetooth Mesh (BLE Mesh),Standard BLE Mesh provisioning,P3,High,New Module,1.0.97+,Backlog,Standard interop,Complex spec,P3-01 from master list
+FP014,Positioning,UWB Ranging (FiRa),Ultra-wideband distance (API29+),P3,High,New Module,1.0.97+,Backlog,cm-level accuracy,Hardware required,P3-02 from master list
+FP015,Network,V2X / C-V2X Support,Cellular V2X (LTE-V/NR-V2X),P3,Very High,New Module,1.0.98+,Backlog,Highway scenarios,Carrier dependent,P3-03 from master list
+FP016,Visualization,AR Overlay (ARCore),Camera feed + 3D annotations,P3,High,ARCore,1.0.97+,Backlog,Immersive view,Device support,P3-04 from master list
+FP017,Visualization,Wear OS Companion,Watch app for haptic alerts,P3,Medium,Wear OS Module,1.0.97+,Backlog,Glanceable alerts,New form factor,P3-05 from master list
+FP018,Monetization,TGAPP (Updater App),Paid key application for updates + premium features,P0,High,New App,1.0.93,Planned,Revenue stream,App architecture,Separate app per user request
+FP019,Monetization,TGAPP Purchase Verification,Verify purchase + keys specific to device,P0,Medium,TGAPP + Bounce,1.0.93,Planned,Secure validation,Key management,TGAPP dependency
+FP020,Monetization,TGAPP Feature Gating,Enable premium features in Bounce via TGAPP,P0,Medium,TGAPP + Bounce,1.0.93,Planned,Feature unlock,Architecture split,TGAPP dependency
+FP021,Architecture,Split Updater from Bounce,Move update mechanism to TGAPP,P1,Medium,Bounce refactor,1.0.94,Planned,Smaller Bounce APK,User migration,Reduces Bounce complexity
+FP022,Network,Fleet Key System,Uber-like fleet proximity communication,P1,High,Mesh + TGAPP,1.0.96,Planned,Peer-to-peer without data plan,Adoption,Fleet key distribution
+FP023,Network,Traffic Advisory Relay,Pass traffic info through vehicle chain,P1,High,Mesh protocol,1.0.96,Planned,3km+ range via relay,Latency budget,Core vision from user
+FP024,Network,Weather Advisory Relay,Share weather through vehicle mesh,P1,High,Mesh protocol,1.0.96,Planned,Distributed weather,Data source,Complements traffic
+FP025,Network,Trajectory Sharing,Fleet vehicles share paths for prediction,P1,High,Mesh + BT 3D,1.0.96,Planned,Collision avoidance,Privacy,Requires fleet opt-in
+FP026,Positioning,EKF Velocity Bug Fix,Fix vy initialization in PositionEKF,P0,5 min,PositionEKF.java:38,1.0.92,Done,x[3]=0 for vy,None,COMPLETED in v1.0.92
+FP027,Visualization,ACES Tone Mapping,Enable ACES filmic tone mapping,P2,Low,bounce.html shaders,1.0.94,Planned,Cinematic look,Performance,Currently commented out
+FP028,Visualization,Glueball Worldlines,QCD string tension visualization,P3,High,Three.js + physics,1.0.97+,Backlog,Physics accuracy,Complex math,From landolil V4.0
+FP029,Visualization,Microbial Ecosystem Food Chain,Predator-prey visualization,P3,High,Three.js + simulation,1.0.97+,Backlog,Emergent behavior,From landolil V4.0
+FP030,Visualization,One-Electron Universe Topology,Worldline visualization,P3,High,Three.js + math,1.0.97+,Backlog,Conceptual physics,From landolil V4.0

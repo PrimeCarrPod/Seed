@@ -1,0 +1,22 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.16_bounce.html	2026-10-08 02:33:53.947787767 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.17_bounce.html	2026-10-08 02:33:53.970171770 +0000
+@@ -331,6 +331,19 @@
+       if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+     }
+   },
++  onBroadcastStatus(result){
++    var r=typeof result==='string'?JSON.parse(result):result;
++    var st=document.getElementById('broadcast-status');
++    if(r.status==='visible'&&st){st.className='text-green font-mono pulse-g'}
++    else if(r.status==='failed'&&st){st.textContent='TX FAIL';st.className='text-red font-mono'}
++  },
++  onTransitionTiming(ms,ssid,method){
++    var ov=document.getElementById('tx-timing');
++    if(!ov){ov=document.createElement('div');ov.id='tx-timing';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:25;pointer-events:none;background:rgba(0,0,0,.9);padding:10px 18px;border-radius:8px;border:1px solid rgba(0,255,136,.4);font-size:12px;font-family:monospace;color:#00FF88;text-align:center;transition:opacity .5s';document.body.appendChild(ov)}
++    ov.innerHTML='&#128260; <b>'+ms+'ms</b><br><span style="font-size:9px;color:#4488FF">'+ssid+'</span><br><span style="font-size:7px;color:#6b7280">'+method+'</span>';
++    ov.style.opacity='1';
++    setTimeout(function(){ov.style.opacity='0'},4000);
++  },
+   toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
+   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin').textContent=this.spin?'SPIN ON':'SPIN'},
+   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');

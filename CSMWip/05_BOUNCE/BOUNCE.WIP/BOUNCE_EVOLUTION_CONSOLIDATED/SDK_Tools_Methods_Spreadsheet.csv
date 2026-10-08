@@ -1,0 +1,31 @@
+Tool_SDK_Component,Version_Required,First_Used_Version,Last_Used_Version,Purpose,Configuration_Details,Install_Command,Known_Issues,Workaround,Best_Practice,Environment_Notes
+JDK,17,1.0.0,1.0.91,Java compilation + keytool,export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64,apt-get install openjdk-17-jdk-headless,JAVA_HOME reset on sandbox,Export in every session,Always export before build,Use /usr/lib/jvm/java-17-openjdk-amd64
+Android SDK Platform,android-33,1.0.0,1.0.91,android.jar for compilation,platforms/android-33/android.jar,sdkmanager "platforms;android-33",Missing in cloud env,Download manually,Pin to api-33,Required for compileSdk 33
+Build Tools,aapt2/d8/zipalign/apksigner 33.0.1,1.0.0,1.0.91,Build pipeline tools,build-tools/33.0.1/{aapt2,d8,zipalign,apksigner},sdkmanager "build-tools;33.0.1",Only 34.0.0 renderscript in env,Install 33.0.1 explicitly,Match compileSdk version,Critical for no-Gradle build
+cmdline-tools,latest,1.0.0,1.0.91,sdkmanager command,cmdline-tools/latest/bin/sdkmanager,Unzip to cmdline-tools/latest,MUST be at latest/ subdirectory,mv cmdline-tools/cmdline-tools cmdline-tools/latest,Hardcoded path requirement,Critical for SDK setup
+Gradle,8.4/8.5,1.0.80,1.0.91,Alternative build,gradle-8.5-bin.zip,wget gradle-8.5-bin.zip,AGP 8.2 incompatibility,Use AGP 8.1.0 + Gradle 8.4,AGP 8.1.0 + Gradle 8.4/8.5 stable,For multi-module projects only
+Android Gradle Plugin,8.1.0,1.0.80,1.0.91,Gradle builds,build.gradle.kts: id("com.android.application") version "8.1.0",Plugin portal,AGP 8.2 breaks checkDebugAarMetadata,Pin to 8.1.0,Only for Gradle builds
+kotlin,1.9.22,1.0.80,1.0.91,Kotlin compilation,build.gradle.kts: kotlin("android") version "1.9.22",Plugin portal,None,Stable with AGP 8.1,Match AGP version,For Kotlin modules
+aapt2,33.0.1,1.0.0,1.0.91,Resource compilation + linking,aapt2 compile --dir res -o resources.zip,aapt2 link -o base.apk -I android.jar --manifest,Part of build-tools,None,Use --auto-add-overlay,No-Gradle pipeline step 1-2
+d8,33.0.1,1.0.0,1.0.91,Dex conversion,d8 --lib android.jar --min-api 24 --output obj classes,Part of build-tools,None,Use --min-api matching minSdk,No-Gradle pipeline step 4
+zipalign,33.0.1,1.0.0,1.0.91,APK alignment,zipalign -p -f 4 input.apk output.apk,Part of build-tools,None,4-byte alignment mandatory,No-Gradle pipeline step 6
+apksigner,33.0.1,1.0.0,1.0.91,APK signing,apksigner sign --ks debug.keystore --out signed.apk aligned.apk,Part of build-tools,None,Auto-gen debug keystore,No-Gradle pipeline step 7
+keytool,JDK 17,1.0.0,1.0.91,Debug keystore generation,keytool -genkey -alias androiddebugkey -keystore debug.keystore,JDK included,None,Auto-generate if missing,Validity 10000 days
+git,Latest,1.0.0,1.0.91,Version control,git commit/push/pull,Pre-installed,Contention on multi-agent,safe_push() retry loop,Commit often,GitHub handler script
+GitHub CLI (gh),Latest,1.0.91,1.0.91,PR/merge automation,gh pr create --base main --head branch,Pre-installed,None,Use for merge methods,17 merge methods documented
+unzip,Latest,1.0.0,1.0.91,Extract source zips,unzip -q file.zip -d dir,Pre-installed,None,Use -q for quiet,For forensic analysis
+bc,Latest,1.0.0,1.0.91,Build size calculation,echo "scale=1; size/1024" | bc,apt-get install bc,None,Optional for KB display,Build script uses for size
+stat,Latest,1.0.0,1.0.91,File size checking,stat --printf="%s" file,GNU coreutils,None,Use --printf for bytes,Build script uses for APK size
+date,Latest,1.0.0,1.0.91,Heartbeat timestamps,date -u +"%Y-%m-%d %H:%M:%S UTC",GNU coreutils,Format varies,Use UTC format,Heartbeat monitor
+nohup,Latest,1.0.0,1.0.91,Background processes,nohup bash -c 'while...' &,GNU coreutils,Output capture,Redirect to log file,Heartbeat PID tracking
+pkill,Latest,1.0.0,1.0.91,Stop background processes,pkill -f "pattern",GNU coreutils,Match full command,Use specific pattern,Stop heartbeat
+diff,Latest,1.0.0,1.0.91,Version diffing,diff -u file1 file2 > out.diff,GNU diffutils,None,Unified format,Forensic analysis
+zip,Latest,1.0.0,1.0.91,Asset injection + zipping,zip -r archive.zip dir/,Pre-installed,None,Use -r recursive,Build step 2b + zip-pieces
+ADB,Latest,1.0.0,1.0.91,Device install/test,adb install apk,Platform tools,Device connection,Use emulator if no device,Testing APKs
+sdkmanager licenses,Latest,1.0.0,1.0.91,License acceptance,printf 'y\ny\ny\ny\ny\ny\ny\ny\n' | sdkmanager --licenses,SDK tools,EPIPE on yes pipe,Use printf or license hash,License hash: 8933bad161af4178b1185d1a37fbf41ea5269c55
+License hash bypass,Latest,1.0.0,1.0.91,Skip interactive licenses,echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > licenses/android-sdk-license,SDK tools,None,Write SHA-1 to license file,Faster than interactive
+ANDROID_HOME,Latest,1.0.0,1.0.91,SDK location,export ANDROID_HOME=/path/to/sdk,Environment,Path varies per env,Set in build.sh,Build script detects automatically
+local.properties,Gradle,1.0.80,1.0.91,Gradle SDK path,sdk.dir=/path/to/sdk,Gradle,Must match ANDROID_HOME,Generate in build,Gradle builds only
+compileSdk,33,1.0.0,1.0.91,Compilation target,compileSdk 33,build.gradle,Must match build-tools,api-33 for Android 13,Target SDK 33
+targetSdk,33,1.0.0,1.0.91,Runtime target,targetSdk 33,Manifest,Google Play requirement,API 35 min Aug 2026,Update for Play Store
+minSdk,24,1.0.0,1.0.91,Minimum version,minSdk 24,Manifest,99.3% coverage,Android 7.0 Nougat,Don't raise without reason

@@ -1,0 +1,47 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.90_bounce.html	2026-10-08 02:33:55.357499909 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.91_bounce.html	2026-10-08 02:33:55.382622582 +0000
+@@ -3,7 +3,7 @@
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+-    <title>Bounce v1.0.90 — Kalman Distance | CarrPod</title>
++    <title>Bounce v1.0.91 — Kalman Distance | CarrPod</title>
+   <script src="js/three.min.js"></script>
+   <script src="js/OrbitControls.js"></script>
+   <script src="js/EffectComposer.js"></script>
+@@ -54,7 +54,7 @@
+ <div id="hdr">
+   <div class="pointer-events-auto">
+     <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
+-    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.90</span></p>
++    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.91</span></p>
+   </div>
+   <div class="pointer-events-auto flex gap-2 items-start">
+     <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+@@ -64,6 +64,7 @@
+     <button id="btn-theory" class="btn btn-p" onclick="Bounce.toggleTheoryMode()">THEORY</button>
+     <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>
+     <button id="btn-lock" class="btn btn-o" onclick="LockScreen.enable()">LOCK</button>
++    <button id="btn-check-update" class="btn btn-o" onclick="Bounce.checkUpdate()" style="opacity:0.6;font-size:9px;padding:4px 8px">CHECK UPDATE</button>
+   </div>
+ </div>
+ 
+@@ -138,7 +139,7 @@
+       <span style="color:#FF6600">●You</span> <span style="color:#00FF88">●Bounce</span> <span style="color:#4488FF">●Vehicle</span> <span style="color:#a855f7">●Static</span> <span style="color:#FF4466">●Hazard</span>
+       <br><span style="font-size:7px;color:#6b7280">FAA METAR: RA rain SN snow FG fog TS storm BR mist HZ haze FZ ice</span>
+       <br><span style="font-size:7px;color:#6b7280">Wind: 09010KT Vis: 5SM Sky: FEW BKN OVC CLR</span>
+-      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.90</span> · CarrPod · Bluetooth 3D Spatial</div>
++      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.91</span> · CarrPod · Bluetooth 3D Spatial</div>
+   </div>
+   <div class="hud pointer-events-auto scroll" style="padding:5px">
+     <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Wi-Fi Scanner</h3>
+@@ -567,6 +568,9 @@
+     if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText(hdr);
+   },
+   toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
++  checkUpdate(){if(typeof BounceBridge!=='undefined'&&BounceBridge.checkUpdate)BounceBridge.checkUpdate()},
++  onUpdateAvailable(ver){UI.showUpdateMenu(ver)},
++  onUpdateNotAvailable(){UI.hideUpdateMenu()},
+   updateNow(){if(typeof BounceBridge!=='undefined'&&BounceBridge.onUpdateSelected)BounceBridge.onUpdateSelected('update');UI.toggleUpdate()},
+   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin-h').textContent=this.spin?'SPIN ON':'SPIN'},
+   onCompass(azimuth,pitch,roll,orn){

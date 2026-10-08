@@ -1,0 +1,114 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.31_MainActivity.java	2026-10-08 02:33:54.244672497 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.32_MainActivity.java	2026-10-08 02:33:54.263336505 +0000
+@@ -457,50 +457,48 @@
+         public void onReceive(Context context, Intent intent) {
+             boolean success = intent.getBooleanExtra(WifiManager.EXTRA_RESULTS_UPDATED, false);
+             if (!success) return;
+-
+             List<ScanResult> results = wifiManager.getScanResults();
+             if (results == null || results.isEmpty()) return;
++            long elapsed = System.currentTimeMillis() - lastScanTime;
++            lastScanTime = System.currentTimeMillis();
++            sendScanResultsToJs(results, elapsed);
++        }
++    };
+ 
+-            scanCount++;
+-            long now = System.currentTimeMillis();
+-            long elapsed = now - lastScanTime;
+-            lastScanTime = now;
+-
+-            StringBuilder json = new StringBuilder("[");
+-            boolean first = true;
+-
+-            for (ScanResult r : results) {
+-                if (!first) json.append(","); first = false;
+-
+-                String ssid = escapeJson(r.SSID);
+-                String bssid = r.BSSID;
+-
+-                long firstSeen = ssidLog.containsKey(bssid) ? ssidLog.get(bssid) : now;
+-                if (!ssidLog.containsKey(bssid)) ssidLog.put(bssid, now);
+-                long persistence = (now - firstSeen) / 1000;
+-
+-                Float prevRssi = ssidRssiHistory.get(bssid);
+-                boolean reliable = prevRssi != null && Math.abs(r.level - prevRssi) < 15;
+-
+-                float distance = estimateDistance(r.level, r.frequency);
+-                ssidRssiHistory.put(bssid, (float) r.level);
+-
+-                json.append("{");
+-                json.append("\"ssid\":\"").append(ssid).append("\",");
+-                json.append("\"bssid\":\"").append(bssid).append("\",");
+-                json.append("\"rssi\":").append(r.level).append(",");
+-                json.append("\"freq\":").append(r.frequency).append(",");
+-                json.append("\"dist\":").append(String.format("%.1f", distance)).append(",");
+-                json.append("\"persist\":").append(persistence).append(",");
+-                json.append("\"reliable\":").append(reliable).append(",\"caps\":\"\"");
+-                json.append("}");
+-            }
++    private void pushScanResults() {
++        if (wifiManager == null || webView == null) return;
++        try {
++            List<ScanResult> results = wifiManager.getScanResults();
++            if (results == null || results.isEmpty()) return;
++            sendScanResultsToJs(results, 0);
++        } catch (Exception ignored) {}
++    }
+ 
+-            json.append("]");
+-            String meta = "{\"scanNum\":" + scanCount + ",\"elapsed\":" + elapsed + ",\"total\":" + ssidLog.size() + "}";
+-            injectJs("Bounce.onScanResults(" + json.toString() + "," + meta + ")");
++    private void sendScanResultsToJs(List<ScanResult> results, long elapsed) {
++        scanCount++;
++        long now = System.currentTimeMillis();
++        StringBuilder json = new StringBuilder("[");
++        boolean first = true;
++        for (ScanResult r : results) {
++            if (!first) json.append(","); first = false;
++            String ssid = escapeJson(r.SSID);
++            String bssid = r.BSSID;
++            long firstSeen = ssidLog.containsKey(bssid) ? ssidLog.get(bssid) : now;
++            if (!ssidLog.containsKey(bssid)) ssidLog.put(bssid, now);
++            long persistence = (now - firstSeen) / 1000;
++            Float prevRssi = ssidRssiHistory.get(bssid);
++            boolean reliable = prevRssi != null && Math.abs(r.level - prevRssi) < 15;
++            float distance = estimateDistance(r.level, r.frequency);
++            ssidRssiHistory.put(bssid, (float) r.level);
++            json.append("{\"ssid\":\"").append(ssid).append("\",\"bssid\":\"").append(bssid)
++                .append("\",\"rssi\":").append(r.level).append(",\"freq\":").append(r.frequency)
++                .append(",\"dist\":").append(String.format("%.1f", distance))
++                .append(",\"persist\":").append(persistence).append(",\"reliable\":").append(reliable).append(",\"caps\":\"\"}");
+         }
+-    };
++        json.append("]");
++        String meta = "{\"scanNum\":" + scanCount + ",\"elapsed\":" + elapsed + ",\"total\":" + ssidLog.size() + "}";
++        injectJs("Bounce.onScanResults(" + json.toString() + "," + meta + ")");
++    }
+ 
+     private float estimateDistance(int rssi, int frequency) {
+         float exp = (27.55f - (20f * (float) Math.log10(frequency > 0 ? frequency : 2400)) + Math.abs(rssi)) / 20f;
+@@ -554,7 +552,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("250ms Scan · v1.0.31");
++        tag.setText("Direct GetScan · v1.0.32");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -578,8 +576,12 @@
+         row.setPadding(0, dp(8), 0, dp(8));
+ 
+         row.addView(mkBtn("SCAN", "#00FF88", v -> {
+-            if (wifiManager != null) wifiManager.startScan();
+-            injectJs("Bounce._refreshUI()");
++            if (wifiManager != null) {
++                boolean started = wifiManager.startScan();
++                // Also push cached results immediately
++                pushScanResults();
++                if (!started) Toast.makeText(MainActivity.this, "Scan throttled — cached results shown", Toast.LENGTH_SHORT).show();
++            }
+         }));
+         row.addView(mkBtn("+VEH", "#f97316", v -> injectJs("Bounce.showPlateInput()")));
+         row.addView(mkBtn("BROADCAST", "#4488FF", v -> injectJs("Bounce.toggleBroadcast()")));

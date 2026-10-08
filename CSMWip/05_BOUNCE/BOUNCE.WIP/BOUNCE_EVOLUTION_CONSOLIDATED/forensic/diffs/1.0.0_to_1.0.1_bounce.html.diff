@@ -1,0 +1,61 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.0_bounce.html	2026-10-08 02:33:53.644019805 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.1_bounce.html	2026-10-08 02:33:53.665894873 +0000
+@@ -47,7 +47,7 @@
+ <div id="hdr" style="pointer-events:none;display:flex;justify-content:space-between;align-items:flex-start">
+   <div class="pointer-events-auto">
+     <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
+-    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">TAF/DMV Mesh Network</span><span style="color:#4488FF;margin-left:8px">v1.0</span></p>
++    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">TAF/DMV Mesh Network</span><span style="color:#4488FF;margin-left:8px">v1.0.1 · SSID Broadcast</span></p>
+   </div>
+   <div class="pointer-events-auto flex gap-2 items-start">
+     <button id="btn-fly" class="btn btn-o" onclick="Bounce.fly()">FLY</button>
+@@ -66,6 +66,10 @@
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Altitude</span><span id="my-alt" class="text-blue font-mono">450 ft</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>SSID Code</span><span id="my-ssid" class="text-yellow font-mono" style="font-size:7px">TAF/DMV/...</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Fleet Key</span><span id="fleet-ind" class="text-red font-mono">OFF</span></div>
++    <div class="flex justify-between text-xs text-gray mb-1"><span>Broadcast SSID</span><span id="broadcast-status" class="text-green font-mono">OFF</span></div>
++    <div id="broadcast-bar" style="display:none;margin-top:4px;padding:4px 6px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.3);border-radius:4px">
++      <span class="text-green" style="font-size:7px">SSID BEACON: </span><span id="broadcast-ssid" class="text-white font-mono" style="font-size:8px;word-break:break-all">---</span>
++    </div>
+   </div>
+   <div class="hud p-2 pointer-events-auto scroll">
+     <h3 class="text-blue text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(68,136,255,.3)">◇ Nearby Beacons <span id="beacon-count" class="text-blue font-mono">0</span></h3>
+@@ -81,6 +85,7 @@
+       <button onclick="Bounce.addSimVehicle()" class="btn btn-o">+VEHICLE</button>
+       <button onclick="Bounce.addRandomFleet()" class="btn btn-b">+FLEET</button>
+       <button onclick="Bounce.scatterBeacons()" class="btn btn-p">SCATTER</button>
++      <button id="btn-broadcast" onclick="Bounce.toggleBroadcast()" class="btn btn-g">BROADCAST</button>
+       <button onclick="Bounce.resetBeacons()" class="btn btn-g">RESET</button>
+     </div>
+   </div>
+@@ -245,7 +250,29 @@
+   addSimVehicle(){this._addBeacon({make:MAKES[Math.floor(Math.random()*MAKES.length)],color:COLORS_V[Math.floor(Math.random()*COLORS_V.length)],type:TYPES[Math.floor(Math.random()*TYPES.length)],heading:Math.floor(Math.random()*360),speed:20+Math.floor(Math.random()*70),state:'FL',year:2020+Math.floor(Math.random()*6),fleet:this.fleetMode?'FLT':'CIV',hazard:null,status:'CRUISE',x:(Math.random()-.5)*30,y:0,z:(Math.random()-.5)*30});this._refreshUI()},
+   addRandomFleet(){this.fleetMode=true;for(var i=0;i<3+Math.floor(Math.random()*4);i++)this.addSimVehicle();this.fleetMode=false},
+   scatterBeacons(){this.beacons.forEach(function(b){b.home={x:(Math.random()-.5)*40,y:(Math.random()-.2)*10,z:(Math.random()-.5)*40};b.vx+=(Math.random()-.5)*4;b.vz+=(Math.random()-.5)*4})},
+-  resetBeacons(){
++  broadcast:false,
++  toggleBroadcast(){
++    this.broadcast=!this.broadcast;
++    var st=document.getElementById('broadcast-status');
++    var bar=document.getElementById('broadcast-bar');
++    var ss=document.getElementById('broadcast-ssid');
++    var btn=document.getElementById('btn-broadcast');
++    if(this.broadcast){
++      var code='TAF090/CIV065-FORWHI-DMV-FL235FT'; // sample broadcast SSID
++      ss.textContent=code;
++      bar.style.display='block';
++      st.textContent='ON · TX';
++      st.className='text-green font-mono';
++      btn.textContent='STOP TX';
++      btn.className='btn btn-o';
++    }else{
++      bar.style.display='none';
++      st.textContent='OFF';
++      st.className='text-red font-mono';
++      btn.textContent='BROADCAST';
++      btn.className='btn btn-g';
++    }
++  },
+     var self=this;
+     this.beacons.forEach(function(b){b.home={x:(Math.random()-.5)*20,y:0,z:(Math.random()-.5)*20}});
+     setTimeout(function(){

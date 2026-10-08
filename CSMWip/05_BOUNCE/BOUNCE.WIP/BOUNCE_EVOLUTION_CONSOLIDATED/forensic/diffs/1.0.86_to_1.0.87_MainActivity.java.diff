@@ -1,0 +1,20 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.86_MainActivity.java	2026-10-08 02:33:55.308320361 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.87_MainActivity.java	2026-10-08 02:33:55.332295763 +0000
+@@ -1239,7 +1239,7 @@
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.86 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.87 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface
+@@ -1267,7 +1267,7 @@
+             theoryMode = enabled;
+             runOnUiThread(() -> {
+                 String mode = enabled ? "THEORY" : "LIVE";
+-                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.86 · " + mode);
++                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.87 · " + mode);
+                 Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
+             });
+         }

@@ -1,0 +1,27 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.33_bounce.html	2026-10-08 02:33:54.283405522 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.34_bounce.html	2026-10-08 02:33:54.302411324 +0000
+@@ -477,17 +477,19 @@
+ window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
+ </script>
+ 
+-<div id="wifi-mini" style="position:fixed;bottom:10px;left:300px;z-index:30;pointer-events:auto;background:rgba(3,6,16,.92);border:1px solid rgba(0,255,136,.3);border-radius:8px;padding:6px;width:210px;max-height:200px;overflow:hidden;font-size:8px;font-family:monospace">
+-  <div id="wifi-mini-header" style="color:#00FF88;font-weight:700;border-bottom:1px solid rgba(0,255,136,.2);padding-bottom:3px;margin-bottom:3px;display:flex;justify-content:space-between;cursor:pointer" onclick="var l=document.getElementById('wifi-mini-list');l.style.display=l.style.display==='none'?'block':'none'"><span>Wi-Fi Direct</span><span id="wifi-mini-count" style="color:#4488FF">0</span></div>
+-  <div id="wifi-mini-list" style="max-height:170px;overflow-y:auto;color:#9ca3af;line-height:1.5"></div>
++<div id="wifi-mini" style="position:fixed;bottom:10px;left:10px;right:10px;z-index:30;pointer-events:auto;background:rgba(0,0,0,.88);border:2px solid rgba(0,255,136,.5);border-radius:8px;padding:6px 10px;max-height:120px;overflow:hidden;font-size:9px;font-family:monospace;font-weight:700">
++  <div id="wifi-mini-header" style="color:#00FF88;border-bottom:1px solid rgba(0,255,136,.3);padding-bottom:3px;margin-bottom:4px;display:flex;justify-content:space-between;cursor:pointer" onclick="document.getElementById('wifi-mini-list').style.display=document.getElementById('wifi-mini-list').style.display==='none'?'flex':'none'">
++    <span>Wi-Fi Signals In Range</span><span id="wifi-mini-count" style="color:#4488FF">0</span>
++  </div>
++  <div id="wifi-mini-list" style="display:flex;flex-wrap:wrap;gap:4px 12px;max-height:90px;overflow-y:auto;color:#9ca3af;line-height:1.3"></div>
+ </div>
+ 
+ <script>
+ var WifiMini={start:function(){var self=this;setInterval(function(){
+   var list=document.getElementById('wifi-mini-list');var cnt=document.getElementById('wifi-mini-count');
+-  if(!Bounce.realNodes||!Bounce.realNodes.length){list.innerHTML='<span style="color:#6b7280">no signals</span>';cnt.textContent='0';return}
++  if(!Bounce.realNodes||!Bounce.realNodes.length){list.innerHTML='<span style="color:#6b7280">scanning...</span>';cnt.textContent='0';return}
+   var h='';Bounce.realNodes.sort(function(a,b){return a.dist-b.dist});
+-  for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<div style="color:'+c+'">'+n.ssid.substring(0,14)+' <span style="color:#FF6600">'+n.rssi+'</span> <span style="color:#4488FF">'+n.dist+'m</span></div>'}
++  for(var i=0;i<Math.min(Bounce.realNodes.length,20);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<span style="color:'+c+';white-space:nowrap">'+n.ssid.substring(0,12)+' <span style="color:#FF6600">'+n.rssi+'</span>m</span>'}
+   list.innerHTML=h;cnt.textContent=Bounce.realNodes.length},500)}};
+ setTimeout(function(){WifiMini.start()},3000);
+ </script>

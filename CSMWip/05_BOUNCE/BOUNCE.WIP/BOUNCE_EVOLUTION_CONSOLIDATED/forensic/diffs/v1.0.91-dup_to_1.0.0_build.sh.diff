@@ -1,0 +1,57 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/v1.0.91-dup_build.sh	2026-10-08 02:33:53.631596696 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.0_build.sh	2026-10-08 02:33:53.645540478 +0000
+@@ -1,34 +1,37 @@
+ #!/bin/bash
+ # ============================================================
+-# build.sh — No-Gradle APK Build for Bounce v1.0.91
+-# Bluetooth 3D Spatial RSSI Tracking — Manual Update Button
++# build.sh — No-Gradle APK Build for Bounce v1
+ # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
+ # ============================================================
+ set -e
+ 
+ PACKAGE="com.carrpod.bounce"
+ APP_NAME="Bounce"
+-VERSION_CODE=191
+-VERSION_NAME="1.0.91"
++VERSION_CODE=100
++VERSION_NAME="1.0.0"
+ COMPILE_SDK=33
+ TARGET_SDK=33
+ MIN_SDK=24
+ BUILD_TOOLS_VERSION="33.0.1"
+ 
+-PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5744dc84-1fbd-4568-abf3-5c49c84e9c4b/CSMApps/Bounce/v1.0.91"
++PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ SRC_DIR="$PROJECT_DIR/src/main"
+ GEN_DIR="$PROJECT_DIR/gen"
+ OBJ_DIR="$PROJECT_DIR/obj"
+ OUT_DIR="$PROJECT_DIR/out"
+ 
+-SDK_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5744dc84-1fbd-4568-abf3-5c49c84e9c4b/.sdk/android-sdk"
+-BUILD_TOOLS="$SDK_DIR/build-tools/33.0.1"
+-PLATFORM="$SDK_DIR/platforms/android-33"
++SDK_DIR="${ANDROID_HOME:-$(cd "$PROJECT_DIR/../../../../.sdk/android-sdk" 2>/dev/null && pwd)}"
++BUILD_TOOLS="$SDK_DIR/build-tools/$BUILD_TOOLS_VERSION"
++PLATFORM="$SDK_DIR/platforms/android-$COMPILE_SDK"
+ ANDROID_JAR="$PLATFORM/android.jar"
+ 
+ # JDK detection
+-if [ -d "/usr/lib/jvm/java-17-openjdk-amd64" ]; then
+-    export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
++if [ -d "$PROJECT_DIR/../../../../.sdk/jdk17" ]; then
++    export JAVA_HOME="$PROJECT_DIR/../../../../.sdk/jdk17"
++    export PATH="$JAVA_HOME/bin:$PATH"
++fi
++if [ -d "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02/.sdk/jdk17" ]; then
++    export JAVA_HOME="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02/.sdk/jdk17"
+     export PATH="$JAVA_HOME/bin:$PATH"
+ fi
+ 
+@@ -106,4 +109,4 @@
+ "$AAPT2" dump badging "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null | head -5 || true
+ cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../../../../CSMDropBox/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  CSMDropBox copy OK" || true
+ cp "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$PROJECT_DIR/../../../../$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null && echo "  Repo root copy OK" || true
+-exit 0
+\ No newline at end of file
++exit 0

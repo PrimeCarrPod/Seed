@@ -1,0 +1,143 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.54_bounce.html	2026-10-08 02:33:54.705469229 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.55_bounce.html	2026-10-08 02:33:54.725178156 +0000
+@@ -62,8 +62,6 @@
+     <button id="btn-spin" class="btn btn-b" onclick="Bounce.toggleSpin()">SPIN</button>
+     <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+     <button id="btn-pov" class="btn btn-o" onclick="Bounce.togglePOV()">POV</button>
+-    <button id="btn-pov-less" class="btn btn-o" onclick="Bounce.povDist=Math.max(10,Bounce.povDist-5)" style="display:none;padding:4px 6px">-</button>
+-    <button id="btn-pov-more" class="btn btn-o" onclick="Bounce.povDist=Math.min(120,Bounce.povDist+5)" style="display:none;padding:4px 6px">+</button>
+     <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>
+   </div>
+ </div>
+@@ -154,7 +152,7 @@
+ function colorToHex(cl){var c={White:'#F0F0F0',Black:'#222222',Silver:'#C0C0C0',Blue:'#4488FF',Red:'#FF4444',Gray:'#888888',Green:'#44BB44',Orange:'#FF8844',Yellow:'#FFCC00',Brown:'#8B6914',Navy:'#222266',Burgundy:'#882222',Gold:'#CCA600',Tan:'#C4A882'};return c[cl]||'#888888'}
+ 
+ // ═══════════════════════════════════════════
+-const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,povDist:50,
++const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,povDist:50,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,
+   init(){
+     var c=document.getElementById('canvas-container');
+     this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);
+@@ -252,11 +250,19 @@
+     var existing=null;
+     for(var i=0;i<this.btNodes.length;i++){if(this.btNodes[i].addr===r.addr){existing=this.btNodes[i];break}}
+     if(existing){existing.rssi=r.rssi;existing.dist=r.dist;existing.lastSeen=Date.now()}
+-    else{this.btNodes.push({name:r.name||r.addr,addr:r.addr,rssi:r.rssi,dist:r.dist,lastSeen:Date.now()});
+-      var angle=(r.addr||'AA').charCodeAt(0)*2.7+((r.addr||'A').charCodeAt(1)||0)*1.3;
+-      var bd=new THREE.SphereGeometry(.25,8,4);var bm=new THREE.MeshBasicMaterial({color:0x4488FF,transparent:true,opacity:.6,blending:THREE.AdditiveBlending,depthWrite:false});
+-      var dot=new THREE.Mesh(bd,bm);dot.position.set(Math.cos(angle)*r.dist,0,Math.sin(angle)*r.dist);
+-      this.scene.add(dot);this.bt3dNodes.push({dot:dot,addr:r.addr,angle:angle,dist:r.dist,lastSeen:Date.now()});}
++    else{
++      this.btNodes.push({name:r.name||r.addr,addr:r.addr,rssi:r.rssi,dist:r.dist,lastSeen:Date.now()});
++      // Create 3D dot
++      if(this.scene){
++        var angle=(r.addr||'AA').charCodeAt(0)*2.7+((r.addr||'A').charCodeAt(1)||0)*1.3;
++        var bd=new THREE.SphereGeometry(.25,8,4);
++        var bm=new THREE.MeshBasicMaterial({color:0x4488FF,transparent:true,opacity:.6,blending:THREE.AdditiveBlending,depthWrite:false});
++        var dot2=new THREE.Mesh(bd,bm);
++        dot2.position.set(Math.cos(angle)*r.dist,0,Math.sin(angle)*r.dist);
++        this.scene.add(dot2);
++        this.bt3dNodes.push({dot:dot2,addr:r.addr,angle:angle,dist:r.dist,lastSeen:Date.now()});
++      }
++    }
+     var now=Date.now();
+     for(var i=this.btNodes.length-1;i>=0;i--){if(now-this.btNodes[i].lastSeen>60000)this.btNodes.splice(i,1)}
+   },
+@@ -423,8 +429,8 @@
+   },
+   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
+     if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
+-      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';      document.body.appendChild(ov);document.getElementById('btn-pov-less').style.display='inline-block';document.getElementById('btn-pov-more').style.display='inline-block'}
+-    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();document.getElementById('btn-pov-less').style.display='none';document.getElementById('btn-pov-more').style.display='none'}
++      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov)}
++    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove()}
+   },
+   fly(){this._fly=!this._fly;
+     if(!this._fly){this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o';
+@@ -441,10 +447,25 @@
+     if(allPos.length<4){for(var i=0;i<8;i++)allPos.push({x:(Math.random()-.5)*40,y:5+Math.random()*8,z:(Math.random()-.5)*40})}
+     this._flyWp=allPos;this._flyP=0;this._flyLoop=true;
+   },
+-  toggleTrail(){this.trailActive=!this.trailActive;var b=document.getElementById('btn-trail'),s=document.getElementById('btn-save');
+-    if(this.trailActive){this.trailPoints=[];if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}b.textContent='TRAIL ON';b.className='btn btn-g';s.style.display='inline-block'}
+-    else{b.textContent='TRAIL';b.className='btn btn-b';s.style.display='none'}},
+-  saveTrail(){if(!this.trailPoints||this.trailPoints.length<2)return;var d={v:'1.0.51',t:new Date().toISOString(),p:this.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};var b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});var u=URL.createObjectURL(b);var a=document.createElement('a');a.href=u;a.download='bounce-trail-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';a.click();URL.revokeObjectURL(u)},
++  toggleTrail(){
++    this.trailActive=!this.trailActive;
++    var btn=document.getElementById('btn-trail'),saveBtn=document.getElementById('btn-save');
++    if(this.trailActive){
++      this.trailPoints=[];
++      if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}
++      btn.textContent='TRAIL ON';btn.className='btn btn-g';saveBtn.style.display='inline-block';
++    }else{
++      btn.textContent='TRAIL';btn.className='btn btn-b';saveBtn.style.display='none';
++    }
++  },
++  saveTrail(){
++    if(!this.trailPoints||this.trailPoints.length<2)return;
++    var data={version:'1.0.49',date:new Date().toISOString(),points:this.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};
++    var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
++    var url=URL.createObjectURL(blob);
++    var a=document.createElement('a');a.href=url;a.download='bounce-trail-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';a.click();
++    URL.revokeObjectURL(url);
++  },
+   adjustFlySpeed(delta){this._flySpeed=Math.max(.25,Math.min(3,this._flySpeed+delta));},
+   _animate(){
+     var self=this;
+@@ -476,22 +497,22 @@
+     // POV mode: chase camera behind vehicle (zoomed out)
+     if(self.povMode){
+       var brr=self.myHeading*Math.PI/180;
+-      var cx=self.tardi.group.position.x-Math.sin(brr)*self.povDist;
+-      var cy=self.povDist*.6;var cz=self.tardi.group.position.z-Math.cos(brr)*self.povDist;
++      var cx=self.tardi.group.position.x-Math.sin(brr)*30;
++      var cy=18;var cz=self.tardi.group.position.z-Math.cos(brr)*30;
+       self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.04);
+       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
+     }
+-    // Trail (decimated)
+-    if(self.trailActive){self._trailFrame=(self._trailFrame||0)+1;
+-      if(self._trailFrame%30===0){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+-        if(self.trailPoints.length>1000)self.trailPoints.shift();
+-        if(self.trailPoints.length===900){try{var sd={v:'1.0.54',t:new Date().toISOString(),p:self.trailPoints.slice(-600).map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})},sb=new Blob([JSON.stringify(sd)],{type:'application/json'}),su=URL.createObjectURL(sb),sa=document.createElement('a');sa.href=su;sa.download='bounce-trail-auto-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';sa.click();URL.revokeObjectURL(su)}catch(e){}}
+-        if(self.trailPoints.length%15===0){try{if(self.trailLine)self.scene.remove(self.trailLine);
+-          self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)})),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
+-          self.scene.add(self.trailLine)}catch(e){self.trailPoints=[];self.trailActive=false}}
+-      }}
+-    // BT pulse
+-    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i];if(bn.dot&&bn.dot.material)bn.dot.material.opacity=.35+.25*Math.sin(now*.002+bn.angle)}
++    // Trail recording
++    if(self.trailActive){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
++      if(self.trailPoints.length>1){
++        if(self.trailLine)self.scene.remove(self.trailLine);
++        var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
++        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
++        self.scene.add(self.trailLine);
++      }
++    }
++    // BT 3D dots follow distance
++    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){bn.dist=bn.dist*.9+btNode.dist*.1;bn.dot.position.set(Math.cos(bn.angle)*bn.dist,0,Math.sin(bn.angle)*bn.dist)}}
+     this.composer.render();
+   }
+ };
+@@ -506,7 +527,7 @@
+ };
+ window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
+ setTimeout(function(){
+-  setInterval(function(){try{
++  setInterval(function(){
+     var listR=document.getElementById('wifi-scanner-list');
+     var list2=document.getElementById('scan2-list');
+     if(!Bounce.realNodes)return;
+@@ -517,10 +538,9 @@
+     var bl=document.getElementById('bt-list');
+     if(bl&&Bounce.btNodes&&Bounce.btNodes.length>0){
+       var bh='';Bounce.btNodes.sort(function(a,b){return a.dist-b.dist});
+-      for(var i=0;i<Math.min(Bounce.btNodes.length,8);i++){var n=Bounce.btNodes[i];bh+='<li style="color:#4488FF;padding:1px 0">'+n.name+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
++      for(var i=0;i<Math.min(Bounce.btNodes.length,8);i++){var n=Bounce.btNodes[i];bh+='<li style="color:#4488FF;padding:1px 0;display:flex;justify-content:space-between"><span>'+n.name.substring(0,12)+'</span><span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span><span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+       bl.innerHTML=bh;
+     }else if(bl){bl.innerHTML='<li style="color:#6b7280">no BT devices</li>'}
+-  }catch(e){}
+   },500);
+ },3000);
+ </script>

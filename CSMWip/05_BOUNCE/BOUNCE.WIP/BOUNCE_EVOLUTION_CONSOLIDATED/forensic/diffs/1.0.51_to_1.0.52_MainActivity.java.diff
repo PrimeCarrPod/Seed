@@ -1,0 +1,33 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.51_MainActivity.java	2026-10-08 02:33:54.647671354 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.52_MainActivity.java	2026-10-08 02:33:54.666084745 +0000
+@@ -497,10 +497,10 @@
+                     lastScanTime = System.currentTimeMillis();
+                     wifiManager.startScan();
+         pushScanResults();
+-                    scanHandler.postDelayed(this, 250);
++                    scanHandler.postDelayed(this, 1000);
+                 }
+             }
+-        }, 250);
++        }, 1000);
+     }
+ 
+     private final BroadcastReceiver wifiScanReceiver = new BroadcastReceiver() {
+@@ -611,7 +611,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("All Features · v1.0.51");
++        tag.setText("Crash-Proof · v1.0.52");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -667,7 +667,7 @@
+         b.setOnClickListener(l); return b;
+     }
+ 
+-    private void injectJs(String s) { if (webView != null) webView.evaluateJavascript(s, null); }
++    private void injectJs(String s) { try { if (webView != null) webView.evaluateJavascript(s, null); } catch (Exception ignored) {} }
+     private int dp(int px) { return (int)(px * getResources().getDisplayMetrics().density); }
+ 
+     @Override public void onBackPressed() { super.onBackPressed(); }

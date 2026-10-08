@@ -1,0 +1,37 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.62_MainActivity.java	2026-10-08 02:33:54.857279655 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.63_MainActivity.java	2026-10-08 02:33:54.876241470 +0000
+@@ -30,6 +30,7 @@
+ import android.os.Bundle;
+ import android.os.Handler;
+ import android.os.Looper;
++import android.os.PowerManager;
+ import android.view.Gravity;
+ import android.view.View;
+ import android.view.ViewGroup;
+@@ -64,6 +65,7 @@
+     private BluetoothAdapter bluetoothAdapter;
+     private BluetoothLeScanner bleScanner;
+     private boolean btScanning = false;
++    private PowerManager.WakeLock wakeLock;
+     private final float[] accelData = new float[3];
+     private final float[] magnetData = new float[3];
+     private boolean hasAccel = false, hasMagnet = false;
+@@ -107,6 +109,10 @@
+         root.addView(buildControlBar());
+         setContentView(root);
+ 
++        PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
++        wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Bounce:TrailRecorder");
++        wakeLock.acquire();
++
+         wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+         p2pManager = (WifiP2pManager) getSystemService(WIFI_P2P_SERVICE);
+         if (p2pManager != null) {
+@@ -673,6 +679,7 @@
+     @Override public void onBackPressed() { super.onBackPressed(); }
+     @Override protected void onDestroy() {
+         super.onDestroy();
++        if (wakeLock != null && wakeLock.isHeld()) wakeLock.release();
+         scanning = false;
+         scanHandler.removeCallbacksAndMessages(null);
+         try { unregisterReceiver(wifiScanReceiver); } catch (Exception ignored) {}

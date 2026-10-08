@@ -1,0 +1,40 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.29_bounce.html	2026-10-08 02:33:54.208671833 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.30_bounce.html	2026-10-08 02:33:54.227992377 +0000
+@@ -216,21 +216,31 @@
+     var s=new THREE.Sprite(sm);s.scale.set(.8,.8,1);return s;
+   },
+   _refreshUI(){
++    var ul=document.getElementById('beacon-list');ul.innerHTML='';
++    // Scan metadata header
++    if(this.scanMeta&&this.scanMeta.scanNum>0){
++      var h=document.createElement('li');h.innerHTML='<span style="font-size:7px;color:#6b7280">Scan #'+this.scanMeta.scanNum+' · '+this.scanMeta.elapsed+'ms · '+this.scanMeta.total+' known</span>';h.style.borderBottom='1px solid rgba(255,102,0,.15)';h.style.background='rgba(68,136,255,.03)';ul.appendChild(h);
++    }
+     var total=this.beacons.length+this.staticNodes.length;
++    if(this.useRealData)total+=this.realNodes.length;
+     document.getElementById('beacon-count').textContent=total;
+-    var ul=document.getElementById('beacon-list');ul.innerHTML='';
++    // Real Wi-Fi scans on top (dBm + distance)
++    if(this.useRealData&&this.realNodes.length>0){
++      this.realNodes.sort(function(a,b){return a.dist-b.dist});
++      for(var i=0;i<this.realNodes.length;i++){var n=this.realNodes[i];var li=document.createElement('li');var color=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');var tag=n.reliable?'REL':(n.persist>30?'TRACK':'NEW');li.innerHTML='<span style="color:'+color+'">●</span> '+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span> <span style="color:#6b7280;font-size:7px">'+n.persist+'s '+tag+'</span>';if(n.reliable)li.className='bounce-tag';else li.className='static-tag';ul.appendChild(li)}
++      // Separator
++      if(this.beacons.length>0||this.staticNodes.length>0){var s=document.createElement('li');s.innerHTML='<span style="color:#FF6600;font-size:7px">── simulated below ──</span>';s.style.background='rgba(255,102,0,.06)';s.style.textAlign='center';ul.appendChild(s)}
++    }
++    // Simulated examples (always show below real scans)
+     var self=this;
+-    // Show bounce vehicles first
+     this.beacons.forEach(function(b){
+-      var d=b.data;
+-      var dx=b.dot.position.x,dz=b.dot.position.z;
++      var d=b.data;var dx=b.dot.position.x,dz=b.dot.position.z;
+       var dist=Math.sqrt(dx*dx+dz*dz).toFixed(1);
+       var li=document.createElement('li');li.className='bounce-tag';
+-      li.innerHTML='<span>● '+d.ssid+'</span><span class="bctag bounce">BOUNCE</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+dist+'u</span>';
++      li.innerHTML='<span>● '+d.ssid+'</span><span class="bctag bounce">SIM</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+dist+'u</span>';
+       if(d.hazard)li.innerHTML+='<span style="font-size:7px;color:#FF4466;width:100%">⚠ '+d.hazard+'</span>';
+       ul.appendChild(li);
+     });
+-    // Show static RF sources
+     this.staticNodes.forEach(function(sn){
+       var dist=Math.sqrt(sn.x*sn.x+sn.z*sn.z).toFixed(1);
+       var li=document.createElement('li');li.className='static-tag';
