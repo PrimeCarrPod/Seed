@@ -5,7 +5,7 @@
 
 set -e
 
-PROJECT_DIR="CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10"
+PROJECT_DIR="CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10"
 LOG_DIR="${PROJECT_DIR}/logs"
 HANDLER="${PROJECT_DIR}/scripts/legal_acts_handler.sh"
 HEARTBEAT="${PROJECT_DIR}/scripts/heartbeat.sh"

@@ -17,7 +17,7 @@ set -euo pipefail
 # =====================================================================
 # CONFIGURATION - Physiological Parameters
 # =====================================================================
-WORKDIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea/CSM_CONSOLIDATED_WIP/09_Project_Tracking"
+WORKDIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea/CSMWip/09_Project_Tracking"
 LOG_DIR="$WORKDIR/logs"
 PID_FILE="$WORKDIR/earthbeat.pid"
 
