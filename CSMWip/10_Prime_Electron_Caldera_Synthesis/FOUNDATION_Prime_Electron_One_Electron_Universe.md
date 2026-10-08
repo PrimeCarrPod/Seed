@@ -324,6 +324,29 @@ The prime differences are the **crease pattern**. Each fold = one prime gap. The
 ---
 
 ## 10. CLOSING: THE PRIME BOOK IS THE WORLDLINE LOG
+## CALDERA SYNTHESIS INTEGRATION
+
+### Participatory Metric Witness (Section 1)
+The electron functions as a **participatory metric witness** — the universe observing itself through the prime gap sequence. The proper-time quantization Δτ_n = κ·d_n is not merely a mapping but the **operational protocol** by which the electron generates causal geometry.
+
+### Causal Density = α (Section 1)
+The fine-structure constant emerges as the **causal density** of the prime gap worldline:
+ρ_c = α = 1/137.035999...
+This identifies α as the density of causal links per unit proper time, derived from the twin prime density 2C₂/log²x at the electron scale.
+
+### UV Cutoff from Commutator Norm (Section 5)
+The ultraviolet cutoff is not imposed but **derived** from the commutator norm of proper-time translation operators:
+||[Tₙ, Tₙ₊₁]|| = 1
+where Tₙ = exp(-iHΔτ_n/ℏ). The 8-bit array constraint (256 states) provides the natural UV regulator without external input.
+
+### 4-Step Protocol: Order → Fluctuate → Propagate → Order Again (Section 1, Methodology)
+The fundamental dynamics follow a recursive protocol:
+1. **Order:** Prime counting π(x) establishes baseline causal structure
+2. **Fluctuate:** Prime gap fluctuations introduce quantum variability
+3. **Propagate:** SJ vacuum evolution on causal set
+4. **Order Again:** RG blocking yields logarithmic running, new π(x) at next scale
+
+This protocol, operationalized in Section 12 (Mathematical Compendium), is the **computational primitive** from which all physics emerges.
 
 The 3.67 billion prime differences are the 3.67 billion steps the electron has taken — so far. When we upgrade each particle to V4.0, we are not "adding information." **We are reading the logbook at different resolutions.**
 

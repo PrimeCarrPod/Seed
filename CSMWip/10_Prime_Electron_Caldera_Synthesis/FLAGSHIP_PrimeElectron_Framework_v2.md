@@ -479,6 +479,31 @@ The framework opens a new field: **Arithmetic Physics**, where the laws of natur
 ---
 
 ## REFERENCES
+## CALDERA SYNTHESIS INTEGRATION
+
+### Spectral Form Factors & Holographic Wormholes (Section 7)
+The Caldera framework derives the complete SFF dip-ramp-plateau structure from Riemann zero correlations:
+
+- **Dip:** Early-time decay from disconnected spectral correlations
+- **Ramp:** Linear growth from β=2 long-range level repulsion (GUE statistics)
+- **Plateau:** Late-time saturation at Hilbert space dimension
+
+### JT Gravity Dual
+The SYK/JT gravity duality emerges from arithmetic chaos:
+- Double-trumpet geometry connects asymptotic boundaries
+- Prime gap correlations → non-trivial bulk topologies
+- Riemann explicit formula → gravitational path integral
+
+### Page Curve from Arithmetic
+Replica wormholes and the Page curve are derived on the prime lattice:
+- Holographic unitarity from arithmetic chaos
+- Entanglement entropy follows Page curve
+- Information paradox resolved via prime gap statistics
+
+### Topological Crystalline Order (Section 4)
+- Mirror Chern number: n_M = 1
+- Phonon spectrum with Debye temperature θ_D ≈ 348 K
+- Prime gap lattice as topological crystalline insulator
 
 1. Hardy, G.H. & Littlewood, J.E. Some problems of 'Partitio Numerorum' III. Acta Math. 44, 1-70 (1923).
 2. CODATA 2018. Rev. Mod. Phys. 88, 035009 (2016).
