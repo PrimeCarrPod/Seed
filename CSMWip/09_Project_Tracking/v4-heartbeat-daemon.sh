@@ -2,7 +2,7 @@
 # CSM SubParticlesV4 Work In Progress — Heartbeat Daemon
 # Tracks progress of V4 creation, writes heartbeat every 30 seconds
 
-WORKDIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea/CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4"
+WORKDIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_0511c36f-90d5-442d-a000-4eac7a6aeaea/CSMWip/08_DeepResearch_SubParticles/SubParticlesV4"
 HEARTBEAT_FILE="$WORKDIR/heartbeat.log"
 PROGRESS_FILE="$WORKDIR/progress.json"
 LOG_FILE="$WORKDIR/daemon.log"
@@ -28,7 +28,7 @@ while true; do
     echo "$(date -u) | PID: $$ | Phase: $(cat $PROGRESS_FILE | grep -o '"phase": [0-9]*' | cut -d' ' -f2) | Docs: $(cat $PROGRESS_FILE | grep -o '"documents_created": [0-9]*' | cut -d' ' -f2)/$(cat $PROGRESS_FILE | grep -o '"documents_target": [0-9]*' | cut -d' ' -f2)" > "$HEARTBEAT_FILE"
     
     # Count actual documents created
-    DOC_COUNT=$(find "$WORKDIR/DeepResearch/SubParticlesV4" -name "*.md" 2>/dev/null | wc -l)
+    DOC_COUNT=$(find "$WORKDIR" -name "*.md" 2>/dev/null | wc -l)
     
     # Update progress JSON
     cat > "$PROGRESS_FILE" <<EOF

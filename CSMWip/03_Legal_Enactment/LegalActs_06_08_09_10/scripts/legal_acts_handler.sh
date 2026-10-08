@@ -6,7 +6,7 @@
 
 set -e
 
-PROJECT_DIR="CSM_CONSOLIDATED_WIP/03_Legal_Enactment/LegalActs_06_08_09_10"
+PROJECT_DIR="CSMWip/03_Legal_Enactment/LegalActs_06_08_09_10"
 PIECES_DIR="${PROJECT_DIR}/pieces"
 FULL_DIR="${PROJECT_DIR}/full"
 ZIP_DIR="${PROJECT_DIR}/zip"

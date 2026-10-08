@@ -2,7 +2,7 @@
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier  
 **Branch:** prime_pi_electron  
 **Repository:** github.com/PrimeCarrPod/Seed  
-**Target Directory:** CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/  
+**Target Directory:** CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/  
 
 ---
 
@@ -18,16 +18,16 @@ git pull origin prime_pi_electron
 
 # 3. Check status
 git status
-ls -la CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/
+ls -la CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/
 
 # 4. Review Master TODO
-cat CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md
+cat CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md
 
 # 5. Review Project Logs
-cat CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md
+cat CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md
 
 # 6. Start heartbeat monitor
-nohup bash -c 'while true; do echo "$(date -u): HEARTBEAT - $(git branch --show-current) - $(ls CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/*.md 2>/dev/null | wc -l) pieces" >> CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log; sleep 30; done' &
+nohup bash -c 'while true; do echo "$(date -u): HEARTBEAT - $(git branch --show-current) - $(ls CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/*.md 2>/dev/null | wc -l) pieces" >> CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log; sleep 30; done' &
 
 # 7. Begin work on next pending section (check MASTER_TODO.md)
 ```
@@ -56,7 +56,7 @@ chmod +x csmpieces/05_scripts_tools/GitHub_handler.sh
 ### Directory Structure Check
 ```bash
 # Required directories
-CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/
+CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/
 ├── pieces/          # 169 piece files (13 sections × 13 pieces)
 ├── logs/
 │   ├── ProjectLogs.md      # Continuous work log
@@ -142,7 +142,7 @@ done
 ```bash
 HEARTBEAT_PID=$(nohup bash -c '
   while true; do
-    echo "$(date -u +"%Y-%m-%d %H:%M:%S UTC") | BRANCH: $(git branch --show-current 2>/dev/null || echo detached) | PIECES: $(ls CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/*.md 2>/dev/null | wc -l) | SECTION: $(cat CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md 2>/dev/null | grep -A1 "Section 0[1-9]" | head -2 | tail -1 | sed "s/.*\[ \] //")" >> CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
+    echo "$(date -u +"%Y-%m-%d %H:%M:%S UTC") | BRANCH: $(git branch --show-current 2>/dev/null || echo detached) | PIECES: $(ls CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/*.md 2>/dev/null | wc -l) | SECTION: $(cat CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/framework/MASTER_TODO.md 2>/dev/null | grep -A1 "Section 0[1-9]" | head -2 | tail -1 | sed "s/.*\[ \] //")" >> CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
     sleep 30
   done
 ' & echo $!)
@@ -152,10 +152,10 @@ echo "Heartbeat PID: $HEARTBEAT_PID"
 ### Monitor Heartbeat
 ```bash
 # Tail the log
-tail -f CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
+tail -f CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
 
 # Or check latest
-tail -5 CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
+tail -5 CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/heartbeat.log
 ```
 
 ### Stop Heartbeat
@@ -173,7 +173,7 @@ kill $HEARTBEAT_PID 2>/dev/null || pkill -f "heartbeat.*Caldera_Prime_Pi_Electro
 # Example prompt for Section 01:
 task_description="Generate Section 01: π(x) as Fundamental Counting System - 13 pieces"
 task_prompt="
-Create 13 pieces for Section 01 in CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/
+Create 13 pieces for Section 01 in CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/pieces/
 using GitHub_handler.sh. Each piece ~300 lines, ~5,800 words.
 Topics: Axiomatic foundation, UV cutoff, proper-time lattice, electron as metric witness,
 conformal factor, metric tensor, volume element, operational protocol, causal density=α,
@@ -236,7 +236,7 @@ If `git push origin main` fails, try in order:
 ```bash
 # After each major milestone
 SESSION_LOG="csmlogs/aug26/session_$(date -u +%Y%m%d_%H%M%S).md"
-cp CSM_CONSOLIDATED_WIP/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md "$SESSION_LOG"
+cp CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/logs/ProjectLogs.md "$SESSION_LOG"
 git add "$SESSION_LOG"
 git commit -m "Add session log: $(basename $SESSION_LOG)"
 git push origin main

@@ -5,7 +5,7 @@
 # This script loads all context, pointers, and next steps for any
 # agent session to resume work exactly where we left off.
 #
-# Usage: bash CSMWip/09_Project_Tracking/SubParticleReturnToWork.sh
+# Usage: bash CSMWip/SubParticleReturnToWork.sh
 # ================================================================
 
 set -euo pipefail
@@ -29,7 +29,6 @@ echo "   --------------------"
 
 CONTEXT_FILES=(
     "CSMWip/09_Project_Tracking/TODO_HTML_INTEGRATION.md"
-    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/README.md"
     "CSMWip/09_Project_Tracking/INSTRUCTIONS.md"
     "CSMWip/09_Project_Tracking/session-v5-prime-electron-build.md"
     "CSMWip/09_Project_Tracking/session-full-creation-log.md"
@@ -45,10 +44,10 @@ for f in "${CONTEXT_FILES[@]}"; do
 done
 
 # -----------------------------------------------------------------
-# 2. LOG FILES — All session logs in CSMLogs/August26/
+# 2. LOG FILES — All session logs in CSMWip/09_Project_Tracking/
 # -----------------------------------------------------------------
 echo ""
-echo "📋 2. SESSION LOGS (CSMLogs/August26/)"
+echo "📋 2. SESSION LOGS (CSMWip/09_Project_Tracking/)"
 echo "   --------------------"
 
 LOG_FILES=(
@@ -62,10 +61,10 @@ LOG_FILES=(
 )
 
 for f in "${LOG_FILES[@]}"; do
-    if [[ -f "CSMLogs/August26/$f" ]]; then
-        echo "   ✅ CSMLogs/August26/$f"
+    if [[ -f "CSMWip/09_Project_Tracking/$f" ]]; then
+        echo "   ✅ CSMWip/09_Project_Tracking/$f"
     else
-        echo "   ❌ MISSING: CSMLogs/August26/$f"
+        echo "   ❌ MISSING: CSMWip/09_Project_Tracking/$f"
     fi
 done
 
@@ -77,11 +76,10 @@ echo "📋 3. WORK IN PROGRESS — HTML Integration (Phases 3-7)"
 echo "   --------------------"
 
 WIP_PATHS=(
-    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtom_WIP/README.md"
+    "CSMWip/08_DeepResearch_SubParticles/SubParticlesV4/LOL_v4_staging/"
     "CSMWip/09_Project_Tracking/INSTRUCTIONS.md"
-    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4/LOL_v4_staging/"
-    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4/TGPU004.htm"
-    "CSMWip/SubAtomicPrimeElectronCaldera/SubAtomic.Edu/SubParticlesV4/index_v4.html"
+    "CSMWip/08_DeepResearch_SubParticles/SubParticlesV4/TGPU004.htm"
+    "CSMWip/08_DeepResearch_SubParticles/SubParticlesV4/index_v4.html"
 )
 
 for p in "${WIP_PATHS[@]}"; do
