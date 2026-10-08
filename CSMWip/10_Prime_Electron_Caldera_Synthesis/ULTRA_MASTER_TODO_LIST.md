@@ -440,3 +440,69 @@ cat CSM_WORK_IN_PROGRESS/SubAtom_WIP/ULTRA_MASTER_TODO_LIST.md
 cat CSMLogs/august26/RESUME_SESSION_A4-23_GRAVITATIONAL_COUPLING_GAPS_20260825.md
 # Continue with Article 4: A4-24 Black_Hole_Entropy_Gaps.md
 ```
+
+---
+
+## PROJECT 10: CALDERA PRIME PI ELECTRON INCORPORATION (5 Phases, 5 Weeks)
+
+**Mission:** Incorporate complete Caldera Prime Pi Electron framework (13 sections, 156 pieces, 12 heuristic intros) into SubAtomic Prime Electron Canonical compendium, creating unified publication-ready synthesis.
+
+### Phase 1: Document Inventory & Mapping (Week 1)
+- [ ] Inventory all 360+ Canonical articles across 9 domains (A–I)
+- [ ] Map 13 Caldera sections to Canonical targets per RUNNER_INCORPORATION_GUIDE
+- [ ] Verify all 12 section masters + 48 intros + 156 pieces present
+- [ ] Verify 4 compilation documents in framework/compilations/
+- [ ] Create section-to-article mapping matrix
+- [ ] Document gaps in Canonical coverage
+
+### Phase 2: Update Flagship/Foundation/Methodology (Week 2)
+- [ ] FLAGSHIP_PrimeElectron_Framework.md — Add: 3-tier axiomatic hierarchy (A0, A1, A2), 27 parameters derived, meta-depth D=ω+3
+- [ ] FLAGSHIP_PrimeElectron_Framework_v2.md — Add: SFF dip-ramp-plateau, JT gravity dual, Page curve from arithmetic
+- [ ] FOUNDATION_Prime_Electron_One_Electron_Universe.md — Add: Participatory metric witness, causal density = α, UV cutoff from commutator norm
+- [ ] METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md — Add: 4-step protocol (Order→Fluctuate→Propagate→Order Again), RG blocking on gaps, computational protocols
+- [ ] ACTION_PLAN.md — Mark Caldera sections complete, add publication pipeline
+- [ ] ULTRA_MASTER_TODO_LIST.md — Integrate 13-section tracker
+
+### Phase 3: Integrate Caldera Sections into Article Structure (Week 3)
+- [ ] For each of 12 Caldera sections, create/update Canonical article:
+  - `full/` — Section master + COMBINED_INTRO prepended
+  - `pieces/` — 13 piece files from Caldera_Prime_Pi_Electron/pieces/
+  - `zip/` — Zipped pieces archive
+  - `intros/` — 4 intro files (williams, keymaker, elsegundo, combined)
+  - `README.md` — Article documentation
+- [ ] Section 11 → Creates new `S_Article01_Synthesis/`
+- [ ] Section 12 → Creates new `R_Article01_MathCompendium/`
+- [ ] Verify all 12 sections integrated (48 intros, 156 pieces, 12 zips)
+
+### Phase 4: Create Cross-Reference Index (Week 4)
+- [ ] Caldera section → Canonical article(s) mapping
+- [ ] Piece → Source equations/theorems mapping
+- [ ] Intro heuristic → Empirical lock/key/turn mapping
+- [ ] Compilation → Use case (publication, read-aloud, reference) mapping
+- [ ] Generate `CROSS_REFERENCE_INDEX.md`
+- [ ] Update `REPOSITORY_ORGANIZATION_MANIFEST.md`
+- [ ] Update `DATA_ACCESS_PrimeBookOne_Tile_Index.md`
+
+### Phase 5: Publication Pipeline (Week 5)
+- [ ] Unified Compendium — All 360+ Canonical + 13 Caldera = ~373 articles
+- [ ] Caldera Synthesis Volume — 13 sections with intros (19,372 lines) → LaTeX/PDF/ArXiv
+- [ ] Read-Aloud Volumes — 4 versions (full, intros-only, sections-only, clean) → TTS
+- [ ] Flagship Papers — 3 updated flagship documents → LaTeX/PDF
+- [ ] Methodology Appendix — Computational protocols + algorithms → Jupyter/Julia notebooks
+- [ ] Computational Compendium — Reproducibility package
+
+---
+
+## VERIFICATION CHECKPOINTS (Project 10)
+- [ ] All 12 section files have COMBINED_INTRO prepended
+- [ ] All 48 intro files present (williams/keymaker/elsegundo/combined × 12)
+- [ ] All 156 piece files present and zipped
+- [ ] Master integration document (19,372 lines) present
+- [ ] 4 compilation documents in framework/compilations/
+- [ ] Flagship docs reference Caldera results (3-tier axioms, 27 params, SFF, etc.)
+- [ ] Cross-reference index complete
+- [ ] Publication outputs generated
+
+---
+
+*End of Ultra Master Todo List — Updated for Project 10 Caldera Incorporation*

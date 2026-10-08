@@ -4,7 +4,7 @@
 **Target:** CSMWip/02_Caldera_Prime_Pi_Electron/Caldera_Prime_Pi_Electron/  
 **Source:** published-merge branch (CSMWip/SubAtomicPrimeElectronCaldera/) + Prime Electron Worldline PDF  
 **Word Target:** ~76K+ words per section × 13 sections = ~988K words total  
-**Piece Target:** ~300 lines per piece, 13+ pieces per section  
+**Piece Target:** ~300 lines per piece, 13+ pieces per section
 
 ---
 
@@ -14,12 +14,12 @@
 - [x] Read GitHub_handler.sh for piece management protocol
 - [x] Inventory published-merge branch Caldera folders (7,313+ files across 15 domains)
 - [x] Read Prime Electron Worldline PDF (188-page technical document)
-- [ ] Create ResumeSession.md with startup instructions
-- [ ] Create ProjectLogs.md for continuous work tracking
+- [x] Create ResumeSession.md with startup instructions
+- [x] Create ProjectLogs.md for continuous work tracking
 
 ---
 
-## PHASE 1: DOCUMENT ARCHITECTURE (13 Sections)
+## PHASE 1: DOCUMENT ARCHITECTURE (13 Sections) ✅ COMPLETE
 
 ## PHASE 1: DOCUMENT ARCHITECTURE (13 Sections)
 
@@ -255,6 +255,59 @@
 - [x] Combined intros prepended to all 12 section master files
 - [x] Master integration document updated with intros
 **Status:** ✅ Complete (108/108 paragraphs)
+
+---
+
+## PROJECT 10: CALDERA INCORPORATION INTO CANONICAL (5 Phases)
+
+### Project 10 Phase 1: Document Inventory & Mapping (Week 1)
+**Target:** Map each Caldera section to existing Canonical articles
+- [ ] Inventory all 360+ Canonical articles across 9 domains (A–I)
+- [ ] Map 13 Caldera sections to Canonical targets per RUNNER_INCORPORATION_GUIDE
+- [ ] Verify all 12 section masters + 48 intros + 156 pieces present
+- [ ] Verify 4 compilation documents in framework/compilations/
+- [ ] Create section-to-article mapping matrix
+- [ ] Document gaps in Canonical coverage
+
+### Project 10 Phase 2: Update Flagship/Foundation/Methodology (Week 2)
+**Target:** Revise 3 core documents with Caldera results
+- [ ] FLAGSHIP_PrimeElectron_Framework.md — Add: 3-tier axiomatic hierarchy (A0, A1, A2), 27 parameters derived, meta-depth D=ω+3
+- [ ] FLAGSHIP_PrimeElectron_Framework_v2.md — Add: SFF dip-ramp-plateau, JT gravity dual, Page curve from arithmetic
+- [ ] FOUNDATION_Prime_Electron_One_Electron_Universe.md — Add: Participatory metric witness, causal density = α, UV cutoff from commutator norm
+- [ ] METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md — Add: 4-step protocol (Order→Fluctuate→Propagate→Order Again), RG blocking on gaps, computational protocols
+- [ ] ACTION_PLAN.md — Mark Caldera sections complete, add publication pipeline
+- [ ] ULTRA_MASTER_TODO_LIST.md — Integrate 13-section tracker
+
+### Project 10 Phase 3: Integrate Caldera Sections into Article Structure (Week 3)
+**Target:** Populate Canonical article directories with Caldera content
+- [ ] For each of 12 Caldera sections, create/update Canonical article:
+  - `full/` — Section master + COMBINED_INTRO prepended
+  - `pieces/` — 13 piece files from Caldera_Prime_Pi_Electron/pieces/
+  - `zip/` — Zipped pieces archive
+  - `intros/` — 4 intro files (williams, keymaker, elsegundo, combined)
+  - `README.md` — Article documentation
+- [ ] Section 11 → Creates new `S_Article01_Synthesis/`
+- [ ] Section 12 → Creates new `R_Article01_MathCompendium/`
+- [ ] Verify all 12 sections integrated (48 intros, 156 pieces, 12 zips)
+
+### Project 10 Phase 4: Create Cross-Reference Index (Week 4)
+**Target:** Generate master index mapping
+- [ ] Caldera section → Canonical article(s) mapping
+- [ ] Piece → Source equations/theorems mapping
+- [ ] Intro heuristic → Empirical lock/key/turn mapping
+- [ ] Compilation → Use case (publication, read-aloud, reference) mapping
+- [ ] Generate `CROSS_REFERENCE_INDEX.md`
+- [ ] Update `REPOSITORY_ORGANIZATION_MANIFEST.md`
+- [ ] Update `DATA_ACCESS_PrimeBookOne_Tile_Index.md`
+
+### Project 10 Phase 5: Publication Pipeline (Week 5)
+**Target:** Generate 5 publication outputs
+- [ ] Unified Compendium — All 360+ Canonical + 13 Caldera = ~373 articles
+- [ ] Caldera Synthesis Volume — 13 sections with intros (19,372 lines) → LaTeX/PDF/ArXiv
+- [ ] Read-Aloud Volumes — 4 versions (full, intros-only, sections-only, clean) → TTS
+- [ ] Flagship Papers — 3 updated flagship documents → LaTeX/PDF
+- [ ] Methodology Appendix — Computational protocols + algorithms → Jupyter/Julia notebooks
+- [ ] Computational Compendium — Reproducibility package
 
 ---
 

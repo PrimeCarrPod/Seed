@@ -406,3 +406,137 @@ PART 10: IMMEDIATE ACTIONS (DO TODAY)
 ================================================================================
 END OF ACTION PLAN
 ================================================================================
+
+---
+
+## PROJECT 10: CALDERA PRIME PI ELECTRON INCORPORATION — PUBLICATION PIPELINE
+**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Date:** 2026-10-08  
+**Mission:** Incorporate Caldera framework into Canonical compendium, generate unified publication outputs
+
+---
+
+### PHASE 1: DOCUMENT INVENTORY & MAPPING (Week 1)
+- [ ] Inventory all 360+ Canonical articles across 9 domains (A–I)
+- [ ] Map 13 Caldera sections to Canonical targets per RUNNER_INCORPORATION_GUIDE
+- [ ] Verify all Caldera assets (12 sections, 48 intros, 156 pieces, 4 compilations)
+- [ ] Create section-to-article mapping matrix
+- [ ] Document gaps in Canonical coverage
+
+### PHASE 2: UPDATE FLAGSHIP/FOUNDATION/METHODOLOGY (Week 2)
+- [ ] FLAGSHIP_PrimeElectron_Framework.md — Add: 3-tier axiomatic hierarchy (A0, A1, A2), 27 parameters, D=ω+3
+- [ ] FLAGSHIP_PrimeElectron_Framework_v2.md — Add: SFF dip-ramp-plateau, JT gravity dual, Page curve
+- [ ] FOUNDATION_Prime_Electron_One_Electron_Universe.md — Add: Participatory metric witness, causal density = α, UV cutoff from commutator norm
+- [ ] METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md — Add: 4-step protocol, RG blocking, computational protocols
+- [ ] ACTION_PLAN.md — Mark Caldera sections complete, add publication pipeline
+- [ ] ULTRA_MASTER_TODO_LIST.md — Integrate 13-section tracker
+
+### PHASE 3: INTEGRATE CALDERA SECTIONS (Week 3)
+- [ ] For each of 12 Caldera sections, populate Canonical article:
+  - `full/` — Section master + COMBINED_INTRO prepended
+  - `pieces/` — 13 piece files from Caldera_Prime_Pi_Electron/pieces/
+  - `zip/` — Zipped pieces archive
+  - `intros/` — 4 intro files (williams, keymaker, elsegundo, combined)
+  - `README.md` — Article documentation
+- [ ] Section 11 → Creates new `S_Article01_Synthesis/`
+- [ ] Section 12 → Creates new `R_Article01_MathCompendium/`
+- [ ] Verify all 12 sections integrated (48 intros, 156 pieces, 12 zips)
+
+### PHASE 4: CREATE CROSS-REFERENCE INDEX (Week 4)
+- [ ] Caldera section → Canonical article(s) mapping
+- [ ] Piece → Source equations/theorems mapping
+- [ ] Intro heuristic → Empirical lock/key/turn mapping
+- [ ] Compilation → Use case (publication, read-aloud, reference) mapping
+- [ ] Generate `CROSS_REFERENCE_INDEX.md`
+- [ ] Update `REPOSITORY_ORGANIZATION_MANIFEST.md`
+- [ ] Update `DATA_ACCESS_PrimeBookOne_Tile_Index.md`
+
+### PHASE 5: PUBLICATION PIPELINE (Week 5)
+**Outputs to Generate:**
+
+1. **Unified Compendium** — All 360+ Canonical articles + 13 Caldera sections = ~373 articles
+   - Format: Multi-volume reference
+   - Audience: Complete reference
+
+2. **Caldera Synthesis Volume** — 13 sections with intros (19,372 lines)
+   - Format: LaTeX → PDF/ArXiv
+   - Audience: Theoretical physics community
+
+3. **Read-Aloud Volumes** — 4 versions
+   - Full (sections + intros)
+   - Intros-only (108 paragraphs)
+   - Sections-only (12 masters)
+   - Clean (no intros, no heuristics)
+   - Format: Plain text → TTS
+   - Audience: Accessibility, outreach
+
+4. **Flagship Papers** — 3 updated flagship documents
+   - FLAGSHIP_PrimeElectron_Framework (v3 with Caldera)
+   - FLAGSHIP_PrimeElectron_Framework_v2 (with SFF/JT gravity)
+   - FOUNDATION_Prime_Electron_One_Electron_Universe (with participatory witness)
+   - Format: LaTeX → PDF
+   - Audience: High-energy theory, quantum gravity
+
+5. **Methodology Appendix** — Computational protocols + algorithms
+   - Format: Jupyter/Julia notebooks
+   - Audience: Reproducibility, verification
+
+6. **Computational Compendium** — Reproducibility package
+   - All algorithms from Section 12
+   - Cross-validation scripts
+   - Format: Executable notebooks
+
+---
+
+### PUBLICATION TARGETS (Updated)
+
+| Output | Format | Audience | Status |
+|--------|--------|----------|--------|
+| Caldera Synthesis Volume | LaTeX → PDF/ArXiv | Theoretical physics | ⏳ Phase 5 |
+| Flagship Framework v3 | LaTeX → PDF | High-energy theory, QG | ⏳ Phase 2+5 |
+| Read-Aloud Volumes (4) | Plain text → TTS | Accessibility, outreach | ⏳ Phase 5 |
+| Computational Compendium | Jupyter/Julia | Reproducibility | ⏳ Phase 5 |
+| Unified Canonical Compendium | Multi-volume | Complete reference | ⏳ Phase 5 |
+
+---
+
+### IMMEDIATE ACTIONS FOR PROJECT 10 (DO THIS WEEK)
+
+1. **Run Phase 1 Inventory:**
+   ```bash
+   cd CSMWip/10_Prime_Electron_Caldera_Synthesis
+   ./scripts/phase1_inventory.sh
+   ```
+
+2. **Verify Caldera Completeness:**
+   ```bash
+   ls Caldera_Prime_Pi_Electron/sections/ | grep -E "(COMBINED_INTRO|_intro_)" | wc -l
+   # Expected: 48
+   ls Caldera_Prime_Pi_Electron/pieces/*.md | wc -l
+   # Expected: 156
+   ls Caldera_Prime_Pi_Electron/framework/compilations/
+   # Expected: 4 compilation docs
+   ```
+
+3. **Begin Phase 2 Flagship Updates:**
+   - Edit FLAGSHIP_PrimeElectron_Framework.md
+   - Edit FLAGSHIP_PrimeElectron_Framework_v2.md
+   - Edit FOUNDATION_Prime_Electron_One_Electron_Universe.md
+   - Edit METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md
+
+---
+
+### VERIFICATION CHECKPOINTS (Project 10 Complete)
+
+- [ ] All 12 section files have COMBINED_INTRO prepended
+- [ ] All 48 intro files present (williams/keymaker/elsegundo/combined × 12)
+- [ ] All 156 piece files present and zipped
+- [ ] Master integration document (19,372 lines) present
+- [ ] 4 compilation documents in framework/compilations/
+- [ ] Flagship docs reference Caldera results (3-tier axioms, 27 params, SFF, etc.)
+- [ ] Cross-reference index complete
+- [ ] Publication outputs generated
+
+---
+
+*End of Project 10 Action Plan Addendum*
