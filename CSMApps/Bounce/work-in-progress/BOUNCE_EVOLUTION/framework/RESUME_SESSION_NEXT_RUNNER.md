@@ -32,6 +32,9 @@ cat forensic/analysis/version_changes.csv | head -20
 nohup bash -c 'while true; do echo "$(date -u +"%Y-%m-%d %H:%M:%S UTC") | BRANCH: $(git branch --show-current 2>/dev/null || echo detached) | PIECES: $(ls pieces/*.md 2>/dev/null | wc -l) | SECTION: $(grep -A1 "Section 1[0-3]" framework/MASTER_TODO.md 2>/dev/null | head -2 | tail -1 | sed "s/.*\[x\] //")" >> logs/heartbeat.log; sleep 30; done' &
 HEARTBEAT_PID=$!
 echo "Heartbeat PID: $HEARTBEAT_PID"
+
+# 7. Start Section 10: Refinement of Existing Parts
+ARTICLE_PREFIX=article10 /workspace/app/csmpieces/05_scripts_tools/GitHub_handler.sh create-pieces 10 "Refinement_Existing_Parts_Prioritized" article10
 ```
 
 ---
