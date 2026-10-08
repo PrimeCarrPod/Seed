@@ -1,0 +1,51 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.84_bounce.html	2026-10-08 02:33:55.265034010 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.85_bounce.html	2026-10-08 02:33:55.287501468 +0000
+@@ -156,16 +156,8 @@
+ 
+ // ═══════════════════════════════════════════
+ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,_povOffset:0,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,
+-  _getSignalBars(rssi){
+-    // Convert RSSI to signal bars (0-4)
+-    // RSSI ranges: -30 to -50 (excellent), -50 to -60 (good), -60 to -70 (fair), -70 to -80 (weak), -80 to -100 (poor)
+-    if (rssi >= -50) return '▂▄▆█';       // Excellent: 4 bars
+-    if (rssi >= -60) return '▂▄▆ ';       // Good: 3 bars
+-    if (rssi >= -70) return '▂▄  ';       // Fair: 2 bars
+-    if (rssi >= -80) return '▂   ';       // Weak: 1 bar
+-    return '    ';                          // Poor: 0 bars
+-  },
+   init(){
++    var c=document.getElementById('canvas-container');
+     this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);
+     this.camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
+     this.camera.position.set(0,18,30);
+@@ -257,30 +249,6 @@
+     }else if(!this.useRealData){
+       ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+     }
+-
+-    // Update Wi-Fi scanner list in right panel
+-    var wifiList=document.getElementById('wifi-scanner-list');
+-    if(wifiList){
+-      wifiList.innerHTML='';
+-      if(this.useRealData&&this.realNodes.length>0){
+-        this.realNodes.sort(function(a,b){return a.dist-b.dist});
+-        for(var i=0;i<this.realNodes.length;i++){
+-          var n=this.realNodes[i];
+-          var zc=n.zone==='immediate'?'#FF4466':n.zone==='near'?'#FFCC00':'#4488FF';
+-          var signalBars=this._getSignalBars(n.rssi);
+-          var li=document.createElement('li');
+-          li.style.cssText='padding:4px 6px;border-bottom:1px solid rgba(255,102,0,.08);display:flex;align-items:center;gap:6px;font-size:8px;color:#e2e8f0;';
+-          li.innerHTML='<span style="color:'+zc+'">●</span>'
+-            +'<span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+n.ssid+'</span>'
+-            +'<span class="font-mono" style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span>'
+-            +'<span style="color:'+zc+';font-size:7px">'+signalBars+'</span>'
+-            +'<span class="font-mono" style="font-size:7px;color:#8888A0">'+n.dist.toFixed(1)+'m</span>';
+-          wifiList.appendChild(li);
+-        }
+-      }else{
+-        wifiList.innerHTML='<li style="color:#6b7280;padding:8px;text-align:center;font-size:8px">no networks found</li>';
+-      }
+-    }
+   },
+   onBtResult(jsonStr){
+     var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;

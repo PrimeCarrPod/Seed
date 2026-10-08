@@ -1,0 +1,65 @@
+        var zd=n.zone==='immediate'?'HOT':n.zone==='near'?'WARM':'COLD';
+        var li=document.createElement('li');li.innerHTML='<span style="color:'+zc+'">●</span> '+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span class="bctag" style="background:'+zc+'22;color:'+zc+'">'+n.dist+'m</span> <span class="bctag" style="background:'+zc+'22;color:'+zc+'">'+zd+'</span></li>';ul.appendChild(li)}
+    }else if(!this.useRealData){
+      ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+    }
+  },
+  onBtResult(jsonStr){
+    var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
+    if(!this.btNodes)this.btNodes=[];
+    var existing=null;
+    for(var i=0;i<this.btNodes.length;i++){if(this.btNodes[i].addr===r.addr){existing=this.btNodes[i];break}}
+    if(existing){existing.rssi=r.rssi;existing.dist=r.dist;existing.lastSeen=Date.now()}
+    else{
+      this.btNodes.push({name:r.name||r.addr,addr:r.addr,rssi:r.rssi,dist:r.dist,lastSeen:Date.now()});
+      // Create 3D dot
+      if(this.scene){
+        var angle=(r.addr||'AA').charCodeAt(0)*2.7+((r.addr||'A').charCodeAt(1)||0)*1.3;
+        var grp=new THREE.Group();
+        var bd=new THREE.SphereGeometry(.4,16,8);
+        var bm=new THREE.MeshBasicMaterial({color:0x4488FF,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false});
+        var dot2=new THREE.Mesh(bd,bm);
+        var ring=new THREE.Mesh(new THREE.TorusGeometry(.5,.06,8,16),new THREE.MeshBasicMaterial({color:0x88BBFF,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false}));
+        ring.rotation.x=Math.PI/2;grp.add(dot2);grp.add(ring);
+        grp.position.set(Math.cos(angle)*r.dist,0,Math.sin(angle)*r.dist);
+        this.scene.add(grp);
+        this.bt3dNodes.push({dot:dot2,ring:ring,group:grp,addr:r.addr,angle:angle,dist:r.dist,fading:true,lastSeen:Date.now()});
+      }
+    }
+    var now=Date.now();
+    for(var i=this.btNodes.length-1;i>=0;i--){if(now-this.btNodes[i].lastSeen>60000)this.btNodes.splice(i,1)}
+  },
+  onBtStatus(jsonStr){
+    var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
+    var el=document.getElementById('bt-status');
+    if(!el){
+      el=document.createElement('div');
+      el.id='bt-status';
+      el.style.cssText='font-size:9px;color:#4488FF;padding:4px;background:rgba(68,136,255,.1);border-radius:4px;margin:4px 0';
+      var btList=document.getElementById('bt-list');
+      if(btList && btList.parentNode) btList.parentNode.insertBefore(el, btList);
+    }
+    var status=r.status||'unknown';
+    var msg={'scanning':'🔵 Scanning...','bt_disabled':'🔴 Bluetooth OFF','no_le_scanner':'🔴 No LE Scanner','no_permission':'🔴 Need Permission'}[status] || status;
+    el.textContent='BT: '+msg;
+  },
+  onBtResult3D(jsonStr){
+    var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
+    if(!this.bt3dSpatial)this.bt3dSpatial={};
+    
+    // Update or create spatial device
+    if(!this.bt3dSpatial[r.addr]){
+      console.log('NEW 3D DEVICE:', r.addr, 'pos:', r.x, r.y, r.z, 'brightness:', r.brightness);
+      this.bt3dSpatial[r.addr]={addr:r.addr,name:r.name,x:0,y:0,z:0,brightness:0.3,active:true,trajectory:[],lastSeen:Date.now()};
+      // Create 3D visualization
+      if(this.scene){
+        var bd=new THREE.SphereGeometry(.5,16,8);
+        var bm=new THREE.MeshBasicMaterial({color:0x4488FF,transparent:true,opacity:r.brightness||0.3,blending:THREE.AdditiveBlending,depthWrite:false});
+        var dot=new THREE.Mesh(bd,bm);
+        // Ring for elevation indication
+        var ring=new THREE.Mesh(new THREE.TorusGeometry(.6,.04,8,16),new THREE.MeshBasicMaterial({color:0x88BBFF,transparent:true,opacity:(r.brightness||0.3)*0.6,blending:THREE.AdditiveBlending,depthWrite:false}));
+        ring.rotation.x=Math.PI/2;
+        // Elevation indicator (vertical line)
+        var lineGeo=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0,0),new THREE.Vector3(0,r.z,0)]);
+        var lineMat=new THREE.LineBasicMaterial({color:r.z>0?0x00FF88:0xFF4466,transparent:true,opacity:0.5,linewidth:2});
+        var line=new THREE.Line(lineGeo,lineMat);

@@ -1,0 +1,38 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.27_bounce.html	2026-10-08 02:33:54.170945058 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.28_bounce.html	2026-10-08 02:33:54.189702937 +0000
+@@ -337,6 +337,7 @@
+       btn.textContent='BROADCAST';btn.className='btn btn-g';
+       if(this._broadcastCycle){clearInterval(this._broadcastCycle);this._broadcastCycle=null}
+       if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
++      if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText('GPS + Broadcast · v1.0.28');
+     }
+   },
+   _doBroadcast(){
+@@ -363,6 +364,10 @@
+     document.getElementById('broadcast-status').className='text-green font-mono pulse-g';
+     document.getElementById('key-display').textContent=key;
+     if(typeof BounceBridge!=='undefined'&&BounceBridge.startBroadcast)BounceBridge.startBroadcast(code);
++    var slotLabels=['ID','TAF','HUMAN'];
++    var label=slotLabels[(this._broadcastSlot-1+3)%3];
++    var hdr='TX'+this._broadcastSlot+': '+code;
++    if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText(hdr);
+   },
+   showPlateInput(){
+     var ov=document.getElementById('plate-overlay');
+@@ -444,12 +449,12 @@
+       self.camera.position.x+=self._flyVx*dt;self.camera.position.y+=self._flyVy*dt;self.camera.position.z+=self._flyVz*dt;
+       if(t>=1){if(this._flyLoop){self._flyVx*=1.5;self._flyVy*=1.5;self._flyVz*=1.5;this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o';document.getElementById('btn-slower').style.display='none';document.getElementById('btn-faster').style.display='none'}}}
+     this.controls.update();
+-    // POV mode: chase camera behind vehicle
++    // POV mode: chase camera behind vehicle (zoomed out)
+     if(self.povMode){
+       var brr=self.myHeading*Math.PI/180;
+-      var cx=self.tardi.group.position.x-Math.sin(brr)*6;
+-      var cy=6;var cz=self.tardi.group.position.z-Math.cos(brr)*6;
+-      self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.06);
++      var cx=self.tardi.group.position.x-Math.sin(brr)*30;
++      var cy=18;var cz=self.tardi.group.position.z-Math.cos(brr)*30;
++      self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.04);
+       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
+     }
+     this.composer.render();

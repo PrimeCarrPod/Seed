@@ -1,0 +1,29 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.82_build.sh	2026-10-08 02:33:55.227966986 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.83_build.sh	2026-10-08 02:33:55.245891924 +0000
+@@ -1,21 +1,21 @@
+ #!/bin/bash
+ # ============================================================
+-# build.sh — No-Gradle APK Build for Bounce v1.0.82
+-# Wi-Fi scan window UI, Wi-Fi triangulation, EKF/Particle Filter/HMM zone classification, RTT ranging
++# build.sh — No-Gradle APK Build for Bounce v1.0.83
++# Wi-Fi scan window UI with signal strength visualization
+ # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
+ # ============================================================
+ set -e
+ 
+ PACKAGE="com.carrpod.bounce"
+ APP_NAME="Bounce"
+-VERSION_CODE=182
+-VERSION_NAME="1.0.82"
++VERSION_CODE=183
++VERSION_NAME="1.0.83"
+ COMPILE_SDK=33
+ TARGET_SDK=33
+ MIN_SDK=24
+ BUILD_TOOLS_VERSION="33.0.1"
+ 
+-PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5c7dbc6e-6f98-4432-ad3d-a23934805977/CSMApps/Bounce/v1.0.82"
++PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_5c7dbc6e-6f98-4432-ad3d-a23934805977/CSMApps/Bounce/v1.0.83"
+ SRC_DIR="$PROJECT_DIR/src/main"
+ GEN_DIR="$PROJECT_DIR/gen"
+ OBJ_DIR="$PROJECT_DIR/obj"

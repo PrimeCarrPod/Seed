@@ -1,0 +1,33 @@
+TGAPP_Item_ID,Category,Feature,Description,Priority,Estimated_Effort,Dependencies,Target_Version,Status,Architecture_Notes,Security_Considerations,Monetization_Model
+TG001,Core,TGAPP Application Shell,Standalone Android app (APK) for paid updates,P0,High,New project,1.0.0,Planned,Separate package name: com.carrpod.tgapp,Keystore management,Paid APK download
+TG002,Core,Purchase Verification,Verify user purchased TGAPP (license key),P0,Medium,TG001,1.0.0,Planned,Server-side validation or local crypto,Key generation + validation,One-time purchase
+TG003,Core,Device-Specific Keys,Keys tied to device ID / Android ID,P0,Medium,TG002,1.0.0,Planned,Android ID + package signature,Prevent key sharing,Per-device license
+TG004,Core,Key Expiry/Renewal,Subscription or time-limited keys,P1,Medium,TG003,1.0.1,Planned,Expiry timestamp in key,Recurring revenue,Subscription model
+TG005,Integration,Bounce-TGAPP Detection,Bounce checks if TGAPP installed + valid,P0,Medium,TG001-003,1.0.93,Planned,PackageManager query + intent,Prevent spoofing,Feature gate
+TG006,Integration,Premium Feature Unlock,Bounce enables features if TGAPP valid,P0,Medium,TG005,1.0.93,Planned,SharedPreferences or file flag,Secure storage,Feature gating
+TG007,Integration,Update Delivery via TGAPP,TGAPP downloads + installs Bounce updates,P0,High,TG001,1.0.93,Planned,DownloadManager + PackageInstaller,Signature verification,Bypass Play Store
+TG008,Integration,Feature List Sync,TGAPP tells Bounce which features unlocked,P0,Medium,TG005-006,1.0.93,Planned,Intent extras or shared file,Encrypted payload,Dynamic features
+TG009,Premium Features,Fleet Mesh Network,Vehicle-to-vehicle relay (P1-05),P1,High,Mesh protocol,1.0.96,Planned,Requires TGAPP valid,Enterprise feature,Fleet subscription
+TG010,Premium Features,Traffic Advisory Relay,Pass traffic through vehicle chain (FP023),P1,High,Fleet mesh,1.0.96,Planned,Requires fleet mesh,Core vision,Premium tier
+TG011,Premium Features,Weather Advisory Relay,Share weather through mesh (FP024),P1,High,Fleet mesh,1.0.96,Planned,Requires fleet mesh,Value add,Premium tier
+TG012,Premium Features,Trajectory Sharing,Fleet vehicles share paths (FP025),P1,High,Fleet mesh + BT 3D,1.0.96,Planned,Requires fleet opt-in,Safety feature,Premium tier
+TG013,Premium Features,Advanced Positioning Suite,RTT + UWB + Particle Filter learning,P1,High,FP001-003,1.0.95,Planned,Requires TGAPP,Accuracy suite,Premium tier
+TG014,Premium Features,AR Overlay (ARCore),Camera + 3D annotations (FP016),P2,High,ARCore,1.0.97+,Planned,Requires TGAPP,Immersive,Premium tier
+TG015,Premium Features,Voice Announcements,TTS hazard alerts (FP010),P1,Low,TextToSpeech,1.0.95,Planned,Requires TGAPP,Hands-free,Premium tier
+TG016,Premium Features,Export GPX/KML,Standard mapping formats (FP012),P2,Low,Trail system,1.0.94,Planned,Requires TGAPP,Data portability,Premium tier
+TG017,Premium Features,Offline Map Cache,Mapbox/OSM tiles offline (FP008),P2,Medium,Map SDK,1.0.96,Planned,Requires TGAPP,Offline use,Premium tier
+TG018,Premium Features,Night/Day Auto Theme,Auto-switch by time (FP011),P2,Low,CSS variables,1.0.94,Planned,Requires TGAPP,UX polish,Premium tier
+TG019,Architecture,Shared Library,Common code between Bounce + TGAPP,P1,Medium,Both apps,1.0.93,Planned,Java module or AAR,Reduce duplication,Maintenance
+TG020,Architecture,API Interface,Define Bounce↔TGAPP communication contract,P0,Medium,TG005,1.0.93,Planned,AIDL or Intent-based,Version compatibility,Stability
+TG021,Security,Key Obfuscation,ProGuard/R8 for TGAPP key logic,P1,Medium,TG002,1.0.0,Planned,Enable minification,Reverse engineering,Protection
+TG022,Security,Signature Verification,Verify Bounce APK signature before install,P0,High,TG007,1.0.93,Planned,Compare with known cert,Supply chain attack,Critical
+TG023,Security,Encrypted Communication,Encrypt Bounce↔TGAPP data exchange,P1,Medium,TG020,1.0.93,Planned,AES-256 + key exchange,Man-in-the-middle,Privacy
+TG024,Server,License Server (Optional),Central key validation if needed,P2,Medium,TG002,1.0.1+,Backlog,REST API + database,Scalability,Future
+TG025,Server,Analytics/Telemetry (Opt-in),Usage stats for premium features,P2,Low,TG019,1.0.1+,Backlog,Anonymous aggregated,Privacy compliance,Insights
+TG026,UI,TGAPP Home Screen,Dashboard: license status, features, updates,P0,Low,TG001,1.0.0,Planned,Material Design,Clear status,User confidence
+TG027,UI,Bounce Premium Indicators,Visual badges for premium features,P0,Low,TG006,1.0.93,Planned,UI badges + tooltips,Clear value prop,Conversion
+TG028,Distribution,Direct APK Download,TGAPP hosts Bounce APKs for download,P0,High,TG007,1.0.93,Planned,HTTPS + signature verify,No Play Store,Control
+TG029,Distribution,Delta Updates (Future),Binary patches for smaller downloads,P2,High,TG028,1.0.95+,Backlog,bsdiff or similar,Bandwidth savings,Advanced
+TG030,Business,Free Tier Bounce,Basic features free (no mesh, no premium),P0,Low,TG005,1.0.93,Planned,Core positioning + viz,Freemium model,Adoption
+TG031,Business,Fleet Pricing,Tiered: Individual / Small Fleet / Enterprise,P1,Medium,TG009-012,1.0.96,Planned,Per-vehicle or per-fleet,Market fit,Revenue
+TG032,Business,Referral Program,Free month for referring fleet managers,P2,Low,TG031,1.0.96+,Backlog,Viral growth,Tracking,Growth

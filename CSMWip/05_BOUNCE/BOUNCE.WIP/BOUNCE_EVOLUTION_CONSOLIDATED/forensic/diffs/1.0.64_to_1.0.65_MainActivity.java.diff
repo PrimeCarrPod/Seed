@@ -1,0 +1,38 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.64_MainActivity.java	2026-10-08 02:33:54.895713681 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.65_MainActivity.java	2026-10-08 02:33:54.914958101 +0000
+@@ -170,10 +170,22 @@
+         bleScanner = bluetoothAdapter.getBluetoothLeScanner();
+         if (bleScanner == null) return;
+         btScanning = true;
+-        ScanSettings settings = new ScanSettings.Builder()
+-            .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
+-            .build();
+-        bleScanner.startScan(null, settings, btCallback);
++        doBtScan();
++        // Restart scan every 10s to keep it alive
++        btScanHandler.postDelayed(new Runnable() { public void run() {
++            if (btScanning) { doBtScan(); btScanHandler.postDelayed(this, 10000); }
++        }}, 10000);
++    }
++
++    private Handler btScanHandler = new Handler(Looper.getMainLooper());
++
++    private void doBtScan() {
++        if (bleScanner == null || !btScanning) return;
++        try {
++            ScanSettings settings = new ScanSettings.Builder().setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY).build();
++            bleScanner.stopScan(btCallback);
++            bleScanner.startScan(null, settings, btCallback);
++        } catch (Exception ignored) {}
+     }
+ 
+     private final ScanCallback btCallback = new ScanCallback() {
+@@ -685,6 +697,8 @@
+         try { unregisterReceiver(wifiScanReceiver); } catch (Exception ignored) {}
+         if (broadcasting) stopP2pBroadcast();
+         if (btScanning && bleScanner != null) {
++            btScanning = false;
++            btScanHandler.removeCallbacksAndMessages(null);
+             try { bleScanner.stopScan(btCallback); } catch (Exception ignored) {}
+         }
+     }

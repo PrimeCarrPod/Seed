@@ -1,0 +1,130 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.47_MainActivity.java	2026-10-08 02:33:54.566288272 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.48_MainActivity.java	2026-10-08 02:33:54.586807415 +0000
+@@ -2,6 +2,11 @@
+ 
+ import android.Manifest;
+ import android.app.Activity;
++import android.bluetooth.BluetoothAdapter;
++import android.bluetooth.BluetoothDevice;
++import android.bluetooth.le.BluetoothLeScanner;
++import android.bluetooth.le.ScanCallback;
++import android.bluetooth.le.ScanSettings;
+ import android.content.BroadcastReceiver;
+ import android.content.Context;
+ import android.content.Intent;
+@@ -56,6 +61,9 @@
+     private WifiP2pManager.Channel p2pChannel;
+     private LocationManager locationManager;
+     private SensorManager sensorManager;
++    private BluetoothAdapter bluetoothAdapter;
++    private BluetoothLeScanner bleScanner;
++    private boolean btScanning = false;
+     private final float[] accelData = new float[3];
+     private final float[] magnetData = new float[3];
+     private boolean hasAccel = false, hasMagnet = false;
+@@ -110,15 +118,18 @@
+             boolean needLoc = checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED;
+             boolean needWifi = Build.VERSION.SDK_INT >= 33 &&
+                 checkSelfPermission(Manifest.permission.NEARBY_WIFI_DEVICES) != PackageManager.PERMISSION_GRANTED;
++            boolean needBt = Build.VERSION.SDK_INT >= 31 &&
++                checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED;
+ 
+-            if (needLoc || needWifi) {
++            if (needLoc || needWifi || needBt) {
+                 java.util.ArrayList<String> perms = new java.util.ArrayList<>();
+                 if (needLoc) { perms.add(Manifest.permission.ACCESS_FINE_LOCATION); perms.add(Manifest.permission.ACCESS_COARSE_LOCATION); }
+                 if (needWifi) perms.add(Manifest.permission.NEARBY_WIFI_DEVICES);
++                if (needBt) { perms.add(Manifest.permission.BLUETOOTH_SCAN); perms.add(Manifest.permission.BLUETOOTH_CONNECT); }
+ 
+                 new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                     requestPermissions(perms.toArray(new String[0]), PERM_REQ);
+-                    Toast.makeText(MainActivity.this, "Grant permissions for scanning and GPS", Toast.LENGTH_LONG).show();
++                    Toast.makeText(MainActivity.this, "Grant permissions for scanning, GPS, and Bluetooth", Toast.LENGTH_LONG).show();
+                 }, 500);
+                 return;
+             }
+@@ -141,8 +152,41 @@
+         startWifiScanning();
+         startGpsTracking();
+         startSensors();
++        startBtScanning();
+     }
+ 
++    private void startBtScanning() {
++        if (Build.VERSION.SDK_INT >= 31) {
++            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) return;
++        }
++        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
++        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) return;
++        bleScanner = bluetoothAdapter.getBluetoothLeScanner();
++        if (bleScanner == null) return;
++        btScanning = true;
++        ScanSettings settings = new ScanSettings.Builder()
++            .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
++            .build();
++        bleScanner.startScan(null, settings, btCallback);
++    }
++
++    private final ScanCallback btCallback = new ScanCallback() {
++        public void onScanResult(int callbackType, android.bluetooth.le.ScanResult result) {
++            if (result == null || webView == null) return;
++            BluetoothDevice dev = result.getDevice();
++            int rssi = result.getRssi();
++            float dist = (float) Math.pow(10, (-40 - rssi) / 20.0);
++            webView.post(() -> {
++                String json = "{\"name\":\"" + escapeJson(dev.getName()) + "\",\"addr\":\"" + dev.getAddress()
++                    + "\",\"rssi\":" + rssi + ",\"dist\":" + String.format("%.1f", dist) + "}";
++                injectJs("Bounce.onBtResult(" + json + ")");
++            });
++        }
++        public void onScanFailed(int errorCode) {
++            injectJs("Bounce.onBtStatus({status:'failed',code:" + errorCode + "})");
++        }
++    };
++
+     private void startSensors() {
+         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+         if (sensorManager == null) return;
+@@ -464,7 +508,7 @@
+         public void onReceive(Context context, Intent intent) {
+             boolean success = intent.getBooleanExtra(WifiManager.EXTRA_RESULTS_UPDATED, false);
+             if (!success) return;
+-            List<ScanResult> results = wifiManager.getScanResults();
++            List<android.net.wifi.ScanResult> results = wifiManager.getScanResults();
+             if (results == null || results.isEmpty()) return;
+             long elapsed = System.currentTimeMillis() - lastScanTime;
+             lastScanTime = System.currentTimeMillis();
+@@ -475,7 +519,7 @@
+     private void pushScanResults() {
+         if (wifiManager == null || webView == null) return;
+         try {
+-            List<ScanResult> results = wifiManager.getScanResults();
++            List<android.net.wifi.ScanResult> results = wifiManager.getScanResults();
+             if (results == null || results.isEmpty()) {
+                 // No results yet — tell JS we're still scanning
+                 injectJs("Bounce.onScanStatus({status:'empty',msg:'no networks found'})");
+@@ -489,12 +533,12 @@
+         }
+     }
+ 
+-    private void sendScanResultsToJs(List<ScanResult> results, long elapsed) {
++    private void sendScanResultsToJs(List<android.net.wifi.ScanResult> results, long elapsed) {
+         scanCount++;
+         long now = System.currentTimeMillis();
+         StringBuilder json = new StringBuilder("[");
+         boolean first = true;
+-        for (ScanResult r : results) {
++        for (android.net.wifi.ScanResult r : results) {
+             if (!first) json.append(","); first = false;
+             String ssid = escapeJson(r.SSID);
+             String bssid = r.BSSID;
+@@ -633,6 +677,9 @@
+         scanHandler.removeCallbacksAndMessages(null);
+         try { unregisterReceiver(wifiScanReceiver); } catch (Exception ignored) {}
+         if (broadcasting) stopP2pBroadcast();
++        if (btScanning && bleScanner != null) {
++            try { bleScanner.stopScan(btCallback); } catch (Exception ignored) {}
++        }
+     }
+ 
+     public class JsBridge {

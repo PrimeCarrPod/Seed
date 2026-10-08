@@ -1,0 +1,114 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.14_MainActivity.java	2026-10-08 02:33:53.906110292 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.15_MainActivity.java	2026-10-08 02:33:53.927359080 +0000
+@@ -14,6 +14,7 @@
+ import android.location.LocationManager;
+ import android.net.wifi.ScanResult;
+ import android.net.wifi.WifiManager;
++import android.net.wifi.p2p.WifiP2pConfig;
+ import android.net.wifi.p2p.WifiP2pManager;
+ import android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceInfo;
+ import android.os.Build;
+@@ -133,43 +134,73 @@
+             return;
+         }
+ 
+-        // Truncate to fit SSID limits (DIRECT-XX-NAME = max 32 chars, ~22 for name)
+-        final String shortName = ssidCode.length() > 20 ? ssidCode.substring(0, 20) : ssidCode;
++        // Truncate to fit: DIRECT- = 7, xy = 2, max SSID = 32 → 23 chars left
++        final String shortName = ssidCode.length() > 21 ? ssidCode.substring(0, 21) : ssidCode;
+ 
+-        // Step 1: Set Wi-Fi Direct device name via reflection
++        // API 29+: Use WifiP2pConfig.Builder for autonomous Group Owner with custom SSID
++        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
++            String networkName = "DIRECT-TA" + shortName;
++            try {
++                WifiP2pConfig config = new WifiP2pConfig.Builder()
++                    .setNetworkName(networkName)
++                    .setPassphrase("Bounce-2026")
++                    .build();
++                p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
++                    public void onSuccess() {
++                        broadcasting = true;
++                        injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + networkName + "',method:'P2pConfig-Builder'})");
++                        Toast.makeText(MainActivity.this, "SSID: " + networkName, Toast.LENGTH_LONG).show();
++                    }
++                    public void onFailure(int r) {
++                        // Fallback: legacy createGroup
++                        doLegacyCreateGroup(shortName, ssidCode);
++                    }
++                });
++                return;
++            } catch (Exception e) {
++                doLegacyCreateGroup(shortName, ssidCode);
++                return;
++            }
++        }
++
++        // Pre-Q: Use legacy reflection + createGroup
++        doLegacyCreateGroup(shortName, ssidCode);
++    }
++
++    private void doLegacyCreateGroup(String shortName, String fullCode) {
+         try {
+             java.lang.reflect.Method setDev = WifiP2pManager.class.getMethod("setDeviceName",
+                 WifiP2pManager.Channel.class, String.class, WifiP2pManager.ActionListener.class);
+             setDev.invoke(p2pManager, p2pChannel, shortName, new WifiP2pManager.ActionListener() {
+                 public void onSuccess() {
+-                    // Step 2: Now create group — SSID will use our custom name
+                     new Handler(Looper.getMainLooper()).postDelayed(() -> {
+-                        doCreateGroup(ssidCode, shortName);
++                        p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
++                            public void onSuccess() {
++                                broadcasting = true;
++                                injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + shortName + "',method:'Legacy-P2P'})");
++                                Toast.makeText(MainActivity.this, "DIRECT-*-" + shortName, Toast.LENGTH_LONG).show();
++                            }
++                            public void onFailure(int reason) {
++                                startBonjourBroadcast(fullCode);
++                            }
++                        });
+                     }, 800);
+                 }
+                 public void onFailure(int r) {
+-                    // Fallback: try createGroup anyway, then Bonjour
+-                    doCreateGroup(ssidCode, shortName);
++                    p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
++                        public void onSuccess() {
++                            broadcasting = true;
++                            injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + shortName + "',method:'P2P-Group'})");
++                        }
++                        public void onFailure(int r2) { startBonjourBroadcast(fullCode); }
++                    });
+                 }
+             });
+         } catch (Exception e) {
+-            doCreateGroup(ssidCode, shortName);
++            startBonjourBroadcast(fullCode);
+         }
+     }
+ 
+-    private void doCreateGroup(String fullCode, String shortName) {
+-        p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
+-            public void onSuccess() {
+-                broadcasting = true;
+-                injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + shortName + "',method:'P2P-Group'})");
+-                Toast.makeText(MainActivity.this, "SSID: DIRECT-*-" + shortName, Toast.LENGTH_LONG).show();
+-            }
+-            public void onFailure(int reason) {
+-                startBonjourBroadcast(fullCode);
+-            }
+-        });
+-    }
+-
+     private void startBonjourBroadcast(String ssidCode) {
+         p2pManager.clearLocalServices(p2pChannel, new WifiP2pManager.ActionListener() {
+             public void onSuccess() {} public void onFailure(int r) {}
+@@ -368,7 +399,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Custom SSID Group · v1.0.14");
++        tag.setText("WifiP2pConfig SSID · v1.0.15");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);

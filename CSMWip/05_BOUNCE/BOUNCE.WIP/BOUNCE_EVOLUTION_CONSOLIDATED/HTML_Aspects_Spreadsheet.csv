@@ -1,0 +1,28 @@
+HTML_Component,First_Version,Last_Version,Lines_Growth,Description,ThreeJS_Module,Connects_To_Android_Via,Performance_Notes,Worked_Well,Issues_Encountered,Solution
+Three.js Core (three.min.js),1.0.0,1.0.91,Local asset,Core 3D engine,r128 embedded locally,WebView JS context,~200KB,Stable,None,Use local copy not CDN
+OrbitControls,1.0.0,1.0.91,Bundled,Camera controls (rotate/zoom/pan/auto-spin),OrbitControls.js,JS bridge for camera state,Lightweight,Auto-rotate damping works well,None,
+EffectComposer Pipeline,1.0.50,1.0.91,Post-processing chain,RenderPass → UnrealBloomPass → ShaderPass,EffectComposer.js,JS bridge for bloom params,GPU intensive on old devices,Bloom gives HDR glow,Mobile performance,Reduce bloom strength on low-end
+UnrealBloomPass,1.0.50,1.0.91,HDR glow effect,LuminosityHighPassShader + CopyShader,UnrealBloomPass.js,JS bridge for strength/radius/threshold,Strength 1.0 radius 0.4 threshold 0.8,Beautiful glow,Mobile GPU limits,Configurable via Android
+ShaderPass (Custom),1.0.50,1.0.91,Custom post-processing,ACES tone mapping (commented),ShaderPass.js,JS bridge,Experimental,ACES looks better,Not in production,Keep commented for now
+Tardigrade Sphere (Vehicle Avatar),1.0.0,1.0.91,Core 3D object,2-lobe mesh + wireframe cage + torus ring + bearing arrow,MainActivity→JS: vehicle state,~500 triangles,Iconic design,Complex geometry,Simplified over time
+Vehicle Beacons,1.0.20,1.0.91,Dynamic dots,SphereGeometry(0.5) + TorusGeometry(0.65) + CanvasTexture labels,MainActivity→JS: beacon array,Spring physics (repulsion + home attraction + damping 0.88),Smooth animation,Physics tuning,Damping 0.88 stable
+Beacon Physics Engine,1.0.20,1.0.91,Custom JS physics,Velocity + spring forces + repulsion + damping,JS internal,60fps on most devices,Natural movement,Parameter sensitivity,Damping 0.88 optimal
+Static Node Field (Wi-Fi APs),1.0.30,1.0.91,Purple dots,Purple additive blending spheres,MainActivity→JS: AP positions,~100 nodes max,Real AP positions,Position accuracy,Trilateration refinement
+Grid Floor + Compass Rose,1.0.0,1.0.91,Reference grid,40x40 LineBasicMaterial + N/S/E/W colored markers,Static,Minimal cost,Clear orientation,None,
+Trail Line (CatmullRomCurve3),1.0.62,1.0.91,Smooth GPS trail,Smooth spline, 2000pt cap, GPU-safe disposal,MainActivity→JS: trail points,Rebuilt every 5 frames,GPU-safe disposal critical,Memory leaks before v1.0.54,geometry.dispose() + material.dispose()
+Bluetooth 3D Spatial Nodes,1.0.86,1.0.91,BT devices in 3D,Position from orientation + elevation lines + brightness,MainActivity→JS: btTrajectories,50 active/100 global points,Theory mode for ghost paths,Brightness decay 0.98,Re-energize 1.5x on signal
+Camera Modes (Orbit/FLY/POV),1.0.8,1.0.91,Three camera modes,OrbitControls + Spring camera tour + Chase camera,JS bridge for mode switch,FLY mode generates waypoints from all nodes,POV offset adjustable ±10,FLY waypoint generation,CatmullRom waypoints
+HUD Tab-Tuck Panels,1.0.0,1.0.91,CSS transform panels,Left: BEACONS/SCAN/BT | Right: FORGE/Controls/Legend/WiFi,CSS transform 0.4s cubic-bezier,JS bridge for panel data,Smooth animation,Touch targets small,Increased panel width to 320px
+Control Buttons,1.0.0,1.0.91,Action buttons,+VEHICLE +FLEET FLY SPIN SCATTER BROADCAST TRAIL SAVE,JS→Android: @JavascriptInterface,Direct method calls,Responsive,None,
+Legend Panel,1.0.64,1.0.91,Color guide + FAA METAR + Wind format,Static HTML/CSS,JS bridge for visibility,Reference info,Complete codes,None,
+Wi-Fi Scanner Panel,1.0.38,1.0.91,Real-time AP list,Live zone classification (immediate/near/far),MainActivity→JS: AP list,Updates every scan,Accurate zones,None,
+Broadcast Status Bar,1.0.20,1.0.91,Shows current TX SSID,4-slot rotating display,MainActivity→JS: broadcastStatus,Updates every slot,Clear feedback,None,
+Update Notification Panel,1.0.91,1.0.91,Version check UI,CHECK UPDATE button + version display,MainActivity→JS: updateAvailable,Manual trigger,User control,Auto-check removed in v1.0.93,
+Chart.js Integration,1.0.86,1.0.91,Metrics charts,Action/Benevolence/Coherence/Glueball energy,Chart.js local asset,JS bridge for data,Lightweight,None,Local copy
+GLSL Shaders,1.0.50,1.0.91,Custom shaders,LuminosityHighPassShader + CopyShader + custom,Embedded in HTML,JS bridge for uniforms,Mobile compatible,Precision issues,highp for mobile
+CanvasTexture Labels,1.0.20,1.0.91,Dynamic text on 3D,Beacon labels + AP labels,Generated in JS,Updates on label change,Clear readable,Performance if many,Cache textures
+AdditiveBlending,1.0.30,1.0.91,Glow effects,Static nodes + beacon highlights,Three.js material,Static,Beautiful glow,Z-fighting,Depth test config
+Auto-Spin Toggle,1.0.0,1.0.91,Camera auto-rotate,OrbitControls.autoRotate,true/false via JS,OrbitControls,User preference,None,
+POV Zoom Buttons,1.0.55,1.0.91,Adjust chase distance,btn-pov-less / btn-pov-more,JS→Android: setPOVOffset,±10 units,Precise control,None,
+FLY Mode Waypoints,1.0.9,1.0.91,Auto-generated tour,CatmullRom spline through all nodes,Auto on mode enter,Smooth tour,Waypoint density,Adaptive spacing
+Theory Mode (Ghost Trajectories),1.0.86,1.0.91,Historical BT paths,Renders all historical trajectories,JS toggle,Visual history,Performance with many,Limit to 100 global

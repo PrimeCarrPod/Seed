@@ -1,0 +1,39 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.19_bounce.html	2026-10-08 02:33:54.008355030 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.20_bounce.html	2026-10-08 02:33:54.029213112 +0000
+@@ -312,16 +312,32 @@
+     if(this.broadcast){
+       bar.style.display='block';st.textContent='ON · TX';st.className='text-green font-mono pulse-g';
+       btn.textContent='STOP TX';btn.className='btn btn-o';
+-      var dyn={heading:this.myHeading,speed:this.mySpeed},base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+-      var code=genSSID(base,dyn);
+-      document.getElementById('broadcast-ssid').textContent=code;
+-      if(typeof BounceBridge!=='undefined'&&BounceBridge.startBroadcast)BounceBridge.startBroadcast(code);
++      var self=this;
++      this._doBroadcast();
++      this._broadcastCycle=setInterval(function(){
++        if(!self.broadcast){clearInterval(self._broadcastCycle);return}
++        if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
++        bar.style.display='block';st.textContent='PAUSE · OFF';st.className='text-yellow font-mono';
++        setTimeout(function(){
++          if(!self.broadcast)return;
++          self._doBroadcast();
++        },2500);
++      },7000);
+     }else{
+       bar.style.display='none';st.textContent='OFF';st.className='text-red font-mono';
+       btn.textContent='BROADCAST';btn.className='btn btn-g';
++      if(this._broadcastCycle){clearInterval(this._broadcastCycle);this._broadcastCycle=null}
+       if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+     }
+   },
++  _doBroadcast(){
++    var dyn={heading:this.myHeading,speed:this.mySpeed},base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
++    var code=genSSID(base,dyn);
++    document.getElementById('broadcast-ssid').textContent=code;
++    document.getElementById('broadcast-status').textContent='ON · TX';
++    document.getElementById('broadcast-status').className='text-green font-mono pulse-g';
++    if(typeof BounceBridge!=='undefined'&&BounceBridge.startBroadcast)BounceBridge.startBroadcast(code);
++  },
+   onBroadcastStatus(result){
+     var r=typeof result==='string'?JSON.parse(result):result;
+     var st=document.getElementById('broadcast-status');

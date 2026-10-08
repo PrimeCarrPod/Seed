@@ -1,0 +1,13 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.41_AndroidManifest.xml	2026-10-08 02:33:54.449083245 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.42_AndroidManifest.xml	2026-10-08 02:33:54.470181458 +0000
+@@ -8,7 +8,9 @@
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+-    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
++    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
++    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"
++        android:usesPermissionFlags="neverForLocation" />
+     <application
+         android:allowBackup="true"
+         android:icon="@mipmap/ic_launcher"

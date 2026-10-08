@@ -1,0 +1,48 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.68_MainActivity.java	2026-10-08 02:33:54.971034111 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.69_MainActivity.java	2026-10-08 02:33:54.989640543 +0000
+@@ -65,7 +65,6 @@
+     private BluetoothAdapter bluetoothAdapter;
+     private BluetoothLeScanner bleScanner;
+     private boolean btScanning = false;
+-    private int btHitCount = 0;
+     private PowerManager.WakeLock wakeLock;
+     private final float[] accelData = new float[3];
+     private final float[] magnetData = new float[3];
+@@ -171,17 +170,16 @@
+         bleScanner = bluetoothAdapter.getBluetoothLeScanner();
+         if (bleScanner == null) return;
+         btScanning = true;
+-        try {
+-            ScanSettings settings = new ScanSettings.Builder().setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY).build();
+-            bleScanner.startScan(null, settings, btCallback);
+-        } catch (Exception ignored) {}
++        ScanSettings settings = new ScanSettings.Builder()
++            .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
++            .build();
++        bleScanner.startScan(null, settings, btCallback);
+     }
+ 
+     private final ScanCallback btCallback = new ScanCallback() {
+         public void onScanResult(int callbackType, android.bluetooth.le.ScanResult result) {
+             if (result == null || webView == null) return;
+             BluetoothDevice dev = result.getDevice();
+-            if (btHitCount++ < 3) Toast.makeText(MainActivity.this, "BT found: " + (dev.getName() != null ? dev.getName() : dev.getAddress()), Toast.LENGTH_SHORT).show();
+             int rssi = result.getRssi();
+             float dist = (float) Math.pow(10, (-40 - rssi) / 20.0);
+             webView.post(() -> {
+@@ -191,7 +189,6 @@
+             });
+         }
+         public void onScanFailed(int errorCode) {
+-            Toast.makeText(MainActivity.this, "BT scan failed: " + errorCode, Toast.LENGTH_LONG).show();
+             injectJs("Bounce.onBtStatus({status:'failed',code:" + errorCode + "})");
+         }
+     };
+@@ -688,7 +685,6 @@
+         try { unregisterReceiver(wifiScanReceiver); } catch (Exception ignored) {}
+         if (broadcasting) stopP2pBroadcast();
+         if (btScanning && bleScanner != null) {
+-            btScanning = false;
+             try { bleScanner.stopScan(btCallback); } catch (Exception ignored) {}
+         }
+     }

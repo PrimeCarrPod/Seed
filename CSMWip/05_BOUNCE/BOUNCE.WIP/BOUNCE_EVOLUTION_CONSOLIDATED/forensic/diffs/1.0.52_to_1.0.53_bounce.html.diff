@@ -1,0 +1,20 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.52_bounce.html	2026-10-08 02:33:54.667671317 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.53_bounce.html	2026-10-08 02:33:54.686925982 +0000
+@@ -63,7 +63,7 @@
+     <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+     <button id="btn-pov" class="btn btn-o" onclick="Bounce.togglePOV()">POV</button>
+     <button id="btn-pov-less" class="btn btn-o" onclick="Bounce.povDist=Math.max(10,Bounce.povDist-5)" style="display:none;padding:4px 6px">-</button>
+-    <button id="btn-pov-more" class="btn btn-o" onclick="Bounce.povDist=Math.min(80,Bounce.povDist+5)" style="display:none;padding:4px 6px">+</button>
++    <button id="btn-pov-more" class="btn btn-o" onclick="Bounce.povDist=Math.min(120,Bounce.povDist+5)" style="display:none;padding:4px 6px">+</button>
+     <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>
+   </div>
+ </div>
+@@ -154,7 +154,7 @@
+ function colorToHex(cl){var c={White:'#F0F0F0',Black:'#222222',Silver:'#C0C0C0',Blue:'#4488FF',Red:'#FF4444',Gray:'#888888',Green:'#44BB44',Orange:'#FF8844',Yellow:'#FFCC00',Brown:'#8B6914',Navy:'#222266',Burgundy:'#882222',Gold:'#CCA600',Tan:'#C4A882'};return c[cl]||'#888888'}
+ 
+ // ═══════════════════════════════════════════
+-const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,povDist:30,
++const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,povDist:50,
+   init(){
+     var c=document.getElementById('canvas-container');
+     this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);

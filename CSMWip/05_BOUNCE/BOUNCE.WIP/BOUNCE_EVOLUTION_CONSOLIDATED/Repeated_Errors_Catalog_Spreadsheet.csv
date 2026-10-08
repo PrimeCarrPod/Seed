@@ -1,0 +1,31 @@
+Error_ID,Error_Type,Error_Message,First_Occurred_Version,Last_Occurred_Version,Frequency,Root_Cause,Solution_Attempted,Solution_Worked,Fixed_In_Version,Time_Lost,Notes
+E001,Build,JAVA_HOME is set to an invalid directory,1.0.0,1.0.91,Every session,Sandbox resets wipe Java,export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64,Yes,1.0.0,High,Must run in every session
+E002,Build,sdkmanager: command not found,1.0.0,1.0.91,Every session,cmdline-tools not at latest/,mv cmdline-tools/cmdline-tools cmdline-tools/latest,Yes,1.0.0,High,Hardcoded path requirement
+E003,Build,yes | sdkmanager --licenses fails with EPIPE,1.0.0,1.0.91,Every session,sdkmanager closes stdin,printf 'y\ny\ny\ny\ny\ny\ny\ny\n' | sdkmanager --licenses,Yes,1.0.0,Medium,Or use license hash bypass
+E004,Build,Could not resolve all files for configuration — checkDebugAarMetadata,1.0.80,1.0.85,Multiple,AGP 8.2 incompatibility,Pin to AGP 8.1.0 + Gradle 8.4,Yes,1.0.85,High,AGP 8.1.0 + gradle-8.4 = stable
+E005,Build,Unresolved reference: components,1.0.80,1.0.85,Few,Importing non-existent package,Remove unused imports,Yes,1.0.85,Low,Only import what you use
+E006,Runtime,Theme.Material.NoActionBar crash on launch,1.0.80,1.0.85,Multiple,AppCompatActivity without appcompat dependency,Use plain Activity() with @android:style/Theme.Material.NoActionBar,Yes,1.0.85,High,No AppCompat needed for minimal apps
+E007,Runtime,APK installs but immediately closes,1.0.80,1.0.85,Multiple,Theme resource not found / missing icon / crash in onCreate,Use @android:style/Theme.Material.NoActionBar + create adaptive icon + call setContentView first,Yes,1.0.85,High,Three root causes
+E008,Build,Manifest merger failed — android:icon not found,1.0.80,1.0.85,Multiple,@mipmap/ic_launcher referenced but no icon files,Create adaptive icon XML in res/mipmap-anydpi-v26/ic_launcher.xml,Yes,1.0.85,Medium,XML-based adaptive icons
+E009,Runtime,WifiManager startScan() returns no results,1.0.80,1.0.85,Multiple,API33 NEARBY_WIFI_DEVICES permission missing,Add NEARBY_WIFI_DEVICES with neverForLocation flag,Yes,1.0.85,High,API33+ permission change
+E010,Runtime,Bluetooth LE scan dies after ~10 seconds,1.0.48,1.0.64,Every run,Android kills continuous scan,Restart scan every 5s with Handler.postDelayed,Yes,1.0.65,High,5s restart cycle mandatory
+E011,Runtime,EkF velocity vy not initialized (x[2]=0; x[2]=0;),1.0.90,1.0.91,Every run,Copy-paste typo in PositionEKF.java:38,Change second x[2]=0 to x[3]=0,Yes,1.0.92,Medium,P0-01 bug - ALWAYS verify array indices
+E012,Runtime,OutOfMemoryError: WebGL context lost,1.0.49,1.0.53,Trail recording,Three.js geometry/material not disposed,Add geometry.dispose() + material.dispose() on rebuild,Yes,1.0.54,High,GPU-safe disposal pattern
+E013,Runtime,Trail recording creates noisy path when stationary,1.0.49,1.0.55,Every run,GPS records 0-speed points,Only record when speed > 1mph,Yes,1.0.56,Medium,Speed threshold filter
+E014,Build,aapt2 link fails: resource not found,1.0.0,1.0.91,Occasional,Missing res/ directories or wrong paths,Verify res/ structure matches AndroidManifest,Yes,1.0.0,Medium,Check resource paths
+E015,Build,d8: Cannot fit requested classes in a single dex file,1.0.80,1.0.85,Rare,Too many methods (>64K),Enable multiDex or reduce dependencies,Yes,1.0.85,Low,Not hit in Bounce (small app)
+E016,Runtime,WebView JavaScript bridge silent failures,1.0.0,1.0.51,Frequent,No try/catch on evaluateJavascript,Add try/catch + window.onerror handler,Yes,1.0.52,High,HTML try/catch wrapper mandatory
+E017,Runtime,SSID broadcast timing drift,1.0.13,1.0.19,Every run,Handler.postDelayed accumulation,Fixed 5.1s duty cycle with single timer,Yes,1.0.20,Medium,Use fixed cycle not accumulating delays
+E018,Runtime,Wi-Fi Direct Group Owner creation fails,1.0.13,1.0.13,Few,Single method (WifiP2pConfig.Builder),Multi-method fallback: Builder → Reflection → Bonjour,Yes,1.0.14,Medium,Priority fallback chain
+E019,Runtime,GPS speed shows 0 when stationary (zero-fix),1.0.4,1.0.26,Every run,GPS provider returns 0 speed,Speed threshold > 1mph for trail recording,Yes,1.0.27,Low,Expected GPS behavior
+E020,Runtime,Azimuth wrap-around at 0/360 boundary,1.0.25,1.0.91,Every run,Sensor orientation jumps 359→0,Add wrap handling: if diff > 180, adjust by 360,Yes,1.0.25,Medium,Standard sensor fusion fix
+E021,Build,Gradle cannot find Java,1.0.80,1.0.85,Multiple,JAVA_HOME not exported before Gradle,export JAVA_HOME before gradlew,Yes,1.0.85,Medium,Must export before Gradle
+E022,Build,Unresolved reference: R (generated),1.0.80,1.0.85,Occasional,aapt2 link didn't generate R.java,Verify aapt2 link --java output dir,Yes,1.0.85,Low,Check gen/ directory
+E023,Runtime,Bluetooth permissions denied on API31+,1.0.48,1.0.91,Every run,Missing BLUETOOTH_SCAN/CONNECT/ADVERTISE,Add all three modern BT permissions,Yes,1.0.48,High,API31+ requires 3 new perms
+E024,Runtime,Background location permission denied,1.0.29,1.0.91,Every run,Missing ACCESS_BACKGROUND_LOCATION,Add permission for API29+,Yes,1.0.29,High,Required for background GPS
+E025,Build,zipalign: command not found,1.0.0,1.0.91,Every session,build-tools not installed or wrong version,sdkmanager "build-tools;33.0.1",Yes,1.0.0,High,Match build-tools to compileSdk
+E026,Build,apksigner: command not found,1.0.0,1.0.91,Every session,build-tools not installed,sdkmanager "build-tools;33.0.1",Yes,1.0.0,High,Part of build-tools
+E027,Runtime,Bluetooth device name not showing,1.0.48,1.0.85,Occasional,ScanCallback missing name,Use device.getName() with null check,Yes,1.0.85,Low,Null safety
+E028,Runtime,CatmullRomCurve3 trail jagged at low points,1.0.62,1.0.91,Few,< 4 points for spline,Minimum 4 points for CatmullRom,Yes,1.0.62,Low,Need 4+ points
+E029,Runtime,UnrealBloomPass too bright on mobile,1.0.50,1.0.91,Mobile devices,HDR bloom strength too high,Reduce strength to 0.5-0.8 on mobile,Yes,1.0.50,Medium,Configurable via Android
+E030,Build,Missing platforms/android-33/android.jar,1.0.0,1.0.91,Cloud environments,SDK platform not installed,sdkmanager "platforms;android-33",Yes,1.0.0,Critical,Required for compilation

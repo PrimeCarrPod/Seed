@@ -1,0 +1,19 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.51_bounce.html	2026-10-08 02:33:54.649229893 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.52_bounce.html	2026-10-08 02:33:54.667671317 +0000
+@@ -502,7 +502,7 @@
+ };
+ window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
+ setTimeout(function(){
+-  setInterval(function(){
++  setInterval(function(){try{
+     var listR=document.getElementById('wifi-scanner-list');
+     var list2=document.getElementById('scan2-list');
+     if(!Bounce.realNodes)return;
+@@ -516,6 +516,7 @@
+       for(var i=0;i<Math.min(Bounce.btNodes.length,8);i++){var n=Bounce.btNodes[i];bh+='<li style="color:#4488FF;padding:1px 0">'+n.name+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+       bl.innerHTML=bh;
+     }else if(bl){bl.innerHTML='<li style="color:#6b7280">no BT devices</li>'}
++  }catch(e){}
+   },500);
+ },3000);
+ </script>

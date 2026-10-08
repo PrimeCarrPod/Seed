@@ -1,0 +1,39 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.42_MainActivity.java	2026-10-08 02:33:54.465052609 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.43_MainActivity.java	2026-10-08 02:33:54.486678173 +0000
+@@ -106,18 +106,24 @@
+         }
+         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+ 
+-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+-            if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+-                requestPermissions(new String[]{
+-                    Manifest.permission.ACCESS_FINE_LOCATION,
+-                    Manifest.permission.ACCESS_COARSE_LOCATION,
+-                    Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+-                    Manifest.permission.ACCESS_WIFI_STATE,
+-                    Manifest.permission.CHANGE_WIFI_STATE,
+-                    Manifest.permission.NEARBY_WIFI_DEVICES
+-                }, PERM_REQ);
+-                return;
+-            }
++        java.util.ArrayList<String> needed = new java.util.ArrayList<>();
++        if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
++            needed.add(Manifest.permission.ACCESS_FINE_LOCATION);
++        if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
++            needed.add(Manifest.permission.ACCESS_COARSE_LOCATION);
++        if (Build.VERSION.SDK_INT >= 29 && checkSelfPermission(Manifest.permission.ACCESS_BACKGROUND_LOCATION) != PackageManager.PERMISSION_GRANTED)
++            needed.add(Manifest.permission.ACCESS_BACKGROUND_LOCATION);
++        if (checkSelfPermission(Manifest.permission.ACCESS_WIFI_STATE) != PackageManager.PERMISSION_GRANTED)
++            needed.add(Manifest.permission.ACCESS_WIFI_STATE);
++        if (checkSelfPermission(Manifest.permission.CHANGE_WIFI_STATE) != PackageManager.PERMISSION_GRANTED)
++            needed.add(Manifest.permission.CHANGE_WIFI_STATE);
++        if (Build.VERSION.SDK_INT >= 33 && checkSelfPermission(Manifest.permission.NEARBY_WIFI_DEVICES) != PackageManager.PERMISSION_GRANTED)
++            needed.add(Manifest.permission.NEARBY_WIFI_DEVICES);
++
++        if (!needed.isEmpty()) {
++            requestPermissions(needed.toArray(new String[0]), PERM_REQ);
++            Toast.makeText(this, "Grant permissions for GPS, Wi-Fi, and sensors", Toast.LENGTH_LONG).show();
++            return;
+         }
+ 
+         startServices();

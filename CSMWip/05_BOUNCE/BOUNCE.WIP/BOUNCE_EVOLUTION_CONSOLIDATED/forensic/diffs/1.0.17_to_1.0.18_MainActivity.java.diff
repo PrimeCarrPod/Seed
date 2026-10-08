@@ -1,0 +1,226 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.17_MainActivity.java	2026-10-08 02:33:53.968592960 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.18_MainActivity.java	2026-10-08 02:33:53.988212743 +0000
+@@ -130,33 +130,76 @@
+ 
+     private long broadcastStartTime = 0;
+     private boolean transitionInProgress = false;
++    private Handler timeoutHandler = new Handler(Looper.getMainLooper());
++    private Runnable transitionTimeout = null;
++
++    private boolean preflightCheck() {
++        if (p2pManager == null || p2pChannel == null) return false;
++        if (wifiManager == null || !wifiManager.isWifiEnabled()) return false;
++        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
++            if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
++                return false;
++        }
++        return true;
++    }
++
++    private void armTransitionTimeout() {
++        if (transitionTimeout != null) timeoutHandler.removeCallbacks(transitionTimeout);
++        transitionTimeout = new Runnable() { public void run() {
++            if (transitionInProgress) {
++                transitionInProgress = false;
++                injectJs("Bounce.onBroadcastStatus({status:'timeout'})");
++            }
++        }};
++        timeoutHandler.postDelayed(transitionTimeout, 10000);
++    }
++
++    private void disarmTransitionTimeout() {
++        if (transitionTimeout != null) {
++            timeoutHandler.removeCallbacks(transitionTimeout);
++            transitionTimeout = null;
++        }
++    }
+ 
+     public void startP2pBroadcast(String ssidCode) {
+-        if (p2pManager == null || p2pChannel == null || transitionInProgress) {
+-            injectJs("Bounce.onBroadcastStatus({status:'unsupported'})");
++        if (transitionInProgress) {
++            injectJs("Bounce.onBroadcastStatus({status:'busy'})");
+             return;
+         }
++        if (!preflightCheck()) {
++            injectJs("Bounce.onBroadcastStatus({status:'not_ready',reason:'check_wifi_perms'})");
++            return;
++        }
++        if (ssidCode == null || ssidCode.isEmpty()) {
++            injectJs("Bounce.onBroadcastStatus({status:'invalid_code'})");
++            return;
++        }
++
+         transitionInProgress = true;
+         broadcastStartTime = System.currentTimeMillis();
++        armTransitionTimeout();
+ 
+         String code = ssidCode.length() > 25 ? ssidCode.substring(0, 25) : ssidCode;
+         doCreateGroup(code);
+     }
+ 
+     private void doCreateGroup(String code) {
++        if (!preflightCheck()) { onGroupFailed(); return; }
++        if (code == null) { onGroupFailed(); return; }
++
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+-            // Try bare TAF code first (no DIRECT- prefix)
+             try {
+                 WifiP2pConfig config = new WifiP2pConfig.Builder()
+                     .setNetworkName(code)
+                     .setPassphrase("Bounce-2026")
+                     .build();
+-                p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
+-                    public void onSuccess() { onGroupCreated(code, "bare"); }
+-                    public void onFailure(int r) { tryWithDirect(code); }
+-                });
++                if (p2pManager != null && p2pChannel != null) {
++                    p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
++                        public void onSuccess() { onGroupCreated(code, "bare"); }
++                        public void onFailure(int r) { tryWithDirect(code); }
++                    });
++                } else { onGroupFailed(); }
+             } catch (IllegalArgumentException e) {
+-                // Some devices enforce DIRECT- prefix
+                 tryWithDirect(code);
+             } catch (Exception e) {
+                 tryWithDirect(code);
+@@ -167,71 +210,100 @@
+     }
+ 
+     private void tryWithDirect(String code) {
++        if (!preflightCheck()) { onGroupFailed(); return; }
+         try {
+             WifiP2pConfig config = new WifiP2pConfig.Builder()
+                 .setNetworkName("DIRECT-" + code)
+                 .setPassphrase("Bounce-2026")
+                 .build();
+-            p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
+-                public void onSuccess() { onGroupCreated("DIRECT-" + code, "direct-prefix"); }
+-                public void onFailure(int r) { doLegacyCreateGroup(code); }
+-            });
++            if (p2pManager != null && p2pChannel != null) {
++                p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
++                    public void onSuccess() { onGroupCreated("DIRECT-" + code, "direct-prefix"); }
++                    public void onFailure(int r) { doLegacyCreateGroup(code); }
++                });
++            } else { onGroupFailed(); }
+         } catch (Exception e) { doLegacyCreateGroup(code); }
+     }
+ 
+     private void onGroupCreated(String ssid, String method) {
++        disarmTransitionTimeout();
+         broadcasting = true;
+         transitionInProgress = false;
+         long elapsed = System.currentTimeMillis() - broadcastStartTime;
+-        injectJs("Bounce.onTransitionTiming(" + elapsed + ",'" + ssid + "','" + method + "')");
+-        injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + ssid + "',method:'" + method + "'})");
+-        Toast.makeText(MainActivity.this, ssid + " (" + elapsed + "ms)", Toast.LENGTH_SHORT).show();
++        if (webView != null) {
++            injectJs("Bounce.onTransitionTiming(" + elapsed + ",'" + ssid + "','" + method + "')");
++            injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + ssid + "',method:'" + method + "'})");
++        }
++        try { Toast.makeText(MainActivity.this, ssid + " (" + elapsed + "ms)", Toast.LENGTH_SHORT).show(); } catch (Exception ignored) {}
+     }
+ 
+     private void doLegacyCreateGroup(String code) {
++        if (!preflightCheck()) { onGroupFailed(); return; }
+         try {
+             java.lang.reflect.Method setDev = WifiP2pManager.class.getMethod("setDeviceName",
+                 WifiP2pManager.Channel.class, String.class, WifiP2pManager.ActionListener.class);
+             setDev.invoke(p2pManager, p2pChannel, code, new WifiP2pManager.ActionListener() {
+                 public void onSuccess() {
+-                    p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
+-                        public void onSuccess() { onGroupCreated(code, "legacy"); }
+-                        public void onFailure(int r) { onGroupFailed(); }
+-                    });
++                    if (p2pManager != null && p2pChannel != null) {
++                        p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
++                            public void onSuccess() { onGroupCreated(code, "legacy"); }
++                            public void onFailure(int r) { onGroupFailed(); }
++                        });
++                    } else { onGroupFailed(); }
+                 }
+                 public void onFailure(int r) {
+-                    p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
+-                        public void onSuccess() { onGroupCreated(code, "legacy-fallback"); }
+-                        public void onFailure(int r2) { onGroupFailed(); }
+-                    });
++                    if (p2pManager != null && p2pChannel != null) {
++                        p2pManager.createGroup(p2pChannel, new WifiP2pManager.ActionListener() {
++                            public void onSuccess() { onGroupCreated(code, "legacy-fallback"); }
++                            public void onFailure(int r2) { onGroupFailed(); }
++                        });
++                    } else { onGroupFailed(); }
+                 }
+             });
+-        } catch (Exception e) {
+-            onGroupFailed();
+-        }
++        } catch (Exception e) { onGroupFailed(); }
+     }
+ 
+     private void onGroupFailed() {
++        disarmTransitionTimeout();
++        broadcasting = false;
+         transitionInProgress = false;
+         injectJs("Bounce.onBroadcastStatus({status:'failed'})");
+     }
+ 
+     public void refreshBroadcastSSID(String newCode) {
+-        if (!broadcasting || p2pManager == null || p2pChannel == null) return;
++        if (transitionInProgress) return;
++        if (!broadcasting) return;
++        if (!preflightCheck()) return;
++        if (newCode == null || newCode.isEmpty()) return;
++
+         transitionInProgress = true;
+         broadcastStartTime = System.currentTimeMillis();
++        armTransitionTimeout();
+ 
+         String code = newCode.length() > 25 ? newCode.substring(0, 25) : newCode;
+-        // Flush existing group first, then recreate
+-        p2pManager.removeGroup(p2pChannel, new WifiP2pManager.ActionListener() {
+-            public void onSuccess() {
+-                new Handler(Looper.getMainLooper()).postDelayed(() -> doCreateGroup(code), 600);
+-            }
+-            public void onFailure(int r) {
+-                // Group may not exist; try creating directly
+-                doCreateGroup(code);
+-            }
+-        });
++
++        if (p2pManager != null && p2pChannel != null) {
++            p2pManager.removeGroup(p2pChannel, new WifiP2pManager.ActionListener() {
++                public void onSuccess() {
++                    new Handler(Looper.getMainLooper()).postDelayed(() -> {
++                        if (transitionInProgress && preflightCheck()) {
++                            doCreateGroup(code);
++                        } else {
++                            onGroupFailed();
++                        }
++                    }, 600);
++                }
++                public void onFailure(int r) {
++                    if (preflightCheck()) {
++                        doCreateGroup(code);
++                    } else {
++                        onGroupFailed();
++                    }
++                }
++            });
++        } else {
++            onGroupFailed();
++        }
+     }
+ 
+     private void startBonjourBroadcast(String ssidCode) {
+@@ -433,7 +505,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Transient SSID · v1.0.17");
++        tag.setText("Defensive Broadcast · v1.0.18");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);

@@ -1,0 +1,35 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.27_MainActivity.java	2026-10-08 02:33:54.169446949 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.28_MainActivity.java	2026-10-08 02:33:54.188150116 +0000
+@@ -50,6 +50,7 @@
+     private LinearLayout headerOverlay;
+     private boolean cleanMode = false;
+     private Button cleanBtn;
++    private TextView tagTextView;
+     private WifiManager wifiManager;
+     private WifiP2pManager p2pManager;
+     private WifiP2pManager.Channel p2pChannel;
+@@ -553,10 +554,11 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("GPS Zero-Fix · v1.0.27");
++        tag.setText("GPS + Broadcast · v1.0.28");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
++        tagTextView = tag;
+ 
+         h.addView(logo);
+         h.addView(tag);
+@@ -635,5 +637,11 @@
+         public void refreshBroadcastSSID(String newSsid) {
+             runOnUiThread(() -> refreshBroadcastSSID(newSsid));
+         }
++        @JavascriptInterface
++        public void updateHeaderText(String text) {
++            runOnUiThread(() -> {
++                if (tagTextView != null) tagTextView.setText(text);
++            });
++        }
+     }
+ }

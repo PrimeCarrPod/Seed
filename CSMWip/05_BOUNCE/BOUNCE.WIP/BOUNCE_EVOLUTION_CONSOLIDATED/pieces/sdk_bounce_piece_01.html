@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Bounce v1.0.91 — Kalman Distance | CarrPod</title>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <style>
+    :root{--bo:#FF6600;--bg2:#00FF88;--bb:#4488FF;--by:#FFCC00;--br:#FF4466;--bp:#a855f7}
+    *{box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#010206;color:#e2e8f0;overflow:hidden;margin:0}
+    #canvas-container{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1}
+    .hud{background:rgba(3,6,16,.9);border:1px solid rgba(255,102,0,.2);border-radius:10px;z-index:10;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+    .pg{position:fixed;display:flex;flex-direction:column;gap:8px;z-index:20;pointer-events:none;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+    .tab{position:absolute;background:rgba(8,8,16,.95);border:1px solid rgba(255,102,0,.5);color:#FF6600;font-size:9px;font-weight:700;text-align:center;padding:8px 3px;cursor:pointer;z-index:11;letter-spacing:.1em;pointer-events:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1;width:22px}
+    .tab:hover{color:#FF8833;box-shadow:0 0 14px rgba(255,102,0,.3)}
+    .tab-l{right:0;top:0;bottom:0;border-radius:0 8px 8px 0;border-left:2px solid rgba(255,102,0,.5);transform:translateX(100%)}
+    .tab-r{left:0;top:0;bottom:0;border-radius:8px 0 0 8px;border-right:2px solid rgba(255,102,0,.5);transform:translateX(-100%)}
+    .btn{padding:6px 11px;border-radius:5px;cursor:pointer;font-size:10px;text-transform:uppercase;letter-spacing:.05em;transition:all .2s;border:1px solid;font-weight:600}
+    .btn-o{background:rgba(255,102,0,.1);border-color:rgba(255,102,0,.35);color:#FF6600}.btn-o:active{background:rgba(255,102,0,.25)}
+    .btn-g{background:rgba(0,255,136,.1);border-color:rgba(0,255,136,.35);color:#00FF88}.btn-g:active{background:rgba(0,255,136,.25)}
+    .btn-b{background:rgba(68,136,255,.1);border-color:rgba(68,136,255,.35);color:#4488FF}.btn-b:active{background:rgba(68,136,255,.25)}
+    .btn-p{background:rgba(168,85,247,.1);border-color:rgba(168,85,247,.35);color:#a855f7}.btn-p:active{background:rgba(168,85,247,.25)}
+    #hdr{position:fixed;top:0;left:0;right:0;padding:40px 16px 10px 16px;z-index:20;pointer-events:none;display:flex;justify-content:space-between;align-items:flex-start;background:linear-gradient(to bottom,rgba(0,0,0,.95),rgba(0,0,0,.4) 85%,transparent)}
+    #hud-left{bottom:10px;left:10px;width:280px;transform:translateX(0)}
+    #hud-right{bottom:10px;right:10px;width:280px;transform:translateX(0)}
+    #hud-update{bottom:340px;right:10px;width:280px;transform:translateX(0)}
+    .flex{display:flex}.gap-1{gap:4px}.gap-2{gap:.5rem}.flex-wrap{flex-wrap:wrap}.justify-between{justify-content:space-between}
+    .pointer-events-auto{pointer-events:auto}.pointer-events-none{pointer-events:none}
+    .text-xs{font-size:.68rem}.font-bold{font-weight:700}.font-mono{font-family:monospace}.uppercase{text-transform:uppercase}
+    .p-2{padding:8px}.pb-1{padding-bottom:3px}.mb-1{margin-bottom:3px}.mb-2{margin-bottom:6px}.mt-1{margin-top:3px}
+    .text-orange{color:#FF6600}.text-green{color:#00FF88}.text-blue{color:#4488FF}.text-yellow{color:#FFCC00}.text-red{color:#FF4466}.text-purple{color:#a855f7}.text-gray{color:#9ca3af}
+    .border-b{border-bottom-width:1px}.rounded-full{border-radius:999px}
+    #beacon-list{font-size:8px;line-height:1.5;max-height:250px;overflow-y:auto;list-style:none;padding:0;margin:0}
+    #beacon-list li{padding:2px 3px;border-bottom:1px solid rgba(255,102,0,.06);color:#9ca3af;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    #beacon-list li.bounce-tag{color:#00FF88;background:rgba(0,255,136,.04)}
+    #beacon-list li.static-tag{color:#a855f7}
+    .bctag{font-size:7px;padding:1px 4px;border-radius:3px;margin-left:3px}
+    .bctag.bounce{background:rgba(0,255,136,.15);color:#00FF88}
+    .bctag.wifi{background:rgba(136,136,160,.1);color:#8888A0}
+    .pulse-g{animation:pulseG 1.5s infinite}@keyframes pulseG{0%,100%{opacity:1}50%{opacity:.5}}
+    .scroll::-webkit-scrollbar{width:3px}.scroll::-webkit-scrollbar-thumb{background:rgba(255,102,0,.3);border-radius:2px}
+  </style>
+</head>
+<body>
+<div id="canvas-container"></div>
+
+<div id="hdr">
+  <div class="pointer-events-auto">
+    <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
+    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.91</span></p>
+  </div>
+  <div class="pointer-events-auto flex gap-2 items-start">
+    <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+    <button id="btn-pov" class="btn btn-o" onclick="Bounce.togglePOV()">POV</button>
+      <button id="btn-pov-less" class="btn btn-o" onclick="Bounce._povOffset=(Bounce._povOffset||0)+10" style="display:none;padding:4px 6px">+</button>
+      <button id="btn-pov-more" class="btn btn-o" onclick="Bounce._povOffset=(Bounce._povOffset||0)-10" style="display:none;padding:4px 6px">-</button>
+    <button id="btn-theory" class="btn btn-p" onclick="Bounce.toggleTheoryMode()">THEORY</button>
+    <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>

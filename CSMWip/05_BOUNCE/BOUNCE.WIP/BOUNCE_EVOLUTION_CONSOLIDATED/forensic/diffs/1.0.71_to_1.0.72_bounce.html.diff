@@ -1,0 +1,41 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.71_bounce.html	2026-10-08 02:33:55.029360460 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.72_bounce.html	2026-10-08 02:33:55.048556537 +0000
+@@ -65,6 +65,7 @@
+     <button id="btn-pov-less" class="btn btn-o" onclick="Bounce.povDist=Math.max(10,Bounce.povDist-5)" style="display:none;padding:4px 6px">-</button>
+     <button id="btn-pov-more" class="btn btn-o" onclick="Bounce.povDist=Math.min(120,Bounce.povDist+5)" style="display:none;padding:4px 6px">+</button>
+     <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>
++    <button id="btn-lock" class="btn btn-o" onclick="LockScreen.enable()">LOCK</button>
+   </div>
+ </div>
+ 
+@@ -555,5 +556,30 @@
+ },3000);
+ </script>
+ 
++
++<style>
++#lock-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:100;background:rgba(0,0,0,.3);pointer-events:all;display:none}
++#lock-btn-l{position:fixed;top:10px;left:10px;width:60px;height:60px;border-radius:50%;z-index:101;background:rgba(0,255,136,.2);border:2px solid rgba(0,255,136,.5);color:#00FF88;font-size:10px;font-weight:700;display:none;cursor:pointer;align-items:center;justify-content:center}
++#lock-btn-r{position:fixed;top:10px;right:10px;width:60px;height:60px;border-radius:50%;z-index:101;background:rgba(0,255,136,.2);border:2px solid rgba(0,255,136,.5);color:#00FF88;font-size:10px;font-weight:700;display:none;cursor:pointer;align-items:center;justify-content:center}
++</style>
++<div id="lock-overlay"></div>
++<button id="lock-btn-l">UNLOCK</button>
++<button id="lock-btn-r">UNLOCK</button>
++<script>
++var LockScreen={active:false,lPressed:false,rPressed:false,
++  enable(){this.active=true;document.getElementById('lock-overlay').style.display='block';
++    document.getElementById('lock-btn-l').style.display='flex';document.getElementById('lock-btn-r').style.display='flex';
++    document.getElementById('btn-lock').textContent='LOCKED';this.lPressed=false;this.rPressed=false},
++  tryUnlock(side){
++    if(side==='L')this.lPressed=true;else this.rPressed=true;
++    if(this.lPressed&&this.rPressed){this.active=false;
++      document.getElementById('lock-overlay').style.display='none';
++      document.getElementById('lock-btn-l').style.display='none';document.getElementById('lock-btn-r').style.display='none';
++      document.getElementById('btn-lock').textContent='LOCK';this.lPressed=false;this.rPressed=false}
++    setTimeout(function(){LockScreen.lPressed=false;LockScreen.rPressed=false},500)},
++};
++document.getElementById('lock-btn-l').addEventListener('pointerdown',function(e){e.preventDefault();LockScreen.tryUnlock('L')});
++document.getElementById('lock-btn-r').addEventListener('pointerdown',function(e){e.preventDefault();LockScreen.tryUnlock('R')});
++</script>
+ </body>
+ </html>

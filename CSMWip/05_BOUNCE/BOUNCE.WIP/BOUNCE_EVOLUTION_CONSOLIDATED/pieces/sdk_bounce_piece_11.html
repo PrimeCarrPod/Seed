@@ -1,0 +1,65 @@
+      a.ring.position.copy(a.dot.position);a.ring.rotation.z+=.01*a.vx;a.group.position.copy(a.dot.position);
+      a.label.position.copy(a.dot.position);a.label.position.y+=.8;
+    }
+    for(var i=0;i<self.realNodes.length;i++){var rn=self.realNodes[i];rn.dot.position.x+=rn.vx*dt;rn.dot.position.z+=rn.vz*dt;rn.dot.position.y+=Math.sin(now*.001+i)*.15*dt}
+    // Momentum: shift grid in direction opposite to bearing (user driving forward)
+    var bearingRad=self.myHeading*Math.PI/180;
+    self.tardi.group.position.x+=Math.sin(bearingRad)*.01;self.tardi.group.position.z+=Math.cos(bearingRad)*.01;
+    // Altitude: map 0-5000ft to Y displacement -2 to 15
+    var altY=(self.myAlt>0)?Math.max(-2,Math.min(15,(self.myAlt-450)/200)):0;
+    self.tardi.group.position.y+=altY*.02;
+    if(self.useRealData&&self.realNodes.length>0){self._refreshUI()}
+    if(this._fly&&this._flyWp&&this._flyWp.length>0){var t=Math.min(this._flyP/10000,1);this._flyP+=dt*1000*self._flySpeed;var wp=this._flyWp,l=wp.length,i=Math.floor(t*(l-1)),f=(t*(l-1))%1;var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(l-1,i+1)],p3=wp[Math.min(l-1,i+2)];var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f*f+(-p0.x+3*p1.x-3*p2.x+p3.x)*f*f*f),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f*f+(-p0.y+3*p1.y-3*p2.y+p3.y)*f*f*f),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f*f+(-p0.z+3*p1.z-3*p2.z+p3.z)*f*f*f));
+      var K=10,D=.9;self._flyVx=(self._flyVx+(pos.x-self.camera.position.x)*K)*D;self._flyVy=(self._flyVy+(pos.y-self.camera.position.y)*K)*D;self._flyVz=(self._flyVz+(pos.z-self.camera.position.z)*K)*D;
+      self.camera.position.x+=self._flyVx*dt;self.camera.position.y+=self._flyVy*dt;self.camera.position.z+=self._flyVz*dt;
+      if(t>=1){if(this._flyLoop){self._flyVx*=1.5;self._flyVy*=1.5;self._flyVz*=1.5;this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly-h').className='btn btn-o';document.getElementById('btn-slower').style.display='none';document.getElementById('btn-faster').style.display='none'}}}
+    this.controls.update();
+    // POV mode: speed-adaptive chase camera with snap threshold
+    if(self.povMode){
+      var brr=self.myHeading*Math.PI/180;
+      var mph=self.mySpeed||0;
+      // Dynamic distance: 20 at 0mph, 70 at 60mph, 280 at 500mph + manual override
+      var dynDist=(20+mph*1.1)+(self._povOffset||0);
+      // Fast lerp at high speed: 0.06 at 0mph, 0.45 at 60mph+
+      var lerpR=Math.min(.55,.06+mph*.0065);
+      var t=self.tardi.group;
+      var cx=t.position.x-Math.sin(brr)*dynDist;
+      var cy=t.position.y+dynDist*.3+(self.myAlt>0?self.myAlt*.015:0);
+      var cz=t.position.z-Math.cos(brr)*dynDist;
+      var target=new THREE.Vector3(cx,cy,cz);
+      var dist=target.distanceTo(self.camera.position);
+      // Snap if target got too far away (coaster drop / sudden accel)
+      if(dist>dynDist*1.8){
+        self.camera.position.copy(target);
+      }else{
+        self.camera.position.lerp(target,lerpR);
+      }
+      self.camera.lookAt(t.position.x,t.position.y+3,t.position.z);
+    }
+    // Trail recording — speed-adaptive: sample more at high speed
+    if(self.trailActive&&self.mySpeed>1){
+      self._tf=(self._tf||0)+1;
+      var sampleRate=Math.max(1,Math.min(20,Math.round(self.mySpeed/5)));
+      if(self._tf%Math.floor(20/sampleRate)===0){
+        self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+        if(self.trailPoints.length>2000)self.trailPoints.shift()
+      }
+      if(self._tf%5===0&&self.trailPoints.length>1){
+        if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
+        var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
+        var smoothed=pts;if(pts.length>3){try{var curve=new THREE.CatmullRomCurve3(pts);smoothed=curve.getPoints(Math.min(600,pts.length*2))}catch(e){}}
+        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(smoothed),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.9}));
+        self.scene.add(self.trailLine);
+      }
+    }
+    // BT 3D dots follow distance
+    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){var px=Math.cos(bn.angle)*btNode.dist,pz=Math.sin(bn.angle)*btNode.dist;bn.group.position.set(px,0,pz)}
+  if(bn.fading){var t=Math.min(1,(Date.now()-bn.lastSeen)/3000);bn.dot.material.opacity=t*.6;bn.ring.material.opacity=t*.5;if(t>=1)bn.fading=false}}
+    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i];if(bn.dot&&bn.dot.material)bn.dot.material.opacity=.35+.25*Math.sin(now*(.001+.0003*(i%7))+bn.angle+(i*1.3))}
+    this.composer.render();
+  }
+};
+const UI2={t:false,toggle(){this.t=!this.t;document.getElementById('hud-left2').style.transform=this.t?'translateX(calc(-100% + 22px))':'translateX(0)'}};
+const UI3={t:false,toggle(){this.t=!this.t;document.getElementById('hud-bt').style.transform=this.t?'translateX(calc(-100% + 16px))':'translateX(0)'}};
+
+const UI={hidden:false,lT:false,rT:false,uT:false,tA:false,

@@ -1,0 +1,13 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.1_build.sh	2026-10-08 02:33:53.667369658 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.2_build.sh	2026-10-08 02:33:53.684142657 +0000
+@@ -7,8 +7,8 @@
+ 
+ PACKAGE="com.carrpod.bounce"
+ APP_NAME="Bounce"
+-VERSION_CODE=101
+-VERSION_NAME="1.0.1"
++VERSION_CODE=102
++VERSION_NAME="1.0.2"
+ COMPILE_SDK=33
+ TARGET_SDK=33
+ MIN_SDK=24

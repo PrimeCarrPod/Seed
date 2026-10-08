@@ -1,0 +1,38 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.15_bounce.html	2026-10-08 02:33:53.929074465 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.16_bounce.html	2026-10-08 02:33:53.947787767 +0000
+@@ -310,25 +310,27 @@
+     this.broadcast=!this.broadcast;
+     var st=document.getElementById('broadcast-status'),bar=document.getElementById('broadcast-bar'),btn=document.getElementById('btn-broadcast');
+     if(this.broadcast){
+-      bar.style.display='block';st.textContent='ON · P2P TX';st.className='text-green font-mono pulse-g';
++      bar.style.display='block';st.textContent='ON · TX';st.className='text-green font-mono pulse-g';
+       btn.textContent='STOP TX';btn.className='btn btn-o';
+       var dyn={heading:this.myHeading,speed:this.mySpeed},base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+       var code=genSSID(base,dyn);
+       document.getElementById('broadcast-ssid').textContent=code;
+       if(typeof BounceBridge!=='undefined'&&BounceBridge.startBroadcast)BounceBridge.startBroadcast(code);
+-      androidBridge('broadcast',{action:'start',ssid:code});
++      // Cycle SSID every 10 seconds to reflect changing trajectory
++      var self=this;this._broadcastCycle=setInterval(function(){
++        if(!self.broadcast){clearInterval(self._broadcastCycle);return}
++        var d2={heading:self.myHeading,speed:self.mySpeed};
++        var newCode=genSSID(base,d2);
++        document.getElementById('broadcast-ssid').textContent=newCode;
++        if(typeof BounceBridge!=='undefined'&&BounceBridge.refreshBroadcastSSID)BounceBridge.refreshBroadcastSSID(newCode);
++      },8000);
+     }else{
+       bar.style.display='none';st.textContent='OFF';st.className='text-red font-mono';
+       btn.textContent='BROADCAST';btn.className='btn btn-g';
++      if(this._broadcastCycle){clearInterval(this._broadcastCycle);this._broadcastCycle=null}
+       if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+-      androidBridge('broadcast',{action:'stop'});
+     }
+   },
+-  onBroadcastStatus(result){
+-    var r=typeof result==='string'?JSON.parse(result):result;
+-    if(r.status==='broadcasting'){document.getElementById('broadcast-status').className='text-green font-mono pulse-g'}
+-    else if(r.status==='unsupported'){document.getElementById('broadcast-status').textContent='TX N/A';document.getElementById('broadcast-status').className='text-red font-mono'}
+-  },
+   toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
+   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin').textContent=this.spin?'SPIN ON':'SPIN'},
+   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');

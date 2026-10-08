@@ -1,0 +1,186 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.4_MainActivity.java	2026-10-08 02:33:53.718864250 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.5_MainActivity.java	2026-10-08 02:33:53.737181979 +0000
+@@ -14,6 +14,8 @@
+ import android.location.LocationManager;
+ import android.net.wifi.ScanResult;
+ import android.net.wifi.WifiManager;
++import android.net.wifi.p2p.WifiP2pManager;
++import android.net.wifi.p2p.nsd.WifiP2pDnsSdServiceInfo;
+ import android.os.Build;
+ import android.os.Bundle;
+ import android.os.Handler;
+@@ -44,8 +46,10 @@
+     private boolean cleanMode = false;
+     private Button cleanBtn;
+     private WifiManager wifiManager;
++    private WifiP2pManager p2pManager;
++    private WifiP2pManager.Channel p2pChannel;
+     private LocationManager locationManager;
+-    private boolean scanning = false;
++    private boolean scanning = false, broadcasting = false;
+     private final Handler scanHandler = new Handler(Looper.getMainLooper());
+     private int scanCount = 0;
+     private long lastScanTime = 0;
+@@ -67,9 +71,8 @@
+         FrameLayout root = new FrameLayout(this) {
+             @Override public WindowInsets onApplyWindowInsets(WindowInsets insets) {
+                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+-                    int statusBarH = insets.getInsets(WindowInsets.Type.statusBars()).top;
+-                    int navBarH = insets.getInsets(WindowInsets.Type.navigationBars()).bottom;
+-                    webView.post(() -> injectJs("UI.setInsets(" + statusBarH + "," + navBarH + ")"));
++                    int sbh = insets.getInsets(WindowInsets.Type.statusBars()).top;
++                    webView.post(() -> injectJs("UI.setInsets(" + sbh + ",0)"));
+                 }
+                 return super.onApplyWindowInsets(insets);
+             }
+@@ -87,6 +90,10 @@
+         setContentView(root);
+ 
+         wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
++        p2pManager = (WifiP2pManager) getSystemService(WIFI_P2P_SERVICE);
++        if (p2pManager != null) {
++            p2pChannel = p2pManager.initialize(this, Looper.getMainLooper(), null);
++        }
+         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+ 
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+@@ -95,9 +102,9 @@
+                     Manifest.permission.ACCESS_FINE_LOCATION,
+                     Manifest.permission.ACCESS_COARSE_LOCATION,
+                     Manifest.permission.ACCESS_WIFI_STATE,
+-                    Manifest.permission.CHANGE_WIFI_STATE
++                    Manifest.permission.CHANGE_WIFI_STATE,
++                    Manifest.permission.NEARBY_WIFI_DEVICES
+                 }, PERM_REQ);
+-                Toast.makeText(this, "Grant location + Wi-Fi permissions", Toast.LENGTH_LONG).show();
+                 return;
+             }
+         }
+@@ -120,6 +127,55 @@
+         startGpsTracking();
+     }
+ 
++    public void startP2pBroadcast(String ssidCode) {
++        if (p2pManager == null || p2pChannel == null) {
++            injectJs("Bounce.onBroadcastStatus({status:'unsupported'})");
++            return;
++        }
++
++        // Stop any existing broadcast
++        p2pManager.clearLocalServices(p2pChannel, new WifiP2pManager.ActionListener() {
++            public void onSuccess() {}
++            public void onFailure(int r) {}
++        });
++
++        // Register Bonjour service with TAF code as instance name
++        Map<String, String> record = new HashMap<>();
++        record.put("taf", ssidCode);
++        record.put("v", "1.0.5");
++        record.put("app", "Bounce");
++
++        WifiP2pDnsSdServiceInfo serviceInfo = WifiP2pDnsSdServiceInfo.newInstance(
++            "_bounce._tcp", ssidCode, record);
++
++        p2pManager.addLocalService(p2pChannel, serviceInfo, new WifiP2pManager.ActionListener() {
++            public void onSuccess() {
++                broadcasting = true;
++                injectJs("Bounce.onBroadcastStatus({status:'broadcasting',ssid:'" + ssidCode + "',method:'WiFi-Direct'})");
++                Toast.makeText(MainActivity.this, "Broadcasting: " + ssidCode, Toast.LENGTH_SHORT).show();
++            }
++            public void onFailure(int reason) {
++                broadcasting = false;
++                String msg = reason == 0 ? "P2P_UNSUPPORTED" : reason == 1 ? "BUSY" : reason == 2 ? "NO_SERVICE_REQUESTS" : "ERR_" + reason;
++                injectJs("Bounce.onBroadcastStatus({status:'failed',reason:'" + msg + "'})");
++                Toast.makeText(MainActivity.this, "Broadcast failed: " + msg, Toast.LENGTH_LONG).show();
++            }
++        });
++    }
++
++    public void stopP2pBroadcast() {
++        if (p2pManager == null || p2pChannel == null) return;
++        p2pManager.clearLocalServices(p2pChannel, new WifiP2pManager.ActionListener() {
++            public void onSuccess() {
++                broadcasting = false;
++                injectJs("Bounce.onBroadcastStatus({status:'stopped'})");
++            }
++            public void onFailure(int r) {
++                injectJs("Bounce.onBroadcastStatus({status:'error',reason:'stop_failed'})");
++            }
++        });
++    }
++
+     private void startGpsTracking() {
+         if (locationManager == null) return;
+         try {
+@@ -128,7 +184,7 @@
+             }
+             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 1f, gpsListener, Looper.getMainLooper());
+         } catch (Exception e) {
+-            injectJs("androidBridge('gpsStatus',{status:'error',msg:'"+e.getMessage()+"'})");
++            injectJs("androidBridge('gpsStatus',{status:'error',msg:'" + e.getMessage() + "'})");
+         }
+     }
+ 
+@@ -243,15 +299,12 @@
+         s.setAllowFileAccessFromFileURLs(true);
+         s.setAllowUniversalAccessFromFileURLs(true);
+         s.setMediaPlaybackRequiresUserGesture(false);
+-        s.setUseWideViewPort(true);
+-        s.setLoadWithOverviewMode(true);
+         wv.setWebChromeClient(new WebChromeClient());
+         wv.setWebViewClient(new WebViewClient() {
+             public void onPageFinished(WebView v, String u) {
+                 v.postDelayed(() -> {
+                     v.evaluateJavascript("androidBridge('onReady',{loaded:true})", null);
+-                    int sbh = Build.VERSION.SDK_INT >= Build.VERSION_CODES.R ? 44 : 24;
+-                    v.evaluateJavascript("UI.setInsets(" + sbh + ",34)", null);
++                    v.evaluateJavascript("UI.setInsets(40,34)", null);
+                 }, 2000);
+             }
+         });
+@@ -278,7 +331,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Real Wi-Fi Scanner + GPS · v1.0.4");
++        tag.setText("Wi-Fi Direct Broadcast + Scanner · v1.0.5");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -300,7 +353,10 @@
+         row.setGravity(Gravity.CENTER);
+         row.setPadding(0, dp(8), 0, dp(8));
+ 
+-        row.addView(mkBtn("SCAN", "#00FF88", v -> { wifiManager.startScan(); injectJs("Bounce._rebuildScanner()"); }));
++        row.addView(mkBtn("SCAN", "#00FF88", v -> {
++            if (wifiManager != null) wifiManager.startScan();
++            injectJs("Bounce._refreshUI()");
++        }));
+         row.addView(mkBtn("+VEH", "#f97316", v -> injectJs("Bounce.addSimVehicle()")));
+         row.addView(mkBtn("BROADCAST", "#4488FF", v -> injectJs("Bounce.toggleBroadcast()")));
+         row.addView(mkBtn("FLEET", "#a855f7", v -> injectJs("Bounce.toggleFleet()")));
+@@ -335,12 +391,23 @@
+         scanning = false;
+         scanHandler.removeCallbacksAndMessages(null);
+         try { unregisterReceiver(wifiScanReceiver); } catch (Exception ignored) {}
++        if (broadcasting) stopP2pBroadcast();
+     }
+ 
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.4 · GPS + Wi-Fi Active", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.5 · WiFi Direct + Scanner", Toast.LENGTH_SHORT).show());
++        }
++
++        @JavascriptInterface
++        public void startBroadcast(String ssidCode) {
++            runOnUiThread(() -> startP2pBroadcast(ssidCode));
++        }
++
++        @JavascriptInterface
++        public void stopBroadcast() {
++            runOnUiThread(() -> stopP2pBroadcast());
+         }
+     }
+ }

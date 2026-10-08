@@ -1,0 +1,28 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.86_build.sh	2026-10-08 02:33:55.311366073 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.87_build.sh	2026-10-08 02:33:55.335594304 +0000
+@@ -1,6 +1,6 @@
+ #!/bin/bash
+ # ============================================================
+-# build.sh — No-Gradle APK Build for Bounce v1.0.86
++# build.sh — No-Gradle APK Build for Bounce v1.0.87
+ # Bluetooth 3D Spatial RSSI Tracking — Theory Visualization
+ # Pipeline: aapt2 compile → aapt2 link → javac → d8 → zipalign → apksigner
+ # ============================================================
+@@ -8,14 +8,14 @@
+ 
+ PACKAGE="com.carrpod.bounce"
+ APP_NAME="Bounce"
+-VERSION_CODE=186
+-VERSION_NAME="1.0.86"
++VERSION_CODE=187
++VERSION_NAME="1.0.87"
+ COMPILE_SDK=33
+ TARGET_SDK=33
+ MIN_SDK=24
+ BUILD_TOOLS_VERSION="33.0.1"
+ 
+-PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ffc7f702-948b-4a00-b2ed-956874e356c8/CSMApps/Bounce/v1.0.86"
++PROJECT_DIR="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_ffc7f702-948b-4a00-b2ed-956874e356c8/CSMApps/Bounce/v1.0.87"
+ SRC_DIR="$PROJECT_DIR/src/main"
+ GEN_DIR="$PROJECT_DIR/gen"
+ OBJ_DIR="$PROJECT_DIR/obj"

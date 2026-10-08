@@ -1,0 +1,38 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.39_MainActivity.java	2026-10-08 02:33:54.399645711 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.40_MainActivity.java	2026-10-08 02:33:54.423060460 +0000
+@@ -440,13 +440,14 @@
+         scanning = true;
+         lastScanTime = System.currentTimeMillis();
+         wifiManager.startScan();
++        pushScanResults();
+ 
+         scanHandler.postDelayed(new Runnable() {
+             public void run() {
+                 if (scanning) {
+                     lastScanTime = System.currentTimeMillis();
+                     wifiManager.startScan();
+-                    pushScanResults();
++        pushScanResults();
+                     scanHandler.postDelayed(this, 250);
+                 }
+             }
+@@ -470,9 +471,17 @@
+         if (wifiManager == null || webView == null) return;
+         try {
+             List<ScanResult> results = wifiManager.getScanResults();
+-            if (results == null || results.isEmpty()) return;
++            if (results == null || results.isEmpty()) {
++                // No results yet — tell JS we're still scanning
++                injectJs("Bounce.onScanStatus({status:'empty',msg:'no networks found'})");
++                return;
++            }
+             sendScanResultsToJs(results, 0);
+-        } catch (Exception ignored) {}
++        } catch (SecurityException se) {
++            injectJs("Bounce.onScanStatus({status:'denied',msg:'location permission needed'})");
++        } catch (Exception e) {
++            injectJs("Bounce.onScanStatus({status:'error',msg:'"+e.getMessage()+"'})");
++        }
+     }
+ 
+     private void sendScanResultsToJs(List<ScanResult> results, long elapsed) {

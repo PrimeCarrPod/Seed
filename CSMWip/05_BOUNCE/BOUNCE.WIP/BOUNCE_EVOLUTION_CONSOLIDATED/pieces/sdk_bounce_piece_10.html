@@ -1,0 +1,65 @@
+    if(d.steps!==undefined)this._stepCount=d.steps;
+    if(d.pitch!==undefined)this._devicePitch=d.pitch;
+    this._hasGyro=d.gyro===true;
+    if(d.gx!==undefined)this._gyro={x:d.gx,y:d.gy,z:d.gz};
+    var el=document.getElementById('movement-intel');
+    if(!el){el=document.createElement('div');el.id='movement-intel';el.style.cssText='font-size:7px;color:#4488FF;margin-top:2px';var p=document.getElementById('orn-display');if(p&&p.parentNode)p.parentNode.appendChild(el)}
+    var mStr='▲'+Math.round(this.myAlt)+'ft';
+    if(this._stepCount)mStr+=' · 👣'+this._stepCount;
+    if(this._hasGyro)mStr+=' · gyro✓';
+    el.textContent=mStr;
+  },
+  togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
+    if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
+      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov);var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='inline-block';if(b)b.style.display='inline-block'}
+    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='none';if(b)b.style.display='none'}
+  },
+  fly(){this._fly=!this._fly;
+    if(!this._fly){this.controls.autoRotate=this.spin;document.getElementById('btn-fly-h').className='btn btn-o';
+      document.getElementById('btn-slower').style.display='none';document.getElementById('btn-faster').style.display='none';return}
+    document.getElementById('btn-fly-h').className='btn btn-g';
+    document.getElementById('btn-slower').style.display='inline-block';document.getElementById('btn-faster').style.display='inline-block';
+    this._flySpeed=1;
+    this._flyWp=[];this._flyP=0;
+    var allPos=[{x:0,y:8,z:20}];
+    var self=this;
+    if(this.useRealData&&this.realNodes.length>0){this.realNodes.forEach(function(n){allPos.push({x:n.dot.position.x,y:n.dot.position.y+4,z:n.dot.position.z})})}
+    this.beacons.forEach(function(b){allPos.push({x:b.dot.position.x,y:b.dot.position.y+5,z:b.dot.position.z})});
+    this.staticNodes.forEach(function(sn){allPos.push({x:sn.x,y:sn.y+3,z:sn.z})});
+    if(allPos.length<4){for(var i=0;i<8;i++)allPos.push({x:(Math.random()-.5)*40,y:5+Math.random()*8,z:(Math.random()-.5)*40})}
+    this._flyWp=allPos;this._flyP=0;this._flyLoop=true;
+  },
+  toggleTrail(){
+    this.trailActive=!this.trailActive;
+    var btn=document.getElementById('btn-trail'),saveBtn=document.getElementById('btn-save');
+    if(this.trailActive){
+      this.trailPoints=[];
+      if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}
+      btn.textContent='TRAIL ON';btn.className='btn btn-g';saveBtn.style.display='inline-block';
+    }else{
+      btn.textContent='TRAIL';btn.className='btn btn-b';saveBtn.style.display='none';
+    }
+  },
+  saveTrail(){
+    if(!this.trailPoints||this.trailPoints.length<2)return;
+    var data={version:'1.0.49',date:new Date().toISOString(),points:this.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};
+    var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');a.href=url;a.download='bounce-trail-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';a.click();
+    URL.revokeObjectURL(url);
+  },
+  adjustFlySpeed(delta){this._flySpeed=Math.max(.25,Math.min(3,this._flySpeed+delta));},
+  _animate(){
+    var self=this;
+    requestAnimationFrame(function(){self._animate()});var dt=this.clock.getDelta(),now=Date.now();
+    this.tardi.group.rotation.y+=.002;this.tardi.wire.rotation.y+=.003;this.tardi.ring.rotation.z+=.008;
+    // Rotate group to face bearing direction (slowly lerp)
+    var targetRot=self.myHeading*Math.PI/180+Math.PI;
+    var cr=this.tardi.group.rotation.y;this.tardi.group.rotation.y=cr+(targetRot-cr)*.02;
+    var s=1+Math.sin(now*.002)*.06;this.tardi.wire.scale.setScalar(s);
+    var bs=this.beacons,n=bs.length;
+    for(var i=0;i<n;i++){
+      var a=bs[i],ax=0,az=0;
+      for(var j=0;j<n;j++){if(i===j)continue;var b=bs[j];var dx=a.dot.position.x-b.dot.position.x,dz=a.dot.position.z-b.dot.position.z,dist=Math.sqrt(dx*dx+dz*dz)+.01;if(dist<4){var overlap=4-dist,f=overlap*6;ax+=dx/dist*f;az+=dz/dist*f}}
+      a.vx=(a.vx+ax+(a.home.x-a.dot.position.x)*.1)*.88;a.vz=(a.vz+az+(a.home.z-a.dot.position.z)*.1)*.88;
+      a.dot.position.x+=a.vx*dt;a.dot.position.z+=a.vz*dt;a.dot.position.y+=Math.sin(now*.0015+a.data.heading*.01)*.3*dt;

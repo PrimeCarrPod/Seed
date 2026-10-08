@@ -1,0 +1,65 @@
+    for(var z=-40;z<=40;z+=5){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-40,-.1,z),new THREE.Vector3(40,-.1,z)]),m))}
+    var rm=new THREE.LineBasicMaterial({color:0xFF6600,transparent:true,opacity:.5,linewidth:1});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,-.1,-45),new THREE.Vector3(0,-.1,-35)]),rm));
+    var nm=new THREE.LineBasicMaterial({color:0x4488FF,transparent:true,opacity:.5});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,-.1,45),new THREE.Vector3(0,-.1,35)]),nm));
+    var em=new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.5});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(45,-.1,0),new THREE.Vector3(35,-.1,0)]),em));
+    var wm=new THREE.LineBasicMaterial({color:0xFF4466,transparent:true,opacity:.5});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-45,-.1,0),new THREE.Vector3(-35,-.1,0)]),wm));
+  },
+  _buildTardigrade(){
+    var g=new THREE.Group();g.position.set(0,0,0);
+    var tg=new THREE.SphereGeometry(1.4,48,24,0,Math.PI*2,0,Math.PI*.7);
+    var tm=new THREE.MeshPhongMaterial({color:0xFF6600,emissive:0x331100,transparent:true,opacity:.85,shininess:40});
+    var top=new THREE.Mesh(tg,tm);g.add(top);
+    var bg=new THREE.SphereGeometry(1.2,48,24,0,Math.PI*2,Math.PI*.4,Math.PI*.75);
+    var bm=new THREE.MeshPhongMaterial({color:0xFF8833,emissive:0x331100,transparent:true,opacity:.9,shininess:30});
+    var bot=new THREE.Mesh(bg,bm);bot.position.y=-.6;g.add(bot);
+    var eg=new THREE.SphereGeometry(.15,16,8);var em2=new THREE.MeshBasicMaterial({color:0xFFFFFF});
+    var e1=new THREE.Mesh(eg,em2);e1.position.set(.5,.6,.9);g.add(e1);
+    var e2=new THREE.Mesh(eg,em2);e2.position.set(-.5,.6,.9);g.add(e2);
+    var wg=new THREE.SphereGeometry(1.7,32,16);var wm=new THREE.MeshBasicMaterial({color:0xFF6600,wireframe:true,transparent:true,opacity:.15});var wire=new THREE.Mesh(wg,wm);wire.name='wire';g.add(wire);
+    var rg=new THREE.TorusGeometry(1.8,.03,16,48);var rm2=new THREE.MeshBasicMaterial({color:0xFF6600,transparent:true,opacity:.5});var ring=new THREE.Mesh(rg,rm2);    ring.rotation.x=Math.PI/2;ring.position.y=.2;g.add(ring);
+    // Direction arrow (shows bearing)
+    var arr=new THREE.ConeGeometry(.2,.6,8);var arm=new THREE.MeshBasicMaterial({color:0x4488FF});var arrow=new THREE.Mesh(arr,arm);arrow.position.set(0,0,2.2);arrow.name='bearingArrow';g.add(arrow);
+    this.scene.add(g);this.tardi={group:g,top,bot,wire,ring,arrow};
+  },
+  _genBeacons(n){for(var i=0;i<n;i++)this._addBeacon({make:MAKES[Math.floor(Math.random()*MAKES.length)],color:COLORS_V[Math.floor(Math.random()*COLORS_V.length)],type:TYPES[Math.floor(Math.random()*TYPES.length)],heading:Math.floor(Math.random()*360),speed:15+Math.floor(Math.random()*75),state:'FL',year:2018+Math.floor(Math.random()*8),fleet:Math.random()>.7?'FLT':'CIV',hazard:Math.random()>.85?HAZARDS[Math.floor(Math.random()*HAZARDS.length)]:null,status:STATUSES[Math.floor(Math.random()*STATUSES.length)],x:(Math.random()-.5)*35,y:(Math.random()-.2)*8,z:(Math.random()-.5)*35});this._refreshUI()},
+  _addBeacon(v){
+    var color=v.hazard?'#FF4466':v.fleet==='FLT'?'#00FF88':'#4488FF';
+    if(v.hazard)color=colorToHex(v.color);else if(v.fleet!=='FLT')color=makeToColor(v.make);
+    var bg=new THREE.SphereGeometry(.5,16,8);var bmm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.8});
+    var dot=new THREE.Mesh(bg,bmm);dot.position.set(v.x||(Math.random()-.5)*35,v.y||0,v.z||(Math.random()-.5)*35);
+    var ringg=new THREE.TorusGeometry(.65,.04,8,16);var ringm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.4});
+    var ring=new THREE.Mesh(ringg,ringm);ring.rotation.x=Math.PI/2;
+    var grp=new THREE.Group();grp.add(dot);grp.add(ring);this.scene.add(grp);
+    var label=this._makeLabel(v.make.charAt(0)+v.color.charAt(0));label.position.copy(dot.position);label.position.y+=.8;this.scene.add(label);
+    v.id='B'+Date.now()+Math.floor(Math.random()*999);v.ssid=genSSID(v,null);v.dmv=genDMVCode(v);
+    var b={group:grp,dot,ring,label,data:v,home:{x:dot.position.x,y:dot.position.y,z:dot.position.z},vx:0,vy:0,vz:0};this.beacons.push(b);return b;
+  },
+  _genStaticNodes(n){
+    for(var i=0;i<n;i++){
+      var name=FAKE_SSIDS[Math.floor(Math.random()*FAKE_SSIDS.length)];
+      var loc=LOCATIONS[Math.floor(Math.random()*LOCATIONS.length)];
+      var x=(Math.random()-.5)*80,y=0,z=(Math.random()-.5)*80;
+      var sg=new THREE.SphereGeometry(.2,8,4);
+      var sm=new THREE.MeshBasicMaterial({color:0xa855f7,transparent:true,opacity:.45,blending:THREE.AdditiveBlending,depthWrite:false});
+      var sdot=new THREE.Mesh(sg,sm);sdot.position.set(x,y,z);this.scene.add(sdot);
+      this.staticNodes.push({dot:sdot,name,loc,x,y,z});
+    }
+  },
+  _makeLabel(txt){
+    var c=document.createElement('canvas');c.width=c.height=64;
+    var ctx=c.getContext('2d');ctx.fillStyle='white';ctx.font='bold 28px monospace';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(txt,32,32);
+    var tx=new THREE.CanvasTexture(c);tx.minFilter=THREE.LinearFilter;
+    var sm=new THREE.SpriteMaterial({map:tx,transparent:true,depthWrite:false,opacity:.9});
+    var s=new THREE.Sprite(sm);s.scale.set(.8,.8,1);return s;
+  },
+  _refreshUI(){
+    var ul=document.getElementById('beacon-list');ul.innerHTML='';
+    if(this.scanMeta&&this.scanMeta.scanNum>0){
+      var h=document.createElement('li');h.innerHTML='<span style="font-size:7px;color:#6b7280">Scan #'+this.scanMeta.scanNum+' · '+this.scanMeta.elapsed+'ms · '+this.scanMeta.total+' known</span>';h.style.borderBottom='1px solid rgba(255,102,0,.15)';h.style.background='rgba(68,136,255,.03)';ul.appendChild(h);
+    }
+    var total=this.useRealData?this.realNodes.length:0;
+    document.getElementById('beacon-count').textContent=total;
+    if(this.useRealData&&this.realNodes.length>0){
+      this.realNodes.sort(function(a,b){return a.dist-b.dist});
+      for(var i=0;i<this.realNodes.length;i++){var n=this.realNodes[i];
+        var zc=n.zone==='immediate'?'#FF4466':n.zone==='near'?'#FFCC00':'#4488FF';

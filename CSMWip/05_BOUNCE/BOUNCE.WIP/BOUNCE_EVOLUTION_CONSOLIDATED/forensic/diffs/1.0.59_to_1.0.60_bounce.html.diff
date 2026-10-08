@@ -1,0 +1,51 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.59_bounce.html	2026-10-08 02:33:54.802436935 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.60_bounce.html	2026-10-08 02:33:54.821789046 +0000
+@@ -431,7 +431,7 @@
+   },
+   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
+     if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
+-      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';      document.body.appendChild(ov);var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='inline-block';if(b)b.style.display='inline-block'}
++      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov);var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='inline-block';if(b)b.style.display='inline-block'}
+     else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='none';if(b)b.style.display='none'}
+   },
+   fly(){this._fly=!this._fly;
+@@ -453,18 +453,11 @@
+     this.trailActive=!this.trailActive;
+     var btn=document.getElementById('btn-trail'),saveBtn=document.getElementById('btn-save');
+     if(this.trailActive){
+-      this._trailSeg=0;this.trailPoints=[];
++      this.trailPoints=[];
+       if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}
+       btn.textContent='TRAIL ON';btn.className='btn btn-g';saveBtn.style.display='inline-block';
+-      var self=this;this._trailSaveTimer=setInterval(function(){
+-        if(!self.trailActive||self.trailPoints.length<3){clearInterval(self._trailSaveTimer);return}
+-        var sd={v:'1.0.57',seg:self._trailSeg,t:new Date().toISOString(),p:self.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};
+-        try{var sb=new Blob([JSON.stringify(sd)],{type:'application/json'});var su=URL.createObjectURL(sb);var sa=document.createElement('a');sa.href=su;sa.download='bounce-trail-s'+self._trailSeg+'-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';sa.click();URL.revokeObjectURL(su)}catch(e){}
+-        self._trailSeg++;self.trailPoints=[];if(self.trailLine){self.scene.remove(self.trailLine);self.trailLine=null}
+-      },60000);
+     }else{
+       btn.textContent='TRAIL';btn.className='btn btn-b';saveBtn.style.display='none';
+-      if(this._trailSaveTimer){clearInterval(this._trailSaveTimer);this._trailSaveTimer=null}
+     }
+   },
+   saveTrail(){
+@@ -512,13 +505,15 @@
+       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
+     }
+     // Trail recording
+-    if(self.trailActive&&self.mySpeed>1){self._trailFrame=(self._trailFrame||0)+1;
+-      if(self._trailFrame%3===0){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});if(self.trailPoints.length>1200)self.trailPoints.shift()}
+-      if(self._trailFrame%10===0&&self.trailPoints.length>1){
++    if(self.trailActive&&self.mySpeed>1){self._tf=(self._tf||0)+1;
++      if(self._tf%3===0){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
++      if(self.trailPoints.length>500)self.trailPoints.shift()}
++      if(self._tf%10===0&&self.trailPoints.length>1){
+         if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
+         var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
+         self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
+-        self.scene.add(self.trailLine)}}
++        self.scene.add(self.trailLine);
++      }
+     }
+     // BT 3D dots follow distance
+     for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){bn.dist=bn.dist*.9+btNode.dist*.1;bn.dot.position.set(Math.cos(bn.angle)*bn.dist,0,Math.sin(bn.angle)*bn.dist)}}

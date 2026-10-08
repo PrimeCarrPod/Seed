@@ -1,0 +1,27 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.22_MainActivity.java	2026-10-08 02:33:54.068462903 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.23_MainActivity.java	2026-10-08 02:33:54.088774765 +0000
+@@ -192,6 +192,7 @@
+                 WifiP2pConfig config = new WifiP2pConfig.Builder()
+                     .setNetworkName(code)
+                     .setPassphrase("Bounce-2026")
++                    .setGroupOperatingBand(WifiP2pConfig.GROUP_OWNER_BAND_5GHZ)
+                     .build();
+                 if (p2pManager != null && p2pChannel != null) {
+                     p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
+@@ -215,6 +216,7 @@
+             WifiP2pConfig config = new WifiP2pConfig.Builder()
+                 .setNetworkName("DIRECT-" + code)
+                 .setPassphrase("Bounce-2026")
++                .setGroupOperatingBand(WifiP2pConfig.GROUP_OWNER_BAND_5GHZ)
+                 .build();
+             if (p2pManager != null && p2pChannel != null) {
+                 p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
+@@ -505,7 +507,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("4-Code + Key · v1.0.22");
++        tag.setText("3-Slot 5GHz · v1.0.23");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
