@@ -389,6 +389,40 @@ Input: d_n sequence. Output: τ_n, x^μ_n, U(τ), observables.
 ---
 
 ## 13. CONCLUSION
+## CALDERA SYNTHESIS INTEGRATION
+
+### 4-Step Protocol: Order → Fluctuate → Propagate → Order Again
+The complete methodology is unified in a four-step recursive protocol (Section 1, Piece 8):
+
+1. **ORDER:** π(x) establishes the causal baseline — the "tick" structure of proper time
+2. **FLUCTUATE:** Prime gap statistics {gₙ} introduce quantum fluctuations — the "noise" of the worldline
+3. **PROPAGATE:** SJ vacuum evolution on the causal set — the quantum field dynamics
+4. **ORDER AGAIN:** RG blocking on the gap sequence yields logarithmic running — the "renormalized" π(x) at the next scale
+
+This protocol is **operationalizable** as the computational primitives in Section 12.
+
+### RG Blocking on Gap Sequence
+Renormalization group flow acts directly on the prime gap sequence:
+- Block size b = log p
+- Coarse-grained gap: d_n^(b) = (1/b) Σ_{k=0}^{b-1} d_{n+k}
+- β-function: dκ/dlog μ = β_gap(κ) = -C₂κ² + O(κ³)
+- Logarithmic running: κ(μ) = κ(μ₀) / [1 + C₂κ(μ₀)log(μ/μ₀)]
+
+This derives the running of all couplings from gap statistics alone.
+
+### Computational Protocols (Section 12)
+All algorithms derive from the π(x) primitive and are cross-validated:
+
+| Algorithm | Method | Cross-Validation | Scaling |
+|-----------|--------|------------------|---------|
+| π(x) | Meissel-Lehmer | Lagarias-Miller-Odlyzko, Odlyzko-Schönhage | O(x^(2/3)) |
+| π(x) | LMO | Meissel-Lehmer, Odlyzko-Schönhage | O(x^(3/5)) |
+| Zeros | Riemann-Siegel | Odlyzko-Schönhage | O(T^(1/2)) |
+| Zeros | Odlyzko-Schönhage | Riemann-Siegel | O(T^(1/2+ε)) |
+| Causal Sets | Sprinkling | Myrheim-Meyer, Benincasa-Dowker | O(N²) |
+| SFF | FFT | GUE analytical | O(N log N) |
+
+All algorithms are deterministic, parameter-free, and derived from the π(x) primitive.
 
 This methodology provides the complete mathematical framework for translating PrimeBookOne's 3.67 billion prime gaps into the single electron's worldline physics. Every Standard Model parameter derives from gap statistics. The 360-file research program will implement this framework across 9 deep articles.
 

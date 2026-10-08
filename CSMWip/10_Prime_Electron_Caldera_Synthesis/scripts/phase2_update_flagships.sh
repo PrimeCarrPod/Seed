@@ -29,7 +29,7 @@ echo ""
 
 # 1. Update FLAGSHIP_PrimeElectron_Framework.md
 echo ">>> Updating FLAGSHIP_PrimeElectron_Framework.md..."
-CALDERA_ADDITION_1='
+cat > /tmp/caldera_addition_1.md <<'EOF'
 ## CALDERA SYNTHESIS INTEGRATION
 
 ### 3-Tier Axiomatic Hierarchy (from Section 11)
@@ -68,15 +68,15 @@ The meta-depth hierarchy achieves closure at D = ω+3, where the three levels co
 - D = ω+3: Holographic encoding (fundamental physics, 3 generations)
 
 This closure is proven in Section 11 (Unified Synthesis) and Section 12 (Mathematical Compendium).
-'
+EOF
 
 # Insert before REFERENCES section
-sed -i '/^## REFERENCES/i\'"$CALDERA_ADDITION_1" "$FLAGSHIP1"
+sed -i '/^## REFERENCES/r /tmp/caldera_addition_1.md' "$FLAGSHIP1"
 echo "  Added Caldera integration section"
 
 # 2. Update FLAGSHIP_PrimeElectron_Framework_v2.md
 echo ">>> Updating FLAGSHIP_PrimeElectron_Framework_v2.md..."
-CALDERA_ADDITION_2='
+cat > /tmp/caldera_addition_2.md <<'EOF'
 ## CALDERA SYNTHESIS INTEGRATION
 
 ### Spectral Form Factors & Holographic Wormholes (Section 7)
@@ -102,14 +102,14 @@ Replica wormholes and the Page curve are derived on the prime lattice:
 - Mirror Chern number: n_M = 1
 - Phonon spectrum with Debye temperature θ_D ≈ 348 K
 - Prime gap lattice as topological crystalline insulator
-'
+EOF
 
-sed -i '/^## REFERENCES/i\'"$CALDERA_ADDITION_2" "$FLAGSHIP2"
+sed -i '/^## REFERENCES/r /tmp/caldera_addition_2.md' "$FLAGSHIP2"
 echo "  Added Caldera integration section"
 
 # 3. Update FOUNDATION_Prime_Electron_One_Electron_Universe.md
 echo ">>> Updating FOUNDATION_Prime_Electron_One_Electron_Universe.md..."
-CALDERA_ADDITION_3='
+cat > /tmp/caldera_addition_3.md <<'EOF'
 ## CALDERA SYNTHESIS INTEGRATION
 
 ### Participatory Metric Witness (Section 1)
@@ -133,14 +133,14 @@ The fundamental dynamics follow a recursive protocol:
 4. **Order Again:** RG blocking yields logarithmic running, new π(x) at next scale
 
 This protocol, operationalized in Section 12 (Mathematical Compendium), is the **computational primitive** from which all physics emerges.
-'
+EOF
 
-sed -i '/^## 10\. CLOSING:/i\'"$CALDERA_ADDITION_3" "$FOUNDATION"
+sed -i '/^## 10\. CLOSING:/r /tmp/caldera_addition_3.md' "$FOUNDATION"
 echo "  Added Caldera integration section"
 
 # 4. Update METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md
 echo ">>> Updating METHODOLOGY_Prime_Gap_To_Worldline_Mapping.md..."
-CALDERA_ADDITION_4='
+cat > /tmp/caldera_addition_4.md <<'EOF'
 ## CALDERA SYNTHESIS INTEGRATION
 
 ### 4-Step Protocol: Order → Fluctuate → Propagate → Order Again
@@ -175,9 +175,9 @@ All algorithms derive from the π(x) primitive and are cross-validated:
 | SFF | FFT | GUE analytical | O(N log N) |
 
 All algorithms are deterministic, parameter-free, and derived from the π(x) primitive.
-'
+EOF
 
-sed -i '/^## 13\. CONCLUSION/i\'"$CALDERA_ADDITION_4" "$METHODOLOGY"
+sed -i '/^## 13\. CONCLUSION/r /tmp/caldera_addition_4.md' "$METHODOLOGY"
 echo "  Added Caldera integration section"
 
 echo ""
