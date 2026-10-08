@@ -1,0 +1,168 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.76_MainActivity.java	2026-10-08 02:33:55.124277258 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.77_MainActivity.java	2026-10-08 02:33:55.140775565 +0000
+@@ -29,6 +29,7 @@
+ import android.os.Build;
+ import android.os.Bundle;
+ import android.os.Handler;
++import android.os.HandlerThread;
+ import android.os.Looper;
+ import android.os.PowerManager;
+ import android.view.Gravity;
+@@ -66,9 +67,17 @@
+     private BluetoothLeScanner bleScanner;
+     private boolean btScanning = false;
+     private PowerManager.WakeLock wakeLock;
++    private HandlerThread sensorThread;
++    private Handler sensorHandler;
+     private final float[] accelData = new float[3];
+     private final float[] magnetData = new float[3];
+-    private boolean hasAccel = false, hasMagnet = false;
++    private final float[] gyroData = new float[3];
++    private boolean hasAccel = false, hasMagnet = false, hasGyro = false;
++    private int stepCount = 0;
++    private float accelMagnitude = 0f;
++    private float altitude = 0f;
++    private float vertVelocity = 0f;
++    private long lastMovementTime = 0;
+     private boolean scanning = false, broadcasting = false;
+     private final Handler scanHandler = new Handler(Looper.getMainLooper());
+     private int scanCount = 0;
+@@ -126,12 +135,15 @@
+                 checkSelfPermission(Manifest.permission.NEARBY_WIFI_DEVICES) != PackageManager.PERMISSION_GRANTED;
+             boolean needBt = Build.VERSION.SDK_INT >= 31 && (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED
+                 || checkSelfPermission(Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED);
++            boolean needActivity = Build.VERSION.SDK_INT >= 29 &&
++                checkSelfPermission(Manifest.permission.ACTIVITY_RECOGNITION) != PackageManager.PERMISSION_GRANTED;
+ 
+-            if (needLoc || needWifi || needBt) {
++            if (needLoc || needWifi || needBt || needActivity) {
+                 java.util.ArrayList<String> perms = new java.util.ArrayList<>();
+                 if (needLoc) { perms.add(Manifest.permission.ACCESS_FINE_LOCATION); perms.add(Manifest.permission.ACCESS_COARSE_LOCATION); }
+                 if (needWifi) perms.add(Manifest.permission.NEARBY_WIFI_DEVICES);
+                 if (needBt) { perms.add(Manifest.permission.BLUETOOTH_SCAN); perms.add(Manifest.permission.BLUETOOTH_CONNECT); }
++                if (needActivity) perms.add(Manifest.permission.ACTIVITY_RECOGNITION);
+ 
+                 new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                     requestPermissions(perms.toArray(new String[0]), PERM_REQ);
+@@ -196,35 +208,76 @@
+     private void startSensors() {
+         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+         if (sensorManager == null) return;
++
++        sensorThread = new HandlerThread("BounceSpatialThread");
++        sensorThread.start();
++        sensorHandler = new Handler(sensorThread.getLooper());
++
+         Sensor accel = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+         Sensor magnet = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+-        if (accel != null) sensorManager.registerListener(sensorListener, accel, SensorManager.SENSOR_DELAY_UI);
+-        if (magnet != null) sensorManager.registerListener(sensorListener, magnet, SensorManager.SENSOR_DELAY_UI);
++        Sensor gyro = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
++        Sensor step = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
++
++        if (accel != null) sensorManager.registerListener(sensorListener, accel, SensorManager.SENSOR_DELAY_GAME, sensorHandler);
++        if (magnet != null) sensorManager.registerListener(sensorListener, magnet, SensorManager.SENSOR_DELAY_GAME, sensorHandler);
++        if (gyro != null) { sensorManager.registerListener(sensorListener, gyro, SensorManager.SENSOR_DELAY_GAME, sensorHandler); hasGyro = true; }
++        if (step != null) sensorManager.registerListener(sensorListener, step, SensorManager.SENSOR_DELAY_FASTEST, sensorHandler);
++
++        lastMovementTime = System.currentTimeMillis();
++        Toast.makeText(this, "Spatial: accel+mag" + (hasGyro ? "+gyro" : "") + "+step", Toast.LENGTH_SHORT).show();
+     }
+ 
+     private final SensorEventListener sensorListener = new SensorEventListener() {
+         public void onSensorChanged(SensorEvent event) {
+-            if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
++            int type = event.sensor.getType();
++            if (type == Sensor.TYPE_ACCELEROMETER) {
+                 System.arraycopy(event.values, 0, accelData, 0, 3);
+                 hasAccel = true;
+-            } else if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
++                accelMagnitude = (float) Math.sqrt(event.values[0]*event.values[0] + event.values[1]*event.values[1] + event.values[2]*event.values[2]);
++            } else if (type == Sensor.TYPE_MAGNETIC_FIELD) {
+                 System.arraycopy(event.values, 0, magnetData, 0, 3);
+                 hasMagnet = true;
++            } else if (type == Sensor.TYPE_GYROSCOPE) {
++                System.arraycopy(event.values, 0, gyroData, 0, 3);
++                hasGyro = true;
++            } else if (type == Sensor.TYPE_STEP_DETECTOR) {
++                stepCount++;
+             }
+-            if (hasAccel && hasMagnet) {
++
++            long now = System.currentTimeMillis();
++            if (hasAccel) {
+                 float[] R = new float[9], I = new float[9];
+-                if (SensorManager.getRotationMatrix(R, I, accelData, magnetData)) {
++                if (hasMagnet && SensorManager.getRotationMatrix(R, I, accelData, magnetData)) {
+                     float[] orientation = new float[3];
+                     SensorManager.getOrientation(R, orientation);
+                     float azimuth = (float) Math.toDegrees(orientation[0]);
+                     if (azimuth < 0) azimuth += 360;
+                     float pitch = (float) Math.toDegrees(orientation[1]);
+                     String orn = Math.abs(pitch) < 20 ? "flat" : Math.abs(pitch) > 60 ? "upright" : "tilted";
+-                    final float az = azimuth; final String or = orn;
++
++                    final float az = azimuth;
++                    final String or = orn;
+                     if (webView != null) {
+                         webView.post(() -> injectJs("Bounce.onCompass(" + az + ",'" + or + "')"));
+                     }
+                 }
++
++                // Send spatial movement packet every ~200ms
++                if (now - lastMovementTime > 200 && webView != null) {
++                    lastMovementTime = now;
++                    final float mag = accelMagnitude;
++                    final float gyX = gyroData[0], gyY = gyroData[1], gyZ = gyroData[2];
++                    final int steps = stepCount;
++                    final float alt = altitude;
++                    final float pitchDeg = (float) Math.toDegrees(Math.asin(Math.max(-1f, Math.min(1f, accelData[1] / 9.81f))));
++
++                    webView.post(() -> {
++                        injectJs("Bounce.onMovement({mag:" + String.format("%.2f", mag)
++                            + ",gx:" + String.format("%.3f", gyX) + ",gy:" + String.format("%.3f", gyY) + ",gz:" + String.format("%.3f", gyZ)
++                            + ",steps:" + steps + ",alt:" + String.format("%.1f", alt)
++                            + ",pitch:" + String.format("%.1f", pitchDeg) + ",gyro:" + hasGyro + "})");
++                    });
++                }
+             }
+         }
+         public void onAccuracyChanged(Sensor sensor, int accuracy) {}
+@@ -469,6 +522,7 @@
+     private final LocationListener gpsListener = new LocationListener() {
+         public void onLocationChanged(Location loc) {
+             if (loc == null || webView == null) return;
++            altitude = (float) (loc.getAltitude() * 3.281f);
+             webView.post(() -> {
+                 String json = "{lat:" + loc.getLatitude() + ",lng:" + loc.getLongitude()
+                     + ",alt:" + loc.getAltitude() + ",speed:" + loc.getSpeed()
+@@ -617,7 +671,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Trail + BT 3D · v1.0.49");
++        tag.setText("Spatial Aware · v1.0.77");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -687,12 +741,19 @@
+         if (btScanning && bleScanner != null) {
+             try { bleScanner.stopScan(btCallback); } catch (Exception ignored) {}
+         }
++        if (sensorManager != null && sensorHandler != null) {
++            sensorManager.unregisterListener(sensorListener);
++        }
++        if (sensorThread != null) {
++            sensorThread.quitSafely();
++            sensorThread = null;
++        }
+     }
+ 
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.5 · WiFi Direct + Scanner", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.77 · Spatial Aware", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface

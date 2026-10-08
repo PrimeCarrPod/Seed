@@ -1,0 +1,38 @@
+Practice_ID,Category,Type,Description,First_Observed_Version,Confirmed_Working_Version,Evidence,Impact,Applies_To,Related_Patterns
+BP001,Build,Best Practice,No-Gradle aapt2 pipeline for fast reproducible builds,1.0.0,1.0.91,4-second builds vs minutes with Gradle,Speed + transparency,All versions,Keep SDK paths fixed in build.sh
+BP002,Build,Best Practice,Pin SDK versions: compileSdk 33, build-tools 33.0.1,1.0.0,1.0.91,Stable builds across sessions,Reproducibility,All versions,Match build-tools to compileSdk
+BP003,Build,Best Practice,Auto-generate debug.keystore if missing,1.0.0,1.0.91,Build never fails on missing keystore,Reliability,All versions,Use keytool in build.sh
+BP004,Build,Best Practice,Inject assets via zip after aapt2 link,1.0.0,1.0.91,HTML/JS/CSS included in APK,Assets work,All versions,Step 2b in build.sh
+BP005,Build,Best Practice,Use javac -source 11 -target 11 for compatibility,1.0.0,1.0.91,Works on JDK 17,Compatibility,All versions,Don't use newer source levels
+BP006,Android,Best Practice,Revert to proven v1.0.3 permission pattern,1.0.45,1.0.91,Fixed API33 NEARBY_WIFI_DEVICES issues,Stability,All versions,checkSelfPermission + requestPermissions + handler
+BP007,Android,Best Practice,Delayed permission request with post handler,1.0.46,1.0.91,Avoids permission dialog on startup,UX,All versions,Handler.postDelayed(permissionRequest, 100)
+BP008,Android,Best Practice,5s Bluetooth scan restart cycle,1.0.65,1.0.91,Prevents scan death,Continuous scanning,1.0.65+,Handler.postDelayed(restartScan, 5000)
+BP009,Android,Best Practice,LOW_LATENCY scan mode for BLE,1.0.48,1.0.91,Fastest device discovery,Responsiveness,1.0.48+,ScanSettings.SCAN_MODE_LOW_LATENCY
+BP010,Android,Best Practice,Conditional wake lock (only when trail active),1.0.63,1.0.91,Prevents battery drain,Battery life,1.0.63+,acquire() only when recording
+BP011,Android,Best Practice,Multi-method Wi-Fi Direct fallback,1.0.14,1.0.91,Builder → Reflection → Bonjour,Reliability,1.0.14+,Priority order handles API differences
+BP012,Android,Best Practice,Fixed 5.1s duty cycle for SSID broadcast,1.0.20,1.0.91,Consistent timing across devices,Predictability,1.0.20+,2.5s ON + 2.6s OFF
+BP013,Android,Best Practice,Comprehensive runtime permissions (15 total),1.0.3,1.0.91,Covers all API levels 23-33+,Compatibility,All versions,Handle API29/31/33+ differences
+BP014,HTML/JS,Best Practice,Local Three.js/Chart.js assets (no CDN),1.0.0,1.0.91,Offline capable,Works without internet,All versions,Embed in assets/js/
+BP015,HTML/JS,Best Practice,HTML try/catch wrapper for JS errors,1.0.52,1.0.91,Prevents WebView crashes,Stability,1.0.52+,window.onerror + try/catch on bridge calls
+BP016,HTML/JS,Best Practice,GPU-safe Three.js object disposal,1.0.54,1.0.91,geometry.dispose() + material.dispose(),No memory leaks,1.0.54+,ALWAYS dispose on rebuild
+BP017,HTML/JS,Best Practice,2000 point cap on trail (FIFO),1.0.62,1.0.91,Prevents memory growth,Performance,1.0.62+,Shift oldest points
+CP001,Build,Anti-Pattern,Using Gradle for simple single-activity app,1.0.80,1.0.85,Slow builds, AGP version hell,Complexity,1.0.80-1.0.85,Use no-Gradle aapt2 instead
+CP002,Build,Anti-Pattern,Hardcoding SDK paths in build.sh,1.0.0,1.0.90,Breaks on different machines,Portability,All versions,Use ANDROID_HOME detection
+CP003,Build,Anti-Pattern,Not matching build-tools to compileSdk,-,-,Build failures,Broken builds,-,Always match versions
+CP004,Android,Anti-Pattern,API33 NEARBY_WIFI_DEVICES without neverForLocation,1.0.80,1.0.85,Permission denied,Scan fails,1.0.80-1.0.85,Add flag or revert to v1.0.3 pattern
+CP005,Android,Anti-Pattern,Bluetooth scan without restart cycle,1.0.48,1.0.64,Scan dies after ~10s,No BLE data,1.0.48-1.0.64,5s restart cycle mandatory
+CP006,Android,Anti-Pattern,Wake lock always held,1.0.63,1.0.63,Battery drain,User complaints,1.0.63,Conditional acquire/release
+CP007,Android,Anti-Pattern,Single-method Wi-Fi Direct broadcast,1.0.13,1.0.13,Fails on some API levels,Unreliable,1.0.13,Multi-method fallback required
+CP008,Android,Anti-Pattern,Array index typo in EKF initialization,1.0.90,1.0.91,x[2]=0; x[2]=0; should be x[3]=0,Broken velocity tracking,1.0.90,ALWAYS verify array indices (P0-01)
+CP009,Android,Anti-Pattern,Not disposing Three.js geometries/materials,1.0.49,1.0.53,Memory leak → crash,App crashes,1.0.49-1.0.53,geometry.dispose() + material.dispose()
+CP010,Android,Anti-Pattern,Trail recording without speed threshold,1.0.49,1.0.55,Records stationary points,Noisy trail,1.0.49-1.0.55,Only record when speed > 1mph
+CP011,HTML/JS,Anti-Pattern,CDN links for Three.js/Chart.js,-,-,Fails offline,No 3D rendering,-,Local assets mandatory
+CP012,HTML/JS,Anti-Pattern,No error handling on JS bridge calls,1.0.0,1.0.51,Silent failures,Debugging hell,1.0.0-1.0.51,try/catch + window.onerror
+CP013,HTML/JS,Anti-Pattern,Rebuilding trail geometry every frame,1.0.49,1.0.61,Performance kill,Low FPS,1.0.49-1.0.61,Rebuild every 5 frames
+CP014,HTML/JS,Anti-Pattern,Unbounded trail point array,1.0.49,1.0.61,Memory growth,OOM crash,1.0.49-1.0.61,2000pt FIFO cap
+CP015,Architecture,Anti-Pattern,God class MainActivity (1416 lines),1.0.0,1.0.91,Hard to maintain,Technical debt,All versions,Split into services (P1-03)
+CP016,Architecture,Anti-Pattern,No unit tests for positioning algorithms,1.0.0,1.0.91,Unverified math,Bugs in production,All versions,Add JUnit tests (P1-02)
+CP017,Architecture,Anti-Pattern,RTT ranging stub not implemented,1.0.81,1.0.91,Missing 802.11mc,Accuracy gap,1.0.81+,Complete WifiRttRanging (P0-02)
+CP018,Architecture,Anti-Pattern,AP positions initialized randomly,1.0.90,1.0.91,Poor trilateration,Wrong positions,1.0.90+,Self-calibration needed (P0-03)
+CP019,Architecture,Anti-Pattern,Particle filter AP params hardcoded,1.0.90,1.0.91,Non-adaptive,Poor fit,1.0.90+,Parameter learning (P1-01)
+CP020,Architecture,Anti-Pattern,Single debug keystore only,1.0.0,1.0.91,No release signing,Play Store blocked,All versions,Add release keystore (TD-08)

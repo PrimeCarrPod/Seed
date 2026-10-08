@@ -1,0 +1,37 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.60_bounce.html	2026-10-08 02:33:54.821789046 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.61_bounce.html	2026-10-08 02:33:54.839788617 +0000
+@@ -190,7 +190,7 @@
+     var tm=new THREE.MeshPhongMaterial({color:0xFF6600,emissive:0x331100,transparent:true,opacity:.85,shininess:40});
+     var top=new THREE.Mesh(tg,tm);g.add(top);
+     var bg=new THREE.SphereGeometry(1.2,48,24,0,Math.PI*2,Math.PI*.4,Math.PI*.75);
+-    var bm=new THREE.MeshPhongMaterial({color:0xFF8833,emissive:0x331100,transparent:true,opacity:.7,shininess:30});
++    var bm=new THREE.MeshPhongMaterial({color:0xFF8833,emissive:0x331100,transparent:true,opacity:.9,shininess:30});
+     var bot=new THREE.Mesh(bg,bm);bot.position.y=-.6;g.add(bot);
+     var eg=new THREE.SphereGeometry(.15,16,8);var em2=new THREE.MeshBasicMaterial({color:0xFFFFFF});
+     var e1=new THREE.Mesh(eg,em2);e1.position.set(.5,.6,.9);g.add(e1);
+@@ -328,7 +328,7 @@
+         existing.approaching=delta>1;
+       }else{
+         var color=d.reliable?'#00FF88':(d.persist>30?'#4488FF':'#a855f7');
+-        var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false});
++        var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false});
+         var sdot=new THREE.Mesh(sg,sm);
+         var angle=Math.random()*Math.PI*2;var dist2=Math.min(d.dist*2,30);
+         sdot.position.set(Math.cos(angle)*dist2,0,Math.sin(angle)*dist2);
+@@ -506,12 +506,12 @@
+     }
+     // Trail recording
+     if(self.trailActive&&self.mySpeed>1){self._tf=(self._tf||0)+1;
+-      if(self._tf%3===0){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+-      if(self.trailPoints.length>500)self.trailPoints.shift()}
+-      if(self._tf%10===0&&self.trailPoints.length>1){
++      self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
++      if(self.trailPoints.length>500)self.trailPoints.shift()
++      if(self._tf%5===0&&self.trailPoints.length>1){
+         if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
+         var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
+-        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
++        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.9}));
+         self.scene.add(self.trailLine);
+       }
+     }

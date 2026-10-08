@@ -1,0 +1,31 @@
+Refinement_ID,Component,Current_State,Issue_Description,Proposed_Refinement,Priority,Estimated_Effort,Impact_If_Done,Risk_If_Not_Done,Dependencies,Target_Version,Status,Notes
+RF001,MainActivity.java (1416 lines),God class,Hard to maintain/test,Split into: ScanningService, BroadcastService, PositioningEngine, UIController,P1,High,Maintainability,Technical debt grows,All features,1.0.95,Planned,P1-03 from master list
+RF002,PositionEKF.java,vy init bug fixed,Algorithm correctness,Verify all EKF predictions with unit tests,P0,Medium,Accuracy,Bug in production,EKF module,1.0.92,Done,P0-01 completed
+RF003,WifiRttRanging.java,Stub only,Missing 802.11mc,Implement full FTM ranging with WifiRttManager,P0,High,Indoor accuracy,Accuracy gap,API28+ hardware,1.0.93,Planned,P0-02 from master list
+RF004,ParticleFilter.java,AP params hardcoded,Non-adaptive filtering,Implement adaptive RSSI mean/variance/pathloss per AP,P1,High,Non-Gaussian fit,Poor indoor accuracy,Scan history,1.0.94,Planned,P1-01 from master list
+RF005,Trilateration.java,AP positions random,Poor initial positions,Implement AP position self-calibration from movement,P0,High,Convergence speed,Wrong positions,Movement data,1.0.93,Planned,P0-03 from master list
+RF006,build.sh,Hardcoded SDK paths,Breaks on new envs,Auto-detect ANDROID_HOME + fallback paths,P1,Low,Portability,Build failures,SDK setup,1.0.93,Planned,Environment detection
+RF007,bounce.html (2200 lines),Monolithic HTML,Hard to maintain,Split into modules: scene, ui, camera, trail, bt3d,P2,Medium,Maintainability,JS bloat,Three.js modules,1.0.94,Planned,ES6 modules
+RF008,Three.js assets,Local r128 only,Version locked,Add version management + update script,P2,Low,Upgradability,Security patches,Asset management,1.0.94,Planned,Three.js r158+
+RF009,Chart.js metrics,4 metrics only,Limited visibility,Add: latency, packet loss, mesh hops, battery,P1,Low,Situational awareness,Blind spots,Metrics pipeline,1.0.94,Planned,Telemetry expansion
+RF010,Trail geometry rebuild,Every 5 frames,Performance,Adaptive rebuild: every frame when moving fast, every 10 when slow,P1,Low,FPS stability,Jank,Trail points,1.0.94,Planned,Adaptive quality
+RF011,Bluetooth scan restart,Fixed 5s cycle,May be too frequent/aggressive,Adaptive: 2s when active devices, 10s when quiet,P1,Low,Battery life,Scan gaps,BT state,1.0.94,Planned,Smart scheduling
+RF012,SSID broadcast duty cycle,Fixed 5.1s/slot,Inflexible,Adaptive: faster when moving, slower when stationary,P2,Low,Channel efficiency,Wasted airtime,GPS speed,1.0.94,Planned,Context-aware
+RF013,EKF process noise,Fixed Q matrix,Non-adaptive,Adaptive Q based on RSSI variance,P1,Medium,Tracking accuracy,Divergence,RSSI variance,1.0.94,Planned,Adaptive filtering
+RF014,Zone HMM transitions,Fixed hysteresis,May not fit all envs,Learn transition matrix from zone history,P1,Medium,Zone stability,Flutter,Zone history,1.0.94,Planned,Adaptive HMM
+RF015,CatmullRom trail tension,Fixed 0.5 (centripetal),Not configurable,Add tension parameter for trail smoothness/sharpness,P2,Low,Visual quality,User preference,Trail settings,1.0.94,Planned,User control
+RF016,UnrealBloomPass strength,Fixed 1.0,Too bright on mobile,Auto-scale by device GPU tier (bench on startup),P1,Medium,Mobile performance,Crashes/lag,GPU detection,1.0.94,Planned,Adaptive bloom
+RF017,Permission request flow,Delayed + handler,Still complex,Unify: single PermissionManager class,P1,Medium,Code clarity,Permission bugs,All perms,1.0.95,Planned,Architecture cleanup
+RF018,JS Bridge methods,30+ methods,No organization,Group into namespaces: Bounce.radio, Bounce.viz, Bounce.nav,P1,Low,Developer experience,Namespace collisions,JS bridge,1.0.94,Planned,API design
+RF019,Error handling,Try/catch in HTML,Inconsistent,Central ErrorReporter class + user-facing messages,P1,Low,Debugging,Silent failures,Error boundary,1.0.94,Planned,Error UX
+RF020,APK size,230 KB,Growing,Audit: remove unused Three.js modules, enable ProGuard,R2,Low,Download size,Bloat,Build pipeline,1.0.94,Planned,Size budget
+RF021,Debug keystore only,Single debug key,No release signing,Generate release keystore + signing config,P0,High,Play Store deploy,No distribution,Keystore mgmt,1.0.93,Planned,TD-08 from master list
+RF022,Unit tests,Zero tests,Unverified algorithms,JUnit tests for all 6 positioning algos,P1,High,Reliability,Regressions,P1-02,1.0.94,Planned,P1-02 from master list
+RF023,CI/CD pipeline,None,Manual builds,GitHub Actions: build + test + sign + release,P2,Medium,Automation,Human error,Build script,1.0.95,Planned,TD-09 from master list
+RF024,Version bump,Manual in build.sh,Error-prone,Auto-version from git tags + changelog,P2,Low,Release hygiene,Version conflicts,Git tags,1.0.94,Planned,TD-10 from master list
+RF025,ProGuard/R8,Disabled,No obfuscation,Enable minification + optimization,P2,Low,APK size + security,Reverse engineering,Build pipeline,1.0.94,Planned,TD-07 from master list
+RF026,Offline capability,Local assets only,No map tiles,Bundle minimal world map vector tiles,P2,High,True offline,No context,Map data,1.0.96,Planned,P2-01 from master list
+RF027,Voice announcements,None,No audio feedback,TTS integration for hazards/alerts,P1,Low,Hands-free safety,Missed alerts,TextToSpeech,1.0.95,Planned,P2-03 from master list
+RF028,Export formats,JSON only,Limited interoperability,Add GPX/KML/CSV export,P1,Low,Data portability,Locked in,Trail system,1.0.94,Planned,P2-05 from master list
+RF029,Theme system,None,Fixed colors,CSS variables + night/day auto-switch,P2,Low,UX/accessibility,Eye strain,CSS,1.0.94,Planned,P2-04 from master list
+RF030,Accessibility,None,No a11y,Content descriptions + TalkBack support,P2,Low,Inclusivity,Excluded users,UI components,1.0.95,Planned,Android a11y

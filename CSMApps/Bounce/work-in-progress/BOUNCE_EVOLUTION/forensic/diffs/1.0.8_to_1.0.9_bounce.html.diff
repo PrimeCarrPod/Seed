@@ -1,0 +1,38 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.8_bounce.html	2026-10-08 02:33:53.794438361 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.9_bounce.html	2026-10-08 02:33:53.812222969 +0000
+@@ -334,7 +334,22 @@
+       var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov)}
+     else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove()}
+   },
+-  fly(){this._fly=!this._fly;if(!this._fly){this.controls.autoRotate=true;return}var wp=[];for(var i=0;i<8;i++)wp.push(new THREE.Vector3((Math.random()-.5)*45,(Math.random()-.5)*12,(Math.random()-.5)*45));this._flyWp=wp;this._flyP=0},
++  fly(){this._fly=!this._fly;
++    if(!this._fly){this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o';return}
++    document.getElementById('btn-fly').className='btn btn-g';
++    this._flyWp=[];this._flyP=0;
++    // Build waypoints from real nodes + beacons, loop forever
++    var allPos=[{x:0,y:6,z:15}]; // start above tardigrade
++    var self=this;
++    if(this.useRealData&&this.realNodes.length>0){
++      this.realNodes.forEach(function(n){allPos.push({x:n.dot.position.x,y:n.dot.position.y+3,z:n.dot.position.z})});
++    }
++    this.beacons.forEach(function(b){allPos.push({x:b.dot.position.x,y:b.dot.position.y+4,z:b.dot.position.z})});
++    if(this.staticNodes.length>0)this.staticNodes.forEach(function(sn){allPos.push({x:sn.x,y:sn.y+2,z:sn.z})});
++    // If not enough, add random
++    if(allPos.length<4){for(var i=0;i<8;i++)allPos.push({x:(Math.random()-.5)*45,y:4+Math.random()*10,z:(Math.random()-.5)*45})}
++    this._flyWp=allPos;this._flyP=0;this._flyLoop=true;
++  },
+   _animate(){
+     var self=this;
+     requestAnimationFrame(function(){self._animate()});var dt=this.clock.getDelta(),now=Date.now();
+@@ -357,7 +372,10 @@
+     var bearingRad=self.myHeading*Math.PI/180;
+     self.tardi.group.position.x+=Math.sin(bearingRad)*.01;self.tardi.group.position.z+=Math.cos(bearingRad)*.01;
+     if(self.useRealData&&self.realNodes.length>0){self._refreshUI()}
+-    if(this._fly&&this._flyWp){var t=Math.min(this._flyP/12000,1);this._flyP+=dt*1000;var wp=this._flyWp,i=Math.floor(t*(wp.length-1)),f=(t*(wp.length-1))%1,p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(wp.length-1,i+1)],p3=wp[Math.min(wp.length-1,i+2)],f2=f*f,f3=f2*f;var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f2+(-p0.x+3*p1.x-3*p2.x+p3.x)*f3),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f2+(-p0.y+3*p1.y-3*p2.y+p3.y)*f3),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f2+(-p0.z+3*p1.z-3*p2.z+p3.z)*f3));this.camera.position.lerp(pos,.04);if(t>=1){this._fly=false;this.controls.autoRotate=true}}
++    if(this._fly&&this._flyWp&&this._flyWp.length>0){var t=Math.min(this._flyP/10000,1);this._flyP+=dt*1000;var wp=this._flyWp,l=wp.length,i=Math.floor(t*(l-1)),f=(t*(l-1))%1;
++      var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(l-1,i+1)],p3=wp[Math.min(l-1,i+2)];
++      var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f*f+(-p0.x+3*p1.x-3*p2.x+p3.x)*f*f*f),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f*f+(-p0.y+3*p1.y-3*p2.y+p3.y)*f*f*f),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f*f+(-p0.z+3*p1.z-3*p2.z+p3.z)*f*f*f));
++      this.camera.position.lerp(pos,.04);if(t>=1){if(this._flyLoop){this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o'}}}
+     this.controls.update();
+     // POV mode: lock camera to tardigrade position
+     if(self.povMode){

@@ -1,0 +1,87 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.90_MainActivity.java	2026-10-08 02:33:55.355871224 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.91_MainActivity.java	2026-10-08 02:33:55.380831584 +0000
+@@ -216,7 +216,6 @@
+         setContentView(root);
+ 
+         prefs = getSharedPreferences("BounceUpdate", MODE_PRIVATE);
+-        checkForUpdates();
+ 
+         PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
+         wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Bounce:TrailRecorder");
+@@ -277,18 +276,26 @@
+         startBtCleanupTask();
+     }
+ 
+-    private void checkForUpdates() {
++    private void checkUpdate() {
+         new Thread(() -> {
+             String latest = fetchLatestVersion();
+             runOnUiThread(() -> {
+-                if (latest != null && isNewerVersion(latest, "1.0.90")) {
++                if (latest != null && isNewerVersion(latest, "1.0.91")) {
+                     latestVersion = latest;
+-                    injectJs("UI.showUpdateMenu('" + latestVersion + "')");
++                    injectJs("Bounce.onUpdateAvailable('" + latestVersion + "')");
++                } else {
++                    injectJs("Bounce.onUpdateNotAvailable()");
+                 }
+             });
+         }).start();
+     }
+ 
++    private void startUpdate() {
++        if (latestVersion == null) return;
++        Toast.makeText(this, "Updating to v" + latestVersion + "...", Toast.LENGTH_SHORT).show();
++        prefs.edit().putInt("ignoreCount", 0).apply();
++    }
++
+     private String fetchLatestVersion() {
+         HttpURLConnection conn = null;
+         try {
+@@ -1214,7 +1221,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("RSSI Kalman · v1.0.79");
++        tag.setText("RSSI Kalman · v1.0.91");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -1300,7 +1307,7 @@
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.90 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.91 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface
+@@ -1328,7 +1335,7 @@
+             theoryMode = enabled;
+             runOnUiThread(() -> {
+                 String mode = enabled ? "THEORY" : "LIVE";
+-                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.90 · " + mode);
++                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.91 · " + mode);
+                 Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
+             });
+         }
+@@ -1378,6 +1385,19 @@
+         }
+ 
+         @JavascriptInterface
++        public void checkUpdate() {
++            runOnUiThread(() -> checkUpdate());
++        }
++
++        @JavascriptInterface
++        public void startUpdate(String ver) {
++            runOnUiThread(() -> {
++                latestVersion = ver;
++                MainActivity.this.startUpdate();
++            });
++        }
++
++        @JavascriptInterface
+         public void onUpdateSelected(String action) {
+             runOnUiThread(() -> {
+                 if ("update".equals(action)) {

@@ -1,0 +1,51 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.40_bounce.html	2026-10-08 02:33:54.425147624 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.41_bounce.html	2026-10-08 02:33:54.445851053 +0000
+@@ -66,10 +66,10 @@
+   </div>
+ </div>
+ 
+-<div id="hud-left2" class="pg" style="bottom:340px;gap:4px">
++<div id="hud-left2" class="pg" style="gap:4px;bottom:340px">
+   <div class="tab tab-l" onclick="UI2.toggle()">S<br>C<br>A<br>N</div>
+   <div class="hud pointer-events-auto scroll" style="padding:5px;max-width:280px">
+-    <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Live Wi-Fi · <span id="scan2-count" class="text-green font-mono">0</span></h3>
++    <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">Live Wi-Fi</h3>
+     <ul id="scan2-list" style="font-size:8px;max-height:140px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
+   </div>
+ </div>
+@@ -234,11 +234,7 @@
+       ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+     }
+   },
+-  onScanStatus(result){
+-    var r=typeof result==='string'?JSON.parse(result):result;
+-    var list=document.getElementById('scan2-list');
+-    if(list)list.innerHTML='<li style="color:#6b7280">'+r.status+': '+r.msg+'</li>';
+-  },
++  _startScanner(){
+     var self=this;
+     setInterval(function(){
+       if(!self._hasGps){
+@@ -464,18 +460,18 @@
+   setInsets(sb,nb){document.getElementById('hdr').style.paddingTop=(parseInt(sb,10)+10)+'px'},
+   toggleLeft(){this.lT=!this.lT;document.getElementById('hud-left').style.transform=this.lT?'translateX(calc(-100% + 28px))':'translateX(0)'},
+   toggleRight(){this.rT=!this.rT;document.getElementById('hud-right').style.transform=this.rT?'translateX(calc(100% - 28px))':'translateX(0)'},
+-  tuckToggle(){this.tA=!this.tA;var l=document.getElementById('hud-left'),r=document.getElementById('hud-right');var l2=document.getElementById('hud-left2');if(this.tA){this.lT=true;this.rT=true;l.style.transform='translateX(calc(-100% + 28px))';r.style.transform='translateX(calc(100% - 28px))';if(l2){l2.style.transform='translateX(calc(-100% + 22px))';UI2.t=true}}else{this.lT=false;this.rT=false;l.style.transform='translateX(0)';r.style.transform='translateX(0)';if(l2){l2.style.transform='translateX(0)';UI2.t=false}}document.getElementById('btn-tuck').textContent=this.tA?'UNTUCK':'TUCK'}
++  tuckToggle(){this.tA=!this.tA;var l=document.getElementById('hud-left'),r=document.getElementById('hud-right');if(this.tA){this.lT=true;this.rT=true;l.style.transform='translateX(calc(-100% + 28px))';r.style.transform='translateX(calc(100% - 28px))';document.getElementById('btn-tuck').textContent='UNTUCK'}else{this.lT=false;this.rT=false;l.style.transform='translateX(0)';r.style.transform='translateX(0)';document.getElementById('btn-tuck').textContent='TUCK'}}
+ };
+ window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
+ setTimeout(function(){
+   setInterval(function(){
+-    var list2=document.getElementById('scan2-list'),cnt2=document.getElementById('scan2-count');
+     var listR=document.getElementById('wifi-scanner-list');
++    var list2=document.getElementById('scan2-list');
+     if(!Bounce.realNodes)return;
+     var h='';Bounce.realNodes.sort(function(a,b){return a.dist-b.dist});
+     for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<li style="color:'+c+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+-    if(list2){list2.innerHTML=h||'<li style="color:#FF8800">waiting for scan...</li>';if(cnt2)cnt2.textContent=Bounce.realNodes.length}
+-    if(listR){listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>'}
++    if(listR)listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>';
++    if(list2)list2.innerHTML=h||'<li style="color:#FF8800">waiting...</li>';
+   },500);
+ },3000);
+ </script>

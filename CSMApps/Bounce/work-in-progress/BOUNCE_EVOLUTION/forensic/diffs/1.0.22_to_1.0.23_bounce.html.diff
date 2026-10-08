@@ -1,0 +1,35 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.22_bounce.html	2026-10-08 02:33:54.070046751 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.23_bounce.html	2026-10-08 02:33:54.090374907 +0000
+@@ -323,8 +323,8 @@
+         setTimeout(function(){
+           if(!self.broadcast)return;
+           self._doBroadcast();
+-        },2500);
+-      },7000);
++        },1500);
++      },4000);
+     }else{
+       bar.style.display='none';st.textContent='OFF';st.className='text-red font-mono';
+       btn.textContent='BROADCAST';btn.className='btn btn-g';
+@@ -333,7 +333,7 @@
+     }
+   },
+   _doBroadcast(){
+-    this._broadcastSlot=(this._broadcastSlot||0)%4;
++    this._broadcastSlot=(this._broadcastSlot||0)%3;
+     if(!this.originKey)this.originKey=String(Math.floor(100+Math.random()*899));
+     var key=this.originKey,plate=this.licensePlate||'NOID';
+     var base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+@@ -343,11 +343,10 @@
+     var code;
+     if(this._broadcastSlot===0)code=key+plate.substring(0,22);
+     else if(this._broadcastSlot===1)code=key+taf.substring(0,22);
+-    else if(this._broadcastSlot===2)code=key+('TA'+plate+'CLR').substring(0,22);
+     else code=key+human.substring(0,22);
+     this._broadcastSlot++;
+     document.getElementById('broadcast-ssid').textContent=code;
+-    document.getElementById('broadcast-status').textContent='ON · TX'+(this._broadcastSlot||4);
++    document.getElementById('broadcast-status').textContent='ON · TX'+(this._broadcastSlot||3);
+     document.getElementById('broadcast-status').className='text-green font-mono pulse-g';
+     document.getElementById('key-display').textContent=key;
+     if(typeof BounceBridge!=='undefined'&&BounceBridge.startBroadcast)BounceBridge.startBroadcast(code);

@@ -1,0 +1,23 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.10_bounce.html	2026-10-08 02:33:53.830421419 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.11_bounce.html	2026-10-08 02:33:53.848989453 +0000
+@@ -131,7 +131,7 @@
+ function colorToHex(cl){var c={White:'#F0F0F0',Black:'#222222',Silver:'#C0C0C0',Blue:'#4488FF',Red:'#FF4444',Gray:'#888888',Green:'#44BB44',Orange:'#FF8844',Yellow:'#FFCC00',Brown:'#8B6914',Navy:'#222266',Burgundy:'#882222',Gold:'#CCA600',Tan:'#C4A882'};return c[cl]||'#888888'}
+ 
+ // ═══════════════════════════════════════════
+-const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,myHeading:90,mySpeed:65,myAlt:450,scanMeta:{},useRealData:false,
++const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,myHeading:90,mySpeed:65,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,
+   init(){
+     var c=document.getElementById('canvas-container');
+     this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);
+@@ -368,7 +368,10 @@
+     var bearingRad=self.myHeading*Math.PI/180;
+     self.tardi.group.position.x+=Math.sin(bearingRad)*.01;self.tardi.group.position.z+=Math.cos(bearingRad)*.01;
+     if(self.useRealData&&self.realNodes.length>0){self._refreshUI()}
+-    if(this._fly&&this._flyWp&&this._flyWp.length>0){var t=Math.min(this._flyP/10000,1);this._flyP+=dt*1000;var wp=this._flyWp,l=wp.length,i=Math.floor(t*(l-1)),f=(t*(l-1))%1;var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(l-1,i+1)],p3=wp[Math.min(l-1,i+2)];var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f*f+(-p0.x+3*p1.x-3*p2.x+p3.x)*f*f*f),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f*f+(-p0.y+3*p1.y-3*p2.y+p3.y)*f*f*f),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f*f+(-p0.z+3*p1.z-3*p2.z+p3.z)*f*f*f));this.camera.position.lerp(pos,.04);if(t>=1){if(this._flyLoop){this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o'}}}
++    if(this._fly&&this._flyWp&&this._flyWp.length>0){var t=Math.min(this._flyP/10000,1);this._flyP+=dt*1000;var wp=this._flyWp,l=wp.length,i=Math.floor(t*(l-1)),f=(t*(l-1))%1;var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(l-1,i+1)],p3=wp[Math.min(l-1,i+2)];var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f*f+(-p0.x+3*p1.x-3*p2.x+p3.x)*f*f*f),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f*f+(-p0.y+3*p1.y-3*p2.y+p3.y)*f*f*f),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f*f+(-p0.z+3*p1.z-3*p2.z+p3.z)*f*f*f));
++      var K=10,D=.9;self._flyVx=(self._flyVx+(pos.x-self.camera.position.x)*K)*D;self._flyVy=(self._flyVy+(pos.y-self.camera.position.y)*K)*D;self._flyVz=(self._flyVz+(pos.z-self.camera.position.z)*K)*D;
++      self.camera.position.x+=self._flyVx*dt;self.camera.position.y+=self._flyVy*dt;self.camera.position.z+=self._flyVz*dt;
++      if(t>=1){if(this._flyLoop){self._flyVx*=1.5;self._flyVy*=1.5;self._flyVz*=1.5;this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o'}}}
+     this.controls.update();
+     // POV mode: lock camera to tardigrade position
+     if(self.povMode){

@@ -1,0 +1,80 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.24_MainActivity.java	2026-10-08 02:33:54.107325393 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.25_MainActivity.java	2026-10-08 02:33:54.126768631 +0000
+@@ -9,6 +9,10 @@
+ import android.content.pm.PackageManager;
+ import android.graphics.Color;
+ import android.graphics.Typeface;
++import android.hardware.Sensor;
++import android.hardware.SensorEvent;
++import android.hardware.SensorEventListener;
++import android.hardware.SensorManager;
+ import android.location.Location;
+ import android.location.LocationListener;
+ import android.location.LocationManager;
+@@ -50,6 +54,10 @@
+     private WifiP2pManager p2pManager;
+     private WifiP2pManager.Channel p2pChannel;
+     private LocationManager locationManager;
++    private SensorManager sensorManager;
++    private final float[] accelData = new float[3];
++    private final float[] magnetData = new float[3];
++    private boolean hasAccel = false, hasMagnet = false;
+     private boolean scanning = false, broadcasting = false;
+     private final Handler scanHandler = new Handler(Looper.getMainLooper());
+     private int scanCount = 0;
+@@ -126,8 +134,46 @@
+     private void startServices() {
+         startWifiScanning();
+         startGpsTracking();
++        startSensors();
+     }
+ 
++    private void startSensors() {
++        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
++        if (sensorManager == null) return;
++        Sensor accel = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
++        Sensor magnet = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
++        if (accel != null) sensorManager.registerListener(sensorListener, accel, SensorManager.SENSOR_DELAY_UI);
++        if (magnet != null) sensorManager.registerListener(sensorListener, magnet, SensorManager.SENSOR_DELAY_UI);
++    }
++
++    private final SensorEventListener sensorListener = new SensorEventListener() {
++        public void onSensorChanged(SensorEvent event) {
++            if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
++                System.arraycopy(event.values, 0, accelData, 0, 3);
++                hasAccel = true;
++            } else if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
++                System.arraycopy(event.values, 0, magnetData, 0, 3);
++                hasMagnet = true;
++            }
++            if (hasAccel && hasMagnet) {
++                float[] R = new float[9], I = new float[9];
++                if (SensorManager.getRotationMatrix(R, I, accelData, magnetData)) {
++                    float[] orientation = new float[3];
++                    SensorManager.getOrientation(R, orientation);
++                    float azimuth = (float) Math.toDegrees(orientation[0]);
++                    if (azimuth < 0) azimuth += 360;
++                    float pitch = (float) Math.toDegrees(orientation[1]);
++                    String orn = Math.abs(pitch) < 20 ? "flat" : Math.abs(pitch) > 60 ? "upright" : "tilted";
++                    final float az = azimuth; final String or = orn;
++                    if (webView != null) {
++                        webView.post(() -> injectJs("Bounce.onCompass(" + az + ",'" + or + "')"));
++                    }
++                }
++            }
++        }
++        public void onAccuracyChanged(Sensor sensor, int accuracy) {}
++    };
++
+     private long broadcastStartTime = 0;
+     private boolean transitionInProgress = false;
+     private Handler timeoutHandler = new Handler(Looper.getMainLooper());
+@@ -507,7 +553,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("GPS+TAF · v1.0.24");
++        tag.setText("Sensor Fusion · v1.0.25");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);

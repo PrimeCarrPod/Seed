@@ -1,0 +1,69 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.78_bounce.html	2026-10-08 02:33:55.162186857 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.79_bounce.html	2026-10-08 02:33:55.183751630 +0000
+@@ -3,7 +3,7 @@
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+-    <title>Bounce v1.0.78 — ChaseCam | CarrPod</title>
++    <title>Bounce v1.0.79 — Kalman Distance | CarrPod</title>
+   <script src="js/three.min.js"></script>
+   <script src="js/OrbitControls.js"></script>
+   <script src="js/EffectComposer.js"></script>
+@@ -53,7 +53,7 @@
+ <div id="hdr">
+   <div class="pointer-events-auto">
+     <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
+-    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">TAF/DMV Mesh · ChaseCam</span><span style="color:#4488FF;margin-left:8px">v1.0.78</span></p>
++    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">TAF/DMV Mesh · Kalman Distance</span><span style="color:#4488FF;margin-left:8px">v1.0.79</span></p>
+   </div>
+   <div class="pointer-events-auto flex gap-2 items-start">
+     <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+@@ -125,7 +125,7 @@
+       <span style="color:#FF6600">●You</span> <span style="color:#00FF88">●Bounce</span> <span style="color:#4488FF">●Vehicle</span> <span style="color:#a855f7">●Static</span> <span style="color:#FF4466">●Hazard</span>
+       <br><span style="font-size:7px;color:#6b7280">FAA METAR: RA rain SN snow FG fog TS storm BR mist HZ haze FZ ice</span>
+       <br><span style="font-size:7px;color:#6b7280">Wind: 09010KT Vis: 5SM Sky: FEW BKN OVC CLR</span>
+-      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.78</span> · CarrPod · ChaseCam</div>
++      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.79</span> · CarrPod · Kalman Distance</div>
+   </div>
+   <div class="hud pointer-events-auto scroll" style="padding:5px">
+     <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Wi-Fi Scanner</h3>
+@@ -242,7 +242,10 @@
+     document.getElementById('beacon-count').textContent=total;
+     if(this.useRealData&&this.realNodes.length>0){
+       this.realNodes.sort(function(a,b){return a.dist-b.dist});
+-      for(var i=0;i<this.realNodes.length;i++){var n=this.realNodes[i];var li=document.createElement('li');var color=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');var tag=n.reliable?'REL':(n.persist>30?'TRACK':'NEW');li.innerHTML='<span style="color:'+color+'">●</span> '+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span> <span style="color:#6b7280;font-size:7px">'+n.persist+'s '+tag+'</span>';if(n.reliable)li.className='bounce-tag';else li.className='static-tag';ul.appendChild(li)}
++      for(var i=0;i<this.realNodes.length;i++){var n=this.realNodes[i];
++        var zc=n.zone==='immediate'?'#FF4466':n.zone==='near'?'#FFCC00':'#4488FF';
++        var zd=n.zone==='immediate'?'HOT':n.zone==='near'?'WARM':'COLD';
++        var li=document.createElement('li');li.innerHTML='<span style="color:'+zc+'">●</span> '+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span class="bctag" style="background:'+zc+'22;color:'+zc+'">'+n.dist+'m</span> <span class="bctag" style="background:'+zc+'22;color:'+zc+'">'+zd+'</span></li>';ul.appendChild(li)}
+     }else if(!this.useRealData){
+       ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+     }
+@@ -331,13 +334,13 @@
+         var delta=existing.rssi-existing.prevRssi;
+         existing.approaching=delta>1;
+       }else{
+-        var color=d.reliable?'#00FF88':(d.persist>30?'#4488FF':'#a855f7');
++        var zc=d.zone==='immediate'?'#FF4466':d.zone==='near'?'#FFCC00':'#4488FF';
+         var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false});
+         var sdot=new THREE.Mesh(sg,sm);
+         var angle=Math.random()*Math.PI*2;var dist2=Math.min(d.dist*2,30);
+         sdot.position.set(Math.cos(angle)*dist2,0,Math.sin(angle)*dist2);
+         if(this.scene)this.scene.add(sdot);
+-        this.realNodes.push({dot:sdot,bssid:d.bssid,ssid:d.ssid,rssi:d.rssi,dist:d.dist,persist:d.persist,reliable:d.reliable,lastSeen:Date.now(),prevRssi:d.rssi,vx:(Math.random()-.5)*1.5,vz:(Math.random()-.5)*1.5,approaching:false})
++        this.realNodes.push({dot:sdot,bssid:d.bssid,ssid:d.ssid,rssi:d.rssi,dist:d.dist,zone:d.zone||'far',persist:d.persist,reliable:d.reliable,lastSeen:Date.now(),prevRssi:d.rssi,vx:(Math.random()-.5)*1.5,vz:(Math.random()-.5)*1.5,approaching:false})
+       }
+     }
+     var now2=Date.now();
+@@ -581,9 +584,9 @@
+     var list2=document.getElementById('scan2-list');
+     if(!Bounce.realNodes)return;
+     var h='';Bounce.realNodes.sort(function(a,b){return a.dist-b.dist});
+-    for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<li style="color:'+c+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
++    for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var zc=n.zone==='immediate'?'#FF4466':n.zone==='near'?'#FFCC00':'#4488FF';var zd=n.zone==='immediate'?'HOT':n.zone==='near'?'WARM':'COLD';h+='<li style="color:'+zc+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:'+zc+';font-size:7px;margin-left:4px">'+n.dist+'m '+zd+'</span></li>'}
+     if(listR)listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>';
+-    if(list2)list2.innerHTML=h||'<li style="color:#FF8800">waiting...</li>';
++    if(list2)list2.innerHTML=h||'<li style="color:#FF8800">scanning...</li>';
+     var bl=document.getElementById('bt-list');
+     if(bl&&Bounce.btNodes&&Bounce.btNodes.length>0){
+       var bh='';Bounce.btNodes.sort(function(a,b){return a.dist-b.dist});

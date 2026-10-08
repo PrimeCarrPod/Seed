@@ -1,0 +1,40 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.24_bounce.html	2026-10-08 02:33:54.108911354 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.25_bounce.html	2026-10-08 02:33:54.128387311 +0000
+@@ -74,6 +74,7 @@
+     <div class="flex justify-between text-xs text-gray mb-1"><span>License Plate</span><span id="plate-display" class="text-yellow font-mono" style="cursor:pointer" onclick="Bounce.showPlateInput()">---</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Origin Key</span><span id="key-display" class="text-purple font-mono">---</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Speed</span><span id="my-speed" class="text-green font-mono">65 mph</span></div>
++    <div class="flex justify-between text-xs text-gray mb-1"><span>Orientation</span><span id="orn-display" class="text-yellow font-mono">---</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Altitude</span><span id="my-alt" class="text-blue font-mono">450 ft</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>GPS Position</span><span id="gps-display" class="text-green font-mono" style="font-size:7px">---</span></div>
+     <div class="flex justify-between text-xs text-gray mb-1"><span>Fleet Key</span><span id="fleet-ind" class="text-red font-mono">OFF</span></div>
+@@ -385,6 +386,10 @@
+   },
+   toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
+   toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin').textContent=this.spin?'SPIN ON':'SPIN'},
++  onCompass(azimuth,orn){
++    if(!this.gps||this.gps.bearing<=0){this.myHeading=azimuth;document.getElementById('my-heading').textContent=azimuth.toFixed(0)+'°'}
++    var el=document.getElementById('orn-display');if(el)el.textContent=orn;
++  },
+   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
+     if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
+       var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov)}
+@@ -433,13 +438,13 @@
+       self.camera.position.x+=self._flyVx*dt;self.camera.position.y+=self._flyVy*dt;self.camera.position.z+=self._flyVz*dt;
+       if(t>=1){if(this._flyLoop){self._flyVx*=1.5;self._flyVy*=1.5;self._flyVz*=1.5;this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o';document.getElementById('btn-slower').style.display='none';document.getElementById('btn-faster').style.display='none'}}}
+     this.controls.update();
+-    // POV mode: lock camera to tardigrade position
++    // POV mode: chase camera behind vehicle
+     if(self.povMode){
+       var brr=self.myHeading*Math.PI/180;
+-      var cx=self.tardi.group.position.x+Math.sin(brr)*2;
+-      var cy=4;var cz=self.tardi.group.position.z+Math.cos(brr)*2;
+-      self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.08);
+-      self.camera.lookAt(self.tardi.group.position.x+Math.sin(brr)*15,2,self.tardi.group.position.z+Math.cos(brr)*15);
++      var cx=self.tardi.group.position.x-Math.sin(brr)*6;
++      var cy=6;var cz=self.tardi.group.position.z-Math.cos(brr)*6;
++      self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.06);
++      self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
+     }
+     this.composer.render();
+   }

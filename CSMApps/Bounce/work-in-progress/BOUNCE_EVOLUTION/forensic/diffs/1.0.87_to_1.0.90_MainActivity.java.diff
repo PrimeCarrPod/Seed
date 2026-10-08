@@ -1,0 +1,137 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.87_MainActivity.java	2026-10-08 02:33:55.332295763 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.90_MainActivity.java	2026-10-08 02:33:55.355871224 +0000
+@@ -3,6 +3,7 @@
+ import android.Manifest;
+ import android.app.Activity;
+ import android.bluetooth.BluetoothAdapter;
++import android.content.SharedPreferences;
+ import android.bluetooth.BluetoothDevice;
+ import android.bluetooth.le.BluetoothLeScanner;
+ import android.bluetooth.le.ScanCallback;
+@@ -62,12 +63,16 @@
+ import java.util.concurrent.Executor;
+ import java.util.concurrent.Executors;
+ import android.util.Log;
++import java.net.HttpURLConnection;
++import java.net.URL;
+ 
+ public class MainActivity extends Activity {
+ 
+     private static final int PERM_REQ = 1001;
+     private WebView webView;
+     private LinearLayout headerOverlay;
++    private SharedPreferences prefs;
++    private String latestVersion = null;
+     private boolean cleanMode = false;
+     private Button cleanBtn;
+     private TextView tagTextView;
+@@ -210,6 +215,9 @@
+         root.addView(buildControlBar());
+         setContentView(root);
+ 
++        prefs = getSharedPreferences("BounceUpdate", MODE_PRIVATE);
++        checkForUpdates();
++
+         PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
+         wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Bounce:TrailRecorder");
+         wakeLock.acquire();
+@@ -269,6 +277,59 @@
+         startBtCleanupTask();
+     }
+ 
++    private void checkForUpdates() {
++        new Thread(() -> {
++            String latest = fetchLatestVersion();
++            runOnUiThread(() -> {
++                if (latest != null && isNewerVersion(latest, "1.0.90")) {
++                    latestVersion = latest;
++                    injectJs("UI.showUpdateMenu('" + latestVersion + "')");
++                }
++            });
++        }).start();
++    }
++
++    private String fetchLatestVersion() {
++        HttpURLConnection conn = null;
++        try {
++            URL url = new URL("https://raw.githubusercontent.com/ZirconiaAegisC/CarrPod/main/CSMApps/Releases/Bounce-latest.txt");
++            conn = (HttpURLConnection) url.openConnection();
++            conn.setConnectTimeout(5000);
++            conn.setReadTimeout(5000);
++            conn.setRequestMethod("GET");
++            int code = conn.getResponseCode();
++            if (code == HttpURLConnection.HTTP_OK) {
++                java.io.BufferedReader in = new java.io.BufferedReader(new java.io.InputStreamReader(conn.getInputStream()));
++                String line = in.readLine();
++                in.close();
++                if (line != null && line.trim().startsWith("Bounce-v")) {
++                    return line.trim().replace("Bounce-v", "").replace(".apk", "").trim();
++                }
++            }
++        } catch (Exception e) {
++            android.util.Log.w("BounceUpdate", "No remote version found: " + e.getMessage());
++        } finally {
++            if (conn != null) conn.disconnect();
++        }
++        return null;
++    }
++
++    private boolean isNewerVersion(String remote, String current) {
++        try {
++            String[] r = remote.split("\\.");
++            String[] c = current.split("\\.");
++            for (int i = 0; i < Math.max(r.length, c.length); i++) {
++                int rv = i < r.length ? Integer.parseInt(r[i]) : 0;
++                int cv = i < c.length ? Integer.parseInt(c[i]) : 0;
++                if (rv > cv) return true;
++                if (rv < cv) return false;
++            }
++            return false;
++        } catch (Exception e) {
++            return false;
++        }
++    }
++
+     private void startBtCleanupTask() {
+         btCleanupRunnable = new Runnable() {
+             public void run() {
+@@ -1239,7 +1300,7 @@
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.87 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.90 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface
+@@ -1267,7 +1328,7 @@
+             theoryMode = enabled;
+             runOnUiThread(() -> {
+                 String mode = enabled ? "THEORY" : "LIVE";
+-                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.87 · " + mode);
++                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.90 · " + mode);
+                 Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
+             });
+         }
+@@ -1315,5 +1376,21 @@
+             json.append("]");
+             return json.toString();
+         }
++
++        @JavascriptInterface
++        public void onUpdateSelected(String action) {
++            runOnUiThread(() -> {
++                if ("update".equals(action)) {
++                    Toast.makeText(MainActivity.this, "Updating to v" + latestVersion + "...", Toast.LENGTH_SHORT).show();
++                    prefs.edit().putInt("ignoreCount", 0).apply();
++                } else if ("download".equals(action)) {
++                    Toast.makeText(MainActivity.this, "Downloading Bounce v" + latestVersion + ".apk...", Toast.LENGTH_SHORT).show();
++                    prefs.edit().putInt("ignoreCount", 0).apply();
++                } else if ("ignore".equals(action)) {
++                    prefs.edit().putInt("ignoreCount", 10).apply();
++                    Toast.makeText(MainActivity.this, "Ignoring updates for 10 checks", Toast.LENGTH_SHORT).show();
++                }
++            });
++        }
+     }
+ }

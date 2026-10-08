@@ -1,0 +1,17 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.61_bounce.html	2026-10-08 02:33:54.839788617 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.62_bounce.html	2026-10-08 02:33:54.858810252 +0000
+@@ -507,11 +507,12 @@
+     // Trail recording
+     if(self.trailActive&&self.mySpeed>1){self._tf=(self._tf||0)+1;
+       self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+-      if(self.trailPoints.length>500)self.trailPoints.shift()
++      if(self.trailPoints.length>2000)self.trailPoints.shift()
+       if(self._tf%5===0&&self.trailPoints.length>1){
+         if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
+         var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
+-        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.9}));
++        var smoothed=pts;if(pts.length>3){try{var curve=new THREE.CatmullRomCurve3(pts);smoothed=curve.getPoints(Math.min(600,pts.length*2))}catch(e){}}
++        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(smoothed),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.9}));
+         self.scene.add(self.trailLine);
+       }
+     }

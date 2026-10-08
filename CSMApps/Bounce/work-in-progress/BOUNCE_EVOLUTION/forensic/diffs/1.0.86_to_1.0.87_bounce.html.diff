@@ -1,0 +1,20 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.86_bounce.html	2026-10-08 02:33:55.309847343 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.87_bounce.html	2026-10-08 02:33:55.333883756 +0000
+@@ -53,7 +53,7 @@
+ <div id="hdr">
+   <div class="pointer-events-auto">
+     <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
+-    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.86</span></p>
++    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">Bluetooth 3D Spatial · RSSI Theory</span><span style="color:#4488FF;margin-left:8px">v1.0.87</span></p>
+   </div>
+   <div class="pointer-events-auto flex gap-2 items-start">
+     <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+@@ -126,7 +126,7 @@
+       <span style="color:#FF6600">●You</span> <span style="color:#00FF88">●Bounce</span> <span style="color:#4488FF">●Vehicle</span> <span style="color:#a855f7">●Static</span> <span style="color:#FF4466">●Hazard</span>
+       <br><span style="font-size:7px;color:#6b7280">FAA METAR: RA rain SN snow FG fog TS storm BR mist HZ haze FZ ice</span>
+       <br><span style="font-size:7px;color:#6b7280">Wind: 09010KT Vis: 5SM Sky: FEW BKN OVC CLR</span>
+-      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.86</span> · CarrPod · Bluetooth 3D Spatial</div>
++      <br>      <span style="color:#FF6600;font-weight:700">Bounce v1.0.87</span> · CarrPod · Bluetooth 3D Spatial</div>
+   </div>
+   <div class="hud pointer-events-auto scroll" style="padding:5px">
+     <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Wi-Fi Scanner</h3>

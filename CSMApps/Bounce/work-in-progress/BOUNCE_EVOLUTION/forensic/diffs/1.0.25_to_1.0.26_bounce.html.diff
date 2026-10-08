@@ -1,0 +1,54 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.25_bounce.html	2026-10-08 02:33:54.128387311 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.26_bounce.html	2026-10-08 02:33:54.150581088 +0000
+@@ -241,13 +241,14 @@
+   _startScanner(){
+     var self=this;
+     setInterval(function(){
+-      // Simulate trajectory
+-      self.myHeading=(self.myHeading+.25+Math.sin(Date.now()*.0001)*.4)%360;
+-      self.mySpeed=Math.max(20,Math.min(80,self.mySpeed+(Math.random()-.5)*1.5));
+-      self.myAlt=Math.max(100,Math.min(2000,self.myAlt+(Math.random()-.5)*8));
+-      document.getElementById('my-heading').textContent=Math.round(self.myHeading)+'°';
+-      document.getElementById('my-speed').textContent=Math.round(self.mySpeed)+' mph';
+-      document.getElementById('my-alt').textContent=Math.round(self.myAlt)+' ft';
++      if(!self._hasGps){
++        self.myHeading=(self.myHeading+.25+Math.sin(Date.now()*.0001)*.4)%360;
++        self.mySpeed=Math.max(20,Math.min(80,self.mySpeed+(Math.random()-.5)*1.5));
++        self.myAlt=Math.max(100,Math.min(2000,self.myAlt+(Math.random()-.5)*8));
++        document.getElementById('my-heading').textContent=Math.round(self.myHeading)+'°';
++        document.getElementById('my-speed').textContent=Math.round(self.mySpeed)+' mph';
++        document.getElementById('my-alt').textContent=Math.round(self.myAlt)+' ft';
++      }
+       // Update broadcast SSID if TX is on
+       if(self.broadcast){
+         var dyn={heading:self.myHeading,speed:self.mySpeed};
+@@ -266,7 +267,7 @@
+   onGps(locStr){
+     var loc=typeof locStr==='string'?JSON.parse(locStr):locStr;
+     if(loc.bearing>=0){this.myHeading=loc.bearing;document.getElementById('my-heading').textContent=loc.bearing.toFixed(0)+'°'}
+-    if(loc.speed>0){this.mySpeed=loc.speed*2.237;document.getElementById('my-speed').textContent=this.mySpeed.toFixed(0)+' mph'}
++    if(loc.speed>0){this.mySpeed=loc.speed*2.237;document.getElementById('my-speed').textContent=this.mySpeed.toFixed(0)+' mph';this._hasGps=true}
+     if(loc.alt>0)document.getElementById('my-alt').textContent=(loc.alt*3.281).toFixed(0)+' ft';
+     this.gps={lat:loc.lat||0,lng:loc.lng||0,alt:loc.alt||0,speed:loc.speed||0,bearing:loc.bearing||0,acc:loc.acc||0};
+     var gpsEl=document.getElementById('gps-display');
+@@ -339,14 +340,18 @@
+   },
+   _doBroadcast(){
+     this._broadcastSlot=(this._broadcastSlot||0)%3;
+-    if(!this.originKey)this.originKey=String(Math.floor(100+Math.random()*899));
++    if(!this.originKey){var s='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';this.originKey=s[Math.floor(Math.random()*s.length)]+s[Math.floor(Math.random()*s.length)]+s[Math.floor(Math.random()*s.length)]}
+     var key=this.originKey,plate=this.licensePlate||'NOID';
+     var base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+     var dyn={heading:this.myHeading,speed:this.mySpeed};
+     var gps=this.gps||{lat:0,lng:0};
+     var gpsShort=Math.round(Math.abs(gps.lat%1)*10000)+Math.round(Math.abs(gps.lng%1)*10000);
+     var taf=genSSID(base,dyn).replace(/[\/\-\.]/g,'')+'G'+gpsShort;
+-    var human=Math.round(this.mySpeed)+'mph'+(this.myHeading<90?'NE':this.myHeading<180?'SE':this.myHeading<270?'SW':'NW');
++    var dirs=['N','NE','E','SE','S','SW','W','NW'];
++    var dir=dirs[Math.round(this.myHeading/45)%8];
++    var mph=Math.round(this.mySpeed||0);
++    var hdg=Math.round(this.myHeading||0);
++    var human='HD'+hdg+'-'+dir+'-'+mph+'mph';
+     var code;
+     if(this._broadcastSlot===0)code=key+plate.substring(0,22);
+     else if(this._broadcastSlot===1)code=key+taf.substring(0,22);

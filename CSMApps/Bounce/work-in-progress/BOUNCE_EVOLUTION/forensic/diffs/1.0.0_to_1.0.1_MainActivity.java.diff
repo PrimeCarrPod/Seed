@@ -1,0 +1,14 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.0_MainActivity.java	2026-10-08 02:33:53.642336067 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.1_MainActivity.java	2026-10-08 02:33:53.664266219 +0000
+@@ -121,9 +121,9 @@
+         row.setPadding(0, dp(8), 0, dp(8));
+ 
+         row.addView(mkBtn("+VEHICLE", "#f97316", v -> injectJs("Bounce.addSimVehicle()")));
+-        row.addView(mkBtn("+FLEET", "#10b981", v -> injectJs("Bounce.addRandomFleet()")));
+         row.addView(mkBtn("SCATTER", "#a855f7", v -> injectJs("Bounce.scatterBeacons()")));
+-        row.addView(mkBtn("FLEET KEY", "#4488FF", v -> injectJs("Bounce.toggleFleet()")));
++        row.addView(mkBtn("BROADCAST", "#00FF88", v -> injectJs("Bounce.toggleBroadcast()")));
++        row.addView(mkBtn("FLEET", "#4488FF", v -> injectJs("Bounce.toggleFleet()")));
+ 
+         cleanBtn = mkBtn("CLEAN", "#FF6600", v -> {
+             cleanMode = !cleanMode;

@@ -1,0 +1,31 @@
+Feature_ID,Feature_Name,Category,First_Working_Version,Last_Enhanced_Version,Current_Status,Lines_of_Code_Added,Key_Files,Dependencies,Enhancement_History,Known_Limitations,Next_Planned_Enhancement
+WF001,Wi-Fi Scanning,Radio,1.0.3,1.0.91,Complete,~200,MainActivity.java,WifiManager + Permissions,1.0.3: Basic scan → 1.0.30: Real dBm → 1.0.79: Kalman filter → 1.0.90: 6-algo stack,API33 permission changes,RTT ranging (P0-02)
+WF002,Bluetooth LE Scanning,Radio,1.0.48,1.0.91,Complete,~150,MainActivity.java,BluetoothLeScanner,1.0.48: Basic scan → 1.0.65: 5s restart → 1.0.86: 3D spatial + Kalman,Scan death without restart,BT Mesh (P3-01)
+WF003,Wi-Fi Direct Broadcast,Radio,1.0.13,1.0.91,Complete,~100,MainActivity.java,WifiP2pManager,1.0.13: Group Owner → 1.0.20: Duty cycle → 1.0.22: 4-slot → 1.0.90: Bonjour fallback,Timing drift fixed,Mesh relay (P1-05)
+WF004,GPS Tracking,Positioning,1.0.4,1.0.91,Complete,~80,MainActivity.java,LocationManager,1.0.4: Basic GPS → 1.0.27: mph threshold → 1.0.63: Wake lock → 1.0.90: Altitude ft,Zero-fix stationary,RTT fusion
+WF005,Sensor Fusion (Accel+Mag+Gyro),Positioning,1.0.25,1.0.91,Complete,~120,MainActivity.java,SensorManager,1.0.25: Fusion → 1.0.25: Low-pass → 1.0.86: Orientation for BT 3D,Azimuth wrap handled,UWB fusion (P3-02)
+WF006,3D Visualization (Three.js),Visualization,1.0.0,1.0.91,Complete,~2200,bounce.html,Three.js r128 local,1.0.0: Basic → 1.0.50: Post-process → 1.0.62: CatmullRom → 1.0.86: BT 3D,Mobile GPU limits,AR Overlay (P3-04)
+WF007,Tardigrade Sphere (Vehicle),Visualization,1.0.0,1.0.91,Complete,~200,bounce.html,Three.js geometries,1.0.0: Basic → 1.0.20: Beacons → 1.0.50: Pulse → 1.0.86: BT nodes,Complex geometry,Simplification
+WF008,Vehicle Beacons + Physics,Visualization,1.0.20,1.0.91,Complete,~300,bounce.html,Spring physics JS,1.0.20: Basic → 1.0.50: Pulse → 1.0.75: Fade/ring → 1.0.86: 3D spatial,Physics tuning,Damping optimization
+WF009,Trail System (GPS + CatmullRom),Visualization,1.0.49,1.0.91,Complete,~250,bounce.html + MainActivity,GPU-safe disposal,1.0.49: Basic → 1.0.54: Disposal fix → 1.0.62: CatmullRom → 1.0.63: Wake lock,2000pt cap,GPX/KML export (FP012)
+WF010,Bluetooth 3D Spatial Tracking,Positioning,1.0.86,1.0.91,Complete,~400,MainActivity.java + bounce.html,BT + Orientation,1.0.86: Full 3D + trajectories + Theory mode,Theory mode performance,Parameter learning (P1-01)
+WF011,RSSI Kalman Filter (1D),Positioning,1.0.79,1.0.91,Complete,~64,RssiKalmanFilter.java,Wi-Fi + BT RSSI,1.0.79: Kalman → 1.0.86: Per-device BT Kalman,Fixed q/r params,Adaptive learning (P1-01)
+WF012,Trilateration (Weighted LS),Positioning,1.0.81,1.0.91,Complete,~257,Trilateration.java,3+ APs known pos,1.0.81: Basic → 1.0.90: GDOP + AP refinement,AP positions unknown,Self-calibration (P0-03)
+WF013,Extended Kalman Filter (2D CV),Positioning,1.0.90,1.0.91,Complete (bug fixed),~302,PositionEKF.java,Trilateration input,1.0.90: EKF → 1.0.92: vy init fix (P0-01),vy bug fixed v1.0.92,Velocity accuracy
+WF014,Particle Filter (SIR, 200 particles),Positioning,1.0.90,1.0.91,Complete,~322,ParticleFilter.java,AP RSSI history,1.0.90: SIR + Gaussian Mixture,AP params hardcoded,Adaptive params (P1-01)
+WF015,Zone HMM (Viterbi),Positioning,1.0.90,1.0.91,Complete,~287,ZoneHMM.java,3 zones + hysteresis,1.0.90: HMM + Viterbi path,Threshold tuning,Auto-threshold learning
+WF016,Wi-Fi RTT Ranging (802.11mc),Positioning,1.0.81,1.0.91,Stub only,~119,WifiRttRanging.java,API28+ hardware,1.0.81: Stub created,Not implemented,P0-02 priority
+WF017,Camera Modes (Orbit/FLY/POV),Visualization,1.0.8,1.0.91,Complete,~150,bounce.html,OrbitControls,1.0.8: POV → 1.0.9: FLY → 1.0.28: POV 5x → 1.0.55: POV zoom,FLY waypoint density,AR camera (P3-04)
+WF018,HUD Tab-Tuck Panels,Visualization,1.0.0,1.0.91,Complete,~500,bounce.html,CSS transforms,1.0.0: Basic → 1.0.38: SCAN pullout → 1.0.91: Update panel,Touch targets small,Panel width 320px
+WF019,Control Buttons (+VEHICLE, etc.),Visualization,1.0.0,1.0.91,Complete,~100,bounce.html + MainActivity,JS bridge,1.0.0: Basic → 1.0.21: Plate → 1.0.22: Fleet → 1.0.86: Theory,None,None
+WF020,FAA METAR Codes,Reference,1.0.64,1.0.91,Complete,~200,bounce.html,Static tables,1.0.64: Codes + Slot 3,Static data,None
+WF021,Auto-Update System,System,1.0.91,1.0.93,Complete,~100,MainActivity + bounce.html,GitHub API,1.0.91: Manual check → 1.0.93: Full menu,Auto-check removed,Move to TGAPP (FP021)
+WF022,Debug Keystore Auto-Gen,Build,1.0.0,1.0.91,Complete,~20,build.sh,keytool,1.0.0: Auto-gen,Debug only,Release keystore (TD-08)
+WF023,No-Gradle Build Pipeline,Build,1.0.0,1.0.91,Complete,~109,build.sh,aapt2+d8+zipalign,1.0.0: Pipeline created,SDK path mgmt,CI/CD (TD-09)
+WF024,Wake Lock Background Trail,System,1.0.63,1.0.91,Complete,~30,MainActivity.java,PowerManager,1.0.63: Wake lock,Conditional acquire,None
+WF025,SSID Broadcast 4-Slot Rotating,Radio,1.0.22,1.0.91,Complete,~80,MainActivity.java,WifiP2pManager,1.0.22: 4-slot + key → 1.0.64: METAR slot,Timing fixed,Live re-code (H11)
+WF026,Permission Handling (15 perms),System,1.0.3,1.0.91,Complete,~200,MainActivity.java,Runtime perms,1.0.3: Basic → 1.0.45: Proven pattern → 1.0.48: BT perms,API33 NEARBY_WIFI_DEVICES,Auto-permission helper
+WF027,Chart.js Metrics,Visualization,1.0.86,1.0.91,Complete,~100,bounce.html,Chart.js local,1.0.86: Action/Benevolence/Coherence/Glueball,None,More metrics
+WF028,Broadcast Status Feedback,Radio,1.0.20,1.0.91,Complete,~50,MainActivity + bounce.html,JS bridge,1.0.20: Status bar → 1.0.90: Live re-code,Slot drift fixed,None
+WF029,AP Position Estimation,Positioning,1.0.81,1.0.91,Partial,~100,MainActivity.java,Trilateration,1.0.81: Random init → 1.0.90: Refined,Random initial,Self-calibration (P0-03)
+WF030,Multi-Algorithm Fusion,Positioning,1.0.90,1.0.91,Complete,~150,MainActivity.java,All 6 algos,1.0.90: Parallel execution,No weighted fusion,Adaptive weighting

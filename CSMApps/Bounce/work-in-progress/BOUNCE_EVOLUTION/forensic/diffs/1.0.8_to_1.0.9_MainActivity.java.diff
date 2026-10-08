@@ -1,0 +1,30 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.8_MainActivity.java	2026-10-08 02:33:53.792746261 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.9_MainActivity.java	2026-10-08 02:33:53.810650269 +0000
+@@ -160,8 +160,16 @@
+         p2pManager.addLocalService(p2pChannel, serviceInfo, new WifiP2pManager.ActionListener() {
+             public void onSuccess() {
+                 broadcasting = true;
+-                injectJs("Bounce.onBroadcastStatus({status:'broadcasting',ssid:'" + ssidCode + "',method:'WiFi-Direct'})");
+-                Toast.makeText(MainActivity.this, "Broadcasting: " + ssidCode, Toast.LENGTH_SHORT).show();
++                // Also start peer discovery so device becomes visible in P2P scans
++                p2pManager.discoverPeers(p2pChannel, new WifiP2pManager.ActionListener() {
++                    public void onSuccess() {
++                        injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + ssidCode + "',method:'WiFi-Direct+Bonjour+Discoverable'})");
++                    }
++                    public void onFailure(int r) {
++                        injectJs("Bounce.onBroadcastStatus({status:'broadcasting',ssid:'" + ssidCode + "',method:'WiFi-Direct+Bonjour'})");
++                    }
++                });
++                Toast.makeText(MainActivity.this, "Broadcasting & Discoverable: " + ssidCode, Toast.LENGTH_SHORT).show();
+             }
+             public void onFailure(int reason) {
+                 broadcasting = false;
+@@ -340,7 +348,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Proximity + Momentum · v1.0.6");
++        tag.setText("Fly Tour + P2P Discoverable · v1.0.9");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);

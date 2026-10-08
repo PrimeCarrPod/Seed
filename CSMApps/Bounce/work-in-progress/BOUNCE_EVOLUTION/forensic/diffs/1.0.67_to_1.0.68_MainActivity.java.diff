@@ -1,0 +1,26 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.67_MainActivity.java	2026-10-08 02:33:54.951882972 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.68_MainActivity.java	2026-10-08 02:33:54.971034111 +0000
+@@ -65,6 +65,7 @@
+     private BluetoothAdapter bluetoothAdapter;
+     private BluetoothLeScanner bleScanner;
+     private boolean btScanning = false;
++    private int btHitCount = 0;
+     private PowerManager.WakeLock wakeLock;
+     private final float[] accelData = new float[3];
+     private final float[] magnetData = new float[3];
+@@ -180,6 +181,7 @@
+         public void onScanResult(int callbackType, android.bluetooth.le.ScanResult result) {
+             if (result == null || webView == null) return;
+             BluetoothDevice dev = result.getDevice();
++            if (btHitCount++ < 3) Toast.makeText(MainActivity.this, "BT found: " + (dev.getName() != null ? dev.getName() : dev.getAddress()), Toast.LENGTH_SHORT).show();
+             int rssi = result.getRssi();
+             float dist = (float) Math.pow(10, (-40 - rssi) / 20.0);
+             webView.post(() -> {
+@@ -189,6 +191,7 @@
+             });
+         }
+         public void onScanFailed(int errorCode) {
++            Toast.makeText(MainActivity.this, "BT scan failed: " + errorCode, Toast.LENGTH_LONG).show();
+             injectJs("Bounce.onBtStatus({status:'failed',code:" + errorCode + "})");
+         }
+     };

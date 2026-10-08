@@ -1,0 +1,398 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.85_MainActivity.java	2026-10-08 02:33:55.285397569 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.86_MainActivity.java	2026-10-08 02:33:55.308320361 +0000
+@@ -98,6 +98,68 @@
+     private final Map<String, Long> ssidLog = new HashMap<>();
+     private final Map<String, Float> ssidRssiHistory = new HashMap<>();
+ 
++    // Bluetooth 3D Spatial Tracking
++    private static final int BT_MAX_AGE_MS = 30000;
++    private static final float BT_PATH_LOSS_EXPONENT = 2.5f;
++    private static final float BT_RSSI_1M = -55f;
++    private static final float BRIGHTNESS_BOOST = 1.5f;
++    private static final float BRIGHTNESS_DECAY = 0.98f;
++    // Sensor smoothing (low-pass filter alpha = 0.15 for ~85% smoothing)
++    private static final float SENSOR_ALPHA = 0.15f;
++    private float smoothAzimuth = 0f;
++    private float smoothPitch = 0f;
++    private float smoothRoll = 0f;
++    private boolean firstSensorUpdate = true;
++    private final Map<String, BtDevice3D> btDevices = new HashMap<>();
++    private final Map<String, KalmanState> btKalmanStates = new HashMap<>();
++    private final Map<String, List<BtPositionSample>> btTrajectories = new HashMap<>();
++    private volatile float phoneAzimuth = 0f;
++    private volatile float phonePitch = 0f;
++    private volatile float phoneRoll = 0f;
++    private boolean theoryMode = false;
++    private Handler btCleanupHandler = new Handler(Looper.getMainLooper());
++    private Runnable btCleanupRunnable;
++
++    // Bluetooth 3D Device with spatial position, brightness, and trajectory
++    private static class BtDevice3D {
++        String address;
++        String name;
++        float rssi;
++        float filteredRssi;
++        float distance;
++        float x, y, z;
++        float brightness;
++        long lastSeen;
++        long firstSeen;
++        boolean active;
++        List<BtPositionSample> trajectory;
++        BtDevice3D(String address, String name) {
++            this.address = address;
++            this.name = name;
++            this.brightness = 0.3f;
++            this.lastSeen = System.currentTimeMillis();
++            this.firstSeen = this.lastSeen;
++            this.active = true;
++            this.trajectory = new ArrayList<>();
++        }
++    }
++
++    // Position sample for trajectory tracking
++    private static class BtPositionSample {
++        long timestamp;
++        float x, y, z;
++        float rssi;
++        float distance;
++        float azimuth;
++        float pitch;
++        BtPositionSample(long timestamp, float x, float y, float z, float rssi, float distance, float azimuth, float pitch) {
++            this.timestamp = timestamp;
++            this.x = x; this.y = y; this.z = z;
++            this.rssi = rssi; this.distance = distance;
++            this.azimuth = azimuth; this.pitch = pitch;
++        }
++    }
++
+     // Wi-Fi triangulation modules
+     private RssiKalmanFilter rssiKalmanFilter;
+     private Trilateration trilateration;
+@@ -204,6 +266,67 @@
+         startGpsTracking();
+         startSensors();
+         startBtScanning();
++        startBtCleanupTask();
++    }
++
++    private void startBtCleanupTask() {
++        btCleanupRunnable = new Runnable() {
++            public void run() {
++                long now = System.currentTimeMillis();
++                List<String> toRemove = new ArrayList<>();
++                
++                for (Map.Entry<String, BtDevice3D> entry : btDevices.entrySet()) {
++                    BtDevice3D device = entry.getValue();
++                    long age = now - device.lastSeen;
++                    
++                    // Decay brightness for inactive devices
++                    if (!device.active) {
++                        device.brightness *= BRIGHTNESS_DECAY;
++                        device.brightness = Math.max(0.1f, device.brightness); // Minimum visibility
++                    }
++                    
++                    // Mark as inactive if not seen recently
++                    if (age > 2000) { // 2 seconds
++                        device.active = false;
++                    }
++                    
++                    // Remove very old devices (but keep for theory view)
++                    if (age > BT_MAX_AGE_MS) {
++                        toRemove.add(entry.getKey());
++                    }
++                    
++                    // Send periodic update for theory view (even for inactive devices)
++                    if (webView != null && (device.active || age < BT_MAX_AGE_MS)) {
++                        final BtDevice3D d = device;
++                        final String addr = entry.getKey();
++                        final long a = age;
++                        webView.post(() -> {
++                            String json = "{\"addr\":\"" + addr
++                                + "\",\"name\":\"" + escapeJson(d.name) + "\""
++                                + "\",\"rssi\":" + (int)d.rssi
++                                + "\",\"dist\":" + String.format("%.1f", d.distance)
++                                + "\",\"x\":" + String.format("%.2f", d.x)
++                                + "\",\"y\":" + String.format("%.2f", d.y)
++                                + "\",\"z\":" + String.format("%.2f", d.z)
++                                + "\",\"brightness\":" + String.format("%.2f", d.brightness)
++                                + "\",\"active\":" + d.active
++                                + "\",\"persist\":" + ((now - d.firstSeen) / 1000)
++                                + "\",\"age\":" + (a / 1000) + "}";
++                            injectJs("Bounce.onBtResult3D(" + json + ")");
++                        });
++                    }
++                }
++                
++                // Remove expired devices from active map (trajectory kept in btTrajectories)
++                for (String addr : toRemove) {
++                    btDevices.remove(addr);
++                }
++                
++                // Schedule next cleanup
++                btCleanupHandler.postDelayed(this, 500); // Run every 500ms
++            }
++        };
++        btCleanupHandler.post(btCleanupRunnable);
+     }
+ 
+     private void initializeTriangulationModules() {
+@@ -266,29 +389,133 @@
+ 
+     private void startBtScanning() {
+         if (Build.VERSION.SDK_INT >= 31) {
+-            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) return;
++            if (checkSelfPermission(Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
++                injectJs("Bounce.onBtStatus({status:'no_permission'})");
++                return;
++            }
+         }
+         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+-        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) return;
++        if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) {
++            injectJs("Bounce.onBtStatus({status:'bt_disabled'})");
++            return;
++        }
+         bleScanner = bluetoothAdapter.getBluetoothLeScanner();
+-        if (bleScanner == null) return;
++        if (bleScanner == null) {
++            injectJs("Bounce.onBtStatus({status:'no_le_scanner'})");
++            return;
++        }
+         btScanning = true;
+         ScanSettings settings = new ScanSettings.Builder()
+             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
+             .build();
+         bleScanner.startScan(null, settings, btCallback);
++        injectJs("Bounce.onBtStatus({status:'scanning'})");
++        android.util.Log.d("BounceBT", "BT scan started successfully");
++        
++        // Restart scan periodically like Wi-Fi to ensure continuous scanning
++        scanHandler.postDelayed(new Runnable() {
++            public void run() {
++                if (btScanning && bleScanner != null && bluetoothAdapter != null && bluetoothAdapter.isEnabled()) {
++                    try {
++                        bleScanner.stopScan(btCallback);
++                    } catch (Exception ignored) {}
++                    bleScanner.startScan(null, settings, btCallback);
++                    android.util.Log.d("BounceBT", "BT scan restarted");
++                }
++                if (btScanning) {
++                    scanHandler.postDelayed(this, 50000); // Restart every 5 seconds
++                }
++            }
++        }, 5000);
+     }
+ 
+     private final ScanCallback btCallback = new ScanCallback() {
+         public void onScanResult(int callbackType, android.bluetooth.le.ScanResult result) {
+             if (result == null || webView == null) return;
++            android.util.Log.d("BounceBT", "onScanResult: " + result.getDevice().getAddress() + " rssi=" + result.getRssi());
+             BluetoothDevice dev = result.getDevice();
+-            int rssi = result.getRssi();
+-            float dist = (float) Math.pow(10, (-40 - rssi) / 20.0);
++            int rawRssi = result.getRssi();
++            String addr = dev.getAddress();
++            String name = dev.getName() != null ? dev.getName() : "Unknown";
++            long now = System.currentTimeMillis();
++
++            // Kalman filter for RSSI smoothing
++            KalmanState ks = btKalmanStates.get(addr);
++            if (ks == null) { ks = new KalmanState(); ks.x = rawRssi; btKalmanStates.put(addr, ks); }
++            ks.p += 0.01f;
++            float k = ks.p / (ks.p + 20f);
++            ks.x += k * (rawRssi - ks.x);
++            ks.p *= (1f - k);
++            float filteredRssi = ks.x;
++
++            // Distance estimation using filtered RSSI
++            float distance = (float) Math.pow(10, (BT_RSSI_1M - filteredRssi) / (10f * BT_PATH_LOSS_EXPONENT));
++
++            // Get or create 3D device
++            BtDevice3D device = btDevices.get(addr);
++            if (device == null) {
++                device = new BtDevice3D(addr, name);
++                btDevices.put(addr, device);
++                android.util.Log.d("BounceBT", "NEW DEVICE: " + addr + " name=" + name + " dist=" + distance + " az=" + phoneAzimuth + " pitch=" + phonePitch);
++            }
++            
++            // Update device state
++            device.rssi = rawRssi;
++            device.filteredRssi = filteredRssi;
++            device.distance = distance;
++            device.lastSeen = now;
++            device.active = true;
++            
++            // RE-ENERGIZE BRIGHTNESS on signal catch
++            device.brightness = Math.min(1.0f, device.brightness * BRIGHTNESS_BOOST);
++            
++            // Calculate 3D position relative to phone using phone orientation
++            float relAzimuth = phoneAzimuth;
++            float relPitch = phonePitch;
++            
++            // Convert to 3D coordinates (phone at origin, facing azimuth, tilted pitch)
++            float horizontalDist = distance * (float) Math.cos(Math.toRadians(relPitch));
++            device.x = horizontalDist * (float) Math.sin(Math.toRadians(relAzimuth));
++            device.y = horizontalDist * (float) Math.cos(Math.toRadians(relAzimuth));
++            device.z = distance * (float) Math.sin(Math.toRadians(relPitch)); // Positive = above, negative = below
++            
++            // Add to trajectory
++            device.trajectory.add(new BtPositionSample(now, device.x, device.y, device.z, filteredRssi, distance, phoneAzimuth, phonePitch));
++            if (device.trajectory.size() > 50) device.trajectory.remove(0);
++            
++            // Also store in global trajectory map for theory view
++            List<BtPositionSample> traj = btTrajectories.get(addr);
++            if (traj == null) { traj = new ArrayList<>(); btTrajectories.put(addr, traj); }
++            traj.add(new BtPositionSample(now, device.x, device.y, device.z, filteredRssi, distance, phoneAzimuth, phonePitch));
++            if (traj.size() > 100) traj.remove(0);
++
++            // Capture values for lambda (must be final or effectively final)
++            final float fx = device.x;
++            final float fy = device.y;
++            final float fz = device.z;
++            final float fbrightness = device.brightness;
++            final long fpersist = (now - device.firstSeen) / 1000;
++            final float fazimuth = phoneAzimuth;
++            final float fpitch = phonePitch;
++
+             webView.post(() -> {
+-                String json = "{\"name\":\"" + escapeJson(dev.getName()) + "\",\"addr\":\"" + dev.getAddress()
+-                    + "\",\"rssi\":" + rssi + ",\"dist\":" + String.format("%.1f", dist) + "}";
+-                injectJs("Bounce.onBtResult(" + json + ")");
++                // Call both handlers for compatibility: onBtResult for UI list, onBtResult3D for 3D
++                String json3D = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
++                    + "\",\"rssi\":" + rawRssi + ",\"filtRssi\":" + String.format("%.1f", filteredRssi)
++                    + "\",\"dist\":" + String.format("%.1f", distance)
++                    + "\",\"x\":" + String.format("%.2f", fx)
++                    + "\",\"y\":" + String.format("%.2f", fy)
++                    + "\",\"z\":" + String.format("%.2f", fz)
++                    + "\",\"brightness\":" + String.format("%.2f", fbrightness)
++                    + "\",\"active\":true"
++                    + "\",\"persist\":" + fpersist
++                    + "\",\"azimuth\":" + String.format("%.1f", fazimuth)
++                    + "\",\"pitch\":" + String.format("%.1f", fpitch) + "}";
++                injectJs("Bounce.onBtResult3D(" + json3D + ")");
++                
++                String jsonUI = "{\"name\":\"" + escapeJson(name) + "\",\"addr\":\"" + addr
++                    + "\",\"rssi\":" + rawRssi + ",\"dist\":" + String.format("%.1f", distance) + "}";
++                injectJs("Bounce.onBtResult(" + jsonUI + ")");
+             });
+         }
+         public void onScanFailed(int errorCode) {
+@@ -344,12 +571,37 @@
+                     float azimuth = (float) Math.toDegrees(orientation[0]);
+                     if (azimuth < 0) azimuth += 360;
+                     float pitch = (float) Math.toDegrees(orientation[1]);
++                    float roll = (float) Math.toDegrees(orientation[2]);
+                     String orn = Math.abs(pitch) < 20 ? "flat" : Math.abs(pitch) > 60 ? "upright" : "tilted";
+ 
++                    // Store phone orientation for Bluetooth 3D positioning with low-pass filter
++                    if (firstSensorUpdate) {
++                        smoothAzimuth = azimuth;
++                        smoothPitch = pitch;
++                        smoothRoll = roll;
++                        firstSensorUpdate = false;
++                    } else {
++                        // Handle azimuth wrap-around (0/360 boundary)
++                        float azDiff = azimuth - smoothAzimuth;
++                        if (azDiff > 180) azDiff -= 360;
++                        else if (azDiff < -180) azDiff += 360;
++                        smoothAzimuth += SENSOR_ALPHA * azDiff;
++                        if (smoothAzimuth >= 360) smoothAzimuth -= 360;
++                        else if (smoothAzimuth < 0) smoothAzimuth += 360;
++                        
++                        smoothPitch += SENSOR_ALPHA * (pitch - smoothPitch);
++                        smoothRoll += SENSOR_ALPHA * (roll - smoothRoll);
++                    }
++                    phoneAzimuth = smoothAzimuth;
++                    phonePitch = smoothPitch;
++                    phoneRoll = smoothRoll;
++
+                     final float az = azimuth;
++                    final float pt = pitch;
++                    final float rl = roll;
+                     final String or = orn;
+                     if (webView != null) {
+-                        webView.post(() -> injectJs("Bounce.onCompass(" + az + ",'" + or + "')"));
++                        webView.post(() -> injectJs("Bounce.onCompass(" + az + "," + pt + "," + rl + ",'" + or + "')"));
+                     }
+                 }
+ 
+@@ -978,12 +1230,16 @@
+             sensorThread.quitSafely();
+             sensorThread = null;
+         }
++        // Stop Bluetooth cleanup task
++        if (btCleanupHandler != null && btCleanupRunnable != null) {
++            btCleanupHandler.removeCallbacks(btCleanupRunnable);
++        }
+     }
+ 
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.79 · Kalman Distance", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.86 · Bluetooth 3D Spatial", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface
+@@ -1005,5 +1261,59 @@
+                 if (tagTextView != null) tagTextView.setText(text);
+             });
+         }
++        
++        @JavascriptInterface
++        public void setTheoryMode(boolean enabled) {
++            theoryMode = enabled;
++            runOnUiThread(() -> {
++                String mode = enabled ? "THEORY" : "LIVE";
++                if (tagTextView != null) tagTextView.setText("Bluetooth 3D Spatial · v1.0.86 · " + mode);
++                Toast.makeText(MainActivity.this, "Theory Mode: " + (enabled ? "ON" : "OFF"), Toast.LENGTH_SHORT).show();
++            });
++        }
++        
++        @JavascriptInterface
++        public String getTrajectory(String addr) {
++            List<BtPositionSample> traj = btTrajectories.get(addr);
++            if (traj == null || traj.isEmpty()) return "[]";
++            StringBuilder json = new StringBuilder("[");
++            for (int i = 0; i < traj.size(); i++) {
++                BtPositionSample s = traj.get(i);
++                if (i > 0) json.append(",");
++                json.append("{\"t\":").append(s.timestamp)
++                    .append(",\"x\":" + String.format("%.2f", s.x))
++                    .append(",\"y\":" + String.format("%.2f", s.y))
++                    .append(",\"z\":" + String.format("%.2f", s.z))
++                    .append(",\"rssi\":" + (int)s.rssi)
++                    .append(",\"dist\":" + String.format("%.1f", s.distance))
++                    .append(",\"azimuth\":" + String.format("%.1f", s.azimuth))
++                    .append(",\"pitch\":" + String.format("%.1f", s.pitch) + "}");
++            }
++            json.append("]");
++            return json.toString();
++        }
++        
++        @JavascriptInterface
++        public String getAllDevices() {
++            StringBuilder json = new StringBuilder("[");
++            boolean first = true;
++            for (Map.Entry<String, BtDevice3D> entry : btDevices.entrySet()) {
++                BtDevice3D d = entry.getValue();
++                if (!first) json.append(",");
++                first = false;
++                json.append("{\"addr\":\"" + entry.getKey() + "\"")
++                    .append(",\"name\":\"" + escapeJson(d.name) + "\"")
++                    .append(",\"rssi\":" + (int)d.rssi)
++                    .append(",\"dist\":" + String.format("%.1f", d.distance))
++                    .append(",\"x\":" + String.format("%.2f", d.x))
++                    .append(",\"y\":" + String.format("%.2f", d.y))
++                    .append(",\"z\":" + String.format("%.2f", d.z))
++                    .append(",\"brightness\":" + String.format("%.2f", d.brightness))
++                    .append(",\"active\":" + d.active)
++                    .append(",\"persist\":" + ((System.currentTimeMillis() - d.firstSeen) / 1000) + "}");
++            }
++            json.append("]");
++            return json.toString();
++        }
+     }
+ }

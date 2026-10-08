@@ -1,0 +1,55 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.47_bounce.html	2026-10-08 02:33:54.567996787 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.48_bounce.html	2026-10-08 02:33:54.588541498 +0000
+@@ -74,6 +74,14 @@
+   </div>
+ </div>
+ 
++<div id="hud-bt" class="pg" style="gap:4px;bottom:480px">
++  <div class="tab tab-l" onclick="UI3.toggle()">B<br>T</div>
++  <div class="hud pointer-events-auto scroll" style="padding:5px;max-width:280px">
++    <h3 class="text-blue text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(68,136,255,.3)">Bluetooth</h3>
++    <ul id="bt-list" style="font-size:8px;max-height:120px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
++  </div>
++</div>
++
+ <div id="hud-left" class="pg" style="gap:4px">
+   <div class="tab tab-l" onclick="UI.toggleLeft()">B<br>E<br>A<br>C<br>O<br>N<br>S</div>
+   <div class="hud p-2 pointer-events-auto">
+@@ -234,6 +242,16 @@
+       ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+     }
+   },
++  onBtResult(jsonStr){
++    var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
++    if(!this.btNodes)this.btNodes=[];
++    var existing=null;
++    for(var i=0;i<this.btNodes.length;i++){if(this.btNodes[i].addr===r.addr){existing=this.btNodes[i];break}}
++    if(existing){existing.rssi=r.rssi;existing.dist=r.dist;existing.lastSeen=Date.now()}
++    else{this.btNodes.push({name:r.name||r.addr,addr:r.addr,rssi:r.rssi,dist:r.dist,lastSeen:Date.now()})}
++    var now=Date.now();
++    for(var i=this.btNodes.length-1;i>=0;i--){if(now-this.btNodes[i].lastSeen>60000)this.btNodes.splice(i,1)}
++  },
+   _startScanner(){
+     var self=this;
+     setInterval(function(){
+@@ -455,6 +473,7 @@
+   }
+ };
+ const UI2={t:false,toggle(){this.t=!this.t;document.getElementById('hud-left2').style.transform=this.t?'translateX(calc(-100% + 22px))':'translateX(0)'}};
++const UI3={t:false,toggle(){this.t=!this.t;document.getElementById('hud-bt').style.transform=this.t?'translateX(calc(-100% + 16px))':'translateX(0)'}};
+ 
+ const UI={hidden:false,lT:false,rT:false,tA:false,
+   setInsets(sb,nb){document.getElementById('hdr').style.paddingTop=(parseInt(sb,10)+10)+'px'},
+@@ -472,6 +491,12 @@
+     for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<li style="color:'+c+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+     if(listR)listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>';
+     if(list2)list2.innerHTML=h||'<li style="color:#FF8800">waiting...</li>';
++    var bl=document.getElementById('bt-list');
++    if(bl&&Bounce.btNodes&&Bounce.btNodes.length>0){
++      var bh='';Bounce.btNodes.sort(function(a,b){return a.dist-b.dist});
++      for(var i=0;i<Math.min(Bounce.btNodes.length,8);i++){var n=Bounce.btNodes[i];bh+='<li style="color:#4488FF;padding:1px 0">'+n.name+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
++      bl.innerHTML=bh;
++    }else if(bl){bl.innerHTML='<li style="color:#6b7280">no BT devices</li>'}
+   },500);
+ },3000);
+ </script>

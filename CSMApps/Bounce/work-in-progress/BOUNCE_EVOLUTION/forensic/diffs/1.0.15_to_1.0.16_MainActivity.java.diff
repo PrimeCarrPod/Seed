@@ -1,0 +1,83 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.15_MainActivity.java	2026-10-08 02:33:53.927359080 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.16_MainActivity.java	2026-10-08 02:33:53.946411351 +0000
+@@ -134,12 +134,12 @@
+             return;
+         }
+ 
+-        // Truncate to fit: DIRECT- = 7, xy = 2, max SSID = 32 → 23 chars left
+-        final String shortName = ssidCode.length() > 21 ? ssidCode.substring(0, 21) : ssidCode;
++        // TAF code already starts with "TA", which satisfies DIRECT-xy prefix.
++        // Max SSID = 32 chars, "DIRECT-" = 7, leaves 25 for TAF code.
++        String code = ssidCode.length() > 25 ? ssidCode.substring(0, 25) : ssidCode;
++        final String networkName = "DIRECT-" + code;
+ 
+-        // API 29+: Use WifiP2pConfig.Builder for autonomous Group Owner with custom SSID
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+-            String networkName = "DIRECT-TA" + shortName;
+             try {
+                 WifiP2pConfig config = new WifiP2pConfig.Builder()
+                     .setNetworkName(networkName)
+@@ -148,23 +148,37 @@
+                 p2pManager.createGroup(p2pChannel, config, new WifiP2pManager.ActionListener() {
+                     public void onSuccess() {
+                         broadcasting = true;
+-                        injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + networkName + "',method:'P2pConfig-Builder'})");
+-                        Toast.makeText(MainActivity.this, "SSID: " + networkName, Toast.LENGTH_LONG).show();
++                        injectJs("Bounce.onBroadcastStatus({status:'visible',ssid:'" + networkName + "',method:'P2pConfig'})");
++                        Toast.makeText(MainActivity.this, networkName, Toast.LENGTH_SHORT).show();
+                     }
+                     public void onFailure(int r) {
+-                        // Fallback: legacy createGroup
+-                        doLegacyCreateGroup(shortName, ssidCode);
++                        doLegacyCreateGroup(code, ssidCode);
+                     }
+                 });
+                 return;
+             } catch (Exception e) {
+-                doLegacyCreateGroup(shortName, ssidCode);
++                doLegacyCreateGroup(code, ssidCode);
+                 return;
+             }
+         }
+ 
+-        // Pre-Q: Use legacy reflection + createGroup
+-        doLegacyCreateGroup(shortName, ssidCode);
++        doLegacyCreateGroup(code, ssidCode);
++    }
++
++    public void refreshBroadcastSSID(String newSsidCode) {
++        if (!broadcasting || p2pManager == null || p2pChannel == null) return;
++        // Remove current group and recreate with updated SSID
++        p2pManager.removeGroup(p2pChannel, new WifiP2pManager.ActionListener() {
++            public void onSuccess() {
++                new Handler(Looper.getMainLooper()).postDelayed(() -> {
++                    startP2pBroadcast(newSsidCode);
++                }, 500);
++            }
++            public void onFailure(int r) {
++                // Try creating anyway
++                startP2pBroadcast(newSsidCode);
++            }
++        });
+     }
+ 
+     private void doLegacyCreateGroup(String shortName, String fullCode) {
+@@ -399,7 +413,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("WifiP2pConfig SSID · v1.0.15");
++        tag.setText("Cycling SSID · v1.0.16");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -477,5 +491,9 @@
+         public void stopBroadcast() {
+             runOnUiThread(() -> stopP2pBroadcast());
+         }
++        @JavascriptInterface
++        public void refreshBroadcastSSID(String newSsid) {
++            runOnUiThread(() -> refreshBroadcastSSID(newSsid));
++        }
+     }
+ }

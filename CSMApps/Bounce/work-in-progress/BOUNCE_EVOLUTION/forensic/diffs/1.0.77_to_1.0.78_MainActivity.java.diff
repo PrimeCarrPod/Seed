@@ -1,0 +1,29 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.77_MainActivity.java	2026-10-08 02:33:55.140775565 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.78_MainActivity.java	2026-10-08 02:33:55.160448167 +0000
+@@ -513,7 +513,7 @@
+             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                 if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) return;
+             }
+-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 1f, gpsListener, Looper.getMainLooper());
++            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, .5f, gpsListener, Looper.getMainLooper());
+         } catch (Exception e) {
+             injectJs("androidBridge('gpsStatus',{status:'error',msg:'" + e.getMessage() + "'})");
+         }
+@@ -671,7 +671,7 @@
+         logo.setGravity(Gravity.CENTER);
+ 
+         TextView tag = new TextView(this);
+-        tag.setText("Spatial Aware · v1.0.77");
++        tag.setText("ChaseCam · v1.0.78");
+         tag.setTextSize(11f);
+         tag.setTextColor(Color.parseColor("#E8E8F0"));
+         tag.setGravity(Gravity.CENTER);
+@@ -753,7 +753,7 @@
+     public class JsBridge {
+         @JavascriptInterface
+         public void onReady(String j) {
+-            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.77 · Spatial Aware", Toast.LENGTH_SHORT).show());
++            runOnUiThread(() -> Toast.makeText(MainActivity.this, "Bounce v1.0.78 · ChaseCam", Toast.LENGTH_SHORT).show());
+         }
+ 
+         @JavascriptInterface

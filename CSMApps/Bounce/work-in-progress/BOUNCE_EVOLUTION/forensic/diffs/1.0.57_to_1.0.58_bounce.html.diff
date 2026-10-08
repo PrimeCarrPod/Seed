@@ -1,0 +1,11 @@
+--- /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.57_bounce.html	2026-10-08 02:33:54.762472491 +0000
++++ /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e/CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.58_bounce.html	2026-10-08 02:33:54.783426197 +0000
+@@ -512,7 +512,7 @@
+       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
+     }
+     // Trail recording
+-    if(self.trailActive){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
++    if(self.trailActive&&self.mySpeed>1){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+       if(self.trailPoints.length>1){
+         if(self.trailLine)self.scene.remove(self.trailLine);
+         var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
