@@ -1,9 +1,9 @@
 # BOUNCE EVOLUTION — MASTER TODO
 **Project:** BOUNCE Forensic Analysis & Spreadsheet Creation  
-**Branch:** `kilo/wandering-link-gvp`  
+**Branch:** `kilo/balanced-cap-0ja`  
 **Working Directory:** `CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION/`  
 **Last Updated:** 2026-10-08  
-**Session:** Forensic Analysis Complete (91 versions)
+**Session:** Sections 1-8 GitHub Handler Complete
 
 ---
 
@@ -47,7 +47,7 @@
 - [x] Best Practices/Anti-Patterns Spreadsheet (20 best + 20 anti-patterns)
 - [x] Repeated Errors Catalog Spreadsheet (30 errors documented)
 - [x] Future Progress Spreadsheet (30 items prioritized P0-P3)
-- [x] TGAPP Spreadsheet (32 monetization items)
+- [x] TGAPP Spreadsheet (33 monetization items)
 - [x] Working Features + Versions Spreadsheet (30 features with history)
 - [x] Refinement of Existing Parts Spreadsheet (30 refinements)
 - [x] Future Thoughts/Evaluations Spreadsheet (30 visionary items)
@@ -104,8 +104,8 @@
 
 ## NEXT SESSION PRIORITIES
 
-1. **Create MASTER_INDEX.md** — Cross-reference all 13 spreadsheets
-2. **Run GitHub handler workflow** — For each of 13 sections
+1. **Run GitHub handler workflow** — For Section 9 (Working Features + Versions)
+2. **Continue Sections 10-13** — Forensic Data, Master Index
 3. **Update RESUME_SESSION_NEXT_RUNNER.md** — With current state
 4. **Push to GitHub** — Commit all spreadsheets + forensic data
 
@@ -114,7 +114,7 @@
 ## RESUME COMMANDS FOR NEXT SESSION
 
 ```bash
-cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_12e4cc5c-88f9-4c4e-a46d-b5896e6b345e
+cd /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/worktrees/worktree_b82a46d0-0e7f-4a47-893a-90e8af79b252
 cd CSMApps/Bounce/work-in-progress/BOUNCE_EVOLUTION
 
 # Review forensic data
@@ -125,10 +125,10 @@ cat forensic/analysis/version_changes.csv | head -30
 ls -la *.csv
 head -5 *.csv
 
-# Continue with Section 12/13
+# Continue with Section 9
 # GitHub handler workflow
 ```
 
 ---
 
-*Generated: 2026-10-08 | Forensic analysis of 91 Bounce versions complete*
+*Generated: 2026-10-08 | Forensic analysis of 91 Bounce versions complete | Sections 1-8 GitHub Handler Complete*
