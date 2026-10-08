@@ -57,7 +57,23 @@ get_article_config() {
         elif [[ "$article_prefix" == "article9" ]]; then
             article_letter="A9"
             article_name="ExperimentalSignatures"
-            article_letter_dir="F"
+            article_letter_dir="I"
+        elif [[ "$article_prefix" == "article10" ]]; then
+            article_letter="A10"
+            article_name="RefinementPrioritized"
+            article_letter_dir="J"
+        elif [[ "$article_prefix" == "article11" ]]; then
+            article_letter="A11"
+            article_name="FutureThoughtsEvaluations"
+            article_letter_dir="K"
+        elif [[ "$article_prefix" == "article12" ]]; then
+            article_letter="A12"
+            article_name="ForensicAnalysisData"
+            article_letter_dir="L"
+        elif [[ "$article_prefix" == "article13" ]]; then
+            article_letter="A13"
+            article_name="MasterIndexCrossReference"
+            article_letter_dir="M"
         fi
         organized_full="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/full"
         organized_zip="CSM_WORK_IN_PROGRESS/SubAtom_WIP/${article_letter_dir}_Article${article_num}_${article_name}/zip"
@@ -94,6 +110,13 @@ PREFIXES (optional, defaults to article3):
   article4  - Article 4: Coupling Constants (A4-XX)
   article5  - Article 5: Biology/Genetics (A5-XX)
   article6  - Article 6: Transcendent Physics (A6-XX)
+  article7  - Article 7: Quark/Hadron/Nuclear (A7-XX)
+  article8  - Article 8: Cosmology/Astrophysics (A8-XX)
+  article9  - Article 9: Experimental Signatures (A9-XX)
+  article10 - Article 10: Refinement Prioritized (A10-XX)
+  article11 - Article 11: Future Thoughts/Evaluations (A11-XX)
+  article12 - Article 12: Forensic Analysis Data (A12-XX)
+  article13 - Article 13: Master Index Cross-Reference (A13-XX)
 
 EXAMPLES:
   ./GitHub_handler.sh create-pieces 1 "Fine_Structure_Constant_Prime_Gaps" article4
@@ -124,10 +147,14 @@ create_pieces() {
     if [[ "$prefix" == "article3" ]]; then article_letter="A3"; article_letter_dir="C"; fi
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; article_letter_dir="D"; fi
     if [[ "$prefix" == "article5" ]]; then article_letter="A5"; article_letter_dir="E"; fi
-        if [[ "$prefix" == "article6" ]]; then article_letter="A6"; article_letter_dir="F"; fi
-        if [[ "$prefix" == "article7" ]]; then article_letter="A7"; article_letter_dir="G"; fi
-        if [[ "$prefix" == "article8" ]]; then article_letter="A8"; article_letter_dir="H"; fi
-        if [[ "$prefix" == "article9" ]]; then article_letter="A9"; article_letter_dir="I"; fi
+    if [[ "$prefix" == "article6" ]]; then article_letter="A6"; article_letter_dir="F"; fi
+    if [[ "$prefix" == "article7" ]]; then article_letter="A7"; article_letter_dir="G"; fi
+    if [[ "$prefix" == "article8" ]]; then article_letter="A8"; article_letter_dir="H"; fi
+    if [[ "$prefix" == "article9" ]]; then article_letter="A9"; article_letter_dir="I"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; article_letter_dir="J"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; article_letter_dir="K"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; article_letter_dir="L"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; article_letter_dir="M"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     for i in {1..13}; do
         local piece_file="${full_prefix}_piece_$(printf "%02d" "$i").md"
@@ -203,6 +230,10 @@ concat_pieces() {
     if [[ "$prefix" == "article7" ]]; then article_letter="A7"; fi
     if [[ "$prefix" == "article8" ]]; then article_letter="A8"; fi
     if [[ "$prefix" == "article9" ]]; then article_letter="A9"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local concat_file="${article_letter}-$(printf "%02d" "$article_num")_${title_override:-Quantum_Article}.md"
     
@@ -265,6 +296,10 @@ zip_pieces() {
     if [[ "$prefix" == "article7" ]]; then article_letter="A7"; fi
     if [[ "$prefix" == "article8" ]]; then article_letter="A8"; fi
     if [[ "$prefix" == "article9" ]]; then article_letter="A9"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local zip_file="${full_prefix}_pieces.zip"
     
@@ -305,6 +340,10 @@ verify_article() {
     if [[ "$prefix" == "article7" ]]; then article_letter="A7"; article_name="QuarkHadronNuclear"; article_letter_dir="G"; fi
     if [[ "$prefix" == "article8" ]]; then article_letter="A8"; article_name="CosmologyAstrophysics"; article_letter_dir="H"; fi
     if [[ "$prefix" == "article9" ]]; then article_letter="A9"; article_name="ExperimentalSignatures"; article_letter_dir="I"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; article_name="RefinementPrioritized"; article_letter_dir="J"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; article_name="FutureThoughtsEvaluations"; article_letter_dir="K"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; article_name="ForensicAnalysisData"; article_letter_dir="L"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; article_name="MasterIndexCrossReference"; article_letter_dir="M"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local concat_file="${article_letter}-$(printf "%02d" "$article_num")_*.md"
     local zip_file="${full_prefix}_pieces.zip"
@@ -378,6 +417,10 @@ organize_article() {
     if [[ "$prefix" == "article7" ]]; then article_letter="A7"; article_name="QuarkHadronNuclear"; article_letter_dir="G"; fi
     if [[ "$prefix" == "article8" ]]; then article_letter="A8"; article_name="CosmologyAstrophysics"; article_letter_dir="H"; fi
     if [[ "$prefix" == "article9" ]]; then article_letter="A9"; article_name="ExperimentalSignatures"; article_letter_dir="I"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; article_name="RefinementPrioritized"; article_letter_dir="J"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; article_name="FutureThoughtsEvaluations"; article_letter_dir="K"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; article_name="ForensicAnalysisData"; article_letter_dir="L"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; article_name="MasterIndexCrossReference"; article_letter_dir="M"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     local concat_file="${article_letter}-$(printf "%02d" "$article_num")_*.md"
     local concat_files=($concat_file)
@@ -403,7 +446,7 @@ organize_article() {
 
 list_articles() {
     echo "=== Article Pieces in Root Directory ==="
-    for prefix in article1 article2 article3 article4 article5 article6 article7 article8 article9; do
+    for prefix in article1 article2 article3 article4 article5 article6 article7 article8 article9 article10 article11 article12 article13; do
         for f in ${prefix}_A*-piece_*.md; do
             [[ -f "$f" ]] && echo "  $f"
         done
@@ -415,7 +458,7 @@ list_articles() {
     done
     echo ""
     echo "=== Zip Files in Root ==="
-    for prefix in article1 article2 article3 article4 article5 article6 article7 article8 article9; do
+    for prefix in article1 article2 article3 article4 article5 article6 article7 article8 article9 article10 article11 article12 article13; do
         for f in ${prefix}_A*-pieces.zip; do
             [[ -f "$f" ]] && echo "  $f"
         done
@@ -439,6 +482,10 @@ clean_pieces() {
     if [[ "$prefix" == "article7" ]]; then article_letter="A7"; fi
     if [[ "$prefix" == "article8" ]]; then article_letter="A8"; fi
     if [[ "$prefix" == "article9" ]]; then article_letter="A9"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; fi
     local full_prefix="${prefix}_${article_letter}-$(printf "%02d" "$article_num")"
     
     echo "Removing loose pieces for ${article_letter}-$(printf "%02d" "$article_num") from root..."
@@ -467,6 +514,13 @@ commit_and_push() {
     if [[ "$prefix" == "article4" ]]; then article_letter="A4"; fi
     if [[ "$prefix" == "article5" ]]; then article_letter="A5"; fi
     if [[ "$prefix" == "article6" ]]; then article_letter="A6"; fi
+    if [[ "$prefix" == "article7" ]]; then article_letter="A7"; fi
+    if [[ "$prefix" == "article8" ]]; then article_letter="A8"; fi
+    if [[ "$prefix" == "article9" ]]; then article_letter="A9"; fi
+    if [[ "$prefix" == "article10" ]]; then article_letter="A10"; fi
+    if [[ "$prefix" == "article11" ]]; then article_letter="A11"; fi
+    if [[ "$prefix" == "article12" ]]; then article_letter="A12"; fi
+    if [[ "$prefix" == "article13" ]]; then article_letter="A13"; fi
     
     echo "Committing ${article_letter}-$(printf "%02d" "$article_num")..."
     git add -A
@@ -531,6 +585,10 @@ case "${1:-help}" in
         if [[ "$4" == "article7" ]]; then article_letter="A7"; fi
         if [[ "$4" == "article8" ]]; then article_letter="A8"; fi
         if [[ "$4" == "article9" ]]; then article_letter="A9"; fi
+        if [[ "$4" == "article10" ]]; then article_letter="A10"; fi
+        if [[ "$4" == "article11" ]]; then article_letter="A11"; fi
+        if [[ "$4" == "article12" ]]; then article_letter="A12"; fi
+        if [[ "$4" == "article13" ]]; then article_letter="A13"; fi
         echo ">>> ./GitHub_handler.sh commit-push $2 \"Add ${article_letter}-$(printf "%02d" "$2"): $3 - 13 pieces, concat, zip\""
         ;;
     commit-push) commit_and_push "$2" "$3" ;;
