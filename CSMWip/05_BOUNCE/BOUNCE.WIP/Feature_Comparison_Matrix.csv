@@ -1,0 +1,23 @@
+Feature,Bounce,Marmalade,Vertebrae,landolil,CarForge
+Platform,Android,Android,Android,Android,Android
+UI Framework,WebView + Three.js,WebView + Three.js,WebView + Terminal HTML,WebView + Three.js + Chart.js,Unknown (likely WebView)
+3D Engine,Three.js r128,Three.js,None (terminal),Three.js + Chart.js,Unknown
+Build System,No-Gradle aapt2,Gradle 8.5 / Mini Method,Gradle 8.5 (planned),No-Gradle aapt2 / Mini Method,Unknown
+Language,Java,Kotlin,Kotlin,Java/Kotlin,Unknown
+Wi-Fi Scanning,Yes (WifiManager),No,No,No,No
+Bluetooth LE,Yes (BluetoothLeScanner),No,No,No,No
+Wi-Fi Direct/P2P,Yes (Group Owner + Bonjour),No,No,No,No
+GPS Tracking,Yes (LocationManager),No,No,No,No
+Sensors,Accel + Mag + Gyro + Step,Unknown,No,Accel + Gyro (Motion Sensor),No
+Wake Lock,Yes (PARTIAL_WAKE_LOCK),No,Planned (foreground service),No,No
+Background Services,Planned (ScanningService),No,Planned (Heartbeat, Floating Window),No,No
+Floating Window,Yes (legacy),No,Yes (SYSTEM_ALERT_WINDOW),No,No
+Inter-App Comms,No,No,Yes (Local Socket + WebSocket),No,No
+WebSocket,No (GitHub version check only),No,Yes (kilo.ai),No,No
+Offline Capable,Yes (local assets),Yes (local JS/CSS),Planned,Yes (local Three.js/Chart.js),Unknown
+Auto-Update,Yes (GitHub Releases),No,No,No,No
+Permissions,15 (Location, Wi-Fi, BT, Sensors, Wake),Minimal (Internet, WebView),Many (Overlay, Network, Boot, Foreground),Moderate (Sensors, Network),Unknown
+APK Size,~200-230 KB,~500KB-1.8MB,Unknown (planned),~600KB-1MB,746 KB
+Version Count,95+,13+,4 (planned),13+,1
+Current Status,Active (v1.0.95 WIP),Active (v7c latest),In Development (v0.1 target),Active (v7b latest),Initial Release Only
+Key Differentiator,Vehicle mesh network + 6-algorithm positioning,Three.js viz + build lessons,Kilo session manager + floating windows,Particle physics viz + 34 species,Vehicle configurator
