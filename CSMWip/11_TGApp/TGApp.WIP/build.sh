@@ -33,6 +33,7 @@ APKSIGNER="$ANDROID_HOME/build-tools/34.0.0/apksigner"
 APP_DIR="src/main"
 BUILD_DIR="build"
 OUT_DIR="out"
+APK_DIR="APK"
 KEYSTORE_DIR="keystore"
 GEN_DIR="gen"
 CLASSES_DIR="classes"
@@ -160,7 +161,7 @@ align_apk() {
 sign_apk() {
     log_info "Signing APK..."
     
-    mkdir -p "$OUT_DIR"
+    mkdir -p "$APK_DIR"
     
     local keystore_file="$KEYSTORE_DIR/release.keystore"
     
@@ -178,10 +179,10 @@ sign_apk() {
         --ks-key-alias "$KEY_ALIAS" \
         --ks-pass "pass:$KEYSTORE_PASS" \
         --key-pass "pass:$KEY_PASS" \
-        --out "$OUT_DIR/${APP_NAME}-v${VERSION_NAME}.apk" \
+        --out "$APK_DIR/${APP_NAME}-v${VERSION_NAME}.apk" \
         "$BUILD_DIR/aligned.apk"
     
-    log_info "APK signed: $OUT_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
+    log_info "APK signed: $APK_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
 }
 
 # Create debug keystore for testing
@@ -203,10 +204,10 @@ create_debug_keystore() {
 verify_apk() {
     log_info "Verifying APK signature..."
     
-    $APKSIGNER verify "$OUT_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
+    $APKSIGNER verify "$APK_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
     
     # Also print certificate info
-    $APKSIGNER verify --print-certs "$OUT_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
+    $APKSIGNER verify --print-certs "$APK_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
     
     log_info "APK verification successful"
 }
@@ -228,7 +229,7 @@ build_all() {
     
     log_info "=========================================="
     log_info "BUILD SUCCESSFUL!"
-    log_info "Output: $OUT_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
+    log_info "Output: $APK_DIR/${APP_NAME}-v${VERSION_NAME}.apk"
     log_info "=========================================="
 }
 
