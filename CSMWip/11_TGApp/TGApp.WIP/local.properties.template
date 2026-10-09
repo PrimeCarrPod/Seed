@@ -1,0 +1,11 @@
+# Local SDK configuration - DO NOT COMMIT
+# Copy to local.properties and update paths
+
+## Linux/macOS
+sdk.dir=/home/${USER}/Android/Sdk
+
+## Windows (uncomment and update)
+# sdk.dir=C:\\Users\\${USERNAME}\\AppData\\Local\\Android\\Sdk
+
+## macOS with Homebrew
+# sdk.dir=/opt/homebrew/share/android-commandlinetools

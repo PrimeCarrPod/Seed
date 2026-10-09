@@ -1,0 +1,328 @@
+name: TGApp Build & Release
+
+on:
+  push:
+    branches: [kilo/tgapp-wip, main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version name (e.g., 1.0.1)'
+        required: false
+        default: ''
+
+env:
+  APP_NAME: TGApp
+  PACKAGE_NAME: com.TGApp.mynewapp
+  JAVA_VERSION: 17
+  ANDROID_SDK_VERSION: 34
+  BUILD_TOOLS_VERSION: 34.0.0
+  KOTLIN_VERSION: 1.9.20
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    permissions:
+      contents: write
+      packages: write
+      attestations: write
+      id-token: write
+    
+    steps:
+      # ===== Checkout =====
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      # ===== Setup Java =====
+      - name: Setup JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: gradle
+      
+      # ===== Setup Android SDK =====
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          api-level: ${{ env.ANDROID_SDK_VERSION }}
+          build-tools-version: ${{ env.BUILD_TOOLS_VERSION }}
+          ndk-version: r26c
+          cmdline-tools-version: latest
+      
+      # ===== Cache Gradle =====
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      
+      # ===== Configure Keystore =====
+      - name: Decode Keystore
+        if: env.KEYSTORE_BASE64 != ''
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > keystore/release.keystore
+          echo "KEYSTORE_PASS=${{ secrets.KEYSTORE_PASS }}" >> $GITHUB_ENV
+          echo "KEY_PASS=${{ secrets.KEY_PASS }}" >> $GITHUB_ENV
+      
+      - name: Create Debug Keystore (fallback)
+        if: env.KEYSTORE_BASE64 == ''
+        run: |
+          mkdir -p keystore
+          keytool -genkeypair \
+            -alias androiddebugkey \
+            -keypass android \
+            -keystore keystore/debug.keystore \
+            -storepass android \
+            -dname "CN=Android Debug,O=Android,C=US" \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -noprompt
+          echo "KEYSTORE_PASS=android" >> $GITHUB_ENV
+          echo "KEY_PASS=android" >> $GITHUB_ENV
+          echo "KEYSTORE_FILE=keystore/debug.keystore" >> $GITHUB_ENV
+          echo "KEY_ALIAS=androiddebugkey" >> $GITHUB_ENV
+      
+      # ===== Configure Google Services =====
+      - name: Setup google-services.json
+        if: env.GOOGLE_SERVICES_JSON != ''
+        run: |
+          echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 -d > app/src/main/google-services.json
+      
+      # ===== Make Gradle Wrapper Executable =====
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+      
+      # ===== Build Debug APK =====
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --stacktrace
+        env:
+          KEYSTORE_PASS: ${{ env.KEYSTORE_PASS }}
+          KEY_PASS: ${{ env.KEY_PASS }}
+      
+      # ===== Build Release APK =====
+      - name: Build Release APK
+        run: ./gradlew assembleRelease --stacktrace
+        env:
+          KEYSTORE_PASS: ${{ env.KEYSTORE_PASS }}
+          KEY_PASS: ${{ env.KEY_PASS }}
+      
+      # ===== Verify APK =====
+      - name: Verify Release APK
+        run: |
+          APK_PATH=$(find . -name "*-release.apk" -path "*/build/outputs/*" | head -1)
+          echo "APK_PATH=$APK_PATH" >> $GITHUB_ENV
+          ./gradlew verifyReleaseResources --stacktrace || true
+        env:
+          KEYSTORE_PASS: ${{ env.KEYSTORE_PASS }}
+          KEY_PASS: ${{ env.KEY_PASS }}
+      
+      # ===== Upload Artifacts =====
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: TGApp-debug
+          path: |
+            **/build/outputs/apk/debug/*-debug.apk
+          retention-days: 30
+      
+      - name: Upload Release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: TGApp-release
+          path: |
+            **/build/outputs/apk/release/*-release.apk
+          retention-days: 30
+      
+      # ===== Create Release (on tag) =====
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            **/build/outputs/apk/release/*-release.apk
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ===== Lint & Test =====
+  lint-and-test:
+    name: Lint & Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: gradle
+      
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          api-level: ${{ env.ANDROID_SDK_VERSION }}
+          build-tools-version: ${{ env.BUILD_TOOLS_VERSION }}
+      
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+      
+      - name: Run Lint
+        run: ./gradlew lintDebug --stacktrace
+      
+      - name: Run Unit Tests
+        run: ./gradlew testDebugUnitTest --stacktrace
+      
+      - name: Upload Lint Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lint-report
+          path: |
+            **/build/reports/lint-results-debug.html
+          retention-days: 14
+      
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-report
+          path: |
+            **/build/reports/tests/testDebugUnitTest/index.html
+          retention-days: 14
+
+  # ===== Security Scan =====
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup JDK ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: gradle
+      
+      - name: Run Dependency Check (OWASP)
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: 'TGApp'
+          path: '.'
+          format: 'HTML'
+          out: 'reports'
+          args: >
+            --failOnCVSS 7
+            --suppression suppression.xml
+      
+      - name: Upload Dependency Check Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dependency-check-report
+          path: reports/dependency-check-report.html
+          retention-days: 30
+
+  # ===== APK Analysis =====
+  apk-analysis:
+    name: APK Analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: build
+    
+    steps:
+      - name: Download Release APK
+        uses: actions/download-artifact@v4
+        with:
+          name: TGApp-release
+          path: apk/
+      
+      - name: Analyze APK Size
+        run: |
+          APK_FILE=$(find apk -name "*.apk" | head -1)
+          SIZE=$(stat -c%s "$APK_FILE")
+          SIZE_KB=$((SIZE / 1024))
+          echo "APK Size: ${SIZE_KB} KB"
+          echo "APK_SIZE_KB=$SIZE_KB" >> $GITHUB_ENV
+          
+          # Size thresholds
+          if [ $SIZE_KB -gt 500 ]; then
+            echo "::warning::APK size (${SIZE_KB} KB) exceeds 500 KB threshold"
+          elif [ $SIZE_KB -gt 200 ]; then
+            echo "::notice::APK size (${SIZE_KB} KB) exceeds 200 KB target"
+          else
+            echo "::notice::APK size (${SIZE_KB} KB) within target (< 200 KB)"
+          fi
+      
+      - name: Analyze APK Contents
+        run: |
+          APK_FILE=$(find apk -name "*.apk" | head -1)
+          echo "=== APK Contents ==="
+          unzip -l "$APK_FILE"
+          
+          echo "=== DEX Analysis ==="
+          unzip -p "$APK_FILE" classes.dex | dexdump -f 2>/dev/null | head -20 || echo "dexdump not available"
+      
+      - name: Check for Debug Symbols
+        run: |
+          APK_FILE=$(find apk -name "*.apk" | head -1)
+          if unzip -l "$APK_FILE" | grep -q "META-INF/.*\.SF"; then
+            echo "✓ APK is signed"
+          else
+            echo "✗ APK not signed"
+            exit 1
+          fi
+          
+          if unzip -l "$APK_FILE" | grep -q "classes.dex"; then
+            echo "✓ classes.dex present"
+          else
+            echo "✗ classes.dex missing"
+            exit 1
+          fi
+
+  # ===== Notify =====
+  notify:
+    name: Notify
+    runs-on: ubuntu-latest
+    needs: [build, lint-and-test, security-scan, apk-analysis]
+    if: always()
+    
+    steps:
+      - name: Build Summary
+        run: |
+          echo "## TGApp Build Summary"
+          echo ""
+          echo "**Build Status:** ${{ needs.build.result }}"
+          echo "**Lint & Test:** ${{ needs.lint-and-test.result }}"
+          echo "**Security Scan:** ${{ needs.security-scan.result }}"
+          echo "**APK Analysis:** ${{ needs.apk-analysis.result }}"
+          echo ""
+          if [ "${{ needs.apk-analysis.result }}" == "success" ]; then
+            echo "**APK Size:** ${{ needs.apk-analysis.outputs.APK_SIZE_KB }} KB"
+          fi
+          echo ""
+          echo "Artifacts uploaded for download."
+        env:
+          GITHUB_STEP_SUMMARY: $GITHUB_STEP_SUMMARY
