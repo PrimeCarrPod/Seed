@@ -13,19 +13,20 @@ export WIP_DIR="/workspace/app/CSMWip/11_TGApp/TGApp.WIP"
 export BRANCH_NAME="kilo/tgapp-wip"
 
 # ─── Android SDK Environment ────────────────────────────────────
-export JAVA_HOME=${JAVA_HOME:-/usr/lib/jvm/java-17-openjdk}
-export ANDROID_HOME=${ANDROID_HOME:-$HOME/Android/Sdk}
+export JAVA_HOME=${JAVA_HOME:-/usr/lib/jvm/java-17-openjdk-amd64}
+export ANDROID_HOME=${ANDROID_HOME:-/opt/android-sdk}
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/build-tools/34.0.0
+export PATH=$PATH:$ANDROID_HOME/kotlinc/bin
 
 # ─── Build Tools Aliases ────────────────────────────────────────
 alias aapt2="$ANDROID_HOME/build-tools/34.0.0/aapt2"
 alias d8="$ANDROID_HOME/build-tools/34.0.0/d8"
 alias zipalign="$ANDROID_HOME/build-tools/34.0.0/zipalign"
 alias apksigner="$ANDROID_HOME/build-tools/34.0.0/apksigner"
-alias kotlinc="kotlinc"
+alias kotlinc="$ANDROID_HOME/kotlinc/bin/kotlinc"
 
 # ─── Keystore Passwords (set in CI/CD, not here) ────────────────
 # export KEYSTORE_PASS="your_keystore_password"
@@ -38,6 +39,10 @@ tgapp-build() {
 
 tgapp-clean() {
     cd "$WIP_DIR" && ./build.sh clean
+}
+
+tgapp-build-fast() {
+    cd "$WIP_DIR" && ./build.sh resources && ./build.sh kotlin && ./build.sh dex && ./build.sh package && ./build.sh align && ./build.sh sign && ./build.sh verify
 }
 
 tgapp-install() {
@@ -86,7 +91,7 @@ tgapp-session-log() {
     echo "## Context" >> "$log_file"
     echo "- Branch: $BRANCH_NAME" >> "$log_file"
     echo "- Commit: $(cd "$WIP_DIR" && git rev-parse --short HEAD 2>/dev/null || echo 'none')" >> "$log_file"
-    echo "- Build: $(cd "$WIP_DIR" && ./build.sh all 2>&1 | tail -5)" >> "$log_file"
+    echo "- APK: $(ls -lh "$WIP_DIR/out/${APP_NAME}-v1.0.0.apk" 2>/dev/null || echo 'not built')" >> "$log_file"
     echo "" >> "$log_file"
     echo "## Work Done" >> "$log_file"
     echo "" >> "$log_file"
@@ -116,6 +121,7 @@ verify_environment() {
     [ -f "$WIP_DIR/src/main/java/com/TGApp/mynewapp/MainActivity.kt" ] && echo "✅ MainActivity.kt" || echo "❌ MainActivity.kt MISSING"
     [ -f "$WIP_DIR/framework/MASTER_TODO.md" ] && echo "✅ MASTER_TODO.md" || echo "❌ MASTER_TODO.md MISSING"
     [ -f "$WIP_DIR/APP_TEMPLATE_TGApp.md" ] && echo "✅ APP_TEMPLATE_TGApp.md" || echo "❌ APP_TEMPLATE_TGApp.md MISSING"
+    [ -f "$WIP_DIR/out/TGApp-v1.0.0.apk" ] && echo "✅ APK built" || echo "⚠️ APK not built yet"
     echo ""
 }
 
@@ -128,6 +134,7 @@ tgapp-help() {
 TGApp Session Commands:
   tgapp-build       - Full build (clean + compile + sign + verify)
   tgapp-clean       - Clean build artifacts
+  tgapp-build-fast  - Incremental build (skip clean)
   tgapp-install     - Install APK to connected device
   tgapp-logcat      - Filtered logcat for TGApp
   tgapp-shell       - ADB shell
@@ -147,6 +154,7 @@ Key Files:
   $WIP_DIR/framework/MASTER_TODO.md    - Master task list
   $WIP_DIR/APP_TEMPLATE_TGApp.md       - App configuration
   $WIP_DIR/NEW_APP_RUNNER_TGApp.md     - Runner documentation
+  $WIP_DIR/out/TGApp-v1.0.0.apk        - Signed APK
 
 First Iteration Goals:
   1. Build APK with ./build.sh all
@@ -161,3 +169,4 @@ echo ""
 echo "🚀 TGApp session ready! Type 'tgapp-help' for commands."
 echo "📁 Working in: $WIP_DIR"
 echo "🌿 Branch: $BRANCH_NAME"
+echo "📦 APK: $(ls -lh "$WIP_DIR/out/${APP_NAME}-v1.0.0.apk" 2>/dev/null | awk '{print $5, $9}' || echo 'not built')"

@@ -1,6 +1,7 @@
 package com.TGApp.mynewapp
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
@@ -10,10 +11,9 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.util.Log
 import android.view.View
-import android.view.WindowInsets
+import android.view.Window
 import android.view.WindowManager
 import android.webkit.CookieManager
 import android.webkit.WebChromeClient
@@ -21,13 +21,9 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
 
 @SuppressLint("SetJavaScriptEnabled")
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private lateinit var backgroundWebView: WebView
     private lateinit var overlayWebView: WebView
@@ -72,15 +68,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupFullscreen() {
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        
-        val windowInsetsController = WindowInsetsControllerCompat(window, window.decorView)
-        windowInsetsController.systemBarsBehavior = 
-            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-        windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
-        
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
-        window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+        
+        // Hide system bars (API 19+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+        }
     }
 
     private fun checkNetworkConnection(): Boolean {
@@ -99,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         settings.javaScriptEnabled = true
         settings.domStorageEnabled = true
         settings.databaseEnabled = true
-        settings.setAppCacheEnabled(true)
         settings.cacheMode = WebSettings.LOAD_DEFAULT
         settings.allowFileAccess = false
         settings.allowContentAccess = false
@@ -127,18 +128,16 @@ class MainActivity : AppCompatActivity() {
         backgroundWebView.webViewClient = object : WebViewClient() {
             override fun onReceivedError(view: WebView?, request: android.webkit.WebResourceRequest?, error: android.webkit.WebResourceError?) {
                 Log.e(TAG, "Background WebView error: ${error?.description}")
-                // Try fallback if antikytherian fails
                 if (view?.url?.contains("antikytherian") == true) {
                     Log.w(TAG, "Falling back to local animation or alternative")
                 }
             }
             
             override fun shouldOverrideUrlLoading(view: WebView?, request: android.webkit.WebResourceRequest?): Boolean {
-                return false // Allow all navigation within WebView
+                return false
             }
         }
         
-        // Hardware acceleration for smooth animation
         backgroundWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
     }
 
@@ -147,7 +146,6 @@ class MainActivity : AppCompatActivity() {
         settings.javaScriptEnabled = true
         settings.domStorageEnabled = true
         settings.databaseEnabled = true
-        settings.setAppCacheEnabled(true)
         settings.cacheMode = WebSettings.LOAD_DEFAULT
         settings.allowFileAccess = false
         settings.allowContentAccess = false
@@ -159,7 +157,6 @@ class MainActivity : AppCompatActivity() {
         settings.useWideViewPort = true
         settings.loadWithOverviewMode = true
         
-        // Transparent background for overlay
         overlayWebView.setBackgroundColor(0x00000000)
         overlayWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
         
@@ -177,7 +174,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
         
-        // Enable third-party cookies for google.com iframes
         CookieManager.getInstance().setAcceptThirdPartyCookies(overlayWebView, true)
     }
 
@@ -205,17 +201,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
-        // Handle orientation/screen size changes - WebViews auto-resize
         adjustWebViewsForOrientation(newConfig.orientation)
         Log.d(TAG, "Configuration changed: orientation=${newConfig.orientation}")
     }
 
     private fun adjustWebViewsForOrientation(orientation: Int) {
-        // WebViews in FrameLayout with match_parent automatically adapt
-        // But we can trigger a relayout if needed
         rootLayout.requestLayout()
         
-        // Ensure both WebViews fill the screen
         val params = FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT,
             FrameLayout.LayoutParams.MATCH_PARENT
@@ -260,7 +252,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        // Check if either WebView can go back
         if (backgroundWebView.canGoBack()) {
             backgroundWebView.goBack()
         } else if (overlayWebView.canGoBack()) {
@@ -270,11 +261,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private class LicenseBroadcastReceiver : android.content.BroadcastReceiver() {
+    private inner class LicenseBroadcastReceiver : android.content.BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
             if (intent?.action == "LICENSE_UPDATED") {
                 Log.d(TAG, "Received LICENSE_UPDATED broadcast - Pro features may be unlocked")
-                // In future: enable speed control, pause, custom animations
             }
         }
     }

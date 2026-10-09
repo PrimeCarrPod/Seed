@@ -10,9 +10,7 @@ class TGAppApplication : Application() {
         super.onCreate()
         
         // Enable WebView debugging for development
-        if (BuildConfig.DEBUG) {
-            WebView.setWebContentsDebuggingEnabled(true)
-        }
+        WebView.setWebContentsDebuggingEnabled(true)
         
         Log.d("TGApp", "TGApp Application started")
     }

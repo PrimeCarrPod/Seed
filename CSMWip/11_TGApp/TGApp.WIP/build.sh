@@ -15,12 +15,13 @@ TARGET_SDK=34
 COMPILE_SDK=34
 
 # Android SDK paths (adjust as needed)
-export JAVA_HOME=${JAVA_HOME:-/usr/lib/jvm/java-17-openjdk}
-export ANDROID_HOME=${ANDROID_HOME:-$HOME/Android/Sdk}
+export JAVA_HOME=${JAVA_HOME:-/usr/lib/jvm/java-17-openjdk-amd64}
+export ANDROID_HOME=${ANDROID_HOME:-/opt/android-sdk}
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/build-tools/34.0.0
+export PATH=$PATH:$ANDROID_HOME/kotlinc/bin
 
 # Build tools
 AAPT2="$ANDROID_HOME/build-tools/34.0.0/aapt2"
@@ -84,6 +85,10 @@ compile_kotlin() {
     # Find all .kt and .java files
     SOURCE_FILES=$(find "$APP_DIR/java" -name "*.kt" -o -name "*.java" | tr '\n' ' ')
     
+    # Include generated R.java files
+    GENERATED_FILES=$(find "$BUILD_DIR/gen" -name "*.java" 2>/dev/null | tr '\n' ' ')
+    ALL_SOURCE_FILES="$SOURCE_FILES $GENERATED_FILES"
+    
     if [ -z "$SOURCE_FILES" ]; then
         log_warn "No Kotlin/Java source files found"
         return
@@ -93,9 +98,10 @@ compile_kotlin() {
     
     # Compile with kotlinc (requires kotlin-compiler in PATH)
     if command -v kotlinc &> /dev/null; then
+        local android_jar="$ANDROID_HOME/platforms/android-$COMPILE_SDK/android.jar"
         kotlinc -d "$BUILD_DIR/classes.jar" \
-            -cp "$ANDROID_HOME/platforms/android-$COMPILE_SDK/android.jar" \
-            $SOURCE_FILES
+            -cp "$android_jar" \
+            $ALL_SOURCE_FILES
         log_info "Kotlin compilation successful"
     else
         log_error "kotlinc not found in PATH. Install Kotlin compiler or use Gradle."
@@ -119,18 +125,24 @@ compile_dex() {
     log_info "DEX compilation successful"
 }
 
-# Package APK
+# Package APK (using aapt2 link + manual DEX injection)
 package_apk() {
     log_info "Packaging APK..."
     
+    # Link resources to create base APK
     $AAPT2 link \
         -o "$BUILD_DIR/unsigned.apk" \
         -I "$ANDROID_HOME/platforms/android-$COMPILE_SDK/android.jar" \
         --manifest "$APP_DIR/AndroidManifest.xml" \
         -R "$BUILD_DIR/compiled_res.zip" \
-        --dex "$BUILD_DIR/classes.dex" \
         --java "$BUILD_DIR/gen" \
-        --no-version-vectors
+        --no-version-vectors \
+        --auto-add-overlay
+    
+    # Manually add classes.dex to the APK
+    cd "$BUILD_DIR"
+    zip -q unsigned.apk classes.dex
+    cd - > /dev/null
     
     log_info "APK packaged: $BUILD_DIR/unsigned.apk"
 }
@@ -154,8 +166,7 @@ sign_apk() {
     
     if [ ! -f "$keystore_file" ]; then
         log_warn "Keystore not found at $keystore_file"
-        log_warn "Creating debug keystore for testing..."
-        create_debug_keystore
+        log_warn "Using debug keystore for testing..."
         keystore_file="$KEYSTORE_DIR/debug.keystore"
         KEY_ALIAS="androiddebugkey"
         KEYSTORE_PASS="android"
