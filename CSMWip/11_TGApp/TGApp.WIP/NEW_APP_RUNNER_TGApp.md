@@ -427,6 +427,186 @@ git push origin "kilo/${APP_NAME,,}-wip"
 
 ---
 
+## SURGICAL EXTRACTION — FROM BOUNCE TO NEW APP (v1.0.1+)
+
+### Philosophy: Lobotomized BOUNCE Core
+Take a **working BOUNCE version** (v1.0.91+ with EKF fix), surgically extract ONLY the WebView/HTML encapsulation layer, and transplant it into a minimal new app. Remove all menus, sensors, scanning, Bluetooth, WiFi, GPS, fleet, broadcast, trail, controls — keep ONLY:
+
+1. **WebView Engine** — `buildWebView()` method with hardware acceleration
+2. **HTML Asset** — `bounce.html` → rename to `tgapp.html` with Antikythera + TGHC overlay
+3. **JS Bridge** — `addJavascriptInterface` + `injectJs()` + `androidBridge()` 
+4. **Fullscreen Immersive** — `setupFullscreen()` + `onConfigurationChanged()`
+5. **Network Security** — Cleartext for dev domains, HTTPS for production
+
+### Step-by-Step Surgical Extraction
+
+```bash
+# 1. START FROM WORKING BOUNCE VERSION
+cd /workspace/app/CSMApps/Bounce/
+unzip -l "CarrPod_Bounce_v1.0.91 2.zip"  # Verify v1.0.91 exists
+
+# 2. EXTRACT BOUNCE SOURCE
+mkdir -p /tmp/bounce-extract
+cd /tmp/bounce-extract
+unzip "/workspace/app/CSMApps/Bounce/CarrPod_Bounce_v1.0.91 2.zip" "v1.0.91/src/main/*"
+
+# 3. IDENTIFY SURGICAL TARGETS
+# KEEP (transplant to new app):
+#   v1.0.91/src/main/java/com/carrpod/bounce/MainActivity.java → buildWebView(), injectJs(), setupFullscreen()
+#   v1.0.91/src/main/assets/bounce.html → rename to tgapp.html (Antikythera + 8× TGHC)
+#   v1.0.91/src/main/AndroidManifest.xml → permissions + fullscreen theme
+#   v1.0.91/src/main/res/xml/network_security_config.xml → cleartext domains
+#   v1.0.91/build.sh → pipeline (aapt2 → javac → d8 → zipalign → apksigner)
+
+# REMOVE (lobotomize):
+#   ALL sensor/Bluetooth/WiFi/GPS/fleet/broadcast/trail/control code
+#   ALL menu/button/HUD/POV/theory/fleet/broadcast UI
+#   ALL Kalman/EKF/Particle/Trilateration/ZoneHMM/WiFi-RTT classes
+#   ALL permission requests beyond INTERNET/NETWORK_STATE/WAKE_LOCK
+
+# 4. TRANSPLANT TO NEW APP WIP
+NEW_WIP="CSMWip/11_TGApp/TGApp.WIP"
+
+# WebView engine → MainActivity.java
+mkdir -p $NEW_WIP/src/main/java/com/TGApp/mynewapp/
+# Copy buildWebView(), injectJs(), setupFullscreen(), onConfigurationChanged() from BOUNCE
+
+# HTML asset → tgapp.html
+mkdir -p $NEW_WIP/src/main/assets/
+# Transform bounce.html → tgapp.html:
+#   - Load antikytherian.com in background WebView
+#   - Load tghc.pro (8× google.com) in overlay WebView
+#   - Remove all BOUNCE HUD/controls/menus
+
+# Manifest → permissions + theme
+# Network security config → cleartext for antikytherian.com, tghc.pro
+
+# Build script → exact BOUNCE pipeline
+```
+
+### HTML Transformation: bounce.html → tgapp.html
+
+```html
+<!-- ORIGINAL (BOUNCE): Single WebView with Three.js scene + HUD -->
+<!-- SURGICAL TARGET: Dual WebView architecture -->
+
+<!-- 1. BACKGROUND WebView → antikytherian.com -->
+<!-- Loads: https://www.antikytherian.com (Antikythera mechanism animation) -->
+<!-- Full screen, hardware accelerated, opaque -->
+
+<!-- 2. OVERLAY WebView → tghc.pro -->
+<!-- Loads: https://www.tghc.pro (8× google.com windows) -->
+<!-- Full screen, hardware accelerated, TRANSPARENT background -->
+<!-- No Three.js, no HUD, no controls -->
+
+<!-- JS Bridge for license status -->
+<script>
+function androidBridge(method, data) {
+    if (typeof BounceBridge !== 'undefined' && BounceBridge[method]) {
+        BounceBridge[method](JSON.stringify(data));
+    }
+}
+// Receive license status from native
+function onLicenseStatus(data) {
+    // Show/hide Pro features in overlay
+}
+</script>
+```
+
+### BOUNCE v1.0.91 Surgical Components Map
+
+| BOUNCE Component | Location | Action | New App Location |
+|------------------|----------|--------|------------------|
+| `buildWebView()` | MainActivity.java:2070 | **KEEP** → dual WebView | MainActivity.java |
+| `injectJs()` | MainActivity.java:2140 | **KEEP** | MainActivity.java |
+| `setupFullscreen()` | MainActivity.java:2050 | **KEEP** | MainActivity.java |
+| `onConfigurationChanged()` | MainActivity.java:2130 | **KEEP** | MainActivity.java |
+| `bounce.html` | assets/bounce.html | **TRANSFORM** → tgapp.html | assets/tgapp.html |
+| `AndroidManifest.xml` | src/main/AndroidManifest.xml | **ADAPT** → minimal perms | src/main/AndroidManifest.xml |
+| `network_security_config.xml` | res/xml/network_security_config.xml | **ADAPT** → dev domains | res/xml/network_security_config.xml |
+| `build.sh` | build.sh | **COPY** exact pipeline | build.sh |
+| `JsBridge` class | MainActivity.java:2150 | **REMOVE** (not needed) | — |
+| `buildHeader()` | MainActivity.java:2160 | **REMOVE** | — |
+| `buildControlBar()` | MainActivity.java:2180 | **REMOVE** | — |
+| All sensor/BT/WiFi/GPS code | MainActivity.java | **REMOVE** | — |
+| All Kalman/EKF/Particle classes | wifi/*.java | **REMOVE** | — |
+
+---
+
+## GITHUB HANDLER SCRIPT USAGE
+
+### Location
+```bash
+/workspace/app/csmpieces/05_scripts_tools/GitHub_handler.sh
+```
+
+### For Each Documentation Section (13 pieces per section)
+
+```bash
+# Setup
+export ARTICLE_PREFIX=article1  # article1, article2, etc.
+export SECTION_TITLE="Surgical_Extraction_Guide"  # snake_case
+
+# 1. CREATE 13 PIECES
+./csmpieces/05_scripts_tools/GitHub_handler.sh create-pieces 1 "Surgical_Extraction_Guide" article1
+
+# 2. EDIT EACH PIECE (13 files created)
+# pieces/article1-01_Surgical_Extraction_Guide_Piece_01.md  → Overview
+# pieces/article1-02_Surgical_Extraction_Guide_Piece_02.md  → Architecture
+# pieces/article1-03_Surgical_Extraction_Guide_Piece_03.md  → Core Extraction
+# pieces/article1-04_Surgical_Extraction_Guide_Piece_04.md  → Integration Points
+# pieces/article1-05_Surgical_Extraction_Guide_Piece_05.md  → Configuration
+# pieces/article1-06_Surgical_Extraction_Guide_Piece_06.md  → Error Handling
+# pieces/article1-07_Surgical_Extraction_Guide_Piece_07.md  → Testing
+# pieces/article1-08_Surgical_Extraction_Guide_Piece_08.md  → Performance
+# pieces/article1-09_Surgical_Extraction_Guide_Piece_09.md  → Security
+# pieces/article1-10_Surgical_Extraction_Guide_Piece_10.md  → Deployment
+# pieces/article1-11_Surgical_Extraction_Guide_Piece_11.md  → Monitoring
+# pieces/article1-12_Surgical_Extraction_Guide_Piece_12.md  → Future Enhancements
+# pieces/article1-13_Surgical_Extraction_Guide_Piece_13.md  → Summary/Cross-Refs
+
+# 3. CONCATENATE
+ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh concat 1
+
+# 4. ZIP PIECES
+ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh zip-pieces 1
+
+# 5. VERIFY
+ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh verify 1
+
+# 6. ORGANIZE TO SUBATOM_WIP
+ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh organize 1
+
+# 7. COMMIT & PUSH
+ARTICLE_PREFIX=article1 ./csmpieces/05_scripts_tools/GitHub_handler.sh commit-push 1 "Add TGApp Section 1: Surgical Extraction Guide - 13 pieces"
+```
+
+### Quick Verification
+```bash
+# Verify handler exists and works
+ls -la /workspace/app/csmpieces/05_scripts_tools/GitHub_handler.sh
+./csmpieces/05_scripts_tools/GitHub_handler.sh --help  # or just run without args
+```
+
+---
+
+## QUICK REFERENCE — SURGICAL CHECKLIST
+
+| Step | Action | Command/Location |
+|------|--------|------------------|
+| 1 | Extract BOUNCE v1.0.91 | `unzip "CarrPod_Bounce_v1.0.91 2.zip" "v1.0.91/src/main/*"` |
+| 2 | Copy `buildWebView()` | BOUNCE MainActivity.java → New MainActivity.java |
+| 3 | Copy `injectJs()` + `setupFullscreen()` | Same |
+| 4 | Transform `bounce.html` → `tgapp.html` | Dual WebView, no Three.js/HUD |
+| 5 | Adapt Manifest | Minimal perms (INTERNET, NETWORK, WAKE_LOCK) |
+| 6 | Copy `network_security_config.xml` | Add antikytherian.com, tghc.pro cleartext |
+| 7 | Copy `build.sh` | Exact BOUNCE pipeline (aapt2→javac→d8→zipalign→apksigner) |
+| 8 | Build & verify | `./build.sh` → 25KB APK |
+| 9 | Document via GitHub Handler | 13 pieces per section |
+
+---
+
 *Runner file for BOUNCE Ecosystem App Creation — Place next to CREATE_NEW_APP_TEMPLATE.md*
 *All patterns encapsulated from BOUNCE Evolution 91-version forensic analysis*
 *Incremental numbering in CSMWip/05_BOUNCE/ — GitHub Handler workflow ready*
+*Last Updated: 2026-10-09 — Surgical extraction v1.0.1 added*
