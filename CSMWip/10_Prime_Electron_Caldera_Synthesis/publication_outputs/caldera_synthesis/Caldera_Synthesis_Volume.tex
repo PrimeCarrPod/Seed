@@ -1,0 +1,162 @@
+\documentclass[11pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{axiom}[theorem]{Axiom}
+
+% Code listings
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red},
+}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+    urlcolor=magenta,
+    pdftitle={Caldera Prime Pi Electron Synthesis Volume},
+    pdfauthor={Jason Isaac Brodsky},
+    pdfsubject={Theoretical Physics - Prime Electron Framework}
+}
+
+% Title page
+\title{
+    \vspace{2cm}
+    {\Huge \textbf{Caldera Prime Pi Electron Synthesis Volume}}\\[1cm]
+    {\Large A Unified Framework from Prime Gaps to Quantum Gravity}\\[1.5cm]
+    {\large \textbf{Project 10: Prime Electron Caldera Synthesis}}\\[0.5cm]
+    {\normalsize 12 Sections, 156 Pieces, 48 Heuristic Intros, 19,372 Lines}\\[1cm]
+    {\normalsize \textit{Complete Mathematical Derivation}}\\[2cm]
+    {\large Jason Isaac Brodsky (California 1976) -- Conducier}\\
+    {\normalsize PrimeCarrPod / Seed Repository}\\
+    {\normalsize \today}
+}
+\date{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\listoftables
+\newpage
+
+% Preface
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+This volume presents the complete \textbf{Caldera Prime Pi Electron} framework -- a unified synthesis connecting prime number theory to fundamental physics through the single primitive of the prime gap sequence $\{g_n\} = p_{n+1} - p_n$.
+
+The framework derives from the \textbf{PrimeBookOne} corpus of 3.67 billion prime gap differences (3500 books $\times$ $2^{20}$ differences) and incorporates the \textbf{SubAtomic Prime Electron Canonical} compendium of 360+ deep research articles across 9 domains (A--I).
+
+\textbf{Three heuristic frameworks} guide the exposition:
+\begin{itemize}
+    \item \textbf{Williams:} Constraint $\to$ Necessity $\to$ Commitment
+    \item \textbf{Keymaker:} Lock $\to$ Key $\to$ Turn
+    \item \textbf{El Segundo:} Mirror $\to$ Participation $\to$ Protocol
+\end{itemize}
+
+All 12 sections are presented with their combined introductory heuristics prepended, followed by 13 technical pieces per section, forming a complete, publication-ready derivation.
+
+\vspace{1cm}
+\noindent\textbf{Computational Verification:} All algorithms in Section 12 are derived from the $\pi(x)$ primitive, cross-validated via Meissel-Lehmer, LMO, and Odlyzko-Sch\"onhage algorithms. Polynomial/quasi-polynomial scaling, deterministic, parameter-free.
+
+\newpage
+
+% Section 01
+\chapter{$\pi(x)$ Axiomatic Foundation}
+\input{section_01.tex}
+
+% Section 02
+\chapter{Discrete Causal Geometry}
+\input{section_02.tex}
+
+% Section 03
+\chapter{SJ Vacuum \& QFT}
+\input{section_03.tex}
+
+% Section 04
+\chapter{Topological Graph Invariants}
+\input{section_04.tex}
+
+% Section 05
+\chapter{Spinor Double Covers}
+\input{section_05.tex}
+
+% Section 06
+\chapter{Riemann Zeros \& Chaos}
+\input{section_06.tex}
+
+% Section 07
+\chapter{SFF \& Holographic Wormholes}
+\input{section_07.tex}
+
+% Section 08
+\chapter{NCG, Bost-Connes \& Adeles}
+\input{section_08.tex}
+
+% Section 09
+\chapter{$p$-adic AdS/CFT \& Adelic Bulk}
+\input{section_09.tex}
+
+% Section 10
+\chapter{Gauge Couplings, Koide \& 426-Generation}
+\input{section_10.tex}
+
+% Section 11
+\chapter{Unified Synthesis}
+\input{section_11.tex}
+
+% Section 12
+\chapter{Mathematical Compendium}
+\input{section_12.tex}
+
+% Appendices
+\appendix
+\chapter{PrimeBookOne Data Access}
+\input{appendix_data_access.tex}
+
+\chapter{Heuristic Frameworks}
+\input{appendix_heuristics.tex}
+
+\chapter{Computational Protocols}
+\input{appendix_computational.tex}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
