@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext for development (antikytherian.com, tghc.pro) -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">antikytherian.com</domain>
+        <domain includeSubdomains="true">tghc.pro</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+    
+    <!-- Enforce HTTPS for Firebase and Play Billing -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">firebase.googleapis.com</domain>
+        <domain includeSubdomains="true">play.googleapis.com</domain>
+        <domain includeSubdomains="true">android.googleapis.com</domain>
+    </domain-config>
+    
+    <!-- Default: allow HTTPS only -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
