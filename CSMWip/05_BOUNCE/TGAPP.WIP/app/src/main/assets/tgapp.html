@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TGApp - Antikythera + TGHC Overlay</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+        #overlay-root { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+        .tghc-frame { position: absolute; width: 12.5%; height: 100%; border: none; background: transparent; pointer-events: auto; }
+        .pro-badge { position: absolute; top: 16px; right: 16px; padding: 8px 16px; border-radius: 20px; font-family: monospace; font-size: 12px; z-index: 1000; pointer-events: auto; display: none; }
+        .pro-badge.pro { display: block; background: #00D4AA; color: #000; }
+        .pro-badge.free { display: block; background: #333; color: #888; }
+    </style>
+</head>
+<body>
+    <div id="overlay-root"></div>
+    <div id="license-badge" class="pro-badge free">FREE</div>
+
+    <script>
+        (function() {
+            const root = document.getElementById('overlay-root');
+            const badge = document.getElementById('license-badge');
+            let isPro = false;
+
+            function createFrames() {
+                const urls = Array(8).fill('https://www.google.com');
+                urls.forEach((url, i) => {
+                    const iframe = document.createElement('iframe');
+                    iframe.className = 'tghc-frame';
+                    iframe.style.left = (i * 12.5) + '%';
+                    iframe.src = url;
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                    root.appendChild(iframe);
+                });
+            }
+
+            function updateProStatus(pro) {
+                isPro = pro;
+                badge.className = 'pro-badge ' + (pro ? 'pro' : 'free');
+                badge.textContent = pro ? 'PRO' : 'FREE';
+            }
+
+            function getLicenseStatus() {
+                if (typeof TGAppBridge !== 'undefined' && TGAppBridge.getLicenseStatus) {
+                    return TGAppBridge.getLicenseStatus();
+                }
+                return 'free';
+            }
+
+            function init() {
+                createFrames();
+                updateProStatus(getLicenseStatus() === 'pro');
+            }
+
+            window.onLicenseStatus = function(data) {
+                updateProStatus(data === true || data === 'pro');
+            };
+
+            document.addEventListener('DOMContentLoaded', init);
+        })();
+    </script>
+</body>
+</html>
