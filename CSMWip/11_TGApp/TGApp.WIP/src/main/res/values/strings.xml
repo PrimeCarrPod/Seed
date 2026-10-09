@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TGApp</string>
+    <string name="app_short_name">TGApp</string>
+    <string name="antikythera_url">https://www.antikytherian.com</string>
+    <string name="overlay_url">https://www.tghc.pro</string>
+    <string name="fallback_url">https://www.google.com</string>
+</resources>
