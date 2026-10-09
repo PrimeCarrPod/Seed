@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TGApp</string>
+    <string name="app_name_short">TGApp</string>
+    <string name="pro_feature">Pro Feature</string>
+    <string name="free_feature">Free Feature</string>
+    <string name="subscribe_now">Subscribe Now</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="restore_purchases">Restore Purchases</string>
+    <string name="license_valid">License Valid</string>
+    <string name="license_expired">License Expired</string>
+    <string name="license_invalid">Invalid License</string>
+</resources>
