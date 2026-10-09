@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.util.Base64
 import android.util.Log
+import java.nio.charset.StandardCharsets
 import org.json.JSONObject
 
 class FeatureGate(private val context: Context) {
@@ -21,7 +22,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn...
             val parts = jwt.split("\\.")
             if (parts.size != 3) return false
 
-            val payload = String(Base64.decode(parts[1], Base64.URL_SAFE), "UTF-8")
+            val payload = String(Base64.decode(parts[1], Base64.URL_SAFE), StandardCharsets.UTF_8)
             val json = JSONObject(payload)
 
             val exp = json.getLong("exp") * 1000
@@ -49,7 +50,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn...
         val jwt = prefs.getString("license_jwt", "") ?: return null
         return try {
             val parts = jwt.split("\\.")
-            val payload = String(Base64.decode(parts[1], Base64.URL_SAFE), "UTF-8")
+            val payload = String(Base64.decode(parts[1], Base64.URL_SAFE), StandardCharsets.UTF_8)
             val json = JSONObject(payload)
             json.getLong("exp") * 1000
         } catch (e: Exception) { null }
@@ -59,7 +60,7 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn...
         val jwt = prefs.getString("license_jwt", "") ?: return emptyList()
         return try {
             val parts = jwt.split("\\.")
-            val payload = String(Base64.decode(parts[1], Base64.URL_SAFE), "UTF-8")
+            val payload = String(Base64.decode(parts[1], Base64.URL_SAFE), StandardCharsets.UTF_8)
             val json = JSONObject(payload)
             val features = json.getJSONArray("features")
             (0 until features.length()).map { features.getString(it) }

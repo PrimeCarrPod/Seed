@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.TGApp" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.TGApp" parent="android:Theme.NoTitleBar.Fullscreen">
         <item name="android:windowBackground">@color/black</item>
         <item name="android:statusBarColor">@color/black</item>
         <item name="android:navigationBarColor">@color/black</item>
@@ -10,7 +10,6 @@
     <style name="Theme.TGApp.Fullscreen" parent="Theme.TGApp">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
     </style>
 
     <color name="black">#000000</color>

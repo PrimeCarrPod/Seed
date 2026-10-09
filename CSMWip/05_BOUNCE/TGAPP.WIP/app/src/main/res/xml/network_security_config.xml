@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains>true</domain>
-        <domain>antikytherian.com</domain>
-        <domain>www.antikytherian.com</domain>
-        <domain>tghc.pro</domain>
-        <domain>www.tghc.pro</domain>
-        <domain>google.com</domain>
-        <domain>www.google.com</domain>
+        <domain includeSubdomains="true">antikytherian.com</domain>
+        <domain includeSubdomains="true">tghc.pro</domain>
+        <domain includeSubdomains="true">google.com</domain>
         <domain>localhost</domain>
         <domain>10.0.2.2</domain>
     </domain-config>

@@ -1,6 +1,7 @@
 package com.bounce.tgapp
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -16,12 +17,8 @@ import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     private var backgroundWebView: WebView? = null
     private var overlayWebView: WebView? = null
@@ -41,12 +38,13 @@ class MainActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.setDecorFitsSystemWindows(false)
         } else {
-            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                    or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                    or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                    or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                    or View.SYSTEM_UI_FLAG_FULLSCREEN
-                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+            val flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            val flags2 = flags.or(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION)
+            val flags3 = flags2.or(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
+            val flags4 = flags3.or(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)
+            val flags5 = flags4.or(View.SYSTEM_UI_FLAG_FULLSCREEN)
+            val flags6 = flags5.or(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+            window.decorView.systemUiVisibility = flags6
         }
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
@@ -88,7 +86,6 @@ class MainActivity : AppCompatActivity() {
         settings.javaScriptEnabled = true
         settings.domStorageEnabled = true
         settings.databaseEnabled = true
-        settings.setAppCacheEnabled(true)
         settings.cacheMode = WebSettings.LOAD_DEFAULT
         settings.mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
         settings.setSupportZoom(true)
@@ -149,7 +146,7 @@ class MainActivity : AppCompatActivity() {
         override fun shouldOverrideUrlLoading(view: WebView?, request: android.webkit.WebResourceRequest?): Boolean {
             val url = request?.url?.toString() ?: return false
             if (url.startsWith("http")) {
-                intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 startActivity(intent)
                 return true
             }
@@ -173,8 +170,7 @@ class MainActivity : AppCompatActivity() {
         @android.webkit.JavascriptInterface
         fun openBilling() {
             activity.runOnUiThread {
-                val intent = Intent(activity, BillingActivity::class.java)
-                activity.startActivity(intent)
+                // Billing not available in no-Gradle build
             }
         }
     }
