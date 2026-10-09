@@ -1,3 +1,20 @@
+#!/bin/bash
+# Phase 4b: Update Repository Organization Manifest
+# Project 10: Prime Electron Caldera Synthesis
+# Run from: CSMWip/10_Prime_Electron_Caldera_Synthesis/
+
+set -euo pipefail
+
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+MANIFEST_FILE="$PROJECT_DIR/REPOSITORY_ORGANIZATION_MANIFEST.md"
+
+echo "=========================================="
+echo "PHASE 4b: Update Repository Organization Manifest"
+echo "=========================================="
+echo ""
+
+# Create updated manifest
+cat > "$MANIFEST_FILE" <<'EOF'
 # REPOSITORY ORGANIZATION MANIFEST
 **Generated:** 2026-10-09T00:00:00Z  
 **Operation:** Project 10 Caldera Prime Pi Electron Incorporation  
@@ -208,3 +225,10 @@ Remote: https://github.com/PrimeCarrPod/Seed
 ---
 
 *Manifest updated as part of Phase 4b — Caldera Integration Complete*
+EOF
+
+echo "Repository organization manifest updated: $MANIFEST_FILE"
+echo "Lines: $(wc -l < "$MANIFEST_FILE")"
+echo ""
+echo ">>> Phase 4b Complete."
+echo "=========================================="

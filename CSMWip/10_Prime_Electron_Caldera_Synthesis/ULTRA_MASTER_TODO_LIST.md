@@ -475,13 +475,13 @@ cat CSMLogs/august26/RESUME_SESSION_A4-23_GRAVITATIONAL_COUPLING_GAPS_20260825.m
 - [ ] Verify all 12 sections integrated (48 intros, 156 pieces, 12 zips)
 
 ### Phase 4: Create Cross-Reference Index (Week 4)
-- [ ] Caldera section → Canonical article(s) mapping
-- [ ] Piece → Source equations/theorems mapping
-- [ ] Intro heuristic → Empirical lock/key/turn mapping
-- [ ] Compilation → Use case (publication, read-aloud, reference) mapping
-- [ ] Generate `CROSS_REFERENCE_INDEX.md`
-- [ ] Update `REPOSITORY_ORGANIZATION_MANIFEST.md`
-- [ ] Update `DATA_ACCESS_PrimeBookOne_Tile_Index.md`
+- [x] Caldera section → Canonical article(s) mapping
+- [x] Piece → Source equations/theorems mapping
+- [x] Intro heuristic → Empirical lock/key/turn mapping
+- [x] Compilation → Use case (publication, read-aloud, reference) mapping
+- [x] Generate `CROSS_REFERENCE_INDEX.md`
+- [x] Update `REPOSITORY_ORGANIZATION_MANIFEST.md`
+- [x] Update `DATA_ACCESS_PrimeBookOne_Tile_Index.md`
 
 ### Phase 5: Publication Pipeline (Week 5)
 - [ ] Unified Compendium — All 360+ Canonical + 13 Caldera = ~373 articles
@@ -506,3 +506,58 @@ cat CSMLogs/august26/RESUME_SESSION_A4-23_GRAVITATIONAL_COUPLING_GAPS_20260825.m
 ---
 
 *End of Ultra Master Todo List — Updated for Project 10 Caldera Incorporation*
+---
+
+## PHASE 4 COMPLETION RECORD (2026-10-09)
+
+### Phase 4a: Cross-Reference Index ✅
+- **Script:** `./scripts/phase4a_create_index.sh`
+- **Output:** `CROSS_REFERENCE_INDEX.md` (comprehensive mapping document)
+- **Mappings Generated:**
+  - 12 Caldera sections → Canonical articles
+  - 156 piece files → Source equations/theorems
+  - 48 intro files → 3 heuristic frameworks (Williams/Keymaker/El Segundo)
+  - 5 compilation documents → Use cases
+
+### Phase 4b: Repository Manifest ✅
+- **Script:** `./scripts/phase4b_update_manifest.sh`
+- **Updated:** `REPOSITORY_ORGANIZATION_MANIFEST.md`
+- **Content:** Complete Caldera integration inventory, folder structure, article status, verification checklist
+
+### Phase 4c: Access Index & Plans ✅
+- **Script:** `./scripts/phase4c_update_access_plan.sh` (this script)
+- **Updated Files:**
+  - `DATA_ACCESS_PrimeBookOne_Tile_Index.md` — Added Caldera section → PrimeBookOne directory mapping (Section 13)
+  - `ACTION_PLAN.md` — Marked Phase 4 checkpoints complete, added Phase 5 prep
+  - `ULTRA_MASTER_TODO_LIST.md` — Marked all Phase 4 items complete
+
+### Verification Checkpoints (All ✅)
+- [x] All 12 section files have COMBINED_INTRO prepended
+- [x] All 48 intro files present (williams/keymaker/elsegundo/combined × 12)
+- [x] All 156 piece files present and zipped
+- [x] Master integration document (19,372 lines) present
+- [x] 5 compilation documents in framework/compilations/
+- [x] Flagship docs reference Caldera results
+- [x] Cross-reference index complete
+- [x] Repository manifest updated
+- [x] Data access index updated
+- [x] Action plan & todo list updated
+
+---
+
+## PHASE 5: PUBLICATION PIPELINE — READY TO BEGIN
+
+### Scripts to Create:
+- [ ] `./scripts/phase5_generate_outputs.sh` — Main generation script
+
+### Outputs to Generate:
+1. **Unified Compendium** — 373 articles (360 Canonical + 13 Caldera)
+2. **Caldera Synthesis Volume** — LaTeX → PDF/ArXiv (19,372 lines)
+3. **Read-Aloud Volumes** — 4 versions (full, intros-only, sections-only, clean)
+4. **Flagship Papers** — 3 updated flagships → LaTeX/PDF
+5. **Methodology Appendix** — Jupyter/Julia notebooks (computational protocols)
+6. **Computational Compendium** — Reproducibility package (Section 12 algorithms)
+
+---
+
+*Phase 4 Complete — Ready for Phase 5 Publication Pipeline*

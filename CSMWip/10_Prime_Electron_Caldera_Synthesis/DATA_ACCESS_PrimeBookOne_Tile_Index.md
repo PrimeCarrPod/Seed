@@ -454,3 +454,84 @@ This document provides complete access specifications for PrimeBookOne's 567,000
 ---
 
 *End of Data Access Document — Ready for concatenation and zip.*
+---
+
+## 13. CALDERA INTEGRATION: PRIME GAP → PHYSICS MAPPING (Phase 4)
+
+### 13.1 Caldera Section → PrimeBookOne Directory Mapping
+
+| Caldera Section | PrimeBookOne Directory | Tile Range | Physics Scale |
+|-----------------|------------------------|------------|---------------|
+| 01: π(x) Axiomatic Foundation | 0.0 (Electron IR) | Tile00–Tile188 | Fine structure α |
+| 02: Discrete Causal Geometry | 0.0–0.1 | Tile00–Tile188 | Causal density = α |
+| 03: SJ Vacuum & QFT | 0.0 (8-bit array) | Tile00–Tile188 | 256-state Hilbert space |
+| 04: Topological Graph Invariants | 0.0–3.0 | All tiles | Graph from gap adjacency |
+| 05: Spinor Double Covers | 0.1 (Muon) | Tile00–Tile188 | SU(2) from gap statistics |
+| 06: Riemann Zeros & Chaos | 1.0 (Tau) | Tile00–Tile188 | Zeros as worldline spectrum |
+| 07: SFF & Holographic Wormholes | 2.0 (Electroweak) | Tile00–Tile188 | JT gravity from arithmetic |
+| 08: NCG, Bost-Connes & Adeles | 2.1 (Higgs) | Tile00–Tile188 | Spectral triple from gaps |
+| 09: p-adic AdS/CFT | 3.0 (UV/GUT) | Tile00–Tile188 | Adelic bulk from prime gaps |
+| 10: Gauge Couplings, Koide | All directories | All tiles | 426 generations from gaps |
+| 11: Unified Synthesis | All directories | All tiles | Single primitive {gₙ} |
+| 12: Mathematical Compendium | All directories | All tiles | All algorithms from π(x) |
+
+### 13.2 Prime Gap Primitive Across All 12 Sections
+
+The prime gap sequence {gₙ} = p_{n+1} - p_n serves as the **single primitive** linking all domains:
+
+```
+π(x) counting  →  gₙ sequence  →  causal geometry (Δτₙ = κ·gₙ)
+                     ↓
+              Hilbert space (2⁸ states from 8-bit gₙ)
+                     ↓
+              Topology (graph invariants from gₙ adjacency)
+                     ↓
+              Spinors (Clifford algebra from gₙ)
+                     ↓
+              Riemann zeros (spectrum from gₙ statistics)
+                     ↓
+              SFF (dip-ramp-plateau from gₙ correlations)
+                     ↓
+              NCG (spectral triple from gₙ)
+                     ↓
+              p-adic (adelic from gₙ mod classes)
+                     ↓
+              Gauge couplings (Koide, 426-gen from gₙ records)
+                     ↓
+              Synthesis (unified {gₙ} primitive)
+                     ↓
+              Compendium (all algorithms from π(x) → gₙ)
+```
+
+### 13.3 Data Access for Caldera Articles
+
+Each integrated article now references exact PrimeBookOne tile ranges:
+
+**Example Citation Format (updated for Caldera):**
+> **Data Source:** PrimeBookOne, `primebookone/0.0/Tile00.zip`–`Tile188.zip`, gaps #1–#94,500 (Caldera Section 01: π(x) Axiomatic Foundation), accessed 2026-10-09.
+
+**Per-Section Tile Citations:**
+- Section 01: 0.0/Tile00–Tile188 (94,500 gaps, electron IR)
+- Section 02: 0.0/Tile00–Tile188 + 0.1/Tile00–Tile188 (causal geometry)
+- Section 03: 0.0/Tile00–Tile188 (8-bit array → 256 states)
+- Section 04: All directories (topological invariants)
+- Section 05: 0.1/Tile00–Tile188 (muon threshold → spinors)
+- Section 06: 1.0/Tile00–Tile188 (tau threshold → Riemann zeros)
+- Section 07: 2.0/Tile00–Tile188 (EW scale → SFF/JT gravity)
+- Section 08: 2.1/Tile00–Tile188 (Higgs scale → NCG)
+- Section 09: 3.0/Tile00–Tile188 (UV scale → p-adic/adelic)
+- Section 10: All directories (426 generations)
+- Section 11: All directories (unified synthesis)
+- Section 12: All directories (computational compendium)
+
+### 13.4 Total Prime Gap Coverage
+
+| Coverage | Gaps | Directories | Purpose |
+|----------|------|-------------|---------|
+| Published PrimeBookOne | 567,000 | 6 (0.0–3.0) | Caldera Sections 1–12 |
+| Full Corpus (3500 books) | 3,670,016,000 | 3500 books | Reference/extrapolation |
+| Per-Caldera-Section | ~94,500–567,000 | 1–6 dirs | Each section uses subset |
+
+---
+
+*Updated for Project 10 Phase 4c — Caldera integration complete*
