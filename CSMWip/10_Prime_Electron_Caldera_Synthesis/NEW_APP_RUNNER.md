@@ -49,18 +49,26 @@ cd /workspace/app/CSMWip/10_Prime_Electron_Caldera_Synthesis
 git status
 git log --oneline -3
 
-# 2. Review complete status
+# 2. Compile Flagship papers (PRIORITY)
+cd publication_outputs/flagship_papers && for f in *.tex; do pdflatex "$f"; done
+
+# 3. Run cross-validation tests (PRIORITY)
+cd publication_outputs/methodology_appendix && julia julia/03_cross_validation.jl
+
+# 4. Review complete status
 cat RESUME_SESSION_PROJECT_10.md
 cat CROSS_REFERENCE_INDEX.md
 
-# 3. Run full publication pipeline (if needed)
+# 5. Run full publication pipeline (if needed)
 ./scripts/phase5_generate_outputs.sh
 
-# 4. Compile LaTeX to PDF
+# 6. Compile Synthesis Volume LaTeX to PDF
 cd publication_outputs/caldera_synthesis && pdflatex Caldera_Synthesis_Volume.tex
-cd ../flagship_papers && for f in *.tex; do pdflatex "$f"; done
+bibtex Caldera_Synthesis_Volume
+pdflatex Caldera_Synthesis_Volume.tex
+pdflatex Caldera_Synthesis_Volume.tex
 
-# 5. Verify all outputs
+# 7. Verify all outputs
 ls -la publication_outputs/
 ```
 
