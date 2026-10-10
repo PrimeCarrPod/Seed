@@ -1,0 +1,100 @@
+    diff -u "$ORIGINAL" "$REASSEMBLED" | head -50
+    echo ""
+    echo "Original lines: $(wc -l < "$ORIGINAL")"
+    echo "Reassembled lines: $(wc -l < "$REASSEMBLED")"
+    exit 1
+fi
+```
+
+### 4. Complete Document Pipeline Script
+**Create:** `Framework/process_document.sh`
+```bash
+#!/bin/bash
+# Complete Document Pipeline: Author → Split → Zip → Push → Verify → Reassemble
+# Usage: ./process_document.sh <document_file> "Commit Message"
+
+set -e
+DOC="$1"
+MSG="${2:-Auto-save: $(basename "$DOC")}"
+BRANCH="kilo/aegis-outfit-fabricator-wip"
+REPO_ROOT="/workspace/app/CSMWip/12_AegisOutfitFabricator"
+
+if [[ ! -f "$DOC" ]]; then
+    echo "❌ Document not found: $DOC"
+    exit 1
+fi
+
+cd "$REPO_ROOT"
+source /workspace/app/CSMScripts/freenemo_modules/03_github_handler.sh
+
+BASENAME=$(basename "$DOC" .md)
+PIECES_DIR="Pieces"
+FINISHED_DIR="FinishedWork"
+
+echo "=== PROCESSING DOCUMENT: $BASENAME ==="
+echo ""
+
+# 1. Quality check
+echo "Step 1: Quality check..."
+./Framework/check_doc_quality.sh "$DOC" || exit 1
+
+# 2. Split into pieces
+echo "Step 2: Splitting into 13 pieces (max 500 lines)..."
+gh_split_file "$DOC" 500
+# Creates Pieces/BASENAME_piece_01.md through _piece_13.md + manifest.json
+
+# 3. Zip pieces
+echo "Step 3: Creating zip archive..."
+cd "$PIECES_DIR"
+zip -q "${BASENAME}_pieces.zip" ${BASENAME}_piece_*.md ${BASENAME}_manifest.json
+cd ..
+
+# 4. Push each piece to GitHub
+echo "Step 4: Pushing pieces to GitHub (13 strategies each)..."
+for p in "$PIECES_DIR/${BASENAME}_piece_"*.md; do
+    echo "  Pushing $(basename "$p")..."
+    gh_save_file "$p" "Piece: $MSG" "$BRANCH" || exit 1
+done
+
+# 5. Push zip archive
+echo "Step 5: Pushing zip archive..."
+gh_save_file "$PIECES_DIR/${BASENAME}_pieces.zip" "Archive: $MSG" "$BRANCH" || exit 1
+
+# 6. Verify reassembly
+echo "Step 6: Verifying reassembly..."
+MANIFEST="$PIECES_DIR/${BASENAME}_manifest.json"
+./Framework/verify_reassembly.sh "$DOC" "$MANIFEST" || exit 1
+
+# 7. 17-way GitHub verification on first piece (sample)
+echo "Step 7: 17-way GitHub verification (sample piece)..."
+FIRST_PIECE="$PIECES_DIR/${BASENAME}_piece_01.md"
+./Framework/verify_github_17ways.sh "$FIRST_PIECE" || exit 1
+
+# 8. Heartbeat log
+echo "Step 8: Logging completion..."
+./Framework/heartbeat.sh "Completed document: $BASENAME - all verifications passed"
+
+echo ""
+echo "✅ DOCUMENT PIPELINE COMPLETE: $BASENAME"
+echo "   Original: $DOC"
+echo "   Pieces: 13 pushed to GitHub"
+echo "   Archive: $PIECES_DIR/${BASENAME}_pieces.zip"
+echo "   Verified: Clean reassembly + 17-way GitHub check"
+```
+
+---
+
+## 📐 PHASE 3: GEOMETRIC PATTERN DRAFTING SYSTEM — SPECIFICATION
+
+### 3.1 Algorithm Specification Documents (Create in Session 003+)
+
+#### DRAFT-01: Alcega Developable Surface Engine
+- **Input**: Anthropometric measurements (bust, waist, hip, shoulder, back length, etc.)
+- **Process**: 
+  1. Define directrix curves from body landmarks
+  2. Compute generatrix rulings (tangent planes to directrices)
+  3. Intersect with 560mm loom width planes
+  4. Output flat pattern pieces with grain lines
+- **Output**: Pattern pieces in DXF/SVG + cutting layout
+- **Math**: Convolute surface: S(u,v) = D₁(u) + v(D₂(u) - D₁(u))/|D₂(u) - D₁(u)|
+- **Constraints**: Zero-waste nesting, historical seam allowances (13-40mm per ASTM D1683)
