@@ -1,0 +1,12 @@
+{
+  "title": "LaTeX Publication-Ready Documents",
+  "description": "Complete LaTeX source files for journal submission. Flagship Papers (3): Flagship1_PrimeElectron_Framework, Flagship2_SFF_JT_Gravity, Flagship3_One_Electron_Universe. Caldera Synthesis Volume (14 files): main volume + 12 sections + 3 appendices (computational, data access, heuristics) + references.bib. Computational Compendium (MD). Read-Aloud versions (4): Clean (855 KB), Full (883 KB), IntrosOnly (102 KB), SectionsOnly (187 KB). Unified Compendium Index.",
+  "creators": [{"name": "PrimeCarrPod", "affiliation": "Independent Research"}],
+  "keywords": ["LaTeX", "journal submission", "flagship papers", "SFF", "JT gravity", "one electron universe", "caldera synthesis", "read aloud", "bibliography"],
+  "communities": [{"identifier": "arithmeticphysics"}],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "publication_date": "2026-10-10",
+  "resource_type": {"type": "publication", "subtype": "preprint"},
+  "version": "1.0.0"
+}

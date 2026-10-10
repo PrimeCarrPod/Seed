@@ -1,0 +1,12 @@
+{
+  "title": "SubAtomic Prime Electron Canonical Series - Complete Articles",
+  "description": "40+ complete articles across 9 physics domains derived from prime gap distributions: A_Worldline (29 articles: proper time quantization, topological winding, Riemann zeros, worldline stability, vertex interactions, pair creation, Compton scale, self-intersection, supersymmetry, holography), B_MassSpectrum (21 articles: gap-to-energy mapping, twin prime electron mass, record gaps/lepton hierarchy, muon/tau excitations, Koide formula, neutrino masses, BSM predictions, dark matter, baryon asymmetry), C_HilbertSpace (Quantum ML with prime gaps), D_Couplings (23 articles: fine structure constant, strong/weak couplings, RG flow, unification, g-factor, Lamb shift, Yukawa couplings, CKM/CP violation), E_GeneticCode (prime genetic code), F_TranscendentPhysics (prime transcendent physics), G_QuarkHadronNuclear (quarks/hadrons/nuclear from primes), H_CosmologyAstrophysics (cosmology from prime electron), I_ExperimentalSignatures (experimental tests). Plus 5 flagship/foundation documents.",
+  "creators": [{"name": "PrimeCarrPod", "affiliation": "Independent Research"}],
+  "keywords": ["prime gaps", "worldline", "mass spectrum", "hilbert space", "couplings", "genetic code", "transcendent physics", "quark hadron nuclear", "cosmology", "experimental signatures", "Riemann zeros", "Koide formula", "fine structure constant"],
+  "communities": [{"identifier": "arithmeticphysics"}],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "publication_date": "2026-10-10",
+  "resource_type": {"type": "publication", "subtype": "preprint"},
+  "version": "1.0.0"
+}

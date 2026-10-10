@@ -1,0 +1,12 @@
+{
+  "title": "Flagship Papers: SubAtomic Prime Electron Framework",
+  "description": "Core flagship documents establishing the Prime Electron theoretical framework. Includes PRIME_ELECTRON_COMPLETE_RESEARCH (12 MB), ULTIMATE_BIBLE_SUBATOMIC_PRIME_ELECTRON (78 MB), SUPER_DOCUMENT_COMPLETE_SANITIZED (175 KB), and previously published Caldera synthesis versions (v1 raw, v2 read-aloud, v2 intros-only in HTML/MD/PDF formats).",
+  "creators": [{"name": "PrimeCarrPod", "affiliation": "Independent Research"}],
+  "keywords": ["prime electron", "flagship", "framework", "complete research", "ultimate bible", "super document"],
+  "communities": [{"identifier": "arithmeticphysics"}],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "publication_date": "2026-10-10",
+  "resource_type": {"type": "publication", "subtype": "preprint"},
+  "version": "1.0.0"
+}

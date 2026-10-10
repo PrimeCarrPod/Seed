@@ -1,0 +1,51 @@
+{
+  "title": "SubAtomic Prime Electron & Caldera Prime Pi Electron: Complete Theoretical Framework",
+  "description": "A comprehensive theoretical physics framework unifying prime number theory with fundamental physics. This deposit contains the complete SubAtomic Prime Electron Canonical series (40+ articles across 9 domains), the Caldera Prime Pi Electron synthesis (12 sections + 6 flagship papers), and the Ultimate Compendium (18.9 MB complete synthesis). The framework derives particle masses, coupling constants, cosmological parameters, and quantum phenomena from prime gap distributions and the prime counting function π(x).",
+  "creators": [
+    {
+      "name": "PrimeCarrPod",
+      "affiliation": "Independent Research",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "prime numbers",
+    "particle physics",
+    "quantum mechanics",
+    "cosmology",
+    "Riemann hypothesis",
+    "prime gaps",
+    "electron mass",
+    "fine structure constant",
+    "Koide formula",
+    "holography",
+    "AdS/CFT",
+    "noncommutative geometry",
+    "spectral form factors",
+    "JT gravity",
+    "one-electron universe",
+    "caldera synthesis",
+    "arithmetic physics"
+  ],
+  "communities": [
+    {
+      "identifier": "arithmeticphysics"
+    }
+  ],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "publication_date": "2026-10-10",
+  "resource_type": {
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/PrimeCarrPod/Seed",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "This is a multi-part deposit. See individual file metadata for section-specific details. Total size: ~200 MB across 6 categories.",
+  "version": "1.0.0"
+}

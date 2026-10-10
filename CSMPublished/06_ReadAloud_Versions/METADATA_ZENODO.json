@@ -1,0 +1,12 @@
+{
+  "title": "Read-Aloud Versions for Accessibility",
+  "description": "Four optimized read-aloud versions of the Caldera Prime Pi Electron synthesis: Clean (855 KB - streamlined), Full (883 KB - complete), IntrosOnly (102 KB - introductions only), SectionsOnly (187 KB - section content only). Designed for text-to-speech and accessibility.",
+  "creators": [{"name": "PrimeCarrPod", "affiliation": "Independent Research"}],
+  "keywords": ["read aloud", "accessibility", "text-to-speech", "caldera", "prime pi electron"],
+  "communities": [{"identifier": "arithmeticphysics"}],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "publication_date": "2026-10-10",
+  "resource_type": {"type": "publication", "subtype": "other"},
+  "version": "1.0.0"
+}

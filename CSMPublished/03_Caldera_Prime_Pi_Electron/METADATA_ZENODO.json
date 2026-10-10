@@ -1,0 +1,12 @@
+{
+  "title": "Caldera Prime Pi Electron - Complete Synthesis",
+  "description": "The Caldera synthesis unifying prime counting π(x) with quantum worldline theory. Includes 5 complete compilations (Complete 883 KB, Clean 854 KB, ReadAloud 685 KB, SectionsOnly 507 KB, IntrosOnly 91 KB), 6 individual flagship articles (Unified Synthesis Pi×Cosmic Counting 94 KB, Mathematical Compendium 107 KB, Spectral Form Factors/Holographic Wormholes 92 KB, Noncommutative Geometry/Bost-Connes 66 KB, p-adic AdS/CFT 48 KB, Gauge Couplings/Koide/UV Horizon 43 KB), and Prime Counting Quantum Worldline Evaluation (229 KB MD + 640 KB PDF). Framework derives particle physics from prime counting function.",
+  "creators": [{"name": "PrimeCarrPod", "affiliation": "Independent Research"}],
+  "keywords": ["caldera", "prime pi", "prime counting", "π(x)", "quantum worldline", "spectral form factors", "holographic wormholes", "JT gravity", "Bost-Connes", "noncommutative geometry", "p-adic AdS/CFT", "Bruhat-Tits", "adelic bulk", "gauge couplings", "Koide formula", "UV horizon"],
+  "communities": [{"identifier": "arithmeticphysics"}],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "publication_date": "2026-10-10",
+  "resource_type": {"type": "publication", "subtype": "preprint"},
+  "version": "1.0.0"
+}
