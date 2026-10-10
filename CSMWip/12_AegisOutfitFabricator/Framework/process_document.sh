@@ -79,7 +79,9 @@ MANIFEST="$PIECES_DIR/${BASENAME}_manifest.json"
 # 7. 17-way GitHub verification on first piece (sample)
 echo "Step 7: 17-way GitHub verification (sample piece)..."
 FIRST_PIECE="$PIECES_DIR/${BASENAME}_piece_01.md"
-./Framework/verify_github_17ways.sh "$FIRST_PIECE" || exit 1
+# Convert to path relative to /workspace/app (the actual git repo root)
+REL_FIRST_PIECE="${REPO_ROOT#/workspace/app/}/$FIRST_PIECE"
+./Framework/verify_github_17ways.sh "$REL_FIRST_PIECE" || exit 1
 
 # 8. Heartbeat log
 echo "Step 8: Logging completion..."
