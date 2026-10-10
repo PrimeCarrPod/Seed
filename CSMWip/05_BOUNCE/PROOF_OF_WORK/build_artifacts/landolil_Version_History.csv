@@ -1,0 +1,12 @@
+Version,Date,Type,Key Features,Build System,APK Size,Status,Notes
+v1,2026-07,Initial,Basic particle visualization; Three.js scene; 18 microbe icons,Gradle,Unknown,Complete,Foundation
+v2,2026-07,Major Update,Enhanced particle system; More particles; Improved rendering,Gradle,~1MB,Complete,
+v3,2026-07,Major Update,Further enhancements; Camera controls; Particle interactions,Gradle,~1MB,Complete,
+v4,2026-07,Major Update,34 particle species; Full microbe icon set; Camera Follow mode,Gradle,~1MB,Complete,
+v5,2026-07,Major Update,Motion Sensor mode (device accelerometer/gyro); Click raycast detail panel,Gradle,~1MB,Complete,
+v6,2026-07,Major Update,Android bridge (LandOLil interface); 150,000 particle count; Swarm mechanics,Gradle,~1MB,Complete,
+v6b,2026-07,Variant v6b,Refinements to v6; Bug fixes; Performance improvements,Gradle,~620KB,Complete,
+v6bv2,2026-07,Variant v6bv2,Further refinements; Additional particle behaviors,Gradle,~620KB,Complete,
+v6bv3,2026-07,Variant v6bv3,Latest v6b iteration; Stability improvements,Gradle,~620KB,Complete,
+v7,2026-07,Major Release v7,New architecture; Improved Three.js integration; Chart.js metrics,Gradle/Mini Method,~624KB,Complete,
+v7b,2026-08,Latest Release v7b,Full V4.0 physics integration; 34+ particle species; Glueball worldlines; Swarm mechanics with fluid dynamics; Microbial ecosystem; One-electron universe topology; Real-time metrics (Action, Benevolence, Coherence, Glueball); Camera follow, motion sensor, click detail, flight controller; Android bridge; Local Three.js/Chart.js (offline capable),No-Gradle aapt2 + Mini Method,Unknown,Active,Current active version with build.sh and build-apk.py

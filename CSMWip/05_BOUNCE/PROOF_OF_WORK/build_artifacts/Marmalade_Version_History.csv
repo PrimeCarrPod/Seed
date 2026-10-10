@@ -1,0 +1,12 @@
+Version,Date,Stage/Type,Key Features,Build System,Status,Notes
+stage1,2026-07,Stage 1,Initial HTML demo; Basic Three.js scene; WebView integration,Gradle,Complete,Foundation demo
+stage2,2026-07,Stage 2,Enhanced Three.js visualization; Improved asset loading; Basic Android bridge,Gradle,Complete,
+stage2-v3,2026-07,Stage 2 v3,Variant of stage 2 with specific fixes,Gradle,Complete,
+stage2blue,2026-07,Stage 2 Blue,Blue theme variant,Gradle,Complete,
+stage3,2026-07,Stage 3,Advanced features; Full Android bridge; Sensor integration,Gradle,Complete,
+stage3b,2026-07,Stage 3b,Variant of stage 3,Gradle,Complete,
+v1.0.0,2026-07,Release 1.0.0,Production release; All stages integrated; Full feature set,Gradle/Mini Method,Complete,1.8MB APK
+v7-threejs-text,2026-07,v7 Variant,Three.js with text rendering; Font loading; Text geometry,Gradle/Mini Method,Complete,
+v7b,2026-07,v7b Variant,Improved v7; Bug fixes; Performance optimizations,Gradle/Mini Method,Complete,
+v7c,2026-07,v7c Variant,Latest v7 variant; Additional fixes; Stable build,Gradle/Mini Method,Complete,518KB APK
+work-in-progress-instructions,2026-07,Documentation,Complete lessons learned; Stable build recipe; Version compatibility matrix; Sibling agent communication guide; Android app design lessons,Gradle/Mini Method,Complete,Critical reference for future builds

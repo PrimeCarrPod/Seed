@@ -174,6 +174,7 @@ ls -lt Logs/csmlogs/ | head -1 | awk '{print "Logs/csmlogs/"$NF}' | xargs cat
 ### GitHub Handler Operations
 ```bash
 # Source the handler (run once per session)
+source /workspace/app/CSMScripts/freenemo_modules/00_core_config.sh
 source /workspace/app/CSMScripts/freenemo_modules/03_github_handler.sh
 
 # Save a document (auto-splits if >2000 lines, tries 13 strategies)
@@ -188,8 +189,11 @@ gh_join_files "Pieces/DOC_01_manifest.json" "FinishedWork/DOC_01_reassembled.md"
 # Process merge queue
 gh_process_queue
 
-# Verify GitHub presence (17 ways) - create this script
-./verify_github_17ways.sh "Pieces/DOC_01_piece_01.md"
+# COMPLETE DOCUMENT PIPELINE (recommended)
+./Framework/process_document.sh "FinishedWork/DOC_01_Title.md" "DOC-01: Title"
+
+# Verify GitHub presence (17 ways)
+./Framework/verify_github_17ways.sh "Pieces/DOC_01_piece_01.md"
 ```
 
 ### Document Authoring Workflow
@@ -199,38 +203,26 @@ cat > FinishedWork/DOC_XX_Title.md << 'EOF'
 # Document content here...
 EOF
 
-# 2. Split into 13 pieces
-gh_split_file "FinishedWork/DOC_XX_Title.md" 500
-# → Creates Pieces/DOC_XX_piece_01.md through _piece_13.md + manifest.json
+# 2. Run complete pipeline (splits, zips, pushes, verifies, reassembles)
+./Framework/process_document.sh "FinishedWork/DOC_XX_Title.md" "DOC-XX: Title"
 
-# 3. Zip pieces
-cd Pieces && zip DOC_XX_pieces.zip DOC_XX_piece_*.md DOC_XX_manifest.json && cd ..
-
-# 4. Push each piece to GitHub (auto-retries 13 strategies)
-for p in Pieces/DOC_XX_piece_*.md; do
-    gh_save_file "$p" "Piece: DOC_XX Title" "kilo/aegis-outfit-fabricator-wip"
-done
-gh_save_file "Pieces/DOC_XX_pieces.zip" "Archive: DOC_XX Title" "kilo/aegis-outfit-fabricator-wip"
-
-# 5. Verify reassembly
-gh_join_files "Pieces/DOC_XX_manifest.json" "FinishedWork/DOC_XX_verify.md"
-diff FinishedWork/DOC_XX_Title.md FinishedWork/DOC_XX_verify.md
-# Should output NOTHING (0 bytes diff)
+# That's it! The pipeline handles:
+# - Quality check (≥300 lines, ≥15 formulas, ≥10 refs, ≥5 standards, 0 conflation)
+# - Split into 13 pieces (max 500 lines each)
+# - Zip archive creation
+# - Push all 13 pieces + zip to GitHub (13 strategies each)
+# - Verify reassembly (0 bytes diff)
+# - 17-way GitHub verification on sample piece
+# - Heartbeat logging
 ```
 
 ### Quality Checks
 ```bash
-# Check document meets standards
-check_doc_quality() {
-    local doc="$1"
-    echo "Lines: $(wc -l < "$doc")"
-    echo "Formulas: $(grep -c '\\$\\|\\\\[' "$doc" || echo 0)"
-    echo "Refs: $(grep -c 'Research\\|CSMFAB078' "$doc" || echo 0)"
-    echo "Standards: $(grep -ci 'CIETA\\|ASTM\\|NIJ\\|NFPA\\|MIL-STD\\|ISO\\|IEC' "$doc" || echo 0)"
-}
+# Check document meets standards (built-in script)
+./Framework/check_doc_quality.sh "FinishedWork/DOC_XX_Title.md"
 
 # Run on all finished docs
-for d in FinishedWork/*.md; do check_doc_quality "$d"; done
+for d in FinishedWork/*.md; do ./Framework/check_doc_quality.sh "$d"; done
 ```
 
 ---

@@ -1,0 +1,12 @@
+App Name,Latest Version,Build System,SDK Required,Build Tools Required,JDK Required,Build Status,Last Successful Build,APK Location,Test Status,Blockers
+Bounce,v1.0.95,No-Gradle aapt2,android-33,33.0.1,17,⚠️ SDK Missing,2026-08 (v92 pre-built),v92/out/Bounce-v1.0.92.apk,✅ Pre-built works,"Missing android-33 platform & build-tools 33.0.1"
+CarForge,v1.0.0,Unknown,Unknown,Unknown,Unknown,❓ Unknown,N/A,CSMApps/CarForge/CarrPod_CarrForge_v1.zip,❓ Unknown,No build info available
+Marmalade,v7c,Gradle 8.5 / Mini Method,android-33/36,33.0.2/36.0.0,17,✅ Documented,2026-07,CSMApps/Marmalade/*.apk,✅ Lessons documented,"Well-documented build recipe in LESSONS-LEARNED-COMPLETE.md"
+Vertebrae,v0.1-planned,Gradle 8.5 (planned),android-33/36,33.0.2/36.0.0,17,🔄 In Development,N/A,N/A,❌ Crashes on launch,"Incremental plan v0.1-v1.0; 7 stages defined"
+landolil,v7b,No-Gradle aapt2 + Mini Method,android-33,33.0.1,17,✅ Build Scripts Exist,2026-08,v7b/out/,❓ Not tested,"build.sh and build-apk.py present; needs SDK"
+SubAtomic Prime Electron,N/A,Markdown/LaTeX,N/A,N/A,N/A,✅ Complete,N/A,N/A,✅ Complete,360 articles + 84K line compendium
+CSM Cinema,N/A,Screenplay/Markdown,N/A,N/A,N/A,✅ Complete,N/A,N/A,✅ Complete,651 parts across 7 iterations
+NASA CLPS,N/A,Technical/Markdown,N/A,N/A,N/A,✅ Complete,N/A,N/A,✅ Complete,14 parts, 3 phases, 15 contractor TIMs
+Legal Enactment,N/A,Legal Markdown,N/A,N/A,N/A,🔄 8/12 Acts,N/A,N/A,🔄 In Progress,"Acts 06,08,09,10 pending (112 docs)"
+DeepResearch SubParticles V4,N/A,Markdown/LaTeX,N/A,N/A,N/A,✅ Complete (V4),N/A,N/A,✅ Complete,"252 docs (18 particles × 14 parts); V5.0 active"
+Aegis Operations,N/A,Technical/Markdown,N/A,N/A,N/A,🔄 Active,N/A,N/A,🔄 Active,"LBFRP-001 shielding; MXene EMI; Phoenix Protocol"
