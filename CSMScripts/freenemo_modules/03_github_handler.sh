@@ -151,10 +151,12 @@ gh_process_queue() {
         [[ "$s" == "pending" ]] || continue
         freenemo_log "Processing: $f"
         if gh_save_file "$f" "$m" "$b"; then
-            jq --argjson i "$i" '.queue[$i].status="completed"|.queue[$i].completed=now|todateiso8601' "${GH_MERGE_QUEUE}" > "${GH_MERGE_QUEUE}.tmp" && mv "${GH_MERGE_QUEUE}.tmp" "${GH_MERGE_QUEUE}"
+            local jq_filter='.queue[$i].status="completed"|.queue[$i].completed=(now|todateiso8601)'
+            jq --argjson i "$i" "$jq_filter" "${GH_MERGE_QUEUE}" > "${GH_MERGE_QUEUE}.tmp" && mv "${GH_MERGE_QUEUE}.tmp" "${GH_MERGE_QUEUE}"
             freenemo_success "Queue item done: $f"
         else
-            jq --argjson i "$i" '.queue[$i].status="failed"|.queue[$i].attempts+=1' "${GH_MERGE_QUEUE}" > "${GH_MERGE_QUEUE}.tmp" && mv "${GH_MERGE_QUEUE}.tmp" "${GH_MERGE_QUEUE}"
+            local jq_filter2='.queue[$i].status="failed"|.queue[$i].attempts+=1'
+            jq --argjson i "$i" "$jq_filter2" "${GH_MERGE_QUEUE}" > "${GH_MERGE_QUEUE}.tmp" && mv "${GH_MERGE_QUEUE}.tmp" "${GH_MERGE_QUEUE}"
             freenemo_error "Queue item failed: $f"
         fi
     done
