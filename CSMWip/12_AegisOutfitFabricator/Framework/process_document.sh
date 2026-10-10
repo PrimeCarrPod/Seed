@@ -14,6 +14,8 @@ if [[ ! -f "$DOC" ]]; then
 fi
 
 cd "$REPO_ROOT"
+export REPO_ROOT="$REPO_ROOT"
+export KILO_REPO_ROOT="$REPO_ROOT"
 source /workspace/app/CSMScripts/freenemo_modules/00_core_config.sh
 source /workspace/app/CSMScripts/freenemo_modules/03_github_handler.sh
 
@@ -28,10 +30,29 @@ echo ""
 echo "Step 1: Quality check..."
 ./Framework/check_doc_quality.sh "$DOC" || exit 1
 
-# 2. Split into pieces (13 pieces, max 500 lines each)
-echo "Step 2: Splitting into 13 pieces (max 500 lines)..."
-gh_split_file "$DOC" 500
-# Creates Pieces/BASENAME_piece_01.md through _piece_13.md + manifest.json
+# 2. Split into pieces (target 13 pieces)
+echo "Step 2: Splitting into ~13 pieces..."
+LINES=$(wc -l < "$DOC")
+SPLIT_SIZE=$(( (LINES + 12) / 13 ))  # Ceiling division to get ~13 pieces
+if (( SPLIT_SIZE < 30 )); then SPLIT_SIZE=30; fi  # Minimum 30 lines per piece
+if (( SPLIT_SIZE > 500 )); then SPLIT_SIZE=500; fi  # Maximum 500 lines per piece
+echo "  Document lines: $LINES, Split size: $SPLIT_SIZE"
+gh_split_file "$DOC" "$SPLIT_SIZE"
+# Creates .github_handler/splits/BASENAME_part00.md through _part12.md + manifest.json
+
+# Copy pieces to Pieces/ directory with expected naming
+echo "  Copying pieces to Pieces/..."
+SPLIT_DIR=".github_handler/splits"
+for part in "$SPLIT_DIR/${BASENAME}_part"*.md; do
+    if [[ -f "$part" ]]; then
+        part_num=$(basename "$part" | sed 's/.*_part\([0-9]*\)\.md/\1/')
+        # Convert to 2-digit piece number (01-13)
+        piece_num=$(printf "%02d" $((10#$part_num + 1)))
+        cp "$part" "$PIECES_DIR/${BASENAME}_piece_${piece_num}.md"
+    fi
+done
+# Copy manifest
+cp "$SPLIT_DIR/${BASENAME}_manifest.json" "$PIECES_DIR/${BASENAME}_manifest.json"
 
 # 3. Zip pieces
 echo "Step 3: Creating zip archive..."

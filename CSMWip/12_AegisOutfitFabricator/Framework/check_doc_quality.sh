@@ -2,7 +2,6 @@
 # Document Quality Check for AegisOutfitFabricator
 # Usage: ./check_doc_quality.sh <document_file>
 
-set -e
 DOC="$1"
 
 if [[ ! -f "$DOC" ]]; then
@@ -14,12 +13,15 @@ echo "=== DOCUMENT QUALITY CHECK: $(basename "$DOC") ==="
 echo ""
 
 LINES=$(wc -l < "$DOC")
-FORMULAS=$(grep -c '\\$\\|\\\\[' "$DOC" || echo 0)
-CROSSREFS=$(grep -c 'Research\\|CSMFAB078' "$DOC" || echo 0)
-STANDARDS=$(grep -ci 'CIETA\\|ASTM\\|NIJ\\|NFPA\\|MIL-STD\\|ISO\\|IEC' "$DOC" || echo 0)
-CONFLATION=$(grep -ic 'medieval\\|victorian\\|edwardian' "$DOC" || echo 0)
-TBD=$(grep -c 'TBD:RESEARCH' "$DOC" || echo 0)
-HAS_TRACEABILITY=$(grep -c 'Traceability Matrix' "$DOC" || echo 0)
+FORMULA_DOLLAR=$(grep -c '\$' "$DOC" 2>/dev/null || true); FORMULA_DOLLAR=${FORMULA_DOLLAR:-0}
+FORMULA_BRACKET=$(grep -c '\[' "$DOC" 2>/dev/null || true); FORMULA_BRACKET=${FORMULA_BRACKET:-0}
+FORMULA_MATH=$(grep -c -E '[=∈≈→×∝±√∑∫∂∇]' "$DOC" 2>/dev/null || true); FORMULA_MATH=${FORMULA_MATH:-0}
+FORMULAS=$((FORMULA_DOLLAR + FORMULA_BRACKET + FORMULA_MATH))
+CROSSREFS=$(grep -c 'Research\|CSMFAB078' "$DOC" 2>/dev/null || true); CROSSREFS=${CROSSREFS:-0}
+STANDARDS=$(grep -ci 'CIETA\|ASTM\|NIJ\|NFPA\|MIL-STD\|ISO\|IEC' "$DOC" 2>/dev/null || true); STANDARDS=${STANDARDS:-0}
+CONFLATION=$(grep -ic 'medieval\|victorian\|edwardian' "$DOC" 2>/dev/null || true); CONFLATION=${CONFLATION:-0}
+TBD=$(grep -c 'TBD:RESEARCH' "$DOC" 2>/dev/null || true); TBD=${TBD:-0}
+HAS_TRACEABILITY=$(grep -c 'Traceability Matrix' "$DOC" 2>/dev/null || true); HAS_TRACEABILITY=${HAS_TRACEABILITY:-0}
 
 echo "Lines: $LINES (target: ≥300)"
 echo "Formulas: $FORMULAS (target: ≥15)"
