@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TGE E1 - Prime Electron Worldline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0A0A0F; 
+            color: #E8E8F0; 
+            font-family: 'Courier New', monospace; 
+            overflow: hidden; 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        #canvas { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            display: block; 
+        }
+        #hud { 
+            position: absolute; 
+            top: 60px; 
+            left: 20px; 
+            right: 20px; 
+            bottom: 80px; 
+            pointer-events: none; 
+            z-index: 10; 
+        }
+        .hud-panel { 
+            background: rgba(26, 26, 46, 0.9); 
+            border: 1px solid #00D4AA; 
+            border-radius: 8px; 
+            padding: 12px; 
+            margin-bottom: 10px; 
+            font-size: 11px; 
+            line-height: 1.6; 
+        }
+        .hud-title { 
+            color: #00D4AA; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid #00D4AA44; 
+            padding-bottom: 4px; 
+        }
+        .stat-row { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 4px 0; 
+        }
+        .stat-label { color: #8888A0; }
+        .stat-value { color: #00D4AA; font-weight: bold; }
+        .worldline-path { stroke: #00D4AA; stroke-width: 2; fill: none; }
+        .reflection-circle { stroke: #FF6600; stroke-width: 1.5; fill: none; stroke-dasharray: 5,5; }
+        .electron { fill: #00FFFF; filter: drop-shadow(0 0 6px #00FFFF); }
+        .prime-gap-marker { fill: #F97316; }
+        .eggshell { stroke: #4488FF; stroke-width: 1; fill: none; opacity: 0.3; }
+        #menu-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.95); 
+            z-index: 100; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        #menu-overlay.visible { display: flex; }
+        .menu-btn { 
+            background: #1A1A2E; 
+            border: 1px solid #00D4AA; 
+            color: #00D4AA; 
+            padding: 16px 48px; 
+            font-size: 18px; 
+            font-family: inherit; 
+            border-radius: 8px; 
+            min-width: 280px; 
+        }
+        .menu-btn:hover, .menu-btn:focus { background: #00D4AA; color: #0A0A0F; }
+        .menu-btn.danger { border-color: #FF4466; color: #FF4466; }
+        .menu-btn.danger:hover { background: #FF4466; color: #0A0A0F; }
+        .menu-btn.secondary { border-color: #A855F7; color: #A855F7; }
+        .menu-btn.secondary:hover { background: #A855F7; color: #0A0A0F; }
+        .menu-title { font-size: 28px; color: #00D4AA; margin-bottom: 20px; }
+        .menu-subtitle { color: #8888A0; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="hud">
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ELECTRON WORLDLINE</div>
+            <div class="stat-row"><span class="stat-label">Position:</span><span class="stat-value" id="pos-x">0.00</span><span class="stat-value" id="pos-y">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Velocity:</span><span class="stat-value" id="vel-x">0.00</span><span class="stat-value" id="vel-y">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Reflections:</span><span class="stat-value" id="reflections">0</span></div>
+            <div class="stat-row"><span class="stat-label">Prime Gaps Crossed:</span><span class="stat-value" id="gaps-crossed">0</span></div>
+            <div class="stat-row"><span class="stat-label">Worldline Steps:</span><span class="stat-value" id="steps">0</span></div>
+            <div class="stat-row"><span class="stat-label">Mode:</span><span class="stat-value" id="mode">LIVE</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ENGINE</div>
+            <div class="stat-row"><span class="stat-label">Primes Loaded:</span><span class="stat-value" id="prime-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Gaps Available:</span><span class="stat-value" id="gap-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Current Gap:</span><span class="stat-value" id="current-gap">2</span></div>
+            <div class="stat-row"><span class="stat-label">Gap Index:</span><span class="stat-value" id="gap-index">0</span></div>
+        </div>
+    </div>
+    <div id="menu-overlay">
+        <div class="menu-title">TGE E1 MENU</div>
+        <div class="menu-subtitle">Prime Electron Worldline Emulator</div>
+        <button class="menu-btn" onclick="TGE.resume()">RESUME</button>
+        <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
+        <button class="menu-btn secondary" onclick="TGE.showWorldlineHistory()">WORLDLINE HISTORY</button>
+        <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
+        <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
+    </div>
+    <script>
+        const TGE = {
+            canvas: null, ctx: null, width: 0, height: 0,
+            electron: { x: 0, y: 0, vx: 0, vy: 0, radius: 4 },
+            worldline: [], reflections: 0, steps: 0,
+            eggshell: { cx: 0, cy: 0, rx: 0, ry: 0, rotation: 0 },
+            primeGaps: [], primeGapIndex: 0, gapsCrossed: 0,
+            theoryMode: false, running: true, animationId: null,
+            insetsTop: 0, insetsBottom: 0,
+            menuVisible: false,
+            
+            init() {
+                this.canvas = document.getElementById('canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+                this.setupEggshell();
+                this.startLoop();
+            },
+            
+            resize() {
+                this.width = window.innerWidth;
+                this.height = window.innerHeight;
+                this.canvas.width = this.width;
+                this.canvas.height = this.height;
+                this.electron.x = this.width / 2;
+                this.electron.y = this.height / 2;
+                this.setupEggshell();
+            },
+            
+            setupEggshell() {
+                const padding = 40;
+                this.eggshell.cx = this.width / 2;
+                this.eggshell.cy = this.height / 2;
+                this.eggshell.rx = Math.min(this.width, this.height) / 2 - padding;
+                this.eggshell.ry = this.eggshell.rx * 0.75;
+            },
+            
+            setInsets(top, bottom) {
+                this.insetsTop = top;
+                this.insetsBottom = bottom;
+            },
+            
+            startLoop() {
+                const loop = () => {
+                    if (this.running) {
+                        this.step();
+                        this.render();
+                    }
+                    this.animationId = requestAnimationFrame(loop);
+                };
+                loop();
+            },
+            
+            step() {
+                this.steps++;
+                this.electron.x += this.electron.vx;
+                this.electron.y += this.electron.vy;
+                
+                const dx = this.electron.x - this.eggshell.cx;
+                const dy = this.electron.y - this.eggshell.cy;
+                const normX = dx / this.eggshell.rx;
+                const normY = dy / this.eggshell.ry;
+                const distSq = normX * normX + normY * normY;
+                
+                if (distSq >= 1.0) {
+                    this.handleReflection(dx, dy, normX, normY);
+                }
+                
+                this.checkPrimeGaps();
+                this.updateHUD();
+            },
+            
+            handleReflection(dx, dy, normX, normY) {
+                this.reflections++;
+                const normalLen = Math.sqrt(normX * normX + normY * normY);
+                const nx = normX / normalLen;
+                const ny = normY / normalLen;
+                const dot = this.electron.vx * nx + this.electron.vy * ny;
+                this.electron.vx -= 2 * dot * nx;
+                this.electron.vy -= 2 * dot * ny;
+                this.electron.vx *= 0.99;
+                this.electron.vy *= 0.99;
+                this.electron.x = this.eggshell.cx + normX * this.eggshell.rx * 0.98;
+                this.electron.y = this.eggshell.cy + normY * this.eggshell.ry * 0.98;
+                
+                this.worldline.push({ x: this.electron.x, y: this.electron.y, t: this.steps });
+                if (this.worldline.length > 2000) this.worldline.shift();
+                
+                if (window.TGEBridge) {
+                    window.TGEBridge.onWorldlineReflection(JSON.stringify({
+                        reflections: this.reflections,
+                        position: { x: this.electron.x, y: this.electron.y },
+                        velocity: { x: this.electron.vx, y: this.electron.vy }
+                    }));
+                }
+            },
+            
+            checkPrimeGaps() {
+                if (this.primeGaps.length === 0) return;
+                const distFromCenter = Math.sqrt(
+                    Math.pow((this.electron.x - this.eggshell.cx) / this.eggshell.rx, 2) +
+                    Math.pow((this.electron.y - this.eggshell.cy) / this.eggshell.ry, 2)
+                );
+                const gapThreshold = this.primeGaps[this.primeGapIndex] / 100;
+                if (distFromCenter > gapThreshold && this.primeGapIndex < this.primeGaps.length - 1) {
+                    this.primeGapIndex++;
+                    this.gapsCrossed++;
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onPrimeGapEvent(JSON.stringify({
+                            gap: this.primeGaps[this.primeGapIndex],
+                            index: this.primeGapIndex,
+                            totalCrossed: this.gapsCrossed
+                        }));
+                    }
+                }
+            },
+            
+            updateHUD() {
+                document.getElementById('pos-x').textContent = this.electron.x.toFixed(1);
+                document.getElementById('pos-y').textContent = this.electron.y.toFixed(1);
+                document.getElementById('vel-x').textContent = this.electron.vx.toFixed(2);
+                document.getElementById('vel-y').textContent = this.electron.vy.toFixed(2);
+                document.getElementById('reflections').textContent = this.reflections;
+                document.getElementById('gaps-crossed').textContent = this.gapsCrossed;
+                document.getElementById('steps').textContent = this.steps;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+                document.getElementById('gap-index').textContent = this.primeGapIndex;
+                document.getElementById('current-gap').textContent = this.primeGaps[this.primeGapIndex] || 0;
+            },
+            
+            render() {
+                this.ctx.fillStyle = '#0A0A0F';
+                this.ctx.fillRect(0, 0, this.width, this.height);
+                
+                this.drawEggshell();
+                this.drawWorldline();
+                this.drawPrimeGapMarkers();
+                this.drawElectron();
+                this.drawReflectionCircles();
+            },
+            
+            drawEggshell() {
+                this.ctx.save();
+                this.ctx.translate(this.eggshell.cx, this.eggshell.cy);
+                this.ctx.rotate(this.eggshell.rotation);
+                this.ctx.beginPath();
+                this.ctx.ellipse(0, 0, this.eggshell.rx, this.eggshell.ry, 0, 0, Math.PI * 2);
+                this.ctx.strokeStyle = '#4488FF';
+                this.ctx.lineWidth = 1;
+                this.ctx.globalAlpha = 0.3;
+                this.ctx.stroke();
+                this.ctx.globalAlpha = 1;
+                this.ctx.restore();
+                this.eggshell.rotation += 0.0001;
+            },
+            
+            drawWorldline() {
+                if (this.worldline.length < 2) return;
+                this.ctx.beginPath();
+                this.ctx.moveTo(this.worldline[0].x, this.worldline[0].y);
+                for (let i = 1; i < this.worldline.length; i++) {
+                    const alpha = i / this.worldline.length;
+                    this.ctx.lineTo(this.worldline[i].x, this.worldline[i].y);
+                }
+                const gradient = this.ctx.createLinearGradient(
+                    this.worldline[0].x, this.worldline[0].y,
+                    this.worldline[this.worldline.length-1].x, this.worldline[this.worldline.length-1].y
+                );
+                gradient.addColorStop(0, '#00D4AA22');
+                gradient.addColorStop(1, '#00D4AA');
+                this.ctx.strokeStyle = gradient;
+                this.ctx.lineWidth = 2;
+                this.ctx.stroke();
+            },
+            
+            drawPrimeGapMarkers() {
+                for (let i = 0; i <= this.primeGapIndex && i < this.primeGaps.length; i++) {
+                    const gap = this.primeGaps[i];
+                    const radius = (gap / 100) * Math.min(this.eggshell.rx, this.eggshell.ry);
+                    this.ctx.beginPath();
+                    this.ctx.ellipse(this.eggshell.cx, this.eggshell.cy, radius, radius * 0.75, 0, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = i === this.primeGapIndex ? '#F97316' : '#F9731644';
+                    this.ctx.lineWidth = i === this.primeGapIndex ? 2 : 1;
+                    this.ctx.globalAlpha = i === this.primeGapIndex ? 0.8 : 0.3;
+                    this.ctx.stroke();
+                    this.ctx.globalAlpha = 1;
+                }
+            },
+            
+            drawElectron() {
+                const glow = this.ctx.createRadialGradient(
+                    this.electron.x, this.electron.y, 0,
+                    this.electron.x, this.electron.y, this.electron.radius * 4
+                );
+                glow.addColorStop(0, '#00FFFF');
+                glow.addColorStop(1, '#00FFFF00');
+                this.ctx.fillStyle = glow;
+                this.ctx.beginPath();
+                this.ctx.arc(this.electron.x, this.electron.y, this.electron.radius * 3, 0, Math.PI * 2);
+                this.ctx.fill();
+                this.ctx.fillStyle = '#00FFFF';
+                this.ctx.beginPath();
+                this.ctx.arc(this.electron.x, this.electron.y, this.electron.radius, 0, Math.PI * 2);
+                this.ctx.fill();
+            },
+            
+            drawReflectionCircles() {
+                for (let i = Math.max(0, this.worldline.length - 10); i < this.worldline.length; i++) {
+                    const pt = this.worldline[i];
+                    const alpha = (i - (this.worldline.length - 10)) / 10 * 0.5;
+                    this.ctx.beginPath();
+                    this.ctx.arc(pt.x, pt.y, 8 + (this.steps - pt.t) * 0.5, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = `rgba(255, 102, 0, ${alpha})`;
+                    this.ctx.lineWidth = 1.5;
+                    this.ctx.stroke();
+                }
+            },
+            
+            onScanPressed() {
+                this.electron.vx += (Math.random() - 0.5) * 10;
+                this.electron.vy += (Math.random() - 0.5) * 10;
+            },
+            
+            toggleMenu() {
+                this.menuVisible = !this.menuVisible;
+                document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+            },
+            
+            resume() { this.toggleMenu(); },
+            
+            toggleTheory() {
+                this.theoryMode = !this.theoryMode;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+            },
+            
+            setTheoryMode(enabled) {
+                this.theoryMode = enabled;
+            },
+            
+            showPrimeExplorer() { alert('Prime Explorer - Coming Soon'); },
+            showWorldlineHistory() { alert('Worldline History - Coming Soon'); },
+            showGapAnalysis() { alert('Gap Analysis - Coming Soon'); },
+            resetSimulation() {
+                this.electron.x = this.width / 2;
+                this.electron.y = this.height / 2;
+                this.electron.vx = 0;
+                this.electron.vy = 0;
+                this.worldline = [];
+                this.reflections = 0;
+                this.steps = 0;
+                this.gapsCrossed = 0;
+                this.primeGapIndex = 0;
+            },
+            
+            onReady(data) { console.log('TGE ready:', data); },
+            toggleFleet() { console.log('Fleet toggle'); }
+        };
+        
+        window.TGE = TGE;
+    </script>
+</body>
+</html>

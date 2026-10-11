@@ -1,0 +1,14 @@
+{
+  "original": "MASTER_TODO.md",
+  "pieces": 13,
+  "piece_files": [
+    "MASTER_TODO_piece_01.md", "MASTER_TODO_piece_02.md", "MASTER_TODO_piece_03.md",
+    "MASTER_TODO_piece_04.md", "MASTER_TODO_piece_05.md", "MASTER_TODO_piece_06.md",
+    "MASTER_TODO_piece_07.md", "MASTER_TODO_piece_08.md", "MASTER_TODO_piece_09.md",
+    "MASTER_TODO_piece_10.md", "MASTER_TODO_piece_11.md", "MASTER_TODO_piece_12.md",
+    "MASTER_TODO_piece_13.md"
+  ],
+  "total_lines": 223,
+  "split_date": "2026-10-11",
+  "project": "TGE_E1"
+}

@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.TGE_E1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/prime_teal</item>
+        <item name="colorPrimaryVariant">@color/prime_teal_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/prime_orange</item>
+        <item name="colorSecondaryVariant">@color/prime_orange_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/prime_void</item>
+        <item name="colorSurface">@color/prime_surface</item>
+        <item name="colorOnSurface">@color/prime_text</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>
