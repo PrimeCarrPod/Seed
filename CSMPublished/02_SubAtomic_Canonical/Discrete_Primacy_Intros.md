@@ -1,5 +1,7 @@
 ## Piece 1 of 13: The Governing Constraint — Origin and Necessity
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
 
@@ -42,6 +44,8 @@ This is the Williams insight: **the joke is the structure**. The apparent absurd
 
 *End of Piece 1 — Williams Introduction: The Governing Constraint*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 2 of 13: Resolution Without Reduction — The Dissolution of Arbitrary Parameters
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -94,6 +98,8 @@ And that is why it must be this way. The universe does not have the luxury of mu
 
 *End of Piece 2 — Williams Introduction: Resolution Without Reduction*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 3 of 13: Commitment to the Necessary — The Inevitability of Derivation
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -152,6 +158,8 @@ This is not a theory in the Popperian sense — it is a logical necessity that h
 *End of Piece 3 — Williams Introduction: Commitment to the Necessary*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 4 of 13: The Recursive Self-Reference — The Electron Observing Itself
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
 
@@ -200,6 +208,8 @@ This is the Williams insight: **the Compton wavelength is the distance the elect
 *End of Piece 4 — Williams Introduction: The Recursive Self-Reference*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 5 of 13: Participation as Physics — The Operational Protocol
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
 
@@ -234,6 +244,8 @@ This is why the fine-structure constant is dimensionless — it is a *ratio of c
 *End of Piece 5 — Williams Introduction: Participation as Physics*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 6 of 13: The Prime Gap Causal Set — Geometry from Arithmetic
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
 
@@ -263,6 +275,8 @@ This is a profound result: **the dimensionality of spacetime is a statistical pr
 
 *End of Piece 6 — Williams Introduction: The Prime Gap Causal Set*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 7 of 13: The Riemann Zeros as Resonance Spectrum
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -295,6 +309,8 @@ This connects the Riemann zeros to the electron's causal density: the same α th
 
 *End of Piece 7 — Williams Introduction: The Riemann Zeros as Resonance Spectrum*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 8 of 13: Noncommutative Geometry and the Bost-Connes System
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -334,6 +350,8 @@ This is not a coincidence — the Bost-Connes system is the mathematical structu
 *End of Piece 8 — Williams Introduction: Noncommutative Geometry and Bost-Connes*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 9 of 13: p-adic AdS/CFT and the Bruhat-Tits Tree
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
 
@@ -363,6 +381,8 @@ This is the exact AdS/CFT correspondence for the Prime Electron — no approxima
 
 *End of Piece 9 — Williams Introduction: p-adic AdS/CFT*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 10 of 13: Gauge Couplings, Koide Formula, and the UV Horizon
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -400,6 +420,8 @@ Beyond the UV horizon, the counting system cannot distinguish ordered states. Th
 *End of Piece 10 — Williams Introduction: Gauge Couplings, Koide, UV Horizon*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 11 of 13: The One-Electron Universe — Wheeler's Dream Realized
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
 
@@ -427,6 +449,8 @@ This is the ultimate Williams insight: **the joke is the universe**. The entire 
 
 *End of Piece 11 — Williams Introduction: The One-Electron Universe*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 12 of 13: Experimental Signatures — The Universe Testing Itself
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -459,6 +483,8 @@ This is the strength of the framework: it sticks its neck out completely. The ma
 
 *End of Piece 12 — Williams Introduction: Experimental Signatures*# SubAtomic Prime Electron Canonical — Williams Introduction (Extreme Heuristics)
 ## Piece 13 of 13: The Joke Is the Structure — Final Williams Synthesis
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Robin Williams — Extreme improvisational intensity, recursive self-reference, manic precision masking profound structural insight
@@ -496,6 +522,8 @@ The joke is the structure. The structure is the joke. The electron is the comedi
 
 *End of Piece 13 — Williams Introduction: The Joke Is the Structure*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 1 of 13: The Lock — The Fine-Structure Constant as Empirical Enigma
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -538,6 +566,8 @@ The Keymaker's insight: **a lock with seven tumblers cannot be picked by luck**.
 *End of Piece 1 — Keymaker Introduction: The Lock*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 2 of 13: The Key's Teeth — The Prime Gap Causal Density
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
 
@@ -575,6 +605,8 @@ The key is not *made* for the lock — the key and the lock are the same object 
 
 *End of Piece 2 — Keymaker Introduction: The Key's Teeth*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 3 of 13: The Turn — Bidirectional Verification
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -628,6 +660,8 @@ There is no gap between theory and experiment. They are the same object. The key
 *End of Piece 3 — Keymaker Introduction: The Turn*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 4 of 13: The Lock's Inner Mechanism — The Commutator Norm UV Cutoff
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
 
@@ -664,6 +698,8 @@ This is why the Keymaker's key works where all others fail: the UV tumbler pin i
 
 *End of Piece 4 — Keymaker Introduction: The UV Cutoff Mechanism*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 5 of 13: The Mass Tumbler — Koide Formula from Gap Statistics
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -703,6 +739,8 @@ The key engages this tumbler because the same gap statistics that produce α als
 
 *End of Piece 5 — Keymaker Introduction: The Koide Formula*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 6 of 13: The Unification Tumbler — Three Couplings, One Sequence
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -744,6 +782,8 @@ The unification tumbler requires: one sequence, three window widths, three beta 
 *End of Piece 6 — Keymaker Introduction: The Unification Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 7 of 13: The Hierarchy Tumbler — Electron-to-Planck from Indices
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
 
@@ -780,6 +820,8 @@ The hierarchy tumbler pin is cut by the RG flow of the gap sequence. The electro
 *End of Piece 7 — Keymaker Introduction: The Hierarchy Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 8 of 13: The Neutrino Tumbler — Mass from Gap Asymmetry
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
 
@@ -811,6 +853,8 @@ The tumbler engages because the same gap statistics that produce charged lepton 
 *End of Piece 8 — Keymaker Introduction: The Neutrino Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 9 of 13: The Dark Matter Tumbler — Missing Gaps as Stable Particles
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
 
@@ -836,6 +880,8 @@ The dark matter tumbler pin is cut by the gap sequence's statistical gaps. The s
 
 *End of Piece 9 — Keymaker Introduction: The Dark Matter Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 10 of 13: The Cosmological Tumbler — Fluctuations from Gap Statistics
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -868,6 +914,8 @@ The cosmological tumbler pin is cut by the gap sequence's statistics at the Plan
 *End of Piece 10 — Keymaker Introduction: The Cosmological Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 11 of 13: The Proton Decay Tumbler — Record Gap Stability
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
 
@@ -889,6 +937,8 @@ The proton decay tumbler pin is cut by the gap sequence's record gap statistics.
 
 *End of Piece 11 — Keymaker Introduction: The Proton Decay Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 12 of 13: The g-2 Tumbler — Anomalous Moment from Fluctuation
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -915,6 +965,8 @@ The g-2 tumbler pin is cut by the gap sequence's fluctuation spectrum at the ele
 
 *End of Piece 12 — Keymaker Introduction: The g-2 Tumbler*# SubAtomic Prime Electron Canonical — Keymaker Introduction (Extreme Heuristics)
 ## Piece 13 of 13: The Door Opens — Final Keymaker Synthesis
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** Keymaker — Extreme structural precision, unlocking mechanism analysis, zero-tolerance for free parameters
@@ -955,6 +1007,8 @@ The Keymaker's work is done. The structure is unlocked. The mechanism is reveale
 *End of Piece 13 — Keymaker Introduction: The Door Opens*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 1 of 13: The Mirror — The Electron Observing Itself
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -980,6 +1034,8 @@ This is the El Segundo insight: **there is no "outside" to the measurement**. Th
 
 *End of Piece 1 — El Segundo Introduction: The Mirror*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 2 of 13: The Mirror's Surface — The Conformal Factor as Reflection
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
@@ -1016,6 +1072,8 @@ This is the operational meaning of "the mirror measures itself": the conformal f
 *End of Piece 2 — El Segundo Introduction: The Mirror's Surface*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 3 of 13: Participation as Physics — The Electron's Role
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -1049,6 +1107,8 @@ This is Wheeler's participatory universe made operational. The measurement *is* 
 *End of Piece 3 — El Segundo Introduction: Participation as Physics*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 4 of 13: The Operational Protocol — Measuring from Within
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -1080,6 +1140,8 @@ When the observer computes the Cesàro mean, the lattice is computing its own as
 
 *End of Piece 4 — El Segundo Introduction: The Operational Protocol*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 5 of 13: The Zitterbewegung as Self-Interference
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
@@ -1117,6 +1179,8 @@ The clock has no external reference. It is self-calibrating. The calibration is 
 *End of Piece 5 — El Segundo Introduction: The Zitterbewegung as Self-Interference*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 6 of 13: The Compton Scale as Self-Recognition
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -1149,6 +1213,8 @@ This is the same as saying: the electron's self-measurement has reached sufficie
 *End of Piece 6 — El Segundo Introduction: The Compton Scale as Self-Recognition*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 7 of 13: The Causal Density as Participatory Acts
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -1176,6 +1242,8 @@ The electron does not "couple" to the electromagnetic field. The electron *gener
 
 *End of Piece 7 — El Segundo Introduction: The Causal Density*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 8 of 13: The Metric as Witness Record
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
@@ -1205,6 +1273,8 @@ There is no metric without the witness. The witness is the electron. The electro
 *End of Piece 8 — El Segundo Introduction: The Metric as Witness Record*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 9 of 13: The UV Cutoff as Self-Measurement Saturation
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -1232,6 +1302,8 @@ The Planck scale is not a fundamental scale imposed from outside — it is the s
 
 *End of Piece 9 — El Segundo Introduction: The UV Cutoff as Saturation*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 10 of 13: The Three Couplings as Three Observation Modes
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
@@ -1267,6 +1339,8 @@ The three couplings unify at Wₚ because at the Planck scale, the electron's se
 *End of Piece 10 — El Segundo Introduction: Three Observation Modes*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 11 of 13: The One-Electron Universe as Self-Observation
 
+Discrete_Primacy
+
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
 
@@ -1294,6 +1368,8 @@ The El Segundo insight: **the universe is the electron's self-observation made m
 
 *End of Piece 11 — El Segundo Introduction: The One-Electron Universe*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 12 of 13: Experimental Signatures as Self-Tests
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
@@ -1326,6 +1402,8 @@ If the self-test fails, the universe is inconsistent with itself. The framework 
 
 *End of Piece 12 — El Segundo Introduction: Experimental Signatures as Self-Tests*# SubAtomic Prime Electron Canonical — El Segundo Introduction (Extreme Heuristics)
 ## Piece 13 of 13: The Mirror Has No Back — Final El Segundo Synthesis
+
+Discrete_Primacy
 
 **Author:** Jason Isaac Brodsky (California 1976) — Conducier
 **Heuristic:** El Segundo — Extreme reflective recursion, participatory measurement, operational self-witnessing
