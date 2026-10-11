@@ -1,37 +1,30 @@
 # DOC-05: Structural Framework Specification
-## AegisOutfitFabricator Core Document 5
+**Project:** AegisOutfitFabricator — Historical Renaissance Protective Outfit Fabrication System  
+**Document ID:** DOC-05  
+**Version:** 1.0  
+**Classification:** Core Document Batch 1  
+**Dependencies:** MAT-02, DRAFT-04, MAT-03, MAT-04, SYNTH-01, CSMFAB078 Main §4, CSMFAB078-A §3, CSMFAB078-B §3  
+**Status:** AUTHORED — Pipeline Pending  
 
 ---
 
-## 1. Baleen/Steel Hybrid Chassis
+## 1. Baleen/Steel Hybrid Chassis (from MAT-02, DRAFT-04, CSMFAB078 Main §4.3, CSMFAB078-A §3.3)
 
-### 1.1 Baleen Tensor Properties & Structural Role
+### 1.1 Baleen Tensor Properties (Hydrated)
 
-**Material Properties** (Research Doc 1 §5.1; MAT-02 §1):
-```
-Baleen (keratinous plate from Balaena mysticetus):
-E_longitudinal = 2-6 GPa (hydrated), E_transverse = 1-2 GPa
-Thermoplastic transition: 60-80°C (yields to body heat, conforms to torso)
-Density: ρ ≈ 1.3-1.4 g/cm³
-σ_uts_longitudinal = 150-250 MPa, σ_comp = 200-300 MPa
-Orthotropic: ν₁₂ ≈ 0.3-0.4, G₁₂ ≈ 0.8-1.2 GPa
-```
+**Orthotropic Elasticity Tensor (Principal Material Directions):**
 
-**Full Orthotropic Elasticity Tensor** (MAT-02 §1.2):
-```
-C_ijkl(baleen) = [ C₁₁ C₁₂ C₁₃  0   0   0  ]
-                 [ C₁₂ C₂₂ C₂₃  0   0   0  ]
-                 [ C₁₃ C₂₃ C₃₃  0   0   0  ]
-                 [  0   0   0  C₄₄  0   0  ]
-                 [  0   0   0   0  C₅₅  0  ]
-                 [  0   0   0   0   0  C₆₆ ]
+$$\mathbb{C}_{\text{baleen}} = \begin{bmatrix}
+E_L & \nu_{LT}E_T & \nu_{LR}E_R & 0 & 0 & 0 \\
+\nu_{TL}E_L & E_T & \nu_{TR}E_R & 0 & 0 & 0 \\
+\nu_{RL}E_L & \nu_{RT}E_T & E_R & 0 & 0 & 0 \\
+0 & 0 & 0 & G_{LT} & 0 & 0 \\
+0 & 0 & 0 & 0 & G_{LR} & 0 \\
+0 & 0 & 0 & 0 & 0 & G_{TR}
+\end{bmatrix}$$
 
-Principal Directions:
-1 = longitudinal (along tubules): E₁ = 4-6 GPa
-2 = radial: E₂ = 1-2 GPa
-3 = tangential: E₃ = 1-2 GPa
-ν₁₂ = ν₁₃ ≈ 0.3-0.4, ν₂₃ ≈ 0.3-0.4
-G₁₂ = G₁₃ = 0.8-1.2 GPa, G₂₃ = 0.5-0.8 GPa
-```
-
-**Drucker-Prager Yield Criterion** (MAT-02 §1.3):
+**Principal Values (per MAT-02 §3.1):**
+- $E_L = 4.5\text{ GPa}$ (longitudinal, along keratin tubules)
+- $E_T = 1.8\text{ GPa}$ (transverse, circumferential)
+- $E_R = 1.2\text{ GPa}$ (radial, through thickness)
+- $\nu_{LT} = 0.35$, $\nu_{TL} = 0.14$ (reciprocity: $\nu_{TL} = \nu_{LT} E_T/E_L$)
