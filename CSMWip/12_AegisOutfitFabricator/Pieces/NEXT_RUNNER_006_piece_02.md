@@ -1,3 +1,14 @@
+```
+
+### 1. Git Branch Verification
+
+```bash
+cd /workspace/app/CSMWip/12_AegisOutfitFabricator
+
+# Check current branch
+git branch --show-current
+# Should be: kilo/aegis-outfit-fabricator-wip
+
 # Verify sync with main
 git fetch origin
 git status
@@ -21,25 +32,3 @@ ls -la .github_handler/
 ### 3. Verify Session 005 Deliverables Integrity
 
 ```bash
-cd /workspace/app/CSMWip/12_AegisOutfitFabricator
-
-# Check each DOC document passes quality gates (per MASTER_TODO_A.md, Framework/README.md)
-./Framework/check_doc_quality.sh FinishedWork/DOC-01_Executive_System_Architecture.md
-./Framework/check_doc_quality.sh FinishedWork/DOC-02_Historical_Context_Design_Philosophy.md
-./Framework/check_doc_quality.sh FinishedWork/DOC-03_Material_Systems_Integration.md
-./Framework/check_doc_quality.sh FinishedWork/DOC-04_Geometric_Pattern_System.md
-./Framework/check_doc_quality.sh FinishedWork/DOC-05_Structural_Framework_Specification.md
-
-# Verify GitHub pieces exist for each (17 pieces per doc, per process_document.sh)
-ls -la Pieces/DOC-01* Pieces/DOC-02* Pieces/DOC-03* Pieces/DOC-04* Pieces/DOC-05*
-# Should show 17 pieces + manifest + zip per document
-```
-
----
-
-## 📋 PHASE 4 REMAINING — CORE DOCUMENT FABRICATION (BATCH 2)
-
-From MASTER_TODO_B.md, confirm these are complete before proceeding:
-
-| Task | Status | Verification |
-|------|--------|--------------|
