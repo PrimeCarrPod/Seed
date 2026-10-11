@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.TGE_E2" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:colorPrimary">@color/prime_teal</item>
+        <item name="android:colorPrimaryDark">@color/prime_teal_dark</item>
+        <item name="android:colorAccent">@color/prime_orange</item>
+        <item name="android:colorBackground">@color/prime_void</item>
+        <item name="android:textColorPrimary">@color/prime_text</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

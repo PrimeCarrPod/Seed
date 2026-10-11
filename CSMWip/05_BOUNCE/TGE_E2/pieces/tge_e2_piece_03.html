@@ -1,0 +1,68 @@
+startLoop() {
+                const loop = () => {
+                    if (this.running) {
+                        this.step();
+                        this.render();
+                    }
+                    this.animationId = requestAnimationFrame(loop);
+                };
+                loop();
+            },
+            
+            step() {
+                this.steps++;
+                
+                // Update all fleet electrons
+                this.electrons.forEach((e, index) => {
+                    e.x += e.vx;
+                    e.y += e.vy;
+                    
+                    const dx = e.x - this.eggshell.cx;
+                    const dy = e.y - this.eggshell.cy;
+                    const normX = dx / this.eggshell.rx;
+                    const normY = dy / this.eggshell.ry;
+                    const distSq = normX * normX + normY * normY;
+                    
+                    if (distSq >= 1.0) {
+                        this.handleReflection(e, dx, dy, normX, normY, index);
+                    }
+                });
+                
+                // Main electron (index 0) handles prime gaps
+                this.checkPrimeGaps();
+                this.updateHUD();
+            },
+            
+            handleReflection(e, dx, dy, normX, normY, index) {
+                if (index === 0) this.reflections++;
+                
+                const normalLen = Math.sqrt(normX * normX + normY * normY);
+                const nx = normX / normalLen;
+                const ny = normY / normalLen;
+                const dot = e.vx * nx + e.vy * ny;
+                e.vx -= 2 * dot * nx;
+                e.vy -= 2 * dot * ny;
+                e.vx *= 0.99;
+                e.vy *= 0.99;
+                e.x = this.eggshell.cx + normX * this.eggshell.rx * 0.98;
+                e.y = this.eggshell.cy + normY * this.eggshell.ry * 0.98;
+                
+                // Only main electron leaves worldline trail
+                if (index === 0) {
+                    this.worldline.push({ x: e.x, y: e.y, t: this.steps });
+                    if (this.worldline.length > 2000) this.worldline.shift();
+                    
+                    // Also record in history for scrubber
+                    if (this.WorldlineHistory.maxHistory > 0) {
+                        TGE.WorldlineHistory.scrubIndex = this.worldline.length - 1;
+                    }
+                    
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onWorldlineReflection(JSON.stringify({
+                            reflections: this.reflections,
+                            position: { x: e.x, y: e.y },
+                            velocity: { x: e.vx, y: e.vy }
+                        }));
+                    }
+                }
+            },

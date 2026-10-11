@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TGE E2 - Prime Electron Worldline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0A0A0F; 
+            color: #E8E8F0; 
+            font-family: 'Courier New', monospace; 
+            overflow: hidden; 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        #canvas { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            display: block; 
+        }
+        #hud { 
+            position: absolute; 
+            top: 60px; 
+            left: 20px; 
+            right: 20px; 
+            bottom: 80px; 
+            pointer-events: none; 
+            z-index: 10; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 10px;
+        }
+        .hud-panel { 
+            background: rgba(26, 26, 46, 0.9); 
+            border: 1px solid #00D4AA; 
+            border-radius: 8px; 
+            padding: 12px; 
+            margin-bottom: 10px; 
+            font-size: 11px; 
+            line-height: 1.6; 
+        }
+        .hud-title { 
+            color: #00D4AA; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid #00D4AA44; 
+            padding-bottom: 4px; 
+        }
+        .stat-row { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 4px 0; 
+        }
+        .stat-label { color: #8888A0; }
+        .stat-value { color: #00D4AA; font-weight: bold; }
+        .worldline-path { stroke: #00D4AA; stroke-width: 2; fill: none; }
+        .reflection-circle { stroke: #FF6600; stroke-width: 1.5; fill: none; stroke-dasharray: 5,5; }
+        .electron { fill: #00FFFF; filter: drop-shadow(0 0 6px #00FFFF); }
+        .prime-gap-marker { fill: #F97316; }
+        .eggshell { stroke: #4488FF; stroke-width: 1; fill: none; opacity: 0.3; }
+        #menu-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.95); 
+            z-index: 100; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        #menu-overlay.visible { display: flex; }
+        .menu-btn { 
+            background: #1A1A2E; 
+            border: 1px solid #00D4AA; 
+            color: #00D4AA; 
+            padding: 16px 48px; 
+            font-size: 18px; 
+            font-family: inherit; 
+            border-radius: 8px; 
+            min-width: 280px; 
+        }
+        .menu-btn:hover, .menu-btn:focus { background: #00D4AA; color: #0A0A0F; }
+        .menu-btn.danger { border-color: #FF4466; color: #FF4466; }
+        .menu-btn.danger:hover { background: #FF4466; color: #0A0A0F; }
+        .menu-btn.secondary { border-color: #A855F7; color: #A855F7; }
+        .menu-btn.secondary:hover { background: #A855F7; color: #0A0A0F; }
+        .menu-btn.tertiary { border-color: #4488FF; color: #4488FF; }
+        .menu-btn.tertiary:hover { background: #4488FF; color: #0A0A0F; }
+        .menu-title { font-size: 28px; color: #00D4AA; margin-bottom: 20px; }
+        .menu-subtitle { color: #8888A0; font-size: 12px; }
+        /* Prime Explorer Modal */
+        #explorer-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10,10,15,0.98); z-index: 200;
+            display: none; flex-direction: column;
+        }
+        #explorer-overlay.visible { display: flex; }
+        .explorer-header { padding: 20px; border-bottom: 1px solid #00D4AA44; }
+        .explorer-canvas { flex: 1; width: 100%; }
+        .explorer-controls { padding: 15px; display: flex; gap: 10px; justify-content: center; }
+        .explorer-btn { background: #1A1A2E; border: 1px solid #4488FF; color: #4488FF; padding: 10px 20px; border-radius: 6px; font-family: inherit; }
+        .explorer-btn:hover { background: #4488FF; color: #0A0A0F; }
+        /* Worldline History Modal */
+        #history-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10,10,15,0.98); z-index: 200;
+            display: none; flex-direction: column;
+        }
+        #history-overlay.visible { display: flex; }
+        .history-header { padding: 20px; border-bottom: 1px solid #A855F744; }
+        .history-canvas { flex: 1; width: 100%; }
+        .history-scrubber { padding: 15px; display: flex; align-items: center; gap: 15px; }
+        .history-scrubber input[type=range] { flex: 1; accent-color: #A855F7; }
+        /* Gap Analysis Modal */
+        #analysis-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10,10,15,0.98); z-index: 200;
+            display: none; flex-direction: column;
+        }
+        #analysis-overlay.visible { display: flex; }
+        .analysis-header { padding: 20px; border-bottom: 1px solid #F9731644; }
+        .analysis-canvas { flex: 1; width: 100%; }
+        /* Fleet Mode Indicator */
+        .fleet-indicator { position: absolute; top: 10px; right: 20px; z-index: 50; font-size: 11px; color: #A855F7; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="fleet-indicator" id="fleet-indicator"></div>
+    <div id="hud">
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ELECTRON WORLDLINE</div>
+            <div class="stat-row"><span class="stat-label">Position:</span><span class="stat-value" id="pos-x">0.00</span><span class="stat-value" id="pos-y">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Velocity:</span><span class="stat-value" id="vel-x">0.00</span><span class="stat-value" id="vel-y">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Reflections:</span><span class="stat-value" id="reflections">0</span></div>
+            <div class="stat-row"><span class="stat-label">Prime Gaps Crossed:</span><span class="stat-value" id="gaps-crossed">0</span></div>
+            <div class="stat-row"><span class="stat-label">Worldline Steps:</span><span class="stat-value" id="steps">0</span></div>
+            <div class="stat-row"><span class="stat-label">Mode:</span><span class="stat-value" id="mode">LIVE</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ENGINE</div>
+            <div class="stat-row"><span class="stat-label">Primes Loaded:</span><span class="stat-value" id="prime-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Gaps Available:</span><span class="stat-value" id="gap-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Current Gap:</span><span class="stat-value" id="current-gap">2</span></div>
+            <div class="stat-row"><span class="stat-label">Gap Index:</span><span class="stat-value" id="gap-index">0</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">FLEET STATUS</div>
+            <div class="stat-row"><span class="stat-label">Active Electrons:</span><span class="stat-value" id="fleet-count">1</span></div>
+            <div class="stat-row"><span class="stat-label">Fleet Mode:</span><span class="stat-value" id="fleet-mode">OFF</span></div>
+            <div class="stat-row"><span class="stat-label">Total Reflections:</span><span class="stat-value" id="fleet-reflections">0</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">THEORY OVERLAY</div>
+            <div class="stat-row"><span class="stat-label">Riemann Zeros:</span><span class="stat-value" id="riemann-active">OFF</span></div>
+            <div class="stat-row"><span class="stat-label">Prime Density:</span><span class="stat-value" id="prime-density">0</span></div>
+            <div class="stat-row"><span class="stat-label">Gap Entropy:</span><span class="stat-value" id="gap-entropy">0</span></div>
+        </div>
+    </div>
+    <div id="menu-overlay">
+        <div class="menu-title">TGE E2 MENU</div>
+        <div class="menu-subtitle">Prime Electron Worldline Emulator v2.0.0-E2</div>
+        <button class="menu-btn" onclick="TGE.resume()">RESUME</button>
+        <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
+        <button class="menu-btn secondary" onclick="TGE.showWorldlineHistory()">WORLDLINE HISTORY</button>
+        <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
+        <button class="menu-btn tertiary" onclick="TGE.toggleFleet()">TOGGLE FLEET</button>
+        <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
+    </div>
+    <!-- Prime Explorer Modal -->
+    <div id="explorer-overlay">
+        <div class="explorer-header">
+            <div class="menu-title">PRIME EXPLORER</div>
+            <div class="menu-subtitle">Navigate the Prime Gap Universe</div>
+        </div>
+        <canvas class="explorer-canvas" id="explorer-canvas"></canvas>
+        <div class="explorer-controls">
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.zoomIn()">Zoom In</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.zoomOut()">Zoom Out</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.panLeft()">Pan Left</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.panRight()">Pan Right</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.resetView()">Reset View</button>
+            <button class="explorer-btn danger" onclick="TGE.hidePrimeExplorer()">Close</button>
+        </div>
+    </div>
+    <!-- Worldline History Modal -->
+    <div id="history-overlay">
+        <div class="history-header">
+            <div class="menu-title">WORLDLINE HISTORY</div>
+            <div class="menu-subtitle">Scrub through electron's journey</div>
+        </div>
+        <canvas class="history-canvas" id="history-canvas"></canvas>
+        <div class="history-scrubber">
+            <span id="history-time">Step: 0 / 0</span>
+            <input type="range" id="history-scrubber" min="0" max="0" value="0" oninput="TGE.WorldlineHistory.scrub(this.value)">
+            <button class="explorer-btn" onclick="TGE.hideWorldlineHistory()">Close</button>
+        </div>
+    </div>
+    <!-- Gap Analysis Modal -->
+    <div id="analysis-overlay">
+        <div class="analysis-header">
+            <div class="menu-title">GAP ANALYSIS</div>
+            <div class="menu-subtitle">Statistical distribution of prime gaps</div>
+        </div>
+        <canvas class="analysis-canvas" id="analysis-canvas"></canvas>
+        <div class="explorer-controls">
+            <button class="explorer-btn" onclick="TGE.GapAnalysis.toggleLogScale()">Toggle Log Scale</button>
+            <button class="explorer-btn" onclick="TGE.GapAnalysis.showTwinPrimes()">Highlight Twins</button>
+            <button class="explorer-btn" onclick="TGE.GapAnalysis.showConjectures()">Show Conjectures</button>
+            <button class="explorer-btn danger" onclick="TGE.hideGapAnalysis()">Close</button>
+        </div>
+    </div>
