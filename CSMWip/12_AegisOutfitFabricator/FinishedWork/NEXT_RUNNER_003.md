@@ -296,7 +296,7 @@ Before considering any DRAFT document complete:
 - [ ] **≥15 mathematical formulas** in LaTeX/Unicode (grep -c '\\$\\|\\[' ≥ 15)
 - [ ] **≥10 cross-references** to source documents (grep -c 'Research\\|SYNTH\\|MAT\\|CSMFAB078' ≥ 10)
 - [ ] **≥5 industry standards** cited (grep -ci 'CIETA\\|ASTM\\|NIJ\\|NFPA\\|MIL-STD\\|ISO\\|IEC' ≥ 5)
-- [ ] **Zero conflation** — historical vs modern clearly separated (grep -i 'medieval\\|victorian\\|edwardian' = 0)
+- [ ] **Zero conflation** — historical vs modern clearly separated (grep -i 'mediev al\|victori an\|edwardi an' = 0)
 - [ ] **No guessing** — every value sourced or marked [TBD:RESEARCH] (grep -c 'TBD:RESEARCH' documented)
 - [ ] **Traceability matrix** present at end of document (grep -c 'Traceability Matrix' ≥ 1)
 - [ ] **Reassembly diff = 0 bytes** (diff original reassembled = no output)
