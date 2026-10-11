@@ -19,12 +19,3 @@ $$\mathbf{c}(u) = \begin{bmatrix} x(u) \\ y(u) \\ z(u) \end{bmatrix} = \begin{bm
 Where $u \in [0,1]$ parameterizes body height, $R(u)$ = radius at height $u$, $\theta(u)$ = angular offset for asymmetry.
 
 **Generatrix Ruling (Straight Grain Lines):**
-
-$$\mathbf{g}(u) = \frac{\mathbf{c}'(u) \times \mathbf{k}}{\|\mathbf{c}'(u) \times \mathbf{k}\|} \quad \text{(parallel to selvage)}$$
-
-Where $\mathbf{k} = [0,0,1]^T$ (vertical axis).
-
-**Developable Surface Parametrization:**
-
-$$\mathbf{r}(u,v) = \mathbf{c}(u) + v \cdot \mathbf{g}(u), \quad v \in [0, W_{\text{pattern}}]$$
-
