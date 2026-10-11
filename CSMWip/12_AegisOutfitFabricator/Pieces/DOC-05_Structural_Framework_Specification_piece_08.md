@@ -1,30 +1,20 @@
-**Equation of Motion:**
+**Deployment Energy (Spring-Assisted):**
 
-$$m_{\text{eff}} \ddot{x} + c \dot{x} + k x = F_{\text{spring}}(t) - F_{\text{friction}}$$
+$$U_{\text{spring}} = \frac{1}{2} k_{\text{tape}} (\Delta L)^2 \geq \sum m_{\text{hoop}} g \Delta h$$
 
-Target: $t_{\text{deploy}} < 5\text{ s}$, overshoot $< 10\%$.
-
-**Damping Ratio:** $\zeta = 0.7$ (critical damping for smooth deployment).
-
-### 4.3 Locking Mechanisms
-
-**Friction Catch (Historical: Hook-and-Eye):**
-
-$$F_{\text{hold}} = \mu_s N \geq 1.5 \cdot F_{\text{deploy}}$$
-
-$\mu_s = 0.4$ (steel-on-steel), $N = 200\text{ N}$ (preload).
-
-**Magnetic Latch (Modern: Ti₃AlC₂ Cleats):**
-
-$$F_{\text{mag}} = \frac{B^2 A}{2\mu_0} \quad B = 0.8\text{ T}, \quad A = 25\text{ mm}^2 \Rightarrow F_{\text{mag}} = 64\text{ N}$$
+$k_{\text{tape}} = 50\text{ N/m}$ (Dyneema-silk tape), $\Delta L = 0.8\text{ m}$.
 
 ---
 
-## 5. Ceramic Tile Chassis Integration (from MAT-03 §3.1, CSMFAB078 Main §4.2)
+## 3. LES 12-Zone Tension Calibration (from CSMFAB078-A §3.3, MAT-04 §5.1, CSMFAB078 Main §4.5)
 
-### 5.1 Magnetic Edge Alignment
+### 3.1 Zone Definitions & Base Tensions
 
-**Halbach Array Configuration (Per Tile):**
-
-$$\mathbf{B}(x,y,z) = B_0 \exp(-z/\lambda) [\cos(2\pi x/\Lambda), \sin(2\pi x/\Lambda), 0]$$
-
+| Zone | Anatomical Location | RM Base (N) | RW Base (N) | LES Channel | Historical Lacing |
+|------|---------------------|-------------|-------------|-------------|-------------------|
+| Z1 | Shoulder apex | 55 | 50 | Shoulder strap | Sleeve head |
+| Z2 | Scapular spine | 60 | 55 | Back channel | Watteau back |
+| Z3 | Thoracic spine | 65 | 60 | Center back stay | Stay busk |
+| Z4 | Lumbar | 70 | 65 | Waist channel | Waist lacing |
+| Z5 | Iliac crest | 65 | 60 | Hip channel | Farthingale tape |
+| Z6 | Ant. sup. iliac | 60 | 55 | Pannier suspend | Pannier tape |
