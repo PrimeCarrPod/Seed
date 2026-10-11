@@ -1,0 +1,76 @@
+<script>
+        const TGE = {
+            canvas: null, ctx: null, width: 0, height: 0,
+            electron: { x: 0, y: 0, vx: 0, vy: 0, radius: 4 },
+            electrons: [],  // Fleet mode: multiple electrons
+            worldline: [], reflections: 0, steps: 0,
+            eggshell: { cx: 0, cy: 0, rx: 0, ry: 0, rotation: 0 },
+            primeGaps: [], primeGapIndex: 0, gapsCrossed: 0,
+            theoryMode: false, running: true, animationId: null,
+            insetsTop: 0, insetsBottom: 0,
+            menuVisible: false,
+            fleetMode: false,
+            fleetCount: 1,
+            
+            // Prime Explorer state
+            PrimeExplorer: {
+                active: false,
+                zoom: 1.0,
+                panX: 0,
+                panY: 0,
+                selectedGap: -1
+            },
+            
+            // Worldline History state
+            WorldlineHistory: {
+                active: false,
+                scrubIndex: 0,
+                maxHistory: 5000
+            },
+            
+            // Gap Analysis state
+            GapAnalysis: {
+                active: false,
+                logScale: false,
+                showTwins: false,
+                showConjectures: false
+            },
+
+            init() {
+                this.canvas = document.getElementById('canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+                this.setupEggshell();
+                this.initFleet();
+                this.startLoop();
+            },
+            
+            resize() {
+                this.width = window.innerWidth;
+                this.height = window.innerHeight;
+                this.canvas.width = this.width;
+                this.canvas.height = this.height;
+                this.electron.x = this.width / 2;
+                this.electron.y = this.height / 2;
+                this.setupEggshell();
+                // Resize fleet electrons
+                this.electrons.forEach((e, i) => {
+                    if (i === 0) return; // Main electron already centered
+                    e.x = this.width / 2 + (Math.random() - 0.5) * 20;
+                    e.y = this.height / 2 + (Math.random() - 0.5) * 20;
+                });
+            },
+            
+            setupEggshell() {
+                const padding = 40;
+                this.eggshell.cx = this.width / 2;
+                this.eggshell.cy = this.height / 2;
+                this.eggshell.rx = Math.min(this.width, this.height) / 2 - padding;
+                this.eggshell.ry = this.eggshell.rx * 0.75;
+            },
+            
+            setInsets(top, bottom) {
+                this.insetsTop = top;
+                this.insetsBottom = bottom;
+            },

@@ -1,0 +1,63 @@
+drawReflectionCircles() {
+                for (let i = Math.max(0, this.worldline.length - 10); i < this.worldline.length; i++) {
+                    const pt = this.worldline[i];
+                    const alpha = (i - (this.worldline.length - 10)) / 10 * 0.5;
+                    this.ctx.beginPath();
+                    this.ctx.arc(pt.x, pt.y, 8 + (this.steps - pt.t) * 0.5, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = `rgba(255, 102, 0, ${alpha})`;
+                    this.ctx.lineWidth = 1.5;
+                    this.ctx.stroke();
+                }
+            },
+            
+            // Theory Mode: Riemann Zeros visualization
+            drawRiemannZeros() {
+                if (!this.theoryMode) return;
+                // Draw critical line Re(s) = 1/2 as vertical reference
+                this.ctx.save();
+                this.ctx.strokeStyle = '#A855F744';
+                this.ctx.lineWidth = 1;
+                this.ctx.setLineDash([5, 5]);
+                const cx = this.eggshell.cx;
+                this.ctx.beginPath();
+                this.ctx.moveTo(cx, 0);
+                this.ctx.lineTo(cx, this.height);
+                this.ctx.stroke();
+                this.ctx.setLineDash([]);
+                
+                // Riemann zero markers on critical line (first few zeros)
+                const riemannZeros = [14.135, 21.022, 25.011, 30.425, 32.935, 37.586, 40.919, 43.327, 48.005, 49.774];
+                riemannZeros.forEach((zero, i) => {
+                    const y = this.eggshell.cy - (zero / 50) * this.eggshell.ry;
+                    if (y > 0 && y < this.height) {
+                        this.ctx.beginPath();
+                        this.ctx.arc(cx, y, 4, 0, Math.PI * 2);
+                        this.ctx.fillStyle = '#A855F7';
+                        this.ctx.fill();
+                        this.ctx.font = '8px monospace';
+                        this.ctx.fillText(`ρ${i+1}`, cx + 8, y + 3);
+                    }
+                });
+                this.ctx.restore();
+            },
+            
+            // Theory Mode: Prime Density visualization
+            drawPrimeDensity() {
+                if (!this.theoryMode) return;
+                // Prime number theorem: π(x) ~ x/log(x)
+                // Visualize as radial density
+                this.ctx.save();
+                this.ctx.globalAlpha = 0.15;
+                for (let r = 10; r < this.eggshell.rx; r += 10) {
+                    const x = r / this.eggshell.rx * 1000; // scale
+                    const density = x / Math.log(Math.max(2, x));
+                    const normalized = Math.min(1, density / 200);
+                    this.ctx.beginPath();
+                    this.ctx.ellipse(this.eggshell.cx, this.eggshell.cy, r, r * 0.75, 0, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = `rgba(0, 212, 170, ${normalized})`;
+                    this.ctx.lineWidth = 0.5;
+                    this.ctx.stroke();
+                }
+                this.ctx.globalAlpha = 1;
+                this.ctx.restore();
+            },

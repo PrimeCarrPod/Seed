@@ -1,0 +1,145 @@
+// Worldline History Module
+            WorldlineHistory: {
+                active: false,
+                scrubIndex: 0,
+                maxHistory: 5000,
+                canvas: null,
+                ctx: null,
+                playbackSpeed: 1,
+                isPlaying: false,
+                
+                init() {
+                    this.canvas = document.getElementById('history-canvas');
+                    this.ctx = this.canvas.getContext('2d');
+                    this.resize();
+                },
+                
+                resize() {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight - 100;
+                },
+                
+                show() {
+                    this.active = true;
+                    document.getElementById('history-overlay').classList.add('visible');
+                    this.resize();
+                    this.updateScrubber();
+                    this.render();
+                },
+                
+                hide() {
+                    this.active = false;
+                    this.isPlaying = false;
+                    document.getElementById('history-overlay').classList.remove('visible');
+                },
+                
+                scrub(index) {
+                    this.scrubIndex = Math.max(0, Math.min(index, TGE.worldline.length - 1));
+                    this.updateScrubber();
+                    this.render();
+                },
+                
+                updateScrubber() {
+                    const scrubber = document.getElementById('history-scrubber');
+                    const timeDisplay = document.getElementById('history-time');
+                    if (scrubber) {
+                        scrubber.max = Math.max(0, TGE.worldline.length - 1);
+                        scrubber.value = this.scrubIndex;
+                    }
+                    if (timeDisplay) {
+                        timeDisplay.textContent = `Step: ${this.scrubIndex} / ${Math.max(0, TGE.worldline.length - 1)}`;
+                    }
+                },
+                
+                togglePlay() {
+                    this.isPlaying = !this.isPlaying;
+                    if (this.isPlaying) this.play();
+                },
+                
+                play() {
+                    if (!this.isPlaying) return;
+                    this.scrubIndex = Math.min(this.scrubIndex + this.playbackSpeed, TGE.worldline.length - 1);
+                    this.updateScrubber();
+                    this.render();
+                    if (this.scrubIndex < TGE.worldline.length - 1) {
+                        requestAnimationFrame(() => this.play());
+                    } else {
+                        this.isPlaying = false;
+                    }
+                },
+                
+                render() {
+                    if (!this.active) return;
+                    const ctx = this.ctx;
+                    const w = this.canvas.width;
+                    const h = this.canvas.height;
+                    const history = TGE.worldline;
+                    
+                    ctx.fillStyle = '#0A0A0F';
+                    ctx.fillRect(0, 0, w, h);
+                    
+                    if (history.length < 2) return;
+                    
+                    // Draw full worldline faintly
+                    ctx.beginPath();
+                    ctx.moveTo(history[0].x, history[0].y);
+                    for (let i = 1; i < history.length; i++) {
+                        ctx.lineTo(history[i].x, history[i].y);
+                    }
+                    const gradient = ctx.createLinearGradient(
+                        history[0].x, history[0].y,
+                        history[history.length-1].x, history[history.length-1].y
+                    );
+                    gradient.addColorStop(0, '#00D4AA11');
+                    gradient.addColorStop(1, '#00D4AA44');
+                    ctx.strokeStyle = gradient;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                    
+                    // Draw up to scrub index brightly
+                    if (this.scrubIndex > 1) {
+                        ctx.beginPath();
+                        ctx.moveTo(history[0].x, history[0].y);
+                        for (let i = 1; i <= this.scrubIndex; i++) {
+                            ctx.lineTo(history[i].x, history[i].y);
+                        }
+                        const brightGradient = ctx.createLinearGradient(
+                            history[0].x, history[0].y,
+                            history[this.scrubIndex].x, history[this.scrubIndex].y
+                        );
+                        brightGradient.addColorStop(0, '#00D4AA44');
+                        brightGradient.addColorStop(1, '#00D4AA');
+                        ctx.strokeStyle = brightGradient;
+                        ctx.lineWidth = 3;
+                        ctx.stroke();
+                    }
+                    
+                    // Draw current position marker
+                    if (this.scrubIndex < history.length) {
+                        const pt = history[this.scrubIndex];
+                        ctx.beginPath();
+                        ctx.arc(pt.x, pt.y, 8, 0, Math.PI * 2);
+                        ctx.fillStyle = '#00FFFF';
+                        ctx.shadowColor = '#00FFFF';
+                        ctx.shadowBlur = 15;
+                        ctx.fill();
+                        ctx.shadowBlur = 0;
+                        
+                        // Info
+                        ctx.fillStyle = '#00D4AA';
+                        ctx.font = '14px monospace';
+                        ctx.textAlign = 'left';
+                        ctx.fillText(`Step: ${pt.t}`, 20, 30);
+                        ctx.fillText(`Position: (${pt.x.toFixed(1)}, ${pt.y.toFixed(1)})`, 20, 50);
+                        ctx.fillText(`Progress: ${((this.scrubIndex / history.length) * 100).toFixed(1)}%`, 20, 70);
+                    }
+                    
+                    // Eggshell reference
+                    const e = TGE.eggshell;
+                    ctx.beginPath();
+                    ctx.ellipse(e.cx, e.cy, e.rx, e.ry, 0, 0, Math.PI * 2);
+                    ctx.strokeStyle = '#4488FF44';
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            },

@@ -1,0 +1,41 @@
+checkPrimeGaps() {
+                if (this.primeGaps.length === 0) return;
+                const e = this.electrons[0]; // Main electron
+                const distFromCenter = Math.sqrt(
+                    Math.pow((e.x - this.eggshell.cx) / this.eggshell.rx, 2) +
+                    Math.pow((e.y - this.eggshell.cy) / this.eggshell.ry, 2)
+                );
+                const gapThreshold = this.primeGaps[this.primeGapIndex] / 100;
+                if (distFromCenter > gapThreshold && this.primeGapIndex < this.primeGaps.length - 1) {
+                    this.primeGapIndex++;
+                    this.gapsCrossed++;
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onPrimeGapEvent(JSON.stringify({
+                            gap: this.primeGaps[this.primeGapIndex],
+                            index: this.primeGapIndex,
+                            totalCrossed: this.gapsCrossed
+                        }));
+                    }
+                }
+            },
+            
+            updateHUD() {
+                const e = this.electrons[0];
+                document.getElementById('pos-x').textContent = e.x.toFixed(1);
+                document.getElementById('pos-y').textContent = e.y.toFixed(1);
+                document.getElementById('vel-x').textContent = e.vx.toFixed(2);
+                document.getElementById('vel-y').textContent = e.vy.toFixed(2);
+                document.getElementById('reflections').textContent = this.reflections;
+                document.getElementById('gaps-crossed').textContent = this.gapsCrossed;
+                document.getElementById('steps').textContent = this.steps;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+                document.getElementById('gap-index').textContent = this.primeGapIndex;
+                document.getElementById('current-gap').textContent = this.primeGaps[this.primeGapIndex] || 0;
+                document.getElementById('fleet-count').textContent = this.electrons.length;
+                document.getElementById('fleet-mode').textContent = this.fleetMode ? 'ON' : 'OFF';
+                
+                // Fleet total reflections
+                let fleetReflections = this.reflections;
+                this.electrons.forEach((e, i) => { if (i > 0) fleetReflections += e.reflections || 0; });
+                document.getElementById('fleet-reflections').textContent = fleetReflections;
+            },

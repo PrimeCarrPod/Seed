@@ -1,0 +1,144 @@
+// Gap Analysis Module
+            GapAnalysis: {
+                active: false,
+                logScale: false,
+                showTwins: false,
+                showConjectures: false,
+                canvas: null,
+                ctx: null,
+                
+                init() {
+                    this.canvas = document.getElementById('analysis-canvas');
+                    this.ctx = this.canvas.getContext('2d');
+                    this.resize();
+                },
+                
+                resize() {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight - 120;
+                },
+                
+                show() {
+                    this.active = true;
+                    document.getElementById('analysis-overlay').classList.add('visible');
+                    this.resize();
+                    this.render();
+                },
+                
+                hide() {
+                    this.active = false;
+                    document.getElementById('analysis-overlay').classList.remove('visible');
+                },
+                
+                toggleLogScale() { this.logScale = !this.logScale; this.render(); },
+                toggleTwins() { this.showTwins = !this.showTwins; this.render(); },
+                toggleConjectures() { this.showConjectures = !this.showConjectures; this.render(); },
+                
+                render() {
+                    if (!this.active) return;
+                    const ctx = this.ctx;
+                    const w = this.canvas.width;
+                    const h = this.canvas.height;
+                    const gaps = TGE.primeGaps;
+                    
+                    ctx.fillStyle = '#0A0A0F';
+                    ctx.fillRect(0, 0, w, h);
+                    
+                    if (gaps.length === 0) return;
+                    
+                    // Compute histogram
+                    const maxGap = Math.max(...gaps);
+                    const binCount = Math.min(100, maxGap);
+                    const bins = new Array(binCount).fill(0);
+                    gaps.forEach(g => { if (g < binCount) bins[g]++; });
+                    
+                    const maxBin = Math.max(...bins);
+                    const barWidth = (w - 100) / binCount;
+                    
+                    // Draw histogram
+                    bins.forEach((count, gap) => {
+                        if (count === 0) return;
+                        const x = 50 + gap * barWidth;
+                        const height = this.logScale 
+                            ? (Math.log(count + 1) / Math.log(maxBin + 1)) * (h - 100)
+                            : (count / maxBin) * (h - 100);
+                        
+                        const isTwin = (gap === 2);
+                        ctx.beginPath();
+                        ctx.rect(x, h - 50 - height, Math.max(1, barWidth - 1), height);
+                        if (isTwin && this.showTwins) {
+                            ctx.fillStyle = '#FF4466';
+                        } else {
+                            ctx.fillStyle = this.logScale ? '#4488FF' : '#F97316';
+                        }
+                        ctx.fill();
+                    });
+                    
+                    // Axes
+                    ctx.strokeStyle = '#00D4AA44';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(50, h - 50);
+                    ctx.lineTo(w - 50, h - 50);
+                    ctx.moveTo(50, h - 50);
+                    ctx.lineTo(50, 50);
+                    ctx.stroke();
+                    
+                    // Labels
+                    ctx.fillStyle = '#8888A0';
+                    ctx.font = '10px monospace';
+                    ctx.textAlign = 'center';
+                    for (let i = 0; i <= 10; i++) {
+                        const gap = Math.floor(i * maxGap / 10);
+                        const x = 50 + i * (w - 100) / 10;
+                        ctx.fillText(gap.toString(), x, h - 30);
+                    }
+                    
+                    // Conjecture lines
+                    if (this.showConjectures) {
+                        // Cramér's conjecture: gaps ~ O(log^2 p)
+                        ctx.strokeStyle = '#A855F788';
+                        ctx.lineWidth = 2;
+                        ctx.setLineDash([10, 5]);
+                        ctx.beginPath();
+                        for (let i = 0; i < binCount; i++) {
+                            const p = i * 100; // approximate prime
+                            const cramer = Math.log(p) * Math.log(p);
+                            const x = 50 + i * barWidth;
+                            const y = h - 50 - Math.min(h - 100, (cramer / maxBin) * (h - 100));
+                            if (i === 0) ctx.moveTo(x, y);
+                            else ctx.lineTo(x, y);
+                        }
+                        ctx.stroke();
+                        ctx.setLineDash([]);
+                        
+                        // Label
+                        ctx.fillStyle = '#A855F7';
+                        ctx.font = '11px monospace';
+                        ctx.fillText("Cramér: log²(p)", w - 120, 40);
+                    }
+                    
+                    // Stats panel
+                    const twinCount = gaps.filter(g => g === 2).length;
+                    const avgGap = gaps.reduce((a, b) => a + b, 0) / gaps.length;
+                    const maxGapFound = maxGap;
+                    
+                    ctx.fillStyle = '#1A1A2E';
+                    ctx.fillRect(10, 10, 350, 140);
+                    ctx.strokeStyle = '#F97316';
+                    ctx.lineWidth = 1;
+                    ctx.strokeRect(10, 10, 350, 140);
+                    
+                    ctx.fillStyle = '#F97316';
+                    ctx.font = '14px monospace';
+                    ctx.fillText('GAP ANALYSIS', 20, 35);
+                    ctx.fillStyle = '#E8E8F0';
+                    ctx.font = '11px monospace';
+                    ctx.fillText(`Total Gaps Analyzed: ${gaps.length}`, 20, 55);
+                    ctx.fillText(`Average Gap: ${avgGap.toFixed(2)}`, 20, 70);
+                    ctx.fillText(`Max Gap: ${maxGapFound}`, 20, 85);
+                    ctx.fillText(`Twin Prime Gaps (2): ${twinCount}`, 20, 100);
+                    ctx.fillText(`Twin Ratio: ${(twinCount / gaps.length * 100).toFixed(2)}%`, 20, 115);
+                    ctx.fillText(`Log Scale: ${this.logScale ? 'ON' : 'OFF'} | Twins: ${this.showTwins ? 'ON' : 'OFF'} | Conjectures: ${this.showConjectures ? 'ON' : 'OFF'}`, 20, 130);
+                }
+            },

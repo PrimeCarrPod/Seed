@@ -1,0 +1,18 @@
+<resources>
+    <color name="prime_void">#0A0A0F</color>
+    <color name="prime_surface">#1A1A2E</color>
+    <color name="prime_text">#E8E8F0</color>
+    <color name="prime_teal">#00D4AA</color>
+    <color name="prime_teal_dark">#00A888</color>
+    <color name="prime_orange">#FF6600</color>
+    <color name="prime_orange_dark">#CC5200</color>
+    <color name="prime_gap_blue">#4488FF</color>
+    <color name="prime_gap_purple">#A855F7</color>
+    <color name="prime_gap_green">#10B981</color>
+    <color name="prime_gap_red">#FF4466</color>
+    <color name="prime_gap_gold">#F97316</color>
+    <color name="prime_reflection_silver">#E5E5F0</color>
+    <color name="prime_worldline_cyan">#00FFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
