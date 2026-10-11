@@ -1,37 +1,30 @@
-Target deployment time: t_deploy < 5 seconds
-Angular acceleration: α = θ / (½ t²) = π / (0.5 × 5²) ≈ 0.25 rad/s²
-Torque required: τ = I_hoop · α
-I_hoop ≈ m·r²/2 (thin hoop), m ≈ 0.2 kg, r = 0.64m
-I_hoop ≈ 0.04 kg·m²
-τ ≈ 0.04 × 0.25 = 0.01 N·m (easily achieved by spring energy)
+**Zone-Edition Interaction $\beta_{z,e}$ (Sample):**
 
-Locking mechanism options:
-1. Friction catch: Cam lever at waistband, μ = 0.3, engages at θ = π
-2. Magnetic latch: NdFeB N52 (8×3mm) at hoop joints, F_mag ≈ 50 N
-3. Spring pin: Detent at waistband, engages at full extension
-```
+| Zone | RM-TS | RM-TG | RW-TS | RW-TG |
+|------|-------|-------|-------|-------|
+| Z1 | 1.00 | 1.05 | 0.95 | 1.00 |
+| Z4 | 0.95 | 1.10 | 0.90 | 1.05 |
+| Z5 | 1.00 | 1.08 | 0.95 | 1.03 |
 
-*Traceability: Research Doc 1 §5.3; DRAFT-04 §2-4; MAT-02 §4; SYNTH-03 §5; CSMFAB078 §3.3*
+### 3.3 Moment Balance Constraint
+
+$$\sum_{z=1}^{12} T_z \cdot \mathbf{r}_z \times \mathbf{n}_z = \mathbf{0} \quad \text{(Static equilibrium)}$$
+
+Where $\mathbf{r}_z$ = position vector of zone $z$, $\mathbf{n}_z$ = normal direction.
 
 ---
 
-## 3. LES 12-Zone Tension Calibration
+## 4. Deployment & Locking (from CSMFAB078 Main §4.7, CSMFAB078-A §3.4, DRAFT-04 §3.3)
 
-### 3.1 Zone Definitions (from CSMFAB078-A §3.3)
+### 4.1 Spring Energy Storage
 
-**Zone Map to Historical Lacing Points**:
-```
-Zone 1-2: Shoulder/Chest (scapular motion, respiratory expansion)
-  RM: Justacorps shoulder seam, waistcoat armhole
-  RW: Stays shoulder straps, gown armhole
+**LES Deployment Springs (Z5, Z6):**
 
-Zone 3-4: Upper Torso (chest/bust expansion)
-  RM: Waistcoat chest, justacorps chest
-  RW: Stays bust line, gown bust
+$$U_{\text{stored}} = \sum_{z \in \{5,6\}} \frac{1}{2} k_z (\Delta x_z)^2$$
 
-Zone 5-6: Waist/Core (core stability, sitting)
-  RM: Breeches waist, justacorps waist
-  RW: Stays waist, farthingale waistband
+$k_z = 200\text{ N/m}$ (per zone), $\Delta x_z = 0.15\text{ m}$ (pre-compression).
 
-Zone 7-8: Hips/Pelvis (walking stride, sitting)
-  RM: Breeches hip, justacorps skirt
+**Total Deployment Energy:** $U_{\text{total}} \approx 4.5\text{ J}$ per side.
+
+### 4.2 Deployment Dynamics
+
