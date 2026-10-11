@@ -1,37 +1,30 @@
-For RW-TG: W=8kg, N=16, L=1000mm → w = 4.9 N/m
-Target sag at mid-span: δ = a·cosh(L/2a) - a ≈ 50mm
-Solving: a ≈ L²/(8δ) = 1²/(8×0.05) = 2.5m
-H = a·w = 2.5 × 4.9 ≈ 12.25 N
-```
+### 3.1 Zone Definitions & Base Tensions
 
-**Tension Distribution** (DRAFT-04 §3):
-```
-At waistband (x=0): T_waist = H·cosh(L/2a) ≈ 12.25 × cosh(0.2) ≈ 12.5 N
-At hem (x=L/2): T_hem = H = 12.25 N
-Max tension variation: <3% (nearly uniform)
+| Zone | Anatomical Location | RM Base (N) | RW Base (N) | LES Channel | Historical Lacing |
+|------|---------------------|-------------|-------------|-------------|-------------------|
+| Z1 | Shoulder apex | 55 | 50 | Shoulder strap | Sleeve head |
+| Z2 | Scapular spine | 60 | 55 | Back channel | Watteau back |
+| Z3 | Thoracic spine | 65 | 60 | Center back stay | Stay busk |
+| Z4 | Lumbar | 70 | 65 | Waist channel | Waist lacing |
+| Z5 | Iliac crest | 65 | 60 | Hip channel | Farthingale tape |
+| Z6 | Ant. sup. iliac | 60 | 55 | Pannier suspend | Pannier tape |
+| Z7 | Sternum | 50 | 45 | Front busk | Front lacing |
+| Z8 | Costal margin | 55 | 50 | Lower front | Lower lacing |
+| Z9 | Axillary | 45 | 40 | Side gore | Side lacing |
+| Z10 | Cervical | 40 | 35 | Collar/coif | Coif tie |
+| Z11 | Occipital | 35 | 30 | Hood/coif | Hood draw |
+| Z12 | Distal sleeve | 30 | 25 | Cuff | Cuff lacing |
 
-Friction at waistband: μ ≈ 0.3 (cotton on silk)
-Effective tension reduction: T_eff = T_waist · e^(-μ·θ)
-θ = wrap angle ≈ π/2 → T_eff ≈ 12.5 × e^(-0.3×1.57) ≈ 7.9 N
-```
+### 3.2 Edition-Specific Calibration
 
-### 2.3 Deployment Kinematics & Locking
+$$T_{z,e} = T_{z,\text{base}} \cdot \left(1 + \alpha_e \cdot \frac{M_e - M_{\text{ref}}}{M_{\text{ref}}}\right) \cdot \beta_{z,e}$$
 
-**Spring Energy Storage** (DRAFT-04 §4):
-```
-Hoop material: Spring steel 17-7 PH, E = 200 GPa
-Collapsed radius: r_collapsed ≈ 25mm (storage)
-Expanded radius: r_expanded = a_i (per edition)
+**Morphology Factors $\alpha_e$:**
 
-Strain energy per hoop: U = ½·k·x²
-Bending stiffness: k = E·I / L³ (L = hoop length)
-For hoop 4 (RW-TG): I = I_x = 1.52×10⁻² m⁴, L = 3.5m
-k ≈ 200×10⁹ × 1.52×10⁻² / 3.5³ ≈ 7.1×10⁵ N·m/rad
+| Edition | $\alpha_e$ | $M_e/M_{\text{ref}}$ |
+|---------|------------|---------------------|
+| RM-TS | -0.08 | 0.92 |
+| RM-TG | +0.15 | 1.15 |
+| RM-SS | -0.08 | 0.92 |
+| RM-SG | +0.15 | 1.15 |
 
-Deployment angle: θ = π (180° unfurling)
-U = ½ × 7.1×10⁵ × π² ≈ 3.5 J per hoop
-Total (5 hoops): U_total ≈ 17.5 J
-```
-
-**Deployment Dynamics** (DRAFT-04 §4):
-```
