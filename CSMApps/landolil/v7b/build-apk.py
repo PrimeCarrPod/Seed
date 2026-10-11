@@ -25,8 +25,8 @@ GEN_DIR = os.path.join(SCRIPT_DIR, "gen")
 OBJ_DIR = os.path.join(SCRIPT_DIR, "obj")
 OUT_DIR = os.path.join(SCRIPT_DIR, "out")
 
-R8_JAR = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/android-sdk/cmdline-tools/latest/lib/r8.jar"
-STUB_JAR = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/stub-android/android.jar"
+R8_JAR = os.path.join(SCRIPT_DIR, "..", "..", "..", ".sdk", "android-sdk", "cmdline-tools", "latest", "lib", "r8.jar")
+STUB_JAR = os.path.join(SCRIPT_DIR, "..", "..", "..", ".sdk", "android-sdk", "platforms", "android-35", "android.jar")
 KEYSTORE = os.path.join(SCRIPT_DIR, "debug.keystore")
 KEYSTORE_PASS = os.environ.get("ANDROID_KEYSTORE_PASS", "android")
 KEY_ALIAS = "androiddebugkey"
@@ -279,7 +279,7 @@ def main():
     print("=" * 60)
     
     # Copy to repo root
-    root_apk = os.path.join(SCRIPT_DIR, "..", "..", "..", "..", f"{VERSION_PREFIX}-v{VERSION_NAME}.apk")
+    root_apk = os.path.join(SCRIPT_DIR, "..", "..", "..", f"{VERSION_PREFIX}-v{VERSION_NAME}.apk")
     shutil.copy(final_apk, root_apk)
     print(f"  Copied to repo root: {root_apk}")
     
