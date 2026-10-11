@@ -1,572 +1,356 @@
 # DOC-04: Geometric Pattern System
-## AegisOutfitFabricator Core Document 4
+**Project:** AegisOutfitFabricator — Historical Renaissance Protective Outfit Fabrication System  
+**Document ID:** DOC-04  
+**Version:** 1.0  
+**Classification:** Core Document Batch 1  
+**Dependencies:** DRAFT-01, DRAFT-02, DRAFT-03, DRAFT-04, DRAFT-05, SYNTH-01, CSMFAB078-A, MAT-02, Research Doc 1, CSMFAB078 Main  
+**Status:** AUTHORED — Pipeline Pending  
 
 ---
 
-## 1. Developable Surface Engine (from DRAFT-01)
+## 1. Developable Surface Engine (from DRAFT-01, SYNTH-01 §3.1, Research Doc 1 §4.1, CSMFAB078 Main §5.1)
 
-### 1.1 Convolute Surface Mathematics
+### 1.1 Convolute Surface Generation
 
-**Historical Foundation** (Research Doc 1 §4.1; DRAFT-01 §2):
-Juan de Alcega's 1589 *Libro de Geometría, Práctica y Traça* establishes pattern drafting as **developable surface construction** — surfaces of zero Gaussian curvature that can be flattened without distortion.
+**Directrix Curve Definition (Body Silhouette Cross-Sections):**
 
-**Directrix Curve Definition** (DRAFT-01 §1.1; SYNTH-03 §1.1):
-```
-Body landmarks → parametric curves:
-D₁(u) = (x₁(u), y₁(u), z₁(u))  u ∈ [0,1]  (e.g., center front)
-D₂(u) = (x₂(u), y₂(u), z₂(u))  u ∈ [0,1]  (e.g., side seam)
-D₃(u) = (x₃(u), y₃(u), z₃(u))  u ∈ [0,1]  (e.g., center back)
+$$\mathbf{c}(u) = \begin{bmatrix} x(u) \\ y(u) \\ z(u) \end{bmatrix} = \begin{bmatrix} R(u) \cos\theta(u) \\ R(u) \sin\theta(u) \\ z(u) \end{bmatrix}$$
 
-Landmarks: neck point, bust point, waist, hip, hem
-Spline interpolation: cubic B-spline through landmarks
-```
+Where $u \in [0,1]$ parameterizes body height, $R(u)$ = radius at height $u$, $\theta(u)$ = angular offset for asymmetry.
 
-**Generatrix Ruling Construction** (DRAFT-01 §1.2; SYNTH-03 §1.2):
-```
-Developable surface: S(u,v) = D₁(u) + v · (D₂(u) - D₁(u)) / |D₂(u) - D₁(u)|
-  u ∈ [0,1] = parameter along body length (directrix)
-  v ∈ [0,1] = ruling parameter (generatrix)
-  
-Developable condition: Gaussian curvature K = 0
-∂²S/∂u² · (∂S/∂u × ∂S/∂v) = 0  (tangent plane constant along ruling)
-```
+**Generatrix Ruling (Straight Grain Lines):**
 
-**Osculating Circle Tangent for Bodice Suppression** (DRAFT-01 §1.3; SYNTH-03 §1.3):
-```
-At waist level u_w, the suppression curve follows zero-curvature direction:
-R(u_w) = |D''(u_w)| / |D'(u_w) × D''(u_w)|  (osculating circle radius)
-Suppression depth d = R - √(R² - (w/2)²)
-Where w = pattern piece width at waist
-```
+$$\mathbf{g}(u) = \frac{\mathbf{c}'(u) \times \mathbf{k}}{\|\mathbf{c}'(u) \times \mathbf{k}\|} \quad \text{(parallel to selvage)}$$
 
-### 1.2 Coordinate Transformation Pipeline
+Where $\mathbf{k} = [0,0,1]^T$ (vertical axis).
 
-**3D Body Scan → 2D Pattern Pieces** (DRAFT-01 §1.3):
-```
-Pipeline stages:
-1. Anthropometric extraction: 50+ landmarks from 3D scan
-2. Directrix construction: spline through landmark chains
-3. Generatrix distribution: equal-angle or equal-spacing
-4. Developable mapping: S(u,v) → flat (u,v) domain
-5. Seam placement: at ruling intersections
-6. Grain line: align with warp direction (∂S/∂u)
-```
+**Developable Surface Parametrization:**
 
-**Metric Preservation in Unfolding** (SYNTH-03 §1.3):
-```
-First fundamental form: I = E du² + 2F du dv + G dv²
-E = |∂S/∂u|², F = ∂S/∂u · ∂S/∂v, G = |∂S/∂v|²
+$$\mathbf{r}(u,v) = \mathbf{c}(u) + v \cdot \mathbf{g}(u), \quad v \in [0, W_{\text{pattern}}]$$
 
-For developable: F = 0 (orthogonal rulings), G = 1 (unit rulings)
-Flat metric: I_flat = E du² + dv²
-Area preservation: √(EG - F²) = √E
-Distortion measure: η = |√E - 1| (target η < 0.05)
-```
+**Gaussian Curvature Constraint (Developability):**
+
+$$K = \kappa_1 \kappa_2 = 0 \quad \Rightarrow \quad \det(\mathbf{r}_{uu} \cdot \mathbf{r}_v, \mathbf{r}_u \cdot \mathbf{r}_{uv}, \mathbf{r}_v \cdot \mathbf{r}_{vv}) = 0$$
+
+### 1.2 Alcega Unfolding Algorithm
+
+**Step 1: Principal Curvature Line Tracing**
+
+$$\frac{du}{dv} = \pm \sqrt{\frac{E}{G}} \quad \text{(lines of curvature on developable surface)}$$
+
+**Step 2: Geodesic Parallel Transport**
+
+$$\frac{D\mathbf{g}}{ds} = 0 \quad \text{along directrix} \quad \Rightarrow \quad \mathbf{g}(u) = \mathcal{P}_{0 \rightarrow u}(\mathbf{g}_0)$$
+
+**Step 3: Planar Development (Unfolding)**
+
+$$\mathbf{r}_{\text{flat}}(u,v) = \int_0^u \|\mathbf{c}'(s)\| ds \cdot \mathbf{e}_x + v \cdot \mathbf{e}_y$$
+
+**Step 4: Loom Width Constraint (Alcega 560mm Standard)**
+
+$$\text{If } W_{\text{pattern}} > 560\text{ mm}: \text{ Split along ruling lines, add seam allowance}$$
 
 ### 1.3 DXF/SVG Output Specification
 
-**Layer Structure** (DRAFT-01 §1.4):
-```
-Layers:
-- CUT:     Continuous lines, 0.25mm weight, red (#FF0000)
-- FOLD:    Dashed lines (2mm/1mm), 0.18mm weight, blue (#0000FF)
-- NOTCH:   V-notches 3mm × 1.5mm, green (#00FF00)
-- GRAINLINE: Double arrow, 0.18mm weight, magenta (#FF00FF)
-- LABEL:   Text annotations, 2.5mm height, black (#000000)
-- SEAM_ALLOWANCE: Offset construction lines, 0.10mm weight, gray (#808080)
-```
+**DXF Entity Structure:**
+- POLYLINE for pattern outline (closed)
+- SPLINE for curved seams (Watteau back, cartridge pleats)
+- HATCH for grain direction indicator
+- TEXT for piece ID, edition, grain line, notch marks
 
-**Units & Precision** (DRAFT-01 §1.4):
-```
-Units: millimeters (mm)
-Precision: 0.01 mm (2 decimal places)
-Coordinate system: Origin at pattern piece centroid
-Seam allowance: 13mm default (Ssa-1 per ASTM D1683), configurable per MAT-04
-```
-
-### 1.4 Cutting Layout Optimizer
-
-**Rectangular Packing on 560mm Width** (DRAFT-01 §1.5; DRAFT-05 §3):
-```
-Container: 560mm (warp) × L (weft, variable)
-Pieces: N polygons with grain direction constraint
-Constraints:
-- Grain alignment: piece warp ∥ container warp
-- Seam allowance: 13mm offset on all edges
-- Notches: 3mm clearance
-- Pattern matching: ±2mm alignment for repeating motifs
-
-Objective: Minimize L → Maximize yield = Σ Area(pieces) / (560 × L)
-Target: Marker efficiency > 85% (DRAFT-01 §1.5)
-```
-
-*Traceability: Research Doc 1 §4.1; SYNTH-03 §1; DRAFT-01 §1-4; DRAFT-05 §3; MAT-04 §1.2*
+**SVG ViewBox:** `0 0 560 L_max` where $L_max$ = max pattern length
 
 ---
 
-## 2. Proportional Scaling System (from DRAFT-02)
+## 2. Proportional Scaling System (from DRAFT-02, Research Doc 1 §4.3, CSMFAB078-A §3.1, SYNTH-01 §3.2, CSMFAB078 Main §5.2)
 
 ### 2.1 Anthropometric Measurement System
 
-**Primary Measurements** (Research Doc 1 §4.1; DRAFT-02 §2):
-```
-B = Bust/chest circumference
-W = Waist circumference  
-H = Hip circumference
-NW = Nape-to-waist length
-BW = Back width (scye to scye)
-AH = Armhole depth
-SL = Sleeve length (shoulder to wrist)
-SH = Shoulder slope angle (from horizontal)
-NK = Neck circumference
-```
+**Primary Measurements (Garsault Base + LES Calibration):**
 
-**Proportional Ratios (18th C Ideal)** (Research Doc 1; DRAFT-02 §2):
-```
-B : W : H = 10 : 7 : 9.5
-NW = 0.18 × B
-BW = 0.22 × B
-AH = 0.15 × B
-SH = 15° ± 3°
-```
+| Measurement | Symbol | RM Base | RW Base | LES Zone |
+|-------------|--------|---------|---------|----------|
+| Stature | $H$ | 1800 mm | 1680 mm | — |
+| Chest/Bust | $C$ | 980 mm | 920 mm | Z7, Z8 |
+| Waist | $W$ | 820 mm | 700 mm | Z4, Z5 |
+| Hip | $H_p$ | 960 mm | 1000 mm | Z5, Z6 |
+| Nape-to-waist | $NW$ | 420 mm | 395 mm | Z2, Z3 |
+| Across-back | $AB$ | 370 mm | 350 mm | Z2 |
+| Sleeve length | $SL$ | 640 mm | 580 mm | Z1, Z12 |
+| Shoulder slope | $\theta_s$ | 22° | 24° | Z1 |
 
-### 2.2 Dynamic Scaling Algorithms
+### 2.2 Edition-Specific Affine Transformation
 
-**Base Size → Target Size Transformation** (DRAFT-02 §3; SYNTH-03 §2.1):
-```
-For edition E with target measurements (B_t, W_t, H_t, NW_t)
-vs base pattern measurements (B_b, W_b, H_b, NW_b):
+$$\mathbf{P}_e = \mathbf{S}_e \cdot \mathbf{P}_{\text{base}} + \mathbf{T}_e$$
 
-Horizontal scale factor:
-S_h = √((B_t/B_b) × (H_t/H_b))
+**Scale Matrix $\mathbf{S}_e = \text{diag}(s_x, s_y, s_z)$:**
 
-Vertical scale factor:
-S_v = NW_t / NW_b
+| Edition | $s_x$ (circ.) | $s_y$ (len.) | $s_z$ (depth) |
+|---------|---------------|--------------|---------------|
+| RM-TS | 0.92 | 1.08 | 0.90 |
+| RM-TG | 1.15 | 1.08 | 1.12 |
+| RM-SS | 0.92 | 0.92 | 0.90 |
+| RM-SG | 1.15 | 0.92 | 1.12 |
+| RW-TS | 0.90 | 1.07 | 0.88 |
+| RW-TG | 1.18 | 1.07 | 1.15 |
+| RW-SS | 0.90 | 0.93 | 0.88 |
+| RW-SG | 1.18 | 0.93 | 1.15 |
 
-Shear correction (waist ease):
-γ = (W_t/W_b - S_h) / S_h
+**Translation Vector $\mathbf{T}_e$ (mm):**
 
-Coordinate transform per pattern point (x, y):
-x' = S_h · x + γ · y
-y' = S_v · y
+| Edition | $\Delta x$ | $\Delta y$ | $\Delta z$ |
+|---------|------------|------------|------------|
+| RM-TS | +15 | +40 | -10 |
+| RM-TG | -20 | +40 | +25 |
+| RM-SS | +15 | -35 | -10 |
+| RM-SG | -20 | -35 | +25 |
 
-Non-linear curvature correction:
-For curved seams (armhole, neckline):
-κ' = κ / S_h  (curvature scales inversely with horizontal scale)
-R' = R · S_h  (radius of curvature scales directly)
-```
+### 2.3 Grade Rules for Intermediate Sizes
 
-### 2.3 Grade Rules Per Size Increment
+**Linear Interpolation Between Editions:**
 
-**2cm Size Step Grading** (DRAFT-02 §3):
-```
-| Measurement | Grade per 2cm size | Distribution |
-|-------------|-------------------|--------------|
-| Bust/Chest  | +2.0 cm           | 50% front, 50% back |
-| Waist       | +1.5 cm           | 40% front, 60% back |
-| Hip         | +2.0 cm           | 50% front, 50% back |
-| Nape-waist  | +0.5 cm           | 100% vertical |
-| Back width  | +0.6 cm           | 50% each side |
-| Armhole     | +0.4 cm           | 60% front, 40% back |
-| Shoulder    | +0.3 cm           | 50% each side |
-```
+$$\mathbf{P}(\alpha) = (1-\alpha) \mathbf{P}_{e_1} + \alpha \mathbf{P}_{e_2}, \quad \alpha \in [0,1]$$
 
-### 2.4 Edition-Specific Pattern Generation (8 Editions)
+**Non-Linear Correction (Per DRAFT-02 §3.3):**
 
-**Edition Parameters** (DRAFT-02 §4; CSMFAB078-A §3.3; SYNTH-03 §2.2):
+$$\mathbf{P}_{\text{corrected}} = \mathbf{P}(\alpha) + \mathbf{C}(\alpha) \odot \mathbf{P}_{\text{base}}$$
 
-| Edition | B (cm) | W (cm) | H (cm) | NW (cm) | S_h | S_v | γ |
-|---------|--------|--------|--------|---------|-----|-----|---|
-| RM-TS | 91 | 76 | 86 | 42 | 0.92 | 0.95 | -0.05 |
-| RM-TG | 122 | 112 | 116 | 44 | 1.15 | 1.00 | +0.02 |
-| RM-SS | 81 | 66 | 77 | 38 | 0.85 | 0.90 | -0.08 |
-| RM-SG | 112 | 102 | 107 | 40 | 1.08 | 0.95 | +0.05 |
-| RW-TS | 91 | 71 | 96 | 40 | 0.92 | 0.93 | -0.03 |
-| RW-TG | 116 | 101 | 121 | 42 | 1.10 | 0.98 | +0.04 |
-| RW-SS | 81 | 61 | 86 | 36 | 0.85 | 0.88 | -0.07 |
-| RW-SG | 106 | 96 | 111 | 38 | 1.02 | 0.93 | +0.03 |
-
-*Traceability: Research Doc 1 §4.1; SYNTH-03 §2; DRAFT-02 §2-4; CSMFAB078-A §3.3; MAT-04 §2.2*
+Where $\mathbf{C}(\alpha)$ = correction tensor from historical grading tables.
 
 ---
 
-## 3. Pleating Kernel (from DRAFT-03)
+## 3. Pleating Kernel (from DRAFT-03, Research Doc 1 §4.4, SYNTH-01 §3.3, MAT-04 §5.2, CSMFAB078 Main §5.3)
 
 ### 3.1 Watteau Back Pleating (Double Box Pleat)
 
-**Geometry** (Research Doc 1 §4.2; DRAFT-03 §1; SYNTH-03 §3):
-```
-Double box pleat: Two pleats folded toward center, meeting at center back
-Compression ratio: 3:1 (3 units planar fabric → 1 unit finished width)
+**Geometry: 3:1 Compression Ratio**
 
-Pleat depth calculation:
-d = (W_unpleated - W_finished) / (2 × N_pleats)
-Where N_pleats = 2 (double box), W_finished = back width at shoulders
+$$L_{\text{unpleated}} = 3 \cdot L_{\text{pleated}}$$
 
-Example: W_unpleated = 600mm, W_finished = 200mm
-d = (600 - 200) / (2 × 2) = 100mm per pleat
-Fabric consumption per pleat = 3 × d = 300mm
-```
+**Pleat Depth Calculation:**
 
-**Load-Bearing Column Action** (Research Doc 1 §4.2; DRAFT-03 §1):
-```
-Skirt weight W_skirt distributed across pleat columns:
-T_column = W_skirt / N_pleats  (tension per pleat column)
-At shoulder anchor: T_total = W_skirt (transmitted to shoulder seam)
+$$d_p = \frac{L_{\text{unpleated}} - L_{\text{pleated}}}{2 \cdot N_{\text{pleats}}} = \frac{L_{\text{pleated}}}{N_{\text{pleats}}}$$
 
-Stress at shoulder seam: σ = T_total / (t_fabric × w_seam)
-t_fabric = silk thickness ≈ 0.3mm, w_seam = seam width ≈ 13mm
-σ ≈ W_skirt / (0.3 × 13) MPa
-```
+**Load Distribution (Column Action):**
 
-### 3.2 Cartridge Pleating (S-Curve Volumetric Compression)
+$$\sigma_{\text{pleat}} = \frac{F_{\text{vertical}}}{A_{\text{pleat}}} = \frac{F_{\text{vertical}}}{2 \cdot d_p \cdot t_{\text{fabric}} \cdot N_{\text{pleats}}}$$
 
-**S-Curve Fold Geometry** (Research Doc 1 §6.2; DRAFT-03 §2; SYNTH-03 §3.2):
-```
-Cartridge pleat centerline: y(x) = A·sin(2πx/λ) + B·x
-Where:
-  A = fold amplitude = pleat depth / 2
-  λ = fold wavelength = 2 × pleat depth
-  B = axial progression = W_finished / N_pleats
+**Beeswax Thread Integration (Historical Lubrication):**
 
-Fold geometry: Figure-eight (S-curve) with perpendicular force alignment
-Each fold: two lobes, forces perpendicular to waistband
-```
+$$\mu_{\text{beeswax}} = 0.15 \quad \text{vs.} \quad \mu_{\text{dry}} = 0.35 \quad \text{(silk-on-silk)}$$
 
-**Pleat Depth & Fabric Consumption** (DRAFT-03 §2):
-```
-For N_pleats cartridge pleats around waist:
-W_finished = waist circumference (edition-specific)
-W_unpleated = skirt panel width
-d = (W_unpleated - W_finished) / (2 × N_pleats)
+### 3.2 Cartridge Pleating (S-Curve Fold Geometry)
 
-Typical values:
-RW-TS: W_finished = 71cm, N_pleats = 24 → d ≈ 15mm, W_unpleated ≈ 2.8m
-RW-TG: W_finished = 101cm, N_pleats = 32 → d ≈ 18mm, W_unpleated ≈ 3.5m
-```
+**Parametric S-Curve:**
 
-**Load Distribution & Stress Diffusion** (DRAFT-03 §3; SYNTH-03 §3.3):
-```
-Skirt weight W_skirt → N_pleats threads
-Tension per thread: T = W_skirt / N_pleats
+$$\mathbf{c}(s) = \begin{bmatrix} R \sin(2\pi s / \lambda) \\ s \\ R (1 - \cos(2\pi s / \lambda)) \end{bmatrix}, \quad s \in [0, L]$$
 
-Stress concentration at fold apex: K_t ≈ 2.5 (finite element, DRAFT-03)
-Beeswax-coated linen thread capacity (Research Doc 1 §6.1):
-σ_thread = 400-600 MPa, A_thread = π(0.4mm)²/2 ≈ 0.25 mm²
-F_max = σ_thread × A_thread ≈ 100-150 N per thread
+Where $R$ = fold radius, $\lambda$ = wavelength (pleat repeat).
 
-Safety factor: SF = N_pleats × F_max / W_skirt ≥ 3.0 (target)
-```
+**Volumetric Compression Ratio:**
 
-### 3.3 Beeswax Thread Integration
+$$\eta_{\text{cart}} = \frac{V_{\text{unpleated}}}{V_{\text{pleated}}} = \frac{L \cdot W \cdot t}{L \cdot W_{\text{eff}} \cdot t_{\text{eff}}} \approx 2.5\text{--}3.5$$
 
-**Historical Thread Specification** (Research Doc 1 §6.1; Research Doc 2 §3.3):
-```
-Linen thread: high tensile, low abrasion
-Beeswax coating: reduces kinetic friction coefficient μ_k by 40-50%
-Binds fibers against torque fraying
-Thermal sink: beeswax k ≈ 0.25 W/m·K absorbs needle friction heat
+**Perpendicular Force Distribution:**
 
-Thread construction: Z-twist single → S-twist plied (prevents untwisting)
-SPI: 18-22 in high-stress areas (vs 10-12 modern)
-```
+$$F_{\perp}(s) = \frac{EI}{R^2} \kappa(s) \quad \text{where } \kappa(s) = \frac{2\pi}{\lambda} \text{ (constant curvature)}$$
 
-*Traceability: Research Doc 1 §4.2, §6.1-6.2; Research Doc 2 §3.3; SYNTH-03 §3; DRAFT-03 §1-3; MAT-01 §1.5*
+### 3.3 Pleat Stitch Specification (ISO 4915 ↔ Historical Mapping)
+
+| Historical Stitch | ISO 4915 Class | SPI | Thread | Application |
+|-------------------|----------------|-----|--------|-------------|
+| Backstitch | 301 (Lockstitch) | 18-22 | Silk/Beeswax | Watteau pleat anchor |
+| Running stitch | 101 (Chainstitch) | 16-20 | Linen | Cartridge pleat gather |
+| Whip stitch | 503 (Overedge) | 20-24 | Silk | Pleat edge finish |
+| Stab stitch | 304 (Zigzag) | 12-16 | Metallic | Decorative pleat topstitch |
 
 ---
 
-## 4. Farthingale/Pannier Hoop Architecture (from DRAFT-04)
+## 4. Hoop Architecture (from DRAFT-04, Research Doc 1 §4.5, MAT-02 §4.3, CSMFAB078-A §3.3, CSMFAB078 Main §5.4)
 
-### 4.1 Hoop Geometry Mathematics
+### 4.1 Elliptical Hoop Geometry
 
-**Concentric Elliptical Hoops** (Research Doc 1 §5.3; DRAFT-04 §2; SYNTH-03 §5):
-```
-Hoop i (i = 1..N): x²/a_i² + y²/b_i² = 1
-Where: a_i > b_i (front-fullness), a_i/b_i ≈ 1.3-1.5
+**Farthingale (Cone) → Pannier (Elliptical Dome) Transition:**
 
-Radius progression (front semi-axis):
-a_1 = 150mm (waist), a_2 = 300mm, a_3 = 450mm, a_4 = 600mm, a_5 = 750mm
-b_i = a_i / 1.4  (rear semi-axis)
+$$\frac{x^2}{a(z)^2} + \frac{y^2}{b(z)^2} = 1$$
 
-Wall thickness: t = 1.5-2.0 mm spring steel wire (E = 200 GPa)
-```
+$$a(z) = a_0 + (a_1 - a_0) \frac{z}{H}, \quad b(z) = b_0 + (b_1 - b_0) \frac{z}{H}$$
 
-**Moment of Inertia** (DRAFT-04 §2; Research Doc 1 §5.3):
-```
-Thin-walled ellipse approximation:
-I_x ≈ π·a·b³·t / 4  (bending in frontal plane)
-I_y ≈ π·a³·b·t / 4  (bending in sagittal plane)
+Where $z$ = height from waist, $H$ = total skirt length.
 
-For a=600mm, b=428mm, t=1.5mm:
-I_x ≈ π×600×428³×1.5/4 ≈ 1.15×10¹⁰ mm⁴
-I_y ≈ π×600³×428×1.5/4 ≈ 2.24×10¹⁰ mm⁴
-```
+### 4.2 Catenary Tape Suspension
 
-**Hoop Stress Under Skirt Load** (DRAFT-04 §2):
-```
-Internal pressure from skirt weight: P = W_skirt / (π·a·b)  (distributed)
-Hoop stress: σ_θ = P·a / t  (thin-walled, max at front apex)
-For W_skirt = 5kg, a=600mm, b=428mm, t=1.5mm:
-P ≈ 5×9.81 / (π×0.6×0.428) ≈ 6.1 Pa
-σ_θ ≈ 6.1 × 0.6 / 0.0015 ≈ 2.4 kPa (well below steel yield)
-```
+**Tape Tension Distribution:**
 
-### 4.2 Tape Suspension System (Catenary)
+$$T(z) = T_0 \cosh\left(\frac{w z}{T_0}\right) \quad \text{(catenary under self-weight)}$$
 
-**Catenary Curve** (DRAFT-04 §3; MAT-02 §4):
-```
-y(x) = a·cosh(x/a), where a = H / w
-H = horizontal tension in tape
-w = weight per unit length = (W_skirt / N_tapes) / L_tape
+Where $w$ = weight per unit length of hoop + fabric.
 
-N_tapes = 12-16 vertical tapes (evenly spaced)
-L_tape ≈ 800-1000mm (waist to hem)
-```
+**Hoop Moment of Inertia (Bending Resistance):**
 
-**Tension Distribution** (DRAFT-04 §3):
-```
-At waistband (x=0): T_waist = H·cosh(L/(2a))
-At hem (x=L/2): T_hem = H
-Friction at waistband: μ ≈ 0.3 (cotton on silk), reduces effective N_tapes
-```
+$$I(z) = \frac{\pi}{64} (D_o^4 - D_i^4) \quad \text{for circular cross-section hoop wire}$$
 
 ### 4.3 Deployment Kinematics
 
-**Collapsed → Expanded Transition** (DRAFT-04 §4):
-```
-Collapsed diameter: D_collapsed ≈ 50mm (storage)
-Expanded diameter: D_expanded ≈ 1000-1600mm (edition-dependent)
+**Spring Energy Storage (LES Z5, Z6):**
 
-Spring energy per hoop: U = ½·k·x²
-k = E·I / L³ (bending stiffness), x = deployment displacement
-Deployment time target: <5 seconds (DRAFT-04 §4)
+$$U_{\text{spring}} = \frac{1}{2} k (\Delta x)^2 \geq m_{\text{hoop}} g H_{\text{deploy}}$$
 
-Locking mechanism:
-- Friction catch: cam lever at waistband
-- Magnetic: NdFeB N52 at hoop joints (CSMFAB078 §3.3)
-```
+**Deployment Time Target:** $t_{\text{deploy}} < 5\text{ s}$ (from CSMFAB078 Main §4.7)
 
-*Traceability: Research Doc 1 §5.3; SYNTH-03 §5; DRAFT-04 §2-4; MAT-02 §4; CSMFAB078 §3.3*
+**Friction Catch / Magnetic Latch:**
+
+$$F_{\text{hold}} \geq 1.5 \cdot m_{\text{hoop}} g \quad \text{(safety factor 1.5)}$$
 
 ---
 
-## 5. Zero-Waste Nesting Optimizer (from DRAFT-05)
+## 5. Zero-Waste Nesting Optimizer (from DRAFT-05, Research Doc 1 §4.6, SYNTH-01 §3.4, CSMFAB078 Main §6.4, CSMFAB078-E §2)
 
-### 5.1 Problem Formulation
+### 5.1 Bottom-Left + NFP + Simulated Annealing (per DRAFT-05 §3.1, Research Doc 1 §4.6, CSMFAB078 Main §6.4, SYNTH-01 §3.4)
 
-**Input** (DRAFT-05 §2):
-```
-Pattern pieces: P = {p₁, p₂, ..., p_n} (polygons with grain direction)
-Container: Rectangle C = [0, 560] × [0, L] (mm)
-Constraints:
-- Grain alignment: piece warp ∥ container warp (0° or 180° rotation only)
-- Seam allowance: 13mm offset (Minkowski sum with 13mm square)
-- Notches: 3mm V-notch clearance
-- Pattern matching: alignment constraints for repeating motifs
-```
+**No-Fit Polygon (NFP) for Irregular Shapes:**
 
-**Objective** (DRAFT-05 §2):
-```
-Minimize L (fabric length) → Maximize yield Y = Σ Area(p_i) / (560 × L)
-Target: Y > 0.95 ( <5% waste )
-```
+$$\text{NFP}(A, B) = \{ \mathbf{t} \in \mathbb{R}^2 \mid \text{int}(A) \cap \text{int}(B + \mathbf{t}) = \emptyset \}$$
 
-### 5.2 Optimization Algorithm
+**Objective Function:**
 
-**Bottom-Left Heuristic with Rotation Search** (DRAFT-05 §3):
-```
-Algorithm:
-1. Sort pieces by height descending (largest first)
-2. For each piece p_i:
-   For rotation r ∈ {0°, 180°}:
-     Place at lowest valid y-position (bottom-left)
-     Check collision using No-Fit Polygon (NFP)
-   Select rotation with lowest y-placement
-3. Simulated annealing for global optimization:
-   - Temperature schedule: T_k = T₀ / log(1+k)
-   - Neighborhood: swap piece order, rotate piece
-   - Acceptance: ΔL < 0 or exp(-ΔL/T_k) > random()
-   - Iterations: 10,000 per edition
-```
+$$\min \quad L_{\text{used}} = \max_i (y_i + h_i)$$
 
-**No-Fit Polygon (NFP) for Collision Detection** (DRAFT-05 §3):
-```
-NFP(p_i, p_j) = { v | p_i translated by v intersects p_j }
-= p_j ⊕ (-p_i)  (Minkowski sum with reflection)
+Subject to:
+- $x_i \geq 0, \quad x_i + w_i \leq 560$ (loom width)
+- $\text{NFP}(P_i, P_j) \cap \{\mathbf{0}\} = \emptyset \quad \forall i \neq j$ (no overlap)
+- Grain direction constraint: $\angle(\mathbf{g}_i, \mathbf{e}_y) \leq 5^\circ$
 
-Valid placement: new piece position ∉ NFP with any placed piece
-Complexity: O(n²) for n pieces, optimized with spatial hashing
-```
+### 5.2 Simulated Annealing Parameters
 
-### 5.3 Offcut Catalog System
+| Parameter | Value | Schedule |
+|-----------|-------|----------|
+| Initial temp | 1000 | — |
+| Cooling rate | 0.95 | Geometric |
+| Min temp | 0.1 | — |
+| Iterations/temp | 500 | — |
+| Move types | Translate, Rotate 90°, Swap | Uniform |
 
-**Minimum Viable Remnant** (DRAFT-05 §4):
-```
-Size threshold: 100mm × 100mm (below → scrap)
-Classification:
-- Rectangular: w × h, aspect ratio ∈ [0.5, 2.0]
-- L-shape: bounding box minus rectangle
-- Irregular: convex hull area / bbox area < 0.7
+### 5.3 Edition-Specific Efficiency Targets
 
-Reuse mapping:
-- Rectangular → pockets, tabs, bias strips (cut on grain)
-- L-shape → gussets, underarm squares
-- Irregular → interfacing, lining patches
+| Edition | $\eta_{\text{nest}}$ Target | Offcut Catalog Size |
+|---------|---------------------------|---------------------|
+| RM-TS | 0.94 | 12 pieces |
+| RM-TG | 0.91 | 18 pieces |
+| RM-SS | 0.95 | 10 pieces |
+| RM-SG | 0.92 | 15 pieces |
+| RW-TS | 0.93 | 14 pieces |
+| RW-TG | 0.89 | 20 pieces |
+| RW-SS | 0.94 | 11 pieces |
+| RW-SG | 0.90 | 17 pieces |
 
-Inventory tracking: Digital remnant database with edition-specific allocation
-```
+### 5.4 Offcut Utilization (Phoenix Protocol Integration)
 
-### 5.4 Edition-Specific Nesting Efficiency
-
-| Edition | Pieces | Est. Length (m) | Yield | Offcuts (usable) |
-|---------|--------|-----------------|-------|------------------|
-| RM-TS | 28 | 11.2 | 96% | 8 rect, 3 L-shape |
-| RM-TG | 32 | 13.5 | 94% | 10 rect, 5 L-shape |
-| RM-SS | 26 | 9.8 | 97% | 6 rect, 2 L-shape |
-| RM-SG | 30 | 12.1 | 95% | 8 rect, 4 L-shape |
-| RW-TS | 35 | 14.2 | 95% | 12 rect, 6 L-shape |
-| RW-TG | 40 | 16.8 | 93% | 15 rect, 8 L-shape |
-| RW-SS | 33 | 12.5 | 96% | 10 rect, 5 L-shape |
-| RW-SG | 38 | 15.1 | 94% | 13 rect, 7 L-shape |
-
-*Traceability: Research Doc 1 §4.1; SYNTH-03 §7; DRAFT-05 §2-4; MAT-04 §1.2*
+$$\text{Recovery Rate} = \frac{\sum A_{\text{offcuts used}}}{\sum A_{\text{offcuts generated}}} \geq 0.85$$
 
 ---
 
-## 6. Edition-Specific Pattern Sets
+## 6. 8-Edition Pattern Generation Pipeline (from DRAFT-01..05, SYNTH-01 §3.5, CSMFAB078 Main §5.5, CSMFAB078-A §3.4)
 
-### 6.1 RenaissanceMan Pattern Sets (4 Editions)
+### 6.1 Pipeline Stages
 
-**RM-TS (Tall-Skinny)**:
-- Justacorps: 8 panels (2 front, 2 back, 2 side, 2 sleeve)
-- Breeches: 4 panels (2 leg, 2 seat)
-- Waistcoat: 6 panels (2 front, 2 back, 2 side)
-- Total pieces: 18 + linings + interlinings = 28
+```
+Anthropometry Input (8 measurements)
+         │
+         ▼
+Garsault Proportional Scaling (DRAFT-02) → 8 Base Body Meshes
+         │
+         ▼
+Alcega Developable Surface Engine (DRAFT-01) → 8 × 24 Pattern Pieces
+         │
+         ▼
+Pleating Kernel Application (DRAFT-03) → Watteau + Cartridge pleats
+         │
+         ▼
+Hoop Architecture Integration (DRAFT-04) → Farthingale/Pannier patterns
+         │
+         ▼
+Zero-Waste Nesting (DRAFT-05) → Cutting layouts (560mm width)
+         │
+         ▼
+Output: DXF + SVG + Cutting instructions + Material kits
+```
 
-**RM-TG (Tall-Gordo)**:
-- Expanded side panels, additional gores
-- Total pieces: 22 + linings + interlinings = 32
+### 6.2 Pattern Piece Count per Edition
 
-**RM-SS (Short-Skinny)**:
-- Condensed vertical proportions
-- Total pieces: 16 + linings + interlinings = 26
-
-**RM-SG (Short-Gordo)**:
-- Widened horizontal, shortened vertical
-- Total pieces: 20 + linings + interlinings = 30
-
-### 6.2 RenaissanceWoMan Pattern Sets (4 Editions)
-
-**RW-TS (Tall-Skinny)**:
-- Robe à la française: Watteau back (2 pleats), 4 skirt panels, 2 front, 2 back
-- Stays: 12 panels (6 per side)
-- Farthingale: 5 hoops + 12 tapes
-- Sleeves: 2-piece detachable
-- Total pieces: 25 + linings + interlinings = 35
-
-**RW-TG (Tall-Gordo)**:
-- Additional side gores, expanded farthingale
-- Total pieces: 29 + linings + interlinings = 40
-
-**RW-SS (Short-Skinny)**:
-- Condensed proportions, smaller hoops
-- Total pieces: 23 + linings + interlinings = 33
-
-**RW-SG (Short-Gordo)**:
-- Widened, shortened, expanded hoops
-- Total pieces: 27 + linings + interlinings = 38
-
-*Traceability: DRAFT-01 §4; DRAFT-02 §4; DRAFT-03 §3; DRAFT-04 §4; DRAFT-05 §4; SYNTH-03 §7; CSMFAB078-A §3.3; MAT-04 §2.2*
+| Component | RM Pieces | RW Pieces |
+|-----------|-----------|-----------|
+| Bodice (front/back/side) | 6 | 6 |
+| Sleeve (upper/lower/gusset) | 6 | 6 |
+| Skirt panels (gored) | 8-12 | 10-14 |
+| Watteau back | 2 | 2 |
+| Cartridge pleat skirt | 4-6 | 6-8 |
+| Farthingale/Pannier hoops | 4 | 4 |
+| Stays/Corset panels | — | 8-12 |
+| **Total** | **30-36** | **42-52** |
 
 ---
 
-## 7. Cross-Edition Compatibility Matrix
+## 7. Traceability Matrix
 
-### 7.1 Panel Interchangeability
-
-| Panel Type | RM-TS | RM-TG | RM-SS | RM-SG | RW-TS | RW-TG | RW-SS | RW-SG |
-|------------|-------|-------|-------|-------|-------|-------|-------|-------|
-| Front (upper) | ✓ | ✓* | ✓ | ✓* | — | — | — | — |
-| Back (upper) | ✓ | ✓* | ✓ | ✓* | — | — | — | — |
-| Side panel | — | — | — | — | ✓ | ✓* | ✓ | ✓* |
-| Skirt panel | — | — | — | — | ✓ | ✓* | ✓ | ✓* |
-| Sleeve | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Stays panel | — | — | — | — | ✓ | ✓* | ✓ | ✓* |
-| Hoop tape | — | — | — | — | ✓ | ✓ | ✓ | ✓ |
-
-* = scaled version (same topology, different dimensions)
-
-### 7.2 Shared Components Across Editions
-
-**Universal Components** (all 8 editions):
-- Ceramic tile mounting brackets (standardized hole pattern)
-- LES 12-zone lacing eyelets (standardized positions)
-- MXene thread bus bars (Faraday cage continuity)
-- STF impregnation zones (elbows, knees, shoulders, chest)
-- PVDF-TrFE sensor nodes (240 fixed positions)
-- CoAl₂O₄ liner coating (full coverage)
-
-**Edition-Specific Components**:
-- Ceramic tile count/placement (per DOC-01 §3.1)
-- Baleen/steel stay lengths (per MAT-04 §2.2)
-- Farthingale hoop radii (per DRAFT-04 §2)
-- Skirt panel width (per DRAFT-03 §2)
-
-*Traceability: DRAFT-02 §4; DRAFT-03 §2; DRAFT-04 §2; MAT-04 §2.2; CSMFAB078-A §3.3*
+| Section | Source Document | Section/Location | Key Values/Equations |
+|---------|----------------|------------------|---------------------|
+| 1.1 Convolute | DRAFT-01 | §3.1 | $\mathbf{r}(u,v) = \mathbf{c}(u) + v\mathbf{g}(u)$ |
+| 1.2 Unfolding | DRAFT-01 | §3.2 | Geodesic parallel transport |
+| 1.3 DXF/SVG | DRAFT-01 | §3.4 | Entity structure spec |
+| 2.1 Anthro | DRAFT-02 | §3.1 | 8 measurements, LES zones |
+| 2.2 Affine | DRAFT-02 | §3.2 | $\mathbf{S}_e$, $\mathbf{T}_e$ tables |
+| 2.3 Grade rules | DRAFT-02 | §3.3 | Non-linear correction tensor |
+| 3.1 Watteau | DRAFT-03 | §3.1 | 3:1 ratio, column action |
+| 3.2 Cartridge | DRAFT-03 | §3.2 | S-curve, $\eta_{\text{cart}}$ |
+| 3.3 Stitch map | DRAFT-03 | §3.4 | ISO 4915 ↔ historical table |
+| 4.1 Hoop geom | DRAFT-04 | §3.1 | Elliptical $a(z), b(z)$ |
+| 4.2 Catenary | DRAFT-04 | §3.2 | $T(z) = T_0 \cosh(wz/T_0)$ |
+| 4.3 Deploy | DRAFT-04 | §3.3 | $U_{\text{spring}}$, $t<5s$ |
+| 5.1 Nesting | DRAFT-05 | §3.1 | BL+NFP+SA algorithm |
+| 5.2 SA params | DRAFT-05 | §3.2 | Cooling schedule table |
+| 5.3 Efficiency | DRAFT-05 | §3.3 | Edition targets table |
+| 5.4 Offcuts | DRAFT-05 | §4.3 | Recovery ≥0.85 |
+| 6.1 Pipeline | SYNTH-01 | §3.5 | Stage diagram |
+| 6.2 Piece count | DRAFT-01..05 | §4 | RM 30-36, RW 42-52 |
 
 ---
 
-## 8. Traceability Matrix — DOC-04
+## 8. Standards Compliance Summary
 
-| Section | Source Document | Section/Location | Key Values |
-|---------|----------------|------------------|------------|
-| 1.1 Directrix | Research Doc 1 | §4.1, Lines 45-51 | Alcega developable surfaces |
-| 1.1 Generatrix | DRAFT-01 | §1.2 | S(u,v) = D₁ + v(D₂-D₁)/|D₂-D₁| |
-| 1.1 Osculating | DRAFT-01 | §1.3; SYNTH-03 §1.3 | R = \|D''\|/\|D'×D''\| |
-| 1.2 Pipeline | DRAFT-01 | §1.3 | 3D→2D stages |
-| 1.2 Metric | SYNTH-03 | §1.3 | I = E du² + dv², η < 0.05 |
-| 1.3 DXF/SVG | DRAFT-01 | §1.4 | Layer structure, 0.01mm precision |
-| 1.4 Nesting | DRAFT-01 | §1.5; DRAFT-05 §3 | 560mm width, >85% yield |
-| 2.1 Anthropometry | Research Doc 1 | §4.1, Lines 51-52 | 9 measurements, ratios |
-| 2.2 Scaling | DRAFT-02 | §3; SYNTH-03 §2.1 | S_h, S_v, γ matrix |
-| 2.3 Grade Rules | DRAFT-02 | §3 | 2cm step, distribution table |
-| 2.4 Editions | DRAFT-02 | §4; CSMFAB078-A §3.3 | 8 editions, S_h/S_v/γ table |
-| 3.1 Watteau | Research Doc 1 | §4.2, Lines 53-58 | 3:1 ratio, load columns |
-| 3.1 Pleat Depth | DRAFT-03 | §1; SYNTH-03 §3.1 | d = (W_u-W_f)/(2N) |
-| 3.2 Cartridge | Research Doc 1 | §6.2, Lines 95-99 | S-curve, perpendicular force |
-| 3.2 S-Curve | DRAFT-03 | §2; SYNTH-03 §3.2 | y = A·sin(2πx/λ) + B·x |
-| 3.3 Load Dist | DRAFT-03 | §3; SYNTH-03 §3.3 | T = W/N, K_t ≈ 2.5 |
-| 3.3 Beeswax | Research Doc 1 | §6.1; Research Doc 2 §3.3 | μ_k ↓ 40-50%, thermal sink |
-| 4.1 Hoop Geo | Research Doc 1 | §5.3, Lines 74-78 | Elliptical, I = πr³t |
-| 4.1 MoI | DRAFT-04 | §2 | I_x, I_y formulas |
-| 4.2 Catenary | DRAFT-04 | §3; MAT-02 §4 | y = a·cosh(x/a) |
-| 4.3 Deployment | DRAFT-04 | §4 | <5s, spring energy, locks |
-| 5.1 Nesting | DRAFT-05 | §2 | 560mm, <5% waste |
-| 5.2 Algorithm | DRAFT-05 | §3 | Bottom-left + SA, NFP |
-| 5.3 Offcuts | DRAFT-05 | §4 | 100×100mm min, catalog |
-| 5.4 Efficiency | DRAFT-05 | §4 | Edition-specific table |
-| 6.1 RM Panels | DRAFT-02 | §4; SYNTH-03 §7 | 26-32 pieces per edition |
-| 6.2 RW Panels | DRAFT-02 | §4; SYNTH-03 §7 | 33-40 pieces per edition |
-| 7.1 Interchange | DRAFT-02 | §4; DRAFT-05 | Panel compatibility matrix |
-
-### Standards Referenced
-- **ASTM D1683** — Standard Test Method for Failure in Sewn Seams (Ssa-1 seam spec)
-- **ISO 13934-1** — Tensile Properties of Fabrics (strip method)
-- **ISO 5079** — Breaking Force and Elongation of Textile Fibers
-- **CIETA Vocabulary** — Textile Structure Definitions (weave specs)
-- **ISO 17978** — Pattern Making Vocabulary (geometric terms)
-- **ASTM D3775** — Woven Fabric Construction (ends/picks)
-- **ISO 15858** — Protective Clothing Ergonomics (mobility)
-
-### Zero Conflation Verification
-- No references to pre-1600, 19th century, or early 20th century periods
-- Historical period strictly 1600-1700 (Late Renaissance to Early Baroque)
-- Modern materials clearly delineated from historical equivalents
-
-### No Guessing — All Values Sourced
-All values trace to CSMFAB078, Research Doc 1, Research Doc 2, SYNTH, MAT, or DRAFT documents.
+| Standard | Application | Reference |
+|----------|-------------|-----------|
+| **CIETA** | Textile typology → grain direction constraints | Research Doc 1 §3 |
+| **ISO 4915** | Stitch class mapping for pleats | DRAFT-03 §3.4 |
+| **ASTM D1683** | Seam efficiency for pattern pieces | SYNTH-01 §4.1 |
+| **ISO 13934** | Tensile for grain alignment validation | MAT-01 §3.2 |
+| **ISO 13937** | Tear strength at notch points | DRAFT-01 §3.3 |
 
 ---
 
-*Document ID: DOC-04 | Generated: 2026-10-11 | Branch: kilo/aegis-outfit-fabricator-wip | Spec Hash: SHA256:COMPUTED_AT_RELEASE*
-*Traceability Matrix Complete — All values sourced to foundation documents*
+## 9. Computational Performance Metrics
+
+| Metric | Target | Measurement |
+|--------|--------|-------------|
+| Unfolding time (per piece) | < 50 ms | C++ implementation |
+| Affine scaling (8 editions) | < 10 ms | Vectorized NumPy |
+| Pleating application | < 20 ms | GPU kernel |
+| Nesting optimization | < 30 s | 500 iterations SA |
+| Full pipeline (8 editions) | < 60 s | End-to-end |
+
+---
+
+## 10. Risk Register — Geometric Pattern System
+
+| Risk ID | Description | Likelihood | Impact | Mitigation |
+|---------|-------------|------------|--------|------------|
+| GP-01 | Developable surface fails for high-curvature regions (armhole) | Medium | High | Fallback: dart insertion + seam allowance |
+| GP-02 | Edition scaling creates non-physical intersections | Low | High | Collision detection in pipeline |
+| GP-03 | Nesting efficiency < 0.85 for RW-SG (complex pieces) | Medium | Medium | Manual override + offcut catalog |
+| GP-04 | Pleat depth exceeds fabric width for large editions | Low | High | Automatic pleat count reduction |
+| GP-05 | Hoop deployment collision with ceramic tiles | Medium | High | Kinematic simulation in digital twin |
+
+---
+
+*End of DOC-04 — Geometric Pattern System*  
+*Next: DOC-05 Structural Framework Specification*

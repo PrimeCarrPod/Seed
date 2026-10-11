@@ -1,37 +1,20 @@
+**Zone-Edition Interaction $\beta_{z,e}$ (Sample):**
 
-**Tile-to-Tile Registration** (SYNTH-02 §2; MAT-03 §1.2):
-```
-Tolerances: ±0.1mm positional, ±0.5° angular
-Magnetic snap-in force: >20 N (overcomes fabric friction)
-Self-alignment range: ±2mm (magnets pull into registry)
-```
+| Zone | RM-TS | RM-TG | RW-TS | RW-TG |
+|------|-------|-------|-------|-------|
+| Z1 | 1.00 | 1.05 | 0.95 | 1.00 |
+| Z4 | 0.95 | 1.10 | 0.90 | 1.05 |
+| Z5 | 1.00 | 1.08 | 0.95 | 1.03 |
 
-### 4.2 Dyneema-Silk Hybrid Lacing System
+### 3.3 Moment Balance Constraint
 
-**Core-Spun Construction** (Research Doc 2 §3.3; MAT-01 §1.5; DOC-01 §2.2.2):
-```
-Core: Dyneema SK99 (σ_uts > 3.5 GPa, ρ = 0.97 g/cm³)
-Sheath: Silk/linen blend (70/30), beeswax impregnated
-Construction: Z-twist single → S-twist plied (prevents untwisting)
+$$\sum_{z=1}^{12} T_z \cdot \mathbf{r}_z \times \mathbf{n}_z = \mathbf{0} \quad \text{(Static equilibrium)}$$
 
-Properties:
-- Tensile: >2000 N (core-dominated)
-- Abrasion: Sheath protects core, beeswax reduces μ_k by 40-50%
-- Thermal: Beeswax (k=0.25 W/m·K) + silk sheath = thermal sink
-- Historical aesthetic: Natural fiber appearance, hand-finished ends
-```
+Where $\mathbf{r}_z$ = position vector of zone $z$, $\mathbf{n}_z$ = normal direction.
 
-**Cleat/Aglet Engineering** (CSMFAB078-A §3.3; DOC-01 §2.2.3):
-```
-Material: Ti₃AlC₂ MAX Phase (machinable, conductive, 1093°C limit)
-Geometry: Historical aglet profile (tapered cylinder, 8mm × 4mm)
-Thread: M4×0.7 internal thread for lacing termination
-Magnetic: Integrated NdFeB for tile alignment assist
-Dielectric: ε_r ≈ 15 (ceramic), prevents EMI coupling at lacing points
-```
+---
 
-### 4.3 Structural Deployment Sequence
+## 4. Deployment & Locking (from CSMFAB078 Main §4.7, CSMFAB078-A §3.4, DRAFT-04 §3.3)
 
-**Donning Sequence** (DOC-10 §1; MAT-04 §4.4):
-```
-1. Base layer: STF-impregnated silk/linen foundation (Layer 9)
+### 4.1 Spring Energy Storage
+

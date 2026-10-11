@@ -1,44 +1,21 @@
-- Justacorps: 8 panels (2 front, 2 back, 2 side, 2 sleeve)
-- Breeches: 4 panels (2 leg, 2 seat)
-- Waistcoat: 6 panels (2 front, 2 back, 2 side)
-- Total pieces: 18 + linings + interlinings = 28
+**No-Fit Polygon (NFP) for Irregular Shapes:**
 
-**RM-TG (Tall-Gordo)**:
-- Expanded side panels, additional gores
-- Total pieces: 22 + linings + interlinings = 32
+$$\text{NFP}(A, B) = \{ \mathbf{t} \in \mathbb{R}^2 \mid \text{int}(A) \cap \text{int}(B + \mathbf{t}) = \emptyset \}$$
 
-**RM-SS (Short-Skinny)**:
-- Condensed vertical proportions
-- Total pieces: 16 + linings + interlinings = 26
+**Objective Function:**
 
-**RM-SG (Short-Gordo)**:
-- Widened horizontal, shortened vertical
-- Total pieces: 20 + linings + interlinings = 30
+$$\min \quad L_{\text{used}} = \max_i (y_i + h_i)$$
 
-### 6.2 RenaissanceWoMan Pattern Sets (4 Editions)
+Subject to:
+- $x_i \geq 0, \quad x_i + w_i \leq 560$ (loom width)
+- $\text{NFP}(P_i, P_j) \cap \{\mathbf{0}\} = \emptyset \quad \forall i \neq j$ (no overlap)
+- Grain direction constraint: $\angle(\mathbf{g}_i, \mathbf{e}_y) \leq 5^\circ$
 
-**RW-TS (Tall-Skinny)**:
-- Robe à la française: Watteau back (2 pleats), 4 skirt panels, 2 front, 2 back
-- Stays: 12 panels (6 per side)
-- Farthingale: 5 hoops + 12 tapes
-- Sleeves: 2-piece detachable
-- Total pieces: 25 + linings + interlinings = 35
+### 5.2 Simulated Annealing Parameters
 
-**RW-TG (Tall-Gordo)**:
-- Additional side gores, expanded farthingale
-- Total pieces: 29 + linings + interlinings = 40
-
-**RW-SS (Short-Skinny)**:
-- Condensed proportions, smaller hoops
-- Total pieces: 23 + linings + interlinings = 33
-
-**RW-SG (Short-Gordo)**:
-- Widened, shortened, expanded hoops
-- Total pieces: 27 + linings + interlinings = 38
-
-*Traceability: DRAFT-01 §4; DRAFT-02 §4; DRAFT-03 §3; DRAFT-04 §4; DRAFT-05 §4; SYNTH-03 §7; CSMFAB078-A §3.3; MAT-04 §2.2*
-
----
-
-## 7. Cross-Edition Compatibility Matrix
-
+| Parameter | Value | Schedule |
+|-----------|-------|----------|
+| Initial temp | 1000 | — |
+| Cooling rate | 0.95 | Geometric |
+| Min temp | 0.1 | — |
+| Iterations/temp | 500 | — |

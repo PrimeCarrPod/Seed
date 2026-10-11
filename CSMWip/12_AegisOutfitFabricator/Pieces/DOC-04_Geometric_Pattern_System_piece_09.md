@@ -1,44 +1,21 @@
-## 5. Zero-Waste Nesting Optimizer (from DRAFT-05)
+## 4. Hoop Architecture (from DRAFT-04, Research Doc 1 §4.5, MAT-02 §4.3, CSMFAB078-A §3.3, CSMFAB078 Main §5.4)
 
-### 5.1 Problem Formulation
+### 4.1 Elliptical Hoop Geometry
 
-**Input** (DRAFT-05 §2):
-```
-Pattern pieces: P = {p₁, p₂, ..., p_n} (polygons with grain direction)
-Container: Rectangle C = [0, 560] × [0, L] (mm)
-Constraints:
-- Grain alignment: piece warp ∥ container warp (0° or 180° rotation only)
-- Seam allowance: 13mm offset (Minkowski sum with 13mm square)
-- Notches: 3mm V-notch clearance
-- Pattern matching: alignment constraints for repeating motifs
-```
+**Farthingale (Cone) → Pannier (Elliptical Dome) Transition:**
 
-**Objective** (DRAFT-05 §2):
-```
-Minimize L (fabric length) → Maximize yield Y = Σ Area(p_i) / (560 × L)
-Target: Y > 0.95 ( <5% waste )
-```
+$$\frac{x^2}{a(z)^2} + \frac{y^2}{b(z)^2} = 1$$
 
-### 5.2 Optimization Algorithm
+$$a(z) = a_0 + (a_1 - a_0) \frac{z}{H}, \quad b(z) = b_0 + (b_1 - b_0) \frac{z}{H}$$
 
-**Bottom-Left Heuristic with Rotation Search** (DRAFT-05 §3):
-```
-Algorithm:
-1. Sort pieces by height descending (largest first)
-2. For each piece p_i:
-   For rotation r ∈ {0°, 180°}:
-     Place at lowest valid y-position (bottom-left)
-     Check collision using No-Fit Polygon (NFP)
-   Select rotation with lowest y-placement
-3. Simulated annealing for global optimization:
-   - Temperature schedule: T_k = T₀ / log(1+k)
-   - Neighborhood: swap piece order, rotate piece
-   - Acceptance: ΔL < 0 or exp(-ΔL/T_k) > random()
-   - Iterations: 10,000 per edition
-```
+Where $z$ = height from waist, $H$ = total skirt length.
 
-**No-Fit Polygon (NFP) for Collision Detection** (DRAFT-05 §3):
-```
-NFP(p_i, p_j) = { v | p_i translated by v intersects p_j }
-= p_j ⊕ (-p_i)  (Minkowski sum with reflection)
+### 4.2 Catenary Tape Suspension
 
+**Tape Tension Distribution:**
+
+$$T(z) = T_0 \cosh\left(\frac{w z}{T_0}\right) \quad \text{(catenary under self-weight)}$$
+
+Where $w$ = weight per unit length of hoop + fabric.
+
+**Hoop Moment of Inertia (Bending Resistance):**

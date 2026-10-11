@@ -1,37 +1,20 @@
+**Spiral Geometry (per CSMFAB078 Main §4.4):**
+- Wire diameter: $d = 1.0\text{ mm}$
+- Coil diameter: $D = 5.0\text{ mm}$
+- Pitch: $p = 2.5\text{ mm}$
+- Active coils: $n_a = 20\text{--}40$ (per stay length)
 
-**Moment of Inertia per Hoop** (DRAFT-04 §2; MAT-02 §4):
-```
-Thin-walled ellipse:
-I_x(i) ≈ π·a_i·b_i³·t / 4  (frontal plane bending)
-I_y(i) ≈ π·a_i³·b_i·t / 4  (sagittal plane bending)
+**Spring Rate:**
 
-For RW-TG Hoop 4: a=640mm, b=457mm, t=1.5mm
-I_x ≈ π×640×457³×1.5/4 ≈ 1.52×10¹⁰ mm⁴
-I_y ≈ π×640³×457×1.5/4 ≈ 3.01×10¹⁰ mm⁴
-```
+$$k = \frac{G d^4}{8 D^3 n_a} = \frac{73\times10^9 \cdot (1.0\times10^{-3})^4}{8 \cdot (5.0\times10^{-3})^3 \cdot 30} = 12.2\text{ N/mm}$$
 
-**Buckling Modes** (MAT-02 §4):
-```
-Euler buckling (vertical load): P_cr = π²·E·I_min / L²
-L = hoop circumference ≈ π·(a+b) ≈ 3.5m (for hoop 4)
-I_min = I_x ≈ 1.52×10¹⁰ mm⁴
-P_cr ≈ π² × 200×10⁹ × 1.52×10⁻² / 3.5² ≈ 245 kN (far exceeds skirt weight)
+**Hysteresis (Loading-Unloading Cycle):**
 
-Ovalization buckling (local): Critical pressure p_cr = 3·E·I / (a³·t)
-For hoop 4: p_cr ≈ 3 × 200×10⁹ × 1.52×10⁻² / (0.64³ × 0.0015) ≈ 14.5 MPa
-Skirt pressure: P = W/(πab) ≈ 50N/(π×0.64×0.457) ≈ 5.4 Pa
-Safety factor: > 10⁶ (local buckling not a concern)
-```
+$$\text{Hysteresis Loss} = \frac{\oint \sigma d\varepsilon}{\int \sigma d\varepsilon} \approx 3\% \quad \text{(steel)} \quad \text{vs.} \quad 25\% \quad \text{(baleen)}$$
 
-### 2.2 Tape Suspension Catenary System
+---
 
-**Catenary Curve Mechanics** (DRAFT-04 §3; MAT-02 §4):
-```
-Vertical tapes: N = 12-16 (evenly spaced, 22.5°-30° increments)
-Total skirt weight: W = 5-8 kg (edition-dependent)
-Tape length: L = 800-1000mm (waist to hem)
+## 2. Cage Crinoline / Pannier System (from DRAFT-04, MAT-02 §4.3, CSMFAB078-A §3.3)
 
-Catenary parameter: a = H / w
-H = horizontal tension (constant along tape)
-w = weight per unit length = (W/N) / L
+### 2.1 Hoop Geometry Progression
 

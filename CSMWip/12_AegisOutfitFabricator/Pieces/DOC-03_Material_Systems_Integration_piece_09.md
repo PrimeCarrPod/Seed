@@ -1,50 +1,23 @@
-QD layer: CsPbBr₃ stable to 150°C, degrades above → encapsulated in silica overcoat
-Protection stack: YInMn/silica char → ZrO₂ primer → silk substrate
-```
 
-**Historical Pigment Replacement** (MAT-03 §5.4; Research Doc 1 §7.2):
-```
-Replaces: Kermes crimson (fugitive), Cobalt blue (toxic), Arsenic greens, Lead white
-YInMn advantages: Non-toxic, superior NIR reflectance, permanent, lightfast, inert
-```
+$\tau_{25\text{mm}} = 30\text{ s}$, $\tau_{50\text{mm}} = 60\text{ s}$ (vs. 120 s for 150mm)
 
-### 3.6 CoAl₂O₄ Spinel Interior Coating
+### 3.2 MXene Thread Coating Process (per MAT-03 §3.2, CSMFAB078 Main §4.2, Research Doc 2 §6.2, SYNTH-01 §4.4)
 
-**Properties** (CSMFAB078 §4 Layer 12; §5.3; MAT-03 §6):
-```
-CoAl₂O₄ (cobalt aluminate spinel)
-Schumann resonance absorption: >78 dB @ 7.83 Hz fundamental
-SRI = 98 (Solar Reflectance Index)
-Selective 1060 nm absorption
-```
+**Ti₃C₂Tₓ Synthesis (per MAT-03 §3.2):**
 
-**Application on Liner Fabric** (MAT-03 §6.1):
-```
-Process: Pad-dry-cure
-Pad bath: CoAl₂O₄ nanoparticles (50-100 nm) + acrylic binder + silane
-Pickup: 60-80%
-Dry: 120°C, 3 min
-Cure: 160°C, 2 min
-Add-on: 150μm coating, ~30 g/m²
-```
+$$\text{Ti}_3\text{AlC}_2 + \text{HF} \rightarrow \text{Ti}_3\text{C}_2\text{T}_x + \text{AlF}_3 + \text{H}_2$$
 
-**Schumann Attenuation Mechanism** (MAT-03 §6.2; CSMFAB078 §5.3):
-```
-CoAl₂O₄: magnetic spinel, complex permeability μ* = μ' - jμ''
-At 7.83 Hz: μ'' peak → magnetic loss → absorption
-BFRP dielectric chassis (ε_r ≈ 4-6) → impedance matching
-Combined: reflection + absorption > 78 dB
+Etching: 50% HF, 35°C, 24 h → Delamination: TBAOH, 60°C, 2 h, sonication.
 
-Verification: Vibrometer measurement per CSMFAB011 protocol
-Pass: >78 dB @ 7.83 Hz and harmonics (14.1, 20.3, 26.4, 32.5 Hz)
-```
+**Coating on Metallic Thread (Dip/Spray):**
 
-*Traceability: CSMFAB078 §4, §5, §6; MAT-03 §1-6; SYNTH-02 §2-4; Research Doc 1 §4.2, §6; Research Doc 2 §7-8*
+$$\Gamma = \frac{C_0 \cdot V_{\text{dip}} \cdot \eta_{\text{adhesion}}}{A_{\text{thread}}}$$
 
----
+Target: $\Gamma = 0.5\text{ mg/cm}^2$, $\eta_{\text{adhesion}} \geq 0.85$
 
-## 4. Cross-Property Validation Matrix (from MAT-04)
+**Flexibility Retention (Mandrel Bend Test):**
 
-### 4.1 Historical Authenticity vs Protection Efficacy Trade-Off
+$$\text{Retention} = \frac{\sigma_{\text{coated}}}{\sigma_{\text{bare}}} \times 100\% \geq 90\% \quad \text{@ 5 mm mandrel}$$
 
-**Multi-Objective Optimization** (MAT-04 §1.1):
+### 3.3 Aerogel Micro-Encapsulation (per MAT-03 §3.3, CSMFAB078 Main §4.2, CSMFAB078-B §3.2, SYNTH-01 §4.5)
+

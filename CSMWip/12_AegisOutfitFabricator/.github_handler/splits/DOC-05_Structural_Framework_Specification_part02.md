@@ -1,37 +1,20 @@
-Wire diameter: d = 1.5-2.5 mm
-Spiral pitch: p = 3-5 mm (2D flexibility, longitudinal rigidity)
-```
+$$P_{\text{cr}} = \frac{\pi^2 E_L I_{\text{min}}}{L^2} \quad \text{where } I_{\text{min}} = \frac{\pi}{64}(D_o^4 - D_i^4)$$
 
-**Spring Rates** (MAT-02 §3):
-```
-Lateral bending (cantilever): k_lat = 3·E·I / L³
-I = π·d⁴/64 = π×(2mm)⁴/64 ≈ 0.785 mm⁴
-For L = 150mm: k_lat ≈ 3 × 200×10⁹ × 0.785×10⁻¹² / 0.15³ ≈ 1.4 N/mm
+**Baleen Stay Geometry (per edition):**
+- Outer diameter: $D_o = 8\text{ mm}$ (tapered to 5 mm at tips)
+- Inner diameter: $D_i = 4\text{ mm}$ (central canal)
+- Length: $L = 350\text{ mm}$ (RM), $L = 320\text{ mm}$ (RW)
+- $I_{\text{min}} = 1.55 \times 10^{-10}\text{ m}^4$
 
-Axial stiffness: k_ax = E·A / L = 200×10⁹ × π×(2mm)²/4 / 0.15 ≈ 4.2×10⁶ N/m
-Ratio k_ax / k_lat ≈ 3×10⁶ (extreme anisotropy)
-```
+**Critical Load:**
+$$P_{\text{cr}} = \frac{\pi^2 \cdot 4.5\times10^9 \cdot 1.55\times10^{-10}}{(0.35)^2} = 5.8\text{ kN}$$
 
-**Hysteresis & Fatigue** (MAT-02 §3):
-```
-Hysteresis loss: 5-10% per cycle (elastic-plastic at spiral transitions)
-Fatigue life: >10⁶ cycles at 50% σ_y (≈ 600 MPa)
-Corrosion: 316L stainless recommended (sweat resistance, CREvice corrosion)
-```
+**Safety Factor (vs. LES Z4 tension 60-80N × 12 stays):**
+$$\text{SF} = \frac{P_{\text{cr}}}{12 \cdot T_{\text{max}}} = \frac{5800}{12 \cdot 80} = 6.0 \quad \text{✓ Adequate}$$
 
-### 1.4 Hybrid Chassis Architecture
+### 1.3 Viscoelastic Relaxation (Prony Series)
 
-**Baleen-Steel Composite Stays** (SYNTH-02 §4; MAT-04 §4.4):
-```
-Hybrid stay construction:
-[Baleen core: 15×2mm] + [Spiral steel wrap: 1.5mm wire, 4mm pitch]
-OR: Alternating baleen/steel stays in channel
+**Time-Dependent Modulus:**
 
-Effective properties:
-E_eff_long = V_baleen·E_baleen + V_steel·E_steel
-For V_baleen=0.6, V_steel=0.4: E_eff ≈ 0.6×4 + 0.4×200 = 82.4 GPa
-P_cr_hybrid = π²·E_eff·I_total / L²
-I_total = I_baleen + I_steel + A_steel·d² (parallel axis)
-Target P_cr_hybrid > 500 N (SF > 2.5 vs lacing tension)
-```
+$$E(t) = E_\infty + \sum_{i=1}^{3} E_i \exp(-t/\tau_i)$$
 

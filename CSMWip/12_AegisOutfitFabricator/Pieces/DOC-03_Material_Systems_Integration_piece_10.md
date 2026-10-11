@@ -1,50 +1,23 @@
-```
-HAS = w₁·V + w₂·M + w₃·C + w₄·W  (weights: 0.3, 0.25, 0.25, 0.2)
-PES = Σ w_i·T_i  (thermal, ballistic, EMI, DE, trauma weights: 0.25, 0.25, 0.2, 0.15, 0.15)
+**Shell Materials (per MAT-03 §3.3):**
+- **Primary:** Melamine-formaldehyde (MF), 50-100 nm shell
+- **Secondary:** Polyurea, 20-50 nm shell (hybrid for toughness)
+- **Core:** Silica aerogel, $\lambda = 0.015\text{ W/m·K}$, $\rho = 0.08\text{ g/cm}^3$
 
-Pareto frontier: NSGA-II, 500 generations, population 100
-Design variables per edition:
-x₁ = tile size {25, 35, 50} mm
-x₂ = tile coverage {0.4, 0.6, 0.8}
-x₃ = MXene thickness {1, 2, 3} μm
-x₄ = aerogel batting {100, 150, 200} g/m²
-x₅ = STF add-on {15%, 20%, 25%}
-x₆ = baleen/steel ratio {1.0, 0.7, 0.5, 0.0}
-```
+**Size Distribution (Log-normal):**
 
-### 4.2 Weight Budget Per Edition
+$$f(d) = \frac{1}{d \sigma \sqrt{2\pi}} \exp\left[-\frac{(\ln d - \ln d_{50})^2}{2\sigma^2}\right]$
 
-**Renaissance Equivalent Weight Budget** (MAT-04 §2.2):
-```
-| Edition | Ceramic | Textiles | Framework | Coatings | Total |
-|---------|---------|----------|-----------|----------|-------|
-| LE-TS   | 8-10 kg | 3-4 kg   | 4-5 kg    | 1-2 kg   | 16-21 kg |
-| LE-TG   | 10-13 kg| 4-5 kg   | 6-8 kg    | 1-2 kg   | 21-28 kg |
-| LE-SS   | 7-9 kg  | 2-3 kg   | 3-4 kg    | 1-2 kg   | 13-18 kg |
-| LE-SG   | 9-11 kg | 3-4 kg   | 5-6 kg    | 1-2 kg   | 18-23 kg |
-```
+$d_{50} = 75\ \mu\text{m}$, $\sigma = 0.4$ (span 50-100 μm)
 
-### 4.3 Thermal Comfort Analysis
+**Quilting Integration:**
 
-**Layer Thermal Resistances** (MAT-04 §3.2):
-```
-| Layer | t (mm) | k (W/m·K) | R (m²K/W) |
-|-------|--------|-----------|-----------|
-| YInMn coating | 0.23 | 1.5 | 0.00015 |
-| Ceramic tile (4mm) | 4 | 15 | 0.00027 |
-| Silk brocade + MXene | 1 | 0.15 | 0.0067 |
-| Embroidery | 0.5 | 0.15 | 0.0033 |
-| Aerogel batting (5mm) | 5 | 0.015 | 0.333 |
-| STF silk/linen | 1 | 0.15 | 0.0067 |
-| Baleen/steel | 5 | 0.2/40 | 0.025/0.0001 |
-| Liner | 0.5 | 0.15 | 0.0033 |
-| CoAl₂O₄ | 0.15 | 1.5 | 0.0001 |
-| **Total** | **~17.4** | | **~0.38-0.40** |
-```
+$$\lambda_{\text{eff}} = \lambda_{\text{aerogel}} \cdot \phi + \lambda_{\text{silk}} \cdot (1-\phi) + \lambda_{\text{air}} \cdot \phi_{\text{void}}$$
 
-**Core Temperature Rise** (MAT-04 §3.2):
-```
-At heavy work (M=400W, A=2m², q=200 W/m²):
-ΔT = 200 × (0.39 + 0.1) = 98°C above ambient
-→ CRITICAL: Requires active cooling or duty cycle limits
+$\phi = 0.35$ (aerogel volume fraction in batting), target $\lambda_{\text{eff}} \leq 0.025\text{ W/m·K}$
 
+### 3.4 STF Impregnation Protocol (per MAT-03 §3.4, CSMFAB078 Main §4.5, CSMFAB078-B §3.3, Research Doc 2 §6.4, SYNTH-01 §4.5)
+
+**SiO₂-PEG Formulation (per MAT-03 §3.4):**
+- SiO₂ nanoparticles: 20-50 nm, fumed silica (Aerosil® 200)
+- PEG 400: Carrier fluid, $\eta = 90\text{ mPa·s}$ @ 25°C
+- Volume fraction: $\phi = 0.45$ (near jamming transition $\phi_J \approx 0.52$)

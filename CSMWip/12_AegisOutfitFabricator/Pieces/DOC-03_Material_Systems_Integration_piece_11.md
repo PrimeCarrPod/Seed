@@ -1,50 +1,23 @@
-Mitigation: PCM inserts, ventilation channels, moisture-wicking liner, duty cycle 20/40 min
-```
+- Additives: Silane coupling agent (3-APS) 2% w/w for fiber adhesion
 
-### 4.4 Mobility & Joint Range of Motion
+**Vacuum-Assisted Impregnation:**
 
-**Joint ROM Requirements** (MAT-04 §4.1):
-```
-Shoulder: 180° flexion, 60° extension
-Elbow: 0-150° flexion
-Hip: 120° flexion, 20° extension, 40° abduction
-Knee: 0-140° flexion
-Ankle: 20° DF, 50° PF
-```
+$$\Delta P = -0.8\text{ bar}, \quad t = 30\text{ min}, \quad T = 25^\circ\text{C}$$
 
-**Ceramic Tile Articulation** (MAT-04 §4.2):
-```
-Tile gap at joint: g = 2-3 mm (allows 15-20° bending before contact)
-Overlap pattern: imbricated (scale-like) for multi-directional flexion
-Tiles per joint zone: 6-12 (scales with edition)
+**Add-on Weight Target:**
 
-Bending stiffness: D = E_ceramic·t³/12(1-ν²) + E_fabric·t_f³/12(1-ν²)
-For 4mm ceramic + 2mm fabric: D ≈ 200-500 N·m
-Moment for 15° bend over 100mm: M ≈ 500-1300 N·mm
-Torque at shoulder/elbow: <10 Nm (within human capability)
-```
+$$\text{AOW} = \frac{m_{\text{STF}} - m_{\text{dry}}}{m_{\text{dry}}} \times 100\% = 35-45\%$$
 
-**STF Layer Mobility** (MAT-04 §4.3; CSMFAB078 §4 Layer 8,9):
-```
-At low shear rates (normal movement <5 s⁻¹): η ≈ η₀ (low viscosity)
-At high shear rates (impact): η → η_max (stiffens)
-Transition shear rate: γ̇_c ≈ 10-50 s⁻¹
-Result: Normal movement unimpeded, impact protection active
-```
+**Shear-Thickening Response:**
 
-**LES 12-Zone Tension Calibration** (MAT-04 §4.4; CSMFAB078-A §3.3):
-```
-Zone tensions per edition:
-Shoulders: 15-25 N (scapular motion)
-Chest: 20-40 N (respiratory expansion)
-Waist: 30-60 N (core stability, sitting)
-Hips: 20-40 N (walking stride)
-Thighs: 15-25 N (knee flexion)
-Calves: 10-20 N (ankle motion)
-Arms: 10-20 N (full ROM)
-```
+$$\eta(\dot{\gamma}) = \eta_0 \left[1 + \left(\frac{\dot{\gamma}}{\dot{\gamma}_c}\right)^n\right]$$
 
-*Traceability: MAT-04 §1-4; MAT-01-03; SYNTH-01-03; DRAFT-01-05; CSMFAB078 §2-5*
+$\dot{\gamma}_c = 100\text{ s}^{-1}$, $n = 3.5$, $\eta_0 = 0.1\text{ Pa·s}$ → $\eta_{\text{max}} > 1000\text{ Pa·s}$
 
----
+### 3.5 Surface & Interior Coatings (per MAT-03 §3.5, CSMFAB078 Main §4.6, CSMFAB078-B §3.4, SYNTH-01 §4.6)
 
+**YInMn Blue Synthesis (per MAT-03 §3.5):**
+
+$$\text{Y}_2\text{O}_3 + \text{In}_2\text{O}_3 + \text{MnO}_2 \xrightarrow{1200^\circ\text{C}} \text{YIn}_{1-x}\text{Mn}_x\text{O}_3$$
+
+$x = 0.15$ (optimal NIR reflectance), particle size: 200-500 nm.

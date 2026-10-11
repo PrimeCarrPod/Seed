@@ -20,11 +20,3 @@ $$\text{Developable Surface: } \mathbf{r}(u,v) = \mathbf{c}(u) + v \cdot \mathbf
 
 - **Directrix curve** $\mathbf{c}(u)$: Body silhouette cross-section (bust, waist, hip)
 - **Generatrix ruling** $\mathbf{g}(u)$: Straight grain lines parallel to selvage
-- **Loom width constraint**: $W_{\text{loom}} = 560\text{ mm}$ (22-inch standard, per Alcega Table 1)
-
-**Unfolding Algorithm (Alcega §12-15):**
-1. Slice body surface along principal curvature lines
-2. Project each slice onto plane along ruling direction
-3. Nest resulting pattern pieces within $W_{\text{loom}} \times L_{\text{fabric}}$
-4. Add seam allowances per CIETA Class 1 (10 mm) or Class 2 (15 mm)
-

@@ -1,44 +1,21 @@
-```
-Pipeline stages:
-1. Anthropometric extraction: 50+ landmarks from 3D scan
-2. Directrix construction: spline through landmark chains
-3. Generatrix distribution: equal-angle or equal-spacing
-4. Developable mapping: S(u,v) → flat (u,v) domain
-5. Seam placement: at ruling intersections
-6. Grain line: align with warp direction (∂S/∂u)
-```
 
-**Metric Preservation in Unfolding** (SYNTH-03 §1.3):
-```
-First fundamental form: I = E du² + 2F du dv + G dv²
-E = |∂S/∂u|², F = ∂S/∂u · ∂S/∂v, G = |∂S/∂v|²
+$$\mathbf{g}(u) = \frac{\mathbf{c}'(u) \times \mathbf{k}}{\|\mathbf{c}'(u) \times \mathbf{k}\|} \quad \text{(parallel to selvage)}$$
 
-For developable: F = 0 (orthogonal rulings), G = 1 (unit rulings)
-Flat metric: I_flat = E du² + dv²
-Area preservation: √(EG - F²) = √E
-Distortion measure: η = |√E - 1| (target η < 0.05)
-```
+Where $\mathbf{k} = [0,0,1]^T$ (vertical axis).
 
-### 1.3 DXF/SVG Output Specification
+**Developable Surface Parametrization:**
 
-**Layer Structure** (DRAFT-01 §1.4):
-```
-Layers:
-- CUT:     Continuous lines, 0.25mm weight, red (#FF0000)
-- FOLD:    Dashed lines (2mm/1mm), 0.18mm weight, blue (#0000FF)
-- NOTCH:   V-notches 3mm × 1.5mm, green (#00FF00)
-- GRAINLINE: Double arrow, 0.18mm weight, magenta (#FF00FF)
-- LABEL:   Text annotations, 2.5mm height, black (#000000)
-- SEAM_ALLOWANCE: Offset construction lines, 0.10mm weight, gray (#808080)
-```
+$$\mathbf{r}(u,v) = \mathbf{c}(u) + v \cdot \mathbf{g}(u), \quad v \in [0, W_{\text{pattern}}]$$
 
-**Units & Precision** (DRAFT-01 §1.4):
-```
-Units: millimeters (mm)
-Precision: 0.01 mm (2 decimal places)
-Coordinate system: Origin at pattern piece centroid
-Seam allowance: 13mm default (Ssa-1 per ASTM D1683), configurable per MAT-04
-```
+**Gaussian Curvature Constraint (Developability):**
 
-### 1.4 Cutting Layout Optimizer
+$$K = \kappa_1 \kappa_2 = 0 \quad \Rightarrow \quad \det(\mathbf{r}_{uu} \cdot \mathbf{r}_v, \mathbf{r}_u \cdot \mathbf{r}_{uv}, \mathbf{r}_v \cdot \mathbf{r}_{vv}) = 0$$
+
+### 1.2 Alcega Unfolding Algorithm
+
+**Step 1: Principal Curvature Line Tracing**
+
+$$\frac{du}{dv} = \pm \sqrt{\frac{E}{G}} \quad \text{(lines of curvature on developable surface)}$$
+
+**Step 2: Geodesic Parallel Transport**
 

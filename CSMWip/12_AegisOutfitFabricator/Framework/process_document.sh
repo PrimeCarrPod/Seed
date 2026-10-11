@@ -30,15 +30,15 @@ echo ""
 echo "Step 1: Quality check..."
 ./Framework/check_doc_quality.sh "$DOC" || exit 1
 
-# 2. Split into pieces (target 13 pieces)
-echo "Step 2: Splitting into ~13 pieces..."
+# 2. Split into pieces (target 17 pieces)
+echo "Step 2: Splitting into ~17 pieces..."
 LINES=$(wc -l < "$DOC")
-SPLIT_SIZE=$(( (LINES + 12) / 13 ))  # Ceiling division to get ~13 pieces
-if (( SPLIT_SIZE < 30 )); then SPLIT_SIZE=30; fi  # Minimum 30 lines per piece
+SPLIT_SIZE=$(( (LINES + 16) / 17 ))  # Ceiling division to get ~17 pieces
+if (( SPLIT_SIZE < 15 )); then SPLIT_SIZE=15; fi  # Minimum 15 lines per piece
 if (( SPLIT_SIZE > 500 )); then SPLIT_SIZE=500; fi  # Maximum 500 lines per piece
 echo "  Document lines: $LINES, Split size: $SPLIT_SIZE"
 gh_split_file "$DOC" "$SPLIT_SIZE"
-# Creates .github_handler/splits/BASENAME_part00.md through _part12.md + manifest.json
+# Creates .github_handler/splits/BASENAME_part00.md through _part16.md + manifest.json
 
 # Copy pieces to Pieces/ directory with expected naming
 echo "  Copying pieces to Pieces/..."
@@ -46,7 +46,7 @@ SPLIT_DIR=".github_handler/splits"
 for part in "$SPLIT_DIR/${BASENAME}_part"*.md; do
     if [[ -f "$part" ]]; then
         part_num=$(basename "$part" | sed 's/.*_part\([0-9]*\)\.md/\1/')
-        # Convert to 2-digit piece number (01-13)
+        # Convert to 2-digit piece number (01-17)
         piece_num=$(printf "%02d" $((10#$part_num + 1)))
         cp "$part" "$PIECES_DIR/${BASENAME}_piece_${piece_num}.md"
     fi
@@ -61,7 +61,7 @@ zip -q "${BASENAME}_pieces.zip" ${BASENAME}_piece_*.md ${BASENAME}_manifest.json
 cd ..
 
 # 4. Push each piece to GitHub
-echo "Step 4: Pushing pieces to GitHub (13 strategies each)..."
+echo "Step 4: Pushing pieces to GitHub (17 strategies each)..."
 for p in "$PIECES_DIR/${BASENAME}_piece_"*.md; do
     echo "  Pushing $(basename "$p")..."
     gh_save_file "$p" "Piece: $MSG" "$BRANCH" || exit 1
@@ -90,6 +90,6 @@ echo "Step 8: Logging completion..."
 echo ""
 echo "✅ DOCUMENT PIPELINE COMPLETE: $BASENAME"
 echo "   Original: $DOC"
-echo "   Pieces: 13 pushed to GitHub"
+echo "   Pieces: 17 pushed to GitHub"
 echo "   Archive: $PIECES_DIR/${BASENAME}_pieces.zip"
 echo "   Verified: Clean reassembly + 17-way GitHub check"

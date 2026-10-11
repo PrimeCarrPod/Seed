@@ -1,30 +1,22 @@
-| EMI shielding | "Cloth of gold/silver" | MXene Ti₃C₂Tₓ on thread | Always pair: "MXene-coated metallic thread (historical: cloth of gold)" |
-| Thermal insulation | "Quilting/batting" | Aerogel microcapsules | Always pair: "Aerogel microcapsule quilting (historical: silk batting)" |
-| Impact mitigation | "Stuffed doublet" | STF SiO₂-PEG impregnation | Always pair: "STF-impregnated silk (historical: stuffed doublet)" |
-| Structural chassis | "Baleen/whalebone stays" | Baleen/steel hybrid | Always pair: "Baleen-steel chassis (historical: baleen stays)" |
-| NIR coating | "Ultramarine/azurite pigment" | YInMn Blue + QD | Always pair: "YInMn Blue (historical: ultramarine replacement)" |
+**Protection Functions $\Pi_t(\mathbf{x})$** derived from layer stack physics (DOC-01 §2.2, MAT-03, MAT-04).
+
+### 3.3 Pareto Frontier Methodology (NSGA-II)
+
+$$\mathcal{P}^* = \{\mathbf{x} \in \mathcal{X} \mid \nexists \mathbf{y} \in \mathcal{X}: \text{HAS}(\mathbf{y}) \geq \text{HAS}(\mathbf{x}) \land \text{PES}(\mathbf{y}) \geq \text{PES}(\mathbf{x}) \land (\text{HAS}(\mathbf{y}) > \text{HAS}(\mathbf{x}) \lor \text{PES}(\mathbf{y}) > \text{PES}(\mathbf{x}))\}$$
+
+**Algorithm Parameters:**
+- Population: 200 designs per edition
+- Generations: 500
+- Crossover: SBX ($\eta_c = 15$)
+- Mutation: Polynomial ($\eta_m = 20$)
+- Constraint handling: Feasibility-first with $\epsilon$-constraint relaxation
+
+**Decision Variables $\mathbf{x}$ (per edition):**
+- Layer thicknesses $t_k$ (12 variables)
+- Material selections $m_k$ (categorical, 3-5 options per layer)
+- LES tensions $T_z$ (12 variables)
+- Pattern scaling factors $s_x, s_y, s_z$ (3 variables)
+- Metallic thread density $\rho_{\text{Au}}$ (1 variable)
 
 ---
-
-## 5. Cross-Cutting Historical Engineering Principles
-
-### 5.1 Zero-Waste as Default (Not Optimization)
-
-Alcega's system **assumes zero waste** — pattern pieces are derived to fill the loom width completely. Modern "zero-waste optimization" (DRAFT-05) **recovers** this principle.
-
-$$\eta_{\text{nest}} = \frac{\sum A_{\text{pieces}}}{W_{\text{loom}} \cdot L_{\text{used}}} = 1.0 \quad \text{(Alcega ideal)}$$
-
-Modern target: $\eta_{\text{nest}} \geq 0.92$ (allowing for selvedge waste, pattern matching).
-
-### 5.2 Modular Construction = Edition Adaptability
-
-Historical garments were **altered, not discarded** — panels added/removed, lacing adjusted, skirts re-pleated. This maps directly to **LES edition transitions**:
-
-$$\text{Edition Change} = \Delta \mathbf{P}_{\text{panels}} + \Delta \mathbf{T}_{\text{LES}} + \Delta \mathbf{C}_{\text{ceramic}}$$
-
-Where panel deltas follow historical alteration methods (DRAFT-05 §4.3).
-
-### 5.3 Guild Specialization = Process Isolation
-
-Sumptuary-enforced guild segregation ensures **process traceability** and **quality isolation** — each trade (silkweaver, embroiderer, tailor, furrier) has distinct QC gates. Modern equivalent: **fabricator chain stations with independent validation** (DOC-01 §5.1).
 

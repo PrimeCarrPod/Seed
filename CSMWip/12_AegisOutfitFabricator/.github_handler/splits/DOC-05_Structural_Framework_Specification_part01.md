@@ -1,37 +1,20 @@
-```
-√(J₂) + α·I₁ = k
-α ≈ 0.1-0.2 for keratinous materials [TBD:RESEARCH]
-I₁ = σ₁ + σ₂ + σ₃ (hydrostatic pressure)
-J₂ = 1/6[(σ₁-σ₂)² + (σ₂-σ₃)² + (σ₃-σ₁)²] (deviatoric)
-```
+0 & 0 & 0 & G_{LT} & 0 & 0 \\
+0 & 0 & 0 & 0 & G_{LR} & 0 \\
+0 & 0 & 0 & 0 & 0 & G_{TR}
+\end{bmatrix}$$
 
-### 1.2 Euler Buckling Prevention in Stays
+**Principal Values (per MAT-02 §3.1):**
+- $E_L = 4.5\text{ GPa}$ (longitudinal, along keratin tubules)
+- $E_T = 1.8\text{ GPa}$ (transverse, circumferential)
+- $E_R = 1.2\text{ GPa}$ (radial, through thickness)
+- $\nu_{LT} = 0.35$, $\nu_{TL} = 0.14$ (reciprocity: $\nu_{TL} = \nu_{LT} E_T/E_L$)
+- $\nu_{TR} = 0.40$, $\nu_{RT} = 0.27$
+- $\nu_{LR} = 0.38$, $\nu_{RL} = 0.10$
+- $G_{LT} = 0.65\text{ GPa}$, $G_{LR} = 0.45\text{ GPa}$, $G_{TR} = 0.35\text{ GPa}$
+- Density: $\rho = 1.35\text{ g/cm}^3$
+- Moisture content: 12-15% (equilibrium at 65% RH, 20°C)
 
-**Critical Load per Stay** (Research Doc 1 §5.1; MAT-02 §1.4):
-```
-P_cr = π²·E·I / L²
+### 1.2 Euler Buckling Analysis for Baleen Stays
 
-Stay cross-section: rectangular, width b = 7mm, thickness h = 2mm
-I = b·h³/12 = 7×2³/12 = 4.67 mm⁴ = 4.67×10⁻¹² m⁴
-Stay length: L = 150mm = 0.15m (typical)
-E = 4×10⁹ Pa (hydrated baleen, mid-range)
-End conditions: pinned-pinned (K=1) for laced stays
+**Critical Buckling Load (Pinned-Pinned):**
 
-P_cr = π² × 4×10⁹ × 4.67×10⁻¹² / 0.15² ≈ 8.2 N per stay
-```
-
-**Stay Array Buckling Resistance** (MAT-02 §1.4):
-```
-Typical corset: 20-30 stays (10-15 per side)
-Total buckling resistance: P_total = N_stays × P_cr
-For 24 stays: P_total ≈ 24 × 8.2 N = 197 N
-Safety factor vs. lacing tension (typical 150-200N): SF ≈ 1.0-1.3
-→ Requires spiral steel reinforcement for SF > 2.0
-```
-
-### 1.3 Spiral Steel Boning Mechanics
-
-**Material Properties** (Research Doc 1 §5.3; MAT-02 §3):
-```
-Spring steel 17-7 PH (precipitation hardening):
-E = 200 GPa, σ_y = 1200-1500 MPa, ρ = 7.8 g/cm³

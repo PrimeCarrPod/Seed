@@ -1,30 +1,22 @@
+### 2.1 Algorithmic Constraints from Historical Regulation
 
-$$\text{HAS} = \sum_{k=1}^{K} \omega_k \cdot \mathbb{I}[F_k \in \mathcal{H}_{1600-1700}] + \sum_{m=1}^{M} \gamma_m \cdot \text{Sim}(P_m, P_m^{\text{hist}})$$
+Sumptuary laws (1550-1700) imposed **quantifiable limits** on materials, construction, and display — directly translatable to design constraints.
 
-**Feature Categories ($K=12$):**
-1. Silhouette accuracy (Watteau back, farthingale profile)
-2. Textile typology compliance (CIETA class match)
-3. Stitch class fidelity (ISO 4915 ↔ historical mapping)
-4. Seam allowance adherence (Alcega/Garsault specs)
-5. Lacing topology (historical eyelet placement)
-6. Pleating mathematics (3:1 Watteau, S-curve cartridge)
-7. Metallic thread construction (Au-Hg/Ag gilded)
-8. Pigment chemistry (historical palette match)
-9. Fastener form (aglet, hook/eye, aiglet)
-10. Lining technique (bag lining vs. flat lining)
-11. Edge finishing (pinked, bound, whipped)
-12. Decorative program (embroidery, slashing, pinking)
+| Constraint | Historical Law | Algorithmic Form | Layer Impact |
+|------------|----------------|------------------|--------------|
+| **Gold thread width** | Elizabethan 1574: "no gold thread > 1/8 inch" | $w_{\text{Au}} \leq 3.175\text{ mm}$ | L3, L4, L6 metallic thread |
+| **Dye chemistry** | Spanish 1582: "no cochineal on silk < 20 ducats/yard" | $\text{Cost}_{\text{dye}} \leq C_{\text{max}}$ | L1 YInMn Blue synthesis |
+| **Yardage maximum** | French 1629: "court gown ≤ 15 aunes (19.5 m)" | $A_{\text{total}} \leq 19.5\text{ m}^2$ | Nesting optimization (DRAFT-05) |
+| **Guild segregation** | London 1604: "tailors ≠ embroiderers ≠ silkweavers" | $\text{Process}_i \cap \text{Process}_j = \emptyset$ | Fabricator chain topology |
+| **Fur restrictions** | Venetian 1562: "ermine only for doge/council" | $\text{Material}_{\text{fur}} \in \{\text{permitted}\}$ | L10 baleen substitution |
 
-**Similarity Metric for Continuous Parameters:**
+### 2.2 Constraint Satisfaction Formulation
 
-$$\text{Sim}(P_m, P_m^{\text{hist}}) = \exp\left(-\frac{|P_m - P_m^{\text{hist}}|^2}{2\sigma_m^2}\right)$$
+$$\text{Find } \mathbf{x} \in \mathcal{X} \text{ s.t. } \mathbf{g}(\mathbf{x}) \leq \mathbf{0}, \quad \mathbf{h}(\mathbf{x}) = \mathbf{0}$$
 
-Where $\sigma_m$ is historical variance from extant garment measurements (V&A, MET, Kunsthistorisches collections).
+Where:
+- $\mathbf{g}(\mathbf{x})$: Inequality constraints (sumptuary limits, mass budget, thickness)
+- $\mathbf{h}(\mathbf{x})$: Equality constraints (geometric closure, LES tension balance)
+- $\mathcal{X}$: Feasible set (CIETA weaves, Alcega geometry, material specs)
 
-### 3.2 Protection Efficacy Score (PES)
-
-$$\text{PES} = \frac{1}{5}\sum_{t \in \mathcal{T}} \min\left(1, \frac{\Pi_t(\mathbf{x})}{\Pi_t^{\text{req}}}\right)$$
-
-**Threat Vector Set $\mathcal{T}$:**
-- $t_1$: Ballistic (NIJ IV)
-- $t_2$: Thermal (1100°C/300s)
+**Constraint Relaxation for Modern Protection:**
