@@ -1,37 +1,26 @@
-2. Chassis: Baleen/steel stays/corset donning, front busk closure
-3. LES lacing: Zones 5-6 (waist/core) first → 3-4 → 1-2 → 7-8 → 9-12
-4. Farthingale (RW): Deploy hoops, tension tapes, lock
-5. Ceramic tiles: Magnetic snap-in, verify alignment (SE spot-check)
-6. Overlayers: Brocade (MXene thread), embroidery (fractal FSS)
-7. Coatings: YInMn Blue (Layer 1), CoAl₂O₄ liner (Layer 12)
-8. Sensors: PVDF-TrFE connect, bio-acoustic baseline
-9. LES final tension: All 12 zones to edition spec
-10. Validation: Full system self-test (DOC-09 §3)
-```
 
-**Doffing Sequence** (Reverse of donning):
-```
-1. LES de-tension: All 12 zones simultaneously (15s)
-2. Sensor disconnect
-3. Overlayer removal
-4. Ceramic tile removal (magnetic release)
-5. Farthingale collapse (RW)
-6. Chassis doffing
-7. Base layer removal
-```
-
-*Traceability: CSMFAB078 §3.3, §4; MAT-03 §1.2; MAT-01 §1.5; DOC-01 §2.2; DOC-10 §1; MAT-04 §4.4*
+| Risk ID | Description | Likelihood | Impact | Mitigation |
+|---------|-------------|------------|--------|------------|
+| SF-01 | Baleen moisture cycling causes dimensional drift | High | Medium | Synthetic alternative qualified, humidity control |
+| SF-02 | Steel boning fatigue at spiral stress concentration | Medium | High | Shot peening, $K_t$ reduction, inspection interval |
+| SF-03 | Hoop deployment collision with ceramic tiles | Medium | High | Kinematic simulation, staged deployment |
+| SF-04 | LES tension calibration drift over duty cycle | High | Medium | Auto-recalibration every 2 hours |
+| SF-05 | Magnetic alignment degradation (temperature) | Low | High | NdFeB $T_{\text{max}} = 150^\circ\text{C}$, thermal shield |
 
 ---
 
-## 5. Edition-Specific Structural Parameters
+## 9. Mass Budget — Structural Framework (Validated)
 
-### 5.1 RenaissanceMan Chassis Parameters
+| Component | RM-TS (kg) | RM-TG (kg) | RW-TS (kg) | RW-TG (kg) |
+|-----------|------------|------------|------------|------------|
+| Baleen stays (24) | 1.2 | 1.5 | 1.0 | 1.3 |
+| Steel boning (12) | 0.6 | 0.7 | 0.5 | 0.6 |
+| Hoop wires (4×4) | 0.8 | 1.0 | 0.7 | 0.9 |
+| Tape suspension | 0.15 | 0.18 | 0.13 | 0.16 |
+| Cleats/aglets (Ti₃AlC₂) | 0.05 | 0.06 | 0.04 | 0.05 |
+| **Subtotal** | **2.80** | **3.44** | **2.37** | **3.01** |
 
-| Parameter | RM-TS | RM-TG | RM-SS | RM-SG |
-|-----------|-------|-------|-------|-------|
-| Vertical stays/side | 12 | 14 | 10 | 12 |
-| Horizontal stays/side | 4 | 5 | 4 | 4 |
-| Baleen channel width | 18mm | 20mm | 16mm | 18mm |
-| Spiral steel wire | 2.0mm | 2.5mm | 1.5mm | 2.0mm |
-| Baleen/steel ratio | 0.7 | 0.5 | 0.8 | 0.7 |
+---
+
+*End of DOC-05 — Structural Framework Specification*  
+*Next: DOC-06 Protective Layer Architecture*
