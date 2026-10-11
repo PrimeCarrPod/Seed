@@ -10,7 +10,7 @@
 │   ├── MASTER_TODO_C.md         # Phase 7-10: GitHub, Quality, Delivery, Closure
 │   ├── heartbeat.sh             # Session progress logging (executable)
 │   ├── RESUME_SESSION.md        # Session restoration guide
-│   ├── NEXT_RUNNER_001.md       # Next session task breakdown (13 pieces)
+│   ├── NEXT_RUNNER_001.md       # Next session task breakdown (17 pieces)
 │   ├── README.md                # This document
 │   ├── check_doc_quality.sh     # Document quality gate script
 │   ├── verify_github_17ways.sh  # 17-way GitHub verification script
@@ -52,10 +52,10 @@
 **Purpose**: Complete session restoration guide
 **Contains**: Environment verification, project structure, required pre-reading, session commands, troubleshooting, escalation criteria
 
-### 6.2.3 NEXT_RUNNER_001.md (13 pieces)
+### 6.2.3 NEXT_RUNNER_001.md (17 pieces)
 **Purpose**: Next session immediate execution plan
 **Parts**: A (Bootstrap), B (Research Extraction), C (Quality Gates + Roadmap)
-**Split**: 13 pieces × ~100 lines each + manifest + zip
+**Split**: 17 pieces × ~200 lines each + manifest + zip
 
 ### 6.2.4 check_doc_quality.sh
 **Purpose**: Automated quality gate for every document

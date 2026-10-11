@@ -16,7 +16,7 @@
 - [ ] Test gh_assess_difficulty() on sample documents
 - [ ] Test gh_split_file() with 500-line max — produces numbered parts + manifest.json
 - [ ] Test gh_join_files() — reassembles from manifest to clean output
-- [ ] Test gh_save_file() end-to-end with all 13 strategies
+- [ ] Test gh_save_file() end-to-end with all 17 strategies
 - [ ] Test gh_process_queue() for merge queue processing
 
 ### 7.2 17-Way GitHub Verification Protocol
@@ -43,7 +43,7 @@
 | 17 | Difficulty log entry | `cat .github_handler/difficulty_log.json | jq .files["piece_file"]` | Entry exists with success_method |
 
 - [ ] Automate 17-way verification script: `verify_github_17ways.sh <piece_file>`
-- [ ] Run verification for ALL 150 documents × 13 pieces = 1,950 verifications
+- [ ] Run verification for ALL 150 documents × 17 pieces = 2,550 verifications
 - [ ] Log all verification results in `.github_handler/verification_log.json`
 - [ ] Alert on ANY failed verification — stop and investigate
 
@@ -101,7 +101,7 @@
 ### 9.1 Delivery Package Assembly
 - [ ] **Framework/** — All scripts, configs, MASTER_TODO_A/B/C, logs
 - [ ] **Research/** — Seed documents (2), analysis reports (3 synthesized)
-- [ ] **Pieces/** — 1,950 piece files + 150 manifests + 150 zip archives
+- [ ] **Pieces/** — 2,550 piece files + 150 manifests + 150 zip archives
 - [ ] **FinishedWork/** — 150 clean, reassembled documents
 - [ ] **CSMFAB0??_Aegis RenaissanceMan/** — 50 fabrication documents + 5 image prompts
 - [ ] **CSMFAB0??_Aegis RenaissanceWoMan/** — 50 fabrication documents + 5 image prompts
@@ -115,7 +115,7 @@
 - [ ] Historical accuracy audit: Expert review of Research Doc 1 alignment
 - [ ] Protection efficacy audit: Expert review of CSMFAB078 technology transfer
 - [ ] Image prompt completeness: All 10 prompts follow Master Composition Guide
-- [ ] GitHub completeness: All 1,950 pieces + 150 zips + Framework verified 17 ways
+- [ ] GitHub completeness: All 2,550 pieces + 150 zips + Framework verified 17 ways
 
 ### 9.3 Archival & Handoff
 - [ ] Create release tarball: `AegisOutfitFabricator_v1.0_Complete.tar.gz`
@@ -144,7 +144,7 @@
 ---
 
 ## 📋 DEFINITION OF DONE — PHASE 7-10
-- [ ] All 1,950 pieces pushed to GitHub, verified 17 ways each
+- [ ] All 2,550 pieces pushed to GitHub, verified 17 ways each
 - [ ] All 150 documents reassembled in FinishedWork/ — forensically clean
 - [ ] All quality gates passed for every document
 - [ ] Complete delivery package assembled and verified
@@ -188,9 +188,9 @@
 |--------|--------|-------------|
 | Total Documents | 150 | Count in FinishedWork/ |
 | Total Lines | ~45,000+ | `wc -l FinishedWork/*.md` |
-| Total Pieces | 1,950 | 150 × 13 |
+| Total Pieces | 2,550 | 150 × 17 |
 | Total Zip Archives | 150 | 1 per document |
-| GitHub Verification Pass Rate | 100% | 17-way × 1,950 pieces |
+| GitHub Verification Pass Rate | 100% | 17-way × 2,550 pieces |
 | Piece Reassembly Diff | 0 bytes | `diff` per document |
 | Image Prompts | 10 | 5 per variant |
 | Cross-References | ≥450 | 3+ per document |

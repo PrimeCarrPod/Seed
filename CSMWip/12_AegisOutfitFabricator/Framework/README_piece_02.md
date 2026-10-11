@@ -182,7 +182,7 @@ Core 50 ←───────── RM 50 ←───────── RW 5
 │                                                                │
 │  3. SPLIT                                                      │
 │     gh_split_file "FinishedWork/DOC.md" 500                   │
-│     → Creates 13 pieces in Pieces/ + manifest.json            │
+│     → Creates 17 pieces in Pieces/ + manifest.json            │
 │                                                                │
 │  4. ZIP                                                        │
 │     cd Pieces && zip DOC_pieces.zip DOC_piece_*.md manifest   │
@@ -265,4 +265,4 @@ For EVERY piece pushed, verify via ALL 17 methods:
 16. Merge queue status = completed
 17. Difficulty log entry exists with success_method
 
-**Target**: 100% pass rate on 1,950 pieces × 17 = 33,150 verifications
+**Target**: 100% pass rate on 2,550 pieces × 17 = 43,350 verifications

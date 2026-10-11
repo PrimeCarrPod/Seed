@@ -242,7 +242,7 @@ By end of Session 001, the following MUST exist in FinishedWork/:
 - [ ] SYNTH-02_Protective_Layer_Adaptation_AIMES_to_Renaissance.md
 - [ ] SYNTH-03_Geometric_Drafting_Kernel_Specification.md
 
-Each pushed to GitHub as 13 pieces + zip, verified 17 ways, reassembled clean.
+Each pushed to GitHub as 17 pieces + zip, verified 17 ways, reassembled clean.
 
 ---
 

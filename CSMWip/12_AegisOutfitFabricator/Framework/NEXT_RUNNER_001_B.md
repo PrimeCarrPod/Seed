@@ -401,7 +401,7 @@
 
 ### For EACH Deliverable:
 - [ ] Author complete document (300+ lines, dense technical)
-- [ ] Split: `gh_split_file "FinishedWork/DOC.md" 500` → 13 pieces
+- [ ] Split: `gh_split_file "FinishedWork/DOC.md" 500` → 17 pieces
 - [ ] Zip: `cd Pieces && zip DOC_pieces.zip DOC_piece_*.md DOC_manifest.json`
 - [ ] Push pieces: `for p in Pieces/DOC_piece_*.md; do gh_save_file "$p" "Piece: DOC" "kilo/aegis-outfit-fabricator-wip"; done`
 - [ ] Push zip: `gh_save_file "Pieces/DOC_pieces.zip" "Archive: DOC" "kilo/aegis-outfit-fabricator-wip"`

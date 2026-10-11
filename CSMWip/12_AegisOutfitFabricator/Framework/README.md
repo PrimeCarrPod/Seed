@@ -40,7 +40,7 @@ The **AegisOutfitFabricator** is a revolutionary fabrication system that produce
 | **Aegis RenaissanceMan Fabrication Docs** | 50 | 4 editions (TS, TG, SS, SG) × mechanical specs + 5 image prompts |
 | **Aegis RenaissanceWoMan Fabrication Docs** | 50 | 4 editions (TS, TG, SS, SG) × mechanical specs + 5 image prompts |
 | **Total Documents** | **150** | Each 300+ lines, dense technical content |
-| **Document Pieces** | **1,950** | 13 pieces per document (GitHub Handler) |
+| **Document Pieces** | **2,550** | 17 pieces per document (GitHub Handler) |
 | **Zip Archives** | **150** | All pieces + manifest per document |
 | **Image Generation Prompts** | **10** | Following CSM_GEN_IMAGE_07_MASTER_COMPOSITION_GUIDE |
 
@@ -290,7 +290,7 @@ Core 50 ←───────── RM 50 ←───────── RW 5
 │                                                                │
 │  3. SPLIT                                                      │
 │     gh_split_file "FinishedWork/DOC.md" 500                   │
-│     → Creates 13 pieces in Pieces/ + manifest.json            │
+│     → Creates 17 pieces in Pieces/ + manifest.json            │
 │                                                                │
 │  4. ZIP                                                        │
 │     cd Pieces && zip DOC_pieces.zip DOC_piece_*.md manifest   │
@@ -373,7 +373,7 @@ For EVERY piece pushed, verify via ALL 17 methods:
 16. Merge queue status = completed
 17. Difficulty log entry exists with success_method
 
-**Target**: 100% pass rate on 1,950 pieces × 17 = 33,150 verifications# 6. FRAMEWORK & TOOLING
+**Target**: 100% pass rate on 2,550 pieces × 17 = 43,350 verifications# 6. FRAMEWORK & TOOLING
 
 ## 6.1 Framework Directory Structure
 
@@ -385,7 +385,7 @@ For EVERY piece pushed, verify via ALL 17 methods:
 │   ├── MASTER_TODO_C.md         # Phase 7-10: GitHub, Quality, Delivery, Closure
 │   ├── heartbeat.sh             # Session progress logging (executable)
 │   ├── RESUME_SESSION.md        # Session restoration guide
-│   ├── NEXT_RUNNER_001.md       # Next session task breakdown (13 pieces)
+│   ├── NEXT_RUNNER_001.md       # Next session task breakdown (17 pieces)
 │   ├── README.md                # This document
 │   ├── check_doc_quality.sh     # Document quality gate script
 │   ├── verify_github_17ways.sh  # 17-way GitHub verification script
@@ -427,10 +427,10 @@ For EVERY piece pushed, verify via ALL 17 methods:
 **Purpose**: Complete session restoration guide
 **Contains**: Environment verification, project structure, required pre-reading, session commands, troubleshooting, escalation criteria
 
-### 6.2.3 NEXT_RUNNER_001.md (13 pieces)
+### 6.2.3 NEXT_RUNNER_001.md (17 pieces)
 **Purpose**: Next session immediate execution plan
 **Parts**: A (Bootstrap), B (Research Extraction), C (Quality Gates + Roadmap)
-**Split**: 13 pieces × ~100 lines each + manifest + zip
+**Split**: 17 pieces × ~200 lines each + manifest + zip
 
 ### 6.2.4 check_doc_quality.sh
 **Purpose**: Automated quality gate for every document
@@ -744,7 +744,7 @@ Final reassembled documents must show **zero fabrication artifacts**:
 |--------|--------|-------------|
 | Document quality pass rate | 100% | All 150 docs pass check_doc_quality.sh |
 | Reassembly perfection | 100% | All 150 docs: diff = 0 bytes |
-| GitHub verification pass rate | 100% | 1,950 pieces × 17 ways = 33,150 checks |
+| GitHub verification pass rate | 100% | 2,550 pieces × 17 ways = 43,350 checks |
 | Cross-reference integrity | 100% | Zero broken links in dependency graph |
 | Terminology consistency | 100% | Standardized terms across all docs |
 | Mathematical consistency | 100% | Unit/dimensional analysis clean |
@@ -969,7 +969,7 @@ Core 50 (10) ←─────────────────────�
     ↓
 RM 50 (25) + RW 50 (25) [parallelizable]
     ↓
-GitHub Verification (all 1,950 pieces)
+GitHub Verification (all 2,550 pieces)
     ↓
 Final Delivery
 ```
@@ -1061,7 +1061,7 @@ git status && git log --oneline -5
 ---
 
 *README.md — Complete Project Documentation*
-*150 Documents | 1,950 Pieces | 150 Archives | 10 Image Prompts*
+*150 Documents | 2,550 Pieces | 150 Archives | 10 Image Prompts*
 *Historical Renaissance Protective Outfit Fabrication System*
 *Carrington Storm Motors / Safe Pod Engineering Company*
 *October 2026*# 13.6 Mathematical Notation Standards

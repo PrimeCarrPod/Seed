@@ -40,7 +40,7 @@ The **AegisOutfitFabricator** is a revolutionary fabrication system that produce
 | **Aegis RenaissanceMan Fabrication Docs** | 50 | 4 editions (TS, TG, SS, SG) × mechanical specs + 5 image prompts |
 | **Aegis RenaissanceWoMan Fabrication Docs** | 50 | 4 editions (TS, TG, SS, SG) × mechanical specs + 5 image prompts |
 | **Total Documents** | **150** | Each 300+ lines, dense technical content |
-| **Document Pieces** | **1,950** | 13 pieces per document (GitHub Handler) |
+| **Document Pieces** | **2,550** | 17 pieces per document (GitHub Handler) |
 | **Zip Archives** | **150** | All pieces + manifest per document |
 | **Image Generation Prompts** | **10** | Following CSM_GEN_IMAGE_07_MASTER_COMPOSITION_GUIDE |
 

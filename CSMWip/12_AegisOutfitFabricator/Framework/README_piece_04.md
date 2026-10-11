@@ -71,7 +71,7 @@ Final reassembled documents must show **zero fabrication artifacts**:
 |--------|--------|-------------|
 | Document quality pass rate | 100% | All 150 docs pass check_doc_quality.sh |
 | Reassembly perfection | 100% | All 150 docs: diff = 0 bytes |
-| GitHub verification pass rate | 100% | 1,950 pieces × 17 ways = 33,150 checks |
+| GitHub verification pass rate | 100% | 2,550 pieces × 17 ways = 43,350 checks |
 | Cross-reference integrity | 100% | Zero broken links in dependency graph |
 | Terminology consistency | 100% | Standardized terms across all docs |
 | Mathematical consistency | 100% | Unit/dimensional analysis clean |
@@ -296,7 +296,7 @@ Core 50 (10) ←─────────────────────�
     ↓
 RM 50 (25) + RW 50 (25) [parallelizable]
     ↓
-GitHub Verification (all 1,950 pieces)
+GitHub Verification (all 2,550 pieces)
     ↓
 Final Delivery
 ```
@@ -388,7 +388,7 @@ git status && git log --oneline -5
 ---
 
 *README.md — Complete Project Documentation*
-*150 Documents | 1,950 Pieces | 150 Archives | 10 Image Prompts*
+*150 Documents | 2,550 Pieces | 150 Archives | 10 Image Prompts*
 *Historical Renaissance Protective Outfit Fabrication System*
 *Carrington Storm Motors / Safe Pod Engineering Company*
 *October 2026*

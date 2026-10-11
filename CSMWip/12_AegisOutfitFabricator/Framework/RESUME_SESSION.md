@@ -148,7 +148,7 @@ verify_environment
 10. **GitHub Handler** — `/workspace/app/CSMScripts/freenemo_modules/03_github_handler.sh`
 
 ### Key Concepts to Internalize
-- **Document Pipeline**: Author → Split (13 pieces) → Zip → GitHub (17-way verify) → Reassemble → FinishedWork
+- **Document Pipeline**: Author → Split (17 pieces) → Zip → GitHub (17-way verify) → Reassemble → FinishedWork
 - **No Conflation**: Historical ≠ Modern — clearly delineate, never invent history
 - **No Guessing**: Every value sourced or calculated; unknowns = [TBD:RESEARCH]
 - **Mathematical Rigor**: SI units, LaTeX formulas, derivations shown
@@ -208,9 +208,9 @@ EOF
 
 # That's it! The pipeline handles:
 # - Quality check (≥300 lines, ≥15 formulas, ≥10 refs, ≥5 standards, 0 conflation)
-# - Split into 13 pieces (max 500 lines each)
+# - Split into 17 pieces (max 500 lines each)
 # - Zip archive creation
-# - Push all 13 pieces + zip to GitHub (13 strategies each)
+# - Push all 17 pieces + zip to GitHub (17 strategies each)
 # - Verify reassembly (0 bytes diff)
 # - 17-way GitHub verification on sample piece
 # - Heartbeat logging
@@ -243,7 +243,7 @@ for d in FinishedWork/*.md; do ./Framework/check_doc_quality.sh "$d"; done
 | Issue | Diagnosis | Resolution |
 |-------|-----------|------------|
 | GitHub push fails | All 13 strategies exhausted | Check merge_queue.json, run gh_process_queue, or manual PR |
-| Piece reassembly diff ≠ 0 | Concat remnants or missing pieces | Check manifest.json, verify all 13 pieces exist |
+| Piece reassembly diff ≠ 0 | Concat remnants or missing pieces | Check manifest.json, verify all 17 pieces exist |
 | heartbeat.sh permission denied | Not executable | `chmod +x Framework/heartbeat.sh` |
 | Research files not found | Wrong path | Verify Research/ directory exists with 2 .md files |
 | CSMFAB078 refs missing | External dependency | Verify /workspace/app/CSMFAB/CSMFAB078_AegisIronMan/ exists |
@@ -353,7 +353,7 @@ git push origin v0.1-foundation
 - **DOC-01 to DOC-50**: AegisOutfitFabricator core (architecture, specs, validation, fabrication)
 - **FAB-RM-01 to FAB-RM-25 + IMG-RM-01-05**: RenaissanceMan (4 editions × mechanical + 5 img prompts)
 - **FAB-RW-01 to FAB-RW-25 + IMG-RW-01-05**: RenaissanceWoMan (4 editions × mechanical + 5 img prompts)
-- Each document: 13 pieces → zip → GitHub → reassemble → FinishedWork
+- Each document: 17 pieces → zip → GitHub → reassemble → FinishedWork
 
 ### MASTER_TODO_C.md (Phase 7-10)
 - GitHub handler config, 17-way verification protocol

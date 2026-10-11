@@ -219,7 +219,7 @@ By end of Session 001, the following MUST exist in FinishedWork/:
 - [ ] SYNTH-02_Protective_Layer_Adaptation_AIMES_to_Renaissance.md
 - [ ] SYNTH-03_Geometric_Drafting_Kernel_Specification.md
 
-Each pushed to GitHub as 13 pieces + zip, verified 17 ways, reassembled clean.
+Each pushed to GitHub as 17 pieces + zip, verified 17 ways, reassembled clean.
 
 ---
 
@@ -639,7 +639,7 @@ Session 002 (NEXT_RUNNER_002) will focus on:
 
 ### For EACH Deliverable:
 - [ ] Author complete document (300+ lines, dense technical)
-- [ ] Split: `gh_split_file "FinishedWork/DOC.md" 500` → 13 pieces
+- [ ] Split: `gh_split_file "FinishedWork/DOC.md" 500` → 17 pieces
 - [ ] Zip: `cd Pieces && zip DOC_pieces.zip DOC_piece_*.md DOC_manifest.json`
 - [ ] Push pieces: `for p in Pieces/DOC_piece_*.md; do gh_save_file "$p" "Piece: DOC" "kilo/aegis-outfit-fabricator-wip"; done`
 - [ ] Push zip: `gh_save_file "Pieces/DOC_pieces.zip" "Archive: DOC" "kilo/aegis-outfit-fabricator-wip"`
@@ -939,7 +939,7 @@ echo "Step 1: Quality check..."
 ./Framework/check_doc_quality.sh "$DOC" || exit 1
 
 # 2. Split into pieces
-echo "Step 2: Splitting into 13 pieces (max 500 lines)..."
+echo "Step 2: Splitting into 17 pieces (max 500 lines)..."
 gh_split_file "$DOC" 500
 # Creates Pieces/BASENAME_piece_01.md through _piece_13.md + manifest.json
 
@@ -1165,7 +1165,7 @@ echo "   Verified: Clean reassembly + 17-way GitHub check"
 - Pattern sets, tooling, work instructions, cost analysis
 
 ### Session 011: Phase 7 — GitHub Integration & Verification
-- 17-way verification on all 1,950 pieces
+- 17-way verification on all 2,550 pieces
 - Merge queue processing
 - Tag milestones
 

@@ -45,9 +45,9 @@
 
 **Pipeline Steps (automated by process_document.sh):**
 1. **Quality Check** — ≥300 lines, ≥15 formulas, ≥10 cross-refs, ≥5 standards, 0 conflation
-2. **Split** — 13 pieces max 500 lines each via `gh_split_file` + manifest.json
-3. **Zip** — Archive all 13 pieces + manifest → `Pieces/DOC_XX_pieces.zip`
-4. **Push** — All 13 pieces + zip to GitHub (13 strategies each via `gh_save_file`)
+2. **Split** — 17 pieces max 500 lines each via `gh_split_file` + manifest.json
+3. **Zip** — Archive all 17 pieces + manifest → `Pieces/DOC_XX_pieces.zip`
+4. **Push** — All 17 pieces + zip to GitHub (17 strategies each via `gh_save_file`)
 5. **Verify Reassembly** — `gh_join_files` + `diff` = 0 bytes diff (MANDATORY)
 6. **17-Way GitHub Verification** — `verify_github_17ways.sh` on piece_01 (MANDATORY)
 7. **Heartbeat Log** — Session progress logged
