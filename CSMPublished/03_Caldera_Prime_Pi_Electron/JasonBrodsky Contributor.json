@@ -1,0 +1,17 @@
+[
+  {
+    "person_or_org": {
+      "type": "personal",
+      "family_name": "Brodsky",
+      "given_name": "Jason Isaac",
+      "identifiers": [{ "scheme": "orcid", "identifier": "0000-0002-1825-0097" }]
+    },
+    "affiliations": [{ "name": "California Community Colleges" }]
+  },
+  {
+    "person_or_org": {
+      "type": "organizational",
+      "name": "Carrington Storm Motors Safe Pod Engineering Company"
+    }
+  }
+]
