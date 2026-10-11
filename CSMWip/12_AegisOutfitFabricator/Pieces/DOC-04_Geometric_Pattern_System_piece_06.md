@@ -1,44 +1,30 @@
 
-### 3.2 Cartridge Pleating (S-Curve Volumetric Compression)
+$$\eta_{\text{cart}} = \frac{V_{\text{unpleated}}}{V_{\text{pleated}}} = \frac{L \cdot W \cdot t}{L \cdot W_{\text{eff}} \cdot t_{\text{eff}}} \approx 2.5\text{--}3.5$$
 
-**S-Curve Fold Geometry** (Research Doc 1 §6.2; DRAFT-03 §2; SYNTH-03 §3.2):
-```
-Cartridge pleat centerline: y(x) = A·sin(2πx/λ) + B·x
-Where:
-  A = fold amplitude = pleat depth / 2
-  λ = fold wavelength = 2 × pleat depth
-  B = axial progression = W_finished / N_pleats
+**Perpendicular Force Distribution:**
 
-Fold geometry: Figure-eight (S-curve) with perpendicular force alignment
-Each fold: two lobes, forces perpendicular to waistband
-```
+$$F_{\perp}(s) = \frac{EI}{R^2} \kappa(s) \quad \text{where } \kappa(s) = \frac{2\pi}{\lambda} \text{ (constant curvature)}$$
 
-**Pleat Depth & Fabric Consumption** (DRAFT-03 §2):
-```
-For N_pleats cartridge pleats around waist:
-W_finished = waist circumference (edition-specific)
-W_unpleated = skirt panel width
-d = (W_unpleated - W_finished) / (2 × N_pleats)
+### 3.3 Pleat Stitch Specification (ISO 4915 ↔ Historical Mapping)
 
-Typical values:
-RW-TS: W_finished = 71cm, N_pleats = 24 → d ≈ 15mm, W_unpleated ≈ 2.8m
-RW-TG: W_finished = 101cm, N_pleats = 32 → d ≈ 18mm, W_unpleated ≈ 3.5m
-```
+| Historical Stitch | ISO 4915 Class | SPI | Thread | Application |
+|-------------------|----------------|-----|--------|-------------|
+| Backstitch | 301 (Lockstitch) | 18-22 | Silk/Beeswax | Watteau pleat anchor |
+| Running stitch | 101 (Chainstitch) | 16-20 | Linen | Cartridge pleat gather |
+| Whip stitch | 503 (Overedge) | 20-24 | Silk | Pleat edge finish |
+| Stab stitch | 304 (Zigzag) | 12-16 | Metallic | Decorative pleat topstitch |
 
-**Load Distribution & Stress Diffusion** (DRAFT-03 §3; SYNTH-03 §3.3):
-```
-Skirt weight W_skirt → N_pleats threads
-Tension per thread: T = W_skirt / N_pleats
+---
 
-Stress concentration at fold apex: K_t ≈ 2.5 (finite element, DRAFT-03)
-Beeswax-coated linen thread capacity (Research Doc 1 §6.1):
-σ_thread = 400-600 MPa, A_thread = π(0.4mm)²/2 ≈ 0.25 mm²
-F_max = σ_thread × A_thread ≈ 100-150 N per thread
+## 4. Hoop Architecture (from DRAFT-04, Research Doc 1 §4.5, MAT-02 §4.3, CSMFAB078-A §3.3, CSMFAB078 Main §5.4)
 
-Safety factor: SF = N_pleats × F_max / W_skirt ≥ 3.0 (target)
-```
+### 4.1 Elliptical Hoop Geometry
 
-### 3.3 Beeswax Thread Integration
+**Farthingale (Cone) → Pannier (Elliptical Dome) Transition:**
 
-**Historical Thread Specification** (Research Doc 1 §6.1; Research Doc 2 §3.3):
-```
+$$\frac{x^2}{a(z)^2} + \frac{y^2}{b(z)^2} = 1$$
+
+$$a(z) = a_0 + (a_1 - a_0) \frac{z}{H}, \quad b(z) = b_0 + (b_1 - b_0) \frac{z}{H}$$
+
+Where $z$ = height from waist, $H$ = total skirt length.
+
