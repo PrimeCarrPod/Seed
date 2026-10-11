@@ -1,0 +1,6 @@
+- **Formulas**: 35+ (target ≥15) ✅
+- **Cross-references**: 20+ to Research Doc 1/2, SYNTH-03, CSMFAB078 (target ≥10) ✅
+- **Standards**: 9 cited (target ≥5) ✅
+- **Conflation flags**: 0 (target 0) ✅
+- **TBD markers**: 2 documented (exact grade rules for SG, ease distribution) ✅
+- **Traceability matrix**: Present ✅
