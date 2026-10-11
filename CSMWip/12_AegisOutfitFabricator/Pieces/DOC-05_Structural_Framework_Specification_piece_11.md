@@ -1,26 +1,20 @@
+**LES Deployment Springs (Z5, Z6):**
 
-| Risk ID | Description | Likelihood | Impact | Mitigation |
-|---------|-------------|------------|--------|------------|
-| SF-01 | Baleen moisture cycling causes dimensional drift | High | Medium | Synthetic alternative qualified, humidity control |
-| SF-02 | Steel boning fatigue at spiral stress concentration | Medium | High | Shot peening, $K_t$ reduction, inspection interval |
-| SF-03 | Hoop deployment collision with ceramic tiles | Medium | High | Kinematic simulation, staged deployment |
-| SF-04 | LES tension calibration drift over duty cycle | High | Medium | Auto-recalibration every 2 hours |
-| SF-05 | Magnetic alignment degradation (temperature) | Low | High | NdFeB $T_{\text{max}} = 150^\circ\text{C}$, thermal shield |
+$$U_{\text{stored}} = \sum_{z \in \{5,6\}} \frac{1}{2} k_z (\Delta x_z)^2$$
 
----
+$k_z = 200\text{ N/m}$ (per zone), $\Delta x_z = 0.15\text{ m}$ (pre-compression).
 
-## 9. Mass Budget — Structural Framework (Validated)
+**Total Deployment Energy:** $U_{\text{total}} \approx 4.5\text{ J}$ per side.
 
-| Component | RM-TS (kg) | RM-TG (kg) | RW-TS (kg) | RW-TG (kg) |
-|-----------|------------|------------|------------|------------|
-| Baleen stays (24) | 1.2 | 1.5 | 1.0 | 1.3 |
-| Steel boning (12) | 0.6 | 0.7 | 0.5 | 0.6 |
-| Hoop wires (4×4) | 0.8 | 1.0 | 0.7 | 0.9 |
-| Tape suspension | 0.15 | 0.18 | 0.13 | 0.16 |
-| Cleats/aglets (Ti₃AlC₂) | 0.05 | 0.06 | 0.04 | 0.05 |
-| **Subtotal** | **2.80** | **3.44** | **2.37** | **3.01** |
+### 4.2 Deployment Dynamics
 
----
+**Equation of Motion:**
 
-*End of DOC-05 — Structural Framework Specification*  
-*Next: DOC-06 Protective Layer Architecture*
+$$m_{\text{eff}} \ddot{x} + c \dot{x} + k x = F_{\text{spring}}(t) - F_{\text{friction}}$$
+
+Target: $t_{\text{deploy}} < 5\text{ s}$, overshoot $< 10\%$.
+
+**Damping Ratio:** $\zeta = 0.7$ (critical damping for smooth deployment).
+
+### 4.3 Locking Mechanisms
+
