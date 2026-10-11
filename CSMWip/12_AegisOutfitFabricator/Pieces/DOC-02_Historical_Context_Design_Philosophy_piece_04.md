@@ -1,30 +1,22 @@
-Sumptuary laws (1550-1700) imposed **quantifiable limits** on materials, construction, and display — directly translatable to design constraints.
+| CIETA Class | Weave Structure | Warp/Weft Ratio | Orthotropic $E_1/E_2$ | Poisson's $\nu_{12}$ | Application Layer |
+|-------------|-----------------|-----------------|----------------------|---------------------|-------------------|
+| **Lampas** | Compound, 2 warp + 2 weft | 1:1 to 2:1 | 1.8-2.5 | 0.32-0.38 | L3, L6 (EMI brocade) |
+| **Brocatelle** | Heavy figured, supplementary weft | 1:2 to 1:3 | 2.2-3.0 | 0.28-0.34 | L4 (Fractal FSS ground) |
+| **Damask** | Reversible figured, satin ground | 1:1 | 1.5-2.0 | 0.35-0.40 | Base textile (L9) |
+| **Ciselé Velvet** | Cut/uncut pile, figured | 1:1 (ground) | 0.8-1.2 (pile) | 0.40-0.45 | Interior comfort (L12) |
+| **Taqueté/Samitum** | Weft-faced compound tabby | 1:3 to 1:5 | 3.0-4.5 | 0.25-0.30 | Ceramic tile pockets (L2, L7) |
 
-| Constraint | Historical Law | Algorithmic Form | Layer Impact |
-|------------|----------------|------------------|--------------|
-| **Gold thread width** | Elizabethan 1574: "no gold thread > 1/8 inch" | $w_{\text{Au}} \leq 3.175\text{ mm}$ | L3, L4, L6 metallic thread |
-| **Dye chemistry** | Spanish 1582: "no cochineal on silk < 20 ducats/yard" | $\text{Cost}_{\text{dye}} \leq C_{\text{max}}$ | L1 YInMn Blue synthesis |
-| **Yardage maximum** | French 1629: "court gown ≤ 15 aunes (19.5 m)" | $A_{\text{total}} \leq 19.5\text{ m}^2$ | Nesting optimization (DRAFT-05) |
-| **Guild segregation** | London 1604: "tailors ≠ embroiderers ≠ silkweavers" | $\text{Process}_i \cap \text{Process}_j = \emptyset$ | Fabricator chain topology |
-| **Fur restrictions** | Venetian 1562: "ermine only for doge/council" | $\text{Material}_{\text{fur}} \in \{\text{permitted}\}$ | L10 baleen substitution |
+**Orthotropic Elasticity Tensor (per SYNTH-01 §4.2):**
 
-### 2.2 Constraint Satisfaction Formulation
+$$\mathbb{C} = \begin{bmatrix}
+E_1/(1-\nu_{12}\nu_{21}) & \nu_{12}E_2/(1-\nu_{12}\nu_{21}) & 0 \\
+\nu_{21}E_1/(1-\nu_{12}\nu_{21}) & E_2/(1-\nu_{12}\nu_{21}) & 0 \\
+0 & 0 & G_{12}
+\end{bmatrix}$$
 
-$$\text{Find } \mathbf{x} \in \mathcal{X} \text{ s.t. } \mathbf{g}(\mathbf{x}) \leq \mathbf{0}, \quad \mathbf{h}(\mathbf{x}) = \mathbf{0}$$
-
-Where:
-- $\mathbf{g}(\mathbf{x})$: Inequality constraints (sumptuary limits, mass budget, thickness)
-- $\mathbf{h}(\mathbf{x})$: Equality constraints (geometric closure, LES tension balance)
-- $\mathcal{X}$: Feasible set (CIETA weaves, Alcega geometry, material specs)
-
-**Constraint Relaxation for Modern Protection:**
-
-$$\mathbf{g}_{\text{eff}}(\mathbf{x}) = \mathbf{g}_{\text{hist}}(\mathbf{x}) + \mathbf{w}_{\text{protect}} \odot \mathbf{g}_{\text{modern}}(\mathbf{x}) \leq \mathbf{0}$$
-
-Where $\mathbf{w}_{\text{protect}}$ weights modern protection requirements against historical constraints.
+Where $\nu_{21} = \nu_{12} \cdot E_2/E_1$ (reciprocity), $G_{12} \approx 0.4 \cdot \sqrt{E_1 E_2}$ for woven fabrics.
 
 ---
 
-## 3. Design Philosophy: Authenticity ↔ Protection
+## 2. Sumptuary Law as Constraint System
 
-### 3.1 Historical Authenticity Score (HAS)
