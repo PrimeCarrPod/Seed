@@ -1,0 +1,28 @@
+                window.addEventListener('resize', () => this.resize());
+                this.setupEggshell();
+                this.startLoop();
+            },
+            
+            resize() {
+                this.width = window.innerWidth;
+                this.height = window.innerHeight;
+                this.canvas.width = this.width;
+                this.canvas.height = this.height;
+                this.electron.x = this.width / 2;
+                this.electron.y = this.height / 2;
+                this.setupEggshell();
+            },
+            
+            setupEggshell() {
+                const padding = 40;
+                this.eggshell.cx = this.width / 2;
+                this.eggshell.cy = this.height / 2;
+                this.eggshell.rx = Math.min(this.width, this.height) / 2 - padding;
+                this.eggshell.ry = this.eggshell.rx * 0.75;
+            },
+            
+            setInsets(top, bottom) {
+                this.insetsTop = top;
+                this.insetsBottom = bottom;
+            },
+            

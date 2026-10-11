@@ -1,0 +1,22 @@
+{
+  "original": "MainActivity.kt",
+  "pieces": 13,
+  "piece_files": [
+    "MainActivity_piece_01.kt",
+    "MainActivity_piece_02.kt",
+    "MainActivity_piece_03.kt",
+    "MainActivity_piece_04.kt",
+    "MainActivity_piece_05.kt",
+    "MainActivity_piece_06.kt",
+    "MainActivity_piece_07.kt",
+    "MainActivity_piece_08.kt",
+    "MainActivity_piece_09.kt",
+    "MainActivity_piece_10.kt",
+    "MainActivity_piece_11.kt",
+    "MainActivity_piece_12.kt",
+    "MainActivity_piece_13.kt"
+  ],
+  "total_lines": 449,
+  "split_date": "2026-10-11",
+  "project": "TGE_E1"
+}

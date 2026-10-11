@@ -1,0 +1,28 @@
+            },
+            
+            handleReflection(dx, dy, normX, normY) {
+                this.reflections++;
+                const normalLen = Math.sqrt(normX * normX + normY * normY);
+                const nx = normX / normalLen;
+                const ny = normY / normalLen;
+                const dot = this.electron.vx * nx + this.electron.vy * ny;
+                this.electron.vx -= 2 * dot * nx;
+                this.electron.vy -= 2 * dot * ny;
+                this.electron.vx *= 0.99;
+                this.electron.vy *= 0.99;
+                this.electron.x = this.eggshell.cx + normX * this.eggshell.rx * 0.98;
+                this.electron.y = this.eggshell.cy + normY * this.eggshell.ry * 0.98;
+                
+                this.worldline.push({ x: this.electron.x, y: this.electron.y, t: this.steps });
+                if (this.worldline.length > 2000) this.worldline.shift();
+                
+                if (window.TGEBridge) {
+                    window.TGEBridge.onWorldlineReflection(JSON.stringify({
+                        reflections: this.reflections,
+                        position: { x: this.electron.x, y: this.electron.y },
+                        velocity: { x: this.electron.vx, y: this.electron.vy }
+                    }));
+                }
+            },
+            
+            checkPrimeGaps() {

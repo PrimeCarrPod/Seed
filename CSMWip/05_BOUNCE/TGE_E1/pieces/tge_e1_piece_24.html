@@ -1,0 +1,28 @@
+            },
+            
+            drawWorldline() {
+                if (this.worldline.length < 2) return;
+                this.ctx.beginPath();
+                this.ctx.moveTo(this.worldline[0].x, this.worldline[0].y);
+                for (let i = 1; i < this.worldline.length; i++) {
+                    const alpha = i / this.worldline.length;
+                    this.ctx.lineTo(this.worldline[i].x, this.worldline[i].y);
+                }
+                const gradient = this.ctx.createLinearGradient(
+                    this.worldline[0].x, this.worldline[0].y,
+                    this.worldline[this.worldline.length-1].x, this.worldline[this.worldline.length-1].y
+                );
+                gradient.addColorStop(0, '#00D4AA22');
+                gradient.addColorStop(1, '#00D4AA');
+                this.ctx.strokeStyle = gradient;
+                this.ctx.lineWidth = 2;
+                this.ctx.stroke();
+            },
+            
+            drawPrimeGapMarkers() {
+                for (let i = 0; i <= this.primeGapIndex && i < this.primeGaps.length; i++) {
+                    const gap = this.primeGaps[i];
+                    const radius = (gap / 100) * Math.min(this.eggshell.rx, this.eggshell.ry);
+                    this.ctx.beginPath();
+                    this.ctx.ellipse(this.eggshell.cx, this.eggshell.cy, radius, radius * 0.75, 0, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = i === this.primeGapIndex ? '#F97316' : '#F9731644';

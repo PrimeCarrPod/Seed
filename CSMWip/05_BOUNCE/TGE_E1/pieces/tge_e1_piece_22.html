@@ -1,0 +1,28 @@
+                if (this.primeGaps.length === 0) return;
+                const distFromCenter = Math.sqrt(
+                    Math.pow((this.electron.x - this.eggshell.cx) / this.eggshell.rx, 2) +
+                    Math.pow((this.electron.y - this.eggshell.cy) / this.eggshell.ry, 2)
+                );
+                const gapThreshold = this.primeGaps[this.primeGapIndex] / 100;
+                if (distFromCenter > gapThreshold && this.primeGapIndex < this.primeGaps.length - 1) {
+                    this.primeGapIndex++;
+                    this.gapsCrossed++;
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onPrimeGapEvent(JSON.stringify({
+                            gap: this.primeGaps[this.primeGapIndex],
+                            index: this.primeGapIndex,
+                            totalCrossed: this.gapsCrossed
+                        }));
+                    }
+                }
+            },
+            
+            updateHUD() {
+                document.getElementById('pos-x').textContent = this.electron.x.toFixed(1);
+                document.getElementById('pos-y').textContent = this.electron.y.toFixed(1);
+                document.getElementById('vel-x').textContent = this.electron.vx.toFixed(2);
+                document.getElementById('vel-y').textContent = this.electron.vy.toFixed(2);
+                document.getElementById('reflections').textContent = this.reflections;
+                document.getElementById('gaps-crossed').textContent = this.gapsCrossed;
+                document.getElementById('steps').textContent = this.steps;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';

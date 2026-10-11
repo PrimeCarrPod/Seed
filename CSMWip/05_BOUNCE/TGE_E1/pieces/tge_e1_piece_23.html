@@ -1,0 +1,28 @@
+                document.getElementById('gap-index').textContent = this.primeGapIndex;
+                document.getElementById('current-gap').textContent = this.primeGaps[this.primeGapIndex] || 0;
+            },
+            
+            render() {
+                this.ctx.fillStyle = '#0A0A0F';
+                this.ctx.fillRect(0, 0, this.width, this.height);
+                
+                this.drawEggshell();
+                this.drawWorldline();
+                this.drawPrimeGapMarkers();
+                this.drawElectron();
+                this.drawReflectionCircles();
+            },
+            
+            drawEggshell() {
+                this.ctx.save();
+                this.ctx.translate(this.eggshell.cx, this.eggshell.cy);
+                this.ctx.rotate(this.eggshell.rotation);
+                this.ctx.beginPath();
+                this.ctx.ellipse(0, 0, this.eggshell.rx, this.eggshell.ry, 0, 0, Math.PI * 2);
+                this.ctx.strokeStyle = '#4488FF';
+                this.ctx.lineWidth = 1;
+                this.ctx.globalAlpha = 0.3;
+                this.ctx.stroke();
+                this.ctx.globalAlpha = 1;
+                this.ctx.restore();
+                this.eggshell.rotation += 0.0001;

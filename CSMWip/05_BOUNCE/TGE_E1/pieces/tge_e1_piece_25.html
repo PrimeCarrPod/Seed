@@ -1,0 +1,28 @@
+                    this.ctx.lineWidth = i === this.primeGapIndex ? 2 : 1;
+                    this.ctx.globalAlpha = i === this.primeGapIndex ? 0.8 : 0.3;
+                    this.ctx.stroke();
+                    this.ctx.globalAlpha = 1;
+                }
+            },
+            
+            drawElectron() {
+                const glow = this.ctx.createRadialGradient(
+                    this.electron.x, this.electron.y, 0,
+                    this.electron.x, this.electron.y, this.electron.radius * 4
+                );
+                glow.addColorStop(0, '#00FFFF');
+                glow.addColorStop(1, '#00FFFF00');
+                this.ctx.fillStyle = glow;
+                this.ctx.beginPath();
+                this.ctx.arc(this.electron.x, this.electron.y, this.electron.radius * 3, 0, Math.PI * 2);
+                this.ctx.fill();
+                this.ctx.fillStyle = '#00FFFF';
+                this.ctx.beginPath();
+                this.ctx.arc(this.electron.x, this.electron.y, this.electron.radius, 0, Math.PI * 2);
+                this.ctx.fill();
+            },
+            
+            drawReflectionCircles() {
+                for (let i = Math.max(0, this.worldline.length - 10); i < this.worldline.length; i++) {
+                    const pt = this.worldline[i];
+                    const alpha = (i - (this.worldline.length - 10)) / 10 * 0.5;
