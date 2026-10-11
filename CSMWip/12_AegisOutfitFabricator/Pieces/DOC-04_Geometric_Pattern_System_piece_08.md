@@ -1,44 +1,30 @@
-For W_skirt = 5kg, a=600mm, b=428mm, t=1.5mm:
-P ≈ 5×9.81 / (π×0.6×0.428) ≈ 6.1 Pa
-σ_θ ≈ 6.1 × 0.6 / 0.0015 ≈ 2.4 kPa (well below steel yield)
-```
+**No-Fit Polygon (NFP) for Irregular Shapes:**
 
-### 4.2 Tape Suspension System (Catenary)
+$$\text{NFP}(A, B) = \{ \mathbf{t} \in \mathbb{R}^2 \mid \text{int}(A) \cap \text{int}(B + \mathbf{t}) = \emptyset \}$$
 
-**Catenary Curve** (DRAFT-04 §3; MAT-02 §4):
-```
-y(x) = a·cosh(x/a), where a = H / w
-H = horizontal tension in tape
-w = weight per unit length = (W_skirt / N_tapes) / L_tape
+**Objective Function:**
 
-N_tapes = 12-16 vertical tapes (evenly spaced)
-L_tape ≈ 800-1000mm (waist to hem)
-```
+$$\min \quad L_{\text{used}} = \max_i (y_i + h_i)$$
 
-**Tension Distribution** (DRAFT-04 §3):
-```
-At waistband (x=0): T_waist = H·cosh(L/(2a))
-At hem (x=L/2): T_hem = H
-Friction at waistband: μ ≈ 0.3 (cotton on silk), reduces effective N_tapes
-```
+Subject to:
+- $x_i \geq 0, \quad x_i + w_i \leq 560$ (loom width)
+- $\text{NFP}(P_i, P_j) \cap \{\mathbf{0}\} = \emptyset \quad \forall i \neq j$ (no overlap)
+- Grain direction constraint: $\angle(\mathbf{g}_i, \mathbf{e}_y) \leq 5^\circ$
 
-### 4.3 Deployment Kinematics
+### 5.2 Simulated Annealing Parameters
 
-**Collapsed → Expanded Transition** (DRAFT-04 §4):
-```
-Collapsed diameter: D_collapsed ≈ 50mm (storage)
-Expanded diameter: D_expanded ≈ 1000-1600mm (edition-dependent)
+| Parameter | Value | Schedule |
+|-----------|-------|----------|
+| Initial temp | 1000 | — |
+| Cooling rate | 0.95 | Geometric |
+| Min temp | 0.1 | — |
+| Iterations/temp | 500 | — |
+| Move types | Translate, Rotate 90°, Swap | Uniform |
 
-Spring energy per hoop: U = ½·k·x²
-k = E·I / L³ (bending stiffness), x = deployment displacement
-Deployment time target: <5 seconds (DRAFT-04 §4)
+### 5.3 Edition-Specific Efficiency Targets
 
-Locking mechanism:
-- Friction catch: cam lever at waistband
-- Magnetic: NdFeB N52 at hoop joints (CSMFAB078 §3.3)
-```
-
-*Traceability: Research Doc 1 §5.3; SYNTH-03 §5; DRAFT-04 §2-4; MAT-02 §4; CSMFAB078 §3.3*
-
----
-
+| Edition | $\eta_{\text{nest}}$ Target | Offcut Catalog Size |
+|---------|---------------------------|---------------------|
+| RM-TS | 0.94 | 12 pieces |
+| RM-TG | 0.91 | 18 pieces |
+| RM-SS | 0.95 | 10 pieces |
