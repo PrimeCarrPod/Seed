@@ -1,30 +1,22 @@
-│        ┌─────────────────────────────────────────┐               │
-│        │   LES CALIBRATION & VALIDATION          │               │
-│        │  12-zone tension → thermal/ballistic/EMI│               │
-│        └─────────────────────────────────────────┘               │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
-### 5.2 Data Flow Architecture
-
-$$\text{Anthropometry} \xrightarrow{\text{Garsault Scaling}} \text{Pattern Set} \xrightarrow{\text{Alcega Unfold}} \text{Cutting Layout} \xrightarrow{\text{Nesting Opt}} \text{Material Kit}$$
-
-$$\text{Material Kit} \xrightarrow{\text{LES Params}} \text{Assembly Sequence} \xrightarrow{\text{QC Gates}} \text{Validated Edition}$$
-
-**Digital Twin Integration:** Each edition maintains a digital twin (FAB-RM/RW-24) with manufacturing simulation, virtual commissioning, and predictive QC.
+| **EMI Shielding** | >60 dB @ 1 GHz, >40 dB @ 10 GHz | MIL-STD-461G, IEC 61000-4-9 | TEM cell / reverberation chamber |
+| **Directed Energy** | ΔT ≤14°C vs black body (MW/laser) | MIL-STD-461G, custom | CW laser 10.6 μm, 5 kW/m² |
+| **Force Trauma** | ≥65% peak force reduction @ 50J | ASTM F2371, ISO 15858 | Instrumented impactor |
+| **Bio-Acoustic SNR** | >20 dB @ 1-50 Hz (heartbeat/respiration) | CSMFAB011 | PVDF-TrFE array correlation |
+| **Schumann Attenuation** | >30 dB @ 7.83 Hz | Custom protocol | Coil excitation + interior probe |
+| **Mobility Index** | ≥0.7 (normalized ROM) | ISO 15858 | Motion capture + joint angle analysis |
+| **Donning Time** | <120 seconds (trained) | Operational protocol | Stopwatch, 3 trials |
+| **Edition Transition** | <90 seconds | Operational protocol | LES re-tension + panel swap |
 
 ---
 
-## 6. Traceability Matrix
+## 5. Fabricator Chain Overview
 
-| Section | Source Document | Section/Location | Key Values/Equations |
-|---------|----------------|------------------|---------------------|
-| 1.1 Mission | CSMFAB078 Main | §2.1, §3.1 | 12-layer stack, 8 editions |
-| 1.2 HAS/PES | SYNTH-01 | §3.2, §4.1 | Dual-objective formulation |
-| 2.1 Layer Stack | CSMFAB078 Main | §4.2 (Table 4.1) | All 12 layer specs |
-| 2.1 Layer Stack | MAT-03 | §3.1-3.6 | Protective layer details |
-| 2.1 Layer Stack | MAT-04 | §4.2 | Cross-property validation |
-| 2.2 Thermal Stack | MAT-03 | §3.3 | λ = 0.015 W/m·K aerogel |
-| 2.2 EMI Stack | MAT-03 | §3.2 | MXene Ti₃C₂Tₓ SE ≥60 dB |
-| 3.1 LES Zones | CSMFAB078-A | §3.3 (Table 3.3) | 12-zone tension values |
+### 5.1 Device Topology
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    AEGIS OUTFIT FABRICATOR CHAIN                    │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  SILK FARM          METALLIC THREAD MILL      CERAMIC MICRO-FAB    │
+│  (Bombyx mori)      (Au-Hg/Ag gilding)       (Flash sinter)        │
