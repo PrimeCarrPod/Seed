@@ -18,13 +18,3 @@ $$\mathbb{C}_{\text{baleen}} = \begin{bmatrix}
 E_L & \nu_{LT}E_T & \nu_{LR}E_R & 0 & 0 & 0 \\
 \nu_{TL}E_L & E_T & \nu_{TR}E_R & 0 & 0 & 0 \\
 \nu_{RL}E_L & \nu_{RT}E_T & E_R & 0 & 0 & 0 \\
-0 & 0 & 0 & G_{LT} & 0 & 0 \\
-0 & 0 & 0 & 0 & G_{LR} & 0 \\
-0 & 0 & 0 & 0 & 0 & G_{TR}
-\end{bmatrix}$$
-
-**Principal Values (per MAT-02 §3.1):**
-- $E_L = 4.5\text{ GPa}$ (longitudinal, along keratin tubules)
-- $E_T = 1.8\text{ GPa}$ (transverse, circumferential)
-- $E_R = 1.2\text{ GPa}$ (radial, through thickness)
-- $\nu_{LT} = 0.35$, $\nu_{TL} = 0.14$ (reciprocity: $\nu_{TL} = \nu_{LT} E_T/E_L$)
