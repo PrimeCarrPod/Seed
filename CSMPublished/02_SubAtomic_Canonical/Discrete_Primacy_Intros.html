@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discrete Primacy — Three Heuristic Introductions (Williams, Keymaker, El Segundo)</title>
+<style>
+:root {
+    --bg: #0a0a0f;
+    --fg: #e8e6e3;
+    --muted: #8b8a88;
+    --accent: #c9b896;
+    --accent-dim: #a69572;
+    --border: #2d2d35;
+    --card: #12121a;
+    --code-bg: #0d0d12;
+    --link: #d4c4a0;
+    --link-hover: #f0e0b8;
+    --williams: #c9b896;
+    --keymaker: #96b8c9;
+    --elsegundo: #b8c996;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.8;
+    color: var(--fg);
+    background: var(--bg);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+header .subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto 16px;
+}
+header .heuristic-badges {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.badge {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.badge-williams { background: rgba(201,184,150,0.15); border: 1px solid var(--williams); color: var(--williams); }
+.badge-keymaker { background: rgba(150,184,201,0.15); border: 1px solid var(--keymaker); color: var(--keymaker); }
+.badge-elsegundo { background: rgba(184,201,150,0.15); border: 1px solid var(--elsegundo); color: var(--elsegundo); }
+nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+nav.toc h2 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+nav.toc ul { list-style: none; }
+nav.toc li { margin: 6px 0; }
+nav.toc a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+nav.toc a:hover { color: var(--link-hover); text-decoration: underline; }
+nav.toc .section-group { margin-bottom: 12px; }
+nav.toc .section-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+nav.toc .section-group.williams .section-title { color: var(--williams); }
+nav.toc .section-group.keymaker .section-title { color: var(--keymaker); }
+nav.toc .section-group.elsegundo .section-title { color: var(--elsegundo); }
+main article { margin-bottom: 60px; }
+main .intro-section {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+}
+main .intro-section:last-child { border-bottom: none; }
+main .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+main .section-header.williams { border-left: 4px solid var(--williams); }
+main .section-header.keymaker { border-left: 4px solid var(--keymaker); }
+main .section-header.elsegundo { border-left: 4px solid var(--elsegundo); }
+main .section-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+main .section-header.williams .section-icon { background: rgba(201,184,150,0.2); color: var(--williams); }
+main .section-header.keymaker .section-icon { background: rgba(150,184,201,0.2); color: var(--keymaker); }
+main .section-header.elsegundo .section-icon { background: rgba(184,201,150,0.2); color: var(--elsegundo); }
+main .section-info h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+main .section-info .heuristic-label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+}
+main h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--fg);
+    margin: 30px 0 14px;
+    padding-left: 16px;
+    border-left: 2px solid var(--accent-dim);
+}
+main h4 { font-size: 1.05rem; font-weight: 500; color: var(--accent-dim); margin: 20px 0 8px; }
+main p { margin-bottom: 16px; text-align: justify; }
+main ul, main ol { margin: 16px 0 16px 28px; }
+main li { margin: 8px 0; }
+main blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin: 20px 0;
+    color: var(--muted);
+    font-style: italic;
+}
+main code {
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--accent);
+}
+main pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+main pre code { background: none; padding: 0; color: var(--fg); }
+main .piece-header {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 30px 0 20px;
+}
+main .piece-header.williams { border-top: 3px solid var(--williams); }
+main .piece-header.keymaker { border-top: 3px solid var(--keymaker); }
+main .piece-header.elsegundo { border-top: 3px solid var(--elsegundo); }
+main .piece-number { font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+main .piece-title { font-size: 1.1rem; font-weight: 500; }
+main .piece-meta { font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
+main hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+footer a { color: var(--link); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+    header h1 { font-size: 1.9rem; }
+    body { padding: 20px 16px 60px; }
+    nav.toc { padding: 16px; }
+    main .section-header { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Discrete Primacy</h1>
+    <p class="subtitle">Three Heuristic Introductions to the SubAtomic Prime Electron Canonical</p>
+    <div class="heuristic-badges">
+        <span class="badge badge-williams">Williams — Extreme</span>
+        <span class="badge badge-keymaker">Keymaker — Extreme</span>
+        <span class="badge badge-elsegundo">El Segundo — Extreme</span>
+    </div>
+    <div style="margin-top: 20px; font-size: 0.9rem; color: var(--muted);">
+        39 Pieces (13 each) &nbsp;|&nbsp; 100 KB &nbsp;|&nbsp; Generated 2026-10-11
+    </div>
+</header>
+
+<nav class="toc" id="toc">
+    <h2>Contents</h2>
+    <ul id="toc-list"></ul>
+</nav>
+
+<main id="content">
+    <!-- Content injected here -->
+</main>
+
+<footer>
+    <p>Discrete Primacy — Three Heuristic Introductions</p>
+    <p><a href="Discrete_Primacy_Master.html">Master Compendium (95 Articles)</a> &nbsp;|&nbsp; <a href="https://github.com/PrimeCarrPod/Seed/tree/main/CSMPublished/02_SubAtomic_Canonical">GitHub</a></p>
+</footer>
+
+<script>
+async function loadContent() {
+    try {
+        const response = await fetch('THREE_HEURISTIC_INTROS_COMBINED.md');
+        const markdown = await response.text();
+        renderMarkdown(markdown);
+        buildTOC();
+    } catch (e) {
+        console.error('Failed to load markdown:', e);
+        document.getElementById('content').innerHTML = '<p style="color: #c94;">Failed to load content. Please ensure THREE_HEURISTIC_INTROS_COMBINED.md is in the same directory.</p>';
+    }
+}
+
+function renderMarkdown(md) {
+    let html = md
+        .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+        .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+        .replace(/^# (.*$)/gm, '<h2>$1</h2>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+        .replace(/^---$/gm, '<hr>');
+
+    const paragraphs = html.split('\n\n');
+    let result = '';
+    let inCodeBlock = false;
+    let codeContent = '';
+    let currentSection = '';
+    let pieceCount = 0;
+    
+    for (let p of paragraphs) {
+        p = p.trim();
+        if (!p) continue;
+        
+        if (p.startsWith('```')) {
+            if (!inCodeBlock) { inCodeBlock = true; codeContent = p.slice(3); }
+            else { inCodeBlock = false; result += `<pre><code>${escapeHtml(codeContent)}</code></pre>\n`; codeContent = ''; }
+            continue;
+        }
+        if (inCodeBlock) { codeContent += '\n' + p; continue; }
+        
+        if (p.match(/^<(h[1-6]|hr|ul|ol|li|blockquote|pre)/)) { result += p + '\n\n'; continue; }
+        
+        // Section headers
+        if (p.includes('Williams Introduction') && p.includes('Extreme Heuristics')) {
+            currentSection = 'williams';
+            result += `<article class="intro-section"><div class="section-header williams"><div class="section-icon">◆</div><div class="section-info"><h2>Williams Introduction</h2><div class="heuristic-label">Extreme Heuristics — Improvisational intensity, recursive self-reference, manic precision</div></div></div>`;
+            continue;
+        }
+        if (p.includes('Keymaker Introduction') && p.includes('Extreme Heuristics')) {
+            currentSection = 'keymaker';
+            result += `</article><article class="intro-section"><div class="section-header keymaker"><div class="section-icon">◇</div><div class="section-info"><h2>Keymaker Introduction</h2><div class="heuristic-label">Extreme Heuristics — Structural precision, unlocking mechanism, zero-tolerance for free parameters</div></div></div>`;
+            continue;
+        }
+        if (p.includes('El Segundo Introduction') && p.includes('Extreme Heuristics')) {
+            currentSection = 'elsegundo';
+            result += `</article><article class="intro-section"><div class="section-header elsegundo"><div class="section-icon">◈</div><div class="section-info"><h2>El Segundo Introduction</h2><div class="heuristic-label">Extreme Heuristics — Reflective recursion, participatory measurement, operational self-witnessing</div></div></div>`;
+            continue;
+        }
+        
+        // Piece headers
+        const pieceMatch = p.match(/^Piece (\d+) of 13: (.+)$/);
+        if (pieceMatch) {
+            pieceCount++;
+            result += `<div class="piece-header ${currentSection}"><div class="piece-number">Piece ${pieceMatch[1]} of 13</div><div class="piece-title">${pieceMatch[2]}</div><div class="piece-meta">Author: Jason Isaac Brodsky (California 1976) — Conducier | Heuristic: ${currentSection.charAt(0).toUpperCase() + currentSection.slice(1)} — Extreme</div></div>`;
+            continue;
+        }
+        
+        // End markers
+        if (p.startsWith('*End of Piece') || p.startsWith('**End of Piece')) {
+            result += `<div class="piece-header ${currentSection}" style="border-top: 1px solid var(--border); margin-top: 40px; padding-top: 12px; font-style: italic; color: var(--muted);">${p}</div>`;
+            continue;
+        }
+        
+        // Lists
+        if (p.match(/^[\-\*]\s/)) {
+            const items = p.split('\n').filter(l => l.trim()).map(l => `<li>${l.replace(/^[\-\*]\s/, '')}</li>`).join('\n');
+            result += `<ul>${items}</ul>\n\n`;
+            continue;
+        }
+        if (p.match(/^\d+\.\s/)) {
+            const items = p.split('\n').filter(l => l.trim()).map(l => `<li>${l.replace(/^\d+\.\s/, '')}</li>`).join('\n');
+            result += `<ol>${items}</ol>\n\n`;
+            continue;
+        }
+        
+        // Blockquotes
+        if (p.startsWith('> ')) {
+            result += `<blockquote>${p.slice(2)}</blockquote>\n\n`;
+            continue;
+        }
+        
+        // Regular paragraph
+        result += `<p>${p}</p>\n\n`;
+    }
+    
+    result += '</article>';
+    document.getElementById('content').innerHTML = result;
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function buildTOC() {
+    const headings = document.querySelectorAll('main h2, main h3');
+    const tocList = document.getElementById('toc-list');
+    let currentSection = null;
+    let pieceList = null;
+    
+    headings.forEach((h, index) => {
+        const id = `heading-${index}`;
+        h.id = id;
+        const text = h.textContent;
+        
+        if (h.tagName === 'H2' && (text.includes('Williams') || text.includes('Keymaker') || text.includes('El Segundo'))) {
+            currentSection = document.createElement('li');
+            currentSection.className = 'section-group ' + (text.includes('Williams') ? 'williams' : text.includes('Keymaker') ? 'keymaker' : 'elsegundo');
+            currentSection.innerHTML = `<div class="section-title">${text}</div>`;
+            tocList.appendChild(currentSection);
+            pieceList = document.createElement('ul');
+            currentSection.appendChild(pieceList);
+        } else if (h.tagName === 'H3' && pieceList) {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="#${id}">${text}</a>`;
+            pieceList.appendChild(li);
+        }
+    });
+    
+    // Also find piece headers
+    const pieces = document.querySelectorAll('.piece-header .piece-title');
+    pieces.forEach((p, index) => {
+        const pieceHeader = p.closest('.piece-header');
+        const section = pieceHeader.classList.contains('williams') ? 'williams' : 
+                       pieceHeader.classList.contains('keymaker') ? 'keymaker' : 'elsegundo';
+        const pieceNum = index + 1;
+        const id = `piece-${pieceNum}`;
+        pieceHeader.id = id;
+        
+        const targetList = document.querySelector(`.section-group.${section} ul`);
+        if (targetList) {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="#${id}">Piece ${pieceNum}: ${p.textContent}</a>`;
+            targetList.appendChild(li);
+        }
+    });
+}
+
+loadContent();
+</script>
+</body>
+</html>

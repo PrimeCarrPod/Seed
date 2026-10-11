@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discrete Primacy — SubAtomic Prime Electron Canonical Master Compendium</title>
+<style>
+:root {
+    --bg: #0a0a0f;
+    --fg: #e8e6e3;
+    --muted: #8b8a88;
+    --accent: #c9b896;
+    --accent-dim: #a69572;
+    --border: #2d2d35;
+    --card: #12121a;
+    --code-bg: #0d0d12;
+    --link: #d4c4a0;
+    --link-hover: #f0e0b8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: var(--fg);
+    background: var(--bg);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+header .subtitle {
+    font-size: 1.15rem;
+    color: var(--muted);
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
+header .meta {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+nav.toc h2 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+nav.toc ul { list-style: none; }
+nav.toc li { margin: 8px 0; }
+nav.toc a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+nav.toc a:hover { color: var(--link-hover); text-decoration: underline; }
+nav.toc .sub-items { margin-left: 20px; margin-top: 4px; }
+nav.toc .sub-items a { font-size: 0.85rem; color: var(--muted); }
+nav.toc .sub-items a:hover { color: var(--link); }
+main article { margin-bottom: 60px; }
+main h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+main h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--fg);
+    margin: 30px 0 12px;
+}
+main h4 { font-size: 1.1rem; font-weight: 500; color: var(--accent-dim); margin: 20px 0 8px; }
+main p { margin-bottom: 16px; text-align: justify; }
+main ul, main ol { margin: 16px 0 16px 28px; }
+main li { margin: 8px 0; }
+main blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin: 20px 0;
+    color: var(--muted);
+    font-style: italic;
+}
+main code {
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--accent);
+}
+main pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+main pre code { background: none; padding: 0; color: var(--fg); }
+main table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+main th, main td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; }
+main th { background: var(--card); color: var(--accent); font-weight: 500; }
+main tr:nth-child(even) { background: var(--card); }
+main hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+main .piece-marker {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 24px 0;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+main .file-separator {
+    border-top: 2px dashed var(--border);
+    margin: 40px 0;
+    padding-top: 20px;
+}
+main .file-header {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+footer a { color: var(--link); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    body { padding: 20px 16px 60px; }
+    nav.toc { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Discrete Primacy</h1>
+    <p class="subtitle">SubAtomic Prime Electron Canonical — Master Compendium</p>
+    <p class="subtitle">Prime Electron & Caldera Prime Pi Electron Framework</p>
+    <div class="meta">
+        Generated: 2026-10-11 &nbsp;|&nbsp; 95 Articles &nbsp;|&nbsp; 3 Heuristic Introductions (Williams, Keymaker, El Segundo — Extreme) &nbsp;|&nbsp; 3.56 MB
+    </div>
+</header>
+
+<nav class="toc" id="toc">
+    <h2>Table of Contents</h2>
+    <ul id="toc-list"></ul>
+</nav>
+
+<main id="content">
+    <!-- Content will be injected here -->
+</main>
+
+<footer>
+    <p>Discrete Primacy — SubAtomic Prime Electron Canonical</p>
+    <p><a href="https://github.com/PrimeCarrPod/Seed/tree/main/CSMPublished/02_SubAtomic_Canonical">GitHub Repository</a> &nbsp;|&nbsp; <a href="https://zenodo.org/communities/arithmeticphysics/">Zenodo Community: arithmeticphysics</a></p>
+</footer>
+
+<script>
+// Load markdown content and render
+async function loadContent() {
+    try {
+        const response = await fetch('SUBATOMIC_PRIME_ELECTRON_CANONICAL_MASTER.md');
+        const markdown = await response.text();
+        renderMarkdown(markdown);
+        buildTOC();
+    } catch (e) {
+        console.error('Failed to load markdown:', e);
+        document.getElementById('content').innerHTML = '<p style="color: #c94;">Failed to load content. Please ensure SUBATOMIC_PRIME_ELECTRON_CANONICAL_MASTER.md is in the same directory.</p>';
+    }
+}
+
+function renderMarkdown(md) {
+    // Split by major sections
+    let html = md
+        // Headers
+        .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+        .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+        .replace(/^# (.*$)/gm, '<h2>$1</h2>')
+        // Bold/italic
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        // Inline code
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        // Links
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+        // Horizontal rules
+        .replace(/^---$/gm, '<hr>')
+        // Tables
+        .replace(/^\|(.*)\|$/gm, (match) => {
+            const cells = match.split('|').slice(1, -1).map(c => c.trim());
+            return cells.map((c, i) => `<td>${c}</td>`).join('');
+        })
+        // Handle table rows
+        .replace(/(<td>.*<\/td>\n)+/g, (match) => '<tr>' + match.replace(/\n/g, '</tr>\n<tr>') + '</tr>')
+        .replace(/(<tr>.*<\/tr>\n)+/g, '<table>$&</table>');
+    
+    // Paragraphs - split by double newline
+    const paragraphs = html.split('\n\n');
+    let result = '';
+    let inCodeBlock = false;
+    let codeContent = '';
+    
+    for (let p of paragraphs) {
+        p = p.trim();
+        if (!p) continue;
+        
+        // Code blocks
+        if (p.startsWith('```')) {
+            if (!inCodeBlock) {
+                inCodeBlock = true;
+                codeContent = p.slice(3);
+            } else {
+                inCodeBlock = false;
+                result += `<pre><code>${escapeHtml(codeContent)}</code></pre>\n`;
+                codeContent = '';
+            }
+            continue;
+        }
+        
+        if (inCodeBlock) {
+            codeContent += '\n' + p;
+            continue;
+        }
+        
+        // Already HTML elements
+        if (p.match(/^<(h[1-6]|table|tr|td|th|hr|ul|ol|li|blockquote|pre)/)) {
+            result += p + '\n\n';
+            continue;
+        }
+        
+        // Piece markers
+        if (p.startsWith('*End of Piece') || p.startsWith('**End of Piece')) {
+            result += `<div class="piece-marker">${p}</div>\n\n`;
+            continue;
+        }
+        
+        // File separators
+        if (p.startsWith('=== FILE:')) {
+            result += `<div class="file-separator"><div class="file-header">${p.replace('=== ', '').replace(' ===', '')}</div>\n\n`;
+            continue;
+        }
+        
+        // List items
+        if (p.match(/^[\-\*]\s/)) {
+            const items = p.split('\n').filter(l => l.trim()).map(l => `<li>${l.replace(/^[\-\*]\s/, '')}</li>`).join('\n');
+            result += `<ul>${items}</ul>\n\n`;
+            continue;
+        }
+        
+        // Numbered lists
+        if (p.match(/^\d+\.\s/)) {
+            const items = p.split('\n').filter(l => l.trim()).map(l => `<li>${l.replace(/^\d+\.\s/, '')}</li>`).join('\n');
+            result += `<ol>${items}</ol>\n\n`;
+            continue;
+        }
+        
+        // Blockquotes
+        if (p.startsWith('> ')) {
+            result += `<blockquote>${p.slice(2)}</blockquote>\n\n`;
+            continue;
+        }
+        
+        // Regular paragraph
+        result += `<p>${p}</p>\n\n`;
+    }
+    
+    document.getElementById('content').innerHTML = result;
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function buildTOC() {
+    const headings = document.querySelectorAll('main h2, main h3');
+    const tocList = document.getElementById('toc-list');
+    let currentH2 = null;
+    let subList = null;
+    
+    headings.forEach((h, index) => {
+        const id = `heading-${index}`;
+        h.id = id;
+        const text = h.textContent;
+        
+        if (h.tagName === 'H2') {
+            currentH2 = document.createElement('li');
+            currentH2.innerHTML = `<a href="#${id}">${text}</a>`;
+            tocList.appendChild(currentH2);
+            subList = document.createElement('ul');
+            subList.className = 'sub-items';
+            currentH2.appendChild(subList);
+        } else if (h.tagName === 'H3' && subList) {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="#${id}">${text}</a>`;
+            subList.appendChild(li);
+        }
+    });
+}
+
+// Initialize
+loadContent();
+</script>
+</body>
+</html>
