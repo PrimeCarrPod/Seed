@@ -1,37 +1,30 @@
-**Chassis Geometry** (DRAFT-04 §2; MAT-02 §4):
-```
-RenaissanceMan: Justacorps/waistcoat chassis
-- Vertical stays: 12 per side (front to back)
-- Horizontal stays: 4 per side (waist, chest, shoulder, hem)
-- Baleen channels: 18mm wide, 3mm deep (machine-stitched)
+**Hysteresis (Loading-Unloading Cycle):**
 
-RenaissanceWoMan: Stays/corset chassis
-- Vertical stays: 14-18 per side (curved for bust shaping)
-- Horizontal stays: 6 per side (bust, waist, hip, under-bust, mid-hip, hem)
-- Busk: Center front rigid element (steel/baleen composite, 12mm wide)
-- Eyelet reinforcement: Ti₃AlC₂ cleats at lacing points (CSMFAB078-A §3.3)
-```
-
-*Traceability: Research Doc 1 §5.1, §5.3; MAT-02 §1-3; SYNTH-01 §5; SYNTH-02 §4; MAT-04 §4.4; DRAFT-04 §2; CSMFAB078-A §3.3*
+$$\text{Hysteresis Loss} = \frac{\oint \sigma d\varepsilon}{\int \sigma d\varepsilon} \approx 3\% \quad \text{(steel)} \quad \text{vs.} \quad 25\% \quad \text{(baleen)}$$
 
 ---
 
-## 2. Cage Crinoline / Pannier System
+## 2. Cage Crinoline / Pannier System (from DRAFT-04, MAT-02 §4.3, CSMFAB078-A §3.3)
 
-### 2.1 Hoop Geometry & Moment of Inertia
+### 2.1 Hoop Geometry Progression
 
-**Elliptical Hoop Progression** (Research Doc 1 §5.3; DRAFT-04 §2; MAT-02 §4):
-```
-Hoop i (i = 1..N, N = 4-6): Ellipse x²/a_i² + y²/b_i² = 1
-a_i > b_i (front-fullness), a_i/b_i = 1.3-1.5
+**Elliptical Hoop Parameters (Semi-axes in mm):**
 
-Radius progression (front semi-axis a_i):
-| Edition | Hoop 1 (waist) | Hoop 2 | Hoop 3 | Hoop 4 (hip) | Hoop 5 (knee) | Hoop 6 (hem) |
-|---------|----------------|--------|--------|--------------|---------------|--------------|
-| RW-TS   | 140mm          | 280mm  | 420mm  | 560mm        | 650mm         | 700mm        |
-| RW-TG   | 160mm          | 320mm  | 480mm  | 640mm        | 750mm         | 800mm        |
-| RW-SS   | 120mm          | 240mm  | 360mm  | 480mm        | 550mm         | 600mm        |
-| RW-SG   | 150mm          | 300mm  | 450mm  | 600mm        | 700mm         | 750mm        |
+| Hoop | Level | RM-TS (a×b) | RM-TG (a×b) | RW-TS (a×b) | RW-TG (a×b) |
+|------|-------|-------------|-------------|-------------|-------------|
+| 1 | Waist | 280×200 | 360×260 | 260×190 | 340×240 |
+| 2 | Hip | 320×230 | 400×290 | 300×220 | 380×270 |
+| 3 | Mid-thigh | 260×190 | 320×240 | 240×180 | 300×230 |
+| 4 | Hem | 220×160 | 280×210 | 200×150 | 260×200 |
 
-b_i = a_i / 1.4, t = 1.5mm spring steel wire
-```
+**Moment of Inertia (Bending Stiffness):**
+
+$$I_x = \frac{\pi}{4} a b^3, \quad I_y = \frac{\pi}{4} a^3 b$$
+
+**Hoop Wire Specification:**
+- Material: Spring steel 17-7 PH (same as boning)
+- Diameter: 3.0 mm (waist), 2.5 mm (hip), 2.0 mm (lower)
+- Collapsible: Telescoping segments with friction locks
+
+### 2.2 Tape Suspension Catenary
+
