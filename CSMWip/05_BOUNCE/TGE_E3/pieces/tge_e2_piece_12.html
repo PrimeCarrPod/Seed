@@ -1,0 +1,79 @@
+showPrimeExplorer() {
+                this.toggleMenu();
+                TGE.PrimeExplorer.show();
+            },
+            
+            hidePrimeExplorer() {
+                TGE.PrimeExplorer.hide();
+            },
+            
+            showWorldlineHistory() {
+                this.toggleMenu();
+                TGE.WorldlineHistory.show();
+            },
+            
+            hideWorldlineHistory() {
+                TGE.WorldlineHistory.hide();
+            },
+            
+            showGapAnalysis() {
+                this.toggleMenu();
+                TGE.GapAnalysis.show();
+            },
+            
+            hideGapAnalysis() {
+                TGE.GapAnalysis.hide();
+            },
+            
+            resetSimulation() {
+                this.electrons[0].x = this.width / 2;
+                this.electrons[0].y = this.height / 2;
+                this.electrons[0].vx = 0;
+                this.electrons[0].vy = 0;
+                this.worldline = [];
+                this.reflections = 0;
+                this.steps = 0;
+                this.gapsCrossed = 0;
+                this.primeGapIndex = 0;
+                this.electrons.forEach((e, i) => {
+                    if (i > 0) {
+                        e.x = this.width / 2 + (Math.random() - 0.5) * 20;
+                        e.y = this.height / 2 + (Math.random() - 0.5) * 20;
+                        e.vx = 0;
+                        e.vy = 0;
+                        e.history = [];
+                        e.reflections = 0;
+                    }
+                });
+            },
+            
+            updateMotion(ax, ay, az, gx, gy, gz) {
+                // Apply accelerometer as force on main electron
+                const force = 0.05;
+                this.electrons[0].vx += ax * force;
+                this.electrons[0].vy += ay * force;
+                
+                // Gyroscope adds angular momentum
+                const torque = 0.01;
+                this.electrons[0].vx += gz * torque;
+                this.electrons[0].vy -= gx * torque;
+                
+                // In fleet mode, apply to all with variation
+                if (this.fleetMode) {
+                    this.electrons.forEach((e, i) => {
+                        if (i === 0) return;
+                        const variation = 0.5 + (i / this.electrons.length) * 0.5;
+                        e.vx += ax * force * variation;
+                        e.vy += ay * force * variation;
+                    });
+                }
+            },
+            
+            onReady(data) { console.log('TGE E2 ready:', data); },
+            toggleFleet() { this.toggleFleet(); }
+        };
+        
+        window.TGE = TGE;
+    </script>
+</body>
+</html>

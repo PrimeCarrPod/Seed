@@ -1,0 +1,72 @@
+onScanPressed() {
+                // Give main electron a random kick
+                this.electrons[0].vx += (Math.random() - 0.5) * 10;
+                this.electrons[0].vy += (Math.random() - 0.5) * 10;
+                
+                // In fleet mode, give all electrons different kicks
+                if (this.fleetMode) {
+                    this.electrons.forEach((e, i) => {
+                        if (i === 0) return;
+                        const angle = (i / this.electrons.length) * Math.PI * 2;
+                        const force = 3 + Math.random() * 4;
+                        e.vx += Math.cos(angle) * force;
+                        e.vy += Math.sin(angle) * force;
+                    });
+                }
+            },
+            
+            toggleMenu() {
+                this.menuVisible = !this.menuVisible;
+                document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+            },
+            
+            resume() { this.toggleMenu(); },
+            
+            toggleTheory() {
+                this.theoryMode = !this.theoryMode;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+            },
+            
+            setTheoryMode(enabled) {
+                this.theoryMode = enabled;
+            },
+            
+            initFleet() {
+                this.electrons = [];
+                // Main electron
+                this.electrons.push({
+                    x: this.width / 2,
+                    y: this.height / 2,
+                    vx: 0,
+                    vy: 0,
+                    radius: 4,
+                    history: [],
+                    reflections: 0,
+                    primeSeed: 2 // First prime
+                });
+            },
+            
+            toggleFleet() {
+                this.fleetMode = !this.fleetMode;
+                if (this.fleetMode) {
+                    // Add 7 more electrons (8 total = first 8 primes)
+                    const primeSeeds = [3, 5, 7, 11, 13, 17, 19];
+                    primeSeeds.forEach((seed, i) => {
+                        this.electrons.push({
+                            x: this.width / 2 + (Math.random() - 0.5) * 20,
+                            y: this.height / 2 + (Math.random() - 0.5) * 20,
+                            vx: 0,
+                            vy: 0,
+                            radius: 3,
+                            history: [],
+                            reflections: 0,
+                            primeSeed: seed
+                        });
+                    });
+                } else {
+                    // Keep only main electron
+                    this.electrons = this.electrons.slice(0, 1);
+                }
+                document.getElementById('fleet-indicator').textContent = 
+                    this.fleetMode ? `FLEET: ${this.electrons.length} ELECTRONS` : '';
+            },

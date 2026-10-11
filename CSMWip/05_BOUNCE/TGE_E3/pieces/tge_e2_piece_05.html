@@ -1,0 +1,72 @@
+render() {
+                this.ctx.fillStyle = '#0A0A0F';
+                this.ctx.fillRect(0, 0, this.width, this.height);
+                
+                this.drawEggshell();
+                this.drawWorldline();
+                this.drawPrimeGapMarkers();
+                this.drawElectrons();
+                this.drawReflectionCircles();
+                
+                // Theory mode overlays
+                if (this.theoryMode) {
+                    this.drawRiemannZeros();
+                    this.drawPrimeDensity();
+                }
+            },
+            
+            drawEggshell() {
+                this.ctx.save();
+                this.ctx.translate(this.eggshell.cx, this.eggshell.cy);
+                this.ctx.rotate(this.eggshell.rotation);
+                this.ctx.beginPath();
+                this.ctx.ellipse(0, 0, this.eggshell.rx, this.eggshell.ry, 0, 0, Math.PI * 2);
+                this.ctx.strokeStyle = '#4488FF';
+                this.ctx.lineWidth = 1;
+                this.ctx.globalAlpha = 0.3;
+                this.ctx.stroke();
+                this.ctx.globalAlpha = 1;
+                this.ctx.restore();
+                this.eggshell.rotation += 0.0001;
+            },
+            
+            drawWorldline() {
+                if (this.worldline.length < 2) return;
+                this.ctx.beginPath();
+                this.ctx.moveTo(this.worldline[0].x, this.worldline[0].y);
+                for (let i = 1; i < this.worldline.length; i++) {
+                    this.ctx.lineTo(this.worldline[i].x, this.worldline[i].y);
+                }
+                const gradient = this.ctx.createLinearGradient(
+                    this.worldline[0].x, this.worldline[0].y,
+                    this.worldline[this.worldline.length-1].x, this.worldline[this.worldline.length-1].y
+                );
+                gradient.addColorStop(0, '#00D4AA22');
+                gradient.addColorStop(1, '#00D4AA');
+                this.ctx.strokeStyle = gradient;
+                this.ctx.lineWidth = 2;
+                this.ctx.stroke();
+                
+                // Draw fleet worldlines (fainter)
+                if (this.fleetMode) {
+                    this.electrons.forEach((e, i) => {
+                        if (i === 0 || !e.history) return;
+                        if (e.history.length < 2) return;
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(e.history[0].x, e.history[0].y);
+                        for (let j = 1; j < e.history.length; j++) {
+                            this.ctx.lineTo(e.history[j].x, e.history[j].y);
+                        }
+                        const hue = (i * 137) % 360;
+                        const fleetGradient = this.ctx.createLinearGradient(
+                            e.history[0].x, e.history[0].y,
+                            e.history[e.history.length-1].x, e.history[e.history.length-1].y
+                        );
+                        fleetGradient.addColorStop(0, `hsla(${hue}, 70%, 50%, 0.1)`);
+                        fleetGradient.addColorStop(1, `hsla(${hue}, 70%, 50%, 0.4)`);
+                        this.ctx.strokeStyle = fleetGradient;
+                        this.ctx.lineWidth = 1;
+                        this.ctx.stroke();
+                    });
+                }
+            },
