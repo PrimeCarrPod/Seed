@@ -195,6 +195,811 @@
       "lines": 39,
       "strategies": 3,
       "timestamp": "2026-10-11T01:47:08Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:19Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:22Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:24Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:26Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:28Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:31Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:33Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:35Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:38Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:40Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_piece_11.md",
+      "difficulty": "easy",
+      "lines": 8,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:42Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-01_Silk_Fibroin_Engineering_Spec_pieces.zip",
+      "difficulty": "easy",
+      "lines": 26,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:08:44Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:10:53Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:10:56Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:10:58Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:01Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:03Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:05Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:08Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:10Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:12Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:14Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_piece_11.md",
+      "difficulty": "easy",
+      "lines": 18,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:17Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-02_Structural_Foundation_Materials_pieces.zip",
+      "difficulty": "easy",
+      "lines": 31,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:11:19Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:24Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:27Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:29Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:31Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:34Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:36Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:38Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:40Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:43Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:45Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_11.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:47Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_12.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_12.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:49Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_13.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_piece_13.md",
+      "difficulty": "easy",
+      "lines": 27,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:51Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-03_Protective_Layer_Integration_pieces.zip",
+      "difficulty": "easy",
+      "lines": 49,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:13:53Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:24Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:27Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:29Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:31Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:34Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:36Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:38Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:40Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:42Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:45Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_11.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:47Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_12.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_piece_12.md",
+      "difficulty": "easy",
+      "lines": 2,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:49Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/MAT-04_Cross_Property_Validation_Matrix_pieces.zip",
+      "difficulty": "easy",
+      "lines": 36,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:16:51Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:22Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:24Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:26Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:28Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:30Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:33Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:35Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:37Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:39Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:41Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_11.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:44Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_12.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_piece_12.md",
+      "difficulty": "easy",
+      "lines": 1,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:46Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-01_Alcega_Developable_Surface_Engine_pieces.zip",
+      "difficulty": "easy",
+      "lines": 37,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:19:48Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:39Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:42Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:44Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:47Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:49Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:51Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:53Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:55Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:22:58Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:23:00Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_11.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:23:02Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_12.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_piece_12.md",
+      "difficulty": "easy",
+      "lines": 5,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:23:04Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-02_Garsault_Proportional_Scaling_System_pieces.zip",
+      "difficulty": "easy",
+      "lines": 24,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:23:06Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:29Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:32Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:34Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:37Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:39Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:41Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:43Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:45Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:48Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:50Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_piece_11.md",
+      "difficulty": "easy",
+      "lines": 0,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:52Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-03_Pleating_Kernel_pieces.zip",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:25:54Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:04Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:07Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:09Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:11Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:14Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:16Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:18Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:20Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:22Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:25Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_11.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:27Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_12.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_12.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:29Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_13.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_piece_13.md",
+      "difficulty": "easy",
+      "lines": 11,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:31Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-04_Farthingale_Pannier_Hoop_Architecture_pieces.zip",
+      "difficulty": "easy",
+      "lines": 28,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:30:33Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_01.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_01.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:13Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_02.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_02.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:16Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_03.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_03.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:18Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_04.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_04.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:20Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_05.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_05.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:23Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_06.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_06.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:25Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_07.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_07.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:27Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_08.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_08.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:29Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_09.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_09.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:32Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_10.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_10.md",
+      "difficulty": "easy",
+      "lines": 30,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:34Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_11.md": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_piece_11.md",
+      "difficulty": "easy",
+      "lines": 25,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:36Z"
+    },
+    "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_pieces.zip": {
+      "file": "/workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/DRAFT-05_Zero_Waste_Nesting_Optimizer_pieces.zip",
+      "difficulty": "easy",
+      "lines": 36,
+      "strategies": 3,
+      "timestamp": "2026-10-11T02:33:38Z"
     }
   }
 }

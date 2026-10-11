@@ -1,0 +1,2 @@
+- **TBD markers**: 2 documented (exact landmark count, generatrix density) ✅
+- **Traceability matrix**: Present ✅
