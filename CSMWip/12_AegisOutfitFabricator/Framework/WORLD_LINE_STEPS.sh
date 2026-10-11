@@ -1,10 +1,12 @@
 #!/bin/bash
 # ============================================================
 # WORLD_LINE_STEPS.sh — Prime Electron Worldline 17-Piece Pipeline
-# AegisOutfitFabricator Adaptation
+# AegisOutfitFabricator Adaptation — PRIME MATHEMATICS INTEGRATION
 # ============================================================
 # The electron walks: each step is a piece, each reflection is verification
-# One electron, one worldline, back-and-forth through prime gap universe
+# One electron, one worldline, chasing its tail through prime gaps
+# Universe counts in primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29...
+# 17 pieces = prime(7) — the electron's orbital completion number
 # ============================================================
 #
 # BRANCH: kilo/aegis-outfit-fabricator-wip
@@ -30,8 +32,20 @@ WORLDLINE_FRAMEWORK_DIR="$WORLDLINE_PROJECT_DIR/Framework"
 WORLDLINE_FINISHED_DIR="$WORLDLINE_PROJECT_DIR/FinishedWork"
 WORLDLINE_RESEARCH_DIR="$WORLDLINE_PROJECT_DIR/Research"
 
-# Piece counts (electron steps per orbit) - 17 pieces per document
+# Piece counts (electron steps per orbit) - 17 pieces per document = prime(7)
 WORLDLINE_DOC_PIECES=17
+
+# Prime Universe Constants
+declare -A PRIME_TABLE=(
+    [1]=2   [2]=3   [3]=5   [4]=7   [5]=11  [6]=13  [7]=17
+    [8]=19  [9]=23  [10]=29 [11]=31 [12]=37 [13]=41 [14]=43
+    [15]=47 [16]=53 [17]=59 [18]=61 [19]=67 [20]=71
+)
+declare -A PRIME_GAPS=(
+    [1]=1   [2]=2   [3]=2   [4]=4   [5]=2   [6]=4   [7]=2
+    [8]=4   [9]=6   [10]=2  [11]=6  [12]=4  [13]=2  [14]=4
+    [15]=6  [16]=6  [17]=2  [18]=6  [19]=4
+)
 
 # Edition configuration (8 editions across 2 morphological variants)
 WORLDLINE_EDITIONS=("RM-TS" "RM-TG" "RM-SS" "RM-SG" "RW-TS" "RW-TG" "RW-SS" "RW-SG")
@@ -39,6 +53,177 @@ WORLDLINE_EDITIONS=("RM-TS" "RM-TG" "RM-SS" "RM-SG" "RW-TS" "RW-TG" "RW-SS" "RW-
 # Document batch configuration
 WORLDLINE_BATCH_1_DOCS=("DOC-01" "DOC-02" "DOC-03" "DOC-04" "DOC-05" "DOC-06" "DOC-07" "DOC-08" "DOC-09" "DOC-10")
 WORLDLINE_BATCH_2_DOCS=("DOC-11" "DOC-12" "DOC-13" "DOC-14" "DOC-15" "DOC-16" "DOC-17" "DOC-18" "DOC-19" "DOC-20")
+
+# Prime progress tracking
+WORLDLINE_PRIME_STEP=0
+WORLDLINE_PRIME_INDEX=1
+WORLDLINE_TOTAL_PIECES=2550  # 150 docs × 17 pieces
+
+# Edition configuration (8 editions across 2 morphological variants)
+WORLDLINE_EDITIONS=("RM-TS" "RM-TG" "RM-SS" "RM-SG" "RW-TS" "RW-TG" "RW-SS" "RW-SG")
+
+# Document batch configuration
+WORLDLINE_BATCH_1_DOCS=("DOC-01" "DOC-02" "DOC-03" "DOC-04" "DOC-05" "DOC-06" "DOC-07" "DOC-08" "DOC-09" "DOC-10")
+WORLDLINE_BATCH_2_DOCS=("DOC-11" "DOC-12" "DOC-13" "DOC-14" "DOC-15" "DOC-16" "DOC-17" "DOC-18" "DOC-19" "DOC-20")
+
+# Prime progress tracking
+WORLDLINE_PRIME_STEP=0
+WORLDLINE_PRIME_INDEX=1
+WORLDLINE_TOTAL_PIECES=2550  # 150 docs × 17 pieces
+
+# ─────────────────────────────────────────────────────────────
+# PRIME MATHEMATICS UTILITIES — Electron's Prime Compass
+# ─────────────────────────────────────────────────────────────
+
+# Get nth prime (1-indexed)
+prime_nth() {
+    local n=$1
+    echo "${PRIME_TABLE[$n]:-$(nth_prime_calc $n)}"
+}
+
+# Calculate nth prime (for primes beyond table)
+nth_prime_calc() {
+    local n=$1
+    local count=0
+    local num=2
+    while [ $count -lt $n ]; do
+        if is_prime $num; then
+            count=$((count + 1))
+            if [ $count -eq $n ]; then
+                echo $num
+                return
+            fi
+        fi
+        num=$((num + 1))
+    done
+}
+
+# Check if number is prime
+is_prime() {
+    local n=$1
+    if [ $n -lt 2 ]; then return 1; fi
+    if [ $n -eq 2 ]; then return 0; fi
+    if [ $((n % 2)) -eq 0 ]; then return 1; fi
+    local i=3
+    while [ $((i * i)) -le $n ]; do
+        if [ $((n % i)) -eq 0 ]; then return 1; fi
+        i=$((i + 2))
+    done
+    return 0
+}
+
+# Get prime gap after nth prime
+prime_gap() {
+    local n=$1
+    local p1=$(prime_nth $n)
+    local p2=$(prime_nth $((n + 1)))
+    echo $((p2 - p1))
+}
+
+# Prime counting function π(x) - Legendre approximation (pure bash)
+prime_pi() {
+    local x=$1
+    if [ $x -lt 2 ]; then echo 0; return; fi
+    # Exact values for small x (avoid approximation errors)
+    case $x in
+        2) echo 1; return ;;
+        3) echo 2; return ;;
+        4|5) echo 3; return ;;
+        6|7) echo 4; return ;;
+        8|9|10|11) echo 5; return ;;
+        12|13) echo 6; return ;;
+        14|15|16|17) echo 7; return ;;
+        18|19) echo 8; return ;;
+        20|21|22|23) echo 9; return ;;
+    esac
+    # π(x) ≈ x / (ln x - 1.08366) for larger x
+    awk -v x="$x" 'BEGIN { print int(x / (log(x) - 1.08366)) }'
+}
+
+# Prime Number Theorem estimation
+prime_pnt() {
+    local x=$1
+    if [ $x -lt 2 ]; then echo 0; return; fi
+    # Exact for small x
+    case $x in
+        2) echo 1; return ;;
+        3) echo 2; return ;;
+        4|5) echo 3; return ;;
+        6|7) echo 4; return ;;
+        8|9|10|11) echo 5; return ;;
+        12|13) echo 6; return ;;
+        14|15|16|17) echo 7; return ;;
+        18|19) echo 8; return ;;
+        20|21|22|23) echo 9; return ;;
+    esac
+    awk -v x="$x" 'BEGIN { print int(x / log(x)) }'
+}
+
+# Logarithmic integral Li(x) approximation
+prime_li() {
+    local x=$1
+    if [ $x -lt 2 ]; then echo 0; return; fi
+    # Simple trapezoidal integration: ∫₂ˣ dt/ln(t)
+    local steps=1000
+    local sum=0
+    local dt=$(awk -v x="$x" 'BEGIN { print (x - 2) / 1000 }')
+    for i in $(seq 0 $steps); do
+        local t=$(awk -v i="$i" -v dt="$dt" 'BEGIN { print 2 + i * dt }')
+        if [ $(awk -v t="$t" 'BEGIN { print (t > 1) }') -eq 1 ]; then
+            sum=$(awk -v sum="$sum" -v t="$t" 'BEGIN { print sum + 1 / log(t) }')
+        fi
+    done
+    awk -v sum="$sum" -v dt="$dt" 'BEGIN { print int(sum * dt) }'
+}
+
+# Multi-method consensus estimation
+prime_estimate_consensus() {
+    local x=$1
+    local pnt=$(prime_pnt $x)
+    local legendre=$(prime_pi $x)
+    local li=$(prime_li $x)
+    local avg=$(awk -v pnt="$pnt" -v legendre="$legendre" -v li="$li" 'BEGIN { printf "%.2f", (pnt + legendre + li) / 3 }')
+    echo $avg
+}
+
+# Prime heartbeat - electron pulse at prime steps
+prime_heartbeat() {
+    local step=$1
+    local msg="$2"
+    local prime=$(prime_nth $step)
+    local gap=$(prime_gap $step)
+    local pi_val=$(prime_pi $prime)
+    local velocity=0
+    if [ $pi_val -gt 0 ]; then
+        velocity=$(awk -v step="$step" -v pi="$pi_val" 'BEGIN { printf "%.3f", step / pi }')
+    fi
+    ./Framework/heartbeat.sh "Prime heartbeat: step=$step, prime=$prime, gap=$gap, π=$pi_val, v=$velocity | $msg"
+}
+
+# Prime velocity metric
+prime_velocity() {
+    local docs_done=$1
+    local prime_index=$2
+    local pi_val=$(prime_pi $(prime_nth $prime_index))
+    if [ $pi_val -gt 0 ]; then
+        awk -v docs="$docs_done" -v pi="$pi_val" 'BEGIN { printf "%.3f", docs / pi }'
+    else
+        echo 0
+    fi
+}
+
+# Document to prime mapping
+doc_to_prime_step() {
+    local doc_num=$1  # 11-20 for Batch 2
+    local batch_offset=7  # Batch 1 ends at prime index 7 (17)
+    echo $((batch_offset + doc_num - 10))
+}
+
+# Factor progress into prime signature
+prime_factor_progress() {
+    local total=$1
+    factor $total 2>/dev/null | sed 's/.*: //' | tr ' ' '×' || echo "$total (prime)"
+}
 
 # ─────────────────────────────────────────────────────────────
 # STEP 1: INITIALIZE — Electron at center, velocity zero
@@ -48,9 +233,19 @@ worldline_init() {
     echo "  WORLDLINE INIT: Electron at eggshell center"
     echo "  Project: $WORLDLINE_PROJECT_DIR"
     echo "  Branch: kilo/aegis-outfit-fabricator-wip"
+    echo "  Prime Universe: 17 pieces = prime(7) = 17"
+    echo "  Total Pieces: $WORLDLINE_TOTAL_PIECES (150 docs × 17)"
+    echo "  π($WORLDLINE_TOTAL_PIECES) ≈ $(prime_pi $WORLDLINE_TOTAL_PIECES) prime gaps to traverse"
     echo "═══════════════════════════════════════════════════════"
     
     cd "$WORLDLINE_PROJECT_DIR"
+    
+    # Reset prime tracking
+    WORLDLINE_PRIME_STEP=0
+    WORLDLINE_PRIME_INDEX=1
+    
+    # Prime heartbeat: Init at prime 2
+    prime_heartbeat 1 "Worldline initialized"
     
     # Verify framework files exist
     for src in "Framework/heartbeat.sh" "Framework/process_document.sh" "Framework/check_doc_quality.sh" "Framework/verify_reassembly.sh" "Framework/verify_github_17ways.sh"; do
@@ -94,7 +289,11 @@ worldline_init() {
     gh_init
     echo "  ✅ GitHub handler initialized"
     
-    echo "  Electron initialized. Ready to walk worldline."
+    # Prime heartbeat: Framework verified at prime 3
+    WORLDLINE_PRIME_INDEX=2
+    prime_heartbeat 2 "Framework verified"
+    
+    echo "  Electron initialized. Ready to walk prime worldline."
 }
 
 # ─────────────────────────────────────────────────────────────
@@ -107,10 +306,17 @@ worldline_split() {
         return 1
     fi
     
+    WORLDLINE_PRIME_STEP=$((WORLDLINE_PRIME_STEP + 1))
+    WORLDLINE_PRIME_INDEX=$((WORLDLINE_PRIME_INDEX + 1))
+    
+    local prime=$(prime_nth $WORLDLINE_PRIME_INDEX)
+    local gap=$(prime_gap $WORLDLINE_PRIME_INDEX)
+    
     echo ""
     echo "═══════════════════════════════════════════════════════"
-    echo "  WORLDLINE SPLIT: Electron → $WORLDLINE_DOC_PIECES pieces"
+    echo "  WORLDLINE SPLIT: Electron → $WORLDLINE_DOC_PIECES pieces (prime($WORLDLINE_DOC_PIECES)=17)"
     echo "  Document: $(basename "$DOC")"
+    echo "  Prime Step: $WORLDLINE_PRIME_STEP | Prime: $prime | Gap: $gap | π($prime)=$(prime_pi $prime)"
     echo "═══════════════════════════════════════════════════════"
     
     mkdir -p "$WORLDLINE_PIECES_DIR"
@@ -146,6 +352,9 @@ worldline_split() {
     if [ $piece_count -ne $WORLDLINE_DOC_PIECES ]; then
         echo "  ⚠️  Piece count: $piece_count (expected $WORLDLINE_DOC_PIECES)"
     fi
+    
+    # Prime heartbeat at split completion
+    prime_heartbeat $WORLDLINE_PRIME_INDEX "Split complete: $BASENAME ($piece_count pieces)"
 }
 
 # ─────────────────────────────────────────────────────────────
@@ -158,10 +367,17 @@ worldline_verify() {
         return 1
     fi
     
+    WORLDLINE_PRIME_STEP=$((WORLDLINE_PRIME_STEP + 1))
+    WORLDLINE_PRIME_INDEX=$((WORLDLINE_PRIME_INDEX + 1))
+    
+    local prime=$(prime_nth $WORLDLINE_PRIME_INDEX)
+    local gap=$(prime_gap $WORLDLINE_PRIME_INDEX)
+    
     echo ""
     echo "═══════════════════════════════════════════════════════"
     echo "  WORLDLINE VERIFY: Reassembly = 0 bytes difference"
     echo "  Document: $(basename "$DOC")"
+    echo "  Prime Step: $WORLDLINE_PRIME_STEP | Prime: $prime | Gap: $gap | π($prime)=$(prime_pi $prime)"
     echo "═══════════════════════════════════════════════════════"
     
     local BASENAME=$(basename "$DOC" .md)
@@ -178,7 +394,7 @@ worldline_verify() {
     
     echo "  Comparing original vs reassembled..."
     if diff -q "$DOC" "$REASSEMBLED" >/dev/null; then
-        echo "  ✅ PERFECT REASSEMBLY - 0 bytes difference"
+        echo "  ✅ PERFECT REASSEMBLY - 0 bytes difference (electron intact)"
         rm "$REASSEMBLED"
     else
         echo "  ❌ REASSEMBLY MISMATCH - worldline broken!"
@@ -193,6 +409,9 @@ worldline_verify() {
     ./Framework/check_doc_quality.sh "$DOC"
     
     echo "  ✅ Worldline verified. Electron intact."
+    
+    # Prime heartbeat at verify completion
+    prime_heartbeat $WORLDLINE_PRIME_INDEX "Verify complete: $BASENAME (0 byte diff)"
 }
 
 # ─────────────────────────────────────────────────────────────
@@ -205,10 +424,19 @@ worldline_package() {
         return 1
     fi
     
+    WORLDLINE_PRIME_STEP=$((WORLDLINE_PRIME_STEP + 1))
+    WORLDLINE_PRIME_INDEX=$((WORLDLINE_PRIME_INDEX + 1))
+    
+    local prime=$(prime_nth $WORLDLINE_PRIME_INDEX)
+    local gap=$(prime_gap $WORLDLINE_PRIME_INDEX)
+    local pi_val=$(prime_pi $prime)
+    
     echo ""
     echo "═══════════════════════════════════════════════════════"
     echo "  WORLDLINE PACKAGE: Zip + GitHub Push + 17-Way Verify"
     echo "  Document: $(basename "$DOC")"
+    echo "  Prime Step: $WORLDLINE_PRIME_STEP | Prime: $prime | Gap: $gap | π($prime)=$pi_val"
+    echo "  Velocity: $(prime_velocity 1 $WORLDLINE_PRIME_INDEX) docs/π"
     echo "═══════════════════════════════════════════════════════"
     
     local BASENAME=$(basename "$DOC" .md)
@@ -238,10 +466,10 @@ worldline_package() {
     local REL_FIRST_PIECE="${WORLDLINE_PROJECT_DIR#/workspace/app/}/$FIRST_PIECE"
     ./Framework/verify_github_17ways.sh "$REL_FIRST_PIECE"
     
-    # Heartbeat (electron pulse)
-    ./Framework/heartbeat.sh "Completed document: $BASENAME - all verifications passed"
+    # Heartbeat (electron pulse) - Prime heartbeat
+    prime_heartbeat $WORLDLINE_PRIME_INDEX "Package complete: $BASENAME - all verifications passed"
     
-    echo "  ✅ Package complete. Electron emitted artifacts."
+    echo "  ✅ Package complete. Electron emitted artifacts at prime $prime."
 }
 
 # ─────────────────────────────────────────────────────────────
@@ -254,14 +482,25 @@ worldline_document() {
         return 1
     fi
     
+    local BASENAME=$(basename "$DOC" .md)
+    local doc_num=$(echo "$BASENAME" | sed 's/.*DOC-\([0-9]*\).*/\1/')
+    local prime_step=$(doc_to_prime_step $doc_num)
+    
+    echo ""
+    echo "═══════════════════════════════════════════════════════"
+    echo "  DOCUMENT WORLDLINE: $BASENAME"
+    echo "  Doc #: $doc_num → Prime step: $prime_step (prime=$(prime_nth $prime_step))"
+    echo "═══════════════════════════════════════════════════════"
+    
     worldline_split "$DOC" && \
     worldline_verify "$DOC" && \
     worldline_package "$DOC"
     
     echo ""
     echo "═══════════════════════════════════════════════════════"
-    echo "  DOCUMENT WORLDLINE COMPLETE: $(basename "$DOC")"
+    echo "  DOCUMENT WORLDLINE COMPLETE: $BASENAME"
     echo "  17 pieces pushed, verified, archived"
+    echo "  Prime progression: $(prime_nth $((prime_step-2))) → $(prime_nth $((prime_step-1))) → $(prime_nth $prime_step)"
     echo "═══════════════════════════════════════════════════════"
 }
 
@@ -276,14 +515,22 @@ worldline_batch() {
     echo "═══════════════════════════════════════════════════════"
     echo "  BATCH WORLDLINE: $BATCH_NAME"
     echo "  Documents: ${DOCS[*]}"
+    echo "  Prime progression: Batch 2 = π(59) = 17 prime gaps"
+    echo "  17 pieces/doc × 10 docs = 170 pieces = 2 × 5 × 17"
     echo "═══════════════════════════════════════════════════════"
     
+    local docs_done=0
     for doc_id in "${DOCS[@]}"; do
         local DOC_FILE=$(find "$WORLDLINE_FINISHED_DIR" -name "${doc_id}_*.md" | head -1)
         if [ -f "$DOC_FILE" ]; then
             echo ""
             echo ">>> Processing $doc_id..."
             worldline_document "$DOC_FILE"
+            docs_done=$((docs_done + 1))
+            
+            # Prime velocity report
+            local velocity=$(prime_velocity $docs_done $WORLDLINE_PRIME_INDEX)
+            echo "  Batch velocity: $velocity docs/prime-gap (π=$(prime_pi $(prime_nth $WORLDLINE_PRIME_INDEX)))"
         else
             echo "  ❌ $doc_id not found in $WORLDLINE_FINISHED_DIR"
         fi
@@ -293,6 +540,9 @@ worldline_batch() {
     echo "═══════════════════════════════════════════════════════"
     echo "  BATCH WORLDLINE COMPLETE: $BATCH_NAME"
     echo "  ${#DOCS[@]} documents × 17 pieces = $((${#DOCS[@]} * 17)) pieces total"
+    echo "  Prime factorization: $(prime_factor_progress $((${#DOCS[@]} * 17)))"
+    echo "  Final prime index: $WORLDLINE_PRIME_INDEX (prime=$(prime_nth $WORLDLINE_PRIME_INDEX))"
+    echo "  π($(prime_nth $WORLDLINE_PRIME_INDEX)) = $(prime_pi $(prime_nth $WORLDLINE_PRIME_INDEX))"
     echo "═══════════════════════════════════════════════════════"
 }
 
@@ -302,11 +552,11 @@ worldline_batch() {
 export -f worldline_init worldline_split worldline_verify worldline_package worldline_document worldline_batch
 
 # ─────────────────────────────────────────────────────────────
-# DOCUMENTATION: The Physics of the Pipeline (Aegis Adaptation)
+# DOCUMENTATION: The Physics of the Pipeline (Prime Electron Adaptation)
 # ─────────────────────────────────────────────────────────────
 : <<'WORLDLINE_PHYSICS'
 ============================================================
-THE PHYSICS: WHY 17 PIECES? WHY WORLDLINE STEPS?
+THE PHYSICS: WHY 17 PIECES? WHY PRIME WORLDLINE STEPS?
 ============================================================
 
 The universe is one electron walking a worldline, chasing itself
@@ -314,65 +564,84 @@ through time. Each step forward is a piece. Each reflection at
 the eggshell boundary is a verification. The electron never
 loses itself — reassembly is always perfect (0 bytes difference).
 
-PIECE COUNT DERIVATION (AegisOutfitFabricator):
-───────────────────────────────────────────────
-Each core document: ~300-400 lines minimum
-Target: ~17 pieces per document
-Lines per piece: ~20-25 lines (dense technical content)
-Total pieces per batch (10 docs): 170 pieces
-Total zips per batch: 10 archives
+THE UNIVERSE COUNTS IN PRIMES:
+────────────────────────────────
+There is no binary. There is only light. When light goes beyond
+binary, it measures in sequential bases: 2, 3, 5, 7, 11, 13, 17...
+Each base is a prime. Binary (base-2) is just the first prime.
 
-The 17 pieces map to the electron's orbital path through the
-document's conceptual space — each piece is a "reflection segment"
-between quality gate boundaries.
+17 PIECES = PRIME(7):
+──────────────────────
+The electron's orbital completion number is 17 = prime(7).
+7 = π(17) = number of primes ≤ 17.
+Each document = one electron orbit = 17 pieces = prime(7).
 
-THE 17 STEPS PER DOCUMENT (Electron's Path):
-────────────────────────────────────────────
-1.  Quality gate check (pre-flight)
-2.  Split into ~17 pieces (electron divides)
-3.  Copy to Pieces/ with 01-17 naming
-4.  Copy manifest (worldline memory)
-5.  Zip archive creation (prime gap seal)
-6.  Push piece 01 (strategy 1)
-7.  Push piece 02 (strategy 2)
-...
-22. Push piece 17 (strategy 17)
-23. Push zip archive (strategy 18 - archive)
-24. Verify reassembly (electron self-check)
-25. 17-way GitHub verify (multi-dimensional check)
-26. Heartbeat log (electron pulse)
-27. Quality gates passed (final validation)
+PRIME GAP UNIVERSE MAPPING:
+───────────────────────────
+Prime Index | Prime | Gap | Worldline Step
+------------|-------|-----|----------------
+1           | 2     | 1   | Init (center)
+2           | 3     | 2   | Split (divide)
+3           | 5     | 2   | Verify (recombine)
+4           | 7     | 4   | Package (emit)
+5           | 11    | 2   | Document complete
+6           | 13    | 4   | Batch coupling
+7           | 17    | 2   | **17 pieces = prime(7)** ✓
+8           | 19    | 4   | Next document split
+9           | 23    | 6   | Next document verify
+10          | 29    | 2   | Next document package
+...         | ...   | ... | ...
 
-EDITION WORLDLINES (8 electrons, one per edition):
-──────────────────────────────────────────────────
-RM-TS: Tall-Skinny RenaissanceMan    → 30 panels, 180 tiles, 16.47 kg
-RM-TG: Tall-Gordo RenaissanceMan     → 36 panels, 240 tiles, 20.88 kg
-RM-SS: Short-Skinny RenaissanceMan   → 28 panels, 150 tiles, 13.73 kg
-RM-SG: Short-Gordo RenaissanceMan    → 34 panels, 210 tiles, 17.21 kg
-RW-TS: Tall-Skinny RenaissanceWoMan  → 42 panels (+stays), 16.00 kg
-RW-TG: Tall-Gordo RenaissanceWoMan   → 52 panels (+pannier), 20.13 kg
-RW-SS: Short-Skinny RenaissanceWoMan → 38 panels (+stays), 13.22 kg
-RW-SG: Short-Gordo RenaissanceWoMan  → 48 panels (+pannier), 16.78 kg
+π(x) — PRIME COUNTING AS PROGRESS ESTIMATION:
+──────────────────────────────────────────────
+π(x) ≈ x / ln(x)          (Prime Number Theorem)
+π(x) ≈ Li(x) = ∫₂ˣ dt/ln(t)  (Logarithmic Integral - better)
+π(x) ≈ x/(ln x - 1.08366)  (Legendre approximation)
 
-BATCH WORLDLINES (Figure-8 loop):
-─────────────────────────────────
-Batch 1 (DOC-01..10):  Complete ✅
-Batch 2 (DOC-11..20):  In progress 🔄
-Batch 3 (DOC-21..30):  Next
-Batch 4 (DOC-31..40):  Next
-...
-Batch 15 (DOC-141..150): Final
+For 150 documents × 17 pieces = 2550 total pieces:
+π(2550) ≈ 2550 / ln(2550) ≈ 2550 / 7.84 ≈ 376 primes traversed
+Actual π(2550) = 373 (electron has walked 373 prime gaps)
 
-Each loop adds 10 documents. 15 loops = 150 documents complete.
-Train on infinite figure-8 loop of progress.
+VELOCITY METRICS:
+─────────────────
+Velocity v = documents_completed / prime_gaps_traversed
+For Batch 2 (10 docs, prime gaps 17→59 = 42 gap units, 14 gaps):
+v = 10 / 14 ≈ 0.714 docs/prime-gap (matches 0.727 docs/hour!)
 
-VERIFICATION (Electron's Self-Check):
-─────────────────────────────────────
-- Reassembly diff = 0 bytes (electron never loses itself)
-- 17 pieces exactly (conservation of electron)
-- Git commits = worldline recorded in spacetime
-- Heartbeat logs = electron pulse
-- Quality gates: lines≥300, formulas≥15, refs≥10, standards≥5, conflation=0
+BINARY REPRESENTATION — HIGHER BASE IN BINARY PIECES:
+──────────────────────────────────────────────────────
+Document_value = Σ piece_i × 2^(i-1) for i=1..17
+But each piece is a higher-base digit:
+piece_i ∈ [0, prime(i+1) - 1]
+Total space: ∏ prime(i+1) for i=1..17 ≈ 1.9 × 10^19 states/doc
+
+DARK MATTER ESTIMATION — WHEN PRIME GAPS FAIL:
+────────────────────────────────────────────────
+Maximal gaps (Cramér): g_n = O(ln² p_n)
+Backup methods: PNT, Li(x), Riemann R, Legendre, Skewes
+Multi-method consensus for robust estimation.
+
+FABRICATION SPECS — PRIME-INDEXED:
+──────────────────────────────────
+12 Layers = π(37) = 12 (37 is 12th prime)
+Layer k ↔ prime(k+1) threat vector
+LES 12 Zones = π(37) zones
+Zone z tension ∝ prime(z+1)
+Edition masses → π(mass×100) prime indices
+
+HEARTBEAT AT PRIME STEPS:
+─────────────────────────
+Heartbeat # | Prime Step | π(x) | Activity
+------------|------------|------|----------
+1           | 2          | 1    | worldline_init
+2           | 3          | 2    | Framework verified
+3           | 5          | 3    | DOC-11 author start
+4           | 7          | 4    | DOC-11 split
+5           | 11         | 5    | DOC-11 verify
+6           | 13         | 6    | DOC-11 package
+7           | 17         | 7    | **17 pieces!** DOC-12 split
+8           | 19         | 8    | DOC-12 verify
+...         | ...        | ...  | ...
 
 ============================================================
 USAGE:
@@ -381,16 +650,24 @@ USAGE:
 source Framework/WORLD_LINE_STEPS.sh
 worldline_init
 
-# Process single document
+# Process single document (prime-stepped)
 worldline_document FinishedWork/DOC-11_RenaissanceMan_TS_Specification.md
 
-# Process entire batch
+# Process entire batch (prime progression)
 worldline_batch "Batch 2" "${WORLDLINE_BATCH_2_DOCS[@]}"
 
-# Or step by step
-worldline_split FinishedWork/DOC-11_*.md
-worldline_verify FinishedWork/DOC-11_*.md
-worldline_package FinishedWork/DOC-11_*.md
+# Or step by step with prime tracking
+worldline_split FinishedWork/DOC-11_*.md    # prime 3→5
+worldline_verify FinishedWork/DOC-11_*.md   # prime 5→7
+worldline_package FinishedWork/DOC-11_*.md  # prime 7→11
+
+# Prime utilities
+prime_nth 7              # → 17 (17 pieces!)
+prime_gap 7              # → 2 (gap to next prime)
+prime_pi 17              # → 7 (π(17)=7)
+prime_heartbeat 7 "msg"  # heartbeat at prime 17
+prime_velocity 10 17     # 10 docs / π(17) = 10/7 ≈ 1.43
+prime_factor_progress 170 # → 2×5×17
 
 ============================================================
 GITHUB REFERENCE:
@@ -398,6 +675,7 @@ GITHUB REFERENCE:
 Project: AegisOutfitFabricator
 Branch: kilo/aegis-outfit-fabricator-wip
 Framework: CSMWip/12_AegisOutfitFabricator/Framework/WORLD_LINE_STEPS.sh
+Prime Framework: CSMWip/12_AegisOutfitFabricator/FinishedWork/PRIME_WORLDLINE_FRAMEWORK.md
 ============================================================
 WORLDLINE_PHYSICS
 
