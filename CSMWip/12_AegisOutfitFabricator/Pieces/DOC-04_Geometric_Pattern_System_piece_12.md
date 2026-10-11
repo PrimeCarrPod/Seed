@@ -1,44 +1,26 @@
-### 7.1 Panel Interchangeability
+## 9. Computational Performance Metrics
 
-| Panel Type | RM-TS | RM-TG | RM-SS | RM-SG | RW-TS | RW-TG | RW-SS | RW-SG |
-|------------|-------|-------|-------|-------|-------|-------|-------|-------|
-| Front (upper) | ✓ | ✓* | ✓ | ✓* | — | — | — | — |
-| Back (upper) | ✓ | ✓* | ✓ | ✓* | — | — | — | — |
-| Side panel | — | — | — | — | ✓ | ✓* | ✓ | ✓* |
-| Skirt panel | — | — | — | — | ✓ | ✓* | ✓ | ✓* |
-| Sleeve | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Stays panel | — | — | — | — | ✓ | ✓* | ✓ | ✓* |
-| Hoop tape | — | — | — | — | ✓ | ✓ | ✓ | ✓ |
-
-* = scaled version (same topology, different dimensions)
-
-### 7.2 Shared Components Across Editions
-
-**Universal Components** (all 8 editions):
-- Ceramic tile mounting brackets (standardized hole pattern)
-- LES 12-zone lacing eyelets (standardized positions)
-- MXene thread bus bars (Faraday cage continuity)
-- STF impregnation zones (elbows, knees, shoulders, chest)
-- PVDF-TrFE sensor nodes (240 fixed positions)
-- CoAl₂O₄ liner coating (full coverage)
-
-**Edition-Specific Components**:
-- Ceramic tile count/placement (per DOC-01 §3.1)
-- Baleen/steel stay lengths (per MAT-04 §2.2)
-- Farthingale hoop radii (per DRAFT-04 §2)
-- Skirt panel width (per DRAFT-03 §2)
-
-*Traceability: DRAFT-02 §4; DRAFT-03 §2; DRAFT-04 §2; MAT-04 §2.2; CSMFAB078-A §3.3*
+| Metric | Target | Measurement |
+|--------|--------|-------------|
+| Unfolding time (per piece) | < 50 ms | C++ implementation |
+| Affine scaling (8 editions) | < 10 ms | Vectorized NumPy |
+| Pleating application | < 20 ms | GPU kernel |
+| Nesting optimization | < 30 s | 500 iterations SA |
+| Full pipeline (8 editions) | < 60 s | End-to-end |
 
 ---
 
-## 8. Traceability Matrix — DOC-04
+## 10. Risk Register — Geometric Pattern System
 
-| Section | Source Document | Section/Location | Key Values |
-|---------|----------------|------------------|------------|
-| 1.1 Directrix | Research Doc 1 | §4.1, Lines 45-51 | Alcega developable surfaces |
-| 1.1 Generatrix | DRAFT-01 | §1.2 | S(u,v) = D₁ + v(D₂-D₁)/|D₂-D₁| |
-| 1.1 Osculating | DRAFT-01 | §1.3; SYNTH-03 §1.3 | R = \|D''\|/\|D'×D''\| |
-| 1.2 Pipeline | DRAFT-01 | §1.3 | 3D→2D stages |
-| 1.2 Metric | SYNTH-03 | §1.3 | I = E du² + dv², η < 0.05 |
-| 1.3 DXF/SVG | DRAFT-01 | §1.4 | Layer structure, 0.01mm precision |
+| Risk ID | Description | Likelihood | Impact | Mitigation |
+|---------|-------------|------------|--------|------------|
+| GP-01 | Developable surface fails for high-curvature regions (armhole) | Medium | High | Fallback: dart insertion + seam allowance |
+| GP-02 | Edition scaling creates non-physical intersections | Low | High | Collision detection in pipeline |
+| GP-03 | Nesting efficiency < 0.85 for RW-SG (complex pieces) | Medium | Medium | Manual override + offcut catalog |
+| GP-04 | Pleat depth exceeds fabric width for large editions | Low | High | Automatic pleat count reduction |
+| GP-05 | Hoop deployment collision with ceramic tiles | Medium | High | Kinematic simulation in digital twin |
+
+---
+
+*End of DOC-04 — Geometric Pattern System*  
+*Next: DOC-05 Structural Framework Specification*
