@@ -1,0 +1,26 @@
+# Build outputs
+out/
+gen/
+obj/
+apk/
+logs/
+debug.keystore
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle (not used but present)
+.gradle/
+build/
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+# Local properties
+local.properties
