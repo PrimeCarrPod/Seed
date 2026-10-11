@@ -1,44 +1,30 @@
-### 2.2 Dynamic Scaling Algorithms
+| RM-TG | 1.15 | 1.08 | 1.12 |
+| RM-SS | 0.92 | 0.92 | 0.90 |
+| RM-SG | 1.15 | 0.92 | 1.12 |
+| RW-TS | 0.90 | 1.07 | 0.88 |
+| RW-TG | 1.18 | 1.07 | 1.15 |
+| RW-SS | 0.90 | 0.93 | 0.88 |
+| RW-SG | 1.18 | 0.93 | 1.15 |
 
-**Base Size → Target Size Transformation** (DRAFT-02 §3; SYNTH-03 §2.1):
-```
-For edition E with target measurements (B_t, W_t, H_t, NW_t)
-vs base pattern measurements (B_b, W_b, H_b, NW_b):
+**Translation Vector $\mathbf{T}_e$ (mm):**
 
-Horizontal scale factor:
-S_h = √((B_t/B_b) × (H_t/H_b))
+| Edition | $\Delta x$ | $\Delta y$ | $\Delta z$ |
+|---------|------------|------------|------------|
+| RM-TS | +15 | +40 | -10 |
+| RM-TG | -20 | +40 | +25 |
+| RM-SS | +15 | -35 | -10 |
+| RM-SG | -20 | -35 | +25 |
 
-Vertical scale factor:
-S_v = NW_t / NW_b
+### 2.3 Grade Rules for Intermediate Sizes
 
-Shear correction (waist ease):
-γ = (W_t/W_b - S_h) / S_h
+**Linear Interpolation Between Editions:**
 
-Coordinate transform per pattern point (x, y):
-x' = S_h · x + γ · y
-y' = S_v · y
+$$\mathbf{P}(\alpha) = (1-\alpha) \mathbf{P}_{e_1} + \alpha \mathbf{P}_{e_2}, \quad \alpha \in [0,1]$$
 
-Non-linear curvature correction:
-For curved seams (armhole, neckline):
-κ' = κ / S_h  (curvature scales inversely with horizontal scale)
-R' = R · S_h  (radius of curvature scales directly)
-```
+**Non-Linear Correction (Per DRAFT-02 §3.3):**
 
-### 2.3 Grade Rules Per Size Increment
+$$\mathbf{P}_{\text{corrected}} = \mathbf{P}(\alpha) + \mathbf{C}(\alpha) \odot \mathbf{P}_{\text{base}}$$
 
-**2cm Size Step Grading** (DRAFT-02 §3):
-```
-| Measurement | Grade per 2cm size | Distribution |
-|-------------|-------------------|--------------|
-| Bust/Chest  | +2.0 cm           | 50% front, 50% back |
-| Waist       | +1.5 cm           | 40% front, 60% back |
-| Hip         | +2.0 cm           | 50% front, 50% back |
-| Nape-waist  | +0.5 cm           | 100% vertical |
-| Back width  | +0.6 cm           | 50% each side |
-| Armhole     | +0.4 cm           | 60% front, 40% back |
-| Shoulder    | +0.3 cm           | 50% each side |
-```
+Where $\mathbf{C}(\alpha)$ = correction tensor from historical grading tables.
 
-### 2.4 Edition-Specific Pattern Generation (8 Editions)
-
-**Edition Parameters** (DRAFT-02 §4; CSMFAB078-A §3.3; SYNTH-03 §2.2):
+---
