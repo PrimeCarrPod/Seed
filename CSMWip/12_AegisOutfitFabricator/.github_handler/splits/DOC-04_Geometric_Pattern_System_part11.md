@@ -1,26 +1,21 @@
-## 9. Computational Performance Metrics
+| Move types | Translate, Rotate 90°, Swap | Uniform |
 
-| Metric | Target | Measurement |
-|--------|--------|-------------|
-| Unfolding time (per piece) | < 50 ms | C++ implementation |
-| Affine scaling (8 editions) | < 10 ms | Vectorized NumPy |
-| Pleating application | < 20 ms | GPU kernel |
-| Nesting optimization | < 30 s | 500 iterations SA |
-| Full pipeline (8 editions) | < 60 s | End-to-end |
+### 5.3 Edition-Specific Efficiency Targets
 
----
+| Edition | $\eta_{\text{nest}}$ Target | Offcut Catalog Size |
+|---------|---------------------------|---------------------|
+| RM-TS | 0.94 | 12 pieces |
+| RM-TG | 0.91 | 18 pieces |
+| RM-SS | 0.95 | 10 pieces |
+| RM-SG | 0.92 | 15 pieces |
+| RW-TS | 0.93 | 14 pieces |
+| RW-TG | 0.89 | 20 pieces |
+| RW-SS | 0.94 | 11 pieces |
+| RW-SG | 0.90 | 17 pieces |
 
-## 10. Risk Register — Geometric Pattern System
+### 5.4 Offcut Utilization (Phoenix Protocol Integration)
 
-| Risk ID | Description | Likelihood | Impact | Mitigation |
-|---------|-------------|------------|--------|------------|
-| GP-01 | Developable surface fails for high-curvature regions (armhole) | Medium | High | Fallback: dart insertion + seam allowance |
-| GP-02 | Edition scaling creates non-physical intersections | Low | High | Collision detection in pipeline |
-| GP-03 | Nesting efficiency < 0.85 for RW-SG (complex pieces) | Medium | Medium | Manual override + offcut catalog |
-| GP-04 | Pleat depth exceeds fabric width for large editions | Low | High | Automatic pleat count reduction |
-| GP-05 | Hoop deployment collision with ceramic tiles | Medium | High | Kinematic simulation in digital twin |
+$$\text{Recovery Rate} = \frac{\sum A_{\text{offcuts used}}}{\sum A_{\text{offcuts generated}}} \geq 0.85$$
 
 ---
 
-*End of DOC-04 — Geometric Pattern System*  
-*Next: DOC-05 Structural Framework Specification*

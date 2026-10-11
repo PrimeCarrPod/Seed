@@ -1,30 +1,20 @@
-**Zone-Edition Interaction $\beta_{z,e}$ (Sample):**
+**Catenary Equation:**
 
-| Zone | RM-TS | RM-TG | RW-TS | RW-TG |
-|------|-------|-------|-------|-------|
-| Z1 | 1.00 | 1.05 | 0.95 | 1.00 |
-| Z4 | 0.95 | 1.10 | 0.90 | 1.05 |
-| Z5 | 1.00 | 1.08 | 0.95 | 1.03 |
+$$y(x) = c \cosh\left(\frac{x}{c}\right) \quad \text{where } c = \frac{H}{w}$$
 
-### 3.3 Moment Balance Constraint
+$H$ = horizontal tension component (from LES Z5, Z6), $w$ = distributed weight.
 
-$$\sum_{z=1}^{12} T_z \cdot \mathbf{r}_z \times \mathbf{n}_z = \mathbf{0} \quad \text{(Static equilibrium)}$$
+**Tape Tension at Waist (Z5):**
 
-Where $\mathbf{r}_z$ = position vector of zone $z$, $\mathbf{n}_z$ = normal direction.
+$$T_{\text{tape}} = \sqrt{H^2 + (w L/2)^2} \quad \text{Target: } 55\text{--}75\text{ N (per edition)}$$
 
----
+**Suspension Points:** 8 tapes per hoop (4 front, 4 back), attached to baleen channels.
 
-## 4. Deployment & Locking (from CSMFAB078 Main §4.7, CSMFAB078-A §3.4, DRAFT-04 §3.3)
+### 2.3 Collapse Mechanism (Phoenix Protocol)
 
-### 4.1 Spring Energy Storage
+**Telescoping Hoop Segments:**
 
-**LES Deployment Springs (Z5, Z6):**
+$$L_{\text{collapsed}} = \frac{L_{\text{deployed}}}{N_{\text{segments}}} + (N_{\text{segments}}-1) \cdot t_{\text{overlap}}$$
 
-$$U_{\text{stored}} = \sum_{z \in \{5,6\}} \frac{1}{2} k_z (\Delta x_z)^2$$
-
-$k_z = 200\text{ N/m}$ (per zone), $\Delta x_z = 0.15\text{ m}$ (pre-compression).
-
-**Total Deployment Energy:** $U_{\text{total}} \approx 4.5\text{ J}$ per side.
-
-### 4.2 Deployment Dynamics
+$N_{\text{segments}} = 4$ per hoop, $t_{\text{overlap}} = 15\text{ mm}$.
 

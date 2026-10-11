@@ -1,30 +1,20 @@
-**Hysteresis (Loading-Unloading Cycle):**
+| $E_i$ (GPa) | $\tau_i$ (s) | Physical Mechanism |
+|-------------|--------------|-------------------|
+| 0.8 | 0.1 | Molecular chain slippage |
+| 0.5 | 10 | Tubule-matrix debonding |
+| 0.3 | 1000 | Water redistribution |
 
-$$\text{Hysteresis Loss} = \frac{\oint \sigma d\varepsilon}{\int \sigma d\varepsilon} \approx 3\% \quad \text{(steel)} \quad \text{vs.} \quad 25\% \quad \text{(baleen)}$$
+**Relaxation Under Constant Strain (LES tension hold):**
 
----
+$$\sigma(t) = \varepsilon_0 \cdot E(t) \quad \Rightarrow \quad \text{Tension loss} \approx 15\% \text{ over 8 hours}$$
 
-## 2. Cage Crinoline / Pannier System (from DRAFT-04, MAT-02 §4.3, CSMFAB078-A §3.3)
+**Re-tensioning Protocol:** LES auto-calibration every 2 hours (per CSMFAB078-A §3.3).
 
-### 2.1 Hoop Geometry Progression
+### 1.4 Spiral Steel Boning (17-7 PH CH900)
 
-**Elliptical Hoop Parameters (Semi-axes in mm):**
-
-| Hoop | Level | RM-TS (a×b) | RM-TG (a×b) | RW-TS (a×b) | RW-TG (a×b) |
-|------|-------|-------------|-------------|-------------|-------------|
-| 1 | Waist | 280×200 | 360×260 | 260×190 | 340×240 |
-| 2 | Hip | 320×230 | 400×290 | 300×220 | 380×270 |
-| 3 | Mid-thigh | 260×190 | 320×240 | 240×180 | 300×230 |
-| 4 | Hem | 220×160 | 280×210 | 200×150 | 260×200 |
-
-**Moment of Inertia (Bending Stiffness):**
-
-$$I_x = \frac{\pi}{4} a b^3, \quad I_y = \frac{\pi}{4} a^3 b$$
-
-**Hoop Wire Specification:**
-- Material: Spring steel 17-7 PH (same as boning)
-- Diameter: 3.0 mm (waist), 2.5 mm (hip), 2.0 mm (lower)
-- Collapsible: Telescoping segments with friction locks
-
-### 2.2 Tape Suspension Catenary
+**Material Properties:**
+- $E = 193\text{ GPa}$, $\sigma_y = 1210\text{ MPa}$, $\sigma_{\text{uts}} = 1310\text{ MPa}$
+- $\rho = 7.8\text{ g/cm}^3$, $\nu = 0.30$
+- Fatigue limit: $\sigma_f = 480\text{ MPa}$ (10⁷ cycles, R=0.1)
+- Corrosion resistance: Passive in artificial sweat (ISO 11610)
 

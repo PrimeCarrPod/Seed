@@ -1,30 +1,21 @@
-**No-Fit Polygon (NFP) for Irregular Shapes:**
+Where $R$ = fold radius, $\lambda$ = wavelength (pleat repeat).
 
-$$\text{NFP}(A, B) = \{ \mathbf{t} \in \mathbb{R}^2 \mid \text{int}(A) \cap \text{int}(B + \mathbf{t}) = \emptyset \}$$
+**Volumetric Compression Ratio:**
 
-**Objective Function:**
+$$\eta_{\text{cart}} = \frac{V_{\text{unpleated}}}{V_{\text{pleated}}} = \frac{L \cdot W \cdot t}{L \cdot W_{\text{eff}} \cdot t_{\text{eff}}} \approx 2.5\text{--}3.5$$
 
-$$\min \quad L_{\text{used}} = \max_i (y_i + h_i)$$
+**Perpendicular Force Distribution:**
 
-Subject to:
-- $x_i \geq 0, \quad x_i + w_i \leq 560$ (loom width)
-- $\text{NFP}(P_i, P_j) \cap \{\mathbf{0}\} = \emptyset \quad \forall i \neq j$ (no overlap)
-- Grain direction constraint: $\angle(\mathbf{g}_i, \mathbf{e}_y) \leq 5^\circ$
+$$F_{\perp}(s) = \frac{EI}{R^2} \kappa(s) \quad \text{where } \kappa(s) = \frac{2\pi}{\lambda} \text{ (constant curvature)}$$
 
-### 5.2 Simulated Annealing Parameters
+### 3.3 Pleat Stitch Specification (ISO 4915 ↔ Historical Mapping)
 
-| Parameter | Value | Schedule |
-|-----------|-------|----------|
-| Initial temp | 1000 | — |
-| Cooling rate | 0.95 | Geometric |
-| Min temp | 0.1 | — |
-| Iterations/temp | 500 | — |
-| Move types | Translate, Rotate 90°, Swap | Uniform |
+| Historical Stitch | ISO 4915 Class | SPI | Thread | Application |
+|-------------------|----------------|-----|--------|-------------|
+| Backstitch | 301 (Lockstitch) | 18-22 | Silk/Beeswax | Watteau pleat anchor |
+| Running stitch | 101 (Chainstitch) | 16-20 | Linen | Cartridge pleat gather |
+| Whip stitch | 503 (Overedge) | 20-24 | Silk | Pleat edge finish |
+| Stab stitch | 304 (Zigzag) | 12-16 | Metallic | Decorative pleat topstitch |
 
-### 5.3 Edition-Specific Efficiency Targets
+---
 
-| Edition | $\eta_{\text{nest}}$ Target | Offcut Catalog Size |
-|---------|---------------------------|---------------------|
-| RM-TS | 0.94 | 12 pieces |
-| RM-TG | 0.91 | 18 pieces |
-| RM-SS | 0.95 | 10 pieces |

@@ -1,30 +1,21 @@
-### 4.2 Catenary Tape Suspension
 
-**Tape Tension Distribution:**
+$$L_{\text{unpleated}} = 3 \cdot L_{\text{pleated}}$$
 
-$$T(z) = T_0 \cosh\left(\frac{w z}{T_0}\right) \quad \text{(catenary under self-weight)}$$
+**Pleat Depth Calculation:**
 
-Where $w$ = weight per unit length of hoop + fabric.
+$$d_p = \frac{L_{\text{unpleated}} - L_{\text{pleated}}}{2 \cdot N_{\text{pleats}}} = \frac{L_{\text{pleated}}}{N_{\text{pleats}}}$$
 
-**Hoop Moment of Inertia (Bending Resistance):**
+**Load Distribution (Column Action):**
 
-$$I(z) = \frac{\pi}{64} (D_o^4 - D_i^4) \quad \text{for circular cross-section hoop wire}$$
+$$\sigma_{\text{pleat}} = \frac{F_{\text{vertical}}}{A_{\text{pleat}}} = \frac{F_{\text{vertical}}}{2 \cdot d_p \cdot t_{\text{fabric}} \cdot N_{\text{pleats}}}$$
 
-### 4.3 Deployment Kinematics
+**Beeswax Thread Integration (Historical Lubrication):**
 
-**Spring Energy Storage (LES Z5, Z6):**
+$$\mu_{\text{beeswax}} = 0.15 \quad \text{vs.} \quad \mu_{\text{dry}} = 0.35 \quad \text{(silk-on-silk)}$$
 
-$$U_{\text{spring}} = \frac{1}{2} k (\Delta x)^2 \geq m_{\text{hoop}} g H_{\text{deploy}}$$
+### 3.2 Cartridge Pleating (S-Curve Fold Geometry)
 
-**Deployment Time Target:** $t_{\text{deploy}} < 5\text{ s}$ (from CSMFAB078 Main §4.7)
+**Parametric S-Curve:**
 
-**Friction Catch / Magnetic Latch:**
-
-$$F_{\text{hold}} \geq 1.5 \cdot m_{\text{hoop}} g \quad \text{(safety factor 1.5)}$$
-
----
-
-## 5. Zero-Waste Nesting Optimizer (from DRAFT-05, Research Doc 1 §4.6, SYNTH-01 §3.4, CSMFAB078 Main §6.4, CSMFAB078-E §2)
-
-### 5.1 Bottom-Left + NFP + Simulated Annealing (per DRAFT-05 §3.1, Research Doc 1 §4.6, CSMFAB078 Main §6.4, SYNTH-01 §3.4)
+$$\mathbf{c}(s) = \begin{bmatrix} R \sin(2\pi s / \lambda) \\ s \\ R (1 - \cos(2\pi s / \lambda)) \end{bmatrix}, \quad s \in [0, L]$$
 

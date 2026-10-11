@@ -1,45 +1,34 @@
-3. **Protective Layer Stack Configuration**
-   - Layer thicknesses optimized for TS morphology
-   - Mass budget: 16.47 kg target
-   - Thermal resistance: R_th ≥ 0.45 m²K/W
 
-4. **Textile Engineering Specifications**
-   - Lampas brocade: 2 warp / 2 weft, MXene warp density
-   - Silk batting: aerogel φ=0.35, quilting pattern
-   - STF zones: anterior torso, lateral, sleeve caps
+## 🎯 PHASE 4: CORE DOCUMENT FABRICATION — SESSION 006 PRIMARY WORK
 
-5. **Traceability Matrix**
+### 4.1 Batch 2 Core Documents to Author (10 Documents)
 
-### 4.3 DOC-12: RenaissanceMan-TG Specification — Detailed Outline
+From MASTER_TODO_B.md §4.2-4.3, CSMFAB078-A §3.1-3.4:
+
+| Doc ID | Title | Dependencies | Est. Lines |
+|--------|-------|--------------|------------|
+| **DOC-11** | RenaissanceMan-TS Specification | DOC-01..10, RM-TS params (CSMFAB078-A) | 300+ |
+| **DOC-12** | RenaissanceMan-TG Specification | DOC-01..10, RM-TG params (CSMFAB078-A) | 300+ |
+| **DOC-13** | RenaissanceMan-SS Specification | DOC-01..10, RM-SS params (CSMFAB078-A) | 300+ |
+| **DOC-14** | RenaissanceMan-SG Specification | DOC-01..10, RM-SG params (CSMFAB078-A) | 300+ |
+| **DOC-15** | RenaissanceWoMan-TS Specification | DOC-01..10, RW-TS params (CSMFAB078-A) | 300+ |
+| **DOC-16** | RenaissanceWoMan-TG Specification | DOC-01..10, RW-TG params (CSMFAB078-A) | 300+ |
+| **DOC-17** | RenaissanceWoMan-SS Specification | DOC-01..10, RW-SS params (CSMFAB078-A) | 300+ |
+| **DOC-18** | RenaissanceWoMan-SG Specification | DOC-01..10, RW-SG params (CSMFAB078-A) | 300+ |
+| **DOC-19** | Cross-Edition Compatibility Matrix | All edition specs (DOC-11..18) | 300+ |
+| **DOC-20** | Edition Delta Tables (Historical Alteration) | DOC-11..18, DRAFT-05 §4.3 | 300+ |
+
+### 4.2 DOC-11: RenaissanceMan-TS Specification — Detailed Outline
 
 **Sections to Author (per MASTER_TODO_B.md §4.2, CSMFAB078-A §3.1, DOC-01..05):**
 1. **Edition Morphology Parameters**
-   - Anthropometric baseline: H=195cm, C=1250mm, W=1150mm
+   - Anthropometric baseline: H=195cm, C=980mm, W=820mm
    - LES 12-zone tension calibration table
-   - Panel geometry projections (36 pieces, expanded)
+   - Panel geometry projections (30 pieces)
 
 2. **Ceramic Tile Layout**
-   - Tile count: 240 primary (50mm), 120 backup (25mm)
-   - Placement map: expanded coverage for girth
+   - Tile count: 180 primary (25mm), 90 backup (15mm)
+   - Placement map: anterior/posterior/lateral/medial
    - Magnetic alignment vectors per tile
 
 3. **Protective Layer Stack Configuration**
-   - Layer thicknesses for TG mass allowance
-   - Mass budget: 20.88 kg target
-   - Thermal resistance: R_th ≥ 0.48 m²K/W
-
-4. **Textile Engineering Specifications**
-   - Brocatelle ground: heavier weft for structure
-   - Extended aerogel batting zones
-   - STF full-torso coverage
-
-5. **Traceability Matrix**
-
-### 4.4 DOC-13: RenaissanceMan-SS Specification — Detailed Outline
-
-**Sections to Author (per MASTER_TODO_B.md §4.2, CSMFAB078-A §3.1, DOC-01..05):**
-1. **Edition Morphology Parameters**
-   - Anthropometric baseline: H=165cm, C=880mm, W=720mm
-   - LES 12-zone tension calibration table
-   - Panel geometry projections (28 pieces, compact)
-

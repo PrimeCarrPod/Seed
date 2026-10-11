@@ -1,45 +1,34 @@
+   - Deployment spring: 4.5J stored energy
+
+4. **Protective Layer Stack Configuration**
+   - Mass budget: 16.00 kg target
+   - Stays-integrated ceramic tiles
 
 5. **Traceability Matrix**
 
-### 4.10 DOC-19: Cross-Edition Compatibility Matrix — Detailed Outline
+### 4.7 DOC-16: RenaissanceWoMan-TG Specification — Detailed Outline
 
-**Sections to Author (per MASTER_TODO_B.md §4.4, DOC-11..18, SYNTH-01 §4.2):**
-1. **Panel Interchangeability Matrix**
-   - Shared panels across editions (common geometry)
-   - Edition-specific panels (delta geometry)
-   - Interchange rules: RM↔RM, RW↔RW, RM↔RW
+**Sections to Author (per MASTER_TODO_B.md §4.3, CSMFAB078-A §3.2, DOC-01..05, DRAFT-04):**
+1. **Edition Morphology Parameters**
+   - Anthropometric baseline: H=175cm, B=1150mm, W=1000mm, H_p=1200mm
+   - LES 12-zone tension calibration table
+   - Panel geometry projections (52 pieces, expanded)
 
-2. **LES Tension Portability**
-   - Zone mapping across editions
-   - Calibration transfer functions
-   - Auto-recalibration algorithms
+2. **Stays/Corset Integration**
+   - Baleen channel count: 56 (28 per side)
+   - Extended hip gore panels
+   - Reinforced busk for abdominal support
 
-3. **Ceramic Tile Compatibility**
-   - Tile size standardization (25mm, 50mm only)
-   - Magnetic alignment universality
-   - Gasket seal compatibility
+3. **Pannier Chassis (Wide Hip)**
+   - 4-hoop elliptical dome (a > b)
+   - Volume: 45L target
+   - Tape tension: 65-85 N (Z5, Z6)
 
-4. **Textile Roll Compatibility**
-   - Loom setup commonality (Lampas/Brocatelle/Damask)
-   - MXene coating batch sizing
-   - Aerogel batting roll widths
+4. **Protective Layer Stack Configuration**
+   - Mass budget: 20.13 kg target
+   - Extended ceramic coverage over pannier
 
 5. **Traceability Matrix**
 
-### 4.11 DOC-20: Edition Delta Tables (Historical Alteration) — Detailed Outline
+### 4.8 DOC-17: RenaissanceWoMan-SS Specification — Detailed Outline
 
-**Sections to Author (per MASTER_TODO_B.md §4.5, DOC-11..18, DRAFT-05 §4.3, Research Doc 1 §4.6):**
-1. **Panel Addition/Removal Rules**
-   - Historical alteration methods (Alcega/Garsault)
-   - Gusset insertion for girth expansion
-   - Seam letting for length adjustment
-
-2. **Delta Tables per Edition Pair**
-   - RM-TS → RM-TG: +6 panels, +15% tile count
-   - RM-TS → RM-SS: -2 panels, -17% tile count
-   - RW-TS → RW-TG: +10 panels, +25% tile count
-   - All 28 edition transitions documented
-
-3. **Lacing Reconfiguration**
-   - Eyelet repositioning algorithms
-   - Cord length delta calculations

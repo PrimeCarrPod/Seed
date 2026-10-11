@@ -1,45 +1,34 @@
-   - Tension recalibration procedures
+**Sections to Author (per MASTER_TODO_B.md §4.3, CSMFAB078-A §3.2, DOC-01..05, DRAFT-04):**
+1. **Edition Morphology Parameters**
+   - Anthropometric baseline: H=155cm, B=820mm, W=600mm, H_p=850mm
+   - LES 12-zone tension calibration table
+   - Panel geometry projections (38 pieces, compact)
 
-4. **Time Standards**
-   - Edition transition: <90 seconds (target)
-   - Panel swap: <30 seconds per panel
-   - LES recalibration: <15 seconds
+2. **Stays/Corset Integration**
+   - Baleen channel count: 40 (20 per side)
+   - Shortened busk: 280mm
+   - Reduced eyelet count: 14 pairs
+
+3. **Farthingale Chassis (Compact)**
+   - 3-hoop progression (waist, hip, hem)
+   - Volume: 25L target
+   - Rapid deployment: <3s
+
+4. **Protective Layer Stack Configuration**
+   - Mass budget: 13.22 kg target
+   - Minimal layers for mobility
 
 5. **Traceability Matrix**
 
----
+### 4.9 DOC-18: RenaissanceWoMan-SG Specification — Detailed Outline
 
-## ⏱️ SESSION 006 TIME BOXING — TRAIN METRICS (per MASTER_TODO_A.md §1.3, Framework/heartbeat.sh)
+**Sections to Author (per MASTER_TODO_B.md §4.3, CSMFAB078-A §3.2, DOC-01..05, DRAFT-04):**
+1. **Edition Morphology Parameters**
+   - Anthropometric baseline: H=155cm, B=1050mm, W=950mm, H_p=1150mm
+   - LES 12-zone tension calibration table
+   - Panel geometry projections (48 pieces)
 
-| Time Block | Activity | Duration | Train Metric |
-|------------|----------|----------|--------------|
-| 0:00-0:15 | Resume verification, heartbeat, quality check DOC-01..10 | 15 min | Station 0: Departure |
-| 0:15-1:15 | Write DOC-11 (RM-TS Specification) | 1 hour | Station 1: RM-TS |
-| 1:15-1:30 | Split, zip, push DOC-11, verify | 15 min | Coupling 1 |
-| 1:30-2:30 | Write DOC-12 (RM-TG Specification) | 1 hour | Station 2: RM-TG |
-| 2:30-2:45 | Split, zip, push DOC-12, verify | 15 min | Coupling 2 |
-| 2:45-3:00 | Break / heartbeat | 15 min | Water Stop |
-| 3:00-4:00 | Write DOC-13 (RM-SS Specification) | 1 hour | Station 3: RM-SS |
-| 4:00-4:15 | Split, zip, push DOC-13, verify | 15 min | Coupling 3 |
-| 4:15-5:15 | Write DOC-14 (RM-SG Specification) | 1 hour | Station 4: RM-SG |
-| 5:15-5:30 | Split, zip, push DOC-14, verify | 15 min | Coupling 4 |
-| 5:30-5:45 | Break / heartbeat | 15 min | Coal Stop |
-| 5:45-6:45 | Write DOC-15 (RW-TS Specification) | 1 hour | Station 5: RW-TS |
-| 6:45-7:00 | Split, zip, push DOC-15, verify | 15 min | Coupling 5 |
-| 7:00-8:00 | Write DOC-16 (RW-TG Specification) | 1 hour | Station 6: RW-TG |
-| 8:00-8:15 | Split, zip, push DOC-16, verify | 15 min | Coupling 6 |
-| 8:15-8:30 | Break / heartbeat | 15 min | Signal Check |
-| 8:30-9:30 | Write DOC-17 (RW-SS Specification) | 1 hour | Station 7: RW-SS |
-| 9:30-9:45 | Split, zip, push DOC-17, verify | 15 min | Coupling 7 |
-| 9:45-10:45 | Write DOC-18 (RW-SG Specification) | 1 hour | Station 8: RW-SG |
-| 10:45-11:00 | Split, zip, push DOC-18, verify | 15 min | Coupling 8 |
-| 11:00-12:00 | Write DOC-19 (Cross-Edition Matrix) | 1 hour | Station 9: Matrix |
-| 12:00-12:15 | Split, zip, push DOC-19, verify | 15 min | Coupling 9 |
-| 12:15-13:15 | Write DOC-20 (Edition Delta Tables) | 1 hour | Station 10: Deltas |
-| 13:15-13:30 | Split, zip, push DOC-20, verify | 15 min | Coupling 10 |
-| 13:30-13:45 | Session log, create NEXT_RUNNER_007, push all | 15 min | Terminus |
-
-**Total: ~13.75 hours** — Train on infinite figure-8 loop of progress
-**Average Station Time:** 1.25 hours (writing + verification)
-**Average Coupling Time:** 0.25 hours (split + zip + push + verify)
-
+2. **Stays/Corset Integration**
+   - Baleen channel count: 52 (26 per side)
+   - Wide hip gore integration
+   - Extended busk for abdominal coverage

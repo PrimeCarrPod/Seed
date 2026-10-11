@@ -1,30 +1,21 @@
-         │
-         ▼
-Zero-Waste Nesting (DRAFT-05) → Cutting layouts (560mm width)
-         │
-         ▼
-Output: DXF + SVG + Cutting instructions + Material kits
-```
 
-### 6.2 Pattern Piece Count per Edition
+$$I(z) = \frac{\pi}{64} (D_o^4 - D_i^4) \quad \text{for circular cross-section hoop wire}$$
 
-| Component | RM Pieces | RW Pieces |
-|-----------|-----------|-----------|
-| Bodice (front/back/side) | 6 | 6 |
-| Sleeve (upper/lower/gusset) | 6 | 6 |
-| Skirt panels (gored) | 8-12 | 10-14 |
-| Watteau back | 2 | 2 |
-| Cartridge pleat skirt | 4-6 | 6-8 |
-| Farthingale/Pannier hoops | 4 | 4 |
-| Stays/Corset panels | — | 8-12 |
-| **Total** | **30-36** | **42-52** |
+### 4.3 Deployment Kinematics
+
+**Spring Energy Storage (LES Z5, Z6):**
+
+$$U_{\text{spring}} = \frac{1}{2} k (\Delta x)^2 \geq m_{\text{hoop}} g H_{\text{deploy}}$$
+
+**Deployment Time Target:** $t_{\text{deploy}} < 5\text{ s}$ (from CSMFAB078 Main §4.7)
+
+**Friction Catch / Magnetic Latch:**
+
+$$F_{\text{hold}} \geq 1.5 \cdot m_{\text{hoop}} g \quad \text{(safety factor 1.5)}$$
 
 ---
 
-## 7. Traceability Matrix
+## 5. Zero-Waste Nesting Optimizer (from DRAFT-05, Research Doc 1 §4.6, SYNTH-01 §3.4, CSMFAB078 Main §6.4, CSMFAB078-E §2)
 
-| Section | Source Document | Section/Location | Key Values/Equations |
-|---------|----------------|------------------|---------------------|
-| 1.1 Convolute | DRAFT-01 | §3.1 | $\mathbf{r}(u,v) = \mathbf{c}(u) + v\mathbf{g}(u)$ |
-| 1.2 Unfolding | DRAFT-01 | §3.2 | Geodesic parallel transport |
-| 1.3 DXF/SVG | DRAFT-01 | §3.4 | Entity structure spec |
+### 5.1 Bottom-Left + NFP + Simulated Annealing (per DRAFT-05 §3.1, Research Doc 1 §4.6, CSMFAB078 Main §6.4, SYNTH-01 §3.4)
+

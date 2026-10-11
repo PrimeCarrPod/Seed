@@ -1,36 +1,34 @@
----
+Velocity (docs/hour) = 10 docs / 13.75 h = 0.727 docs/h
+Acceleration (docs/h²) = 0.727 / 13.75 = 0.053 docs/h²
+Jerk (docs/h³) = 0.053 / 13.75 = 0.0038 docs/h³
+```
 
-## 🚀 SESSION 007 PREVIEW — PHASE 4: CORE DOCUMENT FABRICATION (BATCH 3) (per MASTER_TODO_B.md §4.4)
+**Infinite Loop Invariant:**
+$$\oint \mathbf{v} \cdot d\mathbf{t} = \text{Total Progress} \to \infty \quad \text{as sessions} \to \infty$$
 
-### Batch 3 Core Documents (Begin in Session 007)
-
-| Doc ID | Title | Dependencies | Est. Lines |
-|--------|-------|--------------|------------|
-| DOC-21 | Ceramic Tile Detail Drawings & BOM | DOC-06, DOC-11..18 | 300+ |
-| DOC-22 | MXene Thread Production Drawings | DOC-03, DOC-11..18 | 300+ |
-| DOC-23 | Aerogel Batting Manufacturing Specs | DOC-03, DOC-11..18 | 300+ |
-| DOC-24 | STF Impregnation Line Drawings | DOC-03, DOC-11..18 | 300+ |
-| DOC-25 | Coating System Application Specs | DOC-06, DOC-11..18 | 300+ |
-| DOC-26 | Baleen/Steel Chassis Fabrication | DOC-05, DOC-11..18 | 300+ |
-| DOC-27 | Hoop/Pannier Fabrication Drawings | DOC-05, DOC-15..18 | 300+ |
-| DOC-28 | Lacing System Component BOM | DOC-01, DOC-11..18 | 300+ |
-| DOC-29 | Sensor Integration (PVDF-TrFE) | DOC-06, DOC-11..18 | 300+ |
-| DOC-30 | Assembly Fixtures & Tooling | All prior | 300+ |
-
-### Subsequent Batches (Sessions 008-015)
-
-- **Batch 4 (DOC-31 to DOC-40):** Assembly Instructions & Quality Gates
-- **Batch 5 (DOC-41 to DOC-50):** Maintenance, Repair, Evolution Protocols
-- **Batch 6 (DOC-51 to DOC-60):** RenaissanceMan Fabrication Specs (FAB-RM-01..10)
-- **Batch 7 (DOC-61 to DOC-70):** RenaissanceMan Fabrication Specs (FAB-RM-11..20)
-- **Batch 8 (DOC-71 to DOC-80):** RenaissanceMan Image Prompts (IMG-RM-01..05) + RM-21..25
-- **Batch 9 (DOC-81 to DOC-90):** RenaissanceWoMan Fabrication Specs (FAB-RW-01..10)
-- **Batch 10 (DOC-91 to DOC-100):** RenaissanceWoMan Fabrication Specs (FAB-RW-11..18)
-- **Batch 11 (DOC-101 to DOC-110):** RenaissanceWoMan Image Prompts (IMG-RW-01..05) + RW-19..25
-- **Batch 12-15:** Integration, Validation, Delivery, Archive
+**Figure-8 Topology:** Batch 1 (DOC-01..10) → Batch 2 (DOC-11..20) → Batch 3 (DOC-21..30) → ...
+**Each loop adds 10 documents.** 15 loops = 150 documents complete.
 
 ---
 
-*This document was auto-generated as NEXT_RUNNER_006 for AegisOutfitFabricator Session 006. Execute immediately upon session start.*
+## 🔍 QUALITY CHECKLIST PER DOC DOCUMENT (per Framework/README.md §9.1, MASTER_TODO_A.md §0.4)
 
-**Train Status:** 🚂 Batch 1 complete → Batch 2 loading → Figure-8 loop continues → ∞
+Before considering any DOC document complete:
+
+### Document Structure Requirements
+
+- [ ] **Minimum 300 lines** of dense technical content (wc -l ≥ 300)
+- [ ] **≥15 mathematical formulas** in LaTeX/Unicode (grep -c '\$\\|\\[' ≥ 15)
+- [ ] **≥10 cross-references** to source documents (grep -c 'Research\\|SYNTH\\|MAT\\|DRAFT\\|CSMFAB078' ≥ 10)
+- [ ] **≥5 industry standards** cited (grep -ci 'CIETA\\|ASTM\\|NIJ\\|NFPA\\|MIL-STD\\|ISO\\|IEC' ≥ 5)
+- [ ] **Zero conflation** — historical vs modern clearly separated (grep -ic 'M-deval\|V-ctorian\|E-dwardian\|R-gency\|R-coco\|N-oclassical\|E-mpire\|19C\|20C\|pre-1600\|pre-1500' = 0)
+- [ ] **No guessing** — every value sourced or marked [TBD:RESEARCH] (grep -c 'TBD:RESEARCH' documented)
+- [ ] **Traceability matrix** present at end of document (grep -c 'Traceability Matrix' ≥ 1)
+- [ ] **Reassembly diff = 0 bytes** (diff original reassembled = no output, per verify_reassembly.sh)
+
+---
+
+## 📋 PHASE 4 DELIVERABLES CHECKLIST — SESSION 006 (per MASTER_TODO_B.md §5.1)
+
+### Session 006 Deliverables (Core Document Batch 2)
+
