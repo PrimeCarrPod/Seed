@@ -1,37 +1,30 @@
+**Catenary Equation:**
 
-**Moment of Inertia per Hoop** (DRAFT-04 §2; MAT-02 §4):
-```
-Thin-walled ellipse:
-I_x(i) ≈ π·a_i·b_i³·t / 4  (frontal plane bending)
-I_y(i) ≈ π·a_i³·b_i·t / 4  (sagittal plane bending)
+$$y(x) = c \cosh\left(\frac{x}{c}\right) \quad \text{where } c = \frac{H}{w}$$
 
-For RW-TG Hoop 4: a=640mm, b=457mm, t=1.5mm
-I_x ≈ π×640×457³×1.5/4 ≈ 1.52×10¹⁰ mm⁴
-I_y ≈ π×640³×457×1.5/4 ≈ 3.01×10¹⁰ mm⁴
-```
+$H$ = horizontal tension component (from LES Z5, Z6), $w$ = distributed weight.
 
-**Buckling Modes** (MAT-02 §4):
-```
-Euler buckling (vertical load): P_cr = π²·E·I_min / L²
-L = hoop circumference ≈ π·(a+b) ≈ 3.5m (for hoop 4)
-I_min = I_x ≈ 1.52×10¹⁰ mm⁴
-P_cr ≈ π² × 200×10⁹ × 1.52×10⁻² / 3.5² ≈ 245 kN (far exceeds skirt weight)
+**Tape Tension at Waist (Z5):**
 
-Ovalization buckling (local): Critical pressure p_cr = 3·E·I / (a³·t)
-For hoop 4: p_cr ≈ 3 × 200×10⁹ × 1.52×10⁻² / (0.64³ × 0.0015) ≈ 14.5 MPa
-Skirt pressure: P = W/(πab) ≈ 50N/(π×0.64×0.457) ≈ 5.4 Pa
-Safety factor: > 10⁶ (local buckling not a concern)
-```
+$$T_{\text{tape}} = \sqrt{H^2 + (w L/2)^2} \quad \text{Target: } 55\text{--}75\text{ N (per edition)}$$
 
-### 2.2 Tape Suspension Catenary System
+**Suspension Points:** 8 tapes per hoop (4 front, 4 back), attached to baleen channels.
 
-**Catenary Curve Mechanics** (DRAFT-04 §3; MAT-02 §4):
-```
-Vertical tapes: N = 12-16 (evenly spaced, 22.5°-30° increments)
-Total skirt weight: W = 5-8 kg (edition-dependent)
-Tape length: L = 800-1000mm (waist to hem)
+### 2.3 Collapse Mechanism (Phoenix Protocol)
 
-Catenary parameter: a = H / w
-H = horizontal tension (constant along tape)
-w = weight per unit length = (W/N) / L
+**Telescoping Hoop Segments:**
+
+$$L_{\text{collapsed}} = \frac{L_{\text{deployed}}}{N_{\text{segments}}} + (N_{\text{segments}}-1) \cdot t_{\text{overlap}}$$
+
+$N_{\text{segments}} = 4$ per hoop, $t_{\text{overlap}} = 15\text{ mm}$.
+
+**Deployment Energy (Spring-Assisted):**
+
+$$U_{\text{spring}} = \frac{1}{2} k_{\text{tape}} (\Delta L)^2 \geq \sum m_{\text{hoop}} g \Delta h$$
+
+$k_{\text{tape}} = 50\text{ N/m}$ (Dyneema-silk tape), $\Delta L = 0.8\text{ m}$.
+
+---
+
+## 3. LES 12-Zone Tension Calibration (from CSMFAB078-A §3.3, MAT-04 §5.1, CSMFAB078 Main §4.5)
 
