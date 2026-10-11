@@ -258,7 +258,7 @@ echo "Step 1: Quality check..."
 ./Framework/check_doc_quality.sh "$DOC" || exit 1
 
 # 2. Split into pieces
-echo "Step 2: Splitting into 13 pieces (max 500 lines)..."
+echo "Step 2: Splitting into 17 pieces (max 500 lines)..."
 gh_split_file "$DOC" 500
 # Creates Pieces/BASENAME_piece_01.md through _piece_13.md + manifest.json
 
@@ -484,7 +484,7 @@ echo "   Verified: Clean reassembly + 17-way GitHub check"
 - Pattern sets, tooling, work instructions, cost analysis
 
 ### Session 011: Phase 7 — GitHub Integration & Verification
-- 17-way verification on all 1,950 pieces
+- 17-way verification on all 2,550 pieces
 - Merge queue processing
 - Tag milestones
 

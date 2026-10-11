@@ -151,9 +151,9 @@
 ```
 For EACH of 150 documents:
   1. Author full document (target: 150-300+ lines, dense technical content)
-  2. Split into 13 pieces via github_handler.sh (gh_split_file, 500 lines max)
+  2. Split into 17 pieces via github_handler.sh (gh_split_file, 500 lines max)
   3. Zip pieces into single archive: DOC_XXX_pieces.zip → Pieces/
-  4. Push pieces + zip to GitHub via gh_save_file (13 strategies auto-attempt)
+  4. Push pieces + zip to GitHub via gh_save_file (17 strategies auto-attempt)
   5. Verify GitHub presence: 17 verification methods (see README.md)
   6. Reassemble from pieces: gh_join_files → FinishedWork/DOC_XXX.md
   7. Verify reassembly: diff original vs. reassembled = 0 bytes
@@ -162,9 +162,9 @@ For EACH of 150 documents:
 ```
 
 ### 5.2 Piece Management Protocol
-- [ ] Piece naming: `DOC_XXX_piece_01.md` through `DOC_XX_piece_13.md`
+- [ ] Piece naming: `DOC_XXX_piece_01.md` through `DOC_XX_piece_17.md`
 - [ ] Manifest JSON: `Pieces/DOC_XXX_manifest.json` with part list, checksums, timestamps
-- [ ] Zip archive: `Pieces/DOC_XXX_pieces.zip` (all 13 pieces + manifest)
+- [ ] Zip archive: `Pieces/DOC_XXX_pieces.zip` (all 17 pieces + manifest)
 - [ ] GitHub tracking: Each piece committed individually with strategy logging
 - [ ] Verification: 17 methods (file exists, size, checksum, git log, GitHub API, raw URL, etc.)
 
@@ -172,7 +172,7 @@ For EACH of 150 documents:
 
 ## 📋 DEFINITION OF DONE — PHASE 4-6
 - [ ] All 150 documents authored with extreme technical depth
-- [ ] All documents split into 13 pieces, zipped, pushed to GitHub
+- [ ] All documents split into 17 pieces, zipped, pushed to GitHub
 - [ ] All documents reassembled in FinishedWork/ as clean single files
 - [ ] Zero concat remnants, zero fabrication artifacts in final documents
 - [ ] 17-way GitHub verification passed for every piece
