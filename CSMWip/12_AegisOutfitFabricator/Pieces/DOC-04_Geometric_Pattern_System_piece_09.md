@@ -1,30 +1,21 @@
-| RM-SG | 0.92 | 15 pieces |
-| RW-TS | 0.93 | 14 pieces |
-| RW-TG | 0.89 | 20 pieces |
-| RW-SS | 0.94 | 11 pieces |
-| RW-SG | 0.90 | 17 pieces |
+## 4. Hoop Architecture (from DRAFT-04, Research Doc 1 §4.5, MAT-02 §4.3, CSMFAB078-A §3.3, CSMFAB078 Main §5.4)
 
-### 5.4 Offcut Utilization (Phoenix Protocol Integration)
+### 4.1 Elliptical Hoop Geometry
 
-$$\text{Recovery Rate} = \frac{\sum A_{\text{offcuts used}}}{\sum A_{\text{offcuts generated}}} \geq 0.85$$
+**Farthingale (Cone) → Pannier (Elliptical Dome) Transition:**
 
----
+$$\frac{x^2}{a(z)^2} + \frac{y^2}{b(z)^2} = 1$$
 
-## 6. 8-Edition Pattern Generation Pipeline (from DRAFT-01..05, SYNTH-01 §3.5, CSMFAB078 Main §5.5, CSMFAB078-A §3.4)
+$$a(z) = a_0 + (a_1 - a_0) \frac{z}{H}, \quad b(z) = b_0 + (b_1 - b_0) \frac{z}{H}$$
 
-### 6.1 Pipeline Stages
+Where $z$ = height from waist, $H$ = total skirt length.
 
-```
-Anthropometry Input (8 measurements)
-         │
-         ▼
-Garsault Proportional Scaling (DRAFT-02) → 8 Base Body Meshes
-         │
-         ▼
-Alcega Developable Surface Engine (DRAFT-01) → 8 × 24 Pattern Pieces
-         │
-         ▼
-Pleating Kernel Application (DRAFT-03) → Watteau + Cartridge pleats
-         │
-         ▼
-Hoop Architecture Integration (DRAFT-04) → Farthingale/Pannier patterns
+### 4.2 Catenary Tape Suspension
+
+**Tape Tension Distribution:**
+
+$$T(z) = T_0 \cosh\left(\frac{w z}{T_0}\right) \quad \text{(catenary under self-weight)}$$
+
+Where $w$ = weight per unit length of hoop + fabric.
+
+**Hoop Moment of Inertia (Bending Resistance):**
