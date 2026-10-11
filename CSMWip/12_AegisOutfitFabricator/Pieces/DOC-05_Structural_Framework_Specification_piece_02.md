@@ -1,37 +1,30 @@
-```
-√(J₂) + α·I₁ = k
-α ≈ 0.1-0.2 for keratinous materials [TBD:RESEARCH]
-I₁ = σ₁ + σ₂ + σ₃ (hydrostatic pressure)
-J₂ = 1/6[(σ₁-σ₂)² + (σ₂-σ₃)² + (σ₃-σ₁)²] (deviatoric)
-```
+- $\nu_{TR} = 0.40$, $\nu_{RT} = 0.27$
+- $\nu_{LR} = 0.38$, $\nu_{RL} = 0.10$
+- $G_{LT} = 0.65\text{ GPa}$, $G_{LR} = 0.45\text{ GPa}$, $G_{TR} = 0.35\text{ GPa}$
+- Density: $\rho = 1.35\text{ g/cm}^3$
+- Moisture content: 12-15% (equilibrium at 65% RH, 20°C)
 
-### 1.2 Euler Buckling Prevention in Stays
+### 1.2 Euler Buckling Analysis for Baleen Stays
 
-**Critical Load per Stay** (Research Doc 1 §5.1; MAT-02 §1.4):
-```
-P_cr = π²·E·I / L²
+**Critical Buckling Load (Pinned-Pinned):**
 
-Stay cross-section: rectangular, width b = 7mm, thickness h = 2mm
-I = b·h³/12 = 7×2³/12 = 4.67 mm⁴ = 4.67×10⁻¹² m⁴
-Stay length: L = 150mm = 0.15m (typical)
-E = 4×10⁹ Pa (hydrated baleen, mid-range)
-End conditions: pinned-pinned (K=1) for laced stays
+$$P_{\text{cr}} = \frac{\pi^2 E_L I_{\text{min}}}{L^2} \quad \text{where } I_{\text{min}} = \frac{\pi}{64}(D_o^4 - D_i^4)$$
 
-P_cr = π² × 4×10⁹ × 4.67×10⁻¹² / 0.15² ≈ 8.2 N per stay
-```
+**Baleen Stay Geometry (per edition):**
+- Outer diameter: $D_o = 8\text{ mm}$ (tapered to 5 mm at tips)
+- Inner diameter: $D_i = 4\text{ mm}$ (central canal)
+- Length: $L = 350\text{ mm}$ (RM), $L = 320\text{ mm}$ (RW)
+- $I_{\text{min}} = 1.55 \times 10^{-10}\text{ m}^4$
 
-**Stay Array Buckling Resistance** (MAT-02 §1.4):
-```
-Typical corset: 20-30 stays (10-15 per side)
-Total buckling resistance: P_total = N_stays × P_cr
-For 24 stays: P_total ≈ 24 × 8.2 N = 197 N
-Safety factor vs. lacing tension (typical 150-200N): SF ≈ 1.0-1.3
-→ Requires spiral steel reinforcement for SF > 2.0
-```
+**Critical Load:**
+$$P_{\text{cr}} = \frac{\pi^2 \cdot 4.5\times10^9 \cdot 1.55\times10^{-10}}{(0.35)^2} = 5.8\text{ kN}$$
 
-### 1.3 Spiral Steel Boning Mechanics
+**Safety Factor (vs. LES Z4 tension 60-80N × 12 stays):**
+$$\text{SF} = \frac{P_{\text{cr}}}{12 \cdot T_{\text{max}}} = \frac{5800}{12 \cdot 80} = 6.0 \quad \text{✓ Adequate}$$
 
-**Material Properties** (Research Doc 1 §5.3; MAT-02 §3):
-```
-Spring steel 17-7 PH (precipitation hardening):
-E = 200 GPa, σ_y = 1200-1500 MPa, ρ = 7.8 g/cm³
+### 1.3 Viscoelastic Relaxation (Prony Series)
+
+**Time-Dependent Modulus:**
+
+$$E(t) = E_\infty + \sum_{i=1}^{3} E_i \exp(-t/\tau_i)$$
+
