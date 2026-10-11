@@ -1,37 +1,30 @@
-Wire diameter: d = 1.5-2.5 mm
-Spiral pitch: p = 3-5 mm (2D flexibility, longitudinal rigidity)
-```
+| $E_i$ (GPa) | $\tau_i$ (s) | Physical Mechanism |
+|-------------|--------------|-------------------|
+| 0.8 | 0.1 | Molecular chain slippage |
+| 0.5 | 10 | Tubule-matrix debonding |
+| 0.3 | 1000 | Water redistribution |
 
-**Spring Rates** (MAT-02 §3):
-```
-Lateral bending (cantilever): k_lat = 3·E·I / L³
-I = π·d⁴/64 = π×(2mm)⁴/64 ≈ 0.785 mm⁴
-For L = 150mm: k_lat ≈ 3 × 200×10⁹ × 0.785×10⁻¹² / 0.15³ ≈ 1.4 N/mm
+**Relaxation Under Constant Strain (LES tension hold):**
 
-Axial stiffness: k_ax = E·A / L = 200×10⁹ × π×(2mm)²/4 / 0.15 ≈ 4.2×10⁶ N/m
-Ratio k_ax / k_lat ≈ 3×10⁶ (extreme anisotropy)
-```
+$$\sigma(t) = \varepsilon_0 \cdot E(t) \quad \Rightarrow \quad \text{Tension loss} \approx 15\% \text{ over 8 hours}$$
 
-**Hysteresis & Fatigue** (MAT-02 §3):
-```
-Hysteresis loss: 5-10% per cycle (elastic-plastic at spiral transitions)
-Fatigue life: >10⁶ cycles at 50% σ_y (≈ 600 MPa)
-Corrosion: 316L stainless recommended (sweat resistance, CREvice corrosion)
-```
+**Re-tensioning Protocol:** LES auto-calibration every 2 hours (per CSMFAB078-A §3.3).
 
-### 1.4 Hybrid Chassis Architecture
+### 1.4 Spiral Steel Boning (17-7 PH CH900)
 
-**Baleen-Steel Composite Stays** (SYNTH-02 §4; MAT-04 §4.4):
-```
-Hybrid stay construction:
-[Baleen core: 15×2mm] + [Spiral steel wrap: 1.5mm wire, 4mm pitch]
-OR: Alternating baleen/steel stays in channel
+**Material Properties:**
+- $E = 193\text{ GPa}$, $\sigma_y = 1210\text{ MPa}$, $\sigma_{\text{uts}} = 1310\text{ MPa}$
+- $\rho = 7.8\text{ g/cm}^3$, $\nu = 0.30$
+- Fatigue limit: $\sigma_f = 480\text{ MPa}$ (10⁷ cycles, R=0.1)
+- Corrosion resistance: Passive in artificial sweat (ISO 11610)
 
-Effective properties:
-E_eff_long = V_baleen·E_baleen + V_steel·E_steel
-For V_baleen=0.6, V_steel=0.4: E_eff ≈ 0.6×4 + 0.4×200 = 82.4 GPa
-P_cr_hybrid = π²·E_eff·I_total / L²
-I_total = I_baleen + I_steel + A_steel·d² (parallel axis)
-Target P_cr_hybrid > 500 N (SF > 2.5 vs lacing tension)
-```
+**Spiral Geometry (per CSMFAB078 Main §4.4):**
+- Wire diameter: $d = 1.0\text{ mm}$
+- Coil diameter: $D = 5.0\text{ mm}$
+- Pitch: $p = 2.5\text{ mm}$
+- Active coils: $n_a = 20\text{--}40$ (per stay length)
+
+**Spring Rate:**
+
+$$k = \frac{G d^4}{8 D^3 n_a} = \frac{73\times10^9 \cdot (1.0\times10^{-3})^4}{8 \cdot (5.0\times10^{-3})^3 \cdot 30} = 12.2\text{ N/mm}$$
 
