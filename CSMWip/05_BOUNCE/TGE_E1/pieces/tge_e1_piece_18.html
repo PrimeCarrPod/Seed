@@ -1,0 +1,28 @@
+            <div class="stat-row"><span class="stat-label">Gap Index:</span><span class="stat-value" id="gap-index">0</span></div>
+        </div>
+    </div>
+    <div id="menu-overlay">
+        <div class="menu-title">TGE E1 MENU</div>
+        <div class="menu-subtitle">Prime Electron Worldline Emulator</div>
+        <button class="menu-btn" onclick="TGE.resume()">RESUME</button>
+        <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
+        <button class="menu-btn secondary" onclick="TGE.showWorldlineHistory()">WORLDLINE HISTORY</button>
+        <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
+        <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
+    </div>
+    <script>
+        const TGE = {
+            canvas: null, ctx: null, width: 0, height: 0,
+            electron: { x: 0, y: 0, vx: 0, vy: 0, radius: 4 },
+            worldline: [], reflections: 0, steps: 0,
+            eggshell: { cx: 0, cy: 0, rx: 0, ry: 0, rotation: 0 },
+            primeGaps: [], primeGapIndex: 0, gapsCrossed: 0,
+            theoryMode: false, running: true, animationId: null,
+            insetsTop: 0, insetsBottom: 0,
+            menuVisible: false,
+            
+            init() {
+                this.canvas = document.getElementById('canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.resize();

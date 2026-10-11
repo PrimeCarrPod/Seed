@@ -1,0 +1,28 @@
+                    this.ctx.beginPath();
+                    this.ctx.arc(pt.x, pt.y, 8 + (this.steps - pt.t) * 0.5, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = `rgba(255, 102, 0, ${alpha})`;
+                    this.ctx.lineWidth = 1.5;
+                    this.ctx.stroke();
+                }
+            },
+            
+            onScanPressed() {
+                this.electron.vx += (Math.random() - 0.5) * 10;
+                this.electron.vy += (Math.random() - 0.5) * 10;
+            },
+            
+            toggleMenu() {
+                this.menuVisible = !this.menuVisible;
+                document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+            },
+            
+            resume() { this.toggleMenu(); },
+            
+            toggleTheory() {
+                this.theoryMode = !this.theoryMode;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+            },
+            
+            setTheoryMode(enabled) {
+                this.theoryMode = enabled;
+            },

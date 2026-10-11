@@ -1,0 +1,28 @@
+            startLoop() {
+                const loop = () => {
+                    if (this.running) {
+                        this.step();
+                        this.render();
+                    }
+                    this.animationId = requestAnimationFrame(loop);
+                };
+                loop();
+            },
+            
+            step() {
+                this.steps++;
+                this.electron.x += this.electron.vx;
+                this.electron.y += this.electron.vy;
+                
+                const dx = this.electron.x - this.eggshell.cx;
+                const dy = this.electron.y - this.eggshell.cy;
+                const normX = dx / this.eggshell.rx;
+                const normY = dy / this.eggshell.ry;
+                const distSq = normX * normX + normY * normY;
+                
+                if (distSq >= 1.0) {
+                    this.handleReflection(dx, dy, normX, normY);
+                }
+                
+                this.checkPrimeGaps();
+                this.updateHUD();

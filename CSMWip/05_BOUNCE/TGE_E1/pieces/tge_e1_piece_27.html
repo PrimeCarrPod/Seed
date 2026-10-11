@@ -1,0 +1,24 @@
+            
+            showPrimeExplorer() { alert('Prime Explorer - Coming Soon'); },
+            showWorldlineHistory() { alert('Worldline History - Coming Soon'); },
+            showGapAnalysis() { alert('Gap Analysis - Coming Soon'); },
+            resetSimulation() {
+                this.electron.x = this.width / 2;
+                this.electron.y = this.height / 2;
+                this.electron.vx = 0;
+                this.electron.vy = 0;
+                this.worldline = [];
+                this.reflections = 0;
+                this.steps = 0;
+                this.gapsCrossed = 0;
+                this.primeGapIndex = 0;
+            },
+            
+            onReady(data) { console.log('TGE ready:', data); },
+            toggleFleet() { console.log('Fleet toggle'); }
+        };
+        
+        window.TGE = TGE;
+    </script>
+</body>
+</html>

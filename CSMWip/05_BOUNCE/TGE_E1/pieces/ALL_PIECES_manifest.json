@@ -1,0 +1,40 @@
+{
+  "project": "TGE_E1",
+  "total_pieces": 40,
+  "split_date": "2026-10-11",
+  "files": [
+    {
+      "name": "MainActivity.kt",
+      "pieces": 13,
+      "piece_files": [
+        "MainActivity_piece_01.kt", "MainActivity_piece_02.kt", "MainActivity_piece_03.kt",
+        "MainActivity_piece_04.kt", "MainActivity_piece_05.kt", "MainActivity_piece_06.kt",
+        "MainActivity_piece_07.kt", "MainActivity_piece_08.kt", "MainActivity_piece_09.kt",
+        "MainActivity_piece_10.kt", "MainActivity_piece_11.kt", "MainActivity_piece_12.kt",
+        "MainActivity_piece_13.kt"
+      ]
+    },
+    {
+      "name": "tge_e1.html",
+      "pieces": 14,
+      "piece_files": [
+        "tge_e1_piece_14.html", "tge_e1_piece_15.html", "tge_e1_piece_16.html",
+        "tge_e1_piece_17.html", "tge_e1_piece_18.html", "tge_e1_piece_19.html",
+        "tge_e1_piece_20.html", "tge_e1_piece_21.html", "tge_e1_piece_22.html",
+        "tge_e1_piece_23.html", "tge_e1_piece_24.html", "tge_e1_piece_25.html",
+        "tge_e1_piece_26.html", "tge_e1_piece_27.html"
+      ]
+    },
+    {
+      "name": "MASTER_TODO.md",
+      "pieces": 13,
+      "piece_files": [
+        "MASTER_TODO_piece_01.md", "MASTER_TODO_piece_02.md", "MASTER_TODO_piece_03.md",
+        "MASTER_TODO_piece_04.md", "MASTER_TODO_piece_05.md", "MASTER_TODO_piece_06.md",
+        "MASTER_TODO_piece_07.md", "MASTER_TODO_piece_08.md", "MASTER_TODO_piece_09.md",
+        "MASTER_TODO_piece_10.md", "MASTER_TODO_piece_11.md", "MASTER_TODO_piece_12.md",
+        "MASTER_TODO_piece_13.md"
+      ]
+    }
+  ]
+}
