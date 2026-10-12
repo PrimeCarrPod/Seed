@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TGE E4 - Prime Electron Worldline</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0A0A0F; 
+            color: #E8E8F0; 
+            font-family: 'Courier New', monospace; 
+            overflow: hidden; 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        #canvas { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            display: block; 
+        }
+        #hud { 
+            position: absolute; 
+            top: 60px; 
+            left: 20px; 
+            right: 20px; 
+            bottom: 80px; 
+            pointer-events: none; 
+            z-index: 10; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 10px;
+        }
+        .hud-panel { 
+            background: rgba(26, 26, 46, 0.9); 
+            border: 1px solid #00D4AA; 
+            border-radius: 8px; 
+            padding: 12px; 
+            margin-bottom: 10px; 
+            font-size: 11px; 
+            line-height: 1.6; 
+        }
+        .hud-title { 
+            color: #00D4AA; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid #00D4AA44; 
+            padding-bottom: 4px; 
+        }
+        .stat-row { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 4px 0; 
+        }
+        .stat-label { color: #8888A0; }
+        .stat-value { color: #00D4AA; font-weight: bold; }
+        .worldline-path { stroke: #00D4AA; stroke-width: 2; fill: none; }
+        .reflection-circle { stroke: #FF6600; stroke-width: 1.5; fill: none; stroke-dasharray: 5,5; }
+        .electron { fill: #00FFFF; filter: drop-shadow(0 0 6px #00FFFF); }
+        .prime-gap-marker { fill: #F97316; }
+        .eggshell { stroke: #4488FF; stroke-width: 1; fill: none; opacity: 0.3; }
+        #menu-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.95); 
+            z-index: 100; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        #menu-overlay.visible { display: flex; }
+        .menu-btn { 
+            background: #1A1A2E; 
+            border: 1px solid #00D4AA; 
+            color: #00D4AA; 
+            padding: 16px 48px; 
+            font-size: 18px; 
+            font-family: inherit; 
+            border-radius: 8px; 
+            min-width: 280px; 
+        }
+        .menu-btn:hover, .menu-btn:focus { background: #00D4AA; color: #0A0A0F; }
+        .menu-btn.danger { border-color: #FF4466; color: #FF4466; }
+        .menu-btn.danger:hover { background: #FF4466; color: #0A0A0F; }
+        .menu-btn.secondary { border-color: #A855F7; color: #A855F7; }
+        .menu-btn.secondary:hover { background: #A855F7; color: #0A0A0F; }
+        .menu-btn.tertiary { border-color: #4488FF; color: #4488FF; }
+        .menu-btn.tertiary:hover { background: #4488FF; color: #0A0A0F; }
+        .menu-title { font-size: 28px; color: #00D4AA; margin-bottom: 20px; }
+        .menu-subtitle { color: #8888A0; font-size: 12px; }
+        /* Prime Explorer Modal */
+        #explorer-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10,10,15,0.98); z-index: 200;
+            display: none; flex-direction: column;
+        }
+        #explorer-overlay.visible { display: flex; }
+        .explorer-header { padding: 20px; border-bottom: 1px solid #00D4AA44; }
+        .explorer-canvas { flex: 1; width: 100%; }
+        .explorer-controls { padding: 15px; display: flex; gap: 10px; justify-content: center; }
+        .explorer-btn { background: #1A1A2E; border: 1px solid #4488FF; color: #4488FF; padding: 10px 20px; border-radius: 6px; font-family: inherit; }
+        .explorer-btn:hover { background: #4488FF; color: #0A0A0F; }
+        /* Worldline History Modal */
+        #history-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10,10,15,0.98); z-index: 200;
+            display: none; flex-direction: column;
+        }
+        #history-overlay.visible { display: flex; }
+        .history-header { padding: 20px; border-bottom: 1px solid #A855F744; }
+        .history-canvas { flex: 1; width: 100%; }
+        .history-scrubber { padding: 15px; display: flex; align-items: center; gap: 15px; }
+        .history-scrubber input[type=range] { flex: 1; accent-color: #A855F7; }
+        /* Gap Analysis Modal */
+        #analysis-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10,10,15,0.98); z-index: 200;
+            display: none; flex-direction: column;
+        }
+        #analysis-overlay.visible { display: flex; }
+        .analysis-header { padding: 20px; border-bottom: 1px solid #F9731644; }
+        .analysis-canvas { flex: 1; width: 100%; }
+        /* Fleet Mode Indicator */
+        .fleet-indicator { position: absolute; top: 10px; right: 20px; z-index: 50; font-size: 11px; color: #A855F7; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="fleet-indicator" id="fleet-indicator"></div>
+    <div id="hud">
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ELECTRON WORLDLINE</div>
+            <div class="stat-row"><span class="stat-label">Position:</span><span class="stat-value" id="pos-x">0.00</span><span class="stat-value" id="pos-y">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Velocity:</span><span class="stat-value" id="vel-x">0.00</span><span class="stat-value" id="vel-y">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Reflections:</span><span class="stat-value" id="reflections">0</span></div>
+            <div class="stat-row"><span class="stat-label">Prime Gaps Crossed:</span><span class="stat-value" id="gaps-crossed">0</span></div>
+            <div class="stat-row"><span class="stat-label">Worldline Steps:</span><span class="stat-value" id="steps">0</span></div>
+            <div class="stat-row"><span class="stat-label">Mode:</span><span class="stat-value" id="mode">LIVE</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ENGINE</div>
+            <div class="stat-row"><span class="stat-label">Primes Loaded:</span><span class="stat-value" id="prime-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Gaps Available:</span><span class="stat-value" id="gap-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Current Gap:</span><span class="stat-value" id="current-gap">2</span></div>
+            <div class="stat-row"><span class="stat-label">Gap Index:</span><span class="stat-value" id="gap-index">0</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">FLEET STATUS</div>
+            <div class="stat-row"><span class="stat-label">Active Electrons:</span><span class="stat-value" id="fleet-count">1</span></div>
+            <div class="stat-row"><span class="stat-label">Fleet Mode:</span><span class="stat-value" id="fleet-mode">OFF</span></div>
+            <div class="stat-row"><span class="stat-label">Total Reflections:</span><span class="stat-value" id="fleet-reflections">0</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">THEORY OVERLAY</div>
+            <div class="stat-row"><span class="stat-label">Riemann Zeros:</span><span class="stat-value" id="riemann-active">OFF</span></div>
+            <div class="stat-row"><span class="stat-label">Prime Density:</span><span class="stat-value" id="prime-density">0</span></div>
+            <div class="stat-row"><span class="stat-label">Gap Entropy:</span><span class="stat-value" id="gap-entropy">0</span></div>
+        </div>
+    </div>
+    <div id="menu-overlay">
+        <div class="menu-title">TGE E2 MENU</div>
+        <div class="menu-subtitle">Prime Electron Worldline Emulator v4.0.0-E4</div>
+        <button class="menu-btn" onclick="TGE.resume()">RESUME</button>
+        <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
+        <button class="menu-btn secondary" onclick="TGE.showWorldlineHistory()">WORLDLINE HISTORY</button>
+        <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
+        <button class="menu-btn tertiary" onclick="TGE.toggleFleet()">TOGGLE FLEET</button>
+        <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
+    </div>
+    <!-- Prime Explorer Modal -->
+    <div id="explorer-overlay">
+        <div class="explorer-header">
+            <div class="menu-title">PRIME EXPLORER</div>
+            <div class="menu-subtitle">Navigate the Prime Gap Universe</div>
+        </div>
+        <canvas class="explorer-canvas" id="explorer-canvas"></canvas>
+        <div class="explorer-controls">
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.zoomIn()">Zoom In</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.zoomOut()">Zoom Out</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.panLeft()">Pan Left</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.panRight()">Pan Right</button>
+            <button class="explorer-btn" onclick="TGE.PrimeExplorer.resetView()">Reset View</button>
+            <button class="explorer-btn danger" onclick="TGE.hidePrimeExplorer()">Close</button>
+        </div>
+    </div>
+    <!-- Worldline History Modal -->
+    <div id="history-overlay">
+        <div class="history-header">
+            <div class="menu-title">WORLDLINE HISTORY</div>
+            <div class="menu-subtitle">Scrub through electron's journey</div>
+        </div>
+        <canvas class="history-canvas" id="history-canvas"></canvas>
+        <div class="history-scrubber">
+            <span id="history-time">Step: 0 / 0</span>
+            <input type="range" id="history-scrubber" min="0" max="0" value="0" oninput="TGE.WorldlineHistory.scrub(this.value)">
+            <button class="explorer-btn" onclick="TGE.hideWorldlineHistory()">Close</button>
+        </div>
+    </div>
+    <!-- Gap Analysis Modal -->
+    <div id="analysis-overlay">
+        <div class="analysis-header">
+            <div class="menu-title">GAP ANALYSIS</div>
+            <div class="menu-subtitle">Statistical distribution of prime gaps</div>
+        </div>
+        <canvas class="analysis-canvas" id="analysis-canvas"></canvas>
+        <div class="explorer-controls">
+            <button class="explorer-btn" onclick="TGE.GapAnalysis.toggleLogScale()">Toggle Log Scale</button>
+            <button class="explorer-btn" onclick="TGE.GapAnalysis.showTwinPrimes()">Highlight Twins</button>
+            <button class="explorer-btn" onclick="TGE.GapAnalysis.showConjectures()">Show Conjectures</button>
+            <button class="explorer-btn danger" onclick="TGE.hideGapAnalysis()">Close</button>
+        </div>
+    </div><script>
+        const TGE = {
+            canvas: null, ctx: null, width: 0, height: 0,
+            electron: { x: 0, y: 0, vx: 0, vy: 0, radius: 4 },
+            electrons: [],  // Fleet mode: multiple electrons
+            worldline: [], reflections: 0, steps: 0,
+            eggshell: { cx: 0, cy: 0, rx: 0, ry: 0, rotation: 0 },
+            primeGaps: [], primeGapIndex: 0, gapsCrossed: 0,
+            theoryMode: false, running: true, animationId: null,
+            insetsTop: 0, insetsBottom: 0,
+            menuVisible: false,
+            fleetMode: false,
+            fleetCount: 1,
+            
+            // Prime Explorer state
+            PrimeExplorer: {
+                active: false,
+                zoom: 1.0,
+                panX: 0,
+                panY: 0,
+                selectedGap: -1
+            },
+            
+            // Worldline History state
+            WorldlineHistory: {
+                active: false,
+                scrubIndex: 0,
+                maxHistory: 5000
+            },
+            
+            // Gap Analysis state
+            GapAnalysis: {
+                active: false,
+                logScale: false,
+                showTwins: false,
+                showConjectures: false
+            },
+
+            init() {
+                this.canvas = document.getElementById('canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+                this.setupEggshell();
+                this.initFleet();
+                this.startLoop();
+            },
+            
+            resize() {
+                this.width = window.innerWidth;
+                this.height = window.innerHeight;
+                this.canvas.width = this.width;
+                this.canvas.height = this.height;
+                this.electron.x = this.width / 2;
+                this.electron.y = this.height / 2;
+                this.setupEggshell();
+                // Resize fleet electrons
+                this.electrons.forEach((e, i) => {
+                    if (i === 0) return; // Main electron already centered
+                    e.x = this.width / 2 + (Math.random() - 0.5) * 20;
+                    e.y = this.height / 2 + (Math.random() - 0.5) * 20;
+                });
+            },
+            
+            setupEggshell() {
+                const padding = 40;
+                this.eggshell.cx = this.width / 2;
+                this.eggshell.cy = this.height / 2;
+                this.eggshell.rx = Math.min(this.width, this.height) / 2 - padding;
+                this.eggshell.ry = this.eggshell.rx * 0.75;
+            },
+            
+            setInsets(top, bottom) {
+                this.insetsTop = top;
+                this.insetsBottom = bottom;
+            },startLoop() {
+                const loop = () => {
+                    if (this.running) {
+                        this.step();
+                        this.render();
+                    }
+                    this.animationId = requestAnimationFrame(loop);
+                };
+                loop();
+            },
+            
+            step() {
+                this.steps++;
+                
+                // Update all fleet electrons
+                this.electrons.forEach((e, index) => {
+                    e.x += e.vx;
+                    e.y += e.vy;
+                    
+                    const dx = e.x - this.eggshell.cx;
+                    const dy = e.y - this.eggshell.cy;
+                    const normX = dx / this.eggshell.rx;
+                    const normY = dy / this.eggshell.ry;
+                    const distSq = normX * normX + normY * normY;
+                    
+                    if (distSq >= 1.0) {
+                        this.handleReflection(e, dx, dy, normX, normY, index);
+                    }
+                });
+                
+                // Main electron (index 0) handles prime gaps
+                this.checkPrimeGaps();
+                this.updateHUD();
+            },
+            
+            handleReflection(e, dx, dy, normX, normY, index) {
+                if (index === 0) this.reflections++;
+                
+                const normalLen = Math.sqrt(normX * normX + normY * normY);
+                const nx = normX / normalLen;
+                const ny = normY / normalLen;
+                const dot = e.vx * nx + e.vy * ny;
+                e.vx -= 2 * dot * nx;
+                e.vy -= 2 * dot * ny;
+                e.vx *= 0.99;
+                e.vy *= 0.99;
+                e.x = this.eggshell.cx + normX * this.eggshell.rx * 0.98;
+                e.y = this.eggshell.cy + normY * this.eggshell.ry * 0.98;
+                
+                // Only main electron leaves worldline trail
+                if (index === 0) {
+                    this.worldline.push({ x: e.x, y: e.y, t: this.steps });
+                    if (this.worldline.length > 2000) this.worldline.shift();
+                    
+                    // Also record in history for scrubber
+                    if (this.WorldlineHistory.maxHistory > 0) {
+                        TGE.WorldlineHistory.scrubIndex = this.worldline.length - 1;
+                    }
+                    
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onWorldlineReflection(JSON.stringify({
+                            reflections: this.reflections,
+                            position: { x: e.x, y: e.y },
+                            velocity: { x: e.vx, y: e.vy }
+                        }));
+                    }
+                }
+            },checkPrimeGaps() {
+                if (this.primeGaps.length === 0) return;
+                const e = this.electrons[0]; // Main electron
+                const distFromCenter = Math.sqrt(
+                    Math.pow((e.x - this.eggshell.cx) / this.eggshell.rx, 2) +
+                    Math.pow((e.y - this.eggshell.cy) / this.eggshell.ry, 2)
+                );
+                const gapThreshold = this.primeGaps[this.primeGapIndex] / 100;
+                if (distFromCenter > gapThreshold && this.primeGapIndex < this.primeGaps.length - 1) {
+                    this.primeGapIndex++;
+                    this.gapsCrossed++;
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onPrimeGapEvent(JSON.stringify({
+                            gap: this.primeGaps[this.primeGapIndex],
+                            index: this.primeGapIndex,
+                            totalCrossed: this.gapsCrossed
+                        }));
+                    }
+                }
+            },
+            
+            updateHUD() {
+                const e = this.electrons[0];
+                document.getElementById('pos-x').textContent = e.x.toFixed(1);
+                document.getElementById('pos-y').textContent = e.y.toFixed(1);
+                document.getElementById('vel-x').textContent = e.vx.toFixed(2);
+                document.getElementById('vel-y').textContent = e.vy.toFixed(2);
+                document.getElementById('reflections').textContent = this.reflections;
+                document.getElementById('gaps-crossed').textContent = this.gapsCrossed;
+                document.getElementById('steps').textContent = this.steps;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+                document.getElementById('gap-index').textContent = this.primeGapIndex;
+                document.getElementById('current-gap').textContent = this.primeGaps[this.primeGapIndex] || 0;
+                document.getElementById('fleet-count').textContent = this.electrons.length;
+                document.getElementById('fleet-mode').textContent = this.fleetMode ? 'ON' : 'OFF';
+                
+                // Fleet total reflections
+                let fleetReflections = this.reflections;
+                this.electrons.forEach((e, i) => { if (i > 0) fleetReflections += e.reflections || 0; });
+                document.getElementById('fleet-reflections').textContent = fleetReflections;
+            },render() {
+                this.ctx.fillStyle = '#0A0A0F';
+                this.ctx.fillRect(0, 0, this.width, this.height);
+                
+                this.drawEggshell();
+                this.drawWorldline();
+                this.drawPrimeGapMarkers();
+                this.drawElectrons();
+                this.drawReflectionCircles();
+                
+                // Theory mode overlays
+                if (this.theoryMode) {
+                    this.drawRiemannZeros();
+                    this.drawPrimeDensity();
+                }
+            },
+            
+            drawEggshell() {
+                this.ctx.save();
+                this.ctx.translate(this.eggshell.cx, this.eggshell.cy);
+                this.ctx.rotate(this.eggshell.rotation);
+                this.ctx.beginPath();
+                this.ctx.ellipse(0, 0, this.eggshell.rx, this.eggshell.ry, 0, 0, Math.PI * 2);
+                this.ctx.strokeStyle = '#4488FF';
+                this.ctx.lineWidth = 1;
+                this.ctx.globalAlpha = 0.3;
+                this.ctx.stroke();
+                this.ctx.globalAlpha = 1;
+                this.ctx.restore();
+                this.eggshell.rotation += 0.0001;
+            },
+            
+            drawWorldline() {
+                if (this.worldline.length < 2) return;
+                this.ctx.beginPath();
+                this.ctx.moveTo(this.worldline[0].x, this.worldline[0].y);
+                for (let i = 1; i < this.worldline.length; i++) {
+                    this.ctx.lineTo(this.worldline[i].x, this.worldline[i].y);
+                }
+                const gradient = this.ctx.createLinearGradient(
+                    this.worldline[0].x, this.worldline[0].y,
+                    this.worldline[this.worldline.length-1].x, this.worldline[this.worldline.length-1].y
+                );
+                gradient.addColorStop(0, '#00D4AA22');
+                gradient.addColorStop(1, '#00D4AA');
+                this.ctx.strokeStyle = gradient;
+                this.ctx.lineWidth = 2;
+                this.ctx.stroke();
+                
+                // Draw fleet worldlines (fainter)
+                if (this.fleetMode) {
+                    this.electrons.forEach((e, i) => {
+                        if (i === 0 || !e.history) return;
+                        if (e.history.length < 2) return;
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(e.history[0].x, e.history[0].y);
+                        for (let j = 1; j < e.history.length; j++) {
+                            this.ctx.lineTo(e.history[j].x, e.history[j].y);
+                        }
+                        const hue = (i * 137) % 360;
+                        const fleetGradient = this.ctx.createLinearGradient(
+                            e.history[0].x, e.history[0].y,
+                            e.history[e.history.length-1].x, e.history[e.history.length-1].y
+                        );
+                        fleetGradient.addColorStop(0, `hsla(${hue}, 70%, 50%, 0.1)`);
+                        fleetGradient.addColorStop(1, `hsla(${hue}, 70%, 50%, 0.4)`);
+                        this.ctx.strokeStyle = fleetGradient;
+                        this.ctx.lineWidth = 1;
+                        this.ctx.stroke();
+                    });
+                }
+            },drawPrimeGapMarkers() {
+                for (let i = 0; i <= this.primeGapIndex && i < this.primeGaps.length; i++) {
+                    const gap = this.primeGaps[i];
+                    const radius = (gap / 100) * Math.min(this.eggshell.rx, this.eggshell.ry);
+                    this.ctx.beginPath();
+                    this.ctx.ellipse(this.eggshell.cx, this.eggshell.cy, radius, radius * 0.75, 0, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = i === this.primeGapIndex ? '#F97316' : '#F9731644';
+                    this.ctx.lineWidth = i === this.primeGapIndex ? 2 : 1;
+                    this.ctx.globalAlpha = i === this.primeGapIndex ? 0.8 : 0.3;
+                    this.ctx.stroke();
+                    this.ctx.globalAlpha = 1;
+                }
+            },
+            
+            drawElectrons() {
+                this.electrons.forEach((e, i) => {
+                    const isMain = (i === 0);
+                    const radius = isMain ? e.radius : e.radius * 0.7;
+                    const hue = isMain ? 180 : (i * 137) % 360;
+                    
+                    // Glow
+                    const glow = this.ctx.createRadialGradient(
+                        e.x, e.y, 0,
+                        e.x, e.y, radius * 4
+                    );
+                    glow.addColorStop(0, `hsla(${hue}, 100%, 50%, 1)`);
+                    glow.addColorStop(1, `hsla(${hue}, 100%, 50%, 0)`);
+                    this.ctx.fillStyle = glow;
+                    this.ctx.beginPath();
+                    this.ctx.arc(e.x, e.y, radius * 3, 0, Math.PI * 2);
+                    this.ctx.fill();
+                    
+                    // Core
+                    this.ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+                    this.ctx.beginPath();
+                    this.ctx.arc(e.x, e.y, radius, 0, Math.PI * 2);
+                    this.ctx.fill();
+                    
+                    // Theory mode: show velocity vector
+                    if (this.theoryMode && isMain) {
+                        this.ctx.strokeStyle = '#FF6600';
+                        this.ctx.lineWidth = 2;
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(e.x, e.y);
+                        this.ctx.lineTo(e.x + e.vx * 10, e.y + e.vy * 10);
+                        this.ctx.stroke();
+                        
+                        // Arrowhead
+                        const angle = Math.atan2(e.vy, e.vx);
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(e.x + e.vx * 10, e.y + e.vy * 10);
+                        this.ctx.lineTo(
+                            e.x + e.vx * 10 - 8 * Math.cos(angle - Math.PI/6),
+                            e.y + e.vy * 10 - 8 * Math.sin(angle - Math.PI/6)
+                        );
+                        this.ctx.moveTo(e.x + e.vx * 10, e.y + e.vy * 10);
+                        this.ctx.lineTo(
+                            e.x + e.vx * 10 - 8 * Math.cos(angle + Math.PI/6),
+                            e.y + e.vy * 10 - 8 * Math.sin(angle + Math.PI/6)
+                        );
+                        this.ctx.stroke();
+                    }
+                });
+            },drawReflectionCircles() {
+                for (let i = Math.max(0, this.worldline.length - 10); i < this.worldline.length; i++) {
+                    const pt = this.worldline[i];
+                    const alpha = (i - (this.worldline.length - 10)) / 10 * 0.5;
+                    this.ctx.beginPath();
+                    this.ctx.arc(pt.x, pt.y, 8 + (this.steps - pt.t) * 0.5, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = `rgba(255, 102, 0, ${alpha})`;
+                    this.ctx.lineWidth = 1.5;
+                    this.ctx.stroke();
+                }
+            },
+            
+            // Theory Mode: Riemann Zeros visualization
+            drawRiemannZeros() {
+                if (!this.theoryMode) return;
+                // Draw critical line Re(s) = 1/2 as vertical reference
+                this.ctx.save();
+                this.ctx.strokeStyle = '#A855F744';
+                this.ctx.lineWidth = 1;
+                this.ctx.setLineDash([5, 5]);
+                const cx = this.eggshell.cx;
+                this.ctx.beginPath();
+                this.ctx.moveTo(cx, 0);
+                this.ctx.lineTo(cx, this.height);
+                this.ctx.stroke();
+                this.ctx.setLineDash([]);
+                
+                // Riemann zero markers on critical line (first few zeros)
+                const riemannZeros = [14.135, 21.022, 25.011, 30.425, 32.935, 37.586, 40.919, 43.327, 48.005, 49.774];
+                riemannZeros.forEach((zero, i) => {
+                    const y = this.eggshell.cy - (zero / 50) * this.eggshell.ry;
+                    if (y > 0 && y < this.height) {
+                        this.ctx.beginPath();
+                        this.ctx.arc(cx, y, 4, 0, Math.PI * 2);
+                        this.ctx.fillStyle = '#A855F7';
+                        this.ctx.fill();
+                        this.ctx.font = '8px monospace';
+                        this.ctx.fillText(`ρ${i+1}`, cx + 8, y + 3);
+                    }
+                });
+                this.ctx.restore();
+            },
+            
+            // Theory Mode: Prime Density visualization
+            drawPrimeDensity() {
+                if (!this.theoryMode) return;
+                // Prime number theorem: π(x) ~ x/log(x)
+                // Visualize as radial density
+                this.ctx.save();
+                this.ctx.globalAlpha = 0.15;
+                for (let r = 10; r < this.eggshell.rx; r += 10) {
+                    const x = r / this.eggshell.rx * 1000; // scale
+                    const density = x / Math.log(Math.max(2, x));
+                    const normalized = Math.min(1, density / 200);
+                    this.ctx.beginPath();
+                    this.ctx.ellipse(this.eggshell.cx, this.eggshell.cy, r, r * 0.75, 0, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = `rgba(0, 212, 170, ${normalized})`;
+                    this.ctx.lineWidth = 0.5;
+                    this.ctx.stroke();
+                }
+                this.ctx.globalAlpha = 1;
+                this.ctx.restore();
+            },onScanPressed() {
+                // Give main electron a random kick
+                this.electrons[0].vx += (Math.random() - 0.5) * 10;
+                this.electrons[0].vy += (Math.random() - 0.5) * 10;
+                
+                // In fleet mode, give all electrons different kicks
+                if (this.fleetMode) {
+                    this.electrons.forEach((e, i) => {
+                        if (i === 0) return;
+                        const angle = (i / this.electrons.length) * Math.PI * 2;
+                        const force = 3 + Math.random() * 4;
+                        e.vx += Math.cos(angle) * force;
+                        e.vy += Math.sin(angle) * force;
+                    });
+                }
+            },
+            
+            toggleMenu() {
+                this.menuVisible = !this.menuVisible;
+                document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+            },
+            
+            resume() { this.toggleMenu(); },
+            
+            toggleTheory() {
+                this.theoryMode = !this.theoryMode;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+            },
+            
+            setTheoryMode(enabled) {
+                this.theoryMode = enabled;
+            },
+            
+            initFleet() {
+                this.electrons = [];
+                // Main electron
+                this.electrons.push({
+                    x: this.width / 2,
+                    y: this.height / 2,
+                    vx: 0,
+                    vy: 0,
+                    radius: 4,
+                    history: [],
+                    reflections: 0,
+                    primeSeed: 2 // First prime
+                });
+            },
+            
+            toggleFleet() {
+                this.fleetMode = !this.fleetMode;
+                if (this.fleetMode) {
+                    // Add 7 more electrons (8 total = first 8 primes)
+                    const primeSeeds = [3, 5, 7, 11, 13, 17, 19];
+                    primeSeeds.forEach((seed, i) => {
+                        this.electrons.push({
+                            x: this.width / 2 + (Math.random() - 0.5) * 20,
+                            y: this.height / 2 + (Math.random() - 0.5) * 20,
+                            vx: 0,
+                            vy: 0,
+                            radius: 3,
+                            history: [],
+                            reflections: 0,
+                            primeSeed: seed
+                        });
+                    });
+                } else {
+                    // Keep only main electron
+                    this.electrons = this.electrons.slice(0, 1);
+                }
+                document.getElementById('fleet-indicator').textContent = 
+                    this.fleetMode ? `FLEET: ${this.electrons.length} ELECTRONS` : '';
+            },// Prime Explorer Module
+            PrimeExplorer: {
+                active: false,
+                zoom: 1.0,
+                panX: 0,
+                panY: 0,
+                selectedGap: -1,
+                canvas: null,
+                ctx: null,
+                
+                init() {
+                    this.canvas = document.getElementById('explorer-canvas');
+                    this.ctx = this.canvas.getContext('2d');
+                    this.resize();
+                },
+                
+                resize() {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight - 120; // Account for controls
+                },
+                
+                show() {
+                    this.active = true;
+                    document.getElementById('explorer-overlay').classList.add('visible');
+                    this.resize();
+                    this.render();
+                },
+                
+                hide() {
+                    this.active = false;
+                    document.getElementById('explorer-overlay').classList.remove('visible');
+                },
+                
+                zoomIn() { this.zoom = Math.min(10, this.zoom * 1.2); this.render(); },
+                zoomOut() { this.zoom = Math.max(0.1, this.zoom / 1.2); this.render(); },
+                panLeft() { this.panX += 50 / this.zoom; this.render(); },
+                panRight() { this.panX -= 50 / this.zoom; this.render(); },
+                resetView() { this.zoom = 1.0; this.panX = 0; this.panY = 0; this.render(); },
+                
+                render() {
+                    if (!this.active) return;
+                    const ctx = this.ctx;
+                    const w = this.canvas.width;
+                    const h = this.canvas.height;
+                    const gaps = TGE.primeGaps;
+                    
+                    ctx.fillStyle = '#0A0A0F';
+                    ctx.fillRect(0, 0, w, h);
+                    
+                    // Draw gaps as vertical bars
+                    const barWidth = Math.max(1, 4 * this.zoom);
+                    const spacing = 6 * this.zoom;
+                    const startX = w / 2 - (gaps.length * (barWidth + spacing)) / 2 + this.panX;
+                    
+                    ctx.save();
+                    ctx.translate(startX, h / 2);
+                    
+                    gaps.forEach((gap, i) => {
+                        const x = i * (barWidth + spacing);
+                        const height = Math.min(h * 0.8, gap * this.zoom * 2);
+                        const isTwin = (gap === 2);
+                        const isSelected = (i === this.selectedGap);
+                        
+                        // Bar
+                        ctx.beginPath();
+                        ctx.rect(x, -height/2, barWidth, height);
+                        if (isSelected) {
+                            ctx.fillStyle = '#00D4AA';
+                        } else if (isTwin) {
+                            ctx.fillStyle = '#FF4466';
+                        } else {
+                            const hue = (gap % 360);
+                            ctx.fillStyle = `hsl(${hue}, 70%, 50%)`;
+                        }
+                        ctx.fill();
+                        
+                        // Label for selected
+                        if (isSelected) {
+                            ctx.fillStyle = '#E8E8F0';
+                            ctx.font = '12px monospace';
+                            ctx.textAlign = 'center';
+                            ctx.fillText(`Gap ${i}: ${gap}`, x + barWidth/2, -height/2 - 10);
+                            ctx.fillText(`Prime ${i+1}`, x + barWidth/2, -height/2 - 25);
+                        }
+                    });
+                    
+                    ctx.restore();
+                    
+                    // Info panel
+                    ctx.fillStyle = '#1A1A2E';
+                    ctx.fillRect(10, 10, 300, 100);
+                    ctx.strokeStyle = '#00D4AA';
+                    ctx.lineWidth = 1;
+                    ctx.strokeRect(10, 10, 300, 100);
+                    ctx.fillStyle = '#00D4AA';
+                    ctx.font = '14px monospace';
+                    ctx.fillText('PRIME EXPLORER', 20, 35);
+                    ctx.fillStyle = '#E8E8F0';
+                    ctx.font = '11px monospace';
+                    ctx.fillText(`Total Gaps: ${gaps.length}`, 20, 55);
+                    ctx.fillText(`Zoom: ${this.zoom.toFixed(2)}x`, 20, 70);
+                    ctx.fillText(`Twin Primes: ${gaps.filter(g => g === 2).length}`, 20, 85);
+                    if (this.selectedGap >= 0) {
+                        ctx.fillText(`Selected: Gap ${this.selectedGap} = ${gaps[this.selectedGap]}`, 20, 100);
+                    }
+                }
+            },// Worldline History Module
+            WorldlineHistory: {
+                active: false,
+                scrubIndex: 0,
+                maxHistory: 5000,
+                canvas: null,
+                ctx: null,
+                playbackSpeed: 1,
+                isPlaying: false,
+                
+                init() {
+                    this.canvas = document.getElementById('history-canvas');
+                    this.ctx = this.canvas.getContext('2d');
+                    this.resize();
+                },
+                
+                resize() {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight - 100;
+                },
+                
+                show() {
+                    this.active = true;
+                    document.getElementById('history-overlay').classList.add('visible');
+                    this.resize();
+                    this.updateScrubber();
+                    this.render();
+                },
+                
+                hide() {
+                    this.active = false;
+                    this.isPlaying = false;
+                    document.getElementById('history-overlay').classList.remove('visible');
+                },
+                
+                scrub(index) {
+                    this.scrubIndex = Math.max(0, Math.min(index, TGE.worldline.length - 1));
+                    this.updateScrubber();
+                    this.render();
+                },
+                
+                updateScrubber() {
+                    const scrubber = document.getElementById('history-scrubber');
+                    const timeDisplay = document.getElementById('history-time');
+                    if (scrubber) {
+                        scrubber.max = Math.max(0, TGE.worldline.length - 1);
+                        scrubber.value = this.scrubIndex;
+                    }
+                    if (timeDisplay) {
+                        timeDisplay.textContent = `Step: ${this.scrubIndex} / ${Math.max(0, TGE.worldline.length - 1)}`;
+                    }
+                },
+                
+                togglePlay() {
+                    this.isPlaying = !this.isPlaying;
+                    if (this.isPlaying) this.play();
+                },
+                
+                play() {
+                    if (!this.isPlaying) return;
+                    this.scrubIndex = Math.min(this.scrubIndex + this.playbackSpeed, TGE.worldline.length - 1);
+                    this.updateScrubber();
+                    this.render();
+                    if (this.scrubIndex < TGE.worldline.length - 1) {
+                        requestAnimationFrame(() => this.play());
+                    } else {
+                        this.isPlaying = false;
+                    }
+                },
+                
+                render() {
+                    if (!this.active) return;
+                    const ctx = this.ctx;
+                    const w = this.canvas.width;
+                    const h = this.canvas.height;
+                    const history = TGE.worldline;
+                    
+                    ctx.fillStyle = '#0A0A0F';
+                    ctx.fillRect(0, 0, w, h);
+                    
+                    if (history.length < 2) return;
+                    
+                    // Draw full worldline faintly
+                    ctx.beginPath();
+                    ctx.moveTo(history[0].x, history[0].y);
+                    for (let i = 1; i < history.length; i++) {
+                        ctx.lineTo(history[i].x, history[i].y);
+                    }
+                    const gradient = ctx.createLinearGradient(
+                        history[0].x, history[0].y,
+                        history[history.length-1].x, history[history.length-1].y
+                    );
+                    gradient.addColorStop(0, '#00D4AA11');
+                    gradient.addColorStop(1, '#00D4AA44');
+                    ctx.strokeStyle = gradient;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                    
+                    // Draw up to scrub index brightly
+                    if (this.scrubIndex > 1) {
+                        ctx.beginPath();
+                        ctx.moveTo(history[0].x, history[0].y);
+                        for (let i = 1; i <= this.scrubIndex; i++) {
+                            ctx.lineTo(history[i].x, history[i].y);
+                        }
+                        const brightGradient = ctx.createLinearGradient(
+                            history[0].x, history[0].y,
+                            history[this.scrubIndex].x, history[this.scrubIndex].y
+                        );
+                        brightGradient.addColorStop(0, '#00D4AA44');
+                        brightGradient.addColorStop(1, '#00D4AA');
+                        ctx.strokeStyle = brightGradient;
+                        ctx.lineWidth = 3;
+                        ctx.stroke();
+                    }
+                    
+                    // Draw current position marker
+                    if (this.scrubIndex < history.length) {
+                        const pt = history[this.scrubIndex];
+                        ctx.beginPath();
+                        ctx.arc(pt.x, pt.y, 8, 0, Math.PI * 2);
+                        ctx.fillStyle = '#00FFFF';
+                        ctx.shadowColor = '#00FFFF';
+                        ctx.shadowBlur = 15;
+                        ctx.fill();
+                        ctx.shadowBlur = 0;
+                        
+                        // Info
+                        ctx.fillStyle = '#00D4AA';
+                        ctx.font = '14px monospace';
+                        ctx.textAlign = 'left';
+                        ctx.fillText(`Step: ${pt.t}`, 20, 30);
+                        ctx.fillText(`Position: (${pt.x.toFixed(1)}, ${pt.y.toFixed(1)})`, 20, 50);
+                        ctx.fillText(`Progress: ${((this.scrubIndex / history.length) * 100).toFixed(1)}%`, 20, 70);
+                    }
+                    
+                    // Eggshell reference
+                    const e = TGE.eggshell;
+                    ctx.beginPath();
+                    ctx.ellipse(e.cx, e.cy, e.rx, e.ry, 0, 0, Math.PI * 2);
+                    ctx.strokeStyle = '#4488FF44';
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            },// Gap Analysis Module
+            GapAnalysis: {
+                active: false,
+                logScale: false,
+                showTwins: false,
+                showConjectures: false,
+                canvas: null,
+                ctx: null,
+                
+                init() {
+                    this.canvas = document.getElementById('analysis-canvas');
+                    this.ctx = this.canvas.getContext('2d');
+                    this.resize();
+                },
+                
+                resize() {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight - 120;
+                },
+                
+                show() {
+                    this.active = true;
+                    document.getElementById('analysis-overlay').classList.add('visible');
+                    this.resize();
+                    this.render();
+                },
+                
+                hide() {
+                    this.active = false;
+                    document.getElementById('analysis-overlay').classList.remove('visible');
+                },
+                
+                toggleLogScale() { this.logScale = !this.logScale; this.render(); },
+                toggleTwins() { this.showTwins = !this.showTwins; this.render(); },
+                toggleConjectures() { this.showConjectures = !this.showConjectures; this.render(); },
+                
+                render() {
+                    if (!this.active) return;
+                    const ctx = this.ctx;
+                    const w = this.canvas.width;
+                    const h = this.canvas.height;
+                    const gaps = TGE.primeGaps;
+                    
+                    ctx.fillStyle = '#0A0A0F';
+                    ctx.fillRect(0, 0, w, h);
+                    
+                    if (gaps.length === 0) return;
+                    
+                    // Compute histogram
+                    const maxGap = Math.max(...gaps);
+                    const binCount = Math.min(100, maxGap);
+                    const bins = new Array(binCount).fill(0);
+                    gaps.forEach(g => { if (g < binCount) bins[g]++; });
+                    
+                    const maxBin = Math.max(...bins);
+                    const barWidth = (w - 100) / binCount;
+                    
+                    // Draw histogram
+                    bins.forEach((count, gap) => {
+                        if (count === 0) return;
+                        const x = 50 + gap * barWidth;
+                        const height = this.logScale 
+                            ? (Math.log(count + 1) / Math.log(maxBin + 1)) * (h - 100)
+                            : (count / maxBin) * (h - 100);
+                        
+                        const isTwin = (gap === 2);
+                        ctx.beginPath();
+                        ctx.rect(x, h - 50 - height, Math.max(1, barWidth - 1), height);
+                        if (isTwin && this.showTwins) {
+                            ctx.fillStyle = '#FF4466';
+                        } else {
+                            ctx.fillStyle = this.logScale ? '#4488FF' : '#F97316';
+                        }
+                        ctx.fill();
+                    });
+                    
+                    // Axes
+                    ctx.strokeStyle = '#00D4AA44';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(50, h - 50);
+                    ctx.lineTo(w - 50, h - 50);
+                    ctx.moveTo(50, h - 50);
+                    ctx.lineTo(50, 50);
+                    ctx.stroke();
+                    
+                    // Labels
+                    ctx.fillStyle = '#8888A0';
+                    ctx.font = '10px monospace';
+                    ctx.textAlign = 'center';
+                    for (let i = 0; i <= 10; i++) {
+                        const gap = Math.floor(i * maxGap / 10);
+                        const x = 50 + i * (w - 100) / 10;
+                        ctx.fillText(gap.toString(), x, h - 30);
+                    }
+                    
+                    // Conjecture lines
+                    if (this.showConjectures) {
+                        // Cramér's conjecture: gaps ~ O(log^2 p)
+                        ctx.strokeStyle = '#A855F788';
+                        ctx.lineWidth = 2;
+                        ctx.setLineDash([10, 5]);
+                        ctx.beginPath();
+                        for (let i = 0; i < binCount; i++) {
+                            const p = i * 100; // approximate prime
+                            const cramer = Math.log(p) * Math.log(p);
+                            const x = 50 + i * barWidth;
+                            const y = h - 50 - Math.min(h - 100, (cramer / maxBin) * (h - 100));
+                            if (i === 0) ctx.moveTo(x, y);
+                            else ctx.lineTo(x, y);
+                        }
+                        ctx.stroke();
+                        ctx.setLineDash([]);
+                        
+                        // Label
+                        ctx.fillStyle = '#A855F7';
+                        ctx.font = '11px monospace';
+                        ctx.fillText("Cramér: log²(p)", w - 120, 40);
+                    }
+                    
+                    // Stats panel
+                    const twinCount = gaps.filter(g => g === 2).length;
+                    const avgGap = gaps.reduce((a, b) => a + b, 0) / gaps.length;
+                    const maxGapFound = maxGap;
+                    
+                    ctx.fillStyle = '#1A1A2E';
+                    ctx.fillRect(10, 10, 350, 140);
+                    ctx.strokeStyle = '#F97316';
+                    ctx.lineWidth = 1;
+                    ctx.strokeRect(10, 10, 350, 140);
+                    
+                    ctx.fillStyle = '#F97316';
+                    ctx.font = '14px monospace';
+                    ctx.fillText('GAP ANALYSIS', 20, 35);
+                    ctx.fillStyle = '#E8E8F0';
+                    ctx.font = '11px monospace';
+                    ctx.fillText(`Total Gaps Analyzed: ${gaps.length}`, 20, 55);
+                    ctx.fillText(`Average Gap: ${avgGap.toFixed(2)}`, 20, 70);
+                    ctx.fillText(`Max Gap: ${maxGapFound}`, 20, 85);
+                    ctx.fillText(`Twin Prime Gaps (2): ${twinCount}`, 20, 100);
+                    ctx.fillText(`Twin Ratio: ${(twinCount / gaps.length * 100).toFixed(2)}%`, 20, 115);
+                    ctx.fillText(`Log Scale: ${this.logScale ? 'ON' : 'OFF'} | Twins: ${this.showTwins ? 'ON' : 'OFF'} | Conjectures: ${this.showConjectures ? 'ON' : 'OFF'}`, 20, 130);
+                }
+            },showPrimeExplorer() {
+                this.toggleMenu();
+                TGE.PrimeExplorer.show();
+            },
+            
+            hidePrimeExplorer() {
+                TGE.PrimeExplorer.hide();
+            },
+            
+            showWorldlineHistory() {
+                this.toggleMenu();
+                TGE.WorldlineHistory.show();
+            },
+            
+            hideWorldlineHistory() {
+                TGE.WorldlineHistory.hide();
+            },
+            
+            showGapAnalysis() {
+                this.toggleMenu();
+                TGE.GapAnalysis.show();
+            },
+            
+            hideGapAnalysis() {
+                TGE.GapAnalysis.hide();
+            },
+            
+            resetSimulation() {
+                this.electrons[0].x = this.width / 2;
+                this.electrons[0].y = this.height / 2;
+                this.electrons[0].vx = 0;
+                this.electrons[0].vy = 0;
+                this.worldline = [];
+                this.reflections = 0;
+                this.steps = 0;
+                this.gapsCrossed = 0;
+                this.primeGapIndex = 0;
+                this.electrons.forEach((e, i) => {
+                    if (i > 0) {
+                        e.x = this.width / 2 + (Math.random() - 0.5) * 20;
+                        e.y = this.height / 2 + (Math.random() - 0.5) * 20;
+                        e.vx = 0;
+                        e.vy = 0;
+                        e.history = [];
+                        e.reflections = 0;
+                    }
+                });
+            },
+            
+            updateMotion(ax, ay, az, gx, gy, gz) {
+                // Apply accelerometer as force on main electron
+                const force = 0.05;
+                this.electrons[0].vx += ax * force;
+                this.electrons[0].vy += ay * force;
+                
+                // Gyroscope adds angular momentum
+                const torque = 0.01;
+                this.electrons[0].vx += gz * torque;
+                this.electrons[0].vy -= gx * torque;
+                
+                // In fleet mode, apply to all with variation
+                if (this.fleetMode) {
+                    this.electrons.forEach((e, i) => {
+                        if (i === 0) return;
+                        const variation = 0.5 + (i / this.electrons.length) * 0.5;
+                        e.vx += ax * force * variation;
+                        e.vy += ay * force * variation;
+                    });
+                }
+            },
+            
+            onReady(data) { console.log('TGE E2 ready:', data); },
+            toggleFleet() { this.toggleFleet(); }
+        };
+        
+        window.TGE = TGE;
+    </script>
+</body>
+</html>
