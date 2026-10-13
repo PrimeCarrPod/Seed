@@ -1,4 +1,3 @@
-# DOC-13 Piece 05: Structural Framework Detail — RM-SS Edition
 **Prime Step:** 13
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 05 of 17
@@ -249,4 +248,4 @@ $$T_{total} = \sum_{z=1}^{12} T_{z,RM-SS} = 50+55+60+60+55+50+45+40+35+30+25+20 
 
 ---
 
-**End of Piece 05 — Prime Step 13 Complete**
+**End of Piece 05 — Prime Step 13 Complete**# DOC-13 Piece 06: Pleating & Drape Engineering — RM-SS Edition

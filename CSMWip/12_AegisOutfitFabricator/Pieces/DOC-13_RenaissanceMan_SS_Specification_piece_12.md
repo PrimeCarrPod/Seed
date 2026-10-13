@@ -1,4 +1,3 @@
-# DOC-13 Piece 12: Mission Profile Mapping — RM-SS Edition
 **Prime Step:** 41
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 12 of 17
@@ -98,4 +97,4 @@ RM-SS MP-01: $0.4(0.89) + 0.3(1.0) + 0.2(0.97) + 0.1(0.97) = \textbf{0.94}$
 
 ---
 
-**End of Piece 12 — Prime Step 41 Complete**
+**End of Piece 12 — Prime Step 41 Complete**# DOC-13 Piece 13: Maintenance Schedule — RM-SS Edition

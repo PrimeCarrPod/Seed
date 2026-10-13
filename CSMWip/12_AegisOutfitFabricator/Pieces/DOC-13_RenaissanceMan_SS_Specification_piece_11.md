@@ -1,4 +1,3 @@
-# DOC-13 Piece 11: Donning/Doffing Procedure — RM-SS Edition
 **Prime Step:** 37
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 11 of 17
@@ -122,4 +121,4 @@ $$T_{eyelet} = \frac{T_{zone}}{N_{eyelets,zone}} = \frac{60}{8} = 7.5 \text{ N/e
 
 ---
 
-**End of Piece 11 — Prime Step 37 Complete**
+**End of Piece 11 — Prime Step 37 Complete**# DOC-13 Piece 12: Mission Profile Mapping — RM-SS Edition

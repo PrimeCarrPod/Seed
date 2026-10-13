@@ -1,4 +1,3 @@
-# DOC-13 Piece 13: Maintenance Schedule — RM-SS Edition
 **Prime Step:** 43
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 13 of 17
@@ -100,4 +99,4 @@ $$\tau = 1800 \text{ s}, \quad \text{Soak 30 min monthly} \rightarrow E \approx 
 
 ---
 
-**End of Piece 13 — Prime Step 43 Complete**
+**End of Piece 13 — Prime Step 43 Complete**# DOC-13 Piece 14: Traceability Matrix — RM-SS Edition

@@ -169,4 +169,4 @@ Where $\beta_{Z, RM} = [0.8, 0.9, 1.0, 1.1, 1.2, 1.1, 1.0, 0.9, 0.8, 0.7, 0.6, 0
 
 ---
 
-**End of Piece 01 — Prime Step 3 Complete**
+**End of Piece 01 — Prime Step 3 Complete**# DOC-13 Piece 02: Edition Identification & Anthropometrics — RM-SS Edition

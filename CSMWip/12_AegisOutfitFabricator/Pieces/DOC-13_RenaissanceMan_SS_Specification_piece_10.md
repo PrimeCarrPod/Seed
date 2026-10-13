@@ -1,4 +1,3 @@
-# DOC-13 Piece 10: Weight Budget — RM-SS Edition
 **Prime Step:** 31
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 10 of 17
@@ -123,4 +122,4 @@ $$z_{CoG} = \frac{\sum m_i z_i}{\sum m_i} = \frac{0.03(0.01) + 3.48(0.02) + \dot
 
 ---
 
-**End of Piece 10 — Prime Step 31 Complete**
+**End of Piece 10 — Prime Step 31 Complete**# DOC-13 Piece 11: Donning/Doffing Procedure — RM-SS Edition

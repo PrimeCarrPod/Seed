@@ -1,4 +1,3 @@
-# DOC-13 Piece 14: Traceability Matrix — RM-SS Edition
 **Prime Step:** 47
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 14 of 17
@@ -134,4 +133,4 @@
 
 ---
 
-**End of Piece 14 — Prime Step 47 Complete**
+**End of Piece 14 — Prime Step 47 Complete**# DOC-13 Piece 15: Conformance & Quality Gates — RM-SS Edition

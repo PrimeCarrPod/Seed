@@ -1,4 +1,3 @@
-# DOC-13 Piece 07: EMI/Shielding Tuning — RM-SS Edition
 **Prime Step:** 19
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 07 of 17
@@ -220,4 +219,4 @@ $$\text{RM-SS: } 32 + 32 + 28 - 3.5 = \textbf{88.5 dB (peak at resonance)}$$
 
 ---
 
-**End of Piece 07 — Prime Step 19 Complete**
+**End of Piece 07 — Prime Step 19 Complete**# DOC-13 Piece 08: Thermal Profile — RM-SS Edition

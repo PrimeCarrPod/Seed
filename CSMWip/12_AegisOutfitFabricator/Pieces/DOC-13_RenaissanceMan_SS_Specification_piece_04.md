@@ -1,4 +1,3 @@
-# DOC-13 Piece 04: Geometric Pattern Specifications — RM-SS Edition
 **Prime Step:** 11
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 04 of 17
@@ -235,4 +234,4 @@ RM-SS solution: $a_3 = -0.00012, a_2 = 0.0034, a_1 = -0.021, a_0 = 0$
 
 ---
 
-**End of Piece 04 — Prime Step 11 Complete**
+**End of Piece 04 — Prime Step 11 Complete**# DOC-13 Piece 05: Structural Framework Detail — RM-SS Edition
