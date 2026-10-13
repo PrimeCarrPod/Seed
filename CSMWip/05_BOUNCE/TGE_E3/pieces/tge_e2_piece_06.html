@@ -1,0 +1,64 @@
+drawPrimeGapMarkers() {
+                for (let i = 0; i <= this.primeGapIndex && i < this.primeGaps.length; i++) {
+                    const gap = this.primeGaps[i];
+                    const radius = (gap / 100) * Math.min(this.eggshell.rx, this.eggshell.ry);
+                    this.ctx.beginPath();
+                    this.ctx.ellipse(this.eggshell.cx, this.eggshell.cy, radius, radius * 0.75, 0, 0, Math.PI * 2);
+                    this.ctx.strokeStyle = i === this.primeGapIndex ? '#F97316' : '#F9731644';
+                    this.ctx.lineWidth = i === this.primeGapIndex ? 2 : 1;
+                    this.ctx.globalAlpha = i === this.primeGapIndex ? 0.8 : 0.3;
+                    this.ctx.stroke();
+                    this.ctx.globalAlpha = 1;
+                }
+            },
+            
+            drawElectrons() {
+                this.electrons.forEach((e, i) => {
+                    const isMain = (i === 0);
+                    const radius = isMain ? e.radius : e.radius * 0.7;
+                    const hue = isMain ? 180 : (i * 137) % 360;
+                    
+                    // Glow
+                    const glow = this.ctx.createRadialGradient(
+                        e.x, e.y, 0,
+                        e.x, e.y, radius * 4
+                    );
+                    glow.addColorStop(0, `hsla(${hue}, 100%, 50%, 1)`);
+                    glow.addColorStop(1, `hsla(${hue}, 100%, 50%, 0)`);
+                    this.ctx.fillStyle = glow;
+                    this.ctx.beginPath();
+                    this.ctx.arc(e.x, e.y, radius * 3, 0, Math.PI * 2);
+                    this.ctx.fill();
+                    
+                    // Core
+                    this.ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+                    this.ctx.beginPath();
+                    this.ctx.arc(e.x, e.y, radius, 0, Math.PI * 2);
+                    this.ctx.fill();
+                    
+                    // Theory mode: show velocity vector
+                    if (this.theoryMode && isMain) {
+                        this.ctx.strokeStyle = '#FF6600';
+                        this.ctx.lineWidth = 2;
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(e.x, e.y);
+                        this.ctx.lineTo(e.x + e.vx * 10, e.y + e.vy * 10);
+                        this.ctx.stroke();
+                        
+                        // Arrowhead
+                        const angle = Math.atan2(e.vy, e.vx);
+                        this.ctx.beginPath();
+                        this.ctx.moveTo(e.x + e.vx * 10, e.y + e.vy * 10);
+                        this.ctx.lineTo(
+                            e.x + e.vx * 10 - 8 * Math.cos(angle - Math.PI/6),
+                            e.y + e.vy * 10 - 8 * Math.sin(angle - Math.PI/6)
+                        );
+                        this.ctx.moveTo(e.x + e.vx * 10, e.y + e.vy * 10);
+                        this.ctx.lineTo(
+                            e.x + e.vx * 10 - 8 * Math.cos(angle + Math.PI/6),
+                            e.y + e.vy * 10 - 8 * Math.sin(angle + Math.PI/6)
+                        );
+                        this.ctx.stroke();
+                    }
+                });
+            },
