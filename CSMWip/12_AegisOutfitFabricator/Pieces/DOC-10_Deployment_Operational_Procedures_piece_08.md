@@ -1,30 +1,25 @@
-- Biological: Anthrax, plague, viral
-- Radiological: Alpha, beta, gamma, neutron
-- Duration: 4-8 hours
-
-Garment Configuration:
-- Full EMI shielding (MXene warp+weft+FSS)
-- Ceramic tiles: Chemical resistant glazing
-- Double-gasket joints: ePTFE + ZrO₂-silicone
-- PVDF-TrFE: Chem/bio sensor integration
-- Positive pressure option: MR bladder inflation
-
-Operational Limits:
-- Permeation breakthrough: >8 hrs (ASTM F739)
-- Decontamination: 0.5% hypochlorite, rinse, air dry
-- Filter change: Every 4 hrs (CBRNA PAPR)
+- PVDF-TrFE: >5% nodes non-functional
+- CoAl₂O₄ coating: Schumann SE <70 dB
+- YInMn Blue: NIR reflectance <80%
 ```
 
-### 4.3 Profile C: Electrical Utility Arc Flash (RM-SS/RW-SS)
+## 4. Mission Profiles
+
+### 4.1 Profile A: Structural Firefighting (RM-TS/RW-TS)
 
 ```
 Threat Environment:
-- Arc flash: 8 kA, 500ms, 480V (NFPA 70E)
-- EMI/RFI: Substation switching, harmonics
-- GIC: Carrington-class geomagnetic storm
-- Duration: 2-4 hours
+- Thermal: 1100°C flash fire, 300s duration
+- Structural collapse: Falling debris, impact
+- Smoke/toxic gas: CO, HCN, particulate
+- Duration: 30-60 min operational
 
 Garment Configuration:
-- Maximum EMI shielding (45-50 dB system)
-- CoAl₂O₄ Schumann absorption (Layer 12)
-- BFRP dielectric chassis (no conductive path)
+- Full ceramic tile coverage (42 tiles RM-TS)
+- Maximum aerogel batting (200 g/m²)
+- Double STF layers (8+9)
+- MR fluid active (shoulders, chest, back)
+- PVDF-TrFE monitoring: Core temp, heart rate
+
+Operational Limits:
+- Max continuous exposure: 300s @ 1100°C

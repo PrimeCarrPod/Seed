@@ -1,20 +1,25 @@
-R_batting = t_compressed / k_eff = 0.003 / 0.015 = 0.2 m²K/W
-R_air_gap = 0.005 / 0.026 = 0.19 m²K/W
-Total R = 0.39 m²K/W  →  Exceeds 0.33 m²K/W target
+|---------------|------------|-----|-----------|
+| Without STF | 8.2 kN | 38mm | Baseline |
+| With STF (Layer 8) | 2.9 kN | 14mm | 65% force, 63% BFS |
+| With STF (Layers 8+9) | 2.5 kN | 12mm | 69% force, 68% BFS |
+
+**Shear Rate Transition:**
+```
+Normal movement: γ̇ < 5 s⁻¹ → η ≈ η₀ (flexible, comfortable)
+Impact event: γ̇ > 500 s⁻¹ → η → η_max (rigid, protective)
+Transition: γ̇_c ≈ 10-50 s⁻¹
+Recovery: <100ms to off-state
 ```
 
-## 6. Impact Protection System (Layers 8 & 9)
+## 7. Structural Framework (Layer 10)
 
-### 6.1 STF Impregnation (SYNTH-02 §2.4, MAT-03 §4)
+### 7.1 Baleen/Steel Hybrid Framework (SYNTH-02 §2.6, MAT-02)
 
-**STF Formulation:**
+**Baleen Stays (Historical Primary):**
 ```
-Silica nanoparticles: 20-50 nm (Stöber process)
-Concentration: 55 wt% in PEG-400
-Shear thickening onset: γ̇_c ≈ 10-50 s⁻¹
-Viscosity jump: η_max / η₀ ≈ 100-1000×
-Off-state viscosity: η₀ ≈ 0.8 Pa·s
-On-state viscosity: η_max ≈ 85 Pa·s
-```
-
-**Vacuum Impregnation Protocol (MAT-03 §4.2):**
+Material: Keratinous baleen (Balaena mysticetus)
+Properties: E = 2-6 GPa (hydrated), thermoplastic 60-80°C
+Dimensions: 6-8mm wide × 1.5-2.5mm thick
+Count: 20-30 stays per corset (historical standard)
+Euler buckling: P_cr = π²EI/L² ≈ 8.2 N per stay (L=150mm)
+Total buckling resistance: 160-250 N (20-30 stays)

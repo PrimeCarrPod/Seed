@@ -1,20 +1,25 @@
-  Dip coating line:
-    - Bath: MXene 5 mg/mL in water/ethanol (50/50)
-    - Speed: 1 m/s, 4 passes
-    - Dry: 80°C, 2 min between passes
-    - Post-cure: 150°C, 10 min
-  Quality: Coating thickness 2μm ±0.5μm
-  Adhesion: >90% retention after Martindale 40,000 cycles
 ```
 
-### 3.4 STF Impregnation (SYNTH-02 §4.3, MAT-03 §4)
+## 4. Assembly Process Flow
+
+### 4.1 Panel Assembly & Joint Sealing (CSMFAB078 §6 Step 8)
 
 ```
-STF Bath: SiO₂ (20-50 nm) 55 wt% in PEG-400
-  Viscosity: 50-100 mPa·s at 40°C
-  Degassing: 10 mbar, 10 min
+Double-Gasket Joint System:
+  Inner gasket: ePTFE (expanded PTFE), 1mm thick
+  Outer gasket: ZrO₂-silicone composite, 2mm thick
+  Bridge: MXene tape (EMI continuity across joint)
 
-Impregnation Cycle:
-  1. Fabric load: Silk/linen 150-250 g/m²
-  2. Vacuum: 10-50 mbar, 30-60 min at 50°C
-  3. Pressure release: 1 mbar/s (capillary penetration)
+Joint SE Penalty: ≤12 dB (target <10 dB)
+Verification: MIL-STD-285 (modified for fabric joints)
+
+Assembly Sequence:
+1. Ceramic tile mounting: Magnetic alignment (NdFeB N52)
+2. Brocade layer placement: MXene-coated threads
+3. Fractal FSS embroidery: CNC TFP (Tailored Fiber Placement)
+4. Aerogel batting quilting: Diamond/trapunto, 18-22 SPI
+5. STF layer integration: Quilting between fabric layers
+6. Framework insertion: Baleen/steel channels
+7. Liner attachment: PVDF-TrFE + CoAl₂O₄ coated fabric
+8. Lacing system: Dyneema SK99 through Ti₃AlC₂ cleats
+```

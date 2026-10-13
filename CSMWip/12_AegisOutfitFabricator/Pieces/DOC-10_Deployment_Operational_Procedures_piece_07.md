@@ -1,30 +1,25 @@
-## 4. Mission Profiles
-
-### 4.1 Profile A: Structural Firefighting (RM-TS/RW-TS)
-
-```
-Threat Environment:
-- Thermal: 1100°C flash fire, 300s duration
-- Structural collapse: Falling debris, impact
-- Smoke/toxic gas: CO, HCN, particulate
-- Duration: 30-60 min operational
-
-Garment Configuration:
-- Full ceramic tile coverage (42 tiles RM-TS)
-- Maximum aerogel batting (200 g/m²)
-- Double STF layers (8+9)
-- MR fluid active (shoulders, chest, back)
-- PVDF-TrFE monitoring: Core temp, heart rate
-
-Operational Limits:
-- Max continuous exposure: 300s @ 1100°C
-- Duty cycle: 20 min work / 40 min rest
-- Core temp limit: 39°C (monitored via PVDF-TrFE)
-- Hydration: 250 mL/20 min work cycle
+- Magnetic tile edges: Anti-corrosion wipe
 ```
 
-### 4.2 Profile B: HazMat/CBRNE Response (RM-TG/RW-TG)
+### 3.3 Monthly Maintenance (Full Overhaul)
 
 ```
-Threat Environment:
-- Chemical: Sarin, VX, mustard, chlorine
+Complete Disassembly & Inspection:
+1. All 12 layers separated
+2. Non-destructive testing:
+   - Ceramic tiles: Ultrasonic thickness, µCT (10% sample)
+   - BXRP panels: Ultrasonic C-scan (100%)
+   - Metallic threads: SEM cross-section (coating thickness)
+   - Aerogel: Thermal conductivity (guarded hot plate)
+   - STF: Rheology sweep (0.1-1000 s⁻¹)
+   - Baleen: Flexural modulus, thermoplastic transition
+   - Steel boning: Fatigue test (10k cycles)
+
+Component Replacement Criteria:
+- Ceramic tile: Any crack >1mm, density <96%
+- MXene thread: Coating thickness <1.5μm, SE <10 dB
+- Aerogel batting: Compression springback <85%
+- STF layer: η_max/η₀ <500×
+- Baleen stay: Permanent set >5%, thermoplastic transition failed
+- Steel boning: Yield strength <1000 MPa
+- Dyneema lacing: Tensile <90% rated, fraying >2mm

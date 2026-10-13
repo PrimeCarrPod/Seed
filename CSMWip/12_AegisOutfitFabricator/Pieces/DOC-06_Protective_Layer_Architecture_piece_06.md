@@ -1,20 +1,25 @@
-Weft threads (MXene-coated): SE_weft ≈ 15 dB
-Double layer (warp + weft): SE_total ≈ 30 dB
-Fractal FSS embroidery (Layer 4): +15-20 dB at target frequencies
-System SE: 45-50 dB (Renaissance equivalent of AIMES 148-165 dB)
+| 10 GHz | Radar/DEW | 88 | MXene + ceramic conduction |
+
+## 5. Thermal Insulation System (Layer 5)
+
+### 5.1 Aerogel Micro-Encapsulation (SYNTH-02 §2.3, MAT-03 §3)
+
+**Encapsulation Parameters:**
+```
+Core: TEOS + PMDA-ODA polyimide aerogel (λ = 0.010 W/m·K)
+Shell: Melamine formaldehyde (MF), 5-20μm thickness
+Size distribution: D₅₀ = 50-100μm, D₉₀ < 200μm, span < 1.5
+Encapsulation efficiency: >90% aerogel retention
+Batting weight: 100-200 g/m² (compressed to 5mm)
 ```
 
-### 4.2 Fractal FSS Embroidery (Layer 4)
-
-**Sierpiński G3 Geometry (CSMFAB078 §4 Layer 4):**
+**Quilting Integration (Research Doc 1 §6.1):**
 ```
-Unit cell: Sierpiński carpet iteration 3
-Bandstop frequencies: 1.8 MHz, 150 MHz, 2.4 GHz
-Embroidery thread: MXene-coated metallic thread (same as L3/L6)
-Stitch pattern: CNC embroidery (TFP - Tailored Fiber Placement)
-Additional SE: 15-20 dB at bandstop frequencies
+Pattern: Diamond/trapunto (18th C court dress)
+Stitch density: 18-22 SPI
+Thread: Beeswax-coated linen (thermal sink + lubrication)
+Cell size: 50mm × 50mm
+Compressed thickness: 5mm (from 8mm loft)
 ```
 
-### 4.3 Shielding Effectiveness Summary
-
-| Frequency | Threat | SE (dB) | Mechanism |
+### 5.2 Thermal Resistance

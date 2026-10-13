@@ -1,30 +1,25 @@
-- Ballistic range (NIJ IV)
-- EMI chamber (MIL-STD-461G)
-- Blast simulator (MIL-STD-810H)
-- GIC simulator (IEC 61000-4-9)
 
-Certification: Written exam (90% pass) + practical (100% pass)
-Recertification: Annual (16 hr refresher)
-```
+### 6.1 Service Life
 
-### 7.2 Maintenance Technician Training (80 Hours)
+| Component | Service Life | Replacement Trigger |
+|-----------|--------------|---------------------|
+| Ceramic tiles | 5 years / 50 impacts | Crack >1mm, density <96% |
+| MXene threads | 3 years / 200 washes | Coating <1.5μm, SE <10 dB |
+| Aerogel batting | 5 years | Compression springback <85% |
+| STF layers | 3 years / 100 impacts | η_max/η₀ <500× |
+| Baleen stays | 3 years | Permanent set >5% |
+| Steel boning | 5 years / 10k cycles | Yield <1000 MPa |
+| Dyneema lacing | 5 years | Tensile <90% rated |
+| PVDF-TrFE mesh | 5 years | >5% nodes dead |
+| CoAl₂O₄ coating | 5 years | Schumann SE <70 dB |
+| YInMn Blue coating | 5 years | NIR reflectance <80% |
+| Coatings (ZrO₂, QD) | 5 years | Delamination, UV degradation |
 
-```
-Additional to operator training:
-- Advanced disassembly/reassembly (16 hr)
-- Component testing & NDT (16 hr)
-- Repair procedures: Tiles, threads, framework, sensors (24 hr)
-- Calibration procedures (8 hr)
-- QA documentation, NCR process (8 hr)
-- Phoenix Protocol recycling (8 hr)
-
-Certification: Practical exam + written (90% pass)
-Recertification: Biennial (24 hr refresher)
-```
-
-## 8. Documentation & Records
-
-### 8.1 Garment Health Record (Per Serial Number)
+### 6.2 Phoenix Protocol (End-of-Life Recycling)
 
 ```
-Digital Record Contains:
+Material Recovery (CSMFAB078 §8):
+- ZrB₂-SiC tiles: H₂SO₄ leach → ZrO₂ recovery (85-92%) → re-boronization
+- YInMn Blue: Ionic liquid [P8888][Cl] extraction → In recovery 99.4% @ $18-28/kg
+- BFRP/Elium®: 350°C thermal depolymerization → MMA monomer (100%) + basalt fiber (95%)
+- MXene: Re-etched from recovered MAX Phase → closed loop

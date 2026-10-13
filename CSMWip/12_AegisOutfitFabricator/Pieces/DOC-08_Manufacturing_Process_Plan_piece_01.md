@@ -18,3 +18,8 @@ Process:
   2. Melting: 1450°C furnace (induction heated, platinum-rhodium bushing)
   3. Fiberizing: 9-13μm diameter filaments, 200-400 holes/bushing
   4. Sizing: Silane-based sizing (A-1100 equivalent) for Elium® compatibility
+  5. Winding: 4800 tex roving packages
+Output: 500 ton/yr @ $2.10/kg (60% savings vs. commercial $5.20/kg)
+Quality: Tensile > 3000 MPa, modulus > 85 GPa
+```
+

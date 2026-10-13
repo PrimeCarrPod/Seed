@@ -23,8 +23,3 @@ Visual Inspection Checklist:
 □ Sensors: PVDF-TrFE self-test pass (diagnostic mode)
 □ Coating: YInMn Blue NIR reflectance spot check (>85%)
 □ Mass: Within edition tolerance ±5%
-```
-
-### 2.2 Donning Sequence (RenaissanceMan Editions)
-
-```

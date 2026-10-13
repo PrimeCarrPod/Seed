@@ -1,30 +1,25 @@
-- Weight: ≤26 kg (RM-SG target)
 ```
 
-### 4.5 Profile E: Carrington Event Response (All Editions)
+### 4.3 Profile C: Electrical Utility Arc Flash (RM-SS/RW-SS)
 
 ```
 Threat Environment:
-- GIC: 10-50 A/m² induced currents
-- EMI: 1-10 GHz, 1-10 kV/m
-- Duration: 24-72 hours (grid down)
-- Secondary: Civil unrest, fire, structural
+- Arc flash: 8 kA, 500ms, 480V (NFPA 70E)
+- EMI/RFI: Substation switching, harmonics
+- GIC: Carrington-class geomagnetic storm
+- Duration: 2-4 hours
 
 Garment Configuration:
-- All editions: Maximum EMI/GIC protection
-- BFRP dielectric citadel (no conductive path)
-- CoAl₂O₄ Schumann absorption
-- PVDF-TrFE: Continuous GIC monitoring
-- Battery: 50Wh LiFePO₄ (72 hr standby)
+- Maximum EMI shielding (45-50 dB system)
+- CoAl₂O₄ Schumann absorption (Layer 12)
+- BFRP dielectric chassis (no conductive path)
+- YInMn Blue: Arc flash reflection
+- PVDF-TrFE: GIC coupling monitoring
 
 Operational Limits:
-- GIC coupling: Zero measured interior
-- EMI SE: 148-165 dB system
-- Communications: Optical fiber only
-- Power: Solar recharge (YInMn QD fluorescence diagnostic)
+- Arc flash ATPV: ≥50 cal/cm²
+- GIC coupling: <1 mV interior
+- EMI SE: >45 dB @ 1GHz
+- Duty cycle: Continuous (low metabolic)
 ```
-
-## 5. Emergency Procedures
-
-### 5.1 Thermal Overload
 

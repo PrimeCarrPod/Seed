@@ -1,30 +1,25 @@
-- YInMn Blue: Arc flash reflection
-- PVDF-TrFE: GIC coupling monitoring
-
-Operational Limits:
-- Arc flash ATPV: ≥50 cal/cm²
-- GIC coupling: <1 mV interior
-- EMI SE: >45 dB @ 1GHz
-- Duty cycle: Continuous (low metabolic)
+- Duty cycle: 20 min work / 40 min rest
+- Core temp limit: 39°C (monitored via PVDF-TrFE)
+- Hydration: 250 mL/20 min work cycle
 ```
 
-### 4.4 Profile D: Military Tactical (RM-SG/RW-SG)
+### 4.2 Profile B: HazMat/CBRNE Response (RM-TG/RW-TG)
 
 ```
 Threat Environment:
-- Ballistic: NIJ IV (.30-06 APM2)
-- Blast: 500g C-4 @ 5m
-- Directed energy: HPM, laser
-- Duration: 6-12 hours
+- Chemical: Sarin, VX, mustard, chlorine
+- Biological: Anthrax, plague, viral
+- Radiological: Alpha, beta, gamma, neutron
+- Duration: 4-8 hours
 
 Garment Configuration:
-- Maximum ceramic tiles (56 RM-SG)
-- Auxetic metamaterial cladding (embroidered FSS)
-- MR fluid all 12 zones
-- STF double layer (8+9)
-- PVDF-TrFE: Blast pressure, bio-acoustic
+- Full EMI shielding (MXene warp+weft+FSS)
+- Ceramic tiles: Chemical resistant glazing
+- Double-gasket joints: ePTFE + ZrO₂-silicone
+- PVDF-TrFE: Chem/bio sensor integration
+- Positive pressure option: MR bladder inflation
 
 Operational Limits:
-- Ballistic: 6 shots/panel, 0mm penetration
-- Blast: Injury criteria met @ 5m
-- Mobility: Full combat ROM
+- Permeation breakthrough: >8 hrs (ASTM F739)
+- Decontamination: 0.5% hypochlorite, rinse, air dry
+- Filter change: Every 4 hrs (CBRNA PAPR)

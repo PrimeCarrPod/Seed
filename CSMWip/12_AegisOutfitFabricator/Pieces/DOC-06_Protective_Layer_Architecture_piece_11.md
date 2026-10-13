@@ -1,20 +1,25 @@
-**Shear Rate Transition:**
+| 3 Waist | Waistband/cartridge pleats | 30-60 N | Dyneema SK99 + Ti₃AlC₂ cleat |
+| 4 Hips | Farthingale tapes | 20-40 N | Dyneema SK99 + Ti₃AlC₂ cleat |
+| 5 Thighs | Pannier hoops | 15-25 N | Dyneema SK99 + Ti₃AlC₂ cleat |
+| 6 Calves | Skirt hem weight | 10-20 N | Dyneema SK99 + Ti₃AlC₂ cleat |
+| 7-12 | Additional corset channels | 10-30 N | Dyneema SK99 + Ti₃AlC₂ cleat |
+
+**Morphology Transition:** <90 seconds by single wearer (CSMFAB078 §3.2)
+
+## 8. Bio-Acoustic & Schumann Systems (Layers 11 & 12)
+
+### 8.1 PVDF-TrFE Piezoelectric Liner (Layer 11)
+
+**Sensor Specification (CSMFAB078 §5.1, §7):**
 ```
-Normal movement: γ̇ < 5 s⁻¹ → η ≈ η₀ (flexible, comfortable)
-Impact event: γ̇ > 500 s⁻¹ → η → η_max (rigid, protective)
-Transition: γ̇_c ≈ 10-50 s⁻¹
-Recovery: <100ms to off-state
+Material: PVDF-TrFE copolymer (d₃₃ = -45 pC/N)
+Format: 50μm mesh integrated into liner fabric
+Sensing nodes: 240 distributed across garment
+Monitoring: Real-time bio-acoustic coupling
+Resonances monitored:
+- Thorax: 4-6 Hz
+- Head-neck: 8-12 Hz
+- Abdomen: 3-5 Hz
+- Spinal column: 10-15 Hz
 ```
 
-## 7. Structural Framework (Layer 10)
-
-### 7.1 Baleen/Steel Hybrid Framework (SYNTH-02 §2.6, MAT-02)
-
-**Baleen Stays (Historical Primary):**
-```
-Material: Keratinous baleen (Balaena mysticetus)
-Properties: E = 2-6 GPa (hydrated), thermoplastic 60-80°C
-Dimensions: 6-8mm wide × 1.5-2.5mm thick
-Count: 20-30 stays per corset (historical standard)
-Euler buckling: P_cr = π²EI/L² ≈ 8.2 N per stay (L=150mm)
-Total buckling resistance: 160-250 N (20-30 stays)

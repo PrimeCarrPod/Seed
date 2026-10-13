@@ -1,20 +1,25 @@
-**Tension Zone Mapping:**
-| Zone | Historical Lacing Point | Tension Range | Actuator |
-|------|------------------------|---------------|----------|
-| 1 Shoulders | Shoulder seam | 15-25 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-| 2 Chest | Bodice front lacing | 20-40 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-| 3 Waist | Waistband/cartridge pleats | 30-60 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-| 4 Hips | Farthingale tapes | 20-40 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-| 5 Thighs | Pannier hoops | 15-25 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-| 6 Calves | Skirt hem weight | 10-20 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-| 7-12 | Additional corset channels | 10-30 N | Dyneema SK99 + Ti₃AlC₂ cleat |
-
-**Morphology Transition:** <90 seconds by single wearer (CSMFAB078 §3.2)
-
-## 8. Bio-Acoustic & Schumann Systems (Layers 11 & 12)
-
-### 8.1 PVDF-TrFE Piezoelectric Liner (Layer 11)
-
-**Sensor Specification (CSMFAB078 §5.1, §7):**
 ```
-Material: PVDF-TrFE copolymer (d₃₃ = -45 pC/N)
+Test: Vibrometer measurement per CSMFAB011 protocol
+Pass criteria: >78 dB @ 7.83 Hz and harmonics (14.1, 20.3, 26.4, 32.5 Hz)
+```
+
+## 9. Edition-Specific Architecture
+
+### 9.1 RenaissanceMan Editions (RM)
+
+| Parameter | RM-TS | RM-TG | RM-SS | RM-SG |
+|-----------|-------|-------|-------|-------|
+| Height | 185-200cm | 185-200cm | 155-170cm | 155-170cm |
+| Chest | 86-96cm | 112-132cm | 76-86cm | 102-122cm |
+| Tile size | 25mm | 25mm | 25mm | 25mm |
+| Tile count | 42 | 56 | 36 | 48 |
+| Ceramic mass | 8-10 kg | 10-13 kg | 7-9 kg | 9-11 kg |
+| Metallic thread density | 1.0× | 1.3× | 0.85× | 1.15× |
+| Framework | Baleen + steel | Steel dominant | Baleen + steel | Steel dominant |
+
+### 9.2 RenaissanceWoMan Editions (RW)
+
+| Parameter | RW-TS | RW-TG | RW-SS | RW-SG |
+|-----------|-------|-------|-------|-------|
+| Height | 185-200cm | 185-200cm | 155-170cm | 155-170cm |
+| Bust | 86-96cm | 112-132cm | 76-86cm | 102-122cm |

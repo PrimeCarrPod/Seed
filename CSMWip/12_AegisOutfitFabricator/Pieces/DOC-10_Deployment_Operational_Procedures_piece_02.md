@@ -1,3 +1,8 @@
+```
+
+### 2.2 Donning Sequence (RenaissanceMan Editions)
+
+```
 Phase 1: Base Layer (2 min)
 1. Don STF-impregnated silk/linen base garment (Layer 9)
 2. Verify STF layer mobility (arm raise, knee bend, torso twist)
@@ -18,13 +23,3 @@ Phase 3: Ballistic/Thermal Shell (4 min)
 
 Phase 4: Framework & Lacing (3 min)
 13. Insert baleen/steel framework (Layer 10) into channels
-14. Deploy farthingale/pannier hoops (RW editions) or structural hoops (RM)
-15. Engage LES 12-zone lacing system:
-    - Zone 1 (Shoulders): 15-25 N
-    - Zone 2 (Chest): 20-40 N
-    - Zone 3 (Waist): 30-60 N
-    - Zone 4 (Hips): 20-40 N
-    - Zone 5 (Thighs): 15-25 N
-    - Zone 6 (Calves): 10-20 N
-    - Zones 7-12: Additional corset channels 10-30 N
-16. Morphology calibration: <90 seconds to target tensions

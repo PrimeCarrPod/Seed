@@ -1,20 +1,25 @@
 ```
-1. Fabric prep: Silk/linen plain weave 150-250 g/m², pre-wash, dry 105°C/1hr
-2. STF bath: 55 wt% SiO₂/PEG-400, degassed 10 mbar/10 min
-3. Impregnation: Vacuum 10-50 mbar, 40-60°C, 30-60 min
-4. Pressure release: Slow (1 mbar/s) for capillary penetration
-5. Centrifuge: 500 rpm, 2 min (remove excess)
-6. Cure: 80°C, 2 hr
-Add-on weight: 15-25%
-Flexibility retention: >70% (bending rigidity <2×)
+
+**Spiral Steel Boning (Modern Supplement):**
+```
+Material: Spring steel 17-7 PH
+Wire diameter: 1.5-2.5mm, spiral pitch: 3-5mm
+Properties: E ≈ 200 GPa, σ_y ≈ 1200-1500 MPa
+2D bending flexibility, longitudinal rigidity
+Fatigue life: >10⁶ cycles at 50% yield stress
 ```
 
-### 6.2 Impact Performance (CSMFAB078-B §6.2)
+**Hybrid Configuration:**
+```
+Front panel: Baleen stays (thermoplastic body conformity)
+Side/back panels: Spiral steel boning (structural rigidity)
+Hoop channels: Steel hoops for crinoline/farthingale (Layer 10)
+```
 
-**50J Impact Test (5kg drop mass, 1m):**
-| Configuration | Peak Force | BFS | Reduction |
-|---------------|------------|-----|-----------|
-| Without STF | 8.2 kN | 38mm | Baseline |
-| With STF (Layer 8) | 2.9 kN | 14mm | 65% force, 63% BFS |
-| With STF (Layers 8+9) | 2.5 kN | 12mm | 69% force, 68% BFS |
+### 7.2 LES 12-Zone Tension System (CSMFAB078 §3.2)
 
+**Tension Zone Mapping:**
+| Zone | Historical Lacing Point | Tension Range | Actuator |
+|------|------------------------|---------------|----------|
+| 1 Shoulders | Shoulder seam | 15-25 N | Dyneema SK99 + Ti₃AlC₂ cleat |
+| 2 Chest | Bodice front lacing | 20-40 N | Dyneema SK99 + Ti₃AlC₂ cleat |

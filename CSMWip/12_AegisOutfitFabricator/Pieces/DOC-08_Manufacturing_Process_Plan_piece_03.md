@@ -1,13 +1,3 @@
-
-```
-MAX Phase: Ti₃AlC₂ (in-house synthesized)
-  - Ti, Al, C powders: 3:1:2 molar ratio
-  - Hot pressing: 1400°C, 30 MPa, 1 hr, argon
-  - Crushing: Ball mill to <100μm
-
-Etching: LiF/HCl (35°C, 24 hr)
-  - LiF: 3M, HCl: 6M, solid/liquid ratio 1:10
-  - Al removal: >98% (verified by XRD)
   - Washing: Centrifuge + DI water until pH >6
 
 Delamination:
@@ -18,3 +8,18 @@ Delamination:
 
 Output: Ti₃C₂Tₓ MXene dispersion 5-10 mg/mL
 Cost: $65/kg (97% savings vs. $2000/kg commercial)
+```
+
+### 2.4 Aerogel Hybrid Production (CSMFAB078 §6 Step 7)
+
+```
+Precursors:
+  - TEOS (tetraethyl orthosilicate): Silica source
+  - PMDA-ODA (pyromellitic dianhydride-oxydianiline): Polyimide
+  - Molar ratio: Si:N = 3:1 (hybrid network)
+  - Catalyst: NH₄OH (pH 10), H₂O/TEOS = 4:1
+
+Gelation: 25°C, 24 hr → aging 50°C, 24 hr
+
+Ambient Pressure Drying (TMCS Exchange):
+  - Surface modification: Trimethylchlorosilane (TMCS) in hexane

@@ -1,8 +1,3 @@
-| L6 | MXene-coated metallic thread brocade (weft) | MXene Ti₃C₂Tₓ film secondary (45μm) | Redundant EMI barrier |
-| L7 | Hidden ceramic-gilded elements at critical zones | ZrB₂-SiC inner lamina (4mm) | Structural backup |
-| L8 | STF-impregnated silk/linen (1mm) | MR fluid bladder (3mm, 12 zones) | Impact stiffening |
-| L9 | STF-impregnated base layer (1mm) | STF UHMWPE base (2mm) | Trauma mitigation |
-| L10 | Baleen/steel hybrid framework | BFRP/Elium® chassis | Load-bearing structure |
 | L11 | PVDF-TrFE piezoelectric liner | PVDF-TrFE sensor mesh (50μm) | Bio-acoustic monitoring |
 | L12 | CoAl₂O₄ spinel-treated liner fabric | CoAl₂O₄ spinel coating (150μm) | Schumann resonance absorption |
 
@@ -18,3 +13,13 @@
 - L11-L12: Liner fabric with piezoelectric threads and spinel coating
 
 ## 3. Ceramic Tile System (Layers 2 & 7)
+
+### 3.1 Tile Specification
+
+**Miniaturized ZrB₂-SiC Tiles (SYNTH-02 §2.1, MAT-03 §1):**
+```
+Composition: ZrB₂ (70%) + SiC (30%) + PVB (6%) + DBP (3%)
+Dimensions: 25mm × 25mm × 4mm (LE-TS/SS) or 50mm × 50mm × 4mm (LE-TG/SG)
+Magnetic edges: NdFeB N52, 8×3mm embedded in glaze
+Density: 97-98% theoretical (flash sintered)
+Flexural strength: 650-750 MPa (Hall-Petch strengthening)

@@ -18,3 +18,8 @@ This document specifies the complete protective layer architecture for the Aegis
 | L3 | MXene-coated metallic thread brocade (warp) | MXene Ti₃C₂Tₓ film (45μm) | EMI/GIC shielding |
 | L4 | Embroidered fractal FSS patterns (metallic thread) | Fractal FSS substrate (0.5mm) | Bandstop filtering |
 | L5 | Micro-encapsulated aerogel quilting batting (5mm) | Polyimide-silica aerogel (25mm) | Thermal insulation |
+| L6 | MXene-coated metallic thread brocade (weft) | MXene Ti₃C₂Tₓ film secondary (45μm) | Redundant EMI barrier |
+| L7 | Hidden ceramic-gilded elements at critical zones | ZrB₂-SiC inner lamina (4mm) | Structural backup |
+| L8 | STF-impregnated silk/linen (1mm) | MR fluid bladder (3mm, 12 zones) | Impact stiffening |
+| L9 | STF-impregnated base layer (1mm) | STF UHMWPE base (2mm) | Trauma mitigation |
+| L10 | Baleen/steel hybrid framework | BFRP/Elium® chassis | Load-bearing structure |

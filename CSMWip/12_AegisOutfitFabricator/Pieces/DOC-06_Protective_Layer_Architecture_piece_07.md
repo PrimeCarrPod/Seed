@@ -1,20 +1,25 @@
-|-----------|--------|---------|-----------|
-| 7.83 Hz | Schumann/GIC | 45 | CoAl₂O₄ spinel + BFRP dielectric |
-| 1.8 MHz | AM radio/CME | 65 | Fractal FSS bandstop |
-| 150 MHz | VHF/comms | 75 | Fractal FSS + MXene absorption |
-| 2.4 GHz | WiFi/microwave | 92 | MXene absorption-dominant (87%) |
-| 10 GHz | Radar/DEW | 88 | MXene + ceramic conduction |
 
-## 5. Thermal Insulation System (Layer 5)
-
-### 5.1 Aerogel Micro-Encapsulation (SYNTH-02 §2.3, MAT-03 §3)
-
-**Encapsulation Parameters:**
+**Effective Thermal Conductivity (Maxwell-Eucken):**
 ```
-Core: TEOS + PMDA-ODA polyimide aerogel (λ = 0.010 W/m·K)
-Shell: Melamine formaldehyde (MF), 5-20μm thickness
-Size distribution: D₅₀ = 50-100μm, D₉₀ < 200μm, span < 1.5
-Encapsulation efficiency: >90% aerogel retention
-Batting weight: 100-200 g/m² (compressed to 5mm)
+k_eff = k_m × (k_d + 2k_m - 2φ(k_m - k_d)) / (k_d + 2k_m + φ(k_m - k_d))
+k_m = 0.026 W/m·K (air), k_d = 0.010 W/m·K (aerogel), φ = 0.85
+k_eff ≈ 0.015 W/m·K  ← TARGET ACHIEVED
 ```
 
+**Quilting Thermal Resistance:**
+```
+R_batting = t_compressed / k_eff = 0.003 / 0.015 = 0.2 m²K/W
+R_air_gap = 0.005 / 0.026 = 0.19 m²K/W
+Total R = 0.39 m²K/W  →  Exceeds 0.33 m²K/W target
+```
+
+## 6. Impact Protection System (Layers 8 & 9)
+
+### 6.1 STF Impregnation (SYNTH-02 §2.4, MAT-03 §4)
+
+**STF Formulation:**
+```
+Silica nanoparticles: 20-50 nm (Stöber process)
+Concentration: 55 wt% in PEG-400
+Shear thickening onset: γ̇_c ≈ 10-50 s⁻¹
+Viscosity jump: η_max / η₀ ≈ 100-1000×

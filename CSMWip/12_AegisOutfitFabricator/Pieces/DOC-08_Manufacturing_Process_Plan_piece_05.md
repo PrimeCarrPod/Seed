@@ -1,20 +1,25 @@
-  - Density: 0.1-0.2 g/cm³
-  - Thermal conductivity: λ = 0.010 W/m·K
-  - Surface area: 600-800 m²/g
-  - Service temperature: 650°C continuous
-  - Cost: $68/m² (70% savings vs. $230/m² commercial)
+  - Thermal stability: >800°C in air
+  - Color: Vivid blue (CIE L*a*b*: 45, -15, -45)
+  - Cost: $85-100/kg (in-house with indium-sparing formula)
 ```
 
-### 2.5 YInMn Blue Pigment Synthesis (CSMFAB078 §6 Step 9)
+## 3. Component Fabrication
+
+### 3.1 Ceramic Tile Fabrication (CSMFAB078 §6 Steps 4-5, SYNTH-02 §4.1)
 
 ```
-Solid-State Reaction:
-  Y₂O₃ + In₂O₃ + MnO₂ → 2 YInO₃ (perovskite)
-  Molar ratio: Y:In:Mn = 1 : 0.9 : 0.1 (x=0.1)
-  Calcination: 1200°C, 12 hr, air, intermediate grinding (2×)
-  Milling: Planetary ball mill, 200 rpm, 4 hr, ethanol
-  Particle size: 0.5-2 μm (D₅₀ ≈ 1 μm)
+Slurry Preparation:
+  ZrB₂ (70 wt%) + SiC (30 wt%) + PVB (6 wt%) + DBP (3 wt%)
+  Ball mill: 24 hr, ethanol, zirconia media
+  Solids loading: 55 vol%, viscosity: 500-1000 mPa·s
 
-Properties:
-  - NIR reflectance: 85-92% (700-2500 nm)
-  - UV absorption: 94% (<400 nm)
+Tape Casting (Doctor Blade):
+  Thickness: 250μm green tape
+  Drying: 40°C, controlled humidity (50% RH)
+  Lamination: 12-24 ply (0°/90° alternating)
+  Isostatic Pressing: 200 MPa, 70°C, 30 min
+
+Flash Sintering (V2.0 Protocol):
+  Electrode: Graphite foil (top/bottom)
+  Field: 300 V/cm DC
+  Flash onset: 1580°C (vs. 1900°C conventional SPS)

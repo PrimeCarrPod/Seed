@@ -1,20 +1,25 @@
+### 8.2 CoAl₂O₄ Spinel Schumann Absorption (Layer 12)
+
+**Coating Application (SYNTH-02 §2.6, MAT-03 §6):**
+```
+Process: Pad-dry-cure
+Coating: CoAl₂O₄ nanoparticles (50-100nm) + acrylic binder + silane
+Pickup: 60-80%
+Dry: 120°C, 3 min
+Cure: 160°C, 2 min
+Add-on: 150μm coating, ~30 g/m²
 ```
 
-**Spiral Steel Boning (Modern Supplement):**
+**Schumann Attenuation Physics (CSMFAB078 §5.3, MAT-03 §6.2):**
 ```
-Material: Spring steel 17-7 PH
-Wire diameter: 1.5-2.5mm, spiral pitch: 3-5mm
-Properties: E ≈ 200 GPa, σ_y ≈ 1200-1500 MPa
-2D bending flexibility, longitudinal rigidity
-Fatigue life: >10⁶ cycles at 50% yield stress
+Complex permeability: μ* = μ' - jμ''
+At 7.83 Hz: μ'' peak → magnetic loss tangent tan δ_m = μ''/μ'
+Power absorption: P_abs = ½ ω μ₀ μ'' H²
+Attenuation: A = 8.686 α d
+α = ω √(με/2) [√(1 + tan²δ) - 1]^(1/2)
+
+BFRP dielectric chassis (ε_r ≈ 4-6) → impedance matching
+Combined reflection + absorption > 78 dB @ 7.83 Hz
 ```
 
-**Hybrid Configuration:**
-```
-Front panel: Baleen stays (thermoplastic body conformity)
-Side/back panels: Spiral steel boning (structural rigidity)
-Hoop channels: Steel hoops for crinoline/farthingale (Layer 10)
-```
-
-### 7.2 LES 12-Zone Tension System (CSMFAB078 §3.2)
-
+**Verification (CSMFAB078 §5.3):**

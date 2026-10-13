@@ -1,3 +1,13 @@
+14. Deploy farthingale/pannier hoops (RW editions) or structural hoops (RM)
+15. Engage LES 12-zone lacing system:
+    - Zone 1 (Shoulders): 15-25 N
+    - Zone 2 (Chest): 20-40 N
+    - Zone 3 (Waist): 30-60 N
+    - Zone 4 (Hips): 20-40 N
+    - Zone 5 (Thighs): 15-25 N
+    - Zone 6 (Calves): 10-20 N
+    - Zones 7-12: Additional corset channels 10-30 N
+16. Morphology calibration: <90 seconds to target tensions
 
 Phase 5: Liner & Final (2 min)
 17. Don CoAl₂O₄ spinel-coated liner (Layer 12)
@@ -13,18 +23,3 @@ TOTAL DONNING TIME: ≤14 minutes (target <12 min with practice)
 ```
 Additional Steps for RW:
 - Stays/corset integration (Layer 10 baleen primary)
-- Farthingale/pannier hoop deployment (4-6 hoops)
-- Watteau back pleat arrangement (3:1 compression)
-- Cartridge pleat skirt attachment (S-curve folds)
-- Detachable sleeve attachment (protective alignment)
-- Coif/headwear integration (protective liner + EMI mesh)
-
-Additional Time: +4 minutes (Total: ≤18 minutes)
-```
-
-### 2.4 Doffing Sequence (Reverse Order, Emergency Quick-Doff <3 min)
-
-```
-Emergency Quick-Doff (Fire/Chemical exposure):
-1. LES emergency release: Pull red tab → all 12 zones release simultaneously
-2. Shell removal: YInMn layer + ceramic tiles (magnetic release)

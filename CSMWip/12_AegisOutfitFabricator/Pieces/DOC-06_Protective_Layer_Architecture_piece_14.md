@@ -1,20 +1,25 @@
-Format: 50μm mesh integrated into liner fabric
-Sensing nodes: 240 distributed across garment
-Monitoring: Real-time bio-acoustic coupling
-Resonances monitored:
-- Thorax: 4-6 Hz
-- Head-neck: 8-12 Hz
-- Abdomen: 3-5 Hz
-- Spinal column: 10-15 Hz
-```
+| Tile size | 25mm | 25mm | 25mm | 25mm |
+| Tile count | 42 | 56 | 36 | 48 |
+| Stays/corset | Baleen primary | Steel reinforced | Baleen primary | Steel reinforced |
+| Farthingale hoops | 4 hoops | 6 hoops | 4 hoops | 6 hoops |
+| Cartridge pleats | 25 pleats | 35 pleats | 20 pleats | 30 pleats |
 
-### 8.2 CoAl₂O₄ Spinel Schumann Absorption (Layer 12)
+## 10. Weight Budget
 
-**Coating Application (SYNTH-02 §2.6, MAT-03 §6):**
-```
-Process: Pad-dry-cure
-Coating: CoAl₂O₄ nanoparticles (50-100nm) + acrylic binder + silane
-Pickup: 60-80%
-Dry: 120°C, 3 min
-Cure: 160°C, 2 min
-Add-on: 150μm coating, ~30 g/m²
+### 10.1 System Mass by Edition (MAT-04 §2.2)
+
+| Layer | RM-TS | RM-TG | RM-SS | RM-SG | RW-TS | RW-TG | RW-SS | RW-SG |
+|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| Ceramic tiles | 8-10 | 10-13 | 7-9 | 9-11 | 8-10 | 10-13 | 7-9 | 9-11 |
+| Textiles | 3-4 | 4-5 | 2-3 | 3-4 | 3-4 | 4-5 | 2-3 | 3-4 |
+| Framework | 4-5 | 6-8 | 3-4 | 5-6 | 4-5 | 6-8 | 3-4 | 5-6 |
+| Coatings | 1-2 | 1-2 | 1-2 | 1-2 | 1-2 | 1-2 | 1-2 | 1-2 |
+| **Total** | **16-21** | **21-28** | **13-18** | **18-23** | **16-21** | **21-28** | **13-18** | **18-23** |
+
+**Target Compliance:** All editions meet 18-26 kg target except RM-TG/RW-TG (may require ceramic thickness reduction to 3mm or reduced coverage).
+
+## 11. Traceability Matrix — DOC-06
+
+| Section | Source Document | Location | Key Values |
+|---------|----------------|----------|------------|
+| 2.1 Layer Stack | SYNTH-02 | §2, Table | 12-layer mapping |

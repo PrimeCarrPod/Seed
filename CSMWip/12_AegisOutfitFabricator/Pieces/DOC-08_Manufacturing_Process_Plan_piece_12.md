@@ -1,20 +1,25 @@
-5. STF layer integration: Quilting between fabric layers
-6. Framework insertion: Baleen/steel channels
-7. Liner attachment: PVDF-TrFE + CoAl₂O₄ coated fabric
-8. Lacing system: Dyneema SK99 through Ti₃AlC₂ cleats
-```
+| **Total** | **240 hr (10 days)** | **With batching: 1 unit/2 days** |
 
-### 4.2 Edition Configuration (CSMFAB078 §6 Step 10)
+### 6.2 Capacity Planning
 
 ```
-Per Edition (RM-TS, RM-TG, RM-SS, RM-SG, RW-TS, RW-TG, RW-SS, RW-SG):
-1. Panel count selection (ceramic tiles: 36-56)
-2. Dyneema lacing tension calibration (LES 12 zones)
-3. MR fluid fill: 80 kPa yield stress @ 250 kA/m
-4. PVDF-TrFE mesh integration: 240 sensing nodes
-5. Protonic HFET firmware flash (CSMFAB-PROTONIC-HFET)
-6. QA validation: Full test protocol (DOC-09)
+Annual capacity (single shift):
+  - Material production: 500 ton basalt → 2000 suits
+  - Component fab: 4 parallel lines → 500 suits/line/yr
+  - Assembly: 2 lines → 1000 suits/yr
+  - Bottleneck: Assembly (1000 suits/yr)
+  - Target: 250 suits/yr (all 8 editions)
 ```
 
-## 5. Quality Assurance Checkpoints
+## 7. Traceability Matrix — DOC-08
 
+| Section | Source Document | Location | Key Values |
+|---------|----------------|----------|------------|
+| 2.1 Basalt Fiber | CSMFAB078 | §6 Step 1 | 500 ton/yr, $2.10/kg |
+| 2.2 Elium® Resin | CSMFAB078 | §6 Step 2 | $4.80/kg, 45 min pot life |
+| 2.3 MXene | CSMFAB078 | §6 Step 6 | $65/kg, LiF/HCl etch |
+| 2.4 Aerogel | CSMFAB078 | §6 Step 7 | $68/m², TMCS exchange |
+| 2.5 YInMn Blue | CSMFAB078 | §6 Step 9 | 1200°C, 85-92% NIR |
+| 3.1 Ceramic Tiles | CSMFAB078 | §6 Steps 4-5 | Flash sinter 1580°C/8-15s |
+| 3.1 Miniaturization | SYNTH-02 | §4.1 | Scale 1/6 to 1/3 |
+| 3.2 BFRP VARTM | CSMFAB078 | §6 Step 3 | 1000 MPa, 60% FVF |

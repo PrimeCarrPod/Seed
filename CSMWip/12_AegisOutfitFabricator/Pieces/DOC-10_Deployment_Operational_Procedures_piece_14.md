@@ -1,30 +1,25 @@
-- STF upgrade: Faster response, lower η₀
-- Framework upgrade: Carbon nanotube reinforced baleen
-- Sensor upgrade: Higher density PVDF-TrFE
-- Coating upgrade: Multi-functional (self-healing)
-All upgrades: Backward compatible with LES 12-zone
-```
-
-## 7. Training Requirements
-
-### 7.1 Operator Training (40 Hours)
 
 ```
-Module 1: System Overview (4 hr)
-- Threat environment, garment architecture, capabilities
+Trigger: PVDF-TrFE GIC sensor >1 mV or EMI alert
+Immediate Actions:
+1. Verify BFRP dielectric isolation (multimeter >10¹² Ω)
+2. Check MXene thread continuity (warp/weft <1Ω)
+3. Activate CoAl₂O₄ Schumann monitoring
+4. If GIC coupling detected: Ground via floating citadel electrode
+5. Communications: Switch to optical fiber only
+6. Power: Battery only (disconnect external)
+```
 
-Module 2: Donning/Doffing (8 hr)
-- Standard: 10 repetitions <14 min each
-- Emergency: 5 repetitions <3 min each
-- RW specific: Stays, farthingale, pleats (additional 4 hr)
+### 5.4 Chemical/Biological Exposure
 
-Module 3: Field Maintenance (8 hr)
-- Daily/weekly/monthly procedures
-- Tool use, inspection criteria, documentation
+```
+Trigger: Detector alarm or symptom onset
+Immediate Actions:
+1. Emergency doff (<3 min)
+2. Seal garment in hazmat bag
+3. Personnel decontamination: 0.5% hypochlorite, 10 min
+4. Medical evaluation: Per agent protocol
+5. Garment: Full decon or disposal per CBRNE protocol
+```
 
-Module 4: Mission Profiles (8 hr)
-- All 5 profiles, scenario-based exercises
-- Decision making, emergency procedures
-
-Module 5: Live-Fire/Simulation (12 hr)
-- Thermal chamber (ISO 17493)
+## 6. Lifecycle Management
