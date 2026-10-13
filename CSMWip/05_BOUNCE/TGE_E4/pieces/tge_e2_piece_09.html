@@ -1,0 +1,107 @@
+// Prime Explorer Module
+            PrimeExplorer: {
+                active: false,
+                zoom: 1.0,
+                panX: 0,
+                panY: 0,
+                selectedGap: -1,
+                canvas: null,
+                ctx: null,
+                
+                init() {
+                    this.canvas = document.getElementById('explorer-canvas');
+                    this.ctx = this.canvas.getContext('2d');
+                    this.resize();
+                },
+                
+                resize() {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight - 120; // Account for controls
+                },
+                
+                show() {
+                    this.active = true;
+                    document.getElementById('explorer-overlay').classList.add('visible');
+                    this.resize();
+                    this.render();
+                },
+                
+                hide() {
+                    this.active = false;
+                    document.getElementById('explorer-overlay').classList.remove('visible');
+                },
+                
+                zoomIn() { this.zoom = Math.min(10, this.zoom * 1.2); this.render(); },
+                zoomOut() { this.zoom = Math.max(0.1, this.zoom / 1.2); this.render(); },
+                panLeft() { this.panX += 50 / this.zoom; this.render(); },
+                panRight() { this.panX -= 50 / this.zoom; this.render(); },
+                resetView() { this.zoom = 1.0; this.panX = 0; this.panY = 0; this.render(); },
+                
+                render() {
+                    if (!this.active) return;
+                    const ctx = this.ctx;
+                    const w = this.canvas.width;
+                    const h = this.canvas.height;
+                    const gaps = TGE.primeGaps;
+                    
+                    ctx.fillStyle = '#0A0A0F';
+                    ctx.fillRect(0, 0, w, h);
+                    
+                    // Draw gaps as vertical bars
+                    const barWidth = Math.max(1, 4 * this.zoom);
+                    const spacing = 6 * this.zoom;
+                    const startX = w / 2 - (gaps.length * (barWidth + spacing)) / 2 + this.panX;
+                    
+                    ctx.save();
+                    ctx.translate(startX, h / 2);
+                    
+                    gaps.forEach((gap, i) => {
+                        const x = i * (barWidth + spacing);
+                        const height = Math.min(h * 0.8, gap * this.zoom * 2);
+                        const isTwin = (gap === 2);
+                        const isSelected = (i === this.selectedGap);
+                        
+                        // Bar
+                        ctx.beginPath();
+                        ctx.rect(x, -height/2, barWidth, height);
+                        if (isSelected) {
+                            ctx.fillStyle = '#00D4AA';
+                        } else if (isTwin) {
+                            ctx.fillStyle = '#FF4466';
+                        } else {
+                            const hue = (gap % 360);
+                            ctx.fillStyle = `hsl(${hue}, 70%, 50%)`;
+                        }
+                        ctx.fill();
+                        
+                        // Label for selected
+                        if (isSelected) {
+                            ctx.fillStyle = '#E8E8F0';
+                            ctx.font = '12px monospace';
+                            ctx.textAlign = 'center';
+                            ctx.fillText(`Gap ${i}: ${gap}`, x + barWidth/2, -height/2 - 10);
+                            ctx.fillText(`Prime ${i+1}`, x + barWidth/2, -height/2 - 25);
+                        }
+                    });
+                    
+                    ctx.restore();
+                    
+                    // Info panel
+                    ctx.fillStyle = '#1A1A2E';
+                    ctx.fillRect(10, 10, 300, 100);
+                    ctx.strokeStyle = '#00D4AA';
+                    ctx.lineWidth = 1;
+                    ctx.strokeRect(10, 10, 300, 100);
+                    ctx.fillStyle = '#00D4AA';
+                    ctx.font = '14px monospace';
+                    ctx.fillText('PRIME EXPLORER', 20, 35);
+                    ctx.fillStyle = '#E8E8F0';
+                    ctx.font = '11px monospace';
+                    ctx.fillText(`Total Gaps: ${gaps.length}`, 20, 55);
+                    ctx.fillText(`Zoom: ${this.zoom.toFixed(2)}x`, 20, 70);
+                    ctx.fillText(`Twin Primes: ${gaps.filter(g => g === 2).length}`, 20, 85);
+                    if (this.selectedGap >= 0) {
+                        ctx.fillText(`Selected: Gap ${this.selectedGap} = ${gaps[this.selectedGap]}`, 20, 100);
+                    }
+                }
+            },
