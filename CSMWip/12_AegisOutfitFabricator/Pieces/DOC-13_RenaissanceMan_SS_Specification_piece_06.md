@@ -1,4 +1,3 @@
-# DOC-13 Piece 06: Pleating & Drape Engineering — RM-SS Edition
 **Prime Step:** 17
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 06 of 17
@@ -230,4 +229,4 @@ $$F_e = F_{ref} \times \left(\frac{H_e}{H_{ref}}\right)^{0.5} \times \left(\frac
 
 ---
 
-**End of Piece 06 — Prime Step 17 Complete**
+**End of Piece 06 — Prime Step 17 Complete**# DOC-13 Piece 07: EMI/Shielding Tuning — RM-SS Edition

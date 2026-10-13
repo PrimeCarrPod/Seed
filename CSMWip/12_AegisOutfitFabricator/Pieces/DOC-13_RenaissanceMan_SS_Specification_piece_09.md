@@ -1,4 +1,3 @@
-# DOC-13 Piece 09: Mobility & ROM Analysis — RM-SS Edition
 **Prime Step:** 29
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 09 of 17
@@ -229,4 +228,4 @@ $$f_{met} = 1 + 0.015 \times M_{system} = 1 + 0.015 \times 13.73 = \textbf{1.21}
 
 ---
 
-**End of Piece 09 — Prime Step 29 Complete**
+**End of Piece 09 — Prime Step 29 Complete**# DOC-13 Piece 10: Weight Budget — RM-SS Edition

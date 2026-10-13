@@ -1,4 +1,3 @@
-# DOC-13 Piece 02: Edition Identification & Anthropometrics — RM-SS Edition
 **Prime Step:** 5
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 02 of 17
@@ -188,4 +187,4 @@ $$L_{inseam,e} = L_{inseam,ref} \times \frac{H_e}{H_{ref}} \times \left(1 + 0.15
 
 ---
 
-**End of Piece 02 — Prime Step 5 Complete**
+**End of Piece 02 — Prime Step 5 Complete**# DOC-13 Piece 03: Protective Layer Stack Configuration — RM-SS Edition

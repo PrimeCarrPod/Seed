@@ -1,4 +1,3 @@
-# DOC-13 Piece 08: Thermal Profile — RM-SS Edition
 **Prime Step:** 23
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 08 of 17
@@ -258,4 +257,4 @@ RM-SS: $t_{allow} = \textbf{2.3 hours}$ (at 100 W metabolic, 50% RH, 25°C ambie
 
 ---
 
-**End of Piece 08 — Prime Step 23 Complete**
+**End of Piece 08 — Prime Step 23 Complete**# DOC-13 Piece 09: Mobility & ROM Analysis — RM-SS Edition

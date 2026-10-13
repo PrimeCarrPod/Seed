@@ -1,4 +1,3 @@
-# DOC-13 Piece 03: Protective Layer Stack Configuration — RM-SS Edition
 **Prime Step:** 7
 **Document:** DOC-13_RenaissanceMan_SS_Specification
 **Piece:** 03 of 17
@@ -250,4 +249,4 @@ $$R_{total} = \sum \frac{t_i}{\lambda_i} = \frac{0.002}{0.014} + \frac{0.003}{1.
 
 ---
 
-**End of Piece 03 — Prime Step 7 Complete**
+**End of Piece 03 — Prime Step 7 Complete**# DOC-13 Piece 04: Geometric Pattern Specifications — RM-SS Edition
