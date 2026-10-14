@@ -142,7 +142,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Run
             update(delta);
             draw();
 
-            // Frame pacing
             long frameTime = System.nanoTime() - now;
             long sleepTime = (long) (nsPerFrame - frameTime);
             if (sleepTime > 0) {
@@ -157,7 +156,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Run
         ballX += ballVelX * delta;
         ballY += ballVelY * delta;
 
-        // Wall collisions
         if (ballX - ballRadius <= 0 || ballX + ballRadius >= screenWidth) {
             ballVelX = -ballVelX;
             ballX = Math.max(ballRadius, Math.min(screenWidth - ballRadius, ballX));
@@ -167,20 +165,17 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback, Run
             ballY = ballRadius;
         }
 
-        // Paddle collision
         if (ballY + ballRadius >= paddleY &&
             ballX >= paddleX && ballX <= paddleX + paddleWidth &&
             ballVelY > 0) {
             ballVelY = -Math.abs(ballVelY);
             ballY = paddleY - ballRadius;
-            // Add some angle based on hit position
             float hitPos = (ballX - paddleX) / paddleWidth - 0.5f;
             ballVelX += hitPos * screenWidth * 0.003f;
             score++;
             if (scoreListener != null) scoreListener.onScore(score);
         }
 
-        // Game over - ball falls below paddle
         if (ballY - ballRadius > screenHeight) {
             gameOver = true;
             running = false;
