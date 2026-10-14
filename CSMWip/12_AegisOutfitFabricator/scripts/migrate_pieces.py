@@ -10,7 +10,7 @@ import subprocess
 import json
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent / "CSMWip/12_AegisOutfitFabricator"
+PROJECT_ROOT = Path(__file__).parent.parent
 PIECES_DIR = PROJECT_ROOT / "Pieces"
 CHUNKS_DIR = PROJECT_ROOT / "chunks"
 FINISHED_DIR = PROJECT_ROOT / "FinishedWork"
