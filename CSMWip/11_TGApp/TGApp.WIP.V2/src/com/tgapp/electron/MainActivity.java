@@ -50,8 +50,14 @@ public class MainActivity extends Activity implements SensorEventListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // Initialize crash logger FIRST
+        CrashLogger.init(this);
+        CrashLogger.logInfo("MainActivity", "onCreate started");
+
         setupFullscreen();
 
+        CrashLogger.logInfo("MainActivity", "Building UI");
         InsetFrameLayout root = new InsetFrameLayout(this, this);
         root.setBackgroundColor(Color.parseColor("#0A0A0F"));
 
@@ -65,12 +71,15 @@ public class MainActivity extends Activity implements SensorEventListener {
         root.addView(controlBar);
 
         setContentView(root);
+        CrashLogger.logInfo("MainActivity", "UI built, loading WebView");
 
         prefs = getSharedPreferences("TGE_Electron_Prefs", MODE_PRIVATE);
         restoreState();
 
         initializePrimeEngine();
         startWorldlineSimulation();
+        
+        CrashLogger.logInfo("MainActivity", "onCreate complete. Log file: " + CrashLogger.getLogFilePath());
     }
 
     private void setupFullscreen() {
@@ -131,7 +140,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         logo.setGravity(Gravity.CENTER);
 
         TextView tag = new TextView(this);
-        tag.setText("Prime Electron Worldline · v1.0.0");
+        tag.setText("Prime Electron Worldline · v1.1");
         tag.setTextSize(11f);
         tag.setTextColor(Color.parseColor("#E8E8F0"));
         tag.setGravity(Gravity.CENTER);
@@ -178,6 +187,10 @@ public class MainActivity extends Activity implements SensorEventListener {
         cleanBtn = mkBtn("CLEAN", "#FF6600", new CleanClickListener(this));
         row.addView(cleanBtn);
 
+        // Add log button
+        Button logBtn = mkBtn("LOGS", "#FFFFFF", new LogClickListener(this));
+        row.addView(logBtn);
+
         bar.addView(row);
         return bar;
     }
@@ -194,6 +207,12 @@ public class MainActivity extends Activity implements SensorEventListener {
         return b;
     }
 
+    public void showLogLocation() {
+        String path = CrashLogger.getLogFilePath();
+        CrashLogger.logInfo("MainActivity", "Log file location requested: " + path);
+        Toast.makeText(this, "Log: " + path, Toast.LENGTH_LONG).show();
+    }
+
     public void toggleMenu() {
         menuVisible = !menuVisible;
         menuBtn.setText(menuVisible ? "CLOSE" : "MENU");
@@ -206,7 +225,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         theoryBtn.setText(theoryMode ? "LIVE" : "THEORY");
         theoryBtn.setTextColor(Color.parseColor(theoryMode ? "#10B981" : "#4488FF"));
         injectJs("TGE.setTheoryMode(" + theoryMode + ")");
-        tagTextView.setText("Prime Electron Worldline · v1.0.0 · " + (theoryMode ? "THEORY" : "LIVE"));
+        tagTextView.setText("Prime Electron Worldline · v1.1 · " + (theoryMode ? "THEORY" : "LIVE"));
         saveState();
     }
 
@@ -216,7 +235,7 @@ public class MainActivity extends Activity implements SensorEventListener {
                 webView.evaluateJavascript(s, null);
             }
         } catch (Exception e) {
-            Log.w("TGE_Electron", "injectJs failed: " + e.getMessage());
+            CrashLogger.logError("MainActivity", "injectJs failed: " + e.getMessage());
         }
     }
 
@@ -242,10 +261,13 @@ public class MainActivity extends Activity implements SensorEventListener {
     }
 
     private void initializePrimeEngine() {
+        CrashLogger.logInfo("MainActivity", "Initializing PrimeEngine");
         PrimeEngine.initialize(this);
+        CrashLogger.logInfo("MainActivity", "PrimeEngine initialized: " + PrimeEngine.getPrimeCount() + " primes");
     }
 
     private void startWorldlineSimulation() {
+        CrashLogger.logInfo("MainActivity", "Starting worldline simulation");
         scanHandler.postDelayed(new WorldlineSimulationRunnable(this), 16);
     }
 
@@ -265,6 +287,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     @Override
     protected void onResume() {
         super.onResume();
+        CrashLogger.logInfo("MainActivity", "onResume");
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         gyroscope = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
@@ -275,14 +298,17 @@ public class MainActivity extends Activity implements SensorEventListener {
     @Override
     protected void onPause() {
         super.onPause();
+        CrashLogger.logInfo("MainActivity", "onPause");
         if (sensorManager != null) sensorManager.unregisterListener(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        CrashLogger.logInfo("MainActivity", "onDestroy");
         scanHandler.removeCallbacksAndMessages(null);
         if (sensorManager != null) sensorManager.unregisterListener(this);
+        CrashLogger.close();
     }
 
     @Override
