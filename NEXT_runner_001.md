@@ -15,8 +15,9 @@ cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
 # Uses three.js (assets/three.min.js) - WebGL 3D electron with three.js
 # Clean UI toggle button (hides ALL menus)
+# Landolil/v7b electron physics integrated (Berry phase, Zitterbewegung, axion coupling, Larmor precession)
 python3 build.py build
-# → tgapp_electron_v3.apk created (1.8 MB with three.js + prime tiles)
+# → tgapp_electron_v3.apk created (1.4 MB with three.js + prime tiles)
 ```
 
 ### Log File Location (V3)
@@ -34,7 +35,7 @@ python3 build.py build
 | `CSMWip/05_BOUNCE` | ✅ | 25 KB |
 | `CSMWip/11_TGApp/TGE_E5` | ✅ | 17 KB |
 | `CSMWip/11_TGApp/TGApp.WIP.V2` | ✅ | 2.1 MB (2D Canvas) |
-| `CSMWip/11_TGApp/TGApp.WIP.V3` | ✅ | 1.8 MB (WebGL 3D + three.js) |
+| `CSMWip/11_TGApp/TGApp.WIP.V3` | ✅ | 1.4 MB (WebGL 3D + three.js) |
 
 ### Build Commands Reference (V3 Active)
 ```bash
@@ -54,4 +55,4 @@ adb install -r tgapp_electron_v3.apk
 ---
 
 **Last Updated**: 2026-10-14  
-**Active Project**: TGApp.WIP.V3 — WebGL 3D with three.js ✅, clean UI toggle, prime gaps, sensor integration, log file working
+**Active Project**: TGApp.WIP.V3 — WebGL 3D with three.js ✅, Landolil electron physics ✅, clean UI toggle, prime gaps, sensor integration, log file working
