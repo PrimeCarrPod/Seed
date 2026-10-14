@@ -26,12 +26,16 @@ public class CrashLogger {
         if (initialized) return;
         
         try {
-            // FORCE: Create log file in Downloads FIRST, before anything else
-            File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            if (!downloadsDir.exists()) {
-                downloadsDir.mkdirs();
+            // USE APP-SPECIFIC EXTERNAL DIR - works on ALL Android versions, visible in file manager
+            File appExternalDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+            if (appExternalDir == null) {
+                appExternalDir = context.getExternalFilesDir(null);
             }
-            logFile = new File(downloadsDir, "tge_electron_crash_log.txt");
+            if (appExternalDir == null) {
+                appExternalDir = context.getFilesDir(); // Last resort
+            }
+            
+            logFile = new File(appExternalDir, "tge_electron_crash_log.txt");
             
             // SYNCHRONOUS write - create file immediately
             FileWriter fw = new FileWriter(logFile, true);
@@ -48,6 +52,9 @@ public class CrashLogger {
             initialized = true;
             
             log("CrashLogger.init() completed. Log: " + logFile.getAbsolutePath());
+            
+            // Also try to create a symlink/shortcut in public Downloads for visibility
+            tryCreatePublicDownloadLink();
             
             // Set up uncaught exception handler
             Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
@@ -75,6 +82,21 @@ public class CrashLogger {
                 initialized = true;
             } catch (Exception ignored) {}
         }
+    }
+
+    private static void tryCreatePublicDownloadLink() {
+        // Try to also write to public Downloads for visibility
+        try {
+            File publicDownloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            File publicLog = new File(publicDownloads, "tge_electron_crash_log.txt");
+            FileWriter fw = new FileWriter(publicLog, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write("\n\n=== SESSION START (PUBLIC): " + TIMESTAMP.format(new Date()) + " ===\n");
+            bw.write("Package: com.tgapp.electron\n");
+            bw.write("Primary log: " + logFile.getAbsolutePath() + "\n");
+            bw.flush();
+            bw.close();
+        } catch (Exception ignored) {}
     }
 
     public static void log(String message) {
@@ -108,11 +130,11 @@ public class CrashLogger {
         
         Log.e(TAG, header + stackTrace + footer);
         
-        // Also write crash to Downloads
+        // Also write crash to public Downloads
         try {
-            File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File crashLog = new File(downloadsDir, "tge_electron_crash_log.txt");
-            BufferedWriter bw = new BufferedWriter(new FileWriter(crashLog, true));
+            File publicDownloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            File publicLog = new File(publicDownloads, "tge_electron_crash_log.txt");
+            BufferedWriter bw = new BufferedWriter(new FileWriter(publicLog, true));
             bw.write(header);
             bw.write(stackTrace);
             bw.write(footer);
