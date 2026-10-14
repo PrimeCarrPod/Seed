@@ -13,10 +13,10 @@
 ```bash
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-# Uses three.js (assets/three.min.js) - currently 2D canvas, ready for WebGL
+# Uses three.js (assets/three.min.js) - WebGL 3D electron with three.js
 # Clean UI toggle button (hides ALL menus)
-python3 /workspace/app/__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
-# → tgapp_electron_v3.apk created (1.4 MB with three.js + prime tiles)
+python3 build.py build
+# → tgapp_electron_v3.apk created (1.8 MB with three.js + prime tiles)
 ```
 
 ### Log File Location (V3)
@@ -34,14 +34,14 @@ python3 /workspace/app/__Python_Tools/build_apk.py --project . --package com.tga
 | `CSMWip/05_BOUNCE` | ✅ | 25 KB |
 | `CSMWip/11_TGApp/TGE_E5` | ✅ | 17 KB |
 | `CSMWip/11_TGApp/TGApp.WIP.V2` | ✅ | 2.1 MB (2D Canvas) |
-| `CSMWip/11_TGApp/TGApp.WIP.V3` | ✅ | 1.4 MB (WebGL 3D) |
+| `CSMWip/11_TGApp/TGApp.WIP.V3` | ✅ | 1.8 MB (WebGL 3D + three.js) |
 
 ### Build Commands Reference (V3 Active)
 ```bash
 # === TGApp.WIP.V3 (WebGL 3D) - ACTIVE ===
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-python3 /workspace/app/__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
+python3 build.py build
 
 # Verify
 export BUILD_TOOLS=/opt/android-sdk/build-tools/34.0.0
@@ -54,4 +54,4 @@ adb install -r tgapp_electron_v3.apk
 ---
 
 **Last Updated**: 2026-10-14  
-**Active Project**: TGApp.WIP.V3 — 2D Canvas working ✅, OpenGL ES requirement removed, log file in V3 package folder
+**Active Project**: TGApp.WIP.V3 — WebGL 3D with three.js ✅, clean UI toggle, prime gaps, sensor integration, log file working

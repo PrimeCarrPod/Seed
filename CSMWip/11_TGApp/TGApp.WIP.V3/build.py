@@ -169,8 +169,15 @@ def add_assets(unaligned):
     temp_apk = PROJECT_ROOT / "tgapp_electron_v3-temp.apk"
     shutil.copy2(unaligned, temp_apk)
     
+    # Add ALL files in assets directory
+    asset_files = list(assets_dir.rglob("*"))
+    asset_files = [f for f in asset_files if f.is_file()]
+    if not asset_files:
+        return unaligned
+    
     # Change to project root and add files with assets/ prefix
-    run(["zip", "-u", str(temp_apk), "assets/tge_electron.html", "assets/Tile00.prime", "assets/Tile01.prime"])
+    asset_args = [str(f.relative_to(PROJECT_ROOT)) for f in asset_files]
+    run(["zip", "-u", str(temp_apk)] + asset_args)
     
     # Remove unaligned, keep temp
     unaligned.unlink(missing_ok=True)
