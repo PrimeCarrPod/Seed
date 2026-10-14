@@ -49,6 +49,9 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // MUST call requestWindowFeature BEFORE super.onCreate()
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
         super.onCreate(savedInstanceState);
         
         // Initialize crash logger FIRST with try-catch
@@ -101,8 +104,6 @@ public class MainActivity extends Activity implements SensorEventListener {
     }
 
     private void setupFullscreen() {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        
         // Window is now guaranteed to exist after setContentView
         Window window = getWindow();
         if (window == null) {
