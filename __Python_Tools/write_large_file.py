@@ -79,7 +79,8 @@ def split_logical_chunks(input_path, output_dir, chunk_prefix="chapter", ext=".m
         if line.startswith('## ') or (line.startswith('# ') and chunk_num > 0):
             if current_chunk:
                 chunk_num += 1
-                filename = f"{chunk_prefix}_{chunk_num:02d}_{current_title.lower().replace(' ', '_')[:30]}{ext}"
+                safe_title = current_title.lower().replace(' ', '_').replace('/', '_').replace(':', '').replace('(', '').replace(')', '').replace('.', '').replace(',', '').replace('&', '').replace('–', '').replace('—', '').replace('⁻', '').replace('ₑ', 'e').replace('ₑ', 'e')[:30]
+                filename = f"{chunk_prefix}_{chunk_num:02d}_{safe_title}{ext}"
                 (output_dir / filename).write_text('\n'.join(current_chunk), encoding='utf-8')
                 chunks.append(filename)
             current_title = line.lstrip('# ').strip()
@@ -89,7 +90,8 @@ def split_logical_chunks(input_path, output_dir, chunk_prefix="chapter", ext=".m
 
     if current_chunk:
         chunk_num += 1
-        filename = f"{chunk_prefix}_{chunk_num:02d}_{current_title.lower().replace(' ', '_')[:30]}{ext}"
+        safe_title = current_title.lower().replace(' ', '_').replace('/', '_').replace(':', '').replace('(', '').replace(')', '').replace('.', '').replace(',', '').replace('&', '').replace('–', '').replace('—', '').replace('⁻', '').replace('ₑ', 'e').replace('ₑ', 'e')[:30]
+        filename = f"{chunk_prefix}_{chunk_num:02d}_{safe_title}{ext}"
         (output_dir / filename).write_text('\n'.join(current_chunk), encoding='utf-8')
         chunks.append(filename)
 

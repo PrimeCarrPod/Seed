@@ -1,0 +1,54 @@
+{
+  "chapter_01_intro.md": {
+    "size": 358,
+    "sha256": "03baf87d72891a897cb8aee4ca35a087e4c42ff135fba0eccfbc1cdce377969e"
+  },
+  "chapter_02_1._renaissance_court_dress_eng.md": {
+    "size": 4317,
+    "sha256": "3a19a134b4a55af022e9788303e6882efa7f50321e5151de85bf2b0a3f4c6039"
+  },
+  "chapter_03_2._sumptuary_law_as_constraint.md": {
+    "size": 1942,
+    "sha256": "bd7d32fd2755863dc8f6eb88435d8baada157751ec38c01269c95da6ca7382c2"
+  },
+  "chapter_04_3._design_philosophy:_authenti.md": {
+    "size": 2574,
+    "sha256": "8821396070c1e93ba9d8c6cef8489dbf74ac3d04c5567408cbfc1354d459c855"
+  },
+  "chapter_05_4._historical_period_delimitat.md": {
+    "size": 1354,
+    "sha256": "af9967ad03d73ce196e1d0c3e799c97657053eb383873331706ea08157c3c52c"
+  },
+  "chapter_06_forbidden_terms_(case-insensit.md": {
+    "size": 68,
+    "sha256": "6bc9629617013bdbb305161e6f50bb33dccf62fc9a3faf6600faff31ae5447ac"
+  },
+  "chapter_07_m-deval,_v-ctorian,_e-dwardian.md": {
+    "size": 214,
+    "sha256": "6e4147c2abfb2587d3ccc2f2d72460626c9f372cdfa16d21bb27257abfdf9763"
+  },
+  "chapter_08_must_return:_0.md": {
+    "size": 1049,
+    "sha256": "0564a35b29fa5521f5ba3ee1bf7363fe8931717f899dbcc75dad3edc19e77f91"
+  },
+  "chapter_09_5._cross-cutting_historical_en.md": {
+    "size": 1261,
+    "sha256": "34d7ca3055dfcb4b72f54c119b1f137530a367d0bcdaac769d09bef2649dcd28"
+  },
+  "chapter_10_6._computational_implementatio.md": {
+    "size": 2879,
+    "sha256": "82b893947ce02c3e112c571d2634dcfa5e695437a7777d978178e50d77c1806f"
+  },
+  "chapter_11_6._traceability_matrix.md": {
+    "size": 1249,
+    "sha256": "4b6233db98a14b12c7cd487c59a676d4d6745b52fd5826f00781b2b01a529d35"
+  },
+  "chapter_12_7._standards_compliance_summar.md": {
+    "size": 518,
+    "sha256": "d62755babf36bcd871eb752c1e7f32dd6dcf892670ef8cc2df0ec91ade16229e"
+  },
+  "chapter_13_8._design_decision_log_\u2014_key_p.md": {
+    "size": 1145,
+    "sha256": "0f54601dd61b702431d2861746889dc8b326b7fa898ed732f752d46a92b370d9"
+  }
+}

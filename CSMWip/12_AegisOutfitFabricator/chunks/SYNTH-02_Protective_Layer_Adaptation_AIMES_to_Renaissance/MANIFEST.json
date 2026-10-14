@@ -1,0 +1,38 @@
+{
+  "chapter_01_intro.md": {
+    "size": 64,
+    "sha256": "625faa59b591d91e9cff588cf90ea929c87d0d21d09e4a638c4e1a4767e97107"
+  },
+  "chapter_02_aegisoutfitfabricator_research.md": {
+    "size": 55,
+    "sha256": "a60f8c66c961628c05a9d2057cae720bdfc253127d1ce278b1e0020dea21d9f2"
+  },
+  "chapter_03_1._aimes_12-layer_stack_(csmfa.md": {
+    "size": 1265,
+    "sha256": "f47604a3baf9c271ae38cf91f44018335b43c2fd6b104f3fd5308421e2b98f4d"
+  },
+  "chapter_04_2._renaissance_adaptation_mapp.md": {
+    "size": 3504,
+    "sha256": "4741e1e073d80a7622e6bcdb67644f2b0140e40b2e28e4969f876ebb7a5f3c6a"
+  },
+  "chapter_05_3._edition-specific_layer_scal.md": {
+    "size": 1027,
+    "sha256": "18eb3ac91c297ac07642255d763343110ff3706ee915363bcbe5ee12f7913d56"
+  },
+  "chapter_06_4._manufacturing_process_trans.md": {
+    "size": 1964,
+    "sha256": "2a25e56c71d20a096602a0eeecdca31890df40b737e1f49ef3ccee3e29e3b090"
+  },
+  "chapter_07_5._traceability_matrix_\u2014_synth.md": {
+    "size": 1990,
+    "sha256": "1faa666d4242d1ed1f5c34771e587e7174c5f72d8ddbcc3cdb25e0f93357a7a8"
+  },
+  "chapter_08_6._expanded_technical_appendic.md": {
+    "size": 9059,
+    "sha256": "c0349edffe8d6e86611978660a73a6acc4bf30e221ed1fa256f261a3cbb6f91c"
+  },
+  "chapter_09_7._conformance_check.md": {
+    "size": 342,
+    "sha256": "f02886eb815aaaea99a4fea0a540e6bb7b7792be186aa0e7e60b2ff3995b8b6d"
+  }
+}

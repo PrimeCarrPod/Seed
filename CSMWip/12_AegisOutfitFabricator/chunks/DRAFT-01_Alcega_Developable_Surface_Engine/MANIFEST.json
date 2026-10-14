@@ -1,0 +1,22 @@
+{
+  "chapter_01_intro.md": {
+    "size": 45,
+    "sha256": "754a3354d2ac0c4f6c0482eb2e537c2eaec528a6a7ad9423d91ea5bb235a3842"
+  },
+  "chapter_02_aegisoutfitfabricator_geometri.md": {
+    "size": 62,
+    "sha256": "df276d04dd12aa357f917b168b70ca46ec08c45f1ca93cff848008b7490cd3fe"
+  },
+  "chapter_03_1._historical_foundation_(rese.md": {
+    "size": 735,
+    "sha256": "0619ba8528e7c537b17f5ade3f0e3c2ea47454cd381ba3b132cb7ef21f5bded9"
+  },
+  "chapter_04_2._developable_surface_mathema.md": {
+    "size": 1742,
+    "sha256": "41ab018b40731072d19102aef8c3e5a510a86f5cc3d25fd4e60a1bb8119af821"
+  },
+  "chapter_05_3._coordinate_transformation_p.md": {
+    "size": 2028,
+    "sha256": "66939e5e3db053de198992f405bf020c548f90238bc3c018615c9c37cd6afb6b"
+  }
+}

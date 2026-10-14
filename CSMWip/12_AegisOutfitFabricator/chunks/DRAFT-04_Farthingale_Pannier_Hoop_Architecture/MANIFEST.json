@@ -1,0 +1,46 @@
+{
+  "chapter_01_intro.md": {
+    "size": 49,
+    "sha256": "bbe949f03eb4ce65a17a8ad522610730578358e4f2809c0bcbbfb57bf09fc344"
+  },
+  "chapter_02_aegisoutfitfabricator_geometri.md": {
+    "size": 62,
+    "sha256": "a1227dd78d3dded38fae1d865af09f0d3d8f96d2d41f45b8d6d4e549ff2d2e8d"
+  },
+  "chapter_03_1._historical_foundation_(rese.md": {
+    "size": 864,
+    "sha256": "be4fa5fee26f0b12a71ead27255c1320c1e9b236cf88e25edf0a12eec786ba53"
+  },
+  "chapter_04_2._hoop_geometry_mathematics.md": {
+    "size": 1587,
+    "sha256": "83ac8deac1cea44c7613e98c8199a134a59c72615190167eb7e85acef3026f3e"
+  },
+  "chapter_05_3._tape_suspension_system_(cat.md": {
+    "size": 1361,
+    "sha256": "3897453c04ba0809baceaa9b944386e41da2f68d92a95c90df98c00e5e5abc27"
+  },
+  "chapter_06_4._deployment_kinematics.md": {
+    "size": 1431,
+    "sha256": "751b95e0a7e01146a788002ebee68662b9a7e2a25e0b6f62a6b5199ca4c03e36"
+  },
+  "chapter_07_5._edition-specific_hoop_archi.md": {
+    "size": 862,
+    "sha256": "501842ec3cce3e4fde3eea1a7947dcc5cf2f7634e8f00679a88630a9dcb6d57c"
+  },
+  "chapter_08_6._structural_analysis.md": {
+    "size": 850,
+    "sha256": "8c2c47555e6666a52a1f893ff63d8c8fcb42007e911d7abcd8659f00dacdd874"
+  },
+  "chapter_09_7._manufacturing_&_assembly.md": {
+    "size": 715,
+    "sha256": "ddaa21dcd1959e41ec2af416b0225b1c7aab2bf041f50f7ff3c7b7b86f52ba0f"
+  },
+  "chapter_10_8._traceability_matrix_\u2014_draft.md": {
+    "size": 2342,
+    "sha256": "2dab4160de16dd4c062d7f3b1097e952c089072b19258da9b4461b5ad44920c9"
+  },
+  "chapter_11_9._conformance_check.md": {
+    "size": 405,
+    "sha256": "d940fd1aff6438a3205e802af5d79496932ee7ac75b385abe0b0fa765f579f5e"
+  }
+}

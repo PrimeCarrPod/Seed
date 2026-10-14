@@ -1,0 +1,34 @@
+{
+  "chapter_01_intro.md": {
+    "size": 48,
+    "sha256": "70e70b788ccc421718f20611b3de48bf41fd937e216733652467cb77f309558c"
+  },
+  "chapter_02_aegisoutfitfabricator_geometri.md": {
+    "size": 62,
+    "sha256": "08bfe2e177b6980d55985dd8d6eeb02cc6d8f9097756348f910a226dbc9dab54"
+  },
+  "chapter_03_1._historical_foundation_(rese.md": {
+    "size": 1302,
+    "sha256": "d6a9777658b20e8bfbbde96ce4b5a4b812d8ec40d0f5d0ae62d733053ca3888b"
+  },
+  "chapter_04_2._anthropometric_measurement_.md": {
+    "size": 1793,
+    "sha256": "6a8cc6000836bf3d3a3fc17380c9fc86deb0bdc9e82e559ffe73b953ff9a4b94"
+  },
+  "chapter_05_3._dynamic_scaling_algorithms.md": {
+    "size": 3063,
+    "sha256": "edc164224e46fc9fa7b2a22f9d566f347a3bb1f3a687a01b3fd4505f1c2551c5"
+  },
+  "chapter_06_4._pattern_generation_for_8_ed.md": {
+    "size": 2060,
+    "sha256": "1625cea3530152fbdfd710482b5b2a64fe2f272b3c4c97977ea4270b1bd00fc3"
+  },
+  "chapter_07_5._traceability_matrix_\u2014_draft.md": {
+    "size": 1998,
+    "sha256": "3480219be7a99eec6a4036d717056a1e480afb2f3773651b58681be24d0e4e3a"
+  },
+  "chapter_08_6._conformance_check.md": {
+    "size": 394,
+    "sha256": "a1aed3e1edbb886f2794a1909bbe64be30bd5d64cf75993093c70adee56b8fb1"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "chapter_01_intro.md": {
+    "size": 42,
+    "sha256": "5468084a226aaede0ab14fd911914151d44b4021267caef768c0d86d58ced41d"
+  },
+  "chapter_02_aegisoutfitfabricator_material.md": {
+    "size": 60,
+    "sha256": "ac20cd2b32ca3a079e60f5152144f6f9b35cc2abe1ae2ffec9a87b603597d66e"
+  },
+  "chapter_03_1._historical_authenticity_vs_.md": {
+    "size": 2549,
+    "sha256": "7c1d355502731297a765c095068c8d5ab18ecc43d332badeaab0858eff3e801e"
+  },
+  "chapter_04_2._weight_budget_per_edition.md": {
+    "size": 2605,
+    "sha256": "bf1ab20d0b2924fe1f024978a2cb115dc3f94930bec72da3acabf1721a7aa8f9"
+  },
+  "chapter_05_3._thermal_comfort_analysis.md": {
+    "size": 2061,
+    "sha256": "e134f44b076af533dd4a346401f49ae17f30c0ac0f3cb3b8c8a524aae6b31570"
+  },
+  "chapter_06_4._mobility_&_joint_range_of_m.md": {
+    "size": 2992,
+    "sha256": "0a451155b52b98b785fe921d776cb93af561a60c82c57d6444599a91bdbb52db"
+  },
+  "chapter_07_5._traceability_matrix_\u2014_mat-0.md": {
+    "size": 2098,
+    "sha256": "2813c3a4e277c716e8fe1ff69217e782cda3537853f9a1d3e41c4e45182063a2"
+  },
+  "chapter_08_6._conformance_check.md": {
+    "size": 377,
+    "sha256": "59309765cc3d94e7a77efec9e68b49362a7fa40f154c4d0000a722d0f61d04bb"
+  }
+}

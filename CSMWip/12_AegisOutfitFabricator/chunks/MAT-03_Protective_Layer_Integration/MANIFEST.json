@@ -1,0 +1,42 @@
+{
+  "chapter_01_intro.md": {
+    "size": 38,
+    "sha256": "7abe898db349d821114fe0550acfa9de988d512ce8e584a9997543dc67361b40"
+  },
+  "chapter_02_aegisoutfitfabricator_material.md": {
+    "size": 60,
+    "sha256": "44e19d2a9dbc458d053132d2b33b02656ff397c98b5d72bcb12c5245ad14f437"
+  },
+  "chapter_03_1._ceramic_tile_miniaturizatio.md": {
+    "size": 2315,
+    "sha256": "9ae8239cccc2962e6ce3b161be8a7a90913ea22426283d09b12d54983651b324"
+  },
+  "chapter_04_2._mxene_on_metallic_threads.md": {
+    "size": 2548,
+    "sha256": "fd56f3b941140e2df8c5030c7c8e562395b9cae6c9e1e3ae485970d0c54d5a84"
+  },
+  "chapter_05_3._aerogel_micro-encapsulation.md": {
+    "size": 1909,
+    "sha256": "40a64d60792f4afd5a4df366905d9b03fc4cacc3a39f32bcf10d8db42a56e0fc"
+  },
+  "chapter_06_4._stf_impregnation_protocol.md": {
+    "size": 1392,
+    "sha256": "818e62643a3c93abadc86f237b24b183b8be1e400d1b2165fd8ed267129e9176"
+  },
+  "chapter_07_5._yinmn_blue_pigment_synthesi.md": {
+    "size": 1864,
+    "sha256": "4ee0cf3772a49c0391ff3882c6815a17463000da885e20c834b2363cbe2885d4"
+  },
+  "chapter_08_6._coal\u2082o\u2084_spinel_interior_coa.md": {
+    "size": 945,
+    "sha256": "f8f1e6597d8ad97ba3ce1883c9c537b2b6841a6fbb1352f95501d2c70203d9c0"
+  },
+  "chapter_09_7._traceability_matrix_\u2014_mat-0.md": {
+    "size": 2699,
+    "sha256": "a2a7e6f58c3cdf6f2bec5ed1caa14b6b48685e18fcb0426f46208ac328b276bd"
+  },
+  "chapter_10_8._conformance_check.md": {
+    "size": 382,
+    "sha256": "f9b5731fcd001b02d2a3a21a4e481a19f09f26a890eb58ee68104a8b9f00308f"
+  }
+}
