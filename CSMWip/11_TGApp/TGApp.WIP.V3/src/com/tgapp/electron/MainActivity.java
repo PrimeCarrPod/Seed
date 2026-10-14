@@ -11,6 +11,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
@@ -28,6 +29,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class MainActivity extends Activity implements SensorEventListener {
 
@@ -53,6 +58,24 @@ public class MainActivity extends Activity implements SensorEventListener {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         super.onCreate(savedInstanceState);
+        
+        // IMMEDIATE TEST - force external dir creation before CrashLogger
+        File testDir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+        if (testDir != null) {
+            testDir.mkdirs();
+            File testFile = new File(testDir, "tge_electron_crash_log.txt");
+            try {
+                FileWriter fw = new FileWriter(testFile, true);
+                fw.write("=== FORCED CREATE TEST ===\n");
+                fw.flush();
+                fw.close();
+                Log.i("MainActivity", "FORCED CREATE SUCCESS: " + testFile.getAbsolutePath());
+            } catch (Exception e) {
+                Log.e("MainActivity", "FORCED CREATE FAILED: " + e.getMessage());
+            }
+        } else {
+            Log.e("MainActivity", "getExternalFilesDir returned NULL");
+        }
         
         // Initialize crash logger FIRST with try-catch
         try {
