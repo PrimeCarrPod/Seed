@@ -30,10 +30,30 @@ public class CrashLogger {
             // This creates the folder: /storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/
             File appExternalDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
             if (appExternalDir == null) {
+                Log.w(TAG, "getExternalFilesDir(DOWNLOADS) returned null, trying getExternalFilesDir(null)");
                 appExternalDir = context.getExternalFilesDir(null);
             }
             if (appExternalDir == null) {
+                Log.w(TAG, "getExternalFilesDir(null) returned null, using internal files dir");
                 appExternalDir = context.getFilesDir(); // Last resort
+            }
+            
+            // EXPLICITLY CREATE THE DIRECTORY - this forces the Android/data folder to appear
+            if (!appExternalDir.exists()) {
+                boolean created = appExternalDir.mkdirs();
+                Log.i(TAG, "Created external dir: " + appExternalDir.getAbsolutePath() + " success=" + created);
+            } else {
+                Log.i(TAG, "External dir already exists: " + appExternalDir.getAbsolutePath());
+            }
+            
+            // Verify we can write
+            File testFile = new File(appExternalDir, ".write_test");
+            try {
+                boolean testCreated = testFile.createNewFile();
+                if (testCreated) testFile.delete();
+                Log.i(TAG, "External dir writable: " + appExternalDir.getAbsolutePath());
+            } catch (IOException e) {
+                Log.w(TAG, "External dir not writable: " + e.getMessage());
             }
             
             logFile = new File(appExternalDir, "tge_electron_crash_log.txt");
