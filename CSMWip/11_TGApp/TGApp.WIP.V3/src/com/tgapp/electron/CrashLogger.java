@@ -25,53 +25,64 @@ public class CrashLogger {
     public static void init(Context context) {
         if (initialized) return;
         
-        // FIRST: Write to PUBLIC DOWNLOADS - accessible via ANY file manager, no ADB needed
         try {
-            File publicDownloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File publicLog = new File(publicDownloads, "tge_electron_crash_log.txt");
-            FileWriter fw = new FileWriter(publicLog, true);
+            // USE APP-SPECIFIC EXTERNAL DIR - works on ALL Android versions, visible in file manager
+            // This creates the folder: /storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/
+            File appExternalDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+            if (appExternalDir == null) {
+                appExternalDir = context.getExternalFilesDir(null);
+            }
+            if (appExternalDir == null) {
+                appExternalDir = context.getFilesDir(); // Last resort
+            }
+            
+            logFile = new File(appExternalDir, "tge_electron_crash_log.txt");
+            
+            // SYNCHRONOUS write - create file immediately (creates the Android/data folder)
+            FileWriter fw = new FileWriter(logFile, true);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("\n\n=== SESSION START (PUBLIC DOWNLOADS): " + TIMESTAMP.format(new Date()) + " ===\n");
+            bw.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
             bw.write("Package: com.tgapp.electron.v3\n");
-            bw.write("Log file: " + publicLog.getAbsolutePath() + "\n");
-            bw.write("Open this file in any file manager app (Files, My Files, etc.)\n");
+            bw.write("Log file: " + logFile.getAbsolutePath() + "\n");
+            bw.write("CrashLogger.init() called\n");
             bw.flush();
             bw.close();
             
-            logFile = publicLog;
-            logWriter = new BufferedWriter(new FileWriter(publicLog, true));
+            // Now open persistent writer
+            logWriter = new BufferedWriter(new FileWriter(logFile, true));
             initialized = true;
-            log("CrashLogger.init() PUBLIC DOWNLOADS ready: " + publicLog.getAbsolutePath());
-        } catch (Exception e) {
-            Log.e(TAG, "Public Downloads failed", e);
-        }
-        
-        // SECOND: Also write to internal as backup
-        try {
-            File internalDir = context.getFilesDir();
-            File internalLog = new File(internalDir, "tge_electron_crash_log.txt");
-            FileWriter fw = new FileWriter(internalLog, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("\n\n=== SESSION START (INTERNAL BACKUP): " + TIMESTAMP.format(new Date()) + " ===\n");
-            bw.write("Package: com.tgapp.electron.v3\n");
-            bw.write("Primary log at: " + logFile.getAbsolutePath() + "\n");
-            bw.flush();
-            bw.close();
-        } catch (Exception ignored) {}
-        
-        // Set up uncaught exception handler
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread thread, Throwable ex) {
-                if (!crashed) {
-                    crashed = true;
-                    logCrash(ex);
+            
+            log("CrashLogger.init() completed. Log: " + logFile.getAbsolutePath());
+            
+            // Also try to create a symlink/shortcut in public Downloads for visibility
+            tryCreatePublicDownloadLink();
+            
+            // Set up uncaught exception handler
+            Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+                @Override
+                public void uncaughtException(Thread thread, Throwable ex) {
+                    if (!crashed) {
+                        crashed = true;
+                        logCrash(ex);
+                    }
+                    try {
+                        Thread.getDefaultUncaughtExceptionHandler().uncaughtException(thread, ex);
+                    } catch (Exception ignored) {}
                 }
-                try {
-                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(thread, ex);
-                } catch (Exception ignored) {}
-            }
-        });
+            });
+            
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to initialize CrashLogger", e);
+            // Try internal storage as last resort
+            try {
+                File internalDir = context.getFilesDir();
+                logFile = new File(internalDir, "tge_electron_crash_log.txt");
+                logWriter = new BufferedWriter(new FileWriter(logFile, true));
+                logWriter.write("\n\n=== SESSION START (INTERNAL): " + TIMESTAMP.format(new Date()) + " ===\n");
+                logWriter.flush();
+                initialized = true;
+            } catch (Exception ignored) {}
+        }
     }
 
     private static void tryCreatePublicDownloadLink() {
