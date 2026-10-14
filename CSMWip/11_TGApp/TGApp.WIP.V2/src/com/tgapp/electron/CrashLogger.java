@@ -33,40 +33,54 @@ public class CrashLogger {
         initialized = true;
         
         try {
-            // Always try internal storage first (always accessible)
-            File internalDir = context.getFilesDir();
-            logFile = new File(internalDir, "tge_electron_crash_log.txt");
+            // PRIORITY 1: Downloads folder (visible in file manager)
+            File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            File primaryLog = new File(downloadsDir, "tge_electron_crash_log.txt");
             
-            // Try external storage for user access
-            File externalDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File externalLog = new File(externalDir, "tge_electron_crash_log.txt");
+            // PRIORITY 2: App-specific external (also visible)
+            File appExternalDir = context.getExternalFilesDir(null);
+            File secondaryLog = new File(appExternalDir, "tge_electron_crash_log.txt");
+            
+            // PRIORITY 3: Internal (fallback, not visible in file manager)
+            File internalDir = context.getFilesDir();
+            File fallbackLog = new File(internalDir, "tge_electron_crash_log.txt");
+            
+            // Try primary first
+            if (downloadsDir.exists() && downloadsDir.canWrite()) {
+                logFile = primaryLog;
+                log("CrashLogger: Using Downloads folder: " + primaryLog.getAbsolutePath());
+            } else if (appExternalDir != null && appExternalDir.canWrite()) {
+                logFile = secondaryLog;
+                log("CrashLogger: Using app external: " + secondaryLog.getAbsolutePath());
+            } else {
+                logFile = fallbackLog;
+                log("CrashLogger: Using internal fallback: " + fallbackLog.getAbsolutePath());
+            }
             
             // Rotate old log if too large
-            rotateIfNeeded(externalLog);
             rotateIfNeeded(logFile);
             
-            // Use internal for writing (guaranteed), also mirror to external if possible
+            // Open writer
             logWriter = new BufferedWriter(new FileWriter(logFile, true));
             
             // Write session header
             logWriter.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
             logWriter.write("Package: com.tgapp.electron\n");
-            logWriter.write("Internal log: " + logFile.getAbsolutePath() + "\n");
-            logWriter.write("External log: " + externalLog.getAbsolutePath() + "\n");
+            logWriter.write("Log file: " + logFile.getAbsolutePath() + "\n");
+            logWriter.write("Check this file in your file manager!\n");
             logWriter.flush();
             
             lineCount = 3;
-            log("CrashLogger initialized. Internal: " + logFile.getAbsolutePath());
-            log("CrashLogger initialized. External: " + externalLog.getAbsolutePath());
             
-            // Also try to write to external for user access
+            // Also mirror to secondary location for redundancy
             try {
-                BufferedWriter extWriter = new BufferedWriter(new FileWriter(externalLog, true));
-                extWriter.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
-                extWriter.write("Package: com.tgapp.electron\n");
-                extWriter.write("Internal log: " + logFile.getAbsolutePath() + "\n");
-                extWriter.flush();
-                extWriter.close();
+                File mirrorLog = (logFile == primaryLog) ? secondaryLog : primaryLog;
+                BufferedWriter mirrorWriter = new BufferedWriter(new FileWriter(mirrorLog, true));
+                mirrorWriter.write("\n\n=== SESSION START (MIRROR): " + TIMESTAMP.format(new Date()) + " ===\n");
+                mirrorWriter.write("Package: com.tgapp.electron\n");
+                mirrorWriter.write("Primary: " + logFile.getAbsolutePath() + "\n");
+                mirrorWriter.flush();
+                mirrorWriter.close();
             } catch (Exception ignored) {}
             
             // Set up default uncaught exception handler
@@ -119,9 +133,7 @@ public class CrashLogger {
                 logWriter.write(line + "\n");
                 logWriter.flush();
                 lineCount++;
-                if (lineCount > MAX_LOG_LINES) {
-                    lineCount = MAX_LOG_LINES; // Will rotate on next init
-                }
+                if (lineCount > MAX_LOG_LINES) lineCount = MAX_LOG_LINES;
             }
         } catch (IOException ignored) {}
     }
@@ -146,16 +158,16 @@ public class CrashLogger {
         
         Log.e(TAG, header + stackTrace + footer);
         
-        // Also write to external if possible
+        // Also write crash to mirror location
         try {
-            File externalDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File externalLog = new File(externalDir, "tge_electron_crash_log.txt");
-            BufferedWriter extWriter = new BufferedWriter(new FileWriter(externalLog, true));
-            extWriter.write(header);
-            extWriter.write(stackTrace);
-            extWriter.write(footer);
-            extWriter.flush();
-            extWriter.close();
+            File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            File mirrorLog = new File(downloadsDir, "tge_electron_crash_log.txt");
+            BufferedWriter mirrorWriter = new BufferedWriter(new FileWriter(mirrorLog, true));
+            mirrorWriter.write(header);
+            mirrorWriter.write(stackTrace);
+            mirrorWriter.write(footer);
+            mirrorWriter.flush();
+            mirrorWriter.close();
         } catch (Exception ignored) {}
     }
 
