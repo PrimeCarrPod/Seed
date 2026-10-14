@@ -25,63 +25,68 @@ public class CrashLogger {
     public static void init(Context context) {
         if (initialized) return;
         
+        // IMMEDIATE fallback to internal storage - always works
         try {
-            // USE APP-SPECIFIC EXTERNAL DIR - works on ALL Android versions, visible in file manager
+            File internalDir = context.getFilesDir();
+            File internalLog = new File(internalDir, "tge_electron_crash_log.txt");
+            FileWriter fw = new FileWriter(internalLog, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write("\n\n=== SESSION START (INTERNAL FALLBACK): " + TIMESTAMP.format(new Date()) + " ===\n");
+            bw.write("Package: com.tgapp.electron.v3\n");
+            bw.write("Internal log: " + internalLog.getAbsolutePath() + "\n");
+            bw.flush();
+            bw.close();
+            
+            logFile = internalLog;
+            logWriter = new BufferedWriter(new FileWriter(internalLog, true));
+            initialized = true;
+            log("CrashLogger.init() internal fallback ready: " + internalLog.getAbsolutePath());
+        } catch (Exception e) {
+            Log.e(TAG, "Internal fallback failed", e);
+        }
+        
+        // THEN try external storage
+        try {
             File appExternalDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
             if (appExternalDir == null) {
                 appExternalDir = context.getExternalFilesDir(null);
             }
-            if (appExternalDir == null) {
-                appExternalDir = context.getFilesDir(); // Last resort
-            }
             
-            logFile = new File(appExternalDir, "tge_electron_crash_log.txt");
-            
-            // SYNCHRONOUS write - create file immediately
-            FileWriter fw = new FileWriter(logFile, true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
-            bw.write("Package: com.tgapp.electron\n");
-            bw.write("Log file: " + logFile.getAbsolutePath() + "\n");
-            bw.write("CrashLogger.init() called\n");
-            bw.flush();
-            bw.close();
-            
-            // Now open persistent writer
-            logWriter = new BufferedWriter(new FileWriter(logFile, true));
-            initialized = true;
-            
-            log("CrashLogger.init() completed. Log: " + logFile.getAbsolutePath());
-            
-            // Also try to create a symlink/shortcut in public Downloads for visibility
-            tryCreatePublicDownloadLink();
-            
-            // Set up uncaught exception handler
-            Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-                @Override
-                public void uncaughtException(Thread thread, Throwable ex) {
-                    if (!crashed) {
-                        crashed = true;
-                        logCrash(ex);
-                    }
-                    try {
-                        Thread.getDefaultUncaughtExceptionHandler().uncaughtException(thread, ex);
-                    } catch (Exception ignored) {}
+            if (appExternalDir != null && appExternalDir.canWrite()) {
+                File externalLog = new File(appExternalDir, "tge_electron_crash_log.txt");
+                FileWriter fw = new FileWriter(externalLog, true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write("\n\n=== SESSION START (EXTERNAL): " + TIMESTAMP.format(new Date()) + " ===\n");
+                bw.write("Package: com.tgapp.electron.v3\n");
+                bw.write("External log: " + externalLog.getAbsolutePath() + "\n");
+                bw.flush();
+                bw.close();
+                
+                // Switch to external if internal was fallback
+                if (logWriter != null) {
+                    try { logWriter.close(); } catch (Exception ignored) {}
                 }
-            });
-            
+                logFile = externalLog;
+                logWriter = new BufferedWriter(new FileWriter(externalLog, true));
+                log("CrashLogger.init() external ready: " + externalLog.getAbsolutePath());
+            }
         } catch (Exception e) {
-            Log.e(TAG, "Failed to initialize CrashLogger", e);
-            // Try internal storage as last resort
-            try {
-                File internalDir = context.getFilesDir();
-                logFile = new File(internalDir, "tge_electron_crash_log.txt");
-                logWriter = new BufferedWriter(new FileWriter(logFile, true));
-                logWriter.write("\n\n=== SESSION START (INTERNAL): " + TIMESTAMP.format(new Date()) + " ===\n");
-                logWriter.flush();
-                initialized = true;
-            } catch (Exception ignored) {}
+            log("External storage failed, using internal: " + e.getMessage());
         }
+        
+        // Set up uncaught exception handler
+        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread thread, Throwable ex) {
+                if (!crashed) {
+                    crashed = true;
+                    logCrash(ex);
+                }
+                try {
+                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(thread, ex);
+                } catch (Exception ignored) {}
+            }
+        });
     }
 
     private static void tryCreatePublicDownloadLink() {
