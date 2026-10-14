@@ -1,4 +1,4 @@
-package com.tgapp.electron;
+package com.tgapp.electron.v3;
 import android.widget.Toast;
 
 public class JsBridgeOnReady implements Runnable {

@@ -1,0 +1,11 @@
+# Build artifacts
+build/
+*.idsig
+*.apk.idsig
+
+# Keystore (symlink, but ignore target)
+debug.keystore
+
+# IDE
+.idea/
+*.iml
