@@ -47,14 +47,15 @@ mv tgapp_electron_aligned.apk tgapp_electron.apk
 # Working 2D electron simulation with HUD, prime gaps, sensor integration
 ```
 
-### 4. TGApp.WIP.V3 (Prime Electron Worldline - WebGL 3D) — 🚧 IN PROGRESS
+### 4. TGApp.WIP.V3 (Prime Electron Worldline - WebGL 3D) — ✅ COMPLETE
 ```bash
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-# Uses three.js (downloaded to assets/three.min.js)
+# Uses three.js (assets/three.min.js)
 # WebGL 3D electron with three.js
 # Clean UI toggle button (hides ALL menus)
 python3 /workspace/app/__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
+# → tgapp_electron_v3.apk created (1.4 MB with three.js + prime tiles)
 ```
 
 ### 5. Migrate Pieces → Large File Strategy
@@ -76,7 +77,7 @@ python3 __Python_Tools/write_large_file.py --help
 | `CSMWip/05_BOUNCE` | ✅ Build verified | 25KB | Test on device, polish |
 | `CSMWip/11_TGApp/TGE_E5` | ✅ Build verified | 17KB | Add episode content |
 | `CSMWip/11_TGApp/TGApp.WIP.V2` | ✅ Build verified | 2.1 MB | 2D Canvas working |
-| `CSMWip/11_TGApp/TGApp.WIP.V3` | 🚧 In progress | — | WebGL 3D + clean UI toggle |
+| `CSMWip/11_TGApp/TGApp.WIP.V3` | ✅ Build verified | 1.4 MB | WebGL 3D + three.js working |
 | `pieces/` | Legacy fragments | — | Migrate to chunks/compressed |
 | `__Python_Tools/` | Active | — | Build tools ready |
 
@@ -112,4 +113,4 @@ python3 __Python_Tools/write_large_file.py --help
 ---
 
 **Last Updated**: 2026-10-14
-**Session**: V2 2D Canvas working ✅ — V3 WebGL 3D in progress
+**Session**: V2 2D Canvas working ✅ — V3 WebGL 3D working ✅
