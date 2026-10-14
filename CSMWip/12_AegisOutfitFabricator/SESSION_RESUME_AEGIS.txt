@@ -1,0 +1,147 @@
+# SESSION_RESUME_AEGIS.txt
+# ============================================================
+# AEGIS OUTFIT FABRICATOR — CUT-AND-PASTE SESSION RESUME
+# ============================================================
+
+# 1. ENTER PROJECT
+cd /workspace/app/CSMWip/12_AegisOutfitFabricator
+
+# 2. READ CONTEXT
+cat NEXT_runner_013.md
+cat RESUME_SESSION_AEGIS.md
+git status
+
+# 3. CONFIGURE ENVIRONMENT
+export PYTHONPATH=/workspace/app/__Python_Tools:$PYTHONPATH
+
+# 4. START HEARTBEAT MONITOR (BACKGROUND, 120s INTERVAL)
+python3 scripts/heartbeat_monitor.py --interval 120 --daemon &
+HEARTBEAT_PID=$!
+echo "Heartbeat PID: $HEARTBEAT_PID"
+
+# 5. VERIFY TOOLS WORK
+python3 ../../__Python_Tools/write_large_file.py --help
+python3 scripts/migrate_pieces.py --help
+python3 scripts/heartbeat_monitor.py --help
+
+# 6. MIGRATE PIECES → CHUNKS (ONE-TIME INFRASTRUCTURE)
+# This converts all 17-piece fragmentation to logical chapter chunks
+python3 scripts/migrate_pieces.py --source Pieces --target chunks --compress --index
+
+# OR MIGRATE ONE TEST DOCUMENT FIRST:
+# python3 scripts/migrate_pieces.py --doc DOC-11_RenaissanceMan_TS_Specification
+
+# 7. VERIFY MIGRATION
+python3 ../../__Python_Tools/write_large_file.py verify-all chunks/
+
+# 8. BEGIN DOC-13 (RENAISSANCEMAN-SS SPECIFICATION)
+# Target: H=165cm, C=880mm, W=720mm, 13.73kg
+# Primary tiles: 150 × 25mm | Backup tiles: 75 × 15mm
+# Dependencies: CSMFAB078-A §3.1, DOC-01..12, DRAFT-01..05, MAT-01..04, SYNTH-01
+
+# Edit the document directly:
+# vim FinishedWork/DOC-13_RenaissanceMan_SS_Specification.md
+
+# After authoring, chunk and verify:
+python3 ../../__Python_Tools/write_large_file.py split \
+    FinishedWork/DOC-13_RenaissanceMan_SS_Specification.md \
+    chunks/DOC-13 chapter .md
+
+python3 ../../__Python_Tools/write_large_file.py verify chunks/DOC-13
+
+python3 ../../__Python_Tools/write_large_file.py compress \
+    FinishedWork/DOC-13_RenaissanceMan_SS_Specification.md
+
+# 9. COMMIT PROGRESS
+git add chunks/DOC-13/ FinishedWork/DOC-13_RenaissanceMan_SS_Specification.md.gz
+git commit -m "runner013: DOC-13 RenaissanceMan-SS complete - chunked, verified, compressed"
+
+# 10. CONTINUE WITH DOC-14 through DOC-20 (see NEXT_runner_013.md for queue)
+
+# 11. HEARTBEAT MONITORING
+# Check heartbeat log:
+tail -f Logs/heartbeat.log
+
+# Check subtask times:
+cat Logs/subtask_times.log | jq .
+
+# 12. SESSION END - CREATE NEXT RUNNER
+cat > NEXT_runner_014.md << 'EOF'
+# NEXT_runner_014 — AegisOutfitFabricator
+## Continuation from Runner 013
+
+### Completed in Runner 013
+- [ ] DOC-13 through DOC-20: Authored, chunked, verified, compressed
+- [ ] Pieces/ → chunks/ migration: Complete for all 23 documents
+- [ ] Heartbeat monitor: Operational (120s interval)
+- [ ] Task timer: Operational (30s guard)
+- [ ] All manifests: Generated and verified
+
+### Next Priority (Runner 014)
+1. DOC-21: Ballistic Protection — Ceramic-Gilded Tile + Auxetic Metamaterial
+2. DOC-22: Thermal/Fire Protection — UHTC Ceramic + Aerogel + NIR Pigments
+3. ... (Phase 4 Batch 3: DOC-21..30)
+
+### Infrastructure Status
+- chunks/ directory: Populated with all 23 documents
+- FinishedWork/: Compressed (.gz) originals
+- Pieces/: Archived (read-only)
+- Git: All changes committed, tagged runner-013-complete
+EOF
+
+# 13. CLEANUP
+kill $HEARTBEAT_PID 2>/dev/null
+
+# ============================================================
+# QUICK COMMANDS REFERENCE
+# ============================================================
+
+# Resume any time:
+# cd /workspace/app/CSMWip/12_AegisOutfitFabricator
+# cat NEXT_runner_013.md
+# cat RESUME_SESSION_AEGIS.md
+# git status
+# python3 scripts/heartbeat_monitor.py --interval 120 --daemon &
+
+# Migrate single document:
+# python3 scripts/migrate_pieces.py --doc DOC-XX_...
+
+# Chunk operations:
+# python3 ../../__Python_Tools/write_large_file.py split <input> <output_dir> chapter .md
+# python3 ../../__Python_Tools/write_large_file.py verify <chunk_dir>
+# python3 ../../__Python_Tools/write_large_file.py compress <input>
+# python3 ../../__Python_Tools/write_large_file.py concat <chunk_dir> <output>
+
+# Quality check:
+# wc -l FinishedWork/DOC-XX_*.md
+# grep -c '\$\\|\\[' FinishedWork/DOC-XX_*.md
+# grep -c 'Research\|SYNTH\|MAT\|DRAFT\|CSMFAB078' FinishedWork/DOC-XX_*.md
+# grep -ci 'CIETA\|ASTM\|NIJ\|NFPA\|MIL-STD\|ISO\|IEC' FinishedWork/DOC-XX_*.md
+# grep -ic 'medieval\|victorian\|edwardian\|regency\|rococo\|neoclassical\|empire\|19c\|20c\|pre-1600' FinishedWork/DOC-XX_*.md
+
+# ============================================================
+# KEY PATHS
+# ============================================================
+# Project root: /workspace/app/CSMWip/12_AegisOutfitFabricator
+# FinishedWork: /workspace/app/CSMWip/12_AegisOutfitFabricator/FinishedWork/
+# Chunks: /workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/
+# Pieces (legacy): /workspace/app/CSMWip/12_AegisOutfitFabricator/Pieces/
+# Scripts: /workspace/app/CSMWip/12_AegisOutfitFabricator/scripts/
+# Memory: /workspace/app/CSMWip/12_AegisOutfitFabricator/memory/
+# Write tool: /workspace/app/__Python_Tools/write_large_file.py
+# Heartbeat: /workspace/app/CSMWip/12_AegisOutfitFabricator/scripts/heartbeat_monitor.py
+# Migration: /workspace/app/CSMWip/12_AegisOutfitFabricator/scripts/migrate_pieces.py
+
+# ============================================================
+# GOLDEN RULES (RUNNER 013)
+# ============================================================
+# 1. NO CONFLATION — Historical (1600-1700) vs Modern strictly separated
+# 2. NO GUESSING — Every value sourced or [TBD:RESEARCH]
+# 3. MATHEMATICAL RIGOR — SI units, LaTeX formulas, derivations shown
+# 4. TRACEABILITY — Every spec traces to Research Doc 1, 2, or CSMFAB078
+# 5. LOGICAL CHUNKS — Split by chapter/section, NOT 17 arbitrary pieces
+# 6. HEARTBEAT EVERY 2 MIN — python3 scripts/heartbeat_monitor.py --interval 120
+# 7. SUBTASK ≤ 30 SEC — Split further if exceeded
+# 8. VERIFY CHUNKS — write_large_file.py verify = PASS
+# 9. AUTO-CONTINUE — No blocking, queue next immediately
+# 10. COMMIT OFTEN — After each document complete
