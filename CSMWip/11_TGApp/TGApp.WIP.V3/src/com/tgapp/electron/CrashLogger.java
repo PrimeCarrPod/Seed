@@ -25,54 +25,39 @@ public class CrashLogger {
     public static void init(Context context) {
         if (initialized) return;
         
-        // IMMEDIATE fallback to internal storage - always works
+        // FIRST: Write to PUBLIC DOWNLOADS - accessible via ANY file manager, no ADB needed
+        try {
+            File publicDownloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            File publicLog = new File(publicDownloads, "tge_electron_crash_log.txt");
+            FileWriter fw = new FileWriter(publicLog, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write("\n\n=== SESSION START (PUBLIC DOWNLOADS): " + TIMESTAMP.format(new Date()) + " ===\n");
+            bw.write("Package: com.tgapp.electron.v3\n");
+            bw.write("Log file: " + publicLog.getAbsolutePath() + "\n");
+            bw.write("Open this file in any file manager app (Files, My Files, etc.)\n");
+            bw.flush();
+            bw.close();
+            
+            logFile = publicLog;
+            logWriter = new BufferedWriter(new FileWriter(publicLog, true));
+            initialized = true;
+            log("CrashLogger.init() PUBLIC DOWNLOADS ready: " + publicLog.getAbsolutePath());
+        } catch (Exception e) {
+            Log.e(TAG, "Public Downloads failed", e);
+        }
+        
+        // SECOND: Also write to internal as backup
         try {
             File internalDir = context.getFilesDir();
             File internalLog = new File(internalDir, "tge_electron_crash_log.txt");
             FileWriter fw = new FileWriter(internalLog, true);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("\n\n=== SESSION START (INTERNAL FALLBACK): " + TIMESTAMP.format(new Date()) + " ===\n");
+            bw.write("\n\n=== SESSION START (INTERNAL BACKUP): " + TIMESTAMP.format(new Date()) + " ===\n");
             bw.write("Package: com.tgapp.electron.v3\n");
-            bw.write("Internal log: " + internalLog.getAbsolutePath() + "\n");
+            bw.write("Primary log at: " + logFile.getAbsolutePath() + "\n");
             bw.flush();
             bw.close();
-            
-            logFile = internalLog;
-            logWriter = new BufferedWriter(new FileWriter(internalLog, true));
-            initialized = true;
-            log("CrashLogger.init() internal fallback ready: " + internalLog.getAbsolutePath());
-        } catch (Exception e) {
-            Log.e(TAG, "Internal fallback failed", e);
-        }
-        
-        // THEN try external storage
-        try {
-            File appExternalDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
-            if (appExternalDir == null) {
-                appExternalDir = context.getExternalFilesDir(null);
-            }
-            
-            if (appExternalDir != null && appExternalDir.canWrite()) {
-                File externalLog = new File(appExternalDir, "tge_electron_crash_log.txt");
-                FileWriter fw = new FileWriter(externalLog, true);
-                BufferedWriter bw = new BufferedWriter(fw);
-                bw.write("\n\n=== SESSION START (EXTERNAL): " + TIMESTAMP.format(new Date()) + " ===\n");
-                bw.write("Package: com.tgapp.electron.v3\n");
-                bw.write("External log: " + externalLog.getAbsolutePath() + "\n");
-                bw.flush();
-                bw.close();
-                
-                // Switch to external if internal was fallback
-                if (logWriter != null) {
-                    try { logWriter.close(); } catch (Exception ignored) {}
-                }
-                logFile = externalLog;
-                logWriter = new BufferedWriter(new FileWriter(externalLog, true));
-                log("CrashLogger.init() external ready: " + externalLog.getAbsolutePath());
-            }
-        } catch (Exception e) {
-            log("External storage failed, using internal: " + e.getMessage());
-        }
+        } catch (Exception ignored) {}
         
         // Set up uncaught exception handler
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
