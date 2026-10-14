@@ -27,14 +27,16 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 
 ---
 
-## TGApp.WIP.V3 — ✅ COMPLETE (WebGL 3D)
+## TGApp.WIP.V3 — ✅ COMPLETE (2D Canvas, WebGL-ready)
 
 - **APK**: `tgapp_electron_v3.apk` (1.4 MB)
 - **Location**: `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/tgapp_electron_v3.apk`
-- **Package**: `com.tgapp.electron.v3`
-- **Features**: WebGL 3D with three.js, clean UI toggle (hides ALL menus), HUD, prime gaps, sensor integration, CrashLogger
+- **Package**: `com.tgapp.electron.v3` (different from V2's `com.tgapp.electron`)
+- **Features**: 2D HTML5 Canvas electron simulation (three.js in assets, ready for WebGL), clean UI toggle (hides ALL menus), HUD, prime gaps, sensor integration, CrashLogger
 - **Keystore**: Symlink to `../../05_BOUNCE/debug.keystore`
 - **Assets**: `three.min.js`, `tge_electron.html`, `Tile00.prime`, `Tile01.prime`
+- **Log file**: `/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/tge_electron_crash_log.txt` (also mirrored to public Downloads)
+- **Fixed**: Removed `android:glEsVersion` requirement from manifest (was causing crash on devices without GL ES 2.0)
 
 ---
 

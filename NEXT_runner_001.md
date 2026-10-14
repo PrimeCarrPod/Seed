@@ -13,11 +13,19 @@
 ```bash
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-# Uses three.js (assets/three.min.js)
-# WebGL 3D electron with three.js
+# Uses three.js (assets/three.min.js) - currently 2D canvas, ready for WebGL
 # Clean UI toggle button (hides ALL menus)
 python3 /workspace/app/__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
 # → tgapp_electron_v3.apk created (1.4 MB with three.js + prime tiles)
+```
+
+### Log File Location (V3)
+```
+# V3 package: com.tgapp.electron.v3 (different from V2's com.tgapp.electron)
+/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/tge_electron_crash_log.txt
+
+# Also mirrored to public Downloads:
+/storage/emulated/0/Download/tge_electron_crash_log.txt
 ```
 
 ### Other Projects (Build Verified)
@@ -46,4 +54,4 @@ adb install -r tgapp_electron_v3.apk
 ---
 
 **Last Updated**: 2026-10-14  
-**Active Project**: TGApp.WIP.V3 — WebGL 3D with three.js, clean UI toggle, prime gaps, sensor integration
+**Active Project**: TGApp.WIP.V3 — 2D Canvas working ✅, OpenGL ES requirement removed, log file in V3 package folder
