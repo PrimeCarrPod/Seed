@@ -382,7 +382,49 @@
             toggleFleet() { console.log('Fleet toggle'); }
         };
         
+        // PrimeEngine - receives data from Java
+        const PrimeEngine = {
+            init(tilesData) {
+                // Parse prime tiles to extract gaps
+                // tilesData is array of byte arrays from Java
+                const allBytes = [];
+                for (const tile of tilesData) {
+                    for (const b of tile) {
+                        allBytes.push(b & 0xFF);
+                    }
+                }
+                
+                // Extract 32-bit primes from bytes
+                const primes = [];
+                for (let i = 0; i + 3 < allBytes.length; i += 4) {
+                    const prime = (allBytes[i] << 24) | (allBytes[i+1] << 16) | (allBytes[i+2] << 8) | allBytes[i+3];
+                    if (prime > 1) primes.push(prime);
+                }
+                
+                // Compute gaps
+                const gaps = [];
+                let lastPrime = 2;
+                for (const p of primes) {
+                    if (p > lastPrime) {
+                        gaps.push(p - lastPrime);
+                        lastPrime = p;
+                    }
+                }
+                
+                // Scale gaps for visualization (divide by 100 for reasonable ellipse sizes)
+                TGE.primeGaps = gaps.map(g => Math.max(2, Math.min(50, g * 2))).slice(0, 50);
+                
+                // Update HUD
+                document.getElementById('prime-count').textContent = primes.length;
+                document.getElementById('gap-count').textContent = TGE.primeGaps.length;
+                document.getElementById('current-gap').textContent = TGE.primeGaps[0] || 0;
+                
+                console.log('PrimeEngine init:', primes.length, 'primes,', TGE.primeGaps.length, 'gaps');
+            }
+        };
+        
         window.TGE = TGE;
+        window.PrimeEngine = PrimeEngine;
     </script>
 </body>
 </html>
