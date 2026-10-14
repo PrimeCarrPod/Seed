@@ -48,13 +48,10 @@ public class CrashLogger {
             // Try primary first
             if (downloadsDir.exists() && downloadsDir.canWrite()) {
                 logFile = primaryLog;
-                log("CrashLogger: Using Downloads folder: " + primaryLog.getAbsolutePath());
             } else if (appExternalDir != null && appExternalDir.canWrite()) {
                 logFile = secondaryLog;
-                log("CrashLogger: Using app external: " + secondaryLog.getAbsolutePath());
             } else {
                 logFile = fallbackLog;
-                log("CrashLogger: Using internal fallback: " + fallbackLog.getAbsolutePath());
             }
             
             // Rotate old log if too large
@@ -71,6 +68,7 @@ public class CrashLogger {
             logWriter.flush();
             
             lineCount = 3;
+            log("CrashLogger initialized. Log file: " + logFile.getAbsolutePath());
             
             // Also mirror to secondary location for redundancy
             try {

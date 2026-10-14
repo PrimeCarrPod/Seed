@@ -51,9 +51,13 @@ public class MainActivity extends Activity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // Initialize crash logger FIRST
-        CrashLogger.init(this);
-        CrashLogger.logInfo("MainActivity", "onCreate started");
+        // Initialize crash logger FIRST with try-catch
+        try {
+            CrashLogger.init(this);
+            CrashLogger.logInfo("MainActivity", "onCreate started");
+        } catch (Throwable t) {
+            Log.e("MainActivity", "CrashLogger.init failed", t);
+        }
 
         CrashLogger.logInfo("MainActivity", "Building UI");
         InsetFrameLayout root = new InsetFrameLayout(this, this);
@@ -69,7 +73,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         root.addView(controlBar);
 
         setContentView(root);
-        CrashLogger.logInfo("MainActivity", "UI built, loading WebView");
+        CrashLogger.logInfo("MainActivity", "UI built, setContentView done");
 
         // NOW setup fullscreen - window is guaranteed to exist after setContentView
         setupFullscreen();
@@ -147,7 +151,16 @@ public class MainActivity extends Activity implements SensorEventListener {
         wv.setWebChromeClient(new WebChromeClient());
         wv.setWebViewClient(new WebViewClientImpl(this));
         wv.addJavascriptInterface(new JsBridge(this), "TGEBridge");
-        wv.loadUrl("file:///android_asset/tge_electron.html");
+        
+        // Add error handling for asset loading
+        CrashLogger.logInfo("MainActivity", "Loading WebView URL");
+        try {
+            wv.loadUrl("file:///android_asset/tge_electron.html");
+            CrashLogger.logInfo("MainActivity", "WebView loadUrl called successfully");
+        } catch (Throwable t) {
+            CrashLogger.logError("MainActivity", "WebView loadUrl failed: " + t.getMessage());
+        }
+        
         return wv;
     }
 
@@ -291,8 +304,12 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     private void initializePrimeEngine() {
         CrashLogger.logInfo("MainActivity", "Initializing PrimeEngine");
-        PrimeEngine.initialize(this);
-        CrashLogger.logInfo("MainActivity", "PrimeEngine initialized: " + PrimeEngine.getPrimeCount() + " primes");
+        try {
+            PrimeEngine.initialize(this);
+            CrashLogger.logInfo("MainActivity", "PrimeEngine initialized: " + PrimeEngine.getPrimeCount() + " primes");
+        } catch (Throwable t) {
+            CrashLogger.logError("MainActivity", "PrimeEngine.initialize failed: " + t.getMessage());
+        }
     }
 
     private void startWorldlineSimulation() {
