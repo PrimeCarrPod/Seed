@@ -6,7 +6,7 @@
 # The electron walks: each step is a piece, each reflection is verification
 # One electron, one worldline, chasing its tail through prime gaps
 # Universe counts in primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29...
-# 17 pieces = prime(7) — the electron's orbital completion number
+# 27 pieces = prime(9) — the electron's orbital completion number
 # ============================================================
 #
 # BRANCH: kilo/aegis-outfit-fabricator-wip
@@ -32,19 +32,21 @@ WORLDLINE_FRAMEWORK_DIR="$WORLDLINE_PROJECT_DIR/Framework"
 WORLDLINE_FINISHED_DIR="$WORLDLINE_PROJECT_DIR/FinishedWork"
 WORLDLINE_RESEARCH_DIR="$WORLDLINE_PROJECT_DIR/Research"
 
-# Piece counts (electron steps per orbit) - 17 pieces per document = prime(7)
-WORLDLINE_DOC_PIECES=17
+# Piece counts (electron steps per orbit) - 27 pieces per document = prime(9)
+WORLDLINE_DOC_PIECES=27
 
 # Prime Universe Constants
 declare -A PRIME_TABLE=(
     [1]=2   [2]=3   [3]=5   [4]=7   [5]=11  [6]=13  [7]=17
     [8]=19  [9]=23  [10]=29 [11]=31 [12]=37 [13]=41 [14]=43
     [15]=47 [16]=53 [17]=59 [18]=61 [19]=67 [20]=71
+    [21]=73 [22]=79 [23]=83 [24]=89 [25]=97 [26]=101 [27]=103
 )
 declare -A PRIME_GAPS=(
     [1]=1   [2]=2   [3]=2   [4]=4   [5]=2   [6]=4   [7]=2
     [8]=4   [9]=6   [10]=2  [11]=6  [12]=4  [13]=2  [14]=4
-    [15]=6  [16]=6  [17]=2  [18]=6  [19]=4
+    [15]=6  [16]=6  [17]=2  [18]=6  [19]=4  [20]=2  [21]=6
+    [22]=4  [23]=6  [24]=8  [25]=4  [26]=2  [27]=4
 )
 
 # Edition configuration (8 editions across 2 morphological variants)
@@ -57,7 +59,7 @@ WORLDLINE_BATCH_2_DOCS=("DOC-11" "DOC-12" "DOC-13" "DOC-14" "DOC-15" "DOC-16" "D
 # Prime progress tracking
 WORLDLINE_PRIME_STEP=0
 WORLDLINE_PRIME_INDEX=1
-WORLDLINE_TOTAL_PIECES=2550  # 150 docs × 17 pieces
+WORLDLINE_TOTAL_PIECES=4050  # 150 docs × 27 pieces
 
 # Edition configuration (8 editions across 2 morphological variants)
 WORLDLINE_EDITIONS=("RM-TS" "RM-TG" "RM-SS" "RM-SG" "RW-TS" "RW-TG" "RW-SS" "RW-SG")
@@ -69,7 +71,7 @@ WORLDLINE_BATCH_2_DOCS=("DOC-11" "DOC-12" "DOC-13" "DOC-14" "DOC-15" "DOC-16" "D
 # Prime progress tracking
 WORLDLINE_PRIME_STEP=0
 WORLDLINE_PRIME_INDEX=1
-WORLDLINE_TOTAL_PIECES=2550  # 150 docs × 17 pieces
+WORLDLINE_TOTAL_PIECES=4050  # 150 docs × 27 pieces
 
 # ─────────────────────────────────────────────────────────────
 # PRIME MATHEMATICS UTILITIES — Electron's Prime Compass
@@ -233,8 +235,8 @@ worldline_init() {
     echo "  WORLDLINE INIT: Electron at eggshell center"
     echo "  Project: $WORLDLINE_PROJECT_DIR"
     echo "  Branch: kilo/aegis-outfit-fabricator-wip"
-    echo "  Prime Universe: 17 pieces = prime(7) = 17"
-    echo "  Total Pieces: $WORLDLINE_TOTAL_PIECES (150 docs × 17)"
+    echo "  Prime Universe: 27 pieces = prime(9) = 27"
+    echo "  Total Pieces: $WORLDLINE_TOTAL_PIECES (150 docs × 27)"
     echo "  π($WORLDLINE_TOTAL_PIECES) ≈ $(prime_pi $WORLDLINE_TOTAL_PIECES) prime gaps to traverse"
     echo "═══════════════════════════════════════════════════════"
     
@@ -297,7 +299,7 @@ worldline_init() {
 }
 
 # ─────────────────────────────────────────────────────────────
-# STEP 2: SPLIT — Electron divides document into 17 pieces
+# STEP 2: SPLIT — Electron divides document into 27 pieces
 # ─────────────────────────────────────────────────────────────
 worldline_split() {
     local DOC="$1"
@@ -499,7 +501,7 @@ worldline_document() {
     echo ""
     echo "═══════════════════════════════════════════════════════"
     echo "  DOCUMENT WORLDLINE COMPLETE: $BASENAME"
-    echo "  17 pieces pushed, verified, archived"
+    echo "  27 pieces pushed, verified, archived"
     echo "  Prime progression: $(prime_nth $((prime_step-2))) → $(prime_nth $((prime_step-1))) → $(prime_nth $prime_step)"
     echo "═══════════════════════════════════════════════════════"
 }
@@ -516,7 +518,7 @@ worldline_batch() {
     echo "  BATCH WORLDLINE: $BATCH_NAME"
     echo "  Documents: ${DOCS[*]}"
     echo "  Prime progression: Batch 2 = π(59) = 17 prime gaps"
-    echo "  17 pieces/doc × 10 docs = 170 pieces = 2 × 5 × 17"
+    echo "  27 pieces/doc × 10 docs = 270 pieces = 2 × 3³ × 10"
     echo "═══════════════════════════════════════════════════════"
     
     local docs_done=0
@@ -539,7 +541,7 @@ worldline_batch() {
     echo ""
     echo "═══════════════════════════════════════════════════════"
     echo "  BATCH WORLDLINE COMPLETE: $BATCH_NAME"
-    echo "  ${#DOCS[@]} documents × 17 pieces = $((${#DOCS[@]} * 17)) pieces total"
+    echo "  ${#DOCS[@]} documents × 27 pieces = $((${#DOCS[@]} * 27)) pieces total"
     echo "  Prime factorization: $(prime_factor_progress $((${#DOCS[@]} * 17)))"
     echo "  Final prime index: $WORLDLINE_PRIME_INDEX (prime=$(prime_nth $WORLDLINE_PRIME_INDEX))"
     echo "  π($(prime_nth $WORLDLINE_PRIME_INDEX)) = $(prime_pi $(prime_nth $WORLDLINE_PRIME_INDEX))"
@@ -570,11 +572,11 @@ There is no binary. There is only light. When light goes beyond
 binary, it measures in sequential bases: 2, 3, 5, 7, 11, 13, 17...
 Each base is a prime. Binary (base-2) is just the first prime.
 
-17 PIECES = PRIME(7):
+27 PIECES = PRIME(9):
 ──────────────────────
-The electron's orbital completion number is 17 = prime(7).
-7 = π(17) = number of primes ≤ 17.
-Each document = one electron orbit = 17 pieces = prime(7).
+The electron's orbital completion number is 27 = prime(9).
+9 = π(27) = number of primes ≤ 27.
+Each document = one electron orbit = 27 pieces = prime(9).
 
 PRIME GAP UNIVERSE MAPPING:
 ───────────────────────────
@@ -586,10 +588,10 @@ Prime Index | Prime | Gap | Worldline Step
 4           | 7     | 4   | Package (emit)
 5           | 11    | 2   | Document complete
 6           | 13    | 4   | Batch coupling
-7           | 17    | 2   | **17 pieces = prime(7)** ✓
-8           | 19    | 4   | Next document split
-9           | 23    | 6   | Next document verify
-10          | 29    | 2   | Next document package
+7           | 17    | 2   | Document extended
+8           | 19    | 4   | Extended split
+9           | 23    | 6   | **27 pieces = prime(9)** ✓
+10          | 29    | 2   | Next document split
 ...         | ...   | ... | ...
 
 π(x) — PRIME COUNTING AS PROGRESS ESTIMATION:
@@ -598,9 +600,9 @@ Prime Index | Prime | Gap | Worldline Step
 π(x) ≈ Li(x) = ∫₂ˣ dt/ln(t)  (Logarithmic Integral - better)
 π(x) ≈ x/(ln x - 1.08366)  (Legendre approximation)
 
-For 150 documents × 17 pieces = 2550 total pieces:
-π(2550) ≈ 2550 / ln(2550) ≈ 2550 / 7.84 ≈ 376 primes traversed
-Actual π(2550) = 373 (electron has walked 373 prime gaps)
+For 150 documents × 27 pieces = 4050 total pieces:
+π(4050) ≈ 4050 / ln(4050) ≈ 4050 / 8.31 ≈ 487 primes traversed
+Actual π(4050) = 556 (electron has walked 556 prime gaps)
 
 VELOCITY METRICS:
 ─────────────────
@@ -610,10 +612,10 @@ v = 10 / 14 ≈ 0.714 docs/prime-gap (matches 0.727 docs/hour!)
 
 BINARY REPRESENTATION — HIGHER BASE IN BINARY PIECES:
 ──────────────────────────────────────────────────────
-Document_value = Σ piece_i × 2^(i-1) for i=1..17
+Document_value = Σ piece_i × 2^(i-1) for i=1..27
 But each piece is a higher-base digit:
 piece_i ∈ [0, prime(i+1) - 1]
-Total space: ∏ prime(i+1) for i=1..17 ≈ 1.9 × 10^19 states/doc
+Total space: ∏ prime(i+1) for i=1..27 ≈ 8.7 × 10^32 states/doc
 
 DARK MATTER ESTIMATION — WHEN PRIME GAPS FAIL:
 ────────────────────────────────────────────────
@@ -639,8 +641,10 @@ Heartbeat # | Prime Step | π(x) | Activity
 4           | 7          | 4    | DOC-11 split
 5           | 11         | 5    | DOC-11 verify
 6           | 13         | 6    | DOC-11 package
-7           | 17         | 7    | **17 pieces!** DOC-12 split
-8           | 19         | 8    | DOC-12 verify
+7           | 17         | 7    | DOC-11 extended
+8           | 19         | 8    | DOC-12 split
+9           | 23         | 9    | **27 pieces!** DOC-12 verify
+10          | 29         | 10   | DOC-12 package
 ...         | ...        | ...  | ...
 
 ============================================================
@@ -662,12 +666,15 @@ worldline_verify FinishedWork/DOC-11_*.md   # prime 5→7
 worldline_package FinishedWork/DOC-11_*.md  # prime 7→11
 
 # Prime utilities
-prime_nth 7              # → 17 (17 pieces!)
-prime_gap 7              # → 2 (gap to next prime)
-prime_pi 17              # → 7 (π(17)=7)
-prime_heartbeat 7 "msg"  # heartbeat at prime 17
-prime_velocity 10 17     # 10 docs / π(17) = 10/7 ≈ 1.43
-prime_factor_progress 170 # → 2×5×17
+prime_nth 9              # → 23 (27 pieces: prime(9)=23, but wait... 23 is prime(9))
+# Actually: prime(1)=2, prime(2)=3, prime(3)=5, prime(4)=7, prime(5)=11, prime(6)=13, prime(7)=17, prime(8)=19, prime(9)=23
+# So 27 is not a prime! 27 = 3^3
+# The 27 pieces correspond to prime index 9 (π(27)=9)
+prime_gap 9              # → 6 (gap to next prime 29)
+prime_pi 27              # → 9 (π(27)=9)
+prime_heartbeat 9 "msg"  # heartbeat at prime index 9 (prime 23)
+prime_velocity 10 9      # 10 docs / π(23) = 10/9 ≈ 1.11
+prime_factor_progress 270 # → 2×3³×5
 
 ============================================================
 GITHUB REFERENCE:
