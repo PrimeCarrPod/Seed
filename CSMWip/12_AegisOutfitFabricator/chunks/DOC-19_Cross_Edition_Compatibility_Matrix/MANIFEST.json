@@ -1,0 +1,410 @@
+{
+  "chapter_01_intro.md": {
+    "size": 219,
+    "sha256": "998a823f143717c6632ea86d9a9d36bd7c53b5c43e805af6d8f698ec2cce6668"
+  },
+  "chapter_02_1._purpose_&_scope.md": {
+    "size": 1110,
+    "sha256": "75b52ef495e5031510668cbf7db29cefd71bf2030b4da38c2229f2cfca055baa"
+  },
+  "chapter_03_2._compatibility_dimensions.md": {
+    "size": 752,
+    "sha256": "d6798a62a2576aa5e351bf15b6650cd511023917bd961710631f0b461da1bd27"
+  },
+  "chapter_04_3._cross-references.md": {
+    "size": 808,
+    "sha256": "69a153aaed5b13832df715ad4007933ae26774762f4aa832e39c562db303ca77"
+  },
+  "chapter_05_4._conformance_check.md": {
+    "size": 665,
+    "sha256": "c6a1d378c80543d2ac533c9db9d5c5ba2329162b954e457d397dca99eb36d883"
+  },
+  "chapter_06_1._layer-by-layer_component_co.md": {
+    "size": 4236,
+    "sha256": "cf124340dcc9c0dc55174d7391cd1242e5e7d4b40e6697f29beb87625a1d8881"
+  },
+  "chapter_07_2._protective_stack_commonalit.md": {
+    "size": 529,
+    "sha256": "26dd9620581a6a9dc4abffe12f07de5bc5d0e6cdc687cf6227014e852d044ec5"
+  },
+  "chapter_08_3._cross-references.md": {
+    "size": 351,
+    "sha256": "933dc8e0d87352ffcbc06c319366a6922c99256e53d901e0cad99ae0b45e832b"
+  },
+  "chapter_09_4._conformance_check.md": {
+    "size": 672,
+    "sha256": "3f56ae9863b3dcff94953763c099f807dbbe160742e1bf6aea427190fcb4b0e2"
+  },
+  "chapter_10_1._chassis_component_commonali.md": {
+    "size": 2965,
+    "sha256": "3d998d0bfe6df398162e2d2e7f70f5dce773cf65885eb3bdfba111f84d0d9a70"
+  },
+  "chapter_11_2._farthingale_hoop_architectu.md": {
+    "size": 1412,
+    "sha256": "1a09d92d7883bd75a2aeb40aa332bc44973fcbd1dcb494ef129796da0d369065"
+  },
+  "chapter_12_3._chassis_commonality_summary.md": {
+    "size": 509,
+    "sha256": "b3923cd878dc5f81ec9716ec6faf96cbbb46b52589891626837a45014513deb2"
+  },
+  "chapter_13_4._cross-references.md": {
+    "size": 372,
+    "sha256": "5f6721f20b44e2dde617c5a59b2c6d97c2ba940a76606e7704676dd5ffb2bfd5"
+  },
+  "chapter_14_5._conformance_check.md": {
+    "size": 677,
+    "sha256": "5cd808a0beaf6dcf924104319e3b1bb9af6238324cc2eae65096a43e086343b6"
+  },
+  "chapter_15_1._bio-acoustic_sensor_suite_(.md": {
+    "size": 1972,
+    "sha256": "22078f719062d300b19675c4213c68de9a63aeb12d8bb656253bab5e67f1a915"
+  },
+  "chapter_16_2._les_(leaf_edition_system)_e.md": {
+    "size": 2500,
+    "sha256": "2c4008e29f2835e1d55f1feb422dd6a8c627a5b801037466a5871f2156bcb7bb"
+  },
+  "chapter_17_3._lacing_&_connectivity.md": {
+    "size": 1436,
+    "sha256": "f0c9e8f5cffb30736694fb6a64fe04292095e3ee36e1f80cc74fe0d734753fcb"
+  },
+  "chapter_18_4._electronics_commonality_sum.md": {
+    "size": 580,
+    "sha256": "4ca88d81c7308dc11b96643e76aa07fe3d8cab511178594120c2d0e60a3dd64e"
+  },
+  "chapter_19_5._cross-references.md": {
+    "size": 349,
+    "sha256": "e51c33e05329b4ac4e4a99ed519db0714b825cf17e1b00d8fd1313aee6be2389"
+  },
+  "chapter_20_6._conformance_check.md": {
+    "size": 671,
+    "sha256": "644ff16b188a7a08e3154962e0172dd55460e7b922cc439bb03f15d469223495"
+  },
+  "chapter_21_1._silk_textile_commonality.md": {
+    "size": 1272,
+    "sha256": "fe85599d6bf93ed757d596d4cd2e1560edf90bf105177431b159e04cd73bd734"
+  },
+  "chapter_22_2._weave_structure_commonality.md": {
+    "size": 1345,
+    "sha256": "effac2ad12470e6621a1ce92b3bd0a3de3d4770ae67e2e66c48a3e20538dda1b"
+  },
+  "chapter_23_3._yardage_&_panel_count_by_ed.md": {
+    "size": 1497,
+    "sha256": "0579fef07457b099646ae59d33cf484ec4a1c593aad8da019be7df727c015a55"
+  },
+  "chapter_24_4._manufacturing_process_commo.md": {
+    "size": 1450,
+    "sha256": "4d75481b61032fb14169be70f3a3d142c1a2b262e81f6d68af6e0017bc48b33b"
+  },
+  "chapter_25_5._cross-references.md": {
+    "size": 462,
+    "sha256": "f00c8bb8f5c2ad7e8eb237130bff8aff9ee3955dc2b49d4b913ba3bc2c0ab266"
+  },
+  "chapter_26_6._conformance_check.md": {
+    "size": 661,
+    "sha256": "894171abf1c09f54661409b508c3611d1228480d601aafe7c7b75176ae0a400b"
+  },
+  "chapter_27_1._transition_time_matrix_(all.md": {
+    "size": 3096,
+    "sha256": "15076d31cde473e1d76f987ddcbf71b13820837eff515ed5016e2b3cda979210"
+  },
+  "chapter_28_2._transition_phase_breakdown_.md": {
+    "size": 809,
+    "sha256": "1eba37f8f91ef4b92d21cd1ee2ab55e2fb62f0efb9a13f2d225000112b37b07c"
+  },
+  "chapter_29_3._transition_reliability_metr.md": {
+    "size": 582,
+    "sha256": "48be8b4001ec1e5a135fc254eef2fbe5d0399fc45af5a5a2867a8c7b9b126278"
+  },
+  "chapter_30_4._cross-references.md": {
+    "size": 396,
+    "sha256": "5d90fdd4fa55922bd06bc11b68f3fed53ce9b8c99c77fd1a3ead5b6f2f2f951e"
+  },
+  "chapter_31_5._conformance_check.md": {
+    "size": 650,
+    "sha256": "2d25666f65330d7a1b6551ca8d197051f0921b40890ab5496e0c666ba637c875"
+  },
+  "chapter_32_1._maintenance_commonality.md": {
+    "size": 2279,
+    "sha256": "3289c21be6dd2353c40a0e8b70b658b9437460188f0437df134f217fc2c79e65"
+  },
+  "chapter_33_2._spare_parts_commonality.md": {
+    "size": 1487,
+    "sha256": "df441b82b8b33df73bdef4ce0d2a102c1f0be4a8fd60fa57d006aceecce25bad"
+  },
+  "chapter_34_3._tooling_commonality.md": {
+    "size": 1391,
+    "sha256": "41155a635757c3bac0f7beb2d0a0fc826939025677cfc9060453fa54d835333e"
+  },
+  "chapter_35_4._training_commonality.md": {
+    "size": 1135,
+    "sha256": "39031840b6361a37a55fcf0107522319b7cc52ce48023c34d40d358b379398c7"
+  },
+  "chapter_36_5._cross-references.md": {
+    "size": 466,
+    "sha256": "65043231369f2dd8d0914304f1ff87da0dcfcd67bc21eb5be017b2e4350e3d76"
+  },
+  "chapter_37_6._conformance_check.md": {
+    "size": 649,
+    "sha256": "d94b53a7bfdd433ff44e1cb8f137fefb608b7e9b58a73d2754fe63c7d90be4f1"
+  },
+  "chapter_38_1._les_firmware_compatibility.md": {
+    "size": 1906,
+    "sha256": "b6b60f1dde2116b9f55d54f74883996d2a1bd01b5aede922b7f23e0901801ecb"
+  },
+  "chapter_39_2._wrist_display_application.md": {
+    "size": 1682,
+    "sha256": "c79d317a1de56660702e9022d31b10f7545b2cc6cecff11aac97456de01e3e65"
+  },
+  "chapter_40_3._digital_twin_engine.md": {
+    "size": 1802,
+    "sha256": "ed8192bc1ff87ef3c5d75ab21048af19b9dc7ae630bca64d7a5e3c73d73b1ddc"
+  },
+  "chapter_41_4._communication_&_data_protoc.md": {
+    "size": 873,
+    "sha256": "4176c4c3ed636f1ae62b9049675d06a201334eb6ec61095ae1eb09aabd1cb988"
+  },
+  "chapter_42_5._cross-references.md": {
+    "size": 355,
+    "sha256": "d2be5c15fc0831c74bb9073f578ce6816ed3041aa59717a59b7d70d7ec3300bc"
+  },
+  "chapter_43_6._conformance_check.md": {
+    "size": 658,
+    "sha256": "019e3a2b2c46cedd6a44d18b2190aee782c3eb91e0dcdb1d0296596f5efd4fed"
+  },
+  "chapter_44_1._packaging_commonality.md": {
+    "size": 2173,
+    "sha256": "6abec2b35bcdc971c0802f4e0eaecbc2a7f307c55fedfa5a705a6f06fbe536cd"
+  },
+  "chapter_45_2._transport_commonality.md": {
+    "size": 1391,
+    "sha256": "df341e6b5f548d49301378e4a46cab388e088b68cb227ce0328896e60bbdc1ab"
+  },
+  "chapter_46_3._storage_commonality.md": {
+    "size": 2080,
+    "sha256": "d3756684a0a28f3c954bb3ec7020a084b1f11ddda302d9cadb581777fc1980ef"
+  },
+  "chapter_47_4._deployment_packaging.md": {
+    "size": 747,
+    "sha256": "11cb28cc167b43548bed409238b2bdd16f9ba0e93750a0bb82fbefa6cb783f72"
+  },
+  "chapter_48_5._cross-references.md": {
+    "size": 510,
+    "sha256": "1da2786b8ef37682845429936e66563b963bc5577ee94b9f559022240917f857"
+  },
+  "chapter_49_6._conformance_check.md": {
+    "size": 650,
+    "sha256": "681559e0efaec2959c44850c7f9813a407ce2a4c3366ae0e310b19ea107f17b1"
+  },
+  "chapter_50_1._regulatory_framework_overla.md": {
+    "size": 1219,
+    "sha256": "1c1ad1e6ff9629c294d6a99d489d12684646c383bc7252cf1483f55c063ebeef"
+  },
+  "chapter_51_2._test_evidence_reuse.md": {
+    "size": 1484,
+    "sha256": "4c2e08beab74564e50d3a040b713835679ac7e734c2760ee703fde78bb269a98"
+  },
+  "chapter_52_3._technical_file_commonality_.md": {
+    "size": 1280,
+    "sha256": "e1d07ded55268dfd6b00da901afb9b4e33c7a9af914c16385e2aacbdb3ddb104"
+  },
+  "chapter_53_4._export_control_classificati.md": {
+    "size": 1348,
+    "sha256": "dfc070158d1e9653710b5655bb36ecafc1d8ab7048e612b893f77499e833ee9c"
+  },
+  "chapter_54_5._marking_&_labeling_commonal.md": {
+    "size": 1176,
+    "sha256": "624c6456d00efac660b55a7931213577ff8b252f163f06722c249c05f34eadd0"
+  },
+  "chapter_55_6._cross-references.md": {
+    "size": 542,
+    "sha256": "2874d4e19b545bc6f0fd2f21036ffa32444d5552205dfdcbe48e496c957c1781"
+  },
+  "chapter_56_7._conformance_check.md": {
+    "size": 645,
+    "sha256": "5879b97756868d7e895c030032284ce72f1bda3d5852ea40839bf2c318b37eed"
+  },
+  "chapter_57_1._unit_cost_comparison.md": {
+    "size": 1467,
+    "sha256": "921913162a7127ce90efe0f44ba3081d1a70ad1778c3459406b5de85d11d39d8"
+  },
+  "chapter_58_2._volume_pricing_(learning_cu.md": {
+    "size": 1227,
+    "sha256": "1ef4e6395c88280a3827731e45098ca4be8e84e884560b3766fec0c59bf477f1"
+  },
+  "chapter_59_3._lifecycle_cost_(10-year_hor.md": {
+    "size": 977,
+    "sha256": "09d3f492de2657d1342e427dc527717acbf79cd47dfe8e521a5f63e9addc3990"
+  },
+  "chapter_60_4._logistics_footprint.md": {
+    "size": 945,
+    "sha256": "a566a0f187f6a4c9528f23970491a316453972255c6e608c13a6d82d33f630a4"
+  },
+  "chapter_61_5._cross-references.md": {
+    "size": 386,
+    "sha256": "eef9694d6daf2d16623a465798c85be5e0a0f0593207adf273ebe8d17f2221c6"
+  },
+  "chapter_62_6._conformance_check.md": {
+    "size": 646,
+    "sha256": "066c58b74609cb836d53164e8d919c6aaf2784fcdb86b91ea285707f4e2aae24"
+  },
+  "chapter_63_1._shared_risk_register.md": {
+    "size": 1330,
+    "sha256": "166e92449d889d646ef379bcc07d77a3b691eda8a5aa1a06cabc3643cc027662"
+  },
+  "chapter_64_2._edition-specific_risks.md": {
+    "size": 1817,
+    "sha256": "3fd20c1102d63e8249d749034f75ee075cd7ee4ffc980aeb4b1b5743b38762d9"
+  },
+  "chapter_65_3._opportunity_commonality.md": {
+    "size": 1315,
+    "sha256": "15a8db6500e81712364c64f0273561e376f77ecfd4d61407da8b3cc53f9162fc"
+  },
+  "chapter_66_4._cross-references.md": {
+    "size": 367,
+    "sha256": "50857ca712ececa96120256f5ef25e5d2ac6e29ab8670b5e2cebc8a0a51b6db9"
+  },
+  "chapter_67_5._conformance_check.md": {
+    "size": 653,
+    "sha256": "5d00bf43bb5d42179e3840556dcd2c5671c4ec28390fa89efd0757fab867ec54"
+  },
+  "chapter_68_1._simulation_model_commonalit.md": {
+    "size": 2265,
+    "sha256": "2486d55023a6a7dde06f4f13cdb800ea7864186804e086d498fd188bf796ed39"
+  },
+  "chapter_69_2._digital_twin_commonality.md": {
+    "size": 1039,
+    "sha256": "b6dfd23b06515b0a71f3876f78a32d8fce62bce5f85cb757dab54dfd699dfa56"
+  },
+  "chapter_70_shared_across_all_editions.md": {
+    "size": 919,
+    "sha256": "569ead3a393d8f67982e01255e6fc6bedca6934b8744bfec92a1153845edcb0f"
+  },
+  "chapter_71_3._simulation_validation_cross.md": {
+    "size": 1105,
+    "sha256": "280d8e8d8ef3552b5ba3a29e834584c11f6b249df902e565b441657ccd9d32db"
+  },
+  "chapter_72_4._cross-references.md": {
+    "size": 449,
+    "sha256": "efc08673a4be69b2017ad539135bd77ffc6cc3502cf97b1d7a5aa450142adf6d"
+  },
+  "chapter_73_5._conformance_check.md": {
+    "size": 665,
+    "sha256": "1f28a84070281309281a7f2b4f48e12b8979da54860f905c9b309571512ef1a7"
+  },
+  "chapter_74_1._family_portrait_series.md": {
+    "size": 2856,
+    "sha256": "ee03b64e816bfc2441d52413055184d692b38232031d5b6d1efbd28a2f112691"
+  },
+  "chapter_75_2._edition-specific_master_com.md": {
+    "size": 2792,
+    "sha256": "9e82e20ca4bb6346240ca555f2380a6b0727be44968d0302d03935be1e7fab07"
+  },
+  "chapter_76_3._technical_cutaway:_shared_a.md": {
+    "size": 1013,
+    "sha256": "b81b52c1f9cee1ba83c63bfb9081927585cd290935424a236fc72eee4c9f931a"
+  },
+  "chapter_77_4._cross-references.md": {
+    "size": 513,
+    "sha256": "3f2ef368279a536c4f9f514314bc75539e7bf30d895a5d2773f7c27afa49b957"
+  },
+  "chapter_78_5._conformance_check.md": {
+    "size": 662,
+    "sha256": "08f1cdb95aa54890ca73a7960277addc834cff3a20b5c2599e7a75c6859864df"
+  },
+  "chapter_79_1._cross-edition_acronyms.md": {
+    "size": 718,
+    "sha256": "6e6667d50bd3f99542038a38a2d3945e9393dfc9a68a73a58837a0491516bda8"
+  },
+  "chapter_80_2._compatibility_class_definit.md": {
+    "size": 566,
+    "sha256": "4a5db12db5101f821c9042bba029720f2a84201b0eebfbd8686d91865339e849"
+  },
+  "chapter_81_3._morphology_factor_reference.md": {
+    "size": 805,
+    "sha256": "bc73343622ca1e0fbda4aebdc0c5114867fb95ac29aed38b4f00cf1dd90c888e"
+  },
+  "chapter_82_4._les_zone_sensitivity_factor.md": {
+    "size": 1031,
+    "sha256": "b50490a968e22b12c4e06a9cc86f971622cf57b54048a77e76486c3e0b7cf86a"
+  },
+  "chapter_83_5._edition_transition_time_ref.md": {
+    "size": 1527,
+    "sha256": "cb51f57c94f6f151e8aa15b25ad54f1268c8c8b7febbc736a0406e7856ac909d"
+  },
+  "chapter_84_6._common_part_numbers.md": {
+    "size": 1433,
+    "sha256": "d2c46520c7d6558b6e68c57bddb38cdf8bde11e3e251e710d0032247d49c49f0"
+  },
+  "chapter_85_7._cross-references.md": {
+    "size": 350,
+    "sha256": "4a0c6dd44a6c99aec72df148701d5d134246507dcf68a70e7794dcab1a1d8e0d"
+  },
+  "chapter_86_8._conformance_check.md": {
+    "size": 659,
+    "sha256": "41d790ed1391851bbe0eeb295dce6cc9172c742bc400e6d4e220208afa36a19c"
+  },
+  "chapter_87_1._morphology_delta_tables.md": {
+    "size": 1066,
+    "sha256": "d55f045a074d342d13d38612f437edbc2c43e65656531212e89daa799cbebd03"
+  },
+  "chapter_88_2._system_specification_deltas.md": {
+    "size": 1399,
+    "sha256": "a824f53621820e82d93d8b111800924af51dfe3d4812d2867383d93ff2c2d1f3"
+  },
+  "chapter_89_3._component_count_deltas.md": {
+    "size": 1071,
+    "sha256": "0c6c26886303661296cb94032bcbe337ac0b3df950fd1c45422522ad89b910f0"
+  },
+  "chapter_90_4._les_tension_deltas.md": {
+    "size": 844,
+    "sha256": "87f59668e0e5683325b9c0c03a8e0a1e743b279154211da8b47dfb5c180ba440"
+  },
+  "chapter_91_5._cost_deltas.md": {
+    "size": 739,
+    "sha256": "913a610ca189ee3caaa75c420ebcc3a8ff087e4849102ad3b99d520371a654ca"
+  },
+  "chapter_92_6._cross-references.md": {
+    "size": 294,
+    "sha256": "56b2c0218404de20496e5eec14caf168e444c9f93064ef473ec3ba1fb9d1bb31"
+  },
+  "chapter_93_7._conformance_check.md": {
+    "size": 666,
+    "sha256": "b9a86e7976a718eb96eb7807287c37b2378ea5e1f269e05bc58f106951819c1d"
+  },
+  "chapter_94_1._document_conformance_summar.md": {
+    "size": 736,
+    "sha256": "5cb6129ef36ff5e4076f295c282b650ce507e03d4091d4328604227ed52df662"
+  },
+  "chapter_95_2._edition_certification_statu.md": {
+    "size": 1011,
+    "sha256": "14371228615e5c3e3e47ab16ab66e6730bc2074fec595530518a0827cf6ec105"
+  },
+  "chapter_96_3._cross-edition_test_evidence.md": {
+    "size": 948,
+    "sha256": "a711dcfd664bd2abbff7b72f8cc4688f686f71c79ac9001281a1190e97a2767e"
+  },
+  "chapter_97_4._technical_file_commonality_.md": {
+    "size": 1048,
+    "sha256": "366155445e1050bbad519f07f820fb9b2a29b27acce7026f2d8e2555e3046575"
+  },
+  "chapter_98_5._export_control_&_licensing.md": {
+    "size": 779,
+    "sha256": "ce7b30135462c82b560e9712c2ee856eaee9a58ca2ba2265e6e15823533c5f3e"
+  },
+  "chapter_99_6._worldline_pipeline_completi.md": {
+    "size": 75,
+    "sha256": "fbfe9a71228e41a640efd49e6b807fd29610847a2b72b5777c8eb31ecc465d0b"
+  },
+  "chapter_100_1._author_full_document_(compa.md": {
+    "size": 76,
+    "sha256": "9b375bd029ad57aaab43d4682802038d250e1f4eefd0903fa779f40821b87b22"
+  },
+  "chapter_101_\u2192_complete:_27_pieces_authored.md": {
+    "size": 77,
+    "sha256": "b1584784427e155ab46c8a0de9063faf0f86120dc1f3e011a009ef91c996d168"
+  },
+  "chapter_102_2._split:_worldline_split_doc-.md": {
+    "size": 72,
+    "sha256": "fe39a15b3506c48923abe44721fa73ce11225e6edf34f03d72ab4252e92d1be2"
+  }
+}

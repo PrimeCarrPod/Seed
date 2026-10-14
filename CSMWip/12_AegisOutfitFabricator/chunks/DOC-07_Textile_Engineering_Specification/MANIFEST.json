@@ -1,0 +1,62 @@
+{
+  "chapter_01_intro.md": {
+    "size": 43,
+    "sha256": "965225f115301dffa1a7543b79902acabf64e34ad579eae503a92e5ae161e7fc"
+  },
+  "chapter_02_aegisoutfitfabricator_core_doc.md": {
+    "size": 41,
+    "sha256": "7f57e2f14035619bd61d0e86d652e0289f4a18d1269765597410d40e517eeb3f"
+  },
+  "chapter_03_1._introduction_and_scope.md": {
+    "size": 519,
+    "sha256": "a571b5bce519311d508c58492c986e9845da342a70e4fbe611b7b7f98a0b0327"
+  },
+  "chapter_04_2._silk_fibroin_engineering_sp.md": {
+    "size": 2394,
+    "sha256": "0117e5347bf78c6dd32245cd6258f643e68f10fe0ddea6106340ddadc32fadec"
+  },
+  "chapter_05_3._orthotropic_elasticity_tens.md": {
+    "size": 1333,
+    "sha256": "c7640d9ce4008738e7f4fe9707e0c9a52dd3cfb7e496af5cb780a5f333cbb9a0"
+  },
+  "chapter_06_4._cieta_textile_typologies_fo.md": {
+    "size": 1796,
+    "sha256": "4c028f3dfaab1ff385a29d20def61b3899ad5ca5736ff469b2df96ce137de583"
+  },
+  "chapter_07_5._metallic_thread_engineering.md": {
+    "size": 1987,
+    "sha256": "b976f0edffa8fd5f8764ed0606b177fb5faaeaa9147b30e2c61e6e6ee84e3f5c"
+  },
+  "chapter_08_6._seam_engineering_specificat.md": {
+    "size": 2721,
+    "sha256": "393662eae2d966aee4ce8657d725dd48700b66b57bdc7a2d42c143201b23a77f"
+  },
+  "chapter_09_7._hyperelastic_constitutive_m.md": {
+    "size": 983,
+    "sha256": "175620cfb12c725b79c7a0306873f14a05ef6286f7a68495905f51912b95ae43"
+  },
+  "chapter_10_8._thread_material_science_(sy.md": {
+    "size": 1875,
+    "sha256": "42a0e1a064a1450e85cfb00f9fe1fb048e5a28dd4970268e3f228ac1e1773d9f"
+  },
+  "chapter_11_9._robotic_assembly_protocols_.md": {
+    "size": 668,
+    "sha256": "95707790425d555fe72b705c7dfb93a23b2ea7a139b51433c6255f4bbc8f9bff"
+  },
+  "chapter_12_10._threadless_joining_technol.md": {
+    "size": 792,
+    "sha256": "ee26e6eda86648455dbc233829c2b37a0de31ad1d96ced75fb4b7120cc6631d1"
+  },
+  "chapter_13_11._constraint_algorithms_from.md": {
+    "size": 999,
+    "sha256": "6133cb971e200d9e3fc17e9086ff81deaf0f4f606c88c61f54c2860d6a758295"
+  },
+  "chapter_14_12._traceability_matrix_\u2014_doc-.md": {
+    "size": 2121,
+    "sha256": "645cd5154365dc474cb04bc2a4cac974b33485f4a56479cdbc126c72600ad393"
+  },
+  "chapter_15_13._conformance_check.md": {
+    "size": 385,
+    "sha256": "9d9f1aa0a00e1d0abde52a9251e8829c737453fefc0a421b2ca438dcd7285aa4"
+  }
+}

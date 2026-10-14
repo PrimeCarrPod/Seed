@@ -1,0 +1,22 @@
+{
+  "chapter_01_intro.md": {
+    "size": 51,
+    "sha256": "8dc6bfa92ea11437416a284970ebf5a0517a51c47a39c795f3b8c06eb4abf91f"
+  },
+  "chapter_02_aegisoutfitfabricator_research.md": {
+    "size": 55,
+    "sha256": "665e6484c7614a47aeaa7a715bbf8199fe187c3c25e11f4eb8dbe42d93e73613"
+  },
+  "chapter_03_1._alcega_developable_surface_.md": {
+    "size": 3496,
+    "sha256": "751609af3f0fb45b946e9194f6bf53f08c1604120b7a62a0639770acfc50bdab"
+  },
+  "chapter_04_2._garsault_proportional_scali.md": {
+    "size": 3409,
+    "sha256": "55ccca11b727c5786ea5ff66274a874e504c895885f90784167c3d58c2548791"
+  },
+  "chapter_05_3._pleating_kernel_(watteau_ba.md": {
+    "size": 2344,
+    "sha256": "22045b99a84291471b6c32a34bd39a03a67fbaad7bd0d4a82d90e615fd4fdf05"
+  }
+}

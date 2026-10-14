@@ -1,0 +1,1 @@
+# DRAFT-02: Garsault Proportional Scaling System

@@ -1,0 +1,46 @@
+{
+  "chapter_01_intro.md": {
+    "size": 406,
+    "sha256": "13cd2fe49237d0c93879f0ab0313ba6c26b8ec7f70ff69397161b3b054c7ca68"
+  },
+  "chapter_02_1._developable_surface_engine_.md": {
+    "size": 2101,
+    "sha256": "6d28e26150e0f28a8adf9f5c49265d3644f23aee54602bb3e921e01531d7232f"
+  },
+  "chapter_03_2._proportional_scaling_system.md": {
+    "size": 1978,
+    "sha256": "2c7fbdcdd20081bc9c0edee92bf001dee2cf818ee717b34620e02416964944d7"
+  },
+  "chapter_04_3._pleating_kernel_(from_draft.md": {
+    "size": 1955,
+    "sha256": "872ac35168d363bde33adc6c8c7c4d15fa74cb2c4fa367e740a6ceaf02f8d04f"
+  },
+  "chapter_05_4._hoop_architecture_(from_dra.md": {
+    "size": 1150,
+    "sha256": "f908a81cce61445c0facdbbb30cfc3e9ea34b24bae982811d7bfe8f67cf5cd04"
+  },
+  "chapter_06_5._zero-waste_nesting_optimize.md": {
+    "size": 1608,
+    "sha256": "26d4cb67cfe11b34a0143c9ce1d99565f9277ecf0734f03454e72811b38d5d3d"
+  },
+  "chapter_07_6._8-edition_pattern_generatio.md": {
+    "size": 1165,
+    "sha256": "a3fb0f24a6045d5f6afd7bc795920e4dca1e8701a39987bcdf8aa21102fb7506"
+  },
+  "chapter_08_7._traceability_matrix.md": {
+    "size": 1338,
+    "sha256": "b531adb789ff77e5390510835638946701ca14888f7982142d482c95fc1110bc"
+  },
+  "chapter_09_8._standards_compliance_summar.md": {
+    "size": 487,
+    "sha256": "ccf2b7edec93aba644ab716c766e46d65f7630618b2fb9382da0d17ca6bd0683"
+  },
+  "chapter_10_9._computational_performance_m.md": {
+    "size": 392,
+    "sha256": "9f26aa72f3469116a554d2aecbebe372b8500b82b2f155d9a5e890ef8a6712d2"
+  },
+  "chapter_11_10._risk_register_\u2014_geometric_.md": {
+    "size": 861,
+    "sha256": "881e0b95e307d5c0d156db2784c4fbdf248c92902c421dad0a7a61237de0aad2"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "chapter_01_intro.md": {
+    "size": 372,
+    "sha256": "4063bac849bcaa6665e8607b320340eec8203037a14b815339234b2f3971f1b4"
+  },
+  "chapter_02_1._silk_fibroin_system_(from_m.md": {
+    "size": 2685,
+    "sha256": "437603316809b69c2b88caa9e2ce759508d9037a5a07fef070b686cafd90c062"
+  },
+  "chapter_03_2._structural_foundation_mater.md": {
+    "size": 3184,
+    "sha256": "923d8e440388edfb00356c34170a207909e4204bafecda2186e3035fd0483ed8"
+  },
+  "chapter_04_3._protective_layer_integratio.md": {
+    "size": 4663,
+    "sha256": "1d479ecc51da29dfcc5364eb2fbd82c7cf6f10706a1d202c261a992e565aa029"
+  },
+  "chapter_05_4._cross-property_validation_m.md": {
+    "size": 1697,
+    "sha256": "4c5c510d1ff7d6581a2783c42016d749a179dda7ee68b9c623c02578e8997a24"
+  },
+  "chapter_06_5._traceability_matrix.md": {
+    "size": 1431,
+    "sha256": "6adca1c498b9e8ab18146ef7d752769044002daa2e63757c5037aa31732931ca"
+  },
+  "chapter_07_6._standards_compliance_summar.md": {
+    "size": 943,
+    "sha256": "9816b433774fdd0dce114bc501eaaa5f8e13107337d7c49c2343b9a21060d258"
+  },
+  "chapter_08_7._risk_register_\u2014_material_in.md": {
+    "size": 886,
+    "sha256": "f93ece5f2b8fefa805496498775dd7a6d9ea5d3923610a205e3f7f6d36bc614e"
+  }
+}

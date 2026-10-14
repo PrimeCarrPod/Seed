@@ -1,0 +1,374 @@
+{
+  "chapter_01_intro.md": {
+    "size": 191,
+    "sha256": "a5bf65af8a3e3e71849ca586077890ef911b367d3f52b7bd3549432e001ad28b"
+  },
+  "chapter_02_1._purpose_&_scope.md": {
+    "size": 1452,
+    "sha256": "454656afbe0eabf7f5d2e61e82ffc31946220aa65050d7567e921b2a7833f376"
+  },
+  "chapter_03_2._cross-references.md": {
+    "size": 489,
+    "sha256": "8e6c069037a3621fdef408726e9d82fef4ce99d6f327252a65c27c82d2c7c1ec"
+  },
+  "chapter_04_3._conformance_check.md": {
+    "size": 626,
+    "sha256": "8550c22d8872adb1a06448f2379ba27fd0bd5b72d14bde159dee10867755fffa"
+  },
+  "chapter_05_1._rm-ts_\u2192_rm-tg_delta_table.md": {
+    "size": 2127,
+    "sha256": "0b5df220cc50435ad51aa821fe61b486d00e8382cfce8725f0f63390ac19a4e2"
+  },
+  "chapter_06_2._rm-ts_\u2192_rm-ss_delta_table.md": {
+    "size": 2083,
+    "sha256": "0f2b5217ac0011cc44aa8581cdd8e92090ededcb009160e6fbf7319e0d9f8818"
+  },
+  "chapter_07_3._cross-references.md": {
+    "size": 377,
+    "sha256": "ddfa0ed435722c984ff6a873ba036ebf5ce26ca5b62940f70e83d9fdafe88331"
+  },
+  "chapter_08_4._conformance_check.md": {
+    "size": 664,
+    "sha256": "d81b6938a151635cdc6533e56575820e93290bfce4516ef866a6ffa65325c65b"
+  },
+  "chapter_09_1._rm-ts_\u2192_rm-sg_delta_table.md": {
+    "size": 2039,
+    "sha256": "6045cbd7a8699a5cacd184b0451f82e57002ee42ecf763f5cde146413ce771e5"
+  },
+  "chapter_10_2._rm-tg_\u2192_rm-ss_delta_table.md": {
+    "size": 2188,
+    "sha256": "803443019c029ab051f3110bcc3c69a3d8c09ed545338f34156d3b2397935a39"
+  },
+  "chapter_11_3._cross-references.md": {
+    "size": 373,
+    "sha256": "6ec9ec05e8e6554d0898968000c3013b92da5b26a8a48fad2cf939cebaaddd6d"
+  },
+  "chapter_12_4._conformance_check.md": {
+    "size": 665,
+    "sha256": "4718c26f2308597a08c515702b225cc99d4eb34c05947176e4e05bd6218c0765"
+  },
+  "chapter_13_1._rm-tg_\u2192_rm-sg_delta_table.md": {
+    "size": 2168,
+    "sha256": "72dfc1287ef7c66b08670ca597c16de03330f990082719323368315d80703ad8"
+  },
+  "chapter_14_2._rm-ss_\u2192_rm-sg_delta_table.md": {
+    "size": 2170,
+    "sha256": "0d751b6dcf4644d54950066d6a4827b8cd758a9f248aaeda8f63edd47e025fed"
+  },
+  "chapter_15_3._cross-references.md": {
+    "size": 377,
+    "sha256": "4a822d1eeffce7d714c06b65477a39a6c0fe79eaa4681705a8821e6e6320d500"
+  },
+  "chapter_16_4._conformance_check.md": {
+    "size": 661,
+    "sha256": "325088677e63be83b1671d9cdcdcd8bcf3fe993e78e0d0def407d80ec257d5a7"
+  },
+  "chapter_17_1._rw-ts_\u2192_rw-tg_delta_table.md": {
+    "size": 2261,
+    "sha256": "a60fa4d902e8e8a8119220ebdb3a18634bef7b97b0d5b50a187f0ec6bc9e4115"
+  },
+  "chapter_18_2._rw-ts_\u2192_rw-ss_delta_table.md": {
+    "size": 2323,
+    "sha256": "82a3989940e257cba38452e9386fb551c0a9db3496f6fc6fec7676387249f270"
+  },
+  "chapter_19_3._cross-references.md": {
+    "size": 377,
+    "sha256": "ba9c51a557cd7f69f3f6f2e597c055b0798519ad3310af90ee0c79d2bd36fc15"
+  },
+  "chapter_20_4._conformance_check.md": {
+    "size": 670,
+    "sha256": "44c33988902a1e632f430fdf6a9d7988ac27eb9d880a5db1c8aea32dd1be922c"
+  },
+  "chapter_21_1._rw-ts_\u2192_rw-sg_delta_table.md": {
+    "size": 2210,
+    "sha256": "a44b7ec5df9a4aa854cb1feeebbcc6b990a4f36f2159883d9dbf0be967872bcb"
+  },
+  "chapter_22_2._rw-tg_\u2192_rw-ss_delta_table.md": {
+    "size": 2425,
+    "sha256": "dc383f02955fbae29f5d2b854ce957ce8e8aa745c12f5e236a146a828309e737"
+  },
+  "chapter_23_3._cross-references.md": {
+    "size": 373,
+    "sha256": "6e5bb577f842bd24889981c488cdf89e1505db5d3f6ca6eb979139031ae11405"
+  },
+  "chapter_24_4._conformance_check.md": {
+    "size": 670,
+    "sha256": "a0a1c70d1004c9a6de850355ad5f6d46d78accae0078ea038bb5c457109daf43"
+  },
+  "chapter_25_1._rw-tg_\u2192_rw-sg_delta_table.md": {
+    "size": 2222,
+    "sha256": "0512de6c3b5a246341d61c4fd5b354a5d5db1f2b224c81a3e6fd524c79eebeed"
+  },
+  "chapter_26_2._rw-ss_\u2192_rw-sg_delta_table.md": {
+    "size": 2411,
+    "sha256": "83353d09af3805222dfdd598c880564ce04cc46ea9c0021897cec288cc68aaab"
+  },
+  "chapter_27_3._cross-references.md": {
+    "size": 377,
+    "sha256": "cbe2ac18bd9398cb4b02f89e8753f4691159049e347e95c207af7de7113bf1fa"
+  },
+  "chapter_28_4._conformance_check.md": {
+    "size": 649,
+    "sha256": "9cf08db9fd5de5e1b8810d51850c2407c66848bdce51677ef02c8360749b4737"
+  },
+  "chapter_29_1._cross-gender_morphology_com.md": {
+    "size": 1515,
+    "sha256": "05208dc95a7c5b2e65b1c0b1c4facada91588aa28c30540fd44189e2203f17b6"
+  },
+  "chapter_30_2._cross-gender_transition_con.md": {
+    "size": 2301,
+    "sha256": "5ce74fcbcb4cc1a8ec110f5d7fe89191e9777713af8d81c9e759d8f0fd4e318e"
+  },
+  "chapter_31_3._cross-gender_performance_co.md": {
+    "size": 1138,
+    "sha256": "fa597f733011910293612d99d43ca75177f4c45144e1e71899e25baded370473"
+  },
+  "chapter_32_4._cross-references.md": {
+    "size": 345,
+    "sha256": "677bb9462bf81d42f491eb01f3e8717ae4a225d3189c8bee70444557565e120e"
+  },
+  "chapter_33_4._conformance_check.md": {
+    "size": 643,
+    "sha256": "c8f97f50117ce0935937a56cbce6d698617308ff40ff2a98983be8b5ed30a494"
+  },
+  "chapter_34_1._subsystem_mass_deltas_by_ed.md": {
+    "size": 2478,
+    "sha256": "bc9643172a383ba31ac16a255e7307b2b67c62ce2df0633a5d4c8f0bfd9eb55d"
+  },
+  "chapter_35_2._mass_delta_matrix_\u2014_all_28_.md": {
+    "size": 2376,
+    "sha256": "75d635b959207dcd0250009a4dc873744bbb9d53ea1f862508b326eb5b61856c"
+  },
+  "chapter_36_3._cross-gender_mass_deltas.md": {
+    "size": 743,
+    "sha256": "24a99ec5d5dfac62ba26282ca6d14c6ab06db2084495ba1e8afeef2a0f600a7e"
+  },
+  "chapter_37_4._cross-references.md": {
+    "size": 303,
+    "sha256": "d8393f75440e7a868cf668831ae257b0691d769c78a3c33390a5865c713a04b4"
+  },
+  "chapter_38_5._conformance_check.md": {
+    "size": 636,
+    "sha256": "b97958a131cae270b57468fe8e9d68c14cce0a20f92457ed8ceb518c5ef1debd"
+  },
+  "chapter_39_1._unit_cost_by_edition.md": {
+    "size": 946,
+    "sha256": "34b72be8545559b5f7f84c4bd8e430b4d6a7fdaf23dcc509f9b7116dbb24707c"
+  },
+  "chapter_40_2._cost_delta_matrix_\u2014_all_28_.md": {
+    "size": 2964,
+    "sha256": "1cc4ea39bf17e0c1a208dc55d2670962caa58289c4819fc41609eeada8194f46"
+  },
+  "chapter_41_2._cost_driver_delta_analysis.md": {
+    "size": 1461,
+    "sha256": "f328c012d95be8b5f5ba274a4e5019c00a56c1b3f08146cdb6853d0e02f27353"
+  },
+  "chapter_42_3._lifecycle_cost_(lcc)_deltas.md": {
+    "size": 1690,
+    "sha256": "90b228446c090e7173af6f2d25101c5a60fe51d31ab3d3fe4c81cfeed1afa0b6"
+  },
+  "chapter_43_4._cross-references.md": {
+    "size": 354,
+    "sha256": "d0218860dea95950af6a3e2b385a30289f7c4e59dc4cce412c743d274eb32426"
+  },
+  "chapter_44_4._conformance_check.md": {
+    "size": 635,
+    "sha256": "0b27cde2642374052c027826da5d8f1d5d6f1c4bce42b58bd301ccfa9518dd55"
+  },
+  "chapter_45_1._transition_time_delta_matri.md": {
+    "size": 3039,
+    "sha256": "9bf4678509bfcaf3af4a5f5df167eee7c773cab4f5b1aa469aa59fc135d45548"
+  },
+  "chapter_46_2._spare_parts_delta_by_transi.md": {
+    "size": 2165,
+    "sha256": "4ca61c9c70f4bc35c468a5dc4d9bd6f229ed19aa9bb265ee4597c1fbb7ff4a97"
+  },
+  "chapter_47_3._personnel_&_tooling_deltas.md": {
+    "size": 846,
+    "sha256": "8db710bfe2e7fb94a46b9a4404c8e67eb7689808dde5ec38a602bd509b5695bd"
+  },
+  "chapter_48_4._cross-references.md": {
+    "size": 347,
+    "sha256": "c5a5c5ab32b5b0fd0ed525c9994a1337333dda3d9212f7a3f127d925ac1d1cae"
+  },
+  "chapter_49_5._conformance_check.md": {
+    "size": 647,
+    "sha256": "9c6f6b19dc749ae26443322b19bd4569555728a8eca46019db0d35d1c2f8d13e"
+  },
+  "chapter_50_1._risk_delta_matrix_\u2014_all_tra.md": {
+    "size": 2516,
+    "sha256": "c05f01982af8590f957fbfa5447add8d599a69144900f95b93639df23c91db35"
+  },
+  "chapter_51_2._opportunity_deltas_\u2014_all_tr.md": {
+    "size": 2224,
+    "sha256": "dfdf9a46c04cd1591704c0450f8802938d6a0eef011421cb5aa120606a203c6a"
+  },
+  "chapter_52_3._transition_decision_matrix.md": {
+    "size": 1352,
+    "sha256": "80e36da1f06cc1500a48d702436abf79dcbfb9da9596ff7f4c620fb79b08585b"
+  },
+  "chapter_53_4._cross-references.md": {
+    "size": 321,
+    "sha256": "b6f98c970af47a4ad3980ba1018ada3e7b19f8a087e76a3195aaab8cc52dbd18"
+  },
+  "chapter_54_5._conformance_check.md": {
+    "size": 645,
+    "sha256": "d08a730410ea504265ef461173afc380e144268d84216ad45e52c264a26210f8"
+  },
+  "chapter_55_1._simulation_model_delta_matr.md": {
+    "size": 1510,
+    "sha256": "443e8dd2de15cc044c7b93bcd24f02231caaf6a5edb03ff4c62473567d6479c9"
+  },
+  "chapter_56_2._digital_twin_rom_(reduced-o.md": {
+    "size": 2032,
+    "sha256": "84b1a6e23ebe16e2b15ab4f97272aa524b7a8020e871cbc5b370f2a593bfd976"
+  },
+  "chapter_57_3._digital_twin_real-time_upda.md": {
+    "size": 1409,
+    "sha256": "5ca0270ba91538128319fd009e70bb0f20a5f97792663cbb7e84228b2153adf4"
+  },
+  "chapter_58_universal_digital_twin_update_.md": {
+    "size": 1006,
+    "sha256": "a55688f01bf4a7cbf317e1d403d23be8e3d3581a27cc2163211da14a21ab2e18"
+  },
+  "chapter_59_4._predictive_maintenance_outp.md": {
+    "size": 679,
+    "sha256": "39950384f873bbcfb895ea9eed219968a98ce708d8bffdf9bc5977d026888856"
+  },
+  "chapter_60_5._cross-references.md": {
+    "size": 416,
+    "sha256": "89b2ffb912230639c45f0281f21588d176f071ffa637f10166164c67ce5aebad"
+  },
+  "chapter_61_6._conformance_check.md": {
+    "size": 650,
+    "sha256": "df668a6b78b7482b9d1872a0fe3a433cb8e261761a0e6a2e339dfe92398681ed"
+  },
+  "chapter_62_1._delta_visualization_framewo.md": {
+    "size": 186,
+    "sha256": "6d29176cc699dafa20ea136f84464fffc75fadb8e8702b572940255b4c19f296"
+  },
+  "chapter_63_2._transition_sequence_prompts.md": {
+    "size": 2661,
+    "sha256": "58ab7582f60f4b3db980db16e562554277812a4f5d13206417ffb9c6e5d746a7"
+  },
+  "chapter_64_3._delta_comparison_visualizat.md": {
+    "size": 1739,
+    "sha256": "63561411eec455c0e3d40747ca84c8b745d50e50f4906db6e1e6ea7f23f050f6"
+  },
+  "chapter_65_4._cross-gender_conversion_(fa.md": {
+    "size": 558,
+    "sha256": "26904f246515bcb31736a6f5494995d3586658dc53528fd03ae57e75e25017c0"
+  },
+  "chapter_66_5._negative_prompts_(universal.md": {
+    "size": 764,
+    "sha256": "ca7f4c71fcedae427716ef903b458ed41149857082f4149b4661443e6358ddda"
+  },
+  "chapter_67_6._generation_parameters.md": {
+    "size": 445,
+    "sha256": "448860eebedc9d72f7584960d435b6ff24c29c54c093bae3200bcc7eec706a91"
+  },
+  "chapter_68_7._cross-references.md": {
+    "size": 318,
+    "sha256": "af33508e6ad6e0f34ca3b49c38dbd17e755bcda5759597aa9d2aa51d5084acc8"
+  },
+  "chapter_69_8._conformance_check.md": {
+    "size": 640,
+    "sha256": "a5726a8971421db9bfc35b848dcd2ac4e89be09596dbb5bdf3b64edff87d3cd8"
+  },
+  "chapter_70_1._delta_terminology.md": {
+    "size": 1442,
+    "sha256": "fe6e3189b3a9d034277c6a6de4285482536ee66e1720f49294c6b12b1d341052"
+  },
+  "chapter_71_2._edition_code_reference.md": {
+    "size": 739,
+    "sha256": "417453c86c4d07a5c57668ad57ede48c269d49a04b74f671f4453f8f1c44a470"
+  },
+  "chapter_72_3._transition_class_quick_refe.md": {
+    "size": 499,
+    "sha256": "c5c873339dae6a16fc9f43e998aa3ccb1c6ad40d673d1e739a4756e469642dd4"
+  },
+  "chapter_73_4._mathematical_symbols.md": {
+    "size": 1725,
+    "sha256": "b5f3a3055e442f8c86c5d21df975bc1d8ba9de5499b8d0b9026f17ce3dfc46f0"
+  },
+  "chapter_74_5._edition_pair_notation.md": {
+    "size": 381,
+    "sha256": "f57f41059c1d6a4b13be7970034fb657b2c683daa37426e65610c9cdcdde6550"
+  },
+  "chapter_75_6._cross-references.md": {
+    "size": 358,
+    "sha256": "a1f3177f10d34f6d20f3c1745369aed495012320d7346b6f9bd024fea40767f0"
+  },
+  "chapter_76_7._conformance_check.md": {
+    "size": 645,
+    "sha256": "544debfc8ff28300ccbc5120c0702c6a671652b5c9d45c2196b954c470d69fd2"
+  },
+  "chapter_77_1._master_traceability_matrix.md": {
+    "size": 997,
+    "sha256": "e18362633cc1cfa4c8e2bb845e5f17b1b045b4b74cc8219c591eed5c48ef0075"
+  },
+  "chapter_78_2._document_cross-reference_tr.md": {
+    "size": 1503,
+    "sha256": "41e3c9fc5b1797b12d9f00d88f3305cdba6e4f78fe7de481245b2e90f88d7e8e"
+  },
+  "chapter_79_3._external_document_traceabil.md": {
+    "size": 2502,
+    "sha256": "9e6a0f5b891ec262df2f507748798f3d4e35a28a9e7126776f635c077cbf8a7d"
+  },
+  "chapter_80_4._standards_traceability.md": {
+    "size": 678,
+    "sha256": "e404a77ed108a72851751ddd679cdf003133bc8c52494c2ba491a1adae8b9fac"
+  },
+  "chapter_81_5._verification_cross-referenc.md": {
+    "size": 450,
+    "sha256": "60d07ddc1f5fad66338251b3f08726f3e247fab6dc00fca531ce7b5a2d3d7f7a"
+  },
+  "chapter_82_6._cross-references.md": {
+    "size": 565,
+    "sha256": "f46a145940b30a87f69afa00f406a411f134e153b56bfd06323f389280c121a3"
+  },
+  "chapter_83_7._conformance_check.md": {
+    "size": 650,
+    "sha256": "dd7cc4698328672c4986b5873cbcced35d2feac3b783a7e464107e55d5b8c82f"
+  },
+  "chapter_84_1._document_conformance_summar.md": {
+    "size": 879,
+    "sha256": "f0f3a1a43e6a2318034eaa9d5ce616b973534caf0100daf6d03ad4ed6c1361f2"
+  },
+  "chapter_85_2._delta_table_completeness.md": {
+    "size": 1519,
+    "sha256": "d4f25efce0ce225a443e74bfaba62fd78948977efe4b2bea530bce42c7fc8c7a"
+  },
+  "chapter_86_2.2_derived_delta_tables_\u2014_com.md": {
+    "size": 439,
+    "sha256": "aaf4839c0a2c035d0ffd897857096c6a712528bdccebf8f8063c76d910a03afa"
+  },
+  "chapter_87_3._all_28_transitions_\u2014_verifi.md": {
+    "size": 274,
+    "sha256": "f5983d18f1f82a0a2e76c85f31a7767e51567257a96f88351c8ca03e414e5ef5"
+  },
+  "chapter_88_3._cross-edition_compliance_ma.md": {
+    "size": 602,
+    "sha256": "6e7f170bbe8e9bc73a725e08c12ac6ab7a1cb2f17d8cdad2541373b9d97baf5e"
+  },
+  "chapter_89_4._document_control.md": {
+    "size": 1135,
+    "sha256": "4a50fe8835f752ce597dc32abf439042d0e2587d1be94eb48f78fc5fe38b05a0"
+  },
+  "chapter_90_4._worldline_pipeline_completi.md": {
+    "size": 86,
+    "sha256": "8b30b7dc0f4714067a0e38cf59edd1fe720ea9272fd4c202e41fd51730a0c591"
+  },
+  "chapter_91_1._author_full_document_(28_tr.md": {
+    "size": 72,
+    "sha256": "c4082d5c0a968a9616df2fb9d2328ae8ee1b017e9f9dbf47c3c1e3c042bb9f8f"
+  },
+  "chapter_92_\u2192_complete:_27_pieces_authored.md": {
+    "size": 77,
+    "sha256": "af61d8c78932c42771fe9b1ad3e762952b3859090adde0295e7d1d5dc1f6e3b6"
+  },
+  "chapter_93_2._split:_worldline_split_doc-.md": {
+    "size": 58,
+    "sha256": "c2399ec55025736e0675c45419b9d180287524fbfef8d97c7f8cb7c61c01c13e"
+  }
+}
