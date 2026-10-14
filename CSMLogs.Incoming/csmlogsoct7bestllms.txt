@@ -1,0 +1,155 @@
+Skip to main content
+Toggle Sidebar
+Conversations
+
+Today
+can you create for me a list of all the FREE LLMs that I can use within this ...
+
+6:13 PM
+#sort name [Pi] bash CSMScripts/freenemo.sh chamber repeat 9 # Quick verific...
+
+Unread
+4:39 PM
+can you create for me a list of all the FREE LLMs that I can use within this ...
+19%
+Online
+
+
+
+
+
+can you create for me a list of all the FREE LLMs that I can use within this Kilo.ai and their Token Weights and comparisons to more robust paid for LLMs and also what are the top-tier LLMs and their cost differences. I am aiming to use very robust token LLMs that can hold a lot of memory and use science and mathematics well. Please create for me a very detailed list to the terminal screen thank you.
+
+6:02 PM
+Prime
+can you create for me a list of all the FREE LLMs that I can...
+I'll search for current information about Kilo.ai's available models, free tiers, and pricing to give you an accurate, detailed comparison.
+
+I've gathered comprehensive data from Kilo.ai's official docs, model catalog, and pricing sources. Here's your detailed breakdown:
+
+🎯 Kilo.ai Free LLMs — Current Catalog (20+ Models)
+Model ID	Provider	Context Window	Output Max	Parameters	Best For
+nvidia/nemotron-3-ultra-550b-a55b:free	NVIDIA	1,000,000	128K	550B (MoE)	Science, math, reasoning, coding ⭐
+nvidia/nemotron-3.5-lightning:free	NVIDIA	1,000,000	128K	—	Fast reasoning, coding
+nvidia/nemotron-3-super-120b-a12b:free	NVIDIA	262,144	64K	120B (MoE)	Strong coding, reasoning
+dots-studio/dots-3-note-preview:free	Dots Studio	512,000	460K	280B total / 16B active	Long-context, note-taking
+thinkingmachines/inkling-small:free	Thinking Machines	1,048,576	—	—	Massive context
+inclusionai/ling-3.1-flash:free	inclusionAI	262,144	32K	560B total / 25B active	New, strong coding/math ⭐
+poolside/laguna-s-2.1:free	Poolside	262,144	—	118B total / 8B active	Coding agent, Terminal-Bench 70.2%
+stepfun/step-3.7-flash:free	StepFun	262,144	—	—	General purpose
+minimax/minimax-m3:free	MiniMax	262,144	—	—	Multilingual, coding
+minimax/minimax-m2.7:free	MiniMax	262,144	—	—	High-performance
+cohere/north-mini-code:free	Cohere	256,000	64K	—	Code-specific
+liquid/lfm-2.5-2.6b:free	LiquidAI	65,536	8K	2.6B	Lightweight, fast
+openrouter/free	OpenRouter	200,000	—	—	Router to multiple free models
+kilo-auto/free	Kilo (auto-router)	256,000	32K	Dynamic	Best free auto-selection
+⚡ Top Free Picks for Science, Math & Large Context
+Rank	Model	Why It Wins for You
+1	Nemotron 3 Ultra (free)	1M context, 550B MoE — NVIDIA's flagship for reasoning, math, science, coding. Best overall free choice.
+2	Nemotron 3.5 Lightning (free)	1M context, optimized for speed + reasoning. Great for iterative math/science work.
+3	Dots3-Note Preview (free)	512K context, massive output (460K) — ideal for long derivations, proofs, multi-file analysis.
+4	Inkling Small (free)	1M+ context — largest free window, good for massive codebases/papers.
+5	Ling 3.1 Flash (free)	New (2025), 560B MoE, strong KiloBench coding scores.
+6	Laguna S 2.1 (free)	Purpose-built coding agent, 70.2% Terminal-Bench. Excellent for computational work.
+7	Nemotron 3 Super (free)	120B MoE, 262K context — strong balance of capability/speed.
+💰 Paid Top-Tier Models — Cost Comparison
+Model	Provider	Context	Input $/1M	Output $/1M	Tier
+openai/gpt-5-pro	OpenAI	400K	$10.00	$120.00	Ultra-premium
+openai/gpt-5.2-pro	OpenAI	400K	$21.00	$168.00	Ultra-premium
+anthropic/claude-opus-4.7	Anthropic	1M	$15.00	$75.00	Frontier
+anthropic/claude-sonnet-4.6	Anthropic	1M	$3.00	$15.00	Best balance ⭐
+anthropic/claude-sonnet-4.5	Anthropic	1M	$3.00	$15.00	Frontier
+google/gemini-3.1-pro-preview	Google	1M+	~$1.25	~$10.00	Frontier
+x-ai/grok-4	xAI	1M+	~$3-5	~$15-20	Frontier
+openai/gpt-5.4	OpenAI	1,050,000	$2.50	$15.00	Largest context
+openai/gpt-5	OpenAI	400K	$1.25	$10.00	Strong reasoning
+google/gemini-3.1-flash-lite	Google	1,048,576	$0.13	$0.75	Best value/large context
+anthropic/claude-haiku-4.5	Anthropic	200K	$1.00	$5.00	Fast/efficient
+openai/gpt-5.1-codex-mini	OpenAI	400K	$0.25	$2.00	Budget coding
+openai/gpt-4o-mini	OpenAI	128K	$0.15	$0.60	Cheap general
+📊 Free vs Paid — Capability Gap Analysis
+Dimension	Free Models (Best)	Paid Frontier (Sonnet 4.6 / GPT-5 / Gemini 3.1 Pro)
+Context Window	Up to 1M (Nemotron, Inkling)	Up to 1M-2M (Gemini 3.1, GPT-5.4)
+Math/Reasoning	Strong (Nemotron 3 Ultra ≈ GPT-4 level)	Superior — formal proofs, advanced calculus, physics
+Coding	Good (Laguna, Nemotron, Ling)	Excellent — full repo understanding, architecture
+Science Knowledge	Good training cutoff	Better — more recent, fewer hallucinations
+Reliability	Variable, rate-limited (200/hr/IP)	Consistent, no gateway rate limits
+Cost	$0	$1.25–$21 / 1M input; $2–$168 / 1M output
+Tool Use	Most support it	Full, reliable function calling
+Multimodal	Limited	Full (vision, audio, video)
+🎯 My Recommendations for Your Use Case
+If Staying Free (Science/Math Focus):
+Primary: nvidia/nemotron-3-ultra-550b-a55b:free — 1M context, best reasoning
+Backup: nvidia/nemotron-3.5-lightning:free — same context, faster
+Long derivations: dots-studio/dots-3-note-preview:free — 512K output
+Coding-heavy: poolside/laguna-s-2.1:free or inclusionai/ling-3.1-flash:free
+Auto-router: kilo-auto/free — picks best available automatically
+If Budget Allows (Best Science/Math):
+Budget	Model	Monthly Estimate (heavy use)
+$20-50/mo	anthropic/claude-sonnet-4.6	~$15-30 (best all-rounder)
+$10-20/mo	google/gemini-3.1-flash-lite	~$5-15 (huge context, cheap)
+$50-100/mo	openai/gpt-5 or gemini-3.1-pro	~$40-80 (frontier reasoning)
+$100+/mo	openai/gpt-5-pro or claude-opus-4.7	$100+ (maximum capability)
+⚠️ Critical Free-Tier Limitations
+Limit	Detail
+Rate Limit	200 requests/hour per IP (anonymous & authenticated)
+No SLA	Free models can disappear when promos end
+Data Logging	Auto Free may route to providers that log prompts (NVIDIA) — don't send sensitive data
+No BYOK for Free	Bring Your Own Key only works with paid-tier models
+Small Model Fallback	Background tasks (session titling) use kilo-auto/small — set to a free model in config to avoid charges
+🔧 How to Use in KiloClaw
+# In Kilo CLI / VS Code / OpenClaw:
+# 1. Auto-free (recommended start)
+kilo-auto/free
+
+# 2. Explicit free model (pick one)
+nvidia/nemotron-3-ultra-550b-a55b:free
+dots-studio/dots-3-note-preview:free
+poolside/laguna-s-2.1:free
+
+# 3. Configure small model to free (avoid background charges)
+# ~/.config/kilo/config.json
+{
+  "small_model": "nvidia/nemotron-3-ultra-550b-a55b:free"
+}
+📈 Live Catalog Sources (Always Current)
+Free models page: https://kilo.ai/landing/free-models (updates every 60s)
+Full model catalog: https://kilo.ai/models
+Pricing API: https://api.kilo.ai/api/gateway/models (no auth needed)
+Third-party pricing: https://llmpricing.dev/p/kilo/
+Bottom line: For serious science/math with large context on free tier, Nemotron 3 Ultra (free) is your best bet — 1M context, MoE architecture, strong reasoning. Pair with Dots3-Note for ultra-long outputs. If you hit rate limits or need more reliability, Claude Sonnet 4.6 (~$3/15 per 1M) is the sweet spot for paid upgrades.
+
+Want me to set up a config file with your preferred free model stack?
+
+(edited)
+6:02 PM
+yes "set up a config file with your preferred free model stack" then please evaluate all the Projects in the CSMWIP folder, that is being fine-tuned by another process so some parts may be on branches, and recommend to me what LLMs for each project you recommend, I have favored Nemotron Ultra 3. What other LLMs can I use to then polish up and bring to quality level.
+
+6:11 PM
+Prime
+yes "set up a config file with your preferred free model sta...
+The AI service is temporarily overloaded. Please try again in a moment.
+
+6:12 PM
+yes "set up a config file with your preferred free model stack" then please evaluate all the Projects in the CSMWIP folder, that is being fine-tuned by another process so some parts may be on branches, and recommend to me what LLMs for each project you recommend, I have favored Nemotron Ultra 3. What other LLMs can I use to then polish up and bring to quality level.
+
+6:13 PM
+Prime
+yes "set up a config file with your preferred free model sta...
+The AI service is temporarily overloaded. Please try again in a moment.
+
+6:13 PM
+yes "set up a config file with your preferred free model stack" then please evaluate all the Projects in the CSMWIP folder, that is being fine-tuned by another process so some parts may be on branches, and recommend to me what LLMs for each project you recommend, I have favored Nemotron Ultra 3. What other LLMs can I use to then polish up and bring to quality level.
+
+6:13 PM
+Prime
+yes "set up a config file with your preferred free model sta...
+The AI service is temporarily overloaded. Please try again in a moment.
+
+6:13 PM
+
+
+Type a message...
+
+
+Kilo Code - Open source AI agent VS Code extension
