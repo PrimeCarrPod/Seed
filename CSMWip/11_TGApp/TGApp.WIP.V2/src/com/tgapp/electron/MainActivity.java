@@ -55,8 +55,6 @@ public class MainActivity extends Activity implements SensorEventListener {
         CrashLogger.init(this);
         CrashLogger.logInfo("MainActivity", "onCreate started");
 
-        setupFullscreen();
-
         CrashLogger.logInfo("MainActivity", "Building UI");
         InsetFrameLayout root = new InsetFrameLayout(this, this);
         root.setBackgroundColor(Color.parseColor("#0A0A0F"));
@@ -73,6 +71,9 @@ public class MainActivity extends Activity implements SensorEventListener {
         setContentView(root);
         CrashLogger.logInfo("MainActivity", "UI built, loading WebView");
 
+        // NOW setup fullscreen - window is guaranteed to exist after setContentView
+        setupFullscreen();
+
         prefs = getSharedPreferences("TGE_Electron_Prefs", MODE_PRIVATE);
         restoreState();
 
@@ -84,10 +85,36 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     private void setupFullscreen() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
+        // Window is now guaranteed to exist after setContentView
+        Window window = getWindow();
+        if (window == null) {
+            CrashLogger.logError("MainActivity", "Window is null in setupFullscreen!");
+            return;
+        }
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            getWindow().setDecorFitsSystemWindows(false);
-            getWindow().getInsetsController().hide(WindowInsets.Type.statusBars());
-            getWindow().getInsetsController().hide(WindowInsets.Type.navigationBars());
+            window.setDecorFitsSystemWindows(false);
+            
+            // Add null check for insets controller
+            android.view.WindowInsetsController insetsController = window.getInsetsController();
+            if (insetsController != null) {
+                insetsController.hide(WindowInsets.Type.statusBars());
+                insetsController.hide(WindowInsets.Type.navigationBars());
+            } else {
+                CrashLogger.logWarning("MainActivity", "InsetsController is null, using legacy method");
+                // Fallback to legacy method
+                int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+                View decorView = window.getDecorView();
+                if (decorView != null) {
+                    decorView.setSystemUiVisibility(flags);
+                }
+            }
         } else {
             int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
@@ -95,9 +122,12 @@ public class MainActivity extends Activity implements SensorEventListener {
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                     | View.SYSTEM_UI_FLAG_FULLSCREEN
                     | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-            getWindow().getDecorView().setSystemUiVisibility(flags);
+            View decorView = window.getDecorView();
+            if (decorView != null) {
+                decorView.setSystemUiVisibility(flags);
+            }
         }
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     private WebView buildWebView() {
@@ -187,7 +217,6 @@ public class MainActivity extends Activity implements SensorEventListener {
         cleanBtn = mkBtn("CLEAN", "#FF6600", new CleanClickListener(this));
         row.addView(cleanBtn);
 
-        // Add log button
         Button logBtn = mkBtn("LOGS", "#FFFFFF", new LogClickListener(this));
         row.addView(logBtn);
 
