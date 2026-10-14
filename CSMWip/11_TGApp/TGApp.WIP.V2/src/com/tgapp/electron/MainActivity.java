@@ -54,35 +54,48 @@ public class MainActivity extends Activity implements SensorEventListener {
         // Initialize crash logger FIRST with try-catch
         try {
             CrashLogger.init(this);
-            CrashLogger.logInfo("MainActivity", "onCreate started");
+            CrashLogger.logInfo("MainActivity", "onCreate started - super.onCreate done");
         } catch (Throwable t) {
             Log.e("MainActivity", "CrashLogger.init failed", t);
         }
 
-        CrashLogger.logInfo("MainActivity", "Building UI");
+        CrashLogger.logInfo("MainActivity", "Creating root layout");
         InsetFrameLayout root = new InsetFrameLayout(this, this);
         root.setBackgroundColor(Color.parseColor("#0A0A0F"));
+        CrashLogger.logInfo("MainActivity", "Root layout created");
 
+        CrashLogger.logInfo("MainActivity", "Building WebView");
         webView = buildWebView();
         root.addView(webView);
+        CrashLogger.logInfo("MainActivity", "WebView added to root");
 
+        CrashLogger.logInfo("MainActivity", "Building header");
         headerOverlay = buildHeader();
         root.addView(headerOverlay);
+        CrashLogger.logInfo("MainActivity", "Header added to root");
 
+        CrashLogger.logInfo("MainActivity", "Building control bar");
         controlBar = buildControlBar();
         root.addView(controlBar);
+        CrashLogger.logInfo("MainActivity", "Control bar added to root");
 
+        CrashLogger.logInfo("MainActivity", "Calling setContentView");
         setContentView(root);
-        CrashLogger.logInfo("MainActivity", "UI built, setContentView done");
+        CrashLogger.logInfo("MainActivity", "setContentView done");
 
         // NOW setup fullscreen - window is guaranteed to exist after setContentView
         setupFullscreen();
+        CrashLogger.logInfo("MainActivity", "setupFullscreen done");
 
         prefs = getSharedPreferences("TGE_Electron_Prefs", MODE_PRIVATE);
         restoreState();
+        CrashLogger.logInfo("MainActivity", "State restored");
 
         initializePrimeEngine();
+        CrashLogger.logInfo("MainActivity", "PrimeEngine initialized");
+
         startWorldlineSimulation();
+        CrashLogger.logInfo("MainActivity", "Worldline simulation started");
         
         CrashLogger.logInfo("MainActivity", "onCreate complete. Log file: " + CrashLogger.getLogFilePath());
     }
