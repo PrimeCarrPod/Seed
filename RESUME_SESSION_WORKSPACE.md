@@ -1,34 +1,15 @@
-# RESUME_SESSION_WORKSPACE.md
+# RESUME_SESSION_WORKSPACE — 2026-10-14
 
-## Session Context: Workspace Root (/workspace/app)
+## Session State Summary
 
-### Workspace State
-- **Root AGENTS.md**: Updated with project conventions, No-Gradle build, large file strategy
-- **Root MEMORY.md**: Cross-project context, decisions, project map
-- **Root TOOLS.md**: Build tools, Python scripts, resume scripts documented
-- **Root HEARTBEAT.md**: Periodic checks for all projects
-- **Root NEXT_runner_001.md**: This file
+### Current Workspace: /workspace/app
+### Active Branch: kilo/next-cell-2le (pushed to origin)
+### Git Status: Clean (all changes committed)
 
-### Active Projects (Priority)
-1. **CSMWip/05_BOUNCE** — No-Gradle APK build (primary)
-   - Scaffold complete, needs build verification
-   - Resume: `cd CSMWip/05_BOUNCE && cat NEXT_runner_001.md`
-2. **CSMWip/11_TGApp/TGE_E5** — Episode 5, same build system
-   - Scaffolded, needs manifest/resources
-   - Resume: `cd CSMWip/11_TGApp/TGE_E5 && cat NEXT_runner_001.md`
-3. **pieces/** — Legacy fragmented storage (13-piece articles)
-   - Migration strategy: `__Python_Tools/write_large_file.py`
-4. **__Python_Tools/** — Shared automation
-   - `build_apk.py` — shared No-Gradle builder
-   - `write_large_file.py` — chunked write/compress/split/concat/manifest
+---
 
-### Key Decisions (2026-10-14)
-- **No-Gradle Android**: Pure javac + aapt2 + d8 + zipalign + apksigner
-- **No AndroidX, No Kotlin** — Java 1.8 + framework classes only
-- **Large files**: Replace 13-piece fragmentation with streaming write + gzip + logical chunks + manifest
-- **Session continuity**: Root + per-project NEXT_runner_00X + RESUME_SESSION files
+## Android SDK Environment (✅ VERIFIED)
 
-### Environment Requirements
 ```bash
 export ANDROID_SDK=/opt/android-sdk
 export ANDROID_JAR=$ANDROID_SDK/platforms/android-34/android.jar
@@ -36,19 +17,133 @@ export BUILD_TOOLS=$ANDROID_SDK/build-tools/34.0.0
 export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 ```
 
-### Verification Checklist on Resume
-- [ ] `git status` — clean?
-- [ ] Android SDK tools present?
-- [ ] `CSMWip/05_BOUNCE/build.py build` — works?
-- [ ] `CSMWip/11_TGApp/TGE_E5` — shared build works?
-- [ ] `memory/YYYY-MM-DD.md` — today's log exists?
+**Tools available:**
+- `/opt/android-sdk/build-tools/34.0.0/aapt2`
+- `/opt/android-sdk/build-tools/34.0.0/d8`
+- `/opt/android-sdk/build-tools/34.0.0/zipalign`
+- `/opt/android-sdk/build-tools/34.0.0/apksigner`
+- `/opt/android-sdk/platforms/android-34/android.jar`
 
 ---
 
-**Resume Command**:
+## Project Status (4 Projects)
+
+### 1. CSMWip/05_BOUNCE — ✅ COMPLETE
+- **APK**: `bounce.apk` (25 KB)
+- **Build**: `python3 build.py build`
+- **Package**: `com.csmlabs.bounce`
+- **Keystore**: `debug.keystore` (local)
+
+### 2. CSMWip/11_TGApp/TGE_E5 — ✅ COMPLETE
+- **APK**: `tge_e5.apk` (17 KB)
+- **Build**: `python3 ../../__Python_Tools/build_apk.py --project . --package com.csmlabs.tge.e5`
+- **Package**: `com.csmlabs.tge.e5`
+- **Keystore**: Symlink to `../../05_BOUNCE/debug.keystore`
+
+### 3. CSMWip/11_TGApp/TGApp.WIP.V2 — ✅ COMPLETE (2D Canvas)
+- **APK**: `tgapp_electron.apk` (2.1 MB)
+- **Build**: `python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron`
+- **Package**: `com.tgapp.electron`
+- **Features**: 2D HTML5 Canvas electron simulation, HUD, prime gaps, sensor integration, CrashLogger
+- **Keystore**: Symlink to `../../05_BOUNCE/debug.keystore`
+- **Log location**: `Android/data/com.tgapp.electron/files/Download/tge_electron_crash_log.txt`
+
+### 4. CSMWip/11_TGApp/TGApp.WIP.V3 — 🚧 IN PROGRESS (WebGL 3D)
+- **Package**: `com.tgapp.electron.v3`
+- **Assets**: `three.min.js` downloaded to `assets/`
+- **Features planned**: WebGL 3D with three.js, clean UI toggle (hides ALL menus)
+- **Keystore**: Will symlink to `../../05_BOUNCE/debug.keystore`
+
+---
+
+## Build Commands Quick Reference
+
 ```bash
-cd /workspace/app
-cat NEXT_runner_001.md
-cat RESUME_SESSION_WORKSPACE.md
-git status
+# === 05_BOUNCE ===
+cd /workspace/app/CSMWip/05_BOUNCE
+export ANDROID_SDK=/opt/android-sdk
+export ANDROID_JAR=$ANDROID_SDK/platforms/android-34/android.jar
+export BUILD_TOOLS=$ANDROID_SDK/build-tools/34.0.0
+python3 build.py build
+
+# === TGE_E5 ===
+cd /workspace/app/CSMWip/11_TGApp/TGE_E5
+ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
+python3 ../../__Python_Tools/build_apk.py --project . --package com.csmlabs.tge.e5 --output tge_e5.apk
+
+# === TGApp.WIP.V2 (2D) ===
+cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V2
+ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
+python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron --output tgapp_electron.apk
+python3 -c "
+import zipfile
+with zipfile.ZipFile('tgapp_electron.apk', 'a') as z:
+    z.write('assets/tge_electron.html', 'assets/tge_electron.html')
+    z.write('assets/Tile00.prime', 'assets/Tile00.prime')
+    z.write('assets/Tile01.prime', 'assets/Tile01.prime')
+"
+$BUILD_TOOLS/zipalign -f 4 tgapp_electron.apk tgapp_electron_aligned.apk
+$BUILD_TOOLS/apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android tgapp_electron_aligned.apk
+mv tgapp_electron_aligned.apk tgapp_electron.apk
+
+# === TGApp.WIP.V3 (WebGL 3D) ===
+cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
+ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
+python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
+# Add assets + re-sign (same as V2)
 ```
+
+---
+
+## Key Files for Next Session
+
+| File | Purpose |
+|------|---------|
+| `/workspace/app/NEXT_runner_001.md` | This reference + build commands |
+| `/workspace/app/RESUME_SESSION_WORKSPACE.md` | This file - session state |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/` | **Active project** - WebGL 3D |
+| `/workspace/app/__Python_Tools/build_apk.py` | Shared No-Gradle builder |
+| `/workspace/app/__Python_Tools/write_large_file.py` | Large file handling |
+
+---
+
+## Next Steps for New Session
+
+1. **Verify SDK**: `ls $BUILD_TOOLS/aapt2 $BUILD_TOOLS/d8 $ANDROID_JAR`
+2. **Enter V3**: `cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3`
+3. **Link keystore**: `ln -sf ../../05_BOUNCE/debug.keystore debug.keystore`
+4. **Build V3**: `python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk`
+5. **Add three.js + WebGL HTML** to `assets/`
+6. **Add clean UI toggle button** to hide all menus
+
+---
+
+## Git State
+
+```bash
+git status  # Clean
+git branch  # kilo/next-cell-2le (ahead of origin by 1 commit)
+git log --oneline -3  # Recent commits
+```
+
+---
+
+## Large File Handling
+
+```bash
+python3 __Python_Tools/write_large_file.py --help
+# compress/decompress/split/concat/manifest
+```
+
+---
+
+## Heartbeat
+
+```bash
+./CSMWipScripts/heartbeat.sh
+```
+
+---
+
+**Session saved**: 2026-10-14T04:08:00Z
+**Ready to continue**: TGApp.WIP.V3 WebGL 3D implementation
