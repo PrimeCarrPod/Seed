@@ -129,3 +129,74 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - [Default AGENTS.md](/reference/AGENTS.default)
 - [Scheduled tasks vs heartbeat](/automation#scheduled-tasks-cron-vs-heartbeat)
 - [Heartbeat](/gateway/heartbeat)
+
+---
+
+## Workspace-Level Extensions (Added 2026-10-14)
+
+### Project Structure Convention
+Each active project gets:
+```
+<project>/
+├── AGENTS.md           # Project-specific conventions, commands
+├── memory/             # Project daily notes
+├── TODO.md             # Project task list (milestones → tasks → subtasks)
+├── build.sh            # No-Gradle APK build entry point (if Android)
+├── src/                # Java source
+├── res/                # Android resources
+├── AndroidManifest.xml # Manifest
+└── NEXT_runner_00X.md  # Next session instructions
+```
+
+### No-Gradle Android Build Convention
+**Tools** (from Android SDK command-line tools):
+- `aapt2` — compile resources, link
+- `javac` — compile Java (source 1.8, target 1.8)
+- `d8` — dex to DEX (preferred) or `dx` (legacy)
+- `zipalign` — align APK
+- `apksigner` — sign APK
+
+**Build Flow**:
+```bash
+# 1. Compile resources
+aapt2 compile --dir res -o res.zip
+aapt2 link -o base.apk -I $ANDROID_JAR res.zip --manifest AndroidManifest.xml --java src
+
+# 2. Compile Java
+javac -source 1.8 -target 1.8 -bootclasspath $ANDROID_JAR -d build/classes src/**/*.java
+
+# 3. Dex
+d8 --output build/dex --lib $ANDROID_JAR build/classes/**/*.class
+
+# 4. Package
+aapt2 link -o app-unaligned.apk -I $ANDROID_JAR res.zip --manifest AndroidManifest.xml
+cd build/dex && zip -r ../../app-unaligned.apk classes.dex && cd ../..
+
+# 5. Align & Sign
+zipalign -f 4 app-unaligned.apk app-aligned.apk
+apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android app-aligned.apk
+```
+
+**Environment Variables Required**:
+- `ANDROID_SDK` — path to Android SDK root
+- `ANDROID_JAR` — `$ANDROID_SDK/platforms/android-34/android.jar` (or target API)
+- `BUILD_TOOLS` — `$ANDROID_SDK/build-tools/34.0.0` (or installed version)
+
+### Large File Handling (Replaces Pieces)
+**DO NOT** split files into 13+ pieces. Instead:
+1. **Write via Python streaming** — `write_large_file.py --chunksize 1MB`
+2. **Store compressed** — `.gz` for text, keep APKs/PDFs in `RESTART_PACKAGE/`
+3. **Logical chunking** — separate chapters as `chapter_01.md`, `chapter_02.md`, concat at publish
+4. **Manifest index** — `MANIFEST.json` lists all parts with checksums
+
+### Session Resume Protocol
+1. **Root level**: Read `MEMORY.md` → `memory/YYYY-MM-DD.md` → `AGENTS.md`
+2. **Project level**: Read project `AGENTS.md` → project `memory/latest.md` → `TODO.md`
+3. **Resume file**: Read `NEXT_runner_00X.md` + `RESUME_SESSION_<project>.md`
+4. **Verify**: `git status` + run project lint/test
+
+### Active Projects (Priority Order)
+1. `CSMWip/05_BOUNCE` — No-Gradle APK build system (primary)
+2. `TGE_E5` — Next TGE episode, same build system
+3. `pieces/` — Legacy fragmented storage (migrate to new strategy)
+4. `__Python_Tools/` — Shared automation scripts
