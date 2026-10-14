@@ -1,4 +1,4 @@
-package com.tgapp.electron;
+package com.tgapp.electron.v3;
 
 public class JsBridgeUpdateHeader implements Runnable {
     private MainActivity activity;
