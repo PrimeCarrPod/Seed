@@ -22,38 +22,52 @@ public class CrashLogger {
     private static BufferedWriter logWriter;
     private static File logFile;
     private static final SimpleDateFormat TIMESTAMP = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US);
-    private static final int MAX_LOG_LINES = 2000;  // Keep last 2000 lines
-    private static final long MAX_LOG_BYTES = 512 * 1024;  // 512 KB max
+    private static final int MAX_LOG_LINES = 2000;
+    private static final long MAX_LOG_BYTES = 512 * 1024;
     private static int lineCount = 0;
     private static boolean crashed = false;
+    private static boolean initialized = false;
 
     public static void init(Context context) {
+        if (initialized) return;
+        initialized = true;
+        
         try {
-            // Rotate old log if too large
-            rotateIfNeeded();
-
-            // Try external storage first (accessible via file manager)
+            // Always try internal storage first (always accessible)
+            File internalDir = context.getFilesDir();
+            logFile = new File(internalDir, "tge_electron_crash_log.txt");
+            
+            // Try external storage for user access
             File externalDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            if (!externalDir.exists() || !externalDir.canWrite()) {
-                externalDir = context.getExternalFilesDir(null);
-            }
-            if (externalDir == null) {
-                externalDir = context.getCacheDir();
-            }
+            File externalLog = new File(externalDir, "tge_electron_crash_log.txt");
             
-            logFile = new File(externalDir, "tge_electron_crash_log.txt");
+            // Rotate old log if too large
+            rotateIfNeeded(externalLog);
+            rotateIfNeeded(logFile);
             
-            // Append to existing log
+            // Use internal for writing (guaranteed), also mirror to external if possible
             logWriter = new BufferedWriter(new FileWriter(logFile, true));
             
             // Write session header
             logWriter.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
             logWriter.write("Package: com.tgapp.electron\n");
-            logWriter.write("Log file: " + logFile.getAbsolutePath() + "\n");
+            logWriter.write("Internal log: " + logFile.getAbsolutePath() + "\n");
+            logWriter.write("External log: " + externalLog.getAbsolutePath() + "\n");
             logWriter.flush();
             
             lineCount = 3;
-            log("CrashLogger initialized. Log file: " + logFile.getAbsolutePath());
+            log("CrashLogger initialized. Internal: " + logFile.getAbsolutePath());
+            log("CrashLogger initialized. External: " + externalLog.getAbsolutePath());
+            
+            // Also try to write to external for user access
+            try {
+                BufferedWriter extWriter = new BufferedWriter(new FileWriter(externalLog, true));
+                extWriter.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
+                extWriter.write("Package: com.tgapp.electron\n");
+                extWriter.write("Internal log: " + logFile.getAbsolutePath() + "\n");
+                extWriter.flush();
+                extWriter.close();
+            } catch (Exception ignored) {}
             
             // Set up default uncaught exception handler
             Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
@@ -63,7 +77,6 @@ public class CrashLogger {
                         crashed = true;
                         logCrash(ex);
                     }
-                    // Call previous handler if exists
                     try {
                         Thread.getDefaultUncaughtExceptionHandler().uncaughtException(thread, ex);
                     } catch (Exception ignored) {}
@@ -75,25 +88,19 @@ public class CrashLogger {
         }
     }
 
-    private static void rotateIfNeeded() {
-        // Check if we have a log file from a previous run that's too large
-        File externalDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File oldLog = new File(externalDir, "tge_electron_crash_log.txt");
-        if (oldLog.exists() && oldLog.length() > MAX_LOG_BYTES) {
-            // Truncate to last MAX_LOG_LINES lines
+    private static void rotateIfNeeded(File logFile) {
+        if (logFile.exists() && logFile.length() > MAX_LOG_BYTES) {
             try {
                 LinkedList<String> lines = new LinkedList<>();
-                BufferedReader reader = new BufferedReader(new FileReader(oldLog));
+                BufferedReader reader = new BufferedReader(new FileReader(logFile));
                 String line;
                 while ((line = reader.readLine()) != null) {
                     lines.addLast(line);
-                    if (lines.size() > MAX_LOG_LINES) {
-                        lines.removeFirst();
-                    }
+                    if (lines.size() > MAX_LOG_LINES) lines.removeFirst();
                 }
                 reader.close();
                 
-                BufferedWriter writer = new BufferedWriter(new FileWriter(oldLog, false)); // overwrite
+                BufferedWriter writer = new BufferedWriter(new FileWriter(logFile, false));
                 writer.write("=== LOG ROTATED (kept last " + MAX_LOG_LINES + " lines) ===\n");
                 for (String l : lines) {
                     writer.write(l);
@@ -112,18 +119,11 @@ public class CrashLogger {
                 logWriter.write(line + "\n");
                 logWriter.flush();
                 lineCount++;
-                // Trim if too many lines
                 if (lineCount > MAX_LOG_LINES) {
-                    trimLogFile();
+                    lineCount = MAX_LOG_LINES; // Will rotate on next init
                 }
             }
         } catch (IOException ignored) {}
-    }
-
-    private static void trimLogFile() {
-        // Can't easily trim in-place with BufferedWriter, just reset counter
-        // Full rotation happens on next init
-        lineCount = MAX_LOG_LINES;
     }
 
     public static void logCrash(Throwable ex) {
@@ -145,19 +145,23 @@ public class CrashLogger {
         } catch (IOException ignored) {}
         
         Log.e(TAG, header + stackTrace + footer);
+        
+        // Also write to external if possible
+        try {
+            File externalDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            File externalLog = new File(externalDir, "tge_electron_crash_log.txt");
+            BufferedWriter extWriter = new BufferedWriter(new FileWriter(externalLog, true));
+            extWriter.write(header);
+            extWriter.write(stackTrace);
+            extWriter.write(footer);
+            extWriter.flush();
+            extWriter.close();
+        } catch (Exception ignored) {}
     }
 
-    public static void logError(String tag, String message) {
-        log("ERROR [" + tag + "]: " + message);
-    }
-
-    public static void logWarning(String tag, String message) {
-        log("WARN [" + tag + "]: " + message);
-    }
-
-    public static void logInfo(String tag, String message) {
-        log("INFO [" + tag + "]: " + message);
-    }
+    public static void logError(String tag, String message) { log("ERROR [" + tag + "]: " + message); }
+    public static void logWarning(String tag, String message) { log("WARN [" + tag + "]: " + message); }
+    public static void logInfo(String tag, String message) { log("INFO [" + tag + "]: " + message); }
 
     public static String getLogFilePath() {
         return logFile != null ? logFile.getAbsolutePath() : "unknown";
