@@ -5,7 +5,7 @@
 ### Current Workspace: /workspace/app
 ### Active Branch: kilo/active-vertex-nla (pushed to origin)
 ### Git Status: Clean (all changes committed)
-### **ACTIVE PROJECT**: CSMWip/11_TGApp/TGApp.WIP.V3 (WebGL 3D)
+### **ACTIVE PROJECT**: CSMWip/11_TGApp/TGApp.WIP.V3 (WebGL 3D with Landolil electron physics)
 
 ---
 
@@ -27,16 +27,23 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 
 ---
 
-## TGApp.WIP.V3 — ✅ COMPLETE (2D Canvas, WebGL-ready)
+## TGApp.WIP.V3 — ✅ COMPLETE (WebGL 3D with Landolil electron physics)
 
 - **APK**: `tgapp_electron_v3.apk` (1.4 MB)
 - **Location**: `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/tgapp_electron_v3.apk`
 - **Package**: `com.tgapp.electron.v3` (different from V2's `com.tgapp.electron`)
-- **Features**: 2D HTML5 Canvas electron simulation (three.js in assets, ready for WebGL), clean UI toggle (hides ALL menus), HUD, prime gaps, sensor integration, CrashLogger
+- **Features**: 
+  - WebGL 3D with three.js (three.min.js r158)
+  - **Landolil/v7b electron physics**: Berry phase accumulation, Zitterbewegung oscillation, axion field coupling, Larmor precession, Thomas precession, Schwinger pair production threshold
+  - Clean UI toggle (hides ALL menus)
+  - HUD with X/Y/Z position and velocity
+  - Prime gaps from prime tiles (Tile00.prime, Tile01.prime)
+  - Sensor integration (accelerometer/gyroscope → electron velocity)
+  - CrashLogger with log file in Android/data
 - **Keystore**: Symlink to `../../05_BOUNCE/debug.keystore`
 - **Assets**: `three.min.js`, `tge_electron.html`, `Tile00.prime`, `Tile01.prime`
 - **Log file**: `/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/tge_electron_crash_log.txt` (also mirrored to public Downloads)
-- **Fixed**: Removed `android:glEsVersion` requirement from manifest (was causing crash on devices without GL ES 2.0)
+- **Build script**: `build.py` (hard-coded V2 build process)
 
 ---
 
@@ -46,7 +53,7 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 # === TGApp.WIP.V3 (WebGL 3D) ===
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
+python3 build.py build
 
 # Verify
 export BUILD_TOOLS=/opt/android-sdk/build-tools/34.0.0
@@ -65,6 +72,7 @@ adb install -r tgapp_electron_v3.apk
 | `/workspace/app/NEXT_runner_001.md` | Build commands + project status |
 | `/workspace/app/RESUME_SESSION_WORKSPACE.md` | This file - session state |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/` | **Active project** - WebGL 3D |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/build.py` | V3 build script (V2 process) |
 | `/workspace/app/__Python_Tools/build_apk.py` | Shared No-Gradle builder |
 
 ---
@@ -72,7 +80,7 @@ adb install -r tgapp_electron_v3.apk
 ## Git State
 
 ```bash
-git status  # Modified: NEXT_runner_001.md, RESUME_SESSION_WORKSPACE.md, heartbeat log
+git status  # Clean
 git branch  # kilo/active-vertex-nla
 ```
 
@@ -81,10 +89,10 @@ git branch  # kilo/active-vertex-nla
 ## Heartbeat
 
 ```bash
-./CSMWipScripts/heartbeat.sh "V3 WebGL 3D APK built" "OK" "tgapp_electron_v3.apk 1.4 MB verified"
+./CSMWipScripts/heartbeat.sh "V3 WebGL 3D with Landolil physics" "OK" "tgapp_electron_v3.apk 1.4 MB verified"
 ```
 
 ---
 
-**Session saved**: 2026-10-14T04:43:00Z
-**Active project**: TGApp.WIP.V3 — APK ready on branch for device testing
+**Session saved**: 2026-10-14T23:20:00Z
+**Active project**: TGApp.WIP.V3 — APK on branch with Landolil electron physics integrated
