@@ -5,6 +5,74 @@
 - Volume mounted at /root, backed up by snapshots — prefer to install there
 - Do not modify /root/.kilo
 
+## No-Gradle Android Build Tools
+
+**Required SDK tools** (install via `sdkmanager` or download command-line tools):
+```bash
+# Install Android SDK command-line tools
+sdkmanager "build-tools;34.0.0" "platforms;android-34" "platform-tools"
+
+# Environment setup (add to ~/.bashrc or project env)
+export ANDROID_SDK=/path/to/android-sdk
+export ANDROID_JAR=$ANDROID_SDK/platforms/android-34/android.jar
+export BUILD_TOOLS=$ANDROID_SDK/build-tools/34.0.0
+export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
+```
+
+**Build scripts location**: `__Python_Tools/build_apk.py` (preferred) or `scripts/build_apk.sh`
+
+**Debug keystore**: Generate once:
+```bash
+keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+```
+
+## Python Automation Scripts (`__Python_Tools/`)
+
+| Script | Purpose |
+|--------|---------|
+| `generate_act_content.py` / `v2` | Generate article/content pieces |
+| `sanitize_super.py` | Sanitize SUPER_DOCUMENT |
+| `save_drafts*.py` | Save email/draft batches |
+| `send_verified_batches.py` | Send verified email batches |
+| `process_emails.py` | Process incoming emails |
+| `create_grant_drafts.py` | Generate grant campaign drafts |
+| `extract_math.py` | Extract mathematical content |
+
+## Resume Scripts (`CSMWipScripts/`)
+
+| Script | Purpose |
+|--------|---------|
+| `MASTER-RESUME.sh` | Full workspace resume |
+| `RESUME_SESSION.sh` | Quick session resume |
+| `QUICK_RESUME.sh` | Fast resume |
+| `heartbeat.sh` / `heartbeat_writer.sh` | Heartbeat checks |
+
+## Large File Utilities
+
+```bash
+# Write large file in chunks (Python)
+python3 -c "
+import sys
+with open('output.md', 'wb') as f:
+    for chunk in iter(lambda: sys.stdin.buffer.read(1024*1024), b''):
+        f.write(chunk)
+" < large_input.md
+
+# Compress for storage
+gzip -c large.md > large.md.gz
+
+# Manifest generation
+python3 -c "
+import hashlib, json, os
+manifest = {}
+for f in os.listdir('chunks'):
+    if f.endswith('.md'):
+        path = f'chunks/{f}'
+        manifest[f] = hashlib.sha256(open(path,'rb').read()).hexdigest()
+json.dump(manifest, open('MANIFEST.json','w'), indent=2)
+"
+```
+
 ## Security Check Context
 
 When running `openclaw doctor` or `openclaw security audit`, the following finding is **expected and safe** in KiloClaw:

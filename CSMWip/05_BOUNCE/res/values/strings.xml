@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bounce</string>
+    <string name="title_main">Bounce</string>
+    <string name="score_prefix">Score: </string>
+    <string name="game_over">Game Over</string>
+    <string name="tap_to_restart">Tap to restart</string>
+</resources>
