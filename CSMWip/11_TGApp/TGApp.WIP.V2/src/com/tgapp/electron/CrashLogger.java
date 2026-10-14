@@ -4,17 +4,14 @@ import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.Locale;
 
 public class CrashLogger {
@@ -22,66 +19,37 @@ public class CrashLogger {
     private static BufferedWriter logWriter;
     private static File logFile;
     private static final SimpleDateFormat TIMESTAMP = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US);
-    private static final int MAX_LOG_LINES = 2000;
-    private static final long MAX_LOG_BYTES = 512 * 1024;
-    private static int lineCount = 0;
     private static boolean crashed = false;
     private static boolean initialized = false;
 
     public static void init(Context context) {
         if (initialized) return;
-        initialized = true;
         
         try {
-            // PRIORITY 1: Downloads folder (visible in file manager)
+            // FORCE: Create log file in Downloads FIRST, before anything else
             File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File primaryLog = new File(downloadsDir, "tge_electron_crash_log.txt");
-            
-            // PRIORITY 2: App-specific external (also visible)
-            File appExternalDir = context.getExternalFilesDir(null);
-            File secondaryLog = new File(appExternalDir, "tge_electron_crash_log.txt");
-            
-            // PRIORITY 3: Internal (fallback, not visible in file manager)
-            File internalDir = context.getFilesDir();
-            File fallbackLog = new File(internalDir, "tge_electron_crash_log.txt");
-            
-            // Try primary first
-            if (downloadsDir.exists() && downloadsDir.canWrite()) {
-                logFile = primaryLog;
-            } else if (appExternalDir != null && appExternalDir.canWrite()) {
-                logFile = secondaryLog;
-            } else {
-                logFile = fallbackLog;
+            if (!downloadsDir.exists()) {
+                downloadsDir.mkdirs();
             }
+            logFile = new File(downloadsDir, "tge_electron_crash_log.txt");
             
-            // Rotate old log if too large
-            rotateIfNeeded(logFile);
+            // SYNCHRONOUS write - create file immediately
+            FileWriter fw = new FileWriter(logFile, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
+            bw.write("Package: com.tgapp.electron\n");
+            bw.write("Log file: " + logFile.getAbsolutePath() + "\n");
+            bw.write("CrashLogger.init() called\n");
+            bw.flush();
+            bw.close();
             
-            // Open writer
+            // Now open persistent writer
             logWriter = new BufferedWriter(new FileWriter(logFile, true));
+            initialized = true;
             
-            // Write session header
-            logWriter.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
-            logWriter.write("Package: com.tgapp.electron\n");
-            logWriter.write("Log file: " + logFile.getAbsolutePath() + "\n");
-            logWriter.write("Check this file in your file manager!\n");
-            logWriter.flush();
+            log("CrashLogger.init() completed. Log: " + logFile.getAbsolutePath());
             
-            lineCount = 3;
-            log("CrashLogger initialized. Log file: " + logFile.getAbsolutePath());
-            
-            // Also mirror to secondary location for redundancy
-            try {
-                File mirrorLog = (logFile == primaryLog) ? secondaryLog : primaryLog;
-                BufferedWriter mirrorWriter = new BufferedWriter(new FileWriter(mirrorLog, true));
-                mirrorWriter.write("\n\n=== SESSION START (MIRROR): " + TIMESTAMP.format(new Date()) + " ===\n");
-                mirrorWriter.write("Package: com.tgapp.electron\n");
-                mirrorWriter.write("Primary: " + logFile.getAbsolutePath() + "\n");
-                mirrorWriter.flush();
-                mirrorWriter.close();
-            } catch (Exception ignored) {}
-            
-            // Set up default uncaught exception handler
+            // Set up uncaught exception handler
             Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
                 @Override
                 public void uncaughtException(Thread thread, Throwable ex) {
@@ -97,29 +65,15 @@ public class CrashLogger {
             
         } catch (Exception e) {
             Log.e(TAG, "Failed to initialize CrashLogger", e);
-        }
-    }
-
-    private static void rotateIfNeeded(File logFile) {
-        if (logFile.exists() && logFile.length() > MAX_LOG_BYTES) {
+            // Try internal storage as last resort
             try {
-                LinkedList<String> lines = new LinkedList<>();
-                BufferedReader reader = new BufferedReader(new FileReader(logFile));
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    lines.addLast(line);
-                    if (lines.size() > MAX_LOG_LINES) lines.removeFirst();
-                }
-                reader.close();
-                
-                BufferedWriter writer = new BufferedWriter(new FileWriter(logFile, false));
-                writer.write("=== LOG ROTATED (kept last " + MAX_LOG_LINES + " lines) ===\n");
-                for (String l : lines) {
-                    writer.write(l);
-                    writer.write("\n");
-                }
-                writer.close();
-            } catch (IOException ignored) {}
+                File internalDir = context.getFilesDir();
+                logFile = new File(internalDir, "tge_electron_crash_log.txt");
+                logWriter = new BufferedWriter(new FileWriter(logFile, true));
+                logWriter.write("\n\n=== SESSION START (INTERNAL): " + TIMESTAMP.format(new Date()) + " ===\n");
+                logWriter.flush();
+                initialized = true;
+            } catch (Exception ignored) {}
         }
     }
 
@@ -129,9 +83,7 @@ public class CrashLogger {
         try {
             if (logWriter != null && !crashed) {
                 logWriter.write(line + "\n");
-                logWriter.flush();
-                lineCount++;
-                if (lineCount > MAX_LOG_LINES) lineCount = MAX_LOG_LINES;
+                logWriter.flush(); // FORCE FLUSH every write
             }
         } catch (IOException ignored) {}
     }
@@ -156,16 +108,16 @@ public class CrashLogger {
         
         Log.e(TAG, header + stackTrace + footer);
         
-        // Also write crash to mirror location
+        // Also write crash to Downloads
         try {
             File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File mirrorLog = new File(downloadsDir, "tge_electron_crash_log.txt");
-            BufferedWriter mirrorWriter = new BufferedWriter(new FileWriter(mirrorLog, true));
-            mirrorWriter.write(header);
-            mirrorWriter.write(stackTrace);
-            mirrorWriter.write(footer);
-            mirrorWriter.flush();
-            mirrorWriter.close();
+            File crashLog = new File(downloadsDir, "tge_electron_crash_log.txt");
+            BufferedWriter bw = new BufferedWriter(new FileWriter(crashLog, true));
+            bw.write(header);
+            bw.write(stackTrace);
+            bw.write(footer);
+            bw.flush();
+            bw.close();
         } catch (Exception ignored) {}
     }
 
@@ -181,6 +133,7 @@ public class CrashLogger {
         try {
             if (logWriter != null) {
                 logWriter.write("=== SESSION END: " + TIMESTAMP.format(new Date()) + " ===\n");
+                logWriter.flush();
                 logWriter.close();
             }
         } catch (IOException ignored) {}
