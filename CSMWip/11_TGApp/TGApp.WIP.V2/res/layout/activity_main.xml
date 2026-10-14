@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- WebView for 3D Electron Worldline (loads local HTML asset) -->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" />
+
+    <!-- Header Overlay -->
+    <LinearLayout
+        android:id="@+id/header_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="44dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#BE0A0A0F"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_main"
+            android:textSize="26sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prime Electron Worldline · v1.0.0"
+            android:textSize="11sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Electron Walking Worldline → Reflections | Prime Gap Universe"
+            android:textSize="9sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:paddingTop="2dp" />
+    </LinearLayout>
+
+    <!-- Control Bar -->
+    <FrameLayout
+        android:id="@+id/control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#E50A0A0F">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingVertical="8dp">
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SCAN"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/surface"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MENU"
+                android:textSize="10sp"
+                android:textColor="@color/colorAccent"
+                android:background="@color/surface"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btn_theory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="THEORY"
+                android:textSize="10sp"
+                android:textColor="@color/theory_blue"
+                android:background="@color/surface"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btn_fleet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FLEET"
+                android:textSize="10sp"
+                android:textColor="@color/fleet_purple"
+                android:background="@color/surface"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btn_clean"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLEAN"
+                android:textSize="10sp"
+                android:textColor="#FF6600"
+                android:background="@color/surface"
+                android:padding="8dp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
