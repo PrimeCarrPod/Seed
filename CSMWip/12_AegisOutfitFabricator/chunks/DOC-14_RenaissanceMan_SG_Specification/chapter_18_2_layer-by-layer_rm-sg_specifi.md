@@ -3,18 +3,18 @@
 ### 2.1 Layer 1: YInMn Blue + Quantum Dot Optical Coating
 - **Composition:** YIn₁₋ₓMnₓO₃ (x=0.08) + CdSe/ZnS QDs (620 nm emission)
 - **Application:** Dip-coated on outer silk brocade (Lampas ground)
-- **Thickness:** 50 µm (same as baseline)
+- **Thickness:** 50 µm (standard across all editions)
 - **Optical Properties:** NIR reflectance >95% (700-2500 nm), UV blockade <1% (200-400 nm)
 - **Thermal:** Emissivity ε = 0.85 (radiative cooling)
 - **Standard:** MIL-STD-461G RE102, ASTM E903
 - **Cross-ref:** SYNTH-02 §2 Row 1, CSMFAB078-B §3.4
 
 ### 2.2 Layer 2: ZrB₂-SiC Outer Ceramic Tiles (Primary)
-- **Tile Geometry:** 25 mm × 25 mm × 4 mm (hexagonal close-pack)
-- **Tile Count:** 210 tiles (RM-SG coverage: 1.58 m² × 0.85 packing = 210)
+- **Tile Geometry:** 25 mm × 25 mm × 3 mm (hexagonal close-pack)
+- **Tile Count:** 210 tiles (RM-SG coverage: 1.68 m² × 0.85 packing = 210)
 - **Material:** Hot-pressed ZrB₂-20vol%SiC, ρ = 5.8 g/cm³
-- **Areal Density:** 5.8 kg/m² (vs. 5.8 kg/m² baseline)
-- **Ballistic Rating:** NIJ IV (7.62×63mm AP) at V₅₀ = 960 m/s
+- **Areal Density:** 5.8 kg/m² (same as RM-TS)
+- **Ballistic Rating:** NIJ IV (7.62×63mm AP) at V₅₀ = 972 m/s
 - **Magnetic Alignment:** NdFeB N52 inserts (0.5 mm Ø) for auto-alignment
 - **Gasket:** MXene-impregnated silk tape (0.2 mm) between tiles
 - **Standard:** NIJ STD-0101.06, MIL-DTL-46177E
@@ -23,26 +23,26 @@
 ### 2.3 Layer 3: MXene Primary EMI Shield
 - **Material:** Ti₃C₂Tₓ MXene, 5 wt% in water/ethanol, spray-coated
 - **Substrate:** Metallic brocade (Au-Hg/Ag on silk core, CIETA Lampas)
-- **Coating Thickness:** 30 µm (vs. 20 µm RM-SS)
-- **Surface Resistivity:** <30 Ω/sq (percolation threshold achieved)
+- **Coating Thickness:** 30 µm (baseline, vs. 20 µm RM-SS)
+- **Surface Resistivity:** <40 Ω/sq (percolation threshold achieved)
 - **Shielding Effectiveness:** 34 dB @ 1 GHz (single layer)
 - **Flexibility:** Retains >90% drape coefficient (ASTM D1388)
 - **Standard:** MIL-STD-461G RS103, IEEE 299
 - **Cross-ref:** MAT-03 §3.2, SYNTH-01 §2.3, SYNTH-02 §2 Row 3
 
 ### 2.4 Layer 4: Fractal FSS Bandstop (Embroidered Brocade)
-- **Geometry:** Minkowski fractal iteration 4, Au-Ag metallic thread
-- **Unit Cell:** 12 mm × 12 mm (baseline, scaled from 8 mm RM-SS)
+- **Geometry:** Minkowski fractal iteration 3, Au-Ag metallic thread
+- **Unit Cell:** 12 mm × 12 mm (baseline, vs. 8 mm RM-SS)
 - **Resonance:** 2.4 GHz (WiFi), 5.8 GHz (ISM), 9.4 GHz (X-band radar)
-- **Bandstop Depth:** >30 dB at resonances
+- **Bandstop Depth:** >28 dB at resonances
 - **Integration:** Woven into brocade ground (CIETA Brocatelle structure)
-- **Thread Density:** 1.0× baseline
+- **Thread Density:** 1.0× baseline (standard)
 - **Standard:** IEC 61000-4-3, MIL-STD-461G RS103
 - **Cross-ref:** MAT-03 §3.3, SYNTH-02 §2 Row 4, CSMFAB078-B §3.5
 
 ### 2.5 Layer 5: Silica Aerogel Thermal Batting
 - **Material:** Ambient-pressure dried silica aerogel, hydrophobic (TMCS treated)
-- **Thickness:** 3 mm (vs. 2 mm RM-SS, 5 mm RM-TG)
+- **Thickness:** 3 mm (baseline, vs. 2 mm RM-SS, 5 mm RM-TG)
 - **Density:** 0.012 g/cm³ (98% porosity)
 - **Thermal Conductivity:** λ = 0.014 W/m·K (at 25°C, 1 atm)
 - **R-value:** R = 0.214 m²·K/W (per layer)
@@ -60,20 +60,20 @@
 
 ### 2.7 Layer 7: ZrB₂-SiC Inner Ceramic Tiles (Backup)
 - **Tile Geometry:** 15 mm × 15 mm × 2 mm
-- **Tile Count:** 420 tiles (smaller tiles, higher count for coverage)
+- **Tile Count:** 340 tiles (smaller tiles, higher count for coverage)
 - **Areal Density:** 3.2 kg/m²
 - **Function:** Spall containment, secondary ballistic stop
 - **Standard:** NIJ STD-0101.06 (backface signature)
 - **Cross-ref:** MAT-03 §3.1, SYNTH-02 §2 Row 7
 
-### 2.8 Layer 8: STF-Impregnated Silk (Zone-Selective)
-- **Material:** SiO₂ nanoparticles (45 nm) in PEG-400, φ = 0.52 vol
+### 2.8 Layer 8: STF-Impregnated Silk (Zone-Selective Extended)
+- **Material:** SiO₂ nanoparticles (45 nm) in PEG-400, φ = 0.55 vol
 - **Base Fabric:** Silk habotai (CIETA Taqueté equivalent), 12 momme
 - **Impregnation:** Vacuum-assisted, 85% add-on weight
 - **Zones Covered:** Z1 (neck), Z2 (shoulder), Z3 (upper torso), Z4 (chest), Z7 (deltoid), Z8 (forearm)
 - **Zones Omitted:** Z5, Z6, Z9-Z12 (mobility priority)
-- **STF Onset Shear Rate:** 1,200 s⁻¹ (vs. 800 s⁻¹ baseline)
-- **Penetration Resistance:** +40% vs. neat silk (ASTM F2371)
+- **STF Onset Shear Rate:** 1,100 s⁻¹ (vs. 800 s⁻¹ baseline)
+- **Penetration Resistance:** +45% vs. neat silk (ASTM F2371)
 - **Standard:** ASTM F2371, NIJ Appendix C
 - **Cross-ref:** MAT-03 §3.5, SYNTH-02 §2 Row 8, CSMFAB078 Main §4.8
 
@@ -90,7 +90,7 @@
 - **Steel Spiral Boning:** 12 pieces, 4 mm Ø, 350 mm (spring steel, E=200 GPa)
 - **Placement:** Vertical channels in doublet (Alcega pattern lines)
 - **Lacing Points:** 28 eyelets (brass, K_t=3 stress concentration managed)
-- **Total Chassis Mass:** 1.32 kg
+- **Total Chassis Mass:** 1.24 kg
 - **Standard:** ISO 13934-1 (tensile), ASTM F2371 (stab)
 - **Cross-ref:** MAT-02 §3, §4, DOC-05 §3, SYNTH-02 §2 Row 10
 
