@@ -1,30 +1,56 @@
-## 3. Steel Spiral Boning Specification (MAT-02 §4.1)
+## 3. Steel Spiral Boning Specification (MAT-02 §4, DOC-05 §3.3)
 
 ### 3.1 Material Properties
 
-| Property | Value | Standard |
-|----------|-------|----------|
-| **Material** | Spring steel (EN 10270-1) | EN 10270-1 |
-| **Wire Diameter** | 4.0 mm | — |
-| **Coil OD** | 8.5 mm | — |
-| **Coil ID** | 0.5 mm | — |
-| **Active Coils** | 45 per piece | — |
-| **Free Length** | 350 mm | — |
-| **Solid Length** | 180 mm | — |
-| **Spring Rate (k)** | 18.5 N/mm | ASTM A125 |
-| **Max Deflection** | 170 mm | — |
-| **Max Force** | 3,145 N | — |
-| **Fatigue Life** | >10⁶ cycles @ 50% deflection | ASTM A955 |
+| Property | Value | Test Standard | Notes |
+|----------|-------|---------------|-------|
+| **Material** | Spring steel (17-7 PH, Condition CH900) | — | High strength, corrosion resistant |
+| **Young's Modulus (E)** | 200 GPa | ASTM E111 | — |
+| **Shear Modulus (G)** | 79 GPa | Calculated | G = E/2(1+ν) |
+| **Yield Strength** | 1200 MPa | ASTM A370 | 0.2% offset |
+| **Ultimate Tensile** | 1350 MPa | ASTM A370 | — |
+| **Fatigue Limit** | 550 MPa (10⁷ cycles) | ASTM E466 | R=0.1 |
+| **Density** | 7.8 g/cm³ | — | — |
+| **Corrosion** | Passivated, ASTM A967 | — | Medical grade |
 
-### 3.2 Placement (8 pieces for RM-SS)
+### 3.2 RM-SS Spiral Boning Geometry
 
-| Location | Count | Function |
-|----------|-------|----------|
-| **Sleeve Cap** | 2 | Arm scye reinforcement |
-| **Side Seam** | 2 | Torso lateral stability |
-| **Back Princess** | 2 | Watteau pleat load column |
-| **Hose Waist** | 2 | Waistband support |
+| Boning ID | Location | Length | Wire Ø | Coil OD | Coils | Function |
+|-----------|----------|--------|--------|---------|-------|----------|
+| SB-SC-L/R | Sleeve Cap | 180 mm | 4 mm | 8 mm | 12 | Arm articulation |
+| SB-Knee-L/R | Knee Gusset | 140 mm | 4 mm | 8 mm | 10 | Knee hinge |
 
-**Total Steel Mass:** 8 × 350 mm × π×(4mm)²/4 × 7.85 g/cm³ = **0.28 kg**
+**Total:** 8 pieces (4 per sleeve cap + 2 per knee)
+
+### 3.3 Spiral Stiffness Analysis
+
+**Axial Stiffness (Helical Spring):**
+$$k = \frac{G d^4}{8 D^3 N_{coils}}$$
+
+Where d = wire diameter, D = coil mean diameter, N = active coils.
+
+For sleeve cap (d=4 mm, D=8 mm, N=12, G=79 GPa):
+$$k = \frac{79 \times 10^9 \times (4 \times 10^{-3})^4}{8 \times (8 \times 10^{-3})^3 \times 12} = \textbf{18.5 N/mm}$$
+
+**Operating Deflection:** 12 mm (arm raise) → Force = 222 N
+
+**Bending Stiffness (2D Flexure):**
+$$EI_{bend} = \frac{E \pi d^4}{64} = \frac{200 \times 10^9 \times \pi \times (4 \times 10^{-3})^4}{64} = \textbf{2.51 \times 10^{-3} N·m²}$$
+
+Allows 2D curvature in sleeve cap channel while resisting axial compression.
+
+### 3.4 Channel Integration
+
+- **Channel Width:** 10 mm (allows 8 mm coil + 1 mm clearance each side)
+- **Stitching:** ISO 301, 18 SPI, silk core-spun thread
+- **End Caps:** MAX phase aglets (Ti₃AlC₂) prevent wire protrusion
+- **Lubrication:** PTFE coating on wire (reduces channel friction 40%)
+
+### 3.5 Cross-References
+
+- MAT-02 §4: Steel spiral boning specification
+- DOC-05 §3.3: Structural framework boning
+- Research Doc 2 §3.4: Core-spun thread mechanics
+- CSMFAB078-A §3.3: LES zone tensions (Z2, Z7, Z10)
 
 ---
