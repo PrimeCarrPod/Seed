@@ -953,38 +953,47 @@ updateHUD() {
             toggleFleet() { console.log('Fleet toggle'); }
         };
         
-        // PrimeDataLoader: Loads prime tiles from local Documents or falls back to assets
+// PrimeDataLoader: Loads prime tiles from local storage (Downloads, Documents, or app files dir)
         const PrimeDataLoader = {
-            basePath: null,
+            basePaths: [
+                '/storage/emulated/0/Download/PrimeBookOne/',
+                '/storage/emulated/0/Documents/PrimeBookOne/',
+                '/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/PrimeBookOne/'
+            ],
             directories: ['0.0', '0.1', '1.0', '2.0', '2.1', '3.0'],
             tilesPerDir: { '0.0': 189, '0.1': 189, '1.0': 189, '2.0': 189, '2.1': 189, '3.0': 3500 },
             loadedTiles: new Set(),
+            tileLocations: new Map(), // Track which base path each tile was found at
             
             async init() {
-                // Try to access app-specific external files dir (accessible to WebView)
-                this.basePath = '/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/PrimeBookOne/';
                 await this.scanLocalTiles();
             },
             
             async scanLocalTiles() {
-                // Check which tiles exist locally
+                // Check which tiles exist locally across all base paths
                 for (const dir of this.directories) {
                     const count = this.tilesPerDir[dir] || 0;
                     for (let i = 0; i < count; i++) {
                         const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
-                        const path = `${this.basePath}${dir}/${tileName}`;
-                        try {
-                            // Try HEAD request to check existence
-                            const resp = await fetch(path, { method: 'HEAD', cache: 'no-cache' });
-                            if (resp.ok) {
-                                this.loadedTiles.add(`${dir}/${tileName}`);
+                        const key = `${dir}/${tileName}`;
+                        
+                        // Try each base path
+                        for (const basePath of this.basePaths) {
+                            const path = `${basePath}${dir}/${tileName}`;
+                            try {
+                                const resp = await fetch(path, { method: 'HEAD', cache: 'no-cache' });
+                                if (resp.ok) {
+                                    this.loadedTiles.add(key);
+                                    this.tileLocations.set(key, basePath);
+                                    break; // Found it, no need to check other paths
+                                }
+                            } catch (e) {
+                                // File doesn't exist at this path, try next
                             }
-                        } catch (e) {
-                            // File doesn't exist locally
                         }
                     }
                 }
-                console.log(`PrimeDataLoader: Found ${this.loadedTiles.size} local tiles`);
+                console.log(`PrimeDataLoader: Found ${this.loadedTiles.size} local tiles across all locations`);
             },
             
             async loadTilesForDirectory(dir, startTile = 0, endTile = null) {
@@ -994,13 +1003,14 @@ updateHUD() {
                 
                 for (let i = startTile; i <= end; i++) {
                     const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
-                    const localPath = `${this.basePath}${dir}/${tileName}`;
-                    const assetPath = `assets/${tileName}`; // Fallback to bundled assets (only Tile00/01)
-                    
-                    let data = null;
                     const key = `${dir}/${tileName}`;
                     
+                    let data = null;
+                    
                     if (this.loadedTiles.has(key)) {
+                        // Use the base path where this tile was found
+                        const basePath = this.tileLocations.get(key);
+                        const localPath = `${basePath}${dir}/${tileName}`;
                         try {
                             const resp = await fetch(localPath, { cache: 'no-cache' });
                             if (resp.ok) {
@@ -1012,9 +1022,10 @@ updateHUD() {
                         }
                     }
                     
-                    // Fallback to bundled assets for Tile00, Tile01
+                    // Fallback to bundled assets for Tile00/01
                     if (!data && (tileName === 'Tile000.prime' || tileName === 'Tile001.prime')) {
                         try {
+                            const assetPath = `assets/${tileName}`;
                             const resp = await fetch(assetPath, { cache: 'no-cache' });
                             if (resp.ok) {
                                 const buffer = await resp.arrayBuffer();
