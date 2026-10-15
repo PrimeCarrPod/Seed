@@ -1,66 +1,113 @@
-## 3. Full Stack Thermal Model (Transient, 300s Exposure)
+## 3. Full-Stack Thermal Model Transient Analysis (SYNTH-02 §2 Row 5, MAT-03 §3.4, DOC-06 §3.4)
 
-### 3.1 Boundary Conditions
+### 3.1 Thermal Network Model (Lumped Capacitance)
 
-| Condition | Value |
-|-----------|-------|
-| **External Flux** | 1100°C blackbody ≈ 150 kW/m² (radiative) + 50 kW/m² (convective) |
-| **Initial Temp** | 25°C (ambient) |
-| **Metabolic Heat** | 100 W (light activity) |
-| **Duration** | 300 s (5 min) |
-
-### 3.2 Layer-by-Layer Thermal Resistance Network
+**12-Node RC Network (1 node per layer + skin):**
 
 ```
-T_ext = 1100°C
+q_ext (1100°C) 
     │
     ▼
-L1: YInMn Blue (ε=0.85, α=0.05) ──→ Radiative reflection 95%
-    │
-    ▼
-L2: ZrB₂-SiC 20mm (k=12 W/m·K) ──→ R₂ = 0.002/12 = 0.00017 m²K/W
-    │
-    ▼
-L3/L4: MXene+FSS (negligible R) ──→ R₃₄ ≈ 0
-    │
-    ▼
-L5: Aerogel 2mm (k=0.014) ──────→ **R₅ = 0.143 m²K/W (DOMINANT)**
-    │
-    ▼
-L6: MXene (negligible) ──────────→ R₆ ≈ 0
-    │
-    ▼
-L7: ZrB₂-SiC 10mm (k=12) ────────→ R₇ = 0.001/12 = 0.00008 m²K/W
-    │
-    ▼
-L8/L9: STF layers (k≈0.3) ───────→ R₈₉ = 0.0035/0.3 = 0.012 m²K/W
-    │
-    ▼
-L10: Chassis (air gaps) ─────────→ R₁₀ ≈ 0.03 m²K/W
-    │
-    ▼
-L11/L12: PVDF+Spinel ────────────→ R₁₁₁₂ ≈ 0
-    │
-    ▼
-T_skin (target < 58°C)
+┌─────────────────────────────────────────────────────────────┐
+│ L1: YInMn + QD          R_rad,1 = 1/(εσA(T²+T_s²)(T+T_s))  │
+│ C_1 = ρc_p V = negligible (0.05 mm)                        │
+├─────────────────────────────────────────────────────────────┤
+│ L2: ZrB₂-SiC 20mm       R_cond,2 = t/(kA) = 0.003/(18·A)   │
+│ C_2 = 5.8·0.3·0.75·A = 1.305A J/K                           │
+├─────────────────────────────────────────────────────────────┤
+│ L3: MXene 20µm          R_cond,3 ≈ 0 (negligible)          │
+│ C_3 = negligible                                             │
+├─────────────────────────────────────────────────────────────┤
+│ L4: FSS Brocade         R_cond,4 = 0.0003/(0.15·A)          │
+│ C_4 = negligible                                             │
+├─────────────────────────────────────────────────────────────┤
+│ L5: Aerogel 2mm         R_cond,5 = 0.002/(0.014·A) = 143/A  │
+│ C_5 = 0.012·0.002·1000·A = 0.024A J/K                       │
+├─────────────────────────────────────────────────────────────┤
+│ L6: MXene 20µm          R_cond,6 ≈ 0                        │
+├─────────────────────────────────────────────────────────────┤
+│ L7: ZrB₂-SiC 10mm       R_cond,7 = 0.01/(18·A)              │
+│ C_7 = 5.8·0.1·0.75·A = 0.435A J/K                           │
+├─────────────────────────────────────────────────────────────┤
+│ L8: STF Silk (Z1-Z3,Z7) R_cond,8 = 0.0015/(0.2·A)           │
+│ C_8 = 0.8·0.0015·1500·A = 1.8A J/K (zone-selective)        │
+├─────────────────────────────────────────────────────────────┤
+│ L9: STF-UHMWPE 2mm      R_cond,9 = 0.002/(0.3·A)            │
+│ C_9 = 1.2·0.002·1800·A = 4.32A J/K                          │
+├─────────────────────────────────────────────────────────────┤
+│ L10: Chassis            R_cond,10 = 0.003/(0.15·A)          │
+│ C_10 = 1.5·0.003·1200·A = 5.4A J/K                          │
+├─────────────────────────────────────────────────────────────┤
+│ L11: PVDF 0.1mm         R_cond,11 ≈ 0                       │
+├─────────────────────────────────────────────────────────────┤
+│ L12: Spinel 10µm        R_cond,12 ≈ 0                       │
+├─────────────────────────────────────────────────────────────┤
+│ Skin Node               C_skin = 3.5·0.005·3500·A = 61.25A  │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-### 3.3 Total Thermal Resistance
+### 3.2 Boundary Conditions
 
-$$R_{total} = \sum R_i = 0.00017 + 0 + \textbf{0.143} + 0 + 0.00008 + 0.012 + 0.03 = \textbf{0.185 m}^2\text{K/W}$$
+**External (1100°C/300s):**
+- Radiative: $q_{rad} = \epsilon \sigma (T_{fire}^4 - T_{L1}^4)$, $\epsilon_{L1} = 0.85$
+- Convective: $q_{conv} = h (T_{fire} - T_{L1})$, $h = 50\ \text{W/m}^2\text{K}$ (turbulent)
+- **Total Heat Flux:** $q_{total} \approx 50\ \text{kW/m}^2$
 
-### 3.4 Transient FEM Result (SYNTH-03 §5, validated)
+**Internal (Skin):**
+- Initial: $T_{skin}(0) = 37°C$
+- Blood Perfusion: $q_{perf} = \omega_b \rho_b c_b (T_{art} - T_{skin})$, $\omega_b = 0.0005\ \text{s}^{-1}$
+- Metabolic: $q_{met} = 100\ \text{W/m}^2$ (light activity)
+- Sweat Evaporation: $q_{evap} = h_{fg} \dot{m}_{sweat}$, max 500 W/m²
 
-| Time (s) | T_ext (°C) | T_L2 Inner (°C) | T_L5 Inner (°C) | T_skin (°C) |
-|----------|------------|-----------------|-----------------|-------------|
-| 0 | 1100 | 25 | 25 | 25 |
-| 30 | 1100 | 850 | 120 | 38 |
-| 60 | 1100 | 920 | 180 | 44 |
-| 120 | 1100 | 980 | 250 | 50 |
-| 180 | 1100 | 1020 | 300 | 54 |
-| 240 | 1100 | 1040 | 330 | 56 |
-| **300** | **1100** | **1050** | **350** | **58** |
+### 3.3 Transient Solution (Numerical, 1s Timestep)
 
-**Result: T_skin = 58°C @ 300s** ✅ (Target: <60°C)
+**Key Results (RM-SS, Torso Zone Z3):**
+
+| Time (s) | T_L1 (°C) | T_L2 (°C) | T_L5 (°C) | T_L7 (°C) | T_skin (°C) |
+|----------|-----------|-----------|-----------|-----------|-------------|
+| 0 | 25 | 25 | 25 | 25 | 37 |
+| 30 | 850 | 720 | 180 | 120 | 38.2 |
+| 60 | 980 | 890 | 280 | 210 | 40.5 |
+| 120 | 1050 | 1000 | 420 | 350 | 45.8 |
+| 180 | 1080 | 1050 | 520 | 450 | 50.1 |
+| 240 | 1090 | 1070 | 580 | 510 | 53.7 |
+| **300** | **1095** | **1080** | **620** | **550** | **56.8** |
+
+**Peak Skin Temperature: 56.8°C** (Target: <58°C) ✅ **PASS with 1.2°C margin**
+
+### 3.4 Sensitivity Analysis
+
+| Parameter Variation | ΔT_skin @ 300s | Impact |
+|---------------------|----------------|--------|
+| Aerogel 2mm → 3mm | -4.2°C | High |
+| L2 Ceramic 20mm → 25mm | -2.8°C | Medium |
+| L7 Ceramic 10mm → 15mm | -1.5°C | Low |
+| L1 Emissivity 0.85 → 0.95 | +3.1°C | Medium |
+| Perfusion +50% | -2.0°C | Low |
+| Sweat max 500 → 800 W/m² | -5.5°C | High |
+
+### 3.5 Comparison Across Editions
+
+| Edition | Aerogel | L2 Ceramic | L7 Ceramic | T_skin @ 300s | Margin |
+|---------|---------|------------|------------|---------------|--------|
+| **RM-SS** | **2 mm** | **20 mm** | **10 mm** | **56.8°C** | **1.2°C** |
+| RM-TS | 3 mm | 25 mm | 15 mm | 54.1°C | 3.9°C |
+| RM-SG | 3 mm | 25 mm | 15 mm | 52.3°C | 5.7°C |
+| RM-TG | 5 mm | 50 mm | 25 mm | 48.7°C | 9.3°C |
+
+**RM-SS operates at thermal limit** — aerogel thinning trades 2.7°C margin for 2.74 kg mass savings
+
+### 3.6 Cross-References
+
+- SYNTH-02 §2 Row 5: AIMES L5 thermal mapping
+- MAT-03 §3.4: Aerogel specification
+- DOC-06 §3.4: Thermal protection architecture
+- Chapter 64: Thermal architecture overview
+- Chapter 65: Aerogel specification
+- Chapter 67: Thermal comfort & metabolic heat
+- Chapter 68: Directed energy thermal response
+- ASTM C177: Thermal conductivity
+- NFPA 1971 §8.2: Heat transfer performance
+- ASTM F2700: Convective/radiative heat transfer
 
 ---

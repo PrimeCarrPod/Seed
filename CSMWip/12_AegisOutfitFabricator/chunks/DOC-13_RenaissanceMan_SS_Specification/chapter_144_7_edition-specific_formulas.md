@@ -1,25 +1,34 @@
-## 7. Edition-Specific Formulas
+## 7. Formulas (Risk Chapters 138-147)
 
-### 7.1 RPN Calculation
+### 7.1 Risk Priority Number (MIL-STD-1629)
+$$RPN = S \times O \times D$$
 
-$$\text{RPN}_i = S_i \times O_i \times D_i$$
+Where S=Severity (1-10), O=Occurrence (1-10), D=Detection (1-10)
 
-### 7.2 Risk Reduction Factor
+### 7.2 Thermal Margin
+$$\text{Margin} = T_{limit} - T_{predicted} = 58 - 56.8 = 1.2°C$$
 
-$$\text{RRF} = \frac{\text{RPN}_{\text{current}}}{\text{RPN}_{\text{target}}}$$
+**Degradation Model:**
+$$\lambda(t) = \lambda_0 + \sum k_i \cdot t^{n_i}$$
 
-Target RRF ≥ 2 for all HIGH/CRITICAL risks.
+### 7.3 STF Penetration Resistance
+$$P_{resist} = P_{base} \times (1 + \eta_{STF} \cdot \phi_{STF})$$
 
-### 7.3 EMI Tape Margin
+Where $\eta_{STF}$ = enhancement factor, $\phi_{STF}$ = STF volume fraction
 
-$$\Delta SE = 20\log_{10}\left(\frac{Z_0}{Z_0 - Z_{\text{tape}}}\right) = 20\log_{10}\left(\frac{377}{377 - 120}\right) = 3.2 \text{ dB}$$
+### 7.4 MXene Shielding Degradation
+$$SE(t) = SE_0 \cdot e^{-k_{flex} \cdot N_{cycles} - k_{abrasion} \cdot d_{wear}}$$
 
-### 7.4 Thermal Margin
+### 7.5 Baleen Modulus Decay
+$$E(t) = E_0 \cdot (1 - k_{creep} \cdot \sqrt{N_{cycles}})$$
 
-$$\text{Margin} = T_{\text{limit}} - T_{\text{predicted}} = 60 - 58 = 2^\circ\text{C}$$
+### 7.6 Aerogel Thermal Conductivity Increase
+$$\lambda(t) = \lambda_0 + \Delta\lambda_{moisture} + \Delta\lambda_{compression} + \Delta\lambda_{sintering}$$
 
-### 7.5 Baleen Safety Factor
+### 7.7 Risk Burn-Down Rate
+$$\frac{d(RPN)}{dt} = -\sum \text{MitigationEffectiveness}_i \cdot \text{Resource}_i$$
 
-$$\text{SF} = \frac{P_{cr}}{P_{\text{applied}}} = \frac{\pi^2 E I / L^2}{T_z \times N_{\text{lacing}}} = 6.4$$
+### 7.8 Transition Risk
+$$R_{trans} = \frac{T_{actual}}{T_{target}} \times \frac{N_{components}}{N_{baseline}} \times RPN_{source}$$
 
 ---

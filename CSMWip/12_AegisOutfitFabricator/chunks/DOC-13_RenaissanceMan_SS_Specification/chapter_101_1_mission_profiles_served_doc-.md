@@ -1,16 +1,63 @@
-## 1. Mission Profiles Served (DOC-01 §2, CSMFAB078 Main §1)
+## 1. Mission Profiles Served by RM-SS (CSMFAB078 Main §2, DOC-10 §2)
 
-| Profile | Code | RM-SS Suitability | Duration | Notes |
-|---------|------|-------------------|----------|-------|
-| **Scout/Recon** | MP-01 | **OPTIMAL** | 8-12 h | High mobility, low mass |
-| **Courier/Message** | MP-02 | **OPTIMAL** | 4-6 h | Sprint/crawl capable |
-| **Light Infantry** | MP-03 | **HIGH** | 6-8 h | Ballistic + mobility |
-| **Urban Operations** | MP-04 | **HIGH** | 4-6 h | Compact for CQB |
-| **VIP Protection** | MP-05 | **MODERATE** | 12 h | Lower ballistic than TG |
-| **Ceremonial Guard** | MP-06 | **OPTIMAL** | 4-6 h | Historical authenticity |
-| **Firefighting (Structural)** | MP-07 | **LOW** | 30 min | Thermal margin minimal |
-| **HazMat/CBRNE** | MP-08 | **LOW** | 2 h | EMI marginal |
-| **Arc Flash/Electrical** | MP-09 | **MODERATE** | 4 h | 58 dB EMI adequate |
-| **Carrington Event** | MP-10 | **MODERATE** | 24 h | GIC protection via L12 |
+### 1.1 Primary Mission Profile: Urban Reconnaissance (URBAN-RECON)
+
+| Parameter | Specification | RM-SS Fit |
+|-----------|---------------|-----------|
+| **Duration** | 8-12 hours | 8 hr operational (battery) |
+| **Environment** | Urban, 15-35°C, 30-70% RH | Thermal comfort optimized |
+| **Threat Level** | NIJ IV ballistic, EMI, thermal | Full 12-layer protection |
+| **Mobility Demand** | High (sprint, climb, crawl) | MI=0.89 (highest) |
+| **Stealth Requirement** | Low visual, low EM signature | YInMn NIR, MXene EMI |
+| **Team Role** | Point man, scout, CQB | Compact, fast donning |
+
+**URBAN-RECON Task Breakdown:**
+- 40% Foot patrol (walk 4 km/h)
+- 20% Static observation
+- 15% Sprint to cover (3-5×/mission)
+- 10% CQB room clearing
+- 10% Vehicle mount/dismount
+- 5% Casualty evacuation
+
+### 1.2 Secondary Profile: Rapid Response Force (RRF-QRF)
+
+| Parameter | Specification | RM-SS Fit |
+|-----------|---------------|-----------|
+| **Alert-to-Action** | <5 minutes | 90 s donning ✅ |
+| **Deployment** | Helicopter/vehicle insertion | Compact, lightweight |
+| **Mission Duration** | 2-4 hours high intensity | Thermal margin adequate |
+| **Transition Need** | May up-armor to RM-SG | <65 s transition ✅ |
+
+### 1.3 Tertiary Profile: Specialized Infiltration (INFIL-SPEC)
+
+| Parameter | Specification | RM-SS Fit |
+|-----------|---------------|-----------|
+| **Insertion** | HALO/HAHO, small boat | 13.73 kg minimal |
+| **Duration** | 24-48 hr (with resupply) | Battery 8 hr, swapable |
+| **Environment** | Variable (-20 to +40°C) | Baleen temp adaptive |
+| **Signature** | Minimal visual/EM/thermal | NIR reflective, low EMI |
+
+### 1.4 Profile-Specific Configuration Matrix
+
+| Configuration | URBAN-RECON | RRF-QRF | INFIL-SPEC |
+|---------------|-------------|---------|------------|
+| **L1 Optical** | Standard | Standard | +IR suppress filter |
+| **L2/L7 Tiles** | Full (150/280) | Full | Reduced (120/220)* |
+| **L5 Aerogel** | 2 mm | 2 mm | 3 mm (cold) |
+| **L8 STF** | Z1-Z3, Z7 | Z1-Z3, Z7 | Full torso |
+| **L10 Chassis** | Standard | Standard | +2 baleen stays |
+| **Electronics** | Full PVDF + BLE | Full | PVDF only (EMCON) |
+| **Mass** | 13.73 kg | 13.73 kg | 13.2 kg / 14.1 kg |
+
+*\*Tile reduction for INFIL requires CCB approval*
+
+### 1.5 Cross-References
+
+- CSMFAB078 Main §2: Mission profile definitions
+- DOC-10 §2: Operational procedures per profile
+- Chapter 93: Donning (time-critical for RRF)
+- Chapter 102: Profile-specific configuration
+- Chapter 128: Edition comparison (RM-SS vs others)
+- Chapter 129: Edition transitions
 
 ---
