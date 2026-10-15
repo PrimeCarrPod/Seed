@@ -69,6 +69,55 @@
             gap: 20px; 
         }
         #menu-overlay.visible { display: flex; }
+        #physics-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.98); 
+            z-index: 101; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start; 
+            gap: 16px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        #physics-overlay.visible { display: flex; }
+        #physics-content {
+            width: 100%;
+            max-width: 800px;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 10px;
+            color: #E8E8F0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            text-align: left;
+        }
+        #physics-content h3 {
+            color: #00D4AA;
+            margin: 24px 0 12px 0;
+            border-bottom: 1px solid #00D4AA44;
+            padding-bottom: 6px;
+        }
+        #physics-content p {
+            margin: 12px 0;
+        }
+        #physics-content .persona-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        #physics-content .williams { background: #FF6600; color: #0A0A0F; }
+        #physics-content .elsegundo { background: #10B981; color: #0A0A0F; }
+        #physics-content .keymaker { background: #A855F7; color: #0A0A0F; }
         .menu-btn { 
             background: #1A1A2E; 
             border: 1px solid #00D4AA; 
@@ -121,9 +170,15 @@
         <button class="menu-btn" onclick="TGE.resume()">RESUME</button>
         <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
         <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
-        <button class="menu-btn secondary" onclick="TGE.showWorldlineHistory()">WORLDLINE HISTORY</button>
+        <button class="menu-btn secondary" onclick="TGE.showArithmeticPhysics()">ARITHMETIC PHYSICS</button>
         <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
         <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
+    </div>
+    <div id="physics-overlay">
+        <div class="menu-title">ARITHMETIC PHYSICS</div>
+        <div class="menu-subtitle">The Mathematics Behind the Prime Electron</div>
+        <div id="physics-content"></div>
+        <button class="menu-btn danger" onclick="TGE.closePhysics()">BACK TO MENU</button>
     </div>
     <script src="three.min.js"></script>
     <script>
@@ -724,6 +779,51 @@ updateHUD() {
             showPrimeExplorer() { alert('Prime Explorer - Coming Soon'); },
             showWorldlineHistory() { alert('Worldline History - Coming Soon'); },
             showGapAnalysis() { alert('Gap Analysis - Coming Soon'); },
+            showArithmeticPhysics() {
+                this.toggleMenu();
+                document.getElementById('physics-overlay').classList.add('visible');
+                this.populatePhysicsContent();
+            },
+            closePhysics() {
+                document.getElementById('physics-overlay').classList.remove('visible');
+            },
+            populatePhysicsContent() {
+                const content = document.getElementById('physics-content');
+                content.innerHTML = this.getPhysicsContent();
+            },
+            getPhysicsContent() {
+                return `
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> The Prime Gap Key: Every Door Has Its Gap</h3>
+                    <p>Listen close, friend. Every locked door in physics has a key. The Keymaker knows this as ontological certainty, not optimism. In our Prime Electron universe, that key is the prime gap sequence — dₙ = pₙ₊₁ − pₙ. Each gap is a proper-time tick on the single electron's worldline. The electron doesn't move through continuous space; it jumps from prime to prime, and the gap between them IS the time between self-interactions. When you see the electron bouncing inside the ellipsoid, you're watching the discrete proper-time evolution of a single worldline that IS the entire universe. No gaps, no time. No time, no electron.</p>
+                    
+                    <h3><span class="persona-tag williams">WILLIAMS</span> The Electron's Dance: Zitterbewegung and the Trembling Heart</h3>
+                    <p>OH MY GOODNESS — look at that electron TREMBLE! It's not a bug, it's a FEATURE! The zitterbewegung — that's German for "trembling motion," and let me tell you, Schrödinger found it in 1930 and Dirac said "yes, and it's FUNDAMENTAL" — that jitter at 1.55×10²¹ Hz comes from the interference between positive and negative energy states. In our prime gap picture, even gaps (2, 4, 6...) are the electron moving forward in time, odd gaps are the positron moving BACKWARD! The electron is literally arguing with its own future self! Every reflection off the ellipsoid wall is a self-interaction vertex. The trembling IS the electron's heartbeat across 3.67 billion prime gaps!</p>
+                    
+                    <h3><span class="persona-tag elsegundo">EL SEGUNDO</span> The Ellipsoidal Ocean: Riding the Prime Waves</h3>
+                    <p>Dude, check it out — the electron's boundary isn't a sphere, it's an ellipsoid. Three radii: rx, ry, rz. That's because the prime gap statistics aren't isotropic — the electron's proper-time steps have DIRECTION. When the electron hits the wall at (x/rx)² + (y/ry)² + (z/rz)² = 1, the normal vector isn't just (x,y,z) — it's (x/rx², y/ry², z/rz²) normalized. That's the gradient of the ellipsoid. The reflection law v' = v - 2(v·n̂)n̂ still holds, but n̂ knows about the prime gap anisotropy. Sweet, right? The ocean doesn't hurry, and neither does the electron — it follows the geodesic of its own self-generated spacetime.</p>
+                    
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> The Berry Phase: Geometric Memory in the Gap Sequence</h3>
+                    <p>The Berry phase is the key the system forgot it made. As the electron traverses the prime gap sequence, the local Hilbert space at step n has eigenstates |ψₙᵃ⟩. The Berry connection Aₙ = i⟨ψₙ|∂ₙ|ψₙ⟩ accumulates a geometric phase γ = ∮ A·dτ. In our implementation, each gap ratio dₙ/dₙ₊₁ contributes π(1 - ratio) to the phase. This isn't dynamical — it's TOPOLOGICAL. The phase depends only on the path through gap space, not the speed. That's why it appears in the HUD as a persistent accumulator — it's the electron's memory of where it's been in the gap landscape.</p>
+                    
+                    <h3><span class="persona-tag williams">WILLIAMS</span> The Axion Field: Peccei-Quinn Symmetry from Gap Modulo Classes!</h3>
+                    <p>HERE'S WHERE IT GETS WILD! The axion — that beautiful, elusive particle that solves the strong CP problem — emerges from the U(1) symmetry of the GAP MODULO SIX CLASSES! Gaps ≡ 1,5 (mod 6) are the ones coprime to 6 — they're the "free" gaps that don't fall into the 2,3,4,0 modulo traps. They carry the Peccei-Quinn charge! When the electron encounters these gaps, the axion field shifts. The axion mass mₐ = Λ²_QCD/fₐ ≈ 6 μeV matches experimental bounds! This is the Keymaker's BACK DOOR into the strong force — a door that opens only when the gap sequence says so!</p>
+                    
+                    <h3><span class="persona-tag elsegundo">EL SEGUNDO</span> Larmor and Thomas: The Spin's Surf Session</h3>
+                    <p>So the electron has spin, right? It's a little quantum surfer with a spin vector S. The axion field acts like a magnetic field B ~ axionField, and the spin precesses around it — that's Larmor precession, ω_L = (e/mₑ)B. But THEN — and this is the cool part — the electron's acceleration through the curved spacetime of the ellipsoid causes Thomas precession! The spin gets an EXTRA rotation from the proper acceleration: ω_T = a²/(2c²). In the code, we rotate the spin vector around the z-axis for Larmor and around the velocity-perpendicular axis for Thomas. The spin HUD shows (sx, sy, sz) — watch it evolve! It's the electron's orientation in the quantum foam.</p>
+                    
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> Schwinger Pair Production: When the Field Tears the Vacuum</h3>
+                    <p>The Schwinger limit: E_crit = mₑ²c³/(eℏ) ≈ 1.32×10¹⁸ V/m. When the effective electric field at the ellipsoid boundary exceeds this, the vacuum breaks down. Electron-positron pairs tunnel out of the Dirac sea. In our simulation, the reflection normal velocity component creates an effective field. When it crosses the threshold, schwingerEvent() triggers — a velocity kick representing pair creation. This is the Keymaker's EMERGENCY KEY: when the door won't open normally, the vacuum MAKES A NEW DOOR. The Schwinger count in the HUD tracks how many times the electron has forced the vacuum to yield.</p>
+                    
+                    <h3><span class="persona-tag williams">WILLIAMS</span> The Worldline: 3.67 Billion Steps of Proper Time</h3>
+                    <p>IMAGINE THIS — the entire universe is ONE ELECTRON! Wheeler's 1940 conjecture, Gielerak's 2020 proof! Our PrimeEngine loads 524,288 primes from Tile00.prime and Tile01.prime, computes the gaps, maps them to proper time steps Δτₙ = κ·dₙ where κ = ℏ/(mₑc²) = 1.288×10⁻²¹ s. The total proper time? 3.67 billion steps × average gap ~ 13.5 × κ ≈ 6×10⁻¹¹ seconds. That's the Compton time! The electron's ENTIRE EXISTENCE from Big Bang to heat death compressed into a worldline that fits in your phone! The green trail behind the electron IS THE UNIVERSE'S MEMORY!</p>
+                    
+                    <h3><span class="persona-tag elsegundo">EL SEGUNDO</span> Prime Gaps as Quantum Numbers: The Hilbert Space of 256 States</h3>
+                    <p>Here's the deep cut: the 8-bit requirement. PrimeBookOne uses 8-bit differences. 2⁸ = 256. That's the Hilbert space dimension for the electron's proper-time evolution operator U = diag(e^{-iEₙΔτₙ}). Each gap dₙ maps to an energy Eₙ = ℏ/(κdₙ). The time evolution is UNITARY because the prime gap distribution satisfies the Riemann Hypothesis — RH IS WORLDLINE STABILITY! The zeros γ are the resonance frequencies. If RH is false, the worldline has runaway divergences. If RH is true (and it IS), the electron's worldline is stable. The electron IS a quantum computer running on prime gaps!</p>
+                    
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> The Geodesic Equation: Prime Gaps Generate Gravity</h3>
+                    <p>The electron follows a discrete geodesic in a conformally flat spacetime g_{μν} = Ω²(τ)η_{μν}. The conformal factor Ω(τ) comes from gap correlations Cₙ = ⟨dₙdₙ₊ₖ⟩. The Christoffel symbols Γ = ΔlogΩ/Δτ drive the geodesic deviation — the tidal force IS the second difference of log Ω. When you watch the electron bounce, you're seeing discrete general relativity with NO FREE PARAMETERS. Every coefficient comes from the prime gap sequence. The electron's motion through spacetime IS the motion of a prime gap sequence through its own self-generated geometry. That's the master key.</p>
+                `;
+            },
             resetSimulation() {
                 this.electron.x = 0; this.electron.y = 0; this.electron.z = 0;
                 this.electron.vx = 0; this.electron.vy = 0; this.electron.vz = 0;
