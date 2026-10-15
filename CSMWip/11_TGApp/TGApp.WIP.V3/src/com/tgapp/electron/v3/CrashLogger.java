@@ -41,7 +41,7 @@ public class CrashLogger {
             FileWriter fw = new FileWriter(logFile, true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write("\n\n=== SESSION START: " + TIMESTAMP.format(new Date()) + " ===\n");
-            bw.write("Package: com.tgapp.electron\n");
+            bw.write("Package: com.tgapp.electron.v3\n");
             bw.write("Log file: " + logFile.getAbsolutePath() + "\n");
             bw.write("CrashLogger.init() called\n");
             bw.flush();
@@ -92,7 +92,7 @@ public class CrashLogger {
             FileWriter fw = new FileWriter(publicLog, true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write("\n\n=== SESSION START (PUBLIC): " + TIMESTAMP.format(new Date()) + " ===\n");
-            bw.write("Package: com.tgapp.electron\n");
+            bw.write("Package: com.tgapp.electron.v3\n");
             bw.write("Primary log: " + logFile.getAbsolutePath() + "\n");
             bw.flush();
             bw.close();

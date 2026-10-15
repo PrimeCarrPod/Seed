@@ -1,4 +1,4 @@
-# RESUME_SESSION_WORKSPACE — 2026-10-14
+# RESUME_SESSION_WORKSPACE — 2026-10-14 (V3 Only)
 
 ## Session State Summary
 
@@ -27,9 +27,9 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 
 ---
 
-## TGApp.WIP.V3 — ✅ COMPLETE (WebGL 3D with Landolil electron physics)
+## TGApp.WIP.V3 — ⚠️ APK BUILT BUT CRASHES ON STARTUP (NEEDS REBUILD)
 
-- **APK**: `tgapp_electron_v3.apk` (1.4 MB)
+- **APK**: `tgapp_electron_v3.apk` (1.4 MB) — EXISTS but is stale (crashes)
 - **Location**: `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/tgapp_electron_v3.apk`
 - **Package**: `com.tgapp.electron.v3` (different from V2's `com.tgapp.electron`)
 - **Features**: 
@@ -43,23 +43,37 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 - **Keystore**: Symlink to `../../05_BOUNCE/debug.keystore`
 - **Assets**: `three.min.js`, `tge_electron.html`, `Tile00.prime`, `Tile01.prime`
 - **Log file**: `/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/tge_electron_crash_log.txt` (also mirrored to public Downloads)
-- **Build script**: `build.py` (hard-coded V2 build process)
+- **Build script**: Use shared `../../__Python_Tools/build_apk.py` (NOT local build.py)
+
+### CRASH DETAILS (Fixed in Source, Need Rebuild)
+```
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 
+'android.view.WindowInsetsController com.android.internal.policy.DecorView.getWindowInsetsController()' 
+on a null object reference
+    at com.tgapp.electron.MainActivity.setupFullscreen(MainActivity.java:89)
+```
+**Fix applied in MainActivity.java**: `setContentView()` now called before `setupFullscreen()` (lines 86-90). Rebuild required.
+
+### BUG: CrashLogger.java Wrong Package Name
+- **File**: `src/com/tgapp/electron/v3/CrashLogger.java:44` and line 96
+- **Current**: `Package: com.tgapp.electron`
+- **Should be**: `Package: com.tgapp.electron.v3`
 
 ---
 
-## Build Commands (V3 Only)
+## Build Commands (V3 Only — Shared build_apk.py)
 
 ```bash
 # === TGApp.WIP.V3 (WebGL 3D) ===
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-python3 build.py build
+python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
 
 # Verify
 export BUILD_TOOLS=/opt/android-sdk/build-tools/34.0.0
 $BUILD_TOOLS/apksigner verify tgapp_electron_v3.apk
 
-# Install on device
+# Install on device (replaces crashing version)
 adb install -r tgapp_electron_v3.apk
 ```
 
@@ -69,11 +83,12 @@ adb install -r tgapp_electron_v3.apk
 
 | File | Purpose |
 |------|---------|
-| `/workspace/app/NEXT_runner_001.md` | Build commands + project status |
+| `/workspace/app/NEXT_runner_002.md` | V3-only build commands + crash fix notes |
 | `/workspace/app/RESUME_SESSION_WORKSPACE.md` | This file - session state |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/` | **Active project** - WebGL 3D |
-| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/build.py` | V3 build script (V2 process) |
-| `/workspace/app/__Python_Tools/build_apk.py` | Shared No-Gradle builder |
+| `/workspace/app/__Python_Tools/build_apk.py` | Shared No-Gradle builder (USE THIS) |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/CrashLogger.java` | **FIX NEEDED**: package name lines 44, 96 |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/MainActivity.java` | Fixed: setContentView before setupFullscreen |
 
 ---
 
@@ -89,10 +104,10 @@ git branch  # kilo/active-vertex-nla
 ## Heartbeat
 
 ```bash
-./CSMWipScripts/heartbeat.sh "V3 WebGL 3D with Landolil physics" "OK" "tgapp_electron_v3.apk 1.4 MB verified"
+./CSMWipScripts/heartbeat.sh "V3 WebGL 3D - rebuild with build_apk.py + CrashLogger fix" "PENDING" "Fix CrashLogger package name, rebuild APK, test on device"
 ```
 
 ---
 
-**Session saved**: 2026-10-14T23:20:00Z
-**Active project**: TGApp.WIP.V3 — APK on branch with Landolil electron physics integrated
+**Session saved**: 2026-10-14T23:56:00Z  
+**Active project**: TGApp.WIP.V3 — Fix CrashLogger package name, rebuild with build_apk.py, test on device
