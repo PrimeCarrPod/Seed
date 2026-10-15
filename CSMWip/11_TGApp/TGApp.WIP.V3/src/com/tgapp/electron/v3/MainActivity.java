@@ -166,6 +166,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         wv.setWebChromeClient(new WebChromeClient());
         wv.setWebViewClient(new WebViewClientImpl(this));
         wv.addJavascriptInterface(new JsBridge(this), "TGEBridge");
+        wv.addJavascriptInterface(new PrimeTileDownloader(this), "PrimeTileDownloader");
         
         // Add error handling for asset loading
         CrashLogger.logInfo("MainActivity", "Loading WebView URL");
