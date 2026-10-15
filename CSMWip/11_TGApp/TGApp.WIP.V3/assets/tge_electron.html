@@ -901,8 +901,107 @@ updateHUD() {
             toggleFleet() { console.log('Fleet toggle'); }
         };
         
+        // PrimeDataLoader: Loads prime tiles from local Documents or falls back to assets
+        const PrimeDataLoader = {
+            basePath: null,
+            directories: ['0.0', '0.1', '1.0', '2.0', '2.1', '3.0'],
+            tilesPerDir: { '0.0': 189, '0.1': 189, '1.0': 189, '2.0': 189, '2.1': 189, '3.0': 3500 },
+            loadedTiles: new Set(),
+            
+            async init() {
+                // Try to access Documents/PrimeBookOne via File System Access API or fetch
+                this.basePath = 'PrimeBookOne/'; // Relative to Documents
+                await this.scanLocalTiles();
+            },
+            
+            async scanLocalTiles() {
+                // Check which tiles exist locally
+                for (const dir of this.directories) {
+                    const count = this.tilesPerDir[dir] || 0;
+                    for (let i = 0; i < count; i++) {
+                        const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
+                        const path = `${this.basePath}${dir}/${tileName}`;
+                        try {
+                            // Try HEAD request to check existence
+                            const resp = await fetch(path, { method: 'HEAD', cache: 'no-cache' });
+                            if (resp.ok) {
+                                this.loadedTiles.add(`${dir}/${tileName}`);
+                            }
+                        } catch (e) {
+                            // File doesn't exist locally
+                        }
+                    }
+                }
+                console.log(`PrimeDataLoader: Found ${this.loadedTiles.size} local tiles`);
+            },
+            
+            async loadTilesForDirectory(dir, startTile = 0, endTile = null) {
+                const count = this.tilesPerDir[dir] || 0;
+                const end = endTile !== null ? Math.min(endTile, count - 1) : count - 1;
+                const tilesData = [];
+                
+                for (let i = startTile; i <= end; i++) {
+                    const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
+                    const localPath = `${this.basePath}${dir}/${tileName}`;
+                    const assetPath = `assets/${tileName}`; // Fallback to bundled assets (only Tile00/01)
+                    
+                    let data = null;
+                    const key = `${dir}/${tileName}`;
+                    
+                    if (this.loadedTiles.has(key)) {
+                        try {
+                            const resp = await fetch(localPath, { cache: 'no-cache' });
+                            if (resp.ok) {
+                                const buffer = await resp.arrayBuffer();
+                                data = new Uint8Array(buffer);
+                            }
+                        } catch (e) {
+                            console.warn(`Failed to load local tile ${key}:`, e);
+                        }
+                    }
+                    
+                    // Fallback to bundled assets for Tile00, Tile01
+                    if (!data && (tileName === 'Tile000.prime' || tileName === 'Tile001.prime')) {
+                        try {
+                            const resp = await fetch(assetPath, { cache: 'no-cache' });
+                            if (resp.ok) {
+                                const buffer = await resp.arrayBuffer();
+                                data = new Uint8Array(buffer);
+                            }
+                        } catch (e) {
+                            console.warn(`Failed to load asset tile ${tileName}:`, e);
+                        }
+                    }
+                    
+                    if (data) {
+                        tilesData.push(data);
+                    }
+                }
+                
+                return tilesData;
+            },
+            
+            async loadAllAvailable() {
+                let allTilesData = [];
+                for (const dir of this.directories) {
+                    const tiles = await this.loadTilesForDirectory(dir);
+                    allTilesData = allTilesData.concat(tiles);
+                    console.log(`Loaded ${tiles.length} tiles from ${dir}`);
+                }
+                return allTilesData;
+            }
+        };
+        
         const PrimeEngine = {
-            init(tilesData) {
+            async init() {
+                // Load from local files first, fallback to assets
+                const tilesData = await PrimeDataLoader.loadAllAvailable();
+                
+                if (tilesData.length === 0) {
+                    console.warn('No prime tiles found, using fallback');
+                    return;
+                }
+                
                 const allBytes = [];
                 for (const tile of tilesData) {
                     for (const b of tile) {
@@ -931,14 +1030,16 @@ updateHUD() {
                 document.getElementById('gap-count').textContent = TGE.primeGaps.length;
                 document.getElementById('current-gap').textContent = TGE.primeGaps[0] || 0;
                 
-                console.log('PrimeEngine init:', primes.length, 'primes,', TGE.primeGaps.length, 'gaps');
+                console.log('PrimeEngine init:', primes.length, 'primes,', TGE.primeGaps.length, 'gaps from', tilesData.length, 'tiles');
             }
         };
         
         window.TGE = TGE;
         window.PrimeEngine = PrimeEngine;
+        window.PrimeDataLoader = PrimeDataLoader;
         
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', async () => {
+            await PrimeDataLoader.init();
             TGE.init();
         });
     </script>
