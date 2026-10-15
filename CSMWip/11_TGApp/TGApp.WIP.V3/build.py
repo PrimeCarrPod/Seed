@@ -15,7 +15,7 @@ BUILD_DIR = PROJECT_ROOT / "build"
 SRC_DIR = PROJECT_ROOT / "src"
 RES_DIR = PROJECT_ROOT / "res"
 MANIFEST = PROJECT_ROOT / "AndroidManifest.xml"
-OUTPUT_APK = PROJECT_ROOT / "tgapp_electron_v3_017.apk"
+OUTPUT_APK = PROJECT_ROOT / "tgapp_electron_v3_018.apk"
 
 # Environment variables (with defaults)
 ANDROID_SDK = os.environ.get("ANDROID_SDK", "/opt/android-sdk")
