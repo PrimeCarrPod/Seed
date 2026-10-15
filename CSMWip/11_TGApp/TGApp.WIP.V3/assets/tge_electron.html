@@ -102,6 +102,10 @@
             <div class="stat-row"><span class="stat-label">Worldline Steps:</span><span class="stat-value" id="steps">0</span></div>
             <div class="stat-row"><span class="stat-label">Mode:</span><span class="stat-value" id="mode">LIVE</span></div>
             <div class="stat-row"><span class="stat-label">Zoom:</span><span class="stat-value" id="zoom-level">1.0x</span></div>
+            <div class="stat-row"><span class="stat-label">Berry Phase:</span><span class="stat-value" id="berry-phase">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Axion Field:</span><span class="stat-value" id="axion-field">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Spin:</span><span class="stat-value" id="spin-x">0.00</span><span class="stat-value" id="spin-y">0.00</span><span class="stat-value" id="spin-z">1.00</span></div>
+            <div class="stat-row"><span class="stat-label">Schwinger:</span><span class="stat-value" id="schwinger-count">0</span></div>
         </div>
         <div class="hud-panel">
             <div class="hud-title">PRIME ENGINE</div>
@@ -125,8 +129,16 @@
     <script>
         const TGE = {
             canvas: null, renderer: null, scene: null, camera: null, width: 0, height: 0,
-            electron: { x: 0, y: 0, z: 0, vx: 0, vy: 0, vz: 0, radius: 0.5 },
-            worldline: [], reflections: 0, steps: 0,
+            electron: { 
+                x: 0, y: 0, z: 0, 
+                vx: 0, vy: 0, vz: 0, 
+                radius: 0.5,
+                spin: { x: 0, y: 0, z: 1 },
+                berryPhase: 0,
+                axionField: 0,
+                zitterPhase: 0
+            },
+            worldline: [], reflections: 0, steps: 0, schwingerCount: 0,
             eggshell: { rx: 0, ry: 0, rz: 0 },
             primeGaps: [], primeGapIndex: 0, gapsCrossed: 0,
             theoryMode: false, running: true, animationId: null,
@@ -140,6 +152,12 @@
             cameraElevation: 0,
             electronMesh: null, worldlineMesh: null, eggshellMesh: null,
             primeGapMeshes: [],
+            
+            // Physics constants from Prime Electron research
+            COMPTON_TIME: 1.288e-21,  // ℏ/(m_e c^2) in seconds
+            ZITTER_FREQ: 1.55e21,     // 2m_e c^2/ℏ in Hz
+            ZITTER_AMP: 1.93e-13,     // ℏ/(2m_e c) in meters (Compton wavelength/2)
+            SCHWINGER_FIELD: 1.32e18, // m_e^2 c^3/(e ℏ) in V/m
             
             init() {
                 this.canvas = document.getElementById('canvas');
@@ -303,50 +321,158 @@
             
             step() {
                 this.steps++;
-                this.electron.x += this.electron.vx;
-                this.electron.y += this.electron.vy;
-                this.electron.z += this.electron.vz;
                 
+                // Prime gap drives proper time step (Δτ_n = κ·d_n)
+                const gap = this.primeGaps[this.primeGapIndex] || 2;
+                const properTimeStep = this.COMPTON_TIME * gap;
+                
+                // Zitterbewegung: high-frequency trembling from even/odd gap interference
+                this.electron.zitterPhase += 2 * Math.PI * this.ZITTER_FREQ * properTimeStep;
+                const zitterX = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase) * 1e10; // scaled for visualization
+                const zitterY = this.ZITTER_AMP * Math.cos(this.electron.zitterPhase) * 1e10;
+                const zitterZ = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase * 0.618) * 1e10;
+                
+                // Berry phase accumulation from gap sequence (geometric phase)
+                const gapRatio = gap / (this.primeGaps[this.primeGapIndex + 1] || gap);
+                this.electron.berryPhase += Math.PI * (1 - gapRatio) * 0.1;
+                
+                // Axion field coupling (PQ symmetry from gap U(1) modulo)
+                const gapMod6 = gap % 6;
+                this.electron.axionField += (gapMod6 === 1 || gapMod6 === 5) ? 0.01 : -0.005;
+                this.electron.axionField = Math.max(-1, Math.min(1, this.electron.axionField));
+                
+                // Effective velocity with Zitterbewegung
+                const effectiveVx = this.electron.vx + zitterX * properTimeStep * 1e20;
+                const effectiveVy = this.electron.vy + zitterY * properTimeStep * 1e20;
+                const effectiveVz = this.electron.vz + zitterZ * properTimeStep * 1e20;
+                
+                // Position update with proper 3D velocity
+                this.electron.x += effectiveVx * properTimeStep * 1e20;
+                this.electron.y += effectiveVy * properTimeStep * 1e20;
+                this.electron.z += effectiveVz * properTimeStep * 1e20;
+                
+                // Check ellipsoidal boundary: (x/rx)^2 + (y/ry)^2 + (z/rz)^2 = 1
                 const normX = this.electron.x / this.eggshell.rx;
                 const normY = this.electron.y / this.eggshell.ry;
                 const normZ = this.electron.z / this.eggshell.rz;
                 const distSq = normX * normX + normY * normY + normZ * normZ;
                 
                 if (distSq >= 1.0) {
-                    this.handleReflection(normX, normY, normZ);
+                    this.handleReflection(normX, normY, normZ, gap);
                 }
+                
+                // Larmor precession: spin precesses in magnetic field (from axion coupling)
+                const bField = this.electron.axionField * 1e-3;
+                const larmorFreq = bField * 1.76e11; // e/m_e in rad/s/T
+                const larmorAngle = larmorFreq * properTimeStep;
+                this.rotateSpinAroundAxis(this.electron.spin, {x: 0, y: 0, z: 1}, larmorAngle);
+                
+                // Thomas precession: from proper acceleration in curved space
+                const accelMag = Math.sqrt(effectiveVx*effectiveVx + effectiveVy*effectiveVy + effectiveVz*effectiveVz) / properTimeStep;
+                const thomasFreq = (accelMag * accelMag) / (2 * 2.998e8 * 2.998e8); // a^2/(2c^2)
+                const thomasAngle = thomasFreq * properTimeStep;
+                this.rotateSpinAroundAxis(this.electron.spin, {x: -effectiveVy, y: effectiveVx, z: 0}, thomasAngle);
                 
                 this.checkPrimeGaps();
                 this.updateHUD();
             },
             
-            handleReflection(normX, normY, normZ) {
-                this.reflections++;
-                const normalLen = Math.sqrt(normX * normX + normY * normY + normZ * normZ);
-                const nx = normX / normalLen;
-                const ny = normY / normalLen;
-                const nz = normZ / normalLen;
-                const dot = this.electron.vx * nx + this.electron.vy * ny + this.electron.vz * nz;
-                this.electron.vx -= 2 * dot * nx;
-                this.electron.vy -= 2 * dot * ny;
-                this.electron.vz -= 2 * dot * nz;
-                this.electron.vx *= 0.99;
-                this.electron.vy *= 0.99;
-                this.electron.vz *= 0.99;
-                this.electron.x = normX * this.eggshell.rx * 0.98;
-                this.electron.y = normY * this.eggshell.ry * 0.98;
-                this.electron.z = normZ * this.eggshell.rz * 0.98;
+            rotateSpinAroundAxis(spin, axis, angle) {
+                // Rodrigues rotation formula
+                const cos = Math.cos(angle);
+                const sin = Math.sin(angle);
+                const dot = spin.x * axis.x + spin.y * axis.y + spin.z * axis.z;
+                const crossX = spin.y * axis.z - spin.z * axis.y;
+                const crossY = spin.z * axis.x - spin.x * axis.z;
+                const crossZ = spin.x * axis.y - spin.y * axis.x;
                 
-                this.worldline.push({ x: this.electron.x, y: this.electron.y, z: this.electron.z, t: this.steps });
+                spin.x = spin.x * cos + crossX * sin + axis.x * dot * (1 - cos);
+                spin.y = spin.y * cos + crossY * sin + axis.y * dot * (1 - cos);
+                spin.z = spin.z * cos + crossZ * sin + axis.z * dot * (1 - cos);
+                
+                // Renormalize
+                const len = Math.sqrt(spin.x*spin.x + spin.y*spin.y + spin.z*spin.z);
+                spin.x /= len; spin.y /= len; spin.z /= len;
+            },
+            
+            handleReflection(normX, normY, normZ, gap) {
+                this.reflections++;
+                
+                // Proper 3D ellipsoidal reflection: angle of incidence = angle of reflection
+                // Normal vector at ellipsoid point (x/rx^2, y/ry^2, z/rz^2) normalized
+                const nx = normX / this.eggshell.rx;
+                const ny = normY / this.eggshell.ry;
+                const nz = normZ / this.eggshell.rz;
+                const normalLen = Math.sqrt(nx*nx + ny*ny + nz*nz);
+                const nHatX = nx / normalLen;
+                const nHatY = ny / normalLen;
+                const nHatZ = nz / normalLen;
+                
+                // Velocity before reflection (including Zitterbewegung)
+                const gapRatio = gap / (this.primeGaps[this.primeGapIndex + 1] || gap);
+                const zitterX = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase) * 1e10;
+                const zitterY = this.ZITTER_AMP * Math.cos(this.electron.zitterPhase) * 1e10;
+                const zitterZ = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase * 0.618) * 1e10;
+                const effectiveVx = this.electron.vx + zitterX * this.COMPTON_TIME * gap * 1e20;
+                const effectiveVy = this.electron.vy + zitterY * this.COMPTON_TIME * gap * 1e20;
+                const effectiveVz = this.electron.vz + zitterZ * this.COMPTON_TIME * gap * 1e20;
+                
+                // Perfect elastic reflection: v' = v - 2(v·n)n
+                const dot = effectiveVx * nHatX + effectiveVy * nHatY + effectiveVz * nHatZ;
+                this.electron.vx = effectiveVx - 2 * dot * nHatX;
+                this.electron.vy = effectiveVy - 2 * dot * nHatY;
+                this.electron.vz = effectiveVz - 2 * dot * nHatZ;
+                
+                // Energy loss at boundary (synchrotron radiation)
+                const energyLoss = 0.995;
+                this.electron.vx *= energyLoss;
+                this.electron.vy *= energyLoss;
+                this.electron.vz *= energyLoss;
+                
+                // Schwinger pair production check: effective field > critical
+                const effectiveField = Math.abs(dot) * this.electron.vx; // simplified
+                if (effectiveField > this.SCHWINGER_FIELD * 1e-15) { // scaled
+                    this.schwingerEvent();
+                }
+                
+                // Push back inside ellipsoid with proper margin
+                const margin = 0.98;
+                this.electron.x = normX * this.eggshell.rx * margin;
+                this.electron.y = normY * this.eggshell.ry * margin;
+                this.electron.z = normZ * this.eggshell.rz * margin;
+                
+                // Record worldline point with proper time
+                this.worldline.push({ 
+                    x: this.electron.x, 
+                    y: this.electron.y, 
+                    z: this.electron.z, 
+                    t: this.steps,
+                    berryPhase: this.electron.berryPhase,
+                    spin: { ...this.electron.spin }
+                });
                 if (this.worldline.length > 2000) this.worldline.shift();
                 
                 if (window.TGEBridge) {
                     window.TGEBridge.onWorldlineReflection(JSON.stringify({
                         reflections: this.reflections,
                         position: { x: this.electron.x, y: this.electron.y, z: this.electron.z },
-                        velocity: { x: this.electron.vx, y: this.electron.vy, z: this.electron.vz }
+                        velocity: { x: this.electron.vx, y: this.electron.vy, z: this.electron.vz },
+                        spin: this.electron.spin,
+                        berryPhase: this.electron.berryPhase,
+                        axionField: this.electron.axionField
                     }));
                 }
+            },
+            
+            schwingerEvent() {
+                // Electron-positron pair production at boundary
+                // Creates a "spark" effect - velocity randomization from pair creation
+                const angle = Math.random() * 2 * Math.PI;
+                const boost = 0.5;
+                this.electron.vx += Math.cos(angle) * boost;
+                this.electron.vy += Math.sin(angle) * boost;
+                this.electron.vz += (Math.random() - 0.5) * boost;
+                this.schwingerCount = (this.schwingerCount || 0) + 1;
             },
             
             checkPrimeGaps() {
@@ -371,7 +497,7 @@
                 }
             },
             
-            updateHUD() {
+updateHUD() {
                 document.getElementById('pos-x').textContent = this.electron.x.toFixed(2);
                 document.getElementById('pos-y').textContent = this.electron.y.toFixed(2);
                 document.getElementById('pos-z').textContent = this.electron.z.toFixed(2);
@@ -384,6 +510,13 @@
                 document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
                 document.getElementById('gap-index').textContent = this.primeGapIndex;
                 document.getElementById('current-gap').textContent = this.primeGaps[this.primeGapIndex] || 0;
+                document.getElementById('zoom-level').textContent = this.zoom.toFixed(1) + 'x';
+                document.getElementById('berry-phase').textContent = (this.electron.berryPhase % (2*Math.PI)).toFixed(2);
+                document.getElementById('axion-field').textContent = this.electron.axionField.toFixed(2);
+                document.getElementById('spin-x').textContent = this.electron.spin.x.toFixed(2);
+                document.getElementById('spin-y').textContent = this.electron.spin.y.toFixed(2);
+                document.getElementById('spin-z').textContent = this.electron.spin.z.toFixed(2);
+                document.getElementById('schwinger-count').textContent = this.schwingerCount || 0;
             },
             
             setupScene() {
@@ -594,11 +727,16 @@
             resetSimulation() {
                 this.electron.x = 0; this.electron.y = 0; this.electron.z = 0;
                 this.electron.vx = 0; this.electron.vy = 0; this.electron.vz = 0;
+                this.electron.spin = { x: 0, y: 0, z: 1 };
+                this.electron.berryPhase = 0;
+                this.electron.axionField = 0;
+                this.electron.zitterPhase = 0;
                 this.worldline = [];
                 this.reflections = 0;
                 this.steps = 0;
                 this.gapsCrossed = 0;
                 this.primeGapIndex = 0;
+                this.schwingerCount = 0;
                 this.primeGapMeshes.forEach(m => m.visible = false);
             },
             
