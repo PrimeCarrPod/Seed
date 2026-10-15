@@ -31,12 +31,17 @@ public class PrimeTileDownloader {
         File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
         this.downloadDir = downloadsDir.getAbsolutePath() + "/PrimeBookOne/";
         new File(downloadDir).mkdirs();
-        // Secondary: App-specific external files dir (for WebView access, persists across updates)
+        // Secondary: Public Documents folder (legacy location, persists across reinstalls)
+        File documentsDirFile = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+        this.documentsDir = documentsDirFile.getAbsolutePath() + "/PrimeBookOne/";
+        new File(documentsDir).mkdirs();
+        // Tertiary: App-specific external files dir (for WebView access, persists across updates)
         this.appFilesDir = activity.getExternalFilesDir(null).getAbsolutePath() + "/PrimeBookOne/";
         new File(appFilesDir).mkdirs();
     }
     
     private String appFilesDir;
+    private String documentsDir;
     
     @JavascriptInterface
     public String getDownloadDir() { return downloadDir; }
@@ -76,7 +81,7 @@ public class PrimeTileDownloader {
             String url = BASE_URL + singleDir + "/" + tileName + ".zip";
             String targetDir = downloadDir + singleDir + "/"; new File(targetDir).mkdirs();
             String targetFile = targetDir + tileName + ".prime";
-            if (new File(targetFile).exists()) { completedTiles++; postProgress(); continue; }
+            if (fileExistsInAnyLocation(singleDir, tileName + ".prime")) { completedTiles++; postProgress(); continue; }
             boolean success = downloadAndExtract(url, targetFile);
             if (success) completedTiles++; else postCallback("onDownloadError", "\"Failed: " + tileName + " in " + singleDir + "\"");
             postProgress();
@@ -94,13 +99,26 @@ public class PrimeTileDownloader {
                 String url = BASE_URL + dir + "/" + tileName + ".zip";
                 String targetDir = downloadDir + dir + "/"; new File(targetDir).mkdirs();
                 String targetFile = targetDir + tileName + ".prime";
-                if (new File(targetFile).exists()) { completedTiles++; postProgress(); continue; }
+                if (fileExistsInAnyLocation(dir, tileName + ".prime")) { completedTiles++; postProgress(); continue; }
                 boolean success = downloadAndExtract(url, targetFile);
                 if (success) completedTiles++; postProgress();
                 if (isDownloading && (d < allDirs.length - 1 || i < count - 1)) { try { Thread.sleep(500); } catch (InterruptedException e) { return; } }
             }
         }
         if (isDownloading) postCallback("onDownloadComplete", "\"All directories complete\"");
+    }
+    
+    private boolean fileExistsInAnyLocation(String dir, String fileName) {
+        // Check Downloads (primary)
+        File f1 = new File(downloadDir + dir + "/" + fileName);
+        if (f1.exists() && f1.length() > 0) return true;
+        // Check Documents (legacy)
+        File f2 = new File(documentsDir + dir + "/" + fileName);
+        if (f2.exists() && f2.length() > 0) return true;
+        // Check app files dir (WebView copy)
+        File f3 = new File(appFilesDir + dir + "/" + fileName);
+        if (f3.exists() && f3.length() > 0) return true;
+        return false;
     }
     
     private boolean downloadAndExtract(String urlString, String targetFile) {
