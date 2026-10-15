@@ -306,14 +306,30 @@
 
 | Phase | Tasks | Subtasks | Status |
 |-------|-------|----------|--------|
-| 1: Infrastructure | 5 | 50 | Ready |
-| 2: Runner 013 Batch | 7 | 65 | Pending |
-| 3: Materials | 5 | 25 | Pending |
-| 4: Core Specs | 10 | 50 | Pending |
-| 5: Finalization | 2 | 20 | Pending |
-| **Total** | **29** | **210** | **0% Complete** |
+| 1: Infrastructure & Migration | 5 | 50 | ✅ 100% Complete |
+| 2: Runner 013 Batch (DOC-11..14) | 7 | 65 | ✅ 100% Complete |
+| 3: Materials (MAT-01..04) | 5 | 25 | ✅ 100% Complete |
+| 4: Core Specs (DOC-01..10) | 10 | 50 | ✅ 100% Complete |
+| 5: Runner 014 Batch (DOC-15..20) | 6 | 25 | ✅ 100% Complete |
+| 6: Runner 015 Batch (DOC-21..30) | 10 | 50 | 🔄 IN PROGRESS |
+| **Total** | **43** | **265** | **83% Complete** |
+
+---
+
+## Completed Milestones
+
+- [x] All 32 documents migrated to chunks/ (DOC-01..23, MAT-01..04, SYNTH-01..03, DRAFT-01..05)
+- [x] All manifests generated and verified
+- [x] Master index created at chunks/MASTER_INDEX.json
+- [x] Heartbeat monitor operational (120s interval)
+- [x] write_large_file.py pipeline verified (split, manifest, verify, concat, compress)
+- [x] DOC-11 through DOC-20 complete and quality-gated
+- [x] All FinishedWork/ originals compressed (.gz)
+- [x] Git: All changes committed, tagged runner-014-complete
+- [x] NEXT_runner_015.md created
+- [x] RESUME_SESSION_AEGIS.md updated for Runner 015
 
 ---
 
 **Next Subtask**: 1.1.1 Create AGENTS.md with project conventions ✅ DONE
-**Current Subtask**: 1.1.2 Create TODO.md with full task hierarchy ✅ IN PROGRESS
+**Current Subtask**: 6.1 Author DOC-21 Ballistic Protection Specification 🔄 IN PROGRESS
