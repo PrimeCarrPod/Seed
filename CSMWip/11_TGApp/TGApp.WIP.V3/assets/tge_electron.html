@@ -98,6 +98,56 @@
             line-height: 1.8;
             text-align: left;
         }
+        #prime-data-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.98); 
+            z-index: 101; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start; 
+            gap: 16px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        #prime-data-overlay.visible { display: flex; }
+        #prime-data-content {
+            width: 100%;
+            max-width: 800px;
+            max-height: 70vh;
+            overflow-y: auto;
+            padding: 10px;
+            color: #E8E8F0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        #prime-data-content h3 { color: #00D4AA; margin: 16px 0 8px 0; border-bottom: 1px solid #00D4AA44; padding-bottom: 4px; }
+        #prime-data-content .dir-card { background: rgba(26,26,46,0.9); border: 1px solid #00D4AA33; border-radius: 8px; padding: 12px; margin: 8px 0; }
+        #prime-data-content .dir-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        #prime-data-content .dir-title { color: #F97316; font-weight: bold; }
+        #prime-data-content .dir-stats { color: #8888A0; font-size: 11px; }
+        #prime-data-content .progress-bar { width: 100%; height: 6px; background: #1A1A2E; border-radius: 3px; overflow: hidden; margin: 8px 0; }
+        #prime-data-content .progress-fill { height: 100%; background: linear-gradient(90deg, #00D4AA, #F97316); border-radius: 3px; transition: width 0.3s; }
+        #prime-data-content .range-inputs { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+        #prime-data-content .range-inputs input { background: #1A1A2E; border: 1px solid #00D4AA; color: #E8E8F0; padding: 6px 10px; border-radius: 4px; width: 80px; }
+        #prime-data-content .btn { background: #1A1A2E; border: 1px solid #00D4AA; color: #00D4AA; padding: 8px 16px; border-radius: 6px; font-family: inherit; cursor: pointer; }
+        #prime-data-content .btn:hover { background: #00D4AA; color: #0A0A0F; }
+        #prime-data-content .btn.danger { border-color: #FF4466; color: #FF4466; }
+        #prime-data-content .btn.danger:hover { background: #FF4466; color: #0A0A0F; }
+        #prime-data-content .btn.secondary { border-color: #A855F7; color: #A855F7; }
+        #prime-data-content .btn.secondary:hover { background: #A855F7; color: #0A0A0F; }
+        #prime-data-content .log-area { background: #0A0A0F; border: 1px solid #00D4AA22; border-radius: 4px; padding: 8px; max-height: 200px; overflow-y: auto; font-size: 10px; font-family: monospace; margin-top: 8px; }
+        #prime-data-content .log-entry { margin: 2px 0; }
+        #prime-data-content .log-entry.info { color: #00D4AA; }
+        #prime-data-content .log-entry.warn { color: #F97316; }
+        #prime-data-content .log-entry.error { color: #FF4466; }
+        #prime-data-content .log-entry.success { color: #10B981; }
         #physics-content h3 {
             color: #00D4AA;
             margin: 24px 0 12px 0;
@@ -171,6 +221,7 @@
         <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
         <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
         <button class="menu-btn secondary" onclick="TGE.showArithmeticPhysics()">ARITHMETIC PHYSICS</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeDataManager()">PRIME DATA</button>
         <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
         <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
     </div>
@@ -179,6 +230,12 @@
         <div class="menu-subtitle">The Mathematics Behind the Prime Electron</div>
         <div id="physics-content"></div>
         <button class="menu-btn danger" onclick="TGE.closePhysics()">BACK TO MENU</button>
+    </div>
+    <div id="prime-data-overlay">
+        <div class="menu-title">PRIME DATA MANAGER</div>
+        <div class="menu-subtitle">Download PrimeBookOne Tiles from GitHub</div>
+        <div id="prime-data-content"></div>
+        <button class="menu-btn danger" onclick="TGE.closePrimeData()">BACK TO MENU</button>
     </div>
     <script src="three.min.js"></script>
     <script>
