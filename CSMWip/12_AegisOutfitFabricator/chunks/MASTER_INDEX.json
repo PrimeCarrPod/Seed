@@ -917,10 +917,14 @@
       "chunk_count": 167,
       "chunks": {
         "chapter_01_intro.md": {
-          "size": 195,
-          "sha256": "b0dc55b77326bc14245aceb4a0eb38ffb59f6c7818efb14131f7dfd0245f4d1a"
+          "size": 4249,
+          "sha256": "1bb21dcc7d63738cfda615added636337e52de0cbb2449fd87140a7b212ac808"
         },
         "chapter_02_1._rm-sg_edition_overview.md": {
+          "size": 1461,
+          "sha256": "170871af333fc1ba877bc08af1aeefd59e89e1494468fa236b0f5db7108760a7"
+        },
+        "chapter_02_1_rm-sg_edition_overview.md": {
           "size": 1461,
           "sha256": "170871af333fc1ba877bc08af1aeefd59e89e1494468fa236b0f5db7108760a7"
         },
@@ -928,7 +932,15 @@
           "size": 1138,
           "sha256": "a1acf4f9cdcca17a5da0aed530ca5a97fc9c9467ec3c7309e0dc6b8d287a5b70"
         },
+        "chapter_03_2_design_philosophy_alcega-gar.md": {
+          "size": 1138,
+          "sha256": "a1acf4f9cdcca17a5da0aed530ca5a97fc9c9467ec3c7309e0dc6b8d287a5b70"
+        },
         "chapter_04_3._cross-references.md": {
+          "size": 1461,
+          "sha256": "8f38d32c1fd8a75841e710130e2a73597be7b73d4e8ab7273cca6267a33e0f81"
+        },
+        "chapter_04_3_cross-references.md": {
           "size": 1461,
           "sha256": "8f38d32c1fd8a75841e710130e2a73597be7b73d4e8ab7273cca6267a33e0f81"
         },
@@ -936,35 +948,203 @@
           "size": 797,
           "sha256": "cdca6033e05f6b6c251b06eea5a39fabad86b1267a46dd1848ae1aed010ba40c"
         },
+        "chapter_05_4_rm-sg_performance_targets_va.md": {
+          "size": 4587,
+          "sha256": "e7ac03204d3a8d326b46809c854ab2c4d6fed9a768d25faaed4ce69e4495168b"
+        },
         "chapter_06_5._edition-specific_formulas.md": {
           "size": 1595,
           "sha256": "132e7c3105da8970fcf81b88afb09cfc9f79b5070e79bb18cb418aac163b2f98"
+        },
+        "chapter_06_5_edition-specific_formulas.md": {
+          "size": 5134,
+          "sha256": "0ad5c3ed0e6309c3341d1d94890ff4b88007110e7ed4db258f32d0331aa4af43"
         },
         "chapter_07_6._standards_compliance_matrix.md": {
           "size": 676,
           "sha256": "1770ff1301abe25834101f711f02311c0ae242b6dac23a2e5cb11d6a3f8ec4fe"
         },
+        "chapter_07_6_standards_compliance_matrix.md": {
+          "size": 5233,
+          "sha256": "ba66e631a76f31e14617c3b253d816201d50766130c77ad34d841037e524f4ca"
+        },
         "chapter_08_7._traceability_matrix_(piece_.md": {
           "size": 607,
           "sha256": "d2b5a8cb443b4450535a7e29e649f8cfa2e06b87aae7a7486347d734b8bd0011"
+        },
+        "chapter_08_7_traceability_matrix_piece_01.md": {
+          "size": 7889,
+          "sha256": "e178cf2ff5db0362da9e9a67f5979c419363d8ab3578b2b7fb16645d9122b34d"
         },
         "chapter_09_8._conformance_check.md": {
           "size": 648,
           "sha256": "c7630e0fb1aa3dde2b2cfda1739b15062583ee67431061ad8666775a5593995b"
         },
+        "chapter_09_8_conformance_check.md": {
+          "size": 4381,
+          "sha256": "924b71c3f7b0bb415542b1dfc385d05c3bc40fd74f5959fa346f8c21eccbc749"
+        },
+        "chapter_100_2_edition-specific_wear_patter.md": {
+          "size": 845,
+          "sha256": "23ad4bd506ebfa9109c00cad630a1d98f06425e6db147a623ece8f36bab139be"
+        },
+        "chapter_101_3_cross-references.md": {
+          "size": 409,
+          "sha256": "740fabb5b9110160325414bfe732678bd609c3b099b8d7c9a4c6156a8983fe0b"
+        },
+        "chapter_102_4_formulas.md": {
+          "size": 454,
+          "sha256": "a7a863a0813725833e6101a62b233411b31c91e69458e0f7e0d51237ac14ee51"
+        },
+        "chapter_103_5_standards_compliance.md": {
+          "size": 392,
+          "sha256": "ce6a1b69ebefc55b75034f69e4640fb5176a57bbe0c50811663a2c9775c56f78"
+        },
+        "chapter_104_6_traceability_matrix_piece_13.md": {
+          "size": 406,
+          "sha256": "a5cdeeeaef6119c14a4c700ce411883aa2a664c9fa1a48d432d20d4e43bbcc84"
+        },
+        "chapter_105_7_conformance_check.md": {
+          "size": 547,
+          "sha256": "050f8753d592ab41700c46be2cf3f43220bc79d77bdaefd2a67383abf5457280"
+        },
+        "chapter_106_1_full_document_traceability_m.md": {
+          "size": 5781,
+          "sha256": "36917c28473d31f676b09c96ae66bd9bebb4af870214b39f003e96c6b3e2457c"
+        },
+        "chapter_107_2_cross-document_reference_cou.md": {
+          "size": 651,
+          "sha256": "6ceb2dc1f1d8594a59976bbdf2865a69a9ec2338a2a5506a1307e2e89fbaacfd"
+        },
+        "chapter_108_3_conformance_check.md": {
+          "size": 558,
+          "sha256": "393423e86214bd19d59dfe93605cd27927ccf397a3d400c6abbae35ee4187aa5"
+        },
+        "chapter_109_1_quality_gate_verification_au.md": {
+          "size": 621,
+          "sha256": "57ff2cc9ea1f453a5da0e02317586b1b8e1c86bc5a81988c1dd4ea46d866e8c8"
+        },
         "chapter_10_1._edition_identification.md": {
           "size": 2452,
           "sha256": "2816f83d6738d93e8f7c4418ad2da7f1e8d46ae25e7795f53d1cd9ac62672315"
+        },
+        "chapter_10_1_edition_identification.md": {
+          "size": 2818,
+          "sha256": "dde8862c76c90e1da6ad9c99d68ef8076ae4ecf7119c45884292cf5e3d0bb758"
+        },
+        "chapter_110_2_piece-by-piece_gate_check.md": {
+          "size": 987,
+          "sha256": "dfc67efcdb01972ce2ae54aba5deffa7bbd192ded10aecd62ff94ff9535ac993"
+        },
+        "chapter_111_3_script_verification_results.md": {
+          "size": 516,
+          "sha256": "7f128d3ac4ad8795878b44a4b7395ee4a866341601b7246c1ff8a267b3a0649e"
+        },
+        "chapter_112_4_reassembly_verification.md": {
+          "size": 502,
+          "sha256": "5bf75d988b79d74005604e4019fcc5381949305c29a4a76688d2b9544843f8f3"
+        },
+        "chapter_113_5_github_17-way_verification_p.md": {
+          "size": 1071,
+          "sha256": "eb1ba93af2845835509164427f6a7516a88be8e95bd161557f163eb421b3a9ca"
+        },
+        "chapter_114_6_cross-references.md": {
+          "size": 376,
+          "sha256": "ed3006f801ce50d82982164170af56247fd3ef1a6df4f2e74afef6dcf072768a"
+        },
+        "chapter_115_7_traceability_matrix_piece_15.md": {
+          "size": 451,
+          "sha256": "36c40fbbf21e22660097b961251c75dcdc235cbfed9ef95da42a5d3d8f45157d"
+        },
+        "chapter_116_8_conformance_check.md": {
+          "size": 546,
+          "sha256": "8cb06276e2a25dbe0b2cf50d40c1039c6ef4df31d3ca5ec6b81e6c117401b122"
+        },
+        "chapter_117_1_rm_family_edition_comparison.md": {
+          "size": 1046,
+          "sha256": "6ee60becaeab6210ffcd568aee84d742537b12e0a683d3a9b5696ef1a4dfa80c"
+        },
+        "chapter_118_2_delta_analysis_rm-sg_vs_othe.md": {
+          "size": 590,
+          "sha256": "9913141297fae67e938912bf19377505ed8f273a690b5537f9ea645cab131067"
+        },
+        "chapter_119_3_transition_time_edition_chan.md": {
+          "size": 340,
+          "sha256": "db17a7427f794f6a94418c13cfd4826a88ea8704a825d7c99352719bd3e12409"
         },
         "chapter_11_2._pattern_sizing_derived_from.md": {
           "size": 1885,
           "sha256": "11495c09cd42998f1bb8def8deac74455731453b58841f2b872ecd9c9e939de5"
         },
+        "chapter_11_2_pattern_sizing_derived_from_.md": {
+          "size": 1885,
+          "sha256": "11495c09cd42998f1bb8def8deac74455731453b58841f2b872ecd9c9e939de5"
+        },
+        "chapter_120_4_cross-references.md": {
+          "size": 301,
+          "sha256": "635d4f125abba5c81b1c378d341439c6f2f75191f29a832ee9d456cc12f79d18"
+        },
+        "chapter_121_5_formulas.md": {
+          "size": 495,
+          "sha256": "dc5cd8b7b382e5dff029ead6ed0f25ff854ad59eedfd7a9415a023d5514adb81"
+        },
+        "chapter_122_6_standards_compliance.md": {
+          "size": 319,
+          "sha256": "2f4c1f8c6cc5dc50fa3b28031468eb544fc7f2e654ccea2890aec6554bd11dcf"
+        },
+        "chapter_123_7_traceability_matrix_piece_16.md": {
+          "size": 419,
+          "sha256": "5f9ce1b00ebcad34fe73b23c903c9d04a9728bd84f4c62e98426c519decc1905"
+        },
+        "chapter_124_7_conformance_check.md": {
+          "size": 541,
+          "sha256": "a42d1190ccdcfc83c7450b8dbfed92c21450f321b30eddcef35435a6df665046"
+        },
+        "chapter_125_1_system-level_risks_sf-0105_f.md": {
+          "size": 681,
+          "sha256": "f8097ce0de4372cd3d4ff5f4a62006d0b019a84aee1c9da46f6daf6269319ee2"
+        },
+        "chapter_126_2_rm-sg_specific_risks_rm-sg-0.md": {
+          "size": 812,
+          "sha256": "9fb66c2c23a32ddcfdd8d3e5d1d720c973a1dba42181c0c55599f6d1ebf69ed0"
+        },
+        "chapter_127_3_risk_heat_map_rm-sg.md": {
+          "size": 276,
+          "sha256": "4b721f10d5bbb46ee40709401f0707307f8835672d1aa06bf8e4c01c2e54221b"
+        },
+        "chapter_128_4_cross-references.md": {
+          "size": 330,
+          "sha256": "549b9a7bc1c6ce944bf6a403e3593c4bd2713db088e6a861162dc3efe56c8f44"
+        },
+        "chapter_129_5_formulas.md": {
+          "size": 431,
+          "sha256": "86faebd823238dc3218e63871e2a9380eff0522c45d9f40db40cedb460050206"
+        },
         "chapter_12_3._cross-references.md": {
           "size": 1008,
           "sha256": "dc8dad528fdf43df8d45fddbf8acba332b7632e5a29a75d676720fbefd25d20d"
         },
+        "chapter_12_3_cross-references.md": {
+          "size": 1008,
+          "sha256": "dc8dad528fdf43df8d45fddbf8acba332b7632e5a29a75d676720fbefd25d20d"
+        },
+        "chapter_130_6_standards_compliance.md": {
+          "size": 328,
+          "sha256": "9238b1435f49778c2b17a2da92dfb1c9d18bfc8ba80a1ce940448598f9bec66d"
+        },
+        "chapter_131_7_traceability_matrix_piece_17.md": {
+          "size": 442,
+          "sha256": "b0d25965b02cb288afc0e0b02ad743f312e275d6b0b3a4668e8a7a4851571e79"
+        },
+        "chapter_132_8_conformance_check.md": {
+          "size": 411,
+          "sha256": "b9a3b2a74f9f251e13a6af26bc1b1f927b99ac098769dc6a8db3cc835e765d49"
+        },
         "chapter_13_4._edition-specific_formulas_(.md": {
+          "size": 767,
+          "sha256": "750c92bbaf51e4f3e3249e4e8aef65acd35a2aed59fd06681799010974606258"
+        },
+        "chapter_13_4_edition-specific_formulas_co.md": {
           "size": 767,
           "sha256": "750c92bbaf51e4f3e3249e4e8aef65acd35a2aed59fd06681799010974606258"
         },
@@ -972,7 +1152,15 @@
           "size": 457,
           "sha256": "9af1155a432515cb047dde27792a0291de633e34d805516f0341fda5285443b1"
         },
+        "chapter_14_5_standards_compliance.md": {
+          "size": 457,
+          "sha256": "9af1155a432515cb047dde27792a0291de633e34d805516f0341fda5285443b1"
+        },
         "chapter_15_6._traceability_matrix_(piece_.md": {
+          "size": 696,
+          "sha256": "cf10c8d439eb9ee38040502d534346f11083808777fc8aab421b0f58d54362c0"
+        },
+        "chapter_15_6_traceability_matrix_piece_02.md": {
           "size": 696,
           "sha256": "cf10c8d439eb9ee38040502d534346f11083808777fc8aab421b0f58d54362c0"
         },
@@ -980,23 +1168,47 @@
           "size": 680,
           "sha256": "03b28d309e6932239653daee8e0383b842cd8a0633f582ce5e471676f26b363b"
         },
+        "chapter_16_7_conformance_check.md": {
+          "size": 680,
+          "sha256": "03b28d309e6932239653daee8e0383b842cd8a0633f582ce5e471676f26b363b"
+        },
         "chapter_17_1._aimes_12-layer_stack_adapte.md": {
           "size": 1666,
           "sha256": "8183538ffd6297e28c14fe0d683e0ceba038ce17b1f9f1bc157abee3affc89c0"
+        },
+        "chapter_17_1_aimes_12-layer_stack_adapted.md": {
+          "size": 3738,
+          "sha256": "38552e0a91f8d119fb8b1809c7dc9e17cb4af3ec994ef10f070127bac19f90ff"
         },
         "chapter_18_2._layer-by-layer_rm-sg_specif.md": {
           "size": 5903,
           "sha256": "950370d207f5f8ad374f06c9e91f276a2a44ab182f643f1ebf06a166d7669c4b"
         },
+        "chapter_18_2_layer-by-layer_rm-sg_specifi.md": {
+          "size": 5936,
+          "sha256": "70c435e11b11451f78bea611883cfb74fbf5ceab44281bc9aad813b96fe62289"
+        },
         "chapter_19_3._interlayer_interface_engine.md": {
           "size": 758,
           "sha256": "706664d5e0d217b302905cb976523e78d31b77d162efa000e0de9845ea426006"
+        },
+        "chapter_19_3_interlayer_interface_enginee.md": {
+          "size": 1537,
+          "sha256": "d5e8227b9a82e4ebc5786ecc0cd3a0fb3571450f15bc4695d86c549c2dd58001"
         },
         "chapter_20_4._cross-references.md": {
           "size": 907,
           "sha256": "7ef8e80f921b791039891bf7aad7fe49c35109a07cbd1ec88dea019ab7c41c7b"
         },
+        "chapter_20_4_cross-references.md": {
+          "size": 906,
+          "sha256": "98b55aa17f22286a86b8795a905f8647b321087a7df39ffacf2f991119f8d6a2"
+        },
         "chapter_21_5._edition-specific_formulas.md": {
+          "size": 985,
+          "sha256": "1c504b96957c7c15c81af08c27937d5e3edf46a72b7b6217cf11aa0e821a2c60"
+        },
+        "chapter_21_5_edition-specific_formulas.md": {
           "size": 985,
           "sha256": "1c504b96957c7c15c81af08c27937d5e3edf46a72b7b6217cf11aa0e821a2c60"
         },
@@ -1004,7 +1216,15 @@
           "size": 651,
           "sha256": "b5be03a75678aeaaef15cc749c552d17c30b05539b4312b54d56139ccb13d1b0"
         },
+        "chapter_22_6_standards_compliance_matrix_.md": {
+          "size": 651,
+          "sha256": "b5be03a75678aeaaef15cc749c552d17c30b05539b4312b54d56139ccb13d1b0"
+        },
         "chapter_23_7._traceability_matrix_(piece_.md": {
+          "size": 584,
+          "sha256": "b50d70eff5f7f2cfd74cfd7bd321cd74427301019339acdc986f9357ed3c39ee"
+        },
+        "chapter_23_7_traceability_matrix_piece_03.md": {
           "size": 584,
           "sha256": "b50d70eff5f7f2cfd74cfd7bd321cd74427301019339acdc986f9357ed3c39ee"
         },
@@ -1012,7 +1232,15 @@
           "size": 636,
           "sha256": "2019f49c7f9f6d848b1de52cffde770ac1c5ae56a2ae6132844bb3149c09b0c8"
         },
+        "chapter_24_8_conformance_check.md": {
+          "size": 636,
+          "sha256": "2019f49c7f9f6d848b1de52cffde770ac1c5ae56a2ae6132844bb3149c09b0c8"
+        },
         "chapter_25_1._alcega_developable_surface_.md": {
+          "size": 1783,
+          "sha256": "12252585599f563f6a16eff54fc7bcad27d3a12425ff38ea714aad695d091087"
+        },
+        "chapter_25_1_alcega_developable_surface_e.md": {
           "size": 1783,
           "sha256": "12252585599f563f6a16eff54fc7bcad27d3a12425ff38ea714aad695d091087"
         },
@@ -1020,7 +1248,15 @@
           "size": 1205,
           "sha256": "9dfd0b375b8bb40554397928eb59a9e03512eed6caf1ebaa1b305c3b11581e69"
         },
+        "chapter_26_2_garsault_proportional_scalin.md": {
+          "size": 1205,
+          "sha256": "9dfd0b375b8bb40554397928eb59a9e03512eed6caf1ebaa1b305c3b11581e69"
+        },
         "chapter_27_3._zero-waste_nesting_for_560m.md": {
+          "size": 1108,
+          "sha256": "95b3a92d3cf1b7fd5529a76a0aee56da32f23c457263f2bc1e30425f49ae0860"
+        },
+        "chapter_27_3_zero-waste_nesting_for_560mm.md": {
           "size": 1108,
           "sha256": "95b3a92d3cf1b7fd5529a76a0aee56da32f23c457263f2bc1e30425f49ae0860"
         },
@@ -1028,7 +1264,15 @@
           "size": 1391,
           "sha256": "9353d20145722404876cdaf1d0d8988c6bc3713bc26009446b43df532063bf7d"
         },
+        "chapter_28_4_edition-specific_panel_geome.md": {
+          "size": 1391,
+          "sha256": "9353d20145722404876cdaf1d0d8988c6bc3713bc26009446b43df532063bf7d"
+        },
         "chapter_29_5._cross-references.md": {
+          "size": 858,
+          "sha256": "b4400581309ed9ca43ee262fcccc8b91fd0a6d218190496904785b48b4a0578f"
+        },
+        "chapter_29_5_cross-references.md": {
           "size": 858,
           "sha256": "b4400581309ed9ca43ee262fcccc8b91fd0a6d218190496904785b48b4a0578f"
         },
@@ -1036,7 +1280,15 @@
           "size": 731,
           "sha256": "ce6e7a907a8f051f5c044f0b3d8eaad83e539a1c3fc522ccdc86f6d4558aba62"
         },
+        "chapter_30_6_edition-specific_formulas.md": {
+          "size": 731,
+          "sha256": "ce6e7a907a8f051f5c044f0b3d8eaad83e539a1c3fc522ccdc86f6d4558aba62"
+        },
         "chapter_31_7._standards_compliance.md": {
+          "size": 487,
+          "sha256": "fcd32f21e55fe47367c73a7d128883f91c6949d9ac85deed6985fa09423ebe32"
+        },
+        "chapter_31_7_standards_compliance.md": {
           "size": 487,
           "sha256": "fcd32f21e55fe47367c73a7d128883f91c6949d9ac85deed6985fa09423ebe32"
         },
@@ -1044,7 +1296,15 @@
           "size": 539,
           "sha256": "d778b86fdd0e1ce08d73dbc316fec7571f2a155b2fe353625bd69fd85803b84a"
         },
+        "chapter_32_8_traceability_matrix_piece_04.md": {
+          "size": 539,
+          "sha256": "d778b86fdd0e1ce08d73dbc316fec7571f2a155b2fe353625bd69fd85803b84a"
+        },
         "chapter_33_9._conformance_check.md": {
+          "size": 632,
+          "sha256": "a41db6bbf81c4d68129dea820de0513867a5dc390dceee7b0fecfcef9f07d8ab"
+        },
+        "chapter_33_9_conformance_check.md": {
           "size": 632,
           "sha256": "a41db6bbf81c4d68129dea820de0513867a5dc390dceee7b0fecfcef9f07d8ab"
         },
@@ -1052,165 +1312,37 @@
           "size": 855,
           "sha256": "408da2ce6436bfc817eecbf4cc9412a1d2c14087561c779f1e5bf998635a2af1"
         },
+        "chapter_34_1_chassis_architecture_overvie.md": {
+          "size": 3770,
+          "sha256": "1a52425f86c3a19a5a2de9178679334411b13199cff75d315b8294b4149f1ebd"
+        },
         "chapter_35_2._baleen_stay_specification_(.md": {
           "size": 1616,
           "sha256": "c91662cb02423b1d153a6967bd411bd3cf08bedc34190f909d9a8a592774f85b"
+        },
+        "chapter_35_2_baleen_stay_specification_ma.md": {
+          "size": 3300,
+          "sha256": "ee2452bcf3af8f941e7a26b39ae4cb8c53f4b2965f34aa6eb715f3d6317963a3"
         },
         "chapter_36_3._steel_spiral_boning_specifi.md": {
           "size": 1089,
           "sha256": "c0151ade28c530793d49aa9480fa734e0e4cea7af3282499fc7884e0a2e97fa5"
         },
-        "chapter_02_1_rm-sg_edition_overview.md": {
-          "size": 1461,
-          "sha256": "170871af333fc1ba877bc08af1aeefd59e89e1494468fa236b0f5db7108760a7"
-        },
-        "chapter_03_2_design_philosophy_alcega-gar.md": {
-          "size": 1138,
-          "sha256": "a1acf4f9cdcca17a5da0aed530ca5a97fc9c9467ec3c7309e0dc6b8d287a5b70"
-        },
-        "chapter_04_3_cross-references.md": {
-          "size": 1461,
-          "sha256": "8f38d32c1fd8a75841e710130e2a73597be7b73d4e8ab7273cca6267a33e0f81"
-        },
-        "chapter_05_4_rm-sg_performance_targets_va.md": {
-          "size": 797,
-          "sha256": "cdca6033e05f6b6c251b06eea5a39fabad86b1267a46dd1848ae1aed010ba40c"
-        },
-        "chapter_06_5_edition-specific_formulas.md": {
-          "size": 1595,
-          "sha256": "132e7c3105da8970fcf81b88afb09cfc9f79b5070e79bb18cb418aac163b2f98"
-        },
-        "chapter_07_6_standards_compliance_matrix.md": {
-          "size": 676,
-          "sha256": "1770ff1301abe25834101f711f02311c0ae242b6dac23a2e5cb11d6a3f8ec4fe"
-        },
-        "chapter_08_7_traceability_matrix_piece_01.md": {
-          "size": 607,
-          "sha256": "d2b5a8cb443b4450535a7e29e649f8cfa2e06b87aae7a7486347d734b8bd0011"
-        },
-        "chapter_09_8_conformance_check.md": {
-          "size": 648,
-          "sha256": "c7630e0fb1aa3dde2b2cfda1739b15062583ee67431061ad8666775a5593995b"
-        },
-        "chapter_10_1_edition_identification.md": {
-          "size": 2452,
-          "sha256": "2816f83d6738d93e8f7c4418ad2da7f1e8d46ae25e7795f53d1cd9ac62672315"
-        },
-        "chapter_11_2_pattern_sizing_derived_from_.md": {
-          "size": 1885,
-          "sha256": "11495c09cd42998f1bb8def8deac74455731453b58841f2b872ecd9c9e939de5"
-        },
-        "chapter_12_3_cross-references.md": {
-          "size": 1008,
-          "sha256": "dc8dad528fdf43df8d45fddbf8acba332b7632e5a29a75d676720fbefd25d20d"
-        },
-        "chapter_13_4_edition-specific_formulas_co.md": {
-          "size": 767,
-          "sha256": "750c92bbaf51e4f3e3249e4e8aef65acd35a2aed59fd06681799010974606258"
-        },
-        "chapter_14_5_standards_compliance.md": {
-          "size": 457,
-          "sha256": "9af1155a432515cb047dde27792a0291de633e34d805516f0341fda5285443b1"
-        },
-        "chapter_15_6_traceability_matrix_piece_02.md": {
-          "size": 696,
-          "sha256": "cf10c8d439eb9ee38040502d534346f11083808777fc8aab421b0f58d54362c0"
-        },
-        "chapter_16_7_conformance_check.md": {
-          "size": 680,
-          "sha256": "03b28d309e6932239653daee8e0383b842cd8a0633f582ce5e471676f26b363b"
-        },
-        "chapter_17_1_aimes_12-layer_stack_adapted.md": {
-          "size": 1666,
-          "sha256": "8183538ffd6297e28c14fe0d683e0ceba038ce17b1f9f1bc157abee3affc89c0"
-        },
-        "chapter_18_2_layer-by-layer_rm-sg_specifi.md": {
-          "size": 5903,
-          "sha256": "950370d207f5f8ad374f06c9e91f276a2a44ab182f643f1ebf06a166d7669c4b"
-        },
-        "chapter_19_3_interlayer_interface_enginee.md": {
-          "size": 758,
-          "sha256": "706664d5e0d217b302905cb976523e78d31b77d162efa000e0de9845ea426006"
-        },
-        "chapter_20_4_cross-references.md": {
-          "size": 907,
-          "sha256": "7ef8e80f921b791039891bf7aad7fe49c35109a07cbd1ec88dea019ab7c41c7b"
-        },
-        "chapter_21_5_edition-specific_formulas.md": {
-          "size": 985,
-          "sha256": "1c504b96957c7c15c81af08c27937d5e3edf46a72b7b6217cf11aa0e821a2c60"
-        },
-        "chapter_22_6_standards_compliance_matrix_.md": {
-          "size": 651,
-          "sha256": "b5be03a75678aeaaef15cc749c552d17c30b05539b4312b54d56139ccb13d1b0"
-        },
-        "chapter_23_7_traceability_matrix_piece_03.md": {
-          "size": 584,
-          "sha256": "b50d70eff5f7f2cfd74cfd7bd321cd74427301019339acdc986f9357ed3c39ee"
-        },
-        "chapter_24_8_conformance_check.md": {
-          "size": 636,
-          "sha256": "2019f49c7f9f6d848b1de52cffde770ac1c5ae56a2ae6132844bb3149c09b0c8"
-        },
-        "chapter_25_1_alcega_developable_surface_e.md": {
-          "size": 1783,
-          "sha256": "12252585599f563f6a16eff54fc7bcad27d3a12425ff38ea714aad695d091087"
-        },
-        "chapter_26_2_garsault_proportional_scalin.md": {
-          "size": 1205,
-          "sha256": "9dfd0b375b8bb40554397928eb59a9e03512eed6caf1ebaa1b305c3b11581e69"
-        },
-        "chapter_27_3_zero-waste_nesting_for_560mm.md": {
-          "size": 1108,
-          "sha256": "95b3a92d3cf1b7fd5529a76a0aee56da32f23c457263f2bc1e30425f49ae0860"
-        },
-        "chapter_28_4_edition-specific_panel_geome.md": {
-          "size": 1391,
-          "sha256": "9353d20145722404876cdaf1d0d8988c6bc3713bc26009446b43df532063bf7d"
-        },
-        "chapter_29_5_cross-references.md": {
-          "size": 858,
-          "sha256": "b4400581309ed9ca43ee262fcccc8b91fd0a6d218190496904785b48b4a0578f"
-        },
-        "chapter_30_6_edition-specific_formulas.md": {
-          "size": 731,
-          "sha256": "ce6e7a907a8f051f5c044f0b3d8eaad83e539a1c3fc522ccdc86f6d4558aba62"
-        },
-        "chapter_31_7_standards_compliance.md": {
-          "size": 487,
-          "sha256": "fcd32f21e55fe47367c73a7d128883f91c6949d9ac85deed6985fa09423ebe32"
-        },
-        "chapter_32_8_traceability_matrix_piece_04.md": {
-          "size": 539,
-          "sha256": "d778b86fdd0e1ce08d73dbc316fec7571f2a155b2fe353625bd69fd85803b84a"
-        },
-        "chapter_33_9_conformance_check.md": {
-          "size": 632,
-          "sha256": "a41db6bbf81c4d68129dea820de0513867a5dc390dceee7b0fecfcef9f07d8ab"
-        },
-        "chapter_34_1_chassis_architecture_overvie.md": {
-          "size": 855,
-          "sha256": "408da2ce6436bfc817eecbf4cc9412a1d2c14087561c779f1e5bf998635a2af1"
-        },
-        "chapter_35_2_baleen_stay_specification_ma.md": {
-          "size": 1616,
-          "sha256": "c91662cb02423b1d153a6967bd411bd3cf08bedc34190f909d9a8a592774f85b"
-        },
         "chapter_36_3_steel_spiral_boning_specific.md": {
-          "size": 1089,
-          "sha256": "c0151ade28c530793d49aa9480fa734e0e4cea7af3282499fc7884e0a2e97fa5"
+          "size": 2360,
+          "sha256": "5a27544c2c091b20f8cdf04710572d9be7cbad2d22fcefaf0300c322d25312bf"
         },
         "chapter_37_4_max_phase_aglet_cleat_system.md": {
-          "size": 887,
-          "sha256": "386fa68eff2b2bbfd21926bf95c8dd61fa938a50ce4cac3e92dd6fb147ea9a3a"
+          "size": 3355,
+          "sha256": "2f380d30b5da20b5659d45c2d1f56b77053c12d392626ac3f90078445d6fe40a"
         },
         "chapter_38_5_les_12-zone_tension_calibrat.md": {
-          "size": 1012,
-          "sha256": "9ffa12dff443211215431107545708c89998917902dc659e23cd5af5ddbdf3a8"
+          "size": 3492,
+          "sha256": "4bdc7ff5580761a69050baf99d1e9ef4ee45856022937badd90f41ebd54487ab"
         },
         "chapter_39_6_lacing_topology_alcega_+_les.md": {
-          "size": 662,
-          "sha256": "e93d92c07f674320c619aa2d133a46648aba504a75a5c4cded0aec8263d14f7a"
+          "size": 3570,
+          "sha256": "6b15352ac1069c59315da3646abe53d377a3423bd49034a80d11169dac8da6f6"
         },
         "chapter_40_7_cross-references.md": {
           "size": 762,
@@ -1273,24 +1405,24 @@
           "sha256": "3df1af543b5dbf42a216a7ff4a0495e34c79312ce0def4fdf566784996e30675"
         },
         "chapter_55_1_thermal_protection_architect.md": {
-          "size": 816,
-          "sha256": "98125063b16c91a207a73b0e07871db429709c5a135beeab801ee5185149633a"
+          "size": 1549,
+          "sha256": "61438a4fb18408094a12f20b5b0c3468ac0afea92873d30cab85284ab7b9602a"
         },
         "chapter_56_2_aerogel_batting_specificatio.md": {
-          "size": 1311,
-          "sha256": "9fc42aa3dc05fc740c5f830492123d39defaf3664bdc8dff4763741a68067ecf"
+          "size": 2007,
+          "sha256": "96e14ff20de4859b4f120329720ea120a6251e4712d578ecbe8e8aef79422b63"
         },
         "chapter_57_3_full_stack_thermal_model_tra.md": {
-          "size": 1977,
-          "sha256": "aa6a544f9ae5601baadea69800a2e89d2c486c78c13e8c9c6e2ff975fee3241b"
+          "size": 7072,
+          "sha256": "d5529ade0d6f2d25a16a4e5e6de78fc5401a346c24ecdf386a99bf3341bd0584"
         },
         "chapter_58_4_thermal_comfort__metabolic_h.md": {
-          "size": 1073,
-          "sha256": "f7bd6a3297152d6b7c6c4ab8068e19c90fe0b1838c20f44115fac714e9e16dc1"
+          "size": 3812,
+          "sha256": "65985fdf8383968640d9a112972eed89caa7877acc56c548f0c3d385702e8312"
         },
         "chapter_59_5_directed_energy_thermal_resp.md": {
-          "size": 592,
-          "sha256": "d2519bb86feec1976386391ce6e3c41d36e100a5ca86860fe90737c88eeeeccb"
+          "size": 4099,
+          "sha256": "78936ef9451ed1b8c252e1f7ca7187ce40fd6fecf70611ae98f24fad6fd53321"
         },
         "chapter_60_6_cross-references.md": {
           "size": 693,
@@ -1313,24 +1445,24 @@
           "sha256": "e66bb1f3d76749a4e8b536406014f2177fdb5f9e63178ea241956c2a67809647"
         },
         "chapter_65_1_mobility_index_overview_synt.md": {
-          "size": 968,
-          "sha256": "3cea7333c3b8f40bfe98ffb2b99c720bace2e383804e43fe94cb7e66d78479f3"
+          "size": 1730,
+          "sha256": "7db8508fecf454632e13417c3b2bf7abcfea151b7d92ff3f87b292b715f703c2"
         },
         "chapter_66_2_joint-specific_range_of_moti.md": {
-          "size": 2261,
-          "sha256": "0e42a7b3cfd4f28c014d1ab9b926b96d55f2f9f98de67f0c173b41595cb2df02"
+          "size": 4193,
+          "sha256": "72c66dc8a2c4fdc6666510f03414ada4cb8fee56c937ad161eddc9568c6382ba"
         },
         "chapter_67_3_task-specific_mobility_asses.md": {
-          "size": 1075,
-          "sha256": "c7cbebd6cb2586b07815002f67a2e1feb74c44fdafc4360b7fa07750f3cd3b64"
+          "size": 3506,
+          "sha256": "5b3d77dee15b2bc02332090ed58ba095fea19a8570285f49bf052653c511ecdc"
         },
         "chapter_68_4_tile_articulation_mechanics_.md": {
-          "size": 938,
-          "sha256": "1410c3419fd7597d6bb2ca72e1872a053d826e1122ce50b40f358e76099cdcf2"
+          "size": 3301,
+          "sha256": "5c2c1fa4bf89a3c3b96243458c75f77039f8533540824a2afede6f36db2b507f"
         },
         "chapter_69_5_les_zone_tension_vs_mobility.md": {
-          "size": 781,
-          "sha256": "871ba8507519f53f44870cdee8243a053218f280af0bae9d4639d75ae59ed262"
+          "size": 3830,
+          "sha256": "d06f5da674db03c09ef89f4bf872843358d73060e59620591b278934238de65d"
         },
         "chapter_70_6_cross-references.md": {
           "size": 705,
@@ -1353,20 +1485,20 @@
           "sha256": "d773c2d83fb602416d8f3de5a0bbc04dcc1567eb52cfef5d02dcaebff73aaeee"
         },
         "chapter_75_1_layer-by-layer_mass_budget_r.md": {
-          "size": 1269,
-          "sha256": "5ed256586a11cf4f9a5c9bb284a863e991899e022c33b7577a8c63646988fa44"
+          "size": 3937,
+          "sha256": "fc4ebc0c43a666b95cf0c801c2e764f2bde2b13470f14ce755207241304ab635"
         },
         "chapter_76_2_mass_verification_doc-01_\u00a791.md": {
-          "size": 420,
-          "sha256": "8d646c4e2527e11d2d3e926376a7289a67097ff3a11e747c466dced918652b3a"
+          "size": 4197,
+          "sha256": "b5e10ac8eb379d4fa8a7dbbc3223104eb3435c3bef4250e92714615a1c369419"
         },
         "chapter_77_3_mass_scaling_validation_mat-.md": {
-          "size": 358,
-          "sha256": "f83eb1ace3a0cc6abe98ed51753e5fd0daf20ced1bd21283f88bfd076e932b94"
+          "size": 3439,
+          "sha256": "a4cf33149279d9fd4336fa0e94739c26847bf48a9dd76708d7fc165a91ffa7bb"
         },
         "chapter_78_4_center_of_gravity_cog_analys.md": {
-          "size": 359,
-          "sha256": "5a2ca0cbbabb0a57857961777de63e1dabd506a54bdc08eb4e7fb4cf714e1706"
+          "size": 4369,
+          "sha256": "9304a86ec1d65602dfc680558be7fa58e49f5d69b5c4dcc975cc15f1ad6ec7f7"
         },
         "chapter_79_5_cross-references.md": {
           "size": 352,
@@ -1389,8 +1521,8 @@
           "sha256": "ff0466f814974328b4b530f8e3d2a2da7321ff4a493ea1f0198476f977b9947f"
         },
         "chapter_84_1_donning_procedure_target_<10.md": {
-          "size": 935,
-          "sha256": "c0155fb905b9d26d12c80d5440c5f71ed113b29d9340dbbe2f069f3adc71c1f0"
+          "size": 7644,
+          "sha256": "84fac6c1bbeb4625fcd51cbbca54c69a9aedefd1025ee876c3eff3cb2f985b23"
         },
         "chapter_85_2_doffing_procedure_target_<65.md": {
           "size": 509,
@@ -1421,8 +1553,8 @@
           "sha256": "40888b08a090f13799fc0d31e94110255e424d6834413dc0d9827fae723fc6b3"
         },
         "chapter_92_1_mission_profiles_served_doc-.md": {
-          "size": 991,
-          "sha256": "e34c1ba9c0e685fdb1ef008b104c1bd1c8a532d17bb2ee664562276193ff8b65"
+          "size": 2622,
+          "sha256": "d44c619fe8272a804e25a50c08a2a0aace747302aaa15fdea7caa9636351a396"
         },
         "chapter_93_2_profile-specific_configurati.md": {
           "size": 607,
@@ -1451,138 +1583,6 @@
         "chapter_99_1_maintenance_intervals_rm-sg_.md": {
           "size": 1259,
           "sha256": "b24e9437e48a5a654fcbeeed41122a26b0670a3c4d7ba541142aecf31a65f5c8"
-        },
-        "chapter_100_2_edition-specific_wear_patter.md": {
-          "size": 845,
-          "sha256": "23ad4bd506ebfa9109c00cad630a1d98f06425e6db147a623ece8f36bab139be"
-        },
-        "chapter_101_3_cross-references.md": {
-          "size": 409,
-          "sha256": "740fabb5b9110160325414bfe732678bd609c3b099b8d7c9a4c6156a8983fe0b"
-        },
-        "chapter_102_4_formulas.md": {
-          "size": 454,
-          "sha256": "a7a863a0813725833e6101a62b233411b31c91e69458e0f7e0d51237ac14ee51"
-        },
-        "chapter_103_5_standards_compliance.md": {
-          "size": 392,
-          "sha256": "ce6a1b69ebefc55b75034f69e4640fb5176a57bbe0c50811663a2c9775c56f78"
-        },
-        "chapter_104_6_traceability_matrix_piece_13.md": {
-          "size": 406,
-          "sha256": "a5cdeeeaef6119c14a4c700ce411883aa2a664c9fa1a48d432d20d4e43bbcc84"
-        },
-        "chapter_105_7_conformance_check.md": {
-          "size": 547,
-          "sha256": "050f8753d592ab41700c46be2cf3f43220bc79d77bdaefd2a67383abf5457280"
-        },
-        "chapter_106_1_full_document_traceability_m.md": {
-          "size": 5781,
-          "sha256": "36917c28473d31f676b09c96ae66bd9bebb4af870214b39f003e96c6b3e2457c"
-        },
-        "chapter_107_2_cross-document_reference_cou.md": {
-          "size": 651,
-          "sha256": "6ceb2dc1f1d8594a59976bbdf2865a69a9ec2338a2a5506a1307e2e89fbaacfd"
-        },
-        "chapter_108_3_conformance_check.md": {
-          "size": 558,
-          "sha256": "393423e86214bd19d59dfe93605cd27927ccf397a3d400c6abbae35ee4187aa5"
-        },
-        "chapter_109_1_quality_gate_verification_au.md": {
-          "size": 621,
-          "sha256": "57ff2cc9ea1f453a5da0e02317586b1b8e1c86bc5a81988c1dd4ea46d866e8c8"
-        },
-        "chapter_110_2_piece-by-piece_gate_check.md": {
-          "size": 987,
-          "sha256": "dfc67efcdb01972ce2ae54aba5deffa7bbd192ded10aecd62ff94ff9535ac993"
-        },
-        "chapter_111_3_script_verification_results.md": {
-          "size": 516,
-          "sha256": "7f128d3ac4ad8795878b44a4b7395ee4a866341601b7246c1ff8a267b3a0649e"
-        },
-        "chapter_112_4_reassembly_verification.md": {
-          "size": 502,
-          "sha256": "5bf75d988b79d74005604e4019fcc5381949305c29a4a76688d2b9544843f8f3"
-        },
-        "chapter_113_5_github_17-way_verification_p.md": {
-          "size": 1071,
-          "sha256": "eb1ba93af2845835509164427f6a7516a88be8e95bd161557f163eb421b3a9ca"
-        },
-        "chapter_114_6_cross-references.md": {
-          "size": 376,
-          "sha256": "ed3006f801ce50d82982164170af56247fd3ef1a6df4f2e74afef6dcf072768a"
-        },
-        "chapter_115_7_traceability_matrix_piece_15.md": {
-          "size": 451,
-          "sha256": "36c40fbbf21e22660097b961251c75dcdc235cbfed9ef95da42a5d3d8f45157d"
-        },
-        "chapter_116_8_conformance_check.md": {
-          "size": 546,
-          "sha256": "8cb06276e2a25dbe0b2cf50d40c1039c6ef4df31d3ca5ec6b81e6c117401b122"
-        },
-        "chapter_117_1_rm_family_edition_comparison.md": {
-          "size": 1046,
-          "sha256": "6ee60becaeab6210ffcd568aee84d742537b12e0a683d3a9b5696ef1a4dfa80c"
-        },
-        "chapter_118_2_delta_analysis_rm-sg_vs_othe.md": {
-          "size": 590,
-          "sha256": "9913141297fae67e938912bf19377505ed8f273a690b5537f9ea645cab131067"
-        },
-        "chapter_119_3_transition_time_edition_chan.md": {
-          "size": 340,
-          "sha256": "db17a7427f794f6a94418c13cfd4826a88ea8704a825d7c99352719bd3e12409"
-        },
-        "chapter_120_4_cross-references.md": {
-          "size": 301,
-          "sha256": "635d4f125abba5c81b1c378d341439c6f2f75191f29a832ee9d456cc12f79d18"
-        },
-        "chapter_121_5_formulas.md": {
-          "size": 495,
-          "sha256": "dc5cd8b7b382e5dff029ead6ed0f25ff854ad59eedfd7a9415a023d5514adb81"
-        },
-        "chapter_122_6_standards_compliance.md": {
-          "size": 319,
-          "sha256": "2f4c1f8c6cc5dc50fa3b28031468eb544fc7f2e654ccea2890aec6554bd11dcf"
-        },
-        "chapter_123_7_traceability_matrix_piece_16.md": {
-          "size": 419,
-          "sha256": "5f9ce1b00ebcad34fe73b23c903c9d04a9728bd84f4c62e98426c519decc1905"
-        },
-        "chapter_124_7_conformance_check.md": {
-          "size": 541,
-          "sha256": "a42d1190ccdcfc83c7450b8dbfed92c21450f321b30eddcef35435a6df665046"
-        },
-        "chapter_125_1_system-level_risks_sf-0105_f.md": {
-          "size": 681,
-          "sha256": "f8097ce0de4372cd3d4ff5f4a62006d0b019a84aee1c9da46f6daf6269319ee2"
-        },
-        "chapter_126_2_rm-sg_specific_risks_rm-sg-0.md": {
-          "size": 812,
-          "sha256": "9fb66c2c23a32ddcfdd8d3e5d1d720c973a1dba42181c0c55599f6d1ebf69ed0"
-        },
-        "chapter_127_3_risk_heat_map_rm-sg.md": {
-          "size": 276,
-          "sha256": "4b721f10d5bbb46ee40709401f0707307f8835672d1aa06bf8e4c01c2e54221b"
-        },
-        "chapter_128_4_cross-references.md": {
-          "size": 330,
-          "sha256": "549b9a7bc1c6ce944bf6a403e3593c4bd2713db088e6a861162dc3efe56c8f44"
-        },
-        "chapter_129_5_formulas.md": {
-          "size": 431,
-          "sha256": "86faebd823238dc3218e63871e2a9380eff0522c45d9f40db40cedb460050206"
-        },
-        "chapter_130_6_standards_compliance.md": {
-          "size": 328,
-          "sha256": "9238b1435f49778c2b17a2da92dfb1c9d18bfc8ba80a1ce940448598f9bec66d"
-        },
-        "chapter_131_7_traceability_matrix_piece_17.md": {
-          "size": 442,
-          "sha256": "b0d25965b02cb288afc0e0b02ad743f312e275d6b0b3a4668e8a7a4851571e79"
-        },
-        "chapter_132_8_conformance_check.md": {
-          "size": 411,
-          "sha256": "b9a3b2a74f9f251e13a6af26bc1b1f927b99ac098769dc6a8db3cc835e765d49"
         }
       }
     },
@@ -1591,8 +1591,8 @@
       "chunk_count": 140,
       "chunks": {
         "chapter_01_intro.md": {
-          "size": 197,
-          "sha256": "a7b2112cda719d95eaef1c5f18467703067b4e4e34f8b6ce5529cbc33755208a"
+          "size": 4412,
+          "sha256": "4f18635d108c73510d3d6a3b0c5ece10f5e14aa8b4bdd3c4ade5ecad3ca7d246"
         },
         "chapter_02_1_rw-ts_edition_overview.md": {
           "size": 1537,
@@ -1607,40 +1607,204 @@
           "sha256": "acde14fa0859b019dbb2522bcafbb9d0d2a9e07ca0b326d93d96430b8004a094"
         },
         "chapter_05_4_rw-ts_performance_targets_va.md": {
-          "size": 797,
-          "sha256": "e7937fce345342a1d5221d8299b158e77dd1afefbfe1e5a970015dad4dd59ba8"
+          "size": 4615,
+          "sha256": "c36a07589484a33cfd6d5500043688ebedf8c7c7339a9c022fc887df892d3852"
         },
         "chapter_06_5_edition-specific_formulas.md": {
-          "size": 1598,
-          "sha256": "019f90add4a5cad08fa53a5adfa23bb73f4a21e8933d252609cbe78e74e9103c"
+          "size": 5372,
+          "sha256": "b046c1b1721dd6df0e213bf7e37f80366c7ba9bf12d76d786934784e93d273c4"
         },
         "chapter_07_6_standards_compliance_matrix.md": {
-          "size": 683,
-          "sha256": "7f7e85b4fd58b404e6b1fcb53c1aecd4426b5149120f49019a4a37a0a5e60f7f"
+          "size": 5233,
+          "sha256": "18799d19b361989685d14e356ddd4cac097ee11fad84526ee766b55b3badcab8"
         },
         "chapter_08_7_traceability_matrix_piece_01.md": {
-          "size": 647,
-          "sha256": "93cf84fd241a58e15d799a585888a3e9bdcfd7f88bbc8cd32206942db11f4cfb"
+          "size": 8210,
+          "sha256": "43761b855f62a7c5cf8d494a7320827a186e124d64fa8f6c2d3ec1c89a536646"
         },
         "chapter_09_8_conformance_check.md": {
-          "size": 650,
-          "sha256": "16ac1fbf5995ae5ffd15e3254129218d3f1ec3f49cb98d893a53e234f8084eb6"
+          "size": 4390,
+          "sha256": "f4e6e5f5b2d7e60372060d0df05bcbef58d132547c700b93d4819ac73aa47307"
+        },
+        "chapter_100_1_mission_profiles_served_doc-.md": {
+          "size": 1060,
+          "sha256": "cd0ba7ac3dca81dfd7456b854a20f660fb245e1f094bee3d31d87b3d742982c0"
+        },
+        "chapter_101_2_profile-specific_configurati.md": {
+          "size": 602,
+          "sha256": "987d86bc53745305bdf26d084b00743674db3a87cddc8aa48200850d35528362"
+        },
+        "chapter_102_3_cross-references.md": {
+          "size": 343,
+          "sha256": "e5fd9d43ca9931dc74870cb8319b335c4e9d77e36f1bac7430e2e01e5d4540e1"
+        },
+        "chapter_103_4_formulas.md": {
+          "size": 250,
+          "sha256": "e34091bd59a6375716e22e84f282288d7658841bbdfcb1779fc92d8f3374bdfe"
+        },
+        "chapter_104_5_standards_compliance.md": {
+          "size": 259,
+          "sha256": "951d3724d28dd2084a6642f710cdf741eafdb02c85ce38f0d59a7e4d9c0039f9"
+        },
+        "chapter_105_6_traceability_matrix_piece_12.md": {
+          "size": 384,
+          "sha256": "4c639c21c08532d10737c4b440f63fb0504a7e2e20431c6ecd2770f9c5937b53"
+        },
+        "chapter_106_7_conformance_check.md": {
+          "size": 550,
+          "sha256": "586ee45e9084ce4b9d175ccbb8947acbae397b5be250048c6c4afc4bf5bcbfd0"
+        },
+        "chapter_107_1_maintenance_intervals_rw-ts_.md": {
+          "size": 1650,
+          "sha256": "8e92ef21d391b1d3fa2792e8d017686d3a43266a38ce3779e629f7c62290f1c6"
+        },
+        "chapter_108_2_edition-specific_wear_patter.md": {
+          "size": 1094,
+          "sha256": "0836812a6a5ed8ae001673942019bb72e47e1ee74a3690cf1b5c4a269aa63769"
+        },
+        "chapter_109_3_cross-references.md": {
+          "size": 453,
+          "sha256": "bb6fc1d46274b9f43e5d0fd8f400e67073b471527a083719c218cefd9704b056"
         },
         "chapter_10_1_edition_identification.md": {
-          "size": 2604,
-          "sha256": "95ec1be482b055ed6d480ea2cc3dfbd23c3f25aeef6fb8b4242db2e4ba0e2a6a"
+          "size": 2948,
+          "sha256": "b219a572d8801ba4907c409c21ab2198784f3e84f868d2654639235485c12e35"
+        },
+        "chapter_110_4_formulas.md": {
+          "size": 665,
+          "sha256": "6d8ea142b1f8fd9bf26ba530bc22d43e796ebd514d22e1f50bf993ab89c38cb3"
+        },
+        "chapter_111_5_standards_compliance.md": {
+          "size": 392,
+          "sha256": "03b51dabe1339cc24a42eab8b575e736e3c0fe5cac86b77da5b934542fe1922e"
+        },
+        "chapter_112_6_traceability_matrix_piece_13.md": {
+          "size": 451,
+          "sha256": "849f1bf9dfa8b26fbeb512112638e6a9ec99f2e78b60da241e9edf75e79c6207"
+        },
+        "chapter_113_7_conformance_check.md": {
+          "size": 549,
+          "sha256": "68dabfb8ea55b63b857d9525ae7edfe2ae762c609cb2d8405337de3dc4f6a8dc"
+        },
+        "chapter_114_1_full_document_traceability_m.md": {
+          "size": 5928,
+          "sha256": "dc0d6d49e57b04234f9e454d05bfb604282080b594638f0e7f9e1dc7fa2f464e"
+        },
+        "chapter_115_2_cross-document_reference_cou.md": {
+          "size": 666,
+          "sha256": "ef6c3a063dae7b055f5c29f1e3a19961bdf27f2e64fcc6b49ad78428de1e3e97"
+        },
+        "chapter_116_3_conformance_check.md": {
+          "size": 560,
+          "sha256": "54513ccba02f67ac4dfcbf5d70dca8fc0e2cb2d7e3583481fb3c9a2debb66737"
+        },
+        "chapter_117_1_quality_gate_verification_au.md": {
+          "size": 621,
+          "sha256": "3c70c5d3887248bdb7c9d2cb088f75b7f164a593ebfd37e380c536b39c7eecf5"
+        },
+        "chapter_118_2_piece-by-piece_gate_check.md": {
+          "size": 986,
+          "sha256": "689d05bfbff4b6fc14d86cd5e4aaf4d635f4f9df1a01e240a8d3913f4b4e5ca9"
+        },
+        "chapter_119_3_script_verification_results.md": {
+          "size": 520,
+          "sha256": "b868c21c2500a256a3a4106efc87344e5d4c015e43a64e8cd97c9a3996c5a82e"
         },
         "chapter_11_2_pattern_sizing_derived_from_.md": {
           "size": 2220,
           "sha256": "c3f143d5acc4f36b407f9885d32921e3f5ffb7216bd895818f87b395d2be78c0"
         },
+        "chapter_120_4_reassembly_verification.md": {
+          "size": 512,
+          "sha256": "1a5d60e123e4ac4aecf1f5f41412581d558d8666636d72228c96bb90e1173c85"
+        },
+        "chapter_121_5_github_17-way_verification_p.md": {
+          "size": 1075,
+          "sha256": "d4d7855cb7f64483600be3161d1ca472e8ada8cd3d5ded40f45c8d313ce8484a"
+        },
+        "chapter_122_6_cross-references.md": {
+          "size": 376,
+          "sha256": "ed3006f801ce50d82982164170af56247fd3ef1a6df4f2e74afef6dcf072768a"
+        },
+        "chapter_123_7_traceability_matrix_piece_15.md": {
+          "size": 451,
+          "sha256": "36c40fbbf21e22660097b961251c75dcdc235cbfed9ef95da42a5d3d8f45157d"
+        },
+        "chapter_124_8_conformance_check.md": {
+          "size": 548,
+          "sha256": "d72fee266d3656c4053680f88edc096fdeb03ab498eba7c7c73372745451c1c1"
+        },
+        "chapter_125_1_rw_family_edition_comparison.md": {
+          "size": 1049,
+          "sha256": "30e559ecdfe873e1f58c57e8b353c15d949379b62f3c11771c192bad24583f0e"
+        },
+        "chapter_126_2_delta_analysis_rw-ts_vs_othe.md": {
+          "size": 606,
+          "sha256": "9db4fea57cb018247200198aa224bbb33204d0e6625d4b002147dacd97e861e4"
+        },
+        "chapter_127_3_transition_time_edition_chan.md": {
+          "size": 416,
+          "sha256": "ece251407fcaca3e00bc6eae4bf92138f3977cf25cd9978f000c96002ade665b"
+        },
+        "chapter_128_4_cross-references.md": {
+          "size": 348,
+          "sha256": "e6ea986d9faa2cfb28cab3e1530cb07e1dcc451b3de7576dbe0af708a7487578"
+        },
+        "chapter_129_5_formulas.md": {
+          "size": 558,
+          "sha256": "a36b5a7e98e59f7ccd11c9beb6474a919ea4ad44f6316d25211fc8962805d1ca"
+        },
         "chapter_12_3_cross-references.md": {
           "size": 1214,
           "sha256": "ca0b5681b81d48da27ccf4c234224b06eb35bbf439e50354e6af3069596e01e2"
         },
+        "chapter_130_6_standards_compliance.md": {
+          "size": 319,
+          "sha256": "42bae8877b64bbce13a441f34352fbd6c34931513a28c13f552fe3a5357eac69"
+        },
+        "chapter_131_7_traceability_matrix_piece_16.md": {
+          "size": 434,
+          "sha256": "cdcbeb9764de02e2e2b40a2897f9251b64930dcda5fd3a720acf0d7b5ab432b8"
+        },
+        "chapter_132_7_conformance_check.md": {
+          "size": 543,
+          "sha256": "5d3352687afa63aab8e7fe3333637f6ccbc6abb5eb2d18908e0d752fc808c613"
+        },
+        "chapter_133_1_system-level_risks_sf-0105_f.md": {
+          "size": 674,
+          "sha256": "fb61eb8a20bb4625add5166d37732bccef29d20bd8e6bc52388c121b04738d47"
+        },
+        "chapter_134_2_rw-ts_specific_risks_rw-ts-0.md": {
+          "size": 843,
+          "sha256": "d41645b532f41560991401890a7451ef06a4d4674b2a4676d9ea71848f6cc6a7"
+        },
+        "chapter_135_3_risk_heat_map_rw-ts.md": {
+          "size": 276,
+          "sha256": "1dfe702759f909b9f512d00fcbda826be1677a199a29722ff5fb240d57e904d4"
+        },
+        "chapter_136_4_cross-references.md": {
+          "size": 375,
+          "sha256": "b65d9af2233a23c0f9cd8cfc969ceb6e158ef6613336c0413b3dd56bc0c5f67d"
+        },
+        "chapter_137_5_formulas.md": {
+          "size": 360,
+          "sha256": "b21d6b21d59944489637f9c33b32b3f96d042dcdbe16567036458568bd5f6590"
+        },
+        "chapter_138_6_standards_compliance.md": {
+          "size": 328,
+          "sha256": "98c799e49b53be48ada2e8465d26ed3cd6c68c83e05e85cf95079758afada5e5"
+        },
+        "chapter_139_7_traceability_matrix_piece_17.md": {
+          "size": 460,
+          "sha256": "ed6b14bb258c055d981b62872108d2fddcd8c16cca794d3382c29695c51aca47"
+        },
         "chapter_13_4_edition-specific_formulas_co.md": {
           "size": 735,
           "sha256": "f0a89960772dfaec4b1da85341d5b7c719b06282a38b98314321da738f72f62e"
+        },
+        "chapter_140_8_conformance_check.md": {
+          "size": 411,
+          "sha256": "65cfaa2bd86cb5497f13f08c779b3475527b5e9b404200285c5f80606e91897a"
         },
         "chapter_14_5_standards_compliance.md": {
           "size": 455,
@@ -1655,20 +1819,20 @@
           "sha256": "4173592a7fe085414e945b365f7f3bc3e0b55a710137aa7021262d1f0ea40bef"
         },
         "chapter_17_1_aimes_12-layer_stack_adapted.md": {
-          "size": 1720,
-          "sha256": "970527b13f3a89ab80c486a7aec4e97423f7f819d02ac12fd6254ac31121eb1b"
+          "size": 4035,
+          "sha256": "42c86b55a95415b0bcbee58f55ad641e47425fb31f84e47db0d2d56f42c60f69"
         },
         "chapter_18_2_layer-by-layer_rw-ts_specifi.md": {
-          "size": 5901,
-          "sha256": "7d79162c155727aee8e2fc9db8f6dd5169e08ad34db903b836401ed11a1cc945"
+          "size": 6032,
+          "sha256": "942297f26cc0620eb6a25b1be24bb9ee4df540d148e009e622169dde69b17d96"
         },
         "chapter_19_3_interlayer_interface_enginee.md": {
-          "size": 778,
-          "sha256": "622b9bc3243a4bb0558a2dbca8d29ffa0907e861e19754b7594ba448d686c5c6"
+          "size": 1847,
+          "sha256": "af4bec0e9054501f4c4a99f07d3bf271830dd80fbe44810b5f4293ab3f21d248"
         },
         "chapter_20_4_cross-references.md": {
-          "size": 1024,
-          "sha256": "a51e743ff83c175f6aff232636cd10f32c2f310da06dfdd352369e15867abf72"
+          "size": 923,
+          "sha256": "0aab2c260bfdb1843002c06ee9363658e0af29bb4bb26a4efe479395bbf05125"
         },
         "chapter_21_5_edition-specific_formulas.md": {
           "size": 925,
@@ -1985,170 +2149,6 @@
         "chapter_99_8_conformance_check.md": {
           "size": 552,
           "sha256": "52231f8ef26fb143c0c0ee51e4dd93425c7c77d6bd840d3e5f73d1f8a6859303"
-        },
-        "chapter_100_1_mission_profiles_served_doc-.md": {
-          "size": 1060,
-          "sha256": "cd0ba7ac3dca81dfd7456b854a20f660fb245e1f094bee3d31d87b3d742982c0"
-        },
-        "chapter_101_2_profile-specific_configurati.md": {
-          "size": 602,
-          "sha256": "987d86bc53745305bdf26d084b00743674db3a87cddc8aa48200850d35528362"
-        },
-        "chapter_102_3_cross-references.md": {
-          "size": 343,
-          "sha256": "e5fd9d43ca9931dc74870cb8319b335c4e9d77e36f1bac7430e2e01e5d4540e1"
-        },
-        "chapter_103_4_formulas.md": {
-          "size": 250,
-          "sha256": "e34091bd59a6375716e22e84f282288d7658841bbdfcb1779fc92d8f3374bdfe"
-        },
-        "chapter_104_5_standards_compliance.md": {
-          "size": 259,
-          "sha256": "951d3724d28dd2084a6642f710cdf741eafdb02c85ce38f0d59a7e4d9c0039f9"
-        },
-        "chapter_105_6_traceability_matrix_piece_12.md": {
-          "size": 384,
-          "sha256": "4c639c21c08532d10737c4b440f63fb0504a7e2e20431c6ecd2770f9c5937b53"
-        },
-        "chapter_106_7_conformance_check.md": {
-          "size": 550,
-          "sha256": "586ee45e9084ce4b9d175ccbb8947acbae397b5be250048c6c4afc4bf5bcbfd0"
-        },
-        "chapter_107_1_maintenance_intervals_rw-ts_.md": {
-          "size": 1650,
-          "sha256": "8e92ef21d391b1d3fa2792e8d017686d3a43266a38ce3779e629f7c62290f1c6"
-        },
-        "chapter_108_2_edition-specific_wear_patter.md": {
-          "size": 1094,
-          "sha256": "0836812a6a5ed8ae001673942019bb72e47e1ee74a3690cf1b5c4a269aa63769"
-        },
-        "chapter_109_3_cross-references.md": {
-          "size": 453,
-          "sha256": "bb6fc1d46274b9f43e5d0fd8f400e67073b471527a083719c218cefd9704b056"
-        },
-        "chapter_110_4_formulas.md": {
-          "size": 665,
-          "sha256": "6d8ea142b1f8fd9bf26ba530bc22d43e796ebd514d22e1f50bf993ab89c38cb3"
-        },
-        "chapter_111_5_standards_compliance.md": {
-          "size": 392,
-          "sha256": "03b51dabe1339cc24a42eab8b575e736e3c0fe5cac86b77da5b934542fe1922e"
-        },
-        "chapter_112_6_traceability_matrix_piece_13.md": {
-          "size": 451,
-          "sha256": "849f1bf9dfa8b26fbeb512112638e6a9ec99f2e78b60da241e9edf75e79c6207"
-        },
-        "chapter_113_7_conformance_check.md": {
-          "size": 549,
-          "sha256": "68dabfb8ea55b63b857d9525ae7edfe2ae762c609cb2d8405337de3dc4f6a8dc"
-        },
-        "chapter_114_1_full_document_traceability_m.md": {
-          "size": 5928,
-          "sha256": "dc0d6d49e57b04234f9e454d05bfb604282080b594638f0e7f9e1dc7fa2f464e"
-        },
-        "chapter_115_2_cross-document_reference_cou.md": {
-          "size": 666,
-          "sha256": "ef6c3a063dae7b055f5c29f1e3a19961bdf27f2e64fcc6b49ad78428de1e3e97"
-        },
-        "chapter_116_3_conformance_check.md": {
-          "size": 560,
-          "sha256": "54513ccba02f67ac4dfcbf5d70dca8fc0e2cb2d7e3583481fb3c9a2debb66737"
-        },
-        "chapter_117_1_quality_gate_verification_au.md": {
-          "size": 621,
-          "sha256": "3c70c5d3887248bdb7c9d2cb088f75b7f164a593ebfd37e380c536b39c7eecf5"
-        },
-        "chapter_118_2_piece-by-piece_gate_check.md": {
-          "size": 986,
-          "sha256": "689d05bfbff4b6fc14d86cd5e4aaf4d635f4f9df1a01e240a8d3913f4b4e5ca9"
-        },
-        "chapter_119_3_script_verification_results.md": {
-          "size": 520,
-          "sha256": "b868c21c2500a256a3a4106efc87344e5d4c015e43a64e8cd97c9a3996c5a82e"
-        },
-        "chapter_120_4_reassembly_verification.md": {
-          "size": 512,
-          "sha256": "1a5d60e123e4ac4aecf1f5f41412581d558d8666636d72228c96bb90e1173c85"
-        },
-        "chapter_121_5_github_17-way_verification_p.md": {
-          "size": 1075,
-          "sha256": "d4d7855cb7f64483600be3161d1ca472e8ada8cd3d5ded40f45c8d313ce8484a"
-        },
-        "chapter_122_6_cross-references.md": {
-          "size": 376,
-          "sha256": "ed3006f801ce50d82982164170af56247fd3ef1a6df4f2e74afef6dcf072768a"
-        },
-        "chapter_123_7_traceability_matrix_piece_15.md": {
-          "size": 451,
-          "sha256": "36c40fbbf21e22660097b961251c75dcdc235cbfed9ef95da42a5d3d8f45157d"
-        },
-        "chapter_124_8_conformance_check.md": {
-          "size": 548,
-          "sha256": "d72fee266d3656c4053680f88edc096fdeb03ab498eba7c7c73372745451c1c1"
-        },
-        "chapter_125_1_rw_family_edition_comparison.md": {
-          "size": 1049,
-          "sha256": "30e559ecdfe873e1f58c57e8b353c15d949379b62f3c11771c192bad24583f0e"
-        },
-        "chapter_126_2_delta_analysis_rw-ts_vs_othe.md": {
-          "size": 606,
-          "sha256": "9db4fea57cb018247200198aa224bbb33204d0e6625d4b002147dacd97e861e4"
-        },
-        "chapter_127_3_transition_time_edition_chan.md": {
-          "size": 416,
-          "sha256": "ece251407fcaca3e00bc6eae4bf92138f3977cf25cd9978f000c96002ade665b"
-        },
-        "chapter_128_4_cross-references.md": {
-          "size": 348,
-          "sha256": "e6ea986d9faa2cfb28cab3e1530cb07e1dcc451b3de7576dbe0af708a7487578"
-        },
-        "chapter_129_5_formulas.md": {
-          "size": 558,
-          "sha256": "a36b5a7e98e59f7ccd11c9beb6474a919ea4ad44f6316d25211fc8962805d1ca"
-        },
-        "chapter_130_6_standards_compliance.md": {
-          "size": 319,
-          "sha256": "42bae8877b64bbce13a441f34352fbd6c34931513a28c13f552fe3a5357eac69"
-        },
-        "chapter_131_7_traceability_matrix_piece_16.md": {
-          "size": 434,
-          "sha256": "cdcbeb9764de02e2e2b40a2897f9251b64930dcda5fd3a720acf0d7b5ab432b8"
-        },
-        "chapter_132_7_conformance_check.md": {
-          "size": 543,
-          "sha256": "5d3352687afa63aab8e7fe3333637f6ccbc6abb5eb2d18908e0d752fc808c613"
-        },
-        "chapter_133_1_system-level_risks_sf-0105_f.md": {
-          "size": 674,
-          "sha256": "fb61eb8a20bb4625add5166d37732bccef29d20bd8e6bc52388c121b04738d47"
-        },
-        "chapter_134_2_rw-ts_specific_risks_rw-ts-0.md": {
-          "size": 843,
-          "sha256": "d41645b532f41560991401890a7451ef06a4d4674b2a4676d9ea71848f6cc6a7"
-        },
-        "chapter_135_3_risk_heat_map_rw-ts.md": {
-          "size": 276,
-          "sha256": "1dfe702759f909b9f512d00fcbda826be1677a199a29722ff5fb240d57e904d4"
-        },
-        "chapter_136_4_cross-references.md": {
-          "size": 375,
-          "sha256": "b65d9af2233a23c0f9cd8cfc969ceb6e158ef6613336c0413b3dd56bc0c5f67d"
-        },
-        "chapter_137_5_formulas.md": {
-          "size": 360,
-          "sha256": "b21d6b21d59944489637f9c33b32b3f96d042dcdbe16567036458568bd5f6590"
-        },
-        "chapter_138_6_standards_compliance.md": {
-          "size": 328,
-          "sha256": "98c799e49b53be48ada2e8465d26ed3cd6c68c83e05e85cf95079758afada5e5"
-        },
-        "chapter_139_7_traceability_matrix_piece_17.md": {
-          "size": 460,
-          "sha256": "ed6b14bb258c055d981b62872108d2fddcd8c16cca794d3382c29695c51aca47"
-        },
-        "chapter_140_8_conformance_check.md": {
-          "size": 411,
-          "sha256": "65cfaa2bd86cb5497f13f08c779b3475527b5e9b404200285c5f80606e91897a"
         }
       }
     },
@@ -2654,6 +2654,18 @@
           "size": 672,
           "sha256": "3f56ae9863b3dcff94953763c099f807dbbe160742e1bf6aea427190fcb4b0e2"
         },
+        "chapter_100_1._author_full_document_(compa.md": {
+          "size": 76,
+          "sha256": "9b375bd029ad57aaab43d4682802038d250e1f4eefd0903fa779f40821b87b22"
+        },
+        "chapter_101_\u2192_complete:_27_pieces_authored.md": {
+          "size": 77,
+          "sha256": "b1584784427e155ab46c8a0de9063faf0f86120dc1f3e011a009ef91c996d168"
+        },
+        "chapter_102_2._split:_worldline_split_doc-.md": {
+          "size": 72,
+          "sha256": "fe39a15b3506c48923abe44721fa73ce11225e6edf34f03d72ab4252e92d1be2"
+        },
         "chapter_10_1._chassis_component_commonali.md": {
           "size": 2965,
           "sha256": "3d998d0bfe6df398162e2d2e7f70f5dce773cf65885eb3bdfba111f84d0d9a70"
@@ -3013,18 +3025,6 @@
         "chapter_99_6._worldline_pipeline_completi.md": {
           "size": 75,
           "sha256": "fbfe9a71228e41a640efd49e6b807fd29610847a2b72b5777c8eb31ecc465d0b"
-        },
-        "chapter_100_1._author_full_document_(compa.md": {
-          "size": 76,
-          "sha256": "9b375bd029ad57aaab43d4682802038d250e1f4eefd0903fa779f40821b87b22"
-        },
-        "chapter_101_\u2192_complete:_27_pieces_authored.md": {
-          "size": 77,
-          "sha256": "b1584784427e155ab46c8a0de9063faf0f86120dc1f3e011a009ef91c996d168"
-        },
-        "chapter_102_2._split:_worldline_split_doc-.md": {
-          "size": 72,
-          "sha256": "fe39a15b3506c48923abe44721fa73ce11225e6edf34f03d72ab4252e92d1be2"
         }
       }
     },
