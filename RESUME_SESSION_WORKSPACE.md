@@ -1,9 +1,9 @@
-# RESUME_SESSION_WORKSPACE — 2026-10-14 (V3 Only)
+# RESUME_SESSION_WORKSPACE — 2026-10-15 (V3 Only)
 
 ## Session State Summary
 
 ### Current Workspace: /workspace/app
-### Active Branch: kilo/active-vertex-nla (pushed to origin)
+### Active Branch: kilo/live-badger-lpf (pushed to origin)
 ### Git Status: Clean (all changes committed)
 ### **ACTIVE PROJECT**: CSMWip/11_TGApp/TGApp.WIP.V3 (WebGL 3D with Landolil electron physics)
 
@@ -27,54 +27,52 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 
 ---
 
-## TGApp.WIP.V3 — ⚠️ APK BUILT BUT CRASHES ON STARTUP (NEEDS REBUILD)
+## TGApp.WIP.V3 — ✅ APK BUILT, TESTED, WORKING — v3.014
 
-- **APK**: `tgapp_electron_v3.apk` (1.4 MB) — EXISTS but is stale (crashes)
-- **Location**: `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/tgapp_electron_v3.apk`
-- **Package**: `com.tgapp.electron.v3` (different from V2's `com.tgapp.electron`)
+- **APK**: `tgapp_electron_v3_014.apk` (1.4 MB) — **CURRENT WORKING VERSION**
+- **Location**: `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/tgapp_electron_v3_014.apk`
+- **Package**: `com.tgapp.electron.v3`
 - **Features**: 
-  - WebGL 3D with three.js (three.min.js r158)
-  - **Landolil/v7b electron physics**: Berry phase accumulation, Zitterbewegung oscillation, axion field coupling, Larmor precession, Thomas precession, Schwinger pair production threshold
-  - Clean UI toggle (hides ALL menus)
-  - HUD with X/Y/Z position and velocity
-  - Prime gaps from prime tiles (Tile00.prime, Tile01.prime)
+  - WebGL 3D with three.js (Landolil/v7b physics: Berry phase, Zitterbewegung, axion coupling, Larmor precession, Thomas precession, Schwinger pair production)
+  - Control Bar: SCAN | MENU | THEORY | HIDE/SHOW | ZOOM+ | ZOOM- | CLEAN | LOGS
+  - HUD: X/Y/Z position & velocity, reflections, prime gaps crossed, steps, mode, zoom, Berry phase, axion field, spin (x/y/z), Schwinger count
+  - Prime gaps from prime tiles (Tile00.prime, Tile01.prime) — 524,288 primes loaded
   - Sensor integration (accelerometer/gyroscope → electron velocity)
-  - CrashLogger with log file in Android/data
+  - CrashLogger with log file in Android/data + public Downloads mirror
+  - Touch: pinch zoom, two-finger rotate, mouse drag/rotate
+  - **ARITHMETIC PHYSICS Sub-Menu**: 10 detailed sections with Williams/El Segundo/Keymaker personas
+  - State persistence (SharedPreferences)
 - **Keystore**: Symlink to `../../05_BOUNCE/debug.keystore`
-- **Assets**: `three.min.js`, `tge_electron.html`, `Tile00.prime`, `Tile01.prime`
+- **Build script**: Local `build.py` (includes assets in APK)
 - **Log file**: `/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/Download/tge_electron_crash_log.txt` (also mirrored to public Downloads)
-- **Build script**: Use shared `../../__Python_Tools/build_apk.py` (NOT local build.py)
 
-### CRASH DETAILS (Fixed in Source, Need Rebuild)
-```
-Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 
-'android.view.WindowInsetsController com.android.internal.policy.DecorView.getWindowInsetsController()' 
-on a null object reference
-    at com.tgapp.electron.MainActivity.setupFullscreen(MainActivity.java:89)
-```
-**Fix applied in MainActivity.java**: `setContentView()` now called before `setupFullscreen()` (lines 86-90). Rebuild required.
+### Crash Fixes Applied (Verified Working)
+- ✅ CrashLogger.java:44, 96 — package name fixed to `com.tgapp.electron.v3`
+- ✅ MainActivity.java:86-90 — `setContentView()` before `setupFullscreen()` (NPE fixed)
 
-### BUG: CrashLogger.java Wrong Package Name (FIXED)
-- **File**: `src/com/tgapp/electron/v3/CrashLogger.java:44` and line 96
-- **Was**: `Package: com.tgapp.electron`
-- **Now**: `Package: com.tgapp.electron.v3`
+### Version History
+- `tgapp_electron_v3_010.apk` — HIDE/SHOW button for HUD
+- `tgapp_electron_v3_011.apk` — ZOOM+/ZOOM- buttons, pinch zoom, mouse rotate
+- `tgapp_electron_v3_012.apk` — Two-finger rotation (horizontal + elevation)
+- `tgapp_electron_v3_013.apk` — Full 3D physics: ellipsoidal reflection, Zitterbewegung, Berry phase, axion field, Larmor/Thomas precession, Schwinger threshold
+- `tgapp_electron_v3_014.apk` — **CURRENT** — ARITHMETIC PHYSICS sub-menu with 10 detailed explainer sections
 
 ---
 
-## Build Commands (V3 Only — Shared build_apk.py)
+## Build Commands (V3 Only — Local build.py)
 
 ```bash
 # === TGApp.WIP.V3 (WebGL 3D) ===
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
-python3 ../../__Python_Tools/build_apk.py --project . --package com.tgapp.electron.v3 --output tgapp_electron_v3.apk
+python3 build.py build
 
 # Verify
 export BUILD_TOOLS=/opt/android-sdk/build-tools/34.0.0
-$BUILD_TOOLS/apksigner verify tgapp_electron_v3.apk
+$BUILD_TOOLS/apksigner verify tgapp_electron_v3_014.apk
 
-# Install on device (replaces crashing version)
-adb install -r tgapp_electron_v3.apk
+# Install on device (replaces old version)
+adb install -r tgapp_electron_v3_014.apk
 ```
 
 ---
@@ -99,7 +97,7 @@ python3 __Python_Tools/write_large_file.py verify chunk_dir MANIFEST.json
 ## Heartbeat
 
 ```bash
-./CSMWipScripts/heartbeat.sh "V3 WebGL 3D - rebuild with build_apk.py + CrashLogger fix" "PENDING" "Fix CrashLogger package name, rebuild APK, test on device"
+./CSMWipScripts/heartbeat.sh "V3.014 Arithmetic Physics complete" "OK" "Full 3D physics + 10-section explainer menu deployed"
 ```
 
 ---
@@ -108,10 +106,11 @@ python3 __Python_Tools/write_large_file.py verify chunk_dir MANIFEST.json
 
 | File | Purpose |
 |------|---------|
-| `/workspace/app/NEXT_runner_002.md` | V3-only build commands + crash fix notes |
+| `/workspace/app/NEXT_runner_002.md` | V3-only build commands + version notes |
 | `/workspace/app/RESUME_SESSION_WORKSPACE.md` | This file - session state |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/` | **Active project** - WebGL 3D |
-| `/workspace/app/__Python_Tools/build_apk.py` | Shared No-Gradle builder (USE THIS) |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/build.py` | Local No-Gradle builder (USE THIS) |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/assets/tge_electron.html` | Main simulation + physics + ARITHMETIC PHYSICS menu |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/CrashLogger.java` | **FIXED**: package name lines 44, 96 |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/MainActivity.java` | Fixed: setContentView before setupFullscreen |
 
@@ -121,10 +120,10 @@ python3 __Python_Tools/write_large_file.py verify chunk_dir MANIFEST.json
 
 ```bash
 git status  # Clean
-git branch  # kilo/active-vertex-nla
+git branch  # kilo/live-badger-lpf
 ```
 
 ---
 
-**Session saved**: 2026-10-14T23:56:00Z  
-**Active project**: TGApp.WIP.V3 — Fix CrashLogger package name, rebuild with build_apk.py, test on device
+**Session saved**: 2026-10-15T03:33:00Z  
+**Active project**: TGApp.WIP.V3 — v3.014 deployed with Arithmetic Physics sub-menu
