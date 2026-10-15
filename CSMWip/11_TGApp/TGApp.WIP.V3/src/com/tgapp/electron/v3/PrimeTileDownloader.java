@@ -72,6 +72,7 @@ public class PrimeTileDownloader {
             boolean success = downloadAndExtract(url, targetFile);
             if (success) completedTiles++; else postCallback("onDownloadError", "\"Failed: " + tileName + " in " + singleDir + "\"");
             postProgress();
+            if (isDownloading && i < singleEnd) { try { Thread.sleep(500); } catch (InterruptedException e) { return; } }
         }
         if (isDownloading) postCallback("onDownloadComplete", "\"Directory " + singleDir + " complete\"");
     }
@@ -88,25 +89,50 @@ public class PrimeTileDownloader {
                 if (new File(targetFile).exists()) { completedTiles++; postProgress(); continue; }
                 boolean success = downloadAndExtract(url, targetFile);
                 if (success) completedTiles++; postProgress();
+                if (isDownloading && (d < allDirs.length - 1 || i < count - 1)) { try { Thread.sleep(500); } catch (InterruptedException e) { return; } }
             }
         }
         if (isDownloading) postCallback("onDownloadComplete", "\"All directories complete\"");
     }
     
     private boolean downloadAndExtract(String urlString, String targetFile) {
-        try {
-            URL url = new URL(urlString);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setConnectTimeout(30000); conn.setReadTimeout(60000);
-            if (conn.getResponseCode() != 200) return false;
-            String tempFile = targetFile + ".tmp.gz";
-            try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile)) {
-                byte[] buffer = new byte[8192]; int len;
-                while ((len = in.read(buffer)) > 0) { if (!isDownloading) return false; out.write(buffer, 0, len); }
+        int maxRetries = 3;
+        for (int attempt = 1; attempt <= maxRetries && isDownloading; attempt++) {
+            try {
+                URL url = new URL(urlString);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setConnectTimeout(60000);
+                conn.setReadTimeout(120000);
+                conn.setRequestProperty("User-Agent", "TGE-Electron/3.017");
+                
+                int responseCode = conn.getResponseCode();
+                if (responseCode != 200) {
+                    if (attempt == maxRetries) return false;
+                    Thread.sleep(2000 * attempt); // exponential backoff
+                    continue;
+                }
+                
+                String tempFile = targetFile + ".tmp.gz";
+                try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile)) {
+                    byte[] buffer = new byte[16384];
+                    int len;
+                    while ((len = in.read(buffer)) > 0) {
+                        if (!isDownloading) return false;
+                        out.write(buffer, 0, len);
+                    }
+                }
+                
+                extractTarGz(tempFile, targetFile);
+                new File(tempFile).delete();
+                
+                return new File(targetFile).exists() && new File(targetFile).length() > 0;
+            } catch (Exception e) {
+                Log.e(TAG, "Download/extract failed (attempt " + attempt + "/" + maxRetries + "): " + urlString, e);
+                if (attempt == maxRetries) return false;
+                try { Thread.sleep(3000 * attempt); } catch (InterruptedException ie) { return false; }
             }
-            extractTarGz(tempFile, targetFile); new File(tempFile).delete();
-            return new File(targetFile).exists() && new File(targetFile).length() > 0;
-        } catch (Exception e) { Log.e(TAG, "Download/extract failed: " + urlString, e); return false; }
+        }
+        return false;
     }
     
     void extractTarGz(String gzPath, String targetFile) throws IOException {
