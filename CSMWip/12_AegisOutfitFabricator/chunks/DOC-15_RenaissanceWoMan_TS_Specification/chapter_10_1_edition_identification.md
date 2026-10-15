@@ -1,56 +1,79 @@
-## 1. Edition Identification
+## 10. Edition Identification — RW-TS
 
-### 1.1 Edition Code and Nomenclature
+### 10.1 Edition Designation System
 
-| Field | Value |
-|-------|-------|
-| **Edition Code** | RW-TS |
-| **Full Designation** | RenaissanceWoMan Tall-Skinny |
-| **LES Variant Index** | 1 of 4 (RW family) |
-| **Morphology Class** | Tall Stature / Lean Build |
-| **Historical Period** | c. 1580-1620 CE (Late Renaissance / Early Baroque) |
-| **Geographic Origin** | Spanish/Italian court (Elizabethan/Valois influence) |
-| **Social Rank** | Noblewoman / Courtier / Infanta |
+**Official Designation:** RenaissanceWoMan Tall-Skinny (RW-TS)
+**Internal Code:** CSMFAB078-A-RW-TS-001
+**Configuration ID:** RW-TS-v1.3-20261014
 
-### 1.2 Anthropometric Baseline (RW-TS)
+### 10.2 Morphology Identification Parameters
 
-| Measurement | Range | Midpoint | Delta vs RW-TG | Delta vs RW-SS | Percentile (F) |
-|-------------|-------|----------|----------------|----------------|----------------|
-| **Stature (H)** | 185-200 cm | 192.5 cm | 0 cm | +25 cm | 95th |
-| **Bust Circumference (B)** | 86-96 cm | 91 cm | -26 cm | +0 cm | 10th |
-| **Waist Circumference (W)** | 68-78 cm | 73 cm | -27 cm | +0 cm | 5th |
-| **Hip Circumference** | 90-100 cm | 95 cm | -20 cm | +0 cm | 10th |
-| **Underbust** | 76-86 cm | 81 cm | -26 cm | +0 cm | 10th |
-| **Neck Circumference** | 32-36 cm | 34 cm | -2 cm | +0 cm | 15th |
-| **Shoulder Breadth (biacromial)** | 35-39 cm | 37 cm | -4 cm | +0 cm | 10th |
-| **Back Length (C7 to waist)** | 42-48 cm | 45 cm | -5 cm | +5 cm | 5th |
-| **Sleeve Length (spine to wrist)** | 80-88 cm | 84 cm | -6 cm | +6 cm | 5th |
-| **Inseam** | 85-93 cm | 89 cm | -8 cm | +8 cm | 5th |
-| **Body Surface Area (Du Bois)** | 1.48-1.62 m² | 1.55 m² | -0.18 m² | +0.18 m² | 15th |
+| Parameter | Symbol | RW-TS Range | Nominal | Units |
+|-----------|--------|-------------|---------|-------|
+| Height | H | 170-185 | 175 | cm |
+| Bust Circumference | B | 88-98 | 92 | cm |
+| Waist Circumference | W | 60-70 | 65 | cm |
+| Hip Circumference | H_p | 90-100 | 95 | cm |
+| Morphology Factor | αₑ | — | +0.05 | — |
+| Mass Ratio | Mₑ/M_ref | — | 1.03 | — |
 
-### 1.3 Morphology Factor Calculation
+### 10.3 Edition Discriminators (vs. Other RW Editions)
 
-$$\alpha_e = \frac{H_e - H_{ref}}{H_{ref}} \times w_H + \frac{B_e - B_{ref}}{B_{ref}} \times w_B + \frac{W_e - W_{ref}}{W_{ref}} \times w_W$$
+| Feature | RW-TS | RW-SS | RW-SG | RW-TG |
+|---------|-------|-------|-------|-------|
+| **Height Class** | Tall (170-185) | Short (145-160) | Short (145-160) | Tall (170-185) |
+| **Girth Class** | Skinny (88-98) | Skinny (82-92) | Girthy (105-115) | Girthy (110-120) |
+| **αₑ Sign** | Positive (+0.05) | Negative (-0.12) | Positive (+0.20) | Positive (+0.30) |
+| **Tile Thickness** | 25/15 mm | 20/10 mm | 25/15 mm | 50/25 mm |
+| **Aerogel Thickness** | 3 mm | 2 mm | 3 mm | 5 mm |
+| **Chassis** | 22 baleen + 10 steel | 18 + 8 | 22 + 10 | 28 + 14 |
 
-$$\alpha_{RW-TS} = \frac{192.5 - 192.5}{192.5} \times 0.5 + \frac{91 - 117}{117} \times 0.3 + \frac{73 - 100}{100} \times 0.2 = -0.12$$
+### 10.4 Identification Markings
 
-**Mass Ratio:** $M_e/M_{ref} = 0.85$ (from MAT-04 §5.1 Table 5.2)
+**Physical Labels (per CSMFAB078-A §3.1.5):**
+- **Neck Label:** "AEGIS RW-TS | SN: [serial] | MFG: [date] | LOT: [lot]"
+- **Skirt Waistband:** "RW-TS | W=65cm | H_p=95cm | HOOP: 12"
+- **Internal LES Tag:** "Z1:50N Z2:55N Z3:60N Z4:60N Z5:55N Z6:50N Z7:55N Z8:45N Z9:40N Z10:35N Z11:30N Z12:25N"
 
-### 1.4 LES Zone Mapping for RW-TS
+**Digital Identification (PVDF Telemetry):**
+```json
+{
+  "edition": "RW-TS",
+  "version": "1.3",
+  "serial": "RWTS-2026-XXXX",
+  "morphology": {"H": 175, "B": 92, "W": 65, "H_p": 95},
+  "mass_kg": 16.00,
+  "tiles_primary": 170,
+  "tiles_backup": 280,
+  "les_zones": 12,
+  "farthingale_hoops": 12,
+  "firmware": "LES-v2.1"
+}
+```
 
-| LES Zone | Anatomical Region | RW-TS Tension (N) | RW-TG Baseline (N) | Δ Tension |
-|----------|-------------------|-------------------|---------------------|-----------|
-| Z1 | Neck/Cervical | 50 | 60 | -10 |
-| Z2 | Shoulder/Clavicular | 55 | 65 | -10 |
-| Z3 | Upper Torso/Scapular | 60 | 70 | -10 |
-| Z4 | Bust/Sternal | 60 | 70 | -10 |
-| Z5 | Waist/Lumbar | 55 | 70 | -15 |
-| Z6 | Hip/Iliac | 50 | 65 | -15 |
-| Z7 | Upper Arm/Deltoid | 45 | 55 | -10 |
-| Z8 | Forearm | 40 | 50 | -10 |
-| Z9 | Thigh/Femoral | 40 | 50 | -10 |
-| Z10 | Knee/Popliteal | 35 | 45 | -10 |
-| Z11 | Calf/Gastrocnemius | 30 | 40 | -10 |
-| Z12 | Ankle/Malleolar | 25 | 30 | -5 |
+### 10.5 Configuration Management
+
+| Config Item | RW-TS Value | Change Control |
+|-------------|-------------|----------------|
+| Primary Tile Count | 170 | CCB approval required |
+| Primary Tile Size | 25×25×3 mm | CCB approval required |
+| Backup Tile Count | 280 | CCB approval required |
+| Backup Tile Size | 15×15×2 mm | CCB approval required |
+| Aerogel Thickness | 3 mm | CCB approval required |
+| MXene Coating | 30 µm | CCB approval required |
+| Baleen Count | 22 | Engineering change |
+| Steel Boning Count | 10 | Engineering change |
+| Panel Count | 32 | Pattern change |
+| Farthingale Hoops | 12 | Engineering change |
+| LES Base Tensions | Per Ch. 39 table | Calibration change |
+
+### 10.6 Cross-References
+
+- CSMFAB078-A §3.1: Edition definition framework
+- CSMFAB078-A §3.5: Edition transition rules
+- DOC-13 Piece 01: RM-SS edition identification
+- DOC-14 Piece 01: RM-SG edition identification
+- DOC-11 Piece 01: RM-TS edition identification
+- Framework/config_schema.json: Digital ID schema
 
 ---
