@@ -54,10 +54,10 @@ on a null object reference
 ```
 **Fix applied in MainActivity.java**: `setContentView()` now called before `setupFullscreen()` (lines 86-90). Rebuild required.
 
-### BUG: CrashLogger.java Wrong Package Name
+### BUG: CrashLogger.java Wrong Package Name (FIXED)
 - **File**: `src/com/tgapp/electron/v3/CrashLogger.java:44` and line 96
-- **Current**: `Package: com.tgapp.electron`
-- **Should be**: `Package: com.tgapp.electron.v3`
+- **Was**: `Package: com.tgapp.electron`
+- **Now**: `Package: com.tgapp.electron.v3`
 
 ---
 
@@ -79,6 +79,31 @@ adb install -r tgapp_electron_v3.apk
 
 ---
 
+## Large File Handling (Replaces pieces/)
+
+```bash
+# Compress large markdown/text files
+python3 __Python_Tools/write_large_file.py compress PRIME_ELECTRON_COMPLETE_RESEARCH.md
+
+# Split logical chapters
+python3 __Python_Tools/write_large_file.py split bigfile.md output_dir chapter .md
+
+# Concat, manifest, verify
+python3 __Python_Tools/write_large_file.py concat chunk_dir output.md
+python3 __Python_Tools/write_large_file.py manifest chunk_dir MANIFEST.json
+python3 __Python_Tools/write_large_file.py verify chunk_dir MANIFEST.json
+```
+
+---
+
+## Heartbeat
+
+```bash
+./CSMWipScripts/heartbeat.sh "V3 WebGL 3D - rebuild with build_apk.py + CrashLogger fix" "PENDING" "Fix CrashLogger package name, rebuild APK, test on device"
+```
+
+---
+
 ## Key Files
 
 | File | Purpose |
@@ -87,7 +112,7 @@ adb install -r tgapp_electron_v3.apk
 | `/workspace/app/RESUME_SESSION_WORKSPACE.md` | This file - session state |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/` | **Active project** - WebGL 3D |
 | `/workspace/app/__Python_Tools/build_apk.py` | Shared No-Gradle builder (USE THIS) |
-| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/CrashLogger.java` | **FIX NEEDED**: package name lines 44, 96 |
+| `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/CrashLogger.java` | **FIXED**: package name lines 44, 96 |
 | `/workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3/src/com/tgapp/electron/v3/MainActivity.java` | Fixed: setContentView before setupFullscreen |
 
 ---
@@ -97,14 +122,6 @@ adb install -r tgapp_electron_v3.apk
 ```bash
 git status  # Clean
 git branch  # kilo/active-vertex-nla
-```
-
----
-
-## Heartbeat
-
-```bash
-./CSMWipScripts/heartbeat.sh "V3 WebGL 3D - rebuild with build_apk.py + CrashLogger fix" "PENDING" "Fix CrashLogger package name, rebuild APK, test on device"
 ```
 
 ---

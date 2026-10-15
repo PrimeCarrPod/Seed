@@ -12,7 +12,7 @@ export BUILD_TOOLS=$ANDROID_SDK/build-tools/34.0.0
 export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 ```
 
-### Build Command (Use Shared build_apk.py)
+### Build Command (Shared build_apk.py)
 ```bash
 cd /workspace/app/CSMWip/11_TGApp/TGApp.WIP.V3
 ln -sf ../../05_BOUNCE/debug.keystore debug.keystore
@@ -29,7 +29,7 @@ adb install -r tgapp_electron_v3.apk
 ```
 
 ### Critical Fix Required Before Rebuild
-**CrashLogger.java:44** has wrong package name:
+**CrashLogger.java:44, 96** has wrong package name:
 ```java
 // CURRENT (buggy):
 bw.write("Package: com.tgapp.electron\n");
@@ -37,7 +37,6 @@ bw.write("Package: com.tgapp.electron\n");
 // SHOULD BE:
 bw.write("Package: com.tgapp.electron.v3\n");
 ```
-Also line 96 in `tryCreatePublicDownloadLink()`.
 
 ### Known Crash (Fixed in Source, Need Rebuild)
 ```
@@ -60,6 +59,25 @@ on a null object reference
 - Prime gaps from prime tiles (Tile00/01.prime)
 - Sensor integration (accelerometer/gyroscope → electron velocity)
 - CrashLogger with log file in Android/data + public Downloads mirror
+
+### Large File Handling (Replaces pieces/)
+```bash
+# Compress large markdown/text files
+python3 __Python_Tools/write_large_file.py compress PRIME_ELECTRON_COMPLETE_RESEARCH.md
+
+# Split logical chapters
+python3 __Python_Tools/write_large_file.py split bigfile.md output_dir chapter .md
+
+# Concat, manifest, verify
+python3 __Python_Tools/write_large_file.py concat chunk_dir output.md
+python3 __Python_Tools/write_large_file.py manifest chunk_dir MANIFEST.json
+python3 __Python_Tools/write_large_file.py verify chunk_dir MANIFEST.json
+```
+
+### Heartbeat Check
+```bash
+./CSMWipScripts/heartbeat.sh "V3 WebGL 3D - rebuild with build_apk.py + CrashLogger fix" "PENDING" "Fix CrashLogger package name, rebuild APK, test on device"
+```
 
 ---
 
