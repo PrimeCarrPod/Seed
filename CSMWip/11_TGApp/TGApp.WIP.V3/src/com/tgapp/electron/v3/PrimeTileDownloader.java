@@ -1,5 +1,6 @@
 package com.tgapp.electron.v3;
 
+import android.os.Environment;
 import android.webkit.JavascriptInterface;
 import android.util.Log;
 import java.io.*;
@@ -26,9 +27,16 @@ public class PrimeTileDownloader {
     
     public PrimeTileDownloader(MainActivity activity) {
         this.activity = activity;
-        this.downloadDir = activity.getExternalFilesDir(null).getAbsolutePath() + "/PrimeBookOne/";
+        // Primary: Public Downloads folder (persists across reinstalls, user-visible)
+        File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        this.downloadDir = downloadsDir.getAbsolutePath() + "/PrimeBookOne/";
         new File(downloadDir).mkdirs();
+        // Secondary: App-specific external files dir (for WebView access, persists across updates)
+        this.appFilesDir = activity.getExternalFilesDir(null).getAbsolutePath() + "/PrimeBookOne/";
+        new File(appFilesDir).mkdirs();
     }
+    
+    private String appFilesDir;
     
     @JavascriptInterface
     public String getDownloadDir() { return downloadDir; }
@@ -123,6 +131,15 @@ public class PrimeTileDownloader {
                 }
                 
                 extractTarGz(tempFile, targetFile);
+                
+                // Also copy to app files dir for WebView access
+                String fileName = new File(targetFile).getName();
+                String dirName = new File(targetFile).getParentFile().getName();
+                String appTargetDir = appFilesDir + dirName + "/";
+                new File(appTargetDir).mkdirs();
+                String appTargetFile = appTargetDir + fileName;
+                copyFile(targetFile, appTargetFile);
+                
                 new File(tempFile).delete();
                 
                 return new File(targetFile).exists() && new File(targetFile).length() > 0;
@@ -133,6 +150,14 @@ public class PrimeTileDownloader {
             }
         }
         return false;
+    }
+    
+    private void copyFile(String src, String dst) throws IOException {
+        try (FileInputStream in = new FileInputStream(src); FileOutputStream out = new FileOutputStream(dst)) {
+            byte[] buffer = new byte[8192];
+            int len;
+            while ((len = in.read(buffer)) > 0) out.write(buffer, 0, len);
+        }
     }
     
     void extractTarGz(String gzPath, String targetFile) throws IOException {

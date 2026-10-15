@@ -960,8 +960,8 @@ updateHUD() {
             loadedTiles: new Set(),
             
             async init() {
-                // Try to access Documents/PrimeBookOne via File System Access API or fetch
-                this.basePath = 'PrimeBookOne/'; // Relative to Documents
+                // Try to access app-specific external files dir (accessible to WebView)
+                this.basePath = '/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/PrimeBookOne/';
                 await this.scanLocalTiles();
             },
             
