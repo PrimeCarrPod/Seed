@@ -7,7 +7,7 @@
 | [3] | MAT-03 | §3.1-3.5 | Tile, MXene, aerogel, STF specs |
 | [4] | MAT-02 | §3, §4 | Baleen/steel chassis properties |
 | [5] | DOC-06 | All | Protective layer architecture |
-| [6] | DOC-13 | Piece 03 | RM-SS layer stack baseline |
+| [6] | DOC-11 | Piece 03 | RM-TS layer stack baseline |
 | [7] | NIJ STD-0101.06 | — | Ballistic test standard |
 | [8] | MIL-STD-461G | RS103, RE102 | EMI test standards |
 | [9] | ASTM F2371 | — | Force trauma test |
