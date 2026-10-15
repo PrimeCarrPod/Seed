@@ -28,6 +28,11 @@ public class JsBridge {
     }
 
     @JavascriptInterface
+    public void updatePrimeBooks(int loadedDirs, int totalDirs, int loadedTiles, int totalTiles) {
+        activity.runOnUiThread(new JsBridgeUpdatePrimeBooks(activity, loadedDirs, totalDirs, loadedTiles, totalTiles));
+    }
+
+    @JavascriptInterface
     public void onWorldlineReflection(String data) {
         Log.d("TGE_Electron", "Worldline reflection: " + data);
     }

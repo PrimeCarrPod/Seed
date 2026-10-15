@@ -35,6 +35,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     public LinearLayout headerOverlay;
     public FrameLayout controlBar;
     public TextView tagTextView;
+    public TextView primeBooksTextView;
     public Button cleanBtn, menuBtn, theoryBtn, fleetBtn, scanBtn;
     boolean cleanMode = false;
     boolean theoryMode = false;
@@ -205,6 +206,14 @@ public class MainActivity extends Activity implements SensorEventListener {
         tag.setGravity(Gravity.CENTER);
         tagTextView = tag;
 
+        TextView primeBooks = new TextView(this);
+        primeBooks.setText("Prime Books: 0/6 loaded · 0/3500 tiles");
+        primeBooks.setTextSize(9f);
+        primeBooks.setTextColor(Color.parseColor("#00D4AA"));
+        primeBooks.setGravity(Gravity.CENTER);
+        primeBooks.setPadding(0, dp(2), 0, 0);
+        primeBooksTextView = primeBooks;
+
         TextView subtitle = new TextView(this);
         subtitle.setText("Single Electron Walking Worldline → Reflections | Prime Gap Universe");
         subtitle.setTextSize(9f);
@@ -214,6 +223,7 @@ public class MainActivity extends Activity implements SensorEventListener {
 
         h.addView(logo);
         h.addView(tag);
+        h.addView(primeBooks);
         h.addView(subtitle);
         return h;
     }

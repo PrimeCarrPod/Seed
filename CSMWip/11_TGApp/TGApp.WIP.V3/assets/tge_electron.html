@@ -859,7 +859,7 @@ updateHUD() {
                 ];
                 
                 let html = '<h3>PrimeBookOne Tile Downloader</h3>';
-                html += '<p>Downloads .tar.gz tiles from GitHub, extracts to Documents/PrimeBookOne/{dir}/</p>';
+                html += '<p>Downloads .tar.gz tiles from GitHub, extracts to Downloads/PrimeBookOne/{dir}/ (persists across reinstalls)</p>';
                 html += '<div style="margin: 12px 0;">';
                 html += '<button class="btn" onclick="PrimeDataManager.downloadAll()">DOWNLOAD ALL (3500 tiles, ~3.5 GB)</button>';
                 html += '<button class="btn secondary" onclick="PrimeDataManager.cancelDownload()" style="margin-left: 8px;">CANCEL</button>';
@@ -869,17 +869,18 @@ updateHUD() {
                 html += '<div id="prime-status-text" style="font-size: 11px; color: #00D4AA; margin-bottom: 12px;">Ready</div>';
                 html += '<div id="prime-data-log" class="log-area"></div>';
                 html += '<hr style="border-color: #00D4AA33; margin: 16px 0;">';
-                html += '<h3>Directory Selectors</h3>';
+                html += '<h3>Directory Progress</h3>';
                 
                 for (const dir of dirs) {
-                    html += '<div class="dir-card">';
+                    html += '<div class="dir-card" id="dir-card-' + dir.id + '">';
                     html += '<div class="dir-header">';
                     html += '<span class="dir-title">Directory ' + dir.id + '</span>';
-                    html += '<span class="dir-stats">' + dir.count + ' tiles · ' + dir.size + '</span>';
+                    html += '<span class="dir-stats" id="dir-stats-' + dir.id + '">' + dir.count + ' tiles · ' + dir.size + '</span>';
                     html += '</div>';
+                    html += '<div class="progress-bar" style="margin: 8px 0;"><div id="dir-progress-' + dir.id + '" class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #F97316, #00D4AA);"></div></div>';
                     html += '<div class="range-inputs">';
-                    html += '<input type="number" id="start-' + dir.id + '" value="0" min="0" max="' + (dir.count - 1) + '" placeholder="Start">';
-                    html += '<input type="number" id="end-' + dir.id + '" value="' + (dir.count - 1) + '" min="0" max="' + (dir.count - 1) + '" placeholder="End">';
+                    html += '<input type="number" id="start-' + dir.id + '" value="0" min="0" max="' + (dir.count - 1) + '" placeholder="Start" style="width: 70px;">';
+                    html += '<input type="number" id="end-' + dir.id + '" value="' + (dir.count - 1) + '" min="0" max="' + (dir.count - 1) + '" placeholder="End" style="width: 70px;">';
                     html += '<button class="btn" onclick="PrimeDataManager.downloadDirectory(\'' + dir.id + '\', parseInt(document.getElementById(\'start-' + dir.id + '\').value), parseInt(document.getElementById(\'end-' + dir.id + '\').value))">DOWNLOAD</button>';
                     html += '</div>';
                     html += '</div>';
@@ -1097,6 +1098,9 @@ updateHUD() {
             currentTile: 0,
             totalTiles: 0,
             completedTiles: 0,
+            dirProgress: {}, // Track progress per directory
+            dirTotalTiles: { '0.0': 189, '0.1': 189, '1.0': 189, '2.0': 189, '2.1': 189, '3.0': 3500 },
+            dirLoadedTiles: { '0.0': 0, '0.1': 0, '1.0': 0, '2.0': 0, '2.1': 0, '3.0': 0 },
             
             onProgress(data) {
                 this.progress = data.progress;
@@ -1104,7 +1108,15 @@ updateHUD() {
                 this.totalTiles = data.total;
                 this.currentDir = data.dir;
                 this.currentTile = data.tile;
+                
+                // Update per-directory tracking
+                if (!this.dirProgress[data.dir]) this.dirProgress[data.dir] = 0;
+                this.dirProgress[data.dir] = data.progress;
+                this.dirLoadedTiles[data.dir] = data.completed;
+                
                 this.updateUI();
+                this.updateDirUI(data.dir);
+                this.updatePrimeBooksStatus();
             },
             
             onDownloadComplete(message) {
@@ -1112,6 +1124,8 @@ updateHUD() {
                 this.log('success', message);
                 PrimeDataLoader.scanLocalTiles(); // Refresh local tile list
                 this.updateUI();
+                this.updateAllDirUI();
+                this.updatePrimeBooksStatus();
             },
             
             onDownloadError(error) {
@@ -1139,6 +1153,46 @@ updateHUD() {
                 if (progressFill) progressFill.style.width = this.progress + '%';
                 if (progressText) progressText.textContent = this.progress + '% (' + this.completedTiles + '/' + this.totalTiles + ')';
                 if (statusText) statusText.textContent = this.downloading ? 'Downloading ' + this.currentDir + ': Tile ' + this.currentTile : 'Ready';
+            },
+            
+            updateDirUI(dir) {
+                const progressFill = document.getElementById('dir-progress-' + dir);
+                const statsText = document.getElementById('dir-stats-' + dir);
+                if (progressFill) {
+                    const p = this.dirProgress[dir] || 0;
+                    progressFill.style.width = p + '%';
+                }
+                if (statsText) {
+                    const total = this.dirTotalTiles[dir] || 0;
+                    const loaded = this.dirLoadedTiles[dir] || 0;
+                    statsText.textContent = loaded + '/' + total + ' tiles';
+                }
+            },
+            
+            updateAllDirUI() {
+                for (const dir of Object.keys(this.dirTotalTiles)) {
+                    this.updateDirUI(dir);
+                }
+            },
+            
+            updatePrimeBooksStatus() {
+                // Count fully loaded directories (all tiles downloaded)
+                let loadedDirs = 0;
+                let totalLoadedTiles = 0;
+                let totalTiles = 0;
+                for (const dir of Object.keys(this.dirTotalTiles)) {
+                    totalTiles += this.dirTotalTiles[dir];
+                    totalLoadedTiles += this.dirLoadedTiles[dir] || 0;
+                    // A directory is "loaded" if we have all its tiles locally
+                    if ((this.dirLoadedTiles[dir] || 0) >= this.dirTotalTiles[dir]) {
+                        loadedDirs++;
+                    }
+                }
+                
+                // Call native bridge to update header
+                if (window.TGEBridge) {
+                    window.TGEBridge.updatePrimeBooks(loadedDirs, 6, totalLoadedTiles, totalTiles);
+                }
             },
             
             downloadDirectory(dir, start, end) {
