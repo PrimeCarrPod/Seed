@@ -242,6 +242,12 @@ public class MainActivity extends Activity implements SensorEventListener {
         fleetBtn = mkBtn("HIDE", "#A855F7", new FleetClickListener(this));
         row.addView(fleetBtn);
 
+        Button zoomInBtn = mkBtn("ZOOM+", "#10B981", new ZoomInClickListener(this));
+        row.addView(zoomInBtn);
+
+        Button zoomOutBtn = mkBtn("ZOOM-", "#F97316", new ZoomOutClickListener(this));
+        row.addView(zoomOutBtn);
+
         cleanBtn = mkBtn("CLEAN", "#FF6600", new CleanClickListener(this));
         row.addView(cleanBtn);
 
