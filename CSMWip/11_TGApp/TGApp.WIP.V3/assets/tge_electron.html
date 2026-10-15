@@ -131,6 +131,7 @@
             theoryMode: false, running: true, animationId: null,
             insetsTop: 0, insetsBottom: 0,
             menuVisible: false,
+            uiVisible: true,
             electronMesh: null, worldlineMesh: null, eggshellMesh: null,
             primeGapMeshes: [],
             
@@ -431,6 +432,14 @@
             toggleMenu() {
                 this.menuVisible = !this.menuVisible;
                 document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+            },
+            
+            toggleUI(visible) {
+                this.uiVisible = visible;
+                const hud = document.getElementById('hud');
+                const menuOverlay = document.getElementById('menu-overlay');
+                if (hud) hud.style.display = visible ? 'block' : 'none';
+                if (menuOverlay) menuOverlay.style.display = visible ? 'flex' : 'none';
             },
             
             resume() { this.toggleMenu(); },

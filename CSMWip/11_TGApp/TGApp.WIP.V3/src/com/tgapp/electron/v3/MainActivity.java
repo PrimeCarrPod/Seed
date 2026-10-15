@@ -39,6 +39,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     boolean cleanMode = false;
     boolean theoryMode = false;
     boolean menuVisible = false;
+    boolean uiVisible = true;
     private SharedPreferences prefs;
 
     private SensorManager sensorManager;
@@ -238,7 +239,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         theoryBtn = mkBtn("THEORY", "#4488FF", new TheoryClickListener(this));
         row.addView(theoryBtn);
 
-        fleetBtn = mkBtn("FLEET", "#A855F7", new FleetClickListener(this));
+        fleetBtn = mkBtn("HIDE", "#A855F7", new FleetClickListener(this));
         row.addView(fleetBtn);
 
         cleanBtn = mkBtn("CLEAN", "#FF6600", new CleanClickListener(this));
@@ -276,6 +277,14 @@ public class MainActivity extends Activity implements SensorEventListener {
         injectJs("TGE.toggleMenu(" + menuVisible + ")");
     }
 
+    public void toggleUI() {
+        uiVisible = !uiVisible;
+        fleetBtn.setText(uiVisible ? "HIDE" : "SHOW");
+        fleetBtn.setTextColor(Color.parseColor(uiVisible ? "#A855F7" : "#10B981"));
+        injectJs("TGE.toggleUI(" + uiVisible + ")");
+        saveState();
+    }
+
     public void toggleTheory() {
         theoryMode = !theoryMode;
         theoryBtn.setText(theoryMode ? "LIVE" : "THEORY");
@@ -302,17 +311,22 @@ public class MainActivity extends Activity implements SensorEventListener {
     private void restoreState() {
         cleanMode = prefs.getBoolean("cleanMode", false);
         theoryMode = prefs.getBoolean("theoryMode", false);
+        uiVisible = prefs.getBoolean("uiVisible", true);
         cleanBtn.setText(cleanMode ? "SHOW" : "CLEAN");
         cleanBtn.setTextColor(Color.parseColor(cleanMode ? "#FF4466" : "#FF6600"));
         headerOverlay.setVisibility(cleanMode ? View.GONE : View.VISIBLE);
         theoryBtn.setText(theoryMode ? "LIVE" : "THEORY");
         theoryBtn.setTextColor(Color.parseColor(theoryMode ? "#10B981" : "#4488FF"));
+        fleetBtn.setText(uiVisible ? "HIDE" : "SHOW");
+        fleetBtn.setTextColor(Color.parseColor(uiVisible ? "#A855F7" : "#10B981"));
+        injectJs("TGE.toggleUI(" + uiVisible + ")");
     }
 
     public void saveState() {
         prefs.edit()
                 .putBoolean("cleanMode", cleanMode)
                 .putBoolean("theoryMode", theoryMode)
+                .putBoolean("uiVisible", uiVisible)
                 .apply();
     }
 
