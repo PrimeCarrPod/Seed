@@ -1109,9 +1109,11 @@ updateHUD() {
             currentTile: 0,
             totalTiles: 0,
             completedTiles: 0,
-            dirProgress: {}, // Track progress per directory
+            dirProgress: {}, // Track progress per directory (0-100)
             dirTotalTiles: { '0.0': 189, '0.1': 189, '1.0': 189, '2.0': 189, '2.1': 189, '3.0': 3500 },
             dirLoadedTiles: { '0.0': 0, '0.1': 0, '1.0': 0, '2.0': 0, '2.1': 0, '3.0': 0 },
+            dirStarted: { '0.0': false, '0.1': false, '1.0': false, '2.0': false, '2.1': false, '3.0': false },
+            dirCompleted: { '0.0': false, '0.1': false, '1.0': false, '2.0': false, '2.1': false, '3.0': false },
             
             onProgress(data) {
                 this.progress = data.progress;
@@ -1120,11 +1122,14 @@ updateHUD() {
                 this.currentDir = data.dir;
                 this.currentTile = data.tile;
                 
-                // Update per-directory tracking
-                if (!this.dirProgress[data.dir]) this.dirProgress[data.dir] = 0;
-                this.dirProgress[data.dir] = data.progress;
-                this.dirLoadedTiles[data.dir] = data.completed;
+                // Mark directory as started
+                if (!this.dirStarted[data.dir]) this.dirStarted[data.dir] = true;
                 
+                // Update per-directory progress (0-100)
+                this.dirProgress[data.dir] = data.progress;
+                
+                // Calculate per-directory loaded tiles: global completed - tiles in previous dirs
+                // But simpler: track when a directory completes
                 this.updateUI();
                 this.updateDirUI(data.dir);
                 this.updatePrimeBooksStatus();
@@ -1132,6 +1137,12 @@ updateHUD() {
             
             onDownloadComplete(message) {
                 this.downloading = false;
+                // Mark current directory as completed
+                if (this.currentDir) {
+                    this.dirCompleted[this.currentDir] = true;
+                    this.dirLoadedTiles[this.currentDir] = this.dirTotalTiles[this.currentDir];
+                    this.dirProgress[this.currentDir] = 100;
+                }
                 this.log('success', message);
                 PrimeDataLoader.scanLocalTiles(); // Refresh local tile list
                 this.updateUI();
@@ -1169,13 +1180,33 @@ updateHUD() {
             updateDirUI(dir) {
                 const progressFill = document.getElementById('dir-progress-' + dir);
                 const statsText = document.getElementById('dir-stats-' + dir);
+                const card = document.getElementById('dir-card-' + dir);
+                
                 if (progressFill) {
-                    const p = this.dirProgress[dir] || 0;
+                    // Only show progress if directory has been started
+                    const p = this.dirStarted[dir] ? (this.dirProgress[dir] || 0) : 0;
                     progressFill.style.width = p + '%';
+                    // Visual indicator for completed
+                    if (this.dirCompleted[dir]) {
+                        progressFill.style.background = 'linear-gradient(90deg, #10B981, #00D4AA)';
+                    } else if (this.dirStarted[dir]) {
+                        progressFill.style.background = 'linear-gradient(90deg, #F97316, #00D4AA)';
+                    }
                 }
                 if (statsText) {
                     const total = this.dirTotalTiles[dir] || 0;
-                    const loaded = this.dirLoadedTiles[dir] || 0;
+                    // Only show loaded count if started or completed
+                    let loaded = 0;
+                    if (this.dirCompleted[dir]) {
+                        loaded = total;
+                    } else if (this.dirStarted[dir]) {
+                        // Approximate: use global progress for current directory only
+                        loaded = Math.min(total, this.completedTiles);
+                    }
+                    // For unstarted directories, show 0
+                    if (!this.dirStarted[dir] && !this.dirCompleted[dir]) {
+                        loaded = 0;
+                    }
                     statsText.textContent = loaded + '/' + total + ' tiles';
                 }
             },
@@ -1193,10 +1224,13 @@ updateHUD() {
                 let totalTiles = 0;
                 for (const dir of Object.keys(this.dirTotalTiles)) {
                     totalTiles += this.dirTotalTiles[dir];
-                    totalLoadedTiles += this.dirLoadedTiles[dir] || 0;
-                    // A directory is "loaded" if we have all its tiles locally
-                    if ((this.dirLoadedTiles[dir] || 0) >= this.dirTotalTiles[dir]) {
+                    if (this.dirCompleted[dir]) {
+                        totalLoadedTiles += this.dirTotalTiles[dir];
                         loadedDirs++;
+                    } else if (this.dirStarted[dir]) {
+                        // For in-progress directory, count what we've downloaded so far
+                        // Approximate: min of global completed and directory total
+                        totalLoadedTiles += Math.min(this.dirTotalTiles[dir], this.completedTiles);
                     }
                 }
                 
