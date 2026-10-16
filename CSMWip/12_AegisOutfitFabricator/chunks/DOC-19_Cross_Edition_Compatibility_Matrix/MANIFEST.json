@@ -35,6 +35,18 @@
     "size": 672,
     "sha256": "3f56ae9863b3dcff94953763c099f807dbbe160742e1bf6aea427190fcb4b0e2"
   },
+  "chapter_100_1._author_full_document_(compa.md": {
+    "size": 76,
+    "sha256": "9b375bd029ad57aaab43d4682802038d250e1f4eefd0903fa779f40821b87b22"
+  },
+  "chapter_101_\u2192_complete:_27_pieces_authored.md": {
+    "size": 77,
+    "sha256": "b1584784427e155ab46c8a0de9063faf0f86120dc1f3e011a009ef91c996d168"
+  },
+  "chapter_102_2._split:_worldline_split_doc-.md": {
+    "size": 72,
+    "sha256": "fe39a15b3506c48923abe44721fa73ce11225e6edf34f03d72ab4252e92d1be2"
+  },
   "chapter_10_1._chassis_component_commonali.md": {
     "size": 2965,
     "sha256": "3d998d0bfe6df398162e2d2e7f70f5dce773cf65885eb3bdfba111f84d0d9a70"
@@ -394,17 +406,5 @@
   "chapter_99_6._worldline_pipeline_completi.md": {
     "size": 75,
     "sha256": "fbfe9a71228e41a640efd49e6b807fd29610847a2b72b5777c8eb31ecc465d0b"
-  },
-  "chapter_100_1._author_full_document_(compa.md": {
-    "size": 76,
-    "sha256": "9b375bd029ad57aaab43d4682802038d250e1f4eefd0903fa779f40821b87b22"
-  },
-  "chapter_101_\u2192_complete:_27_pieces_authored.md": {
-    "size": 77,
-    "sha256": "b1584784427e155ab46c8a0de9063faf0f86120dc1f3e011a009ef91c996d168"
-  },
-  "chapter_102_2._split:_worldline_split_doc-.md": {
-    "size": 72,
-    "sha256": "fe39a15b3506c48923abe44721fa73ce11225e6edf34f03d72ab4252e92d1be2"
   }
 }
