@@ -861,7 +861,7 @@ updateHUD() {
                 let html = '<h3>PrimeBookOne Tile Downloader</h3>';
                 html += '<p>Downloads .tar.gz tiles from GitHub, extracts to Downloads/PrimeBookOne/{dir}/ (persists across reinstalls)</p>';
                 html += '<div style="margin: 12px 0;">';
-                html += '<button class="btn" onclick="PrimeDataManager.downloadAll()">DOWNLOAD ALL (3500 tiles, ~3.5 GB)</button>';
+                html += '<button class="btn" onclick="PrimeDataManager.downloadAll()">DOWNLOAD ALL (4445 tiles, ~4.4 GB)</button>';
                 html += '<button class="btn secondary" onclick="PrimeDataManager.cancelDownload()" style="margin-left: 8px;">CANCEL</button>';
                 html += '</div>';
                 html += '<div id="prime-overall-progress" class="progress-bar"><div id="prime-progress-fill" class="progress-fill" style="width: 0%"></div></div>';
@@ -879,8 +879,9 @@ updateHUD() {
                     html += '</div>';
                     html += '<div class="progress-bar" style="margin: 8px 0;"><div id="dir-progress-' + dir.id + '" class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #F97316, #00D4AA);"></div></div>';
                     html += '<div class="range-inputs">';
-                    html += '<input type="number" id="start-' + dir.id + '" value="0" min="0" max="' + (dir.count - 1) + '" placeholder="Start" style="width: 70px;">';
-                    html += '<input type="number" id="end-' + dir.id + '" value="' + (dir.count - 1) + '" min="0" max="' + (dir.count - 1) + '" placeholder="End" style="width: 70px;">';
+                    html += '<input type="number" id="start-' + dir.id + '" value="0" min="0" max="' + (dir.count - 1) + '" placeholder="Start" style="width: 60px;">';
+                    html += '<input type="number" id="end-' + dir.id + '" value="' + (dir.count - 1) + '" min="0" max="' + (dir.count - 1) + '" placeholder="End" style="width: 60px;">';
+                    html += '<button class="btn" onclick="document.getElementById(\'start-' + dir.id + '\').value = 0; document.getElementById(\'end-' + dir.id + '\').value = ' + (dir.count - 1) + ';">Full Range</button>';
                     html += '<button class="btn" onclick="PrimeDataManager.downloadDirectory(\'' + dir.id + '\', parseInt(document.getElementById(\'start-' + dir.id + '\').value), parseInt(document.getElementById(\'end-' + dir.id + '\').value))">DOWNLOAD</button>';
                     html += '</div>';
                     html += '</div>';
@@ -1242,6 +1243,28 @@ updateHUD() {
             
             downloadDirectory(dir, start, end) {
                 if (this.downloading) return;
+                // Validate and clamp start/end values to valid range
+                const count = this.dirTotalTiles[dir] || 0;
+                if (count > 0) {
+                    // Clamp start to [0, count-1]
+                    if (start < 0) start = 0;
+                    if (start > count - 1) start = count - 1;
+                    // Clamp end to [0, count-1]
+                    if (end < 0) end = 0;
+                    if (end > count - 1) end = count - 1;
+                    // Ensure start <= end
+                    if (start > end) {
+                        const temp = start;
+                        start = end;
+                        end = temp;
+                    }
+                    // Log if values were adjusted
+                    const adjusted = (start !== parseInt(document.getElementById('start-' + dir.id).value) || 
+                                    end !== parseInt(document.getElementById('end-' + dir.id).value));
+                    if (adjusted) {
+                        this.log('info', 'Adjusted range to: ' + start + '-' + end + ' (valid range: 0-' + (count-1) + ')');
+                    }
+                }
                 this.downloading = true;
                 this.progress = 0;
                 this.completedTiles = 0;
