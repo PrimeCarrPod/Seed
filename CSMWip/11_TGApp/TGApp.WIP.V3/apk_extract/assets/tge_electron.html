@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TGE E1 - Prime Electron Worldline 3D</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0A0A0F; 
+            color: #E8E8F0; 
+            font-family: 'Courier New', monospace; 
+            overflow: hidden; 
+            width: 100vw; 
+            height: 100vh; 
+        }
+        #canvas { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            display: block; 
+        }
+        #hud { 
+            position: absolute; 
+            top: 60px; 
+            left: 20px; 
+            right: 20px; 
+            bottom: 80px; 
+            pointer-events: none; 
+            z-index: 10; 
+        }
+        .hud-panel { 
+            background: rgba(26, 26, 46, 0.9); 
+            border: 1px solid #00D4AA; 
+            border-radius: 8px; 
+            padding: 12px; 
+            margin-bottom: 10px; 
+            font-size: 11px; 
+            line-height: 1.6; 
+        }
+        .hud-title { 
+            color: #00D4AA; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid #00D4AA44; 
+            padding-bottom: 4px; 
+        }
+        .stat-row { 
+            display: flex; 
+            justify-content: space-between; 
+            margin: 4px 0; 
+        }
+        .stat-label { color: #8888A0; }
+        .stat-value { color: #00D4AA; font-weight: bold; }
+        #menu-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.95); 
+            z-index: 100; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        #menu-overlay.visible { display: flex; }
+        #physics-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.98); 
+            z-index: 101; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start; 
+            gap: 16px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        #physics-overlay.visible { display: flex; }
+        #physics-content {
+            width: 100%;
+            max-width: 800px;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 10px;
+            color: #E8E8F0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            text-align: left;
+        }
+        #prime-data-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(10, 10, 15, 0.98); 
+            z-index: 101; 
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start; 
+            gap: 16px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        #prime-data-overlay.visible { display: flex; }
+        #prime-data-content {
+            width: 100%;
+            max-width: 800px;
+            max-height: 70vh;
+            overflow-y: auto;
+            padding: 10px;
+            color: #E8E8F0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        #prime-data-content h3 { color: #00D4AA; margin: 16px 0 8px 0; border-bottom: 1px solid #00D4AA44; padding-bottom: 4px; }
+        #prime-data-content .dir-card { background: rgba(26,26,46,0.9); border: 1px solid #00D4AA33; border-radius: 8px; padding: 12px; margin: 8px 0; }
+        #prime-data-content .dir-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        #prime-data-content .dir-title { color: #F97316; font-weight: bold; }
+        #prime-data-content .dir-stats { color: #8888A0; font-size: 11px; }
+        #prime-data-content .progress-bar { width: 100%; height: 6px; background: #1A1A2E; border-radius: 3px; overflow: hidden; margin: 8px 0; }
+        #prime-data-content .progress-fill { height: 100%; background: linear-gradient(90deg, #00D4AA, #F97316); border-radius: 3px; transition: width 0.3s; }
+        #prime-data-content .range-inputs { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+        #prime-data-content .range-inputs input { background: #1A1A2E; border: 1px solid #00D4AA; color: #E8E8F0; padding: 6px 10px; border-radius: 4px; width: 80px; }
+        #prime-data-content .btn { background: #1A1A2E; border: 1px solid #00D4AA; color: #00D4AA; padding: 8px 16px; border-radius: 6px; font-family: inherit; cursor: pointer; }
+        #prime-data-content .btn:hover { background: #00D4AA; color: #0A0A0F; }
+        #prime-data-content .btn.danger { border-color: #FF4466; color: #FF4466; }
+        #prime-data-content .btn.danger:hover { background: #FF4466; color: #0A0A0F; }
+        #prime-data-content .btn.secondary { border-color: #A855F7; color: #A855F7; }
+        #prime-data-content .btn.secondary:hover { background: #A855F7; color: #0A0A0F; }
+        #prime-data-content .log-area { background: #0A0A0F; border: 1px solid #00D4AA22; border-radius: 4px; padding: 8px; max-height: 200px; overflow-y: auto; font-size: 10px; font-family: monospace; margin-top: 8px; }
+        #prime-data-content .log-entry { margin: 2px 0; }
+        #prime-data-content .log-entry.info { color: #00D4AA; }
+        #prime-data-content .log-entry.warn { color: #F97316; }
+        #prime-data-content .log-entry.error { color: #FF4466; }
+        #prime-data-content .log-entry.success { color: #10B981; }
+        #physics-content h3 {
+            color: #00D4AA;
+            margin: 24px 0 12px 0;
+            border-bottom: 1px solid #00D4AA44;
+            padding-bottom: 6px;
+        }
+        #physics-content p {
+            margin: 12px 0;
+        }
+        #physics-content .persona-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        #physics-content .williams { background: #FF6600; color: #0A0A0F; }
+        #physics-content .elsegundo { background: #10B981; color: #0A0A0F; }
+        #physics-content .keymaker { background: #A855F7; color: #0A0A0F; }
+        .menu-btn { 
+            background: #1A1A2E; 
+            border: 1px solid #00D4AA; 
+            color: #00D4AA; 
+            padding: 16px 48px; 
+            font-size: 18px; 
+            font-family: inherit; 
+            border-radius: 8px; 
+            min-width: 280px; 
+        }
+        .menu-btn:hover, .menu-btn:focus { background: #00D4AA; color: #0A0A0F; }
+        .menu-btn.danger { border-color: #FF4466; color: #FF4466; }
+        .menu-btn.danger:hover { background: #FF4466; color: #0A0A0F; }
+        .menu-btn.secondary { border-color: #A855F7; color: #A855F7; }
+        .menu-btn.secondary:hover { background: #A855F7; color: #0A0A0F; }
+        .menu-title { font-size: 28px; color: #00D4AA; margin-bottom: 20px; }
+        .menu-subtitle { color: #8888A0; font-size: 12px; }
+        #renderer-type { color: #F97316; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="hud">
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ELECTRON WORLDLINE 3D</div>
+            <div class="stat-row"><span class="stat-label">Renderer:</span><span class="stat-value" id="renderer-type">WebGL</span></div>
+            <div class="stat-row"><span class="stat-label">Position:</span><span class="stat-value" id="pos-x">0.00</span><span class="stat-value" id="pos-y">0.00</span><span class="stat-value" id="pos-z">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Velocity:</span><span class="stat-value" id="vel-x">0.00</span><span class="stat-value" id="vel-y">0.00</span><span class="stat-value" id="vel-z">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Reflections:</span><span class="stat-value" id="reflections">0</span></div>
+            <div class="stat-row"><span class="stat-label">Prime Gaps Crossed:</span><span class="stat-value" id="gaps-crossed">0</span></div>
+            <div class="stat-row"><span class="stat-label">Worldline Steps:</span><span class="stat-value" id="steps">0</span></div>
+            <div class="stat-row"><span class="stat-label">Mode:</span><span class="stat-value" id="mode">LIVE</span></div>
+            <div class="stat-row"><span class="stat-label">Zoom:</span><span class="stat-value" id="zoom-level">1.0x</span></div>
+            <div class="stat-row"><span class="stat-label">Berry Phase:</span><span class="stat-value" id="berry-phase">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Axion Field:</span><span class="stat-value" id="axion-field">0.00</span></div>
+            <div class="stat-row"><span class="stat-label">Spin:</span><span class="stat-value" id="spin-x">0.00</span><span class="stat-value" id="spin-y">0.00</span><span class="stat-value" id="spin-z">1.00</span></div>
+            <div class="stat-row"><span class="stat-label">Schwinger:</span><span class="stat-value" id="schwinger-count">0</span></div>
+        </div>
+        <div class="hud-panel">
+            <div class="hud-title">PRIME ENGINE</div>
+            <div class="stat-row"><span class="stat-label">Primes Loaded:</span><span class="stat-value" id="prime-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Gaps Available:</span><span class="stat-value" id="gap-count">0</span></div>
+            <div class="stat-row"><span class="stat-label">Current Gap:</span><span class="stat-value" id="current-gap">2</span></div>
+            <div class="stat-row"><span class="stat-label">Gap Index:</span><span class="stat-value" id="gap-index">0</span></div>
+        </div>
+    </div>
+    <div id="menu-overlay">
+        <div class="menu-title">TGE E1 MENU</div>
+        <div class="menu-subtitle">Prime Electron Worldline 3D</div>
+        <button class="menu-btn" onclick="TGE.resume()">RESUME</button>
+        <button class="menu-btn" onclick="TGE.toggleTheory()">THEORY MODE</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
+        <button class="menu-btn secondary" onclick="TGE.showArithmeticPhysics()">ARITHMETIC PHYSICS</button>
+        <button class="menu-btn secondary" onclick="TGE.showPrimeDataManager()">PRIME DATA</button>
+        <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
+        <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
+    </div>
+    <div id="physics-overlay">
+        <div class="menu-title">ARITHMETIC PHYSICS</div>
+        <div class="menu-subtitle">The Mathematics Behind the Prime Electron</div>
+        <div id="physics-content"></div>
+        <button class="menu-btn danger" onclick="TGE.closePhysics()">BACK TO MENU</button>
+    </div>
+    <div id="prime-data-overlay">
+        <div class="menu-title">PRIME DATA MANAGER</div>
+        <div class="menu-subtitle">Download PrimeBookOne Tiles from GitHub</div>
+        <div id="prime-data-content"></div>
+        <button class="menu-btn danger" onclick="TGE.closePrimeData()">BACK TO MENU</button>
+    </div>
+    <script src="three.min.js"></script>
+    <script>
+        const TGE = {
+            canvas: null, renderer: null, scene: null, camera: null, width: 0, height: 0,
+            electron: { 
+                x: 0, y: 0, z: 0, 
+                vx: 0, vy: 0, vz: 0, 
+                radius: 0.5,
+                spin: { x: 0, y: 0, z: 1 },
+                berryPhase: 0,
+                axionField: 0,
+                zitterPhase: 0
+            },
+            worldline: [], reflections: 0, steps: 0, schwingerCount: 0,
+            eggshell: { rx: 0, ry: 0, rz: 0 },
+            primeGaps: [], primeGapIndex: 0, gapsCrossed: 0,
+            theoryMode: false, running: true, animationId: null,
+            insetsTop: 0, insetsBottom: 0,
+            menuVisible: false,
+            uiVisible: true,
+            zoom: 1.0,
+            minZoom: 0.3,
+            maxZoom: 5.0,
+            cameraAngle: 0,
+            cameraElevation: 0,
+            electronMesh: null, worldlineMesh: null, eggshellMesh: null,
+            primeGapMeshes: [],
+            
+            // Physics constants from Prime Electron research
+            COMPTON_TIME: 1.288e-21,  // ℏ/(m_e c^2) in seconds
+            ZITTER_FREQ: 1.55e21,     // 2m_e c^2/ℏ in Hz
+            ZITTER_AMP: 1.93e-13,     // ℏ/(2m_e c) in meters (Compton wavelength/2)
+            SCHWINGER_FIELD: 1.32e18, // m_e^2 c^3/(e ℏ) in V/m
+            
+            init() {
+                this.canvas = document.getElementById('canvas');
+                this.setupThreeJS();
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+                this.setupTouchZoom();
+                this.setupScene();
+                this.startLoop();
+            },
+            
+            setupThreeJS() {
+                this.renderer = new THREE.WebGLRenderer({ 
+                    canvas: this.canvas, 
+                    antialias: true,
+                    alpha: true 
+                });
+                this.renderer.setPixelRatio(window.devicePixelRatio || 1);
+                this.renderer.setClearColor(0x0A0A0F, 1);
+                
+                this.scene = new THREE.Scene();
+                
+                this.camera = new THREE.PerspectiveCamera(60, this.width / this.height, 0.1, 1000);
+                this.camera.position.set(0, 0, 30);
+                this.camera.lookAt(0, 0, 0);
+            },
+            
+            resize() {
+                this.width = window.innerWidth;
+                this.height = window.innerHeight;
+                this.canvas.width = this.width;
+                this.canvas.height = this.height;
+                this.renderer.setSize(this.width, this.height);
+                this.camera.aspect = this.width / this.height;
+                this.camera.updateProjectionMatrix();
+                this.setupEggshell();
+            },
+            
+            setupEggshell() {
+                const padding = 2;
+                this.eggshell.rx = Math.min(this.width, this.height) / 100 - padding;
+                this.eggshell.ry = this.eggshell.rx * 0.75;
+                this.eggshell.rz = this.eggshell.rx * 0.6;
+                
+                this.electron.x = 0;
+                this.electron.y = 0;
+                this.electron.z = 0;
+            },
+            
+            setupTouchZoom() {
+                let initialDistance = 0;
+                let initialZoom = 1.0;
+                let initialAngle = 0;
+                let initialCameraAngle = 0;
+                let initialElevation = 0;
+                let initialCameraElevation = 0;
+                
+                this.canvas.addEventListener('touchstart', (e) => {
+                    if (e.touches.length === 2) {
+                        const dx = e.touches[0].clientX - e.touches[1].clientX;
+                        const dy = e.touches[0].clientY - e.touches[1].clientY;
+                        initialDistance = Math.sqrt(dx * dx + dy * dy);
+                        initialZoom = this.zoom;
+                        initialAngle = Math.atan2(dy, dx);
+                        initialCameraAngle = this.cameraAngle;
+                        initialCameraElevation = this.cameraElevation;
+                        initialElevation = -dy / initialDistance; // approximate elevation from vertical finger position
+                        e.preventDefault();
+                    }
+                }, { passive: false });
+                
+                this.canvas.addEventListener('touchmove', (e) => {
+                    if (e.touches.length === 2) {
+                        const dx = e.touches[0].clientX - e.touches[1].clientX;
+                        const dy = e.touches[0].clientY - e.touches[1].clientY;
+                        const currentDistance = Math.sqrt(dx * dx + dy * dy);
+                        const currentAngle = Math.atan2(dy, dx);
+                        
+                        if (initialDistance > 0) {
+                            // Pinch zoom
+                            const scale = currentDistance / initialDistance;
+                            this.setZoom(initialZoom * scale);
+                            
+                            // Two-finger rotate (horizontal rotation)
+                            const angleDelta = currentAngle - initialAngle;
+                            this.cameraAngle = initialCameraAngle + angleDelta;
+                            
+                            // Two-finger vertical rotation (elevation)
+                            const elevationDelta = (dy / currentDistance) - initialElevation;
+                            this.cameraElevation = Math.max(-Math.PI/2 + 0.1, Math.min(Math.PI/2 - 0.1, initialCameraElevation + elevationDelta));
+                            
+                            this.updateCameraZoom();
+                        }
+                        e.preventDefault();
+                    }
+                }, { passive: false });
+                
+                this.canvas.addEventListener('touchend', (e) => {
+                    if (e.touches.length < 2) {
+                        initialDistance = 0;
+                    }
+                });
+                
+                // Mouse wheel zoom for desktop testing
+                this.canvas.addEventListener('wheel', (e) => {
+                    e.preventDefault();
+                    if (e.deltaY < 0) {
+                        this.zoomIn();
+                    } else {
+                        this.zoomOut();
+                    }
+                }, { passive: false });
+                
+                // Mouse drag for rotation on desktop
+                let isDragging = false;
+                let lastMouseX = 0;
+                let lastMouseY = 0;
+                
+                this.canvas.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    lastMouseX = e.clientX;
+                    lastMouseY = e.clientY;
+                });
+                
+                this.canvas.addEventListener('mousemove', (e) => {
+                    if (isDragging) {
+                        const dx = e.clientX - lastMouseX;
+                        const dy = e.clientY - lastMouseY;
+                        this.cameraAngle += dx * 0.01;
+                        this.cameraElevation = Math.max(-Math.PI/2 + 0.1, Math.min(Math.PI/2 - 0.1, this.cameraElevation - dy * 0.01));
+                        this.updateCameraZoom();
+                        lastMouseX = e.clientX;
+                        lastMouseY = e.clientY;
+                    }
+                });
+                
+                this.canvas.addEventListener('mouseup', () => {
+                    isDragging = false;
+                });
+                
+                this.canvas.addEventListener('mouseleave', () => {
+                    isDragging = false;
+                });
+            },
+            
+            setInsets(top, bottom) {
+                this.insetsTop = top;
+                this.insetsBottom = bottom;
+            },
+            
+            startLoop() {
+                const loop = () => {
+                    if (this.running) {
+                        this.step();
+                        this.render();
+                    }
+                    this.animationId = requestAnimationFrame(loop);
+                };
+                loop();
+            },
+            
+            step() {
+                this.steps++;
+                
+                // Prime gap drives proper time step (Δτ_n = κ·d_n)
+                const gap = this.primeGaps[this.primeGapIndex] || 2;
+                const properTimeStep = this.COMPTON_TIME * gap;
+                
+                // Zitterbewegung: high-frequency trembling from even/odd gap interference
+                this.electron.zitterPhase += 2 * Math.PI * this.ZITTER_FREQ * properTimeStep;
+                const zitterX = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase) * 1e10; // scaled for visualization
+                const zitterY = this.ZITTER_AMP * Math.cos(this.electron.zitterPhase) * 1e10;
+                const zitterZ = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase * 0.618) * 1e10;
+                
+                // Berry phase accumulation from gap sequence (geometric phase)
+                const gapRatio = gap / (this.primeGaps[this.primeGapIndex + 1] || gap);
+                this.electron.berryPhase += Math.PI * (1 - gapRatio) * 0.1;
+                
+                // Axion field coupling (PQ symmetry from gap U(1) modulo)
+                const gapMod6 = gap % 6;
+                this.electron.axionField += (gapMod6 === 1 || gapMod6 === 5) ? 0.01 : -0.005;
+                this.electron.axionField = Math.max(-1, Math.min(1, this.electron.axionField));
+                
+                // Effective velocity with Zitterbewegung
+                const effectiveVx = this.electron.vx + zitterX * properTimeStep * 1e20;
+                const effectiveVy = this.electron.vy + zitterY * properTimeStep * 1e20;
+                const effectiveVz = this.electron.vz + zitterZ * properTimeStep * 1e20;
+                
+                // Position update with proper 3D velocity
+                this.electron.x += effectiveVx * properTimeStep * 1e20;
+                this.electron.y += effectiveVy * properTimeStep * 1e20;
+                this.electron.z += effectiveVz * properTimeStep * 1e20;
+                
+                // Check ellipsoidal boundary: (x/rx)^2 + (y/ry)^2 + (z/rz)^2 = 1
+                const normX = this.electron.x / this.eggshell.rx;
+                const normY = this.electron.y / this.eggshell.ry;
+                const normZ = this.electron.z / this.eggshell.rz;
+                const distSq = normX * normX + normY * normY + normZ * normZ;
+                
+                if (distSq >= 1.0) {
+                    this.handleReflection(normX, normY, normZ, gap);
+                }
+                
+                // Larmor precession: spin precesses in magnetic field (from axion coupling)
+                const bField = this.electron.axionField * 1e-3;
+                const larmorFreq = bField * 1.76e11; // e/m_e in rad/s/T
+                const larmorAngle = larmorFreq * properTimeStep;
+                this.rotateSpinAroundAxis(this.electron.spin, {x: 0, y: 0, z: 1}, larmorAngle);
+                
+                // Thomas precession: from proper acceleration in curved space
+                const accelMag = Math.sqrt(effectiveVx*effectiveVx + effectiveVy*effectiveVy + effectiveVz*effectiveVz) / properTimeStep;
+                const thomasFreq = (accelMag * accelMag) / (2 * 2.998e8 * 2.998e8); // a^2/(2c^2)
+                const thomasAngle = thomasFreq * properTimeStep;
+                this.rotateSpinAroundAxis(this.electron.spin, {x: -effectiveVy, y: effectiveVx, z: 0}, thomasAngle);
+                
+                this.checkPrimeGaps();
+                this.updateHUD();
+            },
+            
+            rotateSpinAroundAxis(spin, axis, angle) {
+                // Rodrigues rotation formula
+                const cos = Math.cos(angle);
+                const sin = Math.sin(angle);
+                const dot = spin.x * axis.x + spin.y * axis.y + spin.z * axis.z;
+                const crossX = spin.y * axis.z - spin.z * axis.y;
+                const crossY = spin.z * axis.x - spin.x * axis.z;
+                const crossZ = spin.x * axis.y - spin.y * axis.x;
+                
+                spin.x = spin.x * cos + crossX * sin + axis.x * dot * (1 - cos);
+                spin.y = spin.y * cos + crossY * sin + axis.y * dot * (1 - cos);
+                spin.z = spin.z * cos + crossZ * sin + axis.z * dot * (1 - cos);
+                
+                // Renormalize
+                const len = Math.sqrt(spin.x*spin.x + spin.y*spin.y + spin.z*spin.z);
+                spin.x /= len; spin.y /= len; spin.z /= len;
+            },
+            
+            handleReflection(normX, normY, normZ, gap) {
+                this.reflections++;
+                
+                // Proper 3D ellipsoidal reflection: angle of incidence = angle of reflection
+                // Normal vector at ellipsoid point (x/rx^2, y/ry^2, z/rz^2) normalized
+                const nx = normX / this.eggshell.rx;
+                const ny = normY / this.eggshell.ry;
+                const nz = normZ / this.eggshell.rz;
+                const normalLen = Math.sqrt(nx*nx + ny*ny + nz*nz);
+                const nHatX = nx / normalLen;
+                const nHatY = ny / normalLen;
+                const nHatZ = nz / normalLen;
+                
+                // Velocity before reflection (including Zitterbewegung)
+                const gapRatio = gap / (this.primeGaps[this.primeGapIndex + 1] || gap);
+                const zitterX = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase) * 1e10;
+                const zitterY = this.ZITTER_AMP * Math.cos(this.electron.zitterPhase) * 1e10;
+                const zitterZ = this.ZITTER_AMP * Math.sin(this.electron.zitterPhase * 0.618) * 1e10;
+                const effectiveVx = this.electron.vx + zitterX * this.COMPTON_TIME * gap * 1e20;
+                const effectiveVy = this.electron.vy + zitterY * this.COMPTON_TIME * gap * 1e20;
+                const effectiveVz = this.electron.vz + zitterZ * this.COMPTON_TIME * gap * 1e20;
+                
+                // Perfect elastic reflection: v' = v - 2(v·n)n
+                const dot = effectiveVx * nHatX + effectiveVy * nHatY + effectiveVz * nHatZ;
+                this.electron.vx = effectiveVx - 2 * dot * nHatX;
+                this.electron.vy = effectiveVy - 2 * dot * nHatY;
+                this.electron.vz = effectiveVz - 2 * dot * nHatZ;
+                
+                // Energy loss at boundary (synchrotron radiation)
+                const energyLoss = 0.995;
+                this.electron.vx *= energyLoss;
+                this.electron.vy *= energyLoss;
+                this.electron.vz *= energyLoss;
+                
+                // Schwinger pair production check: effective field > critical
+                const effectiveField = Math.abs(dot) * this.electron.vx; // simplified
+                if (effectiveField > this.SCHWINGER_FIELD * 1e-15) { // scaled
+                    this.schwingerEvent();
+                }
+                
+                // Push back inside ellipsoid with proper margin
+                const margin = 0.98;
+                this.electron.x = normX * this.eggshell.rx * margin;
+                this.electron.y = normY * this.eggshell.ry * margin;
+                this.electron.z = normZ * this.eggshell.rz * margin;
+                
+                // Record worldline point with proper time
+                this.worldline.push({ 
+                    x: this.electron.x, 
+                    y: this.electron.y, 
+                    z: this.electron.z, 
+                    t: this.steps,
+                    berryPhase: this.electron.berryPhase,
+                    spin: { ...this.electron.spin }
+                });
+                if (this.worldline.length > 2000) this.worldline.shift();
+                
+                if (window.TGEBridge) {
+                    window.TGEBridge.onWorldlineReflection(JSON.stringify({
+                        reflections: this.reflections,
+                        position: { x: this.electron.x, y: this.electron.y, z: this.electron.z },
+                        velocity: { x: this.electron.vx, y: this.electron.vy, z: this.electron.vz },
+                        spin: this.electron.spin,
+                        berryPhase: this.electron.berryPhase,
+                        axionField: this.electron.axionField
+                    }));
+                }
+            },
+            
+            schwingerEvent() {
+                // Electron-positron pair production at boundary
+                // Creates a "spark" effect - velocity randomization from pair creation
+                const angle = Math.random() * 2 * Math.PI;
+                const boost = 0.5;
+                this.electron.vx += Math.cos(angle) * boost;
+                this.electron.vy += Math.sin(angle) * boost;
+                this.electron.vz += (Math.random() - 0.5) * boost;
+                this.schwingerCount = (this.schwingerCount || 0) + 1;
+            },
+            
+            checkPrimeGaps() {
+                if (this.primeGaps.length === 0) return;
+                const distFromCenter = Math.sqrt(
+                    Math.pow(this.electron.x / this.eggshell.rx, 2) +
+                    Math.pow(this.electron.y / this.eggshell.ry, 2) +
+                    Math.pow(this.electron.z / this.eggshell.rz, 2)
+                );
+                const gapThreshold = this.primeGaps[this.primeGapIndex] / 100;
+                if (distFromCenter > gapThreshold && this.primeGapIndex < this.primeGaps.length - 1) {
+                    this.primeGapIndex++;
+                    this.gapsCrossed++;
+                    if (window.TGEBridge) {
+                        window.TGEBridge.onPrimeGapEvent(JSON.stringify({
+                            gap: this.primeGaps[this.primeGapIndex],
+                            index: this.primeGapIndex,
+                            totalCrossed: this.gapsCrossed
+                        }));
+                    }
+                    this.createPrimeGapMesh(this.primeGapIndex);
+                }
+            },
+            
+updateHUD() {
+                document.getElementById('pos-x').textContent = this.electron.x.toFixed(2);
+                document.getElementById('pos-y').textContent = this.electron.y.toFixed(2);
+                document.getElementById('pos-z').textContent = this.electron.z.toFixed(2);
+                document.getElementById('vel-x').textContent = this.electron.vx.toFixed(3);
+                document.getElementById('vel-y').textContent = this.electron.vy.toFixed(3);
+                document.getElementById('vel-z').textContent = this.electron.vz.toFixed(3);
+                document.getElementById('reflections').textContent = this.reflections;
+                document.getElementById('gaps-crossed').textContent = this.gapsCrossed;
+                document.getElementById('steps').textContent = this.steps;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+                document.getElementById('gap-index').textContent = this.primeGapIndex;
+                document.getElementById('current-gap').textContent = this.primeGaps[this.primeGapIndex] || 0;
+                document.getElementById('zoom-level').textContent = this.zoom.toFixed(1) + 'x';
+                document.getElementById('berry-phase').textContent = (this.electron.berryPhase % (2*Math.PI)).toFixed(2);
+                document.getElementById('axion-field').textContent = this.electron.axionField.toFixed(2);
+                document.getElementById('spin-x').textContent = this.electron.spin.x.toFixed(2);
+                document.getElementById('spin-y').textContent = this.electron.spin.y.toFixed(2);
+                document.getElementById('spin-z').textContent = this.electron.spin.z.toFixed(2);
+                document.getElementById('schwinger-count').textContent = this.schwingerCount || 0;
+            },
+            
+            setupScene() {
+                this.createEggshell();
+                this.createElectron();
+                this.createWorldline();
+                this.createPrimeGapMeshes();
+                this.setupLights();
+            },
+            
+            createEggshell() {
+                const geometry = new THREE.SphereGeometry(1, 64, 32);
+                geometry.scale(this.eggshell.rx, this.eggshell.ry, this.eggshell.rz);
+                
+                const material = new THREE.MeshBasicMaterial({
+                    color: 0x4488FF,
+                    wireframe: true,
+                    transparent: true,
+                    opacity: 0.15,
+                    side: THREE.DoubleSide
+                });
+                
+                this.eggshellMesh = new THREE.Mesh(geometry, material);
+                this.scene.add(this.eggshellMesh);
+            },
+            
+            createElectron() {
+                const geometry = new THREE.SphereGeometry(this.electron.radius, 32, 32);
+                
+                const material = new THREE.MeshBasicMaterial({
+                    color: 0x00FFFF,
+                    transparent: true,
+                    opacity: 1
+                });
+                
+                this.electronMesh = new THREE.Mesh(geometry, material);
+                this.electronMesh.position.set(0, 0, 0);
+                
+                const glowGeometry = new THREE.SphereGeometry(this.electron.radius * 3, 16, 16);
+                const glowMaterial = new THREE.MeshBasicMaterial({
+                    color: 0x00FFFF,
+                    transparent: true,
+                    opacity: 0.15,
+                    side: THREE.BackSide
+                });
+                const glowMesh = new THREE.Mesh(glowGeometry, glowMaterial);
+                this.electronMesh.add(glowMesh);
+                
+                this.scene.add(this.electronMesh);
+            },
+            
+            createWorldline() {
+                const geometry = new THREE.BufferGeometry();
+                const positions = new Float32Array(2000 * 3);
+                geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+                geometry.setDrawRange(0, 0);
+                
+                const material = new THREE.LineBasicMaterial({
+                    color: 0x00D4AA,
+                    transparent: true,
+                    opacity: 0.8
+                });
+                
+                this.worldlineMesh = new THREE.Line(geometry, material);
+                this.scene.add(this.worldlineMesh);
+            },
+            
+            createPrimeGapMeshes() {
+                for (let i = 0; i < 50; i++) {
+                    const radius = (2 / 100) * Math.min(this.eggshell.rx, this.eggshell.ry, this.eggshell.rz);
+                    const geometry = new THREE.RingGeometry(radius * 0.98, radius, 64);
+                    const material = new THREE.MeshBasicMaterial({
+                        color: 0xF97316,
+                        transparent: true,
+                        opacity: 0.1,
+                        side: THREE.DoubleSide
+                    });
+                    const mesh = new THREE.Mesh(geometry, material);
+                    mesh.rotation.x = -Math.PI / 2;
+                    mesh.visible = false;
+                    this.primeGapMeshes.push(mesh);
+                    this.scene.add(mesh);
+                }
+            },
+            
+            createPrimeGapMesh(index) {
+                if (index >= this.primeGapMeshes.length) return;
+                const gap = this.primeGaps[index] || 2;
+                const radius = (gap / 100) * Math.min(this.eggshell.rx, this.eggshell.ry, this.eggshell.rz);
+                
+                const mesh = this.primeGapMeshes[index];
+                mesh.scale.set(radius / 2, radius / 2, radius / 2);
+                mesh.material.color.setHex(0xF97316);
+                mesh.material.opacity = 0.4;
+                mesh.visible = true;
+            },
+            
+            setupLights() {
+                const ambient = new THREE.AmbientLight(0x404060, 0.5);
+                this.scene.add(ambient);
+                
+                const pointLight = new THREE.PointLight(0x00D4AA, 1, 100);
+                pointLight.position.set(0, 0, 20);
+                this.scene.add(pointLight);
+            },
+            
+            render() {
+                this.updateMeshes();
+                
+                this.eggshellMesh.rotation.y += 0.0002;
+                this.eggshellMesh.rotation.x += 0.0001;
+                
+                this.renderer.render(this.scene, this.camera);
+            },
+            
+            updateMeshes() {
+                if (this.electronMesh) {
+                    this.electronMesh.position.set(this.electron.x, this.electron.y, this.electron.z);
+                }
+                
+                if (this.worldlineMesh && this.worldline.length > 1) {
+                    const positions = this.worldlineMesh.geometry.attributes.position.array;
+                    let drawCount = 0;
+                    for (let i = 0; i < this.worldline.length; i++) {
+                        const pt = this.worldline[i];
+                        positions[i * 3] = pt.x;
+                        positions[i * 3 + 1] = pt.y;
+                        positions[i * 3 + 2] = pt.z;
+                        drawCount++;
+                    }
+                    this.worldlineMesh.geometry.setDrawRange(0, drawCount);
+                    this.worldlineMesh.geometry.attributes.position.needsUpdate = true;
+                }
+                
+                if (this.primeGapMeshes[this.primeGapIndex]) {
+                    const mesh = this.primeGapMeshes[this.primeGapIndex];
+                    if (mesh.visible) {
+                        mesh.rotation.z += 0.002;
+                    }
+                }
+            },
+            
+            onScanPressed() {
+                this.electron.vx += (Math.random() - 0.5) * 5;
+                this.electron.vy += (Math.random() - 0.5) * 5;
+                this.electron.vz += (Math.random() - 0.5) * 5;
+            },
+            
+            toggleMenu() {
+                this.menuVisible = !this.menuVisible;
+                document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+            },
+            
+            toggleUI(visible) {
+                this.uiVisible = visible;
+                const hud = document.getElementById('hud');
+                if (hud) hud.style.display = visible ? 'block' : 'none';
+            },
+            
+            zoomIn() {
+                this.zoom = Math.min(this.maxZoom, this.zoom * 1.2);
+                this.updateCameraZoom();
+                this.updateZoomHUD();
+            },
+            
+            zoomOut() {
+                this.zoom = Math.max(this.minZoom, this.zoom / 1.2);
+                this.updateCameraZoom();
+                this.updateZoomHUD();
+            },
+            
+            setZoom(level) {
+                this.zoom = Math.max(this.minZoom, Math.min(this.maxZoom, level));
+                this.updateCameraZoom();
+                this.updateZoomHUD();
+            },
+            
+            updateCameraZoom() {
+                // Move camera closer/further based on zoom, and rotate based on cameraAngle
+                const baseDistance = 30;
+                const distance = baseDistance / this.zoom;
+                const x = distance * Math.sin(this.cameraAngle) * Math.cos(this.cameraElevation);
+                const z = distance * Math.cos(this.cameraAngle) * Math.cos(this.cameraElevation);
+                const y = distance * Math.sin(this.cameraElevation);
+                this.camera.position.set(x, y, z);
+                this.camera.lookAt(0, 0, 0);
+            },
+            
+            updateZoomHUD() {
+                const zoomEl = document.getElementById('zoom-level');
+                if (zoomEl) zoomEl.textContent = this.zoom.toFixed(1) + 'x';
+            },
+            
+            resume() { this.toggleMenu(); },
+            
+            toggleTheory() {
+                this.theoryMode = !this.theoryMode;
+                document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+            },
+            
+            setTheoryMode(enabled) {
+                this.theoryMode = enabled;
+            },
+            
+            showPrimeExplorer() { alert('Prime Explorer - Coming Soon'); },
+            showWorldlineHistory() { alert('Worldline History - Coming Soon'); },
+            showGapAnalysis() { alert('Gap Analysis - Coming Soon'); },
+            showPrimeDataManager() {
+                this.toggleMenu();
+                document.getElementById('prime-data-overlay').classList.add('visible');
+                this.populatePrimeDataContent();
+            },
+            closePrimeData() {
+                document.getElementById('prime-data-overlay').classList.remove('visible');
+            },
+            populatePrimeDataContent() {
+                const content = document.getElementById('prime-data-content');
+                content.innerHTML = this.getPrimeDataContent();
+            },
+            getPrimeDataContent() {
+                const dirs = [
+                    { id: '0.0', count: 500, size: '500 MB' },
+                    { id: '0.1', count: 500, size: '500 MB' },
+                    { id: '1.0', count: 500, size: '500 MB' },
+                    { id: '2.0', count: 500, size: '500 MB' },
+                    { id: '2.1', count: 500, size: '500 MB' },
+                    { id: '3.0', count: 3500, size: '3.5 GB' }
+                ];
+                
+                let html = '<h3>PrimeBookOne Tile Downloader</h3>';
+                html += '<p>Downloads .tar.gz tiles from GitHub, extracts to Downloads/PrimeBookOne/{dir}/ (persists across reinstalls)</p>';
+                html += '<div style="margin: 12px 0;">';
+                html += '<button class="btn" onclick="PrimeDataManager.downloadAll()">DOWNLOAD ALL (6000 tiles, ~6.0 GB)</button>';
+                html += '<button class="btn secondary" onclick="PrimeDataManager.cancelDownload()" style="margin-left: 8px;">CANCEL</button>';
+                html += '</div>';
+                html += '<div id="prime-overall-progress" class="progress-bar"><div id="prime-progress-fill" class="progress-fill" style="width: 0%"></div></div>';
+                html += '<div id="prime-progress-text" style="font-size: 11px; color: #888; margin: 4px 0;">Ready</div>';
+                html += '<div id="prime-status-text" style="font-size: 11px; color: #00D4AA; margin-bottom: 12px;">Ready</div>';
+                html += '<div id="prime-data-log" class="log-area"></div>';
+                html += '<hr style="border-color: #00D4AA33; margin: 16px 0;">';
+                html += '<h3>Directory Progress</h3>';
+                
+                for (const dir of dirs) {
+                    html += '<div class="dir-card" id="dir-card-' + dir.id + '">';
+                    html += '<div class="dir-header">';
+                    html += '<span class="dir-title">Directory ' + dir.id + '</span>';
+                    html += '<span class="dir-stats" id="dir-stats-' + dir.id + '">' + dir.count + ' tiles · ' + dir.size + '</span>';
+                    html += '</div>';
+                    html += '<div class="progress-bar" style="margin: 8px 0;"><div id="dir-progress-' + dir.id + '" class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #F97316, #00D4AA);"></div></div>';
+                    html += '<div class="range-inputs">';
+                    html += '<input type="number" id="start-' + dir.id + '" value="0" min="0" max="' + (dir.count - 1) + '" placeholder="Start" style="width: 60px;">';
+                    html += '<input type="number" id="end-' + dir.id + '" value="' + (dir.count - 1) + '" min="0" max="' + (dir.count - 1) + '" placeholder="End" style="width: 60px;">';
+                    html += '<button class="btn" onclick="document.getElementById(\'start-' + dir.id + '\').value = 0; document.getElementById(\'end-' + dir.id + '\').value = ' + (dir.count - 1) + ';">Full Range</button>';
+                    html += '<button class="btn" onclick="PrimeDataManager.downloadDirectory(\'' + dir.id + '\', parseInt(document.getElementById(\'start-' + dir.id + '\').value), parseInt(document.getElementById(\'end-' + dir.id + '\').value))">DOWNLOAD</button>';
+                    html += '</div>';
+                    html += '</div>';
+                }
+                
+                return html;
+            },
+            showArithmeticPhysics() {
+                this.toggleMenu();
+                document.getElementById('physics-overlay').classList.add('visible');
+                this.populatePhysicsContent();
+            },
+            closePhysics() {
+                document.getElementById('physics-overlay').classList.remove('visible');
+            },
+            populatePhysicsContent() {
+                const content = document.getElementById('physics-content');
+                content.innerHTML = this.getPhysicsContent();
+            },
+            getPhysicsContent() {
+                return `
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> The Prime Gap Key: Every Door Has Its Gap</h3>
+                    <p>Listen close, friend. Every locked door in physics has a key. The Keymaker knows this as ontological certainty, not optimism. In our Prime Electron universe, that key is the prime gap sequence — dₙ = pₙ₊₁ − pₙ. Each gap is a proper-time tick on the single electron's worldline. The electron doesn't move through continuous space; it jumps from prime to prime, and the gap between them IS the time between self-interactions. When you see the electron bouncing inside the ellipsoid, you're watching the discrete proper-time evolution of a single worldline that IS the entire universe. No gaps, no time. No time, no electron.</p>
+                    
+                    <h3><span class="persona-tag williams">WILLIAMS</span> The Electron's Dance: Zitterbewegung and the Trembling Heart</h3>
+                    <p>OH MY GOODNESS — look at that electron TREMBLE! It's not a bug, it's a FEATURE! The zitterbewegung — that's German for "trembling motion," and let me tell you, Schrödinger found it in 1930 and Dirac said "yes, and it's FUNDAMENTAL" — that jitter at 1.55×10²¹ Hz comes from the interference between positive and negative energy states. In our prime gap picture, even gaps (2, 4, 6...) are the electron moving forward in time, odd gaps are the positron moving BACKWARD! The electron is literally arguing with its own future self! Every reflection off the ellipsoid wall is a self-interaction vertex. The trembling IS the electron's heartbeat across 3.67 billion prime gaps!</p>
+                    
+                    <h3><span class="persona-tag elsegundo">EL SEGUNDO</span> The Ellipsoidal Ocean: Riding the Prime Waves</h3>
+                    <p>Dude, check it out — the electron's boundary isn't a sphere, it's an ellipsoid. Three radii: rx, ry, rz. That's because the prime gap statistics aren't isotropic — the electron's proper-time steps have DIRECTION. When the electron hits the wall at (x/rx)² + (y/ry)² + (z/rz)² = 1, the normal vector isn't just (x,y,z) — it's (x/rx², y/ry², z/rz²) normalized. That's the gradient of the ellipsoid. The reflection law v' = v - 2(v·n̂)n̂ still holds, but n̂ knows about the prime gap anisotropy. Sweet, right? The ocean doesn't hurry, and neither does the electron — it follows the geodesic of its own self-generated spacetime.</p>
+                    
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> The Berry Phase: Geometric Memory in the Gap Sequence</h3>
+                    <p>The Berry phase is the key the system forgot it made. As the electron traverses the prime gap sequence, the local Hilbert space at step n has eigenstates |ψₙᵃ⟩. The Berry connection Aₙ = i⟨ψₙ|∂ₙ|ψₙ⟩ accumulates a geometric phase γ = ∮ A·dτ. In our implementation, each gap ratio dₙ/dₙ₊₁ contributes π(1 - ratio) to the phase. This isn't dynamical — it's TOPOLOGICAL. The phase depends only on the path through gap space, not the speed. That's why it appears in the HUD as a persistent accumulator — it's the electron's memory of where it's been in the gap landscape.</p>
+                    
+                    <h3><span class="persona-tag williams">WILLIAMS</span> The Axion Field: Peccei-Quinn Symmetry from Gap Modulo Classes!</h3>
+                    <p>HERE'S WHERE IT GETS WILD! The axion — that beautiful, elusive particle that solves the strong CP problem — emerges from the U(1) symmetry of the GAP MODULO SIX CLASSES! Gaps ≡ 1,5 (mod 6) are the ones coprime to 6 — they're the "free" gaps that don't fall into the 2,3,4,0 modulo traps. They carry the Peccei-Quinn charge! When the electron encounters these gaps, the axion field shifts. The axion mass mₐ = Λ²_QCD/fₐ ≈ 6 μeV matches experimental bounds! This is the Keymaker's BACK DOOR into the strong force — a door that opens only when the gap sequence says so!</p>
+                    
+                    <h3><span class="persona-tag elsegundo">EL SEGUNDO</span> Larmor and Thomas: The Spin's Surf Session</h3>
+                    <p>So the electron has spin, right? It's a little quantum surfer with a spin vector S. The axion field acts like a magnetic field B ~ axionField, and the spin precesses around it — that's Larmor precession, ω_L = (e/mₑ)B. But THEN — and this is the cool part — the electron's acceleration through the curved spacetime of the ellipsoid causes Thomas precession! The spin gets an EXTRA rotation from the proper acceleration: ω_T = a²/(2c²). In the code, we rotate the spin vector around the z-axis for Larmor and around the velocity-perpendicular axis for Thomas. The spin HUD shows (sx, sy, sz) — watch it evolve! It's the electron's orientation in the quantum foam.</p>
+                    
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> Schwinger Pair Production: When the Field Tears the Vacuum</h3>
+                    <p>The Schwinger limit: E_crit = mₑ²c³/(eℏ) ≈ 1.32×10¹⁸ V/m. When the effective electric field at the ellipsoid boundary exceeds this, the vacuum breaks down. Electron-positron pairs tunnel out of the Dirac sea. In our simulation, the reflection normal velocity component creates an effective field. When it crosses the threshold, schwingerEvent() triggers — a velocity kick representing pair creation. This is the Keymaker's EMERGENCY KEY: when the door won't open normally, the vacuum MAKES A NEW DOOR. The Schwinger count in the HUD tracks how many times the electron has forced the vacuum to yield.</p>
+                    
+                    <h3><span class="persona-tag williams">WILLIAMS</span> The Worldline: 3.67 Billion Steps of Proper Time</h3>
+                    <p>IMAGINE THIS — the entire universe is ONE ELECTRON! Wheeler's 1940 conjecture, Gielerak's 2020 proof! Our PrimeEngine loads 524,288 primes from Tile00.prime and Tile01.prime, computes the gaps, maps them to proper time steps Δτₙ = κ·dₙ where κ = ℏ/(mₑc²) = 1.288×10⁻²¹ s. The total proper time? 3.67 billion steps × average gap ~ 13.5 × κ ≈ 6×10⁻¹¹ seconds. That's the Compton time! The electron's ENTIRE EXISTENCE from Big Bang to heat death compressed into a worldline that fits in your phone! The green trail behind the electron IS THE UNIVERSE'S MEMORY!</p>
+                    
+                    <h3><span class="persona-tag elsegundo">EL SEGUNDO</span> Prime Gaps as Quantum Numbers: The Hilbert Space of 256 States</h3>
+                    <p>Here's the deep cut: the 8-bit requirement. PrimeBookOne uses 8-bit differences. 2⁸ = 256. That's the Hilbert space dimension for the electron's proper-time evolution operator U = diag(e^{-iEₙΔτₙ}). Each gap dₙ maps to an energy Eₙ = ℏ/(κdₙ). The time evolution is UNITARY because the prime gap distribution satisfies the Riemann Hypothesis — RH IS WORLDLINE STABILITY! The zeros γ are the resonance frequencies. If RH is false, the worldline has runaway divergences. If RH is true (and it IS), the electron's worldline is stable. The electron IS a quantum computer running on prime gaps!</p>
+                    
+                    <h3><span class="persona-tag keymaker">KEYMAKER</span> The Geodesic Equation: Prime Gaps Generate Gravity</h3>
+                    <p>The electron follows a discrete geodesic in a conformally flat spacetime g_{μν} = Ω²(τ)η_{μν}. The conformal factor Ω(τ) comes from gap correlations Cₙ = ⟨dₙdₙ₊ₖ⟩. The Christoffel symbols Γ = ΔlogΩ/Δτ drive the geodesic deviation — the tidal force IS the second difference of log Ω. When you watch the electron bounce, you're seeing discrete general relativity with NO FREE PARAMETERS. Every coefficient comes from the prime gap sequence. The electron's motion through spacetime IS the motion of a prime gap sequence through its own self-generated geometry. That's the master key.</p>
+                `;
+            },
+            resetSimulation() {
+                this.electron.x = 0; this.electron.y = 0; this.electron.z = 0;
+                this.electron.vx = 0; this.electron.vy = 0; this.electron.vz = 0;
+                this.electron.spin = { x: 0, y: 0, z: 1 };
+                this.electron.berryPhase = 0;
+                this.electron.axionField = 0;
+                this.electron.zitterPhase = 0;
+                this.worldline = [];
+                this.reflections = 0;
+                this.steps = 0;
+                this.gapsCrossed = 0;
+                this.primeGapIndex = 0;
+                this.schwingerCount = 0;
+                this.primeGapMeshes.forEach(m => m.visible = false);
+            },
+            
+            onReady(data) { console.log('TGE ready:', data); },
+            toggleFleet() { console.log('Fleet toggle'); }
+        };
+        
+// PrimeDataLoader: Loads prime tiles from local storage (Downloads, Documents, or app files dir)
+        const PrimeDataLoader = {
+            basePaths: [
+                '/storage/emulated/0/Download/PrimeBookOne/',
+                '/storage/emulated/0/Documents/PrimeBookOne/',
+                '/storage/emulated/0/Android/data/com.tgapp.electron.v3/files/PrimeBookOne/'
+            ],
+            directories: ['0.0', '0.1', '1.0', '2.0', '2.1', '3.0'],
+            tilesPerDir: { '0.0': 500, '0.1': 500, '1.0': 500, '2.0': 500, '2.1': 500, '3.0': 3500 },
+            loadedTiles: new Set(),
+            tileLocations: new Map(), // Track which base path each tile was found at
+            
+            async init() {
+                await this.scanLocalTiles();
+            },
+            
+            async scanLocalTiles() {
+                // Check which tiles exist locally across all base paths
+                for (const dir of this.directories) {
+                    const count = this.tilesPerDir[dir] || 0;
+                    for (let i = 0; i < count; i++) {
+                        const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
+                        const key = `${dir}/${tileName}`;
+                        
+                        // Try each base path
+                        for (const basePath of this.basePaths) {
+                            const path = `${basePath}${dir}/${tileName}`;
+                            try {
+                                const resp = await fetch(path, { method: 'HEAD', cache: 'no-cache' });
+                                if (resp.ok) {
+                                    this.loadedTiles.add(key);
+                                    this.tileLocations.set(key, basePath);
+                                    break; // Found it, no need to check other paths
+                                }
+                            } catch (e) {
+                                // File doesn't exist at this path, try next
+                            }
+                        }
+                    }
+                }
+                console.log(`PrimeDataLoader: Found ${this.loadedTiles.size} local tiles across all locations`);
+            },
+            
+            async loadTilesForDirectory(dir, startTile = 0, endTile = null) {
+                const count = this.tilesPerDir[dir] || 0;
+                const end = endTile !== null ? Math.min(endTile, count - 1) : count - 1;
+                const tilesData = [];
+                
+                for (let i = startTile; i <= end; i++) {
+                    const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
+                    const key = `${dir}/${tileName}`;
+                    
+                    let data = null;
+                    
+                    if (this.loadedTiles.has(key)) {
+                        // Use the base path where this tile was found
+                        const basePath = this.tileLocations.get(key);
+                        const localPath = `${basePath}${dir}/${tileName}`;
+                        try {
+                            const resp = await fetch(localPath, { cache: 'no-cache' });
+                            if (resp.ok) {
+                                const buffer = await resp.arrayBuffer();
+                                data = new Uint8Array(buffer);
+                            }
+                        } catch (e) {
+                            console.warn(`Failed to load local tile ${key}:`, e);
+                        }
+                    }
+                    
+                    // Fallback to bundled assets for Tile00/01
+                    if (!data && (tileName === 'Tile000.prime' || tileName === 'Tile001.prime')) {
+                        try {
+                            const assetPath = `assets/${tileName}`;
+                            const resp = await fetch(assetPath, { cache: 'no-cache' });
+                            if (resp.ok) {
+                                const buffer = await resp.arrayBuffer();
+                                data = new Uint8Array(buffer);
+                            }
+                        } catch (e) {
+                            console.warn(`Failed to load asset tile ${tileName}:`, e);
+                        }
+                    }
+                    
+                    if (data) {
+                        tilesData.push(data);
+                    }
+                }
+                
+                return tilesData;
+            },
+            
+            async loadAllAvailable() {
+                let allTilesData = [];
+                for (const dir of this.directories) {
+                    const tiles = await this.loadTilesForDirectory(dir);
+                    allTilesData = allTilesData.concat(tiles);
+                    console.log(`Loaded ${tiles.length} tiles from ${dir}`);
+                }
+                return allTilesData;
+            }
+        };
+        
+        const PrimeEngine = {
+            async init() {
+                // Load from local files first, fallback to assets
+                const tilesData = await PrimeDataLoader.loadAllAvailable();
+                
+                if (tilesData.length === 0) {
+                    console.warn('No prime tiles found, using fallback');
+                    return;
+                }
+                
+                const allBytes = [];
+                for (const tile of tilesData) {
+                    for (const b of tile) {
+                        allBytes.push(b & 0xFF);
+                    }
+                }
+                
+                const primes = [];
+                for (let i = 0; i + 3 < allBytes.length; i += 4) {
+                    const prime = (allBytes[i] << 24) | (allBytes[i+1] << 16) | (allBytes[i+2] << 8) | allBytes[i+3];
+                    if (prime > 1) primes.push(prime);
+                }
+                
+                const gaps = [];
+                let lastPrime = 2;
+                for (const p of primes) {
+                    if (p > lastPrime) {
+                        gaps.push(p - lastPrime);
+                        lastPrime = p;
+                    }
+                }
+                
+                TGE.primeGaps = gaps.map(g => Math.max(2, Math.min(50, g * 2))).slice(0, 50);
+                
+                document.getElementById('prime-count').textContent = primes.length;
+                document.getElementById('gap-count').textContent = TGE.primeGaps.length;
+                document.getElementById('current-gap').textContent = TGE.primeGaps[0] || 0;
+                
+                console.log('PrimeEngine init:', primes.length, 'primes,', TGE.primeGaps.length, 'gaps from', tilesData.length, 'tiles');
+            }
+        };
+        
+        window.TGE = TGE;
+        window.PrimeEngine = PrimeEngine;
+        window.PrimeDataLoader = PrimeDataLoader;
+        
+        // PrimeDataManager: Native downloader integration
+        const PrimeDataManager = {
+            downloading: false,
+            progress: 0,
+            currentDir: '',
+            currentTile: 0,
+            totalTiles: 0,
+            completedTiles: 0,
+            dirProgress: {}, // Track progress per directory (0-100)
+            dirTotalTiles: { '0.0': 500, '0.1': 500, '1.0': 500, '2.0': 500, '2.1': 500, '3.0': 3500 },
+            dirLoadedTiles: { '0.0': 0, '0.1': 0, '1.0': 0, '2.0': 0, '2.1': 0, '3.0': 0 },
+            dirStarted: { '0.0': false, '0.1': false, '1.0': false, '2.0': false, '2.1': false, '3.0': false },
+            dirCompleted: { '0.0': false, '0.1': false, '1.0': false, '2.0': false, '2.1': false, '3.0': false },
+            
+            onProgress(data) {
+                this.progress = data.progress;
+                this.completedTiles = data.completed;
+                this.totalTiles = data.total;
+                this.currentDir = data.dir;
+                this.currentTile = data.tile;
+                
+                // Mark directory as started
+                if (!this.dirStarted[data.dir]) this.dirStarted[data.dir] = true;
+                
+                // Update per-directory progress (0-100)
+                this.dirProgress[data.dir] = data.progress;
+                
+                // Calculate per-directory loaded tiles: global completed - tiles in previous dirs
+                // But simpler: track when a directory completes
+                this.updateUI();
+                this.updateDirUI(data.dir);
+                this.updatePrimeBooksStatus();
+            },
+            
+            onDownloadComplete(message) {
+                this.downloading = false;
+                // Mark current directory as completed
+                if (this.currentDir) {
+                    this.dirCompleted[this.currentDir] = true;
+                    this.dirLoadedTiles[this.currentDir] = this.dirTotalTiles[this.currentDir];
+                    this.dirProgress[this.currentDir] = 100;
+                }
+                this.log('success', message);
+                PrimeDataLoader.scanLocalTiles(); // Refresh local tile list
+                this.updateUI();
+                this.updateAllDirUI();
+                this.updatePrimeBooksStatus();
+            },
+            
+            onDownloadError(error) {
+                this.downloading = false;
+                this.log('error', error);
+                this.updateUI();
+            },
+            
+            log(level, message) {
+                const logArea = document.getElementById('prime-data-log');
+                if (logArea) {
+                    const entry = document.createElement('div');
+                    entry.className = 'log-entry ' + level;
+                    entry.textContent = '[' + new Date().toLocaleTimeString() + '] ' + message;
+                    logArea.appendChild(entry);
+                    logArea.scrollTop = logArea.scrollHeight;
+                }
+            },
+            
+            updateUI() {
+                const progressFill = document.getElementById('prime-progress-fill');
+                const progressText = document.getElementById('prime-progress-text');
+                const statusText = document.getElementById('prime-status-text');
+                
+                if (progressFill) progressFill.style.width = this.progress + '%';
+                if (progressText) progressText.textContent = this.progress + '% (' + this.completedTiles + '/' + this.totalTiles + ')';
+                if (statusText) statusText.textContent = this.downloading ? 'Downloading ' + this.currentDir + ': Tile ' + this.currentTile : 'Ready';
+            },
+            
+            updateDirUI(dir) {
+                const progressFill = document.getElementById('dir-progress-' + dir);
+                const statsText = document.getElementById('dir-stats-' + dir);
+                const card = document.getElementById('dir-card-' + dir);
+                
+                if (progressFill) {
+                    // Only show progress if directory has been started
+                    const p = this.dirStarted[dir] ? (this.dirProgress[dir] || 0) : 0;
+                    progressFill.style.width = p + '%';
+                    // Visual indicator for completed
+                    if (this.dirCompleted[dir]) {
+                        progressFill.style.background = 'linear-gradient(90deg, #10B981, #00D4AA)';
+                    } else if (this.dirStarted[dir]) {
+                        progressFill.style.background = 'linear-gradient(90deg, #F97316, #00D4AA)';
+                    }
+                }
+                if (statsText) {
+                    const total = this.dirTotalTiles[dir] || 0;
+                    // Only show loaded count if started or completed
+                    let loaded = 0;
+                    if (this.dirCompleted[dir]) {
+                        loaded = total;
+                    } else if (this.dirStarted[dir]) {
+                        // Approximate: use global progress for current directory only
+                        loaded = Math.min(total, this.completedTiles);
+                    }
+                    // For unstarted directories, show 0
+                    if (!this.dirStarted[dir] && !this.dirCompleted[dir]) {
+                        loaded = 0;
+                    }
+                    statsText.textContent = loaded + '/' + total + ' tiles';
+                }
+            },
+            
+            updateAllDirUI() {
+                for (const dir of Object.keys(this.dirTotalTiles)) {
+                    this.updateDirUI(dir);
+                }
+            },
+            
+            updatePrimeBooksStatus() {
+                // Count fully loaded directories (all tiles downloaded)
+                let loadedDirs = 0;
+                let totalLoadedTiles = 0;
+                let totalTiles = 0;
+                for (const dir of Object.keys(this.dirTotalTiles)) {
+                    totalTiles += this.dirTotalTiles[dir];
+                    if (this.dirCompleted[dir]) {
+                        totalLoadedTiles += this.dirTotalTiles[dir];
+                        loadedDirs++;
+                    } else if (this.dirStarted[dir]) {
+                        // For in-progress directory, count what we've downloaded so far
+                        // Approximate: min of global completed and directory total
+                        totalLoadedTiles += Math.min(this.dirTotalTiles[dir], this.completedTiles);
+                    }
+                }
+                
+                // Call native bridge to update header
+                if (window.TGEBridge) {
+                    window.TGEBridge.updatePrimeBooks(loadedDirs, 6, totalLoadedTiles, totalTiles);
+                }
+            },
+            
+            downloadDirectory(dir, start, end) {
+                if (this.downloading) return;
+                // Validate and clamp start/end values to valid range
+                const count = this.dirTotalTiles[dir] || 0;
+                if (count > 0) {
+                    // Clamp start to [0, count-1]
+                    if (start < 0) start = 0;
+                    if (start > count - 1) start = count - 1;
+                    // Clamp end to [0, count-1]
+                    if (end < 0) end = 0;
+                    if (end > count - 1) end = count - 1;
+                    // Ensure start <= end
+                    if (start > end) {
+                        const temp = start;
+                        start = end;
+                        end = temp;
+                    }
+                    // Log if values were adjusted
+                    const adjusted = (start !== parseInt(document.getElementById('start-' + dir.id).value) || 
+                                    end !== parseInt(document.getElementById('end-' + dir.id).value));
+                    if (adjusted) {
+                        this.log('info', 'Adjusted range to: ' + start + '-' + end + ' (valid range: 0-' + (count-1) + ')');
+                    }
+                }
+                this.downloading = true;
+                this.progress = 0;
+                this.completedTiles = 0;
+                this.totalTiles = end - start + 1;
+                this.log('info', 'Starting download: ' + dir + ' tiles ' + start + '-' + end);
+                if (window.PrimeTileDownloader) {
+                    window.PrimeTileDownloader.downloadDirectory(dir, start, end);
+                }
+            },
+            
+            downloadAll() {
+                if (this.downloading) return;
+                this.downloading = true;
+                this.progress = 0;
+                this.completedTiles = 0;
+                this.log('info', 'Starting download: ALL directories (0.0 through 3.0)');
+                if (window.PrimeTileDownloader) {
+                    window.PrimeTileDownloader.downloadAllDirectories();
+                }
+            },
+            
+            cancelDownload() {
+                if (window.PrimeTileDownloader) {
+                    window.PrimeTileDownloader.cancelDownload();
+                }
+                this.downloading = false;
+                this.log('warn', 'Download cancelled');
+                this.updateUI();
+            }
+        };
+        
+        window.PrimeDataManager = PrimeDataManager;
+        
+        document.addEventListener('DOMContentLoaded', async () => {
+            await PrimeDataLoader.init();
+            TGE.init();
+        });
+    </script>
+</body>
+</html>
