@@ -225,7 +225,9 @@ public class PrimeTileDownloader {
                 
                 long extractStart = System.currentTimeMillis();
                 // Delete target before extraction to avoid EEXIST
-                new File(targetFile).delete();
+                File targetF = new File(targetFile);
+                SessionLogger.log("DL_EXT_PRE", currentDir, "target=" + targetFile + " exists=" + targetF.exists() + " parent=" + targetF.getParent() + " parent_exists=" + (targetF.getParentFile() != null ? targetF.getParentFile().exists() : "null"));
+                targetF.delete();
                 extractTarGz(tempFile, targetFile);
                 long extractDuration = System.currentTimeMillis() - extractStart;
                 
@@ -269,9 +271,11 @@ public class PrimeTileDownloader {
 void extractTarGz(String gzPath, String targetFile) throws IOException {
         File target = new File(targetFile);
         String tileName = target.getName().replace(".prime", "");
+        SessionLogger.log("DL_EXT_START", currentDir, "gz=" + gzPath + " target=" + targetFile + " target_exists=" + target.exists());
         // Ensure parent directory exists
         if (!target.getParentFile().exists()) {
-            target.getParentFile().mkdirs();
+            boolean mkdirs = target.getParentFile().mkdirs();
+            SessionLogger.log("DL_EXT_MKDIRS", currentDir, "mkdirs=" + mkdirs + " parent=" + target.getParentFile().getAbsolutePath());
         }
         // Delete existing file - check result
         if (target.exists()) {
