@@ -193,6 +193,7 @@ public class PrimeTileDownloader {
         for (int attempt = 1; attempt <= maxRetries && isDownloading; attempt++) {
             try {
                 URL url = new URL(urlString);
+                SessionLogger.log("DL_URL", currentDir, tileName + " -> " + urlString);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setConnectTimeout(60000);
                 conn.setReadTimeout(120000);
@@ -200,6 +201,7 @@ public class PrimeTileDownloader {
                 
                 int responseCode = conn.getResponseCode();
                 if (responseCode != 200) {
+                    SessionLogger.logDownloadError(currentDir, tileName, "HTTP " + responseCode);
                     if (attempt == maxRetries) return false;
                     Thread.sleep(2000 * attempt);
                     continue;
@@ -243,6 +245,7 @@ public class PrimeTileDownloader {
                 return extractOk;
             } catch (Exception e) {
                 Log.e(TAG, "Download/extract failed (attempt " + attempt + "/" + maxRetries + "): " + urlString, e);
+                SessionLogger.logDownloadError(currentDir, tileName, "Exception: " + e.getClass().getSimpleName() + " - " + e.getMessage());
                 if (attempt == maxRetries) return false;
                 try { Thread.sleep(3000 * attempt); } catch (InterruptedException ie) { return false; }
             }

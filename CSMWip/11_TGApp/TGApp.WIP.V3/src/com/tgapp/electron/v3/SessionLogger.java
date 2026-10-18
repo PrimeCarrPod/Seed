@@ -72,7 +72,7 @@ public class SessionLogger {
         }
         
         sessionCounter++;
-        String fname = "tge_session_" + FILE_DATE.format(new Date()) + "_" + sessionCounter + ".log";
+        String fname = "tge_session_" + FILE_DATE.format(new Date()) + "_" + sessionCounter + ".txt";
         currentLogFile = new File(logDir, fname);
         
         logWriter = new BufferedWriter(new FileWriter(currentLogFile, true));
