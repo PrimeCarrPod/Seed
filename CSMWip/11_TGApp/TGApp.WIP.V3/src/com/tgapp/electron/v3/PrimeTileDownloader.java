@@ -282,13 +282,14 @@ void extractTarGz(String gzPath, String targetFile) throws IOException {
             boolean deleted = target.delete();
             SessionLogger.log("DL_EXT_CLEAN", currentDir, tileName + " delete=" + deleted + " exists_after=" + target.exists());
             if (target.exists()) {
-                // Try to make writable and delete again
                 target.setWritable(true);
                 deleted = target.delete();
                 SessionLogger.log("DL_EXT_CLEAN2", currentDir, tileName + " delete2=" + deleted + " exists_after=" + target.exists());
             }
         }
-        try (FileInputStream fis = new FileInputStream(gzPath); GZIPInputStream gis = new GZIPInputStream(fis); FileOutputStream fos = new FileOutputStream(targetFile, false)) {
+        // Write to unique temp file, then atomic rename to avoid EEXIST race
+        String tempExtract = targetFile + ".extract." + System.currentTimeMillis() + "." + Thread.currentThread().getId();
+        try (FileInputStream fis = new FileInputStream(gzPath); GZIPInputStream gis = new GZIPInputStream(fis); FileOutputStream fos = new FileOutputStream(tempExtract)) {
             byte[] header = new byte[512];
             while (gis.read(header) == 512) {
                 String name = new String(header, 0, 100).trim();
@@ -300,6 +301,18 @@ void extractTarGz(String gzPath, String targetFile) throws IOException {
                 } else { long size = parseOctal(new String(header, 124, 12).trim()); gis.skip(size + (512 - (size % 512)) % 512); }
             }
         }
+        // Atomic rename
+        File tempF = new File(tempExtract);
+        if (!tempF.renameTo(target)) {
+            // Fallback: copy + delete
+            SessionLogger.log("DL_EXT_RENAME_FALLBACK", currentDir, "rename failed, copying");
+            try (FileInputStream in = new FileInputStream(tempExtract); FileOutputStream out = new FileOutputStream(targetFile, false)) {
+                byte[] buffer = new byte[8192]; int len;
+                while ((len = in.read(buffer)) > 0) out.write(buffer, 0, len);
+            }
+            tempF.delete();
+        }
+        SessionLogger.log("DL_EXT_DONE", currentDir, "target_size=" + target.length());
     }
     
     long parseOctal(String s) { try { return Long.parseLong(s.trim(), 8); } catch (NumberFormatException e) { return 0; } }
