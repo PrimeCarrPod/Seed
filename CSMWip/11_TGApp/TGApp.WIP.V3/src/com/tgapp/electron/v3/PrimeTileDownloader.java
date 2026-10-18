@@ -267,7 +267,11 @@ public class PrimeTileDownloader {
     }
     
     void extractTarGz(String gzPath, String targetFile) throws IOException {
-        new File(targetFile).delete(); // Explicit delete before extraction
+        File target = new File(targetFile);
+        target.delete(); // Explicit delete before extraction
+        if (!target.getParentFile().exists()) {
+            target.getParentFile().mkdirs();
+        }
         try (FileInputStream fis = new FileInputStream(gzPath); GZIPInputStream gis = new GZIPInputStream(fis); FileOutputStream fos = new FileOutputStream(targetFile, false)) {
             byte[] header = new byte[512];
             while (gis.read(header) == 512) {
