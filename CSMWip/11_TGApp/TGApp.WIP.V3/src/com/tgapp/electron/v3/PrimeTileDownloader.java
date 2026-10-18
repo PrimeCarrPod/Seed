@@ -308,7 +308,16 @@ void extractTarGz(String gzPath, String targetFile) throws IOException {
         if (!renamed) {
             // Fallback: explicit delete target, then copy temp to target
             SessionLogger.log("DL_EXT_RENAME_FALLBACK", currentDir, "rename failed, copying");
-            target.delete(); // Explicit delete before fallback copy
+            // Strong delete: loop with setWritable
+            boolean deleted = false;
+            for (int i = 0; i < 3 && target.exists(); i++) {
+                target.setWritable(true);
+                deleted = target.delete();
+                SessionLogger.log("DL_EXT_DELETE_FALLBACK", currentDir, "attempt=" + (i+1) + " deleted=" + deleted + " exists=" + target.exists());
+                if (target.exists()) {
+                    try { Thread.sleep(50); } catch (InterruptedException ignored) {}
+                }
+            }
             try (FileInputStream in = new FileInputStream(tempExtract); FileOutputStream out = new FileOutputStream(targetFile, false)) {
                 byte[] buffer = new byte[8192]; int len;
                 while ((len = in.read(buffer)) > 0) out.write(buffer, 0, len);
