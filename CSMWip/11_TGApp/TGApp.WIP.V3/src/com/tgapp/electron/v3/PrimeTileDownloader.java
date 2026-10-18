@@ -207,10 +207,10 @@ public class PrimeTileDownloader {
                     continue;
                 }
                 
-                String tempFile = targetFile + ".tmp.gz";
-                new File(tempFile).delete(); // Avoid EEXIST on temp file
+                // Unique temp file per attempt to avoid EEXIST
+                String tempFile = targetFile + ".tmp.gz." + attempt + "." + System.currentTimeMillis();
                 long gzSize = 0;
-                try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile, false)) {
+                try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile)) {
                     byte[] buffer = new byte[16384];
                     int len;
                     while ((len = in.read(buffer)) > 0) {
@@ -224,6 +224,8 @@ public class PrimeTileDownloader {
                 gzSize = gzFile.length();
                 
                 long extractStart = System.currentTimeMillis();
+                // Delete target before extraction to avoid EEXIST
+                new File(targetFile).delete();
                 extractTarGz(tempFile, targetFile);
                 long extractDuration = System.currentTimeMillis() - extractStart;
                 
@@ -239,8 +241,10 @@ public class PrimeTileDownloader {
                 String appTargetDir = appFilesDir + dirName + "/";
                 new File(appTargetDir).mkdirs();
                 String appTargetFile = appTargetDir + fileName;
+                new File(appTargetFile).delete(); // Avoid EEXIST
                 copyFile(targetFile, appTargetFile);
                 
+                // Clean up temp file
                 new File(tempFile).delete();
                 
                 return extractOk;
@@ -255,8 +259,7 @@ public class PrimeTileDownloader {
     }
     
     private void copyFile(String src, String dst) throws IOException {
-        new File(dst).delete(); // Avoid EEXIST
-        try (FileInputStream in = new FileInputStream(src); FileOutputStream out = new FileOutputStream(dst, false)) {
+        try (FileInputStream in = new FileInputStream(src); FileOutputStream out = new FileOutputStream(dst)) {
             byte[] buffer = new byte[8192];
             int len;
             while ((len = in.read(buffer)) > 0) out.write(buffer, 0, len);
@@ -264,9 +267,7 @@ public class PrimeTileDownloader {
     }
     
     void extractTarGz(String gzPath, String targetFile) throws IOException {
-        // Delete existing target file to avoid EEXIST
-        new File(targetFile).delete();
-        try (FileInputStream fis = new FileInputStream(gzPath); GZIPInputStream gis = new GZIPInputStream(fis); FileOutputStream fos = new FileOutputStream(targetFile, false)) {
+        try (FileInputStream fis = new FileInputStream(gzPath); GZIPInputStream gis = new GZIPInputStream(fis); FileOutputStream fos = new FileOutputStream(targetFile)) {
             byte[] header = new byte[512];
             while (gis.read(header) == 512) {
                 String name = new String(header, 0, 100).trim();
