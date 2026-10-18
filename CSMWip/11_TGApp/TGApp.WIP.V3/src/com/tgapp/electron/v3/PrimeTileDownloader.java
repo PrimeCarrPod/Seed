@@ -77,7 +77,7 @@ public class PrimeTileDownloader {
     void downloadSingleDir() {
         for (int i = singleStart; i <= singleEnd && isDownloading; i++) {
             currentTile = i;
-            String tileName = String.format("Tile%03d", i);
+            String tileName = String.format("Tile%02d", i);
             String url = BASE_URL + singleDir + "/" + tileName + ".zip";
             String targetDir = downloadDir + singleDir + "/"; new File(targetDir).mkdirs();
             String targetFile = targetDir + tileName + ".prime";
@@ -95,7 +95,7 @@ public class PrimeTileDownloader {
             String dir = allDirs[d]; int count = allCounts[d]; currentDir = dir;
             for (int i = 0; i < count && isDownloading; i++) {
                 currentTile = i;
-                String tileName = String.format("Tile%03d", i);
+                String tileName = String.format("Tile%02d", i);
                 String url = BASE_URL + dir + "/" + tileName + ".zip";
                 String targetDir = downloadDir + dir + "/"; new File(targetDir).mkdirs();
                 String targetFile = targetDir + tileName + ".prime";
