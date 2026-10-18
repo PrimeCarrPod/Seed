@@ -29,6 +29,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.tgapp.electron.v3.SessionLogger;
+
 public class MainActivity extends Activity implements SensorEventListener {
 
     public WebView webView;
@@ -63,6 +65,9 @@ public class MainActivity extends Activity implements SensorEventListener {
         } catch (Throwable t) {
             Log.e("MainActivity", "CrashLogger.init failed", t);
         }
+
+        SessionLogger.init(this);
+        SessionLogger.logLifecycle("onCreate_start");
 
         CrashLogger.logInfo("MainActivity", "Creating root layout");
         InsetFrameLayout root = new InsetFrameLayout(this, this);
@@ -284,6 +289,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     public void showLogLocation() {
         String path = CrashLogger.getLogFilePath();
         CrashLogger.logInfo("MainActivity", "Log file location requested: " + path);
+        SessionLogger.logButtonPress("LOGS", "press");
         Toast.makeText(this, "Log: " + path, Toast.LENGTH_LONG).show();
     }
 
@@ -292,6 +298,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         menuBtn.setText(menuVisible ? "CLOSE" : "MENU");
         menuBtn.setTextColor(Color.parseColor(menuVisible ? "#10B981" : "#F97316"));
         injectJs("TGE.toggleMenu(" + menuVisible + ")");
+        SessionLogger.logButtonPress("MENU", menuVisible ? "open" : "close");
     }
 
     public void toggleUI() {
@@ -300,6 +307,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         fleetBtn.setTextColor(Color.parseColor(uiVisible ? "#A855F7" : "#10B981"));
         injectJs("TGE.toggleUI(" + uiVisible + ")");
         saveState();
+        SessionLogger.logButtonPress("HIDE/SHOW", uiVisible ? "show" : "hide");
     }
 
     public void toggleTheory() {
@@ -309,6 +317,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         injectJs("TGE.setTheoryMode(" + theoryMode + ")");
         tagTextView.setText("Prime Electron Worldline · v1.1 · " + (theoryMode ? "THEORY" : "LIVE"));
         saveState();
+        SessionLogger.logButtonPress("THEORY", theoryMode ? "on" : "off");
     }
 
     public void injectJs(String s) {
@@ -379,6 +388,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     protected void onResume() {
         super.onResume();
         CrashLogger.logInfo("MainActivity", "onResume");
+        SessionLogger.logLifecycle("onResume");
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         gyroscope = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
@@ -390,6 +400,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     protected void onPause() {
         super.onPause();
         CrashLogger.logInfo("MainActivity", "onPause");
+        SessionLogger.logLifecycle("onPause");
         if (sensorManager != null) sensorManager.unregisterListener(this);
     }
 
@@ -397,9 +408,11 @@ public class MainActivity extends Activity implements SensorEventListener {
     protected void onDestroy() {
         super.onDestroy();
         CrashLogger.logInfo("MainActivity", "onDestroy");
+        SessionLogger.logLifecycle("onDestroy");
         scanHandler.removeCallbacksAndMessages(null);
         if (sensorManager != null) sensorManager.unregisterListener(this);
         CrashLogger.close();
+        SessionLogger.close();
     }
 
     @Override

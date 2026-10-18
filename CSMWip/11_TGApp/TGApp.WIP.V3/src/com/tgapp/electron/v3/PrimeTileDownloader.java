@@ -3,6 +3,7 @@ package com.tgapp.electron.v3;
 import android.os.Environment;
 import android.webkit.JavascriptInterface;
 import android.util.Log;
+import com.tgapp.electron.v3.SessionLogger;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -60,6 +61,7 @@ public class PrimeTileDownloader {
         if (isDownloading) { postCallback("onDownloadError", "\"Already downloading\""); return; }
         downloadMode = 1; singleDir = dir; singleStart = startTile; singleEnd = endTile;
         isDownloading = true; totalTiles = endTile - startTile + 1; completedTiles = 0; currentDir = dir;
+        SessionLogger.logDownloadStart(dir, startTile, endTile, totalTiles);
         new Thread(new PrimeDownloadTask(this)).start();
     }
     
@@ -68,6 +70,7 @@ public class PrimeTileDownloader {
         if (isDownloading) return;
         downloadMode = 2; isDownloading = true; totalTiles = 0;
         for (int c : allCounts) totalTiles += c; completedTiles = 0;
+        SessionLogger.logDownloadStart("ALL", 0, totalTiles - 1, totalTiles);
         new Thread(new PrimeDownloadTask(this)).start();
     }
     
@@ -75,37 +78,101 @@ public class PrimeTileDownloader {
     public void cancelDownload() { isDownloading = false; downloadMode = 0; }
     
     void downloadSingleDir() {
+        long dirStartTime = System.currentTimeMillis();
         for (int i = singleStart; i <= singleEnd && isDownloading; i++) {
             currentTile = i;
             String tileName = String.format("Tile%02d", i);
             String url = BASE_URL + singleDir + "/" + tileName + ".zip";
             String targetDir = downloadDir + singleDir + "/"; new File(targetDir).mkdirs();
             String targetFile = targetDir + tileName + ".prime";
-            if (fileExistsInAnyLocation(singleDir, tileName + ".prime")) { completedTiles++; postProgress(); continue; }
-            boolean success = downloadAndExtract(url, targetFile);
-            if (success) completedTiles++; else postCallback("onDownloadError", "\"Failed: " + tileName + " in " + singleDir + "\"");
+            
+            if (fileExistsInAnyLocation(singleDir, tileName + ".prime")) {
+                completedTiles++; 
+                SessionLogger.logDownloadVerify(singleDir, tileName, new File(targetFile).length(), true, true);
+                postProgress(); 
+                continue; 
+            }
+            
+            long dlStart = System.currentTimeMillis();
+            long gzSize = 0;
+            boolean success = downloadAndExtract(url, targetFile, tileName);
+            long dlDuration = System.currentTimeMillis() - dlStart;
+            
+            File outFile = new File(targetFile);
+            long outSize = outFile.exists() ? outFile.length() : 0;
+            int speedKbps = dlDuration > 0 ? (int)(outSize / 1024 / (dlDuration / 1000.0)) : 0;
+            
+            SessionLogger.logDownloadProgress(singleDir, i, completedTiles, totalTiles, speedKbps);
+            
+            if (success) {
+                completedTiles++;
+                SessionLogger.logDownloadVerify(singleDir, tileName, outSize, true, true);
+            } else {
+                SessionLogger.logDownloadError(singleDir, tileName, "Download failed after retries");
+                postCallback("onDownloadError", "\"Failed: " + tileName + " in " + singleDir + "\"");
+            }
+            
             postProgress();
             if (isDownloading && i < singleEnd) { try { Thread.sleep(500); } catch (InterruptedException e) { return; } }
         }
-        if (isDownloading) postCallback("onDownloadComplete", "\"Directory " + singleDir + " complete\"");
+        if (isDownloading) {
+            long dirDuration = System.currentTimeMillis() - dirStartTime;
+            SessionLogger.logDownloadComplete(singleDir, completedTiles, totalTiles, dirDuration);
+            postCallback("onDownloadComplete", "\"Directory " + singleDir + " complete\"");
+        }
     }
     
     void downloadAllDirs() {
+        long allStartTime = System.currentTimeMillis();
         for (int d = 0; d < allDirs.length && isDownloading; d++) {
             String dir = allDirs[d]; int count = allCounts[d]; currentDir = dir;
+            long dirStartTime = System.currentTimeMillis();
+            
             for (int i = 0; i < count && isDownloading; i++) {
                 currentTile = i;
                 String tileName = String.format("Tile%02d", i);
                 String url = BASE_URL + dir + "/" + tileName + ".zip";
                 String targetDir = downloadDir + dir + "/"; new File(targetDir).mkdirs();
                 String targetFile = targetDir + tileName + ".prime";
-                if (fileExistsInAnyLocation(dir, tileName + ".prime")) { completedTiles++; postProgress(); continue; }
-                boolean success = downloadAndExtract(url, targetFile);
-                if (success) completedTiles++; postProgress();
+                
+                if (fileExistsInAnyLocation(dir, tileName + ".prime")) {
+                    completedTiles++;
+                    SessionLogger.logDownloadVerify(dir, tileName, new File(targetFile).length(), true, true);
+                    postProgress(); 
+                    continue; 
+                }
+                
+                long dlStart = System.currentTimeMillis();
+                boolean success = downloadAndExtract(url, targetFile, tileName);
+                long dlDuration = System.currentTimeMillis() - dlStart;
+                
+                File outFile = new File(targetFile);
+                long outSize = outFile.exists() ? outFile.length() : 0;
+                int speedKbps = dlDuration > 0 ? (int)(outSize / 1024 / (dlDuration / 1000.0)) : 0;
+                
+                SessionLogger.logDownloadProgress(dir, i, completedTiles, totalTiles, speedKbps);
+                
+                if (success) {
+                    completedTiles++;
+                    SessionLogger.logDownloadVerify(dir, tileName, outSize, true, true);
+                } else {
+                    SessionLogger.logDownloadError(dir, tileName, "Download failed after retries");
+                }
+                
+                postProgress();
                 if (isDownloading && (d < allDirs.length - 1 || i < count - 1)) { try { Thread.sleep(500); } catch (InterruptedException e) { return; } }
             }
+            
+            if (isDownloading) {
+                long dirDuration = System.currentTimeMillis() - dirStartTime;
+                SessionLogger.logDownloadComplete(dir, completedTiles, totalTiles, dirDuration);
+            }
         }
-        if (isDownloading) postCallback("onDownloadComplete", "\"All directories complete\"");
+        if (isDownloading) {
+            long allDuration = System.currentTimeMillis() - allStartTime;
+            SessionLogger.logDownloadComplete("ALL", completedTiles, totalTiles, allDuration);
+            postCallback("onDownloadComplete", "\"All directories complete\"");
+        }
     }
     
     private boolean fileExistsInAnyLocation(String dir, String fileName) {
@@ -121,7 +188,7 @@ public class PrimeTileDownloader {
         return false;
     }
     
-    private boolean downloadAndExtract(String urlString, String targetFile) {
+    private boolean downloadAndExtract(String urlString, String targetFile, String tileName) {
         int maxRetries = 3;
         for (int attempt = 1; attempt <= maxRetries && isDownloading; attempt++) {
             try {
@@ -134,21 +201,34 @@ public class PrimeTileDownloader {
                 int responseCode = conn.getResponseCode();
                 if (responseCode != 200) {
                     if (attempt == maxRetries) return false;
-                    Thread.sleep(2000 * attempt); // exponential backoff
+                    Thread.sleep(2000 * attempt);
                     continue;
                 }
                 
                 String tempFile = targetFile + ".tmp.gz";
+                long gzSize = 0;
                 try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile)) {
                     byte[] buffer = new byte[16384];
                     int len;
                     while ((len = in.read(buffer)) > 0) {
                         if (!isDownloading) return false;
                         out.write(buffer, 0, len);
+                        gzSize += len;
                     }
                 }
                 
+                File gzFile = new File(tempFile);
+                gzSize = gzFile.length();
+                
+                long extractStart = System.currentTimeMillis();
                 extractTarGz(tempFile, targetFile);
+                long extractDuration = System.currentTimeMillis() - extractStart;
+                
+                File outFile = new File(targetFile);
+                long outSize = outFile.exists() ? outFile.length() : 0;
+                boolean extractOk = outFile.exists() && outSize > 0;
+                
+                SessionLogger.logDownloadExtract(currentDir, tileName, gzSize, outSize, extractOk);
                 
                 // Also copy to app files dir for WebView access
                 String fileName = new File(targetFile).getName();
@@ -160,7 +240,7 @@ public class PrimeTileDownloader {
                 
                 new File(tempFile).delete();
                 
-                return new File(targetFile).exists() && new File(targetFile).length() > 0;
+                return extractOk;
             } catch (Exception e) {
                 Log.e(TAG, "Download/extract failed (attempt " + attempt + "/" + maxRetries + "): " + urlString, e);
                 if (attempt == maxRetries) return false;
