@@ -28,9 +28,8 @@ public class PrimeTileDownloader {
     
     public PrimeTileDownloader(MainActivity activity) {
         this.activity = activity;
-        // Primary: Public Downloads folder (persists across reinstalls, user-visible)
-        File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        this.downloadDir = downloadsDir.getAbsolutePath() + "/PrimeBookOne/";
+        // Primary: App-specific external files dir (proper POSIX semantics, persists across updates)
+        this.downloadDir = activity.getExternalFilesDir(null).getAbsolutePath() + "/PrimeBookOne/";
         new File(downloadDir).mkdirs();
         // Secondary: Public Documents folder (legacy location, persists across reinstalls)
         File documentsDirFile = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
