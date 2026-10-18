@@ -208,8 +208,9 @@ public class PrimeTileDownloader {
                 }
                 
                 String tempFile = targetFile + ".tmp.gz";
+                new File(tempFile).delete(); // Avoid EEXIST on temp file
                 long gzSize = 0;
-                try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile)) {
+                try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile, false)) {
                     byte[] buffer = new byte[16384];
                     int len;
                     while ((len = in.read(buffer)) > 0) {
