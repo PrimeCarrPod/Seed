@@ -222,7 +222,7 @@
         <button class="menu-btn secondary" onclick="TGE.showPrimeExplorer()">PRIME EXPLORER</button>
         <button class="menu-btn secondary" onclick="TGE.showArithmeticPhysics()">ARITHMETIC PHYSICS</button>
         <button class="menu-btn secondary" onclick="TGE.showPrimeDataManager()">PRIME DATA</button>
-        <button class="menu-btn secondary" onclick="TGE.showGapAnalysis()">GAP ANALYSIS</button>
+        <button class="menu-btn secondary" onclick="TGE.showTardigradiaApps()">TARDIGRADIA APPS</button>
         <button class="menu-btn danger" onclick="TGE.resetSimulation()">RESET SIMULATION</button>
     </div>
     <div id="physics-overlay">
@@ -236,6 +236,12 @@
         <div class="menu-subtitle">Download PrimeBookOne Tiles from GitHub</div>
         <div id="prime-data-content"></div>
         <button class="menu-btn danger" onclick="TGE.closePrimeData()">BACK TO MENU</button>
+    </div>
+    <div id="tardigradia-apps-overlay">
+        <div class="menu-title">TARDIGRADIA APPS</div>
+        <div class="menu-subtitle">Download Apps from Tardigradia Repository</div>
+        <div id="tardigradia-apps-content"></div>
+        <button class="menu-btn danger" onclick="TGE.closeTardigradiaApps()">BACK TO MENU</button>
     </div>
     <script src="three.min.js"></script>
     <script>
@@ -859,7 +865,16 @@ updateHUD() {
             
             showPrimeExplorer() { alert('Prime Explorer - Coming Soon'); },
             showWorldlineHistory() { alert('Worldline History - Coming Soon'); },
-            showGapAnalysis() { alert('Gap Analysis - Coming Soon'); },
+            showTardigradiaApps() {
+                this.toggleMenu();
+                document.getElementById('tardigradia-apps-overlay').classList.add('visible');
+                this.loadTardigradiaApps();
+                if (window.TGEBridge) window.TGEBridge.logUIEvent('TARDIGRADIA_APPS', 'open', '');
+            },
+            closeTardigradiaApps() {
+                document.getElementById('tardigradia-apps-overlay').classList.remove('visible');
+                if (window.TGEBridge) window.TGEBridge.logUIEvent('TARDIGRADIA_APPS', 'close', '');
+            },
             showPrimeDataManager() {
                 this.toggleMenu();
                 document.getElementById('prime-data-overlay').classList.add('visible');
@@ -869,6 +884,129 @@ updateHUD() {
             closePrimeData() {
                 document.getElementById('prime-data-overlay').classList.remove('visible');
                 if (window.TGEBridge) window.TGEBridge.logUIEvent('PRIME_DATA', 'close', '');
+            },
+            
+            // Tardigradia Apps functions
+            async loadTardigradiaApps() {
+                const content = document.getElementById('tardigradia-apps-content');
+                content.innerHTML = '<div style="text-align: center; padding: 40px; color: #00D4AA;">Loading app listings...</div>';
+                
+                try {
+                    const [currentRes, pastRes] = await Promise.all([
+                        fetch('https://api.github.com/repos/PrimeCarrPod/Seed/contents/CSMApps/_Current_Releases'),
+                        fetch('https://api.github.com/repos/PrimeCarrPod/Seed/contents/CSMApps/_Past_Releases')
+                    ]);
+                    
+                    const currentFiles = currentRes.ok ? await currentRes.json() : [];
+                    const pastFiles = pastRes.ok ? await pastRes.json() : [];
+                    
+                    this.tardigradiaCurrentFiles = currentFiles.filter(f => f.type === 'file').map(f => f.name);
+                    this.tardigradiaPastFiles = pastFiles.filter(f => f.type === 'file').map(f => f.name);
+                    
+                    this.renderTardigradiaApps();
+                } catch (e) {
+                    console.error('Failed to load Tardigradia apps:', e);
+                    content.innerHTML = '<div style="text-align: center; padding: 40px; color: #FF4466;">Failed to load app listings: ' + e.message + '</div>';
+                }
+            },
+            
+            renderTardigradiaApps() {
+                const content = document.getElementById('tardigradia-apps-content');
+                const currentFiles = this.tardigradiaCurrentFiles || [];
+                const pastFiles = this.tardigradiaPastFiles || [];
+                
+                let html = '<div style="display: flex; flex-direction: column; gap: 24px;">';
+                
+                // Current Releases Section
+                html += '<div class="tardigradia-section">';
+                html += '<h3 style="color: #10B981; border-bottom: 1px solid #10B98144; padding-bottom: 8px;">Current Releases (' + currentFiles.length + ' apps)</h3>';
+                html += '<p style="color: #888; font-size: 11px; margin-bottom: 12px;">Source: github.com/PrimeCarrPod/Seed/tree/main/CSMApps/_Current_Releases</p>';
+                if (currentFiles.length === 0) {
+                    html += '<div style="color: #888; padding: 20px;">No current releases found</div>';
+                } else {
+                    html += '<div style="display: flex; flex-direction: column; gap: 8px;">';
+                    for (const file of currentFiles) {
+                        html += '<div class="tardigradia-app-item" style="background: rgba(26,26,46,0.9); border: 1px solid #10B98133; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">';
+                        html += '<span style="color: #E8E8F0; font-family: monospace; font-size: 12px;">' + file + '</span>';
+                        html += '<button class="btn" onclick="TGE.downloadTardigradiaApp(\'current\', \'' + file.replace(/'/g, "\\'") + '\')" style="padding: 6px 16px; font-size: 11px;">DOWNLOAD</button>';
+                        html += '</div>';
+                    }
+                    html += '</div>';
+                }
+                html += '</div>';
+                
+                // Past Releases Section
+                html += '<div class="tardigradia-section">';
+                html += '<h3 style="color: #F97316; border-bottom: 1px solid #F9731644; padding-bottom: 8px;">Past Releases (' + pastFiles.length + ' apps)</h3>';
+                html += '<p style="color: #888; font-size: 11px; margin-bottom: 12px;">Source: github.com/PrimeCarrPod/Seed/tree/main/CSMApps/_Past_Releases</p>';
+                if (pastFiles.length === 0) {
+                    html += '<div style="color: #888; padding: 20px;">No past releases found</div>';
+                } else {
+                    html += '<div style="display: flex; flex-direction: column; gap: 8px;">';
+                    for (const file of pastFiles) {
+                        html += '<div class="tardigradia-app-item" style="background: rgba(26,26,46,0.9); border: 1px solid #F9731633; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;">';
+                        html += '<span style="color: #E8E8F0; font-family: monospace; font-size: 12px;">' + file + '</span>';
+                        html += '<button class="btn secondary" onclick="TGE.downloadTardigradiaApp(\'past\', \'' + file.replace(/'/g, "\\'") + '\')" style="padding: 6px 16px; font-size: 11px;">DOWNLOAD</button>';
+                        html += '</div>';
+                    }
+                    html += '</div>';
+                }
+                html += '</div>';
+                
+                html += '</div>';
+                document.getElementById('tardigradia-apps-content').innerHTML = html;
+            },
+            
+            downloadTardigradiaApp(category, filename) {
+                const baseUrl = 'https://raw.githubusercontent.com/PrimeCarrPod/Seed/main/CSMApps/';
+                const folder = category === 'current' ? '_Current_Releases' : '_Past_Releases';
+                const url = baseUrl + folder + '/' + filename;
+                const targetDir = this.downloadDir + 'TardigradiaApps/' + folder + '/';
+                const targetFile = targetDir + filename;
+                
+                new File(targetDir).mkdirs();
+                
+                if (window.TGEBridge) {
+                    window.TGEBridge.logButtonPress('TARDIGRADIA_DL', category + ':' + filename);
+                }
+                
+                // Use the same download/extract/verify pipeline
+                const tempFile = targetFile + '.tmp';
+                this.downloadAndVerifyTardigradia(url, targetFile, tempFile, filename, category);
+            },
+            
+            downloadAndVerifyTardigradia(url, targetFile, tempFile, filename, category) {
+                if (window.TGEBridge) {
+                    window.TGEBridge.log('DL_URL', 'TardigradiaApps', filename + ' -> ' + url);
+                }
+                
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) throw new Error('HTTP ' + response.status);
+                        return response.arrayBuffer();
+                    })
+                    .then(buffer => {
+                        // Write temp file
+                        const blob = new Blob([buffer]);
+                        return new Promise((resolve, reject) => {
+                            const reader = new FileReader();
+                            reader.onload = () => resolve(reader.result);
+                            reader.onerror = reject;
+                            reader.readAsArrayBuffer(blob);
+                        });
+                    })
+                    .then(arrayBuffer => {
+                        // Save to file system via Java bridge
+                        if (window.TGEBridge && window.TGEBridge.saveFile) {
+                            window.TGEBridge.saveFile(targetFile, arrayBuffer);
+                        }
+                    })
+                    .catch(e => {
+                        console.error('Download failed:', e);
+                        if (window.TGEBridge) {
+                            window.TGEBridge.log('DL_ERR', 'TardigradiaApps', filename + ' err=' + e.message);
+                        }
+                    });
             },
             populatePrimeDataContent() {
                 const content = document.getElementById('prime-data-content');
