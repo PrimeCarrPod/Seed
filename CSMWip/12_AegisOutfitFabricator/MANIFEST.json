@@ -1,70 +1,62 @@
 {
   "chapter_01_intro.md": {
-    "size": 435,
-    "sha256": "d2f5f66de0f3f562e2b466c50d96e91a041bd7bd5d9a7f3ef5318439ec0d7c0b"
+    "size": 469,
+    "sha256": "4835b4b8689d27b246639709cd3d9c1e8c50636e3e6c2338a3f141f0cca1571a"
   },
-  "chapter_02_1_power__thermal_management_sy.md": {
-    "size": 1596,
-    "sha256": "e9bea681817899b95f60f0f9f3d27d6d1b157b106c3047ef8cc31ddcca590ef5"
+  "chapter_02_1_ai_autonomy_core_system_over.md": {
+    "size": 2201,
+    "sha256": "0740c9902a31e476cf47504e02950c9221f78489d509aeff0b308ccc354cdfd0"
   },
-  "chapter_03_2_mhd_generator_system.md": {
-    "size": 3059,
-    "sha256": "350dad1d0caf80e4a7d59503d9231c722e64768012dccb2b3fc33aae1b8071b0"
+  "chapter_03_2_neuromorphic_processor_archi.md": {
+    "size": 6324,
+    "sha256": "de99e1995cb59fc3205ee69cfa379eb5e418189fa64644d3a5d9a1b454a137b5"
   },
-  "chapter_04_3_energy_storage_system.md": {
-    "size": 1800,
-    "sha256": "8234c44809cd984098e30e07ed97af58adbdaeadd93a7cccc8e58c59ccf326e3"
+  "chapter_04_3_verified_runtime_architectur.md": {
+    "size": 3988,
+    "sha256": "0535c498e3f382fab70db76e14ec379a775901831ee94a567f2df63d02a7a87e"
   },
-  "chapter_05_4_heat_pump_thermal_loop.md": {
-    "size": 2996,
-    "sha256": "9fe791fb79f5699255b5ea12364610e3509d30d7a671b7f61f87ba803b1d3ebb"
+  "chapter_05_4_sensor_fusion_algorithms_ver.md": {
+    "size": 3086,
+    "sha256": "13c8df62c3b3d3134657cb0e0db10cc03892aa633bcb42bab181d4ad58bdca6d"
   },
-  "chapter_06_5_power_distribution_architect.md": {
-    "size": 1724,
-    "sha256": "4b64bdb542a36e111685f1290b8397018f1c3804df20076c150629f185185c66"
+  "chapter_06_5_fault_detection_isolation_an.md": {
+    "size": 2426,
+    "sha256": "cc571b89a08081cf1c011dab0d20d7d59ac2521dfdc363c65bf1d9833e67dc5d"
   },
   "chapter_07_6_renaissance_integration.md": {
-    "size": 1216,
-    "sha256": "b65214f04feec597846f4ff9c821860ad8f11f2c03cd80215c3582024fc7466f"
+    "size": 1137,
+    "sha256": "26fd55ba05273eb2138bc5d95c0e48cc1e7f7cbea6b76d53abe1610acbd79296"
   },
-  "chapter_08_7_edition-specific_configurati.md": {
-    "size": 709,
-    "sha256": "1692b7d8e4c58b88ddd95a8d3d180f74af597192b0d597bcded1e00d6dc7e1b5"
+  "chapter_08_7_manufacturing_and_quality_co.md": {
+    "size": 1099,
+    "sha256": "461b13292a86616dd44b8a78148f3ab5fa5343e97cca710d78d0fb666cd16544"
   },
-  "chapter_09_8_manufacturing_and_quality_co.md": {
-    "size": 1613,
-    "sha256": "f87eca297d047df785f3c488076e401afb8d789dc4a66f98f002cb650eb3281f"
+  "chapter_09_8_cross-references.md": {
+    "size": 1072,
+    "sha256": "1d19964691621338999e99b401fefe317ed3dffecb025b89ec68a86bdef03fcc"
   },
-  "chapter_10_9_cross-references.md": {
-    "size": 1209,
-    "sha256": "4f710ad6c68cf3a2f57a6b08d1c0fb94153ed90335d95c51d1b0ffdceecae1db"
+  "chapter_10_9_testing_and_validation_proto.md": {
+    "size": 1549,
+    "sha256": "143a15ea678994d3d83e145c65de791bf8b9bc60d7b66344b988eea1c6a0170b"
   },
-  "chapter_11_10_testing_and_validation_prot.md": {
-    "size": 1767,
-    "sha256": "3a1401ad6266cde19ac8da0d829be7a9609d9590d8c7a99962ed14d0227326e2"
+  "chapter_11_10_traceability_matrix.md": {
+    "size": 743,
+    "sha256": "3c775dddccccf21774ebafaa5ddfc58ba8d9245d3c728d6490c9a5906f385e20"
   },
-  "chapter_12_11_edition-specific_formulas.md": {
-    "size": 1552,
-    "sha256": "17c46debff1d88bded4e69af73d5f33f70bc7253038d34d3c93d847cef8a3e2d"
+  "chapter_12_11_standards_compliance_matrix.md": {
+    "size": 947,
+    "sha256": "5867b657a2db91fb180bbe619f7923a3a8d8120b385ff258923b8794b1424cb2"
   },
-  "chapter_13_12_traceability_matrix.md": {
-    "size": 1161,
-    "sha256": "25a342281d210be01fce36bde9eae17b11324aa3a1734e863a43e0230a0b9c36"
+  "chapter_13_12_[tbdresearch]_items.md": {
+    "size": 748,
+    "sha256": "9e43961d3b8638ac1ae2a362219e8e1f8f9f9c5c6cd0ad64ecc112faab6e2c0a"
   },
-  "chapter_14_13_standards_compliance_matrix.md": {
-    "size": 1176,
-    "sha256": "abc7443cf49abe807fb54f1c02130b8faf971d69dbf7d61c24d3af54d07927fe"
+  "chapter_14_13_references_and_standards.md": {
+    "size": 1493,
+    "sha256": "cf6e0301cbedf44139f2235b6a13d05b5048f2c29f60c3f1401abb0a17ad9908"
   },
-  "chapter_15_14_[tbdresearch]_items.md": {
-    "size": 1090,
-    "sha256": "0f4c55d6c697c426ec84c6e9aa2ea08ef0c657c25b6f5c46c4a6705e619b991d"
-  },
-  "chapter_16_15_references_and_standards_ci.md": {
-    "size": 1245,
-    "sha256": "a3102a65524c6ded980165512455d8a89802b29ca9129630aa76f87d96d6c11c"
-  },
-  "chapter_17_16_conclusions.md": {
-    "size": 1633,
-    "sha256": "e6823d427037c46fffe6b6d2d4200c1cdb1c3c0b253061ebb881c1142240f679"
+  "chapter_15_14_conclusions.md": {
+    "size": 1480,
+    "sha256": "704b89865e3805aa00c6df062e53d00c403ea3e3475291c0a74e7d9850105a1d"
   }
 }
