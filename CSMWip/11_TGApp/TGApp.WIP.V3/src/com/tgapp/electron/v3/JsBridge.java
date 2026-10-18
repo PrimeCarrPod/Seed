@@ -41,4 +41,31 @@ public class JsBridge {
     public void onPrimeGapEvent(String data) {
         Log.d("TGE_Electron", "Prime gap event: " + data);
     }
+
+    @JavascriptInterface
+    public void logRenderState(float x, float y, float z, float vx, float vy, float vz,
+                               int reflections, int steps, int gapsCrossed, float zoom,
+                               float berryPhase, float axionField) {
+        SessionLogger.logRenderState(x, y, z, vx, vy, vz, reflections, steps, gapsCrossed, zoom, berryPhase, axionField);
+    }
+
+    @JavascriptInterface
+    public void logRenderEvent(String event, String detail) {
+        SessionLogger.logRenderEvent(event, detail);
+    }
+
+    @JavascriptInterface
+    public void logButtonPress(String buttonId, String action) {
+        SessionLogger.logButtonPress(buttonId, action);
+    }
+
+    @JavascriptInterface
+    public void logUIEvent(String component, String action, String detail) {
+        SessionLogger.logUIEvent(component, action, detail);
+    }
+
+    @JavascriptInterface
+    public void logPrimeEvent(String event, int loaded, int total, int dirsLoaded) {
+        SessionLogger.logPrimeEvent(event, loaded, total, dirsLoaded);
+    }
 }

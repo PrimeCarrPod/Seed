@@ -1,1 +1,2 @@
 [2026-10-18T15:16:46Z] CMD: V3 rebuild | STATUS: OK | DETAILS: tgapp_electron_v3_022.apk built successfully with fixed tile naming (Tile%02d)
+[2026-10-18T16:49:08Z] CMD: V3 enhanced logging build | STATUS: OK | DETAILS: tgapp_electron_v3_022.apk built with SessionLogger, detailed download/extract/verify logging, button press logging, render state logging at 5s interval, 2MB log rotation

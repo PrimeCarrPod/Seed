@@ -264,6 +264,7 @@
             cameraElevation: 0,
             electronMesh: null, worldlineMesh: null, eggshellMesh: null,
             primeGapMeshes: [],
+            lastRenderLogTime: 0,
             
             // Physics constants from Prime Electron research
             COMPTON_TIME: 1.288e-21,  // ℏ/(m_e c^2) in seconds
@@ -487,6 +488,7 @@
                 
                 this.checkPrimeGaps();
                 this.updateHUD();
+                this.logRenderState();
             },
             
             rotateSpinAroundAxis(spin, axis, angle) {
@@ -629,6 +631,21 @@ updateHUD() {
                 document.getElementById('spin-y').textContent = this.electron.spin.y.toFixed(2);
                 document.getElementById('spin-z').textContent = this.electron.spin.z.toFixed(2);
                 document.getElementById('schwinger-count').textContent = this.schwingerCount || 0;
+            },
+            
+            logRenderState() {
+                const now = Date.now();
+                if (now - this.lastRenderLogTime < 5000) return; // 5 second interval
+                this.lastRenderLogTime = now;
+                
+                if (window.TGEBridge) {
+                    window.TGEBridge.logRenderState(
+                        this.electron.x, this.electron.y, this.electron.z,
+                        this.electron.vx, this.electron.vy, this.electron.vz,
+                        this.reflections, this.steps, this.gapsCrossed, this.zoom,
+                        this.electron.berryPhase, this.electron.axionField
+                    );
+                }
             },
             
             setupScene() {
@@ -775,29 +792,34 @@ updateHUD() {
                 this.electron.vx += (Math.random() - 0.5) * 5;
                 this.electron.vy += (Math.random() - 0.5) * 5;
                 this.electron.vz += (Math.random() - 0.5) * 5;
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('SCAN', 'press');
             },
             
             toggleMenu() {
                 this.menuVisible = !this.menuVisible;
                 document.getElementById('menu-overlay').classList.toggle('visible', this.menuVisible);
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('MENU', this.menuVisible ? 'open' : 'close');
             },
             
             toggleUI(visible) {
                 this.uiVisible = visible;
                 const hud = document.getElementById('hud');
                 if (hud) hud.style.display = visible ? 'block' : 'none';
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('HIDE/SHOW', visible ? 'show' : 'hide');
             },
             
             zoomIn() {
                 this.zoom = Math.min(this.maxZoom, this.zoom * 1.2);
                 this.updateCameraZoom();
                 this.updateZoomHUD();
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('ZOOM_IN', 'press');
             },
             
             zoomOut() {
                 this.zoom = Math.max(this.minZoom, this.zoom / 1.2);
                 this.updateCameraZoom();
                 this.updateZoomHUD();
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('ZOOM_OUT', 'press');
             },
             
             setZoom(level) {
@@ -827,10 +849,12 @@ updateHUD() {
             toggleTheory() {
                 this.theoryMode = !this.theoryMode;
                 document.getElementById('mode').textContent = this.theoryMode ? 'THEORY' : 'LIVE';
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('THEORY', this.theoryMode ? 'on' : 'off');
             },
             
             setTheoryMode(enabled) {
                 this.theoryMode = enabled;
+                if (window.TGEBridge) window.TGEBridge.logButtonPress('THEORY', enabled ? 'on' : 'off');
             },
             
             showPrimeExplorer() { alert('Prime Explorer - Coming Soon'); },
@@ -840,9 +864,11 @@ updateHUD() {
                 this.toggleMenu();
                 document.getElementById('prime-data-overlay').classList.add('visible');
                 this.populatePrimeDataContent();
+                if (window.TGEBridge) window.TGEBridge.logUIEvent('PRIME_DATA', 'open', '');
             },
             closePrimeData() {
                 document.getElementById('prime-data-overlay').classList.remove('visible');
+                if (window.TGEBridge) window.TGEBridge.logUIEvent('PRIME_DATA', 'close', '');
             },
             populatePrimeDataContent() {
                 const content = document.getElementById('prime-data-content');
@@ -1259,8 +1285,8 @@ updateHUD() {
                         end = temp;
                     }
                     // Log if values were adjusted
-                    const adjusted = (start !== parseInt(document.getElementById('start-' + dir.id).value) || 
-                                    end !== parseInt(document.getElementById('end-' + dir.id).value));
+                    const adjusted = (start !== parseInt(document.getElementById('start-' + dir).value) || 
+                                    end !== parseInt(document.getElementById('end-' + dir).value));
                     if (adjusted) {
                         this.log('info', 'Adjusted range to: ' + start + '-' + end + ' (valid range: 0-' + (count-1) + ')');
                     }
@@ -1270,6 +1296,9 @@ updateHUD() {
                 this.completedTiles = 0;
                 this.totalTiles = end - start + 1;
                 this.log('info', 'Starting download: ' + dir + ' tiles ' + start + '-' + end);
+                if (window.TGEBridge) {
+                    window.TGEBridge.logButtonPress('DOWNLOAD_DIR', dir + ':' + start + '-' + end);
+                }
                 if (window.PrimeTileDownloader) {
                     window.PrimeTileDownloader.downloadDirectory(dir, start, end);
                 }
@@ -1281,6 +1310,9 @@ updateHUD() {
                 this.progress = 0;
                 this.completedTiles = 0;
                 this.log('info', 'Starting download: ALL directories (0.0 through 3.0)');
+                if (window.TGEBridge) {
+                    window.TGEBridge.logButtonPress('DOWNLOAD_ALL', 'start');
+                }
                 if (window.PrimeTileDownloader) {
                     window.PrimeTileDownloader.downloadAllDirectories();
                 }
@@ -1292,6 +1324,9 @@ updateHUD() {
                 }
                 this.downloading = false;
                 this.log('warn', 'Download cancelled');
+                if (window.TGEBridge) {
+                    window.TGEBridge.logButtonPress('CANCEL', 'press');
+                }
                 this.updateUI();
             }
         };
