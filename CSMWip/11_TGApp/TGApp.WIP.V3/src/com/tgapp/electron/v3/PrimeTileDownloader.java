@@ -266,11 +266,23 @@ public class PrimeTileDownloader {
         }
     }
     
-    void extractTarGz(String gzPath, String targetFile) throws IOException {
+void extractTarGz(String gzPath, String targetFile) throws IOException {
         File target = new File(targetFile);
-        target.delete(); // Explicit delete before extraction
+        String tileName = target.getName().replace(".prime", "");
+        // Ensure parent directory exists
         if (!target.getParentFile().exists()) {
             target.getParentFile().mkdirs();
+        }
+        // Delete existing file - check result
+        if (target.exists()) {
+            boolean deleted = target.delete();
+            SessionLogger.log("DL_EXT_CLEAN", currentDir, tileName + " delete=" + deleted + " exists_after=" + target.exists());
+            if (target.exists()) {
+                // Try to make writable and delete again
+                target.setWritable(true);
+                deleted = target.delete();
+                SessionLogger.log("DL_EXT_CLEAN2", currentDir, tileName + " delete2=" + deleted + " exists_after=" + target.exists());
+            }
         }
         try (FileInputStream fis = new FileInputStream(gzPath); GZIPInputStream gis = new GZIPInputStream(fis); FileOutputStream fos = new FileOutputStream(targetFile, false)) {
             byte[] header = new byte[512];
