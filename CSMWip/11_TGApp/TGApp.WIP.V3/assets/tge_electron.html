@@ -975,7 +975,7 @@ updateHUD() {
                 for (const dir of this.directories) {
                     const count = this.tilesPerDir[dir] || 0;
                     for (let i = 0; i < count; i++) {
-                        const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
+                        const tileName = `Tile${String(i).padStart(2, '0')}.prime`;
                         const key = `${dir}/${tileName}`;
                         
                         // Try each base path
@@ -1003,7 +1003,7 @@ updateHUD() {
                 const tilesData = [];
                 
                 for (let i = startTile; i <= end; i++) {
-                    const tileName = `Tile${String(i).padStart(3, '0')}.prime`;
+                    const tileName = `Tile${String(i).padStart(2, '0')}.prime`;
                     const key = `${dir}/${tileName}`;
                     
                     let data = null;
@@ -1024,7 +1024,7 @@ updateHUD() {
                     }
                     
                     // Fallback to bundled assets for Tile00/01
-                    if (!data && (tileName === 'Tile000.prime' || tileName === 'Tile001.prime')) {
+                    if (!data && (tileName === 'Tile00.prime' || tileName === 'Tile01.prime')) {
                         try {
                             const assetPath = `assets/${tileName}`;
                             const resp = await fetch(assetPath, { cache: 'no-cache' });
