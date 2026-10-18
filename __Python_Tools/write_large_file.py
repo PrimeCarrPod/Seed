@@ -112,9 +112,13 @@ def concat_chunks(chunk_dir, output_path, pattern="chapter_*.md"):
     print(f"Concatenated {len(chunks)} chunks -> {output_path}")
 
 
-def generate_manifest(chunk_dir, manifest_path="MANIFEST.json", pattern="*"):
+def generate_manifest(chunk_dir, manifest_path=None, pattern="*"):
     """Generate manifest with checksums"""
     chunk_dir = Path(chunk_dir)
+    if manifest_path is None:
+        manifest_path = chunk_dir / "MANIFEST.json"
+    else:
+        manifest_path = Path(manifest_path)
     manifest = {}
 
     for f in chunk_dir.glob(pattern):
@@ -131,10 +135,15 @@ def generate_manifest(chunk_dir, manifest_path="MANIFEST.json", pattern="*"):
     return manifest
 
 
-def verify_manifest(chunk_dir, manifest_path="MANIFEST.json"):
+def verify_manifest(chunk_dir, manifest_path=None):
     """Verify files against manifest"""
     chunk_dir = Path(chunk_dir)
-    manifest = json.loads(Path(manifest_path).read_text())
+    if manifest_path is None:
+        manifest_path = chunk_dir / "MANIFEST.json"
+    else:
+        manifest_path = Path(manifest_path)
+
+    manifest = json.loads(manifest_path.read_text())
 
     for name, info in manifest.items():
         f = chunk_dir / name
@@ -174,9 +183,9 @@ def main():
     elif cmd == "concat":
         concat_chunks(sys.argv[2], sys.argv[3], sys.argv[4] if len(sys.argv) > 4 else "chapter_*.md")
     elif cmd == "manifest":
-        generate_manifest(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "MANIFEST.json", sys.argv[4] if len(sys.argv) > 4 else "*")
+        generate_manifest(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None, sys.argv[4] if len(sys.argv) > 4 else "*")
     elif cmd == "verify":
-        verify_manifest(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "MANIFEST.json")
+        verify_manifest(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
     else:
         print(f"Unknown command: {cmd}")
         sys.exit(1)
