@@ -1311,5 +1311,38 @@
       "chapter_09_7._traceability_matrix_\u2014_draft.md",
       "chapter_10_8._conformance_check.md"
     ]
+  },
+  "DOC-31_Manufacturing_Integration": {
+    "chunks": 12,
+    "total_size": 21154,
+    "files": [
+      "chapter_01_intro.md",
+      "chapter_02_sewbo_cell_+_ultrasonic_seamin.md",
+      "chapter_03_1_executive_overview.md",
+      "chapter_04_2_sewbo_cell_architecture.md",
+      "chapter_05_3_ultrasonic_seaming_parameter.md",
+      "chapter_06_4_rf_dielectric_welding_integr.md",
+      "chapter_07_5_cell-to-cell_handoff_and_tra.md",
+      "chapter_08_6_throughput_modeling_and_line.md",
+      "chapter_09_7_in-process_inspection_and_qu.md",
+      "chapter_10_8_edition_changeover_procedure.md",
+      "chapter_11_9_traceability_matrix__doc-31.md",
+      "chapter_12_10_conformance_check.md"
+    ]
+  },
+  "DOC-32_Quality_Assurance": {
+    "chunks": 9,
+    "total_size": 21309,
+    "files": [
+      "chapter_01_intro.md",
+      "chapter_02_ndt_+_destructive_sampling_pro.md",
+      "chapter_03_1_executive_overview.md",
+      "chapter_04_2_ndt_modalities__technical_sp.md",
+      "chapter_05_3_destructive_sampling_protoco.md",
+      "chapter_06_4_statistical_process_control.md",
+      "chapter_07_5_data_management__digital_thr.md",
+      "chapter_08_6_traceability_matrix__doc-32.md",
+      "chapter_09_7_conformance_check.md"
+    ]
   }
 }
