@@ -1,0 +1,54 @@
+{
+  "chapter_01_intro.md": {
+    "size": 486,
+    "sha256": "2ee0f3fee53e9039fdb647cea15cdecc08dcbf6eb0a99cbbabc5ec20b331e0bf"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 644,
+    "sha256": "ab459baef70856665fe275757e8174ab5a5b6247364d369a603bed25da0320d2"
+  },
+  "chapter_03_1_certification_framework.md": {
+    "size": 2177,
+    "sha256": "ffd8d419b236c784ac8bc01ee645296950c05f62556c127f08a2fac59add8380"
+  },
+  "chapter_04_2_operator_course_40_hrs.md": {
+    "size": 2457,
+    "sha256": "714ed4f615601c6fa8d1be19f1281f7beb0a82a5dbfc0ede66138772da643425"
+  },
+  "chapter_05_3_technician_course_80_hrs.md": {
+    "size": 2983,
+    "sha256": "99ce1d12b64cfe38ab00f81e38f068d2828fc4fb57c1dbbbb35f0977fe37a55a"
+  },
+  "chapter_06_4_instructor_course_120_hrs.md": {
+    "size": 1373,
+    "sha256": "0e726ca6616929dc9031a688eced8d4b7f348dfd1999a44def59d2139cabe571"
+  },
+  "chapter_07_5_dsv_specialty_+60_hrs.md": {
+    "size": 1379,
+    "sha256": "4e175e40ba1b04a4dcb20d53b92279b3a6f22e8d076ee0f83d027f088b6ee29e"
+  },
+  "chapter_08_6_simulation__virtual_training.md": {
+    "size": 1767,
+    "sha256": "63d3381e61b120af681aeed49a7b19a2b31dc521757b165770e92b127349b3bf"
+  },
+  "chapter_09_7_recertification_program.md": {
+    "size": 1432,
+    "sha256": "8be5f8b813ce6fabc596634b292d0f0ee3d23ecb412ba395b751e8c50cbdac58"
+  },
+  "chapter_10_8_traceability_matrix.md": {
+    "size": 901,
+    "sha256": "a13973d0bd9484b7bcd5881b50eabe2c8882554ce344faf4d536679025cd5b9e"
+  },
+  "chapter_11_9_formulas_reference.md": {
+    "size": 1593,
+    "sha256": "f328167dcf23da8a134e691a749e689bf397784c274873897d4f96f0602be5f5"
+  },
+  "chapter_12_10_standards_compliance_summar.md": {
+    "size": 1222,
+    "sha256": "ed67a728718cb156a5da37399f2925487b535cd6bfe548fd435695e1570198df"
+  },
+  "chapter_13_11_tbd_markers.md": {
+    "size": 882,
+    "sha256": "ac56539cf44f0b068cd66bea7ac33a2526c4c55ef8e72ffbc36a6242c966ff5b"
+  }
+}

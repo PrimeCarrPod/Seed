@@ -1,0 +1,50 @@
+{
+  "chapter_01_intro.md": {
+    "size": 507,
+    "sha256": "26e0c97e50133956d706de80cb0353c77cabf7e10a426fb5c398f5c2fcc040ab"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 589,
+    "sha256": "39226673798b79ffdc613df3af640e10d5393caa8aa7cb5dbad018009186391a"
+  },
+  "chapter_03_1_supply_chain_architecture.md": {
+    "size": 4140,
+    "sha256": "68fc6f27ab246845acdf6338bddd3ad6866c10b03c733ec4a59bb241ba94f51d"
+  },
+  "chapter_04_2_spares_provisioning_model.md": {
+    "size": 3201,
+    "sha256": "1923b6dfef781fbf2aef4367bbcc2b1d3bd0b98e26d3b40f4ea4e9d06bd6b73d"
+  },
+  "chapter_05_3_distribution_network.md": {
+    "size": 2918,
+    "sha256": "465d29b9182010683ea57ede891b83e96ce3ffe7b4711eaff695f8d38e29135c"
+  },
+  "chapter_06_4_shelf-life_management.md": {
+    "size": 2483,
+    "sha256": "f5ccc34896280140993553c58826f1307e99441da3644df24e681d9e40dd80cd"
+  },
+  "chapter_07_5_obsolescence_mitigation_dmsm.md": {
+    "size": 2282,
+    "sha256": "7f7bdb0492516b1d89314f605f8ce4f6fbd635ce23d8925383e1cabc69891ab2"
+  },
+  "chapter_08_6_circular_economy_integration.md": {
+    "size": 2406,
+    "sha256": "50a547df2abeeb00ba09d04213d48c71f5c261c32a0e3c733a673556be41566f"
+  },
+  "chapter_09_7_traceability_matrix.md": {
+    "size": 1039,
+    "sha256": "7ea46e90da35e047c8f437ba0f3871235e9e9601d717d7eccf0ac06b86f25c61"
+  },
+  "chapter_10_8_formulas_reference.md": {
+    "size": 1974,
+    "sha256": "29467f8da3404fac8f38f9d14f4558c8c99d11852af2d317f1c09e86d43b10e0"
+  },
+  "chapter_11_9_standards_compliance_summary.md": {
+    "size": 1170,
+    "sha256": "891dccd282282e61357f312638eec5693b890428bb4fab9c86525ef5c8b1f429"
+  },
+  "chapter_12_10_tbd_markers.md": {
+    "size": 1021,
+    "sha256": "a50799b5e9b091a59102ff201ba6a97492dc0570773b58320e0dbf19ce7a319d"
+  }
+}
