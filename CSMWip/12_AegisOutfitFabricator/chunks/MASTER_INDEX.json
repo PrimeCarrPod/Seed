@@ -276,10 +276,10 @@
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/SYNTH-03_Geometric_Drafting_Kernel_Specification/MANIFEST.json"
   },
   "_summary": {
-    "total_documents": 48,
-    "total_chunks": 1131,
-    "total_bytes": 1519757,
-    "generated": "2026-10-18T21:30:00Z"
+    "total_documents": 52,
+    "total_chunks": 1179,
+    "total_bytes": 1598310,
+    "generated": "2026-10-18T21:40:00Z"
   },
   "DOC-35_Logistics_Supply_Chain": {
     "chunks": 12,
@@ -292,5 +292,29 @@
     "total_bytes": 19296,
     "aggregate_sha256": "01a020e9e708d5e7",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-36_Training_Certification/MANIFEST.json"
+  },
+  "DOC-37_Human_Factors_Ergonomics": {
+    "chunks": 12,
+    "total_bytes": 18074,
+    "aggregate_sha256": "f2d92eba97281f82",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-37_Human_Factors_Ergonomics/MANIFEST.json"
+  },
+  "DOC-38_Medical_Integration": {
+    "chunks": 12,
+    "total_bytes": 18103,
+    "aggregate_sha256": "23322264ea137844",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-38_Medical_Integration/MANIFEST.json"
+  },
+  "DOC-39_Cyber_Information_Operations": {
+    "chunks": 12,
+    "total_bytes": 20381,
+    "aggregate_sha256": "2469e13472ddccaa",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-39_Cyber_Information_Operations/MANIFEST.json"
+  },
+  "DOC-40_Test_Evaluation": {
+    "chunks": 12,
+    "total_bytes": 21995,
+    "aggregate_sha256": "034b9df88e9704e1",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-40_Test_Evaluation/MANIFEST.json"
   }
 }

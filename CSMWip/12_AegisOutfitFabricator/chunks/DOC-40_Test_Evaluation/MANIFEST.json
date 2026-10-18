@@ -1,0 +1,50 @@
+{
+  "chapter_01_intro.md": {
+    "size": 503,
+    "sha256": "5a5b6e2ba814ea1f7b25805b79e5f0804bcf451cd907da55cca325dab0797776"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 556,
+    "sha256": "1688b31fa75cc868756305c6deba10ce85b83de0db56f3b9fc4641137923da0a"
+  },
+  "chapter_03_1_developmental_test_dt.md": {
+    "size": 3893,
+    "sha256": "d76c1de84ade7a3231daf086dbd9c91e56ec3449b3bbc436cc7f1c3a36dd3aef"
+  },
+  "chapter_04_2_operational_test_ot.md": {
+    "size": 2842,
+    "sha256": "42aa9a6e62d9477a2a61ca6784c6b406d5f19f25eba8f7c02c7f3f4d1b060020"
+  },
+  "chapter_05_3_live_fire_test__evaluation_l.md": {
+    "size": 2884,
+    "sha256": "1d81ba065a9a2e47e83990ba46b58bc42ca0e8753b24eacf86d068a4cb47b690"
+  },
+  "chapter_06_4_environmental_qualification.md": {
+    "size": 2138,
+    "sha256": "19179f824f0377600dc06f219d0eacd042ba60edd8e2d320c7b317b6ac34434e"
+  },
+  "chapter_07_5_reliability_growth.md": {
+    "size": 1620,
+    "sha256": "d477338bd3141b730e5c0a50a55ba744789bd79cf8893bbe8db2fcac64661f37"
+  },
+  "chapter_08_6_cyber_ea_test.md": {
+    "size": 2261,
+    "sha256": "8e663f0748015b9e571571d4897db1bc689a23c041c816d86faabd5392ebe6e6"
+  },
+  "chapter_09_7_traceability_matrix.md": {
+    "size": 1290,
+    "sha256": "4a81115b74a028159e5c1216317ec05de4955f8c82dcf4bd1260572099abb3f9"
+  },
+  "chapter_10_8_formulas_reference.md": {
+    "size": 1439,
+    "sha256": "58e69976c8388ad1db5e60e3417b5b067bbe3417dcc8f9a6c4d9939b19693588"
+  },
+  "chapter_11_9_standards_compliance_summary.md": {
+    "size": 1712,
+    "sha256": "8dabfd465a50934a31ff816e467c730a2d555bbe8b6e035e4f1d45858aaefd1d"
+  },
+  "chapter_12_10_tbd_markers.md": {
+    "size": 857,
+    "sha256": "ffbcde85e1ecce47e36861f8816a7d95eda0f154544fe64a1ec7affbb443ec57"
+  }
+}
