@@ -209,6 +209,7 @@ public class PrimeTileDownloader {
                 
                 // Unique temp file per attempt to avoid EEXIST
                 String tempFile = targetFile + ".tmp.gz." + attempt + "." + System.currentTimeMillis();
+                new File(tempFile).delete(); // Clean any stale temp
                 long gzSize = 0;
                 try (InputStream in = conn.getInputStream(); FileOutputStream out = new FileOutputStream(tempFile)) {
                     byte[] buffer = new byte[16384];
@@ -303,16 +304,18 @@ void extractTarGz(String gzPath, String targetFile) throws IOException {
         }
         // Atomic rename
         File tempF = new File(tempExtract);
-        if (!tempF.renameTo(target)) {
-            // Fallback: copy + delete
+        boolean renamed = tempF.renameTo(target);
+        if (!renamed) {
+            // Fallback: explicit delete target, then copy temp to target
             SessionLogger.log("DL_EXT_RENAME_FALLBACK", currentDir, "rename failed, copying");
+            target.delete(); // Explicit delete before fallback copy
             try (FileInputStream in = new FileInputStream(tempExtract); FileOutputStream out = new FileOutputStream(targetFile, false)) {
                 byte[] buffer = new byte[8192]; int len;
                 while ((len = in.read(buffer)) > 0) out.write(buffer, 0, len);
             }
             tempF.delete();
         }
-        SessionLogger.log("DL_EXT_DONE", currentDir, "target_size=" + target.length());
+        SessionLogger.log("DL_EXT_DONE", currentDir, "target_size=" + target.length() + " renamed=" + renamed);
     }
     
     long parseOctal(String s) { try { return Long.parseLong(s.trim(), 8); } catch (NumberFormatException e) { return 0; } }
