@@ -1001,7 +1001,7 @@ updateHUD() {
                 for (const dir of this.directories) {
                     const count = this.tilesPerDir[dir] || 0;
                     for (let i = 0; i < count; i++) {
-                        const tileName = `Tile${String(i).padStart(2, '0')}.prime`;
+                        const tileName = `Tile0${i}.prime`;
                         const key = `${dir}/${tileName}`;
                         
                         // Try each base path
@@ -1029,7 +1029,7 @@ updateHUD() {
                 const tilesData = [];
                 
                 for (let i = startTile; i <= end; i++) {
-                    const tileName = `Tile${String(i).padStart(2, '0')}.prime`;
+                    const tileName = `Tile0${i}.prime`;
                     const key = `${dir}/${tileName}`;
                     
                     let data = null;
