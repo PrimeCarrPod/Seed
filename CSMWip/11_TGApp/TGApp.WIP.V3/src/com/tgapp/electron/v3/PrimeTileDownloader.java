@@ -237,14 +237,17 @@ public class PrimeTileDownloader {
                 
                 SessionLogger.logDownloadExtract(currentDir, tileName, gzSize, outSize, extractOk);
                 
-                // Also copy to app files dir for WebView access
+                // Copy to app files dir for WebView access (only if different from download dir)
                 String fileName = new File(targetFile).getName();
                 String dirName = new File(targetFile).getParentFile().getName();
                 String appTargetDir = appFilesDir + dirName + "/";
                 new File(appTargetDir).mkdirs();
                 String appTargetFile = appTargetDir + fileName;
-                new File(appTargetFile).delete(); // Avoid EEXIST
-                copyFile(targetFile, appTargetFile);
+                // Skip copy if source and destination are the same file
+                if (!targetFile.equals(appTargetFile)) {
+                    new File(appTargetFile).delete(); // Avoid EEXIST
+                    copyFile(targetFile, appTargetFile);
+                }
                 
                 // Clean up temp file
                 new File(tempFile).delete();
