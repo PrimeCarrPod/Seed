@@ -1,14 +1,70 @@
 {
-  "MANIFEST.json": {
-    "size": 273,
-    "sha256": "5b9ddad2814ffb26d574c432893e731aea32bd4e7347373a3f8db5e79baaeba9"
-  },
   "chapter_01_intro.md": {
-    "size": 9895,
-    "sha256": "3967f4fcacb42b9365e8e16b39a65cc0561c6be4f13697a1833a4bb12135923d"
+    "size": 435,
+    "sha256": "d2f5f66de0f3f562e2b466c50d96e91a041bd7bd5d9a7f3ef5318439ec0d7c0b"
   },
-  "chapter_02_10_conclusions.md": {
-    "size": 1425,
-    "sha256": "b1e095d7afa4ea5027950d59e710fca386e7d7158f6737492596ae2a251e1fcf"
+  "chapter_02_1_power__thermal_management_sy.md": {
+    "size": 1596,
+    "sha256": "e9bea681817899b95f60f0f9f3d27d6d1b157b106c3047ef8cc31ddcca590ef5"
+  },
+  "chapter_03_2_mhd_generator_system.md": {
+    "size": 3059,
+    "sha256": "350dad1d0caf80e4a7d59503d9231c722e64768012dccb2b3fc33aae1b8071b0"
+  },
+  "chapter_04_3_energy_storage_system.md": {
+    "size": 1800,
+    "sha256": "8234c44809cd984098e30e07ed97af58adbdaeadd93a7cccc8e58c59ccf326e3"
+  },
+  "chapter_05_4_heat_pump_thermal_loop.md": {
+    "size": 2996,
+    "sha256": "9fe791fb79f5699255b5ea12364610e3509d30d7a671b7f61f87ba803b1d3ebb"
+  },
+  "chapter_06_5_power_distribution_architect.md": {
+    "size": 1724,
+    "sha256": "4b64bdb542a36e111685f1290b8397018f1c3804df20076c150629f185185c66"
+  },
+  "chapter_07_6_renaissance_integration.md": {
+    "size": 1216,
+    "sha256": "b65214f04feec597846f4ff9c821860ad8f11f2c03cd80215c3582024fc7466f"
+  },
+  "chapter_08_7_edition-specific_configurati.md": {
+    "size": 709,
+    "sha256": "1692b7d8e4c58b88ddd95a8d3d180f74af597192b0d597bcded1e00d6dc7e1b5"
+  },
+  "chapter_09_8_manufacturing_and_quality_co.md": {
+    "size": 1613,
+    "sha256": "f87eca297d047df785f3c488076e401afb8d789dc4a66f98f002cb650eb3281f"
+  },
+  "chapter_10_9_cross-references.md": {
+    "size": 1209,
+    "sha256": "4f710ad6c68cf3a2f57a6b08d1c0fb94153ed90335d95c51d1b0ffdceecae1db"
+  },
+  "chapter_11_10_testing_and_validation_prot.md": {
+    "size": 1767,
+    "sha256": "3a1401ad6266cde19ac8da0d829be7a9609d9590d8c7a99962ed14d0227326e2"
+  },
+  "chapter_12_11_edition-specific_formulas.md": {
+    "size": 1552,
+    "sha256": "17c46debff1d88bded4e69af73d5f33f70bc7253038d34d3c93d847cef8a3e2d"
+  },
+  "chapter_13_12_traceability_matrix.md": {
+    "size": 1161,
+    "sha256": "25a342281d210be01fce36bde9eae17b11324aa3a1734e863a43e0230a0b9c36"
+  },
+  "chapter_14_13_standards_compliance_matrix.md": {
+    "size": 1176,
+    "sha256": "abc7443cf49abe807fb54f1c02130b8faf971d69dbf7d61c24d3af54d07927fe"
+  },
+  "chapter_15_14_[tbdresearch]_items.md": {
+    "size": 1090,
+    "sha256": "0f4c55d6c697c426ec84c6e9aa2ea08ef0c657c25b6f5c46c4a6705e619b991d"
+  },
+  "chapter_16_15_references_and_standards_ci.md": {
+    "size": 1245,
+    "sha256": "a3102a65524c6ded980165512455d8a89802b29ca9129630aa76f87d96d6c11c"
+  },
+  "chapter_17_16_conclusions.md": {
+    "size": 1633,
+    "sha256": "e6823d427037c46fffe6b6d2d4200c1cdb1c3c0b253061ebb881c1142240f679"
   }
 }
