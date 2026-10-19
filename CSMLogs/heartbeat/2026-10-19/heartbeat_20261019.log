@@ -1,2 +1,3 @@
 [2026-10-19T03:14:15Z] CMD: v3_038 tile count fix | STATUS: OK | DETAILS: Fixed tile counts (100 per dir, 0 for 2.1, 3500 for 3.0), added 404 skip logic (3 consecutive 404s at start skips dir)
 [2026-10-19T03:20:44Z] CMD: v3_039 500 tiles/dir | STATUS: OK | DETAILS: Hardcoded 500 tiles per directory (3000 total). Only 0.0 has tiles (500). Others 404 -> skip after 3 consecutive
+[2026-10-19T05:16:59Z] CMD: v3_041 public Downloads copy | STATUS: OK | DETAILS: After each directory completes, copies files to public Downloads/PrimeBookOne for persistence across uninstall
