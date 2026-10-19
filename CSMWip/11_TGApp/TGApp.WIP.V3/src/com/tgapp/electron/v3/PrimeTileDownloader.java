@@ -99,9 +99,19 @@ public class PrimeTileDownloader {
             String targetDir = downloadDir + singleDir + "/"; new File(targetDir).mkdirs();
             String targetFile = targetDir + tileName + ".prime";
             
-            if (fileExistsInAnyLocation(singleDir, tileName + ".prime")) {
+            File existingFile = findExistingFile(singleDir, tileName + ".prime");
+            if (existingFile != null) {
                 completedTiles++; 
-                SessionLogger.logDownloadVerify(singleDir, tileName, new File(targetFile).length(), true, true);
+                // Copy to app private dir if not already there
+                File targetF = new File(targetFile);
+                if (!targetF.exists() || targetF.length() == 0) {
+                    try {
+                        copyFile(existingFile.getAbsolutePath(), targetFile);
+                    } catch (IOException e) {
+                        SessionLogger.log("COPY_ERR", singleDir, "Failed to copy " + tileName + ": " + e.getMessage());
+                    }
+                }
+                SessionLogger.logDownloadVerify(singleDir, tileName, existingFile.length(), true, true);
                 postProgress(); 
                 continue; 
             }
@@ -117,11 +127,11 @@ public class PrimeTileDownloader {
             
             SessionLogger.logDownloadProgress(singleDir, i, completedTiles, totalTiles, speedKbps);
             
-            if (success) {
+            if (success && outSize > 0) {
                 completedTiles++;
                 SessionLogger.logDownloadVerify(singleDir, tileName, outSize, true, true);
             } else {
-                SessionLogger.logDownloadError(singleDir, tileName, "Download failed after retries");
+                SessionLogger.logDownloadError(singleDir, tileName, outSize > 0 ? "Download failed after retries" : "Empty file after extraction");
                 postCallback("onDownloadError", "\"Failed: " + tileName + " in " + singleDir + "\"");
             }
             
@@ -152,9 +162,19 @@ public class PrimeTileDownloader {
                 String targetDir = downloadDir + dir + "/"; new File(targetDir).mkdirs();
                 String targetFile = targetDir + tileName + ".prime";
                 
-                if (fileExistsInAnyLocation(dir, tileName + ".prime")) {
+                File existingFile = findExistingFile(dir, tileName + ".prime");
+                if (existingFile != null) {
                     completedTiles++;
-                    SessionLogger.logDownloadVerify(dir, tileName, new File(targetFile).length(), true, true);
+                    // Copy to app private dir if not already there
+                    File targetF = new File(targetFile);
+                    if (!targetF.exists() || targetF.length() == 0) {
+                        try {
+                            copyFile(existingFile.getAbsolutePath(), targetFile);
+                        } catch (IOException e) {
+                            SessionLogger.log("COPY_ERR", dir, "Failed to copy " + tileName + ": " + e.getMessage());
+                        }
+                    }
+                    SessionLogger.logDownloadVerify(dir, tileName, existingFile.length(), true, true);
                     postProgress(); 
                     continue; 
                 }
@@ -169,12 +189,12 @@ public class PrimeTileDownloader {
                 
                 SessionLogger.logDownloadProgress(dir, i, completedTiles, totalTiles, speedKbps);
                 
-                if (success) {
+                if (success && outSize > 0) {
                     completedTiles++;
                     SessionLogger.logDownloadVerify(dir, tileName, outSize, true, true);
                     consecutive404 = 0; // Reset on success
                 } else {
-                    SessionLogger.logDownloadError(dir, tileName, "Download failed after retries");
+                    SessionLogger.logDownloadError(dir, tileName, outSize > 0 ? "Download failed after retries" : "Empty file after extraction");
                     // Track consecutive 404s at start of directory to skip empty directories
                     if (i < 5) {
                         consecutive404++;
@@ -203,20 +223,24 @@ public class PrimeTileDownloader {
         }
     }
     
-    private boolean fileExistsInAnyLocation(String dir, String fileName) {
+    private File findExistingFile(String dir, String fileName) {
         // Check Downloads (primary)
         File f1 = new File(downloadDir + dir + "/" + fileName);
-        if (f1.exists() && f1.length() > 0) return true;
+        if (f1.exists() && f1.length() > 0) return f1;
         // Check Documents (legacy)
         File f2 = new File(documentsDir + dir + "/" + fileName);
-        if (f2.exists() && f2.length() > 0) return true;
+        if (f2.exists() && f2.length() > 0) return f2;
         // Check app files dir (WebView copy)
         File f3 = new File(appFilesDir + dir + "/" + fileName);
-        if (f3.exists() && f3.length() > 0) return true;
+        if (f3.exists() && f3.length() > 0) return f3;
         // Check public Downloads (persists across uninstall)
         File f4 = new File(publicDownloadsDir + dir + "/" + fileName);
-        if (f4.exists() && f4.length() > 0) return true;
-        return false;
+        if (f4.exists() && f4.length() > 0) return f4;
+        return null;
+    }
+    
+    private boolean fileExistsInAnyLocation(String dir, String fileName) {
+        return findExistingFile(dir, fileName) != null;
     }
     
     private void copyDirToPublicDownloads(String dir) {
