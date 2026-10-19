@@ -3,6 +3,8 @@ package com.tgapp.electron.v3;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.widget.Toast;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class JsBridge {
     private MainActivity activity;
@@ -67,5 +69,20 @@ public class JsBridge {
     @JavascriptInterface
     public void logPrimeEvent(String event, int loaded, int total, int dirsLoaded) {
         SessionLogger.logPrimeEvent(event, loaded, total, dirsLoaded);
+    }
+
+    @JavascriptInterface
+    public void saveFile(String filePath, byte[] data) {
+        try {
+            java.io.File file = new java.io.File(filePath);
+            file.getParentFile().mkdirs();
+            try (FileOutputStream fos = new FileOutputStream(file)) {
+                fos.write(data);
+            }
+            SessionLogger.log("FILE_SAVE", "TardigradiaApps", filePath + " size=" + data.length + " ok=true");
+        } catch (IOException e) {
+            Log.e("TGE_Electron", "Failed to save file: " + filePath, e);
+            SessionLogger.log("FILE_SAVE", "TardigradiaApps", filePath + " err=" + e.getMessage());
+        }
     }
 }
