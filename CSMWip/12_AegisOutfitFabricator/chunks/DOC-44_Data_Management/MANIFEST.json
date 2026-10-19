@@ -1,0 +1,50 @@
+{
+  "chapter_01_intro.md": {
+    "size": 453,
+    "sha256": "aab556af35e50632b1a03cbade1b995b108597feb3b2615af456c4e7b57d72cb"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 509,
+    "sha256": "622ab619b528bc5b1c5844a6d924a8db9c86fb95d52c33a0b4811bc7862e3dfb"
+  },
+  "chapter_03_1_technical_data_package_tdp.md": {
+    "size": 4186,
+    "sha256": "eb9fb3db5416b5d32bcfa1e623084b785acebd95ba4a617f05a56adb25eb3b21"
+  },
+  "chapter_04_2_data_rights.md": {
+    "size": 3131,
+    "sha256": "b7e8936603e7ad151ab8486693324b6c490cf9d76575685a039a9fdc92af070f"
+  },
+  "chapter_05_3_data_delivery.md": {
+    "size": 3135,
+    "sha256": "6231242e861b7069daa54a2d9bd511ebe2565397c7e5f67c39effa67a083a4ea"
+  },
+  "chapter_06_4_repository.md": {
+    "size": 5018,
+    "sha256": "9e312ef911c56aab468171e8e9a6c3f97e6d7ee14a173a7022258539f0c0a1cc"
+  },
+  "chapter_07_5_model-based_definition_mbd.md": {
+    "size": 2652,
+    "sha256": "62e9c41445e1c15449bc35b2666614a5436b074c7030ab299618a2415e678bee"
+  },
+  "chapter_08_6_intellectual_property.md": {
+    "size": 1961,
+    "sha256": "b7f00b7e28a0a2bfb773c5b62a587368d8814711c836f30d13f515d083fe37e2"
+  },
+  "chapter_09_7_traceability_matrix.md": {
+    "size": 1128,
+    "sha256": "151b02fb41bc7793a35dd347ab7f7463c13ab0e7aee0f6f7119356ecc9b4859f"
+  },
+  "chapter_10_8_formulas_reference.md": {
+    "size": 347,
+    "sha256": "6c8ae07516c28d250c42ea114a1e69c687e0d38a8ee1f4c44ec7062ce2723b5a"
+  },
+  "chapter_11_9_standards_compliance_summary.md": {
+    "size": 1692,
+    "sha256": "922747036fc30cda9bb2705b04470ca9873206cab4303c534b7135e334fff5f2"
+  },
+  "chapter_12_10_tbd_markers.md": {
+    "size": 897,
+    "sha256": "a12a5fbe8bfd9b35588ebd29164a774f902b33ef414ea82c2345bd746caf12ac"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "chapter_01_intro.md": {
+    "size": 433,
+    "sha256": "6603dbe08df3b68d69a9fd2dcb3fe4548ee6caa8dd80d28c3e0e400109aa8bc8"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 628,
+    "sha256": "917fee3b47b45bf34fbd813d648a927be8ec307b6dece54eb2481e515f412d32"
+  },
+  "chapter_03_1_esoh_program_overview.md": {
+    "size": 1740,
+    "sha256": "ead0ce5b9ea4840e7c0bf3f3d797a76c35537539227e6c0ee43d2e9c7c8e419a"
+  },
+  "chapter_04_2_environmental_compliance.md": {
+    "size": 4656,
+    "sha256": "dfe580178075a1cf1339ccd49fa4973c0c7a6c10041b3cf728264d9341381d23"
+  },
+  "chapter_05_3_occupational_safety__health.md": {
+    "size": 3528,
+    "sha256": "5c30f3853b2efb661391dd045264899eb59df07796c63ae02eb9ada4ac5a9321"
+  },
+  "chapter_06_4_hazardous_materials_manageme.md": {
+    "size": 3205,
+    "sha256": "ea63e993421155b96a0a3d48912a6874d0fb0089aa52ce63cd4d55e20e53d7c4"
+  },
+  "chapter_07_5_manufacturing_esoh.md": {
+    "size": 3009,
+    "sha256": "03ce155d3804e9caf5c4703945e48dcc15e9bf3799d5c600c8d66a700306b065"
+  },
+  "chapter_08_6_operational_esoh.md": {
+    "size": 2162,
+    "sha256": "6e09eb30686888b5f1c174c07e4de8870893663e93bf49cb46d831a381bd00b8"
+  },
+  "chapter_09_7_disposal__circular_economy.md": {
+    "size": 2053,
+    "sha256": "b7f03040349d3af9350fa2f81417fcbec881d3c3c3687a175917f5003d125e75"
+  },
+  "chapter_10_8_traceability_matrix.md": {
+    "size": 1202,
+    "sha256": "194471f5707e9d8970f3b57523ffcfcf0e3a779836b39d836b5c8f012a1cf639"
+  },
+  "chapter_11_9_formulas_reference.md": {
+    "size": 402,
+    "sha256": "5f89fb978e02fc591bc89a6139c82a499b5841e8f1ace64869c4fa99bccadf86"
+  },
+  "chapter_12_10_standards_compliance_summar.md": {
+    "size": 1967,
+    "sha256": "1d49f55cf2469e9199b1d8338dd755d05b4673a64daa2dc74741cf8c852353c3"
+  },
+  "chapter_13_11_tbd_markers.md": {
+    "size": 889,
+    "sha256": "f2035d3e715fb7c7200f6cb58de5c52421333c5aa3837073117ef6ef1401a723"
+  }
+}
