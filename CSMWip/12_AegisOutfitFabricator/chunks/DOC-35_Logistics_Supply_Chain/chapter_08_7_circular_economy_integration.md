@@ -1,94 +1,70 @@
-## 7. Circular Economy Integration — Phoenix Protocol
+## 7. Circular Economy Integration — Phoenix Protocol (CSMFAB078 §8)
 
-### 7.1 Phoenix Protocol Overview (Per CSMFAB078 §8)
-The **Phoenix Protocol** implements closed-loop material recovery for end-of-life and expired AIMES components, targeting **≥85% mass recovery** across all 12 layers.
-
-### 7.2 Material Recovery Flows
+### 7.1 Recovery Flow Architecture
 
 ```
-PHOENIX PROTOCOL MATERIAL FLOWS:
+PHOENIX PROTOCOL CLOSED-LOOP (Target: ≥85% mass recovery):
 
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        PHOENIX PROTOCOL RECOVERY FLOWS                        │
-├──────────────┬──────────────────┬──────────────────┬────────────────────────┤
-│ INPUT        │ PROCESS          │ OUTPUT           │ RECOVERY RATE          │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ ZrB₂-SiC     │ H₂SO₄ leach      │ ZrO₂ (85-92%)    │ 85-92%                 │
-│ Tiles        │ @120°C, 4hr      │ → Re-boronization│                        │
-│              │                  │ SiC sludge (8%)  │                        │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ YInMn Blue   │ [P8888][Cl] ionic│ In metal (99.4%) │ 99.4% (In)             │
-│ Pigment      │ liquid extraction│ Y₂O₃ (95%)       │ 95% (Y)                │
-│              │ @80°C, 2hr       │ MnO₂ (90%)       │ 90% (Mn)               │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ BFRP/Elium®  │ Thermal depoly-  │ MMA monomer      │ 100% (monomer)         │
-│ Framework    │ merization @350°C│ Basalt fiber     │ 95% (fiber)            │
-│              │ N₂ atmosphere    │ (reusable)       │                        │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ MXene        │ Re-etch from     │ Ti₃C₂Tₓ (re-     │ 90% (MXene yield)      │
-│ (Ti₃C₂Tₓ)    │ recovered MAX    │ synthesized)     │                        │
-│              │ Phase (HF/HCl)   │                  │                        │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ MR Fluid     │ CIP magnetic     │ CIP particles    │ 98% (CIP)              │
-│              │ separation       │ Carrier oil      │ 95% (oil distillation) │
-│              │ + distillation   │ (re-formulated)  │                        │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ Aerogel      │ Supercritical    │ Silica aerogel   │ 80% (re-quilted)       │
-│ Panels       │ CO₂ extraction   │ (re-densified)   │                        │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ Battery      │ Hydrometallurgy  │ Li₂CO₃ (92%)     │ 92% (Li)               │
-│ Modules      │ (H₂SO₄/H₂O₂)     │ S (85%)          │ 85% (S)                │
-│              │                  │ Cu/Al foil (98%) │ 98% (foil)             │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ PVDF-TrFE    │ Solvent recovery │ PVDF-TrFE pellets│ 90% (polymer)          │
-│ Sensors      │ (DMF/acetone)    │ (re-extruded)    │                        │
-├──────────────┼──────────────────┼──────────────────┼────────────────────────┤
-│ Seal         │ Pyrolysis        │ Carbon black     │ 70% (filler)           │
-│ Gaskets      │ @600°C           │ Fluorosilicone   │ 60% (monomer recovery) │
-└──────────────┴──────────────────┴──────────────────┴────────────────────────┘
-
-OVERALL SYSTEM RECOVERY RATE: 87.3% (mass-weighted average)
+END-OF-LIFE AIMES / LRUs
+       │
+       ▼
+  DEPOT RECEIVING & TRIAGE
+       │  (Automated: RFID, vision, mass spec)
+       ▼
+  ┌─────────────────────────────────────────────────┐
+  │ DISASSEMBLY CELL (Robotic — Sewbo Gen 3)        │
+  │  - Layer separation (12 layers)                 │
+  │  - LRU extraction (neuromorphic, MHD, battery)  │
+  │  - Fastener recovery (Ti₃AlC₂ cleats, Dyneema)  │
+  └─────────────────────────────────────────────────┘
+       │
+       ├── CERAMIC TILES ──────────────▶ SINTER RECLAIM (98% yield)
+       ├── MR FLUID ───────────────────▶ FILTRATION/RECONSTITUTE (90%)
+       ├── MXENE TEXTILES ─────────────▶ CHEMICAL RECYCLE (85%)
+       ├── AEROGEL ────────────────────▶ RE-SUPERCRITICAL DRY (80%)
+       ├── BALEEN ─────────────────────▶ RE-EXTRUDE (95%)
+       ├── DYNEEMA ────────────────────▶ RE-SPOOL/RE-WEAVE (92%)
+       ├── NEUROMORPHIC ASIC ──────────▶ TEST/REQUALIFY (70%)
+       ├── MHD STACK ──────────────────▶ REBUILD (75%)
+       ├── BATTERY MODULES ────────────▶ CELL HARVEST/REFORM (65%)
+       ├── FRAMEWORK STEEL/BALEEN ──────▶ RE-ROLL/RE-FORM (90%)
+       └── SEAL ELASTOMERS ────────────▶ DEVULCANIZE (60%)
+       │
+       ▼
+  REQUALIFICATION LINE (MIL-STD-1540 equivalent)
+       │
+       ▼
+  RETURN TO I-LEVEL STOCK (Phoenix-marked, full traceability)
 ```
 
-### 7.3 Phoenix Protocol Economics
-**Cost-Benefit Analysis** for 240-system fleet over 20 years:
+### 7.2 Recovery Rate Equations
 
-```
-PHOENIX PROTOCOL ECONOMIC MODEL (20-YEAR NPV, 5% DISCOUNT):
+**Material Recovery Rate:**
+$$\eta_{recovery,k} = \frac{m_{recovered,k}}{m_{input,k}} \times 100\%$$
 
-INPUT PARAMETERS:
-  Fleet Size: 240 systems
-  System Mass: ~300 kg (12-layer stack)
-  Annual Attrition: 5% (12 systems/yr)
-  Scheduled Depot Overhaul: 5% (12 systems/yr)
-  Total Annual Throughput: 24 systems/yr = 7,200 kg/yr
+**System-Level Circularity Index (Per CSMFAB078 §8):**
+$$CI = \frac{\sum_k (m_{recovered,k} \times v_k)}{\sum_k (m_{input,k} \times v_k)} \times 100\%$$
 
-RECOVERY REVENUE (Annual):
-  ZrO₂ (recovered):     1,850 kg × $45/kg    = $83,250
-  In (recovered):         42 kg × $25/kg      = $1,050
-  MMA monomer:         1,200 kg × $3.50/kg   = $4,200
-  Basalt fiber:         950 kg × $8/kg        = $7,600
-  MXene (re-synth):      35 kg × $1,200/kg    = $42,000
-  CIP particles:        480 kg × $180/kg     = $86,400
-  Carrier oil:        2,100 kg × $2.50/kg    = $5,250
-  Li₂CO₃:               280 kg × $22/kg      = $6,160
-  PVDF-TrFE:            180 kg × $85/kg      = $15,300
-  ──────────────────────────────────────────────────
-  TOTAL ANNUAL REVENUE:                   $251,210
+Where $v_k$ = strategic value weight (Ceramic=1.0, ASIC=1.0, Battery=0.8, Textiles=0.5, Structure=0.6).
 
-OPERATING COSTS (Annual):
-  Phoenix Facility OPEX:                  $180,000
-  Transport/Logistics:                    $45,000
-  QA/Recertification:                     $60,000
-  ──────────────────────────────────────────────────
-  TOTAL ANNUAL COST:                      $285,000
+**Target: $CI \geq 85\%$ by Year 5, $\geq 92\%$ by Year 10.**
 
-NET ANNUAL: -$33,790 (Years 1-3: ramp-up)
-NET ANNUAL: +$45,000 (Years 4-20: steady state)
+### 7.3 Phoenix Protocol Quality Assurance
 
-20-YEAR NPV: +$420,000 (positive after Year 4)
-ENVIRONMENTAL: 87.3% diversion from landfill
-STRATEGIC: Supply chain resilience (In, MXene, CIP domestic)
-```
+**Requalification Standards (Per Material):**
+| Material | Requal Standard | Test Sampling | Acceptance |
+|----------|-----------------|---------------|------------|
+| Ceramic Tiles | MIL-STD-1540 + ASTM E2858 | 100% visual + 10% ballistic | 0 defects |
+| MR Fluid | LORD MRF-132DG spec | 100% rheology | ±5% viscosity |
+| MXene Textiles | CSM-MX-001 Rev C | 100% conductivity + 5% EMI SE | ≥95% original |
+| Neuromorphic ASIC | Intel Loihi-3 test vectors | 100% functional | 0 hard failures |
+| Battery Cells | UL 2580 + NASA JSC 20793 | 100% capacity + 20% abuse | ≥90% capacity |
+
+**Traceability:** Each Phoenix-recovered LRU carries **Digital Twin ID** linking to:
+- Original manufacture lot
+- Service history (PHM logs)
+- Recovery batch & date
+- Requalification test data
+- Blockchain record (ISO 22301)
 
 ---

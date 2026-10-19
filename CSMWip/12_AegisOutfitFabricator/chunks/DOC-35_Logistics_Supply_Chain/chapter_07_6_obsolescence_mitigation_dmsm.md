@@ -1,71 +1,51 @@
 ## 6. Obsolescence Mitigation (DMSMS) — SAE AS6294
 
-### 6.1 DMSMS Management Framework
-Per **SAE AS6294** and **DoDI 4151.22**, proactive DMSMS management:
+### 6.1 DMSMS Management Process
+
+**DMSMS Risk Assessment (Quarterly):**
+$$R_{DMSMS} = P_{obs} \times I_{impact} \times U_{urgency}$$
+
+Where:
+- $P_{obs}$ = Probability of obsolescence (0–1, from GIDEP/SD-22)
+- $I_{impact}$ = Mission impact (1–5: Class A=5, B=4, C=3, D=1)
+- $U_{urgency}$ = Time to stockout / lead time (dimensionless)
+
+**Risk Thresholds:**
+| Risk Score | Action | Timeline |
+|------------|--------|----------|
+| **R ≥ 15** | Immediate mitigation | 30 days |
+| **10 ≤ R < 15** | Active mitigation | 90 days |
+| **5 ≤ R < 10** | Monitor + plan | 180 days |
+| **R < 5** | Routine watch | Annual |
+
+### 6.2 Mitigation Strategies (Per SAE AS6294)
+
+| Strategy | Applicability | Lead Time | Cost Factor |
+|----------|---------------|-----------|-------------|
+| **Last-Time Buy (LTB)** | All classes, sufficient forecast | 6–12 months | 1.5–3× unit cost |
+| **Alternate Source Qualification** | Class B/C/D, form-fit-function | 12–24 months | 2–5× NRE |
+| **Life-of-Type Buy (LOTB)** | Class A, sole source | 18–36 months | 3–10× unit cost |
+| **Redesign / Retrofit** | Class A/B, technology refresh | 24–48 months | 10–50× NRE |
+| **Emulation / FPGA** | Neuromorphic ASIC, controllers | 12–18 months | 5–15× NRE |
+| **Additive Manufacturing** | Framework, seals, non-critical | 3–6 months | 2–10× unit cost |
+| **Phoenix Protocol Recovery** | Ceramics, metals, textiles | Continuous | 0.3–0.6× new cost |
+
+### 6.3 DMSMS Tracking Database (GLO Module)
 
 ```
-DMSMS MANAGEMENT PROCESS (SAE AS6294 COMPLIANT):
-
-1. IDENTIFY (Continuous)
-   ├── Monitor: GIDEP, PCN/EOL notices, supplier health
-   ├── Sources: DLA, manufacturer roadmaps, industry consortiums
-   ├── Tools: AS6294 PHM data → RUL prediction for components
-   └── Output: DMSMS Watch List (updated monthly)
-
-2. ASSESS (Per occurrence)
-   ├── Impact Analysis:
-   │    ├─ Form: Dimensional equivalence?
-   │    ├─ Fit: Interface compatibility?
-   │    ├─ Function: Performance equivalence?
-   │    └─ Interface: Data/power/mechanical?
-   ├── Risk Score = P(obsolescence) × I(cost) × U(urgency)
-   │    P = Probability (0-1, supplier health, market signals)
-   │    I = Impact ($ to redesign/requalify, schedule delay)
-   │    U = Urgency (months to stock-out)
-   └── Categorize: CRITICAL (>100), HIGH (50-100), MEDIUM (20-50), LOW (<20)
-
-3. RESOLVE (Per risk category)
-   ├── CRITICAL/HIGH: Immediate action
-   │    ├─ LOTB: Life-of-Type Buy (calculate qty = demand × coverage)
-   │    ├─ Alternate: Qualified substitute (MIL-STD-1540 test)
-   │    ├─ Redesign: Form-fit-function replacement (D-Level)
-   │    └─ Emulation: FPGA/ASIC emulation (neuromorphic only)
-   ├── MEDIUM: Planned action (≤180 days)
-   │    ├─ Supplier engagement (extend production)
-   │    ├─ Alternate qualification
-   │    └─ Redesign initiation
-   └── LOW: Monitor (≤365 days)
-        └─ Watch list, periodic reassessment
-
-4. DOCUMENT & REPORT
-   ├── DMSMS Case File (per AS6294)
-   ├── LOTB Authorization (CSM Engineering)
-   ├── Alternate Qualification Test Report (MIL-STD-1540)
-   ├── Redesign ECP (Engineering Change Proposal)
-   └── Quarterly DMSMS Report to Program Office
-```
-
-### 6.2 Critical DMSMS Items — Current Watch List
-
-```
-CURRENT DMSMS WATCH LIST (As of Runner 019 Baseline):
-
-| Item                 | NSN/PN          | Supplier       | Risk | Status          | Resolution          | Target Date |
-|----------------------|-----------------|----------------|------|-----------------|---------------------|-------------|
-| Neuromorphic ASIC    | CSM-AIMES-010   | TSMC 7nm       | 180  | ACTIVE          | Redesign (12nm)     | Q2 2027     |
-| MXene Precursor      | CSM-AIMES-MX01  | Drexel/CSM     | 120  | ACTIVE          | Alt source qualified| Q4 2026     |
-| YInMn Pigment        | CSM-AIMES-YM01  | Shepherd Color | 85   | MONITOR         | LOTB (500kg)        | Q1 2027     |
-| MR Fluid CIP         | CSM-AIMES-MR01  | Lord Corp      | 65   | MONITOR         | Alt supplier (2)    | Q3 2027     |
-| PVDF-TrFE Film       | CSM-AIMES-PV01  | Arkema         | 45   | MONITOR         | LOTB (2000m²)       | Q4 2027     |
-| Baleen (Synthetic)   | CSM-AIMES-BL01  | CSM BioMfg     | 20   | LOW             | Internal capacity   | N/A         |
-| Dyneema SK99         | CSM-AIMES-DY01  | DSM            | 15   | LOW             | Multi-source        | N/A         |
-
-LOTB CALCULATION (Neuromorphic ASIC Example):
-  Annual Demand = 240 systems × 0.005 OFR × 1200 hrs = 1.44 units/yr
-  20-Year Need = 29 units + 50% safety = 44 units
-  LOTB Quantity = 50 units (full wafer run minimum)
-  Cost = 50 × $285,000 = $14.25M
-  ROI = Avoided redesign ($45M) + schedule (18 months)
+DMSMS RECORD FIELDS (Per SAE AS6294 Appendix A):
+  - NSN / Part Number
+  - LRU Classification (A/B/C/D)
+  - OEM / Cage Code
+  - GIDEP Alert ID / SD-22 Notice
+  - Risk Score (R_DMSMS)
+  - Mitigation Strategy Selected
+  - Mitigation Status: PLANNED / IN_PROGRESS / QUALIFIED / DEPLOYED
+  - Qualification Data: Test reports, FAI, source approval
+  - Cost Estimate / Actual
+  - Timeline: Alert Date → Mitigation Complete
+  - Configuration Impact: Affected AIMES editions/zones
+  - Phoenix Protocol Applicability: YES/NO + recovery rate
 ```
 
 ---

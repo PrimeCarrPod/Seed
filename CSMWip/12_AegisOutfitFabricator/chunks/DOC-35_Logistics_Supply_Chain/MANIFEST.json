@@ -1,46 +1,58 @@
 {
   "chapter_01_intro.md": {
-    "size": 469,
-    "sha256": "439b339664ec618c48f50af2e3a76bef84bfb2edbda00034ae7f59acbcb211b1"
+    "size": 451,
+    "sha256": "ec2fb627b78ad2479796153d07a73c6400236a24f1856e257f2bb2212b62dd9a"
   },
   "chapter_02_1_logistics__supply_chain_syst.md": {
-    "size": 3521,
-    "sha256": "6928395b66025b11c470851cd8bb706b11c301d4cb18235ee8d30299bbb8c532"
+    "size": 2300,
+    "sha256": "12a0a5bda23a82c0281f0dc277d3c77d60505a02be0ee239acdbadd7512dbe05"
   },
-  "chapter_03_2_supply_chain_architecture__t.md": {
-    "size": 2575,
-    "sha256": "4d4532606a42ad3038aca695b288df5226f75adfe7e5cb3e1a32dbaa99e3963d"
+  "chapter_03_2_supply_chain_architecture.md": {
+    "size": 3162,
+    "sha256": "74fe9f878ad46fa733dd16dcbe43dd31cb354919c62d96bce3ba3b30c1d5985a"
   },
-  "chapter_04_3_spares_provisioning_model__i.md": {
-    "size": 3725,
-    "sha256": "0745f68dd2ba21f9f4a47698bbcef599d0708775f98a51b0b8142c211bbbb0c5"
+  "chapter_04_3_spares_provisioning_model.md": {
+    "size": 2712,
+    "sha256": "cd6c8b8e199274f1beff826fc10f9cdeadd0a86e9dcbf30e9b0f61c1c3ad737d"
   },
-  "chapter_05_4_distribution_network__cold_c.md": {
-    "size": 3510,
-    "sha256": "cef2b99604bf06f1ec004e33d9f6dcbbf40c175d9eaaeeb62c2ffcb357d80ddc"
+  "chapter_05_4_distribution_network.md": {
+    "size": 2016,
+    "sha256": "d42424b7af52d9b5604b4ec37f74bce3fd9c12a789d2182b8de6fa80c37d221d"
   },
-  "chapter_06_5_shelf-life_management__monit.md": {
-    "size": 3726,
-    "sha256": "ec00847dd84ab85f12420024908f932d191f36b233adfbfea0b8850917204e6b"
+  "chapter_06_5_shelf-life_management.md": {
+    "size": 2681,
+    "sha256": "90e6827244ed9374758883a3acba3b362923962107f42fc36c1de89024b548ff"
   },
   "chapter_07_6_obsolescence_mitigation_dmsm.md": {
-    "size": 3520,
-    "sha256": "f879b1410bd878cd6fb9f5eea687df9153bb0a1025a2495812bc84a211d0c7c7"
+    "size": 2107,
+    "sha256": "565c29c2dbf59af4a1ae87a9e13bd87407c0f6340dde20454a51d034604dc1c2"
   },
   "chapter_08_7_circular_economy_integration.md": {
-    "size": 7423,
-    "sha256": "17329237c116818a9e41c551342e49fa87bd5ba2fca18e60b985f8b180a32204"
+    "size": 3470,
+    "sha256": "06e105b3e385f86ea66de0e797c8039a3be1d0f837759c82dab12ddc2c228149"
   },
-  "chapter_09_8_traceability_matrix__doc-35_.md": {
-    "size": 2369,
-    "sha256": "a576e90f34c49a768a4562d82b40ec2471b07798ad351e9ebe483d856c490876"
+  "chapter_09_8_traceability_matrix.md": {
+    "size": 932,
+    "sha256": "fd9fafbafaf751bfbc57bdea02b9dba6641323e0c66dac996db7035c6c7cde2a"
   },
-  "chapter_10_9_standards_compliance_summary.md": {
-    "size": 933,
-    "sha256": "32882a3d7a62e65856316be11eb10a51289a0cad47c0f1469745b06aead68d03"
+  "chapter_10_9_logistics_information_system.md": {
+    "size": 1665,
+    "sha256": "a85b8d54a58cec9c4e097f3b13cabc49379d758b13d0fe6cfd6bfce23458d4be"
   },
-  "chapter_11_10_tbd_markers__research_requi.md": {
-    "size": 952,
-    "sha256": "aecbb78270ca2592a08e4754bb978aa181df5a1f90f59016cd8b2e2bb497ccf8"
+  "chapter_11_10_logistics_training__certifi.md": {
+    "size": 975,
+    "sha256": "417d4e8f6f7158d8bb0e074c71f317455f9d235a5a6846aee22410b08df149bf"
+  },
+  "chapter_12_11_implementation_roadmap.md": {
+    "size": 704,
+    "sha256": "afb7822d4a90f91e09aa972d24071be1cfe66fc8b2674d87b3d61141fa35261e"
+  },
+  "chapter_13_12_acronyms__definitions.md": {
+    "size": 1959,
+    "sha256": "1af96797fa56906f69879d468ed4786d0079eca3d5310eb743acb0d6ad006285"
+  },
+  "chapter_14_13_references.md": {
+    "size": 2795,
+    "sha256": "f49cb09f41474a278174421b03bb20d8fc5335419370d9f0033ecece2fecffee"
   }
 }
