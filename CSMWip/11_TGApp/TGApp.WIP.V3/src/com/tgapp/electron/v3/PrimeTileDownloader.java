@@ -39,10 +39,15 @@ public class PrimeTileDownloader {
         // Tertiary: App-specific external files dir (for WebView access, persists across updates)
         this.appFilesDir = activity.getExternalFilesDir(null).getAbsolutePath() + "/PrimeBookOne/";
         new File(appFilesDir).mkdirs();
+        // Public Downloads folder (persists across uninstall, user-visible)
+        File downloadsDirFile = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        this.publicDownloadsDir = downloadsDirFile.getAbsolutePath() + "/PrimeBookOne/";
+        new File(publicDownloadsDir).mkdirs();
     }
     
     private String appFilesDir;
     private String documentsDir;
+    private String publicDownloadsDir;
     
     @JavascriptInterface
     public String getDownloadDir() { return downloadDir; }
@@ -187,6 +192,8 @@ public class PrimeTileDownloader {
             if (isDownloading) {
                 long dirDuration = System.currentTimeMillis() - dirStartTime;
                 SessionLogger.logDownloadComplete(dir, completedTiles, totalTiles, dirDuration);
+                // Copy completed directory to public Downloads for persistence across uninstall
+                copyDirToPublicDownloads(dir);
             }
         }
         if (isDownloading) {
@@ -206,7 +213,33 @@ public class PrimeTileDownloader {
         // Check app files dir (WebView copy)
         File f3 = new File(appFilesDir + dir + "/" + fileName);
         if (f3.exists() && f3.length() > 0) return true;
+        // Check public Downloads (persists across uninstall)
+        File f4 = new File(publicDownloadsDir + dir + "/" + fileName);
+        if (f4.exists() && f4.length() > 0) return true;
         return false;
+    }
+    
+    private void copyDirToPublicDownloads(String dir) {
+        File srcDir = new File(downloadDir + dir + "/");
+        File dstDir = new File(publicDownloadsDir + dir + "/");
+        if (!srcDir.exists() || !srcDir.isDirectory()) {
+            SessionLogger.log("DIR_COPY", dir, "Source dir not found: " + srcDir.getAbsolutePath());
+            return;
+        }
+        dstDir.mkdirs();
+        File[] files = srcDir.listFiles();
+        if (files == null) return;
+        int copied = 0;
+        for (File srcFile : files) {
+            File dstFile = new File(dstDir, srcFile.getName());
+            try {
+                copyFile(srcFile.getAbsolutePath(), dstFile.getAbsolutePath());
+                copied++;
+            } catch (IOException e) {
+                SessionLogger.log("DIR_COPY_ERR", dir, "Failed to copy " + srcFile.getName() + ": " + e.getMessage());
+            }
+        }
+        SessionLogger.log("DIR_COPY", dir, "Copied " + copied + " files to public Downloads");
     }
     
     private boolean downloadAndExtract(String urlString, String targetFile, String tileName) {
