@@ -277,14 +277,14 @@
   },
   "_summary": {
     "total_documents": 52,
-    "total_chunks": 1179,
-    "total_bytes": 1598310,
-    "generated": "2026-10-18T21:40:00Z"
+    "total_chunks": 1178,
+    "total_bytes": 1607303,
+    "generated": "2026-10-19T00:37:00Z"
   },
   "DOC-35_Logistics_Supply_Chain": {
-    "chunks": 12,
-    "total_bytes": 23730,
-    "aggregate_sha256": "0b6483e438049d88",
+    "chunks": 11,
+    "total_bytes": 32723,
+    "aggregate_sha256": "ebc0f4ab8747c5c7",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-35_Logistics_Supply_Chain/MANIFEST.json"
   },
   "DOC-36_Training_Certification": {
