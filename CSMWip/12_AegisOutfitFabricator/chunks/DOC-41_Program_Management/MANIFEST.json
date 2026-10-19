@@ -1,0 +1,50 @@
+{
+  "chapter_01_intro.md": {
+    "size": 439,
+    "sha256": "7271ad4d81d02c6b14ee14186e01b78175f71e5c72780da339449888270d7cf4"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 533,
+    "sha256": "4abab2ca6555afc332205b9676314f1fb0abc313ab14837635993dcd8056eee6"
+  },
+  "chapter_03_1_integrated_master_schedule_i.md": {
+    "size": 6773,
+    "sha256": "0408ece50b741232fefabf6c51f01858af1a61ed373bf0a78d8aa43fb3ceb5d5"
+  },
+  "chapter_04_2_earned_value_management_evm.md": {
+    "size": 2977,
+    "sha256": "674843dafe4bb51dad1f7909adcd898babf51d0bf552cc073d447a41bba6f0f7"
+  },
+  "chapter_05_3_risk_management.md": {
+    "size": 4656,
+    "sha256": "7f69f411399190b14e32e38c138b8adecc74e3783b6150d1d74899cd076e9d97"
+  },
+  "chapter_06_4_cost_estimation.md": {
+    "size": 2531,
+    "sha256": "e2d857d9398afb217b51eda900045a33a7e5b23117f87b213f34406cdf34b785"
+  },
+  "chapter_07_5_contract_strategy.md": {
+    "size": 1625,
+    "sha256": "138282b7b056d26370011551ce06e88d0f13c4cee135b285e301359c6ad626d5"
+  },
+  "chapter_08_6_program_reviews.md": {
+    "size": 1527,
+    "sha256": "9c4a4b05f80dab6c419a5b80264dc2d7d2ccc29da4c0ce0ececdd19c576f6e17"
+  },
+  "chapter_09_7_traceability_matrix.md": {
+    "size": 987,
+    "sha256": "a3b0ea8a4bf31f0dc1bfab87725e114e3a65db091149888ee8bc0bf2aa1f881d"
+  },
+  "chapter_10_8_formulas_reference.md": {
+    "size": 1741,
+    "sha256": "34792d0c9d04f45b6a19f9ac1bd387eb12342bd2c51df92cb83d7a8b2cd4486a"
+  },
+  "chapter_11_9_standards_compliance_summary.md": {
+    "size": 1287,
+    "sha256": "8aca9e5bbd4873ce293d287af7c914cb3adc0389b3586e3630ded06f82861c36"
+  },
+  "chapter_12_10_tbd_markers.md": {
+    "size": 1003,
+    "sha256": "46201c83e66fafe8a25b539e0526c3a980c1cc9bb2587104fe45433b92abf414"
+  }
+}

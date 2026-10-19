@@ -1,0 +1,50 @@
+{
+  "chapter_01_intro.md": {
+    "size": 449,
+    "sha256": "7d4837b390b16522fc6adf7caeccf4ab8c7efea6a1302280ed6e881776603359"
+  },
+  "chapter_02_table_of_contents.md": {
+    "size": 706,
+    "sha256": "6ed5f0d710acfe028c59af40b8f273e3e5acb412c7e0a389cb7c4319660aa741"
+  },
+  "chapter_03_1_training_system_architecture.md": {
+    "size": 2529,
+    "sha256": "e0b0846c65baba4b19995013292f74e52d0eaba9fc98862e5d778a4eece6b02b"
+  },
+  "chapter_04_2_simulation_infrastructure__c.md": {
+    "size": 7049,
+    "sha256": "a4989fd4af44f19c08e474d6ded7ed23e6823058bf6f5b78f45974ccfbd215e3"
+  },
+  "chapter_05_3_synthetic_training_environme.md": {
+    "size": 2788,
+    "sha256": "8748298f6ac49a7928fa35a55325517e82f5bbf665f2ee2412554eaf91c70f4a"
+  },
+  "chapter_06_4_curriculum_integration__mana.md": {
+    "size": 1546,
+    "sha256": "a0812040e4af6b66ff2b82fada82ea4a71d6d26c44e8e5e3474896c8b649ac0c"
+  },
+  "chapter_07_5_instructor__assessment_syste.md": {
+    "size": 2115,
+    "sha256": "7adc6134e8e3cd576dd84f94df57a9e69e9d9bc2d22f5617f064ce5d1fafa3d3"
+  },
+  "chapter_08_6_distributed_mission_operatio.md": {
+    "size": 2834,
+    "sha256": "650b614dff4ae4b29ea458c12af65e5d72647c9bd7c935ba8416c82d5ab20be7"
+  },
+  "chapter_09_7_traceability_matrix.md": {
+    "size": 1305,
+    "sha256": "f008e39d808ca7fe81fc317d825beb2dd419897ed4b6dc85d757a0cf90bec8cc"
+  },
+  "chapter_10_8_formulas_reference.md": {
+    "size": 373,
+    "sha256": "353116ea696263c70aa510221bd952d40d8b2cad8b0f9ae3637148b59514426d"
+  },
+  "chapter_11_9_standards_compliance_summary.md": {
+    "size": 1689,
+    "sha256": "b267941645ad220160cb40298aa2f4c69cbcedcb7568bec25c84ad07db02f179"
+  },
+  "chapter_12_10_tbd_markers.md": {
+    "size": 891,
+    "sha256": "61ab3cc344848243ca0252a9c54f14480f30974251f84af81e3231917e84c78a"
+  }
+}
