@@ -20,9 +20,9 @@ public class PrimeTileDownloader {
     int currentTile = 0;
     String currentDir = "";
     int downloadMode = 0;
-    String[] allDirs = {"0.0", "0.1", "1.0", "2.0", "2.1", "3.0"};
-    int[] allCounts = {500, 500, 500, 500, 500, 500};
-    int[] dirStartIndex = {0, 500, 1000, 1500, 2500, 3000};
+    String[] allDirs = {"0.0", "0.1", "1.0", "1.1", "2.0", "2.1", "3.0"};
+    int[] allCounts = {500, 500, 500, 500, 500, 500, 500};
+    int[] dirStartIndex = {0, 500, 1000, 2000, 1500, 2500, 3000};
     int singleStart = 0;
     int singleEnd = 0;
     String singleDir = "";
