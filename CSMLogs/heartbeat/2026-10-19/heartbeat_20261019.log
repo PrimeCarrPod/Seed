@@ -3,3 +3,4 @@
 [2026-10-19T05:16:59Z] CMD: v3_041 public Downloads copy | STATUS: OK | DETAILS: After each directory completes, copies files to public Downloads/PrimeBookOne for persistence across uninstall
 [2026-10-19T07:40:01Z] CMD: v3_042 file verification fix | STATUS: OK | DETAILS: Fixed empty file validation, findExistingFile returns actual file, copies from public Downloads to app private, verifies size > 0
 [2026-10-19T08:09:36Z] CMD: v3_043 EACCES fix | STATUS: OK | DETAILS: Handle EACCES gracefully - copy from public Downloads is optional, files already accessible
+[2026-10-19T08:21:57Z] CMD: v3_044 7 dirs 3500 tiles | STATUS: OK | DETAILS: Added 1.1 directory (global 2000-2499). Total 7 dirs x 500 = 3500 tiles. Global sequential indexing maintained.
