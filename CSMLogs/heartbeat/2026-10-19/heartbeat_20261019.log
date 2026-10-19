@@ -1,0 +1,1 @@
+[2026-10-19T03:14:15Z] CMD: v3_038 tile count fix | STATUS: OK | DETAILS: Fixed tile counts (100 per dir, 0 for 2.1, 3500 for 3.0), added 404 skip logic (3 consecutive 404s at start skips dir)

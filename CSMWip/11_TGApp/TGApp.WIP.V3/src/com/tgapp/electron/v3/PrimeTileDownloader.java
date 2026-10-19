@@ -21,7 +21,7 @@ public class PrimeTileDownloader {
     String currentDir = "";
     int downloadMode = 0;
     String[] allDirs = {"0.0", "0.1", "1.0", "2.0", "2.1", "3.0"};
-    int[] allCounts = {500, 500, 500, 500, 500, 3500};
+    int[] allCounts = {100, 100, 100, 100, 0, 3500};
     int singleStart = 0;
     int singleEnd = 0;
     String singleDir = "";
@@ -127,6 +127,8 @@ public class PrimeTileDownloader {
             String dir = allDirs[d]; int count = allCounts[d]; currentDir = dir;
             long dirStartTime = System.currentTimeMillis();
             
+            int consecutive404 = 0;
+            
             for (int i = 0; i < count && isDownloading; i++) {
                 currentTile = i;
                 String tileName = "Tile0" + i;
@@ -154,8 +156,17 @@ public class PrimeTileDownloader {
                 if (success) {
                     completedTiles++;
                     SessionLogger.logDownloadVerify(dir, tileName, outSize, true, true);
+                    consecutive404 = 0; // Reset on success
                 } else {
                     SessionLogger.logDownloadError(dir, tileName, "Download failed after retries");
+                    // Track consecutive 404s at start of directory to skip empty directories
+                    if (i < 5) {
+                        consecutive404++;
+                        if (consecutive404 >= 3) {
+                            SessionLogger.log("DIR_SKIP", dir, "Skipping directory after " + consecutive404 + " consecutive 404s at start");
+                            break; // Skip this directory
+                        }
+                    }
                 }
                 
                 postProgress();
