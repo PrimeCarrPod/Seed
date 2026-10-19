@@ -21,7 +21,7 @@ public class PrimeTileDownloader {
     String currentDir = "";
     int downloadMode = 0;
     String[] allDirs = {"0.0", "0.1", "1.0", "2.0", "2.1", "3.0"};
-    int[] allCounts = {100, 100, 100, 100, 0, 3500};
+    int[] allCounts = {500, 500, 500, 500, 500, 500};
     int singleStart = 0;
     int singleEnd = 0;
     String singleDir = "";
