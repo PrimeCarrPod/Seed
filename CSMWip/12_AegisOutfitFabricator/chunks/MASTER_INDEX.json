@@ -282,39 +282,87 @@
     "generated": "2026-10-19T00:37:00Z"
   },
   "DOC-35_Logistics_Supply_Chain": {
-    "chunks": 11,
-    "total_bytes": 32723,
-    "aggregate_sha256": "ebc0f4ab8747c5c7",
+    "chunks": 14,
+    "total_bytes": 27929,
+    "aggregate_sha256": "592b5f873ba223bf",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-35_Logistics_Supply_Chain/MANIFEST.json"
   },
   "DOC-36_Training_Certification": {
     "chunks": 13,
     "total_bytes": 19296,
-    "aggregate_sha256": "01a020e9e708d5e7",
+    "aggregate_sha256": "0aaa1700d66b50af",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-36_Training_Certification/MANIFEST.json"
   },
   "DOC-37_Human_Factors_Ergonomics": {
     "chunks": 12,
     "total_bytes": 18074,
-    "aggregate_sha256": "f2d92eba97281f82",
+    "aggregate_sha256": "5e5eadec978be50c",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-37_Human_Factors_Ergonomics/MANIFEST.json"
   },
   "DOC-38_Medical_Integration": {
     "chunks": 12,
     "total_bytes": 18103,
-    "aggregate_sha256": "23322264ea137844",
+    "aggregate_sha256": "d644ec7d8701dffb",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-38_Medical_Integration/MANIFEST.json"
   },
   "DOC-39_Cyber_Information_Operations": {
     "chunks": 12,
     "total_bytes": 20381,
-    "aggregate_sha256": "2469e13472ddccaa",
+    "aggregate_sha256": "2d7cb0d061de2b54",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-39_Cyber_Information_Operations/MANIFEST.json"
   },
   "DOC-40_Test_Evaluation": {
     "chunks": 12,
     "total_bytes": 21995,
-    "aggregate_sha256": "034b9df88e9704e1",
+    "aggregate_sha256": "78b4324778f15919",
     "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-40_Test_Evaluation/MANIFEST.json"
+  },
+  "DOC-41_Program_Management": {
+    "chunks": 12,
+    "total_bytes": 26079,
+    "aggregate_sha256": "bfe5495db402a788",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-41_Program_Management/MANIFEST.json"
+  },
+  "DOC-42_Configuration_Management": {
+    "chunks": 12,
+    "total_bytes": 23818,
+    "aggregate_sha256": "eaed4480687f9226",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-42_Configuration_Management/MANIFEST.json"
+  },
+  "DOC-43_System_Safety": {
+    "chunks": 12,
+    "total_bytes": 25736,
+    "aggregate_sha256": "5305a1219116dc3d",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-43_System_Safety/MANIFEST.json"
+  },
+  "DOC-44_Data_Management": {
+    "chunks": 12,
+    "total_bytes": 25109,
+    "aggregate_sha256": "7b0374912846690a",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-44_Data_Management/MANIFEST.json"
+  },
+  "DOC-45_Supportability_PBL": {
+    "chunks": 12,
+    "total_bytes": 20522,
+    "aggregate_sha256": "927e4897a8d0409c",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-45_Supportability_PBL/MANIFEST.json"
+  },
+  "DOC-46_ESOH": {
+    "chunks": 13,
+    "total_bytes": 25874,
+    "aggregate_sha256": "bcdc16e4d96f2b40",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-46_ESOH/MANIFEST.json"
+  },
+  "DOC-47_Cyber_EMC": {
+    "chunks": 11,
+    "total_bytes": 20021,
+    "aggregate_sha256": "883b1e668289e979",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-47_Cyber_EMC/MANIFEST.json"
+  },
+  "DOC-48_Training_Systems_Simulation": {
+    "chunks": 4,
+    "total_bytes": 4057,
+    "aggregate_sha256": "b2fac82ae1a0c71b",
+    "manifest": "/workspace/app/CSMWip/12_AegisOutfitFabricator/chunks/DOC-48_Training_Systems_Simulation/MANIFEST.json"
   }
 }
