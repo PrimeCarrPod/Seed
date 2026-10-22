@@ -4,15 +4,23 @@
 
 ### Project State
 - **Runner**: 001 (Initial session — project creation)
-- **Phase**: 1 Foundation Research — DOC-01 through DOC-03 (starting)
-- **Infrastructure**: Directory structure created, AGENTS.md written
-- **Heartbeat**: Not yet started (120-second interval planned)
+- **Phase**: 1 Foundation Research — DOC-01, DOC-02 complete, DOC-03 starting
+- **Infrastructure**: Directory structure created, AGENTS.md written, heartbeat & task timer scripts ready
+- **Heartbeat**: scripts/heartbeat_monitor.py ready (120-second interval)
+- **Task Timer**: scripts/task_timer.py ready (30s guard)
 
-### What's Done (Project Initialization)
+### What's Done (Project Initialization + DOC-01 + DOC-02)
 - ✅ **Directory Structure**: Created per AGENTS.md specification
 - ✅ **AGENTS.md**: Complete project conventions, 60-doc pipeline defined
 - ✅ **Research Baseline**: Identified key Chilean magnet/mining documents in repository
-- ✅ **Python Tools**: Verified `__Python_Tools/write_large_file.py` operational
+- ✅ **Python Tools**: Verified `__Python_Tools/write_large_file.py` operational (IncrementalDocumentWriter)
+- ✅ **HEARTBEAT_MAGNETS.md**: 120s interval config written
+- ✅ **scripts/heartbeat_monitor.py**: Operational (120s interval)
+- ✅ **scripts/task_timer.py**: Operational (30s guard)
+- ✅ **scripts/generate_heuristic_intros.sh**: Ready (adapted from Aegis)
+- ✅ **NEXT_runner_001.md**: Created with full 10-chapter guidance
+- ✅ **DOC-01**: Chilean Magnetic Mineral Landscape — Geological Survey & Resource Mapping (10 chapters, 699 lines, chunked, verified, compressed)
+- ✅ **DOC-02**: Lives of the Extractors — Community Ethnography & Human Geography (9 chapters, 509 lines, chunked, verified, compressed)
 
 ### Research Assets Located (Repository-Wide)
 | Asset | Path | Relevance |
@@ -25,21 +33,20 @@
 | **CSMMagTech2026 V2.0 — Rare-Earth-Free Magnet Research** | `CSMPro/CSMMag/CSMMagTech 2026 Rare-Earth-Free Magnet Research/` | **Fe₁₆N₂ 27 MGOe, MnBi 14 MGOe, AlNiCo 10.5 MGOe (AM), Fe-Sn 12 MGOe (NIMS), MXene-NdFeB +12% Hci, EU CRMA 2024, CSM portfolio magnet strategy table** |
 | Aegis-Forge Separator | `CSMFAB/CSMFAB0108/` (referenced) | Thermal cascade inductive separation, 17-stage, zero liquid waste |
 
-### What's Next (Runner 001)
+### What's Next (Runner 001 - Continuing)
 
 #### Document Authoring (Priority Order)
-1. **DOC-01**: Chilean Magnetic Mineral Landscape — Geological Survey & Resource Mapping
-2. **DOC-02**: Lives of the Extractors — Community Ethnography & Human Geography
-3. **DOC-03**: Mutual Benefit Frameworks — Value Return to Chilean Communities
+1. **DOC-03**: Mutual Benefit Frameworks — Value Return to Chilean Communities
+2. **DOC-04**: Brokerage Protocol — Facilitator to Owner Transition Mechanics (Runner 002)
+3. **DOC-05**: Tardigradia Holding Company — Venture Structure & Governance (Runner 002)
 
-#### Infrastructure Setup (Parallel)
-1. Create TODO.md with full 60-doc task hierarchy
-2. Create NEXT_runner_001.md with detailed assignments
-3. Create HEARTBEAT_MAGNETS.md config
-4. Create scripts/heartbeat_monitor.py (adapted from Aegis)
-5. Create scripts/generate_heuristic_intros.sh (adapted from Aegis)
-6. Start heartbeat monitor
-7. Git: Initial commit
+#### Infrastructure Status
+- ✅ chunks/DOC-01/ (10 chapters + manifest)
+- ✅ chunks/DOC-02/ (9 chapters + manifest)
+- ✅ FinishedWork/DOC-01_*.md.gz (19.5 KB)
+- ✅ FinishedWork/DOC-02_*.md.gz (15.5 KB)
+- ✅ FinishedWork/NEXT_runner_001.md + chunks/NEXT_runner_001/
+- 🔄 Git: Initial commit pending
 
 ### Key Commands
 
@@ -57,35 +64,32 @@ HEARTBEAT_PID=$!
 # Verify write_large_file.py works
 python3 ../../__Python_Tools/write_large_file.py --help
 
-# Author DOC-01 (Chilean Magnetic Mineral Landscape)
-# Key references: Chilean mining code, Sernageomin, USGS, Cochilco, Antofagasta Minerals, Codelco, SQM, Albemarle
+# Author DOC-03 (Mutual Benefit Frameworks)
+# Key references: Royalty Minera Law 21210, Indigenous Law 19253, Environmental Law 19300, Codelco/Antofagasta community agreements, Aegis-Forge zero-water advantage
 # Then chunk & verify:
 python3 ../../__Python_Tools/write_large_file.py split \
-    FinishedWork/DOC-01_Chilean_Magnetic_Mineral_Landscape.md \
-    chunks/DOC-01 chapter .md
-python3 ../../__Python_Tools/write_large_file.py verify chunks/DOC-01
+    FinishedWork/DOC-03_Mutual_Benefit_Frameworks.md \
+    chunks/DOC-03 chapter .md
+python3 ../../__Python_Tools/write_large_file.py verify chunks/DOC-03
 
 # Compress original
 python3 ../../__Python_Tools/write_large_file.py compress \
-    FinishedWork/DOC-01_Chilean_Magnetic_Mineral_Landscape.md
+    FinishedWork/DOC-03_Mutual_Benefit_Frameworks.md
 
 # Generate heuristic intros
-./scripts/generate_heuristic_intros.sh FinishedWork/DOC-01_Chilean_Magnetic_Mineral_Landscape.md
+./scripts/generate_heuristic_intros.sh FinishedWork/DOC-03_Mutual_Benefit_Frameworks.md
 ```
 
-### Document Dependencies for DOC-01..03
-- **Chilean Mining Code** (Law 18,248 + modifications)
-- **Sernageomin** — National Geology and Mining Service datasets
-- **Cochilco** — Chilean Copper Commission market intelligence
-- **USGS Mineral Commodity Summaries** — Chile chapters (Cu, Li, REE, Fe)
-- **Antofagasta Minerals / Codelco / SQM / Albemarle** — Company reports
-- **Indigenous Law 19,253** — Consulta indígena requirements
-- **Environmental Law 19,300** — SEIA/RCA permitting
-- **CSMEval25** — Rare earth & magnet industry baseline
-- **CSMGlobal-037-Chile** — Grid vulnerability & mining exposure
-- **E172-NationalMining** — Aegis-Forge acid-free processing specs
-- **CSMMagEco2026 V2.0** — DFARS 2027, Fe₁₆N₂ 27 MGOe, domestic magnet startup map, recycling
-- **CSMMagTech2026 V2.0** — Rare-earth-free magnet performance table, MXene-NdFeB, CRMA, CSM portfolio strategy
+### Document Dependencies for DOC-03
+- **Royalty Minera Law 21,210** — New royalty regime (2024), distribution formula, municipal budgets
+- **Indigenous Law 19,253** — Consulta indígena, territorial rights, benefit agreement requirements
+- **Environmental Law 19,300** — SEIA/RCA permitting, community participation
+- **Codelco-Andacollo Agreement** — 40% local hiring, scholarships, health, water fund template
+- **Antofagasta Minerals Los Pelambres** — Water infrastructure, education, productive development
+- **Candelaria-Tierra Amarilla** — $200M fund, local hiring, environmental monitoring
+- **Aegis-Forge E172 specs** — Zero water, zero tailings, $4.32/t OPEX, 12-18 month permit
+- **DOC-01** — Geological framework, infrastructure mapping, Aegis-Forge integration opportunities
+- **DOC-02** — Community aspirations, economic dependency, social license dynamics, NGO landscape
 
 ### Quality Gates (Every Document)
 - Lines: ≥900

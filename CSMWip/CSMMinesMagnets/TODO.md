@@ -48,21 +48,21 @@
 - [x] 1.1.15 Log completion to memory/ + git commit
 
 #### 1.2 DOC-02: Lives of the Extractors — Community Ethnography (15 tasks)
-- [ ] 1.2.1 Map mining communities: Calama, Antofagasta, Copiapó, Vallenar, Andacollo, Los Andes
-- [ ] 1.2.2 Document Indigenous territories: Atacameño, Diaguita, Aymara, Mapuche (south)
-- [ ] 1.2.3 Analyze labor structure: Unionized vs. contractor, gender, migration patterns
-- [ ] 1.2.4 Document health/environmental burdens: Silicosis, arsenic, water scarcity, tailings
-- [ ] 1.2.5 Map social license dynamics: Consulta indígena, community agreements, conflicts
-- [ ] 1.2.6 Document educational/vocational pathways: Technical schools, university mining programs
-- [ ] 1.2.7 Analyze economic dependency: Municipal budgets, royalties (royalty minera), local procurement
-- [ ] 1.2.8 Identify community aspirations: Diversification, value-added, environmental remediation
-- [ ] 1.2.9 Map NGO/civil society actors: OLCA, FIMA, community radio, water defense groups
-- [ ] 1.2.10 Draft DOC-02 full document (≥900 lines, ≥20 formulas, ≥15 refs, ≥8 standards)
-- [ ] 1.2.11 Generate heuristic intros (Williams, Keymaker, El Segundo, Combined)
-- [ ] 1.2.12 Split into logical chunks → chunks/DOC-02/
-- [ ] 1.2.13 Generate manifest & verify integrity
-- [ ] 1.2.14 Compress FinishedWork original (.gz)
-- [ ] 1.2.15 Log completion to memory/ + git commit
+- [x] 1.2.1 Map mining communities: Calama, Antofagasta, Copiapó, Vallenar, Andacollo, Los Andes
+- [x] 1.2.2 Document Indigenous territories: Atacameño, Diaguita, Aymara, Mapuche (south)
+- [x] 1.2.3 Analyze labor structure: Unionized vs. contractor, gender, migration patterns
+- [x] 1.2.4 Document health/environmental burdens: Silicosis, arsenic, water scarcity, tailings
+- [x] 1.2.5 Map social license dynamics: Consulta indígena, community agreements, conflicts
+- [x] 1.2.6 Document educational/vocational pathways: Technical schools, university mining programs
+- [x] 1.2.7 Analyze economic dependency: Municipal budgets, royalties (royalty minera), local procurement
+- [x] 1.2.8 Identify community aspirations: Diversification, value-added, environmental remediation
+- [x] 1.2.9 Map NGO/civil society actors: OLCA, FIMA, community radio, water defense groups
+- [x] 1.2.10 Draft DOC-02 full document (≥900 lines, ≥20 formulas, ≥15 refs, ≥8 standards)
+- [x] 1.2.11 Generate heuristic intros (Williams, Keymaker, El Segundo, Combined)
+- [x] 1.2.12 Split into logical chunks → chunks/DOC-02/
+- [x] 1.2.13 Generate manifest & verify integrity
+- [x] 1.2.14 Compress FinishedWork original (.gz)
+- [x] 1.2.15 Log completion to memory/ + git commit
 
 #### 1.3 DOC-03: Mutual Benefit Frameworks — Value Return (15 tasks)
 - [ ] 1.3.1 Analyze Chilean royalty regime: Royalty minera (Law 21,210), ad valorem vs. operating margin
