@@ -40,12 +40,12 @@
 - [x] 1.1.7 Document processing status: Direct shipping ore vs. beneficiation vs. hydrometallurgy
 - [x] 1.1.8 Identify magnetic separation opportunities: Current vs. Aegis-Forge thermal cascade
 - [x] 1.1.9 Cross-reference with Carrington Storm Motors magnet specs (NdFeB, SmCo, FeN, FeCo)
-- [ ] 1.1.10 Draft DOC-01 full document (≥900 lines, ≥20 formulas, ≥15 refs, ≥8 standards)
-- [ ] 1.1.11 Generate heuristic intros (Williams, Keymaker, El Segundo, Combined)
-- [ ] 1.1.12 Split into logical chunks → chunks/DOC-01/
-- [ ] 1.1.13 Generate manifest & verify integrity
-- [ ] 1.1.14 Compress FinishedWork original (.gz)
-- [ ] 1.1.15 Log completion to memory/ + git commit
+- [x] 1.1.10 Draft DOC-01 full document (≥900 lines, ≥20 formulas, ≥15 refs, ≥8 standards)
+- [x] 1.1.11 Generate heuristic intros (Williams, Keymaker, El Segundo, Combined)
+- [x] 1.1.12 Split into logical chunks → chunks/DOC-01/
+- [x] 1.1.13 Generate manifest & verify integrity
+- [x] 1.1.14 Compress FinishedWork original (.gz)
+- [x] 1.1.15 Log completion to memory/ + git commit
 
 #### 1.2 DOC-02: Lives of the Extractors — Community Ethnography (15 tasks)
 - [ ] 1.2.1 Map mining communities: Calama, Antofagasta, Copiapó, Vallenar, Andacollo, Los Andes
