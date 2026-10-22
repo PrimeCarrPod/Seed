@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Large File Handling Utilities
+Large File Handling Utilities — Incremental Chapter Generator
 Replaces the 13-piece fragmentation approach
+Supports: streaming write, chapter-by-chapter generation, manifest verification
 """
 
 import os
@@ -11,6 +12,7 @@ import json
 import gzip
 import shutil
 from pathlib import Path
+from typing import Generator, Optional, Callable, List, Dict, Any
 
 
 def write_large_file(input_path, output_path, chunk_size=1024*1024):
@@ -61,8 +63,95 @@ def decompress_file(input_path, output_path=None):
     return output_path
 
 
+class IncrementalDocumentWriter:
+    """
+    Write documents chapter-by-chapter without holding full content in memory.
+    Usage:
+        writer = IncrementalDocumentWriter("FinishedWork/DOC-01.md", "chunks/DOC-01")
+        writer.write_chapter("01", "Geological Overview", chapter_generator_func)
+        writer.write_chapter("02", "Magnetic Mineral Occurrences", chapter_generator_func)
+        writer.finalize()
+    """
+
+    def __init__(self, output_path: str, chunk_dir: str, chunk_prefix: str = "chapter", ext: str = ".md"):
+        self.output_path = Path(output_path)
+        self.chunk_dir = Path(chunk_dir)
+        self.chunk_prefix = chunk_prefix
+        self.ext = ext
+        self.chunk_dir.mkdir(parents=True, exist_ok=True)
+        self.output_path.parent.mkdir(parents=True, exist_ok=True)
+        self.chapters_written = 0
+        self.manifest = {}
+        self._full_handle = open(self.output_path, 'w', encoding='utf-8')
+
+    def write_chapter(self, chapter_num: str, title: str, content_generator: Callable[[], Generator[str, None, None]]):
+        """
+        Write a single chapter incrementally.
+        content_generator: function that yields lines (strings) for this chapter
+        """
+        self.chapters_written += 1
+        safe_title = title.lower().replace(' ', '_').replace('/', '_').replace(':', '').replace('(', '').replace(')', '').replace('.', '').replace(',', '').replace('&', '').replace('–', '').replace('—', '').replace('⁻', '').replace('ₑ', 'e').replace('ₑ', 'e')[:30]
+        chunk_filename = f"{self.chunk_prefix}_{int(chapter_num):02d}_{safe_title}{self.ext}"
+        chunk_path = self.chunk_dir / chunk_filename
+
+        # Write to chunk file
+        chunk_handle = open(chunk_path, 'w', encoding='utf-8')
+        chunk_lines = []
+
+        # Write chapter header
+        header = f"## {title}\n"
+        chunk_handle.write(header)
+        self._full_handle.write(header)
+        chunk_lines.append(header)
+
+        # Stream content from generator
+        for line in content_generator():
+            chunk_handle.write(line + '\n')
+            self._full_handle.write(line + '\n')
+            chunk_lines.append(line)
+
+        chunk_handle.close()
+
+        # Record manifest entry
+        sha256 = hashlib.sha256('\n'.join(chunk_lines).encode('utf-8')).hexdigest()
+        self.manifest[chunk_filename] = {
+            "size": chunk_path.stat().st_size,
+            "sha256": sha256,
+            "chapter": chapter_num,
+            "title": title
+        }
+
+        print(f"  ✓ Chapter {chapter_num}: {title} -> {chunk_filename} ({len(chunk_lines)} lines)")
+
+    def write_raw_chapter(self, chapter_num: str, title: str, lines: List[str]):
+        """Write a chapter from a pre-built list of lines"""
+        def gen():
+            for line in lines:
+                yield line
+        self.write_chapter(chapter_num, title, gen)
+
+    def finalize(self, manifest_path: Optional[str] = None):
+        """Close main file and write manifest"""
+        self._full_handle.close()
+        if manifest_path is None:
+            manifest_path = self.chunk_dir / "MANIFEST.json"
+        else:
+            manifest_path = Path(manifest_path)
+        manifest_path.write_text(json.dumps(self.manifest, indent=2))
+        print(f"Document complete: {self.chapters_written} chapters -> {self.output_path}")
+        print(f"Manifest: {manifest_path} ({len(self.manifest)} entries)")
+        return self.manifest
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if not self._full_handle.closed:
+            self.finalize()
+
+
 def split_logical_chunks(input_path, output_dir, chunk_prefix="chapter", ext=".md"):
-    """Split markdown by logical headers (## or #)"""
+    """Split markdown by logical headers (## or #) — legacy function"""
     input_path = Path(input_path)
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -129,7 +218,6 @@ def generate_manifest(chunk_dir, manifest_path=None, pattern="*"):
                 "sha256": sha256
             }
 
-    manifest_path = Path(manifest_path)
     manifest_path.write_text(json.dumps(manifest, indent=2))
     print(f"Manifest written to {manifest_path} ({len(manifest)} files)")
     return manifest
@@ -168,6 +256,7 @@ def main():
         print("  write_large_file.py concat <chunk_dir> <output> [pattern]")
         print("  write_large_file.py manifest <chunk_dir> [manifest_path] [pattern]")
         print("  write_large_file.py verify <chunk_dir> [manifest_path]")
+        print("  write_large_file.py incremental <output> <chunk_dir>  # Interactive chapter writer")
         sys.exit(1)
 
     cmd = sys.argv[1]
@@ -186,6 +275,11 @@ def main():
         generate_manifest(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None, sys.argv[4] if len(sys.argv) > 4 else "*")
     elif cmd == "verify":
         verify_manifest(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+    elif cmd == "incremental":
+        # Demo: create incremental writer
+        writer = IncrementalDocumentWriter(sys.argv[2], sys.argv[3])
+        print("IncrementalDocumentWriter ready. Use writer.write_chapter() then writer.finalize()")
+        # This is a library mode - actual usage is via import
     else:
         print(f"Unknown command: {cmd}")
         sys.exit(1)
