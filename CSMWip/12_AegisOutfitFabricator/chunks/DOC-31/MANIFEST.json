@@ -1,0 +1,50 @@
+{
+  "chapter_01_intro.md": {
+    "size": 49,
+    "sha256": "85a2e490c24883cde60f74aa8baf631bc98916f34f28cb83af0190bb783979c8"
+  },
+  "chapter_02_sewbo_cell_+_ultrasonic_seamin.md": {
+    "size": 119,
+    "sha256": "b00406c9d2a68c237867d55e9adcbfa55b4ed412dcdd2de3037fedac0163e746"
+  },
+  "chapter_03_1_executive_overview.md": {
+    "size": 3009,
+    "sha256": "a179dc8220b401486db51cfdb8b4098def4fe3bc4b1cdc0f93242996aac8adee"
+  },
+  "chapter_04_2_sewbo_cell_architecture.md": {
+    "size": 4126,
+    "sha256": "b798a39b88b443b2e8e49c60794e5a8810955a2b7b24e67bb53a90a88a30b880"
+  },
+  "chapter_05_3_ultrasonic_seaming_parameter.md": {
+    "size": 2885,
+    "sha256": "68b5632056e30c28310cff142ce4bc38a8be27866136e476a7958e40de5df33c"
+  },
+  "chapter_06_4_rf_dielectric_welding_integr.md": {
+    "size": 1712,
+    "sha256": "8a828044a56b65822d79b1e42cf13ce99bb531c18bd03f53dad65e0d76d291cb"
+  },
+  "chapter_07_5_cell-to-cell_handoff_and_tra.md": {
+    "size": 1261,
+    "sha256": "d196c6851204a681e44ae23ebb46ae9dd0292178a488fd9d9e19563bcbd29f8e"
+  },
+  "chapter_08_6_throughput_modeling_and_line.md": {
+    "size": 2392,
+    "sha256": "641a33d014f5f8dbd988cc132266cdc1e9a546811a8ff13cca12c33a35403c81"
+  },
+  "chapter_09_7_in-process_inspection_and_qu.md": {
+    "size": 1532,
+    "sha256": "32b22829c5e20e7aaeed0f11d4b441d04f78149e219abf80cb72323ee664b5e1"
+  },
+  "chapter_10_8_edition_changeover_procedure.md": {
+    "size": 1102,
+    "sha256": "257166f7a2d4cd0d90d625cac8d83fe4140856fbf3fba231bf0c45a3bbcaa56b"
+  },
+  "chapter_11_9_traceability_matrix__doc-31.md": {
+    "size": 2547,
+    "sha256": "9c1fcb95df4e52c17a4ad3ca04ae9517d1e189bcc6a8c2f5707b6db1ead3635c"
+  },
+  "chapter_12_10_conformance_check.md": {
+    "size": 420,
+    "sha256": "1f963952af9302f931847781e975eb03565a76cb450bd5f480a0f9f09a694231"
+  }
+}
