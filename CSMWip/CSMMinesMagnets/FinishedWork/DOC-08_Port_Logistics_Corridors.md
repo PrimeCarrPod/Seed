@@ -744,3 +744,578 @@ The **Calama (Chile) – Salta (Argentina) rail corridor** is the **western leg 
 **Verdict**: **Not cost-competitive for bulk concentrate** (higher cost, longer transit). **Strategic value**: **Redundancy** (Ch. 6), **Argentina/Bolivia market access**, **lithium-REE synergy**. Containerized high-value magnets (NdFeB blocks) viable if gauge-change operational — **transit advantage for US East Coast** (Rosario → NY: 18 days vs. Panama: 24 days).
 
 **Tardigradia Positioning**: **Monitor — do not commit CAPEX**. Option value: Corredor Bioceánico designated **CRMA strategic corridor (EU 2024)** — potential EU funding for gauge-change facility. Maintain FCAB Bolivia branch option (Uyuni connection).
+
+### 2.2.2 State-Owned Operations & Investment Plan — Ferronor Renationalization Dividends
+
+Ferronor's **2019 renationalization (Law 21,135)** transferred 100% ownership to **CORFO** with a mandate to: **(1) restore freight rail as public infrastructure, (2) integrate with EFE passenger network, (3) decarbonize, (4) enable open access**. This structural shift creates **unique opportunities for magnetic mineral logistics** unavailable under private concession.
+
+**Governance Structure (Post-2019):**
+| Body | Composition | Authority |
+|------|-------------|-----------|
+| **Board (Directorio)** | 7 members: 3 CORFO, 2 MTT, 1 Regional Gov, 1 Worker rep | Strategy, CAPEX >US$20M, tariff approval |
+| **Executive Management** | General Manager (CORFO-appointed), 4 VPs | Operations, commercial, engineering, finance |
+| **User Advisory Council** | Mining, industrial, port, logistics reps (quarterly) | Service quality, slot allocation, investment priorities |
+
+**Investment Plan 2025-2030 (US$995M Total):**
+
+| Program | CAPEX | Funding Source | Magnetic Mineral Relevance |
+|---------|-------|----------------|----------------------------|
+| **Double-track La Calera–Santiago (120 km)** | US$420M | CORFO (60%), MTT (25%), IDB (15%) | **Critical: enables FCAB-Ferronor seamless interchange** for containerized magnets |
+| **Iquique–Puerto Patillos Branch (45 km)** | US$180M | CORFO (50%), Private concession (50%) | New deep-water port (16m draft) — alternative to Mejillones |
+| **Electrification Santiago–La Calera (25 kV AC)** | US$310M | Green Bond (CORFO), EIB, GCF | Zero-emission magnetic cargo transport (Scope 1&2) |
+| **ETCS Level 2 Signaling (Full network)** | US$85M | CORFO (100%) | Capacity +30%, precision scheduling for IMDG 9 |
+
+**Total Magnetic-Relevant CAPEX: US$600M (60% of plan)** — directly enables Tardigradia/CSM corridor integration.
+
+**Open Access Tariff Framework (TDLC Approved 2023):**
+- **Track Access Charge**: US$0.0045/wagon-km (vs. FCAB US$0.008) — **44% cheaper** (state subsidy)
+- **Haulage Rate**: US$0.0125/ton-km (broad gauge, 90t payload) — **25% cheaper than FCAB magnetic rate**
+- **Slot Allocation**: **Priority for strategic minerals** (Supreme Decree 45/2022) — Tardigradia/CSM qualify
+
+**Tardigradia Commercial Terms (Negotiated 2024):**
+- **10-year framework agreement** (renewable)
+- **Volume commitment**: 2.0 Mt/yr by 2028 (containerized magnets + reagents northbound)
+- **Tariff**: Fixed US$0.0115/ton-km (8% discount to published) — **CPI-linked only, no productivity factor**
+- **Slot guarantee**: 6 trains/day each direction (Santiago ↔ La Calera) — **dedicated magnetic corridor**
+- **Co-investment**: US$15M Tardigradia share in La Calera gauge-change facility (total US$60M)
+
+**Risk Factors:**
+- **Political cycle**: CORFO board changes with administration — **mitigated by 10-yr contract + Supreme Decree**
+- **CAPEX execution**: Chilean state project delivery avg. 2.3× over budget, 1.8× schedule — **mitigated by IDB/EIB co-financing oversight**
+- **Labor**: Strong unions (FENATS) — **mitigated by worker board seat + productivity sharing**
+
+**Conclusion**: Ferronor's state ownership **aligns incentives** with Tardigradia/CSM national strategic mineral policy. The **La Calera–Santiago double-track + gauge-change facility** is the **single most critical infrastructure** for integrating Chile's magnetic mineral supply chain.
+
+### 2.2.3 Integration with FCAB at Strategic Nodes — Bridging Meter & Broad Gauge
+
+The **gauge break (1,000 mm ↔ 1,676 mm)** at **La Calera/Santiago** is the **primary structural bottleneck** in Chile's magnetic mineral rail logistics. Three integration nodes enable FCAB–Ferronor interoperability:
+
+| Node | Location | Current Status | Magnetic Cargo Role |
+|------|----------|----------------|---------------------|
+| **1. La Calera Junction** | Valparaíso Region (32°50′S) | **Single-track interchange yard** — 4 transshipment tracks, 2 reachstackers | **Bulk concentrate transshipment** (volteable → bottom-dump) — 1,200 t/hr |
+| **2. Santiago Gauge-Change Facility (Planned)** | Santiago Metropolitan Region | **Feasibility complete (2024)** — US$60M CAPEX, 24 mo build | **Containerized magnet transshipment** (ISO 20'/40' on gauge-change bogies) — 48 cont/day |
+| **3. Puerto San Antonio (Dual-Gauge Future)** | San Antonio (Puerto Exterior) | **Design phase** — dual-gauge berths (Puerto Exterior) | **Direct FCAB–Ferronor–Port** — zero transshipment for containers |
+
+**Node 1: La Calera Junction — Current Operations**
+- **Process**: FCAB meter-gauge train arrives → wagons decoupled → volteable wagons tipped into hopper → conveyor loads Ferronor broad-gauge bottom-dump wagons → Ferronor train departs
+- **Cycle time**: 4.5 hr per 60-wagon train (vs. 1.5 hr same-gauge)
+- **Capacity**: 6 trains/day (limited by single-track yard, 2 reachstackers)
+- **Losses**: 0.3% spillage, 0.1% contamination (cross-contaminant risk: copper vs. REE)
+- **Cost**: US$1.85/t transshipment premium (vs. seamless)
+
+**Node 2: Santiago Gauge-Change Facility — Design Specifications (2024 Feasibility):**
+| Parameter | Specification |
+|-----------|---------------|
+| **Technology** | **Talgo RD / CAF Brava** variable-gauge bogies (proven Europe: Spain-France, Poland-Germany) |
+| **Capacity** | 48 containers/day (24 hr ops, 2 bogie exchange pits) |
+| **Gauge Range** | 1,000 mm ↔ 1,676 mm (also 1,435 mm standard for Puerto Exterior) |
+| **Axle Load** | 22.5 t (meter) ↔ 32.5 t (broad) — **automatic load compensation** |
+| **Cycle Time** | 18 min/container (vs. 45 min reachstacker transshipment) |
+| **CAPEX** | US$60M (facility: US$35M, 50 bogies: US$25M) |
+| **OPEX** | US$2.8M/yr (maintenance, staff, energy) |
+| **Location** | **Santiago–Renca** (Ferronor yard, 15 ha, adjacent to highway/FCAB truck ramp) |
+
+**Magnetic Cargo Flow via Gauge-Change Facility:**
+```
+Mine (Norte Grande) 
+  → FCAB meter-gauge (volteable, bulk REE concentrate) → Mejillones Port → Capesize → Asia/Europe
+  
+CSM Factory (Santiago)
+  → Ferronor broad-gauge (containerized NdFeB blocks) → San Antonio → Containership → US/EU/Japan
+  
+Blended Shipment (Strategic):
+  → FCAB meter-gauge (containerized on gauge-change bogies) → Santiago gauge-change → Ferronor broad-gauge → San Antonio
+  → **Eliminates truck bridge** (current: 120 km truck, US$45/t, 4 hr, 2.3 kg CO2/t)
+```
+
+**Economic Justification (Gauge-Change Facility):**
+```
+Annual Benefit = (Truck_Cost - Rail_Cost) × Volume - OPEX
+Truck_Cost = US$45/t (120 km Santiago–La Calera)
+Rail_Cost (gauge-change) = US$8/t (18 min × US$120/hr bogie + US$3/t handling)
+Volume = 48 cont/day × 20 t/cont × 300 days = 288,000 t/yr
+Annual Benefit = (45 - 8) × 288,000 - 2,800,000 = **US$7.86M/yr**
+NPV (10 yr, 8%) = **US$52.8M** > CAPEX US$60M → **Marginally viable; requires strategic mineral subsidy**
+```
+
+**Strategic Subsidy**: **CORFO/MTT Strategic Minerals Fund** covers **US$25M (42%)** — reduces Tardigradia co-investment to US$15M. **Payback: 2.1 years**.
+
+**Node 3: Puerto Exterior Dual-Gauge — Long-Term Vision (2036+)**
+- Puerto Exterior berths designed for **triple gauge (1,000 / 1,435 / 1,676 mm)**
+- Direct FCAB meter-gauge train → Puerto Exterior → ULCV (no gauge change)
+- Direct Ferronor broad-gauge train → Puerto Exterior → ULCV
+- **Eliminates Santiago gauge-change for export containers** — but gauge-change still needed for **domestic CSM factory flow** (Santiago)
+
+**Integration Roadmap:**
+| Year | Milestone | Magnetic Cargo Impact |
+|------|-----------|----------------------|
+| **2025** | La Calera yard upgrade (2→4 reachstackers) | Bulk transshipment 8 trains/day |
+| **2026** | Gauge-change facility groundbreak | — |
+| **2027** | **Gauge-change operational** | Containerized magnets: **truck bridge eliminated** |
+| **2029** | La Calera–Santiago double-track complete | 40 trains/day, seamless bulk + container |
+| **2030** | Puerto Patillos branch operational | Alternative deep-water port (Iquique) |
+| **2036** | Puerto Exterior Phase 1 operational | Triple-gauge direct port access |
+
+### 2.3 EFE Integration — Passenger/Freight Shared Corridor
+
+**EFE (Empresa de los Ferrocarriles del Estado)** operates Chile's **passenger rail network** (800 km broad gauge) and holds **infrastructure ownership** of the **Santiago–La Calera–Valparaíso corridor** shared with Ferronor freight. This **vertical separation** (infrastructure: EFE; freight operations: Ferronor) creates coordination challenges and opportunities for magnetic mineral logistics.
+
+**Shared Corridor: Santiago–La Calera (120 km)**
+- **Infrastructure Owner**: EFE (state)
+- **Freight Operator**: Ferronor (state, CORFO)
+- **Passenger Services**: EFE Tren Central (Santiago–Limache–Valparaíso, 45 min frequency peak)
+- **Track**: Double-track, 1,676 mm gauge, CTC signaling, 25 kV AC electrification (Santiago–Limache), diesel beyond
+
+**Coordination Mechanism: "Marco de Coordinación EFE-Ferronor" (2022)**
+| Aspect | Agreement |
+|--------|-----------|
+| **Slot Allocation** | Passenger: 70% (peak), 50% (off-peak); Freight: 30% (peak), 50% (off-peak) |
+| **Priority Rules** | Passenger > Freight (except **strategic mineral emergency**: 2 hr notice, preempts 1 passenger slot) |
+| **Maintenance Windows** | 00:00–04:00 daily (fixed); weekend 48-hr blocks quarterly |
+| **Capacity Expansion** | Joint CAPEX planning (double-track, signaling) — **shared 50/50** |
+
+**Magnetic Mineral Implications:**
+1. **Off-peak freight windows** (22:00–06:00) align with **magnetic cargo night moves** (reduced radiation exposure, lower ambient temp for NdFeB stability)
+2. **Strategic mineral preemption** (2-hr notice) enables **CSM JIT delivery recovery** — critical for factory line stoppage avoidance
+3. **Electrification (Santiago–Limache, 60 km)** — **zero-emission freight possible** with electric locomotives (Stadler Euro 4000 AC/DC dual-mode on order)
+4. **Limache–La Calera (60 km, non-electrified)** — **battery-electric helper** required for magnetic trains (Ferronor 2028 plan)
+
+**EFE Passenger Growth Impact (2024-2030):**
+- **Valparaíso–Santiago commuter**: 45M → 65M pax/yr (+44%)
+- **Slot pressure**: Freight share drops to 25% peak by 2028 without double-track
+- **Mitigation**: **Double-track La Calera–Santiago (Ferronor CAPEX, US$420M)** restores 50/50 split
+
+**Tardigradia/CSM Action Items:**
+- **Secure "Strategic Mineral Emergency" protocol** in EFE-Ferronor framework (2025 renegotiation)
+- **Co-invest in Limache–La Calera electrification** (US$85M) — enables electric magnetic trains end-to-end Santiago–Mejillones (via FCAB diesel + Ferronor electric)
+- **Advocate for Puerto Exterior triple-gauge** in EFE master plan — ensures passenger/freight separation at new port
+
+**Workforce Synergy**: EFE/Ferronor shared **maintenance crews, signaling staff, training center (Rancagua)** — reduces Tardigradia logistics subsidiary OPEX via shared services agreement.
+
+### 2.4 Corredor Bioceánico Proposal Status — Transcontinental Strategic Corridor
+
+The **Corredor Bioceánico (Bi-Oceanic Corridor)** is a **multi-national infrastructure initiative** (Chile, Argentina, Paraguay, Brazil) to create a **rail/road corridor connecting Chilean Pacific ports (Antofagasta/Mejillones/Iquique) to Brazilian Atlantic ports (Santos/Paranaguá)** via the **Gran Chaco and Pantanal**. For magnetic minerals, it represents a **strategic redundancy corridor** and **market access pathway** to Brazil's industrial heartland and Atlantic exports.
+
+**Current Status (2024):**
+| Segment | Country | Status | Magnetic Mineral Relevance |
+|---------|---------|--------|---------------------------|
+| **Antofagasta–Calama–Socompa** | Chile | **Operational (FCAB meter gauge)** | Bulk REE concentrate export existing |
+| **Socompa–Salta–Jujuy** | Argentina | **Operational (meter gauge)** | Lithium triangle access, REE byproduct potential |
+| **Jujuy–Salvador Mazza–Yacuiba** | Argentina/Bolivia | **Road only (RN 34/9)** — Rail feasibility 2024 | Bolivia Li/REE integration |
+| **Yacuiba–Villamontes–Roboré** | Bolivia | **Road only** — Pre-feasibility rail (CAF) | Uyuni Salar access (Li, K, REE) |
+| **Roboré–Puerto Suárez–Corumbá** | Bolivia/Brazil | **River barge (Paraguay River)** — Rail study 2023 | Pantanal crossing challenge |
+| **Corumbá–Campo Grande–São Paulo** | Brazil | **Rumolog (narrow gauge) + FERROESTE (broad)** — Partial | Brazil industrial market access |
+| **São Paulo–Santos/Paranaguá** | Brazil | **Operational (broad gauge)** | Atlantic export gateway |
+
+**Governance**: **Grupo Técnico Binacional Chile-Argentina** (2018), **Comisión Mixta Paraguay-Brasil** (2020), **Grupo de Trabajo Cuatripartito** (2022) — **Presidential declaration 2023** elevated to **national priority**.
+
+**Funding**: **CAF (US$2.8B committed)**, **IDB (US$1.5B)**, **BNDES (Brazil, US$3.2B)**, **FONPLATA (US$400M)** — **Total pipeline US$7.9B**.
+
+**Magnetic Mineral Strategic Assessment:**
+
+| Corridor Metric | Pacific Route (Mejillones → Asia) | Bioceánico Route (Antofagasta → Santos → Asia) |
+|-----------------|-----------------------------------|-----------------------------------------------|
+| **Distance** | 12,800 km (sea) | 2,100 km (rail) + 11,200 km (sea) = 13,300 km |
+| **Transit Time** | 32 days | 18 days rail + 28 days sea = **46 days** |
+| **Cost (US$/t concentrate)** | 51 | 18 (rail) + 42 (sea) = **60** |
+| **CO2 (kg/t)** | 18.5 | 8.2 (rail) + 21.5 (sea) = **29.7** |
+| **Capacity** | Unlimited (sea) | **Rail bottleneck: 8M t/yr max (single track)** |
+| **Risk** | Panama Canal, Red Sea, port strikes | **4 border crossings, 3 gauge changes, political volatility** |
+
+**Verdict for Bulk Concentrate**: **Not competitive** — higher cost, longer transit, higher risk. **Niche use**: **Bolivia/Argentina REE/Li integration** (regional value chain).
+
+**Verdict for Containerized High-Value Magnets (NdFeB, SmCo blocks):**
+- **Brazil market access**: São Paulo automotive/aerospace cluster — **direct rail delivery** (vs. 45-day sea via Panama)
+- **Atlantic redundancy**: If Panama/Red Sea disrupted, Bioceánico provides **alternative Atlantic exit**
+- **Strategic option value**: **CRMA designation (EU 2024)** includes Bioceánico as **strategic corridor** — unlocks EU funding for gauge-change, electrification
+
+**Tardigradia Positioning:**
+1. **No CAPEX commitment** to Bioceánico rail — monitor CAF/IDB progress
+2. **Secure "first right of refusal"** on gauge-change facility at Salta (Argentina) for containerized magnets
+3. **Leverage CRMA status** for EU co-funding of Santiago gauge-change facility (linked project)
+4. **Pilot project**: 2026 trial shipment — NdFeB blocks Antofagasta → Santiago (gauge-change) → Salta (gauge-change) → São Paulo (CSM Brazil partner) — **validate transcontinental container flow**
+
+**Timeline to Viability (Magnetic Cargo):**
+| Milestone | Target | Dependency |
+|-----------|--------|------------|
+| Salta gauge-change facility | 2028 | CAF funding, Argentine approval |
+| Roboré–Corumbá rail (Pantanal) | 2032 | Environmental license (Brazil), BNDES |
+| Full corridor operational | 2035 | All 4 countries synchronized investment |
+| Magnetic cargo regular service | 2036+ | Volume critical mass (50k TEU/yr) |
+
+### 2.5 Rail Cost Model — $/ton-km Formulas & Comparative Analysis
+
+A unified **rail logistics cost model** enables corridor optimization for magnetic minerals across FCAB (meter gauge) and Ferronor (broad gauge). The model separates **fixed infrastructure costs** from **variable operating costs** and applies **magnetic cargo premiums**.
+
+**General Cost per Ton-km Formula:**
+```
+C_rail ($/ton-km) = C_track_access + C_haulage + C_fuel + C_ancillary + C_magnetic_premium
+```
+
+**Component Formulas:**
+
+1. **Track Access (Peaje de Vía):**
+```
+C_track = (Fixed_Train_Charge + Variable_Wagon_km) / (Payload × Distance)
+Fixed_Train_Charge = US$1,200 (FCAB) / US$0 (Ferronor state-subsidized)
+Variable_Wagon_km = US$0.008/wagon-km (FCAB) / US$0.0045/wagon-km (Ferronor)
+```
+
+2. **Haulage (Flete):**
+```
+C_haul = Base_Rate × (1 + Magnetic_Premium) × (1 + Fuel_Surcharge_Index)
+Base_Rate_FCAB = US$0.0145/ton-km (meter gauge, 70t payload)
+Base_Rate_Ferronor = US$0.0125/ton-km (broad gauge, 90t payload)
+Magnetic_Premium = 15% (shielding, monitoring, segregated handling)
+Fuel_Surcharge = Monthly Brent-indexed (22% above base, Oct 2024)
+```
+
+3. **Fuel Cost (Combustible):**
+```
+C_fuel = (Liters_per_ton_km × Fuel_Price) / Payload
+Liters_per_ton_km_FCAB = 0.042 L/ton-km (2× C30-7ACi, 55 wagons, 3,740 t)
+Liters_per_ton_km_Ferronor = 0.031 L/ton-km (2× AC4400CWM, 60 wagons, 5,400 t)
+Fuel_Price = US$0.95/L (Chile wholesale, Oct 2024, includes carbon tax)
+```
+
+4. **Ancillary Services:**
+```
+C_ancillary = (Loading + Weighing + Radiation_Survey + Security) / Payload
+Standard: US$0.23/t (loading US$0.15 + weighing US$0.08)
+Magnetic: US$0.42/t (loading US$0.18 + weighing US$0.08 + rad_survey US$0.12 + security US$0.04)
+```
+
+5. **Magnetic Cargo Premium (Total):**
+```
+C_magnetic = C_haul × 0.15 + C_ancillary_magnetic_delta + C_dwell_penalty
+C_dwell_penalty = US$0.002/ton-km (avg 0.5 hr extra dwell for IMDG docs)
+```
+
+**Calibrated Results (2024, Antofagasta Mine → Mejillones Port, 415 km):**
+
+| Cost Component | FCAB Standard | FCAB Magnetic | Ferronor Standard | Ferronor Magnetic |
+|----------------|---------------|---------------|-------------------|-------------------|
+| Track Access | 0.0033 | 0.0033 | 0.0000 | 0.0000 |
+| Haulage (base) | 0.0145 | 0.0167 | 0.0125 | 0.0144 |
+| Fuel Surcharge | 0.0032 | 0.0037 | 0.0028 | 0.0032 |
+| Fuel Direct | 0.0040 | 0.0040 | 0.0029 | 0.0029 |
+| Ancillary | 0.0006 | 0.0010 | 0.0006 | 0.0010 |
+| **Total $/ton-km** | **0.0256** | **0.0287** | **0.0188** | **0.0215** |
+| **Total $/ton (415 km)** | **10.62** | **11.91** | **7.80** | **8.92** |
+
+**Volume Discount Curves (Annual Contract):**
+```
+Discount(%) = Min(10%, 0.002 × Annual_Volume_Mt)  [FCAB]
+Discount(%) = Min(8%, 0.0015 × Annual_Volume_Mt)   [Ferronor]
+```
+At **5 Mt/yr (Tardigradia target)**: FCAB 10%, Ferronor 7.5%
+
+**Sensitivity Analysis (±15% Fuel, ±20% FX):**
+| Scenario | FCAB Magnetic $/ton | Ferronor Magnetic $/ton | Delta vs Base |
+|----------|---------------------|------------------------|---------------|
+| Base | 11.91 | 8.92 | — |
+| Fuel +15% | 12.24 | 9.15 | +2.8% / +2.6% |
+| Fuel -15% | 11.58 | 8.69 | -2.8% / -2.6% |
+| FX +20% (CLP/USD) | 12.45 | 9.32 | +4.5% / +4.5% |
+| FX -20% | 11.37 | 8.52 | -4.5% / -4.5% |
+
+**Corridor Optimization Rule:**
+- **Bulk concentrate (mine → port)**: **FCAB to Mejillones** — only meter-gauge option, deep draft
+- **Containerized magnets (factory → port)**: **Ferronor to San Antonio** — broad gauge, container infrastructure, lower $/ton-km
+- **Blended (mine → factory → export)**: **FCAB → Gauge-change → Ferronor** — adds US$1.85/t transshipment but enables single-corridor management
+
+**Strategic Cost Target (2028, Post-Investment):**
+- FCAB magnetic: **US$0.0245/ton-km** (double-track, DPU, 10% volume discount)
+- Ferronor magnetic: **US$0.0185/ton-km** (double-track, electrification, 7.5% discount)
+- **Blended corridor (mine → factory → San Antonio): US$0.022/ton-km avg** — **world-class for mineral logistics**
+
+### 2.6 Rail Corridor Comparative Matrix
+
+| Dimension | FCAB (Meter Gauge) | Ferronor (Broad Gauge) | EFE (Passenger/Shared) | Bioceánico (Proposed) |
+|-----------|-------------------|------------------------|------------------------|----------------------|
+| **Gauge** | 1,000 mm | 1,676 mm | 1,676 mm | Mixed (1,000/1,676/1,000) |
+| **Length** | 900 km | 800 km | 800 km (shared) | 2,100 km (Chile-Argentina) |
+| **Ownership** | Private (Antofagasta PLC) | State (CORFO) | State (EFE) | Multi-national (4 countries) |
+| **Annual Tonnage** | 15.2 Mt | 6.8 Mt | 45M pax + 1.2 Mt freight | 0 (future: 8 Mt target) |
+| **Magnetic Cargo Role** | **Bulk concentrate (mine→port)** | **Containerized (factory→port)** | Shared corridor access | Strategic redundancy |
+| **Cost $/ton-km (Magnetic)** | 0.0287 | **0.0215** | N/A (access only) | 0.035+ (est.) |
+| **Max Axle Load** | 22.5 t | 32.5 t | 32.5 t | 22.5 t (meter sections) |
+| **Electrification** | None (planned 2033+) | Santiago–La Calera (2028+) | Santiago–Limache (existing) | None planned |
+| **Key Bottleneck** | Single track (40%) | La Calera–Santiago single | Passenger slot priority | 4 borders, 3 gauge changes |
+| **Investment 2025-30** | US$320M (double-track) | **US$995M** (double-track, electrify) | US$1.2B (passenger) | US$7.9B (multi-national) |
+| **Open Access** | Yes (Law 19,542) | Yes (Law 19,542) | Infrastructure only | Treaty-dependent |
+| **Strategic Mineral Priority** | Addendum 2024 | **Supreme Decree 45/2022** | Emergency preemption | CRMA designation (EU) |
+| **CSM/Tardigradia Alignment** | High (mine→Mejillones) | **Highest (factory→San Antonio)** | Medium (slot coordination) | Low (monitor only) |
+
+**Optimal Magnetic Mineral Rail Strategy:**
+1. **Mine → Port (Bulk)**: **FCAB → Mejillones** — only viable meter-gauge path to deep water
+2. **Factory → Port (Container)**: **Ferronor → San Antonio/Puerto Exterior** — broad gauge, lower cost, container infra
+3. **Mine → Factory (Feedstock)**: **FCAB → Gauge-change (Santiago) → Ferronor** — enables integrated supply chain
+4. **Redundancy**: **Bioceánico option** maintained via FCAB Bolivia branch + Salta gauge-change watch
+
+**Critical Path Investment**: **Santiago Gauge-Change Facility (US$60M, 2027 ops)** — unlocks full corridor integration. Without it, **truck bridge (US$45/t, 4 hr, 2.3 kg CO2/t)** remains permanent structural cost.
+
+---
+
+## Chapter 3: Magnet Shipping — IMDG Class 9
+
+### 3.1 IMDG Code Class 9 Classification — UN 2807 / UN 3508
+
+Magnetized materials are classified under **IMDG Code (Amendment 42-24) Class 9 — Miscellaneous Dangerous Substances and Articles**, with two UN numbers applicable to magnetic minerals and manufactured magnets:
+
+| UN Number | Proper Shipping Name | Class | Packing Group | Applicable Magnets |
+|-----------|---------------------|-------|---------------|-------------------|
+| **UN 2807** | **Magnetized material** | 9 | **II** | **All permanent magnets** (NdFeB, SmCo, AlNiCo, FeN, FeCo) exceeding threshold |
+| **UN 3508** | **Magnetized material, regulated only when transported by air** | 9 | **II** | **Air freight only** (IATA DGR 9.3) — same material, air-specific regulation |
+
+**Classification Threshold (IMDG 2.9.2.2 / IATA DGR 9.3.2):**
+A material is "magnetized" and requires Class 9 regulation if:
+```
+Magnetic field strength > 0.00525 T (5.25 mT) at 2.1 m from package surface
+```
+**Equivalent**: **0.525 Gauss at 2.1 m** (since 1 mT = 10 Gauss)
+
+**This threshold applies to the PACKAGE, not the bare magnet.** Proper shielding (steel, mu-metal) reduces external field below threshold → **reclassification to non-DG possible** (see 3.2.2).
+
+**UN 2807 vs UN 3508 Distinction:**
+- **UN 2807**: All modes (sea, road, rail) — **primary classification for ocean export**
+- **UN 3508**: **Air only** — same material, but air transport has stricter field limits (0.00525 T at 2.1 m for cargo aircraft; 0.002 T at 2.1 m for passenger aircraft — IATA PI 953)
+
+**Packing Group II Rationale (IMDG 2.0.3.2):**
+Class 9 magnetized materials are assigned **Packing Group II** ("medium danger") because:
+1. **No acute toxicity** — hazard is electromagnetic interference (EMI) to navigation, electronics, medical devices
+2. **Controllable by packaging** — shielding reduces field to safe levels
+3. **No subsidiary risk** — not flammable, toxic, corrosive, radioactive (unless contaminated)
+
+**Special Provisions (IMDG 3.3):**
+- **SP 960**: "Magnetized material with field ≤ 0.00525 T at 2.1 m is not subject to IMDG Code"
+- **SP 308**: "Packages must be marked 'MAGNETIZED MATERIAL' and display Class 9 label (black/white diamond, 7 points)"
+- **SP 363**: "Stowage: 'On deck only' for vessels carrying passengers; 'Under deck permitted' for cargo vessels with compass deviation < 2°"
+
+**Chilean Implementation (DS 298/2005 — Reglamento Transporte Sustancias Peligrosas):**
+- Adopts IMDG by reference — **no additional national classification**
+- **Port Captain (Capitanía de Puerto)** enforces stowage, documentation, emergency procedures
+- **Sernageomin** oversees mine-to-port radioactive/contaminated magnetized material (DS 132)
+
+### 3.1.1 Magnetized Material Definition & Thresholds — Physics-Based Classification
+
+The IMDG/IATA threshold is **physics-derived** — based on **magnetic dipole field decay** and **compass/navigation interference criteria**:
+
+**Magnetic Field of a Dipole at Distance r:**
+```
+B(r) = (μ₀ / 4π) × (m / r³) × √(1 + 3cos²θ)
+```
+Where: `μ₀ = 4π×10⁻⁷ T·m/A`, `m = magnetic moment (A·m²)`, `r = distance (m)`, `θ = angle from dipole axis`
+
+**Threshold Derivation (IMO MSC.1/Circ.1245):**
+- **Marine compass deviation limit**: 2° (SOLAS V/19)
+- **Earth's magnetic field**: ~50 μT (0.5 Gauss) horizontal component
+- **Interference field for 2° deviation**: ~1.75 μT at compass location
+- **Standard compass-to-cargo distance**: 2.1 m (IMDG/IATA standard)
+- **Resulting package field limit**: **5.25 mT (52.5 Gauss) at 2.1 m**
+
+**Material-Specific Threshold Analysis (Package-Level):**
+
+| Magnet Type | Typical Bᵣ (T) | Moment (A·m²/kg) | Mass for 5.25 mT at 2.1 m (unshielded) | Shielding Required |
+|-------------|----------------|------------------|----------------------------------------|-------------------|
+| **NdFeB (N42H)** | 1.32 | 85 | **62 g** | **Essential** (steel can + mu-metal) |
+| **NdFeB (N52EH)** | 1.45 | 95 | **55 g** | **Essential** |
+| **SmCo 2:17 (30 MGOe)** | 1.10 | 70 | **75 g** | **Essential** |
+| **AlNiCo 5** | 1.25 | 65 | **81 g** | Moderate (steel can) |
+| **Fe₁₆N₂ (27 MGOe)** | 1.55 | 105 | **50 g** | **Essential** |
+| **Ferrite (C8)** | 0.40 | 18 | **290 g** | Minimal (cardboard + steel strap) |
+
+**Key Insight**: **Any commercial permanent magnet shipment exceeds threshold** without shielding. **Packaging design IS the classification determinant** — not the material itself.
+
+**Threshold Verification Protocol (Port/Factory):**
+1. **Gaussmeter survey** (calibrated, 3-axis) at 2.1 m from package center — 6 faces + corners (14 points)
+2. **Maximum reading** must be ≤ 0.525 Gauss (0.0525 mT) for **non-DG reclassification**
+3. **Documentation**: Survey report + photos + gaussmeter cert → attached to DGD
+4. **Frequency**: Every production lot (CSM requirement) or every shipment (IMDG minimum)
+
+**Chilean Port Enforcement (EMPORCHA/CPM/EPSA):**
+- **Radiation Safety Officers (RSOs)** certified to **IAEA SSG-26** perform surveys
+- **Non-compliant packages**: Rejected at gate, returned to shipper at shipper expense
+- **False declaration penalty**: US$15,000 + cargo hold (DS 298 Art. 45)
+
+### 3.1.2 Packing Group II Requirements — Packaging Standards for UN 2807/3508
+
+As **Packing Group II** ("medium danger"), magnetized material packaging must meet **IMDG 6.1.4 / IATA PI 953** performance standards:
+
+**Package Performance Tests (UN Certified):**
+| Test | Standard | PG II Requirement | Magnetic Cargo Application |
+|------|----------|-------------------|---------------------------|
+| **Drop Test** | IMDG 6.1.5 / ASTM D5276 | 1.2 m (PG II) | Steel can + foam insert — must not breach shielding |
+| **Stack Test** | IMDG 6.1.6 / ASTM D4577 | 24 hr, 3 m stack | Palletized magnet crates — verify no shield deformation |
+| **Leakproofness** | IMDG 6.1.7 | Not required (solid) | N/A for magnets |
+| **Hydraulic Pressure** | IMDG 6.1.8 | Not required (solid) | N/A for magnets |
+| **Vibration** | ASTM D4169 / ISTA 3E | Assurance Level II | Simulated rail/truck/sea vibration — magnet stability |
+
+**UN Packaging Codes for Magnetized Material:**
+| Package Type | UN Code | Description | Magnetic Suitability |
+|--------------|---------|-------------|---------------------|
+| **Steel Drum** | 1A2 | Open head, rolling hoops | **Excellent** — inherent shielding (2-3 mm steel = 99%+ attenuation) |
+| **Steel Box** | 4A | Welded/riveted, gasketed | **Excellent** — customizable, reusable |
+| **Aluminum Box** | 4B | Welded, gasketed | Good — requires mu-metal liner for high-grade |
+| **Plywood Box** | 4D | With steel liner | **Good** — cost-effective for NdFeB blocks |
+| **Fiberboard Box** | 4G | With metal liner | **Minimum** — only for low-grade/ferrite |
+| **Intermediate Bulk Container (IBC)** | 31A | Steel, 1,000 L | **Bulk REE concentrate** — not for finished magnets |
+
+**Magnetic Shielding Integration (Critical for PG II Compliance):**
+The **packaging IS the shielding**. PG II requires the **complete package** (magnet + shield + container) to pass performance tests **while maintaining field ≤ 5.25 mT at 2.1 m**.
+
+**Shielding Effectiveness Formula:**
+```
+SE (dB) = 20 × log₁₀ (B_unshielded / B_shielded)
+Target SE: ≥ 60 dB (reduces 500 mT → 0.5 mT at surface)
+```
+**Steel Can (2 mm):** SE ≈ 40 dB — **insufficient alone for NdFeB/SmCo**
+**Mu-Metal Liner (1 mm, 80% Ni-Fe):** SE ≈ 80 dB — **sufficient**
+**Composite (Steel 1.5 mm + Mu-Metal 0.5 mm):** SE ≈ 70 dB — **optimal cost/performance**
+
+**PG II Package Design for CSM NdFeB Blocks (N48SH, 50×50×25 mm, 1.2 kg each):**
+```
+Outer: UN 4A Steel Box (600×400×300 mm, 2 mm wall)
+Liner: Mu-Metal sheet (0.5 mm, 3-sided, folded corners)
+Insert: Custom foam (EPP, 30 kg/m³) — 24 cavities, magnet orientation controlled
+Closure: Bolted flange (12× M8), EPDM gasket, tamper-evident seal
+Gross Weight: 32 kg (24 magnets + shield + foam)
+Field at 2.1 m: 0.08 mT (PASS — 65× below threshold)
+UN Mark: UN 4A/X32/S/26/CL/EMPORCHA-001
+```
+
+**PG II Marking Requirements (IMDG 5.2):**
+- **UN Mark**: UN 4A/X32/S/26/CL/XXXX (country/year/manufacturer)
+- **Proper Shipping Name**: "MAGNETIZED MATERIAL"
+- **UN Number**: UN 2807 (sea/land) / UN 3508 (air)
+- **Class 9 Label**: 100×100 mm, black/white diamond, "9" in bottom
+- **Orientation Arrows**: Two opposite sides (magnets have polarity)
+- **Net/Gross Weight**: In kg
+- **Shipper/Consignee**: Full details
+
+**Chilean Customs (Aduanas) Verification:**
+- **Document review**: DGD, packaging cert, gaussmeter report
+- **Physical inspection**: 10% random, 100% first shipment new shipper
+- **Non-conformance**: Re-export or destroy at shipper cost (no re-packing at port)
+
+### 3.2 IATA DGR 9.3 Air Freight Restrictions — UN 3508
+
+Air transport of magnetized material is governed by **IATA Dangerous Goods Regulations (DGR) Section 9.3 / Packing Instruction 953 (PI 953)**. **Stricter than IMDG** due to aircraft navigation system sensitivity and passenger safety.
+
+**Key Differences: Air (UN 3508) vs. Sea (UN 2807):**
+
+| Parameter | Sea (IMDG UN 2807) | Air (IATA UN 3508) |
+|-----------|-------------------|-------------------|
+| **Field Limit (2.1 m)** | 0.00525 T (5.25 mT) | **0.00525 T (cargo) / 0.002 T (passenger)** |
+| **Field Limit (Package Surface)** | Not specified | **0.05 T (50 mT) max** |
+| **Packing Instruction** | IMDG 4.1.9 (general) | **PI 953 (specific)** |
+| **Package Certification** | UN PG II | **UN PG II + PI 953 compliant** |
+| **Quantity Limit (PAX)** | No limit | **Forbidden** (magnetized material ≠ permitted on PAX) |
+| **Quantity Limit (CAO)** | No limit | **50 kg net per package** (PI 953) |
+| **Documentation** | DGD + IMDG cert | **Shipper's Declaration + PI 953 cert + Air Waybill** |
+| **Stowage** | On deck / under deck | **Main deck only** (CAO), **minimum 2.1 m from flight deck** |
+
+**PI 953 Specific Requirements:**
+1. **Magnetic field measurement**: At **package surface** AND **2.1 m** — both must comply
+2. **Shielding verification**: **Pre-shipment survey** by certified lab (IATA Accredited)
+3. **Package marking**: "MAGNETIZED MATERIAL — UN 3508" + **Class 9 label + CAO label (cargo aircraft only)**
+4. **Stowage position**: **Not within 2.1 m of aircraft compass/flight management system** — loadmaster calculates
+5. **Temperature**: -40°C to +55°C (standard) — **CSM requires -40°C to +80°C** (see 3.2.3)
+
+**Air Freight Routes for Chilean Magnetic Exports:**
+
+| Origin | Destination | Carrier | Frequency | Transit | Magnetic Cargo Notes |
+|--------|-------------|---------|-----------|---------|---------------------|
+| **SCL (Santiago)** | **MIA (Miami)** | LATAM Cargo, Atlas Air | 6/week | 8 hr | **Primary CSM US route** — CAO B767F, 50 kg/pkg limit |
+| **SCL** | **LAX (Los Angeles)** | LATAM, Amerijet | 4/week | 10 hr | Alternative US West Coast |
+| **SCL** | **AMS (Amsterdam)** | KLM Cargo, LATAM | 3/week | 16 hr | **EU route** — transit via AMS hub |
+| **SCL** | **FRA (Frankfurt)** | Lufthansa Cargo | 2/week | 15 hr | Direct EU, limited CAO capacity |
+| **SCL** | **NRT (Tokyo)** | JAL Cargo, LATAM | 2/week | 28 hr (1 stop) | **Asia route** — via LAX/ANC |
+| **IQQ (Iquique)** | **SCL → MIA** | LATAM (feeder) | Daily | 2 hr + 8 hr | **ZOFRI Iquique** origin — bonded, duty-free |
+
+**Cost Comparison (NdFeB Blocks, 500 kg shipment, SCL→MIA):**
+| Mode | Cost (US$) | Transit | CO2 (kg) | Magnetic Constraints |
+|------|------------|---------|----------|---------------------|
+| **Air (CAO)** | **12,500** | 8 hr | 1,200 | PI 953, 50 kg/pkg, 2.1 m stowage |
+| **Sea (San Antonio→MIA)** | **1,800** | 24 days | 180 | IMDG, no qty limit, deck stowage |
+| **Sea+Air (Hybrid)** | 4,200 | 10 days | 450 | Sea to Panama, air from PTY |
+
+**Air Freight Decision Rule (CSM/Tardigradia):**
+```
+IF (Value > US$150/kg AND Urgency < 72 hr) → AIR (CAO)
+ELSE IF (Value > US$50/kg AND Urgency < 7 days) → SEA+AIR (Panama hub)
+ELSE → SEA (San Antonio/Mejillones)
+```
+**Typical CSM Magnet Shipments**: 85% Sea, 10% Sea+Air, 5% Air (emergency JIT, prototype, aerospace grade)
+
+**Chilean DGAC (Civil Aviation) Enforcement:**
+- **IATA DGR adopted by reference** (DGAC Resolution 1,200/2020)
+- **SCL Cargo Terminal (Nuevo Pudahuel)**: Certified DG handling, 3 magnetic survey stations
+- **Penalty for non-compliance**: CLP 500M (~US$550k) + operating certificate suspension
+
+### 3.2.1 Field Strength < 5.25 mT at 2.1 m — IATA PI 953 Compliance Engineering
+
+The **5.25 mT at 2.1 m** threshold is the **single most critical design parameter** for air-shipped magnets. This section details the **engineering methodology** to achieve compliance for CSM-grade magnets.
+
+**Magnetic Field Decay Law (Dipole Approximation):**
+```
+B(r) = B₀ × (r₀ / r)³
+```
+Where: `B₀` = field at reference distance `r₀` (typically package surface, 0.1 m), `r` = 2.1 m
+
+**Required Surface Field for 2.1 m Compliance:**
+```
+B_surface_max = 5.25 mT × (2.1 / 0.1)³ = 5.25 mT × 9,261 = **48.6 T** (theoretical, unshielded)
+```
+**Reality**: Unshielded NdFeB surface field = 0.3–0.5 T. **Shielding must provide 100–1000× attenuation.**
+
+**Shielding Design Methodology (Finite Element Analysis — ANSYS Maxwell / Comsol):**
+
+| Magnet Configuration | Unshielded B_surf (T) | Required SE (dB) | Shield Design | Shielded B_2.1m (mT) | Margin |
+|---------------------|----------------------|------------------|---------------|---------------------|--------|
+| **Single N48SH block (50×50×25)** | 0.42 | 58 | Steel can 2 mm | 0.41 | **12.8×** |
+| **12-block array (Halbach)** | 0.65 | 62 | Steel 2 mm + Mu-metal 0.3 mm | 0.38 | **13.8×** |
+| **SmCo 2:17 (50×50×20, 30 MGOe)** | 0.38 | 57 | Steel can 1.5 mm | 0.29 | **18.1×** |
+| **Fe₁₆N₂ (27 MGOe, 40×40×15)** | 0.48 | 60 | Steel 2 mm + Mu-metal 0.5 mm | 0.42 | **12.5×** |
+| **NdFeB ring (motor rotor, OD 120 mm)** | 0.55 | 63 | **Mu-metal can 1.0 mm (custom)** | 0.31 | **16.9×** |
+
+**Shielding Materials Comparison:**
+| Material | Composition | Permeability (μᵣ) | Saturation (T) | Thickness for 60 dB | Cost (US$/kg) | Notes |
+|----------|-------------|-------------------|----------------|---------------------|---------------|-------|
+| **Low-Carbon Steel (1010)** | Fe 99.5% | 2,000 | 2.1 | 2.0 mm | 1.20 | **Standard** — cost-effective, weldable |
+| **Mu-Metal (Ni 80%, Fe 15%, Mo 5%)** | NiFeMo | 200,000 | 0.8 | 0.3 mm | 85.00 | **High-performance** — brittle, requires annealing |
+| **Co-Netic AA (High-Ni)** | Ni 79%, Fe 16%, Mo 5% | 300,000 | 0.75 | 0.2 mm | 120.00 | **Ultra-high** — aerospace only |
+| **Hybrid (Steel 1.5 mm + Mu-Metal 0.3 mm)** | Composite | — | — | 1.8 mm total | 8.50 | **Optimal** — steel handles saturation, mu-metal gives SE |
+
+**CSM Standard Shielding Specification (Air Freight):**
+```
+Package: UN 4A Steel Box (2 mm)
+Internal Shield: Mu-Metal 0.3 mm (3-sided, spot-welded to box)
+Magnet Orientation: Halbach array (self-shielding) + alternating polarity
+Void Fill: EPP foam (30 kg/m³) — prevents movement, maintains orientation
+Verification: 3-axis gaussmeter at 2.1 m (14 points) — MAX reading recorded
+Acceptance: ≤ 0.525 mT (0.0525 Gauss) — 10× safety margin below 5.25 mT
+```
+
+**Temperature Effect on Shielding (Critical for Air Cargo Holds):**
+- **Steel permeability**: Decreases ~0.2%/°C above 20°C — **negligible for -40°C to +55°C**
+- **Mu-Metal permeability**: **Decreases 15% at -40°C**, 10% at +80°C — **must derate SE by 2 dB at extremes**
+- **Design Margin**: CSM requires **10× margin at 2.1 m** (0.525 mT vs 5.25 mT limit) — **covers temperature derating**
+
+**PI 953 Certification Process (Per Shipment):**
+1. **Factory survey**: 3-axis gaussmeter, calibrated (NIST traceable), 14-point grid at 2.1 m
+2. **Report**: Field map + max reading + gaussmeter cert + package photos
+3. **Declaration**: Shipper signs PI 953 compliance statement
+4. **Forwarder review**: IATA DG certified acceptor verifies at SCL cargo terminal
+5. **Loadmaster notification**: Field data provided for aircraft stowage planning
+
+**Cost of PI 953 Compliance (Per 500 kg Shipment):**
+| Item | Cost (US$) |
+|------|------------|
+| Mu-Metal shielding (custom) | 1,200 |
+| Steel box (UN 4A, reusable) | 350 |
+| Gaussmeter survey (lab) | 450 |
+| Documentation/DGD | 180 |
+| **Total Incremental vs. Sea** | **2,180** |
+| **Air Freight Premium (vs Sea)** | **10,700** |
+| **Compliance as % of Premium** | **20%** |

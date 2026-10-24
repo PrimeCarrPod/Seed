@@ -184,18 +184,18 @@
 - [x] 2.5.24 Write Section 2.1.4 - Tariff structure for mineral concentrates
 - [x] 2.5.25 Write Section 2.2 - Ferronor overview (800km north-south spine)
 - [x] 2.5.26 Write Section 2.2.1 - Calama-Salta connection (Argentina link)
-- [ ] 2.5.27 Write Section 2.2.2 - State-owned operations & investment plan
-- [ ] 2.5.28 Write Section 2.2.3 - Integration with FCAB at strategic nodes
-- [ ] 2.5.29 Write Section 2.3 - EFE integration (passenger/freight)
-- [ ] 2.5.30 Write Section 2.4 - Corredor Bioceánico proposal status
-- [ ] 2.5.31 Write Section 2.5 - Rail cost model: $/ton-km formulas
-- [ ] 2.5.32 Write Section 2.6 - Rail corridor comparative matrix
-- [ ] 2.5.33 Create Chapter 3 markdown header "Magnet Shipping IMDG Class 9"
-- [ ] 2.5.34 Write Section 3.1 - IMDG Code Class 9 classification (UN 2807/3508)
-- [ ] 2.5.35 Write Section 3.1.1 - Magnetized material definition & thresholds
-- [ ] 2.5.36 Write Section 3.1.2 - Packing Group II requirements
-- [ ] 2.5.37 Write Section 3.2 - IATA DGR 9.3 air freight restrictions
-- [ ] 2.5.38 Write Section 3.2.1 - Field strength <5.25mT at 2.1m (IATA PI 953)
+- [x] 2.5.27 Write Section 2.2.2 - State-owned operations & investment plan
+- [x] 2.5.28 Write Section 2.2.3 - Integration with FCAB at strategic nodes
+- [x] 2.5.29 Write Section 2.3 - EFE integration (passenger/freight)
+- [x] 2.5.30 Write Section 2.4 - Corredor Bioceánico proposal status
+- [x] 2.5.31 Write Section 2.5 - Rail cost model: $/ton-km formulas
+- [x] 2.5.32 Write Section 2.6 - Rail corridor comparative matrix
+- [x] 2.5.33 Create Chapter 3 markdown header "Magnet Shipping IMDG Class 9"
+- [x] 2.5.34 Write Section 3.1 - IMDG Code Class 9 classification (UN 2807/3508)
+- [x] 2.5.35 Write Section 3.1.1 - Magnetized material definition & thresholds
+- [x] 2.5.36 Write Section 3.1.2 - Packing Group II requirements
+- [x] 2.5.37 Write Section 3.2 - IATA DGR 9.3 air freight restrictions
+- [x] 2.5.38 Write Section 3.2.1 - Field strength <5.25mT at 2.1m (IATA PI 953)
 - [ ] 2.5.39 Write Section 3.2.2 - Shielding packaging design (mu-metal, steel)
 - [ ] 2.5.40 Write Section 3.2.3 - Temperature control -40°C to +80°C stability
 - [ ] 2.5.41 Write Section 3.3 - MIL-STD-1540 test certificate requirements
