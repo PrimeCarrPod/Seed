@@ -1,56 +1,42 @@
 {
   "chapter_01_us-chile_critical_minerals_agr.md": {
     "size": 9132,
-    "sha256": "e13c0a460b76c14184b5c344cea0c9a930a7dafb879ac3cf016af15d0297fb43",
-    "chapter": "1",
-    "title": "US-Chile Critical Minerals Agreement"
+    "sha256": "b284b23ba2c97619c55be2448e2a8db174b0f936fea917da7b29c48628698639"
   },
   "chapter_02_eu_critical_raw_materials_act_.md": {
     "size": 6765,
-    "sha256": "4c7ec0667377a3c8c102bca3ed33e0ad1c7254fbfb20e039e8f9c763c52360e1",
-    "chapter": "2",
-    "title": "EU Critical Raw Materials Act (CRMA) Alignment"
+    "sha256": "aab417e8c0f3ff0dea9e0590cd764f68e17fc2e3c872950dfaba1aeb6d83e04c"
   },
   "chapter_03_apec_cptpp_mineral_trade_facil.md": {
     "size": 6519,
-    "sha256": "9705b8618cd7e7801470a0a486e086eb7d3770e77cb6ddb1d0d0b96277ce71c9",
-    "chapter": "3",
-    "title": "APEC/CPTPP Mineral Trade Facilitation"
+    "sha256": "033f865c35879f764863cc1c6eccc4a511c9cb9136d7881600cbf7476ec67f4f"
   },
   "chapter_04_technology_transfer_frameworks.md": {
     "size": 6679,
-    "sha256": "14d0e3b89d141c5cae330eec82ba2f3e3f335361edc0b8b538d8e7e777114ab1",
-    "chapter": "4",
-    "title": "Technology Transfer Frameworks"
+    "sha256": "0b49216e879717f4353815b482b4d2fabe575420e343233e82a6e7cf00e7021e"
   },
   "chapter_05_investment_protection__dispute.md": {
     "size": 7495,
-    "sha256": "eac6b9402dce65521b9382d29f631128c523d95e476023574973b0afa1beb84b",
-    "chapter": "5",
-    "title": "Investment Protection & Dispute Settlement"
+    "sha256": "17723a03929119f68f65a6fb600c42be8ebcdf942bebaa526e9390ba2f3e01bd"
   },
   "chapter_06_environmental__social_standard.md": {
     "size": 6500,
-    "sha256": "df735563ce4b82a42c44b59e599a64d849e67b9f4072cfae4b6deeb6aabbe009",
-    "chapter": "6",
-    "title": "Environmental & Social Standards Harmonization"
+    "sha256": "ffef0b57d8bdc8f3c771cf19a906fea6ddaa5fe97d6fd92716e29f19c65018a7"
   },
   "chapter_07_workforce_mobility__skills_rec.md": {
     "size": 6339,
-    "sha256": "a24b279cd618428088350a59b6e13abf7a16b0ff8f684e17c04b7cf0de5643a8",
-    "chapter": "7",
-    "title": "Workforce Mobility & Skills Recognition"
+    "sha256": "8cbf07a268221a1bbe22789d53baa2fd08885fbf2fcfe9a7d3f4a0bb891f0481"
   },
   "chapter_08_intellectual_property__data_go.md": {
     "size": 7293,
-    "sha256": "1eaec2d54dc22e6e31bb9593250fefa3d565da1a3aebedc7289f3b22aab256a0",
-    "chapter": "8",
-    "title": "Intellectual Property & Data Governance"
+    "sha256": "943181b23ba865e70a68322ac18eb588341cfb0ac351b36d0cec16197bef0e7b"
   },
   "chapter_09_traceability_matrix.md": {
     "size": 9341,
-    "sha256": "c8a2a85ea4f5b84f9d6025ce4a95344f48a76aef36a21553a4a9e9f7faf309fe",
-    "chapter": "9",
-    "title": "Traceability Matrix"
+    "sha256": "d164b7a01a3da78feaf0b310420a3ee892c334f178b8593bee000ca6aeaccd87"
+  },
+  "MANIFEST.json": {
+    "size": 2062,
+    "sha256": "d279756cee9059a655a16a4e141c1568070396c82d5efb32f9f1b400d07db9a5"
   }
 }
