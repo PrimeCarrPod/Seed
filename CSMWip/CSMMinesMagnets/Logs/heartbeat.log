@@ -61,3 +61,8 @@
 [HEARTBEAT] 2026-10-24 16:58:23 UTC | Runner 001 | DOC-01 | START | Interval: 120s
 [HEARTBEAT] 2026-10-24 17:00:23 UTC | Runner 001 | DOC-01 | Subtask 0.2.1 | Cycle 1 | Next: Research ingestion
 [HEARTBEAT] 2026-10-24 17:00:46 UTC | Runner 001 | DOC-01 | START | Interval: 120s
+[HEARTBEAT] 2026-10-24 17:02:46 UTC | Runner 001 | DOC-01 | Subtask 0.2.1 | Cycle 1 | Next: Research ingestion
+[HEARTBEAT] 2026-10-24 17:04:46 UTC | Runner 001 | DOC-01 | Subtask 0.2.1 | Cycle 2 | Next: Research ingestion
+[HEARTBEAT] 2026-10-24 17:06:46 UTC | Runner 001 | DOC-01 | Subtask 0.2.1 | Cycle 3 | Next: Research ingestion
+[HEARTBEAT] 2026-10-24 17:08:46 UTC | Runner 001 | DOC-01 | Subtask 0.2.1 | Cycle 4 | Next: Research ingestion
+[HEARTBEAT] 2026-10-24 17:10:46 UTC | Runner 001 | DOC-01 | Subtask 0.2.1 | Cycle 5 | Next: Research ingestion

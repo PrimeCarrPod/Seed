@@ -1,7 +1,7 @@
 {
-  "runner": "005",
-  "document": "DOC-08",
-  "subtask": "TASK-001",
-  "last_update": "2026-10-24T16:57:00.000000+00:00",
-  "next_action": "Create Chapter 1 markdown header and title"
+  "runner": "001",
+  "document": "DOC-01",
+  "subtask": "0.2.1",
+  "last_update": "2026-10-24T17:10:46.939315+00:00",
+  "next_action": "Research ingestion"
 }
