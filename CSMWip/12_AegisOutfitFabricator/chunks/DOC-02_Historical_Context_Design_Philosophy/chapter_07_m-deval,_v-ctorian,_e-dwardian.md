@@ -1,2 +1,0 @@
-# M-deval, V-ctorian, E-dwardian, R-gency, R-coco, N-oclassical, E-mpire, 19C, 20C, pre-1600, pre-1500
-grep -ic 'M-deval\|V-ctorian\|E-dwardian\|R-gency\|R-coco\|N-oclassical\|E-mpire\|19C\|20C\|pre-1600\|pre-1500'

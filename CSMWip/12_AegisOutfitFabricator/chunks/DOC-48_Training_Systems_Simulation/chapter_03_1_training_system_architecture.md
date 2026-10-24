@@ -2,7 +2,7 @@
 
 ### 1.1 Training Vision — Live, Virtual, Constructive (LVC)
 
-The AIMES training system implements a **Live-Virtual-Constructive (LVC)** integrated training environment per **DoDI 1322.26** and **DoDI 4151.22**. The goal: **train as you fight, fight as you train** with seamless transition between domains.
+The AIMES training system implements a **Live-Virtual-Constructive (LVC)** integrated training environment per **DoDI 1322.26** and **DoDI 4151.22**. The goal: **train as you fight, fight as you train** with seamless transition between domains. Architecture references **CSMFAB078** main threat matrix and **SYNTH-01** unified theory for LVC domain definitions. **SYNTH-02** protective layer adaptation informs threat modeling.
 
 **LVC Integration Model**:
 
@@ -25,7 +25,7 @@ CONSTRUCTIVE TRAINING (CGF, Wargaming, AI Adversary)
 
 ### 1.2 Training System Requirements — DOC-36 Integration
 
-Per **DOC-36** (Training & Certification), the training system supports four certification levels:
+Per **DOC-36** (Training & Certification), the training system supports four certification levels. Requirements trace to **CSMFAB078-A** edition morphology parameters and **SYNTH-03** drafting kernel for edition-specific training. **SYNTH-02** threat scaling applies to certification tiers.
 
 | Certification | Training Hours | Sim/Live Ratio | Key Systems |
 |---------------|----------------|----------------|-------------|
@@ -47,3 +47,4 @@ Per **DOC-36** (Training & Certification), the training system supports four cer
 | **CMI5** | LMS↔Sim interoperability | Launch, completion, scoring |
 
 ---
+
