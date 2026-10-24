@@ -137,3 +137,4 @@ Tardigradia sets a FLOOR of $3,000/person/year -- 44% above the best existing mo
 | Foundation governance 50/25/25 | Candelaria Foundation Statutes | Art 4 |
 | Carmen health $3M | Teck 2023 Sustainability Report | p. 41 |
 | Sierra Gorda 60% budget | Sierra Gorda Municipal Budget 2023 | p. 3 |
+| Tardigradia per-capita floor validation | [TBD:RESEARCH] Community survey Q1 2027 | Field work required |

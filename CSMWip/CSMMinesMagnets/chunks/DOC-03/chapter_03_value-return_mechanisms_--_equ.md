@@ -120,3 +120,4 @@ This transforms Chile from mineral exporter to magnet exporter -- the strategic 
 | Chile I-O multiplier 0.42 | Banco Central 2023 Matriz Insumo-Producto | Sector 23 (Metalurgia) |
 | Supply chain multiplier 1.8 | Banco Central 2023 | Standard Type II |
 | Induced multiplier 0.6 | Banco Central 2023 | Standard Type II |
+| Aegis-Forge REE recovery at tailings grades | [TBD:RESEARCH] Pilot testing 2026-27 | CSMFAB0108 pending |

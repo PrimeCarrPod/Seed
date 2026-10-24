@@ -108,3 +108,4 @@ Upskilling funded: Tardigradia pays 100% tuition + salary during study leave (1 
 | MIL-STD-1540 magnet acceptance | DoD MIL-STD-1540D | Section 4 |
 | INN Chile ISO 17025 | Instituto Nacional de Normalización | Accreditation directory |
 | Mining automation transferable | Codelco/Antofagasta training docs | Internal (referenced) |
+| Magnet manufacturing curriculum accreditation | [TBD:RESEARCH] ChileValora 2027 | Standards development pending |

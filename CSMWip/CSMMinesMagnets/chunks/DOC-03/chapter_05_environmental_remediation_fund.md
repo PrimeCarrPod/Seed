@@ -142,3 +142,4 @@ Current Chilean environmental bonds (RCA requirement): Typically 1-3% of CAPEX, 
 | Conventional water 85 m3/t | USGS Mineral Processing Water Use | Table 4 |
 | DGA water rate $0.15/m3 | DGA Derechos de Agua 2024 | Market survey |
 | 200+ abandoned mines | Sernageomin Minas Inactivas | Official list |
+| El Sauce pilot REE recovery rate | [TBD:RESEARCH] Pilot 2026-27 | Awaiting permit |
