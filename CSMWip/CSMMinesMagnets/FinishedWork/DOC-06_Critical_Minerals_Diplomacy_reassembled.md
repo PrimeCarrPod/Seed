@@ -18,7 +18,8 @@ $$U_{US} = lpha \cdot SupplySecurity + eta \cdot CostAdvantage - \gamma \cdot 
 $$U_{Chile} = \delta \cdot Revenue + \epsilon \cdot TechnologyTransfer - \zeta \cdot SovereigntyCost$$
 $$NashEquilibrium: 
 abla U_{US} = 0, 
-abla U_{Chile} = 0 ightarrow AgreementForm = CongressionalExecutive$$
+abla U_{Chile} = 0 
+ightarrow AgreementForm = CongressionalExecutive$$
 
 [TBD:RESEARCH] Game-theoretic modeling of US-Chile critical minerals bargaining equilibrium (2026-Q1)
 
@@ -108,6 +109,8 @@ $$TotalAnnualCredit = Credit_{REE} + Credit_{Magnet} approx $45M/yr at full capa
 ---
 
 *End of Chapter 1. Next: Chapter 2 -- EU CRMA Alignment*
+
+
 ## EU Critical Raw Materials Act (CRMA) Alignment
 ## Chapter 2: EU Critical Raw Materials Act (CRMA) Alignment
 
@@ -167,8 +170,10 @@ $$AnnualSavings = (r_{commercial} - r_{EIB}) x Principal = 3% x 255M EUR = 7.65M
 
 **EIB Leverage Ratio for Project Finance:**
 $$LeverageRatio = rac{TotalDebt}{Equity} = rac{EIB_{total} + CommercialDebt}{SponsorEquity}$$
-$$TargetLeverage = 70/30 (D/E) ightarrow CommercialDebt = 0.7/0.3 x SponsorEquity - EIB_{total}$$
-$$SponsorEquity = $1.3B 	imes 0.3 = $390M ightarrow CommercialDebt = $910M - $275M = $635M$$
+$$TargetLeverage = 70/30 (D/E) 
+ightarrow CommercialDebt = 0.7/0.3 x SponsorEquity - EIB_{total}$$
+$$SponsorEquity = $1.3B 	imes 0.3 = $390M 
+ightarrow CommercialDebt = $910M - $275M = $635M$$
 
 [TBD:RESEARCH] CRMA strategic project application precedent and EIB critical minerals facility terms 2024 (2026-Q1)
 
@@ -224,6 +229,8 @@ $$CreditRevenue = RecycledREE_{t/yr} x CreditPrice_{EUR/t} = 175 x 85,000 = 14.9
 ---
 
 *End of Chapter 2. Next: Chapter 3 -- APEC/CPTPP Mineral Trade Facilitation*
+
+
 ## APEC/CPTPP Mineral Trade Facilitation
 ## Chapter 3: APEC/CPTPP Mineral Trade Facilitation
 
@@ -320,6 +327,8 @@ $$Delta T = T_{qual}^{multiple} - T_{qual}^{single} = 18 months acceleration$$
 ---
 
 *End of Chapter 3. Next: Chapter 4 -- Technology Transfer Frameworks*
+
+
 ## Technology Transfer Frameworks
 ## Chapter 4: Technology Transfer Frameworks
 
@@ -428,6 +437,8 @@ $$Delta T_{grant} = 36 - 24 = 12 months (US)$$
 ---
 
 *End of Chapter 4. Next: Chapter 5 -- Investment Protection & Dispute Settlement*
+
+
 ## Investment Protection & Dispute Settlement
 ## Chapter 5: Investment Protection & Dispute Settlement
 
@@ -533,6 +544,8 @@ $$For CVO Protection Order: EV = 0.85 	imes ProtectedValue - 0.15 	imes LegalCos
 ---
 
 *End of Chapter 5. Next: Chapter 6 -- Environmental & Social Standards Harmonization*
+
+
 ## Environmental & Social Standards Harmonization
 ## Chapter 6: Environmental & Social Standards Harmonization
 
@@ -547,7 +560,9 @@ $$	herefore ConvergenceIndex = rac{|Satisfied|}{|Total|} = rac{8}{8} = 1.0$$
 
 **Risk Category Quantification:**
 $$Risk_{env} = \prod_{i} (1 - MitigationEffectiveness_i)$$
-$$ZeroDischarge ightarrow MitigationEffectiveness = 1.0 ightarrow Risk_{env} = 0$$
+$$ZeroDischarge 
+ightarrow MitigationEffectiveness = 1.0 
+ightarrow Risk_{env} = 0$$
 $$Risk_{social} = 1 - (FPIC+_{coverage} 	imes CVO_{veto} 	imes TrustEquity)$$
 $$= 1 - (1.0 	imes 1.0 	imes 0.15) = 0.85 	ext{ residual risk (managed by CVO)}$$
 
@@ -595,7 +610,8 @@ $$CommunityCoupon = 0.005 x 4.5% x $481M = $1.08M/yr to FBC Trusts$$
 
 **Green Bond Pricing Advantage:**
 $$Spread_{green} = Spread_{vanilla} - Greenium$$
-$$Greenium = 5-10 bps (empirical) ightarrow AnnualSavings = 7.5 bps 	imes $481M = $3.6M/yr$$
+$$Greenium = 5-10 bps (empirical) 
+ightarrow AnnualSavings = 7.5 bps 	imes $481M = $3.6M/yr$$
 
 [TBD:RESEARCH] Chile MFH Green Taxonomy 2023 eligibility criteria for critical minerals processing (2026-Q1)
 
@@ -630,6 +646,8 @@ $$Greenium = 5-10 bps (empirical) ightarrow AnnualSavings = 7.5 bps 	imes $481M
 ---
 
 *End of Chapter 6. Next: Chapter 7 -- Workforce Mobility & Skills Recognition*
+
+
 ## Workforce Mobility & Skills Recognition
 ## Chapter 7: Workforce Mobility & Skills Recognition
 
@@ -717,6 +735,8 @@ $$ROI_{mobility} = rac{PV(Revenue) - Cost}{Cost} = rac{$24M 	imes 6.7 (r=8\%, 
 ---
 
 *End of Chapter 7. Next: Chapter 8 -- Intellectual Property & Data Governance*
+
+
 ## Intellectual Property & Data Governance
 ## Chapter 8: Intellectual Property & Data Governance
 
@@ -812,7 +832,8 @@ $$Investment_{cyber} = $2.5M (ISO 27001 + IEC 62443 + CSA STAR + SLSA)$$
 $$RiskReduction = P(breach)_{before} - P(breach)_{after} = 0.15 - 0.03 = 0.12$$
 $$ExpectedLoss_{before} = 0.15 	imes $50M = $7.5M/yr$$
 $$ExpectedLoss_{after} = 0.03 	imes $50M = $1.5M/yr$$
-$$AnnualSavings = $6M/yr ightarrow ROI = rac{6M}{2.5M} = 2.4x 	ext{ (Year 1)}$$
+$$AnnualSavings = $6M/yr 
+ightarrow ROI = rac{6M}{2.5M} = 2.4x 	ext{ (Year 1)}$$
 
 [TBD:RESEARCH] Law 19,628 cross-border transfer adequacy assessment for Chile-US data flows (2026-Q1)
 
@@ -834,6 +855,8 @@ $$AnnualSavings = $6M/yr ightarrow ROI = rac{6M}{2.5M} = 2.4x 	ext{ (Year 1)}$
 ---
 
 *End of Chapter 8. Next: Chapter 9 -- Traceability Matrix*
+
+
 ## Traceability Matrix
 ## Chapter 9: Traceability Matrix
 
@@ -963,3 +986,5 @@ $$AnnualSavings = $6M/yr ightarrow ROI = rac{6M}{2.5M} = 2.4x 	ext{ (Year 1)}$
 ---
 
 *End of DOC-06 -- Chilean Critical Minerals Diplomacy*
+
+
