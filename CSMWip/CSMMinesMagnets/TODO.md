@@ -167,23 +167,23 @@
 - [x] 2.5.7 Write Section 1.1.5 - REE handling readiness assessment
 - [x] 2.5.8 Write Section 1.2 - Puerto Mejillones overview
 - [x] 2.5.9 Write Section 1.2.1 - CPM structure (CODELCO subsidiary)
-- [ ] 2.5.10 Write Section 1.2.2 - Terminal breakdown (Puerto Angamos, TGN)
-- [ ] 2.5.11 Write Section 1.2.3 - New bulk terminal US$120M (4M ton/yr, tubular conveyors)
-- [ ] 2.5.12 Write Section 1.2.4 - Rail reception capability (volteable containers)
-- [ ] 2.5.13 Write Section 1.2.5 - Storage capacity (72,000 ton concentrate bodega)
-- [ ] 2.5.14 Write Section 1.3 - Puerto San Antonio overview
-- [ ] 2.5.15 Write Section 1.3.1 - Current capacity (1.8M TEU, 23.2M ton 2024)
-- [ ] 2.5.16 Write Section 1.3.2 - Puerto Exterior project (US$4B, 6M TEU, 2036 ops)
-- [ ] 2.5.17 Write Section 1.4 - Puerto Coronel & Punta Arenas
-- [ ] 2.5.18 Write Section 1.5 - Comparative port capability matrix table
-- [ ] 2.5.19 Create Chapter 2 markdown header "Rail Corridors FCAB & FERRONOR"
-- [ ] 2.5.20 Write Section 2.1 - FCAB overview (900km, 15M ton/yr, privatized)
-- [ ] 2.5.21 Write Section 2.1.1 - Gauge specifications (1000mm meter gauge)
-- [ ] 2.5.22 Write Section 2.1.2 - Antofagasta-Meijillones link capacity
-- [ ] 2.5.23 Write Section 2.1.3 - Rolling stock & locomotive fleet
-- [ ] 2.5.24 Write Section 2.1.4 - Tariff structure for mineral concentrates
-- [ ] 2.5.25 Write Section 2.2 - Ferronor overview (800km north-south spine)
-- [ ] 2.5.26 Write Section 2.2.1 - Calama-Salta connection (Argentina link)
+- [x] 2.5.10 Write Section 1.2.2 - Terminal breakdown (Puerto Angamos, TGN)
+- [x] 2.5.11 Write Section 1.2.3 - New bulk terminal US$120M (4M ton/yr, tubular conveyors)
+- [x] 2.5.12 Write Section 1.2.4 - Rail reception capability (volteable containers)
+- [x] 2.5.13 Write Section 1.2.5 - Storage capacity (72,000 ton concentrate bodega)
+- [x] 2.5.14 Write Section 1.3 - Puerto San Antonio overview
+- [x] 2.5.15 Write Section 1.3.1 - Current capacity (1.8M TEU, 23.2M ton 2024)
+- [x] 2.5.16 Write Section 1.3.2 - Puerto Exterior project (US$4B, 6M TEU, 2036 ops)
+- [x] 2.5.17 Write Section 1.4 - Puerto Coronel & Punta Arenas
+- [x] 2.5.18 Write Section 1.5 - Comparative port capability matrix table
+- [x] 2.5.19 Create Chapter 2 markdown header "Rail Corridors FCAB & FERRONOR"
+- [x] 2.5.20 Write Section 2.1 - FCAB overview (900km, 15M ton/yr, privatized)
+- [x] 2.5.21 Write Section 2.1.1 - Gauge specifications (1000mm meter gauge)
+- [x] 2.5.22 Write Section 2.1.2 - Antofagasta-Meijillones link capacity
+- [x] 2.5.23 Write Section 2.1.3 - Rolling stock & locomotive fleet
+- [x] 2.5.24 Write Section 2.1.4 - Tariff structure for mineral concentrates
+- [x] 2.5.25 Write Section 2.2 - Ferronor overview (800km north-south spine)
+- [x] 2.5.26 Write Section 2.2.1 - Calama-Salta connection (Argentina link)
 - [ ] 2.5.27 Write Section 2.2.2 - State-owned operations & investment plan
 - [ ] 2.5.28 Write Section 2.2.3 - Integration with FCAB at strategic nodes
 - [ ] 2.5.29 Write Section 2.3 - EFE integration (passenger/freight)
