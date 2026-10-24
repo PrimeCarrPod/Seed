@@ -107,3 +107,4 @@ Funding: $25M Just Transition Fund (Tardigradia 40%, Corfo 30%, IDB 20%, municip
 | ISO 11607 packaging | ISO 11607-1:2019 | Standard |
 | ISO 14175 welding gas | ISO 14175:2013 | Standard |
 | Just Transition 4,200 jobs | Ministerio Energía Plan Descarbonización | 2023 Annex |
+| Port community magnet handling certification | [TBD:RESEARCH] INN Chile 2027 | Standard development pending |

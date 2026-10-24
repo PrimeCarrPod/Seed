@@ -142,3 +142,4 @@ Key principle: **Community equity is not diluted, not forced to sell below fair 
 | CORFO venture authority | CORFO Ley Orgánica (Law 18,735) | Art 14 |
 | Tag-along rights enforceability | Chilean Corporate Law / SHA practice | Case law |
 | Environmental bond priority | Insolvency Law (Law 20,720) | Art 134 |
+| CORFO equity commitment terms | [TBD:RESEARCH] Corfo Ventures negotiation 2026 | MOU pending |

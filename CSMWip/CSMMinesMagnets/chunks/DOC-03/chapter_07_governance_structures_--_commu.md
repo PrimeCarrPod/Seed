@@ -142,3 +142,4 @@ Cost allocation: Tardigradia pays 70% of mediation/arbitration costs. Community 
 | Law 19,862 foundations | Biblioteca del Congreso Nacional | Primary text |
 | CAM Santiago arbitration | Centro de Arbitraje y Mediación | Rules 2023 |
 | Contraloría oversight | Contraloría General de la República | Organic Law |
+| FBC protector panel election mechanics | [TBD:RESEARCH] Community design workshops 2026 | Participatory design required |
