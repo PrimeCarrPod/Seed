@@ -1,1 +1,0 @@
-# DOC-08: Manufacturing Process Plan

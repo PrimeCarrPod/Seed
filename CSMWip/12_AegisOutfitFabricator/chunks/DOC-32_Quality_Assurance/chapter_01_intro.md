@@ -1,1 +1,0 @@
-# DOC-32: Quality Assurance Specification

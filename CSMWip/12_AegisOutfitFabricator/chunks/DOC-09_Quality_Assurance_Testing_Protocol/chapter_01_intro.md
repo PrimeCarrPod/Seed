@@ -1,1 +1,0 @@
-# DOC-09: Quality Assurance & Testing Protocol

@@ -1,1 +1,0 @@
-# DOC-23: Electrical/GIC Protection Specification
