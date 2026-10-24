@@ -1,18 +1,58 @@
 {
+  "MANIFEST.json": {
+    "size": 576,
+    "sha256": "6b43504243b476cd5a4620de430bb3b92c04874894f34fb03b875be954fe2907"
+  },
   "chapter_01_intro.md": {
-    "size": 449,
-    "sha256": "7d4837b390b16522fc6adf7caeccf4ab8c7efea6a1302280ed6e881776603359"
+    "size": 594,
+    "sha256": "572a95c66ab05b8c408b7222b5eb49ff3ebb0961d104fd4ef1d7e778f7e07722"
   },
   "chapter_02_table_of_contents.md": {
-    "size": 706,
-    "sha256": "6ed5f0d710acfe028c59af40b8f273e3e5acb412c7e0a389cb7c4319660aa741"
+    "size": 707,
+    "sha256": "8c0fcd4bcc22c9bd76b77707fdaa2b86e3ce896236a37f8aa3700ebd304b46bf"
   },
   "chapter_03_1_training_system_architecture.md": {
-    "size": 2529,
-    "sha256": "e0b0846c65baba4b19995013292f74e52d0eaba9fc98862e5d778a4eece6b02b"
+    "size": 2905,
+    "sha256": "b8071ee0436a9ab9afd2a3e465c444ef15ee26f91468ed1a05372031e57f3309"
   },
   "chapter_10_8_formulas_reference.md": {
-    "size": 373,
-    "sha256": "353116ea696263c70aa510221bd952d40d8b2cad8b0f9ae3637148b59514426d"
+    "size": 2521,
+    "sha256": "b1d4a91651351aa33e7b17ded7ec26bde5138e78fea57d3514c5cb4bbe9a683d"
+  },
+  "chapter_04_2_simulation_infrastructure__c.md": {
+    "size": 2823,
+    "sha256": "3f0b82ba19a7c6d816b5964b4d9636f109305473e2c48b4c227ce10fc61d8c92"
+  },
+  "chapter_05_3_synthetic_training_environme.md": {
+    "size": 2934,
+    "sha256": "2ddbbcf07149fcb80a7e7c4440cfa4b16c79186e702d02b3b40c7662b1baa020"
+  },
+  "chapter_06_4_curriculum_integration__mana.md": {
+    "size": 2933,
+    "sha256": "f5cb3377bec0ba2f5cc93b9b505756742ac9a42589265f83079edd4ee158e523"
+  },
+  "chapter_07_5_instructor__assessment_syste.md": {
+    "size": 2446,
+    "sha256": "c10051c1a5876a37eead59b5507d88a9789984fa215cf56be863515e1243e94e"
+  },
+  "chapter_08_6_distributed_mission_operatio.md": {
+    "size": 2400,
+    "sha256": "e3685f33cb8bdec2331c3632545bd6648b59150793c447e3e3465d35a2221ae1"
+  },
+  "chapter_09_7_traceability_matrix.md": {
+    "size": 1918,
+    "sha256": "dfa44f18846723143b627abcec0dceec0ac6995beccf059e4a62ebf8de4f1e75"
+  },
+  "chapter_11_9_standards_compliance_summary.md": {
+    "size": 1349,
+    "sha256": "1ba8a0612cf26901f3e719026b16d0ae1e2a79bffd344fc8b3b58c0d30f56828"
+  },
+  "chapter_12_10_tbd_markers.md": {
+    "size": 1083,
+    "sha256": "fb4d751e091763685ab78fcbf0735aa23717f61d31d4dd90d8f537c886368037"
+  },
+  "chapter_13_cross-reference_index.md": {
+    "size": 1447,
+    "sha256": "c28e3ce4d95f9e466765c16e0e8fd00c7317d41c10d00b7d3dc8db8cd6ade4f7"
   }
 }

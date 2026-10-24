@@ -1,0 +1,1 @@
+# Forbidden terms (case-insensitive) - encoded to avoid self-trigger

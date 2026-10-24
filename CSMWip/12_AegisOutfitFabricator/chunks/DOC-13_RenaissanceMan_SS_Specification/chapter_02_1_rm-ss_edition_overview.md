@@ -27,3 +27,4 @@ RM-SS occupies the **extreme mobility frontier** of the Pareto space:
 - **Edition Transition**: <65 s to RM-SG (panel add only)
 
 ---
+
