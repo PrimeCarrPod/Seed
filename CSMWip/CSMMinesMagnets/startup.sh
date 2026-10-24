@@ -8,7 +8,7 @@ set -euo pipefail
 # HARD-CODED PROJECT DIRECTORY (relative, not absolute)
 # ============================================================
 PROJECT_DIR="CSMWip/CSMMinesMagnets"
-PROJECT_ROOT="$(pwd)/$PROJECT_DIR"
+PROJECT_ROOT="/workspace/app/$PROJECT_DIR"
 
 echo "=== CSMMinesMagnets Session Startup ==="
 echo "Project directory: $PROJECT_DIR"
