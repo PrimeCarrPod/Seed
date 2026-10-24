@@ -1,1 +1,0 @@
-# MAT-01: Silk Fibroin Engineering Specification

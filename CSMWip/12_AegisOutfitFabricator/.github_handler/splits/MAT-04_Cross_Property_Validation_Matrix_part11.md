@@ -1,3 +1,0 @@
-- **Conflation flags**: 0 (target 0) ✅
-- **TBD markers**: 2 documented (silane coupling, PCM integration) ✅
-- **Traceability matrix**: Present ✅

@@ -1,1 +1,0 @@
-# SYNTH-02: Protective Layer Adaptation — AIMES to Renaissance

@@ -1,1 +1,0 @@
-# 1. Author full document (compatibility matrices, delta tables, glossaries)

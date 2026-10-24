@@ -1,1 +1,0 @@
-# DOC-07: Textile Engineering Specification
