@@ -1,0 +1,9 @@
+{
+  "readme_01_overview.md": {"chapter": "01", "title": "Project Overview"},
+  "readme_02_architecture.md": {"chapter": "02", "title": "Architecture & Design — Williams Heuristic"},
+  "readme_03_implementation.md": {"chapter": "03", "title": "Implementation — Keymaker Protocol"},
+  "readme_04_operations.md": {"chapter": "04", "title": "Operations — El Segundo Protocol"},
+  "readme_05_heuristics.md": {"chapter": "05", "title": "Three-Pronged Heuristic Integration"},
+  "readme_06_roadmap.md": {"chapter": "06", "title": "Roadmap & Future Work"},
+  "readme_07_appendix.md": {"chapter": "07", "title": "Appendix — Quick Reference"}
+}
