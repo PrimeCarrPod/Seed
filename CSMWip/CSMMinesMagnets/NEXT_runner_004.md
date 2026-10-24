@@ -6,7 +6,7 @@
 - **Completed**: Phase 1 (DOC-01, DOC-02, DOC-03) + Phase 2 Batch 1 (DOC-04, DOC-05, DOC-06)
 - **Runner**: 004 (continuing from Runner 003 which completed DOC-06)
 - **Branch**: `kilo/stormy-nebula-mhi` (pushed to origin)
-- **Last commit**: 9a3a005bf (DOC-06 complete)
+- **Last commit**: 4e9869490 (Runner 004 handoff)
 
 ### Documents to Complete (This Runner)
 
@@ -166,6 +166,7 @@ FinishedWork/
 scripts/heartbeat_monitor.py ✅ (120s interval)
 scripts/generate_heuristic_intros.sh ✅ (5 variants)
 scripts/task_timer.py ✅ (30s guard)
+startup.sh ✅ (Python3 install, relative dir, heartbeat start)
 ```
 
 ---
@@ -173,14 +174,29 @@ scripts/task_timer.py ✅ (30s guard)
 ## Key Commands for Runner 004
 
 ```bash
-# Resume session
-cd /workspace/app/CSMWip/CSMMinesMagnets
+# ONE COMMAND STARTUP (from repository root):
+cd CSMWip/CSMMinesMagnets
+bash startup.sh
+```
+
+The `startup.sh` script handles:
+1. **Python3 installation** (Debian minimal container)
+2. **Relative directory change**: `CSMWip/CSMMinesMagnets` (NOT `/workspace/app/`)
+3. **Tool verification**: `../../__Python_Tools/write_large_file.py`
+4. **Heartbeat monitor start**: `python3 scripts/heartbeat_monitor.py --interval 120 --project-root . &`
+5. **Context display**: `RESUME_SESSION_MAGNETS.md` and `NEXT_runner_004.md`
+
+### Manual Commands (if needed):
+
+```bash
+# Resume session manually
+cd CSMWip/CSMMinesMagnets
 cat NEXT_runner_004.md
 cat RESUME_SESSION_MAGNETS.md
 git status
 
 # Start heartbeat monitor (background)
-python3 scripts/heartbeat_monitor.py --interval 120 &
+python3 scripts/heartbeat_monitor.py --interval 120 --project-root . &
 HEARTBEAT_PID=$!
 
 # Verify tools
@@ -265,11 +281,11 @@ Create `NEXT_runner_005.md` with:
 
 ---
 
-**Session Resume Command:**
+## Session Resume Command (NEW — Single Command)
+
 ```bash
-cd /workspace/app/CSMWip/CSMMinesMagnets
-cat NEXT_runner_004.md
-cat RESUME_SESSION_MAGNETS.md
-git status
-python3 scripts/heartbeat_monitor.py --interval 120 &
+cd CSMWip/CSMMinesMagnets
+bash startup.sh
 ```
+
+**Hard Rule: Never use `/workspace/app/` — it is ephemeral. Always use relative `CSMWip/CSMMinesMagnets`.**

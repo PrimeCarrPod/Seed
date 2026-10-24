@@ -6,9 +6,10 @@
 - **Runner**: 004 (next session — Phase 2 Batch 2: DOC-07 & DOC-08)
 - **Phase**: 2 Brokerage Architecture — Batch 2 of 2 (DOC-07, DOC-08)
 - **Infrastructure**: Directory structure complete, all tools operational
-- **Heartbeat**: scripts/heartbeat_monitor.py ready (120-second interval)
-- **Task Timer**: scripts/task_timer.py ready (30s guard)
-- **Git**: Branch `kilo/stormy-nebula-mhi`, last commit 9a3a005bf (DOC-06), pushed to origin
+- **Heartbeat**: `scripts/heartbeat_monitor.py` ready (120-second interval)
+- **Task Timer**: `scripts/task_timer.py` ready (30s guard)
+- **Startup**: `startup.sh` — installs Python3, sets relative project dir, starts heartbeat
+- **Git**: Branch `kilo/stormy-nebula-mhi`, last commit 4e9869490 (Runner 004 handoff), pushed to origin
 
 ### What's Done (Phase 1 + Phase 2 Batch 1 Complete)
 
@@ -45,42 +46,23 @@
 - ✅ FinishedWork/DOC-01 through DOC-06 .md.gz (compressed originals)
 - ✅ FinishedWork/intros/ (5 heuristic intro variants per document)
 - ✅ scripts/heartbeat_monitor.py, generate_heuristic_intros.sh, task_timer.py
+- ✅ startup.sh (installs Python3, sets relative project dir, starts heartbeat)
 - 🔄 Git: Ready for next commits
 
 ### Key Commands
 
 ```bash
-# Resume session
-cd /workspace/app/CSMWip/CSMMinesMagnets
-cat NEXT_runner_004.md
-cat RESUME_SESSION_MAGNETS.md
-git status
-
-# Start heartbeat monitor (background)
-python3 scripts/heartbeat_monitor.py --interval 120 &
-HEARTBEAT_PID=$!
-
-# Verify write_large_file.py works
-python3 ../../__Python_Tools/write_large_file.py --help
-
-# Author DOC-07 (Chilean Regulatory Navigation)
-# Key references: Mining Code, Law 19,300, Law 19,253, Law 21,210, Law 20,551, DS 132/248/594, CRMA (EU) 2024/1252
-# Then chunk & verify:
-python3 ../../__Python_Tools/write_large_file.py split \
-    FinishedWork/DOC-07_Chilean_Regulatory_Navigation.md \
-    chunks/DOC-07 chapter .md
-python3 ../../__Python_Tools/write_large_file.py verify chunks/DOC-07
-
-# Compress original
-python3 ../../__Python_Tools/write_large_file.py compress \
-    FinishedWork/DOC-07_Chilean_Regulatory_Navigation.md
-
-# Generate heuristic intros
-./scripts/generate_heuristic_intros.sh FinishedWork/DOC-07_Chilean_Regulatory_Navigation.md
-
-# Repeat for DOC-08 (Port & Logistics Corridors)
-# Key references: FCAB annual report, Ferronor, Puerto Antofagasta, Puerto Mejillones, CPTPP Art 14, IMDG Code, MIL-STD-1540
+# ONE COMMAND STARTUP (from repository root):
+cd CSMWip/CSMMinesMagnets
+bash startup.sh
 ```
+
+The `startup.sh` handles:
+- Python3 installation (Debian minimal container)
+- Relative directory change: `CSMWip/CSMMinesMagnets` (NOT `/workspace/app/`)
+- Tool verification: `../../__Python_Tools/write_large_file.py`
+- Heartbeat monitor start: `python3 scripts/heartbeat_monitor.py --interval 120 --project-root . &`
+- Context display: `RESUME_SESSION_MAGNETS.md` and `NEXT_runner_004.md`
 
 ### Document Dependencies for DOC-07
 - **Mining Code (Código de Minería)** — Concessions, exploration/exploitation, registration
@@ -157,11 +139,10 @@ Create `NEXT_runner_005.md` with:
 
 ---
 
-**Resume Command:**
+**Resume Command (NEW — Single Command):**
 ```bash
-cd /workspace/app/CSMWip/CSMMinesMagnets
-cat NEXT_runner_004.md
-cat RESUME_SESSION_MAGNETS.md
-git status
-python3 scripts/heartbeat_monitor.py --interval 120 &
+cd CSMWip/CSMMinesMagnets
+bash startup.sh
 ```
+
+**Hard Rule: Never use `/workspace/app/` — it is ephemeral. Always use relative `CSMWip/CSMMinesMagnets`.**

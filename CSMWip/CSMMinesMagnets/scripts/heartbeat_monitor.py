@@ -15,6 +15,7 @@ from pathlib import Path
 class HeartbeatMonitor:
     def __init__(self, interval=120, project_root=None):
         self.interval = interval
+        # Default to current working directory (set by startup.sh)
         self.project_root = Path(project_root) if project_root else Path.cwd()
         self.status_file = self.project_root / "Logs" / "heartbeat_status.json"
         self.log_file = self.project_root / "Logs" / "heartbeat.log"
@@ -22,11 +23,11 @@ class HeartbeatMonitor:
         self.running = False
         self.cycle = 0
         self.current_state = {
-            "runner": "001",
-            "document": "DOC-01",
-            "subtask": "0.2.1",
+            "runner": "004",
+            "document": "DOC-07",
+            "subtask": "2.4.1",
             "last_update": None,
-            "next_action": "Research ingestion"
+            "next_action": "Research Chilean Mining Code concessions"
         }
         self.status_file.parent.mkdir(parents=True, exist_ok=True)
         self.log_file.parent.mkdir(parents=True, exist_ok=True)
