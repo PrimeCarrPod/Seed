@@ -5254,6 +5254,68 @@
         "size": 362,
         "sha256": "9d6a852d8bc75e77ad9fcfd3a3d87bac896370390c11953b6ef0e99edafd199b"
       }
+    },
+    "DOC-07": {
+      "chapter_01_intro.md": {
+        "size": 43,
+        "sha256": "965225f115301dffa1a7543b79902acabf64e34ad579eae503a92e5ae161e7fc"
+      },
+      "chapter_02_aegisoutfitfabricator_core_doc.md": {
+        "size": 41,
+        "sha256": "7f57e2f14035619bd61d0e86d652e0289f4a18d1269765597410d40e517eeb3f"
+      },
+      "chapter_03_1_introduction_and_scope.md": {
+        "size": 519,
+        "sha256": "a571b5bce519311d508c58492c986e9845da342a70e4fbe611b7b7f98a0b0327"
+      },
+      "chapter_04_2_silk_fibroin_engineering_spe.md": {
+        "size": 3034,
+        "sha256": "4b59192c5e95e6f1052de7b6e80fd536437471355305b37e9f2ad5abd1958a8a"
+      },
+      "chapter_05_3_orthotropic_elasticity_tenso.md": {
+        "size": 1598,
+        "sha256": "b04bf1b977d5aeecf2357747b71d5705206c8916b49679394503ce0c75fcfe38"
+      },
+      "chapter_06_4_cieta_textile_typologies_for.md": {
+        "size": 1796,
+        "sha256": "4c028f3dfaab1ff385a29d20def61b3899ad5ca5736ff469b2df96ce137de583"
+      },
+      "chapter_07_5_metallic_thread_engineering_.md": {
+        "size": 2148,
+        "sha256": "a7b7bd9438bcfb9485ade140f34138539eaacae1d32bf64822886ad44da2e8a6"
+      },
+      "chapter_08_6_seam_engineering_specificati.md": {
+        "size": 3049,
+        "sha256": "904fb1ea42dd561f1494230ff16e4122b9d3396a35f17d753f9094bd59cb1389"
+      },
+      "chapter_09_7_hyperelastic_constitutive_mo.md": {
+        "size": 1305,
+        "sha256": "1824b714f38f80d20e90e84049c2061897436b1b98576f9d198896e28120a72a"
+      },
+      "chapter_10_8_thread_material_science_synt.md": {
+        "size": 2240,
+        "sha256": "bf393a9b3716b5d991f393dc288069ed030e210947c339c31fd95311d9f66be2"
+      },
+      "chapter_11_9_robotic_assembly_protocols_f.md": {
+        "size": 668,
+        "sha256": "95707790425d555fe72b705c7dfb93a23b2ea7a139b51433c6255f4bbc8f9bff"
+      },
+      "chapter_12_10_threadless_joining_technolo.md": {
+        "size": 792,
+        "sha256": "ee26e6eda86648455dbc233829c2b37a0de31ad1d96ced75fb4b7120cc6631d1"
+      },
+      "chapter_13_11_constraint_algorithms_from_.md": {
+        "size": 999,
+        "sha256": "6133cb971e200d9e3fc17e9086ff81deaf0f4f606c88c61f54c2860d6a758295"
+      },
+      "chapter_14_12_traceability_matrix__doc-07.md": {
+        "size": 2121,
+        "sha256": "645cd5154365dc474cb04bc2a4cac974b33485f4a56479cdbc126c72600ad393"
+      },
+      "chapter_15_13_conformance_check.md": {
+        "size": 385,
+        "sha256": "9d9f1aa0a00e1d0abde52a9251e8829c737453fefc0a421b2ca438dcd7285aa4"
+      }
     }
   }
 }
