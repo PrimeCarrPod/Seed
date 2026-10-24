@@ -1,11 +1,11 @@
 {
   "chapter_01_intro.md": {
-    "size": 27,
-    "sha256": "ecc61153daff38cc176fdcd4f8ecd818a8dcd8a8ed1b4c395c514aea710fc69b"
+    "size": 28,
+    "sha256": "79de9efc5fb93139883657a557b4ca684d89ffb3dc116a1dfc61135901eeb53f"
   },
   "chapter_02_aegisoutfitfabricator_geometri.md": {
-    "size": 62,
-    "sha256": "291f7c8d89d1b9d3862c882e9f490ccd9fae30526f1302a01b8c470fd109da7d"
+    "size": 63,
+    "sha256": "8dc4cd1b9174a5459dc01be8179a0b123c93ecfb649fcf1879b9cf19681a7f93"
   },
   "chapter_03_1._watteau_back_pleating_(rese.md": {
     "size": 1785,
@@ -34,5 +34,33 @@
   "chapter_09_7._conformance_check.md": {
     "size": 402,
     "sha256": "1c7d1c5d52d4ee348c53395304b13c3799cd3cfc9a6928f6f6c1170abd2b1b33"
+  },
+  "chapter_03_1_watteau_back_pleating_resear.md": {
+    "size": 2084,
+    "sha256": "1ad0b9a4ea26b10988c17e0697c52d39b1ba585a51fada8e16c5874ec1ab61b8"
+  },
+  "chapter_04_2_cartridge_pleating_s-curve_r.md": {
+    "size": 2135,
+    "sha256": "a63c719b1319dacc3868e8cf76757e5f0f0df6a6d25186369a2d80c9ee213381"
+  },
+  "chapter_05_3_mathematical_formulation.md": {
+    "size": 1049,
+    "sha256": "25ac1c47770790b4b0036f093cc8dcc74a44f93f58f3054bd7f1e6ee299ffd0e"
+  },
+  "chapter_06_4_load_distribution_analysis.md": {
+    "size": 1037,
+    "sha256": "b1a4805ca55ca7dc0bc52324562d151cdd00e75bc5c84e17973c73f7b23b46dc"
+  },
+  "chapter_07_5_pleat_generation_algorithm.md": {
+    "size": 1409,
+    "sha256": "1ac55188f4082b627ab1c59cae2443ed048631023fe8208b1fdcab2d532cfdf4"
+  },
+  "chapter_08_6_traceability_matrix__draft-0.md": {
+    "size": 2094,
+    "sha256": "77fd3c39eba018345fa37d746407ebdf1da475e918d18eb0ac17ed9e7b4b6e7b"
+  },
+  "chapter_09_7_conformance_check.md": {
+    "size": 404,
+    "sha256": "f7494cb9b81a22954a083560d828ca7bbd7f0929f50a9a40a763d8f6b19779cb"
   }
 }

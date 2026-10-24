@@ -1,11 +1,11 @@
 {
   "chapter_01_intro.md": {
-    "size": 41,
-    "sha256": "e86258ffb03ff0ce80bb21a337068d2f48c3090d27f9d558aa764884e34570a6"
+    "size": 42,
+    "sha256": "85470c31d4150c484f0945ffe02acf926941ea894ea5721b4de11b1b36fff182"
   },
   "chapter_02_aegisoutfitfabricator_material.md": {
-    "size": 60,
-    "sha256": "dd95dba3e229db4e7ba456f8574555b56a742edac660b657a1a72669a266cbd2"
+    "size": 61,
+    "sha256": "5624cb7d55a8a13633d8e9bd815ae618aeeba203b827087538d15f7120893853"
   },
   "chapter_03_1._baleen_(keratin)_full_tenso.md": {
     "size": 3640,
@@ -30,5 +30,29 @@
   "chapter_08_6._conformance_check.md": {
     "size": 367,
     "sha256": "e21789ff6562fe265e3d51c97ced2d0659ad9bb4feead2452eec6fb95bda85da"
+  },
+  "chapter_03_1_baleen.md": {
+    "size": 6035,
+    "sha256": "d8962258f3f37101944fd0d5fb3ccaa0053ed57d1af6354160a8d1655f673167"
+  },
+  "chapter_04_2_synthetic_baleen.md": {
+    "size": 2641,
+    "sha256": "e052efda8784688070cae059b67c0320c0f1d119f7d15e376f4cd8617f7f8486"
+  },
+  "chapter_05_3_spiral_steel.md": {
+    "size": 2792,
+    "sha256": "95ca09484d05b2ed8af6a08868748ab4b993193b50c09c7352f489da8a2705be"
+  },
+  "chapter_06_4_cage_crinoline_hoop_architec.md": {
+    "size": 1842,
+    "sha256": "2db732952cbbcf295ea46e43d30297386acb8c33eb2755f6a11d4f88351bc8f5"
+  },
+  "chapter_07_5_traceability_matrix__mat-02.md": {
+    "size": 2456,
+    "sha256": "ab1584982df9f4361e1d53bd85276ee595c285a7165974653a8a968df4d8c7b8"
+  },
+  "chapter_08_6_conformance_check.md": {
+    "size": 369,
+    "sha256": "cab82e155b860ba70862a70cea505d817d2d1253a56deb210199236df0d8125d"
   }
 }

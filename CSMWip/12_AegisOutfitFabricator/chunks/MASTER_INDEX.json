@@ -4846,10 +4846,6 @@
       }
     },
     "DRAFT-03_Pleating_Kernel": {
-      "MANIFEST.json": {
-        "size": 1366,
-        "sha256": "65fa05a433420a0590b419d23d80f5ffe7881210c9b8b8757ce0761ea5cbd951"
-      },
       "chapter_01_intro.md": {
         "size": 28,
         "sha256": "79de9efc5fb93139883657a557b4ca684d89ffb3dc116a1dfc61135901eeb53f"
@@ -5074,10 +5070,6 @@
       }
     },
     "DRAFT-05_Zero_Waste_Nesting_Optimizer": {
-      "MANIFEST.json": {
-        "size": 1511,
-        "sha256": "07789917a653bf6f8d5136390729f92dc823c9a08f7b108867d3dbae2cff026e"
-      },
       "chapter_01_intro.md": {
         "size": 430,
         "sha256": "a1d7b46a75a7795bb1bf44e817574ceb0068dc65ae6e85e534a6516a7d61c555"
@@ -5186,10 +5178,6 @@
       }
     },
     "MAT-02_Structural_Foundation_Materials": {
-      "MANIFEST.json": {
-        "size": 1215,
-        "sha256": "5221e1417fb9b9d382f9823a36bbaa0f2f6b76c088821de4ea140bed5009bdfc"
-      },
       "chapter_01_intro.md": {
         "size": 42,
         "sha256": "85470c31d4150c484f0945ffe02acf926941ea894ea5721b4de11b1b36fff182"
