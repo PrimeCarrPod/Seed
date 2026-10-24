@@ -1,0 +1,58 @@
+{
+  "chapter_01_intro.md": {
+    "size": 46,
+    "sha256": "7b97a6101ca48888c2a96d569f7992dd9ace2bcd177e87e88f84650968698112"
+  },
+  "chapter_02_aegisoutfitfabricator_core_doc.md": {
+    "size": 41,
+    "sha256": "f0a5b173cd361e5428bda9faf86946e8db0f900c71cb320363da96faab1017d0"
+  },
+  "chapter_03_1_introduction_and_scope.md": {
+    "size": 669,
+    "sha256": "314e8934b9b033716499d237b25f22e84ef14021da8b63116b46fb4673b19754"
+  },
+  "chapter_04_2_quality_management_framework.md": {
+    "size": 1304,
+    "sha256": "bb3e8017166f8a1330cf6a95c3608c9e0f225b0c634896fb52570dabc352d6af"
+  },
+  "chapter_05_3_threat_protection_test_proto.md": {
+    "size": 9811,
+    "sha256": "9ef14255dc9dccf5ad0803c52665e6a169e020f4b6fa6a4473683d1ace591051"
+  },
+  "chapter_06_4_material_property_verificati.md": {
+    "size": 1950,
+    "sha256": "7603081502c9bdcc7990e9847fbe95580c69330eed56c035a0e39f897c1e7c23"
+  },
+  "chapter_07_5_statistical_process_control.md": {
+    "size": 1639,
+    "sha256": "e7a8b9f6775c31a966a8e5ed4c996dce31243fdf35fd74a3d99b9ab22b4ea189"
+  },
+  "chapter_08_6_non-conformance_management.md": {
+    "size": 737,
+    "sha256": "a9848dd754002d4f4fafdb75773efcd88e15ebde5baf39981a33883a533ea93b"
+  },
+  "chapter_09_7_test_equipment_calibration.md": {
+    "size": 513,
+    "sha256": "14022c66889d8a82089b4c9d17f286e7013b2efafd10d16794725a02f4896600"
+  },
+  "chapter_10_8_acceptance_sampling_plans.md": {
+    "size": 1177,
+    "sha256": "d93451e25db5f8517399f40407d5bfe49cdcfabbf46e43fe00ab26b54d12e619"
+  },
+  "chapter_11_9_documentation__records.md": {
+    "size": 666,
+    "sha256": "024e862eeeff882164ff7b3b1a8fb3510ad8fc7e8e087c08786fb190165a1f77"
+  },
+  "chapter_12_10_audit__continuous_improveme.md": {
+    "size": 1358,
+    "sha256": "29d654ea155302c014cf1ba45b9e9478e1fa538d699da5843c2e478459f46161"
+  },
+  "chapter_13_11_traceability_matrix__doc-09.md": {
+    "size": 1539,
+    "sha256": "d6506c2d6a81d8617b877176d7757652a93b0155436718c4c077fe0242d135ea"
+  },
+  "chapter_14_12_conformance_check.md": {
+    "size": 359,
+    "sha256": "d93b64c80e943107957e31e420ac528518f6dac7e79fd8e87911bb2d6e44a1b7"
+  }
+}
