@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __Python_Tools project operates within the **TopLevel** domain, 
+The **__Python_Tools** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 19 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 __Python_Tools
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── __pycache__/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

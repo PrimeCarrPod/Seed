@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMPark project operates within the **CSMPro** domain, 
+The **CSMPark** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 8 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMPark
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMPARK01 Knott's Berry Farm Dielectric Refabrication/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The _Past_Releases project operates within the **CSMApps** domain, 
+The **_Past_Releases** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 8 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMApps ecosystem.
 
 ```
 _Past_Releases
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Bounce/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

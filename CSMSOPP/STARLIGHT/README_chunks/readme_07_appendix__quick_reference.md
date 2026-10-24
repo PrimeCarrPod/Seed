@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMSOPP/STARLIGHT`
-- **Chunks**: `./CSMSOPP/STARLIGHT/README_chunks/`
-- **Manifest**: `./CSMSOPP/STARLIGHT/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMSOPP/STARLIGHT/memory/`
-- **Runner Files**: `./CSMSOPP/STARLIGHT/NEXT_runner_*.md`
+- **Project Root**: `CSMSOPP/STARLIGHT`
+- **Chunks**: `CSMSOPP/STARLIGHT/README_chunks/`
+- **Manifest**: `CSMSOPP/STARLIGHT/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMSOPP/STARLIGHT/memory/`
+- **Runner Files**: `CSMSOPP/STARLIGHT/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 88
+- **File Types**: .md: 83, .py: 6
+- **Languages**: Markdown: 83, Python: 6
+- **Key Directories**: 3
 
 ### Related Projects
 

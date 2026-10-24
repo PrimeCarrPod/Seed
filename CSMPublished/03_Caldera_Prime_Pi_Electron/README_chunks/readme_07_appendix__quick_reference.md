@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMPublished/03_Caldera_Prime_Pi_Electron`
-- **Chunks**: `./CSMPublished/03_Caldera_Prime_Pi_Electron/README_chunks/`
-- **Manifest**: `./CSMPublished/03_Caldera_Prime_Pi_Electron/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMPublished/03_Caldera_Prime_Pi_Electron/memory/`
-- **Runner Files**: `./CSMPublished/03_Caldera_Prime_Pi_Electron/NEXT_runner_*.md`
+- **Project Root**: `CSMPublished/03_Caldera_Prime_Pi_Electron`
+- **Chunks**: `CSMPublished/03_Caldera_Prime_Pi_Electron/README_chunks/`
+- **Manifest**: `CSMPublished/03_Caldera_Prime_Pi_Electron/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMPublished/03_Caldera_Prime_Pi_Electron/memory/`
+- **Runner Files**: `CSMPublished/03_Caldera_Prime_Pi_Electron/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 15
+- **File Types**: .md: 13, .json: 2, .pdf: 1
+- **Languages**: Markdown: 13, JSON: 2
+- **Key Directories**: 3
 
 ### Related Projects
 

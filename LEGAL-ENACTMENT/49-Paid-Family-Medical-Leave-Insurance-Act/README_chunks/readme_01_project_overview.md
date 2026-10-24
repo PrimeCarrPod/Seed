@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 49: Paid Family Medical Leave Insurance Act Act (15 files)
 

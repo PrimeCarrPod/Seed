@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The STARLIGHT project operates within the **CSMSOPP** domain, 
+The **STARLIGHT** project operates within the **CSMSOPP** domain, 
 functioning as a **Part of Another Project** with 88 files. 
 It belongs to the CSMSOPP ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the CSMSOPP ecosystem.
 
 ```
 STARLIGHT
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── GUIDE/
+├── MODULE-V2/
+├── RESEARCH/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

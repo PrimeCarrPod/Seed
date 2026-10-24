@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CrustalDisplacementGoldDeposition project operates within the **DeepResearch** domain, 
+The **CrustalDisplacementGoldDeposition** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 19 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 CrustalDisplacementGoldDeposition
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

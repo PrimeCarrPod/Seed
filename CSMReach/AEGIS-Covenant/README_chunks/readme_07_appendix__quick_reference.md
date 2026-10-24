@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMReach/AEGIS-Covenant`
-- **Chunks**: `./CSMReach/AEGIS-Covenant/README_chunks/`
-- **Manifest**: `./CSMReach/AEGIS-Covenant/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMReach/AEGIS-Covenant/memory/`
-- **Runner Files**: `./CSMReach/AEGIS-Covenant/NEXT_runner_*.md`
+- **Project Root**: `CSMReach/AEGIS-Covenant`
+- **Chunks**: `CSMReach/AEGIS-Covenant/README_chunks/`
+- **Manifest**: `CSMReach/AEGIS-Covenant/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMReach/AEGIS-Covenant/memory/`
+- **Runner Files**: `CSMReach/AEGIS-Covenant/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 606
+- **File Types**: .md: 607
+- **Languages**: Markdown: 607
+- **Key Directories**: 1
 
 ### Related Projects
 

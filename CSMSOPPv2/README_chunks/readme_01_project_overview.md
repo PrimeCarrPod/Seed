@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMSOPPv2 \u2014 Updated SOPs with Heuristics module
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 58: Hydrogen Hub Clean Fuels Infrastructure Act Act (15 files)
 

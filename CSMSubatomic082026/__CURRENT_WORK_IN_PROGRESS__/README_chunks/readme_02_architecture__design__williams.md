@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __CURRENT_WORK_IN_PROGRESS__ project operates within the **CSMSubatomic082026** domain, 
+The **__CURRENT_WORK_IN_PROGRESS__** project operates within the **CSMSubatomic082026** domain, 
 functioning as a **Archive (verify before removal)** with 3 files. 
 It is a top-level project.
 
@@ -18,10 +16,8 @@ It is a top-level project.
 
 ```
 __CURRENT_WORK_IN_PROGRESS__
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

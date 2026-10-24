@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 04_Synthesis_Compendiums project operates within the **CSMPublished** domain, 
+The **04_Synthesis_Compendiums** project operates within the **CSMPublished** domain, 
 functioning as a **Part of Another Project** with 20 files. 
 It belongs to the CSMPublished ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMPublished ecosystem.
 
 ```
 04_Synthesis_Compendiums
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

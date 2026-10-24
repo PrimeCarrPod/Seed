@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 AEGIS-Covenant \u2014 Core covenant framework (606 files)
 

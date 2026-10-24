@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The AncientQuartzIllumination project operates within the **DeepResearch** domain, 
+The **AncientQuartzIllumination** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 66 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 AncientQuartzIllumination
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── heuristic_expansions/
+├── monitoring/
+├── parts/
+├── scripts/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

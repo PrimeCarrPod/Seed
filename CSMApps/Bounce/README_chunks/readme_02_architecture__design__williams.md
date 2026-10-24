@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Bounce project operates within the **CSMApps** domain, 
+The **Bounce** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 4866 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -18,10 +16,17 @@ It belongs to the CSMApps ecosystem.
 
 ```
 Bounce
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── root_articles/
+├── work-in-progress/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

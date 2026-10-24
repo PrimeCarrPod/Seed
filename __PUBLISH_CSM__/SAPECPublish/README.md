@@ -5,17 +5,15 @@
 
 **Parent Project:** __PUBLISH_CSM__
 
-## Summary
+### Summary
 
 SAPECPublish \u2014 Publishing pipeline (9 files)
 
 ---
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The SAPECPublish project operates within the **__PUBLISH_CSM__** domain, 
+The **SAPECPublish** project operates within the **__PUBLISH_CSM__** domain, 
 functioning as a **Part of Another Project** with 9 files. 
 It belongs to the __PUBLISH_CSM__ ecosystem.
 
@@ -30,51 +28,46 @@ It belongs to the __PUBLISH_CSM__ ecosystem.
 
 ```
 SAPECPublish
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| UI | HTML/CSS | WebView | Hybrid UI |
+| Docs | Markdown | Latest | Documentation |
+| Reference | PDF | — | Technical docs |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./__PUBLISH_CSM__/SAPECPublish/
+SAPECPublish/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
-- `AGENTS.md` — Project-specific conventions and commands
-- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `AGENTS.md` — *To be created*: Project-specific conventions
+- `TODO.md` — *To be created*: Task hierarchy
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
 
 ## Operations — El Segundo Protocol
-## Operations — El Segundo Protocol
-
 ### Session Lifecycle
 
 1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
@@ -82,19 +75,6 @@ Key environment variables and configuration files:
 3. **Heartbeat** — Progress output every 2 minutes (120s interval)
 4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
 5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
-
-### Build & Validation
-
-```bash
-# Verify document integrity
-python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
-
-# Reassemble for review
-python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
-
-# Compress for storage
-python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
-```
 
 ### Quality Gates
 
@@ -104,8 +84,6 @@ python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
-## Three-Pronged Heuristic Integration
-
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Williams Heuristic — Architectural Clarity
@@ -121,7 +99,7 @@ explicit parent-child relationship (__PUBLISH_CSM__)
 - **Purpose**: Define *how* the system is built and validated
 - **Method**: Reproducible builds, chapter-based authoring, manifest verification
 - **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
-- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+- **Applied Here**: Chunk-based documents, SHA256 verification
 
 ### El Segundo Protocol — Operational Excellence
 
@@ -141,32 +119,27 @@ explicit parent-child relationship (__PUBLISH_CSM__)
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
-## Roadmap & Future Work
-
 ### Immediate (Next 1-2 Sessions)
 
-- [ ] Complete README generation and validation
-- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create project-specific `AGENTS.md` conventions
 - [ ] Create initial `TODO.md` with milestone breakdown
 - [ ] Set up `memory/` directory for session logging
+- [ ] Complete README generation and validation
 
 ### Short Term (Next 5 Sessions)
 
-- [ ] Migrate any legacy piece-based documents to chunk format
 - [ ] Implement heartbeat monitoring for this project
 - [ ] Create `NEXT_runner_001.md` with first batch assignments
 - [ ] Document project-specific workflows in `AGENTS.md`
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Integrate with parent project (__PUBLISH_CSM__) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -180,17 +153,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./__PUBLISH_CSM__/SAPECPublish`
-- **Chunks**: `./__PUBLISH_CSM__/SAPECPublish/README_chunks/`
-- **Manifest**: `./__PUBLISH_CSM__/SAPECPublish/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./__PUBLISH_CSM__/SAPECPublish/memory/`
-- **Runner Files**: `./__PUBLISH_CSM__/SAPECPublish/NEXT_runner_*.md`
+- **Project Root**: `__PUBLISH_CSM__/SAPECPublish`
+- **Chunks**: `__PUBLISH_CSM__/SAPECPublish/README_chunks/`
+- **Manifest**: `__PUBLISH_CSM__/SAPECPublish/README_chunks/MANIFEST.json`
+- **Memory Logs**: `__PUBLISH_CSM__/SAPECPublish/memory/`
+- **Runner Files**: `__PUBLISH_CSM__/SAPECPublish/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 9
+- **File Types**: .md: 4, .html: 3, .pdf: 3
+- **Languages**: Markdown: 4, HTML: 3
+- **Key Directories**: 0
 
 ### Related Projects
 

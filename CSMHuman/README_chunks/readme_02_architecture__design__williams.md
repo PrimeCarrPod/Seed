@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMHuman project operates within the **TopLevel** domain, 
+The **CSMHuman** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 157 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMHuman
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── CSMHuman00000000001 Mirror Fascination_ Brain's Deep Dive/
+├── CSMHuman00000000002 Mirror Gazing_ Neurological & Psychological Deep Dive/
+├── CSMHuman00000000010 Human Body Frequency Interaction Research/
+├── CSMHuman00000000011 Frequency-Body Interaction Research Synthesis/
+├── CSMHuman00000000012 Deep Research Article_ Frequency Body Interaction/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

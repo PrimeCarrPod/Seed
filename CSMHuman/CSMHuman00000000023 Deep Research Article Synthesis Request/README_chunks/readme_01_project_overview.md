@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMHuman
 
-## Summary
+### Summary
 
 CSMHuman00000000023 Deep Research Article Synthesis Request \u2014 Deep research synthesis on frequency-body interactions (4 files)
 

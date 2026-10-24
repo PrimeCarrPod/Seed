@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMLogs`
-- **Chunks**: `./CSMLogs/README_chunks/`
-- **Manifest**: `./CSMLogs/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMLogs/memory/`
-- **Runner Files**: `./CSMLogs/NEXT_runner_*.md`
+- **Project Root**: `CSMLogs`
+- **Chunks**: `CSMLogs/README_chunks/`
+- **Manifest**: `CSMLogs/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMLogs/memory/`
+- **Runner Files**: `CSMLogs/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 2064
+- **File Types**: .md: 1529, .txt: 425, .json: 45, .rtf: 27, .log: 11, .sh: 7, .html: 6, .ts: 6, .yml: 6, .tf: 4
+- **Languages**: Markdown: 1529, JSON: 45, Shell: 7, HTML: 6, JavaScript/TypeScript: 6, YAML: 6, Python: 3
+- **Key Directories**: 17
 
 ### Related Projects
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB077-Deep project operates within the **CSMFAB** domain, 
+The **CSMFAB077-Deep** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 116 files. 
 It is a top-level project.
 
@@ -18,10 +16,13 @@ It is a top-level project.
 
 ```
 CSMFAB077-Deep
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Atlantis-Architecture/
+├── Deployment-Logistics/
+├── Fabrication-Methods/
+├── Integration-Systems/
+├── Life-Support/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

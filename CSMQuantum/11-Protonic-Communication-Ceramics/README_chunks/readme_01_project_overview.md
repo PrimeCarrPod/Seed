@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 11-Protonic-Communication-Ceramics (3 files, has README)
 

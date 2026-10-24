@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMGen project operates within the **TopLevel** domain, 
+The **CSMGen** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 10 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMGen
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMAegis/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

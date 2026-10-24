@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMMinesMagnets project operates within the **CSMWip** domain, 
+The **CSMMinesMagnets** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 122 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,14 @@ It belongs to the CSMWip ecosystem.
 
 ```
 CSMMinesMagnets
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── FinishedWork/
+├── Logs/
+├── chunks/
+├── intros/
+├── scripts/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

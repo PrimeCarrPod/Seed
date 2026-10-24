@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 39: Digital Identity Cybersecurity Consumer Protection Act Act (15 files)
 

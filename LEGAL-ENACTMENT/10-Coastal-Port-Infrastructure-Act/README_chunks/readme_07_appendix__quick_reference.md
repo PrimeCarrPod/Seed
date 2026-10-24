@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act`
-- **Chunks**: `./LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/README_chunks/`
-- **Manifest**: `./LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/memory/`
-- **Runner Files**: `./LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/NEXT_runner_*.md`
+- **Project Root**: `LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act`
+- **Chunks**: `LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/README_chunks/`
+- **Manifest**: `LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/README_chunks/MANIFEST.json`
+- **Memory Logs**: `LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/memory/`
+- **Runner Files**: `LEGAL-ENACTMENT/10-Coastal-Port-Infrastructure-Act/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 28
+- **File Types**: .md: 15, .txt: 14
+- **Languages**: Markdown: 15
+- **Key Directories**: 0
 
 ### Related Projects
 

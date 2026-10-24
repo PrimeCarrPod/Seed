@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMCinema
 
-## Summary
+### Summary
 
 Version 2 addendum documentation (12 files)
 

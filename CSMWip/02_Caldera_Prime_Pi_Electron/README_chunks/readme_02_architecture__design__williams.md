@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 02_Caldera_Prime_Pi_Electron project operates within the **CSMWip** domain, 
+The **02_Caldera_Prime_Pi_Electron** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 273 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the CSMWip ecosystem.
 
 ```
 02_Caldera_Prime_Pi_Electron
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Caldera_Prime_Pi_Electron/
+├── Prime Pi Counting Quantum Worldline/
+├── Prime_Pi_Counting_Quantum_Worldline_Evaluation/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

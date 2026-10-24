@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMPublished/06_ReadAloud_Versions`
-- **Chunks**: `./CSMPublished/06_ReadAloud_Versions/README_chunks/`
-- **Manifest**: `./CSMPublished/06_ReadAloud_Versions/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMPublished/06_ReadAloud_Versions/memory/`
-- **Runner Files**: `./CSMPublished/06_ReadAloud_Versions/NEXT_runner_*.md`
+- **Project Root**: `CSMPublished/06_ReadAloud_Versions`
+- **Chunks**: `CSMPublished/06_ReadAloud_Versions/README_chunks/`
+- **Manifest**: `CSMPublished/06_ReadAloud_Versions/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMPublished/06_ReadAloud_Versions/memory/`
+- **Runner Files**: `CSMPublished/06_ReadAloud_Versions/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 5
+- **File Types**: .txt: 4, .json: 1, .md: 1
+- **Languages**: JSON: 1, Markdown: 1
+- **Key Directories**: 0
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB0115 FEATHER LoRa Mesh Network Node \u2014 FEATHER LoRa mesh network node (90 files)
 

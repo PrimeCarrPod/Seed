@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./.sdk/gradle-cache`
-- **Chunks**: `./.sdk/gradle-cache/README_chunks/`
-- **Manifest**: `./.sdk/gradle-cache/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./.sdk/gradle-cache/memory/`
-- **Runner Files**: `./.sdk/gradle-cache/NEXT_runner_*.md`
+- **Project Root**: `.sdk/gradle-cache`
+- **Chunks**: `.sdk/gradle-cache/README_chunks/`
+- **Manifest**: `.sdk/gradle-cache/README_chunks/MANIFEST.json`
+- **Memory Logs**: `.sdk/gradle-cache/memory/`
+- **Runner Files**: `.sdk/gradle-cache/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 18
+- **File Types**: .properties: 5, .lock: 4, .receipt: 3, .tag: 2, .md: 1, .rendered: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 4
 
 ### Related Projects
 

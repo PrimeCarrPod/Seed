@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMIncoming — Intelligence, Submissions, and the Inbox of the Unknown
 

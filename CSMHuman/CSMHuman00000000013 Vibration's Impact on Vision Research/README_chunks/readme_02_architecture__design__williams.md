@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMHuman00000000013 Vibration's Impact on Vision Research project operates within the **CSMHuman** domain, 
+The **CSMHuman00000000013 Vibration's Impact on Vision Research** project operates within the **CSMHuman** domain, 
 functioning as a **Part of Another Project** with 4 files. 
 It belongs to the CSMHuman ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMHuman ecosystem.
 
 ```
 CSMHuman00000000013 Vibration's Impact on Vision Research
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

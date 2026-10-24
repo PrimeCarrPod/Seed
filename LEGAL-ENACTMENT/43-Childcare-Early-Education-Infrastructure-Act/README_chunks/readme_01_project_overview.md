@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 43: Childcare Early Education Infrastructure Act Act (15 files)
 

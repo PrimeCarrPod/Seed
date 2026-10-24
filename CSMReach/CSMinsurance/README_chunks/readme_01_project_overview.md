@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 CSMinsurance \u2014 Insurance documentation (67 files)
 

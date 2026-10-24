@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 59: Cybersecurity Workforce Critical Infrastructure Protection Act Act (15 files)
 

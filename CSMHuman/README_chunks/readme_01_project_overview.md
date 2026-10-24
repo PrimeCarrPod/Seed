@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 # Seed \u2014 Human frequency interaction research: 40+ deep research projects on vibration/EMF-body interactions, resonance frequencies, ultrasonic vibrometry, and neurological impacts
 

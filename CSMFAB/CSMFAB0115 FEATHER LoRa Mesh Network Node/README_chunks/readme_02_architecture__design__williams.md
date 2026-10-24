@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB0115 FEATHER LoRa Mesh Network Node project operates within the **CSMFAB** domain, 
+The **CSMFAB0115 FEATHER LoRa Mesh Network Node** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 90 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMFAB0115 FEATHER LoRa Mesh Network Node
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 0115-FEATHER-LoRa-Mesh-Network-Node-75/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

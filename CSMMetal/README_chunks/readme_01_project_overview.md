@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMMetal — Dielectric Materials and Electromagnetic Protection Research
 

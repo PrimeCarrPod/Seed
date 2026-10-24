@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 05-Aerogel-Network-Optimization (3 files, has README)
 

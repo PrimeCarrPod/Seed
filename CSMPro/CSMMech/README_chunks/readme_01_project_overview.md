@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 CSMMech — Robotics for the Electromagnetic Battlespace
 

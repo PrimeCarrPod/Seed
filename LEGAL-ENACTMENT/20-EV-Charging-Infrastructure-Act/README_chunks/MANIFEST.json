@@ -1,43 +1,43 @@
 {
   "readme_01_project_overview.md": {
-    "size": 249,
-    "sha256": "6052eec2ce69e76bcc147ff6dac811584beedc00a75755597efae479fbe3b2a3",
+    "size": 250,
+    "sha256": "43ae8de126898532990a59a31b586e7e78694645b4f579b3e2057041fd800f9d",
     "chapter": "01",
     "title": "Project Overview"
   },
   "readme_02_architecture__design__williams.md": {
-    "size": 820,
-    "sha256": "23591036c7cc923dce239eca8d105551e5f4c9a6e0cca047f9261fabff0443e2",
+    "size": 732,
+    "sha256": "4f6cb7636982f55015f09f47e37dba97262a25aea61414ae1c6dd158dc26076a",
     "chapter": "02",
     "title": "Architecture & Design \u2014 Williams Heuristic"
   },
   "readme_03_implementation__keymaker_proto.md": {
-    "size": 1287,
-    "sha256": "746e1221d1a3e2f215883633fb8a44ad9e2b88a7c0c8a1fe75d738635a639ec6",
+    "size": 978,
+    "sha256": "e9729b681860a90c9dbecdfa1723c88727d190f330568490a37e3a9dd50f44d5",
     "chapter": "03",
     "title": "Implementation \u2014 Keymaker Protocol"
   },
   "readme_04_operations__el_segundo_protoco.md": {
-    "size": 1109,
-    "sha256": "307143d2d4fb6c4fb144e0d37f0639c133eae6c0ed2137e58f0d51ae7f8ebcea",
+    "size": 708,
+    "sha256": "0eb4f5b98a2b9d626b00a8a54a32a2e9d7f8b407d3b7c41991549c7830b8a9f3",
     "chapter": "04",
     "title": "Operations \u2014 El Segundo Protocol"
   },
   "readme_05_three-pronged_heuristic_integr.md": {
-    "size": 1560,
-    "sha256": "f5964b596bc9c3d50589f50cfb202012871d74c2bb959b91f8ec83c5e33bb2f0",
+    "size": 1502,
+    "sha256": "d82e2a5ebf0c3f46e301ccc0c5752d9a9648dfa2509944621a44da3b658336b3",
     "chapter": "05",
     "title": "Three-Pronged Heuristic Integration"
   },
   "readme_06_roadmap__future_work.md": {
-    "size": 838,
-    "sha256": "fbba47d7986490a92d65f228e23f74330393f9a44eb2d6cb030bcd489321e5e4",
+    "size": 748,
+    "sha256": "eba826b693a514154e3bd3853cd0430d1489a9a53567ed60dcac05ad18de2354",
     "chapter": "06",
     "title": "Roadmap & Future Work"
   },
   "readme_07_appendix__quick_reference.md": {
-    "size": 1466,
-    "sha256": "4864561dd4259579a0b387f81a9f0e543e7d793d4c3614c7be0e04d9d7d14c21",
+    "size": 1552,
+    "sha256": "5451d503d4702a2f692135db3b2870a8ac59de772182f4b02fbf7b4d6d94a3fe",
     "chapter": "07",
     "title": "Appendix \u2014 Quick Reference"
   }

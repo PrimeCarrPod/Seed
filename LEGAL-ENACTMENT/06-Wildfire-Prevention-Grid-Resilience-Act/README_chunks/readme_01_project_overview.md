@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 06: Wildfire Prevention Grid Resilience Act Act (15 files)
 

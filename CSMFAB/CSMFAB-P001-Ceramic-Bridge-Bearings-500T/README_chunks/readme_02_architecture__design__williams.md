@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB-P001-Ceramic-Bridge-Bearings-500T project operates within the **CSMFAB** domain, 
+The **CSMFAB-P001-Ceramic-Bridge-Bearings-500T** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 106 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMFAB-P001-Ceramic-Bridge-Bearings-500T
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── -P001-Ceramic-Bridge-Bearings-500T-75/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

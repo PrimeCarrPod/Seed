@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 06_Land_of_Lil project operates within the **CSMWip** domain, 
+The **06_Land_of_Lil** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 10 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMWip ecosystem.
 
 ```
 06_Land_of_Lil
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Ultimate_land_o_lil/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

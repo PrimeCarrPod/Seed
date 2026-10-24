@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB Master Cost Analysis and Market Viability Reports project operates within the **CSMFAB** domain, 
+The **CSMFAB Master Cost Analysis and Market Viability Reports** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 79 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMFAB Master Cost Analysis and Market Viability Reports
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Master-Cost-Analysis-and-Market-Viability-Reports-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The RESTART_PACKAGE project operates within the **CSMWipScripts** domain, 
+The **RESTART_PACKAGE** project operates within the **CSMWipScripts** domain, 
 functioning as a **Part of Another Project** with 7 files. 
 It belongs to the CSMWipScripts ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMWipScripts ecosystem.
 
 ```
 RESTART_PACKAGE
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 Aegis rail protection proposal (5 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMLogs
 
-## Summary
+### Summary
 
 Project tracking and management (20 files)
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMBoard project operates within the **CSMPro** domain, 
+The **CSMBoard** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 6 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMBoard
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMBiz00000000001 AI Agents For Kilo Claw Business/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

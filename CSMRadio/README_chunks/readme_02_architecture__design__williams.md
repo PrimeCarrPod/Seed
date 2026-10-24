@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMRadio project operates within the **TopLevel** domain, 
+The **CSMRadio** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 385 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMRadio
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── 02-WILLIAMS-KUTCHER-THE-STATE_IS-MINE-FUNNY/
+├── AegisGithubReadMeRadio/
+├── CSMCommercials/
+├── RADIO_PREPARATION/
+├── __AGENTS_OF_AEGIS_RADIO__/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

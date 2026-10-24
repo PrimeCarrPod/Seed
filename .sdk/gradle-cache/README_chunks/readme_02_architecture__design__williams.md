@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The gradle-cache project operates within the **.sdk** domain, 
+The **gradle-cache** project operates within the **.sdk** domain, 
 functioning as a **Part of Another Project** with 18 files. 
 It belongs to the .sdk ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the .sdk ecosystem.
 
 ```
 gradle-cache
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── caches/
+├── daemon/
+├── native/
+├── notifications/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

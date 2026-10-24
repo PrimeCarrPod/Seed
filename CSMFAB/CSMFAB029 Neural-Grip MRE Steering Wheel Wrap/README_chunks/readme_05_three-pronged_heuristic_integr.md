@@ -1,6 +1,4 @@
 ## Three-Pronged Heuristic Integration
-## Three-Pronged Heuristic Integration
-
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Williams Heuristic — Architectural Clarity
@@ -9,14 +7,14 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 - **Method**: Boundary analysis, component mapping, dependency graphs
 - **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
 - **Applied Here**: Clear project categorization (CSMFAB), 
-explicit parent-child relationship (N/A)
+explicit parent-child relationship (Top-Level)
 
 ### Keymaker Protocol — Implementation Precision
 
 - **Purpose**: Define *how* the system is built and validated
 - **Method**: Reproducible builds, chapter-based authoring, manifest verification
 - **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
-- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+- **Applied Here**: Chunk-based documents, SHA256 verification
 
 ### El Segundo Protocol — Operational Excellence
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 54: Geothermal Energy Heat Pump Deployment Act Act (15 files)
 

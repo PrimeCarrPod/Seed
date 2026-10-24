@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-RedwoodMaterials Battery Recycling \u2014 Corporate partnership profile for RedwoodMaterials Battery Recycling (16 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Canine-human neurobiology and archaeogenetics (18 files)
 

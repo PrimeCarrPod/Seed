@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The _Current_Releases project operates within the **CSMApps** domain, 
+The **_Current_Releases** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 2 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMApps ecosystem.
 
 ```
 _Current_Releases
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

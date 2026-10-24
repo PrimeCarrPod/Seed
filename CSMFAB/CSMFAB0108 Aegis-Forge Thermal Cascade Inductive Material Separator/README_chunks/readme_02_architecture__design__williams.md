@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB0108 Aegis-Forge Thermal Cascade Inductive Material Separator project operates within the **CSMFAB** domain, 
+The **CSMFAB0108 Aegis-Forge Thermal Cascade Inductive Material Separator** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 87 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMFAB0108 Aegis-Forge Thermal Cascade Inductive Material Separator
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 0108-Aegis-Forge-Thermal-Cascade-Inductive-Material-Separato-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

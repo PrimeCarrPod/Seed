@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMLogs
 
-## Summary
+### Summary
 
 CSM Cinema Godot integration (5 files)
 

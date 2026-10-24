@@ -1,35 +1,59 @@
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| Platform | Android | API 24+ | Mobile application |
+| Language | Java | 11+ | Core logic |
+| Language | Python | 3.8+ | Scripting/Automation |
+| Language | JavaScript/TypeScript | ES6+ | Frontend/Web |
+| UI | HTML/CSS | WebView | Hybrid UI |
+| Docs | Markdown | Latest | Documentation |
+| Build | Custom (build.sh — No-Gradle) | — | Build automation |
+| Distribution | ZIP/APK | — | Release artifacts |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./CSMWip/05_BOUNCE/
+05_BOUNCE/
+├── AndroidManifest.xml
+├── build.sh
+├── TGE_E1/build.gradle.kts
+├── TGE_E1/gradlew
+├── TGE_E1/gradlew.bat
+├── FINAL_DELIVERABLES/
+├── PROOF_OF_WORK/
+├── TGAPP.WIP/
+├── TGE_E1/
+├── TGE_E2/
+├── TGE_E3/
+├── TGE_E4/
+├── build/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
 - `AGENTS.md` — Project-specific conventions and commands
 - `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
+
+### Build System
+
+This project uses **Custom (build.sh — No-Gradle)** for builds.
+
+```bash
+# Typical no-Gradle Android build flow:
+./build.sh
+```
 

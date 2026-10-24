@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 08_Project_Tracking project operates within the **CSMLogs** domain, 
+The **08_Project_Tracking** project operates within the **CSMLogs** domain, 
 functioning as a **Part of Another Project** with 20 files. 
 It belongs to the CSMLogs ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMLogs ecosystem.
 
 ```
 08_Project_Tracking
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

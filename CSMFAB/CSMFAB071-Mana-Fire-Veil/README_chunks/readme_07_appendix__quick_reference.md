@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB071-Mana-Fire-Veil`
-- **Chunks**: `./CSMFAB/CSMFAB071-Mana-Fire-Veil/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB071-Mana-Fire-Veil/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB071-Mana-Fire-Veil/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB071-Mana-Fire-Veil/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB071-Mana-Fire-Veil`
+- **Chunks**: `CSMFAB/CSMFAB071-Mana-Fire-Veil/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB071-Mana-Fire-Veil/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB071-Mana-Fire-Veil/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB071-Mana-Fire-Veil/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 1
+- **File Types**: .md: 2
+- **Languages**: Markdown: 2
+- **Key Directories**: 0
 
 ### Related Projects
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The memory project operates within the **TopLevel** domain, 
+The **memory** project operates within the **TopLevel** domain, 
 functioning as a **Leftover to sort** with 3 files. 
 It belongs to the TBD ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the TBD ecosystem.
 
 ```
 memory
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

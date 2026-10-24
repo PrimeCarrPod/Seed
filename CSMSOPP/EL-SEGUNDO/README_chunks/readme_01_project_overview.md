@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMSOPP
 
-## Summary
+### Summary
 
 El Segundo protocol (87 files)
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Vertebrae-Extension project operates within the **CSMApps** domain, 
+The **Vertebrae-Extension** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 4 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMApps ecosystem.
 
 ```
 Vertebrae-Extension
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── src/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

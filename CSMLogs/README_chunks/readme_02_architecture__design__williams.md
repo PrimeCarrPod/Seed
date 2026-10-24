@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMLogs project operates within the **TopLevel** domain, 
+The **CSMLogs** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 2064 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMLogs
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── 01_SubAtomic_Prime_Electron_Canonical/
+├── 02_Caldera_Prime_Pi_Electron/
+├── 03_Legal_Enactment/
+├── 04_TGApp_Ecosystem/
+├── 05_Land_of_Lil/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

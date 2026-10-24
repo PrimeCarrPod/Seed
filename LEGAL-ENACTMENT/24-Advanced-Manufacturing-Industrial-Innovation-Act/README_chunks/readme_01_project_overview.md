@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 24: Advanced Manufacturing Industrial Innovation Act Act (15 files)
 

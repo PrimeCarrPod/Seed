@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __CURRENT_RELEASES__ project operates within the **CSMSubatomic082026** domain, 
+The **__CURRENT_RELEASES__** project operates within the **CSMSubatomic082026** domain, 
 functioning as a **Archive (verify before removal)** with 5 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 __CURRENT_RELEASES__
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

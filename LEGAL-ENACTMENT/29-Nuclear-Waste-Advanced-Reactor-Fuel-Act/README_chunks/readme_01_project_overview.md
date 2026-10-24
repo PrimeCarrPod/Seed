@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 29: Nuclear Waste Advanced Reactor Fuel Act Act (15 files)
 

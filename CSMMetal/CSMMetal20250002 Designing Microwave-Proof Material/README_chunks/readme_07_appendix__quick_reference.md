@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material`
-- **Chunks**: `./CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/README_chunks/`
-- **Manifest**: `./CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/memory/`
-- **Runner Files**: `./CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/NEXT_runner_*.md`
+- **Project Root**: `CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material`
+- **Chunks**: `CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/README_chunks/`
+- **Manifest**: `CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/memory/`
+- **Runner Files**: `CSMMetal/CSMMetal20250002 Designing Microwave-Proof Material/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 7
+- **File Types**: .md: 3, .pdf: 3, .zip: 1, .html: 1
+- **Languages**: Markdown: 3, HTML: 1
+- **Key Directories**: 0
 
 ### Related Projects
 

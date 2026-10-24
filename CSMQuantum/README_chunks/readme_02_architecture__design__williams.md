@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMQuantum project operates within the **TopLevel** domain, 
+The **CSMQuantum** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 41 files. 
 It is a top-level project.
 
@@ -18,10 +16,13 @@ It is a top-level project.
 
 ```
 CSMQuantum
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 00-MASTER-INDEX/
+├── 01-MXene-Shielding-Optimization/
+├── 02-ZrB2-SiC-Composite-Design/
+├── 03-YInMn-Blue-Crystal-Field/
+├── 04-Perovskite-Quantum-Dot-Stability/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

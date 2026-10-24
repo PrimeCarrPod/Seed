@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMLogs
 
-## Summary
+### Summary
 
 CSMGen — Agent Generation, Pipeline, and Communications Architecture
 

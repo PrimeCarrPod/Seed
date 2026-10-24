@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB011 Aegis Home Carrington Storm Protection Fabrication  project operates within the **CSMFAB** domain, 
+The **CSMFAB011 Aegis Home Carrington Storm Protection Fabrication ** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 86 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 CSMFAB011 Aegis Home Carrington Storm Protection Fabrication 
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── 011-Aegis-Home-Carrington-Storm-Protection-Fabrication-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

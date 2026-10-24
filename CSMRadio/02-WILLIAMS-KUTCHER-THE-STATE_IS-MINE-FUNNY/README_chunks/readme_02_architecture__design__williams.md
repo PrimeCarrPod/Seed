@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 02-WILLIAMS-KUTCHER-THE-STATE_IS-MINE-FUNNY project operates within the **CSMRadio** domain, 
+The **02-WILLIAMS-KUTCHER-THE-STATE_IS-MINE-FUNNY** project operates within the **CSMRadio** domain, 
 functioning as a **Part of Another Project** with 6 files. 
 It belongs to the CSMRadio ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMRadio ecosystem.
 
 ```
 02-WILLIAMS-KUTCHER-THE-STATE_IS-MINE-FUNNY
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

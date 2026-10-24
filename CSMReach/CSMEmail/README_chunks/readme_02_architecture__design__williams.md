@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMEmail project operates within the **CSMReach** domain, 
+The **CSMEmail** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 2 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMReach ecosystem.
 
 ```
 CSMEmail
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Campaign_2026-09-02/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

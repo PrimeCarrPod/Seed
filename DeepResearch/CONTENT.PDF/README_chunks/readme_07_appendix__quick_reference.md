@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./DeepResearch/CONTENT.PDF`
-- **Chunks**: `./DeepResearch/CONTENT.PDF/README_chunks/`
-- **Manifest**: `./DeepResearch/CONTENT.PDF/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./DeepResearch/CONTENT.PDF/memory/`
-- **Runner Files**: `./DeepResearch/CONTENT.PDF/NEXT_runner_*.md`
+- **Project Root**: `DeepResearch/CONTENT.PDF`
+- **Chunks**: `DeepResearch/CONTENT.PDF/README_chunks/`
+- **Manifest**: `DeepResearch/CONTENT.PDF/README_chunks/MANIFEST.json`
+- **Memory Logs**: `DeepResearch/CONTENT.PDF/memory/`
+- **Runner Files**: `DeepResearch/CONTENT.PDF/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 115
+- **File Types**: .md: 114, .sh: 2
+- **Languages**: Markdown: 114, Shell: 2
+- **Key Directories**: 1
 
 ### Related Projects
 

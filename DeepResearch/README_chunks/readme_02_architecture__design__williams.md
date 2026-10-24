@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The DeepResearch project operates within the **TopLevel** domain, 
+The **DeepResearch** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 898 files. 
 It is a top-level project.
 
@@ -18,10 +16,16 @@ It is a top-level project.
 
 ```
 DeepResearch
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── 1920s-Radio-Design-Research/
+├── AncientQuartzIllumination/
+├── Artificial Hemoglobin Survival Research/
+├── AsteroidPsycheGoldHeist/
+├── AtlasJawHealth/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

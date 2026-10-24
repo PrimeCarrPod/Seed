@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB-INCURSION-CLASS project operates within the **CSMFAB** domain, 
+The **CSMFAB-INCURSION-CLASS** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 405 files. 
 It is a top-level project.
 
@@ -18,10 +16,13 @@ It is a top-level project.
 
 ```
 CSMFAB-INCURSION-CLASS
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── COMMON/
+├── I-COURIER-75/
+├── I-DEEP-75/
+├── I-GUARDIAN-75/
+├── I-SCOUT-75/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

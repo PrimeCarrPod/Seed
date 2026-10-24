@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB037 Pet-Safe Infrasound Cargo Liner project operates within the **CSMFAB** domain, 
+The **CSMFAB037 Pet-Safe Infrasound Cargo Liner** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 86 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 CSMFAB037 Pet-Safe Infrasound Cargo Liner
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── 037-Pet-Safe-Infrasound-Cargo-Liner-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

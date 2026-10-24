@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The LEGAL-ENACTMENT project operates within the **TopLevel** domain, 
+The **LEGAL-ENACTMENT** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 1056 files. 
 It is a top-level project.
 
@@ -18,10 +16,13 @@ It is a top-level project.
 
 ```
 LEGAL-ENACTMENT
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 01-Critical-Infrastructure-Protection-Act/
+├── 02-Domestic-Critical-Minerals-Independence-Act/
+├── 03-Advanced-Nuclear-Energy-Deployment-Act/
+├── 04-Clean-Industrial-Manufacturing-Tax-Credit-Act/
+├── 05-Bridge-Transportation-Modernization-Act/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

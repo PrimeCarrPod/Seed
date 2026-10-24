@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMPrePublish/Corrupted_Files`
-- **Chunks**: `./CSMPrePublish/Corrupted_Files/README_chunks/`
-- **Manifest**: `./CSMPrePublish/Corrupted_Files/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMPrePublish/Corrupted_Files/memory/`
-- **Runner Files**: `./CSMPrePublish/Corrupted_Files/NEXT_runner_*.md`
+- **Project Root**: `CSMPrePublish/Corrupted_Files`
+- **Chunks**: `CSMPrePublish/Corrupted_Files/README_chunks/`
+- **Manifest**: `CSMPrePublish/Corrupted_Files/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMPrePublish/Corrupted_Files/memory/`
+- **Runner Files**: `CSMPrePublish/Corrupted_Files/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 49
+- **File Types**: .md}: 49, .md: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 11
 
 ### Related Projects
 

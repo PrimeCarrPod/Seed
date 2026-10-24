@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Agent generation pipeline and communications architecture (CSMAegis subproject)
 

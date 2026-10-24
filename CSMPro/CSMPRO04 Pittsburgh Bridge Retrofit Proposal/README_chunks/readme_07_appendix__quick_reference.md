@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal`
-- **Chunks**: `./CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/README_chunks/`
-- **Manifest**: `./CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/memory/`
-- **Runner Files**: `./CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/NEXT_runner_*.md`
+- **Project Root**: `CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal`
+- **Chunks**: `CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/README_chunks/`
+- **Manifest**: `CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/memory/`
+- **Runner Files**: `CSMPro/CSMPRO04 Pittsburgh Bridge Retrofit Proposal/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 5
+- **File Types**: .md: 3, .pdf: 3
+- **Languages**: Markdown: 3
+- **Key Directories**: 0
 
 ### Related Projects
 

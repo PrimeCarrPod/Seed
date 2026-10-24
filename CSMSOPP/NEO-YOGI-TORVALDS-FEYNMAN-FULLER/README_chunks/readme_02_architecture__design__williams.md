@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The NEO-YOGI-TORVALDS-FEYNMAN-FULLER project operates within the **CSMSOPP** domain, 
+The **NEO-YOGI-TORVALDS-FEYNMAN-FULLER** project operates within the **CSMSOPP** domain, 
 functioning as a **Part of Another Project** with 1 files. 
 It belongs to the CSMSOPP ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMSOPP ecosystem.
 
 ```
 NEO-YOGI-TORVALDS-FEYNMAN-FULLER
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

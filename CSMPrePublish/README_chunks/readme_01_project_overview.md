@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Pre-publication staging area; corrupted files recovery and placeholder articles
 

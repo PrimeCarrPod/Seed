@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The gradle-8.4 project operates within the **.sdk** domain, 
+The **gradle-8.4** project operates within the **.sdk** domain, 
 functioning as a **Part of Another Project** with 2 files. 
 It belongs to the .sdk ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the .sdk ecosystem.
 
 ```
 gradle-8.4
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── bin/
+├── init.d/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

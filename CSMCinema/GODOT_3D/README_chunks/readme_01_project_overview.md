@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMCinema
 
-## Summary
+### Summary
 
 Godot 3D engine integration for cinematic pipeline (11 files)
 

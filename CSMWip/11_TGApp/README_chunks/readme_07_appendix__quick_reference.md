@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,27 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+# No-Gradle Android Build
+./build.sh
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMWip/11_TGApp`
-- **Chunks**: `./CSMWip/11_TGApp/README_chunks/`
-- **Manifest**: `./CSMWip/11_TGApp/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMWip/11_TGApp/memory/`
-- **Runner Files**: `./CSMWip/11_TGApp/NEXT_runner_*.md`
+- **Project Root**: `CSMWip/11_TGApp`
+- **Chunks**: `CSMWip/11_TGApp/README_chunks/`
+- **Manifest**: `CSMWip/11_TGApp/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMWip/11_TGApp/memory/`
+- **Runner Files**: `CSMWip/11_TGApp/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 228
+- **File Types**: .java: 49, .apk: 45, .xml: 29, .md: 21, .png: 20, .class: 15, : 6, .sh: 6, .kt: 6, .prime: 4
+- **Languages**: Java: 49, XML: 29, Markdown: 21, Kotlin: 9, Shell: 6, HTML: 3, JavaScript/TypeScript: 2, Python: 1, JSON: 1
+- **Key Directories**: 4
 
 ### Related Projects
 

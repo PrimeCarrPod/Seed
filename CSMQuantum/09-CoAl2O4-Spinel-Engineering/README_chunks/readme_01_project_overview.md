@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 09-CoAl2O4-Spinel-Engineering (3 files, has README)
 

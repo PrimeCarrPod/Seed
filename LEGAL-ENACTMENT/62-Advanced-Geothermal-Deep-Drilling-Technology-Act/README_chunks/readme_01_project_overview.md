@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 62: Advanced Geothermal Deep Drilling Technology Act Act (15 files)
 

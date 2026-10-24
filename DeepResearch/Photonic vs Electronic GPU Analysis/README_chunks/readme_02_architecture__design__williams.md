@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Photonic vs Electronic GPU Analysis project operates within the **DeepResearch** domain, 
+The **Photonic vs Electronic GPU Analysis** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 144 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 Photonic vs Electronic GPU Analysis
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── ContentFiles/
+├── ResumeSessions/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

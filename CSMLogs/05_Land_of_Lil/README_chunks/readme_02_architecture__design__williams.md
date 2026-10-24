@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 05_Land_of_Lil project operates within the **CSMLogs** domain, 
+The **05_Land_of_Lil** project operates within the **CSMLogs** domain, 
 functioning as a **Part of Another Project** with 4 files. 
 It belongs to the CSMLogs ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMLogs ecosystem.
 
 ```
 05_Land_of_Lil
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

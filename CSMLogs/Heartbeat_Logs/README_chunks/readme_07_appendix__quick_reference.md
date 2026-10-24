@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMLogs/Heartbeat_Logs`
-- **Chunks**: `./CSMLogs/Heartbeat_Logs/README_chunks/`
-- **Manifest**: `./CSMLogs/Heartbeat_Logs/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMLogs/Heartbeat_Logs/memory/`
-- **Runner Files**: `./CSMLogs/Heartbeat_Logs/NEXT_runner_*.md`
+- **Project Root**: `CSMLogs/Heartbeat_Logs`
+- **Chunks**: `CSMLogs/Heartbeat_Logs/README_chunks/`
+- **Manifest**: `CSMLogs/Heartbeat_Logs/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMLogs/Heartbeat_Logs/memory/`
+- **Runner Files**: `CSMLogs/Heartbeat_Logs/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 2
+- **File Types**: .log: 2, .md: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 1
 
 ### Related Projects
 

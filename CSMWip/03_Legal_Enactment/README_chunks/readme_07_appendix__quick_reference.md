@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMWip/03_Legal_Enactment`
-- **Chunks**: `./CSMWip/03_Legal_Enactment/README_chunks/`
-- **Manifest**: `./CSMWip/03_Legal_Enactment/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMWip/03_Legal_Enactment/memory/`
-- **Runner Files**: `./CSMWip/03_Legal_Enactment/NEXT_runner_*.md`
+- **Project Root**: `CSMWip/03_Legal_Enactment`
+- **Chunks**: `CSMWip/03_Legal_Enactment/README_chunks/`
+- **Manifest**: `CSMWip/03_Legal_Enactment/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMWip/03_Legal_Enactment/memory/`
+- **Runner Files**: `CSMWip/03_Legal_Enactment/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 569
+- **File Types**: .md: 566, .sh: 4
+- **Languages**: Markdown: 566, Shell: 4
+- **Key Directories**: 1
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 09: Water Infrastructure Drought Resilience Act Act (14 files)
 

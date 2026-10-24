@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPublished
 
-## Summary
+### Summary
 
 LaTeX formatted publications (27 files)
 

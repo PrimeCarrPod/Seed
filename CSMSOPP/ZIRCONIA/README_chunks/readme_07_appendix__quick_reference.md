@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMSOPP/ZIRCONIA`
-- **Chunks**: `./CSMSOPP/ZIRCONIA/README_chunks/`
-- **Manifest**: `./CSMSOPP/ZIRCONIA/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMSOPP/ZIRCONIA/memory/`
-- **Runner Files**: `./CSMSOPP/ZIRCONIA/NEXT_runner_*.md`
+- **Project Root**: `CSMSOPP/ZIRCONIA`
+- **Chunks**: `CSMSOPP/ZIRCONIA/README_chunks/`
+- **Manifest**: `CSMSOPP/ZIRCONIA/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMSOPP/ZIRCONIA/memory/`
+- **Runner Files**: `CSMSOPP/ZIRCONIA/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 3
+- **File Types**: .md: 4
+- **Languages**: Markdown: 4
+- **Key Directories**: 2
 
 ### Related Projects
 

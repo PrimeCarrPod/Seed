@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMCinema project operates within the **TopLevel** domain, 
+The **CSMCinema** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 197 files. 
 It is a top-level project.
 
@@ -18,10 +16,13 @@ It is a top-level project.
 
 ```
 CSMCinema
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── GODOT_3D/
+├── MASTER_SCRIPT/
+├── MASTER_SCRIPT_V2/
+├── Resume/
+├── SCENE_DETAILS/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

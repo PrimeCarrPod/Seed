@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMMag project operates within the **CSMPro** domain, 
+The **CSMMag** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 11 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,11 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMMag
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMMagEco2026 New US Magnet Companies Identified/
+├── CSMMagTech 2026 Rare-Earth-Free Magnet Research/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

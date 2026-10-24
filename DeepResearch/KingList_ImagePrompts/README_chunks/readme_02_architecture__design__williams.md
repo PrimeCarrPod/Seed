@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The KingList_ImagePrompts project operates within the **DeepResearch** domain, 
+The **KingList_ImagePrompts** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 16 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 KingList_ImagePrompts
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

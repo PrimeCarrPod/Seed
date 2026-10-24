@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./__Python_Tools`
-- **Chunks**: `./__Python_Tools/README_chunks/`
-- **Manifest**: `./__Python_Tools/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./__Python_Tools/memory/`
-- **Runner Files**: `./__Python_Tools/NEXT_runner_*.md`
+- **Project Root**: `__Python_Tools`
+- **Chunks**: `__Python_Tools/README_chunks/`
+- **Manifest**: `__Python_Tools/README_chunks/MANIFEST.json`
+- **Memory Logs**: `__Python_Tools/memory/`
+- **Runner Files**: `__Python_Tools/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 19
+- **File Types**: .py: 18, .md: 2, .pyc: 1
+- **Languages**: Python: 18, Markdown: 2
+- **Key Directories**: 1
 
 ### Related Projects
 

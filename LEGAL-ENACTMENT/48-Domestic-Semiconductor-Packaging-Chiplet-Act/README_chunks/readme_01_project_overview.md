@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 48: Domestic Semiconductor Packaging Chiplet Act Act (15 files)
 

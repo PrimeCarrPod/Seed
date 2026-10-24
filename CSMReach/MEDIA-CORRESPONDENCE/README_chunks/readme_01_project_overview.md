@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 MEDIA-CORRESPONDENCE \u2014 Media relations (12 files)
 

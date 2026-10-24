@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMSOPP
 
-## Summary
+### Summary
 
 Module V2 \u2014 Updated heuristics (15 files, has README)
 

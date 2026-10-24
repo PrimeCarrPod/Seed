@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMGrantCampaigns/GrantProposals`
-- **Chunks**: `./CSMGrantCampaigns/GrantProposals/README_chunks/`
-- **Manifest**: `./CSMGrantCampaigns/GrantProposals/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMGrantCampaigns/GrantProposals/memory/`
-- **Runner Files**: `./CSMGrantCampaigns/GrantProposals/NEXT_runner_*.md`
+- **Project Root**: `CSMGrantCampaigns/GrantProposals`
+- **Chunks**: `CSMGrantCampaigns/GrantProposals/README_chunks/`
+- **Manifest**: `CSMGrantCampaigns/GrantProposals/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMGrantCampaigns/GrantProposals/memory/`
+- **Runner Files**: `CSMGrantCampaigns/GrantProposals/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 24
+- **File Types**: .md: 9, .html: 8, .pdf: 8
+- **Languages**: Markdown: 9, HTML: 8
+- **Key Directories**: 0
 
 ### Related Projects
 

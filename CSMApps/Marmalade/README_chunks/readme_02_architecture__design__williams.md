@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Marmalade project operates within the **CSMApps** domain, 
+The **Marmalade** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 15 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMApps ecosystem.
 
 ```
 Marmalade
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── work-in-progress-instructions/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

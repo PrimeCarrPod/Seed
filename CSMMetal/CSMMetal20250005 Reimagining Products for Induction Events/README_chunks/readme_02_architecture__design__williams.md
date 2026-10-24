@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMMetal20250005 Reimagining Products for Induction Events project operates within the **CSMMetal** domain, 
+The **CSMMetal20250005 Reimagining Products for Induction Events** project operates within the **CSMMetal** domain, 
 functioning as a **Part of Another Project** with 3 files. 
 It belongs to the CSMMetal ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMMetal ecosystem.
 
 ```
 CSMMetal20250005 Reimagining Products for Induction Events
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

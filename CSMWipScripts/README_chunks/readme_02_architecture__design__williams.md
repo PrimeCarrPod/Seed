@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMWipScripts project operates within the **TopLevel** domain, 
+The **CSMWipScripts** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 33 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMWipScripts
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── AegisIronMan/
+├── RESTART_PACKAGE/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

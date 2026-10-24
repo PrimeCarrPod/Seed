@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 38: Wildland Fire Forest Restoration Act Act (15 files)
 

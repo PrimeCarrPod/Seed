@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The General_Sessions project operates within the **CSMLogs** domain, 
+The **General_Sessions** project operates within the **CSMLogs** domain, 
 functioning as a **Part of Another Project** with 1572 files. 
 It belongs to the CSMLogs ecosystem.
 
@@ -18,10 +16,15 @@ It belongs to the CSMLogs ecosystem.
 
 ```
 General_Sessions
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── 2026-07-25/
+├── 2026-07-26/
+├── 2026-07-29/
+├── 2026-08-14/
+├── 2026-08-26/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

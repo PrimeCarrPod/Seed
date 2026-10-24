@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 36: Advanced Materials Manufacturing Process Act Act (15 files)
 

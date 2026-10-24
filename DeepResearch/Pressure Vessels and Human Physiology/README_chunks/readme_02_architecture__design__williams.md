@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Pressure Vessels and Human Physiology project operates within the **DeepResearch** domain, 
+The **Pressure Vessels and Human Physiology** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 155 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 Pressure Vessels and Human Physiology
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── ContentFiles/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

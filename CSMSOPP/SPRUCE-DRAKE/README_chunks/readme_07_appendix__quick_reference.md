@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMSOPP/SPRUCE-DRAKE`
-- **Chunks**: `./CSMSOPP/SPRUCE-DRAKE/README_chunks/`
-- **Manifest**: `./CSMSOPP/SPRUCE-DRAKE/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMSOPP/SPRUCE-DRAKE/memory/`
-- **Runner Files**: `./CSMSOPP/SPRUCE-DRAKE/NEXT_runner_*.md`
+- **Project Root**: `CSMSOPP/SPRUCE-DRAKE`
+- **Chunks**: `CSMSOPP/SPRUCE-DRAKE/README_chunks/`
+- **Manifest**: `CSMSOPP/SPRUCE-DRAKE/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMSOPP/SPRUCE-DRAKE/memory/`
+- **Runner Files**: `CSMSOPP/SPRUCE-DRAKE/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 20
+- **File Types**: .md: 21
+- **Languages**: Markdown: 21
+- **Key Directories**: 3
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 04: Clean Industrial Manufacturing Tax Credit Act Act (14 files)
 

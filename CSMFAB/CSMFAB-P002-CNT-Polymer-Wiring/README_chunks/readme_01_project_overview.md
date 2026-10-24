@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB-P002-CNT-Polymer-Wiring \u2014 Infrastructure hardening proposal (79 files)
 

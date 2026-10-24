@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMApps project operates within the **TopLevel** domain, 
+The **CSMApps** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 5144 files. 
 It is a top-level project.
 
@@ -18,10 +16,20 @@ It is a top-level project.
 
 ```
 CSMApps
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── Bounce/
+├── CarForge/
+├── Marmalade/
+├── Vertebrae/
+├── Vertebrae-Extension/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

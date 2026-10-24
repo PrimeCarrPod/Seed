@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 03_Legal_Enactment project operates within the **CSMWip** domain, 
+The **03_Legal_Enactment** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 569 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMWip ecosystem.
 
 ```
 03_Legal_Enactment
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── LegalActs_06_08_09_10/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

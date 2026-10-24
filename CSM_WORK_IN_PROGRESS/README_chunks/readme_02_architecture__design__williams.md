@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSM_WORK_IN_PROGRESS project operates within the **TopLevel** domain, 
+The **CSM_WORK_IN_PROGRESS** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 6 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSM_WORK_IN_PROGRESS
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── SubAtom_WIP/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

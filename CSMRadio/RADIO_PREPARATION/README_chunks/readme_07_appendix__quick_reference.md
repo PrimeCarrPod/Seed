@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMRadio/RADIO_PREPARATION`
-- **Chunks**: `./CSMRadio/RADIO_PREPARATION/README_chunks/`
-- **Manifest**: `./CSMRadio/RADIO_PREPARATION/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMRadio/RADIO_PREPARATION/memory/`
-- **Runner Files**: `./CSMRadio/RADIO_PREPARATION/NEXT_runner_*.md`
+- **Project Root**: `CSMRadio/RADIO_PREPARATION`
+- **Chunks**: `CSMRadio/RADIO_PREPARATION/README_chunks/`
+- **Manifest**: `CSMRadio/RADIO_PREPARATION/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMRadio/RADIO_PREPARATION/memory/`
+- **Runner Files**: `CSMRadio/RADIO_PREPARATION/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 14
+- **File Types**: .html: 11, .md: 3, .sh: 1
+- **Languages**: HTML: 11, Markdown: 3, Shell: 1
+- **Key Directories**: 2
 
 ### Related Projects
 

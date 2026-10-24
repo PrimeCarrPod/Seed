@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/PROTONIC-HFET`
-- **Chunks**: `./CSMFAB/PROTONIC-HFET/README_chunks/`
-- **Manifest**: `./CSMFAB/PROTONIC-HFET/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/PROTONIC-HFET/memory/`
-- **Runner Files**: `./CSMFAB/PROTONIC-HFET/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/PROTONIC-HFET`
+- **Chunks**: `CSMFAB/PROTONIC-HFET/README_chunks/`
+- **Manifest**: `CSMFAB/PROTONIC-HFET/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/PROTONIC-HFET/memory/`
+- **Runner Files**: `CSMFAB/PROTONIC-HFET/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 1
+- **File Types**: .md: 2
+- **Languages**: Markdown: 2
+- **Key Directories**: 1
 
 ### Related Projects
 

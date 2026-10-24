@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The AegisIronMan project operates within the **CSMWipScripts** domain, 
+The **AegisIronMan** project operates within the **CSMWipScripts** domain, 
 functioning as a **Part of Another Project** with 15 files. 
 It belongs to the CSMWipScripts ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMWipScripts ecosystem.
 
 ```
 AegisIronMan
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSM_GEN_IMAGE_PROMPTS/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

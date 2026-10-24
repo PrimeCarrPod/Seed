@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 42: Long Duration Energy Storage Grid Stability Act Act (15 files)
 

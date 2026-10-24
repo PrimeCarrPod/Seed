@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The KiloWorkSpace project operates within the **CSMScripts** domain, 
+The **KiloWorkSpace** project operates within the **CSMScripts** domain, 
 functioning as a **Part of Another Project** with 1 files. 
 It belongs to the CSMScripts ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMScripts ecosystem.
 
 ```
 KiloWorkSpace
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

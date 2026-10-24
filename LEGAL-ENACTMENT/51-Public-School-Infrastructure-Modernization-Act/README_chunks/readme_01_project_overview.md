@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 51: Public School Infrastructure Modernization Act Act (15 files)
 

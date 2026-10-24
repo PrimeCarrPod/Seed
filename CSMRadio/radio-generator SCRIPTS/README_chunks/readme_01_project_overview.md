@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMRadio
 
-## Summary
+### Summary
 
 Radio generator automation scripts (3 files)
 

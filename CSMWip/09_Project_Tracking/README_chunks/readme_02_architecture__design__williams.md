@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 09_Project_Tracking project operates within the **CSMWip** domain, 
+The **09_Project_Tracking** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 10 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMWip ecosystem.
 
 ```
 09_Project_Tracking
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

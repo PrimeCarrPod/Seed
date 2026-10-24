@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Centralized logging and session tracking; 2000+ files across subatomic research, legal enactment, TGApp ecosystem, Land of Lil, publishing outreach, and heartbeat monitoring
 

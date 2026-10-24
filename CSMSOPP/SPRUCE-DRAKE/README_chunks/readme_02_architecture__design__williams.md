@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The SPRUCE-DRAKE project operates within the **CSMSOPP** domain, 
+The **SPRUCE-DRAKE** project operates within the **CSMSOPP** domain, 
 functioning as a **Part of Another Project** with 20 files. 
 It belongs to the CSMSOPP ecosystem.
 
@@ -18,10 +16,11 @@ It belongs to the CSMSOPP ecosystem.
 
 ```
 SPRUCE-DRAKE
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── GUIDE/
+├── MODULE/
+├── RESEARCH/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

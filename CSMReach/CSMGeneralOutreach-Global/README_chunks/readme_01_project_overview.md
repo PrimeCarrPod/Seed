@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 # CSM General Outreach \u2014 Global (401 files, has README)
 

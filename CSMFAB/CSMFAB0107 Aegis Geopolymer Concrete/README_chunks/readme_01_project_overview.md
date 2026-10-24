@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB0107 Aegis Geopolymer Concrete \u2014 Project AEGIS Carrington event resilience research (84 files)
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __pycache__ project operates within the **__Python_Tools** domain, 
+The **__pycache__** project operates within the **__Python_Tools** domain, 
 functioning as a **Part of Another Project** with 1 files. 
 It belongs to the __Python_Tools ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the __Python_Tools ecosystem.
 
 ```
 __pycache__
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

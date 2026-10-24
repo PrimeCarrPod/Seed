@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 22: Sustainable Buildings Green Construction Act Act (15 files)
 

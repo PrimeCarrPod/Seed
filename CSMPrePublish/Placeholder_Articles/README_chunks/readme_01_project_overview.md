@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPrePublish
 
-## Summary
+### Summary
 
 Placeholder_Articles \u2014 Article placeholders (3 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 41: Clean Energy Workforce Housing Infrastructure Act Act (15 files)
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMCommercials project operates within the **CSMRadio** domain, 
+The **CSMCommercials** project operates within the **CSMRadio** domain, 
 functioning as a **Part of Another Project** with 20 files. 
 It belongs to the CSMRadio ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMRadio ecosystem.
 
 ```
 CSMCommercials
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── BATCH-001/
+├── BATCH-002/
+├── BATCH-003/
+├── BATCH-004/
+├── BATCH-005/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

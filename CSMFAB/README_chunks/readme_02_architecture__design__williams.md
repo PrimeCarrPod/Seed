@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB project operates within the **TopLevel** domain, 
+The **CSMFAB** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 8013 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMFAB
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── BOM-REGISTRY/
+├── CLOUD-NEST/
+├── CSMAegisHome01 M1 Project AEGIS Foundational Research/
+├── CSMAegisHome02 M1chrome Stellar-Chrome Dielectric Coating/
+├── CSMFAB Master Cost Analysis and Market Viability Reports/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

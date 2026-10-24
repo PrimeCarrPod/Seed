@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 1920s-Radio-Design-Research project operates within the **DeepResearch** domain, 
+The **1920s-Radio-Design-Research** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 1 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 1920s-Radio-Design-Research
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

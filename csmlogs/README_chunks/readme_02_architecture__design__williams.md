@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The csmlogs project operates within the **TopLevel** domain, 
+The **csmlogs** project operates within the **TopLevel** domain, 
 functioning as a **Leftover to sort** with 21 files. 
 It belongs to the TBD ecosystem.
 
@@ -18,10 +16,11 @@ It belongs to the TBD ecosystem.
 
 ```
 csmlogs
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── aug26/
+├── august26/
+├── caldera/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

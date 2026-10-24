@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-HelionEnergy FusionPower \u2014 Corporate partnership profile for HelionEnergy FusionPower (16 files)
 

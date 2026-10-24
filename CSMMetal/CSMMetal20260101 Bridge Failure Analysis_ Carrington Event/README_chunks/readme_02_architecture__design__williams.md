@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMMetal20260101 Bridge Failure Analysis_ Carrington Event project operates within the **CSMMetal** domain, 
+The **CSMMetal20260101 Bridge Failure Analysis_ Carrington Event** project operates within the **CSMMetal** domain, 
 functioning as a **Part of Another Project** with 5 files. 
 It belongs to the CSMMetal ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMMetal ecosystem.
 
 ```
 CSMMetal20260101 Bridge Failure Analysis_ Carrington Event
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

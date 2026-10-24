@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 61: Disaster Insurance Community Resilience Act Act (15 files)
 

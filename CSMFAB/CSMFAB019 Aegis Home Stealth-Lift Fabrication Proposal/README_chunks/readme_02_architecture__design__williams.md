@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal project operates within the **CSMFAB** domain, 
+The **CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 87 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── 019-Aegis-Home-Stealth-Lift-Fabrication-Proposal-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB050 Aegis-Ascension Drone Backpack project operates within the **CSMFAB** domain, 
+The **CSMFAB050 Aegis-Ascension Drone Backpack** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 84 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMFAB050 Aegis-Ascension Drone Backpack
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 050-Aegis-Ascension-Drone-Backpack-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

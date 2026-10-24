@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 12_AegisOutfitFabricator project operates within the **CSMWip** domain, 
+The **12_AegisOutfitFabricator** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 501 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,14 @@ It belongs to the CSMWip ecosystem.
 
 ```
 12_AegisOutfitFabricator
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── FinishedWork/
+├── Framework/
+├── Logs/
+├── Research/
+├── memory/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

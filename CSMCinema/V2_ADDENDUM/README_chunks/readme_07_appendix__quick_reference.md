@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMCinema/V2_ADDENDUM`
-- **Chunks**: `./CSMCinema/V2_ADDENDUM/README_chunks/`
-- **Manifest**: `./CSMCinema/V2_ADDENDUM/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMCinema/V2_ADDENDUM/memory/`
-- **Runner Files**: `./CSMCinema/V2_ADDENDUM/NEXT_runner_*.md`
+- **Project Root**: `CSMCinema/V2_ADDENDUM`
+- **Chunks**: `CSMCinema/V2_ADDENDUM/README_chunks/`
+- **Manifest**: `CSMCinema/V2_ADDENDUM/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMCinema/V2_ADDENDUM/memory/`
+- **Runner Files**: `CSMCinema/V2_ADDENDUM/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 12
+- **File Types**: .md: 13
+- **Languages**: Markdown: 13
+- **Key Directories**: 2
 
 ### Related Projects
 

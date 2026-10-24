@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 26: Offshore Wind Marine Energy Act Act (15 files)
 

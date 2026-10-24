@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The WIP project operates within the **CSMCinema** domain, 
+The **WIP** project operates within the **CSMCinema** domain, 
 functioning as a **Near-Whole Project** with 99 files. 
 It belongs to the CSMCinema ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMCinema ecosystem.
 
 ```
 WIP
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Iteration_1/
+├── Iteration_2/
+├── Iteration_3/
+├── Iteration_4/
+├── Iteration_5/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

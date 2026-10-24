@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The ZIRCONIA project operates within the **CSMSOPP** domain, 
+The **ZIRCONIA** project operates within the **CSMSOPP** domain, 
 functioning as a **Part of Another Project** with 3 files. 
 It belongs to the CSMSOPP ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMSOPP ecosystem.
 
 ```
 ZIRCONIA
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── GUIDE/
+├── MODULE/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

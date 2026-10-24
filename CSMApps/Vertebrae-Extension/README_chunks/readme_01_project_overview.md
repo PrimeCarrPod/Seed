@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMApps
 
-## Summary
+### Summary
 
 Vertebrae-Extension \u2014 Extension to Vertebrae framework (4 files)
 

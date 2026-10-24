@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-Rivian EV Infrastructure \u2014 Corporate partnership profile for Rivian EV Infrastructure (16 files)
 

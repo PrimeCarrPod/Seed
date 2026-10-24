@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 11_TGApp project operates within the **CSMWip** domain, 
+The **11_TGApp** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 228 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,19 @@ It belongs to the CSMWip ecosystem.
 
 ```
 11_TGApp
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── TGApp.WIP/
+├── TGApp.WIP.V2/
+├── TGApp.WIP.V3/
+├── TGE_E5/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./DeepResearch/Mayan2040`
-- **Chunks**: `./DeepResearch/Mayan2040/README_chunks/`
-- **Manifest**: `./DeepResearch/Mayan2040/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./DeepResearch/Mayan2040/memory/`
-- **Runner Files**: `./DeepResearch/Mayan2040/NEXT_runner_*.md`
+- **Project Root**: `DeepResearch/Mayan2040`
+- **Chunks**: `DeepResearch/Mayan2040/README_chunks/`
+- **Manifest**: `DeepResearch/Mayan2040/README_chunks/MANIFEST.json`
+- **Memory Logs**: `DeepResearch/Mayan2040/memory/`
+- **Runner Files**: `DeepResearch/Mayan2040/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 2
+- **File Types**: .html: 2, .md: 1
+- **Languages**: HTML: 2, Markdown: 1
+- **Key Directories**: 0
 
 ### Related Projects
 

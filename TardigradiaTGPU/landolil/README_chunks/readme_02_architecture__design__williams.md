@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The landolil project operates within the **TardigradiaTGPU** domain, 
+The **landolil** project operates within the **TardigradiaTGPU** domain, 
 functioning as a **Part of Another Project** with 90 files. 
 It belongs to the TardigradiaTGPU ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the TardigradiaTGPU ecosystem.
 
 ```
 landolil
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── __HTMLDROPBOX_/
+├── __PASTATTEMPTS__/
+├── __RELEASES__/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

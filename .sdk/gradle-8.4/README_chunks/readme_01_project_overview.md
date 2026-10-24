@@ -5,7 +5,7 @@
 
 **Parent Project:** .sdk
 
-## Summary
+### Summary
 
 Gradle 8.4 (2 files)
 

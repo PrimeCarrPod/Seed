@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The STORYBOARD project operates within the **CSMCinema** domain, 
+The **STORYBOARD** project operates within the **CSMCinema** domain, 
 functioning as a **Part of Another Project** with 11 files. 
 It belongs to the CSMCinema ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMCinema ecosystem.
 
 ```
 STORYBOARD
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── part_01_the_call/
+├── part_02_the_assembly/
+├── part_03_the_threshold/
+├── part_04_the_trials/
+├── part_05_the_pursuit/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

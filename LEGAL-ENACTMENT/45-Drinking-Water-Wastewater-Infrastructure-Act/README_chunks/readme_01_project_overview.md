@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 45: Drinking Water Wastewater Infrastructure Act Act (15 files)
 

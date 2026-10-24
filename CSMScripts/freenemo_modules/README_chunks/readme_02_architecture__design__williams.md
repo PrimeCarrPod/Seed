@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The freenemo_modules project operates within the **CSMScripts** domain, 
+The **freenemo_modules** project operates within the **CSMScripts** domain, 
 functioning as a **Part of Another Project** with 31 files. 
 It belongs to the CSMScripts ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMScripts ecosystem.
 
 ```
 freenemo_modules
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

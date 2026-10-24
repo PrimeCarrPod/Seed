@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB-P002-CNT-Polymer-Wiring project operates within the **CSMFAB** domain, 
+The **CSMFAB-P002-CNT-Polymer-Wiring** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 79 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMFAB-P002-CNT-Polymer-Wiring
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CNT-Wiring-75/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

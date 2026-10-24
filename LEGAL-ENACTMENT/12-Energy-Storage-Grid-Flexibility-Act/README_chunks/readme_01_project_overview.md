@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 12: Energy Storage Grid Flexibility Act Act (15 files)
 

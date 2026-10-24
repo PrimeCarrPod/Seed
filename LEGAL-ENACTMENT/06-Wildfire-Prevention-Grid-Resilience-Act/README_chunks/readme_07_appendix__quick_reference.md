@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act`
-- **Chunks**: `./LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/README_chunks/`
-- **Manifest**: `./LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/memory/`
-- **Runner Files**: `./LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/NEXT_runner_*.md`
+- **Project Root**: `LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act`
+- **Chunks**: `LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/README_chunks/`
+- **Manifest**: `LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/README_chunks/MANIFEST.json`
+- **Memory Logs**: `LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/memory/`
+- **Runner Files**: `LEGAL-ENACTMENT/06-Wildfire-Prevention-Grid-Resilience-Act/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 15
+- **File Types**: .txt: 15, .md: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 0
 
 ### Related Projects
 

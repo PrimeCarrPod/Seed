@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMWip
 
-## Summary
+### Summary
 
 Mining and magnetics research (chunks subproject)
 

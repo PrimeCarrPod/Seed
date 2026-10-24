@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 52: Advanced Nuclear Energy Small Modular Reactor Act Act (15 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Publishing pipeline for CSM; SAPECPublish subproject
 

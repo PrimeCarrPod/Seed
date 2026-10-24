@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB011 Aegis Home Carrington Storm Protection Fabrication  \u2014 Project AEGIS Carrington event resilience research (86 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMGen
 
-## Summary
+### Summary
 
 CSMAegis \u2014 Agent generation subproject (5 files)
 

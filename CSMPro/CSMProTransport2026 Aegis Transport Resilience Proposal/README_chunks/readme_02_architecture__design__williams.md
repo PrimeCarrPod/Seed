@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMProTransport2026 Aegis Transport Resilience Proposal project operates within the **CSMPro** domain, 
+The **CSMProTransport2026 Aegis Transport Resilience Proposal** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 5 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMProTransport2026 Aegis Transport Resilience Proposal
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

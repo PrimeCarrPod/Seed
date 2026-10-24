@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Kilo_Session_20261007_Consolidation project operates within the **CSMWip** domain, 
+The **Kilo_Session_20261007_Consolidation** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 1063 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,20 @@ It belongs to the CSMWip ecosystem.
 
 ```
 Kilo_Session_20261007_Consolidation
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Web/Frontend Assets
+├── 02_Caldera_Prime_Pi_Electron/
+├── 03_Legal_Enactment/
+├── 05_BOUNCE/
+├── 07_SubAtomic_Extensions/
+├── 09_Project_Tracking/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

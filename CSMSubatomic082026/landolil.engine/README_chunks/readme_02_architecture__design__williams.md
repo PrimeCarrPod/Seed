@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The landolil.engine project operates within the **CSMSubatomic082026** domain, 
+The **landolil.engine** project operates within the **CSMSubatomic082026** domain, 
 functioning as a **Archive (verify before removal)** with 57 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 landolil.engine
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── LOL_v2_staging/
+├── LOL_v3_staging/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

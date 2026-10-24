@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The RADIO_PREPARATION project operates within the **CSMRadio** domain, 
+The **RADIO_PREPARATION** project operates within the **CSMRadio** domain, 
 functioning as a **Part of Another Project** with 14 files. 
 It belongs to the CSMRadio ecosystem.
 
@@ -18,10 +16,11 @@ It belongs to the CSMRadio ecosystem.
 
 ```
 RADIO_PREPARATION
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── RadioPlayerVersioning/
+├── radio-generator SCRIPTS/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

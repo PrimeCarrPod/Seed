@@ -5,17 +5,15 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMScripts — Automation, Utilities, and Operational Tools
 
 ---
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMScripts project operates within the **TopLevel** domain, 
+The **CSMScripts** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 847 files. 
 It is a top-level project.
 
@@ -30,51 +28,59 @@ It is a top-level project.
 
 ```
 CSMScripts
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── CSMLogs/
+├── KiloWorkSpace/
+├── StartScriptCommands/
+├── __Git_Seed_Recover/
+├── __pycache__/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| Language | Python | 3.8+ | Scripting/Automation |
+| UI | HTML/CSS | WebView | Hybrid UI |
+| Docs | Markdown | Latest | Documentation |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./CSMScripts/
+CSMScripts/
+├── CSMLogs/
+├── KiloWorkSpace/
+├── StartScriptCommands/
+├── __Git_Seed_Recover/
+├── __pycache__/
+├── android-toolkit/
+├── earthbeatv3-data/
+├── freenemo_concat/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
-- `AGENTS.md` — Project-specific conventions and commands
-- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `AGENTS.md` — *To be created*: Project-specific conventions
+- `TODO.md` — *To be created*: Task hierarchy
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
 
 ## Operations — El Segundo Protocol
-## Operations — El Segundo Protocol
-
 ### Session Lifecycle
 
 1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
@@ -83,29 +89,16 @@ Key environment variables and configuration files:
 4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
 5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
 
-### Build & Validation
-
-```bash
-# Verify document integrity
-python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
-
-# Reassemble for review
-python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
-
-# Compress for storage
-python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
-```
-
 ### Quality Gates
 
 - All reassembled documents must pass manifest verification
 - Cross-reference validation across related documents
+- Python tests pass (pytest/unittest)
+- Type checking passes (mypy/pyright if configured)
 - Mathematical consistency checks for synthesis documents
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
-## Three-Pronged Heuristic Integration
-
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Williams Heuristic — Architectural Clarity
@@ -114,14 +107,14 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 - **Method**: Boundary analysis, component mapping, dependency graphs
 - **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
 - **Applied Here**: Clear project categorization (TopLevel), 
-explicit parent-child relationship (N/A)
+explicit parent-child relationship (Top-Level)
 
 ### Keymaker Protocol — Implementation Precision
 
 - **Purpose**: Define *how* the system is built and validated
 - **Method**: Reproducible builds, chapter-based authoring, manifest verification
 - **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
-- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+- **Applied Here**: Chunk-based documents, SHA256 verification
 
 ### El Segundo Protocol — Operational Excellence
 
@@ -141,32 +134,26 @@ explicit parent-child relationship (N/A)
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
-## Roadmap & Future Work
-
 ### Immediate (Next 1-2 Sessions)
 
-- [ ] Complete README generation and validation
-- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create project-specific `AGENTS.md` conventions
 - [ ] Create initial `TODO.md` with milestone breakdown
 - [ ] Set up `memory/` directory for session logging
+- [ ] Complete README generation and validation
 
 ### Short Term (Next 5 Sessions)
 
-- [ ] Migrate any legacy piece-based documents to chunk format
 - [ ] Implement heartbeat monitoring for this project
 - [ ] Create `NEXT_runner_001.md` with first batch assignments
 - [ ] Document project-specific workflows in `AGENTS.md`
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project ({self.parent}) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -180,17 +167,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMScripts`
-- **Chunks**: `./CSMScripts/README_chunks/`
-- **Manifest**: `./CSMScripts/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMScripts/memory/`
-- **Runner Files**: `./CSMScripts/NEXT_runner_*.md`
+- **Project Root**: `CSMScripts`
+- **Chunks**: `CSMScripts/README_chunks/`
+- **Manifest**: `CSMScripts/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMScripts/memory/`
+- **Runner Files**: `CSMScripts/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 847
+- **File Types**: .md: 658, .sh: 65, .txt: 38, .py: 21, .pid: 21, .json: 12, : 11, .log: 10, .pids: 1, .html: 1
+- **Languages**: Markdown: 658, Shell: 65, Python: 21, JSON: 12, HTML: 1
+- **Key Directories**: 10
 
 ### Related Projects
 

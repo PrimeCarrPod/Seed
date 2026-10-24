@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication `
-- **Chunks**: `./CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication `
+- **Chunks**: `CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /memory/`
+- **Runner Files**: `CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 86
+- **File Types**: .md: 81, .pdf: 4, .zip: 1, .html: 1
+- **Languages**: Markdown: 81, HTML: 1
+- **Key Directories**: 1
 
 ### Related Projects
 

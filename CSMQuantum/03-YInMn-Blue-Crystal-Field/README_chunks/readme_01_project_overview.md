@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 03-YInMn-Blue-Crystal-Field (3 files, has README)
 

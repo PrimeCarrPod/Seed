@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The csm_nasa project operates within the **CSMPro** domain, 
+The **csm_nasa** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 18 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMPro ecosystem.
 
 ```
 csm_nasa
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── full/
+├── part10/
+├── part11/
+├── part8/
+├── part9/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

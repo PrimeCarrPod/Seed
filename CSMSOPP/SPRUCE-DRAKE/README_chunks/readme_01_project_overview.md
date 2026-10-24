@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMSOPP
 
-## Summary
+### Summary
 
 Spruce-Drake protocol (20 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 CSMMag — Rare-Earth-Free Magnet Research and Industry Analysis
 

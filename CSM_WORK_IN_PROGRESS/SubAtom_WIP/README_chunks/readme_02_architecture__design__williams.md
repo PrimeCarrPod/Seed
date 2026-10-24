@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The SubAtom_WIP project operates within the **CSM_WORK_IN_PROGRESS** domain, 
+The **SubAtom_WIP** project operates within the **CSM_WORK_IN_PROGRESS** domain, 
 functioning as a **Near-Whole Project** with 6 files. 
 It belongs to the CSM_WORK_IN_PROGRESS ecosystem.
 
@@ -18,10 +16,11 @@ It belongs to the CSM_WORK_IN_PROGRESS ecosystem.
 
 ```
 SubAtom_WIP
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── A_Article1_Worldline/
+├── G_Article7_QuarkHadronNuclear/
+├── H_Article8_CosmologyAstrophysics/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 28: Solar Energy Distributed Generation Act Act (15 files)
 

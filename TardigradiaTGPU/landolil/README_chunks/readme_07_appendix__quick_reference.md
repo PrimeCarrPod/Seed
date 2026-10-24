@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./TardigradiaTGPU/landolil`
-- **Chunks**: `./TardigradiaTGPU/landolil/README_chunks/`
-- **Manifest**: `./TardigradiaTGPU/landolil/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./TardigradiaTGPU/landolil/memory/`
-- **Runner Files**: `./TardigradiaTGPU/landolil/NEXT_runner_*.md`
+- **Project Root**: `TardigradiaTGPU/landolil`
+- **Chunks**: `TardigradiaTGPU/landolil/README_chunks/`
+- **Manifest**: `TardigradiaTGPU/landolil/README_chunks/MANIFEST.json`
+- **Memory Logs**: `TardigradiaTGPU/landolil/memory/`
+- **Runner Files**: `TardigradiaTGPU/landolil/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 90
+- **File Types**: .js: 46, .html: 41, .css: 3, .md: 1
+- **Languages**: JavaScript/TypeScript: 46, HTML: 41, Markdown: 1
+- **Key Directories**: 3
 
 ### Related Projects
 

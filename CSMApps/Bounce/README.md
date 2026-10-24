@@ -5,17 +5,15 @@
 
 **Parent Project:** CSMApps
 
-## Summary
+### Summary
 
 # Bounce \u2014 TAF/DMV Vehicle Mesh Network (4866 files, active)
 
 ---
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Bounce project operates within the **CSMApps** domain, 
+The **Bounce** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 4866 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -30,51 +28,71 @@ It belongs to the CSMApps ecosystem.
 
 ```
 Bounce
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── root_articles/
+├── work-in-progress/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| Platform | Android | API 24+ | Mobile application |
+| Language | Java | 11+ | Core logic |
+| Language | Python | 3.8+ | Scripting/Automation |
+| Language | JavaScript/TypeScript | ES6+ | Frontend/Web |
+| UI | HTML/CSS | WebView | Hybrid UI |
+| Docs | Markdown | Latest | Documentation |
+| Build | Custom (build.sh — No-Gradle) | — | Build automation |
+| Distribution | ZIP/APK | — | Release artifacts |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./CSMApps/Bounce/
+Bounce/
+├── work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.0/v1/build.sh
+├── work-in-progress/BOUNCE_EVOLUTION/forensic/source/1.0.0/v1/src/main/AndroidManifest.xml
+├── root_articles/
+├── work-in-progress/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
-- `AGENTS.md` — Project-specific conventions and commands
-- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `AGENTS.md` — *To be created*: Project-specific conventions
+- `TODO.md` — *To be created*: Task hierarchy
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
 
-## Operations — El Segundo Protocol
-## Operations — El Segundo Protocol
+### Build System
 
+This project uses **Custom (build.sh — No-Gradle)** for builds.
+
+```bash
+# Typical no-Gradle Android build flow:
+./build.sh
+```
+
+## Operations — El Segundo Protocol
 ### Session Lifecycle
 
 1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
@@ -86,26 +104,30 @@ Key environment variables and configuration files:
 ### Build & Validation
 
 ```bash
-# Verify document integrity
-python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+# No-Gradle Android build
+./build.sh
 
-# Reassemble for review
-python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+# Verify APK
+aapt2 dump badging out/*.apk
 
-# Compress for storage
-python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+# Document integrity (if using write_large_file.py)
+python3 ../../__Python_Tools/write_large_file.py verify README_chunks/
 ```
 
 ### Quality Gates
 
 - All reassembled documents must pass manifest verification
 - Cross-reference validation across related documents
+- APK must install and run on target Android version
+- No-Gradle build must produce valid, signed APK
+- Python tests pass (pytest/unittest)
+- Type checking passes (mypy/pyright if configured)
+- JS/TS type checking passes
+- Lint passes (eslint)
 - Mathematical consistency checks for synthesis documents
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
-## Three-Pronged Heuristic Integration
-
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Williams Heuristic — Architectural Clarity
@@ -121,7 +143,7 @@ explicit parent-child relationship (CSMApps)
 - **Purpose**: Define *how* the system is built and validated
 - **Method**: Reproducible builds, chapter-based authoring, manifest verification
 - **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
-- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+- **Applied Here**: No-Gradle Android builds (aapt2 → javac → d8 → zipalign → apksigner), SHA256 verification
 
 ### El Segundo Protocol — Operational Excellence
 
@@ -141,32 +163,27 @@ explicit parent-child relationship (CSMApps)
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
-## Roadmap & Future Work
-
 ### Immediate (Next 1-2 Sessions)
 
-- [ ] Complete README generation and validation
-- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create project-specific `AGENTS.md` conventions
 - [ ] Create initial `TODO.md` with milestone breakdown
 - [ ] Set up `memory/` directory for session logging
+- [ ] Complete README generation and validation
 
 ### Short Term (Next 5 Sessions)
 
-- [ ] Migrate any legacy piece-based documents to chunk format
 - [ ] Implement heartbeat monitoring for this project
 - [ ] Create `NEXT_runner_001.md` with first batch assignments
 - [ ] Document project-specific workflows in `AGENTS.md`
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Integrate with parent project (CSMApps) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -180,17 +197,27 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+# No-Gradle Android Build
+./build.sh
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMApps/Bounce`
-- **Chunks**: `./CSMApps/Bounce/README_chunks/`
-- **Manifest**: `./CSMApps/Bounce/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMApps/Bounce/memory/`
-- **Runner Files**: `./CSMApps/Bounce/NEXT_runner_*.md`
+- **Project Root**: `CSMApps/Bounce`
+- **Chunks**: `CSMApps/Bounce/README_chunks/`
+- **Manifest**: `CSMApps/Bounce/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMApps/Bounce/memory/`
+- **Runner Files**: `CSMApps/Bounce/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 4866
+- **File Types**: .class: 2171, .js: 616, .xml: 484, .java: 365, .md: 238, .diff: 231, .zip: 189, .html: 188, .sh: 185, .apk: 92
+- **Languages**: JavaScript/TypeScript: 616, XML: 484, Java: 365, Markdown: 238, HTML: 188, Shell: 185, Python: 1, JSON: 1
+- **Key Directories**: 2
 
 ### Related Projects
 

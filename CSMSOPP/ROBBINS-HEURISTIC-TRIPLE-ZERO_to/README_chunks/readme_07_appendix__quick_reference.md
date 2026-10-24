@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to`
-- **Chunks**: `./CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/README_chunks/`
-- **Manifest**: `./CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/memory/`
-- **Runner Files**: `./CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/NEXT_runner_*.md`
+- **Project Root**: `CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to`
+- **Chunks**: `CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/README_chunks/`
+- **Manifest**: `CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/memory/`
+- **Runner Files**: `CSMSOPP/ROBBINS-HEURISTIC-TRIPLE-ZERO_to/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 6
+- **File Types**: .md: 7
+- **Languages**: Markdown: 7
+- **Key Directories**: 2
 
 ### Related Projects
 

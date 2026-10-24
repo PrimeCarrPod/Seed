@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPublished
 
-## Summary
+### Summary
 
 Synthesis compendiums (20 files)
 

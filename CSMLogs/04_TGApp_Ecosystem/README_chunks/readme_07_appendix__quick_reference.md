@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMLogs/04_TGApp_Ecosystem`
-- **Chunks**: `./CSMLogs/04_TGApp_Ecosystem/README_chunks/`
-- **Manifest**: `./CSMLogs/04_TGApp_Ecosystem/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMLogs/04_TGApp_Ecosystem/memory/`
-- **Runner Files**: `./CSMLogs/04_TGApp_Ecosystem/NEXT_runner_*.md`
+- **Project Root**: `CSMLogs/04_TGApp_Ecosystem`
+- **Chunks**: `CSMLogs/04_TGApp_Ecosystem/README_chunks/`
+- **Manifest**: `CSMLogs/04_TGApp_Ecosystem/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMLogs/04_TGApp_Ecosystem/memory/`
+- **Runner Files**: `CSMLogs/04_TGApp_Ecosystem/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 48
+- **File Types**: .md: 39, .txt: 6, .rtf: 3, .log: 1
+- **Languages**: Markdown: 39
+- **Key Directories**: 0
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 66: Advanced Solar Manufacturing Deployment Act Act (15 files)
 

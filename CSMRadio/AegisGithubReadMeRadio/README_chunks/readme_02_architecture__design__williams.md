@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The AegisGithubReadMeRadio project operates within the **CSMRadio** domain, 
+The **AegisGithubReadMeRadio** project operates within the **CSMRadio** domain, 
 functioning as a **Part of Another Project** with 292 files. 
 It belongs to the CSMRadio ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMRadio ecosystem.
 
 ```
 AegisGithubReadMeRadio
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSM read aloud, radio/
+├── CSM read aloud, radio short/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 Pittsburgh bridge retrofit proposal (5 files)
 

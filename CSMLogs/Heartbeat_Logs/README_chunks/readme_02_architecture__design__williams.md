@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Heartbeat_Logs project operates within the **CSMLogs** domain, 
+The **Heartbeat_Logs** project operates within the **CSMLogs** domain, 
 functioning as a **Part of Another Project** with 2 files. 
 It belongs to the CSMLogs ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMLogs ecosystem.
 
 ```
 Heartbeat_Logs
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 2026-10-14/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

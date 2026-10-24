@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB08 Aegis Home Carrington Storm Safe Cookware \u2014 Project AEGIS Carrington event resilience research (86 files)
 
