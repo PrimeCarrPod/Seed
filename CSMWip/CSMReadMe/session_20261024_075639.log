@@ -1,0 +1,143 @@
+[0;34m[07:56:39][0m ==========================================
+[0;34m[07:56:39][0m CSMReadMe Session Resume — Sat Oct 24 07:56:39 AM UTC 2026
+[0;34m[07:56:39][0m ==========================================
+[0;34m[07:56:39][0m Repo root: /workspace/app
+[0;34m[07:56:39][0m Repo index: /workspace/app/REPO_INDEX_V6.csv
+[0;34m[07:56:39][0m Chunks dir: /workspace/app/CSMWip/CSMReadMe/chunks
+[0;34m[07:56:39][0m Scripts dir: /workspace/app/CSMWip/CSMReadMe/scripts
+[0;34m[07:56:39][0m State file: /workspace/app/CSMWip/CSMReadMe/.session_state.json
+[0;34m[07:56:39][0m Log file: /workspace/app/CSMWip/CSMReadMe/session_20261024_075639.log
+[0;34m[07:56:39][0m Loading project list from REPO_INDEX_V6.csv...
+[0;34m[07:56:39][0m Found 132 TopLevel projects (excluding CSMSOPP/CSMSOPPv2)
+[0;34m[07:56:39][0m   -  and Operational Tools" (TopLevel) README: 847
+[0;34m[07:56:39][0m   -  and the Inbox of the Unknown" (TopLevel) README: 1
+[0;34m[07:56:39][0m   -  artificial hemoglobin ( asteroid Psyche) README:  CarrPod logo
+[0;34m[07:56:39][0m   - BOM-REGISTRY (./CSMFAB/BOM-REGISTRY) README: N
+[0;34m[07:56:39][0m   -  Caldera prime pi electron ( legal enactment) README:  subatomic extensions
+[0;34m[07:56:39][0m   -  Caldera prime pi electron ( synthesis compendiums) README: TopLevel
+[0;34m[07:56:39][0m   - CLOUD-NEST (./CSMFAB/CLOUD-NEST) README: N
+[0;34m[07:56:39][0m   - CSMAegisHome01 M1 Project AEGIS Foundational Research (./CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research) README: Y
+[0;34m[07:56:39][0m   - CSMAegisHome02 M1chrome Stellar-Chrome Dielectric Coating (./CSMFAB/CSMAegisHome02 M1chrome Stellar-Chrome Dielectric Coating) README: N
+[0;34m[07:56:39][0m   - CSMArchive (./CSMArchive) README: N
+[0;34m[07:56:39][0m   - CSM-Brandoutreach (./CSM-Brandoutreach) README: N
+[0;34m[07:56:39][0m   - CSMDropBox (./CSMDropBox) README: N
+[0;34m[07:56:39][0m   - CSMFAB0100 A-10 Civilian Redesign Research  (./CSMFAB/CSMFAB0100 A-10 Civilian Redesign Research ) README: N
+[0;34m[07:56:39][0m   - CSMFAB0101 A-10 Civilian Redesign for Immunity (./CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity) README: N
+[0;34m[07:56:39][0m   - CSMFAB0102 Drone Redesign_ Archimedes Screw Propulsion (./CSMFAB/CSMFAB0102 Drone Redesign_ Archimedes Screw Propulsion) README: N
+[0;34m[07:56:39][0m   - CSMFAB0103 Shipping Container Safe Pod Redesign (./CSMFAB/CSMFAB0103 Shipping Container Safe Pod Redesign) README: N
+[0;34m[07:56:39][0m   - CSMFAB0104 Aegis Fencing for Carrington Event (./CSMFAB/CSMFAB0104 Aegis Fencing for Carrington Event) README: N
+[0;34m[07:56:39][0m   - CSMFAB0105 Aegis Power Line Monopole (./CSMFAB/CSMFAB0105 Aegis Power Line Monopole) README: N
+[0;34m[07:56:39][0m   - CSMFAB0105 Carrington Event Engine Resilience Proposal (./CSMFAB/CSMFAB0105 Carrington Event Engine Resilience Proposal) README: N
+[0;34m[07:56:39][0m   - CSMFAB0106 Aegis GFRP Pipeline System (./CSMFAB/CSMFAB0106 Aegis GFRP Pipeline System) README: N
+[0;34m[07:56:39][0m   - CSMFAB0107 Aegis Geopolymer Concrete (./CSMFAB/CSMFAB0107 Aegis Geopolymer Concrete) README: N
+[0;34m[07:56:39][0m   - CSMFAB0108 Aegis-Forge Thermal Cascade Inductive Material Separator (./CSMFAB/CSMFAB0108 Aegis-Forge Thermal Cascade Inductive Material Separator) README: N
+[0;34m[07:56:39][0m   - CSMFAB0109 Airborne Archimedes Screw Physics (./CSMFAB/CSMFAB0109 Airborne Archimedes Screw Physics) README: N
+[0;34m[07:56:39][0m   - CSMFAB010 Aegis Home_ Conductive-Proof Building Materials (./CSMFAB/CSMFAB010 Aegis Home_ Conductive-Proof Building Materials) README: N
+[0;34m[07:56:39][0m   - CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System (./CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System) README: N
+[0;34m[07:56:39][0m   - CSMFAB0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform (./CSMFAB/CSMFAB0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform) README: N
+[0;34m[07:56:39][0m   - CSMFAB0115 FEATHER LoRa Mesh Network Node (./CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node) README: N
+[0;34m[07:56:39][0m   - CSMFAB0116 Pocket-Watch-X (./CSMFAB/CSMFAB0116 Pocket-Watch-X) README: N
+[0;34m[07:56:39][0m   - CSMFAB0116-Pocket-Watch-X (./CSMFAB/CSMFAB0116-Pocket-Watch-X) README: N
+[0;34m[07:56:39][0m   - CSMFAB011 Aegis Home Carrington Storm Protection Fabrication  (./CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication ) README: N
+[0;34m[07:56:39][0m   - CSMFAB012 Aegis Home_ Conductive-Safe Pipe Design (./CSMFAB/CSMFAB012 Aegis Home_ Conductive-Safe Pipe Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB013 Aegis Home_ Inductive-Proof Wiring Design (./CSMFAB/CSMFAB013 Aegis Home_ Inductive-Proof Wiring Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB014 Aegis Home_ Safe Stove Ventilation Design (./CSMFAB/CSMFAB014 Aegis Home_ Safe Stove Ventilation Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB015 Aegis Home Conductive-Proof Tool Design (./CSMFAB/CSMFAB015 Aegis Home Conductive-Proof Tool Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB016 Aegis Home_ Non-Conductive Door Hardware (./CSMFAB/CSMFAB016 Aegis Home_ Non-Conductive Door Hardware) README: N
+[0;34m[07:56:39][0m   - CSMFAB017 Aegis Home_ Dielectric Rope Fabrication (./CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication) README: N
+[0;34m[07:56:39][0m   - CSMFAB018 Aegis Home Conductive-Proof Spray Cans (./CSMFAB/CSMFAB018 Aegis Home Conductive-Proof Spray Cans) README: N
+[0;34m[07:56:39][0m   - CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal (./CSMFAB/CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal) README: N
+[0;34m[07:56:39][0m   - CSMFAB01 Aegis-C Composite Shielding Design (./CSMFAB/CSMFAB01 Aegis-C Composite Shielding Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB0200 DRONE-X  (./CSMFAB/CSMFAB0200 DRONE-X ) README: N
+[0;34m[07:56:39][0m   - CSMFAB020 Aegis Home_ Non-Conductive Motor Design (./CSMFAB/CSMFAB020 Aegis Home_ Non-Conductive Motor Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB021 Aegis Home EMF Detector Design (./CSMFAB/CSMFAB021 Aegis Home EMF Detector Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB022 Smart Rope Actuator Design Specification (./CSMFAB/CSMFAB022 Smart Rope Actuator Design Specification) README: N
+[0;34m[07:56:39][0m   - CSMFAB024 _Aegis Embark_ Footwear Design Brief (./CSMFAB/CSMFAB024 _Aegis Embark_ Footwear Design Brief) README: N
+[0;34m[07:56:39][0m   - CSMFAB026 Aegis Embark_ Vibration Mitigation Product Design (./CSMFAB/CSMFAB026 Aegis Embark_ Vibration Mitigation Product Design) README: N
+[0;34m[07:56:39][0m   - CSMFAB028 Cloud-Nest Aerogel Child Seat Base  (./CSMFAB/CSMFAB028 Cloud-Nest Aerogel Child Seat Base ) README: N
+[0;34m[07:56:39][0m   - CSMFAB029 Neural-Grip MRE Steering Wheel Wrap (./CSMFAB/CSMFAB029 Neural-Grip MRE Steering Wheel Wrap) README: N
+[0;34m[07:56:39][0m   - CSMFAB02 Aegis Home_ Ceramic Component Fabrication Plan (./CSMFAB/CSMFAB02 Aegis Home_ Ceramic Component Fabrication Plan) README: N
+[0;34m[07:56:39][0m   - CSMFAB030 Cervical-Guard Viscoelastic Headrest  (./CSMFAB/CSMFAB030 Cervical-Guard Viscoelastic Headrest ) README: N
+[0;34m[07:56:39][0m   - CSMFAB031 Mag-Float Diamagnetic Seat Rail  (./CSMFAB/CSMFAB031 Mag-Float Diamagnetic Seat Rail ) README: N
+[0;34m[07:56:39][0m   - CSMFAB032 Silence-Block LRAM Door Insert Set (./CSMFAB/CSMFAB032 Silence-Block LRAM Door Insert Set) README: N
+[0;34m[07:56:39][0m   - CSMFAB033 Thorax-Calm STF Seatbelt Cover Set (./CSMFAB/CSMFAB033 Thorax-Calm STF Seatbelt Cover Set) README: N
+[0;34m[07:56:39][0m   - CSMFAB034 Stellar-Tint EV Window Film (./CSMFAB/CSMFAB034 Stellar-Tint EV Window Film) README: N
+[0;34m[07:56:39][0m   - CSMFAB035 Fluid-Damp Gear Shift Interface (./CSMFAB/CSMFAB035 Fluid-Damp Gear Shift Interface) README: N
+[0;34m[07:56:39][0m   - CSMFAB036 Ulnar-Rest CLD Armrest (./CSMFAB/CSMFAB036 Ulnar-Rest CLD Armrest) README: N
+[0;34m[07:56:39][0m   - CSMFAB037 Pet-Safe Infrasound Cargo Liner (./CSMFAB/CSMFAB037 Pet-Safe Infrasound Cargo Liner) README: N
+[0;34m[07:56:39][0m   - CSMFAB038 Way-Finder Haptic Insoles (./CSMFAB/CSMFAB038 Way-Finder Haptic Insoles) README: N
+[0;34m[07:56:39][0m   - CSMFAB03 Aegis Home Aerogel Thermal Breaks (./CSMFAB/CSMFAB03 Aegis Home Aerogel Thermal Breaks) README: N
+[0;34m[07:56:39][0m   - CSMFAB040 Smart Rope Actuator Design Specification (./CSMFAB/CSMFAB040 Smart Rope Actuator Design Specification) README: N
+[0;34m[07:56:39][0m   - CSMFAB04 Aegis Home Stellar-Chill Refrigerator Design  (./CSMFAB/CSMFAB04 Aegis Home Stellar-Chill Refrigerator Design ) README: N
+[0;34m[07:56:39][0m   - CSMFAB050 Aegis-Ascension Drone Backpack (./CSMFAB/CSMFAB050 Aegis-Ascension Drone Backpack) README: N
+[0;34m[07:56:39][0m   - CSMFAB051 Volt-Link Multi-Charger Coupling Hub (./CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub) README: N
+[0;34m[07:56:39][0m   - CSMFAB052 Volt-Link Pure-CSM Multi-Charger Coupling Hub (./CSMFAB/CSMFAB052 Volt-Link Pure-CSM Multi-Charger Coupling Hub) README: N
+[0;34m[07:56:39][0m   - CSMFAB053-Grid-Seed (./CSMFAB/CSMFAB053-Grid-Seed) README: N
+[0;34m[07:56:39][0m   - CSMFAB054-Dew-Catcher (./CSMFAB/CSMFAB054-Dew-Catcher) README: N
+[0;34m[07:56:39][0m   - CSMFAB055-Cold-Root (./CSMFAB/CSMFAB055-Cold-Root) README: N
+[0;34m[07:56:39][0m   - CSMFAB056-Aegis-Haven (./CSMFAB/CSMFAB056-Aegis-Haven) README: N
+[0;34m[07:56:39][0m   - CSMFAB057-Carr-Library (./CSMFAB/CSMFAB057-Carr-Library) README: N
+[0;34m[07:56:39][0m   - CSMFAB058-N-Node (./CSMFAB/CSMFAB058-N-Node) README: N
+[0;34m[07:56:39][0m   - CSMFAB059-Core-1 (./CSMFAB/CSMFAB059-Core-1) README: N
+[0;34m[07:56:39][0m   - CSMFAB05 Safe-Wave Microwave Carrington Resilience  (./CSMFAB/CSMFAB05 Safe-Wave Microwave Carrington Resilience ) README: N
+[0;34m[07:56:39][0m   - CSMFAB060-Share-Pod (./CSMFAB/CSMFAB060-Share-Pod) README: N
+[0;34m[07:56:39][0m   - CSMFAB061-Earth-Pulse (./CSMFAB/CSMFAB061-Earth-Pulse) README: N
+[0;34m[07:56:39][0m   - CSMFAB062-Grid-Heart (./CSMFAB/CSMFAB062-Grid-Heart) README: N
+[0;34m[07:56:39][0m   - CSMFAB063-CarrSongs (./CSMFAB/CSMFAB063-CarrSongs) README: N
+[0;34m[07:56:39][0m   - CSMFAB064-Carr-Forge (./CSMFAB/CSMFAB064-Carr-Forge) README: N
+[0;34m[07:56:39][0m   - CSMFAB068 Lonsdaleite Outskirt Communities (./CSMFAB/CSMFAB068 Lonsdaleite Outskirt Communities) README: N
+[0;34m[07:56:39][0m   - CSMFAB069-Aegis-Bio-Path (./CSMFAB/CSMFAB069-Aegis-Bio-Path) README: N
+[0;34m[07:56:39][0m   - CSMFAB06 Aegis Home Inflatable Ceramic Water Heater (./CSMFAB/CSMFAB06 Aegis Home Inflatable Ceramic Water Heater) README: N
+[0;34m[07:56:39][0m   - CSMFAB070-Aegis-Bio-Compatible-Implants (./CSMFAB/CSMFAB070-Aegis-Bio-Compatible-Implants) README: N
+[0;34m[07:56:39][0m   - CSMFAB071-Mana-Fire-Veil (./CSMFAB/CSMFAB071-Mana-Fire-Veil) README: N
+[0;34m[07:56:39][0m   - CSMFAB077 (./CSMFAB/CSMFAB077) README: N
+[0;34m[07:56:39][0m   - CSMFAB077-Deep (./CSMFAB/CSMFAB077-Deep) README: N
+[0;34m[07:56:39][0m   - CSMFAB078_AegisIronMan (./CSMFAB/CSMFAB078_AegisIronMan) README: N
+[0;34m[07:56:39][0m   - CSMFAB07 Aegis Home Carrington-Proof Oven Design  (./CSMFAB/CSMFAB07 Aegis Home Carrington-Proof Oven Design ) README: N
+[0;34m[07:56:39][0m   - CSMFAB08 Aegis Home Carrington Storm Safe Cookware (./CSMFAB/CSMFAB08 Aegis Home Carrington Storm Safe Cookware) README: N
+[0;34m[07:56:39][0m   - CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan (./CSMFAB/CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan) README: N
+[0;34m[07:56:39][0m   - CSMFab-Custacean-Class-Vessels (./CSMFAB/CSMFab-Custacean-Class-Vessels) README: N
+[0;34m[07:56:39][0m   - CSMFAB-INCURSION-CLASS (./CSMFAB/CSMFAB-INCURSION-CLASS) README: N
+[0;34m[07:56:39][0m   - CSMFAB Master Cost Analysis and Market Viability Reports (./CSMFAB/CSMFAB Master Cost Analysis and Market Viability Reports) README: N
+[0;34m[07:56:39][0m   - CSMFAB Materials Study 5 Parts  (./CSMFAB/CSMFAB Materials Study 5 Parts ) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P001-Ceramic-Bridge-Bearings-500T (./CSMFAB/CSMFAB-P001-Ceramic-Bridge-Bearings-500T) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P002-CNT-Polymer-Wiring (./CSMFAB/CSMFAB-P002-CNT-Polymer-Wiring) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P003-Transformer-GIC-Blocker (./CSMFAB/CSMFAB-P003-Transformer-GIC-Blocker) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P004-Substation-Ground-Grid (./CSMFAB/CSMFAB-P004-Substation-Ground-Grid) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P005-Railway-Signal-Isolation (./CSMFAB/CSMFAB-P005-Railway-Signal-Isolation) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P006-Phantom-MK1-Robot (./CSMFAB/CSMFAB-P006-Phantom-MK1-Robot) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P007-Faraday-Alarm (./CSMFAB/CSMFAB-P007-Faraday-Alarm) README: N
+[0;34m[07:56:39][0m   - CSMFAB-P008-Pipeline-Isolation-Joint (./CSMFAB/CSMFAB-P008-Pipeline-Isolation-Joint) README: N
+[0;34m[07:56:39][0m   - CSMFAB-TESTA-FLEET (./CSMFAB/CSMFAB-TESTA-FLEET) README: N
+[0;34m[07:56:39][0m   - CSMGen (./CSMGen) README: N
+[0;34m[07:56:39][0m   - CSMGrantCampaigns (./CSMGrantCampaigns) README: N
+[0;34m[07:56:39][0m   - CSMMetal (./CSMMetal) README: Y
+[0;34m[07:56:39][0m   - CSMMinesMagnets (./CSMMinesMagnets) README: N
+[0;34m[07:56:39][0m   - CSMPrePublish (./CSMPrePublish) README: N
+[0;34m[07:56:39][0m   - CSMPro (./CSMPro) README: Y
+[0;34m[07:56:39][0m   - CSMProtonics (./CSMProtonics) README: Y
+[0;34m[07:56:39][0m   - CSM_WORK_IN_PROGRESS (./CSM_WORK_IN_PROGRESS) README: N
+[0;34m[07:56:39][0m   - DRONE-X (./CSMFAB/DRONE-X) README: N
+[0;34m[07:56:39][0m   -  email correspondence ( evaluations) README:  Tesla
+[0;34m[07:56:39][0m   - FLUID-DAMP (./CSMFAB/FLUID-DAMP) README: N
+[0;34m[07:56:39][0m   -  gradle-cache)" (TopLevel) README: 22
+[0;34m[07:56:39][0m   - landing-page (./landing-page) README: Y
+[0;34m[07:56:39][0m   -  landolil engine ( organized library) README:  TardigradiaTGPU"
+[0;34m[07:56:39][0m   -  landolil ( Marmalade) README: TopLevel
+[0;34m[07:56:39][0m   -  nuclear energy ( clean manufacturing) README:  carbon removal
+[0;34m[07:56:39][0m   - PrimeBookOne (./PrimeBookOne) README: N
+[0;34m[07:56:39][0m   - PROTONIC-HFET (./CSMFAB/PROTONIC-HFET) README: N
+[0;34m[07:56:39][0m   - __PUBLISH_CSM__ (./__PUBLISH_CSM__) README: N
+[0;34m[07:56:39][0m   - __Python_Tools (./__Python_Tools) README: N
+[0;34m[07:56:39][0m   -  radio generator scripts ( radio preparation) README: CSMRadio
+[0;34m[07:56:39][0m   - RESTART_PACKAGE (./RESTART_PACKAGE) README: Y
+[0;34m[07:56:39][0m   -  scene details ( and resume/portfolio assets") README: ./CSMCinema
+[0;34m[07:56:39][0m   - scripts (./scripts) README: N
+[0;34m[07:56:39][0m   -  smart materials ( home hardening) README: CSMFAB
+[0;34m[07:56:39][0m   - STELLAR-TINT (./CSMFAB/STELLAR-TINT) README: N
+[0;34m[07:56:39][0m   - TardigradiaTGPU (./TardigradiaTGPU) README: N
+[0;34m[07:56:39][0m   -  TGApp ecosystem ( Land of Lil) README: TopLevel
+[0;34m[07:56:39][0m   - TopLevel (CSMWipScripts) README: N
+[0;34m[07:56:39][0m   - ULNAR-REST (./CSMFAB/ULNAR-REST) README: N
+[0;34m[07:56:39][0m   -  ultrasonic vibrometry ( and neurological impacts") README: ./CSMHuman
+[0;34m[07:56:39][0m   -  YInMn blue crystal field ( perovskite quantum dots) README:  dielectric interfaces
