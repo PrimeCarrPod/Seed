@@ -35,11 +35,24 @@
 | **CSMMagTech2026 V2.0** | `CSMPro/CSMMag/CSMMagTech 2026 Rare-Earth-Free Magnet Research/` | **Fe₁₆N₂ 27 MGOe, MnBi 14 MGOe, AlNiCo 10.5 MGOe, Fe-Sn 12 MGOe, MXene-NdFeB +12% Hci, EU CRMA 2024, CSM portfolio** |
 | Aegis-Forge Separator | `CSMFAB/CSMFAB0108/` (referenced) | Thermal cascade inductive separation, 17-stage, zero liquid waste |
 
-### What's Next (Runner 004)
+### DOC-08 Research Complete (All 8 Research Areas)
+
+| Research Area | Status | Key Sources |
+|---------------|--------|-------------|
+| 1. Chilean Port Infrastructure (5 major ports) | ✅ Complete | EMPORCHA, Puerto Mejillones, San Antonio, Coronel, Punta Arenas, EMPORCHI privatization |
+| 2. Rail Corridors (FCAB, Ferronor, EFE, Bioceánico) | ✅ Complete | FCAB gauge/capacity, Ferronor north-south, EFE integration, Bioceánico corridor |
+| 3. Magnet Shipping (IMDG Class 9, IATA DGR 9.3, MIL-STD-1540) | ✅ Complete | UN 2807/3508, shielding <5.25mT, ASTM D4169, temp -40°C to +80°C |
+| 4. Customs & Trade (CPTPP Art 14, Chile-US FTA, Chile-EU AFA, APEC) | ✅ Complete | Paperless customs, single window (SICEX), rules of origin, strategic raw materials MoU |
+| 5. Logistics Cost Model (Ocean, Rail, Warehousing, Insurance) | ✅ Complete | $/ton-km rates 2024-25, FCAB/Ferronor tariffs, ZOFRI/Punta Arenas bonded, war risk clauses |
+| 6. Supply Chain Resilience (Alt routes, Red Sea, Strikes, Climate) | ✅ Complete | Pacific/Atlantic/Magellan/Panama, Red Sea contingencies, 2019/2022/2024 strikes, tsunami/Atacama |
+| 7. CSM Delivery Requirements (JIT, QC, DFARS 252.225-7018) | ✅ Complete | Mine→port→factory chain, DFARS 2027 deadline, SmCo/NdFeB/FeN/FeCo specs |
+| 8. Port Community Integration (Employment, Environment, Indigenous) | ✅ Complete | Aegis-Forge modular, zero aqueous discharge, FBC/CDC trusts, Kawashkar/Yámana/Chango |
+
+### What's Next (Runner 004/005)
 
 #### Document Authoring (Priority Order)
-1. **DOC-07**: Chilean Regulatory Navigation — Mining Code, Environmental, Indigenous Law
-2. **DOC-08**: Port & Logistics Corridors — Antofagasta to Punta Arenas Magnetic Flow
+1. **DOC-07**: Chilean Regulatory Navigation — Mining Code, Environmental, Indigenous Law ✅ COMPLETE
+2. **DOC-08**: Port & Logistics Corridors — Antofagasta to Punta Arenas Magnetic Flow 🔄 RESEARCH COMPLETE — Ready for Authoring
 
 #### Infrastructure Status
 - ✅ chunks/DOC-01/ through chunks/DOC-06/ (all 9 chapters + manifest each)
@@ -62,7 +75,7 @@ The `startup.sh` handles:
 - Relative directory change: `CSMWip/CSMMinesMagnets` (NOT `/workspace/app/`)
 - Tool verification: `../../__Python_Tools/write_large_file.py`
 - Heartbeat monitor start: `python3 scripts/heartbeat_monitor.py --interval 120 --project-root . &`
-- Context display: `RESUME_SESSION_MAGNETS.md` and `NEXT_runner_004.md`
+- Context display: `RESUME_SESSION_MAGNETS.md` and `NEXT_runner_005.md`
 
 ### Document Dependencies for DOC-07
 - **Mining Code (Código de Minería)** — Concessions, exploration/exploitation, registration
