@@ -12,6 +12,7 @@ from pathlib import Path
 class TaskTimer:
     def __init__(self, limit=30, project_root=None):
         self.limit = limit
+        # Default to current working directory (set by startup.sh)
         self.project_root = Path(project_root) if project_root else Path.cwd()
         self.start_time = None
         self.task_name = None
