@@ -1,0 +1,58 @@
+{
+  "chapter_01_intro.md": {
+    "size": 39,
+    "sha256": "4632977e41c3c17722e5f09109ada4dcec4f02fbee64a863b26140c0a7ba338e"
+  },
+  "chapter_02_aegisoutfitfabricator_core_doc.md": {
+    "size": 41,
+    "sha256": "6abff8f1e734a35ab670c526a98c8c1e667039dddd27f27e9ca0baaca845b82f"
+  },
+  "chapter_03_1_introduction_and_scope.md": {
+    "size": 585,
+    "sha256": "37eeb5a0f8372ef5f3bf7dab7a5bce8a2a505915f0bb2156921f2882e6611c8e"
+  },
+  "chapter_04_2_layer_architecture_overview.md": {
+    "size": 2512,
+    "sha256": "149d80bdd7eab832c3e2f9231adf5aadabe3b9d7847f978aa0064317d58c902f"
+  },
+  "chapter_05_3_ceramic_tile_system_layers_2.md": {
+    "size": 2006,
+    "sha256": "6568e6d537bcb2b340c42f6a0042109ea8f84e568172d342ba7df25c76d36d55"
+  },
+  "chapter_06_4_emi_shielding_system_layers_.md": {
+    "size": 2131,
+    "sha256": "b2ce718a9079b0d03c66e61fd3c42823c6c6655a5725c7a12dc2e1a708866917"
+  },
+  "chapter_07_5_thermal_insulation_system_la.md": {
+    "size": 1575,
+    "sha256": "cac7baa3a6b822a7ee2ded72ee1d971d273feb0f63196367df03391349f0eefb"
+  },
+  "chapter_08_6_impact_protection_system_lay.md": {
+    "size": 1830,
+    "sha256": "11705bb50282690e1071d9c78dbda637555942f01746a3bea3e247ea63be83f4"
+  },
+  "chapter_09_7_structural_framework_layer_1.md": {
+    "size": 2247,
+    "sha256": "464c1e31d4038922cd8d3ed0763d3a6c456b5c3fc41c864dd82fcf6ec7b1f932"
+  },
+  "chapter_10_8_bio-acoustic__schumann_syste.md": {
+    "size": 2473,
+    "sha256": "41800e520f516d6ce785b174df1a78a0b9f61108fa3a13d55a3296da1b142da5"
+  },
+  "chapter_11_9_edition-specific_architectur.md": {
+    "size": 1100,
+    "sha256": "6c34cb97d7ed5dbb8d42df89007ac13b08f40f7ee0dfa4233204f9bcd70387f6"
+  },
+  "chapter_12_10_weight_budget.md": {
+    "size": 733,
+    "sha256": "bd156f80a6cbf7abb5c535fa700ac7d3ee93512d9c62e2cbc927756fbe679323"
+  },
+  "chapter_13_11_traceability_matrix__doc-06.md": {
+    "size": 1804,
+    "sha256": "3a79bc876f252e90f711cc45569af92cd267eb3c132fbc22a2f46d00c7abf411"
+  },
+  "chapter_14_12_conformance_check.md": {
+    "size": 362,
+    "sha256": "9d6a852d8bc75e77ad9fcfd3a3d87bac896370390c11953b6ef0e99edafd199b"
+  }
+}
