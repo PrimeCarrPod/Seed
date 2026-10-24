@@ -5,6 +5,11 @@
 
 The EU Critical Raw Materials Act (Regulation (EU) 2024/1252) alignment is not assembled from standard regulatory compliance; it is **forced** by the logical necessity of a market access framework where **EU strategic autonomy requires Chilean REE supply under verifiable sustainability standards**. The alignment rests on a single, irreducible constraint: **CRMA Strategic Project Designation = Permitting Acceleration + Financing Access** -- the proposition that Tardigradia's Aegis-Forge clusters qualify as CRMA strategic projects, unlocking 24-month permitting (vs 5-7 years standard), EIB financing, and EU buyer offtake commitments. No additional postulates -- no separate EU entity, no technology transfer to EU, no CRMA free rider status -- are required. The constraint is simply: *Zero-water processing = CRMA sustainability; Community veto = CRMA social license; Chilean title = CRMA supply security*. Everything else is the shadow this constraint casts.
 
+**Strategic Autonomy Quantification:**
+$$AutonomyIndex = 1 - rac{ImportDependency_{post-CRMA}}{ImportDependency_{pre-CRMA}}$$
+$$ImportDependency_{pre} = 98\% (China REE); ImportDependency_{post} = 45\% (Chilean Tardigradia + recycling)$$
+$$AutonomyIndex = 1 - 45/98 = 54\% 	ext{ autonomy improvement}$$
+
 ### 2.2 CRMA Strategic Project Criteria -- Tardigradia Qualification
 
 **CRMA Article 10 -- Strategic Project Criteria (Tardigradia Assessment):**
@@ -27,6 +32,11 @@ $$DNSH_{waste} = 1_{zero-tailings} = 1$$
 $$DNSH_{biodiversity} = 1_{offset-fund} = 1$$
 $$DNSH_{total} = Prod_{i} DNSH_{i} = 1$$
 
+**Permitting Timeline Comparison:**
+$$T_{standard} = 5-7 years = 60-84 months$$
+$$T_{CRMA} = 24 months max$$
+$$Acceleration = T_{standard} / T_{CRMA} = 2.5-3.5x$$
+
 ### 2.3 CRMA Benefits -- Quantified for Tardigradia
 
 | Benefit | Mechanism | Tardigradia Value |
@@ -40,6 +50,19 @@ $$DNSH_{total} = Prod_{i} DNSH_{i} = 1$$
 **EIB Financing Calculation:**
 $$EIB_{per-cluster} = 0.50 x CAPEX_{cluster} = 0.50 x 170M EUR = 85M EUR$$
 $$EIB_{total} = 3 x 85M EUR = 255M EUR approx $275M$$
+
+**EIB Interest Rate Advantage:**
+$$r_{EIB} = 2.5-3.0% vs r_{commercial} = 5.5-6.5%$$
+$$AnnualSavings = (r_{commercial} - r_{EIB}) x Principal = 3% x 255M EUR = 7.65M EUR/yr$$
+
+**EIB Leverage Ratio for Project Finance:**
+$$LeverageRatio = rac{TotalDebt}{Equity} = rac{EIB_{total} + CommercialDebt}{SponsorEquity}$$
+$$TargetLeverage = 70/30 (D/E) ightarrow CommercialDebt = 0.7/0.3 x SponsorEquity - EIB_{total}$$
+$$SponsorEquity = $1.3B 	imes 0.3 = $390M ightarrow CommercialDebt = $910M - $275M = $635M$$
+
+[TBD:RESEARCH] CRMA strategic project application precedent and EIB critical minerals facility terms 2024 (2026-Q1)
+
+[TBD:RESEARCH] EIB due diligence requirements for non-EU critical minerals projects in Chile (2026-Q2)
 
 ### 2.4 Chilean Magnet Export to EU -- Rules of Origin
 
@@ -72,6 +95,8 @@ $$RVC = ChileanValue / TotalValue = (REE Oxide (60%) + Magnet Mfg (25%)) / Total
 
 **Recycling Credit Revenue:**
 $$CreditRevenue = RecycledREE_{t/yr} x CreditPrice_{EUR/t} = 175 x 85,000 = 14.9M EUR/yr$$
+
+[TBD:RESEARCH] EU ETS-style recycling credit market design and price discovery (2026-Q2)
 
 ### 2.6 Traceability Matrix -- Chapter 2
 

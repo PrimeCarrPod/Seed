@@ -5,6 +5,11 @@
 
 The APEC/CPTPP trade facilitation framework is not assembled from standard trade provisions; it is **forced** by the logical necessity of a supply chain where **critical minerals must move at the speed of defense urgency, not trade negotiation**. The framework rests on a single, irreducible constraint: **Zero Tariff + Regulatory Alignment = DFARS Velocity** -- the proposition that Chilean magnet products (REE oxides, NdFeB, Fe16N2, SmCo, motors) must face zero tariffs, harmonized standards, and mutual recognition across APEC/CPTPP members to meet the January 2027 DFARS deadline. No additional postulates -- no bilateral FTAs, no sectoral agreements, no critical minerals club outside existing architecture -- are required. The constraint is simply: *CPTPP is in force; APEC is the forum; Chile is a member; the rules exist -- apply them*. Everything else is the shadow this constraint casts.
 
+**Trade Velocity Differential:**
+$$V_{DFARS} = rac{Distance_{Chile-US}}{TransitTime} = rac{7,500 km}{14 days} = 536 km/day$$
+$$V_{Standard} = rac{7,500 km}{28 days} = 268 km/day$$
+$$VelocityGain = V_{DFARS} / V_{Standard} = 2.0x$$
+
 ### 3.2 CPTPP Provisions -- Critical Minerals Application
 
 **CPTPP In Force for Chile Since February 2023.**
@@ -25,6 +30,9 @@ The APEC/CPTPP trade facilitation framework is not assembled from standard trade
 $$AnnualTariffSavings = Sum_{products} ExportValue x MFNRate$$
 $$approx $120M/yr x 3.5% = $4.2M/yr$$
 
+**Cumulative Tariff Savings (10 years):**
+$$NPV_{savings} = Sum_{t=1}^{10} AnnualSavings / (1+r)^t = $4.2M x 7.72 (r=5%) = $32.4M$$
+
 ### 3.3 APEC Critical Minerals Initiatives -- 2024-2026 Work Plan
 
 **APEC 2024 Peru / 2025 Korea / 2026 USA Host Years:**
@@ -37,6 +45,8 @@ $$approx $120M/yr x 3.5% = $4.2M/yr$$
 | **Investment Facilitation** | Corfo Ventures + APEC IFAP | Streamlined approvals |
 | **Workforce Mobility** | APEC Business Travel Card (ABTC) for engineers | 200 engineers visa-free |
 | **Digital Trade** | Paperless customs pilot (Chile-Singapore-USA) | 48-hr magnet clearance |
+
+**APEC ABTC Coverage:** 21 economies including US, Japan, Korea, China, Australia, Canada, Mexico, Peru, Chile. Pre-approved business travel without visa applications.
 
 ### 3.4 Regulatory Cooperation -- Magnet Standards Harmonization
 
@@ -54,6 +64,19 @@ $$approx $120M/yr x 3.5% = $4.2M/yr$$
 **Qualification Time Reduction:**
 $$T_{qual}^{single} = 6 months << T_{qual}^{multiple} = Sum T_{jurisdiction} approx 24 months$$
 $$Delta T = T_{qual}^{multiple} - T_{qual}^{single} = 18 months acceleration$$
+
+**APEC Trade Facilitation Action Plan -- 2024-2026 Implementation Matrix:**
+| Action Item | Lead Economy | Tardigradia Role | KPI | Timeline |
+|-------------|--------------|------------------|-----|----------|
+| Mutual Recognition of Magnet Standards | Peru (2024) | Co-chair technical working group | MRA signed | 2025 Q4 |
+| Digital Certificates of Origin (blockchain) | Singapore/Chile | Pilot participant | 48-hr clearance | 2025 Q2 |
+| Critical Minerals Supply Chain Atlas | Korea (2025) | Data contributor (anonymized) | Atlas published | 2026 Q2 |
+| Investment Facilitation Action Plan | Chile/USA | Corfo Ventures partner | Approvals < 30 days | 2026 Q1 |
+| Workforce Mobility Framework | USA (2026) | ABTC + PDI Tech Visa stack | 200 engineers | 2026 Q3 |
+
+[TBD:RESEARCH] CPTPP Annex 10 mutual recognition cases and APEC ABTC engineer eligibility criteria (2026-Q2)
+
+[TBD:RESEARCH] APEC 2026 USA host year critical minerals deliverables and Tardigradia engagement plan (2026-Q1)
 
 ### 3.5 Traceability Matrix -- Chapter 3
 

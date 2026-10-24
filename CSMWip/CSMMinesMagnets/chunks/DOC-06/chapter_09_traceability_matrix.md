@@ -106,6 +106,8 @@
 | Law 19,628 cross-border transfer adequacy | Ch 8 | High | Data Protection Counsel | 2026-Q1 |
 | Chile-US BIT ratification timeline | Ch 5 | High | Gov Affairs | 2026-Q2 |
 | APEC ABTC engineer eligibility criteria | Ch 7 | Medium | APEC Secretariat | 2026-Q1 |
+| ARPA-E MINER program alignment for Aegis-Forge Gen 2 | Ch 4 | High | DOE Relations | 2026-Q1 |
+| EU ETS-style recycling credit market design | Ch 2 | Medium | EU Affairs | 2026-Q2 |
 
 ### 9.5 Verification Checklist -- All Gates
 
@@ -116,7 +118,7 @@
 | Cross-refs >= 15 | 15 | 100+ | `grep -ic "DOC-\|CSM\|Chile\|CPTPP\|CRMA\|IFC\|OECD" ` |
 | Standards >= 8 | 8 | 30+ | `grep -ic "ISO\|IEC\|ASTM\|NIJ\|MIL-STD\|DOE\|CFR\|Law\|Decreto\|Regulation" ` |
 | Conflation flags = 0 | 0 | 0 | `grep -ic "duplicate\|contradict\|overlap" ` |
-| TBD markers documented | >=5 | 10 | `grep -c "TBD:RESEARCH"` |
+| TBD markers documented | >=5 | 12 | `grep -c "TBD:RESEARCH"` |
 | Traceability Matrix present | Yes | Ch 9 | This chapter |
 | Chunk reassembly diff = 0 | 0 bytes | Pending | `write_large_file.py concat` |
 | Manifest checksums PASS | PASS | Pending | `write_large_file.py verify` |

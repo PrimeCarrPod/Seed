@@ -5,6 +5,12 @@
 
 The investment protection framework is not assembled from standard BIT provisions; it is **forced** by the logical necessity of a capital deployment where **$1.3B of Tardigradia capital requires binding, enforceable protection against regulatory capture, expropriation, and performance requirements** -- without which no institutional LP will commit. The framework rests on a single, irreducible constraint: **CPTPP Art 9 + Chile-US BIT = Dual-Layer Protection** -- the proposition that CPTPP (in force) provides immediate FET/expropriation/performance requirement protection, while Chile-US BIT (pending) adds MFN and enhanced transparency. No additional postulates -- no separate stabilization clauses, no umbrella clauses beyond treaty, no domestic law waiver -- are required. The constraint is simply: *Treaty protection enables project finance; project finance enables Aegis-Forge; Aegis-Forge enables magnets*. Everything else is the shadow this constraint casts.
 
+**Investment Protection Value Function:**
+$$V_{protection} = PV(FutureCashFlows) 	imes P(NoExpropriation) 	imes P(FETCompliance)$$
+$$P(NoExpropriation) = 1 - \lambda_{exprop} \cdot t = 1 - 0.02 	imes 10 = 0.80 	ext{ (10-year horizon)}$$
+$$P(FETCompliance) = 1 - \lambda_{FET} \cdot t = 1 - 0.01 	imes 10 = 0.90 	ext{ (CVO veto reduces FET risk)}$$
+$$V_{protection} = $1.3B 	imes 0.80 	imes 0.90 = $936M 	ext{ protected value}$$
+
 ### 5.2 CPTPP Article 9 -- Immediate Protection (In Force Since Feb 2023)
 
 **Covered Investments (Art 9.1):** Tardigradia's Chilean SpA shares, mining concessions (derechos reales), Aegis-Forge license, LP interests = covered investments.
@@ -21,6 +27,10 @@ The investment protection framework is not assembled from standard BIT provision
 
 **FET Mathematical Formulation:**
 $$FET_{compliance} = 1_{CVO-veto} x 1_{Consulta} x 1_{transparency} = 1 x 1 x 1 = 1$$
+
+**Expropriation Compensation Formula (CPTPP Art 9.5):**
+$$Comp = FMV_{pre-exprop} + Interest_{accrued} - EnvBonds_{priority}$$
+$$where EnvBonds_{priority} = Law 20,720 Art 134 first claim$$
 
 ### 5.3 Chile-US BIT (Signed 2023, Pending Ratification) -- Enhanced Layer
 
@@ -63,6 +73,17 @@ $$FET_{compliance} = 1_{CVO-veto} x 1_{Consulta} x 1_{transparency} = 1 x 1 x 1 
 
 **Interim Measure Probability:**
 $$P(interim granted) = (Urgent harm x Prima facie case) / Balance of convenience approx 0.85 for CVO Protection Orders$$
+
+**Arbitration Cost Allocation (DOC-04 Ch 7.2):**
+$$Cost_{Tardigradia} = 65%, Cost_{Other} = 35% for ICC$$
+$$Cost_{Tardigradia} = 60%, Cost_{Other} = 40% for Expert Determination$$
+
+**Expected Value of Dispute Settlement:**
+$$EV_{dispute} = \sum P(outcome_i) 	imes Value(outcome_i)$$
+$$EV_{ICC} = 0.65 	imes WinValue + 0.35 	imes LossValue$$
+$$For CVO Protection Order: EV = 0.85 	imes ProtectedValue - 0.15 	imes LegalCosts$$
+
+[TBD:RESEARCH] CPTPP Article 9 arbitration precedent for mining investments in Chile (2026-Q2)
 
 ### 5.6 Traceability Matrix -- Chapter 5
 

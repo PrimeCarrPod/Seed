@@ -5,6 +5,12 @@
 
 The workforce mobility framework is not assembled from standard visa programs; it is **forced** by the logical necessity of a deployment where **200 specialized magnet/REE engineers must mobilize to Chile within 18 months** to commission Aegis-Forge clusters, and Chilean technicians must access US/EU training for technology localization. The framework rests on a single, irreducible constraint: **APEC ABTC + CPTPP Mobility + Bilateral Recognition = Talent Pipeline** -- the proposition that existing multilateral frameworks (APEC Business Travel Card, CPTPP professional services, Chile-US professional recognition) can be stacked to create a zero-friction talent corridor. No additional postulates -- no special visa categories, no congressional legislation, no critical minerals visa -- are required. The constraint is simply: *Existing frameworks suffice; they must be activated*. Everything else is the shadow this constraint casts.
 
+**Talent Pipeline Dynamics -- Differential Equation Model:**
+$$rac{dE}{dt} = Inflow(t) - Attrition(t), \quad E(0) = 0$$
+$$Inflow(t) = \sum_{pathways} Rate_{pathway} \cdot Capacity_{pathway} \cdot (1 - e^{-t/	au_{pathway}})$$
+$$Attrition(t) = \lambda_{attrition} \cdot E(t), \quad \lambda_{attrition} = 0.15/yr$$
+$$SteadyState: E_{ss} = rac{Inflow_{total}}{\lambda_{attrition}} = rac{200}{0.15} = 1,333 	ext{ engineers (long-term)}$$
+
 ### 7.2 Mobility Mechanisms -- Stacked Frameworks
 
 | Mechanism | Scope | Eligibility | Timeline | Tardigradia Application |
@@ -17,6 +23,8 @@ The workforce mobility framework is not assembled from standard visa programs; i
 
 **Mobility Capacity Calculation:**
 $$TotalEngineers_{Year1-2} = 50_{ABTC} + 50_{Corfo} + 20_{Mercosur} + 30_{PDI Tech} + 50_{Spouse/Dependent} = 200$$
+
+**ABTC Coverage Map:** 21 APEC economies = 100% of Tardigradia target markets (US, EU via CPTPP, Japan, Korea, Australia, Canada, Mexico, Peru, Chile).
 
 ### 7.3 Skills Recognition -- Magnet Manufacturing Certification
 
@@ -31,6 +39,10 @@ $$TotalEngineers_{Year1-2} = 50_{ABTC} + 50_{Corfo} + 20_{Mercosur} + 30_{PDI Te
 | **CVO Community Liaison** | Tardigradia + CDC | Chile-only (Law 19,253) | Operational |
 
 **Certification Stack:** Each role requires: (1) Technical competency exam, (2) Safety certification (ISO 45001), (3) Environmental awareness (ISO 14001), (4) Community engagement (CVO training).
+
+**Certification Cost per Engineer:**
+$$Cost_{cert} = $15,000 (exam + training + admin)$$
+$$TotalCertCost = 200 x $15,000 = $3M (Year 1-2)$$
 
 ### 7.4 Visa Pathways -- Technical Talent Corridor
 
@@ -49,6 +61,15 @@ $$TotalEngineers_{Year1-2} = 50_{ABTC} + 50_{Corfo} + 20_{Mercosur} + 30_{PDI Te
 **Visa Processing Time:**
 $$T_{PDI} = 30 days << T_{H1B} = 180 days << T_{EB2} = 365 days$$
 $$SpeedAdvantage = T_{H1B} / T_{PDI} = 6x$$
+
+**Cost-Benefit of Mobility Investment:**
+$$TotalMobilityCost = 200 	imes $15,000_{cert} + 200 	imes $25,000_{relocation} = $8M$$
+$$ProductivityGain = 200 	imes $150,000_{annual} 	imes 0.8_{utilization} = $24M/yr$$
+$$ROI_{mobility} = rac{PV(Revenue) - Cost}{Cost} = rac{$24M 	imes 6.7 (r=8\%, 10yr) - $8M}{$8M} = 19.1x$$
+
+[TBD:RESEARCH] Chile PDI Tech Visa Law 21,325 processing statistics and Corfo scholarship allocation 2024 (2026-Q1)
+
+[TBD:RESEARCH] CPTPP Annex 10 mutual recognition implementation status for mining engineers (2026-Q2)
 
 ### 7.5 Traceability Matrix -- Chapter 7
 

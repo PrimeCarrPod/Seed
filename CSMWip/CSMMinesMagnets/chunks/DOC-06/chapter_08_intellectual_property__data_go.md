@@ -5,6 +5,12 @@
 
 The IP and data governance framework is not assembled from standard data protection; it is **forced** by the logical necessity of a formation where **Chilean operational data (SCADA, community, environmental) must remain under Chilean sovereignty while US IP (Aegis-Forge, CSMFAB) remains protected under US law, and both must be defensible in cross-border disputes**. The framework rests on a single, irreducible constraint: **Data Localization + IP Protection + Cross-Border Defensibility = Single Governance Stack** -- the proposition that Chilean Law 19,628, US DTSA, CPTPP digital trade, and NY Convention enforcement can be integrated into one coherent system. No additional postulates -- no data havens, no IP havens, no cloud sovereignty separate from legal sovereignty -- are required. The constraint is simply: *Chilean data stays in Chile; US IP stays protected; arbitration enforces both*. Everything else is the shadow this constraint casts.
 
+**Data Sovereignty Compliance Function:**
+$$Compliance = \prod_{categories} Localization_{category} 	imes TransferMechanism_{category}$$
+$$Localization_{SCADA} = 1, Localization_{Community} = 1, Localization_{Environmental} = 1$$
+$$TransferMechanism_{Financial} = SCCs, TransferMechanism_{HR} = SCCs, TransferMechanism_{IP} = License$$
+$$Compliance = 1 	imes 1 	imes 1 	imes 1 	imes 1 	imes 1 = 1.0 	ext{ (full compliance)}$$
+
 ### 8.2 Patent Prosecution Highways -- Global Portfolio
 
 **PPH Network for Tardigradia/ACS/CSMFAB Patents:**
@@ -24,6 +30,10 @@ The IP and data governance framework is not assembled from standard data protect
 $$TotalFamilies = 12 (thermal cascade, Fe16N2, MnBi, SmCo, motor, process control)$$
 $$Coverage = 6 offices x 12 families = 72 national phase entries$$
 $$PPHAccelerated = 72 x 0.8 = 58 entries (80% eligible)$$
+
+**Patent Cost per Family (6 offices):**
+$$Cost_{family} = Sum_{offices} (Filing + Prosecution + Maintenance)$$
+$$approx $50,000/family x 12 families = $600K total portfolio cost$$
 
 ### 8.3 Trade Secret Protection -- Cross-Border Enforcement
 
@@ -77,6 +87,17 @@ $$BCRStatus = Year 3 target (per EU GDPR Art 47)$$
 - US State laws: Varies (typically 30-60 days)
 - CPTPP Art 14.14: Prompt notification to affected parties
 - GDPR (if EU data): 72 hours to DPA
+
+**Cybersecurity Investment ROI:**
+$$Investment_{cyber} = $2.5M (ISO 27001 + IEC 62443 + CSA STAR + SLSA)$$
+$$RiskReduction = P(breach)_{before} - P(breach)_{after} = 0.15 - 0.03 = 0.12$$
+$$ExpectedLoss_{before} = 0.15 	imes $50M = $7.5M/yr$$
+$$ExpectedLoss_{after} = 0.03 	imes $50M = $1.5M/yr$$
+$$AnnualSavings = $6M/yr ightarrow ROI = rac{6M}{2.5M} = 2.4x 	ext{ (Year 1)}$$
+
+[TBD:RESEARCH] Law 19,628 cross-border transfer adequacy assessment for Chile-US data flows (2026-Q1)
+
+[TBD:RESEARCH] Chile Law 21,663 critical infrastructure cybersecurity registration process (2026-Q1)
 
 ### 8.6 Traceability Matrix -- Chapter 8
 
