@@ -65,7 +65,7 @@
 - [x] 1.2.15 Log completion to memory/ + git commit
 
 #### 1.3 DOC-03: Mutual Benefit Frameworks — Value Return (15 tasks)
-- [ ] 1.3.1 Analyze Chilean royalty regime: Royalty minera (Law 21,210), ad valorem vs. operating margin
+- [x] 1.3.1 Analyze Chilean royalty regime: Royalty minera (Law 21,210), ad valorem vs. operating margin
 - [ ] 1.3.2 Document community agreement models: Codelco-Andacollo, Antofagasta Minerals models
 - [ ] 1.3.3 Design value-return mechanisms: Equity participation, technology transfer, local processing
 - [ ] 1.3.4 Map workforce development: Apprenticeships, certifications, magnet manufacturing skills
