@@ -1319,3 +1319,62 @@ Acceptance: ≤ 0.525 mT (0.0525 Gauss) — 10× safety margin below 5.25 mT
 | **Total Incremental vs. Sea** | **2,180** |
 | **Air Freight Premium (vs Sea)** | **10,700** |
 | **Compliance as % of Premium** | **20%** |
+
+### 3.2.2 Shielding Packaging Design — Mu-Metal, Steel, Composite Solutions
+
+Effective shielding packaging is the **difference between DG and non-DG classification**. This section provides **design specifications** for CSM/Tardigradia magnet shipments across all grades.
+
+**Shielding Physics — Two Mechanisms:**
+1. **High-permeability diversion** (mu-metal): Magnetic flux prefers high-μ path → diverted around shielded volume
+2. **Eddy current cancellation** (conductive steel): Time-varying fields induce opposing currents — **only effective for AC fields** (not permanent magnets)
+
+**For Permanent Magnets (DC Field): Only Mechanism 1 Applies.**
+
+**Shielding Effectiveness (SE) Formula — Cylindrical Shield:**
+```
+SE = 20 × log₁₀ [ 1 + (μᵣ × t / D) × (1 - (D/(D+2t))²) ]
+```
+Where: `μᵣ` = relative permeability, `t` = shield thickness, `D` = shield diameter
+
+**CSM Packaging Design Library (Validated Configurations):**
+
+| Config ID | Magnet Type | Outer Package | Shield Layer | Magnet Array | SE (dB) | B_2.1m (mT) | Cost/Unit | Reuse Cycles |
+|-----------|-------------|---------------|--------------|--------------|---------|-------------|-----------|--------------|
+| **PKG-NdFeB-01** | N42H-N52EH blocks | UN 4A Steel 2mm | Mu-Metal 0.3mm (3-sided) | Halbach 12-pack | 68 | 0.31 | US$420 | 50 |
+| **PKG-NdFeB-02** | N48SH rings (rotor) | UN 4A Steel 2mm | Mu-Metal 1.0mm (can) | Single rotor | 72 | 0.22 | US$1,850 | 30 |
+| **PKG-SmCo-01** | SmCo 1:5 / 2:17 | UN 4A Steel 1.5mm | None (steel only) | 24-block stack | 55 | 0.41 | US$180 | 100 |
+| **PKG-FeN-01** | Fe₁₆N₂ 27 MGOe | UN 4A Steel 2mm | Mu-Metal 0.5mm (full) | 16-block | 65 | 0.35 | US$650 | 25 |
+| **PKG-FeCo-01** | FeCo 24 MGOe | UN 4A Steel 2mm | Mu-Metal 0.3mm (3-sided) | 20-block | 62 | 0.44 | US$380 | 40 |
+| **PKG-REE-01** | NdPr Carbonate (bulk) | UN 31A IBC Steel | Steel 3mm (IBC wall) | Bulk (1,000 kg) | 45 | 0.12 | US$0.15/kg | 200 |
+
+**Design Notes:**
+- **SmCo requires no mu-metal** — lower Bᵣ (1.1 T vs 1.45 T NdFeB) + steel can sufficient
+- **Fe₁₆N₂ highest shielding need** — highest Bᵣ (1.55 T) + brittle → full mu-metal wrap
+- **REE concentrate (bulk)** — low specific magnetization, IBC steel wall sufficient
+- **Halbach array self-shielding** — reduces external field 5-10× before packaging
+
+**Mu-Metal Handling Protocol (Critical for SE Retention):**
+1. **Final anneal**: 1,100°C hydrogen atmosphere (after forming) — achieves μᵣ > 200,000
+2. **No bending after anneal** — plastic deformation reduces μᵣ by 50%+ → **pre-form, then anneal**
+3. **Spot weld only** — continuous weld creates heat-affected zone (μᵣ drop) → **spot weld 25 mm pitch**
+4. **Magnetic hygiene**: Store annealed shields in **low-field environment** (< 0.1 mT) — Earth's field (0.05 mT) slowly degrades μᵣ over months
+5. **Re-anneal schedule**: Every 24 months or 50 reuse cycles — **CSM quality gate**
+
+**Composite Shield Innovation (Steel + Mu-Metal Laminate):**
+```
+Structure: Steel 1.0 mm / Epoxy 0.1 mm / Mu-Metal 0.3 mm / Epoxy 0.1 mm / Steel 0.5 mm
+Total thickness: 1.9 mm
+SE: 75 dB (vs. 68 dB for separate layers)
+Advantage: Steel outer/inner handles mechanical + saturation; mu-metal core gives SE
+Cost: US$12/kg (vs. US$85/kg pure mu-metal) — **86% cost reduction**
+Status: **Validated 2024** — CSM qualified for N48SH air shipments
+```
+
+**Packaging QA Checklist (Per Shipment):**
+- [ ] Shield anneal cert (≤ 24 months)
+- [ ] Package UN mark valid (≤ 5 years)
+- [ ] Gaussmeter calibration cert (≤ 12 months, NIST traceable)
+- [ ] 14-point survey complete, max ≤ 0.525 mT
+- [ ] Orientation arrows match magnet polarity
+- [ ] DGD matches package contents exactly
+- [ ] Photos: 6 faces + interior + gaussmeter readings

@@ -196,7 +196,7 @@
 - [x] 2.5.36 Write Section 3.1.2 - Packing Group II requirements
 - [x] 2.5.37 Write Section 3.2 - IATA DGR 9.3 air freight restrictions
 - [x] 2.5.38 Write Section 3.2.1 - Field strength <5.25mT at 2.1m (IATA PI 953)
-- [ ] 2.5.39 Write Section 3.2.2 - Shielding packaging design (mu-metal, steel)
+- [x] 2.5.39 Write Section 3.2.2 - Shielding packaging design (mu-metal, steel)
 - [ ] 2.5.40 Write Section 3.2.3 - Temperature control -40°C to +80°C stability
 - [ ] 2.5.41 Write Section 3.3 - MIL-STD-1540 test certificate requirements
 - [ ] 2.5.42 Write Section 3.4 - ASTM D4169 distribution testing (Assurance Level II)
