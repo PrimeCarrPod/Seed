@@ -1,17 +1,205 @@
+## Project Overview
+# CSMBoard
+
+**Category:** CSMPro | **State:** Part of Another Project | **Files:** 6
+
+**Parent Project:** CSMPro
+
+## Summary
+
 CSMBiz — Business Planning and Commercial Strategy
 
-The Engine That Funds the Shield. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-Saving civilization is not free. CSMBiz is the commercial engine room — where the research meets the revenue model and the question "can we afford to do this?" is answered with "we cannot afford not to, and here is the spreadsheet." The directory contains business planning, market analysis, revenue projections, and the AI Agents For Kilo Claw Business subdirectory with the complete business plan. The total addressable market for dielectric products: forty to eighty billion dollars. Three revenue streams: product sales, technology licensing, insurance verification fees. Profitability projected in year four. Step into the boardroom.
+The CSMBoard project operates within the **CSMPro** domain, 
+functioning as a **Part of Another Project** with 6 files. 
+It belongs to the CSMPro ecosystem.
 
-THE CONVERSATION
+### Core Principles
 
-A corporate boardroom. Financial projections cover a large screen. Mork is at a whiteboard adding revenue projections. Chester is reviewing a term sheet. Zirconia stands at the screen.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to CSMBiz. I am Zirconia, director of business operations, and these are Mork and Chester. The discipline of business planning — from the first joint-stock companies to modern venture capital — provides the framework. CSMBiz applies it to Carrington preparedness. Mork, the numbers.
+### Component Diagram
 
-MORK: Forty to eighty billion dollar addressable market. Bottom-up sizing from the M1 product categories. Top-down sizing from building materials and automotive components. Both converge. Three revenue streams: product sales with standard manufacturing margins, technology licensing to third-party manufacturers, and insurance verification fees — a fraction of the premium reduction, making it net-positive for the insurer. Competitive moat: MXene patents, color scheme trademark, BFRP trade secrets, Charlemagne design patents, agent character copyrights.
+```
+CSMBoard
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: The business plan is not a hope. It is a calculation. Every number is traced to a CSMFAB BOM line item. Every BOM line item is traced to a supplier quote. The math holds. Right on.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMPro/CSMBoard/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMPro), 
+explicit parent-child relationship (CSMPro)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMPro/CSMBoard`
+- **Chunks**: `./CSMPro/CSMBoard/README_chunks/`
+- **Manifest**: `./CSMPro/CSMBoard/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMPro/CSMBoard/memory/`
+- **Runner Files**: `./CSMPro/CSMBoard/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMPro (`CSMPro`)
+- **Category Peers**: Other projects in CSMPro
+- **File Count**: 6 files
+
+---
+
+*README generated for CSMBoard — Part of Another Project*
+*Category: CSMPro | Files: 6 | Parent: CSMPro*
+*Generated using write_large_file.py IncrementalDocumentWriter*

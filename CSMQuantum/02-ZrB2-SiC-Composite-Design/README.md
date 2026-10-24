@@ -1,13 +1,205 @@
+## Project Overview
 # 02-ZrB2-SiC-Composite-Design
 
-## ZrB₂-SiC Ultra-High-Temperature Ceramic Composite Structure-Property Design
+**Category:** CSMQuantum | **State:** Part of Another Project | **Files:** 3
 
-### Carrington Storm Motors / Safe Pod Engineering Company
+**Parent Project:** CSMQuantum
 
-The ZrB₂-SiC composite is the structural backbone of every Aegis-C shielding panel. It must withstand simultaneous demands: electromagnetic attenuation across 1 kHz to 10 GHz, thermal stability to 1,800°C (the flash sintering regime and beyond), mechanical integrity against impact, and dielectric behavior that does not short the shielding layers. Current formulations achieve flexural strength of ~500 MPa, fracture toughness of ~4 MPa√m, and density of ~5.5 g/cm³ — values that are adequate but leave no margin for weight reduction or panel thinning.
+## Summary
 
-The most pressing engineering unknowns reside at the grain boundaries. SiC segregates to ZrB₂ grain boundaries as an intergranular phase, influencing cohesion, oxidation resistance, and phonon scattering that controls thermal conductivity. The quantum problem is a DFT-level calculation of grain boundary energies and segregation enthalpies for candidate ternary additions (HfB₂, TaB₂, NbB₂, and rare-earth oxides) across multiple coincident-site lattice orientations. Classical interatomic potentials for these five-component systems simply do not exist at the accuracy required.
+# 02-ZrB2-SiC-Composite-Design (3 files, has README)
 
-A quantum computing partner should expect to tackle DFT calculations on 200-1,000 atom grain boundary supercells, resolving the electron density redistribution that governs SiC wetting behavior and the cohesive energy of the interface. The phonon transport calculations require force constants from DFT-level energy surfaces — again, a problem that scales poorly on classical hardware for large cells. The projected quantum advantage is a 20-40% improvement in strength-to-density ratio through precise control of the intergranular phase chemistry and volume fraction.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-This paper documents the current ZrB₂-SiC synthesis route (batching, ball milling, hot pressing, flash sintering), measured mechanical and dielectric properties, and the specific grain boundary types (Σ5, Σ7, Σ13) that dominate the microstructure. The deliverable is a recommended ternary dopant composition and SiC vol% that optimizes the Pareto frontier of strength, density, oxidation resistance, and dielectric permittivity.
+### System Boundaries
+
+The 02-ZrB2-SiC-Composite-Design project operates within the **CSMQuantum** domain, 
+functioning as a **Part of Another Project** with 3 files. 
+It belongs to the CSMQuantum ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+02-ZrB2-SiC-Composite-Design
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMQuantum/02-ZrB2-SiC-Composite-Design/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMQuantum), 
+explicit parent-child relationship (CSMQuantum)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design`
+- **Chunks**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/README_chunks/`
+- **Manifest**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/memory/`
+- **Runner Files**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMQuantum (`CSMQuantum`)
+- **Category Peers**: Other projects in CSMQuantum
+- **File Count**: 3 files
+
+---
+
+*README generated for 02-ZrB2-SiC-Composite-Design — Part of Another Project*
+*Category: CSMQuantum | Files: 3 | Parent: CSMQuantum*
+*Generated using write_large_file.py IncrementalDocumentWriter*

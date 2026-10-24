@@ -1,9 +1,44 @@
 {
-  "readme_01_overview.md": {"chapter": "01", "title": "Project Overview"},
-  "readme_02_architecture.md": {"chapter": "02", "title": "Architecture & Design — Williams Heuristic"},
-  "readme_03_implementation.md": {"chapter": "03", "title": "Implementation — Keymaker Protocol"},
-  "readme_04_operations.md": {"chapter": "04", "title": "Operations — El Segundo Protocol"},
-  "readme_05_heuristics.md": {"chapter": "05", "title": "Three-Pronged Heuristic Integration"},
-  "readme_06_roadmap.md": {"chapter": "06", "title": "Roadmap & Future Work"},
-  "readme_07_appendix.md": {"chapter": "07", "title": "Appendix — Quick Reference"}
+  "readme_01_project_overview.md": {
+    "size": 318,
+    "sha256": "091381eb4cbf269c1e73fc531d4145441a7a9b2b9e4e83e12ca344b6b4315550",
+    "chapter": "01",
+    "title": "Project Overview"
+  },
+  "readme_02_architecture__design__williams.md": {
+    "size": 828,
+    "sha256": "79bad4edf1ca2bd374bb7802aa1ebe2a40e992c7a48b16b5899311ab0f66abea",
+    "chapter": "02",
+    "title": "Architecture & Design \u2014 Williams Heuristic"
+  },
+  "readme_03_implementation__keymaker_proto.md": {
+    "size": 1294,
+    "sha256": "469ec57cc5b2ace702e2011a10cc9437a543cc977effb33f057530b70baa74c1",
+    "chapter": "03",
+    "title": "Implementation \u2014 Keymaker Protocol"
+  },
+  "readme_04_operations__el_segundo_protoco.md": {
+    "size": 1109,
+    "sha256": "307143d2d4fb6c4fb144e0d37f0639c133eae6c0ed2137e58f0d51ae7f8ebcea",
+    "chapter": "04",
+    "title": "Operations \u2014 El Segundo Protocol"
+  },
+  "readme_05_three-pronged_heuristic_integr.md": {
+    "size": 1539,
+    "sha256": "9a44006c8737dd3fbc6d117da67cc61d5de03110f23420012ff0457384fd41de",
+    "chapter": "05",
+    "title": "Three-Pronged Heuristic Integration"
+  },
+  "readme_06_roadmap__future_work.md": {
+    "size": 838,
+    "sha256": "fbba47d7986490a92d65f228e23f74330393f9a44eb2d6cb030bcd489321e5e4",
+    "chapter": "06",
+    "title": "Roadmap & Future Work"
+  },
+  "readme_07_appendix__quick_reference.md": {
+    "size": 1440,
+    "sha256": "2943f485a21a45ad6ef3b3c49e9900ff53881fac07036cfd03db1c50ba51a235",
+    "chapter": "07",
+    "title": "Appendix \u2014 Quick Reference"
+  }
 }

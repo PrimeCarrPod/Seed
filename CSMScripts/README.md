@@ -1,17 +1,204 @@
+## Project Overview
+# CSMScripts
+
+**Category:** TopLevel | **State:** Whole Project | **Files:** 847
+
+**Parent Project:** Top-Level
+
+## Summary
+
 CSMScripts — Automation, Utilities, and Operational Tools
 
-The Glue That Holds the Knowledge Base Together. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-A knowledge base does not manage itself. CSMScripts is the automation backbone: utility scripts, maintenance tools, and operational logs that keep the CSM knowledge base coherent. The logs subdirectory records every automated process — nightly link checks, weekly readability audits, monthly dependency graph regenerations. When something breaks, the logs tell you exactly when and what changed. No Agent of Aegis embodies a Python script. No SiblingFrequency episode dramatizes a cron job. But without the scripts, the versioning discipline would be impossible to maintain. Step into the server room.
+The CSMScripts project operates within the **TopLevel** domain, 
+functioning as a **Whole Project** with 847 files. 
+It is a top-level project.
 
-THE CONVERSATION
+### Core Principles
 
-A server room. Racks hum. A dashboard displays automated processes. Mork narrates the statuses. Chester reviews log files. Zirconia stands at the dashboard.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to CSMScripts. I am Zirconia, director of knowledge infrastructure, and these are Mork and Chester. The tradition of systems administration — from the first time-sharing computers to modern DevOps — provides the framework. CSMScripts applies it to a knowledge base where a broken cross-reference can cascade through hundreds of documents. Mork, the link checker.
+### Component Diagram
 
-MORK: Runs every night at 2 AM UTC. Follows every cross-reference. Verifies every destination exists, the version matches, and no upstream dependencies are flagged. Broken link: alert. Version mismatch: alert. The link checker is the diagnostic nervous system.
+```
+CSMScripts
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: The readability auditor runs weekly. Every public-facing document is scored against the Flesch-Kincaid tenth-grade threshold. Documents above grade ten get flagged with a note: "Please revise." The auditor is the enforcement mechanism for the Williams Heuristic. The logs are the forensic trail. When something breaks, the logs tell you how to fix it. For sure.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMScripts/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (TopLevel), 
+explicit parent-child relationship (N/A)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMScripts`
+- **Chunks**: `./CSMScripts/README_chunks/`
+- **Manifest**: `./CSMScripts/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMScripts/memory/`
+- **Runner Files**: `./CSMScripts/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Category Peers**: Other projects in TopLevel
+- **File Count**: 847 files
+
+---
+
+*README generated for CSMScripts — Whole Project*
+*Category: TopLevel | Files: 847 | Parent: N/A*
+*Generated using write_large_file.py IncrementalDocumentWriter*

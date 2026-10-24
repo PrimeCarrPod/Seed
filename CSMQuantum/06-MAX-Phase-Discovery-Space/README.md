@@ -1,13 +1,205 @@
+## Project Overview
 # 06-MAX-Phase-Discovery-Space
 
-## Mn+1AXn Phase Discovery Space for Superior MXene Precursors
+**Category:** CSMQuantum | **State:** Part of Another Project | **Files:** 3
 
-### Carrington Storm Motors / Safe Pod Engineering Company
+**Parent Project:** CSMQuantum
 
-Every MXene begins as a MAX phase — a layered ternary carbide or nitride with the general formula Mₙ₊₁AXₙ, where M is an early transition metal, A is a group 13 or 14 element, and X is carbon and/or nitrogen. The quality, etchability, and cost of the resulting MXene are determined entirely by the MAX phase precursor. While Ti₃AlC₂ is the workhorse of the field, there are hundreds of theoretically predicted MAX phases whose MXene derivatives have never been synthesized or characterized for EMI shielding.
+## Summary
 
-The discovery space is vast. With M site options spanning Ti, V, Cr, Zr, Nb, Mo, Hf, and Ta; A site options including Al, Si, Ga, and Sn; and X site combinations of C and N across n = 1, 2, 3, 4, the combinatorial space exceeds 10⁴ realistic candidates. Classical high-throughput DFT screening is possible but computationally prohibitive for full structural relaxation and phonon stability analysis across this entire space — approximately 10⁶ core-hours on current HPC infrastructure for even a coarse screening.
+# 06-MAX-Phase-Discovery-Space (3 files, has README)
 
-A quantum computing partner can deploy VQE or quantum phase estimation to accelerate the formation energy calculation for candidate MAX phases, particularly those containing 4d and 5d transition metals where relativistic effects and strong electron correlation make classical DFT less reliable. The goal is to identify MAX phase compositions that: (a) are thermodynamically stable or metastable within 50 meV/atom of the convex hull, (b) contain an A-layer element that etches cleanly under the HCl/LiF protocol without dissolving the M-X layers, and (c) produce an MXene with higher electrical conductivity and EMI SE than Ti₃C₂Tₓ.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-This paper provides the reference dataset of known MAX phases with experimental formation enthalpies, the CSMFAB MAX phase synthesis and MXene conversion protocols, and the search constraints (cost, toxicity, scalability). The deliverable is a ranked list of 10-20 novel MAX phase candidates with computed formation energies, phonon dispersion, and predicted MXene electronic structure, prioritized for experimental synthesis at CSMFAB.
+### System Boundaries
+
+The 06-MAX-Phase-Discovery-Space project operates within the **CSMQuantum** domain, 
+functioning as a **Part of Another Project** with 3 files. 
+It belongs to the CSMQuantum ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+06-MAX-Phase-Discovery-Space
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMQuantum/06-MAX-Phase-Discovery-Space/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMQuantum), 
+explicit parent-child relationship (CSMQuantum)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMQuantum/06-MAX-Phase-Discovery-Space`
+- **Chunks**: `./CSMQuantum/06-MAX-Phase-Discovery-Space/README_chunks/`
+- **Manifest**: `./CSMQuantum/06-MAX-Phase-Discovery-Space/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMQuantum/06-MAX-Phase-Discovery-Space/memory/`
+- **Runner Files**: `./CSMQuantum/06-MAX-Phase-Discovery-Space/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMQuantum (`CSMQuantum`)
+- **Category Peers**: Other projects in CSMQuantum
+- **File Count**: 3 files
+
+---
+
+*README generated for 06-MAX-Phase-Discovery-Space — Part of Another Project*
+*Category: CSMQuantum | Files: 3 | Parent: CSMQuantum*
+*Generated using write_large_file.py IncrementalDocumentWriter*

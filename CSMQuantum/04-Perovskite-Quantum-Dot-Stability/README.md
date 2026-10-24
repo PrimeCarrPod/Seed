@@ -1,13 +1,205 @@
+## Project Overview
 # 04-Perovskite-Quantum-Dot-Stability
 
-## CsPbBr₃ Perovskite Quantum Dot Stability and Degradation Mechanisms
+**Category:** CSMQuantum | **State:** Part of Another Project | **Files:** 3
 
-### Carrington Storm Motors / Safe Pod Engineering Company
+**Parent Project:** CSMQuantum
 
-Cesium lead bromide (CsPbBr₃) perovskite quantum dots are the active fluorophore layer in Aegis-C's embedded optical warning and status indicator subsystem. They provide narrow-band green emission (FWHM ~20 nm, PLQY > 90%) with tunability across the visible spectrum — properties that are unmatched by any competing phosphor technology at equivalent cost. The critical flaw: they degrade catastrophically under humidity and UV exposure, with current encapsulant-protected lifetimes of approximately 1,000 hours, falling far short of the 10-year outdoor operational requirement.
+## Summary
 
-The degradation mechanism is complex and coupled. Water molecules adsorb preferentially at surface Pb²⁺ sites, initiating a sequence of hydration, halide migration, and eventual amorphization that quenches photoluminescence. Simultaneously, UV-generated hot carriers drive photo-oxidation of surface bromide and lead to non-radiative recombination center formation. Classical MD with empirical force fields cannot capture the bond-breaking and charge-transfer events at the heart of this degradation. Quantum MD with on-the-fly DFT or high-level wavefunction methods is essential.
+# 04-Perovskite-Quantum-Dot-Stability (3 files, has README)
 
-A quantum computing partner will be asked to simulate water and oxygen interaction with CsPbBr₃ (001) and (110) surfaces at the quantum MD level, resolving the minimum energy pathways for Pb-Br bond scission and the free energy barriers for hydration. The excited-state calculations require time-dependent DFT with spin-orbit coupling — or, ideally, equation-of-motion coupled-cluster methods — to identify surface trap states that mediate non-radiative recombination. The goal is to computationally screen candidate capping ligands (oleic acid variants, zwitterionic molecules, atomic-layer encapsulation architectures) for their ability to raise the hydration barrier above 1.2 eV, sufficient for multi-year stability.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-The deliverable is a predicted optimal ligand or atomic-layer coating that the CSMFAB colloidal synthesis line can implement directly, targeting a 5-10× lifetime extension while maintaining PLQY above 80%. This paper supplies the specific synthesis protocol, degradation characterization data, and the computational target.
+### System Boundaries
+
+The 04-Perovskite-Quantum-Dot-Stability project operates within the **CSMQuantum** domain, 
+functioning as a **Part of Another Project** with 3 files. 
+It belongs to the CSMQuantum ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+04-Perovskite-Quantum-Dot-Stability
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMQuantum/04-Perovskite-Quantum-Dot-Stability/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMQuantum), 
+explicit parent-child relationship (CSMQuantum)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMQuantum/04-Perovskite-Quantum-Dot-Stability`
+- **Chunks**: `./CSMQuantum/04-Perovskite-Quantum-Dot-Stability/README_chunks/`
+- **Manifest**: `./CSMQuantum/04-Perovskite-Quantum-Dot-Stability/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMQuantum/04-Perovskite-Quantum-Dot-Stability/memory/`
+- **Runner Files**: `./CSMQuantum/04-Perovskite-Quantum-Dot-Stability/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMQuantum (`CSMQuantum`)
+- **Category Peers**: Other projects in CSMQuantum
+- **File Count**: 3 files
+
+---
+
+*README generated for 04-Perovskite-Quantum-Dot-Stability — Part of Another Project*
+*Category: CSMQuantum | Files: 3 | Parent: CSMQuantum*
+*Generated using write_large_file.py IncrementalDocumentWriter*

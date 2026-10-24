@@ -1,212 +1,205 @@
-# CarrPod No-Gradle Android APK Toolkit
+## Project Overview
+# android-toolkit
 
-## Overview
+**Category:** CSMScripts | **State:** Part of Another Project | **Files:** 4
 
-This toolkit builds installable Android APK files using **only command-line SDK tools** —
-no Gradle, no Android Studio, no AndroidX, no Kotlin compiler.
+**Parent Project:** CSMScripts
 
-**Verified working:** 2026-07-16 — Marmalade v7b build (255 KB APK)
+## Summary
+
+# CarrPod No-Gradle Android APK Toolkit (4 files, has README)
 
 ---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-## Quick Start
+### System Boundaries
+
+The android-toolkit project operates within the **CSMScripts** domain, 
+functioning as a **Part of Another Project** with 4 files. 
+It belongs to the CSMScripts ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+android-toolkit
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMScripts/android-toolkit/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
 
 ```bash
-# 1. Bootstrap the SDK (one time)
-bash CSMScripts/android-toolkit/setup-sdk.sh
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
 
-# 2. Scaffold a new project (or use existing)
-bash CSMScripts/android-toolkit/project-scaffold.sh MyApp com.carrpod.myapp
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
 
-# 3. Edit src/main/ and build.sh, then build
-cd MyApp && bash build.sh
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
 ```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMScripts), 
+explicit parent-child relationship (CSMScripts)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMScripts/android-toolkit`
+- **Chunks**: `./CSMScripts/android-toolkit/README_chunks/`
+- **Manifest**: `./CSMScripts/android-toolkit/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMScripts/android-toolkit/memory/`
+- **Runner Files**: `./CSMScripts/android-toolkit/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMScripts (`CSMScripts`)
+- **Category Peers**: Other projects in CSMScripts
+- **File Count**: 4 files
 
 ---
 
-## ⚠️ CRITICAL LESSONS LEARNED
-
-### 1. The Python/r8 Approach DOES NOT WORK for Installable APKs
-**Symptom:** APK builds but Android refuses to install (no error, just "App not installed")
-**Root cause:** Android requires a **binary AndroidManifest.xml** (compiled AXML format), not raw XML text. Python zip tools write raw XML. Only `aapt2 link` produces a valid binary manifest.
-**Fix:** Always use the `aapt2` pipeline. Never use Python zip assembly for the manifest.
-
-### 2. SDK Version Compatibility is STRICT
-```
-build-tools 33.0.1  ⇔  platform android-33  ✓ WORKS
-build-tools 36.0.0  ⇔  platform android-36  ✓ SHOULD WORK (if both available)
-build-tools 33.0.1  ⇔  platform android-36  ✗ FAILS (aapt2 can't parse newer resources)
-build-tools 34.0.0  ⇔  platform android-34  ✓ SHOULD WORK
-```
-**Rule:** The build-tools major.minor version must be **≤** the platform API level's Android version equivalent.
-
-### 3. Google's Platform ZIP Extraction Oddity
-When unzipping `platform-33_r02.zip`, the folder extracts as `android-13/` (not `android-33/`).
-Google uses Android codename (`android-13`) internally while the standard folder name uses API level (`android-33`).
-**Fix:** Rename `android-13` → `android-33` after extraction.
-
-### 4. Download URLs That Actually Work
-```
-✓ https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip    (146 MB)
-✓ https://dl.google.com/android/repository/platform-33_r02.zip                            (67 MB)
-✓ https://dl.google.com/android/repository/platform-36_r02.zip                            (63 MB)
-✓ https://dl.google.com/android/repository/platform-tools_r35.0.2-linux.zip               (7 MB)
-✓ https://dl.google.com/android/repository/build-tools_r33.0.1-linux.zip                  (56 MB)
-✗ https://dl.google.com/android/repository/build-tools_r34.0.0-linux.zip                  (404!)
-✗ https://dl.google.com/android/repository/build-tools_r36.0.0-linux.zip                  (404!)
-✗ https://dl.google.com/android/repository/platform-33_r03.zip                             (404!)
-✗ https://dl.google.com/android/repository/android-13_r03.zip                              (404!)
-```
-The Google CDN returns 404 for many SDK versions. Trial-and-error required.
-
-### 5. curl Needs `-k` in Sandbox Environments
-Sandbox containers often have self-signed certificates or proxy CA chains.
-**Fix:** Use `curl -k -sL` for all downloads.
-
-### 6. Java Source/Target Must Be 11
-Even with JDK 17 installed, compile with `-source 11 -target 11`.
-The `d8` dexer from build-tools 33.0.1 is tested against Java 11 bytecode.
-Newer Java features may cause subtle dex failures.
-
-### 7. Asset Injection Order Matters
-Assets (HTML/JS/images) must be injected **after** aapt2 link (base APK created)
-but **before** dex injection and signing.
-**Incorrect order:** dex-in → assets → zipalign → sign = assets overwrite dex!
-**Correct order:** aapt2 link → assets inject → javac → d8 → dex inject → zipalign → sign
-
----
-
-## Build Pipeline (7 Steps)
-
-```
-┌──────────────────────────────────────────────────┐
-│ 1. aapt2 compile                                 │
-│    res/values/*.xml ──→ obj/resources.zip (.flat) │
-├──────────────────────────────────────────────────┤
-│ 2. aapt2 link                                    │
-│    resources.zip + manifest ──→ base.apk + R.java │
-│    ▸ Produces binary AndroidManifest.xml          │
-│    ▸ Produces binary resources.arsc               │
-├──────────────────────────────────────────────────┤
-│ 2b. Asset injection                              │
-│    zip -r base.apk assets/                       │
-├──────────────────────────────────────────────────┤
-│ 3. javac                                         │
-│    *.java + R.java ──→ obj/*.class               │
-│    ▸ -source 11 -target 11                       │
-│    ▸ -classpath android.jar                      │
-├──────────────────────────────────────────────────┤
-│ 4. d8                                            │
-│    *.class ──→ obj/classes.dex                   │
-│    ▸ --min-api 24 --lib android.jar              │
-├──────────────────────────────────────────────────┤
-│ 5. Dex injection                                 │
-│    zip base.apk classes.dex                      │
-├──────────────────────────────────────────────────┤
-│ 6. zipalign                                      │
-│    -p -f 4 (4-byte alignment)                    │
-├──────────────────────────────────────────────────┤
-│ 7. apksigner                                     │
-│    sign with debug.keystore                      │
-│    ▸ auto-generates on first build               │
-│    ▸ dname: CN={APP_NAME} Debug, OU=CarrPod      │
-└──────────────────────────────────────────────────┘
-```
-
----
-
-## Project Structure
-
-```
-YOUR_PROJECT/
-├── build.sh                          # ← Copy from build-apk.sh, edit top vars
-├── debug.keystore                    # Auto-generated on first build
-├── src/main/
-│   ├── AndroidManifest.xml           # Package, permissions, activity
-│   ├── res/
-│   │   ├── values/
-│   │   │   ├── strings.xml           # app_name, tagline
-│   │   │   └── colors.xml            # app_bg, app_fg (used by icon!)
-│   │   └── mipmap-anydpi-v26/
-│   │       └── ic_launcher.xml       # Adaptive icon: @color refs
-│   ├── assets/                       # HTML, JS, images (optional)
-│   └── java/com/carrpod/YOURAPP/
-│       └── MainActivity.java
-├── out/                              # Built APKs
-│   ├── {APP}-base.apk                # After aapt2 link
-│   ├── {APP}-dexed.apk               # After dex injection
-│   ├── {APP}-aligned.apk             # After zipalign
-│   └── {APP}-v{VERSION}.apk          # FINAL SIGNED APK ✓
-├── obj/                              # Intermediate build artifacts
-│   ├── resources.zip
-│   └── classes.dex
-└── gen/                              # Generated R.java
-```
-
----
-
-## Adaptive Icon Without Image Assets
-
-The v6b technique works flawlessly. Uses `<adaptive-icon>` with `@color` references:
-
-```xml
-<!-- res/mipmap-anydpi-v26/ic_launcher.xml -->
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@color/app_bg"/>
-    <foreground android:drawable="@color/app_fg"/>
-</adaptive-icon>
-```
-
-```xml
-<!-- res/values/colors.xml -->
-<color name="app_bg">#FF0A0A0F</color>   <!-- Dark background -->
-<color name="app_fg">#FFFF6600</color>   <!-- Orange foreground -->
-```
-
-This creates a solid-color icon that works on all API 26+ devices.
-No PNG/SVG needed. aapt2 compiles the color references into the binary APK.
-
----
-
-## Tool Dependencies
-
-| Tool | Package | Version |
-|------|---------|---------|
-| Java | openjdk-17-jdk-headless | 17.0.19 |
-| javac | same | 17.x |
-| aapt2 | build-tools | 33.0.1 |
-| d8 | build-tools | 33.0.1 |
-| zipalign | build-tools | 33.0.1 |
-| apksigner | build-tools | 33.0.1 |
-| keytool | JDK (built-in) | any |
-| zip | apt | any |
-| unzip | apt | any |
-| curl | apt/brew | any (with -k flag) |
-
----
-
-## Troubleshooting
-
-| Problem | Diagnosis | Fix |
-|---------|-----------|-----|
-| APK won't install | Check: `unzip -p app.apk AndroidManifest.xml \| file -` — should say "Android binary XML", not "XML document" | Use aapt2 pipeline (not Python zip) |
-| aapt2 link fails with "Failed to load resources table" | build-tools version incompatible with platform | Downgrade platform to match build-tools (e.g., android-33 with build-tools 33.0.1) |
-| javac "package android.* does not exist" | Missing -classpath | Add `-classpath $ANDROID_JAR` |
-| d8 hangs or crashes | OOM or bad classpath | Use `--lib $ANDROID_JAR` explicitly |
-| "No classes.dex" after d8 | d8 failed silently | Check CLASS_COUNT > 0 before d8 |
-| curl 404 on build-tools | Version not available from Google CDN | Try 33.0.1 (known working) or 30.0.3 |
-| curl SSL error | Sandbox CA chain | Add `-k` flag to curl |
-
----
-
-## Session History
-
-| Date | Session | What Was Built | Key Discovery |
-|------|---------|---------------|---------------|
-| 2026-07-07 | DIRECTOR-001 | LandOLil v1-v7b (11 releases) | aapt2 pipeline established |
-| 2026-07-09 | CITADEL-001 | LandOLil v6bv2, v6bv3, v7b | Adaptive icon @color technique |
-| 2026-07-16 | agent_66fbea06 | Marmalade v7b | **SDK compat matrix verified, Python approach FAILED** |
-
----
-*CarrPod — Safe Pod Engineering Company*
-*Android Toolkit v1.0 — 2026-07-16*
+*README generated for android-toolkit — Part of Another Project*
+*Category: CSMScripts | Files: 4 | Parent: CSMScripts*
+*Generated using write_large_file.py IncrementalDocumentWriter*

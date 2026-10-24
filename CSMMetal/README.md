@@ -1,21 +1,204 @@
+## Project Overview
+# CSMMetal
+
+**Category:** TopLevel | **State:** Whole Project | **Files:** 74
+
+**Parent Project:** Top-Level
+
+## Summary
+
 CSMMetal — Dielectric Materials and Electromagnetic Protection Research
 
-The Periodic Table as a Shield. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-Every metal object in your life is, from the perspective of a geomagnetic storm, an antenna waiting to happen. CSMMetal is where Carrington Storm Motors investigates the specific electromagnetic vulnerabilities of metallic objects in the built environment and develops the dielectric countermeasures. Thirteen research projects span from the color scheme derivation — which determined that the Aegis blue-gray is not a design choice but a radio-frequency engineering decision — to the bridge failure analysis that models what happens to a steel span when a Carrington-class geoelectric field turns it into a thousand-foot conductor, to the microwave-proof material designs that ensure kitchen appliances do not become shock hazards. CSMMetal is the application layer: where CSMQuantum's fundamental materials science meets the specific objects that populate the human world. Every study is costed against the replacement value of the object it protects. The color scheme derivation, CSMMetal20250004, is the most-cited document in the series after the M1 foundational research. Step into the materials lab.
+The CSMMetal project operates within the **TopLevel** domain, 
+functioning as a **Whole Project** with 74 files. 
+It is a top-level project.
 
-THE CONVERSATION
+### Core Principles
 
-A materials testing laboratory. Metal samples are arranged on a bench next to their dielectric replacements. On a speaker, the Baker Street Adjuster Commentary plays — the Adjuster's voice, dry and precise: "The paint. The paint on the Charlemagne hull. It is not blue-gray because someone liked the color. It is blue-gray because that specific sulfonated copper phthalocyanine formulation has a dielectric constant four orders of magnitude higher than the standard version at 0.01 hertz. The paint is an engineering specification. I have been in this business thirty years and I have never seen an underwriter ask about paint chemistry. I am about to." Mork is comparing conductivity curves. Chester is rocking a bridge girder scale model. Zirconia stands at the spectrum analyzer, and beside her, a printout of the CSMReach letter to Ohio — approximately twelve thousand utility workers whose jobs depend on the transformers that CSMMetal research protects.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to CSMMetal. I am Zirconia, director of applied materials research, and these are Mork and Chester. The materials science tradition draws on centuries of metallurgy, chemistry, and physics. CSMMetal applies that tradition to a specific threat. Mork, the color scheme — and start fresh.
+### Component Diagram
 
-MORK: (holds up a color swatch of Aegis blue-gray) This color. Sulfonated copper phthalocyanine, applied over an MXene-doped primer, at a specific film thickness. The physicist who selected it — and the name is in the versioning file, because CSMMetal credits its researchers — was not choosing a color. She was choosing a dielectric constant at 0.01 hertz, a UV stability profile, and a salt-spray durability specification. The color happened to be beautiful. The engineering happened to be correct. The CSMReach letter to Pennsylvania — home of PPG Industries, one of the largest paint manufacturers in the world — specifically references this color scheme as a manufacturing opportunity. "Your state already produces coatings. We have the specification that turns those coatings into electromagnetic shields."
+```
+CSMMetal
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: The bridge analysis — CSMMetal20260101. A steel bridge does not fall during the storm. It falls six months later when magnetostrictive fatigue cracks, initiated during thousands of strain cycles over the storm's duration, reach critical length under traffic loading. The retrofit — dielectric bearing pads, fifteen to twenty-five thousand dollars per bearing — prevents the cracks. The bridge costs hundreds of millions. Right on.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
 
-ZIRCONIA: The appliance series — CSMMetal20250000 through 20250005 — covers every major household appliance. A five-dollar dielectric bushing on a microwave. A ceramic-reinforced door handle on a refrigerator. The research no one reads until their kitchen stops shocking them.
+### Technology Stack
 
-CHESTER: (sets down the bridge model) The least dramatic research. The most tangible. For sure.
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMMetal/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (TopLevel), 
+explicit parent-child relationship (N/A)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMMetal`
+- **Chunks**: `./CSMMetal/README_chunks/`
+- **Manifest**: `./CSMMetal/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMMetal/memory/`
+- **Runner Files**: `./CSMMetal/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Category Peers**: Other projects in TopLevel
+- **File Count**: 74 files
+
+---
+
+*README generated for CSMMetal — Whole Project*
+*Category: TopLevel | Files: 74 | Parent: N/A*
+*Generated using write_large_file.py IncrementalDocumentWriter*

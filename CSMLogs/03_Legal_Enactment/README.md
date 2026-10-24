@@ -1,17 +1,205 @@
+## Project Overview
+# 03_Legal_Enactment
+
+**Category:** CSMLogs | **State:** Part of Another Project | **Files:** 78
+
+**Parent Project:** CSMLogs
+
+## Summary
+
 CSMGen — Agent Generation, Pipeline, and Communications Architecture
 
-The Digital Soul of the Aegis Enterprise. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-Behind every Agent of Aegis there is a generation pipeline, a communication architecture, and a session management system that turns character concepts into functional operatives. CSMGen is the parent directory: the CSMAegis subdirectory with eighteen agent dossiers, the CommsLogs archiving daily message traffic, the INDEX.md and AGENTS_OF_AEGIS_COMPLETE.md providing the master roster, and the pipeline infrastructure producing the agents' visual and vocal presence. The agents owe their creative DNA to Marvel's Agents of S.H.I.E.L.D., created by Joss Whedon, Jed Whedon, and Maurissa Tancharoen. We acknowledge that debt with gratitude. Step into the generation studio.
+The 03_Legal_Enactment project operates within the **CSMLogs** domain, 
+functioning as a **Part of Another Project** with 78 files. 
+It belongs to the CSMLogs ecosystem.
 
-THE CONVERSATION
+### Core Principles
 
-The agent generation studio. A sound booth, a render farm, a display showing the agent communication mesh. Mork is in the sound booth. Chester reviews portrait renders. Zirconia stands at the mesh display.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to CSMGen. I am Zirconia, director of character operations, and these are Mork and Chester. The tradition of character-driven storytelling — from Homer to Shakespeare to modern television — provides the framework. CSMGen applies it to a specific purpose: making electromagnetic resilience memorable. Mork, the dossiers.
+### Component Diagram
 
-MORK: Eighteen agents in the CSMAegis subdirectory — Steele, Calder, Vance, Vaun, and fourteen others. Each dossier contains: origin story, product embodiment, operational role, communication protocols, and 8K image generation prompt. The sibling mesh links agents by shared materials. The COMMS logs record daily interactions. The PIPELINE renders faces and voices. The agents sign the outreach letters. They narrate the radio show. They are not mascots. They are the message.
+```
+03_Legal_Enactment
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: The INDEX.md is the entry point. The AGENTS_OF_AEGIS_COMPLETE.md is the sixty-second orientation. Start there. Meet the team. For sure.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMLogs/03_Legal_Enactment/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMLogs), 
+explicit parent-child relationship (CSMLogs)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMLogs/03_Legal_Enactment`
+- **Chunks**: `./CSMLogs/03_Legal_Enactment/README_chunks/`
+- **Manifest**: `./CSMLogs/03_Legal_Enactment/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMLogs/03_Legal_Enactment/memory/`
+- **Runner Files**: `./CSMLogs/03_Legal_Enactment/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMLogs (`CSMLogs`)
+- **Category Peers**: Other projects in CSMLogs
+- **File Count**: 78 files
+
+---
+
+*README generated for 03_Legal_Enactment — Part of Another Project*
+*Category: CSMLogs | Files: 78 | Parent: CSMLogs*
+*Generated using write_large_file.py IncrementalDocumentWriter*

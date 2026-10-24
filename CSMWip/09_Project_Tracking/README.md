@@ -1,96 +1,205 @@
-# CSM WORK IN PROGRESS — SubParticlesV4 Complete Archive
-
 ## Project Overview
-**Creative Director:** Jason Brodsky  
-**Initiative:** Carrington Storm Motors / Safe Pod Engineering Company  
-**Date:** August 2026  
-**Branch:** `session/csm-work-in-progress-subparticlesv4`
+# 09_Project_Tracking
 
-This directory contains the complete SubParticlesV4 upgrade — a comprehensive versioning of all particle physics deep dives from V1.0 → V2.0 → V4.0, integrating the one-electron universe ontology (Wheeler 1940, Gielerak 2020) with modern experimental data (2022-2026).
+**Category:** CSMWip | **State:** Part of Another Project | **Files:** 10
 
-## Directory Structure
+**Parent Project:** CSMWip
+
+## Summary
+
+# CSM WORK IN PROGRESS \u2014 SubParticlesV4 Complete Archive (10 files, has README)
+
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
+
+### System Boundaries
+
+The 09_Project_Tracking project operates within the **CSMWip** domain, 
+functioning as a **Part of Another Project** with 10 files. 
+It belongs to the CSMWip ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
 
 ```
-CSM_WORK_IN_PROGRESS/
-├── README.md                          # This file
-├── INSTRUCTIONS.md                    # Detailed methodology and discovery process
-├── CREDITS.md                         # All scientists, engineers, creatives credited
-├── DeepResearch/
-│   └── SubParticlesV4/
-│       ├── Glueball_Single_Electron_V4.0/
-│       │   ├── Part01/ through Part14/
-│       ├── [33 V2.0 upgrades → V4.0]/
-│       │   ├── Axion_Deep_Dive_V4.0/ (14 parts)
-│       │   ├── Baryon_One_Particle_Universe_V4.0/ (14 parts)
-│       │   ├── ... (31 more)
-│       ├── [4 PDFs without V2.0 → V4.0 from scratch]/
-│       │   ├── Glueball_Single_Electron_Theory_Synthesis_V4.0/ (14 parts)
-│       │   ├── Micro_to_Macro_Particle_Physics_V4.0/ (14 parts)
-│       │   ├── Microbial_Ecosystem_Food_Chains_V4.0/ (14 parts)
-│       │   ├── Swarm_Mechanics_Fluid_Dynamics_V4.0/ (14 parts)
-│       ├── LOL_v4_staging/
-│       │   ├── index_v4.html          # Merged: 34 particles + microbe icons + camera follow + motion sensor + click detail + Android bridge
-│       │   ├── js/                    # Local Three.js, Chart.js, shaders
-│       │   └── css/
-│       ├── TGPU004.htm                # Next-gen Subatomic Worldline Engine V4.0
-│       ├── index_v4.html              # Main entry point
-│       └── CHANGELOG.md               # Complete version history
-└── DOCUMENTATION/
-    ├── METHODOLOGY.md                 # How each document was created/upgraded
-    ├── SOURCES.md                     # All reference papers, experiments, data
-    ├── VERSION_HISTORY.md             # V1.0 → V2.0 → V4.0 lineage
-    └── TECHNICAL_NOTES.md             # Implementation details
+09_Project_Tracking
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
 ```
 
-## Phase Execution Log
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
 
-### Phase 1: Glueball V4.0 Parts 11-14 (IN PROGRESS)
-- Part 11: BSM Glueballs
-- Part 12: QCD Vacuum
-- Part 13: Lattice Spectroscopy
-- Part 14: Experimental Signatures
+### Technology Stack
 
-### Phase 2A: 33 V2.0 → V4.0 Upgrades (PENDING)
-Each of the 33 existing V2.0 deep dives expanded to 14-part V4.0 series (462 documents)
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
 
-### Phase 2B: 4 PDFs → V4.0 from Scratch (PENDING)
-- Glueball Single Electron Theory Synthesis.pdf
-- Micro to Macro Particle Physics.pdf
-- Microbial Ecosystem Food Chains.pdf
-- Swarm Mechanics and Fluid Dynamics.pdf
+### Key Files & Directories
 
-### Phase 3: LOL_v4_staging (PENDING)
-Merged features from:
-- `index_v3.html` (34 particles, glueball worldlines, swarm mechanics, flight controller)
-- `tardigradia.html` (18 microbe icons, camera follow, motion sensor, click detail, Android bridge)
+```
+./CSMWip/09_Project_Tracking/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
 
-### Phase 4: TGPU004.htm (PENDING)
-Next-generation Subatomic Worldline Engine V4.0 with integrated physics
+### Configuration
 
-### Phase 5: index_v4.html (PENDING)
+Key environment variables and configuration files:
 
-### Phase 6: CREDITS.md (PENDING)
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
 
-### Phase 7: Git Push to CSM Work in Progress Branch (PENDING)
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
 
-## Methodology
+### Session Lifecycle
 
-Each V4.0 document follows the **"above my pay grade, above my education level"** standard:
-- 90-minute read depth
-- Definitive research without saying "curt"
-- Highly technical engineering and mathematical exposition
-- 14 parts per topic covering foundations through experimental signatures
-- One-electron universe ontology integrated throughout
-- 2022-2026 experimental data incorporated (LHC Run 3, KATRIN, LIGO O4, JWST, NIF, FLAG 2024, etc.)
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
 
-## Source Materials
+### Build & Validation
 
-All source documents located in:
-- `/DeepResearch/SubParticlesV1/` — 33 V2.0 deep dives + 4 PDFs
-- `/DeepResearch/SubParticlesV3/` — Previous V3.0 4-series (56 docs)
-- `/DeepResearch/SubParticlesV1/Tardigradia/` — LOL_v2_staging, TGPU HTML files
-- `/CSMApps/landolil/v7b/src/main/assets/tardigradia.html` — Working Android implementation
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMWip), 
+explicit parent-child relationship (CSMWip)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMWip/09_Project_Tracking`
+- **Chunks**: `./CSMWip/09_Project_Tracking/README_chunks/`
+- **Manifest**: `./CSMWip/09_Project_Tracking/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMWip/09_Project_Tracking/memory/`
+- **Runner Files**: `./CSMWip/09_Project_Tracking/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMWip (`CSMWip`)
+- **Category Peers**: Other projects in CSMWip
+- **File Count**: 10 files
 
 ---
 
-*This work is a "soup of the particles of the universe" gathered by Jason Brodsky, built on the shoulders of giants.*
+*README generated for 09_Project_Tracking — Part of Another Project*
+*Category: CSMWip | Files: 10 | Parent: CSMWip*
+*Generated using write_large_file.py IncrementalDocumentWriter*
