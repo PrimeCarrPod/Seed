@@ -6002,6 +6002,56 @@
         "size": 773,
         "sha256": "fe6efe29a12fb24a24b8266748f326f7f270d986a2270dc88089c8239dc46b5c"
       }
+    },
+    "DOC-34": {
+      "chapter_01_intro.md": {
+        "size": 447,
+        "sha256": "bfd4257956f3a34a4fd73490b011b8e678c58246a5e5e6b688e06f881c30b550"
+      },
+      "chapter_02_1_maintenance__sustainment_sys.md": {
+        "size": 1613,
+        "sha256": "0aa3aa1e8a70cbeaf7d3a29a20b27906f6a4bd95e62fda6e5f084d444f368f22"
+      },
+      "chapter_03_2_inspection_intervals__phase_.md": {
+        "size": 7359,
+        "sha256": "495ebbc4236d7c8fd5340457d7e5807862b026bab650d4115c59cd7addeb644e"
+      },
+      "chapter_04_3_ndt_re-inspection_schedule_p.md": {
+        "size": 1489,
+        "sha256": "60b92ee08dbd65373d680455feff5947163172603ecbb984f7fd0b2d4eb54d49"
+      },
+      "chapter_05_4_repair_procedures.md": {
+        "size": 7495,
+        "sha256": "a379a1e8483cd79caa99cadad822a49befcab91808370f37be009f7793518e36"
+      },
+      "chapter_06_5_component_replacement_schedu.md": {
+        "size": 2198,
+        "sha256": "d1d1470d5faa62d511a17b6fc79a8dfd473815c12d4154b320b49d33c93ecdf8"
+      },
+      "chapter_07_6_condition-based_maintenance_.md": {
+        "size": 2739,
+        "sha256": "42f951bceb3ccc165126e2418ca9e282251ba5242c9c8312bdef138c399a57f8"
+      },
+      "chapter_08_7_supply_chain__obsolescence_m.md": {
+        "size": 2475,
+        "sha256": "7b7c754921f8ca67aa92959d87f83436b695c66c80591060408cec7b7305b2fa"
+      },
+      "chapter_09_8_traceability_matrix.md": {
+        "size": 573,
+        "sha256": "7c788e0b297b7f8f6ec0ea87df37ae965e0d5e0cab7ff10427b5b08b8123240a"
+      },
+      "chapter_10_9_standards_compliance_summary.md": {
+        "size": 643,
+        "sha256": "349f27dfac4aca3f92c3f4a84c0269cf5e1c2f6bdf07427d8d6148145b7b8eaf"
+      },
+      "chapter_11_10_formulas_reference.md": {
+        "size": 1380,
+        "sha256": "1f09a1e03114df03617119ee99d02736d35cb6498087b6545629d136252c3476"
+      },
+      "chapter_12_11_tbd_markers.md": {
+        "size": 800,
+        "sha256": "9627f65b7c5d1f8b3318d98a34d3b32fa7b34491f3bf7b80f80e9e5596388a2f"
+      }
     }
   }
 }
