@@ -17,6 +17,21 @@ FBG Array Specification:
   - Strain sensitivity: K_ε = 1.2 pm/με
 ```
 
+**Bragg Wavelength Shift (Strain + Temperature):**
+```
+$\Delta\lambda_B = \lambda_B (K_\varepsilon \Delta\varepsilon + K_T \Delta T)$
+```
+
+**Strain Sensitivity Coefficient:**
+```
+$K_\varepsilon = \frac{\Delta\lambda_B}{\lambda_B \Delta\varepsilon} = 1 - p_e pprox 0.78$
+```
+
+**Temperature Sensitivity Coefficient:**
+```
+$K_T = \frac{\Delta\lambda_B}{\lambda_B \Delta T} = \alpha + \xi pprox 10 \text{ pm/}^\circ\text{C}$
+```
+
 #### 2.1.2 Multiplexing Strategy
 Wavelength Division Multiplexing (WDM) with 50 FBGs per fiber, 4 fibers per layer, 12 layers = 2400 FBGs total:
 
@@ -26,7 +41,22 @@ WDM Channel Allocation:
   Wavelength range: 1510-1590 nm (80 nm bandwidth)
   Channels per fiber: N_ch = 50 (with 0.4 nm guard band)
   Interrogator: Swept-wavelength laser (1510-1590 nm, 1 kHz sweep)
-  Resolution: δλ = 1 pm → δε = 0.83 με, δT = 0.1°C
+  Resolution: $\delta\lambda = 1$ pm $\to \delta\varepsilon = 0.83$ με, $\delta T = 0.1^\circ$C
+```
+
+**Channel Capacity (WDM):**
+```
+$N_{\text{ch}} = \frac{\Delta\lambda_{\text{bandwidth}}}{\Delta\lambda_{\text{ch}} + \Delta\lambda_{\text{guard}}}$
+```
+
+**Signal-to-Noise Ratio (FBG):**
+```
+$\text{SNR} = \frac{R \cdot P_{\text{in}}}{P_{\text{ASE}} + P_{\text{shot}} + P_{\text{thermal}}}$
+```
+
+**Interrogation Bandwidth:**
+```
+$B_{\text{int}} = \frac{c}{\lambda^2} \Delta\lambda_{\text{sweep}} \cdot f_{\text{sweep}}$
 ```
 
 #### 2.1.3 Cross-Sensitivity Compensation
@@ -41,6 +71,16 @@ Strain-Temperature Decoupling:
   Solution:
     ΔT = (Δλ₂ - Δλ₁ × K_T2/K_T1) / (K_T2 - K_ε1 × K_T2/K_T1)
     Δε = (Δλ₁ - K_T1 × ΔT) / K_ε1
+```
+
+**Matrix Inversion Solution:**
+```
+$\begin{bmatrix} \Delta\varepsilon \\ \Delta T \end{bmatrix} = \frac{1}{K_{\varepsilon1}K_{T2} - K_{\varepsilon2}K_{T1}} \begin{bmatrix} K_{T2} & -K_{T1} \\ -K_{\varepsilon2} & K_{\varepsilon1} \end{bmatrix} \begin{bmatrix} \Delta\lambda_1 \\ \Delta\lambda_2 \end{bmatrix}$
+```
+
+**Condition Number (Sensitivity):**
+```
+$\kappa = \frac{\sigma_{\max}(M)}{\sigma_{\min}(M)}$  where $M$ = sensitivity matrix
 ```
 
 ### 2.2 Optical Frequency Domain Reflectometry (OFDR) — Rayleigh Scatter

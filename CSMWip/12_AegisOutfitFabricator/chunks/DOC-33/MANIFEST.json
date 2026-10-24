@@ -4,8 +4,8 @@
     "sha256": "fa228ea277d0ecde43c43833949f339823f258219265ae25b370a5c771d9c2cc"
   },
   "chapter_02_1_deployment_integration_syste.md": {
-    "size": 1732,
-    "sha256": "c4519ee9527ed4df214b415ab8fe5e29ba7f61a02c6a03bfef893893847c2681"
+    "size": 2068,
+    "sha256": "2cd0c0fc0419a249e505e89cac43ca4367f67a995a5a6048f4e76bc09add6604"
   },
   "chapter_03_2_packaging__transport__iso_co.md": {
     "size": 4270,
@@ -40,10 +40,18 @@
     "sha256": "25eadc4a1d5359bc76210ac6c9ed5ea333b9a306c1293ac25b019a1ad46282c1"
   },
   "chapter_11_10_formulas_reference.md": {
-    "size": 1311,
-    "sha256": "8cee6de5691aad72a0134d8ed69ef3a36ec394a59b9c2f7e8fe5c1983321d0cf"
+    "size": 1313,
+    "sha256": "50df447c5caa731be6a17103adbb50fa620715a550253ff4415126681b296160"
   },
   "chapter_12_11_tbd_markers.md": {
+    "size": 773,
+    "sha256": "fe6efe29a12fb24a24b8266748f326f7f270d986a2270dc88089c8239dc46b5c"
+  },
+  "chapter_12_11_additional_formulas_referen.md": {
+    "size": 3015,
+    "sha256": "5b69fffd8c4bc00e4e6221cae73dab5ce4dc1bdb60635e91ecf48509be91f39e"
+  },
+  "chapter_13_11_tbd_markers.md": {
     "size": 773,
     "sha256": "fe6efe29a12fb24a24b8266748f326f7f270d986a2270dc88089c8239dc46b5c"
   }

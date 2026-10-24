@@ -13,6 +13,16 @@ Directed energy protection manufacturing follows controlled sequence:
 7. Final Inspection → Directed energy and thermal tests
 ```
 
+**Deposition Rate (E-beam):**
+```
+$\dot{d} = \frac{M}{\rho N_A} \cdot J_{ion}$  where $J_{ion}$ = ion current density
+```
+
+**Coating Uniformity:**
+```
+$U = 1 - \frac{d_{max} - d_{min}}{d_{max} + d_{min}}$  target $U > 0.95$
+```
+
 ### 7.2 Non-Destructive Evaluation
 Quality assurance employs period-compatible inspection methods:
 
@@ -36,3 +46,13 @@ Quality assurance employs period-compatible inspection methods:
 - Spectrophotometer for reflectance/transmittance (200-2500 nm)
 - Laser reflectometer for specific wavelength measurement
 - Goniophotometer for angular reflectance distribution
+
+**Spectral Reflectance:**
+```
+$R(\lambda) = \left| \frac{n(\lambda) - 1}{n(\lambda) + 1} \right|^2$
+```
+
+**Integrated Reflectance:**
+```
+$R_{int} = \frac{\int R(\lambda) S(\lambda) d\lambda}{\int S(\lambda) d\lambda}$
+```

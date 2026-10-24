@@ -7,7 +7,7 @@ Validation follows MIL-STD-461G, IEC 61000-4-2 with Renaissance-specific adaptat
 - Irradiance: 10 MW/cm² (CW) at 1064 nm
 - Exposure: 30 seconds
 - Measurement: Surface temperature, mass loss, reflectivity change
-- Acceptance: ΔT ≤300°C, mass loss ≤0.2 mm, reflectivity ≥90%
+- Acceptance: $\Delta T \le 300^\circ$C, mass loss $\le 0.2$ mm, reflectivity $\ge 90\%$
 
 **Laser Pulsed Test (IEC 60825-2):**
 - Fluence: 100 J/cm² (10 ns pulse) at 1064 nm
@@ -25,7 +25,7 @@ Validation follows MIL-STD-461G, IEC 61000-4-2 with Renaissance-specific adaptat
 - Proton flux: 10^10 particles/cm²·s at 100 MeV
 - Exposure: 60 seconds
 - Measurement: Surface damage, secondary emission, charging
-- Acceptance: No structural damage, secondary emission ≤10% primary flux
+- Acceptance: No structural damage, secondary emission $\le 10\%$ primary flux
 
 **Extended Testing:**
 - Thermal cycling: -40°C to +200°C (100 cycles)
@@ -39,7 +39,7 @@ Key performance indicators for certification:
 **Laser Thresholds:**
 - CW irradiance: ≥10 MW/cm² (1064 nm)
 - Pulsed fluence: ≥100 J/cm² (10 ns, 1064 nm)
-- Combined threshold: ≥5 MW/cm² equivalent (for mixed threats)
+- Combined threshold: $\ge 5$ MW/cm² equivalent (for mixed threats)
 
 **Microwave Thresholds:**
 - Power density: ≥1 kW/cm² (1-100 GHz)

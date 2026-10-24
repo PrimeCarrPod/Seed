@@ -5635,8 +5635,8 @@
     },
     "DOC-24": {
       "chapter_01_intro.md": {
-        "size": 9895,
-        "sha256": "3967f4fcacb42b9365e8e16b39a65cc0561c6be4f13697a1833a4bb12135923d"
+        "size": 11693,
+        "sha256": "7b2e5aac468b37b2b52c50e6b5d590569c1ddd715549eaad88a2d04283accc1e"
       },
       "chapter_02_10_conclusions.md": {
         "size": 1425,
@@ -5653,32 +5653,32 @@
         "sha256": "f679a56d1cbb1eb3ec6d69d82928603498c307ce1c50dafb9b38aa167c945c68"
       },
       "chapter_03_2_ablative_layer.md": {
-        "size": 1672,
-        "sha256": "e18aebc304af30d3c573027972554360798359bda7feb324eb52c3c39eea3793"
+        "size": 2078,
+        "sha256": "5dcde0592fc8f6685819d13fd368f6619bfab95f56303815cf3f5e154bfe60c4"
       },
       "chapter_04_3_reflective_layer.md": {
-        "size": 1513,
-        "sha256": "f9c09ca154ceeb5a3bddac1258c9ac09ed62b9207aa6502d67989f189741d00f"
+        "size": 1595,
+        "sha256": "f16feda77a83b4345454c6019aaca52a2f9d913b8835b9b88e2e98a6fbde0169"
       },
       "chapter_05_4_phase-change_layer.md": {
-        "size": 1171,
-        "sha256": "c7060871e4b9b2e876a75868b9bfdd83541bcc61be5054f8b1b55ae36f5ee23b"
+        "size": 1772,
+        "sha256": "7c67f38f2d1073e2b45985e686ba363e0a9bb6a9533a412aa5dd427346123a7b"
       },
       "chapter_06_5_integration_with_aimes_layer.md": {
-        "size": 1629,
-        "sha256": "590610a469cc3fc55aa7f448fb359a99ac46a4d7304092b76e5c597d8ea0496f"
+        "size": 1868,
+        "sha256": "e2e9d48d45074b5eff7857d6296f3dbbbd196d736ece84941ecd62363fd2bb1f"
       },
       "chapter_07_6_historical_authenticity_pres.md": {
         "size": 1547,
         "sha256": "06537162864d45452b4e81f71070fd5c24d5aeb54c5160ef566b1050070992b9"
       },
       "chapter_08_7_manufacturing_and_quality_co.md": {
-        "size": 1551,
-        "sha256": "e3671f2efbda913642f7c0079d53519a1bae5d40b3cb263582223adc6a5afce3"
+        "size": 2003,
+        "sha256": "4c1de0acd250ea75bd104e4220df6f1f38560d31d42a729c67562ef78c1c5acf"
       },
       "chapter_09_8_testing_and_validation_proto.md": {
-        "size": 2352,
-        "sha256": "7c06a830dac5527b81b5706446c593509abe196898f292b204df29dc9a3a43c1"
+        "size": 2378,
+        "sha256": "a2d854a28dec7c3c2876c51c2d1db01d4047e12567ee1962ef7ccb4f4aff2d5c"
       },
       "chapter_10_9_traceability_matrix.md": {
         "size": 1434,
@@ -5905,8 +5905,8 @@
         "sha256": "f4246d0fd197bfbd127993d4ecbbc8d183dd48e1a2927553ca73cf08c161a2ad"
       },
       "chapter_03_2_distributed_fiber_optic_sens.md": {
-        "size": 5087,
-        "sha256": "0928a798f02547e3ee5d49e6d7ec03f214ef59b9895f32498a08b7aeca92d17a"
+        "size": 6419,
+        "sha256": "a1344e78a21380eb787f075423f67aa31e0041f6094b0badf2b3df87430a2177"
       },
       "chapter_04_3_rf_mesh_network.md": {
         "size": 3748,
@@ -5959,8 +5959,8 @@
         "sha256": "fa228ea277d0ecde43c43833949f339823f258219265ae25b370a5c771d9c2cc"
       },
       "chapter_02_1_deployment_integration_syste.md": {
-        "size": 1732,
-        "sha256": "c4519ee9527ed4df214b415ab8fe5e29ba7f61a02c6a03bfef893893847c2681"
+        "size": 2068,
+        "sha256": "2cd0c0fc0419a249e505e89cac43ca4367f67a995a5a6048f4e76bc09add6604"
       },
       "chapter_03_2_packaging__transport__iso_co.md": {
         "size": 4270,
@@ -5995,10 +5995,18 @@
         "sha256": "25eadc4a1d5359bc76210ac6c9ed5ea333b9a306c1293ac25b019a1ad46282c1"
       },
       "chapter_11_10_formulas_reference.md": {
-        "size": 1311,
-        "sha256": "8cee6de5691aad72a0134d8ed69ef3a36ec394a59b9c2f7e8fe5c1983321d0cf"
+        "size": 1313,
+        "sha256": "50df447c5caa731be6a17103adbb50fa620715a550253ff4415126681b296160"
       },
       "chapter_12_11_tbd_markers.md": {
+        "size": 773,
+        "sha256": "fe6efe29a12fb24a24b8266748f326f7f270d986a2270dc88089c8239dc46b5c"
+      },
+      "chapter_12_11_additional_formulas_referen.md": {
+        "size": 3015,
+        "sha256": "5b69fffd8c4bc00e4e6221cae73dab5ce4dc1bdb60635e91ecf48509be91f39e"
+      },
+      "chapter_13_11_tbd_markers.md": {
         "size": 773,
         "sha256": "fe6efe29a12fb24a24b8266748f326f7f270d986a2270dc88089c8239dc46b5c"
       }

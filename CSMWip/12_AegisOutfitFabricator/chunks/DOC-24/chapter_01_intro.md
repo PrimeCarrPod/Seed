@@ -3,7 +3,7 @@
 
 #### 3.4.1 Adsorption Isotherm (Langmuir Model)
 ```
-q_e = (q_max * K_L * C_e) / (1 + K_L * C_e)
+$q_e = \frac{q_{\max} K_L C_e}{1 + K_L C_e}$
 ```
 where:
 - q_e = equilibrium adsorption amount (mg/g)
@@ -11,9 +11,20 @@ where:
 - K_L = Langmuir constant (L/mg)
 - C_e = equilibrium concentration (mg/L)
 
+**Freundlich Isotherm:**
+```
+$q_e = K_F C_e^{1/n}$
+```
+where K_F = Freundlich constant, n = heterogeneity factor.
+
+**Dubinin-Radushkevich Model:**
+```
+$q_e = q_{\max} \exp\left(-\left(\frac{RT \ln(1 + 1/C_e)}{\beta}\right)^2\right)$
+```
+
 #### 3.4.2 Reaction Kinetics (Pseudo-First-Order)
 ```
-ln(q_t - q_e) = ln(q_0 - q_e) - k_1 * t
+$\ln(q_t - q_e) = \ln(q_0 - q_e) - k_1 t$
 ```
 where:
 - q_t = adsorption amount at time t (mg/g)
@@ -22,15 +33,42 @@ where:
 - k_1 = rate constant (1/min)
 - t = time (min)
 
+**Pseudo-Second-Order Kinetics:**
+```
+$\frac{t}{q_t} = \frac{1}{k_2 q_e^2} + \frac{t}{q_e}$
+```
+
+**Elovich Equation:**
+```
+$q_t = \frac{1}{\beta} \ln(\alpha \beta) + \frac{1}{\beta} \ln t$
+```
+
 #### 3.4.3 Diffusion Through Textile (Fick's Second Law)
 ```
-∂C/∂t = D * (∂²C/∂x²)
+$\frac{\partial C}{\partial t} = D \frac{\partial^2 C}{\partial x^2}$
 ```
 where:
 - C = concentration of threat agent (mg/m³)
 - t = time (s)
 - x = position through textile thickness (m)
 - D = diffusion coefficient (m²/s)
+
+**Diffusion Breakthrough Time:**
+```
+$t_{bt} = \frac{L^2}{6D}$
+```
+where L = textile thickness.
+
+**Permeation Rate:**
+```
+$J = -D \frac{\partial C}{\partial x} = \frac{D(C_0 - C_L)}{L}$
+```
+where C_0 = surface concentration, C_L = interior concentration.
+
+**Mass Transfer Coefficient:**
+```
+$k_m = \frac{D}{L}$
+```
 
 ### 3.5 Integration with AIMES Layer Stack
 
@@ -218,3 +256,45 @@ Validation follows ASTM, EPA, and NIJ standards with Renaissance-specific adapta
 - CIETA Standards: Technical Textile Analysis Methods
 - Victoria & Albert Museum: Textile Conservation Guidelines
 - Metropolitan Museum of Art: Arms and Armor Conservation
+
+### 9.4 Additional Mathematical Models
+
+**Competitive Adsorption (Multi-Component):**
+```
+$q_i = \frac{q_{\max} K_i C_i}{1 + \sum_j K_j C_j}$
+```
+
+**Neutralization Reaction Rate:**
+```
+$\frac{d[Agent]}{dt} = -k_{neut} [STF] [Agent]$
+```
+
+**Protective Factor (PF):**
+```
+$PF = \frac{C_{outside}}{C_{inside}} = \exp\left(\frac{k_{ads} \rho_{MOF} L}{v}\right)$
+```
+
+**MOF Loading Efficiency:**
+```
+$\eta_{MOF} = \frac{m_{MOF,loaded}}{m_{MOF,theoretical}} \times 100\%$
+```
+
+**STF Penetration Depth:**
+```
+$\delta_{STF} = \sqrt{\frac{2 D_{STF} t}{\pi}}$  where $D_{STF}$ = STF diffusion coefficient
+```
+
+**Hydroxyl Radical Yield:**
+```
+$Y_{\cdot OH} = \frac{\text{moles OH produced}}{\text{moles SiO}_2 \text{reacted}}$  target $\ge 0.8$
+```
+
+**Breakthrough Concentration Ratio:**
+```
+$\frac{C_{bt}}{C_0} = \text{erfc}\left(\frac{L}{2\sqrt{Dt}}\right)$  (error function complement)
+```
+
+**Protection Factor vs. Time:**
+```
+$PF(t) = PF_0 \exp(-k_{degrade} t)$  where $k_{degrade}$ = degradation rate constant
+```

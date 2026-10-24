@@ -17,6 +17,21 @@ The deployment integration subsystem enables rapid field assembly of the complet
 | **Edition Reconfig Time** | <90 seconds (single wearer) | CSMFAB078 §3.3 |
 
 ### 1.3 Threat Environment During Deployment
+
+**Shock Response Spectrum:**
+```
+$SRS(f) = \max_t \left| \frac{1}{2\pi f} \int_0^t a(\tau) e^{-2\pi f (t-\tau)} d\tau \right|$
+```
+
+**Vibration Fatigue (Miner's Rule):**
+```
+$D = \sum_{i} \frac{n_i}{N_i}$  where $N_i = (\sigma_i/\sigma_f')^{1/b}$
+```
+
+**Thermal Stress:**
+```
+$\sigma_{\text{th}} = \frac{E \alpha \Delta T}{1-\nu}$
+```
 The suit must survive transport and field staging in:
 - **Temperature**: -40°C to +71°C (MIL-STD-810H 501.6/502.6)
 - **Humidity**: 5-95% RH non-condensing
