@@ -5524,6 +5524,60 @@
         "size": 868,
         "sha256": "ddf3ef8629b9e50bb1c6713752e7d430499586f90c5aeb04194e64b9f7b06c65"
       }
+    },
+    "DOC-22": {
+      "chapter_01_intro.md": {
+        "size": 47,
+        "sha256": "1344d0438c24583867fd912266961b1a21eb74d4135ff11dbe2a0a255b1c9fd2"
+      },
+      "chapter_02_uhtc_ceramic_+_aerogel_micro-e.md": {
+        "size": 132,
+        "sha256": "208c6807cade248ea94916dcbb36f2a7e82c823c2362e13bcf71b13c4fc344b2"
+      },
+      "chapter_03_1_executive_summary.md": {
+        "size": 2505,
+        "sha256": "121a1705a0af8f2c8e07d67f183ee6023467ffae09e45b459904cf199333e5f0"
+      },
+      "chapter_04_2_uhtc_outer_layer__yinmn_blue.md": {
+        "size": 2658,
+        "sha256": "5021c148f6a5d41ddd09160fd4394c2fd0b04f8e8ac4608d4eb8bd99f64f9729"
+      },
+      "chapter_05_3_aerogel_micro-encapsulation_.md": {
+        "size": 2546,
+        "sha256": "e56319e16f7d0b8f62c3f4f0264ccc27f15991895d78a2c7d23325ec4c53290d"
+      },
+      "chapter_06_4_phase-change_material_integr.md": {
+        "size": 1054,
+        "sha256": "93108b6bd81de6f04544afcc53a91654b2571344f65cb519d78a270b054b8840"
+      },
+      "chapter_07_5_edition-specific_thermal_con.md": {
+        "size": 1881,
+        "sha256": "29bc8d3d300d244bff2507e6977867af4b53394787eb0408105cdf72c69ef078"
+      },
+      "chapter_08_6_thermal_test_protocol__csmfa.md": {
+        "size": 1505,
+        "sha256": "ab23c0b94816fdd215418549998d2876a1c7a83cd85e5b42dd405e69e8ba86f4"
+      },
+      "chapter_09_7_cross-references.md": {
+        "size": 1610,
+        "sha256": "8a8c7c6ac6765477f59946b432edcd60e284c79b7223f283f55090c79ff1996b"
+      },
+      "chapter_10_8_edition-specific_formulas.md": {
+        "size": 1080,
+        "sha256": "fdc338fba081e687ff43ed98dd18baf199f2d4a2e96d0a5a421c8c682f8734f1"
+      },
+      "chapter_11_9_standards_compliance_matrix.md": {
+        "size": 946,
+        "sha256": "fcf8688084fb2bb185964a7858ef4b7909ee05dce92a305568938e12ee212f5e"
+      },
+      "chapter_12_10_traceability_matrix.md": {
+        "size": 1491,
+        "sha256": "1a7ab0b7548a3e7ed3bf88bcafbc020e6f2d9705edebb44bb92173c38679b4e5"
+      },
+      "chapter_13_11_conformance_checklist.md": {
+        "size": 935,
+        "sha256": "ee1806567a77ea4afb2667201c476c8a3bfb8c12b30cca95afda235b80845b41"
+      }
     }
   }
 }
