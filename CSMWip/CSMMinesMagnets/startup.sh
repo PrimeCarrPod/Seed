@@ -86,6 +86,21 @@ echo ""
 echo "=== Next Runner Instructions ==="
 cat NEXT_runner_005.md
 
+# ============================================================
+# 8. PROGRESS MARKER - DOC-08 Chapter 1 Research Complete
+# ============================================================
+echo ""
+echo "=== Progress Marker ==="
+echo "DOC-08 Chapter 1 (Port Infrastructure Capability) Research: COMPLETE"
+echo "  - Puerto Antofagasta (EMPORCHA): capacity, berths, REE handling ✓"
+echo "  - Puerto Mejillones: deep water bulk terminals, TGN US$120M expansion ✓"
+echo "  - Puerto San Antonio: container capabilities, Puerto Exterior US$4B project ✓"
+echo "  - Puerto Coronel: forest/bulk operations, most productive port in Chile ✓"
+echo "  - Puerto Punta Arenas: austral gateway, US$85M expansion, Antarctic logistics ✓"
+echo "  - EMPORCHI: Law 19.542 (1997) created 10 autonomous state port companies ✓"
+echo "Next Action: Write Chapter 1 - Port Infrastructure Capability"
+echo "Target: ≥900 lines, 9 chapters total for DOC-08"
+
 echo ""
 echo "=== Session Ready ==="
 echo "Working directory: $(pwd)"
