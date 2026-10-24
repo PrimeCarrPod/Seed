@@ -1,13 +1,205 @@
+## Project Overview
 # 01-MXene-Shielding-Optimization
 
-## MXene Ti₃C₂Tₓ EMI Shielding Optimization
+**Category:** CSMQuantum | **State:** Part of Another Project | **Files:** 3
 
-### Carrington Storm Motors / Safe Pod Engineering Company
+**Parent Project:** CSMQuantum
 
-MXene (Ti₃C₂Tₓ) is the single most transformative material in the Aegis-C portfolio. It achieves extraordinary EMI shielding effectiveness — 92-98 dB at 45 μm thickness — yet commercial MXene costs approximately $2,000 per kilogram. The CSMFAB in-house synthesis route has already reduced that to $55-75/kg through microwave-assisted etching of Ti₃AlC₂ MAX phase precursors. The remaining scientific obstacle is understanding how the surface termination chemistry (-O, -OH, -F) controls the electronic conductivity and dielectric loss that produce SE values.
+## Summary
 
-Classical DFT cannot fully capture the mixed-valence character of Ti at the MXene surface, nor the dynamic hydrogen bonding network of intercalated water and hydroxyl groups that evolves under operational temperature and humidity. A quantum computing partner is needed to perform high-accuracy DFT on 500-2,000 atom supercells of functionalized MXene, resolving the density of states at the Fermi level as a function of termination composition. The ultimate goal is to predict a termination recipe, realizable in the CSMFAB wet chemistry line, that delivers 92+ dB SE at 10 μm instead of the current 45 μm — a 4.5× material thickness reduction and corresponding cost and weight savings.
+# 01-MXene-Shielding-Optimization (3 files, has README)
 
-This paper specifies exact Ti₃AlC₂ MAX phase precursor parameters, the etch chemistry and delamination protocol, the current SE measurement data from 1 kHz to 10 GHz, and the target Hamiltonian for DFT-VQE simulation. The quantum advantage lies in the exponential scaling of the active space for correlated Ti 3d electrons, which classical CCSD(T) cannot handle beyond ~50 atoms. A partner with demonstrated VQE or quantum embedding capability on 100+ logical qubits, and experience with periodic boundary conditions, should find this paper immediately actionable.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-Expected outcome: a computational prediction of optimal -O/-OH/-F surface termination ratio, validated by CSMFAB synthesis and ASTM D4935 SE measurement within 12 months of simulation completion. This is the highest-priority paper in the CSMQuantum series.
+### System Boundaries
+
+The 01-MXene-Shielding-Optimization project operates within the **CSMQuantum** domain, 
+functioning as a **Part of Another Project** with 3 files. 
+It belongs to the CSMQuantum ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+01-MXene-Shielding-Optimization
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMQuantum/01-MXene-Shielding-Optimization/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMQuantum), 
+explicit parent-child relationship (CSMQuantum)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMQuantum/01-MXene-Shielding-Optimization`
+- **Chunks**: `./CSMQuantum/01-MXene-Shielding-Optimization/README_chunks/`
+- **Manifest**: `./CSMQuantum/01-MXene-Shielding-Optimization/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMQuantum/01-MXene-Shielding-Optimization/memory/`
+- **Runner Files**: `./CSMQuantum/01-MXene-Shielding-Optimization/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMQuantum (`CSMQuantum`)
+- **Category Peers**: Other projects in CSMQuantum
+- **File Count**: 3 files
+
+---
+
+*README generated for 01-MXene-Shielding-Optimization — Part of Another Project*
+*Category: CSMQuantum | Files: 3 | Parent: CSMQuantum*
+*Generated using write_large_file.py IncrementalDocumentWriter*

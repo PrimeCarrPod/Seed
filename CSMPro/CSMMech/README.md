@@ -1,23 +1,205 @@
+## Project Overview
+# CSMMech
+
+**Category:** CSMPro | **State:** Part of Another Project | **Files:** 27
+
+**Parent Project:** CSMPro
+
+## Summary
+
 CSMMech — Robotics for the Electromagnetic Battlespace
 
-Machines That Function When Everything Else Fails. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-A robot is only as resilient as its least-shielded circuit. During a Carrington-class geomagnetic storm, induced current can find its way into actuator windings, sensor arrays, and communication modules — turning a multi-million-dollar machine into an articulated paperweight. CSMMech contains the engineering specifications for four robotic systems designed from the ground up to operate in electromagnetic environments that would fry conventional robots. The flagship Phantom MK-1 — a humanoid Aegis-hardened robot with Faraday-cage joint enclosures, GaN power electronics, and a distributed sensor architecture that degrades gracefully. Companion projects: a self-destruct chip system, a zookeeper variant, and a space exploration redesign. The Phantom's hardening premium is approximately twenty-two percent — a number that approaches zero when amortized across the lifesaving value of a search-and-rescue robot that functions when every other machine in a hundred-mile radius has gone dark. And if you want to hear what the Phantom sounds like in action, SiblingFrequency Episode 2 features a sequence where Calder deploys a Phantom unit to a failing substation. The sound design — the hum of the GaN actuators, the click of the Faraday-cage joint enclosures — was built from actual audio recordings of the prototype on the test stand. The robot you hear in the show is the robot on the bench. Step into the laboratory.
+The CSMMech project operates within the **CSMPro** domain, 
+functioning as a **Part of Another Project** with 27 files. 
+It belongs to the CSMPro ecosystem.
 
-THE CONVERSATION
+### Core Principles
 
-A robotics laboratory. The Phantom MK-1 stands on a test platform. On a tablet, SiblingFrequency Episode 2 plays — Calder's voice, precise and metallic: "Phantom unit deployed. ETA to substation, four minutes. Sensors nominal. Actuator torque within spec." Mork is circling the Phantom. Chester is seated on a stool, examining a self-destruct chip prototype under a magnifying lamp, a burrito balanced on his knee. Zirconia stands at the diagnostic display, and beside it, a printout from the CSMReach letter to Michigan — the one that notes the state's robotics and automation workforce, approximately fifteen thousand jobs in advanced manufacturing that depend on electronics surviving electromagnetic stress.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to the CSMMech robotics laboratory. I am Zirconia, director of robotics engineering, and these are Mork and Chester. Before we talk about the Phantom, I want to acknowledge the field of robotics that made it possible. Humanoid robotics draws on decades of research — from Honda's ASIMO to Boston Dynamics' Atlas, from the DARPA Robotics Challenge to the academic labs that advanced walking algorithms, actuator design, and sensor integration. We did not invent the humanoid robot. We hardened it for an electromagnetic environment. Good engineering improves on prior engineering. Mork, introduce the Phantom — and give me something other than the catchphrase.
+### Component Diagram
 
-MORK: (circles the Phantom, gestures at the Faraday-cage joint enclosure) Let me tell you about a robot that walks into a geomagnetic storm and keeps walking. The Phantom MK-1. Thirty-two degrees of freedom. Each actuator housed in a ceramic-reinforced polymer enclosure — zero conductivity. GaN power electronics — 3.4 eV bandgap, 100 krad TID tolerance, single-event latch-up immune. The sensor suite — LiDAR, thermal infrared, ultrasonic, stereo visible-light — distributed across the frame, each sensor in an individual Faraday cage, connected by PMMA polymer optical fiber. Triple-redundant processors in a voting architecture. If the central processor fails, each sensor node has enough local processing power for basic obstacle avoidance. The Phantom degrades gracefully. It does not collapse when the first circuit board fries. And in Episode 2 of SiblingFrequency, when Calder sends the Phantom into a failing substation, the dialogue describes exactly what the Phantom is doing: "Sensor node three is down. Rerouting through nodes one and five. The mesh is holding." That line was written based on the actual distributed-sensor architecture specification in this directory. The showrunners read the Phantom spec and wrote it into the script.
+```
+CSMMech
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: (looks up from the self-destruct chip) The cost premium. Twenty-two percent. That number comes from the cost analysis right here in the Phantom directory — CSMMECH000000001 Phantom MK-1 Cost Analysis V2.0. Actuator housings: twelve percent of the premium. GaN power: six percent. Faraday cages: three percent. Testing and certification: one percent. Twenty-two percent sounds like a lot until you amortize it across the expected lifesaving value. The Phantom can locate survivors in collapsed structures, navigate debris fields without teleoperation, relay medical telemetry through the LoRa mesh. If it saves one life during one Carrington event — one life that a non-hardened robot would have missed because it fried in the first five minutes — the premium approaches zero. For sure.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
 
-ZIRCONIA: The self-destruct chip — CSMMECH02. Mork.
+### Technology Stack
 
-MORK: Hardware security. A hardened robot deployed in a crisis zone may be captured. The self-destruct chip — zero-point-eight percent of unit cost — executes a three-stage destruction sequence: cryptographic key zeroization in under a millisecond, firmware overwrite in three seconds, and if both fail, physical destruction via micro-thermite charge. The chip is designed to the same standard as military-grade cryptographic destruction modules. The design is documented with circuit diagrams and trigger protocols. And the Menehune zookeeper — CSMMECH03 — is the one that makes me smile. A compact Phantom variant for zoo operations during prolonged grid-down. Delivers food, monitors animal health via thermal imaging, repairs fences with dielectric tools, tranquilizes escapees with pneumatic darts. The small problems deserve the same engineering rigor as the big ones.
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
 
-CHESTER: The space variant — CSMMECH04. The Phantom's hardening architecture turns out to be approximately eighty percent of the way to a deep-space radiation hardening spec. GaN power for the transit dose, voting processors for single-event upsets, Faraday cages for surface charging. A Phantom-derived Mars rover could be built for about sixty percent of the cost of a clean-sheet design. (sets down the self-destruct chip) Four robots. One architecture. The Phantom walks into a burning substation. The Menehune feeds the tigers. The self-destruct chip guards the secrets. The space variant explores Mars. (picks up the burrito) Right on.
+### Key Files & Directories
+
+```
+./CSMPro/CSMMech/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMPro), 
+explicit parent-child relationship (CSMPro)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMPro/CSMMech`
+- **Chunks**: `./CSMPro/CSMMech/README_chunks/`
+- **Manifest**: `./CSMPro/CSMMech/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMPro/CSMMech/memory/`
+- **Runner Files**: `./CSMPro/CSMMech/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMPro (`CSMPro`)
+- **Category Peers**: Other projects in CSMPro
+- **File Count**: 27 files
+
+---
+
+*README generated for CSMMech — Part of Another Project*
+*Category: CSMPro | Files: 27 | Parent: CSMPro*
+*Generated using write_large_file.py IncrementalDocumentWriter*

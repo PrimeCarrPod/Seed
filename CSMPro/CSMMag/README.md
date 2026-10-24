@@ -1,17 +1,205 @@
+## Project Overview
+# CSMMag
+
+**Category:** CSMPro | **State:** Part of Another Project | **Files:** 11
+
+**Parent Project:** CSMPro
+
+## Summary
+
 CSMMag — Rare-Earth-Free Magnet Research and Industry Analysis
 
-The Magnets That Will Work When the Grid Does Not. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-A permanent magnet is frozen physics — a crystalline arrangement that holds a magnetic field without current. During a geomagnetic storm, the external field superimposes on that frozen field, shifting the operating point of every motor, generator, and actuator that depends on magnetic precision. CSMMag contains two studies: CSMMagEco2026, identifying new U.S. magnet companies and mapping supply chain vulnerabilities, and CSMMagTech 2026, characterizing rare-earth-free magnet materials — ferrites, alnicos, MnBi alloys — that maintain coercivity stability during geomagnetic disturbances. The Charlemagne fleet's walking leg actuators use samarium-cobalt magnets specified from this research. Step into the magnetics lab.
+The CSMMag project operates within the **CSMPro** domain, 
+functioning as a **Part of Another Project** with 11 files. 
+It belongs to the CSMPro ecosystem.
 
-THE CONVERSATION
+### Core Principles
 
-A magnetics laboratory. A Helmholtz coil generates a calibrated field over magnet samples. Mork is at the gaussmeter. Chester is examining a MnBi sample under a microscope. Zirconia stands at the display.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to CSMMag. I am Zirconia, and these are Mork and Chester. The magnet industry — from the discovery of lodestone in antiquity to the development of neodymium-iron-boron in the 1980s — has a rich history. CSMMag extends that history to include geomagnetic storm resilience. Mork, the trade-off.
+### Component Diagram
 
-MORK: NdFeB magnets: energy product 35 to 50 MGOe, vulnerable to demagnetization during storms. Ferrite: 3 to 5 MGOe, immune. The leg actuator motors on the Charlemagne fleet use samarium-cobalt — an eight percent cost premium for guaranteed storm survival. The MnBi research: energy product 8 to 12 MGOe, no rare earths, promising frontier. And the supply chain study identifies twelve new U.S. magnet manufacturers establishing domestic production capacity.
+```
+CSMMag
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: The domestic supply chain is small — five to eight thousand metric tons projected by 2030 — but it is growing. During a Carrington event, a small domestic supply chain that works is worth more than a large foreign supply chain that does not. Right on.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMPro/CSMMag/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMPro), 
+explicit parent-child relationship (CSMPro)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMPro/CSMMag`
+- **Chunks**: `./CSMPro/CSMMag/README_chunks/`
+- **Manifest**: `./CSMPro/CSMMag/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMPro/CSMMag/memory/`
+- **Runner Files**: `./CSMPro/CSMMag/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMPro (`CSMPro`)
+- **Category Peers**: Other projects in CSMPro
+- **File Count**: 11 files
+
+---
+
+*README generated for CSMMag — Part of Another Project*
+*Category: CSMPro | Files: 11 | Parent: CSMPro*
+*Generated using write_large_file.py IncrementalDocumentWriter*

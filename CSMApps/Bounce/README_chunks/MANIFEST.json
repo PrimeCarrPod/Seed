@@ -1,0 +1,44 @@
+{
+  "readme_01_project_overview.md": {
+    "size": 220,
+    "sha256": "bcccf8bb7f09e763a761ea526a240bfd5565cac9bdb51b69de6bb7fbc739a35c",
+    "chapter": "01",
+    "title": "Project Overview"
+  },
+  "readme_02_architecture__design__williams.md": {
+    "size": 752,
+    "sha256": "514ab1c8ad2124b4e3a8fb7f8a2a609ad71d3b17405c51d9e6b0c5274e0dabb1",
+    "chapter": "02",
+    "title": "Architecture & Design \u2014 Williams Heuristic"
+  },
+  "readme_03_implementation__keymaker_proto.md": {
+    "size": 1252,
+    "sha256": "58ccde34f37696310aee39060765103a106a76649619eca666d5b4bf120d0ab7",
+    "chapter": "03",
+    "title": "Implementation \u2014 Keymaker Protocol"
+  },
+  "readme_04_operations__el_segundo_protoco.md": {
+    "size": 1109,
+    "sha256": "307143d2d4fb6c4fb144e0d37f0639c133eae6c0ed2137e58f0d51ae7f8ebcea",
+    "chapter": "04",
+    "title": "Operations \u2014 El Segundo Protocol"
+  },
+  "readme_05_three-pronged_heuristic_integr.md": {
+    "size": 1544,
+    "sha256": "97290df26efe4a3c5856113dbf9ac3d697538fb3e335a16fb0ff89b42d954e7b",
+    "chapter": "05",
+    "title": "Three-Pronged Heuristic Integration"
+  },
+  "readme_06_roadmap__future_work.md": {
+    "size": 838,
+    "sha256": "fbba47d7986490a92d65f228e23f74330393f9a44eb2d6cb030bcd489321e5e4",
+    "chapter": "06",
+    "title": "Roadmap & Future Work"
+  },
+  "readme_07_appendix__quick_reference.md": {
+    "size": 1228,
+    "sha256": "4d2d275f47939d9df97e89424985f65da162339fb37feb7eb956a3d1df46cd16",
+    "chapter": "07",
+    "title": "Appendix \u2014 Quick Reference"
+  }
+}

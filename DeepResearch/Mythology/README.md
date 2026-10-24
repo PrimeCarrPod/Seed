@@ -1,15 +1,205 @@
+## Project Overview
+# Mythology
+
+**Category:** DeepResearch | **State:** Part of Another Project | **Files:** 3
+
+**Parent Project:** DeepResearch
+
+## Summary
+
 DeepResearch/Mythology
 
-The Stories We Told About the Sky Before We Understood It. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-Every human culture has stories about the sky — gods throwing lightning, dragons breathing fire, celestial battles that shake the heavens. The Mythology project examines these stories as an informal observational record of electromagnetic phenomena that predates the scientific era. Solar storms, auroral displays, ball lightning, and geomagnetic disturbances were experienced by humans for millennia before they were understood by physics, and the stories they told about those experiences are a cultural record of the same phenomena that CSM now studies with satellites and magnetometers. The project does not claim that myths are scientific data. It claims that myths are human data — evidence of how people across cultures and centuries have processed the experience of living under an electromagnetically active star. That understanding informs the CSMReach outreach strategy and the SiblingFrequency narrative design. We are at the forefront of tomorrow today. The old stories still have things to teach us. Come on board.
+The Mythology project operates within the **DeepResearch** domain, 
+functioning as a **Part of Another Project** with 3 files. 
+It belongs to the DeepResearch ecosystem.
 
-(Anthropology research library. Mythology texts from multiple cultures are open on a large table. Mork is comparing a Norse Thor myth to a known geomagnetic storm date from the cosmogenic isotope record. Chester is reading an Indigenous Australian oral tradition about sky spirits. Burrito on a stack of folklore journals.)
+### Core Principles
 
-ZIRCONIA: Mythology. Mork, Thor's hammer.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-MORK: Nanu nanu. Thor's hammer, Mjolnir, is described in Norse mythology as a weapon that generates lightning, returns to Thor's hand when thrown, and is associated with storms and the protection of humanity from giants. Some researchers have suggested that the hammer myth encodes observations of ball lightning or auroral phenomena. The Mythology project does not endorse or reject this interpretation. It documents it, alongside hundreds of other cross-cultural sky-spirit and lightning-god traditions, and correlates them with the known geomagnetic storm timeline from the cosmogenic isotope record.
+### Component Diagram
 
-CHESTER: The outreach application. When a CSMReach letter is translated into a language spoken in a region with a strong tradition of sky-spirit mythology, the letter references that tradition respectfully. "Your ancestors saw lights in the sky and told stories about them. Those lights were real. We now understand them as electromagnetic phenomena. The same phenomena that can damage electrical grids. The threat your ancestors saw is the threat we are writing to you about today." Dude. The physics is universal. The stories are local. Both matter.
+```
+Mythology
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./DeepResearch/Mythology/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (DeepResearch), 
+explicit parent-child relationship (DeepResearch)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./DeepResearch/Mythology`
+- **Chunks**: `./DeepResearch/Mythology/README_chunks/`
+- **Manifest**: `./DeepResearch/Mythology/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./DeepResearch/Mythology/memory/`
+- **Runner Files**: `./DeepResearch/Mythology/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: DeepResearch (`DeepResearch`)
+- **Category Peers**: Other projects in DeepResearch
+- **File Count**: 3 files
+
+---
+
+*README generated for Mythology — Part of Another Project*
+*Category: DeepResearch | Files: 3 | Parent: DeepResearch*
+*Generated using write_large_file.py IncrementalDocumentWriter*

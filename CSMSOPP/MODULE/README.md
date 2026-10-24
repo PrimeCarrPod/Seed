@@ -1,77 +1,205 @@
-# THE WILLIAMS HEURISTIC — MODULE DIRECTORY
-## CSMSOPP000001 | Module Folder README
+## Project Overview
+# MODULE
+
+**Category:** CSMSOPP | **State:** Part of Another Project | **Files:** 6
+
+**Parent Project:** CSMSOPP
+
+## Summary
+
+# THE WILLIAMS HEURISTIC \u2014 MODULE DIRECTORY (6 files, has README)
+
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
+
+### System Boundaries
+
+The MODULE project operates within the **CSMSOPP** domain, 
+functioning as a **Part of Another Project** with 6 files. 
+It belongs to the CSMSOPP ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+MODULE
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMSOPP/MODULE/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMSOPP), 
+explicit parent-child relationship (CSMSOPP)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMSOPP/MODULE`
+- **Chunks**: `./CSMSOPP/MODULE/README_chunks/`
+- **Manifest**: `./CSMSOPP/MODULE/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMSOPP/MODULE/memory/`
+- **Runner Files**: `./CSMSOPP/MODULE/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMSOPP (`CSMSOPP`)
+- **Category Peers**: Other projects in CSMSOPP
+- **File Count**: 6 files
 
 ---
 
-## FILES IN THIS FOLDER
-
-### `SKILL.md`
-**Primary activation file for Kilo platform deployment.**
-Complete SKILL.md specification: YAML frontmatter (name, description, tags, version) + full XML metaprompt body containing `<role>`, `<situational_directives>`, `<output_format>`, `<constraints>`, `<execution_logic>`, `<examples>`.
-
-**Deploy as:** `~/.kilo/skills/upbeat-williams-drafter/SKILL.md`
-
-### `WILLIAMS-HEURISTIC-CORE-MODULE.md`
-**Primary context document for direct LLM loading.**
-Complete operational specification: who the persona is, values, severity calibration, output format, prohibitions, quality standards. Primary document to include in system prompt or context when deploying outside the Kilo skill framework.
-
-**Use as:** Full system context / prepended context / RAG-retrievable document
-
-### `PERSONA-VALUES.md`
-**Deep values and character architecture.**
-The human story behind the technical specification. Why the persona operates as it does, grounded in Williams' psychological architecture. Critical for ensuring the AI understands the difference between performing warmth and orienting toward genuine human service.
-
-**Use as:** Companion to CORE-MODULE.md for full contextual grounding
-
-### `LETTERHEAD-TEMPLATES.md`
-**Document template library.**
-Five complete templates (Memo, SOP, Emergency, External Letter, Email) plus a motto library. LLM populates with specific content per SKILL.md instructions.
-
-**Use as:** Reference or Level 3 asset loaded when document generation requested
-
----
-
-## HOW TO DEPLOY
-
-### Option A: Kilo Platform
-1. Create: `~/.kilo/skills/upbeat-williams-drafter/`
-2. Copy `SKILL.md` there
-3. Copy `LETTERHEAD-TEMPLATES.md` to `~/.kilo/skills/upbeat-williams-drafter/assets/`
-4. Skill auto-discovers at startup (Level 1: ~100 tokens)
-5. Activates when user requests correspondence (Level 2: full instructions)
-6. Templates load on demand (Level 3: assets)
-
-### Option B: Direct System Context (any LLM)
-Load in order:
-1. `WILLIAMS-HEURISTIC-CORE-MODULE.md`
-2. `PERSONA-VALUES.md`
-3. `LETTERHEAD-TEMPLATES.md`
-
-Then assign the communication task.
-
-### Option C: Parallel Agent Deployment (Kilo multi-agent)
-Orchestrator distributes tasks to sub-agents each loaded with SKILL.md. Each generates at the appropriate severity level. Orchestrator verifies consistency of critical data across all outputs.
-
----
-
-## WHAT THE MODULE GENERATES
-
-Every output contains exactly two sections:
-
-**SECTION 1 — META-COMMENTARY:** Williams-register banter proportional to severity. Always ends with a bridge line to the deliverable.
-
-**SECTION 2 — CORE DELIVERABLE:** SOP/memo/letter/email — precisely formatted, completely accurate, imperative-led, bulleted where appropriate. Every number exact. One warm closing line.
-
----
-
-## THE REMINDER
-
-This module is not humor layered on documents. It is a communication architecture that uses humor as medicine — the psychological mechanism that opens human attention to receive information it might otherwise fail to absorb under stress.
-
-The humor serves the document's effectiveness. The empathy serves the recipient's capacity to act. The precision is the gift that makes everything else matter.
-
-*Nanu Nanu.*
-
----
-
-*CSMSOPP000001 | Williams Heuristic LLM Module v1.0*
+*README generated for MODULE — Part of Another Project*
+*Category: CSMSOPP | Files: 6 | Parent: CSMSOPP*
+*Generated using write_large_file.py IncrementalDocumentWriter*

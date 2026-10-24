@@ -1,3 +1,4 @@
+## Project Overview
 # __AGENTS_OF_AEGIS_RADIO__
 
 **Category:** CSMRadio | **State:** Part of Another Project | **Files:** 46
@@ -9,12 +10,14 @@
 Agents of Aegis Radio \u2014 active production (46 files, updated Oct 2026)
 
 ---
-
+## Architecture & Design — Williams Heuristic
 ## Architecture & Design — Williams Heuristic
 
 ### System Boundaries
 
-The __AGENTS_OF_AEGIS_RADIO__ project operates within the **CSMRadio** domain, functioning as a **Part of Another Project** with 46 files. It belongs to the CSMRadio ecosystem.
+The __AGENTS_OF_AEGIS_RADIO__ project operates within the **CSMRadio** domain, 
+functioning as a **Part of Another Project** with 46 files. 
+It belongs to the CSMRadio ecosystem.
 
 ### Core Principles
 
@@ -34,6 +37,7 @@ __AGENTS_OF_AEGIS_RADIO__
 └── Testing Harness
 ```
 
+## Implementation — Keymaker Protocol
 ## Implementation — Keymaker Protocol
 
 ### Technology Stack
@@ -61,13 +65,14 @@ __AGENTS_OF_AEGIS_RADIO__
 
 ### Configuration
 
-Key configuration files:
+Key environment variables and configuration files:
 
 - `AGENTS.md` — Project-specific conventions and commands
 - `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
 - `memory/YYYY-MM-DD.md` — Raw daily logs
 - `NEXT_runner_XXX.md` — Next session instructions
 
+## Operations — El Segundo Protocol
 ## Operations — El Segundo Protocol
 
 ### Session Lifecycle
@@ -99,6 +104,7 @@ python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
 
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
@@ -107,7 +113,8 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 - **Purpose**: Define what the system *is* and *why* it exists
 - **Method**: Boundary analysis, component mapping, dependency graphs
 - **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
-- **Applied Here**: Clear project categorization (CSMRadio), explicit parent-child relationship (CSMRadio)
+- **Applied Here**: Clear project categorization (CSMRadio), 
+explicit parent-child relationship (CSMRadio)
 
 ### Keymaker Protocol — Implementation Precision
 
@@ -134,6 +141,7 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
+## Roadmap & Future Work
 
 ### Immediate (Next 1-2 Sessions)
 
@@ -151,11 +159,12 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project (CSMRadio) workflows
+- [ ] Integrate with parent project ({self.parent}) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
+## Appendix — Quick Reference
 ## Appendix — Quick Reference
 
 ### Key Commands

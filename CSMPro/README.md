@@ -1,20 +1,23 @@
-#  and Performance Verification
+## Project Overview
+# CSMPro
 
-**Category:**  Validation | **State:** Part of Another Project | **Files:** CSMTest
+**Category:** TopLevel | **State:** Whole Project | **Files:** 1364
 
-**Parent Project:** CSMPro
+**Parent Project:** Top-Level
 
 ## Summary
 
-CSMTest — Product Testing
+CSMPro — Infrastructure Resilience Proposals
 
 ---
-
+## Architecture & Design — Williams Heuristic
 ## Architecture & Design — Williams Heuristic
 
 ### System Boundaries
 
-The  and Performance Verification project operates within the ** Validation** domain, functioning as a **Part of Another Project** with CSMTest files. It belongs to the CSMPro ecosystem.
+The CSMPro project operates within the **TopLevel** domain, 
+functioning as a **Whole Project** with 1364 files. 
+It is a top-level project.
 
 ### Core Principles
 
@@ -26,7 +29,7 @@ The  and Performance Verification project operates within the ** Validation** do
 ### Component Diagram
 
 ```
- and Performance Verification
+CSMPro
 ├── Core Module
 ├── Interface Layer
 ├── Data Persistence
@@ -34,6 +37,7 @@ The  and Performance Verification project operates within the ** Validation** do
 └── Testing Harness
 ```
 
+## Implementation — Keymaker Protocol
 ## Implementation — Keymaker Protocol
 
 ### Technology Stack
@@ -48,7 +52,7 @@ The  and Performance Verification project operates within the ** Validation** do
 ### Key Files & Directories
 
 ```
-CSMPro/
+./CSMPro/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
 ├── TODO.md              # Task hierarchy
@@ -61,13 +65,14 @@ CSMPro/
 
 ### Configuration
 
-Key configuration files:
+Key environment variables and configuration files:
 
 - `AGENTS.md` — Project-specific conventions and commands
 - `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
 - `memory/YYYY-MM-DD.md` — Raw daily logs
 - `NEXT_runner_XXX.md` — Next session instructions
 
+## Operations — El Segundo Protocol
 ## Operations — El Segundo Protocol
 
 ### Session Lifecycle
@@ -99,6 +104,7 @@ python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
 
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
@@ -107,7 +113,8 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 - **Purpose**: Define what the system *is* and *why* it exists
 - **Method**: Boundary analysis, component mapping, dependency graphs
 - **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
-- **Applied Here**: Clear project categorization ( Validation), explicit parent-child relationship (CSMPro)
+- **Applied Here**: Clear project categorization (TopLevel), 
+explicit parent-child relationship (N/A)
 
 ### Keymaker Protocol — Implementation Precision
 
@@ -134,6 +141,7 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
+## Roadmap & Future Work
 
 ### Immediate (Next 1-2 Sessions)
 
@@ -151,11 +159,12 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project (CSMPro) workflows
+- [ ] Integrate with parent project ({self.parent}) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
+## Appendix — Quick Reference
 ## Appendix — Quick Reference
 
 ### Key Commands
@@ -177,20 +186,19 @@ git add -A && git commit -m '<type>: <description>' && git push
 
 ### File Locations
 
-- **Project Root**: `CSMPro`
-- **Chunks**: `CSMPro/README_chunks/`
-- **Manifest**: `CSMPro/README_chunks/MANIFEST.json`
-- **Memory Logs**: `CSMPro/memory/`
-- **Runner Files**: `CSMPro/NEXT_runner_*.md`
+- **Project Root**: `./CSMPro`
+- **Chunks**: `./CSMPro/README_chunks/`
+- **Manifest**: `./CSMPro/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMPro/memory/`
+- **Runner Files**: `./CSMPro/NEXT_runner_*.md`
 
 ### Related Projects
 
-- **Parent**: CSMPro (`CSMPro`)
-- **Category Peers**: Other projects in  Validation
-- **File Count**: CSMTest files
+- **Category Peers**: Other projects in TopLevel
+- **File Count**: 1364 files
 
 ---
 
-*README generated for  and Performance Verification — Part of Another Project*
-*Category:  Validation | Files: CSMTest | Parent: CSMPro*
+*README generated for CSMPro — Whole Project*
+*Category: TopLevel | Files: 1364 | Parent: N/A*
 *Generated using write_large_file.py IncrementalDocumentWriter*

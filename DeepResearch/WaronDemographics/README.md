@@ -1,15 +1,205 @@
+## Project Overview
+# WaronDemographics
+
+**Category:** DeepResearch | **State:** Part of Another Project | **Files:** 7
+
+**Parent Project:** DeepResearch
+
+## Summary
+
 DeepResearch/WaronDemographics
 
-The Population Dynamics of a Post-Carrington World. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-A Carrington event will not kill people directly. It will kill them indirectly — through the collapse of the electrical systems that provide water, food, healthcare, and public safety. But those deaths will not be uniformly distributed across populations. The elderly, the medically fragile, the economically vulnerable, and the geographically isolated will die at higher rates. The regions with the weakest healthcare infrastructure will experience the highest excess mortality. The WaronDemographics project models the demographic impact of a Carrington-class event — the excess mortality by age, income, geography, and pre-existing health status — and quantifies what CSM hardening can prevent. The project is stark. It models deaths. It does so because the alternative — not modeling them — is to pretend that the humanitarian cost of a Carrington event is unknowable, which makes it unactionable. The numbers are difficult. They are also necessary. We are at the forefront of tomorrow today. The demographics are modeled. The prevention is priced. Come on board.
+The WaronDemographics project operates within the **DeepResearch** domain, 
+functioning as a **Part of Another Project** with 7 files. 
+It belongs to the DeepResearch ecosystem.
 
-(Demographics research office. Population pyramids and excess mortality curves fill a large display. Mork is adjusting the healthcare-infrastructure-fragility parameter. Chester is reviewing the excess mortality projections for Tier 3 CSMReach nations. Burrito on the desk — a small comfort.)
+### Core Principles
 
-ZIRCONIA: WaronDemographics. I am Zirconia, and these are Mork and Chester. This is the hardest project in DeepResearch. Mork, the model.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-MORK: Nanu nanu. The model has three layers. Layer one: the grid-collapse layer — which regions lose power, for how long, based on the CSMQuantum geoelectric field model and the national grid topology data from the CSMReach outreach research. Layer two: the healthcare-fragility layer — what is the baseline mortality rate in each region, what percentage of the population depends on electrically powered medical equipment, what is the hospital bed and backup generator capacity. Layer three: the CSM-intervention layer — how much does hardening reduce the excess mortality in each region, based on the CarrPod deployment density, the Charlemagne fleet evacuation capacity, and the water system resilience measures. The model estimates that full CSM intervention reduces excess mortality by 60 to 80 percent in Tier 1 nations and 40 to 60 percent in Tier 3 nations.
+### Component Diagram
 
-CHESTER: The numbers are hard to read. They are supposed to be. The project exists because the alternative — a qualitative description of a "catastrophic" event — does not drive resource allocation. Decision-makers allocate resources to quantified risks. "Approximately 2 to 5 million excess deaths globally in a no-preparation scenario" is a quantified risk. It is also a number that should make anyone who reads it very, very motivated to fund the preparation scenario. Dude. This is the project that nobody wants to read but everyone needs to.
+```
+WaronDemographics
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./DeepResearch/WaronDemographics/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (DeepResearch), 
+explicit parent-child relationship (DeepResearch)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./DeepResearch/WaronDemographics`
+- **Chunks**: `./DeepResearch/WaronDemographics/README_chunks/`
+- **Manifest**: `./DeepResearch/WaronDemographics/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./DeepResearch/WaronDemographics/memory/`
+- **Runner Files**: `./DeepResearch/WaronDemographics/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: DeepResearch (`DeepResearch`)
+- **Category Peers**: Other projects in DeepResearch
+- **File Count**: 7 files
+
+---
+
+*README generated for WaronDemographics — Part of Another Project*
+*Category: DeepResearch | Files: 7 | Parent: DeepResearch*
+*Generated using write_large_file.py IncrementalDocumentWriter*

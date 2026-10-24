@@ -1,15 +1,205 @@
+## Project Overview
+# CSMGenStudy
+
+**Category:** DeepResearch | **State:** Part of Another Project | **Files:** 23
+
+**Parent Project:** DeepResearch
+
+## Summary
+
 DeepResearch/CSMGenStudy
 
-Does Character-Driven Communication Actually Work. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-The CSMGenStudy is Carrington Storm Motors analyzing itself — applying the same rigor to its own communication methods that it applies to MXene characterization. The study is divided into five sub-studies: CORTEX examines the agent personas as cognitive models. FOUNDRY examines the agent generation pipeline. PIPELINE examines the communication architecture. RENDER examines the visual generation. SENTINEL examines the ethical framework. The central question: does character-driven communication improve comprehension and retention of technical information compared to traditional technical writing? If the answer is no, CSM needs to know that and adjust. The study is honest about the possibility. We are at the forefront of tomorrow today. The methods are tested. Come on board.
+The CSMGenStudy project operates within the **DeepResearch** domain, 
+functioning as a **Part of Another Project** with 23 files. 
+It belongs to the DeepResearch ecosystem.
 
-(Research analysis office. The five CSMGenStudy subdirectories are displayed on a monitor. Mork reviews the comprehension test results. Chester reads the ethical framework audit. Burrito on the research desk.)
+### Core Principles
 
-ZIRCONIA: CSMGenStudy. Mork, the central finding.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-MORK: Nanu nanu. Preliminary results: character-driven communication (the agent dossiers) improved comprehension scores by 23 percent and retention at 30 days by 31 percent compared to equivalent technical writing, for non-technical audiences. For technical audiences, the improvement was smaller but still positive — 8 percent comprehension, 12 percent retention. The agents work. The study is ongoing, and the sample size is limited, but the direction is clear.
+### Component Diagram
 
-CHESTER: The SENTINEL sub-study. The ethical framework audit found zero violations of the communication constraints across 10,000 agent messages. The agents do not use fear as a primary motivator. They do not exaggerate the threat. They disclose commercial interests. The constraints are encoded in the COMMS audit system, and the audit system catches violations before they reach an audience. Dude. The ethical framework works because it is automated, not aspirational.
+```
+CSMGenStudy
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./DeepResearch/CSMGenStudy/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (DeepResearch), 
+explicit parent-child relationship (DeepResearch)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./DeepResearch/CSMGenStudy`
+- **Chunks**: `./DeepResearch/CSMGenStudy/README_chunks/`
+- **Manifest**: `./DeepResearch/CSMGenStudy/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./DeepResearch/CSMGenStudy/memory/`
+- **Runner Files**: `./DeepResearch/CSMGenStudy/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: DeepResearch (`DeepResearch`)
+- **Category Peers**: Other projects in DeepResearch
+- **File Count**: 23 files
+
+---
+
+*README generated for CSMGenStudy — Part of Another Project*
+*Category: DeepResearch | Files: 23 | Parent: DeepResearch*
+*Generated using write_large_file.py IncrementalDocumentWriter*

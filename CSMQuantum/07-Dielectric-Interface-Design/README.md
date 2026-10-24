@@ -1,13 +1,205 @@
+## Project Overview
 # 07-Dielectric-Interface-Design
 
-## Dielectric Interface and Grain Boundary Design for Panel Joint Shielding Integrity
+**Category:** CSMQuantum | **State:** Part of Another Project | **Files:** 3
 
-### Carrington Storm Motors / Safe Pod Engineering Company
+**Parent Project:** CSMQuantum
 
-No Aegis-C panel exists in isolation. A CarrPod safe room or vehicle compartment is assembled from multiple shielding panels joined at seams, corners, and feedthrough penetrations. Every joint is a shield discontinuity — an impedance mismatch where electromagnetic waves can diffract, reflect constructively, or leak through capacitive coupling. Current measurements show that panel joints impose an SE penalty of approximately 12 dB relative to the bulk panel material, meaning the joint, not the shield, is the weak link.
+## Summary
 
-The interface architecture consists of a ZrO₂ dielectric gasket compressed between ZrB₂-SiC panel edges, optionally filled with a PEEK or PTFE interlayer to manage galvanic corrosion. The quantum problem is to compute the electron transport across this metal-oxide-polymer-oxide-metal stack using the non-equilibrium Green's function (NEGF) formalism with DFT-level Hamiltonians. The transmission function T(E) across the interface determines both the DC contact resistance (which must exceed 10¹² Ω to prevent galvanic current) and the AC impedance as a function of frequency (which governs SE loss).
+# 07-Dielectric-Interface-Design (3 files, has README)
 
-Classical drift-diffusion and even semiclassical tunneling models are inadequate because the oxide layers are 10-50 nm thick — firmly in the quantum tunneling regime where band alignment, interface dipole formation, and defect-assisted hopping through oxygen vacancies dominate transport. The quantum simulation must resolve the electrostatic potential profile self-consistently across the heterojunction, including image charge effects at the metal-oxide boundaries.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-A quantum computing partner should expect to build NEGF-DFT models of the ZrB₂/ZrO₂/PEEK/ZrO₂/ZrB₂ stack, compute the frequency-dependent transmission, and identify the maximum tolerable oxide thickness and doping density that achieve SE penalty ≤ 6 dB at 10 GHz. This paper documents the current joint design, SE measurement data across joint configurations, and material property targets. The deliverable is a computational specification for the dielectric gasket that closes the joint SE gap.
+### System Boundaries
+
+The 07-Dielectric-Interface-Design project operates within the **CSMQuantum** domain, 
+functioning as a **Part of Another Project** with 3 files. 
+It belongs to the CSMQuantum ecosystem.
+
+### Core Principles
+
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
+
+### Component Diagram
+
+```
+07-Dielectric-Interface-Design
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
+
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
+
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMQuantum/07-Dielectric-Interface-Design/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMQuantum), 
+explicit parent-child relationship (CSMQuantum)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMQuantum/07-Dielectric-Interface-Design`
+- **Chunks**: `./CSMQuantum/07-Dielectric-Interface-Design/README_chunks/`
+- **Manifest**: `./CSMQuantum/07-Dielectric-Interface-Design/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMQuantum/07-Dielectric-Interface-Design/memory/`
+- **Runner Files**: `./CSMQuantum/07-Dielectric-Interface-Design/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMQuantum (`CSMQuantum`)
+- **Category Peers**: Other projects in CSMQuantum
+- **File Count**: 3 files
+
+---
+
+*README generated for 07-Dielectric-Interface-Design — Part of Another Project*
+*Category: CSMQuantum | Files: 3 | Parent: CSMQuantum*
+*Generated using write_large_file.py IncrementalDocumentWriter*

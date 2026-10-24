@@ -1,19 +1,205 @@
+## Project Overview
+# CSMEval
+
+**Category:** CSMReach | **State:** Part of Another Project | **Files:** 358
+
+**Parent Project:** CSMReach
+
+## Summary
+
 CSMEval — Evaluation, Testing, and Quality Assurance
 
-Proving the Shield Works Before the Storm Arrives. Featuring Mork, Chester, and Zirconia.
+---
+## Architecture & Design — Williams Heuristic
+## Architecture & Design — Williams Heuristic
 
-THE QUICK PITCH
+### System Boundaries
 
-A specification is a promise. A measurement is whether the promise was kept. CSMEval is the testing and evaluation division — where every material property claimed in CSMQuantum, every shielding effectiveness asserted in CSMFAB, and every loss reduction projected in CSMinsurance is validated against physical reality. Thirty-five industry-sector evaluation frameworks cover the full spectrum of Carrington preparedness. The CSMEvalEmailBuild and CSMEvalEmailBuildV2 subdirectories contain the evaluation summaries formatted for stakeholder distribution — the documents that a regulator, a procurement officer, or an insurer uses to verify that a CSM product meets its claimed specifications. When the Baker Street Adjuster says, in Episode 5, "Show me the test data," the test data is in this directory. Step into the testing lab.
+The CSMEval project operates within the **CSMReach** domain, 
+functioning as a **Part of Another Project** with 358 files. 
+It belongs to the CSMReach ecosystem.
 
-THE CONVERSATION
+### Core Principles
 
-A testing and evaluation laboratory. Environmental chambers, a reverberation chamber, vector network analyzers. Mork is calibrating a TEM cell. Chester is reviewing test reports, a red pen in one hand and a burrito in the other. Zirconia stands at the evaluation framework index.
+1. **Modularity** — Components are independently deployable and testable
+2. **Traceability** — Every artifact links to its source requirement
+3. **Resilience** — Graceful degradation under partial failure
+4. **Observability** — Comprehensive logging, metrics, and audit trails
 
-ZIRCONIA: Welcome to CSMEval. I am Zirconia, director of quality assurance, and these are Mork and Chester. The tradition of standardized testing — from ASTM to ISO to IEEE — provides the framework we use. We did not invent test protocols. We adapted them to electromagnetic resilience. Mork, the philosophy.
+### Component Diagram
 
-MORK: (looks up from the TEM cell) Trust is built in the measurement. Every CSM specification carries a test protocol: here is the instrument, here is its calibration certificate, here is the uncertainty budget, here is the raw data. Framework 01 — FEMA and state emergency management agencies — defines what a CarrPod must survive before deployment. Framework 02 — NERC and grid regulators — defines GIC blocking device certification. Thirty-five frameworks. Thirty-five standards. Every one co-developed with industry stakeholders through the EmailBuild feedback cycle.
+```
+CSMEval
+├── Core Module
+├── Interface Layer
+├── Data Persistence
+├── Configuration
+└── Testing Harness
+```
 
-CHESTER: The EmailBuild V1 to V2 cycle. Stakeholders reviewed V1. Submitted feedback. Missing test protocols were added. Unrealistic criteria were adjusted. V2 incorporates the feedback. The frameworks improve because the people who use them tell us what they need. Right on.
+## Implementation — Keymaker Protocol
+## Implementation — Keymaker Protocol
 
-ZIRCONIA: The Baker Street Adjuster's question — "Show me the test data" — is answered here. The data is archived. The protocols are published. The instruments are calibrated. Testing never stops.
+### Technology Stack
+
+| Layer | Technology | Version | Purpose |
+|-------|------------|---------|---------|
+| Language | Python/Markdown/Shell | Latest | Primary implementation |
+| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
+| Version Control | Git | — | Distributed workflow |
+| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+
+### Key Files & Directories
+
+```
+./CSMReach/CSMEval/
+├── README.md              # This file
+├── AGENTS.md              # Project conventions
+├── TODO.md              # Task hierarchy
+├── memory/              # Daily session logs
+├── chunks/              # Logical document chunks
+├── FinishedWork/        # Completed documents
+├── scripts/             # Automation utilities
+└── Research/            # Reference materials
+```
+
+### Configuration
+
+Key environment variables and configuration files:
+
+- `AGENTS.md` — Project-specific conventions and commands
+- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
+- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `NEXT_runner_XXX.md` — Next session instructions
+
+## Operations — El Segundo Protocol
+## Operations — El Segundo Protocol
+
+### Session Lifecycle
+
+1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
+2. **Execution** — Process subtasks sequentially with 30s timeout guard
+3. **Heartbeat** — Progress output every 2 minutes (120s interval)
+4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
+5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
+
+### Build & Validation
+
+```bash
+# Verify document integrity
+python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+
+# Reassemble for review
+python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+
+# Compress for storage
+python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+```
+
+### Quality Gates
+
+- All reassembled documents must pass manifest verification
+- Cross-reference validation across related documents
+- Mathematical consistency checks for synthesis documents
+- Material property consistency for engineering specs
+
+## Three-Pronged Heuristic Integration
+## Three-Pronged Heuristic Integration
+
+This project employs the **Williams/Keymaker/El Segundo** triad:
+
+### Williams Heuristic — Architectural Clarity
+
+- **Purpose**: Define what the system *is* and *why* it exists
+- **Method**: Boundary analysis, component mapping, dependency graphs
+- **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
+- **Applied Here**: Clear project categorization (CSMReach), 
+explicit parent-child relationship (CSMReach)
+
+### Keymaker Protocol — Implementation Precision
+
+- **Purpose**: Define *how* the system is built and validated
+- **Method**: Reproducible builds, chapter-based authoring, manifest verification
+- **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
+- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+
+### El Segundo Protocol — Operational Excellence
+
+- **Purpose**: Define *how* the system runs and evolves
+- **Method**: Session resume, heartbeat monitoring, subtask granularity
+- **Output**: `NEXT_runner_XXX.md`, `HEARTBEAT.md`, `memory/` logs
+- **Applied Here**: 30s subtask limit, 2min heartbeat, auto-continue queue
+
+### Integration Matrix
+
+| Phase | Williams | Keymaker | El Segundo |
+|-------|----------|----------|------------|
+| Design | Boundaries | Tech Stack | Session Model |
+| Build | Components | Chunk Pipeline | 30s Timeout |
+| Test | Interfaces | Manifest Verify | Heartbeat |
+| Deploy | Contracts | Reproducible | Handoff |
+| Evolve | Versioning | Migration | Resume |
+
+## Roadmap & Future Work
+## Roadmap & Future Work
+
+### Immediate (Next 1-2 Sessions)
+
+- [ ] Complete README generation and validation
+- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create initial `TODO.md` with milestone breakdown
+- [ ] Set up `memory/` directory for session logging
+
+### Short Term (Next 5 Sessions)
+
+- [ ] Migrate any legacy piece-based documents to chunk format
+- [ ] Implement heartbeat monitoring for this project
+- [ ] Create `NEXT_runner_001.md` with first batch assignments
+- [ ] Document project-specific workflows in `AGENTS.md`
+
+### Long Term (Ongoing)
+
+- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Contribute to cross-project synthesis documents
+- [ ] Maintain document currency with quarterly reviews
+- [ ] Archive completed phases to `FinishedWork/` with compression
+
+## Appendix — Quick Reference
+## Appendix — Quick Reference
+
+### Key Commands
+
+```bash
+# Session startup
+source ../../__Python_Tools/write_large_file.py  # Load utilities
+
+# Document operations
+python3 ../../__Python_Tools/write_large_file.py split <input> <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py concat <chunks_dir> <output>
+python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
+python3 ../../__Python_Tools/write_large_file.py compress <file>
+
+# Git workflow
+git add -A && git commit -m '<type>: <description>' && git push
+```
+
+### File Locations
+
+- **Project Root**: `./CSMReach/CSMEval`
+- **Chunks**: `./CSMReach/CSMEval/README_chunks/`
+- **Manifest**: `./CSMReach/CSMEval/README_chunks/MANIFEST.json`
+- **Memory Logs**: `./CSMReach/CSMEval/memory/`
+- **Runner Files**: `./CSMReach/CSMEval/NEXT_runner_*.md`
+
+### Related Projects
+
+- **Parent**: CSMReach (`CSMReach`)
+- **Category Peers**: Other projects in CSMReach
+- **File Count**: 358 files
+
+---
+
+*README generated for CSMEval — Part of Another Project*
+*Category: CSMReach | Files: 358 | Parent: CSMReach*
+*Generated using write_large_file.py IncrementalDocumentWriter*
