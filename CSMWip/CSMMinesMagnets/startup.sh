@@ -84,7 +84,7 @@ cat RESUME_SESSION_MAGNETS.md
 
 echo ""
 echo "=== Next Runner Instructions ==="
-cat NEXT_runner_004.md
+cat NEXT_runner_005.md
 
 echo ""
 echo "=== Session Ready ==="
