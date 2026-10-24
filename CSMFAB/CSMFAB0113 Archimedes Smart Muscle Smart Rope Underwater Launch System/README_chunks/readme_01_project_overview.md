@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System \u2014 Smart rope actuator / muscle design (138 files)
 

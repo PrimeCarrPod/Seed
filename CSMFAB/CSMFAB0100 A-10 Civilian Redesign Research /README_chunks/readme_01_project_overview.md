@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB0100 A-10 Civilian Redesign Research  \u2014 AEGIS research project #100  (82 files)
 

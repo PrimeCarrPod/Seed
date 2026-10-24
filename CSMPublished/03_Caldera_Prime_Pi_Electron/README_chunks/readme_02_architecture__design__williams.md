@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 03_Caldera_Prime_Pi_Electron project operates within the **CSMPublished** domain, 
+The **03_Caldera_Prime_Pi_Electron** project operates within the **CSMPublished** domain, 
 functioning as a **Part of Another Project** with 15 files. 
 It belongs to the CSMPublished ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the CSMPublished ecosystem.
 
 ```
 03_Caldera_Prime_Pi_Electron
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Complete_Compilations/
+├── Individual_Articles/
+├── Prime_Counting_Evaluation/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

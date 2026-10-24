@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Crustal displacement gold deposition (19 files)
 

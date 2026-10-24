@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Shared Python automation utilities and tooling
 

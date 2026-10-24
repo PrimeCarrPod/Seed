@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity`
-- **Chunks**: `./CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity`
+- **Chunks**: `CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 82
+- **File Types**: .md: 80, .pdf: 3
+- **Languages**: Markdown: 80
+- **Key Directories**: 1
 
 ### Related Projects
 

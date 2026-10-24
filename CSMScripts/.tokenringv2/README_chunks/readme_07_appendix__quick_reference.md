@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMScripts/.tokenringv2`
-- **Chunks**: `./CSMScripts/.tokenringv2/README_chunks/`
-- **Manifest**: `./CSMScripts/.tokenringv2/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMScripts/.tokenringv2/memory/`
-- **Runner Files**: `./CSMScripts/.tokenringv2/NEXT_runner_*.md`
+- **Project Root**: `CSMScripts/.tokenringv2`
+- **Chunks**: `CSMScripts/.tokenringv2/README_chunks/`
+- **Manifest**: `CSMScripts/.tokenringv2/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMScripts/.tokenringv2/memory/`
+- **Runner Files**: `CSMScripts/.tokenringv2/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 4
+- **File Types**: : 4, .md: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 0
 
 ### Related Projects
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMGeneralOutreach project operates within the **CSMReach** domain, 
+The **CSMGeneralOutreach** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 11 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMReach ecosystem.
 
 ```
 CSMGeneralOutreach
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

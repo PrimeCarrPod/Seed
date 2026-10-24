@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB-P004-Substation-Ground-Grid \u2014 Infrastructure hardening proposal (78 files)
 

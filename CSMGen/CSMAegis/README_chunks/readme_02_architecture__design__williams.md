@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMAegis project operates within the **CSMGen** domain, 
+The **CSMAegis** project operates within the **CSMGen** domain, 
 functioning as a **Part of Another Project** with 5 files. 
 It belongs to the CSMGen ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMGen ecosystem.
 
 ```
 CSMAegis
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── COMMS/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __PUBLISH_CSM__ project operates within the **TopLevel** domain, 
+The **__PUBLISH_CSM__** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 19 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 __PUBLISH_CSM__
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── SAPECPublish/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

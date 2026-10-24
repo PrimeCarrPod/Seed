@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 35: Artificial Intelligence Safety Innovation Act Act (15 files)
 

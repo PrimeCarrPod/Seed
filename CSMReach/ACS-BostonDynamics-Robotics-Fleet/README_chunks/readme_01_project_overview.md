@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-BostonDynamics Robotics Fleet \u2014 Corporate partnership profile for BostonDynamics Robotics Fleet (16 files)
 

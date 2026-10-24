@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB-P007-Faraday-Alarm`
-- **Chunks**: `./CSMFAB/CSMFAB-P007-Faraday-Alarm/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB-P007-Faraday-Alarm/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB-P007-Faraday-Alarm/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB-P007-Faraday-Alarm/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB-P007-Faraday-Alarm`
+- **Chunks**: `CSMFAB/CSMFAB-P007-Faraday-Alarm/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB-P007-Faraday-Alarm/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB-P007-Faraday-Alarm/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB-P007-Faraday-Alarm/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 78
+- **File Types**: .md: 79
+- **Languages**: Markdown: 79
+- **Key Directories**: 1
 
 ### Related Projects
 

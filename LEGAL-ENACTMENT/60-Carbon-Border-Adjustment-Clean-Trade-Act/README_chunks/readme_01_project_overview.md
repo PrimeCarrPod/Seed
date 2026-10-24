@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 60: Carbon Border Adjustment Clean Trade Act Act (15 files)
 

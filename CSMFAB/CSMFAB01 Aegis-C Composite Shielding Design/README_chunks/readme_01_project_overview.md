@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB01 Aegis-C Composite Shielding Design \u2014 Project AEGIS Carrington event resilience research (86 files)
 

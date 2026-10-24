@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 27: Public Transit Rail Modernization Act Act (15 files)
 

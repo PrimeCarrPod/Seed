@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The grants project operates within the **CSMReach** domain, 
+The **grants** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 4 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMReach ecosystem.
 
 ```
 grants
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

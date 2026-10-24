@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMProtonics01 Protonic Communication_ Future Systems Design project operates within the **CSMProtonics** domain, 
+The **CSMProtonics01 Protonic Communication_ Future Systems Design** project operates within the **CSMProtonics** domain, 
 functioning as a **Part of Another Project** with 5 files. 
 It belongs to the CSMProtonics ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMProtonics ecosystem.
 
 ```
 CSMProtonics01 Protonic Communication_ Future Systems Design
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

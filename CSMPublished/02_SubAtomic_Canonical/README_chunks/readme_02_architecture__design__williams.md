@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 02_SubAtomic_Canonical project operates within the **CSMPublished** domain, 
+The **02_SubAtomic_Canonical** project operates within the **CSMPublished** domain, 
 functioning as a **Part of Another Project** with 102 files. 
 It belongs to the CSMPublished ecosystem.
 
@@ -18,10 +16,14 @@ It belongs to the CSMPublished ecosystem.
 
 ```
 02_SubAtomic_Canonical
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── A_Worldline/
+├── B_MassSpectrum/
+├── C_HilbertSpace/
+├── D_Couplings/
+├── E_GeneticCode/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

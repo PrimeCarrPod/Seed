@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Placeholder_Articles project operates within the **CSMPrePublish** domain, 
+The **Placeholder_Articles** project operates within the **CSMPrePublish** domain, 
 functioning as a **Part of Another Project** with 3 files. 
 It belongs to the CSMPrePublish ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMPrePublish ecosystem.
 
 ```
 Placeholder_Articles
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

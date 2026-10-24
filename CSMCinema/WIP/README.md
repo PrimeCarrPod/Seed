@@ -5,17 +5,15 @@
 
 **Parent Project:** CSMCinema
 
-## Summary
+### Summary
 
 Work in progress \u2014 active cinematic development (99 files, updated Oct 2026)
 
 ---
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The WIP project operates within the **CSMCinema** domain, 
+The **WIP** project operates within the **CSMCinema** domain, 
 functioning as a **Near-Whole Project** with 99 files. 
 It belongs to the CSMCinema ecosystem.
 
@@ -30,51 +28,54 @@ It belongs to the CSMCinema ecosystem.
 
 ```
 WIP
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Iteration_1/
+├── Iteration_2/
+├── Iteration_3/
+├── Iteration_4/
+├── Iteration_5/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| Docs | Markdown | Latest | Documentation |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./CSMCinema/WIP/
+WIP/
+├── Iteration_1/
+├── Iteration_2/
+├── Iteration_3/
+├── Iteration_4/
+├── Iteration_5/
+├── Iteration_6/
+├── Iteration_7/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
-- `AGENTS.md` — Project-specific conventions and commands
-- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `AGENTS.md` — *To be created*: Project-specific conventions
+- `TODO.md` — *To be created*: Task hierarchy
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
 
 ## Operations — El Segundo Protocol
-## Operations — El Segundo Protocol
-
 ### Session Lifecycle
 
 1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
@@ -82,19 +83,6 @@ Key environment variables and configuration files:
 3. **Heartbeat** — Progress output every 2 minutes (120s interval)
 4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
 5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
-
-### Build & Validation
-
-```bash
-# Verify document integrity
-python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
-
-# Reassemble for review
-python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
-
-# Compress for storage
-python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
-```
 
 ### Quality Gates
 
@@ -104,8 +92,6 @@ python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
-## Three-Pronged Heuristic Integration
-
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Williams Heuristic — Architectural Clarity
@@ -121,7 +107,7 @@ explicit parent-child relationship (CSMCinema)
 - **Purpose**: Define *how* the system is built and validated
 - **Method**: Reproducible builds, chapter-based authoring, manifest verification
 - **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
-- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+- **Applied Here**: Chunk-based documents, SHA256 verification
 
 ### El Segundo Protocol — Operational Excellence
 
@@ -141,32 +127,27 @@ explicit parent-child relationship (CSMCinema)
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
-## Roadmap & Future Work
-
 ### Immediate (Next 1-2 Sessions)
 
-- [ ] Complete README generation and validation
-- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create project-specific `AGENTS.md` conventions
 - [ ] Create initial `TODO.md` with milestone breakdown
 - [ ] Set up `memory/` directory for session logging
+- [ ] Complete README generation and validation
 
 ### Short Term (Next 5 Sessions)
 
-- [ ] Migrate any legacy piece-based documents to chunk format
 - [ ] Implement heartbeat monitoring for this project
 - [ ] Create `NEXT_runner_001.md` with first batch assignments
 - [ ] Document project-specific workflows in `AGENTS.md`
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project ({self.parent}) workflows
+- [ ] Integrate with parent project (CSMCinema) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -180,17 +161,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMCinema/WIP`
-- **Chunks**: `./CSMCinema/WIP/README_chunks/`
-- **Manifest**: `./CSMCinema/WIP/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMCinema/WIP/memory/`
-- **Runner Files**: `./CSMCinema/WIP/NEXT_runner_*.md`
+- **Project Root**: `CSMCinema/WIP`
+- **Chunks**: `CSMCinema/WIP/README_chunks/`
+- **Manifest**: `CSMCinema/WIP/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMCinema/WIP/memory/`
+- **Runner Files**: `CSMCinema/WIP/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 99
+- **File Types**: .md: 100
+- **Languages**: Markdown: 100
+- **Key Directories**: 7
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-LucidMotors EV Manufacturing \u2014 Corporate partnership profile for LucidMotors EV Manufacturing (16 files)
 

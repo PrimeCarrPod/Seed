@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The MEDIA-CORRESPONDENCE project operates within the **CSMReach** domain, 
+The **MEDIA-CORRESPONDENCE** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 12 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,12 @@ It belongs to the CSMReach ecosystem.
 
 ```
 MEDIA-CORRESPONDENCE
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 01-Email-Templates/
+├── 02-Company-Specific/
+├── 03-International-Parties/
+├── 04-Draft-Outreach/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

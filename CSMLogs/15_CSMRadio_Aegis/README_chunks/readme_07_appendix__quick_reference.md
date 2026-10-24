@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMLogs/15_CSMRadio_Aegis`
-- **Chunks**: `./CSMLogs/15_CSMRadio_Aegis/README_chunks/`
-- **Manifest**: `./CSMLogs/15_CSMRadio_Aegis/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMLogs/15_CSMRadio_Aegis/memory/`
-- **Runner Files**: `./CSMLogs/15_CSMRadio_Aegis/NEXT_runner_*.md`
+- **Project Root**: `CSMLogs/15_CSMRadio_Aegis`
+- **Chunks**: `CSMLogs/15_CSMRadio_Aegis/README_chunks/`
+- **Manifest**: `CSMLogs/15_CSMRadio_Aegis/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMLogs/15_CSMRadio_Aegis/memory/`
+- **Runner Files**: `CSMLogs/15_CSMRadio_Aegis/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 1
+- **File Types**: .md: 2
+- **Languages**: Markdown: 2
+- **Key Directories**: 0
 
 ### Related Projects
 

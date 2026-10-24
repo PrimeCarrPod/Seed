@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMWip project operates within the **CSMWip** domain, 
+The **CSMWip** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 1 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMWip ecosystem.
 
 ```
 CSMWip
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 12_AegisOutfitFabricator/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

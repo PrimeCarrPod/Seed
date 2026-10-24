@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __AGENTS_OF_AEGIS_RADIO__ project operates within the **CSMRadio** domain, 
+The **__AGENTS_OF_AEGIS_RADIO__** project operates within the **CSMRadio** domain, 
 functioning as a **Part of Another Project** with 46 files. 
 It belongs to the CSMRadio ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMRadio ecosystem.
 
 ```
 __AGENTS_OF_AEGIS_RADIO__
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

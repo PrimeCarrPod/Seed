@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The __Git_Seed_Recover project operates within the **CSMScripts** domain, 
+The **__Git_Seed_Recover** project operates within the **CSMScripts** domain, 
 functioning as a **Part of Another Project** with 15 files. 
 It belongs to the CSMScripts ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMScripts ecosystem.
 
 ```
 __Git_Seed_Recover
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

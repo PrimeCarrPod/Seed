@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB-P005-Railway-Signal-Isolation \u2014 Infrastructure hardening proposal (78 files)
 

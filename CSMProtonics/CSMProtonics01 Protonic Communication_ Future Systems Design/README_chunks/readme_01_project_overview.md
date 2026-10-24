@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMProtonics
 
-## Summary
+### Summary
 
 CSMProtonics01 \u2014 Protonic communication and future systems design (5 files)
 

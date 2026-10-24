@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB0104 Aegis Fencing for Carrington Event \u2014 Project AEGIS Carrington event resilience research (82 files)
 

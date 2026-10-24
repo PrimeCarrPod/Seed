@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The OrganizedLibrary project operates within the **CSMSubatomic082026** domain, 
+The **OrganizedLibrary** project operates within the **CSMSubatomic082026** domain, 
 functioning as a **Archive (verify before removal)** with 334 files. 
 It is a top-level project.
 
@@ -18,10 +16,12 @@ It is a top-level project.
 
 ```
 OrganizedLibrary
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── ConcatenatedMasters/
+├── CrossCutting/
+├── Particles/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

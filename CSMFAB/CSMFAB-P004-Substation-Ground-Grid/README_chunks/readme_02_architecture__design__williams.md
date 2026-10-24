@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB-P004-Substation-Ground-Grid project operates within the **CSMFAB** domain, 
+The **CSMFAB-P004-Substation-Ground-Grid** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 78 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMFAB-P004-Substation-Ground-Grid
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Substation-Ground-Grid-75/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

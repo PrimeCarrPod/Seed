@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMPro project operates within the **TopLevel** domain, 
+The **CSMPro** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 1364 files. 
 It is a top-level project.
 
@@ -18,10 +16,14 @@ It is a top-level project.
 
 ```
 CSMPro
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMBoard/
+├── CSMInvestor/
+├── CSMMag/
+├── CSMMech/
+├── CSMPRO02 Bridge Resilience Against Carrington Storms /
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

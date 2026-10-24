@@ -25,9 +25,9 @@ def main():
             print(f"Generating README for {project_name}...")
             try:
                 result = subprocess.run([
-                    sys.executable, "README_GENERATOR/generate_readme.py",
+                    sys.executable, "README_GENERATOR/generate_readme_v2.py",
                     project_name, project_path, summary, category, parent, filecount, state
-                ], capture_output=True, text=True, timeout=60)
+                ], capture_output=True, text=True, timeout=120)
                 
                 if result.returncode == 0:
                     print(f"  Success: {result.stdout.strip()}")

@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Archived subatomic research (Sept 2026): current releases, WIP, landolil engine, organized library, prime electron foundation, SubAtomic.Edu, TardigradiaTGPU
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 06-MAX-Phase-Discovery-Space (3 files, has README)
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 01_Flagship_Papers project operates within the **CSMPublished** domain, 
+The **01_Flagship_Papers** project operates within the **CSMPublished** domain, 
 functioning as a **Part of Another Project** with 16 files. 
 It belongs to the CSMPublished ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMPublished ecosystem.
 
 ```
 01_Flagship_Papers
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

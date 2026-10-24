@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMArchive
 
-## Summary
+### Summary
 
 V3-Compendiums — The Next Generation of Integrated Documentation
 

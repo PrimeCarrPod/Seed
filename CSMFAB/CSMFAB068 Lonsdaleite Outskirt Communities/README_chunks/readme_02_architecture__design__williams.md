@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB068 Lonsdaleite Outskirt Communities project operates within the **CSMFAB** domain, 
+The **CSMFAB068 Lonsdaleite Outskirt Communities** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 1 files. 
 It is a top-level project.
 
@@ -18,10 +16,8 @@ It is a top-level project.
 
 ```
 CSMFAB068 Lonsdaleite Outskirt Communities
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

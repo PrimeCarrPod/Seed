@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 40: Supply Chain Resilience Domestic Production Act Act (15 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 64: Forest Carbon Sequestration Wildfire Resilience Act Act (15 files)
 

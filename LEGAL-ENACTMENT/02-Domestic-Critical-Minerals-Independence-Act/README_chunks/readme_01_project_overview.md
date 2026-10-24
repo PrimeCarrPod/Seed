@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 02: Domestic Critical Minerals Independence Act Act (14 files)
 

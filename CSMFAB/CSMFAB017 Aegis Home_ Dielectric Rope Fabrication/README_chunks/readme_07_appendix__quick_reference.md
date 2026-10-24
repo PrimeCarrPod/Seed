@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication`
-- **Chunks**: `./CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication`
+- **Chunks**: `CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 96
+- **File Types**: .md: 85, .pdf: 10, .zip: 1, .html: 1
+- **Languages**: Markdown: 85, HTML: 1
+- **Key Directories**: 1
 
 ### Related Projects
 

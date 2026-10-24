@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub`
-- **Chunks**: `./CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub`
+- **Chunks**: `CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB051 Volt-Link Multi-Charger Coupling Hub/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 85
+- **File Types**: .md: 81, .sh: 5
+- **Languages**: Markdown: 81, Shell: 5
+- **Key Directories**: 2
 
 ### Related Projects
 

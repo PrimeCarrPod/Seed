@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Artificial Hemoglobin Survival Research project operates within the **DeepResearch** domain, 
+The **Artificial Hemoglobin Survival Research** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 143 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 Artificial Hemoglobin Survival Research
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── ContentFiles/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

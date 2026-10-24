@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-PPGIndustries Coatings Materials \u2014 Corporate partnership profile for PPGIndustries Coatings Materials (16 files)
 

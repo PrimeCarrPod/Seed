@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 63: Clean Hydrogen Industrial Applications Act Act (15 files)
 

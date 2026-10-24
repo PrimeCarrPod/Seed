@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB021 Aegis Home EMF Detector Design \u2014 Project AEGIS Carrington event resilience research (86 files)
 

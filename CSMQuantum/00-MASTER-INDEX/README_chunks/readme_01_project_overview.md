@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 00-MASTER-INDEX \u2014 Quantum Research Delegation Directory (3 files, has README)
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB051 Volt-Link Multi-Charger Coupling Hub project operates within the **CSMFAB** domain, 
+The **CSMFAB051 Volt-Link Multi-Charger Coupling Hub** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 85 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMFAB051 Volt-Link Multi-Charger Coupling Hub
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 051-Volt-Link-Multi-Charger-Coupling-Hub-75/
+├── DAEMONS/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

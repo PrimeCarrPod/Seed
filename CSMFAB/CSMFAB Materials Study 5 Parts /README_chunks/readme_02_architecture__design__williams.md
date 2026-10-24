@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB Materials Study 5 Parts  project operates within the **CSMFAB** domain, 
+The **CSMFAB Materials Study 5 Parts ** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 89 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMFAB Materials Study 5 Parts 
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Materials-Study-5-Parts-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

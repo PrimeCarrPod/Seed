@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 55: Public Health Infrastructure Disease Prevention Act Act (15 files)
 

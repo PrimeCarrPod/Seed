@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMDropBox project operates within the **TopLevel** domain, 
+The **CSMDropBox** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 4 files. 
 It is a top-level project.
 
@@ -18,10 +16,8 @@ It is a top-level project.
 
 ```
 CSMDropBox
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

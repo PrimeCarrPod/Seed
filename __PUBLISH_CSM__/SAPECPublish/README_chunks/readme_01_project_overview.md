@@ -5,7 +5,7 @@
 
 **Parent Project:** __PUBLISH_CSM__
 
-## Summary
+### Summary
 
 SAPECPublish \u2014 Publishing pipeline (9 files)
 

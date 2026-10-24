@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-BetaTechnologies ElectricAviation \u2014 Corporate partnership profile for BetaTechnologies ElectricAviation (16 files)
 

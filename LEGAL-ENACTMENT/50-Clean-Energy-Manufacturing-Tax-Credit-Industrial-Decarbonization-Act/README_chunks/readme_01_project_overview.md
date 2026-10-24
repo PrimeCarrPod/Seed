@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 50: Clean Energy Manufacturing Tax Credit Industrial Decarbonization Act Act (15 files)
 

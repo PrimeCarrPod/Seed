@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMPublished project operates within the **TopLevel** domain, 
+The **CSMPublished** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 187 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMPublished
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── 01_Flagship_Papers/
+├── 02_SubAtomic_Canonical/
+├── 03_Caldera_Prime_Pi_Electron/
+├── 04_Synthesis_Compendiums/
+├── 05_LaTeX_Publications/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

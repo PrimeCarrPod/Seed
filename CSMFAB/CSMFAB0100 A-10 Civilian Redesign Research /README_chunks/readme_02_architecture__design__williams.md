@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB0100 A-10 Civilian Redesign Research  project operates within the **CSMFAB** domain, 
+The **CSMFAB0100 A-10 Civilian Redesign Research ** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 82 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMFAB0100 A-10 Civilian Redesign Research 
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 0100-A-10-Civilian-Redesign-Research-75/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMMinesMagnets project operates within the **TopLevel** domain, 
+The **CSMMinesMagnets** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 8 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMMinesMagnets
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── chunks/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./DeepResearch/Pressure Vessels and Human Physiology`
-- **Chunks**: `./DeepResearch/Pressure Vessels and Human Physiology/README_chunks/`
-- **Manifest**: `./DeepResearch/Pressure Vessels and Human Physiology/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./DeepResearch/Pressure Vessels and Human Physiology/memory/`
-- **Runner Files**: `./DeepResearch/Pressure Vessels and Human Physiology/NEXT_runner_*.md`
+- **Project Root**: `DeepResearch/Pressure Vessels and Human Physiology`
+- **Chunks**: `DeepResearch/Pressure Vessels and Human Physiology/README_chunks/`
+- **Manifest**: `DeepResearch/Pressure Vessels and Human Physiology/README_chunks/MANIFEST.json`
+- **Memory Logs**: `DeepResearch/Pressure Vessels and Human Physiology/memory/`
+- **Runner Files**: `DeepResearch/Pressure Vessels and Human Physiology/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 155
+- **File Types**: .md: 156
+- **Languages**: Markdown: 156
+- **Key Directories**: 1
 
 ### Related Projects
 

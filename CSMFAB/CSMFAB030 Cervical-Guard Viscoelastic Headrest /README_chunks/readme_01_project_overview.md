@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB030 Cervical-Guard Viscoelastic Headrest  \u2014 Whole Project (standalone) under CSMFAB (86 files)
 

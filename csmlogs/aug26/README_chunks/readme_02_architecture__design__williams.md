@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The aug26 project operates within the **csmlogs** domain, 
+The **aug26** project operates within the **csmlogs** domain, 
 functioning as a **Part of Another Project** with 9 files. 
 It belongs to the csmlogs ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the csmlogs ecosystem.
 
 ```
 aug26
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

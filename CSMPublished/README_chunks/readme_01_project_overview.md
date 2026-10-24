@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Published output repository: flagship papers, subatomic canonical, Caldera prime pi electron, synthesis compendiums, LaTeX publications, read-aloud versions
 

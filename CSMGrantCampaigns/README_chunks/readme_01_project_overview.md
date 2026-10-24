@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 Grant proposal campaigns and funding applications (GrantProposals subproject)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 CSMBiz — Business Planning and Commercial Strategy
 

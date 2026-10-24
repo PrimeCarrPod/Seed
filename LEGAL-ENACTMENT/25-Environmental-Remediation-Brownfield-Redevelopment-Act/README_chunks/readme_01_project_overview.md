@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 25: Environmental Remediation Brownfield Redevelopment Act Act (15 files)
 

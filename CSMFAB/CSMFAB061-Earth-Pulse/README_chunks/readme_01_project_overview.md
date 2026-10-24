@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB061-Earth-Pulse \u2014 Whole Project (standalone) under CSMFAB (78 files)
 

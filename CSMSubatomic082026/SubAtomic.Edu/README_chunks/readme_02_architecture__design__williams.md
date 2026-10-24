@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The SubAtomic.Edu project operates within the **CSMSubatomic082026** domain, 
+The **SubAtomic.Edu** project operates within the **CSMSubatomic082026** domain, 
 functioning as a **Archive (verify before removal)** with 1203 files. 
 It is a top-level project.
 
@@ -18,10 +16,14 @@ It is a top-level project.
 
 ```
 SubAtomic.Edu
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── DeepDives/
+├── Glueball_Single_Electron_Theory_Synthesis/
+├── SubParticlesV1/
+├── SubParticlesV3/
+├── SubParticlesV4/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

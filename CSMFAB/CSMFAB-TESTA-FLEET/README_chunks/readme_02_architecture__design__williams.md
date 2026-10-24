@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB-TESTA-FLEET project operates within the **CSMFAB** domain, 
+The **CSMFAB-TESTA-FLEET** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 445 files. 
 It is a top-level project.
 
@@ -18,10 +16,13 @@ It is a top-level project.
 
 ```
 CSMFAB-TESTA-FLEET
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── COMMON-SHARED/
+├── RESEARCH/
+├── TIER-1-SEEDCOAT/
+├── TIER-2-PODWALL/
+├── TIER-3-TSUNAMIGUARD/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

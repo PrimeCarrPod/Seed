@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB0116-Pocket-Watch-X`
-- **Chunks**: `./CSMFAB/CSMFAB0116-Pocket-Watch-X/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB0116-Pocket-Watch-X/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB0116-Pocket-Watch-X/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB0116-Pocket-Watch-X/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB0116-Pocket-Watch-X`
+- **Chunks**: `CSMFAB/CSMFAB0116-Pocket-Watch-X/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB0116-Pocket-Watch-X/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB0116-Pocket-Watch-X/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB0116-Pocket-Watch-X/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 193
+- **File Types**: .md: 189, .sh: 5
+- **Languages**: Markdown: 189, Shell: 5
+- **Key Directories**: 3
 
 ### Related Projects
 

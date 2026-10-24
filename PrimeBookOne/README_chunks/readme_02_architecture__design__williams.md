@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The PrimeBookOne project operates within the **TopLevel** domain, 
+The **PrimeBookOne** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 2 files. 
 It is a top-level project.
 
@@ -18,10 +16,8 @@ It is a top-level project.
 
 ```
 PrimeBookOne
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

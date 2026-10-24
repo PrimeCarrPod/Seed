@@ -5,17 +5,15 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 # Seed \u2014 Massive fabrication research portfolio (8000+ files) covering Project AEGIS (Carrington event resilience), drone designs, smart materials, home hardening, and 100+ individual research projects
 
 ---
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB project operates within the **TopLevel** domain, 
+The **CSMFAB** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 8013 files. 
 It is a top-level project.
 
@@ -30,51 +28,60 @@ It is a top-level project.
 
 ```
 CSMFAB
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── BOM-REGISTRY/
+├── CLOUD-NEST/
+├── CSMAegisHome01 M1 Project AEGIS Foundational Research/
+├── CSMAegisHome02 M1chrome Stellar-Chrome Dielectric Coating/
+├── CSMFAB Master Cost Analysis and Market Viability Reports/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| UI | HTML/CSS | WebView | Hybrid UI |
+| Docs | Markdown | Latest | Documentation |
+| Distribution | ZIP/APK | — | Release artifacts |
+| Reference | PDF | — | Technical docs |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./CSMFAB/
+CSMFAB/
+├── BOM-REGISTRY/
+├── CLOUD-NEST/
+├── CSMAegisHome01 M1 Project AEGIS Foundational Research/
+├── CSMAegisHome02 M1chrome Stellar-Chrome Dielectric Coating/
+├── CSMFAB Master Cost Analysis and Market Viability Reports/
+├── CSMFAB Materials Study 5 Parts /
+├── CSMFAB-INCURSION-CLASS/
+├── CSMFAB-P001-Ceramic-Bridge-Bearings-500T/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
-- `AGENTS.md` — Project-specific conventions and commands
-- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `AGENTS.md` — *To be created*: Project-specific conventions
+- `TODO.md` — *To be created*: Task hierarchy
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
 
 ## Operations — El Segundo Protocol
-## Operations — El Segundo Protocol
-
 ### Session Lifecycle
 
 1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
@@ -82,19 +89,6 @@ Key environment variables and configuration files:
 3. **Heartbeat** — Progress output every 2 minutes (120s interval)
 4. **Checkpoint** — Update `TODO.md` and log to `memory/` after each subtask
 5. **Handoff** — Create `NEXT_runner_XXX+1.md` and update `RESUME_SESSION.md`
-
-### Build & Validation
-
-```bash
-# Verify document integrity
-python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
-
-# Reassemble for review
-python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
-
-# Compress for storage
-python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
-```
 
 ### Quality Gates
 
@@ -104,8 +98,6 @@ python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
 - Material property consistency for engineering specs
 
 ## Three-Pronged Heuristic Integration
-## Three-Pronged Heuristic Integration
-
 This project employs the **Williams/Keymaker/El Segundo** triad:
 
 ### Williams Heuristic — Architectural Clarity
@@ -114,14 +106,14 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 - **Method**: Boundary analysis, component mapping, dependency graphs
 - **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
 - **Applied Here**: Clear project categorization (TopLevel), 
-explicit parent-child relationship (N/A)
+explicit parent-child relationship (Top-Level)
 
 ### Keymaker Protocol — Implementation Precision
 
 - **Purpose**: Define *how* the system is built and validated
 - **Method**: Reproducible builds, chapter-based authoring, manifest verification
 - **Output**: `build.sh`, `write_large_file.py` pipelines, `MANIFEST.json`
-- **Applied Here**: No-Gradle builds, chunk-based documents, SHA256 verification
+- **Applied Here**: Chunk-based documents, SHA256 verification
 
 ### El Segundo Protocol — Operational Excellence
 
@@ -141,32 +133,26 @@ explicit parent-child relationship (N/A)
 | Evolve | Versioning | Migration | Resume |
 
 ## Roadmap & Future Work
-## Roadmap & Future Work
-
 ### Immediate (Next 1-2 Sessions)
 
-- [ ] Complete README generation and validation
-- [ ] Establish project-specific `AGENTS.md` conventions
+- [ ] Create project-specific `AGENTS.md` conventions
 - [ ] Create initial `TODO.md` with milestone breakdown
 - [ ] Set up `memory/` directory for session logging
+- [ ] Complete README generation and validation
 
 ### Short Term (Next 5 Sessions)
 
-- [ ] Migrate any legacy piece-based documents to chunk format
 - [ ] Implement heartbeat monitoring for this project
 - [ ] Create `NEXT_runner_001.md` with first batch assignments
 - [ ] Document project-specific workflows in `AGENTS.md`
 
 ### Long Term (Ongoing)
 
-- [ ] Integrate with parent project ({self.parent}) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
 
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -180,17 +166,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB`
-- **Chunks**: `./CSMFAB/README_chunks/`
-- **Manifest**: `./CSMFAB/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/memory/`
-- **Runner Files**: `./CSMFAB/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB`
+- **Chunks**: `CSMFAB/README_chunks/`
+- **Manifest**: `CSMFAB/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/memory/`
+- **Runner Files**: `CSMFAB/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 8013
+- **File Types**: .md: 7755, .pdf: 256, .zip: 37, .html: 34, .sh: 20, .xlsx: 4, .csv: 1, .json: 1, .docx: 1
+- **Languages**: Markdown: 7755, HTML: 34, Shell: 20, JSON: 1
+- **Key Directories**: 97
 
 ### Related Projects
 

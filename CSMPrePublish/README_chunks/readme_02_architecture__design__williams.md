@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMPrePublish project operates within the **TopLevel** domain, 
+The **CSMPrePublish** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 52 files. 
 It is a top-level project.
 
@@ -18,10 +16,10 @@ It is a top-level project.
 
 ```
 CSMPrePublish
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Corrupted_Files/
+├── Placeholder_Articles/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The HEURISTICS project operates within the **CSMSOPPv2** domain, 
+The **HEURISTICS** project operates within the **CSMSOPPv2** domain, 
 functioning as a **Part of Another Project** with 205 files. 
 It belongs to the CSMSOPPv2 ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMSOPPv2 ecosystem.
 
 ```
 HEURISTICS
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── BAKER-STREET/
+├── CITADEL_to/
+├── EL-SEGUNDO/
+├── NASH_to/
+├── NYX_to/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMPRO03 London Bridge Resilience Report Tailoring project operates within the **CSMPro** domain, 
+The **CSMPRO03 London Bridge Resilience Report Tailoring** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 5 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMPRO03 London Bridge Resilience Report Tailoring
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 32: Quantum Computing Advanced Computing Act Act (15 files)
 

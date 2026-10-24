@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 # Seed \u2014 Massive fabrication research portfolio (8000+ files) covering Project AEGIS (Carrington event resilience), drone designs, smart materials, home hardening, and 100+ individual research projects
 

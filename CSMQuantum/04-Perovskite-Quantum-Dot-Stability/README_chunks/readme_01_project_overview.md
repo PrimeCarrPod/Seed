@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 04-Perovskite-Quantum-Dot-Stability (3 files, has README)
 

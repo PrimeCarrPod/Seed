@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The RESTART_PACKAGE project operates within the **TopLevel** domain, 
+The **RESTART_PACKAGE** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 7 files. 
 It is a top-level project.
 
@@ -18,10 +16,8 @@ It is a top-level project.
 
 ```
 RESTART_PACKAGE
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

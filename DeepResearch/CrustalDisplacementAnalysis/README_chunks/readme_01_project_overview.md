@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Crustal displacement analysis (17 files)
 

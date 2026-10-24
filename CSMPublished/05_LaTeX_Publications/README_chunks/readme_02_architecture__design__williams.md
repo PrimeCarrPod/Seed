@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 05_LaTeX_Publications project operates within the **CSMPublished** domain, 
+The **05_LaTeX_Publications** project operates within the **CSMPublished** domain, 
 functioning as a **Part of Another Project** with 27 files. 
 It belongs to the CSMPublished ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMPublished ecosystem.
 
 ```
 05_LaTeX_Publications
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Caldera_Synthesis/
+├── Computational_Compendium/
+├── Flagship_Papers/
+├── ReadAloud_Versions/
+├── Unified_Compendium/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The landolil project operates within the **CSMApps** domain, 
+The **landolil** project operates within the **CSMApps** domain, 
 functioning as a **Part of Another Project** with 241 files. 
 It belongs to the CSMApps ecosystem.
 
@@ -18,10 +16,20 @@ It belongs to the CSMApps ecosystem.
 
 ```
 landolil
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── batch_zipper.app/
+├── v6b/
+├── v6bv2/
+├── v6bv3/
+├── v7/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

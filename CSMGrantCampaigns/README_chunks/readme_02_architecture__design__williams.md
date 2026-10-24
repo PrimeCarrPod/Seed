@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMGrantCampaigns project operates within the **TopLevel** domain, 
+The **CSMGrantCampaigns** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 34 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 CSMGrantCampaigns
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── GrantProposals/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMMinesMagnets
 
-## Summary
+### Summary
 
 chunks \u2014 Mining data chunks (8 files)
 

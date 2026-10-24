@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB0101 A-10 Civilian Redesign for Immunity \u2014 AEGIS research project #101  (82 files)
 

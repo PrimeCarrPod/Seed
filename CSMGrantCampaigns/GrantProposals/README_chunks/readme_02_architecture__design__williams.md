@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The GrantProposals project operates within the **CSMGrantCampaigns** domain, 
+The **GrantProposals** project operates within the **CSMGrantCampaigns** domain, 
 functioning as a **Part of Another Project** with 24 files. 
 It belongs to the CSMGrantCampaigns ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMGrantCampaigns ecosystem.
 
 ```
 GrantProposals
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

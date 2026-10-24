@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The WaronDemographics project operates within the **DeepResearch** domain, 
+The **WaronDemographics** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 7 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 WaronDemographics
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 65: Ocean Carbon Capture Blue Carbon Ecosystems Act Act (15 files)
 

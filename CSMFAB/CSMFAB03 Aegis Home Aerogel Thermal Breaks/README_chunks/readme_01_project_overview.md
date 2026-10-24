@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB03 Aegis Home Aerogel Thermal Breaks \u2014 Project AEGIS Carrington event resilience research (86 files)
 

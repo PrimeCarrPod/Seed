@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 08-Flash-Sintering-Physics (3 files, has README)
 

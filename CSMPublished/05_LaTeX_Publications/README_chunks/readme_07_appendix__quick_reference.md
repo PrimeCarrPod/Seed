@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMPublished/05_LaTeX_Publications`
-- **Chunks**: `./CSMPublished/05_LaTeX_Publications/README_chunks/`
-- **Manifest**: `./CSMPublished/05_LaTeX_Publications/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMPublished/05_LaTeX_Publications/memory/`
-- **Runner Files**: `./CSMPublished/05_LaTeX_Publications/NEXT_runner_*.md`
+- **Project Root**: `CSMPublished/05_LaTeX_Publications`
+- **Chunks**: `CSMPublished/05_LaTeX_Publications/README_chunks/`
+- **Manifest**: `CSMPublished/05_LaTeX_Publications/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMPublished/05_LaTeX_Publications/memory/`
+- **Runner Files**: `CSMPublished/05_LaTeX_Publications/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 27
+- **File Types**: .tex: 19, .txt: 4, .md: 3, .json: 1, .bib: 1
+- **Languages**: Markdown: 3, JSON: 1
+- **Key Directories**: 5
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 ACS-Tesla Fleet Gigafactory \u2014 Corporate partnership profile for Tesla Fleet Gigafactory (16 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB-P001-Ceramic-Bridge-Bearings-500T \u2014 Infrastructure hardening proposal (106 files)
 

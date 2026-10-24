@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 07: Carbon Removal Industrial Decarbonization Act Act (15 files)
 

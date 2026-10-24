@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMAegisHome01 M1 Project AEGIS Foundational Research project operates within the **CSMFAB** domain, 
+The **CSMAegisHome01 M1 Project AEGIS Foundational Research** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 12 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMAegisHome01 M1 Project AEGIS Foundational Research
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

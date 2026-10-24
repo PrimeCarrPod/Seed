@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMReach project operates within the **TopLevel** domain, 
+The **CSMReach** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 2750 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMReach
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── ACS-BetaTechnologies-ElectricAviation/
+├── ACS-BostonDynamics-Robotics-Fleet/
+├── ACS-CommonwealthFusion-FusionEnergy/
+├── ACS-HelionEnergy-FusionPower/
+├── ACS-LucidMotors-EV-Manufacturing/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

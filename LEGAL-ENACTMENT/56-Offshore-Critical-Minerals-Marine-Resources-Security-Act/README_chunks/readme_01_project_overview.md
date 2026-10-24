@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 56: Offshore Critical Minerals Marine Resources Security Act Act (15 files)
 

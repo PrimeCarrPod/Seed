@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The Corrupted_Files project operates within the **CSMPrePublish** domain, 
+The **Corrupted_Files** project operates within the **CSMPrePublish** domain, 
 functioning as a **Part of Another Project** with 49 files. 
 It belongs to the CSMPrePublish ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMPrePublish ecosystem.
 
 ```
 Corrupted_Files
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── A_Article1_Worldline/
+├── B_Article2_MassSpectrum/
+├── C_Article13_HilbertSpace/
+├── C_Article14_HilbertSpace/
+├── C_Article15_HilbertSpace/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

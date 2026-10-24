@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./.sdk/gradle-8.4`
-- **Chunks**: `./.sdk/gradle-8.4/README_chunks/`
-- **Manifest**: `./.sdk/gradle-8.4/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./.sdk/gradle-8.4/memory/`
-- **Runner Files**: `./.sdk/gradle-8.4/NEXT_runner_*.md`
+- **Project Root**: `.sdk/gradle-8.4`
+- **Chunks**: `.sdk/gradle-8.4/README_chunks/`
+- **Manifest**: `.sdk/gradle-8.4/README_chunks/MANIFEST.json`
+- **Memory Logs**: `.sdk/gradle-8.4/memory/`
+- **Runner Files**: `.sdk/gradle-8.4/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 2
+- **File Types**: .md: 1, .bat: 1, .txt: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 2
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Mayan 2040 prophecy research (2 files)
 

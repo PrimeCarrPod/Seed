@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The ACS-HelionEnergy-FusionPower project operates within the **CSMReach** domain, 
+The **ACS-HelionEnergy-FusionPower** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 16 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMReach ecosystem.
 
 ```
 ACS-HelionEnergy-FusionPower
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 01-Executive-Summary/
+├── 02-Corporate-Profile/
+├── 03-Technical-Framework/
+├── 04-Financial-Analysis/
+├── 05-Implementation-Roadmap/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

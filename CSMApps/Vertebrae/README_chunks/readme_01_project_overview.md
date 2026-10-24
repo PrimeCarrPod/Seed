@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMApps
 
-## Summary
+### Summary
 
 Vertebrae \u2014 Core framework subproject (5 files)
 

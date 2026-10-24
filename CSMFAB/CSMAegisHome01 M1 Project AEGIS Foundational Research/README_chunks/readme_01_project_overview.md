@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMAegisHome01 M1 Project AEGIS Foundational Research \u2014 Project AEGIS Carrington event resilience research (12 files)
 

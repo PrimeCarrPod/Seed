@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Oak Island sonic range finding (1 file)
 

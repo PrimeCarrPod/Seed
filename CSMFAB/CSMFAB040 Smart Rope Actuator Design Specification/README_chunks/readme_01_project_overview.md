@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB040 Smart Rope Actuator Design Specification \u2014 Smart rope actuator / muscle design (82 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMReach
 
-## Summary
+### Summary
 
 CSMEmailOutgoing — Diplomatic and Commercial Correspondence
 

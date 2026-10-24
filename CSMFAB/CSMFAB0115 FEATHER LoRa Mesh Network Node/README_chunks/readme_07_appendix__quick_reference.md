@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node`
-- **Chunks**: `./CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node`
+- **Chunks**: `CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB0115 FEATHER LoRa Mesh Network Node/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 90
+- **File Types**: .md: 91
+- **Languages**: Markdown: 91
+- **Key Directories**: 1
 
 ### Related Projects
 

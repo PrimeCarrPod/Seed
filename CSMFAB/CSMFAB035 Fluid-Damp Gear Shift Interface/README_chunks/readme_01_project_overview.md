@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB035 Fluid-Damp Gear Shift Interface \u2014 Whole Project (standalone) under CSMFAB (86 files)
 

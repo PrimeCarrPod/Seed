@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Atlas jaw speech health (29 files)
 

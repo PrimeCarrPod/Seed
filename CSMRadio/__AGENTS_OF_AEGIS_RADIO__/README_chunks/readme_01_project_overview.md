@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMRadio
 
-## Summary
+### Summary
 
 Agents of Aegis Radio \u2014 active production (46 files, updated Oct 2026)
 

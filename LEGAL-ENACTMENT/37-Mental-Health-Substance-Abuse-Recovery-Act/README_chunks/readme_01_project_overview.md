@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 37: Mental Health Substance Abuse Recovery Act Act (15 files)
 

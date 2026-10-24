@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMSubatomic082026/OrganizedLibrary`
-- **Chunks**: `./CSMSubatomic082026/OrganizedLibrary/README_chunks/`
-- **Manifest**: `./CSMSubatomic082026/OrganizedLibrary/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMSubatomic082026/OrganizedLibrary/memory/`
-- **Runner Files**: `./CSMSubatomic082026/OrganizedLibrary/NEXT_runner_*.md`
+- **Project Root**: `CSMSubatomic082026/OrganizedLibrary`
+- **Chunks**: `CSMSubatomic082026/OrganizedLibrary/README_chunks/`
+- **Manifest**: `CSMSubatomic082026/OrganizedLibrary/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMSubatomic082026/OrganizedLibrary/memory/`
+- **Runner Files**: `CSMSubatomic082026/OrganizedLibrary/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 334
+- **File Types**: .md: 232, .pdf: 103
+- **Languages**: Markdown: 232
+- **Key Directories**: 3
 
 ### Related Projects
 

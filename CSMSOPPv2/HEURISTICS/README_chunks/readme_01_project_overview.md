@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMSOPPv2
 
-## Summary
+### Summary
 
 HEURISTICS \u2014 Heuristic protocols v2 (205 files)
 

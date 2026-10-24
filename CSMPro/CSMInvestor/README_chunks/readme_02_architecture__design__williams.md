@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMInvestor project operates within the **CSMPro** domain, 
+The **CSMInvestor** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 206 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,14 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMInvestor
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 01-Pitch-Deck/
+├── 02-Financial-Model/
+├── 03-Market-Analysis/
+├── 04-Product-Roadmap/
+├── 05-Testing-Validation/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

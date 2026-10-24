@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The radio-generator SCRIPTS project operates within the **CSMRadio** domain, 
+The **radio-generator SCRIPTS** project operates within the **CSMRadio** domain, 
 functioning as a **Part of Another Project** with 3 files. 
 It belongs to the CSMRadio ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMRadio ecosystem.
 
 ```
 radio-generator SCRIPTS
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

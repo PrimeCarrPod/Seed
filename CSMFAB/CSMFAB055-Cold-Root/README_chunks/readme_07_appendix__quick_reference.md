@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB055-Cold-Root`
-- **Chunks**: `./CSMFAB/CSMFAB055-Cold-Root/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB055-Cold-Root/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB055-Cold-Root/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB055-Cold-Root/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB055-Cold-Root`
+- **Chunks**: `CSMFAB/CSMFAB055-Cold-Root/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB055-Cold-Root/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB055-Cold-Root/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB055-Cold-Root/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 78
+- **File Types**: .md: 79
+- **Languages**: Markdown: 79
+- **Key Directories**: 1
 
 ### Related Projects
 

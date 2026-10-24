@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 05_BOUNCE project operates within the **CSMWip** domain, 
+The **05_BOUNCE** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 5193 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,20 @@ It belongs to the CSMWip ecosystem.
 
 ```
 05_BOUNCE
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Android App Module
+│   ├── Java/Kotlin Source
+│   ├── Resources (res/)
+│   ├── Assets (WebView HTML/JS)
+│   └── AndroidManifest.xml
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── FINAL_DELIVERABLES/
+├── PROOF_OF_WORK/
+├── TGAPP.WIP/
+├── TGE_E1/
+├── TGE_E2/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

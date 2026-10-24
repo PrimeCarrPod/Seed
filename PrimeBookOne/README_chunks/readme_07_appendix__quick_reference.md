@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./PrimeBookOne`
-- **Chunks**: `./PrimeBookOne/README_chunks/`
-- **Manifest**: `./PrimeBookOne/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./PrimeBookOne/memory/`
-- **Runner Files**: `./PrimeBookOne/NEXT_runner_*.md`
+- **Project Root**: `PrimeBookOne`
+- **Chunks**: `PrimeBookOne/README_chunks/`
+- **Manifest**: `PrimeBookOne/README_chunks/MANIFEST.json`
+- **Memory Logs**: `PrimeBookOne/memory/`
+- **Runner Files**: `PrimeBookOne/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 2
+- **File Types**: .prime: 2, .md: 1
+- **Languages**: Markdown: 1
+- **Key Directories**: 0
 
 ### Related Projects
 

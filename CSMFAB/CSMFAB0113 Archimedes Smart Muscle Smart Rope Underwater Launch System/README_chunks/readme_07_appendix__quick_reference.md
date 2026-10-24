@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System`
-- **Chunks**: `./CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/memory/`
-- **Runner Files**: `./CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System`
+- **Chunks**: `CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/README_chunks/`
+- **Manifest**: `CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/memory/`
+- **Runner Files**: `CSMFAB/CSMFAB0113 Archimedes Smart Muscle Smart Rope Underwater Launch System/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 138
+- **File Types**: .md: 109, .pdf: 30
+- **Languages**: Markdown: 109
+- **Key Directories**: 2
 
 ### Related Projects
 

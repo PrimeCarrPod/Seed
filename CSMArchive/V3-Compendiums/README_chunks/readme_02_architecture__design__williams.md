@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The V3-Compendiums project operates within the **CSMArchive** domain, 
+The **V3-Compendiums** project operates within the **CSMArchive** domain, 
 functioning as a **Part of Another Project** with 61 files. 
 It belongs to the CSMArchive ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMArchive ecosystem.
 
 ```
 V3-Compendiums
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

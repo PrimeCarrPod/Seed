@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMQuantum`
-- **Chunks**: `./CSMQuantum/README_chunks/`
-- **Manifest**: `./CSMQuantum/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMQuantum/memory/`
-- **Runner Files**: `./CSMQuantum/NEXT_runner_*.md`
+- **Project Root**: `CSMQuantum`
+- **Chunks**: `CSMQuantum/README_chunks/`
+- **Manifest**: `CSMQuantum/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMQuantum/memory/`
+- **Runner Files**: `CSMQuantum/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 41
+- **File Types**: .md: 41
+- **Languages**: Markdown: 41
+- **Key Directories**: 13
 
 ### Related Projects
 

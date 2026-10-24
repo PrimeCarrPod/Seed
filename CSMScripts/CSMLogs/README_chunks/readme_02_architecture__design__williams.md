@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMLogs project operates within the **CSMScripts** domain, 
+The **CSMLogs** project operates within the **CSMScripts** domain, 
 functioning as a **Part of Another Project** with 681 files. 
 It belongs to the CSMScripts ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMScripts ecosystem.
 
 ```
 CSMLogs
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── 2026-07-25/
+├── 2026-07-26/
+├── 2026-08-14/
+├── July26/
+├── LogsJuly26/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

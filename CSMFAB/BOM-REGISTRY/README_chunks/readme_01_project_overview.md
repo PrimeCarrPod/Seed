@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 BOM-REGISTRY \u2014 Component registry or research module (1 files)
 

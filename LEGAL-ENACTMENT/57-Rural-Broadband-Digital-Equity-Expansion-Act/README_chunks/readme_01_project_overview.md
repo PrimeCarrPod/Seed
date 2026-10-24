@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 57: Rural Broadband Digital Equity Expansion Act Act (15 files)
 

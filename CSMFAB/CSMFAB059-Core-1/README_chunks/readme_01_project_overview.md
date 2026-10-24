@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB059-Core-1 \u2014 Whole Project (standalone) under CSMFAB (78 files)
 

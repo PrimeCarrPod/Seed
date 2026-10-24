@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 01_SubAtomic_Prime_Electron_Canonical project operates within the **CSMWip** domain, 
+The **01_SubAtomic_Prime_Electron_Canonical** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 680 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMWip ecosystem.
 
 ```
 01_SubAtomic_Prime_Electron_Canonical
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── A_Article01_Worldline/
+├── A_Article02_CausalGeometry/
+├── A_Article1_Worldline/
+├── A_Article20_Worldline/
+├── A_Article21_Worldline/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

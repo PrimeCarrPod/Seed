@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 46: Electric Grid Interconnector Transmission Planning Act Act (15 files)
 

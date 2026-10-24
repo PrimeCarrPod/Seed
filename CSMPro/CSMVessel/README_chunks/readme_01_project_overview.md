@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 CSMVessel — Maritime Electromagnetic Resilience and Fleet Architecture
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The android-sdk project operates within the **.sdk** domain, 
+The **android-sdk** project operates within the **.sdk** domain, 
 functioning as a **Part of Another Project** with 2 files. 
 It belongs to the .sdk ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the .sdk ecosystem.
 
 ```
 android-sdk
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── build-tools/
+├── cmdline-tools/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

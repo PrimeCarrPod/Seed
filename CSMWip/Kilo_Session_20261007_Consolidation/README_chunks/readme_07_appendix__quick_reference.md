@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,27 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+# No-Gradle Android Build
+./build.sh
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMWip/Kilo_Session_20261007_Consolidation`
-- **Chunks**: `./CSMWip/Kilo_Session_20261007_Consolidation/README_chunks/`
-- **Manifest**: `./CSMWip/Kilo_Session_20261007_Consolidation/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMWip/Kilo_Session_20261007_Consolidation/memory/`
-- **Runner Files**: `./CSMWip/Kilo_Session_20261007_Consolidation/NEXT_runner_*.md`
+- **Project Root**: `CSMWip/Kilo_Session_20261007_Consolidation`
+- **Chunks**: `CSMWip/Kilo_Session_20261007_Consolidation/README_chunks/`
+- **Manifest**: `CSMWip/Kilo_Session_20261007_Consolidation/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMWip/Kilo_Session_20261007_Consolidation/memory/`
+- **Runner Files**: `CSMWip/Kilo_Session_20261007_Consolidation/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 1063
+- **File Types**: .md: 876, .class: 93, .zip: 23, .java: 16, .js: 16, .xml: 13, .sh: 11, .apk: 5, .dex: 2, .html: 2
+- **Languages**: Markdown: 876, Java: 16, JavaScript/TypeScript: 16, XML: 13, Shell: 11, HTML: 2, JSON: 1
+- **Key Directories**: 5
 
 ### Related Projects
 

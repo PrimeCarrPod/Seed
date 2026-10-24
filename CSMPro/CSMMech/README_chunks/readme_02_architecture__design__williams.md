@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMMech project operates within the **CSMPro** domain, 
+The **CSMMech** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 27 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMMech
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMMECH01 Phantom MK-1 Aegis Hardened Robot/
+├── CSMMECH02 Robot Self-Destruct Chip System/
+├── CSMMECH03 Phantom Menehune Zookeeper Robot/
+├── CSMMECH04 Robot Redesign for Space Exploration/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

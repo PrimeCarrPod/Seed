@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMAegisHome02 M1chrome Stellar-Chrome Dielectric Coating \u2014 Project AEGIS Carrington event resilience research (42 files)
 

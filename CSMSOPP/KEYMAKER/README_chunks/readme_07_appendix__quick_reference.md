@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMSOPP/KEYMAKER`
-- **Chunks**: `./CSMSOPP/KEYMAKER/README_chunks/`
-- **Manifest**: `./CSMSOPP/KEYMAKER/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMSOPP/KEYMAKER/memory/`
-- **Runner Files**: `./CSMSOPP/KEYMAKER/NEXT_runner_*.md`
+- **Project Root**: `CSMSOPP/KEYMAKER`
+- **Chunks**: `CSMSOPP/KEYMAKER/README_chunks/`
+- **Manifest**: `CSMSOPP/KEYMAKER/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMSOPP/KEYMAKER/memory/`
+- **Runner Files**: `CSMSOPP/KEYMAKER/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 2
+- **File Types**: .md: 3
+- **Languages**: Markdown: 3
+- **Key Directories**: 2
 
 ### Related Projects
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB-P006-Phantom-MK1-Robot \u2014 Infrastructure hardening proposal (78 files)
 

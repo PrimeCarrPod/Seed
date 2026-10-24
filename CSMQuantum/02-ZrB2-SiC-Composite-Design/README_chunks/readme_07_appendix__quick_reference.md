@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design`
-- **Chunks**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/README_chunks/`
-- **Manifest**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/memory/`
-- **Runner Files**: `./CSMQuantum/02-ZrB2-SiC-Composite-Design/NEXT_runner_*.md`
+- **Project Root**: `CSMQuantum/02-ZrB2-SiC-Composite-Design`
+- **Chunks**: `CSMQuantum/02-ZrB2-SiC-Composite-Design/README_chunks/`
+- **Manifest**: `CSMQuantum/02-ZrB2-SiC-Composite-Design/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMQuantum/02-ZrB2-SiC-Composite-Design/memory/`
+- **Runner Files**: `CSMQuantum/02-ZrB2-SiC-Composite-Design/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 3
+- **File Types**: .md: 3
+- **Languages**: Markdown: 3
+- **Key Directories**: 0
 
 ### Related Projects
 

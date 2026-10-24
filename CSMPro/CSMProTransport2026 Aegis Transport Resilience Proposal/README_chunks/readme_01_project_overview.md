@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMPro
 
-## Summary
+### Summary
 
 Aegis transport resilience proposal (5 files)
 

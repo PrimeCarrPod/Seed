@@ -5,7 +5,7 @@
 
 **Parent Project:** DeepResearch
 
-## Summary
+### Summary
 
 Asteroid Psyche gold heist scenario (2 files)
 

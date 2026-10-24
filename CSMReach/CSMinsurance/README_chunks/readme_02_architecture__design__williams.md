@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMinsurance project operates within the **CSMReach** domain, 
+The **CSMinsurance** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 67 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,11 @@ It belongs to the CSMReach ecosystem.
 
 ```
 CSMinsurance
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── DOSSIERS/
+├── INSURERS/
+├── PLAN/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

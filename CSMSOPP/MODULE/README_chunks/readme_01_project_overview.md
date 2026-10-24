@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMSOPP
 
-## Summary
+### Summary
 
 # THE WILLIAMS HEURISTIC \u2014 MODULE DIRECTORY (6 files, has README)
 

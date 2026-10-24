@@ -1,6 +1,4 @@
 ## Operations — El Segundo Protocol
-## Operations — El Segundo Protocol
-
 ### Session Lifecycle
 
 1. **Startup** — Read `AGENTS.md` → `TODO.md` → `memory/latest.md` → `NEXT_runner_XXX.md`
@@ -12,20 +10,24 @@
 ### Build & Validation
 
 ```bash
-# Verify document integrity
-python3 ../../__Python_Tools/write_large_file.py verify chunks/<DOC-ID>/
+# No-Gradle Android build
+./build.sh
 
-# Reassemble for review
-python3 ../../__Python_Tools/write_large_file.py concat chunks/<DOC-ID>/ FinishedWork/<DOC>.md
+# Verify APK
+aapt2 dump badging out/*.apk
 
-# Compress for storage
-python3 ../../__Python_Tools/write_large_file.py compress FinishedWork/<DOC>.md
+# Document integrity (if using write_large_file.py)
+python3 ../../__Python_Tools/write_large_file.py verify README_chunks/
 ```
 
 ### Quality Gates
 
 - All reassembled documents must pass manifest verification
 - Cross-reference validation across related documents
+- APK must install and run on target Android version
+- No-Gradle build must produce valid, signed APK
+- JS/TS type checking passes
+- Lint passes (eslint)
 - Mathematical consistency checks for synthesis documents
 - Material property consistency for engineering specs
 

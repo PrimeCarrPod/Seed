@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMHuman`
-- **Chunks**: `./CSMHuman/README_chunks/`
-- **Manifest**: `./CSMHuman/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMHuman/memory/`
-- **Runner Files**: `./CSMHuman/NEXT_runner_*.md`
+- **Project Root**: `CSMHuman`
+- **Chunks**: `CSMHuman/README_chunks/`
+- **Manifest**: `CSMHuman/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMHuman/memory/`
+- **Runner Files**: `CSMHuman/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 157
+- **File Types**: .md: 115, .pdf: 38, .html: 37, .htm: 4, .zip: 1
+- **Languages**: Markdown: 115, HTML: 41
+- **Key Directories**: 38
 
 ### Related Projects
 

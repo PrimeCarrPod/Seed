@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMEval project operates within the **CSMReach** domain, 
+The **CSMEval** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 358 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,15 @@ It belongs to the CSMReach ecosystem.
 
 ```
 CSMEval
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── 01-Federal-State-Emergency-Management-Agencies/
+├── 02-Electric-Grid-Reliability-Regulators-and-Agencies/
+├── 03-NOAA-NASA-Space-Weather-and-Heliophysics/
+├── 04-Department-of-Defense-Military-and-Procurement/
+├── 05-State-DOTs-Bridge-Authorities-and-Highway-Agencies/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

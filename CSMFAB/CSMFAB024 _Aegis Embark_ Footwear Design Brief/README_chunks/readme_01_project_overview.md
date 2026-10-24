@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB024 _Aegis Embark_ Footwear Design Brief \u2014 Project AEGIS Carrington event resilience research (86 files)
 

@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 # Carrington Storm Motors \u2014 Project AEGIS Landing Page
 

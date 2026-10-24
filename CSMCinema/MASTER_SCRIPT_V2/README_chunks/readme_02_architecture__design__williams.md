@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The MASTER_SCRIPT_V2 project operates within the **CSMCinema** domain, 
+The **MASTER_SCRIPT_V2** project operates within the **CSMCinema** domain, 
 functioning as a **Part of Another Project** with 12 files. 
 It belongs to the CSMCinema ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the CSMCinema ecosystem.
 
 ```
 MASTER_SCRIPT_V2
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── full/
+├── parts/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

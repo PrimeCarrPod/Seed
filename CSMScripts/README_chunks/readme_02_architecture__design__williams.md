@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMScripts project operates within the **TopLevel** domain, 
+The **CSMScripts** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 847 files. 
 It is a top-level project.
 
@@ -18,10 +16,15 @@ It is a top-level project.
 
 ```
 CSMScripts
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── Web/Frontend Assets
+├── CSMLogs/
+├── KiloWorkSpace/
+├── StartScriptCommands/
+├── __Git_Seed_Recover/
+├── __pycache__/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

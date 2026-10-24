@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMVessel project operates within the **CSMPro** domain, 
+The **CSMVessel** project operates within the **CSMPro** domain, 
 functioning as a **Part of Another Project** with 1030 files. 
 It belongs to the CSMPro ecosystem.
 
@@ -18,10 +16,14 @@ It belongs to the CSMPro ecosystem.
 
 ```
 CSMVessel
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMVessel-Charlemagne-Class-Fleet/
+├── CSMVessel-Charlemagne-FleetV2/
+├── CSMVessel0000000001 Cruise Ship Carrington Event Resilience Proposal/
+├── CSMVessel0000000002 Cruise Ship Cabin Resilience Research/
+├── CSMVessel0000000003 Vessel Paints, Fabrics Resilience Strategy/
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

@@ -1,35 +1,38 @@
 ## Implementation — Keymaker Protocol
-## Implementation — Keymaker Protocol
-
 ### Technology Stack
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python/Markdown/Shell | Latest | Primary implementation |
-| Build | Custom (no-Gradle for Android) | — | Reproducible builds |
-| Version Control | Git | — | Distributed workflow |
-| Documentation | Markdown + write_large_file.py | — | Chapter-based authoring |
+| Docs | Markdown | Latest | Documentation |
+| Version Control | Git | — | Source control |
+| Documentation | write_large_file.py | — | Chapter-based authoring |
 
 ### Key Files & Directories
 
 ```
-./CSMCinema/STORYBOARD/
+STORYBOARD/
+├── part_01_the_call/
+├── part_02_the_assembly/
+├── part_03_the_threshold/
+├── part_04_the_trials/
+├── part_05_the_pursuit/
+├── part_06_the_deep_loom/
+├── part_07_the_sky_loom/
+├── part_08_the_underworld/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
-├── TODO.md              # Task hierarchy
-├── memory/              # Daily session logs
-├── chunks/              # Logical document chunks
-├── FinishedWork/        # Completed documents
-├── scripts/             # Automation utilities
-└── Research/            # Reference materials
+├── TODO.md                # Task hierarchy
+├── memory/                # Daily session logs
+├── README_chunks/         # Chapter chunks (auto-generated)
+└── FinishedWork/          # Completed documents
 ```
 
 ### Configuration
 
-Key environment variables and configuration files:
+Key project files:
 
-- `AGENTS.md` — Project-specific conventions and commands
-- `TODO.md` — Hierarchical task breakdown (milestones → tasks → subtasks)
-- `memory/YYYY-MM-DD.md` — Raw daily logs
+- `AGENTS.md` — *To be created*: Project-specific conventions
+- `TODO.md` — *To be created*: Task hierarchy
+- `memory/` — *To be created*: Session logging directory
 - `NEXT_runner_XXX.md` — Next session instructions
 

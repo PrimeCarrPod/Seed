@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The chunks project operates within the **CSMMinesMagnets** domain, 
+The **chunks** project operates within the **CSMMinesMagnets** domain, 
 functioning as a **Part of Another Project** with 8 files. 
 It belongs to the CSMMinesMagnets ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMMinesMagnets ecosystem.
 
 ```
 chunks
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── DOC-02/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

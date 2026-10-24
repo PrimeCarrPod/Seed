@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The SAPECPublish project operates within the **__PUBLISH_CSM__** domain, 
+The **SAPECPublish** project operates within the **__PUBLISH_CSM__** domain, 
 functioning as a **Part of Another Project** with 9 files. 
 It belongs to the __PUBLISH_CSM__ ecosystem.
 
@@ -18,10 +16,10 @@ It belongs to the __PUBLISH_CSM__ ecosystem.
 
 ```
 SAPECPublish
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Technical References (PDF)
+├── Build System
+└── Configuration
 ```
 

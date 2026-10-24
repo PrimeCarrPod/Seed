@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./DeepResearch/Microbial Ecosystem Food Chains`
-- **Chunks**: `./DeepResearch/Microbial Ecosystem Food Chains/README_chunks/`
-- **Manifest**: `./DeepResearch/Microbial Ecosystem Food Chains/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./DeepResearch/Microbial Ecosystem Food Chains/memory/`
-- **Runner Files**: `./DeepResearch/Microbial Ecosystem Food Chains/NEXT_runner_*.md`
+- **Project Root**: `DeepResearch/Microbial Ecosystem Food Chains`
+- **Chunks**: `DeepResearch/Microbial Ecosystem Food Chains/README_chunks/`
+- **Manifest**: `DeepResearch/Microbial Ecosystem Food Chains/README_chunks/MANIFEST.json`
+- **Memory Logs**: `DeepResearch/Microbial Ecosystem Food Chains/memory/`
+- **Runner Files**: `DeepResearch/Microbial Ecosystem Food Chains/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 8
+- **File Types**: .md: 9
+- **Languages**: Markdown: 9
+- **Key Directories**: 1
 
 ### Related Projects
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB056-Aegis-Haven project operates within the **CSMFAB** domain, 
+The **CSMFAB056-Aegis-Haven** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 78 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMFAB056-Aegis-Haven
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Aegis-Haven-75/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

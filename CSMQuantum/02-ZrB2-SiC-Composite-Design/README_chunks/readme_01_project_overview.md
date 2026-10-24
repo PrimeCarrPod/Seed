@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 02-ZrB2-SiC-Composite-Design (3 files, has README)
 

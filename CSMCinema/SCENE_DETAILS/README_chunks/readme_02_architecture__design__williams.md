@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The SCENE_DETAILS project operates within the **CSMCinema** domain, 
+The **SCENE_DETAILS** project operates within the **CSMCinema** domain, 
 functioning as a **Part of Another Project** with 21 files. 
 It belongs to the CSMCinema ecosystem.
 
@@ -18,10 +16,8 @@ It belongs to the CSMCinema ecosystem.
 
 ```
 SCENE_DETAILS
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

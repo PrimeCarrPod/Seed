@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMWip/01_SubAtomic_Prime_Electron_Canonical`
-- **Chunks**: `./CSMWip/01_SubAtomic_Prime_Electron_Canonical/README_chunks/`
-- **Manifest**: `./CSMWip/01_SubAtomic_Prime_Electron_Canonical/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMWip/01_SubAtomic_Prime_Electron_Canonical/memory/`
-- **Runner Files**: `./CSMWip/01_SubAtomic_Prime_Electron_Canonical/NEXT_runner_*.md`
+- **Project Root**: `CSMWip/01_SubAtomic_Prime_Electron_Canonical`
+- **Chunks**: `CSMWip/01_SubAtomic_Prime_Electron_Canonical/README_chunks/`
+- **Manifest**: `CSMWip/01_SubAtomic_Prime_Electron_Canonical/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMWip/01_SubAtomic_Prime_Electron_Canonical/memory/`
+- **Runner Files**: `CSMWip/01_SubAtomic_Prime_Electron_Canonical/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 680
+- **File Types**: .md: 453, .zip: 179, .md}: 49
+- **Languages**: Markdown: 453
+- **Key Directories**: 245
 
 ### Related Projects
 

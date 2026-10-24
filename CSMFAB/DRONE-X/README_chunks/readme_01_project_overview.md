@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 DRONE-X \u2014 Drone redesign and propulsion research (34 files)
 

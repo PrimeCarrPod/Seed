@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMSOPP project operates within the **TopLevel** domain, 
+The **CSMSOPP** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 435 files. 
 It is a top-level project.
 
@@ -18,10 +16,14 @@ It is a top-level project.
 
 ```
 CSMSOPP
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Python Scripts/Automation
+├── BAKER-STREET/
+├── CITADEL_to/
+├── EL-SEGUNDO/
+├── GUIDE/
+├── KEYMAKER/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The .sdk project operates within the **TopLevel** domain, 
+The **.sdk** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 22 files. 
 It is a top-level project.
 
@@ -18,10 +16,11 @@ It is a top-level project.
 
 ```
 .sdk
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── android-sdk/
+├── gradle-8.4/
+├── gradle-cache/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

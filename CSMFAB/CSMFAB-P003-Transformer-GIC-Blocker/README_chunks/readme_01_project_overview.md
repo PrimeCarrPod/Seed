@@ -5,7 +5,7 @@
 
 **Parent Project:** Top-Level
 
-## Summary
+### Summary
 
 CSMFAB-P003-Transformer-GIC-Blocker \u2014 Infrastructure hardening proposal (78 files)
 

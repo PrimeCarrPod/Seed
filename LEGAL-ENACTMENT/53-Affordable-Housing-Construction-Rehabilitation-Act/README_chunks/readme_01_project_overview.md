@@ -5,7 +5,7 @@
 
 **Parent Project:** LEGAL-ENACTMENT
 
-## Summary
+### Summary
 
 Act 53: Affordable Housing Construction Rehabilitation Act Act (15 files)
 

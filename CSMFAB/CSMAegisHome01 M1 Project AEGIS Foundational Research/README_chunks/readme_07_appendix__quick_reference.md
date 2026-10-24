@@ -1,6 +1,4 @@
 ## Appendix — Quick Reference
-## Appendix — Quick Reference
-
 ### Key Commands
 
 ```bash
@@ -14,17 +12,25 @@ python3 ../../__Python_Tools/write_large_file.py manifest <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py verify <chunks_dir>
 python3 ../../__Python_Tools/write_large_file.py compress <file>
 
+
 # Git workflow
 git add -A && git commit -m '<type>: <description>' && git push
 ```
 
 ### File Locations
 
-- **Project Root**: `./CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research`
-- **Chunks**: `./CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/README_chunks/`
-- **Manifest**: `./CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/README_chunks/MANIFEST.json`
-- **Memory Logs**: `./CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/memory/`
-- **Runner Files**: `./CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/NEXT_runner_*.md`
+- **Project Root**: `CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research`
+- **Chunks**: `CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/README_chunks/`
+- **Manifest**: `CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/README_chunks/MANIFEST.json`
+- **Memory Logs**: `CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/memory/`
+- **Runner Files**: `CSMFAB/CSMAegisHome01 M1 Project AEGIS Foundational Research/NEXT_runner_*.md`
+
+### Project Statistics
+
+- **Total Files**: 12
+- **File Types**: .md: 5, .pdf: 5, .xlsx: 2
+- **Languages**: Markdown: 5
+- **Key Directories**: 0
 
 ### Related Projects
 

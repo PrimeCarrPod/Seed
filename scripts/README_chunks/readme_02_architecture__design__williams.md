@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The scripts project operates within the **TopLevel** domain, 
+The **scripts** project operates within the **TopLevel** domain, 
 functioning as a **Whole Project** with 1 files. 
 It is a top-level project.
 
@@ -18,10 +16,8 @@ It is a top-level project.
 
 ```
 scripts
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

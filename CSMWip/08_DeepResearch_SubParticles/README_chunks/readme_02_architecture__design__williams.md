@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 08_DeepResearch_SubParticles project operates within the **CSMWip** domain, 
+The **08_DeepResearch_SubParticles** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 389 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMWip ecosystem.
 
 ```
 08_DeepResearch_SubParticles
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── SubParticlesV4/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

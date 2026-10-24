@@ -5,7 +5,7 @@
 
 **Parent Project:** CSMQuantum
 
-## Summary
+### Summary
 
 # 10-PVDF-Piezoelectric-Domains (3 files, has README)
 

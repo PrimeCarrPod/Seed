@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The GitHubRepoMan project operates within the **DeepResearch** domain, 
+The **GitHubRepoMan** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 3 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 GitHubRepoMan
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── Web/Frontend Assets
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

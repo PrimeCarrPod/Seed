@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMFAB078_AegisIronMan project operates within the **CSMFAB** domain, 
+The **CSMFAB078_AegisIronMan** project operates within the **CSMFAB** domain, 
 functioning as a **Whole Project (standalone)** with 43 files. 
 It is a top-level project.
 
@@ -18,10 +16,9 @@ It is a top-level project.
 
 ```
 CSMFAB078_AegisIronMan
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSM_GEN_IMAGE_PROMPTS/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

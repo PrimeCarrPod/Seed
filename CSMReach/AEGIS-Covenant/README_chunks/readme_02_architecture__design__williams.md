@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The AEGIS-Covenant project operates within the **CSMReach** domain, 
+The **AEGIS-Covenant** project operates within the **CSMReach** domain, 
 functioning as a **Part of Another Project** with 606 files. 
 It belongs to the CSMReach ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMReach ecosystem.
 
 ```
 AEGIS-Covenant
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CSMReach-Covenant/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

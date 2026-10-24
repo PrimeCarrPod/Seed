@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The CSMGenStudy project operates within the **DeepResearch** domain, 
+The **CSMGenStudy** project operates within the **DeepResearch** domain, 
 functioning as a **Part of Another Project** with 23 files. 
 It belongs to the DeepResearch ecosystem.
 
@@ -18,10 +16,13 @@ It belongs to the DeepResearch ecosystem.
 
 ```
 CSMGenStudy
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── CORTEX/
+├── FOUNDRY/
+├── PIPELINE/
+├── RENDER/
+├── SENTINEL/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 

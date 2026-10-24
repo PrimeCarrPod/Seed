@@ -1,9 +1,7 @@
 ## Architecture & Design — Williams Heuristic
-## Architecture & Design — Williams Heuristic
-
 ### System Boundaries
 
-The 07_SubAtomic_Extensions project operates within the **CSMWip** domain, 
+The **07_SubAtomic_Extensions** project operates within the **CSMWip** domain, 
 functioning as a **Part of Another Project** with 135 files. 
 It belongs to the CSMWip ecosystem.
 
@@ -18,10 +16,9 @@ It belongs to the CSMWip ecosystem.
 
 ```
 07_SubAtomic_Extensions
-├── Core Module
-├── Interface Layer
-├── Data Persistence
-├── Configuration
-└── Testing Harness
+├── SubAtom_WIP_Add_toProject/
+├── Documentation (Markdown)
+├── Build System
+└── Configuration
 ```
 
