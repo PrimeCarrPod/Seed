@@ -1,11 +1,11 @@
 {
   "chapter_01_intro.md": {
-    "size": 42,
-    "sha256": "5468084a226aaede0ab14fd911914151d44b4021267caef768c0d86d58ced41d"
+    "size": 44,
+    "sha256": "8e20672b0da93965124e1dcbe2507c33b9556c7d92f6ab75a34df58d0922b915"
   },
   "chapter_02_aegisoutfitfabricator_material.md": {
-    "size": 60,
-    "sha256": "ac20cd2b32ca3a079e60f5152144f6f9b35cc2abe1ae2ffec9a87b603597d66e"
+    "size": 62,
+    "sha256": "43c95d9f6e7d5b1f47ad958c5eefeaff2bfdca469be07b87aa1129a4400bf859"
   },
   "chapter_03_1._historical_authenticity_vs_.md": {
     "size": 2549,
@@ -30,5 +30,81 @@
   "chapter_08_6._conformance_check.md": {
     "size": 377,
     "sha256": "59309765cc3d94e7a77efec9e68b49362a7fa40f154c4d0000a722d0f61d04bb"
+  },
+  "chapter_03_1_historical_authenticity_vs_p.md": {
+    "size": 2550,
+    "sha256": "cf5218e977dfce0b97b7667258d5dc06ac07fb3480efc2e98b750e0978780e4f"
+  },
+  "chapter_04_2_weight_budget_per_edition.md": {
+    "size": 2606,
+    "sha256": "407a380567da500aac2c875fb23517838c25b52bb2ce2d5199c4b405afb65801"
+  },
+  "chapter_05_3_thermal_comfort_analysis.md": {
+    "size": 2062,
+    "sha256": "e5ca99b9e9263f1a950e0abcae386778646ed64bcebcedac8dc95e73ad02ece6"
+  },
+  "chapter_06_4_mobility__joint_range_of_mot.md": {
+    "size": 2993,
+    "sha256": "fa29ce76e85ef79680496aeec545af012c0edc750e981a12c6981abea28910ad"
+  },
+  "chapter_07_5_traceability_matrix__mat-04.md": {
+    "size": 2099,
+    "sha256": "4d5899198fb6dbf6e2a8373c4548190662a46bab0e0d35cf4aa76ed6beaed154"
+  },
+  "chapter_08_6_conformance_check.md": {
+    "size": 379,
+    "sha256": "29de63b0c0bdbe8e7f05341c4591761296e515370c53050ef42f7c80892cdbd2"
+  },
+  "chapter_04_1_historical_authenticity_vs_p.md": {
+    "size": 2551,
+    "sha256": "f2cfc252e905cefa7c96228274fd7a060b47df3b7762c7bd87449234a499c18f"
+  },
+  "chapter_05_2_weight_budget_per_edition.md": {
+    "size": 2606,
+    "sha256": "407a380567da500aac2c875fb23517838c25b52bb2ce2d5199c4b405afb65801"
+  },
+  "chapter_06_2_weight_budget_per_edition.md": {
+    "size": 2607,
+    "sha256": "4c71fa51a191121688fc3ee29bce9ae085cbbb3095079fa79f9ac832b62e923b"
+  },
+  "chapter_07_3_thermal_comfort_analysis.md": {
+    "size": 2062,
+    "sha256": "e5ca99b9e9263f1a950e0abcae386778646ed64bcebcedac8dc95e73ad02ece6"
+  },
+  "chapter_08_3_thermal_comfort_analysis.md": {
+    "size": 2063,
+    "sha256": "e6a2a6a80693b34508e1217ded96d4e1f0803f88e9c1d41a1df8e35f1b6bdad3"
+  },
+  "chapter_09_4_mobility__joint_range_of_mot.md": {
+    "size": 2993,
+    "sha256": "fa29ce76e85ef79680496aeec545af012c0edc750e981a12c6981abea28910ad"
+  },
+  "chapter_10_4_mobility__joint_range_of_mot.md": {
+    "size": 2994,
+    "sha256": "5982bdbaccf837332e63b6ef3c0e395d516ee4e773ef9620a68db944a082af50"
+  },
+  "chapter_11_5_traceability_matrix__mat-04.md": {
+    "size": 2099,
+    "sha256": "4d5899198fb6dbf6e2a8373c4548190662a46bab0e0d35cf4aa76ed6beaed154"
+  },
+  "chapter_12_5_traceability_matrix__mat-04.md": {
+    "size": 2100,
+    "sha256": "755bbc5e26140268b0dd1f3f5f697ae46c052a3c4c2315fa54ab04a45f7bc1b1"
+  },
+  "chapter_13_6_conformance_check.md": {
+    "size": 378,
+    "sha256": "d4a81c41acc37ab0ff2bb6eb869a2ebda3cdc37da226ea377f37b928e9b30c67"
+  },
+  "chapter_14_6_conformance_check.md": {
+    "size": 382,
+    "sha256": "37221edbe1776ae9e3bdec8fa26f3db4f3320e99883d0266eb9d1a0fa0bcc87b"
+  },
+  "chapter_15_9_additional_mathematical_form.md": {
+    "size": 1659,
+    "sha256": "fb41715c953beed81b656b20fbeae68b66a2333af1ad9ce54532ef0b646ab897"
+  },
+  "chapter_16_10_traceability_matrix__mat-04.md": {
+    "size": 447,
+    "sha256": "3da6735f3c5566506afaa10a976dab8c62ec7dec68f4023ebfa1fd65c3336240"
   }
 }

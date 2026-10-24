@@ -25,44 +25,44 @@
 ### PHASE A: Formula Injection (34 documents need ≥15 formulas)
 
 #### Priority 1: Core Architecture (DOC-06..10) — 5 docs, 0-4 formulas each
-- [ ] **TASK-A1**: DOC-06 Protective Layer Architecture — Add 15+ formulas (layer impedance, ballistic limit, thermal resistance, EMI SE)
-- [ ] **TASK-A2**: DOC-07 Textile Engineering — Add 15+ formulas (tensile modulus, shear stiffness, permeability, stitch density)
-- [ ] **TASK-A3**: DOC-08 Manufacturing Process — Add 15+ formulas (cycle time, yield rate, ultrasonic energy, nesting efficiency)
-- [ ] **TASK-A4**: DOC-09 QA Testing — Add 15+ formulas (sample size, confidence intervals, defect rates, reliability growth)
-- [ ] **TASK-A5**: DOC-10 Deployment Ops — Add 15+ formulas (donning time, MTTR, logistics footprint, readiness metrics)
+- [x] **TASK-A1**: DOC-06 Protective Layer Architecture — Add 15+ formulas (layer impedance, ballistic limit, thermal resistance, EMI SE)
+- [x] **TASK-A2**: DOC-07 Textile Engineering — Add 15+ formulas (tensile modulus, shear stiffness, permeability, stitch density)
+- [x] **TASK-A3**: DOC-08 Manufacturing Process — Add 15+ formulas (cycle time, yield rate, ultrasonic energy, nesting efficiency)
+- [x] **TASK-A4**: DOC-09 QA Testing — Add 15+ formulas (sample size, confidence intervals, defect rates, reliability growth)
+- [x] **TASK-A5**: DOC-10 Deployment Ops — Add 15+ formulas (donning time, MTTR, logistics footprint, readiness metrics)
 
 #### Priority 2: Threat Protection Suite (DOC-21..29, 33..34) — 12 docs, 0-3 formulas each
-- [ ] **TASK-A6**: DOC-21 Ballistic Protection — Add 15+ formulas (V50, BL(P), areal density, ceramic fracture)
-- [ ] **TASK-A7**: DOC-22 Thermal/Fire — Add 13+ formulas (heat flux, thermal penetration, ablation rate, NIR reflectance)
-- [ ] **TASK-A8**: DOC-23 Electrical/GIC — Add 15+ formulas (Faraday attenuation, surge clamping, ground impedance)
-- [ ] **TASK-A9**: DOC-24 Chem/Bio — Add 15+ formulas + 56 lines (breakthrough time, permeation, neutralization kinetics)
-- [ ] **TASK-A10**: DOC-25 Directed Energy — Add 15+ formulas (fluence threshold, ablation depth, phase change)
-- [ ] **TASK-A11**: DOC-26 Blast/Frag — Add 15+ formulas (impulse mitigation, spall velocity, auxetic Poisson)
-- [ ] **TASK-A12**: DOC-27 Environmental Seal — Add 15+ formulas (leak rate, pressure delta, O2/CO2 balance)
-- [ ] **TASK-A13**: DOC-28 Power/Thermal — Add 15+ formulas (MHD efficiency, COP, thermal resistance network)
-- [ ] **TASK-A14**: DOC-29 Sensor Suite — Add 15+ formulas (FBG sensitivity, SNR, spatial resolution)
-- [ ] **TASK-A15**: DOC-33 Deployment Integration — Add 15+ formulas (assembly torque, activation sequence timing)
-- [ ] **TASK-A16**: DOC-34 Maintenance — Add 12+ formulas (inspection intervals, RUL prediction, SLEP criteria)
+- [x] **TASK-A6**: DOC-21 Ballistic Protection — Add 15+ formulas (V50, BL(P), areal density, ceramic fracture)
+- [x] **TASK-A7**: DOC-22 Thermal/Fire — Add 13+ formulas (heat flux, thermal penetration, ablation rate, NIR reflectance)
+- [x] **TASK-A8**: DOC-23 Electrical/GIC — Add 15+ formulas (Faraday attenuation, surge clamping, ground impedance)
+- [x] **TASK-A9**: DOC-24 Chem/Bio — Add 15+ formulas + 56 lines (breakthrough time, permeation, neutralization kinetics)
+- [x] **TASK-A10**: DOC-25 Directed Energy — Add 15+ formulas (fluence threshold, ablation depth, phase change)
+- [x] **TASK-A11**: DOC-26 Blast/Frag — Add 15+ formulas (impulse mitigation, spall velocity, auxetic Poisson)
+- [x] **TASK-A12**: DOC-27 Environmental Seal — Add 15+ formulas (leak rate, pressure delta, O2/CO2 balance)
+- [x] **TASK-A13**: DOC-28 Power/Thermal — Add 15+ formulas (MHD efficiency, COP, thermal resistance network)
+- [x] **TASK-A14**: DOC-29 Sensor Suite — Add 15+ formulas (FBG sensitivity, SNR, spatial resolution)
+- [x] **TASK-A15**: DOC-33 Deployment Integration — Add 15+ formulas (assembly torque, activation sequence timing)
+- [x] **TASK-A16**: DOC-34 Maintenance — Add 12+ formulas (inspection intervals, RUL prediction, SLEP criteria)
 
 #### Priority 3: Later Docs (DOC-31, 42, 44, 46) — 4 docs, 6-14 formulas each
-- [ ] **TASK-A17**: DOC-31 Manufacturing Integration — Add 1+ formula (cell takt time, yield)
-- [ ] **TASK-A18**: DOC-42 Config Management — Add 3+ formulas (change impact, baseline drift)
-- [ ] **TASK-A19**: DOC-44 Data Management — Add 9+ formulas (storage growth, transfer latency)
-- [ ] **TASK-A20**: DOC-46 ESOH — Add 4+ formulas (exposure limits, risk scores)
+- [x] **TASK-A17**: DOC-31 Manufacturing Integration — Add 1+ formula (cell takt time, yield)
+- [x] **TASK-A18**: DOC-42 Config Management — Add 3+ formulas (change impact, baseline drift)
+- [x] **TASK-A19**: DOC-44 Data Management — Add 9+ formulas (storage growth, transfer latency)
+- [x] **TASK-A20**: DOC-46 ESOH — Add 4+ formulas (exposure limits, risk scores)
 
 #### Priority 4: Foundation Documents (DRAFT, MAT, SYNTH) — 12 docs, 0-1 formulas each
-- [ ] **TASK-A21**: DRAFT-01 Alcega Engine — Add 15+ formulas (developable surface, Gaussian curvature)
-- [ ] **TASK-A22**: DRAFT-02 Garsault Scaling — Add 15+ formulas (proportional ratios, grading rules)
-- [ ] **TASK-A23**: DRAFT-03 Pleating Kernel — Add 15+ formulas (pleat geometry, fold angles, compression)
-- [ ] **TASK-A24**: DRAFT-04 Farthingale Hoop — Add 15+ formulas (hoop stress, buckling, deployment)
-- [ ] **TASK-A25**: DRAFT-05 Nesting Optimizer — Add 15+ formulas (packing efficiency, waste %, guillotine cuts)
-- [ ] **TASK-A26**: MAT-01 Silk Fibroin — Add 15+ formulas (modulus, degradation kinetics, crystallinity)
-- [ ] **TASK-A27**: MAT-02 Structural — Add 14+ formulas (yield, fatigue, creep, CTE)
-- [ ] **TASK-A28**: MAT-03 Protective Integration — Add 14+ formulas (interfacial shear, delamination)
-- [ ] **TASK-A29**: MAT-04 Cross-Property — Add 14+ formulas (correlation matrices, PCA)
-- [ ] **TASK-A30**: SYNTH-01 Unified Theory — Add 15+ formulas (constitutive models, homogenization)
-- [ ] **TASK-A31**: SYNTH-02 AIMES Adaptation — Add 15+ formulas (threat scaling, layer mapping)
-- [ ] **TASK-A32**: SYNTH-03 Drafting Kernel — Add 15+ formulas (surface parametrization, flattening)
+- [x] **TASK-A21**: DRAFT-01 Alcega Engine — Add 15+ formulas (developable surface, Gaussian curvature)
+- [x] **TASK-A22**: DRAFT-02 Garsault Scaling — Add 15+ formulas (proportional ratios, grading rules)
+- [x] **TASK-A23**: DRAFT-03 Pleating Kernel — Add 15+ formulas (pleat geometry, fold angles, compression)
+- [x] **TASK-A24**: DRAFT-04 Farthingale Hoop — Add 15+ formulas (hoop stress, buckling, deployment)
+- [x] **TASK-A25**: DRAFT-05 Nesting Optimizer — Add 15+ formulas (packing efficiency, waste %, guillotine cuts)
+- [x] **TASK-A26**: MAT-01 Silk Fibroin — Add 15+ formulas (modulus, degradation kinetics, crystallinity)
+- [x] **TASK-A27**: MAT-02 Structural — Add 14+ formulas (yield, fatigue, creep, CTE)
+- [x] **TASK-A28**: MAT-03 Protective Integration — Add 14+ formulas (interfacial shear, delamination)
+- [x] **TASK-A29**: MAT-04 Cross-Property — Add 14+ formulas (correlation matrices, PCA)
+- [x] **TASK-A30**: SYNTH-01 Unified Theory — Add 15+ formulas (constitutive models, homogenization)
+- [x] **TASK-A31**: SYNTH-02 AIMES Adaptation — Add 15+ formulas (threat scaling, layer mapping)
+- [x] **TASK-A32**: SYNTH-03 Drafting Kernel — Add 15+ formulas (surface parametrization, flattening)
 
 ---
 
@@ -170,38 +170,38 @@ git commit -m "remediation: DOC-XX quality gates - formulas/conflation"
 
 | Task | Document | Status | Assigned | Completed |
 |------|----------|--------|----------|-----------|
-| A1 | DOC-06 | ⬜ Pending | | |
-| A2 | DOC-07 | ⬜ Pending | | |
-| A3 | DOC-08 | ⬜ Pending | | |
-| A4 | DOC-09 | ⬜ Pending | | |
-| A5 | DOC-10 | ⬜ Pending | | |
-| A6 | DOC-21 | ⬜ Pending | | |
-| A7 | DOC-22 | ⬜ Pending | | |
-| A8 | DOC-23 | ⬜ Pending | | |
-| A9 | DOC-24 | ⬜ Pending | | |
-| A10 | DOC-25 | ⬜ Pending | | |
-| A11 | DOC-26 | ⬜ Pending | | |
-| A12 | DOC-27 | ⬜ Pending | | |
-| A13 | DOC-28 | ⬜ Pending | | |
-| A14 | DOC-29 | ⬜ Pending | | |
-| A15 | DOC-33 | ⬜ Pending | | |
-| A16 | DOC-34 | ⬜ Pending | | |
-| A17 | DOC-31 | ⬜ Pending | | |
-| A18 | DOC-42 | ⬜ Pending | | |
-| A19 | DOC-44 | ⬜ Pending | | |
-| A20 | DOC-46 | ⬜ Pending | | |
-| A21 | DRAFT-01 | ⬜ Pending | | |
-| A22 | DRAFT-02 | ⬜ Pending | | |
-| A23 | DRAFT-03 | ⬜ Pending | | |
-| A24 | DRAFT-04 | ⬜ Pending | | |
-| A25 | DRAFT-05 | ⬜ Pending | | |
-| A26 | MAT-01 | ⬜ Pending | | |
-| A27 | MAT-02 | ⬜ Pending | | |
-| A28 | MAT-03 | ⬜ Pending | | |
-| A29 | MAT-04 | ⬜ Pending | | |
-| A30 | SYNTH-01 | ⬜ Pending | | |
-| A31 | SYNTH-02 | ⬜ Pending | | |
-| A32 | SYNTH-03 | ⬜ Pending | | |
+| A1 | DOC-06 | ✅ Complete | | 2026-10-24 |
+| A2 | DOC-07 | ✅ Complete | | 2026-10-24 |
+| A3 | DOC-08 | ✅ Complete | | 2026-10-24 |
+| A4 | DOC-09 | ✅ Complete | | 2026-10-24 |
+| A5 | DOC-10 | ✅ Complete | | 2026-10-24 |
+| A6 | DOC-21 | ✅ Complete | | 2026-10-24 |
+| A7 | DOC-22 | ✅ Complete | | 2026-10-24 |
+| A8 | DOC-23 | ✅ Complete | | 2026-10-24 |
+| A9 | DOC-24 | ✅ Complete | | 2026-10-24 |
+| A10 | DOC-25 | ✅ Complete | | 2026-10-24 |
+| A11 | DOC-26 | ✅ Complete | | 2026-10-24 |
+| A12 | DOC-27 | ✅ Complete | | 2026-10-24 |
+| A13 | DOC-28 | ✅ Complete | | 2026-10-24 |
+| A14 | DOC-29 | ✅ Complete | | 2026-10-24 |
+| A15 | DOC-33 | ✅ Complete | | 2026-10-24 |
+| A16 | DOC-34 | ✅ Complete | | 2026-10-24 |
+| A17 | DOC-31 | ✅ Complete | | 2026-10-24 |
+| A18 | DOC-42 | ✅ Complete | | 2026-10-24 |
+| A19 | DOC-44 | ✅ Complete | | 2026-10-24 |
+| A20 | DOC-46 | ✅ Complete | | 2026-10-24 |
+| A21 | DRAFT-01 | ✅ Complete | | 2026-10-24 |
+| A22 | DRAFT-02 | ✅ Complete | | 2026-10-24 |
+| A23 | DRAFT-03 | ✅ Complete | | 2026-10-24 |
+| A24 | DRAFT-04 | ✅ Complete | | 2026-10-24 |
+| A25 | DRAFT-05 | ✅ Complete | | 2026-10-24 |
+| A26 | MAT-01 | ✅ Complete | | 2026-10-24 |
+| A27 | MAT-02 | ✅ Complete | | 2026-10-24 |
+| A28 | MAT-03 | ✅ Complete | | 2026-10-24 |
+| A29 | MAT-04 | ✅ Complete | | 2026-10-24 |
+| A30 | SYNTH-01 | ✅ Complete | | 2026-10-24 |
+| A31 | SYNTH-02 | ✅ Complete | | 2026-10-24 |
+| A32 | SYNTH-03 | ✅ Complete | | 2026-10-24 |
 | B1 | DOC-02 | ⬜ Pending | | |
 | B2 | DOC-11..18 | ⬜ Pending | | |
 | B3 | DOC-19 | ⬜ Pending | | |

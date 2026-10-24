@@ -1,11 +1,11 @@
 {
   "chapter_01_intro.md": {
-    "size": 49,
-    "sha256": "bbe949f03eb4ce65a17a8ad522610730578358e4f2809c0bcbbfb57bf09fc344"
+    "size": 51,
+    "sha256": "5aab4e1b524d893ce0f0c5106966ebc7dfee4c413acd33abe940616089b2ca52"
   },
   "chapter_02_aegisoutfitfabricator_geometri.md": {
-    "size": 62,
-    "sha256": "a1227dd78d3dded38fae1d865af09f0d3d8f96d2d41f45b8d6d4e549ff2d2e8d"
+    "size": 64,
+    "sha256": "3ab31518d5fc608f5a3a37d9db71003280466b1bf914ad637c6b6bec57b9b007"
   },
   "chapter_03_1._historical_foundation_(rese.md": {
     "size": 864,
@@ -42,5 +42,117 @@
   "chapter_11_9._conformance_check.md": {
     "size": 405,
     "sha256": "d940fd1aff6438a3205e802af5d79496932ee7ac75b385abe0b0fa765f579f5e"
+  },
+  "chapter_03_1_historical_foundation_resear.md": {
+    "size": 865,
+    "sha256": "f13f97d67e1e6c452e3879e01b59e338663106c441cd6fe57c459b7cf2da424c"
+  },
+  "chapter_04_2_hoop_geometry.md": {
+    "size": 2093,
+    "sha256": "787493e86e1ddb8b9ba58ff600e46d80f1ed323458e139a4e091e48ad395309e"
+  },
+  "chapter_05_3_tape_suspension_system_caten.md": {
+    "size": 1362,
+    "sha256": "0ddabb891b5792e3ea6c53bf08d66a6e4c9d7bf0e4fb6effa847128976a098fa"
+  },
+  "chapter_06_4_deployment_kinematics.md": {
+    "size": 1432,
+    "sha256": "b7dab32431a7841af953a2facdc8b7cff0a534f593bfaaaf5601e90236b4fe4b"
+  },
+  "chapter_07_5_edition-specific_hoop_archit.md": {
+    "size": 863,
+    "sha256": "fd1016b3f62e7d92de3d866d43617c620b9beb3b3c3a60314f6439fde2669e98"
+  },
+  "chapter_08_6_structural_analysis.md": {
+    "size": 851,
+    "sha256": "764ba66ebecb6e648984fa579a2f0cab3103c444f53b08266b60cac635b6ad00"
+  },
+  "chapter_09_7_manufacturing__assembly.md": {
+    "size": 716,
+    "sha256": "c2b98556f97db5d4b8618f35e8baa24acb2141d2c002054f97258911bc55f709"
+  },
+  "chapter_10_8_traceability_matrix__draft-0.md": {
+    "size": 2343,
+    "sha256": "fc25afe11eedc4083cc83438fcc39d0be237ecf040dfd5d939fd56ae11f28e98"
+  },
+  "chapter_11_9_conformance_check.md": {
+    "size": 407,
+    "sha256": "8774b9599a444f203730a49d2ed24b02bdd5f9d200306d61aaa692126cca8641"
+  },
+  "chapter_04_1_historical_foundation_resear.md": {
+    "size": 866,
+    "sha256": "ba8750abd85cfa6998510dc763722523d952b2b5d80cab05fe79dfc23a7ed5a1"
+  },
+  "chapter_05_2_hoop_geometry_mathematics.md": {
+    "size": 1588,
+    "sha256": "9a7c3c19a9db2a8ed9d08ee0203df99ec69c103bb792c36f5c034a993dc138b1"
+  },
+  "chapter_06_2_hoop_geometry.md": {
+    "size": 2094,
+    "sha256": "6008a19db695d3a599e6cae7a550249f59780f2f0f62c720d0959f605973220a"
+  },
+  "chapter_07_3_tape_suspension_system_caten.md": {
+    "size": 1362,
+    "sha256": "0ddabb891b5792e3ea6c53bf08d66a6e4c9d7bf0e4fb6effa847128976a098fa"
+  },
+  "chapter_08_3_tape_suspension_system_caten.md": {
+    "size": 1363,
+    "sha256": "8e1471e065258e37f9cc7629233e098a208a4aa1ed23f3d3e25ae9756562c90c"
+  },
+  "chapter_09_4_deployment_kinematics.md": {
+    "size": 1432,
+    "sha256": "b7dab32431a7841af953a2facdc8b7cff0a534f593bfaaaf5601e90236b4fe4b"
+  },
+  "chapter_10_4_deployment_kinematics.md": {
+    "size": 1433,
+    "sha256": "f989fd242e5bfccd0108b85dd4bea51e2332e11da00070553760560b2861ebf6"
+  },
+  "chapter_11_5_edition-specific_hoop_archit.md": {
+    "size": 863,
+    "sha256": "fd1016b3f62e7d92de3d866d43617c620b9beb3b3c3a60314f6439fde2669e98"
+  },
+  "chapter_12_5_edition-specific_hoop_archit.md": {
+    "size": 864,
+    "sha256": "fe61bd9f897ed48300a8f4489d61ee2d794d94fee3a28988762ae2e8be4e4a00"
+  },
+  "chapter_13_6_structural_analysis.md": {
+    "size": 851,
+    "sha256": "764ba66ebecb6e648984fa579a2f0cab3103c444f53b08266b60cac635b6ad00"
+  },
+  "chapter_14_6_structural_analysis.md": {
+    "size": 852,
+    "sha256": "4ebb830b781b916c1a735c46ed5d86c4e38e511ca9bdd06e4e79d0af737b763b"
+  },
+  "chapter_15_7_manufacturing__assembly.md": {
+    "size": 716,
+    "sha256": "c2b98556f97db5d4b8618f35e8baa24acb2141d2c002054f97258911bc55f709"
+  },
+  "chapter_16_7_manufacturing__assembly.md": {
+    "size": 717,
+    "sha256": "33ef1ad488a63b73dc99a776882d9b3b83b6f9277398414ec233f4aa9ae5bfdb"
+  },
+  "chapter_17_8_traceability_matrix__draft-0.md": {
+    "size": 2343,
+    "sha256": "fc25afe11eedc4083cc83438fcc39d0be237ecf040dfd5d939fd56ae11f28e98"
+  },
+  "chapter_18_8_traceability_matrix__draft-0.md": {
+    "size": 2344,
+    "sha256": "907491f101d2e6bf933d0e411abd64cf48c9d4dc5fe173dc9d69377556b8019e"
+  },
+  "chapter_19_9_conformance_check.md": {
+    "size": 406,
+    "sha256": "254540bb35806231dc2dcc262e400eed1de4b485c1008a371146bdb5f3bc3712"
+  },
+  "chapter_20_9_conformance_check.md": {
+    "size": 410,
+    "sha256": "5a5bf1d22791bff6dea7a529cb6a2d91ecf3eaad444f9b426040fdc6256538a9"
+  },
+  "chapter_21_8_additional_formulas.md": {
+    "size": 1067,
+    "sha256": "f825207cd17d24cb8e8eb4bb7547dfd65ccd4a5b877549703381ac0c73159c0d"
+  },
+  "chapter_22_9_traceability_matrix__draft-0.md": {
+    "size": 558,
+    "sha256": "051d7a39b6da8816f05b0f8ad8344f26cb76df3d13c2be815ee87e007d2b84ca"
   }
 }

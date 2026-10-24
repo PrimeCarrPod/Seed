@@ -1,11 +1,11 @@
 {
   "chapter_01_intro.md": {
-    "size": 40,
-    "sha256": "29c8b40b264765d943624e03776e6794e700eee2e8040e8c62bae871b30fc2fe"
+    "size": 430,
+    "sha256": "a1d7b46a75a7795bb1bf44e817574ceb0068dc65ae6e85e534a6516a7d61c555"
   },
   "chapter_02_aegisoutfitfabricator_geometri.md": {
-    "size": 62,
-    "sha256": "4619f57f540b5006a7324d3f999dfa16304f2941dde5267eb3b915202f50e07f"
+    "size": 63,
+    "sha256": "36d261f1cbcb5c42d1a904a548a17511ff0502d8a731917d3febae71598db6fd"
   },
   "chapter_03_1._alcega's_zero-waste_legacy_.md": {
     "size": 674,
@@ -38,5 +38,37 @@
   "chapter_10_8._conformance_check.md": {
     "size": 395,
     "sha256": "39d133a68a1d31ac8b2c72dc8c7643d57e9fb5c6abdc9e4ae04f1021e9d7f270"
+  },
+  "chapter_03_1_alcega's_zero-waste_legacy_r.md": {
+    "size": 675,
+    "sha256": "33e95c099d44e3b3c28865d20fa289f56827a32a1ea9e1c91a03f01f09e45a8c"
+  },
+  "chapter_04_2_nesting.md": {
+    "size": 1495,
+    "sha256": "bbbdab5acd39936f351db270b0f13d4ae5f99fbef62a4f08292e895798581e57"
+  },
+  "chapter_05_3_optimization_algorithm.md": {
+    "size": 2241,
+    "sha256": "c4be1407d647b7e9bf2a7480efff18b64caffba11533e18889805abe0bebe25b"
+  },
+  "chapter_06_4_offcut_catalog_system.md": {
+    "size": 1231,
+    "sha256": "6ef121b887b66d6d2a35577375b2ff2fb1f46d1c1aedfbc0ac2ee47dd9047b73"
+  },
+  "chapter_07_5_marker_efficiency_metrics.md": {
+    "size": 990,
+    "sha256": "7fe9735d36eaa1116b1fe35d2e1deecd6a5afaf0378d1e4e9ed9a2d0a9bc10c1"
+  },
+  "chapter_08_6_integration_with_drafting_pi.md": {
+    "size": 930,
+    "sha256": "8fb25b84399e76803adc22e099687fadd5080590fbb58a732672b2ab12dcfb8d"
+  },
+  "chapter_09_7_traceability_matrix__draft-0.md": {
+    "size": 2654,
+    "sha256": "27dca3eb374c130ed7ebc6722f8e58324f3025b41e02baa26693ab7628420300"
+  },
+  "chapter_10_8_conformance_check.md": {
+    "size": 397,
+    "sha256": "232e1b2ccc38e1258018c0427ab593833dc0df00f507665b24d8fd971ec4688e"
   }
 }
