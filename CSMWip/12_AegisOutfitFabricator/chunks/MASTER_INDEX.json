@@ -5578,6 +5578,60 @@
         "size": 935,
         "sha256": "ee1806567a77ea4afb2667201c476c8a3bfb8c12b30cca95afda235b80845b41"
       }
+    },
+    "DOC-23": {
+      "chapter_01_intro.md": {
+        "size": 49,
+        "sha256": "bff850094760b52e6a4891be04fc5de96c479ba29126eb338e36f72436ad2c2c"
+      },
+      "chapter_02_metallic_thread_faraday_cage_+.md": {
+        "size": 120,
+        "sha256": "57e2df4ac4ea58a206805badac96b377bfc37406111e3c23cdf136a458a8d3fb"
+      },
+      "chapter_03_1_executive_summary.md": {
+        "size": 2470,
+        "sha256": "45cc52ad538981e72a9d66e593a223c18ecf451cb92696a2d78ddb0dd4b85154"
+      },
+      "chapter_04_2_metallic_thread_faraday_cage.md": {
+        "size": 3326,
+        "sha256": "eef9a72ec582d0dc2ba70ff2841c05dcb7a13d61a2352d26dd0fbf000835db46"
+      },
+      "chapter_05_3_bfrp_dielectric_chassis__lay.md": {
+        "size": 2369,
+        "sha256": "caa314f2d49635a790c5991b176fba0806ea013871e0170c929a7f8699c32c1b"
+      },
+      "chapter_06_4_emp_protection__mil-std-464c.md": {
+        "size": 1746,
+        "sha256": "ea581fe2f53151141a16dffeb7d0250d00b876498bf4ba52c7e33d26099ca2f4"
+      },
+      "chapter_07_5_edition-specific_electrical_.md": {
+        "size": 1312,
+        "sha256": "c27734cb65ff3b0c0f74c61412758245c012f3674f004d6bf281a72297082cc9"
+      },
+      "chapter_08_6_electrical_test_protocol__cs.md": {
+        "size": 1091,
+        "sha256": "a30e8b9be2f0a53f179d1da5211cc781b8c89622e61fbfa927504e9eb0f70b37"
+      },
+      "chapter_09_7_cross-references.md": {
+        "size": 1727,
+        "sha256": "a9d671b6188c65ef1885818151e44503d8055de7c32ad05b111ef81561514616"
+      },
+      "chapter_10_8_edition-specific_formulas.md": {
+        "size": 1171,
+        "sha256": "7299db2c053cfa07cdb163062cf1f23ffbe21a706b63d5b16da4ff1c71de9036"
+      },
+      "chapter_11_9_standards_compliance_matrix.md": {
+        "size": 955,
+        "sha256": "6abcf268cf54c40862cf785ffc93bb1134ac661befbcc54367788440248ba17a"
+      },
+      "chapter_12_10_traceability_matrix.md": {
+        "size": 1601,
+        "sha256": "12e53b1b2141acd372c0afdb4fc13000561fffae00900078ff1d6782c6adf090"
+      },
+      "chapter_13_11_conformance_checklist.md": {
+        "size": 649,
+        "sha256": "1031f0ea3cbfb9b6bc7824d786f965833079b507eea038715238ac71e1684f7f"
+      }
     }
   }
 }
