@@ -349,7 +349,7 @@ decompose_task() {
             read -p "  Subtask $count: " title
             [[ -z "$title" ]] && break
             subtask_titles+=("$title")
-            ((count++))
+            ((++count))
         done
     fi
     
@@ -464,7 +464,7 @@ decompose_all_pending() {
         
         if [[ "$status" == "pending" && $depth -lt $max_depth && $subtasks -eq 0 ]]; then
             auto_decompose_task "$id"
-            ((decomposed++))
+            ((++decomposed))
             tasks_json=$(cat "$TASK_FILE")  # Refresh
             task_count=$(echo "$tasks_json" | jq 'length')
         fi
@@ -1154,15 +1154,15 @@ show_audit_summary() {
     
     while IFS= read -r line; do
         [[ -z "$line" ]] && continue
-        ((total_commands++))
+        ((++total_commands))
         
         local status=$(echo "$line" | jq -r '.status // ""')
         local duration=$(echo "$line" | jq -r '.duration_seconds // 0')
         local task_id=$(echo "$line" | jq -r '.task_id // ""')
         local exit_code=$(echo "$line" | jq -r '.exit_code // 0')
         
-        [[ "$status" == "completed" ]] && ((successful++))
-        [[ "$status" == "failed" ]] && ((failed++))
+        [[ "$status" == "completed" ]] && ((++successful))
+        [[ "$status" == "failed" ]] && ((++failed))
         total_duration=$(awk -v t="$total_duration" -v d="$duration" 'BEGIN {print t + d}')
         tasks_touched+=("$task_id")
     done < "$LOG_FILE"
