@@ -76,6 +76,14 @@ All projects that received generated README.md files now have HasREADME=Y:
   - 44 versioned APKs in V3 proving reproducibility, 17K minimal E5 APK
   - BOUNCE integration: shared keystore, Firebase billing, APK delivery via App Distribution
   - NEW_APP_RUNNER_TGApp.md (612 lines) for creating new ecosystem apps
+- **12_AegisOutfitFabricator** — Replaced template with project-specific 7-chapter README (359 lines) containing:
+  - 77 documents (DOC-01..48, MAT-01..04, SYNTH-01..03, DRAFT-01..05, runners, compendium)
+  - 8 edition configurations (RM/RW × TS/TG/SS/SG), 12-layer AIMES stack, 1,152 parameter sets
+  - Runner-based workflow (22+ runners), 17-piece → logical chunks migration complete
+  - Quality gates: ≥300 lines, ≥15 formulas, ≥10 refs, ≥5 standards, 0 conflation per doc
+  - Remediation Phase A complete (32 formula injection tasks), Phases B-D queued
+  - Master compendium: EQUATIONSCOMPLETE (2.8MB, all 77 docs quality-gated)
+  - Heartbeat monitor (120s), 30s subtask guard, auto-continue queue
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
