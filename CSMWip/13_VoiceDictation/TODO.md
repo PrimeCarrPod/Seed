@@ -12,11 +12,11 @@
 - [ ] Verify microphone permission flow
 - [ ] Verify SpeechRecognizer works (online/offline)
 
-## Milestone 2: WebSocket Bridge Server ✓
-- [x] Node.js server (ws-server/server.js)
-- [x] package.json with ws dependency
-- [ ] `cd ws-server && npm install`
-- [ ] Test: `node server.js` → listens on ws://0.0.0.0:8765
+## Milestone 2: WebSocket Bridge Server (Python) ✓
+- [x] Python server (ws-server/server.py) — asyncio + websockets
+- [x] requirements.txt with websockets>=12.0
+- [ ] `pip3 install -r ws-server/requirements.txt`
+- [ ] Test: `python3 ws-server/server.py` → listens on ws://0.0.0.0:8765
 - [ ] Verify Android can connect from LAN
 - [ ] Verify Chrome extension can connect from localhost
 

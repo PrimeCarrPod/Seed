@@ -2,17 +2,18 @@
 
 ## Project: VoiceDictation — Android Voice → Chrome Text Input
 
-**Type**: Android app (sender) + Chrome Extension (receiver) + WebSocket Bridge
+**Type**: Android app (sender) + Chrome Extension (receiver) + WebSocket Bridge (Python)
 **Target API**: 34 (Android 14)
 **Min API**: 21 (Android 5.0)
 **Build System**: Custom (javac + aapt2 + d8 + zipalign + apksigner) — same as 05_BOUNCE
+**Runtime**: Pure command-line tools in Debian — no Gradle, no AndroidX, no Kotlin, no Node.js
 
 ## Architecture Overview
 
 ```
 ┌─────────────┐     WebSocket      ┌──────────────┐     WebSocket      ┌─────────────────┐
 │  Android    │ ◄─────────────────► │  WS Server   │ ◄─────────────────► │  Chrome Ext     │
-│  (Sender)   │   (LAN, ws://)      │  (Windows)   │   (localhost)      │  (Receiver)     │
+│  (Sender)   │   (LAN, ws://)      │  (Debian)    │   (localhost)      │  (Receiver)     │
 └─────────────┘                     └──────────────┘                     └─────────────────┘
    │                                                                    │
    ▼                                                                    ▼
@@ -47,9 +48,9 @@ API (offline/online)                                           injects into
 │   ├── content.js
 │   ├── background.js
 │   └── popup.html
-├── ws-server/                     # WebSocket bridge (Windows)
-│   ├── server.js                  # Node.js WebSocket server
-│   └── package.json
+├── ws-server/                     # WebSocket bridge (Python, runs in Debian)
+│   ├── server.py                  # asyncio + websockets server
+│   └── requirements.txt           # Python deps: websockets>=12.0
 ├── NEXT_runner_001.md
 └── RESUME_SESSION_VOICEDICTATION.md
 ```
@@ -73,7 +74,7 @@ export BUILD_TOOLS=$ANDROID_SDK/build-tools/34.0.0
 ## Java Conventions
 - **Package**: `com.csmlabs.voicedictation`
 - **Source/Target**: 1.8
-- **Deps**: OKHttp for WebSocket (bundled as .jar in libs/ or compiled from source)
+- **Deps**: OKHttp for WebSocket (bundled as .jar in libs/)
 - **No AndroidX** — framework classes only
 - **No Kotlin** — Java only
 
@@ -83,26 +84,27 @@ export BUILD_TOOLS=$ANDROID_SDK/build-tools/34.0.0
 1. **MainActivity** — Connect to WS server, start/stop voice recognition, show status
 2. **VoiceRecognitionService** — Wraps `SpeechRecognizer`, handles partial/final results
 3. **WebSocketClient** — OKHttp WebSocket connection with auto-reconnect
-3. **Permissions**: `RECORD_AUDIO`, `INTERNET`, `ACCESS_NETWORK_STATE`
+4. **Permissions**: `RECORD_AUDIO`, `INTERNET`, `ACCESS_NETWORK_STATE`
 
 ### Chrome Extension (Receiver) — Manifest V3
 1. **background.js** — WebSocket client to local WS server, manages connection state
 2. **content.js** — Injected into all pages, finds focused editable element, inserts text
-3. **manifest.json** — Permissions: `activeTab`, `scripting`, `webSocket` (connect to localhost)
+3. **manifest.json** — Permissions: `activeTab`, `scripting`
 
-### WebSocket Server (Bridge) — Node.js
-- Runs on Windows: `node ws-server/server.js`
+### WebSocket Server (Bridge) — Python (asyncio + websockets)
+- Runs in Debian: `python3 ws-server/server.py`
+- Install deps: `pip3 install -r ws-server/requirements.txt`
 - Listens on `ws://0.0.0.0:8765` (LAN) and `ws://localhost:8765` (local)
 - Relays messages from Android clients to Chrome extension clients
 - Simple protocol: `{type: "text", payload: "recognized words"}`
 
 ## Testing Flow
-1. Start WS server on Windows: `node ws-server/server.js`
+1. Start WS server in Debian: `pip3 install -r ws-server/requirements.txt && python3 ws-server/server.py`
 2. Install APK on Android: `./build.sh install`
 3. Load Chrome extension (Developer mode → Load unpacked → `chrome-extension/`)
-4. Open any page with text input on Windows Chrome
-5. On Android app: enter server IP (Windows LAN IP), tap Connect, tap Mic to start dictation
-6. Speak → text appears in focused Windows Chrome input
+4. Open any page with text input in Chrome (on same machine or LAN)
+5. On Android app: enter Debian LAN IP, tap Connect, tap Mic to start dictation
+6. Speak → text appears in focused Chrome input
 
 ## Session Resume
 ```bash
