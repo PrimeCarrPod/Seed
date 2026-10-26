@@ -289,19 +289,19 @@
 ### Phase 3: Technical Specifications — Runner 003 (Tasks 141-215)
 
 #### 3.1 DOC-09: Rare Earth & Critical Mineral Specifications (15 tasks)
-- [ ] 3.1.1 Document NdFeB grades: N35-N52, N35M-N50M, N33H-N48H, N30SH-N45SH
-- [ ] 3.1.2 Document SmCo grades: SmCo5 (16-22 MGOe), Sm2Co17 (22-32 MGOe)
-- [ ] 3.1.3 Document Fe16N2 27 MGOe: Niron Magnetics specs, CSMMagTech2026 V2.0
-- [ ] 3.1.4 Document FeN/FeCo rare-earth-free grades: MnBi 14 MGOe, AlNiCo 10.5 MGOe
-- [ ] 3.1.5 Analyze REE oxide specifications: Nd2O3, Pr6O11, Dy2O3, Tb4O7 purity
-- [ ] 3.1.6 Document magnet motor integration specs: CSMFAB motor designs
-- [ ] 3.1.7 Cross-reference with Aegis-Forge output specs (DOC-05, E172)
-- [ ] 3.1.8 Draft DOC-09 full document (≥900 lines, ≥20 formulas, ≥15 refs, ≥8 standards)
-- [ ] 3.1.9 Generate heuristic intros (Williams, Keymaker, El Segundo, Combined)
-- [ ] 3.1.10 Split into logical chunks → chunks/DOC-09/
-- [ ] 3.1.11 Generate manifest & verify integrity
-- [ ] 3.1.12 Compress FinishedWork original (.gz)
-- [ ] 3.1.13 Log completion to memory/ + git commit
+- [x] 3.1.1 Document NdFeB grades: N35-N52, N35M-N50M, N33H-N48H, N30SH-N45SH
+- [x] 3.1.2 Document SmCo grades: SmCo5 (16-22 MGOe), Sm2Co17 (22-32 MGOe)
+- [x] 3.1.3 Document Fe16N2 27 MGOe: Niron Magnetics specs, CSMMagTech2026 V2.0
+- [x] 3.1.4 Document FeN/FeCo rare-earth-free grades: MnBi 14 MGOe, AlNiCo 10.5 MGOe
+- [x] 3.1.5 Analyze REE oxide specifications: Nd2O3, Pr6O11, Dy2O3, Tb4O7 purity
+- [x] 3.1.6 Document magnet motor integration specs: CSMFAB motor designs
+- [x] 3.1.7 Cross-reference with Aegis-Forge output specs (DOC-05, E172)
+- [x] 3.1.8 Draft DOC-09 full document (≥900 lines, ≥20 formulas, ≥15 refs, ≥8 standards)
+- [x] 3.1.9 Generate heuristic intros (Williams, Keymaker, El Segundo, Combined)
+- [x] 3.1.10 Split into logical chunks → chunks/DOC-09/
+- [x] 3.1.11 Generate manifest & verify integrity
+- [x] 3.1.12 Compress FinishedWork original (.gz)
+- [x] 3.1.13 Log completion to memory/ + git commit
 
 #### 3.2 DOC-10: Magnet Manufacturing Supply Chain (15 tasks)
 #### 3.3 DOC-11: Geomagnetic Risk & Infrastructure Hardening (15 tasks)
