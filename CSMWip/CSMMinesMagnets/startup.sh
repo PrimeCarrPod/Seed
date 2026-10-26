@@ -273,7 +273,7 @@ echo "  [ ] Git commit + tag + push: DONE"
 
 echo ""
 echo "=== Quick Resume (Taskmaster) ==="
-source /workspace/app/__Python_Tools/taskmaster.sh 2>/dev/null && taskmaster.sh quick-resume
+source scripts/taskmaster.sh 2>/dev/null && taskmaster.sh quick-resume
 
 echo ""
 echo "=== Session Ready ==="
