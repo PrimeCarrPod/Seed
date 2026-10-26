@@ -197,87 +197,87 @@
 - [x] 2.5.37 Write Section 3.2 - IATA DGR 9.3 air freight restrictions
 - [x] 2.5.38 Write Section 3.2.1 - Field strength <5.25mT at 2.1m (IATA PI 953)
 - [x] 2.5.39 Write Section 3.2.2 - Shielding packaging design (mu-metal, steel)
-- [ ] 2.5.40 Write Section 3.2.3 - Temperature control -40°C to +80°C stability
-- [ ] 2.5.41 Write Section 3.3 - MIL-STD-1540 test certificate requirements
-- [ ] 2.5.42 Write Section 3.4 - ASTM D4169 distribution testing (Assurance Level II)
-- [ ] 2.5.43 Write Section 3.5 - Magnet-specific specs: NdFeB vs SmCo vs FeN vs FeCo
-- [ ] 2.5.44 Write Section 3.6 - Documentation: DGD, MSDS, shipper's declaration
-- [ ] 2.5.45 Write Section 3.7 - Emergency response (EmS F-A, S-Q)
-- [ ] 2.5.46 Create Chapter 4 markdown header "Customs CPTPP Paperless & Blockchain"
-- [ ] 2.5.47 Write Section 4.1 - CPTPP Article 14 Digital Trade provisions
-- [ ] 2.5.48 Write Section 4.1.1 - Paperless customs & e-bills of lading
-- [ ] 2.5.49 Write Section 4.1.2 - Blockchain certificates of origin
-- [ ] 2.5.50 Write Section 4.2 - Chile-US FTA rules of origin for magnets
-- [ ] 2.5.51 Write Section 4.3 - Chile-EU Advanced Framework strategic raw materials
-- [ ] 2.5.52 Write Section 4.4 - APEC Cross-Border Paperless Trade
-- [ ] 2.5.53 Write Section 4.5 - SICEX single window system
-- [ ] 2.5.54 Write Section 4.6 - WCO SAFE Framework & AEO certification
-- [ ] 2.5.55 Write Section 4.7 - HS Code classification for magnetic materials
-- [ ] 2.5.56 Write Section 4.8 - Customs clearance timeline & cost formulas
-- [ ] 2.5.57 Create Chapter 5 markdown header "Logistics Cost Model Ocean Freight"
-- [ ] 2.5.58 Write Section 5.1 - Ocean freight rates Antofagasta→Rotterdam/Shanghai/Busan/Houston
-- [ ] 2.5.59 Write Section 5.1.1 - 2024-25 spot rate benchmarks ($/TEU, $/ton)
-- [ ] 2.5.60 Write Section 5.1.2 - Seasonal surcharges (peak season, bunker adjustment)
-- [ ] 2.5.61 Write Section 5.2 - Rail tariffs FCAB/Ferronor detailed breakdown
-- [ ] 2.5.62 Write Section 5.3 - Warehousing: ZOFRI Iquique & Punta Arenas bonded zones
-- [ ] 2.5.63 Write Section 5.4 - Insurance: war risk, magnet degradation, delay coverage
-- [ ] 2.5.64 Write Section 5.5 - Total landed cost model formula
-- [ ] 2.5.65 Write Section 5.5.1 - Mine-to-port rail component
-- [ ] 2.5.66 Write Section 5.5.2 - Port handling & documentation fees
-- [ ] 2.5.67 Write Section 5.6 - Sensitivity analysis (±15% fuel, ±20% FX)
-- [ ] 2.5.68 Create Chapter 6 markdown header "Supply Chain Resilience Alt Routes"
-- [ ] 2.5.69 Write Section 6.1 - Pacific route (Antofagasta→Asia/US West Coast)
-- [ ] 2.5.70 Write Section 6.2 - Atlantic route (Punta Arenas/Coronel→Europe/US East)
-- [ ] 2.5.71 Write Section 6.3 - Strait of Magellan transit (36hrs, pilotage, weather)
-- [ ] 2.5.72 Write Section 6.4 - Panama Canal alternative (Neopanamax, tolls, queue)
-- [ ] 2.5.73 Write Section 6.5 - Red Sea disruption contingencies (Cape routing)
-- [ ] 2.5.74 Write Section 6.6 - Port strike history: 2019, 2022, 2024 impact analysis
-- [ ] 2.5.75 Write Section 6.7 - Climate resilience: tsunami (2010, 2015), Mw8.8+ seismic
-- [ ] 2.5.76 Write Section 6.8 - Atacama hyperaridity: fog, dust, zero-rain operations
-- [ ] 2.5.77 Write Section 6.9 - Resilience scoring matrix (RTO/RPO per corridor)
-- [ ] 2.5.78 Create Chapter 7 markdown header "CSM Delivery Requirements Magnet-to-Motor"
-- [ ] 2.5.79 Write Section 7.1 - CSM factory intake specs from DOC-06
-- [ ] 2.5.80 Write Section 7.1.1 - NdFeB grade specs (N42H, N48SH, N52EH)
-- [ ] 2.5.81 Write Section 7.1.2 - SmCo grade specs (SmCo 1:5, 2:17 series)
-- [ ] 2.5.82 Write Section 7.1.3 - FeN/FeCo emerging grade specifications
-- [ ] 2.5.83 Write Section 7.2 - JIT vs buffer stock strategy analysis
-- [ ] 2.5.84 Write Section 7.3 - QC chain: mine assay → port inspection → factory acceptance
-- [ ] 2.5.85 Write Section 7.4 - DFARS 252.225-7018 specialty metals compliance
-- [ ] 2.5.86 Write Section 7.5 - Traceability: heat/lot tracking blockchain ledger
-- [ ] 2.5.87 Write Section 7.6 - Delivery terms: DDP factory, INCOTERMS 2020
-- [ ] 2.5.88 Create Chapter 8 markdown header "Port Community Integration Local Benefit"
-- [ ] 2.5.89 Write Section 8.1 - Aegis-Forge modular port services deployment
-- [ ] 2.5.90 Write Section 8.2 - Zero aqueous discharge → port water quality benefit
-- [ ] 2.5.91 Write Section 8.3 - FBC/CDC trusts at port cities (Antofagasta, Mejillones, San Antonio)
-- [ ] 2.5.92 Write Section 8.4 - Local employment: port operations + Aegis-Forge clusters
-- [ ] 2.5.93 Write Section 8.5 - Indigenous: Kawashkar/Yámana (Punta Arenas)
-- [ ] 2.5.94 Write Section 8.6 - Indigenous: Chango (Antofagasta/Mejillones)
-- [ ] 2.5.95 Write Section 8.7 - Community benefit agreement template
-- [ ] 2.5.96 Write Section 8.8 - Environmental monitoring: community sentinel program
-- [ ] 2.5.97 Write Section 8.9 - Social license maintenance protocol
-- [ ] 2.5.98 Create Chapter 9 markdown header "Traceability Matrix Logistics Claims"
-- [ ] 2.5.99 Write Section 9.1 - Methodology: claim-to-source mapping per DOC-07
-- [ ] 2.5.100 Write Section 9.2 - Port infrastructure claims traceability table
-- [ ] 2.5.101 Write Section 9.3 - Rail corridor claims traceability table
-- [ ] 2.5.102 Write Section 9.4 - Shipping/customs claims traceability table
-- [ ] 2.5.103 Write Section 9.5 - Cost/resilience/community claims traceability table
-- [ ] 2.5.104 Write Section 9.6 - Cross-reference index to DOC-01 through DOC-07
-- [ ] 2.5.105 Assemble full DOC-08 document (concatenate Ch1-Ch9, verify ≥900 lines)
-- [ ] 2.5.106 Count formulas/technical specs (target ≥20 LaTeX/Unicode)
-- [ ] 2.5.107 Count cross-references (target ≥15 to DOC-01..07, Chilean law, IMO, IATA, WCO)
-- [ ] 2.5.108 Count standards cited (target ≥8: IMDG, IATA, CPTPP, WCO, ISO, ASTM, MIL-STD, Chilean port law)
-- [ ] 2.5.109 Conflation check vs DOC-01..07 (0 flags target)
-- [ ] 2.5.110 Write complete DOC-08 to FinishedWork/DOC-08_Port_Logistics_Corridors.md
-- [ ] 2.5.111 Run write_large_file.py split (chunks/DOC-08 chapter .md)
-- [ ] 2.5.112 Run write_large_file.py verify chunks/DOC-08 (reassembly 0 bytes diff)
-- [ ] 2.5.113 Run write_large_file.py manifest chunks/DOC-08 (SHA256 + size)
-- [ ] 2.5.114 Run write_large_file.py compress FinishedWork/DOC-08_*.md (.md.gz)
-- [ ] 2.5.115 Run generate_heuristic_intros.sh (5 variants: Williams, Keymaker, El Segundo, Baker Street, Combined)
-- [ ] 2.5.116 Verify 5 intro files created in FinishedWork/intros/
-- [ ] 2.5.117 Git add chunks/DOC-08/ FinishedWork/DOC-08_*.md.gz FinishedWork/intros/DOC-08_*.md
-- [ ] 2.5.118 Git commit with message 'DOC-08: Port & Logistics Corridors complete'
-- [ ] 2.5.119 Git tag runner-005-complete && git push origin --tags
-- [ ] 2.5.120 Create NEXT_runner_006.md handoff document
+- [x] 2.5.40 Write Section 3.2.3 - Temperature control -40°C to +80°C stability
+- [x] 2.5.41 Write Section 3.3 - MIL-STD-1540 test certificate requirements
+- [x] 2.5.42 Write Section 3.4 - ASTM D4169 distribution testing (Assurance Level II)
+- [x] 2.5.43 Write Section 3.5 - Magnet-specific specs: NdFeB vs SmCo vs FeN vs FeCo
+- [x] 2.5.44 Write Section 3.6 - Documentation: DGD, MSDS, shipper's declaration
+- [x] 2.5.45 Write Section 3.7 - Emergency response (EmS F-A, S-Q)
+- [x] 2.5.46 Create Chapter 4 markdown header "Customs CPTPP Paperless & Blockchain"
+- [x] 2.5.47 Write Section 4.1 - CPTPP Article 14 Digital Trade provisions
+- [x] 2.5.48 Write Section 4.1.1 - Paperless customs & e-bills of lading
+- [x] 2.5.49 Write Section 4.1.2 - Blockchain certificates of origin
+- [x] 2.5.50 Write Section 4.2 - Chile-US FTA rules of origin for magnets
+- [x] 2.5.51 Write Section 4.3 - Chile-EU Advanced Framework strategic raw materials
+- [x] 2.5.52 Write Section 4.4 - APEC Cross-Border Paperless Trade
+- [x] 2.5.53 Write Section 4.5 - SICEX single window system
+- [x] 2.5.54 Write Section 4.6 - WCO SAFE Framework & AEO certification
+- [x] 2.5.55 Write Section 4.7 - HS Code classification for magnetic materials
+- [x] 2.5.56 Write Section 4.8 - Customs clearance timeline & cost formulas
+- [x] 2.5.57 Create Chapter 5 markdown header "Logistics Cost Model Ocean Freight"
+- [x] 2.5.58 Write Section 5.1 - Ocean freight rates Antofagasta→Rotterdam/Shanghai/Busan/Houston
+- [x] 2.5.59 Write Section 5.1.1 - 2024-25 spot rate benchmarks ($/TEU, $/ton)
+- [x] 2.5.60 Write Section 5.1.2 - Seasonal surcharges (peak season, bunker adjustment)
+- [x] 2.5.61 Write Section 5.2 - Rail tariffs FCAB/Ferronor detailed breakdown
+- [x] 2.5.62 Write Section 5.3 - Warehousing: ZOFRI Iquique & Punta Arenas bonded zones
+- [x] 2.5.63 Write Section 5.4 - Insurance: war risk, magnet degradation, delay coverage
+- [x] 2.5.64 Write Section 5.5 - Total landed cost model formula
+- [x] 2.5.65 Write Section 5.5.1 - Mine-to-port rail component
+- [x] 2.5.66 Write Section 5.5.2 - Port handling & documentation fees
+- [x] 2.5.67 Write Section 5.6 - Sensitivity analysis (±15% fuel, ±20% FX)
+- [x] 2.5.68 Create Chapter 6 markdown header "Supply Chain Resilience Alt Routes"
+- [x] 2.5.69 Write Section 6.1 - Pacific route (Antofagasta→Asia/US West Coast)
+- [x] 2.5.70 Write Section 6.2 - Atlantic route (Punta Arenas/Coronel→Europe/US East)
+- [x] 2.5.71 Write Section 6.3 - Strait of Magellan transit (36hrs, pilotage, weather)
+- [x] 2.5.72 Write Section 6.4 - Panama Canal alternative (Neopanamax, tolls, queue)
+- [x] 2.5.73 Write Section 6.5 - Red Sea disruption contingencies (Cape routing)
+- [x] 2.5.74 Write Section 6.6 - Port strike history: 2019, 2022, 2024 impact analysis
+- [x] 2.5.75 Write Section 6.7 - Climate resilience: tsunami (2010, 2015), Mw8.8+ seismic
+- [x] 2.5.76 Write Section 6.8 - Atacama hyperaridity: fog, dust, zero-rain operations
+- [x] 2.5.77 Write Section 6.9 - Resilience scoring matrix (RTO/RPO per corridor)
+- [x] 2.5.78 Create Chapter 7 markdown header "CSM Delivery Requirements Magnet-to-Motor"
+- [x] 2.5.79 Write Section 7.1 - CSM factory intake specs from DOC-06
+- [x] 2.5.80 Write Section 7.1.1 - NdFeB grade specs (N42H, N48SH, N52EH)
+- [x] 2.5.81 Write Section 7.1.2 - SmCo grade specs (SmCo 1:5, 2:17 series)
+- [x] 2.5.82 Write Section 7.1.3 - FeN/FeCo emerging grade specifications
+- [x] 2.5.83 Write Section 7.2 - JIT vs buffer stock strategy analysis
+- [x] 2.5.84 Write Section 7.3 - QC chain: mine assay → port inspection → factory acceptance
+- [x] 2.5.85 Write Section 7.4 - DFARS 252.225-7018 specialty metals compliance
+- [x] 2.5.86 Write Section 7.5 - Traceability: heat/lot tracking blockchain ledger
+- [x] 2.5.87 Write Section 7.6 - Delivery terms: DDP factory, INCOTERMS 2020
+- [x] 2.5.88 Create Chapter 8 markdown header "Port Community Integration Local Benefit"
+- [x] 2.5.89 Write Section 8.1 - Aegis-Forge modular port services deployment
+- [x] 2.5.90 Write Section 8.2 - Zero aqueous discharge → port water quality benefit
+- [x] 2.5.91 Write Section 8.3 - FBC/CDC trusts at port cities (Antofagasta, Mejillones, San Antonio)
+- [x] 2.5.92 Write Section 8.4 - Local employment: port operations + Aegis-Forge clusters
+- [x] 2.5.93 Write Section 8.5 - Indigenous: Kawashkar/Yámana (Punta Arenas)
+- [x] 2.5.94 Write Section 8.6 - Indigenous: Chango (Antofagasta/Mejillones)
+- [x] 2.5.95 Write Section 8.7 - Community benefit agreement template
+- [x] 2.5.96 Write Section 8.8 - Environmental monitoring: community sentinel program
+- [x] 2.5.97 Write Section 8.9 - Social license maintenance protocol
+- [x] 2.5.98 Create Chapter 9 markdown header "Traceability Matrix Logistics Claims"
+- [x] 2.5.99 Write Section 9.1 - Methodology: claim-to-source mapping per DOC-07
+- [x] 2.5.100 Write Section 9.2 - Port infrastructure claims traceability table
+- [x] 2.5.101 Write Section 9.3 - Rail corridor claims traceability table
+- [x] 2.5.102 Write Section 9.4 - Shipping/customs claims traceability table
+- [x] 2.5.103 Write Section 9.5 - Cost/resilience/community claims traceability table
+- [x] 2.5.104 Write Section 9.6 - Cross-reference index to DOC-01 through DOC-07
+- [x] 2.5.105 Assemble full DOC-08 document (concatenate Ch1-Ch9, verify ≥900 lines)
+- [x] 2.5.106 Count formulas/technical specs (target ≥20 LaTeX/Unicode)
+- [x] 2.5.107 Count cross-references (target ≥15 to DOC-01..07, Chilean law, IMO, IATA, WCO)
+- [x] 2.5.108 Count standards cited (target ≥8: IMDG, IATA, CPTPP, WCO, ISO, ASTM, MIL-STD, Chilean port law)
+- [x] 2.5.109 Conflation check vs DOC-01..07 (0 flags target)
+- [x] 2.5.110 Write complete DOC-08 to FinishedWork/DOC-08_Port_Logistics_Corridors.md
+- [x] 2.5.111 Run write_large_file.py split (chunks/DOC-08 chapter .md)
+- [x] 2.5.112 Run write_large_file.py verify chunks/DOC-08 (reassembly 0 bytes diff)
+- [x] 2.5.113 Run write_large_file.py manifest chunks/DOC-08 (SHA256 + size)
+- [x] 2.5.114 Run write_large_file.py compress FinishedWork/DOC-08_*.md (.md.gz)
+- [x] 2.5.115 Run generate_heuristic_intros.sh (5 variants: Williams, Keymaker, El Segundo, Baker Street, Combined)
+- [x] 2.5.116 Verify 5 intro files created in FinishedWork/intros/
+- [x] 2.5.117 Git add chunks/DOC-08/ FinishedWork/DOC-08_*.md.gz FinishedWork/intros/DOC-08_*.md
+- [x] 2.5.118 Git commit with message 'DOC-08: Port & Logistics Corridors complete'
+- [x] 2.5.119 Git tag runner-005-complete && git push origin --tags
+- [x] 2.5.120 Create NEXT_runner_006.md handoff document
 
 #### 2.6 Runner 002 Wrap-up (5 tasks)
 - [x] 2.6.1 Verify all 5 document chunks + manifests
