@@ -38,7 +38,7 @@ All projects that received generated README.md files now have HasREADME=Y:
 - CSMSOPP (18): BAKER-STREET through ZIRCONIA
 - CSMSOPPv2 (1): HEURISTICS
 - CSMSubatomic082026 (8): All archived subprojects
-- CSMWip (14): All WIP subprojects including 05_BOUNCE, 12_AegisOutfitFabricator
+- CSMWip (14): All WIP subprojects including 05_BOUNCE, 10_Prime_Electron_Caldera_Synthesis, 11_TGApp, 12_AegisOutfitFabricator
 - CSMWipScripts (2): AegisIronMan, RESTART_PACKAGE
 - CSM_WORK_IN_PROGRESS (1): SubAtom_WIP
 - DeepResearch (33): All deep research projects
@@ -56,6 +56,26 @@ All projects that received generated README.md files now have HasREADME=Y:
 - **REPO_INDEX_V6.csv** — Backup preserved
 - **README.md** files generated for 423 projects (300-900 lines each, 7 chapters)
 - **README_chunks/** directories with chapter files and MANIFEST.json
+
+### Deep README Enhancements (2026-10-25)
+- **10_Prime_Electron_Caldera_Synthesis** — Replaced template with project-specific 7-chapter README (293 lines) containing:
+  - Actual FLAGSHIP papers, ACTION_PLAN, ULTIMATE_COMPENDIUM details
+  - 9-domain architecture (A–I), 3-tier axiomatic hierarchy, meta-depth D=ω+3
+  - Phase 1–4 completion status, Phase 5 publication pipeline
+  - Cross-reference index, 156 Caldera pieces, 48 intros
+  - Publication targets: PRL, Nature Physics, ArXiv, FQXi grant
+- **02_Caldera_Prime_Pi_Electron** — Replaced template with project-specific 7-chapter README (319 lines) containing:
+  - 13-section Caldera framework (A0→A1→A2 hierarchy), 156 pieces, 48 intros
+  - Section-by-section mapping: 12 sections with Williams pillars, Keymaker abilities, El Segundo modes
+  - Complete generation pipeline (12 stages ✅), master document (883K chars)
+  - Heuristics as content: sections = pillars, abilities, surf modes
+  - Source for 10_Prime_Electron_Caldera_Synthesis integration
+- **11_TGApp** — Replaced template with project-specific 7-chapter README (350+ lines) containing:
+  - 4-version build evolution: V1 (Gradle/Kotlin), V2 (No-Gradle cmd), V3 (Shared build_apk.py), E5 (Active shared)
+  - Surgical extraction from BOUNCE v1.0.91: dual WebView, FeatureGate JWT RS256, LICENSE_UPDATED broadcast
+  - 44 versioned APKs in V3 proving reproducibility, 17K minimal E5 APK
+  - BOUNCE integration: shared keystore, Firebase billing, APK delivery via App Distribution
+  - NEW_APP_RUNNER_TGApp.md (612 lines) for creating new ecosystem apps
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
