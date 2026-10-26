@@ -1,0 +1,17 @@
+[0;34m[04:01:23][0m ==========================================
+[0;34m[04:01:23][0m CSMReadMe Resume Session — Mon Oct 26 04:01:23 AM UTC 2026
+[0;34m[04:01:23][0m ==========================================
+[0;34m[04:01:23][0m Repo root: /workspace/app
+[0;34m[04:01:23][0m REPO_INDEX_V7: /workspace/app/REPO_INDEX_V7.csv
+[0;34m[04:01:23][0m Summary: /workspace/app/REPO_INDEX_V7_SUMMARY.md
+[0;34m[04:01:23][0m Log: /workspace/app/CSMWip/CSMReadMe/resume_session_20261026_040123.log
+[0;34m[04:01:23][0m Loading REPO_INDEX_V7_SUMMARY.md context...
+[0;34m[04:01:23][0m 
+[0;34m[04:01:23][0m === PARSING REPO_INDEX_V7.csv ===
+[0;34m[04:01:23][0m Parsed 460 projects from CSV
+[0;34m[04:01:23][0m 
+[0;34m[04:01:23][0m === SCORING ALL PROJECTS ===
+[0;34m[04:01:25][0m New README candidates: 0
+[0;34m[04:01:25][0m Upgrade candidates: 449
+[0;34m[04:01:25][0m 
+[0;34m[04:01:25][0m === TOP 20 CANDIDATES FOR NEXT DEEP README ===
