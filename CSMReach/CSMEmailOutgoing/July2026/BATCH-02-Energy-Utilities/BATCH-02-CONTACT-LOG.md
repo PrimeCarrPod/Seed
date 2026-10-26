@@ -1,5 +1,5 @@
 # BATCH-02 CONTACT LOG — Energy, Utilities & Nuclear Sector
-## CSMEmailOutgoing | July 2026 | Prepared by Jason Brodsky
+## CSMEmailOutgoing | July 2026 | Prepared by [sender name withheld]
 
 ---
 
@@ -19,5 +19,5 @@
 BATCH-02 SUMMARY:
 - Sectors: CSMEval10 (Utilities), CSMEval02 (Grid Regulators), CSMEval06 (Nuclear)
 - Total Emails: 8
-- Sender: Jason Brodsky, zirconia@aegisc.space
+- Sender: [sender name withheld], [email withheld]
 - Status: READY FOR SEND — recipient email addresses to be populated at time of outreach

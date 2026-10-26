@@ -98,15 +98,15 @@ The following block is the V4 Fun-Williams template body. Replace bracketed valu
 
 ```
 TO: [COUNTRY] — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-FROM: Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-REPLY-TO: zirconia@aegisc.space
+FROM: [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+REPLY-TO: [email withheld]
 SUBJECT: Solar Cycle 25 is peaking — the Carrington-level hardening data [COUNTRY]'s infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to [COUNTRY]! The Sun doesn't care about borders — and frankly, neither does a Carrington-class coronal mass ejection. Here's the number the insurance industry doesn't want you to calculate for the East Asian grid corridor: a G5 geomagnetic storm today would induce telluric currents through every long conductor between Harbin and Singapore, simultaneously. Your transformers. Your undersea cables. Your port automation. Your satellite ground stations. All at once. All for roughly the price tag of a medium-sized war — except there's no enemy to negotiate with.
+GOOOOOOOD MORNING, from [location withheld] to [COUNTRY]! The Sun doesn't care about borders — and frankly, neither does a Carrington-class coronal mass ejection. Here's the number the insurance industry doesn't want you to calculate for the East Asian grid corridor: a G5 geomagnetic storm today would induce telluric currents through every long conductor between Harbin and Singapore, simultaneously. Your transformers. Your undersea cables. Your port automation. Your satellite ground stations. All at once. All for roughly the price tag of a medium-sized war — except there's no enemy to negotiate with.
 
-We are Carrington Storm Motors — a California-based engineering company that spent the last two years building the physical hardening layer to answer this exact problem. Aegis-C shielding (SE 148-165 dB, independently verified at 1 kHz–10 GHz). BFRP composite non-conductive structural replacements for substation equipment. Dielectric concrete foundations. MXene thin-film EMI suppression materials that weigh less than the paint on your control cabinets. LoRa mesh emergency communications that keep working when the cell towers don't. A full 9-part Compendium explaining the physics, the products, the economics, and the deployment playbook — attached to this email.
+We are Carrington Storm Motors — a [location withheld]-based engineering company that spent the last two years building the physical hardening layer to answer this exact problem. Aegis-C shielding (SE 148-165 dB, independently verified at 1 kHz–10 GHz). BFRP composite non-conductive structural replacements for substation equipment. Dielectric concrete foundations. MXene thin-film EMI suppression materials that weigh less than the paint on your control cabinets. LoRa mesh emergency communications that keep working when the cell towers don't. A full 9-part Compendium explaining the physics, the products, the economics, and the deployment playbook — attached to this email.
 
 Key facts for [COUNTRY]:
 
@@ -132,10 +132,10 @@ NEXT STEP: Review the Compendium. Forward to your energy ministry, grid operator
 
 The Sun rises everywhere. Hardening should too.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under V4 Fun-Williams Heuristic (CSMSOPP000001-MODULE-V4) + Baker Street Heuristic (CSMSOPP000003) | BATCH-08 Compilation | July 2026*
 ```
@@ -193,7 +193,7 @@ The following 4 attachments accompany every country-level email in this regional
 
 - **Heuristic Compliance**: All templates comply with CSMSOPP000001-MODULE-V4 (Fun-Williams) and CSMSOPP000003 (Baker Street). Voice cadence is calibrated for international government and utility audiences — technical precision, zero hype, numbers-forward.
 - **Distribution**: Files ready for CSM Email Outgoing pipeline. Contact log entries should reference CSM-GLOBAL-EA-01 plus country code.
-- **Language Versions**: Japanese, Korean, Simplified Chinese, Traditional Chinese, and Mongolian translations of the 9-part Compendium available as separate attachment bundles upon request via zirconia@aegisc.space.
+- **Language Versions**: Japanese, Korean, Simplified Chinese, Traditional Chinese, and Mongolian translations of the 9-part Compendium available as separate attachment bundles upon request via [email withheld].
 - **Briefing Pipeline**: Direct technical briefing requests routed to the Office of External Affairs & Strategic Partnerships with a confirmed response time of ≤72 hours.
 
 ---

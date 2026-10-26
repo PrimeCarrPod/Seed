@@ -7,11 +7,11 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, HABITAT FOR HUMANITY INTERNATIONAL. GOOOOOOOD MORNING, to the organization that has built, renovated, or repaired more than 1.5 million homes serving 39 million people worldwide — the most effective affordable housing delivery system in human history. The AEGIS Community Architecture Division is reaching out to present Lonsdaleite Outskirt Communities as the next evolutionary step in Habitat's mission: affordable, disaster-resilient, community-scale housing that can be built by volunteers, operates off-grid, and survives the extreme weather that disproportionately destroys low-income housing.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, HABITAT FOR HUMANITY INTERNATIONAL. GOOOOOOOD MORNING, to the organization that has built, renovated, or repaired more than 1.5 million homes serving 39 million people worldwide — the most effective affordable housing delivery system in human history. The AEGIS Community Architecture Division is reaching out to present Lonsdaleite Outskirt Communities as the next evolutionary step in Habitat's mission: affordable, disaster-resilient, community-scale housing that can be built by volunteers, operates off-grid, and survives the extreme weather that disproportionately destroys low-income housing.
 
 **PARAGRAPH 2 — THE AFFORDABLE HOUSING RESILIENCE GAP**
 
-Habitat homes are built to last — stick-framed, volunteer-built, mortgage-financed at zero percent interest. But a Habitat home in Hurricane Ian's path, in a Kentucky tornado outbreak, or in a California wildfire zone is built to the same local building code as every other house on the street — and that code is designed for life safety during the event, not structural survival after it. When a disaster destroys a Habitat home, the family loses their shelter, Habitat loses its mortgage collateral, and the community loses a unit of affordable housing that took 12–18 months to build and will take another 12–18 months to replace. Lonsdaleite Communities address this gap at the system level: BFRP composite construction that survives EF4 tornado winds (250 mph), 2,200°C wildfire overrun, and Category 5 hurricane storm surge — combined with a construction system so simple that Habitat's volunteer workforce can assemble a 36m² Nest-Hold dwelling in 40 hours with hand tools and a rubber mallet.
+Habitat homes are built to last — stick-framed, volunteer-built, mortgage-financed at zero percent interest. But a Habitat home in Hurricane Ian's path, in a Kentucky tornado outbreak, or in a [location withheld] wildfire zone is built to the same local building code as every other house on the street — and that code is designed for life safety during the event, not structural survival after it. When a disaster destroys a Habitat home, the family loses their shelter, Habitat loses its mortgage collateral, and the community loses a unit of affordable housing that took 12–18 months to build and will take another 12–18 months to replace. Lonsdaleite Communities address this gap at the system level: BFRP composite construction that survives EF4 tornado winds (250 mph), 2,200°C wildfire overrun, and Category 5 hurricane storm surge — combined with a construction system so simple that Habitat's volunteer workforce can assemble a 36m² Nest-Hold dwelling in 40 hours with hand tools and a rubber mallet.
 
 **PARAGRAPH 3 — BAKER STREET PRECISE SPECS**
 
@@ -19,7 +19,7 @@ Baker Street, let's get precise on the Habitat-relevant Lonsdaleite configuratio
 
 **PARAGRAPH 4 — SHIELD CALM POSTURE**
 
-SHIELD does not panic. SHIELD does not suggest that Habitat should abandon stick-frame construction — which has worked for 1.5 million homes and will continue to work for millions more. SHIELD suggests that in the highest-risk zones — the Gulf Coast hurricane corridor, the Oklahoma-Kansas tornado belt, the California WUI — Habitat should offer a disaster-resilient option that costs roughly the same as a stick-framed home but provides a fundamentally different level of structural survival. The incremental cost of BFRP composite construction over stick-frame is approximately $3,200 per dwelling — and the avoided cost of rebuilding after a single hurricane or wildfire makes that increment a net savings over the 20-year mortgage life. Habitat's model is built on sweat equity and zero-interest loans. Lonsdaleite maximizes the value of that sweat equity by building homes that survive the disasters stick-frame homes cannot.
+SHIELD does not panic. SHIELD does not suggest that Habitat should abandon stick-frame construction — which has worked for 1.5 million homes and will continue to work for millions more. SHIELD suggests that in the highest-risk zones — the Gulf Coast hurricane corridor, the Oklahoma-Kansas tornado belt, the [location withheld] WUI — Habitat should offer a disaster-resilient option that costs roughly the same as a stick-framed home but provides a fundamentally different level of structural survival. The incremental cost of BFRP composite construction over stick-frame is approximately $3,200 per dwelling — and the avoided cost of rebuilding after a single hurricane or wildfire makes that increment a net savings over the 20-year mortgage life. Habitat's model is built on sweat equity and zero-interest loans. Lonsdaleite maximizes the value of that sweat equity by building homes that survive the disasters stick-frame homes cannot.
 
 **PARAGRAPH 5 — THE PROPOSAL**
 
@@ -45,11 +45,11 @@ Habitat for Humanity International leadership, ACS respectfully requests a 60-mi
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Community Architecture Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

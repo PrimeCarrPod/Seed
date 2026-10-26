@@ -7,10 +7,11 @@ Excludes: BATCH-08 (Global Outreach - universities needing research), BATCH-13-1
 """
 
 import subprocess, json, os, urllib.request, urllib.parse, base64, re, time, random, sys, argparse
+from secure_token import load_access_token
 
 # ─── CONFIG ────────────────────────────────────────────
-TOKEN_PATH = '/tmp/kilo/csm_token.json'
-WORKSPACE  = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_08314a48-5995-4968-b6b1-a93bc340a097'
+TOKEN_PATH = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/csm_token.json")
+WORKSPACE  = os.environ.get("CSM_WORKSPACE", os.getcwd())
 ATTACH_DIR = os.path.join(WORKSPACE, 'CSMReach', 'CSMEmailOutgoing', 'July2026', 'ATTACHMENTS')
 BATCH_ROOT = os.path.join(WORKSPACE, 'CSMReach', 'CSMEmailOutgoing', 'July2026')
 GRAPH_BASE = 'https://graph.microsoft.com/v1.0'
@@ -21,14 +22,17 @@ ATTACHMENT_PDFS = [
     'COMPENDIUM-MINI.pdf'
 ]
 
-PRETTY_SIGNATURE = '''
+SENDER_NAME = os.environ.get("CSM_FROM_NAME", "External Affairs")
+SENDER_EMAIL = os.environ.get("CSM_FROM_EMAIL", "")
+SENDER_LOCATION = os.environ.get("CSM_FROM_LOCATION", "")
+PRETTY_SIGNATURE = f'''
 <br>
 <table style="border-top:3px solid #1a5276;padding-top:15px;margin-top:30px;width:100%;">
 <tr><td style="font-family:Georgia,serif;">
-<p style="margin:0;font-size:15px;color:#1a5276;"><strong>Jason Brodsky</strong></p>
+<p style="margin:0;font-size:15px;color:#1a5276;"><strong>{SENDER_NAME}</strong></p>
 <p style="margin:4px 0;font-size:13px;color:#444;">Director of External Affairs & Strategic Partnerships</p>
 <p style="margin:2px 0;font-size:13px;color:#444;">Carrington Storm Motors &middot; Safe Pod Engineering Company</p>
-<p style="margin:2px 0;font-size:12px;color:#888;">zirconia@aegisc.space &middot; aegisc.space &middot; San Francisco, California</p>
+<p style="margin:2px 0;font-size:12px;color:#888;">{SENDER_EMAIL} &middot; {SENDER_LOCATION}</p>
 <p style="margin-top:12px;font-size:10px;color:#aaa;font-style:italic;">Composed by AI under human direction &middot; CSMSOPP000001 (Williams) + CSMSOPP000003 (Baker Street)<br>All technical content human-reviewed. All outreach decisions human-made. July 2026.</p>
 </td></tr></table>
 '''
@@ -47,8 +51,7 @@ VERIFIED_BATCHES = [
 
 # ─── GRAPH API ─────────────────────────────────────────
 def load_token():
-    with open(TOKEN_PATH) as f:
-        return json.load(f)['access_token']
+    return load_access_token(TOKEN_PATH)
 
 def graph_call(token, path, body=None, method='GET'):
     url = GRAPH_BASE + path
@@ -293,7 +296,7 @@ def send_batch(token, batch_name, atts, pace_min=45, pace_max=120):
 def main():
     parser = argparse.ArgumentParser(description='Send verified AEGIS campaign batches')
     parser.add_argument('--test', action='store_true', help='Send test to yourself instead of real recipients')
-    parser.add_argument('--test-addr', default='jasonbrodsky@hotmail.com', help='Test email address')
+    parser.add_argument('--test-addr', default='[email withheld]', help='Test email address')
     parser.add_argument('--pace-min', type=int, default=45, help='Minimum seconds between sends')
     parser.add_argument('--pace-max', type=int, default=120, help='Maximum seconds between sends')
     parser.add_argument('--batches', nargs='+', help='Specific batches to send (default: all verified)')
@@ -303,7 +306,7 @@ def main():
     
     print("\n" + "=" * 60)
     print("  AEGIS CAMPAIGN — SEND VERIFIED BATCHES")
-    print("  Carrington Storm Motors · Jason Brodsky")
+    print(f"  Carrington Storm Motors · {SENDER_NAME}")
     print("=" * 60)
     print(f"  Batches to send: {len(batches)}")
     for b in batches:

@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-16_Top_Yukawa_Prime_Gaps_20260825  
 **Branch:** session/agent_d5df7fbf-2d8a-4e0c-83e1-b538a7e04a87  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -160,4 +160,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-16_TOP_YUKAWA_PRIME_GAPS_20260825.md
 ---
 
 *Session completed. All files pushed to GitHub main branch.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

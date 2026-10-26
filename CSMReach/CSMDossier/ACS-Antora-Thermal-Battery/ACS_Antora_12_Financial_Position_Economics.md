@@ -9,7 +9,7 @@ Antora has raised $350M+ — among the largest capital raises in the thermal sto
 |---------------------|---------------------|-------|
 | TPV technology development | $50-80M | Semiconductor R&D, efficiency improvements, reliability testing |
 | Thermal battery engineering | $40-60M | Carbon block system design, insulation, container engineering |
-| First commercial deployment (California) | $30-50M | Manufacturing, installation, commissioning of first system(s) |
+| First commercial deployment ([location withheld]) | $30-50M | Manufacturing, installation, commissioning of first system(s) |
 | Manufacturing development | $20-40M | Assembly facility setup, supply chain qualification, manufacturing engineering |
 | Business development and customer engagement | $10-15M | Sales, project development, customer engineering studies |
 | Operating expenses (personnel, facilities, G&A) | $100-150M | ~100-200 employees over 6+ years |
@@ -25,7 +25,7 @@ Estimated current burn rate and runway:
 ### Revenue Trajectory
 
 **2024-2025: Pre-Revenue / Pilot Revenue**
-- Revenue from California first installation (likely structured as a development/demonstration agreement rather than full commercial sale)
+- Revenue from [location withheld] first installation (likely structured as a development/demonstration agreement rather than full commercial sale)
 - Engineering studies and feasibility assessments for prospective customers
 - DOE grant revenue (cost-sharing on R&D and demonstration projects)
 - Estimated revenue: $5-15M/year

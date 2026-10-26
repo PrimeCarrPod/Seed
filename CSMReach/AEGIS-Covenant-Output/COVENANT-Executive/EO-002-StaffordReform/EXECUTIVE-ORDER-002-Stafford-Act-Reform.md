@@ -12,7 +12,7 @@
 
 ## THE PLAIN-LANGUAGE PITCH
 
-The Stafford Act is America's disaster engine. When a hurricane tears through Florida or an earthquake collapses California freeways, the Stafford Act is what lets the President send FEMA, money, and the National Guard. But the Stafford Act was written in 1988, when the worst thing Congress could imagine was a hurricane. It requires the Governor of an affected state to formally request federal help before the President can declare a major disaster.
+The Stafford Act is America's disaster engine. When a hurricane tears through Florida or an earthquake collapses [location withheld] freeways, the Stafford Act is what lets the President send FEMA, money, and the National Guard. But the Stafford Act was written in 1988, when the worst thing Congress could imagine was a hurricane. It requires the Governor of an affected state to formally request federal help before the President can declare a major disaster.
 
 This makes sense for a hurricane. It makes zero sense for a geomagnetic storm. Here is why.
 

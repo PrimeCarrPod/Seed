@@ -8,7 +8,7 @@
 
 ## Executive Overview
 
-Arris Composites has developed a proprietary manufacturing platform the company terms "Additive Molding" — a hybrid process that combines continuous fiber additive manufacturing with high-pressure compression molding. Founded by CEO Ethan Escowitz, the Berkeley, California-based company has attracted over $100 million in venture funding from investors including NEA, DCVC, Boeing HorizonX, and Saudi Aramco Energy Ventures.
+Arris Composites has developed a proprietary manufacturing platform the company terms "Additive Molding" — a hybrid process that combines continuous fiber additive manufacturing with high-pressure compression molding. Founded by CEO Ethan Escowitz, the Berkeley, [location withheld]-based company has attracted over $100 million in venture funding from investors including NEA, DCVC, Boeing HorizonX, and Saudi Aramco Energy Ventures.
 
 The core innovation lies in automating what has historically been a labor-intensive, multi-step process for producing structural composite components. Traditional composite manufacturing requires technicians to manually cut, stack, and orient prepreg carbon fiber sheets across 30 or more individual layup steps before the part enters an autoclave for curing. This approach is slow, expensive, and introduces quality variability from operator dependency.
 

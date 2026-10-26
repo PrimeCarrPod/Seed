@@ -8,7 +8,7 @@
 
 ## 2.1 Founding and Mission
 
-Space Exploration Technologies Corp. (SpaceX) was founded in 2002 by Elon Musk with the stated mission of reducing space transportation costs and enabling the colonization of Mars. Headquartered in Hawthorne, California, with primary launch operations at Cape Canaveral Space Force Station (SLC-40), Kennedy Space Center (LC-39A), Vandenberg Space Force Base (SLC-4E), and the Starbase development and production complex in Boca Chica, Texas, SpaceX has evolved into the world's dominant launch provider and satellite internet operator.
+Space Exploration Technologies Corp. (SpaceX) was founded in 2002 by Elon Musk with the stated mission of reducing space transportation costs and enabling the colonization of Mars. Headquartered in Hawthorne, [location withheld], with primary launch operations at Cape Canaveral Space Force Station (SLC-40), Kennedy Space Center (LC-39A), Vandenberg Space Force Base (SLC-4E), and the Starbase development and production complex in Boca Chica, Texas, SpaceX has evolved into the world's dominant launch provider and satellite internet operator.
 
 ## 2.2 Ownership and Governance
 
@@ -50,11 +50,11 @@ Revenue: $3.2B (FY2025). A nascent but rapidly scaling segment encompassing orbi
 
 | Facility | Location | Primary Function |
 |---|---|---|
-| Hawthorne HQ | California, USA | Engineering, design, manufacturing (Falcon, Dragon) |
+| Hawthorne HQ | [location withheld], USA | Engineering, design, manufacturing (Falcon, Dragon) |
 | Starbase | Boca Chica, Texas | Starship/Super Heavy development, production, launch |
 | Launch Complex 39A | KSC, Florida | Falcon 9, Falcon Heavy, Crew Dragon, future Starship |
 | SLC-40 | CCSFS, Florida | High-cadence Falcon 9 launches |
-| SLC-4E | VSFB, California | Polar and sun-synchronous orbit launches |
+| SLC-4E | VSFB, [location withheld] | Polar and sun-synchronous orbit launches |
 | Redmond WA | Washington, USA | Starlink satellite design and manufacturing |
 | Bastrop TX | Texas, USA | Starlink user terminal manufacturing |
 | Roberts Road | KSC, Florida | Falcon refurbishment and Starship production expansion |

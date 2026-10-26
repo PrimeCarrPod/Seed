@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-15_Higgs_Vacuum_Stability_Gaps_20260825  
 **Branch:** session/agent_1c4fc896-d085-4d89-9f51-e058d20ce5ed  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -140,4 +140,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-15_HIGGS_VACUUM_STABILITY_GAPS_20260825.m
 ---
 
 *Session completed. All files pushed to GitHub main branch.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

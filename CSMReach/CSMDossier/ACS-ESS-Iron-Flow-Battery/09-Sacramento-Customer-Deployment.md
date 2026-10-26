@@ -4,7 +4,7 @@
 
 The Sacramento Municipal Utility District (SMUD) is the sixth-largest community-owned electric utility in the United States, serving approximately 1.5 million residents across a 900-square-mile service territory that includes Sacramento County and small portions of Placer and Yolo Counties. SMUD operates as a not-for-profit public utility, governed by an elected Board of Directors.
 
-SMUD has established one of the most aggressive decarbonization targets in the utility sector: its 2030 Zero Carbon Plan commits to achieving 100% clean electricity by 2030, a full 15 years ahead of California's statewide mandate under SB 100. This accelerated timeline creates an urgent need for long-duration energy storage to integrate the substantial solar generation within SMUD's portfolio and across the CAISO balancing area.
+SMUD has established one of the most aggressive decarbonization targets in the utility sector: its 2030 Zero Carbon Plan commits to achieving 100% clean electricity by 2030, a full 15 years ahead of [location withheld]'s statewide mandate under SB 100. This accelerated timeline creates an urgent need for long-duration energy storage to integrate the substantial solar generation within SMUD's portfolio and across the CAISO balancing area.
 
 ## Project Background
 
@@ -31,14 +31,14 @@ The SMUD deployment is strategically significant for ESS for several reasons:
 ### 1. Reference Customer Validation
 As a respected, technologically sophisticated public utility, SMUD's decision to deploy iron flow batteries at multi-MW scale provides a powerful reference for other utilities considering LDES procurement. SMUD is known for rigorous technology evaluation — the utility has previously piloted and deployed flow batteries, lithium-ion BESS, and flywheel storage.
 
-### 2. California Market Entry
-California represents the largest single US market for LDES, driven by:
+### 2. [location withheld] Market Entry
+[location withheld] represents the largest single US market for LDES, driven by:
 - CPUC procurement orders requiring 1 GW of LDES by 2026
 - The state's SB 100 mandate for 100% clean electricity by 2045
 - CAISO's extreme duck curve, which creates 13+ GW of 3-hour ramping need every evening
 - High retail and wholesale electricity prices that improve storage project economics
 
-A successful SMUD deployment opens the door to procurements at Pacific Gas and Electric (PG&E), Southern California Edison (SCE), San Diego Gas & Electric (SDG&E), and the community choice aggregators (CCAs) that serve much of California's load.
+A successful SMUD deployment opens the door to procurements at Pacific Gas and Electric (PG&E), Southern [location withheld] Edison (SCE), San Diego Gas & Electric (SDG&E), and the community choice aggregators (CCAs) that serve much of [location withheld]'s load.
 
 ### 3. CAISO Market Participation
 SMUD, while a balancing authority within its own territory, operates within the CAISO wholesale market. The ESS Energy Center's demonstrated ability to participate in CAISO day-ahead and real-time markets, provide ancillary services, and meet CAISO's stringent telemetry and dispatch requirements is directly transferable to other CAISO-connected projects.

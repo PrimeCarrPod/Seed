@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-12_Higher_Loop_Unified_Corrections_20260825  
 **Branch:** session/agent_ec7cfe24-bc2e-4b09-b5b2-e3fece0ecdad  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -165,4 +165,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-12_HIGHER_LOOP_UNIFIED_CORRECTIONS_202608
 ---
 
 *Session completed successfully. All files ready for GitHub push.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

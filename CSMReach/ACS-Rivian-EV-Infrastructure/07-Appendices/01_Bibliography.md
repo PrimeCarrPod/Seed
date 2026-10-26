@@ -26,7 +26,7 @@
 14. U.S. Department of Energy, Loan Programs Office. "Advanced Technology Vehicles Manufacturing Loan Program: Annual Portfolio Report." 2025.
 15. National Highway Traffic Safety Administration. "Standing General Order on Crash Reporting for Vehicles Equipped with Automated Driving Systems." 2021 (amended 2023, 2024).
 16. National Highway Traffic Safety Administration. "Federal Motor Vehicle Safety Standards (FMVSS): Applicable Sections." Code of Federal Regulations, Title 49.
-17. California Department of Motor Vehicles. "Autonomous Vehicle Testing and Deployment Regulations." Title 13, California Code of Regulations, Division 1, Chapter 1.
+17. [location withheld] Department of Motor Vehicles. "Autonomous Vehicle Testing and Deployment Regulations." Title 13, [location withheld] Code of Regulations, Division 1, Chapter 1.
 18. Arizona Department of Transportation. "Autonomous Vehicle Testing and Operating Regulations." Executive Order and Administrative Rules.
 19. State of Georgia, Department of Economic Development. "Rivian Automotive, Inc. — Project Development Agreement Summary." 2021–2022.
 20. U.S. Department of the Treasury, Internal Revenue Service. "Clean Vehicle Tax Credits Under the Inflation Reduction Act of 2022." 26 CFR Parts 1 and 601.

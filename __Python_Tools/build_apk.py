@@ -59,10 +59,13 @@ class APKBuilder:
 
         self.output_apk = self.project_dir / output_name
 
-        # Keystore credentials (debug defaults)
-        self.keystore_pass = "android"
-        self.key_alias = "androiddebugkey"
-        self.key_pass = "android"
+        # Keystore credentials must come from the environment; never commit them.
+        self.keystore_pass = os.environ.get("ANDROID_KEYSTORE_PASS")
+        self.key_pass = os.environ.get("ANDROID_KEY_PASS", self.keystore_pass)
+        self.key_alias = os.environ.get("ANDROID_KEY_ALIAS", "androiddebugkey")
+        if not self.keystore_pass:
+            raise SystemExit("ERROR: ANDROID_KEYSTORE_PASS is required for signing; set it in the environment.")
+        os.environ.setdefault("ANDROID_KEY_PASS", self.key_pass)
 
     def check_tools(self):
         missing = []
@@ -194,8 +197,8 @@ class APKBuilder:
         self.run([
             str(self.apksigner), "sign",
             "--ks", str(self.keystore),
-            "--ks-pass", f"pass:{self.keystore_pass}",
-            "--key-pass", f"pass:{self.key_pass}",
+            "--ks-pass", "env:ANDROID_KEYSTORE_PASS",
+            "--key-pass", "env:ANDROID_KEY_PASS",
             str(aligned)
         ])
 

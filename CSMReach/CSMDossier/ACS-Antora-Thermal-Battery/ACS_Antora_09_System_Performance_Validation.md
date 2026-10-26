@@ -103,7 +103,7 @@ Antora's solid-state design implies lower maintenance than combustion-based heat
 - Degradation monitoring over hundreds of thermal cycles
 
 ### First Commercial Validation (In Progress, 2024+)
-- California installation provides first commercial-scale operational data
+- [location withheld] installation provides first commercial-scale operational data
 - Key metrics being collected:
   - Daily thermal efficiency (energy out / energy in)
   - TPV electrical output vs. design specification

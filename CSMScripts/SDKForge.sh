@@ -27,7 +27,7 @@
 #   build-tools 34.0.0  ⇔  platform android-34   ✓ (fallback)
 #
 # Critical notes for cloud/sandbox environments:
-#   - curl -k is mandatory (self-signed CA chains)
+#   - TLS verification is required; set CURL_CA_BUNDLE for private/self-signed CAs
 #   - Google extracts platform 33 as 'android-13' → rename
 #   - Some build-tools URLs return 404 — fallback chain built in
 #
@@ -138,7 +138,7 @@ mkdir -p "$SDK_BASE/cmdline-tools"
 CMDTOOLS_ZIP="$SDK_BASE/../cmdline-tools.zip"
 
 if [ ! -f "$SDK_BASE/cmdline-tools/latest/bin/sdkmanager" ]; then
-    curl -k -sL "$CMDTOOLS_URL" -o "$CMDTOOLS_ZIP" 2>&1
+    curl --fail --proto '=https' --proto-redir '=https' -sL "$CMDTOOLS_URL" -o "$CMDTOOLS_ZIP" 2>&1
     SIZE=$(stat --printf="%s" "$CMDTOOLS_ZIP" 2>/dev/null || echo 0)
     if [ "$SIZE" -lt 100000 ]; then
         err "cmdline-tools download failed (size: $SIZE bytes)"
@@ -164,7 +164,7 @@ PLATFORM_ZIP="$SDK_BASE/../platform-${COMPILE_SDK}.zip"
 PLATFORM_DIR="$SDK_BASE/platforms/android-${COMPILE_SDK}"
 
 if [ ! -f "$PLATFORM_DIR/android.jar" ]; then
-    curl -k -sL "$PLATFORM_URL" -o "$PLATFORM_ZIP" 2>&1
+    curl --fail --proto '=https' --proto-redir '=https' -sL "$PLATFORM_URL" -o "$PLATFORM_ZIP" 2>&1
     SIZE=$(stat --printf="%s" "$PLATFORM_ZIP" 2>/dev/null || echo 0)
     if [ "$SIZE" -lt 100000 ]; then
         err "Platform download failed (size: $SIZE bytes)"
@@ -188,11 +188,11 @@ BT_ZIP="$SDK_BASE/../build-tools-${BUILD_TOOLS_VERSION}.zip"
 BT_DIR="$SDK_BASE/build-tools/${BUILD_TOOLS_VERSION}"
 
 if [ ! -f "$BT_DIR/aapt2" ]; then
-    curl -k -sL "$BT_URL" -o "$BT_ZIP" 2>&1
+    curl --fail --proto '=https' --proto-redir '=https' -sL "$BT_URL" -o "$BT_ZIP" 2>&1
     SIZE=$(stat --printf="%s" "$BT_ZIP" 2>/dev/null || echo 0)
     if [ "$SIZE" -lt 100000 ]; then
         warn "Primary build-tools URL returned 404 (size: $SIZE). Trying fallback..."
-        curl -k -sL "$BT_FALLBACK_URL" -o "$BT_ZIP" 2>&1
+        curl --fail --proto '=https' --proto-redir '=https' -sL "$BT_FALLBACK_URL" -o "$BT_ZIP" 2>&1
         SIZE=$(stat --printf="%s" "$BT_ZIP" 2>/dev/null || echo 0)
         if [ "$SIZE" -lt 100000 ]; then
             err "All build-tools download attempts failed."

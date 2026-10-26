@@ -2,7 +2,7 @@
 ## Arithmetic Physics — 8 Grant Proposals Ready as Email Drafts
 
 **Completed:** 2026-09-03  
-**Account:** jasonbrodsky@hotmail.com  
+**Account:** [email withheld]  
 **Authentication:** Microsoft Graph API (token refreshed, valid)  
 **Framework:** Arithmetic Physics — Deriving Physical Law from Prime Numbers
 

@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, TESLA. GOOOOOOOD MORNING, Elon Musk and the Austin and Palo Alto leadership. The ACS Infrastructure Protection Division presents an industrial infrastructure protection proposal of transformational consequence — a $309.6 million comprehensive electromagnetic hardening program for Tesla's four gigafactories, protecting 3.2 gigawatts of peak electrical load, 2 million vehicle per year production capacity, and the global electric vehicle and energy storage supply chain that Tesla anchors.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, TESLA. GOOOOOOOD MORNING, Elon Musk and the Austin and Palo Alto leadership. The ACS Infrastructure Protection Division presents an industrial infrastructure protection proposal of transformational consequence — a $309.6 million comprehensive electromagnetic hardening program for Tesla's four gigafactories, protecting 3.2 gigawatts of peak electrical load, 2 million vehicle per year production capacity, and the global electric vehicle and energy storage supply chain that Tesla anchors.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Musk, ACS respectfully requests a 60-minute briefing with your gigafactory e
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

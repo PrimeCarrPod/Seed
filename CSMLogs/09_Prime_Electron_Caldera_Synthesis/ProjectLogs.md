@@ -1,5 +1,5 @@
 # PROJECT LOGS — Caldera Prime Pi Electron
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Branch:** prime_pi_electron  
 **Repository:** github.com/PrimeCarrPod/Seed  
 **Started:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")  

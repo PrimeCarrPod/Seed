@@ -1,7 +1,7 @@
 # Session Log — Subatomic Prime Electron Holographic Universe
 **Date:** 2026-08-30
 **Agent:** Kilo (session/agent_83fd22b8-660c-4035-8ae8-65057d5f3f80)
-**Author:** Jason Isaac Brodsky of California 1976, Author Conducier
+**Author:** [sender name withheld] of California 1976, Author Conducier
 
 ---
 

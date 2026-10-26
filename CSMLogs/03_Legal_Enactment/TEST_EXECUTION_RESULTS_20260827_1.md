@@ -2,7 +2,7 @@
 ## Week 3-6: The Scream, The Freeze, The Shake, The Glow — Actual Results
 **Session:** CSM_CLPS_Phase2_TEST_EXECUTION_20260827  
 **Date:** September 24, 2026 (Day 28) → October 22, 2026 (Day 56)  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -274,4 +274,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Document: TEST_EXECUTION_RESULTS_20260827.md*
 *Branch: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

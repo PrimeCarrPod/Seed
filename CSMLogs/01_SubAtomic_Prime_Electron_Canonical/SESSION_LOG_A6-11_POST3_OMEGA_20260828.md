@@ -1,6 +1,6 @@
 # A6-11 Post³-Omega Session Log — 2026-08-28
 
-**Author:** Jason Isaac Brodsky of California 1976 Author Conducier  
+**Author:** [sender name withheld] of California 1976 Author Conducier  
 **Date:** 2026-08-28  
 **Agent:** Toast (polecat)  
 **Branch:** convoy/a6-11-post-omega-complete-12-piece-artic/84566e47/gt/toast/2eba4388  

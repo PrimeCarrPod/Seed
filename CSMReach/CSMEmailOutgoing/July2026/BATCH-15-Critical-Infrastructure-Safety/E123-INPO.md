@@ -1,18 +1,18 @@
 # E123-INPO: Institute of Nuclear Power Operations
 
 **To:** information@inpo.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Industry Self-Regulatory Framework — Grid-Interface GMD/GIC Topics for INPO Consideration
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All technical content referencing INPO's mission, nuclear industry self-regulatory practices, and GMD/GIC phenomena is based on publicly available information.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All technical content referencing INPO's mission, nuclear industry self-regulatory practices, and GMD/GIC phenomena is based on publicly available information.
 
 ---
 
 GOOOOOOOD MORNING, INPO!
 
-This is Jason Brodsky at Aegis Cipher Space, writing to you from 221B Baker Street — an address that, like INPO itself, represents a commitment to meticulous investigation and continuous improvement. You are the gold standard for industry self-regulation in the nuclear power sector, and it is precisely because of that reputation that I am bringing the grid-interface GMD challenge directly to your attention.
+This is [sender name withheld] at Aegis Cipher Space, writing to you from 221B Baker Street — an address that, like INPO itself, represents a commitment to meticulous investigation and continuous improvement. You are the gold standard for industry self-regulation in the nuclear power sector, and it is precisely because of that reputation that I am bringing the grid-interface GMD challenge directly to your attention.
 
 Here is the situation as we see it. INPO's SOERs and significant event analyses have, over the decades, driven remarkable improvements in plant safety culture, operational discipline, and equipment reliability. But the grid-interface domain — the boundary where the transmission system meets the nuclear plant's switchyard and auxiliary power systems — remains a gap in the self-regulatory framework that deserves focused attention. Geomagnetic disturbances induce quasi-DC currents in transmission lines that flow through high-voltage transformer windings, causing half-cycle saturation, harmonic generation, and reactive power consumption that can cascade from the grid side directly into the plant's off-site power supply architecture. This is not a theoretical concern. The industry has four documented transformer-level events across three solar cycles, and as we enter Solar Cycle 25's maximum period and look toward Cycle 26, the probability of a significant GMD event coinciding with plant operations is increasing.
 
@@ -29,7 +29,7 @@ INPO's influence on operational excellence is unmatched. A grid-interface GMD gu
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

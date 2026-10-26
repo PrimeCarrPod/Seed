@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, DUKE ENERGY. GOOOOOOOD MORNING, Lynn Good and the Charlotte leadership. The ACS Infrastructure Protection Division presents a historic first-mover opportunity — Duke Energy becoming the first electric utility in the United States to comprehensively harden its transmission grid against geomagnetically induced currents, protecting 50,000+ miles of transmission lines, 8.2 million customers across six states, and establishing the operational standard that every other utility will follow.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, DUKE ENERGY. GOOOOOOOD MORNING, Lynn Good and the Charlotte leadership. The ACS Infrastructure Protection Division presents a historic first-mover opportunity — Duke Energy becoming the first electric utility in the United States to comprehensively harden its transmission grid against geomagnetically induced currents, protecting 50,000+ miles of transmission lines, 8.2 million customers across six states, and establishing the operational standard that every other utility will follow.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Ms. Good, ACS respectfully requests a 90-minute executive and engineering briefi
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
 **TO:** AFRL Directed Energy
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** AFRL EMP Hardening Branch — MXene and UHTC for aircraft systems
 
 ---
@@ -25,9 +25,9 @@ NEXT STEP: Happy to brief your technical team at your convenience. Conference, d
 
 We build the hardening. You decide where it's needed most.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

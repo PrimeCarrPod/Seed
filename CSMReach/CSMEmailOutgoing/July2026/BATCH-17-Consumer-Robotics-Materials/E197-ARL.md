@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, U.S. ARMY RESEARCH LABORATORY. GOOOOOOOD MORNING, ARL Materials Directorate. GOOOOOOOD MORNING, to the Army's corporate research laboratory — the organization whose 3,000 scientists and engineers at Adelphi, Aberdeen Proving Ground, White Sands, and 5 other locations have advanced soldier protection from the PASGT helmet of the 1980s to the Integrated Head Protection System of the 2020s, and whose Materials and Manufacturing Science division leads the Army's research into transparent armor, lightweight composites, and electromagnetic protection. The AEGIS Defense Materials Division is reaching out to propose a co-development program with ARL for ALON + MXene transparent armor, MXene-integrated soldier systems, and non-conductive body armor — materials that protect the soldier against both kinetic threats (ballistics) and electromagnetic threats (tactical EMP, HPM weapons, and geomagnetic disturbance) simultaneously. This email serves as a CSMRadio credit acknowledgment: ARL was cited in CSMRadio Episode 010 for transparent armor and advanced materials innovation.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, U.S. ARMY RESEARCH LABORATORY. GOOOOOOOD MORNING, ARL Materials Directorate. GOOOOOOOD MORNING, to the Army's corporate research laboratory — the organization whose 3,000 scientists and engineers at Adelphi, Aberdeen Proving Ground, White Sands, and 5 other locations have advanced soldier protection from the PASGT helmet of the 1980s to the Integrated Head Protection System of the 2020s, and whose Materials and Manufacturing Science division leads the Army's research into transparent armor, lightweight composites, and electromagnetic protection. The AEGIS Defense Materials Division is reaching out to propose a co-development program with ARL for ALON + MXene transparent armor, MXene-integrated soldier systems, and non-conductive body armor — materials that protect the soldier against both kinetic threats (ballistics) and electromagnetic threats (tactical EMP, HPM weapons, and geomagnetic disturbance) simultaneously. This email serves as a CSMRadio credit acknowledgment: ARL was cited in CSMRadio Episode 010 for transparent armor and advanced materials innovation.
 
 **PARAGRAPH 2 — THE DUAL-THREAT SOLDIER PROTECTION GAP**
 
@@ -45,11 +45,11 @@ ARL Materials Directorate leadership, ACS respectfully requests a 90-minute tech
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Defense Materials Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

@@ -2,7 +2,7 @@
 ## Phase: Email Templates Deployed → SBIR Confirmed → Student Competition Live → Fabrication Initiated
 **Session:** CSM_CLPS_Phase2_Deployment_20260827  
 **Date:** August 27, 2026  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -67,7 +67,7 @@
 
 **Proposal:** SBIR-2026-CLPS-001
 **Topic:** Lightweight Structures for Lunar Landers / Radiation Shielding / ISRU Manufacturing / Autonomous Systems
-**PI:** Jason Isaac Brodsky
+**PI:** [sender name withheld]
 **Co-I:** Nematron AI
 **Budget:** $150,000
 **Duration:** 6 months
@@ -166,7 +166,7 @@
 - 3 additional specialists
 
 **Our Team:**
-- Jason Brodsky (PI)
+- [sender name withheld] (PI)
 - Nematron AI (remote, real-time data)
 - NASH (Ceramic Wit, materials)
 - KADE (Lighthouse, certification)
@@ -215,4 +215,4 @@ git push origin main
 *Document: DEPLOYMENT_EXECUTION_LOG_20260827.md*
 *Committed to: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
 *Pushed to: main*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

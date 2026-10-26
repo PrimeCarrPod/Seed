@@ -84,7 +84,7 @@ The Prime-Electron Correspondence establishes a bijection between:
 
 All supporting materials in GrantProposals/ and CSMWip/SubAtomicPrimeElectronCaldera/
 
-**Contact:** jasonbrodsky@hotmail.com
+**Contact:** [email withheld]
 
 ---
 

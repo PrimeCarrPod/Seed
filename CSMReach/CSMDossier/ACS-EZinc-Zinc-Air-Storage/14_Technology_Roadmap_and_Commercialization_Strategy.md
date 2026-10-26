@@ -11,7 +11,7 @@ committing to high-volume manufacturing:
 | Lab validation | 2012-2018 | Fundamental electrochemistry, electrode design | Proof of reversibility, patent filings |
 | Prototype | 2019-2022 | Scaled single cells, system architecture | >1,000 cycles demonstrated in lab |
 | Pilot | 2023-2024 | Ontario grid-connected demonstration | Real-world performance validation |
-| Pre-commercial | 2024-2026 | California deployment, product design freeze | Third-party validated performance data |
+| Pre-commercial | 2024-2026 | [location withheld] deployment, product design freeze | Third-party validated performance data |
 | Early commercial | 2026-2028 | First commercial orders, manufacturing partnership | Initial revenue, reference projects |
 | Scale | 2028-2031 | Dedicated manufacturing facility, volume production | <$100/kWh cost target achieved |
 | Mature | 2031+ | Multiple manufacturing sites, global deployment | >1 GWh/year production capacity |
@@ -64,7 +64,7 @@ production:
 
 ### Near-Term (2025-2028)
 
-- **California utilities** — driven by CPUC long-duration storage procurement
+- **[location withheld] utilities** — driven by CPUC long-duration storage procurement
   mandates, the most attractive early market
 - **Canadian utilities** — leveraging the Ontario demonstration and federal
   clean energy programs

@@ -81,11 +81,11 @@ The Uber-bound vehicles are modified production Gravity SUVs and (later) Midsize
 
 ## 3.4.5 Regulatory Pathway
 
-### California DMV:
+### [location withheld] DMV:
 
-- **Testing Permit (with safety driver):** Granted 2023. Lucid has accumulated ~150,000 autonomous miles on California public roads as of Q1 2026.
+- **Testing Permit (with safety driver):** Granted 2023. Lucid has accumulated ~150,000 autonomous miles on [location withheld] public roads as of Q1 2026.
 - **Driverless Testing Permit:** Granted Q2 2026. Permits autonomous operation without a safety driver in specified geo-fenced areas, with remote monitoring capability.
-- **Deployment Permit (commercial service):** Lucid must apply separately for a deployment permit from the California Public Utilities Commission (CPUC) to commence commercial robotaxi operations. Application anticipated H2 2026.
+- **Deployment Permit (commercial service):** Lucid must apply separately for a deployment permit from the [location withheld] Public Utilities Commission (CPUC) to commence commercial robotaxi operations. Application anticipated H2 2026.
 
 ### Other States:
 

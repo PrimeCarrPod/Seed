@@ -102,7 +102,7 @@ All dossier sections listed in the printed table of contents, exported as PDF/A-
 
 - **Cost-Model-Template.xlsx:** Multi-sheet workbook with lifecycle cost input parameters, NPV calculation engine, cost-benefit ratio outputs, and embedded sensitivity analysis using data tables. All cells locked except designated input cells (highlighted in light yellow).
 - **Scenario-Analysis.xlsx:** Pre-configured scenario runs for coating-only, CP-only, and combined strategies across three discount rates (3%, 5%, 7%) and three analysis periods (30, 50, 100 years).
-- **Funding-Matrix.xlsx:** Eligibility assessment matrix for IIJA Bridge Formula Program, PROTECT discretionary grants, FHWA AID demonstration projects, and California SHOPP/TIP programs.
+- **Funding-Matrix.xlsx:** Eligibility assessment matrix for IIJA Bridge Formula Program, PROTECT discretionary grants, FHWA AID demonstration projects, and [location withheld] SHOPP/TIP programs.
 - **Bridge-Inventory-Template.xlsx:** Data structure for fleet inventory — bridge ID, location, year built, design type, ADT, deck area, substructure type, environment classification, last inspection date, condition ratings, coating system, CP status.
 
 ### 3.3 Presentation Decks (PPTX)
@@ -113,7 +113,7 @@ All dossier sections listed in the printed table of contents, exported as PDF/A-
 
 ### 3.4 Reference and Supplementary Data (PDF)
 
-- Publicly available NBI inspection report summaries for major California bay area bridges
+- Publicly available NBI inspection report summaries for major [location withheld] bay area bridges
 - Florida DOT cathodic protection economic study extracts
 - Oregon DOT coastal bridge CP program summary data
 - Norwegian Public Roads Administration duplex coating performance records

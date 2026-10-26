@@ -84,24 +84,24 @@ The EaaS model aligns with Antora's strength as a well-capitalized company and r
 
 ## 3. Market Strategy
 
-### Beachhead Market: California
-California is Antora's natural initial market due to:
-1. **High solar penetration**: California's "duck curve" creates very low daytime electricity prices (sometimes negative) when solar is abundant; thermal batteries can charge during these periods
-2. **High natural gas prices**: California industrial natural gas prices are among the highest in the US ($8-12/MMBTU vs. $3-5/MMBTU national average)
-3. **Strong climate policy**: California's cap-and-trade program, Low Carbon Fuel Standard (LCFS), and industrial decarbonization mandates create compliance-driven demand
-4. **Large industrial base**: California has significant food processing, refining, and manufacturing industries with process heat demand
+### Beachhead Market: [location withheld]
+[location withheld] is Antora's natural initial market due to:
+1. **High solar penetration**: [location withheld]'s "duck curve" creates very low daytime electricity prices (sometimes negative) when solar is abundant; thermal batteries can charge during these periods
+2. **High natural gas prices**: [location withheld] industrial natural gas prices are among the highest in the US ($8-12/MMBTU vs. $3-5/MMBTU national average)
+3. **Strong climate policy**: [location withheld]'s cap-and-trade program, Low Carbon Fuel Standard (LCFS), and industrial decarbonization mandates create compliance-driven demand
+4. **Large industrial base**: [location withheld] has significant food processing, refining, and manufacturing industries with process heat demand
 5. **Proximity to Antora HQ**: Sunnyvale-based engineering team can support initial deployments
 
 ### Geographic Expansion Sequence
 Antora's expansion is likely to follow this geographic sequence:
 
-**Phase 1: California (2024-2026)**
+**Phase 1: [location withheld] (2024-2026)**
 - First commercial installations
 - Reference site development
 - Regulatory and utility interconnection expertise development
 
 **Phase 2: US Southwest and Texas (2026-2028)**
-- High solar penetration states with similar economic dynamics to California
+- High solar penetration states with similar economic dynamics to [location withheld]
 - Texas industrial corridor (Gulf Coast refineries, chemicals) presents massive heat demand
 - ERCOT market design allows for battery storage participation in ancillary services
 
@@ -161,7 +161,7 @@ Rather than pursuing all industrial sectors simultaneously, Antora is prioritizi
 - **IRA Section 48C**: 30% investment tax credit for qualifying advanced energy projects, including industrial decarbonization
 - **IRA Section 45X**: Advanced manufacturing production credits for components manufactured in the US
 - **DOE Industrial Demonstrations Program**: $6.3B for commercial-scale industrial decarbonization demonstrations
-- **California SGIP (Self-Generation Incentive Program)**: Incentives for distributed energy storage
+- **[location withheld] SGIP (Self-Generation Incentive Program)**: Incentives for distributed energy storage
 
 ### Required Policy Catalysts for Accelerated Adoption
 - **Industrial carbon pricing**: A meaningful carbon price ($50+/ton CO₂) would dramatically improve Antora's competitiveness vs. unabated natural gas

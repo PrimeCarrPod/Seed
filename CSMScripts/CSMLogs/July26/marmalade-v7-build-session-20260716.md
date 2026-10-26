@@ -104,7 +104,7 @@ Platform 33 unzips to `android-13/` not `android-33/`. Must rename after extract
 
 ### 3. curl SSL in Sandbox
 **Symptom:** SSL certificate verification failed for all Google CDN URLs.
-**Fix:** Use `curl -k` (insecure mode) in sandbox/container environments.
+**Fix:** Use `curl --fail --proto '=https' --proto-redir '=https'` (insecure mode) in sandbox/container environments.
 
 ### 4. sdkmanager Offline
 **Symptom:** sdkmanager failed to fetch remote repository manifest (IO exception).
@@ -206,7 +206,7 @@ e357665a feat(marmalade): add v7b release with aapt2 build pipeline
 
 1. **Never use Python zip for APK manifests.** Must use aapt2 for binary AXML.
 2. **SDK versions must match.** build-tools 33.0.1 only works with platform ≤ android-33.
-3. **curl -k is mandatory** in container/sandbox environments.
+3. **curl --fail --proto '=https' --proto-redir '=https' is mandatory** in container/sandbox environments.
 4. **Google CDN is flaky.** Have fallback URLs ready. 33.0.1 is the most reliable build-tools.
 5. **`android-13` → `android-33` rename** after platform unzip.
 6. **Asset injection order matters.** After aapt2 link, before dex injection.

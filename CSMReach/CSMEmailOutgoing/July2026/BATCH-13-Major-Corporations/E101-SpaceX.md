@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, SPACEX. GOOOOOOOD MORNING, Elon Musk and the Hawthorne and Starbase leadership. The ACS Infrastructure Protection Division presents a space infrastructure protection proposal of strategic consequence — a $258.2 million comprehensive electromagnetic hardening program for SpaceX's launch facilities at SLC-40 (Cape Canaveral), LC-39A (Kennedy Space Center), SLC-4E (Vandenberg), and Starbase (Boca Chica), ensuring that America's primary heavy-lift launch capability survives the electromagnetic environment that accompanies both natural solar events and potential adversarial action.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, SPACEX. GOOOOOOOD MORNING, Elon Musk and the Hawthorne and Starbase leadership. The ACS Infrastructure Protection Division presents a space infrastructure protection proposal of strategic consequence — a $258.2 million comprehensive electromagnetic hardening program for SpaceX's launch facilities at SLC-40 (Cape Canaveral), LC-39A (Kennedy Space Center), SLC-4E (Vandenberg), and Starbase (Boca Chica), ensuring that America's primary heavy-lift launch capability survives the electromagnetic environment that accompanies both natural solar events and potential adversarial action.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Musk, ACS respectfully requests a 60-minute briefing with your launch infras
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

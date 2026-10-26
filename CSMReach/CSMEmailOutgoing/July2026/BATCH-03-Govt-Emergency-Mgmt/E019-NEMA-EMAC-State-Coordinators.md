@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** NEMA Member State Directors / EMAC (Emergency Management Assistance Compact) State Coordinators
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** EMAC depot pre-positioning — non-conductive shelter containers and resilient comms for space-weather mutual aid
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: NEMA Mid-Year or Annual Forum — happy to brief state EMAC coordinat
 
 Mutual aid works best when the aid is hardened before the need arrives.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

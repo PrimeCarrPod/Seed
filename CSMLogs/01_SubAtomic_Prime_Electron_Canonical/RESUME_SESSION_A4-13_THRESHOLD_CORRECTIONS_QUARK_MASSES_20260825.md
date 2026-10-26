@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-13_Threshold_Corrections_Quark_Masses_20260825  
 **Branch:** session/agent_2c606f22-96b8-4dc0-bcd5-69f642ef9939  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -132,4 +132,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-13_THRESHOLD_CORRECTIONS_QUARK_MASSES_202
 ---
 
 *Session initiated. Ready for A4-13 creation.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

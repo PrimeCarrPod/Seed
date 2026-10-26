@@ -7,7 +7,7 @@
 ## 1. COMPANY OVERVIEW
 
 **Legal Name:** Cisco Systems, Inc.
-**Headquarters:** San Jose, California
+**Headquarters:** San Jose, [location withheld]
 **Ticker:** CSCO (NASDAQ)
 **Revenue (2025):** ~$55B; hardware ~$40B, software/services ~$15B
 **Market Share:** ~51% enterprise networking, ~42% service provider routing

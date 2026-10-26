@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** FEMA — Director of National Continuity Programs / State Hazard Mitigation Officers
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Updated Solar Cycle 25 hazard data for your next HMP revision cycle
 
 ---
@@ -28,9 +28,9 @@ NEXT STEP: FEMA EMI (Emmitsburg) briefing, IAEM Annual Conference EMEX (Nov 2026
 
 You plan for the hazards. Let's make sure the Sun is on the list.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

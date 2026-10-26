@@ -159,4 +159,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4_07_LAMB_SHIFT_PRIME_FLUCTUATIONS_20260825
 ---
 
 *Session completed successfully. All files committed and pushed to main via GitHub_handler.sh.*
-*Author: Jason Isaac Brodsky of California 1976 Author Conducier*
+*Author: [sender name withheld] of California 1976 Author Conducier*

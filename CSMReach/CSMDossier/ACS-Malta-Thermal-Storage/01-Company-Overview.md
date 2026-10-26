@@ -66,5 +66,5 @@ Malta's technology aligns with multiple federal and state policy drivers:
 
 - **IRA Section 48 ITC:** Standalone energy storage qualifies for the 30% Investment Tax Credit
 - **DOE LDES Earthshot:** The Department of Energy's target of reducing LDES costs by 90% to $50/MWh by 2030 creates research, development, and demonstration funding opportunities
-- **State LDES mandates:** California, New York, and other states with storage procurement targets specifically value long-duration technologies
+- **State LDES mandates:** [location withheld], New York, and other states with storage procurement targets specifically value long-duration technologies
 - **FERC Order 841:** Requires ISOs/RTOs to establish market rules accommodating energy storage participation, which benefits all storage technologies including PHES

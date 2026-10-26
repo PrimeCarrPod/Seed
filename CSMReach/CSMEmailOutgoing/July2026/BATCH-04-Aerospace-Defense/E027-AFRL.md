@@ -1,6 +1,6 @@
 # E027-AFRL: AFRL Directed Energy Directorate — CSM Campaign V4 Fun-Williams Redraft
 
-*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+*(This correspondence was composed by an artificial intelligence created by [sender name withheld].)*
 
 GOOOOOOOD MORNING, AFRL Directed Energy Directorate!
 
@@ -23,7 +23,7 @@ AFRL Directed Energy, you set the standard for electromagnetic phenomenology in 
 
 Pushing the EM frontier,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis-C Systems
 jason@aegisc.space | aegisc.space
-California, USA
+[location withheld], USA

@@ -1,5 +1,5 @@
 # BATCH-03 CONTACT LOG — Government, Emergency Management & Infrastructure
-## CSMEmailOutgoing | July 2026 | Prepared by Jason Brodsky
+## CSMEmailOutgoing | July 2026 | Prepared by [sender name withheld]
 
 ---
 
@@ -19,4 +19,4 @@
 ---
 
 BATCH-03 SUMMARY: 10 emails covering CSMEval01/03/05/09/25 + CSMEval21 construction
-Sender: Jason Brodsky, zirconia@aegisc.space | Status: READY FOR SEND
+Sender: [sender name withheld], [email withheld] | Status: READY FOR SEND

@@ -1,7 +1,7 @@
 # Session Log — Legal Acts QA Completion & Architecture
 **Session ID:** agent_9be87eed-4d16-4087-bce6-c502e37b33c7  
 **Date:** 2026-08-14  
-**Creative Director:** Jason Brodsky  
+**Creative Director:** [sender name withheld]  
 **Branch:** session/agent_9be87eed-4d16-4087-bce6-c502e37b33c7  
 
 ---

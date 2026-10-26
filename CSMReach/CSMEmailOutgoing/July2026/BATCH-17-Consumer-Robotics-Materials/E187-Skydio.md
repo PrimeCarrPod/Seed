@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, SKYDIO. GOOOOOOOD MORNING, to the company that built the world's most advanced autonomous drones — aircraft that navigate dense forests, inspect bridges, survey power plants, and scout buildings without GPS, without a pilot, and without a pre-mapped environment, using onboard 360° obstacle avoidance and AI-powered path planning that makes every other drone look like a remote-controlled toy. The AEGIS Drone Hardening Division is reaching out to present an EMP-hardening retrofit for Skydio's X10, X2, and 3D Scan platforms — enabling Skydio drones to perform the post-disaster infrastructure inspection mission that will be most critical during the aftermath of a Carrington-scale geomagnetic storm, when every bridge, every power plant, every dam, and every cell tower needs to be inspected, and Skydio's autonomous navigation is the only technology that can do it without GPS, without communications infrastructure, and without a human pilot who can get close enough to see the damage.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, SKYDIO. GOOOOOOOD MORNING, to the company that built the world's most advanced autonomous drones — aircraft that navigate dense forests, inspect bridges, survey power plants, and scout buildings without GPS, without a pilot, and without a pre-mapped environment, using onboard 360° obstacle avoidance and AI-powered path planning that makes every other drone look like a remote-controlled toy. The AEGIS Drone Hardening Division is reaching out to present an EMP-hardening retrofit for Skydio's X10, X2, and 3D Scan platforms — enabling Skydio drones to perform the post-disaster infrastructure inspection mission that will be most critical during the aftermath of a Carrington-scale geomagnetic storm, when every bridge, every power plant, every dam, and every cell tower needs to be inspected, and Skydio's autonomous navigation is the only technology that can do it without GPS, without communications infrastructure, and without a human pilot who can get close enough to see the damage.
 
 **PARAGRAPH 2 — THE POST-CME INSPECTION MISSION**
 
@@ -45,11 +45,11 @@ Skydio enterprise leadership, ACS respectfully requests a 60-minute technical br
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Drone Hardening Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

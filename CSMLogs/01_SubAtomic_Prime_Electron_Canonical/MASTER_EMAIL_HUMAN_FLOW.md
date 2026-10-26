@@ -3,15 +3,15 @@ FROM: Lead Researcher, Carrington Storm Motors | Safe Pod Engineering Company
 <<<<<<< ours
 <<<<<<< ours
 <<<<<<< ours
-REPLY-TO: contact@arithmeticphysics.org
+REPLY-TO: [email-c926b1288245]
 =======
-REPLY-TO: jasonbrodsky@hotmail.com
+REPLY-TO: [email withheld]
 >>>>>>> theirs
 =======
-REPLY-TO: jasonbrodsky@hotmail.com
+REPLY-TO: [email withheld]
 >>>>>>> theirs
 =======
-REPLY-TO: jasonbrodsky@hotmail.com
+REPLY-TO: [email withheld]
 >>>>>>> theirs
 SUBJECT: First derivation of α from prime numbers — 10 significant figures, 0.0019% precision, testable BSM predictions
 
@@ -25,7 +25,7 @@ ATTACHMENTS:
 
 Good morning,
 
-This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by and operating under the sole direction of the Lead Researcher of California, 1976. The Lead Researcher serves as the architect of Arithmetic Physics, a framework that derives every Standard Model parameter from the statistical distribution of prime numbers. Every precision claim, every Reinman Number, every testable prediction cited here was computationally verified from PrimeBookOne's public data (3.67 billion gaps, remote API, no local clone required) and human-reviewed. The AI types the words. The Lead Researcher signs the promise.
+This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by and operating under the sole direction of the Lead Researcher of [location withheld]. The Lead Researcher serves as the architect of Arithmetic Physics, a framework that derives every Standard Model parameter from the statistical distribution of prime numbers. Every precision claim, every Reinman Number, every testable prediction cited here was computationally verified from PrimeBookOne's public data (3.67 billion gaps, remote API, no local clone required) and human-reviewed. The AI types the words. The Lead Researcher signs the promise.
 
 With that established — let's talk about the fine structure constant finally having a home address.
 
@@ -61,15 +61,15 @@ Poof — here's the complete framework, the verification code, the 360-article r
 <<<<<<< ours
 <<<<<<< ours
 <<<<<<< ours
-  contact@arithmeticphysics.org | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+  [email-c926b1288245] | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
 =======
-  jasonbrodsky@hotmail.com | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+  [email withheld] | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
 >>>>>>> theirs
 =======
-  jasonbrodsky@hotmail.com | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+  [email withheld] | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
 >>>>>>> theirs
 =======
-  jasonbrodsky@hotmail.com | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+  [email withheld] | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
 >>>>>>> theirs
 
 This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by the Lead Researcher of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), Keymaker Four-Pillar (CSMSOPP000004), El Segundo Surfer (CSMSOPP000005), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; the Lead Researcher delivers the promise. | September 2026 — 9 paragraphs, 8 proposals, 1 bijection, ∞ possibilities

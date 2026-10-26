@@ -2,7 +2,7 @@
 ## / House Committee on Energy and Commerce
 
 **Date:** 2026-08-14  
-**Prepared by:** Director Kairos Steele, Aegis Operations  
+**Prepared by:** External Affairs, Aegis Operations  
 **Purpose:** Carrington Storm Motors — AEGIS-C Composite Shielding and Dielectric Citadel Protocol
 
 ---
@@ -128,10 +128,10 @@ Together, Acts 06 and 12 authorize over $230 billion in federal spending over te
 ---
 
 **Contact:**  
-Director Kairos Steele  
+External Affairs  
 Aegis Operations, Carrington Storm Motors  
-zirconia@aegisc.space  
-(202) 555-0148
+[email withheld]  
+[phone withheld]
 
 ---
 

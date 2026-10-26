@@ -108,9 +108,9 @@ Several coating technologies currently in advanced research or early commercial 
 
 ## 5. Regulatory Landscape
 
-### 5.1 California Lead Exposure Standards
+### 5.1 [location withheld] Lead Exposure Standards
 
-The California Division of Occupational Safety and Health's 2025 revisions to Title 8, Section 1532.1 — *Lead in Construction* — reduced the permissible exposure limit for airborne lead from 50 µg/m³ to 20 µg/m³ as an 8-hour time-weighted average, with an action level of 10 µg/m³. These standards directly affect all bridge maintenance painting operations in California, as existing coating systems on bridges constructed before approximately 1985 almost universally contain lead-based primers.
+The [location withheld] Division of Occupational Safety and Health's 2025 revisions to Title 8, Section 1532.1 — *Lead in Construction* — reduced the permissible exposure limit for airborne lead from 50 µg/m³ to 20 µg/m³ as an 8-hour time-weighted average, with an action level of 10 µg/m³. These standards directly affect all bridge maintenance painting operations in [location withheld], as existing coating systems on bridges constructed before approximately 1985 almost universally contain lead-based primers.
 
 The practical implications are significant: full removal of lead-based coatings now requires Class 1A containment with negative air pressure, supplied-air respirators for all personnel within the containment, continuous air monitoring at the perimeter, and decontamination facilities for personnel and equipment. These requirements add $12 to $18 per square foot to the cost of full coating removal compared to overcoating or spot-repair strategies. The standards create a powerful economic incentive for protective overcoating and encapsulation strategies that avoid disturbing the existing lead-based primer.
 
@@ -182,7 +182,7 @@ The research foundation for the Fleet Bridge Protection & Retrofit Program draws
 
 - **Peer-Reviewed Journal Articles:** 22 articles from *Corrosion*, *Materials Performance*, *Journal of Bridge Engineering*, *Structure and Infrastructure Engineering*, *Construction and Building Materials*, and *Progress in Organic Coatings*
 - **Federal Technical Reports:** 8 FHWA reports and technical advisories
-- **State DOT Research Reports:** 14 reports from California, Florida, Oregon, Texas, New York, and Washington
+- **State DOT Research Reports:** 14 reports from [location withheld], Florida, Oregon, Texas, New York, and Washington
 - **International Standards and Guides:** 11 documents from AMPP/NACE/SSPC, ISO, AASHTO, and CEN
 - **TRB Publications:** 6 NCHRP syntheses and reports, 5 TRB annual meeting papers
 - **International Case Studies:** 7 reports from Norway, Japan, United Kingdom, Italy, and China

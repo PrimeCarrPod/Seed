@@ -3,7 +3,7 @@
 **Date:** 2026-08-25T20:30:00Z  
 **Session ID:** agent_69518265-2eae-480a-8233-4b6f54d5f664  
 **Branch:** session/agent_69518265-2eae-480a-8233-4b6f54d5f664 (pushed to main)  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -147,4 +147,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-22_ELECTRIC_DIPOLE_MOMENTS_GAPS_20260825.
 
 ---
 
-*Session complete. Three documents created, committed, and pushed. Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Session complete. Three documents created, committed, and pushed. Author: [sender name withheld] ([location withheld]), Conducier*

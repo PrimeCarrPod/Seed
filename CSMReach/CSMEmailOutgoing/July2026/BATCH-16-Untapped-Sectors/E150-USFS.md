@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, UNITED STATES FOREST SERVICE. GOOOOOOOD MORNING, Fire & Aviation Management. GOOOOOOOD MORNING, every smokejumper, hotshot, and engine crew operating in the 193 million acres of National Forest System lands. The AEGIS Fire Safety Division is reaching out to the single largest wildland firefighting organization on Earth — with over 10,000 firefighters — to present two products that directly address the most lethal gaps in wildland firefighting: survival during fire overrun and communications in terrain where radios go silent.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, UNITED STATES FOREST SERVICE. GOOOOOOOD MORNING, Fire & Aviation Management. GOOOOOOOD MORNING, every smokejumper, hotshot, and engine crew operating in the 193 million acres of National Forest System lands. The AEGIS Fire Safety Division is reaching out to the single largest wildland firefighting organization on Earth — with over 10,000 firefighters — to present two products that directly address the most lethal gaps in wildland firefighting: survival during fire overrun and communications in terrain where radios go silent.
 
 **PARAGRAPH 2 — THE WILDLAND FIREFIGHTER SAFETY GAP**
 
@@ -45,11 +45,11 @@ Fire & Aviation Management leadership, ACS respectfully requests a 60-minute tec
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Fire Safety Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

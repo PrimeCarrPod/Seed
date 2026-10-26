@@ -58,7 +58,7 @@ ARPA-E has funded early-stage research into electrochemical cement production, i
 
 ### State-Level Initiatives
 
-- **California**: Buy Clean California Act and the state's cap-and-trade program create incentives for low-carbon cement
+- **[location withheld]**: Buy Clean [location withheld] Act and the state's cap-and-trade program create incentives for low-carbon cement
 - **New York**: The Low Embodied Carbon Concrete Leadership Act establishes embodied carbon limits for state-funded construction
 - **Colorado, Oregon, New Jersey, and others**: Buy Clean legislation enacted or under development
 
@@ -87,7 +87,7 @@ The First Movers Coalition, launched at COP26, includes commitments from major c
 |-------------|---------------------|----------------------|-----------------------------------|
 | EU ETS | €60–100/tCO₂ | €100–150/tCO₂ | €60–90/t |
 | UK ETS | £35–75/tCO₂ | £70–120/tCO₂ | £42–72/t |
-| California | $30–40/tCO₂ | $50–80/tCO₂ | $30–48/t |
+| [location withheld] | $30–40/tCO₂ | $50–80/tCO₂ | $30–48/t |
 | Canada (federal backstop) | CAD $65/tCO₂ (2023) | CAD $170/tCO₂ (2030) | CAD $102/t |
 
 At projected 2030 carbon prices, the carbon cost of conventional cement ranges from $30 to $100 per tonne, creating a substantial cost umbrella under which low-carbon alternatives can compete without requiring "green premiums."

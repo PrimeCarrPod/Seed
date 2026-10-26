@@ -144,7 +144,7 @@ reducing cycle time to 4 to 6 weeks.
 ### Hawthorne Facility
 
 Ampaire's primary conversion center at Hawthorne Municipal Airport (KHHR)
-in Hawthorne, California, has initial capacity for approximately 12 to 24
+in Hawthorne, [location withheld], has initial capacity for approximately 12 to 24
 conversions annually in a single shift operation. The facility includes:
 
 - 2000 square meter hangar with space for 4 to 6 aircraft simultaneously in

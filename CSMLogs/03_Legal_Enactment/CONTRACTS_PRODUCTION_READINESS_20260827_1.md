@@ -2,7 +2,7 @@
 ## Week 9-12: The Handshake Becomes Law — Production Contracts Executed
 **Session:** CSM_CLPS_Phase2_CONTRACTS_PRODUCTION_20260827  
 **Date:** November 19, 2026 (Day 84) → December 17, 2026 (Day 112)  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -181,7 +181,7 @@
 **NSPIRES ID:** SBIR-2026-CLPS-002-XYZ789
 **Submitted:** December 1, 2026
 **Budget:** $1.5M | **Duration:** 24 months
-**PI:** Jason Isaac Brodsky | **Co-I:** Nematron AI
+**PI:** [sender name withheld] | **Co-I:** Nematron AI
 
 **Phase II Deliverables:**
 1. **Three Flight Articles** — One per initial contractor (IM leg, Firefly vessel, Astro adapter)
@@ -229,4 +229,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Document: CONTRACTS_PRODUCTION_READINESS_20260827.md*
 *Branch: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

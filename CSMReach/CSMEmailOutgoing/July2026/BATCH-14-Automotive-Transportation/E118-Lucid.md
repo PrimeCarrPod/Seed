@@ -66,7 +66,7 @@ Lucid Motors operates at the far frontier of EV powertrain engineering, and it i
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

@@ -93,7 +93,7 @@ Three scenarios were constructed for the FY2026–FY2029 period:
 | Lucid Group Investor Presentations (2023–2026) | Corporate | Product roadmap, manufacturing capacity, technology |
 | Lucid Group Press Releases (2024–2026) | Corporate | Product launches, partnership announcements, regulatory milestones |
 | Public Investment Fund Annual Report 2025 | Sovereign Fund | PIF portfolio composition, Vision 2030 status |
-| California DMV Autonomous Vehicle Testing Reports (2025, 2026) | Government | Lucid autonomous miles, disengagement rates |
+| [location withheld] DMV Autonomous Vehicle Testing Reports (2025, 2026) | Government | Lucid autonomous miles, disengagement rates |
 | Uber Technologies 10-K (FY2025) | SEC Filing | Uber's AV strategy, Lucid partnership context |
 | Tesla, Inc. 10-K (FY2025) | SEC Filing | Industry benchmarks, competitive analysis |
 | Rivian Automotive 10-K (FY2025) | SEC Filing | Industry benchmarks, competitive analysis |

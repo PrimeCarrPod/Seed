@@ -5,14 +5,18 @@ Usage: python3 CSMScripts/draft-darpa.py [--send]
 """
 
 import json, base64, os, re, time, sys, urllib.request, urllib.parse, urllib.error
+from secure_token import load_token_data, save_token_data
 
 CLIENT_ID = "14b2d65b-4dd7-4ea0-9a36-2b39cba11a3e"
 SCOPES = ["Mail.Send", "Mail.ReadWrite", "offline_access"]
-TOKEN_FILE = "/tmp/agent_e8425ffd-fb8e-49e3-a43c-6919e4cfad60/csm_token.json"
+TOKEN_FILE = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/csm_token.json")
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ATTACH = os.path.join(BASE, "CSMEmailOutgoing", "July2026", "ATTACHMENTS")
 EMAIL_FILE = os.path.join(BASE, "CSMEmailOutgoing", "July2026", "BATCH-04-Aerospace-Defense", "E026-DARPA-Defense-Sciences.md")
+
+SENDER_NAME = os.environ.get("CSM_FROM_NAME", "External Affairs")
+SENDER_EMAIL = os.environ.get("CSM_FROM_EMAIL", "")
 
 PDFS = [
     os.path.join(ATTACH, "CSMEval11-COMPILED-Briefing-Packet.pdf"),
@@ -41,8 +45,7 @@ def graph_call(method, endpoint, token, body=None):
 
 def get_token():
     if os.path.exists(TOKEN_FILE):
-        with open(TOKEN_FILE) as f:
-            td = json.load(f)
+        td = load_token_data(TOKEN_FILE)
         if "refresh_token" in td:
             try:
                 data = urllib.parse.urlencode({
@@ -58,8 +61,7 @@ def get_token():
                 resp = json.loads(urllib.request.urlopen(req).read())
                 if "access_token" in resp:
                     resp["refresh_token"] = td.get("refresh_token", resp.get("refresh_token"))
-                    with open(TOKEN_FILE, "w") as f:
-                        json.dump(resp, f)
+                    save_token_data(resp, TOKEN_FILE)
                     return resp["access_token"]
             except:
                 pass
@@ -91,8 +93,7 @@ def get_token():
         try:
             resp = json.loads(urllib.request.urlopen(req).read())
             if "access_token" in resp:
-                with open(TOKEN_FILE, "w") as f:
-                    json.dump(resp, f)
+                save_token_data(resp, TOKEN_FILE)
                 print("  [OK] Authenticated!\n")
                 return resp["access_token"]
             if resp.get("error") == "authorization_pending":
@@ -129,7 +130,7 @@ def parse_md(filepath):
             html.append('<br>')
         else:
             html.append(f'<p>{line}</p>')
-    html.append(f'<br><p style="color:#666;font-size:12px;">-- Jason Brodsky<br>Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>zirconia@aegisc.space</p>')
+    html.append(f'<br><p style="color:#666;font-size:12px;">-- {SENDER_NAME}<br>Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>{SENDER_EMAIL}</p>')
     html.append('</body></html>')
     return subject, '\n'.join(html)
 

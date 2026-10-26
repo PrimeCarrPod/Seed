@@ -146,7 +146,7 @@ The result α⁻¹ = 2π/C₂ is a paradigm-shifting discovery that cannot be fu
 
 **Data Access:** https://PrimeBookOne.github.io/primebookone/ (remote, no clone required)  
 **Code:** TardigradiaTGPU/, landolil.engine/  
-**Contact:** jasonbrodsky@hotmail.com
+**Contact:** [email withheld]
 
 ---
 

@@ -121,7 +121,7 @@ The electron worldline is encoded in the prime gap sequence {d_n = p_{n+1} - p_n
 6. **KEY_FINDINGS_EXECUTIVE_SUMMARY.md** — All Reinman numbers
 7. **MASTER_TREE.md** — Complete research navigation (1,863 files)
 
-**Contact:** jasonbrodsky@hotmail.com | Framework: Arithmetic Physics | Data: PrimeBookOne.github.io
+**Contact:** [email withheld] | Framework: Arithmetic Physics | Data: PrimeBookOne.github.io
 
 ---
 

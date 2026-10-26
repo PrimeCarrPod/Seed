@@ -1,6 +1,6 @@
 # Session Log: Branch Merge and Cleanup
 **Date:** 2026-09-09  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Session:** kilo/fearless-cedar-5or
 
 ## Assignment

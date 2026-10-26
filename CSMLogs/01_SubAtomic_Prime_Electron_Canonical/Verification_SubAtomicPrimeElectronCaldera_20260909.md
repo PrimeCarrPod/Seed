@@ -1,6 +1,6 @@
 # Session Log: SubAtomic Prime Electron Caldera Verification
 **Date:** 2026-09-09  
-**Author:** Jason Isaac Brodsky (California 1976)  
+**Author:** [sender name withheld] (California 1976)  
 **Agent:** Kilo  
 **Session ID:** agent_e4ca38fb-5287-4133-958c-71a88e1dc139
 

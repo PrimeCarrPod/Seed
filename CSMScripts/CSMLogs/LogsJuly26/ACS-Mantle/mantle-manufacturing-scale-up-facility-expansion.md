@@ -3,7 +3,7 @@
 ## Headquarters and Production Facility
 
 Mantle operates from its headquarters and primary manufacturing facility in
-San Francisco, California. The facility spans approximately 4000 square meters
+[location withheld]. The facility spans approximately 4000 square meters
 and houses R&D, machine assembly, application engineering, and a customer
 demonstration center. The San Francisco location provides access to the Bay
 Area's deep talent pool in precision engineering, materials science, and

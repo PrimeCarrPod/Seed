@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** central@cisa.gov
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Emergency Communications Resilience in Solar Cycle 25 — Hardened Communications Data Package for CISA
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ CISA's Emergency Communications Division oversees the survivability of public sa
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials are tested against MIL-STD-461G. The specifications are documented. The integration pathways — tower-top, base-station shelter, and portable emergency communications trailer — are mapped. Jason Brodsky of California has directed this AI to state plainly: we are not asking CISA to endorse any product, we are not circumventing the SAFECOM process, and we are not proposing anything that conflicts with the National Emergency Communications Plan. What we offer is a materials-and-hardware data package suitable for evaluation by your Emergency Communications Division technical staff, your regional emergency communications coordination working groups, and the state-level SWICs who specify communications resilience requirements into their Statewide Communication Interoperability Plans. These materials are the physical layer that turns a communications resiliency plan from a document into an engineered outcome.
+The materials are tested against MIL-STD-461G. The specifications are documented. The integration pathways — tower-top, base-station shelter, and portable emergency communications trailer — are mapped. [sender name withheld] has directed this AI to state plainly: we are not asking CISA to endorse any product, we are not circumventing the SAFECOM process, and we are not proposing anything that conflicts with the National Emergency Communications Plan. What we offer is a materials-and-hardware data package suitable for evaluation by your Emergency Communications Division technical staff, your regional emergency communications coordination working groups, and the state-level SWICs who specify communications resilience requirements into their Statewide Communication Interoperability Plans. These materials are the physical layer that turns a communications resiliency plan from a document into an engineered outcome.
 
 ---
 
@@ -47,13 +47,13 @@ The May 2024 Gannon Storm — G5/Kp9 — proved the vulnerability in real time: 
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to CISA Emergency Communications Division, regional coordinators, or state SWIC working groups within 14 days. Bring your RF engineers. Bring your network architects. Bring the people who know exactly what happens to a tower-top low-noise amplifier when it meets a 50 kV/m E1 pulse. The four PDFs attached to this email contain the full engineering data — materials test results, integration specifications, cross-sector validation from defense and insurance contexts. Your emergency communications planners know the single-point-of-failure analysis for every tower in their region. We have built the hardening layer that removes those single points. This AI handles the briefing materials and scheduling. Jason Brodsky of California handles the meeting, the questions, and the follow-through. The Sun doesn't make appointments. Let's get ahead of it.
+We are prepared to deliver a technical briefing to CISA Emergency Communications Division, regional coordinators, or state SWIC working groups within 14 days. Bring your RF engineers. Bring your network architects. Bring the people who know exactly what happens to a tower-top low-noise amplifier when it meets a 50 kV/m E1 pulse. The four PDFs attached to this email contain the full engineering data — materials test results, integration specifications, cross-sector validation from defense and insurance contexts. Your emergency communications planners know the single-point-of-failure analysis for every tower in their region. We have built the hardening layer that removes those single points. This AI handles the briefing materials and scheduling. [sender name withheld] handles the meeting, the questions, and the follow-through. The Sun doesn't make appointments. Let's get ahead of it.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

@@ -44,7 +44,7 @@ CMDTOOLS_URL="https://dl.google.com/android/repository/commandlinetools-linux-11
 CMDTOOLS_FILE="$SDK_BASE/../cmdline-tools.zip"
 
 if [ ! -f "$SDK_BASE/cmdline-tools/latest/bin/sdkmanager" ]; then
-    curl -k -sL "$CMDTOOLS_URL" -o "$CMDTOOLS_FILE" 2>&1
+    curl --fail --proto '=https' --proto-redir '=https' -sL "$CMDTOOLS_URL" -o "$CMDTOOLS_FILE" 2>&1
     SIZE=$(stat --printf="%s" "$CMDTOOLS_FILE" 2>/dev/null || echo 0)
     if [ "$SIZE" -lt 100000 ]; then
         echo "ERROR: cmdline-tools download failed (size: $SIZE)"
@@ -74,7 +74,7 @@ PLATFORM_DIR="$SDK_BASE/platforms/android-$COMPILE_SDK"
 if [ ! -f "$PLATFORM_DIR/android.jar" ]; then
     # Platform 33 = android-13 naming convention
     PLATFORM_URL="https://dl.google.com/android/repository/platform-${COMPILE_SDK}_r02.zip"
-    curl -k -sL "$PLATFORM_URL" -o "$PLATFORM_ZIP" 2>&1
+    curl --fail --proto '=https' --proto-redir '=https' -sL "$PLATFORM_URL" -o "$PLATFORM_ZIP" 2>&1
     SIZE=$(stat --printf="%s" "$PLATFORM_ZIP" 2>/dev/null || echo 0)
     if [ "$SIZE" -lt 100000 ]; then
         echo "ERROR: Platform download failed (size: $SIZE)"
@@ -99,13 +99,13 @@ BT_DIR="$SDK_BASE/build-tools/$BUILD_TOOLS_VERSION"
 
 if [ ! -f "$BT_DIR/aapt2" ]; then
     BT_URL="https://dl.google.com/android/repository/build-tools_r${BUILD_TOOLS_VERSION}-linux.zip"
-    curl -k -sL "$BT_URL" -o "$BT_ZIP" 2>&1
+    curl --fail --proto '=https' --proto-redir '=https' -sL "$BT_URL" -o "$BT_ZIP" 2>&1
     SIZE=$(stat --printf="%s" "$BT_ZIP" 2>/dev/null || echo 0)
     if [ "$SIZE" -lt 100000 ]; then
         echo "ERROR: Build-tools download failed (size: $SIZE)"
         echo "Falling back to build-tools_r34.0.0..."
         BT_URL="https://dl.google.com/android/repository/build-tools_r34.0.0-linux.zip"
-        curl -k -sL "$BT_URL" -o "$BT_ZIP" 2>&1
+        curl --fail --proto '=https' --proto-redir '=https' -sL "$BT_URL" -o "$BT_ZIP" 2>&1
         SIZE=$(stat --printf="%s" "$BT_ZIP" 2>/dev/null || echo 0)
         if [ "$SIZE" -lt 100000 ]; then
             echo "ERROR: All build-tools fallbacks failed"

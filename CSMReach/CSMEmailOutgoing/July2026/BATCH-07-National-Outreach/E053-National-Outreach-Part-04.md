@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026
 
 **TO:** National Audience — General Outreach Distribution
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Part 04 of 9: The Grid Underneath Everything — The Carrington Storm Motors Compendium
 
 ---
@@ -25,9 +25,9 @@ NEXT STEP: Read. Share. The Compendium is designed for general distribution — 
 
 The Sun has been talking for 4.6 billion years. We finally built something that talks back.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

@@ -9,7 +9,7 @@ partnership strategy is to build credibility across this entire chain in paralle
 
 ## Research & Academic Partnerships
 
-### Caltech (California Institute of Technology)
+### Caltech ([location withheld] Institute of Technology)
 Brimstone is a Caltech spinout. The foundational research was conducted in the
 laboratories of the Division of Chemistry and Chemical Engineering. Ongoing
 collaborations include:

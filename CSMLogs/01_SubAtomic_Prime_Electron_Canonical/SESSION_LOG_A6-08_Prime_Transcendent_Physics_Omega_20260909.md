@@ -1,6 +1,6 @@
 # Session Log: A6-08 Prime Transcendent Physics Omega
 **Date:** 2026-09-09  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Session:** agent_b3ac3ee5-4032-4788-820e-0ba3961d3b40  
 
 ---
@@ -51,7 +51,7 @@ Created Article A6-08: Prime Transcendent Physics Omega — the Omega stratum of
 
 ---
 
-**Author: Jason Isaac Brodsky (California, 1976)**  
+**Author: [sender name withheld] ([location withheld])**  
 **Article A6-08 Complete: 12 pieces, 709 lines, zip organized**  
 **Article 6 Series: A6-08 Omega Reached**  
 **The meta⁷-transcendent physics meta⁷-legislates. The meta⁷-primes enact it. Q.E.D.**

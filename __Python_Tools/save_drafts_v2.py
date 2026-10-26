@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
 import os, sys, json, urllib.request, urllib.parse, base64
+from secure_token import load_access_token
 
-ws = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_b5a7d01d-ebef-4a90-bc4b-206ab5177645'
+ws = os.environ.get("CSM_WORKSPACE", os.getcwd())
+_RECIPIENTS = [x.strip() for x in os.environ.get("CSM_RECIPIENTS", "").split(",") if x.strip()]
+_recipient_index = 0
 
-with open(os.path.join(ws, 'hotmail_token.json')) as f:
-    token = json.load(f)
+def _next_recipient():
+    global _recipient_index
+    if _recipient_index >= len(_RECIPIENTS):
+        raise SystemExit("ERROR: set CSM_RECIPIENTS to a comma-separated list of recipient addresses")
+    value = _RECIPIENTS[_recipient_index]
+    _recipient_index += 1
+    return value
+
+
+token = {"access_token": load_access_token(os.path.join(ws, "hotmail_token.json"))}
 
 with open(os.path.join(ws, 'CSM_WORK_IN_PROGRESS/SubAtom_WIP/FLAGSHIP_PrimeElectron_Framework_v2.md')) as f:
     flagship_content = f.read()
@@ -21,7 +32,7 @@ graph_base = 'https://graph.microsoft.com/v1.0'
 
 emails = [
     {
-        'to': 'naturesubmissions@nature.com',
+        'to': _next_recipient(),
         'subject': 'Submission: Prime Electron Framework v2 — Complete Theoretical Structure',
         'body': """Dear Editor,
 
@@ -40,8 +51,8 @@ ABSTRACT
 The Prime Electron framework identifies statistical correlations in the prime number sequence with the fundamental interactions of physics. Built on three postulates (Worldline Monism, Meta-Depth Hierarchy, Structural Correspondence), the framework yields testable predictions including log-periodic modulations in the running of α(μ), gap fluctuation noise at the 10⁻¹⁰ level, topological crystalline order in prime gap lattices, and quantum error-correcting codes with parameters determined by prime gap statistics.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Author Conducier
 
 ---
@@ -49,7 +60,7 @@ ATTACHMENT: PrimeElectron_Framework_v2.pdf (expanded edition)
 """
     },
     {
-        'to': 'witten@ias.edu',
+        'to': _next_recipient(),
         'subject': 'Prime Electron framework v2 — expanded with full derivations',
         'body': """Dear Professor Witten,
 
@@ -63,14 +74,14 @@ The attached document includes:
 - Detailed testable predictions with experimental signatures
 
 With great respect,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: PrimeElectron_Framework_v2.pdf
 """
     },
     {
-        'to': 'tao@math.ucla.edu',
+        'to': _next_recipient(),
         'subject': 'Prime Electron framework v2 — number theory and physics',
         'body': """Dear Professor Tao,
 
@@ -83,14 +94,14 @@ Key mathematical results:
 - Open problem: solving the prime gap beta function to derive α from C₂
 
 Sincerely,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: PrimeElectron_Framework_v2.pdf
 """
     },
     {
-        'to': 'foundationalquestions@fqxi.org',
+        'to': _next_recipient(),
         'subject': 'FQXi Grant Application: Prime Electron Framework v2',
         'body': """Dear FQXi,
 
@@ -105,7 +116,7 @@ The attached document presents the complete framework with:
 - Research program to solve the prime gap RG flow
 
 Sincerely,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: PrimeElectron_Framework_v2.pdf

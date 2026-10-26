@@ -1,5 +1,5 @@
 # RESUME SESSION — CSM CINEMA — ITERATION 1 PART 2 COMPLETE
-## Jason Isaac Brodsky (California 1976) — Conducier
+## [sender name withheld] (California 1976) — Conducier
 **Session Date:** 2026-08-25  
 **Session ID:** csmcinema-iter1-part2-20260825  
 **Project:** CSM Cinema — 11 Parts × 7 Iterations = 77 Parts Total  

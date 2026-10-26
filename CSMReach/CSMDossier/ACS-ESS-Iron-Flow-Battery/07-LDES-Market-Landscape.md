@@ -65,7 +65,7 @@ The competitive landscape segments roughly by duration capability:
 
 State-level clean energy mandates are the primary near-term driver for LDES procurement:
 
-- **California:** CPUC Ordering requiring 1 GW of LDES by 2026 and up to 4 GW by 2030 under the Integrated Resource Planning (IRP) process
+- **[location withheld]:** CPUC Ordering requiring 1 GW of LDES by 2026 and up to 4 GW by 2030 under the Integrated Resource Planning (IRP) process
 - **New York:** Climate Leadership and Community Protection Act (CLCPA) target of 6 GW energy storage by 2030, with specific carve-outs for LDES
 - **Massachusetts:** Clean Peak Energy Standard requiring 1,000 MWh of new energy storage, with multipliers for long-duration systems
 - **Oregon:** HB 2021 requiring 100% clean electricity by 2040; state energy storage mandate under development

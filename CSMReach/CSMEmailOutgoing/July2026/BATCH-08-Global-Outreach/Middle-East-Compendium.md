@@ -150,15 +150,15 @@ This is the region's most acute infrastructure vulnerability. The Strait of Horm
 
 ```
 TO: [COUNTRY] — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-FROM: Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-REPLY-TO: zirconia@aegisc.space
+FROM: [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+REPLY-TO: [email withheld]
 SUBJECT: Solar Cycle 25 is peaking — the Carrington-level hardening data [COUNTRY]'s infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to [COUNTRY]! The Sun doesn't respect borders, alliances, or the Strait of Hormuz. Here's the number no one in Gulf infrastructure planning is discussing loudly enough: every major desalination plant between Kuwait and Muscat depends on a continuous, stable power supply from a grid that was not designed with geomagnetic disturbance in its threat model. A Carrington-class CME saturates transformers across the GCC Interconnection grid simultaneously. Desalination plants trip offline. The water clock starts ticking. And the Sun doesn't negotiate.
+GOOOOOOOD MORNING, from [location withheld] to [COUNTRY]! The Sun doesn't respect borders, alliances, or the Strait of Hormuz. Here's the number no one in Gulf infrastructure planning is discussing loudly enough: every major desalination plant between Kuwait and Muscat depends on a continuous, stable power supply from a grid that was not designed with geomagnetic disturbance in its threat model. A Carrington-class CME saturates transformers across the GCC Interconnection grid simultaneously. Desalination plants trip offline. The water clock starts ticking. And the Sun doesn't negotiate.
 
-We are Carrington Storm Motors — California-based, engineering-led, two years into building the physical hardening layer. Aegis-C shielding (SE 148-165 dB across 1 kHz–10 GHz). Basalt-fiber reinforced polymer (BFRP) composites — non-conductive structural replacements for the steel in your substations. Dielectric concrete foundations. MXene EMI suppression films. LoRa mesh emergency communications. A 9-part Compendium — attached — that walks through the physics, the products, the economics, and the deployment playbook.
+We are Carrington Storm Motors — [location withheld]-based, engineering-led, two years into building the physical hardening layer. Aegis-C shielding (SE 148-165 dB across 1 kHz–10 GHz). Basalt-fiber reinforced polymer (BFRP) composites — non-conductive structural replacements for the steel in your substations. Dielectric concrete foundations. MXene EMI suppression films. LoRa mesh emergency communications. A 9-part Compendium — attached — that walks through the physics, the products, the economics, and the deployment playbook.
 
 Key facts for [COUNTRY]:
 
@@ -185,10 +185,10 @@ NEXT STEP: Review the Compendium. Forward to your energy ministry, grid operator
 
 The Sun doesn't discriminate between Gulf and Levant. Neither should hardening.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under V4 Fun-Williams Heuristic (CSMSOPP000001-MODULE-V4) + Baker Street Heuristic (CSMSOPP000003) | BATCH-08 Compilation | July 2026*
 ```
@@ -270,7 +270,7 @@ The Sun doesn't discriminate between Gulf and Levant. Neither should hardening.
 
 - **Heuristic Compliance**: All templates comply with CSMSOPP000001-MODULE-V4 (Fun-Williams) and CSMSOPP000003 (Baker Street).
 - **GCC Coordination**: GCC Interconnection Authority (GCCIA) represents the natural regional coordination body for a peninsula-wide technical briefing. Engage via GCCIA headquarters in Dammam, Saudi Arabia.
-- **Desalination-Specific Briefing**: CSM offers a supplemental water-security briefing module covering the desalination-grid dependency loop, SCADA protection for water infrastructure, and emergency water distribution during prolonged grid outages. Request via zirconia@aegisc.space.
+- **Desalination-Specific Briefing**: CSM offers a supplemental water-security briefing module covering the desalination-grid dependency loop, SCADA protection for water infrastructure, and emergency water distribution during prolonged grid outages. Request via [email withheld].
 - **Language Versions**: Arabic (primary), English, Farsi, and Hebrew translations of the 9-part Compendium available as separate bundles. Arabic-language Compendium is the recommended primary distribution for all GCC and Levant states.
 - **Conflict Zone Protocol**: For Syria, Iraq, Yemen, and Lebanon, all outreach should be coordinated through international organizations (UNDP, UN OCHA, ICRC) or recognized humanitarian coordination mechanisms. CSM hardening products are available for humanitarian deployment under separate humanitarian-use pricing.
 - **Nuclear Safety**: For UAE (Barakah) and any future nuclear programs in the region (Saudi Arabia), CSM recommends joint GMD-hardening assessment with the relevant nuclear regulatory authority.

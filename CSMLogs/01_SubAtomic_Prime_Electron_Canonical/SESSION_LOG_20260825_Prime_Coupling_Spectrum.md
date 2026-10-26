@@ -1,6 +1,6 @@
 # Session Log: Prime Coupling Spectrum Articles (A4-11, A4-13, A4-14)
 **Date:** 2026-08-25  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Session:** agent_8e19676e-0b99-44bb-a1fd-3f1ca4288946  
 **Branch:** main (direct commits)
 

@@ -54,9 +54,9 @@ a strategy known as revenue stacking:
    renewable generation and deliver it during higher-value periods, increasing
    the effective capacity factor and revenue of the renewable asset.
 
-## Use Case: Solar Firming in California
+## Use Case: Solar Firming in [location withheld]
 
-California's electricity grid exemplifies the challenge that long-duration storage
+[location withheld]'s electricity grid exemplifies the challenge that long-duration storage
 addresses. The state's ambitious renewable portfolio standard (60% by 2030, 100%
 carbon-free by 2045) combined with its abundant solar resource creates the
 well-known "duck curve" — a deep midday net load trough followed by a steep

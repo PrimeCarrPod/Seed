@@ -1,6 +1,6 @@
 # SESSION LOG: Iteration 2 SOPP Pass Complete
 **Date:** 2026-08-27  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Session:** CSM Cinema Iteration 2 — SOPP Pass Deepening  
 
 ---

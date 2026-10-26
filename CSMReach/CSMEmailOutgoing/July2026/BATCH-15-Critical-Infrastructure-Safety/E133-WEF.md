@@ -1,18 +1,18 @@
 # E133-WEF: Water Environment Federation
 
 **To:** info@wef.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Broader Water/Wastewater Resilience — GMD Threat to Treatment and Collection Systems
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All references to WEF's mission, wastewater and stormwater infrastructure, and water quality management are based on publicly available information from WEF publications and water sector technical literature.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All references to WEF's mission, wastewater and stormwater infrastructure, and water quality management are based on publicly available information from WEF publications and water sector technical literature.
 
 ---
 
 GOOOOOOOD MORNING, WATER ENVIRONMENT FEDERATION!
 
-Jason Brodsky at Aegis Cipher Space, writing from 221B Baker Street — and like the Water Environment Federation's members, who deal daily with the invisible biological and chemical processes that keep our water clean, we at Aegis Cipher Space deal with the invisible electromagnetic processes that could, under the wrong solar conditions, bring those treatment processes to a halt.
+[sender name withheld] at Aegis Cipher Space, writing from 221B Baker Street — and like the Water Environment Federation's members, who deal daily with the invisible biological and chemical processes that keep our water clean, we at Aegis Cipher Space deal with the invisible electromagnetic processes that could, under the wrong solar conditions, bring those treatment processes to a halt.
 
 WEF represents the full spectrum of water quality professionals — the wastewater treatment plant operators, the collection system engineers, the stormwater managers, the laboratory scientists, and the regulatory compliance specialists who ensure that what goes down the drain does not come back up as a public health crisis. Your members operate treatment plants that process hundreds of millions of gallons per day, pumping stations distributed across thousands of miles of collection systems, and advanced treatment processes — membrane bioreactors, ultraviolet disinfection, anaerobic digestion — that are entirely dependent on continuous electrical power. When that power is interrupted for an extended period, the consequences cascade rapidly: untreated sewage overflows into waterways, combined sewer systems discharge into rivers and lakes, drinking water sources become contaminated, and the public health achievements of a century of wastewater treatment are reversed in a matter of days.
 
@@ -36,7 +36,7 @@ I would welcome the opportunity to present this analysis at a WEF conference, co
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

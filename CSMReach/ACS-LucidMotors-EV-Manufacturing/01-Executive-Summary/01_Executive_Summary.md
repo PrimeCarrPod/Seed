@@ -5,7 +5,7 @@
 **Date:** 15 July 2026  
 **Classification:** Confidential — Advanced Climate Solutions Internal  
 **Ticker:** NASDAQ: LCID  
-**Headquarters:** Newark, California, United States  
+**Headquarters:** Newark, [location withheld], United States  
 **CEO:** Silvio Napoli (appointed May 2026, succeeding Peter Rawlinson)
 
 ---
@@ -45,7 +45,7 @@ FY2026 production guidance: 25,000–27,000 units. Q1 2026 deliveries were const
 
 ### 1.4 Autonomous Mobility & Robotaxi
 
-Lucid's autonomous strategy rests on three pillars: (1) Atlas electric drive unit as a licensable propulsion platform for autonomous vehicle fleets, (2) a strategic partnership with Nuro Inc. for autonomous delivery vehicle technology, and (3) an Uber Technologies collaboration encompassing a minimum 35,000-vehicle robotaxi commitment with $500M total investment ($200M Uber direct + Gravity and Midsize platform vehicles). The California Department of Motor Vehicles granted Lucid a driverless testing permit in Q2 2026. Seventy-five engineering vehicles have been delivered to fleet partners for validation. Commercial robotaxi service is anticipated to commence in late 2026.
+Lucid's autonomous strategy rests on three pillars: (1) Atlas electric drive unit as a licensable propulsion platform for autonomous vehicle fleets, (2) a strategic partnership with Nuro Inc. for autonomous delivery vehicle technology, and (3) an Uber Technologies collaboration encompassing a minimum 35,000-vehicle robotaxi commitment with $500M total investment ($200M Uber direct + Gravity and Midsize platform vehicles). The [location withheld] Department of Motor Vehicles granted Lucid a driverless testing permit in Q2 2026. Seventy-five engineering vehicles have been delivered to fleet partners for validation. Commercial robotaxi service is anticipated to commence in late 2026.
 
 ### 1.5 Dossier Structure
 

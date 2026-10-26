@@ -96,8 +96,8 @@ while time.time()-t0<int(r['expires_in'])-10:
 - Returns access token with correct `scope: Mail.ReadWrite Mail.Send`
 
 ### Sender Account
-- **Email:** zirconia@aegisc.space
-- **Name:** Jason Brodsky, Director of External Affairs
+- **Email:** [email withheld]
+- **Name:** [sender name withheld], Director of External Affairs
 - **Provider:** GoDaddy Microsoft 365
 - **SMTP Auth:** ENABLED
 - **DNS:** SPF/DKIM/DMARC active (fixed July 13)
@@ -175,4 +175,4 @@ while time.time()-t0<int(r['expires_in'])-10:
 
 ---
 
-*Handoff prepared July 18, 2026 by AI Scribe under direction of Jason Brodsky of California*
+*Handoff prepared July 18, 2026 by AI Scribe under direction of [sender name withheld]*

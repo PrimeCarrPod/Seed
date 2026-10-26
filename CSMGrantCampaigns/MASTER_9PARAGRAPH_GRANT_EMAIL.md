@@ -6,7 +6,7 @@
 
 **TO:** [FUNDER_EMAIL]
 **FROM:** Jason Isaac Brodsky, Director of External Affairs & Strategic Partnerships | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**REPLY-TO:** [email withheld]
 **SUBJECT:** First derivation of α from prime numbers — 10 significant figures, 0.0019% precision, testable BSM predictions
 
 **ATTACHMENTS:**
@@ -81,6 +81,6 @@ We don't want your money. We want your *partnership* in the verification that ch
 — Jason Isaac Brodsky
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
+  [email withheld] | PrimeBookOne.github.io | TardigradiaTGPU/ | landolil.engine/
 
 *This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), Keymaker Four-Pillar (CSMSOPP000004, "the key one"), El Segundo Surfer (CSMSOPP000005, "the chill one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | September 2026 — 9 paragraphs, 8 proposals, 1 bijection, ∞ possibilities*

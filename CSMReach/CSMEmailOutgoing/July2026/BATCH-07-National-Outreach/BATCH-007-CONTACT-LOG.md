@@ -1,9 +1,9 @@
 # BATCH-007 CONTACT LOG
-## CSMEmailOutgoing | July 2026 | Prepared by Jason Brodsky
+## CSMEmailOutgoing | July 2026 | Prepared by [sender name withheld]
 
 ---
 Total Emails: 9
-Sender: Jason Brodsky, zirconia@aegisc.space
+Sender: [sender name withheld], [email withheld]
 Status: READY FOR SEND
 
 - E050-National-Outreach-Part-01 | ** Part 01 of 9: The Signal From the Sun — The Carrington Storm Motors Compendium

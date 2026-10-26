@@ -29,8 +29,8 @@ alias apksigner="$ANDROID_HOME/build-tools/34.0.0/apksigner"
 alias kotlinc="$ANDROID_HOME/kotlinc/bin/kotlinc"
 
 # ─── Keystore Passwords (set in CI/CD, not here) ────────────────
-# export KEYSTORE_PASS="your_keystore_password"
-# export KEY_PASS="your_key_password"
+# export ANDROID_KEYSTORE_PASS=<set-at-runtime>
+# export ANDROID_KEY_PASS=<set-at-runtime>
 
 # ─── Quick Commands ─────────────────────────────────────────────
 tgapp-build() {

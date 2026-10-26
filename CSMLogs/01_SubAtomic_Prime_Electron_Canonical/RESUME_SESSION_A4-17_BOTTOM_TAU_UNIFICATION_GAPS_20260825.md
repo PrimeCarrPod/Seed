@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-17_Bottom_Tau_Unification_Gaps_20260825  
 **Branch:** session/agent_3e252a00-c3ff-43e1-aff1-fdb18eb7bb5e  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -162,4 +162,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-17_BOTTOM_TAU_UNIFICATION_GAPS_20260825.m
 ---
 
 *Session completed. All files pushed to GitHub main branch.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

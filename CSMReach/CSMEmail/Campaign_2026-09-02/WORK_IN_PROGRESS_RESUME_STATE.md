@@ -6,14 +6,14 @@
 
 ## 📋 SESSION SUMMARY
 
-**Objective:** Send verified AEGIS campaign emails from jasonbrodsky@hotmail.com, then migrate to landolil@hotmail.com
+**Objective:** Send verified AEGIS campaign emails from [email withheld], then migrate to landolil@hotmail.com
 
 **Completed Tasks:**
 1. ✅ Loaded STARLIGHT heuristics (CSMSOPP/STARLIGHT/MODULE-V2)
 2. ✅ Processed 415 repository email files - added CC: landolil@hotmail.com to all
 3. ✅ Verified 67 unique email addresses across BATCH-01 through BATCH-12
 4. ✅ Identified 196 university drafts in Hotmail with placeholder `media@` addresses (need research)
-5. ✅ Authenticated jasonbrodsky@hotmail.com via Microsoft Graph API (device code flow)
+5. ✅ Authenticated [email withheld] via Microsoft Graph API (device code flow)
 6. ✅ Token cached at `/tmp/kilo/hotmail_token.json` (expires ~1 hour, refreshable)
 7. ✅ Sent 3 verified emails from repository batches (BATCH-05: 2 sent, BATCH-06: 1 sent)
 
@@ -45,7 +45,7 @@
 
 ## 📧 HOTMAIL DRAFTS FOLDER STATE
 
-**Account:** jasonbrodsky@hotmail.com
+**Account:** [email withheld]
 **Total Drafts:** 200
 - **4 Research drafts** (Prime Electron papers) - valid addresses
 - **196 Campaign drafts** (Infrastructure Resilience/Aegis-C) - **all `media@` placeholders**
@@ -99,7 +99,7 @@ print(f'Refreshed: {tr[\"expires_in\"]}s')
 
 1. **Send remaining verified repository batches** (BATCH-07, 09, 10, 11, 12 = ~41 emails)
 2. **Research university contacts** for BATCH-08 (196 domains) or skip
-3. **Monitor daily send limits** on jasonbrodsky@hotmail.com
+3. **Monitor daily send limits** on [email withheld]
 4. **When exhausted:** Login to landolil@hotmail.com, migrate drafts
 5. **Delete sent emails from Sent folder** per user request
 
@@ -173,7 +173,7 @@ Per `starlight_permissions.py`:
 
 ## 🔄 MIGRATION PLAN (landolil@hotmail.com)
 
-When jasonbrodsky@hotmail.com daily limit reached:
+When [email withheld] daily limit reached:
 1. `az login --use-device-code` for landolil@hotmail.com
 2. Create drafts in landolil account (copy from sent/jasonbrodsky drafts)
 3. Update CC to landolil@hotmail.com (already in repo files)

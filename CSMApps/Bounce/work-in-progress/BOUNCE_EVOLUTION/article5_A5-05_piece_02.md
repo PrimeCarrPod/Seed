@@ -63,7 +63,7 @@ export ANDROID_JAR=$ANDROID_HOME/platforms/android-${COMPILE_SDK}/android.jar
 if [[ ! -f debug.keystore ]]; then
   keytool -genkey -v -keystore debug.keystore -alias androiddebugkey \
     -keyalg RSA -keysize 2048 -validity 10000 \
-    -storepass android -keypass android \
+    -storepass "$ANDROID_KEYSTORE_PASS" -keypass "$ANDROID_KEY_PASS" \
     -dname "CN=Android Debug,O=Android,C=US"
 fi
 ```

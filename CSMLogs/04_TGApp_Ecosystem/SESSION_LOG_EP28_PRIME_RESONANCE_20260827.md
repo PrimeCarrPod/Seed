@@ -1,5 +1,5 @@
 # SESSION LOG: EP-28 Prime Resonance — Sevenfold Fire in the Cabbage Field
-## Jason Isaac Brodsky of California 1976 Author Conducier
+## [sender name withheld] of California 1976 Author Conducier
 ## Date: 2026-08-27
 ## Session: agent_e41962e6-31f6-4d25-a0c3-11eb2065d3e1
 ## Branch: session/agent_e41962e6-31f6-4d25-a0c3-11eb2065d3e1 → main (merged)

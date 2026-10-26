@@ -222,7 +222,7 @@ Apple's support for devices 5–7 years after initial sale is an industry outlie
 Beyond direct savings:
 - **Regulatory preemption**: Proactive circularity positions Apple favorably for EU Ecodesign Directive, French repairability index, and emerging US right-to-repair frameworks
 - **Talent acquisition**: Environmental leadership attracts sustainability-conscious engineering talent
-- **Brand premium**: Circularity narrative supports premium pricing in environmentally sensitive markets (EU, California, Japan)
+- **Brand premium**: Circularity narrative supports premium pricing in environmentally sensitive markets (EU, [location withheld], Japan)
 - **Commodity price hedging**: Recycled material supply chains provide natural hedge against primary commodity price spikes
 
 ### 7.3 Investment vs. Return

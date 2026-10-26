@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import os, sys, json, urllib.request, urllib.parse
+from secure_token import load_access_token
 
-ws = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_b5a7d01d-ebef-4a90-bc4b-206ab5177645'
+ws = os.environ.get("CSM_WORKSPACE", os.getcwd())
 
 # Load token
-with open(os.path.join(ws, 'hotmail_token.json')) as f:
-    token = json.load(f)
+token = {"access_token": load_access_token(os.path.join(ws, "hotmail_token.json"))}
 
 # Load emails content
 with open(os.path.join(ws, 'CSM_WORK_IN_PROGRESS/SubAtom_WIP/EMAILS_FOR_OUTREACH.md')) as f:

@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, T.Y. LIN INTERNATIONAL. GOOOOOOOD MORNING, Matthew Cummings and the San Francisco and global engineering leadership. The ACS Infrastructure Protection Division presents a civil infrastructure protection proposal of regional and national significance — a comprehensive GIC and corrosion protection program for the 10 major Bay Area toll bridges, representing over $30 billion in replacement value, integrating ACS AEGIS dielectric protection with T.Y. Lin's unparalleled bridge engineering expertise.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, T.Y. LIN INTERNATIONAL. GOOOOOOOD MORNING, Matthew Cummings and the San Francisco and global engineering leadership. The ACS Infrastructure Protection Division presents a civil infrastructure protection proposal of regional and national significance — a comprehensive GIC and corrosion protection program for the 10 major Bay Area toll bridges, representing over $30 billion in replacement value, integrating ACS AEGIS dielectric protection with T.Y. Lin's unparalleled bridge engineering expertise.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Cummings, ACS respectfully requests a 60-minute briefing with your bridge en
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

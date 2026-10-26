@@ -78,7 +78,7 @@ All 20 WallOfWaterDay files listed:
 - **Mavis Interstitials:** 17 variants (beef not conflation)
 - **S-Bus Heartbeat Arc:** 60 → 156 → 60 BPM (complete cycle)
 - **Earth-Pulse Chords:** 0.8 → 17.6 → 0.8 Hz (complete cycle)
-- **Convoluted Paragraph:** Jason Brodsky / Robin Williams disclosure included
+- **Convoluted Paragraph:** [sender name withheld] / Robin Williams disclosure included
 
 ## Current Status
 

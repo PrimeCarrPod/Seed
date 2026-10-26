@@ -21,7 +21,7 @@ early-stage venture capital, supplemented by government grants including:
   supporting hybrid-electric propulsion technology development
 - **US Department of Energy**: Grants supporting battery technology
   development for aviation applications
-- **California Energy Commission**: Funding for electric aviation
+- **[location withheld] Energy Commission**: Funding for electric aviation
   infrastructure development
 
 Government grants provided non-dilutive capital for technology risk reduction,

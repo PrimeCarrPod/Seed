@@ -69,7 +69,7 @@ has reported that the demonstration:
   cell temperature within the optimal operating range across seasonal ambient
   conditions
 - Provided operational data that informed design improvements for the subsequent
-  California deployment and commercial product design
+  [location withheld] deployment and commercial product design
 - Established grid interconnection and dispatch procedures that serve as templates
   for future deployments
 

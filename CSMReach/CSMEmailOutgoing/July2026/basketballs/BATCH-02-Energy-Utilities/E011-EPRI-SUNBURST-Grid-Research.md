@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-02 | July 2026
 
 **TO:** EPRI — Program Manager Grid Resilience / SUNBURST GMD Program
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** SUNBURST dataset augmentation — physical-layer hardening specifications for GMD vulnerability research
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: Technical call with the SUNBURST program manager. We'll bring the mat
 
 You've been measuring the problem. We'd like to help you measure the solution.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

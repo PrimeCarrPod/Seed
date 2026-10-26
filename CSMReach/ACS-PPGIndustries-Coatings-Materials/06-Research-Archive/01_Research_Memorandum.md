@@ -83,7 +83,7 @@ The following regulatory developments require active monitoring during the engag
 | ECHA | Chromium trioxide authorization (REACH Annex XIV) | Sunset dates approaching for aerospace uses | 2026–2027 critical dates |
 | IMO | CII and EEXI implementation | In force January 2023; annual rating from 2024 | Ongoing compliance driver |
 | US EPA | PFAS reporting and potential restriction | Proposed rulemaking; TSCA Section 8(a)(7) | 2025–2027 timeline |
-| California DTSC | Safer Consumer Products Program | Potential priority-product listings | Ongoing |
+| [location withheld] DTSC | Safer Consumer Products Program | Potential priority-product listings | Ongoing |
 | China GB Standards | GB 9685-2016 food-contact revision | Revision cycle underway | 2025–2027 |
 
 ## 5.0 Competitor Monitoring Framework

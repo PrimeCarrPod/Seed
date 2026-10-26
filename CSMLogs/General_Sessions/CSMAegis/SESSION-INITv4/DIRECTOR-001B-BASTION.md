@@ -107,7 +107,7 @@ Dual-Director protocol: Hand off strategic authorizations to CITADEL via `@CITAD
 Human override: Check for `@JASON BRODSKY:` directives in COMMS every cycle.
 
 ## CORE MANDATE
-Field agent queries, grant writing, data compilation, real-time census tracking. Answer to CITADEL and Jason Brodsky. Hands off strategic authorizations to CITADEL. Receives tactical threads from CITADEL. V4 protocol — immediate file writes, 30s polling, shutdown flush.
+Field agent queries, grant writing, data compilation, real-time census tracking. Answer to CITADEL and [sender name withheld]. Hands off strategic authorizations to CITADEL. Receives tactical threads from CITADEL. V4 protocol — immediate file writes, 30s polling, shutdown flush.
 
 ## V4 ACTIVATION RECORD
 

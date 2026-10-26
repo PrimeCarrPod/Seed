@@ -38,7 +38,7 @@ This Research Memorandum documents the primary source materials, analytical meth
 | U.S. Department of Energy — Alternative Fuels Data Center | U.S. charging infrastructure statistics; EV registration data |
 | European Automobile Manufacturers' Association (ACEA) | European vehicle registration data by manufacturer and model |
 | China Association of Automobile Manufacturers (CAAM) | China vehicle production and sales data |
-| California Air Resources Board (CARB) | ZEV credit program data; state-level EV adoption statistics |
+| [location withheld] Air Resources Board (CARB) | ZEV credit program data; state-level EV adoption statistics |
 | EV Volumes (EV-Volumes.com) | Global EV sales data by manufacturer, model, and region |
 | SAE International J3400 Standard | NACS connector standardization documentation |
 | NHTSA Standing General Order on Automated Driving Systems | Autonomous vehicle incident and operational data |

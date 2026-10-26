@@ -134,7 +134,7 @@ Each ζ-zero γ is a worldline resonance frequency. RH (Re(ρ)=1/2) ⇔ bounded 
 7. **KEY_FINDINGS_EXECUTIVE_SUMMARY.md** — Executive summary
 8. **MASTER_TREE.md** — Complete navigation
 
-**Contact:** jasonbrodsky@hotmail.com | Data: PrimeBookOne.github.io | Code: TardigradiaTGPU/, landolil.engine/
+**Contact:** [email withheld] | Data: PrimeBookOne.github.io | Code: TardigradiaTGPU/, landolil.engine/
 
 ---
 

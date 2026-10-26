@@ -7,8 +7,8 @@
 **Prepared for:**
 
 **T.Y. LIN INTERNATIONAL**
-345 California Street, Suite 2300
-San Francisco, California 94104
+345 [location withheld] Street, Suite 2300
+[location withheld] 94104
 United States of America
 
 ---

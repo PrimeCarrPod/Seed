@@ -2,7 +2,7 @@
 ## Ultra-Research for 8 Grant Proposals (Arithmetic Physics Campaign)
 
 **Prepared:** 2026-09-03  
-**For:** Jason Isaac Brodsky (jasonbrodsky@hotmail.com)  
+**For:** [sender name withheld] ([email withheld])  
 **Framework:** Arithmetic Physics — Deriving Physical Law from Prime Numbers
 
 ---
@@ -19,8 +19,8 @@ All 8 grant proposal drafts have been created and placed in the Hotmail Drafts f
 | 4 | Simons Collab MPS | Simons Award Manager (SAM) | Oct 29, 2026 (LOI) | 3-page LOI + biosketches via SAM |
 | 5 | Simons Targeted | Simons Award Manager (SAM) | Rolling | 2-page LOI + 1-page budget + biosketches |
 | 6 | Breakthrough Prize | Online nominations | Jul 17, 2026 (2027 prize) | Online form + 10 citations + letter |
-| 7 | Clay Institute | Email (president@claymath.org) | Oct 15 annually | Letter + CV + pubs + 2 references |
-| 8 | Perimeter Institute | Email (visitorservices@perimeterinstitute.ca) | 6 months before visit | CV + pubs + research statement |
+| 7 | Clay Institute | Email ([email-4a413d06fc2b]) | Oct 15 annually | Letter + CV + pubs + 2 references |
+| 8 | Perimeter Institute | Email ([email-318b0a8766bd]) | 6 months before visit | CV + pubs + research statement |
 
 ---
 
@@ -102,7 +102,7 @@ All 8 grant proposal drafts have been created and placed in the Hotmail Drafts f
 ### Special Requirements
 - **Co-PI Required:** University-affiliated physicist (NSF eligibility)
 - **New PI Consultation:** Strongly encouraged to contact program officer
-- **Program Officer:** Keith R. Dienes (EPP-T@nsf.gov, 703-292-5314)
+- **Program Officer:** Keith R. Dienes ([email-a7a06d589176], [phone withheld])
 
 ---
 
@@ -222,7 +222,7 @@ All 8 grant proposal drafts have been created and placed in the Hotmail Drafts f
 ## 7. CLAY MATHEMATICS INSTITUTE
 
 ### Submission System
-- **Platform:** Email to president@claymath.org (cc admin@claymath.org)
+- **Platform:** Email to [email-4a413d06fc2b] (cc [email-3d478ed9a4c1])
 - **Deadline:** October 15 annually
 - **Format:** Email with PDF attachments
 
@@ -248,7 +248,7 @@ All 8 grant proposal drafts have been created and placed in the Hotmail Drafts f
 ## 8. PERIMETER INSTITUTE VISITING SCIENTIST PROGRAM
 
 ### Submission System
-- **Platform:** Email to visitorservices@perimeterinstitute.ca
+- **Platform:** Email to [email-318b0a8766bd]
 - **Deadline:** Rolling, but apply ≥6 months before visit
 - **Reviews:** January, April, July, October
 
@@ -263,7 +263,7 @@ All 8 grant proposal drafts have been created and placed in the Hotmail Drafts f
 ### Attachment Policy
 - **All PDFs** via email
 - **No strict page limits** but concise
-- **Contact:** VisitorServices@perimeterinstitute.ca for questions
+- **Contact:** [email-318b0a8766bd] for questions
 
 ### Special Notes
 - **Sabbatical leave:** Typically requires leave from home institution
@@ -315,13 +315,13 @@ All 8 grant proposal drafts have been created and placed in the Hotmail Drafts f
 
 | Funder | Contact | Email/Phone |
 |--------|---------|-------------|
-| FQXi | Grants Team | grants@fqxi.org |
-| NSF EPP-T | Keith Dienes | EPP-T@nsf.gov, 703-292-5314 |
-| NSF ANT | Program Officers | ANT@nsf.gov |
-| Simons MPS | MPS Team | mps@simonsfoundation.org |
+| FQXi | Grants Team | [email-a11cd23027f2] |
+| NSF EPP-T | Keith Dienes | [email-a7a06d589176], [phone withheld] |
+| NSF ANT | Program Officers | [email-da27e04e6c12] |
+| Simons MPS | MPS Team | [email-7a39b2ff28a9] |
 | Breakthrough Prize | Nominations | breakthroughprize.org/Nominations |
-| Clay Institute | President | president@claymath.org |
-| Perimeter Institute | Visitor Services | visitorservices@perimeterinstitute.ca |
+| Clay Institute | President | [email-4a413d06fc2b] |
+| Perimeter Institute | Visitor Services | [email-318b0a8766bd] |
 
 ---
 

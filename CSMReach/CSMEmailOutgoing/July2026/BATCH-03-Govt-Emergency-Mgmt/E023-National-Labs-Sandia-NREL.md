@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** Sandia National Laboratories — Electromagnetic Effects Research / NREL Materials Science / DOE National Lab Technology Transfer Offices
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** UHTC ceramics and MXene EMI materials — research partnership with national laboratory infrastructure
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: Contact the Technology Transfer Office at Sandia, NREL, or your prefe
 
 You have the world's best test equipment. We have materials that deserve to be tested on it.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

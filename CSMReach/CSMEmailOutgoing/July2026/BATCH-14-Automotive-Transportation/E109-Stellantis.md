@@ -66,7 +66,7 @@ Stellantis operates the most complex brand portfolio in the automotive industry:
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

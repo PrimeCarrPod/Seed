@@ -23,7 +23,7 @@ Within this landscape, data center cooling infrastructure accounts for approxima
 
 ### 1.2 Apple Data Center Footprint
 
-Apple operates and is expanding data center facilities across five states within the continental United States: North Carolina (Maiden), Nevada (Reno), Oregon (Prineville), California (Newark), and Iowa (Waukee). Additional international facilities serve European and Asia-Pacific user bases. The aggregate designed capacity across the United States fleet exceeds 400 MW of critical IT load, with expansion plans under active development addressing projected demand from Apple Intelligence inference workloads, iCloud services, and internal computational requirements.
+Apple operates and is expanding data center facilities across five states within the continental United States: North Carolina (Maiden), Nevada (Reno), Oregon (Prineville), [location withheld] (Newark), and Iowa (Waukee). Additional international facilities serve European and Asia-Pacific user bases. The aggregate designed capacity across the United States fleet exceeds 400 MW of critical IT load, with expansion plans under active development addressing projected demand from Apple Intelligence inference workloads, iCloud services, and internal computational requirements.
 
 ### 1.3 Thermal Density Escalation
 
@@ -33,7 +33,7 @@ Conventional air-based cooling architectures — including hot-aisle/cold-aisle 
 
 ### 1.4 Regulatory and Sustainability Drivers
 
-The United States Securities and Exchange Commission (SEC) climate disclosure rules, the European Union Corporate Sustainability Reporting Directive (CSRD), and California's climate accountability legislation establish mandatory reporting frameworks for Scope 1, Scope 2, and material Scope 3 greenhouse gas emissions. Data center energy consumption — and the associated cooling energy — falls prominently within Scope 2 (purchased electricity) and increasingly within Scope 1 where on-site generation is deployed. Apple's public commitment to carbon neutrality across its entire value chain by 2030 (Apple 2030) necessitates transformative efficiency improvements in data center thermal management.
+The United States Securities and Exchange Commission (SEC) climate disclosure rules, the European Union Corporate Sustainability Reporting Directive (CSRD), and [location withheld]'s climate accountability legislation establish mandatory reporting frameworks for Scope 1, Scope 2, and material Scope 3 greenhouse gas emissions. Data center energy consumption — and the associated cooling energy — falls prominently within Scope 2 (purchased electricity) and increasingly within Scope 1 where on-site generation is deployed. Apple's public commitment to carbon neutrality across its entire value chain by 2030 (Apple 2030) necessitates transformative efficiency improvements in data center thermal management.
 
 ---
 

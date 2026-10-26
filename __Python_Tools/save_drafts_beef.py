@@ -1,11 +1,22 @@
 #!/usr/bin/env python3
 import os, sys, json, urllib.request, urllib.parse, base64
+from secure_token import load_access_token
 
-ws = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_b5a7d01d-ebef-4a90-bc4b-206ab5177645'
+ws = os.environ.get("CSM_WORKSPACE", os.getcwd())
+_RECIPIENTS = [x.strip() for x in os.environ.get("CSM_RECIPIENTS", "").split(",") if x.strip()]
+_recipient_index = 0
+
+def _next_recipient():
+    global _recipient_index
+    if _recipient_index >= len(_RECIPIENTS):
+        raise SystemExit("ERROR: set CSM_RECIPIENTS to a comma-separated list of recipient addresses")
+    value = _RECIPIENTS[_recipient_index]
+    _recipient_index += 1
+    return value
+
 
 # Load token
-with open(os.path.join(ws, 'hotmail_token.json')) as f:
-    token = json.load(f)
+token = {"access_token": load_access_token(os.path.join(ws, "hotmail_token.json"))}
 
 # Load flagship article for attachment
 with open(os.path.join(ws, 'CSM_WORK_IN_PROGRESS/SubAtom_WIP/FLAGSHIP_Alpha_From_Primes.md')) as f:
@@ -64,7 +75,7 @@ The primes have been waiting for us. For millennia, they have sat in the sequenc
 # Define emails with full beef
 emails = [
     {
-        'to': 'naturesubmissions@nature.com',
+        'to': _next_recipient(),
         'subject': 'Submission: First-Principles Derivation of the Fine Structure Constant From Prime Number Theory',
         'body': f"""Dear Editor,
 
@@ -89,8 +100,8 @@ We confirm this work is original, not under consideration elsewhere, and all aut
 We look forward to your response.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Author Conducier
 
 ---
@@ -98,7 +109,7 @@ ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'prl@aps.org',
+        'to': _next_recipient(),
         'subject': 'Submission: α⁻¹ = 2π/C₂ — Derivation of the Fine Structure Constant From Twin Prime Statistics',
         'body': f"""Dear Editor,
 
@@ -109,14 +120,14 @@ We submit our manuscript "α⁻¹ = 2π/C₂: Derivation of the Fine Structure C
 This result is of fundamental importance to physics and mathematics. We believe it will be of broad interest to the PRL readership.
 
 Sincerely,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'witten@ias.edu',
+        'to': _next_recipient(),
         'subject': 'Connection between prime gap statistics and the fine structure constant',
         'body': f"""Dear Professor Witten,
 
@@ -132,15 +143,15 @@ I believe this connects to your work on:
 I have prepared a manuscript and would greatly appreciate your feedback. Would you be willing to take a look?
 
 With great respect,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'tao@math.ucla.edu',
+        'to': _next_recipient(),
         'subject': 'Physical derivation of the fine structure constant from twin prime statistics',
         'body': f"""Dear Professor Tao,
 
@@ -153,14 +164,14 @@ This result has an intriguing implication: the observed value of α constitutes 
 I would be honored to have your feedback on the mathematical rigor of this derivation. Are there gaps in the proof that need to be addressed?
 
 Sincerely,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'nima@ias.edu',
+        'to': _next_recipient(),
         'subject': 'Prime gap amplitudes and the fine structure constant',
         'body': f"""Dear Professor Arkani-Hamed,
 
@@ -176,14 +187,14 @@ This suggests a deep connection between:
 I believe this could open a new direction in the study of amplitudes using number-theoretic methods. Would you be interested in discussing this?
 
 Best regards,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'zagier@mpim-bonn.mpg.de',
+        'to': _next_recipient(),
         'subject': 'Modular forms, prime gaps, and the fine structure constant',
         'body': f"""Dear Professor Zagier,
 
@@ -206,14 +217,14 @@ I believe this connects to your work on:
 I would greatly appreciate your feedback on the modular aspects of this work.
 
 With admiration,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'nobelcommittee@kva.se',
+        'to': _next_recipient(),
         'subject': 'Nomination Inquiry: Derivation of the Fine Structure Constant From Number Theory',
         'body': f"""Dear Nobel Committee for Physics,
 
@@ -230,15 +241,15 @@ I believe this work meets the Nobel criterion of "the most important discovery o
 Could you please advise on the nomination process and timeline?
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)
 """
     },
     {
-        'to': 'wolfram@wolfram.com',
+        'to': _next_recipient(),
         'subject': 'Prime gap physics and the fine structure constant',
         'body': f"""Dear Dr. Wolfram and colleagues,
 
@@ -254,7 +265,7 @@ Key connections to your work:
 I believe this could provide the "simple rule" that generates the Standard Model. Would you be interested in discussing?
 
 Best regards,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: FLAGSHIP_Alpha_From_Primes.pdf (attached)

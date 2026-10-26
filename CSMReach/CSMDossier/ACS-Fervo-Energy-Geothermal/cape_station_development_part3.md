@@ -42,7 +42,7 @@ The tax credit monetization — converting the tax credit into cash to fund proj
 
 Utah's state government has expressed support for geothermal development as an economic development opportunity, particularly in rural counties where geothermal resources are located and economic diversification is a priority. State-level support manifests in expedited permitting, workforce training programs, and infrastructure investment (roads, transmission) that reduces project costs.
 
-The California Public Utilities Commission has directed the state's investor-owned utilities to procure 1,000 MW of zero-emission, firm generation to replace the Diablo Canyon nuclear plant, which is scheduled to close by 2030. Geothermal power from Cape Station, delivered into CAISO via the Intermountain transmission corridor, could serve a portion of this procurement requirement, providing a potentially large and creditworthy offtake market.
+The [location withheld] Public Utilities Commission has directed the state's investor-owned utilities to procure 1,000 MW of zero-emission, firm generation to replace the Diablo Canyon nuclear plant, which is scheduled to close by 2030. Geothermal power from Cape Station, delivered into CAISO via the Intermountain transmission corridor, could serve a portion of this procurement requirement, providing a potentially large and creditworthy offtake market.
 
 ### Community Engagement
 
@@ -52,4 +52,4 @@ Fervo's community engagement strategy for Cape Station has not been publicly det
 
 ---
 
-_Source: CSM proprietary research, competitor public disclosures, IRA tax credit provisions, California PUC procurement orders, community engagement best practices._
+_Source: CSM proprietary research, competitor public disclosures, IRA tax credit provisions, [location withheld] PUC procurement orders, community engagement best practices._

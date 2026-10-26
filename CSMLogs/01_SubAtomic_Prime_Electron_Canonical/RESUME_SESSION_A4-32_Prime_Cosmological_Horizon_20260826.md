@@ -1,5 +1,5 @@
 # RESUME SESSION: A4-32 Prime Cosmological Horizon
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Date:** 2026-08-26  
 **Session:** Prime Cosmological Horizon — Article 32 of Article 4 Series  
 **Status:** ✅ COMPLETE  

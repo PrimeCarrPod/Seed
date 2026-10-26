@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, APPLE. GOOOOOOOD MORNING, Cupertino. GOOOOOOOD MORNING, Tim Cook and the executive leadership team. The ACS Infrastructure Protection Division presents a commercial proposal of unprecedented scope — a $3.5 to $5.0 billion comprehensive electromagnetic and geomagnetic disturbance protection program encompassing Apple's global infrastructure footprint and supply chain resilience architecture.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, APPLE. GOOOOOOOD MORNING, Cupertino. GOOOOOOOD MORNING, Tim Cook and the executive leadership team. The ACS Infrastructure Protection Division presents a commercial proposal of unprecedented scope — a $3.5 to $5.0 billion comprehensive electromagnetic and geomagnetic disturbance protection program encompassing Apple's global infrastructure footprint and supply chain resilience architecture.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Cook, ACS respectfully requests a 60-minute executive briefing with your inf
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

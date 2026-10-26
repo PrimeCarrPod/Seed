@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-05 | July 2026
 
 **TO:** DNV / ABS
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** DNV / ABS / Lloyd's Register — Classification societies
 
 ---
@@ -26,9 +26,9 @@ NEXT STEP: Briefing at CLIA events, SNAME technical meetings, AMPP Annual Confer
 
 You move people and materials. We want to make sure the Sun doesn't stop you.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

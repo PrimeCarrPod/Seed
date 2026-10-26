@@ -1,6 +1,6 @@
 # Session Log: Branch Merge and Repository Reorganization
 **Date:** 2026-09-09  
-**Author:** Jason Isaac Brodsky of California 1976 — Conducier  
+**Author:** [sender name withheld] of California 1976 — Conducier  
 **Session:** Branch sorting, root cleanup, directory structure updates
 
 ---

@@ -37,22 +37,22 @@ AUTH MODES (Phase 1):
        https://login.microsoftonline.com/ccac.edu/adminconsent?client_id=084a3e9f-a9f4-43f7-89f9-d229cf97853e
        After admin approves, all CCAC users can use this app.
     B) Register a dedicated app in the CCAC Azure AD tenant
-    C) Use the already-authenticated zirconia@aegisc.space account instead
-    D) Use jasonbrodsky@hotmail.com (personal account — no admin consent needed)
+    C) Use the already-authenticated [email withheld] account instead
+    D) Use [email withheld] (personal account — no admin consent needed)
 
-    For consumer/Outlook accounts (e.g. jasonbrodsky@hotmail.com):
+    For consumer/Outlook accounts (e.g. [email withheld]):
         Any of the above client IDs work fine via device code flow.
         No admin consent needed for personal Microsoft accounts.
 
     Usage examples:
         # Default client (Graph PowerShell), multi-tenant
-        python3 dual_starlight_express.py --live --account zirconia@aegisc.space
+        python3 dual_starlight_express.py --live --account [email withheld]
 
         # MCP server client, CCAC tenant (fails due to admin consent)
-        CSM_CLIENT_ID=084a3e9f-a9f4-43f7-89f9-d229cf97853e CSM_TENANT=ccac.edu python3 dual_starlight_express.py --live --account jason.brodsky@ccac.edu
+        CSM_CLIENT_ID=084a3e9f-a9f4-43f7-89f9-d229cf97853e CSM_TENANT=ccac.edu python3 dual_starlight_express.py --live --account [email withheld]
 
         # Hotmail personal account (works — no admin consent needed)
-        python3 dual_starlight_express.py --live --account jasonbrodsky@hotmail.com
+        python3 dual_starlight_express.py --live --account [email withheld]
 
 WHAT THIS SCRIPT DOES:
   Phase 0: SOPP Initialization — Williams, Baker Street, Zirconia loaded
@@ -77,7 +77,7 @@ LESSONS LEARNED (built into this script):
   L9: Old Lady checks paragraph beef (<800 chars = puny → inject)
   L10: Paradise Man expands intros 3-4x + adds outro
   L11: Bounces go to basketballs folder → find alternates → retry
-  L12: CC zirconia@aegisc.space on EVERY send for master record
+  L12: CC [email withheld] on EVERY send for master record
   L13: Post-campaign: clean inbox to dated archive folder
   L14: Session handoff files enable seamless agent transitions
    L15: Three independent GitHub verifications before declaring "done"
@@ -87,16 +87,16 @@ CAMPAIGN RULES (Session July 24, 2026):
    RULE #1 — NEVER AUTO-SEND:
    ═══════════════════════════════════════════════
    Under no circumstances shall any email be sent
-   without explicit Jason Brodsky approval. All
+   without explicit [sender name withheld] approval. All
    drafts shall remain in the Drafts folder until
    reviewed, approved, and explicitly dispatched by
-   Jason. This rule is encoded at every layer —
+   the account owner. This rule is encoded at every layer —
    the send function requires affirmative consent.
    Auto-send is a campaign integrity violation.
 
    RULE #2 — DRAFTS ONLY:
    All prepared emails are left in the Drafts folder
-   for Jason to inspect before sending. No email
+   for the account owner to inspect before sending. No email
    shall bypass the Drafts approval gate.
 
    RULE #3 — BOUNCE TRACKING:
@@ -107,6 +107,7 @@ CAMPAIGN RULES (Session July 24, 2026):
 
 import os, sys, time, json, argparse, subprocess, random, re, base64
 import urllib.request, urllib.parse
+from secure_token import load_token_data, save_token_data
 
 # ─── CONFIG ────────────────────────────────────────────
 CONFIG = {
@@ -115,9 +116,9 @@ CONFIG = {
     'client_id': os.environ.get('CSM_CLIENT_ID', '14d82eec-204b-4c2f-b7e8-296a70dab67e'),  # Default: Graph PowerShell; override via CSM_CLIENT_ID env
     'tenant': os.environ.get('CSM_TENANT', None),  # Set for school/org accounts (e.g. 'ccac.edu')
     'graph_base': 'https://graph.microsoft.com/v1.0',
-    'sender_hotmail': 'jasonbrodsky@hotmail.com',
-    'sender_zirconia': 'zirconia@aegisc.space',
-    'cc_address': 'zirconia@aegisc.space',
+    'sender_consumer': os.environ.get('CSM_FROM_ADDRESS', ''),
+    'sender_primary': os.environ.get('CSM_FROM_ADDRESS', ''),
+    'cc_address': os.environ.get('CSM_CC_ADDRESS', ''),
     'attachments_dir': None,  # Set after workspace
     'pdf_files': [
         'CSMEval11-COMPILED-Briefing-Packet.pdf',
@@ -170,24 +171,25 @@ def sopp_init():
 # ─── AUTH ──────────────────────────────────────────────
 def load_cached_token(account_name):
     """Try to load a cached token from disk."""
+    account_name = account_name or os.environ.get("CSM_ACCOUNT_EMAIL", "") or "default"
     token_file = os.path.join(CONFIG['scratch'], 'csm_token.json')
-    if 'hotmail' in account_name.lower() or 'jason' in account_name.lower():
+    if 'hotmail' in account_name.lower():
         token_file = os.path.join(CONFIG['scratch'], 'hotmail_token.json')
     if os.path.exists(token_file):
-        with open(token_file) as f:
-            try:
-                t = json.load(f)
-                if t.get('expires_on', 0) > time.time() + 60:
-                    return t
-            except:
-                pass
+        try:
+            t = load_token_data(token_file)
+            if t.get('expires_on', 0) > time.time() + 60:
+                return t
+        except Exception:
+            pass
     return None
 
-def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
+def device_code_auth(account_name=None, scopes=None):
     """
     Phase 1: Authenticate via device code flow.
     Returns token dict with access_token, expires_on.
     """
+    account_name = account_name or os.environ.get("CSM_ACCOUNT_EMAIL", "") or "default"
     if scopes is None:
         scopes = 'https://graph.microsoft.com/Mail.ReadWrite https://graph.microsoft.com/Mail.Send offline_access'
     
@@ -251,12 +253,10 @@ def device_code_auth(account_name='zirconia@aegisc.space', scopes=None):
             
             # Cache token
             token_file = os.path.join(CONFIG['scratch'], 'csm_token.json')
-            if 'hotmail' in account_name.lower() or 'jason' in account_name.lower():
+            if 'hotmail' in account_name.lower():
                 token_file = os.path.join(CONFIG['scratch'], 'hotmail_token.json')
             
-            os.makedirs(CONFIG['scratch'], exist_ok=True)
-            with open(token_file, 'w') as f:
-                json.dump(tr, f)
+            save_token_data(tr, token_file)
             
             CONFIG['token_cache'][account_name] = tr
             print(f'\n   ✅ AUTHENTICATED: {account_name} ({tr.get("expires_in")}s)')
@@ -498,7 +498,7 @@ def main():
     parser = argparse.ArgumentParser(description='Dual Starlight Express — Campaign Engine')
     parser.add_argument('--test', action='store_true', help='Send test to yourself')
     parser.add_argument('--live', action='store_true', help='Send to real recipients (requires auth)')
-    parser.add_argument('--account', default='zirconia@aegisc.space', help='Email account')
+    parser.add_argument('--account', default=os.environ.get('CSM_ACCOUNT_EMAIL', ''), help='Email account')
     parser.add_argument('--cleanup', action='store_true', help='Clean inbox to archive folder')
     
     args = parser.parse_args()

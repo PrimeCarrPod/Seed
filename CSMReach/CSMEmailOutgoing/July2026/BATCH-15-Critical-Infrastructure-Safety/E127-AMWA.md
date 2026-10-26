@@ -1,18 +1,18 @@
 # E127-AMWA: Association of Metropolitan Water Agencies
 
 **To:** info@amwa.net
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Large Municipal Water Utility Capital Budgets — GIC Hardening Integration
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All references to AMWA's membership, municipal water utility operations, and capital budgeting processes are based on publicly available information.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All references to AMWA's membership, municipal water utility operations, and capital budgeting processes are based on publicly available information.
 
 ---
 
 GOOOOOOOD MORNING, AMWA!
 
-Jason Brodsky at Aegis Cipher Space, writing from 221B Baker Street — and if there is one thing Sherlock Holmes understood, it is that large, complex systems with interdependent components are only as resilient as their most vulnerable node. For the metropolitan water agencies that AMWA represents — serving populations in the millions, operating treatment plants with capital values in the billions, managing distribution networks spanning hundreds of miles — the most vulnerable node may well be the electrical infrastructure that powers all of it.
+[sender name withheld] at Aegis Cipher Space, writing from 221B Baker Street — and if there is one thing Sherlock Holmes understood, it is that large, complex systems with interdependent components are only as resilient as their most vulnerable node. For the metropolitan water agencies that AMWA represents — serving populations in the millions, operating treatment plants with capital values in the billions, managing distribution networks spanning hundreds of miles — the most vulnerable node may well be the electrical infrastructure that powers all of it.
 
 AMWA's members are the largest municipal water utilities in the United States. You operate at a scale where capital planning horizons extend 20 to 30 years, where long-lead-time equipment procurement is routine, and where the consequences of extended service interruption are measured in public health emergencies, not just inconvenience. GMD/GIC hardening needs to be part of that capital planning conversation, and I am writing to provide the analytical foundation for making that case to your member agencies' boards, rate-setting commissions, and bond-rating analysts.
 
@@ -29,7 +29,7 @@ I would be pleased to present this analysis to AMWA's leadership, contribute to 
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

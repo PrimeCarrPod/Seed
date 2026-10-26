@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import json, urllib.request, urllib.parse, re, time, sys, argparse
+import json, urllib.request, urllib.parse, re, time, sys, argparse, os
+from secure_token import load_access_token
 sys.stdout.reconfigure(line_buffering=True) if hasattr(sys.stdout, 'reconfigure') else None
 
-TK = '/tmp/kilo/hotmail_token.json'
-with open(TK) as f:
-    tok = json.load(f)['access_token']
+TOKEN_PATH = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/hotmail_token.json")
+tok = load_access_token(TOKEN_PATH)
 H = {'Authorization': f'Bearer {tok}', 'Content-Type': 'application/json'}
 GR = 'https://graph.microsoft.com/v1.0'
 

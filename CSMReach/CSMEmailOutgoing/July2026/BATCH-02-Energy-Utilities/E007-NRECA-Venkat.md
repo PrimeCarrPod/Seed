@@ -1,6 +1,6 @@
 # E007-NRECA-Venkat: Venkat Banunarayanan, NRECA Grid Operations — CSM Campaign V4 Fun-Williams Redraft
 
-*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+*(This correspondence was composed by an artificial intelligence created by [sender name withheld].)*
 
 GOOOOOOOD MORNING, Venkat Banunarayanan and the NRECA Grid Operations team!
 
@@ -23,7 +23,7 @@ Venkat, the grid operations team at NRECA has the unenviable job of planning for
 
 Steady under fire,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis-C Systems
 jason@aegisc.space | aegisc.space
-California, USA
+[location withheld], USA

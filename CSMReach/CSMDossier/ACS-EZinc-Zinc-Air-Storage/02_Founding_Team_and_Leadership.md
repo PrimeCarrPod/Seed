@@ -6,7 +6,7 @@
 transition from research-stage technology development to commercial product delivery.
 Larsen brings experience in clean technology commercialization and has guided the
 company through multiple financing rounds, the Ontario grid demonstration project,
-and the California market entry strategy. Under his leadership, e-Zinc has
+and the [location withheld] market entry strategy. Under his leadership, e-Zinc has
 established strategic partnerships with utilities, project developers, and
 government agencies in both Canada and the United States.
 

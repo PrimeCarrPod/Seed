@@ -17,7 +17,7 @@ T.Y. Lin International
 TYLin Bridge Architecture Team
 
 345 California Street, Suite 2300
-San Francisco, California 94104
+[location withheld] 94104
 
 ---
 

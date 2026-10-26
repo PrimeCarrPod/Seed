@@ -52,20 +52,20 @@ Successfully created and deployed a complete grant campaign for the **Arithmetic
 ## EMAIL CAMPAIGN DEPLOYED
 
 ### Master Drafts (9-paragraph human-flow email)
-**Location:** Hotmail Drafts folder (jasonbrodsky@hotmail.com)
-**To:** landolil@hotmail.com
-**CC:** zirconia@aegisc.space, prime@carrpod.net + 3+ sister addresses each
+**Location:** Hotmail Drafts folder ([email withheld])
+**To:** [email-c5ad0f954b43]
+**CC:** [email withheld], [email-aa2e1c739f7b] + 3+ sister addresses each
 
 | # | Grant | To | Sister CC Addresses (3+) |
 |---|-------|-----|--------------------------|
-| 1 | Simons Collaboration MPS | landolil@hotmail.com | eroy@simonsfoundation.org, mfazzi@simonsfoundation.org, pcsupport@altum.com |
-| 2 | Breakthrough Prize | landolil@hotmail.com | office@breakthroughprize.org, media@breakthroughprize.org, jwootten@rubenstein.com |
-| 3 | NSF ANT | landolil@hotmail.com | asalerno@nsf.gov, mdouglas@nsf.gov, ewitt@nsf.gov |
-| 4 | Simons Targeted | landolil@hotmail.com | eroy@simonsfoundation.org, mfazzi@simonsfoundation.org, pcsupport@altum.com |
-| 5 | NSF EPP-T | landolil@hotmail.com | keith.dienes@nsf.gov, epp-theory@nsf.gov, epp@nsf.gov |
-| 6 | FQXi Zenith | landolil@hotmail.com | rajanna@fqxi.org, grants@fqxi.org, admin@fqxi.org |
-| 7 | Clay Institute | landolil@hotmail.com | president@claymath.org, admin@claymath.org, info@claymath.org |
-| 8 | Perimeter Institute | landolil@hotmail.com | visitorservices@perimeterinstitute.ca, outreach@perimeterinstitute.ca, info@perimeterinstitute.ca |
+| 1 | Simons Collaboration MPS | [email-c5ad0f954b43] | [email-ae39702fd951], [email-6c078b0e0fed], [email-deb353f66f06] |
+| 2 | Breakthrough Prize | [email-c5ad0f954b43] | [email-1e80d87cbb2f], [email-d1847939b11a], [email-9031e97da501] |
+| 3 | NSF ANT | [email-c5ad0f954b43] | [email-d05020c7dece], [email-637aed085ef6], [email-b8df9e042e5e] |
+| 4 | Simons Targeted | [email-c5ad0f954b43] | [email-ae39702fd951], [email-6c078b0e0fed], [email-deb353f66f06] |
+| 5 | NSF EPP-T | [email-c5ad0f954b43] | [email-6a3b083fb141], [email-81d53a2fdd74], [email-a384ac8c3699] |
+| 6 | FQXi Zenith | [email-c5ad0f954b43] | [email-a6585a11c61d], [email-a11cd23027f2], [email-43baacf3abcd] |
+| 7 | Clay Institute | [email-c5ad0f954b43] | [email-4a413d06fc2b], [email-3d478ed9a4c1], [email-b06b5395837d] |
+| 8 | Perimeter Institute | [email-c5ad0f954b43] | [email-318b0a8766bd], [email-d98c95d7a35b], [email-a51a83609a53] |
 
 ### Attachments per Draft
 - **Master drafts:** Proposal PDF + Exec Summary PDF + Master Tree PDF + SUBATOMIC PRIME ELECTRON CALDERA.txt
@@ -95,15 +95,15 @@ Successfully created and deployed a complete grant campaign for the **Arithmetic
 - **Simons Collab MPS:** SAM portal, 3-page LOI + biosketches, Oct 29, 2026 deadline
 - **Simons Targeted:** SAM portal, 2-page LOI + 1-page budget, rolling
 - **Breakthrough Prize:** Online nominations, Jul 17, 2026 deadline, no self-nomination
-- **Clay Institute:** Email to president@claymath.org, Oct 15 deadline
+- **Clay Institute:** Email to [email-4a413d06fc2b], Oct 15 deadline
 - **Perimeter Institute:** Email to visitorservices@, 6 months advance
 
 ### Sister Addresses Researched & Verified
 All from official foundation/NSF websites:
-- **Simons Foundation:** eroy@, mfazzi@, pcsupport@altum.com
-- **Breakthrough Prize:** office@, media@, jwootten@rubenstein.com
+- **Simons Foundation:** eroy@, mfazzi@, [email-deb353f66f06]
+- **Breakthrough Prize:** office@, media@, [email-9031e97da501]
 - **NSF:** asalerno@, mdouglas@, ewitt@ (ANT); keith.dienes@, epp-theory@ (EPP-T)
-- **FQXi:** rajanna@, grants@, admin@ (Last@fqxi.org format confirmed)
+- **FQXi:** rajanna@, grants@, admin@ ([email-ea4398923b06] format confirmed)
 - **Clay Institute:** president@, admin@, info@
 - **Perimeter Institute:** visitorservices@, outreach@, info@
 
@@ -113,7 +113,7 @@ All from official foundation/NSF websites:
 
 ```bash
 # Single draft
-./oldlady.sh --to email@example.com --subject "Subject" --body-file body.md --attach file.pdf
+./oldlady.sh --to [email-2a539d652026] --subject "Subject" --body-file body.md --attach file.pdf
 
 # Campaign management
 ./thebeef.sh init      # Initialize state
@@ -127,7 +127,7 @@ All from official foundation/NSF websites:
 ## NEXT STEPS
 
 1. **Review drafts** in Hotmail Drafts folder
-2. **Send** from jasonbrodsky@hotmail.com (or landolil@hotmail.com)
+2. **Send** from [email withheld] (or [email-c5ad0f954b43])
 3. **Track responses** and follow up per GRANT_SUBMISSION_RESEARCH.md deadlines
 4. **Secure Co-PIs** for NSF proposals (required for eligibility)
 5. **Identify nominator** for Breakthrough Prize (self-nomination prohibited)
@@ -138,13 +138,13 @@ All from official foundation/NSF websites:
 
 | Funder | Primary Contact | Email |
 |--------|----------------|-------|
-| FQXi | Grants Team / Rajanna | grants@fqxi.org / rajanna@fqxi.org |
-| NSF EPP-T | Keith Dienes | EPP-T@nsf.gov / keith.dienes@nsf.gov |
-| NSF ANT | Adriana Salerno / Matt Douglass | ANT@nsf.gov / asalerno@nsf.gov |
-| Simons MPS | Elizabeth Roy / Meghan Fazzi | mps@simonsfoundation.org / eroy@simonsfoundation.org |
-| Breakthrough Prize | Office / Media | office@breakthroughprize.org |
-| Clay Institute | President | president@claymath.org |
-| Perimeter Institute | Visitor Services | visitorservices@perimeterinstitute.ca |
+| FQXi | Grants Team / Rajanna | [email-a11cd23027f2] / [email-a6585a11c61d] |
+| NSF EPP-T | Keith Dienes | [email-a7a06d589176] / [email-6a3b083fb141] |
+| NSF ANT | Adriana Salerno / Matt Douglass | [email-da27e04e6c12] / [email-d05020c7dece] |
+| Simons MPS | Elizabeth Roy / Meghan Fazzi | [email-7a39b2ff28a9] / [email-ae39702fd951] |
+| Breakthrough Prize | Office / Media | [email-1e80d87cbb2f] |
+| Clay Institute | President | [email-4a413d06fc2b] |
+| Perimeter Institute | Visitor Services | [email-318b0a8766bd] |
 
 ---
 

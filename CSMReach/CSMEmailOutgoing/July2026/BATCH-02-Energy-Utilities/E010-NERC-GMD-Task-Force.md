@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-02 | July 2026
 
 **TO:** NERC GMD Task Force / Project 2013-03 Standards Development Team
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Physical-layer hardening data for the post-Gannon-Storm TPL-007/EOP-010 review cycle
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: Submission during the next TPL-007 public comment period, or direct b
 
 You write the standards. We provide the engineering that makes them achievable.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

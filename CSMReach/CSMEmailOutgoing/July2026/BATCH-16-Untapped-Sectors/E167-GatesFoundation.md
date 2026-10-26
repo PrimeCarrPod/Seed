@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, BILL & MELINDA GATES FOUNDATION. GOOOOOOOD MORNING, Global Development Division. GOOOOOOOD MORNING, to the $75 billion endowment that has transformed global health, agricultural development, and education — the most consequential philanthropic organization of the 21st century. The AEGIS Humanitarian Systems Division is reaching out to present three products that align directly with the Foundation's Global Development strategy areas: the N-Node neighborhood resilience hub ($28,000), the Carr-Library offline education tablet ($165), and the Share-Pod medical device power sharing unit ($195) — a complete community-scale infrastructure stack at the price point and scalability that the Foundation's grant-making model was designed to support.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, BILL & MELINDA GATES FOUNDATION. GOOOOOOOD MORNING, Global Development Division. GOOOOOOOD MORNING, to the $75 billion endowment that has transformed global health, agricultural development, and education — the most consequential philanthropic organization of the 21st century. The AEGIS Humanitarian Systems Division is reaching out to present three products that align directly with the Foundation's Global Development strategy areas: the N-Node neighborhood resilience hub ($28,000), the Carr-Library offline education tablet ($165), and the Share-Pod medical device power sharing unit ($195) — a complete community-scale infrastructure stack at the price point and scalability that the Foundation's grant-making model was designed to support.
 
 **PARAGRAPH 2 — THE LAST-MILE INFRASTRUCTURE PROBLEM**
 
@@ -45,11 +45,11 @@ Gates Foundation Global Development leadership, ACS respectfully requests a 60-m
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Humanitarian Systems Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

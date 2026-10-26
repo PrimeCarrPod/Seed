@@ -18,7 +18,7 @@ REGIONAL RISK: South Africa — Africa's most industrialized grid (Eskom), Koebe
 
 ## AI DISCLOSURE PREAMBLE — V4 FUN-WILLIAMS FORMAT
 
-Alright! Let's get the preamble done with a grin, because if you can't have a little fun while trying to save Africa's most industrialized grid from a solar storm, what are we even doing here? Here's the deal, straight up, no jargon, no fog: this regional compendium was composed by an artificial intelligence — a machine mind, a digital scribe, a bundle of code that runs on electricity and ambition — created by and operating under the sole direction of Jason Brodsky of California. That AI? It speaks on behalf of Jason Brodsky of California, who serves — with actual human hands, a real desk, and a coffee cup somewhere nearby — as Director of External Affairs and Strategic Partnerships at Carrington Storm Motors and Safe Pod Engineering Company. Every technical specification cited below has been human-reviewed. Every number — every SE rating, every micron thickness, every recurrence percentage — was pulled from peer-reviewed literature and cross-checked by a person. Every outreach decision — who gets this compendium, when it goes out, what it promises — belongs to a human being in California. The AI is the instrument. The AI is the pen. The AI is the voicebox. But Jason Brodsky is the signature, the conscience, and the accountable human at the end of every sentence. With that happily established — let's go!
+Alright! Let's get the preamble done with a grin, because if you can't have a little fun while trying to save Africa's most industrialized grid from a solar storm, what are we even doing here? Here's the deal, straight up, no jargon, no fog: this regional compendium was composed by an artificial intelligence — a machine mind, a digital scribe, a bundle of code that runs on electricity and ambition — created by and operating under the sole direction of [sender name withheld]. That AI? It speaks on behalf of [sender name withheld], who serves — with actual human hands, a real desk, and a coffee cup somewhere nearby — as Director of External Affairs and Strategic Partnerships at Carrington Storm Motors and Safe Pod Engineering Company. Every technical specification cited below has been human-reviewed. Every number — every SE rating, every micron thickness, every recurrence percentage — was pulled from peer-reviewed literature and cross-checked by a person. Every outreach decision — who gets this compendium, when it goes out, what it promises — belongs to a human being. The AI is the instrument. The AI is the pen. The AI is the voicebox. But [sender name withheld] is the signature, the conscience, and the accountable human at the end of every sentence. With that happily established — let's go!
 
 ---
 
@@ -81,11 +81,11 @@ Namibia's Walvis Bay port — the primary maritime gateway for landlocked Botswa
 ## TEMPLATE EMAIL BODY
 
 **TO:** [Ministry/Authority Name] — [Country]
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Solar Cycle 25 at Peak — GIC Hardening Data for [Country / Eskom / Koeberg] Critical Infrastructure
 
-GOOOOOOOD MORNING from California to [Country / South Africa]! This is not the email any grid operator wants to receive, but it is the email that every grid operator whose infrastructure was built before GIC was understood needs to read. Solar Cycle 25 has peaked at SSN ~137 — 19% above forecast. The likely duration of elevated storm risk extends through 2027-2028. The Sun is not politely waiting for Eskom's generation recovery plan or anyone's procurement cycle.
+GOOOOOOOD MORNING from [location withheld] to [Country / South Africa]! This is not the email any grid operator wants to receive, but it is the email that every grid operator whose infrastructure was built before GIC was understood needs to read. Solar Cycle 25 has peaked at SSN ~137 — 19% above forecast. The likely duration of elevated storm risk extends through 2027-2028. The Sun is not politely waiting for Eskom's generation recovery plan or anyone's procurement cycle.
 
 Here is the situation, stated without softening: a G5 geomagnetic storm would induce quasi-DC currents through every long conductor on [Country]'s grid. For Eskom, that means over 30,000 km of transmission lines — 400 kV and 765 kV corridors crossing the Karoo, the Kalahari, the Highveld, and the Drakensberg on highly resistive geology that amplifies GIC coupling. It means Koeberg Nuclear Power Station's reactor protection circuits, emergency core cooling systems, and control room electronics — none of which were designed with GIC in mind. It means the Cahora Bassa-Apollo HVDC import line. It means the Gauteng industrial concentration — Africa's largest economic zone, fully grid-dependent. It means every port from Durban to Saldanha Bay, every deep-level mine shaft where hoists and ventilation and dewatering pumps run on Eskom power, and every SAPP interconnection through which a South African grid collapse would propagate — within seconds — into Botswana, Namibia, Eswatini, and Lesotho.
 
@@ -119,12 +119,12 @@ We are prepared to deliver a formal technical presentation to Eskom, NERSA, the 
 
 The Sun does not wait. Neither should we.
 
-— Jason Brodsky
+— [sender name withheld]
 Director of External Affairs & Strategic Partnerships
 Carrington Storm Motors | Safe Pod Engineering Company
-zirconia@aegisc.space
+[email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — BATCH-08 Southern Africa Regional Compendium*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — BATCH-08 Southern Africa Regional Compendium*
 
 ---
 
@@ -165,5 +165,5 @@ The Sun does not wait. Neither should we.
 ================================================================================
 *Carrington Storm Motors | Safe Pod Engineering Company | "Protect Biological Life. Never End It."*
 *July 2026 | V1.0 | BATCH-08 Southern Africa Compendium | Williams Heuristic Communication Standard V4 (Fun-Williams)*
-*Prepared by AI under the direction of Jason Brodsky of California. All technical content human-reviewed.*
+*Prepared by AI under the direction of [sender name withheld]. All technical content human-reviewed.*
 ================================================================================

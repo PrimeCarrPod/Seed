@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-This Implementation Framework establishes a structured, phased approach to deploying comprehensive corrosion protection systems across the ten toll bridges of the San Francisco Bay Area. The program is designed to align with existing Bay Area Toll Authority (BATA) capital improvement cycles, leverage planned maintenance outages, and integrate with California Department of Transportation (Caltrans) inspection and regulatory requirements. The framework is anchored in the economic analysis presented in preceding dossier sections, which demonstrates that Thermal Spray Zinc (TSZ) duplex coating systems and Impressed Current Cathodic Protection (ICCP) deliver superior life-cycle cost outcomes compared to traditional paint-only approaches — a conclusion that is materially reinforced by Caltrans' 2025 lead exposure regulations, which have significantly increased the direct and compliance costs of conventional lead-based paint systems.
+This Implementation Framework establishes a structured, phased approach to deploying comprehensive corrosion protection systems across the ten toll bridges of the San Francisco Bay Area. The program is designed to align with existing Bay Area Toll Authority (BATA) capital improvement cycles, leverage planned maintenance outages, and integrate with [location withheld] Department of Transportation (Caltrans) inspection and regulatory requirements. The framework is anchored in the economic analysis presented in preceding dossier sections, which demonstrates that Thermal Spray Zinc (TSZ) duplex coating systems and Impressed Current Cathodic Protection (ICCP) deliver superior life-cycle cost outcomes compared to traditional paint-only approaches — a conclusion that is materially reinforced by Caltrans' 2025 lead exposure regulations, which have significantly increased the direct and compliance costs of conventional lead-based paint systems.
 
 ---
 
@@ -23,11 +23,11 @@ Establish the program baseline by consolidating all available condition data, de
 
 2. **Prioritization Matrix Development.** Construct a multi-factor prioritization model incorporating: NBIS condition ratings; corrosion rate trends; remaining service life projections under current maintenance regimes; proximity to programmed maintenance outages (to minimize traffic disruption costs); structural redundancy characteristics; and estimated user delay costs per day of lane closure. The model will produce a weighted priority score for each of the ten toll bridge structures and their major sub-components.
 
-3. **Stakeholder Alignment Workshop.** Convene a structured alignment workshop with Caltrans Division of Maintenance, Caltrans Division of Engineering Services (DES), BATA, the Metropolitan Transportation Commission (MTC), and the Federal Highway Administration (FHWA) California Division. The workshop will present the consolidated condition assessment, validate the prioritization methodology, and establish the governance framework for multi-agency coordination throughout program execution.
+3. **Stakeholder Alignment Workshop.** Convene a structured alignment workshop with Caltrans Division of Maintenance, Caltrans Division of Engineering Services (DES), BATA, the Metropolitan Transportation Commission (MTC), and the Federal Highway Administration (FHWA) [location withheld] Division. The workshop will present the consolidated condition assessment, validate the prioritization methodology, and establish the governance framework for multi-agency coordination throughout program execution.
 
 4. **Regulatory Framework Analysis.** Complete a detailed assessment of Caltrans' 2025 lead exposure regulations (Title 8, Section 1532.1 amendments) and their impact on conventional bridge painting operations. Document the compliance cost differential between traditional paint systems and TSZ duplex alternatives. Prepare a regulatory impact memorandum for inclusion in the final program charter.
 
-5. **Funding Pathway Identification.** Map all eligible funding sources including: BATA Toll Bridge Rehabilitation Reserves; FHWA Bridge Formula Program (BFP) allocations under the Infrastructure Investment and Jobs Act (IIJA); Bridge Investment Program (BIP) Large Bridge Project grants; California SB 1 State Transportation Improvement Program (STIP) funds; and potential public-private partnership (P3) structures under Caltrans' P3 authority.
+5. **Funding Pathway Identification.** Map all eligible funding sources including: BATA Toll Bridge Rehabilitation Reserves; FHWA Bridge Formula Program (BFP) allocations under the Infrastructure Investment and Jobs Act (IIJA); Bridge Investment Program (BIP) Large Bridge Project grants; [location withheld] SB 1 State Transportation Improvement Program (STIP) funds; and potential public-private partnership (P3) structures under Caltrans' P3 authority.
 
 ### Deliverables
 - Consolidated Bridge Fleet Condition Database
@@ -247,7 +247,7 @@ In 2025, Caltrans adopted amendments to Title 8, Section 1532.1 (Lead in Constru
 - **Full containment requirements** (Class 1A or 1B containments per SSPC Guide 6) for all lead paint removal, adding $12–$18 per square foot to surface preparation costs
 - **Continuous air monitoring** during all abrasive blasting operations
 - **Medical surveillance programs** for all workers with potential lead exposure
-- **Hazardous waste disposal** of lead-containing abrasive blast media and paint debris as California-regulated hazardous waste
+- **Hazardous waste disposal** of lead-containing abrasive blast media and paint debris as [location withheld]-regulated hazardous waste
 
 These regulatory requirements apply equally to the surface preparation required for TSZ duplex application. However, the critical economic distinction is that a TSZ duplex system eliminates the *next* two to three repainting cycles over a 50-to-75-year service life. The lead compliance cost, therefore, is incurred once — not repeatedly every 15–20 years as would be the case with a conventional paint-only strategy. This is the regulatory-economic mechanism by which the TSZ duplex approach transforms from a higher-first-cost alternative to the lower-life-cycle-cost solution.
 

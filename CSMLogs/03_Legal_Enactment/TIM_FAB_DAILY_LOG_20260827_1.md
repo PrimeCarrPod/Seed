@@ -2,7 +2,7 @@
 ## Week 1-2: Deployment Response & Fabrication Kickoff
 **Session:** CSM_CLPS_Phase2_TIM_Fab_Log_20260827  
 **Date:** August 27, 2026 (Day 0) → September 10, 2026 (Day 14)  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -198,4 +198,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Document: TIM_FAB_DAILY_LOG_20260827.md*
 *Branch: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

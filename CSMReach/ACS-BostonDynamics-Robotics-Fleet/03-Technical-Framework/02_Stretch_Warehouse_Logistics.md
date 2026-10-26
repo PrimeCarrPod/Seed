@@ -87,7 +87,7 @@ The global warehouse automation market is projected at $30B+ by 2027, with truck
 - Persistent warehouse labor shortages in North America and Western Europe.
 - E-commerce parcel volume growth (CAGR 8–12%).
 - Increasing parcel heterogeneity and dimensional complexity.
-- Regulatory pressure on warehouse working conditions (California AB 701, EU Platform Work Directive).
+- Regulatory pressure on warehouse working conditions ([location withheld] AB 701, EU Platform Work Directive).
 
 ## 4. Competitive Positioning
 

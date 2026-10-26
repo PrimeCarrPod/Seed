@@ -9,7 +9,7 @@
 
 T.Y. Lin International was founded in 1954 by Professor Tung-Yen Lin, widely recognized as the "Father of Prestressed Concrete" for his pioneering contributions to the theory and practice of prestressed concrete design. Professor Lin's seminal work fundamentally transformed structural engineering in the 20th century, enabling spans and structural efficiencies previously thought unattainable.
 
-Professor Lin earned his master's degree in civil engineering from the University of California, Berkeley, in 1933. He joined the UC Berkeley faculty in 1946 and served as a professor of civil engineering until his retirement from active teaching in 1976. During his three decades at Berkeley, he educated generations of structural engineers who would go on to design many of the world's most significant bridges and buildings.
+Professor Lin earned his master's degree in civil engineering from the University of [location withheld], Berkeley, in 1933. He joined the UC Berkeley faculty in 1946 and served as a professor of civil engineering until his retirement from active teaching in 1976. During his three decades at Berkeley, he educated generations of structural engineers who would go on to design many of the world's most significant bridges and buildings.
 
 In 1986, President Ronald Reagan awarded Professor Lin the National Medal of Science — the United States' highest honor for scientific achievement — in recognition of his contributions to structural engineering, particularly prestressed concrete theory and practice. He remains one of the very few civil engineers to have received this distinction.
 
@@ -19,7 +19,7 @@ Professor Lin's philosophy — that engineering should serve human needs through
 
 ## Corporate Structure and Global Reach
 
-T.Y. Lin International is headquartered in San Francisco, California — a location that has positioned the firm at the center of one of the world's most seismically active and bridge-intensive regions. The firm employs more than 3,000 engineers, technicians, and support professionals across offices in the Americas, Asia, and the Middle East.
+T.Y. Lin International is headquartered in [location withheld] — a location that has positioned the firm at the center of one of the world's most seismically active and bridge-intensive regions. The firm employs more than 3,000 engineers, technicians, and support professionals across offices in the Americas, Asia, and the Middle East.
 
 Annual revenue is estimated at approximately $470 million, with some industry analyses placing the figure above $950 million depending on the scope of consolidated reporting. The firm is a core operating company within the Sidara collaborative (formerly known as the Dar Group), a global network of specialized design and engineering firms with combined annual revenues exceeding $3.15 billion. This collaborative structure provides T.Y. Lin International with access to complementary expertise in architecture, planning, project management, and sustainability consulting, while preserving the firm's distinct engineering identity and client relationships.
 
@@ -43,7 +43,7 @@ Annual revenue is estimated at approximately $470 million, with some industry an
 
 ## Landmark Projects
 
-**San Francisco-Oakland Bay Bridge East Span (Engineer of Record).** T.Y. Lin International, in a joint venture with Moffatt & Nichol, served as Engineer of Record for the $6.5 billion replacement of the eastern span of the Bay Bridge — the largest public works project in California history and one of the most significant bridge projects completed in the United States in the past half-century. The project's centerpiece is the Self-Anchored Suspension (SAS) span, the world's longest bridge of its type, featuring a single 525-foot tower and a single main cable. The structure was designed to a 150-year service life with a 1,500-year return period seismic event. The East Span's completion in 2013 demonstrated the firm's capacity to deliver a project of extraordinary complexity under intense public scrutiny, in one of the most seismically demanding environments on earth.
+**San Francisco-Oakland Bay Bridge East Span (Engineer of Record).** T.Y. Lin International, in a joint venture with Moffatt & Nichol, served as Engineer of Record for the $6.5 billion replacement of the eastern span of the Bay Bridge — the largest public works project in [location withheld] history and one of the most significant bridge projects completed in the United States in the past half-century. The project's centerpiece is the Self-Anchored Suspension (SAS) span, the world's longest bridge of its type, featuring a single 525-foot tower and a single main cable. The structure was designed to a 150-year service life with a 1,500-year return period seismic event. The East Span's completion in 2013 demonstrated the firm's capacity to deliver a project of extraordinary complexity under intense public scrutiny, in one of the most seismically demanding environments on earth.
 
 **Hoover Dam Bypass (Mike O'Callaghan–Pat Tillman Memorial Bridge).** T.Y. Lin International served as the design lead for the bridge portion of this project, which carries U.S. Route 93 across the Colorado River 1,500 feet downstream of Hoover Dam. The 1,060-foot concrete arch main span is the longest concrete arch span in the Western Hemisphere. The project required solutions to extreme site constraints, including 900-foot-deep canyon geometry, ambient temperatures exceeding 48°C (118°F), and complex wind loading patterns through the canyon.
 
@@ -57,7 +57,7 @@ Annual revenue is estimated at approximately $470 million, with some industry an
 
 **Taiwan High Speed Rail — 25 Elevated Bridges.** T.Y. Lin International designed 25 elevated bridge structures for the Taiwan High Speed Rail project, which connects Taipei in the north to Kaohsiung in the south at operating speeds of 300 km/h (186 mph). The bridges were designed for seismic resilience in Taiwan's highly active tectonic environment, demonstrating the firm's capacity to deliver high-volume, standardized bridge designs with consistent quality under aggressive schedule constraints.
 
-**Moscone Convention Center (San Francisco, California).** Beyond bridges, T.Y. Lin International served as structural engineer for the expansion of San Francisco's Moscone Convention Center, a major civic facility spanning three city blocks. The project demonstrates the firm's capacity to deliver structural engineering at the intersection of architectural ambition and seismic performance requirements.
+**Moscone Convention Center ([location withheld]).** Beyond bridges, T.Y. Lin International served as structural engineer for the expansion of San Francisco's Moscone Convention Center, a major civic facility spanning three city blocks. The project demonstrates the firm's capacity to deliver structural engineering at the intersection of architectural ambition and seismic performance requirements.
 
 ---
 
@@ -69,7 +69,7 @@ T.Y. Lin International occupies a position that is uniquely suited to the delive
 
 **Second, unmatched corrosion protection and bridge preservation expertise.** The firm's decades of experience in bridge inspection, rehabilitation design, and construction engineering have built a deep technical capability in the assessment and remediation of structural deterioration. The firm has executed coating condition assessments, cathodic protection designs, and comprehensive rehabilitation programs for steel and concrete bridges in marine environments across the United States and internationally. This corrosion protection expertise is supported by advanced analytical capabilities in life-cycle cost modeling, finite element analysis of corrosion-damaged structures, and performance monitoring system design.
 
-**Third, a trusted relationship with the owner agencies.** T.Y. Lin International's multi-decade relationship with Caltrans, BATA, MTC, and the FHWA California Division provides the foundation of trust and technical credibility essential for a program of this scale and duration. The firm has demonstrated its capacity to work within Caltrans' design and construction standards, BATA's capital programming processes, and the FHWA's federal-aid project delivery requirements. This institutional relationship reduces program risk by ensuring that technical recommendations are grounded in an understanding of the owner's constraints, priorities, and decision-making processes.
+**Third, a trusted relationship with the owner agencies.** T.Y. Lin International's multi-decade relationship with Caltrans, BATA, MTC, and the FHWA [location withheld] Division provides the foundation of trust and technical credibility essential for a program of this scale and duration. The firm has demonstrated its capacity to work within Caltrans' design and construction standards, BATA's capital programming processes, and the FHWA's federal-aid project delivery requirements. This institutional relationship reduces program risk by ensuring that technical recommendations are grounded in an understanding of the owner's constraints, priorities, and decision-making processes.
 
 The Bridge Fleet Protection Program represents the next chapter in T.Y. Lin International's stewardship of the Bay Area's toll bridge infrastructure. The same engineering judgment, technical rigor, and commitment to long-term performance that delivered the East Span — designed to serve the region for 150 years — can now be applied to protecting the entire fleet for the century ahead.
 
@@ -96,7 +96,7 @@ T.Y. Lin International's engagement with the Bay Area toll bridge fleet extends 
 The firm's bridge practice is led by a cadre of engineers recognized nationally and internationally for contributions to bridge design, seismic engineering, and structural rehabilitation. Staff credentials include:
 
 - National Academy of Engineering members
-- SE (Structural Engineer) licensure in California, Washington, and multiple additional states
+- SE (Structural Engineer) licensure in [location withheld], Washington, and multiple additional states
 - NBIS-certified Bridge Inspection Team Leaders and Program Managers
 - AMPP/NACE-certified Coatings Inspectors (CIP Levels 1, 2, and 3)
 - NACE Cathodic Protection Specialists (CP4)
@@ -133,7 +133,7 @@ The Bridge Fleet Protection Program's emphasis on long-life protection systems i
 - American Council of Engineering Companies (ACEC) Engineering Excellence Awards (multiple projects)
 - International Federation for Structural Concrete (fib) Awards for Outstanding Concrete Structures
 - American Institute of Steel Construction (AISC) IDEAS² Awards
-- ENR California Regional Best Projects Awards
+- ENR [location withheld] Regional Best Projects Awards
 - Roads & Bridges Magazine Top 10 Bridge Projects (multiple selections)
 
 ---

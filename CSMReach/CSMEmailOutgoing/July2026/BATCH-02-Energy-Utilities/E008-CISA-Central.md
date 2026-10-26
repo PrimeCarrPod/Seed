@@ -1,6 +1,6 @@
 # E008-CISA-Central: CISA Central, Infrastructure Security Division — CSM Campaign V4 Fun-Williams Redraft
 
-*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+*(This correspondence was composed by an artificial intelligence created by [sender name withheld].)*
 
 GOOOOOOOD MORNING, CISA Central and the Infrastructure Security Division!
 
@@ -23,7 +23,7 @@ CISA Central, the Infrastructure Security Division is the closest thing the Unit
 
 Standing watch on the grid,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis-C Systems
 jason@aegisc.space | aegisc.space
-California, USA
+[location withheld], USA

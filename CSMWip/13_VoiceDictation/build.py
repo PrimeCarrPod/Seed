@@ -135,6 +135,9 @@ def package_apk():
     print("✓ APK packaged with DEX")
 
 def align_and_sign():
+    if not os.environ.get("ANDROID_KEYSTORE_PASS"):
+        raise SystemExit("ERROR: ANDROID_KEYSTORE_PASS is required for signing; set it in the environment.")
+    os.environ.setdefault("ANDROID_KEY_PASS", os.environ["ANDROID_KEYSTORE_PASS"])
     zipalign = BUILD_TOOLS / "zipalign"
     apksigner = BUILD_TOOLS / "apksigner"
     
@@ -142,8 +145,8 @@ def align_and_sign():
     
     run([str(apksigner), "sign",
          "--ks", str(KEYSTORE),
-         "--ks-pass", "pass:android",
-         "--key-pass", "pass:android",
+         "--ks-pass", "env:ANDROID_KEYSTORE_PASS",
+         "--key-pass", "env:ANDROID_KEY_PASS",
          str(APK_ALIGNED)])
     
     shutil.move(APK_ALIGNED, APK_FINAL)

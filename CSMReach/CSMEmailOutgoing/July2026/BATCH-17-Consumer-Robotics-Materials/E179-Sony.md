@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, SONY. GOOOOOOOD MORNING, Sony R&D. GOOOOOOOD MORNING, to the company that gave the world the Walkman, the PlayStation, the Trinitron, and the Alpha mirrorless camera — the consumer electronics company whose entire brand is built on delivering perfection in audio, visual, and gaming experiences. The AEGIS Consumer Electronics Shielding Division is reaching out to present a minimally-conductive electronics architecture for Sony's three core product lines — PlayStation, Alpha cameras, and Bravia televisions — using MXene-based EMI shielding that replaces every copper ground plane, every aluminum heat spreader, and every conductive chassis element with a dielectric alternative that performs identically under normal operation and survives indefinitely under geomagnetic assault.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, SONY. GOOOOOOOD MORNING, Sony R&D. GOOOOOOOD MORNING, to the company that gave the world the Walkman, the PlayStation, the Trinitron, and the Alpha mirrorless camera — the consumer electronics company whose entire brand is built on delivering perfection in audio, visual, and gaming experiences. The AEGIS Consumer Electronics Shielding Division is reaching out to present a minimally-conductive electronics architecture for Sony's three core product lines — PlayStation, Alpha cameras, and Bravia televisions — using MXene-based EMI shielding that replaces every copper ground plane, every aluminum heat spreader, and every conductive chassis element with a dielectric alternative that performs identically under normal operation and survives indefinitely under geomagnetic assault.
 
 **PARAGRAPH 2 — THE COPPER PROBLEM IN CONSUMER ELECTRONICS**
 
@@ -45,11 +45,11 @@ Sony R&D leadership, ACS respectfully requests a 90-minute technical briefing �
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Consumer Electronics Shielding Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

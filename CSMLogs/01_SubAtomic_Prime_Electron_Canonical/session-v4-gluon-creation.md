@@ -2,7 +2,7 @@
 **Session ID:** agent_local_20260813-202423 (continued)  
 **Date:** 2026-08-13 through 2026-08-17  
 **Source:** RTF log file (CSMLOGBouncev1.0.87kilo.ai.rtf)  
-**Creative Director:** Jason Brodsky  
+**Creative Director:** [sender name withheld]  
 
 ---
 

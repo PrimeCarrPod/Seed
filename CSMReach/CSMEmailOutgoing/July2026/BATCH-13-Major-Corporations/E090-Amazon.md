@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, AMAZON. GOOOOOOOD MORNING, AWS. GOOOOOOOD MORNING, Andrew Jassy and the board of directors. The ACS Infrastructure Protection Division is reaching out to Amazon Web Services with a commercial proposal of profound national significance — a $558.7 million comprehensive electromagnetic protection program for the cloud infrastructure that powers the global economy.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, AMAZON. GOOOOOOOD MORNING, AWS. GOOOOOOOD MORNING, Andrew Jassy and the board of directors. The ACS Infrastructure Protection Division is reaching out to Amazon Web Services with a commercial proposal of profound national significance — a $558.7 million comprehensive electromagnetic protection program for the cloud infrastructure that powers the global economy.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -35,7 +35,7 @@ Four PDF attachments accompany this communication, accessible via the ACS secure
 
 **PARAGRAPH 7 — AWS-SPECIFIC PERSONALIZATION**
 
-Amazon, your AWS division operates the most critical third-party infrastructure on Earth. When Netflix, the CIA, and every startup on Y Combinator all depend on the same us-east-1 transformers, the concentration of risk is staggering. Your 2025 sustainability report cited 100% renewable energy matching — but resilience against geomagnetic threats is the missing pillar. The AEGIS system is manufactured in California, aligns with your Climate Pledge Fund's investment thesis in grid modernization, and can be deployed without a single minute of data center downtime. ACS has already briefed elements within the Department of Energy's Grid Deployment Office on the national security implications of unprotected hyperscale cloud infrastructure — Amazon is the logical first mover.
+Amazon, your AWS division operates the most critical third-party infrastructure on Earth. When Netflix, the CIA, and every startup on Y Combinator all depend on the same us-east-1 transformers, the concentration of risk is staggering. Your 2025 sustainability report cited 100% renewable energy matching — but resilience against geomagnetic threats is the missing pillar. The AEGIS system is manufactured in [location withheld], aligns with your Climate Pledge Fund's investment thesis in grid modernization, and can be deployed without a single minute of data center downtime. ACS has already briefed elements within the Department of Energy's Grid Deployment Office on the national security implications of unprotected hyperscale cloud infrastructure — Amazon is the logical first mover.
 
 **PARAGRAPH 8 — CALL TO ACTION**
 
@@ -45,7 +45,7 @@ Mr. Jassy, the ACS Infrastructure Protection Division respectfully requests a 45
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

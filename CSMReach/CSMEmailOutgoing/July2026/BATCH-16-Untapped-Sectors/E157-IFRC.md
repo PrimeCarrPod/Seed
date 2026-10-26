@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, INTERNATIONAL FEDERATION OF RED CROSS AND RED CRESCENT SOCIETIES. GOOOOOOOD MORNING, IFRC Secretariat. GOOOOOOOD MORNING, to the 192 National Societies, 165,000 local branches, and 14 million volunteers who form the world's largest humanitarian network. The AEGIS Humanitarian Systems Division is reaching out to present three Testa Fleet products that integrate directly into IFRC's disaster response, health, and community resilience programming: the Testa Fleet rapid-response container system, the Share-Pod medical device power unit, and the Carr-Library education tablet.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, INTERNATIONAL FEDERATION OF RED CROSS AND RED CRESCENT SOCIETIES. GOOOOOOOD MORNING, IFRC Secretariat. GOOOOOOOD MORNING, to the 192 National Societies, 165,000 local branches, and 14 million volunteers who form the world's largest humanitarian network. The AEGIS Humanitarian Systems Division is reaching out to present three Testa Fleet products that integrate directly into IFRC's disaster response, health, and community resilience programming: the Testa Fleet rapid-response container system, the Share-Pod medical device power unit, and the Carr-Library education tablet.
 
 **PARAGRAPH 2 — THE IFRC DEPLOYMENT MODEL**
 
@@ -45,11 +45,11 @@ IFRC Secretariat leadership, ACS respectfully requests a 60-minute technical bri
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Humanitarian Systems Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

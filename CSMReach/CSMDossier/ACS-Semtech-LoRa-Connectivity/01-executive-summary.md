@@ -8,7 +8,7 @@ This dossier provides a comprehensive analysis of Semtech Corporation (Nasdaq: S
 
 | Field | Detail |
 |-------|--------|
-| Headquarters | Camarillo, California |
+| Headquarters | Camarillo, [location withheld] |
 | Founded | 1960 |
 | CEO | Hong Hou |
 | CFO | Mark Lin |

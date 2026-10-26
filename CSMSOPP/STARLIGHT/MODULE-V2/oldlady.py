@@ -9,7 +9,7 @@ CSMSOPP000004 · Starlight Courier Heuristic
 FORMAT ENFORCEMENT (v3.1 — KEYMAKER REVISION):
    Every campaign draft MUST follow the non-negotiable Williams format:
    
-   P1:  "{Name}, my name is Jason Brodsky. Carrington Storm Motors. We build
+   P1:  "{Name}, my name is [sender name withheld]. Carrington Storm Motors. We build
          physical hardening against Carrington-level CMEs. I have recruited
          Robin Williams Heuristics to help explain things, oh please do enjoy."
    
@@ -24,9 +24,9 @@ FORMAT ENFORCEMENT (v3.1 — KEYMAKER REVISION):
    P12: Williams beefy close with Carpe diem / NANU NANU summarization
    
    P13: "Thank You, This Engineering Masterpiece is Brought to You by
-         Jason Brodsky of California"
+         [sender name withheld]"
    
-   P14: Jason Brodsky signature block
+   P14: [sender name withheld] signature block
 
    UNIQUE SUBJECTS: Never identical. 12 unique subject patterns rotate.
    NAME CLEANING: Batch codes and prefixes removed by clean_recipient_name().
@@ -43,13 +43,14 @@ RULES:
      or closing summaries. Rotation system ensures diversity across batches.
 
 CAMPAIGN RULES:
-   RULE #1 — NEVER AUTO-SEND: All drafts stay in Drafts for Jason approval.
+   RULE #1 — NEVER AUTO-SEND: All drafts stay in Drafts for account owner approval.
    RULE #2 — DRAFTS ONLY: Leave prepared emails in Drafts folder.
    RULE #3 — BOUNCE TRACKING: Verify against bounce list before sending.
    RULE #4 — MASTER LIST: Cross-reference against Sent-To Master List.
 """
 
 import json, re, time, os, sys, random
+from secure_token import load_access_token
 import urllib.request, urllib.parse
 
 # ─── BEEF APPENDICES (not replacements) ────────────────
@@ -160,7 +161,7 @@ def clean_recipient_name(raw_name):
     n = re.sub(r'\s*[-\u2013\u2014]\s*', ', ', n)
     n = re.sub(r'\s+/', ' & ', n)
     if 'jason' in n.lower() or 'brodsky' in n.lower():
-        n = 'Jason'
+        n = 'the account owner'
     return n if n else 'Team'
 
 def unique_subject(company, sector, index):
@@ -197,11 +198,10 @@ def old_lady_beef_it(paragraph_text):
     return paragraph_text + beef + '<!--beefed-->'
 
 
-def process_all_drafts(token_path='/tmp/kilo/hotmail_token.json'):
+def process_all_drafts(token_path=None):
     """Run Old Lady on all drafts. Additive beef only."""
 
-    with open(token_path) as f:
-        tok = json.load(f)['access_token']
+    tok = load_access_token(token_path or os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/hotmail_token.json"))
     H = {'Authorization': f'Bearer {tok}', 'Content-Type': 'application/json'}
     GR = 'https://graph.microsoft.com/v1.0'
 
@@ -300,4 +300,4 @@ if __name__ == '__main__':
     print(f'   Inspected: {t2} | Beefed: {b2}\n')
 
     print(f'🎯 COMPLETE: Pass 1 beefed {b1}, Pass 2 beefed {b2} of {t1} total')
-    print(f'   RULE #1: All drafts remain in Drafts for Jason approval.')
+    print(f'   RULE #1: All drafts remain in Drafts for account owner approval.')

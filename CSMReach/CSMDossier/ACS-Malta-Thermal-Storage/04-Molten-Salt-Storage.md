@@ -2,7 +2,7 @@
 
 ## Molten Salt Selection
 
-Malta Inc's hot-side thermal energy storage uses a molten nitrate salt mixture as the heat transfer and storage fluid. Nitrate salt mixtures have been extensively used in concentrated solar power (CSP) plants since the 1980s, most notably in the Solar Two project (California, 1996–1999) and the Crescent Dunes Solar Energy Project (Nevada, 2015–2019), as well as in numerous parabolic trough CSP plants with thermal energy storage in Spain.
+Malta Inc's hot-side thermal energy storage uses a molten nitrate salt mixture as the heat transfer and storage fluid. Nitrate salt mixtures have been extensively used in concentrated solar power (CSP) plants since the 1980s, most notably in the Solar Two project ([location withheld], 1996–1999) and the Crescent Dunes Solar Energy Project (Nevada, 2015–2019), as well as in numerous parabolic trough CSP plants with thermal energy storage in Spain.
 
 ### Salt Chemistry
 

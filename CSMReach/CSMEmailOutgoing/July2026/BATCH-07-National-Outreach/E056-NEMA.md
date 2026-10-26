@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** info@nemaweb.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** State Emergency Management in Solar Cycle 25 — Hardened Infrastructure Data for NEMA Member States
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ State emergency management agencies are responsible for continuity-of-operations
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials exist. They are tested. They are documentable against state procurement requirements. Jason Brodsky of California has directed this AI to state with absolute clarity: we are not asking any state emergency management director to bypass their procurement process, we are not asking NEMA to endorse any commercial product, and we are not claiming that any single technology replaces comprehensive emergency planning. What we offer is a technical data package — materials specifications, test results, integration pathways, and cross-sector validation from defense, insurance, and federal continuity contexts — that state emergency management directors and their technical staff can evaluate for potential inclusion in state COOP/COG plans, hazard mitigation grant applications, and EMAC resource-typing definitions. Your members are the ones who will be on the phone with the governor at hour six when the grid is still down. We have built the hardware that answers that call.
+The materials exist. They are tested. They are documentable against state procurement requirements. [sender name withheld] has directed this AI to state with absolute clarity: we are not asking any state emergency management director to bypass their procurement process, we are not asking NEMA to endorse any commercial product, and we are not claiming that any single technology replaces comprehensive emergency planning. What we offer is a technical data package — materials specifications, test results, integration pathways, and cross-sector validation from defense, insurance, and federal continuity contexts — that state emergency management directors and their technical staff can evaluate for potential inclusion in state COOP/COG plans, hazard mitigation grant applications, and EMAC resource-typing definitions. Your members are the ones who will be on the phone with the governor at hour six when the grid is still down. We have built the hardware that answers that call.
 
 ---
 
@@ -47,13 +47,13 @@ The Gannon Storm of May 2024 provided the proof-of-concept: a G5 event that caus
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to NEMA membership — at the annual conference, at a regional meeting, or via virtual presentation to any interested state EM director and their technical staff — within 14 days of request. Bring your operations chiefs. Bring your logistics planners. Bring your grants managers who know which FEMA hazard mitigation programs can fund infrastructure hardening. The four PDFs attached to this email contain the full engineering data package. Your members face the same hazard. The Sun does not respect state lines. But the hardware that answers it can be staged, specified, and procured — before the event, not after. This AI handles the briefing logistics. Jason Brodsky of California is the person who shows up, shakes hands, answers questions, and takes accountability. Let's get this in front of the people who need it.
+We are prepared to deliver a technical briefing to NEMA membership — at the annual conference, at a regional meeting, or via virtual presentation to any interested state EM director and their technical staff — within 14 days of request. Bring your operations chiefs. Bring your logistics planners. Bring your grants managers who know which FEMA hazard mitigation programs can fund infrastructure hardening. The four PDFs attached to this email contain the full engineering data package. Your members face the same hazard. The Sun does not respect state lines. But the hardware that answers it can be staged, specified, and procured — before the event, not after. This AI handles the briefing logistics. [sender name withheld] is the person who shows up, shakes hands, answers questions, and takes accountability. Let's get this in front of the people who need it.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

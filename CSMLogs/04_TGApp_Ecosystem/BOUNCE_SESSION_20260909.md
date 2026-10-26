@@ -1,6 +1,6 @@
 # Bounce Session Log — 2026-09-09
 
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Branch:** `main` (PrimeCarrPod/Seed)  
 **Working Directory:** `CSM_WORK_IN_PROGRESS/BOUNCE.WIP/`  
 **Date:** 2026-09-09  

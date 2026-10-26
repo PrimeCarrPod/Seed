@@ -1,5 +1,5 @@
 # RESUME SESSION: EP-29 Prime Resonance Cascade — Sevenfold Propagation
-## Jason Isaac Brodsky of California 1976 Author Conducier
+## [sender name withheld] of California 1976 Author Conducier
 ## Date: 2026-09-09
 ## Session: agent_e41962e6-31f6-4d25-a0c3-11eb2065d3e1
 ## Parent: EP-28 (411 segments, 7x scaling complete)
@@ -24,7 +24,7 @@ Each segment: Native → Williams → El Segundo → Robbins → PRIME RESONANCE
 - 5 registers per segment (Native, Williams, El Segundo, Robbins, PRIME RESONANCE)
 - 21 agents deployed across registers
 - 7-fold verification matrix embedded
-- Author conducier: Jason Isaac Brodsky (California 1976)
+- Author conducier: [sender name withheld] (California 1976)
 
 ### HEARTBEAT
 Continuous. Power of Sixteen. Full throttle. 🚂

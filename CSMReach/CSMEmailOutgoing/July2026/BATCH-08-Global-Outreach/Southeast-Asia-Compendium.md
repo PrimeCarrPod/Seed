@@ -127,15 +127,15 @@ This is the defining vulnerability for Southeast Asia. The region is archipelagi
 
 ```
 TO: [COUNTRY] — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-FROM: Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-REPLY-TO: zirconia@aegisc.space
+FROM: [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+REPLY-TO: [email withheld]
 SUBJECT: Solar Cycle 25 is peaking — the Carrington-level hardening data [COUNTRY]'s infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to [COUNTRY]! The Sun doesn't care about borders — and Southeast Asia's archipelagic geography doesn't protect it from a solar superstorm. Here's the number you need: a Carrington-class CME would produce geomagnetic disturbances strong enough to shut down every GPS-dependent port operation in ASEAN on the same day. Every container crane. Every vessel navigation system. Every undersea cable landing station that depends on grid power for signal amplification. All at once. The Malacca Strait goes dark. The Singapore Strait goes dark. Your fishing fleets lose GPS. Your data centers lose clean power. And the Sun doesn't send a notice.
+GOOOOOOOD MORNING, from [location withheld] to [COUNTRY]! The Sun doesn't care about borders — and Southeast Asia's archipelagic geography doesn't protect it from a solar superstorm. Here's the number you need: a Carrington-class CME would produce geomagnetic disturbances strong enough to shut down every GPS-dependent port operation in ASEAN on the same day. Every container crane. Every vessel navigation system. Every undersea cable landing station that depends on grid power for signal amplification. All at once. The Malacca Strait goes dark. The Singapore Strait goes dark. Your fishing fleets lose GPS. Your data centers lose clean power. And the Sun doesn't send a notice.
 
-We are Carrington Storm Motors — a California-based engineering company that spent the last two years building the physical hardening layer. Aegis-C shielding (SE 148-165 dB at 1 kHz–10 GHz). BFRP non-conductive composites for substation equipment. Dielectric concrete foundations that don't couple GIC. MXene EMI suppression films lighter than paper. LoRa mesh communications that don't need cell towers. A full 9-part Compendium — attached.
+We are Carrington Storm Motors — a [location withheld]-based engineering company that spent the last two years building the physical hardening layer. Aegis-C shielding (SE 148-165 dB at 1 kHz–10 GHz). BFRP non-conductive composites for substation equipment. Dielectric concrete foundations that don't couple GIC. MXene EMI suppression films lighter than paper. LoRa mesh communications that don't need cell towers. A full 9-part Compendium — attached.
 
 Key facts for [COUNTRY]:
 
@@ -161,10 +161,10 @@ NEXT STEP: Review the Compendium. Forward to your energy ministry, grid operator
 
 The Sun rises everywhere. Hardening should too.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under V4 Fun-Williams Heuristic (CSMSOPP000001-MODULE-V4) + Baker Street Heuristic (CSMSOPP000003) | BATCH-08 Compilation | July 2026*
 ```
@@ -234,7 +234,7 @@ The Sun rises everywhere. Hardening should too.
 
 - **Heuristic Compliance**: All templates comply with CSMSOPP000001-MODULE-V4 (Fun-Williams) and CSMSOPP000003 (Baker Street).
 - **ASEAN Coordination**: Consider engagement via the ASEAN Centre for Energy (ACE) and ASEAN Coordinating Centre for Humanitarian Assistance (AHA Centre) for region-wide briefings.
-- **Language Versions**: Bahasa Indonesia, Bahasa Melayu, Thai, Vietnamese, Khmer, Lao, Burmese, Filipino, and Portuguese translations of the 9-part Compendium available as separate bundles via zirconia@aegisc.space.
+- **Language Versions**: Bahasa Indonesia, Bahasa Melayu, Thai, Vietnamese, Khmer, Lao, Burmese, Filipino, and Portuguese translations of the 9-part Compendium available as separate bundles via [email withheld].
 - **Briefing Pipeline**: Direct technical briefing requests routed to CSM External Affairs with ≤72-hour response.
 
 ---

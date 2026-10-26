@@ -19,8 +19,8 @@ In February 2025, Apple announced a $600 billion US investment commitment over f
 | AI server and device assembly | Multi-billion (Houston) | Texas |
 | Data center expansion | Multi-billion (NC, IA, OR, AZ, NV) | Multi-state |
 | Workforce development | Detroit Manufacturing Academy | Michigan |
-| Apple TV+ content production | Multi-billion | California, multi-state |
-| R&D and engineering | $34.5B annual (FY2025) | California, multi-state |
+| Apple TV+ content production | Multi-billion | [location withheld], multi-state |
+| R&D and engineering | $34.5B annual (FY2025) | [location withheld], multi-state |
 
 ### 1.2 Strategic Rationale
 
@@ -96,7 +96,7 @@ Beyond TSMC, Apple's US semiconductor supply chain development includes:
 
 - **Broadcom** (Colorado): Wireless connectivity, RF, FBAR filters
 - **Qorvo** (Texas, North Carolina, Florida): RF front-end modules
-- **Skyworks** (California, Massachusetts): RF and analog semiconductors
+- **Skyworks** ([location withheld], Massachusetts): RF and analog semiconductors
 - **Texas Instruments** (Texas): Power management, display drivers
 - **Micron** (Idaho, Virginia): Memory and storage (future capacity)
 - **Intel Foundry** (Arizona, Ohio): Potential future advanced logic partner

@@ -80,7 +80,7 @@ DOSSIER: ACS-DOS-2026-0020 | PRIORITY: CRITICAL | CITY: Hawthorne, CA
 COMPANY 8.7 — PACIFIC GAS AND ELECTRIC (PG&E Corporation)
 TO: Patricia Poppe, CEO — patricia.poppe@pge.com
 CC: Carolyn Burke, CFO — carolyn.burke@pge.com
-    Jason Glickman, EVP Engineering — jason.glickman@pge.com
+    the account owner Glickman, EVP Engineering — jason.glickman@pge.com
 SUBJECT: PG&E — Federal Infrastructure & Energy Partnership Inquiry — ACS-MC-2026-B807
 INTRO: PG&E is one of the largest US electric and gas utilities serving 16 million
 Californians. Oakland, CA HQ. Major grid modernization, undergrounding, battery storage
@@ -105,7 +105,7 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Charlotte, NC
 
 COMPANY 8.9 — COMCAST CORPORATION
 TO: Brian Roberts, Chairman & CEO — brian.roberts@comcast.com
-CC: Jason Armstrong, CFO — jason.armstrong@comcast.com
+CC: the account owner Armstrong, CFO — jason.armstrong@comcast.com
     Dave Watson, President & CEO Comcast Cable — dave.watson@comcast.com
 SUBJECT: Comcast — Federal Infrastructure & Connectivity Partnership Inquiry — ACS-MC-2026-B809
 INTRO: Comcast is the largest US broadband and cable provider with 32M+ broadband

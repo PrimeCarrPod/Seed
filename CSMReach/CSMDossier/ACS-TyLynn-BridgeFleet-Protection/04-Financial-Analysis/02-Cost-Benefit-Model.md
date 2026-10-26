@@ -14,7 +14,7 @@ The NPV model discounts all future costs and benefits to present value using the
 |---|---|---|
 | Analysis period | 100 years | Consistent with bridge design life for major structures; captures full long-life coating benefit |
 | Base discount rate | 5.0% | Midpoint of federal water infrastructure planning rate (3.125% for 2024) and OMB Circular A-94 real discount rate (7%) for public investment analysis |
-| Real cost escalation (labor) | 1.5% annually | Conservative relative to 20-year observed trend of 2.0-2.5% for specialized industrial coating labor in California |
+| Real cost escalation (labor) | 1.5% annually | Conservative relative to 20-year observed trend of 2.0-2.5% for specialized industrial coating labor in [location withheld] |
 | Real cost escalation (materials) | 2.0% annually | Reflects energy-intensive zinc and coating material production subject to carbon pricing and energy cost trends |
 | Traffic delay cost | $850 per lane-hour | Caltrans district-weighted average for urban freeway facilities with heavy truck mix |
 | Carbon cost | $51 per tonne CO₂-e | Current federal social cost of carbon per Interagency Working Group interim guidance, escalating at 2% real |
@@ -63,7 +63,7 @@ Deterministic NPV analysis understates decision quality when key input parameter
 | TSZ duplex service life | Lognormal | μ = 75 years, σ = 15 years | Norwegian, Japanese, and UK field studies |
 | Paint cost escalation | Triangular | Min 1.0%, Mode 2.0%, Max 4.0% | Caltrans historical bid data 2000-2024 |
 | TSZ cost premium (× paint) | Triangular | Min 1.3, Mode 1.6, Max 2.2 | Installation complexity and scale variability |
-| Corrosion rate acceleration | Uniform | 0 to 2.0% annually | Climate projections for coastal California |
+| Corrosion rate acceleration | Uniform | 0 to 2.0% annually | Climate projections for coastal [location withheld] |
 | Discount rate | Triangular | Min 2.5%, Mode 4.5%, Max 7.5% | Municipal bond rate range |
 
 ### Results Summary (10,000 Iterations)
@@ -103,7 +103,7 @@ Beyond direct traffic delay, lane closures on major freight corridors impose sup
 Each abrasive blast and repaint operation generates:
 
 - **Spent abrasive**: 3,000 to 8,000 tons per major bridge, depending on surface area and coating thickness, requiring transport and disposal as potentially hazardous waste
-- **Removed coating material**: 50 to 200 tons of lead-containing paint per bridge under older coating systems, requiring specialized handling under Resource Conservation and Recovery Act (RCRA) and California hazardous waste regulations
+- **Removed coating material**: 50 to 200 tons of lead-containing paint per bridge under older coating systems, requiring specialized handling under Resource Conservation and Recovery Act (RCRA) and [location withheld] hazardous waste regulations
 - **Air emissions**: Particulate matter, volatile organic compounds from solvent-based coatings, and zinc oxide from arc spray operations (the latter controlled through engineering controls and permitted under local air quality management district regulations)
 - **Containment material waste**: Tens of thousands of square meters of plastic sheeting, scaffolding components, and filtration media per project
 
@@ -130,7 +130,7 @@ The model recommends mandatory integration of environmental lifecycle assessment
 Accelerating atmospheric corrosion rates due to climate change represent an underappreciated risk to coating lifecycle economics. Projected changes for the San Francisco Bay region include:
 
 - **Increased time-of-wetness**: More frequent fog events and precipitation days expose steel to longer corrosion-active periods. Each 10 percent increase in time-of-wetness accelerates zinc consumption by approximately 5 to 8 percent
-- **Higher chloride deposition rates**: More frequent and intense Pacific storms increase atmospheric salt loading. Chloride deposition rates along the California coast are projected to increase 10 to 25 percent by 2100 under intermediate emissions scenarios
+- **Higher chloride deposition rates**: More frequent and intense Pacific storms increase atmospheric salt loading. Chloride deposition rates along the [location withheld] coast are projected to increase 10 to 25 percent by 2100 under intermediate emissions scenarios
 - **Temperature increase**: Each 1°C increase in ambient temperature accelerates corrosion kinetics by approximately 5 to 8 percent (Arrhenius relationship for aqueous corrosion), reducing both paint and zinc coating service life
 
 Sensitivity analysis within the model shows that a 20 percent acceleration in corrosion rate:

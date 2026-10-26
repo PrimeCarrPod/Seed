@@ -22,7 +22,7 @@
 |------|------|--------|
 | Chairman & CEO | Brian L. Roberts | Since 1990 (President), 2002 (CEO) |
 | President | Michael J. Cavanagh | Since October 2022 |
-| CFO | Jason S. Armstrong | Since 2023 |
+| CFO | the account owner S. Armstrong | Since 2023 |
 | Chairman, NBCUniversal | Cesar Conde (NBCU News Group) | Since 2020 |
 
 **Board of Directors:** 11 members, majority independent. Audit, Compensation, Governance & Nominating, and Finance Committees established pursuant to NASDAQ listing standards.
@@ -80,7 +80,7 @@
 - **FCC:** Broadband consumer labels, net neutrality, spectrum allocation, pole-attachment rules.
 - **DOJ Antitrust:** Vertical integration scrutiny; past TWC merger abandonment (2015) shaped subsequent M&A discipline.
 - **Spectrum:** CBRS 3.5 GHz PAL holdings; 600 MHz and AWS-3 spectrum via auction participation. Mid-band spectrum access remains a policy advocacy priority.
-- **Data Privacy:** CCPA/CPRA (California), GDPR (EU via Sky), and evolving federal privacy framework.
+- **Data Privacy:** CCPA/CPRA ([location withheld]), GDPR (EU via Sky), and evolving federal privacy framework.
 
 ## 6. Operational Scale Metrics
 

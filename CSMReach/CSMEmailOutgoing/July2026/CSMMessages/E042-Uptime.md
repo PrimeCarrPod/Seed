@@ -3,13 +3,13 @@
 ### CSMEmailOutgoing | BATCH-06 | July 2026 — V4 Fun-Williams
 
 **TO:** cbrown@uptimeinstitute.com
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Tier-Certifiable EMP Hardening and LoRa Mesh DC Monitoring Architecture — Carrington Storm Motors
 
 ---
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California, operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by Uptime Institute-accredited professional services firms and data center owner/operators in accordance with Tier Standard: Topology and Tier Standard: Operational Sustainability.
+This correspondence was composed by an artificial intelligence created by [sender name withheld], operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by Uptime Institute-accredited professional services firms and data center owner/operators in accordance with Tier Standard: Topology and Tier Standard: Operational Sustainability.
 
 ---
 
@@ -43,8 +43,8 @@ Chris, the Uptime Institute defined the language that the data center industry u
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director of External Affairs
 Carrington Storm Motors | Safe Pod Engineering Company
-zirconia@aegisc.space | aegisc.space
-San Francisco, California
+[email withheld] | aegisc.space
+[location withheld]

@@ -24219,9 +24219,9 @@ Google uses Android codename (`android-13`) internally while the standard folder
 ```
 The Google CDN returns 404 for many SDK versions. Trial-and-error required.
 
-### 5. curl Needs `-k` in Sandbox Environments
+### 5. TLS Verification in Sandbox Environments
 Sandbox containers often have self-signed certificates or proxy CA chains.
-**Fix:** Use `curl -k -sL` for all downloads.
+**Fix:** Configure `CURL_CA_BUNDLE` for private CAs; never disable TLS verification.
 
 ### 6. Java Source/Target Must Be 11
 Even with JDK 17 installed, compile with `-source 11 -target 11`.

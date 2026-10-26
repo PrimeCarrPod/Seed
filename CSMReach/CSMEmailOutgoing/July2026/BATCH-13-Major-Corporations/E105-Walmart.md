@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, WALMART. GOOOOOOOD MORNING, Doug McMillon and the Bentonville leadership. The ACS Infrastructure Protection Division presents a retail infrastructure protection proposal of national consequence — a $402.3 million comprehensive GIC and EMP hardening program for Walmart's 4,700+ U.S. stores and 150+ distribution centers, ensuring that America's largest private-sector employer and its essential retail supply chain survive the electromagnetic event that threatens to collapse the just-in-time distribution model.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, WALMART. GOOOOOOOD MORNING, Doug McMillon and the Bentonville leadership. The ACS Infrastructure Protection Division presents a retail infrastructure protection proposal of national consequence — a $402.3 million comprehensive GIC and EMP hardening program for Walmart's 4,700+ U.S. stores and 150+ distribution centers, ensuring that America's largest private-sector employer and its essential retail supply chain survive the electromagnetic event that threatens to collapse the just-in-time distribution model.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. McMillon, ACS respectfully requests a 60-minute briefing with your supply ch
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

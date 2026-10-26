@@ -54,10 +54,10 @@ Full repository scan for exposed: private keys, API tokens, passwords, keystore 
 
 | Severity | Item | Action |
 |----------|------|--------|
-| CRITICAL | GitHub PAT in CORTEX-0019 session log | Redacted — `GH_TOKEN=ghu_BLYr...` replaced with sanitized text |
+| CRITICAL | GitHub PAT in CORTEX-0019 session log | Redacted — `GH_TOKEN=<redacted-github-token>...` replaced with sanitized text |
 | CRITICAL | 6 keystore files committed in binary | Removed from git tracking; added `*.keystore` to `.gitignore` |
 | HIGH | Hardcoded keystore password in Python build scripts | Changed to `os.environ.get("ANDROID_KEYSTORE_PASS", "android")` in v6bv2, v6bv3, v7b |
-| HIGH | JWT dev secret in docker-compose.yml | Changed to `${JWT_SECRET:-change_me_in_production}` |
+| HIGH | JWT dev secret in docker-compose.yml | Changed to `${JWT_SECRET:?set JWT_SECRET in the environment}` |
 | MEDIUM | Marmalade SettingsScreen stores PAT in SharedPreferences | Documented — not changed (legacy code) |
 
 ### 3.3 Files Added

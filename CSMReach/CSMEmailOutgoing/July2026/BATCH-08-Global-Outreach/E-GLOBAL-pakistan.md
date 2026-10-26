@@ -3,13 +3,13 @@
 ### CSMEmailOutgoing | BATCH-08 | July 2026
 
 **TO:** Pakistan — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Solar Cycle 25 is peaking — the Carrington-level hardening data your country's infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to Pakistan! The Sun doesn't care about borders. A Carrington-level CME would induce geomagnetic currents through every long conductor on the planet — your power grid, your pipelines, your undersea cables, your rail systems. We've built the physical hardening layer to protect against it. Aegis-C shielding (SE 148-165 dB), BFRP composites, dielectric concrete, MXene EMI materials, LoRa mesh emergency communications. This email transmits the full 9-part CSM General Outreach Compendium — designed for international distribution, applicable to any nation's critical infrastructure.
+GOOOOOOOD MORNING, from [location withheld] to Pakistan! The Sun doesn't care about borders. A Carrington-level CME would induce geomagnetic currents through every long conductor on the planet — your power grid, your pipelines, your undersea cables, your rail systems. We've built the physical hardening layer to protect against it. Aegis-C shielding (SE 148-165 dB), BFRP composites, dielectric concrete, MXene EMI materials, LoRa mesh emergency communications. This email transmits the full 9-part CSM General Outreach Compendium — designed for international distribution, applicable to any nation's critical infrastructure.
 
 ---
 
@@ -26,9 +26,9 @@ NEXT STEP: Review the Compendium. Forward to your country's energy ministry, civ
 
 The Sun rises everywhere. Hardening should too.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

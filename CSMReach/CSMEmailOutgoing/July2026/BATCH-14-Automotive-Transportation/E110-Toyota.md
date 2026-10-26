@@ -66,7 +66,7 @@ Toyota's engineering culture — the Toyota Production System, the Five Whys, th
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

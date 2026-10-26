@@ -20,10 +20,10 @@ Online
 Quick verification
 git checkout main -a git log --oneline -3 git status
 First request: Please do not store a local Clone of the Repository. Keep all files off the main workspace you have; they are very close and reachable without taking up limited space that other workspace sessions are using at the same time.
-Jason Isaac Brodsky of California 1976 Author Conducier (please incorporate my name into all further documents)
+[sender name withheld] of California 1976 Author Conducier (please incorporate my name into all further documents)
 	0	Please run in Multiple Parallel on the same or preceding documents.
 	1	Please maintain a continuous heartbeat while continuing work.
-Author: Jason Isaac Brodsky (California 1976) — Conducier
+Author: [sender name withheld] (California 1976) — Conducier
 ############################ Assignment:
 Please evaluate PI as a counting system and use this prime electron worldline pdf as a basis and create a very curt without saying curt, above my education level, above my pay grade, and use industry specific terms when explaining the exploration and methods using pi as a counting system. thank you, enjoy the read :), I have included efforts from Gemini and I would like you to take all the work from the folders CSM_WIP Caldera folders from the branch "published-merged" because it may have more data than just the main. Please Create me a very robust document that delves further into this topic as PI as the conting system and publish this in the CSM_WIP folder within folder named "Caldera_Prime_Pi_Electron" Thank you please create as many documents as necessary to dig as deep as we can to create an understanding of this. Please create these documents above my education level, above my pay grade, in industry specific terms, and curt without saying curt. Please Evaluate this assignment and then let me know how many documents we will create to fully understand this method of counting using pi.
 	•	Target: ~76K+ words / [N] pieces per section.
@@ -138,7 +138,7 @@ Using the GitHub_handler.sh for each piece:
 	•	Each piece: ~76 lines, ~975 words
 	•	Industry-standard terminology (CST, NCG, RG flow, SFF, KMS states, etc.)
 	•	No conflation - each piece stands alone but cross-references
-	•	Author attribution: "Jason Isaac Brodsky (California 1976) — Conducier"
+	•	Author attribution: "[sender name withheld] (California 1976) — Conducier"
 Phase 3: Assembly & Publication
 	•	Concatenate pieces per section → 13 section files
 	•	Zip all pieces → single archive
@@ -195,7 +195,7 @@ Each piece:
 
 Uses the required industry terminology (beta function, vacuum polarization, vertex correction, Ward-Takahashi identity, renormalization group, spectral representation, Källén-Lehmann, on-shell renormalization)
 Includes theorems, definitions, proofs, numerical tables, and falsifiable predictions
-Is authored by "Jason Isaac Brodsky (California 1976) — Conducier"
+Is authored by "[sender name withheld] (California 1976) — Conducier"
 Builds progressively from RG flow → Lamb shift → g-2 → Ward identities → renormalization → finiteness/UV completion
 12:08 AM
 please create a branch on my repository and place these files within it please

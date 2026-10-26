@@ -5,9 +5,9 @@ STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
 ===============================================================================
 
 COMPANY 8.1 — BECHTEL CORPORATION
-TO: Brendan Bechtel, Chairman & CEO — brendan.bechtel@bechtel.com
-CC: Jack Futcher, President & COO — jfutcher@bechtel.com
-    Catherine Hunt Ryan, President M&T — chuntryan@bechtel.com
+TO: Brendan Bechtel, Chairman & CEO — [email-7096007f69ef]
+CC: Jack Futcher, President & COO — [email-c834c2955d94]
+    Catherine Hunt Ryan, President M&T — [email-202434121876]
 SUBJECT: Bechtel — Federal Infrastructure Partnership Inquiry — ACS-MC-2026-B801
 INTRO: Bechtel is one of the largest US engineering and construction firms, with major
 projects spanning energy (nuclear, LNG, renewables), infrastructure, defense, and
@@ -18,9 +18,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Reston, VA
 -------------------------------------------------------------------------------
 
 COMPANY 8.2 — LOCKHEED MARTIN CORPORATION
-TO: James Taiclet, Chairman, President & CEO — james.taiclet@lmco.com
-CC: Jay Malave, CFO — jay.malave@lmco.com
-    Tim Cahill, EVP Missiles & Fire Control — tim.cahill@lmco.com
+TO: James Taiclet, Chairman, President & CEO — [email-89e4e8dc4b19]
+CC: Jay Malave, CFO — [email-4b9d3bea6b8b]
+    Tim Cahill, EVP Missiles & Fire Control — [email-da3bc95967ee]
 SUBJECT: Lockheed Martin — ACS Research Partnership on Advanced Defense Manufacturing — ACS-MC-2026-B802
 INTRO: ACS dossier ACS-DOS-2026-0017 covers Lockheed Martin's defense manufacturing
 capabilities including F-35, hypersonics, directed energy, and space systems. Bethesda,
@@ -30,9 +30,9 @@ DOSSIER: ACS-DOS-2026-0017 | PRIORITY: CRITICAL | CITY: Bethesda, MD
 -------------------------------------------------------------------------------
 
 COMPANY 8.3 — NORTHROP GRUMMAN CORPORATION
-TO: Kathy Warden, Chair, CEO & President — kathy.warden@ngc.com
-CC: David Keffer, CFO — david.keffer@ngc.com
-    Tom Jones, President Aeronautics — tom.jones@ngc.com
+TO: Kathy Warden, Chair, CEO & President — [email-bdfd70542b54]
+CC: David Keffer, CFO — [email-0749bffb5f01]
+    Tom Jones, President Aeronautics — [email-0ebbe5be5d8f]
 SUBJECT: Northrop Grumman — ACS Research Partnership on Strategic Defense Systems — ACS-MC-2026-B803
 INTRO: ACS dossier ACS-DOS-2026-0018 covers Northrop Grumman's B-21 Raider, Sentinel
 GBSD, space systems, and hypersonics programs. Falls Church, VA HQ. 100K+ employees.
@@ -42,9 +42,9 @@ DOSSIER: ACS-DOS-2026-0018 | PRIORITY: CRITICAL | CITY: Falls Church, VA
 -------------------------------------------------------------------------------
 
 COMPANY 8.4 — L3HARRIS TECHNOLOGIES, INC.
-TO: Christopher Kubasik, Chair & CEO — chris.kubasik@l3harris.com
-CC: Ken Bedingfield, CFO — ken.bedingfield@l3harris.com
-    Ross Niebergall, President Aerojet Rocketdyne — ross.niebergall@l3harris.com
+TO: Christopher Kubasik, Chair & CEO — [email-6ae5348edf80]
+CC: Ken Bedingfield, CFO — [email-dc0db0c1fcb7]
+    Ross Niebergall, President Aerojet Rocketdyne — [email-c821a5e6ef4e]
 SUBJECT: L3Harris — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B804
 INTRO: L3Harris provides defense and communication systems including space sensors, ISR
 platforms, and solid rocket motors (via Aerojet Rocketdyne acquisition). Melbourne, FL
@@ -54,9 +54,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Melbourne, FL
 -------------------------------------------------------------------------------
 
 COMPANY 8.5 — THE BOEING COMPANY
-TO: Kelly Ortberg, President & CEO — kelly.ortberg@boeing.com
-CC: Brian West, CFO — brian.west@boeing.com
-    Ted Colbert, President BDS — ted.colbert@boeing.com
+TO: Kelly Ortberg, President & CEO — [email-17eb08c1c545]
+CC: Brian West, CFO — [email-972b64301a37]
+    Ted Colbert, President BDS — [email-c7671603e6c4]
 SUBJECT: Boeing — ACS Research Partnership on Aerospace Manufacturing — ACS-MC-2026-B805
 INTRO: ACS dossier ACS-DOS-2026-0019 covers Boeing's commercial aircraft production
 recovery, defense programs (F-15EX, KC-46, T-7A, MQ-25), and space systems (SLS, ISS,
@@ -66,8 +66,8 @@ DOSSIER: ACS-DOS-2026-0019 | PRIORITY: CRITICAL | CITY: Arlington, VA
 -------------------------------------------------------------------------------
 
 COMPANY 8.6 — SPACEX (Space Exploration Technologies Corp.)
-TO: Elon Musk, CEO — elon@spacex.com
-CC: Gwynne Shotwell, President & COO — gwynne.shotwell@spacex.com
+TO: Elon Musk, CEO — [email-ddf4559b142c]
+CC: Gwynne Shotwell, President & COO — [email-d12ef7df21bd]
 SUBJECT: SpaceX — ACS Research Partnership on Space Launch & Starlink — ACS-MC-2026-B806
 INTRO: ACS dossier ACS-DOS-2026-0020 covers SpaceX's Falcon 9/Heavy, Starship, Starlink
 constellation, and crewed spaceflight programs. Hawthorne, CA HQ with Starbase, TX.
@@ -78,9 +78,9 @@ DOSSIER: ACS-DOS-2026-0020 | PRIORITY: CRITICAL | CITY: Hawthorne, CA
 -------------------------------------------------------------------------------
 
 COMPANY 8.7 — PACIFIC GAS AND ELECTRIC (PG&E Corporation)
-TO: Patricia Poppe, CEO — patricia.poppe@pge.com
-CC: Carolyn Burke, CFO — carolyn.burke@pge.com
-    Jason Glickman, EVP Engineering — jason.glickman@pge.com
+TO: Patricia Poppe, CEO — [email-c5e946d296e9]
+CC: Carolyn Burke, CFO — [email-870d6d06c2f7]
+    Jason Glickman, EVP Engineering — [email-3a3cdf580b5a]
 SUBJECT: PG&E — Federal Infrastructure & Energy Partnership Inquiry — ACS-MC-2026-B807
 INTRO: PG&E is one of the largest US electric and gas utilities serving 16 million
 Californians. Oakland, CA HQ. Major grid modernization, undergrounding, battery storage
@@ -91,9 +91,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Oakland, CA
 -------------------------------------------------------------------------------
 
 COMPANY 8.8 — DUKE ENERGY CORPORATION
-TO: Lynn Good, Chair & CEO — lynn.good@duke-energy.com
-CC: Brian Savoy, CFO — brian.savoy@duke-energy.com
-    Harry Sideris, President — harry.sideris@duke-energy.com
+TO: Lynn Good, Chair & CEO — [email-621966cecfda]
+CC: Brian Savoy, CFO — [email-562c42d4bbf6]
+    Harry Sideris, President — [email-cb61357d123c]
 SUBJECT: Duke Energy — Federal Infrastructure & Energy Partnership Inquiry — ACS-MC-2026-B808
 INTRO: Duke Energy is a major US regulated utility serving 8.2 million customers across
 NC, SC, FL, IN, OH, and KY. Charlotte, NC HQ. Aggressive carbon reduction targets
@@ -104,9 +104,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Charlotte, NC
 -------------------------------------------------------------------------------
 
 COMPANY 8.9 — COMCAST CORPORATION
-TO: Brian Roberts, Chairman & CEO — brian.roberts@comcast.com
-CC: Jason Armstrong, CFO — jason.armstrong@comcast.com
-    Dave Watson, President & CEO Comcast Cable — dave.watson@comcast.com
+TO: Brian Roberts, Chairman & CEO — [email-e1e956824c56]
+CC: Jason Armstrong, CFO — [email-2e52ea5bffae]
+    Dave Watson, President & CEO Comcast Cable — [email-a2b4b6109c88]
 SUBJECT: Comcast — Federal Infrastructure & Connectivity Partnership Inquiry — ACS-MC-2026-B809
 INTRO: Comcast is the largest US broadband and cable provider with 32M+ broadband
 customers. Philadelphia, PA HQ. Major BEAD program participant for rural broadband
@@ -116,8 +116,8 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Philadelphia, PA
 -------------------------------------------------------------------------------
 
 COMPANY 8.10 — MACY'S, INC.
-TO: Tony Spring, CEO — tony.spring@macys.com
-CC: Adrian Mitchell, CFO — adrian.mitchell@macys.com
+TO: Tony Spring, CEO — [email-d335346d58a5]
+CC: Adrian Mitchell, CFO — [email-3f8d9a7328b6]
 SUBJECT: Macy's — Federal Domestic Manufacturing & Supply Chain Partnership Inquiry — ACS-MC-2026-B810
 INTRO: Macy's is a major US department store retailer with 500+ locations. New York, NY HQ.
 Seeking engagement on domestic apparel/textile manufacturing revitalization and retail
@@ -126,8 +126,8 @@ DOSSIER: NONE | PRIORITY: LOW | CITY: New York, NY
 -------------------------------------------------------------------------------
 
 COMPANY 8.11 — BEST BUY CO., INC.
-TO: Corie Barry, CEO — corie.barry@bestbuy.com
-CC: Matt Bilunas, CFO — matt.bilunas@bestbuy.com
+TO: Corie Barry, CEO — [email-fe1c0ad94998]
+CC: Matt Bilunas, CFO — [email-ac24e4b28014]
 SUBJECT: Best Buy — Federal Technology & Consumer Electronics Partnership Inquiry — ACS-MC-2026-B811
 INTRO: Best Buy is the largest US consumer electronics retailer with 1,000+ stores.
 Richfield, MN HQ. Seeking engagement on consumer technology standards, electronics
@@ -136,8 +136,8 @@ DOSSIER: NONE | PRIORITY: LOW | CITY: Richfield, MN
 -------------------------------------------------------------------------------
 
 COMPANY 8.12 — CARNIVAL CORPORATION & PLC
-TO: Josh Weinstein, President & CEO — josh.weinstein@carnival.com
-CC: David Bernstein, CFO — david.bernstein@carnival.com
+TO: Josh Weinstein, President & CEO — [email-406a05fa4a98]
+CC: David Bernstein, CFO — [email-42716a8f311c]
 SUBJECT: Carnival — Federal Maritime & Transportation Partnership Inquiry — ACS-MC-2026-B812
 INTRO: Carnival is the world's largest cruise operator with 90+ ships across nine brands.
 Miami, FL HQ / Southampton, UK. Fleet modernization with LNG-powered ships, shore power,
@@ -147,8 +147,8 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Miami, FL
 -------------------------------------------------------------------------------
 
 COMPANY 8.13 — A.P. MOLLER-MAERSK A/S
-TO: Vincent Clerc, CEO — vincent.clerc@maersk.com
-CC: Navneet Kapoor, CTO & CIO — navneet.kapoor@maersk.com
+TO: Vincent Clerc, CEO — [email-1b167a6053dc]
+CC: Navneet Kapoor, CTO & CIO — [email-c63870addbe0]
 SUBJECT: Maersk — US-Denmark Maritime & Logistics Partnership Inquiry — ACS-MC-2026-B813
 INTRO: Maersk is the world's second-largest container shipping line, pioneering methanol-
 powered vessels (Laura Maersk). Copenhagen, Denmark HQ with major US port operations.
@@ -158,9 +158,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Copenhagen, Denmark
 -------------------------------------------------------------------------------
 
 COMPANY 8.14 — PFIZER INC.
-TO: Albert Bourla, Chairman & CEO — albert.bourla@pfizer.com
-CC: David Denton, CFO — david.denton@pfizer.com
-    Mikael Dolsten, CSO — mikael.dolsten@pfizer.com
+TO: Albert Bourla, Chairman & CEO — [email-9d7bd1ee41c6]
+CC: David Denton, CFO — [email-77b7f1c4a311]
+    Mikael Dolsten, CSO — [email-e88603b7c553]
 SUBJECT: Pfizer — Federal Biomedical Manufacturing Partnership Inquiry — ACS-MC-2026-B814
 INTRO: Pfizer is a leading US pharmaceutical manufacturer with major facilities in
 Michigan (Kalamazoo), North Carolina, and Missouri. New York, NY HQ. Seeking engagement
@@ -170,9 +170,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: New York, NY
 -------------------------------------------------------------------------------
 
 COMPANY 8.15 — WALMART INC.
-TO: Doug McMillon, President & CEO — doug.mcmillon@walmart.com
-CC: John David Rainey, CFO — john.david.rainey@walmart.com
-    Kath McLay, President Walmart International — kath.mclay@walmart.com
+TO: Doug McMillon, President & CEO — [email-311a4b5e4299]
+CC: John David Rainey, CFO — [email-5b33e9d3174e]
+    Kath McLay, President Walmart International — [email-6566718c3da3]
 SUBJECT: Walmart — Federal Supply Chain & Energy Partnership Inquiry — ACS-MC-2026-B815
 INTRO: Walmart is the world's largest retailer and private employer (1.6M US employees).
 Bentonville, AR HQ. Major clean energy procurement (targeting 100% renewable by 2035),

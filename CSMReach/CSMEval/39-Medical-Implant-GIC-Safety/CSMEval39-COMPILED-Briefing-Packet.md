@@ -96,7 +96,7 @@ A metallic medical implant embedded in human tissue forms an unintentional anten
 
 3. **Corrosion-Free:** Unlike metallic implants, which undergo fretting corrosion at modular taper junctions (producing metal ions and particulate debris implicated in adverse local tissue reactions / ALTR), LBFRP-001 has no corrosion mechanism. There is no metal ion release.
 
-4. **Osseointegration:** The LBFRP-001 surface is grit-blasted with a bioresorbable calcium-phosphate / lonsdaleite slurry (50–150 μm roughness) that promotes osteoblast adhesion and hydroxyapatite deposition within 14 days in vitro (validated per ISO 23317 implant-material bioactivity testing at the University of California, San Francisco Orthopaedic Bioengineering Lab).
+4. **Osseointegration:** The LBFRP-001 surface is grit-blasted with a bioresorbable calcium-phosphate / lonsdaleite slurry (50–150 μm roughness) that promotes osteoblast adhesion and hydroxyapatite deposition within 14 days in vitro (validated per ISO 23317 implant-material bioactivity testing at the University of [location withheld], San Francisco Orthopaedic Bioengineering Lab).
 
 **Specific Implant Designs:**
 

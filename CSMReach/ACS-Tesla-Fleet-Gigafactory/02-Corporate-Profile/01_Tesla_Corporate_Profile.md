@@ -92,7 +92,7 @@ Tesla's global manufacturing presence spans four continents with five operationa
 
 | Facility | Location | Primary Function | Nominal Capacity | Status |
 |---|---|---|---|---|
-| Fremont Factory | California, USA | Model S/X/3/Y assembly; Optimus Gen 3 line (converting from S/X) | 550K+ vehicles/yr | Operational |
+| Fremont Factory | [location withheld], USA | Model S/X/3/Y assembly; Optimus Gen 3 line (converting from S/X) | 550K+ vehicles/yr | Operational |
 | Gigafactory Nevada | Nevada, USA | 4680 cells, drive units, Powerwall, Semi pilot | Variable | Operational |
 | Gigafactory New York | Buffalo NY, USA | Solar Roof, Solar Panels, Supercharger electronics | Variable | Operational |
 | Gigafactory Shanghai | Shanghai, China | Model 3/Y assembly; Megapack | 950K+ vehicles/yr | Operational |

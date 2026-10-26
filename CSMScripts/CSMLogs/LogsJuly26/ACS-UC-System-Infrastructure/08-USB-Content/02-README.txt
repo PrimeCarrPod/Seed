@@ -65,8 +65,8 @@ Office of Capital Programs and Energy Infrastructure
 University of California — Office of the President
 1111 Franklin Street, 12th Floor
 Oakland, California 94607-5200
-Email: capitalprograms@ucop.edu
-Phone: (510) 987-0600
+Email: [email-7a5e8a576be3]
+Phone: [phone withheld]
 
 ================================================================================
                          END OF README

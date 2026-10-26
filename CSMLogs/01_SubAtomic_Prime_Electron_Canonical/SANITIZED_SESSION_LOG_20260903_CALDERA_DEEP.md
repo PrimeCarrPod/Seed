@@ -1,6 +1,6 @@
 # SANITIZED SESSION LOG — 2026-09-03
 ## SubAtomic Prime Electron Caldera Resume & Deep Exploration Generation
-**Author:** Jason Isaac Brodsky, California 1976  
+**Author:** [sender name withheld], California 1976  
 **Agent:** kilo/oceanic-capybara-osv branch  
 **Workspace:** /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_e976437f-39d1-41c8-980b-413518d219c2  
 **Duration:** ~1 hour 52 minutes  
@@ -283,6 +283,6 @@ All deliverables created and saved. The complete SubAtomic Prime Electron Calder
 
 ---
 
-*Session logged by Kilo Agent on behalf of Jason Isaac Brodsky, California 1976*
+*Session logged by Kilo Agent on behalf of [sender name withheld], California 1976*
 *Arithmetic Physics — Deriving Physical Law from Prime Numbers*
 *The prime book is the worldline log. 3.67 billion steps — so far.*

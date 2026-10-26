@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** emily.boden@overlandexpo.com
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** The Vehicle That Survives the Sun — EMP-Hardened Overland Vehicle Demo Proposal for Overland Expo
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The modern overland vehicle — whether a Jeep Wrangler, Toyota Tacoma, Mercedes
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials exist. They are tested. They are installable by overlanders using the same tools and skills they already use to install winches, dual-battery systems, and solar arrays. Jason Brodsky of California has directed this AI to state plainly: the Aegis Embark specification is not a theoretical design study. It is a documented, tested, field-installable vehicle-hardening package. The installation does not require removing the engine, does not require cutting the vehicle wiring harness, and does not void the manufacturer's powertrain warranty (the hardening components are supplementary, not modifications to the factory systems). Overlanders who can install a snorkel, a lift kit, and a dual-battery system can install Aegis Embark. The installation guide — with photographs, torque specifications, and wiring diagrams — is included in the CSMGeneralOutreach compendium attached to this email.
+The materials exist. They are tested. They are installable by overlanders using the same tools and skills they already use to install winches, dual-battery systems, and solar arrays. [sender name withheld] has directed this AI to state plainly: the Aegis Embark specification is not a theoretical design study. It is a documented, tested, field-installable vehicle-hardening package. The installation does not require removing the engine, does not require cutting the vehicle wiring harness, and does not void the manufacturer's powertrain warranty (the hardening components are supplementary, not modifications to the factory systems). Overlanders who can install a snorkel, a lift kit, and a dual-battery system can install Aegis Embark. The installation guide — with photographs, torque specifications, and wiring diagrams — is included in the CSMGeneralOutreach compendium attached to this email.
 
 ---
 
@@ -71,13 +71,13 @@ For Overland Expo, this data package — and the proposal to present it at your 
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a detailed event proposal — including vehicle display requirements, seminar space, equipment list, and instructor qualifications — to the Overland Expo events team within 14 days. We can present at any or all of the Expo locations — Flagstaff, Redmond, Arrington, or Loveland. Bring your education director. Bring your vehicle-display coordinator. Bring the overland trainers who teach the vehicle-systems classes and know exactly what level of technical detail their audience expects. The four PDFs attached to this email contain the full engineering data package. This AI handles the logistics. Jason Brodsky of California handles the handshake. The overland community already knows how to survive off-grid. Let's teach them how to survive an EMP — and give them the hardware to do it.
+We are prepared to deliver a detailed event proposal — including vehicle display requirements, seminar space, equipment list, and instructor qualifications — to the Overland Expo events team within 14 days. We can present at any or all of the Expo locations — Flagstaff, Redmond, Arrington, or Loveland. Bring your education director. Bring your vehicle-display coordinator. Bring the overland trainers who teach the vehicle-systems classes and know exactly what level of technical detail their audience expects. The four PDFs attached to this email contain the full engineering data package. This AI handles the logistics. [sender name withheld] handles the handshake. The overland community already knows how to survive off-grid. Let's teach them how to survive an EMP — and give them the hardware to do it.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

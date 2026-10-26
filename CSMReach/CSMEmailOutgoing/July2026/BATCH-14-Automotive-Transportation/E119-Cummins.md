@@ -66,7 +66,7 @@ Cummins occupies a uniquely demanding position in C-SHIELD's addressable market:
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

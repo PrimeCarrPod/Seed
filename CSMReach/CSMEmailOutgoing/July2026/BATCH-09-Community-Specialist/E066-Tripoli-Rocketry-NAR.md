@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026
 
 **TO:** Tripoli Rocketry Association / NAR
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Tripoli Rocketry Association / NAR
 
 ---
@@ -25,9 +25,9 @@ NEXT STEP: Maker Faire, Overland Expo, Hamvention, regional star parties, univer
 
 You make things. We make things. Let's make things that survive the Sun.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

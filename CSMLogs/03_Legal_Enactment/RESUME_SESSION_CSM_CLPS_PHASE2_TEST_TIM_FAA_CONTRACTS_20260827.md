@@ -1,7 +1,7 @@
 # RESUME SESSION — CLPS Phase 2 Cascade: TEST→TIM→FAA→CONTRACTS Complete
 ## Session: CSM_CLPS_Phase2_Test_Tim_Faa_Contracts_20260827
 **Date:** August 27, 2026 (Session Start) → December 17, 2026 (Session End Simulated)  
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Branch:** session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2 → main  
 
@@ -173,4 +173,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 *Session Document: RESUME_SESSION_CSM_CLPS_PHASE2_TEST_TIM_FAA_CONTRACTS_20260827.md*
 *Branch: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
 *Pushed to: main (pending rate limit)*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, IBM. GOOOOOOOD MORNING, Arvind Krishna and the Armonk leadership. The ACS Infrastructure Protection Division presents a commercial proposal of profound technological consequence — the Quantum & AI Infrastructure Protection Program, a comprehensive GIC/EMP hardening initiative for IBM's $67.5 billion enterprise, protecting quantum computing facilities, the z17 mainframe manufacturing line, and the global IBM Cloud infrastructure against the electromagnetic threats that physics and solar science confirm are inevitable.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, IBM. GOOOOOOOD MORNING, Arvind Krishna and the Armonk leadership. The ACS Infrastructure Protection Division presents a commercial proposal of profound technological consequence — the Quantum & AI Infrastructure Protection Program, a comprehensive GIC/EMP hardening initiative for IBM's $67.5 billion enterprise, protecting quantum computing facilities, the z17 mainframe manufacturing line, and the global IBM Cloud infrastructure against the electromagnetic threats that physics and solar science confirm are inevitable.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Krishna, ACS respectfully requests a 90-minute executive and technical brief
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, DOE CRITICAL MINERALS & MATERIALS DIVISION. GOOOOOOOD MORNING, Department of Energy. GOOOOOOOD MORNING, to the team executing the U.S. Critical Materials Strategy — the interagency effort to secure domestic supply chains for the minerals and advanced materials that underpin energy independence, national security, and the clean energy transition. The AEGIS Materials Processing Division is reaching out to present three material platforms that directly support DOE's critical materials mission: the Aegis-Forge rare earth separator, the MXene (Ti₃C₂Tₓ) domestic supply chain, and the Lonsdaleite composite material system for evaluation as a strategic advanced material.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, DOE CRITICAL MINERALS & MATERIALS DIVISION. GOOOOOOOD MORNING, Department of Energy. GOOOOOOOD MORNING, to the team executing the U.S. Critical Materials Strategy — the interagency effort to secure domestic supply chains for the minerals and advanced materials that underpin energy independence, national security, and the clean energy transition. The AEGIS Materials Processing Division is reaching out to present three material platforms that directly support DOE's critical materials mission: the Aegis-Forge rare earth separator, the MXene (Ti₃C₂Tₓ) domestic supply chain, and the Lonsdaleite composite material system for evaluation as a strategic advanced material.
 
 **PARAGRAPH 2 — THE THREE-MATERIAL DOE OPPORTUNITY**
 
@@ -45,11 +45,11 @@ DOE Critical Materials & Materials leadership, ACS respectfully requests a 90-mi
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Materials Processing Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

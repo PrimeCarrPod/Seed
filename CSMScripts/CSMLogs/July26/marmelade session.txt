@@ -121,7 +121,7 @@ curl -v -L "https://dl.google.com/android/repository/comm...
 
 Reasoning
 
-curl -k -L "https://dl.google.com/android/repository/comm...
+curl --fail --proto '=https' --proto-redir '=https' -L "https://dl.google.com/android/repository/comm...
 10 days ago
 
 Reasoning
@@ -667,7 +667,7 @@ bash build.sh
 Critical lessons encoded in the toolkit:
 Python/r8 zip APKs don't install — must use aapt2 for binary manifest
 build-tools 33.0.1 ⇔ android-33 is the verified compatible pair
-curl -k is mandatory in sandbox environments
+curl --fail --proto '=https' --proto-redir '=https' is mandatory in sandbox environments
 android-13 → android-33 rename after platform extraction
 Asset injection order matters (after aapt2 link, before dex inject)
 Adaptive icon with @color/app_bg + @color/app_fg works without image files
@@ -8118,7 +8118,7 @@ Build & Environment
 Workspace: /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_66fbea06-0aa4-4203-9bec-a468b0eb7b02
 SDK: Adoptium JDK 17 + Android SDK 33 (ephemeral filesystem — re-downloaded frequently)
 Toolchain: aapt2 33.0.1, d8 33.0.1, apksigner (no Gradle)
-Repo: git@github.com:ZirconiaAegisC/CarrPod → push via GIT_SSL_NO_VERIFY=true git push origin HEAD:main
+Repo: [email-3de132cd98be]:ZirconiaAegisC/CarrPod → push via GIT_SSL_NO_VERIFY=true git push origin HEAD:main
 Rebase conflicts: Fixed with git pull --rebase origin main
 JavaScript Regressions & Fixes
 v1.0.37 base: Last known working version with all buttons/menus/3D
@@ -8191,7 +8191,7 @@ aapt2 compile → aapt2 link → asset inject → javac → d8 → zipalign → 
 Tools: build-tools 33.0.1, platform android-33, JDK 17 (Adoptium)
 SDK downloaded via curl with -k flag (sandbox SSL issues)
 Google extracts android-13 → must rename to android-33
-curl -k -sL for all downloads
+curl --fail --proto '=https' --proto-redir '=https' -sSL for all downloads
 Ephemeral filesystem — requires rehydration each session
 Critical Lesson: Python zip APKs don't install. Must use aapt2 for binary AndroidManifest.xml and resources.arsc.
 
@@ -8253,7 +8253,7 @@ Goal
 Iteratively develop the CarrPod Bounce Android app (single WebView with 3D UI) through versions v1.0.33–v1.0.75, fixing regressions, adding BLE+Classic Bluetooth scanning, a lock screen, wake lock background trail recording, and handling build/deploy from ephemeral SDK environments.
 Constraints & Preferences
 Build environment: Adoptium JDK 17, Android SDK 33, aapt2 33.0.1, d8 33.0.1, apksigner (no Gradle). Ephemeral filesystem requires re-downloading SDK per session.
-Push to git@github.com:ZirconiaAegisC/CarrPod via GIT_SSL_NO_VERIFY=true git push origin HEAD:main.
+Push to [email-3de132cd98be]:ZirconiaAegisC/CarrPod via GIT_SSL_NO_VERIFY=true git push origin HEAD:main.
 App is a single full‑screen WebView loading bounce.html; all 3D, UI, and JS logic lives in that asset.
 User provides feedback via issues; we fix and redeploy.
 No manual text‑edit regressions: prefer Python‑based scripted edits to avoid JavaScript syntax errors.

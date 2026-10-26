@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import os, sys, json, time, urllib.request, urllib.parse
+from secure_token import load_token_data, save_token_data
 
-ws = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_b5a7d01d-ebef-4a90-bc4b-206ab5177645'
+ws = os.environ.get("CSM_WORKSPACE", os.getcwd())
 
 # Load device code from workspace
-with open(os.path.join(ws, 'device_code.json')) as f:
-    dc_data = json.load(f)
+dc_data = load_token_data(os.path.join(ws, 'device_code.json'))
 
 client_id = '14d82eec-204b-4c2f-b7e8-296a70dab67e'
 scopes = 'https://graph.microsoft.com/Mail.ReadWrite https://graph.microsoft.com/Mail.Send offline_access'
@@ -36,11 +36,10 @@ while time.time() - t0 < exp - 10:
         tr['expires_on'] = time.time() + int(tr.get('expires_in', 3600))
         
         # Save token to workspace
-        with open(os.path.join(ws, 'hotmail_token.json'), 'w') as f:
-            json.dump(tr, f)
-        
+        token_path = save_token_data(tr, os.path.join(ws, 'hotmail_token.json'))
+
         print(f'AUTHENTICATED: {account}')
-        print(f'Token saved to {ws}/hotmail_token.json')
+        print(f'Token saved to {token_path}')
         sys.stdout.flush()
         sys.exit(0)
     except urllib.error.HTTPError as e:

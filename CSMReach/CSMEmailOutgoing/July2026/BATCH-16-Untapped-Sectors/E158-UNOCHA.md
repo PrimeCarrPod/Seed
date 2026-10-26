@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, UNITED NATIONS OFFICE FOR THE COORDINATION OF HUMANITARIAN AFFAIRS. GOOOOOOOD MORNING, OCHA. GOOOOOOOD MORNING, to the cluster leads, humanitarian coordinators, and country office teams who orchestrate the international response to emergencies across 40+ active humanitarian operations worldwide. The AEGIS Humanitarian Systems Division is reaching out to present the N-Node neighborhood resilience hub as the physical instantiation of the humanitarian-development-peace nexus — combining energy, water, food preservation, communications, and education into a single $28,000 containerized unit deployable in 48 hours.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, UNITED NATIONS OFFICE FOR THE COORDINATION OF HUMANITARIAN AFFAIRS. GOOOOOOOD MORNING, OCHA. GOOOOOOOD MORNING, to the cluster leads, humanitarian coordinators, and country office teams who orchestrate the international response to emergencies across 40+ active humanitarian operations worldwide. The AEGIS Humanitarian Systems Division is reaching out to present the N-Node neighborhood resilience hub as the physical instantiation of the humanitarian-development-peace nexus — combining energy, water, food preservation, communications, and education into a single $28,000 containerized unit deployable in 48 hours.
 
 **PARAGRAPH 2 — THE HUMANITARIAN COORDINATION CHALLENGE**
 
@@ -45,11 +45,11 @@ OCHA leadership, ACS respectfully requests a 60-minute technical briefing — av
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Humanitarian Systems Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

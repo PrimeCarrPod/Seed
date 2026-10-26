@@ -59,13 +59,13 @@ which feeds into GSA procurement decisions and AEC specifications.
 
 | State | Policy | Impact |
 |-------|--------|--------|
-| California | SB 596 (cement net-zero by 2045); Buy Clean California Act | Minimum GWP limits on state projects |
+| [location withheld] | SB 596 (cement net-zero by 2045); Buy Clean [location withheld] Act | Minimum GWP limits on state projects |
 | New York | Low-Embodied Carbon Concrete Leadership Act (LECCLA) | Procurement preference |
 | Colorado | HB 1303 (Buy Clean Colorado) | GWP disclosure & limits |
 | Oregon, Washington | Buy Clean legislation in progress | Pacific NW preference |
 | New Jersey, Maryland | Low-carbon concrete bills enacted | 2024–25 implementation |
 
-California's **SB 596** requires the cement industry to achieve net-zero by 2045,
+[location withheld]'s **SB 596** requires the cement industry to achieve net-zero by 2045,
 creating a direct regulatory pull for carbon-negative products in the largest US
 state economy.
 

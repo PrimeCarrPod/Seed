@@ -5,6 +5,11 @@
 
 set -e
 
+# Signing credentials are supplied by the environment; never commit them.
+: "${ANDROID_KEYSTORE_PASS:?Set ANDROID_KEYSTORE_PASS before building}"
+export ANDROID_KEYSTORE_PASS
+export ANDROID_KEY_PASS="${ANDROID_KEY_PASS:-$ANDROID_KEYSTORE_PASS}"
+
 # Configuration
 APP_NAME="TGApp"
 PACKAGE_NAME="com.TGApp.mynewapp"
@@ -39,8 +44,8 @@ GEN_DIR="gen"
 CLASSES_DIR="classes"
 
 # Keystore passwords (set via environment variables)
-KEYSTORE_PASS=${KEYSTORE_PASS:-"changeit"}
-KEY_PASS=${KEY_PASS:-"changeit"}
+KEYSTORE_PASS="$ANDROID_KEYSTORE_PASS"
+KEY_PASS="$ANDROID_KEY_PASS"
 KEY_ALIAS="release-key"
 
 # Colors for output
@@ -170,15 +175,15 @@ sign_apk() {
         log_warn "Using debug keystore for testing..."
         keystore_file="$KEYSTORE_DIR/debug.keystore"
         KEY_ALIAS="androiddebugkey"
-        KEYSTORE_PASS="android"
-        KEY_PASS="android"
+        KEYSTORE_PASS="$ANDROID_KEYSTORE_PASS"
+        KEY_PASS="$ANDROID_KEY_PASS"
     fi
     
     $APKSIGNER sign \
         --ks "$keystore_file" \
         --ks-key-alias "$KEY_ALIAS" \
-        --ks-pass "pass:$KEYSTORE_PASS" \
-        --key-pass "pass:$KEY_PASS" \
+        --ks-pass env:ANDROID_KEYSTORE_PASS \
+        --key-pass env:ANDROID_KEY_PASS \
         --out "$APK_DIR/${APP_NAME}-v${VERSION_NAME}.apk" \
         "$BUILD_DIR/aligned.apk"
     
@@ -190,9 +195,9 @@ create_debug_keystore() {
     mkdir -p "$KEYSTORE_DIR"
     keytool -genkeypair \
         -alias androiddebugkey \
-        -keypass android \
+        -keypass "$ANDROID_KEY_PASS" \
         -keystore "$KEYSTORE_DIR/debug.keystore" \
-        -storepass android \
+        -storepass "$ANDROID_KEYSTORE_PASS" \
         -dname "CN=Android Debug,O=Android,C=US" \
         -keyalg RSA \
         -keysize 2048 \

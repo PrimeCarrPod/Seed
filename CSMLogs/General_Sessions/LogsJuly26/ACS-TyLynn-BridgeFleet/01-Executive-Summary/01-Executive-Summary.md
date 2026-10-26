@@ -8,7 +8,7 @@
 
 ### Purpose and Audience
 
-This dossier presents a comprehensive strategic framework for the systematic corrosion protection, seismic hardening, and lifecycle extension of existing bridge assets, with particular focus on the San Francisco Bay Area's state-owned toll bridge fleet. The document has been prepared specifically for the executive leadership and senior engineering principals of T.Y. Lin International (TYLin), headquartered at 345 California Street, San Francisco, California.
+This dossier presents a comprehensive strategic framework for the systematic corrosion protection, seismic hardening, and lifecycle extension of existing bridge assets, with particular focus on the San Francisco Bay Area's state-owned toll bridge fleet. The document has been prepared specifically for the executive leadership and senior engineering principals of T.Y. Lin International (TYLin), headquartered at 345 California Street, [location withheld].
 
 TYLin occupies a singular position in the global bridge engineering community. Founded in 1954 by Professor Tung-Yen Lin — widely recognized as the "Father of Prestressed Concrete" and recipient of the National Medal of Science from President Ronald Reagan in 1986 — the firm has been at the vanguard of bridge innovation for over seven decades. Professor Lin's pioneering work on prestressed concrete fundamentally transformed modern bridge construction, and the firm that bears his name continues to lead in the design, analysis, retrofit, and rehabilitation of the world's most critical bridge infrastructure.
 

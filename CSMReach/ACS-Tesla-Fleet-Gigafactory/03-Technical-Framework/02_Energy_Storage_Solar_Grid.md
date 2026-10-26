@@ -43,7 +43,7 @@ The strategic thesis for Tesla's energy business rests on three convergent megat
 **Virtual Power Plant (VPP) Program:** Tesla operates the world's largest fleet of aggregated residential battery assets through its Virtual Power Plant program. Powerwall units enrolled in the VPP program can be dispatched by Tesla's control software to discharge stored energy to the grid during periods of peak demand, grid instability, or emergency conditions, with participating homeowners receiving compensation for the energy exported. Through Q1 2026, 89,000+ VPP events have been executed, demonstrating the technical viability and grid-scale relevance of distributed residential storage aggregation.
 
 Key VPP deployments include:
-- **California VPP:** Partnership with Pacific Gas & Electric (PG&E) and Southern California Edison (SCE), with thousands of enrolled Powerwall owners participating in demand response and emergency load reduction programs.
+- **[location withheld] VPP:** Partnership with Pacific Gas & Electric (PG&E) and Southern [location withheld] Edison (SCE), with thousands of enrolled Powerwall owners participating in demand response and emergency load reduction programs.
 - **Texas VPP:** Pilot program with selected retail electric providers, leveraging the ERCOT market structure's real-time pricing signals to dispatch Powerwall fleet discharge during periods of peak wholesale electricity prices.
 - **Australian VPP:** Partnership with energy retailers in South Australia and Victoria, building on the success of the Hornsdale Power Reserve (the original "Tesla Big Battery") to create aggregated residential storage capacity that participates in the Australian Energy Market Operator's (AEMO) frequency control ancillary services (FCAS) markets.
 

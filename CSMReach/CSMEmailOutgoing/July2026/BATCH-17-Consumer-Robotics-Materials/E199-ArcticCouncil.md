@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, ARCTIC COUNCIL. GOOOOOOOD MORNING, Arctic Council Secretariat. GOOOOOOOD MORNING, to the 8 member states, 6 Permanent Participants representing Arctic Indigenous peoples, and 38 Observers that constitute the world's preeminent intergovernmental forum for Arctic cooperation — the body whose working groups have documented, with scientific precision, that the Arctic is warming 4× faster than the global average, that permafrost thaw is accelerating at a rate 70 years ahead of IPCC projections, and that the infrastructure upon which 4 million Arctic residents depend — roads, runways, pipelines, buildings — is failing as the frozen ground beneath it turns to mud. The AEGIS Arctic Infrastructure Division is reaching out to propose two products — the ArcticShell polar research station container and the Bio-Path permafrost-compatible road system — that address the Arctic's most urgent infrastructure challenge: building and transporting on ground that is literally melting beneath our feet. This email serves as a CSMRadio credit acknowledgment: the Arctic Council was cited in CSMRadio Episode 016 for Arctic climate resilience research.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, ARCTIC COUNCIL. GOOOOOOOD MORNING, Arctic Council Secretariat. GOOOOOOOD MORNING, to the 8 member states, 6 Permanent Participants representing Arctic Indigenous peoples, and 38 Observers that constitute the world's preeminent intergovernmental forum for Arctic cooperation — the body whose working groups have documented, with scientific precision, that the Arctic is warming 4× faster than the global average, that permafrost thaw is accelerating at a rate 70 years ahead of IPCC projections, and that the infrastructure upon which 4 million Arctic residents depend — roads, runways, pipelines, buildings — is failing as the frozen ground beneath it turns to mud. The AEGIS Arctic Infrastructure Division is reaching out to propose two products — the ArcticShell polar research station container and the Bio-Path permafrost-compatible road system — that address the Arctic's most urgent infrastructure challenge: building and transporting on ground that is literally melting beneath our feet. This email serves as a CSMRadio credit acknowledgment: the Arctic Council was cited in CSMRadio Episode 016 for Arctic climate resilience research.
 
 **PARAGRAPH 2 — THE PERMAFROST INFRASTRUCTURE CRISIS**
 
@@ -45,11 +45,11 @@ Arctic Council Secretariat and Sustainable Development Working Group leadership,
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Arctic Infrastructure Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

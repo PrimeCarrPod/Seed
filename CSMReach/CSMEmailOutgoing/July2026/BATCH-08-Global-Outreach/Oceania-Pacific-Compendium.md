@@ -149,15 +149,15 @@ Oceania is the most maritime-dependent region on Earth, full stop. Pacific Islan
 
 ```
 TO: [COUNTRY] — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-FROM: Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-REPLY-TO: zirconia@aegisc.space
+FROM: [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+REPLY-TO: [email withheld]
 SUBJECT: Solar Cycle 25 is peaking — the Carrington-level hardening data [COUNTRY]'s infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to [COUNTRY]! The Sun doesn't care whether you're a continental grid operator or a single-atoll island nation with one undersea cable and a diesel generator. A Carrington-class CME arrives at the same speed — 17.6 hours from flare to impact — regardless of the size of your EEZ or the tonnage of your fishing fleet. Here's the number the Pacific needs to sit with: a G5 geomagnetic storm degrades GPS accuracy to the point where precision navigation — the kind your inter-island shipping, your fishing fleet, and your search-and-rescue coordination depend on — becomes unreliable. Simultaneously, your satellite communications face ionospheric scintillation. Your undersea cable landing stations need clean grid power for signal amplification. Your tsunami early warning system runs on the same infrastructure. All at once. The Sun doesn't send a calendar invite.
+GOOOOOOOD MORNING, from [location withheld] to [COUNTRY]! The Sun doesn't care whether you're a continental grid operator or a single-atoll island nation with one undersea cable and a diesel generator. A Carrington-class CME arrives at the same speed — 17.6 hours from flare to impact — regardless of the size of your EEZ or the tonnage of your fishing fleet. Here's the number the Pacific needs to sit with: a G5 geomagnetic storm degrades GPS accuracy to the point where precision navigation — the kind your inter-island shipping, your fishing fleet, and your search-and-rescue coordination depend on — becomes unreliable. Simultaneously, your satellite communications face ionospheric scintillation. Your undersea cable landing stations need clean grid power for signal amplification. Your tsunami early warning system runs on the same infrastructure. All at once. The Sun doesn't send a calendar invite.
 
-We are Carrington Storm Motors — California-based, engineering-first, and the only company that spent two years building the physical hardening layer. Aegis-C shielding (SE 148-165 dB at 1 kHz–10 GHz). Basalt-fiber reinforced polymer (BFRP) composites. Dielectric concrete. MXene electromagnetic suppression films. LoRa mesh emergency communications that keep working when satellite and cellular don't. A 9-part Compendium — attached.
+We are Carrington Storm Motors — [location withheld]-based, engineering-first, and the only company that spent two years building the physical hardening layer. Aegis-C shielding (SE 148-165 dB at 1 kHz–10 GHz). Basalt-fiber reinforced polymer (BFRP) composites. Dielectric concrete. MXene electromagnetic suppression films. LoRa mesh emergency communications that keep working when satellite and cellular don't. A 9-part Compendium — attached.
 
 Key facts for [COUNTRY]:
 
@@ -184,10 +184,10 @@ NEXT STEP: Review the Compendium. Forward to your energy ministry/utility, disas
 
 The Sun rises over the Pacific first. Hardening should follow that same sunrise.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under V4 Fun-Williams Heuristic (CSMSOPP000001-MODULE-V4) + Baker Street Heuristic (CSMSOPP000003) | BATCH-08 Compilation | July 2026*
 ```
@@ -271,7 +271,7 @@ The Sun rises over the Pacific first. Hardening should follow that same sunrise.
 - **Pacific Islands Forum (PIF)**: Regional coordination body representing 18 Pacific member states. A PIF-coordinated technical briefing would provide the most efficient single-engagement channel for all Pacific Island states.
 - **Secretariat of the Pacific Community (SPC)**: Technical and scientific organization serving the Pacific. SPC's Geoscience, Energy and Maritime Division is the natural partner for Pacific SIDS GMD vulnerability assessment.
 - **SIDS-Specific Deployment Model**: CSM offers a scaled, modular deployment model for Pacific Island states: LoRa mesh emergency communications kits (solar-powered, saltwater-resistant), BFRP-hardened microgrid controller enclosures, and Aegis-C shielded communications shelters. All designed for containerized shipping to remote atoll locations with minimal on-site assembly requirements.
-- **Language Versions**: English (primary), with French translations for Vanuatu (Bislama/French), and selected materials in Samoan, Tongan, Fijian, and Tok Pisin upon request. Contact zirconia@aegisc.space for language-specific bundles.
+- **Language Versions**: English (primary), with French translations for Vanuatu (Bislama/French), and selected materials in Samoan, Tongan, Fijian, and Tok Pisin upon request. Contact [email withheld] for language-specific bundles.
 - **Australian-New Zealand Research Collaboration**: CSM welcomes direct research collaboration with Geoscience Australia (GIC modeling team), GNS Science (geomagnetic monitoring), and the Bureau of Meteorology Space Weather Services. Joint research proposals for Southern Hemisphere GMD data gap closure are invited.
 - **Cyclone-Season Coordination**: Outreach to Pacific Island states optimally timed outside the November-April cyclone season, when NDMO and utility staff have maximum operational bandwidth.
 - **Briefing Pipeline**: ≤72-hour response for all country-level briefing requests. Remote (video) briefings preferred for Pacific Island states; in-person available for Australia and New Zealand upon coordinated scheduling.

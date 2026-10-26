@@ -80,7 +80,7 @@ Apple's supply chain resilience strategy employs multi-region sourcing for criti
 
 ### 3.2 Logistics Network Redundancy
 
-Apple maintains multiple logistics pathways for product distribution from manufacturing sites to regional distribution centers to retail and direct-to-consumer fulfillment. Air freight capacity is secured through long-term contracts with multiple cargo carriers. Ocean freight employs multiple shipping lines and multiple port-of-entry options on each continental coast. Regional distribution centers in the United States (California, Pennsylvania, Texas), Europe (Netherlands, Czech Republic), and Asia-Pacific (Singapore, China, Japan, Australia) provide inventory buffering and regional fulfillment capability.
+Apple maintains multiple logistics pathways for product distribution from manufacturing sites to regional distribution centers to retail and direct-to-consumer fulfillment. Air freight capacity is secured through long-term contracts with multiple cargo carriers. Ocean freight employs multiple shipping lines and multiple port-of-entry options on each continental coast. Regional distribution centers in the United States ([location withheld], Pennsylvania, Texas), Europe (Netherlands, Czech Republic), and Asia-Pacific (Singapore, China, Japan, Australia) provide inventory buffering and regional fulfillment capability.
 
 ### 3.3 Strategic Inventory Management
 

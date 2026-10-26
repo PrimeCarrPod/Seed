@@ -2,7 +2,7 @@
 ## LOI Acquisition & Contract Pipeline Expansion
 **Date:** 2026-08-27  
 **Session:** CSM_CLPS_Phase3_TIM_EXPANSION_20260827  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Status:** EXECUTED — 3 LOIs Secured, $38M Pipeline Added  
 
@@ -151,4 +151,4 @@ Following the successful closure of TIM-001/002/003 (Intuitive Machines, Firefly
 *Document: TIM_EXECUTION_PHASE3_RESULTS_20260827.md*  
 *Session: CSM_CLPS_Phase3_TIM_EXPANSION_20260827*  
 *Branch: session/agent_8ea9186b-1e2e-4f22-9194-f9d6241f599f*  
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

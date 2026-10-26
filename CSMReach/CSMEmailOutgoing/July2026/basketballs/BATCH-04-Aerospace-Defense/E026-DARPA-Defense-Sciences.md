@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
 **TO:** Director, DARPA Defense Sciences Office — EMP Hardening / Directed Energy
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** EMP Hardening Branch — Aegis-C UHTC composites + MXene shielding, defense-qualified materials data package
 
 ---
@@ -41,10 +41,10 @@ NEXT STEP: We are prepared to brief DARPA PMs at your convenience — classified
 
 You gave the world the internet. Help us make sure the Sun doesn't take it back.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 ---
 

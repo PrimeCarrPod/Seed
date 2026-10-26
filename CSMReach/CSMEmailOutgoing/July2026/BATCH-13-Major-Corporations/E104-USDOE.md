@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, DEPARTMENT OF ENERGY. GOOOOOOOD MORNING, Secretary Jennifer Granholm and the Grid Deployment Office leadership. The ACS Infrastructure Protection Division presents a national infrastructure protection proposal of historic consequence — a $5 billion, 10-year comprehensive GIC hardening program for the United States electric grid, aligned with the Grid Resilience and Innovation Partnerships (GRIP) program objectives, deploying AEGIS neutral blocking systems at every transmission substation rated 345 kV and above in the continental United States.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, DEPARTMENT OF ENERGY. GOOOOOOOD MORNING, Secretary Jennifer Granholm and the Grid Deployment Office leadership. The ACS Infrastructure Protection Division presents a national infrastructure protection proposal of historic consequence — a $5 billion, 10-year comprehensive GIC hardening program for the United States electric grid, aligned with the Grid Resilience and Innovation Partnerships (GRIP) program objectives, deploying AEGIS neutral blocking systems at every transmission substation rated 345 kV and above in the continental United States.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -15,7 +15,7 @@ The United States bulk electric system comprises approximately 60,000 miles of e
 
 **PARAGRAPH 3 — BAKER STREET PRECISE SPECS**
 
-Baker Street, let's get precise. The ACS AEGIS National Grid Protection System is a standardized, utility-grade GIC neutral blocking architecture designed for deployment at every EHV substation in the NERC bulk electric system. The AEGIS-N unit is a 5.6-millifarad MXene solid-state capacitor bank rated for 500 kV and 765 kV application, providing 0.8-millisecond DC injection response at the transformer neutral-to-ground connection, interrupting up to 20 kA of neutral DC current. The MXene-silicon carbide composite capacitor material withstands 1,800°C thermal loading, maintains 99.97% capacitive retention over a 30-year service life, and requires zero external cooling — enabling installation in existing substation control houses without HVAC modifications. Each AEGIS-N unit integrates with existing utility protection relays (SEL, GE Multilin, ABB) via IEC 61850 GOOSE messaging and reports GIC telemetry to both the utility SCADA system and the NERC Situational Awareness for FERC, NERC and the Regional Entities (SAFNR) platform. The system is manufactured in California at ACS's Fremont facility, with all components sourced from domestic suppliers in compliance with Build America, Buy America Act requirements applicable to IIJA-funded projects. The AEGIS-N unit cost at scale (2,100+ unit procurement): $2.4M per substation, fully installed and commissioned — approximately 15% of the cost of replacing a single 500 kV autotransformer.
+Baker Street, let's get precise. The ACS AEGIS National Grid Protection System is a standardized, utility-grade GIC neutral blocking architecture designed for deployment at every EHV substation in the NERC bulk electric system. The AEGIS-N unit is a 5.6-millifarad MXene solid-state capacitor bank rated for 500 kV and 765 kV application, providing 0.8-millisecond DC injection response at the transformer neutral-to-ground connection, interrupting up to 20 kA of neutral DC current. The MXene-silicon carbide composite capacitor material withstands 1,800°C thermal loading, maintains 99.97% capacitive retention over a 30-year service life, and requires zero external cooling — enabling installation in existing substation control houses without HVAC modifications. Each AEGIS-N unit integrates with existing utility protection relays (SEL, GE Multilin, ABB) via IEC 61850 GOOSE messaging and reports GIC telemetry to both the utility SCADA system and the NERC Situational Awareness for FERC, NERC and the Regional Entities (SAFNR) platform. The system is manufactured in [location withheld] at ACS's Fremont facility, with all components sourced from domestic suppliers in compliance with Build America, Buy America Act requirements applicable to IIJA-funded projects. The AEGIS-N unit cost at scale (2,100+ unit procurement): $2.4M per substation, fully installed and commissioned — approximately 15% of the cost of replacing a single 500 kV autotransformer.
 
 **PARAGRAPH 4 — SHIELD CALM POSTURE**
 
@@ -45,7 +45,7 @@ Secretary Granholm, ACS respectfully requests a 90-minute executive and technica
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

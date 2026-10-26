@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-14_Neutrino_Mass_Thresholds_Seesaw_20260825  
 **Branch:** session/agent_b6217c1f-6ced-49aa-a88b-958bfff6200c  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -142,4 +142,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-14_NEUTRINO_MASS_THRESHOLDS_SEESAW_202608
 ---
 
 *Session completed. All files pushed to GitHub main branch.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

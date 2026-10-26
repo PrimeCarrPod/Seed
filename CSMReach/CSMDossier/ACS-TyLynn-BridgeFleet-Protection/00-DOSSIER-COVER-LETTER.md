@@ -11,13 +11,13 @@ President
 T.Y. Lin International
 
 James Duxbury, P.E.
-Transportation and Bridge Sector Manager — Northern California
+Transportation and Bridge Sector Manager — Northern [location withheld]
 T.Y. Lin International
 
 TYLin Bridge Architecture Team
 
-345 California Street, Suite 2300
-San Francisco, California 94104
+345 [location withheld] Street, Suite 2300
+[location withheld] 94104
 
 ---
 
@@ -32,9 +32,9 @@ San Francisco, California 94104
 
 Dear Mr. Cummings, Mr. Duxbury, and the TYLin Bridge Architecture Team,
 
-I prepared this dossier because T.Y. Lin International is uniquely positioned to lead the next evolution in bridge engineering: comprehensive fleet protection and lifecycle extension. The firm's credentials are unmatched — Engineer of Record for the San Francisco–Oakland Bay Bridge East Span, designer of the Benicia-Martinez Bridge, seismic retrofit designer for the Golden Gate Bridge, and steward of Professor T.Y. Lin's foundational legacy of prestressed concrete innovation. No other firm in the world carries this combination of structural mastery, institutional knowledge, and geographic proximity to the bridges that define California's — and the nation's — transportation backbone.
+I prepared this dossier because T.Y. Lin International is uniquely positioned to lead the next evolution in bridge engineering: comprehensive fleet protection and lifecycle extension. The firm's credentials are unmatched — Engineer of Record for the San Francisco–Oakland Bay Bridge East Span, designer of the Benicia-Martinez Bridge, seismic retrofit designer for the Golden Gate Bridge, and steward of Professor T.Y. Lin's foundational legacy of prestressed concrete innovation. No other firm in the world carries this combination of structural mastery, institutional knowledge, and geographic proximity to the bridges that define [location withheld]'s — and the nation's — transportation backbone.
 
-I used to work under the Bay Bridge at TYLin's San Francisco office, in Suite 2300 at 345 California Street. Each day, I walked past the framed engineering drawings and project photographs that line the corridors — the Benicia towers rising from the Carquinez Strait, the suspension cables of the Golden Gate traced in Lin's own hand, the self-anchored suspension span of the East Span sketched in conference rooms before it ever touched steel. That office is a cathedral of bridge engineering, and the work that follows in this dossier is built on the foundation of knowledge and excellence that the firm embodies.
+I used to work under the Bay Bridge at TYLin's San Francisco office, in Suite 2300 at 345 [location withheld] Street. Each day, I walked past the framed engineering drawings and project photographs that line the corridors — the Benicia towers rising from the Carquinez Strait, the suspension cables of the Golden Gate traced in Lin's own hand, the self-anchored suspension span of the East Span sketched in conference rooms before it ever touched steel. That office is a cathedral of bridge engineering, and the work that follows in this dossier is built on the foundation of knowledge and excellence that the firm embodies.
 
 ### The Argument in Brief
 
@@ -60,7 +60,7 @@ What follows in this dossier is a complete framework for protecting every bridge
 
 7. **Implementation Roadmap** — A phased deployment strategy: Year 1 (pilot bridges, contractor qualification, specification development), Years 2–5 (fleet expansion, monitoring infrastructure, in-house training), Years 6–20 (full fleet coverage, continuous improvement, technology refresh).
 
-8. **Regulatory & Funding Framework** — Federal Highway Administration Asset Investment Decision support, California lead paint exposure standards (2025 Title 8 revisions), Buy America compliance pathways for zinc and anode materials, Infrastructure Investment and Jobs Act funding mechanisms, and state-level Transportation Improvement Program integration.
+8. **Regulatory & Funding Framework** — Federal Highway Administration Asset Investment Decision support, [location withheld] lead paint exposure standards (2025 Title 8 revisions), Buy America compliance pathways for zinc and anode materials, Infrastructure Investment and Jobs Act funding mechanisms, and state-level Transportation Improvement Program integration.
 
 9. **Risk & Resilience** — Seismic-coating interaction, post-fire coating integrity, climate adaptation (sea level rise, increased freeze-thaw cycling, atmospheric chloride loading), supply chain security for specialized materials, and contractor workforce sustainability.
 

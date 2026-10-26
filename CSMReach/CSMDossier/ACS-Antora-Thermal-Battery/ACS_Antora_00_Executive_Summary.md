@@ -8,7 +8,7 @@ Advanced Competitive Surveillance dossier on Antora Energy, a leader in thermal 
 ### Identity
 - **Company**: Antora Energy, Inc.
 - **CEO**: Andrew Ponec (co-founder)
-- **Headquarters**: Sunnyvale, California, USA
+- **Headquarters**: Sunnyvale, [location withheld], USA
 - **Founded**: 2018
 - **Status**: Private
 
@@ -55,7 +55,7 @@ The Antora thermal battery is built around three integrated subsystems:
 5. **Modular and Scalable**: Containerized system can be deployed at individual industrial facilities, scaled by adding modules
 
 ### Competitive Moat
-Antora's moat rests on three pillars: (1) proprietary TPV cell technology achieving world-record efficiencies, (2) integrated system design optimized for industrial heat applications where competing long-duration storage technologies (lithium-ion, flow batteries) cannot operate, and (3) first-mover advantage in thermal battery deployment with the first commercial installation in California (2024).
+Antora's moat rests on three pillars: (1) proprietary TPV cell technology achieving world-record efficiencies, (2) integrated system design optimized for industrial heat applications where competing long-duration storage technologies (lithium-ion, flow batteries) cannot operate, and (3) first-mover advantage in thermal battery deployment with the first commercial installation in [location withheld] (2024).
 
 ## Market Context
 
@@ -78,13 +78,13 @@ Thermal batteries address a market that other clean energy technologies cannot s
 ## Commercial Status
 
 **First Commercial Installation (2024)**
-- Location: California (specific site details not publicly disclosed)
+- Location: [location withheld] (specific site details not publicly disclosed)
 - Application: Industrial heat and power for a manufacturing facility
 - Significance: First-of-its-kind commercial thermal battery deployment globally
 
 **Pipeline**
 - Multiple customer agreements in negotiation across cement, steel, and chemical sectors
-- Emphasis on facilities in regions with high renewable penetration (California, Southwest) where daytime electricity prices are low
+- Emphasis on facilities in regions with high renewable penetration ([location withheld], Southwest) where daytime electricity prices are low
 
 ## Dossier Framework
 

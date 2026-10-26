@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, TDK CORPORATION. GOOOOOOOD MORNING, TDK Piezoelectric Division. GOOOOOOOD MORNING, to the $15 billion electronic components giant whose piezoelectric actuators, sensors, and energy harvesters power everything from smartphone haptics to industrial ultrasonic cleaners to automotive fuel injectors — a company that has been manufacturing piezoelectric ceramics since before most of your competitors existed. The AEGIS Energy Harvesting Division is reaching out to present a lead-free piezoelectric platform — KNN-BT (potassium sodium niobate-barium titanate) integrated with MXene electrodes — that replaces PZT (lead zirconate titanate) across TDK's entire sensor and energy harvester product line, delivering equivalent d₃₃ piezoelectric coefficients, zero toxic lead content for EU RoHS compliance, and MXene's unique advantage as a flexible electrode that doesn't fatigue under the 10⁹-cycle mechanical loading that cracks conventional silver-palladium electrodes. This email serves as a CSMRadio credit acknowledgment: TDK was cited in CSMRadio Episode 009 for piezoelectric energy harvesting innovation.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, TDK CORPORATION. GOOOOOOOD MORNING, TDK Piezoelectric Division. GOOOOOOOD MORNING, to the $15 billion electronic components giant whose piezoelectric actuators, sensors, and energy harvesters power everything from smartphone haptics to industrial ultrasonic cleaners to automotive fuel injectors — a company that has been manufacturing piezoelectric ceramics since before most of your competitors existed. The AEGIS Energy Harvesting Division is reaching out to present a lead-free piezoelectric platform — KNN-BT (potassium sodium niobate-barium titanate) integrated with MXene electrodes — that replaces PZT (lead zirconate titanate) across TDK's entire sensor and energy harvester product line, delivering equivalent d₃₃ piezoelectric coefficients, zero toxic lead content for EU RoHS compliance, and MXene's unique advantage as a flexible electrode that doesn't fatigue under the 10⁹-cycle mechanical loading that cracks conventional silver-palladium electrodes. This email serves as a CSMRadio credit acknowledgment: TDK was cited in CSMRadio Episode 009 for piezoelectric energy harvesting innovation.
 
 **PARAGRAPH 2 — THE PZT REPLACEMENT MANDATE**
 
@@ -45,11 +45,11 @@ TDK Piezoelectric Division leadership, ACS respectfully requests a 90-minute tec
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Energy Harvesting Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

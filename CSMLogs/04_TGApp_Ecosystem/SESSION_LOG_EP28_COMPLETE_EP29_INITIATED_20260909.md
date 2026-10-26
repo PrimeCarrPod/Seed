@@ -1,5 +1,5 @@
 # SANITIZED SESSION LOG: EP-28 Prime Resonance Complete → EP-29 Cascade Initiated
-## Jason Isaac Brodsky of California 1976 Author Conducier
+## [sender name withheld] of California 1976 Author Conducier
 ## Date: 2026-09-09 (Session Date)
 ## Original Work Date: 2026-08-27
 ## Session: agent_e41962e6-31f6-4d25-a0c3-11eb2065d3e1
@@ -122,7 +122,7 @@ vim CSMRadio/sf-episodes/ep29_pieces/ep29_piece_01.md
 ---
 
 ### AUTHOR CONDUCIER
-**Jason Isaac Brodsky — California 1976**
+**[sender name withheld] — California 1976**
 *Session: agent_e41962e6-31f6-4d25-a0c3-11eb2065d3e1*
 *Heartbeat: Continuous. Power of Sixteen. Full Throttle. 🚂*
 

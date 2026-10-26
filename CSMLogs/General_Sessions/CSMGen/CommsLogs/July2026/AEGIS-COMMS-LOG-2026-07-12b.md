@@ -29,7 +29,7 @@ Sent approximately 60 emails to researched addresses across 30+ organizations:
 ### Email Format Proven
 - Williams opening paragraph (warmth, humor, GOOOOOOOD MORNING)
 - 8 Aegis Agent precision paragraphs (data-dense, curt, company-specific)
-- Jason Brodsky of California signature closing
+- [sender name withheld] of California signature closing
 - 3 PDF attachments: Briefing Packet (47KB), Full Compendium (95KB), Mini Compendium (38KB)
 
 ### Attachment Pipeline Proven
@@ -85,7 +85,7 @@ Sent approximately 60 emails to researched addresses across 30+ organizations:
 
 1. Add SPF record: `v=spf1 include:spf.protection.outlook.com -all`
 2. Enable DKIM in M365 Admin Center for aegisc.space
-3. Add DMARC record: `v=DMARC1; p=none; rua=mailto:postmaster@aegisc.space`
+3. Add DMARC record: `v=DMARC1; p=none; rua=mailto:[email-6bbf50a20c7a]`
 4. Wait 24-48 hours for DNS propagation
 5. Resume campaign from SEND-STATE.md
 6. Retry all 12 blocked domains

@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** hq@arrl.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** When the Grid Goes Quiet — Hardened Ham Radio Equipment and EMP-Resilient Communications Data for ARRL
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The amateur radio emergency communications architecture depends on approximately
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials are tested against MIL-STD-461G. The specifications are documented. The retrofit integration pathways for existing amateur radio equipment — Icom, Yaesu, Kenwood, Elecraft transceivers; MFJ and Diamond antenna systems; Astron and Samlex power supplies — are mapped and documented. Jason Brodsky of California has directed this AI to state with absolute clarity: we are not asking the ARRL to endorse any product, we are not asking ARES/RACES coordinators to modify their deployment protocols, and we are not suggesting that electromagnetic hardening replaces any existing amateur radio emergency communications capability. What we offer is a technical data package — materials specifications, test results, integration guidelines for common amateur radio equipment — that ARRL members, ARES Emergency Coordinators, and RACES Radio Officers can evaluate for potential integration into their station designs, their go-kit builds, and their emergency communications planning. The amateur radio community is famously self-reliant, technically sophisticated, and deeply skeptical of vendor claims. We respect that. Our data package is built for that audience: peer-reviewed references, test data, specifications with tolerances, and bills of materials with sourcing information. No marketing fluff. Just engineering.
+The materials are tested against MIL-STD-461G. The specifications are documented. The retrofit integration pathways for existing amateur radio equipment — Icom, Yaesu, Kenwood, Elecraft transceivers; MFJ and Diamond antenna systems; Astron and Samlex power supplies — are mapped and documented. [sender name withheld] has directed this AI to state with absolute clarity: we are not asking the ARRL to endorse any product, we are not asking ARES/RACES coordinators to modify their deployment protocols, and we are not suggesting that electromagnetic hardening replaces any existing amateur radio emergency communications capability. What we offer is a technical data package — materials specifications, test results, integration guidelines for common amateur radio equipment — that ARRL members, ARES Emergency Coordinators, and RACES Radio Officers can evaluate for potential integration into their station designs, their go-kit builds, and their emergency communications planning. The amateur radio community is famously self-reliant, technically sophisticated, and deeply skeptical of vendor claims. We respect that. Our data package is built for that audience: peer-reviewed references, test data, specifications with tolerances, and bills of materials with sourcing information. No marketing fluff. Just engineering.
 
 ---
 
@@ -71,13 +71,13 @@ For the ARRL — and specifically for the ARES and RACES programs that represent
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to ARRL leadership, ARES national coordinators, section emergency coordinators, or the ARRL Laboratory technical staff within 14 days. We can present at the ARRL National Convention, at Dayton Hamvention, at any ARRL division or section convention, or via virtual presentation. Bring your technical specialists — the ones who design the ARRL Lab test procedures and evaluate new equipment. Bring your emergency communications leaders — the ones who deploy after hurricanes and wildfires and know exactly how long a battery lasts in the field. The four PDFs attached to this email contain the full engineering data package. 73 from this AI. Jason Brodsky of California handles the handshake — de NA2AA, dit dit.
+We are prepared to deliver a technical briefing to ARRL leadership, ARES national coordinators, section emergency coordinators, or the ARRL Laboratory technical staff within 14 days. We can present at the ARRL National Convention, at Dayton Hamvention, at any ARRL division or section convention, or via virtual presentation. Bring your technical specialists — the ones who design the ARRL Lab test procedures and evaluate new equipment. Bring your emergency communications leaders — the ones who deploy after hurricanes and wildfires and know exactly how long a battery lasts in the field. The four PDFs attached to this email contain the full engineering data package. 73 from this AI. [sender name withheld] handles the handshake — de NA2AA, dit dit.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

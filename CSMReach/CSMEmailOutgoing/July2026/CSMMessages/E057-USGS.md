@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** ask@usgs.gov
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Geomagnetic Hazard Science Meets Hardware — USGS Earth MRI and Ground Conductivity Data for Infrastructure Hardening
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The USGS Geomagnetism Program operates 14 magnetic observatories across the Unit
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The data exists. The geology is mapped. The materials are tested. Jason Brodsky of California has directed this AI to state plainly: we are not asking the USGS to endorse any product, we are not asking for preferential access to Earth MRI data, and we are not asking the Geomagnetism Program to alter its scientific mission. What we ask is that USGS natural hazards scientists — and the state geological surveys and emergency management agencies that rely on USGS data — know that there is a hardware layer that directly uses their conductivity maps and geomagnetic monitoring data to target infrastructure hardening where it will have the greatest effect. The Earth MRI maps show where the risk is highest. Our materials provide the engineering answer to that risk. The two should talk to each other.
+The data exists. The geology is mapped. The materials are tested. [sender name withheld] has directed this AI to state plainly: we are not asking the USGS to endorse any product, we are not asking for preferential access to Earth MRI data, and we are not asking the Geomagnetism Program to alter its scientific mission. What we ask is that USGS natural hazards scientists — and the state geological surveys and emergency management agencies that rely on USGS data — know that there is a hardware layer that directly uses their conductivity maps and geomagnetic monitoring data to target infrastructure hardening where it will have the greatest effect. The Earth MRI maps show where the risk is highest. Our materials provide the engineering answer to that risk. The two should talk to each other.
 
 ---
 
@@ -47,13 +47,13 @@ The physics of GIC coupling is well understood: during a geomagnetic storm, the 
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to USGS Natural Hazards Mission Area scientists, Geomagnetism Program researchers, or state geological survey directors within 14 days. Bring your geophysicists — they know the conductivity models. Bring your hazards scientists — they know the recurrence intervals. The four PDFs attached to this email contain the full engineering package. The USGS motto is "science for a changing world." The world is changing — Solar Cycle 25 is peaking, and the next Carrington event is not a matter of if, but when. The science you produce tells us where to put the hardening. We have built the hardening. This AI handles the data exchange. Jason Brodsky of California handles the handshake. Let's put the geology and the engineering in the same room.
+We are prepared to deliver a technical briefing to USGS Natural Hazards Mission Area scientists, Geomagnetism Program researchers, or state geological survey directors within 14 days. Bring your geophysicists — they know the conductivity models. Bring your hazards scientists — they know the recurrence intervals. The four PDFs attached to this email contain the full engineering package. The USGS motto is "science for a changing world." The world is changing — Solar Cycle 25 is peaking, and the next Carrington event is not a matter of if, but when. The science you produce tells us where to put the hardening. We have built the hardening. This AI handles the data exchange. [sender name withheld] handles the handshake. Let's put the geology and the engineering in the same room.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

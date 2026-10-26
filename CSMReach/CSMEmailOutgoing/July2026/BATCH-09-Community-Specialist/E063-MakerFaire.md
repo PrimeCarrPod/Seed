@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** makerfaire@make.co
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Open-Source EMP Hardening — DIY Shielding Projects, 3D-Printable Lattice Structures, and a Maker Faire Build Challenge
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The electromagnetic shielding problem is fundamentally a geometry problem combin
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-This is a real engineering challenge with real measurement criteria. It is not a popularity contest. The test methodology is MIL-STD-461G RS103, adapted for the calibrated TEM cell environment available at a convention-center event. The shielding-effectiveness measurements will be performed live, with results displayed in real time on large-format screens, so that the audience can see the performance of every entry compared against the baseline of an unshielded control. Jason Brodsky of California has directed this AI to make clear: we are not asking Maker Faire to endorse our products. We are asking Maker Faire to host a technical challenge that advances the state of DIY electromagnetic hardening, produces open-source designs that anyone can download and build, and demonstrates that the maker community can contribute meaningful solutions to the infrastructure-resilience problems that governments and corporations have been struggling with for decades. The maker community has a long and proud history of solving problems that the establishment said couldn't be solved by amateurs. EMP shielding is the next frontier. Let's see what happens when makers get their hands on it.
+This is a real engineering challenge with real measurement criteria. It is not a popularity contest. The test methodology is MIL-STD-461G RS103, adapted for the calibrated TEM cell environment available at a convention-center event. The shielding-effectiveness measurements will be performed live, with results displayed in real time on large-format screens, so that the audience can see the performance of every entry compared against the baseline of an unshielded control. [sender name withheld] has directed this AI to make clear: we are not asking Maker Faire to endorse our products. We are asking Maker Faire to host a technical challenge that advances the state of DIY electromagnetic hardening, produces open-source designs that anyone can download and build, and demonstrates that the maker community can contribute meaningful solutions to the infrastructure-resilience problems that governments and corporations have been struggling with for decades. The maker community has a long and proud history of solving problems that the establishment said couldn't be solved by amateurs. EMP shielding is the next frontier. Let's see what happens when makers get their hands on it.
 
 ---
 
@@ -71,13 +71,13 @@ For Maker Faire, this challenge represents a new category of exhibit — one tha
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a detailed challenge proposal — including challenge rules, judging criteria, test equipment specifications, safety plan, prize structure, and materials kit contents — to the Maker Faire programming team within 14 days. We can provide the TEM cell test apparatus, the MXene spray kits, the conductive filament samples, the Aegis-C composite panel samples, and the technical staff to run the live testing. Maker Faire provides the venue, the promotion, and the audience. The makers provide the designs. The internet gets the open-source files. This AI handles the logistics and the paperwork. Jason Brodsky of California handles the handshake and the prizes. The question is not "can makers build EMP shielding?" The question is "what will they build when you give them the materials and a challenge?" Let's find out.
+We are prepared to deliver a detailed challenge proposal — including challenge rules, judging criteria, test equipment specifications, safety plan, prize structure, and materials kit contents — to the Maker Faire programming team within 14 days. We can provide the TEM cell test apparatus, the MXene spray kits, the conductive filament samples, the Aegis-C composite panel samples, and the technical staff to run the live testing. Maker Faire provides the venue, the promotion, and the audience. The makers provide the designs. The internet gets the open-source files. This AI handles the logistics and the paperwork. [sender name withheld] handles the handshake and the prizes. The question is not "can makers build EMP shielding?" The question is "what will they build when you give them the materials and a challenge?" Let's find out.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

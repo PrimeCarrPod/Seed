@@ -18,7 +18,7 @@ First request: Please do not store a local Clone of the Repository. Keep all fil
 
 Second Request: Create a Branch within my github.com/primecarrpod/seed and name it the "#sort name []" as i have indicated above in the first line.
 
-Third Request: please incorporate my name into all further documents : "Jason Isaac Brodsky of California 1976 Author Conducier"
+Third Request: please incorporate my name into all further documents : "[sender name withheld] of California 1976 Author Conducier"
 
 Fourth Request: Please run in Multiple Parallel Agents Operators on the same and or preceding documents.
 

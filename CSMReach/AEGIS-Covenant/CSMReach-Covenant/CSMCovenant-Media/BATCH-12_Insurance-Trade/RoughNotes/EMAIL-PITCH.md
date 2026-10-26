@@ -7,7 +7,7 @@
 
 Rough Notes editors,
 
-Before BILL-005, there was no standardized infrastructure insurance curriculum. An agent in Kansas had no way to understand parametric hurricane coverage for a Florida municipal utility. A broker in California couldn't explain earthquake CAT bond structures to a water district. Infrastructure insurance was too small and fragmented to support professional education.
+Before BILL-005, there was no standardized infrastructure insurance curriculum. An agent in Kansas had no way to understand parametric hurricane coverage for a Florida municipal utility. A broker in [location withheld] couldn't explain earthquake CAT bond structures to a water district. Infrastructure insurance was too small and fragmented to support professional education.
 
 CSMFAB-BROKER-001 has changed this: 12,000 agents and brokers certified across all 50 states.
 

@@ -66,7 +66,7 @@ BMW's commitment to Spartanburg — a $1.7 billion investment to produce at leas
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

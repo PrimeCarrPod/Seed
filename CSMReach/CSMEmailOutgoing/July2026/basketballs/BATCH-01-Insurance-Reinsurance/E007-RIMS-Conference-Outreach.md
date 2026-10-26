@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-01 | July 2026
 
 **TO:** RIMS Conference Program Committee / Exhibitor & Sponsor Relations
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** RIMS 2026 — A session proposal on the solar-storm protection gap (and the engineering that closes it)
 
 ---
@@ -18,7 +18,7 @@ RIMS Annual Conference is the premier gathering for risk management and insuranc
 SESSION PROPOSAL:
 Title: "The 99.3% Gap: Why Your Organization's Largest Uninsured Exposure Is Probably a Solar Storm — and What to Do About It"
 Format: 45-minute educational session with Q&A
-Speakers: Jason Brodsky (Carrington Storm Motors) + invited reinsurance industry partner + invited NOAA SWPC representative
+Speakers: [sender name withheld] (Carrington Storm Motors) + invited reinsurance industry partner + invited NOAA SWPC representative
 Key Takeaways for Attendees:
 1. Understand the Lloyd's $2.4 trillion scenario and what it means for their specific industry
 2. Learn the exposure mapping methodology — which assets are vulnerable and why
@@ -31,9 +31,9 @@ NEXT STEP: We would be honored to submit this through your official call-for-ses
 
 RIMS is where the risk conversation happens. Let's make sure this risk is in the room.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

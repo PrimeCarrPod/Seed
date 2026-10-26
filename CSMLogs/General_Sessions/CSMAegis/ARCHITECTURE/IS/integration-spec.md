@@ -112,10 +112,10 @@ AWS_ACCOUNT_ID            — 12-digit account
 DOCKER_HUB_USERNAME       — If using Docker Hub for base images
 DOCKER_HUB_TOKEN          — Docker Hub access token
 SENTRY_DSN                — Error monitoring (backend + frontend)
-DATABASE_URL              — RDS connection string (staging)
-PROD_DATABASE_URL         — RDS connection string (production — limited access)
-REDIS_URL                 — ElastiCache endpoint
-JWT_SECRET                — RS256 private key or HMAC secret (rotate quarterly)
+DATABASE_URL              — supplied at runtime via AWS Secrets Manager (never committed)
+PROD_DATABASE_URL         — supplied at runtime via AWS Secrets Manager (never committed)
+REDIS_URL                 — supplied at runtime via AWS Secrets Manager (never committed)
+JWT_SECRET                — supplied at runtime via AWS Secrets Manager; rotate quarterly
 SENTINEL_SLACK_WEBHOOK    — Alert notifications
 ```
 
@@ -194,8 +194,8 @@ export interface ServiceConfig {
 
   // API Service
   PORT: number;                  // 3000
-  DATABASE_URL: string;          // postgresql://user:pass@host:5432/aegis
-  REDIS_URL: string;             // redis://host:6379
+  DATABASE_URL: string;
+  REDIS_URL: string;
   JWT_PUBLIC_KEY: string;        // Public key for token verification
   CORS_ORIGINS: string;          // Comma-separated allowed origins
   RATE_LIMIT_WINDOW_MS: number;  // Default: 60000

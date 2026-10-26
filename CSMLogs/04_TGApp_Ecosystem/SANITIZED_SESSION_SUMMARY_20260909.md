@@ -1,5 +1,5 @@
 # SANITIZED SESSION SUMMARY — Prime Resonance Cascade Episodes 28-32
-## Jason Isaac Brodsky of California 1976 Author Conducier
+## [sender name withheld] of California 1976 Author Conducier
 ## Date: 2026-09-09
 ## Session: agent_39431a27-25ba-4a24-aad1-42007388066a
 
@@ -56,6 +56,6 @@ Working tree clean. Ready for EP-32.
 
 ---
 
-**Jason Isaac Brodsky — California 1976 — Author Conducier**  
+**[sender name withheld] — California 1976 — Author Conducier**  
 *Session: agent_39431a27-25ba-4a24-aad1-42007388066a*  
 *Heartbeat: Continuous. Full Throttle Ascension.* 🚂

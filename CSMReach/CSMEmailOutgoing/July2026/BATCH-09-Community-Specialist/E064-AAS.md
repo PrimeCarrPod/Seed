@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** aas@aas.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Solar Physics Meets Infrastructure Engineering — Heliophysics Data and the Materials Layer That Answers Solar Cycle 25
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The chain of causality from solar observation to infrastructure hardening is wel
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials are tested. The physics is correct. The specifications are documented against MIL-STD-461G. Jason Brodsky of California has directed this AI to state with absolute clarity: we are not asking the AAS to endorse any product, we are not asking astronomers to become engineers, and we are not suggesting that the mission of the Society changes in any way. What we are asking is that the astronomers who understand the Sun — who have dedicated their careers to studying its magnetic fields, its coronal dynamics, its energetic particle acceleration, its 11-year and 22-year activity cycles — know that the knowledge they produce is being used, right now, to build the hardware that will protect the infrastructure that their observatories, their universities, and their communities depend on. The data pipeline is: solar observation → space weather forecasting → infrastructure hardening. The astronomers are the first link in the chain. The chain would not exist without them. We want them to see what the chain has produced.
+The materials are tested. The physics is correct. The specifications are documented against MIL-STD-461G. [sender name withheld] has directed this AI to state with absolute clarity: we are not asking the AAS to endorse any product, we are not asking astronomers to become engineers, and we are not suggesting that the mission of the Society changes in any way. What we are asking is that the astronomers who understand the Sun — who have dedicated their careers to studying its magnetic fields, its coronal dynamics, its energetic particle acceleration, its 11-year and 22-year activity cycles — know that the knowledge they produce is being used, right now, to build the hardware that will protect the infrastructure that their observatories, their universities, and their communities depend on. The data pipeline is: solar observation → space weather forecasting → infrastructure hardening. The astronomers are the first link in the chain. The chain would not exist without them. We want them to see what the chain has produced.
 
 ---
 
@@ -71,13 +71,13 @@ For the American Astronomical Society and its members, this data package represe
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to the AAS Solar Physics Division, the AAS executive office, or individual university astronomy departments within 14 days. We can present at the next AAS meeting, at the Solar Physics Division meeting, at the Triennial Earth-Sun Summit, or via virtual colloquium to any interested institution. Bring your solar physicists — they know the MHD equations. Bring your instrument scientists — they know the detector electronics. Bring your graduate students — they are looking for projects with real-world impact. The four PDFs attached to this email contain the full engineering data package. The AAS motto is "to enhance and share humanity's scientific understanding of the universe." The Sun is part of the universe. And protecting civilization from the Sun is a direct application of the scientific understanding your members have built over the past 125 years. This AI handles the logistics. Jason Brodsky of California handles the handshake. Let's put the astronomers and the engineers in the same room.
+We are prepared to deliver a technical briefing to the AAS Solar Physics Division, the AAS executive office, or individual university astronomy departments within 14 days. We can present at the next AAS meeting, at the Solar Physics Division meeting, at the Triennial Earth-Sun Summit, or via virtual colloquium to any interested institution. Bring your solar physicists — they know the MHD equations. Bring your instrument scientists — they know the detector electronics. Bring your graduate students — they are looking for projects with real-world impact. The four PDFs attached to this email contain the full engineering data package. The AAS motto is "to enhance and share humanity's scientific understanding of the universe." The Sun is part of the universe. And protecting civilization from the Sun is a direct application of the scientific understanding your members have built over the past 125 years. This AI handles the logistics. [sender name withheld] handles the handshake. Let's put the astronomers and the engineers in the same room.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

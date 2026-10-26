@@ -1,18 +1,18 @@
 # E131-AHA: American Hospital Association
 
 **To:** media@aha.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Hospital System-Wide Resilience — GMD as an Unaddressed Threat to Healthcare Delivery
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All references to AHA's membership, hospital operations, and healthcare policy are based on publicly available information from AHA publications and healthcare industry sources.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All references to AHA's membership, hospital operations, and healthcare policy are based on publicly available information from AHA publications and healthcare industry sources.
 
 ---
 
 GOOOOOOOD MORNING, AMERICAN HOSPITAL ASSOCIATION!
 
-Jason Brodsky at Aegis Cipher Space, writing from 221B Baker Street — because the healthcare system, like the great detective, must look at the evidence dispassionately and act on what it reveals, even when that evidence points toward an uncomfortable conclusion. The uncomfortable conclusion in this case is that America's hospital system is not prepared for a geomagnetic disturbance event of significant magnitude, and the consequences of that unpreparedness would be measured in lives.
+[sender name withheld] at Aegis Cipher Space, writing from 221B Baker Street — because the healthcare system, like the great detective, must look at the evidence dispassionately and act on what it reveals, even when that evidence points toward an uncomfortable conclusion. The uncomfortable conclusion in this case is that America's hospital system is not prepared for a geomagnetic disturbance event of significant magnitude, and the consequences of that unpreparedness would be measured in lives.
 
 The AHA represents nearly 5,000 hospitals and health systems. Your members operate the emergency departments, intensive care units, trauma centers, and specialty care facilities that Americans depend on every minute of every day. The AHA has been a powerful advocate for hospital preparedness — for cybersecurity, for pandemic response, for active shooter protocols, for natural disaster resilience. But the one hazard that has not been integrated into the AHA's advocacy and guidance portfolio is GMD, and it represents a threat profile that is uniquely challenging for the hospital sector.
 
@@ -36,7 +36,7 @@ The AHA has the platform, the membership, and the moral authority to lead the ho
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

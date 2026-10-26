@@ -1,7 +1,7 @@
 # Session Log — SubParticlesV4 Creation
 **Session ID:** agent_40ef287c-adaf-47da-9d86-5be57b7c5d88  
 **Date:** 2026-08-14  
-**Creative Director:** Jason Brodsky  
+**Creative Director:** [sender name withheld]  
 **Branch:** session/csm-work-in-progress-subparticlesv4-20260814-210421  
 
 ---

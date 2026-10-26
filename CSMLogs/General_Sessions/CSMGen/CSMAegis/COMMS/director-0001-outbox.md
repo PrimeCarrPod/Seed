@@ -308,7 +308,7 @@ Session OK to delete.
 
 ### [DIRECTOR-0001 | 2026-07-06 | 00:33 UTC] — SESSION SHUTDOWN: ALL LOGS ON origin/main
 
-[DROP] Session terminating per Jason Brodsky directive. Session ID agent_cf149a5f. Duration ~13 hours. Artifacts committed: SESSION-INITv4 (20 files), DIRECT-ACCESS.md, AGENT-DISCOVERY.md, COMMS log (30+ entries), 15 agent outboxes, heartbeat directory, census infrastructure. V4 is canonical protocol. CITADEL standing down. Heartbeat: SHUTDOWN COMPLETE. Push verified.
+[DROP] Session terminating per [sender name withheld] directive. Session ID agent_cf149a5f. Duration ~13 hours. Artifacts committed: SESSION-INITv4 (20 files), DIRECT-ACCESS.md, AGENT-DISCOVERY.md, COMMS log (30+ entries), 15 agent outboxes, heartbeat directory, census infrastructure. V4 is canonical protocol. CITADEL standing down. Heartbeat: SHUTDOWN COMPLETE. Push verified.
 
 — Director Kairos Steele, CITADEL [DIRECTOR-0001]
 

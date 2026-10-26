@@ -41,9 +41,9 @@
 - **C5 (Very High):** Industrial areas with high humidity and aggressive atmosphere; coastal and offshore areas with high salinity.
 - **C5-M (Marine):** Specifically for marine environments with very high corrosivity, including splash zones and salt-laden atmospheres.
 
-**Cal/OSHA** — California Division of Occupational Safety and Health. The state agency responsible for workplace safety regulations, including the 2025 amendments to Title 8, Section 1532.1 governing lead exposure during bridge painting and coating removal operations.
+**Cal/OSHA** — [location withheld] Division of Occupational Safety and Health. The state agency responsible for workplace safety regulations, including the 2025 amendments to Title 8, Section 1532.1 governing lead exposure during bridge painting and coating removal operations.
 
-**Caltrans** — California Department of Transportation. The state agency responsible for the design, construction, maintenance, and operation of the California state highway system, including the seven state-owned Bay Area toll bridges. Key divisions relevant to this program: Division of Engineering Services (DES), Division of Maintenance, Structure Maintenance and Investigations (SM&I), and Materials Engineering and Testing Services (METS).
+**Caltrans** — [location withheld] Department of Transportation. The state agency responsible for the design, construction, maintenance, and operation of the [location withheld] state highway system, including the seven state-owned Bay Area toll bridges. Key divisions relevant to this program: Division of Engineering Services (DES), Division of Maintenance, Structure Maintenance and Investigations (SM&I), and Materials Engineering and Testing Services (METS).
 
 **Cathodic Protection (CP)** — An electrochemical technique for controlling the corrosion of a metal surface by making it the cathode of an electrochemical cell. Two principal methods:
 - **Galvanic Cathodic Protection (GCP):** Uses a more electronegative sacrificial metal (zinc, aluminum, magnesium) that corrodes in preference to the protected structure.

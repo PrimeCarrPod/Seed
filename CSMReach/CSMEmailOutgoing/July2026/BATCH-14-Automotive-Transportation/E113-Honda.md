@@ -66,7 +66,7 @@ Honda's Ohio manufacturing ecosystem — Marysville Auto Plant, East Liberty Aut
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

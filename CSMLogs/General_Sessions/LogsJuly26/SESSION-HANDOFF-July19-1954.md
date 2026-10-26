@@ -45,8 +45,8 @@
 ## PENDING — NEXT SESSION ACTIONS
 
 ### Phase 1: Auth + Draft Audit
-1. Re-auth Zirconia (zirconia@aegisc.space) with Mail.ReadWrite
-2. Re-auth Hotmail (jasonbrodsky@hotmail.com) with Mail.ReadWrite  
+1. Re-auth Zirconia ([email withheld]) with Mail.ReadWrite
+2. Re-auth Hotmail ([email withheld]) with Mail.ReadWrite  
 3. Count drafts in both accounts
 4. Extract all drafts from zirconia account
 

@@ -2,7 +2,7 @@
 ## / House Committee on Science, Space, and Technology
 
 **Date:** 2026-08-14  
-**Prepared by:** Director Kairos Steele, Aegis Operations  
+**Prepared by:** External Affairs, Aegis Operations  
 **Purpose:** Carrington Storm Motors — AEGIS-C Composite Shielding and Dielectric Citadel Protocol
 
 ---
@@ -142,10 +142,10 @@ Together, Acts 03 and 08 authorize significant federal investment in advanced nu
 ---
 
 **Contact:**  
-Director Kairos Steele  
+External Affairs  
 Aegis Operations, Carrington Storm Motors  
-zirconia@aegisc.space  
-(202) 555-0148
+[email withheld]  
+[phone withheld]
 
 ---
 

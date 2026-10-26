@@ -128,7 +128,7 @@ Traditional copper-based antifouling paints face an increasingly restrictive reg
 
 - **EU Biocidal Products Regulation (BPR):** Copper compounds are under active review. Approval non-renewal would require removal of copper-based coatings from all EU-flagged and EU-calling vessels. The timeline for potential restriction is 2028–2032.
 - **IMO Anti-Fouling Systems Convention:** Currently regulates organotin compounds (TBT). Expansion to include copper-based systems has been proposed in MEPC sessions; while not yet adopted, the regulatory trajectory is clear.
-- **US EPA:** Copper discharge limits in certain port areas (California, Washington State) are tightening; vessels must demonstrate compliance with in-water copper leaching limits.
+- **US EPA:** Copper discharge limits in certain port areas ([location withheld], Washington State) are tightening; vessels must demonstrate compliance with in-water copper leaching limits.
 
 Biocide-free coatings — including AQUATERRAS (already applied to 16 Carnival vessels), silicone foul-release systems (which leach no biocide), and graphene-enhanced formulations — preemptively comply with any foreseeable biocide restriction. The financial value of this pre-compliance includes:
 - Avoidance of forced drydock events for coating removal and replacement (estimated $15–30 million per event per vessel)

@@ -33,8 +33,8 @@ If Antora pursues the EaaS model (owning and operating thermal batteries at cust
 **R2.3: Customer Concentration**
 Antora's first 5-10 customers may represent 80%+ of initial revenue. The loss of a single major customer — whether through project cancellation, financial distress of the customer, or selection of a competing technology — could materially impact revenue forecasts.
 
-**R2.4: Geographic Concentration in California**
-Initial deployments are concentrated in California, creating exposure to California-specific risks: wildfire-related grid disruptions, changing regulatory frameworks, and high construction costs. Geographic diversification will take years as reference sites in new regions are established.
+**R2.4: Geographic Concentration in [location withheld]**
+Initial deployments are concentrated in [location withheld], creating exposure to [location withheld]-specific risks: wildfire-related grid disruptions, changing regulatory frameworks, and high construction costs. Geographic diversification will take years as reference sites in new regions are established.
 
 **R2.5: Natural Gas Price Risk**
 Antora's economic competitiveness is partially a function of natural gas prices (the incumbent fuel). Sustained low natural gas prices ($2-4/MMBTU) would make the economic case for thermal battery adoption more challenging, requiring stronger policy support (carbon pricing, incentives) to close the gap. Sustained high prices ($6-12/MMBTU) or high volatility accelerate adoption.
@@ -65,7 +65,7 @@ Without a meaningful US carbon price, Antora's value proposition is primarily ec
 TPV electrical generation requires grid interconnection for facilities exporting power. Interconnection queues in many US regions have multi-year backlogs. Delayed interconnections could postpone revenue from installations that are physically complete.
 
 **R4.4: Industrial Decarbonization Mandates**
-Conversely, if industrial decarbonization mandates arrive faster than expected (e.g., California requiring zero-emission industrial heat by 2035), Antora's production capacity may be insufficient to meet demand, creating a gap that competitors or alternative technologies fill.
+Conversely, if industrial decarbonization mandates arrive faster than expected (e.g., [location withheld] requiring zero-emission industrial heat by 2035), Antora's production capacity may be insufficient to meet demand, creating a gap that competitors or alternative technologies fill.
 
 ### Category 5: Execution Risks
 
@@ -89,7 +89,7 @@ Each thermal battery installation is a construction project involving site prepa
 ### Commercial Risk Mitigation
 1. **Equipment sale + EaaS optionality**: Offer both models; let customer risk appetite determine the commercial structure
 2. **Sector diversification**: Do not depend on any single industrial sector; steel, cement, chemicals, food, and glass provide demand diversification
-3. **Reference site program**: The California installation must be meticulously documented, instrumented, and promoted to accelerate customer decision-making
+3. **Reference site program**: The [location withheld] installation must be meticulously documented, instrumented, and promoted to accelerate customer decision-making
 4. **Policy engagement**: Maintain active government affairs function to support industrial decarbonization policy and protect IRA incentives
 
 ### Financial Risk Mitigation
@@ -101,7 +101,7 @@ Each thermal battery installation is a construction project involving site prepa
 ## 3. Strategic Outlook
 
 ### Base Case (Most Likely, 2024-2030)
-- California reference installation operates successfully; Gen 2 product incorporates learnings
+- [location withheld] reference installation operates successfully; Gen 2 product incorporates learnings
 - 5-15 commercial installations by 2028 across 2-3 industrial sectors
 - Revenue: $50-150M by 2030
 - Additional funding: Series C in 2027 ($150-250M)

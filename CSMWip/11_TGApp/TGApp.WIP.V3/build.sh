@@ -3,6 +3,11 @@
 
 set -e
 
+# Signing credentials are supplied by the environment; never commit them.
+: "${ANDROID_KEYSTORE_PASS:?Set ANDROID_KEYSTORE_PASS before building}"
+export ANDROID_KEYSTORE_PASS
+export ANDROID_KEY_PASS="${ANDROID_KEY_PASS:-$ANDROID_KEYSTORE_PASS}"
+
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_ROOT"
 
@@ -23,9 +28,9 @@ ZIPALIGN="$BUILD_TOOLS/zipalign"
 APKSIGNER="$BUILD_TOOLS/apksigner"
 KEYSTORE="$PROJECT_ROOT/debug.keystore"
 
-KEYSTORE_PASS="android"
+KEYSTORE_PASS="$ANDROID_KEYSTORE_PASS"
 KEY_ALIAS="androiddebugkey"
-KEY_PASS="android"
+KEY_PASS="$ANDROID_KEY_PASS"
 
 BUILD_DIR="$PROJECT_ROOT/build"
 SRC_DIR="$PROJECT_ROOT/src"
@@ -175,8 +180,8 @@ align_and_sign() {
     run_cmd "$ZIPALIGN" -f 4 "$unaligned_with_assets" "$ALIGNED"
     run_cmd "$APKSIGNER" sign \
         --ks "$KEYSTORE" \
-        --ks-pass "pass:$KEYSTORE_PASS" \
-        --key-pass "pass:$KEY_PASS" \
+        --ks-pass env:ANDROID_KEYSTORE_PASS \
+        --key-pass env:ANDROID_KEY_PASS \
         "$ALIGNED"
     
     mv "$ALIGNED" "$OUTPUT_APK"

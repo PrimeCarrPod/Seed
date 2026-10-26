@@ -1,6 +1,6 @@
 # CLPS CAMPAIGN — OUTREACH EXECUTION LOG
 ## Week 1-2 Actions Executed: August 26, 2026
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -10,9 +10,9 @@
 ### Template 1: NASA CLPS Program Office
 **Sent:** August 26, 2026 08:00 UTC  
 **To:** 
-- CLPS Program Manager (exploration-systems@nasa.gov)
-- Chief Engineer, Exploration Systems Development (chief.engineer@nasa.gov)
-- Associate Administrator for Exploration (aa-exploration@nasa.gov)
+- CLPS Program Manager ([email-0ad9ab34c4c2])
+- Chief Engineer, Exploration Systems Development ([email-a9c2bb11d4d9])
+- Associate Administrator for Exploration ([email-9313013caaac])
 
 **Subject:** Unsolicited Proposal — LBFRP-001 Monolithic Composite for CLPS Lander Risk Reduction
 **Tracking ID:** CSM-CLPS-NASA-20260826-001
@@ -26,15 +26,15 @@
 
 | # | Contractor | Lander | Task Order | Chief Engineer Contact | Tracking ID |
 |---|------------|--------|------------|------------------------|-------------|
-| 1 | **Astrobotic** | Griffin/VIPER | TO-19G | structures@astrobotic.com | CSM-CLPS-AB-20260826-001 |
-| 2 | **Intuitive Machines** | IM-2, IM-3, Nova-C | TO-19D, 19F, 19H | chief.engineer@intuitivemachines.com | CSM-CLPS-IM-20260826-002 |
-| 3 | **Firefly Aerospace** | Blue Ghost 2, 3 | TO-19E, 19I | structures@fireflyspace.com | CSM-CLPS-FF-20260826-003 |
-| 4 | **Draper** | SERIES-2 | TO-19J | structures@draper.com | CSM-CLPS-DR-20260826-004 |
-| 5 | **SpaceX** | Starship HLS | HLS | structures@spacex.com | CSM-CLPS-SX-20260826-005 |
-| 6 | **Blue Origin** | Blue Moon | — | structures@blueorigin.com | CSM-CLPS-BO-20260826-006 |
-| 7 | **Lockheed Martin** | Crewed Lander | — | structures@lmco.com | CSM-CLPS-LM-20260826-007 |
-| 8 | **Sierra Space** | Dream Chaser Lunar / LIFE | — | structures@sierraspace.com | CSM-CLPS-SS-20260826-008 |
-| 9 | **ispace** | Series 2/3 | — | engineering@ispace-inc.com | CSM-CLPS-IS-20260826-009 |
+| 1 | **Astrobotic** | Griffin/VIPER | TO-19G | [email-15aebdb9a03a] | CSM-CLPS-AB-20260826-001 |
+| 2 | **Intuitive Machines** | IM-2, IM-3, Nova-C | TO-19D, 19F, 19H | [email-8fefe6ef7bf4] | CSM-CLPS-IM-20260826-002 |
+| 3 | **Firefly Aerospace** | Blue Ghost 2, 3 | TO-19E, 19I | [email-14e88cfeec96] | CSM-CLPS-FF-20260826-003 |
+| 4 | **Draper** | SERIES-2 | TO-19J | [email-8372024d9e26] | CSM-CLPS-DR-20260826-004 |
+| 5 | **SpaceX** | Starship HLS | HLS | [email-6f8cfdd8baec] | CSM-CLPS-SX-20260826-005 |
+| 6 | **Blue Origin** | Blue Moon | — | [email-f0e7da04c8b0] | CSM-CLPS-BO-20260826-006 |
+| 7 | **Lockheed Martin** | Crewed Lander | — | [email-f44562353638] | CSM-CLPS-LM-20260826-007 |
+| 8 | **Sierra Space** | Dream Chaser Lunar / LIFE | — | [email-de29a167a13b] | CSM-CLPS-SS-20260826-008 |
+| 9 | **ispace** | Series 2/3 | — | [email-64bae5ffe92d] | CSM-CLPS-IS-20260826-009 |
 
 **Subject:** Demonstration Article Offer — LBFRP-001 Monolithic Composite for [Lander Name] Structure Validation
 **Offer:** No cost, no obligation, your test facility, your procedures, ship within 30 days
@@ -45,7 +45,7 @@
 
 ### Template 3: FAA AST Materials Branch
 **Sent:** August 26, 2026 09:00 UTC  
-**To:** FAA AST Materials Specialist (ast-materials@faa.gov)
+**To:** FAA AST Materials Specialist ([email-a271b67e29b1])
 
 **Subject:** Pre-Application Consultation — LBFRP-001 Novel Composite for CLPS-Class Lunar Lander Launch License
 **Tracking ID:** CSM-CLPS-FAA-20260826-001
@@ -60,7 +60,7 @@
 **Submitted:** August 26, 2026 10:00 UTC via NSPIRES  
 **Proposal ID:** SBIR-2026-CLPS-001 (confirmation received)  
 **Topic:** Lightweight Structures for Lunar Landers / Radiation Shielding Materials / ISRU / Autonomous Manufacturing  
-**PI:** Jason Isaac Brodsky (Carrington Storm Motors)  
+**PI:** [sender name withheld] (Carrington Storm Motors)  
 **Co-I:** Nematron AI (NVIDIA Nemotron 3 Ultra)  
 **Budget:** $150,000 / 6 months  
 **Objectives:**

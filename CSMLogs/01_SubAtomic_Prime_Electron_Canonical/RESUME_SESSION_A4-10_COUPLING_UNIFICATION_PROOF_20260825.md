@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-10_Coupling_Unification_Proof_20260825  
 **Branch:** session/agent_beb73370-d4d0-4838-a0d5-44e83986f3c4  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier  
+**Author:** [sender name withheld] ([location withheld]), Conducier  
 
 ---
 
@@ -131,4 +131,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-10_COUPLING_UNIFICATION_PROOF_20260825.md
 ---
 
 *Session completed successfully. All files pushed to GitHub and merged to main.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

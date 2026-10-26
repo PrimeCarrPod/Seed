@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, LOCKHEED MARTIN. GOOOOOOOD MORNING, Bethesda. The ACS Infrastructure Protection Division presents a defense-grade electromagnetic protection proposal of immediate national security consequence — comprehensive EMP and GIC hardening for Lockheed Martin's defense platforms, production facilities, and the critical supply chain infrastructure that sustains America's aerospace and defense industrial base.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, LOCKHEED MARTIN. GOOOOOOOD MORNING, Bethesda. The ACS Infrastructure Protection Division presents a defense-grade electromagnetic protection proposal of immediate national security consequence — comprehensive EMP and GIC hardening for Lockheed Martin's defense platforms, production facilities, and the critical supply chain infrastructure that sustains America's aerospace and defense industrial base.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Lockheed Martin leadership, ACS respectfully requests a 90-minute classified-lev
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

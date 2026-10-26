@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, WILDLIFE CONSERVATION SOCIETY. GOOOOOOOD MORNING, WCS. GOOOOOOOD MORNING, to the organization that manages the world's largest system of urban wildlife parks, operates conservation programs in 60+ countries, and has been at the forefront of wildlife conservation since 1895 — including the foundational insight that habitat connectivity, not just protected area size, determines species survival. The AEGIS Public Lands Division is reaching out to present three products specifically designed for the conservation-wildlife-fire interface that WCS field programs navigate daily: Bio-Path animal corridor road surfaces, Mana Fire-Veil conservation area wildfire defense pods, and Aegis dielectric fencing that doesn't fragment.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, WILDLIFE CONSERVATION SOCIETY. GOOOOOOOD MORNING, WCS. GOOOOOOOD MORNING, to the organization that manages the world's largest system of urban wildlife parks, operates conservation programs in 60+ countries, and has been at the forefront of wildlife conservation since 1895 — including the foundational insight that habitat connectivity, not just protected area size, determines species survival. The AEGIS Public Lands Division is reaching out to present three products specifically designed for the conservation-wildlife-fire interface that WCS field programs navigate daily: Bio-Path animal corridor road surfaces, Mana Fire-Veil conservation area wildfire defense pods, and Aegis dielectric fencing that doesn't fragment.
 
 **PARAGRAPH 2 — THE CONSERVATION INFRASTRUCTURE PARADOX**
 
@@ -49,11 +49,11 @@ WCS leadership, ACS respectfully requests a 60-minute technical briefing — ava
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Public Lands Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

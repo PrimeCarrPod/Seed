@@ -298,7 +298,7 @@ if [ ! -f debug.keystore ]; then
         -keyalg RSA -keysize 2048 \
         -validity 10000 \
         -dname "CN=Android Debug,O=Android,C=US" \
-        -storepass android -keypass android
+        -storepass "$ANDROID_KEYSTORE_PASS" -keypass "$ANDROID_KEY_PASS"
 fi
 ```
 

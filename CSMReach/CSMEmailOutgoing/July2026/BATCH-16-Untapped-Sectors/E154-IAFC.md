@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, INTERNATIONAL ASSOCIATION OF FIRE CHIEFS. GOOOOOOOD MORNING, IAFC President and Board. GOOOOOOOD MORNING, to the 12,000 chief officers who lead fire departments across 30 countries — the people who decide what equipment their firefighters carry, what training they receive, and what survival tools they trust. The AEGIS Fire Safety Division is reaching out to propose an IAFC-led Mana Fire-Veil certification and training standard for integration into both structural and wildland firefighting operations.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, INTERNATIONAL ASSOCIATION OF FIRE CHIEFS. GOOOOOOOD MORNING, IAFC President and Board. GOOOOOOOD MORNING, to the 12,000 chief officers who lead fire departments across 30 countries — the people who decide what equipment their firefighters carry, what training they receive, and what survival tools they trust. The AEGIS Fire Safety Division is reaching out to propose an IAFC-led Mana Fire-Veil certification and training standard for integration into both structural and wildland firefighting operations.
 
 **PARAGRAPH 2 — THE TRAINING & CERTIFICATION GAP**
 
@@ -45,11 +45,11 @@ IAFC President and Executive Director, ACS respectfully requests a 45-minute int
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Fire Safety Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

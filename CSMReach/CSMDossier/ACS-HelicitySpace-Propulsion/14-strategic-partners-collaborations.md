@@ -57,7 +57,7 @@ U.S. industrial competitiveness in advanced technology.
 
 | Institution | Expertise | Role |
 |---|---|---|
-| **California Institute of Technology (Caltech)** | Plasma physics, astrophysical jets | MHD theory, jet stability analysis |
+| **[location withheld] Institute of Technology (Caltech)** | Plasma physics, astrophysical jets | MHD theory, jet stability analysis |
 | **Centre National de la Recherche Scientifique (CNRS, France)** | Magnetic reconnection, laboratory astrophysics | Reconnection heating physics, diagnostic development |
 | **University of Tokyo** | Magnetized plasma, fusion science | Plasma gun design, magnetic nozzle physics |
 | **University of Maryland, Baltimore County (UMBC)** | Plasma diagnostics, spectroscopy | Spectroscopic diagnostic design |

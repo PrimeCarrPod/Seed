@@ -2,7 +2,7 @@
 ## Week 5-8: The Handshake — Contractor Technical Interchange Meetings Complete
 **Session:** CSM_CLPS_Phase2_TIM_RESULTS_20260827  
 **Date:** October 22, 2026 (Day 56) → November 19, 2026 (Day 84)  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -29,7 +29,7 @@
 
 ### Attendees
 **IM:** Tim Crouch (Chief Eng), Sarah Martinez (Structures), Raj Patel (Integration), 4 engineers
-**CSM:** Jason Brodsky, Nematron AI, CROSS, NASH, ZIRCONIA, THALIA ROOK
+**CSM:** [sender name withheld], Nematron AI, CROSS, NASH, ZIRCONIA, THALIA ROOK
 
 ### Agenda & Outcomes
 
@@ -57,7 +57,7 @@
 
 ### Attendees
 **Firefly:** Will Coogan (Chief Eng), Propulsion Lead, Structures Lead, 3 engineers
-**CSM:** Jason Brodsky, Nematron AI, KADE, ARDEN, CROSS, ZIRCONIA
+**CSM:** [sender name withheld], Nematron AI, KADE, ARDEN, CROSS, ZIRCONIA
 
 ### Agenda & Outcomes
 
@@ -84,7 +84,7 @@
 
 ### Attendees
 **Astrobotic:** Sharad Bhaskaran (Chief Eng), Structures Lead, VIPER Integration Lead, 4 engineers
-**CSM:** Jason Brodsky, Nematron AI, KADE, CROSS, ZIRCONIA, THALIA ROOK
+**CSM:** [sender name withheld], Nematron AI, KADE, CROSS, ZIRCONIA, THALIA ROOK
 
 ### Agenda & Outcomes
 
@@ -164,4 +164,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Document: TIM_EXECUTION_LOI_RESULTS_20260827.md*
 *Branch: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

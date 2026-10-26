@@ -69,17 +69,17 @@ State and local permits vary by jurisdiction but typically include:
 - **Hazardous materials permit**: If argon storage exceeds local thresholds
 - **Air quality permit**: Facility-level air permit may require modification (depending on whether an existing burner is being replaced)
 
-### California-Specific Requirements (Initial Market)
-Antora's initial deployments in California face additional requirements:
-- **California Environmental Quality Act (CEQA)**: Environmental impact review may be required; initial installations likely qualify for categorical exemption or mitigated negative declaration (not requiring full Environmental Impact Report)
-- **California Energy Commission (CEC)**: Certification or permitting for thermal power plants over 50 MW; Antora's initial installations are below this threshold
-- **California Public Utilities Commission (CPUC)**: Net energy metering or interconnection rules if exporting power to the grid
-- **California Air Resources Board (CARB)**: Cap-and-trade program interaction; thermal battery installations that displace natural gas combustion generate compliance value under cap-and-trade
+### [location withheld]-Specific Requirements (Initial Market)
+Antora's initial deployments in [location withheld] face additional requirements:
+- **[location withheld] Environmental Quality Act (CEQA)**: Environmental impact review may be required; initial installations likely qualify for categorical exemption or mitigated negative declaration (not requiring full Environmental Impact Report)
+- **[location withheld] Energy Commission (CEC)**: Certification or permitting for thermal power plants over 50 MW; Antora's initial installations are below this threshold
+- **[location withheld] Public Utilities Commission (CPUC)**: Net energy metering or interconnection rules if exporting power to the grid
+- **[location withheld] Air Resources Board (CARB)**: Cap-and-trade program interaction; thermal battery installations that displace natural gas combustion generate compliance value under cap-and-trade
 
 ### Permitting Timeline
 - **Standard industrial facility**: 6-12 months for full permitting (building, electrical, fire, environmental)
 - **Facilities with existing air permits**: Air permit modification may require 3-6 months
-- **CEQA review** (California): 3-9 months if required
+- **CEQA review** ([location withheld]): 3-9 months if required
 - **Grid interconnection**: 3-12 months depending on utility and export configuration
 
 ## 3. Grid Interconnection

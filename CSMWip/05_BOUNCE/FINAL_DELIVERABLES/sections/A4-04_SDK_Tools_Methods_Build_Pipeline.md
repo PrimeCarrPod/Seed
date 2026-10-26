@@ -39,7 +39,7 @@
 - **Version:** JDK 17 included
 - **First Used:** 1.0.0 | **Last Used:** 1.0.91
 - **Purpose:** Debug keystore generation
-- **Command:** `keytool -genkey -alias androiddebugkey -keystore debug.keystore -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000`
+- **Command:** `keytool -genkey -alias androiddebugkey -keystore debug.keystore -storepass "$ANDROID_KEYSTORE_PASS" -keypass "$ANDROID_KEY_PASS" -dname "CN=Android Debug,O=Android,C=US" -keyalg RSA -keysize 2048 -validity 10000`
 - **Known Issue:** None
 - **Best Practice:** Auto-generate if missing (BP003), separate release keystore needed (TD-08)
 
@@ -120,7 +120,7 @@ This piece covers the Java toolchain (JDK 17, javac with source/target 11, keyto
 - **Version:** 33.0.1
 - **First Used:** 1.0.0 | **Last Used:** 1.0.91
 - **Purpose:** Sign APK with debug/release keystore
-- **Command:** `apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android --out signed.apk aligned.apk`
+- **Command:** `apksigner sign --ks debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS --key-pass env:ANDROID_KEY_PASS --out signed.apk aligned.apk`
 - **Known Issue:** None
 - **Best Practice:** Auto-gen debug keystore (BP003), release keystore separate (TD-08)
 
@@ -325,8 +325,8 @@ zipalign -p -f 4 base.apk aligned.apk
 
 # 7. apksigner
 apksigner sign --ks debug.keystore \
-  --ks-pass pass:android \
-  --key-pass pass:android \
+  --ks-pass env:ANDROID_KEYSTORE_PASS \
+  --key-pass env:ANDROID_KEY_PASS \
   --out Bounce-v${VERSION}.apk \
   aligned.apk
 
@@ -1079,7 +1079,7 @@ This piece provides the complete automated SDK installation script (setup_sdk.sh
 
 ### apksigner
 - Auto-gen debug keystore if missing (BP003)
-- Use `--ks-pass pass:android --key-pass pass:android` for automation
+- Export `ANDROID_KEYSTORE_PASS` and `ANDROID_KEY_PASS`, then use `--ks-pass env:ANDROID_KEYSTORE_PASS --key-pass env:ANDROID_KEY_PASS` for automation
 - Verify with `apksigner verify`
 
 ### sdkmanager

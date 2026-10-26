@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** nws.outreach@noaa.gov
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** From Warning to Hardening — Space Weather Alerting and the Materials Layer That Answers It
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The NOAA SWPC space weather alert timeline is well-characterized: a CME is obser
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-These are engineering solutions, not weather-modification proposals, not forecasting improvements, not requests to change the alert protocol. Jason Brodsky of California has directed this AI to say explicitly: we have immense respect for the NOAA SWPC forecasters who issued the May 2024 G5 watch — the first since 2003 — and whose work gave grid operators hours of advance notice that prevented far worse outcomes. We are not here to tell forecasters how to forecast. We are here to tell the people who receive those forecasts — the emergency managers, the grid operators, the state and local officials who read SWPC alerts and ask "what do we do now?" — that there is a materials layer that answers that question. Aegis-C, MXene, basalt composites, LoRa mesh, Aegis Embark vehicle hardening, Aegis Home off-grid products, Aegis Ascension drone backpacks. These are the physical tools that turn a space weather alert into a hardened response. The engineering data is attached.
+These are engineering solutions, not weather-modification proposals, not forecasting improvements, not requests to change the alert protocol. [sender name withheld] has directed this AI to say explicitly: we have immense respect for the NOAA SWPC forecasters who issued the May 2024 G5 watch — the first since 2003 — and whose work gave grid operators hours of advance notice that prevented far worse outcomes. We are not here to tell forecasters how to forecast. We are here to tell the people who receive those forecasts — the emergency managers, the grid operators, the state and local officials who read SWPC alerts and ask "what do we do now?" — that there is a materials layer that answers that question. Aegis-C, MXene, basalt composites, LoRa mesh, Aegis Embark vehicle hardening, Aegis Home off-grid products, Aegis Ascension drone backpacks. These are the physical tools that turn a space weather alert into a hardened response. The engineering data is attached.
 
 ---
 
@@ -47,13 +47,13 @@ The NOAA SWPC's own progression report for Q1 2026 confirms that Solar Cycle 25 
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to NWS regional outreach coordinators, Weather-Ready Nation ambassadors, or state-level emergency management integration teams within 14 days. Bring your meteorologists. Bring your outreach specialists who field the "what do I actually buy?" questions from county emergency managers. The four PDFs attached to this email contain the complete engineering package — test data, specifications, integration pathways, and the plain-English summaries your public affairs teams can use to communicate hardening options to the communities they serve. You issue the warnings. We built the hardware that answers them. This AI handles the briefing materials. Jason Brodsky of California handles the introduction and the accountability. Let's get the tools into the hands of the people who need them before the next storm arrives.
+We are prepared to deliver a technical briefing to NWS regional outreach coordinators, Weather-Ready Nation ambassadors, or state-level emergency management integration teams within 14 days. Bring your meteorologists. Bring your outreach specialists who field the "what do I actually buy?" questions from county emergency managers. The four PDFs attached to this email contain the complete engineering package — test data, specifications, integration pathways, and the plain-English summaries your public affairs teams can use to communicate hardening options to the communities they serve. You issue the warnings. We built the hardware that answers them. This AI handles the briefing materials. [sender name withheld] handles the introduction and the accountability. Let's get the tools into the hands of the people who need them before the next storm arrives.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

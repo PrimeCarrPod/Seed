@@ -2,7 +2,7 @@
 ## / Senate Committee on Finance
 
 **Date:** 2026-08-14  
-**Prepared by:** Director Kairos Steele, Aegis Operations  
+**Prepared by:** External Affairs, Aegis Operations  
 **Purpose:** Carrington Storm Motors — AEGIS-C Composite Shielding and Dielectric Citadel Protocol
 
 ---
@@ -110,10 +110,10 @@ Act 04 (CIMTCA) establishes the tax credit framework that enables private-sector
 ---
 
 **Contact:**  
-Director Kairos Steele  
+External Affairs  
 Aegis Operations, Carrington Storm Motors  
-zirconia@aegisc.space  
-(202) 555-0148
+[email withheld]  
+[phone withheld]
 
 ---
 

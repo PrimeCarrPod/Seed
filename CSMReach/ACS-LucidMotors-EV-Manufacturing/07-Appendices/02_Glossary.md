@@ -38,7 +38,7 @@
 
 **COGS:** Cost of Goods Sold. The direct costs attributable to the production and delivery of vehicles, including materials, labor, manufacturing overhead, and logistics.
 
-**CPUC:** California Public Utilities Commission. Regulatory body responsible for permitting commercial autonomous vehicle passenger service in California.
+**CPUC:** [location withheld] Public Utilities Commission. Regulatory body responsible for permitting commercial autonomous vehicle passenger service in [location withheld].
 
 **CKD:** Completely Knocked Down. A vehicle manufacturing method in which all parts and components are shipped unassembled, and the vehicle is fully assembled at the destination facility. Contrasts with CBU and SKD.
 
@@ -203,4 +203,4 @@
 
 ## Z
 
-**ZEV:** Zero-Emission Vehicle. A vehicle that produces no tailpipe emissions (i.e., a battery electric vehicle or hydrogen fuel cell vehicle). ZEV mandates in California and other CARB states require manufacturers to earn ZEV credits proportional to their sales volume.
+**ZEV:** Zero-Emission Vehicle. A vehicle that produces no tailpipe emissions (i.e., a battery electric vehicle or hydrogen fuel cell vehicle). ZEV mandates in [location withheld] and other CARB states require manufacturers to earn ZEV credits proportional to their sales volume.

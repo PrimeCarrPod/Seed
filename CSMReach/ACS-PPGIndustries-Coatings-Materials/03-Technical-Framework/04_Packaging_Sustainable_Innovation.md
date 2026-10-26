@@ -52,7 +52,7 @@ The European Food Safety Authority (EFSA) significantly reduced the tolerable da
 
 ### 3.2 North America
 
-The US FDA maintains that BPA is safe at current exposure levels, but the market has moved ahead of regulation. Major beverage companies and food processors have announced voluntary BPA-free commitments. State-level regulatory fragmentation (California Proposition 65 warnings, Washington State regulatory action) adds compliance complexity.
+The US FDA maintains that BPA is safe at current exposure levels, but the market has moved ahead of regulation. Major beverage companies and food processors have announced voluntary BPA-free commitments. State-level regulatory fragmentation ([location withheld] Proposition 65 warnings, Washington State regulatory action) adds compliance complexity.
 
 ### 3.3 Asia Pacific
 

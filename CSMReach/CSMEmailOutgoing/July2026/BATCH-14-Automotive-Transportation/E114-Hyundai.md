@@ -66,7 +66,7 @@ Hyundai Motor Group's Georgia Metaplant represents one of the most aggressive EV
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

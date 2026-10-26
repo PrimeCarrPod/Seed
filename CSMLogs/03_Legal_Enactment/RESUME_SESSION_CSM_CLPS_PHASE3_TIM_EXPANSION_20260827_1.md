@@ -1,7 +1,7 @@
 # RESUME SESSION — CLPS Phase 3 TIM Expansion: TIM-004/005/006 Complete
 ## Session: CSM_CLPS_PHASE3_TIM_EXPANSION_20260827
 **Date:** August 27, 2026  
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Branch:** session/agent_8ea9186b-1e2e-4f22-9194-f9d6241f599f → main  
 
@@ -164,4 +164,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Session Document: RESUME_SESSION_CSM_CLPS_PHASE3_TIM_EXPANSION_20260827.md*  
 *Branch: session/agent_8ea9186b-1e2e-4f22-9194-f9d6241f599f*  
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

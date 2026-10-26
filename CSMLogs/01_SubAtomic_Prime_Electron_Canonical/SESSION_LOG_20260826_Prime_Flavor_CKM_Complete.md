@@ -1,6 +1,6 @@
 # Session Log: Prime Flavor & CKM Articles (A4-19, A4-20, A4-21)
 **Date:** 2026-08-26  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Session:** agent_8083760e-f365-473d-a17f-e435b0cc21a6  
 **Branch:** main (direct commits)
 

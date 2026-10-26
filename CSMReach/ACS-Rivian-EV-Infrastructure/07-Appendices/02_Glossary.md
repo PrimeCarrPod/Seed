@@ -149,7 +149,7 @@
 
 ## Z
 
-**ZEV (Zero-Emission Vehicle) Credits:** Tradeable regulatory credits earned by manufacturers for producing and selling zero-emission vehicles in states that have adopted California's ZEV program. Credits can be sold to other manufacturers to meet regulatory requirements.
+**ZEV (Zero-Emission Vehicle) Credits:** Tradeable regulatory credits earned by manufacturers for producing and selling zero-emission vehicles in states that have adopted [location withheld]'s ZEV program. Credits can be sold to other manufacturers to meet regulatory requirements.
 
 **Zonal Electrical Architecture:** An automotive electrical and electronic system architecture where control functions are organized by physical zones within the vehicle rather than by function, reducing wiring harness mass and complexity.
 

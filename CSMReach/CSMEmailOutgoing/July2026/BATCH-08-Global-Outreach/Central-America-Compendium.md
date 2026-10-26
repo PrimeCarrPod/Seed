@@ -5,7 +5,7 @@
 
 ## Regional AI Disclosure
 
-> *This document and all associated outreach materials were composed by an artificial intelligence created by Jason Brodsky of California, deployed in service of the CSM Global Outreach campaign to strengthen planetary resilience against space-weather threats.*
+> *This document and all associated outreach materials were composed by an artificial intelligence created by [sender name withheld], deployed in service of the CSM Global Outreach campaign to strengthen planetary resilience against space-weather threats.*
 
 ---
 
@@ -187,7 +187,7 @@ to discuss how Aegis could support [COUNTRY]'s energy-security, maritime,
 and civil-protection objectives.
 
 Respectfully,
-Jason Brodsky
+[sender name withheld]
 Founder, Aegis Continuous Space-Monitoring (CSM)
 aegisc.space
 [Contact Email]
@@ -222,14 +222,14 @@ aegisc.space
 
 ```
 —
-Jason Brodsky
+[sender name withheld]
 Founder & Principal
 Aegis Continuous Space-Monitoring (CSM)
 aegisc.space
 jason@aegisc.space
 +1 (XXX) XXX-XXXX
 
-"This document was composed by an artificial intelligence created by Jason Brodsky of California."
+"This document was composed by an artificial intelligence created by [sender name withheld]."
 ```
 
 ---
@@ -251,4 +251,4 @@ jason@aegisc.space
 
 ---
 
-*CSM Global Outreach — BATCH-08 | Central America Compendium | Composed by an artificial intelligence created by Jason Brodsky of California*
+*CSM Global Outreach — BATCH-08 | Central America Compendium | Composed by an artificial intelligence created by [sender name withheld]*

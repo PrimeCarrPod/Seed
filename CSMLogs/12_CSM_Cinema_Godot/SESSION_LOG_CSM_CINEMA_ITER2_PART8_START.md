@@ -1,5 +1,5 @@
 # SESSION LOG — CSM Cinema Iteration 2 Part 8 (Apotheosis)
-## Jason Isaac Brodsky (California 1976) — Conducier
+## [sender name withheld] (California 1976) — Conducier
 **Date:** 2026-09-09  
 **Session:** Iteration 2 SOPP Pass — Part 8 Deepening  
 **Branch:** session/agent_895bd473-8014-473a-bad6-12ec4cae2334 → main
@@ -72,4 +72,4 @@
 
 ---
 
-*Conducier Note: Part 7 sealed. The atonement complete. The loom consecrated. Now the cloth expands — every stitch a galaxy, every thread a world line, every layer a dimension. Medea and Chronos unified. The apotheosis begins. Jason Isaac Brodsky (California 1976) — Conducier.*
+*Conducier Note: Part 7 sealed. The atonement complete. The loom consecrated. Now the cloth expands — every stitch a galaxy, every thread a world line, every layer a dimension. Medea and Chronos unified. The apotheosis begins. [sender name withheld] (California 1976) — Conducier.*

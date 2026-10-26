@@ -1,18 +1,18 @@
 # E132-ACEP: American College of Emergency Physicians
 
 **To:** acep@acep.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Clinical Leadership for Extended-Outage Emergency Planning — The GMD Challenge
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All references to emergency medicine practice, hospital emergency department operations, and disaster medicine are based on publicly available medical literature and professional standards.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All references to emergency medicine practice, hospital emergency department operations, and disaster medicine are based on publicly available medical literature and professional standards.
 
 ---
 
 GOOOOOOOD MORNING, ACEP!
 
-Jason Brodsky at Aegis Cipher Space, reaching out from 221B Baker Street — because emergency physicians, like detectives, deal in differential diagnoses: systematically considering the possible causes of a presenting condition, eliminating those that do not fit the evidence, and acting on the diagnosis that remains. When we apply that same systematic approach to diagnosing the vulnerabilities in America's emergency medical infrastructure, GMD emerges as a condition that the healthcare system has not yet diagnosed — and undiagnosed conditions, as every emergency physician knows, are the ones that kill patients.
+[sender name withheld] at Aegis Cipher Space, reaching out from 221B Baker Street — because emergency physicians, like detectives, deal in differential diagnoses: systematically considering the possible causes of a presenting condition, eliminating those that do not fit the evidence, and acting on the diagnosis that remains. When we apply that same systematic approach to diagnosing the vulnerabilities in America's emergency medical infrastructure, GMD emerges as a condition that the healthcare system has not yet diagnosed — and undiagnosed conditions, as every emergency physician knows, are the ones that kill patients.
 
 The American College of Emergency Physicians represents the clinical leaders who will be on the front lines of any disaster response. ACEP's members run the emergency departments that serve as the entry point for disaster victims, the triage centers that sort the injured from the merely displaced, and the critical care safety net that catches patients when the rest of the healthcare system is overwhelmed. ACEP has developed excellent guidance for mass casualty incidents, chemical and biological exposures, and natural disaster response. But the clinical leadership for extended-outage scenarios — events where the hospital itself becomes resource-constrained not for hours but for weeks or months — has not been fully developed. A GMD event is precisely that scenario.
 
@@ -36,7 +36,7 @@ ACEP's voice on this issue would carry enormous weight. When emergency physician
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

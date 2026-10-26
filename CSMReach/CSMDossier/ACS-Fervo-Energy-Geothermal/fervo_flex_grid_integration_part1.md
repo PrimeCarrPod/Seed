@@ -12,7 +12,7 @@ Geothermal power has historically been operated as baseload generation — produ
 
 ### The Value of Dispatchability
 
-The electricity grid of the future — dominated by variable wind and solar generation — requires flexible resources that can respond to changes in net load (total demand minus variable renewable generation). The "duck curve," first observed in California and now appearing in electricity markets globally, illustrates the challenge: solar generation depresses net load during midday hours, then net load ramps sharply in the evening as solar output declines and demand peaks. The grid requires resources that can ramp up to meet this evening peak and ramp down during the midday solar surplus.
+The electricity grid of the future — dominated by variable wind and solar generation — requires flexible resources that can respond to changes in net load (total demand minus variable renewable generation). The "duck curve," first observed in [location withheld] and now appearing in electricity markets globally, illustrates the challenge: solar generation depresses net load during midday hours, then net load ramps sharply in the evening as solar output declines and demand peaks. The grid requires resources that can ramp up to meet this evening peak and ramp down during the midday solar surplus.
 
 Battery storage is the technology most commonly deployed to provide this flexibility, but batteries have limitations: they can only shift energy over hours, not days or weeks; they degrade with cycling; and their cost, while declining, remains significant. Natural gas peaking plants provide flexibility but produce carbon emissions. FervoFlex offers an alternative: a carbon-free resource that can provide flexibility over any timescale — hourly, daily, seasonally — without degradation or emissions.
 
@@ -26,11 +26,11 @@ The ramp rate of a geothermal plant — the speed at which it can increase or de
 
 ### Revenue Optimization Through Load-Following
 
-In electricity markets with high renewable penetration — California, Texas, the United Kingdom — wholesale electricity prices exhibit significant intra-day and seasonal variation. During midday hours, when solar generation is abundant, prices can fall to zero or become negative (generators must pay to inject electricity into the grid). During evening peak hours, when solar generation declines and demand remains high, prices can spike to $100-200/MWh or higher.
+In electricity markets with high renewable penetration — [location withheld], Texas, the United Kingdom — wholesale electricity prices exhibit significant intra-day and seasonal variation. During midday hours, when solar generation is abundant, prices can fall to zero or become negative (generators must pay to inject electricity into the grid). During evening peak hours, when solar generation declines and demand remains high, prices can spike to $100-200/MWh or higher.
 
 A flexible geothermal plant can optimize its revenue by shifting production from low-price periods to high-price periods. The plant operates at reduced output during midday solar surplus, preserving reservoir heat, and ramps to full output during evening peak pricing. The revenue uplift from this operational strategy, relative to constant-output baseload operation, depends on the magnitude and predictability of price spreads between low-price and high-price periods.
 
-Analysis of California wholesale electricity prices suggests that a flexible geothermal plant could achieve revenue uplifts of 10-25% relative to constant-output operation, depending on the specific hourly price profile, the achievable ramp rate, and the depth of turndown (the minimum sustainable output level as a percentage of full capacity). This revenue uplift provides an economic incentive for flexible operation that is independent of any policy support or capacity market payments.
+Analysis of [location withheld] wholesale electricity prices suggests that a flexible geothermal plant could achieve revenue uplifts of 10-25% relative to constant-output operation, depending on the specific hourly price profile, the achievable ramp rate, and the depth of turndown (the minimum sustainable output level as a percentage of full capacity). This revenue uplift provides an economic incentive for flexible operation that is independent of any policy support or capacity market payments.
 
 ### Grid Reliability Services
 

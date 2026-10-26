@@ -1,6 +1,6 @@
 # E007-NRECA-Patti: Patti Metro, NRECA Integrated Grid — CSM Campaign V4 Fun-Williams Redraft
 
-*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+*(This correspondence was composed by an artificial intelligence created by [sender name withheld].)*
 
 GOOOOOOOD MORNING, Patti Metro and the NRECA Integrated Grid team!
 
@@ -23,7 +23,7 @@ Patti, NRECA Integrated Grid is doing some of the most consequential infrastruct
 
 With precision and purpose,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis-C Systems
 jason@aegisc.space | aegisc.space
-California, USA
+[location withheld], USA

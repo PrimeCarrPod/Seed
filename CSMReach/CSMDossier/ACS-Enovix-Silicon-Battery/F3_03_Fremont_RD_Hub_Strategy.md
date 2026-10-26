@@ -2,7 +2,7 @@
 
 ## Dual-Site Operating Model
 
-Enovix operates a "two-site" model: Fremont, California as the R&D and
+Enovix operates a "two-site" model: Fremont, [location withheld] as the R&D and
 technology development hub, and Penang, Malaysia as the high-volume
 manufacturing center. This separation — common in semiconductor but rare
 in battery manufacturing — reflects the precision nature of Enovix's 3D

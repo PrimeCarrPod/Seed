@@ -109,7 +109,7 @@ The prime gap sequence forms a crystalline hypergraph with:
 4. **KEY_FINDINGS_EXECUTIVE_SUMMARY.md** — All Reinman numbers
 5. **MASTER_TREE.md** — Complete navigation
 
-**Contact:** jasonbrodsky@hotmail.com | Data: PrimeBookOne.github.io
+**Contact:** [email withheld] | Data: PrimeBookOne.github.io
 
 ---
 

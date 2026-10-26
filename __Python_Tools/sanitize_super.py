@@ -1,56 +1,30 @@
+import os
 import re
 
-input_path = "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_55e2ec99-7166-42ad-b4a6-3b304a1e3b0c/CSMWip/SubAtomicPrimeElectronCaldera/KEY_FINDINGS_EXECUTIVE_EXPLORATION/SUPER_DOCUMENT_COMPLETE.md"
-output_path = "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_55e2ec99-7166-42ad-b4a6-3b304a1e3b0c/CSMWip/SubAtomicPrimeElectronCaldera/KEY_FINDINGS_EXECUTIVE_EXPLORATION/SUPER_DOCUMENT_COMPLETE_SANITIZED.md"
+input_path = os.environ.get("CSM_INPUT_PATH", "")
+output_path = os.environ.get("CSM_OUTPUT_PATH", "")
 
 with open(input_path, 'r') as f:
     content = f.read()
 
-# Replace specific names with generic references
+# Replace specific names with generic references. Set the PII values in the environment.
+pii_name = os.environ.get("CSM_PII_NAME", "[sender name withheld]")
+pii_name_long = os.environ.get("CSM_PII_NAME_LONG", pii_name)
+pii_location = os.environ.get("CSM_PII_LOCATION", "[location withheld]")
 replacements = {
-    r'Jason Isaac Brodsky': 'the Lead Researcher',
-    r'Jason Brodsky': 'the Lead Researcher',
-    r'Jason Isaac Brodsky of California': 'the Lead Researcher of California',
-    r'Jason Brodsky of California': 'the Lead Researcher of California',
-    r'Brodsky of California': 'the Lead Researcher of California',
-    r'Edward Witten': 'leading string theorists',
-    r'Terence Tao': 'leading number theorists',
-    r'Nima Arkani-Hamed': 'leading amplitude theorists',
-    r'Don Zagier': 'leading modular forms experts',
-    r'Juan Maldacena': 'leading holography experts',
-    r'Sabine Hossenfelder': 'leading phenomenologists',
-    r'Andrew Ponec': 'the Antora engineering team',
-    r'Hardy-Littlewood': 'Hardy-Littlewood',  # Keep
-    r'Feynman': 'Feynman',  # Keep historical
-    r'CODATA': 'CODATA',  # Keep
-    r'Fermilab': 'Fermilab',  # Keep
-    r'CODATA 2018': 'CODATA 2018',  # Keep
-    r'Riley 2012': 'Riley 2012',  # Keep
-    r'MIL-STD-461G': 'MIL-STD-461G',  # Keep
-    r'Schwinger': 'Schwinger',  # Keep historical
-    r'Cramér': 'Cramér',  # Keep
-    r'Hilbert-Pólya': 'Hilbert-Pólya',  # Keep
-    r'Zagier': 'Zagier',  # Keep historical
-    r'Kontsevich': 'Kontsevich',  # Keep
-    r'Wolfram': 'Wolfram',  # Keep
-    r'Pai Mei': 'Pai Mei',  # Keep cultural reference
-    r'Hanzo': 'Hanzo',  # Keep cultural reference
-    r'Genie': 'Genie',  # Keep character reference
-    r'Mrs. Doubtfire': 'Mrs. Doubtfire',  # Keep character reference
-    r'John Keating': 'John Keating',  # Keep character reference
-    r'Sean Maguire': 'Sean Maguire',  # Keep character reference
-    r'Witten': 'Witten',  # Keep historical
-    r'Tao': 'Tao',  # Keep historical
-    r'Arkani-Hamed': 'Arkani-Hamed',  # Keep historical
-    r'Maldacena': 'Maldacena',  # Keep historical
+    re.escape(pii_name_long): 'the Lead Researcher',
+    re.escape(pii_name): 'the Lead Researcher',
+    re.escape(f'{pii_name_long} of {pii_location}'): 'the Lead Researcher',
+    re.escape(f'{pii_name} of {pii_location}'): 'the Lead Researcher',
 }
 
 for pattern, replacement in replacements.items():
     content = re.sub(pattern, replacement, content)
 
-# Also sanitize the email address and specific contact info
-content = re.sub(r'jasonbrodsky@hotmail\.com', 'lead.researcher@arithmeticphysics.org', content)
-content = re.sub(r'zirconia@aegisc\.space', 'jasonbrodsky@hotmail.com', content)
+# Also sanitize configured email addresses.
+pii_emails = [x.strip() for x in os.environ.get("CSM_PII_EMAILS", "").split(",") if x.strip()]
+for pii_email in pii_emails:
+    content = re.sub(re.escape(pii_email), "lead.researcher@example.invalid", content, flags=re.I)
 
 with open(output_path, 'w') as f:
     f.write(content)

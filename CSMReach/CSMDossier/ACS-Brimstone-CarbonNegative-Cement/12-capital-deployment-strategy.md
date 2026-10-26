@@ -58,7 +58,7 @@ per year** — a mid-scale plant by US standards (average US cement plant: ~800,
 
 At 500,000 t/yr, base case annual gross profit of **$38–41 million** supports debt
 service and reinvestment. The carbon-negative differentiation commands pricing power
-in markets with regulatory carbon costs (California, EU).
+in markets with regulatory carbon costs ([location withheld], EU).
 
 ## Scaling Economics
 

@@ -105,7 +105,7 @@ This work meets the Nobel criterion of **"the most important discovery or invent
 ## 6. CONTACT
 
 **Nominee:** Jason Isaac Brodsky  
-**Email:** jasonbrodsky@hotmail.com  
+**Email:** [email withheld]  
 **Framework:** Arithmetic Physics  
 **Data:** PrimeBookOne.github.io (remote, 3.67B gaps)  
 **Code:** TardigradiaTGPU/, landolil.engine/  

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Create email drafts with grant proposals as attachments for jasonbrodsky@hotmail.com
+Create email drafts with grant proposals as attachments for [email withheld]
 Uses the existing Microsoft Graph token - two-step: create draft, then add attachment
 """
 
@@ -9,13 +9,23 @@ import base64
 import urllib.request
 import urllib.parse
 import os
+from secure_token import load_access_token
 
 # Load token
-TOKEN_PATH = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_55e2ec99-7166-42ad-b4a6-3b304a1e3b0c/tmp_kilo/hotmail_token.json'
-with open(TOKEN_PATH) as f:
-    token = json.load(f)
+TOKEN_PATH = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/hotmail_token.json")
+ACCESS_TOKEN = load_access_token(TOKEN_PATH)
 
-ACCESS_TOKEN = token['access_token']
+_GRANT_RECIPIENTS = [x.strip() for x in os.environ.get("CSM_GRANT_RECIPIENTS", "").split(",") if x.strip()]
+_grant_recipient_index = 0
+
+def _next_grant_recipient():
+    global _grant_recipient_index
+    if _grant_recipient_index >= len(_GRANT_RECIPIENTS):
+        raise SystemExit("ERROR: set CSM_GRANT_RECIPIENTS to a comma-separated list of recipient addresses")
+    value = _GRANT_RECIPIENTS[_grant_recipient_index]
+    _grant_recipient_index += 1
+    return value
+
 HEADERS = {
     'Authorization': f'Bearer {ACCESS_TOKEN}',
     'Content-Type': 'application/json'
@@ -27,7 +37,7 @@ GRAPH_BASE = 'https://graph.microsoft.com/v1.0'
 GRANTS = [
     {
         'file': '01_FQXi_Zenith_Grant_Proposal.md',
-        'to': 'grants@fqxi.org',
+        'to': _next_grant_recipient(),
         'subject': 'FQXi Zenith Grant Application: Arithmetic Physics - Deriving the Fine Structure Constant from Prime Number Theory',
         'body': '''Dear FQXi Grants Committee,
 
@@ -46,8 +56,8 @@ The attached proposal includes full technical details, budget ($250K over 2 year
 We would be honored to discuss this paradigm-shifting research with you.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Author Conducier
 Framework: Arithmetic Physics
 Data: PrimeBookOne.github.io (3.67B prime gaps, remote access)
@@ -55,7 +65,7 @@ Code: TardigradiaTGPU/, landolil.engine/'''
     },
     {
         'file': '02_NSF_EPPT_Grant_Proposal.md',
-        'to': 'epp-theory@nsf.gov',
+        'to': _next_grant_recipient(),
         'subject': 'NSF EPP-T Proposal: Prime Gap Statistics and the Derivation of Standard Model Coupling Constants',
         'body': '''Dear NSF EPP-T Program Officer,
 
@@ -75,14 +85,14 @@ Budget request: $450,000 over 3 years (PI summer salary, postdoc, graduate stude
 We are actively seeking a university-affiliated Co-PI (target: MIT, Harvard, Stanford, Caltech, Princeton) and welcome guidance on the affiliation requirement.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Framework: Arithmetic Physics
 Data: PrimeBookOne.github.io (remote, no clone required)'''
     },
     {
         'file': '03_NSF_ANT_Grant_Proposal.md',
-        'to': 'ANT@nsf.gov',
+        'to': _next_grant_recipient(),
         'subject': 'NSF Algebra & Number Theory Proposal: Prime Gap Statistics and Physical Constants - A New Connection',
         'body': '''Dear NSF Algebra and Number Theory Program Officer,
 
@@ -105,14 +115,14 @@ Budget request: $200,000 over 3 years (PI summer salary, postdoc in number theor
 We seek a Co-PI with expertise in Hardy-Littlewood conjectures, explicit formulas, and modular forms.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Framework: Arithmetic Physics
 Data: PrimeBookOne.github.io (3.67B gaps, remote API)'''
     },
     {
         'file': '04_Simons_Collaboration_Grant_Proposal.md',
-        'to': 'mps@simonsfoundation.org',
+        'to': _next_grant_recipient(),
         'subject': 'Simons Collaboration MPS LOI: Arithmetic Physics Collaboration - Deriving Physical Law from Prime Number Theory',
         'body': '''Dear Simons Foundation MPS Team,
 
@@ -123,7 +133,7 @@ We propose a collaboration of 8-10 researchers (number theorists, QFT theorists,
 Key result: α⁻¹ = 2π/C₂ = 137.035999084... (first derivation of a fundamental constant from number theory).
 
 Collaboration structure:
-- Director: Jason Isaac Brodsky (Arithmetic Physics framework creator)
+- Director: [sender name withheld] (Arithmetic Physics framework creator)
 - PI 1: Number theorist (Hardy-Littlewood, explicit formulas, ζ-zeros)
 - PI 2: QFT theorist (precision QED, g-2, renormalization)
 - PI 3: Mathematical physicist (AdS/CFT, holography, worldline formalism)
@@ -138,14 +148,14 @@ Budget: $2M/year × 4 years = $8M total.
 This is exactly the type of fundamental, interdisciplinary research the Simons Foundation supports.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Framework: Arithmetic Physics
 Data: PrimeBookOne.github.io (remote, 3.67B gaps)'''
     },
     {
         'file': '05_Simons_Targeted_Grant_Proposal.md',
-        'to': 'mps@simonsfoundation.org',
+        'to': _next_grant_recipient(),
         'subject': 'Simons Targeted Research Group: Prime Gap Physics - From Number Theory to the Standard Model',
         'body': '''Dear Simons Foundation MPS Team,
 
@@ -161,16 +171,16 @@ Team: PI (Brodsky) + Co-PIs in number theory, QFT phenomenology, and mathematica
 Budget: $300,000 over 3 years (rolling LOI).
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976'''
+[sender name withheld]
+[location withheld]'''
     },
     {
         'file': '06_Breakthrough_Prize_Nomination.md',
-        'to': 'prizes@breakthroughprize.org',
+        'to': _next_grant_recipient(),
         'subject': 'Breakthrough Prize Nomination: Derivation of the Fine Structure Constant from Prime Number Theory',
         'body': '''Dear Breakthrough Prize Committee,
 
-Please find attached a nomination package for Jason Isaac Brodsky for the Breakthrough Prize in Fundamental Physics.
+Please find attached a nomination package for [sender name withheld] for the Breakthrough Prize in Fundamental Physics.
 
 Achievement: First derivation of a fundamental physical constant from pure number theory.
 
@@ -186,12 +196,12 @@ This work:
 This meets the Breakthrough Prize criterion for "paradigm-shifting discoveries in fundamental physics."
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976'''
+[sender name withheld]
+[location withheld]'''
     },
     {
         'file': '07_Clay_Institute_Proposal.md',
-        'to': 'info@claymath.org',
+        'to': _next_grant_recipient(),
         'subject': 'Clay Research Award: Prime Gap Statistics and the Riemann Hypothesis - Physical Evidence for Mathematical Theorems',
         'body': '''Dear Clay Mathematics Institute,
 
@@ -211,14 +221,14 @@ Our work provides a fundamentally new approach to classical problems in number t
 This represents a new paradigm: physical law as proof of mathematical conjectures.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Framework: Arithmetic Physics
 Data: PrimeBookOne.github.io (3.67B gaps)'''
     },
     {
         'file': '08_Perimeter_Institute_Proposal.md',
-        'to': 'visitors@perimeterinstitute.ca',
+        'to': _next_grant_recipient(),
         'subject': 'Perimeter Institute Visiting Scientist Application: Arithmetic Physics - Deriving Physical Law from Prime Numbers',
         'body': '''Dear Perimeter Institute Visiting Scientist Committee,
 
@@ -240,8 +250,8 @@ Proposed collaborations with Perimeter faculty (Dittrich, Myers, Smith, Vieira, 
 Visitor support requested: ~$101K for 6 months (stipend, travel, accommodation, insurance).
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Framework: Arithmetic Physics
 Data: PrimeBookOne.github.io (remote, 3.67B gaps)'''
     }
@@ -281,7 +291,7 @@ def create_draft(grant):
 
 def add_attachment(msg_id, grant):
     """Add attachment to a draft"""
-    proposal_path = f'/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_55e2ec99-7166-42ad-b4a6-3b304a1e3b0c/GrantProposals/{grant["file"]}'
+    proposal_path = os.path.join(os.environ.get("CSM_PROPOSALS_DIR", os.getcwd()), grant["file"])
     with open(proposal_path, 'r') as f:
         proposal_content = f.read()
     

@@ -52,9 +52,9 @@ Successfully created and deployed a complete grant campaign for the **Arithmetic
 ## EMAIL CAMPAIGN DEPLOYED
 
 ### Master Drafts (9-paragraph human-flow email)
-**Location:** Hotmail Drafts folder (jasonbrodsky@hotmail.com)
+**Location:** Hotmail Drafts folder ([email withheld])
 **To:** landolil@hotmail.com
-**CC:** zirconia@aegisc.space, prime@carrpod.net + 3+ sister addresses each
+**CC:** [email withheld], prime@carrpod.net + 3+ sister addresses each
 
 | # | Grant | To | Sister CC Addresses (3+) |
 |---|-------|-----|--------------------------|
@@ -127,7 +127,7 @@ All from official foundation/NSF websites:
 ## NEXT STEPS
 
 1. **Review drafts** in Hotmail Drafts folder
-2. **Send** from jasonbrodsky@hotmail.com (or landolil@hotmail.com)
+2. **Send** from [email withheld] (or landolil@hotmail.com)
 3. **Track responses** and follow up per GRANT_SUBMISSION_RESEARCH.md deadlines
 4. **Secure Co-PIs** for NSF proposals (required for eligibility)
 5. **Identify nominator** for Breakthrough Prize (self-nomination prohibited)

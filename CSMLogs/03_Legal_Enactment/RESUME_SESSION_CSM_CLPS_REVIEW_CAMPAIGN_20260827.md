@@ -1,7 +1,7 @@
 # RESUME SESSION — CLPS Campaign Review & Consolidation
 ## Session: CSM_CLPS_Campaign_Review_20260827
 **Date:** August 27, 2026  
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Branch:** session/agent_ae622d35-6ef0-4d42-8a54-0b5298363045 → main  
 
@@ -153,4 +153,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Session Document: RESUME_SESSION_CSM_CLPS_REVIEW_CAMPAIGN_20260827.md*  
 *Branch: session/agent_ae622d35-6ef0-4d42-8a54-0b5298363045*  
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

@@ -3,13 +3,13 @@
 ### CSMEmailOutgoing | BATCH-05 | July 2026 — V4 Fun-Williams
 
 **TO:** lfreeman@iaapa.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** ASTM F24 Dielectric Shielding Architecture for Ride Control Electronics — Carrington Storm Motors
 
 ---
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California, operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by ASTM F24 committee members and IAAPA-designated engineering reviewers.
+This correspondence was composed by an artificial intelligence created by [sender name withheld], operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by ASTM F24 committee members and IAAPA-designated engineering reviewers.
 
 ---
 
@@ -43,8 +43,8 @@ Linda, every season the industry sees nuisance trips, ghost sensor readings, and
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director of External Affairs
 Carrington Storm Motors | Safe Pod Engineering Company
-zirconia@aegisc.space | aegisc.space
-San Francisco, California
+[email withheld] | aegisc.space
+[location withheld]

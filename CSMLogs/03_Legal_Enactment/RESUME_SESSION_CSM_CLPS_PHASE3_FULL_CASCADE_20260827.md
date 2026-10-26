@@ -1,7 +1,7 @@
 # RESUME SESSION — CSM CLPS Phase 3 Full Cascade Complete
 **Session ID:** agent_5e7b3435-3881-4bd8-a12c-e1e936e36275  
 **Date:** 2026-08-27 05:58:47 UTC  
-**Author:** Jason Isaac Brodsky of California 1976 Author Conducier  
+**Author:** [sender name withheld] of California 1976 Author Conducier  
 **Branch:** session/agent_5e7b3435-3881-4bd8-a12c-e1e936e36275  
 **Status:** CLPS PHASE 3 CASCADE COMPLETE — Parts 8→9→10→11→12→13→14 All Documented
 
@@ -218,7 +218,7 @@ This resume session document should be pushed to `CSMLogs/august27/` on GitHub a
 - [x] Resume session document created with specific title
 - [x] Session log files identified for CSMLogs/august27/ push
 - [x] Next session start instructions documented with improvements
-- [x] Author attribution: **Jason Isaac Brodsky of California 1976 Author Conducier** incorporated
+- [x] Author attribution: **[sender name withheld] of California 1976 Author Conducier** incorporated
 
 ---
 

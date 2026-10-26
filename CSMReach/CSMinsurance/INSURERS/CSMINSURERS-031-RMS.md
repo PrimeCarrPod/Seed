@@ -6,7 +6,7 @@
 ## COMPANY OVERVIEW
 **Full Name:** Risk Management Solutions, Inc. (a Moody's Analytics company)  
 **Type:** Catastrophe Risk Modeling and Analytics  
-**HQ:** Newark, California, USA  
+**HQ:** Newark, [location withheld], USA  
 **Website:** www.rms.com  
 **Key Lines:** Catastrophe Modeling Software (RiskLink, RiskBrowser), Climate Change Analytics, Cyber Risk Modeling, Exposure Data Management, Parametric Trigger Design, Economic Capital Modeling  
 

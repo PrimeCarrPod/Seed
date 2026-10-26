@@ -1,18 +1,18 @@
 # E129-ASHE: American Society for Health Care Engineering
 
 **To:** ashe@aha.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Hospital Backup Power Beyond NFPA 99 — Extended Outage Planning for GMD Events
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All references to NFPA standards, hospital engineering practices, and electrical system design are based on publicly available codes, standards, and technical literature.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All references to NFPA standards, hospital engineering practices, and electrical system design are based on publicly available codes, standards, and technical literature.
 
 ---
 
 GOOOOOOOD MORNING, ASHE!
 
-Jason Brodsky at Aegis Cipher Space, reaching out from 221B Baker Street — because, like the healthcare engineers you represent, I believe that systems designed for the worst-case scenario are the only systems worth having. And when we examine the worst-case scenario for hospital electrical infrastructure, we find a gap between what NFPA 99 requires and what a major geomagnetic disturbance could deliver.
+[sender name withheld] at Aegis Cipher Space, reaching out from 221B Baker Street — because, like the healthcare engineers you represent, I believe that systems designed for the worst-case scenario are the only systems worth having. And when we examine the worst-case scenario for hospital electrical infrastructure, we find a gap between what NFPA 99 requires and what a major geomagnetic disturbance could deliver.
 
 NFPA 99, the Health Care Facilities Code, is the foundation of hospital electrical safety in the United States. It specifies the requirements for essential electrical systems — the emergency power supply systems, the equipment branches, the life safety and critical branches — that keep hospitals functioning when utility power fails. NFPA 99 requires on-site fuel storage for generator operation, typically sized for 24 to 96 hours of runtime depending on the facility classification and local authority having jurisdiction. This is adequate for the outage durations associated with hurricanes, ice storms, and earthquakes — the familiar hazards that hospital emergency planning has been built around for decades.
 
@@ -31,7 +31,7 @@ ASHE is the organization best positioned to lead the healthcare engineering comm
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

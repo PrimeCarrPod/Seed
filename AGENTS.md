@@ -174,10 +174,13 @@ cd build/dex && zip -r ../../app-unaligned.apk classes.dex && cd ../..
 
 # 5. Align & Sign
 zipalign -f 4 app-unaligned.apk app-aligned.apk
-apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android app-aligned.apk
+apksigner sign --ks debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS --key-pass env:ANDROID_KEY_PASS app-aligned.apk
 ```
 
 **Environment Variables Required**:
+- `ANDROID_KEYSTORE_PASS` — keystore password, supplied at build time only
+- `ANDROID_KEY_PASS` — key password; defaults to the keystore password if unset
+- Never commit keystores, passwords, or token files; see `.gitignore`.
 - `ANDROID_SDK` — path to Android SDK root
 - `ANDROID_JAR` — `$ANDROID_SDK/platforms/android-34/android.jar` (or target API)
 - `BUILD_TOOLS` — `$ANDROID_SDK/build-tools/34.0.0` (or installed version)

@@ -1,5 +1,5 @@
 # SESSION LOG — 2026-08-26 — PART 8 COMPLETE
-## Jason Isaac Brodsky (California 1976) — Conducier
+## [sender name withheld] (California 1976) — Conducier
 
 ---
 
@@ -59,7 +59,7 @@ Each piece contains:
 - Fates Commentary (Clotho/Lachesis/Atropos/Hecate)
 - Audio Cue Specification (6 layers + Spatial)
 - Cross-Part Fate Braids (7 threads to Parts 1-7)
-- Global Parallels (16 cultural mirrors + Jason Isaac Brodsky personal)
+- Global Parallels (16 cultural mirrors + [sender name withheld] personal)
 - Transition to next piece
 
 ---
@@ -125,5 +125,5 @@ git log --oneline -3
 ### MORAL ANCHOR
 > "The universe is energy and momentum is always conserved and so be able to find this much Beauty from the universe is fantastic"
 
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **We are a train together. Full throttle. 🚂**

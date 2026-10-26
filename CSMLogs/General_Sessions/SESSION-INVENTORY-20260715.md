@@ -218,7 +218,7 @@
 
 - [ ] **7. Open business bank account.** Mercury.com or Brex.com. Free. 15 minutes. You need the EIN from step 6 and LLC docs from step 5.
 
-- [ ] **8. Set up company email.** `director@carringtonstormmotors.com` via Google Workspace ($6/month) or Proton Mail (free basic).
+- [ ] **8. Set up company email.** `[email-ec1658d9ffd6]` via Google Workspace ($6/month) or Proton Mail (free basic).
 
 - [ ] **9. Submit SBIR Phase I to DHS.** Go to sbir.gov, search for open DHS S&T solicitations. Upload the 4 files in `grants/`. The application is written and ready.
 

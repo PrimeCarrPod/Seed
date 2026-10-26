@@ -6,7 +6,7 @@ Cement decarbonization is widely considered more challenging than power generati
 
 ## Direct Competitors
 
-### Brimstone (Oakland, California)
+### Brimstone (Oakland, [location withheld])
 
 Brimstone is developing a process that produces cement from calcium silicate rocks (basalt, etc.) rather than limestone:
 
@@ -26,7 +26,7 @@ Brimstone is developing a process that produces cement from calcium silicate roc
 
 **Analysis**: Brimstone's carbon-negative claim is compelling but depends on passive CO₂ absorption by processed rock residues — a phenomenon that occurs on geological timescales in nature and whose kinetics in an industrial process context are not fully validated. Sublime's electrochemical approach has the advantage of operating at ambient conditions (no kiln) and of having achieved pilot-scale production (250 t/yr vs. Brimstone's smaller scale).
 
-### Fortera (San Jose, California)
+### Fortera (San Jose, [location withheld])
 
 Fortera has commercialized a process that converts limestone to a reactive calcium silicate cement using a lower-temperature kiln coupled with CO₂ capture:
 
@@ -41,7 +41,7 @@ Fortera has commercialized a process that converts limestone to a reactive calci
 | Technology Maturity | Pilot | Commercial demo (Redding, CA plant) |
 | Commercial Scale | Pre-commercial | 15,000 t/yr (demo) |
 
-**Analysis**: Fortera is further along the commercialization path, with a demonstration plant operating in Redding, California producing cement sold under the ReAct brand. However, Fortera's technology still requires a kiln (albeit at lower temperature) and achieves a lower CO₂ reduction (~60%) compared to Sublime's 90%+. These technologies address different market segments and may be complementary rather than directly competitive.
+**Analysis**: Fortera is further along the commercialization path, with a demonstration plant operating in Redding, [location withheld] producing cement sold under the ReAct brand. However, Fortera's technology still requires a kiln (albeit at lower temperature) and achieves a lower CO₂ reduction (~60%) compared to Sublime's 90%+. These technologies address different market segments and may be complementary rather than directly competitive.
 
 ### CarbonCure Technologies (Halifax, Nova Scotia)
 

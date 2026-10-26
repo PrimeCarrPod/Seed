@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, FEMA WILDFIRE RESILIENCE DIVISION. GOOOOOOOD MORNING, Building Resilient Infrastructure and Communities program managers. GOOOOOOOD MORNING, every FEMA administrator who understands that wildfire is no longer a seasonal hazard in the American West — it is a year-round, multi-state, billion-dollar catastrophe class. The AEGIS Fire Safety Division is reaching out with two products that directly serve FEMA's wildfire resilience and post-fire recovery missions: the Mana Fire-Veil strategic fire shelter, and the Testa Fleet rapid-deployment container system for post-fire community recovery.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, FEMA WILDFIRE RESILIENCE DIVISION. GOOOOOOOD MORNING, Building Resilient Infrastructure and Communities program managers. GOOOOOOOD MORNING, every FEMA administrator who understands that wildfire is no longer a seasonal hazard in the American West — it is a year-round, multi-state, billion-dollar catastrophe class. The AEGIS Fire Safety Division is reaching out with two products that directly serve FEMA's wildfire resilience and post-fire recovery missions: the Mana Fire-Veil strategic fire shelter, and the Testa Fleet rapid-deployment container system for post-fire community recovery.
 
 **PARAGRAPH 2 — THE FEMA WILDFIRE REALITY**
 
@@ -23,7 +23,7 @@ SHIELD does not panic. SHIELD does not wait for a fire to reach the WUI before a
 
 **PARAGRAPH 5 — THE PROPOSAL**
 
-ACS proposes a two-track FEMA engagement. Track 1: FEMA recognition of the Mana Fire-Veil as a BRIC/HMGP-eligible hazard mitigation investment — establishing the procurement pathway for state, local, and tribal governments to purchase Fire-Veil pods using FEMA pre-disaster mitigation grants. Track 2: FEMA adoption of the Testa Fleet container system as a National Disaster Recovery Framework resource — pre-positioned containers for post-fire shelter, medical, food preservation, and communications in communities where the housing stock has been destroyed. Proposed pilot: 200 Fire-Veil pods deployed across the 10 highest-risk WUI counties in California, Colorado, and Oregon ($14.96M) plus 50 Testa Fleet container nodes at FEMA distribution centers in Region IX and Region VIII ($8.2M). Total pilot budget: $23.16M — approximately 0.5% of annual FEMA wildfire-related expenditures.
+ACS proposes a two-track FEMA engagement. Track 1: FEMA recognition of the Mana Fire-Veil as a BRIC/HMGP-eligible hazard mitigation investment — establishing the procurement pathway for state, local, and tribal governments to purchase Fire-Veil pods using FEMA pre-disaster mitigation grants. Track 2: FEMA adoption of the Testa Fleet container system as a National Disaster Recovery Framework resource — pre-positioned containers for post-fire shelter, medical, food preservation, and communications in communities where the housing stock has been destroyed. Proposed pilot: 200 Fire-Veil pods deployed across the 10 highest-risk WUI counties in [location withheld], Colorado, and Oregon ($14.96M) plus 50 Testa Fleet container nodes at FEMA distribution centers in Region IX and Region VIII ($8.2M). Total pilot budget: $23.16M — approximately 0.5% of annual FEMA wildfire-related expenditures.
 
 **PARAGRAPH 6 — ATTACHMENTS & BRIEFING**
 
@@ -39,17 +39,17 @@ FEMA Wildfire Resilience, your division exists because Congress recognized — a
 
 **PARAGRAPH 8 — CALL TO ACTION**
 
-FEMA Wildfire Resilience leadership, ACS respectfully requests a 90-minute technical and policy briefing with your BRIC program managers, your National Disaster Recovery Framework team, and your Region IX and Region VIII administrators. We can present the Mana Fire-Veil BRIC eligibility analysis, the Testa Fleet deployment timeline, and the combined cost-benefit analysis showing that one Fire-Veil pod costs less than the FEMA temporary housing voucher for a single displaced family — and that the pod survives for 20 deployments. The 2026 fire season is already generating declarations. The WUI civilian shelter gap has existed since the first California megafire. It needs to be closed before the next one.
+FEMA Wildfire Resilience leadership, ACS respectfully requests a 90-minute technical and policy briefing with your BRIC program managers, your National Disaster Recovery Framework team, and your Region IX and Region VIII administrators. We can present the Mana Fire-Veil BRIC eligibility analysis, the Testa Fleet deployment timeline, and the combined cost-benefit analysis showing that one Fire-Veil pod costs less than the FEMA temporary housing voucher for a single displaced family — and that the pod survives for 20 deployments. The 2026 fire season is already generating declarations. The WUI civilian shelter gap has existed since the first [location withheld] megafire. It needs to be closed before the next one.
 
 **PARAGRAPH 9 — SIGNATURE**
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Fire Safety Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

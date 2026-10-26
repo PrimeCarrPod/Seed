@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, LORD CORPORATION. GOOOOOOOD MORNING, LORD / Parker Hannifin. GOOOOOOOD MORNING, to the company that invented the magnetorheological fluid category — the MRF technology that has revolutionized automotive suspension systems (MagneRide), heavy truck seat damping, prosthetic knee control, and seismic structural damping, and which stands as the only commercially mature smart material to achieve automotive-scale production volumes. The AEGIS Actuation & Damping Division is reaching out to propose a partnership that deploys LORD MRF-140CG across three ACS product platforms: the CSM Smart Rope Actuator, the Rhodonite amphibious vehicle's vibration isolation system, and the Charlemagne-Class fleet's structural damping network — expanding LORD's MRF market from automotive suspensions into the marine, aerospace, and infrastructure resilience sectors. This email serves as a CSMRadio credit acknowledgment: LORD was cited in CSMRadio Episode 007 for MRF damping innovation.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, LORD CORPORATION. GOOOOOOOD MORNING, LORD / Parker Hannifin. GOOOOOOOD MORNING, to the company that invented the magnetorheological fluid category — the MRF technology that has revolutionized automotive suspension systems (MagneRide), heavy truck seat damping, prosthetic knee control, and seismic structural damping, and which stands as the only commercially mature smart material to achieve automotive-scale production volumes. The AEGIS Actuation & Damping Division is reaching out to propose a partnership that deploys LORD MRF-140CG across three ACS product platforms: the CSM Smart Rope Actuator, the Rhodonite amphibious vehicle's vibration isolation system, and the Charlemagne-Class fleet's structural damping network — expanding LORD's MRF market from automotive suspensions into the marine, aerospace, and infrastructure resilience sectors. This email serves as a CSMRadio credit acknowledgment: LORD was cited in CSMRadio Episode 007 for MRF damping innovation.
 
 **PARAGRAPH 2 — THE MRF MARKET EXPANSION OPPORTUNITY**
 
@@ -23,7 +23,7 @@ SHIELD does not panic. SHIELD does not suggest that LORD redirect its automotive
 
 **PARAGRAPH 5 — THE PROPOSAL**
 
-ACS proposes a LORD-AEGIS MRF supply and co-development agreement: Phase Alpha — 12-month supply of LORD MRF-140CG for ACS Smart Rope Actuator and Rhodonite damper prototypes, 18,000 liters at $28/liter, $504,000, with joint testing of MRF performance in saltwater immersion, -40°C cold start, and 10⁷ cycle endurance, conducted at LORD's Cary, North Carolina R&D center and ACS's California test facility. Phase Bravo — 18-month supply ramp to 120,000 liters/year for Charlemagne-Class first-of-class vessel (Hull 001), 36 Rhodonite amphibious vehicles, and 500 Smart Rope Actuator units, $3.36 million/year. Phase Charlie — full-rate production supply of 340,000 liters/year for Charlemagne-Class fleet (12 vessels), 1,200 Rhodonite vehicles, and 2,500 Smart Rope Actuators, $9.52 million/year, with a 10-year supply agreement providing LORD with a guaranteed $95.2 million in cumulative MRF revenue. CSMRadio Episode 007 credit publicizes the partnership.
+ACS proposes a LORD-AEGIS MRF supply and co-development agreement: Phase Alpha — 12-month supply of LORD MRF-140CG for ACS Smart Rope Actuator and Rhodonite damper prototypes, 18,000 liters at $28/liter, $504,000, with joint testing of MRF performance in saltwater immersion, -40°C cold start, and 10⁷ cycle endurance, conducted at LORD's Cary, North Carolina R&D center and ACS's [location withheld] test facility. Phase Bravo — 18-month supply ramp to 120,000 liters/year for Charlemagne-Class first-of-class vessel (Hull 001), 36 Rhodonite amphibious vehicles, and 500 Smart Rope Actuator units, $3.36 million/year. Phase Charlie — full-rate production supply of 340,000 liters/year for Charlemagne-Class fleet (12 vessels), 1,200 Rhodonite vehicles, and 2,500 Smart Rope Actuators, $9.52 million/year, with a 10-year supply agreement providing LORD with a guaranteed $95.2 million in cumulative MRF revenue. CSMRadio Episode 007 credit publicizes the partnership.
 
 **PARAGRAPH 6 — ATTACHMENTS & BRIEFING**
 
@@ -45,11 +45,11 @@ LORD Corporation / Parker Hannifin leadership, ACS respectfully requests a 90-mi
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Actuation & Damping Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

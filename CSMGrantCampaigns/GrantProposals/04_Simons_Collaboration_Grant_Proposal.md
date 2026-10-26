@@ -145,7 +145,7 @@ This is **exactly** the type of fundamental, interdisciplinary research the Simo
 9. **PrimeBookOne data** — https://PrimeBookOne.github.io/primebookone/
 10. **SubAtomic.Edu/** — Curriculum for summer school
 
-**Contact:** jasonbrodsky@hotmail.com | Framework: Arithmetic Physics | Data: PrimeBookOne.github.io
+**Contact:** [email withheld] | Framework: Arithmetic Physics | Data: PrimeBookOne.github.io
 
 ---
 

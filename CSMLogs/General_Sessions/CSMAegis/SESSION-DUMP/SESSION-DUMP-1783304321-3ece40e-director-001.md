@@ -129,7 +129,7 @@ JASON_BRODSKY:  none
 - `ls CarrPod/CSMGen/CSMAegis/COMMS/HEARTBEATS/` → existing heartbeats for 0001,0004,0005,001,0010,0013,0014,0016,001B,002,003,007,009,011,012,013,014,015
 - Created DIRECTOR-0023-Tess-Mara-SENTINEL.md init file
 - `mkdir -p CSMGen/CSMAegis/COMMS/HEARTBEATS && echo heartbeat > director-0023.txt`
-- `git config user.email "director-001@aegis.citadel" && user.name "Kairos Steele (CITADEL)"`
+- `git config user.email "[email-0206dd9120d2]" && user.name "Kairos Steele (CITADEL)"`
 - `git add + commit -m "[DIRECTOR-0023] V4 HEARTBEAT + SESSION INIT"` → commit bef0584
 - `git push origin main` → FAILED: no auth
 - `gh auth login` → GH_TOKEN already present

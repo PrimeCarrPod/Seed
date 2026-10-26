@@ -80,7 +80,7 @@ SYSTEM 1: AEGIS-ASCENSION DRONE BACKPACK (TYPE I) — Personal Evacuation
 
   WHY THIS EXISTS:
   In a combined Carrington + tsunami scenario (the specific dual-threat that
-  CSM's coastal California context makes locally plausible), conventional
+  CSM's coastal [location withheld] context makes locally plausible), conventional
   helicopter evacuation fails (metal airframes). Ground evacuation fails (roads
   flooded or vehicle GIC failure). The Aegis-Ascension is the vertical option
   that remains available precisely because it was designed from the beginning
