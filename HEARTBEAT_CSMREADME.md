@@ -12,13 +12,13 @@
 
 ```bash
 # Run in background during session
-python3 /workspace/app/CSMWip/CSMReadMe/scripts/heartbeat_monitor.py --interval 120 &
+python3 CSMWip/CSMReadMe/scripts/heartbeat_monitor.py --interval 120 &
 
 # Or use simple shell heartbeat
 while true; do
     echo "[$(date '+%H:%M:%S')] HEARTBEAT: CSMReadMe campaign active"
-    echo "  Current: $(cat /workspace/app/NEXT_runner_001.md | grep -A2 'Next Priority' | tail -1)"
-    echo "  Git: $(cd /workspace/app && git status --short | wc -l) files modified"
+    echo "  Current: $(cat NEXT_runner_001.md | grep -A2 'Next Priority' | tail -1)"
+    echo "  Git: $(git status --short | wc -l) files modified"
     sleep 120
 done
 ```
@@ -71,7 +71,7 @@ On session end:
 
 ## Heartbeat Log Location
 
-`/workspace/app/CSMWip/CSMReadMe/Logs/heartbeat.log`
+`CSMWip/CSMReadMe/Logs/heartbeat.log`
 
 Format:
 ```

@@ -54,7 +54,7 @@ Each deep README follows this structure:
 ### Per-Project Workflow
 ```bash
 # 1. Enter project directory
-cd "/workspace/app/CSMFAB/CSMFAB077-Deep"
+cd "CSMFAB/CSMFAB077-Deep"
 
 # 2. Read source documents (V2.0 spec + cost analysis + versioning)
 cat *.md | head -500  # Review key specs
@@ -72,7 +72,7 @@ git commit -m "docs(readme): deep 7-chapter README for CSMFABXX <Project Name>"
 git push origin main
 
 # 6. Run resume to verify next candidates
-/workspace/app/CSMWip/CSMReadMe/taskmaster.sh quick-resume
+CSMWip/CSMReadMe/taskmaster.sh quick-resume
 ```
 
 ---
@@ -80,21 +80,18 @@ git push origin main
 ## 🎯 IMMEDIATE RESUMPTION COMMANDS
 
 ```bash
-# 1. Enter workspace root
-cd /workspace/app
-
-# 2. Verify current state
+# 1. Verify current state (from repo root)
 git status
 git log --oneline -5
 
-# 3. Run resume analysis to confirm next targets
-/workspace/app/CSMWip/CSMReadMe/taskmaster.sh quick-resume
+# 2. Run resume analysis to confirm next targets
+CSMWip/CSMReadMe/taskmaster.sh quick-resume
 
-# 4. Check next project files
-ls "/workspace/app/CSMFAB/CSMFAB077-Deep/"
+# 3. Check next project files
+ls "CSMFAB/CSMFAB077-Deep/"
 
-# 5. Begin CSMFAB077-Deep deep README
-cd "/workspace/app/CSMFAB/CSMFAB077-Deep/"
+# 4. Begin CSMFAB077-Deep deep README
+cd "CSMFAB/CSMFAB077-Deep/"
 cat CSMFAB077-Deep*.md  # Review source docs
 ```
 
@@ -119,12 +116,19 @@ cat CSMFAB077-Deep*.md  # Review source docs
 
 | Document | Path | Purpose |
 |----------|------|---------|
-| CSMFAB07 Deep README | `/workspace/app/CSMFAB/CSMFAB07 Aegis Home Carrington-Proof Oven Design /README.md` | Template: pneumatic, SiC, steatite, DfD |
-| CSMFAB08 Deep README | `/workspace/app/CSMFAB/CSMFAB08 Aegis Home Carrington Storm Safe Cookware/README.md` | Template: soapstone, BiVO₄, MXene, post-grid |
-| CSMFAB09 Deep README | `/workspace/app/CSMFAB/CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan/README.md` | Template: 1000 MPa, Elium®, ACI 440.11-25 |
-| REPO_INDEX_V7_SUMMARY.md | `/workspace/app/REPO_INDEX_V7_SUMMARY.md` | Campaign tracking, all enhancements |
-| taskmaster.sh | `/workspace/app/CSMWip/CSMReadMe/taskmaster.sh` | Resume analysis, candidate scoring |
-| REPO_INDEX_V7.csv | `/workspace/app/REPO_INDEX_V7.csv` | Source index (460 projects) |
+| CSMFAB07 Deep README | `CSMFAB/CSMFAB07 Aegis Home Carrington-Proof Oven Design /README.md` | Template: pneumatic, SiC, steatite, DfD |
+| CSMFAB08 Deep README | `CSMFAB/CSMFAB08 Aegis Home Carrington Storm Safe Cookware/README.md` | Template: soapstone, BiVO₄, MXene, post-grid |
+| CSMFAB09 Deep README | `CSMFAB/CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan/README.md` | Template: 1000 MPa, Elium®, ACI 440.11-25 |
+| REPO_INDEX_V7_SUMMARY.md | `REPO_INDEX_V7_SUMMARY.md` | Campaign tracking, all enhancements |
+| taskmaster.sh | `CSMWip/CSMReadMe/taskmaster.sh` | Resume analysis, candidate scoring |
+| REPO_INDEX_V7.csv | `REPO_INDEX_V7.csv` | Source index (460 projects) |
+
+**GitHub URLs (for cross-session reference):**
+- Repo: https://github.com/PrimeCarrPod/Seed
+- CSMFAB07: https://github.com/PrimeCarrPod/Seed/blob/main/CSMFAB/CSMFAB07%20Aegis%20Home%20Carrington-Proof%20Oven%20Design%20/README.md
+- CSMFAB08: https://github.com/PrimeCarrPod/Seed/blob/main/CSMFAB/CSMFAB08%20Aegis%20Home%20Carrington%20Storm%20Safe%20Cookware/README.md
+- CSMFAB09: https://github.com/PrimeCarrPod/Seed/blob/main/CSMFAB/CSMFAB09%20Aegis%20Home%20BFRP%20Rebar%20Fabrication%20Plan/README.md
+- REPO_INDEX_V7_SUMMARY.md: https://github.com/PrimeCarrPod/Seed/blob/main/REPO_INDEX_V7_SUMMARY.md
 
 ---
 
