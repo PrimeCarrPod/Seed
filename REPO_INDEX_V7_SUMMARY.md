@@ -84,6 +84,20 @@ All projects that received generated README.md files now have HasREADME=Y:
   - Remediation Phase A complete (32 formula injection tasks), Phases B-D queued
   - Master compendium: EQUATIONSCOMPLETE (2.8MB, all 77 docs quality-gated)
   - Heartbeat monitor (120s), 30s subtask guard, auto-continue queue
+- **01_SubAtomic_Prime_Electron_Canonical** — Replaced template with project-specific 7-chapter README (346 lines) containing:
+  - 360 canonical articles across 9 domains (A–I), 40 articles per domain
+  - Three postulates: Worldline Monism, Meta-Depth Hierarchy (D=0, ω, ω+3), Structural Correspondence
+  - Testable predictions: gap fluctuation noise (10⁻¹⁰), Riemann ripple, topological order, prime codes
+  - 51 articles organized (A:22, B:16, C:13) from 588 loose pieces → 49 zips + 49 masters
+  - 13-method verification checklist (all PASS), FLAGSHIP papers (5), publication pipeline
+  - Source for 10_Prime_Electron_Caldera_Synthesis and 02_Caldera_Prime_Pi_Electron
+- **03_Legal_Enactment** — Replaced template with project-specific 7-chapter README (425 lines) containing:
+  - 4 pending Acts (06, 08, 09, 10) of 12-Act series, 14 sections × 12 pieces each
+  - Act 06 (Wildfire Prevention & Grid Resilience, $15B/10yr) at 380K FULL.md — most advanced
+  - Acts 08 ($25B), 09 ($20B), 10 ($18B) with subject-specific Title provisions
+  - legal_acts_handler.sh (460 lines): create/concat/zip/verify/organize/commit full lifecycle
+  - 8 Acts completed in LEGAL-ENACTMENT/ (01-05, 07, 11-12), 67 total series
+  - Quality gates: ≥350 lines, 12 pieces, zip integrity, Git commit per Act
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged

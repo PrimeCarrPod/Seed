@@ -1,7 +1,15 @@
 {
-  "last_completed": "CSMSOPP",
-  "timestamp": "2026-10-24T08:16:49+00:00",
-  "repo_index": "/workspace/app/REPO_INDEX_V6.csv",
-  "chunks_dir": "/workspace/app/CSMWip/CSMReadMe/chunks",
-  "scripts_dir": "/workspace/app/CSMWip/CSMReadMe/scripts"
+  "last_completed": "README_DEEP_GENERATION_BATCH_6",
+  "timestamp": "2026-10-26T03:42:37+00:00",
+  "repo_index_v7": "/workspace/app/REPO_INDEX_V7.csv",
+  "repo_index_v7_summary": "/workspace/app/REPO_INDEX_V7_SUMMARY.md",
+  "completed_deep_readmes": [
+    "10_Prime_Electron_Caldera_Synthesis",
+    "02_Caldera_Prime_Pi_Electron",
+    "11_TGApp",
+    "12_AegisOutfitFabricator",
+    "01_SubAtomic_Prime_Electron_Canonical",
+    "03_Legal_Enactment"
+  ],
+  "next_candidates": []
 }
