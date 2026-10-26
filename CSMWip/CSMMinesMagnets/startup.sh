@@ -7,12 +7,14 @@ set -euo pipefail
 # ============================================================
 # HARD-CODED PROJECT DIRECTORY (relative, not absolute)
 # ============================================================
+# IMPORTANT: This script must be run from the repository root (GitHub folder structure)
+# NEVER use /workspace/app/ — it is ephemeral and inaccessible in new sessions
+# Always use relative paths: CSMWip/CSMMinesMagnets
 PROJECT_DIR="CSMWip/CSMMinesMagnets"
-PROJECT_ROOT="/workspace/app/$PROJECT_DIR"
 
 echo "=== CSMMinesMagnets Session Startup ==="
-echo "Project directory: $PROJECT_DIR"
-echo "Project root: $PROJECT_ROOT"
+echo "Project directory (relative): $PROJECT_DIR"
+echo "Run from repository root — using relative paths only"
 
 # ============================================================
 # 1. ENSURE PYTHON3 INSTALLED (Debian minimal container)
@@ -26,14 +28,15 @@ else
 fi
 
 # ============================================================
-# 2. VERIFY PROJECT DIRECTORY EXISTS
+# 2. VERIFY PROJECT DIRECTORY EXISTS (relative path)
 # ============================================================
-if [[ ! -d "$PROJECT_ROOT" ]]; then
-    echo "ERROR: Project directory not found: $PROJECT_ROOT" >&2
+if [[ ! -d "$PROJECT_DIR" ]]; then
+    echo "ERROR: Project directory not found: $PROJECT_DIR" >&2
+    echo "       Run this script from the repository root (GitHub folder structure)" >&2
     exit 1
 fi
 
-cd "$PROJECT_ROOT"
+cd "$PROJECT_DIR"
 echo "Changed to project directory: $(pwd)"
 
 # ============================================================
