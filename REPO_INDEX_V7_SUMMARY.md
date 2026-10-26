@@ -105,8 +105,16 @@ All projects that received generated README.md files now have HasREADME=Y:
   - CSMOPP 5-heuristic translation layer (Williams, Keymaker, El Segundo, Baker Street, SHIELD)
   - Quality gates: ≥900 lines, ≥20 formulas, ≥15 cross-refs, ≥8 standards, 0 conflation, SHA256 manifests
   - Runner-based workflow (12 runners), heartbeat 120s, 30s subtask guard, single-command resume
-  - Research assets: CSMMagTech2026 V2.0 (Fe₁₆N₂ 27 MGOe), CSMMagEco2026 V2.0 (12+ US startups, DFARS 2027)
+  - Research: CSMMagTech2026 V2.0 (Fe₁₆N₂ 27 MGOe), CSMMagEco2026 V2.0 (12+ US startups, DFARS 2027)
   - Infrastructure: FCAB/Ferronor rail, 5 Chilean ports, CPTPP digital trade, IMDG Class 9 magnet shipping
+- **CSMReach** — Replaced template with project-specific 7-chapter README (404 lines) containing:
+  - 5-vector outreach intelligence platform: 10 ACS corporate profiles (SpaceX, Tesla, Rivian, Lucid, Helion, Commonwealth Fusion, Beta Technologies, Boston Dynamics, Redwood Materials, PPG Industries)
+  - 40-category CSMEval evaluation matrix (federal agencies, critical infrastructure, strategic industries, communities)
+  - 200-country CSMGlobal diplomatic compendium (66 KB compiled, 7 KB mini, quarterly recompile)
+  - 8-section CSMDossier technical framework, AEGIS Covenant constitutional framework
+  - Email template engine v2, 67 verified contacts (E037-E068), July 2026 campaign batches dispatched
+  - Grant pipeline: DOE Grid Resilience ($15B), DARPA, NSF, EIB Critical Minerals
+  - Cross-project integration: CSMMinesMagnets Chile intelligence, CSMPro magnet tech, CSMFAB Aegis-Forge
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
