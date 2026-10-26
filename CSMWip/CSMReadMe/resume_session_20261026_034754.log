@@ -1,0 +1,31 @@
+[0;34m[03:47:54][0m ==========================================
+[0;34m[03:47:54][0m CSMReadMe Resume Session — Mon Oct 26 03:47:54 AM UTC 2026
+[0;34m[03:47:54][0m ==========================================
+[0;34m[03:47:54][0m Repo root: /workspace/app
+[0;34m[03:47:54][0m REPO_INDEX_V7: /workspace/app/REPO_INDEX_V7.csv
+[0;34m[03:47:54][0m Summary: /workspace/app/REPO_INDEX_V7_SUMMARY.md
+[0;34m[03:47:54][0m Log: /workspace/app/CSMWip/CSMReadMe/resume_session_20261026_034754.log
+[0;34m[03:47:54][0m Loading REPO_INDEX_V7_SUMMARY.md context...
+[0;34m[03:47:54][0m 
+[0;34m[03:47:54][0m === PARSING REPO_INDEX_V7.csv ===
+[0;34m[03:47:54][0m Parsed 460 projects from CSV
+[0;34m[03:47:54][0m 
+[0;34m[03:47:54][0m === SCORING ALL PROJECTS ===
+[0;34m[03:47:56][0m New README candidates: 0
+[0;34m[03:47:56][0m Upgrade candidates: 451
+[0;34m[03:47:56][0m 
+[0;34m[03:47:56][0m === TOP 20 CANDIDATES FOR NEXT DEEP README ===
+[0;34m[03:47:56][0m 
+[0;34m[03:47:56][0m === SPECIFIC RECOMMENDATIONS ===
+[0;35m[REC][0m 🥈 BEST UPGRADE CANDIDATE: 05_BOUNCE (Score: 100)
+[0;35m[REC][0m    Path: CSMWip/05_BOUNCE | Part of Another Project | CSMWip | 5193 files
+[0;35m[REC][0m 🥉 BEST CSMWip SUBPROJECT: 05_BOUNCE (Score: 100)
+[0;35m[REC][0m 📦 BEST LARGE PROJECT (>1K files): 05_BOUNCE (Score: 100, 5193 files)
+[0;34m[03:47:56][0m 
+[0;34m[03:47:56][0m === QUICK START COMMANDS FOR TOP CANDIDATE ===
+[0;32m[OK][0m Recommendations saved to /workspace/app/CSMWip/CSMReadMe/.session_state.json.recommendations
+[0;32m[OK][0m Full log saved to /workspace/app/CSMWip/CSMReadMe/resume_session_20261026_034754.log
+[0;34m[03:47:56][0m 
+[0;34m[03:47:56][0m === RESUME COMPLETE ===
+[0;34m[03:47:56][0m To continue in next session, run this script again.
+[0;34m[03:47:56][0m It will load REPO_INDEX_V7_SUMMARY.md and re-analyze.

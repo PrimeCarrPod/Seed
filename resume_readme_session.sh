@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# CSMReadMe — Session Resume & Next Project Selector (Simplified)
-# Recognizes REPO_INDEX_V7_SUMMARY.md, identifies projects without proper READMEs,
+# CSMReadMe — Session Resume & Next Project Selector
+# Parses REPO_INDEX_V7.csv with awk, identifies projects needing deep READMEs,
 # and recommends best candidates for next deep README generation
 # ==============================================================================
 
@@ -34,10 +34,11 @@ rec() { echo -e "${MAGENTA}[REC]${NC} $*" | tee -a "$LOG_FILE"; }
 
 # --- Initialize ---
 mkdir -p "$CSM_README_DIR"
+TIMESTAMP="$(date -Iseconds)"
 cat > "$STATE_FILE" <<EOF
 {
   "last_completed": "README_DEEP_GENERATION_BATCH_6",
-  "timestamp": "$(date -Iseconds)",
+  "timestamp": "$TIMESTAMP",
   "repo_index_v7": "$REPO_INDEX_V7",
   "repo_index_v7_summary": "$REPO_INDEX_V7_SUMMARY",
   "completed_deep_readmes": [
@@ -68,51 +69,64 @@ else
     warn "REPO_INDEX_V7_SUMMARY.md not found"
 fi
 
-# --- Known Candidates from Manual Analysis ---
-# Based on our investigation, these are the top candidates for deep README generation
-# Format: "Project|Path|State|Category|FileCount|HasTODO|HasAGENTS|HasChunks|HasRESUME|HasNEXT"
-CANDIDATES=(
-    # No README yet (HasREADME=N/empty) - High Priority
-    "01_SubAtomic_Prime_Electron_Canonical|CSMWip/01_SubAtomic_Prime_Electron_Canonical|Part of Another Project|CSMWip|680|true|false|false|false|false"
-    "03_Legal_Enactment|CSMWip/03_Legal_Enactment|Part of Another Project|CSMWip|569|false|false|false|false|false"
-    "09_Project_Tracking|CSMWip/09_Project_Tracking|Part of Another Project|CSMWip|10|false|false|false|false|false"
-    "CSMMinesMagnets|CSMWip/CSMMinesMagnets|Part of Another Project|CSMWip|122|false|false|false|false|false"
-    "Kilo_Session_20261007_Consolidation|CSMWip/Kilo_Session_20261007_Consolidation|Part of Another Project|CSMWip|1063|false|false|false|false|false"
-    "CSMWipScripts|CSMWipScripts|Whole Project|CSMWipScripts|33|false|false|false|false|false"
-    "CSM_WORK_IN_PROGRESS|CSM_WORK_IN_PROGRESS|Whole Project|CSM_WORK_IN_PROGRESS|10|false|false|false|false|false"
-    
-    # Has Template README (HasREADME=Y) - Upgrade Candidates (High Value)
-    "CSMApps|CSMApps|Whole Project|TopLevel|5144|true|true|true|true|true"
-    "CSMFAB|CSMFAB|Whole Project|TopLevel|5000|true|true|true|true|true"
-    "CSMPro|CSMPro|Whole Project|TopLevel|5000|true|true|true|true|true"
-    "CSMMetal|CSMMetal|Whole Project|TopLevel|500|true|true|true|true|true"
-    "CSMQuantum|CSMQuantum|Whole Project|TopLevel|500|true|true|true|true|true"
-    "CSMPublished|CSMPublished|Whole Project|TopLevel|500|true|true|true|true|true"
-    "CSMRadio|CSMRadio|Whole Project|TopLevel|500|true|true|true|true|true"
-    "CSMReach|CSMReach|Whole Project|TopLevel|500|true|true|true|true|true"
-    "CSMSOPP|CSMSOPP|Whole Project|TopLevel|500|true|true|true|true|true"
-    "CSMArchive|CSMArchive|Whole Project|TopLevel|61|false|false|true|false|false"
-    "CSM-Brandoutreach|CSM-Brandoutreach|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMDropBox|CSMDropBox|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMGen|CSMGen|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMGrantCampaigns|CSMGrantCampaigns|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMHuman|CSMHuman|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMLogs|CSMLogs|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMPrePublish|CSMPrePublish|Whole Project|TopLevel|100|false|false|true|false|false"
-    "CSMProtonics|CSMProtonics|Whole Project|TopLevel|100|true|true|true|true|true"
-    "CSMSubatomic082026|CSMSubatomic082026|Whole Project|TopLevel|100|false|false|true|false|false"
-    "DeepResearch|DeepResearch|Whole Project|TopLevel|100|false|false|true|false|false"
-    "PrimeBookOne|PrimeBookOne|Whole Project|TopLevel|100|false|false|true|false|false"
-    "__PUBLISH_CSM__|__PUBLISH_CSM__|Whole Project|TopLevel|100|false|false|true|false|false"
-    "__Python_Tools|__Python_Tools|Whole Project|TopLevel|100|false|false|true|false|false"
-    "TardigradiaTGPU|TardigradiaTGPU|Whole Project|TopLevel|100|false|false|true|false|false"
-    "landing-page|landing-page|Whole Project|TopLevel|100|false|false|true|false|false"
-    "RESTART_PACKAGE|RESTART_PACKAGE|Whole Project|TopLevel|100|false|false|true|false|false"
-    "scripts|scripts|Whole Project|TopLevel|100|false|false|true|false|false"
-    ".sdk|.sdk|Whole Project|TopLevel|100|false|false|true|false|false"
-)
+# --- Parse REPO_INDEX_V7.csv with awk (handling quoted fields properly) ---
+# CSV columns: State,ParentProject,Summary,Category,Project,Path,FileCount,HasTODO,HasREADME,HasNEXT,CreationDate,LastWorkedDate,DaysSinceUpdated,AI,Status,Notes
+log ""
+log "=== PARSING REPO_INDEX_V7.csv ==="
 
-# Completed deep READMEs (avoid re-doing)
+# Use a proper CSV parser approach: replace commas inside quotes first, then split
+# The Summary field (column 3) is the only one with commas inside quotes
+mapfile -t ALL_PROJECTS < <(awk '
+{
+    line=$0
+    # Replace commas inside quotes with a placeholder
+    in_quote=0
+    result=""
+    for(i=1;i<=length(line);i++) {
+        c=substr(line,i,1)
+        if(c=="\"") in_quote=!in_quote
+        if(c=="," && in_quote) c="\001"  # Use SOH as placeholder
+        result=result c
+    }
+    # Now split on commas (not placeholders)
+    n=split(result, fields, ",")
+    # Restore commas in fields
+    for(i=1;i<=n;i++) {
+        gsub(/\001/, ",", fields[i])
+        gsub(/^"|"$/, "", fields[i])  # Remove surrounding quotes
+    }
+    
+    # Fields after comma-in-quote fix:
+    # 1=State, 2=ParentProject, 3=Summary, 4=Category, 5=Project, 6=Path, 7=FileCount, 8=HasTODO, 9=HasREADME, 10=HasNEXT, ...
+    if (NR==1) next  # Skip header
+    
+    state=fields[1]
+    category=fields[4]
+    project=fields[5]
+    path=fields[6]
+    filecount=fields[7]
+    hastodo=fields[8]
+    hasreadme=fields[9]
+    hasnext=fields[10]
+    
+    gsub(/^ *| *$/, "", project); gsub(/^ *| *$/, "", path)
+    gsub(/^ *| *$/, "", state); gsub(/^ *| *$/, "", category)
+    gsub(/^ *| *$/, "", filecount); gsub(/^ *| *$/, "", hastodo)
+    gsub(/^ *| *$/, "", hasreadme); gsub(/^ *| *$/, "", hasnext)
+    if (filecount == "") filecount=0
+    if (hastodo == "") hastodo="false"; else if (hastodo ~ /Y|y/) hastodo="true"; else hastodo="false"
+    if (hasreadme == "") hasreadme="N";
+    if (hasnext == "") hasnext="false"; else if (hasnext ~ /Y|y/) hasnext="true"; else hasnext="false"
+    
+    # Only output if we have a valid project name
+    if (project != "") {
+        print project "|" path "|" state "|" category "|" filecount "|" hastodo "|" hasreadme "|" hasnext
+    }
+}' "$REPO_INDEX_V7")
+
+log "Parsed ${#ALL_PROJECTS[@]} projects from CSV"
+
+# --- Completed deep READMEs (avoid re-doing) ---
 COMPLETED=(
     "10_Prime_Electron_Caldera_Synthesis"
     "02_Caldera_Prime_Pi_Electron"
@@ -120,15 +134,20 @@ COMPLETED=(
     "12_AegisOutfitFabricator"
     "01_SubAtomic_Prime_Electron_Canonical"
     "03_Legal_Enactment"
+    "05_BOUNCE"
+    "LEGAL-ENACTMENT"
 )
 
+# --- Score each project ---
 log ""
-log "=== SCORING CANDIDATES FOR NEXT DEEP README ==="
+log "=== SCORING ALL PROJECTS ==="
 
-# Score each candidate
 declare -A SCORED
-for entry in "${CANDIDATES[@]}"; do
-    IFS='|' read -r project path state category filecount hastodo hasagents haschunks hasresume hasnext <<< "$entry"
+NEW_CANDIDATES=0
+UPGRADE_CANDIDATES=0
+
+for entry in "${ALL_PROJECTS[@]}"; do
+    IFS='|' read -r project path state category filecount hastodo hasreadme hasnext <<< "$entry"
     
     # Skip if already completed
     skip=false
@@ -136,6 +155,13 @@ for entry in "${CANDIDATES[@]}"; do
         [[ "$project" == "$c" ]] && skip=true
     done
     [[ "$skip" == "true" ]] && continue
+    
+    # Normalize path (strip leading ./)
+    clean_path="${path#./}"
+    
+    # Sanitize project name for array key (replace special chars)
+    safe_project=$(echo "$project" | sed 's/[^a-zA-Z0-9_-]/_/g' | sed 's/^_*//;s/_*$//')
+    [[ -z "$safe_project" ]] && safe_project="UNKNOWN_$RANDOM"
     
     score=0
     
@@ -169,25 +195,33 @@ for entry in "${CANDIDATES[@]}"; do
     
     # Infrastructure bonuses
     [[ "$hastodo" == "true" ]] && score=$((score + 10))
-    [[ "$hasagents" == "true" ]] && score=$((score + 10))
-    [[ "$haschunks" == "true" ]] && score=$((score + 10))
-    [[ "$hasresume" == "true" ]] && score=$((score + 10))
     [[ "$hasnext" == "true" ]] && score=$((score + 10))
     
-    # Penalty for already having template README (upgrade vs new)
-    # We'll mark these with a flag
-    has_template=false
-    if [[ -f "${REPO_ROOT}/${path}/README.md" ]] && [[ "$hasagents" == "true" ]]; then
+    # Check for existing AGENTS.md, chunks, RESUME, NEXT_runner
+    [[ -f "${REPO_ROOT}/${clean_path}/AGENTS.md" ]] && score=$((score + 10))
+    [[ -d "${REPO_ROOT}/${clean_path}/chunks" || -d "${REPO_ROOT}/${clean_path}/Pieces" ]] && score=$((score + 10))
+    [[ -f "${REPO_ROOT}/${clean_path}/RESUME_SESSION_"* ]] && score=$((score + 10))
+    [[ -f "${REPO_ROOT}/${clean_path}/NEXT_runner_"* ]] && score=$((score + 10))
+    
+    # Track candidate type
+    if [[ "$hasreadme" == "Y" ]]; then
         has_template=true
         score=$((score - 5))  # Small penalty for upgrade vs new
+        UPGRADE_CANDIDATES=$((UPGRADE_CANDIDATES + 1))
+    else
+        has_template=false
+        NEW_CANDIDATES=$((NEW_CANDIDATES + 1))
     fi
     
-    SCORED["$project"]="$score|$project|$path|$state|$category|$filecount|$has_template"
+    SCORED["$safe_project"]="$score|$project|$clean_path|$state|$category|$filecount|$has_template"
 done
 
-# Sort and display top 15
+log "New README candidates: $NEW_CANDIDATES"
+log "Upgrade candidates: $UPGRADE_CANDIDATES"
+
+# --- Sort and display top 20 ---
 log ""
-log "=== TOP 15 CANDIDATES FOR NEXT DEEP README ==="
+log "=== TOP 20 CANDIDATES FOR NEXT DEEP README ==="
 echo ""
 
 # Convert to array for sorting
@@ -205,15 +239,17 @@ for entry in "${sorted[@]}"; do
     
     if [[ "$has_template" == "true" ]]; then
         display="${project} ${YELLOW}[has template README - upgrade candidate]${NC}"
+        type_marker="UPGRADE"
     else
         display="${project} ${GREEN}[no README - new candidate]${NC}"
+        type_marker="NEW"
     fi
     
     if [[ $score -ge 100 ]]; then score_color=$GREEN
     elif [[ $score -ge 70 ]]; then score_color=$YELLOW
     else score_color=$CYAN; fi
     
-    printf "%2d. ${score_color}Score: %3d${NC} | %s\n" "$rank" "$score" "$display"
+    printf "%2d. ${score_color}Score: %3d${NC} [%s] | %s\n" "$rank" "$score" "$type_marker" "$display"
     printf "     Path: %s | State: %s | Category: %s | Files: %s\n" "$path" "$state" "$category" "$filecount"
     
     # Show existing assets
@@ -229,14 +265,14 @@ for entry in "${sorted[@]}"; do
     fi
     echo ""
     rank=$((rank + 1))
-    [[ $rank -gt 15 ]] && break
+    [[ $rank -gt 20 ]] && break
 done
 
 # --- Specific Recommendations ---
 log ""
 log "=== SPECIFIC RECOMMENDATIONS ==="
 
-# Best Overall (highest scoring non-template)
+# Best Overall (highest scoring NEW)
 best=""
 best_score=-999
 for entry in "${sorted[@]}"; do
@@ -286,6 +322,22 @@ if [[ -n "$best_csmwip" ]]; then
     rec "🥉 BEST CSMWip SUBPROJECT: $project (Score: $score)"
 fi
 
+# Best high-file-count project (>1000 files)
+best_large=""
+best_large_score=-999
+for entry in "${sorted[@]}"; do
+    IFS='|' read -r score project path state category filecount has_template <<< "$entry"
+    if [[ $filecount -gt 1000 && $score -gt $best_large_score ]]; then
+        best_large_score=$score
+        best_large="$entry"
+    fi
+done
+
+if [[ -n "$best_large" ]]; then
+    IFS='|' read -r score project path state category filecount has_template <<< "$best_large"
+    rec "📦 BEST LARGE PROJECT (>1K files): $project (Score: $score, $filecount files)"
+fi
+
 # --- Quick Start Commands ---
 log ""
 log "=== QUICK START COMMANDS FOR TOP CANDIDATE ==="
@@ -314,15 +366,22 @@ if [[ -n "$best" ]]; then
 fi
 
 # --- Save Recommendations to State ---
-cat > "${STATE_FILE}.recommendations" <<'EOF'
+TOP_CAND=$(echo "$best" | cut -d'|' -f2)
+TOP_PATH=$(echo "$best" | cut -d'|' -f3)
+TOP_SCORE=$(echo "$best" | cut -d'|' -f1)
+BEST_UPG=$(echo "$best_upgrade" | cut -d'|' -f2)
+BEST_UPG_PATH=$(echo "$best_upgrade" | cut -d'|' -f3)
+BEST_CSM=$(echo "$best_csmwip" | cut -d'|' -f2)
+
+cat > "${STATE_FILE}.recommendations" <<EOF
 {
-  "timestamp": "$(date -Iseconds)",
-  "top_candidate": "$(echo "$best" | cut -d'|' -f2)",
-  "top_path": "$(echo "$best" | cut -d'|' -f3)",
-  "top_score": $(echo "$best" | cut -d'|' -f1),
-  "best_upgrade": "$(echo "$best_upgrade" | cut -d'|' -f2)",
-  "best_upgrade_path": "$(echo "$best_upgrade" | cut -d'|' -f3)",
-  "best_csmwip": "$(echo "$best_csmwip" | cut -d'|' -f2)"
+  "timestamp": "$TIMESTAMP",
+  "top_candidate": "$TOP_CAND",
+  "top_path": "$TOP_PATH",
+  "top_score": $TOP_SCORE,
+  "best_upgrade": "$BEST_UPG",
+  "best_upgrade_path": "$BEST_UPG_PATH",
+  "best_csmwip": "$BEST_CSM"
 }
 EOF
 
@@ -332,6 +391,3 @@ log ""
 log "=== RESUME COMPLETE ==="
 log "To continue in next session, run this script again."
 log "It will load REPO_INDEX_V7_SUMMARY.md and re-analyze."
-
-EOF
-chmod +x /workspace/app/resume_readme_session.sh
