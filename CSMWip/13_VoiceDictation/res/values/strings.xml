@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VoiceDictation</string>
+    <string name="server_ip_hint">Server IP (e.g., 192.168.1.100)</string>
+    <string name="server_port_hint">Port (default 8765)</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_start_listening">Start Listening</string>
+    <string name="btn_stop_listening">Stop Listening</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_connected">Connected — Ready</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_error">Error</string>
+    <string name="text_recognized">Recognized: %s</string>
+    <string name="permission_mic_rationale">Microphone access is required for voice recognition</string>
+</resources>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VoiceDictation</title>
+  <style>
+    body { width: 280px; padding: 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    h3 { margin: 0 0 12px; font-size: 16px; }
+    .status { padding: 8px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; }
+    .status.connected { background: #e8f5e9; color: #2e7d32; }
+    .status.disconnected { background: #ffebee; color: #c62828; }
+    .info { font-size: 12px; color: #666; margin-bottom: 8px; }
+    button { width: 100%; padding: 10px; background: #1a73e8; color: white; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; }
+    button:hover { background: #1557b0; }
+    button:disabled { background: #90caf9; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <h3>VoiceDictation Receiver</h3>
+  <div id="status" class="status disconnected">Disconnected</div>
+  <div class="info">Waiting for Android device to connect to ws://localhost:8765</div>
+  <button id="reconnectBtn" disabled>Reconnect</button>
+  <script src="popup.js"></script>
+</body>
+</html>
