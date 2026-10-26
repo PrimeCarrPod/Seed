@@ -1,0 +1,19 @@
+{
+  "name": "VoiceDictation Receiver",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Receives voice dictation from Android and inserts into focused text field",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["injected.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
