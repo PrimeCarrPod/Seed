@@ -3,13 +3,14 @@
 ## Session Context
 **Project**: VoiceDictation — Android voice → Chrome text input  
 **Location**: `/workspace/app/CSMWip/13_VoiceDictation`  
-**Architecture**: Android app (sender) + Node.js WS bridge (Windows) + Chrome Ext (receiver)
+**Architecture**: Android app (sender) + Python WS bridge (Debian) + Chrome Ext (receiver)  
+**Constraints**: No Gradle, no AndroidX, no Kotlin, no Node.js — pure command-line tools
 
 ## What's Done
 - Project structure per CSMWip convention (AGENTS.md, TODO.md, build.py, build.sh)
 - Android app: MainActivity, VoiceRecognitionService, WebSocketClient, Config
 - Chrome Extension (MV3): background.js, content.js, popup.html, manifest.json
-- WebSocket Bridge: ws-server/server.js (Node.js + ws library)
+- WebSocket Bridge: ws-server/server.py (Python asyncio + websockets)
 - No-Gradle build system matching 05_BOUNCE pattern
 
 ## Immediate Next Steps
@@ -21,7 +22,7 @@
    wget https://repo1.maven.org/maven2/com/squareup/okio/okio/3.5.0/okio-3.5.0.jar
    cd ..
    ```
-   Then update `build.py` classpath to include `libs/*.jar`
+   Then update `build.py` classpath to include `libs/*.jar` (already done)
 
 2. **Build & Install**:
    ```bash
@@ -31,9 +32,10 @@
    ./build.sh install
    ```
 
-3. **Run Bridge Server** (on Windows):
+3. **Run Bridge Server** (in Debian):
    ```bash
-   cd ws-server && npm install && node server.js
+   pip3 install -r ws-server/requirements.txt
+   python3 ws-server/server.py
    ```
 
 4. **Load Chrome Extension**: Developer mode → Load unpacked → `chrome-extension/`
@@ -42,16 +44,18 @@
 
 ## Key Technical Decisions
 - **SpeechRecognizer API**: Uses Android's built-in (requires Google app or on-device model)
-- **WebSocket**: OKHttp on Android, `ws` library on Node, native WebSocket in Chrome Ext
+- **WebSocket**: OKHttp on Android, `websockets` library on Python, native WebSocket in Chrome Ext
 - **Protocol**: JSON `{type:"text", payload:"..."}` from Android → broadcast to Chrome clients
 - **Text Injection**: Content script finds `document.activeElement` if editable, inserts at cursor
 - **Network**: LAN (ws://) for Android→Server, localhost for Server→Chrome Ext
+- **No Node.js**: Python server runs entirely in this Debian environment
 
 ## Files to Modify Next
-- `build.py` — add `libs/*.jar` to javac classpath
+- `build.py` — verify `libs/*.jar` classpath inclusion works
 - `WebSocketClient.java` — handle reconnection, ping/pong
 - `VoiceRecognitionService.java` — tune SpeechRecognizer params (language, punctuation)
 - `content.js` — improve contenteditable support, handle special keys
+- `ws-server/server.py` — add TLS support (wss://) for production if needed
 
 ## Testing Checklist
 - [ ] APK builds without errors
@@ -64,3 +68,4 @@
 - [ ] Chrome extension receives message
 - [ ] Text inserted into focused `<input>`, `<textarea>`, `contenteditable`
 - [ ] Reconnection works after network hiccup
+- [ ] Python server handles multiple concurrent clients
