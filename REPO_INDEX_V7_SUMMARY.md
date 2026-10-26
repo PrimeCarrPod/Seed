@@ -135,6 +135,15 @@ All projects that received generated README.md files now have HasREADME=Y:
   - Cellular BVLOS C2 (4G/5G WebRTC SFU, Part 107 waiver compliance), dual-phone config
   - 6-layer safety (kill switch, MCU IWDG, software, geofence, battery, triple-daemon watchdog)
   - Phoenix Protocol circular economy: 92.1% material recovery, 71% CO₂ reduction vs landfill CF drone
+- **CSMFAB-TESTA-FLEET** — Replaced template with project-specific 7-chapter README (680+ lines) containing:
+  - 5-tier container architecture (SeedCoat, PodWall, TsunamiGuard, ArcticShell, LegendaryWall) from 17M global fleet
+  - AegisC ZrB₂-SiC ceramic composite: 850 MPa compressive, 92 dB EMI SE, flash-sintered 0.08 kWh/piece
+  - Steel-to-AegisC recycling: 3.2t steel → 1.8t ZrB₂ per container, 75% carbon reduction (2.1 vs 8.4 t CO₂e)
+  - Full logistics chain: Testa-Gantry (35m/40t), Testa-Lifter (12t/8m), Testa-Stacker (8t/5m, 2.4m width)
+  - 12 container applications: Farming (180 kg/mo), Medical (WHO EMT Type 1), Data Center (500 TFLOPS/PUE 1.03), School, Sanitation, Water, Energy, Workshop, Crematorium, Animal Shelter, Cold Chain, Comms Hub
+  - Active ballast self-righting (12s from 180° inversion), tsunami physics validated (509× compression SF at 170m wave)
+  - GIC/Carrington immunity: 42 kV/mm dielectric, FEATHER mesh LoRa immune, zero conductive path
+  - Phoenix Protocol circular economy: 92% material recovery, $142B 10-year fleet conversion, 2.3yr payback
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
