@@ -61962,6 +61962,8 @@ The specification meets all quality gates:
 
 **Next Steps:** Author review → Chunking with write_large_file.py → Verification → Compression → Git commit
 
+```
+
 
 <!-- ===== SOURCE: specifications/threat_protection/DOC-26_blast_fragmentation_protection.md ===== -->
 

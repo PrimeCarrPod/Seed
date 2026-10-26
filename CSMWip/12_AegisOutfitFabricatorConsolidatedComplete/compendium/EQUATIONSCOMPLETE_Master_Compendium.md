@@ -61680,6 +61680,8 @@ The specification meets all quality gates:
 
 **Next Steps:** Author review → Chunking with write_large_file.py → Verification → Compression → Git commit
 
+```
+
 
 ################################################################################
 # DOC-26 — Blast/Fragmentation Protection — Auxetic Foam + Ceramic Array + Spall Liner

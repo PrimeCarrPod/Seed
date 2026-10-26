@@ -63,10 +63,14 @@ inputs are not gate-scored because they are source material, not specifications.
 │   ├── EQUATIONSCOMPLETE_Master_Compendium.md   # all 60 numbered documents
 │   └── parts/                       # the same compendium split per document
 ├── deliverables/
-│   └── MASTER_SPECIFICATION.md      # built by tools/assemble.sh
+│   ├── MASTER_SPECIFICATION.md      # built by tools/assemble.sh
+│   ├── AEGIS_OUTFIT_FABRICATOR_COMPLETE.md    # complete project in one Markdown file
+│   └── AEGIS_OUTFIT_FABRICATOR_COMPLETE.html  # full-markup HTML edition
 └── tools/
-    ├── assemble.sh                  # rebuild the deliverable
+    ├── assemble.sh                  # rebuild the master deliverable
     ├── build_compendium.js          # rebuild the compendium and parts
+    ├── build_publication.js         # rebuild the single-file Markdown + HTML editions
+    ├── vendor/marked.umd.js         # vendored Markdown renderer (MIT)
     ├── make_manifest.sh             # regenerate MANIFEST.sha256
     ├── verify.sh                    # manifest, gates, and deliverable audit
     ├── quality_gates.js             # gate report driver (--markdown supported)
@@ -75,8 +79,8 @@ inputs are not gate-scored because they are source material, not specifications.
 ```
 
 Every product and compendium `.md` has a `.gz` twin for storage; both are covered by
-the manifest. The generated deliverable and `MANIFEST.sha256` itself are the only files
-without a twin.
+the manifest. Generated files under `deliverables/` and `MANIFEST.sha256` itself are the
+only files without a twin.
 
 ## Document map
 
@@ -204,8 +208,9 @@ cd CSMWip/12_AegisOutfitFabricatorConsolidatedComplete
 bash resume_session.sh
 
 # or step by step
-bash tools/assemble.sh                    # rebuild the single-file deliverable
+bash tools/assemble.sh                    # rebuild the master specification deliverable
 node tools/build_compendium.js .          # rebuild compendium + parts from product files
+node tools/build_publication.js           # rebuild the single-file Markdown + HTML editions
 bash tools/make_manifest.sh               # regenerate checksums
 bash tools/verify.sh                      # manifest + 60/60 gate + deliverable audit
 
@@ -220,6 +225,19 @@ node tools/conflation_scan.js specifications/threat_protection/DOC-21_ballistic_
 `verify.sh` exits non-zero on a checksum mismatch **or** if any product document fails a
 quality gate. This folder is delivered complete, so the expected result is
 `60/60 documents pass all five gates`.
+
+## Single-file and HTML editions
+
+`deliverables/AEGIS_OUTFIT_FABRICATOR_COMPLETE.md` is the complete project in one
+Markdown file: project overview, scope closure, all 60 product documents, both research
+inputs, and a document inventory. It excludes the compendium because the compendium is a
+generated duplicate of the same 60 documents.
+
+`deliverables/AEGIS_OUTFIT_FABRICATOR_COMPLETE.html` is generated from that Markdown
+with the full markup preserved: headings, tables, code blocks, images, links, and
+anchors. Math is left as LaTeX in the source and rendered by MathJax when the file is
+opened with network access; the equations remain readable as source without it. The
+HTML file is self-contained for text, tables, styles, and embedded images.
 
 ## Scope and verification
 
