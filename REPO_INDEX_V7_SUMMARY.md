@@ -115,6 +115,15 @@ All projects that received generated README.md files now have HasREADME=Y:
   - Email template engine v2, 67 verified contacts (E037-E068), July 2026 campaign batches dispatched
   - Grant pipeline: DOE Grid Resilience ($15B), DARPA, NSF, EIB Critical Minerals
   - Cross-project integration: CSMMinesMagnets Chile intelligence, CSMPro magnet tech, CSMFAB Aegis-Forge
+- **CSMFAB0108 Aegis-Forge** — Replaced template with project-specific 7-chapter README (309 lines) containing:
+  - 5-volume TCIMS series (108-112, 1,486 lines): System Architecture, Thermal Cascade Engineering, Acoustic Mineral Liberation, Gas Capture & Fume Solidification, Assembly Line Integration
+  - 8-stage thermal cascade (ambient→2200°C) with selective induction heating (ferrous 25-50×, Cu 15× Al)
+  - Acoustic Mineral Liberation Subsystem: LF resonance (20-500 Hz) + ultrasonic cavitation (40 kHz) + acoustic-magnetic coupled pre-sorting
+  - Zero-emission closed-loop gas capture: 5 trains, PSA CO₂ capture, plasma torch dioxin destruction, all-Aegis materials
+  - 14 output streams mapped 1:1 to CSMFAB seed materials: In→YInMn, REE→magnets, Zr→ZrO₂/ZrB₂, Ti→MAX Phase, C→activated carbon
+  - All-Aegis construction: ZrB₂-SiC drum, BFRP/Elium® vessel, PEEK CF40, KNbO₃-BaTiO₃ piezo, PMMA POF+FBG sensors
+  - Phoenix Protocol realized: 48-hour ZrB₂ path from zircon sand, $230K/unit, $1,928 net/batch, 15-18 day payback
+  - Phase-gated roadmap: Phase 1 (Forge revenue) → Phase 2 (Hydro-Refinery) → Phase 3 (Full 7-machine line)
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged

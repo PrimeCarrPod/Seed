@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-26T03:54:10+00:00",
-  "top_candidate": "",
-  "top_path": "",
-  "top_score": ,
-  "best_upgrade": "CSMSubatomic082026",
-  "best_upgrade_path": "CSMSubatomic082026",
-  "best_csmwip": "CSMMinesMagnets"
+  "timestamp": "2026-10-26T04:13:32+00:00",
+  "top_candidate": "README_chapters",
+  "top_path": "CSMSOPP/README_chapters",
+  "top_score": 35,
+  "best_upgrade": "CSMScripts",
+  "best_upgrade_path": "CSMScripts",
+  "best_csmwip": "Kilo_Session_20261007_Consolidation"
 }

@@ -69,6 +69,40 @@ else
     warn "REPO_INDEX_V7_SUMMARY.md not found"
 fi
 
+# --- Container Directories (parents that aggregate subprojects) ---
+# These directories contain many subprojects each; score children instead of parent
+CONTAINER_DIRS=(
+    "CSMPro"
+    "CSMFAB"
+    "CSMApps"
+    "DeepResearch"
+    "CSMHuman"
+    "CSMQuantum"
+    "CSMMetal"
+    "CSMLogs"
+    "CSMCinema"
+    "CSMRadio"
+    "CSMGen"
+    "CSMSubatomic082026"
+    "CSMSOPP"
+    "CSMSOPPv2"
+    "CSM-Brandoutreach"
+    "CSMArchive"
+    "CSMDropBox"
+    "CSMPrePublish"
+    "CSMProtonics"
+    "CSMIncoming"
+    "CSM_WORK_IN_PROGRESS"
+    "CSMWipScripts"
+    "TardigradiaTGPU"
+    "PrimeBookOne"
+    "__PUBLISH_CSM__"
+    "landing-page"
+    "scripts"
+    "__Python_Tools"
+    ".sdk"
+)
+
 # --- Parse REPO_INDEX_V7.csv with awk (handling quoted fields properly) ---
 # CSV columns: State,ParentProject,Summary,Category,Project,Path,FileCount,HasTODO,HasREADME,HasNEXT,CreationDate,LastWorkedDate,DaysSinceUpdated,AI,Status,Notes
 log ""
@@ -126,35 +160,91 @@ mapfile -t ALL_PROJECTS < <(awk '
 
 log "Parsed ${#ALL_PROJECTS[@]} projects from CSV"
 
-# --- Completed deep READMEs (avoid re-doing) ---
-COMPLETED=(
-    "10_Prime_Electron_Caldera_Synthesis"
-    "02_Caldera_Prime_Pi_Electron"
-    "11_TGApp"
-    "12_AegisOutfitFabricator"
-    "01_SubAtomic_Prime_Electron_Canonical"
-    "03_Legal_Enactment"
-    "05_BOUNCE"
-    "LEGAL-ENACTMENT"
-)
-
-# --- Score each project ---
+# --- Build subproject index from filesystem for container directories ---
 log ""
-log "=== SCORING ALL PROJECTS ==="
+log "=== DISCOVERING SUBPROJECTS IN CONTAINER DIRECTORIES ==="
 
-declare -A SCORED
-NEW_CANDIDATES=0
-UPGRADE_CANDIDATES=0
+declare -A SUBPROJECTS
+for container in "${CONTAINER_DIRS[@]}"; do
+    container_path="${REPO_ROOT}/${container}"
+    if [[ -d "$container_path" ]]; then
+        # Find immediate subdirectories that look like projects
+        while IFS= read -r -d '' subdir; do
+            sub_name=$(basename "$subdir")
+            # Skip non-project directories
+            [[ "$sub_name" == "README_chunks" ]] && continue
+            [[ "$sub_name" == "Pieces" ]] && continue
+            [[ "$sub_name" == "chunks" ]] && continue
+            [[ "$sub_name" == "Logs" ]] && continue
+            [[ "$sub_name" == "scripts" ]] && continue
+            [[ "$sub_name" == "intros" ]] && continue
+            [[ "$sub_name" == "Framework" ]] && continue
+            [[ "$sub_name" == "Research" ]] && continue
+            [[ "$sub_name" == "FinishedWork" ]] && continue
+            [[ "$sub_name" == "memory" ]] && continue
+            [[ "$sub_name" == "__pycache__" ]] && continue
+            [[ "$sub_name" == ".git" ]] && continue
+            [[ "$sub_name" == ".tokenring" ]] && continue
+            [[ "$sub_name" == ".tokenringv2" ]] && continue
+            [[ "$sub_name" == ".tokenringv3" ]] && continue
+            [[ "$sub_name" == "KiloWorkSpace" ]] && continue
+            [[ "$sub_name" == "StartScriptCommands" ]] && continue
+            [[ "$sub_name" == "freenemo_concat" ]] && continue
+            [[ "$sub_name" == "freenemo_modules" ]] && continue
+            [[ "$sub_name" == "earthbeatv3-data" ]] && continue
+            [[ "$sub_name" == "__Git_Seed_Recover" ]] && continue
+            [[ "$sub_name" == "heartbeat-shared" ]] && continue
+            [[ "$sub_name" == "android-toolkit" ]] && continue
+            [[ "$sub_name" == "CSMLogs" ]] && continue
+            [[ "$sub_name" == "Bounce" ]] && continue  # Will be picked up under CSMApps
+            [[ "$sub_name" == "DRONE-X" ]] && continue  # Will be picked up under CSMFAB
+            [[ "$sub_name" == "FLUID-DAMP" ]] && continue
+            [[ "$sub_name" == "PROTONIC-HFET" ]] && continue
+            [[ "$sub_name" == "STELLAR-TINT" ]] && continue
+            [[ "$sub_name" == "ULNAR-REST" ]] && continue
+            [[ "$sub_name" == "GAP-LIST.md" ]] && continue
+            [[ "$sub_name" == "MASTER-FABRICATION-CATALOG.md" ]] && continue
+            [[ "$sub_name" == "VOL-MASTER-CATALOG.csv" ]] && continue
+            [[ "$sub_name" == "README.md" ]] && continue
+            [[ "$sub_name" == "README-v1.md" ]] && continue
+            [[ "$sub_name" == "UPDATES_at_github_com_PrimeCarrPod_Seed_.md" ]] && continue
+            
+            # Count files in subproject
+            sub_filecount=$(find "$subdir" -type f 2>/dev/null | wc -l)
+            
+            # Check for infrastructure
+            sub_hastodo="false"; [[ -f "$subdir/TODO.md" ]] && sub_hastodo="true"
+            sub_hasreadme="N"; [[ -f "$subdir/README.md" ]] && sub_hasreadme="Y"
+            sub_hasnext="false"; [[ -f "$subdir/NEXT_runner_"* ]] && sub_hasnext="true"
+            
+            # State: infer from structure
+            sub_state="Part of Another Project"
+            [[ -f "$subdir/AGENTS.md" && -f "$subdir/TODO.md" && -d "$subdir/chunks" ]] && sub_state="Whole Project"
+            
+            # Category: use parent category from CSV or infer
+            sub_category="$container"
+            
+            # Path relative to repo root
+            sub_path="${container}/${sub_name}"
+            
+            SUBPROJECTS["$sub_path"]="$sub_name|$sub_path|$sub_state|$sub_category|$sub_filecount|$sub_hastodo|$sub_hasreadme|$sub_hasnext"
+            log "  Discovered subproject: $sub_path ($sub_filecount files)"
+        done < <(find "$container_path" -mindepth 1 -maxdepth 1 -type d -print0 2>/dev/null)
+    fi
+done
 
-for entry in "${ALL_PROJECTS[@]}"; do
-    IFS='|' read -r project path state category filecount hastodo hasreadme hasnext <<< "$entry"
-    
-    # Skip if already completed
-    skip=false
-    for c in "${COMPLETED[@]}"; do
-        [[ "$project" == "$c" ]] && skip=true
-    done
-    [[ "$skip" == "true" ]] && continue
+log "Discovered ${#SUBPROJECTS[@]} subprojects from container directories"
+
+# --- Scoring function ---
+score_project() {
+    local project="$1"
+    local path="$2"
+    local state="$3"
+    local category="$4"
+    local filecount="$5"
+    local hastodo="$6"
+    local hasreadme="$7"
+    local hasnext="$8"
     
     # Normalize path (strip leading ./)
     clean_path="${path#./}"
@@ -214,6 +304,64 @@ for entry in "${ALL_PROJECTS[@]}"; do
     fi
     
     SCORED["$safe_project"]="$score|$project|$clean_path|$state|$category|$filecount|$has_template"
+}
+
+# --- Completed deep READMEs (avoid re-doing) ---
+COMPLETED=(
+    "10_Prime_Electron_Caldera_Synthesis"
+    "02_Caldera_Prime_Pi_Electron"
+    "11_TGApp"
+    "12_AegisOutfitFabricator"
+    "01_SubAtomic_Prime_Electron_Canonical"
+    "03_Legal_Enactment"
+    "05_BOUNCE"
+    "LEGAL-ENACTMENT"
+    "CSMMinesMagnets"
+    "CSMReach"
+)
+
+# --- Score each project ---
+log ""
+log "=== SCORING ALL PROJECTS ==="
+
+declare -A SCORED
+NEW_CANDIDATES=0
+UPGRADE_CANDIDATES=0
+
+# Score CSV projects (skip containers)
+for entry in "${ALL_PROJECTS[@]}"; do
+    IFS='|' read -r project path state category filecount hastodo hasreadme hasnext <<< "$entry"
+    
+    # Skip if already completed
+    skip=false
+    for c in "${COMPLETED[@]}"; do
+        [[ "$project" == "$c" ]] && skip=true
+    done
+    [[ "$skip" == "true" ]] && continue
+    
+    # Skip container directories (we'll score their subprojects instead)
+    is_container=false
+    for container in "${CONTAINER_DIRS[@]}"; do
+        [[ "$project" == "$container" ]] && is_container=true
+    done
+    [[ "$is_container" == "true" ]] && continue
+    
+    score_project "$project" "$path" "$state" "$category" "$filecount" "$hastodo" "$hasreadme" "$hasnext"
+done
+
+# Score discovered subprojects from container directories
+for sub_path in "${!SUBPROJECTS[@]}"; do
+    entry="${SUBPROJECTS[$sub_path]}"
+    IFS='|' read -r project path state category filecount hastodo hasreadme hasnext <<< "$entry"
+    
+    # Skip if already completed
+    skip=false
+    for c in "${COMPLETED[@]}"; do
+        [[ "$project" == "$c" ]] && skip=true
+    done
+    [[ "$skip" == "true" ]] && continue
+    
+    score_project "$project" "$path" "$state" "$category" "$filecount" "$hastodo" "$hasreadme" "$hasnext"
 done
 
 log "New README candidates: $NEW_CANDIDATES"
