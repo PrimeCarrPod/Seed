@@ -272,6 +272,10 @@ echo "  [ ] Heuristic intros: 5 variants"
 echo "  [ ] Git commit + tag + push: DONE"
 
 echo ""
+echo "=== Quick Resume (Taskmaster) ==="
+source /workspace/app/__Python_Tools/taskmaster.sh 2>/dev/null && taskmaster.sh quick-resume
+
+echo ""
 echo "=== Session Ready ==="
 echo "Working directory: $(pwd)"
 echo "Heartbeat PID: $HEARTBEAT_PID (saved to .heartbeat_pid)"
