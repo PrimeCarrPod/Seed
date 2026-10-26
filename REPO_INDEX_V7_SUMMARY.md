@@ -1,6 +1,6 @@
 # REPO_INDEX_V7.csv — Upgrade Summary
 
-**Date:** 2026-10-24
+**Date:** 2026-10-26
 **Source:** REPO_INDEX_V6.csv
 **Output:** REPO_INDEX_V7.csv
 
@@ -98,6 +98,15 @@ All projects that received generated README.md files now have HasREADME=Y:
   - legal_acts_handler.sh (460 lines): create/concat/zip/verify/organize/commit full lifecycle
   - 8 Acts completed in LEGAL-ENACTMENT/ (01-05, 07, 11-12), 67 total series
   - Quality gates: ≥350 lines, 12 pieces, zip integrity, Git commit per Act
+- **CSMMinesMagnets** — Replaced template with project-specific 7-chapter README (380 lines) containing:
+  - 60-document brokerage pipeline: Chilean magnetic minerals → Tardigradia → Carrington Storm Motors
+  - 6 documents complete (DOC-01 Geological, DOC-02 Ethnography, DOC-03 Reciprocity, DOC-04 Brokerage, DOC-05 Tardigradia, DOC-06 CSM Integration)
+  - 2 in progress (DOC-07 Regulatory Navigation complete, DOC-08 Port & Logistics research complete/authoring)
+  - CSMOPP 5-heuristic translation layer (Williams, Keymaker, El Segundo, Baker Street, SHIELD)
+  - Quality gates: ≥900 lines, ≥20 formulas, ≥15 cross-refs, ≥8 standards, 0 conflation, SHA256 manifests
+  - Runner-based workflow (12 runners), heartbeat 120s, 30s subtask guard, single-command resume
+  - Research assets: CSMMagTech2026 V2.0 (Fe₁₆N₂ 27 MGOe), CSMMagEco2026 V2.0 (12+ US startups, DFARS 2027)
+  - Infrastructure: FCAB/Ferronor rail, 5 Chilean ports, CPTPP digital trade, IMDG Class 9 magnet shipping
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
