@@ -491,3 +491,5 @@ The specification meets all quality gates:
 - Ready for chunking, verification, and compression pipeline
 
 **Next Steps:** Author review → Chunking with write_large_file.py → Verification → Compression → Git commit
+
+```

@@ -32,6 +32,10 @@ echo "== 2. Assemble master deliverable =="
 bash tools/assemble.sh
 
 echo
+echo "== 2b. Build single-file Markdown and HTML editions =="
+node tools/build_publication.js
+
+echo
 echo "== 3. Refresh gzip twins =="
 count=0
 while IFS= read -r -d '' f; do

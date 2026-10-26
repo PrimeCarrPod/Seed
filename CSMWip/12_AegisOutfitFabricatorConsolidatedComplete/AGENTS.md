@@ -41,6 +41,7 @@ gzip -9 -c specifications/threat_protection/DOC-21_ballistic_protection_specific
 # 3. Rebuild the deliverable and compendium
 bash tools/assemble.sh
 node tools/build_compendium.js .
+node tools/build_publication.js
 
 # 4. Regenerate the manifest and verify
 bash tools/make_manifest.sh
@@ -91,9 +92,10 @@ Expected result after any accepted edit: `60/60 documents pass all five gates`.
 
 | Tool | Purpose |
 |---|---|
-| `resume_session.sh` | One-command gzip refresh, compendium rebuild, assembly, manifest, and verification. |
+| `resume_session.sh` | One-command gzip refresh, compendium rebuild, master assembly, single-file/HTML build, manifest, and verification. |
 | `tools/assemble.sh` | Concatenate product files into `deliverables/MASTER_SPECIFICATION.md`; chapter files are used for DOC-11..DOC-20. |
 | `tools/build_compendium.js` | Rebuild `compendium/EQUATIONSCOMPLETE_Master_Compendium.md` and `compendium/parts/`. |
+| `tools/build_publication.js` | Rebuild the single-file Markdown and full-markup HTML editions under `deliverables/`. |
 | `tools/verify.sh` | Verify `MANIFEST.sha256`, print quality gates, fail on any gate failure, report the deliverable digest. |
 | `tools/make_manifest.sh` | Regenerate `MANIFEST.sha256` after any edit. |
 | `tools/quality_gates.js` | Gate report driver; `--markdown` emits a table. |
@@ -106,6 +108,6 @@ Before calling a batch done:
 
 1. `bash resume_session.sh`
 2. Confirm `60/60 documents pass all five gates`.
-3. Confirm the manifest passes and the deliverable was rebuilt.
+3. Confirm the manifest passes and the master, single-file, and HTML deliverables were rebuilt.
 4. Update `SCOPE_COMPLETION.md` if a gap was closed or a new caveat was found.
 5. Update the README document map if a line count or title changed materially.
