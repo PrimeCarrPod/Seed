@@ -1,6 +1,6 @@
 # REPO_INDEX_V7.csv — Upgrade Summary
 
-**Date:** 2026-10-24
+**Date:** 2026-10-26
 **Source:** REPO_INDEX_V6.csv
 **Output:** REPO_INDEX_V7.csv
 
@@ -98,6 +98,102 @@ All projects that received generated README.md files now have HasREADME=Y:
   - legal_acts_handler.sh (460 lines): create/concat/zip/verify/organize/commit full lifecycle
   - 8 Acts completed in LEGAL-ENACTMENT/ (01-05, 07, 11-12), 67 total series
   - Quality gates: ≥350 lines, 12 pieces, zip integrity, Git commit per Act
+- **CSMMinesMagnets** — Replaced template with project-specific 7-chapter README (380 lines) containing:
+  - 60-document brokerage pipeline: Chilean magnetic minerals → Tardigradia → Carrington Storm Motors
+  - 6 documents complete (DOC-01 Geological, DOC-02 Ethnography, DOC-03 Reciprocity, DOC-04 Brokerage, DOC-05 Tardigradia, DOC-06 CSM Integration)
+  - 2 in progress (DOC-07 Regulatory Navigation complete, DOC-08 Port & Logistics research complete/authoring)
+  - CSMOPP 5-heuristic translation layer (Williams, Keymaker, El Segundo, Baker Street, SHIELD)
+  - Quality gates: ≥900 lines, ≥20 formulas, ≥15 cross-refs, ≥8 standards, 0 conflation, SHA256 manifests
+  - Runner-based workflow (12 runners), heartbeat 120s, 30s subtask guard, single-command resume
+  - Research: CSMMagTech2026 V2.0 (Fe₁₆N₂ 27 MGOe), CSMMagEco2026 V2.0 (12+ US startups, DFARS 2027)
+  - Infrastructure: FCAB/Ferronor rail, 5 Chilean ports, CPTPP digital trade, IMDG Class 9 magnet shipping
+- **CSMReach** — Replaced template with project-specific 7-chapter README (404 lines) containing:
+  - 5-vector outreach intelligence platform: 10 ACS corporate profiles (SpaceX, Tesla, Rivian, Lucid, Helion, Commonwealth Fusion, Beta Technologies, Boston Dynamics, Redwood Materials, PPG Industries)
+  - 40-category CSMEval evaluation matrix (federal agencies, critical infrastructure, strategic industries, communities)
+  - 200-country CSMGlobal diplomatic compendium (66 KB compiled, 7 KB mini, quarterly recompile)
+  - 8-section CSMDossier technical framework, AEGIS Covenant constitutional framework
+  - Email template engine v2, 67 verified contacts (E037-E068), July 2026 campaign batches dispatched
+  - Grant pipeline: DOE Grid Resilience ($15B), DARPA, NSF, EIB Critical Minerals
+  - Cross-project integration: CSMMinesMagnets Chile intelligence, CSMPro magnet tech, CSMFAB Aegis-Forge
+- **CSMFAB0108 Aegis-Forge** — Replaced template with project-specific 7-chapter README (309 lines) containing:
+  - 5-volume TCIMS series (108-112, 1,486 lines): System Architecture, Thermal Cascade Engineering, Acoustic Mineral Liberation, Gas Capture & Fume Solidification, Assembly Line Integration
+  - 8-stage thermal cascade (ambient→2200°C) with selective induction heating (ferrous 25-50×, Cu 15× Al)
+  - Acoustic Mineral Liberation Subsystem: LF resonance (20-500 Hz) + ultrasonic cavitation (40 kHz) + acoustic-magnetic coupled pre-sorting
+  - Zero-emission closed-loop gas capture: 5 trains, PSA CO₂ capture, plasma torch dioxin destruction, all-Aegis materials
+  - 14 output streams mapped 1:1 to CSMFAB seed materials: In→YInMn, REE→magnets, Zr→ZrO₂/ZrB₂, Ti→MAX Phase, C→activated carbon
+  - All-Aegis construction: ZrB₂-SiC drum, BFRP/Elium® vessel, PEEK CF40, KNbO₃-BaTiO₃ piezo, PMMA POF+FBG sensors
+  - Phoenix Protocol realized: 48-hour ZrB₂ path from zircon sand, $230K/unit, $1,928 net/batch, 15-18 day payback
+  - Phase-gated roadmap: Phase 1 (Forge revenue) → Phase 2 (Hydro-Refinery) → Phase 3 (Full 7-machine line)
+- **CSMFAB0200 DRONE-X** — Replaced template with project-specific 7-chapter README (412 lines) containing:
+  - 30-document engineering specification suite (CSMFAB-200 through 230) + 2 implementation scripts
+  - Universal phone-centric architecture: smartphone as flight controller, sensor suite, compute, C2 link
+  - BFRP airframe (450mm, NACA 0015 arms, 21× safety factor), MXene EMI shielding (92 dB SE)
+  - T-Motor F2306 + BLHeli_32 propulsion, STM32F103 USB-C OTG bridge (921600 baud)
+  - Madgwick AHRS (400 Hz) + cascaded PID, MobileNetV3-SSD-Lite CV (30 Hz), VINS-Mono VIO
+  - 4-tier depth estimation (LiDAR/Stereo/MiDaS/BBox), obstacle avoidance via potential fields
+  - LoRa mesh (64 nodes, 8 km), swarm protocol (Bully election, collision avoidance, 6 formations)
+  - Cellular BVLOS C2 (4G/5G WebRTC SFU, Part 107 waiver compliance), dual-phone config
+  - 6-layer safety (kill switch, MCU IWDG, software, geofence, battery, triple-daemon watchdog)
+  - Phoenix Protocol circular economy: 92.1% material recovery, 71% CO₂ reduction vs landfill CF drone
+- **CSMFAB-TESTA-FLEET** — Replaced template with project-specific 7-chapter README (680+ lines) containing:
+  - 5-tier container architecture (SeedCoat, PodWall, TsunamiGuard, ArcticShell, LegendaryWall) from 17M global fleet
+  - AegisC ZrB₂-SiC ceramic composite: 850 MPa compressive, 92 dB EMI SE, flash-sintered 0.08 kWh/piece
+  - Steel-to-AegisC recycling: 3.2t steel → 1.8t ZrB₂ per container, 75% carbon reduction (2.1 vs 8.4 t CO₂e)
+  - Full logistics chain: Testa-Gantry (35m/40t), Testa-Lifter (12t/8m), Testa-Stacker (8t/5m, 2.4m width)
+  - 12 container applications: Farming (180 kg/mo), Medical (WHO EMT Type 1), Data Center (500 TFLOPS/PUE 1.03), School, Sanitation, Water, Energy, Workshop, Crematorium, Animal Shelter, Cold Chain, Comms Hub
+  - Active ballast self-righting (12s from 180° inversion), tsunami physics validated (509× compression SF at 170m wave)
+  - GIC/Carrington immunity: 42 kV/mm dielectric, FEATHER mesh LoRa immune, zero conductive path
+  - Phoenix Protocol circular economy: 92% material recovery, $142B 10-year fleet conversion, 2.3yr payback
+- **CSMFAB-P001 Ceramic Bridge Bearings 500T** — Replaced template with project-specific 7-chapter README (720+ lines) containing:
+  - 500-tonne ZTA ceramic bridge bearing breaking GIC path: >10⁸ Ω·m resistivity, 42 kV/mm dielectric
+  - 28-volume spec suite (VOL-01 to VOL-28): ZTA disc (72% ZrO₂/27% Al₂O₃/0.5% CNT), BF-002 BFRP housing, PTFE sliding
+  - Flash sintering: 850°C in <5 sec, 0.08 kWh/piece (98% energy reduction vs conventional 4.2 kWh)
+  - Full test battery: mechanical (1.5× proof load, 2M fatigue cycles), EM (GIC simulation, lightning, MIL-STD-461G), lifecycle (QUV, salt spray, combined cycle)
+  - FMEA: 10 failure modes, RPN <50 target, FEATHER displacement monitoring
+  - Installation: 8-10 hrs/bearing retrofit, $34,300 installed, 25-yr PTFE inspection, >100 yr ceramic life
+  - ROI: 47:1 new construction, 83:1 retrofit; $13.2B TAM (2.4M US bearings); Phase 1 CAPEX $2.4M, break-even 290 units
+  - Solar Cycle 25 imperative: SSN 137 vs 115 forecast, G4 insurer advisories active, zero bridge sector preparedness
+- **CSMFAB Materials Study 5 Parts** — Replaced template with project-specific 7-chapter README (850+ lines) containing:
+  - 6-part comprehensive materials intelligence covering all 43 CSMFAB products
+  - Part I: 8 UHT ceramics (ZrB₂, Si₃N₄, SiC, 3Y-TZP, Al₂O₃/ALON, MAX Phase Ti₃AlC₂, CBPC/Geopolymer) with synthesis routes, pricing, in-house feasibility
+  - Part II: Basalt fiber (crown jewel: $1.80–2.50/kg in-house vs $4.50–14 commercial, 60–85% savings), Elium® recyclable thermoplastic, UHMWPE, PEEK
+  - Part III: YInMn Blue (35/43 products, SRI=115, In supply risk, hydrothermal synthesis, In-sparing R&D), CoAl₂O₄, MXene (92 dB SE, 96–97% in-house savings from MAX Phase)
+  - Part IV: PVDF piezo, PMMA POF sensors, LoRa SX1276, GaN HFET, LiFePO₄
+  - Part V: Critical minerals matrix (In, Y, Co, W, Sm, Nb, Li) with supply risk, Phoenix Protocol recovery economics (99.4% In recovery via [P8888][Cl] ionic liquid)
+  - Part VI: Capital roadmap ($2.4M over 5 years → $8.5M/yr savings by Year 5, 85% materials self-sufficiency, gross margin 55–68%)
+  - Phoenix Protocol economics: $3.25M recovered value per 10K Aegis-C panels retired vs $0 disposal
+- **CSMFAB-INCURSION-CLASS** — Replaced template with project-specific 7-chapter README (900+ lines) containing:
+  - 5-vessel quintuple drone system (I-SCOUT, I-COURIER, I-SURVEYOR, I-GUARDIAN, I-DEEP) unified by tardigrade biomimetic architecture
+  - Archimedean screw propulsion: 85% efficiency, silent (no cavitation <25kt), zero entanglement, variable pitch, ZTA bearings, CNT-polymer shaft
+  - Retractable hydrofoils: 2 canard + 2 main, MRF rotary actuation <2 sec, hydrogel gaskets (tardigrade swell-on-contact), 50K cycles
+  - Tardigrade hull: Segmented BFRP-MXene armor plates, cryptobiotic "tun state" (90-day passive drift at <1mW, FEATHER wake)
+  - Message-to-Charge wave induction: Linear induction generator, NdFeB N52 array, MRF damper tuning, 5–25W continuous (40% endurance extension)
+  - 70% parts commonality across all 5 vessels: shared propulsion, foils, hull, avionics, power, ballast, safety
+  - Depth ratings: 15m (Scout) to 200m (Deep) with 2× safety factor, hemispherical end caps, Ti-6Al-4V inserts
+  - Acoustic stealth: 128 dB vs 152 dB propeller, no cavitation, serrated trailing edges (humpback biomimicry)
+  - Market: $16.1B TAM, $266M Year 5 revenue; Phase 1 $1.8M → Scout prototype Q2 2027
+- **CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan** — Replaced template with project-specific 7-chapter README (900+ lines) containing:
+  - Triple-Zero GIC defense: zero electrical conductivity (ρ > 10¹¹ Ω·cm), zero magnetic permeability (μᵣ = 1.0), zero corrosion — complete electromagnetic invisibility to geomagnetic storms
+  - 2025 mechanical breakthrough: BFRP rebar achieves **1000 MPa tensile strength** (2× Grade 60 steel, 60% over V1.0) via pull-winding at 65% fiber volume fraction with Elium® matrix
+  - Elium® thermoplastic matrix 2025 data: **95% basalt fiber recovery** via thermal depolymerization at 270°C in N₂, >90% tensile retention, 80% MMA monomer recovery — 50% energy saving vs virgin
+  - ACI 440.11-25 seismic Type S compliance: C_E = 0.70 environmental factor, f_fu* = 700 MPa design capacity, k_s = 1.35 confinement enhancement, ρ_f,min = 5.8% for Seismic Zone D/E
+  - Curie Harmonic spectral defense: YInMn Blue NIR >80% reflectivity (700–2500 nm) integrated into pull-winding topcoat for IR protection + field identification
+  - Flash-sintered CBPC interface coatings (700°C, 150 V/cm, <30 sec) at rebar terminations for ceramic-locked GIC-immune connections
+  - MXene anti-static surface treatment (Ti₃C₂T_x, 0.1 mg/mL) for construction-phase static dissipation (10⁵–10⁷ Ω/sq, transient 30-day protection)
+  - Phoenix Protocol circular economy: $32/bar production COGS (5K–50K/yr), 95% fiber recovery, $6–12/unit recovered value, 15–30% lifecycle cost reduction, critical minerals (In, Y, Co, Ti) recovered via ionic liquid extraction
+  - Dielectric Citadel Foundation Doctrine: zero steel rebar mandate, zero carbon fiber, 100% BFRP/Elium®, ACI 440.11-25 minimum + Aegis GIC immunity spec above code, Curie Harmonic coating on all exposed sections
+- **CSMFAB08 Aegis Home Carrington Storm Safe Cookware** — Replaced template with project-specific 7-chapter README (900+ lines) containing:
+  - Zero-conductivity kitchen appliance: soapstone (ρ > 10¹² Ω·cm) structural body eliminates every GIC antenna in countertop warming tray
+  - SiC resistance elements: 890 nm peak emission, 10.8 W/m²/cm² FIR output, semiconductor resistivity (1–100 Ω·cm) provides minimal GIC coupling vs metallic Nichrome
+  - YInMn Blue NIR armor: >80% reflectivity across 700–2500 nm directly rejects wildfire/directed energy thermal loading; 3-layer inorganic coating system stable to 800°C
+  - BiVO₄ thermochromic indicators: 2025 breakthrough — fully reversible color transition at 50°C (Eu³⁺-doped), 60°C (standard), 75°C (Mo⁶⁺); zero electronics, zero thermistors, ceramic matrix compatible
+  - Zero-electronic control: CERMET ceramic rotary resistor only; Schumann Resonance base geometry (7.83 Hz harmonic dimensions) as design philosophy
+  - ZrO₂ ceramic fasteners: 900–1000 MPa tensile, zero conductivity, CTE match with steatite within 5% (10.5 vs 11 ×10⁻⁶ K⁻¹)
+  - MXene EMI shielding: Ti₃C₂T_x spray layer >70 dB SE (100 MHz–40 GHz) on chassis underside — Faraday cage around wiring/terminals
+  - Flash sintering surface: 800°C onset, <60 sec wand application; porosity 15%→5%, hardness 100→140 HV, improved cleanability + thermochromic adhesion
+  - Post-grid survival: 2-hour thermal retention (294 kJ stored) on preheated mass; compatible with 12V/200Ah LiFePO₄, solar PV, wind, TEG
+  - Phoenix Protocol economics: $210 COGS at production scale (5K–50K/yr), $23–44/unit recovered value, 15–30% lifecycle cost reduction, critical minerals (In, Y, Co, Ti) recovered via ionic liquid
+  - Performance vs standard: 294 kJ vs 12 kJ thermal mass, ±3°C vs ±15°C uniformity, >50 yr vs 5–10 yr service life, 100% post-GIC operability vs destroyed
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
