@@ -124,6 +124,17 @@ All projects that received generated README.md files now have HasREADME=Y:
   - All-Aegis construction: ZrB₂-SiC drum, BFRP/Elium® vessel, PEEK CF40, KNbO₃-BaTiO₃ piezo, PMMA POF+FBG sensors
   - Phoenix Protocol realized: 48-hour ZrB₂ path from zircon sand, $230K/unit, $1,928 net/batch, 15-18 day payback
   - Phase-gated roadmap: Phase 1 (Forge revenue) → Phase 2 (Hydro-Refinery) → Phase 3 (Full 7-machine line)
+- **CSMFAB0200 DRONE-X** — Replaced template with project-specific 7-chapter README (412 lines) containing:
+  - 30-document engineering specification suite (CSMFAB-200 through 230) + 2 implementation scripts
+  - Universal phone-centric architecture: smartphone as flight controller, sensor suite, compute, C2 link
+  - BFRP airframe (450mm, NACA 0015 arms, 21× safety factor), MXene EMI shielding (92 dB SE)
+  - T-Motor F2306 + BLHeli_32 propulsion, STM32F103 USB-C OTG bridge (921600 baud)
+  - Madgwick AHRS (400 Hz) + cascaded PID, MobileNetV3-SSD-Lite CV (30 Hz), VINS-Mono VIO
+  - 4-tier depth estimation (LiDAR/Stereo/MiDaS/BBox), obstacle avoidance via potential fields
+  - LoRa mesh (64 nodes, 8 km), swarm protocol (Bully election, collision avoidance, 6 formations)
+  - Cellular BVLOS C2 (4G/5G WebRTC SFU, Part 107 waiver compliance), dual-phone config
+  - 6-layer safety (kill switch, MCU IWDG, software, geofence, battery, triple-daemon watchdog)
+  - Phoenix Protocol circular economy: 92.1% material recovery, 71% CO₂ reduction vs landfill CF drone
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
