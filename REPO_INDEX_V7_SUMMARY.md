@@ -84,6 +84,13 @@ All projects that received generated README.md files now have HasREADME=Y:
   - Remediation Phase A complete (32 formula injection tasks), Phases B-D queued
   - Master compendium: EQUATIONSCOMPLETE (2.8MB, all 77 docs quality-gated)
   - Heartbeat monitor (120s), 30s subtask guard, auto-continue queue
+- **01_SubAtomic_Prime_Electron_Canonical** — Replaced template with project-specific 7-chapter README (346 lines) containing:
+  - 360 canonical articles across 9 domains (A–I), 40 articles per domain
+  - Three postulates: Worldline Monism, Meta-Depth Hierarchy (D=0, ω, ω+3), Structural Correspondence
+  - Testable predictions: gap fluctuation noise (10⁻¹⁰), Riemann ripple, topological order, prime codes
+  - 51 articles organized (A:22, B:16, C:13) from 588 loose pieces → 49 zips + 49 masters
+  - 13-method verification checklist (all PASS), FLAGSHIP papers (5), publication pipeline
+  - Source for 10_Prime_Electron_Caldera_Synthesis and 02_Caldera_Prime_Pi_Electron
 
 ### CSV Integrity
 - Rows: 461 (1 header + 460 data) — unchanged
