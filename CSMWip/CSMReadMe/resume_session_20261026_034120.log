@@ -1,0 +1,27 @@
+[0;34m[03:41:20][0m ==========================================
+[0;34m[03:41:20][0m CSMReadMe Resume Session — Mon Oct 26 03:41:20 AM UTC 2026
+[0;34m[03:41:20][0m ==========================================
+[0;34m[03:41:20][0m Repo root: /workspace/app
+[0;34m[03:41:20][0m REPO_INDEX_V7: /workspace/app/REPO_INDEX_V7.csv
+[0;34m[03:41:20][0m Summary: /workspace/app/REPO_INDEX_V7_SUMMARY.md
+[0;34m[03:41:20][0m Log: /workspace/app/CSMWip/CSMReadMe/resume_session_20261026_034120.log
+[0;34m[03:41:20][0m Loading REPO_INDEX_V7_SUMMARY.md context...
+[0;34m[03:41:20][0m 
+[0;34m[03:41:20][0m === SCORING CANDIDATES FOR NEXT DEEP README ===
+[0;34m[03:41:20][0m 
+[0;34m[03:41:20][0m === TOP 15 CANDIDATES FOR NEXT DEEP README ===
+[0;34m[03:41:20][0m 
+[0;34m[03:41:20][0m === SPECIFIC RECOMMENDATIONS ===
+[0;35m[REC][0m 🥇 BEST OVERALL (New README): TardigradiaTGPU (Score: 85)
+[0;35m[REC][0m    Path: TardigradiaTGPU | Whole Project | TopLevel | 100 files
+[0;35m[REC][0m 🥈 BEST UPGRADE CANDIDATE: CSMPro (Score: 145)
+[0;35m[REC][0m    Path: CSMPro | Whole Project | TopLevel | 5000 files
+[0;35m[REC][0m 🥉 BEST CSMWip SUBPROJECT: Kilo_Session_20261007_Consolidation (Score: 75)
+[0;34m[03:41:20][0m 
+[0;34m[03:41:20][0m === QUICK START COMMANDS FOR TOP CANDIDATE ===
+[0;32m[OK][0m Recommendations saved to /workspace/app/CSMWip/CSMReadMe/.session_state.json.recommendations
+[0;32m[OK][0m Full log saved to /workspace/app/CSMWip/CSMReadMe/resume_session_20261026_034120.log
+[0;34m[03:41:20][0m 
+[0;34m[03:41:20][0m === RESUME COMPLETE ===
+[0;34m[03:41:20][0m To continue in next session, run this script again.
+[0;34m[03:41:20][0m It will load REPO_INDEX_V7_SUMMARY.md and re-analyze.

@@ -1,0 +1,9 @@
+{
+  "timestamp": "$(date -Iseconds)",
+  "top_candidate": "$(echo "$best" | cut -d'|' -f2)",
+  "top_path": "$(echo "$best" | cut -d'|' -f3)",
+  "top_score": $(echo "$best" | cut -d'|' -f1),
+  "best_upgrade": "$(echo "$best_upgrade" | cut -d'|' -f2)",
+  "best_upgrade_path": "$(echo "$best_upgrade" | cut -d'|' -f3)",
+  "best_csmwip": "$(echo "$best_csmwip" | cut -d'|' -f2)"
+}
