@@ -190,7 +190,7 @@ The direct coating application cost represents only a fraction of the total econ
 - **Traffic disruption**: Each major paint project requires months to years of lane closures, scaffolding, and containment structures. At $500 to $2,000 per lane-hour of disruption (per FHWA and Caltrans estimates), a single 18-month paint project on a major bridge generates $50 million to $150 million in traffic delay costs
 - **Economic productivity loss**: Delayed freight, commuter time, and supply chain impacts for bridges carrying 100,000 to 280,000 vehicles per day
 - **Environmental cost of repeated surface preparation**: Each abrasive blast cycle generates thousands of tons of spent abrasive and removed coating material requiring hazardous waste disposal
-- **Escalating regulatory compliance**: California's lead paint regulations (Title 8, Section 1532.1) and Cal/OSHA requirements drive per-square-foot costs upward with each regulatory revision. The SF-Oakland West Span paint project is explicitly noted as "impacted by new lead regulations"
+- **Escalating regulatory compliance**: [location withheld]'s lead paint regulations (Title 8, Section 1532.1) and Cal/OSHA requirements drive per-square-foot costs upward with each regulatory revision. The SF-Oakland West Span paint project is explicitly noted as "impacted by new lead regulations"
 
 When indirect costs are included, the break-even point at which TSZ duplex becomes cheaper than conventional paint shifts from approximately 35 years to approximately 18 to 22 years — well within one conventional paint cycle.
 

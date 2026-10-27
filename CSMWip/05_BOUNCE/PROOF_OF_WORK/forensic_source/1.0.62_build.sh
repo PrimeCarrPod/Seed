@@ -92,10 +92,10 @@ echo "[7/7] apksigner..."
 KEYSTORE="$PROJECT_DIR/debug.keystore"
 if [ ! -f "$KEYSTORE" ]; then
     keytool -genkey -v -keystore "$KEYSTORE" -alias androiddebugkey -keyalg RSA \
-        -keysize 2048 -validity 10000 -storepass android -keypass android \
+        -keysize 2048 -validity 10000 -storepass "$ANDROID_KEYSTORE_PASS" -keypass "$ANDROID_KEY_PASS" \
         -dname "CN=Bounce Debug, OU=CarrPod, O=CSM, L=Citadel, ST=Citadel, C=US" 2>/dev/null
 fi
-"$APKSIGNER" sign --ks "$KEYSTORE" --ks-pass pass:android --key-pass pass:android \
+"$APKSIGNER" sign --ks "$KEYSTORE" --ks-pass env:ANDROID_KEYSTORE_PASS --key-pass env:ANDROID_KEY_PASS \
     --out "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" "$OUT_DIR/$APP_NAME-aligned.apk"
 
 SIZE=$(stat --printf="%s" "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" 2>/dev/null || echo 0)

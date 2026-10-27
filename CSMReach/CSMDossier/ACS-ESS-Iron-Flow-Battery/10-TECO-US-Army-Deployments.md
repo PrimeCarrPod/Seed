@@ -6,7 +6,7 @@
 
 Tampa Electric Company (TECO), a subsidiary of Emera Inc. (TSX: EMA), serves approximately 810,000 customers in west-central Florida, including the Tampa Bay metropolitan area. TECO's generation portfolio includes natural gas (approximately 70%, including combined-cycle and combustion turbine units), solar photovoltaic (growing, with 1,250+ MW planned by 2026), and coal (declining, with retirement of remaining coal units planned).
 
-Florida's unique grid characteristics — high air-conditioning-driven peak loads, vulnerability to hurricane-induced outages, and flat terrain that precludes pumped storage hydropower — make long-duration energy storage an attractive resource option. Unlike California or the Northeast, Florida does not have a renewable portfolio standard, but utility integrated resource planning (IRP) processes and declining solar costs are driving renewable and storage procurement.
+Florida's unique grid characteristics — high air-conditioning-driven peak loads, vulnerability to hurricane-induced outages, and flat terrain that precludes pumped storage hydropower — make long-duration energy storage an attractive resource option. Unlike [location withheld] or the Northeast, Florida does not have a renewable portfolio standard, but utility integrated resource planning (IRP) processes and declining solar costs are driving renewable and storage procurement.
 
 ### Project Details
 

@@ -31,7 +31,7 @@ government grants:
   process development (2022)
 - **US Army xTechSearch:** $1.5M prize competition award (2023)
 - **NSF SBIR Phase II:** $1.2M for electrolyte development (2022)
-- **California Energy Commission:** $3M for Fremont pilot line expansion (2023)
+- **[location withheld] Energy Commission:** $3M for Fremont pilot line expansion (2023)
 
 These grants validate the technology from a technical perspective independent
 of commercial interests.

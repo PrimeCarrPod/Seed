@@ -19,7 +19,7 @@ PDFS = [
 ]
 
 EMAIL_BODY_HTML = """<html><body style="font-family:Georgia,serif;font-size:15px;color:#1a1a1a;line-height:1.5;max-width:600px;">
-<p><strong>1.</strong> My name is Jason Brodsky. I direct external affairs at Carrington Storm Motors, named for the 1859 solar storm that set telegraph offices on fire. Today that same event would take down power grids, satellites, and financial systems. We build the physical hardening that prevents this. Three PDFs attached.</p>
+<p><strong>1.</strong> My name is [sender name withheld]. I direct external affairs at Carrington Storm Motors, named for the 1859 solar storm that set telegraph offices on fire. Today that same event would take down power grids, satellites, and financial systems. We build the physical hardening that prevents this. Three PDFs attached.</p>
 <p><strong>2.</strong> Lloyd's of London modeled a severe geomagnetic storm. Their number: $2.4 trillion in global economic losses over five years. Expected direct insurance loss: $17 billion. Protection gap: 99.3%. The gap exists because catastrophe models have no mitigation column. We are filling that column.</p>
 <p><strong>3.</strong> Our product is Aegis-C. Multi-layer ceramic composite — zirconium diboride and silicon carbide — with an MXene electromagnetic interference layer at 45 microns. Shielding effectiveness: 148 to 165 decibels, 1 kHz to 10 GHz. Implementation reduces modeled probable maximum loss by 72%. A previously uninsurable risk becomes underwritable.</p>
 <p><strong>4.</strong> Solar Cycle 25 is at peak NOW — smoothed sunspot number approximately 137, a 19% upward revision from the NOAA forecast. The Gannon Storm of May 2024 produced measurable transformer stress across North America and $500 million in U.S. agricultural losses from GPS disruption alone. That was a warning shot.</p>
@@ -28,14 +28,14 @@ EMAIL_BODY_HTML = """<html><body style="font-family:Georgia,serif;font-size:15px
 <p><strong>7.</strong> This sector is already active. Lloyd's Futureset built the scenario. NERC's GMD Task Force is reviewing TPL-007-4. The Reinsurance Association of America tracks systemic space-weather exposure. Brokers were placed on alert in January 2026 after a G4 storm watch.</p>
 <p><strong>8.</strong> Large power transformers have 12-to-24-month manufacturing lead times. A Carrington-level CME traveling at 1859 speed reaches Earth in 17 hours. The hardening must be in place before the alert. Solar maximum is now. Monte Carlo Rendez-Vous is September. The window is now.</p>
 <p><strong>9.</strong> Three PDFs are attached. The Briefing Packet organizes hardening research by specialty line. The Full Compendium is a 9-part engineering overview. The Mini Compendium is a quick-reference version. Read. Share. Act. The wave always comes. You just have to be ready to paddle.</p>
-<br><p style="text-align:center;color:#1a3a5c;"><em>Thank You, This Engineering Masterpiece is Brought to You by Jason Brodsky of California</em></p>
-<br><p>Jason Brodsky | Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>zirconia@aegisc.space</p>
+<br><p style="text-align:center;color:#1a3a5c;"><em>Thank You, This Engineering Masterpiece is Brought to You by [sender name withheld] of California</em></p>
+<br><p>[sender name withheld] | Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>[email withheld]</p>
 </body></html>"""
 
 SUBJECT = "The Mitigation Layer Underneath Your Systemic Risk Model — Carrington Storm Motors | July 2026"
-FROM_ADDR = "zirconia@aegisc.space"
-FROM_NAME = "Jason Brodsky"
-TO_ADDR = "jasonbrodsky@hotmail.com"  # ← REPLACE WITH REAL ADDRESSES LATER
+FROM_ADDR = os.environ.get("CSM_FROM_ADDRESS", "")
+FROM_NAME = os.environ.get("CSM_FROM_NAME", "External Affairs")
+TO_ADDR = os.environ.get("CSM_TEST_RECIPIENT", "")
 
 def list_emails():
     """List all email files across all batches."""

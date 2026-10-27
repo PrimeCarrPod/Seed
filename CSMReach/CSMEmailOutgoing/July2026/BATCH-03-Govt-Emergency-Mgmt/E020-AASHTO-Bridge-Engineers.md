@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** AASHTO Committee on Bridges and Structures — State DOT Chief Bridge Engineers
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Bridge hardening — BFRP rebar and composite structural materials for GIC resilience
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: AASHTO Annual Meeting / International Bridge Conference (IBC) / ASCE-
 
 You build bridges that last a century. Let's make sure the Sun doesn't take them down in an afternoon.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

@@ -1,6 +1,6 @@
 # Session Log: A5-05, A5-06, A5-07 Complete Article Series Creation
 **Date:** 2026-08-26 22:40:00 - 23:10:00 UTC  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Session:** agent_c539760f-1ae4-4be8-9516-d4fff5022e4a  
 **Repository:** PrimeCarrPod/Seed  
 **Branch:** session/agent_c539760f-1ae4-4be8-9516-d4fff5022e4a → main
@@ -152,7 +152,7 @@ ARTICLE_PREFIX=article5 ./GitHub_handler.sh clean-pieces 8
 ---
 
 ## Heartbeat Maintenance
-Continuous heartbeat maintained throughout session. All work attributed to **Jason Isaac Brodsky (California, 1976)**.
+Continuous heartbeat maintained throughout session. All work attributed to **[sender name withheld] ([location withheld])**.
 
 ---
 

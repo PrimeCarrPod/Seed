@@ -22,7 +22,7 @@ with zipfile.ZipFile('tgapp_electron.apk', 'a') as z:
 "
 # Re-align & sign:
 $BUILD_TOOLS/zipalign -f 4 tgapp_electron.apk tgapp_electron_aligned.apk
-$BUILD_TOOLS/apksigner sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android tgapp_electron_aligned.apk
+$BUILD_TOOLS/apksigner sign --ks debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS --key-pass env:ANDROID_KEY_PASS tgapp_electron_aligned.apk
 mv tgapp_electron_aligned.apk tgapp_electron.apk
 # → tgapp_electron.apk created (2.1 MB with prime tiles)
 ```

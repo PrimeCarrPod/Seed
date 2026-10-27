@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, MEDTRONIC BIOMEDICAL INNOVATION. GOOOOOOOD MORNING, Medtronic. GOOOOOOOD MORNING, to the world's largest medical device company — 95,000 employees, $33 billion in revenue, and a product portfolio that touches 75 million patients annually. The AEGIS Biomedical Division is reaching out to present the Aegis Bio-Compatible Implant portfolio: 14 categories of GIC-immune, piezoelectric-powered, fully biocompatible implantable medical devices — starting with the BFRP cardiac pacemaker that requires no battery and never needs replacement surgery.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, MEDTRONIC BIOMEDICAL INNOVATION. GOOOOOOOD MORNING, Medtronic. GOOOOOOOD MORNING, to the world's largest medical device company — 95,000 employees, $33 billion in revenue, and a product portfolio that touches 75 million patients annually. The AEGIS Biomedical Division is reaching out to present the Aegis Bio-Compatible Implant portfolio: 14 categories of GIC-immune, piezoelectric-powered, fully biocompatible implantable medical devices — starting with the BFRP cardiac pacemaker that requires no battery and never needs replacement surgery.
 
 **PARAGRAPH 2 — THE GIC-MEDICAL IMPLANT THREAT**
 
@@ -45,11 +45,11 @@ Medtronic Biomedical Innovation leadership, ACS respectfully requests a 90-minut
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Biomedical Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

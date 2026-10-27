@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, BECHTEL. GOOOOOOOD MORNING, Brendan Bechtel and the global leadership team. The ACS Infrastructure Protection Division presents a strategic partnership proposal of global consequence — embedding AEGIS GIC dielectric protection standards into Bechtel's $30 billion-plus annual construction portfolio across 40 countries, transforming every new Bechtel power plant, data center, LNG terminal, and infrastructure megaproject into a geomagnetically-hardened asset from the day it breaks ground.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, BECHTEL. GOOOOOOOD MORNING, Brendan Bechtel and the global leadership team. The ACS Infrastructure Protection Division presents a strategic partnership proposal of global consequence — embedding AEGIS GIC dielectric protection standards into Bechtel's $30 billion-plus annual construction portfolio across 40 countries, transforming every new Bechtel power plant, data center, LNG terminal, and infrastructure megaproject into a geomagnetically-hardened asset from the day it breaks ground.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Bechtel, ACS respectfully requests a 90-minute executive and engineering bri
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

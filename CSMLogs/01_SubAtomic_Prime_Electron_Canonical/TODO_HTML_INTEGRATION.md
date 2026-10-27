@@ -74,7 +74,7 @@
 **Target:** `CSM_WORK_IN_PROGRESS/DeepResearch/SubParticlesV4/CREDITS.md`
 
 - [ ] **6.1** Compile from running draft (CREDITS_DRAFT.md)
-- [ ] **6.2** Credit all: papers (authors), experiments (collaborations), frameworks (originators), libraries (maintainers), AI tools (developers), Creative Director (Jason Brodsky)
+- [ ] **6.2** Credit all: papers (authors), experiments (collaborations), frameworks (originators), libraries (maintainers), AI tools (developers), Creative Director ([sender name withheld])
 
 ---
 

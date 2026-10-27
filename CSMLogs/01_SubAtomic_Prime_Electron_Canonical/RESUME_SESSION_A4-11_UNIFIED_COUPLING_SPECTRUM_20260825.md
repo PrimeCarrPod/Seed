@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-11_Unified_Coupling_Spectrum_20260825  
 **Branch:** session/agent_79fc4616-5759-43cc-8896-89213a52dd69  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -142,4 +142,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-11_UNIFIED_COUPLING_SPECTRUM_20260825.md
 ---
 
 *Session completed successfully. All files pushed to GitHub and merged to main.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

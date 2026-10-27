@@ -134,7 +134,7 @@ Apple's Material Recovery Lab in Austin, Texas, operates three specialized disas
 
 ### 4.3 Advanced Recovery Center
 
-Apple's Advanced Recovery Center in Santa Clara Valley, California, serves as both a research and development facility for new recycling process technologies and a production-scale materials recovery operation. The facility integrates robotics, shredding, and advanced separation technologies to maximize material recovery rates from end-of-life Apple products returned through the Apple Trade In program, AppleCare service returns, and manufacturing quality-control rejects.
+Apple's Advanced Recovery Center in Santa Clara Valley, [location withheld], serves as both a research and development facility for new recycling process technologies and a production-scale materials recovery operation. The facility integrates robotics, shredding, and advanced separation technologies to maximize material recovery rates from end-of-life Apple products returned through the Apple Trade In program, AppleCare service returns, and manufacturing quality-control rejects.
 
 ### 4.4 Supplier Zero Waste Program
 

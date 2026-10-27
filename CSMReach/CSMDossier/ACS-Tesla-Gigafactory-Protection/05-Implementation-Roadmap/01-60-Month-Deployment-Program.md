@@ -57,7 +57,7 @@
 
 ### Months 24-60: Supercharger Network Hardening
 - **Months 24-30:** V4 Supercharger stall hardening kit manufacturing ramp. CSM-SC-1500 modules produced at CSM's MXene fabrication facility. Target production rate: 500 kits/month by Month 30.
-- **Months 24-36 (Priority Phase):** Interstate corridor deployment. I-80 corridor (Nevada-California), I-35 corridor (Texas), I-95 corridor (East Coast), I-10 corridor (Southern route). Deployment teams of 4 technicians, 2 stalls per team per day.
+- **Months 24-36 (Priority Phase):** Interstate corridor deployment. I-80 corridor (Nevada-[location withheld]), I-35 corridor (Texas), I-95 corridor (East Coast), I-10 corridor (Southern route). Deployment teams of 4 technicians, 2 stalls per team per day.
 - **Months 36-60 (Full Deployment):** Remaining Supercharger stations deployed in priority order: Interstate corridors → urban superchargers → destination chargers. Production rate ramps to 2,000 kits/month.
 - **Milestone (Month 36):** 5,000 priority stalls hardened. Interstate corridors operational during GMD events.
 - **Milestone (Month 60):** Full Supercharger network GIC-hardened.

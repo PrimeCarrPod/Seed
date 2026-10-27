@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Send all beefed drafts + build 20 more with Old Lady v2"""
-import json, urllib.request, urllib.parse, re, time
+import json, urllib.request, urllib.parse, re, time, os
+from secure_token import load_access_token
 
-TK = '/tmp/kilo/hotmail_token.json'
-with open(TK) as f: tok = json.load(f)['access_token']
+TOKEN_PATH = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/hotmail_token.json")
+tok = load_access_token(TOKEN_PATH)
 H = {'Authorization': f'Bearer {tok}', 'Content-Type': 'application/json'}
 GR = 'https://graph.microsoft.com/v1.0'
 
@@ -32,14 +33,16 @@ BEEF_WILLIAMS_INTRO = f'<p style="{P}">GOOOOOOOD MORNING! Robin Williams — def
 
 BEEF_WILLIAMS_CLOSE = f'<p style="{P}"><strong>The Williams Summary.</strong> And so Robin Williams would lean in — close, conspiratorial, the way he did when he was about to land the point — and he would say: <em>What we did here is not complicated. We took a problem — a Carrington-level electromagnetic pulse that science says is coming, that Lloyd\'s has modeled at two-point-four trillion dollars, that NOAA\'s actual SSN data confirms is overdue — and we asked: can we do anything about it? The answer is yes. An actual material. An actual enclosure. An actual measured number: one hundred forty-eight to one hundred sixty-five decibels — a quadrillionth-level reduction in field strength. A seventy-two percent reduction in modeled PML. Independent lab data, NIST-traceable, peer-reviewed, manufactured. And we put it in front of you — no exaggeration, no rounding, no marketing. Just the Watson Oath, the Coulson nod, the Babbitt count, the Williams joy. You have everything you need to make your own determination. The PDFs are attached. The data is published. The time to act is before the next Carrington event, not after. Carpe diem. NANU NANU.</em> The Williams Heuristic — kinetic, joyful, serious as a heart attack, and entirely on the side of the people who need to make decisions with real consequences — has now completed its work on this document. The rest is up to you.</p>'
 
-CLOSE = '<p style="text-align:center;color:#1a3a5c;font-size:14px"><em>Thank You, This Engineering Masterpiece is Brought to You by Jason Brodsky of California</em></p>'
-SIGNATURE = '<p style="font-size:13px;color:#555">Jason Brodsky | Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>zirconia@aegisc.space</p>'
+CLOSE = '<p style="text-align:center;color:#1a3a5c;font-size:14px"><em>Thank You, This Engineering Masterpiece is Brought to You by the External Affairs Team</em></p>'
+SENDER_NAME = os.environ.get("CSM_FROM_NAME", "External Affairs")
+SENDER_EMAIL = os.environ.get("CSM_FROM_EMAIL", "")
+SIGNATURE = f'<p style="font-size:13px;color:#555">{SENDER_NAME} | Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>{SENDER_EMAIL}</p>'
 HTML_HEAD = '<html><head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body style="font-family:Georgia,serif;font-size:15px;color:#1a1a1a;line-height:1.5;max-width:600px">'
 HTML_TAIL = '</body></html>'
 ROTATION = [BEEF_WATSON, BEEF_AEGIS, BEEF_MXENE, BEEF_AEGIS, BEEF_POD, BEEF_WATSON, BEEF_AEGIS, BEEF_BASALT, BEEF_WATSON]
 
 def build_draft(name):
-    greeting = f'<p style="{P}">{name}, my name is Jason Brodsky. Carrington Storm Motors. We build physical hardening against Carrington-level CMEs. I have recruited Robin Williams Heuristics to help explain things, oh please do enjoy.</p>'
+    greeting = f'<p style="{P}">{name}, my name is {SENDER_NAME}. Carrington Storm Motors. We build physical hardening against Carrington-level CMEs. I have recruited Robin Williams Heuristics to help explain things, oh please do enjoy.</p>'
     parts = [greeting, BEEF_WILLIAMS_INTRO] + ROTATION + [BEEF_WILLIAMS_CLOSE, CLOSE, SIGNATURE]
     return HTML_HEAD + ''.join(parts) + HTML_TAIL
 

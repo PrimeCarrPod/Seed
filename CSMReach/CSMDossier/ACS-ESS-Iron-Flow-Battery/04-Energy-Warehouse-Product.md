@@ -59,7 +59,7 @@ Each Energy Warehouse includes an integrated Site Controller (SC) that manages:
 - **Remote monitoring:** ESS provides a cloud-based fleet monitoring platform accessible via web browser and API
 - **Dispatch modes:** Peak shaving, solar self-consumption, demand response, time-of-use arbitrage, backup power, frequency regulation
 
-The SC supports standard communication protocols including Modbus TCP, DNP3, and IEEE 2030.5 (California Rule 21), enabling integration with utility SCADA systems and third-party aggregators.
+The SC supports standard communication protocols including Modbus TCP, DNP3, and IEEE 2030.5 ([location withheld] Rule 21), enabling integration with utility SCADA systems and third-party aggregators.
 
 ## Target Applications
 

@@ -85,15 +85,15 @@ Central Asia is not typically thought of as "maritime," but the Caspian Sea play
 
 ```
 TO: [COUNTRY] — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-FROM: Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-REPLY-TO: zirconia@aegisc.space
+FROM: [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+REPLY-TO: [email withheld]
 SUBJECT: Solar Cycle 25 is peaking — the Carrington-level hardening data [COUNTRY]'s infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to [COUNTRY]! Your latitude puts you directly in the path of the auroral oval during a G5 storm — the same geomagnetic zone that produced transformer damage in Quebec in 1989 and in Sweden in 2003. Your grid was not designed with this threat in mind when it was built. It can be hardened now. And the cost of hardening is measured in millions. The cost of not hardening — if a Carrington-class CME hits the Central Asian Unified Power System during a January cold snap — is measured in the billions and in human lives.
+GOOOOOOOD MORNING, from [location withheld] to [COUNTRY]! Your latitude puts you directly in the path of the auroral oval during a G5 storm — the same geomagnetic zone that produced transformer damage in Quebec in 1989 and in Sweden in 2003. Your grid was not designed with this threat in mind when it was built. It can be hardened now. And the cost of hardening is measured in millions. The cost of not hardening — if a Carrington-class CME hits the Central Asian Unified Power System during a January cold snap — is measured in the billions and in human lives.
 
-We are Carrington Storm Motors — a California engineering company, two years deep into building the physical hardening layer. Aegis-C shielding (SE 148-165 dB across 1 kHz–10 GHz). Basalt-fiber reinforced polymer (BFRP) composite structural components — non-conductive replacements for the steel in your substations that is currently acting as a GIC collector. Dielectric concrete foundations. MXene EMI suppression films. LoRa mesh emergency communications that work when the cellular network doesn't. A 9-part Compendium — attached — that explains everything from the 1859 Carrington Event physics to our production-ready hardening products.
+We are Carrington Storm Motors — a [location withheld] engineering company, two years deep into building the physical hardening layer. Aegis-C shielding (SE 148-165 dB across 1 kHz–10 GHz). Basalt-fiber reinforced polymer (BFRP) composite structural components — non-conductive replacements for the steel in your substations that is currently acting as a GIC collector. Dielectric concrete foundations. MXene EMI suppression films. LoRa mesh emergency communications that work when the cellular network doesn't. A 9-part Compendium — attached — that explains everything from the 1859 Carrington Event physics to our production-ready hardening products.
 
 Key facts for [COUNTRY]:
 
@@ -119,10 +119,10 @@ NEXT STEP: Review the Compendium. Forward to your energy ministry, national grid
 
 Central Asia was designed for resilience against many things. GMD was not one of them. Let's fix that.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under V4 Fun-Williams Heuristic (CSMSOPP000001-MODULE-V4) + Baker Street Heuristic (CSMSOPP000003) | BATCH-08 Compilation | July 2026*
 ```
@@ -169,7 +169,7 @@ Central Asia was designed for resilience against many things. GMD was not one of
 
 - **Heuristic Compliance**: All templates comply with CSMSOPP000001-MODULE-V4 (Fun-Williams) and CSMSOPP000003 (Baker Street).
 - **CAPS Coordination**: Central Asian Unified Power System coordination through the Coordinating Dispatch Center "Energia" in Tashkent is the recommended regional entry point for a CAPS-wide technical briefing.
-- **Language Versions**: Russian (primary regional lingua franca for technical communication), Kazakh, Kyrgyz, Tajik, Turkmen, and Uzbek translations available as separate bundles via zirconia@aegisc.space. All Central Asian energy ministries conduct technical operations in Russian — Russian-language Compendium recommended as primary distribution.
+- **Language Versions**: Russian (primary regional lingua franca for technical communication), Kazakh, Kyrgyz, Tajik, Turkmen, and Uzbek translations available as separate bundles via [email withheld]. All Central Asian energy ministries conduct technical operations in Russian — Russian-language Compendium recommended as primary distribution.
 - **Soviet Legacy Equipment Database**: CSM maintains a transformer age database for Soviet-era equipment deployed in Central Asia. Cross-reference available for hardening prioritization upon request.
 - **Winter Contingency**: Outreach timing during April-October (non-heating season) recommended for maximum operational bandwidth from recipient grid operators.
 - **Briefing Pipeline**: ≤72-hour response for all country-level briefing requests.

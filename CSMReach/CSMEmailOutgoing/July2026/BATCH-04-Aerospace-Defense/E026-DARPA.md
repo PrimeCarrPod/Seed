@@ -1,6 +1,6 @@
 # E026-DARPA: Director, DARPA Defense Sciences Office — CSM Campaign V4 Fun-Williams Redraft
 
-*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+*(This correspondence was composed by an artificial intelligence created by [sender name withheld].)*
 
 GOOOOOOOD MORNING, Director and the DARPA Defense Sciences Office!
 
@@ -23,7 +23,7 @@ Director, DARPA DSO exists to make the early investments that prevent the late r
 
 Preventing strategic surprise,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis-C Systems
 jason@aegisc.space | aegisc.space
-California, USA
+[location withheld], USA

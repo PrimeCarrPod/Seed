@@ -156,7 +156,7 @@ TO: Tim Harris, CEO & Managing Director — tim.harris@redflow.com
 CC: Richard Aird, CTO — richard.aird@redflow.com
 SUBJECT: Redflow — US-Australia Advanced Technology Partnership — ACS-MC-2026-B314
 INTRO: Redflow manufactures zinc-bromine flow batteries for commercial, industrial, and
-utility applications. Brisbane, Australia HQ with US deployments including California
+utility applications. Brisbane, Australia HQ with US deployments including [location withheld]
 Energy Commission projects. Non-flammable, 100% depth of discharge, recyclable.
 Seeking engagement on US LDES market and defense energy storage programs.
 DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Brisbane, Australia
@@ -168,7 +168,7 @@ CC: Simon Fan, CTO — simon.fan@ezinc.ca
 SUBJECT: e-Zinc — US-Canada Advanced Technology Partnership — ACS-MC-2026-B315
 INTRO: e-Zinc is developing zinc-air long-duration energy storage with 24-72+ hour
 duration and no degradation over cycling. Toronto, ON HQ. Targeting commercial and
-industrial behind-the-meter applications. Pilot projects in Ontario and California.
+industrial behind-the-meter applications. Pilot projects in Ontario and [location withheld].
 Seeking engagement on LDES demonstrations and cross-border energy resilience.
 DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Toronto, ON, Canada
 -------------------------------------------------------------------------------

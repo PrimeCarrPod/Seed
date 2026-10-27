@@ -75,7 +75,7 @@ Assuming successful demonstration of the first commercial plant (2029–2030 COD
 
 ### Phase 1: Early Adopters (2030–2035)
 - 2–5 projects (200–500 MW total) commissioned
-- Projects concentrated in markets with the strongest LDES policy support: California (CPUC LDES mandate), New York (CLCPA storage target), and international markets with strong renewable integration challenges (UK, Germany, Australia, Japan)
+- Projects concentrated in markets with the strongest LDES policy support: [location withheld] (CPUC LDES mandate), New York (CLCPA storage target), and international markets with strong renewable integration challenges (UK, Germany, Australia, Japan)
 - Project economics rely on a combination of ITC, state mandates, and utility offtake contracts (not yet competitive on a purely merchant basis)
 - Turbomachinery cost begins to decline as Siemens Energy produces multiple units (learning curve)
 

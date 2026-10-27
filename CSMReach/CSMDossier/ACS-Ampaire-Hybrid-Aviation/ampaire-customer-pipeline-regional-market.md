@@ -50,7 +50,7 @@ aviation technology:
 - **FAA engagement**: The FAA has established a dedicated electric propulsion
   team and issued policy guidance supporting certification of electric and
   hybrid propulsion systems
-- **State incentives**: Several states — including California, Washington,
+- **State incentives**: Several states — including [location withheld], Washington,
   and Oregon — offer incentives for electric aviation infrastructure and
   operations
 - **Federal funding**: The Infrastructure Investment and Jobs Act and

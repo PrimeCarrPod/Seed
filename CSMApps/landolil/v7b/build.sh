@@ -7,6 +7,11 @@
 # ============================================================
 set -e
 
+# Signing credentials are supplied by the environment; never commit them.
+: "${ANDROID_KEYSTORE_PASS:?Set ANDROID_KEYSTORE_PASS before building}"
+export ANDROID_KEYSTORE_PASS
+export ANDROID_KEY_PASS="${ANDROID_KEY_PASS:-$ANDROID_KEYSTORE_PASS}"
+
 PACKAGE="com.carrpod.landolil"
 APP_NAME="LandOLil"
 VERSION_CODE=72
@@ -123,8 +128,8 @@ if [ ! -f "$KEYSTORE" ]; then
         -alias androiddebugkey \
         -keyalg RSA -keysize 2048 \
         -validity 10000 \
-        -storepass android \
-        -keypass android \
+        -storepass "$ANDROID_KEYSTORE_PASS" \
+        -keypass "$ANDROID_KEY_PASS" \
         -dname "CN=LandOLil Debug, OU=Tardigradia, O=CarrPod, L=Lab, ST=Dev, C=US" \
         2>/dev/null
     echo "  Generated debug.keystore"
@@ -132,8 +137,8 @@ fi
 
 "$APKSIGNER" sign \
     --ks "$KEYSTORE" \
-    --ks-pass pass:android \
-    --key-pass pass:android \
+    --ks-pass env:ANDROID_KEYSTORE_PASS \
+    --key-pass env:ANDROID_KEY_PASS \
     --out "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" \
     "$OUT_DIR/$APP_NAME-aligned.apk"
 

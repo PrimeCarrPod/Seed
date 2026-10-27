@@ -140,7 +140,7 @@ aviation authorities — including EASA (Europe), Transport Canada, and ANAC
 ## Production and Delivery
 
 Initial Eco Caravan conversions will be performed at Ampaire's Hawthorne,
-California facility, with a capacity of approximately 12 to 24 aircraft per
+[location withheld] facility, with a capacity of approximately 12 to 24 aircraft per
 year. Ampaire is establishing partnerships with existing Cessna-authorized
 maintenance facilities to create a network of conversion centers that can
 scale production as demand grows. The conversion process, described in detail

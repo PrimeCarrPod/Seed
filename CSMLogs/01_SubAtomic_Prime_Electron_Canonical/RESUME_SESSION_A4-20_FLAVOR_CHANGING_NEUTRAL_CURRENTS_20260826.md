@@ -2,7 +2,7 @@
 **Date:** 2026-08-26  
 **Session ID:** A4-20_Flavor_Changing_Neutral_Currents_20260826  
 **Branch:** session/agent_80e228a6-d289-4445-8aad-2820cbb1c97b  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -162,4 +162,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-20_FLAVOR_CHANGING_NEUTRAL_CURRENTS_20260
 ---
 
 *Session completed. All files pushed to GitHub main branch.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

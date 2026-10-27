@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-01 | July 2026
 
 **TO:** Product Managers — Emerging Perils / Systemic Risk — RMS, AIR Worldwide, CoreLogic, Karen Clark & Company
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** The vulnerability curve modification your solar storm model is missing
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: Technical call with your emerging-perils modeling team. We can provid
 
 The model tells you the size of the loss. The vulnerability curve tells you the difference hardening makes. Let's build that curve together.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

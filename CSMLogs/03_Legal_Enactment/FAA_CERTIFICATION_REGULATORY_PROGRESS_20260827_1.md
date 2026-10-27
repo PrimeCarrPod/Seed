@@ -2,7 +2,7 @@
 ## Week 5-8: The Paper Trail — Certification Basis Questionnaire Response, Means of Compliance
 **Session:** CSM_CLPS_Phase2_FAA_REGULATORY_20260827  
 **Date:** October 22, 2026 (Day 56) → November 19, 2026 (Day 84)  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 
 ---
@@ -12,7 +12,7 @@
 ### Consultation Details
 **Date:** October 15, 2026 (Week 5) — 90 minutes virtual
 **FAA Attendees:** Trish Kowalski (Materials Chief), Mike O'Connor (Structures), 3 specialists
-**CSM Attendees:** Jason Brodsky, Nematron AI, NASH, KADE, CROSS, ZIRCONIA, NYX
+**CSM Attendees:** [sender name withheld], Nematron AI, NASH, KADE, CROSS, ZIRCONIA, NYX
 
 ### Consultation Outcome: **CERTIFICATION BASIS QUESTIONNAIRE ISSUED**
 
@@ -193,4 +193,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 
 *Document: FAA_CERTIFICATION_REGULATORY_PROGRESS_20260827.md*
 *Branch: session/agent_e7c6848e-cabf-4eb5-9b91-564f292823c2*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

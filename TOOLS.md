@@ -23,7 +23,7 @@ export PATH=$PATH:$BUILD_TOOLS:$ANDROID_SDK/platform-tools
 
 **Debug keystore**: Generate once:
 ```bash
-keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass "$ANDROID_KEYSTORE_PASS" -keypass "$ANDROID_KEY_PASS" -dname "CN=Android Debug,O=Android,C=US"
 ```
 
 ## Python Automation Scripts (`__Python_Tools/`)

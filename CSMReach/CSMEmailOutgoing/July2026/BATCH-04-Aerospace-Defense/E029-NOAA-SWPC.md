@@ -1,12 +1,12 @@
 # E029-NOAA-SWPC: NOAA Space Weather Prediction Center — CSM Campaign V4 Fun-Williams Redraft
 
-*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+*(This correspondence was composed by an artificial intelligence created by [sender name withheld].)*
 
 GOOOOOOOD MORNING, NOAA Space Weather Prediction Center!
 
 You're the watchstanders for 93 million miles of nothing and then, suddenly, a billion tons of magnetized plasma moving at two percent of the speed of light. The Space Weather Prediction Center in Boulder, Colorado, is the only organization on Earth that issues operational watches and warnings for geomagnetic storms on behalf of an entire continent — and in January 2026, you issued a G4 warning that proved every bit as consequential as the models said it would be. The grid held. But the grid holding is not the grid being hardened, and that gap — between surviving a G4 and being ready for a G5 — is where Aegis-C operates.
 
-Baker Street, with the forecasting-to-protection translation. The NOAA G-scale is a five-level ordinal classification based on the Kp planetary index: G1 (Kp=5, minor), G2 (Kp=6, moderate), G3 (Kp=7, strong), G4 (Kp=8, severe), G5 (Kp=9, extreme). A G4 event — like the one SWPC warned for on 1–2 January 2026 — corresponds to Kp=8, a Dst index reaching -200 nT or below, and widespread aurora visible as far south as Alabama and northern California. At the grid level, a G4 produces widespread voltage-control problems, protective-system misoperations, and an elevated probability of transformer damage in systems operating near their thermal limits. A G5 event — a Kp=9, Dst below -500 nT — is the Carrington-class scenario in which multiple large power transformers across multiple interconnections simultaneously saturate, voltage collapse propagates faster than operators can island, and the black-start restoration timeline is measured in months. SWPC's forecasters have the unenviable job of telling grid operators, in real time, which regime they're entering — and the grid operators, by and large, have no passive hardware answer to that warning other than load-shedding and hoping the transformers don't cook.
+Baker Street, with the forecasting-to-protection translation. The NOAA G-scale is a five-level ordinal classification based on the Kp planetary index: G1 (Kp=5, minor), G2 (Kp=6, moderate), G3 (Kp=7, strong), G4 (Kp=8, severe), G5 (Kp=9, extreme). A G4 event — like the one SWPC warned for on 1–2 January 2026 — corresponds to Kp=8, a Dst index reaching -200 nT or below, and widespread aurora visible as far south as Alabama and northern [location withheld]. At the grid level, a G4 produces widespread voltage-control problems, protective-system misoperations, and an elevated probability of transformer damage in systems operating near their thermal limits. A G5 event — a Kp=9, Dst below -500 nT — is the Carrington-class scenario in which multiple large power transformers across multiple interconnections simultaneously saturate, voltage collapse propagates faster than operators can island, and the black-start restoration timeline is measured in months. SWPC's forecasters have the unenviable job of telling grid operators, in real time, which regime they're entering — and the grid operators, by and large, have no passive hardware answer to that warning other than load-shedding and hoping the transformers don't cook.
 
 The Aegis-C response to the SWPC forecast is engineering, not hoping. When SWPC issues a G4 or G5 warning, the actionable question at every utility control center in North America is: "Are our critical substation transformers protected against GIC?" For the vast majority, the answer is no. Aegis-C changes that answer with passive basalt-fiber composite shielding panels that require no operator action to function. When the Kp index hits 8 or 9 and the induced geoelectric field drives quasi-DC current into transformer neutrals, the Aegis-C panel's embedded Metglas amorphous-metal ribbon layer diverts the low-frequency magnetic flux around the transformer windings. The panel doesn't need to be told the Kp index. It doesn't need a 72-hour lead time. It doesn't need a control-room SCADA point or a cyber-secure communication channel. It sits on the transformer tank, 24 hours a day, 365 days a year, and does its job the same way a lightning arrester does — passively, permanently, and without anyone having to push a button. That's the hardware complement to SWPC's forecasting mission: you tell the grid the storm is coming; Aegis-C makes sure the grid is ready for the news.
 
@@ -23,7 +23,7 @@ NOAA SWPC, you are the world's operational space-weather authority. Your forecas
 
 Forecasting the storm, building the shelter,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis-C Systems
 jason@aegisc.space | aegisc.space
-California, USA
+[location withheld], USA

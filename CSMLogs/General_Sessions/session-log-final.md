@@ -1,7 +1,7 @@
 # Session Completion Log
 **Session:** agent_40ef287c-adaf-47da-9d86-5be57b7c5d88
 **Date:** 2026-08-15T18:36:38+00:00
-**Creative Director:** Jason Brodsky
+**Creative Director:** [sender name withheld]
 **Branch:** session/agent_40ef287c-adaf-47da-9d86-5be57b7c5d88
 **Workspace:** /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_40ef287c-adaf-47da-9d86-5be57b7c5d88
 

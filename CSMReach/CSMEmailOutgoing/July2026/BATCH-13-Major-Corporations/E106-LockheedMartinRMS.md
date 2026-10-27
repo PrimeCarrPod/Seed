@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, LOCKHEED MARTIN ROTARY & MISSION SYSTEMS. GOOOOOOOD MORNING to the RMS leadership team in Owego, Orlando, Moorestown, and Stratford. The ACS Infrastructure Protection Division presents a division-specific electromagnetic protection proposal — comprehensive EMP and GIC hardening for the Rotary & Mission Systems production and integration facilities that manufacture the Aegis Combat System, the MH-60R/S Seahawk helicopters, the CH-53K King Stallion, the P-8A Poseidon mission systems, and the advanced naval and rotary-wing capabilities that define American maritime and vertical-lift superiority.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, LOCKHEED MARTIN ROTARY & MISSION SYSTEMS. GOOOOOOOD MORNING to the RMS leadership team in Owego, Orlando, Moorestown, and Stratford. The ACS Infrastructure Protection Division presents a division-specific electromagnetic protection proposal — comprehensive EMP and GIC hardening for the Rotary & Mission Systems production and integration facilities that manufacture the Aegis Combat System, the MH-60R/S Seahawk helicopters, the CH-53K King Stallion, the P-8A Poseidon mission systems, and the advanced naval and rotary-wing capabilities that define American maritime and vertical-lift superiority.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ RMS leadership, ACS respectfully requests a 90-minute classified-level briefing 
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

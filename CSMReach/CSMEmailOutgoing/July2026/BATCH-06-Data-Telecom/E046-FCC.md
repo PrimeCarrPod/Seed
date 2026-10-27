@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-06 | July 2026 — V4 Fun-Williams Final
 
 **TO:** Zenji Nakazawa, zenji.nakazawa@fcc.gov, Bureau Chief, FCC Public Safety and Homeland Security Bureau
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Public Safety Communications Resilience During Solar Cycle 25 — Aegis-C electromagnetic shielding data for FirstNet, EAS, and emergency communications infrastructure
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-Alright! Let's get the preamble done with appropriate clarity, because when you're writing to the Bureau Chief of Public Safety and Homeland Security at the FCC, every word carries weight and every claim demands verification. Here's the disclosure: this email was composed by an artificial intelligence — a machine mind, a digital system running on electricity and purpose — created by and operating under the sole direction of Jason Brodsky of California. That AI speaks on behalf of Jason Brodsky of California, Director of External Affairs and Strategic Partnerships at Carrington Storm Motors and Safe Pod Engineering Company. Every technical specification cited below has been human-reviewed. Every SE rating, every frequency band reference, every regulatory framework citation has been verified by a person. Every outreach decision — that this email exists, that it is addressed to you, that it contains the content it does — belongs to a human being in California. The AI is the drafting tool. Jason Brodsky is the accountable official. With that clearly established — let's proceed.
+Alright! Let's get the preamble done with appropriate clarity, because when you're writing to the Bureau Chief of Public Safety and Homeland Security at the FCC, every word carries weight and every claim demands verification. Here's the disclosure: this email was composed by an artificial intelligence — a machine mind, a digital system running on electricity and purpose — created by and operating under the sole direction of [sender name withheld]. That AI speaks on behalf of [sender name withheld], Director of External Affairs and Strategic Partnerships at Carrington Storm Motors and Safe Pod Engineering Company. Every technical specification cited below has been human-reviewed. Every SE rating, every frequency band reference, every regulatory framework citation has been verified by a person. Every outreach decision — that this email exists, that it is addressed to you, that it contains the content it does — belongs to a human being. The AI is the drafting tool. [sender name withheld] is the accountable official. With that clearly established — let's proceed.
 
 ---
 
@@ -35,7 +35,7 @@ PSHSB oversees the resilience of communications infrastructure that serves 330 m
 
 **[PARAGRAPH 3 — SHIELD POSTURE: Calm confidence, regulatory respect, no overreach]**
 
-The materials exist. They are tested against MIL-STD-461G. They are commercially available. Jason Brodsky of California has directed this AI to make absolutely clear: we understand that the FCC's role is regulatory, standards-setting, and public safety oversight — not equipment procurement. We are not proposing that the FCC purchase, endorse, or mandate any specific product. We are offering a technical data package — shielding effectiveness measurements, material specifications, test protocols, integration pathways — for the Bureau's technical staff to evaluate as part of its ongoing work on communications infrastructure resilience. We respect the FCC's rulemaking process, the public comment framework, and the deep technical expertise within PSHSB and the Office of Engineering and Technology. We are here to contribute data to the conversation, not to shortcut the process. The data is in the PDFs. Your engineers will know what to do with it.
+The materials exist. They are tested against MIL-STD-461G. They are commercially available. [sender name withheld] has directed this AI to make absolutely clear: we understand that the FCC's role is regulatory, standards-setting, and public safety oversight — not equipment procurement. We are not proposing that the FCC purchase, endorse, or mandate any specific product. We are offering a technical data package — shielding effectiveness measurements, material specifications, test protocols, integration pathways — for the Bureau's technical staff to evaluate as part of its ongoing work on communications infrastructure resilience. We respect the FCC's rulemaking process, the public comment framework, and the deep technical expertise within PSHSB and the Office of Engineering and Technology. We are here to contribute data to the conversation, not to shortcut the process. The data is in the PDFs. Your engineers will know what to do with it.
 
 ---
 
@@ -71,13 +71,13 @@ For PSHSB specifically, this means one thing: the technical data your bureau nee
 
 **[PARAGRAPH 9 — NEXT STEP: Technical briefing for PSHSB engineering staff, data contribution to FCC resilience proceedings]**
 
-We are prepared to deliver a technical briefing to PSHSB engineering and policy staff — at the FCC's convenience, in-person in Washington DC or virtually — covering Aegis-C shielding specifications, test protocols against MIL-STD-461G, integration pathways for public safety communications infrastructure, and cross-sector reference data. We can contribute technical data to any FCC proceeding, notice of inquiry, or rulemaking related to communications infrastructure resilience. We can support FirstNet Authority technical evaluations. Bring your RF engineers. Bring your spectrum policy specialists. Bring the people who understand that a PSAP that loses connectivity during a wide-area electromagnetic event is a PSAP that cannot fulfill its mission. You protect the public through communications resilience. Let us contribute the materials data that makes that resilience physically achievable. This AI will handle the documentation, the scheduling, the technical compilation. Jason Brodsky of California will be the accountable human, present at every briefing, answering every question. The AI writes. Jason stands behind it. That's the arrangement. Let's go.
+We are prepared to deliver a technical briefing to PSHSB engineering and policy staff — at the FCC's convenience, in-person in Washington DC or virtually — covering Aegis-C shielding specifications, test protocols against MIL-STD-461G, integration pathways for public safety communications infrastructure, and cross-sector reference data. We can contribute technical data to any FCC proceeding, notice of inquiry, or rulemaking related to communications infrastructure resilience. We can support FirstNet Authority technical evaluations. Bring your RF engineers. Bring your spectrum policy specialists. Bring the people who understand that a PSAP that loses connectivity during a wide-area electromagnetic event is a PSAP that cannot fulfill its mission. You protect the public through communications resilience. Let us contribute the materials data that makes that resilience physically achievable. This AI will handle the documentation, the scheduling, the technical compilation. [sender name withheld] will be the accountable human, present at every briefing, answering every question. The AI writes. the account owner stands behind it. That's the arrangement. Let's go.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

@@ -151,7 +151,7 @@
 
 ## T
 
-**TAE Technologies:** California-based fusion company using beam-driven FRC technology. Target fuel: p-B11. Norman (5th generation) and Copernicus (6th generation) prototypes.
+**TAE Technologies:** [location withheld]-based fusion company using beam-driven FRC technology. Target fuel: p-B11. Norman (5th generation) and Copernicus (6th generation) prototypes.
 
 **Thrive Capital:** Venture capital firm; lead investor in Helion Series G ($465 million, June 2026).
 

@@ -41,7 +41,7 @@ Rondo is the most direct competitor to Antora in the thermal battery for industr
 | Investors | BlackRock, BEV, Emerson Collective | BEV, Energy Impact Partners, Microsoft Climate Fund |
 | CEO | Andrew Ponec | John O'Donnell |
 | Headquarters | Sunnyvale, CA | Alameda, CA |
-| First commercial deployment | 2024 (California) | 2023 (California, Calgren ethanol plant) |
+| First commercial deployment | 2024 ([location withheld]) | 2023 ([location withheld], Calgren ethanol plant) |
 | Key partnerships | Undisclosed industrial customers | Diageo (whiskey distilling), multiple food/beverage |
 
 **Competitive Assessment**:

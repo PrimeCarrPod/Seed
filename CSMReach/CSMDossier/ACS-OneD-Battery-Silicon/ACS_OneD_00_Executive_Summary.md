@@ -8,7 +8,7 @@ Advanced Competitive Surveillance dossier on OneD Battery Sciences, a pioneer in
 ### Identity
 - **Company**: OneD Battery Sciences, Inc.
 - **CEO**: Vincent Pluvinage
-- **Headquarters**: Palo Alto, California, USA
+- **Headquarters**: Palo Alto, [location withheld], USA
 - **Founded**: 2013
 - **Status**: Private
 - **Total Raised**: $25M+

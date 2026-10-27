@@ -5,9 +5,9 @@ STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
 ===============================================================================
 
 COMPANY 4.1 — ALBEMARLE CORPORATION
-TO: Kent Masters, CEO — kent.masters@albemarle.com
-CC: Netha Johnson, President Lithium — netha.johnson@albemarle.com
-    Scott Tozier, CFO — scott.tozier@albemarle.com
+TO: Kent Masters, CEO — [email-f20ec93f4e30]
+CC: Netha Johnson, President Lithium — [email-314ea63db129]
+    Scott Tozier, CFO — [email-0deeb0569d0d]
 SUBJECT: Albemarle — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B401
 INTRO: Albemarle is the world's largest lithium producer with brine operations in Chile
 (Salar de Atacama) and Australia (Greenbushes, Wodgina hard rock). Charlotte, NC HQ.
@@ -18,8 +18,8 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Charlotte, NC
 -------------------------------------------------------------------------------
 
 COMPANY 4.2 — ARCADIUM LITHIUM (formerly Livent/Allkem merger)
-TO: Paul Graves, CEO — paul.graves@arcadiumlithium.com
-CC: Gilberto Antoniazzi, CFO — gilberto.antoniazzi@arcadiumlithium.com
+TO: Paul Graves, CEO — [email-b604e5e45a9f]
+CC: Gilberto Antoniazzi, CFO — [email-fb2647ba2c03]
 SUBJECT: Arcadium — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B402
 INTRO: Arcadium Lithium is a top-3 global lithium producer formed from the 2024 merger
 of Livent (US) and Allkem (Australia). Philadelphia, PA HQ. Operations in Argentina
@@ -30,9 +30,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Philadelphia, PA
 -------------------------------------------------------------------------------
 
 COMPANY 4.3 — PIEDMONT LITHIUM INC.
-TO: Keith Phillips, President & CEO — keith.phillips@piedmontlithium.com
-CC: Michael White, EVP & CFO — michael.white@piedmontlithium.com
-    Patrick Brindle, COO — patrick.brindle@piedmontlithium.com
+TO: Keith Phillips, President & CEO — [email-dce88440e52a]
+CC: Michael White, EVP & CFO — [email-0551e3368ce0]
+    Patrick Brindle, COO — [email-b275d84654a1]
 SUBJECT: Piedmont Lithium — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B403
 INTRO: Piedmont Lithium is developing the Carolina Lithium Project in Gaston County, NC
 — an integrated spodumene mine-to-hydroxide operation. Belmont, NC HQ. Also has Quebec
@@ -42,8 +42,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Belmont, NC
 -------------------------------------------------------------------------------
 
 COMPANY 4.4 — STANDARD LITHIUM LTD.
-TO: Robert Mintak, CEO & Director — robert.mintak@standardlithium.com
-CC: Andy Robinson, President & COO — andy.robinson@standardlithium.com
+TO: Robert Mintak, CEO & Director — [email-730abda46c54]
+CC: Andy Robinson, President & COO — [email-89a183286e0f]
 SUBJECT: Standard Lithium — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B404
 INTRO: Standard Lithium is developing direct lithium extraction (DLE) from brine at
 LANXESS (El Dorado, AR) and Tetra (Arkansas) projects. Vancouver, BC HQ with operations
@@ -53,9 +53,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Vancouver, BC, Canada / El Dorado, AR
 -------------------------------------------------------------------------------
 
 COMPANY 4.5 — LITHIUM AMERICAS CORP.
-TO: Jonathan Evans, President & CEO — jonathan.evans@lithiumamericas.com
-CC: Richard Gerspacher, CFO — richard.gerspacher@lithiumamericas.com
-    Zach Kirkman, VP Capital Markets — zach.kirkman@lithiumamericas.com
+TO: Jonathan Evans, President & CEO — [email-96081a8971f3]
+CC: Richard Gerspacher, CFO — [email-6d3aecc1aad1]
+    Zach Kirkman, VP Capital Markets — [email-213a5893bf17]
 SUBJECT: Lithium Americas — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B405
 INTRO: Lithium Americas is developing Thacker Pass in Nevada — the largest known lithium
 resource in the US. Vancouver, BC HQ. Received $2.26B DOE ATVM loan conditional commitment
@@ -65,8 +65,8 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Vancouver, BC, Canada / Reno, NV
 -------------------------------------------------------------------------------
 
 COMPANY 4.6 — VULCAN ENERGY RESOURCES
-TO: Cris Moreno, CEO & Managing Director — cris.moreno@v-er.eu
-CC: Francis Wedin, Founder & Executive Chair — francis.wedin@v-er.eu
+TO: Cris Moreno, CEO & Managing Director — [email-2f16d8c580b5]
+CC: Francis Wedin, Founder & Executive Chair — [email-465f25cfbe28]
 SUBJECT: Vulcan Energy — US-Germany/Australia Advanced Technology Partnership — ACS-MC-2026-B406
 INTRO: Vulcan Energy is developing zero-carbon lithium extraction from geothermal brine
 in the Upper Rhine Valley, Germany. Perth, Australia HQ with European operations. DLE
@@ -77,8 +77,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Perth, Australia / Karlsruhe, Germany
 -------------------------------------------------------------------------------
 
 COMPANY 4.7 — ENERGYX (Energy Exploration Technologies)
-TO: Teague Egan, Founder & CEO — teague.egan@energyx.com
-CC: Harsha Vardhan, CTO — harsha.vardhan@energyx.com
+TO: Teague Egan, Founder & CEO — [email-5d13f6697956]
+CC: Harsha Vardhan, CTO — [email-e97fa0e41540]
 SUBJECT: EnergyX — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B407
 INTRO: EnergyX develops direct lithium extraction (LiTAS membrane technology) and solid-state
 battery materials. Austin, TX HQ with pilot DLE operations in South America and US.
@@ -88,8 +88,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Austin, TX
 -------------------------------------------------------------------------------
 
 COMPANY 4.8 — LILAC SOLUTIONS, INC.
-TO: Dave Snydacker, Founder & CEO — dave.snydacker@lilacsolutions.com
-CC: Ian Nikkel, COO — ian.nikkel@lilacsolutions.com
+TO: Dave Snydacker, Founder & CEO — [email-60c442092359]
+CC: Ian Nikkel, COO — [email-f97ae9eb17c8]
 SUBJECT: Lilac Solutions — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B408
 INTRO: Lilac Solutions develops ion-exchange bead technology for direct lithium extraction
 from brine. Oakland, CA HQ. Pilots in Argentina, Chile, and the US (Great Salt Lake,
@@ -100,8 +100,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Oakland, CA
 -------------------------------------------------------------------------------
 
 COMPANY 4.9 — NTH CYCLE
-TO: Megan O'Connor, Co-Founder & CEO — megan.oconnor@nthcycle.com
-CC: Chad Vecitis, Co-Founder & CTO — chad.vecitis@nthcycle.com
+TO: Megan O'Connor, Co-Founder & CEO — [email-69164214052d]
+CC: Chad Vecitis, Co-Founder & CTO — [email-0ce0c90815ec]
 SUBJECT: Nth Cycle — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B409
 INTRO: Nth Cycle has developed electro-extraction technology (the "Oyster") for refining
 critical minerals from end-of-life batteries, e-waste, low-grade ore, and mine tailings.
@@ -112,8 +112,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Beverly, MA
 -------------------------------------------------------------------------------
 
 COMPANY 4.10 — AQUA METALS, INC.
-TO: Steve Cotton, President & CEO — steve.cotton@aquametals.com
-CC: Benjamin Taecker, CTO — benjamin.taecker@aquametals.com
+TO: Steve Cotton, President & CEO — [email-cf6fbeedeff2]
+CC: Benjamin Taecker, CTO — [email-0cb689953b84]
 SUBJECT: Aqua Metals — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B410
 INTRO: Aqua Metals has developed AquaRefining — a room-temperature, water-based process
 for recycling lead-acid and lithium-ion batteries. Reno, NV HQ with first commercial
@@ -123,9 +123,9 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Reno, NV
 -------------------------------------------------------------------------------
 
 COMPANY 4.11 — REDWOOD MATERIALS
-TO: JB Straubel, Founder & CEO — jb.straubel@redwoodmaterials.com
-CC: Kevin Kassekert, COO — kevin.kassekert@redwoodmaterials.com
-    Colin Campbell, CTO — colin.campbell@redwoodmaterials.com
+TO: JB Straubel, Founder & CEO — [email-23cd17d8020a]
+CC: Kevin Kassekert, COO — [email-989b188e5ae1]
+    Colin Campbell, CTO — [email-2b321829007a]
 SUBJECT: Redwood Materials — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B411
 INTRO: Redwood Materials is the leading US battery recycling and cathode materials
 manufacturer. Carson City, NV HQ with Charleston, SC cathode and anode copper foil
@@ -136,9 +136,9 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Carson City, NV
 -------------------------------------------------------------------------------
 
 COMPANY 4.12 — TALON METALS CORP.
-TO: Henri van Rooyen, CEO — henri.vanrooyen@talonmetals.com
-CC: Brian Goldner, CFO — brian.goldner@talonmetals.com
-    Etienne Dinel, VP Geology — etienne.dinel@talonmetals.com
+TO: Henri van Rooyen, CEO — [email-a02e7347596b]
+CC: Brian Goldner, CFO — [email-a0c557d5f5fc]
+    Etienne Dinel, VP Geology — [email-0833b8b42616]
 SUBJECT: Talon Metals — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B412
 INTRO: Talon Metals is developing the Tamarack Nickel-Copper-Cobalt Project in Minnesota
 — the only high-grade nickel deposit under development in the US. Tamarack, MN HQ with
@@ -149,9 +149,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Tamarack, MN
 -------------------------------------------------------------------------------
 
 COMPANY 4.13 — MP MATERIALS CORP.
-TO: James Litinsky, Founder, Chairman & CEO — james.litinsky@mpmaterials.com
-CC: Michael Rosenthal, COO — michael.rosenthal@mpmaterials.com
-    Ryan Corbett, CFO — ryan.corbett@mpmaterials.com
+TO: James Litinsky, Founder, Chairman & CEO — [email-e41755861d74]
+CC: Michael Rosenthal, COO — [email-05c04a7b0c81]
+    Ryan Corbett, CFO — [email-b2d2e0186c1b]
 SUBJECT: MP Materials — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B413
 INTRO: MP Materials owns and operates Mountain Pass — the only active rare earth mine
 and processing facility in the Western Hemisphere. Las Vegas, NV HQ with operations
@@ -162,8 +162,8 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Las Vegas, NV
 -------------------------------------------------------------------------------
 
 COMPANY 4.14 — LYNAS RARE EARTHS LTD.
-TO: Amanda Lacaze, CEO & Managing Director — amanda.lacaze@lynascorp.com
-CC: Pol Le Roux, COO — pol.leroux@lynascorp.com
+TO: Amanda Lacaze, CEO & Managing Director — [email-64e46a55419d]
+CC: Pol Le Roux, COO — [email-66216fec9bf8]
 SUBJECT: Lynas — US-Australia Advanced Technology Partnership — ACS-MC-2026-B414
 INTRO: Lynas is the world's largest non-Chinese rare earth producer, with Mount Weld
 mine in Western Australia and processing in Malaysia. Building US heavy rare earth
@@ -174,8 +174,8 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Perth, Australia / Seadrift, TX
 -------------------------------------------------------------------------------
 
 COMPANY 4.15 — IONEER LTD.
-TO: Bernard Rowe, Managing Director & CEO — bernard.rowe@ioneer.com
-CC: James Calaway, Executive Chairman — james.calaway@ioneer.com
+TO: Bernard Rowe, Managing Director & CEO — [email-1e0e78ef5b03]
+CC: James Calaway, Executive Chairman — [email-346809c26fae]
 SUBJECT: Ioneer — US-Australia Advanced Technology Partnership — ACS-MC-2026-B415
 INTRO: Ioneer is developing the Rhyolite Ridge lithium-boron project in Nevada — one of
 only two known large lithium-boron deposits globally. Sydney, Australia HQ with US

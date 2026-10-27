@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, CISCO. GOOOOOOOD MORNING, Chuck Robbins and the engineering leadership in San Jose. The ACS Infrastructure Protection Division presents a co-branded product partnership proposal — Cisco Shield, a new line of GIC-hardened networking infrastructure incorporating ACS AEGIS MXene capacitor technology, certifying Cisco's core routing, switching, and data center platforms as electromagnetically resilient and creating a new market category worth an estimated $4.2 billion in premium enterprise and government sales over the next five years.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, CISCO. GOOOOOOOD MORNING, Chuck Robbins and the engineering leadership in San Jose. The ACS Infrastructure Protection Division presents a co-branded product partnership proposal — Cisco Shield, a new line of GIC-hardened networking infrastructure incorporating ACS AEGIS MXene capacitor technology, certifying Cisco's core routing, switching, and data center platforms as electromagnetically resilient and creating a new market category worth an estimated $4.2 billion in premium enterprise and government sales over the next five years.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -35,7 +35,7 @@ Four PDF attachments accompany this communication:
 
 **PARAGRAPH 7 — CISCO-SPECIFIC PERSONALIZATION**
 
-Chuck, Cisco's 2024 acquisition of Splunk and the push toward AI-native networking demonstrate the company's willingness to invest in next-generation infrastructure. Cisco Shield is the electromagnetic layer of that next generation. The U.S. Department of Defense's Cybersecurity Maturity Model Certification (CMMC) and the DHS Critical Infrastructure directive both point toward mandatory electromagnetic resilience requirements within 3–5 years. Cisco can either lead that transition and own the standard — or chase competitors who integrate GIC protection first. The MXene capacitor is a California-born technology, manufactured in a facility 45 miles from Cisco's San Jose headquarters. ACS proposes a true partnership: ACS supplies the capacitor technology; Cisco supplies the platform and the brand; together, Cisco Shield defines electromagnetic resilience for the global networking industry.
+Chuck, Cisco's 2024 acquisition of Splunk and the push toward AI-native networking demonstrate the company's willingness to invest in next-generation infrastructure. Cisco Shield is the electromagnetic layer of that next generation. The U.S. Department of Defense's Cybersecurity Maturity Model Certification (CMMC) and the DHS Critical Infrastructure directive both point toward mandatory electromagnetic resilience requirements within 3–5 years. Cisco can either lead that transition and own the standard — or chase competitors who integrate GIC protection first. The MXene capacitor is a [location withheld]-born technology, manufactured in a facility 45 miles from Cisco's San Jose headquarters. ACS proposes a true partnership: ACS supplies the capacitor technology; Cisco supplies the platform and the brand; together, Cisco Shield defines electromagnetic resilience for the global networking industry.
 
 **PARAGRAPH 8 — CALL TO ACTION**
 
@@ -45,7 +45,7 @@ Mr. Robbins, ACS respectfully requests a 60-minute executive and engineering bri
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

@@ -30,8 +30,8 @@ Account
 	•	 Credits
 	•	 Bring Your Own Key (BYOK)
 
-Jason Brodsky
-jsnbshark@gmail.com
+[sender name withheld]
+[email-ae2c1051f384]
 
 
 Toggle Sidebar

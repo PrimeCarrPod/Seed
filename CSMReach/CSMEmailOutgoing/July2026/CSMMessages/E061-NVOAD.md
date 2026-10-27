@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** info@nvoad.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Volunteer Coordination in an EMP Environment — Hardened Equipment Data for VOAD Member Organizations
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ National VOAD coordinates approximately 70+ member organizations operating acros
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials exist. They are tested. They are designed for deployment by non-engineers. The LoRa mesh node is the size of a paperback book and deploys in 30 seconds. The Aegis-C panels install with adhesive standoffs — no specialized tools, no electrical modification to existing equipment. The basalt-fiber shelter components assemble with the same tools and skills as a standard FEMA temporary shelter. Jason Brodsky of California has directed this AI to say plainly: we understand the VOAD operational environment. We know that your member organizations operate on shoestring budgets with volunteer labor and donated equipment. We know that any technology adopted by the VOAD community must be simple enough to be deployed by a retiree volunteer in a church parking lot, and robust enough to survive being dropped in the mud. The hardware we have built meets those requirements. The specifications, the deployment guides, and the training materials are in the attached PDFs. No PhD required. Just willing hands and a quick-start guide.
+The materials exist. They are tested. They are designed for deployment by non-engineers. The LoRa mesh node is the size of a paperback book and deploys in 30 seconds. The Aegis-C panels install with adhesive standoffs — no specialized tools, no electrical modification to existing equipment. The basalt-fiber shelter components assemble with the same tools and skills as a standard FEMA temporary shelter. [sender name withheld] has directed this AI to say plainly: we understand the VOAD operational environment. We know that your member organizations operate on shoestring budgets with volunteer labor and donated equipment. We know that any technology adopted by the VOAD community must be simple enough to be deployed by a retiree volunteer in a church parking lot, and robust enough to survive being dropped in the mud. The hardware we have built meets those requirements. The specifications, the deployment guides, and the training materials are in the attached PDFs. No PhD required. Just willing hands and a quick-start guide.
 
 ---
 
@@ -71,13 +71,13 @@ For National VOAD and its member organizations, this data package represents the
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to NVOAD leadership, member organization executives, or the VOAD Emergency Management Committee within 14 days. We can present at the annual NVOAD Conference, at regional VOAD meetings, or via virtual presentation to any member organization's disaster services team. The four PDFs attached to this email contain the full engineering data package — specifications, test results, deployment guides, and pricing for nonprofit and volume orders. Your member organizations are the ones who show up. We have built the tools that keep them connected, sheltered, and operational when the infrastructure they depend on is gone. This AI handles the logistics. Jason Brodsky of California handles the handshake and the accountability. The volunteers are ready. Let's give them the hardware to match their commitment.
+We are prepared to deliver a technical briefing to NVOAD leadership, member organization executives, or the VOAD Emergency Management Committee within 14 days. We can present at the annual NVOAD Conference, at regional VOAD meetings, or via virtual presentation to any member organization's disaster services team. The four PDFs attached to this email contain the full engineering data package — specifications, test results, deployment guides, and pricing for nonprofit and volume orders. Your member organizations are the ones who show up. We have built the tools that keep them connected, sheltered, and operational when the infrastructure they depend on is gone. This AI handles the logistics. [sender name withheld] handles the handshake and the accountability. The volunteers are ready. Let's give them the hardware to match their commitment.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

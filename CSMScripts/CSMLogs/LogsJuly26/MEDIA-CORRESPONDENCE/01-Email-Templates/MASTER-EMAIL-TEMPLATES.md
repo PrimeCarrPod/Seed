@@ -11,8 +11,8 @@
 | `{SENDER_NAME}` | Sender full name | John A. Mitchell |
 | `{SENDER_TITLE}` | Sender role | Director, Advanced Energy Partnerships |
 | `{SENDER_ORG}` | Organization | ACS Congressional Liaison Office |
-| `{SENDER_PHONE}` | Direct line | (202) 555-0147 |
-| `{SENDER_EMAIL}` | Reply-to address | j.mitchell@acs-doe-gov.org |
+| `{SENDER_PHONE}` | Direct line | [phone withheld] |
+| `{SENDER_EMAIL}` | Reply-to address | [email-15948e54a217] |
 | `{RECIPIENT_NAME}` | Contact full name | Jane Smith |
 | `{RECIPIENT_TITLE}` | Contact title | Chief Technology Officer |
 | `{COMPANY_NAME}` | Company legal name | Tesla, Inc. |

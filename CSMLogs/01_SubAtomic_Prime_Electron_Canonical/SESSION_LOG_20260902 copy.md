@@ -1,6 +1,6 @@
 # Session Log — 2026-09-02
 **Agent:** Kilo (session/agent_14f31ed0-c180-47d8-931e-0488ae73ae29)
-**Author:** Jason Isaac Brodsky of California 1976 Author Conducier
+**Author:** [sender name withheld] of California 1976 Author Conducier
 **Duration:** ~2 hours
 
 ---

@@ -68,7 +68,7 @@ manually enabled in portal after CNAME propagation confirmed.
 ```
 Type:    TXT
 Name:    _dmarc
-Value:   v=DMARC1; p=none; rua=mailto:dmarc-reports@aegisc.space; pct=100
+Value:   v=DMARC1; p=none; rua=mailto:[email-9834d6de17bb]; pct=100
 TTL:     1 hour
 ```
 **Purpose:** Monitoring mode. Collects aggregate reports. No blocking (`p=none`).
@@ -103,7 +103,7 @@ TTL:     1 hour
 | 3 | Send test to mail-tester.com — target 10/10 | Today | PENDING |
 | 4 | Verify all records at learndmarc.com | Today | PENDING |
 | 5 | Check blocklists at mxtoolbox.com | Today | PENDING |
-| 6 | Create dmarc-reports@aegisc.space mailbox | This week | PENDING |
+| 6 | Create [email-9834d6de17bb] mailbox | This week | PENDING |
 | 7 | Send first 10 emails to known contacts (engagement building) | This week | PENDING |
 | 8 | Implement MTA-STS (TLS enforcement policy) | This month | PENDING |
 | 9 | Domain warm-up — 30-day graduated volume | This month | PENDING |

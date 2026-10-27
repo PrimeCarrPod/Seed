@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, BOSTON DYNAMICS. GOOOOOOOD MORNING, to the company that made robots walk, run, jump, backflip, and dance — the world's most advanced legged robotics company, whose Atlas humanoid and Spot quadruped define the state of the art in dynamic locomotion. The AEGIS Robotics Hardening Division is reaching out to present the Phantom MK-1 — an Aegis-hardened legged robot designed for post-Carrington deployment — and to propose a co-development program that integrates Aegis dielectric materials (BFRP structural shells, non-conductive elastomer actuators, and MRF-damped joints) into Boston Dynamics' next-generation robot platforms to make them immune to the geomagnetic environment that will disable every conductive robot during a G5 storm.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, BOSTON DYNAMICS. GOOOOOOOD MORNING, to the company that made robots walk, run, jump, backflip, and dance — the world's most advanced legged robotics company, whose Atlas humanoid and Spot quadruped define the state of the art in dynamic locomotion. The AEGIS Robotics Hardening Division is reaching out to present the Phantom MK-1 — an Aegis-hardened legged robot designed for post-Carrington deployment — and to propose a co-development program that integrates Aegis dielectric materials (BFRP structural shells, non-conductive elastomer actuators, and MRF-damped joints) into Boston Dynamics' next-generation robot platforms to make them immune to the geomagnetic environment that will disable every conductive robot during a G5 storm.
 
 **PARAGRAPH 2 — THE CONDUCTIVE ROBOT DURING A CARRINGTON EVENT**
 
@@ -45,11 +45,11 @@ Boston Dynamics leadership, ACS respectfully requests a 90-minute technical brie
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Robotics Hardening Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

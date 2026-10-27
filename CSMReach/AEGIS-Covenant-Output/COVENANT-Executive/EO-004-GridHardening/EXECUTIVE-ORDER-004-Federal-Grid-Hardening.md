@@ -48,7 +48,7 @@ It is the policy of the United States that the federal government shall lead by 
 
 (e) A comprehensive GIC susceptibility assessment of the federal building inventory has not been conducted. This Order mandates such an assessment as the predicate for a targeted, cost-effective hardening program.
 
-(f) Cost-benefit analysis conducted by CSMEval/COST-BENEFIT-003 demonstrates that hardening federal facilities to the Aegis Home Standard costs approximately 4% of the replacement value of the facilities protected — a ratio consistent with seismic retrofitting programs for federal buildings in California and the Pacific Northwest, which have been mandated by Executive Order 12941 and subsequent authorities.
+(f) Cost-benefit analysis conducted by CSMEval/COST-BENEFIT-003 demonstrates that hardening federal facilities to the Aegis Home Standard costs approximately 4% of the replacement value of the facilities protected — a ratio consistent with seismic retrofitting programs for federal buildings in [location withheld] and the Pacific Northwest, which have been mandated by Executive Order 12941 and subsequent authorities.
 
 > **WILLIAMS HEURISTIC — SECTION 2 IN PLAIN LANGUAGE:** The government has the authority to harden its own buildings. The EMP Commission has been saying for years that DOD bases need electromagnetic protection. This Order extends that same logic to civilian federal buildings — hospitals, courthouses, emergency operations centers. And it costs about 4% of what the buildings are worth to replace. That's comparable to earthquake retrofitting, which the government already does.
 
@@ -283,7 +283,7 @@ It is the policy of the United States that the federal government shall lead by 
 - Hardening cost as percentage of protected asset value: 3.6%
 - Hardening cost per federal employee protected (~2.1 million civilian + 1.3 million active duty military): ~$13,970 per person
 - 10-year amortized annual cost: ~$4.75 billion per year (0.07% of annual federal budget)
-- Seismic retrofitting comparison: California required seismic retrofit of 2,100 state-owned bridges at a cost of approximately $4.2 billion (roughly 3-5% of replacement value) — the Aegis Home Standard cost ratio is directly comparable
+- Seismic retrofitting comparison: [location withheld] required seismic retrofit of 2,100 state-owned bridges at a cost of approximately $4.2 billion (roughly 3-5% of replacement value) — the Aegis Home Standard cost ratio is directly comparable
 
 ---
 

@@ -5,8 +5,8 @@
 ---
 
 **TO:** Head of Exposure Management, Lloyd's Futureset / Lloyd's Market Association
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** The mitigation layer beneath the systemic space-weather risk models you're already building
 
 ---
@@ -33,10 +33,10 @@ NEXT STEP: Happy to connect at Monte Carlo Rendez-Vous (September) or directly w
 
 Appreciate the work of pricing risks most people would rather not think about at all.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 ---
 

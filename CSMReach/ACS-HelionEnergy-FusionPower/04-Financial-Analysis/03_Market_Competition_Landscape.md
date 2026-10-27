@@ -37,7 +37,7 @@ The global private fusion industry has attracted $2.64 billion in cumulative cap
 
 | Parameter | Detail |
 |-----------|--------|
-| Headquarters | Foothill Ranch, California |
+| Headquarters | Foothill Ranch, [location withheld] |
 | Technology | Beam-driven FRC (field-reversed configuration sustained by neutral beam injection) |
 | Key Prototype | Norman (5th generation); Copernicus (6th generation, under construction) |
 | Capital Raised | $1.2B+ |

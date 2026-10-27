@@ -723,7 +723,7 @@ if [ ! -f "$DEBUG_KEYSTORE" ]; then
     keytool -genkeypair -v -keystore "$DEBUG_KEYSTORE" \
         -alias androiddebugkey -keyalg RSA -keysize 2048 \
         -validity 10000 -dname "CN=Android Debug,O=Android,C=US" \
-        -storepass android -keypass android
+        -storepass "$ANDROID_KEYSTORE_PASS" -keypass "$ANDROID_KEY_PASS"
 fi
 ```
 
@@ -765,8 +765,8 @@ aapt2 link -o unsigned.apk -I $ANDROID_JAR --manifest AndroidManifest.xml \
 zipalign -f -p 4 unsigned.apk aligned.apk
 
 # 5. Apksigner: Debug signature
-apksigner sign --ks $DEBUG_KEYSTORE --ks-pass pass:android \
-    --key-pass pass:android --out Bounce.apk aligned.apk
+apksigner sign --ks $DEBUG_KEYSTORE --ks-pass env:ANDROID_KEYSTORE_PASS \
+    --key-pass env:ANDROID_KEY_PASS --out Bounce.apk aligned.apk
 ```
 
 ### Known Limitations

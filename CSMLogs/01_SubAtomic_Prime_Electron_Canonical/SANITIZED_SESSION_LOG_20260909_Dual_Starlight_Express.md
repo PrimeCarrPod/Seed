@@ -2,7 +2,7 @@
 **Date:** 2026-09-09  
 **Time:** 05:45:03 UTC  
 **Session:** agent_796fff2d-c05a-4f6d-a3b0-3144f41def75  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Branch:** session/agent_796fff2d-c05a-4f6d-a3b0-3144f41def75  
 
 ---
@@ -159,7 +159,7 @@
 | 14b2d65b-... | MS365 MCP default | ❌ HTTP 400 on /common |
 | 084a3e9f-... | MCP server built-in | ❌ Admin consent required |
 
-**Working accounts:** Personal Hotmail (jasonbrodsky@hotmail.com) — no admin consent needed
+**Working accounts:** Personal Hotmail ([email withheld]) — no admin consent needed
 
 ---
 

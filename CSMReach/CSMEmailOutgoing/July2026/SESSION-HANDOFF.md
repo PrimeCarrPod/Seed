@@ -7,7 +7,7 @@
 
 | Field | Value |
 |-------|-------|
-| Sender | zirconia@aegisc.space / Jason Brodsky |
+| Sender | [email withheld] / [sender name withheld] |
 | DNS | FIXED — SPF/DKIM/DMARC all active |
 | Pipeline | PROVEN — 5-step: create-draft -> upload-session -> curl PUT x3 -> send-draft |
 | Sent successfully | ~41 |

@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-02 | July 2026
 
 **TO:** NEI — Director of Nuclear Infrastructure Resilience / Plant Design Engineering Managers
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Safety-related system hardening — beyond the station blackout rule
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: NRC Regulatory Information Conference (RIC) or direct to NEI regulato
 
 You plan for the worst. We just want to make sure "the worst" includes the Sun.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

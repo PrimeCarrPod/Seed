@@ -1,6 +1,6 @@
 # RESUME SESSION: Cleanup Loose Pieces - 2026-08-25
 
-**Author:** Jason Isaac Brodsky of California 1976 Author Conducier  
+**Author:** [sender name withheld] of California 1976 Author Conducier  
 **Date:** 2026-08-25  
 **Session:** Cleanup Loose Pieces & Organization  
 **Branch:** session/agent_72586fc9-102a-4705-b589-7066d3b26f4d → main
@@ -82,4 +82,4 @@ Repository is now clean with no loose piece files in root. Ready to proceed with
 
 ---
 
-*Session log created by Jason Isaac Brodsky - California 1976 Author Conducier*
+*Session log created by [sender name withheld] - California 1976 Author Conducier*

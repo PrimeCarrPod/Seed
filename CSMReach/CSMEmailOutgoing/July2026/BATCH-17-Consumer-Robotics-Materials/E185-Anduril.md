@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, ANDURIL INDUSTRIES. GOOOOOOOD MORNING, to the defense technology company that has redefined what it means to build for the modern battlefield — the company whose Lattice AI operating system, Fury autonomous air vehicle, and Roadrunner VTOL loitering munition represent the most aggressive rethinking of defense acquisition since the Manhattan Project. The AEGIS Defense Electronics Hardening Division is reaching out to present an EMP-hardening suite for Anduril's autonomous systems portfolio — MXene avionics shielding, BFRP airframe components, and FEATHER mesh battlefield networking — that provides Anduril's platforms with full operational capability in the contested electromagnetic environments where near-peer adversaries will deploy tactical EMP weapons as standard battlefield effects.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, ANDURIL INDUSTRIES. GOOOOOOOD MORNING, to the defense technology company that has redefined what it means to build for the modern battlefield — the company whose Lattice AI operating system, Fury autonomous air vehicle, and Roadrunner VTOL loitering munition represent the most aggressive rethinking of defense acquisition since the Manhattan Project. The AEGIS Defense Electronics Hardening Division is reaching out to present an EMP-hardening suite for Anduril's autonomous systems portfolio — MXene avionics shielding, BFRP airframe components, and FEATHER mesh battlefield networking — that provides Anduril's platforms with full operational capability in the contested electromagnetic environments where near-peer adversaries will deploy tactical EMP weapons as standard battlefield effects.
 
 **PARAGRAPH 2 — THE EMP BATTLEFIELD REALITY**
 
@@ -45,11 +45,11 @@ Anduril leadership, ACS respectfully requests a 90-minute technical briefing —
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Defense Electronics Hardening Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

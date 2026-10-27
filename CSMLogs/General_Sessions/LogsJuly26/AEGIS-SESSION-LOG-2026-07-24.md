@@ -45,7 +45,7 @@ Continuation from July 19, 2026 28-hour campaign session. Focus on account clean
 - Bounce tracking draft created listing all bad addresses
 - Includes retry counts for addresses attempted multiple times:
   - EU legislation addresses (EC-ENERGY, ener-c1, COMM-ENER)
-  - Japan METI (METI-EN, joho-renkei, info@meti.go.jp)
+  - Japan METI (METI-EN, joho-renkei, [email-5d432c200af4])
   - Australia DISR (industry, media)
   - Canada NRCan (NRCan.Info, questions)
   - UK DESNZ (enquiries, correspondence)

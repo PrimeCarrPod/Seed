@@ -19,7 +19,7 @@ Professor Lin's philosophy — that engineering should serve human needs through
 
 ## Corporate Structure and Global Reach
 
-T.Y. Lin International is headquartered in San Francisco, California — a location that has positioned the firm at the center of one of the world's most seismically active and bridge-intensive regions. The firm employs more than 3,000 engineers, technicians, and support professionals across offices in the Americas, Asia, and the Middle East.
+T.Y. Lin International is headquartered in [location withheld] — a location that has positioned the firm at the center of one of the world's most seismically active and bridge-intensive regions. The firm employs more than 3,000 engineers, technicians, and support professionals across offices in the Americas, Asia, and the Middle East.
 
 Annual revenue is estimated at approximately $470 million, with some industry analyses placing the figure above $950 million depending on the scope of consolidated reporting. The firm is a core operating company within the Sidara collaborative (formerly known as the Dar Group), a global network of specialized design and engineering firms with combined annual revenues exceeding $3.15 billion. This collaborative structure provides T.Y. Lin International with access to complementary expertise in architecture, planning, project management, and sustainability consulting, while preserving the firm's distinct engineering identity and client relationships.
 
@@ -57,7 +57,7 @@ Annual revenue is estimated at approximately $470 million, with some industry an
 
 **Taiwan High Speed Rail — 25 Elevated Bridges.** T.Y. Lin International designed 25 elevated bridge structures for the Taiwan High Speed Rail project, which connects Taipei in the north to Kaohsiung in the south at operating speeds of 300 km/h (186 mph). The bridges were designed for seismic resilience in Taiwan's highly active tectonic environment, demonstrating the firm's capacity to deliver high-volume, standardized bridge designs with consistent quality under aggressive schedule constraints.
 
-**Moscone Convention Center (San Francisco, California).** Beyond bridges, T.Y. Lin International served as structural engineer for the expansion of San Francisco's Moscone Convention Center, a major civic facility spanning three city blocks. The project demonstrates the firm's capacity to deliver structural engineering at the intersection of architectural ambition and seismic performance requirements.
+**Moscone Convention Center ([location withheld]).** Beyond bridges, T.Y. Lin International served as structural engineer for the expansion of San Francisco's Moscone Convention Center, a major civic facility spanning three city blocks. The project demonstrates the firm's capacity to deliver structural engineering at the intersection of architectural ambition and seismic performance requirements.
 
 ---
 

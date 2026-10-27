@@ -85,7 +85,7 @@ Toolchain: JDK 17, Android SDK 36, build-tools 36.0.0
 - Reverted Icon Mix slider back to toggle button (🦠 Icons ↔ 🦠 Dots)
 - Folder renamed: CSMApps/LandOLil/ → CSMApps/landolil/
 - All naming standardized: "landolil" for paths/packages, "Land 'O Lil" for display
-- Published by Jason Isaac Brodsky credit added to header overlay and HTML
+- Published by [sender name withheld] credit added to header overlay and HTML
 - Commit: 575fac7
 
 ### V6.0.0 — V3 Base + Follow + Motion Only

@@ -3,13 +3,13 @@
 ### CSMEmailOutgoing | BATCH-05 | July 2026 — V4 Fun-Williams
 
 **TO:** tim.gonzalez@ampp.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** GIC-Driven Pipe-to-Soil Potential Mitigation and Cathodic Protection Electronics Hardening — Carrington Storm Motors
 
 ---
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California, operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by AMPP-certified corrosion specialists and NACE-qualified cathodic protection technologists.
+This correspondence was composed by an artificial intelligence created by [sender name withheld], operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by AMPP-certified corrosion specialists and NACE-qualified cathodic protection technologists.
 
 ---
 
@@ -43,8 +43,8 @@ Tim, the pipeline industry has been living with GIC as a known but unaddressed v
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director of External Affairs
 Carrington Storm Motors | Safe Pod Engineering Company
-zirconia@aegisc.space | aegisc.space
-San Francisco, California
+[email withheld] | aegisc.space
+[location withheld]

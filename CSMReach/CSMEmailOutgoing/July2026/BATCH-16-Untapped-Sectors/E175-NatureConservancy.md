@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, THE NATURE CONSERVANCY. GOOOOOOOD MORNING, TNC. GOOOOOOOD MORNING, to the organization that has protected 125 million acres of land and 5,000 river miles — the most effective conservation organization in the world at integrating human development with ecological preservation. The AEGIS Public Lands Division is reaching out to present two products that extend TNC's "conservation-compatible development" philosophy to the built environment: Bio-Path habitat-friendly roads and Lonsdaleite eco-sensitive communities — infrastructure that enables human access and habitation without the habitat fragmentation, stormwater degradation, and permanent land alteration that conventional roads and buildings impose on conservation landscapes.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, THE NATURE CONSERVANCY. GOOOOOOOD MORNING, TNC. GOOOOOOOD MORNING, to the organization that has protected 125 million acres of land and 5,000 river miles — the most effective conservation organization in the world at integrating human development with ecological preservation. The AEGIS Public Lands Division is reaching out to present two products that extend TNC's "conservation-compatible development" philosophy to the built environment: Bio-Path habitat-friendly roads and Lonsdaleite eco-sensitive communities — infrastructure that enables human access and habitation without the habitat fragmentation, stormwater degradation, and permanent land alteration that conventional roads and buildings impose on conservation landscapes.
 
 **PARAGRAPH 2 — THE HABITAT FRAGMENTATION CRISIS**
 
@@ -47,11 +47,11 @@ TNC leadership, ACS respectfully requests a 60-minute technical briefing — ava
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Public Lands Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

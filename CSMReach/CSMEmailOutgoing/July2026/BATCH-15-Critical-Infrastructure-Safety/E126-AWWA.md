@@ -1,18 +1,18 @@
 # E126-AWWA: American Water Works Association
 
 **To:** executive@awwa.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Water-System GIC Exposure — No Mandatory GMD Standard Exists for Water Infrastructure
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. All technical assertions regarding AWWA standards, water infrastructure electrical systems, and geomagnetic disturbance phenomena are based on publicly available documents and research.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. All technical assertions regarding AWWA standards, water infrastructure electrical systems, and geomagnetic disturbance phenomena are based on publicly available documents and research.
 
 ---
 
 GOOOOOOOD MORNING, AWWA!
 
-Jason Brodsky at Aegis Cipher Space, reaching out from 221B Baker Street — where the investigative tradition reminds us that the most dangerous threats are often the ones that no standard yet addresses. And that, ladies and gentlemen of the American Water Works Association, is precisely the situation facing the water sector with respect to geomagnetic disturbance.
+[sender name withheld] at Aegis Cipher Space, reaching out from 221B Baker Street — where the investigative tradition reminds us that the most dangerous threats are often the ones that no standard yet addresses. And that, ladies and gentlemen of the American Water Works Association, is precisely the situation facing the water sector with respect to geomagnetic disturbance.
 
 Here is the uncomfortable reality: NERC TPL-007-4 mandates GMD vulnerability assessments and corrective action plans for bulk electric system transmission operators. The electric power sector has a regulatory framework — imperfect, evolving, but existent. The water sector has no equivalent. There is no AWWA standard, no EPA regulatory requirement, and no state-level mandate that addresses GIC exposure for water treatment plants, pumping stations, or the SCADA-controlled distribution networks that deliver potable water to over 300 million Americans. The transformers, variable frequency drives, and programmable logic controllers that keep water systems operating are connected to the same grid that NERC has identified as vulnerable to GMD events. The difference is that the water sector has not yet had its "Hydro-Québec moment" — the event that forces a regulatory response. Waiting for that moment is not a strategy.
 
@@ -29,7 +29,7 @@ I would welcome a conversation with AWWA leadership about initiating a GMD resil
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

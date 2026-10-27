@@ -6,7 +6,7 @@
 ## COMPANY OVERVIEW
 **Full Name:** CoreLogic, Inc.  
 **Type:** Property Data, Analytics, and Catastrophe Modeling  
-**HQ:** Irvine, California, USA  
+**HQ:** Irvine, [location withheld], USA  
 **Website:** www.corelogic.com  
 **Key Lines:** Property Data & Valuation, Catastrophe Risk Modeling (EQECAT, RQE), Flood, Wildfire, and Hurricane Modeling, Climate Risk Analytics, Real Estate Data and Mortgage Analytics, Insurance Solutions  
 

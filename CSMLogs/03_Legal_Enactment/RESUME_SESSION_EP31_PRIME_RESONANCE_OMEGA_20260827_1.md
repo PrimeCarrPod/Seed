@@ -1,5 +1,5 @@
 # RESUME SESSION: EP-31 Prime Resonance Omega — 7x Scaled Sibling Frequency Episode
-## Jason Isaac Brodsky of California 1976 Author Conducier
+## [sender name withheld] of California 1976 Author Conducier
 ## Date: 2026-08-27
 ## Session: agent_39431a27-25ba-4a24-aad1-42007388066a
 

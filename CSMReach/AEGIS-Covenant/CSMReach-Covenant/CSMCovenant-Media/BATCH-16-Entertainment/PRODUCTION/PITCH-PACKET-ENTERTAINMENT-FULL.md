@@ -8,7 +8,7 @@
 
 **Legendary Entertainment** — *"AEGIS"*: The franchise. Legendary's model (Godzilla, Kong, Dune) is world-building at scale. AEGIS is a world. The 18 Agents. The 5 ships. The 116 products. The 200 countries. Legendary builds the universe; CSM provides the source material (6,000+ files of it).
 
-**Blumhouse** — *"The Cascade"*: A horror-adjacent thriller about the moment the grid fails. What happens in the first 24 hours when every transformer on the continent melts simultaneously? Not a monster movie — a systems-failure horror movie. The monster is the absence of electricity. Jason Blum's micro-budget, high-concept model applied to infrastructure horror.
+**Blumhouse** — *"The Cascade"*: A horror-adjacent thriller about the moment the grid fails. What happens in the first 24 hours when every transformer on the continent melts simultaneously? Not a monster movie — a systems-failure horror movie. The monster is the absence of electricity. the account owner Blum's micro-budget, high-concept model applied to infrastructure horror.
 
 **Skydance** — *"Charlemagne"*: The action franchise. Skydance's animation and VFX capabilities (they have their own studio) are built for the Charlemagne fleet's hexapedal walking sequences. An amphibious 500-ton vessel walking onto a beach needs the best visual effects on Earth. Skydance can deliver.
 

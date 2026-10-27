@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** communications@eaa.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Glass Cockpit Meets Solar Maximum — EMP-Hardened Avionics for the Experimental Aircraft Community
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The modern experimental aircraft avionics architecture consists of: (1) Primary 
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials exist. They are tested. They are light enough for aircraft use — Aegis-C panels add less than 200 grams to a typical RV-7/RV-10 avionics bay installation; MXene coating adds negligible weight. Jason Brodsky of California has directed this AI to state plainly: we are not asking the EAA to issue any airworthiness directive, we are not proposing modifications to certificated aircraft, and we are not suggesting that electromagnetic hardening replaces any existing avionics-reliability requirement. The Experimental/Amateur-Built category exists precisely so that builders can innovate — can try new materials, new techniques, new approaches to making their aircraft safer and more capable. EMP-hardened avionics are an innovation that directly improves flight safety in the electromagnetic environment of Solar Cycle 25 and beyond. Builders who can install a Garmin G3X Touch, wire a VP-X electronic circuit breaker system, and terminate a CAN bus can install Aegis-C shielding and MXene coating. The installation guide — with step-by-step photographs, wiring diagrams, and weight-and-balance worksheets — is included in the CSMGeneralOutreach compendium attached to this email.
+The materials exist. They are tested. They are light enough for aircraft use — Aegis-C panels add less than 200 grams to a typical RV-7/RV-10 avionics bay installation; MXene coating adds negligible weight. [sender name withheld] has directed this AI to state plainly: we are not asking the EAA to issue any airworthiness directive, we are not proposing modifications to certificated aircraft, and we are not suggesting that electromagnetic hardening replaces any existing avionics-reliability requirement. The Experimental/Amateur-Built category exists precisely so that builders can innovate — can try new materials, new techniques, new approaches to making their aircraft safer and more capable. EMP-hardened avionics are an innovation that directly improves flight safety in the electromagnetic environment of Solar Cycle 25 and beyond. Builders who can install a Garmin G3X Touch, wire a VP-X electronic circuit breaker system, and terminate a CAN bus can install Aegis-C shielding and MXene coating. The installation guide — with step-by-step photographs, wiring diagrams, and weight-and-balance worksheets — is included in the CSMGeneralOutreach compendium attached to this email.
 
 ---
 
@@ -71,13 +71,13 @@ For the Experimental Aircraft Association, this data package represents the firs
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to EAA leadership, the Homebuilt Aircraft Council, the EAA Safety Committee, or the AirVenture forums programming team within 14 days. We can provide the full demonstration — shielded and unshielded avionics, live TEM cell testing, materials samples, installation guides — for AirVenture 2027. Bring your avionics experts — the people who write the G3X installation manuals and know every pin on the connector. Bring your homebuilt safety advisors — the ones who investigate the accidents and know exactly which failure modes are responsible for the most fatalities. The four PDFs attached to this email contain the full engineering data package. This AI handles the logistics and the demo planning. Jason Brodsky of California handles the handshake — on the ground in Oshkosh, in the forums tent, talking avionics with the people who build airplanes in their garage. The EAA motto is "We Are All One Community." Let's make that community the best-protected aviators in the sky.
+We are prepared to deliver a technical briefing to EAA leadership, the Homebuilt Aircraft Council, the EAA Safety Committee, or the AirVenture forums programming team within 14 days. We can provide the full demonstration — shielded and unshielded avionics, live TEM cell testing, materials samples, installation guides — for AirVenture 2027. Bring your avionics experts — the people who write the G3X installation manuals and know every pin on the connector. Bring your homebuilt safety advisors — the ones who investigate the accidents and know exactly which failure modes are responsible for the most fatalities. The four PDFs attached to this email contain the full engineering data package. This AI handles the logistics and the demo planning. [sender name withheld] handles the handshake — on the ground in Oshkosh, in the forums tent, talking avionics with the people who build airplanes in their garage. The EAA motto is "We Are All One Community." Let's make that community the best-protected aviators in the sky.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

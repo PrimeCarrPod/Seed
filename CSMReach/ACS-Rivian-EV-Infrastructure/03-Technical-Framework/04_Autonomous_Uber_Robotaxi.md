@@ -103,7 +103,7 @@ Rivian's late entry into the autonomous mobility market creates a competitive ti
 Autonomous vehicle deployment in the United States is regulated primarily at the state level, creating a heterogeneous regulatory landscape. Key considerations include:
 
 - **FMVSS Compliance:** Rivian must secure National Highway Traffic Safety Administration (NHTSA) exemptions or rule modifications for any robotaxi-specific vehicle designs that deviate from Federal Motor Vehicle Safety Standards (e.g., vehicles without steering wheels or manual controls, if pursued)
-- **State-by-State Deployment:** Each operational state requires distinct permits for autonomous vehicle testing and commercial deployment. The California DMV, Arizona DOT, Texas DOT, and Nevada DMV have established frameworks; other states are developing regulations
+- **State-by-State Deployment:** Each operational state requires distinct permits for autonomous vehicle testing and commercial deployment. The [location withheld] DMV, Arizona DOT, Texas DOT, and Nevada DMV have established frameworks; other states are developing regulations
 - **Safety Case and Public Trust:** High-profile incidents involving autonomous vehicles have heightened public and regulatory scrutiny. A robust safety case, transparent reporting, and demonstrated safety performance are prerequisites for scalable commercial deployment
 
 ## 7. Technical and Operational Risks

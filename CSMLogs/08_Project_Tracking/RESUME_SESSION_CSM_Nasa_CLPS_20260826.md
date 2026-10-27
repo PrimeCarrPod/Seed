@@ -1,7 +1,7 @@
 # RESUME SESSION — CLPS NASA Commercial Lunar Payload Services Initiative
 ## Session: CSM_Nasa_CLPS_Broadcast_20260826
 **Date:** August 26, 2026  
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Branch:** session/agent_10fd4d5f-2023-4d75-8a3d-6d35311d0f27 → main (merged)  
 **Commit:** f0a4f6b2  
@@ -35,7 +35,7 @@ Completed the **CLPS NASA Commercial Lunar Payload Services Initiative** — a t
 ### BROADCAST STRUCTURE
 
 **Pieces 1-16: Technical & Human Foundation**
-- Opening, agent roster, CLPS overview, human story (Jason Brodsky)
+- Opening, agent roster, CLPS overview, human story ([sender name withheld])
 - Financial analysis (Zirconia), 4 locks/1 key (Keymaker)
 - Lonsdaleite crystallography (Nash), AFP fabrication (Arden)
 - Integration elimination (Cross), lunar environment (Kade)

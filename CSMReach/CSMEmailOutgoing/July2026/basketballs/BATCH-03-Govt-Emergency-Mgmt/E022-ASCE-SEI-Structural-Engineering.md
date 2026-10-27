@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** ASCE/SEI Technical Committee Members / Structures Congress Program Committee
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** BFRP and dielectric concrete — standards contribution for ASCE 7 and material design guides
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: ASCE-SEI Structures Congress paper submission or direct to the releva
 
 You write the rules for how America builds. Let's add non-conductive to the options.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** info@hamvention.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** 30,000 Hams, One Building, and a Solar Cycle at Peak — EMP Hardening Demo Proposal for Dayton Hamvention
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ Dayton Hamvention attracts approximately 30,000 attendees annually, with an esti
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The test methodology is well-established in MIL-STD-461G. The equipment is safe to operate in a convention-center environment with appropriate engineering controls. The demonstration is designed to educate, not to frighten — the goal is to show hams what the threat physics looks like and what the hardening solutions actually do, measured and verified. Jason Brodsky of California has directed this AI to state plainly: we are not proposing a commercial exhibit booth (though we will happily take one). We are proposing a technical forum and demonstration with educational content that advances the amateur radio community's understanding of electromagnetic hazard resilience. No scare tactics. No exaggerated claims. Just physics, hardware, and test data. The audience at Hamvention is smart enough to tell the difference.
+The test methodology is well-established in MIL-STD-461G. The equipment is safe to operate in a convention-center environment with appropriate engineering controls. The demonstration is designed to educate, not to frighten — the goal is to show hams what the threat physics looks like and what the hardening solutions actually do, measured and verified. [sender name withheld] has directed this AI to state plainly: we are not proposing a commercial exhibit booth (though we will happily take one). We are proposing a technical forum and demonstration with educational content that advances the amateur radio community's understanding of electromagnetic hazard resilience. No scare tactics. No exaggerated claims. Just physics, hardware, and test data. The audience at Hamvention is smart enough to tell the difference.
 
 ---
 
@@ -71,13 +71,13 @@ For Hamvention — and for DARA, the Dayton Amateur Radio Association that organ
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a detailed event proposal — including space requirements, power requirements, safety plan, equipment list, and proposed forum abstracts — to the DARA Hamvention Committee within 14 days. We can coordinate with the ARRL Forum organizers, the ARES Forum chair, and the technical programs committee to ensure the demonstration complements existing programming. Bring your forum chairs. Bring your safety officers. Bring the DARA volunteers who know exactly how many amps you can pull from a Greene County Fairgrounds outlet before the breaker trips. This AI handles the logistics and the paperwork and the scheduling. Jason Brodsky of California will be the one in Xenia, on the ground, with the hardware, shaking hands and answering questions. Let's put EMP hardening on the Hamvention map.
+We are prepared to deliver a detailed event proposal — including space requirements, power requirements, safety plan, equipment list, and proposed forum abstracts — to the DARA Hamvention Committee within 14 days. We can coordinate with the ARRL Forum organizers, the ARES Forum chair, and the technical programs committee to ensure the demonstration complements existing programming. Bring your forum chairs. Bring your safety officers. Bring the DARA volunteers who know exactly how many amps you can pull from a Greene County Fairgrounds outlet before the breaker trips. This AI handles the logistics and the paperwork and the scheduling. [sender name withheld] will be the one in Xenia, on the ground, with the hardware, shaking hands and answering questions. Let's put EMP hardening on the Hamvention map.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

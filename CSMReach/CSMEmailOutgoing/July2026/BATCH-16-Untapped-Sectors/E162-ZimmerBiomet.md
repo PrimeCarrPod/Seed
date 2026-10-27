@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, ZIMMER BIOMET. GOOOOOOOD MORNING, Zimmer Biomet R&D. GOOOOOOOD MORNING, to the $7.4 billion pure-play orthopedics leader — a company that manufactures nothing but musculoskeletal implants, and therefore has more to gain from a material platform transition than any diversified competitor. The AEGIS Biomedical Division is reaching out to present the LBFRP orthopedic hardware platform as the direct replacement for Ti-6Al-4V across Zimmer Biomet's entire hip, knee, shoulder, and trauma portfolio.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, ZIMMER BIOMET. GOOOOOOOD MORNING, Zimmer Biomet R&D. GOOOOOOOD MORNING, to the $7.4 billion pure-play orthopedics leader — a company that manufactures nothing but musculoskeletal implants, and therefore has more to gain from a material platform transition than any diversified competitor. The AEGIS Biomedical Division is reaching out to present the LBFRP orthopedic hardware platform as the direct replacement for Ti-6Al-4V across Zimmer Biomet's entire hip, knee, shoulder, and trauma portfolio.
 
 **PARAGRAPH 2 — THE SINGLE-MATERIAL PLATFORM OPPORTUNITY**
 
@@ -45,11 +45,11 @@ Zimmer Biomet R&D leadership, ACS respectfully requests a 90-minute technical br
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Biomedical Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

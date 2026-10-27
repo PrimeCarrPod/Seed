@@ -3,7 +3,7 @@
 Process all email files in the Aegis campaign:
 1. Extract and validate email addresses from TO field
 2. Fix any malformed email addresses
-3. Add CC: landolil@hotmail.com field to all emails
+3. Add the configured CC field to all emails
 4. Report all changes made
 """
 
@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 EMAIL_DIR = "CSMReach/CSMEmailOutgoing/July2026"
-CC_EMAIL = "landolil@hotmail.com"
+CC_EMAIL = os.environ.get("CSM_CC_ADDRESS", "")
 
 # Email validation regex
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')

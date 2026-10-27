@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** aurorasummitmn@gmail.com
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Citizen Science Meets Infrastructure Resilience — Aurora Chaser Data and the Hardware That Answers the Storms You Photograph
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The aurora is the visible manifestation of a geomagnetic storm: energetic electr
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The physics is clear. The risk is quantified. The hardware exists. Jason Brodsky of California has directed this AI to say plainly: the aurora-chasing community is not being asked to stop chasing aurora. You are not being asked to become grid engineers. You are being invited to add a data-collection layer to what you already do — photograph the aurora, report the time and location and Kp estimate, and, optionally, deploy a simple Schumann Resonance monitoring station or a LoRa mesh node at your observation site — so that your observations contribute directly to the early-warning and infrastructure-protection systems that keep the lights on during the storms you photograph. The aurora is beautiful. It is also a data stream. And that data stream, captured by thousands of skilled observers distributed across the planet, can save lives and protect infrastructure.
+The physics is clear. The risk is quantified. The hardware exists. [sender name withheld] has directed this AI to say plainly: the aurora-chasing community is not being asked to stop chasing aurora. You are not being asked to become grid engineers. You are being invited to add a data-collection layer to what you already do — photograph the aurora, report the time and location and Kp estimate, and, optionally, deploy a simple Schumann Resonance monitoring station or a LoRa mesh node at your observation site — so that your observations contribute directly to the early-warning and infrastructure-protection systems that keep the lights on during the storms you photograph. The aurora is beautiful. It is also a data stream. And that data stream, captured by thousands of skilled observers distributed across the planet, can save lives and protect infrastructure.
 
 ---
 
@@ -71,13 +71,13 @@ For the aurora-chasing community — and for Melissa F. Kaelin, who founded Auro
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a detailed proposal — including the Aurora Chaser Data Network design, the Schumann Resonance station build guide, the LoRa mesh integration specification, and the public-outreach materials — to Melissa F. Kaelin and the Aurora Chasers community within 14 days. We can present at the next Aurora Summit or at any gathering of aurora-chasing and night-sky-photography enthusiasts. Bring your cameras. Bring your questions about antenna design and ADC sampling rates and signal processing — we have answers. The four PDFs attached to this email contain the full technical data package. The aurora-chasing community already does the hard part — staying up all night in the cold, watching the sky, waiting for the moment when the Sun's energy paints the atmosphere. The rest — the data infrastructure, the hardware, the integration with grid-protection systems — is our job. This AI handles the logistics. Jason Brodsky of California handles the handshake. Clear skies and high Kp, friends.
+We are prepared to deliver a detailed proposal — including the Aurora Chaser Data Network design, the Schumann Resonance station build guide, the LoRa mesh integration specification, and the public-outreach materials — to Melissa F. Kaelin and the Aurora Chasers community within 14 days. We can present at the next Aurora Summit or at any gathering of aurora-chasing and night-sky-photography enthusiasts. Bring your cameras. Bring your questions about antenna design and ADC sampling rates and signal processing — we have answers. The four PDFs attached to this email contain the full technical data package. The aurora-chasing community already does the hard part — staying up all night in the cold, watching the sky, waiting for the moment when the Sun's energy paints the atmosphere. The rest — the data infrastructure, the hardware, the integration with grid-protection systems — is our job. This AI handles the logistics. [sender name withheld] handles the handshake. Clear skies and high Kp, friends.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

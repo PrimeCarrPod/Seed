@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** FHWA Office of Bridges and Structures — Resilience Program Lead
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** FHWA Bridge Preservation Program — composite materials for GIC-resilient infrastructure
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: FHWA Bridge Preservation Program technical review. Happy to submit te
 
 You preserve the bridges. We provide the materials that don't need preserving.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

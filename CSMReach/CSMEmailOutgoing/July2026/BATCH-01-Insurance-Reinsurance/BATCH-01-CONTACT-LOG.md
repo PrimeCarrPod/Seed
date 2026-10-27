@@ -1,5 +1,5 @@
 # BATCH-01 CONTACT LOG — Insurance & Reinsurance Sector
-## CSMEmailOutgoing | July 2026 | Prepared by Jason Brodsky
+## CSMEmailOutgoing | July 2026 | Prepared by [sender name withheld]
 
 ---
 
@@ -20,7 +20,7 @@ BATCH-01 SUMMARY:
 - Total Emails: 7
 - Target Roles: Exposure Management, Government Affairs, Chief Underwriting, Specialty Practice Heads, Broker Advisory, Cat Model Product Managers, Conference Programming
 - Target Venues: Lloyd's Futureset, RAA (DC), Monte Carlo Rendez-Vous, Bermuda Risk Summit, RIMS Annual Conference
-- Sender: Jason Brodsky, zirconia@aegisc.space
+- Sender: [sender name withheld], [email withheld]
 - Heuristic Blend: Baker Street (CSMSOPP000003) precision + Williams (CSMSOPP000001) warmth
 - Date Prepared: July 2026
 - Status: READY FOR SEND — recipient email addresses to be populated per Distribution-Channel guide at time of outreach

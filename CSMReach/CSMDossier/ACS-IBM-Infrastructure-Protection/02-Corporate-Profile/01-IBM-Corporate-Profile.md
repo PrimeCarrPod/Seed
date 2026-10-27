@@ -117,7 +117,7 @@ IBM maintains direct operations in over 175 countries, organized into three geog
 - **Research Triangle Park, North Carolina:** Software development, cloud operations
 - **Austin, Texas:** Semiconductor design, AI research
 - **Rochester, Minnesota:** Power Systems development
-- **San Jose, California:** IBM Research — Almaden
+- **San Jose, [location withheld]:** IBM Research — Almaden
 - **Yorktown Heights, New York:** IBM Research — Thomas J. Watson Research Center
 - **Zurich, Switzerland:** IBM Research — Zurich (Nobel Prize: scanning tunneling microscope, 1986)
 - **Bangalore, India:** Software development, services delivery

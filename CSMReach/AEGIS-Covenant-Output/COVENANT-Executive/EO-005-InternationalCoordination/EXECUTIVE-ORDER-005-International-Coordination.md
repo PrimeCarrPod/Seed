@@ -14,7 +14,7 @@
 
 A coronal mass ejection does not stop at the border. The magnetosphere does not check passports. When the Sun throws a magnetic tantrum, Canada, the United States, and Mexico all experience it simultaneously — because they share the same continent, the same interconnected electrical grid, and in most cases, the same geological formations that concentrate geomagnetically induced currents along particular paths.
 
-This is not a problem any nation can solve alone. The North American grid is physically integrated. Power flows across the U.S.-Canada border at more than thirty interconnection points. A transformer failure in Manitoba pulls current from Minnesota. A substation collapse in Ontario affects New York. A blackout in Baja California cascades into Southern California.
+This is not a problem any nation can solve alone. The North American grid is physically integrated. Power flows across the U.S.-Canada border at more than thirty interconnection points. A transformer failure in Manitoba pulls current from Minnesota. A substation collapse in Ontario affects New York. A blackout in Baja [location withheld] cascades into Southern [location withheld].
 
 If the United States hardens its grid but Canada does not, the unprotected Canadian transformers will fail during a G5 event, creating a blackout that cascades across the interconnected North American grid into the United States — destroying American transformers that were themselves hardened. Grid hardening is not additive; it is multiplicative. The protection is only as strong as the weakest link in the interconnected grid. Every unprotected transformer in Canada or Mexico is a threat vector to the American grid.
 
@@ -34,7 +34,7 @@ It is the policy of the United States to pursue coordinated international action
 
 **SECTION 2. FINDINGS.**
 
-(a) The United States electrical grid is interconnected with the Canadian grid at more than 35 points and with the Mexican grid at several interconnection points in California and Texas. These interconnections create a single North American electrical system in which GIC-induced failures propagate across borders.
+(a) The United States electrical grid is interconnected with the Canadian grid at more than 35 points and with the Mexican grid at several interconnection points in [location withheld] and Texas. These interconnections create a single North American electrical system in which GIC-induced failures propagate across borders.
 
 (b) The 1989 Hydro-Québec geomagnetic storm caused a complete collapse of the Hydro-Québec transmission system within 90 seconds of GIC onset, demonstrating that GMD events can cause near-instantaneous grid failure spanning entire regions. The 2003 Halloween solar storms caused transformer damage in South Africa and forced protective shutdowns across the Swedish and UK grids.
 
@@ -78,7 +78,7 @@ It is the policy of the United States to pursue coordinated international action
 
 (c) **U.S.-Mexico Specific Provisions.** The bilateral agreement with Mexico shall additionally address:
 
-    (i) Assessment and hardening of the electrical interconnections between the U.S. (California ISO and ERCOT) and Mexican (Baja California and Northeastern Mexico) grids;
+    (i) Assessment and hardening of the electrical interconnections between the U.S. ([location withheld] ISO and ERCOT) and Mexican (Baja [location withheld] and Northeastern Mexico) grids;
 
     (ii) Technical assistance and capacity-building to support Mexico's adoption of GIC protection standards for its rapidly modernizing grid infrastructure;
 

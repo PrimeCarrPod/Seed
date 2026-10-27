@@ -7,7 +7,7 @@
 ## 1. COMPANY OVERVIEW
 
 **Legal Name:** Space Exploration Technologies Corp.
-**Headquarters:** Hawthorne, California
+**Headquarters:** Hawthorne, [location withheld]
 **Ticker:** Private
 **Revenue (2025 estimated):** ~$15-18B (Starlink ~$8B, Launch ~$5B, other ~$2-5B)
 **Launch Manifest:** 130+ launches in 2025
@@ -30,7 +30,7 @@
 - **LC-39A (KSC):** Falcon Heavy / Crew Dragon pad. Apollo/Saturn V historic pad. Crew launch infrastructure (crew access arm, white room, emergency egress). 18 MW peak.
 - **Geomagnetic Risk:** 28°N latitude — moderate GIC exposure. Coastal location enhances coupling.
 
-### Vandenberg Space Force Base (California)
+### Vandenberg Space Force Base ([location withheld])
 - **SLC-4E:** Polar/orbit launch pad. NRO, Iridium, Earth observation missions. 14 MW peak.
 - **Geomagnetic Risk:** 35°N latitude — moderate-high GIC. Pacific coastal coupling.
 

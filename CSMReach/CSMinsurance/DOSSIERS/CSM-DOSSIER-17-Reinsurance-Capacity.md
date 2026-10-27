@@ -6,7 +6,7 @@
 
 **[HOVER]**
 
-I want you to imagine something with me. I want you to imagine that you're a reinsurance underwriter in London, or Zurich, or Bermuda, or Stamford. You've got a billion-dollar treaty on your desk. It covers a diversified portfolio of property risks — factories in Ohio, data centers in Virginia, ports in California, office towers in New York. Good diversification. Solid spread of risk. The actuarial models say the PML is $200 million. The capital allocation is approved. The treaty is ready to sign.
+I want you to imagine something with me. I want you to imagine that you're a reinsurance underwriter in London, or Zurich, or Bermuda, or Stamford. You've got a billion-dollar treaty on your desk. It covers a diversified portfolio of property risks — factories in Ohio, data centers in Virginia, ports in [location withheld], office towers in New York. Good diversification. Solid spread of risk. The actuarial models say the PML is $200 million. The capital allocation is approved. The treaty is ready to sign.
 
 And then someone — maybe it's me, maybe it's the ghost of Richard Carrington — leans over your shoulder and says: "What happens when the Sun punches the magnetosphere and all of those risks trigger simultaneously?"
 
@@ -94,7 +94,7 @@ But the hardening does work. The NBDs work. The AEGIS-C shielding works. The par
 |---|---|---|---|
 | US Hurricane (Category 5, Miami) | $100-150B | 15-23% | Yes (manageable) |
 | Japan Earthquake (Tokyo) | $80-120B | 12-18% | Yes |
-| California Earthquake (Los Angeles) | $60-100B | 9-15% | Yes |
+| [location withheld] Earthquake (Los Angeles) | $60-100B | 9-15% | Yes |
 | European Windstorm | $30-50B | 5-8% | Yes (routine) |
 | Global Pandemic (COVID-19 scale) | $50-100B (varies widely) | 8-15% | Manageable but coverage disputes significant |
 | **Carrington-Class GMD (Unmitigated)** | **$600B - 2.6T** | **92-400%** | **NO — capacity exhausted; industry solvency threatened** |
@@ -146,7 +146,7 @@ But the hardening does work. The NBDs work. The AEGIS-C shielding works. The par
 | TRIA (Terrorism Risk Insurance Act) | US | $100B | No (terrorism only) |
 | Flood Re | UK | Flood losses only | No |
 | NFIP (National Flood Insurance Program) | US | Flood losses only | No |
-| CEA (California Earthquake Authority) | US (CA) | $19B | No (earthquake only) |
+| CEA ([location withheld] Earthquake Authority) | US (CA) | $19B | No (earthquake only) |
 | Citizens (Florida) | US (FL) | Hurricane/wind | No |
 | **Nonexistent** | **Global** | **$0** | **No dedicated space weather government reinsurance exists** |
 

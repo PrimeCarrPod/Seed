@@ -66,7 +66,7 @@ Subaru's Lafayette, Indiana assembly plant — Subaru of Indiana Automotive, the
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

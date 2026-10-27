@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, DJI. GOOOOOOOD MORNING, DJI Enterprise. GOOOOOOOD MORNING, to the company that owns 76% of the global commercial drone market — the manufacturer whose Matrice 350 RTK, Agras T50 agricultural drone, and Mavic 3 Enterprise define what's possible in industrial inspection, precision agriculture, public safety, and infrastructure surveying across 180 countries. The AEGIS Commercial Drone Hardening Division is reaching out to present an EMP-hardening retrofit for DJI's enterprise drone fleet — MXene avionics shielding, BFRP airframe components, and FEATHER mesh communications — that enables DJI drones to perform the post-Carrington inspection, agricultural recovery, and infrastructure assessment missions that will be essential during the weeks and months following a G5 geomagnetic storm.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, DJI. GOOOOOOOD MORNING, DJI Enterprise. GOOOOOOOD MORNING, to the company that owns 76% of the global commercial drone market — the manufacturer whose Matrice 350 RTK, Agras T50 agricultural drone, and Mavic 3 Enterprise define what's possible in industrial inspection, precision agriculture, public safety, and infrastructure surveying across 180 countries. The AEGIS Commercial Drone Hardening Division is reaching out to present an EMP-hardening retrofit for DJI's enterprise drone fleet — MXene avionics shielding, BFRP airframe components, and FEATHER mesh communications — that enables DJI drones to perform the post-Carrington inspection, agricultural recovery, and infrastructure assessment missions that will be essential during the weeks and months following a G5 geomagnetic storm.
 
 **PARAGRAPH 2 — THE COMMERCIAL DRONE FLEET'S POST-CME ROLE**
 
@@ -45,11 +45,11 @@ DJI Enterprise leadership, ACS respectfully requests a 90-minute technical brief
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Commercial Drone Hardening Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

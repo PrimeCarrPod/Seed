@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, MAERSK. GOOOOOOOD MORNING, Vincent Clerc and the Copenhagen leadership. The ACS Infrastructure Protection Division presents a maritime infrastructure protection proposal of global trade significance — a $521.7 million electromagnetic protection program for Maersk's 700+ container vessels, ensuring that the world's largest shipping line never loses propulsion, navigation, or refrigerated cargo systems to a GIC or EMP event at sea.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, MAERSK. GOOOOOOOD MORNING, Vincent Clerc and the Copenhagen leadership. The ACS Infrastructure Protection Division presents a maritime infrastructure protection proposal of global trade significance — a $521.7 million electromagnetic protection program for Maersk's 700+ container vessels, ensuring that the world's largest shipping line never loses propulsion, navigation, or refrigerated cargo systems to a GIC or EMP event at sea.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Clerc, ACS respectfully requests a 60-minute briefing with your fleet techni
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

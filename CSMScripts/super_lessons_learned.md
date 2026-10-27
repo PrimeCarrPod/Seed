@@ -215,10 +215,10 @@ dname: CN={APP_NAME} Debug, OU=CarrPod
 
 ### 5.1 curl Requires -k Flag
 
-All Google CDN downloads must use `curl -k` in sandbox environments:
+All Google CDN downloads must use `curl --fail --proto '=https' --proto-redir '=https'` in sandbox environments:
 
 ```bash
-curl -k -sL "$URL" -o "$OUTPUT"
+curl --fail --proto '=https' --proto-redir '=https' -sSL "$URL" -o "$OUTPUT"
 ```
 
 ### 5.2 sdkmanager Offline Failures
@@ -295,7 +295,7 @@ Every `apksigner` run generates new RSA signature with different timestamp/nonce
 | **APK** | Verify version string integrity | `Augment26/session-log-20260812-bounce-update-menu-documentation.md` |
 | **Git** | Use `git -c http.sslVerify=false` in sandbox | `marmalade-v7-build-session-20260716.md` |
 | **Git** | Retry loops prevent contention failures | `SESSION-INITv5/README.md` |
-| **SDK** | `curl -k` mandatory for Google CDN | `CSMScripts/android-toolkit/README.md` |
+| **SDK** | `curl --fail --proto '=https' --proto-redir '=https'` mandatory for Google CDN | `CSMScripts/android-toolkit/README.md` |
 | **SDK** | build-tools 33.0.1 + platform 33 works | `android-toolkit/README.md` |
 | **SDK** | Platform 33 extracts as android-13 | `marmalade-v7-build-session-20260716.md` |
 | **Build** | Java target 11 required for d8 | `android-toolkit/README.md` |

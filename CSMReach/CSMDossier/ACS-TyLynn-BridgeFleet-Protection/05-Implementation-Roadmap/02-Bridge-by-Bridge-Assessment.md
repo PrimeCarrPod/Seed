@@ -406,4 +406,4 @@ This total represents the estimated capital investment to achieve comprehensive 
 
 ---
 
-*Cost estimates are in 2026 dollars. All programmed work references are drawn from publicly available BATA CIP documents, Caltrans Toll Bridge Program reports, and California State Auditor Report 2018-104. Actual costs will vary based on detailed design development, competitive bidding, and commodity price fluctuations.*
+*Cost estimates are in 2026 dollars. All programmed work references are drawn from publicly available BATA CIP documents, Caltrans Toll Bridge Program reports, and [location withheld] State Auditor Report 2018-104. Actual costs will vary based on detailed design development, competitive bidding, and commodity price fluctuations.*

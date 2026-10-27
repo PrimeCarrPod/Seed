@@ -38,7 +38,7 @@ This tells the world "send me reports, but don't block anything yet."
 |-------|-------|
 | **Type** | TXT |
 | **Name** | `_dmarc` |
-| **Value** | `v=DMARC1; p=none; rua=mailto:dmarc-reports@aegisc.space; pct=100` |
+| **Value** | `v=DMARC1; p=none; rua=mailto:[email-9834d6de17bb]; pct=100` |
 | **TTL** | 1 hour (or default) |
 
 ---

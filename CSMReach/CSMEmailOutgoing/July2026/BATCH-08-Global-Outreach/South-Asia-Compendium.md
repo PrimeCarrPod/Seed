@@ -113,15 +113,15 @@ South Asia's maritime trade corridor through the Arabian Sea and Bay of Bengal i
 
 ```
 TO: [COUNTRY] — Government, Utility, and Industry Contacts (per CSMGlobal distribution guide)
-FROM: Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-REPLY-TO: zirconia@aegisc.space
+FROM: [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+REPLY-TO: [email withheld]
 SUBJECT: Solar Cycle 25 is peaking — the Carrington-level hardening data [COUNTRY]'s infrastructure needs
 
 ---
 
-GOOOOOOOD MORNING, from California to [COUNTRY]! The Sun does not negotiate, and it does not discriminate between developed and developing grids. Here is the number: India's 2012 grid collapse — the largest blackout in human history at 620 million affected — happened on an ordinary day, caused by ordinary grid stress. A Carrington-class CME on the wrong day would make that look like a practice drill. And what happens in India's grid does not stay in India's grid. The interconnections running north to Nepal, east to Bangladesh, and through undersea cable to Sri Lanka mean that a transformer cascade in Uttar Pradesh reaches Chittagong and Colombo before anyone can open a circuit breaker.
+GOOOOOOOD MORNING, from [location withheld] to [COUNTRY]! The Sun does not negotiate, and it does not discriminate between developed and developing grids. Here is the number: India's 2012 grid collapse — the largest blackout in human history at 620 million affected — happened on an ordinary day, caused by ordinary grid stress. A Carrington-class CME on the wrong day would make that look like a practice drill. And what happens in India's grid does not stay in India's grid. The interconnections running north to Nepal, east to Bangladesh, and through undersea cable to Sri Lanka mean that a transformer cascade in Uttar Pradesh reaches Chittagong and Colombo before anyone can open a circuit breaker.
 
-We are Carrington Storm Motors — California-based, engineering-first, and the only company that spent the last two years building the physical hardening layer specifically for the Carrington-class threat profile. Aegis-C shielding (SE 148-165 dB at 1 kHz–10 GHz). BFRP composites that don't couple induced current. Dielectric concrete foundations. MXene electromagnetic suppression films. LoRa mesh emergency communications. A 9-part Compendium — attached — that explains the physics, the products, and the economics.
+We are Carrington Storm Motors — [location withheld]-based, engineering-first, and the only company that spent the last two years building the physical hardening layer specifically for the Carrington-class threat profile. Aegis-C shielding (SE 148-165 dB at 1 kHz–10 GHz). BFRP composites that don't couple induced current. Dielectric concrete foundations. MXene electromagnetic suppression films. LoRa mesh emergency communications. A 9-part Compendium — attached — that explains the physics, the products, and the economics.
 
 Key facts for [COUNTRY]:
 
@@ -147,10 +147,10 @@ NEXT STEP: Review the Compendium. Forward to your power ministry, national grid 
 
 The Sun rises everywhere. Hardening should too.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under V4 Fun-Williams Heuristic (CSMSOPP000001-MODULE-V4) + Baker Street Heuristic (CSMSOPP000003) | BATCH-08 Compilation | July 2026*
 ```
@@ -208,7 +208,7 @@ The Sun rises everywhere. Hardening should too.
 
 - **Heuristic Compliance**: All templates comply with CSMSOPP000001-MODULE-V4 (Fun-Williams) and CSMSOPP000003 (Baker Street).
 - **SAARC Coordination**: Consider SAARC Disaster Management Centre (SDMC) for region-wide briefings, particularly for cross-border grid interconnection concerns.
-- **Language Versions**: Hindi, Urdu, Bengali, Nepali, Sinhala, Tamil, Dari, Pashto, and Dhivehi translations available as separate bundles via zirconia@aegisc.space.
+- **Language Versions**: Hindi, Urdu, Bengali, Nepali, Sinhala, Tamil, Dari, Pashto, and Dhivehi translations available as separate bundles via [email withheld].
 - **India-Specific**: India represents the highest-priority engagement. CSM External Affairs recommends a dedicated briefing team, Hindi-language Compendium, and direct technical liaison with IIG Mumbai for GMD modeling collaboration.
 - **Briefing Pipeline**: ≤72-hour response for all country-level briefing requests.
 

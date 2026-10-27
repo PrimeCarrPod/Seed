@@ -23,14 +23,16 @@ cat > "src/main/AndroidManifest.xml" << XML
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="$PACKAGE">
 
+    <!-- Internet access is opt-in. Uncomment only if this app needs network access.
     <uses-permission android:name="android.permission.INTERNET" />
+    -->
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Material.NoActionBar"
-        android:usesCleartextTraffic="true"
+        android:usesCleartextTraffic="false"
         android:hardwareAccelerated="true">
 
         <activity

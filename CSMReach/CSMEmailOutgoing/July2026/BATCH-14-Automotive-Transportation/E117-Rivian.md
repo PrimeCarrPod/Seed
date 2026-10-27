@@ -66,7 +66,7 @@ Rivian's engineering philosophy — a clean-sheet, vertically integrated vehicle
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

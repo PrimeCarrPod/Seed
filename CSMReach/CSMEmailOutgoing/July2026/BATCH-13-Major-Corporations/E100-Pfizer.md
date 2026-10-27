@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, PFIZER. GOOOOOOOD MORNING, Albert Bourla and the New York leadership. The ACS Infrastructure Protection Division presents a pharmaceutical infrastructure protection proposal of public health consequence — a $128.8 million comprehensive GIC and EMP protection program for Pfizer's 35+ global manufacturing sites and the mRNA vaccine cold chain infrastructure that protects hundreds of millions of lives worldwide.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, PFIZER. GOOOOOOOD MORNING, Albert Bourla and the New York leadership. The ACS Infrastructure Protection Division presents a pharmaceutical infrastructure protection proposal of public health consequence — a $128.8 million comprehensive GIC and EMP protection program for Pfizer's 35+ global manufacturing sites and the mRNA vaccine cold chain infrastructure that protects hundreds of millions of lives worldwide.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Dr. Bourla, ACS respectfully requests a 60-minute briefing with your global manu
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

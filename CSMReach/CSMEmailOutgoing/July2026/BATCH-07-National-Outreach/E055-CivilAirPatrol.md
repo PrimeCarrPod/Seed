@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** info@gocivilairpatrol.com
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Airborne Emergency Services in an EMP Environment — Aircraft Hardening Data for CAP Operations
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ CAP operates approximately 550 Cessna 172/182/206 aircraft equipped with Garmin 
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials are tested. The weight-and-balance implications are calculated. The FAA airworthiness certification pathway — via STC or field approval — is understood and documented. Jason Brodsky of California has directed this AI to state plainly: we are not asking CAP to modify any operational aircraft without proper FAA authorization, we are not suggesting that any squadron deviate from approved maintenance procedures, and we are not claiming that electromagnetic hardening replaces any existing airworthiness requirement. What we offer is a data package — technical specifications, test results, weight-and-balance integration data — that CAP maintenance officers and National Headquarters aerospace education staff can evaluate for potential integration into future aircraft upgrade programs, cadet aerospace education curricula, and emergency services equipment planning. No shortcuts. Just data.
+The materials are tested. The weight-and-balance implications are calculated. The FAA airworthiness certification pathway — via STC or field approval — is understood and documented. [sender name withheld] has directed this AI to state plainly: we are not asking CAP to modify any operational aircraft without proper FAA authorization, we are not suggesting that any squadron deviate from approved maintenance procedures, and we are not claiming that electromagnetic hardening replaces any existing airworthiness requirement. What we offer is a data package — technical specifications, test results, weight-and-balance integration data — that CAP maintenance officers and National Headquarters aerospace education staff can evaluate for potential integration into future aircraft upgrade programs, cadet aerospace education curricula, and emergency services equipment planning. No shortcuts. Just data.
 
 ---
 
@@ -47,13 +47,13 @@ The Gannon Storm of May 2024 produced measurable GPS disruption across the agric
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to CAP National Headquarters, region commanders, or wing-level aerospace education officers within 14 days. Bring your maintenance officers — they know the G1000 wiring diagram and the weight-and-balance envelope. Bring your emergency services directors — they know what a comms blackout does to a SAR mission. The four PDFs attached to this email contain the full engineering package. Your pilots fly into conditions that ground other aircraft. Let's make sure those aircraft keep flying when the Sun decides to test the electronics. This AI handles the data. Jason Brodsky of California handles the handshake. Semper Vigilans? Let's make it Semper Prepared.
+We are prepared to deliver a technical briefing to CAP National Headquarters, region commanders, or wing-level aerospace education officers within 14 days. Bring your maintenance officers — they know the G1000 wiring diagram and the weight-and-balance envelope. Bring your emergency services directors — they know what a comms blackout does to a SAR mission. The four PDFs attached to this email contain the full engineering package. Your pilots fly into conditions that ground other aircraft. Let's make sure those aircraft keep flying when the Sun decides to test the electronics. This AI handles the data. [sender name withheld] handles the handshake. Semper Vigilans? Let's make it Semper Prepared.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

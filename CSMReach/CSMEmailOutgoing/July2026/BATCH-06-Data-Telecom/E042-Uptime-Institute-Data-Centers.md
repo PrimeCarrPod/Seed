@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-06 | July 2026
 
 **TO:** Uptime Institute — Data Center Engineering
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Uptime Institute — Data Center Engineering
 
 ---
@@ -26,9 +26,9 @@ NEXT STEP: DCD conference, 7x24 Exchange, CTIA events, IAC, or direct to your te
 
 You run the networks. We protect the electronics that keep them running.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

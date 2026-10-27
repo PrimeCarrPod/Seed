@@ -1,7 +1,7 @@
 # Session Log — Pion/Kaon V4.0 Series Completion (Phase 2)
 **Session ID:** agent_0315fdf8-a0f3-4bcc-ac94-e311c1d16ab9
 **Date:** 2026-08-16
-**Creative Director:** Jason Brodsky
+**Creative Director:** [sender name withheld]
 **Branch:** session/agent_0315fdf8-a0f3-4bcc-ac94-e311c1d16ab9
 
 ---

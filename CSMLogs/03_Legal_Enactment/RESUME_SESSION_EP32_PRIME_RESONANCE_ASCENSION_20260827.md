@@ -1,5 +1,5 @@
 # RESUME SESSION: EP-32 Prime Resonance Ascension — 7x Scaled from Omega
-## Jason Isaac Brodsky of California 1976 Author Conducier
+## [sender name withheld] of California 1976 Author Conducier
 ## Date: 2026-08-27
 ## Session: agent_e4b00d24-1fc8-44b7-bd63-2cc46d7f2706
 

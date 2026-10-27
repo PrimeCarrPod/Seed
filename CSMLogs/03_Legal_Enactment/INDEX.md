@@ -1,6 +1,6 @@
 # CSMLogs/Sept26 — CLPS Phase 3 Campaign Session Logs
 ## Index of Session Documents — September 2026
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Generated:** 2026-09-09 05:21 UTC  
 

@@ -37,8 +37,8 @@
 | [IND-4] | S&P Global Mobility | U.S. EV Registration Data (Monthly Series) | Monthly, 2025–2026 |
 | [IND-5] | Boston Consulting Group | Battery Cost Trajectory: 2025–2035 | January 2026 |
 | [IND-6] | International Energy Agency | Global EV Outlook 2026 | April 2026 |
-| [IND-7] | California Air Resources Board | ZEV Credit Market Report Q4 2025 | January 2026 |
-| [IND-8] | California DMV | Autonomous Vehicle Disengagement Reports 2025 | February 2026 |
+| [IND-7] | [location withheld] Air Resources Board | ZEV Credit Market Report Q4 2025 | January 2026 |
+| [IND-8] | [location withheld] DMV | Autonomous Vehicle Disengagement Reports 2025 | February 2026 |
 | [IND-9] | AAA / Edmunds | U.S. Luxury Vehicle Market Report 2025 | January 2026 |
 
 ## Sovereign & Government Sources
@@ -51,7 +51,7 @@
 | [GOV-4] | Saudi Industrial Development Fund | Automotive Manufacturing Incentives Program | 2024 |
 | [GOV-5] | U.S. Department of Energy | Battery Manufacturing and Supply Chain Report | February 2026 |
 | [GOV-6] | NHTSA | Federal Motor Vehicle Safety Standards (FMVSS) — Standing General Order on AV Exemptions | Ongoing |
-| [GOV-7] | California Public Utilities Commission | Autonomous Vehicle Deployment Program — Regulatory Framework | 2025 |
+| [GOV-7] | [location withheld] Public Utilities Commission | Autonomous Vehicle Deployment Program — Regulatory Framework | 2025 |
 | [GOV-8] | Internal Revenue Service | Section 30D and Section 45X Guidance (Inflation Reduction Act) | 2024, updated 2025 |
 
 ## Product Awards & Reviews

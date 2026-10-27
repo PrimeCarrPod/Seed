@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-01 | July 2026
 
 **TO:** Broker Risk Engineering & Client Advisory Practice Leaders — Global Brokerages
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** The one slide your client risk-engineering deck is currently missing — and the data to build it
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: RIMS Annual Conference or direct client-advisory-team briefing. Happy
 
 You tell them the number. We tell them how to make the number smaller.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

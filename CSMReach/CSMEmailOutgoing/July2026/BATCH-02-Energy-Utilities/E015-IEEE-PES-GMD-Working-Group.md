@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-02 | July 2026
 
 **TO:** IEEE PES — GMD Working Group / Transmission & Distribution Committee
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** IEEE standard contribution — physical-layer GMD hardening specifications for peer review
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: IEEE PES General Meeting paper submission or direct to the GMD Workin
 
 You write the standards. We'd like to contribute the materials data that should be in them.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

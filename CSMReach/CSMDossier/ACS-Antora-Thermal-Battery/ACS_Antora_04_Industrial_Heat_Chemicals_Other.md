@@ -142,4 +142,4 @@ The economic viability of Antora's thermal battery varies significantly by secto
 
 **Key insight**: Antora is immediately competitive in jurisdictions with high fossil fuel costs (Europe) or significant carbon pricing. In the US, adoption depends on policy incentives (IRA tax credits, DOE grants) and corporate decarbonization commitments.
 
-This geographic cost disparity explains Antora's initial deployment focus on California, where electricity prices have a high spread between midday (cheap solar) and evening (expensive), and where strong climate policies create compliance-driven demand for industrial decarbonization solutions.
+This geographic cost disparity explains Antora's initial deployment focus on [location withheld], where electricity prices have a high spread between midday (cheap solar) and evening (expensive), and where strong climate policies create compliance-driven demand for industrial decarbonization solutions.

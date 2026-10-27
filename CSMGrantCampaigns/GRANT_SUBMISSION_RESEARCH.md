@@ -2,7 +2,7 @@
 ## Ultra-Research for 8 Grant Proposals (Arithmetic Physics Campaign)
 
 **Prepared:** 2026-09-03  
-**For:** Jason Isaac Brodsky (jasonbrodsky@hotmail.com)  
+**For:** Jason Isaac Brodsky ([email withheld])  
 **Framework:** Arithmetic Physics — Deriving Physical Law from Prime Numbers
 
 ---

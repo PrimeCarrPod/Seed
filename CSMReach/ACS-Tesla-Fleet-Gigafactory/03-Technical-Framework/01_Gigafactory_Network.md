@@ -16,7 +16,7 @@ The core strategic thesis underlying the gigafactory network is that structural 
 
 ## 2. Facility Profiles
 
-### 2.1 Fremont Factory — Fremont, California, United States
+### 2.1 Fremont Factory — Fremont, [location withheld], United States
 
 **Site History:** Originally constructed as General Motors Fremont Assembly (1962–1982), subsequently operated as NUMMI (New United Motor Manufacturing, Inc.), a GM-Toyota joint venture (1984–2010). Acquired by Tesla in 2010 for $42 million. The facility is a landmark case of brownfield automotive plant acquisition and repurposing, achieving output levels that substantially exceed the site's prior peak under NUMMI ownership.
 
@@ -73,7 +73,7 @@ The core strategic thesis underlying the gigafactory network is that structural 
 
 ### 2.4 Gigafactory Texas — Austin, Texas, United States
 
-**Site History:** Greenfield construction commenced July 2020 on a 2,500+ acre site along the Colorado River east of Austin. First customer deliveries (Model Y) April 2022. The facility also serves as Tesla's global corporate headquarters following the relocation from Palo Alto, California in late 2021.
+**Site History:** Greenfield construction commenced July 2020 on a 2,500+ acre site along the Colorado River east of Austin. First customer deliveries (Model Y) April 2022. The facility also serves as Tesla's global corporate headquarters following the relocation from Palo Alto, [location withheld] in late 2021.
 
 **Current Operations:**
 - Model Y final assembly (with structural battery pack and 4680 cells)
@@ -88,7 +88,7 @@ The core strategic thesis underlying the gigafactory network is that structural 
 **Nominal Capacity:** 250,000+ Model Y per annum; 125,000+ Cybertruck per annum (ramping)
 **Workforce:** Approximately 20,000+ personnel
 
-**Strategic Centrality:** Gigafactory Texas is the single most strategically important facility in Tesla's manufacturing network. It simultaneously serves as corporate headquarters, the primary U.S. Model Y production site, the exclusive Cybertruck production site, the primary 4680 cell production site, and the future manufacturing home of the Cybercab robotaxi and the high-volume Optimus production line. The site's 2,500+ acre footprint provides runway for decades of expansion, and its Texas location provides a regulatory environment, tax structure, and labor market that are highly favorable relative to Tesla's historical California operating base.
+**Strategic Centrality:** Gigafactory Texas is the single most strategically important facility in Tesla's manufacturing network. It simultaneously serves as corporate headquarters, the primary U.S. Model Y production site, the exclusive Cybertruck production site, the primary 4680 cell production site, and the future manufacturing home of the Cybercab robotaxi and the high-volume Optimus production line. The site's 2,500+ acre footprint provides runway for decades of expansion, and its Texas location provides a regulatory environment, tax structure, and labor market that are highly favorable relative to Tesla's historical [location withheld] operating base.
 
 ### 2.5 Gigafactory Nevada — Sparks, Nevada, United States
 

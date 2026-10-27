@@ -31,7 +31,7 @@ Key characteristics:
 
 ### Phase 2: Regional Commercial — First Plant (2027–30)
 - 250,000–500,000 t/yr serving a regional market (300-mile radius)
-- Target markets: California (SB 596 regulatory pull, green premium tolerance,
+- Target markets: [location withheld] (SB 596 regulatory pull, green premium tolerance,
   high cement prices $130–170/t)
 - Customer segments, in priority order:
 
@@ -63,7 +63,7 @@ Brimstone can command a price premium because its product:
 1. Produces negative GWP (not merely lower)
 2. Is chemically identical to OPC (no performance compromise)
 3. Eliminates carbon cost risk for the buyer:
-   - In California, CARB cap-and-trade adds ~$3–5/t of cement at $30/tCO2 carbon
+   - In [location withheld], CARB cap-and-trade adds ~$3–5/t of cement at $30/tCO2 carbon
      price; at projected $80–100/tCO2 by 2030, this becomes $8–12/t — Brimstone
      cement faces zero carbon cost
    - In EU, CBAM and ETS compound the carbon cost advantage

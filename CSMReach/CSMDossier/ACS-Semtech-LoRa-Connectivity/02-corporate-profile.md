@@ -6,7 +6,7 @@ Semtech Corporation is a leading global supplier of high-performance analog and 
 
 ## Headquarters and Operations
 
-Semtech is headquartered in Camarillo, California, with design centers, sales offices, and manufacturing partnerships spanning North America, Europe, and Asia. The company operates a fabless semiconductor model, contracting wafer fabrication to leading third-party foundries while retaining proprietary design, testing, and qualification capabilities.
+Semtech is headquartered in Camarillo, [location withheld], with design centers, sales offices, and manufacturing partnerships spanning North America, Europe, and Asia. The company operates a fabless semiconductor model, contracting wafer fabrication to leading third-party foundries while retaining proprietary design, testing, and qualification capabilities.
 
 ## Leadership
 

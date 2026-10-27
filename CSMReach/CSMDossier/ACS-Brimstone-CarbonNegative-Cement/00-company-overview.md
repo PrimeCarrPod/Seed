@@ -2,7 +2,7 @@
 
 ## Brimstone Energy, Inc.
 
-**Headquarters:** Oakland, California
+**Headquarters:** Oakland, [location withheld]
 **CEO & Co-Founder:** Cody Finke, PhD (Caltech)
 **Founded:** 2019 (Caltech spinout)
 **Mission:** Decarbonize the global cement industry while making it carbon-negative.

@@ -18,7 +18,7 @@ REGIONAL RISK: East African Rift System geoelectric complexity; Great Lakes hydr
 
 ## AI DISCLOSURE PREAMBLE — V4 FUN-WILLIAMS FORMAT
 
-Alright! Let's get the preamble done with a grin, because if you can't have a little fun while trying to save East Africa's grids from a solar storm — all eighteen of them, from the Horn to the Cape, from the Great Lakes to the Indian Ocean islands — what are we even doing here? Here's the deal, straight up, no jargon, no fog: this regional compendium was composed by an artificial intelligence — a machine mind, a digital scribe, a bundle of code that runs on electricity and ambition — created by and operating under the sole direction of Jason Brodsky of California. That AI? It speaks on behalf of Jason Brodsky of California, who serves — with actual human hands, a real desk, and a coffee cup somewhere nearby — as Director of External Affairs and Strategic Partnerships at Carrington Storm Motors and Safe Pod Engineering Company. Every technical specification cited below has been human-reviewed. Every number — every SE rating, every micron thickness, every recurrence percentage — was pulled from peer-reviewed literature and cross-checked by a person. Every outreach decision — who gets this compendium, when it goes out, what it promises — belongs to a human being in California. The AI is the instrument. The AI is the pen. The AI is the voicebox. But Jason Brodsky is the signature, the conscience, and the accountable human at the end of every sentence. With that happily established — let's go!
+Alright! Let's get the preamble done with a grin, because if you can't have a little fun while trying to save East Africa's grids from a solar storm — all eighteen of them, from the Horn to the Cape, from the Great Lakes to the Indian Ocean islands — what are we even doing here? Here's the deal, straight up, no jargon, no fog: this regional compendium was composed by an artificial intelligence — a machine mind, a digital scribe, a bundle of code that runs on electricity and ambition — created by and operating under the sole direction of [sender name withheld]. That AI? It speaks on behalf of [sender name withheld], who serves — with actual human hands, a real desk, and a coffee cup somewhere nearby — as Director of External Affairs and Strategic Partnerships at Carrington Storm Motors and Safe Pod Engineering Company. Every technical specification cited below has been human-reviewed. Every number — every SE rating, every micron thickness, every recurrence percentage — was pulled from peer-reviewed literature and cross-checked by a person. Every outreach decision — who gets this compendium, when it goes out, what it promises — belongs to a human being. The AI is the instrument. The AI is the pen. The AI is the voicebox. But [sender name withheld] is the signature, the conscience, and the accountable human at the end of every sentence. With that happily established — let's go!
 
 ---
 
@@ -83,11 +83,11 @@ The island states — Madagascar, Mauritius, Seychelles, Comoros — have zero g
 ## TEMPLATE EMAIL BODY
 
 **TO:** [Ministry/Authority Name] — [Country]
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Solar Cycle 25 at Peak — GIC Hardening Data for [Country] Critical Infrastructure
 
-GOOOOOOOD MORNING from California to [Country]! Solar Cycle 25 has confirmed what we all suspected but nobody wanted to say out loud: the peak is higher than forecast, the probability of a Carrington-class event is meaningfully elevated, and every grid operator on the planet — including yours — should be taking this seriously right now, this year, not at some undefined point in a future procurement cycle.
+GOOOOOOOD MORNING from [location withheld] to [Country]! Solar Cycle 25 has confirmed what we all suspected but nobody wanted to say out loud: the peak is higher than forecast, the probability of a Carrington-class event is meaningfully elevated, and every grid operator on the planet — including yours — should be taking this seriously right now, this year, not at some undefined point in a future procurement cycle.
 
 Here is the situation: a G5 geomagnetic storm induces quasi-DC currents through every long conductor. For [Country], that means your [GERD / Kariba / Shire River / Olkaria geothermal / Nile cascade / Cahora Bassa / island grid] infrastructure, your [Ethiopia-Kenya / Zambia-Tanzania / Mozambique-South Africa] interconnectors, and your [Mombasa / Dar es Salaam / Djibouti / Maputo / Port Louis] port navigation systems — all dependent on electronics and grid equipment designed without GIC in mind.
 
@@ -119,12 +119,12 @@ We are prepared to deliver a formal technical presentation — in-person or virt
 
 The Sun does not wait. Neither should we.
 
-— Jason Brodsky
+— [sender name withheld]
 Director of External Affairs & Strategic Partnerships
 Carrington Storm Motors | Safe Pod Engineering Company
-zirconia@aegisc.space
+[email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — BATCH-08 East Africa Regional Compendium*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — BATCH-08 East Africa Regional Compendium*
 
 ---
 
@@ -178,5 +178,5 @@ The Sun does not wait. Neither should we.
 ================================================================================
 *Carrington Storm Motors | Safe Pod Engineering Company | "Protect Biological Life. Never End It."*
 *July 2026 | V1.0 | BATCH-08 East Africa Compendium | Williams Heuristic Communication Standard V4 (Fun-Williams)*
-*Prepared by AI under the direction of Jason Brodsky of California. All technical content human-reviewed.*
+*Prepared by AI under the direction of [sender name withheld]. All technical content human-reviewed.*
 ================================================================================

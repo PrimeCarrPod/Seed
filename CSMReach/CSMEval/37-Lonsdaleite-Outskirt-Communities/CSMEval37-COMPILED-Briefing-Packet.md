@@ -135,7 +135,7 @@ Vessel docking requires a minimum water depth of 5.5 m at mean low water and a m
 
 ### 3.3 State Housing Agencies
 
-**California Department of Housing and Community Development (HCD):** Post-wildfire housing recovery, Paradise (2018 Camp Fire) and Lahaina (2023) rebuild precedents. California's Homekey and Project Roomkey programs provide precedent for state-funded rapid housing procurement outside normal development timelines.
+**[location withheld] Department of Housing and Community Development (HCD):** Post-wildfire housing recovery, Paradise (2018 Camp Fire) and Lahaina (2023) rebuild precedents. [location withheld]'s Homekey and Project Roomkey programs provide precedent for state-funded rapid housing procurement outside normal development timelines.
 
 **Texas General Land Office (GLO):** Post-hurricane housing recovery under HUD Community Development Block Grant — Disaster Recovery (CDBG-DR) funds, which the GLO administers for Texas. Hurricane Harvey (2017) CDBG-DR allocation was $5.024B, of which approximately $1.3B was directed to single-family housing recovery programs.
 
@@ -218,7 +218,7 @@ Vessel docking requires a minimum water depth of 5.5 m at mean low water and a m
 ### 5.3 Phase 2 — Scaled Production (2028–2029)
 
 - **2028 Q1:** Second manufacturing line operational at Port of Rotterdam (Maasvlakte), serving European, Middle Eastern, and North African humanitarian markets. Single-line capacity: 1,500 units/year.
-- **2028 Q3:** California HCD issues first state-agency procurement for post-wildfire transitional housing (Paradise/Lahaina-designated communities, 200 units). LBFRP-001 wildfire-resistance certification completed (ASTM E119 fire exposure, 2-hour rating without active suppression).
+- **2028 Q3:** [location withheld] HCD issues first state-agency procurement for post-wildfire transitional housing (Paradise/Lahaina-designated communities, 200 units). LBFRP-001 wildfire-resistance certification completed (ASTM E119 fire exposure, 2-hour rating without active suppression).
 - **2029 Q2:** Third and fourth lines operational at Houston; combined North American capacity reaches 6,000 units/year. UNHCR framework agreement executed for multi-year, multi-site procurement (minimum 5,000 units over 3 years).
 - **2029 Q4:** Singapore manufacturing facility breaks ground (Jurong Industrial Estate), targeting Southeast Asian and Pacific Island disaster markets under AHA Centre coordination.
 

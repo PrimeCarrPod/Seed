@@ -1,7 +1,7 @@
 # RESUME SESSION — CLPS Phase 2 Cascade: Parts 8→9→10→11 Continuation
 ## Session: CSM_CLPS_Phase2_Cascade_20260826
 **Date:** August 26, 2026  
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Branch:** session/agent_fa15791e-4c04-4d0e-aa62-b8bb886d9988 → main  
 
@@ -170,4 +170,4 @@ The Moon doesn't forgive shortcuts. We don't take them.
 *Session Document: RESUME_SESSION_CSM_CLPS_PHASE2_CASCADE_20260826.md*
 *Committed to: session/agent_fa15791e-4c04-4d0e-aa62-b8bb886d9988*
 *Pushed to: main*
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

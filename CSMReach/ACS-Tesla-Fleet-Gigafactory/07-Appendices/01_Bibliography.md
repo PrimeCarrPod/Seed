@@ -62,7 +62,7 @@
 31. U.S. Department of Energy, Alternative Fuels Data Center. Electric Vehicle Charging Station Locations. Accessed June 2026.
 32. U.S. Environmental Protection Agency. Automotive Trends Report 2025. Published 2026.
 33. National Highway Traffic Safety Administration (NHTSA). Standing General Order 2021-01: Incident Reporting for Automated Driving Systems and Level 2 Advanced Driver Assistance Systems. Ongoing.
-34. California Air Resources Board (CARB). Advanced Clean Cars II Regulations. Final Rule.
+34. [location withheld] Air Resources Board (CARB). Advanced Clean Cars II Regulations. Final Rule.
 35. European Commission. Alternative Fuels Infrastructure Regulation (AFIR). Regulation (EU) 2023/1804.
 36. European Automobile Manufacturers' Association (ACEA). New Passenger Car Registrations by Fuel Type. Monthly statistical releases.
 37. China Association of Automobile Manufacturers (CAAM). Monthly Vehicle Production and Sales Data.

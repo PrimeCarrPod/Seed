@@ -1,7 +1,7 @@
 # Session Log — SubParticlesV3/V4 Creation & HTML Integration
 **Session ID:** agent_local_20260813-202423 + follow-on sessions  
 **Date:** 2026-08-13 through 2026-08-17  
-**Creative Director:** Jason Brodsky  
+**Creative Director:** [sender name withheld]  
 **Branch:** session/agent_local_20260813-202423 → subsequent sessions  
 
 ---

@@ -92,7 +92,7 @@
 - Targets very large-scale projects (200–500 MW per site) with 8–24+ hour duration
 - Requires specific geology (competent hard rock at 200–400 m depth), limiting addressable market
 - Capital-intensive ($1–2 billion per project), requiring project finance at a scale not yet achieved
-- Hydrostor has advanced projects in California (Willow Rock, 500 MW/4,000 MWh) and Australia (Silver City, 200 MW/1,600 MWh)
+- Hydrostor has advanced projects in [location withheld] (Willow Rock, 500 MW/4,000 MWh) and Australia (Silver City, 200 MW/1,600 MWh)
 
 ## Competitive Moat Assessment for ESS
 

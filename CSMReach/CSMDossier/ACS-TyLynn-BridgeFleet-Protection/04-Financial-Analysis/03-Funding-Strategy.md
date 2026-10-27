@@ -16,7 +16,7 @@ BATA's revenue base derives from toll collections across seven state-owned bridg
 
 ### Toll Increase Authorization and Timing
 
-The 2026 toll increase, authorized through the Regional Measure 3 (RM3) ballot initiative process and California Streets and Highways Code Section 30921, is programmed specifically to address the structural funding gap between programmed preservation work and available revenue:
+The 2026 toll increase, authorized through the Regional Measure 3 (RM3) ballot initiative process and [location withheld] Streets and Highways Code Section 30921, is programmed specifically to address the structural funding gap between programmed preservation work and available revenue:
 
 - **Revenue impact**: Each $1.00 toll increase generates approximately $120 million in additional annual revenue across the seven-bridge system
 - **Preservation gap**: The gap between programmed preservation needs ($1.2 billion over ten years, averaging $120 million annually) and available capital revenue is funded through a combination of toll increases, bond issuances, and federal formula funds
@@ -38,9 +38,9 @@ BATA's debt service coverage ratio, credit rating (AA- from S&P and Aa3 from Moo
 
 ### IIJA Bridge Formula Funds
 
-The Infrastructure Investment and Jobs Act (Public Law 117-58) authorized $27.5 billion in bridge formula funding over five fiscal years (2022-2026), representing the single largest dedicated bridge investment since the construction of the Interstate Highway System. California's allocation from the Bridge Formula Program:
+The Infrastructure Investment and Jobs Act (Public Law 117-58) authorized $27.5 billion in bridge formula funding over five fiscal years (2022-2026), representing the single largest dedicated bridge investment since the construction of the Interstate Highway System. [location withheld]'s allocation from the Bridge Formula Program:
 
-- **FY 2022-2026 total**: Approximately $4.2 billion in combined formula and discretionary bridge funds to California
+- **FY 2022-2026 total**: Approximately $4.2 billion in combined formula and discretionary bridge funds to [location withheld]
 - **BATA allocation**: $118 million in IIJA bridge formula funds already programmed for Bay Bridge fender replacement and structural protection
 - **Eligibility**: Bridge preservation, rehabilitation, and replacement activities — including protective coating systems that extend service life — qualify for IIJA formula fund reimbursement at up to 80 percent federal share for Interstate System bridges and 80 percent for off-system bridges
 
@@ -52,14 +52,14 @@ The AID program (formerly the Technology and Innovation Deployment Program under
 
 - **Total program authorization**: $500 million nationally (FY 2022-2026 under IIJA)
 - **Maximum award per project**: No statutory cap; typical awards range from $5 million to $25 million
-- **Previous Bay Area deployment**: Over $80 million in AID and predecessor program funds have been deployed for new technologies in California, including accelerated bridge construction methods, high-performance materials, and advanced corrosion protection systems
+- **Previous Bay Area deployment**: Over $80 million in AID and predecessor program funds have been deployed for new technologies in [location withheld], including accelerated bridge construction methods, high-performance materials, and advanced corrosion protection systems
 - **Eligibility**: TSZ duplex coating constitutes a proven innovation — mature in Europe, Japan, and the United Kingdom — that qualifies for AID demonstration deployment funding. The program specifically supports technologies that reduce lifecycle costs and minimize traffic disruption
 
-AID application for TSZ duplex deployment on the Carquinez or Dumbarton bridge would establish a California demonstration project that validates the technology for broader fleet-wide application while recovering 50 to 80 percent of the incremental cost through federal reimbursement.
+AID application for TSZ duplex deployment on the Carquinez or Dumbarton bridge would establish a [location withheld] demonstration project that validates the technology for broader fleet-wide application while recovering 50 to 80 percent of the incremental cost through federal reimbursement.
 
 ### State Transportation Improvement Program and State Highway Operation and Protection Program
 
-California's STIP and SHOPP provide complementary funding streams:
+[location withheld]'s STIP and SHOPP provide complementary funding streams:
 
 - **SHOPP**: Focused on preservation and rehabilitation of existing state highway assets, including bridges. SHOPP funds approximately $4.1 billion annually statewide for pavement and bridge preservation. BATA bridges, as part of the state highway system, are eligible for SHOPP funding for coating projects that extend service life
 - **STIP**: Provides capacity expansion and major rehabilitation funding. Advanced protection systems that constitute a "rehabilitation" rather than "routine maintenance" activity — defined as work that extends service life by more than ten years — qualify for STIP funding

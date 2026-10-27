@@ -34,7 +34,7 @@
 ### 3.1 Global Footprint (as of Q1 2026)
 
 **31 Geographic Regions:**
-- **Americas:** us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-1 (N. California), us-west-2 (Oregon), ca-central-1 (Montreal), sa-east-1 (São Paulo), us-gov-east-1, us-gov-west-1
+- **Americas:** us-east-1 (N. Virginia), us-east-2 (Ohio), us-west-1 (N. [location withheld]), us-west-2 (Oregon), ca-central-1 (Montreal), sa-east-1 (São Paulo), us-gov-east-1, us-gov-west-1
 - **Europe:** eu-west-1 (Ireland), eu-west-2 (London), eu-west-3 (Paris), eu-central-1 (Frankfurt), eu-central-2 (Zurich), eu-north-1 (Stockholm), eu-south-1 (Milan), eu-south-2 (Madrid), il-central-1 (Tel Aviv), me-central-1 (UAE), me-south-1 (Bahrain)
 - **Asia-Pacific:** ap-east-1 (Hong Kong), ap-south-1 (Mumbai), ap-south-2 (Hyderabad), ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney), ap-southeast-3 (Jakarta), ap-southeast-4 (Melbourne)
 

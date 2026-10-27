@@ -10,7 +10,7 @@ REPO: ZirconiaAegisC/CarrPod
 SESSION SUMMARY
 ==============
 
-Human principal Jason Brodsky requested a detailed 8K movie poster image generation
+Human principal [sender name withheld] requested a detailed 8K movie poster image generation
 prompt for a fictitious film titled "CHAIWALA" — a play on Slumdog Millionaire —
 depicting the arc from tea-server/desktop-support/Uber-driver to humanity-saving
 inventor and Director of Carrington Storm Motors / Safe Pod Engineering Company.
@@ -35,7 +35,7 @@ narrative themes. The resulting prompt file incorporates:
 - Williams Heuristic Module V2 reference
 - Carrington Event 1859 historical reference
 - Brodsky-Orchestration author credit
-- Zirconia@AegisC.Space / JasonBrodsky@Hotmail.com
+- [email withheld] / [email withheld]
 - GitHub: https://github.com/PrimeCarrPod/SEED
 - Zero negative space, interwoven solar/water/aurora border frame
 - Defiant optimism / Data Sacred philosophy

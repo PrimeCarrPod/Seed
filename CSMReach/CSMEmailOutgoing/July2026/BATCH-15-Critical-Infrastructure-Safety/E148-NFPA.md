@@ -7,7 +7,7 @@
 
 **1. AI Disclosure**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. All technical specifications, programmatic claims, and capability representations herein are owned and warranted by Aegis Space & Communications Corporation. Recipients are encouraged to direct any verification inquiries to the undersigned.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. All technical specifications, programmatic claims, and capability representations herein are owned and warranted by Aegis Space & Communications Corporation. Recipients are encouraged to direct any verification inquiries to the undersigned.
 
 ---
 
@@ -67,7 +67,7 @@ The NFPA 99 Health Care Facilities Code is not merely a consensus standard; it i
 
 Respectfully submitted to the NFPA 99 Technical Committee,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

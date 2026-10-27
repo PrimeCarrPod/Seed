@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, PLANT PREFAB. GOOOOOOOD MORNING, to the company that proved sustainable, architect-designed prefab housing can be beautiful, durable, and delivered to site with minimal environmental disruption. The AEGIS Community Architecture Division is reaching out to present Lonsdaleite Outskirt Communities — a 15-structure-type, hexagonal-grid, fully off-grid community architecture system designed specifically for prefab manufacturing partners like Plant Prefab who understand that a house is not just a product; it's a node in a community system.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, PLANT PREFAB. GOOOOOOOD MORNING, to the company that proved sustainable, architect-designed prefab housing can be beautiful, durable, and delivered to site with minimal environmental disruption. The AEGIS Community Architecture Division is reaching out to present Lonsdaleite Outskirt Communities — a 15-structure-type, hexagonal-grid, fully off-grid community architecture system designed specifically for prefab manufacturing partners like Plant Prefab who understand that a house is not just a product; it's a node in a community system.
 
 **PARAGRAPH 2 — THE COMMUNITY-ARCHITECTURE GAP**
 
@@ -23,7 +23,7 @@ SHIELD does not panic. SHIELD does not claim that everyone should live in a hexa
 
 **PARAGRAPH 5 — THE PROPOSAL**
 
-ACS proposes a Plant Prefab-AEGIS manufacturing and distribution partnership: Phase Alpha — Plant Prefab licensing of Lonsdaleite structure manufacturing, with ACS providing the BFRP panel extrusion tooling, cam-lock connector dies, and assembly jigs for Plant Prefab's Rialto, California, factory, 120-day tooling and first-article qualification, $3.7M. Phase Bravo — pilot Lonsdaleite Outskirt Community of 20 dwellings in Southern California or Nevada, serving as a demonstration community for prospective buyers, partner developers, and municipal planning departments, $6.2M. Phase Charlie — Plant Prefab as the exclusive North American manufacturer of Lonsdaleite residential structures (Tiers 1–4), with ACS retaining direct sales of Tier 5 community infrastructure and Bio-Path road systems, projected annual revenue of $85M at 500 dwelling units/year by Year 3.
+ACS proposes a Plant Prefab-AEGIS manufacturing and distribution partnership: Phase Alpha — Plant Prefab licensing of Lonsdaleite structure manufacturing, with ACS providing the BFRP panel extrusion tooling, cam-lock connector dies, and assembly jigs for Plant Prefab's Rialto, [location withheld], factory, 120-day tooling and first-article qualification, $3.7M. Phase Bravo — pilot Lonsdaleite Outskirt Community of 20 dwellings in Southern [location withheld] or Nevada, serving as a demonstration community for prospective buyers, partner developers, and municipal planning departments, $6.2M. Phase Charlie — Plant Prefab as the exclusive North American manufacturer of Lonsdaleite residential structures (Tiers 1–4), with ACS retaining direct sales of Tier 5 community infrastructure and Bio-Path road systems, projected annual revenue of $85M at 500 dwelling units/year by Year 3.
 
 **PARAGRAPH 6 — ATTACHMENTS & BRIEFING**
 
@@ -45,11 +45,11 @@ Plant Prefab leadership, ACS respectfully requests a 60-minute technical briefin
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Community Architecture Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

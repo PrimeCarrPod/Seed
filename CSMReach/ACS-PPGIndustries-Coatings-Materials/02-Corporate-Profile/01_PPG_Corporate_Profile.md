@@ -77,7 +77,7 @@ Application-embedded coatings for OEM manufacturing processes:
 
 ## 5.0 Technology Foundation
 
-PPG's R&D organization spans approximately 20 innovation centers globally, including the Allison Park Global Coatings Innovation Center (Pennsylvania), the Burbank Aerospace Application Development Center (California), and facilities in Milan, Shanghai, and Amsterdam. Core technology platforms encompass:
+PPG's R&D organization spans approximately 20 innovation centers globally, including the Allison Park Global Coatings Innovation Center (Pennsylvania), the Burbank Aerospace Application Development Center ([location withheld]), and facilities in Milan, Shanghai, and Amsterdam. Core technology platforms encompass:
 
 | Platform | Application |
 |----------|------------|

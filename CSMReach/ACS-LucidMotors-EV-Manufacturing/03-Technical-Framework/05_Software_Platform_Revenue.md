@@ -123,7 +123,7 @@ Lucid's Vehicle Data Platform ingests telemetry from its connected fleet (100,00
 
 Lucid's bidirectional charging capability (Wunderbox onboard charger) enables:
 - Vehicle-to-home backup power (up to 19.2 kW continuous, ~100 kWh usable from a fully charged pack)
-- Future vehicle-to-grid participation in utility demand-response programs (pilot programs under discussion with California utilities)
+- Future vehicle-to-grid participation in utility demand-response programs (pilot programs under discussion with [location withheld] utilities)
 
 ### Energy Services Revenue Potential:
 

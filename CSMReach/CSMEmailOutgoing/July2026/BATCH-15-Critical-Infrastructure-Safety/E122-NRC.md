@@ -1,18 +1,18 @@
 # E122-NRC: Nuclear Regulatory Commission — Division of Engineering
 
 **To:** NRCREP@nrc.gov
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** GMD Transformer Hardening — 4-Plant Historical Failure Record Across 3 Solar Cycles
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. Any technical assertions herein are drawn from publicly available geomagnetic disturbance (GMD) research, NRC regulatory proceedings, and historical nuclear plant operational records.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. Any technical assertions herein are drawn from publicly available geomagnetic disturbance (GMD) research, NRC regulatory proceedings, and historical nuclear plant operational records.
 
 ---
 
 GOOOOOOOD MORNING, NRC DIVISION OF ENGINEERING!
 
-This is Jason Brodsky at Aegis Cipher Space, reaching out from our operations center at 221B Baker Street — and yes, we operate on the Sherlock Holmes principle: when you have eliminated the impossible, whatever remains, however improbable, must be the truth. And the truth is that GMD-induced geomagnetically induced currents (GIC) represent a clear and present danger to nuclear plant auxiliary transformers that has been empirically demonstrated across not one, not two, but three complete solar cycles.
+This is [sender name withheld] at Aegis Cipher Space, reaching out from our operations center at 221B Baker Street — and yes, we operate on the Sherlock Holmes principle: when you have eliminated the impossible, whatever remains, however improbable, must be the truth. And the truth is that GMD-induced geomagnetically induced currents (GIC) represent a clear and present danger to nuclear plant auxiliary transformers that has been empirically demonstrated across not one, not two, but three complete solar cycles.
 
 Let me lay out the historical record directly. Across Solar Cycles 22, 23, and 24 — spanning from 1986 to 2019 — four U.S. nuclear plants experienced documented GIC-related transformer failures or near-failure events at their switchyard or auxiliary transformer installations. These are not hypothetical risk scenarios from academic papers. These are physical assets that experienced half-cycle saturation, hotspot winding temperatures exceeding design limits by 200°C or more, and in two cases, catastrophic internal failure requiring complete replacement with multi-year lead times. The March 1989 Hydro-Québec blackout got the headlines, but the nuclear plant transformer damage during that same storm cycle went largely unreported outside of industry failure analysis circles. When you compound this with the fact that large power transformers already represent the single longest-lead-time replacement component in the nuclear power ecosystem — 18 to 36 months for a custom-specified unit — the resilience arithmetic becomes stark.
 
@@ -31,7 +31,7 @@ Give me a shout at your convenience. We have data, we have analysis, and we have
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

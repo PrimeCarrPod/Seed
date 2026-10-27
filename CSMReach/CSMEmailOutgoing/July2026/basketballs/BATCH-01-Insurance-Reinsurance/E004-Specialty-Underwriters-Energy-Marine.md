@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-01 | July 2026
 
 **TO:** Heads of Specialty Underwriting — Energy, Marine, Aviation, Satellite, and Business Interruption Lines
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Specialty-line hardening data — organized the way your underwriting desks already work
 
 ---
@@ -26,9 +26,9 @@ ATTACHMENT: CSMEval11-COMPILED-Briefing-Packet.md + CSMEval11-A (mitigation data
 
 NEXT STEP: Happy to brief your practice group directly. Monte Carlo Rendez-Vous, RIMS, or a desk-side at your office — wherever your underwriters are asking the question: "what can our clients actually buy to make this number smaller?"
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

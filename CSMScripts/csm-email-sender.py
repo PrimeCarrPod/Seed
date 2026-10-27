@@ -12,7 +12,7 @@ Usage:
     python3 csm-email-sender.py --batch 01
     python3 csm-email-sender.py --all
 
-Author: Jason Brodsky (zirconia@aegisc.space)
+Author: [sender name withheld] ([email withheld])
 Date: July 2026
 """
 
@@ -25,14 +25,15 @@ import glob
 import urllib.request
 import urllib.error
 import datetime
+from secure_token import load_token_data, save_token_data
 
 # ─── CONFIGURATION ───────────────────────────────────────────────
 
 CLIENT_ID = "14b2d65b-4dd7-4ea0-9a36-2b39cba11a3e"  # MS365 MCP default
 SCOPES = ["Mail.Send", "Mail.ReadWrite", "offline_access"]
-FROM_ADDRESS = "zirconia@aegisc.space"
-FROM_NAME = "Jason Brodsky"
-SENDER_SIGNATURE = "Director of External Affairs & Strategic Partnerships | Carrington Storm Motors | Safe Pod Engineering Company"
+FROM_ADDRESS = os.environ.get("CSM_FROM_ADDRESS", "")
+FROM_NAME = os.environ.get("CSM_FROM_NAME", "External Affairs")
+SENDER_SIGNATURE = os.environ.get("CSM_SENDER_SIGNATURE", "External Affairs | Carrington Storm Motors")
 
 BASE_DIR = "CSMEmailOutgoing/July2026"
 ATTACHMENTS_DIR = f"{BASE_DIR}/ATTACHMENTS"
@@ -40,7 +41,7 @@ BATCH_DIRS = sorted(glob.glob(f"{BASE_DIR}/BATCH-*/"))
 
 # Rate limiting: max emails per minute (Microsoft throttles ~30/min for most plans)
 SEND_DELAY_SECONDS = 2.5  # ~24 emails per minute — safe margin
-TOKEN_FILE = os.path.expanduser("~/.csm_email_token.json")
+TOKEN_FILE = os.environ.get("CSM_TOKEN_PATH", os.path.expanduser("~/.csm_oauth/token.json"))
 
 # ─── AUTHENTICATION ──────────────────────────────────────────────
 
@@ -83,8 +84,7 @@ def poll_for_token(device_code, interval=5, timeout=120):
 def load_token():
     """Load cached token from disk, refresh if expired."""
     if os.path.exists(TOKEN_FILE):
-        with open(TOKEN_FILE) as f:
-            token_data = json.load(f)
+        token_data = load_token_data(TOKEN_FILE)
         # Refresh if expired or near expiry
         if "refresh_token" in token_data:
             import urllib.parse
@@ -99,8 +99,7 @@ def load_token():
                 resp = json.loads(urllib.request.urlopen(req).read())
                 if "access_token" in resp:
                     resp["refresh_token"] = token_data.get("refresh_token", resp.get("refresh_token"))
-                    with open(TOKEN_FILE, "w") as f:
-                        json.dump(resp, f)
+                    save_token_data(resp, TOKEN_FILE)
                     return resp["access_token"]
             except:
                 pass
@@ -125,8 +124,7 @@ def authenticate():
     print(f"  This script will wait up to 120 seconds...")
 
     token_data = poll_for_token(dc["device_code"])
-    with open(TOKEN_FILE, "w") as f:
-        json.dump(token_data, f)
+    save_token_data(token_data, TOKEN_FILE)
     print(f"\n✓ Authenticated successfully!")
     return token_data["access_token"]
 
@@ -291,7 +289,7 @@ def send_email(token, email_data, attachment_path=None, dry_run=False):
         # Step 1: Create draft
         draft_id = create_draft(
             token,
-            "placeholder@example.com",  # Will be replaced with real address
+            os.environ.get("CSM_TEST_RECIPIENT", ""),
             email_data.get("to", "Contact").split("—")[0].strip()[:50],
             email_data["subject"],
             email_data["body_html"]
@@ -325,7 +323,7 @@ def send_batch(token, batch_dir, dry_run=False, recipient_map=None):
         email_id = os.path.basename(email_file).replace('.md', '')
 
         # Resolve recipient if we have a real address
-        to_addr = "placeholder@example.com"  # TODO: Replace with actual address
+        to_addr = os.environ.get("CSM_TEST_RECIPIENT", "")  # Configure a recipient explicitly
         to_name = email_data["to"][:100]
 
         print(f"  [{i}/{len(email_files)}] {email_id}")
@@ -383,7 +381,7 @@ def main():
 
     print("\n" + "=" * 72)
     print("  CSM EMAIL SENDER — Carrington Storm Motors Outreach")
-    print("  July 2026 | Jason Brodsky | zirconia@aegisc.space")
+    print("  July 2026 | [sender name withheld] | [email withheld]")
     print("=" * 72)
 
     # Authenticate

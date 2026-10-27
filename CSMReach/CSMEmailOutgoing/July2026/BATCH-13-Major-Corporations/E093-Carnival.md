@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, CARNIVAL CRUISE LINES. GOOOOOOOD MORNING, Josh Weinstein and the fleet operations leadership. The ACS Infrastructure Protection Division presents a first-of-its-kind commercial proposal — the Fleet Hull Excellence Program, a comprehensive GIC and EMP protection system for Carnival's 94 vessels and 272,000 berths, ensuring that the world's largest cruise fleet never loses propulsion, navigation, or life safety systems to an electromagnetic event at sea.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, CARNIVAL CRUISE LINES. GOOOOOOOD MORNING, Josh Weinstein and the fleet operations leadership. The ACS Infrastructure Protection Division presents a first-of-its-kind commercial proposal — the Fleet Hull Excellence Program, a comprehensive GIC and EMP protection system for Carnival's 94 vessels and 272,000 berths, ensuring that the world's largest cruise fleet never loses propulsion, navigation, or life safety systems to an electromagnetic event at sea.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Weinstein, ACS respectfully requests a 60-minute briefing with your fleet en
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

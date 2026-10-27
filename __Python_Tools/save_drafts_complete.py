@@ -1,11 +1,22 @@
 #!/usr/bin/env python3
 import os, sys, json, urllib.request, urllib.parse, base64
+from secure_token import load_access_token
 
-ws = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_b5a7d01d-ebef-4a90-bc4b-206ab5177645'
+ws = os.environ.get("CSM_WORKSPACE", os.getcwd())
+_RECIPIENTS = [x.strip() for x in os.environ.get("CSM_RECIPIENTS", "").split(",") if x.strip()]
+_recipient_index = 0
+
+def _next_recipient():
+    global _recipient_index
+    if _recipient_index >= len(_RECIPIENTS):
+        raise SystemExit("ERROR: set CSM_RECIPIENTS to a comma-separated list of recipient addresses")
+    value = _RECIPIENTS[_recipient_index]
+    _recipient_index += 1
+    return value
+
 
 # Load token
-with open(os.path.join(ws, 'hotmail_token.json')) as f:
-    token = json.load(f)
+token = {"access_token": load_access_token(os.path.join(ws, "hotmail_token.json"))}
 
 # Load the complete concatenated document
 with open(os.path.join(ws, 'CSM_WORK_IN_PROGRESS/SubAtom_WIP/PRIME_ELECTRON_COMPLETE_RESEARCH.md')) as f:
@@ -25,7 +36,7 @@ graph_base = 'https://graph.microsoft.com/v1.0'
 # Define emails with the complete document
 emails = [
     {
-        'to': 'naturesubmissions@nature.com',
+        'to': _next_recipient(),
         'subject': 'Submission: Prime Electron Framework — Complete Research (287K lines)',
         'body': """Dear Editor,
 
@@ -40,8 +51,8 @@ The Prime Electron framework identifies statistical correlations in the prime nu
 We confirm this work is original and not under consideration elsewhere.
 
 Sincerely,
-Jason Isaac Brodsky
-California, 1976
+[sender name withheld]
+[location withheld]
 Author Conducier
 
 ---
@@ -49,7 +60,7 @@ ATTACHMENT: PrimeElectron_Complete_Research.pdf (287K lines, 12MB)
 """
     },
     {
-        'to': 'witten@ias.edu',
+        'to': _next_recipient(),
         'subject': 'Prime Electron framework — complete research concatenated',
         'body': """Dear Professor Witten,
 
@@ -64,14 +75,14 @@ Key results:
 4. Quantum error correction from prime gap statistics
 
 With great respect,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: PrimeElectron_Complete_Research.pdf
 """
     },
     {
-        'to': 'tao@math.ucla.edu',
+        'to': _next_recipient(),
         'subject': 'Prime Electron framework — complete number theory and physics research',
         'body': """Dear Professor Tao,
 
@@ -80,14 +91,14 @@ I am writing to share the complete Prime Electron research — 287,000+ lines co
 The attached document includes the base-π representation, prime gap crystalline structures, and the Meta-Depth hierarchy framework.
 
 Sincerely,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: PrimeElectron_Complete_Research.pdf
 """
     },
     {
-        'to': 'foundationalquestions@fqxi.org',
+        'to': _next_recipient(),
         'subject': 'FQXi Grant Application: Prime Electron Framework — Complete Research',
         'body': """Dear FQXi,
 
@@ -104,7 +115,7 @@ Key predictions:
 - Quantum error correction from prime codes
 
 Sincerely,
-Jason Isaac Brodsky
+[sender name withheld]
 
 ---
 ATTACHMENT: PrimeElectron_Complete_Research.pdf

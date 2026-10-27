@@ -1316,7 +1316,7 @@ done
 
 **Component:** `build.sh`, `keystore.jks` (debug only)  
 **Issue:** Debug keystore only — cannot publish to Play Store  
-**Current State:** `keytool -genkeypair -alias androiddebugkey -keypass android -storepass android`  
+**Current State:** `keytool -genkeypair -alias androiddebugkey -keypass "$ANDROID_KEY_PASS" -storepass "$ANDROID_KEYSTORE_PASS"`  
 **Proposed Refinement:** Generate release keystore, configure signing, document process  
 
 ### Keystore Generation (One-Time):
@@ -1404,8 +1404,8 @@ sign_debug_apk() {
   "$ZIPALIGN" -f -p 4 "$unsigned_apk" "${unsigned_apk}.aligned"
   "$APKSIGNER" sign \
     --ks ~/.android/debug.keystore \
-    --ks-pass pass:android \
-    --key-pass pass:android \
+    --ks-pass env:ANDROID_KEYSTORE_PASS \
+    --key-pass env:ANDROID_KEY_PASS \
     --out "$signed_apk" \
     "${unsigned_apk}.aligned"
   rm -f "${unsigned_apk}.aligned"

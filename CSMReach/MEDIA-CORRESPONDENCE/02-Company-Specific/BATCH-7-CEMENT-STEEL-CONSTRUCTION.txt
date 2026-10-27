@@ -105,7 +105,7 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Cambridge, MA
 -------------------------------------------------------------------------------
 
 COMPANY 7.9 — ICON TECHNOLOGY, INC.
-TO: Jason Ballard, Co-Founder & CEO — jason.ballard@iconbuild.com
+TO: the account owner Ballard, Co-Founder & CEO — jason.ballard@iconbuild.com
 CC: Evan Loomis, Co-Founder — evan.loomis@iconbuild.com
     Alex Le Roux, Co-Founder & CTO — alex.leroux@iconbuild.com
 SUBJECT: ICON — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B709

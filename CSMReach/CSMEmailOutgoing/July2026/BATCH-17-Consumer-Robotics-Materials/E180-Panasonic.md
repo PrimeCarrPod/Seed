@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, PANASONIC. GOOOOOOOD MORNING, Panasonic Materials R&D. GOOOOOOOD MORNING, to the company that invented the PGS (Pyrolytic Graphite Sheet) — the industry-standard thermal interface material that cools every high-performance smartphone, laptop, and server on the market, including devices manufactured by your competitors who license this technology from you. The AEGIS Thermal Materials Division is reaching out to present MXene as the successor thermal interface material to PGS — a 2D material that achieves 520 W/m·K in-plane thermal conductivity (vs. 1,950 W/m·K for PGS in-plane) but with a critical advantage: 45 W/m·K through-plane thermal conductivity (vs. 5.7 W/m·K for PGS) — a 7.9× improvement in the direction that actually matters for heat extraction from a chip to a heat sink. This email serves as both an outreach and a CSMRadio credit acknowledgment: Panasonic was cited in CSMRadio Episode 014 for PGS thermal management innovation in extreme environment electronics.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, PANASONIC. GOOOOOOOD MORNING, Panasonic Materials R&D. GOOOOOOOD MORNING, to the company that invented the PGS (Pyrolytic Graphite Sheet) — the industry-standard thermal interface material that cools every high-performance smartphone, laptop, and server on the market, including devices manufactured by your competitors who license this technology from you. The AEGIS Thermal Materials Division is reaching out to present MXene as the successor thermal interface material to PGS — a 2D material that achieves 520 W/m·K in-plane thermal conductivity (vs. 1,950 W/m·K for PGS in-plane) but with a critical advantage: 45 W/m·K through-plane thermal conductivity (vs. 5.7 W/m·K for PGS) — a 7.9× improvement in the direction that actually matters for heat extraction from a chip to a heat sink. This email serves as both an outreach and a CSMRadio credit acknowledgment: Panasonic was cited in CSMRadio Episode 014 for PGS thermal management innovation in extreme environment electronics.
 
 **PARAGRAPH 2 — THE THERMAL INTERFACE BOTTLENECK**
 
@@ -45,11 +45,11 @@ Panasonic Materials R&D leadership, ACS respectfully requests a 60-minute techni
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Thermal Materials Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

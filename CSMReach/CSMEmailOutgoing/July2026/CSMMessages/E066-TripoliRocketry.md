@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-09 | July 2026 — V4 Fun-Williams Final
 
 **TO:** hq@tripoli.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Avionics That Survive the Flight — EMP-Hardened Rocket Electronics for the Tripoli Community
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ Modern high-power rocketry avionics stacks typically include: an altimeter (baro
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials exist. They are tested against MIL-STD-461G. They are lightweight — MXene adds less than 1 gram to a typical flight-computer circuit board; Aegis-C panels can be integrated into a standard 54mm or 75mm avionics bay with a weight penalty of less than 50 grams. Jason Brodsky of California has directed this AI to state plainly: we are not asking Tripoli to change its safety code, we are not proposing modifications to certified motors, and we are not suggesting that electromagnetic hardening is a substitute for proper altimeter venting, shear-pin sizing, or ejection-charge testing. What we are offering is a technical data package — materials specifications, integration guidelines for common rocketry avionics (Altus Metrum, Featherweight, Missile Works, Eggtimer, AIM XTRA), and test results — that Tripoli members can use to harden their avionics against the same electromagnetic threat physics that Carrington Storm Motors was founded to address. The rocket that survives an EMP-hardened flight environment is the rocket that flies again. The avionics bay that protects its electronics from conducted and radiated transients is the avionics bay that reports GPS coordinates on the way down instead of going silent at apogee. Rocket people understand reliability engineering. EMP hardening is reliability engineering for the electromagnetic domain.
+The materials exist. They are tested against MIL-STD-461G. They are lightweight — MXene adds less than 1 gram to a typical flight-computer circuit board; Aegis-C panels can be integrated into a standard 54mm or 75mm avionics bay with a weight penalty of less than 50 grams. [sender name withheld] has directed this AI to state plainly: we are not asking Tripoli to change its safety code, we are not proposing modifications to certified motors, and we are not suggesting that electromagnetic hardening is a substitute for proper altimeter venting, shear-pin sizing, or ejection-charge testing. What we are offering is a technical data package — materials specifications, integration guidelines for common rocketry avionics (Altus Metrum, Featherweight, Missile Works, Eggtimer, AIM XTRA), and test results — that Tripoli members can use to harden their avionics against the same electromagnetic threat physics that Carrington Storm Motors was founded to address. The rocket that survives an EMP-hardened flight environment is the rocket that flies again. The avionics bay that protects its electronics from conducted and radiated transients is the avionics bay that reports GPS coordinates on the way down instead of going silent at apogee. Rocket people understand reliability engineering. EMP hardening is reliability engineering for the electromagnetic domain.
 
 ---
 
@@ -71,13 +71,13 @@ For Tripoli Rocketry Association, this data package represents an opportunity to
 
 **[PARAGRAPH 9 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to Tripoli leadership, prefects, or the membership at large — at LDRS, at BALLS, at any major Tripoli launch event, or via virtual presentation — within 14 days. Bring your avionics engineers. Bring your airframe builders. Bring the people who have watched their rocket lawndart and spent the next six months figuring out why. The four PDFs attached to this email contain the full engineering data package — materials specifications, integration guidelines for common rocketry avionics, and test results. This AI handles the logistics. Jason Brodsky of California handles the handshake. The rocket that survives the electromagnetic environment is the rocket that flies again. Let's make sure it does.
+We are prepared to deliver a technical briefing to Tripoli leadership, prefects, or the membership at large — at LDRS, at BALLS, at any major Tripoli launch event, or via virtual presentation — within 14 days. Bring your avionics engineers. Bring your airframe builders. Bring the people who have watched their rocket lawndart and spent the next six months figuring out why. The four PDFs attached to this email contain the full engineering data package — materials specifications, integration guidelines for common rocketry avionics, and test results. This AI handles the logistics. [sender name withheld] handles the handshake. The rocket that survives the electromagnetic environment is the rocket that flies again. Let's make sure it does.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs*

@@ -51,7 +51,7 @@ TYLin International (then T.Y. Lin International) played a central role in the p
 
 ### 2.1 Program Scope and Investment
 
-The California Toll Bridge Seismic Retrofit Program, authorized by Senate Bill 60 (1997) and subsequently funded through successive legislative appropriations and toll revenue bond issuances, represented one of the largest concentrated seismic infrastructure investments in United States history. Total program expenditure reached approximately $9 billion (2020 dollars) across seven toll bridges, encompassing:
+The [location withheld] Toll Bridge Seismic Retrofit Program, authorized by Senate Bill 60 (1997) and subsequently funded through successive legislative appropriations and toll revenue bond issuances, represented one of the largest concentrated seismic infrastructure investments in United States history. Total program expenditure reached approximately $9 billion (2020 dollars) across seven toll bridges, encompassing:
 
 - **San Francisco–Oakland Bay Bridge East Span**: Complete replacement of the seismically vulnerable 1936 steel truss structure with a 2.0-mile segmental concrete skyway and the 1,263-foot self-anchored suspension main span ($6.4 billion).
 - **San Francisco–Oakland Bay Bridge West Span**: Retrofit of the 1936 suspension bridge, including tower strengthening, expansion joint replacement with seismic isolation bearings, and anchorage housing reinforcement ($850 million).
@@ -71,7 +71,7 @@ The self-anchored suspension (SAS) tower of the Bay Bridge East Span incorporate
 - **Repairability**: Post-earthquake damage is concentrated in the shear links, which can be unbolted and replaced without requiring tower decommissioning or structural steel repair to the main columns.
 - **Stiffness compatibility**: The shear link dimensions and spacing are tuned to shift the tower's fundamental period away from the dominant spectral acceleration peaks of the site-specific design spectrum, reducing the inertial force demand on the tower foundation system.
 
-This design concept was validated through full-scale cyclic testing at the University of California, San Diego, Powell Structural Engineering Laboratories, with shear link specimens achieving cumulative plastic rotation capacities exceeding 0.12 radians before fracture — substantially exceeding the 0.08 radian target specified in AISC 341 for high-seismic applications.
+This design concept was validated through full-scale cyclic testing at the University of [location withheld], San Diego, Powell Structural Engineering Laboratories, with shear link specimens achieving cumulative plastic rotation capacities exceeding 0.12 radians before fracture — substantially exceeding the 0.08 radian target specified in AISC 341 for high-seismic applications.
 
 #### 2.2.2 Hinge Pipe Beam Energy Dissipators
 
@@ -138,7 +138,7 @@ The principal strategic insight connecting this seismic resilience framework to 
 
 - **Scaffolding and access represent 30–50% of the total project cost** for either seismic retrofit or coating work independently. A combined scope amortizes these fixed access costs across both work packages.
 - **Containment for abrasive blasting** during coating operations requires the same type of full-enclosure systems (negative-pressure ventilation, particulate filtration, stormwater management) that are deployed for seismic retrofit work involving steel cutting, welding, and concrete demolition. Combining the scopes eliminates duplicate containment mobilization and demobilization.
-- **Traffic control and lane closure coordination** with the California Highway Patrol and regional transportation management agencies represents a significant scheduling constraint and public communication challenge. A single coordinated closure period for combined seismic and coating work reduces cumulative traffic disruption relative to two separate construction campaigns.
+- **Traffic control and lane closure coordination** with the [location withheld] Highway Patrol and regional transportation management agencies represents a significant scheduling constraint and public communication challenge. A single coordinated closure period for combined seismic and coating work reduces cumulative traffic disruption relative to two separate construction campaigns.
 
 ### 4.2 Speculative Integration: Open Seismic, Apply Duplex
 
@@ -175,13 +175,13 @@ TYLin International's direct engineering heritage — from the development of sh
 
 ## References
 
-1. Caltrans. "Seismic Design Criteria Version 2.0." California Department of Transportation, 2019.
+1. Caltrans. "Seismic Design Criteria Version 2.0." [location withheld] Department of Transportation, 2019.
 2. T.Y. Lin International / Moffatt & Nichol Joint Venture. "San Francisco–Oakland Bay Bridge East Span — Design Criteria and Basis of Design." 2002.
 3. Astaneh-Asl, A., and Shen, J.H. "Seismic Behavior and Design of Shear Link Beams for the New Bay Bridge." *Journal of Structural Engineering*, ASCE, Vol. 134, No. 12, 2008.
 4. Boulanger, R.W., and Idriss, I.M. "CPT and SPT Based Liquefaction Triggering Procedures." Center for Geotechnical Modeling, UC Davis, Report UCD/CGM-14/01, 2014.
 5. Bay Area Toll Authority. "Toll Bridge Seismic Retrofit Program — Completion Report." Metropolitan Transportation Commission, 2020.
 6. Taylor Devices, Inc. "Fluid Viscous Dampers for Seismic Energy Dissipation — Bay Bridge West Span Application." Technical Report, 2004.
-7. University of California, San Diego. "Full-Scale Cyclic Testing of Shear Link Beams for the San Francisco–Oakland Bay Bridge Self-Anchored Suspension Tower." Powell Laboratories Report TR-2003/06, 2003.
+7. University of [location withheld], San Diego. "Full-Scale Cyclic Testing of Shear Link Beams for the San Francisco–Oakland Bay Bridge Self-Anchored Suspension Tower." Powell Laboratories Report TR-2003/06, 2003.
 8. United States Geological Survey. "National Seismic Hazard Model — 2023 Update." USGS, 2023.
 9. AISC 341-22. "Seismic Provisions for Structural Steel Buildings." American Institute of Steel Construction, 2022.
 10. FHWA. "Seismic Retrofitting Manual for Highway Structures: Part 1 — Bridges." FHWA-HRT-06-032, 2006.

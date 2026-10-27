@@ -5,9 +5,9 @@ STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: A/B mixed
 ===============================================================================
 
 COMPANY 5.1 — TESLA, INC.
-TO: Elon Musk, CEO — elon.musk@tesla.com
-CC: Vaibhav Taneja, CFO — vaibhav.taneja@tesla.com
-    Drew Baglino, SVP Powertrain & Energy — drew.baglino@tesla.com
+TO: Elon Musk, CEO — [email-81233578a87e]
+CC: Vaibhav Taneja, CFO — [email-615f2cf88ab1]
+    Drew Baglino, SVP Powertrain & Energy — [email-d62b265cb7c1]
 SUBJECT: Tesla — ACS Research Partnership on EV Manufacturing & Energy Storage — ACS-MC-2026-B501
 INTRO: ACS dossier ACS-DOS-2026-0016 covers Tesla's global EV manufacturing leadership
 (Gigafactory Texas, Fremont, Berlin, Shanghai), 4680 cell production, Megapack grid
@@ -18,9 +18,9 @@ DOSSIER: ACS-DOS-2026-0016 | PRIORITY: CRITICAL | CITY: Austin, TX
 -------------------------------------------------------------------------------
 
 COMPANY 5.2 — RIVIAN AUTOMOTIVE, INC.
-TO: RJ Scaringe, Founder & CEO — rj@rivian.com
-CC: Claire McDonough, CFO — claire.mcdonough@rivian.com
-    Nick Kalayjian, Chief Platform Engineer — nick.kalayjian@rivian.com
+TO: RJ Scaringe, Founder & CEO — [email-618fbb0499f2]
+CC: Claire McDonough, CFO — [email-68a0b9bdb151]
+    Nick Kalayjian, Chief Platform Engineer — [email-5f106ca2f76a]
 SUBJECT: Rivian — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B502
 INTRO: Rivian produces the R1T pickup, R1S SUV, and EDV commercial van (Amazon contract).
 Normal, IL factory with $5.8B Georgia plant planned. Irvine, CA HQ. VW Group partnership
@@ -29,9 +29,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Irvine, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.3 — LUCID GROUP, INC.
-TO: Peter Rawlinson, CEO & CTO — peter.rawlinson@lucidmotors.com
-CC: Gagan Dhingra, CFO — gagan.dhingra@lucidmotors.com
-    Eric Bach, SVP Product — eric.bach@lucidmotors.com
+TO: Peter Rawlinson, CEO & CTO — [email-362805631768]
+CC: Gagan Dhingra, CFO — [email-7926fb4deb61]
+    Eric Bach, SVP Product — [email-32bd628d63f0]
 SUBJECT: Lucid — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B503
 INTRO: Lucid produces the Air luxury sedan with class-leading efficiency (5 miles/kWh).
 Casa Grande, AZ factory (AMP-1) with AMP-2 expansion planned. Newark, CA HQ. Gravity
@@ -41,9 +41,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Newark, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.4 — CHARGEPOINT HOLDINGS, INC.
-TO: Rick Wilmer, President & CEO — rick.wilmer@chargepoint.com
-CC: Mansi Khetani, CFO — mansi.khetani@chargepoint.com
-    Bill Loewenthal, SVP Product — bill.loewenthal@chargepoint.com
+TO: Rick Wilmer, President & CEO — [email-638d741cf4d4]
+CC: Mansi Khetani, CFO — [email-a350a4241812]
+    Bill Loewenthal, SVP Product — [email-45f3d96e5df6]
 SUBJECT: ChargePoint — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B504
 INTRO: ChargePoint operates the largest EV charging network in North America with 280K+
 ports. Campbell, CA HQ. Hardware and software platform serving commercial, fleet, and
@@ -53,9 +53,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Campbell, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.5 — JOBY AVIATION, INC.
-TO: JoeBen Bevirt, Founder & CEO — joeben@jobyaviation.com
-CC: Didier Papadopoulos, President Aircraft OEM — didier.papadopoulos@jobyaviation.com
-    Bonny Simi, President Operations — bonny.simi@jobyaviation.com
+TO: JoeBen Bevirt, Founder & CEO — [email-5387a02d102a]
+CC: Didier Papadopoulos, President Aircraft OEM — [email-2bc5a8d336da]
+    Bonny Simi, President Operations — [email-c404aeab9745]
 SUBJECT: Joby — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B505
 INTRO: Joby is developing an all-electric vertical takeoff and landing (eVTOL) aircraft
 for urban air mobility. Santa Cruz, CA HQ with Marina, CA pilot production and Dayton,
@@ -66,9 +66,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Santa Cruz, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.6 — ARCHER AVIATION INC.
-TO: Adam Goldstein, Founder & CEO — adam.goldstein@archer.com
-CC: Tom Muniz, CTO — tom.muniz@archer.com
-    Andy Missan, CFO — andy.missan@archer.com
+TO: Adam Goldstein, Founder & CEO — [email-aae52c2e4b90]
+CC: Tom Muniz, CTO — [email-9c052ce74b52]
+    Andy Missan, CFO — [email-2ee8566dde23]
 SUBJECT: Archer — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B506
 INTRO: Archer is developing the Midnight eVTOL aircraft for urban air mobility. San Jose,
 CA HQ with Covington, GA high-volume manufacturing facility under construction. United
@@ -78,8 +78,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: San Jose, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.7 — BETA TECHNOLOGIES
-TO: Kyle Clark, Founder & CEO — kyle.clark@beta.team
-CC: Blain Newton, COO — blain.newton@beta.team
+TO: Kyle Clark, Founder & CEO — [email-6fb19ca125d5]
+CC: Blain Newton, COO — [email-0e6d1080bafa]
 SUBJECT: Beta Technologies — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B507
 INTRO: Beta Technologies is developing the ALIA electric conventional takeoff and landing
 (eCTOL) and eVTOL aircraft with focus on cargo, defense, and medical logistics. South
@@ -90,8 +90,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: South Burlington, VT
 -------------------------------------------------------------------------------
 
 COMPANY 5.8 — HEART AEROSPACE
-TO: Anders Forslund, Founder & CEO — anders.forslund@heartaerospace.com
-CC: Sofia Graflund, COO — sofia.graflund@heartaerospace.com
+TO: Anders Forslund, Founder & CEO — [email-69d13599885d]
+CC: Sofia Graflund, COO — [email-7eff6c446a16]
 SUBJECT: Heart Aerospace — US-Sweden Advanced Technology Partnership — ACS-MC-2026-B508
 INTRO: Heart Aerospace is developing the ES-30, a 30-seat hybrid-electric regional
 aircraft with all-electric range of 200 km and extended hybrid range of 400 km.
@@ -102,8 +102,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Gothenburg, Sweden
 -------------------------------------------------------------------------------
 
 COMPANY 5.9 — EVIATION
-TO: Andre Stein, CEO — andre.stein@eviation.com
-CC: Gregory Davis, President — gregory.davis@eviation.com
+TO: Andre Stein, CEO — [email-ebb6da31a61c]
+CC: Gregory Davis, President — [email-8362dcd9560d]
 SUBJECT: Eviation — US-Israel Advanced Technology Partnership — ACS-MC-2026-B509
 INTRO: Eviation is developing Alice, an all-electric 9-passenger commuter aircraft.
 Arlington, WA HQ (with Israel R&D origins). First flight in 2022. Targeting 250 nm
@@ -114,8 +114,8 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Arlington, WA
 -------------------------------------------------------------------------------
 
 COMPANY 5.10 — ZEROAVIA
-TO: Val Miftakhov, Founder & CEO — val.miftakhov@zeroavia.com
-CC: James Peck, CCO — james.peck@zeroavia.com
+TO: Val Miftakhov, Founder & CEO — [email-26767cf252f3]
+CC: James Peck, CCO — [email-b38376ba4703]
 SUBJECT: ZeroAvia — US-UK Advanced Technology Partnership — ACS-MC-2026-B510
 INTRO: ZeroAvia is developing hydrogen fuel cell powertrains for aviation, targeting
 20-seat (ZA600) and 80-seat (ZA2000) platforms. Hollister, CA HQ with UK operations
@@ -126,8 +126,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Hollister, CA / Kemble, UK
 -------------------------------------------------------------------------------
 
 COMPANY 5.11 — AMPAIRE, INC.
-TO: Kevin Noertker, Founder & CEO — kevin.noertker@ampaire.com
-CC: Cory Combs, CTO — cory.combs@ampaire.com
+TO: Kevin Noertker, Founder & CEO — [email-0de02008a27a]
+CC: Cory Combs, CTO — [email-5830e750fcd6]
 SUBJECT: Ampaire — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B511
 INTRO: Ampaire develops hybrid-electric propulsion systems for existing aircraft retrofits
 (Eco Caravan, Electric EEL). Hawthorne, CA HQ. Flight testing with regional airlines
@@ -137,8 +137,8 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Hawthorne, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.12 — RELATIVITY SPACE
-TO: Tim Ellis, Co-Founder & CEO — tim.ellis@relativityspace.com
-CC: Josh Brost, CRO — josh.brost@relativityspace.com
+TO: Tim Ellis, Co-Founder & CEO — [email-407b6c88d895]
+CC: Josh Brost, CRO — [email-33b14b5d2002]
 SUBJECT: Relativity Space — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B512
 INTRO: Relativity Space is developing the Terran R fully reusable 3D-printed rocket.
 Long Beach, CA HQ with Stargate 3D printing factory and Launch Complex 16 at Cape
@@ -148,8 +148,8 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Long Beach, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.13 — ROCKET LAB USA, INC.
-TO: Peter Beck, Founder & CEO — peter.beck@rocketlabusa.com
-CC: Adam Spice, CFO — adam.spice@rocketlabusa.com
+TO: Peter Beck, Founder & CEO — [email-f13ca2a82c75]
+CC: Adam Spice, CFO — [email-895b19292c9c]
 SUBJECT: Rocket Lab — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B513
 INTRO: Rocket Lab provides dedicated small satellite launch (Electron) and developing the
 larger Neutron reusable rocket. Long Beach, CA HQ with Launch Complex 1 in New Zealand
@@ -160,9 +160,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Long Beach, CA
 -------------------------------------------------------------------------------
 
 COMPANY 5.14 — REDWIRE CORPORATION
-TO: Peter Cannito, Chairman & CEO — peter.cannito@redwirespace.com
-CC: Jonathan Baliff, CFO — jonathan.baliff@redwirespace.com
-    Al Tadros, CTO — al.tadros@redwirespace.com
+TO: Peter Cannito, Chairman & CEO — [email-d93b301a72fe]
+CC: Jonathan Baliff, CFO — [email-5cbd6df6f7a7]
+    Al Tadros, CTO — [email-b3ba057ebaee]
 SUBJECT: Redwire — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B514
 INTRO: Redwire provides critical space infrastructure: solar arrays (ROSA), on-orbit
 manufacturing, sensors, and avionics. Jacksonville, FL HQ. Key supplier for ISS,
@@ -173,9 +173,9 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Jacksonville, FL
 -------------------------------------------------------------------------------
 
 COMPANY 5.15 — PLANET LABS PBC
-TO: Will Marshall, Co-Founder & CEO — will.marshall@planet.com
-CC: Ashley Johnson, CFO — ashley.johnson@planet.com
-    Robbie Schingler, Co-Founder & CSO — robbie.schingler@planet.com
+TO: Will Marshall, Co-Founder & CEO — [email-97dd96b6b015]
+CC: Ashley Johnson, CFO — [email-75855af7d925]
+    Robbie Schingler, Co-Founder & CSO — [email-cd2be8885089]
 SUBJECT: Planet Labs — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B515
 INTRO: Planet Labs operates the world's largest Earth imaging satellite constellation
 (200+ Doves, SkySats, Pelican fleet). San Francisco, CA HQ. Daily global imagery

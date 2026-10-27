@@ -26,11 +26,16 @@
 # LESSONS LEARNED (2026-07-16):
 #   - Python/r8 zip APKs DON'T INSTALL. Must use aapt2 for binary manifest.
 #   - build-tools must be <= platform API level (33.0.1 ⇔ android-33)
-#   - curl needs -k flag in sandbox environments
+#   - curl verifies TLS; set CURL_CA_BUNDLE for private/self-signed CAs
 #   - Google extracts android-13 → must rename to android-33
 #   - Adaptive icon with @color refs works without image assets
 # ============================================================
 set -e
+
+# Signing credentials are supplied by the environment; never commit them.
+: "${ANDROID_KEYSTORE_PASS:?Set ANDROID_KEYSTORE_PASS before building}"
+export ANDROID_KEYSTORE_PASS
+export ANDROID_KEY_PASS="${ANDROID_KEY_PASS:-$ANDROID_KEYSTORE_PASS}"
 
 # ═══════════════════════════════════════════════════════
 # CONFIGURE THESE FOR YOUR APP
@@ -209,8 +214,8 @@ if [ ! -f "$KEYSTORE" ]; then
         -alias androiddebugkey \
         -keyalg RSA -keysize 2048 \
         -validity 10000 \
-        -storepass android \
-        -keypass android \
+        -storepass "$ANDROID_KEYSTORE_PASS" \
+        -keypass "$ANDROID_KEY_PASS" \
         -dname "CN=$APP_NAME Debug, OU=CarrPod, O=CSM, L=Citadel, ST=Citadel, C=US" \
         2>/dev/null
     echo "  Generated debug.keystore"
@@ -218,8 +223,8 @@ fi
 
 "$APKSIGNER" sign \
     --ks "$KEYSTORE" \
-    --ks-pass pass:android \
-    --key-pass pass:android \
+    --ks-pass env:ANDROID_KEYSTORE_PASS \
+    --key-pass env:ANDROID_KEY_PASS \
     --out "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" \
     "$OUT_DIR/$APP_NAME-aligned.apk"
 

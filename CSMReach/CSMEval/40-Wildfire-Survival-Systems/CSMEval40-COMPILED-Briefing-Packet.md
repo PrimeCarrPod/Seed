@@ -7,7 +7,7 @@
 
 ## DEDICATION
 
-This document is dedicated to the residents of Lahaina, Hawai'i (August 8–9, 2023 — 102 confirmed fatalities) and Paradise, California (November 8, 2018 — 85 confirmed fatalities). Both communities were destroyed by wind-driven wildfire advancing faster than evacuation infrastructure could accommodate. In both events, residents who attempted last-minute vehicle evacuation were trapped by flame-front road blockages; some who fled on foot toward the ocean survived only because of the specific geography of coastal proximity. The Mana Fire-Veil system is designed to provide a survivable option for the precise scenario encountered in both communities: fire-front speeds exceeding vehicle evacuation capability, road networks choked or blocked, and the ocean or a body of water as the only escape vector.
+This document is dedicated to the residents of Lahaina, Hawai'i (August 8–9, 2023 — 102 confirmed fatalities) and Paradise, [location withheld] (November 8, 2018 — 85 confirmed fatalities). Both communities were destroyed by wind-driven wildfire advancing faster than evacuation infrastructure could accommodate. In both events, residents who attempted last-minute vehicle evacuation were trapped by flame-front road blockages; some who fled on foot toward the ocean survived only because of the specific geography of coastal proximity. The Mana Fire-Veil system is designed to provide a survivable option for the precise scenario encountered in both communities: fire-front speeds exceeding vehicle evacuation capability, road networks choked or blocked, and the ocean or a body of water as the only escape vector.
 
 ---
 
@@ -19,7 +19,7 @@ The Fire-Veil deploys from a vehicle roof-mounted capsule in approximately 30 se
 
 Closed-cycle oxygen generation is provided by a chemical oxygen generator (sodium chlorate / iron powder — the same chemistry used in commercial-aircraft emergency oxygen systems, rated for 30 minutes at 4 L/min O₂ flow rate) supplemented by a CO₂ scrubber cartridge (soda-lime, 8-hour endurance at 2-person metabolic rate). The system requires no external power, no batteries, and no electronic components — making it fully immune to the electromagnetic environment that accompanies a wildfire (downed power lines, electrical grid arcing, and the RF/EM spectrum disruption caused by the fire's own ionized combustion plume).
 
-The Mana Fire-Veil system is positioned for procurement by CAL FIRE, the U.S. Forest Service (USFS), FEMA Individual Assistance, California Governor's Office of Emergency Services (Cal OES), and the Australian Country Fire Authority (CFA). Two companion products — Drone Backpack 050 (a wildfire-progression mapping UAS designed for fire-agency deployment) and FEATHER Mesh 0115 (a structural-ember-intrusion barrier for homes in the Wildland-Urban Interface) — complete the Mana Fire-Veil ecosystem.
+The Mana Fire-Veil system is positioned for procurement by CAL FIRE, the U.S. Forest Service (USFS), FEMA Individual Assistance, [location withheld] Governor's Office of Emergency Services (Cal OES), and the Australian Country Fire Authority (CFA). Two companion products — Drone Backpack 050 (a wildfire-progression mapping UAS designed for fire-agency deployment) and FEATHER Mesh 0115 (a structural-ember-intrusion barrier for homes in the Wildland-Urban Interface) — complete the Mana Fire-Veil ecosystem.
 
 ---
 
@@ -141,7 +141,7 @@ The pod floats with approximately 65% of its volume submerged, with the ALON vie
 
 **Ember Intrusion Testing:** Tested at the Insurance Institute for Business & Home Safety (IBHS) Research Center ember-storm generator (Richburg, SC). The FEATHER mesh prevented 100% of ember intrusion through attic ventilation openings (the primary ignition pathway in WUI structural fires) during a 15-minute Class A brand exposure (ASTM E2886, 162 g flaming wood-ember brands). The mesh was intact with zero burn-through post-test.
 
-**Regulatory Pathway:** ICC-ES AC455 (WUI building-material acceptance criteria), California Building Code Chapter 7A (WUI building materials). The FEATHER mesh targets mandatory WUI construction retrofit programs, initially California (where Chapter 7A applies to all new construction in WUI zones and is being extended to existing structures under proposed legislation) and expanding to other WUI-states (Colorado, Oregon, Washington, Arizona, Texas, Florida).
+**Regulatory Pathway:** ICC-ES AC455 (WUI building-material acceptance criteria), [location withheld] Building Code Chapter 7A (WUI building materials). The FEATHER mesh targets mandatory WUI construction retrofit programs, initially [location withheld] (where Chapter 7A applies to all new construction in WUI zones and is being extended to existing structures under proposed legislation) and expanding to other WUI-states (Colorado, Oregon, Washington, Arizona, Texas, Florida).
 
 **Production Cost Target:** $2,200 per residential installation (material + canister + deployment hardware; installation labor additional).
 
@@ -149,7 +149,7 @@ The pod floats with approximately 65% of its volume submerged, with the ALON vie
 
 ## 5. TARGET AGENCIES & PROCUREMENT
 
-### 5.1 CAL FIRE — California Department of Forestry and Fire Protection
+### 5.1 CAL FIRE — [location withheld] Department of Forestry and Fire Protection
 
 **Program Alignment:** CAL FIRE's Fire Protection Program is the largest state wildfire agency in the United States, with an annual budget of $4.2B (FY2025) and responsibility for 31 million acres of wildland. The agency operates 1,100+ fire engines, 50+ aircraft, and 10,000+ personnel. The Mana Fire-Veil system serves two CAL FIRE missions:
 
@@ -163,19 +163,19 @@ The pod floats with approximately 65% of its volume submerged, with the ALON vie
 
 **Program Alignment:** The USFS manages 193 million acres of national forests and grasslands, with wildfire suppression expenditures exceeding $3.5B in FY2025. The agency's Fire and Aviation Management (FAM) program operates the National Interagency Fire Center (NIFC) in Boise, ID, which coordinates all federal wildfire response. The Drone Backpack 050 is directly aligned with USFS FAM's UAS program (20+ UAS units currently operating nationwide for fire mapping), offering a backpack-portable alternative to the current Raven and ScanEagle systems that require vehicle-mounted launch infrastructure.
 
-**Procurement Vehicle:** USFS Region 5 (California) and Region 6 (Pacific Northwest) equipment procurement through the General Services Administration (GSA) Schedule 84 (Fire and Rescue).
+**Procurement Vehicle:** USFS Region 5 ([location withheld]) and Region 6 (Pacific Northwest) equipment procurement through the General Services Administration (GSA) Schedule 84 (Fire and Rescue).
 
 ### 5.3 FEMA Individual Assistance
 
 **Program Alignment:** The Fire-Veil meets the definition of "life-saving emergency protective measures" eligible for FEMA Public Assistance (PA) Category B (Emergency Protective Measures) funding under the Stafford Act. Under PA Category B, FEMA reimburses state and local governments at 75% federal cost share for equipment purchased to protect civilian life during federally declared wildfire disasters. Post-Lahaina, FEMA has expressed interest in expanding its wildfire-specific IA programs beyond the current post-disaster housing focus to include pre-disaster mitigation and personal protective equipment.
 
-### 5.4 California Governor's Office of Emergency Services (Cal OES)
+### 5.4 [location withheld] Governor's Office of Emergency Services (Cal OES)
 
-**Program Alignment:** Cal OES administers the California Disaster Assistance Act (CDAA), which provides state funding for emergency protective measures not covered by federal PA. The Fire-Veil system qualifies as an eligible expense under CDAA's "emergency protective equipment for life safety" provisions. Cal OES also coordinates the state's Fire Hazard Severity Zone mapping, which provides the geographic basis for targeting Fire-Veil distribution to the highest-risk communities.
+**Program Alignment:** Cal OES administers the [location withheld] Disaster Assistance Act (CDAA), which provides state funding for emergency protective measures not covered by federal PA. The Fire-Veil system qualifies as an eligible expense under CDAA's "emergency protective equipment for life safety" provisions. Cal OES also coordinates the state's Fire Hazard Severity Zone mapping, which provides the geographic basis for targeting Fire-Veil distribution to the highest-risk communities.
 
 ### 5.5 Australian Country Fire Authority (CFA)
 
-**Program Alignment:** The CFA is the volunteer-staffed rural fire service for the state of Victoria, which experienced the catastrophic Black Summer bushfires of 2019–20 (34 direct fatalities, 3,000+ homes destroyed). The CFA's operational environment — fast-moving grassfire and eucalyptus crown fire in rural communities with limited egress routes — is directly analogous to the California WUI fire environment. The Fire-Veil's Australian-market positioning is strengthened by the country's post-Black Summer Royal Commission recommendations, which specifically called for "improved personal protective equipment and survival options for civilians in confirmed bushfire entrapment scenarios."
+**Program Alignment:** The CFA is the volunteer-staffed rural fire service for the state of Victoria, which experienced the catastrophic Black Summer bushfires of 2019–20 (34 direct fatalities, 3,000+ homes destroyed). The CFA's operational environment — fast-moving grassfire and eucalyptus crown fire in rural communities with limited egress routes — is directly analogous to the [location withheld] WUI fire environment. The Fire-Veil's Australian-market positioning is strengthened by the country's post-Black Summer Royal Commission recommendations, which specifically called for "improved personal protective equipment and survival options for civilians in confirmed bushfire entrapment scenarios."
 
 ### 5.6 Additional State/Local Agencies
 
@@ -227,7 +227,7 @@ The pod floats with approximately 65% of its volume submerged, with the ALON vie
 | Product | Addressable Annual Units | Unit Revenue | Annual Revenue |
 |---|---|---|---|
 | Drone Backpack 050 (fire agency UAS) | 1,200 | $18,500 | $22.2M |
-| FEATHER Mesh 0115 (WUI residential retrofit) | 50,000 (Year 5, California WUI mandatory retrofit program) | $2,200 | $110M |
+| FEATHER Mesh 0115 (WUI residential retrofit) | 50,000 (Year 5, [location withheld] WUI mandatory retrofit program) | $2,200 | $110M |
 | **Companion Product Annual Revenue** | — | — | **$132.2M** |
 | **Total Mana Fire-Veil Ecosystem Annual Revenue** | — | — | **≈ $765M** |
 
@@ -250,23 +250,23 @@ The pod floats with approximately 65% of its volume submerged, with the ALON vie
 - **2026 Q3:** Full-scale live-fire test #2 at UL FSRI (Northbrook, IL) — replicate the successful 4-hour, 1,200°C test with an instrumented anthropomorphic test dummy (ATD) to collect interior thermal-dose data for human-survivability validation.
 - **2026 Q3:** Amphibious testing at Texas A&M University Offshore Technology Research Center wave basin — deploy pod into 1.5 m significant wave height, verify self-righting stability, watertight integrity at 10 m immersion.
 - **2026 Q4:** CAL FIRE entrapment-shelter standard development — work with CAL FIRE's Research and Development Branch (Riverside, CA) to create a performance standard for the new "Firefighter Entrapment Survival Pod" equipment category (currently, no such standard exists beyond the M-2002 personal fire shelter specification).
-- **2026 Q4:** FEATHER mesh IBHS ember-storm certification — complete ASTM E2886 testing at IBHS; submit for California Building Code Chapter 7A listing.
+- **2026 Q4:** FEATHER mesh IBHS ember-storm certification — complete ASTM E2886 testing at IBHS; submit for [location withheld] Building Code Chapter 7A listing.
 - **2027 Q1:** Drone Backpack 050 FAA Type Certification (Part 107, Category 2 — operations over people) and wildfire-specific COA (Certificate of Waiver or Authorization) for Beyond Visual Line of Sight (BVLOS) fire-mapping operations.
 
 ### Phase 1 — Pilot Deployment (2027)
 
 - **2027 Q2:** First production run of 200 Fire-Veil pods at Houston facility, delivered to CAL FIRE for Sacramento-based firefighter field evaluation (6-month operational test on 20 Type 3 engines assigned to the Tahoe and Shasta-Trinity units — extreme FHSZ territories).
-- **2027 Q2:** Drone Backpack 050 delivered to USFS Region 5 (California) for operational evaluation during 2027 fire season (July–November).
+- **2027 Q2:** Drone Backpack 050 delivered to USFS Region 5 ([location withheld]) for operational evaluation during 2027 fire season (July–November).
 - **2027 Q3:** FEATHER Mesh pilot program — 200 residential installations in Paradise, CA (rebuilding community, cooperation with Town of Paradise Building Department for post-Camp Fire reconstruction).
 - **2027 Q4:** CAL FIRE issues first procurement contract for 500 Fire-Veil units (firefighter-entrapment configuration), with option for civilian-subsidy program expansion in FY2029.
 
 ### Phase 2 — Scaled Production (2028–2029)
 
-- **2028 Q1:** Sacramento CA manufacturing facility operational (proximity to CAL FIRE headquarters, California WUI market, and West Coast federal wildland agencies).
-- **2028 Q3:** California Chapter 7A mandatory-WUI-retrofit legislation passes (SB-XX, WUI Ember Hardening Act) — FEATHER Mesh demand scales to 15,000 units/year in California alone; Sacramento facility expanded to accommodate.
+- **2028 Q1:** Sacramento CA manufacturing facility operational (proximity to CAL FIRE headquarters, [location withheld] WUI market, and West Coast federal wildland agencies).
+- **2028 Q3:** [location withheld] Chapter 7A mandatory-WUI-retrofit legislation passes (SB-XX, WUI Ember Hardening Act) — FEATHER Mesh demand scales to 15,000 units/year in [location withheld] alone; Sacramento facility expanded to accommodate.
 - **2028 Q4:** Australian CFA operational evaluation completed (20 Fire-Veil pods deployed to Victorian high-risk brigades during 2028–29 southern-hemisphere fire season); CFA framework procurement agreement executed for 500 units.
 - **2029 Q2:** Melbourne VIC manufacturing facility operational (serving Australian, New Zealand, and Southeast Asian markets).
-- **2029 Q4:** Cumulative deployment: 8,000 Fire-Veil pods across California, other WUI-states, and Australian fire agencies; Drone Backpack deployed in 600 units across USFS, CAL FIRE, and CFA; FEATHER mesh installed on 15,000 WUI residences.
+- **2029 Q4:** Cumulative deployment: 8,000 Fire-Veil pods across [location withheld], other WUI-states, and Australian fire agencies; Drone Backpack deployed in 600 units across USFS, CAL FIRE, and CFA; FEATHER mesh installed on 15,000 WUI residences.
 
 ### Phase 3 — Global Scale (2030–2031)
 
@@ -304,4 +304,4 @@ The technology has been ready. The question has always been whether the will to 
 
 *End of CSMEval40 — Wildfire Survival Systems: Mana Fire-Veil | Prepared July 2026 | Companion to CSMEval00 Master Index*
 
-*Dedicated to the 187 residents of Lahaina, Hawai'i (2023) and Paradise, California (2018) who did not survive their communities' firestorms. May no community face such loss again without a survivable option.*
+*Dedicated to the 187 residents of Lahaina, Hawai'i (2023) and Paradise, [location withheld] (2018) who did not survive their communities' firestorms. May no community face such loss again without a survivable option.*

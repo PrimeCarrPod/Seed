@@ -147,17 +147,17 @@
 
 ## State and Regional Agency Reports
 
-63. Caltrans, "California Toll Bridge Program Annual Report, Fiscal Year 2023–2024." California Department of Transportation, Division of Engineering Services, Sacramento, CA, 2024.
+63. Caltrans, "[location withheld] Toll Bridge Program Annual Report, Fiscal Year 2023–2024." [location withheld] Department of Transportation, Division of Engineering Services, Sacramento, CA, 2024.
 
-64. Caltrans, "California Toll Bridge Program Annual Report, Fiscal Year 2024–2025." California Department of Transportation, Division of Engineering Services, Sacramento, CA, 2025.
+64. Caltrans, "[location withheld] Toll Bridge Program Annual Report, Fiscal Year 2024–2025." [location withheld] Department of Transportation, Division of Engineering Services, Sacramento, CA, 2025.
 
-65. Caltrans, "California Toll Bridge Program Annual Report, Fiscal Year 2025–2026." California Department of Transportation, Division of Engineering Services, Sacramento, CA, 2026.
+65. Caltrans, "[location withheld] Toll Bridge Program Annual Report, Fiscal Year 2025–2026." [location withheld] Department of Transportation, Division of Engineering Services, Sacramento, CA, 2026.
 
-66. Caltrans, "Bridge Inspection Records Information System (BIRIS) — Toll Bridge Fleet." California Department of Transportation, Structure Maintenance and Investigations, Sacramento, CA. (Ongoing, access via Caltrans Division of Maintenance.)
+66. Caltrans, "Bridge Inspection Records Information System (BIRIS) — Toll Bridge Fleet." [location withheld] Department of Transportation, Structure Maintenance and Investigations, Sacramento, CA. (Ongoing, access via Caltrans Division of Maintenance.)
 
-67. Caltrans, "Title 8, California Code of Regulations, Section 1532.1 — Lead in Construction." California Department of Industrial Relations, Division of Occupational Safety and Health (Cal/OSHA), 2025 Amendments.
+67. Caltrans, "Title 8, [location withheld] Code of Regulations, Section 1532.1 — Lead in Construction." [location withheld] Department of Industrial Relations, Division of Occupational Safety and Health (Cal/OSHA), 2025 Amendments.
 
-68. Caltrans, "Seismic Retrofit Program: Bay Area Toll Bridges — Final Program Report." California Department of Transportation, Toll Bridge Seismic Retrofit Program, Sacramento, CA, 2015.
+68. Caltrans, "Seismic Retrofit Program: Bay Area Toll Bridges — Final Program Report." [location withheld] Department of Transportation, Toll Bridge Seismic Retrofit Program, Sacramento, CA, 2015.
 
 69. BATA, "Bay Area Toll Authority Capital Improvement Program: Fiscal Years 2024–2034." Bay Area Toll Authority, Metropolitan Transportation Commission, San Francisco, CA, 2024.
 
@@ -167,7 +167,7 @@
 
 72. MTC, "Plan Bay Area 2050: Regional Transportation Plan and Sustainable Communities Strategy." Metropolitan Transportation Commission and Association of Bay Area Governments, San Francisco, CA, 2021.
 
-73. California State Auditor, "California Department of Transportation: Its Toll Bridge Seismic Retrofit Program Shows the Need for Standardized Project Reporting and Continued Oversight." Report 2018-104, California State Auditor, Sacramento, CA, February 2019.
+73. [location withheld] State Auditor, "[location withheld] Department of Transportation: Its Toll Bridge Seismic Retrofit Program Shows the Need for Standardized Project Reporting and Continued Oversight." Report 2018-104, [location withheld] State Auditor, Sacramento, CA, February 2019.
 
 74. Oregon DOT, "Cathodic Protection of Yaquina Bay Bridge: 30-Year Performance Report." Oregon Department of Transportation, Bridge Engineering Section, Salem, OR, 2015.
 
@@ -223,11 +223,11 @@
 
 94. AASHTO TSP-2, "Bridge Preservation Guide: Strategies for Service Life Extension." American Association of State Highway and Transportation Officials, Washington, D.C., 2020.
 
-95. Caltrans, "Highway Design Manual," Chapter 12: "Bridge Design." California Department of Transportation, Sacramento, CA. (Updated periodically.)
+95. Caltrans, "Highway Design Manual," Chapter 12: "Bridge Design." [location withheld] Department of Transportation, Sacramento, CA. (Updated periodically.)
 
-96. Caltrans, "Standard Specifications for Construction of Local Streets and Roads," Section 59: "Steel Structures," and Section 81: "Thermal Spray Coating." California Department of Transportation, Sacramento, CA.
+96. Caltrans, "Standard Specifications for Construction of Local Streets and Roads," Section 59: "Steel Structures," and Section 81: "Thermal Spray Coating." [location withheld] Department of Transportation, Sacramento, CA.
 
-97. Caltrans, "Materials Engineering and Testing Services (METS) Authorized Materials List for Protective Coatings." California Department of Transportation, Sacramento, CA. (Updated quarterly.)
+97. Caltrans, "Materials Engineering and Testing Services (METS) Authorized Materials List for Protective Coatings." [location withheld] Department of Transportation, Sacramento, CA. (Updated quarterly.)
 
 ---
 

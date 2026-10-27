@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, BOXABL. GOOOOOOOD MORNING, Paolo Tiramani and the Boxabl design team. GOOOOOOOD MORNING, to the company that proved a house can unfold in an hour and ship on a standard trailer — the most innovative prefab housing company in North America. The AEGIS Residential Safety Division is reaching out to propose the Aegis-Haven DIY safe room tile system as a complementary product line that extends Boxabl's value proposition from "affordable, fast-deploying housing" to "affordable, fast-deploying housing with integrated extreme-weather survival."
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, BOXABL. GOOOOOOOD MORNING, Paolo Tiramani and the Boxabl design team. GOOOOOOOD MORNING, to the company that proved a house can unfold in an hour and ship on a standard trailer — the most innovative prefab housing company in North America. The AEGIS Residential Safety Division is reaching out to propose the Aegis-Haven DIY safe room tile system as a complementary product line that extends Boxabl's value proposition from "affordable, fast-deploying housing" to "affordable, fast-deploying housing with integrated extreme-weather survival."
 
 **PARAGRAPH 2 — THE MISSING PRE-FAB PIECE**
 
@@ -45,11 +45,11 @@ Boxabl leadership, ACS respectfully requests a 45-minute introductory briefing �
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Residential Safety Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

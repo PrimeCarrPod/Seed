@@ -1,6 +1,6 @@
 # SANITIZED SESSION LOG — 2026-09-02 (Caldera)
 ## SubAtomic Prime Electron Caldera Research Organization
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Agent:** session/agent_c64ac33e-a0ac-4550-bb49-ee6048048fd7  
 **Date:** 2026-09-02  
 **Branch:** kilo/magnetic-seal-yt2  

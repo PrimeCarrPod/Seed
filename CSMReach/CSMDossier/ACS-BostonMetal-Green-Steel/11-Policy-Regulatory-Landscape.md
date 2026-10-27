@@ -51,7 +51,7 @@ The Biden administration's Federal Buy Clean Task Force, established in 2021, pr
 
 ### State-Level Initiatives
 
-- **California**: Buy Clean California Act establishes maximum acceptable global warming potential for steel used in state projects, declining over time
+- **[location withheld]**: Buy Clean [location withheld] Act establishes maximum acceptable global warming potential for steel used in state projects, declining over time
 - **New York**: Low Embodied Carbon Concrete Leadership Act; similar steel provisions under development
 - **Colorado, Oregon, Washington**: Buy Clean legislation enacted or under consideration
 
@@ -83,7 +83,7 @@ The expansion of compliance carbon markets globally creates a direct financial i
 |-------------|---------------------|----------------------|
 | EU ETS | €60–100/tCO₂ | €100–150/tCO₂ |
 | UK ETS | £35–75/tCO₂ | £70–120/tCO₂ |
-| California Cap-and-Trade | $30–40/tCO₂ | $50–80/tCO₂ |
+| [location withheld] Cap-and-Trade | $30–40/tCO₂ | $50–80/tCO₂ |
 | China National ETS | ¥50–80/tCO₂ | ¥100–200/tCO₂ |
 | Korea ETS | ₩10,000–20,000/tCO₂ | ₩20,000–40,000/tCO₂ |
 

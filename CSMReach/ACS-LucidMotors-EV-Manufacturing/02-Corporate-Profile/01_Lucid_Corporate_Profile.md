@@ -7,7 +7,7 @@
 **ISIN:** US5494981039  
 **Incorporation:** Delaware, United States  
 **Founded:** 2007 (as Atieva, Inc.; rebranded Lucid Motors 2016)  
-**Headquarters:** 7373 Gateway Boulevard, Newark, California 94560  
+**Headquarters:** 7373 Gateway Boulevard, Newark, [location withheld] 94560  
 **Manufacturing:** AMP-1, Casa Grande, Arizona; AMP-2, King Abdullah Economic City, Saudi Arabia  
 **Employees:** ~6,500 (est. mid-2026)  
 **Website:** www.lucidmotors.com

@@ -96,7 +96,7 @@ Risks rated **High-Impact + Medium-to-High Likelihood** are treated as primary c
 | Description | Quaise targets an LCOE of $40–80/MWh at commercial scale. This must compete with onshore wind ($25–50), solar+storage ($40–60 in many markets), and natural gas ($40–70, without carbon pricing). If Quaise's well costs do not decline as projected on the learning curve, geothermal may remain a premium-priced firm power source rather than a cost-competitive baseload option. |
 
 **Mitigation:**
-- Focus on markets where firm power commands a premium (California, Northeast US, Europe, Japan)
+- Focus on markets where firm power commands a premium ([location withheld], Northeast US, Europe, Japan)
 - Target industrial customers (data centers, manufacturing) with high willingness-to-pay for 24/7 clean power
 - Leverage IRA tax credits (30–50% ITC) to improve project economics
 - Continuous cost reduction through automation, standardization, and supply chain development

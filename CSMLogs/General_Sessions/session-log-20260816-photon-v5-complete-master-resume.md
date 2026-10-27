@@ -1,7 +1,7 @@
 # Session Log — Photon V5.0 Completion & Master Resume Setup
 **Session ID:** agent_1474395b-daea-4849-ad09-b4ee4163c318  
 **Date:** 2026-08-16  
-**Creative Director:** Jason Brodsky  
+**Creative Director:** [sender name withheld]  
 **Branch:** session/agent_1474395b-daea-4849-ad09-b4ee4163c318  
 
 ---

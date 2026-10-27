@@ -20,7 +20,7 @@ sf_install() {
     mkdir -p "${SF_SDK_BASE}/cmdline-tools"
     if [[ ! -f "${SF_SDK_BASE}/cmdline-tools/latest/bin/sdkmanager" ]]; then
         local zip="${SF_SDK_BASE}/../cmdline-tools.zip"
-        curl -k -sL "$SF_CMDTOOLS_URL" -o "$zip" 2>&1
+        curl --fail --proto '=https' --proto-redir '=https' -sL "$SF_CMDTOOLS_URL" -o "$zip" 2>&1
         local size=$(stat --printf="%s" "$zip" 2>/dev/null || echo 0)
         (( size < 100000 )) && { sf_err "Download failed (size: $size)"; return 1; }
         sf_msg "  Downloaded: $size bytes"
@@ -40,7 +40,7 @@ sf_install() {
     local plat_dir="${SF_SDK_BASE}/platforms/android-${SF_COMPILE_SDK}"
     if [[ ! -f "${plat_dir}/android.jar" ]]; then
         local zip="${SF_SDK_BASE}/../platform-${SF_COMPILE_SDK}.zip"
-        curl -k -sL "$SF_PLATFORM_URL" -o "$zip" 2>&1
+        curl --fail --proto '=https' --proto-redir '=https' -sL "$SF_PLATFORM_URL" -o "$zip" 2>&1
         local size=$(stat --printf="%s" "$zip" 2>/dev/null || echo 0)
         (( size < 100000 )) && { sf_err "Platform download failed"; return 1; }
         mkdir -p "${SF_SDK_BASE}/platforms"
@@ -56,11 +56,11 @@ sf_install() {
     local bt_dir="${SF_SDK_BASE}/build-tools/${SF_BUILD_TOOLS_VER}"
     if [[ ! -f "${bt_dir}/aapt2" ]]; then
         local zip="${SF_SDK_BASE}/../build-tools-${SF_BUILD_TOOLS_VER}.zip"
-        curl -k -sL "$SF_BT_URL" -o "$zip" 2>&1
+        curl --fail --proto '=https' --proto-redir '=https' -sL "$SF_BT_URL" -o "$zip" 2>&1
         local size=$(stat --printf="%s" "$zip" 2>/dev/null || echo 0)
         if (( size < 100000 )); then
             sf_warn "Primary URL 404, trying fallback..."
-            curl -k -sL "$SF_BT_FALLBACK" -o "$zip" 2>&1
+            curl --fail --proto '=https' --proto-redir '=https' -sL "$SF_BT_FALLBACK" -o "$zip" 2>&1
             size=$(stat --printf="%s" "$zip" 2>/dev/null || echo 0)
             (( size < 100000 )) && { sf_err "All build-tools downloads failed"; return 1; }
             SF_BUILD_TOOLS_VER="34.0.0"

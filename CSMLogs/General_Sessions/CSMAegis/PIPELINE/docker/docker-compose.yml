@@ -9,9 +9,9 @@ services:
       - "3001:3001"
     environment:
       - NODE_ENV=development
-      - DATABASE_URL=postgresql://aegis:aegis_dev@foundry-db:5432/aegis_citadel
+      - DATABASE_URL=${DATABASE_URL:?DATABASE_URL is required}
       - REDIS_URL=redis://foundry-redis:6379
-      - JWT_SECRET=${JWT_SECRET:-change_me_in_production}
+      - JWT_SECRET=${JWT_SECRET:?JWT_SECRET is required}
     volumes:
       - ../../FOUNDRY:/app
     depends_on:
@@ -31,10 +31,10 @@ services:
     image: postgres:16-alpine
     environment:
       - POSTGRES_USER=aegis
-      - POSTGRES_PASSWORD=aegis_dev
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}
       - POSTGRES_DB=aegis_citadel
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -48,7 +48,7 @@ services:
   foundry-redis:
     image: redis:7-alpine
     ports:
-      - "6379:6379"
+      - "127.0.0.1:6379:6379"
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s
@@ -99,10 +99,10 @@ services:
     ports:
       - "3002:3000"
     environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=aegis_admin
-      - GF_AUTH_ANONYMOUS_ENABLED=true
-      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer
+      - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD:?GF_SECURITY_ADMIN_PASSWORD is required}
+      - GF_AUTH_ANONYMOUS_ENABLED=${GF_AUTH_ANONYMOUS_ENABLED:-false}
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=${GF_AUTH_ANONYMOUS_ORG_ROLE:-Viewer}
     volumes:
       - grafana_data:/var/lib/grafana
       - ../monitoring/grafana-dashboards:/etc/grafana/provisioning/dashboards

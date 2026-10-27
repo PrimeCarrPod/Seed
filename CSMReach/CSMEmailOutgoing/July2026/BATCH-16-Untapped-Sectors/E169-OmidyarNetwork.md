@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, OMIDYAR NETWORK. GOOOOOOOD MORNING, to the philanthropic investment firm that redefined "impact investing" by proving that market-based approaches can advance social good at scale — a philosophy that aligns perfectly with the open-source hardware movement the AEGIS Humanitarian Systems Division is building through Carr-Forge. We are reaching out to present Carr-Forge as an open-source infrastructure platform for community resilience, and CarrSongs — 14 original disaster preparedness and health education songs licensed Creative Commons Attribution-ShareAlike (CC-BY-SA) — as a demonstration of the cultural content layer that makes resilience infrastructure accessible, memorable, and locally adaptable.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, OMIDYAR NETWORK. GOOOOOOOD MORNING, to the philanthropic investment firm that redefined "impact investing" by proving that market-based approaches can advance social good at scale — a philosophy that aligns perfectly with the open-source hardware movement the AEGIS Humanitarian Systems Division is building through Carr-Forge. We are reaching out to present Carr-Forge as an open-source infrastructure platform for community resilience, and CarrSongs — 14 original disaster preparedness and health education songs licensed Creative Commons Attribution-ShareAlike (CC-BY-SA) — as a demonstration of the cultural content layer that makes resilience infrastructure accessible, memorable, and locally adaptable.
 
 **PARAGRAPH 2 — THE OPEN-SOURCE INFRASTRUCTURE THESIS**
 
@@ -39,17 +39,17 @@ Omidyar Network, your organization's unique value proposition in the philanthrop
 
 **PARAGRAPH 8 — CALL TO ACTION**
 
-Omidyar Network leadership, ACS respectfully requests a 60-minute briefing — available virtually or in person at your Redwood City office — with your Property Rights, Governance & Citizen Engagement, and Financial Inclusion initiative teams. We can present the Carr-Forge platform demonstration (live access to the full manufacturing documentation for the N-Node and Share-Pod), the CERN-OHL-S 2.0 license legal architecture, the CarrSongs playlist with lyrics and translations in 5 languages, and the recoverable grant term sheet. The foundation of the 21st-century economy is not code — it's hardware that communities can make, modify, and maintain themselves. Carr-Forge makes that foundation open-source. The return on investment is measured in manufacturing jobs created, supply chain dependencies eliminated, and communities that don't wait for a shipment from California to turn the lights on.
+Omidyar Network leadership, ACS respectfully requests a 60-minute briefing — available virtually or in person at your Redwood City office — with your Property Rights, Governance & Citizen Engagement, and Financial Inclusion initiative teams. We can present the Carr-Forge platform demonstration (live access to the full manufacturing documentation for the N-Node and Share-Pod), the CERN-OHL-S 2.0 license legal architecture, the CarrSongs playlist with lyrics and translations in 5 languages, and the recoverable grant term sheet. The foundation of the 21st-century economy is not code — it's hardware that communities can make, modify, and maintain themselves. Carr-Forge makes that foundation open-source. The return on investment is measured in manufacturing jobs created, supply chain dependencies eliminated, and communities that don't wait for a shipment from [location withheld] to turn the lights on.
 
 **PARAGRAPH 9 — SIGNATURE**
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Humanitarian Systems Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

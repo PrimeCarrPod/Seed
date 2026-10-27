@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-01 | July 2026
 
 **TO:** Reinsurance Association of America, Washington D.C. — Government & Industry Affairs
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** The reinsurance treaty column that's currently blank — and the data to fill it
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: Ready to present at the Bermuda Risk Summit or directly to your membe
 
 You built the model. We just want to make sure the mitigation column isn't blank.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) communication standards | July 2026*

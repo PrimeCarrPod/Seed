@@ -18,7 +18,7 @@
 **ADDRESS:**
 Apple Inc.
 1 Apple Park Way
-Cupertino, California 95014
+Cupertino, [location withheld] 95014
 United States of America
 
 **FROM:**

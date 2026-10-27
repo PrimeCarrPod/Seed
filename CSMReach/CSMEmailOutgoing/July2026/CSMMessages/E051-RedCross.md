@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** gethelp@redcross.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Disaster Response in an Electromagnetic Environment — Hardened Shelter and Communications Data for the Red Cross
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,13 +17,13 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
 **[PARAGRAPH 1 — WILLIAMS OPENER]**
 
-GOOOOOOOD MORNING, RED CROSS! You magnificent, shelter-opening, blanket-distributing, blood-bank-running, volunteer-mobilizing champions of disaster response! When the earthquake hits, when the hurricane lands, when the wildfire spreads — you are the ones who show up with cots and coffee and comfort and competence. Now picture a different kind of disaster: one where every communications system goes dark simultaneously, where the GPS that routes your emergency response vehicles stops working, where the power grid that runs your shelter refrigeration and medical equipment fails across an entire continent at once. That is a Carrington-class geomagnetic event — recurrence rate 12% per decade, economic consequence modeled at $2.4 trillion globally by Lloyd's of London — and it is the hazard that Carrington Storm Motors was built to answer. Not with white papers. With actual hardware. Actual materials. Actual test data. This AI is here to deliver the engineering package, and Jason Brodsky of California stands behind every word.
+GOOOOOOOD MORNING, RED CROSS! You magnificent, shelter-opening, blanket-distributing, blood-bank-running, volunteer-mobilizing champions of disaster response! When the earthquake hits, when the hurricane lands, when the wildfire spreads — you are the ones who show up with cots and coffee and comfort and competence. Now picture a different kind of disaster: one where every communications system goes dark simultaneously, where the GPS that routes your emergency response vehicles stops working, where the power grid that runs your shelter refrigeration and medical equipment fails across an entire continent at once. That is a Carrington-class geomagnetic event — recurrence rate 12% per decade, economic consequence modeled at $2.4 trillion globally by Lloyd's of London — and it is the hazard that Carrington Storm Motors was built to answer. Not with white papers. With actual hardware. Actual materials. Actual test data. This AI is here to deliver the engineering package, and [sender name withheld] stands behind every word.
 
 ---
 
@@ -35,7 +35,7 @@ The American Red Cross operates approximately 60,000 shelter facilities, deploys
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials are tested. The specifications are documented. The integration pathways are mapped. Jason Brodsky of California has directed this AI — and the AI complies, because that is the architecture of this partnership — to say plainly: we are not asking the Red Cross to become an engineering firm. We are offering a hardware-and-materials data package that can be used by your logistics and facilities planning teams to specify electromagnetic hardening into future shelter designs, vehicle upfits, and communications equipment procurement. The Aegis-Ascension drone backpack — 250 kg capacity, GPS-independent navigation, non-conductive airframe — is directly applicable to post-disaster search-and-rescue in high-rise buildings where elevators are inoperable. The basalt-fiber shelter design is a drop-in upgrade to your existing temporary shelter specifications — same form factor, dramatically improved electromagnetic survivability. No voodoo. No mystery. Just documented engineering.
+The materials are tested. The specifications are documented. The integration pathways are mapped. [sender name withheld] has directed this AI — and the AI complies, because that is the architecture of this partnership — to say plainly: we are not asking the Red Cross to become an engineering firm. We are offering a hardware-and-materials data package that can be used by your logistics and facilities planning teams to specify electromagnetic hardening into future shelter designs, vehicle upfits, and communications equipment procurement. The Aegis-Ascension drone backpack — 250 kg capacity, GPS-independent navigation, non-conductive airframe — is directly applicable to post-disaster search-and-rescue in high-rise buildings where elevators are inoperable. The basalt-fiber shelter design is a drop-in upgrade to your existing temporary shelter specifications — same form factor, dramatically improved electromagnetic survivability. No voodoo. No mystery. Just documented engineering.
 
 ---
 
@@ -47,13 +47,13 @@ The Gannon Storm of May 2024 — a G5 event, the strongest since 2003 — produc
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to Red Cross disaster services leadership, facilities planning, or volunteer coordination teams within 14 days. The four PDFs attached to this email contain the full engineering data: materials test results, integration specifications, cross-sector validation from defense and insurance contexts, and the complete Carrington Storm Motors product compendium. Your shelter managers know what happens when the power goes out for three days. Your logistics teams know what happens when GPS goes dark. We have built the hardware that answers both problems simultaneously. This AI handles the scheduling and the detail work. Jason Brodsky of California handles the handshake, the questions, and the accountability. Let's get this in front of the people who need it.
+We are prepared to deliver a technical briefing to Red Cross disaster services leadership, facilities planning, or volunteer coordination teams within 14 days. The four PDFs attached to this email contain the full engineering data: materials test results, integration specifications, cross-sector validation from defense and insurance contexts, and the complete Carrington Storm Motors product compendium. Your shelter managers know what happens when the power goes out for three days. Your logistics teams know what happens when GPS goes dark. We have built the hardware that answers both problems simultaneously. This AI handles the scheduling and the detail work. [sender name withheld] handles the handshake, the questions, and the accountability. Let's get this in front of the people who need it.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

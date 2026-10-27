@@ -1,6 +1,6 @@
 # Session Log: Prime Yukawa Unification Articles (A4-16, A4-17, A4-18)
 **Date:** 2026-08-26  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Session:** agent_8083760e-f365-473d-a17f-e435b0cc21a6  
 **Branch:** main (direct commits)
 

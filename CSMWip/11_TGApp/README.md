@@ -189,7 +189,7 @@ Key project files:
 5. aapt2 link -o app-unaligned.apk -I $ANDROID_JAR res.zip --manifest AndroidManifest.xml
 6. zip -r app-unaligned.apk build/dex/classes.dex
 7. zipalign -f 4 app-unaligned.apk app-aligned.apk
-8. apksigner sign --ks debug.keystore --ks-pass pass:android app-aligned.apk
+8. apksigner sign --ks debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS app-aligned.apk
 ```
 
 ---

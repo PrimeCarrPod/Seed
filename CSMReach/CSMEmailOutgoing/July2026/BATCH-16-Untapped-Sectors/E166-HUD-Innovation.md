@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, HUD OFFICE OF INNOVATION. GOOOOOOOD MORNING, Department of Housing and Urban Development. GOOOOOOOD MORNING, to the federal agency responsible for the Community Development Block Grant-Disaster Recovery (CDBG-DR) program — the largest single source of post-disaster housing funding in the United States, with $143 billion in CDBG-DR appropriations since 2001. The AEGIS Community Architecture Division is reaching out to present Lonsdaleite Outskirt Communities as a CDBG-DR-eligible, factory-manufactured, disaster-resilient community housing system that addresses the federal government's most persistent post-disaster housing problem: the 2–5 year gap between a disaster declaration and the completion of replacement housing.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, HUD OFFICE OF INNOVATION. GOOOOOOOD MORNING, Department of Housing and Urban Development. GOOOOOOOD MORNING, to the federal agency responsible for the Community Development Block Grant-Disaster Recovery (CDBG-DR) program — the largest single source of post-disaster housing funding in the United States, with $143 billion in CDBG-DR appropriations since 2001. The AEGIS Community Architecture Division is reaching out to present Lonsdaleite Outskirt Communities as a CDBG-DR-eligible, factory-manufactured, disaster-resilient community housing system that addresses the federal government's most persistent post-disaster housing problem: the 2–5 year gap between a disaster declaration and the completion of replacement housing.
 
 **PARAGRAPH 2 — THE CDBG-DR TIMELINE PROBLEM**
 
@@ -45,11 +45,11 @@ HUD Office of Innovation leadership, ACS respectfully requests a 60-minute techn
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Community Architecture Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, NATIONAL PARK SERVICE SUSTAINABLE DESIGN. GOOOOOOOD MORNING, NPS. GOOOOOOOD MORNING, to the stewards of 85 million acres of public lands — the landscapes that define the American conservation ethic. The AEGIS Public Lands Division is reaching out to present the Aegis Bio-Path road system — an interlocking BFRP road tile with 85% ground permeability, 90-second individual tile replacement, integrated FEATHER mesh antenna conduits, and wildlife corridor preservation — as the next-generation access infrastructure for National Park lands.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, NATIONAL PARK SERVICE SUSTAINABLE DESIGN. GOOOOOOOD MORNING, NPS. GOOOOOOOD MORNING, to the stewards of 85 million acres of public lands — the landscapes that define the American conservation ethic. The AEGIS Public Lands Division is reaching out to present the Aegis Bio-Path road system — an interlocking BFRP road tile with 85% ground permeability, 90-second individual tile replacement, integrated FEATHER mesh antenna conduits, and wildlife corridor preservation — as the next-generation access infrastructure for National Park lands.
 
 **PARAGRAPH 2 — THE PARK ROAD DILEMMA**
 
@@ -45,11 +45,11 @@ NPS Sustainable Design & Denver Service Center leadership, ACS respectfully requ
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Public Lands Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

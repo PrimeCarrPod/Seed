@@ -24,14 +24,15 @@ TOKEN: place at /tmp/starlight_token.json
 """
 
 import subprocess, json, os, urllib.request, urllib.parse, base64, re, time, random, sys, argparse
+from secure_token import load_access_token
 
 # ─── CONFIG ────────────────────────────────────────────
-TOKEN_PATH = '/tmp/agent_66c9dc83-0ae4-46ee-9f4d-67ca2d344f74/csm_token.json'
-WORKSPACE  = '/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_66c9dc83-0ae4-46ee-9f4d-67ca2d344f74'
+TOKEN_PATH = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/csm_token.json")
+WORKSPACE  = os.environ.get("CSM_WORKSPACE", os.getcwd())
 ATTACH_DIR = os.path.join(WORKSPACE, 'CSMEmailOutgoing', 'July2026', 'ATTACHMENTS')
 BATCH_ROOT = os.path.join(WORKSPACE, 'CSMEmailOutgoing', 'July2026')
 GRAPH_BASE = 'https://graph.microsoft.com/v1.0'
-SENDER_EMAIL = 'zirconia@aegisc.space'
+SENDER_EMAIL = '[email withheld]'
 
 ATTACHMENT_PDFS = [
     'CSMEval11-COMPILED-Briefing-Packet.pdf',
@@ -43,18 +44,17 @@ PRETTY_SIGNATURE = '''
 <br>
 <table style="border-top:3px solid #1a5276;padding-top:15px;margin-top:30px;width:100%;">
 <tr><td style="font-family:Georgia,serif;">
-<p style="margin:0;font-size:15px;color:#1a5276;"><strong>Jason Brodsky</strong></p>
+<p style="margin:0;font-size:15px;color:#1a5276;"><strong>[sender name withheld]</strong></p>
 <p style="margin:4px 0;font-size:13px;color:#444;">Director of External Affairs &amp; Strategic Partnerships</p>
 <p style="margin:2px 0;font-size:13px;color:#444;">Carrington Storm Motors &middot; Safe Pod Engineering Company</p>
-<p style="margin:2px 0;font-size:12px;color:#888;">zirconia@aegisc.space &middot; aegisc.space &middot; San Francisco, California</p>
+<p style="margin:2px 0;font-size:12px;color:#888;">[email withheld] &middot; aegisc.space &middot; [location withheld]</p>
 <p style="margin-top:12px;font-size:10px;color:#aaa;font-style:italic;">Composed by AI under human direction &middot; CSMSOPP000001 (Williams) + CSMSOPP000003 (Baker Street)<br>All technical content human-reviewed. All outreach decisions human-made. July 2026.</p>
 </td></tr></table>
 '''
 
 # ─── GRAPH API ─────────────────────────────────────────
 def load_token():
-    with open(TOKEN_PATH) as f:
-        return json.load(f)['access_token']
+    return load_access_token(TOKEN_PATH)
 
 def graph_call(token, path, body=None, method='GET'):
     url = GRAPH_BASE + path
@@ -248,7 +248,7 @@ def main():
     parser.add_argument('--batch', required=True, help='Batch directory name (e.g. BATCH-05-Marine-Maritime)')
     parser.add_argument('--email', help='Specific email file (e.g. E036.md)')
     parser.add_argument('--test', action='store_true', help='Send test to yourself instead of real recipients')
-    parser.add_argument('--test-addr', default='jasonbrodsky@hotmail.com', help='Test email address')
+    parser.add_argument('--test-addr', default='[email withheld]', help='Test email address')
     parser.add_argument('--pace-min', type=int, default=45, help='Minimum seconds between sends')
     parser.add_argument('--pace-max', type=int, default=120, help='Maximum seconds between sends')
     parser.add_argument('--live', action='store_true', help='Actually send to real recipients (required for real sends)')

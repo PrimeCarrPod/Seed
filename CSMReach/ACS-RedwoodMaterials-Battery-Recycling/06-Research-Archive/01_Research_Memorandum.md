@@ -31,7 +31,7 @@ The global second-life battery storage market is projected to reach $62.7 billio
 
 - Rapid renewable energy penetration (wind + solar projected to represent 40–50% of US generation by 2030)
 - Federal Investment Tax Credit (ITC) for standalone energy storage (30% through 2032, phasing to 10% by 2035)
-- State-level storage mandates (California 12 GW by 2030, New York 6 GW by 2030)
+- State-level storage mandates ([location withheld] 12 GW by 2030, New York 6 GW by 2030)
 - Data center power demand growth (projected 35 GW of new data center capacity additions in the US by 2030)
 - Aging thermal generation retirements (50+ GW of coal and gas plant retirements forecast by 2030)
 

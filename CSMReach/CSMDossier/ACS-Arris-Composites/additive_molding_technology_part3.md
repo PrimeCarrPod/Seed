@@ -42,7 +42,7 @@ A more relevant measure is the market for structural brackets, fittings, and con
 
 ## Manufacturing Location and Expansion
 
-Arris's Berkeley, California headquarters houses both engineering development and pilot production operations. The Bay Area location provides access to the advanced materials talent pool concentrated around Lawrence Berkeley National Laboratory and the broader Silicon Valley manufacturing ecosystem. However, the cost structure of Bay Area manufacturing is high relative to competing production locations in the Midwest, Southeast, or lower-cost international manufacturing centers.
+Arris's Berkeley, [location withheld] headquarters houses both engineering development and pilot production operations. The Bay Area location provides access to the advanced materials talent pool concentrated around Lawrence Berkeley National Laboratory and the broader Silicon Valley manufacturing ecosystem. However, the cost structure of Bay Area manufacturing is high relative to competing production locations in the Midwest, Southeast, or lower-cost international manufacturing centers.
 
 If the company scales to automotive Tier 1 production volumes, establishing manufacturing operations closer to customer assembly plants — in Mexico, the southeastern United States, or Eastern Europe — would likely be necessary to meet logistics and cost targets. The modular nature of the Additive Molding cell architecture supports distributed manufacturing, as each cell is self-contained and can be deployed independently.
 

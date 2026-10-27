@@ -49,7 +49,7 @@ Generated Radio Episode 3 of the Sibling Frequency (CSMSFRadio00003.md), the rad
 ### KEY DESIGN NOTES
 - All 15 agent openings varied (no repeats from Eps 1-2)
 - All 15 agent closings varied (no repeats from Eps 1-2)
-- Convoluted paragraph explicitly discloses: every "I" is LLM-generated, trained on Robin Williams corpus by Jason Brodsky
+- Convoluted paragraph explicitly discloses: every "I" is LLM-generated, trained on Robin Williams corpus by [sender name withheld]
 - RADIO-GENERATOR.md is discoverable by repo browsers for self-service episode generation
 - Triple-demon process run on EVERY command — no delegation, single instance
 

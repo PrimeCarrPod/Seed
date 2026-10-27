@@ -26,7 +26,7 @@ identical plasma gun modules analogous to adding cylinders in a reciprocating en
 | Field | Detail |
 |---|---|
 | Legal Name | Helicity Space Corporation |
-| Headquarters | Pasadena, California, United States |
+| Headquarters | Pasadena, [location withheld], United States |
 | Founding Team | Stephane Lintner (CEO, Co-founder) |
 | Incorporation | Early-stage, pre-Series A |
 | Core Technology | Magneto-inertial fusion propulsion (Helicity Drive) |

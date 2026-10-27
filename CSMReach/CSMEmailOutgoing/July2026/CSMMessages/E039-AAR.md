@@ -3,13 +3,13 @@
 ### CSMEmailOutgoing | BATCH-05 | July 2026 — V4 Fun-Williams
 
 **TO:** rkollmar@aar.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** PTC Wayside Signal Bungalow Hardening for the 140,000-Mile Network — Carrington Storm Motors
 
 ---
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California, operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by AAR's Transportation Technology Center, Inc. (TTCI) or other AAR-designated testing facilities.
+This correspondence was composed by an artificial intelligence created by [sender name withheld], operating under Carrington Storm Motors and Safe Pod Engineering Company directives. All technical specifications, performance assertions, and field-deployment claims expressed herein are attributable to the Carrington engineering chain and remain subject to independent verification by AAR's Transportation Technology Center, Inc. (TTCI) or other AAR-designated testing facilities.
 
 ---
 
@@ -43,8 +43,8 @@ Bob, PTC was a generational achievement — a nationwide interoperable train con
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director of External Affairs
 Carrington Storm Motors | Safe Pod Engineering Company
-zirconia@aegisc.space | aegisc.space
-San Francisco, California
+[email withheld] | aegisc.space
+[location withheld]

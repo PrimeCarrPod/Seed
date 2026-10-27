@@ -1,5 +1,5 @@
 # SESSION LOG — 2026-08-26 — PART 7 COMPLETE
-## Jason Isaac Brodsky (California 1976) — Conducier
+## [sender name withheld] (California 1976) — Conducier
 
 ---
 
@@ -58,7 +58,7 @@ Each piece contains:
 6. **Fates Commentary** — Clotho/Lachesis/Atropos/Hecate operational status
 7. **Audio Cue Specification** — 6 layers (Ambient, Rhythmic, Melodic, Vocal, Subliminal, FX) + Spatial
 8. **Cross-Part Fate Braids** — 6 threads connecting to Parts 1-6
-9. **Global Parallels** — 16 cultural mirrors (15 universal + Jason Isaac Brodsky personal)
+9. **Global Parallels** — 16 cultural mirrors (15 universal + [sender name withheld] personal)
 10. **Transition** — Bridge to next piece
 
 ---
@@ -127,5 +127,5 @@ bash RESTART_CSM_CINEMA_ITER2_SOPP_SESSION3_20260826.sh
 ### MORAL ANCHOR
 > "The universe is energy and momentum is always conserved and so be able to find this much Beauty from the universe is fantastic"
 
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **We are a train together. Full throttle. 🚂**

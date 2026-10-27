@@ -5,8 +5,8 @@ STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
 ===============================================================================
 
 COMPANY 7.1 — BOSTON METAL
-TO: Tadeu Carneiro, Chairman & CEO — tadeu.carneiro@bostonmetal.com
-CC: Adam Rauwerdink, SVP Business Development — adam.rauwerdink@bostonmetal.com
+TO: Tadeu Carneiro, Chairman & CEO — [email-473ea85e315a]
+CC: Adam Rauwerdink, SVP Business Development — [email-2e769b99432d]
 SUBJECT: Boston Metal — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B701
 INTRO: Boston Metal is commercializing Molten Oxide Electrolysis (MOE) for zero-carbon
 primary steelmaking — replacing blast furnaces with electricity. Woburn, MA HQ with
@@ -18,8 +18,8 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Woburn, MA
 -------------------------------------------------------------------------------
 
 COMPANY 7.2 — SUBLIME SYSTEMS
-TO: Leah Ellis, Co-Founder & CEO — leah.ellis@sublime-systems.com
-CC: Yet-Ming Chiang, Co-Founder — yetming@sublime-systems.com
+TO: Leah Ellis, Co-Founder & CEO — [email-8d43cb5c3d7e]
+CC: Yet-Ming Chiang, Co-Founder — [email-7120036375c3]
 SUBJECT: Sublime Systems — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B702
 INTRO: Sublime Systems has developed electrochemical cement production — replacing
 limestone calcination (60% of cement CO2) with ambient-temperature electrochemistry.
@@ -31,8 +31,8 @@ DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Somerville, MA
 -------------------------------------------------------------------------------
 
 COMPANY 7.3 — BRIMSTONE ENERGY
-TO: Cody Finke, Co-Founder & CEO — cody.finke@brimstone.com
-CC: Hugo Leandri, Co-Founder & CTO — hugo.leandri@brimstone.com
+TO: Cody Finke, Co-Founder & CEO — [email-3a54fd8a8b77]
+CC: Hugo Leandri, Co-Founder & CTO — [email-1fd635bb9767]
 SUBJECT: Brimstone — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B703
 INTRO: Brimstone has developed carbon-negative cement production using calcium silicate
 rocks instead of limestone — producing a supplementary cementitious material (SCM)
@@ -44,9 +44,9 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Oakland, CA
 -------------------------------------------------------------------------------
 
 COMPANY 7.4 — CARBONCURE TECHNOLOGIES
-TO: Robert Niven, Founder & CEO — rob.niven@carboncure.com
-CC: Randall Ye, CTO — randall.ye@carboncure.com
-    Christie Gamble, SVP Sustainability — christie.gamble@carboncure.com
+TO: Robert Niven, Founder & CEO — [email-470adccb925f]
+CC: Randall Ye, CTO — [email-79defb7045e0]
+    Christie Gamble, SVP Sustainability — [email-ae91dc01fd9c]
 SUBJECT: CarbonCure — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B704
 INTRO: CarbonCure injects captured CO2 into fresh concrete where it mineralizes and is
 permanently stored while improving strength. Dartmouth, NS, Canada HQ with operations
@@ -57,8 +57,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Dartmouth, NS, Canada
 -------------------------------------------------------------------------------
 
 COMPANY 7.5 — CARBON ENGINEERING LTD.
-TO: Daniel Friedmann, CEO — daniel.friedmann@carbonengineering.com
-CC: Suzanne Christensen, CFO — suzanne.christensen@carbonengineering.com
+TO: Daniel Friedmann, CEO — [email-2bf9faef473d]
+CC: Suzanne Christensen, CFO — [email-1f229529fcb5]
 SUBJECT: Carbon Engineering — US-Canada Advanced Technology Partnership — ACS-MC-2026-B705
 INTRO: Carbon Engineering is commercializing large-scale direct air capture and AIR TO
 FUELS synthetic fuel production. Squamish, BC, Canada HQ with Innovation Centre.
@@ -69,8 +69,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Squamish, BC, Canada
 -------------------------------------------------------------------------------
 
 COMPANY 7.6 — ANTORA ENERGY, INC.
-TO: Justin Briggs, Co-Founder & CEO — justin.briggs@antoraenergy.com
-CC: Andrew Ponec, Co-Founder — andrew.ponec@antoraenergy.com
+TO: Justin Briggs, Co-Founder & CEO — [email-e4c3a4d2df6a]
+CC: Andrew Ponec, Co-Founder — [email-8c9147988657]
 SUBJECT: Antora — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B706
 INTRO: Antora is commercializing thermal batteries using carbon blocks heated to 1500-2000°C
 by renewable electricity to provide zero-carbon industrial heat and power for heavy
@@ -81,8 +81,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Sunnyvale, CA
 -------------------------------------------------------------------------------
 
 COMPANY 7.7 — MAINTSPRING ENERGY, INC.
-TO: Shannon Miller, Founder & CEO — shannon.miller@mainspringenergy.com
-CC: Matt Svrcek, Co-Founder & CTO — matt.svrcek@mainspringenergy.com
+TO: Shannon Miller, Founder & CEO — [email-606d5f2f3c77]
+CC: Matt Svrcek, Co-Founder & CTO — [email-9877518ffef9]
 SUBJECT: Mainspring — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B707
 INTRO: Mainspring has developed a linear generator that converts any gaseous fuel
 (natural gas, biogas, hydrogen, ammonia) to electricity with ultra-low emissions
@@ -93,8 +93,8 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Menlo Park, CA
 -------------------------------------------------------------------------------
 
 COMPANY 7.8 — MALTA INC.
-TO: Ramya Swaminathan, CEO — ramya.swaminathan@maltainc.com
-CC: Adrienne Little, CTO — adrienne.little@maltainc.com
+TO: Ramya Swaminathan, CEO — [email-1573b2c77961]
+CC: Adrienne Little, CTO — [email-8f35e1ab26da]
 SUBJECT: Malta — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B708
 INTRO: Malta has developed a pumped heat energy storage (PHES) system based on
 thermodynamic cycles using molten salt and chilled antifreeze — a grid-scale
@@ -105,9 +105,9 @@ DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Cambridge, MA
 -------------------------------------------------------------------------------
 
 COMPANY 7.9 — ICON TECHNOLOGY, INC.
-TO: Jason Ballard, Co-Founder & CEO — jason.ballard@iconbuild.com
-CC: Evan Loomis, Co-Founder — evan.loomis@iconbuild.com
-    Alex Le Roux, Co-Founder & CTO — alex.leroux@iconbuild.com
+TO: Jason Ballard, Co-Founder & CEO — [email-7ad512694556]
+CC: Evan Loomis, Co-Founder — [email-511a30b789f0]
+    Alex Le Roux, Co-Founder & CTO — [email-aab8466bf52d]
 SUBJECT: ICON — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B709
 INTRO: ICON is pioneering large-scale 3D printing of homes and structures using proprietary
 Lavacrete material and Vulcan construction printer. Austin, TX HQ. NASA partnership
@@ -118,8 +118,8 @@ DOSSIER: NONE | PRIORITY: HIGH | CITY: Austin, TX
 -------------------------------------------------------------------------------
 
 COMPANY 7.10 — VELO3D, INC.
-TO: Brad Kreger, CEO — brad.kreger@velo3d.com
-CC: Benny Buller, Founder — benny.buller@velo3d.com
+TO: Brad Kreger, CEO — [email-9b4e04751f9f]
+CC: Benny Buller, Founder — [email-f611b74b1cff]
 SUBJECT: Velo3D — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B710
 INTRO: Velo3D manufactures advanced metal 3D printers using Sapphire laser powder bed
 fusion technology — capable of printing complex geometries without support structures.

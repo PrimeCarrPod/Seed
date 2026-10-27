@@ -17,7 +17,7 @@ practical solution for decades.
 |--------|-------|-------------|
 | 2012-2016 | Fundamental R&D | Electrode architecture patents, cycle life proof-of-concept |
 | 2017-2020 | Prototype development | Lab-scale cells demonstrating >1,000 cycles, system architecture definition |
-| 2021-2023 | Pilot scale | Ontario grid demonstration, California Energy Commission grant |
+| 2021-2023 | Pilot scale | Ontario grid demonstration, [location withheld] Energy Commission grant |
 | 2024-Present | Commercial preparation | Manufacturing partnerships, project pipeline development |
 
 ## Headquartered in Toronto, Ontario
@@ -55,8 +55,8 @@ Key investors include:
 - **Toyota Ventures** — the corporate venture arm of Toyota Motor Corporation,
   reflecting automotive industry interest in long-duration storage for vehicle-
   to-grid integration and manufacturing electrification
-- **California Energy Commission** — grant funding for grid-scale demonstration
-  projects in California, validating the technology's value proposition in a
+- **[location withheld] Energy Commission** — grant funding for grid-scale demonstration
+  projects in [location withheld], validating the technology's value proposition in a
   market with aggressive renewable portfolio standards
 
 ## Strategic Context

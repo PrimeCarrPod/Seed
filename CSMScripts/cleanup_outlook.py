@@ -8,15 +8,16 @@ INVOKE:
 
 AUTH:
     Requires token at /tmp/kilo/hotmail_token.json (device code flow)
-    Run dual_starlight_express.py --live --account jasonbrodsky@hotmail.com first to auth.
+    Run dual_starlight_express.py --live --account [email withheld] first to auth.
 """
 
 import json, urllib.request, urllib.parse, re, time, sys, argparse, os
 from datetime import datetime, timedelta
+from secure_token import load_access_token
 
 sys.stdout.reconfigure(line_buffering=True) if hasattr(sys.stdout, 'reconfigure') else None
 
-TOKEN_PATH = '/tmp/kilo/hotmail_token.json'
+TOKEN_PATH = os.environ.get("CSM_TOKEN_PATH", "/tmp/kilo/hotmail_token.json")
 GRAPH_BASE = 'https://graph.microsoft.com/v1.0'
 
 # ─── JUNK DETECTION (from sweep_ads.py) ──────────────────
@@ -61,12 +62,11 @@ PHISHING_PATTERNS = [
 
 # ─── GRAPH API ────────────────────────────────────────────
 def load_token():
-    with open(TOKEN_PATH) as f:
-        t = json.load(f)
-    if t.get('expires_on', 0) < time.time() + 60:
-        print('❌ Token expired. Run dual_starlight_express.py --live to refresh.')
+    try:
+        return load_access_token(TOKEN_PATH)
+    except PermissionError as exc:
+        print(f'❌ {exc}')
         sys.exit(1)
-    return t['access_token']
 
 HEADERS = {'Authorization': f'Bearer {load_token()}', 'Content-Type': 'application/json'}
 
@@ -304,7 +304,7 @@ def main():
     
     print(f'\n{"="*60}')
     print(f'OUTLOOK CLEANUP - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
-    print(f'Account: jasonbrodsky@hotmail.com')
+    print(f'Account: {os.environ.get("CSM_ACCOUNT_EMAIL", "configured account")}')
     print(f'Folder: {args.folder}')
     print(f'{"="*60}\n')
     

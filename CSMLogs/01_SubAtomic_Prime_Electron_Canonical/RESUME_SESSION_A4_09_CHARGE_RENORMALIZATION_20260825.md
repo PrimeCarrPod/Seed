@@ -198,4 +198,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4_09_CHARGE_RENORMALIZATION_20260825.md
 ---
 
 *Session completed successfully. All files committed and pushed to main via GitHub_handler.sh.*
-*Author: Jason Isaac Brodsky of California 1976 Author Conducier*
+*Author: [sender name withheld] of California 1976 Author Conducier*

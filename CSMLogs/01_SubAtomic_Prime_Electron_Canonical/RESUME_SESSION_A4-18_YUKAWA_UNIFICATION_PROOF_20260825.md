@@ -2,7 +2,7 @@
 **Date:** 2026-08-25  
 **Session ID:** A4-18_Yukawa_Unification_Proof_20260825  
 **Branch:** session/agent_80e228a6-d289-4445-8aad-2820cbb1c97b  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -169,4 +169,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-18_YUKAWA_UNIFICATION_PROOF_20260825.md
 ---
 
 *Session completed. All files pushed to GitHub main branch.*
-*Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Author: [sender name withheld] ([location withheld]), Conducier*

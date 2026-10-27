@@ -1,7 +1,7 @@
 # START INSTRUCTIONS — LEGAL ACTS 06, 08, 09, 10 (NEXT SESSION)
 
 **Project:** Legal Enactment Documents — Draft 4 Pending Acts  
-**Author:** Jason Isaac Brodsky (California 1976) — Conducier  
+**Author:** [sender name withheld] (California 1976) — Conducier  
 **Date:** 2026-08-29  
 **Session Status:** 3 SECTIONS COMPLETE (Act 06: Sections 00, 01, 02)
 
@@ -138,4 +138,4 @@ bash CSM_WIP/LegalActs_06_08_09_10/scripts/legal_acts_handler.sh create-section 
 
 *Document: START_INSTRUCTIONS_NEXT_SESSION.md*  
 *Location: CSM_WIP/LegalActs_06_08_09_10/master_todo/*  
-*Author: Jason Isaac Brodsky (California 1976) — Conducier*
+*Author: [sender name withheld] (California 1976) — Conducier*

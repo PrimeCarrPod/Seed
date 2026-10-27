@@ -50,7 +50,7 @@
 ## United States and Other National Regulations
 
 25. United States Environmental Protection Agency, Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) registration requirements for antifouling paint products, 40 CFR Part 152.
-26. California Department of Pesticide Regulation, Copper Antifouling Paint Leach Rate Limits for Recreational and Commercial Vessels, California Code of Regulations, Title 3, Section 6190.
+26. [location withheld] Department of Pesticide Regulation, Copper Antifouling Paint Leach Rate Limits for Recreational and Commercial Vessels, [location withheld] Code of Regulations, Title 3, Section 6190.
 27. Washington State Department of Ecology, Antifouling Boat Paint Alternatives Assessment Report, Publication No. 22-04-013, July 2022.
 
 ---

@@ -2,7 +2,7 @@
 ## Arithmetic Physics — 8 Grant Proposals Ready as Email Drafts
 
 **Completed:** 2026-09-03  
-**Account:** jasonbrodsky@hotmail.com  
+**Account:** [email withheld]  
 **Authentication:** Microsoft Graph API (token refreshed, valid)  
 **Framework:** Arithmetic Physics — Deriving Physical Law from Prime Numbers
 
@@ -15,14 +15,14 @@ All proposals written from GRANT_APPLICATIONS.md source material:
 
 | # | Grant | File | Size | Recipient |
 |---|-------|------|------|-----------|
-| 1 | FQXi Zenith Grant | 01_FQXi_Zenith_Grant_Proposal.md | 7.2 KB | grants@fqxi.org |
-| 2 | NSF EPP-Theory | 02_NSF_EPPT_Grant_Proposal.md | 6.5 KB | epp-theory@nsf.gov |
-| 3 | NSF Algebra & Number Theory | 03_NSF_ANT_Grant_Proposal.md | 6.7 KB | ANT@nsf.gov |
-| 4 | Simons Collaboration MPS | 04_Simons_Collaboration_Grant_Proposal.md | 7.8 KB | mps@simonsfoundation.org |
-| 5 | Simons Targeted Research | 05_Simons_Targeted_Grant_Proposal.md | 3.5 KB | mps@simonsfoundation.org |
-| 6 | Breakthrough Prize | 06_Breakthrough_Prize_Nomination.md | 4.8 KB | prizes@breakthroughprize.org |
-| 7 | Clay Mathematics Institute | 07_Clay_Institute_Proposal.md | 4.7 KB | info@claymath.org |
-| 8 | Perimeter Institute Visitor | 08_Perimeter_Institute_Proposal.md | 4.9 KB | visitors@perimeterinstitute.ca |
+| 1 | FQXi Zenith Grant | 01_FQXi_Zenith_Grant_Proposal.md | 7.2 KB | [email-a11cd23027f2] |
+| 2 | NSF EPP-Theory | 02_NSF_EPPT_Grant_Proposal.md | 6.5 KB | [email-81d53a2fdd74] |
+| 3 | NSF Algebra & Number Theory | 03_NSF_ANT_Grant_Proposal.md | 6.7 KB | [email-da27e04e6c12] |
+| 4 | Simons Collaboration MPS | 04_Simons_Collaboration_Grant_Proposal.md | 7.8 KB | [email-7a39b2ff28a9] |
+| 5 | Simons Targeted Research | 05_Simons_Targeted_Grant_Proposal.md | 3.5 KB | [email-7a39b2ff28a9] |
+| 6 | Breakthrough Prize | 06_Breakthrough_Prize_Nomination.md | 4.8 KB | [email-3d2f32d8e466] |
+| 7 | Clay Mathematics Institute | 07_Clay_Institute_Proposal.md | 4.7 KB | [email-b06b5395837d] |
+| 8 | Perimeter Institute Visitor | 08_Perimeter_Institute_Proposal.md | 4.9 KB | [email-ce7ddffabe1f] |
 
 ### 2. Email Drafts Created in Hotmail (8/8)
 All drafts created with proposal documents as attachments:
@@ -53,12 +53,12 @@ All drafts created with proposal documents as attachments:
 | Grant | Action Needed | Deadline |
 |-------|---------------|----------|
 | **FQXi Zenith** | Create FQXi account, submit Initial Proposal online | Next round TBD |
-| **NSF EPP-T** | Contact Keith Dienes (EPP-T@nsf.gov), secure Co-PI, prepare Research.gov | Jan 26, 2027 |
-| **NSF ANT** | Contact ANT@nsf.gov, secure number theory Co-PI, prepare Research.gov | 2nd Fri Oct (target) |
+| **NSF EPP-T** | Contact Keith Dienes ([email-a7a06d589176]), secure Co-PI, prepare Research.gov | Jan 26, 2027 |
+| **NSF ANT** | Contact [email-da27e04e6c12], secure number theory Co-PI, prepare Research.gov | 2nd Fri Oct (target) |
 | **Simons Collab** | Create SAM account, institutional coordination, submit LOI | Oct 29, 2026 |
 | **Simons Targeted** | Create SAM account, submit rolling LOI | Rolling |
 | **Breakthrough Prize** | **Find nominator** (self-nomination prohibited), prepare citations | Jul 17, 2026 |
-| **Clay Institute** | Email nomination package to president@claymath.org | Oct 15 annually |
+| **Clay Institute** | Email nomination package to [email-4a413d06fc2b] | Oct 15 annually |
 | **Perimeter Institute** | Email CV, pubs, research statement to visitorservices@ | 6 months before visit |
 
 ### Key Blockers to Resolve
@@ -74,7 +74,7 @@ All drafts created with proposal documents as attachments:
 ### oldlady.sh — Single Draft Creator
 ```bash
 # Create a draft with attachment
-./oldlady.sh --to grants@fqxi.org \
+./oldlady.sh --to [email-a11cd23027f2] \
   --subject "FQXi Zenith Grant Application" \
   --body "Please find attached..." \
   --attach GrantProposals/01_FQXi_Zenith_Grant_Proposal.md
@@ -140,13 +140,13 @@ All drafts created with proposal documents as attachments:
 
 | Funder | Contact | Email |
 |--------|---------|-------|
-| FQXi | Grants Team | grants@fqxi.org |
-| NSF EPP-T | Keith Dienes | EPP-T@nsf.gov |
-| NSF ANT | Program Officers | ANT@nsf.gov |
-| Simons MPS | MPS Team | mps@simonsfoundation.org |
+| FQXi | Grants Team | [email-a11cd23027f2] |
+| NSF EPP-T | Keith Dienes | [email-a7a06d589176] |
+| NSF ANT | Program Officers | [email-da27e04e6c12] |
+| Simons MPS | MPS Team | [email-7a39b2ff28a9] |
 | Breakthrough Prize | Nominations | breakthroughprize.org/Nominations |
-| Clay Institute | President | president@claymath.org |
-| Perimeter Institute | Visitor Services | visitorservices@perimeterinstitute.ca |
+| Clay Institute | President | [email-4a413d06fc2b] |
+| Perimeter Institute | Visitor Services | [email-318b0a8766bd] |
 
 ---
 

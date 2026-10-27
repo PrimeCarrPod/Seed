@@ -2,8 +2,8 @@
 
 ## Founding & Origins
 
-Verdagy was founded in **2021** in Moss Landing, California, a coastal town near Monterey
-situated at the heart of California's agricultural and marine research corridor. The company
+Verdagy was founded in **2021** in Moss Landing, [location withheld], a coastal town near Monterey
+situated at the heart of [location withheld]'s agricultural and marine research corridor. The company
 emerged from decades of foundational research in alkaline water electrolysis, building upon
 scientific and engineering advances that stretch back to the earliest industrial hydrogen
 production methods of the twentieth century. While the legal entity is young, its intellectual
@@ -13,7 +13,7 @@ alkaline technology at predecessor firms and research institutions.
 
 ## Corporate Headquarters
 
-Moss Landing provides Verdagy with strategic proximity to California's clean-energy policy
+Moss Landing provides Verdagy with strategic proximity to [location withheld]'s clean-energy policy
 ecosystem, the Monterey Bay research community, and the broader West Coast renewable energy
 market. The headquarters houses executive leadership, core R&D laboratories, and the
 company's pilot-scale manufacturing line. The location also offers access to the Port of

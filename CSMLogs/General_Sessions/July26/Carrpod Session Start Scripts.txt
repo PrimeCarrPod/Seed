@@ -1,10 +1,10 @@
 python3 dual_starlight_express.py [--test | --live]
 
-jason.brodsky@ccac.edu.  Microsoft Graph Command Line Tools NOT OK
+[email-896a1fe543a5].  Microsoft Graph Command Line Tools NOT OK
 
-jasonbrodsky@hotmail.com.   Microsoft Graph Command Line Tools. OK
+[email withheld].   Microsoft Graph Command Line Tools. OK
 
-zirconia@aegisc.space. Microsoft Graph Command Line Tools OK
+[email withheld]. Microsoft Graph Command Line Tools OK
 
 
 https://login.microsoftonline.com/common/oauth2/deviceauth

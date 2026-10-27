@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-03 | July 2026
 
 **TO:** NIST Electromagnetics Division — Program Lead
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** NIST-traceable EMI shielding characterization — Aegis-C composite materials test data
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: Contact NIST Electromagnetics Division — we'll ship material sample
 
 You set the standards. We'd like our materials measured against them.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

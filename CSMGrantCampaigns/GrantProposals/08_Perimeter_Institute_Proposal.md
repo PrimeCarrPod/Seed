@@ -113,7 +113,7 @@ All documents available at: CSMWip/SubAtomicPrimeElectronCaldera/
 ## 8. CONTACT
 
 **Applicant:** Jason Isaac Brodsky  
-**Email:** jasonbrodsky@hotmail.com  
+**Email:** [email withheld]  
 **Framework:** Arithmetic Physics  
 **Data:** PrimeBookOne.github.io (remote, no clone)  
 **Code:** TardigradiaTGPU/, landolil.engine/  

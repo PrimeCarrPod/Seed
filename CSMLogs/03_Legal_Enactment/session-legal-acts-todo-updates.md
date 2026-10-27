@@ -2,7 +2,7 @@
 **Session ID:** agent_9be87eed-4d16-4087-bce6-c502e37b33c7  
 **Date:** 2026-08-14  
 **Source:** RTF log file (kilo free tier llms.rtf / marmelade session.txt)  
-**Creative Director:** Jason Brodsky  
+**Creative Director:** [sender name withheld]  
 
 ---
 

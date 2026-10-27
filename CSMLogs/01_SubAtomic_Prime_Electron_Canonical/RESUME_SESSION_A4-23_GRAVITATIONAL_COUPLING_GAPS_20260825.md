@@ -3,7 +3,7 @@
 **Date:** 2026-08-25T21:00:00Z  
 **Session ID:** agent_69518265-2eae-480a-8233-4b6f54d5f664  
 **Branch:** session/agent_69518265-2eae-480a-8233-4b6f54d5f664 (pushed to main)  
-**Author:** Jason Isaac Brodsky (California, 1976), Conducier
+**Author:** [sender name withheld] ([location withheld]), Conducier
 
 ---
 
@@ -87,4 +87,4 @@ cat CSMLogs/august26/RESUME_SESSION_A4-23_GRAVITATIONAL_COUPLING_GAPS_20260825.m
 
 ---
 
-*Session complete. Document created, committed, and pushed. Author: Jason Isaac Brodsky (California, 1976), Conducier*
+*Session complete. Document created, committed, and pushed. Author: [sender name withheld] ([location withheld]), Conducier*

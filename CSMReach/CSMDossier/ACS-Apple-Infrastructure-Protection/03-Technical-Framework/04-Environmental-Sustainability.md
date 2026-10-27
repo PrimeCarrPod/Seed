@@ -118,7 +118,7 @@ Apple publishes an annual Environmental Progress Report providing: quantified ye
 
 ### 6.2 Regulatory Compliance
 
-Apple's environmental reporting aligns with mandatory climate disclosure frameworks including: the United States Securities and Exchange Commission (SEC) climate disclosure rule (final rule issued 2024, requiring disclosure of Scope 1 and Scope 2 greenhouse gas emissions, climate-related risks and opportunities, and climate risk governance), the European Union Corporate Sustainability Reporting Directive (CSRD, Directive (EU) 2022/2464, requiring detailed sustainability reporting per European Sustainability Reporting Standards), California's climate accountability legislation (SB 253 Climate Corporate Data Accountability Act and SB 261 Climate-Related Financial Risk Act), and other national and sub-national climate disclosure regulations in jurisdictions where Apple operates or whose securities laws govern Apple's securities.
+Apple's environmental reporting aligns with mandatory climate disclosure frameworks including: the United States Securities and Exchange Commission (SEC) climate disclosure rule (final rule issued 2024, requiring disclosure of Scope 1 and Scope 2 greenhouse gas emissions, climate-related risks and opportunities, and climate risk governance), the European Union Corporate Sustainability Reporting Directive (CSRD, Directive (EU) 2022/2464, requiring detailed sustainability reporting per European Sustainability Reporting Standards), [location withheld]'s climate accountability legislation (SB 253 Climate Corporate Data Accountability Act and SB 261 Climate-Related Financial Risk Act), and other national and sub-national climate disclosure regulations in jurisdictions where Apple operates or whose securities laws govern Apple's securities.
 
 ### 6.3 Stakeholder Engagement
 
@@ -134,7 +134,7 @@ Apple's custom silicon architecture â€” A-series for iPhone and iPad, M-series f
 
 ### 7.2 ENERGY STAR and Regulatory Compliance
 
-Apple products meet or exceed ENERGY STAR program requirements for computers, displays, and imaging equipment, and comply with the California Energy Commission Appliance Efficiency Regulations, the European Union Ecodesign Directive (Directive 2009/125/EC, recast as Regulation (EU) 2024/1781), and equivalent energy efficiency regulations in all markets where Apple products are sold. Product energy efficiency is validated through testing per applicable ENERGY STAR test methods and reported on product regulatory labels and Environmental Progress Reports.
+Apple products meet or exceed ENERGY STAR program requirements for computers, displays, and imaging equipment, and comply with the [location withheld] Energy Commission Appliance Efficiency Regulations, the European Union Ecodesign Directive (Directive 2009/125/EC, recast as Regulation (EU) 2024/1781), and equivalent energy efficiency regulations in all markets where Apple products are sold. Product energy efficiency is validated through testing per applicable ENERGY STAR test methods and reported on product regulatory labels and Environmental Progress Reports.
 
 ---
 
@@ -161,8 +161,8 @@ Apple's paper and packaging fiber is sourced from responsibly managed forests â€
 7. ISAE 3000 (Revised). *International Standard on Assurance Engagements 3000: Assurance Engagements Other than Audits or Reviews of Historical Financial Information*.
 8. U.S. Securities and Exchange Commission. *The Enhancement and Standardization of Climate-Related Disclosures for Investors*, Final Rule, 2024.
 9. European Union. *Corporate Sustainability Reporting Directive (CSRD)*, Directive (EU) 2022/2464.
-10. State of California. *Climate Corporate Data Accountability Act*, Senate Bill 253, 2023.
-11. State of California. *Climate-Related Financial Risk Act*, Senate Bill 261, 2023.
+10. State of [location withheld]. *Climate Corporate Data Accountability Act*, Senate Bill 253, 2023.
+11. State of [location withheld]. *Climate-Related Financial Risk Act*, Senate Bill 261, 2023.
 12. Alliance for Water Stewardship. *AWS Standard 2.0*, 2019.
 13. World Resources Institute. *Aqueduct Water Risk Atlas*, 2023 Update.
 

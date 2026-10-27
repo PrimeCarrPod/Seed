@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, COMCAST. GOOOOOOOD MORNING, Brian Roberts and the Philadelphia leadership. The ACS Infrastructure Protection Division presents a critical infrastructure protection proposal for Comcast's 500,000 fiber route miles and 28.7 million broadband customers — hardening America's largest cable and broadband network against the geomagnetic disturbance that solar physics and geological records confirm is inevitable.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, COMCAST. GOOOOOOOD MORNING, Brian Roberts and the Philadelphia leadership. The ACS Infrastructure Protection Division presents a critical infrastructure protection proposal for Comcast's 500,000 fiber route miles and 28.7 million broadband customers — hardening America's largest cable and broadband network against the geomagnetic disturbance that solar physics and geological records confirm is inevitable.
 
 **PARAGRAPH 2 — THE THREAT INTRODUCED**
 
@@ -45,7 +45,7 @@ Mr. Roberts, ACS respectfully requests a 60-minute executive briefing with your 
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Infrastructure Protection Division
 Advanced Containment Systems
 AEGIS Program Executive

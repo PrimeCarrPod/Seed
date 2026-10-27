@@ -52,7 +52,7 @@ Property claims from fires started by overloaded transformers and downed lines. 
 
 And here's the actuarial nightmare. The one that should keep every chief risk officer awake.
 
-These aren't independent risks. A hurricane hits Florida. An earthquake hits California. A flood hits Bangladesh. These are geographically correlated but they don't all trigger simultaneously. A Carrington-class event — [BURST] every single policy, in every single line of business, in every single country, triggers on the same day.
+These aren't independent risks. A hurricane hits Florida. An earthquake hits [location withheld]. A flood hits Bangladesh. These are geographically correlated but they don't all trigger simultaneously. A Carrington-class event — [BURST] every single policy, in every single line of business, in every single country, triggers on the same day.
 
 Property. Casualty. Marine. Aviation. Cyber. Crop. Business interruption. Contingent business interruption. Workers' comp. D&O. Life. Health. All of them. Simultaneously. Globally.
 

@@ -1,6 +1,6 @@
 # Session Log: A6 Series Prime Transcendent Physics Articles
 **Date:** 2026-08-27  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Branch:** session/agent_5ce63445-41b0-4941-8667-62d9bcd27339 → main  
 **Commits:** 7 articles completed and pushed
 

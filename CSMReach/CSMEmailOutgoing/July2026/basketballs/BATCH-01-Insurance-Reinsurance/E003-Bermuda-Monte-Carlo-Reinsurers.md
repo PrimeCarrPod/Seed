@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-01 | July 2026
 
 **TO:** Chief Underwriting Officers, Bermuda & European Reinsurance Markets
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Monte Carlo Rendez-Vous 2026 — the mitigation data your treaty-renewal conversations are missing
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: In-person briefing at Monte Carlo Rendez-Vous (September 2026) or Ber
 
 The 99.3% protection gap isn't a problem statement. It's a market opportunity. Let's make sure the treaty language reflects the engineering that exists.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) communication standards | July 2026*

@@ -5,7 +5,7 @@
 
 ## Regional AI Disclosure
 
-> *This document and all associated outreach materials were composed by an artificial intelligence created by Jason Brodsky of California, deployed in service of the CSM Global Outreach campaign to strengthen planetary resilience against space-weather threats.*
+> *This document and all associated outreach materials were composed by an artificial intelligence created by [sender name withheld], deployed in service of the CSM Global Outreach campaign to strengthen planetary resilience against space-weather threats.*
 
 ---
 
@@ -105,7 +105,7 @@ North America is the **best-documented but least-mitigated** space-weather risk 
 - **Department of State — Bureau of Energy Resources** — International energy security coordination
 
 #### State-Level Targets
-- **California ISO (CAISO)** — Western interconnection; PDCI
+- **[location withheld] ISO (CAISO)** — Western interconnection; PDCI
 - **New York ISO (NYISO)** — Eastern interconnection; data centre hub
 - **PJM Interconnection** — Largest RTO; Eastern seaboard
 - **MISO** — Mid-continent; Canadian Shield edge
@@ -176,7 +176,7 @@ existing NERC/regulatory GMD compliance and operational resilience
 frameworks.
 
 Respectfully,
-Jason Brodsky
+[sender name withheld]
 Founder, Aegis Continuous Space-Monitoring (CSM)
 aegisc.space
 jason@aegisc.space
@@ -213,14 +213,14 @@ jason@aegisc.space
 
 ```
 —
-Jason Brodsky
+[sender name withheld]
 Founder & Principal
 Aegis Continuous Space-Monitoring (CSM)
 aegisc.space
 jason@aegisc.space
 +1 (XXX) XXX-XXXX
 
-"This document was composed by an artificial intelligence created by Jason Brodsky of California."
+"This document was composed by an artificial intelligence created by [sender name withheld]."
 ```
 
 ---
@@ -251,4 +251,4 @@ jason@aegisc.space
 
 ---
 
-*CSM Global Outreach — BATCH-08 | North America Compendium | Composed by an artificial intelligence created by Jason Brodsky of California*
+*CSM Global Outreach — BATCH-08 | North America Compendium | Composed by an artificial intelligence created by [sender name withheld]*

@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, NATIONAL MINING ASSOCIATION. This communication follows our previous correspondence regarding AEGIS infrastructure applications for mining operations and focuses specifically on the Aegis-Forge Material Separator — a thermal cascade inductive separation system that enables domestic rare earth processing without the acid leaching, solvent extraction, and tailings ponds that have prevented the U.S. mining industry from establishing a complete domestic rare earth supply chain.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, NATIONAL MINING ASSOCIATION. This communication follows our previous correspondence regarding AEGIS infrastructure applications for mining operations and focuses specifically on the Aegis-Forge Material Separator — a thermal cascade inductive separation system that enables domestic rare earth processing without the acid leaching, solvent extraction, and tailings ponds that have prevented the U.S. mining industry from establishing a complete domestic rare earth supply chain.
 
 **PARAGRAPH 2 — THE DOMESTIC PROCESSING BLOCKAGE**
 
@@ -45,11 +45,11 @@ NMA leadership, ACS respectfully requests a 45-minute follow-up briefing — bui
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Materials Processing Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

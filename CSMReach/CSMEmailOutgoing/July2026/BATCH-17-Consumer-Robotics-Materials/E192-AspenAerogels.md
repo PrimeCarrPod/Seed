@@ -7,7 +7,7 @@
 
 **PARAGRAPH 1 — AI DISCLOSURE & GREETING**
 
-This correspondence was composed by an artificial intelligence created by Jason Brodsky of California. GOOOOOOOD MORNING, ASPEN AEROGELS. GOOOOOOOD MORNING, Aspen Pyrogel Team. GOOOOOOOD MORNING, to the company that commercialized aerogel insulation — the world's lowest thermal conductivity solid material at 14 mW/m·K — and turned it from a laboratory curiosity (the "frozen smoke" with the 15 Guinness World Records for lowest density solid) into an industrial product that insulates subsea pipelines, LNG facilities, refinery vessels, and building envelopes in 50 countries. The AEGIS Thermal Insulation Division is reaching out to propose a partnership that integrates Aspen Pyrogel XTF aerogel blanket insulation into three ACS product lines — the ArcticShell refrigerated container, the Aegis Home thermal break system, and the MXene radiant barrier — creating the world's highest-performance composite insulation system for the most demanding thermal environments on Earth and in space. This email serves as a CSMRadio credit acknowledgment: Aspen Aerogels was cited in CSMRadio Episode 013 for aerogel thermal insulation innovation.
+This correspondence was composed by an artificial intelligence created by [sender name withheld]. GOOOOOOOD MORNING, ASPEN AEROGELS. GOOOOOOOD MORNING, Aspen Pyrogel Team. GOOOOOOOD MORNING, to the company that commercialized aerogel insulation — the world's lowest thermal conductivity solid material at 14 mW/m·K — and turned it from a laboratory curiosity (the "frozen smoke" with the 15 Guinness World Records for lowest density solid) into an industrial product that insulates subsea pipelines, LNG facilities, refinery vessels, and building envelopes in 50 countries. The AEGIS Thermal Insulation Division is reaching out to propose a partnership that integrates Aspen Pyrogel XTF aerogel blanket insulation into three ACS product lines — the ArcticShell refrigerated container, the Aegis Home thermal break system, and the MXene radiant barrier — creating the world's highest-performance composite insulation system for the most demanding thermal environments on Earth and in space. This email serves as a CSMRadio credit acknowledgment: Aspen Aerogels was cited in CSMRadio Episode 013 for aerogel thermal insulation innovation.
 
 **PARAGRAPH 2 — THE ARCTICSHELL THERMAL CHALLENGE**
 
@@ -23,7 +23,7 @@ SHIELD does not panic. SHIELD does not claim that Aspen needs to develop a new p
 
 **PARAGRAPH 5 — THE PROPOSAL**
 
-ACS proposes an Aspen-AEGIS Pyrogel supply and co-marketing agreement: Phase Alpha — 12-month supply of Pyrogel XTF for ArcticShell and Aegis Home prototypes, 8,500 m² at $18/kg, $245,000, with joint thermal performance testing of the Pyrogel + MXene radiant barrier composite at -60°C, +25°C, and +55°C (ArcticShell deployment envelope), conducted at Aspen's Northborough, Massachusetts R&D center and ACS's California test facility. Phase Bravo — 18-month supply ramp to 18,000 m²/year for pilot ArcticShell production (200 units) and Aegis Home pilot (100 units), $518,000/year. Phase Charlie — full-rate production supply of 179,200 m²/10 years (ArcticShell 8,000 units) + 18,000 m²/10 years (Aegis Home thermal breaks 10,000 units) + 34,000 m²/10 years (N-Node resilience hub thermal breaks 5,000 units), total cumulative Pyrogel volume 231,200 m² (1,850 tonnes), $33.3 million total contract value. CSMRadio Episode 013 credit publicizes the partnership.
+ACS proposes an Aspen-AEGIS Pyrogel supply and co-marketing agreement: Phase Alpha — 12-month supply of Pyrogel XTF for ArcticShell and Aegis Home prototypes, 8,500 m² at $18/kg, $245,000, with joint thermal performance testing of the Pyrogel + MXene radiant barrier composite at -60°C, +25°C, and +55°C (ArcticShell deployment envelope), conducted at Aspen's Northborough, Massachusetts R&D center and ACS's [location withheld] test facility. Phase Bravo — 18-month supply ramp to 18,000 m²/year for pilot ArcticShell production (200 units) and Aegis Home pilot (100 units), $518,000/year. Phase Charlie — full-rate production supply of 179,200 m²/10 years (ArcticShell 8,000 units) + 18,000 m²/10 years (Aegis Home thermal breaks 10,000 units) + 34,000 m²/10 years (N-Node resilience hub thermal breaks 5,000 units), total cumulative Pyrogel volume 231,200 m² (1,850 tonnes), $33.3 million total contract value. CSMRadio Episode 013 credit publicizes the partnership.
 
 **PARAGRAPH 6 — ATTACHMENTS & BRIEFING**
 
@@ -45,11 +45,11 @@ Aspen Aerogels leadership, ACS respectfully requests a 60-minute technical brief
 
 Respectfully submitted,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Director, ACS Thermal Insulation Division
 Advanced Containment Systems
 AEGIS Program Executive
 https://aegisc.space | j.brodsky@aegisc.space
 *"Infrastructure that bends to no storm — solar, terrestrial, or otherwise."*
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. All typographical flourishes AI-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 9 paragraphs, 4 PDFs, 4 download links*

@@ -29,9 +29,12 @@ ZIPALIGN = f"{BUILD_TOOLS}/zipalign"
 APKSIGNER = f"{BUILD_TOOLS}/apksigner"
 KEYSTORE = PROJECT_ROOT / "debug.keystore"
 
-KEYSTORE_PASS = "android"
-KEY_ALIAS = "androiddebugkey"
-KEY_PASS = "android"
+KEYSTORE_PASS = os.environ.get("ANDROID_KEYSTORE_PASS")
+KEY_PASS = os.environ.get("ANDROID_KEY_PASS", KEYSTORE_PASS)
+KEY_ALIAS = os.environ.get("ANDROID_KEY_ALIAS", "androiddebugkey")
+if not KEYSTORE_PASS:
+    raise SystemExit("ERROR: ANDROID_KEYSTORE_PASS is required for signing; set it in the environment.")
+os.environ.setdefault("ANDROID_KEY_PASS", KEY_PASS)
 
 
 def run(cmd, cwd=None, check=True):
@@ -192,8 +195,8 @@ def align_and_sign(unaligned_with_assets):
     run([
         APKSIGNER, "sign",
         "--ks", str(KEYSTORE),
-        "--ks-pass", f"pass:{KEYSTORE_PASS}",
-        "--key-pass", f"pass:{KEY_PASS}",
+        "--ks-pass", "env:ANDROID_KEYSTORE_PASS",
+        "--key-pass", "env:ANDROID_KEY_PASS",
         str(aligned)
     ])
 

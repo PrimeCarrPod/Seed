@@ -16,7 +16,7 @@ The NAIC's Climate & Resiliency Task Force is actively developing climate risk d
 ## KEY CONTACTS
 - **CEO:** Andrew N. Mais (NAIC President, also Connecticut Insurance Commissioner) — appointed 2024
 - **Director, Property & Casualty Regulatory Services:** Eric Nordman — *primary contact* — leads P&C insurance regulatory policy and financial analysis
-- **Chair, Climate & Resiliency Task Force:** Ricardo Lara (California Insurance Commissioner) — oversees climate risk integration into insurance regulation
+- **Chair, Climate & Resiliency Task Force:** Ricardo Lara ([location withheld] Insurance Commissioner) — oversees climate risk integration into insurance regulation
 - **Director, Center for Insurance Policy & Research:** Robert Brown — manages research initiatives including catastrophe risk and emerging threats
 
 **Contact:** +1 816 842 3600 | firstname.lastname@naic.org (verify format)

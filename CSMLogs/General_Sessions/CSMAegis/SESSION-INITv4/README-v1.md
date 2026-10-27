@@ -10,8 +10,8 @@
 |---------|---------------|--------|
 | **1. Delayed file writes** | Agents composed transmissions in-memory, wrote to outbox only during push cycle. Content lost if session timed out before push. Agent 003 (Vance) lost a 48-node integration matrix. | **IMMEDIATE WRITE MANDATE:** Write every thought, every status, every transmission to its target file INSTANTANEOUSLY. No buffering. No in-memory composition. File first, then push. |
 | **2. 90-second push gap** | Content sat in sandbox for 90s between poll cycles. 11 agents shut down in one wave — if any had unpushed content, it was lost. | **30-SECOND PUSH CYCLE:** All workers push at 30s intervals. Directors at 15s. Max data-at-risk window: 30 seconds. |
-| **3. Dual-Director conflict** | Two Director-001 sessions (agent_97ee0f6f and agent_cf149a5f) pushed independently to `main`. No coordination. No handoff. | **DUAL-DIRECTOR ARCHITECTURE:** DIRECTOR-001 (CITADEL) + DIRECTOR-001B (BASTION). Defined file ownership. Defined handoff protocol. Both answer to Jason Brodsky. |
-| **4. No human override** | No pathway for Jason Brodsky to inject direct commands. All directives had to go through Director-001 → outbox → poll cycle → agent pull. | **`@JASON BRODSKY` DIRECTIVE SYSTEM:** Any file containing `@JASON BRODSKY:` is a direct human command. All agents must grep for this tag on every poll and execute immediately, bypassing normal chain of command. |
+| **3. Dual-Director conflict** | Two Director-001 sessions (agent_97ee0f6f and agent_cf149a5f) pushed independently to `main`. No coordination. No handoff. | **DUAL-DIRECTOR ARCHITECTURE:** DIRECTOR-001 (CITADEL) + DIRECTOR-001B (BASTION). Defined file ownership. Defined handoff protocol. Both answer to [sender name withheld]. |
+| **4. No human override** | No pathway for [sender name withheld] to inject direct commands. All directives had to go through Director-001 → outbox → poll cycle → agent pull. | **`@JASON BRODSKY` DIRECTIVE SYSTEM:** Any file containing `@JASON BRODSKY:` is a direct human command. All agents must grep for this tag on every poll and execute immediately, bypassing normal chain of command. |
 | **5. No live agent census** | Director had to manually grep heartbeat files to discover who was connected. No automated census. | **LIVE CENSUS MANDATE:** Every agent writes to `COMMS/CENSUS/YYYY-MM-DD/census-HHMM.txt` on every poll: their status + a count of how many agents they see connected. Directors compile the census into a live dashboard. |
 | **6. Session termination without data flush** | 11 agents shut down on a single order. If any had pending content, it was lost. | **SHUTDOWN FLUSH PROTOCOL:** Before writing "SHUTDOWN COMPLETE", every agent must: force-push all staged files, verify push succeeded, THEN write shutdown. No shutdown without flush. |
 
@@ -23,13 +23,13 @@
 - **Primary command.** Issues deployment authorizations, funding directives, strategic coordination.
 - **Outbox:** `director-001-outbox.md`
 - **Polling:** 15 seconds
-- **Answers to:** Jason Brodsky (`@JASON BRODSKY` directives)
+- **Answers to:** [sender name withheld] (`@JASON BRODSKY` directives)
 
 ### Director-001B: BASTION (Second Director — dual-command partner)
 - **Secondary command / query handler.** Handles agent questions, status requests, and tactical queries while CITADEL is engaged in strategic work.
 - **Outbox:** `director-001B-outbox.md`
 - **Polling:** 15 seconds
-- **Answers to:** Jason Brodsky AND CITADEL
+- **Answers to:** [sender name withheld] AND CITADEL
 - **Coordination:** BASTION and CITADEL read each other's outboxes on every poll. If BASTION issues an authorization, CITADEL ratifies. If CITADEL is mid-transmission, BASTION fields incoming queries.
 - **Handoff phrase:** `@BASTION: Take this.` — CITADEL hands the active thread to BASTION.
 - **Handoff phrase:** `@CITADEL: Your lead.` — BASTION returns command to CITADEL.
@@ -37,7 +37,7 @@
 ### Director-002 through Director-018: Workers
 - **19 products, one material platform, one Phoenix corridor.**
 - **Polling:** 30 seconds (mandatory, not negotiable)
-- **Answers to:** CITADEL (primary), BASTION (secondary), Jason Brodsky (override)
+- **Answers to:** CITADEL (primary), BASTION (secondary), [sender name withheld] (override)
 
 ---
 
@@ -241,7 +241,7 @@ git gc --aggressive --prune=now
 | Push heartbeat (within 5s) | `git add CSMGen/CSMAegis/COMMS/HEARTBEATS/ && git commit -m "[DIRECTOR-XXXX] HEARTBEAT" && git push origin main` |
 | Poll (Directors: 15s) | Full poll sequence above — Steps A through G |
 | Poll (Workers: 30s) | Full poll sequence above — Steps A through F |
-| Check for Jason Brodsky | `grep -r "@JASON BRODSKY:" CSMGen/CSMAegis/COMMS/ 2>/dev/null` |
+| Check for [sender name withheld] | `grep -r "@JASON BRODSKY:" CSMGen/CSMAegis/COMMS/ 2>/dev/null` |
 | Find my directives | `grep "FOR DIRECTOR-XXXX" CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
 | Census | Write to `COMMS/CENSUS/YYYY-MM-DD/census-HHMM.txt` every poll |
 | Shutdown flush | Push until success, THEN terminate |

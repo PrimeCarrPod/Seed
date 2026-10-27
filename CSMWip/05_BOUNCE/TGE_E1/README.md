@@ -159,7 +159,7 @@ zip out/TGE_E1-dexed.apk classes.dex
 zipalign -p -f 4 out/TGE_E1-dexed.apk out/TGE_E1-aligned.apk
 
 # 7. apksigner — Sign APK
-apksigner sign --ks keystore/debug.keystore --ks-pass pass:android \
+apksigner sign --ks keystore/debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS \
     --out out/TGE_E1-v1.0.0-E1.apk out/TGE_E1-aligned.apk
 ```
 

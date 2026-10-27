@@ -38,7 +38,7 @@ Also create a **Google Business Profile** for Carrington Storm Motors if you hav
 
 ## 3. CUSTOM MAIL FROM / RETURN-PATH — THE ENVELOPE SENDER
 
-**Problem:** By default, Microsoft 365 uses `bounces@onmicrosoft.com` as the Return-Path envelope. This means:
+**Problem:** By default, Microsoft 365 uses `[email-2d84e4feb609]` as the Return-Path envelope. This means:
 - SPF checks the Return-Path domain, not the From domain
 - Email forwarding can break SPF alignment
 - Some filters flag mismatched Return-Path
@@ -163,7 +163,7 @@ Send test emails to each of these and check headers:
 | **Outlook.com** | Microsoft consumer filter | Junk folder vs. Inbox |
 | **ProtonMail** | Strict open-source filtering | Very sensitive to new domains |
 | **mail-tester.com** | Aggregate scoring | Score 10/10 |
-| **check-auth@verifier.port25.com** | Automated auth check | Returns full report via email |
+| **[email-4bd2d9476b80]** | Automated auth check | Returns full report via email |
 
 **Free tools:**
 - https://www.mail-tester.com — sends a full deliverability report

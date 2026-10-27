@@ -66,7 +66,7 @@ Ford Motor Company's transformation under Jim Farley represents the most ambitio
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

@@ -37,7 +37,7 @@ pease read CSMEmailOutgoing/July2026/NEXT-SESSION-HANDOFF-July18.md for the full
 Open a private/incognito browser window
 Go to https://microsoft.com/devicelogin
 Enter the code
-Sign in as zirconia@aegisc.space
+Sign in as [email withheld]
 Approve the push on your Microsoft Authenticator phone app
 4. The agent auto-detects auth and begins the 5-step send pipeline: create draft → upload 3-4 PDFs → send draft → check sent folder → log bounces.
 
@@ -48,7 +48,7 @@ Please when you have gotten ready for everything, let me know that it is time to
 Please build this plan that can take lots of interruption from message issues and let's begin and when about to send a MD file please Use the MD-to-PDF.py file converter used on panoc software or rebuild one,
 Please convert as needed the MD files individually in a temporary location that is not to be pushed to main.  Just used to send the attachment as a PDF instead of an MD file.
 
-Please keep the same signature we have been using with Jason Brodsky et al, and now let's do this and create the draft and I will watch as you prep everything.  We are going to be starting and finishing all bounces that have not been attempted to try a similar address. Ok Let's inform the world one great company at a time.  Thank you, Jason Brodsky
+Please keep the same signature we have been using with [sender name withheld] et al, and now let's do this and create the draft and I will watch as you prep everything.  We are going to be starting and finishing all bounces that have not been attempted to try a similar address. Ok Let's inform the world one great company at a time.  Thank you, [sender name withheld]
 
 
 

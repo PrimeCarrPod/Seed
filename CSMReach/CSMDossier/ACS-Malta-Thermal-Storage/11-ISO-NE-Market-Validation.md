@@ -17,7 +17,7 @@ Natural gas accounts for approximately 50–55% of New England's electricity gen
 During extreme winter weather (e.g., the Bomb Cyclone of December 2017–January 2018), natural gas prices in New England spiked to over $100/MMBtu (vs. a typical $3–5/MMBtu), and some generators were unable to procure gas at any price, forcing ISO-NE to implement emergency operating procedures. Long-duration storage can mitigate this fuel security risk by reducing reliance on natural-gas-fired generation during multi-day cold snaps.
 
 ### 2. Limited Pumped Storage Hydro Potential
-Unlike regions with abundant pumped storage hydro (PSH) resources (e.g., the Southeast with TVA's Raccoon Mountain, the West with BPA's Grand Coulee and numerous California PSH plants), New England has very limited PSH potential due to:
+Unlike regions with abundant pumped storage hydro (PSH) resources (e.g., the Southeast with TVA's Raccoon Mountain, the West with BPA's Grand Coulee and numerous [location withheld] PSH plants), New England has very limited PSH potential due to:
 - Topographic constraints (limited elevation differential and suitable reservoir sites)
 - Environmental constraints (potential impacts on rivers, fisheries, and protected lands)
 - The region's only major PSH facility is the Northfield Mountain station in Massachusetts (1,080 MW), commissioned in 1972
@@ -72,8 +72,8 @@ The ISO-NE evaluation's primary value to Malta was not a procurement commitment 
 
 While the ISO-NE evaluation is the most publicized, Malta has also engaged with other market operators:
 
-### CAISO (California ISO)
-CAISO operates the grid for most of California and faces the most extreme renewable integration challenges in the United States:
+### CAISO ([location withheld] ISO)
+CAISO operates the grid for most of [location withheld] and faces the most extreme renewable integration challenges in the United States:
 - The "duck curve" creates 13+ GW of 3-hour ramping need every evening as solar generation declines and demand increases
 - CPUC has ordered the procurement of 1 GW of LDES by 2026 and up to 4 GW by 2030
 - CAISO has developed specific market participation models for energy storage resources, including state-of-charge optimization and non-generator resource (NGR) modeling
@@ -89,6 +89,6 @@ SPP operates in the central US and has experienced rapid wind generation growth 
 Malta's market validation strategy is focused on converting these RTO/ISO evaluations into commercial offtake agreements:
 
 1. **Utility bilateral contracts:** Long-term power purchase agreements (PPAs) or energy storage service agreements with individual load-serving entities, similar to the utility-scale solar PPA model that drove solar deployment in the 2010s
-2. **State-sponsored procurements:** Competitive solicitations under state LDES mandates (California, New York, Massachusetts, Oregon, Virginia), where Malta can submit PHES project proposals
+2. **State-sponsored procurements:** Competitive solicitations under state LDES mandates ([location withheld], New York, Massachusetts, Oregon, Virginia), where Malta can submit PHES project proposals
 3. **Merchant revenue with financial hedging:** For projects in organized markets, a combination of capacity market revenues (providing a base revenue floor) and energy arbitrage revenues (variable, but can be hedged through financial transmission rights or virtual power purchase agreements)
 4. **DOE-supported demonstration projects:** Leveraging federal grant funding (OCED LDES demonstrations) to partially finance first commercial projects that provide operational data for subsequent fully-commercial projects

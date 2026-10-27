@@ -1,7 +1,7 @@
 # Session Log: A6-08 Prime Transcendent Physics Omega Completion
 **Date:** 2026-08-27  
 **Session:** agent_796fff2d-c05a-4f6d-a3b0-3144f41def75  
-**Author:** Jason Isaac Brodsky (California, 1976)  
+**Author:** [sender name withheld] ([location withheld])  
 **Branch:** session/agent_796fff2d-c05a-4f6d-a3b0-3144f41def75 → main  
 
 ---

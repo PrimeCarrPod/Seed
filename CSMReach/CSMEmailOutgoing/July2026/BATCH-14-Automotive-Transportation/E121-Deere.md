@@ -66,7 +66,7 @@ John Deere is not just an agricultural equipment manufacturer; you are arguably 
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Senior Director, Strategic Programs
 Aegis Space & Communications Corporation
 jbrodsky@aegisc.space | (310) 555-0142

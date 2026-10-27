@@ -1,0 +1,23 @@
+# Secrets, credentials, and local signing material
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+keystore.properties
+signing.env
+**/debug.keystore
+**/release.keystore
+
+# OAuth tokens and device codes
+*_token.json
+token.json
+hotmail_token.json
+csm_token.json
+device_code.json
+.csm_oauth/
+
+# OS/editor noise
+.DS_Store

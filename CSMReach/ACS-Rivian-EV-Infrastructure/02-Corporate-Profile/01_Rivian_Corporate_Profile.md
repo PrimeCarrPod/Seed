@@ -7,7 +7,7 @@
 
 ## 1. Corporate Overview
 
-Rivian Automotive, Inc. (NASDAQ: RIVN) is an American electric vehicle manufacturer and automotive technology company headquartered in Irvine, California. Founded in 2009 by Robert "RJ" Scaringe, the company designs, develops, and manufactures category-defining electric vehicles and accessories, and sells them directly to customers in the consumer and commercial markets. Rivian's mission is to preserve the natural world and create a future of zero-emission transportation and energy independence.
+Rivian Automotive, Inc. (NASDAQ: RIVN) is an American electric vehicle manufacturer and automotive technology company headquartered in Irvine, [location withheld]. Founded in 2009 by Robert "RJ" Scaringe, the company designs, develops, and manufactures category-defining electric vehicles and accessories, and sells them directly to customers in the consumer and commercial markets. Rivian's mission is to preserve the natural world and create a future of zero-emission transportation and energy independence.
 
 ## 2. Leadership and Governance
 

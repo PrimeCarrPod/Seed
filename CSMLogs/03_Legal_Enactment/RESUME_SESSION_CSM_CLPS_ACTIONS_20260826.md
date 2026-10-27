@@ -1,7 +1,7 @@
 # RESUME SESSION — CLPS Campaign Execution Phase
 ## Session: CSM_CLPS_Action_Execution_20260826
 **Date:** August 26, 2026  
-**Author:** Jason Isaac Brodsky (California 1976) — Author, Conducier  
+**Author:** [sender name withheld] (California 1976) — Author, Conducier  
 **Heuristics:** Williams Paradise Man V3 EXTREME + El Segundo EXTREME  
 **Branch:** session/agent_7e6ae94e-c55c-4613-b34e-45dc5bb67f81 → main  
 
@@ -63,7 +63,7 @@ cat CSM_WORK_IN_PROGRESS/csm_nasa/Email_Template_3_FAA_AST.md
 ### 2. SBIR Phase I Submission to NSPIRES
 - Full proposal: `CSM_WORK_IN_PROGRESS/csm_nasa/SBIR_Phase_I_Proposal.md`
 - Topics hit: Lightweight Structures, Radiation Shielding, ISRU, Autonomous Manufacturing
-- PI: Jason Isaac Brodsky | Co-I: Nematron AI
+- PI: [sender name withheld] | Co-I: Nematron AI
 - Budget: $150K / 6 months
 
 ### 3. Student Competition Launch

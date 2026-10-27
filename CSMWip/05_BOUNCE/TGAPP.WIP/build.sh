@@ -18,10 +18,16 @@ KOTLINC="$KOTLIN_HOME/bin/kotlinc"
 
 PLATFORM_JAR="$ANDROID_HOME/platforms/android-36/android.jar"
 
-KEYSTORE_PATH="keystore/release.keystore"
-KEY_ALIAS="release-key"
-KEYSTORE_PASS="${KEYSTORE_PASS:-android}"
-KEY_PASS="${KEY_PASS:-android}"
+KEYSTORE_PATH="${ANDROID_KEYSTORE_PATH:-keystore/release.keystore}"
+KEY_ALIAS="${ANDROID_KEY_ALIAS:-release-key}"
+: "${ANDROID_KEYSTORE_PASS:?Set ANDROID_KEYSTORE_PASS before building}"
+export ANDROID_KEYSTORE_PASS
+export ANDROID_KEY_PASS="${ANDROID_KEY_PASS:-$ANDROID_KEYSTORE_PASS}"
+
+if [ ! -f "$KEYSTORE_PATH" ]; then
+  echo "ERROR: release keystore not found at $KEYSTORE_PATH" >&2
+  exit 1
+fi
 
 echo "=== Building ${APP_NAME} v${VERSION} ==="
 echo "Using Android SDK: $ANDROID_HOME"
@@ -61,7 +67,7 @@ zip -u unsigned.apk classes.dex
 echo "Aligning and signing..."
 $ZIPALIGN -f -p 4 unsigned.apk aligned.apk
 $APKSIGNER sign --ks $KEYSTORE_PATH --ks-key-alias $KEY_ALIAS \
-  --ks-pass pass:$KEYSTORE_PASS --key-pass pass:$KEY_PASS \
+  --ks-pass env:ANDROID_KEYSTORE_PASS --key-pass env:ANDROID_KEY_PASS \
   --out ${APP_NAME}-v${VERSION}.apk aligned.apk
 
 # 7. Verify

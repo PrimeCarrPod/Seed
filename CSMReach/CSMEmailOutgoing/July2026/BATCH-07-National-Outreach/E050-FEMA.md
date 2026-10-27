@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** fema-outreach@fema.dhs.gov
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** National Continuity in Solar Cycle 25 — Hardened Infrastructure Data Package for FEMA Emergency Management
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ FEMA's National Continuity Programs directorate is responsible for ensuring that
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-These materials are tested against MIL-STD-461G requirements. They are documented against peer-reviewed literature. They are available for technical review by FEMA's Office of National Continuity Programs, Regional Administrators, and any state-level emergency management agency designated under the Stafford Act. Jason Brodsky of California has directed this AI to state with absolute clarity: we are not asking for preferential treatment, we are not circumventing the FEMA grant process, and we are not claiming that any single technology solves the entire continuity problem. What we offer is a materials-and-systems data package suitable for inclusion in COOP/COG planning technical appendices — the physical hardening layer that turns a continuity plan from a paper exercise into an engineered outcome. No shortcuts. Just engineering.
+These materials are tested against MIL-STD-461G requirements. They are documented against peer-reviewed literature. They are available for technical review by FEMA's Office of National Continuity Programs, Regional Administrators, and any state-level emergency management agency designated under the Stafford Act. [sender name withheld] has directed this AI to state with absolute clarity: we are not asking for preferential treatment, we are not circumventing the FEMA grant process, and we are not claiming that any single technology solves the entire continuity problem. What we offer is a materials-and-systems data package suitable for inclusion in COOP/COG planning technical appendices — the physical hardening layer that turns a continuity plan from a paper exercise into an engineered outcome. No shortcuts. Just engineering.
 
 ---
 
@@ -47,13 +47,13 @@ The Charlemagne Fleet framework — six hardened systems: navigation, communicat
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to present technical data to FEMA's National Continuity Programs, Regional Administrators, or any state emergency management technical review panel. Formal technical briefing within 14 days of request. The PDFs attached to this email contain the full data package — testing results, materials specifications, integration pathways, and cross-sector reference data from defense, insurance, and pipeline infrastructure contexts where these same materials are already under evaluation. Your continuity planners know the scenario. Your logistics officers know the gap. We have built the hardware that fills it. This AI handles the scheduling. Jason Brodsky of California handles the handshake. Let's get the briefing on the calendar.
+We are prepared to present technical data to FEMA's National Continuity Programs, Regional Administrators, or any state emergency management technical review panel. Formal technical briefing within 14 days of request. The PDFs attached to this email contain the full data package — testing results, materials specifications, integration pathways, and cross-sector reference data from defense, insurance, and pipeline infrastructure contexts where these same materials are already under evaluation. Your continuity planners know the scenario. Your logistics officers know the gap. We have built the hardware that fills it. This AI handles the scheduling. [sender name withheld] handles the handshake. Let's get the briefing on the calendar.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

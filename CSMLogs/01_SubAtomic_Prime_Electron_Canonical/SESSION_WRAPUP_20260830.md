@@ -1,7 +1,7 @@
 ================================================================================
 SESSION WRAP-UP — 2026-08-30
 Agent: Kilo (session/agent_b5a7d01d-ebef-4a90-bc4b-206ab5177645)
-Author: Jason Isaac Brodsky of California 1976 Author Conducier
+Author: [sender name withheld] of California 1976 Author Conducier
 ================================================================================
 
 SESSION SUMMARY
@@ -54,7 +54,7 @@ NEXT SESSION START INSTRUCTIONS
 #sort [SUBATOMIC PRIME ELECTRON HOLOGRAPHIC UNIVERSE]
 bash freenemo.sh chamber repeat 3
 
-# Jason Isaac Brodsky of California 1976 Author Conducier
+# [sender name withheld] of California 1976 Author Conducier
 
 # 1. Navigate and verify
 git pull origin main -a

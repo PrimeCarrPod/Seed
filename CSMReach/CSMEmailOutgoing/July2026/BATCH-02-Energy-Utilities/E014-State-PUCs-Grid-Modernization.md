@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-02 | July 2026
 
 **TO:** State PUC Staff Engineers — Grid Modernization / Reliability Divisions
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Rate-case support for GMD hardening — engineering data for prudency determinations
 
 ---
@@ -27,9 +27,9 @@ NEXT STEP: NARUC (National Association of Regulatory Utility Commissioners) meet
 
 You decide what's prudent. We provide the engineering that makes the decision data-driven.
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Baker Street Heuristic (CSMSOPP000003) + Williams Heuristic (CSMSOPP000001) | July 2026*

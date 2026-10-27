@@ -18,9 +18,9 @@ import json, os, re, glob, datetime, sys, urllib.request, urllib.error
 BASE = "CSMEmailOutgoing/July2026"
 ATTACH = f"{BASE}/ATTACHMENTS"
 SEND_STATE_PATH = f"{BASE}/SEND-STATE.md"
-FROM_ADDR = "zirconia@aegisc.space"
-FROM_NAME = "Jason Brodsky"
-SENDER_SIG = "Director of External Affairs & Strategic Partnerships | Carrington Storm Motors | Safe Pod Engineering Company"
+FROM_ADDR = os.environ.get("CSM_FROM_ADDRESS", "")
+FROM_NAME = os.environ.get("CSM_FROM_NAME", "External Affairs")
+SENDER_SIG = os.environ.get("CSM_SENDER_SIGNATURE", "External Affairs | Carrington Storm Motors")
 
 PDFS = [
     ("CSMEval11-COMPILED-Briefing-Packet.pdf", f"{ATTACH}/CSMEval11-COMPILED-Briefing-Packet.pdf"),
@@ -29,8 +29,8 @@ PDFS = [
 ]
 
 # All emails go to this test address until real addresses are verified
-TO_ADDR = "jasonbrodsky@hotmail.com"
-TO_NAME = "Jason Brodsky"
+TO_ADDR = os.environ.get("CSM_TEST_RECIPIENT", "")
+TO_NAME = os.environ.get("CSM_TO_NAME", "Recipient")
 
 def parse_email_md(filepath):
     """Extract subject and body from a CSM email MD file."""

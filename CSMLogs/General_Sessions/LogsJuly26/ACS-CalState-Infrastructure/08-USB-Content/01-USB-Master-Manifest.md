@@ -123,13 +123,13 @@ ACS-CSU-INFRA-2026/
 3. Navigate to root directory: `/Volumes/ACS-CSU-INFRA-PROTECTION-2026/` (macOS) or `/media/ACS-CSU-INFRA-PROTECTION-2026/` (Linux)
 4. Run: `sha256sum -c _MANIFEST.SHA256`
 5. Verify all 32 files pass checksum validation
-6. If any file fails validation, the USB image is corrupt — contact ACS IT Security at security@acs-ca.com
+6. If any file fails validation, the USB image is corrupt — contact ACS IT Security at [email-8f8c93078c03]
 
 ---
 
 ### SECURITY NOTICE
 
-This USB drive contains proprietary financial projections and infrastructure vulnerability assessments produced under contract CSU-RFP-2024-INFRA-0047. The contents are classified SENSITIVE — FOR OFFICIAL USE ONLY. Unauthorized copying, distribution, or access is prohibited. The hardware encryption passphrase is communicated separately via secure channel. Lost or compromised drives must be reported immediately to ACS IT Security at (213) 555-0199.
+This USB drive contains proprietary financial projections and infrastructure vulnerability assessments produced under contract CSU-RFP-2024-INFRA-0047. The contents are classified SENSITIVE — FOR OFFICIAL USE ONLY. Unauthorized copying, distribution, or access is prohibited. The hardware encryption passphrase is communicated separately via secure channel. Lost or compromised drives must be reported immediately to ACS IT Security at [phone withheld].
 
 ---
 

@@ -133,7 +133,7 @@ c3809123 feat(bounce): v1.0.77 — spatial awareness, gyroscope, step detector, 
 2. **Raw RSSI is unusable for distance.** Must Kalman-filter per BSSID before log-distance conversion.
 3. **Fixed camera distance fails at speed variance.** Dynamic distance + fast lerp + snap threshold = camera never loses target.
 4. **SDK is ephemeral in sandbox.** setup-sdk.sh re-runs in ~90 seconds. Known working: build-tools 33.0.1 + platform android-33.
-5. **curl -k mandatory** for Google CDN downloads in sandbox.
+5. **curl --fail --proto '=https' --proto-redir '=https' mandatory** for Google CDN downloads in sandbox.
 6. **`git -c http.sslVerify=false push`** required for GitHub in sandbox.
 
 ---

@@ -1,11 +1,11 @@
 # ACS Antora Energy | Commercial Deployments & Manufacturing Scale-Up
 
-## 1. First Commercial Installation (California, 2024)
+## 1. First Commercial Installation ([location withheld], 2024)
 
 ### Installation Overview
 Antora's first commercial thermal battery installation represents the world's first industrial-scale TPV-equipped thermal battery. Key parameters (publicly available):
 
-- **Location**: California (specific facility not publicly named; described as a manufacturing facility)
+- **Location**: [location withheld] (specific facility not publicly named; described as a manufacturing facility)
 - **Application**: Industrial process heat and on-site power generation
 - **System configuration**: Multiple 40-foot containerized thermal battery modules
 - **Storage capacity**: Not publicly disclosed; estimated 10-25 MWh-thermal per container, total system capacity likely in the 50-100 MWh-thermal range
@@ -58,7 +58,7 @@ Antora's production is expected to follow a phased ramp:
 - Focus: First deployment and operational validation
 
 **Phase 2: Initial Manufacturing (2025-2026)**
-- Dedicated assembly facility (location TBD; likely California or Nevada for proximity to initial customers)
+- Dedicated assembly facility (location TBD; likely [location withheld] or Nevada for proximity to initial customers)
 - Volume: 50-100 containers/year
 - Semi-automated assembly; standardized work instructions; quality management system
 - Focus: Cost reduction, supply chain qualification, process repeatability
@@ -155,7 +155,7 @@ For a 100 MWh-thermal system with TPV electricity generation:
 ### Target Customer Profile
 Antora's initial target customers share these characteristics:
 1. Large industrial facility (>50 MW-thermal continuous heat demand)
-2. Located in regions with high renewable penetration and daytime electricity price troughs (California, Southwest, Texas)
+2. Located in regions with high renewable penetration and daytime electricity price troughs ([location withheld], Southwest, Texas)
 3. Strong corporate decarbonization commitments (Fortune 500 industrials with net-zero targets)
 4. Existing natural gas infrastructure that Antora can displace
 5. Facility with space for containerized thermal battery installation (typically 0.5-2 acres per system)

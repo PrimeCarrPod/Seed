@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-07 | July 2026 — V4 Fun-Williams Final
 
 **TO:** info@iaem.com
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** The CEM Body of Knowledge Meets Solar Cycle 25 — Electromagnetic Hazard Data for Emergency Management Professionals
 
 **ATTACHMENTS (PDFs attached to this email + downloadable at the links below):**
@@ -17,7 +17,7 @@
 
 **[WILLIAMS META — FAST-TEMPO, FUN, AI-SCRIBED, CALIFORNIA-BORN, HUMAN-STEERED]**
 
-This email was composed by an artificial intelligence created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; Jason Brodsky signs.
+This email was composed by an artificial intelligence created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001), Baker Street Heuristic (CSMSOPP000003), and SHIELD Strategic Posture. All technical content human-reviewed. All outreach decisions human-made. The AI delivers; [sender name withheld] signs.
 
 ---
 
@@ -35,7 +35,7 @@ The IAEM Certified Emergency Manager (CEM) program requires demonstrated knowled
 
 **[PARAGRAPH 3 — SHIELD POSTURE]**
 
-The materials exist. The engineering is documented. The integration pathways into EM planning frameworks are clear. Jason Brodsky of California has directed this AI to state with absolute clarity: we are not asking IAEM to modify the CEM body of knowledge, we are not asking for any endorsement, and we are not claiming that hardware alone solves the complex social, organizational, and political challenges of disaster response. What we offer is a technical data package that emergency management professionals — particularly CEM-credentialed practitioners who understand the full spectrum of hazard mitigation — can use to incorporate electromagnetic hazard resilience into their organizational planning, their grant applications, their exercise design, and their professional development. The hardware is built. The specifications are attached. The integration is up to the EM professionals who know their communities best.
+The materials exist. The engineering is documented. The integration pathways into EM planning frameworks are clear. [sender name withheld] has directed this AI to state with absolute clarity: we are not asking IAEM to modify the CEM body of knowledge, we are not asking for any endorsement, and we are not claiming that hardware alone solves the complex social, organizational, and political challenges of disaster response. What we offer is a technical data package that emergency management professionals — particularly CEM-credentialed practitioners who understand the full spectrum of hazard mitigation — can use to incorporate electromagnetic hazard resilience into their organizational planning, their grant applications, their exercise design, and their professional development. The hardware is built. The specifications are attached. The integration is up to the EM professionals who know their communities best.
 
 ---
 
@@ -47,13 +47,13 @@ The six-system Charlemagne Fleet framework — navigation hardening, communicati
 
 **[PARAGRAPH 5 — NEXT STEP]**
 
-We are prepared to deliver a technical briefing to IAEM membership — at the annual conference, at a regional workshop, or via virtual presentation — within 14 days. Bring your CEMs. Bring your emergency managers from the private sector who worry about supply-chain continuity. Bring the local EM directors from rural counties who know exactly how long it takes to get a generator when the nearest FEMA logistics center is 300 miles away. The four PDFs attached to this email contain the full engineering data. Your members are the professionals who will be standing in the EOC when the lights go out — figuratively and literally. We have built the hardware that keeps the lights on and the radios working and the vehicles running when every other system has failed. This AI handles the briefing logistics. Jason Brodsky of California handles the accountability. The profession of emergency management deserves the tools to match the threats it faces. Let's deliver them.
+We are prepared to deliver a technical briefing to IAEM membership — at the annual conference, at a regional workshop, or via virtual presentation — within 14 days. Bring your CEMs. Bring your emergency managers from the private sector who worry about supply-chain continuity. Bring the local EM directors from rural counties who know exactly how long it takes to get a generator when the nearest FEMA logistics center is 300 miles away. The four PDFs attached to this email contain the full engineering data. Your members are the professionals who will be standing in the EOC when the lights go out — figuratively and literally. We have built the hardware that keeps the lights on and the radios working and the vehicles running when every other system has failed. This AI handles the briefing logistics. [sender name withheld] handles the accountability. The profession of emergency management deserves the tools to match the threats it faces. Let's deliver them.
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
-*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by Jason Brodsky of California, operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; Jason Brodsky delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*
+*This email was composed by an artificial intelligence — a digital scribe running on electricity and enthusiasm — created by [sender name withheld], operating under the Williams Heuristic (CSMSOPP000001, "the fun one"), Baker Street Heuristic (CSMSOPP000003, "the precise one"), and SHIELD Strategic Posture ("the calm one"). All technical content human-reviewed. All outreach decisions human-made. The AI delivers the words; [sender name withheld] delivers the promise. | July 2026 — 5 paragraphs, 4 PDFs*

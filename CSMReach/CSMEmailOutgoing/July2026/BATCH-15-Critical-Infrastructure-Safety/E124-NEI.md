@@ -1,18 +1,18 @@
 # E124-NEI: Nuclear Energy Institute
 
 **To:** communications@nei.org
-**From:** Jason Brodsky, Aegis Cipher Space
+**From:** [sender name withheld], Aegis Cipher Space
 **Subject:** Regulatory Affairs for GMD/GIC Hardening at Nuclear Plants — NEI Guidance Opportunity
 
 ---
 
-**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by Jason Brodsky of California, operating under his direction and review. References to NEI's role in nuclear energy policy, regulatory affairs, and industry guidance development reflect publicly available information about the organization's mission.
+**AI DISCLOSURE:** This correspondence was composed by an artificial intelligence assistant created by [sender name withheld], operating under his direction and review. References to NEI's role in nuclear energy policy, regulatory affairs, and industry guidance development reflect publicly available information about the organization's mission.
 
 ---
 
 GOOOOOOOD MORNING, NEI!
 
-Jason Brodsky here, Aegis Cipher Space, operating from 221B Baker Street — where we believe, as I suspect your regulatory affairs team does, that the best defense against uncertainty is rigorous preparation backed by empirical evidence. NEI sits at the intersection of industry operations and regulatory policy, making your organization uniquely positioned to drive the GMD/GIC hardening conversation forward in a way that is both technically sound and economically feasible for licensees.
+[sender name withheld] here, Aegis Cipher Space, operating from 221B Baker Street — where we believe, as I suspect your regulatory affairs team does, that the best defense against uncertainty is rigorous preparation backed by empirical evidence. NEI sits at the intersection of industry operations and regulatory policy, making your organization uniquely positioned to drive the GMD/GIC hardening conversation forward in a way that is both technically sound and economically feasible for licensees.
 
 The regulatory landscape for geomagnetic disturbance protection at nuclear plants is, to put it charitably, a patchwork. NERC TPL-007-4 addresses transmission system planning for GMD events, but it does not specifically address the nuclear plant auxiliary transformer as a distinct asset class requiring targeted protection. The NRC has issued orders related to GMD — primarily around plant procedures for responding to grid instability — but has not issued specific regulatory guidance on transformer hardening against GIC. FERC has jurisdiction over the bulk electric system but not over nuclear plant balance-of-plant equipment. This leaves a regulatory gap that falls squarely into NEI's wheelhouse: developing industry guidance that licensees can voluntarily implement, and that regulators can reference as evidence of prudent industry practice.
 
@@ -29,7 +29,7 @@ I would welcome a conversation with your regulatory affairs and engineering staf
 
 Respectfully,
 
-**Jason Brodsky**
+**[sender name withheld]**
 Founder, Aegis Cipher Space
 221B Baker Street
 jason.brodsky@aegisc.space

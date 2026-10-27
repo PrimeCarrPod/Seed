@@ -3,8 +3,8 @@
 ### CSMEmailOutgoing | BATCH-05 | July 2026 — 9-Paragraph Body
 
 **TO:** ABS-WorldHQ@eagle.org, rotterdam.maritime@dnv.com, news@lr.org
-**FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
-**REPLY-TO:** zirconia@aegisc.space
+**FROM:** [sender name withheld], Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
+**REPLY-TO:** [email withheld]
 **SUBJECT:** Vessel Classification in Solar Cycle 25 — Aegis-C shielding and composite materials data package for shipboard systems hardening
 
 **ATTACHMENTS:**
@@ -69,9 +69,9 @@ We are prepared to present technical data to your rules committee, engineering r
 
 ---
 
-— Jason Brodsky
+— [sender name withheld]
   Director of External Affairs & Strategic Partnerships
   Carrington Storm Motors | Safe Pod Engineering Company
-  zirconia@aegisc.space
+  [email withheld]
 
 *Email prepared under Williams Heuristic (CSMSOPP000001) + Baker Street Heuristic (CSMSOPP000003) + SHIELD Strategic Posture | July 2026 — 9 paragraphs, 4 PDFs*

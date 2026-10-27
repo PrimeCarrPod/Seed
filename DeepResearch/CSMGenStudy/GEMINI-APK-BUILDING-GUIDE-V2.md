@@ -175,15 +175,15 @@ if [ ! -f "$KEYSTORE" ]; then
         -alias androiddebugkey \
         -keyalg RSA -keysize 2048 \
         -validity 10000 \
-        -storepass android \
-        -keypass android \
+        -storepass "$ANDROID_KEYSTORE_PASS" \
+        -keypass "$ANDROID_KEY_PASS" \
         -dname "CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=US"
 fi
 
 "$APKSIGNER" sign \
     --ks "$KEYSTORE" \
-    --ks-pass pass:android \
-    --key-pass pass:android \
+    --ks-pass env:ANDROID_KEYSTORE_PASS \
+    --key-pass env:ANDROID_KEY_PASS \
     --out "$OUT_DIR/$APP_NAME-v$VERSION_NAME.apk" \
     "$OUT_DIR/$APP_NAME-aligned.apk"
 
@@ -224,7 +224,7 @@ cd obj/ && zip -q ../app-dexed.apk classes.dex && cd ..
 
 # Align & Sign
 zipalign -p -f 4 app-dexed.apk app-aligned.apk
-apksigner sign --ks debug.keystore --ks-pass pass:android --out app-release.apk app-aligned.apk
+apksigner sign --ks debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS --out app-release.apk app-aligned.apk
 ```
 
 ---
@@ -492,7 +492,7 @@ cp obj/classes.dex .
 zip -q out/marmalade-dexed.apk classes.dex
 
 zipalign -p -f 4 out/marmalade-dexed.apk out/marmalade-aligned.apk
-apksigner sign --ks debug.keystore --ks-pass pass:android \
+apksigner sign --ks debug.keystore --ks-pass env:ANDROID_KEYSTORE_PASS \
     --out out/Marmalade-v3.0.0-stage2blue.apk out/marmalade-aligned.apk
 ```
 
