@@ -1,21 +1,21 @@
 ## Project Overview
-# CSMLogs
+# csmlogs
 
-**Category:** TopLevel | **State:** Whole Project | **Files:** 2064
+**Category:** TopLevel | **State:** Leftover to sort | **Files:** 21
 
-**Parent Project:** Top-Level
+**Parent Project:** TBD
 
 ### Summary
 
-Centralized logging and session tracking; 2000+ files across subatomic research, legal enactment, TGApp ecosystem, Land of Lil, publishing outreach, and heartbeat monitoring
+Legacy logs (aug26, august26, caldera)
 
 ---
 ## Architecture & Design — Williams Heuristic
 ### System Boundaries
 
-The **CSMLogs** project operates within the **TopLevel** domain, 
-functioning as a **Whole Project** with 2064 files. 
-It is a top-level project.
+The **csmlogs** project operates within the **TopLevel** domain, 
+functioning as a **Leftover to sort** with 21 files. 
+It belongs to the TBD ecosystem.
 
 ### Core Principles
 
@@ -27,14 +27,10 @@ It is a top-level project.
 ### Component Diagram
 
 ```
-CSMLogs
-├── Python Scripts/Automation
-├── Web/Frontend Assets
-├── 01_SubAtomic_Prime_Electron_Canonical/
-├── 02_Caldera_Prime_Pi_Electron/
-├── 03_Legal_Enactment/
-├── 04_TGApp_Ecosystem/
-├── 05_Land_of_Lil/
+csmlogs
+├── aug26/
+├── august26/
+├── caldera/
 ├── Documentation (Markdown)
 ├── Build System
 └── Configuration
@@ -45,9 +41,6 @@ CSMLogs
 
 | Layer | Technology | Version | Purpose |
 |-------|------------|---------|---------|
-| Language | Python | 3.8+ | Scripting/Automation |
-| Language | JavaScript/TypeScript | ES6+ | Frontend/Web |
-| UI | HTML/CSS | WebView | Hybrid UI |
 | Docs | Markdown | Latest | Documentation |
 | Version Control | Git | — | Source control |
 | Documentation | write_large_file.py | — | Chapter-based authoring |
@@ -55,15 +48,10 @@ CSMLogs
 ### Key Files & Directories
 
 ```
-CSMLogs/
-├── 01_SubAtomic_Prime_Electron_Canonical/
-├── 02_Caldera_Prime_Pi_Electron/
-├── 03_Legal_Enactment/
-├── 04_TGApp_Ecosystem/
-├── 05_Land_of_Lil/
-├── 06_SubAtomic_Extensions/
-├── 07_DeepResearch_SubParticles/
-├── 08_Project_Tracking/
+csmlogs/
+├── aug26/
+├── august26/
+├── caldera/
 ├── README.md              # This file
 ├── AGENTS.md              # Project conventions
 ├── TODO.md                # Task hierarchy
@@ -94,10 +82,6 @@ Key project files:
 
 - All reassembled documents must pass manifest verification
 - Cross-reference validation across related documents
-- Python tests pass (pytest/unittest)
-- Type checking passes (mypy/pyright if configured)
-- JS/TS type checking passes
-- Lint passes (eslint)
 - Mathematical consistency checks for synthesis documents
 - Material property consistency for engineering specs
 
@@ -110,7 +94,7 @@ This project employs the **Williams/Keymaker/El Segundo** triad:
 - **Method**: Boundary analysis, component mapping, dependency graphs
 - **Output**: `AGENTS.md` conventions, `ARCHITECTURE.md` diagrams
 - **Applied Here**: Clear project categorization (TopLevel), 
-explicit parent-child relationship (Top-Level)
+explicit parent-child relationship (TBD)
 
 ### Keymaker Protocol — Implementation Precision
 
@@ -152,6 +136,7 @@ explicit parent-child relationship (Top-Level)
 
 ### Long Term (Ongoing)
 
+- [ ] Integrate with parent project (TBD) workflows
 - [ ] Contribute to cross-project synthesis documents
 - [ ] Maintain document currency with quarterly reviews
 - [ ] Archive completed phases to `FinishedWork/` with compression
@@ -177,26 +162,27 @@ git add -A && git commit -m '<type>: <description>' && git push
 
 ### File Locations
 
-- **Project Root**: `CSMLogs`
-- **Chunks**: `CSMLogs/README_chunks/`
-- **Manifest**: `CSMLogs/README_chunks/MANIFEST.json`
-- **Memory Logs**: `CSMLogs/memory/`
-- **Runner Files**: `CSMLogs/NEXT_runner_*.md`
+- **Project Root**: `csmlogs`
+- **Chunks**: `csmlogs/README_chunks/`
+- **Manifest**: `csmlogs/README_chunks/MANIFEST.json`
+- **Memory Logs**: `csmlogs/memory/`
+- **Runner Files**: `csmlogs/NEXT_runner_*.md`
 
 ### Project Statistics
 
-- **Total Files**: 2064
-- **File Types**: .md: 1529, .txt: 425, .json: 45, .rtf: 27, .log: 11, .sh: 7, .html: 6, .ts: 6, .yml: 6, .tf: 4
-- **Languages**: Markdown: 1529, JSON: 45, Shell: 7, HTML: 6, JavaScript/TypeScript: 6, YAML: 6, Python: 3
-- **Key Directories**: 17
+- **Total Files**: 21
+- **File Types**: .md: 23, .log: 1, .txt: 1
+- **Languages**: Markdown: 23
+- **Key Directories**: 3
 
 ### Related Projects
 
+- **Parent**: TBD (`TBD`)
 - **Category Peers**: Other projects in TopLevel
-- **File Count**: 2064 files
+- **File Count**: 21 files
 
 ---
 
-*README generated for CSMLogs — Whole Project*
-*Category: TopLevel | Files: 2064 | Parent: N/A*
+*README generated for csmlogs — Leftover to sort*
+*Category: TopLevel | Files: 21 | Parent: TBD*
 *Generated using write_large_file.py IncrementalDocumentWriter*
